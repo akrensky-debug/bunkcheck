@@ -1,0 +1,138 @@
+{
+  "slug": "sails-and-trails-camp-middlebury",
+  "name": "Sails & Trails Camp",
+  "operator_name": "Quassapaug Sailing Center",
+  "website_url": "https://www.qsailingcenter.org/sailsandtrails",
+  "registration_url": "https://theclubspot.com/register/camp/RgkIiNDs5y/class",
+  "email": "SailsAndTrails@qsailingcenter.org",
+  "phone": "203-758-2241",
+  "city": "Middlebury",
+  "state": "CT",
+  "zip": "06762",
+  "camp_type": "day",
+  "primary_categories": [
+    "sports",
+    "nature"
+  ],
+  "age_min": 9,
+  "age_max": 16,
+  "description_short": "Full-day (9am-4pm) camp on Lake Quassapaug, run in two-week sessions. Children can pick sailing plus nature exploration in Flanders' Whittemore Sanctuary (Sails & Trails), or a sailing-only program in Optimist dinghies (ages 9-12) or 420 dinghies (ages 12-16).",
+  "activities": [
+    "Sailing (Optimist dinghies)",
+    "Sailing (420 dinghies)",
+    "Kayaking",
+    "Hiking",
+    "Animal tracking",
+    "Scavenger hunts",
+    "Fishing",
+    "Wetland exploration",
+    "Intro to racing"
+  ],
+  "price_min": 480,
+  "price_max": 690,
+  "financial_aid": true,
+  "extended_care": true,
+  "meals_included": false,
+  "refund_policy_summary": "No refunds for camp registrations. The only exception is a cancellation caused by COVID-related government restrictions. Families registered for the cancelled 2026 Session 4 were offered a transfer or a refund.",
+  "swim_waterfront_notes": "Campers sail and kayak on Lake Quassapaug. They must be comfortable swimming in a life jacket, and there is a swim test (done in a life jacket). Life jackets (Type III USCG approved, non-inflatable) must be worn at all times on or near the water. QSC provides them, but campers may bring their own.",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Session 1 (two weeks)",
+      "start_date": "2026-06-22",
+      "end_date": "2026-07-02",
+      "price": 630,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 2 (two weeks)",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-17",
+      "price": 630,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 3 (two weeks)",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-31",
+      "price": 630,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.qsailingcenter.org/sailsandtrails",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "price_min",
+        "price_max",
+        "extended_care",
+        "meals_included",
+        "financial_aid",
+        "refund_policy_summary",
+        "swim_waterfront_notes",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.qsailingcenter.org/sailsandtrails",
+      "kind": "html",
+      "title": "Sails & Trails Camp"
+    },
+    "warnings": [
+      "The page only shows the 2026 season, and those dates have already passed (today is 2026-10-13). Dates and prices for 2027 are not posted yet.",
+      "Session price is shown as $630, the non-member rate when registering before May 31. Other rates: $690 for non-members after May 31, and $480 / $540 for QSC members before / after May 31. Each price covers a two-week session.",
+      "Ages conflict: the program description says Sails & Trails 2 is for ages 12-16, but the pricing table says 12-14.",
+      "For 2026, Session 4 was cancelled and Family Day moved to Saturday, August 1.",
+      "The ZIP code (06762) and city come from the P.O. Box mailing address, not the camp's street address.",
+      "The Junior Instructor role (ages 16-18) is a job you apply for, not a camp session. It is left out of the age range."
+    ],
+    "unknowns": [
+      "2027 session dates, prices and when registration opens",
+      "Street address of the sailing center",
+      "Whether a deposit is required",
+      "Whether transportation is offered",
+      "Whether the camp is ACA accredited",
+      "How many spots are left in each session",
+      "Weekly rate (prices are only given per two-week session)",
+      "Grade ranges"
+    ],
+    "low_confidence": [
+      {
+        "field": "city",
+        "confidence": 0.7,
+        "quote": "P.O. Box 231, Middlebury, CT 06762"
+      },
+      {
+        "field": "zip",
+        "confidence": 0.6,
+        "quote": "P.O. Box 231, Middlebury, CT 06762"
+      },
+      {
+        "field": "sessions[0].price",
+        "confidence": 0.6,
+        "quote": "Sails & Trails 19-11$630$690$480$540"
+      }
+    ],
+    "errors": []
+  }
+}

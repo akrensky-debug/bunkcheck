@@ -9,7 +9,7 @@
   "street_address": "Hamel Recreation Center, 5 Edgewood Rd.",
   "city": "Durham",
   "state": "NH",
-  "zip": null,
+  "zip": "03824",
   "camp_type": "day",
   "primary_categories": [
     "nature"
@@ -100,6 +100,14 @@
         "sessions"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=Hamel+Recreation+Center%2C+5+Edgewood+Rd.&city=Durham&state=NH&benchmark=Public_AR_Current&format=json",
+      "checked": "2026-10-13",
+      "fields": [
+        "zip"
+      ],
+      "note": "ZIP from the US Census geocoder for 5 EDGEWOOD RD, DURHAM, NH, 03824"
     }
   ],
   "review": {
@@ -110,6 +118,7 @@
       "title": "Camp Wildcat 2.0 | Youth ProgramsUniversity of New Hampshire"
     },
     "warnings": [
+      "Filled zip 03824 from the US Census geocoder (5 EDGEWOOD RD, DURHAM, NH, 03824)",
       "The page only shows Summer 2026, which is already over (today is 2026-10-13). No 2027 dates or prices are posted.",
       "The page says 'This course is currently unavailable.'",
       "Sessions 3 and 5 were not marked full, but their registration close dates (July 5 and July 19, 2026) have passed. Their availability is recorded as unknown.",
@@ -146,8 +155,6 @@
         "quote": "Review the Online Registration Instructions before enrolling for the best outcome."
       }
     ],
-    "errors": [
-      "missing required zip"
-    ]
+    "errors": []
   }
 }

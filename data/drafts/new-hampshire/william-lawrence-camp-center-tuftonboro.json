@@ -1,0 +1,93 @@
+{
+  "slug": "william-lawrence-camp-center-tuftonboro",
+  "name": "William Lawrence Camp",
+  "website_url": "https://wlcamp.org/",
+  "registration_url": "https://wlcamp.org/enroll/",
+  "email": "knoll@wlcamp.org",
+  "phone": "(603) 569-3698",
+  "street_address": "139 Federal Corner Road",
+  "city": "Center Tuftonboro",
+  "state": "NH",
+  "zip": "03816",
+  "camp_type": "sleepaway",
+  "primary_categories": [
+    "nature",
+    "sports"
+  ],
+  "grade_min": 3,
+  "grade_max": 11,
+  "description_short": "A traditional, not-for-profit overnight camp for boys entering grades 3–11 in New Hampshire's Lakes Region, founded in 1913. The camp is device-free, cabins have no electricity, and activities are nature-based and outdoors.",
+  "activities": [
+    "archery",
+    "camping",
+    "ropes courses",
+    "swim lessons",
+    "swimming",
+    "sailing",
+    "paddling",
+    "overnight out-camping trips"
+  ],
+  "swim_waterfront_notes": "The camp lists daily swim lessons. Waterfront activities include swimming, sailing and paddling.",
+  "season_year": 2027,
+  "sources": [
+    {
+      "url": "https://wlcamp.org/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "description_short",
+        "swim_waterfront_notes"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://wlcamp.org/",
+      "kind": "html",
+      "title": "William Lawrence Camp | Boys Summer Camp in New Hampshire"
+    },
+    "warnings": [
+      "This is the camp's homepage. It links to a 2027 Dates & Rates page, but the homepage itself gives no session dates or prices.",
+      "Packages sent by USPS should go to the separate mailing address: PO Box 177, Wolfeboro Falls, NH 03896.",
+      "The camp has an interim director (Kevin O'Neill) for the upcoming season."
+    ],
+    "unknowns": [
+      "2027 session dates and lengths (see https://wlcamp.org/enrollment-info/)",
+      "2027 tuition / session prices",
+      "Minimum and maximum camper ages (only grades given)",
+      "Registration open date and current availability",
+      "Deposit requirements and refund policy",
+      "Financial aid availability",
+      "ACA accreditation",
+      "Transportation to/from camp",
+      "Meals (overnight camp, but not stated on this page)",
+      "Special needs / camper care details",
+      "Full activity list (page mentions 30+ activities)"
+    ],
+    "low_confidence": [
+      {
+        "field": "season_year",
+        "confidence": 0.7,
+        "quote": "Dates & Rates for 2027"
+      }
+    ],
+    "errors": [
+      "city 'Center Tuftonboro', NH is not in cities.py"
+    ]
+  }
+}

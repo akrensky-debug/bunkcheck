@@ -1,0 +1,92 @@
+{
+  "slug": "summer-at-hopkins-new-haven",
+  "name": "Summer at Hopkins",
+  "operator_name": "Hopkins School",
+  "website_url": "https://www.hopkins.edu/academics/summer-at-hopkins",
+  "phone": "(203) 397-1001",
+  "street_address": "986 Forest Road",
+  "city": "New Haven",
+  "state": "CT",
+  "zip": "06515",
+  "primary_categories": [
+    "academic",
+    "sports"
+  ],
+  "grade_min": 5,
+  "grade_max": 12,
+  "description_short": "Hopkins School in New Haven runs a summer academic school for students in grades 5–12, from Hopkins and other schools. Its campus also hosts Pathfinder, a summer program for New Haven public and parochial school students in grades 5–8, and sports camps run by partner organizations.",
+  "activities": [
+    "Academic summer courses",
+    "Football",
+    "Lacrosse",
+    "Field hockey",
+    "Tennis",
+    "Squash",
+    "Soccer"
+  ],
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Hopkins Summer School 2026",
+      "start_date": "2026-06-22",
+      "end_date": "2026-07-24",
+      "price": null,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.hopkins.edu/academics/summer-at-hopkins",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "primary_categories",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "description_short",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.hopkins.edu/academics/summer-at-hopkins",
+      "kind": "html",
+      "title": "Summer at Hopkins | Hopkins School"
+    },
+    "warnings": [
+      "Only the 2026 season is shown (Summer School June 22–July 24, 2026), and it has already passed. No 2027 dates are posted yet.",
+      "This is an overview page covering three separate programs: Summer School, Pathfinder (open only to high-achieving grade 5–8 students from New Haven public and parochial schools; applications open in October) and Summer Athletics (run by outside partner organizations, not Hopkins). Each has its own page with details.",
+      "The single session recorded is the full Summer School window. Individual courses may have different dates and prices."
+    ],
+    "unknowns": [
+      "2027 session dates",
+      "Prices and tuition",
+      "Registration URL and when registration opens",
+      "Whether it is a day program (very likely, but not stated)",
+      "Daily schedule and hours",
+      "Extended care, meals and transportation",
+      "Financial aid",
+      "Refund and deposit policy",
+      "Course list and age requirements for each course",
+      "Dates, prices and ages for the partner athletic camps",
+      "Contact email for the summer programs",
+      "Pathfinder details and cost for 2027"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "missing required camp_type",
+      "camp_type must be one of ['day', 'sleepaway', 'specialty']"
+    ]
+  }
+}

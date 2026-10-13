@@ -1,0 +1,86 @@
+{
+  "slug": "sunrise-at-camp-harkness-waterford",
+  "name": "Sunrise at Camp Harkness",
+  "operator_name": "Sunrise Northeast, Inc.",
+  "website_url": "https://sunrisegroup.org/locations/connecticut/",
+  "email": "CampHarkness@SunriseGroup.org",
+  "phone": "(860) 206-7050",
+  "street_address": "301 Great Neck Road",
+  "city": "Waterford",
+  "state": "CT",
+  "zip": "06385",
+  "primary_categories": [
+    "special_needs",
+    "nature"
+  ],
+  "description_short": "A summer camp on the Connecticut shore in Waterford, run by Sunrise Community for people with disabilities. It offers recreation, field trips and beach activities, and staff provide personal care and assistance as needed.",
+  "activities": [
+    "Recreational activities",
+    "Field trips",
+    "Beach activities",
+    "Outdoor activities"
+  ],
+  "special_needs_notes": "Run by Sunrise Community, an organization for people with disabilities. Personal care and assistance are provided as needed. The page says overnight stays with 24/7 nursing supervision are offered at some locations, but does not say whether that applies to Camp Harkness.",
+  "season_year": 2027,
+  "sources": [
+    {
+      "url": "https://sunrisegroup.org/locations/connecticut/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "primary_categories",
+        "activities",
+        "description_short",
+        "special_needs_notes"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://sunrisegroup.org/locations/connecticut/",
+      "kind": "html",
+      "title": "Connecticut Location | Hartford | Sunrise Community"
+    },
+    "warnings": [
+      "The source is Sunrise Community's Connecticut locations page, which covers several services (residential, day program, summer camp). It is not a page just for the camp, and the camp details are brief.",
+      "The camp description is the organization's general text: it says overnight stays 'depending on the location', so it may not describe Camp Harkness specifically.",
+      "The page says 2027 registration is open but gives no dates, prices, ages or registration link. The 'Click for Details' sections may hide more content."
+    ],
+    "unknowns": [
+      "Session dates for 2027",
+      "Prices / fees",
+      "Eligible ages and disability criteria",
+      "Whether Camp Harkness is a day camp, an overnight camp, or both",
+      "Whether nursing supervision is available at Camp Harkness",
+      "Registration URL / how to register",
+      "Deposit and refund policy",
+      "Financial aid or funding sources (e.g., state/DDS funding)",
+      "Transportation",
+      "Meals",
+      "Swimming/waterfront supervision details",
+      "ACA accreditation",
+      "Session availability"
+    ],
+    "low_confidence": [
+      {
+        "field": "website_url",
+        "confidence": 0.6,
+        "quote": "Hartford Location"
+      }
+    ],
+    "errors": [
+      "missing required camp_type",
+      "camp_type must be one of ['day', 'sleepaway', 'specialty']"
+    ]
+  }
+}

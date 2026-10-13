@@ -1,0 +1,67 @@
+{
+  "slug": "brattleboro-recreation-and-parks-summer-camps-brattleboro",
+  "name": "Brattleboro Recreation & Parks Summer Camps",
+  "operator_name": "Town of Brattleboro Recreation and Parks",
+  "website_url": "https://brattleboro.gov/blog/summer-camp-registration-2026",
+  "registration_url": "https://vtbrattleboroweb.myvscloud.com/webtrac/web/",
+  "city": "Brattleboro",
+  "state": "VT",
+  "zip": null,
+  "description_short": "Summer camps and programs run by the Town of Brattleboro's Recreation and Parks department. You can register online or in person at the Gibson-Aiken Center.",
+  "season_year": 2026,
+  "sources": [
+    {
+      "url": "https://brattleboro.gov/blog/summer-camp-registration-2026",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "city",
+        "state",
+        "description_short"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://brattleboro.gov/blog/summer-camp-registration-2026",
+      "kind": "html",
+      "title": "Summer Camp Registration Opens March 16"
+    },
+    "warnings": [
+      "Source is a short news/blog post on the Town of Brattleboro website announcing registration. It is not a camp program page and gives no camp details.",
+      "The post is about the 2026 season (registration opened March 16, 2026), which has already passed as of 2026-10-13. No 2027 information is given.",
+      "No individual camps, sessions, dates, ages or prices are listed, so no sessions were recorded.",
+      "The Gibson-Aiken Center is given only as the place for in-person registration. It may not be where the camps are held."
+    ],
+    "unknowns": [
+      "2027 season dates and when registration opens",
+      "List of individual camps and sessions with dates",
+      "Age or grade ranges",
+      "Prices / weekly rates",
+      "Camp type (day vs. overnight) and activities offered",
+      "Camp location / street address",
+      "Hours, extended care, meals, transportation",
+      "Financial aid, deposit and refund policy",
+      "Contact phone and email",
+      "ACA accreditation",
+      "Swim/waterfront details and special needs accommodations"
+    ],
+    "low_confidence": [
+      {
+        "field": "name",
+        "confidence": 0.7,
+        "quote": "Rec & Parks will be accepting registration for Summer Camps and programs"
+      }
+    ],
+    "errors": [
+      "missing required zip",
+      "missing required camp_type",
+      "camp_type must be one of ['day', 'sleepaway', 'specialty']"
+    ]
+  }
+}

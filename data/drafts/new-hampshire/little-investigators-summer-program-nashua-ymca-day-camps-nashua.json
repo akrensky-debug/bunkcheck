@@ -1,0 +1,136 @@
+{
+  "slug": "little-investigators-summer-program-nashua-ymca-day-camps-nashua",
+  "name": "Little Investigators Summer Program (Nashua YMCA Day Camps)",
+  "operator_name": "YMCA of Greater Nashua",
+  "website_url": "https://nmymca.org/camps/nashua-day-camps/",
+  "registration_url": "https://nmymca.org/programregistration",
+  "email": "camp@nmymca.org",
+  "phone": "603-598-1533",
+  "street_address": "24 Stadium Drive",
+  "city": "Nashua",
+  "state": "NH",
+  "zip": null,
+  "camp_type": "day",
+  "primary_categories": [
+    "nature",
+    "STEM"
+  ],
+  "age_min": 3,
+  "age_max": 5,
+  "description_short": "A half-day preschool summer camp for ages 3-5 at the Nashua YMCA. It runs Monday to Friday, 9 AM to 1 PM, with a new theme each week, such as nature, water play, science and dinosaurs, and swim time once a week.",
+  "activities": [
+    "Swimming",
+    "Nature exploration",
+    "Science experiments",
+    "Storytelling",
+    "Water play",
+    "Building with child-safe tools",
+    "Cooking/snack making",
+    "Gardening",
+    "Arts and crafts",
+    "Role-play"
+  ],
+  "price_per_week": 180,
+  "price_min": 180,
+  "price_max": 195,
+  "financial_aid": true,
+  "extended_care": false,
+  "special_needs_notes": "Children must be potty trained to attend.",
+  "swim_waterfront_notes": "Children swim once per week in the Nashua Y pool. Week 2 includes water play such as sprinklers and bubbles.",
+  "season_year": 2026,
+  "price_per": "week",
+  "sources": [
+    {
+      "url": "https://nmymca.org/camps/nashua-day-camps/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "price_min",
+        "price_max",
+        "price_per_week",
+        "price_per",
+        "extended_care",
+        "financial_aid",
+        "special_needs_notes",
+        "swim_waterfront_notes"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://nmymca.org/camps/nashua-day-camps/",
+      "kind": "html",
+      "title": "Nashua Day Camps - YMCA of Greater Nashua"
+    },
+    "warnings": [
+      "The page only shows the 2026 season (\"2026 Summer Camp Guide\"), which has already passed as of 2026-10-13. No 2027 information is available yet.",
+      "The page covers Nashua Day Camps in general (preschool to grade 12) but only describes the Little Investigators preschool program (ages 3-5). Camp Create and Sports Camp are named but not described.",
+      "There are two weekly prices: $180 for YMCA family members and $195 for community members. price_per_week is set to the member rate.",
+      "Weekly themes are listed without dates, so session dates are left blank.",
+      "9 sessions without full dates were left out"
+    ],
+    "unknowns": [
+      "2027 season dates, prices and registration opening date",
+      "Start and end dates for each week (none given, even for 2026)",
+      "Session availability",
+      "ZIP code",
+      "Whether meals or snacks are provided",
+      "Deposit requirement",
+      "Refund policy",
+      "Transportation",
+      "ACA accreditation",
+      "Details of the other Nashua Y camps (Camp Create, Sports Camp) for older kids"
+    ],
+    "low_confidence": [
+      {
+        "field": "state",
+        "confidence": 0.7,
+        "quote": "YMCA Alliance of NNE"
+      },
+      {
+        "field": "price_per_week",
+        "confidence": 0.6,
+        "quote": "YMCA Family Member: $180"
+      },
+      {
+        "field": "price_min",
+        "confidence": 0.6,
+        "quote": "YMCA Family Member: $180"
+      },
+      {
+        "field": "price_max",
+        "confidence": 0.6,
+        "quote": "Community Member: $195"
+      },
+      {
+        "field": "registration_url",
+        "confidence": 0.7,
+        "quote": "Registration Information"
+      },
+      {
+        "field": "sessions",
+        "confidence": 0.6,
+        "quote": "Week 1 – Nature Week ... Week 9 – Green Thumbs Week"
+      }
+    ],
+    "errors": [
+      "missing required zip"
+    ]
+  }
+}

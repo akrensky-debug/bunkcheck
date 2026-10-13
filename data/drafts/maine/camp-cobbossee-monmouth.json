@@ -1,0 +1,116 @@
+{
+  "slug": "camp-cobbossee-monmouth",
+  "name": "Camp Cobbossee",
+  "website_url": "https://www.campcobbossee.com/",
+  "registration_url": "https://cobbossee.campintouch.com/ui/forms/application/camper/App",
+  "phone": "1-207-933-4503",
+  "street_address": "1 Camp Cobbossee Circle",
+  "city": "Monmouth",
+  "state": "ME",
+  "zip": "04259",
+  "camp_type": "sleepaway",
+  "primary_categories": [
+    "sports"
+  ],
+  "description_short": "Overnight sports and adventure camp for boys in Monmouth, Maine, running since 1902. Campers stay for sessions of about three and a half weeks, and first-time campers in younger grades can choose a two-week option.",
+  "activities": [
+    "Land sports",
+    "Water sports",
+    "Hobbies",
+    "Baseball",
+    "Inter-camp competitions",
+    "Adventure"
+  ],
+  "price_min": 6975,
+  "price_max": 10150,
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Session 1",
+      "start_date": "2027-06-22",
+      "end_date": "2027-07-15",
+      "price": 10150,
+      "availability": "open"
+    },
+    {
+      "name": "Two Week \"Stay and Play\" - First Session (first-time campers leaving grades 2-4 only)",
+      "start_date": "2027-06-22",
+      "end_date": "2027-07-06",
+      "price": 6975,
+      "availability": "open"
+    },
+    {
+      "name": "Two Week \"Stay and Play\" - Second Session (first-time campers leaving grades 2-4 only)",
+      "start_date": "2027-07-18",
+      "end_date": "2027-08-01",
+      "price": 6975,
+      "availability": "open"
+    },
+    {
+      "name": "Session 2",
+      "start_date": "2027-07-18",
+      "end_date": "2027-08-10",
+      "price": 10150,
+      "availability": "open"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.campcobbossee.com/need-know/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "description_short",
+        "price_min",
+        "price_max",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.campcobbossee.com/need-know/",
+      "kind": "html",
+      "title": "Need to Know - Camp CobbosseeNeed to Know - Camp Cobbossee"
+    },
+    "warnings": [
+      "Boys only. A sister camp, Camp Kippewa for Girls, is linked.",
+      "The two-week 'Stay and Play' option is only for first-time campers leaving grades 2, 3 or 4, and spots are 'very limited'.",
+      "Enrollment is open for returning families. New families can enroll only if there is space in new-camper bunks.",
+      "The page lists parents' visiting day on the same date each session ends (July 15 and August 10). Ask the camp to confirm the exact pickup and end dates."
+    ],
+    "unknowns": [
+      "Camper age range and full grade range (only the two-week option's grades are stated)",
+      "Email address (it is hidden on the page)",
+      "What 'all inclusive' covers (meals, laundry, trips, travel)",
+      "Deposit amount and payment schedule",
+      "Refund or cancellation policy",
+      "Financial aid",
+      "Transportation or airport pickup (the page only names the nearest airport, Portland Jetport)",
+      "Waterfront and swim program details",
+      "Support for special needs",
+      "ACA accreditation",
+      "Whether there are still spots for new families"
+    ],
+    "low_confidence": [
+      {
+        "field": "sessions[0].availability",
+        "confidence": 0.6,
+        "quote": "Enrollment for the 2027 season is now open for returning families! New family enrollment is also open depending on space available in new camper bunks."
+      }
+    ],
+    "errors": []
+  }
+}

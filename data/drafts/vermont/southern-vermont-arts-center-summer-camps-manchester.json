@@ -1,0 +1,81 @@
+{
+  "slug": "southern-vermont-arts-center-summer-camps-manchester",
+  "name": "Southern Vermont Arts Center Summer Camps",
+  "operator_name": "Southern Vermont Arts Center",
+  "website_url": "https://www.svac.org/summer-camps-2/",
+  "email": "ekaufman@svac.org",
+  "phone": "802.362.1405",
+  "street_address": "860 SVAC Drive / West Road",
+  "city": "Manchester",
+  "state": "VT",
+  "zip": "05254",
+  "primary_categories": [
+    "arts"
+  ],
+  "grade_max": 12,
+  "description_short": "Summer camps for children and teens run by the Southern Vermont Arts Center in Manchester, VT. Camps are split into age groups: PreK–Kindergarten, Grades 1–3, Grades 4–6 and Grades 7–12.",
+  "refund_policy_summary": "Refund requests are charged a 50% fee.",
+  "season_year": 2026,
+  "sources": [
+    {
+      "url": "https://www.svac.org/summer-camps-2/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "primary_categories",
+        "grade_max",
+        "description_short",
+        "refund_policy_summary"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.svac.org/summer-camps-2/",
+      "kind": "html",
+      "title": "Summer Camps - Southern Vermont Arts Center in Manchester, Vermont"
+    },
+    "warnings": [
+      "Page shows the 2026 summer season, which has already ended (today is 2026-10-13). No 2027 summer information appears yet.",
+      "The page has no session dates, prices or schedules. Those are probably on the age-group subpages (PreK–K, Grades 1–3, 4–6, 7–12), which were not part of this source.",
+      "2026 timeline for reference: camps could be previewed from Feb 7, 2026 and registration opened Feb 16, 2026 at 12:00 pm. The page says camps often fill quickly."
+    ],
+    "unknowns": [
+      "2027 season dates, sessions and registration opening date",
+      "Prices (weekly or per session)",
+      "Whether camps are day-only (likely, but not stated)",
+      "Daily hours and whether extended care is offered",
+      "Specific activities or art mediums offered",
+      "Lowest grade as a number (the youngest group is PreK–Kindergarten)",
+      "Exact ages",
+      "Financial aid or scholarships",
+      "Whether a deposit is required",
+      "Whether meals or snacks are included",
+      "Transportation",
+      "Whether the camp is ACA accredited",
+      "Support for children with special needs",
+      "Registration URL"
+    ],
+    "low_confidence": [
+      {
+        "field": "primary_categories",
+        "confidence": 0.7,
+        "quote": "Get ready for a summer of creativity, exploration and fun."
+      }
+    ],
+    "errors": [
+      "missing required camp_type",
+      "camp_type must be one of ['day', 'sleepaway', 'specialty']"
+    ]
+  }
+}

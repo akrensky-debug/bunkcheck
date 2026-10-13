@@ -1,0 +1,101 @@
+{
+  "slug": "camp-winaukee",
+  "name": "Camp Winaukee",
+  "website_url": "https://winaukee.com",
+  "registration_url": "https://winaukee.campintouch.com/ui/forms/application/camper/App",
+  "email": "matt@winaukee.com",
+  "phone": "(800) 487-9157",
+  "city": null,
+  "state": null,
+  "zip": null,
+  "primary_categories": [
+    "sports",
+    "nature",
+    "arts"
+  ],
+  "age_min": 7,
+  "age_max": 15,
+  "description_short": "A boys' camp on Lake Winnipesaukee. It has two campuses: the Mainland for boys 7-12 and the Island for boys 13-15. Activities include waterskiing, sailing, paddling, swim lessons and fishing, plus team sports, arts and outdoor adventure.",
+  "activities": [
+    "Waterskiing",
+    "Wakeboarding",
+    "Kneeboarding",
+    "Wakesurfing",
+    "Sailing",
+    "Canoeing",
+    "Kayaking",
+    "Paddleboarding",
+    "Swimming instruction",
+    "Recreational swim",
+    "Inflatables",
+    "Beach volleyball",
+    "Fishing",
+    "Team sports",
+    "Individual sports",
+    "Arts & making",
+    "Outdoor adventure"
+  ],
+  "swim_waterfront_notes": "Waterfront on Lake Winnipesaukee. Swimming is supervised by Red Cross Certified Lifeguards and Water Safety Instructors. Mainland boys take part in a Learn to Swim Program, with lessons as often as their swim level requires. Lifeguards with waterski experience drive the ski boats. PFDs are required on motor boats and during all towed watersports. Sailing (Sunfish) and paddleboarding start in shallow water under lifeguard supervision.",
+  "sources": [
+    {
+      "url": "https://winaukee.com/activities/water-sports",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "primary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "swim_waterfront_notes"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://winaukee.com/activities/water-sports",
+      "kind": "html",
+      "title": "Winaukee Offers Waterskiing, Wakeskiing, Paddleboarding, Sailing"
+    },
+    "warnings": [
+      "Source is an activities page (water sports), not the dates/rates page; no season year, dates, or prices are shown. See https://winaukee.com/dates-rates for 2027 details.",
+      "Camp is for boys only (ages 7-15) per site navigation.",
+      "Several director emails are listed (matt@, ashleigh@, tom@winaukee.com); only one recorded."
+    ],
+    "unknowns": [
+      "Camp type: overnight vs. day is not stated on this page (Mainland/Island campuses suggest it may be overnight; confirm)",
+      "2027 session dates",
+      "2027 prices / tuition",
+      "Registration opening date",
+      "Street address, city, state, zip",
+      "ACA accreditation",
+      "Financial aid",
+      "Deposit and refund policy",
+      "Transportation",
+      "Meals",
+      "Special needs accommodations",
+      "Current availability"
+    ],
+    "low_confidence": [
+      {
+        "field": "primary_categories",
+        "confidence": 0.75,
+        "quote": "Team Sports ... Winaukee Arts & Making (W.A.A.M.) ... Outdoor Adventure"
+      }
+    ],
+    "errors": [
+      "missing required city",
+      "missing required state",
+      "missing required zip",
+      "missing required camp_type",
+      "missing required season_year",
+      "camp_type must be one of ['day', 'sleepaway', 'specialty']"
+    ]
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "slug": "summer-rec-camp-south-portland",
+  "name": "Summer Rec Camp",
+  "operator_name": "City of South Portland Parks, Recreation & Waterfront",
+  "website_url": "https://southportland.gov/571/Out-of-School-Programs",
+  "email": "kfilieo@southportland.gov",
+  "city": "South Portland",
+  "state": "ME",
+  "zip": null,
+  "camp_type": "day",
+  "grade_min": 0,
+  "grade_max": 8,
+  "description_short": "A city-run summer recreation camp for South Portland residents entering grades K-8, with field trips, performers, games, and arts and crafts. Only South Portland residents can attend, and spaces are limited.",
+  "activities": [
+    "field trips",
+    "performers",
+    "games",
+    "arts and crafts"
+  ],
+  "financial_aid": true,
+  "refund_policy_summary": "The $50 deposit can be refunded until June 9 (this date is from the current page and may be from a past season).",
+  "sources": [
+    {
+      "url": "https://southportland.gov/571/Out-of-School-Programs",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "city",
+        "state",
+        "camp_type",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "description_short",
+        "financial_aid",
+        "refund_policy_summary"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://southportland.gov/571/Out-of-School-Programs",
+      "kind": "html",
+      "title": "Out of School Programs | South Portland, MEArrow LeftArrow RightSlideshow Left ArrowSlideshow Right Arrow"
+    },
+    "warnings": [
+      "This is a city recreation department page covering several programs (Teen Center, Sopo Kids Club before and after care, Summer Rec Camp). Only Summer Rec Camp is recorded here.",
+      "No season year, dates, or prices are given. season_year is left blank.",
+      "The financial aid deadline reads 'Friday, April 7th'. April 7 fell on a Friday in 2023, not in 2027, so the financial aid dates (April 7, April 17, June 9) are likely out of date.",
+      "Only South Portland residents can attend.",
+      "camp_type 'day' is inferred from the description of a municipal rec camp with field trips. The page does not say directly that campers go home each night."
+    ],
+    "unknowns": [
+      "2027 session dates and weeks",
+      "Price per week or per session",
+      "Daily hours",
+      "Camp location(s)",
+      "Exact registration opening date for 2027 (page says only 'early February')",
+      "Registration URL (the page links southportlandme.myrec.com for other programs but not clearly for camp)",
+      "2027 financial aid deadline and deposit refund deadline",
+      "Whether before or after care is offered during camp",
+      "Whether lunch or snacks are provided",
+      "Swimming or waterfront activities",
+      "Accommodations for special needs",
+      "Transportation",
+      "Camp phone number (only the City Hall general line, 207-767-3201, is listed)"
+    ],
+    "low_confidence": [
+      {
+        "field": "camp_type",
+        "confidence": 0.65,
+        "quote": "we offer rec camp opportunities for South Portland residents entering grades K-8"
+      },
+      {
+        "field": "refund_policy_summary",
+        "confidence": 0.6,
+        "quote": "Deposits are refundable up until June 9th."
+      }
+    ],
+    "errors": [
+      "missing required zip",
+      "missing required season_year"
+    ]
+  }
+}

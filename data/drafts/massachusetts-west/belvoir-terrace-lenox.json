@@ -1,0 +1,102 @@
+{
+  "slug": "belvoir-terrace-lenox",
+  "name": "Belvoir Terrace",
+  "website_url": "https://www.belvoirterrace.com/",
+  "registration_url": "https://belvoirterrace.campintouch.com/ui/forms/application/camper/App",
+  "email": "info@belvoirterrace.com",
+  "phone": "413-637-0555",
+  "street_address": "80 Cliffwood St.",
+  "city": "Lenox",
+  "state": "MA",
+  "zip": "01240",
+  "camp_type": "sleepaway",
+  "primary_categories": [
+    "arts",
+    "performing_arts",
+    "sports"
+  ],
+  "description_short": "An overnight summer camp for girls in Lenox, Massachusetts, offering art, dance, music, theater and sports. Campers pick their own classes from all program areas to build their schedule.",
+  "activities": [
+    "art",
+    "ballet",
+    "dance",
+    "music",
+    "theater",
+    "sports",
+    "tennis",
+    "swimming"
+  ],
+  "meals_included": true,
+  "swim_waterfront_notes": "The camp lists swimming facilities. This page doesn't say what kind (pool or lake) or describe swim supervision.",
+  "season_year": 2027,
+  "sources": [
+    {
+      "url": "https://www.belvoirterrace.com/camp-life/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "description_short",
+        "meals_included",
+        "swim_waterfront_notes"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.belvoirterrace.com/camp-life/",
+      "kind": "html",
+      "title": "CAMP LIFE at Belvoir Terrace - Summer Performing Arts Camp"
+    },
+    "warnings": [
+      "This is a general 'Camp Life' page. It has no dates, prices or ages. Those are likely on https://www.belvoirterrace.com/dates-rates/.",
+      "Season year is based only on a 'Belvoir Terrace 2027' line in the footer.",
+      "This is a girls' camp ('Summer Girls Camp', 'Girls Theater Camp').",
+      "There is also a winter contact number: 212-580-3398. The address and 413 number shown are the summer contact.",
+      "A social media snippet mentions 'six weeks', but that isn't confirmed as the session length."
+    ],
+    "unknowns": [
+      "2027 session dates and lengths (see the Dates & Rates page)",
+      "Tuition and session prices",
+      "Camper age or grade range",
+      "Deposit requirement",
+      "Refund policy",
+      "Financial aid availability",
+      "Transportation to camp",
+      "ACA accreditation",
+      "Registration opening date and availability",
+      "Support for special needs",
+      "Swim facility type and supervision"
+    ],
+    "low_confidence": [
+      {
+        "field": "season_year",
+        "confidence": 0.6,
+        "quote": "Belvoir Terrace 2027"
+      },
+      {
+        "field": "meals_included",
+        "confidence": 0.7,
+        "quote": "Fabulous delicious food, family style, complimented by bountiful salad bars."
+      },
+      {
+        "field": "swim_waterfront_notes",
+        "confidence": 0.7,
+        "quote": "outstanding facilities for art, dance, music, theater, tennis, swimming and more"
+      }
+    ],
+    "errors": []
+  }
+}

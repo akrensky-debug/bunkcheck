@@ -1,0 +1,77 @@
+{
+  "slug": "ymca-of-greater-hartford-camps",
+  "name": "YMCA of Greater Hartford Camps",
+  "operator_name": "YMCA of Greater Hartford",
+  "website_url": "https://www.ghymca.org/camping",
+  "city": null,
+  "state": "CT",
+  "zip": null,
+  "primary_categories": [
+    "nature"
+  ],
+  "age_min": 5,
+  "description_short": "The YMCA of Greater Hartford runs overnight camps at Camp Jewell (Colebrook) and Camp Woodstock (Woodstock Valley), plus day camps in several Connecticut towns. Day camp is for ages 5-12, overnight camp is usually for ages 7-16, and there are teen leadership and specialty programs.",
+  "sources": [
+    {
+      "url": "https://www.ghymca.org/camping",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "state",
+        "primary_categories",
+        "age_min",
+        "description_short"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.ghymca.org/camping",
+      "kind": "html",
+      "title": "Explore Camps & Outdoor Programs at YMCA of Greater Hartford"
+    },
+    "warnings": [
+      "This is the YMCA of Greater Hartford's overview page for all its camps, not the page for one camp. It covers two overnight camps (Camp Jewell, Camp Woodstock), day camps in several towns, and specialty, family and teen programs. Each camp should get its own listing from its own page.",
+      "No season year, dates, prices or sessions appear on this page. It does not show whether the 2027 season has been announced.",
+      "The page says day camps run in '10 other towns' but names only 8: East Hartford, Ellington, Glastonbury, Granby, Hartford, Plainville, Putnam and Wethersfield.",
+      "camp_type is left blank because the page covers day, overnight and specialty camps together.",
+      "age_max is left blank. Day camp goes to 12, overnight usually to 16, and teen/CIT programs run 'all the way through high school'.",
+      "The page mentions Camp Chase only for family programs. It gives no location for it."
+    ],
+    "unknowns": [
+      "2027 session dates for each day camp and overnight camp",
+      "Prices (weekly day camp rate, overnight session prices)",
+      "Registration open date and registration URL",
+      "Street address, city, zip, phone and email for each camp site",
+      "Whether camp financial aid is offered (the site menu shows 'Financial Assistance' only under Membership)",
+      "Deposit and refund policy",
+      "Extended care (before/after care) for day camps",
+      "Transportation",
+      "Meals",
+      "Whether the camps are ACA accredited",
+      "Swim and waterfront details",
+      "Specialty camp topics and the activities offered",
+      "Accommodations for special needs",
+      "Which specific 10 towns have day camps"
+    ],
+    "low_confidence": [
+      {
+        "field": "name",
+        "confidence": 0.6,
+        "quote": "The YMCA of Greater Hartford operates several world-class camps across the Hartford region."
+      }
+    ],
+    "errors": [
+      "missing required city",
+      "missing required zip",
+      "missing required camp_type",
+      "missing required season_year",
+      "camp_type must be one of ['day', 'sleepaway', 'specialty']",
+      "city None, CT is not in cities.py"
+    ]
+  }
+}

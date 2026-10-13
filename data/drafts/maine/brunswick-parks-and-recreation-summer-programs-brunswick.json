@@ -1,0 +1,111 @@
+{
+  "slug": "brunswick-parks-and-recreation-summer-programs-brunswick",
+  "name": "Brunswick Parks & Recreation Summer Programs",
+  "operator_name": "Town of Brunswick Parks & Recreation",
+  "website_url": "https://www.brunswickme.gov/221/Summer",
+  "registration_url": "https://secure.rec1.com/ME/brunswick-me/catalog",
+  "phone": "207-725-6100",
+  "city": "Brunswick",
+  "state": "ME",
+  "zip": null,
+  "primary_categories": [
+    "sports",
+    "arts",
+    "STEM",
+    "performing_arts",
+    "nature"
+  ],
+  "description_short": "A list of summer programs that the Town of Brunswick Parks & Recreation usually runs, including a general Summer Day Camp and many sports, arts, STEM and outdoor camps for kids. Details and registration are in the town's CivicRec online catalog.",
+  "activities": [
+    "Summer Day Camp",
+    "Mad Science",
+    "Multi-sport",
+    "Dance",
+    "Kayaking",
+    "Paddleboarding",
+    "Golf",
+    "Art",
+    "LEGO Robotics",
+    "Lacrosse",
+    "Baseball",
+    "Softball",
+    "Basketball",
+    "Soccer",
+    "Swimming lessons",
+    "Track and Field",
+    "Theater",
+    "Field Hockey",
+    "Camping"
+  ],
+  "swim_waterfront_notes": "The town lists \"Learn to Swim at Coffin Pond\" as a summer program. No other waterfront details are given.",
+  "sources": [
+    {
+      "url": "https://www.brunswickme.gov/221/Summer",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "city",
+        "state",
+        "primary_categories",
+        "activities",
+        "description_short",
+        "swim_waterfront_notes"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.brunswickme.gov/221/Summer",
+      "kind": "html",
+      "title": "Summer | Brunswick, MEArrow LeftArrow RightSlideshow Left ArrowSlideshow Right Arrow"
+    },
+    "warnings": [
+      "This page is the town's index of summer programs, not the listing for one camp. It names about 25 programs (day camps, sport clinics, adult leagues, special events) with no details.",
+      "No season year, dates, prices or ages appear on the page. The page says these programs are 'usually held', so 2027 offerings may differ.",
+      "The phone number and address given are Town Hall's general contact, not necessarily the Parks & Recreation office.",
+      "Some listed items are adult programs or events (Pickleball, Women's Softball League, Adult Kickball, Movies in the Park), not youth camps.",
+      "Youth Field Hockey Clinic is marked TBA."
+    ],
+    "unknowns": [
+      "Season year and session dates for 2027",
+      "Prices / weekly rate for Summer Day Camp and other camps",
+      "Age or grade ranges (only Art Smart lists Grades K-9)",
+      "Daily hours and extended care",
+      "Camp location(s) / street address",
+      "Parks & Recreation direct phone and email",
+      "Meals, transportation, financial aid, refund policy",
+      "ACA accreditation",
+      "Special needs accommodations",
+      "Availability / registration open date"
+    ],
+    "low_confidence": [
+      {
+        "field": "name",
+        "confidence": 0.7,
+        "quote": "Provided is a list of programs that are usually held during the Summer Season."
+      },
+      {
+        "field": "phone",
+        "confidence": 0.5,
+        "quote": "Town Hall 85 Union Street Brunswick, ME 04011 Phone: 207-725-6100"
+      },
+      {
+        "field": "primary_categories",
+        "confidence": 0.7,
+        "quote": "Art Smart Summer Camps (Grades K-9) ... Soccer Day Camp ... Mad Science Summer Day Camps"
+      }
+    ],
+    "errors": [
+      "missing required zip",
+      "missing required camp_type",
+      "missing required season_year",
+      "camp_type must be one of ['day', 'sleepaway', 'specialty']"
+    ]
+  }
+}

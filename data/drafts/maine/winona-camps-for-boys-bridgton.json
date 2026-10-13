@@ -1,0 +1,88 @@
+{
+  "slug": "winona-camps-for-boys-bridgton",
+  "name": "Winona Camps for Boys",
+  "website_url": "https://winonacamps.com/",
+  "registration_url": "https://winonacamps.campintouch.com/ui/forms/application/camper/App",
+  "email": "information@winonacamps.com",
+  "phone": "(207) 647-3721",
+  "street_address": "35 Winona Road",
+  "city": "Bridgton",
+  "state": "ME",
+  "zip": "04009",
+  "camp_type": "sleepaway",
+  "primary_categories": [
+    "nature",
+    "sports"
+  ],
+  "description_short": "A traditional boys' summer camp in western Maine, founded in 1908. Campers live in canvas tents on Moose Pond and learn outdoor living skills along with activities like rock climbing, kayaking and lacrosse.",
+  "activities": [
+    "Outdoor living skills",
+    "Rock climbing",
+    "Kayaking",
+    "Lacrosse"
+  ],
+  "swim_waterfront_notes": "Camp is on the shores of Moose Pond. The page does not describe swim instruction or waterfront rules.",
+  "season_year": 2027,
+  "sources": [
+    {
+      "url": "https://winonacamps.com/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "description_short",
+        "swim_waterfront_notes"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://winonacamps.com/",
+      "kind": "html",
+      "title": "Home - WinonaWinona | Four Woodland Camps for Boys"
+    },
+    "warnings": [
+      "This is the camp's homepage. It has no prices, ages or full session dates. Those are on linked pages (Dates, Fees, Application Link; Units).",
+      "The camp says to enroll before December 31, 2026 to get your preferred session, which means there are multiple sessions. Only the camp's opening date (June 26, 2027) is listed here.",
+      "Ownership is moving from private hands to a non-profit foundation.",
+      "1 sessions without full dates were left out"
+    ],
+    "unknowns": [
+      "2027 tuition and fees (see Dates, Fees, Application page)",
+      "Session lengths, names and end dates",
+      "Camper age range / units (age groups)",
+      "Deposit requirement",
+      "Refund policy",
+      "Financial aid",
+      "ACA accreditation (the page says 'proud member of:' but the logos aren't in the text)",
+      "Transportation details (there is a Transportation page)",
+      "Health center / special needs accommodations",
+      "Meals (likely included at a sleepaway camp, but not stated)"
+    ],
+    "low_confidence": [
+      {
+        "field": "sessions[0].availability",
+        "confidence": 0.7,
+        "quote": "Enrollment for 2027 is now open."
+      },
+      {
+        "field": "primary_categories",
+        "confidence": 0.75,
+        "quote": "Learning outdoor living skills in western Maine"
+      }
+    ],
+    "errors": []
+  }
+}

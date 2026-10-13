@@ -1,0 +1,132 @@
+{
+  "slug": "camp-lochearn-for-girls-post-mills",
+  "name": "Camp Lochearn for Girls",
+  "website_url": "https://www.camplochearn.com",
+  "email": "fun@camplochearn.com",
+  "phone": "802-333-4211",
+  "street_address": "1061 Robinson Hill Road, PO Box 44",
+  "city": "Post Mills",
+  "state": "VT",
+  "zip": "05058",
+  "camp_type": "sleepaway",
+  "description_short": "An overnight summer camp for girls in Post Mills, Vermont. It offers two full sessions of about three and a half weeks each, plus shorter \"Middler\" sessions of about two weeks for younger campers.",
+  "activities": [
+    "Horseback riding (optional add-on)"
+  ],
+  "price_min": 6225,
+  "price_max": 10200,
+  "transportation": true,
+  "refund_policy_summary": "Payment terms: $2,500 deposit with application, $2,500 due by February 1, balance due by April 1. The page states no refund policy.",
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "First Session",
+      "start_date": "2027-06-26",
+      "end_date": "2027-07-20",
+      "price": 10200,
+      "availability": "unknown"
+    },
+    {
+      "name": "Second Session",
+      "start_date": "2027-07-22",
+      "end_date": "2027-08-15",
+      "price": 10200,
+      "availability": "unknown"
+    },
+    {
+      "name": "Middler Session A",
+      "start_date": "2027-06-26",
+      "end_date": "2027-07-08",
+      "price": 6225,
+      "availability": "unknown"
+    },
+    {
+      "name": "Middler Session B",
+      "start_date": "2027-07-08",
+      "end_date": "2027-07-20",
+      "price": 6225,
+      "availability": "unknown"
+    },
+    {
+      "name": "Middler Session C",
+      "start_date": "2027-07-22",
+      "end_date": "2027-08-03",
+      "price": 6225,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.camplochearn.com/about-lochearn/dates-fees.php",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "website_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "activities",
+        "description_short",
+        "price_min",
+        "price_max",
+        "transportation",
+        "refund_policy_summary",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.camplochearn.com/about-lochearn/dates-fees.php",
+      "kind": "html",
+      "title": "Dates & Fees  | Camp Lochearn for Girls"
+    },
+    "warnings": [
+      "It is not clear whether the $10,200 tuition is per session; it appears once below both full sessions. This listing assumes it is per session.",
+      "Middler sessions are only for campers who have finished 4th grade or younger. This applies only to the Middler sessions, not the whole camp.",
+      "Riding costs extra: Every Day $1,850, Every Other Day $1,200; Middler Every Other Day $850. These amounts are not included in session prices.",
+      "Transportation costs extra and 'varies by location'."
+    ],
+    "unknowns": [
+      "Camper age range for the full sessions",
+      "Whether campers are grouped by grade and at what grade level the full sessions start",
+      "Whether there is a minimum grade or age for Middler sessions",
+      "Whether the $10,200 tuition covers one session or both",
+      "Refund and cancellation policy",
+      "Whether the camp offers financial aid",
+      "Whether the camp is ACA accredited (an 'ACA' link appears in the footer, but the page does not say)",
+      "What meals are included (a 'Farm-to-Table' page is linked, but this page does not say)",
+      "Full activity list (see the Activities page)",
+      "Waterfront and swim program details",
+      "Registration opening date and how many spaces are left",
+      "Exact transportation options and costs",
+      "Registration/application URL"
+    ],
+    "low_confidence": [
+      {
+        "field": "transportation",
+        "confidence": 0.6,
+        "quote": "Transportation Cost to and from Camp Varies by Location"
+      },
+      {
+        "field": "sessions[0].price",
+        "confidence": 0.75,
+        "quote": "2027 Tuition $10,200"
+      },
+      {
+        "field": "sessions[1].price",
+        "confidence": 0.75,
+        "quote": "2027 Tuition $10,200"
+      }
+    ],
+    "errors": [
+      "city 'Post Mills', VT is not in cities.py"
+    ]
+  }
+}

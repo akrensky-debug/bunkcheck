@@ -1,0 +1,72 @@
+{
+  "slug": "worcester-art-museum-youth-summer-classes-worcester",
+  "name": "Worcester Art Museum Youth Summer Classes",
+  "operator_name": "Worcester Art Museum",
+  "website_url": "https://www.worcesterart.org/learning/classes/youth-classes/summer-session/",
+  "email": "classes@worcesterart.org",
+  "phone": "508-793-4333",
+  "street_address": "55 Salisbury Street",
+  "city": "Worcester",
+  "state": "MA",
+  "zip": "01609",
+  "primary_categories": [
+    "arts"
+  ],
+  "description_short": "Summer studio art classes for young people at the Worcester Art Museum. The summer session is not open for registration yet, so no class details are posted.",
+  "sources": [
+    {
+      "url": "https://www.worcesterart.org/learning/classes/youth-classes/summer-session/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "primary_categories",
+        "description_short"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.worcesterart.org/learning/classes/youth-classes/summer-session/",
+      "kind": "html",
+      "title": "Youth summer classes | Worcester Art Museum"
+    },
+    "warnings": [
+      "The summer session isn't open for registration yet ('This session of classes is not yet open for registration'). The page gives no dates, prices, ages or class list.",
+      "The page doesn't say which year it covers. It is probably summer 2027, but this isn't confirmed, so season_year is left blank.",
+      "This is a studio art class program, which may not be a traditional camp. The format (single classes vs. full-day weeks) isn't stated, so camp_type is left blank.",
+      "The address and the main museum phone number (508-799-4406) come from the site footer. The listed phone is the classes contact line."
+    ],
+    "unknowns": [
+      "Season year and session dates",
+      "Prices / tuition per class or week",
+      "Age or grade range",
+      "Class titles and activities",
+      "Whether classes are half-day, full-day or single sessions (camp type)",
+      "Registration opening date and registration URL",
+      "Extended care",
+      "Financial aid or scholarships",
+      "Refund policy",
+      "Deposit requirements",
+      "Meals",
+      "Transportation",
+      "Special needs accommodations",
+      "ACA accreditation"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "missing required camp_type",
+      "missing required season_year",
+      "camp_type must be one of ['day', 'sleepaway', 'specialty']"
+    ]
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "slug": "camp-danbee-peru",
+  "name": "Camp Danbee",
+  "website_url": "https://www.campdanbee.com/",
+  "phone": "413-655-8115",
+  "street_address": "101 West Main Road",
+  "city": "Peru",
+  "state": "MA",
+  "zip": "01235",
+  "camp_type": "sleepaway",
+  "primary_categories": [
+    "sports",
+    "arts",
+    "performing_arts",
+    "nature"
+  ],
+  "description_short": "An all-girls summer camp on Lake Ashmere in the Berkshire Mountains of Massachusetts. It has a 1:3 counselor-to-camper ratio and puts skill development and participation ahead of competition.",
+  "activities": [
+    "Fitness center",
+    "Tennis",
+    "Team sports",
+    "Soccer",
+    "Swimming",
+    "Lakefront",
+    "Arts & crafts",
+    "Jewelry",
+    "Woodcraft",
+    "Culinary arts",
+    "Pottery",
+    "Campsite",
+    "Gymnastics",
+    "Cheerleading",
+    "Horseback riding",
+    "Ice hockey",
+    "Theater",
+    "Dance",
+    "Journalism and media",
+    "Day and overnight trips",
+    "Special events",
+    "Community service"
+  ],
+  "swim_waterfront_notes": "The camp is on Lake Ashmere. Swimming and lakefront are both listed as programs. The page gives no details on swim instruction, testing or supervision.",
+  "sources": [
+    {
+      "url": "https://www.campdanbee.com/about/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "website_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "description_short",
+        "swim_waterfront_notes"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.campdanbee.com/about/",
+      "kind": "html",
+      "title": "About Danbee - Camp Danbee"
+    },
+    "warnings": [
+      "This is the camp's general About page. It lists no season dates, prices or ages, so season_year and sessions are empty. Check the Dates and Rates page: https://www.campdanbee.com/about/dates-and-rates/",
+      "camp_type 'sleepaway' is inferred from the summer mailing and shipping addresses and the lakeside campus. The page never says 'overnight camp'.",
+      "The camp is for girls only ('It is a Girl's World at Danbee').",
+      "There are two addresses and phone numbers. The winter office is 4 New King Street, White Plains, NY 10604 (973-402-0606). The summer camp is in Peru/Hinsdale, MA (413-655-8115). It is currently the off-season, so the winter number may be the better contact."
+    ],
+    "unknowns": [
+      "2027 session dates and lengths (see the Dates and Rates page)",
+      "Tuition and deposit (see the Dates and Rates page)",
+      "Age or grade range for campers",
+      "Registration URL and when registration opens",
+      "Refund policy",
+      "Financial aid",
+      "Transportation to camp",
+      "ACA accreditation",
+      "Special needs support",
+      "Email address",
+      "Operator or owner name",
+      "Whether the camp is overnight (very likely, but the page does not say so)",
+      "Meals (assumed included at an overnight camp, but not stated)"
+    ],
+    "low_confidence": [
+      {
+        "field": "camp_type",
+        "confidence": 0.65,
+        "quote": "Summer Mailing Camp Danbee P.O. Box 337"
+      },
+      {
+        "field": "phone",
+        "confidence": 0.75,
+        "quote": "Peru, MA 01235 Phone: 413-655-8115"
+      }
+    ],
+    "errors": [
+      "missing required season_year"
+    ]
+  }
+}

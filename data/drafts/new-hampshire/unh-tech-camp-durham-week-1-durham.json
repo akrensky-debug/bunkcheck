@@ -9,7 +9,7 @@
   "street_address": "Kingsbury Hall, 33 Academic Way",
   "city": "Durham",
   "state": "NH",
-  "zip": null,
+  "zip": "03824",
   "camp_type": "specialty",
   "primary_categories": [
     "STEM",
@@ -149,6 +149,14 @@
         "sessions"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=Kingsbury+Hall%2C+33+Academic+Way&city=Durham&state=NH&benchmark=Public_AR_Current&format=json",
+      "checked": "2026-10-13",
+      "fields": [
+        "zip"
+      ],
+      "note": "ZIP from the US Census geocoder for 33 ACADEMIC WAY, DURHAM, NH, 03824"
     }
   ],
   "review": {
@@ -159,6 +167,7 @@
       "title": "Tech Camp - Week 1 | Youth ProgramsUniversity of New Hampshire"
     },
     "warnings": [
+      "Filled zip 03824 from the US Census geocoder (33 ACADEMIC WAY, DURHAM, NH, 03824)",
       "This page is for the Summer 2026 season (July 13–17, 2026), which is already over as of today (2026-10-13). No 2027 dates or prices are posted, and the page says \"This course is currently unavailable.\"",
       "Registration for 2026 closed June 12, 2026. Session availability is shown only for TechSplorers (FULL).",
       "price_per_week is set to the most common commuter rate ($1,300). Actual rates by track are $500 (TechSplorers), $1,300/$2,100 (TechVenturers commuter/overnight), and $1,500/$2,300 (TechLeaders commuter/overnight).",
@@ -196,8 +205,6 @@
         "quote": "All campers will have meals in a University dining hall."
       }
     ],
-    "errors": [
-      "missing required zip"
-    ]
+    "errors": []
   }
 }

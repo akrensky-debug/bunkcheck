@@ -7,7 +7,7 @@
   "street_address": "534 US Route 3",
   "city": "Holderness",
   "state": "NH",
-  "zip": null,
+  "zip": "03245",
   "camp_type": "day",
   "primary_categories": [
     "nature"
@@ -51,6 +51,14 @@
         "refund_policy_summary"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=534+US+Route+3&city=Holderness&state=NH&benchmark=Public_AR_Current&format=json",
+      "checked": "2026-10-13",
+      "fields": [
+        "zip"
+      ],
+      "note": "ZIP from the US Census geocoder for 534 US HWY 3, HOLDERNESS, NH, 03245"
     }
   ],
   "review": {
@@ -61,6 +69,7 @@
       "title": "Summer Camp – Squam Lakes Association"
     },
     "warnings": [
+      "Filled zip 03245 from the US Census geocoder (534 US HWY 3, HOLDERNESS, NH, 03245)",
       "The 2027 schedule isn't out yet (expected January 2, 2027), so no sessions, dates or prices were recorded.",
       "Some page materials are from 2026: a link to the '2026 Camp schedule (PDF)' and a FAQ PDF updated January 2026.",
       "The 'Final deadline to register is June 10' line may be left over from the 2026 season. Check it for 2027.",
@@ -86,8 +95,6 @@
       "ZIP code"
     ],
     "low_confidence": [],
-    "errors": [
-      "missing required zip"
-    ]
+    "errors": []
   }
 }

@@ -1,0 +1,104 @@
+{
+  "slug": "summer-track-and-field-auburn",
+  "name": "Summer Track & Field",
+  "operator_name": "Auburn Recreation (City of Auburn, Maine)",
+  "website_url": "www.auburnmaine.gov",
+  "registration_url": "www.auburnmaine.gov",
+  "email": "auburnrec@auburnmaine.gov",
+  "phone": "207-333-6601 x2112",
+  "street_address": "48 Pettengill Park Road",
+  "city": "Auburn",
+  "state": "ME",
+  "zip": "04210",
+  "camp_type": "specialty",
+  "primary_categories": [
+    "sports"
+  ],
+  "age_min": 6,
+  "age_max": 14,
+  "description_short": "A summer youth track and field program run by Auburn Recreation for ages 6-14. It has two practices and one meet (on Thursdays) each week at the ELHS track.",
+  "activities": [
+    "Track and field practices",
+    "Weekly Thursday meets"
+  ],
+  "price_min": 85,
+  "price_max": 95,
+  "refund_policy_summary": "You get a full refund if you withdraw 3 or more business days before the first class, and 50% if you withdraw with less notice. You can also get 50% back if you are unhappy after the first class and tell them before the second class. There are no refunds after the second class. If Auburn Recreation cancels, all fees are refunded. A participant who can't continue because of an injury can ask for a pro-rated refund. There are no cash refunds, and refunds take 14-21 days.",
+  "special_needs_notes": "Auburn Recreation provides reasonable accommodations to people with disabilities. You must ask at least 10 days before the program's first day.",
+  "season_year": 2026,
+  "sources": [
+    {
+      "url": "https://auburnmaine.gov/Documents/Departments/Recreation/Program%20Book/Summer%20Brochure%202026%20UPDATED.pdf",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "price_min",
+        "price_max",
+        "refund_policy_summary",
+        "special_needs_notes"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=48+Pettengill+Park+Road&city=Auburn&state=ME&benchmark=Public_AR_Current&format=json",
+      "checked": "2026-10-13",
+      "fields": [
+        "zip"
+      ],
+      "note": "ZIP from the US Census geocoder for 48 PETTINGILL PARK, AUBURN, ME, 04210"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://auburnmaine.gov/Documents/Departments/Recreation/Program%20Book/Summer%20Brochure%202026%20UPDATED.pdf",
+      "kind": "pdf",
+      "title": null
+    },
+    "warnings": [
+      "Filled zip 04210 from the US Census geocoder (48 PETTINGILL PARK, AUBURN, ME, 04210)",
+      "The source is the Summer 2026 brochure and that season is over (today is 2026-10-13). No 2027 information is given.",
+      "This is a city recreation department's program book, not a camp. The only summer youth program in it is a track and field league with practices and meets. It is not a day or overnight camp.",
+      "The $85 price leaves out USTFA membership. Non-residents pay $10 more per class.",
+      "No dates for the program are given.",
+      "1 sessions without full dates were left out"
+    ],
+    "unknowns": [
+      "Start and end dates of the 2026 program, and anything about 2027",
+      "Practice days and times (only says meets are on Thursdays)",
+      "Cost of the USTFA membership, which is required on top of the $85",
+      "Zip code",
+      "When registration opens",
+      "Whether spots are still open",
+      "Whether financial aid is available (payment plans are offered)",
+      "Full address of the ELHS track"
+    ],
+    "low_confidence": [
+      {
+        "field": "price_max",
+        "confidence": 0.7,
+        "quote": "Participants who do not live in Auburn must pay an additional fee of $10 per class."
+      },
+      {
+        "field": "deposit_required",
+        "confidence": 0.7,
+        "quote": "For programs $41 - $100, a minimum of 50% payment at the time of registration is required along with a signed payment plan."
+      }
+    ],
+    "errors": []
+  }
+}

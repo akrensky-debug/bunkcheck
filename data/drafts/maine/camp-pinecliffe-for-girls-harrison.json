@@ -1,0 +1,88 @@
+{
+  "slug": "camp-pinecliffe-for-girls-harrison",
+  "name": "Camp Pinecliffe for Girls",
+  "website_url": "https://www.pinecliffe.com",
+  "phone": "(207) 583-2201",
+  "street_address": "64 Camp Pinecliffe Road",
+  "city": "Harrison",
+  "state": "ME",
+  "zip": "04040",
+  "camp_type": "sleepaway",
+  "description_short": "An all-girls overnight camp in Harrison, Maine. It offers a full summer session and a four-week session for first-time campers.",
+  "activities": [
+    "Horseback riding (optional, extra fee)"
+  ],
+  "price_min": 13100,
+  "price_max": 17900,
+  "transportation": true,
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "First-time camper four-week session",
+      "start_date": "2027-06-25",
+      "end_date": "2027-07-23",
+      "price": 13100,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.pinecliffe.com/dates-rates",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "website_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "activities",
+        "description_short",
+        "price_min",
+        "price_max",
+        "transportation",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.pinecliffe.com/dates-rates",
+      "kind": "html",
+      "title": "Dates & Rates | Camp Pinecliffe for Girls"
+    },
+    "warnings": [
+      "The 'Important Dates' list shows Friday, June 25, 2027, Friday, July 23, 2027 and Wednesday, August 11, 2027, but none of the dates are labeled. The full session probably runs June 25 - August 11, 2027, but the page does not say so, so the full session dates were left blank.",
+      "The four-week session is only for first-time campers and is described as having 'limited availability.'",
+      "Tuition does not cover extra fees: canteen, transportation to and from camp, uniforms, optional horseback riding, and Senior Trips. The amounts for these are not given.",
+      "The page says ACA accredited: check it on acacamps.org and add aca_accredited with aca_source_url",
+      "1 sessions without full dates were left out"
+    ],
+    "unknowns": [
+      "Start and end dates of the full session",
+      "Age or grade range of campers",
+      "Amounts of the extra fees (canteen, transportation, uniforms, horseback riding, Senior Trips)",
+      "Whether a deposit is required and the refund policy",
+      "Financial aid availability",
+      "Full activity list",
+      "Swimming/waterfront details",
+      "Whether meals are included (presumably, but not stated here)",
+      "Registration/application URL",
+      "Contact email",
+      "Current availability for each session",
+      "Special needs accommodations"
+    ],
+    "low_confidence": [
+      {
+        "field": "transportation",
+        "confidence": 0.65,
+        "quote": "Additional fees for both programs include canteen fees, transportation to and from camp"
+      }
+    ],
+    "errors": []
+  }
+}
