@@ -1,0 +1,85 @@
+{
+  "slug": "camp-allen-new-hampshire-bedford",
+  "name": "Camp Allen New Hampshire",
+  "website_url": "https://www.campallennh.org/",
+  "registration_url": "https://www.campallennh.org/enroll",
+  "phone": "(603) 622-8471",
+  "street_address": "56 Camp Rd",
+  "city": "Bedford",
+  "state": "NH",
+  "zip": "03110",
+  "primary_categories": [
+    "special_needs"
+  ],
+  "age_min": 6,
+  "description_short": "Camp Allen in Bedford, NH runs day and residential (overnight) camp sessions for people with developmental and/or physical disabilities, and has done so since 1931. It also offers Life Camp, an independent-living program for young adults, and CamPower, a work skills training program for adults.",
+  "special_needs_notes": "The camp serves only individuals with developmental and/or physical disabilities. The page gives no details on staffing ratios, medical support or the needs it can accommodate.",
+  "season_year": 2026,
+  "sources": [
+    {
+      "url": "https://www.campallennh.org/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "primary_categories",
+        "age_min",
+        "description_short",
+        "special_needs_notes"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.campallennh.org/",
+      "kind": "html",
+      "title": "Camp Allen NH"
+    },
+    "warnings": [
+      "This is the homepage only. It gives no session dates or prices for any season.",
+      "The site still shows a '2026 Season' menu, and that season is already over (today is 2026-10-13). There is no sign of 2027 information yet. season_year is set to 2026 because that is the only season mentioned.",
+      "camp_type left null: the camp runs both day and residential (overnight) programs, plus adult programs.",
+      "age_min of 6 comes from the Residential Camp description ('ages six and up'). Other programs may have different ages; CamPower is for adults."
+    ],
+    "unknowns": [
+      "2027 session dates",
+      "Prices and fees (there is a 'Schedule and Fees' page that was not provided)",
+      "Ages for Day Camp, Life Camp and CamPower",
+      "Maximum age",
+      "When registration opens for 2027",
+      "Specific activities",
+      "Financial aid details (the menu has a 'Camperships' link but gives no details)",
+      "Deposit and refund policy",
+      "Whether meals are included",
+      "Transportation",
+      "Extended care for the day camp",
+      "Swimming and waterfront",
+      "ACA accreditation",
+      "Email address"
+    ],
+    "low_confidence": [
+      {
+        "field": "season_year",
+        "confidence": 0.4,
+        "quote": "2026 Season"
+      },
+      {
+        "field": "age_min",
+        "confidence": 0.6,
+        "quote": "A fun, overnight camp experience for individuals ages six and up."
+      }
+    ],
+    "errors": [
+      "missing required camp_type",
+      "camp_type must be one of ['day', 'sleepaway', 'specialty']"
+    ]
+  }
+}

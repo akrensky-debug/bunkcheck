@@ -373,6 +373,19 @@ CITY_COORDS: dict[tuple[str, str], tuple[float, float]] = {
     ("mystic", "CT"): (41.356, -71.9559),
     ("quechee", "VT"): (43.6445, -72.419),
     ("white river junction", "VT"): (43.65, -72.3292),
+    ("becket", "MA"): (42.2865, -73.0848),
+    ("falmouth", "MA"): (41.5949, -70.5992),
+    ("great barrington", "MA"): (42.2217, -73.3332),
+    ("hinsdale", "MA"): (42.4358, -73.1128),
+    ("lenox", "MA"): (42.3679, -73.2698),
+    ("nantucket", "MA"): (41.2934, -70.1022),
+    ("otis", "MA"): (42.2043, -73.085),
+    ("peru", "MA"): (42.4082, -73.0353),
+    ("princeton", "MA"): (42.4541, -71.8775),
+    ("sutton", "MA"): (42.1321, -71.7503),
+    ("wellfleet", "MA"): (41.9168, -70.0271),
+    ("palmer", "MA"): (42.1889, -72.3065),
+    ("easthampton", "MA"): (42.2654, -72.6708),
 }
 
 
