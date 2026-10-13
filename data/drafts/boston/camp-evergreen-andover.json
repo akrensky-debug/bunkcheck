@@ -1,0 +1,88 @@
+{
+  "slug": "camp-evergreen-andover",
+  "name": "Camp Evergreen",
+  "website_url": "https://www.campevergreen.com/",
+  "registration_url": "https://www.campevergreen.com/registration.html",
+  "email": "office@campevergreen.com",
+  "phone": "978-475-2502",
+  "street_address": "166 Jenkins Road",
+  "city": "Andover",
+  "state": "MA",
+  "zip": "01810",
+  "primary_categories": [
+    "nature",
+    "sports"
+  ],
+  "description_short": "A summer camp in Harold Parker State Forest in Andover, MA, with lakes, ponds and hiking trails. Activities include swimming, canoeing, football and woodshop, and the camp also runs a spring vacation week.",
+  "activities": [
+    "swimming",
+    "canoeing",
+    "hiking",
+    "football",
+    "woodshop"
+  ],
+  "swim_waterfront_notes": "The camp is in Harold Parker State Forest, with lakes and ponds on site. Swimming and canoeing are offered. The page does not say whether lifeguards are on duty or how swim levels are tested.",
+  "sources": [
+    {
+      "url": "https://www.campevergreen.com/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "primary_categories",
+        "activities",
+        "description_short",
+        "swim_waterfront_notes"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.campevergreen.com/",
+      "kind": "html",
+      "title": "Camp Evergreen-Home"
+    },
+    "warnings": [
+      "This page looks like a snapshot from February 2026 (its weather widget is dated 02/05/2026). The registration dates it gives (returning campers Jan 3–10, open registration Jan 17, 5% early-bird discount before Jan 31, spring camp registration Feb 14) have no year and seem to be for the 2026 season, which has already passed. They are not recorded as 2027 dates.",
+      "No season year, session dates or prices are shown on the home page. Tuition and session details are probably on the linked Tuition and Calendar pages.",
+      "The home page says returning-camper registration filled some availability. The camp's update PDF has details that are not included here."
+    ],
+    "unknowns": [
+      "2027 season dates and session/week list",
+      "2027 tuition / weekly price (see tuition.html)",
+      "2027 registration open dates",
+      "Age or grade range",
+      "Whether this is a day camp or overnight camp (the page suggests day camp but doesn't say so)",
+      "Whether bus transportation is offered (the site has a Transportation page)",
+      "Extended care / 'Extended Summer' details",
+      "Whether meals are included",
+      "Deposit and refund policy (see FAQ and official policies)",
+      "Financial aid availability",
+      "ACA accreditation",
+      "Special needs accommodations",
+      "Swim supervision and testing policy",
+      "Operator / owner name"
+    ],
+    "low_confidence": [
+      {
+        "field": "primary_categories",
+        "confidence": 0.75,
+        "quote": "explore lakes, ponds, and hiking trails in a beautiful natural setting"
+      }
+    ],
+    "errors": [
+      "missing required camp_type",
+      "missing required season_year",
+      "camp_type must be one of ['day', 'sleepaway', 'specialty']"
+    ]
+  }
+}

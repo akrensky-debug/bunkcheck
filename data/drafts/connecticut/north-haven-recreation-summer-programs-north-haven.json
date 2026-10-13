@@ -1,0 +1,75 @@
+{
+  "slug": "north-haven-recreation-summer-programs-north-haven",
+  "name": "North Haven Recreation Summer Programs",
+  "operator_name": "North Haven Department of Recreation",
+  "website_url": "https://www.northhaven-ct.gov/news_detail_T4_R343.php",
+  "email": "Rec@northhaven-ct.gov",
+  "phone": "(203) 239-5321 ext. 8530",
+  "city": "North Haven",
+  "state": "CT",
+  "zip": null,
+  "description_short": "The North Haven Department of Recreation runs town summer programs, including camps, swim lessons and sports clinics, for North Haven residents. Details for each program are in the department's summer brochure.",
+  "activities": [
+    "swim lessons",
+    "sports clinics"
+  ],
+  "season_year": 2026,
+  "sources": [
+    {
+      "url": "https://www.northhaven-ct.gov/news_detail_T4_R343.php",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "phone",
+        "city",
+        "state",
+        "activities",
+        "description_short"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.northhaven-ct.gov/news_detail_T4_R343.php",
+      "kind": "html",
+      "title": "Recreation Summer Brochure 2026 and Music Under the Stars Dates Now Available"
+    },
+    "warnings": [
+      "The source is a town news post announcing the summer brochure. It is not the brochure and has no details about any specific camp.",
+      "The season shown (Summer 2026) is already over as of today (2026-10-13). No 2027 information is given.",
+      "No camp names, sessions, dates, ages or prices are given. Resident mail-in registration opened April 27 and walk-in registration May 4 (2026 season), but these dates don't belong to any specific session.",
+      "Much of the post covers the free Music Under the Stars concert series, which is not a camp."
+    ],
+    "unknowns": [
+      "Names of the camps and what each one is like (day, sleepaway, specialty)",
+      "2027 session dates",
+      "Age or grade ranges",
+      "Prices / weekly rates",
+      "Camp locations / street address",
+      "Registration dates and how to register for 2027",
+      "Whether non-residents can register",
+      "Extended care, meals, transportation",
+      "Financial aid and refund policy",
+      "Swim/waterfront details",
+      "Accommodations for special needs",
+      "Website or registration URL for the brochure"
+    ],
+    "low_confidence": [
+      {
+        "field": "name",
+        "confidence": 0.6,
+        "quote": "North Haven Recreation Releases Summer 2026 Brochure"
+      }
+    ],
+    "errors": [
+      "missing required zip",
+      "missing required camp_type",
+      "camp_type must be one of ['day', 'sleepaway', 'specialty']"
+    ]
+  }
+}

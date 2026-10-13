@@ -1,0 +1,73 @@
+{
+  "slug": "trumbull-parks-and-recreation-summer-camp-trumbull",
+  "name": "Trumbull Parks & Recreation Summer Camp",
+  "operator_name": "Town of Trumbull Parks & Recreation",
+  "website_url": "https://www.trumbull-ct.gov/m/newsflash/Archive/Item/3001?arcId=4693",
+  "registration_url": "https://trumbullct.myrec.com/info/default.aspx",
+  "phone": "(203) 452-5060",
+  "city": "Trumbull",
+  "state": "CT",
+  "zip": null,
+  "description_short": "Summer camp programs run by the Town of Trumbull Parks & Recreation. Details and registration are on the town's recreation website (trumbullct.myrec.com).",
+  "season_year": 2026,
+  "sources": [
+    {
+      "url": "https://www.trumbull-ct.gov/m/newsflash/Archive/Item/3001?arcId=4693",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "city",
+        "state",
+        "description_short"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.trumbull-ct.gov/m/newsflash/Archive/Item/3001?arcId=4693",
+      "kind": "html",
+      "title": "News Flash Archive - 2026 Summer Camp preview is live. Registration opens March 2, 2026 at 9AM.Arrow LeftArrow RightSlideshow Left ArrowSlideshow Right Arrow"
+    },
+    "warnings": [
+      "Source is an archived town news announcement, not the camp's own program page; it contains no camp details itself.",
+      "The page covers the 2026 season, which has already ended (today is 2026-10-13). No 2027 information is given.",
+      "2026 registration opened March 2, 2026 at 9AM; that date has passed and does not apply to 2027.",
+      "The address shown (5866 Main Street) is Trumbull Town Hall, not necessarily the camp location, so it was not recorded."
+    ],
+    "unknowns": [
+      "2027 session names and dates",
+      "Prices / weekly rate",
+      "Age or grade range",
+      "Camp type (day vs. specialty programs)",
+      "Camp location/address",
+      "Activities offered",
+      "Extended care, meals, transportation",
+      "Financial aid and refund policy",
+      "2027 registration open date",
+      "Email contact"
+    ],
+    "low_confidence": [
+      {
+        "field": "name",
+        "confidence": 0.6,
+        "quote": "2026 Summer Camp preview is live."
+      },
+      {
+        "field": "description_short",
+        "confidence": 0.7,
+        "quote": "You can now view all Summer Camp details on our recreation website."
+      }
+    ],
+    "errors": [
+      "missing required zip",
+      "missing required camp_type",
+      "camp_type must be one of ['day', 'sleepaway', 'specialty']"
+    ]
+  }
+}

@@ -184,3 +184,20 @@ async def test_a_hanging_page_fails_that_camp_only(fake_tool, tmp_path, monkeypa
     log = await batch.run(CANDIDATES[:1], metro="Providence, RI", drafts=tmp_path / "p", limit=None,
                           concurrency=1, today=TODAY)
     assert log[0]["outcome"] == "failed" and "timed out" in log[0]["detail"]
+
+
+def test_fill_only_gaps_with_one_answer() -> None:
+    from campfinder.ingest.fill import fill_draft
+    d = to_draft(listing(zip=None, street_address="1 Main St"), PAGE, metro="Providence, RI", today=TODAY)
+    hit = [{"matchedAddress": "1 MAIN ST, CRANSTON, RI, 02920", "addressComponents": {"zip": "02920"}}]
+    notes = fill_draft(d, metro="Providence, RI", today=TODAY, lookup=lambda url: hit)
+    assert d["zip"] == "02920" and "Census" in notes[0] and d["review"]["warnings"][0] == notes[0]
+    assert d["sources"][-1]["fields"] == ["zip"] and d["review"]["errors"] == []
+
+    # Two different zips, or no match, is not one right answer.
+    two = hit + [{"matchedAddress": "1 MAIN ST", "addressComponents": {"zip": "02921"}}]
+    d2 = to_draft(listing(zip=None, street_address="1 Main St"), PAGE, metro="Providence, RI", today=TODAY)
+    assert fill_draft(d2, metro="Providence, RI", today=TODAY, lookup=lambda url: two) == [] and not d2.get("zip")
+    # No street address: never guessed from the town.
+    d3 = to_draft(listing(zip=None), PAGE, metro="Providence, RI", today=TODAY)
+    assert fill_draft(d3, metro="Providence, RI", today=TODAY, lookup=lambda url: hit) == []

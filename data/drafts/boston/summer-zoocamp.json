@@ -1,0 +1,73 @@
+{
+  "slug": "summer-zoocamp",
+  "name": "Summer ZooCamp",
+  "operator_name": "Zoo New England",
+  "website_url": "https://www.zoonewengland.org/discover/zoocamp/",
+  "city": null,
+  "state": null,
+  "zip": null,
+  "primary_categories": [
+    "nature"
+  ],
+  "description_short": "A summer camp at Franklin Park Zoo and Stone Zoo where Zoo educators lead campers in learning about animals and their adaptations. Activities include hands-on projects, animal-themed games, crafts and meeting animals up close.",
+  "activities": [
+    "Exploring the Zoo",
+    "Hands-on activities",
+    "Animal-themed games",
+    "Crafts",
+    "Up-close animal encounters"
+  ],
+  "sources": [
+    {
+      "url": "https://www.zoonewengland.org/discover/zoocamp/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "primary_categories",
+        "activities",
+        "description_short"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.zoonewengland.org/discover/zoocamp/",
+      "kind": "html",
+      "title": "Camp | Zoo New England"
+    },
+    "warnings": [
+      "The page is a short overview with no season year, dates, prices, ages or registration details. The camp's details for 2027 have probably not been posted yet (today is 2026-10-13).",
+      "The camp runs at two sites, Franklin Park Zoo and Stone Zoo. The page doesn't say whether the programs or prices differ between them."
+    ],
+    "unknowns": [
+      "Season year and session dates (no dates are listed)",
+      "Prices and any deposit",
+      "Ages or grades served",
+      "Day camp or overnight (the page says 'Spend your days exploring the Zoo' but never states whether campers go home each night)",
+      "Daily hours and whether before- or after-care is offered",
+      "Addresses for each site (Franklin Park Zoo and Stone Zoo)",
+      "Registration link and when registration opens",
+      "Availability",
+      "Financial aid",
+      "Refund policy",
+      "Whether meals or snacks are included",
+      "Transportation",
+      "Support for campers with special needs",
+      "Contact phone or email for camp",
+      "ACA accreditation"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "missing required city",
+      "missing required state",
+      "missing required zip",
+      "missing required camp_type",
+      "missing required season_year",
+      "camp_type must be one of ['day', 'sleepaway', 'specialty']"
+    ]
+  }
+}

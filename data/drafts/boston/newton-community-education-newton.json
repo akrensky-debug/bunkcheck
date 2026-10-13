@@ -1,0 +1,65 @@
+{
+  "slug": "newton-community-education-newton",
+  "name": "Newton Community Education",
+  "operator_name": "Newton Community Education (Newton Public Schools)",
+  "website_url": "https://newtoncommunityed.org",
+  "email": "nce-staff@newton.k12.ma.us",
+  "phone": "617-559-6999",
+  "street_address": "457 Walnut Street",
+  "city": "Newton",
+  "state": "MA",
+  "zip": "02460",
+  "description_short": "Newton Community Education is part of Newton Public Schools. It runs classes for adults and children, plus a summer camp program. This page is the organization's homepage and has no summer camp details.",
+  "financial_aid": true,
+  "sources": [
+    {
+      "url": "https://newtoncommunityed.org",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "description_short",
+        "financial_aid"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://newtoncommunityed.org",
+      "kind": "html",
+      "title": "Newton Community Education | Learning, Enrichment, & Community"
+    },
+    "warnings": [
+      "This is Newton Community Education's homepage, not a summer camp page. Most of it covers adult classes, school-year kids' clubs, STEAM Saturdays, early release days, FUNtastic Fridays and NAA Basketball. Summer Camp only appears as a navigation link.",
+      "The text 'Monday–Friday | 8:30 AM–5 PM / Every Week, June 29–August 21' shows up twice, out of place, inside the FUNtastic Fridays section. It looks like leftover summer camp text. June 29 was a Monday in 2026 but is a Tuesday in 2027, so these are probably the 2026 summer dates, which have already passed. No sessions were recorded from it.",
+      "No 2027 summer camp information was found on this page."
+    ],
+    "unknowns": [
+      "2027 summer camp dates and weekly sessions",
+      "Summer camp prices / weekly rate",
+      "Age or grade range for summer camp",
+      "Summer camp location(s)",
+      "Camp type (day vs. other) and daily hours for 2027",
+      "Activities offered at summer camp",
+      "Registration URL and opening date for summer camp",
+      "Refund policy, deposit, extended care, meals, transportation",
+      "Whether scholarships apply to summer camp",
+      "ACA accreditation"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "missing required camp_type",
+      "missing required season_year",
+      "camp_type must be one of ['day', 'sleepaway', 'specialty']"
+    ]
+  }
+}

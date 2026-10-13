@@ -1,0 +1,117 @@
+{
+  "slug": "summer-at-shady-hill-school-cambridge",
+  "name": "Summer at Shady Hill School",
+  "operator_name": "Shady Hill School",
+  "website_url": "https://www.shs.org/shs-life/auxiliary-and-summer-programs/summer-programs",
+  "registration_url": "https://www.shs.org/shs-life/auxiliary-and-summer-programs/summer-programs/registration",
+  "phone": "617.520.5260",
+  "street_address": "178 Coolidge Hill",
+  "city": "Cambridge",
+  "state": "MA",
+  "zip": "02138",
+  "camp_type": "day",
+  "primary_categories": [
+    "arts",
+    "STEM",
+    "sports"
+  ],
+  "age_min": 4,
+  "age_max": 14,
+  "grade_max": 9,
+  "description_short": "A six-week summer day camp at Shady Hill School in Cambridge for children ages 4 to 14, open to the public. Children are grouped by grade and each session has a theme, with arts, STEM and PE activities designed by Shady Hill teachers.",
+  "activities": [
+    "Arts",
+    "STEM",
+    "Physical education",
+    "Recess on 11-acre campus",
+    "Bounce house",
+    "Water slide inflatables",
+    "Optional water play",
+    "Camp songs",
+    "Active movement games",
+    "Activity choices",
+    "Optional field trips",
+    "Leaders-in-Training program (rising grades VIII-IX)"
+  ],
+  "extended_care": true,
+  "swim_waterfront_notes": "The page mentions water slide inflatables and optional water play only. It does not mention a pool or swim instruction.",
+  "season_year": 2026,
+  "sources": [
+    {
+      "url": "https://www.shs.org/shs-life/auxiliary-and-summer-programs/summer-programs",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "grade_max",
+        "description_short",
+        "extended_care",
+        "swim_waterfront_notes"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.shs.org/shs-life/auxiliary-and-summer-programs/summer-programs",
+      "kind": "html",
+      "title": "Summer Programs"
+    },
+    "warnings": [
+      "The page refers to the 2026 schedule ('Schedule '26'). That season is over as of 2026-10-13, and no 2027 information is shown.",
+      "This page has no dates or prices. Schedule and tuition are on a linked page that wasn't provided.",
+      "Grade_max of 9 comes from the Leaders-in-Training group (rising grades VIII-IX), who help with younger campers. The regular camper groups shown go up to rising grade VII (Explorers: Rising Grades III-VII).",
+      "The page doesn't agree with itself on Leaders-in-Training grades: one place says 'Rising Grades VIII-IX' and another says 'Rising Grades VI-IX'."
+    ],
+    "unknowns": [
+      "2027 session dates and themes",
+      "Price per week or per session (the page links to a separate 'Schedule '26' page for tuition)",
+      "Aftercare price",
+      "Registration opening date for 2027",
+      "Whether lunch is provided (the page mentions only a daily snack)",
+      "Financial aid for summer programs",
+      "Refund policy and deposit",
+      "Transportation",
+      "Email contact",
+      "ACA accreditation",
+      "Support for children with special needs",
+      "Exact youngest grade (the youngest group is 'Rising Beginners', a pre-K level)"
+    ],
+    "low_confidence": [
+      {
+        "field": "season_year",
+        "confidence": 0.7,
+        "quote": "Schedule '26"
+      },
+      {
+        "field": "grade_max",
+        "confidence": 0.55,
+        "quote": "Leaders-in-Training: Rising Grades VIII-IX"
+      },
+      {
+        "field": "registration_url",
+        "confidence": 0.7,
+        "quote": "Registration"
+      },
+      {
+        "field": "swim_waterfront_notes",
+        "confidence": 0.7,
+        "quote": "Optional Water Play"
+      }
+    ],
+    "errors": []
+  }
+}

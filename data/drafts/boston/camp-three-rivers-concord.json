@@ -1,0 +1,110 @@
+{
+  "slug": "camp-three-rivers-concord",
+  "name": "Camp Three Rivers",
+  "operator_name": "Concord Recreation Department",
+  "website_url": "http://summercamp.concordma.gov/251/Camp-Three-Rivers",
+  "registration_url": "https://concordrec.myrec.com/info/activities/default.aspx?CategoryID=1547&type=",
+  "phone": "978-287-1050",
+  "street_address": "90 Stow Street (Hunt Recreation Center)",
+  "city": "Concord",
+  "state": "MA",
+  "zip": "01742",
+  "camp_type": "day",
+  "primary_categories": [
+    "sports",
+    "arts",
+    "nature",
+    "performing_arts"
+  ],
+  "grade_min": 0,
+  "grade_max": 10,
+  "description_short": "A town-run summer day camp in Concord, MA, for children entering kindergarten through 8th grade, with a counselor-in-training (CIT) program for grades 9–10. Activities include swimming, art, sports, nature/science, music/drama and archery, plus weekly field trips. Older groups go on more trips each week.",
+  "activities": [
+    "swimming",
+    "art",
+    "sports",
+    "nature/science",
+    "music/drama",
+    "archery",
+    "field trips",
+    "visiting artists",
+    "themed weeks",
+    "CIT leadership workshops"
+  ],
+  "swim_waterfront_notes": "Swimming is listed as an activity for all age groups. The page does not say where swimming takes place or how it is supervised.",
+  "season_year": 2026,
+  "sources": [
+    {
+      "url": "http://summercamp.concordma.gov/251/Camp-Three-Rivers",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "description_short",
+        "swim_waterfront_notes"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "http://summercamp.concordma.gov/251/Camp-Three-Rivers",
+      "kind": "html",
+      "title": "Camp Three Rivers | Concord Recreation Department, MAArrow LeftArrow RightSlideshow Left ArrowSlideshow Right Arrow"
+    },
+    "warnings": [
+      "The page gives no dates, year or prices. The season year 2026 is worked out from '46th anniversary' since 1980, and that season is now over (today is 2026-10-13). Details for 2027 have not been posted on this page.",
+      "No bookable sessions are listed. The four programs (Assabet K-2, Sudbury 3-6, Trekkers 7-8, CIT 9-10) are age groups, not dated sessions. The CIT program runs in blocks of 2 consecutive weeks.",
+      "The street address and phone are for the Hunt Recreation Center contact office. This may not be where the camp itself takes place.",
+      "Staff are First Aid/CPR certified and the camp is licensed by the Concord Board of Health. ACA accreditation is not mentioned."
+    ],
+    "unknowns": [
+      "Session dates and weekly schedule for 2027",
+      "Prices / weekly rate",
+      "Registration open date for 2027",
+      "Daily hours and whether before/after care is offered",
+      "Exact camp location (the address listed is the Hunt Recreation Center contact office)",
+      "Ages in years (the page gives grades only)",
+      "Cancellation/refund policy details (linked but not shown on the page)",
+      "Whether a deposit is required",
+      "Financial aid or scholarships",
+      "Whether lunch/meals are provided",
+      "Transportation to/from camp",
+      "Special needs accommodations",
+      "Camp email address",
+      "Where swimming takes place and how it is supervised",
+      "Whether there are extra fees for field trips"
+    ],
+    "low_confidence": [
+      {
+        "field": "season_year",
+        "confidence": 0.55,
+        "quote": "since 1980, Concord Recreation proudly celebrates our 46th anniversary"
+      },
+      {
+        "field": "street_address",
+        "confidence": 0.5,
+        "quote": "Hunt Recreation Center 90 Stow Street"
+      },
+      {
+        "field": "swim_waterfront_notes",
+        "confidence": 0.75,
+        "quote": "they will enjoy swimming, sports, archery, and all-camp activities"
+      }
+    ],
+    "errors": []
+  }
+}

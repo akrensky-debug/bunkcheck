@@ -1,0 +1,74 @@
+{
+  "slug": "needham-park-and-recreation-summer-camps-needham",
+  "name": "Needham Park and Recreation Summer Camps",
+  "operator_name": "Needham Park and Recreation",
+  "website_url": "https://www.needhamma.gov/5541/Summer-Camp-Guide",
+  "registration_url": "https://needhamprograms.myrec.com/info/default.aspx",
+  "phone": "781-455-7930",
+  "street_address": "178 Rosemary Street",
+  "city": "Needham",
+  "state": "MA",
+  "zip": "02492",
+  "description_short": "Town of Needham Park and Recreation runs summer camps and programs. Every camper needs a completed JotForm to stay at camp, and staff follow a written code of conduct and step-by-step discipline policy.",
+  "season_year": 2026,
+  "sources": [
+    {
+      "url": "https://www.needhamma.gov/5541/Summer-Camp-Guide",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "description_short"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.needhamma.gov/5541/Summer-Camp-Guide",
+      "kind": "html",
+      "title": "Summer Camp Guide | Needham, MAArrow LeftArrow RightSlideshow Left ArrowSlideshow Right Arrow"
+    },
+    "warnings": [
+      "The source only covers the Summer 2026 season, which is already over (today is 2026-10-13). No 2027 information was found.",
+      "This page is a parent guide and policy page (code of conduct and discipline policy), not a camp description. Program details are in a separate Summer Brochure that was not provided.",
+      "The link labeled 'Summer 2026 Parent Guide' points to a file named 'Parent-Guide-2025', so the document may be out of date.",
+      "The page covers several town-run camps and programs, not a single camp."
+    ],
+    "unknowns": [
+      "Camps offered and their individual names (see the Summer Brochure)",
+      "Session dates for 2027",
+      "Prices / weekly rates",
+      "Age or grade ranges",
+      "Camp type (day vs. other); the page mentions drop-off and pickup but does not say more",
+      "Registration opening date for 2027",
+      "Extended care availability",
+      "Financial aid",
+      "Refund policy",
+      "Transportation",
+      "Meals",
+      "Swim/waterfront details (the town runs the Pools at Rosemary)",
+      "Contact email address (the page only shows an 'Email Parks & Rec' link)",
+      "ACA accreditation"
+    ],
+    "low_confidence": [
+      {
+        "field": "name",
+        "confidence": 0.7,
+        "quote": "Needham Park and Recreation is looking forward to providing your child with a fun, memorable and safe summer."
+      }
+    ],
+    "errors": [
+      "missing required camp_type",
+      "camp_type must be one of ['day', 'sleepaway', 'specialty']"
+    ]
+  }
+}
