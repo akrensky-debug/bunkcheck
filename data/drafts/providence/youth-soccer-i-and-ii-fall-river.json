@@ -9,7 +9,7 @@
   "street_address": "151 Amity Street (Henry Lord School Gymnasium)",
   "city": "Fall River",
   "state": "MA",
-  "zip": null,
+  "zip": "02721",
   "camp_type": "specialty",
   "primary_categories": [
     "sports"
@@ -46,6 +46,14 @@
         "price_max"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=151+Amity+Street+%28Henry+Lord+School+Gymnasium%29&city=Fall+River&state=MA&benchmark=Public_AR_Current&format=json",
+      "checked": "2026-10-13",
+      "fields": [
+        "zip"
+      ],
+      "note": "ZIP from the US Census geocoder for 151 AMITY ST, FALL RIVER, MA, 02721"
     }
   ],
   "review": {
@@ -56,6 +64,7 @@
       "title": "YOUTH SOCCER I & II – Greater Fall River RE-CREATION"
     },
     "warnings": [
+      "Filled zip 02721 from the US Census geocoder (151 AMITY ST, FALL RIVER, MA, 02721)",
       "This is a weekly evening class that runs from February to April. It is not a summer camp.",
       "The page gives no year. February 3 and April 28 both fall on a Thursday in 2022 (and again in 2028). Together with the mask-required COVID rules on the page, this suggests the listing is from the 2022 season and is out of date. The exact dates were left blank because the year is not stated.",
       "The price depends on residency: $50 for residents and $60 for non-residents. The page does not say what counts as a resident.",
@@ -94,7 +103,6 @@
       }
     ],
     "errors": [
-      "missing required zip",
       "missing required season_year"
     ]
   }

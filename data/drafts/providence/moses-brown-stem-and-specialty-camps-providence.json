@@ -9,7 +9,7 @@
   "street_address": "250 Lloyd Ave",
   "city": "Providence",
   "state": "RI",
-  "zip": null,
+  "zip": "02906",
   "camp_type": "day",
   "primary_categories": [
     "STEM",
@@ -296,6 +296,14 @@
         "sessions"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=250+Lloyd+Ave&city=Providence&state=RI&benchmark=Public_AR_Current&format=json",
+      "checked": "2026-10-13",
+      "fields": [
+        "zip"
+      ],
+      "note": "ZIP from the US Census geocoder for 250 LLOYD AVE, PROVIDENCE, RI, 02906"
     }
   ],
   "review": {
@@ -306,6 +314,7 @@
       "title": "STEM and Specialty Camp (List) | My Site"
     },
     "warnings": [
+      "Filled zip 02906 from the US Census geocoder (250 LLOYD AVE, PROVIDENCE, RI, 02906)",
       "The page gives no year. The calendar ('June 15 (no camp June 19)', where June 19 is a Friday) matches 2026, so these are almost certainly the past 2026 sessions, not the upcoming 2027 season. All session years are inferred as 2026.",
       "Session end dates assume Monday–Friday weeks. Weeks that start June 15 end June 18 because there is no camp on June 19.",
       "Programs use different eligibility rules. Some are by grade (2-4, 5-8, 6-8, 9-12) and some by age (5-14, 6-12, 9-14, 10-13, 10-14). The grade-based sessions have no age range recorded.",
@@ -349,8 +358,6 @@
         "quote": "Financial Aid and Camp Discounts"
       }
     ],
-    "errors": [
-      "missing required zip"
-    ]
+    "errors": []
   }
 }

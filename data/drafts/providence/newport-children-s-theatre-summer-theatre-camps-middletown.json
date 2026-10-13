@@ -7,7 +7,7 @@
   "street_address": "1341 West Main St.",
   "city": "Middletown",
   "state": "RI",
-  "zip": null,
+  "zip": "02842",
   "camp_type": "specialty",
   "primary_categories": [
     "performing_arts"
@@ -65,6 +65,14 @@
         "sessions"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=1341+West+Main+St.&city=Middletown&state=RI&benchmark=Public_AR_Current&format=json",
+      "checked": "2026-10-13",
+      "fields": [
+        "zip"
+      ],
+      "note": "ZIP from the US Census geocoder for 1341 W MAIN RD, MIDDLETOWN, RI, 02842"
     }
   ],
   "review": {
@@ -75,6 +83,7 @@
       "title": "Summer Camps | Newport Children's Theatre"
     },
     "warnings": [
+      "Filled zip 02842 from the US Census geocoder (1341 W MAIN RD, MIDDLETOWN, RI, 02842)",
       "The page doesn't give a year for the session dates. I inferred 2026 because the dates match 2026 weekdays (June 29 and July 13 are Mondays in 2026), the menu mentions 'Teen Rep 2026', and the past productions list stops at 2025. If that's right, this season is already over (today is 2026-10-13), and the 2027 dates are not posted yet.",
       "The page doesn't say which session goes with which age group or production. I matched the age ranges to the dates in the order they appear on the page."
     ],
@@ -113,8 +122,6 @@
         "quote": "for ages 8-18 July 27-August 8th"
       }
     ],
-    "errors": [
-      "missing required zip"
-    ]
+    "errors": []
   }
 }

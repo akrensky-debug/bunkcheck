@@ -28,7 +28,7 @@ Nothing here is on the site until it is promoted and imported.
 | [Camp Ker-Anna](camp-ker-anna.json) | ? | 0 | 6 | 1 | 3 | unchecked |
 | [Camp LMNTREE](camp-lmntree-franklin.json) | Franklin | 0 | 1 | 2 | 2 | unchecked |
 | [Camp Metacomet](camp-metacomet-dartmouth.json) | Dartmouth | 0 | 1 | 3 | 4 | unchecked |
-| [Camp Phoenix](camp-phoenix-north-smithfield.json) | North Smithfield | 8 | 1 | 4 | 4 | unchecked |
+| [Camp Phoenix](camp-phoenix-north-smithfield.json) | North Smithfield | 8 | 0 | 4 | 5 | unchecked |
 | [Camp Ruggles](camp-ruggles.json) | ? | 0 | 6 | 1 | 3 | unchecked |
 | [Camp Taunton](camp-taunton-taunton.json) | Taunton | 0 | 1 | 3 | 3 | unchecked |
 | [Camp Urbie at Urban Air Adventure Park – Bellingham, MA](camp-urbie-at-urban-air-adventure-park-bellingham-ma-bellingham.json) | Bellingham | 0 | 1 | 1 | 5 | unchecked |
@@ -39,7 +39,7 @@ Nothing here is on the site until it is promoted and imported.
 | [Camp Whitin](camp-whitin-whitinsville.json) | Whitinsville | 0 | 0 | 2 | 6 | unchecked |
 | [Camp Wonderland](camp-wonderland-sharon.json) | Sharon | 0 | 4 | 1 | 5 | unchecked |
 | [Camp Woonasquatucket](camp-woonasquatucket-smithfield.json) | Smithfield | 6 | 1 | 14 | 6 | unchecked |
-| [Carolyn Dutra Dance Studio Summer Dance Camp](carolyn-dutra-dance-studio-summer-dance-camp-cranston.json) | Cranston | 2 | 1 | 7 | 4 | unchecked |
+| [Carolyn Dutra Dance Studio Summer Dance Camp](carolyn-dutra-dance-studio-summer-dance-camp-cranston.json) | Cranston | 2 | 0 | 7 | 5 | unchecked |
 | [CCF Summer Programs](ccf-summer-programs-woonsocket.json) | Woonsocket | 0 | 3 | 0 | 4 | unchecked |
 | [Children's Summer Ballet Camp](children-s-summer-ballet-camp.json) | ? | 2 | 3 | 4 | 3 | unchecked |
 | [City Camp](city-camp-providence.json) | Providence | 0 | 2 | 0 | 4 | unchecked |
@@ -56,10 +56,10 @@ Nothing here is on the site until it is promoted and imported.
 | [Fox & Bear Art Academy](fox-and-bear-art-academy-johnston.json) | Johnston | 0 | 3 | 0 | 4 | unchecked |
 | [Franklin Country Day Camp](franklin-country-day-camp-franklin.json) | Franklin | 0 | 0 | 3 | 3 | unchecked |
 | [Franklin Recreation Department Summer Camp](franklin-recreation-department-summer-camp-franklin.json) | Franklin | 0 | 0 | 0 | 4 | unchecked |
-| [Franklin Soccer School (FSS) Summer Programs](franklin-soccer-school-fss-summer-programs-franklin.json) | Franklin | 0 | 3 | 0 | 3 | unchecked |
+| [Franklin Soccer School (FSS) Summer Programs](franklin-soccer-school-fss-summer-programs-franklin.json) | Franklin | 0 | 2 | 0 | 4 | unchecked |
 | [Friends Academy Summer Programs](friends-academy-summer-programs-north-dartmouth.json) | North Dartmouth | 0 | 1 | 0 | 4 | unchecked |
 | [FUNdamentals](fundamentals-riverside.json) | Riverside | 0 | 3 | 0 | 3 | unchecked |
-| [Gamm Winter & Spring Intensive Jr. (The Gamm Theatre Camps)](gamm-winter-and-spring-intensive-jr-the-gamm-theatre-camps-warwick.json) | Warwick | 2 | 1 | 0 | 6 | unchecked |
+| [Gamm Winter & Spring Intensive Jr. (The Gamm Theatre Camps)](gamm-winter-and-spring-intensive-jr-the-gamm-theatre-camps-warwick.json) | Warwick | 2 | 0 | 0 | 7 | unchecked |
 | [Half-Day Hangout](half-day-hangout-coventry.json) | Coventry | 0 | 1 | 4 | 4 | unchecked |
 | [Hall of Fame Tennis Camp](hall-of-fame-tennis-camp-newport.json) | Newport | 0 | 0 | 6 | 5 | unchecked |
 | [Jamestown Sea Adventure Camp](jamestown-sea-adventure-camp-jamestown.json) | Jamestown | 0 | 3 | 1 | 4 | unchecked |
@@ -67,8 +67,8 @@ Nothing here is on the site until it is promoted and imported.
 | [Kent County's Best Summer Camp and After School](kent-county-s-best-summer-camp-and-after-school-west-warwick.json) | West Warwick | 0 | 0 | 3 | 4 | unchecked |
 | [Kids Junction Summer Camp](kids-junction-summer-camp-barrington.json) | Barrington | 10 | 1 | 2 | 3 | unchecked |
 | [Kids Summer Learning Center (KSLC)](kids-summer-learning-center-kslc-somerset.json) | Somerset | 0 | 0 | 4 | 5 | unchecked |
-| [Kingston's Camp](kingston-s-camp-west-kingston.json) | West Kingston | 0 | 3 | 1 | 4 | unchecked |
-| [Kismet Improv Youth and Teen Summer Intensives](kismet-improv-youth-and-teen-summer-intensives-pawtucket.json) | Pawtucket | 0 | 2 | 1 | 2 | unchecked |
+| [Kingston's Camp](kingston-s-camp-west-kingston.json) | West Kingston | 0 | 2 | 1 | 5 | unchecked |
+| [Kismet Improv Youth and Teen Summer Intensives](kismet-improv-youth-and-teen-summer-intensives-pawtucket.json) | Pawtucket | 0 | 1 | 1 | 3 | unchecked |
 | [La Salle Academy Summer Camps](la-salle-academy-summer-camps-providence.json) | Providence | 12 | 0 | 1 | 5 | unchecked |
 | [Liddle Tots II Teen Summer Camp](liddle-tots-ii-teen-summer-camp-warwick.json) | Warwick | 0 | 0 | 1 | 3 | unchecked |
 | [MACH 1 Soccer Camps](mach-1-soccer-camps-north-smithfield.json) | North Smithfield | 7 | 0 | 0 | 9 | unchecked |
@@ -77,11 +77,11 @@ Nothing here is on the site until it is promoted and imported.
 | [Marine Biology Camp](marine-biology-camp-bristol.json) | Bristol | 4 | 0 | 1 | 5 | unchecked |
 | [Mass Premier Courts Basketball Summer Camps](mass-premier-courts-basketball-summer-camps-foxborough.json) | Foxborough | 0 | 1 | 1 | 3 | unchecked |
 | [MobileQuest Summer Camp](mobilequest-summer-camp-cranston.json) | Cranston | 0 | 2 | 4 | 5 | unchecked |
-| [Moses Brown Performing and Visual Arts Camps](moses-brown-performing-and-visual-arts-camps-providence.json) | Providence | 10 | 1 | 13 | 6 | unchecked |
-| [Moses Brown Sports Camps](moses-brown-sports-camps-providence.json) | Providence | 43 | 1 | 5 | 8 | unchecked |
-| [Moses Brown STEM and Specialty Camps](moses-brown-stem-and-specialty-camps-providence.json) | Providence | 32 | 1 | 4 | 5 | unchecked |
+| [Moses Brown Performing and Visual Arts Camps](moses-brown-performing-and-visual-arts-camps-providence.json) | Providence | 10 | 0 | 13 | 7 | unchecked |
+| [Moses Brown Sports Camps](moses-brown-sports-camps-providence.json) | Providence | 43 | 0 | 5 | 9 | unchecked |
+| [Moses Brown STEM and Specialty Camps](moses-brown-stem-and-specialty-camps-providence.json) | Providence | 32 | 0 | 4 | 6 | unchecked |
 | [Narragansett Boat Club Youth Rowing Summer Camp](narragansett-boat-club-youth-rowing-summer-camp-providence.json) | Providence | 6 | 0 | 8 | 4 | unchecked |
-| [Newport Children's Theatre Summer Theatre Camps](newport-children-s-theatre-summer-theatre-camps-middletown.json) | Middletown | 3 | 1 | 4 | 2 | unchecked |
+| [Newport Children's Theatre Summer Theatre Camps](newport-children-s-theatre-summer-theatre-camps-middletown.json) | Middletown | 3 | 0 | 4 | 3 | unchecked |
 | [Newport Equestrian Academy Summer Camp](newport-equestrian-academy-summer-camp-middletown.json) | Middletown | 3 | 0 | 0 | 5 | unchecked |
 | [Next Stop BROADWAY® & ENCORE!](next-stop-broadway-and-encore-providence.json) | Providence | 3 | 0 | 9 | 6 | unchecked |
 | [One on One Basketball Summer Hoops Camps (Rhode Island)](one-on-one-basketball-summer-hoops-camps-rhode-island-providence.json) | Providence | 6 | 0 | 1 | 4 | unchecked |
@@ -94,7 +94,7 @@ Nothing here is on the site until it is promoted and imported.
 | [Rhode Island College Sports Camps & Clinics](rhode-island-college-sports-camps-and-clinics-providence.json) | Providence | 0 | 0 | 6 | 5 | unchecked |
 | [Rhode Island Fencing Academy & Club (RIFAC) Summer Camps](rhode-island-fencing-academy-and-club-rifac-summer-camps-east-providence.json) | East Providence | 0 | 1 | 1 | 3 | unchecked |
 | [Rhode Island Youth Theatre – A Christmas Carol (Fall 2026 Production)](rhode-island-youth-theatre-a-christmas-carol-fall-2026-production-warwick.json) | Warwick | 1 | 0 | 0 | 6 | unchecked |
-| [RI Magic Summer Hoops Camp](ri-magic-summer-hoops-camp-woonsocket.json) | Woonsocket | 1 | 1 | 8 | 4 | unchecked |
+| [RI Magic Summer Hoops Camp](ri-magic-summer-hoops-camp-woonsocket.json) | Woonsocket | 1 | 0 | 8 | 5 | unchecked |
 | [RISD Art Camp (Youth Full-Day Camps)](risd-art-camp-youth-full-day-camps-barrington.json) | Barrington | 5 | 1 | 1 | 7 | unchecked |
 | [Rock Spot Climbing – School Vacation & Summer Youth Adventure Programs](rock-spot-climbing-school-vacation-and-summer-youth-adventure-programs.json) | ? | 0 | 3 | 1 | 4 | unchecked |
 | [RWU's Forensic Science Summer Camp](rwu-s-forensic-science-summer-camp-bristol.json) | Bristol | 2 | 0 | 5 | 3 | unchecked |
@@ -103,7 +103,7 @@ Nothing here is on the site until it is promoted and imported.
 | [Sail To Prevail](sail-to-prevail-newport.json) | Newport | 0 | 1 | 2 | 5 | unchecked |
 | [SEA by the Bay: Summer Engineering Academy](sea-by-the-bay-summer-engineering-academy-bristol.json) | Bristol | 1 | 0 | 6 | 2 | unchecked |
 | [Slater Park Summer Camp](slater-park-summer-camp-pawtucket.json) | Pawtucket | 0 | 3 | 1 | 4 | unchecked |
-| [Summer All Day Program](summer-all-day-program-attleboro.json) | Attleboro | 1 | 1 | 3 | 5 | unchecked |
+| [Summer All Day Program](summer-all-day-program-attleboro.json) | Attleboro | 1 | 0 | 3 | 6 | unchecked |
 | [Summer Art Camp](summer-art-camp-somerset.json) | Somerset | 0 | 1 | 4 | 5 | unchecked |
 | [Summer Art Camps for Kids](summer-art-camps-for-kids-westport-point.json) | Westport Point | 2 | 0 | 2 | 4 | unchecked |
 | [Summer at JWU – Summer Cooking Camps for Kids and Teens (Providence)](summer-at-jwu-summer-cooking-camps-for-kids-and-teens-providence-providence.json) | Providence | 4 | 0 | 1 | 5 | unchecked |
@@ -113,7 +113,7 @@ Nothing here is on the site until it is promoted and imported.
 | [Summer Friends](summer-friends-north-dartmouth.json) | North Dartmouth | 9 | 1 | 10 | 4 | unchecked |
 | [Summer Fun Program](summer-fun-program-new-bedford.json) | New Bedford | 8 | 1 | 9 | 4 | unchecked |
 | [Summer@Lincoln](summer-lincoln-providence.json) | Providence | 0 | 2 | 2 | 4 | unchecked |
-| [Summer Playground Camp](summer-playground-camp-cranston.json) | Cranston | 0 | 1 | 5 | 9 | unchecked |
+| [Summer Playground Camp](summer-playground-camp-cranston.json) | Cranston | 0 | 0 | 5 | 10 | unchecked |
 | [Summer Playground Program](summer-playground-program-lincoln.json) | Lincoln | 0 | 2 | 1 | 5 | unchecked |
 | [Summer Playground Program (SPP)](summer-playground-program-spp-north-attleborough-2.json) | North Attleborough | 0 | 2 | 2 | 6 | unchecked |
 | [Summer Playground Program (SPP)](summer-playground-program-spp-north-attleborough.json) | North Attleborough | 0 | 1 | 0 | 5 | unchecked |
@@ -134,7 +134,7 @@ Nothing here is on the site until it is promoted and imported.
 | [United We Row Youth Summer Rowing](united-we-row-youth-summer-rowing.json) | ? | 4 | 3 | 1 | 5 | unchecked |
 | [Warren Parks & Recreation Summer Camp](warren-parks-and-recreation-summer-camp-warren.json) | Warren | 0 | 4 | 4 | 4 | unchecked |
 | [Warwick's Best Summer Camp](warwick-s-best-summer-camp-warwick.json) | Warwick | 0 | 1 | 2 | 3 | unchecked |
-| [West Warwick Civic Center Summer Program](west-warwick-civic-center-summer-program-west-warwick.json) | West Warwick | 1 | 1 | 1 | 4 | unchecked |
+| [West Warwick Civic Center Summer Program](west-warwick-civic-center-summer-program-west-warwick.json) | West Warwick | 1 | 0 | 1 | 5 | unchecked |
 | [Wickford Sailing Association Summer Sailing Program](wickford-sailing-association-summer-sailing-program.json) | ? | 0 | 3 | 0 | 2 | unchecked |
 | [Windswept Farm Summer Riding Camp](windswept-farm-summer-riding-camp-warren.json) | Warren | 0 | 1 | 1 | 2 | unchecked |
 | [Wrentham Recreation Department](wrentham-recreation-department-wrentham.json) | Wrentham | 0 | 3 | 1 | 3 | unchecked |
@@ -146,7 +146,7 @@ Nothing here is on the site until it is promoted and imported.
 | [You Rock Summer Camp](you-rock-summer-camp-cranston.json) | Cranston | 0 | 1 | 0 | 3 | unchecked |
 | [Young Actors Summer Institute (YASI)](young-actors-summer-institute-yasi-providence.json) | Providence | 0 | 0 | 8 | 5 | unchecked |
 | [Young Naturalist Summer Program](young-naturalist-summer-program-dartmouth.json) | Dartmouth | 8 | 1 | 6 | 4 | unchecked |
-| [Youth Soccer I & II](youth-soccer-i-and-ii-fall-river.json) | Fall River | 0 | 2 | 4 | 5 | unchecked |
+| [Youth Soccer I & II](youth-soccer-i-and-ii-fall-river.json) | Fall River | 0 | 1 | 4 | 6 | unchecked |
 | [ZooCrew at Buttonwood Park Zoo](zoocrew-at-buttonwood-park-zoo-new-bedford.json) | New Bedford | 2 | 1 | 4 | 8 | unchecked |
 
 ## Ask the owner for the brochure

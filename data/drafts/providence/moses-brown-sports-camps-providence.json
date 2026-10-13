@@ -9,7 +9,7 @@
   "street_address": "250 Lloyd Ave",
   "city": "Providence",
   "state": "RI",
-  "zip": null,
+  "zip": "02906",
   "camp_type": "day",
   "primary_categories": [
     "sports"
@@ -370,6 +370,14 @@
         "sessions"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=250+Lloyd+Ave&city=Providence&state=RI&benchmark=Public_AR_Current&format=json",
+      "checked": "2026-10-13",
+      "fields": [
+        "zip"
+      ],
+      "note": "ZIP from the US Census geocoder for 250 LLOYD AVE, PROVIDENCE, RI, 02906"
     }
   ],
   "review": {
@@ -380,6 +388,7 @@
       "title": "Sports Camp Information (List) | My Site"
     },
     "warnings": [
+      "Filled zip 02906 from the US Census geocoder (250 LLOYD AVE, PROVIDENCE, RI, 02906)",
       "The page doesn't state a year. The calendar matches summer 2026 (June 15 falls on a Monday, and there's no camp June 19, Juneteenth). That season has already passed as of 2026-10-13. Details for 2027 have not been posted.",
       "Several programs list a week starting 'July 22', which is a Wednesday in 2026. It is probably a typo for July 20. It is recorded as stated, with no end date.",
       "End dates are inferred as the Friday of each listed week, or Thursday for the June 15 week. The June 29 week says 'no camp July 4', but July 4, 2026 is a Saturday, so it's unclear which day is off. Its end date is left blank.",
@@ -430,8 +439,6 @@
         "quote": "JUNE 22 SESSION IS FULL AND CURRENTLY WAITLIST ONLY"
       }
     ],
-    "errors": [
-      "missing required zip"
-    ]
+    "errors": []
   }
 }

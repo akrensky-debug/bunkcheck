@@ -8,7 +8,7 @@
   "street_address": "1005 Main Street, Suite 2205",
   "city": "Pawtucket",
   "state": "RI",
-  "zip": null,
+  "zip": "02860",
   "camp_type": "specialty",
   "primary_categories": [
     "performing_arts"
@@ -36,6 +36,14 @@
         "description_short"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=1005+Main+Street%2C+Suite+2205&city=Pawtucket&state=RI&benchmark=Public_AR_Current&format=json",
+      "checked": "2026-10-13",
+      "fields": [
+        "zip"
+      ],
+      "note": "ZIP from the US Census geocoder for 1005 MAIN ST, PAWTUCKET, RI, 02860"
     }
   ],
   "review": {
@@ -46,6 +54,7 @@
       "title": "SUMMER INTENSIVES | Kismet Improv"
     },
     "warnings": [
+      "Filled zip 02860 from the US Census geocoder (1005 MAIN ST, PAWTUCKET, RI, 02860)",
       "Page shows 'Nothing to book right now. Check back soon.' No sessions, dates, prices, or season year are listed, so season_year is left blank.",
       "Kismet Improv is a comedy theater that offers summer intensives, not a traditional camp. camp_type 'specialty' is inferred from its improv focus."
     ],
@@ -69,7 +78,6 @@
       }
     ],
     "errors": [
-      "missing required zip",
       "missing required season_year"
     ]
   }

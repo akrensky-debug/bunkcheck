@@ -9,7 +9,7 @@
   "street_address": "155 Gansett Avenue (Recreation Office, Peter Pastore Youth Center)",
   "city": "Cranston",
   "state": "RI",
-  "zip": null,
+  "zip": "02910",
   "camp_type": "day",
   "age_min": 6,
   "age_max": 12,
@@ -51,6 +51,14 @@
         "meals_included"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=155+Gansett+Avenue+%28Recreation+Office%2C+Peter+Pastore+Youth+Center%29&city=Cranston&state=RI&benchmark=Public_AR_Current&format=json",
+      "checked": "2026-10-13",
+      "fields": [
+        "zip"
+      ],
+      "note": "ZIP from the US Census geocoder for 155 GANSETT AVE, CRANSTON, RI, 02910"
     }
   ],
   "review": {
@@ -61,6 +69,7 @@
       "title": "Parks and Recreation"
     },
     "warnings": [
+      "Filled zip 02910 from the US Census geocoder (155 GANSETT AVE, CRANSTON, RI, 02910)",
       "The page shows only the 2026 season, which is already over (today is 2026-10-13). Nothing has been posted for 2027 yet.",
       "This is the city Parks & Recreation department page, not a page just for the camp. It also covers jobs, permits and facility rentals.",
       "Open to Cranston residents only. Residency and health insurance proof may be needed to finish registering.",
@@ -114,8 +123,6 @@
         "quote": "SUMMER CAMP REGISTRATION WILL OPEN APRIL 27 at 5 p.m."
       }
     ],
-    "errors": [
-      "missing required zip"
-    ]
+    "errors": []
   }
 }

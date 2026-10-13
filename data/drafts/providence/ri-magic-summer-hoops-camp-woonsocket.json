@@ -9,7 +9,7 @@
   "street_address": "Mount Saint Charles Academy, 800 Logee St.",
   "city": "Woonsocket",
   "state": "RI",
-  "zip": null,
+  "zip": "02895",
   "camp_type": "specialty",
   "primary_categories": [
     "sports"
@@ -59,6 +59,14 @@
         "sessions"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=Mount+Saint+Charles+Academy%2C+800+Logee+St.&city=Woonsocket&state=RI&benchmark=Public_AR_Current&format=json",
+      "checked": "2026-10-13",
+      "fields": [
+        "zip"
+      ],
+      "note": "ZIP from the US Census geocoder for 800 LOGEE ST, WOONSOCKET, RI, 02895"
     }
   ],
   "review": {
@@ -69,6 +77,7 @@
       "title": "Summer Hoops Camp | Rhode Island Magic"
     },
     "warnings": [
+      "Filled zip 02895 from the US Census geocoder (800 LOGEE ST, WOONSOCKET, RI, 02895)",
       "The page doesn't state a year. The dates (Monday June 29 to Thursday July 2) fall on those weekdays in 2026, not 2027, and the URL slug says 'copy-of-summer-camp-2026'. This is almost certainly the 2026 camp, which already took place before today (2026-10-13). No 2027 dates or price are posted.",
       "The URL begins with 'copy-of', so this may be a duplicated or draft page instead of the main camp page.",
       "The camp runs 4 days (Mon-Thu). $275 is the price for the whole session, not a standard 5-day weekly rate.",
@@ -131,8 +140,6 @@
         "quote": "COST $275"
       }
     ],
-    "errors": [
-      "missing required zip"
-    ]
+    "errors": []
   }
 }

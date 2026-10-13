@@ -7,7 +7,7 @@
   "street_address": "81 Pine Street",
   "city": "Attleboro",
   "state": "MA",
-  "zip": null,
+  "zip": "02703",
   "camp_type": "day",
   "primary_categories": [
     "sports",
@@ -70,6 +70,14 @@
         "sessions"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=81+Pine+Street&city=Attleboro&state=MA&benchmark=Public_AR_Current&format=json",
+      "checked": "2026-10-13",
+      "fields": [
+        "zip"
+      ],
+      "note": "ZIP from the US Census geocoder for 81 PINE ST, ATTLEBORO, MA, 02703"
     }
   ],
   "review": {
@@ -80,6 +88,7 @@
       "title": "Summer All Day Program- 2026  | Attleboro, MAArrow LeftArrow RightSlideshow Left ArrowSlideshow Right Arrow"
     },
     "warnings": [
+      "Filled zip 02703 from the US Census geocoder (81 PINE ST, ATTLEBORO, MA, 02703)",
       "This page covers the 2026 season (June 29 - August 14, 2026), which has already ended as of 2026-10-13. Dates and prices for 2027 are not posted.",
       "Pricing has several parts: $200/week for the 1st child, $170/week for each additional child, and a daily rate of $55. Children must enroll for at least six weeks and three days per week, so the total depends on the schedule chosen. The session price is left blank for that reason.",
       "The phone number listed is the general Attleboro City Hall number, not a direct line for the Recreation Department.",
@@ -117,8 +126,6 @@
         "quote": "Arts and Crafts ... Various Indoor Sports and Exercise"
       }
     ],
-    "errors": [
-      "missing required zip"
-    ]
+    "errors": []
   }
 }

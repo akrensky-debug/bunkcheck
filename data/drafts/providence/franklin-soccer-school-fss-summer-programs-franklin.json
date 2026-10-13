@@ -4,7 +4,7 @@
   "operator_name": "Franklin Soccer School, Inc.",
   "website_url": "https://www.franklinsoccerschool.com/programs/summerprograms",
   "city": "Franklin",
-  "state": null,
+  "state": "MA",
   "zip": null,
   "camp_type": "specialty",
   "primary_categories": [
@@ -28,7 +28,8 @@
         "camp_type",
         "primary_categories",
         "activities",
-        "description_short"
+        "description_short",
+        "state"
       ],
       "note": "Drafted by the listing tool from this page"
     }
@@ -41,6 +42,7 @@
       "title": "Franklin Soccer School - Summer Programs"
     },
     "warnings": [
+      "Filled state MA: Franklin is in our town list under that state only",
       "The page gives no season year, dates, prices or ages. It says 'again this year' and the copyright runs to 2026, so the text may describe the 2026 summer, which has already passed. It may not reflect the 2027 season.",
       "Sessions aren't listed individually. The page only says there are four-day sessions in July and August for multiple age groups.",
       "The footer spells the operator name 'Frankin Soccer School, Inc.', which looks like a typo for Franklin."
@@ -60,7 +62,6 @@
     ],
     "low_confidence": [],
     "errors": [
-      "missing required state",
       "missing required zip",
       "missing required season_year"
     ]

@@ -7,7 +7,7 @@
   "street_address": "2214 Providence Pike",
   "city": "North Smithfield",
   "state": "RI",
-  "zip": null,
+  "zip": "02896",
   "camp_type": "day",
   "grade_min": 0,
   "grade_max": 7,
@@ -99,6 +99,14 @@
         "sessions"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=2214+Providence+Pike&city=North+Smithfield&state=RI&benchmark=Public_AR_Current&format=json",
+      "checked": "2026-10-13",
+      "fields": [
+        "zip"
+      ],
+      "note": "ZIP from the US Census geocoder for 2214 PROVIDENCE PIKE, NORTH SMITHFIELD, RI, 02896"
     }
   ],
   "review": {
@@ -109,6 +117,7 @@
       "title": "Home | Camp Phoenix"
     },
     "warnings": [
+      "Filled zip 02896 from the US Census geocoder (2214 PROVIDENCE PIKE, NORTH SMITHFIELD, RI, 02896)",
       "Old season: the page shows only 2026 ('Year 21') dates and rates, and that season ended in August 2026. No 2027 dates or prices are posted yet, so confidence for 2027 is low.",
       "Pricing details: there is also a $45 registration fee per camper. The second child pays $190 per week. Daily rates ($85, or $65 for a second child) apply when a camper attends 2 days or fewer in a week. The weekly rate applies at 3 or more days.",
       "Week 2 (June 29 - July 3) includes the July 3 holiday observance. The page does not say whether camp runs that day or whether the price is adjusted.",
@@ -154,8 +163,6 @@
         "quote": "$220 per week ... Applies when a camper attends 3 or more days during the week."
       }
     ],
-    "errors": [
-      "missing required zip"
-    ]
+    "errors": []
   }
 }

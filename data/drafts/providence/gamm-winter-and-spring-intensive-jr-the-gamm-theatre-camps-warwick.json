@@ -8,7 +8,7 @@
   "street_address": "1245 Jefferson Blvd.",
   "city": "Warwick",
   "state": "RI",
-  "zip": null,
+  "zip": "02886",
   "camp_type": "specialty",
   "primary_categories": [
     "performing_arts"
@@ -70,6 +70,14 @@
         "sessions"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=1245+Jefferson+Blvd.&city=Warwick&state=RI&benchmark=Public_AR_Current&format=json",
+      "checked": "2026-10-13",
+      "fields": [
+        "zip"
+      ],
+      "note": "ZIP from the US Census geocoder for 1245 JEFFERSON BLVD, WARWICK, RI, 02886"
     }
   ],
   "review": {
@@ -80,6 +88,7 @@
       "title": "Camps | The Gamm Theatre | Warwick, RI"
     },
     "warnings": [
+      "Filled zip 02886 from the US Census geocoder (1245 JEFFERSON BLVD, WARWICK, RI, 02886)",
       "Tuition depends on residency: $350 for non-Warwick residents, $250 for Warwick residents. Session prices are recorded at the non-resident rate.",
       "The Spring Intensive dates give no year (\"April 19th to Friday, April 23rd\"). They were recorded as 2027 because April 19, 2027 falls on a Monday, matching the listed weekday.",
       "Each session has its own registration link. Winter: https://gammtheatre.my.salesforce-sites.com/ticket/#/instances/a0Fcw00000yuJLZEA2. Spring: https://gammtheatre.my.salesforce-sites.com/ticket/#/instances/a0Fcw00000yuJdJEAU.",
@@ -102,8 +111,6 @@
       "ACA accreditation"
     ],
     "low_confidence": [],
-    "errors": [
-      "missing required zip"
-    ]
+    "errors": []
   }
 }

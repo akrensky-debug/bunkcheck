@@ -8,7 +8,7 @@
   "street_address": "2795 Ministerial Road",
   "city": "West Kingston",
   "state": "RI",
-  "zip": null,
+  "zip": "02892",
   "primary_categories": [
     "nature",
     "arts",
@@ -40,6 +40,14 @@
         "description_short"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=2795+Ministerial+Road&city=West+Kingston&state=RI&benchmark=Public_AR_Current&format=json",
+      "checked": "2026-10-13",
+      "fields": [
+        "zip"
+      ],
+      "note": "ZIP from the US Census geocoder for 2795 MINISTERIAL RD, WEST KINGSTON, RI, 02892"
     }
   ],
   "review": {
@@ -50,6 +58,7 @@
       "title": "HOME | Kingston's Camp"
     },
     "warnings": [
+      "Filled zip 02892 from the US Census geocoder (2795 MINISTERIAL RD, WEST KINGSTON, RI, 02892)",
       "Old season: the page shows Summer 2026, which has already ended as of 2026-10-13. No 2027 dates, prices or sessions are posted.",
       "The 2026 live update (2/28/26) says the Elementary Program was full and waitlisted for all weeks, and the Middle School Program had limited availability. It also says the waitlist 'gives the opportunity for early registration for 2027'.",
       "This is the home page only. Pricing and session details are on a separate page (https://www.kingstonscamp.com/kc-camp-registration-pricing) that was not included in this source.",
@@ -77,7 +86,6 @@
       }
     ],
     "errors": [
-      "missing required zip",
       "missing required camp_type",
       "camp_type must be one of ['day', 'sleepaway', 'specialty']"
     ]

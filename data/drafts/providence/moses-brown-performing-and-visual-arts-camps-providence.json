@@ -9,7 +9,7 @@
   "street_address": "250 Lloyd Ave",
   "city": "Providence",
   "state": "RI",
-  "zip": null,
+  "zip": "02906",
   "camp_type": "specialty",
   "primary_categories": [
     "arts",
@@ -138,6 +138,14 @@
         "sessions"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=250+Lloyd+Ave&city=Providence&state=RI&benchmark=Public_AR_Current&format=json",
+      "checked": "2026-10-13",
+      "fields": [
+        "zip"
+      ],
+      "note": "ZIP from the US Census geocoder for 250 LLOYD AVE, PROVIDENCE, RI, 02906"
     }
   ],
   "review": {
@@ -148,6 +156,7 @@
       "title": "Performing and Visual Arts Information | My Site"
     },
     "warnings": [
+      "Filled zip 02906 from the US Census geocoder (250 LLOYD AVE, PROVIDENCE, RI, 02906)",
       "The page shows no year. The weekdays (June 15, June 29 and July 6 are Mondays; June 23 is a Tuesday; there is no camp on Friday June 19 for Juneteenth or on Friday July 3) match summer 2026. That season is already over as of 2026-10-13, so this listing is likely out of date.",
       "The page only gives the start date of each week. End dates assume Monday-Friday weeks, minus any no-camp days the page lists.",
       "This page lists several separate arts programs, each with its own age or grade range. The camp-level age, grade and price ranges are combined across all of them.",
@@ -238,8 +247,6 @@
         "quote": "Weeks: June 15 (no camp June 19) and August 10"
       }
     ],
-    "errors": [
-      "missing required zip"
-    ]
+    "errors": []
   }
 }
