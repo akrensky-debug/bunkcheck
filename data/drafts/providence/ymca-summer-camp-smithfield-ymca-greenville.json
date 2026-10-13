@@ -1,0 +1,65 @@
+{
+  "slug": "ymca-summer-camp-smithfield-ymca-greenville",
+  "name": "YMCA Summer Camp (Smithfield YMCA)",
+  "operator_name": "Smithfield YMCA",
+  "website_url": "https://ymca1.org/childcare/summer-camp/",
+  "phone": "401-949-2480",
+  "street_address": "15 Deerfield Drive",
+  "city": "Greenville",
+  "state": "RI",
+  "zip": "02828",
+  "description_short": "Summer camp run by the Smithfield YMCA in Greenville, RI. The page asks families to read the \"Know Before You Go\" packet before registering and offers a waitlist.",
+  "sources": [
+    {
+      "url": "https://ymca1.org/childcare/summer-camp/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "description_short"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://ymca1.org/childcare/summer-camp/",
+      "kind": "html",
+      "title": "YMCA Summer Camp | Smithfield YMCA"
+    },
+    "warnings": [
+      "Page has almost no camp details: no dates, prices, ages or season year. Only a waitlist link and a 'Know Before You Go' packet are shown.",
+      "The page links to a waitlist, so camp may be full or not yet open. It's not clear which season this is for.",
+      "Footer copyright says 2019. The page may be out of date."
+    ],
+    "unknowns": [
+      "Season year and session dates",
+      "Prices / weekly rate",
+      "Age or grade range",
+      "Camp type (day vs. overnight) – page is under 'childcare', which suggests day camp, but the page doesn't say",
+      "Daily hours and whether before/after care is offered",
+      "Activities offered",
+      "Whether financial assistance applies to camp (the site has a general 'Financial Assistance' page under Membership)",
+      "Registration open date and registration link (see https://ymca1.org/registration/)",
+      "Whether the waitlist means current sessions are full",
+      "Meals, transportation, swim/waterfront details",
+      "Deposit and refund policy",
+      "Email contact",
+      "Contents of the 'Know Before You Go' packet"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "missing required camp_type",
+      "missing required season_year",
+      "camp_type must be one of ['day', 'sleepaway', 'specialty']",
+      "city 'Greenville', RI is not in cities.py"
+    ]
+  }
+}

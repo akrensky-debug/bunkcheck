@@ -1,0 +1,164 @@
+{
+  "slug": "next-stop-broadway-and-encore-providence",
+  "name": "Next Stop BROADWAY® & ENCORE!",
+  "operator_name": "Providence Performing Arts Center",
+  "website_url": "https://www.ppacri.org/outreach/next-stop-broadway",
+  "email": "nsb@ppacri.org",
+  "phone": "(401) 421-2787",
+  "street_address": "220 Weybosset St",
+  "city": "Providence",
+  "state": "RI",
+  "zip": "02903",
+  "camp_type": "specialty",
+  "primary_categories": [
+    "performing_arts"
+  ],
+  "age_min": 10,
+  "age_max": 17,
+  "description_short": "A five-day, full-day musical theatre program held on the stage of the Providence Performing Arts Center. Each week ends with a Friday performance for families. Next Stop BROADWAY® is open to ages 10-17 and needs no audition. ENCORE! is an advanced week for experienced performers, who must apply to get in.",
+  "activities": [
+    "Musical theatre",
+    "Singing",
+    "Choreography/dance",
+    "Acting",
+    "Final performance/showcase"
+  ],
+  "price_per_week": 565,
+  "price_min": 525,
+  "price_max": 590,
+  "financial_aid": true,
+  "meals_included": false,
+  "season_year": 2027,
+  "price_per": "week",
+  "sessions": [
+    {
+      "name": "Next Stop BROADWAY® - Week 1",
+      "start_date": "2027-07-12",
+      "end_date": "2027-07-16",
+      "price": 565,
+      "availability": "unknown"
+    },
+    {
+      "name": "Next Stop BROADWAY® - Week 2",
+      "start_date": "2027-07-19",
+      "end_date": "2027-07-23",
+      "price": 565,
+      "availability": "unknown"
+    },
+    {
+      "name": "ENCORE! (advanced, application required)",
+      "start_date": "2027-08-02",
+      "end_date": "2027-08-06",
+      "price": 590,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.ppacri.org/outreach/next-stop-broadway",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "price_min",
+        "price_max",
+        "price_per_week",
+        "price_per",
+        "meals_included",
+        "financial_aid",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.ppacri.org/outreach/next-stop-broadway",
+      "kind": "html",
+      "title": "Next Stop Broadway® | Providence Performing Arts Center"
+    },
+    "warnings": [
+      "The session dates (July 12-16, July 19-23, August 2-6) have no year on the page. They were recorded as 2027 because they fall on Monday-Friday in 2027 and the page talks about Summer 2027 registration. The 2026 season has already finished.",
+      "The page contradicts itself: the age rule says 'first day of the program (July 20 and/or July 27)'. Those were the 2026 Monday start dates, not the July 12/19 dates listed at the top, so the eligibility text may be left over from 2026.",
+      "The page does not say whether the fees ($565/$525 for Next Stop, $590/$550 for ENCORE!) are for 2027 or carried over from 2026.",
+      "Lower fees apply to siblings and returning families: $525 for Next Stop BROADWAY®, $550 for ENCORE!.",
+      "The page gives no ages for ENCORE!. It says the week is for high school or early college performers (requests from advanced upper middle schoolers are considered), so some ENCORE! campers may be older than 17. Applicants must have been in at least two performances, and an audition or recording may be asked for.",
+      "Hours: arrive by 8:45 AM and leave at 5 PM. Next Stop BROADWAY® runs until 7 PM on Friday for the performance. Snacks are provided every day, but lunch only on Friday."
+    ],
+    "unknowns": [
+      "Confirmed fees for 2027",
+      "Correct age-eligibility date for 2027",
+      "ENCORE! minimum and maximum ages",
+      "Registration link (registration opens January 15, 2027)",
+      "Refund and cancellation policy",
+      "Whether a deposit is required",
+      "Whether before- or after-care is offered",
+      "Transportation",
+      "Accommodations for campers with special needs",
+      "ACA accreditation",
+      "Where the program is held: the page mentions the PPAC stage, but a parent should confirm"
+    ],
+    "low_confidence": [
+      {
+        "field": "age_max",
+        "confidence": 0.7,
+        "quote": "registrants must be aged 10-17 on the first day of the program"
+      },
+      {
+        "field": "price_per_week",
+        "confidence": 0.65,
+        "quote": "The registration fee is $565 for a new, individual registration"
+      },
+      {
+        "field": "price_min",
+        "confidence": 0.65,
+        "quote": "$525 for two or more siblings or for returning families"
+      },
+      {
+        "field": "price_max",
+        "confidence": 0.65,
+        "quote": "The registration fee is $590 for a new, individual registration"
+      },
+      {
+        "field": "sessions[0].start_date",
+        "confidence": 0.75,
+        "quote": "Next Stop BROADWAY® - Week 1 | July 12-16"
+      },
+      {
+        "field": "sessions[1].start_date",
+        "confidence": 0.75,
+        "quote": "Next Stop BROADWAY® - Week 2 | July 19-23"
+      },
+      {
+        "field": "sessions[2].start_date",
+        "confidence": 0.75,
+        "quote": "ENCORE! - August 2-6"
+      },
+      {
+        "field": "sessions[0].price",
+        "confidence": 0.65,
+        "quote": "The registration fee is $565 for a new, individual registration, and is $525 for two or more siblings or for returning families."
+      },
+      {
+        "field": "sessions[2].price",
+        "confidence": 0.65,
+        "quote": "The registration fee is $590 for a new, individual registration and $550 for siblings and returning registrations."
+      }
+    ],
+    "errors": []
+  }
+}

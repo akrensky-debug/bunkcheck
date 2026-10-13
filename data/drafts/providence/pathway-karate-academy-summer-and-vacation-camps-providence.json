@@ -1,0 +1,149 @@
+{
+  "slug": "pathway-karate-academy-summer-and-vacation-camps-providence",
+  "name": "Pathway Karate Academy Summer & Vacation Camps",
+  "operator_name": "Pathway Karate Academy, LLC",
+  "website_url": "https://www.pathwaykarateacademy.com/summer-vacation-camps",
+  "email": "info@pathwaykarateacademy.com",
+  "phone": "401-714-0340",
+  "street_address": "1216 Smith Street",
+  "city": "Providence",
+  "state": "RI",
+  "zip": "02908",
+  "camp_type": "day",
+  "primary_categories": [
+    "sports",
+    "arts",
+    "STEM",
+    "academic",
+    "nature"
+  ],
+  "age_min": 5,
+  "age_max": 13,
+  "grade_max": 6,
+  "description_short": "A day camp at a Providence karate school for ages 5-13 (grades PK-6). Campers do karate, sports, arts & crafts, weekly math and STEM labs, and reading, plus field trips. The page names this year's theme as Nature & Our Environment.",
+  "activities": [
+    "Karate",
+    "Sports",
+    "Games",
+    "Arts & crafts",
+    "STEM labs",
+    "Math",
+    "Reading cafe / summer reading passports",
+    "Tutoring",
+    "Field trips",
+    "Swimming & splash parks",
+    "Nature visits"
+  ],
+  "price_per_week": 220,
+  "price_min": 220,
+  "price_max": 265,
+  "financial_aid": true,
+  "extended_care": true,
+  "meals_included": true,
+  "swim_waterfront_notes": "Field trips include swimming and splash parks at Pleasant View Elementary School. The page does not describe swim instruction or supervision.",
+  "price_per": "week",
+  "sources": [
+    {
+      "url": "https://www.pathwaykarateacademy.com/summer-vacation-camps",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "grade_max",
+        "description_short",
+        "price_min",
+        "price_max",
+        "price_per_week",
+        "price_per",
+        "extended_care",
+        "meals_included",
+        "financial_aid",
+        "swim_waterfront_notes"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.pathwaykarateacademy.com/summer-vacation-camps",
+      "kind": "html",
+      "title": "SUMMER & VACATION CAMPS | Pathway Karate Academy | CCAP Accepted"
+    },
+    "warnings": [
+      "The page gives no season year or dates. It says only 'This year', and the copyright is 2026, so this may be the 2026 summer, which has already ended. Prices and the field-trip lineup may change for 2027.",
+      "Prices say 'From', so the actual rate may be higher. Sibling rates are lower: $200 to $225 per week per child for 2-3 children.",
+      "The pricing tiers don't quite match. 'Before & Day Camp' (6:30AM-5PM, $235) lists only snacks, while the shorter 'Full Day Camp Only' ($220) lists breakfast, lunch and snacks. Also, the Extended sibling rate ($225) is the same as the Before & Day sibling rate.",
+      "financial_aid is set to true because the camp accepts the state child care subsidy (DHS/CCAP), not because it offers its own scholarships.",
+      "The camp is run by a karate school, but the program is a general day camp, not a karate-only specialty camp."
+    ],
+    "unknowns": [
+      "Season year and camp dates (no weeks or dates listed)",
+      "Weekly session schedule and whether any weeks are full",
+      "Registration opening date and registration link (the 'Sign Up' button URL isn't given)",
+      "Deposit and refund policy",
+      "Whether transportation is provided for field trips",
+      "ACA accreditation (only DCYF licensing and BrightStars rating are listed)",
+      "Swim supervision and staff-to-camper ratios",
+      "Special needs accommodations",
+      "Which meals come with the Before & Day Camp option (only snacks are listed)"
+    ],
+    "low_confidence": [
+      {
+        "field": "price_per_week",
+        "confidence": 0.7,
+        "quote": "FULL DAY CAMP ONLY ... 1 Child From: $220 weekly"
+      },
+      {
+        "field": "price_min",
+        "confidence": 0.7,
+        "quote": "1 Child From: $220 weekly"
+      },
+      {
+        "field": "price_max",
+        "confidence": 0.7,
+        "quote": "BEFORE & EXTENDED CAMP ... 1 Child From: $265 weekly"
+      },
+      {
+        "field": "meals_included",
+        "confidence": 0.6,
+        "quote": "Breakfast, Lunch and Snacks"
+      },
+      {
+        "field": "financial_aid",
+        "confidence": 0.7,
+        "quote": "We accept DHS/CCAP. Call to learn more."
+      },
+      {
+        "field": "swim_waterfront_notes",
+        "confidence": 0.7,
+        "quote": "Swimming & Splash Parks (at Pleasant View Elementary School)"
+      },
+      {
+        "field": "primary_categories",
+        "confidence": 0.75,
+        "quote": "Students have math and STEM labs every week"
+      },
+      {
+        "field": "description_short",
+        "confidence": 0.7,
+        "quote": "This year, our theme will be around Nature & Our Environment."
+      }
+    ],
+    "errors": [
+      "missing required season_year"
+    ]
+  }
+}

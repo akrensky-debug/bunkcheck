@@ -1,0 +1,146 @@
+{
+  "slug": "summer-youth-sailing-program-new-bedford",
+  "name": "Summer Youth Sailing Program",
+  "operator_name": "Community Boating Center, Inc.",
+  "website_url": "https://www.communityboating.org/project/summer-youth-sailing-program/",
+  "registration_url": "https://campscui.active.com/orgs/CommunityBoatingCenter?season=3780946&sessionType=168801",
+  "city": "New Bedford",
+  "state": "MA",
+  "zip": null,
+  "camp_type": "specialty",
+  "primary_categories": [
+    "sports"
+  ],
+  "age_min": 5,
+  "age_max": 17,
+  "description_short": "Weekday sailing and windsurfing classes for ages 5-17 at Community Boating Center. Programs include Summer Youth Sailing (ages 7-17), Sea Squirts (ages 5-6) and Windsurfing (ages 9-17), with free breakfast and lunch and financial aid available.",
+  "activities": [
+    "Sailing",
+    "Windsurfing",
+    "Swimming",
+    "Water safety",
+    "Games",
+    "Reading/literacy activities (Sea Squirts)"
+  ],
+  "price_min": 250,
+  "price_max": 500,
+  "financial_aid": true,
+  "meals_included": true,
+  "swim_waterfront_notes": "On-the-water program held rain or shine; students should come prepared to get wet. Closed-toe shoes (water shoes or old sneakers) are mandatory; bring a bathing suit, towel and change of clothes. Sea Squirts (ages 5-6) mixes sailing, games and swimming, with a focus on water safety. Staff limit on-the-water activity when they judge conditions unsafe.",
+  "sources": [
+    {
+      "url": "https://www.communityboating.org/project/summer-youth-sailing-program/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "price_min",
+        "price_max",
+        "meals_included",
+        "financial_aid",
+        "swim_waterfront_notes"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.communityboating.org/project/summer-youth-sailing-program/",
+      "kind": "html",
+      "title": "Summer Youth Sailing Program | Community Boating Center, Inc."
+    },
+    "warnings": [
+      "The page gives no season year and no session dates. It was likely last updated for the 2026 season (or earlier), so prices, availability and the 'Registration Open' labels may not apply to 2027.",
+      "The page conflicts with itself: Summer Youth Sailing is described as 'sold out for the season' but also shows 'Registration Open'.",
+      "Session length isn't stated, so the price per week can't be worked out from the per-session prices.",
+      "The city (New Bedford) comes only from a mention of the City of New Bedford's summer food program; the state (MA) is inferred.",
+      "The financial aid share is inconsistent on the page (about 85% in one place, 80% in another).",
+      "Each sailor is limited to two sessions.",
+      "3 sessions without full dates were left out"
+    ],
+    "unknowns": [
+      "Season year these prices and availability apply to",
+      "Session dates and how many weeks each session lasts",
+      "Whether 2027 prices will match the $250/$500 per session shown",
+      "When registration opens for 2027",
+      "Street address and zip code",
+      "Phone and email",
+      "Extended care before or after class hours",
+      "Transportation",
+      "Refund policy",
+      "Deposit requirement",
+      "Swim test or swimming ability requirements",
+      "ACA accreditation",
+      "Special needs accommodations",
+      "Grade ranges"
+    ],
+    "low_confidence": [
+      {
+        "field": "city",
+        "confidence": 0.75,
+        "quote": "free breakfast and lunch through the City of New Bedford's Free Summer Food Program"
+      },
+      {
+        "field": "state",
+        "confidence": 0.7,
+        "quote": "City of New Bedford's Free Summer Food Program"
+      },
+      {
+        "field": "price_min",
+        "confidence": 0.6,
+        "quote": "$250/Session"
+      },
+      {
+        "field": "price_max",
+        "confidence": 0.6,
+        "quote": "$500/Session"
+      },
+      {
+        "field": "meals_included",
+        "confidence": 0.75,
+        "quote": "we do provide free breakfast and lunch through the City of New Bedford's Free Summer Food Program"
+      },
+      {
+        "field": "sessions[0].availability",
+        "confidence": 0.3,
+        "quote": "Summer Youth Sailing is sold out for the season."
+      },
+      {
+        "field": "sessions[0].price",
+        "confidence": 0.6,
+        "quote": "$500/Session"
+      },
+      {
+        "field": "sessions[1].price",
+        "confidence": 0.6,
+        "quote": "$250/Session"
+      },
+      {
+        "field": "sessions[2].price",
+        "confidence": 0.6,
+        "quote": "$500/Session"
+      },
+      {
+        "field": "registration_url",
+        "confidence": 0.6,
+        "quote": "Register Here!"
+      }
+    ],
+    "errors": [
+      "missing required zip",
+      "missing required season_year",
+      "city 'New Bedford', MA is not in cities.py"
+    ]
+  }
+}

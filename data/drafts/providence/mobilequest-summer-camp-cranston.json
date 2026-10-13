@@ -1,0 +1,92 @@
+{
+  "slug": "mobilequest-summer-camp-cranston",
+  "name": "MobileQuest Summer Camp",
+  "operator_name": "MobileQuest STEM Center",
+  "website_url": "https://www.mobilequestadventures.com/camp",
+  "registration_url": "https://www.mobilequestadventures.com/register",
+  "email": "Katie@mobilequestadventures.com",
+  "phone": "401-533-4297",
+  "street_address": "845 Oaklawn Avenue",
+  "city": "Cranston",
+  "state": "RI",
+  "zip": "02920",
+  "primary_categories": [
+    "STEM"
+  ],
+  "description_short": "Summer camp run by MobileQuest STEM Center in Cranston, RI. The camp page gives contact and registration details only. It does not describe the program.",
+  "season_year": 2026,
+  "sources": [
+    {
+      "url": "https://www.mobilequestadventures.com/camp",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "primary_categories",
+        "description_short"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.mobilequestadventures.com/camp",
+      "kind": "html",
+      "title": "Camp — MobileQuest STEM Center"
+    },
+    "warnings": [
+      "Page shows only the 2026 season ('Camp 2026'), which has already ended as of 2026-10-13. No 2027 information is shown.",
+      "The early-registration discount ('Save $25.00 if you register before 12/31/25') was for the 2026 season and has expired.",
+      "The page has no sessions, prices, ages or program description. Details may be on the Register or FAQ pages.",
+      "The posted center hours look wrong ('Sat 9:00pm-6:00pm'). They are probably facility hours, not camp hours.",
+      "General email is also listed: info@mobilequestadventures.com"
+    ],
+    "unknowns": [
+      "Summer 2027 dates and sessions",
+      "Prices (weekly or per session)",
+      "Age or grade range",
+      "Whether it is a day camp (camp type)",
+      "Daily hours and extended care",
+      "Activities and themes",
+      "Meals, transportation, financial aid",
+      "Deposit and refund policy (a separate Refund page exists)",
+      "Whether it is ACA accredited",
+      "How it supports campers with special needs"
+    ],
+    "low_confidence": [
+      {
+        "field": "name",
+        "confidence": 0.7,
+        "quote": "Summer Camp\n\nMobileQuest"
+      },
+      {
+        "field": "registration_url",
+        "confidence": 0.6,
+        "quote": "Register Here"
+      },
+      {
+        "field": "primary_categories",
+        "confidence": 0.6,
+        "quote": "MobileQuest STEM Center"
+      },
+      {
+        "field": "description_short",
+        "confidence": 0.5,
+        "quote": "Where Learning Is an Adventure!"
+      }
+    ],
+    "errors": [
+      "missing required camp_type",
+      "camp_type must be one of ['day', 'sleepaway', 'specialty']"
+    ]
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "slug": "camp-frederick-douglass-new-bedford",
+  "name": "Camp Frederick Douglass",
+  "operator_name": "YMCA Southcoast",
+  "website_url": "https://ymcasouthcoast.org/location/camp-frederick-douglass/",
+  "email": "kjackson-lee@ymcasc.org",
+  "phone": "(508) 997-0734 x 127",
+  "street_address": "25 South Water Street",
+  "city": "New Bedford",
+  "state": "MA",
+  "zip": "02740",
+  "camp_type": "day",
+  "primary_categories": [
+    "sports",
+    "performing_arts",
+    "academic"
+  ],
+  "description_short": "A YMCA day camp at the New Bedford YMCA, open weekdays from 7:30 AM to 5:30 PM. Campers do gym and outdoor games, swimming, archery and drama, and learn about Frederick Douglass and his time in New Bedford through projects, field trips and museum visits.",
+  "activities": [
+    "gym games",
+    "outdoor games",
+    "swimming",
+    "archery",
+    "drama",
+    "enrichment activities",
+    "field trips",
+    "museum visits",
+    "local history projects"
+  ],
+  "sources": [
+    {
+      "url": "https://ymcasouthcoast.org/location/camp-frederick-douglass/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "description_short"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://ymcasouthcoast.org/location/camp-frederick-douglass/",
+      "kind": "html",
+      "title": "Camp Frederick Douglass - YMCA SouthcoastAccessibility ToolsIncrease TextDecrease TextGrayscaleHigh ContrastNegative ContrastLight BackgroundLinks UnderlineReadable FontReset"
+    },
+    "warnings": [
+      "Page is a YMCA location page with no season dates, prices or ages; parents need to check registration materials or contact the camp director.",
+      "No season year shown; season_year left blank."
+    ],
+    "unknowns": [
+      "Season year and session dates (no 2027 dates listed)",
+      "Weekly price or session prices",
+      "Age or grade range",
+      "Whether the 7:30 AM-5:30 PM hours include before/after care or are standard camp hours",
+      "Financial aid details (page links a 'Membership for All Form' but does not explain it)",
+      "Deposit and refund policy",
+      "Whether meals or snacks are provided",
+      "Transportation",
+      "Swim supervision / pool details",
+      "ACA accreditation",
+      "Online registration URL and registration open date",
+      "Accommodations for special needs",
+      "Availability"
+    ],
+    "low_confidence": [
+      {
+        "field": "primary_categories",
+        "confidence": 0.7,
+        "quote": "gym and outdoor games, swimming, archery, drama"
+      }
+    ],
+    "errors": [
+      "missing required season_year",
+      "city 'New Bedford', MA is not in cities.py"
+    ]
+  }
+}
