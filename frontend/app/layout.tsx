@@ -1,70 +1,113 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
+import { Figtree } from 'next/font/google'
 import './globals.css'
 import AccountLink from '@/components/AccountLink'
+import RevealObserver from '@/components/RevealObserver'
+
+const figtree = Figtree({
+  subsets: ['latin'],
+  weight: ['700', '800'],
+  variable: '--font-display',
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
-  title: 'BunkCheck -- There is finally a better way to plan your kid\'s summer.',
-  description: 'Search verified summer camps near you. Filter by age, type, price, and interests, and get an email when registration opens.',
+  title: 'Bunkcheck: Summer, sorted.',
+  description: 'Find and schedule the best summer camps for your kids with AI, and get an email when registration opens.',
+  applicationName: 'Bunkcheck',
+  // favicon.ico, icon.svg and apple-icon.png in app/ are wired automatically by Next;
+  // /icon.png is the 512 px app icon the assistant apps also point at.
   icons: { icon: '/icon.png', apple: '/icon.png' },
   openGraph: {
-    title: 'BunkCheck',
-    description: 'There is finally a better way to plan your kid\'s summer.',
+    title: 'Bunkcheck',
+    description: 'Summer, sorted.',
+    siteName: 'Bunkcheck',
     type: 'website',
   },
 }
 
+export const viewport: Viewport = {
+  themeColor: '#14213D',
+}
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <body className="bg-white text-gray-900 antialiased">
-        <header className="border-b border-gray-100 bg-white sticky top-0 z-50">
-          <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-            <a href="/" className="flex items-center gap-2 font-bold text-xl text-brand-700">
-              <span className="text-2xl">⛺</span>
-              BunkCheck
+    <html lang="en" className={figtree.variable}>
+      <head>
+        {/* Atkinson Hyperlegible Next is not in next/font for Next 14.2, so it loads from Google Fonts. */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        {/* eslint-disable-next-line @next/next/no-page-custom-font */}
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;600;700&display=swap"
+        />
+      </head>
+      <body className="bg-paper text-navy antialiased min-h-screen flex flex-col">
+        <RevealObserver />
+        <header className="border-b border-line bg-white/90 backdrop-blur supports-[backdrop-filter]:bg-white/80 sticky top-0 z-50">
+          <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between gap-3">
+            <a href="/" className="flex items-center shrink-0 rounded-md" aria-label="Bunkcheck home">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/brand/bunkcheck-lockup-light-small.svg"
+                alt="Bunkcheck"
+                width={160}
+                height={28}
+                className="h-7 md:h-8 w-auto"
+              />
             </a>
-            <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-gray-600">
-              <a href="/" className="hover:text-brand-700 transition-colors">Plan with BunkCheck</a>
-              <a href="/search" className="hover:text-brand-700 transition-colors">Browse Camps</a>
-              <a href="/operators" className="hover:text-brand-700 transition-colors">For Camps</a>
-              <a href="/operators/claim" className="hover:text-brand-700 transition-colors">Claim Listing</a>
+            <nav className="hidden md:flex items-center gap-6 text-sm font-semibold text-muted">
+              <a href="/" className="nav-link hover:text-navy transition-colors">Plan with Bunkcheck</a>
+              <a href="/search" className="nav-link hover:text-navy transition-colors">Browse Camps</a>
+              <a href="/operators" className="nav-link hover:text-navy transition-colors">For Camps</a>
+              <a href="/operators/claim" className="nav-link hover:text-navy transition-colors">Claim Listing</a>
             </nav>
-            <div className="flex items-center gap-4">
-            <AccountLink />
-            <a
-              href="/operators/submit"
-              className="bg-brand-600 text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-brand-700 transition-colors"
-            >
-              List your camp
-            </a>
+            <div className="flex items-center gap-3 sm:gap-4">
+              <AccountLink />
+              <a
+                href="/operators/submit"
+                className="btn-lift bg-navy text-white text-sm font-semibold px-4 py-2 rounded-full hover:bg-night whitespace-nowrap"
+              >
+                List your camp
+              </a>
             </div>
           </div>
         </header>
-        <main>{children}</main>
-        <footer className="bg-gray-50 border-t border-gray-100 mt-16">
-          <div className="max-w-6xl mx-auto px-4 py-10 flex flex-col md:flex-row justify-between gap-6 text-sm text-gray-500">
-            <div>
-              <p className="font-semibold text-gray-700 mb-1">⛺ BunkCheck</p>
-              <p className="mb-0.5">There is finally a better way to plan your kid's summer.</p>
-              <p className="text-xs text-gray-400">The structured camp discoverability layer for the AI economy.</p>
+        <main className="flex-1">{children}</main>
+        <footer className="on-dark bg-night text-offwhite mt-16">
+          <div className="max-w-6xl mx-auto px-4 py-12 flex flex-col md:flex-row justify-between gap-8 text-sm">
+            <div className="max-w-sm">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/brand/bunkcheck-lockup-dark-small.svg"
+                alt="Bunkcheck"
+                width={154}
+                height={22}
+                className="h-7 w-auto mb-4"
+              />
+              <p className="font-display font-bold text-lg leading-snug text-white mb-2">
+                Summer, sorted.
+              </p>
+              <p className="text-xs text-[#AEB6C8]">The structured camp discoverability layer for the AI economy.</p>
             </div>
-            <div className="flex gap-8">
-              <div>
-                <p className="font-semibold text-gray-700 mb-2">Parents</p>
-                <a href="/" className="block hover:text-brand-600">Plan your summer</a>
-                <a href="/search" className="block hover:text-brand-600">Browse camps</a>
+            <div className="flex flex-wrap gap-x-12 gap-y-6">
+              <div className="space-y-1.5">
+                <p className="font-semibold text-white mb-2">Parents</p>
+                <a href="/" className="block text-[#C9CFDC] hover:text-flashlight transition-colors">Plan your summer</a>
+                <a href="/search" className="block text-[#C9CFDC] hover:text-flashlight transition-colors">Browse camps</a>
               </div>
-              <div>
-                <p className="font-semibold text-gray-700 mb-2">Camps</p>
-                <a href="/operators" className="block hover:text-brand-600">For Camps</a>
-                <a href="/operators/submit" className="block hover:text-brand-600">List Your Camp</a>
-                <a href="/operators/claim" className="block hover:text-brand-600">Claim Listing</a>
+              <div className="space-y-1.5">
+                <p className="font-semibold text-white mb-2">Camps</p>
+                <a href="/operators" className="block text-[#C9CFDC] hover:text-flashlight transition-colors">For Camps</a>
+                <a href="/operators/submit" className="block text-[#C9CFDC] hover:text-flashlight transition-colors">List Your Camp</a>
+                <a href="/operators/claim" className="block text-[#C9CFDC] hover:text-flashlight transition-colors">Claim Listing</a>
               </div>
-              <div>
-                <p className="font-semibold text-gray-700 mb-2">Help</p>
-                <a href="/support" className="block hover:text-brand-600">Support</a>
-                <a href="/privacy" className="block hover:text-brand-600">Privacy</a>
-                <a href="/terms" className="block hover:text-brand-600">Terms</a>
+              <div className="space-y-1.5">
+                <p className="font-semibold text-white mb-2">Help</p>
+                <a href="/support" className="block text-[#C9CFDC] hover:text-flashlight transition-colors">Support</a>
+                <a href="/privacy" className="block text-[#C9CFDC] hover:text-flashlight transition-colors">Privacy</a>
+                <a href="/terms" className="block text-[#C9CFDC] hover:text-flashlight transition-colors">Terms</a>
               </div>
             </div>
           </div>

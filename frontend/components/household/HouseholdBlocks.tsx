@@ -10,7 +10,7 @@ type Of<T extends UIData['type']> = Extract<UIData, { type: T }>
 
 const SHOWN = 8
 const box = 'bg-white rounded-2xl border border-gray-200 p-4'
-const primary = 'bg-brand-600 hover:bg-brand-700 text-white font-semibold px-4 py-2 rounded-xl text-sm disabled:opacity-50'
+const primary = 'btn-lift bg-navy hover:bg-night text-white font-semibold px-4 py-2 rounded-xl text-sm disabled:opacity-50'
 
 function TaskLines({ tasks }: { tasks: Task[] }) {
   return (
@@ -76,7 +76,7 @@ export function AssignProposal({ data, familyId }: { data: Of<'assign_proposal'>
       <p className="text-sm font-semibold text-gray-900 mb-2">{data.summary}?</p>
       <TaskLines tasks={data.tasks} />
       {data.member?.status === 'invited' && (
-        <p className="text-xs text-amber-700 mt-2">{data.member.name} hasn't accepted the invite yet; reminders start once they do.</p>
+        <p className="text-xs text-navy bg-flashlight-soft rounded-lg px-2.5 py-1.5 mt-2">{data.member.name} hasn't accepted the invite yet; reminders start once they do.</p>
       )}
       <div className="flex items-center gap-3 mt-3">
         {state === 'done' ? (

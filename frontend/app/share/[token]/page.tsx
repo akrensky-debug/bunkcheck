@@ -51,12 +51,12 @@ export default function SharedPackagePage() {
         <p className="text-xs font-semibold uppercase tracking-wide text-gray-500">Registration information</p>
         <h1 className="text-2xl font-bold text-gray-900 mt-1">For {pkg.recipient}</h1>
         <p className="text-sm text-gray-500 mt-1">
-          Shared by the family through BunkCheck. This link expires on {new Date(pkg.expires_at).toLocaleDateString()}
+          Shared by the family through Bunkcheck. This link expires on {new Date(pkg.expires_at).toLocaleDateString()}
           {' '}and the family can withdraw it at any time. Please copy what you need into your records.
         </p>
       </header>
       {household.length > 0 && (
-        <section className="border border-gray-200 rounded-2xl p-4">
+        <section className="bg-white border border-gray-200 rounded-2xl p-4">
           <h2 className="font-semibold text-gray-900 mb-1">Household</h2>
           <Rows entries={household} labels={HOUSEHOLD_LABELS} />
         </section>
@@ -64,7 +64,7 @@ export default function SharedPackagePage() {
       {pkg.children.map(child => {
         const { name, ...rest } = child
         return (
-          <section key={name} className="border border-gray-200 rounded-2xl p-4">
+          <section key={name} className="bg-white border border-gray-200 rounded-2xl p-4">
             <h2 className="font-semibold text-gray-900 mb-1">{name}</h2>
             <Rows entries={Object.entries(rest)} labels={CHILD_LABELS} />
           </section>

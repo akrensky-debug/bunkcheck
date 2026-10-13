@@ -74,7 +74,7 @@ export default function ConfirmListingPage() {
         </Message>
       )}
       {done === 'removed' && (
-        <Message title={`${view?.camp_name ?? 'Your camp'} is off BunkCheck.`}>
+        <Message title={`${view?.camp_name ?? 'Your camp'} is off Bunkcheck.`}>
           Parents won&rsquo;t see it in search or on our pages. If that was a mistake, reply to the email and a person
           will put it back.
         </Message>
@@ -92,7 +92,7 @@ export default function ConfirmListingPage() {
       {!done && view && (
         <>
           <header>
-            <p className="text-sm text-gray-500">Your listing on BunkCheck</p>
+            <p className="text-sm text-gray-500">Your listing on Bunkcheck</p>
             <h1 className="text-2xl font-bold text-gray-900">{view.camp_name}</h1>
             <p className="text-gray-600 mt-1">
               This is what parents see. Is it right? No login, no fee to be listed, nothing to install.
@@ -100,7 +100,7 @@ export default function ConfirmListingPage() {
           </header>
 
           {view.changed_since_sent && (
-            <p className="text-sm bg-amber-50 border border-amber-200 text-amber-800 rounded-xl px-4 py-3">
+            <p className="text-sm bg-flashlight-soft border border-flashlight-deep text-navy rounded-xl px-4 py-3">
               We changed this listing after emailing you, so this link can&rsquo;t confirm it. Reply to the email and
               we&rsquo;ll send the current version.
             </p>
@@ -133,7 +133,7 @@ export default function ConfirmListingPage() {
           {!view.changed_since_sent && (
             <div className="space-y-3">
               <button onClick={() => answer('confirm')} disabled={busy}
-                className="w-full bg-brand-600 hover:bg-brand-700 text-white font-semibold rounded-xl py-3 disabled:opacity-50">
+                className="w-full btn-lift bg-navy hover:bg-night text-white font-semibold rounded-xl py-3 disabled:opacity-50">
                 {busy ? 'Saving…' : 'Looks right'}
               </button>
               <p className="text-sm text-gray-600 text-center">
@@ -145,7 +145,7 @@ export default function ConfirmListingPage() {
           <div className="pt-4 border-t border-gray-100 text-sm">
             {confirmRemove ? (
               <div className="flex flex-wrap items-center gap-3">
-                <span className="text-gray-700">Take {view.camp_name} off BunkCheck?</span>
+                <span className="text-gray-700">Take {view.camp_name} off Bunkcheck?</span>
                 <button onClick={() => answer('remove')} disabled={busy} className="text-red-600 font-medium">Yes, take it down</button>
                 <button onClick={() => setConfirmRemove(false)} className="text-gray-500">Keep it</button>
               </div>

@@ -60,7 +60,7 @@ export default function SignInPage() {
           />
           <button
             disabled={busy}
-            className="w-full bg-brand-600 hover:bg-brand-700 text-white font-semibold rounded-xl py-3 disabled:opacity-50"
+            className="w-full btn-lift bg-navy hover:bg-night text-white font-semibold rounded-xl py-3 disabled:opacity-50"
           >
             {busy ? 'Sending…' : 'Email me a sign-in link'}
           </button>

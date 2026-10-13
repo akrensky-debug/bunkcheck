@@ -5,8 +5,8 @@ Read this first, every session. Updated 4 October 2026 (order of work); 3 Octobe
 
 ## Name
 
-The product is **BunkCheck** (www.bunkcheck.ai, decided 13 October 2026). Everything a parent, a camp
-or an assistant sees says BunkCheck. The repository, the `campfinder` package, table names and
+The product is **Bunkcheck** (lowercase c, decided 13 October 2026; www.bunkcheck.ai). Everything a
+parent, a camp or an assistant sees says Bunkcheck. The repository, the `campfinder` package, table names and
 older docs keep the working name CampFinder; don't rename them.
 
 ## Branches

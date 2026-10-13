@@ -27,7 +27,7 @@ export default function CampDetailPage() {
   if (loading) return (
     <div className="max-w-4xl mx-auto px-4 py-16">
       <div className="space-y-4">
-        {[1,2,3].map(i => <div key={i} className="bg-gray-100 rounded-2xl h-24 animate-pulse" />)}
+        {[1,2,3].map(i => <div key={i} className="bg-white border border-line rounded-2xl h-24 animate-pulse" />)}
       </div>
     </div>
   )
@@ -41,12 +41,12 @@ export default function CampDetailPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
       {/* Breadcrumb */}
-      <nav className="text-sm text-gray-400 mb-6">
-        <a href="/search" className="hover:text-brand-600">← Back to results</a>
+      <nav className="text-sm text-muted mb-6">
+        <a href="/search" className="hover:text-navy">← Back to results</a>
       </nav>
 
       {/* Header */}
-      <div className="bg-white rounded-2xl border border-gray-200 p-6 mb-4">
+      <div className="bg-white rounded-2xl border border-line p-6 mb-4 animate-rise-in">
         <div className="flex flex-col md:flex-row md:items-start gap-4">
           <div className="flex-1">
             <div className="flex items-center gap-2 mb-1 text-sm text-gray-500">
@@ -54,15 +54,15 @@ export default function CampDetailPage() {
               <span>·</span>
               <span>{camp.city}, {camp.state}</span>
             </div>
-            <h1 className="text-2xl md:text-3xl font-extrabold text-gray-900 mb-3">{camp.name}</h1>
+            <h1 className="text-2xl md:text-3xl font-extrabold text-navy mb-3">{camp.name}</h1>
             <TrustBadge status={camp.verification_status} aca={camp.aca_accredited} />
             {camp.trust_summary?.confirmed_by_camp_at && (
-              <p className="text-xs text-green-700 mt-2">
+              <p className="text-xs font-semibold text-checked mt-2">
                 ✓ Confirmed by the camp on {new Date(camp.trust_summary.confirmed_by_camp_at).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
               </p>
             )}
             {camp.last_updated_date && (
-              <p className="text-xs text-gray-400 mt-2">
+              <p className="text-xs text-muted mt-2">
                 Last updated {new Date(camp.last_updated_date).toLocaleDateString('en-US', { month: 'short', year: 'numeric' })}
               </p>
             )}
@@ -76,14 +76,14 @@ export default function CampDetailPage() {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => Events.outboundSiteClicked(camp.id, camp.website_url!)}
-                className="bg-brand-600 hover:bg-brand-700 text-white font-bold px-5 py-3 rounded-xl transition-colors text-center"
+                className="btn-lift bg-navy hover:bg-night text-white font-bold px-5 py-3 rounded-xl text-center"
               >
                 Visit camp website ↗
               </a>
             )}
             <a
               href={`/register/${camp.id}`}
-              className="bg-gray-900 text-white font-semibold px-5 py-2.5 rounded-xl text-center hover:bg-gray-800 transition-colors text-sm"
+              className="btn-lift bg-white border border-line text-navy font-semibold px-5 py-2.5 rounded-xl text-center hover:border-navy text-sm"
             >
               Get ready to register
             </a>
@@ -92,7 +92,7 @@ export default function CampDetailPage() {
                 href={camp.registration_url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-center text-sm text-brand-600 underline hover:text-brand-700"
+                className="text-center text-sm font-semibold text-navy underline decoration-flashlight decoration-2 underline-offset-4 hover:decoration-navy"
               >
                 Register directly
               </a>
@@ -108,7 +108,7 @@ export default function CampDetailPage() {
         <div className="md:col-span-2 space-y-4">
           {/* Description */}
           {(camp.description_full || camp.description_short) && (
-            <section className="bg-white rounded-2xl border border-gray-200 p-6">
+            <section className="bg-white rounded-2xl border border-line p-6" data-reveal>
               <h2 className="font-bold text-gray-900 mb-3">About this camp</h2>
               <p className="text-gray-600 text-sm leading-relaxed">
                 {camp.description_full || camp.description_short}
@@ -118,15 +118,15 @@ export default function CampDetailPage() {
 
           {/* Sessions */}
           {camp.sessions && camp.sessions.length > 0 && (
-            <section className="bg-white rounded-2xl border border-gray-200 p-6">
+            <section className="bg-white rounded-2xl border border-line p-6" data-reveal>
               <h2 className="font-bold text-gray-900 mb-4">2027 Sessions</h2>
               <div className="space-y-3">
                 {camp.sessions.map(s => {
                   const avail: Record<string, string> = {
-                    open: 'text-green-600 bg-green-50',
-                    waitlist: 'text-yellow-700 bg-yellow-50',
-                    full: 'text-red-600 bg-red-50',
-                    unknown: 'text-gray-500 bg-gray-50',
+                    open: 'text-checked bg-checked-soft',
+                    waitlist: 'text-[#7A5A00] bg-flashlight-soft',
+                    full: 'text-red-700 bg-red-50',
+                    unknown: 'text-muted bg-gray-100',
                   }
                   return (
                     <div key={s.id} className="flex items-center justify-between py-3 border-b border-gray-100 last:border-0">
@@ -156,7 +156,7 @@ export default function CampDetailPage() {
 
           {/* Activities */}
           {camp.activities && camp.activities.length > 0 && (
-            <section className="bg-white rounded-2xl border border-gray-200 p-6">
+            <section className="bg-white rounded-2xl border border-line p-6" data-reveal>
               <h2 className="font-bold text-gray-900 mb-3">Activities</h2>
               <div className="flex flex-wrap gap-2">
                 {camp.activities.map(a => (
@@ -170,7 +170,7 @@ export default function CampDetailPage() {
         {/* Sidebar */}
         <div className="space-y-4">
           {/* Quick facts */}
-          <section className="bg-white rounded-2xl border border-gray-200 p-5">
+          <section className="bg-white rounded-2xl border border-line p-5" data-reveal>
             <h2 className="font-bold text-gray-900 mb-4 text-sm uppercase tracking-wide">Quick facts</h2>
             <dl className="space-y-3 text-sm">
               {camp.age_min != null && camp.age_max != null && (
@@ -218,7 +218,7 @@ export default function CampDetailPage() {
 
           {/* Contact */}
           {(camp.email || camp.phone) && (
-            <section className="bg-white rounded-2xl border border-gray-200 p-5">
+            <section className="bg-white rounded-2xl border border-line p-5" data-reveal>
               <h2 className="font-bold text-gray-900 mb-3 text-sm uppercase tracking-wide">Contact</h2>
               <div className="space-y-2 text-sm">
                 {camp.email && <p className="text-gray-600 break-all">{camp.email}</p>}
@@ -229,24 +229,24 @@ export default function CampDetailPage() {
 
           {/* Trust summary */}
           {camp.trust_summary && (
-            <section className="bg-gray-50 rounded-2xl border border-gray-200 p-5">
+            <section className="bg-white rounded-2xl border border-line p-5" data-reveal>
               <h2 className="font-bold text-gray-900 mb-3 text-sm uppercase tracking-wide">Data quality</h2>
-              <div className="space-y-2 text-xs text-gray-500">
-                <p>Verification: <span className="font-medium text-gray-700 capitalize">{camp.trust_summary.verification_status.replace('_', ' ')}</span></p>
+              <div className="space-y-2 text-xs text-muted">
+                <p>Verification: <span className="font-semibold text-navy capitalize">{camp.trust_summary.verification_status.replace('_', ' ')}</span></p>
                 {camp.trust_summary.fields_verified.length > 0 && (
                   <p>Verified fields: {camp.trust_summary.fields_verified.length}</p>
                 )}
                 {camp.trust_summary.fields_missing.length > 0 && (
-                  <p className="text-amber-600">Missing: {camp.trust_summary.fields_missing.join(', ')}</p>
+                  <p className="text-[#8A4B00]">Missing: {camp.trust_summary.fields_missing.join(', ')}</p>
                 )}
                 {camp.trust_summary.accreditation.status === 'confirmed' && (
-                  <p className="text-green-600 font-medium">ACA Accredited ✓</p>
+                  <p className="text-checked font-semibold">ACA accredited ✓</p>
                 )}
               </div>
               {camp.verification_status === 'unverified' && (
                 <a
                   href={`/operators/claim?camp_id=${camp.id}`}
-                  className="block mt-3 text-xs text-brand-600 underline"
+                  className="block mt-3 text-xs font-semibold text-navy underline"
                   onClick={() => Events.claimFlowStarted(camp.id)}
                 >
                   Own this camp? Claim your listing →

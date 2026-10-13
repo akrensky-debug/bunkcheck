@@ -54,7 +54,7 @@ export default function AlertPage() {
             Confirm and we&rsquo;ll email you when the registration date is announced, the day before, and when it opens.
           </p>
           <button onClick={() => act(confirmAlert)} disabled={busy}
-            className="w-full bg-brand-600 hover:bg-brand-700 text-white font-semibold rounded-xl py-3 disabled:opacity-50">
+            className="w-full btn-lift bg-navy hover:bg-night text-white font-semibold rounded-xl py-3 disabled:opacity-50">
             {busy ? 'Saving…' : 'Confirm alerts'}
           </button>
         </div>

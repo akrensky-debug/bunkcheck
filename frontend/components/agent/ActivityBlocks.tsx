@@ -28,11 +28,11 @@ function fmtDay(d: string) {
 
 function EnrollmentChip({ o }: { o: ActivityOffering }) {
   if (o.availability === 'full') return <span className="text-xs bg-red-50 text-red-700 px-2 py-0.5 rounded-full">Full</span>
-  if (o.availability === 'waitlist') return <span className="text-xs bg-amber-50 text-amber-700 px-2 py-0.5 rounded-full">Waitlist</span>
+  if (o.availability === 'waitlist') return <span className="text-xs bg-flashlight-soft text-navy px-2 py-0.5 rounded-full">Waitlist</span>
   if (o.enrollment_status === 'open')
     return <span className="text-xs bg-green-50 text-green-700 px-2 py-0.5 rounded-full">Open{o.enrollment_closes ? ` until ${fmtDay(o.enrollment_closes)}` : ''}</span>
   if (o.enrollment_status === 'upcoming' && o.enrollment_opens)
-    return <span className="text-xs bg-blue-50 text-blue-700 px-2 py-0.5 rounded-full">Opens {fmtDay(o.enrollment_opens)}</span>
+    return <span className="text-xs bg-brand-50 text-navy px-2 py-0.5 rounded-full">Opens {fmtDay(o.enrollment_opens)}</span>
   if (o.enrollment_status === 'closed') return <span className="text-xs bg-gray-100 text-gray-500 px-2 py-0.5 rounded-full">Registration closed</span>
   return null
 }
@@ -89,7 +89,7 @@ export function ActivityResultCard({ a, rank }: { a: ActivityCard; rank?: number
         {a.age_min != null && a.age_max != null && (
           <span className="text-xs bg-gray-100 text-gray-600 px-2 py-0.5 rounded-full">Ages {a.age_min}–{a.age_max}</span>
         )}
-        {a.trial_available && <span className="text-xs bg-purple-50 text-purple-700 px-2 py-0.5 rounded-full">Trial class</span>}
+        {a.trial_available && <span className="text-xs bg-brand-50 text-navy px-2 py-0.5 rounded-full">Trial class</span>}
       </div>
       {a.offerings.length > 0 ? (
         <ul className="mt-2">
@@ -149,7 +149,7 @@ export function ActivityDetailCard({ activity }: { activity: ActivityProgram }) 
 const SEVERITY = {
   clash: { label: 'Clash', cls: 'text-red-700' },
   all_day: { label: 'Busy all day', cls: 'text-red-700' },
-  logistics: { label: 'Pickup overlap', cls: 'text-amber-700' },
+  logistics: { label: 'Pickup overlap', cls: 'text-navy underline decoration-flashlight decoration-2' },
 }
 
 export function ScheduleFitView({ results }: { results: ScheduleFitResult[] }) {
@@ -185,10 +185,10 @@ export function ScheduleFitView({ results }: { results: ScheduleFitResult[] }) {
 }
 
 const KID_COLORS = [
-  'bg-sky-100 text-sky-900 border-sky-200',
+  'bg-brand-100 text-navy border-brand-200',
   'bg-rose-100 text-rose-900 border-rose-200',
   'bg-emerald-100 text-emerald-900 border-emerald-200',
-  'bg-amber-100 text-amber-900 border-amber-200',
+  'bg-flashlight-soft text-navy border-flashlight-deep',
   'bg-violet-100 text-violet-900 border-violet-200',
 ]
 
@@ -214,7 +214,7 @@ export function WeekView({ week, compact = false }: { week: FamilyWeek; compact?
         <div className={compact ? 'space-y-2' : 'grid grid-cols-1 sm:grid-cols-7 gap-2'}>
           {week.days.map(d => (compact && d.items.length === 0 ? null : (
             <div key={d.date} className={compact ? 'flex gap-3' : 'min-w-0'}>
-              <p className={`text-xs font-semibold ${compact ? 'w-10 shrink-0 pt-1' : 'mb-1'} ${d.date === today ? 'text-brand-700' : 'text-gray-500'}`}>
+              <p className={`text-xs font-semibold ${compact ? 'w-10 shrink-0 pt-1' : 'mb-1'} ${d.date === today ? 'text-navy' : 'text-gray-500'}`}>
                 {d.label}{!compact && <span className="font-normal"> {new Date(d.date + 'T00:00:00').getDate()}</span>}
               </p>
               <div className="space-y-1 flex-1 min-w-0">

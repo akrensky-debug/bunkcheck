@@ -162,7 +162,7 @@ export default function KitPage() {
           </button>
         </div>
         {kit.children.map((c, i) => (
-          <div key={i} className="border border-gray-200 rounded-2xl p-4 space-y-3">
+          <div key={i} className="bg-white border border-gray-200 rounded-2xl p-4 space-y-3">
             <div className="flex gap-3 items-end">
               <label className="flex-1 text-sm text-gray-600 space-y-1">
                 <span>Name on forms</span>
@@ -202,7 +202,7 @@ export default function KitPage() {
       </section>
 
       <div className="flex items-center gap-4 sticky bottom-0 bg-white py-3 border-t border-gray-100">
-        <button onClick={save} className="bg-brand-600 hover:bg-brand-700 text-white font-semibold px-5 py-2.5 rounded-xl">
+        <button onClick={save} className="btn-lift bg-navy hover:bg-night text-white font-semibold px-5 py-2.5 rounded-xl">
           Save
         </button>
         {status && <span className="text-sm text-gray-500">{status}</span>}
@@ -303,7 +303,7 @@ function SharePanel({ familyId, kit, shares, onShares }: {
         Pick the kids and only the fields this camp asks for. They get a private link that expires; you can
         withdraw it any time and see when it was opened. Save your kit first.
       </p>
-      <form onSubmit={share} className="border border-gray-200 rounded-2xl p-4 space-y-4">
+      <form onSubmit={share} className="bg-white border border-gray-200 rounded-2xl p-4 space-y-4">
         <input required className={input} placeholder="Who is it for? e.g. Riverside STEM Camp" value={recipient} onChange={e => setRecipient(e.target.value)} />
         <Checks label="Kids" options={savedKids.map(c => [c.name, c.name])} chosen={kids} onToggle={v => toggle(kids, setKids, v)} />
         <Checks label="Household" options={Object.entries(HOUSEHOLD_LABELS)} chosen={household} onToggle={v => toggle(household, setHousehold, v)} />
@@ -316,7 +316,7 @@ function SharePanel({ familyId, kit, shares, onShares }: {
             <option value={30}>Expires in 30 days</option>
             <option value={90}>Expires in 90 days</option>
           </select>
-          <button className="bg-brand-600 hover:bg-brand-700 text-white font-semibold px-4 py-2 rounded-xl text-sm">
+          <button className="btn-lift bg-navy hover:bg-night text-white font-semibold px-4 py-2 rounded-xl text-sm">
             Create private link
           </button>
           {error && <span className="text-sm text-red-600">{error}</span>}

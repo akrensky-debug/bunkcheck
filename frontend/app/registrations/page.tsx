@@ -119,7 +119,7 @@ function RegistrationCard({ familyId, reg, onChange, onRemove }: {
       <div className="flex flex-wrap gap-3 text-sm">
         {reg.status !== 'registered' || reg.payment_status !== 'paid' ? (
           <a href={`/register/${reg.camp_id}?registration=${reg.id}`}
-            className="bg-brand-600 hover:bg-brand-700 text-white font-semibold px-4 py-1.5 rounded-lg">
+            className="btn-lift bg-navy hover:bg-night text-white font-semibold px-4 py-1.5 rounded-lg">
             {reg.status === 'watching' ? 'Register-now checklist' : 'Checklist'}
           </a>
         ) : null}
@@ -205,7 +205,7 @@ function RecordForm({ familyId, reg, onSaved }: { familyId: string; reg: Registr
         <input className={input} value={form.confirmation_number ?? ''} onChange={e => set('confirmation_number', e.target.value)} />
       </label>
       <div className="sm:col-span-2 flex items-center gap-3">
-        <button className="bg-brand-600 hover:bg-brand-700 text-white font-semibold px-4 py-2 rounded-lg">Save</button>
+        <button className="btn-lift bg-navy hover:bg-night text-white font-semibold px-4 py-2 rounded-lg">Save</button>
         {error && <span className="text-red-600">{error}</span>}
       </div>
     </form>
@@ -260,7 +260,7 @@ function ReminderSettings({ familyId }: { familyId: string }) {
         </div>
       )}
       <div className="flex items-center gap-3">
-        <button onClick={save} className="bg-brand-600 hover:bg-brand-700 text-white text-sm font-semibold px-4 py-2 rounded-lg">Save reminders</button>
+        <button onClick={save} className="btn-lift bg-navy hover:bg-night text-white text-sm font-semibold px-4 py-2 rounded-lg">Save reminders</button>
         {status && <span className="text-sm text-gray-500">{status}</span>}
       </div>
       <div className="text-sm">

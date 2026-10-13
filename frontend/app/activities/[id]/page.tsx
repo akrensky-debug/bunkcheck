@@ -97,7 +97,7 @@ export default function ActivityPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8 space-y-4">
       <nav className="text-sm text-gray-400">
-        <a href="/" className="hover:text-brand-600">← Back to BunkCheck</a>
+        <a href="/" className="hover:text-brand-600">← Back to Bunkcheck</a>
       </nav>
 
       <div className="bg-white rounded-2xl border border-gray-200 p-6">
@@ -111,7 +111,7 @@ export default function ActivityPage() {
             <TrustBadge status={a.verification.status} />
           </div>
           <div className="flex flex-col gap-2 md:min-w-[220px]">
-            <a href={`/?q=${encodeURIComponent(ask)}`} className="bg-brand-600 hover:bg-brand-700 text-white font-bold px-5 py-3 rounded-xl text-center transition-colors">
+            <a href={`/?q=${encodeURIComponent(ask)}`} className="btn-lift bg-navy hover:bg-night text-white font-bold px-5 py-3 rounded-xl text-center transition-colors">
               Check it fits our week →
             </a>
             {(a.registration_url || a.provider.website) && (
@@ -126,13 +126,13 @@ export default function ActivityPage() {
         <div className="flex flex-wrap gap-2 mt-4">
           {a.ages.min != null && a.ages.max != null && <span className="text-xs bg-gray-100 text-gray-600 px-2 py-0.5 rounded-full">Ages {a.ages.min}–{a.ages.max}</span>}
           {a.skill_levels.map(l => <span key={l} className="text-xs bg-gray-100 text-gray-600 px-2 py-0.5 rounded-full">{l}</span>)}
-          {a.trial_available && <span className="text-xs bg-purple-50 text-purple-700 px-2 py-0.5 rounded-full">Trial class{a.trial_notes ? `: ${a.trial_notes}` : ''}</span>}
-          {a.membership_required && <span className="text-xs bg-amber-50 text-amber-800 px-2 py-0.5 rounded-full">Membership required</span>}
+          {a.trial_available && <span className="text-xs bg-brand-50 text-navy px-2 py-0.5 rounded-full">Trial class{a.trial_notes ? `: ${a.trial_notes}` : ''}</span>}
+          {a.membership_required && <span className="text-xs bg-flashlight-soft text-navy px-2 py-0.5 rounded-full">Membership required</span>}
         </div>
       </div>
 
       {a.verification.status === 'unverified' && (
-        <div className="bg-amber-50 border border-amber-200 rounded-2xl p-4 text-sm text-amber-900">
+        <div className="bg-flashlight-soft border border-flashlight-deep rounded-2xl p-4 text-sm text-navy">
           We gathered these details from the provider's own website and haven't confirmed them with the
           provider yet. Schedules and prices change by term, so check with them before you register.
           {a.verification.fields_missing.length > 0 && (

@@ -267,7 +267,7 @@ function TaskRow({ task: t, members, fullPlan, selected, onSelect, onToggle, onC
         <button
           onClick={onToggle}
           aria-label={done ? 'Mark not done' : 'Mark done'}
-          className={`w-5 h-5 rounded-full border-2 shrink-0 flex items-center justify-center text-[10px] ${done ? 'bg-green-500 border-green-500 text-white' : 'border-gray-300 hover:border-green-500'}`}
+          className={`w-5 h-5 rounded-full border-2 shrink-0 flex items-center justify-center text-[10px] ${done ? 'bg-checked border-checked text-white' : 'border-gray-300 hover:border-checked'}`}
         >
           {done ? '✓' : ''}
         </button>
@@ -338,7 +338,7 @@ function AddTask({ onAdd }: { onAdd: (t: { kind: TaskKind; title: string; due_da
       </select>
       <input required type="date" className={input} value={day} onChange={e => setDay(e.target.value)} />
       <input type="time" className={input} value={time} onChange={e => setTime(e.target.value)} />
-      <button className="bg-brand-600 hover:bg-brand-700 text-white font-semibold px-4 py-2 rounded-xl text-sm">Add</button>
+      <button className="btn-lift bg-navy hover:bg-night text-white font-semibold px-4 py-2 rounded-xl text-sm">Add</button>
     </form>
   )
 }
@@ -460,7 +460,7 @@ function PeopleSection({ household, familyId, act, onLeft }: {
               </p>
               <p className="text-xs text-gray-500">
                 {m.email ?? ROLE_LABELS[m.role]}
-                {m.status === 'invited' && <span className="ml-1 text-amber-700">· invited{m.invite_expires_at ? `, link expires ${new Date(m.invite_expires_at).toLocaleDateString()}` : ''}</span>}
+                {m.status === 'invited' && <span className="ml-1 text-muted italic">· invited{m.invite_expires_at ? `, link expires ${new Date(m.invite_expires_at).toLocaleDateString()}` : ''}</span>}
               </p>
             </div>
             {manage && m.role !== 'owner' ? (
@@ -524,7 +524,7 @@ function PeopleSection({ household, familyId, act, onLeft }: {
               </label>
             ))}
           </div>
-          <button className="bg-brand-600 hover:bg-brand-700 text-white font-semibold px-4 py-2 rounded-xl text-sm">Send invite</button>
+          <button className="btn-lift bg-navy hover:bg-night text-white font-semibold px-4 py-2 rounded-xl text-sm">Send invite</button>
           <p className="text-xs text-gray-500">They sign in with that email to accept. The link works for 7 days. The info kit stays with you unless you turn it on for a co-parent.</p>
           {link && (
             <CopyLink

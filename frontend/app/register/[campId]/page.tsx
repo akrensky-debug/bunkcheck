@@ -90,7 +90,7 @@ function Register() {
         <div className="flex flex-wrap gap-3">
           {list.registration_url ? (
             <a href={list.registration_url} target="_blank" rel="noopener noreferrer"
-              className="bg-brand-600 hover:bg-brand-700 text-white font-semibold px-5 py-2.5 rounded-xl">
+              className="btn-lift bg-navy hover:bg-night text-white font-semibold px-5 py-2.5 rounded-xl">
               Open the camp's registration ↗
             </a>
           ) : <span className="text-sm text-gray-500">No registration link on file; use the camp's website.</span>}
@@ -106,7 +106,7 @@ function Register() {
             </button>
           )}
         </div>
-        <p className="text-xs text-gray-500">You register and pay on the camp's own site. BunkCheck never submits forms or payments for you.</p>
+        <p className="text-xs text-gray-500">You register and pay on the camp's own site. Bunkcheck never submits forms or payments for you.</p>
       </section>
 
       <section className="space-y-2">
@@ -204,7 +204,7 @@ function FormAnswers({ familyId, list, signedIn, kidName }: {
                 ) : f.ready === true ? (
                   <span className="text-green-700">In your kit</span>
                 ) : f.ready === false ? (
-                  <a href="/kit" className="text-amber-700">Missing{f.missing_for.length ? ` for ${f.missing_for.join(', ')}` : ''}: add it</a>
+                  <a href="/kit" className="font-semibold text-navy underline decoration-flashlight decoration-2 underline-offset-2">Missing{f.missing_for.length ? ` for ${f.missing_for.join(', ')}` : ''}: add it</a>
                 ) : null}
               </span>
             </li>
@@ -269,11 +269,11 @@ function PackagePanel({ familyId, campId, kidName, registrationId, sharedCount, 
           {preview.children.length > 0 && (
             <FieldChecks title={`About ${preview.children.join(', ')}`} fields={preview.child_fields} labels={preview.labels} chosen={childFields} onToggle={v => toggle(childFields, setChildFields, v)} />
           )}
-          {preview.missing.length > 0 && <p className="text-amber-700">Your kit doesn't have: {preview.missing.join(', ')}. <a href="/kit" className="underline">Add them</a> first, or answer on the form.</p>}
+          {preview.missing.length > 0 && <p className="bg-flashlight-soft text-navy rounded-lg px-3 py-2">Your kit doesn't have: {preview.missing.join(', ')}. <a href="/kit" className="underline">Add them</a> first, or answer on the form.</p>}
           {preview.not_in_kit.length > 0 && <p className="text-gray-500">Answer on the camp's site yourself: {preview.not_in_kit.join(', ')}.</p>}
           <div className="flex items-center gap-3">
             <button onClick={share} disabled={!household.length && !childFields.length}
-              className="bg-brand-600 hover:bg-brand-700 disabled:opacity-40 text-white font-semibold px-4 py-2 rounded-xl">
+              className="btn-lift bg-navy hover:bg-night disabled:opacity-40 text-white font-semibold px-4 py-2 rounded-xl">
               Share {household.length + (preview.children.length ? childFields.length : 0)} fields with {preview.recipient}
             </button>
             <button onClick={() => setPreview(null)} className="text-gray-500">Cancel</button>
@@ -340,10 +340,10 @@ function SandboxBooking({ familyId, registrationId, onBooked }: { familyId: stri
   }
 
   return (
-    <section className="space-y-3 border-2 border-dashed border-amber-300 rounded-2xl p-4">
-      <p className="text-xs font-bold uppercase tracking-wide text-amber-700">Sandbox prototype · test bookings only</p>
+    <section className="space-y-3 border-2 border-dashed border-flashlight-deep bg-flashlight-soft/40 rounded-2xl p-4">
+      <p className="text-xs font-bold uppercase tracking-wide text-navy">Sandbox prototype · test bookings only</p>
       {!quote && !result && (
-        <button onClick={ask} className="border border-gray-300 bg-white font-semibold px-4 py-2 rounded-xl text-sm">Get a quote through BunkCheck</button>
+        <button onClick={ask} className="border border-gray-300 bg-white font-semibold px-4 py-2 rounded-xl text-sm">Get a quote through Bunkcheck</button>
       )}
       {quote && (
         <div className="space-y-3 text-sm">
@@ -355,13 +355,13 @@ function SandboxBooking({ familyId, registrationId, onBooked }: { familyId: stri
             <dt className="text-gray-500">Payment</dt><dd>Paid to the camp on its own system after booking</dd>
             <dt className="text-gray-500">We'll send</dt><dd>{quote.fields_to_send.join(', ')}</dd>
           </dl>
-          {quote.missing.length > 0 && <p className="text-amber-700">Add to your info kit first: {quote.missing.join(', ')}.</p>}
+          {quote.missing.length > 0 && <p className="bg-flashlight-soft text-navy rounded-lg px-3 py-2">Add to your info kit first: {quote.missing.join(', ')}.</p>}
           <label className="flex gap-2 items-start">
             <input type="checkbox" className="mt-1" checked={readTerms} onChange={e => setReadTerms(e.target.checked)} />
             <span>I've read the camp's <a href={quote.terms_url ?? '#'} target="_blank" rel="noopener noreferrer" className="underline">terms</a>. Waivers and medical forms are still mine to sign with the camp.</span>
           </label>
           <button onClick={book} disabled={!readTerms || quote.missing.length > 0}
-            className="bg-brand-600 hover:bg-brand-700 disabled:opacity-40 text-white font-semibold px-4 py-2 rounded-xl">
+            className="btn-lift bg-navy hover:bg-night disabled:opacity-40 text-white font-semibold px-4 py-2 rounded-xl">
             Confirm booking for ${quote.price.toLocaleString()}
           </button>
         </div>
