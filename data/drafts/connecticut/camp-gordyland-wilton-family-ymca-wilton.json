@@ -1,0 +1,75 @@
+{
+  "slug": "camp-gordyland-wilton-family-ymca-wilton",
+  "name": "Camp Gordyland (Wilton Family YMCA)",
+  "operator_name": "Riverbrook Regional YMCA",
+  "website_url": "https://wiltonymca.org/special-needs/",
+  "registration_url": "https://operations.daxko.com/Online/3093/ProgramsV2/Home.mvc",
+  "email": "cfoley@riverbrookymca.org",
+  "phone": "203-762-8384",
+  "street_address": "404 Danbury Road",
+  "city": "Wilton",
+  "state": "CT",
+  "zip": "06897",
+  "description_short": "Camp Gordyland is the summer camp at the Wilton branch of the Riverbrook Regional YMCA. Campers with special needs join a regular camp group, and the Special Needs Director may assign them shared paraprofessional support.",
+  "special_needs_notes": "Campers with special needs take part fully in their camp group and in all camp-day activities. At the Special Needs Director's discretion, a camper may be assigned shared (not one-to-one) paraprofessional support. Support staff help with engagement and make modifications when needed. Students in summer school can attend, and the Y will work around school district schedules. CIT program can extend beyond age 16 up to age 21 if space allows. Campers registered as an extension of a school-supported program must attend with district support. The Y may require families to provide outside support, and the Special Needs Director or Camp Director will contact the family to agree on a plan. Families must contact Christina Foley (cfoley@riverbrookymca.org, 203-762-8384 ext. 207) to discuss needs or arrange support staff. Full sessions go to a waitlist.",
+  "sources": [
+    {
+      "url": "https://wiltonymca.org/special-needs/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "description_short",
+        "special_needs_notes"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://wiltonymca.org/special-needs/",
+      "kind": "html",
+      "title": "Special Needs – Riverbrook Regional Ymca"
+    },
+    "warnings": [
+      "This page is the YMCA's general special-needs inclusion policy, not a camp listing. It has no dates, prices, ages or session details.",
+      "No season year stated; footer reads '© Riverbrook Regional YMCA 2023' while the menu references 'Program Guide 2026'.",
+      "Email and ext. 207 are for the Special Needs contact (Christina Foley), not general camp registration."
+    ],
+    "unknowns": [
+      "Season year and session dates",
+      "Fees / weekly price (page says to see the specific age/grade camp page)",
+      "Camper age and grade range",
+      "Whether it is a day or overnight camp",
+      "Daily hours",
+      "Activities offered",
+      "Whether financial aid applies to camp (the site menu has a general Financial Aid link)",
+      "Extended care, meals, transportation",
+      "Deposit and refund policy",
+      "Swim/waterfront details",
+      "ACA accreditation",
+      "Registration opening date"
+    ],
+    "low_confidence": [
+      {
+        "field": "registration_url",
+        "confidence": 0.6,
+        "quote": "Register Now"
+      }
+    ],
+    "errors": [
+      "missing required camp_type",
+      "missing required season_year",
+      "camp_type must be one of ['day', 'sleepaway', 'specialty']"
+    ]
+  }
+}

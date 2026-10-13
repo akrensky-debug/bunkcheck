@@ -7,7 +7,7 @@
   "street_address": "Missituk School, 37 Hicks Avenue",
   "city": "Medford",
   "state": "MA",
-  "zip": null,
+  "zip": "02155",
   "camp_type": "day",
   "primary_categories": [
     "sports",
@@ -57,6 +57,14 @@
         "swim_waterfront_notes"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=Missituk+School%2C+37+Hicks+Avenue&city=Medford&state=MA&benchmark=Public_AR_Current&format=json",
+      "checked": "2026-10-13",
+      "fields": [
+        "zip"
+      ],
+      "note": "ZIP from the US Census geocoder for 37 HICKS AVE, MEDFORD, MA, 02155"
     }
   ],
   "review": {
@@ -67,6 +75,7 @@
       "title": "Summer Fun Program - Medford Public Schools"
     },
     "warnings": [
+      "Filled zip 02155 from the US Census geocoder (37 HICKS AVE, MEDFORD, MA, 02155)",
       "The page only shows 2026 pricing. It says 'Please be on the lookout for 2027 Registration Information soon!' Today is 2026-10-13, so the 2026 season is over and 2027 details are not published yet.",
       "The $250 (resident) and $300 (non-resident) costs don't say whether they are weekly or for the whole program, so price_per_week was left blank.",
       "No session dates are listed on the page.",
@@ -102,8 +111,6 @@
         "quote": "The Summer Fun Program takes place at the Missituk School"
       }
     ],
-    "errors": [
-      "missing required zip"
-    ]
+    "errors": []
   }
 }

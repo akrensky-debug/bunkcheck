@@ -31,7 +31,7 @@ Nothing here is on the site until it is promoted and imported.
 | [Energy Center Camp (Ages 4-6)](energy-center-camp-ages-4-6-weymouth.json) | Weymouth | 2 | 0 | 7 | 5 | unchecked |
 | [FaySummer Classic Day Camp](faysummer-classic-day-camp-southborough.json) | Southborough | 5 | 0 | 12 | 3 | unchecked |
 | [iSTEAM Robotics (Summer Shore)](isteam-robotics-summer-shore-beverly.json) | Beverly | 2 | 0 | 0 | 3 | unchecked |
-| [Kidstock! Creative Theater SUMMERSTAGE](kidstock-creative-theater-summerstage-winchester.json) | Winchester | 0 | 1 | 3 | 3 | unchecked |
+| [Kidstock! Creative Theater SUMMERSTAGE](kidstock-creative-theater-summerstage-winchester.json) | Winchester | 0 | 0 | 3 | 4 | unchecked |
 | [Lexington Summer Sports Clinics and Classes](lexington-summer-sports-clinics-and-classes-lexington.json) | Lexington | 0 | 2 | 1 | 4 | unchecked |
 | [MFA Boston Kids Studio Art Classes (Summer Studio Art Classes)](mfa-boston-kids-studio-art-classes-summer-studio-art-classes-boston.json) | Boston | 0 | 1 | 0 | 5 | unchecked |
 | [NARA Summer Camp](nara-summer-camp-acton.json) | Acton | 1 | 0 | 4 | 6 | unchecked |
@@ -44,7 +44,7 @@ Nothing here is on the site until it is promoted and imported.
 | [Summer at Shady Hill School](summer-at-shady-hill-school-cambridge.json) | Cambridge | 0 | 0 | 4 | 4 | unchecked |
 | [Summer@Carroll](summer-carroll-waltham.json) | Waltham | 4 | 0 | 1 | 5 | unchecked |
 | [Summer Connect](summer-connect-lawrence.json) | Lawrence | 0 | 2 | 1 | 3 | unchecked |
-| [Summer Fun Program](summer-fun-program-medford.json) | Medford | 0 | 1 | 3 | 4 | unchecked |
+| [Summer Fun Program](summer-fun-program-medford.json) | Medford | 0 | 0 | 3 | 5 | unchecked |
 | [Summer Programs at Walnut Hill](summer-programs-at-walnut-hill-natick.json) | Natick | 0 | 0 | 2 | 5 | unchecked |
 | [Summer Shore Day Camp](summer-shore-day-camp-beverly.json) | Beverly | 15 | 0 | 8 | 4 | unchecked |
 | [Summer @ SSC (South Shore Conservatory Summer Programs)](summer-ssc-south-shore-conservatory-summer-programs.json) | ? | 4 | 3 | 3 | 6 | unchecked |

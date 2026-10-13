@@ -67,6 +67,7 @@ done
 
 ```bash
 python -m campfinder.ingest.batch candidates.json --metro providence     # writes data/drafts/providence/
+python -m campfinder.ingest.fill data/drafts/providence                  # gaps with one right answer
 python -m campfinder.ingest.promote data/drafts/providence/<slug>.json --by <your name>
 python -m campfinder.seed.import_real --check                             # then --load
 ```

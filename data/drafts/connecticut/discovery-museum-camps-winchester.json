@@ -8,7 +8,7 @@
   "street_address": "19 West Cork Street",
   "city": "Winchester",
   "state": "VA",
-  "zip": null,
+  "zip": "22601",
   "camp_type": "day",
   "primary_categories": [
     "STEM"
@@ -50,6 +50,14 @@
         "extended_care"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=19+West+Cork+Street&city=Winchester&state=VA&benchmark=Public_AR_Current&format=json",
+      "checked": "2026-10-13",
+      "fields": [
+        "zip"
+      ],
+      "note": "ZIP from the US Census geocoder for 19 W CORK ST, WINCHESTER, VA, 22601"
     }
   ],
   "review": {
@@ -60,6 +68,7 @@
       "title": "Summer Camps | Shenandoah Valley Discovery Museum"
     },
     "warnings": [
+      "Filled zip 22601 from the US Census geocoder (19 W CORK ST, WINCHESTER, VA, 22601)",
       "The page gives no season year or session dates; the year it applies to cannot be confirmed (today is 2026-10-13). Sessions are on a separate event calendar that was not provided.",
       "Price is $150 per camp (a Monday to Friday half-day week). It is recorded as price_per_week, but it covers only a 3-hour daily block. A morning and an afternoon camp together would cost $300 plus the optional $25 lunch bunch. Premier Members get $25 off per camp.",
       "The 'lunch bunch' extended hour is only offered 'in some instances,' and only for children registered for both morning and afternoon camps.",
@@ -102,7 +111,6 @@
       }
     ],
     "errors": [
-      "missing required zip",
       "missing required season_year",
       "city 'Winchester', VA is not in cities.py"
     ]
