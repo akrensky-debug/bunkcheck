@@ -228,12 +228,6 @@
     "detail": "https://dbms.org/marinescience/ages-10-12/ refused an automated request (403); ask the owner for the brochure or a page we may read"
   },
   {
-    "name": "Holly Hill Farm Summer Programs",
-    "url": "https://hollyhillfarm.org/summer-programs-2026",
-    "outcome": "failed",
-    "detail": "fetch: https://hollyhillfarm.org/summer-programs-2026 could not be reached (ConnectError); try again later"
-  },
-  {
     "name": "Camp Three Rivers",
     "url": "http://summercamp.concordma.gov/251/Camp-Three-Rivers",
     "outcome": "drafted",
@@ -302,12 +296,6 @@
     "outcome": "drafted",
     "detail": null,
     "slug": "camp-ocp-ocp-summer-program-framingham"
-  },
-  {
-    "name": "LexRec Summer Day Camp",
-    "url": "https://www.lexingtonma.gov/2503/LexRec-Summer-Day-Camp",
-    "outcome": "failed",
-    "detail": "fetch: https://www.lexingtonma.gov/2503/LexRec-Summer-Day-Camp could not be reached (ConnectError); try again later"
   },
   {
     "name": "South Shore Conservatory Summer Programs",
@@ -514,12 +502,6 @@
     "slug": "camp-christina-stoughton"
   },
   {
-    "name": "Club Adventure Summer Camp",
-    "url": "https://watertownbgc.org/wbgc-programs/summer/",
-    "outcome": "failed",
-    "detail": "fetch: https://watertownbgc.org/wbgc-programs/summer/ could not be reached (ConnectTimeout); try again later"
-  },
-  {
     "name": "Wellesley Recreation Summer Camps (KinderCamp, Camp Joey, Camp Nova, Camp Apex)",
     "url": "https://wellesleyma.gov/525/Summer-Programs",
     "outcome": "drafted",
@@ -674,5 +656,26 @@
     "outcome": "drafted",
     "detail": null,
     "slug": "summer-horsemanship-program-wellesley"
+  },
+  {
+    "name": "Club Adventure Summer Camp",
+    "url": "https://watertownbgc.org/wbgc-programs/summer/",
+    "outcome": "drafted",
+    "detail": null,
+    "slug": "club-adventure-summer-camp-watertown"
+  },
+  {
+    "name": "LexRec Summer Day Camp",
+    "url": "https://www.lexingtonma.gov/2503/LexRec-Summer-Day-Camp",
+    "outcome": "drafted",
+    "detail": null,
+    "slug": "lexrec-summer-day-camp-lexington"
+  },
+  {
+    "name": "Holly Hill Farm Summer Programs",
+    "url": "https://hollyhillfarm.org/summer-programs-2026",
+    "outcome": "drafted",
+    "detail": null,
+    "slug": "holly-hill-farm-summer-programs-cohasset"
   }
 ]

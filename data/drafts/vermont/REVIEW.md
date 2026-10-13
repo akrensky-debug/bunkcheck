@@ -32,6 +32,7 @@ Nothing here is on the site until it is promoted and imported.
 | [Community Sailing Center Youth Camps](community-sailing-center-youth-camps-burlington.json) | Burlington | 57 | 1 | 4 | 9 | unchecked |
 | [EJRP Summer Full Day Camps](ejrp-summer-full-day-camps-essex-junction.json) | Essex Junction | 0 | 0 | 2 | 4 | unchecked |
 | [Farm & Wilderness Summer Camps](farm-and-wilderness-summer-camps-plymouth.json) | Plymouth | 7 | 0 | 5 | 7 | unchecked |
+| [Hartford Parks & Recreation Spring & Summer Programs](hartford-parks-and-recreation-spring-and-summer-programs.json) | ? | 0 | 5 | 2 | 4 | unchecked |
 | [Hildene Summer Day Camps](hildene-summer-day-camps-manchester.json) | Manchester | 9 | 0 | 10 | 6 | unchecked |
 | [Hosmer Point Camp](hosmer-point-camp-craftsbury-common.json) | Craftsbury Common | 4 | 1 | 2 | 6 | unchecked |
 | [Lake Champlain Maritime Museum Day Camps](lake-champlain-maritime-museum-day-camps-vergennes.json) | Vergennes | 7 | 0 | 13 | 6 | unchecked |
@@ -77,5 +78,4 @@ These hosts refused the fetcher. That is the answer: ask the camp to send its br
 - Artistree Summer Camps: https://artistreevt.org/summer-camps (fetch: https://artistreevt.org/summer-camps returned 404)
 - Lake Champlain Waldorf School Summer Camp: https://lakechamplainwaldorfschool.org/summer-camp/ (fetch: https://lakechamplainwaldorfschool.org/summer-camp/ returned 404)
 - Shelburne Parks & Recreation Summer Camps: https://www.shelburnevt.org/329/Summer-Camps (fetch: https://www.shelburnevt.org/329/Summer-Camps returned 404)
-- Summer Camp Ventures: https://www.hartfordvt.gov/2487/Spring-Summer-Programs (fetch: https://www.hartfordvt.gov/2487/Spring-Summer-Programs could not be reached (ConnectError); try again later)
 - Petra Cliffs Day Camp: https://www.petracliffs.com/summat-day-camp-classic (fetch: https://www.petracliffs.com/summat-day-camp-classic returned 404)

@@ -1,0 +1,79 @@
+{
+  "slug": "hartford-parks-and-recreation-spring-and-summer-programs",
+  "name": "Hartford Parks & Recreation Spring & Summer Programs",
+  "operator_name": "Town of Hartford, VT Parks & Recreation",
+  "website_url": "https://www.hartfordvt.gov/2487/Spring-Summer-Programs",
+  "registration_url": "https://hartfordvt.myrec.com/info/default.aspx",
+  "phone": "802-295-9353",
+  "city": null,
+  "state": "VT",
+  "zip": null,
+  "description_short": "Spring and summer recreation programs run by the Town of Hartford, Vermont Parks & Recreation Department. Program details are in a separate PDF guide that this page links to.",
+  "season_year": 2026,
+  "sources": [
+    {
+      "url": "https://www.hartfordvt.gov/2487/Spring-Summer-Programs",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "state",
+        "description_short"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.hartfordvt.gov/2487/Spring-Summer-Programs",
+      "kind": "html",
+      "title": "Spring & Summer Programs | Hartford, VTArrow LeftArrow RightSlideshow Left ArrowSlideshow Right Arrow"
+    },
+    "warnings": [
+      "The only season shown is Spring/Summer 2026, which is already over (today is 2026-10-13). No 2027 information has been posted yet.",
+      "This is a town Parks & Recreation landing page, not a camp page. All program details (camps, dates, prices, ages) are in a linked PDF program guide that was not part of the source.",
+      "The phone number and address on the page (171 Bridge Street, White River Junction, VT 05001) belong to Hartford Town Hall. They are not necessarily where programs take place, so the street address was left blank.",
+      "It is not clear whether any summer day camp is offered. The page only lists general spring/summer programs."
+    ],
+    "unknowns": [
+      "Whether a summer camp is offered and what it is called",
+      "Camp type (day, specialty, etc.)",
+      "2027 session dates",
+      "Prices / weekly rate",
+      "Age or grade range",
+      "Program location / street address",
+      "Activities offered",
+      "Registration opening date",
+      "Extended care, meals, transportation",
+      "Financial aid / resident vs non-resident rates",
+      "Refund policy and deposit",
+      "Department email address",
+      "Swim/waterfront details",
+      "Special needs accommodations",
+      "ACA accreditation"
+    ],
+    "low_confidence": [
+      {
+        "field": "name",
+        "confidence": 0.7,
+        "quote": "Spring & Summer Programs"
+      },
+      {
+        "field": "phone",
+        "confidence": 0.6,
+        "quote": "Hartford Town Hall ... Phone: 802-295-9353"
+      }
+    ],
+    "errors": [
+      "missing required city",
+      "missing required zip",
+      "missing required camp_type",
+      "camp_type must be one of ['day', 'sleepaway', 'specialty']",
+      "city None, VT is not in cities.py"
+    ]
+  }
+}

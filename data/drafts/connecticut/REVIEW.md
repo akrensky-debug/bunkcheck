@@ -103,7 +103,6 @@ These hosts refused the fetcher. That is the answer: ask the camp to send its br
 - Summer Camp Week at Birdcraft Museum and Sanctuary: https://ctaudubon.org/locations/birdcraft-museum-and-sanctuary/summer-camp/ (no camp on the page: the page names no camp)
 - Creative Kids Summer: https://hamden.com/DocumentCenter/View/12469/CK-Summer-2026?bidId= (no camp on the page: the page names no camp)
 - Town of Greenwich Summer Camps: https://www.greenwichct.gov/DocumentCenter/View/11510/Summer-Brochure-PDF (no camp on the page: the page names no camp)
-- Norwalk Summer Camps 2026 (Play & Learn, Skate Camp): https://www.norwalkct.gov/2996/Summer-Camps-2026 (fetch: https://www.norwalkct.gov/2996/Summer-Camps-2026 could not be reached (ConnectError); try again later)
 - Camp Parrot Perch: https://cccymca.org/dev/wp-content/uploads/STF-2026-SUMMER-DAY-CAMP-Brochure.pdf (fetch: https://cccymca.org/dev/wp-content/uploads/STF-2026-SUMMER-DAY-CAMP-Brochure.pdf returned 404)
 - City of Hartford Youth Summer Programs: https://www.hartfordct.gov/Government/Departments/DFCY/Youth-Summer-Programs (no camp on the page: This is not a camp's own page. It is a City of Hartford (Dept. of Families, Children, and Youth) 'Summer Opportunities' page that lists more than a dozen separate programs run by different organizatio)
 - Mystic Seaport Museum Community Sailing Camps: https://secure.mysticseaport.org/32125/32132 (fetch: https://secure.mysticseaport.org/32125/32132 returned 404)
@@ -114,3 +113,4 @@ These hosts refused the fetcher. That is the answer: ask the camp to send its br
 - Flanders Summer Camp & Academies: https://flandersnaturecenter.org/?p=754 (fetch: https://flandersnaturecenter.org/?p=754 returned 404)
 - Foote Summer Theater: https://www.footeschool.org/community/summer-programs/foote-summer-theater (fetch: https://www.footeschool.org/community/summer-programs/foote-summer-theater returned 404)
 - Falco's Explorers: https://www.footeschool.org/community/summer-programs/falco-explorers (no camp on the page: the page names no camp)
+- Norwalk Summer Camps 2026 (Play & Learn, Skate Camp): https://www.norwalkct.gov/2996/Summer-Camps-2026 (fetch: https://www.norwalkct.gov/2996/Summer-Camps-2026 returned 404)

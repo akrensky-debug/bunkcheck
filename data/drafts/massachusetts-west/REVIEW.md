@@ -36,6 +36,7 @@ Nothing here is on the site until it is promoted and imported.
 | [Worcester Art Museum Youth Summer Classes](worcester-art-museum-youth-summer-classes-worcester.json) | Worcester | 0 | 3 | 0 | 4 | unchecked |
 | [Worcester Center for Crafts Youth Summer Program](worcester-center-for-crafts-youth-summer-program-worcester.json) | Worcester | 26 | 0 | 1 | 5 | unchecked |
 | [YMCA Camp Blanchard](ymca-camp-blanchard-sutton.json) | Sutton | 9 | 0 | 1 | 6 | unchecked |
+| [YMCA of Central Massachusetts Camps (multi-branch overview)](ymca-of-central-massachusetts-camps-multi-branch-overview.json) | ? | 4 | 3 | 12 | 8 | unchecked |
 
 ## Ask the owner for the brochure
 
@@ -50,11 +51,10 @@ These hosts refused the fetcher. That is the answer: ask the camp to send its br
 ## Failed
 
 - Camp Mah-Kee-Nac: https://campmkn.com/ (no camp on the page: the page names no camp)
+- Wachusett Meadow Nature Camp: https://massaudubon.org/places-to-explore/wildlife-sanctuaries/wachusett-meadow/camp/about-camp (no camp on the page: the page names no camp)
+- Broad Meadow Brook Nature Camp: https://www.massaudubon.org/programs/broad-meadow-brook/100428-broad-meadow-brook-nature-camp-exploring-mass-audubon (fetch: https://www.massaudubon.org/programs/broad-meadow-brook/100428-broad-meadow-brook-nature-camp-exploring-mass-audubon returned 404)
+- Longmeadow Parks & Recreation Summer Programs: https://lprd.net/424/Summer-Programs (no camp on the page: the page names no camp)
+- Springfield Boys & Girls Club Summer Program: https://sbgc.org/events/summer-program-week-1-red-white-blue/ (no camp on the page: the page names no camp)
 - Camp Hamp: https://ma-northampton.civicplus.com/903/Camp-Hamp (fetch: Host is not a public address)
 - Camp KidZone: https://ma-northampton.civicplus.com/904/Camp-Kidzone (fetch: Host is not a public address)
 - Northampton Safety Village: https://ma-northampton.civicplus.com/1402/Summer-Camps (fetch: Host is not a public address)
-- Wachusett Meadow Nature Camp: https://massaudubon.org/places-to-explore/wildlife-sanctuaries/wachusett-meadow/camp/about-camp (no camp on the page: the page names no camp)
-- Broad Meadow Brook Nature Camp: https://www.massaudubon.org/programs/broad-meadow-brook/100428-broad-meadow-brook-nature-camp-exploring-mass-audubon (fetch: https://www.massaudubon.org/programs/broad-meadow-brook/100428-broad-meadow-brook-nature-camp-exploring-mass-audubon returned 404)
-- YMCA Camp Greendale: https://www.ymcaofcm.org/camp/ (fetch: https://www.ymcaofcm.org/camp/ could not be reached (ConnectTimeout); try again later)
-- Longmeadow Parks & Recreation Summer Programs: https://lprd.net/424/Summer-Programs (no camp on the page: the page names no camp)
-- Springfield Boys & Girls Club Summer Program: https://sbgc.org/events/summer-program-week-1-red-white-blue/ (no camp on the page: the page names no camp)

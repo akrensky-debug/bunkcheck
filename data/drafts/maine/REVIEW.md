@@ -79,6 +79,7 @@ Nothing here is on the site until it is promoted and imported.
 | [Wells Reserve at Laudholm Day Camps](wells-reserve-at-laudholm-day-camps-wells.json) | Wells | 0 | 1 | 1 | 4 | unchecked |
 | [West End House Camp](west-end-house-camp-parsonsfield.json) | Parsonsfield | 6 | 0 | 0 | 5 | unchecked |
 | [White Pine Camps (White Pine Programs Summer Camp)](white-pine-camps-white-pine-programs-summer-camp-york.json) | York | 0 | 0 | 2 | 7 | unchecked |
+| [Windham Parks & Recreation Summer Day Camp](windham-parks-and-recreation-summer-day-camp-windham.json) | Windham | 0 | 1 | 1 | 4 | unchecked |
 | [Winona Camps for Boys](winona-camps-for-boys-bridgton.json) | Bridgton | 0 | 0 | 2 | 4 | unchecked |
 | [Wohelo Camps](wohelo-camps-raymond.json) | Raymond | 5 | 0 | 1 | 5 | unchecked |
 | [Y Summer Camp at OLEC](y-summer-camp-at-olec-auburn.json) | Auburn | 9 | 0 | 5 | 5 | unchecked |
@@ -107,15 +108,14 @@ These hosts refused the fetcher. That is the answer: ask the camp to send its br
 - Seacoast United Maine Soccer Camps: https://www.seacoastunited.com/programs/camps/maine-camps/ (fetch: https://www.seacoastunited.com/programs/camps/maine-camps/ returned 404)
 - Camp Summit: https://www.asmonline.org/resources/summer-camps/ (no camp on the page: This page is a resource directory published by the Autism Society of Maine (ASM). It is not one camp's own page. It lists about 13 separate programs for people with disabilities or autism (e.g., Ascen)
 - Kennebunk Summer Day Camp: https://www.kennebunkmaine.us/261/Parks-Recreation (no camp on the page: the page names no camp)
-- Camp Skylemar: https://newsite.campskylemar.com/about-camp/enrollment/ (fetch: Host is not a public address)
 - Agassiz Village: https://www.agassizvillage.org/registration3 (fetch: https://www.agassizvillage.org/registration3 returned 404)
 - UMaine Sports and Recreation Summer Camps (incl. Summer RAD): https://umaine.edu/summercamps/sports-and-recreation/ (no camp on the page: the page names no camp)
-- Summer Camp Venture: https://www.portlandmaine.gov/1145/Summer-Camp-Venture (fetch: https://www.portlandmaine.gov/1145/Summer-Camp-Venture could not be reached (ConnectError); try again later)
 - Centerboard Yacht Club Sail School: https://www.centerboardyachtclub.org/sailschool (no camp on the page: the page names no camp)
-- Windham Summer Day Camp: https://www.windhammaine.us/165/Youth-Family-Programs (fetch: https://www.windhammaine.us/165/Youth-Family-Programs could not be reached (ConnectError); try again later)
 - Yarmouth Community Services Summer Camps: https://www.yarmouthcommunityservices.org/summer-camps (no camp on the page: the page names no camp)
 - Indian Acres & Forest Acres: https://indianacres.com/about/dates-fees (fetch: https://indianacres.com/about/dates-fees has almost no text (0 words); it may need a browser or be a scanned PDF)
-- Camp Ketcha Summer Day Camp: https://campketcha.org/registration (fetch: https://campketcha.org/registration could not be reached (ConnectError); try again later)
 - Camp Med-O-Lark: https://www.medolark.com/dates-and-rates (fetch: https://www.medolark.com/dates-and-rates returned 404)
 - Camp Wigwam: https://www.campwigwam.com/2026-dates-rates (fetch: https://www.campwigwam.com/2026-dates-rates returned 404)
 - Camp Kawanhee: https://www.kawanhee.com/sessions/ (fetch: https://www.kawanhee.com/sessions/ returned 404)
+- Camp Skylemar: https://newsite.campskylemar.com/about-camp/enrollment/ (fetch: Host is not a public address)
+- Summer Camp Venture: https://www.portlandmaine.gov/1145/Summer-Camp-Venture (fetch: https://www.portlandmaine.gov/1145/Summer-Camp-Venture could not be reached (ConnectError); try again later)
+- Camp Ketcha Summer Day Camp: https://campketcha.org/registration (fetch: https://campketcha.org/registration could not be reached (ConnectError); try again later)
