@@ -13,8 +13,9 @@ move them to the rebuilt code. The April data was synthetic, so nothing is migra
 
 ## Step 1: the database (Supabase)
 
-*Checked 29 September 2026.* The April project (`sjzipluirwnhjhnkyfyy`, us-west-2) is paused. A
-fresh project replaces it: **`campfinder` (its name in Supabase, from before the rename), ref `cdzzmyambonhkhsoltfw`, us-east-1**, closer to New
+*Checked 29 September 2026; names as of 13 October.* The April project ("OLD CampFinder
+Project", `sjzipluirwnhjhnkyfyy`, us-west-2) is paused. A fresh project replaces it:
+**`bunkcheck`, ref `cdzzmyambonhkhsoltfw`, us-east-1**, closer to New
 England. It is empty: no tables, no sign-ups. PostGIS is available and the first migration turns
 it on, so there is nothing to reset. `scripts/reset_beta_database.sql` is no longer needed; leave
 the old project paused and delete it once the new one is live.
@@ -33,7 +34,8 @@ the old shared secret. So the API verifies against the published key set and nee
 
 ## Step 2: set the environment (Railway)
 
-Put the API service in a US East region to sit near the database.
+The Railway project is `bunkcheck-api`. Put the API service in a US East region to sit near the
+database.
 
 Variables on the API service:
 
@@ -55,6 +57,8 @@ The API no longer reads them.
 Leave `AUTH_JWT_SECRET` unset: it is only for projects on the legacy shared secret.
 
 On Vercel, `NEXT_PUBLIC_API_URL` should already point at the Railway URL. Check it.
+`frontend/vercel.json` reads it from the Vercel secret `@campfinder-api-url`, an April name. To
+rename it, rename the secret in Vercel and the reference in `vercel.json` in the same change.
 
 ## Step 3: merge
 

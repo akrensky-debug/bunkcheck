@@ -3,8 +3,10 @@
 Read this first, every session. Set 1 October 2026 by Andrew.
 
 The product is **BunkCheck** (bunkcheck.ai), named 13 October 2026; CampFinder was the working
-name. The code package is `bunkcheck`. The GitHub repository and some hosting projects still carry
-the old name until Andrew renames them.
+name. Everything is renamed as of 13 October: the code package `bunkcheck`, the GitHub repository
+`akrensky-debug/bunkcheck` (the old URL redirects), the Railway project `bunkcheck-api` and the
+Supabase project `bunkcheck`. One leftover: `frontend/vercel.json` still points at the Vercel
+secret `@campfinder-api-url`; rename it in Vercel and in that file together.
 
 ## One branch
 
