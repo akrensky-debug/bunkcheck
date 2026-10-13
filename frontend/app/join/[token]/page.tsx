@@ -75,13 +75,13 @@ export default function JoinPage() {
           </div>
 
           {invite.expired ? (
-            <p className="text-amber-700">This invite has expired. Ask {invite.invited_by} to send a new one.</p>
+            <p className="text-red-600">This invite has expired. Ask {invite.invited_by} to send a new one.</p>
           ) : !supabase() ? (
             <p className="text-gray-600">Sign-in isn't set up on this site yet.</p>
           ) : session ? (
             <div className="space-y-3">
               <p className="text-sm text-gray-600">Signed in as {session.user.email}.</p>
-              <button onClick={accept} disabled={busy} className="w-full bg-brand-600 hover:bg-brand-700 text-white font-semibold rounded-xl py-3 disabled:opacity-50">
+              <button onClick={accept} disabled={busy} className="w-full btn-lift bg-navy hover:bg-night text-white font-semibold rounded-xl py-3 disabled:opacity-50">
                 {busy ? 'Joining…' : 'Accept and join'}
               </button>
               {error && (
@@ -107,7 +107,7 @@ export default function JoinPage() {
                 type="email" required value={email} onChange={e => setEmail(e.target.value)} placeholder="you@example.com"
                 className="w-full border border-gray-200 rounded-xl px-4 py-3 outline-none focus:border-brand-400"
               />
-              <button disabled={busy} className="w-full bg-brand-600 hover:bg-brand-700 text-white font-semibold rounded-xl py-3 disabled:opacity-50">
+              <button disabled={busy} className="w-full btn-lift bg-navy hover:bg-night text-white font-semibold rounded-xl py-3 disabled:opacity-50">
                 {busy ? 'Sending…' : 'Email me a sign-in link'}
               </button>
               {error && <p className="text-sm text-red-600">{error}</p>}

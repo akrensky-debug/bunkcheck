@@ -60,7 +60,7 @@ export default function RegistrationAlert({ campId, campName }: { campId: string
               placeholder="you@example.com" autoComplete="email"
               className="flex-1 border border-gray-300 rounded-xl px-3 py-2 text-sm focus:outline-none focus:border-brand-500" />
             <button type="submit" disabled={busy}
-              className="bg-brand-600 hover:bg-brand-700 text-white font-semibold rounded-xl px-4 py-2 text-sm disabled:opacity-50">
+              className="btn-lift bg-navy hover:bg-night text-white font-semibold rounded-xl px-4 py-2 text-sm disabled:opacity-50">
               {busy ? 'Sending…' : 'Tell me'}
             </button>
           </div>

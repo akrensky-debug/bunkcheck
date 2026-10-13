@@ -157,7 +157,7 @@ export default function SubmitCampPage() {
                   className={`px-4 py-2 rounded-xl text-sm font-medium border transition-colors capitalize ${
                     form.camp_type === t
                       ? 'bg-brand-600 text-white border-brand-600'
-                      : 'border-gray-200 text-gray-600 hover:border-brand-300'
+                      : 'bg-white border-gray-200 text-gray-600 hover:border-navy'
                   }`}
                 >
                   {t === 'day' ? 'Day Camp' : t === 'sleepaway' ? 'Sleepaway' : 'Specialty'}
@@ -283,7 +283,7 @@ export default function SubmitCampPage() {
                   className={`px-3 py-1.5 rounded-full text-xs font-medium border transition-colors capitalize ${
                     form.categories.includes(cat)
                       ? 'bg-brand-600 text-white border-brand-600'
-                      : 'border-gray-200 text-gray-600 hover:border-brand-300'
+                      : 'bg-white border-gray-200 text-gray-600 hover:border-navy'
                   }`}
                 >
                   {cat}
@@ -298,7 +298,7 @@ export default function SubmitCampPage() {
         <button
           type="submit"
           disabled={loading}
-          className="w-full bg-brand-600 hover:bg-brand-700 text-white font-bold py-4 rounded-xl transition-colors disabled:opacity-60 text-base"
+          className="w-full btn-lift bg-navy hover:bg-night text-white font-bold py-4 rounded-xl disabled:opacity-60 text-base"
         >
           {loading ? 'Submitting...' : 'Submit camp for review →'}
         </button>

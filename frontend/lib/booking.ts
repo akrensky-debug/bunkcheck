@@ -187,7 +187,7 @@ export const STATUS_LABEL: Record<RegStatus, string> = {
 export const STATUS_TONE: Record<RegStatus, string> = {
   watching: 'bg-gray-100 text-gray-700',
   registered: 'bg-green-50 text-green-700',
-  waitlisted: 'bg-amber-50 text-amber-700',
+  waitlisted: 'bg-flashlight-soft text-navy',
   cancelled: 'bg-gray-50 text-gray-400',
 }
 export const PAY_LABEL: Record<PaymentStatus, string> = {

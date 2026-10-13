@@ -36,7 +36,7 @@ function ChecklistCard({ c }: { c: RegisterChecklist }) {
         {c.kit_available ? ` · ${missing ? `${missing} answer${missing === 1 ? '' : 's'} missing from your kit` : 'your kit is ready'}` : ''}
       </p>
       <div className="flex gap-3">
-        <a href={href} className="bg-brand-600 hover:bg-brand-700 text-white font-semibold px-3 py-1.5 rounded-lg">Open checklist</a>
+        <a href={href} className="btn-lift bg-navy hover:bg-night text-white font-semibold px-3 py-1.5 rounded-lg">Open checklist</a>
         {c.registration_url && <a href={c.registration_url} target="_blank" rel="noopener noreferrer" className="text-brand-700 font-medium py-1.5">Camp's registration ↗</a>}
       </div>
     </div>
@@ -47,11 +47,11 @@ function PackageCard({ p, registrationId }: { p: PackagePreview; registrationId:
   const fields = [...p.household_fields, ...p.child_fields].map(f => p.labels[f] ?? f)
   const q = registrationId ? `?registration=${registrationId}` : ''
   return (
-    <div className="bg-white rounded-2xl border border-amber-200 p-4 space-y-2 text-sm">
+    <div className="bg-white rounded-2xl border border-flashlight-deep p-4 space-y-2 text-sm">
       <p className="font-semibold text-gray-900">Package for {p.recipient} · not shared yet</p>
       <p className="text-gray-600">{fields.join(', ')}</p>
-      {p.missing.length > 0 && <p className="text-amber-700">Missing from your kit: {p.missing.join(', ')}</p>}
-      <a href={`/register/${p.camp_id}${q}`} className="inline-block bg-brand-600 hover:bg-brand-700 text-white font-semibold px-3 py-1.5 rounded-lg">
+      {p.missing.length > 0 && <p className="bg-flashlight-soft text-navy rounded-lg px-3 py-2">Missing from your kit: {p.missing.join(', ')}</p>}
+      <a href={`/register/${p.camp_id}${q}`} className="inline-block btn-lift bg-navy hover:bg-night text-white font-semibold px-3 py-1.5 rounded-lg">
         Review and share
       </a>
     </div>
