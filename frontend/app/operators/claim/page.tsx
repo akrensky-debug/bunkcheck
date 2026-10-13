@@ -4,6 +4,7 @@ import { useState, Suspense } from 'react'
 import { useSearchParams } from 'next/navigation'
 import { searchCamps, type CampSearchResult } from '@/lib/api'
 import { Events } from '@/lib/analytics'
+import { Button, Container, Field, Heading, Icon, Input, List, SearchBar, SearchField, Text, TextLink } from '@/components/ui'
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'
 
@@ -95,57 +96,44 @@ function ClaimFlow() {
   }
 
   return (
-    <div className="max-w-xl mx-auto px-4 py-12">
-      <nav className="text-sm text-gray-400 mb-8">
-        <a href="/operators" className="hover:text-brand-600">← For camps</a>
-      </nav>
+    <Container size="narrow" className="py-12 sm:py-16">
+      <TextLink href="/operators" tone="muted" className="mb-10 text-small">
+        <Icon name="arrow-left" size={14} />For camps
+      </TextLink>
 
       {/* Step: Search */}
       {step === 'search' && (
         <>
-          <div className="mb-8">
-            <h1 className="text-3xl font-extrabold text-gray-900 mb-2">Claim your listing</h1>
-            <p className="text-gray-500 text-sm">
-              Search for your camp below. Claiming your listing lets you update sessions,
-              pricing, and contact info -- and earns a verified badge that builds trust with parents.
-            </p>
-          </div>
+          <Heading level="h1" className="mb-3">Claim your listing</Heading>
+          <Text tone="muted" className="mb-8">
+            Find your camp below. Claiming lets you update sessions, pricing and contact details, and parents see
+            that a verified owner manages the listing.
+          </Text>
 
-          <form onSubmit={handleSearch} className="flex gap-2 mb-6">
-            <input
-              type="text"
-              placeholder="Camp name or city"
-              value={query}
-              onChange={e => setQuery(e.target.value)}
-              className="flex-1 px-4 py-3 border border-gray-200 rounded-xl text-sm outline-none focus:border-brand-400"
-            />
-            <button
-              type="submit"
-              disabled={searching}
-              className="btn-lift bg-navy hover:bg-night text-white font-semibold px-5 py-3 rounded-xl text-sm disabled:opacity-60"
-            >
-              {searching ? '...' : 'Search'}
-            </button>
-          </form>
+          <SearchBar onSubmit={handleSearch} busy={searching}>
+            <SearchField label="Camp" grow placeholder="Camp name or town" value={query} onChange={e => setQuery(e.target.value)} />
+          </SearchBar>
 
-          {error && <p className="text-red-500 text-sm mb-4">{error}</p>}
+          {error && <p className="mt-4 text-small text-error">{error}</p>}
 
           {results.length > 0 && (
-            <div className="space-y-2">
-              <p className="text-xs text-gray-400 mb-3">Select your camp:</p>
-              {results.map(camp => (
-                <button
-                  key={camp.id}
-                  onClick={() => selectCamp(camp)}
-                  className="w-full text-left bg-white border border-gray-200 rounded-xl p-4 hover:border-brand-300 hover:shadow-sm transition-all"
-                >
-                  <p className="font-semibold text-gray-900 text-sm">{camp.name}</p>
-                  <p className="text-xs text-gray-500 mt-0.5">{camp.city}, {camp.state}</p>
-                </button>
-              ))}
-              <p className="text-xs text-gray-400 pt-2">
-                Don't see your camp?{' '}
-                <a href="/operators/submit" className="text-brand-600 underline">Submit it here →</a>
+            <div className="mt-8">
+              <p className="mb-2 text-small text-muted">Choose your camp</p>
+              <List>
+                {results.map(camp => (
+                  <li key={camp.id}>
+                    <button
+                      onClick={() => selectCamp(camp)}
+                      className="block w-full rounded-md px-3 py-4 text-left transition-colors duration-150 hover:bg-tint"
+                    >
+                      <p className="text-body font-semibold text-ink">{camp.name}</p>
+                      <p className="text-small text-muted">{camp.city}, {camp.state}</p>
+                    </button>
+                  </li>
+                ))}
+              </List>
+              <p className="mt-4 text-small text-muted">
+                Don&rsquo;t see your camp? <TextLink href="/operators/submit" arrow>Submit it</TextLink>
               </p>
             </div>
           )}
@@ -155,67 +143,33 @@ function ClaimFlow() {
       {/* Step: Confirm & submit claim */}
       {step === 'confirm' && selected && (
         <>
-          <div className="mb-6">
-            <h1 className="text-3xl font-extrabold text-gray-900 mb-1">Claim this listing</h1>
-            <div className="bg-brand-50 border border-brand-200 rounded-xl px-4 py-3 mt-3">
-              <p className="font-semibold text-gray-900 text-sm">{selected.name}</p>
-              <p className="text-xs text-gray-500">{selected.city}, {selected.state}</p>
-            </div>
+          <Heading level="h1" className="mb-3">Claim this listing</Heading>
+          <div className="mb-8 border-y border-line py-4">
+            <p className="text-body font-semibold text-ink">{selected.name}</p>
+            <p className="text-small text-muted">{selected.city}, {selected.state}</p>
           </div>
 
-          <form onSubmit={handleClaim} className="space-y-4">
-            <div>
-              <label className="block text-sm text-gray-600 mb-1">Your email *</label>
-              <input
-                type="email"
-                required
-                value={email}
-                onChange={e => setEmail(e.target.value)}
-                className="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm outline-none focus:border-brand-400"
-                placeholder="director@yourcamp.com"
-              />
-              <p className="text-xs text-gray-400 mt-1">We'll send a verification link to this address.</p>
+          <form onSubmit={handleClaim} className="space-y-5">
+            <Field label="Your email" hint="We'll send a verification link to this address.">
+              {id => <Input id={id} type="email" required value={email} onChange={e => setEmail(e.target.value)} placeholder="director@yourcamp.com" />}
+            </Field>
+            <Field label="Your name" optional>
+              {id => <Input id={id} type="text" value={contactName} onChange={e => setContactName(e.target.value)} placeholder="Jane Smith" />}
+            </Field>
+            <Field label="Your role" optional>
+              {id => <Input id={id} type="text" value={role} onChange={e => setRole(e.target.value)} placeholder="Director, owner, marketing" />}
+            </Field>
+
+            {error && <p className="text-small text-error">{error}</p>}
+
+            <div className="flex flex-wrap items-center gap-4 pt-2">
+              <Button type="submit" size="lg" disabled={loading}>
+                {loading ? 'Sending verification…' : 'Send verification email'}
+              </Button>
+              <Button variant="quiet" onClick={() => { setStep('search'); setSelected(null) }}>
+                Search again
+              </Button>
             </div>
-
-            <div>
-              <label className="block text-sm text-gray-600 mb-1">Your name</label>
-              <input
-                type="text"
-                value={contactName}
-                onChange={e => setContactName(e.target.value)}
-                className="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm outline-none focus:border-brand-400"
-                placeholder="Jane Smith"
-              />
-            </div>
-
-            <div>
-              <label className="block text-sm text-gray-600 mb-1">Your role</label>
-              <input
-                type="text"
-                value={role}
-                onChange={e => setRole(e.target.value)}
-                className="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm outline-none focus:border-brand-400"
-                placeholder="Camp Director, Owner, Marketing..."
-              />
-            </div>
-
-            {error && <p className="text-red-500 text-sm">{error}</p>}
-
-            <button
-              type="submit"
-              disabled={loading}
-              className="w-full btn-lift bg-navy hover:bg-night text-white font-bold py-3.5 rounded-xl disabled:opacity-60"
-            >
-              {loading ? 'Sending verification...' : 'Send verification email →'}
-            </button>
-
-            <button
-              type="button"
-              onClick={() => { setStep('search'); setSelected(null) }}
-              className="w-full text-sm text-gray-400 hover:text-gray-600 py-1"
-            >
-              ← Search again
-            </button>
           </form>
         </>
       )}
@@ -223,64 +177,48 @@ function ClaimFlow() {
       {/* Step: Enter token */}
       {step === 'verify' && (
         <>
-          <div className="mb-8">
-            <div aria-hidden="true" className="text-4xl mb-4">📬</div>
-            <h1 className="text-2xl font-extrabold text-gray-900 mb-2">Check your email</h1>
-            <p className="text-gray-500 text-sm">
-              We've sent a verification code to <strong>{email}</strong>.
-              Enter it below to complete your claim.
-            </p>
-          </div>
+          <Heading level="h1" className="mb-3">Check your email</Heading>
+          <Text tone="muted" className="mb-8">
+            We&rsquo;ve sent a verification code to <strong className="text-ink">{email}</strong>. Enter it below to complete your claim.
+          </Text>
 
-          <form onSubmit={handleVerify} className="space-y-4">
-            <input
-              type="text"
-              placeholder="Paste verification code"
-              value={token}
-              onChange={e => setToken(e.target.value)}
-              required
-              className="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm outline-none focus:border-brand-400 font-mono"
-            />
-
-            {verifyError && <p className="text-red-500 text-sm">{verifyError}</p>}
-
-            <button
-              type="submit"
-              disabled={verifying}
-              className="w-full btn-lift bg-navy hover:bg-night text-white font-bold py-3.5 rounded-xl disabled:opacity-60"
-            >
-              {verifying ? 'Verifying...' : 'Verify and claim listing →'}
-            </button>
+          <form onSubmit={handleVerify} className="space-y-5">
+            <Field label="Verification code" error={verifyError || undefined}>
+              {id => <Input id={id} type="text" placeholder="Paste the code" value={token} onChange={e => setToken(e.target.value)} required className="font-mono" />}
+            </Field>
+            <Button type="submit" size="lg" disabled={verifying}>
+              {verifying ? 'Verifying…' : 'Verify and claim listing'}
+            </Button>
           </form>
         </>
       )}
 
       {/* Step: Done */}
       {step === 'done' && (
-        <div className="text-center py-8">
-          <div className="text-5xl mb-4">✅</div>
-          <h1 className="text-2xl font-extrabold text-gray-900 mb-3">Listing claimed!</h1>
-          <p className="text-gray-500 text-sm mb-6">
-            Your ownership has been verified. You can now update your listing, add sessions,
-            and manage your camp's data on Bunkcheck.
+        <div>
+          <p className="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-pill bg-checked-soft text-checked">
+            <Icon name="check" size={24} label="Done" />
           </p>
-          <div className="bg-brand-50 border border-brand-200 rounded-2xl p-6 text-left">
-            <h2 className="font-bold text-gray-900 mb-3 text-sm">What's next</h2>
-            <ul className="text-sm text-gray-600 space-y-2">
-              <li>✓ Your listing now shows a <strong>claimed</strong> status badge</li>
-              <li>✓ Parents see that your data is managed by a verified owner</li>
-              <li>→ Reply to any email from us with new sessions, dates or prices and a person will update them</li>
-            </ul>
-          </div>
+          <Heading level="h1" className="mb-3">Listing claimed</Heading>
+          <Text tone="muted" className="mb-10">
+            Your ownership is verified. You can now update your listing, add sessions and manage your camp&rsquo;s
+            details on Bunkcheck.
+          </Text>
+          <Heading level="h3" as="h2" className="mb-3">What happens next</Heading>
+          <ul className="divide-y divide-line border-y border-line text-small text-ink">
+            <li className="py-3">Your listing now shows that it&rsquo;s claimed by the camp.</li>
+            <li className="py-3">Parents see that a verified owner manages your details.</li>
+            <li className="py-3">Reply to any email from us with new sessions, dates or prices and a person will update them.</li>
+          </ul>
         </div>
       )}
-    </div>
+    </Container>
   )
 }
 
 export default function ClaimPage() {
   return (
-    <Suspense fallback={<div className="max-w-xl mx-auto px-4 py-24 text-center text-gray-400">Loading...</div>}>
+    <Suspense fallback={<Container size="narrow" className="py-24 text-center text-muted">Loading…</Container>}>
       <ClaimFlow />
     </Suspense>
   )

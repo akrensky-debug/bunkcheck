@@ -5,14 +5,13 @@ import { useRouter } from 'next/navigation'
 import { useSession } from '@/lib/auth'
 import { loadFamily, type Family, type FamilyEvent } from '@/lib/agent'
 import {
-  KIND_ICONS, KIND_LABELS, ROLE_HELP, ROLE_LABELS, assignTasks, createTasks, describeAudit, fmtDay, fmtTime,
+  KIND_LABELS, ROLE_HELP, ROLE_LABELS, assignTasks, createTasks, describeAudit, fmtDay, fmtTime,
   generateTasks, getAudit, getHousehold, inviteMember, leaveFamily, listTasks, removeMember, resetMyCalendar,
   updateMember, updateMyPrefs, updateTask, weekOf,
   type AuditEntry, type Household, type Member, type Role, type Task, type TaskKind,
 } from '@/lib/household'
+import { Button, Checkbox, ChoiceChip, Container, Heading, Icon, Input, Notice, Section, Select, Text, TextLink, cx } from '@/components/ui'
 
-const input = 'border border-gray-200 rounded-lg px-3 py-2 text-sm outline-none focus:border-brand-400 bg-white'
-const card = 'bg-white border border-gray-200 rounded-2xl p-4'
 
 export default function HouseholdPage() {
   const session = useSession()
@@ -55,7 +54,7 @@ export default function HouseholdPage() {
   }
 
   if (!family || !household) {
-    return <div className="max-w-4xl mx-auto px-4 py-16 text-gray-400">{error || 'Loading…'}</div>
+    return <Container className="py-16"><Text tone="muted">{error || 'Loading…'}</Text></Container>
   }
 
   const fullPlan = household.role === 'owner' || household.role === 'co_parent'
@@ -63,28 +62,26 @@ export default function HouseholdPage() {
   const you = household.you
 
   return (
-    <div className="max-w-4xl mx-auto px-4 py-10 space-y-10">
-      <header className="flex flex-wrap items-end justify-between gap-3">
-        <div>
-          <h1 className="text-2xl font-bold text-gray-900">{fullPlan ? 'Household & jobs' : 'Your jobs'}</h1>
-          <p className="text-gray-600 mt-1">
+    <Container className="space-y-14 py-12 sm:py-16">
+      <header className="flex flex-wrap items-end justify-between gap-4">
+        <div className="space-y-3">
+          <Heading level="h1">{fullPlan ? 'Household and jobs' : 'Your jobs'}</Heading>
+          <Text tone="muted">
             {fullPlan
               ? 'Who is helping this summer, and who has each drop-off, pickup, form and payment.'
               : `You're helping as ${ROLE_LABELS[household.role].toLowerCase()}. ${household.role === 'viewer' ? 'Here is the family calendar.' : 'Here is what is yours, and the family calendar.'}`}
-          </p>
+          </Text>
         </div>
-        {fullPlan && <a href="/" className="text-sm font-medium text-brand-700 hover:underline">Plan with the assistant →</a>}
+        {fullPlan && <TextLink href="/" arrow className="text-small">Plan with the assistant</TextLink>}
       </header>
 
-      {error && <p className="text-sm text-red-600 bg-red-50 rounded-lg px-3 py-2">{error}</p>}
+      {error && <Notice tone="error">{error}</Notice>}
 
       {!family.signed_in && (
-        <div className={`${card} bg-brand-50 border-brand-200`}>
-          <p className="text-sm text-gray-700">
-            To invite a partner, grandparent or nanny, first <a href="/signin" className="font-medium text-brand-700 underline">save your family to an account</a>.
-            You can already keep a job list here.
-          </p>
-        </div>
+        <Notice>
+          To invite a partner, grandparent or nanny, first <TextLink href="/signin">save your family to an account</TextLink>.
+          You can already keep a job list here.
+        </Notice>
       )}
 
       {household.role !== 'viewer' && (
@@ -123,19 +120,18 @@ export default function HouseholdPage() {
       {you && <MySettings familyId={family.id} you={you} role={household.role} feed={household.my_calendar_url} act={act} />}
 
       {fullPlan && audit.length > 0 && (
-        <section className="space-y-3">
-          <h2 className="font-semibold text-gray-900">Recent activity</h2>
-          <ul className="text-sm text-gray-600 space-y-1.5">
+        <Section title="Recent activity" divided>
+          <ul className="space-y-2 text-small text-ink">
             {audit.slice(0, 20).map((e, i) => (
-              <li key={i} className="flex gap-3">
-                <span className="text-gray-400 shrink-0 w-28">{new Date(e.created_at).toLocaleString(undefined, { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' })}</span>
+              <li key={i} className="flex gap-4">
+                <span className="w-28 shrink-0 text-muted">{new Date(e.created_at).toLocaleString(undefined, { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' })}</span>
                 <span>{describeAudit(e)}</span>
               </li>
             ))}
           </ul>
-        </section>
+        </Section>
       )}
-    </div>
+    </Container>
   )
 }
 
@@ -177,53 +173,51 @@ function TaskBoard({ tasks, members, fullPlan, youId, onToggle, onChecklist, onA
   const openCount = tasks.filter(t => t.status === 'open').length
 
   return (
-    <section className="space-y-4">
-      <div className="flex flex-wrap items-center justify-between gap-2">
-        <h2 className="font-semibold text-gray-900">
-          {fullPlan ? 'Jobs' : 'Your jobs'} <span className="text-gray-400 font-normal">· {openCount} open</span>
-        </h2>
-        <div className="flex items-center gap-4 text-sm">
-          <label className="flex items-center gap-1.5 text-gray-600">
-            <input type="checkbox" checked={showDone} onChange={e => setShowDone(e.target.checked)} /> Show done
-          </label>
-          {fullPlan && <button onClick={() => setAdding(a => !a)} className="font-medium text-brand-700">+ Add a job</button>}
+    <section className="space-y-6">
+      <div className="flex flex-wrap items-baseline justify-between gap-4">
+        <Heading level="h2">
+          {fullPlan ? 'Jobs' : 'Your jobs'} <span className="text-muted">· {openCount} open</span>
+        </Heading>
+        <div className="flex items-center gap-6">
+          <Checkbox checked={showDone} onChange={e => setShowDone(e.target.checked)}>Show done</Checkbox>
+          {fullPlan && <Button variant="link" leadingIcon="plus" onClick={() => setAdding(a => !a)}>Add a job</Button>}
         </div>
       </div>
 
       {adding && <AddTask onAdd={t => { onAdd(t); setAdding(false) }} />}
 
       {fullPlan && selected.length > 0 && (
-        <div className="sticky top-16 z-10 flex flex-wrap items-center gap-3 bg-brand-50 border border-brand-200 rounded-xl px-4 py-2 text-sm">
-          <span className="font-medium text-brand-800">{selected.length} selected</span>
-          <span className="text-gray-600">Give to</span>
+        <div className="sticky top-20 z-10 flex flex-wrap items-center gap-3 rounded-md border border-line bg-surface px-4 py-2 text-small shadow-soft">
+          <span className="font-semibold text-ink">{selected.length} selected</span>
+          <span className="text-muted">Give to</span>
           <AssignSelect members={members} value={null} onChange={mid => { onAssign(selected, mid); setSelected([]) }} placeholder="Choose…" />
-          <button onClick={() => setSelected([])} className="text-gray-500 ml-auto">Clear</button>
+          <Button variant="quiet" onClick={() => setSelected([])} className="ml-auto">Clear</Button>
         </div>
       )}
 
       {groups.length === 0 ? (
-        <p className="text-sm text-gray-400">
+        <p className="text-small text-muted">
           {fullPlan ? 'No jobs yet. Ask the assistant to "set up the drop-offs and pickups", or make them from a camp below.' : 'Nothing assigned to you right now.'}
         </p>
       ) : (
-        <div className="space-y-6">
+        <div className="space-y-10">
           {groups.map(g => (
-            <div key={g.key} className="space-y-2">
-              <h3 className="text-sm font-semibold text-gray-700">{g.label} <span className="text-gray-400 font-normal">· {g.tasks.filter(t => t.status === 'open').length} open</span></h3>
+            <div key={g.key} className="space-y-4">
+              <Heading level="h3">{g.label} <span className="text-muted">· {g.tasks.filter(t => t.status === 'open').length} open</span></Heading>
               {weeks(g.tasks).map(([week, ts]) => (
-                <div key={week} className={card + ' !p-0 overflow-hidden'}>
-                  <div className="flex items-center justify-between px-4 py-2 bg-gray-50 text-xs font-semibold uppercase tracking-wide text-gray-500">
-                    <span>Week of {fmtDay(week)}</span>
+                <div key={week}>
+                  <div className="flex items-center justify-between border-b border-line pb-2 text-small">
+                    <span className="font-semibold text-muted">Week of {fmtDay(week)}</span>
                     {fullPlan && (
-                      <button
+                      <Button
+                        variant="quiet"
                         onClick={() => setSelected(s => Array.from(new Set([...s, ...ts.filter(t => t.status === 'open').map(t => t.id)])))}
-                        className="normal-case tracking-normal font-medium text-brand-700"
                       >
                         Select week
-                      </button>
+                      </Button>
                     )}
                   </div>
-                  <ul className="divide-y divide-gray-100">
+                  <ul className="divide-y divide-line">
                     {ts.map(t => (
                       <TaskRow
                         key={t.id} task={t} members={members} fullPlan={fullPlan}
@@ -259,43 +253,42 @@ function TaskRow({ task: t, members, fullPlan, selected, onSelect, onToggle, onC
   const [open, setOpen] = useState(false)
   const done = t.status !== 'open'
   return (
-    <li className="px-4 py-2.5">
+    <li className="py-3">
       <div className="flex items-center gap-3">
         {fullPlan && !done && (
-          <input type="checkbox" aria-label="Select" checked={selected} onChange={onSelect} className="accent-brand-600" />
+          <input type="checkbox" aria-label="Select" checked={selected} onChange={onSelect} className="h-4 w-4 accent-ink" />
         )}
         <button
           onClick={onToggle}
           aria-label={done ? 'Mark not done' : 'Mark done'}
-          className={`w-5 h-5 rounded-full border-2 shrink-0 flex items-center justify-center text-[10px] ${done ? 'bg-checked border-checked text-white' : 'border-gray-300 hover:border-checked'}`}
+          className={cx('flex h-5 w-5 shrink-0 items-center justify-center rounded-pill border transition-colors', done ? 'border-checked bg-checked text-accent-ink' : 'border-muted hover:border-checked')}
         >
-          {done ? '✓' : ''}
+          {done && <Icon name="check" size={12} />}
         </button>
         <div className="flex-1 min-w-0">
-          <p className={`text-sm ${done ? 'line-through text-gray-400' : 'text-gray-900'}`}>
-            <span className="mr-1">{KIND_ICONS[t.kind]}</span>{t.title}
+          <p className={`text-small ${done ? 'line-through text-muted' : 'text-ink'}`}>
+            {t.title}
           </p>
-          <p className="text-xs text-gray-500">
+          <p className="text-caption text-muted">
             {fmtDay(t.due_date)}{t.due_time ? ` · ${fmtTime(t.due_time)}` : ''} · {KIND_LABELS[t.kind]}
             {t.checklist.length > 0 && (
-              <button onClick={() => setOpen(o => !o)} className="ml-2 text-brand-700">
+              <Button variant="link" size="sm" onClick={() => setOpen(o => !o)} className="ml-2">
                 {t.checklist.filter(c => c.done).length}/{t.checklist.length} packed
-              </button>
+              </Button>
             )}
             {done && t.completed_by_name && <span> · done by {t.completed_by_name}</span>}
           </p>
-          {t.notes && <p className="text-xs text-gray-500 mt-0.5">{t.notes}</p>}
+          {t.notes && <p className="text-caption text-muted mt-0.5">{t.notes}</p>}
         </div>
         {fullPlan && !done && <AssignSelect members={members} value={t.assignee_id} onChange={onAssign} />}
       </div>
       {open && (
-        <ul className="mt-2 ml-8 grid sm:grid-cols-2 gap-1">
+        <ul className="ml-8 mt-2 grid gap-1 sm:grid-cols-2">
           {t.checklist.map((c, i) => (
             <li key={i}>
-              <label className="flex items-center gap-2 text-sm text-gray-700">
-                <input type="checkbox" checked={c.done} onChange={() => onChecklist(i)} className="accent-brand-600" />
-                <span className={c.done ? 'line-through text-gray-400' : ''}>{c.item}</span>
-              </label>
+              <Checkbox checked={c.done} onChange={() => onChecklist(i)}>
+                <span className={c.done ? 'text-muted line-through' : ''}>{c.item}</span>
+              </Checkbox>
             </li>
           ))}
         </ul>
@@ -308,17 +301,18 @@ function AssignSelect({ members, value, onChange, placeholder = 'Nobody yet' }: 
   members: Member[]; value: string | null; onChange: (mid: string | null) => void; placeholder?: string
 }) {
   return (
-    <select
+    <Select
+      fieldSize="sm"
       value={value ?? ''}
       onChange={e => onChange(e.target.value || null)}
-      className="text-sm border border-gray-200 rounded-lg px-2 py-1 bg-white max-w-[9rem]"
+      className="w-36"
       aria-label="Assign to"
     >
       <option value="">{placeholder}</option>
       {members.map(m => (
         <option key={m.id} value={m.id}>{m.is_you ? 'Me' : m.display_name}{m.status === 'invited' ? ' (invited)' : ''}</option>
       ))}
-    </select>
+    </Select>
   )
 }
 
@@ -330,15 +324,15 @@ function AddTask({ onAdd }: { onAdd: (t: { kind: TaskKind; title: string; due_da
   return (
     <form
       onSubmit={e => { e.preventDefault(); onAdd({ kind, title, due_date: day, due_time: time || null }) }}
-      className={`${card} flex flex-wrap gap-2 items-center`}
+      className="flex flex-wrap items-center gap-2 border-y border-line py-4"
     >
-      <input required className={`${input} flex-1 min-w-[12rem]`} placeholder="e.g. Pay Riverside deposit" value={title} onChange={e => setTitle(e.target.value)} />
-      <select className={input} value={kind} onChange={e => setKind(e.target.value as TaskKind)}>
+      <Input required fieldSize="sm" aria-label="Job" className="min-w-48 flex-1" placeholder="For example, pay the Riverside deposit" value={title} onChange={e => setTitle(e.target.value)} />
+      <Select fieldSize="sm" aria-label="Kind" className="w-auto" value={kind} onChange={e => setKind(e.target.value as TaskKind)}>
         {(Object.keys(KIND_LABELS) as TaskKind[]).map(k => <option key={k} value={k}>{KIND_LABELS[k]}</option>)}
-      </select>
-      <input required type="date" className={input} value={day} onChange={e => setDay(e.target.value)} />
-      <input type="time" className={input} value={time} onChange={e => setTime(e.target.value)} />
-      <button className="btn-lift bg-navy hover:bg-night text-white font-semibold px-4 py-2 rounded-xl text-sm">Add</button>
+      </Select>
+      <Input required fieldSize="sm" aria-label="Due date" className="w-auto" type="date" value={day} onChange={e => setDay(e.target.value)} />
+      <Input fieldSize="sm" aria-label="Time" className="w-auto" type="time" value={time} onChange={e => setTime(e.target.value)} />
+      <Button type="submit" size="sm">Add</Button>
     </form>
   )
 }
@@ -356,42 +350,42 @@ function CalendarSection({ events, tasks, members, fullPlan, onGenerate, onAssig
   const [pickup, setPickup] = useState('15:00')
   if (!events.length) {
     return (
-      <section className="space-y-2">
-        <h2 className="font-semibold text-gray-900">Family calendar</h2>
-        <p className="text-sm text-gray-400">Nothing on the calendar yet.</p>
-      </section>
+      <Section id="calendar" title="Family calendar" divided>
+        <Text tone="muted" variant="small">Nothing on the calendar yet.</Text>
+      </Section>
     )
   }
   return (
-    <section className="space-y-3">
-      <div className="flex flex-wrap items-center justify-between gap-2">
-        <h2 className="font-semibold text-gray-900">Family calendar</h2>
-        {fullPlan && (
-          <div className="flex items-center gap-2 text-xs text-gray-600">
-            Drop-off <input type="time" value={dropoff} onChange={e => setDropoff(e.target.value)} className={`${input} !py-1`} />
-            Pickup <input type="time" value={pickup} onChange={e => setPickup(e.target.value)} className={`${input} !py-1`} />
-          </div>
-        )}
-      </div>
-      <ul className="space-y-2">
+    <Section
+      id="calendar"
+      title="Family calendar"
+      divided
+      action={fullPlan && (
+        <div className="flex items-center gap-2 text-small text-muted">
+          <label className="flex items-center gap-2">Drop-off <Input fieldSize="sm" type="time" value={dropoff} onChange={e => setDropoff(e.target.value)} className="w-auto" /></label>
+          <label className="flex items-center gap-2">Pickup <Input fieldSize="sm" type="time" value={pickup} onChange={e => setPickup(e.target.value)} className="w-auto" /></label>
+        </div>
+      )}
+    >
+      <ul className="divide-y divide-line border-y border-line">
         {events.map(e => {
           const rides = tasks.filter(t => t.event_id === e.id && (t.kind === 'dropoff' || t.kind === 'pickup') && t.status === 'open')
           const holders = Array.from(new Set(tasks.filter(t => t.event_id === e.id).map(t => t.assignee_name ?? 'nobody yet')))
           return (
-            <li key={e.id} className={`${card} flex flex-wrap items-center gap-3`}>
-              <div className="flex-1 min-w-[12rem]">
-                <p className="text-sm font-medium text-gray-900">{e.title}</p>
-                <p className="text-xs text-gray-500">
+            <li key={e.id} className="flex flex-wrap items-center gap-3 py-3">
+              <div className="min-w-48 flex-1">
+                <p className="text-small font-semibold text-ink">{e.title}</p>
+                <p className="text-caption text-muted">
                   {fmtDay(e.start_date)} – {fmtDay(e.end_date)}
                   {holders.length > 0 && fullPlan && <> · jobs: {holders.join(', ')}</>}
                 </p>
               </div>
               {fullPlan && (rides.length === 0 ? (
-                <button onClick={() => onGenerate([e.id], dropoff, pickup)} className="text-sm font-medium text-brand-700 hover:underline">
-                  Make ride & packing jobs
-                </button>
+                <Button variant="link" onClick={() => onGenerate([e.id], dropoff, pickup)}>
+                  Make ride and packing jobs
+                </Button>
               ) : (
-                <label className="flex items-center gap-2 text-sm text-gray-600">
+                <label className="flex items-center gap-2 text-small text-muted">
                   All {rides.length} rides to
                   <AssignSelect members={members} value={null} placeholder="Choose…" onChange={mid => onAssign(rides.map(r => r.id), mid)} />
                 </label>
@@ -400,7 +394,7 @@ function CalendarSection({ events, tasks, members, fullPlan, onGenerate, onAssig
           )
         })}
       </ul>
-    </section>
+    </Section>
   )
 }
 
@@ -439,44 +433,44 @@ function PeopleSection({ household, familyId, act, onLeft }: {
 
   if (household.role === 'caregiver' || household.role === 'viewer') {
     return (
-      <section className="space-y-2">
-        <h2 className="font-semibold text-gray-900">Your access</h2>
-        <p className="text-sm text-gray-600">{household.role === 'viewer' ? 'You can see the family calendar.' : 'You can see the jobs assigned to you and the family calendar.'} The family's medical and contact details stay private to the parents.</p>
-        <button onClick={leave} className="text-sm text-red-600 hover:text-red-700">Leave this family</button>
-      </section>
+      <Section title="Your access" divided className="space-y-3">
+        <p className="max-w-measure text-small text-muted">{household.role === 'viewer' ? 'You can see the family calendar.' : 'You can see the jobs assigned to you and the family calendar.'} The family's medical and contact details stay private to the parents.</p>
+        <Button variant="danger" onClick={leave}>Leave this family</Button>
+      </Section>
     )
   }
 
   return (
-    <section className="space-y-4">
-      <h2 className="font-semibold text-gray-900">People</h2>
-      <ul className="space-y-2">
+    <Section title="People" divided className="space-y-6">
+      <ul className="divide-y divide-line border-y border-line">
         {household.members.map(m => (
-          <li key={m.id} className={`${card} flex flex-wrap items-center gap-3`}>
-            <div className="flex-1 min-w-[10rem]">
-              <p className="text-sm font-medium text-gray-900">
-                {m.display_name}{m.is_you && <span className="text-gray-400 font-normal"> (you)</span>}
-                {manage && <button onClick={() => rename(m)} className="ml-2 text-xs font-normal text-brand-700">Rename</button>}
+          <li key={m.id} className="flex flex-wrap items-center gap-4 py-3">
+            <div className="min-w-40 flex-1">
+              <p className="text-small font-semibold text-ink">
+                {m.display_name}{m.is_you && <span className="font-normal text-muted"> (you)</span>}
+                {manage && <Button variant="quiet" size="sm" onClick={() => rename(m)} className="ml-3 font-normal">Rename</Button>}
               </p>
-              <p className="text-xs text-gray-500">
+              <p className="text-caption text-muted">
                 {m.email ?? ROLE_LABELS[m.role]}
                 {m.status === 'invited' && <span className="ml-1 text-muted italic">· invited{m.invite_expires_at ? `, link expires ${new Date(m.invite_expires_at).toLocaleDateString()}` : ''}</span>}
               </p>
             </div>
             {manage && m.role !== 'owner' ? (
               <>
-                <select
+                <Select
+                  fieldSize="sm"
+                  className="w-auto"
                   value={m.role}
                   onChange={e => act(() => updateMember(familyId, m.id, { role: e.target.value as Role }))}
-                  className="text-sm border border-gray-200 rounded-lg px-2 py-1 bg-white"
                   aria-label={`Role for ${m.display_name}`}
                 >
                   {(['co_parent', 'caregiver', 'viewer'] as const).map(r => <option key={r} value={r}>{ROLE_LABELS[r]}</option>)}
-                </select>
+                </Select>
                 {m.role === 'co_parent' && (
-                  <label className="flex items-center gap-1.5 text-xs text-gray-600" title="Medical, emergency contacts, insurance">
+                  <label className="flex items-center gap-1.5 text-caption text-muted" title="Medical, emergency contacts, insurance">
                     <input
                       type="checkbox"
+                      className="h-4 w-4 accent-ink"
                       checked={m.kit_access}
                       onChange={e => {
                         if (e.target.checked && !confirm(`Let ${m.display_name} see and share the info kit (medical, insurance, contacts)?`)) return
@@ -487,45 +481,46 @@ function PeopleSection({ household, familyId, act, onLeft }: {
                   </label>
                 )}
                 {m.status === 'invited' && (
-                  <button onClick={() => act(async () => {
+                  <Button variant="link" size="sm" onClick={() => act(async () => {
                     const res = await inviteMember(familyId, { display_name: m.display_name, email: m.email ?? '', role: m.role as Exclude<Role, 'owner'> })
                     setLink({ url: res.url, emailed: res.emailed })
-                  })} className="text-xs text-brand-700">
+                  })}>
                     Resend
-                  </button>
+                  </Button>
                 )}
-                <button
+                <Button
+                  variant="danger"
+                  size="sm"
                   onClick={() => confirm(`Remove ${m.display_name}? Their open jobs go back to "nobody yet".`) && act(() => removeMember(familyId, m.id))}
-                  className="text-xs text-gray-400 hover:text-red-600"
                 >
                   Remove
-                </button>
+                </Button>
               </>
             ) : (
-              <span className="text-xs text-gray-500">{ROLE_LABELS[m.role]}{m.kit_access && m.role !== 'owner' ? ' · info kit' : ''}</span>
+              <span className="text-caption text-muted">{ROLE_LABELS[m.role]}{m.kit_access && m.role !== 'owner' ? ' · info kit' : ''}</span>
             )}
           </li>
         ))}
       </ul>
 
       {manage ? (
-        <form onSubmit={invite} className={`${card} space-y-3`}>
-          <p className="text-sm font-medium text-gray-800">Invite someone</p>
-          <div className="grid sm:grid-cols-2 gap-2">
-            <input required className={input} placeholder="What you call them, e.g. Grandma" value={name} onChange={e => setName(e.target.value)} />
-            <input required type="email" className={input} placeholder="Their email" value={email} onChange={e => setEmail(e.target.value)} />
+        <form onSubmit={invite} className="space-y-4">
+          <Heading level="h3" as="h3">Invite someone</Heading>
+          <div className="grid gap-2 sm:grid-cols-2">
+            <Input required aria-label="Name" placeholder="What you call them, like Grandma" value={name} onChange={e => setName(e.target.value)} />
+            <Input required type="email" aria-label="Email" placeholder="Their email" value={email} onChange={e => setEmail(e.target.value)} />
           </div>
-          <div className="flex flex-wrap gap-2">
-            {(['co_parent', 'caregiver', 'viewer'] as const).map(r => (
-              <label key={r} className={`text-sm border rounded-xl px-3 py-2 cursor-pointer ${role === r ? 'bg-brand-50 border-brand-300' : 'border-gray-200'}`}>
-                <input type="radio" name="role" className="sr-only" checked={role === r} onChange={() => setRole(r)} />
-                <span className="font-medium text-gray-900">{ROLE_LABELS[r]}</span>
-                <span className="block text-xs text-gray-500">{ROLE_HELP[r]}</span>
-              </label>
-            ))}
-          </div>
-          <button className="btn-lift bg-navy hover:bg-night text-white font-semibold px-4 py-2 rounded-xl text-sm">Send invite</button>
-          <p className="text-xs text-gray-500">They sign in with that email to accept. The link works for 7 days. The info kit stays with you unless you turn it on for a co-parent.</p>
+          <fieldset>
+            <legend className="mb-2 text-small font-semibold text-ink">Role</legend>
+            <div className="flex flex-wrap gap-2">
+              {(['co_parent', 'caregiver', 'viewer'] as const).map(r => (
+                <ChoiceChip key={r} type="radio" name="role" checked={role === r} onChange={() => setRole(r)}>{ROLE_LABELS[r]}</ChoiceChip>
+              ))}
+            </div>
+            <p className="mt-2 text-caption text-muted">{ROLE_HELP[role]}</p>
+          </fieldset>
+          <Button type="submit">Send invite</Button>
+          <p className="text-caption text-muted">They sign in with that email to accept. The link works for 7 days. The info kit stays with you unless you turn it on for a co-parent.</p>
           {link && (
             <CopyLink
               label={link.emailed ? 'Invite emailed. You can also share this link yourself:' : "Email isn't set up yet, so send them this link yourself:"}
@@ -534,24 +529,24 @@ function PeopleSection({ household, familyId, act, onLeft }: {
           )}
         </form>
       ) : (
-        <button onClick={leave} className="text-sm text-red-600 hover:text-red-700">Leave this family</button>
+        <Button variant="danger" onClick={leave}>Leave this family</Button>
       )}
-    </section>
+    </Section>
   )
 }
 
 function CopyLink({ label, url }: { label: string; url: string }) {
   const [copied, setCopied] = useState(false)
   return (
-    <div className="bg-brand-50 border border-brand-200 rounded-xl p-3 text-sm space-y-1">
-      <p className="text-brand-700 font-medium">{label}</p>
-      <div className="flex gap-2">
-        <input readOnly value={url} className={`${input} flex-1`} onFocus={e => e.target.select()} />
-        <button type="button" onClick={() => { navigator.clipboard?.writeText(url); setCopied(true) }} className="text-brand-700 font-medium px-2">
+    <Notice className="space-y-2">
+      <p className="font-semibold">{label}</p>
+      <div className="flex items-center gap-2">
+        <Input fieldSize="sm" readOnly aria-label="Invite link" value={url} onFocus={e => e.target.select()} />
+        <Button variant="secondary" size="sm" onClick={() => { navigator.clipboard?.writeText(url); setCopied(true) }}>
           {copied ? 'Copied' : 'Copy'}
-        </button>
+        </Button>
       </div>
-    </div>
+    </Notice>
   )
 }
 
@@ -561,41 +556,40 @@ function MySettings({ familyId, you, role, feed, act }: {
   const webcal = feed?.replace(/^https?:/, 'webcal:')
   const [copied, setCopied] = useState(false)
   return (
-    <section className="space-y-3">
-      <h2 className="font-semibold text-gray-900">Your reminders and calendar</h2>
-      <div className={`${card} space-y-3 text-sm`}>
+    <Section title="Your reminders and calendar" divided>
+      <div className="space-y-4 text-small">
         {role !== 'viewer' && (
-          <label className="flex flex-wrap items-center gap-2 text-gray-700">
+          <label className="flex flex-wrap items-center gap-3 text-ink">
             Email me my jobs
-            <select
+            <Select
+              fieldSize="sm"
+              className="w-auto"
               value={you.reminder_pref ?? 'day_before'}
               onChange={e => act(() => updateMyPrefs(familyId, { reminder_pref: e.target.value }))}
-              className="border border-gray-200 rounded-lg px-2 py-1 bg-white"
             >
               <option value="day_before">the evening before</option>
               <option value="daily">the morning of</option>
               <option value="off">never</option>
-            </select>
+            </Select>
           </label>
         )}
         {(role === 'owner' || role === 'co_parent') && (
-          <label className="flex items-center gap-2 text-gray-700">
-            <input type="checkbox" checked={!!you.weekly_summary} onChange={e => act(() => updateMyPrefs(familyId, { weekly_summary: e.target.checked }))} />
+          <Checkbox checked={!!you.weekly_summary} onChange={e => act(() => updateMyPrefs(familyId, { weekly_summary: e.target.checked }))}>
             Sunday summary of the week ahead: who has what, and what nobody has yet
-          </label>
+          </Checkbox>
         )}
         {feed && webcal && (
-          <div className="pt-3 border-t border-gray-100">
-            <p className="text-gray-600 mb-1.5">Your own calendar: the family plan plus your jobs.</p>
-            <div className="flex flex-wrap gap-x-3 gap-y-1 text-xs font-medium">
-              <a href={`https://calendar.google.com/calendar/r?cid=${encodeURIComponent(webcal)}`} target="_blank" rel="noreferrer" className="text-brand-700 hover:underline">Add to Google Calendar</a>
-              <a href={webcal} className="text-brand-700 hover:underline">Apple / Outlook</a>
-              <button onClick={() => { navigator.clipboard?.writeText(feed); setCopied(true) }} className="text-gray-500 hover:text-gray-800">{copied ? 'Link copied' : 'Copy private link'}</button>
-              <button onClick={() => confirm('Make a new link? The old one stops working.') && act(() => resetMyCalendar(familyId))} className="text-gray-500 hover:text-gray-800">Reset link</button>
+          <div className="border-t border-line pt-4">
+            <p className="mb-2 text-muted">Your own calendar: the family plan plus your jobs.</p>
+            <div className="flex flex-wrap gap-x-4 gap-y-1 text-caption">
+              <a href={`https://calendar.google.com/calendar/r?cid=${encodeURIComponent(webcal)}`} target="_blank" rel="noreferrer" className="font-semibold text-ink hover:underline underline-offset-4">Add to Google Calendar</a>
+              <a href={webcal} className="font-semibold text-ink hover:underline underline-offset-4">Apple or Outlook</a>
+              <Button variant="quiet" size="sm" onClick={() => { navigator.clipboard?.writeText(feed); setCopied(true) }}>{copied ? 'Link copied' : 'Copy private link'}</Button>
+              <Button variant="quiet" size="sm" onClick={() => confirm('Make a new link? The old one stops working.') && act(() => resetMyCalendar(familyId))}>Reset link</Button>
             </div>
           </div>
         )}
       </div>
-    </section>
+    </Section>
   )
 }

@@ -29,10 +29,6 @@ export const KIND_LABELS: Record<TaskKind, string> = {
   other: 'To do',
 }
 
-export const KIND_ICONS: Record<TaskKind, string> = {
-  dropoff: '🚗', pickup: '🚗', form: '📝', payment: '💳', packing: '🎒', deadline: '⏰', other: '•',
-}
-
 export interface Member {
   id: string
   display_name: string

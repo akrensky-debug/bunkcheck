@@ -10,6 +10,7 @@ import {
 import { AgentBlock, AgentText, CalendarList } from '@/components/agent/AgentBlocks'
 import { WeekView } from '@/components/agent/ActivityBlocks'
 import { getFamilyWeek, type FamilyWeek } from '@/lib/activities'
+import { Button, Composer, IconButton, cx } from '@/components/ui'
 
 type Part =
   | { kind: 'text'; text: string }
@@ -28,6 +29,11 @@ const STARTERS = [
   'Swim lessons after 3:30 on weekdays for my 5-year-old near Providence',
   'Help me plan our whole summer',
 ]
+
+/** What the side column has to show. Empty sections are not rendered at all. */
+function hasProfile(f: Family | null) {
+  return !!(f && (f.profile.kids?.length || f.profile.home_location))
+}
 
 export default function AgentHome() {
   const [family, setFamily] = useState<Family | null>(null)
@@ -126,84 +132,112 @@ export default function AgentHome() {
   }
 
   const empty = messages.length === 0
+  const side = !!family && (hasProfile(family) || family.events.length > 0)
 
   return (
-    <div className="max-w-6xl mx-auto px-4 flex gap-6">
+    <div className="mx-auto flex max-w-wide gap-16 px-4 sm:px-6">
       {/* Conversation */}
-      <section className="flex-1 min-w-0 flex flex-col min-h-[calc(100vh-65px)]">
-        <div className="flex items-center justify-between py-3 lg:hidden">
-          <button onClick={() => setPanelOpen(o => !o)} className="text-sm font-semibold text-navy underline decoration-flashlight decoration-2 underline-offset-4">
-            {panelOpen ? 'Hide your family' : 'Your family & calendar'}
-          </button>
-          {!empty && <button onClick={newConversation} className="text-sm text-muted hover:text-navy">New chat</button>}
-        </div>
-        {panelOpen && family && <div className="lg:hidden mb-4"><FamilyPanel family={family} onChange={setFamily} /></div>}
-
-        {empty ? (
-          <div className="flex-1 flex flex-col justify-center py-6 md:py-10">
-            <HeroPanel />
-            <p className="text-xs font-semibold uppercase tracking-wide text-muted mb-3" data-reveal>Start with one of these</p>
-            <div className="grid sm:grid-cols-2 gap-2.5 max-w-3xl">
-              {STARTERS.map(s => (
-                <button
-                  key={s}
-                  onClick={() => send(s)}
-                  disabled={!family}
-                  data-reveal
-                  className="group card-interactive text-left text-sm bg-white border border-line rounded-2xl px-4 py-3 text-navy disabled:opacity-50 flex items-start justify-between gap-3"
-                >
-                  <span>{s}</span>
-                  <span aria-hidden="true" className="text-muted group-hover:text-navy group-hover:translate-x-0.5 transition-transform">→</span>
-                </button>
-              ))}
-            </div>
-            {familyError && (
-              <p className="text-sm text-red-600 mt-6">We couldn't connect right now. Please refresh to try again.</p>
-            )}
-          </div>
-        ) : (
-          <div className="flex-1 py-6 space-y-6">
-            {messages.map((m, i) => <MessageView key={i} message={m} familyId={family?.id} />)}
-            <div ref={bottomRef} />
+      <section className="flex min-h-page min-w-0 flex-1 flex-col">
+        {(side || !empty) && (
+          <div className={cx('flex items-center justify-between gap-4 pt-4', side && 'lg:hidden')}>
+            {side ? (
+              <Button variant="link" size="sm" onClick={() => setPanelOpen(o => !o)} aria-expanded={panelOpen}>
+                {panelOpen ? 'Hide your family' : 'Your family and calendar'}
+              </Button>
+            ) : <span />}
+            {!empty && <Button variant="quiet" size="sm" onClick={newConversation}>New chat</Button>}
           </div>
         )}
+        {panelOpen && side && family && (
+          <div className="mt-4 border-b border-line pb-6 lg:hidden"><FamilyPanel family={family} onChange={setFamily} /></div>
+        )}
 
-        <form
-          onSubmit={e => { e.preventDefault(); send(input) }}
-          className="sticky bottom-0 bg-paper pt-2 pb-4"
-        >
-          <div className="flex gap-2 items-end bg-white border border-line rounded-2xl p-2 shadow-sm transition-colors focus-within:border-navy">
-            <textarea
-              value={input}
-              onChange={e => setInput(e.target.value)}
-              onKeyDown={e => {
-                if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); send(input) }
-              }}
-              rows={1}
-              placeholder={empty ? 'Ages, town, interests, weeks you need covered…' : 'Reply…'}
-              className="flex-1 resize-none outline-none px-2 py-2 text-base max-h-40 bg-transparent placeholder:text-gray-400"
-            />
-            <button
-              type="submit"
-              disabled={busy || !input.trim() || !family}
-              className="btn-lift bg-navy hover:bg-night text-white font-semibold px-5 py-2 rounded-xl disabled:opacity-40"
-            >
-              {busy ? '…' : 'Send'}
-            </button>
+        {empty ? (
+          <div className="mx-auto flex w-full max-w-narrow flex-1 flex-col pb-16 pt-16 sm:pt-24 lg:pt-32">
+            <h1 className="font-display text-display text-ink text-balance">Summer, sorted.</h1>
+            <p className="mt-5 max-w-measure text-lead text-muted">
+              Tell me about your kids and your summer. I&rsquo;ll find the best camps, fit them into your weeks,
+              and help you sign up.
+            </p>
+            <div className="mt-10">
+              <Composer
+                size="hero"
+                value={input}
+                onChange={setInput}
+                onSubmit={() => send(input)}
+                canSend={!!family}
+                busy={busy}
+                placeholder="Ages, town, and the weeks you need"
+                label="Tell Bunkcheck about your summer"
+              />
+            </div>
+            <ul className="mt-5 flex flex-wrap gap-x-5 gap-y-2" aria-label="Try asking">
+              {STARTERS.map(s => (
+                <li key={s}>
+                  <button
+                    onClick={() => send(s)}
+                    disabled={!family}
+                    className="text-left text-small text-muted underline-offset-4 transition-colors hover:text-ink hover:underline disabled:opacity-50"
+                  >
+                    {s}
+                  </button>
+                </li>
+              ))}
+            </ul>
+            {familyError && (
+              <p className="mt-6 text-small text-error">We couldn&rsquo;t connect right now. Please refresh to try again.</p>
+            )}
+            {family && !side && <QuickLinks family={family} className="mt-16 lg:mt-24" />}
           </div>
-        </form>
+        ) : (
+          <>
+            <div className="mx-auto w-full max-w-narrow flex-1 space-y-10 py-8">
+              {messages.map((m, i) => <MessageView key={i} message={m} familyId={family?.id} />)}
+              <div ref={bottomRef} className="scroll-mb-28" />
+            </div>
+            <div className="sticky bottom-0 bg-bg pb-4 pt-2">
+              <div className="mx-auto w-full max-w-narrow">
+                <Composer
+                  value={input}
+                  onChange={setInput}
+                  onSubmit={() => send(input)}
+                  canSend={!!family}
+                  busy={busy}
+                  placeholder="Reply"
+                />
+              </div>
+            </div>
+          </>
+        )}
       </section>
 
-      {/* Family panel (desktop) */}
-      <aside className="hidden lg:block w-80 shrink-0 py-6">
-        <div className="sticky top-20 space-y-4">
-          {!empty && (
-            <button onClick={newConversation} className="text-sm text-muted hover:text-navy">+ New chat</button>
-          )}
-          {family && <FamilyPanel family={family} onChange={setFamily} />}
-        </div>
-      </aside>
+      {/* Family column (desktop), only once there is something in it */}
+      {side && family && (
+        <aside className="hidden w-72 shrink-0 py-10 lg:block">
+          <div className="sticky top-24 space-y-6">
+            {!empty && <Button variant="quiet" size="sm" leadingIcon="plus" onClick={newConversation}>New chat</Button>}
+            <FamilyPanel family={family} onChange={setFamily} />
+          </div>
+        </aside>
+      )}
     </div>
+  )
+}
+
+/** Quiet links to the family pages, shown instead of empty panels. */
+function QuickLinks({ family, className }: { family: Family; className?: string }) {
+  const links: Array<[string, string]> = [['/household', 'Household'], ['/household#calendar', 'Calendar']]
+  if (family.can_open_kit) links.push(['/kit', 'Info kit'])
+  else if (!family.signed_in) links.push(['/signin', 'Save to an account'])
+  return (
+    <nav aria-label="Your family" className={cx('text-small text-muted', className)}>
+      {links.map(([href, label], i) => (
+        <span key={href}>
+          {i > 0 && <span aria-hidden="true"> · </span>}
+          <a href={href} className="transition-colors hover:text-ink">{label}</a>
+        </span>
+      ))}
+    </nav>
   )
 }
 
@@ -211,25 +245,37 @@ function MessageView({ message, familyId }: { message: Message; familyId?: strin
   if (message.role === 'user') {
     return (
       <div className="flex justify-end">
-        <div className="bg-navy text-white rounded-2xl rounded-br-md px-4 py-2.5 max-w-[85%] whitespace-pre-wrap animate-rise-in">
+        <div className="ml-12 whitespace-pre-wrap rounded-lg bg-accent px-4 py-2.5 text-accent-ink">
           {message.parts.map(p => (p.kind === 'text' ? p.text : '')).join('')}
         </div>
       </div>
     )
   }
   return (
-    <div className="space-y-3 text-navy animate-fade-in">
+    <div className="space-y-6 text-ink">
       {message.parts.map((p, i) =>
         p.kind === 'text' ? <AgentText key={i} text={p.text} /> : <AgentBlock key={i} data={p.data} familyId={familyId} />,
       )}
       {message.status && (
-        <p className="text-sm text-muted flex items-center gap-2">
-          <span className="inline-block w-2.5 h-2.5 rounded-full bg-flashlight ring-2 ring-navy/80 animate-pulse" />
+        <p className="flex items-center gap-2 text-small text-muted">
+          <span aria-hidden="true" className="h-1.5 w-1.5 animate-pulse rounded-pill bg-ink" />
           {message.status}…
         </p>
       )}
-      {message.error && <p className="text-sm text-red-600">{message.error}</p>}
+      {message.error && <p className="text-small text-error">{message.error}</p>}
     </div>
+  )
+}
+
+function PanelSection({ title, action, children }: { title: string; action?: React.ReactNode; children: React.ReactNode }) {
+  return (
+    <section className="border-t border-line pt-5 first:border-t-0 first:pt-0">
+      <div className="mb-3 flex items-center justify-between gap-2">
+        <h2 className="text-small font-semibold text-ink">{title}</h2>
+        {action}
+      </div>
+      {children}
+    </section>
   )
 }
 
@@ -246,80 +292,48 @@ function FamilyPanel({ family, onChange }: { family: Family; onChange: (f: Famil
   }
 
   return (
-    <div className="space-y-4">
-      <div className="bg-white border border-line rounded-2xl p-4" data-reveal>
-        <p className="text-xs font-semibold uppercase tracking-wide text-muted mb-2">Your family</p>
-        {profile.kids?.length || profile.home_location ? (
-          <div className="space-y-1.5 text-sm text-navy">
-            {profile.home_location && <p>📍 {profile.home_location}</p>}
+    <div className="space-y-5">
+      {hasProfile(family) && (
+        <PanelSection title="Your family">
+          <div className="space-y-1 text-small text-ink">
+            {profile.home_location && <p>{profile.home_location}</p>}
             {profile.kids?.map((k, i) => (
               <p key={i}>
-                👧 {k.name || 'Child'}{k.age != null ? `, ${k.age}` : ''}
+                {k.name || 'Child'}{k.age != null ? `, ${k.age}` : ''}
                 {k.interests?.length ? <span className="text-muted"> · {k.interests.join(', ')}</span> : null}
               </p>
             ))}
             {profile.summer_start && profile.summer_end && (
-              <p>☀️ {profile.summer_start} → {profile.summer_end}</p>
+              <p className="text-muted">Summer {profile.summer_start} to {profile.summer_end}</p>
             )}
-            {profile.weekly_budget != null && <p>💵 Up to ${profile.weekly_budget}/week</p>}
-            {profile.needs?.map((n, i) => <p key={i} className="text-muted">• {n}</p>)}
+            {profile.weekly_budget != null && <p className="text-muted">Up to ${profile.weekly_budget} a week</p>}
+            {profile.needs?.map((n, i) => <p key={i} className="text-muted">{n}</p>)}
           </div>
-        ) : (
-          <p className="text-sm text-muted">I'll remember your kids, town and summer plans as we talk.</p>
-        )}
-      </div>
+        </PanelSection>
+      )}
 
       <ThisWeek familyId={family.id} events={events} />
 
-      <div className="bg-white border border-line rounded-2xl p-4" data-reveal>
-        <p className="text-xs font-semibold uppercase tracking-wide text-muted mb-2">Family calendar</p>
-        <CalendarList events={events} compact />
-        {events.length > 0 && feed && webcal && (
-          <div className="mt-3 pt-3 border-t border-line flex flex-wrap gap-x-3 gap-y-1 text-xs font-medium">
-            <a href={`https://calendar.google.com/calendar/r?cid=${encodeURIComponent(webcal)}`} target="_blank" rel="noreferrer" onClick={() => Events.calendarSubscribed('google')} className="text-navy underline decoration-line underline-offset-2 hover:decoration-navy">
-              Add to Google Calendar
-            </a>
-            <a href={webcal} onClick={() => Events.calendarSubscribed('webcal')} className="text-navy underline decoration-line underline-offset-2 hover:decoration-navy">Apple / Outlook</a>
-            <button
-              onClick={() => { navigator.clipboard?.writeText(feed); setCopied(true); Events.calendarSubscribed('copy') }}
-              className="text-muted hover:text-navy"
-            >
-              {copied ? 'Link copied' : 'Copy private link'}
-            </button>
-            <button onClick={resetLink} className="text-muted hover:text-navy">Reset link</button>
-          </div>
-        )}
-      </div>
+      {events.length > 0 && (
+        <PanelSection title="Family calendar">
+          <CalendarList events={events} compact />
+          {feed && webcal && (
+            <div className="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-caption">
+              <a href={`https://calendar.google.com/calendar/r?cid=${encodeURIComponent(webcal)}`} target="_blank" rel="noreferrer" onClick={() => Events.calendarSubscribed('google')} className="font-semibold text-ink hover:underline underline-offset-4">
+                Add to Google Calendar
+              </a>
+              <a href={webcal} onClick={() => Events.calendarSubscribed('webcal')} className="font-semibold text-ink hover:underline underline-offset-4">Apple or Outlook</a>
+              <Button variant="quiet" size="sm" onClick={() => { navigator.clipboard?.writeText(feed); setCopied(true); Events.calendarSubscribed('copy') }}>
+                {copied ? 'Link copied' : 'Copy private link'}
+              </Button>
+              <Button variant="quiet" size="sm" onClick={resetLink}>Reset link</Button>
+            </div>
+          )}
+        </PanelSection>
+      )}
 
-      <div className="bg-white border border-line rounded-2xl p-4" data-reveal>
-        <p className="text-xs font-semibold uppercase tracking-wide text-muted mb-2">Household & jobs</p>
-        <p className="text-sm text-muted mb-2">
-          {family.signed_in
-            ? 'Hand off pickups, forms and payments to your partner, a grandparent or the nanny. They get a reminder before each one.'
-            : 'Keep a job list for drop-offs, forms and payments. Save to an account to share it.'}
-        </p>
-        <a href="/household" className="text-sm font-semibold text-navy underline decoration-flashlight decoration-2 underline-offset-4 hover:decoration-navy">Who's doing what →</a>
-      </div>
-
-      <div className="bg-white border border-line rounded-2xl p-4" data-reveal>
-        <p className="text-xs font-semibold uppercase tracking-wide text-muted mb-2">Info kit</p>
-        {family.can_open_kit ? (
-          <>
-            <p className="text-sm text-muted mb-2">
-              Allergies, emergency contacts, insurance: fill them in once, share only what each camp asks for.
-            </p>
-            <a href="/kit" className="text-sm font-semibold text-navy underline decoration-flashlight decoration-2 underline-offset-4 hover:decoration-navy">Open your info kit →</a>
-          </>
-        ) : family.signed_in ? (
-          <p className="text-sm text-muted">The info kit is private to the family's owner. They can share it with you from the Household page.</p>
-        ) : (
-          <>
-            <p className="text-sm text-muted mb-2">
-              Save your family to an account to keep it safe and fill in camp forms once.
-            </p>
-            <a href="/signin" className="text-sm font-semibold text-navy underline decoration-flashlight decoration-2 underline-offset-4 hover:decoration-navy">Save to an account →</a>
-          </>
-        )}
+      <div className="border-t border-line pt-5">
+        <QuickLinks family={family} />
       </div>
     </div>
   )
@@ -341,103 +355,17 @@ function ThisWeek({ familyId, events }: { familyId: string; events: Family['even
 
   if (!hasWeekly || !week) return null
   return (
-    <div className="bg-white border border-line rounded-2xl p-4">
-      <div className="flex items-center justify-between mb-2">
-        <p className="text-xs font-semibold uppercase tracking-wide text-muted">
-          {offset === 0 ? 'This week' : `Week of ${new Date(week.week_of + 'T00:00:00').toLocaleDateString(undefined, { month: 'short', day: 'numeric' })}`}
-        </p>
-        <div className="flex gap-2 text-sm text-muted">
-          <button onClick={() => setOffset(o => o - 1)} aria-label="Previous week" className="hover:text-navy">‹</button>
-          {offset !== 0 && <button onClick={() => setOffset(0)} className="text-xs hover:text-navy">Today</button>}
-          <button onClick={() => setOffset(o => o + 1)} aria-label="Next week" className="hover:text-navy">›</button>
+    <PanelSection
+      title={offset === 0 ? 'This week' : `Week of ${new Date(week.week_of + 'T00:00:00').toLocaleDateString(undefined, { month: 'short', day: 'numeric' })}`}
+      action={
+        <div className="flex items-center gap-1">
+          <IconButton icon="chevron-left" label="Previous week" size="sm" onClick={() => setOffset(o => o - 1)} />
+          {offset !== 0 && <Button variant="quiet" size="sm" onClick={() => setOffset(0)}>Today</Button>}
+          <IconButton icon="chevron-right" label="Next week" size="sm" onClick={() => setOffset(o => o + 1)} />
         </div>
-      </div>
+      }
+    >
       <WeekView week={week} compact />
-    </div>
-  )
-}
-
-const SUMMER_WEEKS = 10
-
-/** Home hero: navy panel, yellow B whose check draws itself in, and a summer-at-a-glance strip. */
-function HeroPanel() {
-  return (
-    <div className="on-dark relative overflow-hidden rounded-[22px] bg-navy text-offwhite p-6 md:p-10 mb-6 animate-rise-in">
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute -right-24 -top-24 h-72 w-72 rounded-full bg-tile opacity-70"
-      />
-      <div className="relative grid md:grid-cols-[1fr_auto] gap-6 md:gap-10 items-center">
-        <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.14em] text-flashlight mb-3">Summer camp, planned with AI</p>
-          <h1 className="text-[1.75rem] leading-[1.1] sm:text-4xl lg:text-[2.75rem] font-extrabold text-white mb-4 [text-wrap:balance]">
-            <span className="block">Summer, sorted.</span>
-          </h1>
-          <p className="text-base md:text-lg text-[#C9CFDC] max-w-xl">
-            Tell me about your kids and your summer. I'll find the best camps, fit them into your weeks,
-            and help you sign up.
-          </p>
-        </div>
-        <HeroMark className="order-first md:order-none w-14 md:w-28 lg:w-36 h-auto" />
-      </div>
-      <SummerStrip />
-    </div>
-  )
-}
-
-/** The bare yellow B (on navy) with its check cut drawn in on load. */
-function HeroMark({ className = '' }: { className?: string }) {
-  return (
-    <svg viewBox="7 3 53 58" className={className} role="img" aria-label="Bunkcheck">
-      <path d="M8 4 H35 A13.5 13.5 0 0 1 45 27 A15.5 15.5 0 0 1 39 60 H8 Z" fill="#F5D96B" className="origin-center [transform-box:fill-box] animate-pop" />
-      <path d="M24 38 H34 A6 6 0 0 1 34 50 H24 A6 6 0 0 1 24 38 Z" fill="#14213D" />
-      <path
-        d="M18 18 L24 24 L35 12"
-        pathLength={1}
-        fill="none"
-        stroke="#14213D"
-        strokeWidth="5.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        className="check-path check-draw"
-      />
-    </svg>
-  )
-}
-
-/** Ten summer weeks filling in, one after another. Illustrative only. */
-function SummerStrip() {
-  return (
-    <div className="relative mt-7 md:mt-9">
-      <div className="flex items-baseline justify-between mb-2 text-xs text-[#C9CFDC]">
-        <span className="font-semibold text-offwhite">Summer at a glance</span>
-        <span>June · July · August</span>
-      </div>
-      <ol className="grid grid-cols-10 gap-1 sm:gap-1.5" aria-label={`${SUMMER_WEEKS} summer weeks, each one covered`}>
-        {Array.from({ length: SUMMER_WEEKS }, (_, i) => (
-          <li key={i} className="relative h-9 sm:h-11 rounded-md bg-tile overflow-hidden">
-            <span
-              aria-hidden="true"
-              className="absolute inset-0 bg-flashlight origin-bottom animate-week-fill"
-              style={{ animationDelay: `${700 + i * 90}ms` }}
-            />
-            <svg viewBox="0 0 16 16" aria-hidden="true" className="absolute inset-0 m-auto h-3.5 w-3.5 sm:h-4 sm:w-4">
-              <path
-                d="M3.5 8.5 L6.5 11.5 L12.5 4.5"
-                pathLength={1}
-                fill="none"
-                stroke="#14213D"
-                strokeWidth="2.6"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="check-path"
-                style={{ animation: `draw-check 0.35s cubic-bezier(0.65, 0, 0.35, 1) ${950 + i * 90}ms both` }}
-              />
-            </svg>
-            <span className="sr-only">Week {i + 1}</span>
-          </li>
-        ))}
-      </ol>
-    </div>
+    </PanelSection>
   )
 }

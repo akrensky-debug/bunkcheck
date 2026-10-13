@@ -8,6 +8,7 @@ import {
   CHILD_LABELS, HOUSEHOLD_LABELS, createShare, getKit, listShares, revokeShare, saveKit,
   type Child, type Contact, type InfoKit, type ShareSummary,
 } from '@/lib/kit'
+import { Button, ChoiceChip, Container, Heading, Input, Notice, Section, Select, Text, TextLink, Textarea } from '@/components/ui'
 
 const EMPTY_KIT: InfoKit = {
   household: { parents: [], emergency_contacts: [], authorized_pickups: [] },
@@ -20,7 +21,6 @@ const HOUSEHOLD_TEXT = [
 ] as const
 const LONG_CHILD = new Set(['allergies', 'medications', 'medical_conditions', 'notes'])
 
-const input = 'w-full border border-gray-200 rounded-lg px-3 py-2 text-sm outline-none focus:border-brand-400'
 
 export default function KitPage() {
   const session = useSession()
@@ -101,34 +101,33 @@ export default function KitPage() {
 
   if (error === 'private') {
     return (
-      <div className="max-w-3xl mx-auto px-4 py-16 space-y-2">
-        <h1 className="text-2xl font-bold text-gray-900">Info kit</h1>
-        <p className="text-gray-600">
-          The info kit (medical details, emergency contacts, insurance) is private to the family's owner.
+      <Container size="narrow" className="space-y-4 py-16 sm:py-24">
+        <Heading level="h1">Info kit</Heading>
+        <Text tone="muted">
+          The info kit (medical details, emergency contacts, insurance) is private to the family&rsquo;s owner.
           They can give a co-parent access from the Household page.
-        </p>
-        <a href="/household" className="text-sm font-medium text-brand-700 hover:underline">Go to Household →</a>
-      </div>
+        </Text>
+        <TextLink href="/household" arrow>Go to Household</TextLink>
+      </Container>
     )
   }
 
   if (!session || !family) {
-    return <div className="max-w-3xl mx-auto px-4 py-16 text-gray-400">{error || 'Loading…'}</div>
+    return <Container size="narrow" className="py-16"><Text tone="muted">{error || 'Loading…'}</Text></Container>
   }
 
   return (
-    <div className="max-w-3xl mx-auto px-4 py-10 space-y-10">
-      <header>
-        <h1 className="text-2xl font-bold text-gray-900">Info kit</h1>
-        <p className="text-gray-600 mt-1">
-          What camps ask for at registration, filled in once. It's encrypted, never shown to the
+    <Container size="narrow" className="space-y-14 py-12 sm:py-16">
+      <header className="space-y-3">
+        <Heading level="h1">Info kit</Heading>
+        <Text tone="muted">
+          What camps ask for at registration, filled in once. It&rsquo;s encrypted, never shown to the
           assistant, and shared only as a package you choose.
-        </p>
-        <a href="/registrations" className="inline-block mt-2 text-sm font-medium text-brand-700">Registrations and reminders ›</a>
+        </Text>
+        <TextLink href="/registrations" arrow className="text-small">Registrations and reminders</TextLink>
       </header>
 
-      <section className="space-y-5">
-        <h2 className="font-semibold text-gray-900">Household</h2>
+      <Section title="Household" className="space-y-6">
         {CONTACT_LISTS.map(list => (
           <ContactList
             key={list}
@@ -139,57 +138,59 @@ export default function KitPage() {
         ))}
         <div className="grid sm:grid-cols-2 gap-3">
           {HOUSEHOLD_TEXT.map(f => (
-            <label key={f} className="text-sm text-gray-600 space-y-1">
+            <label key={f} className="flex flex-col gap-1.5 text-small font-semibold text-ink">
               <span>{HOUSEHOLD_LABELS[f]}</span>
-              <input
-                className={input}
+              <Input
+                fieldSize="sm"
                 value={(kit.household[f] as string | null) ?? ''}
                 onChange={e => setHousehold(f, e.target.value || null)}
               />
             </label>
           ))}
         </div>
-      </section>
+      </Section>
 
-      <section className="space-y-4">
-        <div className="flex items-center justify-between">
-          <h2 className="font-semibold text-gray-900">Kids</h2>
-          <button
-            onClick={() => setKit(k => ({ ...k, children: [...k.children, { name: '' }] }))}
-            className="text-sm font-medium text-brand-700"
-          >
-            + Add a child
-          </button>
-        </div>
+      <Section
+        title="Kids"
+        divided
+        action={
+          <Button variant="link" leadingIcon="plus" onClick={() => setKit(k => ({ ...k, children: [...k.children, { name: '' }] }))}>
+            Add a child
+          </Button>
+        }
+      >
+        <div className="divide-y divide-line">
         {kit.children.map((c, i) => (
-          <div key={i} className="bg-white border border-gray-200 rounded-2xl p-4 space-y-3">
-            <div className="flex gap-3 items-end">
-              <label className="flex-1 text-sm text-gray-600 space-y-1">
+          <div key={i} className="space-y-4 py-6 first:pt-0">
+            <div className="flex items-end gap-4">
+              <label className="flex flex-1 flex-col gap-1.5 text-small font-semibold text-ink">
                 <span>Name on forms</span>
-                <input className={input} value={c.name} onChange={e => setChild(i, 'name', e.target.value)} />
+                <Input fieldSize="sm" value={c.name} onChange={e => setChild(i, 'name', e.target.value)} />
               </label>
-              <button
+              <Button
+                variant="quiet"
                 onClick={() => setKit(k => ({ ...k, children: k.children.filter((_, j) => j !== i) }))}
-                className="text-sm text-gray-400 hover:text-red-600 pb-2"
+                className="pb-2"
               >
                 Remove
-              </button>
+              </Button>
             </div>
             <div className="grid sm:grid-cols-2 gap-3">
               {Object.keys(CHILD_LABELS).map(f => (
-                <label key={f} className={`text-sm text-gray-600 space-y-1 ${LONG_CHILD.has(f) ? 'sm:col-span-2' : ''}`}>
+                <label key={f} className={`flex flex-col gap-1.5 text-small font-semibold text-ink ${LONG_CHILD.has(f) ? 'sm:col-span-2' : ''}`}>
                   <span>{CHILD_LABELS[f]}</span>
                   {LONG_CHILD.has(f) ? (
-                    <textarea
+                    <Textarea
                       rows={2}
-                      className={input}
+                      className="text-small font-normal"
                       value={(c[f as keyof Child] as string | null) ?? ''}
                       onChange={e => setChild(i, f as keyof Child, e.target.value)}
                     />
                   ) : (
-                    <input
+                    <Input
+                      fieldSize="sm"
                       type={f === 'date_of_birth' ? 'date' : 'text'}
-                      className={input}
+                      className="font-normal"
                       value={(c[f as keyof Child] as string | null) ?? ''}
                       onChange={e => setChild(i, f as keyof Child, e.target.value)}
                     />
@@ -199,40 +200,36 @@ export default function KitPage() {
             </div>
           </div>
         ))}
-      </section>
+        </div>
+      </Section>
 
-      <div className="flex items-center gap-4 sticky bottom-0 bg-white py-3 border-t border-gray-100">
-        <button onClick={save} className="btn-lift bg-navy hover:bg-night text-white font-semibold px-5 py-2.5 rounded-xl">
-          Save
-        </button>
-        {status && <span className="text-sm text-gray-500">{status}</span>}
-        {error && <span className="text-sm text-red-600">{error}</span>}
+      <div className="sticky bottom-0 flex items-center gap-4 border-t border-line bg-bg py-4">
+        <Button onClick={save}>Save</Button>
+        {status && <span className="text-small text-muted">{status}</span>}
+        {error && <span className="text-small text-error">{error}</span>}
       </div>
 
       <SharePanel familyId={family.id} kit={kit} shares={shares} onShares={setShares} />
 
-      <section className="border-t border-gray-100 pt-6 space-y-2">
-        <h2 className="font-semibold text-gray-900">Your data</h2>
+      <Section title="Your data" divided className="space-y-4">
         {family.role === 'owner' && (
-          <p className="text-sm text-gray-600">
+          <Text tone="muted" variant="small">
             Download is one file with everything we hold about your family, including this info kit, so keep it
             somewhere safe. Deleting removes your family profile, calendar, conversations, info kit and every share
             link, permanently.
-          </p>
+          </Text>
         )}
-        <div className="flex flex-wrap gap-4 text-sm">
-          <button onClick={() => signOut().then(() => router.replace('/'))} className="text-gray-600 hover:text-gray-900">
-            Sign out
-          </button>
+        <div className="flex flex-wrap gap-6">
+          <Button variant="quiet" onClick={() => signOut().then(() => router.replace('/'))}>Sign out</Button>
           {family.role === 'owner' && (
             <>
-              <button onClick={download} className="text-brand-600 hover:text-brand-700">Download my family&rsquo;s data</button>
-              <button onClick={eraseEverything} className="text-red-600 hover:text-red-700">Delete everything</button>
+              <Button variant="link" onClick={download}>Download my family&rsquo;s data</Button>
+              <Button variant="danger" onClick={eraseEverything}>Delete everything</Button>
             </>
           )}
         </div>
-      </section>
-    </div>
+      </Section>
+    </Container>
   )
 }
 
@@ -241,18 +238,18 @@ function ContactList({ label, contacts, onChange }: { label: string; contacts: C
     onChange(contacts.map((c, j) => (j === i ? { ...c, [field]: value || null } : c)))
   return (
     <div className="space-y-2">
-      <div className="flex justify-between text-sm">
-        <span className="text-gray-700 font-medium">{label}</span>
-        <button onClick={() => onChange([...contacts, { name: '' }])} className="text-brand-700 font-medium">+ Add</button>
+      <div className="flex items-baseline justify-between">
+        <span className="text-small font-semibold text-ink">{label}</span>
+        <Button variant="link" size="sm" leadingIcon="plus" onClick={() => onChange([...contacts, { name: '' }])}>Add</Button>
       </div>
       {contacts.map((c, i) => (
-        <div key={i} className="grid grid-cols-2 sm:grid-cols-[1fr_1fr_1fr_auto] gap-2">
-          <input className={input} placeholder="Name" value={c.name} onChange={e => update(i, 'name', e.target.value)} />
-          <input className={input} placeholder="Relationship" value={c.relationship ?? ''} onChange={e => update(i, 'relationship', e.target.value)} />
-          <input className={input} placeholder="Phone" value={c.phone ?? ''} onChange={e => update(i, 'phone', e.target.value)} />
-          <button onClick={() => onChange(contacts.filter((_, j) => j !== i))} className="text-sm text-gray-400 hover:text-red-600">
+        <div key={i} className="grid grid-cols-2 gap-2 sm:flex">
+          <Input fieldSize="sm" aria-label="Name" placeholder="Name" value={c.name} onChange={e => update(i, 'name', e.target.value)} />
+          <Input fieldSize="sm" aria-label="Relationship" placeholder="Relationship" value={c.relationship ?? ''} onChange={e => update(i, 'relationship', e.target.value)} />
+          <Input fieldSize="sm" aria-label="Phone" placeholder="Phone" value={c.phone ?? ''} onChange={e => update(i, 'phone', e.target.value)} />
+          <Button variant="quiet" size="sm" onClick={() => onChange(contacts.filter((_, j) => j !== i))} className="justify-self-start">
             Remove
-          </button>
+          </Button>
         </div>
       ))}
     </div>
@@ -297,61 +294,57 @@ function SharePanel({ familyId, kit, shares, onShares }: {
   const savedKids = kit.children.filter(c => c.name.trim())
 
   return (
-    <section className="space-y-4">
-      <h2 className="font-semibold text-gray-900">Share with a camp</h2>
-      <p className="text-sm text-gray-600">
-        Pick the kids and only the fields this camp asks for. They get a private link that expires; you can
-        withdraw it any time and see when it was opened. Save your kit first.
-      </p>
-      <form onSubmit={share} className="bg-white border border-gray-200 rounded-2xl p-4 space-y-4">
-        <input required className={input} placeholder="Who is it for? e.g. Riverside STEM Camp" value={recipient} onChange={e => setRecipient(e.target.value)} />
+    <Section
+      title="Share with a camp"
+      divided
+      description="Pick the kids and only the fields this camp asks for. They get a private link that expires; you can withdraw it any time and see when it was opened. Save your kit first."
+      className="space-y-6"
+    >
+      <form onSubmit={share} className="space-y-5">
+        <Input required aria-label="Who is it for?" placeholder="Who is it for? For example, Riverside STEM Camp" value={recipient} onChange={e => setRecipient(e.target.value)} />
         <Checks label="Kids" options={savedKids.map(c => [c.name, c.name])} chosen={kids} onToggle={v => toggle(kids, setKids, v)} />
         <Checks label="Household" options={Object.entries(HOUSEHOLD_LABELS)} chosen={household} onToggle={v => toggle(household, setHousehold, v)} />
         {kids.length > 0 && (
           <Checks label="For each kid" options={Object.entries(CHILD_LABELS)} chosen={childFields} onToggle={v => toggle(childFields, setChildFields, v)} />
         )}
         <div className="flex flex-wrap items-center gap-3">
-          <select value={days} onChange={e => setDays(Number(e.target.value))} className={`${input} w-auto`}>
+          <Select fieldSize="sm" aria-label="Expires" value={days} onChange={e => setDays(Number(e.target.value))} className="w-auto">
             <option value={7}>Expires in 7 days</option>
             <option value={30}>Expires in 30 days</option>
             <option value={90}>Expires in 90 days</option>
-          </select>
-          <button className="btn-lift bg-navy hover:bg-night text-white font-semibold px-4 py-2 rounded-xl text-sm">
-            Create private link
-          </button>
-          {error && <span className="text-sm text-red-600">{error}</span>}
+          </Select>
+          <Button type="submit">Create private link</Button>
+          {error && <span className="text-small text-error">{error}</span>}
         </div>
         {link && (
-          <div className="bg-brand-50 border border-brand-200 rounded-xl p-3 text-sm space-y-1">
-            <p className="text-brand-700 font-medium">Copy this link now; it's shown only once.</p>
-            <div className="flex gap-2">
-              <input readOnly value={link} className={`${input} bg-white`} onFocus={e => e.target.select()} />
-              <button type="button" onClick={() => navigator.clipboard?.writeText(link)} className="text-brand-700 font-medium px-2">
-                Copy
-              </button>
+          <Notice tone="warn" className="space-y-2">
+            <p className="font-semibold">Copy this link now; it&rsquo;s shown only once.</p>
+            <div className="flex items-center gap-2">
+              <Input fieldSize="sm" readOnly aria-label="Share link" value={link} onFocus={e => e.target.select()} />
+              <Button variant="secondary" size="sm" onClick={() => navigator.clipboard?.writeText(link)}>Copy</Button>
             </div>
-          </div>
+          </Notice>
         )}
       </form>
 
       {shares.length > 0 && (
-        <ul className="space-y-2">
+        <ul className="divide-y divide-line border-y border-line">
           {shares.map(s => (
-            <li key={s.id} className="flex flex-wrap items-center justify-between gap-2 border border-gray-200 rounded-xl px-4 py-3 text-sm">
+            <li key={s.id} className="flex flex-wrap items-center justify-between gap-2 py-3 text-small">
               <div>
-                <p className="font-medium text-gray-900">{s.recipient}</p>
-                <p className="text-gray-500">
+                <p className="font-semibold text-ink">{s.recipient}</p>
+                <p className="text-muted">
                   {s.fields_shared} of {s.fields_total} fields{s.children.length ? ` · ${s.children.join(', ')}` : ''} ·{' '}
                   {s.open_count ? `opened ${s.open_count} time${s.open_count === 1 ? '' : 's'}` : 'not opened yet'} ·{' '}
                   {s.active ? `expires ${new Date(s.expires_at).toLocaleDateString()}` : s.revoked_at ? 'withdrawn' : 'expired'}
                 </p>
               </div>
-              {s.active && <button onClick={() => revoke(s.id)} className="text-red-600 hover:text-red-700">Withdraw</button>}
+              {s.active && <Button variant="danger" onClick={() => revoke(s.id)}>Withdraw</Button>}
             </li>
           ))}
         </ul>
       )}
-    </section>
+    </Section>
   )
 }
 
@@ -361,13 +354,10 @@ function Checks({ label, options, chosen, onToggle }: {
   if (!options.length) return null
   return (
     <fieldset>
-      <legend className="text-sm font-medium text-gray-700 mb-1.5">{label}</legend>
+      <legend className="mb-2 text-small font-semibold text-ink">{label}</legend>
       <div className="flex flex-wrap gap-2">
         {options.map(([value, text]) => (
-          <label key={value} className={`text-sm border rounded-full px-3 py-1 cursor-pointer ${chosen.includes(value) ? 'bg-brand-50 border-brand-300 text-brand-700' : 'border-gray-200 text-gray-600'}`}>
-            <input type="checkbox" className="sr-only" checked={chosen.includes(value)} onChange={() => onToggle(value)} />
-            {text}
-          </label>
+          <ChoiceChip key={value} checked={chosen.includes(value)} onChange={() => onToggle(value)}>{text}</ChoiceChip>
         ))}
       </div>
     </fieldset>

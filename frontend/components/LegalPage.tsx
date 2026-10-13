@@ -1,11 +1,14 @@
+import { Container, Heading } from '@/components/ui'
+
+/** Long-form reading pages (privacy, terms, support): one column at a readable measure. */
 export function LegalPage({ title, updated, children }: { title: string; updated?: string; children: React.ReactNode }) {
   return (
-    <div className="max-w-3xl mx-auto px-4 py-12">
-      <h1 className="text-3xl md:text-4xl font-extrabold text-navy mb-2">{title}</h1>
-      {updated && <p className="text-sm text-gray-500 mb-8">Last updated {updated}</p>}
-      <div className="space-y-4 text-gray-700 leading-relaxed [&_h2]:text-xl [&_h2]:font-semibold [&_h2]:text-gray-900 [&_h2]:mt-8 [&_ul]:list-disc [&_ul]:pl-6 [&_ul]:space-y-1 [&_a]:text-navy [&_a]:font-semibold [&_a]:underline [&_a]:decoration-flashlight [&_a]:decoration-2 [&_a]:underline-offset-2 hover:[&_a]:decoration-navy">
+    <Container size="narrow" className="py-16 sm:py-24">
+      <Heading level="h1" className="mb-3">{title}</Heading>
+      {updated && <p className="mb-10 text-small text-muted">Last updated {updated}</p>}
+      <div className="max-w-measure space-y-4 text-body text-ink [&_a]:font-semibold [&_a]:underline [&_a]:decoration-line [&_a]:underline-offset-4 hover:[&_a]:decoration-ink [&_h2]:mt-12 [&_h2]:font-display [&_h2]:text-h2 [&_ul]:list-disc [&_ul]:space-y-2 [&_ul]:pl-5">
         {children}
       </div>
-    </div>
+    </Container>
   )
 }

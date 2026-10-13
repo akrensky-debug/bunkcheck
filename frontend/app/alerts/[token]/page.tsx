@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import { useParams } from 'next/navigation'
+import { Button, Container, Heading, Meta, Notice, Text, TextLink } from '@/components/ui'
 import { confirmAlert, getAlert, stopAlert, type AlertView } from '@/lib/alerts'
 import { fmtWhen } from '@/lib/booking'
 
@@ -30,10 +31,10 @@ export default function AlertPage() {
 
   if (!view) {
     return (
-      <div className="max-w-xl mx-auto px-4 py-12 space-y-2">
-        <h1 className="text-2xl font-bold text-gray-900">{error ? 'This link no longer works' : 'Loading…'}</h1>
-        {error && <p className="text-gray-600">{error}</p>}
-      </div>
+      <Container size="narrow" className="space-y-3 py-16 sm:py-24">
+        <Heading level="h1">{error ? 'This link no longer works' : 'Loading…'}</Heading>
+        {error && <Text tone="muted">{error}</Text>}
+      </Container>
     )
   }
 
@@ -42,62 +43,60 @@ export default function AlertPage() {
   const opensFuture = view.opens_at && new Date(view.opens_at).getTime() > Date.now()
 
   return (
-    <div className="max-w-xl mx-auto px-4 py-12 space-y-6">
-      <header>
-        <p className="text-sm text-gray-500">Registration alerts · {view.email_hint}</p>
-        <h1 className="text-2xl font-bold text-gray-900">{what}</h1>
+    <Container size="narrow" className="space-y-8 py-16 sm:py-24">
+      <header className="space-y-3">
+        <Meta parts={['Registration alerts', view.email_hint]} />
+        <Heading level="h1">{what}</Heading>
       </header>
 
       {view.status === 'pending' && (
         <div className="space-y-3">
-          <p className="text-gray-600">
+          <p className="text-muted">
             Confirm and we&rsquo;ll email you when the registration date is announced, the day before, and when it opens.
           </p>
-          <button onClick={() => act(confirmAlert)} disabled={busy}
-            className="w-full btn-lift bg-navy hover:bg-night text-white font-semibold rounded-xl py-3 disabled:opacity-50">
+          <Button onClick={() => act(confirmAlert)} disabled={busy} size="lg">
             {busy ? 'Saving…' : 'Confirm alerts'}
-          </button>
+          </Button>
         </div>
       )}
 
       {view.status === 'on' && (
         <div className="space-y-3">
-          <p className="text-sm bg-green-50 border border-green-200 text-green-800 rounded-xl px-4 py-3">
+          <Notice tone="success">
             Alerts are on. {opensFuture
               ? <>Registration opens <strong>{fmtWhen(view.opens_at!)}</strong>.</>
               : view.opens_at ? <>Registration has opened.</> : <>We&rsquo;ll email you as soon as the camp announces the date.</>}
-          </p>
-          <div className="flex flex-wrap gap-3 text-sm">
+          </Notice>
+          <div className="flex flex-wrap gap-x-6 gap-y-2 text-small">
             {view.registration_url && (
-              <a href={view.registration_url} target="_blank" rel="noopener noreferrer"
-                className="text-brand-600 underline">Camp&rsquo;s registration page ↗</a>
+              <TextLink href={view.registration_url} external>Camp&rsquo;s registration page</TextLink>
             )}
-            <a href={`/register/${view.camp_id}`} className="text-brand-600 underline">Get your forms ready</a>
-            <a href={campPage} className="text-brand-600 underline">Camp page</a>
+            <TextLink href={`/register/${view.camp_id}`}>Get your forms ready</TextLink>
+            <TextLink href={campPage}>Camp page</TextLink>
           </div>
-          <div className="pt-4 border-t border-gray-100">
-            <button onClick={() => act(stopAlert)} disabled={busy} className="text-sm text-gray-500 hover:text-red-600">
+          <div className="border-t border-line pt-6">
+            <Button variant="quiet" onClick={() => act(stopAlert)} disabled={busy}>
               Stop alerts for {view.camp_name}
-            </button>
+            </Button>
           </div>
         </div>
       )}
 
       {view.status === 'stopped' && (
-        <p className="text-gray-600">
+        <p className="text-muted">
           Alerts for {view.camp_name} are stopped. We won&rsquo;t email this address about it again. Changed your
-          mind? <a href={campPage} className="text-brand-600 underline">Sign up again on the camp&rsquo;s page</a>.
+          mind? <TextLink href={campPage}>Sign up again on the camp&rsquo;s page</TextLink>.
         </p>
       )}
 
       {view.status === 'expired' && (
-        <p className="text-gray-600">
+        <p className="text-muted">
           This confirm link has expired, so no alerts were set up.{' '}
-          <a href={campPage} className="text-brand-600 underline">Sign up again on the camp&rsquo;s page</a>.
+          <TextLink href={campPage}>Sign up again on the camp&rsquo;s page</TextLink>.
         </p>
       )}
 
-      {error && <p className="text-sm text-red-600">{error}</p>}
-    </div>
+      {error && <p className="text-small text-error">{error}</p>}
+    </Container>
   )
 }
