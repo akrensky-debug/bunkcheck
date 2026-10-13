@@ -1,0 +1,84 @@
+{
+  "slug": "lexington-summer-sports-clinics-and-classes-lexington",
+  "name": "Lexington Summer Sports Clinics and Classes",
+  "operator_name": "Lexington Recreation & Community Programs Department",
+  "website_url": "https://www.lexingtonma.gov/2504/Summer-Sports-Clinics-and-Classes",
+  "registration_url": "https://lexrecma.myrec.com/info/activities/program_details.aspx?ProgramID=30942",
+  "phone": "781-698-4800",
+  "city": "Lexington",
+  "state": "MA",
+  "zip": null,
+  "camp_type": "specialty",
+  "primary_categories": [
+    "sports"
+  ],
+  "description_short": "Town-run summer sports clinics in Lexington, MA, open to all ability levels. They include the Minuteman Sports Clinics (badminton, basketball, flag football, golf, multi-sports, track, volleyball), the Blue Sox Baseball Camp, a Youth Summer Tennis Clinic for ages 7-13, and weekly USTA Tennis in the Parks lessons.",
+  "activities": [
+    "Badminton",
+    "Basketball",
+    "Flag football",
+    "Golf",
+    "Multi-sports",
+    "Track",
+    "Volleyball",
+    "Baseball",
+    "Tennis"
+  ],
+  "sources": [
+    {
+      "url": "https://www.lexingtonma.gov/2504/Summer-Sports-Clinics-and-Classes",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "description_short"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.lexingtonma.gov/2504/Summer-Sports-Clinics-and-Classes",
+      "kind": "html",
+      "title": "Summer Sports Clinics and Classes | Lexington, MAArrow LeftArrow RightSlideshow Left ArrowSlideshow Right Arrow"
+    },
+    "warnings": [
+      "This page gives an overview of several separate town recreation programs, not a single camp. Dates, prices and ages are on the individual registration pages on lexrecma.myrec.com.",
+      "No season year, dates or prices appear on the page, so it may describe a past summer (2026 or earlier). Season year left blank.",
+      "Each program focuses on one sport, so camp_type is set to 'specialty'. These are almost certainly day programs, but the page does not say so.",
+      "The phone number (781-698-4800) and the 39 Marrett Road address belong to the Recreation Department office, not necessarily the program locations."
+    ],
+    "unknowns": [
+      "Season year and session dates (none given on the page)",
+      "Prices and fees for each clinic",
+      "Age or grade ranges for the Minuteman Sports Clinics, Blue Sox Baseball Camp and USTA lessons (only the Tennis Clinic gives ages: 7-13)",
+      "Daily hours and whether before- or after-care is offered",
+      "Where most clinics are held (only the tennis programs list a location: Gallagher Tennis Courts, Center Recreation Complex, Worthen Road)",
+      "Registration opening date",
+      "Refund policy",
+      "Financial aid",
+      "Contact email",
+      "Whether spots are still open"
+    ],
+    "low_confidence": [
+      {
+        "field": "camp_type",
+        "confidence": 0.6,
+        "quote": "offers a wide variety of summer sports camps and clinics"
+      }
+    ],
+    "errors": [
+      "missing required zip",
+      "missing required season_year"
+    ]
+  }
+}

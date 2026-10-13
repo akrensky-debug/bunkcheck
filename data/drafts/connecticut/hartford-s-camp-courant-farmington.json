@@ -1,0 +1,100 @@
+{
+  "slug": "hartford-s-camp-courant-farmington",
+  "name": "Hartford's Camp Courant",
+  "operator_name": "Camp Courant, Inc.",
+  "website_url": "https://campcourant.org",
+  "registration_url": "https://campcourant.org/parents/camp-registration-information/",
+  "phone": "860-677-2355",
+  "street_address": "96 Batterson Park Road",
+  "city": "Farmington",
+  "state": "CT",
+  "zip": "06032",
+  "camp_type": "day",
+  "description_short": "A free summer day camp for Hartford children with recreational and educational activities. It includes bus transportation from Hartford, free breakfast and lunch, a full-time nurse and free dental screenings.",
+  "activities": [
+    "Swimming",
+    "Dental screenings and dental education"
+  ],
+  "price_per_week": 0,
+  "price_min": 0,
+  "price_max": 0,
+  "transportation": true,
+  "meals_included": true,
+  "special_needs_notes": "A full-time nurse is on staff. In an emergency, campers go to the UConn Health Center, two minutes away.",
+  "swim_waterfront_notes": "Campers should bring a bathing suit and towel. Camp provides them if a camper has none. The camp publishes an Aquatics Safety Guide, but this page does not show its contents.",
+  "season_year": 2026,
+  "price_per": "week",
+  "sessions": [
+    {
+      "name": "Summer 2026 program",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-31",
+      "price": 0,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://campcourant.org/parents/camp-info/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "activities",
+        "description_short",
+        "price_min",
+        "price_max",
+        "price_per_week",
+        "price_per",
+        "transportation",
+        "meals_included",
+        "special_needs_notes",
+        "swim_waterfront_notes",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://campcourant.org/parents/camp-info/",
+      "kind": "html",
+      "title": "Camp Info - Camp Courant"
+    },
+    "warnings": [
+      "The page shows the 2026 season (June 29 – July 31, 2026), which has already passed. No 2027 dates are listed.",
+      "The page mentions more than one program that each need separate registration, but it describes only one summer date range.",
+      "There is no drop-off at the campsite. Campers must ride the bus from their assigned stop and cannot attend if they miss it.",
+      "The site footer says © 2021-2023, so parts of the page may be out of date."
+    ],
+    "unknowns": [
+      "Eligible ages or grades",
+      "Dates for the 2027 season and when registration opens",
+      "Whether the summer is split into separate programs or sessions, and their dates (the page says to register for each program individually)",
+      "Whether campers must live in Hartford",
+      "Extended care (the day runs 8:30am–3:30pm with bus-only drop-off and pickup)",
+      "Whether the camp is ACA accredited",
+      "Specific activities and program categories",
+      "Bus stop locations and times",
+      "Availability and waitlist status",
+      "Contact email"
+    ],
+    "low_confidence": [
+      {
+        "field": "activities",
+        "confidence": 0.6,
+        "quote": "bring a bathing suit and towel"
+      }
+    ],
+    "errors": []
+  }
+}

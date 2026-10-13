@@ -1,0 +1,94 @@
+{
+  "slug": "camp-badakookala-fairfield",
+  "name": "Camp Badakookala",
+  "operator_name": "Central Connecticut Coast YMCA (Fairfield YMCA branch)",
+  "website_url": "https://www.fairfieldy.org",
+  "email": "campbada@cccymca.org",
+  "phone": "203-255-2834",
+  "city": "Fairfield",
+  "state": "CT",
+  "zip": null,
+  "camp_type": "day",
+  "grade_min": 0,
+  "description_short": "A YMCA summer day camp run by the Fairfield YMCA for children from kindergarten up. Camp runs 9:00am to 3:00pm, and before-care (7:15–9:00am) and after-care (3:00–6:00pm) can be booked by the week.",
+  "activities": [
+    "Swimming"
+  ],
+  "financial_aid": true,
+  "extended_care": true,
+  "refund_policy_summary": "Fees are due in full on the Monday two weeks before the session starts. Deposits and registration fees are non-refundable and non-transferable. Refund requests must be made in writing on a Refund Request Form. No refunds are given less than 2 weeks before a session starts, except for medical emergencies with a doctor's note. Every refund has a $10 administration fee. No refunds for suspensions or expulsions.",
+  "special_needs_notes": "Children of all abilities are welcome. Contact the Camp Director ahead of time to talk about your child's needs. An Individual Plan of Care for a Child is required. It is preferred at registration and due no later than two weeks before the session starts.",
+  "swim_waterfront_notes": "Swim instructors are lifeguard certified (this is a general statement for all CCCY camps). Campers bring a labeled towel and swimsuit every day. A Transportation/Swimming Permission Slip is required.",
+  "season_year": 2026,
+  "sources": [
+    {
+      "url": "https://cccymca.org/wp-content/uploads/2026-Fairfield-YMCA-Day-Camp-Parent-Handbook-Camp-Badakookala.pdf",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "phone",
+        "city",
+        "state",
+        "camp_type",
+        "activities",
+        "grade_min",
+        "description_short",
+        "extended_care",
+        "financial_aid",
+        "refund_policy_summary",
+        "special_needs_notes",
+        "swim_waterfront_notes"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://cccymca.org/wp-content/uploads/2026-Fairfield-YMCA-Day-Camp-Parent-Handbook-Camp-Badakookala.pdf",
+      "kind": "pdf",
+      "title": null
+    },
+    "warnings": [
+      "This is the 2026 parent handbook, and the 2026 season is over (today is 2026-10-13). No 2027 information is given.",
+      "The source is a parent handbook covering policies only. It lists no prices, session dates or activity schedule.",
+      "Most of the handbook is shared text for all Central Connecticut Coast YMCA day camps (for example the swim, archery and bus details), so some of it may not apply to Camp Badakookala.",
+      "The PDF still has template placeholder text ('USE THIS PIC OR INSERT ONE FROM YOUR PROGRAM')."
+    ],
+    "unknowns": [
+      "2027 season dates and weekly sessions",
+      "Prices (weekly rate, member vs. non-member rates, deposit and registration fee amounts)",
+      "Pre-care and post-care prices",
+      "Exact age range and top grade (only the K–1 'Greenhorn' group is defined by grade; the Explorers, Pioneers and Adventurers groups are not)",
+      "Street address and zip code of the camp site",
+      "Whether lunch is provided (the handbook says only that 'some' camps offer a food program)",
+      "Whether bus transportation is offered for this camp",
+      "Full list of activities",
+      "Registration open date and registration URL",
+      "ACA accreditation"
+    ],
+    "low_confidence": [
+      {
+        "field": "deposit_required",
+        "confidence": 0.6,
+        "quote": "Deposit fees and registration fees are non-refundable and non-transferrable."
+      },
+      {
+        "field": "activities",
+        "confidence": 0.6,
+        "quote": "Backpack with towel and one-piece bathing suit labeled with your child's name"
+      },
+      {
+        "field": "swim_waterfront_notes",
+        "confidence": 0.7,
+        "quote": "Our swim instructors are lifeguard certified"
+      }
+    ],
+    "errors": [
+      "missing required zip"
+    ]
+  }
+}

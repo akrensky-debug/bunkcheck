@@ -1,0 +1,81 @@
+{
+  "slug": "north-river-nature-camp-marshfield",
+  "name": "North River Nature Camp",
+  "operator_name": "Mass Audubon",
+  "website_url": "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/north-river/camp",
+  "city": "Marshfield",
+  "state": "MA",
+  "zip": null,
+  "camp_type": "day",
+  "primary_categories": [
+    "nature"
+  ],
+  "age_max": 14,
+  "description_short": "A Mass Audubon nature camp at the 225-acre North River Wildlife Sanctuary in Marshfield for children ages 4.5–14. Campers explore the natural world through outdoor play and discovery.",
+  "activities": [
+    "outdoor play",
+    "nature exploration",
+    "projects"
+  ],
+  "financial_aid": true,
+  "season_year": 2027,
+  "sources": [
+    {
+      "url": "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/north-river/camp",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "age_max",
+        "description_short",
+        "financial_aid"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/north-river/camp",
+      "kind": "html",
+      "title": "North River Nature Camp"
+    },
+    "warnings": [
+      "2027 registration is not open yet ('Coming Soon'), and the page lists no dates, sessions or prices.",
+      "The page says the minimum age is 4.5, which doesn't fit the whole-number field, so age_min was left blank.",
+      "The only phone number and address on the page are for Mass Audubon headquarters in Lincoln, MA, not the camp, so they were not recorded.",
+      "Programs and pricing, policies and the sliding scale details are on linked pages that were not provided."
+    ],
+    "unknowns": [
+      "2027 session dates and weekly schedule",
+      "2027 prices (sliding scale tuition amounts)",
+      "Registration opening date and registration URL",
+      "Minimum age as a whole number (page says 4.5)",
+      "Whether it is day-only (not stated directly; a parent quote suggests campers go home each day)",
+      "Daily hours and extended care",
+      "Camp street address, phone and email (only Mass Audubon headquarters contact is shown)",
+      "Deposit amount and refund policy (on a separate Camp Policies page)",
+      "Transportation",
+      "Meals",
+      "ACA accreditation",
+      "Swim/waterfront activities",
+      "Accommodations for special needs (on a separate Goals, Inclusion & Expectations page)"
+    ],
+    "low_confidence": [
+      {
+        "field": "camp_type",
+        "confidence": 0.65,
+        "quote": "comes home excited to play in the woods"
+      }
+    ],
+    "errors": [
+      "missing required zip"
+    ]
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "slug": "madison-youth-and-family-services-summer-groups-social-skills-camp-summer-art-gr",
+  "name": "Madison Youth & Family Services Summer Groups (Social Skills Camp, Summer Art Group, Walk and Talk)",
+  "operator_name": "Town of Madison Youth & Family Services",
+  "website_url": "https://www.madisonct.org/1374/Summer-Camp",
+  "phone": "203-245-5645",
+  "city": "Madison",
+  "state": "CT",
+  "zip": null,
+  "camp_type": "specialty",
+  "primary_categories": [
+    "arts"
+  ],
+  "grade_max": 8,
+  "description_short": "Short summer groups run by Madison's Youth & Family Services clinical staff. They include an afternoon social skills camp for elementary students, an expressive arts therapy group for ages 8-11, and an outdoor walk-and-talk group at Hammonasset Beach State Park for grades 6-8.",
+  "activities": [
+    "Social skills group",
+    "Expressive arts therapy",
+    "Painting",
+    "Drawing",
+    "Music",
+    "Acting",
+    "Outdoor walking"
+  ],
+  "meals_included": false,
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Social Skills Group Summer Camp (elementary school students), Mon-Thu 12:30-2:00PM",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-16",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Summer Art Group (Expressive Arts Therapy), July 8, 15, 22, 29 and August 8, 3:00-4:30PM",
+      "start_date": "2026-07-08",
+      "end_date": "2026-08-08",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Walk and Talk (grades 6-8), Hammonasset Beach State Park, July 9, 16, 23, 30 and August 8, 3:00-4:00PM",
+      "start_date": "2026-07-09",
+      "end_date": "2026-08-08",
+      "price": null,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.madisonct.org/1374/Summer-Camp",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "phone",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "grade_max",
+        "description_short",
+        "meals_included",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.madisonct.org/1374/Summer-Camp",
+      "kind": "html",
+      "title": "Summer Camp | Madison, CTArrow LeftArrow RightSlideshow Left ArrowSlideshow Right Arrow"
+    },
+    "warnings": [
+      "The page shows no year. The weekdays match the 2026 calendar (July 6, 2026 is a Monday and July 9, 2026 is a Thursday), so season_year is set to 2026 as an inference. If that's right, this season has already ended as of 2026-10-13, and no 2027 information is posted.",
+      "The dates don't all add up: August 8 is listed as one of the 'Thursdays' for Walk and Talk, but August 8, 2026 is a Saturday. The Art Group dates also fall on different weekdays.",
+      "These are short clinical or therapeutic groups (1-1.5 hours a day) run by the town's Youth & Family Services clinical department. They are not a traditional full-day camp.",
+      "The page belongs to the Town of Madison government website. The address and email in the footer (8 Campus Drive, info@madisonct.org) are for the town in general, not for the program, so they were not recorded as the camp's address."
+    ],
+    "unknowns": [
+      "Price or fees for each group",
+      "Season year: no year is stated on the page",
+      "Dates for the 2027 season",
+      "Exact grade range for the Social Skills camp ('elementary school students')",
+      "Where the Social Skills camp and Art Group meet",
+      "Number of spots and whether groups are full",
+      "Registration opening date",
+      "Refund policy",
+      "Financial aid",
+      "Whether the program is ACA accredited"
+    ],
+    "low_confidence": [
+      {
+        "field": "season_year",
+        "confidence": 0.5,
+        "quote": "Monday-Thursday each week from July 6-16"
+      },
+      {
+        "field": "sessions[0].start_date",
+        "confidence": 0.5,
+        "quote": "Social Skills Group Summer Camp will be held Monday-Thursday each week from July 6-16 from 12:30-2:00PM"
+      },
+      {
+        "field": "sessions[1].start_date",
+        "confidence": 0.5,
+        "quote": "The Summer Art Group will run on July 8, 15, 22, 29 and August 8 from 3:00-4:30PM."
+      },
+      {
+        "field": "sessions[2].start_date",
+        "confidence": 0.5,
+        "quote": "on the following Thursdays from 3:00-4:00PM at Hammonasset Beach State Park: July 9, 16, 23, 30 and August 8."
+      },
+      {
+        "field": "camp_type",
+        "confidence": 0.7,
+        "quote": "participate in our Expressive Arts Therapy group"
+      },
+      {
+        "field": "primary_categories",
+        "confidence": 0.7,
+        "quote": "Do they enjoy painting, drawing, listening to music, acting"
+      }
+    ],
+    "errors": [
+      "missing required zip"
+    ]
+  }
+}
