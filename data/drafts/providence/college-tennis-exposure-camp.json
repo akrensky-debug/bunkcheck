@@ -1,0 +1,86 @@
+{
+  "slug": "college-tennis-exposure-camp",
+  "name": "College Tennis Exposure Camp",
+  "operator_name": "College Tennis Exposure Camp",
+  "website_url": "https://collegetennis.com/",
+  "registration_url": "https://collegetennis.com/usta-national-campus/",
+  "phone": "(813) 684-9031",
+  "city": null,
+  "state": null,
+  "zip": null,
+  "camp_type": "specialty",
+  "primary_categories": [
+    "sports"
+  ],
+  "description_short": "A two-day tennis camp for junior players, led by head college coaches and held at college and national tennis facilities. It is aimed at players who want to play college tennis.",
+  "activities": [
+    "Tennis"
+  ],
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "USTA National Campus (Lake Nona, FL)",
+      "start_date": "2026-11-14",
+      "end_date": "2026-11-15",
+      "price": null,
+      "availability": "open"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://collegetennis.com/locations/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "description_short",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://collegetennis.com/locations/",
+      "kind": "html",
+      "title": "Locations - College Tennis Exposure Camp"
+    },
+    "warnings": [
+      "This is a hub page that lists several locations. Prices, ages and details are on each location's own page, not here.",
+      "The only dated session is the off-season USTA National Campus camp on Nov 14–15, 2026. Summer 2027 is not announced yet, and there is only a waitlist.",
+      "The MIT, Lehigh and Brown locations are listed without dates. They may be past summer 2026 sessions.",
+      "The listed email 'info@email.com' looks like a placeholder, so it was not recorded.",
+      "The PO Box 456, Brandon, FL 33509 address is a mailing address, not a camp site, so no location address was recorded."
+    ],
+    "unknowns": [
+      "Price/tuition for the Nov 14–15, 2026 session (the page says tuition is on each location's page)",
+      "Age or grade range of eligible players",
+      "Whether the camp is day-only or includes overnight housing",
+      "Whether meals are included",
+      "Summer 2027 dates, locations and prices (not yet announced)",
+      "Dates for the MIT (Cambridge, MA), Lehigh (Bethlehem, PA) and Brown (Providence, RI) locations",
+      "Real contact email address",
+      "Refund/cancellation policy (on a separate Registration Details page)",
+      "Deposit, financial aid, transportation, ACA accreditation"
+    ],
+    "low_confidence": [
+      {
+        "field": "sessions[0].availability",
+        "confidence": 0.7,
+        "quote": "Nov. 14–15 USTA National Campus: Register Now"
+      }
+    ],
+    "errors": [
+      "missing required city",
+      "missing required state",
+      "missing required zip"
+    ]
+  }
+}

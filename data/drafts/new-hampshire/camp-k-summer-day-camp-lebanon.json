@@ -9,7 +9,7 @@
   "street_address": "Lebanon Middle School, 3 Moulton Avenue",
   "city": "Lebanon",
   "state": "NH",
-  "zip": null,
+  "zip": "03766",
   "camp_type": "day",
   "primary_categories": [
     "sports",
@@ -138,6 +138,14 @@
         "sessions"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=Lebanon+Middle+School%2C+3+Moulton+Avenue&city=Lebanon&state=NH&benchmark=Public_AR_Current&format=json",
+      "checked": "2026-10-13",
+      "fields": [
+        "zip"
+      ],
+      "note": "ZIP from the US Census geocoder for 3 MOULTON AVE, LEBANON, NH, 03766"
     }
   ],
   "review": {
@@ -148,6 +156,7 @@
       "title": "Camp K - Summer Day Camp | Lebanon, NHArrow LeftArrow RightSlideshow Left ArrowSlideshow Right Arrow"
     },
     "warnings": [
+      "Filled zip 03766 from the US Census geocoder (3 MOULTON AVE, LEBANON, NH, 03766)",
       "The page shows the 2026 season (June 29 – August 7, 2026), which has already ended as of 2026-10-13. No 2027 dates or prices are posted yet.",
       "Conflicting registration dates: the Quick Facts list resident registration on March 1, 2027 and non-resident on March 15, 2027, next to 2026 camp dates. Camp K Hits the Road shows March 2 and March 16, 2026. The page looks partly updated, so registration_opens_at was left blank for the weekly sessions.",
       "The page does not list individual weeks. The six weekly sessions were worked out from the overall June 29 – August 7, 2026 date range and the weekly rate. They may not account for holidays (for example, July 3, 2026).",
@@ -225,8 +234,6 @@
         "quote": "Registration opens March 2, 2026 (residents)"
       }
     ],
-    "errors": [
-      "missing required zip"
-    ]
+    "errors": []
   }
 }

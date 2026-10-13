@@ -8,16 +8,17 @@ Nothing here is on the site until it is promoted and imported.
 
 | Camp | Town | Sessions | Errors | Unsure | Warnings | Status |
 |---|---|---|---|---|---|---|
+| [Agassiz Village Summer Camp](agassiz-village-summer-camp-poland.json) | Poland | 3 | 0 | 4 | 4 | unchecked |
 | [Alford Lake Camp](alford-lake-camp-hope.json) | Hope | 3 | 0 | 2 | 3 | unchecked |
 | [Bangor Region YMCA Summer Camps](bangor-region-ymca-summer-camps-bangor.json) | Bangor | 0 | 3 | 1 | 4 | unchecked |
 | [Birch Rock Camp](birch-rock-camp-waterford.json) | Waterford | 8 | 0 | 2 | 5 | unchecked |
 | [Blueberry Cove Sailing Camps](blueberry-cove-sailing-camps.json) | ? | 3 | 3 | 1 | 4 | unchecked |
 | [Boys & Girls Clubs of Southern Maine Summer Program](boys-and-girls-clubs-of-southern-maine-summer-program-portland.json) | Portland | 0 | 2 | 5 | 5 | unchecked |
-| [Bridgton Sports Camp](bridgton-sports-camp-north-bridgton.json) | North Bridgton | 2 | 1 | 1 | 4 | unchecked |
+| [Bridgton Sports Camp](bridgton-sports-camp-north-bridgton.json) | North Bridgton | 2 | 0 | 1 | 4 | unchecked |
 | [Brunswick Parks & Recreation Summer Programs](brunswick-parks-and-recreation-summer-programs-brunswick.json) | Brunswick | 0 | 4 | 3 | 5 | unchecked |
 | [Camp Agawam](camp-agawam-raymond.json) | Raymond | 6 | 0 | 4 | 4 | unchecked |
 | [Camp Androscoggin](camp-androscoggin.json) | ? | 2 | 3 | 0 | 4 | unchecked |
-| [Camp Arcadia](camp-arcadia-otisfield.json) | Otisfield | 6 | 1 | 1 | 4 | unchecked |
+| [Camp Arcadia](camp-arcadia-otisfield.json) | Otisfield | 6 | 0 | 1 | 4 | unchecked |
 | [Camp Beech Cliff](camp-beech-cliff-mount-desert.json) | Mount Desert | 10 | 0 | 2 | 4 | unchecked |
 | [Camp Bishopswood](camp-bishopswood-hope.json) | Hope | 16 | 0 | 14 | 6 | unchecked |
 | [Camp CaPella – Weekly Overnight Camp](camp-capella-weekly-overnight-camp-dedham.json) | Dedham | 0 | 0 | 4 | 4 | unchecked |
@@ -25,27 +26,31 @@ Nothing here is on the site until it is promoted and imported.
 | [Camp Cedar](camp-cedar-casco.json) | Casco | 3 | 0 | 0 | 4 | unchecked |
 | [Camp Cobbossee](camp-cobbossee-monmouth.json) | Monmouth | 4 | 0 | 1 | 4 | unchecked |
 | [Camp Fernwood](camp-fernwood.json) | ? | 1 | 3 | 0 | 3 | unchecked |
+| [Camp Kawanhee](camp-kawanhee-weld.json) | Weld | 7 | 0 | 1 | 6 | unchecked |
 | [Camp Kippewa](camp-kippewa.json) | ? | 9 | 3 | 1 | 4 | unchecked |
 | [Camp KV](camp-kv-readfield.json) | Readfield | 12 | 1 | 10 | 5 | unchecked |
-| [Camp Laughing Loon](camp-laughing-loon-east-waterboro.json) | East Waterboro | 0 | 2 | 0 | 4 | unchecked |
+| [Camp Laughing Loon](camp-laughing-loon-east-waterboro.json) | East Waterboro | 0 | 1 | 0 | 4 | unchecked |
 | [Camp Laurel](camp-laurel-readfield.json) | Readfield | 1 | 0 | 3 | 5 | unchecked |
 | [Camp Manitou](camp-manitou.json) | ? | 0 | 4 | 3 | 5 | unchecked |
 | [Camp Matoaka](camp-matoaka-smithfield.json) | Smithfield | 3 | 0 | 1 | 3 | unchecked |
 | [Camp Mechuwana](camp-mechuwana-winthrop.json) | Winthrop | 0 | 3 | 0 | 5 | unchecked |
+| [Camp Med-O-Lark](camp-med-o-lark-washington.json) | Washington | 10 | 0 | 2 | 4 | unchecked |
 | [Camp Modin](camp-modin-belgrade.json) | Belgrade | 3 | 1 | 3 | 6 | unchecked |
-| [Camp North Star](camp-north-star-poland-spring.json) | Poland Spring | 10 | 1 | 3 | 4 | unchecked |
+| [Camp North Star](camp-north-star-poland-spring.json) | Poland Spring | 10 | 0 | 3 | 4 | unchecked |
 | [Camp Pinecliffe for Girls](camp-pinecliffe-for-girls-harrison.json) | Harrison | 1 | 0 | 1 | 5 | unchecked |
 | [Camp Takajo](camp-takajo.json) | ? | 0 | 4 | 4 | 5 | unchecked |
 | [Camp Tapawingo](camp-tapawingo-sweden.json) | Sweden | 5 | 0 | 0 | 3 | unchecked |
+| [Camp Timanous](camp-timanous-raymond.json) | Raymond | 3 | 0 | 2 | 8 | unchecked |
 | [Camp Vega](camp-vega-fayette.json) | Fayette | 1 | 0 | 0 | 4 | unchecked |
 | [Camp Walden](camp-walden-denmark.json) | Denmark | 1 | 0 | 1 | 4 | unchecked |
 | [Camp Wawenock](camp-wawenock-raymond.json) | Raymond | 5 | 0 | 0 | 4 | unchecked |
 | [Camp Wekeela](camp-wekeela-hartford.json) | Hartford | 13 | 0 | 3 | 6 | unchecked |
+| [Camp Wigwam](camp-wigwam-waterford.json) | Waterford | 5 | 0 | 2 | 5 | unchecked |
 | [Camp Wildwood](camp-wildwood-bridgton.json) | Bridgton | 1 | 1 | 0 | 4 | unchecked |
 | [Camp Winnebago](camp-winnebago-fayette.json) | Fayette | 3 | 0 | 1 | 2 | unchecked |
 | [Camps Newfound Owatonna](camps-newfound-owatonna-harrison.json) | Harrison | 5 | 0 | 2 | 4 | unchecked |
 | [Center Day Camp](center-day-camp-windham.json) | Windham | 0 | 0 | 1 | 5 | unchecked |
-| [Friends School of Portland Summer Camp](friends-school-of-portland-summer-camp-cumberland-foreside.json) | Cumberland Foreside | 9 | 1 | 17 | 4 | unchecked |
+| [Friends School of Portland Summer Camp](friends-school-of-portland-summer-camp-cumberland-foreside.json) | Cumberland Foreside | 9 | 0 | 17 | 4 | unchecked |
 | [Future Stars Multi-Sport Camp at University of Southern Maine](future-stars-multi-sport-camp-at-university-of-southern-maine-portland.json) | Portland | 0 | 0 | 2 | 4 | unchecked |
 | [Girl Scouts of Maine Overnight Camps (Camp Natarswi & Camp Pondicherry)](girl-scouts-of-maine-overnight-camps-camp-natarswi-and-camp-pondicherry.json) | ? | 58 | 3 | 0 | 9 | unchecked |
 | [Hidden Valley Camp](hidden-valley-camp-freedom.json) | Freedom | 13 | 0 | 5 | 5 | unchecked |
@@ -60,12 +65,14 @@ Nothing here is on the site until it is promoted and imported.
 | [Maineiax Lacrosse Boys & Girls Summer Camps](maineiax-lacrosse-boys-and-girls-summer-camps.json) | ? | 5 | 3 | 0 | 3 | unchecked |
 | [MCEC Summer Camps (University of Maine)](mcec-summer-camps-university-of-maine-orono.json) | Orono | 15 | 2 | 10 | 7 | unchecked |
 | [New England Music Camp](new-england-music-camp-sidney.json) | Sidney | 3 | 0 | 1 | 5 | unchecked |
+| [Pine Island Camp](pine-island-camp-belgrade.json) | Belgrade | 1 | 0 | 0 | 5 | unchecked |
 | [Pine Tree Camp](pine-tree-camp-rome.json) | Rome | 2 | 0 | 2 | 5 | unchecked |
 | [Portland Stage Summer Theater Camps](portland-stage-summer-theater-camps-portland.json) | Portland | 15 | 0 | 6 | 5 | unchecked |
-| [Robin Hood Camp](robin-hood-camp-brooksville.json) | Brooksville | 3 | 1 | 10 | 7 | unchecked |
+| [Robin Hood Camp](robin-hood-camp-brooksville.json) | Brooksville | 3 | 0 | 10 | 7 | unchecked |
 | [Sail Kids For Free (SKFF)](sail-kids-for-free-skff-rockland.json) | Rockland | 10 | 0 | 1 | 5 | unchecked |
 | [SailMaine Youth Summer Programs](sailmaine-youth-summer-programs-portland.json) | Portland | 16 | 0 | 2 | 5 | unchecked |
 | [Scarborough Summer Day Camp](scarborough-summer-day-camp-scarborough.json) | Scarborough | 2 | 0 | 5 | 6 | unchecked |
+| [Seacoast United Youth Soccer Camps](seacoast-united-youth-soccer-camps.json) | ? | 0 | 4 | 1 | 5 | unchecked |
 | [Slovenski Camps](slovenski-camps-raymond.json) | Raymond | 38 | 0 | 2 | 7 | unchecked |
 | [Summer Day Camp (Grades 1-5)](summer-day-camp-grades-1-5-bath.json) | Bath | 0 | 0 | 2 | 4 | unchecked |
 | [Summer Rec Camp](summer-rec-camp-south-portland.json) | South Portland | 0 | 2 | 2 | 5 | unchecked |
@@ -119,3 +126,4 @@ These hosts refused the fetcher. That is the answer: ask the camp to send its br
 - Camp Skylemar: https://newsite.campskylemar.com/about-camp/enrollment/ (fetch: Host is not a public address)
 - Summer Camp Venture: https://www.portlandmaine.gov/1145/Summer-Camp-Venture (fetch: https://www.portlandmaine.gov/1145/Summer-Camp-Venture could not be reached (ConnectError); try again later)
 - Camp Ketcha Summer Day Camp: https://campketcha.org/registration (fetch: https://campketcha.org/registration could not be reached (ConnectError); try again later)
+- Kennebunk Summer Day Camp: https://www.kennebunkmaine.us/DocumentCenter/View/20630/SUMMER-2026-CATALOG- (fetch: https://www.kennebunkmaine.us/DocumentCenter/View/20630/SUMMER-2026-CATALOG- could not be reached (ConnectError); try again later)

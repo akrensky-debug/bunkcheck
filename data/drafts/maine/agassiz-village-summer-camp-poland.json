@@ -1,0 +1,112 @@
+{
+  "slug": "agassiz-village-summer-camp-poland",
+  "name": "Agassiz Village Summer Camp",
+  "operator_name": "Agassiz Village",
+  "website_url": "https://www.agassizvillage.org/summercamp",
+  "registration_url": "https://agassizvillage.campbrainregistration.com",
+  "phone": "781-860-0200",
+  "street_address": "71 Agassiz Village Road",
+  "city": "Poland",
+  "state": "ME",
+  "zip": "04274",
+  "camp_type": "sleepaway",
+  "description_short": "Agassiz Village is a nonprofit youth development organization. It runs a summer camp in Poland, Maine, for children from underserved communities, and the camp's 2026 sessions ran Sunday to Thursday over about two weeks.",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Session 1",
+      "start_date": "2026-06-28",
+      "end_date": "2026-07-09",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 2",
+      "start_date": "2026-07-12",
+      "end_date": "2026-07-23",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 3",
+      "start_date": "2026-07-26",
+      "end_date": "2026-08-06",
+      "price": null,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.agassizvillage.org/summercamp",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "description_short",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.agassizvillage.org/summercamp",
+      "kind": "html",
+      "title": "Summer Camp | Agassiz Village"
+    },
+    "warnings": [
+      "The page only shows 2026 session dates, and all of them are in the past (today is 2026-10-13). The 2027 dates have not been posted.",
+      "The camp type 'sleepaway' is inferred from the Sunday-to-Thursday sessions of about two weeks at a Maine campus. The page does not say outright that campers stay overnight.",
+      "The phone number 781-860-0200 belongs to the year-round office in Framingham, MA, not the camp location.",
+      "The page also includes unrelated donation and tax text, including CARES Act information that applies to 2020."
+    ],
+    "unknowns": [
+      "2027 session dates",
+      "Camper fees / session prices (site has a 'Camper Fees' page not included in source)",
+      "Camper age or grade range",
+      "Transportation details (site has a 'Transportation' page not included)",
+      "Activities offered (separate 'Activities' page)",
+      "Financial aid / sliding scale availability",
+      "Deposit and refund policy",
+      "Session availability",
+      "Registration opening date for 2027",
+      "ACA accreditation",
+      "Swim/waterfront details",
+      "Special needs accommodations",
+      "Contact email",
+      "Confirmation that camp is overnight"
+    ],
+    "low_confidence": [
+      {
+        "field": "camp_type",
+        "confidence": 0.6,
+        "quote": "SESSION 1: Sunday, June 28 - Thursday, July 9"
+      },
+      {
+        "field": "sessions[0].start_date",
+        "confidence": 0.4,
+        "quote": "SESSION 1: Sunday, June 28 - Thursday, July 9"
+      },
+      {
+        "field": "sessions[1].start_date",
+        "confidence": 0.4,
+        "quote": "SESSION 2: Sunday, July 12 - Thursday, July 23"
+      },
+      {
+        "field": "sessions[2].start_date",
+        "confidence": 0.4,
+        "quote": "SESSION 3: Sunday, July 26 - Thursday, August 6"
+      }
+    ],
+    "errors": []
+  }
+}

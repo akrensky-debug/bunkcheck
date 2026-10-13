@@ -1,0 +1,116 @@
+{
+  "slug": "summer-at-foote-the-foote-school-summer-programs-new-haven",
+  "name": "Summer at Foote (The Foote School Summer Programs)",
+  "operator_name": "The Foote School",
+  "website_url": "https://www.footeschool.org/community/summer-programs",
+  "phone": "(203) 777-3464",
+  "street_address": "50 Loomis Place",
+  "city": "New Haven",
+  "state": "CT",
+  "zip": "06511",
+  "camp_type": "day",
+  "primary_categories": [
+    "performing_arts",
+    "arts",
+    "STEM",
+    "sports"
+  ],
+  "grade_min": 1,
+  "grade_max": 9,
+  "description_short": "Summer programs on the campus of The Foote School, an independent K-9 school in New Haven. There are two programs: FooteSteps to Broadway, a two-week musical theater program that ends in a cabaret performance, and Falco's Explorers, where campers sign up each week for classes such as music, Dungeons & Dragons, crafts, LEGO STEM and fencing.",
+  "activities": [
+    "Musical theater",
+    "Cabaret performance",
+    "Music",
+    "Dungeons & Dragons",
+    "Crafts",
+    "LEGO STEM",
+    "Fencing"
+  ],
+  "sources": [
+    {
+      "url": "https://www.footeschool.org/community/summer-programs",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "description_short"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.footeschool.org/community/summer-programs",
+      "kind": "html",
+      "title": "SUMMER PROGRAMS | Enriching Activities, New Haven CT"
+    },
+    "warnings": [
+      "The page shows no dates or year, so it's unclear whether the prices and programs are for 2027 or an earlier season. The page calls the programs 'NEW', which suggests the 2026 or 2025 season. season_year is left blank.",
+      "The grade range (rising grades 1–9), the $1,000 price and the 60-camper maximum are stated only for FooteSteps to Broadway, not for Falco's Explorers.",
+      "The page footer lists two phone numbers, (203) 777-3464 and (203) 777-2809, without labels. The second may be a fax number.",
+      "This is the school's own page. The program information is limited, and there may be a separate registration page that isn't linked here.",
+      "2 sessions without full dates were left out"
+    ],
+    "unknowns": [
+      "Season year (the page shows no year)",
+      "Session dates for both programs",
+      "Daily hours and schedule",
+      "Price of Falco's Explorers (weekly or per class)",
+      "Ages or grades for Falco's Explorers",
+      "Registration URL and when registration opens",
+      "Whether this is day-only (no overnight is mentioned, but the page doesn't say)",
+      "Extended care (before or after camp)",
+      "Whether meals or snacks are included",
+      "Whether financial aid is offered for summer programs (the financial assistance links are for school tuition)",
+      "Deposit and refund policy",
+      "Contact email",
+      "Transportation",
+      "Whether the camp is ACA accredited",
+      "Accommodations for special needs",
+      "Swimming or waterfront activities"
+    ],
+    "low_confidence": [
+      {
+        "field": "camp_type",
+        "confidence": 0.6,
+        "quote": "This revamped summer program allows campers to sign up for fun classes each week, while still enjoying the best part of summer: being a kid."
+      },
+      {
+        "field": "phone",
+        "confidence": 0.7,
+        "quote": "(203) 777-3464"
+      },
+      {
+        "field": "grade_min",
+        "confidence": 0.6,
+        "quote": "Grades: Rising 1–9"
+      },
+      {
+        "field": "grade_max",
+        "confidence": 0.6,
+        "quote": "Grades: Rising 1–9"
+      },
+      {
+        "field": "sessions[0].price",
+        "confidence": 0.6,
+        "quote": "Price: $1,000 (two-week program)"
+      }
+    ],
+    "errors": [
+      "missing required season_year"
+    ]
+  }
+}

@@ -8,6 +8,7 @@ Nothing here is on the site until it is promoted and imported.
 
 | Camp | Town | Sessions | Errors | Unsure | Warnings | Status |
 |---|---|---|---|---|---|---|
+| [ASAP! Summer Camp](asap-summer-camp-washington.json) | Washington | 0 | 0 | 3 | 5 | unchecked |
 | [Auer Camp](auer-camp-bloomfield.json) | Bloomfield | 1 | 0 | 5 | 7 | unchecked |
 | [Boys & Girls Club of Greenwich Summer Camps](boys-and-girls-club-of-greenwich-summer-camps-greenwich.json) | Greenwich | 0 | 2 | 6 | 6 | unchecked |
 | [Bridgeport YMCA Summer Day Camp](bridgeport-ymca-summer-day-camp-bridgeport.json) | Bridgeport | 0 | 0 | 8 | 4 | unchecked |
@@ -17,9 +18,10 @@ Nothing here is on the site until it is promoted and imported.
 | [Camp Badakookala](camp-badakookala-fairfield.json) | Fairfield | 0 | 1 | 3 | 4 | unchecked |
 | [Camp Chinqueka](camp-chinqueka-bantam.json) | Bantam | 15 | 0 | 0 | 6 | unchecked |
 | [Camp Claire](camp-claire-lyme.json) | Lyme | 0 | 2 | 2 | 7 | unchecked |
-| [Camp Farmington Valley](camp-farmington-valley-granby.json) | Granby | 10 | 1 | 1 | 5 | unchecked |
-| [Camp Glawackus (Glastonbury YMCA)](camp-glawackus-glastonbury-ymca-south-glastonbury.json) | South Glastonbury | 15 | 1 | 6 | 6 | unchecked |
+| [Camp Farmington Valley](camp-farmington-valley-granby.json) | Granby | 10 | 0 | 1 | 5 | unchecked |
+| [Camp Glawackus (Glastonbury YMCA)](camp-glawackus-glastonbury-ymca-south-glastonbury.json) | South Glastonbury | 15 | 0 | 6 | 6 | unchecked |
 | [Camp Gordyland (Wilton Family YMCA)](camp-gordyland-wilton-family-ymca-wilton.json) | Wilton | 0 | 3 | 1 | 3 | unchecked |
+| [Camp Hays (Soundview Family YMCA Summer Day Camp)](camp-hays-soundview-family-ymca-summer-day-camp-branford.json) | Branford | 10 | 0 | 2 | 6 | unchecked |
 | [Camp Hazen YMCA Overnight Camp](camp-hazen-ymca-overnight-camp-chester.json) | Chester | 0 | 0 | 1 | 5 | unchecked |
 | [Camp Laurelwood](camp-laurelwood-madison.json) | Madison | 0 | 2 | 1 | 3 | unchecked |
 | [Camp Sloane YMCA Day Camp](camp-sloane-ymca-day-camp-lakeville.json) | Lakeville | 5 | 0 | 1 | 4 | unchecked |
@@ -36,13 +38,14 @@ Nothing here is on the site until it is promoted and imported.
 | [Early American Adventure Camp](early-american-adventure-camp-west-hartford.json) | West Hartford | 2 | 0 | 4 | 7 | unchecked |
 | [Earthplace Summer Camp](earthplace-summer-camp-westport.json) | Westport | 0 | 3 | 0 | 4 | unchecked |
 | [Explorers Adventure Full Day Camp](explorers-adventure-full-day-camp-stamford.json) | Stamford | 6 | 0 | 4 | 4 | unchecked |
+| [Flanders Nature Center Summer Camp & Academies](flanders-nature-center-summer-camp-and-academies-woodbury.json) | Woodbury | 0 | 0 | 1 | 4 | unchecked |
 | [Guilford Art Center Summer Art for Kids + Teens](guilford-art-center-summer-art-for-kids-teens-guilford.json) | Guilford | 53 | 0 | 3 | 6 | unchecked |
 | [Gymnastics Camp](gymnastics-camp-darien.json) | Darien | 8 | 0 | 4 | 5 | unchecked |
 | [Hamden Hall Summer Programs](hamden-hall-summer-programs-hamden.json) | Hamden | 5 | 0 | 11 | 6 | unchecked |
 | [Hamden's Summer Day Camps](hamden-s-summer-day-camps-hamden.json) | Hamden | 0 | 0 | 2 | 4 | unchecked |
 | [Hartford's Camp Courant](hartford-s-camp-courant-farmington.json) | Farmington | 1 | 0 | 1 | 4 | unchecked |
 | [Hartford Stage Summer Studio Classes](hartford-stage-summer-studio-classes.json) | ? | 13 | 3 | 1 | 5 | unchecked |
-| [Incarnation Camp](incarnation-camp-ivoryton.json) | Ivoryton | 12 | 1 | 3 | 5 | unchecked |
+| [Incarnation Camp](incarnation-camp-ivoryton.json) | Ivoryton | 12 | 0 | 3 | 5 | unchecked |
 | [JCC Day Camps](jcc-day-camps-woodbridge.json) | Woodbridge | 2 | 0 | 4 | 3 | unchecked |
 | [KenMont and KenWood Camps](kenmont-and-kenwood-camps.json) | ? | 4 | 3 | 1 | 6 | unchecked |
 | [Longshore Sailing School – Junior Programs](longshore-sailing-school-junior-programs-westport.json) | Westport | 0 | 1 | 1 | 3 | unchecked |
@@ -58,10 +61,12 @@ Nothing here is on the site until it is promoted and imported.
 | [Sails & Trails Camp](sails-and-trails-camp-middlebury.json) | Middlebury | 3 | 0 | 3 | 6 | unchecked |
 | [SJ Riding Camp – Day Camp](sj-riding-camp-day-camp-ellington.json) | Ellington | 2 | 0 | 11 | 4 | unchecked |
 | [Summer Art Studios](summer-art-studios-new-canaan.json) | New Canaan | 10 | 0 | 1 | 5 | unchecked |
+| [Summer at Foote (The Foote School Summer Programs)](summer-at-foote-the-foote-school-summer-programs-new-haven.json) | New Haven | 0 | 1 | 5 | 5 | unchecked |
 | [Summer at Hopkins](summer-at-hopkins-new-haven.json) | New Haven | 1 | 2 | 0 | 3 | unchecked |
 | [Summer Camp at Fairfield Nature Center](summer-camp-at-fairfield-nature-center-fairfield.json) | Fairfield | 0 | 0 | 1 | 6 | unchecked |
 | [Summer Camp at Milford Point (Coastal Center Summer Camps)](summer-camp-at-milford-point-coastal-center-summer-camps-milford.json) | Milford | 0 | 0 | 4 | 4 | unchecked |
 | [Summer Fun Club](summer-fun-club-hartford.json) | Hartford | 1 | 1 | 4 | 5 | unchecked |
+| [Summer of STEM Adventures](summer-of-stem-adventures-avon.json) | Avon | 7 | 0 | 4 | 5 | unchecked |
 | [Sunrise at Camp Harkness](sunrise-at-camp-harkness-waterford.json) | Waterford | 0 | 2 | 1 | 3 | unchecked |
 | [Teen Camp](teen-camp-greenwich.json) | Greenwich | 1 | 0 | 2 | 5 | unchecked |
 | [Town of West Hartford Leisure Services Camps](town-of-west-hartford-leisure-services-camps-west-hartford.json) | West Hartford | 0 | 4 | 6 | 4 | unchecked |
@@ -114,3 +119,4 @@ These hosts refused the fetcher. That is the answer: ask the camp to send its br
 - Foote Summer Theater: https://www.footeschool.org/community/summer-programs/foote-summer-theater (fetch: https://www.footeschool.org/community/summer-programs/foote-summer-theater returned 404)
 - Falco's Explorers: https://www.footeschool.org/community/summer-programs/falco-explorers (no camp on the page: the page names no camp)
 - Norwalk Summer Camps 2026 (Play & Learn, Skate Camp): https://www.norwalkct.gov/2996/Summer-Camps-2026 (fetch: https://www.norwalkct.gov/2996/Summer-Camps-2026 returned 404)
+- Camp Parrot Perch: https://cccymca.org/wp-content/uploads/STF-2026-SUMMER-DAY-CAMP-Brochure.pdf (fetch: Response larger than the 8 MB limit)

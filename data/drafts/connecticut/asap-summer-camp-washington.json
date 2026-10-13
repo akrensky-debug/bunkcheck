@@ -1,0 +1,128 @@
+{
+  "slug": "asap-summer-camp-washington",
+  "name": "ASAP! Summer Camp",
+  "operator_name": "After School Arts Program, Inc. (ASAP!)",
+  "website_url": "https://asapct.org/programs/summer-camp/",
+  "registration_url": "https://asap.app.neoncrm.com/np/clients/asap/event.jsp?event=4287&",
+  "phone": "860-868-0740",
+  "street_address": "Rumsey Hall School, 201 Romford Road",
+  "city": "Washington",
+  "state": "CT",
+  "zip": "06794",
+  "camp_type": "day",
+  "primary_categories": [
+    "arts",
+    "performing_arts",
+    "nature"
+  ],
+  "grade_min": 1,
+  "grade_max": 10,
+  "description_short": "An arts and outdoor day camp for grades 1-10, held in August at Rumsey Hall School in Washington, CT, from 9:00 am to 3:30 pm. Professional teaching artists lead visual, culinary and performing arts, plus nature hikes, an adventure course, climbing and field trips.",
+  "activities": [
+    "sculpture",
+    "cooking",
+    "theater",
+    "circus arts",
+    "high wire",
+    "adventure course",
+    "nature hikes",
+    "tie-dye",
+    "music",
+    "creative movement",
+    "fort building",
+    "entomology",
+    "drumming",
+    "rock climbing",
+    "makerspace",
+    "weaving",
+    "jewelry",
+    "painting",
+    "face painting",
+    "crafting",
+    "field trips"
+  ],
+  "price_min": 800,
+  "price_max": 900,
+  "financial_aid": true,
+  "transportation": true,
+  "meals_included": false,
+  "refund_policy_summary": "Full tuition refund for cancellations before June 1; 50% refund for cancellations June 1-30; no refund for cancellations on or after July 1.",
+  "season_year": 2027,
+  "sources": [
+    {
+      "url": "https://asapct.org/programs/summer-camp/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "description_short",
+        "price_min",
+        "price_max",
+        "transportation",
+        "meals_included",
+        "financial_aid",
+        "refund_policy_summary"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://asapct.org/programs/summer-camp/",
+      "kind": "html",
+      "title": "Summer Camp | After School Arts Program CT"
+    },
+    "warnings": [
+      "The 2027 dates are not set yet: 'August 2027 (exact dates tbd)'. Registration opens Winter 2027.",
+      "The registration links may still point to the previous season's event pages, since registration for 2027 has not opened.",
+      "The camp is held at Rumsey Hall School (Washington, CT), not at ASAP!'s office at 6 Bee Brook Road, Washington Depot.",
+      "Price: $900, or $800 if you register before April 1. price_min reflects this early-registration discount.",
+      "3 sessions without full dates were left out"
+    ],
+    "unknowns": [
+      "Exact 2027 camp dates (page says August 2027, exact dates TBD)",
+      "Length of the camp (the page mentions 'two weeks' for Pathmakers but does not give a session length for everyone)",
+      "Whether the $900 covers the whole program or is charged per week",
+      "Exact date registration opens (page says only 'Winter 2027')",
+      "Camper ages (the page lists grades only)",
+      "Contact email",
+      "Whether extended care (before or after care) is offered",
+      "Whether a deposit is required",
+      "Swimming or waterfront activities",
+      "Special needs or inclusion support",
+      "Accreditation (ACA or otherwise)",
+      "Bus transportation cost and schedule"
+    ],
+    "low_confidence": [
+      {
+        "field": "registration_url",
+        "confidence": 0.6,
+        "quote": "Register a Pathmaker"
+      },
+      {
+        "field": "price_min",
+        "confidence": 0.75,
+        "quote": "$900 – Register before April 1 to receive $100 off!"
+      },
+      {
+        "field": "sessions[0].price",
+        "confidence": 0.7,
+        "quote": "COST $900"
+      }
+    ],
+    "errors": []
+  }
+}

@@ -14,14 +14,15 @@ Nothing here is on the site until it is promoted and imported.
 | [Brattleboro Music Center Summer Programs](brattleboro-music-center-summer-programs-brattleboro.json) | Brattleboro | 0 | 0 | 3 | 4 | unchecked |
 | [Brattleboro Recreation & Parks Summer Camps](brattleboro-recreation-and-parks-summer-camps-brattleboro.json) | Brattleboro | 0 | 3 | 1 | 4 | unchecked |
 | [Burlington Parks, Recreation & Waterfront Summer Camps](burlington-parks-recreation-and-waterfront-summer-camps-burlington.json) | Burlington | 0 | 1 | 2 | 4 | unchecked |
-| [Camp Akeela](camp-akeela-thetford-center.json) | Thetford Center | 2 | 1 | 2 | 4 | unchecked |
+| [Camp Akeela](camp-akeela-thetford-center.json) | Thetford Center | 2 | 0 | 2 | 4 | unchecked |
 | [Camp Billings](camp-billings-fairlee.json) | Fairlee | 4 | 0 | 2 | 5 | unchecked |
 | [Camp Downer](camp-downer-sharon.json) | Sharon | 7 | 0 | 10 | 4 | unchecked |
 | [Camp Dudley](camp-dudley-westport.json) | Westport | 0 | 3 | 0 | 2 | unchecked |
-| [Camp Farnsworth](camp-farnsworth-thetford-center.json) | Thetford Center | 44 | 1 | 5 | 9 | unchecked |
+| [Camp Farnsworth](camp-farnsworth-thetford-center.json) | Thetford Center | 44 | 0 | 5 | 9 | unchecked |
+| [Camp Farwell](camp-farwell.json) | ? | 9 | 3 | 1 | 6 | unchecked |
 | [Camp Hochelaga](camp-hochelaga-south-hero.json) | South Hero | 2 | 0 | 7 | 5 | unchecked |
 | [Camp Killooleet](camp-killooleet-hancock.json) | Hancock | 2 | 0 | 10 | 5 | unchecked |
-| [Camp Lochearn for Girls](camp-lochearn-for-girls-post-mills.json) | Post Mills | 5 | 1 | 3 | 4 | unchecked |
+| [Camp Lochearn for Girls](camp-lochearn-for-girls-post-mills.json) | Post Mills | 5 | 0 | 3 | 4 | unchecked |
 | [Camp Outright](camp-outright.json) | ? | 2 | 3 | 2 | 6 | unchecked |
 | [Camp Sangamon For Boys](camp-sangamon-for-boys-pittsford.json) | Pittsford | 5 | 0 | 3 | 6 | unchecked |
 | [Camp Ta-Kum-Ta](camp-ta-kum-ta.json) | ? | 9 | 3 | 1 | 4 | unchecked |
@@ -34,17 +35,19 @@ Nothing here is on the site until it is promoted and imported.
 | [Farm & Wilderness Summer Camps](farm-and-wilderness-summer-camps-plymouth.json) | Plymouth | 7 | 0 | 5 | 7 | unchecked |
 | [Hartford Parks & Recreation Spring & Summer Programs](hartford-parks-and-recreation-spring-and-summer-programs.json) | ? | 0 | 5 | 2 | 4 | unchecked |
 | [Hildene Summer Day Camps](hildene-summer-day-camps-manchester.json) | Manchester | 9 | 0 | 10 | 6 | unchecked |
-| [Hosmer Point Camp](hosmer-point-camp-craftsbury-common.json) | Craftsbury Common | 4 | 1 | 2 | 6 | unchecked |
+| [Hosmer Point Camp](hosmer-point-camp-craftsbury-common.json) | Craftsbury Common | 4 | 0 | 2 | 6 | unchecked |
 | [Lake Champlain Maritime Museum Day Camps](lake-champlain-maritime-museum-day-camps-vergennes.json) | Vergennes | 7 | 0 | 13 | 6 | unchecked |
 | [Lost Nation Theater Intermediate Camps](lost-nation-theater-intermediate-camps-montpelier.json) | Montpelier | 0 | 0 | 6 | 6 | unchecked |
 | [Lotus Lake Camp](lotus-lake-camp.json) | ? | 5 | 3 | 4 | 5 | unchecked |
 | [Montpelier Recreation Summer Sport Camps](montpelier-recreation-summer-sport-camps-montpelier.json) | Montpelier | 20 | 0 | 6 | 6 | unchecked |
 | [Montshire Museum of Science Summer Camp](montshire-museum-of-science-summer-camp-norwich.json) | Norwich | 0 | 0 | 4 | 3 | unchecked |
-| [Night Eagle Wilderness Adventures](night-eagle-wilderness-adventures-wallingford.json) | Wallingford | 7 | 1 | 4 | 5 | unchecked |
+| [Night Eagle Wilderness Adventures](night-eagle-wilderness-adventures-wallingford.json) | Wallingford | 7 | 0 | 4 | 5 | unchecked |
 | [North Branch Nature Center Summer Camps](north-branch-nature-center-summer-camps-montpelier.json) | Montpelier | 6 | 0 | 0 | 5 | unchecked |
+| [Petra Cliffs Day Camps (Classic Multi-Sport Camp & Climb On! Day Camp)](petra-cliffs-day-camps-classic-multi-sport-camp-and-climb-on-day-camp-burlington.json) | Burlington | 10 | 0 | 6 | 4 | unchecked |
 | [Point CounterPoint Youth Sessions](point-counterpoint-youth-sessions-leicester.json) | Leicester | 5 | 0 | 0 | 3 | unchecked |
 | [Rutland Recreation Camps](rutland-recreation-camps-rutland.json) | Rutland | 0 | 1 | 4 | 4 | unchecked |
 | [Shelburne Farms Summer Camps](shelburne-farms-summer-camps-shelburne.json) | Shelburne | 0 | 2 | 3 | 3 | unchecked |
+| [Shelburne Parks and Recreation Summer Camps](shelburne-parks-and-recreation-summer-camps-shelburne.json) | Shelburne | 11 | 1 | 2 | 5 | unchecked |
 | [Smirkus Camp](smirkus-camp-greensboro.json) | Greensboro | 13 | 0 | 1 | 7 | unchecked |
 | [Southern Vermont Arts Center Summer Camps](southern-vermont-arts-center-summer-camps-manchester.json) | Manchester | 0 | 2 | 1 | 3 | unchecked |
 | [Stowe Rec Summer Camp](stowe-rec-summer-camp-stowe.json) | Stowe | 11 | 0 | 7 | 6 | unchecked |

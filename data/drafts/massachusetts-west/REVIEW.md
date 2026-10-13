@@ -8,11 +8,12 @@ Nothing here is on the site until it is promoted and imported.
 
 | Camp | Town | Sessions | Errors | Unsure | Warnings | Status |
 |---|---|---|---|---|---|---|
-| [Arcadia Nature Camp](arcadia-nature-camp-easthampton.json) | Easthampton | 0 | 4 | 0 | 3 | unchecked |
+| [Arcadia Nature Camp](arcadia-nature-camp-easthampton.json) | Easthampton | 0 | 3 | 0 | 3 | unchecked |
 | [Belvoir Terrace](belvoir-terrace-lenox.json) | Lenox | 0 | 0 | 3 | 5 | unchecked |
 | [Berkshire Nature Camp at Pleasant Valley](berkshire-nature-camp-at-pleasant-valley-lenox.json) | Lenox | 5 | 1 | 1 | 5 | unchecked |
+| [Broad Meadow Brook Nature Camp](broad-meadow-brook-nature-camp-worcester.json) | Worcester | 17 | 1 | 4 | 6 | unchecked |
 | [Camp Becket and Chimney Corners Camp (Becket-Chimney Corners YMCA)](camp-becket-and-chimney-corners-camp-becket-chimney-corners-ymca-becket.json) | Becket | 14 | 0 | 2 | 6 | unchecked |
-| [Camp Bonnie Brae](camp-bonnie-brae-east-otis.json) | East Otis | 39 | 2 | 2 | 7 | unchecked |
+| [Camp Bonnie Brae](camp-bonnie-brae-east-otis.json) | East Otis | 39 | 1 | 2 | 7 | unchecked |
 | [Camp Danbee](camp-danbee-peru.json) | Peru | 0 | 1 | 2 | 4 | unchecked |
 | [Camp Farley Day Camp](camp-farley-day-camp-mashpee.json) | Mashpee | 0 | 0 | 4 | 4 | unchecked |
 | [Camp Farley](camp-farley-mashpee.json) | Mashpee | 22 | 2 | 1 | 7 | unchecked |
