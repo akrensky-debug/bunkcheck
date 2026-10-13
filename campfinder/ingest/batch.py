@@ -108,7 +108,10 @@ async def run(candidates: list[dict[str, Any]], *, metro: str, drafts: Path, lim
 
     async def go(cand: dict[str, Any]) -> None:
         async with sem:
-            res = await draft_one(cand, metro=metro, today=today, taken=taken)
+            try:
+                res = await draft_one(cand, metro=metro, today=today, taken=taken)
+            except Exception as e:  # noqa: BLE001 - one bad camp must not stop the run
+                res = {"outcome": "failed", "detail": f"{type(e).__name__}: {e}"}
         entry = {"name": cand.get("name"), "url": cand["url"], "outcome": res["outcome"], "detail": res.get("detail")}
         if res["outcome"] == "drafted":
             rec = res["record"]

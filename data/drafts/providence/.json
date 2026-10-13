@@ -1,0 +1,38 @@
+{
+  "slug": "",
+  "website_url": "https://foxboroma.myrec.com/info/activities/default.aspx?type=activities",
+  "city": null,
+  "state": null,
+  "zip": null,
+  "sources": [
+    {
+      "url": "https://foxboroma.myrec.com/info/activities/default.aspx?type=activities",
+      "checked": "2026-10-13",
+      "fields": [
+        "website_url"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://foxboroma.myrec.com/info/activities/default.aspx?type=activities",
+      "kind": "html",
+      "title": "Foxboro Recreation: Programs Programs"
+    },
+    "warnings": [],
+    "unknowns": [],
+    "low_confidence": [],
+    "errors": [
+      "slug must be kebab-case",
+      "missing required name",
+      "missing required city",
+      "missing required state",
+      "missing required zip",
+      "missing required camp_type",
+      "missing required season_year",
+      "camp_type must be one of ['day', 'sleepaway', 'specialty']"
+    ]
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "slug": "camp-wonderland-sharon",
+  "name": "Camp Wonderland",
+  "operator_name": "The Salvation Army",
+  "website_url": "https://easternusa.salvationarmy.org/massachusetts/fall-river/camp-summerprograms/",
+  "registration_url": "https://wonderland.campintouch.com/ui/forms/application/camper/App",
+  "city": "Sharon",
+  "state": "MA",
+  "zip": null,
+  "primary_categories": [
+    "faith",
+    "nature",
+    "sports",
+    "arts"
+  ],
+  "description_short": "The Salvation Army's Massachusetts summer camp, on 110 acres on Lake Massapoag in Sharon, running since 1924. Activities include swimming lessons, scouting, arts and crafts, music and sports, in a Christian setting.",
+  "activities": [
+    "swimming",
+    "scouting",
+    "adventure",
+    "arts and crafts",
+    "music",
+    "sports",
+    "nature"
+  ],
+  "swim_waterfront_notes": "Camp is on Lake Massapoag; activities include learning to swim.",
+  "sources": [
+    {
+      "url": "https://easternusa.salvationarmy.org/massachusetts/fall-river/camp-summerprograms/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "city",
+        "state",
+        "primary_categories",
+        "activities",
+        "description_short",
+        "swim_waterfront_notes"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://easternusa.salvationarmy.org/massachusetts/fall-river/camp-summerprograms/",
+      "kind": "html",
+      "title": "Camp and Summer Programs - Salvation Army Fall River Corps"
+    },
+    "warnings": [
+      "This is a general Salvation Army Fall River Corps page about summer programs, not Camp Wonderland's own site. It gives no dates, prices or ages for any season.",
+      "The address (290 Bedford Street, Fall River, MA 02722) and the 1-800-SAL-ARMY number in the footer belong to the Fall River Corps, not the camp, so they were not recorded as camp contact details.",
+      "The ACA accreditation comes from a blanket statement that 'All of our camps are ACA accredited', not a claim made about Camp Wonderland specifically.",
+      "The page mentions 'hundreds of day camps'. It's unclear whether the Fall River Corps runs a separate local day program.",
+      "The page says ACA accredited: check it on acacamps.org and add aca_accredited with aca_source_url"
+    ],
+    "unknowns": [
+      "Season year and 2027 session dates",
+      "Prices / fees and deposit",
+      "Age or grade range",
+      "Whether Camp Wonderland is overnight (residential) or day camp, or both",
+      "Camp street address and zip",
+      "Camp phone and email",
+      "Financial aid / camperships (the page mentions serving low-income families and asks for donations, but doesn't describe an aid process)",
+      "Transportation from Fall River",
+      "Refund policy",
+      "Meals",
+      "Special needs accommodations",
+      "Registration open date and availability"
+    ],
+    "low_confidence": [
+      {
+        "field": "website_url",
+        "confidence": 0.7,
+        "quote": "Camp and Summer Programs - Salvation Army Fall River Corps"
+      }
+    ],
+    "errors": [
+      "missing required zip",
+      "missing required camp_type",
+      "missing required season_year",
+      "camp_type must be one of ['day', 'sleepaway', 'specialty']"
+    ]
+  }
+}

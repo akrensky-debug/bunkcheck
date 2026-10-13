@@ -1,0 +1,122 @@
+{
+  "slug": "united-we-row-youth-summer-rowing",
+  "name": "United We Row Youth Summer Rowing",
+  "operator_name": "Watuppa Rowing Center",
+  "website_url": "https://www.watupparowingcenter.org/summer-rowing",
+  "email": "Row@WatuppaRowingCenter.org",
+  "city": null,
+  "state": null,
+  "zip": null,
+  "camp_type": "specialty",
+  "primary_categories": [
+    "sports"
+  ],
+  "age_min": 12,
+  "grade_min": 6,
+  "grade_max": 12,
+  "description_short": "A free youth rowing program for students aged 12 and older in grades 6-12, held Monday to Friday from 8 am to 12 noon. Campers can join any number of sessions at any point in the summer.",
+  "activities": [
+    "Rowing"
+  ],
+  "price_per_week": 0,
+  "price_min": 0,
+  "price_max": 0,
+  "season_year": 2027,
+  "price_per": "week",
+  "sessions": [
+    {
+      "name": "Session 1",
+      "start_date": "2027-06-28",
+      "end_date": "2027-07-02",
+      "price": 0,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 2",
+      "start_date": "2027-07-05",
+      "end_date": "2027-07-16",
+      "price": 0,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 3",
+      "start_date": "2027-07-19",
+      "end_date": "2027-07-30",
+      "price": 0,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 4",
+      "start_date": "2027-08-02",
+      "end_date": "2027-08-13",
+      "price": 0,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.watupparowingcenter.org/summer-rowing",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "age_min",
+        "grade_min",
+        "grade_max",
+        "description_short",
+        "price_min",
+        "price_max",
+        "price_per_week",
+        "price_per",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.watupparowingcenter.org/summer-rowing",
+      "kind": "html",
+      "title": "Youth Summer Rowing | Watuppa Rowing Center"
+    },
+    "warnings": [
+      "Session lengths conflict: the program is described as '2-week sessions', but Session 1 (June 28 - July 2) is only one week.",
+      "Confusing note: 'Session 1 may begin 1 week earlier on June 1st'. One week before June 28 would be June 21, not June 1, so this note may be left over from an earlier year.",
+      "The dates are listed without a year under 'United We Row 2027'. They were recorded as 2027, and the weekdays match (June 28, 2027 is a Monday).",
+      "The End of Summer celebration is on Friday, August 6, 2027, which falls in the middle of the August 2-13 session.",
+      "The copyright footer says 2025, so parts of the page may not be fully updated."
+    ],
+    "unknowns": [
+      "Location: the street address, city, state and ZIP are not given (the page mentions Fall River, MA, but not the rowing site)",
+      "Phone number",
+      "Registration link or method (the page only says to email the coaches)",
+      "Maximum age (only '12 and older' in grades 6-12)",
+      "Whether Session 1 starts on June 1 or June 28, 2027",
+      "Whether there is a session or holiday on Monday, July 5, 2027 (the observed Independence Day holiday)",
+      "Swimming ability requirements and water-safety rules",
+      "Session capacity or availability",
+      "Whether transportation is available",
+      "Accommodations for special needs",
+      "ACA accreditation",
+      "Refund or cancellation policy (sessions are free)"
+    ],
+    "low_confidence": [
+      {
+        "field": "sessions[0].start_date",
+        "confidence": 0.75,
+        "quote": "June 28 - July 2"
+      }
+    ],
+    "errors": [
+      "missing required city",
+      "missing required state",
+      "missing required zip"
+    ]
+  }
+}

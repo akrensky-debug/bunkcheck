@@ -1,0 +1,121 @@
+{
+  "slug": "camp-welch-assonet",
+  "name": "Camp Welch",
+  "operator_name": "Boys & Girls Club of Fall River",
+  "website_url": "https://www.fallriverbgc.org/camp-welch",
+  "street_address": "127 North Main Street",
+  "city": "Assonet",
+  "state": "MA",
+  "zip": "02702",
+  "primary_categories": [
+    "sports",
+    "arts",
+    "nature"
+  ],
+  "age_min": 5,
+  "age_max": 12,
+  "description_short": "Camp Welch is the Boys & Girls Club of Fall River's summer program for ages 5–12. It sits on 165 wooded acres with 20 camp buildings, ball fields and two swimming pools. Activities include team sports, swimming lessons, arts and crafts, and hiking.",
+  "activities": [
+    "basketball",
+    "soccer",
+    "baseball",
+    "hockey",
+    "swimming lessons",
+    "pool recreation",
+    "arts and crafts",
+    "hiking",
+    "fitness"
+  ],
+  "financial_aid": true,
+  "swim_waterfront_notes": "Two swimming pools on site; swimming lessons and pool recreation offered.",
+  "season_year": 2026,
+  "sources": [
+    {
+      "url": "https://www.fallriverbgc.org/camp-welch",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "primary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "financial_aid",
+        "swim_waterfront_notes"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.fallriverbgc.org/camp-welch",
+      "kind": "html",
+      "title": "Boys & Girls Club of Fall River"
+    },
+    "warnings": [
+      "The page shows nothing for 2027. The only season mentioned is 2026 (in a video title), and that summer is over. season_year is set to 2026 for that reason. It does not mean 2026 dates or prices were found.",
+      "No dates, prices or registration details appear anywhere on the page.",
+      "The page does not say if campers go home each night or stay overnight. An 'Adopt a Cabin' link and mention of camp buildings are not enough to tell, so camp_type is left blank.",
+      "The address 127 North Main Street, Assonet, MA appears in the site header. It is probably the camp's location, but the page does not say so outright.",
+      "Financial aid is inferred from donor-funded 'camperships'. The page does not say how families apply."
+    ],
+    "unknowns": [
+      "2027 session dates",
+      "Prices / weekly rate",
+      "Whether this is a day camp or overnight (camp_type)",
+      "Registration opening date and registration link",
+      "Phone number and email",
+      "Daily hours and extended care",
+      "Transportation / bus service",
+      "Whether meals are included",
+      "Deposit and refund policy",
+      "How to apply for campership aid",
+      "ACA accreditation",
+      "Special needs accommodations"
+    ],
+    "low_confidence": [
+      {
+        "field": "street_address",
+        "confidence": 0.7,
+        "quote": "127 North Main Street, Assonet, MA 02702"
+      },
+      {
+        "field": "city",
+        "confidence": 0.7,
+        "quote": "127 North Main Street, Assonet, MA 02702"
+      },
+      {
+        "field": "state",
+        "confidence": 0.75,
+        "quote": "127 North Main Street, Assonet, MA 02702"
+      },
+      {
+        "field": "zip",
+        "confidence": 0.7,
+        "quote": "127 North Main Street, Assonet, MA 02702"
+      },
+      {
+        "field": "season_year",
+        "confidence": 0.5,
+        "quote": "View the 2026 Camp Welch Video!"
+      },
+      {
+        "field": "financial_aid",
+        "confidence": 0.6,
+        "quote": "A Campership Donation is a great way to provide a youth with opportunity to attend Camp Welch during the summer vacation months who may otherwise not have access to the experience."
+      }
+    ],
+    "errors": [
+      "missing required camp_type",
+      "camp_type must be one of ['day', 'sleepaway', 'specialty']",
+      "city 'Assonet', MA is not in cities.py"
+    ]
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "slug": "camp-taunton-taunton",
+  "name": "Camp Taunton",
+  "operator_name": "Old Colony YMCA",
+  "website_url": "https://www.oldcolonyymca.org/child-care-camps/camps/camp-taunton",
+  "registration_url": "https://oldcolonyymca.my.site.com/s/registration",
+  "phone": "774-517-7139",
+  "street_address": "176 Somerset Ave",
+  "city": "Taunton",
+  "state": "MA",
+  "zip": "02780",
+  "camp_type": "day",
+  "primary_categories": [
+    "sports",
+    "arts",
+    "nature"
+  ],
+  "description_short": "A YMCA summer day camp in Taunton with arts and crafts, sports, and outdoor adventure activities such as fort building, hiking and survival skills. Campers bring a bag lunch each day, and the camp has weekly themes.",
+  "activities": [
+    "Arts and crafts",
+    "Tie-dye",
+    "Gimp",
+    "Friendship bracelets",
+    "Clay",
+    "Painting",
+    "Basketball",
+    "Soccer",
+    "T-ball",
+    "Wiffleball",
+    "Kickball",
+    "Floor hockey",
+    "Golf",
+    "Dodgeball",
+    "Four square",
+    "Hiking",
+    "Fort building",
+    "Survival skills",
+    "STEAM"
+  ],
+  "transportation": false,
+  "meals_included": false,
+  "swim_waterfront_notes": "The daily packing list includes a bathing suit and towel. The page gives no details about swimming or a pool.",
+  "sources": [
+    {
+      "url": "https://www.oldcolonyymca.org/child-care-camps/camps/camp-taunton",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "description_short",
+        "transportation",
+        "meals_included",
+        "swim_waterfront_notes"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.oldcolonyymca.org/child-care-camps/camps/camp-taunton",
+      "kind": "html",
+      "title": "Camp Taunton | Old Colony YMCA"
+    },
+    "warnings": [
+      "The page doesn't list a season, dates, prices or ages. The brochure and theme calendar say digital copies 'will be uploaded once they are complete.'",
+      "Page footer reads 'Copyright © YMCA of Old Colony 2022', so the content may be out of date.",
+      "Camp type 'day' is inferred from weekly registration and the daily bag lunch. The page doesn't say outright that campers go home each night."
+    ],
+    "unknowns": [
+      "Season year and session dates for 2027",
+      "Weekly price, session prices and any discounts",
+      "Age or grade range",
+      "Daily hours, and whether before/after care is offered (the page mentions 'extra services' without naming them)",
+      "When registration opens and whether a deposit is required",
+      "Refund and cancellation policy",
+      "Financial aid or scholarships (common at YMCAs, but not stated)",
+      "Swimming details: pool, swim lessons, supervision",
+      "ACA accreditation (only state DPH and local board of health licensing is mentioned)",
+      "Support for children with special needs",
+      "Email contact"
+    ],
+    "low_confidence": [
+      {
+        "field": "camp_type",
+        "confidence": 0.75,
+        "quote": "We typically email out a parent handbook to all registered camp families prior to your week of camp."
+      },
+      {
+        "field": "meals_included",
+        "confidence": 0.7,
+        "quote": "Bring These Every Day Non-perishable bag lunch"
+      },
+      {
+        "field": "swim_waterfront_notes",
+        "confidence": 0.7,
+        "quote": "Bathing suit & towel"
+      }
+    ],
+    "errors": [
+      "missing required season_year"
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "slug": "taunton",
+  "operator_name": "City of Taunton (directory page; not a camp operator)",
+  "website_url": "https://www.taunton-ma.gov/993/Summer-CampsPrograms",
+  "city": "Taunton",
+  "state": "MA",
+  "zip": null,
+  "description_short": "A City of Taunton resource page that lists several separate 2026 summer camps and programs run by different organizations in Taunton, MA. It is not a listing for one camp.",
+  "season_year": 2026,
+  "sources": [
+    {
+      "url": "https://www.taunton-ma.gov/993/Summer-CampsPrograms",
+      "checked": "2026-10-13",
+      "fields": [
+        "operator_name",
+        "website_url",
+        "city",
+        "state",
+        "description_short"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.taunton-ma.gov/993/Summer-CampsPrograms",
+      "kind": "html",
+      "title": "Summer Camps/Programs | Taunton, MAArrow LeftArrow RightSlideshow Left ArrowSlideshow Right Arrow"
+    },
+    "warnings": [
+      "This page is a municipal directory (City of Taunton), not one camp's own material. It lists at least 8 separate programs from different operators. Each one should be its own listing, built from that operator's site.",
+      "Old season: the page covers summer 2026, which is already over (today is 2026-10-13). No 2027 information is shown.",
+      "Programs listed: BGCMS Camp Greenside (31 Court St, indoor, ages 5-18, M-F 7:30am-5:30pm, 7 weeks from July 6, 2026, https://www.bgcmetrosouth.org/camp-greenside); BGCMS Camp Riverside (outdoor, ages 5-15, from June 29, 2026, https://www.bgcmetrosouth.org/campriverside); Girls Inc. (7 weeks, girls 5-14); Old Colony YMCA Camp Taunton (trip-based, ages 5-13, from June 29, 2026, contact jtowne@oldcolonyymca.org); Taunton Parks & Rec Summer Festival at Hopewell Park (ages 5-12, from July 6, 2026, marked full, https://tauntonma.myrec.com); Tennis Lessons (ages 10+, July 6-Aug 3); Summer Track Series (ages 3+, June 24-July 15); T.O.G.E.T.H.E.R. Summer Program (ages 6+, from July 1, 2026, together@truecollective.org).",
+      "The 15 Summer St address and the 508-821-1000 phone number belong to Taunton City Hall, not to any camp, so they were not recorded as camp contact details."
+    ],
+    "unknowns": [
+      "Which single camp this listing should represent. Pick one program and use its own website.",
+      "2027 dates, prices and registration for every program listed",
+      "Prices for all programs (none are stated on this page)",
+      "End dates for most programs",
+      "Each program's contact, refund policy, financial aid and extended care"
+    ],
+    "low_confidence": [
+      {
+        "field": "operator_name",
+        "confidence": 0.7,
+        "quote": "City of Taunton"
+      }
+    ],
+    "errors": [
+      "missing required name",
+      "missing required zip",
+      "missing required camp_type",
+      "camp_type must be one of ['day', 'sleepaway', 'specialty']"
+    ]
+  }
+}
