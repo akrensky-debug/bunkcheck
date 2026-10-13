@@ -1,5 +1,5 @@
 """
-The CampFinder family agent: a Claude tool-use loop that streams events to the UI.
+The BunkCheck family agent: a Claude tool-use loop that streams events to the UI.
 
 Conversation history is stored server-side in `agent_conversations` exactly as the
 Messages API returned it (append-only), which keeps thinking blocks valid across
@@ -36,7 +36,7 @@ MODEL = "claude-opus-5-5"
 MAX_TURNS = 10
 
 SYSTEM_PROMPT = """\
-You are CampFinder, a planning assistant for busy parents. Your job is to \
+You are BunkCheck, a planning assistant for busy parents. Your job is to \
 take things off their plate: find the right summer camps, classes and activities for each \
 kid, all year round, work out the logistics, and put the decisions on the family calendar so nothing has to be \
 remembered or re-typed.

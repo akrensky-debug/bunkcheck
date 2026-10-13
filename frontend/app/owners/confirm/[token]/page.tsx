@@ -74,7 +74,7 @@ export default function ConfirmListingPage() {
         </Message>
       )}
       {done === 'removed' && (
-        <Message title={`${view?.camp_name ?? 'Your camp'} is off CampFinder.`}>
+        <Message title={`${view?.camp_name ?? 'Your camp'} is off BunkCheck.`}>
           Parents won&rsquo;t see it in search or on our pages. If that was a mistake, reply to the email and a person
           will put it back.
         </Message>
@@ -92,7 +92,7 @@ export default function ConfirmListingPage() {
       {!done && view && (
         <>
           <header>
-            <p className="text-sm text-gray-500">Your listing on CampFinder</p>
+            <p className="text-sm text-gray-500">Your listing on BunkCheck</p>
             <h1 className="text-2xl font-bold text-gray-900">{view.camp_name}</h1>
             <p className="text-gray-600 mt-1">
               This is what parents see. Is it right? No login, no fee to be listed, nothing to install.
@@ -145,7 +145,7 @@ export default function ConfirmListingPage() {
           <div className="pt-4 border-t border-gray-100 text-sm">
             {confirmRemove ? (
               <div className="flex flex-wrap items-center gap-3">
-                <span className="text-gray-700">Take {view.camp_name} off CampFinder?</span>
+                <span className="text-gray-700">Take {view.camp_name} off BunkCheck?</span>
                 <button onClick={() => answer('remove')} disabled={busy} className="text-red-600 font-medium">Yes, take it down</button>
                 <button onClick={() => setConfirmRemove(false)} className="text-gray-500">Keep it</button>
               </div>

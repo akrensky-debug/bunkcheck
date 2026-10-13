@@ -1,4 +1,4 @@
-"""CampFinder FastAPI application entry point."""
+"""BunkCheck FastAPI application entry point."""
 
 from __future__ import annotations
 
@@ -47,7 +47,7 @@ def create_app() -> FastAPI:
     settings = get_settings()
 
     app = FastAPI(
-        title="CampFinder API",
+        title="BunkCheck API",
         description=(
             "Agent-first camp discovery platform. "
             "Verified camp data served through a structured API."
@@ -131,7 +131,7 @@ def _rate_limited(asgi_app, per_minute: int):
         if len(window) >= per_minute:
             body = json.dumps({
                 "jsonrpc": "2.0", "id": None,
-                "error": {"code": -32000, "message": "Too many requests to CampFinder. Try again in a minute."},
+                "error": {"code": -32000, "message": "Too many requests to BunkCheck. Try again in a minute."},
             }).encode()
             await send({"type": "http.response.start", "status": 429, "headers": [
                 (b"content-type", b"application/json"), (b"retry-after", b"60"),

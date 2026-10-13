@@ -95,7 +95,7 @@ needs_browser = pytest.mark.skipif(not _has_browser(), reason="no Chromium for P
 
 
 async def test_honest_user_agent() -> None:
-    assert "CampFinderBot" in fetch.USER_AGENT and "Mozilla" not in fetch.USER_AGENT
+    assert "BunkCheckBot" in fetch.USER_AGENT and "Mozilla" not in fetch.USER_AGENT
 
 
 async def test_refusal_is_final_and_never_retried_in_a_browser(site: str, monkeypatch: pytest.MonkeyPatch) -> None:

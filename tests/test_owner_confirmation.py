@@ -57,7 +57,7 @@ async def test_confirm_flow(client, camp, db, outbox):
     assert client.get(f"/api/v1/owners/confirm/{first.token}").status_code == 404
 
     email = outbox[-1]
-    assert email.to == "info@riverside.example" and "CampFinder" in email.text and "Andrew" not in email.text
+    assert email.to == "info@riverside.example" and "BunkCheck" in email.text and "Andrew" not in email.text
     token = token_from(outbox)
 
     view = client.get(f"/api/v1/owners/confirm/{token}").json()       # looking changes nothing

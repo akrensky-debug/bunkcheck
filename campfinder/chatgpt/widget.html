@@ -68,7 +68,7 @@
 
   const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   const day = d => new Date(d + "T00:00:00").toLocaleDateString(undefined, { month: "short", day: "numeric" });
-  const TRUST = { team_verified: "Verified by CampFinder", camp_verified: "Verified by the camp", claimed: "Claimed by the camp" };
+  const TRUST = { team_verified: "Verified by BunkCheck", camp_verified: "Verified by the camp", claimed: "Claimed by the camp" };
 
   function campCard(c, session) {
     const chips = [];
@@ -133,12 +133,12 @@
     }
     if (data.plan_url) {
       parts.push(`<div class="card cta">
-        <div class="name">${esc(data.plan_title || "Plan the whole summer on CampFinder")}</div>
+        <div class="name">${esc(data.plan_title || "Plan the whole summer on BunkCheck")}</div>
         <div class="meta">Save these picks, fill every week, and put it all on one family calendar you can share.</div>
-        <button class="btn" data-url="${esc(data.plan_url)}">Continue on CampFinder →</button>
+        <button class="btn" data-url="${esc(data.plan_url)}">Continue on BunkCheck →</button>
       </div>`);
     }
-    parts.push(`<div class="foot">Program data from CampFinder</div>`);
+    parts.push(`<div class="foot">Program data from BunkCheck</div>`);
     root.innerHTML = parts.join("");
     root.querySelectorAll("[data-url]").forEach(el => el.addEventListener("click", () => openLink(el.dataset.url)));
     reportSize();
@@ -165,7 +165,7 @@
   });
 
   request("ui/initialize", {
-    appInfo: { name: "CampFinder", version: "1.2.0" },
+    appInfo: { name: "BunkCheck", version: "1.2.0" },
     appCapabilities: { availableDisplayModes: ["inline"] },
     protocolVersion: "2026-01-26",
   }).then(result => {

@@ -51,7 +51,7 @@ export default function SharedPackagePage() {
         <p className="text-xs font-semibold uppercase tracking-wide text-gray-500">Registration information</p>
         <h1 className="text-2xl font-bold text-gray-900 mt-1">For {pkg.recipient}</h1>
         <p className="text-sm text-gray-500 mt-1">
-          Shared by the family through CampFinder. This link expires on {new Date(pkg.expires_at).toLocaleDateString()}
+          Shared by the family through BunkCheck. This link expires on {new Date(pkg.expires_at).toLocaleDateString()}
           {' '}and the family can withdraw it at any time. Please copy what you need into your records.
         </p>
       </header>

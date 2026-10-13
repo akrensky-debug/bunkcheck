@@ -77,7 +77,7 @@ or from a scheduler: `POST /api/v1/internal/reminders/run?slot=evening&dry_run=t
 EMAIL_MODE=log                # log (default): log recipient and subject only, send nothing
                               # resend: send through Resend; off: drop
 RESEND_API_KEY=               # needed for resend mode
-EMAIL_FROM=CampFinder <hello@campfinder.com>
+EMAIL_FROM=BunkCheck <hello@mail.bunkcheck.ai>
 REMINDER_TZ=America/New_York  # what "today" means for reminders
 REMINDER_CRON_SECRET=         # enables the HTTP trigger
 ```

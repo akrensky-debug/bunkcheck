@@ -159,7 +159,7 @@ async def run_reminders(dry_run: bool = False, on: date | None = None,
 # Quote-then-book prototype: off unless BOOKING_PROVIDERS is set; sandbox only
 # ---------------------------------------------------------------------------
 
-@router.get("/booking/status", summary="Is booking through CampFinder switched on (sandbox)?")
+@router.get("/booking/status", summary="Is booking through BunkCheck switched on (sandbox)?")
 async def booking_status() -> dict:
     return {"enabled": bookings.is_enabled(), "environment": "sandbox"}
 
