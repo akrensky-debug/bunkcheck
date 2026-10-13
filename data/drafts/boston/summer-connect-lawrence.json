@@ -1,0 +1,79 @@
+{
+  "slug": "summer-connect-lawrence",
+  "name": "Summer Connect",
+  "operator_name": "Merrimack Valley YMCA",
+  "website_url": "https://mvymca.org/program/summer-connect/",
+  "email": "mvyteens@mvymca.org",
+  "phone": "978-686-6191",
+  "street_address": "40 Lawrence St.",
+  "city": "Lawrence",
+  "state": "MA",
+  "zip": "01840",
+  "camp_type": "day",
+  "grade_min": 5,
+  "grade_max": 9,
+  "description_short": "A free summer program for students entering grades 5 to 9 that mixes educational and recreational activities. It runs three days a week at the Lawrence YMCA branch.",
+  "price_min": 0,
+  "price_max": 0,
+  "sources": [
+    {
+      "url": "https://mvymca.org/program/summer-connect/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "grade_min",
+        "grade_max",
+        "description_short",
+        "price_min",
+        "price_max"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://mvymca.org/program/summer-connect/",
+      "kind": "html",
+      "title": "Summer Connect - Teen Summer Camp - Merrimack Valley YMCASearchFacebookLinkedinInstagram-1Scroll to top"
+    },
+    "warnings": [
+      "The page gives no season year or dates. The site footer shows © 2025, so the information may not be current for summer 2027.",
+      "Price is 0 because the page calls it a 'free program'. Check whether there are any fees or eligibility rules.",
+      "Only grades are given (incoming 5th–9th), no ages."
+    ],
+    "unknowns": [
+      "Season year and program dates for summer 2027",
+      "Which three days of the week it runs, and daily hours",
+      "Session structure (weeks/blocks) and how many weeks it runs",
+      "How to register and when registration opens",
+      "Eligibility rules (e.g., residency, school, or membership requirements) and capacity/availability",
+      "Whether meals or snacks are provided",
+      "Specific activities offered",
+      "Transportation availability",
+      "Special needs accommodations",
+      "Swimming/pool use during the program",
+      "Grade definition: 'incoming' 5th-9th means grade entering in the fall"
+    ],
+    "low_confidence": [
+      {
+        "field": "camp_type",
+        "confidence": 0.75,
+        "quote": "The free program runs three days a week, based out of the Lawrence Branch"
+      }
+    ],
+    "errors": [
+      "missing required season_year",
+      "city 'Lawrence', MA is not in cities.py"
+    ]
+  }
+}
