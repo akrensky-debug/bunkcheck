@@ -119,7 +119,7 @@ def validate(records: list[tuple[str, dict[str, Any]]]) -> list[str]:
                 err(f"missing required {f}")
         if c.get("camp_type") not in CAMP_TYPES:
             err(f"camp_type must be one of {sorted(CAMP_TYPES)}")
-        if c.get("state") and geocode_city(c.get("city", ""), c["state"]) is None:
+        if c.get("state") and geocode_city(c.get("city") or "", c["state"]) is None:
             err(f"city {c.get('city')!r}, {c['state']} is not in cities.py")
         if c.get("zip") and not re.fullmatch(r"\d{5}", str(c["zip"])):
             err("zip must be 5 digits")

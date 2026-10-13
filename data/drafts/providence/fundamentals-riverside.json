@@ -1,0 +1,76 @@
+{
+  "slug": "fundamentals-riverside",
+  "name": "FUNdamentals",
+  "operator_name": "FUNdamentals, LLC",
+  "website_url": "https://www.playatfundamentals.com/",
+  "email": "info@playatfundamentals.com",
+  "phone": "401.206.4030",
+  "street_address": "1365 Wampanoag Trail",
+  "city": "Riverside",
+  "state": "RI",
+  "zip": "02915",
+  "description_short": "An indoor play center offering open play, classes, programs, birthday parties, and therapy services and tutoring for young children. The staff say their activities are based on child development principles.",
+  "activities": [
+    "Open play",
+    "Classes",
+    "Play groups",
+    "Workshops",
+    "Therapy services",
+    "Tutoring"
+  ],
+  "sources": [
+    {
+      "url": "https://www.playatfundamentals.com/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "activities",
+        "description_short"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.playatfundamentals.com/",
+      "kind": "html",
+      "title": "FUNdamentals, LLC | play center | East Providence, RI, USA"
+    },
+    "warnings": [
+      "This is the homepage of an indoor play center, not a summer camp page. It does not mention a camp, summer program, sessions, dates or prices.",
+      "The page title says East Providence, but the mailing address says Riverside, RI. Riverside is a village within East Providence.",
+      "No season information. The page doesn't mention 2027 or any summer program."
+    ],
+    "unknowns": [
+      "Whether a summer camp or summer program is offered at all (check the 'Classes & Programs' page)",
+      "Camp type (day/specialty)",
+      "Session dates for 2027",
+      "Prices / weekly rate",
+      "Age or grade range",
+      "Registration URL and registration open date",
+      "Refund policy (see the 'Policies' page)",
+      "Deposit requirement",
+      "Financial aid",
+      "Extended care",
+      "Meals",
+      "Transportation",
+      "Special needs accommodations (they offer therapy services, but no details given)",
+      "ACA accreditation"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "missing required camp_type",
+      "missing required season_year",
+      "camp_type must be one of ['day', 'sleepaway', 'specialty']"
+    ]
+  }
+}

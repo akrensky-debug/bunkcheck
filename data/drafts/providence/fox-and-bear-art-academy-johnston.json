@@ -1,0 +1,74 @@
+{
+  "slug": "fox-and-bear-art-academy-johnston",
+  "name": "Fox & Bear Art Academy",
+  "website_url": "https://www.foxandbearartacademy.com/",
+  "email": "Kaitlin@FoxandBearArtAcademy.com",
+  "street_address": "1478 Atwood Ave, Suite 206",
+  "city": "Johnston",
+  "state": "RI",
+  "zip": "02919",
+  "primary_categories": [
+    "arts"
+  ],
+  "grade_min": 0,
+  "grade_max": 12,
+  "description_short": "An art studio in Johnston, RI, running a weekly after-school art class program for kindergarten through high school, plus adult classes. Fall classes cover printmaking, drawing and painting, and ceramics is listed as coming soon.",
+  "activities": [
+    "Printmaking",
+    "Drawing",
+    "Painting"
+  ],
+  "sources": [
+    {
+      "url": "https://www.foxandbearartacademy.com/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "website_url",
+        "email",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "primary_categories",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "description_short"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.foxandbearartacademy.com/",
+      "kind": "html",
+      "title": "Fox and Bear Art Academy  | Explore Art Today — Join Our Classes"
+    },
+    "warnings": [
+      "This page describes a school-year after-school art program (Fall 2026–Spring 2027) plus birthday parties, not a summer camp. The page doesn't mention any summer camp or summer 2027 sessions.",
+      "The program runs Fall 2026–Spring 2027, so season_year is left blank instead of choosing one of the two years.",
+      "camp_type is left blank because these are ongoing weekly after-school classes, not a day, overnight or specialty camp.",
+      "Ceramics is listed as 'coming soon' and is not included in activities."
+    ],
+    "unknowns": [
+      "Whether a summer camp is offered for 2027, and if so its dates, ages and prices",
+      "Class prices and session/term dates",
+      "Class schedule (days and times)",
+      "Exact age ranges per class",
+      "Phone number",
+      "Registration/booking URL and how to register",
+      "Refund policy and deposit",
+      "Financial aid",
+      "Operator/owner name (only 'Kaitlin' appears in the email)",
+      "Whether the FAQ page (https://www.foxandbearartacademy.com/faq) has more program details"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "missing required camp_type",
+      "missing required season_year",
+      "camp_type must be one of ['day', 'sleepaway', 'specialty']"
+    ]
+  }
+}

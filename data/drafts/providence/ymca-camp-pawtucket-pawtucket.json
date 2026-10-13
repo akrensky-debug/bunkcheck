@@ -1,0 +1,85 @@
+{
+  "slug": "ymca-camp-pawtucket-pawtucket",
+  "name": "YMCA Camp Pawtucket",
+  "operator_name": "YMCA of Pawtucket",
+  "website_url": "https://ymcapawtucket.org/camps/camp-pawtucket",
+  "registration_url": "https://operations.daxko.com/Programs/Redirector.aspx?program_id=22538229&cid=2058",
+  "email": "pawtucketfamily@ymcapawt.org",
+  "phone": "(401) 727-7900",
+  "street_address": "20 Summer Street",
+  "city": "Pawtucket",
+  "state": "RI",
+  "zip": "02860",
+  "camp_type": "day",
+  "age_min": 5,
+  "age_max": 13,
+  "description_short": "A YMCA summer day camp for ages 5–13 at the Pawtucket Family YMCA in downtown Pawtucket. Campers rotate through daily activities including crafts, swimming, group games and time outdoors.",
+  "activities": [
+    "crafts",
+    "swimming",
+    "group games",
+    "outdoor time"
+  ],
+  "swim_waterfront_notes": "Swimming is listed among daily activities; the camp is based at the Pawtucket Family YMCA. Pool details and swim testing are not described.",
+  "sources": [
+    {
+      "url": "https://ymcapawtucket.org/camps/camp-pawtucket",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "swim_waterfront_notes"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://ymcapawtucket.org/camps/camp-pawtucket",
+      "kind": "html",
+      "title": "Camp Pawtucket | YMCA OF PAWTUCKET18A612A8-B407-4667-98E0-6C45814FB6EBClose"
+    },
+    "warnings": [
+      "Page is a general overview with no season year, session dates or prices; details may be on the linked 'Day Camp' subpage or registration system.",
+      "Hours shown (Mon–Fri 7 am–6 pm) appear to be the YMCA branch's hours, not necessarily camp hours."
+    ],
+    "unknowns": [
+      "Season year and session dates for 2027",
+      "Weekly price / session prices (page links to 'Find Your Rate')",
+      "Daily camp hours (page shows Pawtucket Family YMCA facility hours Mon–Fri 7 am–6 pm, not confirmed as camp hours)",
+      "Extended care (before/after care) availability",
+      "Registration opening date",
+      "Deposit and refund policy",
+      "Financial aid availability",
+      "Whether lunch/snacks are provided",
+      "Transportation",
+      "ACA accreditation",
+      "Special needs accommodations (page says staff support 'each child's individual needs' but gives no specifics)",
+      "Pool and swim supervision details"
+    ],
+    "low_confidence": [
+      {
+        "field": "registration_url",
+        "confidence": 0.7,
+        "quote": "Register Now"
+      }
+    ],
+    "errors": [
+      "missing required season_year"
+    ]
+  }
+}

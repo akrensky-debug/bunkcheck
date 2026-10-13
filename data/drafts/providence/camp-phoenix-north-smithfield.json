@@ -1,0 +1,168 @@
+{
+  "slug": "camp-phoenix-north-smithfield",
+  "name": "Camp Phoenix",
+  "website_url": "https://www.campphoenixonline.com/",
+  "registration_url": "https://www.campphoenixonline.com/registration-pricing",
+  "phone": "(401) 570-7817",
+  "street_address": "2214 Providence Pike",
+  "city": "North Smithfield",
+  "state": "RI",
+  "zip": "02896",
+  "camp_type": "day",
+  "grade_min": 0,
+  "grade_max": 7,
+  "description_short": "A summer day camp for children in kindergarten through 7th grade in North Smithfield, RI. Activities are unplugged and outdoors, kids choose their own activities, and each week has a theme.",
+  "activities": [
+    "Unplugged outdoor activities",
+    "Weekly themed activities"
+  ],
+  "price_per_week": 220,
+  "season_year": 2026,
+  "price_per": "week",
+  "sessions": [
+    {
+      "name": "Week 1: Sci-Fi Week",
+      "start_date": "2026-06-22",
+      "end_date": "2026-06-26",
+      "price": 220,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 2: Nature Week",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-03",
+      "price": 220,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 3: Water Week",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": 220,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 4: Olympic/World Cup Week",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": 220,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 5: Halloween Week",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": 220,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 6: Winter Wonderland Week",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": 220,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 7: Carnival Week",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": 220,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 8: Board Game Week",
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-14",
+      "price": 220,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.campphoenixonline.com/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "camp_type",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "description_short",
+        "price_per_week",
+        "price_per",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=2214+Providence+Pike&city=North+Smithfield&state=RI&benchmark=Public_AR_Current&format=json",
+      "checked": "2026-10-13",
+      "fields": [
+        "zip"
+      ],
+      "note": "ZIP from the US Census geocoder for 2214 PROVIDENCE PIKE, NORTH SMITHFIELD, RI, 02896"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.campphoenixonline.com/",
+      "kind": "html",
+      "title": "Home | Camp Phoenix"
+    },
+    "warnings": [
+      "Filled zip 02896 from the US Census geocoder (2214 PROVIDENCE PIKE, NORTH SMITHFIELD, RI, 02896)",
+      "Old season: the page shows only 2026 ('Year 21') dates and rates, and that season ended in August 2026. No 2027 dates or prices are posted yet, so confidence for 2027 is low.",
+      "Pricing details: there is also a $45 registration fee per camper. The second child pays $190 per week. Daily rates ($85, or $65 for a second child) apply when a camper attends 2 days or fewer in a week. The weekly rate applies at 3 or more days.",
+      "Week 2 (June 29 - July 3) includes the July 3 holiday observance. The page does not say whether camp runs that day or whether the price is adjusted.",
+      "The footer says '© 2035', which looks like a template error."
+    ],
+    "unknowns": [
+      "2027 session dates and rates",
+      "Age range in years (only grades are given)",
+      "Daily hours and drop-off/pick-up times",
+      "Whether extended care (before/after care) is offered",
+      "Whether lunch is included (the page mentions 'Lunch Order', which may be an extra cost)",
+      "Refund and cancellation policy",
+      "Financial aid",
+      "Transportation",
+      "Swimming/waterfront details",
+      "Special needs accommodations",
+      "ACA accreditation",
+      "Email address",
+      "ZIP code",
+      "Operator/organization name",
+      "Registration opening date for 2027",
+      "Availability"
+    ],
+    "low_confidence": [
+      {
+        "field": "price_per_week",
+        "confidence": 0.6,
+        "quote": "$220 per week"
+      },
+      {
+        "field": "sessions[0].start_date",
+        "confidence": 0.6,
+        "quote": "Week 1: Sci-Fi Week (June 22nd-June 26th)"
+      },
+      {
+        "field": "sessions[7].end_date",
+        "confidence": 0.6,
+        "quote": "Week 8: Board Game Week (August 10th-August 14th)"
+      },
+      {
+        "field": "sessions[0].price",
+        "confidence": 0.55,
+        "quote": "$220 per week ... Applies when a camper attends 3 or more days during the week."
+      }
+    ],
+    "errors": []
+  }
+}

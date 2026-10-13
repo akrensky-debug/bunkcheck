@@ -1,0 +1,103 @@
+{
+  "slug": "kent-county-s-best-summer-camp-and-after-school-west-warwick",
+  "name": "Kent County's Best Summer Camp and After School",
+  "operator_name": "Cellucci's Martial Arts LLC",
+  "website_url": "https://kentcountysummercamp.com/",
+  "registration_url": "https://kentcountysummercamp.com/lead-collection-form",
+  "phone": "(401) 822-7780",
+  "street_address": "555 Quaker Lane",
+  "city": "West Warwick",
+  "state": "RI",
+  "zip": "02893",
+  "camp_type": "day",
+  "primary_categories": [
+    "sports",
+    "arts"
+  ],
+  "grade_min": 0,
+  "grade_max": 5,
+  "description_short": "A summer camp for children in kindergarten through 5th grade in West Warwick, RI, run by Cellucci's Martial Arts LLC. Each week includes indoor and outdoor sports, educational lessons, and arts and crafts.",
+  "activities": [
+    "Indoor sports",
+    "Outdoor sports",
+    "Games",
+    "Educational lessons",
+    "Arts and crafts",
+    "Guest speakers",
+    "Water slides",
+    "Bounce houses"
+  ],
+  "season_year": 2027,
+  "sources": [
+    {
+      "url": "https://kentcountysummercamp.com/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "description_short"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://kentcountysummercamp.com/",
+      "kind": "html",
+      "title": "The Best Summer Camp In West Warwick, Rhode Island!"
+    },
+    "warnings": [
+      "Tuition, schedule and enrollment details are not on the page. They are behind a lead-collection form ('we will contact you'), so the registration URL is a contact form, not a direct signup.",
+      "The page is heavy marketing with scarcity claims ('only a few spots left') that can't be checked. Availability was not recorded.",
+      "The owner's letter is dated the same as today (10/13/2026), so the date is probably filled in automatically.",
+      "camp_type 'day' is inferred: the page is for a local campus with an after-school program and mentions 'camp hours', but it never says campers go home each night."
+    ],
+    "unknowns": [
+      "Tuition / weekly price (only given after you submit the lead form)",
+      "Session dates and weekly schedule for 2027",
+      "Daily camp hours",
+      "Exact age range (only grades K-5 are stated)",
+      "Whether extended care (before/after care) is offered during summer",
+      "Whether meals or snacks are included",
+      "Whether transportation is provided",
+      "Deposit and refund policy",
+      "Financial aid availability",
+      "Email address",
+      "ACA accreditation",
+      "Swim/waterfront details (water slides are mentioned)",
+      "Special needs accommodations",
+      "Registration opening date"
+    ],
+    "low_confidence": [
+      {
+        "field": "camp_type",
+        "confidence": 0.7,
+        "quote": "we will give you info about our current tuition rates, weekly schedule, camp hours, and how to enroll"
+      },
+      {
+        "field": "registration_url",
+        "confidence": 0.6,
+        "quote": "Click Here For Tuition Rates, Weekly Schedule, and How To Enroll!"
+      },
+      {
+        "field": "primary_categories",
+        "confidence": 0.75,
+        "quote": "indoor sports, outdoor sports, educational lessons, arts and crafts"
+      }
+    ],
+    "errors": []
+  }
+}

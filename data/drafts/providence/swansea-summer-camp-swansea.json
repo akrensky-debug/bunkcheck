@@ -1,0 +1,86 @@
+{
+  "slug": "swansea-summer-camp-swansea",
+  "name": "Swansea Summer Camp",
+  "operator_name": "Town of Swansea",
+  "website_url": "https://www.swanseama.gov/_T2_R307.html",
+  "email": "Jpozzi@swanseama.gov",
+  "city": "Swansea",
+  "state": "MA",
+  "zip": null,
+  "description_short": "A town-run summer camp in Swansea, MA. Registration is through the town's My REC system, and John Pozzi is the contact.",
+  "sources": [
+    {
+      "url": "https://www.swanseama.gov/_T2_R307.html",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "city",
+        "state",
+        "description_short"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.swanseama.gov/_T2_R307.html",
+      "kind": "html",
+      "title": "Summer Camp Registration is OPEN"
+    },
+    "warnings": [
+      "This is a short news post on the Town of Swansea website, not a full camp page. It has almost no details.",
+      "The post gives no year. Today is 2026-10-13, so 'registration is OPEN' probably refers to a past season, not 2027.",
+      "The camp name is a guess built from the page title and town name. The page doesn't give an official program name.",
+      "City and state come from the town website's domain and header, not from a stated camp address."
+    ],
+    "unknowns": [
+      "Season year and session dates",
+      "Prices / weekly rate",
+      "Ages or grades served",
+      "Camp type (day vs. other) and activities",
+      "Location / street address",
+      "Hours and extended care",
+      "Registration URL (the My REC link wasn't on the page)",
+      "Phone number",
+      "Refund policy, deposit, financial aid",
+      "Meals, transportation, swimming"
+    ],
+    "low_confidence": [
+      {
+        "field": "name",
+        "confidence": 0.5,
+        "quote": "Summer Camp Registration is OPEN"
+      },
+      {
+        "field": "operator_name",
+        "confidence": 0.7,
+        "quote": "Swansea GIS Mapping"
+      },
+      {
+        "field": "city",
+        "confidence": 0.7,
+        "quote": "Swansea GIS Mapping"
+      },
+      {
+        "field": "state",
+        "confidence": 0.7,
+        "quote": "swanseama.gov"
+      },
+      {
+        "field": "description_short",
+        "confidence": 0.6,
+        "quote": "To register your CAMPER please visit My REC"
+      }
+    ],
+    "errors": [
+      "missing required zip",
+      "missing required camp_type",
+      "missing required season_year",
+      "camp_type must be one of ['day', 'sleepaway', 'specialty']"
+    ]
+  }
+}

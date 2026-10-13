@@ -1,0 +1,82 @@
+{
+  "slug": "city-camp-providence",
+  "name": "City Camp",
+  "operator_name": "ECC",
+  "website_url": "https://www.eccri.org/citycamp",
+  "phone": "401-568-4055",
+  "street_address": "Joslin Park (behind William D'abate School), Florence Street",
+  "city": "Providence",
+  "state": "RI",
+  "zip": null,
+  "camp_type": "day",
+  "age_min": 6,
+  "age_max": 12,
+  "description_short": "A free day camp run by ECC for children ages 6-12 who live in the Olneyville and Manton neighborhoods of Providence. Each day starts and ends at Joslin Park, runs 10am-3pm, and includes field trips to places like ECC, the zoo and bowling.",
+  "activities": [
+    "Daily field trips",
+    "Trips to ECC",
+    "Zoo trips",
+    "Bowling"
+  ],
+  "price_per_week": 0,
+  "price_min": 0,
+  "price_max": 0,
+  "price_per": "week",
+  "sources": [
+    {
+      "url": "https://www.eccri.org/citycamp",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "camp_type",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "price_min",
+        "price_max",
+        "price_per_week",
+        "price_per"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.eccri.org/citycamp",
+      "kind": "html",
+      "title": "City Camp — ECC"
+    },
+    "warnings": [
+      "Page shows no dates or season year; it says 'Thank you for another amazing summer!', so it reflects the summer that just ended (likely 2026), not the 2027 season.",
+      "Only open to children who live in the Olneyville and Manton sections of Providence.",
+      "The address in the footer (872 Reservoir Road, Pascoag, RI 02859) is ECC's main office/retreat center, not the City Camp site.",
+      "Price recorded as $0 because the page says the camp is free; it does not say whether any fees apply."
+    ],
+    "unknowns": [
+      "Season year and 2027 session dates (none listed)",
+      "Registration process, registration URL and when registration opens",
+      "Whether lunch or snacks are provided",
+      "Transportation to field trips and to/from Joslin Park",
+      "Whether City Camp itself is covered by ECC's ACA accreditation",
+      "Exact eligibility rules for living in Olneyville/Manton (how residence is checked)",
+      "Supervision before 10am or after 3pm (extended care)",
+      "Swimming or waterfront activities",
+      "Accommodations for special needs",
+      "Email contact",
+      "Zip code of the camp site"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "missing required zip",
+      "missing required season_year"
+    ]
+  }
+}

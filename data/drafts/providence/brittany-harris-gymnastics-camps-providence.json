@@ -1,0 +1,98 @@
+{
+  "slug": "brittany-harris-gymnastics-camps-providence",
+  "name": "Brittany Harris Gymnastics Camps",
+  "operator_name": "Brown University Women's Gymnastics coaching staff",
+  "website_url": "https://www.brittanyharrisgymnasticscamps.com/",
+  "registration_url": "https://register.ryzer.com/camp.cfm?sport=16&id=338479",
+  "city": "Providence",
+  "state": "RI",
+  "zip": null,
+  "camp_type": "specialty",
+  "primary_categories": [
+    "sports"
+  ],
+  "description_short": "Gymnastics camps and clinics in Providence, Rhode Island, run by the Brown University Women's Gymnastics coaching staff. The site lists July and August summer camps and a high-performance clinic.",
+  "activities": [
+    "Gymnastics"
+  ],
+  "price_min": 244,
+  "price_max": 244,
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "November Bears Gymnastics High Performance Clinic",
+      "start_date": "2026-11-01",
+      "end_date": "2026-11-01",
+      "price": 244,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.brittanyharrisgymnasticscamps.com/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "description_short",
+        "price_min",
+        "price_max",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.brittanyharrisgymnasticscamps.com/",
+      "kind": "html",
+      "title": "Brittany Harris Gymnastics Camps | Brown University"
+    },
+    "warnings": [
+      "The only event with dates on the page is a one-day clinic on Nov 1, 2026, not a summer camp. The July and August summer camps appear in the menu but have no dates or prices.",
+      "No 2027 summer season information is posted yet.",
+      "The page says 'Other fees may apply at checkout', so the $244 may not be the full cost.",
+      "The menu calls it a 'Fall Clinic' but the event table calls it a 'November ... Clinic'. They appear to be the same event.",
+      "The site is run on Ryzer's registration platform but is the camp's official site."
+    ],
+    "unknowns": [
+      "Dates and prices for the July and August 2027 summer camps",
+      "Age or level requirements",
+      "Whether the camp offers overnight stays or day only",
+      "Daily schedule and hours",
+      "Meals, housing and supervision details",
+      "Refund policy",
+      "Contact phone and email",
+      "Exact address of the facility",
+      "Availability / spots remaining"
+    ],
+    "low_confidence": [
+      {
+        "field": "season_year",
+        "confidence": 0.6,
+        "quote": "November 1st, 2026"
+      },
+      {
+        "field": "price_min",
+        "confidence": 0.7,
+        "quote": "$244.00"
+      },
+      {
+        "field": "price_max",
+        "confidence": 0.7,
+        "quote": "$244.00"
+      }
+    ],
+    "errors": [
+      "missing required zip"
+    ]
+  }
+}

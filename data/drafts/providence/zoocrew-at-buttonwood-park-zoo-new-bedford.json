@@ -1,0 +1,137 @@
+{
+  "slug": "zoocrew-at-buttonwood-park-zoo-new-bedford",
+  "name": "ZooCrew at Buttonwood Park Zoo",
+  "operator_name": "Buttonwood Park Zoological Society",
+  "website_url": "https://www.bpzoo.org/education-and-conservation/for-families/zoocrew/",
+  "email": "cdoremus@bpzoo.org",
+  "phone": "508-991-4556",
+  "street_address": "425 Hawthorn Street",
+  "city": "New Bedford",
+  "state": "MA",
+  "zip": "02740",
+  "camp_type": "day",
+  "primary_categories": [
+    "nature",
+    "STEM"
+  ],
+  "age_min": 4,
+  "age_max": 12,
+  "description_short": "A day camp at Buttonwood Park Zoo for ages 4-12, with a different animal or nature theme each week. Days include crafts, games, activities and animal encounters, plus recess in the Nature Play area. Summer runs in July and August, with short programs in February and April.",
+  "activities": [
+    "Crafts",
+    "Games",
+    "Animal encounters",
+    "Nature Play recess",
+    "Citizen science projects"
+  ],
+  "price_per_week": 350,
+  "price_min": 175,
+  "price_max": 350,
+  "financial_aid": true,
+  "meals_included": false,
+  "refund_policy_summary": "Cancellations are accepted until the week before your child's start date. After that there are no refunds, except for cancellations due to a Covid diagnosis.",
+  "season_year": 2026,
+  "price_per": "week",
+  "sessions": [
+    {
+      "name": "Winter ZooCrew: Nature's Weirdos",
+      "start_date": "2026-02-17",
+      "end_date": "2026-02-20",
+      "price": 240,
+      "availability": "unknown"
+    },
+    {
+      "name": "Spring ZooCrew: The Most Extreme: Builders",
+      "start_date": "2026-04-21",
+      "end_date": "2026-04-24",
+      "price": 240,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.bpzoo.org/education-and-conservation/for-families/zoocrew/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "price_min",
+        "price_max",
+        "price_per_week",
+        "price_per",
+        "meals_included",
+        "financial_aid",
+        "refund_policy_summary",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.bpzoo.org/education-and-conservation/for-families/zoocrew/",
+      "kind": "html",
+      "title": "ZooCrew | The Buttonwood Park Zoo"
+    },
+    "warnings": [
+      "All dates on the page are for the 2026 season and have already passed (today is 2026-10-13). No 2027 information is posted yet.",
+      "Winter and spring prices ($240) were worked out from $60/day x 4 days. They are not printed as totals on the page.",
+      "Summer session prices show the full-day rate ($350/week). Half day ($175/week) is only for 4- and 5-year-olds, who must be potty-trained.",
+      "Members get 15% off. Prices shown are non-member rates.",
+      "The summer scholarship window is labeled 'Deadline' but listed as 'February 1st – May 31st'.",
+      "Lunch is $10/day unless you pack one. Lunch is included for scholarship recipients.",
+      "The 4-5 age group overlaps with the 6-7 group in the week of 7/13. The page says each age group overlaps with another once.",
+      "12 sessions without full dates were left out"
+    ],
+    "unknowns": [
+      "2027 season dates, prices and registration dates",
+      "End dates of the summer weeks (the page only says 'Week of')",
+      "Direct registration URL (no link was captured)",
+      "Whether early drop-off or after-care is offered (lunch orders are taken at 8:45 am drop-off)",
+      "Whether a deposit is required",
+      "Whether transportation is offered",
+      "Whether spots are currently open",
+      "Camper-to-staff ratio and staff qualifications",
+      "Support for children with special needs"
+    ],
+    "low_confidence": [
+      {
+        "field": "sessions[0].start_date",
+        "confidence": 0.75,
+        "quote": "Dates: February 17 – 20 ... Registration Starts: January 1, 2026"
+      },
+      {
+        "field": "sessions[0].price",
+        "confidence": 0.7,
+        "quote": "Cost: $60/day – Members receive a 15% discount"
+      },
+      {
+        "field": "sessions[1].start_date",
+        "confidence": 0.75,
+        "quote": "Dates: April 21 – 24 ... Registration Starts: March 1, 2026"
+      },
+      {
+        "field": "sessions[1].price",
+        "confidence": 0.7,
+        "quote": "Cost: $60/day – Members receive a 15% discount"
+      }
+    ],
+    "errors": [
+      "city 'New Bedford', MA is not in cities.py"
+    ]
+  }
+}

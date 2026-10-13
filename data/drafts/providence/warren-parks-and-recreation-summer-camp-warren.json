@@ -1,0 +1,78 @@
+{
+  "slug": "warren-parks-and-recreation-summer-camp-warren",
+  "name": "Warren Parks & Recreation Summer Camp",
+  "operator_name": "Town of Warren Parks & Recreation",
+  "website_url": "https://www.townofwarren-ri.gov/town_government/departments/parks_and_recreation/visit_our_summer_camp_page_here.php",
+  "city": "Warren",
+  "state": "RI",
+  "zip": null,
+  "sources": [
+    {
+      "url": "https://www.townofwarren-ri.gov/town_government/departments/parks_and_recreation/visit_our_summer_camp_page_here.php",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "city",
+        "state"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.townofwarren-ri.gov/town_government/departments/parks_and_recreation/visit_our_summer_camp_page_here.php",
+      "kind": "html",
+      "title": "Warren, Rhode Island"
+    },
+    "warnings": [
+      "The page text is the Town of Warren homepage (navigation menu, town news, town hall contact info), not a summer camp page. It has no camp details, even though the URL points to a summer camp page. The page may have redirected or be out of date.",
+      "The only thing linking to a camp is a 'Summer Camp' item in the Parks & Recreation menu. The camp name is made up from that menu item and is not an official title.",
+      "The contact details on the page (401-245-7340, 514 Main Street, Warren, RI 02885) are for Town Hall, not the camp, so they were not recorded as the camp's contact or location.",
+      "No season year is shown. The newest item on the page is dated October 2026, but nothing about camp dates is given."
+    ],
+    "unknowns": [
+      "Season year and session dates",
+      "Ages or grades served",
+      "Price per week or per session, deposit, refund policy",
+      "Daily hours and extended care",
+      "Camp location / street address",
+      "Camp phone and email",
+      "Registration URL and when registration opens",
+      "Activities offered",
+      "Camp type (presumably a town day camp, but not stated)",
+      "Resident vs. non-resident eligibility or pricing",
+      "Financial aid, meals, transportation, swimming/waterfront, special needs accommodations"
+    ],
+    "low_confidence": [
+      {
+        "field": "name",
+        "confidence": 0.5,
+        "quote": "Parks & Recreation ... Summer Camp"
+      },
+      {
+        "field": "operator_name",
+        "confidence": 0.6,
+        "quote": "Parks & Recreation"
+      },
+      {
+        "field": "city",
+        "confidence": 0.5,
+        "quote": "514 Main Street, Warren, RI 02885"
+      },
+      {
+        "field": "state",
+        "confidence": 0.6,
+        "quote": "Welcome to the Town of Warren, Rhode Island"
+      }
+    ],
+    "errors": [
+      "missing required zip",
+      "missing required camp_type",
+      "missing required season_year",
+      "camp_type must be one of ['day', 'sleepaway', 'specialty']"
+    ]
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "slug": "brown-and-blue-lacrosse-fall-clinic",
+  "name": "Brown & Blue Lacrosse Fall Clinic",
+  "operator_name": "Tufts University Women's Lacrosse",
+  "website_url": "https://www.brownandbluelacrosse.com/",
+  "registration_url": "https://register.ryzer.com/camp.cfm?sport=27&id=343132",
+  "city": null,
+  "state": null,
+  "zip": null,
+  "camp_type": "specialty",
+  "primary_categories": [
+    "sports"
+  ],
+  "grade_min": 9,
+  "grade_max": 12,
+  "description_short": "A one-day fall lacrosse clinic on November 1, 2026, run by Tufts University Women's Lacrosse for high school students in grades 9-12.",
+  "activities": [
+    "Lacrosse"
+  ],
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Fall Clinic",
+      "start_date": "2026-11-01",
+      "end_date": "2026-11-01",
+      "price": null,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.brownandbluelacrosse.com/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "description_short",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.brownandbluelacrosse.com/",
+      "kind": "html",
+      "title": "Brown & Blue Lacrosse"
+    },
+    "warnings": [
+      "This is a one-day fall clinic, not a summer camp. No summer 2027 sessions are listed on the page.",
+      "The price is behind a 'See Prices' JavaScript link and does not appear in the source text. The page also says 'Other fees may apply at checkout.'",
+      "The page lists the event as a single date (11/01/2026), so I assumed it is a one-day event.",
+      "The site is hosted by Ryzer, a registration platform, but it is the official program site for Tufts University Women's Lacrosse."
+    ],
+    "unknowns": [
+      "Price / cost of the clinic",
+      "Start and end times on November 1",
+      "Location / street address (presumably Tufts University campus, but not stated)",
+      "Whether the clinic is for girls only (run by the women's team; page says entry may be limited by gender)",
+      "Skill level requirements",
+      "Availability / spots remaining",
+      "Refund policy",
+      "Contact email and phone",
+      "Any summer 2027 camp dates"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "missing required city",
+      "missing required state",
+      "missing required zip"
+    ]
+  }
+}

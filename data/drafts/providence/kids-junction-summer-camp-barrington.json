@@ -1,0 +1,172 @@
+{
+  "slug": "kids-junction-summer-camp-barrington",
+  "name": "Kids Junction Summer Camp",
+  "operator_name": "Kids Junction",
+  "website_url": "http://kidsjunctionri.com/summer-camp/",
+  "registration_url": "http://kidsjunctionri.com/summer-registration-form/",
+  "city": "Barrington",
+  "state": "RI",
+  "zip": null,
+  "camp_type": "day",
+  "primary_categories": [
+    "sports",
+    "arts",
+    "STEM",
+    "nature",
+    "performing_arts"
+  ],
+  "age_min": 3,
+  "age_max": 12,
+  "description_short": "A summer day camp in Barrington, RI for ages 3–12 with weekly themes, swim lessons, sports, arts and crafts, cooking, theater, and science and nature. Hours are 7:00 a.m. to 6:00 p.m. Field trips are optional, cost extra, and are open only to children entering Grade 1 or higher.",
+  "activities": [
+    "Swim lessons",
+    "Weekly themes",
+    "Cooking",
+    "Daily sports",
+    "Arts & crafts",
+    "Theater",
+    "Science and nature",
+    "Field trips",
+    "Special guests/events"
+  ],
+  "swim_waterfront_notes": "Swim lessons are listed as a camp highlight. The page does not say where swimming takes place or what the swim staffing is.",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Week 1",
+      "start_date": "2026-06-22",
+      "end_date": "2026-06-26",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 2: Happy Birthday, America!",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-03",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 3: Creepy, Crawly Bug Week",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 4: STEM and Creation Week",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 5: Storybooks & Fairytales",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 6: Time Travelin'",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 7: Mermaids & Pirates Week",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 8: Super Animal Safari Week",
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-14",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 9: Around the World in 5 Days",
+      "start_date": "2026-08-17",
+      "end_date": "2026-08-21",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 10: Down by the Sea Week",
+      "start_date": "2026-08-24",
+      "end_date": "2026-08-28",
+      "price": null,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "http://kidsjunctionri.com/summer-camp/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "swim_waterfront_notes",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "http://kidsjunctionri.com/summer-camp/",
+      "kind": "html",
+      "title": "Summer Camp"
+    },
+    "warnings": [
+      "This page shows only the 2026 season (June 22 – August 28, 2026), which has already ended. The 2027 dates, themes and field trips are not posted yet.",
+      "Week 1 (June 22–26) does not appear in the theme list. Its dates come from the season start date and the field trip schedule, which numbers June 30 as Week 2.",
+      "Field trips cost extra, have limited spots, and are only for children entering Grade 1 or higher. You are charged for a trip you signed up for even if your child is absent or late."
+    ],
+    "unknowns": [
+      "2027 season dates",
+      "Weekly or session price",
+      "Field trip fees",
+      "Registration opening date and deposit",
+      "Refund policy",
+      "Whether before/after care is separate from the 7am–6pm hours (the program starts at 8:45 a.m.)",
+      "Meals or snacks",
+      "Transportation for field trips",
+      "Street address, phone, email",
+      "Financial aid",
+      "Special needs accommodations",
+      "Swim lesson location",
+      "Availability"
+    ],
+    "low_confidence": [
+      {
+        "field": "registration_url",
+        "confidence": 0.7,
+        "quote": "Summer Registration Form"
+      },
+      {
+        "field": "sessions[0].start_date",
+        "confidence": 0.6,
+        "quote": "June 22 – August 28, 2026"
+      }
+    ],
+    "errors": [
+      "missing required zip"
+    ]
+  }
+}

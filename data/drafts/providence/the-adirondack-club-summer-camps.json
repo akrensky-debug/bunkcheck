@@ -1,0 +1,84 @@
+{
+  "slug": "the-adirondack-club-summer-camps",
+  "name": "The Adirondack Club Summer Camps",
+  "operator_name": "The Adirondack Club",
+  "website_url": "https://www.adirondackclub.com/camps",
+  "email": "memberservices@adirondackclub.com",
+  "phone": "(508) 541-1400",
+  "city": null,
+  "state": null,
+  "zip": null,
+  "primary_categories": [
+    "sports",
+    "arts"
+  ],
+  "description_short": "The Adirondack Club, a fitness and family club, runs three themed summer camps: Adventure Camp, Arts Camp and Sports Camp. Families can pick one camp or mix and match across the summer.",
+  "activities": [
+    "Sports",
+    "Arts",
+    "Adventure"
+  ],
+  "season_year": 2026,
+  "sources": [
+    {
+      "url": "https://www.adirondackclub.com/camps",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "phone",
+        "primary_categories",
+        "activities",
+        "description_short"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.adirondackclub.com/camps",
+      "kind": "html",
+      "title": "CAMPS | Adirondack Club"
+    },
+    "warnings": [
+      "Only the 2026 season is shown, and it has already ended (today is 2026-10-13). There is nothing yet about summer 2027.",
+      "This is an overview page for three separate camps (Adventure, Arts, Sports). Dates, prices and ages are only in brochures that this text does not include.",
+      "The 'JULY CHILDCARE HOURS' block (Mon-Fri 7:45am-12:00pm, reservations at ext. 203) seems to be about the club's general childcare, not the summer camps, so it was not recorded as camp hours.",
+      "The page mentions a 'WEEK 10 NEWSLETTER', so the 2026 camp season probably ran for about 10 weeks. Not recorded as sessions."
+    ],
+    "unknowns": [
+      "2027 session dates and weeks for each camp",
+      "Price per week or per session",
+      "Age or grade range for each camp",
+      "Camp type (day vs. overnight). Probably day camp, but the page doesn't say",
+      "Street address, city, state, zip",
+      "Daily camp hours and whether before- or after-care is offered",
+      "Registration URL and when registration opens",
+      "Refund policy (there's a 'Terms, Policies & Waiver' link, but its content isn't shown)",
+      "Deposit requirement",
+      "Financial aid",
+      "Whether lunch or snacks are included",
+      "Swim or pool use during camp",
+      "Transportation",
+      "Accommodations for special needs",
+      "ACA accreditation"
+    ],
+    "low_confidence": [
+      {
+        "field": "season_year",
+        "confidence": 0.6,
+        "quote": "SUMMER CAMP 2026 INFO AND WEEKS ARE NOW AVAILABLE IN OUR SUMMER CAMP BROCHURES"
+      }
+    ],
+    "errors": [
+      "missing required city",
+      "missing required state",
+      "missing required zip",
+      "missing required camp_type",
+      "camp_type must be one of ['day', 'sleepaway', 'specialty']"
+    ]
+  }
+}

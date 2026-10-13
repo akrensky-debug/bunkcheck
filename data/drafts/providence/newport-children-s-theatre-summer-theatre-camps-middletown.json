@@ -1,0 +1,127 @@
+{
+  "slug": "newport-children-s-theatre-summer-theatre-camps-middletown",
+  "name": "Newport Children's Theatre Summer Theatre Camps",
+  "operator_name": "Newport Children's Theatre",
+  "website_url": "https://www.newportchildrenstheatre.org/summer-camps",
+  "email": "office@newportchildrenstheatre.org",
+  "street_address": "1341 West Main St.",
+  "city": "Middletown",
+  "state": "RI",
+  "zip": "02842",
+  "camp_type": "specialty",
+  "primary_categories": [
+    "performing_arts"
+  ],
+  "age_min": 8,
+  "age_max": 18,
+  "description_short": "Newport Children's Theatre runs summer theatre camps for ages 8-18 at its studio in Middletown, RI. Past camps have put on musicals and plays such as Something Rotten and Anne of Green Gables.",
+  "activities": [
+    "Musical theatre",
+    "Plays",
+    "Auditions"
+  ],
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Summer Theatre Camp (ages 8-12)",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-02",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Summer Theatre Camp (ages 8-18, auditions July 11)",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-25",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Summer Theatre Camp (ages 8-18)",
+      "start_date": "2026-07-27",
+      "end_date": "2026-08-08",
+      "price": null,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.newportchildrenstheatre.org/summer-camps",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "street_address",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=1341+West+Main+St.&city=Middletown&state=RI&benchmark=Public_AR_Current&format=json",
+      "checked": "2026-10-13",
+      "fields": [
+        "zip"
+      ],
+      "note": "ZIP from the US Census geocoder for 1341 W MAIN RD, MIDDLETOWN, RI, 02842"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.newportchildrenstheatre.org/summer-camps",
+      "kind": "html",
+      "title": "Summer Camps | Newport Children's Theatre"
+    },
+    "warnings": [
+      "Filled zip 02842 from the US Census geocoder (1341 W MAIN RD, MIDDLETOWN, RI, 02842)",
+      "The page doesn't give a year for the session dates. I inferred 2026 because the dates match 2026 weekdays (June 29 and July 13 are Mondays in 2026), the menu mentions 'Teen Rep 2026', and the past productions list stops at 2025. If that's right, this season is already over (today is 2026-10-13), and the 2027 dates are not posted yet.",
+      "The page doesn't say which session goes with which age group or production. I matched the age ranges to the dates in the order they appear on the page."
+    ],
+    "unknowns": [
+      "2027 session dates",
+      "Prices and deposit",
+      "Daily hours and whether extended care is offered",
+      "Session names or productions for the upcoming season",
+      "Registration URL and when registration opens",
+      "Availability",
+      "Financial aid (the page links to a separate Financial Policy page)",
+      "Refund policy",
+      "Phone number",
+      "Studio zip code",
+      "Whether the 2-week sessions require auditions for casting only or for admission"
+    ],
+    "low_confidence": [
+      {
+        "field": "season_year",
+        "confidence": 0.5,
+        "quote": "Teen Rep 2026"
+      },
+      {
+        "field": "sessions[0].start_date",
+        "confidence": 0.5,
+        "quote": "for ages 8-12 June 29-July 2nd"
+      },
+      {
+        "field": "sessions[1].start_date",
+        "confidence": 0.5,
+        "quote": "for ages 8-18 auditions July 11th July 13-25th"
+      },
+      {
+        "field": "sessions[2].start_date",
+        "confidence": 0.5,
+        "quote": "for ages 8-18 July 27-August 8th"
+      }
+    ],
+    "errors": []
+  }
+}

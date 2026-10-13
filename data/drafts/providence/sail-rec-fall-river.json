@@ -1,0 +1,85 @@
+{
+  "slug": "sail-rec-fall-river",
+  "name": "Sail Rec!",
+  "operator_name": "Greater Fall River RE-CREATION",
+  "website_url": "https://gfrrec.org/sailing-2/",
+  "registration_url": "https://gfrrec.org/register/",
+  "email": "gfrrec@gfrrec.org",
+  "phone": "508-679-0922 ext. 148",
+  "city": "Fall River",
+  "state": "MA",
+  "zip": null,
+  "camp_type": "specialty",
+  "primary_categories": [
+    "sports"
+  ],
+  "description_short": "A non-profit learn-to-sail program run by Greater Fall River RE-CREATION at its boathouse in Heritage State Park, where new sailors learn to captain their own boat on the river. Spring and summer programs are offered.",
+  "activities": [
+    "Sailing"
+  ],
+  "swim_waterfront_notes": "Sailing takes place on the river from RE-CREATION's Boathouse at Heritage State Park, under a permit arrangement with the MA Department of Conservation and Recreation (DCR).",
+  "sources": [
+    {
+      "url": "https://gfrrec.org/sailing-2/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "description_short",
+        "swim_waterfront_notes"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://gfrrec.org/sailing-2/",
+      "kind": "html",
+      "title": "Sailing – Greater Fall River RE-CREATION"
+    },
+    "warnings": [
+      "The page has no season year, dates, prices or ages. It only says 'Spring & Summer Sailing'. season_year is left blank.",
+      "Session and pricing details seem to be in a brochure linked on the page ('Check out our brochure below'), but its contents are not in the source text.",
+      "45 Rock Street, Fall River, MA 02720 is the main address of Greater Fall River RE-CREATION. Sailing happens at the Boathouse in Heritage State Park, so the street address is left blank.",
+      "The page footer says © 2017, and the latest annual report listed is 2018-2019. The page may not be updated often."
+    ],
+    "unknowns": [
+      "Session dates for the 2027 season",
+      "Prices / weekly rate",
+      "Age or grade range",
+      "Daily schedule and hours",
+      "Whether a deposit is required",
+      "Refund policy",
+      "Financial aid or scholarships (the page says the program is grant-funded and affordable but gives no details)",
+      "Program contents and session names (the page points to a brochure that is not in the text)",
+      "Street address of the boathouse in Heritage State Park",
+      "Whether lunch is provided",
+      "Swim test or life jacket requirements",
+      "Supervision ratios and ACA accreditation",
+      "Accommodations for special needs",
+      "Transportation",
+      "Extended care"
+    ],
+    "low_confidence": [
+      {
+        "field": "registration_url",
+        "confidence": 0.7,
+        "quote": "REGISTER"
+      }
+    ],
+    "errors": [
+      "missing required zip",
+      "missing required season_year"
+    ]
+  }
+}

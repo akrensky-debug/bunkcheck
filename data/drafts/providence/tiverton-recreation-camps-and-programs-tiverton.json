@@ -1,0 +1,108 @@
+{
+  "slug": "tiverton-recreation-camps-and-programs-tiverton",
+  "name": "Tiverton Recreation Camps & Programs",
+  "operator_name": "Town of Tiverton Recreation & Beaches",
+  "website_url": "https://www.tiverton.ri.gov/174/Camps-Programs",
+  "phone": "(401) 625-6700",
+  "street_address": "343 Highland Road",
+  "city": "Tiverton",
+  "state": "RI",
+  "zip": "02878",
+  "description_short": "Index page for the Town of Tiverton's recreation camps and programs. The page names Sunset Yoga, Intro to Surfcasting and Tiverton Tennis but gives no details.",
+  "activities": [
+    "Sunset Yoga",
+    "Intro to Surfcasting",
+    "Tiverton Tennis"
+  ],
+  "sources": [
+    {
+      "url": "https://www.tiverton.ri.gov/174/Camps-Programs",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "activities",
+        "description_short"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.tiverton.ri.gov/174/Camps-Programs",
+      "kind": "html",
+      "title": "Camps & Programs | Tiverton, RIArrow LeftArrow RightSlideshow Left ArrowSlideshow Right Arrow"
+    },
+    "warnings": [
+      "This is a town government index page for many recreation programs, not the page for one specific camp. Each program's details are on separate pages behind icons that weren't captured.",
+      "The page shows no season year, dates, prices or ages. It may be out of date or show a past season.",
+      "The address and phone number are for Tiverton Town Hall in general and may not be the direct contact for the recreation department or a camp.",
+      "The listed programs (Sunset Yoga, Intro to Surfcasting, Tennis) may be adult or all-ages programs, not youth summer camps.",
+      "The page mentions a registration button, but no registration link was captured."
+    ],
+    "unknowns": [
+      "Which specific youth camps are offered",
+      "Season year and session dates",
+      "Prices and deposit",
+      "Age or grade range",
+      "Day camp vs. specialty program type",
+      "Registration URL and when registration opens",
+      "Program location(s)",
+      "Hours and extended care",
+      "Refund policy",
+      "Financial aid",
+      "Swim/waterfront details",
+      "Recreation department email and direct phone",
+      "Special needs accommodations"
+    ],
+    "low_confidence": [
+      {
+        "field": "name",
+        "confidence": 0.6,
+        "quote": "Recreation & Beaches Camps & Programs"
+      },
+      {
+        "field": "operator_name",
+        "confidence": 0.7,
+        "quote": "Government Boards & Commissions Recreation & Beaches"
+      },
+      {
+        "field": "street_address",
+        "confidence": 0.5,
+        "quote": "Tiverton Town Hall 343 Highland Road Tiverton, RI 02878"
+      },
+      {
+        "field": "zip",
+        "confidence": 0.5,
+        "quote": "Tiverton, RI 02878"
+      },
+      {
+        "field": "phone",
+        "confidence": 0.5,
+        "quote": "Phone: (401) 625-6700"
+      },
+      {
+        "field": "activities",
+        "confidence": 0.5,
+        "quote": "Sunset Yoga  Intro to Surfcasting  Tiverton Tennis"
+      },
+      {
+        "field": "description_short",
+        "confidence": 0.6,
+        "quote": "CLICK ON ANY ICON BELOW TO LEARN MORE ABOUT THE PROGRAM BEING OFFERED."
+      }
+    ],
+    "errors": [
+      "missing required camp_type",
+      "missing required season_year",
+      "camp_type must be one of ['day', 'sleepaway', 'specialty']"
+    ]
+  }
+}

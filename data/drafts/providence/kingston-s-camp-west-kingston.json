@@ -1,0 +1,93 @@
+{
+  "slug": "kingston-s-camp-west-kingston",
+  "name": "Kingston's Camp",
+  "website_url": "https://www.kingstonscamp.com/kingstons-camp-home",
+  "registration_url": "https://app.campdoc.com/!/dn/login?r=kingstonscamp",
+  "email": "info@kingstonscamp.com",
+  "phone": "401-783-8620",
+  "street_address": "2795 Ministerial Road",
+  "city": "West Kingston",
+  "state": "RI",
+  "zip": "02892",
+  "primary_categories": [
+    "nature",
+    "arts",
+    "sports"
+  ],
+  "description_short": "A small, independently run, all-outdoor summer camp in West Kingston, RI, with an Elementary Program and a Middle School Program. Activities include swimming, arts and crafts, and field games, and the camp is unplugged.",
+  "activities": [
+    "Swimming",
+    "Arts & crafts",
+    "Field games",
+    "Nature / environmental stewardship"
+  ],
+  "season_year": 2026,
+  "sources": [
+    {
+      "url": "https://www.kingstonscamp.com/kingstons-camp-home",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "primary_categories",
+        "activities",
+        "description_short"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=2795+Ministerial+Road&city=West+Kingston&state=RI&benchmark=Public_AR_Current&format=json",
+      "checked": "2026-10-13",
+      "fields": [
+        "zip"
+      ],
+      "note": "ZIP from the US Census geocoder for 2795 MINISTERIAL RD, WEST KINGSTON, RI, 02892"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.kingstonscamp.com/kingstons-camp-home",
+      "kind": "html",
+      "title": "HOME | Kingston's Camp"
+    },
+    "warnings": [
+      "Filled zip 02892 from the US Census geocoder (2795 MINISTERIAL RD, WEST KINGSTON, RI, 02892)",
+      "Old season: the page shows Summer 2026, which has already ended as of 2026-10-13. No 2027 dates, prices or sessions are posted.",
+      "The 2026 live update (2/28/26) says the Elementary Program was full and waitlisted for all weeks, and the Middle School Program had limited availability. It also says the waitlist 'gives the opportunity for early registration for 2027'.",
+      "This is the home page only. Pricing and session details are on a separate page (https://www.kingstonscamp.com/kc-camp-registration-pricing) that was not included in this source.",
+      "The page doesn't say directly whether this is a day camp. It is described as an all-outdoor summer camp, and a day camp seems likely but isn't confirmed."
+    ],
+    "unknowns": [
+      "2027 session dates and weeks",
+      "2027 pricing / weekly rate",
+      "Camp type (day vs. overnight), daily hours",
+      "Exact ages or grades for the Elementary and Middle School programs",
+      "When 2027 registration opens",
+      "ZIP code",
+      "Swimming/waterfront details (possible connection to Larkins Pond Beach Club)",
+      "Extended care, meals, transportation",
+      "Deposit and refund policy",
+      "Financial aid",
+      "ACA accreditation",
+      "Special needs accommodations"
+    ],
+    "low_confidence": [
+      {
+        "field": "primary_categories",
+        "confidence": 0.75,
+        "quote": "within an all outdoor camp environment"
+      }
+    ],
+    "errors": [
+      "missing required camp_type",
+      "camp_type must be one of ['day', 'sleepaway', 'specialty']"
+    ]
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "slug": "camp-kaleidoscope",
+  "name": "Camp Kaleidoscope",
+  "website_url": "https://kaleidoscopepvd.org/camp.html",
+  "registration_url": "https://kaleidoscopepvd.cheddarup.com",
+  "city": null,
+  "state": null,
+  "zip": null,
+  "camp_type": "day",
+  "primary_categories": [
+    "STEM",
+    "arts",
+    "technology"
+  ],
+  "description_short": "A day camp running 8:30 am to 3:30 pm where campers pick from optional staff-led activities such as open shop, electronics, cardboard crafts, art, programming and science projects, or work on their own projects. Campers design their own camp day.",
+  "activities": [
+    "open shop",
+    "electronics",
+    "cardboard crafts",
+    "art-making",
+    "computer programming",
+    "science projects",
+    "outdoor games",
+    "free play",
+    "self-directed projects"
+  ],
+  "price_per_week": 350,
+  "price_min": 350,
+  "price_max": 350,
+  "financial_aid": true,
+  "season_year": 2026,
+  "price_per": "week",
+  "sessions": [
+    {
+      "name": "Session 1",
+      "start_date": "2026-06-22",
+      "end_date": "2026-06-26",
+      "price": 350,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 2",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-03",
+      "price": 350,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://kaleidoscopepvd.org/camp.html",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "website_url",
+        "registration_url",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "description_short",
+        "price_min",
+        "price_max",
+        "price_per_week",
+        "price_per",
+        "financial_aid",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://kaleidoscopepvd.org/camp.html",
+      "kind": "html",
+      "title": "Camp – Camp Kaleidoscope"
+    },
+    "warnings": [
+      "The page only shows Summer 2026 (June 22 – July 3, 2026), and those dates have already passed as of 2026-10-13. Dates and prices for 2027 have not been posted.",
+      "The page shows 'Sliding Scale' next to the base price but gives no details. Price_min/price_max reflect only the $350 base price, so actual cost may be lower.",
+      "The daily schedule overlaps: the afternoon meeting runs 12:30–1:30 pm, but afternoon workshops start at 1 pm."
+    ],
+    "unknowns": [
+      "2027 session dates and prices",
+      "Age or grade range of campers",
+      "Location / street address (the domain 'pvd' hints at Providence, RI, but the page does not say so)",
+      "Contact phone and email",
+      "Operator / organization name",
+      "Details of the sliding scale and how to qualify",
+      "Whether lunch is provided or campers bring their own",
+      "Extended care (before/after hours)",
+      "Deposit and refund policy",
+      "Transportation",
+      "ACA accreditation",
+      "Availability / enrollment status",
+      "Accommodations for special needs"
+    ],
+    "low_confidence": [
+      {
+        "field": "price_min",
+        "confidence": 0.7,
+        "quote": "Base Price: $350/week"
+      },
+      {
+        "field": "price_max",
+        "confidence": 0.7,
+        "quote": "Base Price: $350/week"
+      },
+      {
+        "field": "financial_aid",
+        "confidence": 0.65,
+        "quote": "Sliding Scale"
+      }
+    ],
+    "errors": [
+      "missing required city",
+      "missing required state",
+      "missing required zip"
+    ]
+  }
+}

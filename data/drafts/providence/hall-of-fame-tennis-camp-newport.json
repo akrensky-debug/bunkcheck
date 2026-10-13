@@ -1,0 +1,119 @@
+{
+  "slug": "hall-of-fame-tennis-camp-newport",
+  "name": "Hall of Fame Tennis Camp",
+  "operator_name": "International Tennis Hall of Fame",
+  "website_url": "https://www.tennisfame.com/club/junior",
+  "email": "newport@tennisfame.com",
+  "phone": "401-849-4777",
+  "street_address": "194 Bellevue Avenue",
+  "city": "Newport",
+  "state": "RI",
+  "zip": "02840",
+  "camp_type": "specialty",
+  "primary_categories": [
+    "sports"
+  ],
+  "age_min": 8,
+  "age_max": 16,
+  "description_short": "A half-day junior tennis camp for ages 8-16 at the International Tennis Hall of Fame in Newport. It runs Monday to Friday, 8:30-11:30 am, in weekly sessions with at most 4 players per court.",
+  "activities": [
+    "Tennis"
+  ],
+  "price_per_week": 600,
+  "price_min": 450,
+  "price_max": 600,
+  "season_year": 2026,
+  "price_per": "week",
+  "sources": [
+    {
+      "url": "https://www.tennisfame.com/club/junior",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "price_min",
+        "price_max",
+        "price_per_week",
+        "price_per"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.tennisfame.com/club/junior",
+      "kind": "html",
+      "title": "Hall of Fame Tennis Camp"
+    },
+    "warnings": [
+      "The season is unclear. The page says 'Weekly sessions beginning June 15' with no year. June 15, 2026 was a Monday, and the camp runs Monday to Friday, so this probably describes the 2026 season, which has already happened. June 15, 2027 is a Tuesday. The page also says grass courts reopen in May 2027. 2027 prices and dates may be different.",
+      "No individual weeks are listed, only the start date, so no sessions were recorded.",
+      "Prices depend on membership: $450/week for members, $600/week for non-members. A $200 Junior Summer Membership gives discounted camp rates. price_per_week uses the non-member rate.",
+      "The page also lists a separate Hall of Fame Beginner Program for ages 4-7 (Tue/Thu, 3:30-4:30 pm, $80 member / $120 non-member per week). That is a weekly class, not this camp, so it was left out.",
+      "The phone number is the Pro Shop, which the page gives for court bookings and lessons. The general ITHF number in the footer is 401-849-3990. The email is the general Hall of Fame address."
+    ],
+    "unknowns": [
+      "2027 session dates and the number of weeks",
+      "2027 prices",
+      "End date of the summer season",
+      "When registration opens",
+      "Registration URL (the page has a 'Register & Pay' button but no link was captured)",
+      "Availability",
+      "Refund policy",
+      "Deposit",
+      "Financial aid",
+      "Extended care",
+      "Meals/snacks",
+      "Transportation",
+      "Special needs accommodations",
+      "ACA accreditation"
+    ],
+    "low_confidence": [
+      {
+        "field": "price_per_week",
+        "confidence": 0.6,
+        "quote": "Non-Member $600 per week"
+      },
+      {
+        "field": "price_min",
+        "confidence": 0.6,
+        "quote": "Member $450 per week"
+      },
+      {
+        "field": "price_max",
+        "confidence": 0.6,
+        "quote": "Non-Member $600 per week"
+      },
+      {
+        "field": "phone",
+        "confidence": 0.75,
+        "quote": "please call our Pro-Shop at 401-849-4777"
+      },
+      {
+        "field": "email",
+        "confidence": 0.7,
+        "quote": "newport@tennisfame.com"
+      },
+      {
+        "field": "season_year",
+        "confidence": 0.5,
+        "quote": "Weekly sessions beginning June 15"
+      }
+    ],
+    "errors": []
+  }
+}

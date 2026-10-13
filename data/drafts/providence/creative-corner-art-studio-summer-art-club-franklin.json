@@ -1,0 +1,85 @@
+{
+  "slug": "creative-corner-art-studio-summer-art-club-franklin",
+  "name": "Creative Corner Art Studio – Summer Art Club",
+  "operator_name": "Creative Corner Art Studio",
+  "website_url": "https://www.creativecornerartstudiofranklin.com/",
+  "email": "amy.creativecornerartstudio@gmail.com",
+  "street_address": "21 E Central St",
+  "city": "Franklin",
+  "state": "MA",
+  "zip": "02038",
+  "camp_type": "specialty",
+  "primary_categories": [
+    "arts"
+  ],
+  "description_short": "Creative Corner is a community art studio in downtown Franklin, MA, that runs art classes for all ages. The studio lists a Summer Art Club, but this page gives no details about it.",
+  "refund_policy_summary": "No refunds on studio events, services or products. You can get a credit instead, good for up to one year from purchase, toward any studio event, class or studio-branded merchandise. This does not cover artwork by local or third-party artists.",
+  "sources": [
+    {
+      "url": "https://www.creativecornerartstudiofranklin.com/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "description_short",
+        "refund_policy_summary"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.creativecornerartstudiofranklin.com/",
+      "kind": "html",
+      "title": "Art Classes | Creative Corner Art Studio | Franklin"
+    },
+    "warnings": [
+      "This is the studio's homepage, not the Summer Art Club page. Summer Art Club shows up only as a menu item, with no details.",
+      "The prices and ages on the page ($35/$45 Creative Café, $50 Creative Kids Club, ages 5-12 with a parent, 12+ drop-off) are for Saturday programs, not summer camp. They were not recorded as camp details.",
+      "The page shows Fall 2026 studio hours. No 2027 summer information is given, so season_year was left blank.",
+      "The footer copyright says 2022, so some page content may be old."
+    ],
+    "unknowns": [
+      "Summer Art Club dates and sessions for 2027",
+      "Summer Art Club price (weekly or per session)",
+      "Age or grade range for Summer Art Club",
+      "Daily hours and whether extended care is offered",
+      "When registration opens and the registration link",
+      "Whether a deposit is required",
+      "Whether financial aid is available",
+      "Whether meals or snacks are included",
+      "Phone number",
+      "Accommodations for special needs",
+      "Whether transportation is offered"
+    ],
+    "low_confidence": [
+      {
+        "field": "name",
+        "confidence": 0.7,
+        "quote": "Summer Art Club"
+      },
+      {
+        "field": "camp_type",
+        "confidence": 0.5,
+        "quote": "Summer Art Club"
+      },
+      {
+        "field": "description_short",
+        "confidence": 0.7,
+        "quote": "Where Creativity Finds Community"
+      }
+    ],
+    "errors": [
+      "missing required season_year"
+    ]
+  }
+}

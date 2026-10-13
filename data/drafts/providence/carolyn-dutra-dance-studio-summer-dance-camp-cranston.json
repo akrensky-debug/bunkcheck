@@ -1,0 +1,153 @@
+{
+  "slug": "carolyn-dutra-dance-studio-summer-dance-camp-cranston",
+  "name": "Carolyn Dutra Dance Studio Summer Dance Camp",
+  "operator_name": "Carolyn Dutra Dance Studio (CDDS)",
+  "website_url": "http://www.carolyndutradancestudio.com/camp",
+  "registration_url": "https://app.jackrabbitclass.com/jr3.0/Openings/OpeningsDirect?OrgID=516441",
+  "email": "info@carolyndutradancestudio.com",
+  "phone": "(401) 737-6565",
+  "street_address": "95 Rolfe St",
+  "city": "Cranston",
+  "state": "RI",
+  "zip": "02910",
+  "camp_type": "specialty",
+  "primary_categories": [
+    "performing_arts",
+    "arts"
+  ],
+  "age_min": 3,
+  "age_max": 10,
+  "description_short": "A short dance camp at Carolyn Dutra Dance Studio for ages 3-10, with dance, music, and arts and crafts built around a theme (Disney). Campers give a performance for families on the last day. Ages 3-5 meet for 1.5 hours a day and ages 5-10 for 3 hours a day.",
+  "activities": [
+    "Dance",
+    "Tumbling",
+    "Music",
+    "Arts & crafts",
+    "Themed activities",
+    "Family performance on last day"
+  ],
+  "price_min": 105,
+  "price_max": 180,
+  "meals_included": false,
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Summer Dance Camp - Preschool (Ages 3-5), Disney theme, 9-10:30am",
+      "start_date": "2027-08-04",
+      "end_date": "2027-08-07",
+      "price": 105,
+      "availability": "unknown"
+    },
+    {
+      "name": "Summer Dance Camp - Primary/Level 1 & 2 (Ages 5-10), Disney theme, 10:45am-1:45pm",
+      "start_date": "2027-08-04",
+      "end_date": "2027-08-07",
+      "price": 180,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "http://www.carolyndutradancestudio.com/camp",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "price_min",
+        "price_max",
+        "meals_included",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=95+Rolfe+St&city=Cranston&state=RI&benchmark=Public_AR_Current&format=json",
+      "checked": "2026-10-13",
+      "fields": [
+        "zip"
+      ],
+      "note": "ZIP from the US Census geocoder for 95 ROLFE SQ, CRANSTON, RI, 02910"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "http://www.carolyndutradancestudio.com/camp",
+      "kind": "html",
+      "title": "Carolyn Dutra Dance Studio - Camp"
+    },
+    "warnings": [
+      "Filled zip 02910 from the US Census geocoder (95 ROLFE SQ, CRANSTON, RI, 02910)",
+      "The year is unclear. The section heading says 'Dance Camps 2026' and the placement notes refer to the 2025-2026 season ('5 by September 2025', 'Next season placement starts September 2026'), but the camp date is written as 'August 4-7, 2027'. August 4-7, 2026 falls on Tuesday to Friday, which fits a camp week. August 4-7, 2027 falls on Wednesday to Saturday. So '2027' may be a typo for 2026, which would mean this camp has already happened (today is 2026-10-13). The dates were recorded as written (2027), with low confidence.",
+      "Prices and themes may be from the 2026 camp and may not apply to the next summer.",
+      "The February and April camps are listed as TBD, so no details were recorded for them.",
+      "The studio has three locations (Warwick, Cranston, Smithfield). Only Cranston is named for the summer camp, but the parking notes mention Warwick."
+    ],
+    "unknowns": [
+      "Confirmed year and dates of the next summer camp",
+      "Season year",
+      "Prices for the next season",
+      "Registration opening date",
+      "Availability or spots left",
+      "Refund and cancellation policy",
+      "Whether a deposit is required",
+      "Whether the Military Family Scholarship or other financial aid applies to camp",
+      "Zip code for the Cranston location",
+      "Extended care",
+      "Special needs accommodations",
+      "Transportation",
+      "Whether discounts are offered for multiple weeks or siblings"
+    ],
+    "low_confidence": [
+      {
+        "field": "price_min",
+        "confidence": 0.6,
+        "quote": "Ages 3-5: 9-10:30am, Theme: Disney $105"
+      },
+      {
+        "field": "price_max",
+        "confidence": 0.6,
+        "quote": "Ages 5-10: 10:45am-1:45pm, Theme; Disney  $180"
+      },
+      {
+        "field": "meals_included",
+        "confidence": 0.6,
+        "quote": "One healthy nut allergy friendly snack and small sealable water bottle."
+      },
+      {
+        "field": "sessions[0].start_date",
+        "confidence": 0.3,
+        "quote": "Next Camp: August 4-7, 2027 @ Cranston"
+      },
+      {
+        "field": "sessions[0].price",
+        "confidence": 0.6,
+        "quote": "Ages 3-5: 9-10:30am, Theme: Disney $105"
+      },
+      {
+        "field": "sessions[1].start_date",
+        "confidence": 0.3,
+        "quote": "Next Camp: August 4-7, 2027 @ Cranston"
+      },
+      {
+        "field": "sessions[1].price",
+        "confidence": 0.6,
+        "quote": "Ages 5-10: 10:45am-1:45pm, Theme; Disney  $180"
+      }
+    ],
+    "errors": []
+  }
+}

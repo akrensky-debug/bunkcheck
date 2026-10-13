@@ -1,0 +1,159 @@
+{
+  "slug": "quinn-playground-center-dartmouth",
+  "name": "Quinn Playground Center",
+  "operator_name": "Town of Dartmouth Parks & Recreation Department",
+  "website_url": "https://www.dartmouthma.gov/m/newsflash/Home/Detail/693",
+  "registration_url": "https://dartmouth.activityreg.com/",
+  "phone": "508-910-1812",
+  "city": "Dartmouth",
+  "state": "MA",
+  "zip": null,
+  "camp_type": "day",
+  "primary_categories": [
+    "arts"
+  ],
+  "age_min": 6,
+  "age_max": 12,
+  "description_short": "A town-run summer day program for children ages 6 to 12, focused on open play, arts and crafts, group games and outdoor recreation. It runs 8:30 am to 4:15 pm, with before and after care available, and takes up to 55 children per week.",
+  "activities": [
+    "arts and crafts",
+    "group games",
+    "outdoor recreation",
+    "supervised free play"
+  ],
+  "price_per_week": 125,
+  "extended_care": true,
+  "season_year": 2026,
+  "price_per": "week",
+  "sessions": [
+    {
+      "name": "Week 1",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-03",
+      "price": 125,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 2",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": 125,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 3",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": 125,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 4",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": 125,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 5",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": 125,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 6",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": 125,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 7",
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-14",
+      "price": 125,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 8",
+      "start_date": "2026-08-17",
+      "end_date": "2026-08-21",
+      "price": 125,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.dartmouthma.gov/m/newsflash/Home/Detail/693",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "price_per_week",
+        "price_per",
+        "extended_care",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.dartmouthma.gov/m/newsflash/Home/Detail/693",
+      "kind": "html",
+      "title": "Dartmouth Parks & Recreation Announces 2026 Spring & Summer Programs for All Ages • Dartmouth, MAArrow LeftArrow RightSlideshow Left ArrowSlideshow Right Arrow"
+    },
+    "warnings": [
+      "Old season: the source is a town news release posted March 25, 2026, about the 2026 summer, which has already ended (today is 2026-10-13). No 2027 information is given.",
+      "The source is a town news release covering many Parks & Recreation programs, not a page for this camp alone. Other programs are not recorded here: tennis for kids & teens ages 7-14 ($225 per session, June 29-Aug 6), Junior Tennis Team ages 10-18 ($250), musical theatre workshops ages 5-12 (July 6-10 and July 20-24, $185 each, at 1383 Tucker Rd), pickleball, and adult tennis.",
+      "The weekly session breakdown is worked out from the stated range 'June 29-August 21, 2026' and the per-week pricing and capacity. The source does not list individual weeks or say whether any holidays are closed (for example July 3).",
+      "The before and after care fee of '$40 per child' does not say whether it is per week, per day or per summer.",
+      "The town address (400 Slocum Road) on the page is Town Hall, not necessarily where the program meets, so it is not recorded as the camp address."
+    ],
+    "unknowns": [
+      "2027 dates, prices and registration date",
+      "Location/street address of Quinn Playground Center",
+      "Whether enrollment is limited to Dartmouth residents",
+      "Basis of the $40 before/after care fee (per week or per summer)",
+      "Meals or snacks provided",
+      "Financial aid",
+      "Transportation",
+      "Refund policy",
+      "Deposit requirements",
+      "Swimming/waterfront activities",
+      "Special needs accommodations",
+      "ACA accreditation",
+      "Email contact",
+      "Dedicated program website"
+    ],
+    "low_confidence": [
+      {
+        "field": "primary_categories",
+        "confidence": 0.6,
+        "quote": "Activities include arts and crafts"
+      },
+      {
+        "field": "sessions[0].start_date",
+        "confidence": 0.6,
+        "quote": "June 29-August 21, 2026"
+      }
+    ],
+    "errors": [
+      "missing required zip",
+      "city 'Dartmouth', MA is not in cities.py"
+    ]
+  }
+}
