@@ -117,11 +117,24 @@
     </div>`;
   }
 
+  // A question to a camp (send_inquiry): the preview, and the parent's yes on CampFinder.
+  function inquiryCard(q) {
+    const p = q.preview || {};
+    return `<div class="card">
+      <div class="meta">Your question for</div><div class="name">${esc(p.to)}</div>
+      <pre class="why" style="white-space:pre-wrap;font:inherit">${esc(p.text)}</pre>
+      <div class="meta">Nothing has been sent. It goes to the camp only after you confirm on CampFinder, where you can also choose whether to share your contact details.</div>
+      <button class="btn" data-url="${esc(q.confirm_url)}">Review and send on CampFinder →</button>
+    </div>`;
+  }
+
   function render(data) {
     const root = document.getElementById("root");
     if (!data) return;
     const parts = [];
-    if (data.activities) {
+    if (data.inquiry) {
+      parts.push(inquiryCard(data.inquiry));
+    } else if (data.activities) {
       if (data.activities.length) data.activities.forEach(a => parts.push(activityCard(a)));
       else parts.push(`<div class="empty">${esc(data.note || "No classes matched. Try other days or a wider area.")}</div>`);
     } else if (data.sessions && data.sessions.length) {
@@ -165,7 +178,7 @@
   });
 
   request("ui/initialize", {
-    appInfo: { name: "CampFinder", version: "1.2.0" },
+    appInfo: { name: "CampFinder", version: "1.4.0" },
     appCapabilities: { availableDisplayModes: ["inline"] },
     protocolVersion: "2026-01-26",
   }).then(result => {

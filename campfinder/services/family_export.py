@@ -25,7 +25,8 @@ from campfinder.kit.service import load_kit
 VERSION = 1
 
 # Columns that work as keys or passwords. Never exported.
-SECRETS = {"calendar_token", "invite_token_hash", "token_hash", "ciphertext", "verification_token", "token"}
+SECRETS = {"calendar_token", "invite_token_hash", "token_hash", "ciphertext", "verification_token", "token",
+           "confirm_token_hash", "reply_token_hash", "kit_token", "family_key"}
 
 NOT_INCLUDED = [
     "Private link secrets: calendar feed links, invite links and share links. Reset or revoke them in the app.",
@@ -92,5 +93,6 @@ def export_family(family: dict[str, Any]) -> dict[str, Any]:
             "booking_attempts": by_family("booking_attempts", "created_at"),
         },
         "registration_alerts": alerts,
+        "inquiries": by_family("inquiries", "created_at"),
         "not_included": NOT_INCLUDED,
     }

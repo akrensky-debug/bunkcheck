@@ -43,6 +43,12 @@ DEFAULTS: dict[str, dict[str, Any]] = {
     "owner_messages": {"message_id": None, "sender_verified": False, "subject": None, "camp_id": None,
                        "status": "received", "reason": None, "proposal": None, "applied": None, "handled_by": None,
                        "received_at": lambda: datetime.now(timezone.utc).isoformat(), "handled_at": None},
+    "inquiries": {"session_id": None, "api_client_id": None, "family_id": None, "family_key": None,
+                  "kit_share_id": None, "kit_token": None, "contact": None, "status": "pending",
+                  "confirmed_via": None, "reply_token_hash": None, "camp_contact_id": None, "confirmed_at": None,
+                  "delivered_at": None, "delivery_attempts": 0, "billable": False, "bill_reason": None,
+                  "price_cents": None, "replies": [], "last_reply_at": None, "redacted_at": None},
+    "camp_inquiry_settings": {"billing_opted_in": False, "monthly_cap": None, "opted_in_at": None, "changed_by": None},
     "booking_attempts": {"registration_id": None, "consent": None, "provider_ref": None, "error": None,
                          "status": "quoted", "environment": "sandbox"},
 }
@@ -54,7 +60,7 @@ UNIQUE = {
     "reminder_sends": [("member_id", "kind", "period")],
 }
 SERIAL = {"family_audit_log", "reminder_sends", "kit_share_events", "activity_demand", "registration_reminder_sends",
-          "registration_alert_sends"}
+          "registration_alert_sends", "result_appearances"}
 
 
 class Result:
@@ -106,6 +112,10 @@ class Query:
         self.filters.append(("in", col, [str(v) for v in vs]))
         return self
 
+    def contains(self, col: str, vs: list[Any]) -> "Query":
+        self.filters.append(("contains", col, [str(v) for v in vs]))
+        return self
+
     def gte(self, col: str, v: Any) -> "Query":
         self.filters.append(("gte", col, v))
         return self
@@ -130,6 +140,8 @@ class Query:
             if op == "neq" and str(have) == str(v):
                 return False
             if op == "in" and str(have) not in v:
+                return False
+            if op == "contains" and not set(v) <= {str(x) for x in have or []}:
                 return False
             if op == "gte" and (have is None or str(have) < str(v)):
                 return False

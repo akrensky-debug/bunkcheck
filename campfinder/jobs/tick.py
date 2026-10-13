@@ -2,7 +2,8 @@
 One hourly tick runs every scheduled job at the right local time (REMINDER_TZ, default
 America/New_York), so the scheduler stays a dumb "call this every hour":
 
-    every hour   registration alerts (announced / opens soon / open now)
+    every hour   registration alerts (announced / opens soon / open now), inquiry delivery
+                 retries, expiry and retention
     7am          registration reminders, household morning digests
     6pm          household evening (day-before) reminders
 
@@ -23,6 +24,7 @@ from campfinder.alerts import service as alerts
 from campfinder.booking import reminders as registration_reminders
 from campfinder.booking.service import local_tz
 from campfinder.household.reminders import run_reminders as household_reminders
+from campfinder.inquiries.service import run_scheduled as inquiry_jobs
 
 MORNING, EVENING = 7, 18
 
@@ -35,6 +37,7 @@ async def tick(now: datetime | None = None, dry_run: bool = False) -> dict[str, 
     ran: dict[str, Any] = {"at": now.isoformat(), "local_hour": local.hour, "dry_run": dry_run}
 
     ran["registration_alerts"] = {k: v for k, v in (await alerts.run(now, dry_run)).items() if k != "emails"}
+    ran["inquiries"] = await inquiry_jobs(now, dry_run)
     if local.hour == MORNING:
         out = await registration_reminders.run(local.date(), dry_run)
         ran["registration_reminders"] = {k: v for k, v in out.items() if k != "emails"}

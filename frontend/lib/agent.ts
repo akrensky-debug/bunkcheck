@@ -2,6 +2,7 @@ import type { CampSearchResult } from '@/lib/api'
 import type { ActivityCard, ActivityProgram, FamilyWeek, ScheduleFitResult } from '@/lib/activities'
 import { authHeaders } from '@/lib/auth'
 import type { BookingUIData } from '@/components/booking/BookingBlocks'
+import type { InquiryView } from '@/lib/inquiries'
 import { Events } from '@/lib/analytics'
 import type { Role, Task } from '@/lib/household'
 
@@ -138,6 +139,7 @@ export type UIData =
   | { type: 'assign_proposal'; summary: string; member: { id: string; name: string; status: string } | null; task_ids: string[]; tasks: Task[] }
   | { type: 'invite_proposal'; display_name: string; role: Exclude<Role, 'owner'>; email: string }
   | { type: 'message_draft'; subject: string; body: string; recipients: Array<{ name: string; email: string | null }> }
+  | ({ type: 'inquiry'; confirm_token: string } & InquiryView)
 
 export type AgentEvent =
   | { type: 'conversation'; id: string }
@@ -149,6 +151,11 @@ export type AgentEvent =
 
 function readFamilyId(): string | null {
   try { return localStorage.getItem(FAMILY_KEY) } catch { return null }
+}
+
+/** The family this browser plans for, if any. */
+export function storedFamilyId(): string | null {
+  return readFamilyId()
 }
 
 export function rememberFamily(id: string) {

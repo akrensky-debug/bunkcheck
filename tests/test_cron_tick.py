@@ -28,17 +28,22 @@ def calls(monkeypatch):
         seen.append((f"household_{slot}", today))
         return []
 
+    async def inquiries(now, dry_run=False):
+        seen.append(("inquiries", dry_run))
+        return {}
+
     monkeypatch.setattr(tick_mod.alerts, "run", alerts_run)
+    monkeypatch.setattr(tick_mod, "inquiry_jobs", inquiries)
     monkeypatch.setattr(tick_mod.registration_reminders, "run", registration_run)
     monkeypatch.setattr(tick_mod, "household_reminders", household)
     return seen
 
 
 @pytest.mark.parametrize("hour,expected", [
-    (3, ["alerts"]),
-    (7, ["alerts", "registration", "household_morning"]),
-    (12, ["alerts"]),
-    (18, ["alerts", "household_evening"]),
+    (3, ["alerts", "inquiries"]),
+    (7, ["alerts", "inquiries", "registration", "household_morning"]),
+    (12, ["alerts", "inquiries"]),
+    (18, ["alerts", "inquiries", "household_evening"]),
 ])
 async def test_jobs_run_at_their_local_hour(calls, hour, expected) -> None:
     out = await tick_mod.tick(datetime(2027, 1, 12, hour, 5, tzinfo=NY))   # winter: UTC-5

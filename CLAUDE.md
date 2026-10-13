@@ -27,7 +27,7 @@ Read this first, every session. Updated 4 October 2026 (order of work); 3 Octobe
 (order of work), `docs/decisions/company.md` and `docs/decisions/agents.md` (settled rules),
 `docs/DEPLOY.md`, `docs/household.md`, `docs/activity-api.md`, `docs/chatgpt-app.md`,
 `docs/claude-connector.md`, `docs/ingest-test-set.md`, `docs/owner-confirmation.md`,
-`docs/booking-strategy.md`, `docs/registration-alerts.md`.
+`docs/booking-strategy.md`, `docs/registration-alerts.md`, `docs/inquiries.md`.
 
 ## Order of work
 

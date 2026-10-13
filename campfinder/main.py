@@ -19,7 +19,8 @@ from campfinder.database import check_connection, close_pool, init_pool
 from campfinder.services.errors import NotFound
 from campfinder.mcp_server import VERSION as MCP_VERSION, servers as mcp_servers
 from campfinder.routers import activities, activity, agent, camps, household, kit, owners, compare, freshness, operators, planner, search, sessions
-from campfinder.routers import alerts, booking, jobs
+from campfinder.routers import alerts, booking, inquiries, jobs
+from campfinder.inquiries.service import InquiryError
 
 # Streamable HTTP MCP endpoints, one per host (see mcp_server.py). Stateless JSON
 # responses so they work behind Railway's proxy and across restarts. host="0.0.0.0"
@@ -60,6 +61,10 @@ def create_app() -> FastAPI:
     async def not_found(_request: Request, exc: NotFound) -> JSONResponse:
         return JSONResponse(status_code=404, content={"detail": exc.detail})
 
+    @app.exception_handler(InquiryError)
+    async def inquiry_error(_request: Request, exc: InquiryError) -> JSONResponse:
+        return JSONResponse(status_code=exc.status, content={"detail": exc.detail})
+
     app.add_middleware(
         CORSMiddleware,
         allow_origins=settings.cors_origins,
@@ -84,6 +89,7 @@ def create_app() -> FastAPI:
     app.include_router(owners.router, prefix=prefix, tags=["Camp owners"])
     app.include_router(booking.router, prefix=prefix, tags=["Registration"])
     app.include_router(alerts.router, prefix=prefix, tags=["Registration alerts"])
+    app.include_router(inquiries.router, prefix=prefix, tags=["Inquiries"])
     app.include_router(jobs.router, prefix=prefix)
     app.include_router(activity.router)
 

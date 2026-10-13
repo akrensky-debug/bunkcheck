@@ -33,14 +33,16 @@ from mcp.types import ToolAnnotations
 from mcp_types import CallToolResult, Icon, TextContent
 
 from campfinder.agent.activity_tools import ACTIVITY_DISCOVERY_DESCRIPTIONS, ACTIVITY_STATUS_TEXT
+from campfinder.agent.inquiry_tools import INQUIRY_DISCOVERY_DESCRIPTIONS, INQUIRY_STATUS_TEXT
 from campfinder.agent.tools import CAMP_TOOLS, ToolError, ToolOutput, ToolSpec, run_tool
 from campfinder.config import get_settings
 from campfinder.database import get_supabase
+from campfinder.inquiries.service import record_appearances
 
 log = logging.getLogger(__name__)
 
 # Bump the version when widget.html changes: hosts cache templates by URI.
-WIDGET_URI = "ui://campfinder/camps-v3.html"
+WIDGET_URI = "ui://campfinder/camps-v4.html"
 WIDGET_MIME = "text/html;profile=mcp-app"
 MAX_CARDS = 8
 
@@ -61,9 +63,12 @@ INSTRUCTIONS = (
     "programs, use find_activities (days and times like 'after 3:30 on weekdays' or 'Saturday "
     "mornings' go in days/earliest_start/latest_end), get_activity_details, and "
     "check_schedule_fit to test a class against the family's other commitments. Outside the "
-    "Northeast, say CampFinder doesn't cover that area yet."
+    "Northeast, say CampFinder doesn't cover that area yet. When the parent wants to ask a camp "
+    "something the data doesn't answer, use send_inquiry with their question (no names or contact "
+    "details), show them the preview and the confirm link, and tell them nothing is sent until they "
+    "confirm; check_inquiry reads the camp's answer later."
 )
-VERSION = "1.3.0"
+VERSION = "1.4.0"
 
 
 @dataclass(frozen=True)
@@ -152,6 +157,12 @@ def _activity_widget_payload(args: dict[str, Any], out: ToolOutput, source: str)
     }
 # --- end year-round activities ---
 
+# --- Inquiries: campfinder/agent/inquiry_tools.py ---
+DISCOVERY_DESCRIPTIONS |= INQUIRY_DISCOVERY_DESCRIPTIONS
+STATUS_TEXT |= INQUIRY_STATUS_TEXT
+WIDGET_TOOLS |= {"send_inquiry"}
+# --- end inquiries ---
+
 
 def _site() -> str:
     return get_settings().frontend_url.rstrip("/")
@@ -187,6 +198,8 @@ def _widget_payload(name: str, args: dict[str, Any], out: ToolOutput, source: st
     ui = out.ui or {}
     if name == "find_activities":
         return _activity_widget_payload(args, out, source)
+    if name == "send_inquiry":
+        return {"inquiry": {"preview": ui.get("preview"), "confirm_url": _utm(ui["confirm_url"], source, "inquiry_confirm")}}
     content = out.content if isinstance(out.content, dict) else {}
     if name == "search_camps":
         cards = [_card(c, source) for c in ui.get("camps", [])[:MAX_CARDS]]
@@ -214,6 +227,21 @@ def _log_call(host: Host, tool: str, results: int | None, error: bool) -> None:
         log.warning("mcp call logging failed", exc_info=True)
 
 
+def _result_ids(out: ToolOutput) -> list[str]:
+    """The camps and programs a search returned, to count how often agents see each one."""
+    content = out.content if isinstance(out.content, dict) else {}
+    ids = [c.get("id") for c in content.get("camps") or []]
+    ids += [s.get("camp_id") for s in content.get("sessions") or []]
+    ids += [a.get("id") for a in content.get("activities") or []]
+    return [str(i) for i in ids if i]
+
+
+def _after_call(host: Host, tool: str, out: ToolOutput) -> None:
+    _log_call(host, tool, _result_count(out), False)
+    if tool in WIDGET_TOOLS and tool != "send_inquiry":
+        record_appearances(host.utm_source, tool, _result_ids(out))
+
+
 def _result_count(out: ToolOutput) -> int | None:
     content = out.content if isinstance(out.content, dict) else {}
     for key in ("camps", "sessions", "activities"):
@@ -238,11 +266,11 @@ def _register(server: Apps | MCPServer, spec: ToolSpec, host: Host) -> None:
 
     async def handler(**kwargs: Any) -> CallToolResult:
         try:
-            out = await run_tool(spec.name, kwargs)
+            out = await run_tool(spec.name, kwargs, channel=host.utm_source)
         except ToolError as e:
             asyncio.get_running_loop().run_in_executor(None, _log_call, host, spec.name, None, True)
             return CallToolResult(content=[TextContent(type="text", text=str(e))], is_error=True)
-        asyncio.get_running_loop().run_in_executor(None, _log_call, host, spec.name, _result_count(out), False)
+        asyncio.get_running_loop().run_in_executor(None, _after_call, host, spec.name, out)
         text = TextContent(type="text", text=out.content_json())
         if not has_widget:
             return CallToolResult(content=[text])
@@ -263,8 +291,11 @@ def _register(server: Apps | MCPServer, spec: ToolSpec, host: Host) -> None:
         name=spec.name,
         title=spec.name.replace("_", " ").capitalize(),
         description=DISCOVERY_DESCRIPTIONS.get(spec.name, spec.description),
+        # A write tool only creates a pending inquiry; the parent confirms on CampFinder before
+        # anything reaches the camp, which is outside this conversation (openWorld).
         annotations=ToolAnnotations(
-            readOnlyHint=True, destructiveHint=False, idempotentHint=True, openWorldHint=False,
+            readOnlyHint=not spec.writes, destructiveHint=False, idempotentHint=not spec.writes,
+            openWorldHint=spec.writes,
         ),
         structured_output=False,
     )

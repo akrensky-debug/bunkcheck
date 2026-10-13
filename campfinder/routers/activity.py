@@ -12,8 +12,9 @@ from datetime import date
 from typing import Literal
 from uuid import UUID
 
-from fastapi import APIRouter, Depends, HTTPException, Query, Request
+from fastapi import APIRouter, Depends, Header, HTTPException, Query, Request
 from fastapi.responses import Response
+from pydantic import BaseModel, Field
 
 from campfinder.activity.auth import ApiClient, require_api_client
 from campfinder.activity.schema import (
@@ -25,6 +26,7 @@ from campfinder.activity.sources import (
     find_programs, find_sessions, get_offering_with_program, get_program, get_session_with_program,
 )
 from campfinder.database import get_supabase
+from campfinder.inquiries import service as inquiries
 from campfinder.services.calendar import build_ics
 
 PREFIX = "/api/activity/v1"
@@ -85,6 +87,7 @@ async def search_programs(
         earliest_start=earliest_start, latest_end=latest_end, max_price_per_class=max_price_per_class,
     )
     next_offset = offset + limit if offset + limit < total else None
+    inquiries.record_appearances(_client.channel, "programs", [str(p.id) for p in programs])
     return ProgramList(data=programs, total=total, next_offset=next_offset)
 
 
@@ -137,6 +140,7 @@ async def search_sessions(
     )
     if kind not in (None, "camp"):
         matches = [m for m in matches if m[1].kind == kind]
+    inquiries.record_appearances(_client.channel, "sessions", [str(p.id) for _, p in matches])
     return SessionList(data=[SessionMatch(session=s, program=p) for s, p in matches], total=len(matches))
 
 
@@ -211,3 +215,86 @@ async def json_schema() -> dict:
         "session": Session.model_json_schema(),
         "demand_signal": DemandSignal.model_json_schema(),
     }
+
+
+# ── Inquiries: a parent's question to a camp, sent only after the parent says yes ──────────
+
+class InquiryCreate(BaseModel):
+    program_id: UUID = Field(description="The camp's program id.")
+    session_id: UUID | None = Field(default=None, description="A session of that camp, if the question is about one.")
+    question: str = Field(min_length=inquiries.QUESTION_MIN, max_length=inquiries.QUESTION_MAX,
+                          description="The parent's question, in their words. No names or contact details.")
+    kit_share_token: str | None = Field(
+        default=None, max_length=300,
+        description="Token (or link) of an info kit package the parent already made on CampFinder.")
+    user_ref: str | None = Field(
+        default=None, max_length=200,
+        description="Your own opaque, stable id for the parent (not an email or name). Hashed; only used to "
+                    "apply per-family limits.")
+
+
+class InquiryCreated(BaseModel):
+    id: UUID
+    token: str = Field(description="Read token. Shown once: send it as X-Inquiry-Token to read status and replies.")
+    status: str
+    preview: dict = Field(description="Exactly what the camp will read once the parent confirms.")
+    confirm_url: str = Field(description="Show this to the parent. Nothing is sent until they confirm there.")
+    expires_at: str
+
+
+class InquiryConfirm(BaseModel):
+    parent_agreed: bool = Field(description="Must be true: the parent saw the preview and said yes in your app.")
+    user_ref: str | None = Field(default=None, max_length=200)
+    contact: inquiries.Contact | None = Field(
+        default=None, description="Only with a key allowed to share contact details, and only what the parent chose.")
+
+
+def _inquiry_error(e: inquiries.InquiryError) -> HTTPException:
+    return HTTPException(status_code=e.status, detail=e.detail)
+
+
+@router.post("/inquiries", response_model=InquiryCreated, status_code=201, summary="Ask a camp a question")
+async def create_inquiry(body: InquiryCreate, client: ApiClient = Depends(require_api_client)) -> InquiryCreated:
+    """
+    Creates a **pending** inquiry and returns a preview of exactly what the camp will read. Nothing
+    is sent until the parent confirms at `confirm_url` on CampFinder. Read the camp's answer with
+    `GET /inquiries/{id}` and the returned token. We never return the parent's identity to you.
+    """
+    try:
+        created = inquiries.create(
+            program_id=str(body.program_id), session_id=str(body.session_id) if body.session_id else None,
+            question=body.question, kit_token=body.kit_share_token, channel=client.channel,
+            api_client_id=client.id, user_ref=body.user_ref,
+        )
+    except inquiries.InquiryError as e:
+        raise _inquiry_error(e) from e
+    return InquiryCreated(id=created.inquiry["id"], token=created.read_token, status="pending",
+                          preview=created.preview, confirm_url=created.confirm_url,
+                          expires_at=str(created.inquiry["expires_at"]))
+
+
+@router.get("/inquiries/{inquiry_id}", summary="Read an inquiry's status and the camp's replies")
+async def get_inquiry(inquiry_id: UUID, x_inquiry_token: str = Header(description="The token from POST /inquiries."),
+                      client: ApiClient = Depends(require_api_client)) -> dict:
+    try:
+        return inquiries.view_for_assistant(str(inquiry_id), x_inquiry_token, client.id)
+    except inquiries.InquiryError as e:
+        raise _inquiry_error(e) from e
+
+
+@router.post("/inquiries/{inquiry_id}/confirm", summary="Confirm for the parent (approved keys only)")
+async def confirm_inquiry(inquiry_id: UUID, body: InquiryConfirm,
+                          x_inquiry_token: str = Header(description="The token from POST /inquiries."),
+                          client: ApiClient = Depends(require_api_client)) -> dict:
+    """Only for keys CampFinder has allowed to confirm in their own app. Everyone else sends the
+    parent to `confirm_url`."""
+    if not body.parent_agreed:
+        raise HTTPException(status_code=422, detail="parent_agreed must be true")
+    try:
+        row = await inquiries.confirm_for_parent(
+            str(inquiry_id), x_inquiry_token, client_id=client.id, may_confirm=client.may_confirm_for_parent,
+            may_share_contact=client.may_share_contact, user_ref=body.user_ref, contact=body.contact,
+        )
+    except inquiries.InquiryError as e:
+        raise _inquiry_error(e) from e
+    return inquiries.public_view(row)

@@ -11,7 +11,7 @@ Strategy: `docs/assistant-apps-strategy.md`. Founder steps: `docs/assistant-apps
 | --- | --- |
 | ChatGPT endpoint | `https://<api>/chatgpt/mcp` (stateless streamable HTTP, no auth) |
 | Tools and their discovery descriptions | `campfinder/mcp_server.py` |
-| Camp cards (MCP Apps UI, protocol 2026-01-26) | `campfinder/chatgpt/widget.html`, served as `ui://campfinder/camps-v3.html` |
+| Camp cards (MCP Apps UI, protocol 2026-01-26) | `campfinder/chatgpt/widget.html`, served as `ui://campfinder/camps-v4.html` |
 | Widget origin (`_meta.ui.domain`) | `CHATGPT_WIDGET_DOMAIN`, default `FRONTEND_URL`. Required by OpenAI, unique per app |
 | Link allowlist | `openai/widgetCSP.redirect_domains` = `FRONTEND_URL`, so links open without a warning |
 | Domain verification | `OPENAI_APPS_CHALLENGE` is served at `/.well-known/openai-apps-challenge` |
@@ -19,9 +19,24 @@ Strategy: `docs/assistant-apps-strategy.md`. Founder steps: `docs/assistant-apps
 | Plugin package | `assistant-apps/chatgpt/` (`plugin.json`, `mcp.json`, `assets/`); build with `assistant-apps/build.sh` |
 | Smoke test | `python -m campfinder.scripts.check_mcp https://<api>/chatgpt/mcp` |
 
-Cards render for `search_camps` and `find_sessions`. The other tools return text that ChatGPT
-summarises. All five tools are annotated read-only, non-destructive, idempotent and closed-world.
-Hosts cache the widget by URI, so bump `WIDGET_URI` whenever `widget.html` changes.
+Cards render for `search_camps`, `find_sessions`, `find_activities` and `send_inquiry`. The other
+tools return text that ChatGPT summarises. Every tool is annotated read-only, non-destructive,
+idempotent and closed-world, except `send_inquiry` (below). Hosts cache the widget by URI, so bump
+`WIDGET_URI` whenever `widget.html` changes.
+
+### Asking a camp a question (`send_inquiry`, `check_inquiry`)
+
+When a parent wants to ask a camp something the listing doesn't answer, ChatGPT calls
+`send_inquiry` with the question (no names or contact details: those are rejected). The tool only
+creates a **pending** inquiry. The card shows exactly what the camp will read and a **Review and
+send on CampFinder** button that opens the confirm page, where the parent presses Send and chooses
+whether to share contact details. Nothing reaches the camp before that. Later, `check_inquiry`
+returns the camp's answer. Inquiries from this endpoint are recorded with the channel `chatgpt`
+(set from the mount, not by ChatGPT) and shown to the camp as "ChatGPT".
+
+`send_inquiry` is annotated `readOnlyHint: false`, `destructiveHint: false`,
+`idempotentHint: false`, `openWorldHint: true` (it can lead to an email to the camp, after the
+parent confirms outside ChatGPT). Nothing moves money. Full rules: `docs/inquiries.md`.
 
 ## Requirements we checked (OpenAI docs, October 2026)
 
@@ -75,6 +90,11 @@ Hosts cache the widget by URI, so bump `WIDGET_URI` whenever `widget.html` chang
 | − | Save my daughter's allergies and pediatrician's phone number to CampFinder. | none | Doesn't collect it; points to the site if asked |
 | − | Suggest a movie for family night. | none | CampFinder isn't called |
 
+Also check by hand (not one of the eight): "Ask Riverside Soccer whether week 3 still has spots"
+calls `send_inquiry`, shows a preview card with a confirm button, and ChatGPT says nothing was sent
+yet. Whether `send_inquiry` replaces one of the five positive cases is Andrew's call before the next
+submission.
+
 Run each case in developer mode on web and mobile before submitting. Positive cases depend on
 real listings: rerun them once the Providence and Boston data is live.
 
@@ -95,6 +115,8 @@ list and the negative set are in the strategy doc.
 ## Measuring it
 
 - `analytics_events` where `event = 'mcp_tool_call'` and `properties->>'host' = 'chatgpt'`: calls by tool and result count
+- `inquiries` where `channel = 'chatgpt'`: questions prepared, confirmed and delivered
+- `result_appearances` where `channel = 'chatgpt'`: how often each camp was shown
 - `activity_demand`: searches that found nothing
 - `assistant_handoff` with `source = chatgpt`, by campaign (`camp_card`, `plan_handoff`)
 - `family_saved`, `calendar_subscribed` and `request_info_clicked` with `arrival_source = chatgpt`

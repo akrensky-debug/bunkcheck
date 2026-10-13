@@ -408,6 +408,8 @@ class ToolSpec:
     family: bool = False  # needs a family_id
     status: str = ""  # shown in the UI while the tool runs
     family_optional: bool = False  # public, but also gets the family_id when there is one
+    needs_channel: bool = False  # also gets who is calling: site, chatgpt, claude, assistant
+    writes: bool = False  # changes something outside the conversation (MCP annotations say so)
 
 
 CAMP_TOOLS: list[ToolSpec] = [
@@ -489,6 +491,10 @@ import campfinder.agent.booking_tools  # noqa: E402,F401
 import campfinder.agent.activity_tools  # noqa: E402,F401
 
 
+# Inquiries (a parent's question to a camp, sent after the parent says yes) add theirs.
+import campfinder.agent.inquiry_tools  # noqa: E402,F401
+
+
 def _inline_refs(schema: dict[str, Any]) -> dict[str, Any]:
     """Inline $defs so each tool's input_schema is a single self-contained object."""
     defs = schema.pop("$defs", {})
@@ -522,8 +528,11 @@ def anthropic_tools(include_family: bool) -> list[dict[str, Any]]:
     ]
 
 
-async def run_tool(name: str, raw_input: Any, family_id: str | None = None) -> ToolOutput:
-    """Validate the model's input and run the tool. Raises ToolError on any failure."""
+async def run_tool(name: str, raw_input: Any, family_id: str | None = None, channel: str = "site") -> ToolOutput:
+    """Validate the model's input and run the tool. Raises ToolError on any failure.
+
+    channel is who is calling, set by the server (the MCP host, or "site" for our own agent),
+    never by the model."""
     spec = ALL_TOOLS.get(name)
     if spec is None or (spec.family and not family_id):
         raise ToolError(f"Unknown tool: {name}")
@@ -532,6 +541,8 @@ async def run_tool(name: str, raw_input: Any, family_id: str | None = None) -> T
     except ValidationError as e:
         raise ToolError(f"Invalid input: {e.errors(include_url=False)}") from e
     try:
+        if spec.needs_channel:
+            return await spec.fn(inp, family_id, channel)
         if spec.family or spec.family_optional:
             return await spec.fn(inp, family_id)
         return await spec.fn(inp)

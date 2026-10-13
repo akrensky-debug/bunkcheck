@@ -3,6 +3,7 @@ import TrustBadge from '@/components/TrustBadge'
 import { BookingBlock } from '@/components/booking/BookingBlocks'
 import { AssignProposal, HouseholdCard, InviteProposal, MessageDraft, TasksCard } from '@/components/household/HouseholdBlocks'
 import type { Comparison, Coverage, CoverageStatus, FamilyEvent, Plan, UIData } from '@/lib/agent'
+import InquiryConfirm from '@/components/inquiries/InquiryConfirm'
 import { ActivityDetailCard, ActivityResults, ScheduleFitView, WeekView, weeklyLabel } from '@/components/agent/ActivityBlocks'
 
 const SHOWN_CAMPS = 5
@@ -245,5 +246,12 @@ export function AgentBlock({ data, familyId }: { data: UIData; familyId?: string
     case 'assign_proposal': return <AssignProposal data={data} familyId={familyId} />
     case 'invite_proposal': return <InviteProposal data={data} familyId={familyId} />
     case 'message_draft':   return <MessageDraft data={data} />
+    case 'inquiry':
+      return (
+        <div className="bg-white rounded-2xl border border-gray-200 p-4">
+          <p className="font-semibold text-gray-900 mb-3">Your question for {data.camp.name}</p>
+          <InquiryConfirm token={data.confirm_token} initial={data} compact />
+        </div>
+      )
   }
 }

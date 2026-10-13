@@ -24,6 +24,13 @@ class ApiClient:
     id: str
     name: str
     rate_limit_per_minute: int
+    may_confirm_for_parent: bool = False  # inquiries: may say the parent agreed (open decision)
+    may_share_contact: bool = False       # inquiries: may pass contact details the parent chose to share
+
+    @property
+    def channel(self) -> str:
+        """How this key's inquiries and results are attributed. Set from the key, never the caller."""
+        return f"partner:{self.name}"
 
 
 _client_cache: dict[str, tuple[float, ApiClient | None]] = {}
@@ -52,13 +59,16 @@ def _lookup(key_hash: str) -> ApiClient | None:
     if cached and time.monotonic() - cached[0] < _CACHE_TTL:
         return cached[1]
     rows = (
-        get_supabase().table("api_clients").select("id,name,rate_limit_per_minute,active")
+        get_supabase().table("api_clients")
+        .select("id,name,rate_limit_per_minute,active,may_confirm_for_parent,may_share_contact")
         .eq("key_hash", key_hash).execute().data
     )
     client = None
     if rows and rows[0].get("active", True):
         r = rows[0]
-        client = ApiClient(id=r["id"], name=r["name"], rate_limit_per_minute=r.get("rate_limit_per_minute") or 120)
+        client = ApiClient(id=r["id"], name=r["name"], rate_limit_per_minute=r.get("rate_limit_per_minute") or 120,
+                           may_confirm_for_parent=bool(r.get("may_confirm_for_parent")),
+                           may_share_contact=bool(r.get("may_share_contact")))
     _client_cache[key_hash] = (time.monotonic(), client)
     return client
 
