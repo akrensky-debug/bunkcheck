@@ -42,9 +42,13 @@ function CampResults({ camps }: { camps: Extract<UIData, { type: 'camps' }>['cam
   if (!camps.length) return null
   return (
     <div className="space-y-3">
-      {camps.slice(0, SHOWN_CAMPS).map((c, i) => <CampCard key={c.id} camp={c} rank={i + 1} />)}
+      {camps.slice(0, SHOWN_CAMPS).map((c, i) => (
+        <div key={c.id} data-reveal>
+          <CampCard camp={c} rank={i + 1} />
+        </div>
+      ))}
       {camps.length > SHOWN_CAMPS && (
-        <p className="text-xs text-gray-400 pl-1">+{camps.length - SHOWN_CAMPS} more. Ask to see them.</p>
+        <p className="text-xs text-muted pl-1">+{camps.length - SHOWN_CAMPS} more. Ask to see them.</p>
       )}
     </div>
   )
@@ -52,7 +56,7 @@ function CampResults({ camps }: { camps: Extract<UIData, { type: 'camps' }>['cam
 
 function CampDetailCard({ camp }: { camp: Extract<UIData, { type: 'camp_detail' }>['camp'] }) {
   return (
-    <a href={`/camps/${camp.id}`} className="block bg-white rounded-2xl border border-gray-200 p-4 hover:border-brand-300 transition-colors">
+    <a href={`/camps/${camp.id}`} className="group card-interactive block bg-white rounded-2xl border border-line p-4" data-reveal>
       <div className="flex justify-between gap-3">
         <div className="min-w-0">
           <p className="font-semibold text-gray-900 truncate">{camp.name}</p>
@@ -84,7 +88,7 @@ function ComparisonView({ data }: { data: Comparison }) {
     ['Meals', c => (c.meals_included ? 'Yes' : 'No')],
   ]
   return (
-    <div className="bg-white rounded-2xl border border-gray-200 overflow-hidden">
+    <div className="bg-white rounded-2xl border border-line overflow-hidden" data-reveal>
       <div className="overflow-x-auto">
         <table className="w-full text-sm">
           <thead className="bg-gray-50">
@@ -117,12 +121,12 @@ function ComparisonView({ data }: { data: Comparison }) {
 }
 
 function PlanView({ plan }: { plan: Plan }) {
-  const tone = { covered: 'bg-green-50 border-green-200', gap: 'bg-amber-50 border-amber-200', overlap: 'bg-red-50 border-red-200' }
+  const tone = { covered: 'bg-checked-soft border-green-200', gap: 'bg-amber-50 border-amber-200', overlap: 'bg-red-50 border-red-200' }
   const label = { covered: 'Covered', gap: 'Gap', overlap: 'Overlap' }
   return (
-    <div className="bg-white rounded-2xl border border-gray-200 p-4">
+    <div className="bg-white rounded-2xl border border-line p-4" data-reveal>
       <div className="flex justify-between text-sm mb-3">
-        <span className="font-semibold text-gray-900">{plan.weeks_covered} of {plan.weeks_total} weeks covered</span>
+        <span className="font-display font-bold text-navy">{plan.weeks_covered} of {plan.weeks_total} weeks covered</span>
         <span className="text-gray-500">≈ ${Math.round(plan.total_estimated_cost).toLocaleString()}</span>
       </div>
       <div className="space-y-1.5">

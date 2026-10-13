@@ -2,8 +2,158 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+/* Bunkcheck: Figtree for headings (next/font, --font-display), Atkinson Hyperlegible Next
+   for body and UI (Google Fonts <link> in layout.tsx). */
 
-body {
-  font-family: 'Inter', system-ui, sans-serif;
+@layer base {
+  :root {
+    --navy: #14213D;
+    --night: #0F1A30;
+    --flashlight: #F5D96B;
+    --paper: #F7F5F0;
+    --line: #E2DED4;
+    --muted: #565E70;
+    --checked: #2E6B3F;
+    --checked-soft: #E3EFE5;
+    --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  body {
+    @apply bg-paper text-navy font-sans antialiased;
+    font-feature-settings: 'kern';
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-display;
+    letter-spacing: -0.015em;
+  }
+
+  ::selection {
+    background: var(--flashlight);
+    color: var(--navy);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--navy);
+    outline-offset: 2px;
+    border-radius: 6px;
+  }
+  .on-dark :focus-visible {
+    outline-color: var(--flashlight);
+  }
+}
+
+@layer components {
+  /* Cards that link somewhere: lift, navy border, soft shadow on hover; settle on press. */
+  .card-interactive {
+    transition:
+      transform 0.25s var(--ease-out),
+      border-color 0.2s ease,
+      box-shadow 0.25s var(--ease-out);
+  }
+  .card-interactive:hover {
+    transform: translateY(-3px);
+    border-color: var(--navy);
+    box-shadow: 0 12px 28px -14px rgba(20, 33, 61, 0.35);
+  }
+  .card-interactive:active {
+    transform: translateY(-1px) scale(0.995);
+    transition-duration: 0.08s;
+  }
+
+  /* Buttons: small lift on hover, press down on click. */
+  .btn-lift {
+    transition:
+      transform 0.18s var(--ease-out),
+      background-color 0.18s ease,
+      box-shadow 0.18s var(--ease-out),
+      border-color 0.18s ease,
+      color 0.18s ease;
+  }
+  .btn-lift:hover:not(:disabled) {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px -8px rgba(20, 33, 61, 0.45);
+  }
+  .btn-lift:active:not(:disabled) {
+    transform: translateY(1px);
+    box-shadow: none;
+    transition-duration: 0.06s;
+  }
+
+  /* Header nav: flashlight underline sweeps in under navy text. */
+  .nav-link {
+    position: relative;
+    padding-bottom: 2px;
+  }
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -3px;
+    height: 3px;
+    border-radius: 3px;
+    background: var(--flashlight);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.25s var(--ease-out);
+  }
+  .nav-link:hover::after,
+  .nav-link:focus-visible::after {
+    transform: scaleX(1);
+  }
+
+  /* Check marks drawn with stroke-dashoffset. Paths use pathLength="1". */
+  .check-path {
+    stroke-dasharray: 1;
+    stroke-dashoffset: 0;
+  }
+  .check-draw {
+    animation: draw-check 0.7s cubic-bezier(0.65, 0, 0.35, 1) 0.35s both;
+  }
+  /* Re-tick the trust chip's check when its card is hovered. */
+  .group:hover .check-retick {
+    animation: draw-check 0.45s cubic-bezier(0.65, 0, 0.35, 1) both;
+  }
+}
+
+@keyframes draw-check {
+  from { stroke-dashoffset: 1; }
+  to   { stroke-dashoffset: 0; }
+}
+
+/* Scroll reveal. Content is visible by default; only once the RevealObserver has
+   mounted (html.reveal-ready) do [data-reveal] elements start hidden and rise in. */
+.reveal-ready [data-reveal]:not([data-revealed]) {
+  opacity: 0;
+  transform: translateY(16px);
+}
+.reveal-ready [data-reveal]:not([data-reveal-done]) {
+  transition:
+    opacity 0.55s ease-out,
+    transform 0.6s var(--ease-out);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-delay: 0ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    transition-delay: 0ms !important;
+    scroll-behavior: auto !important;
+  }
+  .reveal-ready [data-reveal]:not([data-revealed]) {
+    opacity: 1;
+    transform: none;
+  }
+  .card-interactive:hover,
+  .card-interactive:active,
+  .btn-lift:hover:not(:disabled),
+  .btn-lift:active:not(:disabled) {
+    transform: none;
+  }
 }

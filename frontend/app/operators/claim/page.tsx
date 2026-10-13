@@ -123,7 +123,7 @@ function ClaimFlow() {
             <button
               type="submit"
               disabled={searching}
-              className="bg-brand-600 hover:bg-brand-700 text-white font-semibold px-5 py-3 rounded-xl text-sm transition-colors disabled:opacity-60"
+              className="btn-lift bg-navy hover:bg-night text-white font-semibold px-5 py-3 rounded-xl text-sm disabled:opacity-60"
             >
               {searching ? '...' : 'Search'}
             </button>
@@ -205,7 +205,7 @@ function ClaimFlow() {
             <button
               type="submit"
               disabled={loading}
-              className="w-full bg-brand-600 hover:bg-brand-700 text-white font-bold py-3.5 rounded-xl transition-colors disabled:opacity-60"
+              className="w-full btn-lift bg-navy hover:bg-night text-white font-bold py-3.5 rounded-xl disabled:opacity-60"
             >
               {loading ? 'Sending verification...' : 'Send verification email →'}
             </button>
@@ -225,7 +225,7 @@ function ClaimFlow() {
       {step === 'verify' && (
         <>
           <div className="mb-8">
-            <div className="text-4xl mb-4">📬</div>
+            <div aria-hidden="true" className="text-4xl mb-4">📬</div>
             <h1 className="text-2xl font-extrabold text-gray-900 mb-2">Check your email</h1>
             <p className="text-gray-500 text-sm">
               We've sent a verification code to <strong>{email}</strong>.
@@ -248,7 +248,7 @@ function ClaimFlow() {
             <button
               type="submit"
               disabled={verifying}
-              className="w-full bg-brand-600 hover:bg-brand-700 text-white font-bold py-3.5 rounded-xl transition-colors disabled:opacity-60"
+              className="w-full btn-lift bg-navy hover:bg-night text-white font-bold py-3.5 rounded-xl disabled:opacity-60"
             >
               {verifying ? 'Verifying...' : 'Verify and claim listing →'}
             </button>
@@ -263,7 +263,7 @@ function ClaimFlow() {
           <h1 className="text-2xl font-extrabold text-gray-900 mb-3">Listing claimed!</h1>
           <p className="text-gray-500 text-sm mb-6">
             Your ownership has been verified. You can now update your listing, add sessions,
-            and manage your camp's data on CampFinder.
+            and manage your camp's data on Bunkcheck.
           </p>
           <div className="bg-brand-50 border border-brand-200 rounded-2xl p-6 text-left mb-6">
             <h2 className="font-bold text-gray-900 mb-3 text-sm">What's next</h2>
@@ -302,7 +302,7 @@ function ClaimFlow() {
                     setUpgrading(false)
                   }
                 }}
-                className="shrink-0 bg-brand-600 hover:bg-brand-700 text-white font-bold px-4 py-2 rounded-xl text-sm transition-colors disabled:opacity-60"
+                className="shrink-0 btn-lift bg-navy hover:bg-night text-white font-bold px-4 py-2 rounded-xl text-sm disabled:opacity-60"
               >
                 {upgrading ? 'Redirecting...' : 'Upgrade →'}
               </button>

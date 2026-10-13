@@ -52,12 +52,14 @@ export default function EmailGate({ hiddenCount, searchContext, matchedCampIds, 
   return (
     <div className="relative">
       {/* Blurred preview cards are rendered behind this overlay by the parent */}
-      <div className="bg-white border border-brand-200 rounded-2xl shadow-xl p-8 text-center max-w-md mx-auto">
-        <div className="text-3xl mb-2">🎯</div>
-        <h3 className="text-xl font-bold text-gray-900 mb-2">
+      <div className="bg-white border border-line rounded-2xl shadow-lift p-8 text-center max-w-md mx-auto" data-reveal>
+        <div aria-hidden="true" className="mx-auto mb-3 grid h-11 w-11 place-items-center rounded-xl bg-navy">
+          <svg viewBox="0 0 16 16" className="h-5 w-5"><path d="M3.5 8.5 L6.5 11.5 L12.5 4.5" pathLength={1} fill="none" stroke="#F5D96B" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" className="check-path check-draw" /></svg>
+        </div>
+        <h3 className="text-xl font-bold text-navy mb-2">
           {hiddenCount} more {hiddenCount === 1 ? 'camp matches' : 'camp matches'}
         </h3>
-        <p className="text-gray-500 text-sm mb-6">
+        <p className="text-muted text-sm mb-6">
           Enter your email to unlock all results, get them sent to your inbox,
           and save your shortlist for later.
         </p>
@@ -67,7 +69,7 @@ export default function EmailGate({ hiddenCount, searchContext, matchedCampIds, 
             placeholder="First name (optional)"
             value={firstName}
             onChange={e => setFirstName(e.target.value)}
-            className="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm outline-none focus:border-brand-400"
+            className="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm outline-none focus:border-navy"
           />
           <input
             type="email"
@@ -75,18 +77,18 @@ export default function EmailGate({ hiddenCount, searchContext, matchedCampIds, 
             value={email}
             onChange={e => setEmail(e.target.value)}
             required
-            className="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm outline-none focus:border-brand-400"
+            className="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm outline-none focus:border-navy"
           />
-          {error && <p className="text-red-500 text-xs">{error}</p>}
+          {error && <p className="text-red-600 text-xs">{error}</p>}
           <button
             type="submit"
             disabled={loading}
-            className="w-full bg-brand-600 hover:bg-brand-700 text-white font-bold py-3 rounded-xl transition-colors disabled:opacity-60"
+            className="w-full btn-lift bg-navy hover:bg-night text-white font-bold py-3 rounded-xl disabled:opacity-60"
           >
             {loading ? 'Unlocking...' : `See all ${hiddenCount + 3} matches →`}
           </button>
         </form>
-        <p className="text-xs text-gray-400 mt-3">
+        <p className="text-xs text-muted mt-3">
           No spam. Unsubscribe anytime.
         </p>
       </div>

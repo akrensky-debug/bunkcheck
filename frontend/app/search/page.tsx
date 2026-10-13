@@ -72,12 +72,12 @@ function SearchResults() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
       {/* Compact re-search bar */}
-      <form onSubmit={handleReSearch} className="flex gap-2 mb-8 flex-wrap">
+      <form onSubmit={handleReSearch} className="flex gap-2 mb-8 flex-wrap bg-white border border-line rounded-2xl p-2 animate-rise-in">
         <input
           value={loc}
           onChange={e => setLoc(e.target.value)}
           placeholder="Location"
-          className="flex-1 min-w-[180px] px-4 py-2.5 border border-gray-200 rounded-xl text-sm outline-none focus:border-brand-400"
+          className="flex-1 min-w-[160px] px-4 py-2.5 bg-paper border border-transparent rounded-xl text-sm outline-none transition-colors focus:border-navy focus:bg-white"
         />
         <input
           type="number"
@@ -85,11 +85,11 @@ function SearchResults() {
           onChange={e => setAgeVal(e.target.value)}
           placeholder="Age"
           min={3} max={18}
-          className="w-24 px-4 py-2.5 border border-gray-200 rounded-xl text-sm outline-none focus:border-brand-400"
+          className="w-24 px-4 py-2.5 bg-paper border border-transparent rounded-xl text-sm outline-none transition-colors focus:border-navy focus:bg-white"
         />
         <button
           type="submit"
-          className="bg-brand-600 text-white font-semibold px-5 py-2.5 rounded-xl text-sm hover:bg-brand-700 transition-colors"
+          className="btn-lift bg-navy text-white font-semibold px-5 py-2.5 rounded-xl text-sm hover:bg-night"
         >
           Search
         </button>
@@ -99,35 +99,37 @@ function SearchResults() {
       {loading && (
         <div className="space-y-4">
           {[1,2,3].map(i => (
-            <div key={i} className="bg-gray-100 rounded-2xl h-40 animate-pulse" />
+            <div key={i} className="bg-white border border-line rounded-2xl h-40 animate-pulse" />
           ))}
         </div>
       )}
 
       {/* Error */}
       {!loading && error && (
-        <div className="text-center py-16 text-gray-500">{error}</div>
+        <div className="text-center py-16 text-red-600">{error}</div>
       )}
 
       {/* No results */}
       {!loading && !error && results.length === 0 && (
         <div className="text-center py-16">
-          <p className="text-gray-500 mb-2">No camps found near <strong>{location}</strong>.</p>
-          <p className="text-sm text-gray-400">Try a nearby city or expand your search radius.</p>
+          <h2 className="text-xl font-bold text-navy mb-2">No camps found near {location}.</h2>
+          <p className="text-sm text-muted">Try a nearby city or expand your search radius.</p>
         </div>
       )}
 
       {/* Results */}
       {!loading && results.length > 0 && (
         <>
-          <p className="text-sm text-gray-500 mb-4">
-            {results.length} camp{results.length !== 1 ? 's' : ''} near <strong>{location}</strong>
+          <p className="text-sm text-muted mb-4" data-reveal>
+            <span className="font-display font-bold text-navy text-base">{results.length}</span> camp{results.length !== 1 ? 's' : ''} near <strong>{location}</strong>
             {age ? ` for age ${age}` : ''}
           </p>
 
           <div className="space-y-4">
             {visible.map((camp, i) => (
-              <CampCard key={camp.id} camp={camp} rank={i + 1} />
+              <div key={camp.id} data-reveal>
+                <CampCard camp={camp} rank={i + 1} />
+              </div>
             ))}
           </div>
 
@@ -150,9 +152,9 @@ function SearchResults() {
           )}
 
           {unlocked && (
-            <div className="mt-8 p-4 bg-brand-50 border border-brand-200 rounded-2xl text-center">
-              <p className="text-sm text-brand-700 font-medium">
-                ✉️ Results sent to your email ·
+            <div className="mt-8 p-4 bg-checked-soft rounded-2xl text-center animate-rise-in">
+              <p className="text-sm text-checked font-semibold">
+                Results sent to your email ·
                 <a href="/camps" className="underline ml-1">Save your shortlist</a>
               </p>
             </div>
@@ -165,7 +167,7 @@ function SearchResults() {
 
 export default function SearchPage() {
   return (
-    <Suspense fallback={<div className="max-w-6xl mx-auto px-4 py-16 text-center text-gray-400">Loading...</div>}>
+    <Suspense fallback={<div className="max-w-6xl mx-auto px-4 py-16 text-center text-muted">Loading...</div>}>
       <SearchResults />
     </Suspense>
   )

@@ -31,7 +31,7 @@ function SuccessContent() {
       </div>
       <a
         href={campId ? `/camps/${campId}` : '/search'}
-        className="inline-block bg-brand-600 hover:bg-brand-700 text-white font-bold px-6 py-3 rounded-xl transition-colors"
+        className="inline-block btn-lift bg-navy hover:bg-night text-white font-bold px-6 py-3 rounded-xl"
       >
         View your listing →
       </a>

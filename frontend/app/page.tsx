@@ -47,7 +47,8 @@ export default function AgentHome() {
   }, [])
 
   useEffect(() => {
-    bottomRef.current?.scrollIntoView({ behavior: 'smooth', block: 'end' })
+    const reduce = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches
+    bottomRef.current?.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'end' })
   }, [messages])
 
   function updateLast(fn: (m: Message) => Message) {
@@ -122,31 +123,28 @@ export default function AgentHome() {
       {/* Conversation */}
       <section className="flex-1 min-w-0 flex flex-col min-h-[calc(100vh-65px)]">
         <div className="flex items-center justify-between py-3 lg:hidden">
-          <button onClick={() => setPanelOpen(o => !o)} className="text-sm font-medium text-brand-700">
+          <button onClick={() => setPanelOpen(o => !o)} className="text-sm font-semibold text-navy underline decoration-flashlight decoration-2 underline-offset-4">
             {panelOpen ? 'Hide your family' : 'Your family & calendar'}
           </button>
-          {!empty && <button onClick={newConversation} className="text-sm text-gray-500">New chat</button>}
+          {!empty && <button onClick={newConversation} className="text-sm text-muted hover:text-navy">New chat</button>}
         </div>
         {panelOpen && family && <div className="lg:hidden mb-4"><FamilyPanel family={family} onChange={setFamily} /></div>}
 
         {empty ? (
-          <div className="flex-1 flex flex-col justify-center py-12">
-            <h1 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-3 leading-tight">
-              Summer, handled.
-            </h1>
-            <p className="text-gray-600 text-lg mb-8 max-w-xl">
-              Tell me about your kids and your summer. I'll find verified camps, work out the weeks,
-              and put it all on one calendar you can share.
-            </p>
-            <div className="grid sm:grid-cols-2 gap-2 max-w-2xl">
+          <div className="flex-1 flex flex-col justify-center py-6 md:py-10">
+            <HeroPanel />
+            <p className="text-xs font-semibold uppercase tracking-wide text-muted mb-3" data-reveal>Start with one of these</p>
+            <div className="grid sm:grid-cols-2 gap-2.5 max-w-3xl">
               {STARTERS.map(s => (
                 <button
                   key={s}
                   onClick={() => send(s)}
                   disabled={!family}
-                  className="text-left text-sm bg-gray-50 hover:bg-brand-50 border border-gray-200 hover:border-brand-300 rounded-xl px-4 py-3 text-gray-700 transition-colors disabled:opacity-50"
+                  data-reveal
+                  className="group card-interactive text-left text-sm bg-white border border-line rounded-2xl px-4 py-3 text-navy disabled:opacity-50 flex items-start justify-between gap-3"
                 >
-                  {s}
+                  <span>{s}</span>
+                  <span aria-hidden="true" className="text-muted group-hover:text-navy group-hover:translate-x-0.5 transition-transform">→</span>
                 </button>
               ))}
             </div>
@@ -163,9 +161,9 @@ export default function AgentHome() {
 
         <form
           onSubmit={e => { e.preventDefault(); send(input) }}
-          className="sticky bottom-0 bg-white pt-2 pb-4"
+          className="sticky bottom-0 bg-paper pt-2 pb-4"
         >
-          <div className="flex gap-2 items-end border border-gray-200 rounded-2xl p-2 shadow-sm focus-within:border-brand-400">
+          <div className="flex gap-2 items-end bg-white border border-line rounded-2xl p-2 shadow-sm transition-colors focus-within:border-navy">
             <textarea
               value={input}
               onChange={e => setInput(e.target.value)}
@@ -174,12 +172,12 @@ export default function AgentHome() {
               }}
               rows={1}
               placeholder={empty ? 'Ages, town, interests, weeks you need covered…' : 'Reply…'}
-              className="flex-1 resize-none outline-none px-2 py-2 text-base max-h-40"
+              className="flex-1 resize-none outline-none px-2 py-2 text-base max-h-40 bg-transparent placeholder:text-gray-400"
             />
             <button
               type="submit"
               disabled={busy || !input.trim() || !family}
-              className="bg-brand-600 hover:bg-brand-700 text-white font-semibold px-4 py-2 rounded-xl transition-colors disabled:opacity-40"
+              className="btn-lift bg-navy hover:bg-night text-white font-semibold px-5 py-2 rounded-xl disabled:opacity-40"
             >
               {busy ? '…' : 'Send'}
             </button>
@@ -191,7 +189,7 @@ export default function AgentHome() {
       <aside className="hidden lg:block w-80 shrink-0 py-6">
         <div className="sticky top-20 space-y-4">
           {!empty && (
-            <button onClick={newConversation} className="text-sm text-gray-500 hover:text-gray-800">+ New chat</button>
+            <button onClick={newConversation} className="text-sm text-muted hover:text-navy">+ New chat</button>
           )}
           {family && <FamilyPanel family={family} onChange={setFamily} />}
         </div>
@@ -204,20 +202,20 @@ function MessageView({ message }: { message: Message }) {
   if (message.role === 'user') {
     return (
       <div className="flex justify-end">
-        <div className="bg-brand-600 text-white rounded-2xl rounded-br-md px-4 py-2.5 max-w-[85%] whitespace-pre-wrap">
+        <div className="bg-navy text-white rounded-2xl rounded-br-md px-4 py-2.5 max-w-[85%] whitespace-pre-wrap animate-rise-in">
           {message.parts.map(p => (p.kind === 'text' ? p.text : '')).join('')}
         </div>
       </div>
     )
   }
   return (
-    <div className="space-y-3 text-gray-800">
+    <div className="space-y-3 text-navy animate-fade-in">
       {message.parts.map((p, i) =>
         p.kind === 'text' ? <AgentText key={i} text={p.text} /> : <AgentBlock key={i} data={p.data} />,
       )}
       {message.status && (
-        <p className="text-sm text-gray-400 flex items-center gap-2">
-          <span className="inline-block w-2 h-2 rounded-full bg-brand-500 animate-pulse" />
+        <p className="text-sm text-muted flex items-center gap-2">
+          <span className="inline-block w-2.5 h-2.5 rounded-full bg-flashlight ring-2 ring-navy/80 animate-pulse" />
           {message.status}…
         </p>
       )}
@@ -240,66 +238,151 @@ function FamilyPanel({ family, onChange }: { family: Family; onChange: (f: Famil
 
   return (
     <div className="space-y-4">
-      <div className="bg-gray-50 rounded-2xl p-4">
-        <p className="text-xs font-semibold uppercase tracking-wide text-gray-500 mb-2">Your family</p>
+      <div className="bg-white border border-line rounded-2xl p-4" data-reveal>
+        <p className="text-xs font-semibold uppercase tracking-wide text-muted mb-2">Your family</p>
         {profile.kids?.length || profile.home_location ? (
-          <div className="space-y-1.5 text-sm text-gray-700">
+          <div className="space-y-1.5 text-sm text-navy">
             {profile.home_location && <p>📍 {profile.home_location}</p>}
             {profile.kids?.map((k, i) => (
               <p key={i}>
                 👧 {k.name || 'Child'}{k.age != null ? `, ${k.age}` : ''}
-                {k.interests?.length ? <span className="text-gray-500"> · {k.interests.join(', ')}</span> : null}
+                {k.interests?.length ? <span className="text-muted"> · {k.interests.join(', ')}</span> : null}
               </p>
             ))}
             {profile.summer_start && profile.summer_end && (
               <p>☀️ {profile.summer_start} → {profile.summer_end}</p>
             )}
             {profile.weekly_budget != null && <p>💵 Up to ${profile.weekly_budget}/week</p>}
-            {profile.needs?.map((n, i) => <p key={i} className="text-gray-500">• {n}</p>)}
+            {profile.needs?.map((n, i) => <p key={i} className="text-muted">• {n}</p>)}
           </div>
         ) : (
-          <p className="text-sm text-gray-400">I'll remember your kids, town and summer plans as we talk.</p>
+          <p className="text-sm text-muted">I'll remember your kids, town and summer plans as we talk.</p>
         )}
       </div>
 
-      <div className="bg-gray-50 rounded-2xl p-4">
-        <p className="text-xs font-semibold uppercase tracking-wide text-gray-500 mb-2">Family calendar</p>
+      <div className="bg-white border border-line rounded-2xl p-4" data-reveal>
+        <p className="text-xs font-semibold uppercase tracking-wide text-muted mb-2">Family calendar</p>
         <CalendarList events={events} compact />
         {events.length > 0 && feed && webcal && (
-          <div className="mt-3 pt-3 border-t border-gray-200 flex flex-wrap gap-x-3 gap-y-1 text-xs font-medium">
-            <a href={`https://calendar.google.com/calendar/r?cid=${encodeURIComponent(webcal)}`} target="_blank" rel="noreferrer" className="text-brand-700 hover:underline">
+          <div className="mt-3 pt-3 border-t border-line flex flex-wrap gap-x-3 gap-y-1 text-xs font-medium">
+            <a href={`https://calendar.google.com/calendar/r?cid=${encodeURIComponent(webcal)}`} target="_blank" rel="noreferrer" className="text-navy underline decoration-line underline-offset-2 hover:decoration-navy">
               Add to Google Calendar
             </a>
-            <a href={webcal} className="text-brand-700 hover:underline">Apple / Outlook</a>
+            <a href={webcal} className="text-navy underline decoration-line underline-offset-2 hover:decoration-navy">Apple / Outlook</a>
             <button
               onClick={() => { navigator.clipboard?.writeText(feed); setCopied(true) }}
-              className="text-gray-500 hover:text-gray-800"
+              className="text-muted hover:text-navy"
             >
               {copied ? 'Link copied' : 'Copy private link'}
             </button>
-            <button onClick={resetLink} className="text-gray-500 hover:text-gray-800">Reset link</button>
+            <button onClick={resetLink} className="text-muted hover:text-navy">Reset link</button>
           </div>
         )}
       </div>
 
-      <div className="bg-gray-50 rounded-2xl p-4">
-        <p className="text-xs font-semibold uppercase tracking-wide text-gray-500 mb-2">Info kit</p>
+      <div className="bg-white border border-line rounded-2xl p-4" data-reveal>
+        <p className="text-xs font-semibold uppercase tracking-wide text-muted mb-2">Info kit</p>
         {family.signed_in ? (
           <>
-            <p className="text-sm text-gray-600 mb-2">
+            <p className="text-sm text-muted mb-2">
               Allergies, emergency contacts, insurance: fill them in once, share only what each camp asks for.
             </p>
-            <a href="/kit" className="text-sm font-medium text-brand-700 hover:underline">Open your info kit →</a>
+            <a href="/kit" className="text-sm font-semibold text-navy underline decoration-flashlight decoration-2 underline-offset-4 hover:decoration-navy">Open your info kit →</a>
           </>
         ) : (
           <>
-            <p className="text-sm text-gray-600 mb-2">
+            <p className="text-sm text-muted mb-2">
               Save your family to an account to keep it safe and fill in camp forms once.
             </p>
-            <a href="/signin" className="text-sm font-medium text-brand-700 hover:underline">Save to an account →</a>
+            <a href="/signin" className="text-sm font-semibold text-navy underline decoration-flashlight decoration-2 underline-offset-4 hover:decoration-navy">Save to an account →</a>
           </>
         )}
       </div>
+    </div>
+  )
+}
+
+const SUMMER_WEEKS = 10
+
+/** Home hero: navy panel, yellow B whose check draws itself in, and a summer-at-a-glance strip. */
+function HeroPanel() {
+  return (
+    <div className="on-dark relative overflow-hidden rounded-[22px] bg-navy text-offwhite p-6 md:p-10 mb-6 animate-rise-in">
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute -right-24 -top-24 h-72 w-72 rounded-full bg-tile opacity-70"
+      />
+      <div className="relative grid md:grid-cols-[1fr_auto] gap-6 md:gap-10 items-center">
+        <div>
+          <p className="text-xs font-semibold uppercase tracking-[0.14em] text-flashlight mb-3">Summer camp, planned with AI</p>
+          <h1 className="text-[1.75rem] leading-[1.1] sm:text-4xl lg:text-[2.75rem] font-extrabold text-white mb-4 [text-wrap:balance]">
+            <span className="block">Summer, sorted.</span>
+          </h1>
+          <p className="text-base md:text-lg text-[#C9CFDC] max-w-xl">
+            Tell me about your kids and your summer. I'll find the best camps, fit them into your weeks,
+            and help you sign up.
+          </p>
+        </div>
+        <HeroMark className="order-first md:order-none w-14 md:w-28 lg:w-36 h-auto" />
+      </div>
+      <SummerStrip />
+    </div>
+  )
+}
+
+/** The bare yellow B (on navy) with its check cut drawn in on load. */
+function HeroMark({ className = '' }: { className?: string }) {
+  return (
+    <svg viewBox="7 3 53 58" className={className} role="img" aria-label="Bunkcheck">
+      <path d="M8 4 H35 A13.5 13.5 0 0 1 45 27 A15.5 15.5 0 0 1 39 60 H8 Z" fill="#F5D96B" className="origin-center [transform-box:fill-box] animate-pop" />
+      <path d="M24 38 H34 A6 6 0 0 1 34 50 H24 A6 6 0 0 1 24 38 Z" fill="#14213D" />
+      <path
+        d="M18 18 L24 24 L35 12"
+        pathLength={1}
+        fill="none"
+        stroke="#14213D"
+        strokeWidth="5.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        className="check-path check-draw"
+      />
+    </svg>
+  )
+}
+
+/** Ten summer weeks filling in, one after another. Illustrative only. */
+function SummerStrip() {
+  return (
+    <div className="relative mt-7 md:mt-9">
+      <div className="flex items-baseline justify-between mb-2 text-xs text-[#C9CFDC]">
+        <span className="font-semibold text-offwhite">Summer at a glance</span>
+        <span>June · July · August</span>
+      </div>
+      <ol className="grid grid-cols-10 gap-1 sm:gap-1.5" aria-label={`${SUMMER_WEEKS} summer weeks, each one covered`}>
+        {Array.from({ length: SUMMER_WEEKS }, (_, i) => (
+          <li key={i} className="relative h-9 sm:h-11 rounded-md bg-tile overflow-hidden">
+            <span
+              aria-hidden="true"
+              className="absolute inset-0 bg-flashlight origin-bottom animate-week-fill"
+              style={{ animationDelay: `${700 + i * 90}ms` }}
+            />
+            <svg viewBox="0 0 16 16" aria-hidden="true" className="absolute inset-0 m-auto h-3.5 w-3.5 sm:h-4 sm:w-4">
+              <path
+                d="M3.5 8.5 L6.5 11.5 L12.5 4.5"
+                pathLength={1}
+                fill="none"
+                stroke="#14213D"
+                strokeWidth="2.6"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="check-path"
+                style={{ animation: `draw-check 0.35s cubic-bezier(0.65, 0, 0.35, 1) ${950 + i * 90}ms both` }}
+              />
+            </svg>
+            <span className="sr-only">Week {i + 1}</span>
+          </li>
+        ))}
+      </ol>
     </div>
   )
 }
