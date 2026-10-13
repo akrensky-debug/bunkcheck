@@ -1,0 +1,55 @@
+{
+  "slug": "-6",
+  "website_url": "https://rec.providenceri.gov/program-details/?i=1615",
+  "city": null,
+  "state": null,
+  "zip": null,
+  "sources": [
+    {
+      "url": "https://rec.providenceri.gov/program-details/?i=1615",
+      "checked": "2026-10-13",
+      "fields": [
+        "website_url"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://rec.providenceri.gov/program-details/?i=1615",
+      "kind": "html",
+      "title": "Program Details – Providence Recreation"
+    },
+    "warnings": [
+      "The page says \"Program Not Found.\" No camp or program details are shown.",
+      "The only date on the page is \"Thu, Jan 01, 1970\". This is a placeholder for an empty date, not a real session date, so it was not recorded.",
+      "This is the City of Providence Recreation program site (rec.providenceri.gov). Program ID 1615 may have been removed or may have expired. The page doesn't confirm that this program was ever a summer camp.",
+      "No information about the 2027 season was found."
+    ],
+    "unknowns": [
+      "Program name",
+      "Whether this is a summer camp, and what type",
+      "Session dates",
+      "Ages or grades served",
+      "Price",
+      "Location or address",
+      "Registration details (the page only links to providenceri.recdesk.com with no specific program)",
+      "Contact phone or email",
+      "Activities",
+      "Extended care, meals, transportation, financial aid",
+      "Refund policy"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "slug must be kebab-case",
+      "missing required name",
+      "missing required city",
+      "missing required state",
+      "missing required zip",
+      "missing required camp_type",
+      "missing required season_year",
+      "camp_type must be one of ['day', 'sleepaway', 'specialty']"
+    ]
+  }
+}

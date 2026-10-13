@@ -1,0 +1,62 @@
+{
+  "slug": "providence-2",
+  "operator_name": "Providence Recreation (City of Providence)",
+  "website_url": "https://rec.providenceri.gov/program-details/?i=1596",
+  "city": "Providence",
+  "state": "RI",
+  "zip": null,
+  "sources": [
+    {
+      "url": "https://rec.providenceri.gov/program-details/?i=1596",
+      "checked": "2026-10-13",
+      "fields": [
+        "operator_name",
+        "website_url",
+        "city",
+        "state"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://rec.providenceri.gov/program-details/?i=1596",
+      "kind": "html",
+      "title": "Program Details – Providence Recreation"
+    },
+    "warnings": [
+      "The source page says \"Program Not Found.\" Program ID 1596 has no content, so nothing about any camp can be pulled from it.",
+      "The schedule shows \"Thu, Jan 01, 1970\". That is an empty placeholder date, not a real session date, so it was not recorded.",
+      "This is a page on the City of Providence parks and recreation website, not a camp's own material. The program may have been removed or may have expired.",
+      "Check the city's RecDesk registration site (providenceri.recdesk.com) for current programs."
+    ],
+    "unknowns": [
+      "Program/camp name",
+      "Whether this is a summer camp at all",
+      "Season year and session dates",
+      "Ages/grades served",
+      "Prices",
+      "Camp type (day/sleepaway/specialty)",
+      "Activities",
+      "Location/address",
+      "Registration URL (page only links to the providenceri.recdesk.com domain, not a specific program)",
+      "Contact phone/email",
+      "Refund policy, financial aid, extended care, meals, transportation"
+    ],
+    "low_confidence": [
+      {
+        "field": "website_url",
+        "confidence": 0.5,
+        "quote": "Program Not Found."
+      }
+    ],
+    "errors": [
+      "missing required name",
+      "missing required zip",
+      "missing required camp_type",
+      "missing required season_year",
+      "camp_type must be one of ['day', 'sleepaway', 'specialty']"
+    ]
+  }
+}

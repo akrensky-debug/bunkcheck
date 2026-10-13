@@ -1,0 +1,83 @@
+{
+  "slug": "west-warwick-civic-center-summer-program-west-warwick",
+  "name": "West Warwick Civic Center Summer Program",
+  "operator_name": "West Warwick Civic Center (Town of West Warwick)",
+  "website_url": "https://westwarwickri.gov/civic-center",
+  "phone": "401-822-9200",
+  "street_address": "100 Factory Street (Thomas A. Lamb Field House)",
+  "city": "West Warwick",
+  "state": "RI",
+  "zip": null,
+  "camp_type": "day",
+  "description_short": "A town-run summer day program at the Thomas A. Lamb Field House in West Warwick, running 8:00 AM to 3:00 PM on weekdays. Early drop-off and late pick-up are available for an extra fee.",
+  "extended_care": true,
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "2026 Summer Program",
+      "start_date": "2026-06-16",
+      "end_date": "2026-08-14",
+      "price": null,
+      "availability": "full"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://westwarwickri.gov/civic-center",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "camp_type",
+        "description_short",
+        "extended_care",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://westwarwickri.gov/civic-center",
+      "kind": "html",
+      "title": "Civic Center - West Warwick, RI"
+    },
+    "warnings": [
+      "Only the 2026 season is shown, and it ended August 14, 2026. No 2027 dates, prices or registration details are posted yet.",
+      "This is a Town of West Warwick Civic Center page that mostly covers advertising and sponsorship. The summer program is only a short section of it.",
+      "The phone number is the main Town Hall number (1170 Main St) from the page footer. It is not a number specific to the summer program or the Civic Center.",
+      "The page says it is unclear whether the program is booked as one 9-week block or by the week. It was recorded as a single session."
+    ],
+    "unknowns": [
+      "2027 season dates and registration opening date",
+      "Price (weekly or full-season) and extended care fees",
+      "Age or grade range",
+      "Activities offered",
+      "Whether enrollment is weekly or for the full season",
+      "Whether lunch or snacks are provided",
+      "Contact email and phone number specific to the program",
+      "Registration URL",
+      "Refund and deposit policy",
+      "Financial aid availability",
+      "Transportation",
+      "Special needs accommodations",
+      "ZIP code for 100 Factory Street"
+    ],
+    "low_confidence": [
+      {
+        "field": "phone",
+        "confidence": 0.5,
+        "quote": "Phone: 401-822-9200 | Fax: 401-822-9266"
+      }
+    ],
+    "errors": [
+      "missing required zip"
+    ]
+  }
+}

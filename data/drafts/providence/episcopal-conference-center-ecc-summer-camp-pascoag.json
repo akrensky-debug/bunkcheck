@@ -1,0 +1,95 @@
+{
+  "slug": "episcopal-conference-center-ecc-summer-camp-pascoag",
+  "name": "Episcopal Conference Center (ECC) Summer Camp",
+  "operator_name": "Episcopal Diocese of Rhode Island",
+  "website_url": "https://www.eccri.org/",
+  "phone": "(401) 568-4055",
+  "street_address": "872 Reservoir Road",
+  "city": "Pascoag",
+  "state": "RI",
+  "zip": "02859",
+  "primary_categories": [
+    "faith"
+  ],
+  "description_short": "Episcopal church summer camp and retreat center on Echo Lake in Pascoag, Rhode Island, run with support from the Diocese of Rhode Island for over 75 years. Details for Summer 2027 have not been posted yet.",
+  "activities": [
+    "singing",
+    "swimming",
+    "campfires",
+    "dancing"
+  ],
+  "financial_aid": true,
+  "swim_waterfront_notes": "Camp is on Echo Lake. Swimming is listed as an activity, but no details about the waterfront are given.",
+  "season_year": 2027,
+  "sources": [
+    {
+      "url": "https://www.eccri.org/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "primary_categories",
+        "activities",
+        "description_short",
+        "financial_aid",
+        "swim_waterfront_notes"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.eccri.org/",
+      "kind": "html",
+      "title": "ECC"
+    },
+    "warnings": [
+      "The 2027 season has not been announced. The page says 'Stay tuned for more information about Summer 2027!' and gives no dates, prices, or registration details.",
+      "Pricing uses a 'three-tier pricing structure', but the tier amounts are on a separate linked page that was not provided.",
+      "ACA accreditation is assumed only from an 'ACA Accreditation' menu link. The page text does not say it outright.",
+      "ECC also runs a separate 'City Camp' program. This listing covers the main Summer Camp only.",
+      "The page says ACA accredited: check it on acacamps.org and add aca_accredited with aca_source_url"
+    ],
+    "unknowns": [
+      "2027 session dates",
+      "2027 prices (amounts for each of the three tiers)",
+      "Registration opening date and registration URL",
+      "Age or grade range",
+      "Camp type (overnight or day): not stated, though campfires suggest overnight stays",
+      "Email address",
+      "Deposit and refund policy (may be in the Summer Camp Handbook)",
+      "Transportation",
+      "Meals included",
+      "Special needs accommodations",
+      "Swim and waterfront supervision details"
+    ],
+    "low_confidence": [
+      {
+        "field": "operator_name",
+        "confidence": 0.7,
+        "quote": "The Diocese of Rhode Island is committed to making the ECC experience available to all individuals"
+      },
+      {
+        "field": "aca_accredited",
+        "confidence": 0.6,
+        "quote": "ACA Accreditation"
+      },
+      {
+        "field": "swim_waterfront_notes",
+        "confidence": 0.7,
+        "quote": "finding peace by Echo Lake"
+      }
+    ],
+    "errors": [
+      "missing required camp_type",
+      "camp_type must be one of ['day', 'sleepaway', 'specialty']"
+    ]
+  }
+}

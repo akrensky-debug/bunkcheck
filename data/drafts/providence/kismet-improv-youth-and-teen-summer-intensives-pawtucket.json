@@ -1,0 +1,76 @@
+{
+  "slug": "kismet-improv-youth-and-teen-summer-intensives-pawtucket",
+  "name": "Kismet Improv Youth and Teen Summer Intensives",
+  "operator_name": "Kismet Improv",
+  "website_url": "https://www.kismetimprov.com/summer",
+  "email": "hello@kismetimprov.com",
+  "phone": "401-205-2552",
+  "street_address": "1005 Main Street, Suite 2205",
+  "city": "Pawtucket",
+  "state": "RI",
+  "zip": null,
+  "camp_type": "specialty",
+  "primary_categories": [
+    "performing_arts"
+  ],
+  "description_short": "Summer improv intensives for youth and teens, run by Kismet Improv, a comedy theater in Pawtucket, RI. No sessions are open for booking right now.",
+  "activities": [
+    "Improv comedy"
+  ],
+  "sources": [
+    {
+      "url": "https://www.kismetimprov.com/summer",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "description_short"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.kismetimprov.com/summer",
+      "kind": "html",
+      "title": "SUMMER INTENSIVES | Kismet Improv"
+    },
+    "warnings": [
+      "Page shows 'Nothing to book right now. Check back soon.' No sessions, dates, prices, or season year are listed, so season_year is left blank.",
+      "Kismet Improv is a comedy theater that offers summer intensives, not a traditional camp. camp_type 'specialty' is inferred from its improv focus."
+    ],
+    "unknowns": [
+      "Season year and session dates (no sessions listed)",
+      "Exact age or grade range (page says only 'youth and teen')",
+      "Price and deposit",
+      "Daily schedule/hours and whether it is day-only",
+      "Registration opening date and registration URL",
+      "Financial aid for summer intensives (site has a Scholarships page, but this page doesn't say whether it covers summer programs)",
+      "Refund policy",
+      "Extended care, meals, transportation",
+      "Zip code",
+      "Special needs accommodations (site has an inclusion page, but this page gives no details)"
+    ],
+    "low_confidence": [
+      {
+        "field": "camp_type",
+        "confidence": 0.7,
+        "quote": "Live Comedy Shows, Improv Classes for Adults, Youth Summer Intensives, and Corporate Team Building."
+      }
+    ],
+    "errors": [
+      "missing required zip",
+      "missing required season_year"
+    ]
+  }
+}

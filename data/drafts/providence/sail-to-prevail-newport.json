@@ -1,0 +1,92 @@
+{
+  "slug": "sail-to-prevail-newport",
+  "name": "Sail To Prevail",
+  "operator_name": "Sail To Prevail, Inc.",
+  "website_url": "https://sailtoprevail.org/",
+  "registration_url": "https://sailtoprevail.org/registration/",
+  "phone": "401-849-8898",
+  "street_address": "Fort Adams State Park (docks)",
+  "city": "Newport",
+  "state": "RI",
+  "zip": "02840",
+  "camp_type": "specialty",
+  "primary_categories": [
+    "sports",
+    "special_needs"
+  ],
+  "description_short": "A non-profit therapeutic sailing program for children and adults with disabilities, including veterans. Sailors go out on Narragansett Bay in specially adapted 20-foot sailboats from Fort Adams State Park in Newport, RI. There is also a program at the Harvard College Boat House in Cambridge, MA.",
+  "activities": [
+    "Adaptive sailing",
+    "Therapeutic sailing"
+  ],
+  "special_needs_notes": "The program is built for children and adults with disabilities and for veterans. It uses specially adapted 20-foot sailboats.",
+  "swim_waterfront_notes": "Sailing takes place on Narragansett Bay from the docks at Fort Adams State Park, Newport, RI. The page gives no swim requirements or safety details.",
+  "sources": [
+    {
+      "url": "https://sailtoprevail.org/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "description_short",
+        "special_needs_notes",
+        "swim_waterfront_notes"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://sailtoprevail.org/",
+      "kind": "html",
+      "title": "Sail To Prevail"
+    },
+    "warnings": [
+      "This is the organization's homepage. It has no dates, prices or ages for any season.",
+      "Copyright notice reads '© Sail To Prevail, Inc. 2016', so some content may be out of date. 'Registration opens in April!' has no year.",
+      "Serves adults as well as children. It is a therapeutic sailing program, not a traditional summer camp.",
+      "Zip code is from the P.O. Box mailing address, not the dock location.",
+      "The Harvard program is at a different location (Harvard College Boat House, Cambridge, MA)."
+    ],
+    "unknowns": [
+      "Season year and session dates (the page only says 'Registration opens in April!' and gives no year)",
+      "Session length and schedule (daily times, how many days)",
+      "Prices or fees",
+      "Exact minimum and maximum ages ('children and adults' only)",
+      "Whether it is a day program or overnight (probably day sailing, but not stated)",
+      "Financial aid or scholarships",
+      "Refund and deposit policy",
+      "Swim test or life jacket requirements",
+      "Transportation, meals, extended care",
+      "Email contact (the site uses a contact form only)",
+      "ACA accreditation",
+      "Schedule and eligibility for the Harvard/Cambridge program"
+    ],
+    "low_confidence": [
+      {
+        "field": "camp_type",
+        "confidence": 0.7,
+        "quote": "Overcoming adversity through therapeutic sailing"
+      },
+      {
+        "field": "zip",
+        "confidence": 0.7,
+        "quote": "P.O. Box 1264 Newport, RI 02840"
+      }
+    ],
+    "errors": [
+      "missing required season_year"
+    ]
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "slug": "project-fashionworks-summer-classes",
+  "name": "Project FashionWorks Summer Classes",
+  "operator_name": "Project FashionWorks",
+  "website_url": "https://projectfashionworks.com/collections/frontpage",
+  "email": "elana@projectfashionworks.com",
+  "city": null,
+  "state": null,
+  "zip": null,
+  "camp_type": "specialty",
+  "primary_categories": [
+    "arts"
+  ],
+  "age_min": 8,
+  "age_max": 19,
+  "description_short": "Fashion design workshops taught by designer and educator Elana Carello for ages 8-19, split into a Tween class (8-12) and a Teen class (13-19). All experience levels are welcome, and students can make work for college portfolios.",
+  "activities": [
+    "Fashion design",
+    "Fashion merchandising",
+    "Portfolio development"
+  ],
+  "price_min": 425,
+  "price_max": 425,
+  "sources": [
+    {
+      "url": "https://projectfashionworks.com/collections/frontpage",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "price_min",
+        "price_max"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://projectfashionworks.com/collections/frontpage",
+      "kind": "html",
+      "title": "Summer Classes\n– Project FashionWorksAmerican ExpressDiners ClubDiscoverMastercardPayPalShop PayVenmoVisa"
+    },
+    "warnings": [
+      "The page doesn't give a season year or any class dates. The listed classes are probably from the past (2026) season, so 2027 details aren't confirmed.",
+      "Both classes show 'Sold out', which is probably left over from the past season, not a real 2027 status.",
+      "This is a Shopify store collection page. Prices are product prices, and it isn't clear how long a class runs.",
+      "There's no location on the page. The camp offers a mailed pamphlet with full details.",
+      "2 sessions without full dates were left out"
+    ],
+    "unknowns": [
+      "Season year and session dates",
+      "Class length (days/hours) and daily schedule",
+      "What the $425 price covers (whole class vs. per week)",
+      "Location / street address, city, state, zip",
+      "Phone number",
+      "Registration opening date for 2027",
+      "Refund policy details (linked page not provided)",
+      "Late pick-up policy, extended care",
+      "Financial aid, meals, transportation",
+      "Materials/supplies fees",
+      "Special needs accommodations"
+    ],
+    "low_confidence": [
+      {
+        "field": "price_min",
+        "confidence": 0.6,
+        "quote": "Regular price $425.00"
+      },
+      {
+        "field": "price_max",
+        "confidence": 0.6,
+        "quote": "Regular price $425.00"
+      },
+      {
+        "field": "sessions[0].price",
+        "confidence": 0.6,
+        "quote": "Sale price $425.00"
+      },
+      {
+        "field": "sessions[0].availability",
+        "confidence": 0.6,
+        "quote": "Availability Sold out"
+      },
+      {
+        "field": "sessions[1].price",
+        "confidence": 0.6,
+        "quote": "Sale price $425.00"
+      },
+      {
+        "field": "sessions[1].availability",
+        "confidence": 0.6,
+        "quote": "Availability Sold out"
+      }
+    ],
+    "errors": [
+      "missing required city",
+      "missing required state",
+      "missing required zip",
+      "missing required season_year"
+    ]
+  }
+}

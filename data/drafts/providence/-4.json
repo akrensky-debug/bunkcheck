@@ -1,0 +1,38 @@
+{
+  "slug": "-4",
+  "website_url": "https://newportartmuseum.org/education/classes/?category=camps/",
+  "city": null,
+  "state": null,
+  "zip": null,
+  "sources": [
+    {
+      "url": "https://newportartmuseum.org/education/classes/?category=camps/",
+      "checked": "2026-10-13",
+      "fields": [
+        "website_url"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://newportartmuseum.org/education/classes/?category=camps/",
+      "kind": "html",
+      "title": "Classes | Newport Art Museum"
+    },
+    "warnings": [],
+    "unknowns": [],
+    "low_confidence": [],
+    "errors": [
+      "slug must be kebab-case",
+      "missing required name",
+      "missing required city",
+      "missing required state",
+      "missing required zip",
+      "missing required camp_type",
+      "missing required season_year",
+      "camp_type must be one of ['day', 'sleepaway', 'specialty']"
+    ]
+  }
+}

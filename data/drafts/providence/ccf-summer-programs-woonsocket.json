@@ -1,0 +1,68 @@
+{
+  "slug": "ccf-summer-programs-woonsocket",
+  "name": "CCF Summer Programs",
+  "operator_name": "Connecting for Children & Families",
+  "website_url": "https://www.ccfcenter.org/summer-camps",
+  "email": "info@ccfcenter.org",
+  "phone": "(401) 766-3384",
+  "street_address": "46 Hope Street",
+  "city": "Woonsocket",
+  "state": "RI",
+  "zip": "02895",
+  "grade_min": 0,
+  "grade_max": 8,
+  "description_short": "Connecting for Children & Families, a Woonsocket non-profit, runs three summer camps by grade: Camp Discovery (K-2), Chillin' and Skillin' (3-5) and Get Connected (6-8). The camps run for six weeks, from July through mid-August.",
+  "sources": [
+    {
+      "url": "https://www.ccfcenter.org/summer-camps",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "grade_min",
+        "grade_max",
+        "description_short"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.ccfcenter.org/summer-camps",
+      "kind": "html",
+      "title": "Summer Camps | Register Today – Fun Awaits! — CCF - Connecting for Children & Families"
+    },
+    "warnings": [
+      "This page is a short overview with no year shown, so it may describe a past summer rather than 2027.",
+      "Details are on separate 'Grades K-5' and 'Grades 6-8' pages, which were not included in the source.",
+      "The three sessions are grade-level programs with no dates or prices listed.",
+      "3 sessions without full dates were left out"
+    ],
+    "unknowns": [
+      "Season year (the page does not say which summer it describes)",
+      "Exact session start and end dates",
+      "Price or weekly rate",
+      "Whether it is a day camp or sleepaway (probably day, but not stated)",
+      "Daily hours and extended care",
+      "Registration opening date and registration link",
+      "Activities offered",
+      "Meals, transportation, financial aid, deposit and refund policy",
+      "Age ranges (only grades are given)",
+      "Availability"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "missing required camp_type",
+      "missing required season_year",
+      "camp_type must be one of ['day', 'sleepaway', 'specialty']"
+    ]
+  }
+}
