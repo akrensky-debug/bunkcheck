@@ -1,0 +1,81 @@
+{
+  "slug": "center-day-camp-windham",
+  "name": "Center Day Camp",
+  "website_url": "https://www.centerdaycamp.org",
+  "registration_url": "https://mainejewish.campintouch.com/ui/forms/application/camper/App",
+  "email": "cdc@mainejewish.org",
+  "phone": "(207) 772-1959",
+  "street_address": "75 Hackett Rd.",
+  "city": "Windham",
+  "state": "ME",
+  "zip": "04062",
+  "camp_type": "day",
+  "description_short": "Day camp at 75 Hackett Rd. in Windham, Maine. The summer 2027 season runs June 21 to August 13. Registration opens in phases this fall, starting with returning families.",
+  "financial_aid": true,
+  "season_year": 2027,
+  "sources": [
+    {
+      "url": "https://www.centerdaycamp.org/registration",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "camp_type",
+        "description_short",
+        "financial_aid"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=75+Hackett+Rd.&city=Windham&state=ME&benchmark=Public_AR_Current&format=json",
+      "checked": "2026-10-13",
+      "fields": [
+        "zip"
+      ],
+      "note": "ZIP from the US Census geocoder for 75 HACKETT RD, WINDHAM, ME, 04062"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.centerdaycamp.org/registration",
+      "kind": "html",
+      "title": "Registration — Center Day Camp"
+    },
+    "warnings": [
+      "Filled zip 04062 from the US Census geocoder (75 HACKETT RD, WINDHAM, ME, 04062)",
+      "The page only covers registration. It gives the season span (June 21 – August 13, 2027) but no session dates, so no sessions were recorded.",
+      "Every registration phase date is 'Date TBD'. Phases in order: Session One 2026 families, Session Two 2026 families, JCA members & families adding sessions, then the general public.",
+      "There are two phone numbers. The winter number (207) 772-1959 is recorded because it is currently off-season. The summer number is (207) 892-4101.",
+      "The page says additional spots are not guaranteed and a waitlist will start once enrollment reaches capacity."
+    ],
+    "unknowns": [
+      "Dates of each 2027 session/week (only the overall season span June 21 – Aug 13, 2027 is given)",
+      "Number of sessions and how long each one is",
+      "Prices / weekly rate",
+      "Deposit and refund policy",
+      "Age or grade range",
+      "Registration opening dates for each phase (all listed as 'Date TBD')",
+      "Daily hours, extended care, meals, transportation",
+      "Activities and programming",
+      "Swim/waterfront details",
+      "ACA accreditation",
+      "Details of the financial aid program",
+      "Operator name (likely the Maine Jewish community organization / JCA, but the page doesn't say so outright)"
+    ],
+    "low_confidence": [
+      {
+        "field": "financial_aid",
+        "confidence": 0.6,
+        "quote": "if you have any questions about our application, financial aid, or session availability"
+      }
+    ],
+    "errors": []
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "slug": "camp-merriwood-orford",
+  "name": "Camp Merriwood",
+  "website_url": "https://www.merriwood.com/dates",
+  "registration_url": "https://merriwood.campintouch.com/ui/forms/application/camper/App",
+  "city": "Orford",
+  "state": "NH",
+  "zip": null,
+  "camp_type": "sleepaway",
+  "age_min": 8,
+  "age_max": 15,
+  "description_short": "A traditional overnight camp for girls ages 8-15 in the foothills of the White Mountains in Orford, New Hampshire. It offers a 7-week full session, 4-week and 3-week half sessions, and 2-week \"Splash of Magic\" sessions for new younger campers.",
+  "activities": [
+    "Horseback riding (optional add-on)",
+    "Trips"
+  ],
+  "price_min": 5525,
+  "price_max": 14600,
+  "transportation": true,
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Full Session (7 weeks)",
+      "start_date": "2027-06-27",
+      "end_date": "2027-08-14",
+      "price": 14600,
+      "availability": "unknown"
+    },
+    {
+      "name": "First Session (4 weeks)",
+      "start_date": "2027-06-27",
+      "end_date": "2027-07-24",
+      "price": 9725,
+      "availability": "unknown"
+    },
+    {
+      "name": "Second Session (3 weeks)",
+      "start_date": "2027-07-25",
+      "end_date": "2027-08-14",
+      "price": 8050,
+      "availability": "unknown"
+    },
+    {
+      "name": "Splash of Magic Session (2 weeks) - new current 1st-4th graders only",
+      "start_date": "2027-06-27",
+      "end_date": "2027-07-10",
+      "price": 5525,
+      "availability": "unknown"
+    },
+    {
+      "name": "2nd Splash of Magic Session (2 weeks) - new current 1st-4th graders only",
+      "start_date": "2027-07-25",
+      "end_date": "2027-08-07",
+      "price": 5525,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.merriwood.com/dates",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "website_url",
+        "registration_url",
+        "city",
+        "state",
+        "camp_type",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "price_min",
+        "price_max",
+        "transportation",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.merriwood.com/dates",
+      "kind": "html",
+      "title": "Dates and Rates for Camp Merriwood, Orford, NH"
+    },
+    "warnings": [
+      "The page says 'Dates are subject to change' and 'Limited space'.",
+      "Tuition doesn't include extras: horseback riding costs $300-$900 depending on session, bus transport is $90 each way, and the camp bank deposit is $25-$350 depending on age group.",
+      "The Splash of Magic sessions are only for new campers in current grades 1-4. The page doesn't say how this fits with the camp's stated minimum age of 8, so these sessions have no age range."
+    ],
+    "unknowns": [
+      "Street address and zip code",
+      "Phone and email",
+      "Full list of activities and program focus",
+      "ACA accreditation",
+      "Financial aid",
+      "Deposit and refund policy",
+      "Date registration opens and how many spaces are left in each session",
+      "Swimming/waterfront details",
+      "Support for special needs",
+      "Exact age range for the Splash of Magic sessions"
+    ],
+    "low_confidence": [
+      {
+        "field": "registration_url",
+        "confidence": 0.7,
+        "quote": "ENROLL"
+      }
+    ],
+    "errors": [
+      "missing required zip"
+    ]
+  }
+}

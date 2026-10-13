@@ -1,0 +1,119 @@
+{
+  "slug": "summer-fun-club-hartford",
+  "name": "Summer Fun Club",
+  "operator_name": "Boys & Girls Clubs of Hartford",
+  "website_url": "https://www.bgchartford.org/summers-at-the-club",
+  "city": "Hartford",
+  "state": "CT",
+  "zip": null,
+  "camp_type": "day",
+  "primary_categories": [
+    "arts",
+    "STEM",
+    "sports"
+  ],
+  "age_min": 6,
+  "age_max": 12,
+  "description_short": "A seven-week summer day camp for ages 6-12, held at five Boys & Girls Club sites in Hartford. Kids do arts, science and sports activities, and field trips and meals are included. Camp runs weekdays from 9am to 5pm.",
+  "activities": [
+    "arts",
+    "sciences",
+    "athletics",
+    "field trips"
+  ],
+  "price_min": 700,
+  "price_max": 700,
+  "financial_aid": true,
+  "extended_care": true,
+  "meals_included": true,
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Summer Fun Club 2026 (full summer)",
+      "start_date": "2026-06-29",
+      "end_date": "2026-08-14",
+      "price": 700,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.bgchartford.org/summers-at-the-club",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "price_min",
+        "price_max",
+        "extended_care",
+        "meals_included",
+        "financial_aid",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.bgchartford.org/summers-at-the-club",
+      "kind": "html",
+      "title": "Summers at the Club | Boys & Girls Club HartfordBitmap"
+    },
+    "warnings": [
+      "This page shows the 2026 season (June 29 - August 14, 2026), which has already ended as of 2026-10-13. 2027 dates, prices and applications are not posted yet.",
+      "The dates conflict: the page says \"late June to early August\" for the seven-week camp, but also lists \"June 29 - August 14\".",
+      "Camp runs at five club locations, each with its own address, phone and contact. No single address, phone or email is recorded: Asylum Hill (170 Sigourney St, 06105, 860-929-7690, swilliams@bgchartford.com), Northwest (1 Nahum Dr, 06112, 860-242-5553, mgarcia@bgchartford.org), South End (129-131 Ledyard St, 06114, 959-255-6472, kingram@bgchartford.org), Southwest (1 Chandler St, 06106, 860-951-6416, lcarrasco@bgchartford.org), Trinity College (1500 Broad St, 06106, 860-727-4154, kmangual@bgchartford.org).",
+      "The \"$400 early bird special (ends April 6th)\" line is unclear. It could mean an early-bird price of $400 or $400 off the $700 fee.",
+      "The $700 fee seems to cover the whole 7-week summer, not one week. No weekly rate is stated."
+    ],
+    "unknowns": [
+      "2027 season dates, prices and when registration opens",
+      "What the early bird special means: a $400 price or $400 off",
+      "Whether a weekly rate or partial enrollment is offered",
+      "Online registration link (only application forms are mentioned)",
+      "Whether a deposit is required",
+      "Refund policy",
+      "Transportation",
+      "ACA accreditation",
+      "Swimming or waterfront activities",
+      "Support for children with special needs",
+      "Whether membership is required",
+      "Whether spots are still available"
+    ],
+    "low_confidence": [
+      {
+        "field": "price_min",
+        "confidence": 0.75,
+        "quote": "$700 per camper (includes field trips and meals)"
+      },
+      {
+        "field": "price_max",
+        "confidence": 0.75,
+        "quote": "$700 per camper (includes field trips and meals)"
+      },
+      {
+        "field": "sessions[0].end_date",
+        "confidence": 0.75,
+        "quote": "June 29 - August 14"
+      },
+      {
+        "field": "sessions[0].price",
+        "confidence": 0.75,
+        "quote": "$700 per camper"
+      }
+    ],
+    "errors": [
+      "missing required zip"
+    ]
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "slug": "everwood-day-camp-sharon",
+  "name": "Everwood Day Camp",
+  "website_url": "https://everwooddaycamp.com/",
+  "registration_url": "https://everwooddaycamp.com/enroll/",
+  "phone": "781-694-5829",
+  "street_address": "125 Lakeview Street",
+  "city": "Sharon",
+  "state": "MA",
+  "zip": "02067",
+  "camp_type": "day",
+  "primary_categories": [
+    "sports",
+    "arts",
+    "nature",
+    "STEM"
+  ],
+  "description_short": "A day camp in Sharon, MA (near Boston) that runs four 2-week sessions from June 21 to August 13, 2027, plus an optional add-on Post Week. Activities include arts, sports, adventure and waterfront, and tuition includes daily swim lessons.",
+  "activities": [
+    "Daily swim lessons",
+    "Waterfront",
+    "Athletics/sports",
+    "Arts and STEAM",
+    "Outdoor adventure",
+    "Special events",
+    "Electives"
+  ],
+  "price_min": 1995,
+  "price_max": 7640,
+  "financial_aid": true,
+  "extended_care": true,
+  "transportation": true,
+  "refund_policy_summary": "Before Feb 1, 2027: all tuition and deposits are fully refundable. After Feb 1, 2027: a $150 per week cancellation fee applies to each cancelled week. March 30, 2027 is the last day to reduce weeks for a refund (minus the fee). After the April 1, 2027 balance due date there are no refunds; money paid is credited to the 2028 season, minus $150 per week. No make-up days or credits for missed days.",
+  "swim_waterfront_notes": "Tuition includes daily swim lessons. The site also has a waterfront program.",
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Session 1",
+      "start_date": "2027-06-21",
+      "end_date": "2027-07-02",
+      "price": 1995,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 2 (closed July 5)",
+      "start_date": "2027-07-06",
+      "end_date": "2027-07-16",
+      "price": 1995,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 3",
+      "start_date": "2027-07-19",
+      "end_date": "2027-07-30",
+      "price": 1995,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 4",
+      "start_date": "2027-08-02",
+      "end_date": "2027-08-13",
+      "price": 1995,
+      "availability": "unknown"
+    },
+    {
+      "name": "Post Week (add-on only)",
+      "start_date": "2027-08-16",
+      "end_date": "2027-08-20",
+      "price": null,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://everwooddaycamp.com/dates-enrollment/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "description_short",
+        "price_min",
+        "price_max",
+        "extended_care",
+        "transportation",
+        "financial_aid",
+        "refund_policy_summary",
+        "swim_waterfront_notes",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://everwooddaycamp.com/dates-enrollment/",
+      "kind": "html",
+      "title": "Dates & Enrollment Information for Summer 2027 for Day Camp near Boston"
+    },
+    "warnings": [
+      "The two price lists on the page don't match. The summary gives Early Bird 2027 rates of $1,890 to $7,350, good through September 30, 2026. The pricing table shows $1,995 to $7,640. Early Bird has ended as of today (2026-10-13), so the table prices were recorded. Confirm with the camp.",
+      "The summary says sessions combine into 4, 6, 8 or 9-week summers. The session note says 4, 6 or 8 weeks, and Post Week is 'Add On Only'.",
+      "The installment dates are listed in an odd order ('Nov. 1st, April 1st, and Feb. 1st'). Confirm the payment schedule.",
+      "The address comes from the check-mailing instructions and the page footer. It is probably the camp location, but the page doesn't say so outright."
+    ],
+    "unknowns": [
+      "Camper age range / grades served (the page only mentions 9th grade LIT and 10th grade CIT programs)",
+      "Weekly rate (only 2-week session prices are listed; that works out to about $997.50/week but the camp doesn't state a weekly rate)",
+      "Price of the Post Week add-on on its own",
+      "Bus transportation fees and stop locations (the fee list isn't on this page)",
+      "Camp email address (hidden/redacted on the page)",
+      "Whether lunch or snacks are included",
+      "ACA accreditation",
+      "Session availability / spots remaining",
+      "Discount amounts and financial assistance details",
+      "Daily camp hours (only the extended-day times are given)",
+      "Special needs accommodations"
+    ],
+    "low_confidence": [
+      {
+        "field": "financial_aid",
+        "confidence": 0.7,
+        "quote": "Financial Assistance"
+      },
+      {
+        "field": "primary_categories",
+        "confidence": 0.7,
+        "quote": "Athletics ... Arts and STEAM ... Outdoor Adventure"
+      }
+    ],
+    "errors": []
+  }
+}

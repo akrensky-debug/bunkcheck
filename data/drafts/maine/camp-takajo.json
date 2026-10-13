@@ -1,0 +1,94 @@
+{
+  "slug": "camp-takajo",
+  "name": "Camp Takajo",
+  "website_url": "https://www.camptakajo.com/",
+  "phone": "(207) 693-6675",
+  "city": null,
+  "state": "ME",
+  "zip": null,
+  "camp_type": "sleepaway",
+  "primary_categories": [
+    "sports"
+  ],
+  "description_short": "Camp Takajo is a summer camp for boys in Maine, near the Portland area. Parents use an online myTakajo account for forms, emailing their son, and viewing camp photos and news.",
+  "activities": [
+    "Sports",
+    "Waterfront",
+    "Hobbies",
+    "Skills",
+    "Pioneering"
+  ],
+  "sources": [
+    {
+      "url": "http://www.takajo.com/parents/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "website_url",
+        "phone",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "description_short"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "http://www.takajo.com/parents/",
+      "kind": "html",
+      "title": "Info for Parents of Camp Boys - You're Part of Our Boy Camp Too"
+    },
+    "warnings": [
+      "This is the parents' account/info page, not the dates and tuition page. It has no session dates, prices or ages. Check https://www.camptakajo.com/about/dates-tuition/ for those.",
+      "The page has an old heading, 'Our 2020 Camp Season'. Nothing on it is confirmed for the 2027 season.",
+      "The camp is called a sleepaway camp because the page mentions 'visiting day' and 'Bunk Life'. The page does not say this outright.",
+      "The state (Maine) comes from links to Visit Maine and Visit Portland and from the 207 area code. The page gives no address.",
+      "The page says ACA accredited: check it on acacamps.org and add aca_accredited with aca_source_url"
+    ],
+    "unknowns": [
+      "2027 session dates",
+      "Tuition / prices",
+      "Age or grade range of campers",
+      "Street address, city and zip",
+      "Email address",
+      "Registration URL and registration opening date",
+      "Deposit and refund policy",
+      "Financial aid",
+      "Transportation",
+      "Waterfront/swim details",
+      "Special needs accommodations"
+    ],
+    "low_confidence": [
+      {
+        "field": "camp_type",
+        "confidence": 0.7,
+        "quote": "Even though visiting day is a little hard for Benny at the end"
+      },
+      {
+        "field": "state",
+        "confidence": 0.75,
+        "quote": "head to the Visit Portland or the Visit Maine official travel sites"
+      },
+      {
+        "field": "primary_categories",
+        "confidence": 0.6,
+        "quote": "Sports"
+      },
+      {
+        "field": "website_url",
+        "confidence": 0.7,
+        "quote": "© 2026 Camp Takajo."
+      }
+    ],
+    "errors": [
+      "missing required city",
+      "missing required zip",
+      "missing required season_year",
+      "city None, ME is not in cities.py"
+    ]
+  }
+}

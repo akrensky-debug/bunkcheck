@@ -1,0 +1,89 @@
+{
+  "slug": "guided-discoveries-summer-camp-holderness",
+  "name": "Guided Discoveries Summer Camp",
+  "operator_name": "Squam Lakes Natural Science Center",
+  "website_url": "https://nhnature.org/learn/camp/",
+  "email": "info@nhnature.org",
+  "phone": "603-968-7194",
+  "street_address": "23 Science Center Road",
+  "city": "Holderness",
+  "state": "NH",
+  "zip": "03245",
+  "primary_categories": [
+    "nature"
+  ],
+  "description_short": "A nature camp run by Squam Lakes Natural Science Center in Holderness, NH. Children spend time outdoors learning about local wildlife and New Hampshire ecosystems through exploration, group games and hands-on activities, using the center's Live Animal Exhibit Trail and forested campus.",
+  "activities": [
+    "Live Animal Exhibit Trail",
+    "Up Close to Animal programs",
+    "Outdoor exploration",
+    "Group games",
+    "Hands-on activities",
+    "Wildlife and ecosystem learning"
+  ],
+  "financial_aid": true,
+  "refund_policy_summary": "A $25 administration fee applies to all cancellations. Cancel more than 30 days before a session: full refund minus $25. Cancel 14–30 days before: 50% refund minus $25. Cancel less than 14 days before: no refund. If enrollment is low, the center cancels week-long programs on the Wednesday before the start date and gives a full refund. Families may also transfer to another session at no extra cost if space allows.",
+  "season_year": 2026,
+  "sources": [
+    {
+      "url": "https://nhnature.org/learn/camp/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "primary_categories",
+        "activities",
+        "description_short",
+        "financial_aid",
+        "refund_policy_summary"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://nhnature.org/learn/camp/",
+      "kind": "html",
+      "title": "Guided Discoveries Summer Camp | Nature Camps in NH Lakes Region"
+    },
+    "warnings": [
+      "The page says \"There are no upcoming Guided Discoveries Camps. Check back later!\" The only materials linked are for 2026, which has already happened (today is 2026-10-13). The 2027 season has not been posted, so season_year is set to 2026.",
+      "Session dates, prices and camper ages are only in the 2026 schedule PDF, which was not part of the source text. Nothing was recorded from it.",
+      "The teen programs (First Guides and Counselor in Training, ages 14-17) are volunteer or leadership roles, not camper sessions. Their ages were not used as the camp's age range.",
+      "The refund policy and scholarship information may change for 2027."
+    ],
+    "unknowns": [
+      "2027 session dates",
+      "Session and weekly prices",
+      "Camper age or grade range",
+      "Whether this is a day camp (likely, but not stated)",
+      "When 2027 registration opens and the registration link",
+      "Whether a deposit is required",
+      "Daily hours and extended care",
+      "Whether meals are included",
+      "Transportation",
+      "ACA accreditation",
+      "Swim or waterfront activities",
+      "Support for children with special needs"
+    ],
+    "low_confidence": [
+      {
+        "field": "season_year",
+        "confidence": 0.7,
+        "quote": "2026 Guided Discoveries Schedule and Session Descriptions (PDF)"
+      }
+    ],
+    "errors": [
+      "missing required camp_type",
+      "camp_type must be one of ['day', 'sleepaway', 'specialty']"
+    ]
+  }
+}

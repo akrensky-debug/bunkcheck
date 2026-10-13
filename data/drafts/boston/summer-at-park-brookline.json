@@ -1,0 +1,116 @@
+{
+  "slug": "summer-at-park-brookline",
+  "name": "Summer at Park",
+  "operator_name": "The Park School",
+  "website_url": "https://www.parkschool.org/community/summer-programs",
+  "phone": "617-277-2456",
+  "street_address": "171 Goddard Avenue",
+  "city": "Brookline",
+  "state": "MA",
+  "zip": "02445",
+  "camp_type": "day",
+  "primary_categories": [
+    "arts",
+    "STEM",
+    "sports",
+    "nature"
+  ],
+  "age_min": 4,
+  "age_max": 15,
+  "description_short": "A day camp program for ages 4-15 on The Park School's 34-acre campus in Brookline, with 20+ programs including art, science, cooking, leadership, outdoor adventures, sports and general day camps. It offers one- and two-week sessions, extended day, and some programs take trips to places in and around Boston.",
+  "activities": [
+    "Art",
+    "Science",
+    "Cooking",
+    "Leadership",
+    "Outdoor adventures",
+    "Sports",
+    "General day camp",
+    "Off-campus trips around Boston"
+  ],
+  "extended_care": true,
+  "sources": [
+    {
+      "url": "https://www.parkschool.org/community/summer-programs",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "extended_care"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.parkschool.org/community/summer-programs",
+      "kind": "html",
+      "title": "Summer Programs | The Park School"
+    },
+    "warnings": [
+      "This is The Park School's overview page for its summer programs, not a page for one camp. It describes two separate camps and a family swim club. This listing covers only Summer at Park.",
+      "Creative Arts at Park (CAAP) is a separate camp described on the same page: an arts camp for ages 7-15 where campers build their own schedules from visual arts, dance, theater, music, video/film, computers, photography, creative writing, martial arts and sports. It should get its own listing.",
+      "Swim Club at Park is a family pool membership for evenings and weekends, not a camp.",
+      "The address and phone number are The Park School's main contact details from the page footer. They may not reach the camp office directly.",
+      "No season year, dates or prices are given, so season_year is left blank. The website URL is the overview page. The camp's own 'Find Out More' page is not given.",
+      "The page says ACA accredited: check it on acacamps.org and add aca_accredited with aca_source_url"
+    ],
+    "unknowns": [
+      "Season year and session dates for 2027",
+      "Prices (weekly or per session)",
+      "Price and hours for extended day",
+      "Registration opening date and registration URL",
+      "Deposit and refund policy",
+      "Whether camp financial aid is offered (the Tuition & Financial Aid link is for school admission)",
+      "Whether lunch is included",
+      "Transportation",
+      "Swim or waterfront details for campers",
+      "Support for special needs",
+      "Camp-specific email and phone",
+      "Age or grade ranges for each of the 20+ programs"
+    ],
+    "low_confidence": [
+      {
+        "field": "street_address",
+        "confidence": 0.75,
+        "quote": "171 Goddard Avenue, Brookline, MA 02445"
+      },
+      {
+        "field": "zip",
+        "confidence": 0.75,
+        "quote": "Brookline, MA 02445"
+      },
+      {
+        "field": "phone",
+        "confidence": 0.5,
+        "quote": "617-277-2456"
+      },
+      {
+        "field": "website_url",
+        "confidence": 0.6,
+        "quote": "Summer at Park ... Find Out More"
+      },
+      {
+        "field": "primary_categories",
+        "confidence": 0.75,
+        "quote": "art and science, cooking, leadership, outdoor adventures, sports"
+      }
+    ],
+    "errors": [
+      "missing required season_year"
+    ]
+  }
+}

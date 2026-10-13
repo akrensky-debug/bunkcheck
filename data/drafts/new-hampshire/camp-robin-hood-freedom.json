@@ -1,0 +1,124 @@
+{
+  "slug": "camp-robin-hood-freedom",
+  "name": "Camp Robin Hood",
+  "website_url": "https://www.camprobinhood.com/",
+  "registration_url": "https://robinhood.campintouch.com/ui/forms/application/camper/App",
+  "email": "info@camprobinhood.com",
+  "phone": "603-539-4500",
+  "street_address": "65 Robin Hood Lane",
+  "city": "Freedom",
+  "state": "NH",
+  "zip": "03836",
+  "camp_type": "sleepaway",
+  "primary_categories": [
+    "sports",
+    "arts",
+    "nature"
+  ],
+  "description_short": "Overnight summer camp in Freedom, New Hampshire, with separate boys' and girls' camps. Campers can attend a four-week First Session or a seven-week Full Session, with team and individual sports, waterfront, hiking and trips, fitness and the arts.",
+  "activities": [
+    "Team sports",
+    "Individual sports",
+    "Waterfront",
+    "Hiking & trips",
+    "Fitness",
+    "The arts",
+    "Private instruction",
+    "Horseback riding",
+    "Tennis",
+    "Inter-camp competition"
+  ],
+  "price_min": 11675,
+  "price_max": 17000,
+  "transportation": true,
+  "meals_included": true,
+  "refund_policy_summary": "Tuition is refundable minus a $500 processing fee until January 1, 2027. After that date tuition is non-refundable.",
+  "swim_waterfront_notes": "The camp lists a waterfront program among its activities. This page gives no details about it.",
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "First Session",
+      "start_date": "2027-06-22",
+      "end_date": "2027-07-18",
+      "price": 11675,
+      "availability": "unknown"
+    },
+    {
+      "name": "Full Session",
+      "start_date": "2027-06-22",
+      "end_date": "2027-08-07",
+      "price": 17000,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.camprobinhood.com/about-camp-robin-hood/dates-fees-faqs.php",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "description_short",
+        "price_min",
+        "price_max",
+        "transportation",
+        "meals_included",
+        "refund_policy_summary",
+        "swim_waterfront_notes",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.camprobinhood.com/about-camp-robin-hood/dates-fees-faqs.php",
+      "kind": "html",
+      "title": "Summer Dates & Rates for Camp Robin Hood"
+    },
+    "warnings": [
+      "Conflicting Full Session dates: the summary at the top of the page says the full season runs June 23–August 8, but the detailed listing says Tuesday, June 22 – Saturday, August 7, 2027. The detailed dates (which match the stated weekdays) were recorded.",
+      "The summary says to contact the office 'for current tuition', so the listed prices may change. Confirm with the camp.",
+      "Tuition does not include extra costs: a trip fee ($425 for First Session; $1,100 for Full Session campers in the 3 oldest groups; $550 for other Full Session groups), transportation, linens, horseback riding, and out-of-camp medical costs or prescriptions.",
+      "Payment schedule: deposit of $5,000 (First Session) or $5,500 (Full Session) when you enroll, a second payment of $3,500 / $4,500 due December 15, 2026, and the final payment due March 15, 2027.",
+      "Sibling discounts (5% for a second child, 10% for a third) apply only if at least one sibling is enrolled for the Full Session.",
+      "Phone calls to campers are allowed only for the camper's or a parent's birthday. The camp has a no-food-package policy and is peanut-free."
+    ],
+    "unknowns": [
+      "Age or grade range of campers (the page mentions only 15- and 16-year-olds)",
+      "Session availability / openings",
+      "Date enrollment opens",
+      "Financial aid / scholarships",
+      "ACA accreditation",
+      "Details of transportation options and their cost",
+      "Horseback riding fee",
+      "Special needs accommodations",
+      "Waterfront / swim program details",
+      "Operator name"
+    ],
+    "low_confidence": [
+      {
+        "field": "meals_included",
+        "confidence": 0.75,
+        "quote": "Breakfast finds fruit, granola and yogurt at the salad bar, 4 cold cereals and oatmeal and an entrée"
+      },
+      {
+        "field": "transportation",
+        "confidence": 0.6,
+        "quote": "Tuition does not include transportation to and from camp, linens and horseback riding which are billed separately."
+      }
+    ],
+    "errors": []
+  }
+}

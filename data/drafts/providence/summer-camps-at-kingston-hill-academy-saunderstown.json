@@ -1,0 +1,142 @@
+{
+  "slug": "summer-camps-at-kingston-hill-academy-saunderstown",
+  "name": "Summer Camps at Kingston Hill Academy",
+  "operator_name": "Kingston Hill Academy",
+  "website_url": "https://kingstonhill.org",
+  "phone": "(401) 783-8282",
+  "street_address": "850 Stony Fort Road",
+  "city": "Saunderstown",
+  "state": "RI",
+  "zip": "02874",
+  "camp_type": "day",
+  "primary_categories": [
+    "STEM",
+    "arts",
+    "nature"
+  ],
+  "description_short": "A set of short summer day camps held at Kingston Hill Academy in Saunderstown, RI: Wizard Camp, a general Day Camp, a mostly outdoor Garden Art & Sciences Camp, and an outdoor Bike & STEM Camp. Each camp runs for one or two weeks in July.",
+  "activities": [
+    "Wizard-themed camp",
+    "Garden art",
+    "Outdoor science",
+    "Biking",
+    "STEM"
+  ],
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Wizard Camp - Week 1 (9am-3pm)",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Wizard Camp - Week 2 (9am-3pm)",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Garden Art & Sciences Camp - Week 1 (9:30am-12:30pm)",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Garden Art & Sciences Camp - Week 2 (9:30am-12:30pm)",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Day Camp (9am-3pm)",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Bike & STEM Camp (9am-2pm)",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": null,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://kingstonhill.org/chief-administrator-update-july-2026/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "description_short",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://kingstonhill.org/chief-administrator-update-july-2026/",
+      "kind": "html",
+      "title": "Chief Administrator Update July 2026 – kingstonhill.org"
+    },
+    "warnings": [
+      "Source is a school newsletter (Chief Administrator Update, July 2026), not camp-specific material; camps get only a brief mention.",
+      "Season shown is summer 2026, and all sessions have already ended as of 2026-10-13. No 2027 information is given.",
+      "Wizard Camp second week is written '713-17' (likely 7/13-17); dates interpreted accordingly.",
+      "Unclear whether camps are run by the school or by outside providers using the KHA site.",
+      "The newsletter said to call the office about availability, so some camps may have been full."
+    ],
+    "unknowns": [
+      "2027 camp dates",
+      "Prices",
+      "Age/grade eligibility for each camp",
+      "Who operates each camp",
+      "Registration process and URL",
+      "What Wizard Camp and Day Camp activities include",
+      "Before/after care for camps",
+      "Meals or snacks",
+      "Refund policy, deposits, financial aid",
+      "Contact email for camp inquiries"
+    ],
+    "low_confidence": [
+      {
+        "field": "name",
+        "confidence": 0.7,
+        "quote": "Summer Camps Offered at KHA!"
+      },
+      {
+        "field": "operator_name",
+        "confidence": 0.5,
+        "quote": "Summer Camps Offered at KHA!"
+      },
+      {
+        "field": "sessions[1].start_date",
+        "confidence": 0.75,
+        "quote": "Camp 7/6-10 & 713-17"
+      },
+      {
+        "field": "primary_categories",
+        "confidence": 0.7,
+        "quote": "Garden Art & Sciences Camp ... Bike & STEM Camp (Outside)"
+      }
+    ],
+    "errors": []
+  }
+}

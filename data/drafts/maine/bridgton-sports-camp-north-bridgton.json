@@ -1,0 +1,114 @@
+{
+  "slug": "bridgton-sports-camp-north-bridgton",
+  "name": "Bridgton Sports Camp",
+  "website_url": "https://www.bridgtonsportscamp.com/",
+  "registration_url": "https://www.bridgtonsportscamp.com/enroll",
+  "phone": "866-283-5943",
+  "street_address": "11 Academy Lane",
+  "city": "North Bridgton",
+  "state": "ME",
+  "zip": "04057",
+  "camp_type": "sleepaway",
+  "primary_categories": [
+    "sports"
+  ],
+  "age_min": 8,
+  "age_max": 15,
+  "description_short": "An overnight sports camp in North Bridgton, Maine, for boys ages 8–15. Campers can come for a full season or one of two three-week sessions, focused on athletics and waterfront activities.",
+  "activities": [
+    "Athletics",
+    "Waterfront activities",
+    "Hockey (additional fee)",
+    "Out-of-camp trips",
+    "Rafting trip (oldest campers, additional fee)"
+  ],
+  "price_min": 6500,
+  "price_max": 6500,
+  "transportation": true,
+  "meals_included": true,
+  "swim_waterfront_notes": "The page mentions waterfront activities. It does not describe the waterfront or the swim program.",
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Session 1",
+      "start_date": "2027-06-26",
+      "end_date": "2027-07-16",
+      "price": 6500,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 2",
+      "start_date": "2027-07-18",
+      "end_date": "2027-08-07",
+      "price": 6500,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.bridgtonsportscamp.com/dates-rates/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "price_min",
+        "price_max",
+        "transportation",
+        "meals_included",
+        "swim_waterfront_notes",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.bridgtonsportscamp.com/dates-rates/",
+      "kind": "html",
+      "title": "Camp Tuition - Dates & Rates | Bridgton Sports Camp"
+    },
+    "warnings": [
+      "The page lists one rate of $6,500 'All Inclusive' and doesn't say if it covers one 3-week session or the full season. It is recorded as the per-session price because the footnote says 'Session tuition'. Please check with the camp.",
+      "New families get a $200 discount if they enroll by December 31, 2026. This is not reflected in the recorded price.",
+      "Not included in tuition: hockey fee, the oldest campers' rafting trip, and travel to and from camp. Airport pickup at Portland International Jetport is free.",
+      "Boys only."
+    ],
+    "unknowns": [
+      "Full-season price (the page mentions a full-season option but lists only one $6,500 rate)",
+      "Whether $6,500 is the price per session or for some other enrollment option",
+      "Fee amounts for hockey and the oldest campers' rafting trip",
+      "Cost of the bus from Boston and northern New Jersey",
+      "Session availability for 2027",
+      "Deposit and payment schedule",
+      "Refund and cancellation policy",
+      "Financial aid",
+      "ACA accreditation",
+      "Email address",
+      "Accommodations for special needs",
+      "Swim and waterfront details"
+    ],
+    "low_confidence": [
+      {
+        "field": "sessions[0].price",
+        "confidence": 0.75,
+        "quote": "$6,500 – All Inclusive* ... * Session tuition includes all camp activities"
+      }
+    ],
+    "errors": [
+      "city 'North Bridgton', ME is not in cities.py"
+    ]
+  }
+}

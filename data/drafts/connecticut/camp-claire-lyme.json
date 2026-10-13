@@ -1,0 +1,76 @@
+{
+  "slug": "camp-claire-lyme",
+  "name": "Camp Claire",
+  "website_url": "https://www.campclaire.org/",
+  "registration_url": "https://campclaire.campbrainregistration.com/",
+  "phone": "(888) 582-2622",
+  "street_address": "15 Oakland Avenue",
+  "city": "Lyme",
+  "state": "CT",
+  "zip": "06371",
+  "description_short": "Camp Claire in Lyme, CT runs a day camp, a residential (overnight) camp, and Leader in Training / Counselor in Training programs. Dates and prices for 2027 have not been posted yet.",
+  "season_year": 2027,
+  "sources": [
+    {
+      "url": "https://www.campclaire.org/enroll-now/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "description_short"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.campclaire.org/enroll-now/",
+      "kind": "html",
+      "title": "SUMMER 2027 - Camp Claire"
+    },
+    "warnings": [
+      "Placeholder page: 'CHECK BACK FOR 2027 ENROLLMENT'. Every 2027 date and price is TBA/$TBD, so the sessions are listed by name only.",
+      "The camp offers both day and residential programs, so camp_type was left blank instead of picking one.",
+      "The page still shows an old 'Countdown to Summer 2026 Session 1!' widget.",
+      "LIT and CIT application deadline is February 1, 2027. LITs and CITs go home from Saturday morning to Sunday afternoon.",
+      "In-season phone number: (860) 434-0368.",
+      "The day camp sessions are the same Session 1–6 that the 'Day Camp' program uses, and they may not line up with the residential sessions.",
+      "19 sessions without full dates were left out"
+    ],
+    "unknowns": [
+      "2027 session dates for all programs (all listed as TBA)",
+      "2027 prices for day, residential, LIT and CIT programs (all $TBD)",
+      "Camper age/grade range for day and residential camp",
+      "When 2027 registration opens",
+      "Activities offered",
+      "Deposit, refund policy, financial aid",
+      "Extended care, transportation, meals",
+      "Swim/waterfront details",
+      "ACA accreditation",
+      "Email address"
+    ],
+    "low_confidence": [
+      {
+        "field": "sessions",
+        "confidence": 0.6,
+        "quote": "Session 1 – TBA ... Session 2a – TBA ... Session 2b – TBA"
+      },
+      {
+        "field": "sessions[7].name",
+        "confidence": 0.7,
+        "quote": "$TBD for session 2 which is a two-week session"
+      }
+    ],
+    "errors": [
+      "missing required camp_type",
+      "camp_type must be one of ['day', 'sleepaway', 'specialty']"
+    ]
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "slug": "wohelo-camps-raymond",
+  "name": "Wohelo Camps",
+  "operator_name": "Wohelo Camps",
+  "website_url": "https://wohelo.com/",
+  "email": "wohelo@wohelo.com",
+  "phone": "207-655-4739",
+  "street_address": "25 Gulick Road",
+  "city": "Raymond",
+  "state": "ME",
+  "zip": "04071",
+  "camp_type": "sleepaway",
+  "age_min": 6,
+  "age_max": 15,
+  "description_short": "Wohelo is an overnight camp for girls in Raymond, Maine, run as two camps: Little Wohelo (ages 6-12) and Sebago Wohelo (ages 12-15). The camp prefers the full seven-week season. It also offers half sessions for first-time campers and a one-week Peep Week.",
+  "price_min": 2500,
+  "price_max": 13200,
+  "financial_aid": true,
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Full Session",
+      "start_date": "2027-06-24",
+      "end_date": "2027-08-12",
+      "price": 13200,
+      "availability": "unknown"
+    },
+    {
+      "name": "First Half-Session",
+      "start_date": "2027-06-24",
+      "end_date": "2027-07-17",
+      "price": 8800,
+      "availability": "unknown"
+    },
+    {
+      "name": "Second Half-Session",
+      "start_date": "2027-07-19",
+      "end_date": "2027-08-12",
+      "price": 8800,
+      "availability": "unknown"
+    },
+    {
+      "name": "Peep Week 1",
+      "start_date": "2027-07-19",
+      "end_date": "2027-07-25",
+      "price": 2500,
+      "availability": "unknown"
+    },
+    {
+      "name": "Peep Week 2",
+      "start_date": "2027-07-26",
+      "end_date": "2027-08-01",
+      "price": 2500,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://wohelo.com/dates-tuition/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "age_min",
+        "age_max",
+        "description_short",
+        "price_min",
+        "price_max",
+        "financial_aid",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://wohelo.com/dates-tuition/",
+      "kind": "html",
+      "title": "Dates and Tuition - Wohelo Camps Website"
+    },
+    "warnings": [
+      "Address given is the 'Year-round office'. The camp itself is presumed to be at or near this address in Raymond, ME, but the page does not say so.",
+      "The page does not state which age groups or which camp (Little or Sebago Wohelo) each session is for, especially Peep Week.",
+      "Financial aid is inferred from the 'Scholarship Information' and 'Apply for a Wohelo Campership' navigation links. The terms are not on this page.",
+      "The camp encourages the full season. It says half sessions are only a one-summer introduction for new campers.",
+      "New registrations are by contacting the camp office directly."
+    ],
+    "unknowns": [
+      "Which sessions are for Little Wohelo vs. Sebago Wohelo",
+      "Age range for Peep Week",
+      "Registration opening date and session availability",
+      "Deposit requirement and refund policy",
+      "Activities offered",
+      "ACA accreditation",
+      "Transportation options",
+      "Swim/waterfront details",
+      "Special needs accommodations",
+      "Scholarship/campership terms",
+      "Grade ranges",
+      "Camper application URL"
+    ],
+    "low_confidence": [
+      {
+        "field": "financial_aid",
+        "confidence": 0.7,
+        "quote": "Scholarship Information"
+      }
+    ],
+    "errors": []
+  }
+}

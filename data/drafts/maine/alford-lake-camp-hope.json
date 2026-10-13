@@ -1,0 +1,120 @@
+{
+  "slug": "alford-lake-camp-hope",
+  "name": "Alford Lake Camp",
+  "website_url": "https://www.alfordlakecamp.com",
+  "registration_url": "https://alfordlake.campintouch.com/ui/forms/application/camper/App",
+  "email": "explore@alfordlakecamp.com",
+  "phone": "207-785-2400",
+  "street_address": "258 Alford Lake Road",
+  "city": "Hope",
+  "state": "ME",
+  "zip": "04847",
+  "camp_type": "sleepaway",
+  "primary_categories": [
+    "sports",
+    "performing_arts"
+  ],
+  "description_short": "Residential summer camp for girls on Alford Lake in Hope, Maine, offering a 7-week full season or two 3.5-week sessions. Campers choose the activities they focus on, and tuition covers out-of-camp trips and riding.",
+  "activities": [
+    "Drama",
+    "Tennis",
+    "Canoeing",
+    "Sailing",
+    "Riding",
+    "Library",
+    "Out of Camp Trips"
+  ],
+  "price_min": 11100,
+  "price_max": 15400,
+  "financial_aid": true,
+  "refund_policy_summary": "A $1,500 tuition deposit is due at registration. It is non-refundable and is credited toward tuition. Credit card convenience fees (3.5%) are also non-refundable. The page does not give a refund policy for the rest of the tuition.",
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Full Season (7 weeks)",
+      "start_date": "2027-06-29",
+      "end_date": "2027-08-16",
+      "price": 15400,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session I (3.5 weeks)",
+      "start_date": "2027-06-29",
+      "end_date": "2027-07-22",
+      "price": 11100,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session II (3.5 weeks)",
+      "start_date": "2027-07-25",
+      "end_date": "2027-08-16",
+      "price": 11100,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.alfordlakecamp.com/rates-dates",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "description_short",
+        "price_min",
+        "price_max",
+        "financial_aid",
+        "refund_policy_summary",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.alfordlakecamp.com/rates-dates",
+      "kind": "html",
+      "title": "Rates & Dates | Alford Lake Camp | Maine | United States"
+    },
+    "warnings": [
+      "The early enrollment prices ($14,900 full / $10,700 half) were only available through 10/1/2026 and have expired as of today (2026-10-13). The prices recorded are the regular 2027 rates ($15,400 / $11,100), which took effect 10/2/2026.",
+      "The page refers to campers as 'she/her' and offers a sibling discount for each 'additional sister', so this appears to be a girls' camp. The page does not say so directly.",
+      "Extra costs on top of tuition: required camp clothing, transportation, lice check/treatment, and a 3.5% fee for paying by credit card. Sibling discount: $300 for each additional sister."
+    ],
+    "unknowns": [
+      "Eligible camper ages or grades",
+      "Session availability (open/waitlist/full)",
+      "Whether meals are included (likely for a residential camp, but not stated)",
+      "Whether the camp offers transportation (travel to and from camp is not included in tuition)",
+      "Refund policy for tuition beyond the non-refundable deposit",
+      "ACA accreditation",
+      "Special needs accommodations",
+      "Swim and waterfront details",
+      "Cost of required official camp clothing",
+      "Operator/legal entity name"
+    ],
+    "low_confidence": [
+      {
+        "field": "activities",
+        "confidence": 0.75,
+        "quote": "Tuition for Residential Campers covers all camp activities, including Out of Camp Trips and Riding."
+      },
+      {
+        "field": "primary_categories",
+        "confidence": 0.65,
+        "quote": "Drama ... Tennis ... Canoeing ... Sailing"
+      }
+    ],
+    "errors": []
+  }
+}

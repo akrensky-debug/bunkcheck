@@ -1,0 +1,123 @@
+{
+  "slug": "hosmer-point-camp-craftsbury-common",
+  "name": "Hosmer Point Camp",
+  "operator_name": "Craftsbury Outdoor Center",
+  "website_url": "https://www.hosmerpoint.com",
+  "registration_url": "https://www.hosmerpoint.com/register",
+  "email": "office@hosmerpointcamp.org",
+  "phone": "802-586-2090",
+  "street_address": "76 Hosmer Point Lane",
+  "city": "Craftsbury Common",
+  "state": "VT",
+  "zip": "05827",
+  "camp_type": "sleepaway",
+  "age_min": 9,
+  "age_max": 15,
+  "grade_min": 3,
+  "grade_max": 9,
+  "description_short": "Overnight camp in Craftsbury Common, Vermont, offering four 13-day sleepaway sessions for campers in grades 3-9. Tuition uses an honor-system sliding scale.",
+  "financial_aid": true,
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Wild Branch",
+      "start_date": "2027-06-20",
+      "end_date": "2027-07-02",
+      "price": null,
+      "availability": "open"
+    },
+    {
+      "name": "Holiday Hill",
+      "start_date": "2027-07-04",
+      "end_date": "2027-07-16",
+      "price": null,
+      "availability": "open"
+    },
+    {
+      "name": "Black River",
+      "start_date": "2027-07-18",
+      "end_date": "2027-07-30",
+      "price": null,
+      "availability": "open"
+    },
+    {
+      "name": "Bayley Hazen",
+      "start_date": "2027-08-01",
+      "end_date": "2027-08-13",
+      "price": null,
+      "availability": "open"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.hosmerpoint.com/dates",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "age_min",
+        "age_max",
+        "grade_min",
+        "grade_max",
+        "description_short",
+        "financial_aid",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.hosmerpoint.com/dates",
+      "kind": "html",
+      "title": "Camp Dates — Hosmer Point Camp"
+    },
+    "warnings": [
+      "Scholarship text refers to 2026 ('Camp scholarship funds are available for 2026'), not 2027, so it may be out of date.",
+      "Early registration: 2026 campers could pre-register on Closing Day; siblings, returning and wait-listed campers from October 1, 2026; general public from November 2, 2026.",
+      "Contact email domain (hosmerpointcamp.org) differs from the website domain (hosmerpoint.com).",
+      "Ages 9-15 apply only to homeschoolers or campers from outside the US; other campers qualify by grade (3rd-9th).",
+      "Girl's Ride+Run Camp is a separate 4-day program with no exact dates given.",
+      "1 sessions without full dates were left out"
+    ],
+    "unknowns": [
+      "Tuition amounts and sliding-scale tiers (see https://www.hosmerpoint.com/rates)",
+      "Deposit requirement",
+      "Refund/cancellation policy",
+      "Activities offered",
+      "Swim/waterfront details",
+      "Transportation to camp",
+      "Meals (presumably included at an overnight camp, but not stated)",
+      "ACA accreditation",
+      "Special needs accommodations",
+      "Exact 2027 dates and price for the Girl's Ride+Run Camp (only 'Memorial Day Weekend'; registration opens this winter)",
+      "Family Camp Weekend dates and pricing",
+      "Whether scholarships will be offered for 2027 (page only mentions 2026)"
+    ],
+    "low_confidence": [
+      {
+        "field": "operator_name",
+        "confidence": 0.6,
+        "quote": "Part of the Craftsbury Outdoor Center Family"
+      },
+      {
+        "field": "financial_aid",
+        "confidence": 0.7,
+        "quote": "Camp scholarship funds are available for 2026."
+      }
+    ],
+    "errors": [
+      "city 'Craftsbury Common', VT is not in cities.py"
+    ]
+  }
+}

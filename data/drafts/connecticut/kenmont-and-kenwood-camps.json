@@ -1,0 +1,113 @@
+{
+  "slug": "kenmont-and-kenwood-camps",
+  "name": "KenMont and KenWood Camps",
+  "website_url": "https://www.kenmontkenwood.com/",
+  "registration_url": "https://www.kenmontkenwood.com/enrollment/",
+  "phone": "860.927.3042",
+  "city": null,
+  "state": null,
+  "zip": null,
+  "camp_type": "sleepaway",
+  "grade_min": 2,
+  "grade_max": 10,
+  "description_short": "Overnight brother/sister camps: KenMont Camp for Boys and KenWood Camp for Girls. Campers entering grades 2–10 can choose a four-week session or one of two two-week options.",
+  "price_min": 7600,
+  "price_max": 10200,
+  "transportation": true,
+  "refund_policy_summary": "All payments except credit card fees are fully refundable until January 21. Payment schedule: $1,500 deposit per camper with the application, $4,000 per camper due January 25, and the balance due March 1. The required uniform is extra and is bought directly from The Camp Spot.",
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "First Session (4 weeks)",
+      "start_date": "2027-06-24",
+      "end_date": "2027-07-18",
+      "price": 10200,
+      "availability": "unknown"
+    },
+    {
+      "name": "2-Week Option A",
+      "start_date": "2027-06-24",
+      "end_date": "2027-07-07",
+      "price": 7600,
+      "availability": "unknown"
+    },
+    {
+      "name": "Second Session (4 weeks)",
+      "start_date": "2027-07-22",
+      "end_date": "2027-08-15",
+      "price": 10200,
+      "availability": "unknown"
+    },
+    {
+      "name": "2-Week Option B",
+      "start_date": "2027-07-22",
+      "end_date": "2027-08-04",
+      "price": 7600,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.kenmontkenwood.com/enrollment/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "camp_type",
+        "grade_min",
+        "grade_max",
+        "description_short",
+        "price_min",
+        "price_max",
+        "transportation",
+        "refund_policy_summary",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.kenmontkenwood.com/enrollment/",
+      "kind": "html",
+      "title": "Enroll for a session at KenMont or KenWood Camp — Two four-week sessions per summer"
+    },
+    "warnings": [
+      "The early-enrollment discount ($350 off, or $250 for the 2-week option, if enrolled by September 30, 2026) has already passed as of today, so the listed full prices should apply.",
+      "Extra charges are not included in tuition: a Personal / Trip Day Expense of $400 ($300 for the 2-week option), plus a required uniform bought from The Camp Spot.",
+      "The page gives the price of the 2-week option once, $7,600. It is assumed here that each of the two 2-week periods costs $7,600 and can be booked on its own. The page wording does not make this fully clear.",
+      "On the 2-week option, transportation is included on arrival day only. The 4-week sessions include both arrival and departure days.",
+      "The refund deadline (January 21) and the $4,000 payment due date (January 25) do not name a year. They are probably 2027.",
+      "The page's address, activities and other details are not stated here. The text 'Operator Name' on the page looks like placeholder text."
+    ],
+    "unknowns": [
+      "Street address, city, state, zip",
+      "Email",
+      "Camper age range (only grades are given)",
+      "Activities and program focus",
+      "Session availability",
+      "Whether meals are included (most likely, but not stated)",
+      "Financial aid",
+      "ACA accreditation",
+      "Swim/waterfront details",
+      "Special needs accommodations",
+      "Operator/owner name",
+      "Exact bus and airport pickup locations"
+    ],
+    "low_confidence": [
+      {
+        "field": "registration_url",
+        "confidence": 0.7,
+        "quote": "Complete our application and sign-up for camp"
+      }
+    ],
+    "errors": [
+      "missing required city",
+      "missing required state",
+      "missing required zip"
+    ]
+  }
+}

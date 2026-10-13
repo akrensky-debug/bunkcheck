@@ -1,0 +1,160 @@
+{
+  "slug": "night-eagle-wilderness-adventures-wallingford",
+  "name": "Night Eagle Wilderness Adventures",
+  "website_url": "https://www.nighteaglewilderness.com",
+  "registration_url": "https://www.nighteaglewilderness.com/dates-and-rates",
+  "email": "Bruce@nighteaglewilderness.com",
+  "phone": "(802) 353-4071",
+  "street_address": "P.O. Box 479",
+  "city": "Wallingford",
+  "state": "VT",
+  "zip": "05773",
+  "camp_type": "sleepaway",
+  "primary_categories": [
+    "nature",
+    "sports"
+  ],
+  "description_short": "A small wilderness camp for boys in Vermont, built around 3- to 6-week sessions. Shorter 1- and 2-week sessions are also offered for younger or new campers.",
+  "activities": [
+    "Survival skills",
+    "Target sports",
+    "Waterfront",
+    "Wilderness trips"
+  ],
+  "price_min": 1335,
+  "price_max": 5145,
+  "financial_aid": true,
+  "refund_policy_summary": "If notice of withdrawal reaches the camp office by May 1, tuition is refunded minus a $100 processing fee. After May 1 there are no refunds for withdrawals, session changes, late arrivals or no-shows. The one exception is documented physical illness of the camper, which gets back 50% of unused tuition. If illness or accident cuts a stay short, tuition is refunded pro rata. There is no refund if a camper is sent home for breaking camp rules or is withdrawn voluntarily. If the camp cancels a session, all money is refunded.",
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "1 Week Session",
+      "start_date": "2027-07-04",
+      "end_date": "2027-07-10",
+      "price": 1335,
+      "availability": "unknown"
+    },
+    {
+      "name": "2 Week Session",
+      "start_date": "2027-07-04",
+      "end_date": "2027-07-17",
+      "price": 2465,
+      "availability": "unknown"
+    },
+    {
+      "name": "2 Week Session",
+      "start_date": "2027-07-25",
+      "end_date": "2027-08-07",
+      "price": 2465,
+      "availability": "unknown"
+    },
+    {
+      "name": "3 Week Session",
+      "start_date": "2027-07-04",
+      "end_date": "2027-07-24",
+      "price": 3290,
+      "availability": "unknown"
+    },
+    {
+      "name": "3 Week Session",
+      "start_date": "2027-07-25",
+      "end_date": "2027-08-14",
+      "price": 3290,
+      "availability": "unknown"
+    },
+    {
+      "name": "4 Week Session",
+      "start_date": "2027-07-18",
+      "end_date": "2027-08-14",
+      "price": 3910,
+      "availability": "unknown"
+    },
+    {
+      "name": "6 Week Session",
+      "start_date": "2027-07-04",
+      "end_date": "2027-08-14",
+      "price": 5145,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.nighteaglewilderness.com/dates-and-rates",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "description_short",
+        "price_min",
+        "price_max",
+        "financial_aid",
+        "refund_policy_summary",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.nighteaglewilderness.com/dates-and-rates",
+      "kind": "html",
+      "title": "Dates and Rates | Night Eagle Wilderness Adventures Vermont"
+    },
+    "warnings": [
+      "The second 1-week session is listed as 'July 25- August 31'. That is about 5 weeks, and August 31, 2027 is a Tuesday, but the page says all sessions run Sunday to Saturday. The end date is probably July 31 and has been left blank. Please confirm with the camp.",
+      "This camp is for boys only.",
+      "'We have a few openings remaining' may be text left over from an earlier season. Availability for each session is recorded as unknown.",
+      "The listed address is a P.O. Box, which may not be where the camp actually is.",
+      "1 sessions without full dates were left out"
+    ],
+    "unknowns": [
+      "Age range or grades for campers (the page only says the camp is for boys)",
+      "End date of the second 1-week session (the page says 'July 25- August 31')",
+      "Whether there are openings in each session for 2027",
+      "Early Bird Discount amount and deadline",
+      "Physical camp address (the page only gives a P.O. Box)",
+      "Whether meals are included (probably, as a sleepaway camp, but not stated here)",
+      "Transportation",
+      "ACA accreditation",
+      "Swim and waterfront supervision details",
+      "Special needs accommodations",
+      "Camp operator name (the owner is shown only as 'Bruce')"
+    ],
+    "low_confidence": [
+      {
+        "field": "street_address",
+        "confidence": 0.6,
+        "quote": "P.O. Box 479"
+      },
+      {
+        "field": "activities",
+        "confidence": 0.7,
+        "quote": "Survival Skills ... Target Sports ... Waterfront ... Wilderness Trips"
+      },
+      {
+        "field": "primary_categories",
+        "confidence": 0.7,
+        "quote": "Survival Skills ... Target Sports ... Wilderness Trips"
+      },
+      {
+        "field": "sessions[1].start_date",
+        "confidence": 0.7,
+        "quote": "July 25- August 31"
+      }
+    ],
+    "errors": [
+      "city 'Wallingford', VT is not in cities.py"
+    ]
+  }
+}

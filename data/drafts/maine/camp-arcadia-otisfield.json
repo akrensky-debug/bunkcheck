@@ -1,0 +1,129 @@
+{
+  "slug": "camp-arcadia-otisfield",
+  "name": "Camp Arcadia",
+  "website_url": "https://www.camparcadia.com",
+  "registration_url": "https://arcadia.campintouch.com/ui/forms/application/camper/App",
+  "email": "Louise.Johnson@camparcadia.com",
+  "phone": "207-627-4605",
+  "street_address": "1 Arcadia Lane",
+  "city": "Otisfield",
+  "state": "ME",
+  "zip": "04270",
+  "camp_type": "sleepaway",
+  "grade_min": 1,
+  "grade_max": 11,
+  "description_short": "Camp Arcadia is an overnight summer camp for girls in Otisfield, Maine, running since 1916. For 2027 it offers a full season, two main sessions, and shorter introductory sessions for girls in grades 1-3.",
+  "price_min": 5500,
+  "price_max": 12600,
+  "financial_aid": true,
+  "refund_policy_summary": "The $1,500 deposit is non-refundable and counts toward tuition. If you cancel in writing before March 15, 2027, the tuition can be rolled over to 2028 or refunded, minus the deposit. There is no reduction for late arrival, early departure or withdrawal, or for a camper sent home for behavior.",
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Full Season (grades 1-11)",
+      "start_date": "2027-06-26",
+      "end_date": "2027-08-13",
+      "price": 12600,
+      "availability": "unknown"
+    },
+    {
+      "name": "First Session (grades 1-7)",
+      "start_date": "2027-06-26",
+      "end_date": "2027-07-24",
+      "price": 9600,
+      "availability": "unknown"
+    },
+    {
+      "name": "Second Session (grades 1-8)",
+      "start_date": "2027-07-25",
+      "end_date": "2027-08-13",
+      "price": 7000,
+      "availability": "unknown"
+    },
+    {
+      "name": "Introductory Session A (grades 1-3)",
+      "start_date": "2027-06-26",
+      "end_date": "2027-07-10",
+      "price": 5500,
+      "availability": "unknown"
+    },
+    {
+      "name": "Introductory Session B (grades 1-3)",
+      "start_date": "2027-07-11",
+      "end_date": "2027-07-24",
+      "price": 5500,
+      "availability": "unknown"
+    },
+    {
+      "name": "Introductory Session C (grades 1-3)",
+      "start_date": "2027-07-25",
+      "end_date": "2027-08-07",
+      "price": 5500,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.camparcadia.com/dates-rates",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "grade_min",
+        "grade_max",
+        "description_short",
+        "price_min",
+        "price_max",
+        "financial_aid",
+        "refund_policy_summary",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.camparcadia.com/dates-rates",
+      "kind": "html",
+      "title": "Dates & Rates | Girls Summer Camp Maine | Camp Arcadia"
+    },
+    "warnings": [
+      "The early registration discount (4% off) required registering and paying the deposit by September 30, 2026. That date has passed, so new 2027 families probably can't get it.",
+      "The introductory sessions are marked with an asterisk (*), but the page doesn't explain what it means.",
+      "The page lists ages by school grade only, not by age.",
+      "The page says ACA accredited: check it on acacamps.org and add aca_accredited with aca_source_url"
+    ],
+    "unknowns": [
+      "Camper age range (only grades are listed)",
+      "Activities offered",
+      "Swimming and waterfront details",
+      "Whether transportation is provided",
+      "Which meals are included (overnight camp, so likely all, but not stated)",
+      "Openings left in each session",
+      "When 2027 registration opens",
+      "What the asterisk on the introductory sessions means",
+      "How tuition assistance works and who qualifies",
+      "Support for campers with special needs",
+      "Operator or legal entity name"
+    ],
+    "low_confidence": [
+      {
+        "field": "aca_accredited",
+        "confidence": 0.7,
+        "quote": "ACA Accredited"
+      }
+    ],
+    "errors": [
+      "city 'Otisfield', ME is not in cities.py"
+    ]
+  }
+}

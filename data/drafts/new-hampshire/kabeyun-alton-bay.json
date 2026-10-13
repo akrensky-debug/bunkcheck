@@ -1,0 +1,138 @@
+{
+  "slug": "kabeyun-alton-bay",
+  "name": "Kabeyun",
+  "operator_name": "The John & Anna Newton Porter Foundation",
+  "website_url": "https://kabeyun.org/",
+  "registration_url": "https://kabeyun.campintouch.com/ui/forms/application/camper/App",
+  "phone": "603-875-3060",
+  "street_address": "43 Camp Kabeyun Rd",
+  "city": "Alton Bay",
+  "state": "NH",
+  "zip": "03810",
+  "camp_type": "sleepaway",
+  "age_min": 8,
+  "age_max": 17,
+  "description_short": "Overnight summer camp for boys ages 8 to 16 in Alton Bay, New Hampshire. Most campers attend one of two half-summer sessions. There is also a full-summer option, shorter introductory sessions for first-time campers ages 8 to 11, and a counseling internship for returning campers ages 16 and 17.",
+  "activities": [
+    "Adventure trips"
+  ],
+  "price_min": 5550,
+  "price_max": 12840,
+  "financial_aid": true,
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Half-Summer 1",
+      "start_date": "2027-06-26",
+      "end_date": "2027-07-20",
+      "price": 7710,
+      "availability": "unknown"
+    },
+    {
+      "name": "Half-Summer 2",
+      "start_date": "2027-07-22",
+      "end_date": "2027-08-15",
+      "price": 7710,
+      "availability": "unknown"
+    },
+    {
+      "name": "The Summer (full summer)",
+      "start_date": "2027-06-26",
+      "end_date": "2027-08-15",
+      "price": 12840,
+      "availability": "unknown"
+    },
+    {
+      "name": "Introductory Session 1 (first-time campers)",
+      "start_date": "2027-06-26",
+      "end_date": "2027-07-07",
+      "price": 5550,
+      "availability": "unknown"
+    },
+    {
+      "name": "Introductory Session 2 (first-time campers)",
+      "start_date": "2027-07-22",
+      "end_date": "2027-08-02",
+      "price": 5550,
+      "availability": "unknown"
+    },
+    {
+      "name": "Counseling Internship (minimum stay; returning campers)",
+      "start_date": "2027-06-25",
+      "end_date": "2027-07-20",
+      "price": 7710,
+      "availability": "unknown"
+    },
+    {
+      "name": "Counseling Internship (extended through Aug 15; returning campers)",
+      "start_date": "2027-06-25",
+      "end_date": "2027-08-15",
+      "price": 7710,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://kabeyun.org/for-parents/sessions-tuition-and-dates/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "price_min",
+        "price_max",
+        "financial_aid",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://kabeyun.org/for-parents/sessions-tuition-and-dates/",
+      "kind": "html",
+      "title": "Kabeyun - Boys Summer Camp - Sessions, Tuition, and DatesExpandExpandExpandExpandExpandExpandExpandToggle MenuContinueContinueScroll to topScroll to topExpandExpandExpandExpandExpandExpandExpand"
+    },
+    "warnings": [
+      "Boys-only camp.",
+      "Enrollment for 2027 opened October 3, 2026, so the session availability shown here may be out of date.",
+      "Two addresses are given. The street address is labeled for shipping (43 Camp Kabeyun Rd, Alton Bay, NH 03810). The mailing address is PO Box 35, Alton, NH 03809.",
+      "The Counseling Internship costs $7,710 in tuition plus a separate $360 spending allowance. It is for returning campers only.",
+      "Introductory sessions are open only to a limited number of first-time campers under age 12, for their first summer. They can extend their stay to the end of the half-summer session if their parents agree."
+    ],
+    "unknowns": [
+      "Email address",
+      "Full list of activities and primary categories (see the Activities page)",
+      "Whether a deposit is required and the deposit amount",
+      "Refund and cancellation policy",
+      "Transportation to and from camp",
+      "Swimming and waterfront details",
+      "Meals (see the Food, Health, and Safety page)",
+      "Support for special needs",
+      "ACA accreditation",
+      "How many spots are still open in each 2027 session"
+    ],
+    "low_confidence": [
+      {
+        "field": "activities",
+        "confidence": 0.6,
+        "quote": "Adventure Trips"
+      }
+    ],
+    "errors": [
+      "city 'Alton Bay', NH is not in cities.py"
+    ]
+  }
+}

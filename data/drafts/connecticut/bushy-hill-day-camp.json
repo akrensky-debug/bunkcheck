@@ -1,0 +1,152 @@
+{
+  "slug": "bushy-hill-day-camp",
+  "name": "Bushy Hill Day Camp",
+  "website_url": "https://bushyhill.org/bushy-hill-camp",
+  "registration_url": "https://icdaycamps.campbrainregistration.com/",
+  "email": "director@bushyhill.org",
+  "city": null,
+  "state": null,
+  "zip": null,
+  "camp_type": "day",
+  "primary_categories": [
+    "nature",
+    "STEM"
+  ],
+  "age_min": 5,
+  "description_short": "A nature-based day camp where campers hike, canoe, build shelters, learn outdoor skills, and swim in a private lake under lifeguard supervision, in age-based field groups. Sessions are two weeks long. Campers ages 5-7 are in the Saplings program, and campers 8 and up can add one overnight campout per session.",
+  "activities": [
+    "Hiking",
+    "Canoeing",
+    "Swimming",
+    "Catch-and-release fishing",
+    "Shelter building",
+    "Fire basics",
+    "Navigation",
+    "Nature crafts",
+    "Nature-inspired art",
+    "Citizen science",
+    "Native plant identification",
+    "STEAM challenges",
+    "Wildlife tracking",
+    "Overnight campout (ages 8+)",
+    "Water slide, water trampolines, rope swing",
+    "Skits and storytelling"
+  ],
+  "price_per_week": 340,
+  "price_min": 680,
+  "price_max": 680,
+  "extended_care": true,
+  "transportation": true,
+  "swim_waterfront_notes": "Daily afternoon waterfront time on a mile-long private lake with a sandy beach and lifeguard-supervised swimming. Certified lifeguards test every camper's swimming at the start of each session and assign swim areas based on ability. A different water activity each day (water slide, water trampolines, or rope swing). There is also a fishing dock for catch-and-release fishing.",
+  "season_year": 2026,
+  "price_per": "week",
+  "sessions": [
+    {
+      "name": "Session A (2 weeks)",
+      "start_date": "2026-06-15",
+      "end_date": "2026-06-26",
+      "price": 680,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session B (2 weeks)",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-10",
+      "price": 680,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session C (2 weeks)",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-24",
+      "price": 680,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session D (2 weeks)",
+      "start_date": "2026-07-27",
+      "end_date": "2026-08-07",
+      "price": 680,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session E (2 weeks)",
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-21",
+      "price": 680,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://bushyhill.org/bushy-hill-camp",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "website_url",
+        "registration_url",
+        "email",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "age_min",
+        "description_short",
+        "price_min",
+        "price_max",
+        "price_per_week",
+        "price_per",
+        "extended_care",
+        "transportation",
+        "swim_waterfront_notes",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://bushyhill.org/bushy-hill-camp",
+      "kind": "html",
+      "title": "Bushy Hill Camp |Outdoor Adventure & Environmental Education"
+    },
+    "warnings": [
+      "The page shows the 2026 season ('New for 2026'), and all 2026 sessions have already ended (today is 2026-10-13). No 2027 dates or prices have been posted.",
+      "Session dates on the page have no year. I assumed 2026 because the page refers to 2026 and June 15 falls on a Monday in 2026.",
+      "price_per_week ($340) is the $680 two-week session price divided by 2. Sessions can only be booked as 2-week blocks.",
+      "Optional extra fees: AM care is $100 per session, PM care is $100 per session, the overnight is $50 (ages 8+), and round-trip bus transport is $150 per session.",
+      "The page mentions PM care as '5pm to 6pm' but says pick-up begins at 4pm. Check the exact pick-up and extended care hours."
+    ],
+    "unknowns": [
+      "2027 session dates and tuition",
+      "Maximum camper age / grade range",
+      "Camp street address, city, state, zip",
+      "Phone number",
+      "Operator / parent organization",
+      "Whether lunch or meals are provided (campers appear to bring lunch)",
+      "Financial aid availability",
+      "Deposit and refund policy",
+      "ACA accreditation",
+      "Session availability",
+      "Registration opening date for 2027",
+      "Special needs accommodations"
+    ],
+    "low_confidence": [
+      {
+        "field": "price_per_week",
+        "confidence": 0.7,
+        "quote": "all 2-week SESSIONS ARE $680"
+      },
+      {
+        "field": "age_min",
+        "confidence": 0.75,
+        "quote": "Any campers aged 5-7 will automatically be placed into age-appropiate Sapling groups"
+      }
+    ],
+    "errors": [
+      "missing required city",
+      "missing required state",
+      "missing required zip"
+    ]
+  }
+}
