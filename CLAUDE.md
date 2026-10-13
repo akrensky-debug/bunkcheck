@@ -3,6 +3,12 @@
 Read this first, every session. Updated 4 October 2026 (order of work); 3 October: `main` is the trunk. This replaces the
 1 October rule (on `claude/product-plan`) that made `product-plan` the only line of work.
 
+## Name
+
+The product is **BunkCheck** (www.bunkcheck.ai, decided 13 October 2026). Everything a parent, a camp
+or an assistant sees says BunkCheck. The repository, the `campfinder` package, table names and
+older docs keep the working name CampFinder; don't rename them.
+
 ## Branches
 
 - **`main` is the trunk.** Cut one branch per change from current `main`, open a PR back to

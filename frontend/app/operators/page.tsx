@@ -10,14 +10,14 @@ export default function OperatorsPage() {
         Get discovered by the parents who are already searching
       </h1>
       <p className="text-lg text-gray-500 max-w-2xl mx-auto">
-        CampFinder is built for AI-first discovery.
+        BunkCheck is built for AI-first discovery.
       </p>
       <div className="grid md:grid-cols-2 gap-6 mb-20">
         <div className="bg-white border border-gray-200 rounded-2xl p-8 flex flex-col">
           <div className="text-3xl mb-3">camp</div>
           <h2 className="text-xl font-bold text-gray-900 mb-2">List your camp</h2>
           <p className="text-gray-500 text-sm flex-1 mb-6">
-            Not yet on CampFinder? Submit your camp for free.
+            Not yet on BunkCheck? Submit your camp for free.
           </p>
           <a
             href="/operators/submit"

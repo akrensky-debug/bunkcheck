@@ -4,7 +4,7 @@ The interface a registration platform adapter implements: quote, then book.
 Modelled on the OpenActive Open Booking API: a quote carries no personal data (C1);
 the booking sends only the fields the seller says it needs, after the parent has seen
 the price, the seller, the terms and the exact fields, and confirmed (C2 + B). The
-camp is the seller and merchant of record; CampFinder is the parent's tool (an
+camp is the seller and merchant of record; BunkCheck is the parent's tool (an
 OpenActive "AgentBroker"), never the seller.
 
 A Pike13 adapter would map: quote -> GET enrollment_eligibilities + POST /bookings with

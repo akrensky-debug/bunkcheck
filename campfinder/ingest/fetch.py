@@ -25,7 +25,7 @@ MAX_BYTES = 8 * 1024 * 1024
 TIMEOUT_SECONDS = 20.0
 # We say who we are. A host that refuses an honest bot has told us no; the
 # answer is to ask the owner for their brochure, not to look like a person.
-USER_AGENT = "CampFinderBot/1.0 (+listing verification; contact via site)"
+USER_AGENT = "BunkCheckBot/1.0 (+listing verification; contact via site)"
 # Below this many words a page has nothing to extract (a bot check, a script-only shell, a scanned PDF).
 MIN_WORDS = 40
 # A plain fetch shorter than this on an HTML page may be a shell that fills in by script.

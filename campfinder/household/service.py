@@ -201,15 +201,15 @@ def create_invite(actor: Actor, req: InviteCreate) -> tuple[dict[str, Any], str]
 def invite_email(inviter: str, row: dict[str, Any], url: str) -> tuple[str, str, str]:
     """Subject, HTML and text. No kid names or plan details: just who, what role, and the link."""
     help_text = ROLE_HELP.get(row["role"], "")
-    subject = f"{inviter} invited you to help with the family plan on CampFinder"
+    subject = f"{inviter} invited you to help with the family plan on BunkCheck"
     text = (
-        f"Hi {row['display_name']},\n\n{inviter} invited you to join their family on CampFinder. "
+        f"Hi {row['display_name']},\n\n{inviter} invited you to join their family on BunkCheck. "
         f"You'll see {help_text}.\n\nAccept: {url}\n\nThe link works for {INVITE_DAYS} days. "
         "Sign in with this email address to accept. If you weren't expecting this, ignore it."
     )
     html = (
         f"<p>Hi {_esc(row['display_name'])},</p><p>{_esc(inviter)} invited you to join their family on "
-        f"CampFinder. You'll see {_esc(help_text)}.</p>"
+        f"BunkCheck. You'll see {_esc(help_text)}.</p>"
         f'<p><a href="{_esc(url)}" style="background:#1d4ed8;color:white;padding:12px 20px;border-radius:8px;'
         'text-decoration:none;">Accept the invite</a></p>'
         f"<p style=\"color:#666\">The link works for {INVITE_DAYS} days. Sign in with this email address to accept. "
@@ -589,8 +589,8 @@ def build_member_ics(member: dict[str, Any], events: list[dict[str, Any]], tasks
 
     stamp = _now().strftime("%Y%m%dT%H%M%SZ")
     lines = [
-        "BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//CampFinder//Household Calendar//EN", "CALSCALE:GREGORIAN",
-        f"X-WR-CALNAME:{_ics_escape(member['display_name'])}: family plans (CampFinder)",
+        "BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//BunkCheck//Household Calendar//EN", "CALSCALE:GREGORIAN",
+        f"X-WR-CALNAME:{_ics_escape(member['display_name'])}: family plans (BunkCheck)",
         "REFRESH-INTERVAL;VALUE=DURATION:PT3H",
     ]
     for e in events:

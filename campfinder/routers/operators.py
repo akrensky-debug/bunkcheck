@@ -135,7 +135,7 @@ async def verify_claim(token: str = Query(...)) -> dict[str, str]:
     client.table("camps").update({"verification_status": "claimed"}).eq("id", claim["camp_id"]).execute()
 
     camp = client.table("camps").select("name").eq("id", claim["camp_id"]).execute().data[0]
-    return {"message": "Claim verified. Welcome to CampFinder.", "camp_name": camp["name"]}
+    return {"message": "Claim verified. Welcome to BunkCheck.", "camp_name": camp["name"]}
 
 
 # ── Analytics events ───────────────────────────────────────────────────────

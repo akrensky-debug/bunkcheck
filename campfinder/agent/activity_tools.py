@@ -110,7 +110,7 @@ class CheckScheduleFitInput(BaseModel):
     commitments: list[CommitmentInput] | None = Field(
         default=None, max_length=20,
         description="Other weekly commitments to check against (practices, pickups, other kids' classes). "
-                    "On CampFinder the family calendar is checked automatically.",
+                    "On BunkCheck the family calendar is checked automatically.",
     )
     travel_buffer_minutes: int = Field(default=15, ge=0, le=90, description="Driving time between places.")
 
@@ -465,7 +465,7 @@ ACTIVITY_TOOLS: list[ToolSpec] = [
         "check_schedule_fit",
         "Check whether one or more class offerings fit the family's week: clashes with the child's other "
         "commitments, camp weeks on meeting dates, and drop-offs or pickups for another child within the "
-        "travel buffer. On CampFinder the family calendar is checked automatically.",
+        "travel buffer. On BunkCheck the family calendar is checked automatically.",
         CheckScheduleFitInput, check_schedule_fit_tool, family_optional=True, status="Checking your week",
     ),
 ]
@@ -493,7 +493,7 @@ ACTIVITY_FAMILY_TOOLS: list[ToolSpec] = [
     ),
 ]
 
-# Phrases parents type, for MCP clients deciding when to call CampFinder.
+# Phrases parents type, for MCP clients deciding when to call BunkCheck.
 ACTIVITY_DISCOVERY_DESCRIPTIONS = {
     "find_activities": (
         "Find year-round kids' classes, lessons, leagues and after-school programs near a town. Use for "

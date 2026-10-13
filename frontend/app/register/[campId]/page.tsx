@@ -106,7 +106,7 @@ function Register() {
             </button>
           )}
         </div>
-        <p className="text-xs text-gray-500">You register and pay on the camp's own site. CampFinder never submits forms or payments for you.</p>
+        <p className="text-xs text-gray-500">You register and pay on the camp's own site. BunkCheck never submits forms or payments for you.</p>
       </section>
 
       <section className="space-y-2">
@@ -343,7 +343,7 @@ function SandboxBooking({ familyId, registrationId, onBooked }: { familyId: stri
     <section className="space-y-3 border-2 border-dashed border-amber-300 rounded-2xl p-4">
       <p className="text-xs font-bold uppercase tracking-wide text-amber-700">Sandbox prototype · test bookings only</p>
       {!quote && !result && (
-        <button onClick={ask} className="border border-gray-300 bg-white font-semibold px-4 py-2 rounded-xl text-sm">Get a quote through CampFinder</button>
+        <button onClick={ask} className="border border-gray-300 bg-white font-semibold px-4 py-2 rounded-xl text-sm">Get a quote through BunkCheck</button>
       )}
       {quote && (
         <div className="space-y-3 text-sm">

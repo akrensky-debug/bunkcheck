@@ -62,7 +62,7 @@ that a reply reaches a person.
 
 | Variable | Default | Use |
 |---|---|---|
-| `OWNER_EMAIL_SIGNATURE` | `CampFinder` | Sign-off line |
+| `OWNER_EMAIL_SIGNATURE` | `BunkCheck` | Sign-off line |
 | `OWNER_REPLY_TO` | none | Where owners' replies go (a person reads them) |
 
 The copy in `campfinder/owners/emails.py` is a starting point for Andrew to edit.

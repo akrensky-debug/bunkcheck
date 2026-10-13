@@ -1,5 +1,5 @@
 """
-Emails to camp owners. Signed as CampFinder, never as a person (docs/decisions/agents.md,
+Emails to camp owners. Signed as BunkCheck, never as a person (docs/decisions/agents.md,
 rule 1), and every one says how to reach a person: reply to it. Plain text and HTML.
 
 Copy is a starting point for Andrew to edit; the facts table is what matters.
@@ -26,7 +26,7 @@ def _e(v: Any) -> str:
 
 
 def _signature() -> str:
-    return os.environ.get("OWNER_EMAIL_SIGNATURE", "CampFinder")
+    return os.environ.get("OWNER_EMAIL_SIGNATURE", "BunkCheck")
 
 
 def _reply_to() -> str | None:
@@ -77,7 +77,7 @@ def listing_confirmation(to: str, first_name: str | None, camp: dict[str, Any], 
 
     text = "\n".join([
         f"Hi {first_name or 'there'},", "",
-        f"CampFinder helps families plan the whole summer. We built a listing for {camp['name']} from "
+        f"BunkCheck helps families plan the whole summer. We built a listing for {camp['name']} from "
         f"your website so parents near {camp.get('city') or 'you'} can find you. Here is what it says:", "",
         *[f"  {k}: {v}" for k, v in rows],
         *(["", "  Sessions:", *[f"    {_session_line(s)}" for s in sessions]] if sessions else []),
@@ -96,7 +96,7 @@ def listing_confirmation(to: str, first_name: str | None, camp: dict[str, Any], 
             + "</ul>") if sessions else ""
     html = (
         f"<p>Hi {_e(first_name or 'there')},</p>"
-        f"<p>CampFinder helps families plan the whole summer. We built a listing for "
+        f"<p>BunkCheck helps families plan the whole summer. We built a listing for "
         f"<strong>{_e(camp['name'])}</strong> from your website so parents near {_e(camp.get('city') or 'you')} "
         f"can find you. Here is what it says:</p>"
         f"<table>{table}</table>{sess}"
@@ -110,7 +110,7 @@ def listing_confirmation(to: str, first_name: str | None, camp: dict[str, Any], 
         f"listed, <a href='{_e(page)}'>take it down here</a>.</p>"
         f"<p>Thanks,<br>{_e(_signature())}</p>"
     )
-    return Email(to=to, subject=f"Your camp's {season} listing on CampFinder: is it right?",
+    return Email(to=to, subject=f"Your camp's {season} listing on BunkCheck: is it right?",
                  html=html, text=text, reply_to=_reply_to())
 
 
@@ -125,10 +125,10 @@ def listing_confirmed(to: str, camp_name: str) -> Email:
 
 
 def listing_removed(to: str, camp_name: str) -> Email:
-    text = (f"{camp_name} is off CampFinder. Parents won't see it in search or on our pages.\n\n"
+    text = (f"{camp_name} is off BunkCheck. Parents won't see it in search or on our pages.\n\n"
             "If that was a mistake, reply to this email and a person will put it back.\n\n"
             f"Thanks,\n{_signature()}")
-    html = (f"<p><strong>{_e(camp_name)}</strong> is off CampFinder. Parents won't see it in search or on our "
+    html = (f"<p><strong>{_e(camp_name)}</strong> is off BunkCheck. Parents won't see it in search or on our "
             f"pages.</p><p>If that was a mistake, reply to this email and a person will put it back.</p>"
             f"<p>Thanks,<br>{_e(_signature())}</p>")
     return Email(to=to, subject=f"Removed: {camp_name}", html=html, text=text, reply_to=_reply_to())

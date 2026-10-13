@@ -1,5 +1,5 @@
 """
-Tools the CampFinder agent can call.
+Tools the BunkCheck agent can call.
 
 Camp tools (search, details, compare, plan) are public and are shared by the
 in-app agent and the MCP server. Family tools read and write a single family's
@@ -60,7 +60,7 @@ LOCATION_HELP = (
 
 COVERED_STATES = {"CT", "MA", "ME", "NH", "NJ", "NY", "PA", "RI", "VT"}
 OUTSIDE_COVERAGE = (
-    "CampFinder covers the Northeast US today (CT, MA, ME, NH, NJ, NY, PA, RI, VT), "
+    "BunkCheck covers the Northeast US today (CT, MA, ME, NH, NJ, NY, PA, RI, VT), "
     "so there is nothing for {location} yet."
 )
 

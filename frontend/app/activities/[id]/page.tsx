@@ -97,7 +97,7 @@ export default function ActivityPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8 space-y-4">
       <nav className="text-sm text-gray-400">
-        <a href="/" className="hover:text-brand-600">← Back to CampFinder</a>
+        <a href="/" className="hover:text-brand-600">← Back to BunkCheck</a>
       </nav>
 
       <div className="bg-white rounded-2xl border border-gray-200 p-6">
