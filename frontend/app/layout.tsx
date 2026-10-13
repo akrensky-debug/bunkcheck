@@ -2,10 +2,10 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'CampFinder -- There is finally a better way to plan your kid\'s summer.',
+  title: 'BunkCheck -- There is finally a better way to plan your kid\'s summer.',
   description: 'Plan and book the whole summer in one place, guided by parents who have been there.',
   openGraph: {
-    title: 'CampFinder',
+    title: 'BunkCheck',
     description: 'There is finally a better way to plan your kid\'s summer.',
     type: 'website',
   },
@@ -19,7 +19,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
             <a href="/" className="flex items-center gap-2 font-bold text-xl text-brand-700">
               <span className="text-2xl">⛺</span>
-              CampFinder
+              BunkCheck
             </a>
             <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-gray-600">
               <a href="/search" className="hover:text-brand-700 transition-colors">Find Camps</a>
@@ -38,7 +38,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <footer className="bg-gray-50 border-t border-gray-100 mt-16">
           <div className="max-w-6xl mx-auto px-4 py-10 flex flex-col md:flex-row justify-between gap-6 text-sm text-gray-500">
             <div>
-              <p className="font-semibold text-gray-700 mb-1">⛺ CampFinder</p>
+              <p className="font-semibold text-gray-700 mb-1">⛺ BunkCheck</p>
               <p className="mb-0.5">There is finally a better way to plan your kid's summer.</p>
               <p className="text-xs text-gray-400">Built by parents, for parents. We never sell your data.</p>
             </div>

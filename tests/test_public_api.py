@@ -7,7 +7,7 @@ from datetime import date
 import asyncpg
 import httpx
 
-from campfinder.security import hash_token
+from bunkcheck.security import hash_token
 from tests.factories import BOSTON, CRANSTON, make_camp, make_contact, make_session
 
 

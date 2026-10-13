@@ -4,10 +4,10 @@ from __future__ import annotations
 
 from datetime import date, datetime, timedelta, timezone
 
-from campfinder.security import SlidingWindowLimiter, hash_token, new_token
-from campfinder.services.freshness import compute_freshness_grade
-from campfinder.services.planning import build_plan
-from campfinder.services.ranking import score_camp
+from bunkcheck.security import SlidingWindowLimiter, hash_token, new_token
+from bunkcheck.services.freshness import compute_freshness_grade
+from bunkcheck.services.planning import build_plan
+from bunkcheck.services.ranking import score_camp
 
 
 def test_score_camp_reasons() -> None:

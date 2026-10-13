@@ -78,7 +78,7 @@ export default function HomePage() {
       {/* How it works */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-2xl font-bold text-center mb-10 text-gray-900">How CampFinder works</h2>
+          <h2 className="text-2xl font-bold text-center mb-10 text-gray-900">How BunkCheck works</h2>
           <div className="grid md:grid-cols-3 gap-8">
             {[
               { icon: '🔍', title: 'Search by what matters', desc: 'Filter by location, age, type, price, transportation, meals, and more.' },

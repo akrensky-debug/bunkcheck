@@ -26,7 +26,7 @@ a real category of camp: the fix is the product's own path, the owner sends us t
 
 The two sessions of 28 September disagreed about the fetcher, and this settles it.
 
-**The rule.** The fetcher says who it is (`CampFinderBot`). If a host refuses it (401, 403 or 429),
+**The rule.** The fetcher says who it is (`BunkCheckBot`). If a host refuses it (401, 403 or 429),
 that is the answer: the tool stops with "ask the owner for the brochure" and does not try again
 with a browser or a borrowed identity. The owner's brochure is the product's own path, and a
 company asking camp owners for trust does not get past their filters. Headless Chromium is used
@@ -59,7 +59,7 @@ first test of the owner path, not a fetcher problem.
 
 ```bash
 for url in <each source above>; do
-  python -m campfinder.ingest "$url" --json > "eval/$(date +%F)-$n.json"
+  python -m bunkcheck.ingest "$url" --json > "eval/$(date +%F)-$n.json"
 done
 ```
 
@@ -118,7 +118,7 @@ What the pages alone already show:
 ## Download check, 28 September 2026 (second session): no model step
 
 Still no `ANTHROPIC_API_KEY`, so the model step did not run. The network now reaches the camp
-hosts, so each source went through the tool's own fetcher (`campfinder.ingest.fetch`) only.
+hosts, so each source went through the tool's own fetcher (`bunkcheck.ingest.fetch`) only.
 
 | # | Camp | Fetcher result | Notes |
 |---|---|---|---|
@@ -154,12 +154,12 @@ widget at the foot of every page. Answer-key rows, from the fetched text:
 
 - **Kids Junction** and any page like it now fail with "returned a bot-check page" (or "almost
   no text" under 40 words) instead of reaching the model. See `check_content` in
-  `campfinder/ingest/fetch.py`.
+  `bunkcheck/ingest/fetch.py`.
 - **East Providence and St. Andrew's (403)** block on the TLS handshake, not the headers. With
   every header identical, Python's `urllib` gets 200 and gets 403 as soon as its handshake
   advertises HTTP/1.1 only (ALPN), which is what httpx always does. The fetcher could be
   changed to leave ALPN out. That would deliberately get past a bot filter these sites run,
-  even with the honest `CampFinderBot` name, so it's a policy decision, not made here.
+  even with the honest `BunkCheckBot` name, so it's a policy decision, not made here.
   The alternative is to ask the operators, or to enter these camps by hand.
   *Decided 29 September: we don't. See "Fetching, 29 September 2026" above.*
 - **Save The Bay (429)** is rate limiting and comes and goes between runs. Retry later rather

@@ -2,11 +2,11 @@
 # Run the listing tool against the ten camps in docs/ingest-test-set.md and push the results.
 # Usage: ANTHROPIC_API_KEY=sk-ant-... scripts/run_ingest_eval.sh
 # In a Claude Code cloud session, where ANTHROPIC_API_KEY may not reach the shell, set
-# CAMPFINDER_ANTHROPIC_API_KEY in the environment's variables instead.
+# BUNKCHECK_ANTHROPIC_API_KEY in the environment's variables instead.
 set -uo pipefail
 cd "$(dirname "$0")/.."
-export ANTHROPIC_API_KEY="${ANTHROPIC_API_KEY:-${CAMPFINDER_ANTHROPIC_API_KEY:-}}"
-: "${ANTHROPIC_API_KEY:?Set ANTHROPIC_API_KEY or CAMPFINDER_ANTHROPIC_API_KEY first}"
+export ANTHROPIC_API_KEY="${ANTHROPIC_API_KEY:-${BUNKCHECK_ANTHROPIC_API_KEY:-${CAMPFINDER_ANTHROPIC_API_KEY:-}}}"
+: "${ANTHROPIC_API_KEY:?Set ANTHROPIC_API_KEY or BUNKCHECK_ANTHROPIC_API_KEY first}"
 [ -d .venv ] || python3 -m venv .venv
 source .venv/bin/activate
 pip install -q -r requirements.txt
@@ -28,7 +28,7 @@ for url in \
   "https://ymcagreaterprovidence-org.storage.googleapis.com/files/s3fs-public/2026-02/Kent%20Camp%20Info%202026.pdf"
 do
   n=$((n+1))
-  if python -m campfinder.ingest "$url" --json > "eval/$day-$n.json" 2> "eval/$day-$n.err"; then
+  if python -m bunkcheck.ingest "$url" --json > "eval/$day-$n.json" 2> "eval/$day-$n.err"; then
     echo "$n ok"
   else
     echo "$n FAILED (see eval/$day-$n.err)"

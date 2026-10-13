@@ -1,4 +1,4 @@
-# CampFinder: Brand and Product Roadmap
+# BunkCheck: Brand and Product Roadmap
 
 *Draft, 28 September 2026. Companion to `PRODUCT.md`, which holds the mission, the model and
 the trust rules. This document is the plan to get the brand and the product built for the
@@ -54,9 +54,9 @@ Write down, in one page:
 
 ### 2. Name (Oct, weeks 1 to 3)
 
-"CampFinder" describes the wedge, not the mission, and it is generic enough that the domain,
-trademark and social handles are almost certainly taken or crowded. Decide early: a rename
-after launch costs far more than one before.
+**Decided 13 October 2026: BunkCheck, at bunkcheck.ai.** The working name, CampFinder,
+described the wedge, not the mission, and was too generic to own. Still to do from the list
+below: the trademark application and the social handles.
 
 Process:
 
@@ -67,7 +67,7 @@ Process:
    app store, Instagram and Facebook handles, and an ear test with five parents.
 4. Pick one and register the domain, handles and a trademark application.
 
-Decision owner: Andrew. Target: name chosen by 24 Oct.
+Decision owner: Andrew. Target was 24 Oct; chosen 13 Oct.
 
 ### 3. Visual identity (Nov, weeks 1 to 3)
 

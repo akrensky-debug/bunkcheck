@@ -1,4 +1,4 @@
-# CampFinder
+# BunkCheck
 
 Grubhub for camps. Parents plan and book the whole summer in one place, guided by parents who
 have been there. Camp owners get found and booked without learning any software.
@@ -13,9 +13,9 @@ Needs Python 3.11+, and Postgres 16 with PostGIS (locally, or a Supabase project
 ```bash
 pip install -r requirements.txt
 cp .env.example .env               # set DATABASE_URL
-python -m campfinder.migrate       # apply migrations
-python -m campfinder.seed.generate --wipe   # 60 synthetic Providence-area camps
-uvicorn campfinder.main:app --reload
+python -m bunkcheck.migrate       # apply migrations
+python -m bunkcheck.seed.generate --wipe   # 60 synthetic Providence-area camps
+uvicorn bunkcheck.main:app --reload
 ```
 
 Docs at http://localhost:8000/docs. Health at http://localhost:8000/health.
@@ -34,9 +34,9 @@ endpoint against it. They need `postgresql-16` and `postgresql-16-postgis-3` ins
 
 ```bash
 export ANTHROPIC_API_KEY=...
-python -m campfinder.ingest https://example-camp.org           # print the proposal
-python -m campfinder.ingest brochure.pdf --json                # full detail
-python -m campfinder.ingest https://example-camp.org --import  # write it as an unverified camp
+python -m bunkcheck.ingest https://example-camp.org           # print the proposal
+python -m bunkcheck.ingest brochure.pdf --json                # full detail
+python -m bunkcheck.ingest https://example-camp.org --import  # write it as an unverified camp
 ```
 
 ## Endpoints
@@ -62,7 +62,7 @@ python -m campfinder.ingest https://example-camp.org --import  # write it as an 
 ## Jobs
 
 ```bash
-python -m campfinder.jobs.send_alerts   # daily: emails alerts for registration opening within 7 days
+python -m bunkcheck.jobs.send_alerts   # daily: emails alerts for registration opening within 7 days
 ```
 
 ## Environment

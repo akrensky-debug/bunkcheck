@@ -1,12 +1,16 @@
-# Working on CampFinder
+# Working on BunkCheck
 
 Read this first, every session. Set 1 October 2026 by Andrew.
+
+The product is **BunkCheck** (bunkcheck.ai), named 13 October 2026; CampFinder was the working
+name. The code package is `bunkcheck`. The GitHub repository and some hosting projects still carry
+the old name until Andrew renames them.
 
 ## One branch
 
 - **`claude/product-plan` is the only line of work** until it merges to `main`. Start from it,
   `git pull --rebase origin claude/product-plan` before any change, and push back to it.
-- Do not start CampFinder work from `main` or from another `claude/*` branch. `main` still holds
+- Do not start BunkCheck work from `main` or from another `claude/*` branch. `main` still holds
   the April beta, whose schema the rebuild replaced. Code written against it will not merge.
 - If your session was given a different branch, tell Andrew before committing, and do your work
   on `claude/product-plan` instead.
@@ -38,7 +42,7 @@ Brand and naming are Andrew's. Do not start them.
 - Tests: `python -m pytest` (not bare `pytest`, which may resolve to a tool install without the
   project's packages). Needs `postgresql-16` and `postgresql-16-postgis-3`.
 - The listing tool eval: `scripts/run_ingest_eval.sh`. In cloud sessions `ANTHROPIC_API_KEY` does
-  not reach the shell; the script also reads `CAMPFINDER_ANTHROPIC_API_KEY`. Check the key is set
+  not reach the shell; the script also reads `BUNKCHECK_ANTHROPIC_API_KEY`. Check the key is set
   (never print it) before starting anything that needs it, and stop if it is not.
 - The fetcher takes a refusal (401, 403, 429) as the answer: ask the owner for the brochure. Never
   work around a camp's bot filter.

@@ -2,7 +2,7 @@ from pathlib import Path
 
 import asyncpg
 
-from campfinder.migrate import MIGRATIONS_DIR, apply_migrations, list_migration_files
+from bunkcheck.migrate import MIGRATIONS_DIR, apply_migrations, list_migration_files
 
 
 async def test_migrations_apply_once(pool: asyncpg.Pool) -> None:

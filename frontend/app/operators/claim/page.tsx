@@ -248,7 +248,7 @@ function ClaimFlow() {
           <h1 className="text-2xl font-extrabold text-gray-900 mb-3">Listing claimed!</h1>
           <p className="text-gray-500 text-sm mb-6">
             Your ownership has been verified. You can now update your listing, add sessions,
-            and manage your camp's data on CampFinder.
+            and manage your camp's data on BunkCheck.
           </p>
           <div className="bg-brand-50 border border-brand-200 rounded-2xl p-6 text-left mb-6">
             <h2 className="font-bold text-gray-900 mb-3 text-sm">What's next</h2>

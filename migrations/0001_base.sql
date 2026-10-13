@@ -1,7 +1,7 @@
 -- 0001: base schema for the camps-as-the-wedge rebuild.
 --
 -- Replaces schema.sql, schema_leads.sql and schema_phase2.sql. Applied by
--- `python -m campfinder.migrate`. Every statement must be safe to run once,
+-- `python -m bunkcheck.migrate`. Every statement must be safe to run once,
 -- inside one transaction, on an empty database.
 
 CREATE EXTENSION IF NOT EXISTS postgis;

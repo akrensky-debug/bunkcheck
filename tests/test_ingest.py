@@ -9,11 +9,11 @@ from types import SimpleNamespace
 import asyncpg
 import pytest
 
-from campfinder.ingest import extract, fetch
-from campfinder.ingest.importer import ImportError_, import_listing, listing_to_rows
-from campfinder.ingest.schema import Evidence, ProposedListing, ProposedSession
-from campfinder.jobs.send_alerts import send_due_alerts
-from campfinder.repositories import bookings as bookings_repo
+from bunkcheck.ingest import extract, fetch
+from bunkcheck.ingest.importer import ImportError_, import_listing, listing_to_rows
+from bunkcheck.ingest.schema import Evidence, ProposedListing, ProposedSession
+from bunkcheck.jobs.send_alerts import send_due_alerts
+from bunkcheck.repositories import bookings as bookings_repo
 from tests.factories import make_camp, make_session, soon
 
 SAMPLE_HTML = """
@@ -118,7 +118,7 @@ async def test_import_listing_writes_camp_sessions_sources(conn: asyncpg.Connect
 
 
 async def test_send_due_alerts(conn: asyncpg.Connection, outbox: list) -> None:
-    from campfinder.services import email
+    from bunkcheck.services import email
 
     email.reset_outbox()
     camp_id = await make_camp(conn)

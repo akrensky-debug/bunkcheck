@@ -28,7 +28,7 @@ os.environ.setdefault("CORS_ORIGINS", "http://testclient")
 os.environ.setdefault("RATE_LIMIT_PER_MINUTE", "1000")
 os.environ.setdefault("SITE_URL", "http://testclient")
 
-from campfinder.migrate import apply_migrations  # noqa: E402
+from bunkcheck.migrate import apply_migrations  # noqa: E402
 
 PG_BIN = Path("/usr/lib/postgresql/16/bin")
 PG_PORT = 55499
@@ -73,13 +73,13 @@ def database_url() -> Iterator[str]:
         "-o", f"-p {PG_PORT} -k /tmp -c listen_addresses='' -c fsync=off",
         "start",
     ])
-    url = f"postgresql://postgres@/campfinder_test?host=/tmp&port={PG_PORT}"
+    url = f"postgresql://postgres@/bunkcheck_test?host=/tmp&port={PG_PORT}"
     deadline = time.time() + 15
     while True:
         try:
             subprocess.run(
                 ["psql", "-h", "/tmp", "-p", str(PG_PORT), "-U", "postgres", "-c",
-                 "CREATE DATABASE campfinder_test"],
+                 "CREATE DATABASE bunkcheck_test"],
                 check=True, capture_output=True,
             )
             break
@@ -96,7 +96,7 @@ def database_url() -> Iterator[str]:
 
 @pytest_asyncio.fixture(scope="session", loop_scope="session")
 async def pool(database_url: str) -> AsyncIterator[asyncpg.Pool]:
-    from campfinder import database
+    from bunkcheck import database
 
     p = await database.create_pool(database_url, min_size=1, max_size=4)
     async with p.acquire() as conn:
@@ -119,8 +119,8 @@ async def conn(pool: asyncpg.Pool) -> AsyncIterator[asyncpg.Connection]:
 
 @pytest_asyncio.fixture(loop_scope="session")
 async def client(conn: asyncpg.Connection) -> AsyncIterator[httpx.AsyncClient]:
-    from campfinder.main import create_app
-    from campfinder.services import email
+    from bunkcheck.main import create_app
+    from bunkcheck.services import email
 
     email.reset_outbox()
     app = create_app(manage_pool=False)
@@ -131,7 +131,7 @@ async def client(conn: asyncpg.Connection) -> AsyncIterator[httpx.AsyncClient]:
 
 @pytest.fixture
 def outbox():
-    from campfinder.services import email
+    from bunkcheck.services import email
 
     email.reset_outbox()
     return email.OUTBOX

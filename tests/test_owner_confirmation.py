@@ -8,10 +8,10 @@ import asyncpg
 import httpx
 import pytest
 
-from campfinder.owners import as_text
-from campfinder.services import owner_confirmation
-from campfinder.services import email as email_module
-from campfinder.services.email import Email
+from bunkcheck.owners import as_text
+from bunkcheck.services import owner_confirmation
+from bunkcheck.services import email as email_module
+from bunkcheck.services.email import Email
 from tests.factories import make_camp, make_session
 
 URL = "/api/v1/owners/listing-confirmation"
@@ -31,7 +31,7 @@ async def _checked_camp(conn: asyncpg.Connection, **overrides):
 
 
 async def bookings_contact(conn: asyncpg.Connection, camp_id) -> None:
-    from campfinder.repositories import bookings
+    from bunkcheck.repositories import bookings
 
     await bookings.upsert_contact(conn, camp_id=camp_id, email="dana@riverbend.example", name="Dana Ruiz", is_primary=True)
 
@@ -132,7 +132,7 @@ async def test_owner_takes_the_camp_down(client: httpx.AsyncClient, conn: asyncp
     # Parents waiting on its registration are not emailed about a camp that asked to leave.
     from datetime import timedelta
 
-    from campfinder.repositories import bookings
+    from bunkcheck.repositories import bookings
     from tests.factories import soon
 
     await conn.execute("UPDATE sessions SET registration_opens_at = $2 WHERE camp_id = $1", camp_id, soon(2))

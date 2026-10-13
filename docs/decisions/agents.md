@@ -2,7 +2,7 @@
 
 *Decided 1 October 2026 by Andrew. Holds until he changes it in writing here.*
 
-CampFinder runs with one person and a small set of AI agents. Each agent has a written role,
+BunkCheck runs with one person and a small set of AI agents. Each agent has a written role,
 the way an employee has a job description: what it does, what it may do alone, and what goes
 to Andrew. An agent that does not exist yet is not described anywhere outside this file as if
 it did.
@@ -23,7 +23,7 @@ person reviewing every result. The other four are planned.
 
 ## Rules
 
-1. **Agents write as CampFinder, never as Andrew.** Mail an agent writes is signed "CampFinder"
+1. **Agents write as BunkCheck, never as Andrew.** Mail an agent writes is signed "BunkCheck"
    and says how to reach a person ("reply and Andrew will see it"). Andrew's name goes only on
    messages he wrote or approved. The outreach scripts in `docs/brand/OUTREACH-CAMPS.md` are
    Andrew's own first-contact emails and stay in his name.

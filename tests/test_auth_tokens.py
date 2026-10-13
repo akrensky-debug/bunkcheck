@@ -20,8 +20,8 @@ from cryptography.hazmat.primitives.asymmetric import ec
 from fastapi import HTTPException
 from fastapi.security import HTTPAuthorizationCredentials
 
-from campfinder import security
-from campfinder.config import Settings
+from bunkcheck import security
+from bunkcheck.config import Settings
 
 ISSUER = "https://project.supabase.co/auth/v1"
 SECRET = "a-shared-secret-long-enough-for-hs256-0123"

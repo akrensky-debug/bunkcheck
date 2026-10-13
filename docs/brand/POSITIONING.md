@@ -1,6 +1,6 @@
 # Positioning
 
-*One page. Draft for Andrew to edit. "CampFinder" is a placeholder until the name is decided.*
+*One page. Draft for Andrew to edit.*
 
 ## In one line
 

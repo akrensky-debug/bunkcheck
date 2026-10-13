@@ -1,6 +1,6 @@
 # Camp owner outreach
 
-*Scripts for Andrew to edit and send. Every message asks for one thing. "CampFinder" is a placeholder.*
+*Scripts for Andrew to edit and send. Every message asks for one thing.*
 
 The order matters. Their listing is built before we ask anything of them, so the first email is a gift, not a pitch.
 

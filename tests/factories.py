@@ -8,8 +8,8 @@ from uuid import UUID
 
 import asyncpg
 
-from campfinder.repositories import bookings as bookings_repo
-from campfinder.repositories import camps as camps_repo
+from bunkcheck.repositories import bookings as bookings_repo
+from bunkcheck.repositories import camps as camps_repo
 
 PROVIDENCE = (41.8240, -71.4128)
 CRANSTON = (41.7798, -71.4373)

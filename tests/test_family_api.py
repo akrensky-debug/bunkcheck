@@ -6,8 +6,8 @@ import asyncpg
 import httpx
 import pytest
 
-from campfinder.config import get_settings
-from campfinder.security import mint_token
+from bunkcheck.config import get_settings
+from bunkcheck.security import mint_token
 from tests.factories import make_camp, make_contact, make_session
 
 
@@ -127,7 +127,7 @@ async def test_spot_request_needs_a_camp_contact(client: httpx.AsyncClient, conn
 
 
 async def test_rate_limit(client: httpx.AsyncClient, conn: asyncpg.Connection) -> None:
-    from campfinder import security
+    from bunkcheck import security
 
     limiter = security.SlidingWindowLimiter(limit=2)
     original = security._limiter

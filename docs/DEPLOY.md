@@ -14,7 +14,7 @@ move them to the rebuilt code. The April data was synthetic, so nothing is migra
 ## Step 1: the database (Supabase)
 
 *Checked 29 September 2026.* The April project (`sjzipluirwnhjhnkyfyy`, us-west-2) is paused. A
-fresh project replaces it: **`campfinder`, ref `cdzzmyambonhkhsoltfw`, us-east-1**, closer to New
+fresh project replaces it: **`campfinder` (its name in Supabase, from before the rename), ref `cdzzmyambonhkhsoltfw`, us-east-1**, closer to New
 England. It is empty: no tables, no sign-ups. PostGIS is available and the first migration turns
 it on, so there is nothing to reset. `scripts/reset_beta_database.sql` is no longer needed; leave
 the old project paused and delete it once the new one is live.
@@ -42,10 +42,10 @@ Variables on the API service:
 | `DATABASE_URL` | the session pooler string, above |
 | `AUTH_JWKS_URL` | `https://cdzzmyambonhkhsoltfw.supabase.co/auth/v1/.well-known/jwks.json` |
 | `AUTH_JWT_ISSUER` | `https://cdzzmyambonhkhsoltfw.supabase.co/auth/v1` |
-| `SITE_URL` | the Vercel URL, e.g. `https://campfinder.vercel.app` |
-| `CORS_ORIGINS` | the same Vercel URL, plus `http://localhost:3000` for local work |
+| `SITE_URL` | `https://bunkcheck.ai` once the domain points at Vercel; the Vercel URL until then |
+| `CORS_ORIGINS` | `https://bunkcheck.ai,https://www.bunkcheck.ai`, plus the Vercel URL while it is in use and `http://localhost:3000` for local work |
 | `RESEND_API_KEY` | from Resend, once the sending domain is verified. Empty until then: emails are logged, not sent |
-| `EMAIL_FROM` | `CampFinder <hello@yourdomain>` |
+| `EMAIL_FROM` | `BunkCheck <hello@bunkcheck.ai>`, once bunkcheck.ai is verified in Resend |
 | `TEAM_EMAIL` | where owners' replies go (the Reply-To on owner emails), e.g. your own inbox |
 | `TEAM_SIGNATURE`, `TEAM_PHONE` | the sign-off on owner emails; defaults to "Andrew" with no phone |
 | `ANTHROPIC_API_KEY` | from the Anthropic Console, for the listing tool |
@@ -59,7 +59,7 @@ On Vercel, `NEXT_PUBLIC_API_URL` should already point at the Railway URL. Check 
 ## Step 3: merge
 
 Open the pull request from `claude/product-plan` to `main`, wait for green, merge. Railway runs
-`python -m campfinder.migrate` before starting the new version (see `railway.toml`), so the
+`python -m bunkcheck.migrate` before starting the new version (see `railway.toml`), so the
 schema is created on deploy. Check `https://<railway-url>/health` reports the database as
 connected.
 
@@ -68,8 +68,8 @@ connected.
 Two options, both fine to mix:
 
 ```bash
-python -m campfinder.seed.generate --count 30      # synthetic, for testing the site
-python -m campfinder.ingest https://... --import   # a real camp from its website
+python -m bunkcheck.seed.generate --count 30      # synthetic, for testing the site
+python -m bunkcheck.ingest https://... --import   # a real camp from its website
 ```
 
 Every ingested camp lands as `unverified`. A person checks it on the site before we email the
@@ -77,12 +77,12 @@ owner.
 
 ## Step 5: ask owners to confirm
 
-One camp at a time, by a person (`python -m campfinder.owners --help`):
+One camp at a time, by a person (`python -m bunkcheck.owners --help`):
 
 ```bash
-python -m campfinder.owners checked <slug> --by andrew      # I checked it against its source
-python -m campfinder.owners send <slug> --by andrew         # preview the email; sends nothing
-python -m campfinder.owners send <slug> --by andrew --send  # record it and send it
+python -m bunkcheck.owners checked <slug> --by andrew      # I checked it against its source
+python -m bunkcheck.owners send <slug> --by andrew         # preview the email; sends nothing
+python -m bunkcheck.owners send <slug> --by andrew --send  # record it and send it
 ```
 
 The email shows the listing and links to `/owners/confirm` on the site, where the owner presses
@@ -94,7 +94,7 @@ to `TEAM_EMAIL`, handled by a person until listing updates by email reply are bu
 
 ## Where the Anthropic key comes from
 
-Anthropic Console, `console.anthropic.com`, API Keys, Create Key. Name it `campfinder`. It goes
+Anthropic Console, `console.anthropic.com`, API Keys, Create Key. Name it `bunkcheck`. It goes
 in two places: the Railway variable above, and the Claude Code environment (the cloud
 environment menu in the session title bar, then Edit, then environment variables) as
 `ANTHROPIC_API_KEY`, so the listing tool can be run from a session. Never paste it into a chat.

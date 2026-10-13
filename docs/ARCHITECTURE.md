@@ -20,8 +20,8 @@ deploy environment, and the browser never talks to the database directly.
 ## Layout
 
 ```
-migrations/            numbered SQL, applied once each by campfinder.migrate
-campfinder/
+migrations/            numbered SQL, applied once each by bunkcheck.migrate
+bunkcheck/
   config.py            settings from environment, nothing hard-coded
   database.py          the asyncpg pool and the per-request connection
   security.py          one-time tokens, JWT verification, rate limiting
@@ -101,7 +101,7 @@ and ranking runs in Python on that set. This holds well past 100,000 camps.
 
 ## Ingest tool
 
-`python -m campfinder.ingest <url-or-pdf>` fetches the source safely, turns it
+`python -m bunkcheck.ingest <url-or-pdf>` fetches the source safely, turns it
 into text, and asks Claude to fill the `ProposedListing` schema with a quote and
 confidence for every field it sets. `--import` writes an unverified camp with
 `field_sources` recording the URL and the confidence. A person reviews every
@@ -112,14 +112,14 @@ import in year one; the confidence is there to tell them where to look.
 ```bash
 pip install -r requirements.txt
 cp .env.example .env            # fill DATABASE_URL at minimum
-python -m campfinder.migrate
-python -m campfinder.seed.generate --wipe
-uvicorn campfinder.main:app --reload
+python -m bunkcheck.migrate
+python -m bunkcheck.seed.generate --wipe
+uvicorn bunkcheck.main:app --reload
 pytest                          # starts its own Postgres; needs postgresql-16 and postgis installed
 ```
 
 ## Deploy
 
-Railway runs `python -m campfinder.migrate` before starting uvicorn (see
+Railway runs `python -m bunkcheck.migrate` before starting uvicorn (see
 `railway.toml`). A migration that fails stops the deploy; the previous version
 keeps serving.

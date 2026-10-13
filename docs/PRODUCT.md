@@ -1,4 +1,4 @@
-# CampFinder: Product Plan
+# BunkCheck: Product Plan
 
 *Draft, 28 September 2026. A working document: change it as we learn.*
 
@@ -8,7 +8,7 @@
 
 Parenting is hard. What parents know about camps sits in Facebook threads, at school pickup,
 and with the friend who has done three summers at the sailing camp. It is valuable, but hard to
-find, easily lost, and only reachable if you know the right people. CampFinder collects it,
+find, easily lost, and only reachable if you know the right people. BunkCheck collects it,
 organizes it, and makes it useful to every parent.
 
 **Camps are the wedge.** Parents plan camps every year, the decisions matter, and each booking
@@ -197,6 +197,8 @@ Parents book summer 2027 from about January to March. Early-bird registration op
 - A Grubhub-style booking marketplace, with money from booking fees.
 - Aim at low-tech camp owners: no new software for them to learn.
 - The trust rules above.
+- The name is **BunkCheck**, at **bunkcheck.ai** (13 October 2026, Andrew). It replaces the
+  working name CampFinder everywhere.
 
 ## Open questions
 
@@ -205,7 +207,7 @@ Parents book summer 2027 from about January to March. Early-bird registration op
    spot first, payments once camps trust us.
 3. **The cart and fill-the-forms-once: both in the first version, or one later?**
 4. **Would parents pay** for a family plan, which puts our interests on the parent's side?
-5. **The name.** "CampFinder" fits the wedge but not the mission.
+5. ~~**The name.**~~ Decided 13 October 2026: **BunkCheck**, at bunkcheck.ai (see Decisions made).
 6. **Which camp owners and parents can we talk to this month?** Five to ten of each.
 7. **Where do New England parents look for camps today?** Facebook groups, school
    newsletters, local roundups, word of mouth. Those places are how we reach both sides.
