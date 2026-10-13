@@ -38,7 +38,15 @@ PG_PORT = 55499
 AUTH_STUB = """
 CREATE SCHEMA IF NOT EXISTS auth;
 CREATE TABLE IF NOT EXISTS auth.users (id UUID PRIMARY KEY DEFAULT gen_random_uuid());
+DO 'BEGIN
+    IF NOT EXISTS (SELECT 1 FROM pg_roles WHERE rolname = ''anon'') THEN CREATE ROLE anon NOLOGIN; END IF;
+    IF NOT EXISTS (SELECT 1 FROM pg_roles WHERE rolname = ''authenticated'') THEN CREATE ROLE authenticated NOLOGIN; END IF;
+    GRANT USAGE ON SCHEMA public TO anon, authenticated;
+END';
+-- Like Supabase: new tables are granted to the public roles by default.
+ALTER DEFAULT PRIVILEGES IN SCHEMA public GRANT ALL ON TABLES TO anon, authenticated;
 """
+# Supabase's public roles, so the tests can check they reach no table (migration 0015).
 
 
 def _run_as_postgres(args: list[str]) -> None:
