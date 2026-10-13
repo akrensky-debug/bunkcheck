@@ -1,0 +1,90 @@
+{
+  "slug": "half-day-hangout-coventry",
+  "name": "Half-Day Hangout",
+  "operator_name": "Coventry Parks and Recreation Department (RI)",
+  "website_url": "https://coventryri.myrec.com/info/activities/default.aspx?CategoryID=1600",
+  "registration_url": "https://coventryri.myrec.com/info/activities/default.aspx",
+  "email": "parksandrecreation@coventryri.gov",
+  "phone": "(401) 822-9107",
+  "street_address": "1277 Main Street",
+  "city": "Coventry",
+  "state": "RI",
+  "zip": "02816",
+  "camp_type": "day",
+  "description_short": "A program listed under \"Day Camps\" on the Coventry, RI Parks and Recreation registration site. The page gives no other details about it.",
+  "sources": [
+    {
+      "url": "https://coventryri.myrec.com/info/activities/default.aspx?CategoryID=1600",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "description_short"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://coventryri.myrec.com/info/activities/default.aspx?CategoryID=1600",
+      "kind": "html",
+      "title": "Coventry Parks and Recreation Department (RI): Programs Programs"
+    },
+    "warnings": [
+      "This is a category index page on the department's MyRec registration site. It only lists the program name 'Half-Day Hangout' under Day Camps. It has no dates, prices, ages, or a description.",
+      "No season year is shown, so it's unclear whether the listing is for a past season or the 2027 season. The ©2026 footer does not say which season the program is for.",
+      "The address, phone, and email belong to the Parks and Recreation department office (Guy L. Lefebvre Community Center). The page doesn't confirm that camp is held there.",
+      "The camp type is inferred from the 'Day Camps' category and the name 'Half-Day'. The actual hours are not stated."
+    ],
+    "unknowns": [
+      "Season year and session dates",
+      "Daily hours (half-day schedule times)",
+      "Price / weekly rate",
+      "Age or grade range",
+      "Camp location",
+      "Activities offered",
+      "Availability / registration open date",
+      "Extended care, meals, transportation",
+      "Refund policy and deposit",
+      "Financial aid",
+      "Special needs accommodations",
+      "Swim/waterfront details",
+      "ACA accreditation"
+    ],
+    "low_confidence": [
+      {
+        "field": "name",
+        "confidence": 0.7,
+        "quote": "Day Camps\n\nHalf-Day Hangout"
+      },
+      {
+        "field": "description_short",
+        "confidence": 0.7,
+        "quote": "Day Camps\n\nHalf-Day Hangout"
+      },
+      {
+        "field": "street_address",
+        "confidence": 0.7,
+        "quote": "Guy L. Lefebvre Community Center\n\n1277 Main Street"
+      },
+      {
+        "field": "zip",
+        "confidence": 0.7,
+        "quote": "Coventry, RI 02816"
+      }
+    ],
+    "errors": [
+      "missing required season_year"
+    ]
+  }
+}
