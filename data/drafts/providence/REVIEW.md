@@ -110,6 +110,7 @@ Nothing here is on the site until it is promoted and imported.
 | [Summer Camp with Six Bros. Baseball](summer-camp-with-six-bros-baseball-bellingham.json) | Bellingham | 2 | 1 | 10 | 4 | unchecked |
 | [Summer Camps at Bishop Hendricken High School](summer-camps-at-bishop-hendricken-high-school-warwick.json) | Warwick | 1 | 0 | 7 | 5 | unchecked |
 | [Summer Camps at Kingston Hill Academy](summer-camps-at-kingston-hill-academy-saunderstown.json) | Saunderstown | 6 | 0 | 4 | 5 | unchecked |
+| [Summer Day Camp](summer-day-camp.json) | ? | 0 | 3 | 0 | 4 | unchecked |
 | [Summer Elements (Nature Camp & Adventure Camp)](summer-elements-nature-camp-and-adventure-camp-south-dartmouth.json) | South Dartmouth | 12 | 2 | 9 | 6 | unchecked |
 | [Summer Friends](summer-friends-north-dartmouth.json) | North Dartmouth | 9 | 1 | 10 | 4 | unchecked |
 | [Summer Fun Program](summer-fun-program-new-bedford.json) | New Bedford | 8 | 1 | 9 | 4 | unchecked |
@@ -190,19 +191,18 @@ These hosts refused the fetcher. That is the answer: ask the camp to send its br
 - Taunton Summer Camps & Programs: https://www.taunton-ma.gov/993/Summer-CampsPrograms (no camp on the page: This page is a municipal directory (City of Taunton), not one camp's own material. It lists at least 8 separate programs from different operators. Each one should be its own listing, built from that o)
 - RI Philharmonic Music School Summer Programs: https://www.riphil.org/sum26 (no camp on the page: the page names no camp)
 - Courage Quest Summer Camp: https://www.childanxietyprogram.com/summer-camp (fetch: https://www.childanxietyprogram.com/summer-camp has almost no text (0 words); it may need a browser or be a scanned PDF)
-- Johnston Parks and Recreation Day Camp: https://johnstonrec.com/day-camp (fetch: https://johnstonrec.com/day-camp could not be reached (ConnectError); try again later)
 - Newport Art Museum Summer Camps: https://newportartmuseum.org/education/classes/?category=camps/ (no camp on the page: the page names no camp)
-- North Kingstown Recreation Summer Camp: https://www.northkingstownri.gov/1227/Summer-Camp (fetch: https://www.northkingstownri.gov/1227/Summer-Camp could not be reached (ConnectError); try again later)
 - Igliozzi Day Camp: https://rec.providenceri.gov/program-details/?i=1594 (no camp on the page: The page shows 'Program Not Found.' It has no program details. The program ID (i=1594) may have been removed or may be wrong.)
 - John Rollins Day Camp: https://rec.providenceri.gov/program-details/?i=1595 (no camp on the page: The page says "Program Not Found." No program information loaded (program ID 1595).)
 - Providence Recreation Sailing Camp: https://rec.providenceri.gov/program-details/?i=1615 (no camp on the page: The page says "Program Not Found." No camp or program details are shown.)
 - Robert F. Kennedy Day Camp: https://rec.providenceri.gov/program-details/?i=1596 (no camp on the page: The source page says "Program Not Found." Program ID 1596 has no content, so nothing about any camp can be pulled from it.)
-- Vincent Brown Day Camp: https://rec.providenceri.gov/program-details/?i=1599 (fetch: https://rec.providenceri.gov/program-details/?i=1599 could not be reached (ConnectError); try again later)
 - Stony Brook Nature Camp: https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/stony-brook/camp (timed out (stopped by hand after the page hung); retry)
 - Camp Cedarwood: https://www.bbcri.org/cedarwood (fetch: https://www.bbcri.org/cedarwood returned 404)
 - Canonicus Camp (summer camping ministry): https://www.canonicus.org/a-grand-adventure/ (fetch: https://www.canonicus.org/a-grand-adventure/ returned 404)
 - Jamestown Arts Center Summer Arts Camp: https://www.jamestownartcenter.org/summer-arts-camp (fetch: https://www.jamestownartcenter.org/summer-arts-camp returned 404)
 - Boys & Girls Clubs of Providence Summer Day Camp: https://bgcprov.org/programs/summer-childcare/ (fetch: https://bgcprov.org/programs/summer-childcare/ has almost no text (2 words); it may need a browser or be a scanned PDF)
 - College Tennis Exposure Camp at Brown University: https://collegetennis.com/brown-university/ (fetch: https://collegetennis.com/brown-university/ returned 404)
-- Camp Surefire: https://campsurefire.org/ (fetch: https://campsurefire.org/ could not be reached (ConnectError); try again later)
 - Stepping Stone Ranch Kids Riding Camp: https://www.steppingstoneranch.com/lessons-riding-program (no camp on the page: the page names no camp)
+- Camp Surefire: https://campsurefire.org/ (fetch: https://campsurefire.org/ could not be reached (ConnectError); try again later)
+- Vincent Brown Day Camp: https://rec.providenceri.gov/program-details/?i=1599 (no camp on the page: The page says "Program Not Found." No camp or program details appear on it. Program ID 1599 may have been removed or expired, or the link may be broken.)
+- North Kingstown Recreation Summer Camp: https://www.northkingstownri.gov/1227/Summer-Camp (no camp on the page: Placeholder page: 2026 season is over and 2027 info isn't posted yet ('Check back in March/April for Summer 2027 camp information!'). No sessions, prices or ages are available.)

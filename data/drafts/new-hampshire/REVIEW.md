@@ -20,9 +20,12 @@ Nothing here is on the site until it is promoted and imported.
 | [Camp Deerwood](camp-deerwood-holderness.json) | Holderness | 3 | 0 | 1 | 4 | unchecked |
 | [Camp Hadar](camp-hadar-salem.json) | Salem | 8 | 0 | 0 | 5 | unchecked |
 | [Camp Hawkeye](camp-hawkeye-charlestown.json) | Charlestown | 9 | 0 | 3 | 8 | unchecked |
+| [Camp K - Summer Day Camp](camp-k-summer-day-camp-lebanon.json) | Lebanon | 10 | 1 | 11 | 6 | unchecked |
 | [Camp Lawrence](camp-lawrence-laconia.json) | Laconia | 8 | 0 | 2 | 6 | unchecked |
 | [Camp Merriwood](camp-merriwood-orford.json) | Orford | 5 | 1 | 1 | 3 | unchecked |
+| [Camp Moosilauke](camp-moosilauke-orford.json) | Orford | 5 | 0 | 12 | 5 | unchecked |
 | [Camp Mowglis](camp-mowglis-hebron.json) | Hebron | 5 | 0 | 3 | 6 | unchecked |
+| [Camp Naticook](camp-naticook-merrimack.json) | Merrimack | 9 | 0 | 8 | 6 | unchecked |
 | [Camp Nokomis](camp-nokomis-laconia.json) | Laconia | 4 | 0 | 1 | 5 | unchecked |
 | [Camp Onaway](camp-onaway-hebron.json) | Hebron | 3 | 0 | 4 | 6 | unchecked |
 | [Camp Otter](camp-otter-salem.json) | Salem | 10 | 0 | 1 | 4 | unchecked |
@@ -69,6 +72,7 @@ Nothing here is on the site until it is promoted and imported.
 | [Nashua Summer Camps](nashua-summer-camps-nashua.json) | Nashua | 0 | 0 | 2 | 4 | unchecked |
 | [NH Audubon Nature Day Camp – Summer Camp](nh-audubon-nature-day-camp-summer-camp-concord.json) | Concord | 8 | 1 | 2 | 5 | unchecked |
 | [NHBM Community Summer Sailing Programs](nhbm-community-summer-sailing-programs-wolfeboro.json) | Wolfeboro | 0 | 1 | 1 | 6 | unchecked |
+| [Opechee Day Camp](opechee-day-camp-laconia.json) | Laconia | 0 | 0 | 2 | 3 | unchecked |
 | [Pierce Camp Birchmont](pierce-camp-birchmont-wolfeboro.json) | Wolfeboro | 0 | 0 | 3 | 5 | unchecked |
 | [Rock N' Summer Fun Camp](rock-n-summer-fun-camp-salem.json) | Salem | 1 | 0 | 6 | 6 | unchecked |
 | [Stewards Summer Camp](stewards-summer-camp-rye.json) | Rye | 6 | 0 | 0 | 5 | unchecked |
@@ -121,13 +125,9 @@ These hosts refused the fetcher. That is the answer: ask the camp to send its br
 
 - Skills Camps (NH South): https://www.seacoastunited.com/programs/camps/nh-south-camps/ (fetch: https://www.seacoastunited.com/programs/camps/nh-south-camps/ returned 404)
 - Camp Witzel: https://bedfordnh.myrec.com/info/activities/program_details.aspx?ProgramID=28699 (no camp on the page: This page is not a summer camp listing. It is the program catalog for a town parks & recreation department, and it currently shows only fall 2026 programs for adults, seniors and all ages (Ballroom Da)
-- Opechee Day Camp: https://www.laconianh.gov/927/Opechee-Day-Camp (fetch: https://www.laconianh.gov/927/Opechee-Day-Camp could not be reached (ConnectError); try again later)
-- Camp K Summer Day Camp: https://lebanonnh.gov/255/Camp-K---Summer-Day-Camp (fetch: https://lebanonnh.gov/255/Camp-K---Summer-Day-Camp could not be reached (ConnectError); try again later)
 - Camp Bernadette: https://bfcamp.com/camp-bernadette (fetch: https://bfcamp.com/camp-bernadette has almost no text (0 words); it may need a browser or be a scanned PDF)
 - Camp Fatima: https://bfcamp.com/about/dates-rates/ (fetch: https://bfcamp.com/about/dates-rates/ has almost no text (0 words); it may need a browser or be a scanned PDF)
 - Horton Center Camp Sessions: https://www.hortoncenter.org/sessions (no camp on the page: the page names no camp)
-- Camp Naticook: https://merrimackparksandrec.org/camp-naticook (fetch: https://merrimackparksandrec.org/camp-naticook could not be reached (ConnectError); try again later)
-- Camp TREK: https://merrimackparksandrec.org/camp-trek (fetch: https://merrimackparksandrec.org/camp-trek could not be reached (ConnectError); try again later)
-- Camp Moosilauke: https://moosilauke.com/about-us/moose-at-a-glance/ (fetch: https://moosilauke.com/about-us/moose-at-a-glance/ returned 504)
 - Camp Runels: https://www.gsema.org/en/activities-and-camp/summer-camp/overnight.html (no camp on the page: the page names no camp)
 - Camp Coney Pine (Rochester Day Camp): https://www.graniteymca.org/camps/day-camp/rochester/ (no camp on the page: the page names no camp)
+- Camp TREK: https://merrimackparksandrec.org/camp-trek (fetch: https://merrimackparksandrec.org/camp-trek could not be reached (ConnectError); try again later)

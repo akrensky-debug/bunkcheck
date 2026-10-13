@@ -144,18 +144,6 @@
     "slug": "hanover-parks-and-recreation-camps-hanover"
   },
   {
-    "name": "Opechee Day Camp",
-    "url": "https://www.laconianh.gov/927/Opechee-Day-Camp",
-    "outcome": "failed",
-    "detail": "fetch: https://www.laconianh.gov/927/Opechee-Day-Camp could not be reached (ConnectError); try again later"
-  },
-  {
-    "name": "Camp K Summer Day Camp",
-    "url": "https://lebanonnh.gov/255/Camp-K---Summer-Day-Camp",
-    "outcome": "failed",
-    "detail": "fetch: https://lebanonnh.gov/255/Camp-K---Summer-Day-Camp could not be reached (ConnectError); try again later"
-  },
-  {
     "name": "C.A.K.E. Summer Camp",
     "url": "https://www.moco.org/camps/cake/",
     "outcome": "drafted",
@@ -608,22 +596,10 @@
     "slug": "melody-pines-day-camp-manchester"
   },
   {
-    "name": "Camp Naticook",
-    "url": "https://merrimackparksandrec.org/camp-naticook",
-    "outcome": "failed",
-    "detail": "fetch: https://merrimackparksandrec.org/camp-naticook could not be reached (ConnectError); try again later"
-  },
-  {
     "name": "Camp Quinebarge",
     "url": "https://www.campquinebarge.com/dates-tuition/",
     "outcome": "refused",
     "detail": "https://www.campquinebarge.com/dates-tuition/ refused an automated request (403); ask the owner for the brochure or a page we may read"
-  },
-  {
-    "name": "Camp TREK",
-    "url": "https://merrimackparksandrec.org/camp-trek",
-    "outcome": "failed",
-    "detail": "fetch: https://merrimackparksandrec.org/camp-trek could not be reached (ConnectError); try again later"
   },
   {
     "name": "Camp Birch Hill",
@@ -651,12 +627,6 @@
     "outcome": "drafted",
     "detail": null,
     "slug": "wanakee-summer-camp-meredith"
-  },
-  {
-    "name": "Camp Moosilauke",
-    "url": "https://moosilauke.com/about-us/moose-at-a-glance/",
-    "outcome": "failed",
-    "detail": "fetch: https://moosilauke.com/about-us/moose-at-a-glance/ returned 504"
   },
   {
     "name": "Camp Robindel",
@@ -772,5 +742,39 @@
     "outcome": "drafted",
     "detail": null,
     "slug": "ymca-camp-foss"
+  },
+  {
+    "name": "Camp TREK",
+    "url": "https://merrimackparksandrec.org/camp-trek",
+    "outcome": "failed",
+    "detail": "fetch: https://merrimackparksandrec.org/camp-trek could not be reached (ConnectError); try again later"
+  },
+  {
+    "name": "Opechee Day Camp",
+    "url": "https://www.laconianh.gov/927/Opechee-Day-Camp",
+    "outcome": "drafted",
+    "detail": null,
+    "slug": "opechee-day-camp-laconia"
+  },
+  {
+    "name": "Camp Naticook",
+    "url": "https://merrimackparksandrec.org/camp-naticook",
+    "outcome": "drafted",
+    "detail": null,
+    "slug": "camp-naticook-merrimack"
+  },
+  {
+    "name": "Camp K Summer Day Camp",
+    "url": "https://lebanonnh.gov/255/Camp-K---Summer-Day-Camp",
+    "outcome": "drafted",
+    "detail": null,
+    "slug": "camp-k-summer-day-camp-lebanon"
+  },
+  {
+    "name": "Camp Moosilauke",
+    "url": "https://moosilauke.com/about-us/moose-at-a-glance/",
+    "outcome": "drafted",
+    "detail": null,
+    "slug": "camp-moosilauke-orford"
   }
 ]

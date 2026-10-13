@@ -1,0 +1,63 @@
+{
+  "slug": "summer-day-camp",
+  "name": "Summer Day Camp",
+  "operator_name": "Johnston Parks and Recreation",
+  "website_url": "https://johnstonrec.com/day-camp",
+  "city": null,
+  "state": null,
+  "zip": null,
+  "camp_type": "day",
+  "description_short": "A summer day camp run by Johnston Parks and Recreation. For 2026, registration closed because the camp was full.",
+  "season_year": 2026,
+  "sources": [
+    {
+      "url": "https://johnstonrec.com/day-camp",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "camp_type",
+        "description_short"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://johnstonrec.com/day-camp",
+      "kind": "html",
+      "title": "Day Camp"
+    },
+    "warnings": [
+      "The page only covers the 2026 season, which has already ended (today is 2026-10-13). Nothing about 2027 has been posted.",
+      "Registration for 2026 closed because the camp was full: 'no longer accepting registrations... as we are at max capacity.'",
+      "Most details (dates, prices, ages, policies) seem to be in PDFs that were not available: 'Camp Parent Packet - 2026', 'Day Camp Registration - 2026', 'Camp Field Trip Packet'.",
+      "The page does not name a state. Several towns are called Johnston (for example Johnston, RI and Johnston, IA), so the location was left blank."
+    ],
+    "unknowns": [
+      "2027 season dates and when registration opens",
+      "Session/week dates",
+      "Price per week or per session",
+      "Ages or grades served",
+      "Street address, city, state, zip",
+      "Phone and email",
+      "Daily hours and before/after care",
+      "Activities and field trip details",
+      "Whether meals are included",
+      "Financial aid, deposit and refund policy",
+      "Transportation",
+      "Swim/waterfront details",
+      "ACA accreditation",
+      "Special needs accommodations",
+      "Online registration URL"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "missing required city",
+      "missing required state",
+      "missing required zip"
+    ]
+  }
+}

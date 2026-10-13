@@ -456,12 +456,6 @@
     "detail": "https://web.uri.edu/naval-science-technology/summer-camp/ refused an automated request (403); ask the owner for the brochure or a page we may read"
   },
   {
-    "name": "Johnston Parks and Recreation Day Camp",
-    "url": "https://johnstonrec.com/day-camp",
-    "outcome": "failed",
-    "detail": "fetch: https://johnstonrec.com/day-camp could not be reached (ConnectError); try again later"
-  },
-  {
     "name": "Camp WANNAGOAGAIN",
     "url": "https://theautismproject.org/parents-families/programs-resources/summer-camp",
     "outcome": "drafted",
@@ -521,12 +515,6 @@
     "url": "https://newportartmuseum.org/education/classes/?category=camps/",
     "outcome": "failed",
     "detail": "no camp on the page: the page names no camp"
-  },
-  {
-    "name": "North Kingstown Recreation Summer Camp",
-    "url": "https://www.northkingstownri.gov/1227/Summer-Camp",
-    "outcome": "failed",
-    "detail": "fetch: https://www.northkingstownri.gov/1227/Summer-Camp could not be reached (ConnectError); try again later"
   },
   {
     "name": "Sail To Prevail Summer Programs",
@@ -717,12 +705,6 @@
     "outcome": "drafted",
     "detail": null,
     "slug": "summer-lincoln-providence"
-  },
-  {
-    "name": "Vincent Brown Day Camp",
-    "url": "https://rec.providenceri.gov/program-details/?i=1599",
-    "outcome": "failed",
-    "detail": "fetch: https://rec.providenceri.gov/program-details/?i=1599 could not be reached (ConnectError); try again later"
   },
   {
     "name": "Smithfield Recreation Summer Camp",
@@ -1194,12 +1176,6 @@
     "slug": "rhode-island-youth-theatre-a-christmas-carol-fall-2026-production-warwick"
   },
   {
-    "name": "Camp Surefire",
-    "url": "https://campsurefire.org/",
-    "outcome": "failed",
-    "detail": "fetch: https://campsurefire.org/ could not be reached (ConnectError); try again later"
-  },
-  {
     "name": "Extraordinary Kids Therapeutic Summer Camp",
     "url": "https://www.extraordinarykidstherapy.net/camps-and-groups",
     "outcome": "drafted",
@@ -1272,5 +1248,30 @@
     "outcome": "drafted",
     "detail": null,
     "slug": "summer-camps-at-kingston-hill-academy-saunderstown"
+  },
+  {
+    "name": "Camp Surefire",
+    "url": "https://campsurefire.org/",
+    "outcome": "failed",
+    "detail": "fetch: https://campsurefire.org/ could not be reached (ConnectError); try again later"
+  },
+  {
+    "name": "Johnston Parks and Recreation Day Camp",
+    "url": "https://johnstonrec.com/day-camp",
+    "outcome": "drafted",
+    "detail": null,
+    "slug": "summer-day-camp"
+  },
+  {
+    "name": "Vincent Brown Day Camp",
+    "url": "https://rec.providenceri.gov/program-details/?i=1599",
+    "outcome": "failed",
+    "detail": "no camp on the page: The page says \"Program Not Found.\" No camp or program details appear on it. Program ID 1599 may have been removed or expired, or the link may be broken."
+  },
+  {
+    "name": "North Kingstown Recreation Summer Camp",
+    "url": "https://www.northkingstownri.gov/1227/Summer-Camp",
+    "outcome": "failed",
+    "detail": "no camp on the page: Placeholder page: 2026 season is over and 2027 info isn't posted yet ('Check back in March/April for Summer 2027 camp information!'). No sessions, prices or ages are available."
   }
 ]
