@@ -1,0 +1,109 @@
+{
+  "slug": "discovery-adventures-sturbridge",
+  "name": "Discovery Adventures",
+  "operator_name": "Old Sturbridge Village",
+  "website_url": "https://www.osv.org/education/discovery-adventures/",
+  "phone": "(800) 733-1830",
+  "street_address": "1 Old Sturbridge Village Road",
+  "city": "Sturbridge",
+  "state": "MA",
+  "zip": "01566",
+  "camp_type": "day",
+  "primary_categories": [
+    "academic",
+    "arts",
+    "nature"
+  ],
+  "age_min": 6,
+  "age_max": 17,
+  "description_short": "Three-day and five-day themed day programs at Old Sturbridge Village, a living history museum, held during February, April and summer school vacations. Kids explore part of the Village's history and environment, do hands-on crafts, and get an afternoon snack.",
+  "activities": [
+    "History exploration",
+    "Hands-on crafts",
+    "Village environment exploration"
+  ],
+  "financial_aid": true,
+  "season_year": 2026,
+  "sources": [
+    {
+      "url": "https://www.osv.org/education/discovery-adventures/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "financial_aid"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.osv.org/education/discovery-adventures/",
+      "kind": "html",
+      "title": "Discovery Adventures - Old Sturbridge Village"
+    },
+    "warnings": [
+      "Page only mentions Summer 2026 programs, which are already over as of 2026-10-13; no 2027 sessions are listed yet.",
+      "The page lists no session dates, prices or themes; they appear to be on a linked 'Learn More & Sign Up' page that wasn't provided.",
+      "Age range depends on the season: ages 6-14 for February/April and 6-17 for summer. The recorded 6-17 reflects summer.",
+      "Phone number is Old Sturbridge Village's general museum line, not a program-specific contact.",
+      "Scholarship contact email is obfuscated on the page ('[email protected]'), so it wasn't recorded.",
+      "Discounts mentioned: 10% sibling discount when registering in the same transaction; OSV members also get a discount (amount not stated)."
+    ],
+    "unknowns": [
+      "Session dates and themes for February, April and Summer 2027",
+      "Prices (per session/week), member discount amount",
+      "Daily hours / drop-off and pick-up times",
+      "Whether extended care (before/after) is offered",
+      "Box lunch cost; whether lunch is included (only an afternoon snack is stated as included)",
+      "Registration open date and registration URL for 2027",
+      "Deposit and refund/cancellation policy",
+      "Program contact email (shown obfuscated on page)",
+      "Specific age ranges per session",
+      "Transportation",
+      "Accessibility / special needs accommodations",
+      "ACA accreditation"
+    ],
+    "low_confidence": [
+      {
+        "field": "season_year",
+        "confidence": 0.6,
+        "quote": "Summer 2026 Discovery Adventures"
+      },
+      {
+        "field": "age_max",
+        "confidence": 0.75,
+        "quote": "Open to kids ages 6-14 (February/April) or ages 6-17 (summer)"
+      },
+      {
+        "field": "primary_categories",
+        "confidence": 0.7,
+        "quote": "Every Adventure session offers kids the opportunity to explore an aspect of the Village's history and environment."
+      },
+      {
+        "field": "financial_aid",
+        "confidence": 0.75,
+        "quote": "Full or partial scholarships may be available."
+      },
+      {
+        "field": "phone",
+        "confidence": 0.7,
+        "quote": "(800) 733-1830"
+      }
+    ],
+    "errors": []
+  }
+}

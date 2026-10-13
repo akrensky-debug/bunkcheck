@@ -8,7 +8,7 @@
   "street_address": "208 Manchaug Road",
   "city": "Sutton",
   "state": "MA",
-  "zip": null,
+  "zip": "01590",
   "camp_type": "day",
   "primary_categories": [
     "nature",
@@ -136,6 +136,14 @@
         "sessions"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=208+Manchaug+Road&city=Sutton&state=MA&benchmark=Public_AR_Current&format=json",
+      "checked": "2026-10-13",
+      "fields": [
+        "zip"
+      ],
+      "note": "ZIP from the US Census geocoder for 208 MANCHAUG RD, SUTTON, MA, 01590"
     }
   ],
   "review": {
@@ -146,6 +154,7 @@
       "title": "Camp Blanchard – YMCA of Central Massachusetts"
     },
     "warnings": [
+      "Filled zip 01590 from the US Census geocoder (208 MANCHAUG RD, SUTTON, MA, 01590)",
       "The page only shows the 2026 season, which has already ended (today is 2026-10-13). 2027 dates and rates have not been posted.",
       "2026 Session 1 (June 22-26) was canceled, so it is left out of the sessions. The FAQ still says camp starts June 22nd.",
       "The page gives two different bus pickup points: the Central Community Branch YMCA at 766 Main Street, Worcester, and 'Murray Ave, Worcester' in the rates section.",
@@ -172,8 +181,6 @@
         "quote": "Enroll Online for 2026 Camp"
       }
     ],
-    "errors": [
-      "missing required zip"
-    ]
+    "errors": []
   }
 }
