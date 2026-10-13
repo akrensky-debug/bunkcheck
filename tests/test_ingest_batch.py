@@ -162,3 +162,14 @@ async def test_one_bad_camp_does_not_stop_the_run(fake_tool, tmp_path, monkeypat
 def test_draft_with_a_state_but_no_town() -> None:
     d = to_draft(listing(city=None), PAGE, metro="Providence, RI", today=TODAY)
     assert "missing required city" in " ".join(d["review"]["errors"])
+
+
+async def test_a_page_with_no_camp_is_not_a_draft(fake_tool, tmp_path, monkeypatch):
+    """A dead link ("Program Not Found") or a directory page yields no name: report it, don't draft it."""
+    async def extract(source, today=None):
+        return ProposedListing(warnings=['The page says "Program Not Found."'])
+    monkeypatch.setattr(batch, "extract_listing", extract)
+    log = await batch.run(CANDIDATES[:1], metro="Providence, RI", drafts=tmp_path / "p", limit=None,
+                          concurrency=1, today=TODAY)
+    assert log[0]["outcome"] == "failed" and "Program Not Found" in log[0]["detail"]
+    assert not [f for f in (tmp_path / "p").glob("*.json") if not f.name.startswith("_")]

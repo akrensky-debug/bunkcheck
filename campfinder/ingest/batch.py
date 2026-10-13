@@ -62,6 +62,9 @@ async def draft_one(cand: dict[str, Any], *, metro: str, today: date, taken: set
         listing = await extract_listing(source, today=today)
     except Exception as e:  # noqa: BLE001 - one bad page must not stop the run
         return {"outcome": "failed", "detail": f"extract: {type(e).__name__}: {e}"}
+    if not listing.name:
+        why = (listing.warnings or ["the page names no camp"])[0]
+        return {"outcome": "failed", "detail": f"no camp on the page: {why[:200]}"}
     record = to_draft(listing, source, metro=metro, today=today, taken_slugs=taken)
     taken.add(record["slug"])
     return {"outcome": "drafted", "record": record}
