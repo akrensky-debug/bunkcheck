@@ -72,9 +72,11 @@ async def test_extract_uses_structured_output(monkeypatch: pytest.MonkeyPatch) -
     captured: dict = {}
 
     class FakeMessages:
-        async def parse(self, **kwargs):
+        async def create(self, **kwargs):
             captured.update(kwargs)
-            return SimpleNamespace(stop_reason="end_turn", parsed_output=ProposedListing(name="Riverbend Day Camp", city="Providence", state="RI"))
+            call = SimpleNamespace(type="tool_use", name="record_listing",
+                                   input={"name": "Riverbend Day Camp", "city": "Providence", "state": "RI"})
+            return SimpleNamespace(stop_reason="tool_use", content=[SimpleNamespace(type="text", text="Done."), call])
 
     fake_client = SimpleNamespace(messages=FakeMessages())
     source = fetch.Source(url="https://riverbend.example", kind="html", title="Riverbend", text="Ages 6 to 12",
@@ -82,7 +84,8 @@ async def test_extract_uses_structured_output(monkeypatch: pytest.MonkeyPatch) -
     listing = await extract.extract_listing(source, client=fake_client, model="claude-opus-5-5", today=date(2026, 10, 1))
     assert listing.name == "Riverbend Day Camp"
     assert listing.website_url == "https://riverbend.example"
-    assert captured["output_format"] is ProposedListing
+    assert isinstance(listing, ProposedListing)
+    assert captured["tools"] == [extract.TOOL] and captured["tool_choice"] == {"type": "auto"}
     assert captured["model"] == "claude-opus-5-5"
     assert "Today is 2026-10-01" in captured["messages"][0]["content"]
     assert "Register: https://riverbend.example/register" in captured["messages"][0]["content"]

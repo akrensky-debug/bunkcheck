@@ -5,6 +5,7 @@ from __future__ import annotations
 from datetime import date
 
 import anthropic
+from pydantic import ValidationError
 
 from campfinder.config import get_settings
 from campfinder.ingest.fetch import Source
@@ -42,6 +43,15 @@ def _build_prompt(source: Source, today: date) -> str:
     )
 
 
+# A plain tool carries the schema. Structured outputs compile the schema into a grammar and cap
+# optional and nullable fields (24 and 16); a listing has more of both. The answer is validated
+# with Pydantic below instead.
+TOOL = {
+    "name": "record_listing",
+    "description": "Record the camp listing read from the source. Call it exactly once.",
+    "input_schema": ProposedListing.model_json_schema(),
+}
+
 async def extract_listing(
     source: Source,
     *,
@@ -51,18 +61,23 @@ async def extract_listing(
 ) -> ProposedListing:
     client = client or anthropic.AsyncAnthropic()
     model = model or get_settings().ingest_model
-    response = await client.messages.parse(
+    response = await client.messages.create(
         model=model,
         max_tokens=16000,
-        system=SYSTEM_PROMPT,
+        system=SYSTEM_PROMPT + "\nRecord the listing by calling record_listing once.",
         messages=[{"role": "user", "content": _build_prompt(source, today or date.today())}],
-        output_format=ProposedListing,
+        tools=[TOOL],
+        tool_choice={"type": "auto"},
     )
     if response.stop_reason == "refusal":
         raise RuntimeError("The model declined to process this source")
-    listing = response.parsed_output
-    if listing is None:
-        raise RuntimeError("No structured output returned")
+    call = next((b for b in response.content if b.type == "tool_use" and b.name == TOOL["name"]), None)
+    if call is None:
+        raise RuntimeError(f"No listing returned (stop_reason {response.stop_reason})")
+    try:
+        listing = ProposedListing.model_validate(call.input)
+    except ValidationError as e:
+        raise RuntimeError(f"The listing didn't match the schema: {e.error_count()} errors") from e
     if listing.website_url is None and source.kind == "html":
         listing.website_url = source.url
     return listing

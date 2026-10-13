@@ -1,0 +1,93 @@
+{
+  "slug": "camp-finberg-norton",
+  "name": "Camp Finberg",
+  "operator_name": "Attleboro Norton YMCA",
+  "website_url": "https://www.attleboroymca.org/camps/camp-finberg",
+  "phone": "(508) 222-7292",
+  "street_address": "295 West Main Street",
+  "city": "Norton",
+  "state": "MA",
+  "zip": "02766",
+  "camp_type": "day",
+  "description_short": "YMCA summer day camp in Norton, MA, with camp hours 8:30am-4:00pm and optional before care (from 7:00am) and after care (until 5:30pm). Families can register for 2, 3, or 5 days per week; specialty camps are 5-day only.",
+  "financial_aid": true,
+  "extended_care": true,
+  "transportation": true,
+  "refund_policy_summary": "After May 31, a $25 change fee applies to any registration change, including changing weeks, cancelling, or switching camps. Change requests must be submitted at least two full weeks before the affected camp week. Deposits can be moved to other weeks. Downgrades and cancellations are handled manually by the Camp Registrar, not through the online account.",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Summer 2026 camp season (2, 3, or 5 days/week)",
+      "start_date": "2026-06-01",
+      "end_date": "2026-08-28",
+      "price": null,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.attleboroymca.org/camps/camp-finberg",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "description_short",
+        "extended_care",
+        "transportation",
+        "financial_aid",
+        "refund_policy_summary",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.attleboroymca.org/camps/camp-finberg",
+      "kind": "html",
+      "title": "Camp Finberg | Attleboro Norton YMCA18A612A8-B407-4667-98E0-6C45814FB6EB"
+    },
+    "warnings": [
+      "The page only shows the 2026 season (June 1 - August 28, 2026), which has already ended as of 2026-10-13. 2027 details have not been posted yet.",
+      "No prices, ages, or week-by-week sessions on this page. They are probably in the linked 2026 Camp Guide and policy PDFs, which were not provided.",
+      "Email addresses on the page are hidden by email protection, so none were recorded.",
+      "Transportation is inferred only from a linked document title, '2026 Camp Bus Schedule & Transportation'."
+    ],
+    "unknowns": [
+      "2027 season dates",
+      "Weekly prices and deposit amount",
+      "Age or grade range",
+      "Individual week/session breakdown",
+      "Registration opening date and registration URL",
+      "Activities offered",
+      "Camp email address (shown obfuscated on page)",
+      "Whether lunch/meals are included",
+      "Swim/waterfront details",
+      "ACA accreditation",
+      "Bus stop locations and transportation cost",
+      "Special needs accommodations",
+      "Availability"
+    ],
+    "low_confidence": [
+      {
+        "field": "transportation",
+        "confidence": 0.7,
+        "quote": "2026 Camp Bus Schedule & Transportation"
+      },
+      {
+        "field": "deposit_required",
+        "confidence": 0.65,
+        "quote": "Deposits are transferable to other weeks."
+      }
+    ],
+    "errors": []
+  }
+}
