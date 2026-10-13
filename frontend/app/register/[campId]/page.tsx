@@ -9,10 +9,11 @@ import {
   bookingStatus, confirmBooking, countdown, fmtWhen, getChecklist, getQuote, openingCalendarLink, previewPackage,
   sharePackage, watchRegistration, type BookingQuote, type PackagePreview, type RegisterChecklist,
 } from '@/lib/booking'
+import { Button, ChoiceChip, Container, Heading, Icon, Input, Meta, Notice, Section, Text, TextLink } from '@/components/ui'
 
 export default function RegisterPage() {
   return (
-    <Suspense fallback={<div className="max-w-3xl mx-auto px-4 py-16 text-gray-400">Loading…</div>}>
+    <Suspense fallback={<Container size="narrow" className="py-16"><Text tone="muted">Loading…</Text></Container>}>
       <Register />
     </Suspense>
   )
@@ -45,7 +46,7 @@ function Register() {
     return () => clearInterval(t)
   }, [])
 
-  if (!family || !list) return <div className="max-w-3xl mx-auto px-4 py-16 text-gray-400">{error || 'Loading…'}</div>
+  if (!family || !list) return <Container size="narrow" className="py-16"><Text tone="muted">{error || 'Loading…'}</Text></Container>
 
   const reg = list.registration
   const opensLater = list.opens_at && new Date(list.opens_at).getTime() > now
@@ -57,72 +58,71 @@ function Register() {
     window.history.replaceState(null, '', `/register/${campId}?registration=${r.id}`)
     await refresh(family, r.id)
   }
-
   return (
-    <div className="max-w-3xl mx-auto px-4 py-10 space-y-8">
-      <header className="space-y-2">
-        <p className="text-sm text-gray-500"><a href="/registrations" className="hover:text-brand-700">Registrations</a> ›</p>
-        <h1 className="text-2xl font-bold text-gray-900">Register for {list.camp_name}</h1>
-        <p className="text-gray-600">
-          {[kidName, list.session_name, list.price ? `$${list.price.toLocaleString()}` : null,
-            list.availability && list.availability !== 'unknown' ? list.availability : null].filter(Boolean).join(' · ')}
-        </p>
+    <Container size="narrow" className="space-y-14 py-12 sm:py-16">
+      <header className="space-y-3">
+        <TextLink href="/registrations" tone="muted" className="text-small"><Icon name="arrow-left" size={14} />Registrations</TextLink>
+        <Heading level="h1">Register for {list.camp_name}</Heading>
+        <Meta parts={[kidName, list.session_name, list.price ? `$${list.price.toLocaleString()}` : null,
+          list.availability && list.availability !== 'unknown' ? list.availability.charAt(0).toUpperCase() + list.availability.slice(1) : null]} />
       </header>
 
-      <section className="rounded-2xl border border-brand-100 bg-brand-50 p-5 space-y-3">
+      <section className="space-y-5">
         {reg && (reg.status === 'registered' || reg.status === 'waitlisted') ? (
-          <div>
-            <p className="text-xl font-bold text-green-700">{reg.status === 'registered' ? 'Registered ✓' : 'On the waitlist'}</p>
-            <p className="text-sm text-gray-700">{reg.next_step}{reg.confirmation_number ? ` Confirmation ${reg.confirmation_number}.` : ''}</p>
+          <div className="space-y-1">
+            <p className={`inline-flex items-center gap-2 font-display text-h2 ${reg.status === 'registered' ? 'text-checked' : 'text-warn'}`}>
+              {reg.status === 'registered' && <Icon name="check" size={20} />}
+              {reg.status === 'registered' ? 'Registered' : 'On the waitlist'}
+            </p>
+            <Text variant="small" tone="muted">{reg.next_step}{reg.confirmation_number ? ` Confirmation ${reg.confirmation_number}.` : ''}</Text>
           </div>
         ) : list.opens_at ? (
-          <div>
-            <p className="text-xl font-bold text-brand-800">{countdown(list.opens_at, now)}</p>
-            <p className="text-sm text-gray-700">
+          <div className="space-y-1">
+            <p className="font-display text-h2 text-ink">{countdown(list.opens_at, now)}</p>
+            <Text variant="small" tone="muted">
               {opensLater ? 'Registration opens' : 'Registration opened'} {fmtWhen(list.opens_at)}
               {list.opens_at_source === 'family' ? ' (the date you entered)' : ' (from the camp)'}
               {list.closes_at ? ` · closes ${fmtWhen(list.closes_at)}` : ''}
-            </p>
+            </Text>
           </div>
         ) : (
-          <p className="text-sm text-gray-700">We don't have this camp's registration date yet. Check its site, or add the date on your Registrations page.</p>
+          <Text tone="muted">We don&rsquo;t have this camp&rsquo;s registration date yet. Check its site, or add the date on your Registrations page.</Text>
         )}
-        <div className="flex flex-wrap gap-3">
+        <div className="flex flex-wrap items-center gap-3">
           {list.registration_url ? (
-            <a href={list.registration_url} target="_blank" rel="noopener noreferrer"
-              className="bg-brand-600 hover:bg-brand-700 text-white font-semibold px-5 py-2.5 rounded-xl">
-              Open the camp's registration ↗
-            </a>
-          ) : <span className="text-sm text-gray-500">No registration link on file; use the camp's website.</span>}
+            <Button href={list.registration_url} external icon="external" size="lg">
+              Open the camp&rsquo;s registration
+            </Button>
+          ) : <span className="text-small text-muted">No registration link on file; use the camp&rsquo;s website.</span>}
           {opensLater && list.opens_at && reg?.status !== 'registered' && reg?.status !== 'waitlisted' && (
-            <a href={openingCalendarLink(list.camp_name, list.opens_at, list.registration_url)} target="_blank" rel="noopener noreferrer"
-              className="border border-gray-200 bg-white text-gray-700 font-medium px-4 py-2.5 rounded-xl text-sm">
+            <Button href={openingCalendarLink(list.camp_name, list.opens_at, list.registration_url)} external variant="secondary" size="lg" leadingIcon="calendar">
               Add an alarm to Google Calendar
-            </a>
+            </Button>
           )}
           {!reg && (
-            <button onClick={watch} className="border border-gray-200 bg-white text-gray-700 font-medium px-4 py-2.5 rounded-xl text-sm">
+            <Button onClick={watch} variant="secondary" size="lg">
               Track this and remind me
-            </button>
+            </Button>
           )}
         </div>
-        <p className="text-xs text-gray-500">You register and pay on the camp's own site. BunkCheck never submits forms or payments for you.</p>
+        <p className="text-caption text-muted">You register and pay on the camp&rsquo;s own site. Bunkcheck never submits forms or payments for you.</p>
       </section>
 
-      <section className="space-y-2">
-        <h2 className="font-semibold text-gray-900">Checklist</h2>
-        <ol className="space-y-2">
+      <Section title="Checklist" divided>
+        <ol className="space-y-3">
           {list.steps.map(s => (
-            <li key={s.key} className="flex gap-3 text-sm">
-              <span className={`mt-0.5 h-5 w-5 shrink-0 rounded-full border flex items-center justify-center text-xs ${s.done ? 'bg-green-600 border-green-600 text-white' : 'border-gray-300 text-transparent'}`}>✓</span>
-              <span className="text-gray-700">
+            <li key={s.key} className="flex gap-3 text-small">
+              <span className={`mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-pill border ${s.done ? 'border-checked bg-checked text-accent-ink' : 'border-muted'}`}>
+                {s.done && <Icon name="check" size={12} label="Done" />}
+              </span>
+              <span className="text-ink">
                 {s.text}{' '}
-                {s.href && <a href={s.href} target={s.href.startsWith('http') ? '_blank' : undefined} rel="noopener noreferrer" className="text-brand-700 font-medium">Open</a>}
+                {s.href && <TextLink href={s.href} target={s.href.startsWith('http') ? '_blank' : undefined} rel="noopener noreferrer">Open</TextLink>}
               </span>
             </li>
           ))}
         </ol>
-      </section>
+      </Section>
 
       <FormAnswers familyId={family.id} list={list} signedIn={!!session} kidName={kidName} />
 
@@ -132,7 +132,7 @@ function Register() {
       )}
 
       {session && reg && <SandboxBooking familyId={family.id} registrationId={reg.id} onBooked={() => refresh(family, reg.id)} />}
-    </div>
+    </Container>
   )
 }
 
@@ -171,47 +171,47 @@ function FormAnswers({ familyId, list, signedIn, kidName }: {
   }
 
   return (
-    <section className="space-y-3">
-      <div className="flex flex-wrap items-baseline justify-between gap-2">
-        <h2 className="font-semibold text-gray-900">What the form asks</h2>
-        {signedIn && list.kit_available && (
-          kit
-            ? <button onClick={() => setKit(null)} className="text-sm text-gray-500">Hide my answers</button>
-            : <button onClick={show} className="text-sm font-medium text-brand-700">Show my answers to copy</button>
-        )}
-      </div>
-      <p className="text-sm text-gray-500">
+    <Section
+      title="What the form asks"
+      divided
+      action={signedIn && list.kit_available && (
+        kit
+          ? <Button variant="quiet" onClick={() => setKit(null)}>Hide my answers</Button>
+          : <Button variant="link" onClick={show}>Show my answers to copy</Button>
+      )}
+    >
+      <p className="mb-4 max-w-measure text-small text-muted">
         {list.form.typical
           ? "We haven't mapped this camp's form yet, so this is what most camp forms ask."
           : `From this camp's form${list.form.platform ? ` (${list.form.platform})` : ''}.`}
         {!list.kit_available && ' Sign in and fill in your info kit to have answers ready.'}
       </p>
-      {error && <p className="text-sm text-red-600">{error}</p>}
-      <ul className="divide-y divide-gray-100 border border-gray-200 rounded-2xl bg-white">
+      {error && <p className="text-small text-error">{error}</p>}
+      <ul className="divide-y divide-line border-y border-line">
         {list.form.fields.map(f => {
           const answer = kit && f.kit_field ? answerFor(kit, f.kit_field, kidName) : null
           return (
-            <li key={f.question} className="px-4 py-2.5 text-sm flex flex-wrap items-center justify-between gap-2">
+            <li key={f.question} className="flex flex-wrap items-center justify-between gap-2 py-3 text-small">
               <div className="min-w-0">
-                <p className="text-gray-800">{f.question}{!f.required && <span className="text-gray-400"> (optional)</span>}</p>
-                {answer && <p className="text-gray-600 break-words">{answer}</p>}
+                <p className="text-ink">{f.question}{!f.required && <span className="text-muted"> (optional)</span>}</p>
+                {answer && <p className="text-muted break-words">{answer}</p>}
               </div>
               <span className="shrink-0">
                 {answer ? (
-                  <button onClick={() => copy(f.question, answer)} className="text-brand-700 font-medium">{copied === f.question ? 'Copied' : 'Copy'}</button>
+                  <Button variant="link" onClick={() => copy(f.question, answer)}>{copied === f.question ? 'Copied' : 'Copy'}</Button>
                 ) : f.kit_field === null ? (
-                  <span className="text-gray-400">On the camp's site</span>
+                  <span className="text-muted">On the camp's site</span>
                 ) : f.ready === true ? (
-                  <span className="text-green-700">In your kit</span>
+                  <span className="text-checked">In your kit</span>
                 ) : f.ready === false ? (
-                  <a href="/kit" className="text-amber-700">Missing{f.missing_for.length ? ` for ${f.missing_for.join(', ')}` : ''}: add it</a>
+                  <a href="/kit" className="font-semibold text-warn underline underline-offset-4">Missing{f.missing_for.length ? ` for ${f.missing_for.join(', ')}` : ''}: add it</a>
                 ) : null}
               </span>
             </li>
           )
         })}
       </ul>
-    </section>
+    </Section>
   )
 }
 
@@ -250,47 +250,45 @@ function PackagePanel({ familyId, campId, kidName, registrationId, sharedCount, 
   const toggle = (list: string[], set: (v: string[]) => void, v: string) => set(list.includes(v) ? list.filter(x => x !== v) : [...list, v])
 
   return (
-    <section className="space-y-3">
-      <h2 className="font-semibold text-gray-900">Info kit package for this camp</h2>
-      <p className="text-sm text-gray-600">
+    <Section title="Info kit package for this camp" divided className="space-y-4">
+      <p className="max-w-measure text-small text-muted">
         A private link with only what this camp's form asks for. Send it to the camp if they accept it, or keep it to
         copy from. It expires in 30 days, you can withdraw it on your Info kit page, and you'll see when it's opened.
         {sharedCount > 0 && ` You've already shared ${sharedCount} with this camp.`}
       </p>
       {!preview && !link && (
-        <button onClick={prepare} className="border border-brand-500 text-brand-700 font-semibold px-4 py-2 rounded-xl text-sm">Prepare a package to review</button>
+        <Button variant="secondary" onClick={prepare}>Prepare a package to review</Button>
       )}
       {preview && !link && (
-        <div className="border border-gray-200 rounded-2xl p-4 space-y-3 text-sm bg-white">
-          <p className="text-gray-700">
+        <div className="space-y-4 border-y border-line py-5 text-small">
+          <p className="text-ink">
             For <strong>{preview.recipient}</strong>{preview.children.length ? `, about ${preview.children.join(', ')}` : ''}. Untick anything you'd rather not send.
           </p>
           <FieldChecks title="Household" fields={preview.household_fields} labels={preview.labels} chosen={household} onToggle={v => toggle(household, setHousehold, v)} />
           {preview.children.length > 0 && (
             <FieldChecks title={`About ${preview.children.join(', ')}`} fields={preview.child_fields} labels={preview.labels} chosen={childFields} onToggle={v => toggle(childFields, setChildFields, v)} />
           )}
-          {preview.missing.length > 0 && <p className="text-amber-700">Your kit doesn't have: {preview.missing.join(', ')}. <a href="/kit" className="underline">Add them</a> first, or answer on the form.</p>}
-          {preview.not_in_kit.length > 0 && <p className="text-gray-500">Answer on the camp's site yourself: {preview.not_in_kit.join(', ')}.</p>}
-          <div className="flex items-center gap-3">
-            <button onClick={share} disabled={!household.length && !childFields.length}
-              className="bg-brand-600 hover:bg-brand-700 disabled:opacity-40 text-white font-semibold px-4 py-2 rounded-xl">
+          {preview.missing.length > 0 && <Notice tone="warn">Your kit doesn't have: {preview.missing.join(', ')}. <a href="/kit" className="underline">Add them</a> first, or answer on the form.</Notice>}
+          {preview.not_in_kit.length > 0 && <p className="text-muted">Answer on the camp's site yourself: {preview.not_in_kit.join(', ')}.</p>}
+          <div className="flex flex-wrap items-center gap-4">
+            <Button onClick={share} disabled={!household.length && !childFields.length}>
               Share {household.length + (preview.children.length ? childFields.length : 0)} fields with {preview.recipient}
-            </button>
-            <button onClick={() => setPreview(null)} className="text-gray-500">Cancel</button>
+            </Button>
+            <Button variant="quiet" onClick={() => setPreview(null)}>Cancel</Button>
           </div>
         </div>
       )}
       {link && (
-        <div className="bg-brand-50 border border-brand-100 rounded-xl p-3 text-sm space-y-1">
-          <p className="text-brand-700 font-medium">Copy this link now; it's shown only once.</p>
-          <div className="flex gap-2">
-            <input readOnly value={link} className="w-full border border-gray-200 rounded-lg px-3 py-2 bg-white" onFocus={e => e.target.select()} />
-            <button onClick={() => navigator.clipboard?.writeText(link)} className="text-brand-700 font-medium px-2">Copy</button>
+        <Notice tone="warn" className="space-y-2">
+          <p className="font-semibold">Copy this link now; it&rsquo;s shown only once.</p>
+          <div className="flex items-center gap-2">
+            <Input fieldSize="sm" readOnly aria-label="Package link" value={link} onFocus={e => e.target.select()} />
+            <Button variant="secondary" size="sm" onClick={() => navigator.clipboard?.writeText(link)}>Copy</Button>
           </div>
-        </div>
+        </Notice>
       )}
-      {error && <p className="text-sm text-red-600">{error}</p>}
-    </section>
+      {error && <p className="text-small text-error">{error}</p>}
+    </Section>
   )
 }
 
@@ -300,13 +298,10 @@ function FieldChecks({ title, fields, labels, chosen, onToggle }: {
   if (!fields.length) return null
   return (
     <fieldset>
-      <legend className="font-medium text-gray-700 mb-1.5">{title}</legend>
+      <legend className="mb-2 font-semibold text-ink">{title}</legend>
       <div className="flex flex-wrap gap-2">
         {fields.map(f => (
-          <label key={f} className={`border rounded-full px-3 py-1 cursor-pointer ${chosen.includes(f) ? 'bg-brand-50 border-brand-500 text-brand-700' : 'border-gray-200 text-gray-400 line-through'}`}>
-            <input type="checkbox" className="sr-only" checked={chosen.includes(f)} onChange={() => onToggle(f)} />
-            {labels[f] ?? f}
-          </label>
+          <ChoiceChip key={f} strikeWhenOff checked={chosen.includes(f)} onChange={() => onToggle(f)}>{labels[f] ?? f}</ChoiceChip>
         ))}
       </div>
     </fieldset>
@@ -340,34 +335,33 @@ function SandboxBooking({ familyId, registrationId, onBooked }: { familyId: stri
   }
 
   return (
-    <section className="space-y-3 border-2 border-dashed border-amber-300 rounded-2xl p-4">
-      <p className="text-xs font-bold uppercase tracking-wide text-amber-700">Sandbox prototype · test bookings only</p>
+    <section className="space-y-4 rounded-lg border border-dashed border-highlight p-5">
+      <p className="text-small font-semibold text-warn">Sandbox prototype: test bookings only</p>
       {!quote && !result && (
-        <button onClick={ask} className="border border-gray-300 bg-white font-semibold px-4 py-2 rounded-xl text-sm">Get a quote through BunkCheck</button>
+        <Button variant="secondary" onClick={ask}>Get a quote through Bunkcheck</Button>
       )}
       {quote && (
-        <div className="space-y-3 text-sm">
-          <dl className="grid grid-cols-[auto_1fr] gap-x-4 gap-y-1">
-            <dt className="text-gray-500">Seller</dt><dd>{quote.seller} (you're buying from the camp)</dd>
-            <dt className="text-gray-500">For</dt><dd>{quote.child_name} · {quote.item}</dd>
-            <dt className="text-gray-500">Price</dt><dd className="font-semibold">${quote.price.toLocaleString()} {quote.currency.toUpperCase()}{quote.availability === 'waitlist' ? ' (waitlist: nothing due unless a spot opens)' : ''}</dd>
-            <dt className="text-gray-500">Held until</dt><dd>{fmtWhen(quote.expires_at)}</dd>
-            <dt className="text-gray-500">Payment</dt><dd>Paid to the camp on its own system after booking</dd>
-            <dt className="text-gray-500">We'll send</dt><dd>{quote.fields_to_send.join(', ')}</dd>
+        <div className="space-y-3 text-small">
+          <dl className="grid grid-cols-3 gap-x-4 gap-y-1 [&_dd]:col-span-2">
+            <dt className="text-muted">Seller</dt><dd>{quote.seller} (you're buying from the camp)</dd>
+            <dt className="text-muted">For</dt><dd>{quote.child_name} · {quote.item}</dd>
+            <dt className="text-muted">Price</dt><dd className="font-semibold">${quote.price.toLocaleString()} {quote.currency.toUpperCase()}{quote.availability === 'waitlist' ? ' (waitlist: nothing due unless a spot opens)' : ''}</dd>
+            <dt className="text-muted">Held until</dt><dd>{fmtWhen(quote.expires_at)}</dd>
+            <dt className="text-muted">Payment</dt><dd>Paid to the camp on its own system after booking</dd>
+            <dt className="text-muted">We'll send</dt><dd>{quote.fields_to_send.join(', ')}</dd>
           </dl>
-          {quote.missing.length > 0 && <p className="text-amber-700">Add to your info kit first: {quote.missing.join(', ')}.</p>}
-          <label className="flex gap-2 items-start">
-            <input type="checkbox" className="mt-1" checked={readTerms} onChange={e => setReadTerms(e.target.checked)} />
+          {quote.missing.length > 0 && <Notice tone="warn">Add to your info kit first: {quote.missing.join(', ')}.</Notice>}
+          <label className="flex items-start gap-2.5">
+            <input type="checkbox" className="mt-0.5 h-4 w-4 accent-ink" checked={readTerms} onChange={e => setReadTerms(e.target.checked)} />
             <span>I've read the camp's <a href={quote.terms_url ?? '#'} target="_blank" rel="noopener noreferrer" className="underline">terms</a>. Waivers and medical forms are still mine to sign with the camp.</span>
           </label>
-          <button onClick={book} disabled={!readTerms || quote.missing.length > 0}
-            className="bg-brand-600 hover:bg-brand-700 disabled:opacity-40 text-white font-semibold px-4 py-2 rounded-xl">
+          <Button onClick={book} disabled={!readTerms || quote.missing.length > 0}>
             Confirm booking for ${quote.price.toLocaleString()}
-          </button>
+          </Button>
         </div>
       )}
-      {result && <p className="text-sm text-green-700">{result}</p>}
-      {error && <p className="text-sm text-red-600">{error}</p>}
+      {result && <p className="text-small text-checked">{result}</p>}
+      {error && <p className="text-small text-error">{error}</p>}
     </section>
   )
 }

@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import { useParams } from 'next/navigation'
+import { Button, Container, Heading, Notice, Text } from '@/components/ui'
 
 const API = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'
 
@@ -66,7 +67,7 @@ export default function ConfirmListingPage() {
   }
 
   return (
-    <div className="max-w-2xl mx-auto px-4 py-12 space-y-6">
+    <Container size="narrow" className="space-y-10 py-16 sm:py-24">
       {done === 'confirmed' && (
         <Message title="Thank you. Your listing is confirmed.">
           Parents now see &ldquo;confirmed by the camp&rdquo; with today&rsquo;s date. If anything changes, reply to any
@@ -74,7 +75,7 @@ export default function ConfirmListingPage() {
         </Message>
       )}
       {done === 'removed' && (
-        <Message title={`${view?.camp_name ?? 'Your camp'} is off BunkCheck.`}>
+        <Message title={`${view?.camp_name ?? 'Your camp'} is off Bunkcheck.`}>
           Parents won&rsquo;t see it in search or on our pages. If that was a mistake, reply to the email and a person
           will put it back.
         </Message>
@@ -91,34 +92,34 @@ export default function ConfirmListingPage() {
 
       {!done && view && (
         <>
-          <header>
-            <p className="text-sm text-gray-500">Your listing on BunkCheck</p>
-            <h1 className="text-2xl font-bold text-gray-900">{view.camp_name}</h1>
-            <p className="text-gray-600 mt-1">
+          <header className="space-y-3">
+            <Text tone="muted" variant="small">Your listing on Bunkcheck</Text>
+            <Heading level="h1">{view.camp_name}</Heading>
+            <Text tone="muted">
               This is what parents see. Is it right? No login, no fee to be listed, nothing to install.
-            </p>
+            </Text>
           </header>
 
           {view.changed_since_sent && (
-            <p className="text-sm bg-amber-50 border border-amber-200 text-amber-800 rounded-xl px-4 py-3">
+            <Notice tone="warn">
               We changed this listing after emailing you, so this link can&rsquo;t confirm it. Reply to the email and
               we&rsquo;ll send the current version.
-            </p>
+            </Notice>
           )}
 
-          <section className="border border-gray-200 rounded-2xl p-5">
-            <dl className="divide-y divide-gray-100">
+          <section>
+            <dl className="divide-y divide-line border-y border-line">
               {Object.entries(view.snapshot.camp).filter(([, v]) => v !== null && v !== '').map(([k, v]) => (
-                <div key={k} className="grid grid-cols-3 gap-2 py-2 text-sm">
-                  <dt className="text-gray-500">{LABELS[k] ?? k}</dt>
-                  <dd className="col-span-2 text-gray-900 break-words">{fmt(k, v as string | number)}</dd>
+                <div key={k} className="grid grid-cols-3 gap-2 py-3 text-small">
+                  <dt className="text-muted">{LABELS[k] ?? k}</dt>
+                  <dd className="col-span-2 text-ink break-words">{fmt(k, v as string | number)}</dd>
                 </div>
               ))}
             </dl>
             {view.snapshot.sessions.length > 0 && (
-              <div className="mt-4">
-                <p className="text-sm font-medium text-gray-700 mb-2">Sessions</p>
-                <ul className="text-sm text-gray-700 space-y-1">
+              <div className="mt-8">
+                <Heading level="h3" as="h2" className="mb-3">Sessions</Heading>
+                <ul className="text-small text-ink space-y-1">
                   {view.snapshot.sessions.map((s, i) => (
                     <li key={i}>
                       {s.name ? `${s.name} · ` : ''}{fmtDate(s.start_date)} – {fmtDate(s.end_date)}
@@ -132,41 +133,40 @@ export default function ConfirmListingPage() {
 
           {!view.changed_since_sent && (
             <div className="space-y-3">
-              <button onClick={() => answer('confirm')} disabled={busy}
-                className="w-full bg-brand-600 hover:bg-brand-700 text-white font-semibold rounded-xl py-3 disabled:opacity-50">
+              <Button onClick={() => answer('confirm')} disabled={busy} size="lg" block>
                 {busy ? 'Saving…' : 'Looks right'}
-              </button>
-              <p className="text-sm text-gray-600 text-center">
+              </Button>
+              <p className="text-center text-small text-muted">
                 Something wrong? Reply to the email with the fix and a person will change it.
               </p>
             </div>
           )}
 
-          <div className="pt-4 border-t border-gray-100 text-sm">
+          <div className="border-t border-line pt-6 text-small">
             {confirmRemove ? (
-              <div className="flex flex-wrap items-center gap-3">
-                <span className="text-gray-700">Take {view.camp_name} off BunkCheck?</span>
-                <button onClick={() => answer('remove')} disabled={busy} className="text-red-600 font-medium">Yes, take it down</button>
-                <button onClick={() => setConfirmRemove(false)} className="text-gray-500">Keep it</button>
+              <div className="flex flex-wrap items-center gap-4">
+                <span className="text-ink">Take {view.camp_name} off Bunkcheck?</span>
+                <Button variant="danger" onClick={() => answer('remove')} disabled={busy}>Yes, take it down</Button>
+                <Button variant="quiet" onClick={() => setConfirmRemove(false)}>Keep it</Button>
               </div>
             ) : (
-              <button onClick={() => setConfirmRemove(true)} className="text-gray-500 hover:text-red-600">
+              <Button variant="quiet" onClick={() => setConfirmRemove(true)}>
                 I&rsquo;d rather not be listed
-              </button>
+              </Button>
             )}
           </div>
-          {error && <p className="text-sm text-red-600">{error}</p>}
+          {error && <p className="text-small text-error">{error}</p>}
         </>
       )}
-    </div>
+    </Container>
   )
 }
 
 function Message({ title, children }: { title: string; children?: React.ReactNode }) {
   return (
-    <div className="space-y-2">
-      <h1 className="text-2xl font-bold text-gray-900">{title}</h1>
-      {children && <p className="text-gray-600">{children}</p>}
+    <div className="space-y-3">
+      <Heading level="h1">{title}</Heading>
+      {children && <Text tone="muted">{children}</Text>}
     </div>
   )
 }

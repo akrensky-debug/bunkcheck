@@ -5,8 +5,8 @@ Read this first, every session. Updated 4 October 2026 (order of work); 3 Octobe
 
 ## Name
 
-The product is **BunkCheck** (www.bunkcheck.ai, decided 13 October 2026). Everything a parent, a camp
-or an assistant sees says BunkCheck. The repository, the `campfinder` package, table names and
+The product is **Bunkcheck** (lowercase c, decided 13 October 2026; www.bunkcheck.ai). Everything a
+parent, a camp or an assistant sees says Bunkcheck. The repository, the `campfinder` package, table names and
 older docs keep the working name CampFinder; don't rename them.
 
 ## Branches
@@ -53,6 +53,15 @@ shared test fake, `leads` and the Pro columns dropped (migration 0013).
 - Only `campfinder/routers/` and `main.py` may import a router; `tests/test_camp_services.py`
   fails otherwise.
 
+## UI
+
+- Pages are built from `frontend/components/ui` (Button, Heading, Text, Section, List, Field,
+  SearchBar, Composer, TrustMark…). Tokens live in `tailwind.config.ts` and `app/globals.css`;
+  use role names (`text-ink`, `bg-surface`, `border-line`), never raw colors or arbitrary values.
+- `npm run check:ui` (also in CI) fails on hex colors, arbitrary values, emoji and uppercase
+  labels outside `components/ui`. Every primitive renders at `/ui`; rules in
+  `components/ui/README.md`. `/kit` is the family info kit, not the UI kit.
+
 ## Schema
 
 - Change the database only with a new `migrations/NNNN_*.sql`; never edit an applied one and
@@ -80,7 +89,7 @@ shared test fake, `leads` and the Pro columns dropped (migration 0013).
   16 with PostGIS (`postgresql-16`, `postgresql-16-postgis-3`), or use `TEST_DATABASE_URL`.
   Household, agent, booking and reminder tests use the one set of in-memory fakes in
   `tests/fakes.py`; give a new table its defaults there.
-- Frontend: `cd frontend && npx tsc --noEmit && npm run build`.
+- Frontend: `cd frontend && npx tsc --noEmit && npm run check:ui && npm run build`.
 - CI (`.github/workflows/test.yml`) runs both on every PR.
 - The listing tool eval: `scripts/run_ingest_eval.sh` (reads `CAMPFINDER_ANTHROPIC_API_KEY`).
   Check the key is set without printing it. The fetcher takes a refusal (401, 403, 429) as the

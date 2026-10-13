@@ -2,8 +2,70 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+/* Bunkcheck: Figtree for headings (next/font, --font-display), Atkinson Hyperlegible Next
+   for body and UI (Google Fonts <link> in layout.tsx).
 
-body {
-  font-family: 'Inter', system-ui, sans-serif;
+   Design tokens. Space-separated RGB channels so Tailwind opacity modifiers work
+   (bg-ink/5). tailwind.config.ts maps role names onto these; nothing else should hold a
+   raw color. A dark theme later redefines these under a selector or media query. */
+
+@layer base {
+  :root {
+    --bg: 247 245 240;            /* #F7F5F0 paper */
+    --surface: 255 255 255;       /* #FFFFFF */
+    --ink: 20 33 61;              /* #14213D night navy */
+    --muted: 86 94 112;           /* #565E70 */
+    --line: 226 222 212;          /* #E2DED4 */
+    --tint: 239 236 228;          /* #EFECE4 hover wash */
+    --accent: 20 33 61;           /* #14213D */
+    --accent-hover: 15 26 48;     /* #0F1A30 */
+    --accent-ink: 255 255 255;
+    --highlight: 245 217 107;     /* #F5D96B flashlight */
+    --highlight-soft: 251 240 196;/* #FBF0C4 */
+    --checked: 46 107 63;         /* #2E6B3F */
+    --checked-soft: 227 239 229;  /* #E3EFE5 */
+    --warn: 122 90 0;             /* #7A5A00, AA on highlight-soft */
+    --error: 180 35 24;           /* #B42318 */
+    --error-soft: 254 243 242;    /* #FEF3F2 */
+    --focus: 20 33 61;
+    --series-1: 20 33 61;         /* kid colors on the family week */
+    --series-2: 46 107 63;
+    --series-3: 159 58 85;
+    --series-4: 122 90 0;
+    --series-5: 91 75 154;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-bg text-ink font-sans text-body antialiased;
+    font-feature-settings: 'kern';
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-display;
+  }
+
+  ::selection {
+    background: rgb(var(--highlight));
+    color: rgb(var(--ink));
+  }
+
+  :focus-visible {
+    outline: 2px solid rgb(var(--focus));
+    outline-offset: 2px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

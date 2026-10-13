@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react'
 import { useParams, useRouter } from 'next/navigation'
+import { Button, Container, Heading, Input, Text, TextLink } from '@/components/ui'
 import { sendSignInLink, signOut, supabase, useSession } from '@/lib/auth'
 import { rememberFamily } from '@/lib/agent'
 import { ROLE_LABELS, acceptInvite, previewInvite, type InvitePreview } from '@/lib/household'
@@ -52,69 +53,68 @@ export default function JoinPage() {
   }
 
   return (
-    <div className="max-w-md mx-auto px-4 py-16 space-y-5">
+    <Container size="narrow" className="py-20 sm:py-28"><div className="max-w-md space-y-6">
       {!invite ? (
         <>
-          <h1 className="text-2xl font-bold text-gray-900">Join a family</h1>
-          <p className="text-gray-600">{error || 'Checking your invite…'}</p>
+          <Heading level="h1">Join a family</Heading>
+          <Text tone="muted">{error || 'Checking your invite…'}</Text>
           {error && (
-            <p className="text-sm text-gray-500">
-              Already joined? <a href="/household" className="text-brand-700 font-medium hover:underline">Go to your household →</a>
+            <p className="text-small text-muted">
+              Already joined? <TextLink href="/household" arrow>Go to your household</TextLink>
             </p>
           )}
         </>
       ) : (
         <>
-          <div>
-            <p className="text-sm text-gray-500 mb-1">Hi {invite.display_name},</p>
-            <h1 className="text-2xl font-bold text-gray-900">{invite.invited_by} invited you to help with their family's summer plan</h1>
+          <div className="space-y-3">
+            <Text tone="muted" variant="small">Hi {invite.display_name},</Text>
+            <Heading level="h1">{invite.invited_by} invited you to help with their family&rsquo;s summer plan</Heading>
           </div>
-          <div className="bg-gray-50 rounded-2xl p-4 text-sm text-gray-700 space-y-1">
-            <p><span className="font-medium">{ROLE_LABELS[invite.role]}:</span> you'll see {invite.role_help}.</p>
-            <p className="text-gray-500">You'll get a short email before each job, and can turn that off any time.</p>
+          <div className="space-y-1 border-y border-line py-4 text-small text-ink">
+            <p><span className="font-semibold">{ROLE_LABELS[invite.role]}:</span> you&rsquo;ll see {invite.role_help}.</p>
+            <p className="text-muted">You&rsquo;ll get a short email before each job, and can turn that off any time.</p>
           </div>
 
           {invite.expired ? (
-            <p className="text-amber-700">This invite has expired. Ask {invite.invited_by} to send a new one.</p>
+            <p className="text-error">This invite has expired. Ask {invite.invited_by} to send a new one.</p>
           ) : !supabase() ? (
-            <p className="text-gray-600">Sign-in isn't set up on this site yet.</p>
+            <p className="text-muted">Sign-in isn't set up on this site yet.</p>
           ) : session ? (
             <div className="space-y-3">
-              <p className="text-sm text-gray-600">Signed in as {session.user.email}.</p>
-              <button onClick={accept} disabled={busy} className="w-full bg-brand-600 hover:bg-brand-700 text-white font-semibold rounded-xl py-3 disabled:opacity-50">
+              <p className="text-small text-muted">Signed in as {session.user.email}.</p>
+              <Button onClick={accept} disabled={busy} size="lg" block>
                 {busy ? 'Joining…' : 'Accept and join'}
-              </button>
+              </Button>
               {error && (
-                <div className="text-sm text-red-600 space-y-1">
+                <div className="text-small text-error space-y-1">
                   <p>{error}</p>
-                  <button onClick={() => signOut().then(() => { tried.current = true; setError('') })} className="text-gray-600 underline">
+                  <Button variant="link" onClick={() => signOut().then(() => { tried.current = true; setError('') })}>
                     Use a different email
-                  </button>
+                  </Button>
                 </div>
               )}
             </div>
           ) : sent ? (
             <div>
-              <p className="text-gray-800 font-medium mb-1">Check your email.</p>
-              <p className="text-gray-600 text-sm">We sent a sign-in link to {email}. Open it to finish joining.</p>
+              <Heading level="h3" as="p" className="mb-1">Check your email.</Heading>
+              <p className="text-muted text-small">We sent a sign-in link to {email}. Open it to finish joining.</p>
             </div>
           ) : (
             <form onSubmit={sendLink} className="space-y-3">
-              <p className="text-sm text-gray-600">
+              <p className="text-small text-muted">
                 Sign in with the address the invite went to ({invite.email_hint}). No password; we'll email you a link.
               </p>
-              <input
-                type="email" required value={email} onChange={e => setEmail(e.target.value)} placeholder="you@example.com"
-                className="w-full border border-gray-200 rounded-xl px-4 py-3 outline-none focus:border-brand-400"
+              <Input
+                type="email" required aria-label="Email" autoComplete="email" value={email} onChange={e => setEmail(e.target.value)} placeholder="you@example.com"
               />
-              <button disabled={busy} className="w-full bg-brand-600 hover:bg-brand-700 text-white font-semibold rounded-xl py-3 disabled:opacity-50">
+              <Button type="submit" disabled={busy} size="lg" block>
                 {busy ? 'Sending…' : 'Email me a sign-in link'}
-              </button>
-              {error && <p className="text-sm text-red-600">{error}</p>}
+              </Button>
+              {error && <p className="text-small text-error">{error}</p>}
             </form>
           )}
         </>
       )}
-    </div>
+    </div></Container>
   )
 }

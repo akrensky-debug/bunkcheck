@@ -1,5 +1,6 @@
 import CampCard from '@/components/CampCard'
 import TrustBadge from '@/components/TrustBadge'
+import { List, ListRow, Meta } from '@/components/ui'
 import { BookingBlock } from '@/components/booking/BookingBlocks'
 import { AssignProposal, HouseholdCard, InviteProposal, MessageDraft, TasksCard } from '@/components/household/HouseholdBlocks'
 import type { Comparison, Coverage, CoverageStatus, FamilyEvent, Plan, UIData } from '@/lib/agent'
@@ -25,12 +26,12 @@ export function AgentText({ text }: { text: string }) {
         : <span key={i}>{part}</span>,
     )
   return (
-    <div className="space-y-3 leading-relaxed">
+    <div className="max-w-measure space-y-4 text-body">
       {blocks.map((block, i) => {
         const lines = block.split('\n')
         if (lines.every(l => /^\s*([-*•]|\d+\.)\s/.test(l))) {
           return (
-            <ul key={i} className="list-disc pl-5 space-y-1">
+            <ul key={i} className="list-disc space-y-1 pl-5">
               {lines.map((l, j) => <li key={j}>{inline(l.replace(/^\s*([-*•]|\d+\.)\s/, ''))}</li>)}
             </ul>
           )
@@ -44,10 +45,12 @@ export function AgentText({ text }: { text: string }) {
 function CampResults({ camps }: { camps: Extract<UIData, { type: 'camps' }>['camps'] }) {
   if (!camps.length) return null
   return (
-    <div className="space-y-3">
-      {camps.slice(0, SHOWN_CAMPS).map((c, i) => <CampCard key={c.id} camp={c} rank={i + 1} />)}
+    <div>
+      <List>
+        {camps.slice(0, SHOWN_CAMPS).map((c, i) => <CampCard key={c.id} camp={c} rank={i + 1} />)}
+      </List>
       {camps.length > SHOWN_CAMPS && (
-        <p className="text-xs text-gray-400 pl-1">+{camps.length - SHOWN_CAMPS} more. Ask to see them.</p>
+        <p className="mt-2 text-small text-muted">{camps.length - SHOWN_CAMPS} more. Ask to see them.</p>
       )}
     </div>
   )
@@ -55,24 +58,19 @@ function CampResults({ camps }: { camps: Extract<UIData, { type: 'camps' }>['cam
 
 function CampDetailCard({ camp }: { camp: Extract<UIData, { type: 'camp_detail' }>['camp'] }) {
   return (
-    <a href={`/camps/${camp.id}`} className="block bg-white rounded-2xl border border-gray-200 p-4 hover:border-brand-300 transition-colors">
-      <div className="flex justify-between gap-3">
-        <div className="min-w-0">
-          <p className="font-semibold text-gray-900 truncate">{camp.name}</p>
-          <p className="text-sm text-gray-500">{camp.city}, {camp.state}</p>
-        </div>
-        <TrustBadge status={camp.verification_status} aca={camp.aca_accredited} />
-      </div>
-      {camp.sessions && camp.sessions.length > 0 && (
-        <div className="mt-3 flex flex-wrap gap-1.5">
-          {camp.sessions.slice(0, 8).map(s => (
-            <span key={s.id} className="text-xs bg-gray-100 text-gray-600 px-2 py-0.5 rounded-full">
-              {fmtRange(s.start_date, s.end_date)}{s.price ? ` · $${Math.round(s.price)}` : ''}
-            </span>
-          ))}
-        </div>
-      )}
-    </a>
+    <List>
+      <ListRow href={`/camps/${camp.id}`}>
+        <h3 className="font-display text-h3 text-ink">{camp.name}</h3>
+        <Meta className="mt-1" parts={[`${camp.city}, ${camp.state}`]} />
+        {camp.sessions && camp.sessions.length > 0 && (
+          <Meta
+            className="mt-1"
+            parts={camp.sessions.slice(0, 8).map(s => `${fmtRange(s.start_date, s.end_date)}${s.price ? ` ($${Math.round(s.price)})` : ''}`)}
+          />
+        )}
+        <div className="mt-3"><TrustBadge status={camp.verification_status} aca={camp.aca_accredited} /></div>
+      </ListRow>
+    </List>
   )
 }
 
@@ -87,31 +85,31 @@ function ComparisonView({ data }: { data: Comparison }) {
     ['Meals', c => (c.meals_included ? 'Yes' : 'No')],
   ]
   return (
-    <div className="bg-white rounded-2xl border border-gray-200 overflow-hidden">
+    <div>
       <div className="overflow-x-auto">
-        <table className="w-full text-sm">
-          <thead className="bg-gray-50">
-            <tr>
-              <th className="text-left p-3 font-medium text-gray-500" />
+        <table className="w-full text-small">
+          <thead>
+            <tr className="border-b border-line">
+              <th className="py-3 pr-4 text-left font-normal" />
               {data.camps.map(c => (
-                <th key={c.camp_id} className="text-left p-3 font-semibold text-gray-900 min-w-[140px]">
-                  <a href={`/camps/${c.camp_id}`} className="hover:text-brand-700">{c.name}</a>
+                <th key={c.camp_id} className="min-w-36 py-3 pr-4 text-left align-bottom font-display text-ink">
+                  <a href={`/camps/${c.camp_id}`} className="hover:underline underline-offset-4">{c.name}</a>
                 </th>
               ))}
             </tr>
           </thead>
-          <tbody>
+          <tbody className="divide-y divide-line">
             {rows.map(([label, get]) => (
-              <tr key={label} className="border-t border-gray-100">
-                <td className="p-3 text-gray-500 whitespace-nowrap">{label}</td>
-                {data.camps.map(c => <td key={c.camp_id} className="p-3 text-gray-800">{get(c)}</td>)}
+              <tr key={label}>
+                <td className="whitespace-nowrap py-2.5 pr-4 text-muted">{label}</td>
+                {data.camps.map(c => <td key={c.camp_id} className="py-2.5 pr-4 text-ink">{get(c)}</td>)}
               </tr>
             ))}
           </tbody>
         </table>
       </div>
       {data.differences.length > 0 && (
-        <ul className="border-t border-gray-100 p-3 text-sm text-gray-700 list-disc pl-8 space-y-1">
+        <ul className="mt-4 list-disc space-y-1 pl-5 text-small text-ink">
           {data.differences.map((d, i) => <li key={i}>{d}</li>)}
         </ul>
       )}
@@ -119,37 +117,37 @@ function ComparisonView({ data }: { data: Comparison }) {
   )
 }
 
+const WEEK_TONE = { covered: 'text-checked', gap: 'text-warn', overlap: 'text-error' }
+
 function PlanView({ plan }: { plan: Plan }) {
-  const tone = { covered: 'bg-green-50 border-green-200', gap: 'bg-amber-50 border-amber-200', overlap: 'bg-red-50 border-red-200' }
   const label = { covered: 'Covered', gap: 'Gap', overlap: 'Overlap' }
   return (
-    <div className="bg-white rounded-2xl border border-gray-200 p-4">
-      <div className="flex justify-between text-sm mb-3">
-        <span className="font-semibold text-gray-900">{plan.weeks_covered} of {plan.weeks_total} weeks covered</span>
-        <span className="text-gray-500">≈ ${Math.round(plan.total_estimated_cost).toLocaleString()}</span>
+    <div>
+      <div className="mb-2 flex flex-wrap items-baseline justify-between gap-2">
+        <h3 className="font-display text-h3 text-ink">{plan.weeks_covered} of {plan.weeks_total} weeks covered</h3>
+        <span className="text-small text-muted">About ${Math.round(plan.total_estimated_cost).toLocaleString()}</span>
       </div>
-      <div className="space-y-1.5">
+      <ul className="divide-y divide-line border-y border-line">
         {plan.weeks.map(w => (
-          <div key={w.week_of} className={`flex items-center justify-between gap-3 border rounded-lg px-3 py-1.5 text-sm ${tone[w.status]}`}>
-            <span className="text-gray-600 whitespace-nowrap">{fmtRange(w.week_of, w.week_end)}</span>
-            <span className="text-gray-800 truncate text-right">
-              {w.camps.length ? w.camps.map(c => c.name).join(' + ') : label[w.status]}
-            </span>
-          </div>
+          <li key={w.week_of} className="flex items-baseline gap-4 py-2.5 text-small">
+            <span className="w-28 shrink-0 text-muted">{fmtRange(w.week_of, w.week_end)}</span>
+            <span className="min-w-0 flex-1 truncate text-ink">{w.camps.map(c => c.name).join(' + ')}</span>
+            <span className={`shrink-0 font-semibold ${WEEK_TONE[w.status]}`}>{label[w.status]}</span>
+          </li>
         ))}
-      </div>
+      </ul>
     </div>
   )
 }
 
 function CoverageView({ data }: { data: Coverage }) {
   const tone: Record<CoverageStatus, string> = {
-    covered: 'bg-green-50 border-green-200',
-    check_hours: 'bg-sky-50 border-sky-200',
-    partial: 'bg-amber-50 border-amber-200',
-    open: 'bg-red-50 border-red-200',
-    away: 'bg-gray-50 border-gray-200',
-    not_needed: 'bg-gray-50 border-gray-200',
+    covered: 'text-checked',
+    check_hours: 'text-ink',
+    partial: 'text-warn',
+    open: 'text-error',
+    away: 'text-muted',
+    not_needed: 'text-muted',
   }
   const label: Record<CoverageStatus, string> = {
     covered: 'Covered', check_hours: 'Confirm hours', partial: 'Partly covered',
@@ -157,39 +155,38 @@ function CoverageView({ data }: { data: Coverage }) {
   }
   const hours = Object.entries(data.care_hours)
   return (
-    <div className="bg-white rounded-2xl border border-gray-200 p-4 space-y-4">
+    <div className="space-y-8">
       {hours.length > 0 && (
-        <p className="text-xs text-gray-500">
+        <p className="text-small text-muted">
           Care needed: {hours.map(([d, h]) => `${d} ${h}`).join(' · ')}
         </p>
       )}
       {data.kids.map(kid => (
         <div key={kid.name}>
-          <div className="flex justify-between text-sm mb-2">
-            <span className="font-semibold text-gray-900">{kid.name}</span>
-            <span className="text-gray-500">
+          <div className="mb-2 flex flex-wrap items-baseline justify-between gap-2">
+            <h3 className="font-display text-h3 text-ink">{kid.name}</h3>
+            <span className="text-small text-muted">
               {kid.weeks_covered} covered · {kid.weeks_partial} partly · {kid.weeks_open} open
             </span>
           </div>
-          <div className="space-y-1.5">
+          <ul className="divide-y divide-line border-y border-line">
             {kid.weeks.filter(w => w.status !== 'not_needed').map(w => (
-              <div key={w.week_of} className={`border rounded-lg px-3 py-1.5 text-sm ${tone[w.status]}`}>
-                <div className="flex items-center justify-between gap-3">
-                  <span className="text-gray-600 whitespace-nowrap">{fmtRange(w.week_of, w.week_end)}</span>
-                  <span className="text-gray-800 truncate text-right">
-                    {w.status === 'away' ? w.away.join(', ')
-                      : w.covered_by.length ? w.covered_by.join(' + ') : label[w.status]}
+              <li key={w.week_of} className="py-2.5 text-small">
+                <div className="flex items-baseline gap-4">
+                  <span className="w-28 shrink-0 text-muted">{fmtRange(w.week_of, w.week_end)}</span>
+                  <span className="min-w-0 flex-1 truncate text-ink">
+                    {w.status === 'away' ? w.away.join(', ') : w.covered_by.join(' + ')}
                   </span>
+                  <span className={`shrink-0 font-semibold ${tone[w.status]}`}>{label[w.status]}</span>
                 </div>
-                {w.status !== 'covered' && w.status !== 'away' && (
-                  <div className="mt-1 text-xs text-gray-600 space-y-0.5">
-                    <div>{label[w.status]}</div>
+                {w.status !== 'covered' && w.status !== 'away' && (w.check_hours.length > 0 || w.gaps.length > 0 || w.options.length > 0) && (
+                  <div className="mt-1 space-y-0.5 pl-32 text-caption text-muted">
                     {w.check_hours.map(c => <div key={c}>{c}</div>)}
                     {w.gaps.slice(0, 3).map(g => (
                       <div key={g.day}>{fmtRange(g.day, g.day)}: {g.uncovered}</div>
                     ))}
                     {w.options.length > 0 && (
-                      <div className="pt-0.5">
+                      <div>
                         Options: {w.options.map(o =>
                           `${o.name} (${o.city}${o.extended_care ? ', extended care' : ''}${o.last_season ? ', last season’s dates' : ''})`
                         ).join(' · ')}
@@ -197,26 +194,26 @@ function CoverageView({ data }: { data: Coverage }) {
                     )}
                   </div>
                 )}
-              </div>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
       ))}
-      {data.notes.map(n => <p key={n} className="text-xs text-gray-500">{n}</p>)}
+      {data.notes.map(n => <p key={n} className="text-caption text-muted">{n}</p>)}
     </div>
   )
 }
 
 export function CalendarList({ events, compact = false }: { events: FamilyEvent[]; compact?: boolean }) {
-  if (!events.length) return <p className="text-sm text-gray-400">Nothing on the calendar yet.</p>
+  if (!events.length) return <p className="text-small text-muted">Nothing on the calendar yet.</p>
   return (
-    <ul className="space-y-1.5">
+    <ul className={compact ? 'space-y-1.5' : 'divide-y divide-line border-y border-line'}>
       {events.map(e => (
-        <li key={e.id} className={`flex gap-3 text-sm ${compact ? '' : 'bg-white border border-gray-200 rounded-lg px-3 py-2'}`}>
-          <span className="text-gray-500 w-28 shrink-0">
+        <li key={e.id} className={`flex gap-4 text-small ${compact ? '' : 'py-2.5'}`}>
+          <span className={`${compact ? 'w-24' : 'w-28'} shrink-0 text-muted`}>
             {e.rrule ? weeklyLabel(e.rrule, e.start_time) : fmtRange(e.start_date, e.end_date)}
           </span>
-          <span className="text-gray-800 min-w-0">{e.title}</span>
+          <span className="min-w-0 text-ink">{e.title}</span>
         </li>
       ))}
     </ul>

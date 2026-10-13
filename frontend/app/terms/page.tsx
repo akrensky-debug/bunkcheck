@@ -6,21 +6,21 @@ import { COMPANY, POLICY_UPDATED, SUPPORT_EMAIL } from '@/lib/site'
 // are deliberately left general until counsel sets them.
 
 export const metadata: Metadata = {
-  title: 'Terms of Service | BunkCheck',
-  description: 'The terms for using BunkCheck on the web and inside ChatGPT and Claude.',
+  title: 'Terms of Service | Bunkcheck',
+  description: 'The terms for using Bunkcheck on the web and inside ChatGPT and Claude.',
 }
 
 export default function TermsPage() {
   return (
     <LegalPage title="Terms of Service" updated={POLICY_UPDATED}>
       <p>
-        These terms cover your use of BunkCheck, made by {COMPANY}, on our website and inside
-        assistants such as ChatGPT and Claude. By using BunkCheck you agree to them.
+        These terms cover your use of Bunkcheck, made by {COMPANY}, on our website and inside
+        assistants such as ChatGPT and Claude. By using Bunkcheck you agree to them.
       </p>
 
-      <h2>What BunkCheck is</h2>
+      <h2>What Bunkcheck is</h2>
       <p>
-        BunkCheck helps parents find, compare and plan kids&apos; summer camps. We are not a camp, we don&apos;t
+        Bunkcheck helps parents find, compare and plan kids&apos; summer camps. We are not a camp, we don&apos;t
         run any program, and we don&apos;t take registrations or payments from parents. You register with
         each camp directly, on the camp&apos;s terms.
       </p>
@@ -29,13 +29,13 @@ export default function TermsPage() {
       <p>
         We collect camp details from camps and public sources and mark which details are verified.
         Dates, prices, availability and policies can change, and unverified details may be wrong.
-        Always confirm with the camp before you register or pay. BunkCheck is provided &quot;as is&quot; and
+        Always confirm with the camp before you register or pay. Bunkcheck is provided &quot;as is&quot; and
         we are not responsible for a camp&apos;s programs, staff, safety or decisions.
       </p>
 
       <h2>AI answers</h2>
       <p>
-        The planning chat, and assistants that use BunkCheck, generate answers with AI. They can make
+        The planning chat, and assistants that use Bunkcheck, generate answers with AI. They can make
         mistakes. Use them as a starting point and check what matters with the camp.
       </p>
 
@@ -48,7 +48,7 @@ export default function TermsPage() {
 
       <h2>Fair use</h2>
       <p>
-        Don&apos;t misuse BunkCheck: no scraping or bulk copying of camp data, no attempts to break or
+        Don&apos;t misuse Bunkcheck: no scraping or bulk copying of camp data, no attempts to break or
         overload the service, and no false information about camps. Partners who want the data can use
         the <a href="/operators">Activity API</a> under its own terms.
       </p>

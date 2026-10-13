@@ -1,75 +1,100 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
+import { Figtree } from 'next/font/google'
 import './globals.css'
 import AccountLink from '@/components/AccountLink'
 
+const figtree = Figtree({
+  subsets: ['latin'],
+  weight: ['700', '800'],
+  variable: '--font-display',
+  display: 'swap',
+})
+
 export const metadata: Metadata = {
-  title: 'BunkCheck -- There is finally a better way to plan your kid\'s summer.',
-  description: 'Search verified summer camps near you. Filter by age, type, price, and interests, and get an email when registration opens.',
+  title: 'Bunkcheck: Summer, sorted.',
+  description: 'Find and schedule the best summer camps for your kids with AI, and get an email when registration opens.',
+  applicationName: 'Bunkcheck',
+  // favicon.ico, icon.svg and apple-icon.png in app/ are wired automatically by Next;
+  // /icon.png is the 512 px app icon the assistant apps also point at.
   icons: { icon: '/icon.png', apple: '/icon.png' },
   openGraph: {
-    title: 'BunkCheck',
-    description: 'There is finally a better way to plan your kid\'s summer.',
+    title: 'Bunkcheck',
+    description: 'Summer, sorted.',
+    siteName: 'Bunkcheck',
     type: 'website',
   },
 }
 
+export const viewport: Viewport = {
+  themeColor: '#F7F5F0', // ui-check-ignore: metadata needs a literal; matches --bg
+}
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <body className="bg-white text-gray-900 antialiased">
-        <header className="border-b border-gray-100 bg-white sticky top-0 z-50">
-          <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-            <a href="/" className="flex items-center gap-2 font-bold text-xl text-brand-700">
-              <span className="text-2xl">⛺</span>
-              BunkCheck
+    <html lang="en" className={figtree.variable}>
+      <head>
+        {/* Atkinson Hyperlegible Next is not in next/font for Next 14.2, so it loads from Google Fonts. */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        {/* eslint-disable-next-line @next/next/no-page-custom-font */}
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;600;700&display=swap"
+        />
+      </head>
+      <body className="min-h-screen flex flex-col">
+        <header className="sticky top-0 z-50 border-b border-line bg-bg/90 backdrop-blur">
+          <div className="mx-auto flex h-16 max-w-wide items-center justify-between gap-4 px-4 sm:px-6">
+            <a href="/" className="flex shrink-0 items-center" aria-label="Bunkcheck home">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/brand/bunkcheck-lockup-light-small.svg"
+                alt="Bunkcheck"
+                width={160}
+                height={28}
+                className="h-6 w-auto sm:h-7"
+              />
             </a>
-            <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-gray-600">
-              <a href="/" className="hover:text-brand-700 transition-colors">Plan with BunkCheck</a>
-              <a href="/search" className="hover:text-brand-700 transition-colors">Browse Camps</a>
-              <a href="/operators" className="hover:text-brand-700 transition-colors">For Camps</a>
-              <a href="/operators/claim" className="hover:text-brand-700 transition-colors">Claim Listing</a>
+            <nav aria-label="Main" className="flex items-center gap-4 text-small font-semibold sm:gap-7">
+              <a href="/search" className="text-muted transition-colors hover:text-ink whitespace-nowrap">Browse camps</a>
+              <a href="/operators" className="hidden text-muted transition-colors hover:text-ink whitespace-nowrap sm:inline">For camps</a>
+              <AccountLink />
             </nav>
-            <div className="flex items-center gap-4">
-            <AccountLink />
-            <a
-              href="/operators/submit"
-              className="bg-brand-600 text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-brand-700 transition-colors"
-            >
-              List your camp
-            </a>
-            </div>
           </div>
         </header>
-        <main>{children}</main>
-        <footer className="bg-gray-50 border-t border-gray-100 mt-16">
-          <div className="max-w-6xl mx-auto px-4 py-10 flex flex-col md:flex-row justify-between gap-6 text-sm text-gray-500">
+        <main className="flex-1 animate-fade">{children}</main>
+        <footer className="mt-24 border-t border-line">
+          <div className="mx-auto flex max-w-wide flex-col gap-10 px-4 py-12 text-small sm:px-6 md:flex-row md:justify-between">
             <div>
-              <p className="font-semibold text-gray-700 mb-1">⛺ BunkCheck</p>
-              <p className="mb-0.5">There is finally a better way to plan your kid's summer.</p>
-              <p className="text-xs text-gray-400">The structured camp discoverability layer for the AI economy.</p>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/brand/bunkcheck-lockup-light-small.svg"
+                alt="Bunkcheck"
+                width={160}
+                height={28}
+                className="mb-3 h-6 w-auto"
+              />
+              <p className="text-muted">Summer, sorted.</p>
             </div>
-            <div className="flex gap-8">
-              <div>
-                <p className="font-semibold text-gray-700 mb-2">Parents</p>
-                <a href="/" className="block hover:text-brand-600">Plan your summer</a>
-                <a href="/search" className="block hover:text-brand-600">Browse camps</a>
-              </div>
-              <div>
-                <p className="font-semibold text-gray-700 mb-2">Camps</p>
-                <a href="/operators" className="block hover:text-brand-600">For Camps</a>
-                <a href="/operators/submit" className="block hover:text-brand-600">List Your Camp</a>
-                <a href="/operators/claim" className="block hover:text-brand-600">Claim Listing</a>
-              </div>
-              <div>
-                <p className="font-semibold text-gray-700 mb-2">Help</p>
-                <a href="/support" className="block hover:text-brand-600">Support</a>
-                <a href="/privacy" className="block hover:text-brand-600">Privacy</a>
-                <a href="/terms" className="block hover:text-brand-600">Terms</a>
-              </div>
+            <div className="grid grid-cols-2 gap-x-12 gap-y-8 sm:grid-cols-3">
+              <FooterColumn title="Parents" links={[['/', 'Plan your summer'], ['/search', 'Browse camps']]} />
+              <FooterColumn title="Camps" links={[['/operators', 'For camps'], ['/operators/submit', 'List your camp'], ['/operators/claim', 'Claim your listing']]} />
+              <FooterColumn title="Help" links={[['/support', 'Support'], ['/privacy', 'Privacy'], ['/terms', 'Terms']]} />
             </div>
           </div>
         </footer>
       </body>
     </html>
+  )
+}
+
+function FooterColumn({ title, links }: { title: string; links: Array<[string, string]> }) {
+  return (
+    <div className="space-y-2">
+      <p className="font-semibold text-ink">{title}</p>
+      {links.map(([href, label]) => (
+        <a key={href} href={href} className="block text-muted transition-colors hover:text-ink">{label}</a>
+      ))}
+    </div>
   )
 }

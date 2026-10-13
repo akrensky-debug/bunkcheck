@@ -6,6 +6,28 @@ import { getCamp, spotsLine, type CampDetail } from '@/lib/api'
 import { Events, captureAssistantArrival } from '@/lib/analytics'
 import TrustBadge from '@/components/TrustBadge'
 import RegistrationAlert from '@/components/booking/RegistrationAlert'
+import { CAMP_TYPE_LABEL } from '@/components/CampCard'
+import { Button, Container, EmptyState, Heading, Icon, Meta, Section, Skeleton, TRUST, TextLink } from '@/components/ui'
+
+const AVAILABILITY: Record<string, { label: string; cls: string }> = {
+  open: { label: 'Open', cls: 'text-checked' },
+  waitlist: { label: 'Waitlist', cls: 'text-warn' },
+  full: { label: 'Full', cls: 'text-error' },
+  unknown: { label: 'Ask the camp', cls: 'text-muted' },
+}
+
+function Fact({ label, children }: { label: string; children: React.ReactNode }) {
+  return (
+    <div className="flex justify-between gap-4 py-2.5">
+      <dt className="text-muted">{label}</dt>
+      <dd className="text-right text-ink">{children}</dd>
+    </div>
+  )
+}
+
+function sentence(s: string) {
+  return s.charAt(0).toUpperCase() + s.slice(1)
+}
 
 export default function CampDetailPage() {
   const { id } = useParams<{ id: string }>()
@@ -25,237 +47,163 @@ export default function CampDetailPage() {
   }, [id])
 
   if (loading) return (
-    <div className="max-w-4xl mx-auto px-4 py-16">
-      <div className="space-y-4">
-        {[1,2,3].map(i => <div key={i} className="bg-gray-100 rounded-2xl h-24 animate-pulse" />)}
-      </div>
-    </div>
+    <Container className="space-y-4 py-16">
+      <Skeleton className="h-10 w-2/3" />
+      <Skeleton rows={3} />
+    </Container>
   )
 
   if (!camp) return (
-    <div className="max-w-4xl mx-auto px-4 py-16 text-center text-gray-500">Camp not found.</div>
+    <Container><EmptyState title="Camp not found." action={<Button href="/search" variant="secondary">Browse camps</Button>} /></Container>
   )
 
-  const typeLabel: Record<string, string> = { day: 'Day Camp', sleepaway: 'Sleepaway', specialty: 'Specialty' }
-
   return (
-    <div className="max-w-4xl mx-auto px-4 py-8">
-      {/* Breadcrumb */}
-      <nav className="text-sm text-gray-400 mb-6">
-        <a href="/search" className="hover:text-brand-600">← Back to results</a>
-      </nav>
+    <Container className="py-10 sm:py-14">
+      <TextLink href="/search" tone="muted" className="mb-10 text-small">
+        <Icon name="arrow-left" size={14} />Back to results
+      </TextLink>
 
       {/* Header */}
-      <div className="bg-white rounded-2xl border border-gray-200 p-6 mb-4">
-        <div className="flex flex-col md:flex-row md:items-start gap-4">
-          <div className="flex-1">
-            <div className="flex items-center gap-2 mb-1 text-sm text-gray-500">
-              <span>{typeLabel[camp.camp_type] ?? camp.camp_type}</span>
-              <span>·</span>
-              <span>{camp.city}, {camp.state}</span>
-            </div>
-            <h1 className="text-2xl md:text-3xl font-extrabold text-gray-900 mb-3">{camp.name}</h1>
-            <TrustBadge status={camp.verification_status} aca={camp.aca_accredited} />
-            {camp.trust_summary?.confirmed_by_camp_at && (
-              <p className="text-xs text-green-700 mt-2">
-                ✓ Confirmed by the camp on {new Date(camp.trust_summary.confirmed_by_camp_at).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
-              </p>
-            )}
-            {camp.last_updated_date && (
-              <p className="text-xs text-gray-400 mt-2">
-                Last updated {new Date(camp.last_updated_date).toLocaleDateString('en-US', { month: 'short', year: 'numeric' })}
-              </p>
-            )}
-          </div>
-
-          {/* Primary CTAs */}
-          <div className="flex flex-col gap-2 md:min-w-[200px]">
-            {camp.website_url && (
-              <a
-                href={camp.website_url}
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={() => Events.outboundSiteClicked(camp.id, camp.website_url!)}
-                className="bg-brand-600 hover:bg-brand-700 text-white font-bold px-5 py-3 rounded-xl transition-colors text-center"
-              >
-                Visit camp website ↗
-              </a>
-            )}
-            <a
-              href={`/register/${camp.id}`}
-              className="bg-gray-900 text-white font-semibold px-5 py-2.5 rounded-xl text-center hover:bg-gray-800 transition-colors text-sm"
-            >
-              Get ready to register
-            </a>
-            {camp.registration_url && (
-              <a
-                href={camp.registration_url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-center text-sm text-brand-600 underline hover:text-brand-700"
-              >
-                Register directly
-              </a>
-            )}
-          </div>
+      <header className="mb-12 flex flex-col gap-8 md:flex-row md:items-end md:justify-between">
+        <div className="min-w-0">
+          <Meta className="mb-3" parts={[CAMP_TYPE_LABEL[camp.camp_type] ?? camp.camp_type, `${camp.city}, ${camp.state}`]} />
+          <Heading level="h1" className="mb-4">{camp.name}</Heading>
+          <TrustBadge status={camp.verification_status} aca={camp.aca_accredited} />
+          {camp.trust_summary?.confirmed_by_camp_at && (
+            <p className="mt-2 flex items-center gap-1.5 text-small font-semibold text-checked">
+              <Icon name="check" size={14} />
+              Confirmed by the camp on {new Date(camp.trust_summary.confirmed_by_camp_at).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
+            </p>
+          )}
+          {camp.last_updated_date && (
+            <p className="mt-2 text-caption text-muted">
+              Last updated {new Date(camp.last_updated_date).toLocaleDateString('en-US', { month: 'short', year: 'numeric' })}
+            </p>
+          )}
         </div>
-      </div>
 
-      <RegistrationAlert campId={camp.id} campName={camp.name} />
+        {/* Primary actions */}
+        <div className="flex shrink-0 flex-col gap-3 sm:flex-row sm:items-center md:flex-col md:items-stretch">
+          {camp.website_url && (
+            <Button
+              href={camp.website_url}
+              external
+              icon="external"
+              size="lg"
+              onClick={() => Events.outboundSiteClicked(camp.id, camp.website_url!)}
+            >
+              Visit camp website
+            </Button>
+          )}
+          <Button href={`/register/${camp.id}`} variant="secondary" size="lg">Get ready to register</Button>
+          {camp.registration_url && (
+            <Button href={camp.registration_url} external variant="link" className="self-center">Register directly</Button>
+          )}
+        </div>
+      </header>
 
-      <div className="grid md:grid-cols-3 gap-4">
+      <div className="grid gap-12 md:grid-cols-3 md:gap-16">
         {/* Main content */}
-        <div className="md:col-span-2 space-y-4">
-          {/* Description */}
+        <div className="space-y-12 md:col-span-2">
           {(camp.description_full || camp.description_short) && (
-            <section className="bg-white rounded-2xl border border-gray-200 p-6">
-              <h2 className="font-bold text-gray-900 mb-3">About this camp</h2>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                {camp.description_full || camp.description_short}
-              </p>
-            </section>
+            <Section title="About this camp">
+              <p className="max-w-measure text-body text-ink">{camp.description_full || camp.description_short}</p>
+            </Section>
           )}
 
-          {/* Sessions */}
           {camp.sessions && camp.sessions.length > 0 && (
-            <section className="bg-white rounded-2xl border border-gray-200 p-6">
-              <h2 className="font-bold text-gray-900 mb-4">2027 Sessions</h2>
-              <div className="space-y-3">
+            <Section title="2027 sessions">
+              <ul className="divide-y divide-line border-y border-line">
                 {camp.sessions.map(s => {
-                  const avail: Record<string, string> = {
-                    open: 'text-green-600 bg-green-50',
-                    waitlist: 'text-yellow-700 bg-yellow-50',
-                    full: 'text-red-600 bg-red-50',
-                    unknown: 'text-gray-500 bg-gray-50',
-                  }
+                  const avail = AVAILABILITY[s.availability] ?? AVAILABILITY.unknown
                   return (
-                    <div key={s.id} className="flex items-center justify-between py-3 border-b border-gray-100 last:border-0">
-                      <div>
-                        <p className="font-medium text-sm text-gray-900">{s.name || 'Session'}</p>
-                        <p className="text-xs text-gray-500">
+                    <li key={s.id} className="flex items-start justify-between gap-4 py-4">
+                      <div className="min-w-0">
+                        <p className="text-body font-semibold text-ink">{s.name || 'Session'}</p>
+                        <p className="text-small text-muted">
                           {new Date(s.start_date + 'T00:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}
-                          {' - '}
+                          {' – '}
                           {new Date(s.end_date + 'T00:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
                         </p>
                         {spotsLine(s) && (
-                          <p className={`text-xs mt-0.5 ${s.spots_available === 0 ? 'text-red-600' : 'text-green-700'}`}>{spotsLine(s)}</p>
+                          <p className={`text-caption ${s.spots_available === 0 ? 'text-error' : 'text-checked'}`}>{spotsLine(s)}</p>
                         )}
                       </div>
-                      <div className="flex items-center gap-3">
-                        {s.price && <span className="font-semibold text-gray-900">${Math.round(s.price).toLocaleString()}</span>}
-                        <span className={`text-xs font-medium px-2 py-0.5 rounded-full capitalize ${avail[s.availability] ?? avail.unknown}`}>
-                          {s.availability}
-                        </span>
+                      <div className="shrink-0 text-right">
+                        {s.price && <p className="text-body font-semibold text-ink">${Math.round(s.price).toLocaleString()}</p>}
+                        <p className={`text-small font-semibold ${avail.cls}`}>{avail.label}</p>
                       </div>
-                    </div>
+                    </li>
                   )
                 })}
-              </div>
-            </section>
+              </ul>
+            </Section>
           )}
 
-          {/* Activities */}
           {camp.activities && camp.activities.length > 0 && (
-            <section className="bg-white rounded-2xl border border-gray-200 p-6">
-              <h2 className="font-bold text-gray-900 mb-3">Activities</h2>
-              <div className="flex flex-wrap gap-2">
-                {camp.activities.map(a => (
-                  <span key={a} className="text-sm bg-gray-100 text-gray-700 px-3 py-1 rounded-full capitalize">{a}</span>
-                ))}
-              </div>
-            </section>
+            <Section title="Activities">
+              <p className="max-w-measure text-body text-ink">{camp.activities.map((a, i) => (i ? a : sentence(a))).join(', ')}</p>
+            </Section>
           )}
+
+          <RegistrationAlert campId={camp.id} campName={camp.name} />
         </div>
 
-        {/* Sidebar */}
-        <div className="space-y-4">
-          {/* Quick facts */}
-          <section className="bg-white rounded-2xl border border-gray-200 p-5">
-            <h2 className="font-bold text-gray-900 mb-4 text-sm uppercase tracking-wide">Quick facts</h2>
-            <dl className="space-y-3 text-sm">
-              {camp.age_min != null && camp.age_max != null && (
-                <div className="flex justify-between">
-                  <dt className="text-gray-500">Ages</dt>
-                  <dd className="font-medium">{camp.age_min}-{camp.age_max}</dd>
-                </div>
-              )}
-              {camp.price_per_week && (
-                <div className="flex justify-between">
-                  <dt className="text-gray-500">Price</dt>
-                  <dd className="font-medium">${Math.round(camp.price_per_week)}/week</dd>
-                </div>
-              )}
-              {camp.indoor_outdoor && (
-                <div className="flex justify-between">
-                  <dt className="text-gray-500">Setting</dt>
-                  <dd className="font-medium capitalize">{camp.indoor_outdoor}</dd>
-                </div>
-              )}
-              {camp.gender_policy && (
-                <div className="flex justify-between">
-                  <dt className="text-gray-500">Gender</dt>
-                  <dd className="font-medium capitalize">{camp.gender_policy}</dd>
-                </div>
-              )}
-              <div className="flex justify-between">
-                <dt className="text-gray-500">Transport</dt>
-                <dd className="font-medium">{camp.transportation ? '✓ Yes' : 'No'}</dd>
-              </div>
-              <div className="flex justify-between">
-                <dt className="text-gray-500">Extended care</dt>
-                <dd className="font-medium">{camp.extended_care ? '✓ Yes' : 'No'}</dd>
-              </div>
-              <div className="flex justify-between">
-                <dt className="text-gray-500">Meals</dt>
-                <dd className="font-medium">{camp.meals_included ? '✓ Included' : 'No'}</dd>
-              </div>
-              <div className="flex justify-between">
-                <dt className="text-gray-500">Financial aid</dt>
-                <dd className="font-medium">{camp.financial_aid ? '✓ Available' : 'No'}</dd>
-              </div>
+        {/* Side column */}
+        <aside className="space-y-10 text-small">
+          <section>
+            <h2 className="mb-2 text-small font-semibold text-ink">Quick facts</h2>
+            <dl className="divide-y divide-line border-y border-line">
+              {camp.age_min != null && camp.age_max != null && <Fact label="Ages">{camp.age_min}–{camp.age_max}</Fact>}
+              {camp.price_per_week && <Fact label="Price">${Math.round(camp.price_per_week)} a week</Fact>}
+              {camp.indoor_outdoor && <Fact label="Setting">{sentence(camp.indoor_outdoor)}</Fact>}
+              {camp.gender_policy && <Fact label="Gender">{sentence(camp.gender_policy)}</Fact>}
+              <Fact label="Transport">{camp.transportation ? 'Yes' : 'No'}</Fact>
+              <Fact label="Extended care">{camp.extended_care ? 'Yes' : 'No'}</Fact>
+              <Fact label="Meals">{camp.meals_included ? 'Included' : 'No'}</Fact>
+              <Fact label="Financial aid">{camp.financial_aid ? 'Available' : 'No'}</Fact>
             </dl>
           </section>
 
-          {/* Contact */}
           {(camp.email || camp.phone) && (
-            <section className="bg-white rounded-2xl border border-gray-200 p-5">
-              <h2 className="font-bold text-gray-900 mb-3 text-sm uppercase tracking-wide">Contact</h2>
-              <div className="space-y-2 text-sm">
-                {camp.email && <p className="text-gray-600 break-all">{camp.email}</p>}
-                {camp.phone && <p className="text-gray-600">{camp.phone}</p>}
+            <section>
+              <h2 className="mb-2 text-small font-semibold text-ink">Contact</h2>
+              <div className="space-y-1 text-ink">
+                {camp.email && <p className="break-all"><a href={`mailto:${camp.email}`} className="hover:underline underline-offset-4">{camp.email}</a></p>}
+                {camp.phone && <p>{camp.phone}</p>}
               </div>
             </section>
           )}
 
-          {/* Trust summary */}
           {camp.trust_summary && (
-            <section className="bg-gray-50 rounded-2xl border border-gray-200 p-5">
-              <h2 className="font-bold text-gray-900 mb-3 text-sm uppercase tracking-wide">Data quality</h2>
-              <div className="space-y-2 text-xs text-gray-500">
-                <p>Verification: <span className="font-medium text-gray-700 capitalize">{camp.trust_summary.verification_status.replace('_', ' ')}</span></p>
+            <section>
+              <h2 className="mb-2 text-small font-semibold text-ink">About this listing</h2>
+              <div className="space-y-1 text-muted">
+                <p>{(TRUST[camp.trust_summary.verification_status] ?? TRUST.unverified).label}</p>
                 {camp.trust_summary.fields_verified.length > 0 && (
-                  <p>Verified fields: {camp.trust_summary.fields_verified.length}</p>
+                  <p>{camp.trust_summary.fields_verified.length} details verified</p>
                 )}
                 {camp.trust_summary.fields_missing.length > 0 && (
-                  <p className="text-amber-600">Missing: {camp.trust_summary.fields_missing.join(', ')}</p>
+                  <p className="text-warn">Missing: {camp.trust_summary.fields_missing.join(', ')}</p>
                 )}
                 {camp.trust_summary.accreditation.status === 'confirmed' && (
-                  <p className="text-green-600 font-medium">ACA Accredited ✓</p>
+                  <p className="inline-flex items-center gap-1.5 font-semibold text-checked"><Icon name="check" size={14} />ACA accredited</p>
                 )}
               </div>
               {camp.verification_status === 'unverified' && (
-                <a
+                <TextLink
                   href={`/operators/claim?camp_id=${camp.id}`}
-                  className="block mt-3 text-xs text-brand-600 underline"
+                  className="mt-3"
+                  arrow
                   onClick={() => Events.claimFlowStarted(camp.id)}
                 >
-                  Own this camp? Claim your listing →
-                </a>
+                  Own this camp? Claim your listing
+                </TextLink>
               )}
             </section>
           )}
-        </div>
+        </aside>
       </div>
-    </div>
+    </Container>
   )
 }
