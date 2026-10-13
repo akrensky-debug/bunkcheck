@@ -1,0 +1,86 @@
+{
+  "slug": "camp-mechuwana-winthrop",
+  "name": "Camp Mechuwana",
+  "website_url": "https://www.mechuwana.org",
+  "email": "mechuwana@outlook.com",
+  "phone": "(207) 377-2924",
+  "city": "Winthrop",
+  "state": "ME",
+  "zip": "04364",
+  "primary_categories": [
+    "faith",
+    "sports",
+    "performing_arts",
+    "arts",
+    "special_needs",
+    "nature"
+  ],
+  "description_short": "A Christian camp affiliated with the New England Conference of the United Methodist Church, on more than 200 acres of forest on Lower Narrows Pond and Lake Annabessacook. It runs weekly summer programs from mid-June to mid-August, including sports, swimming, musical theatre, creative arts, special needs camps and day camps.",
+  "activities": [
+    "sports",
+    "swimming",
+    "musical theatre",
+    "creative arts",
+    "nature trails",
+    "basketball"
+  ],
+  "financial_aid": true,
+  "special_needs_notes": "Special needs camps are listed among the weekly summer offerings. Details are not given on this page.",
+  "swim_waterfront_notes": "Property borders Lower Narrows Pond and Lake Annabessacook and has a boat dock and a swimming area.",
+  "sources": [
+    {
+      "url": "https://www.mechuwana.org/about-us",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "website_url",
+        "email",
+        "phone",
+        "city",
+        "state",
+        "zip",
+        "primary_categories",
+        "activities",
+        "description_short",
+        "financial_aid",
+        "special_needs_notes",
+        "swim_waterfront_notes"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.mechuwana.org/about-us",
+      "kind": "html",
+      "title": "About Us | Camp Mechuwana"
+    },
+    "warnings": [
+      "This is the camp's About Us page. It has no season year, sessions, prices or ages, so season_year is left blank.",
+      "The page offers both day camps and programs that appear to be overnight (it mentions cabins), so camp_type is left blank.",
+      "The page contains template filler text and placeholder staff names (Alex Green, Lee Priston, John Doe). Ignore those.",
+      "The address given is a P.O. Box mailing address, not the camp's physical location.",
+      "The camp is affiliated with the New England Conference of the United Methodist Church. The page does not say who formally operates it."
+    ],
+    "unknowns": [
+      "2027 session dates and names",
+      "Prices / weekly rates",
+      "Age or grade ranges",
+      "Whether overnight camping is offered for each program and which programs are day camps (camp_type)",
+      "Registration URL and when registration opens",
+      "Deposit and refund policy",
+      "ACA accreditation",
+      "Meals, extended care, transportation",
+      "Street/physical address (only a P.O. Box is given)",
+      "Details of the special needs programs",
+      "Swim supervision / lifeguard details"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "missing required camp_type",
+      "missing required season_year",
+      "camp_type must be one of ['day', 'sleepaway', 'specialty']"
+    ]
+  }
+}

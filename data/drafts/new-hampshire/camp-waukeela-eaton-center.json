@@ -1,0 +1,149 @@
+{
+  "slug": "camp-waukeela-eaton-center",
+  "name": "Camp Waukeela",
+  "website_url": "https://www.waukeela.com",
+  "registration_url": "https://waukeela.campbrainregistration.com/",
+  "email": "gillian@waukeela.com",
+  "phone": "(603) 447-2260",
+  "city": "Eaton Center",
+  "state": "NH",
+  "zip": "03832",
+  "camp_type": "sleepaway",
+  "primary_categories": [
+    "sports",
+    "nature"
+  ],
+  "description_short": "Overnight summer camp for girls in Eaton Center, New Hampshire, running since 1922. It offers two sessions of about 3½ weeks, a full summer, and 2-week sessions for first-time campers only.",
+  "activities": [
+    "Horseback riding",
+    "Rock climbing",
+    "Swimming",
+    "Hiking",
+    "Theater"
+  ],
+  "price_min": 6000,
+  "price_max": 12500,
+  "financial_aid": true,
+  "transportation": true,
+  "refund_policy_summary": "You pay a $1,000 registration fee to sign up. It is fully refundable until January 31. Siblings (2nd, 3rd or 4th child) get 10% off the registration fee.",
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "1st Session",
+      "start_date": "2027-06-24",
+      "end_date": "2027-07-18",
+      "price": 9000,
+      "availability": "unknown"
+    },
+    {
+      "name": "2nd Session",
+      "start_date": "2027-07-21",
+      "end_date": "2027-08-14",
+      "price": 9000,
+      "availability": "unknown"
+    },
+    {
+      "name": "Full Summer",
+      "start_date": "2027-06-24",
+      "end_date": "2027-08-14",
+      "price": 12500,
+      "availability": "unknown"
+    },
+    {
+      "name": "2 Week Session A (first-time campers only)",
+      "start_date": "2027-06-24",
+      "end_date": "2027-07-07",
+      "price": 6000,
+      "availability": "unknown"
+    },
+    {
+      "name": "2 Week Session B (first-time campers only)",
+      "start_date": "2027-07-05",
+      "end_date": "2027-07-18",
+      "price": 6000,
+      "availability": "unknown"
+    },
+    {
+      "name": "2 Week Session C (first-time campers only)",
+      "start_date": "2027-07-21",
+      "end_date": "2027-08-03",
+      "price": 6000,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.waukeela.com/camp-families-dates-rates",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "description_short",
+        "price_min",
+        "price_max",
+        "transportation",
+        "financial_aid",
+        "refund_policy_summary",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.waukeela.com/camp-families-dates-rates",
+      "kind": "html",
+      "title": "Join Our Family at Camp Waukeela | Registration, Pricing & Session Info"
+    },
+    "warnings": [
+      "The 2-week Session B (July 5–18) overlaps Session A (June 24–July 7) by three days. This could be a typo on the page, so check it with the camp.",
+      "The only address listed is a PO Box (PO 265, Eaton Center, NH), which is a mailing address. The camp's physical location is not given.",
+      "The weekdays listed match calendar year 2027, so the session dates are recorded with the year 2027.",
+      "Some activities (swimming, hiking, theater) come only from parent testimonials, not from the camp's own program description.",
+      "Optional extras cost more on top of tuition: horseback riding ($800 for 5 lessons in a 3½-week session, $500 for 3 lessons in a 2-week session), rock climbing ($300 per session), a bedding package for international campers ($200), and airport transfers from Boston Logan or Portland, ME ($200 each way)."
+    ],
+    "unknowns": [
+      "Age or grade range of campers",
+      "Whether meals are included (very likely for overnight camp, but not stated)",
+      "Session availability (open, waitlist or full)",
+      "Whether the $1,000 registration fee counts toward tuition",
+      "Date 2027 registration opens",
+      "Refund policy after January 31",
+      "Physical street address of the camp",
+      "Whether the camp is ACA accredited",
+      "Swim and waterfront details",
+      "Support for special needs",
+      "Full list of activities offered"
+    ],
+    "low_confidence": [
+      {
+        "field": "activities",
+        "confidence": 0.6,
+        "quote": "Summer had the most amazing time - from riding, swimming, hiking"
+      },
+      {
+        "field": "activities",
+        "confidence": 0.55,
+        "quote": "proud of Lucy’s participation in the play"
+      },
+      {
+        "field": "primary_categories",
+        "confidence": 0.5,
+        "quote": "riding, swimming, hiking"
+      }
+    ],
+    "errors": [
+      "city 'Eaton Center', NH is not in cities.py"
+    ]
+  }
+}

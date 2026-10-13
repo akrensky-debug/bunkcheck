@@ -1,0 +1,95 @@
+{
+  "slug": "camp-winnebago-fayette",
+  "name": "Camp Winnebago",
+  "website_url": "https://www.campwinnebago.com",
+  "registration_url": "https://www.campwinnebago.com/enroll",
+  "phone": "1-207-767-1019",
+  "street_address": "19 Echo Lake Rd",
+  "city": "Fayette",
+  "state": "ME",
+  "zip": "04349",
+  "camp_type": "sleepaway",
+  "description_short": "Camp Winnebago is a summer camp in Fayette, Maine. For 2027 it offers a full 7-week summer or one of two shorter sessions.",
+  "price_min": 11900,
+  "price_max": 17950,
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Full Summer",
+      "start_date": "2027-06-26",
+      "end_date": "2027-08-14",
+      "price": 17950,
+      "availability": "unknown"
+    },
+    {
+      "name": "1st Session",
+      "start_date": "2027-06-26",
+      "end_date": "2027-07-20",
+      "price": 11900,
+      "availability": "unknown"
+    },
+    {
+      "name": "2nd Session",
+      "start_date": "2027-07-21",
+      "end_date": "2027-08-14",
+      "price": 11900,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.campwinnebago.com/dates-rates",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "description_short",
+        "price_min",
+        "price_max",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.campwinnebago.com/dates-rates",
+      "kind": "html",
+      "title": "Dates & Rates | Camp WinnebagoFacebookTwitterInstagramYouTubeVimeo"
+    },
+    "warnings": [
+      "Camp type 'sleepaway' is inferred from multi-week full-summer sessions and the '7-Week Advantage' menu item; the page does not say outright that campers stay overnight.",
+      "There are two addresses and phone numbers: 19 Echo Lake Rd, Fayette, ME (207-685-4918) from June 1 to Labor Day, and 131 Ocean St, South Portland, ME 04106 (207-767-1019) from Labor Day to June 1. The camp address is listed; the header phone is the off-season office."
+    ],
+    "unknowns": [
+      "Age range / grades served",
+      "Whether the camp is for boys, girls, or both",
+      "Activities offered (see Athletics & Activities page)",
+      "Session availability / openings",
+      "Deposit amount and refund policy",
+      "Financial aid availability",
+      "Transportation options",
+      "Registration opening date",
+      "ACA accreditation",
+      "Swim/waterfront details",
+      "Email address",
+      "Operator name"
+    ],
+    "low_confidence": [
+      {
+        "field": "camp_type",
+        "confidence": 0.7,
+        "quote": "The 7-Week Advantage ... Full Summer June 26-August 14"
+      }
+    ],
+    "errors": []
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "slug": "camp-dudley-westport",
+  "name": "Camp Dudley",
+  "website_url": "https://www.campdudley.org/",
+  "registration_url": "https://www.campdudley.org/apply/",
+  "phone": "(518) 962-4720",
+  "street_address": "126 Dudley Road",
+  "city": "Westport",
+  "state": "NY",
+  "zip": "12993",
+  "description_short": "Camp Dudley is a camp for boys in Westport, NY. It is run alongside Camp Kiniya, a camp for girls in Colchester, VT, and families apply to both through the same online application.",
+  "season_year": 2027,
+  "sources": [
+    {
+      "url": "https://www.campdudley.org/apply/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "description_short"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.campdudley.org/apply/",
+      "kind": "html",
+      "title": "Apply - Camp Dudley / Camp Kiniya"
+    },
+    "warnings": [
+      "This is an application/admissions page covering two camps: Camp Dudley (boys, 126 Dudley Road, Westport, NY 12993, 518-962-4720) and Camp Kiniya (girls, 1317 Camp Kiniya Road, Colchester, VT 05446, 802-893-7850). This listing records Camp Dudley; Camp Kiniya should be listed separately.",
+      "The page gives no sessions, prices, ages or program details, only that the 2027 application is open. Dates and rates are on https://www.campdudley.org/rates/."
+    ],
+    "unknowns": [
+      "Camp type (sleepaway vs. day): not stated on this page",
+      "Session names, dates and lengths for 2027 (see https://www.campdudley.org/rates/)",
+      "Tuition/prices for 2027 (see Dates & Rates page)",
+      "Age or grade range for campers",
+      "Activities and program details",
+      "Deposit amount and payment schedule (a 'Deposits and Payments' page is linked but its content isn't shown)",
+      "Refund policy",
+      "Financial aid availability",
+      "Transportation",
+      "Special needs accommodations",
+      "Swim/waterfront details",
+      "ACA accreditation",
+      "Email contact",
+      "Operator/organization legal name",
+      "Registration open date and availability"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "missing required camp_type",
+      "camp_type must be one of ['day', 'sleepaway', 'specialty']",
+      "city 'Westport', NY is not in cities.py"
+    ]
+  }
+}

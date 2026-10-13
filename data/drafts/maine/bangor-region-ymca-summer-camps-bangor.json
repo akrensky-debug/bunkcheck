@@ -1,0 +1,88 @@
+{
+  "slug": "bangor-region-ymca-summer-camps-bangor",
+  "name": "Bangor Region YMCA Summer Camps",
+  "operator_name": "Bangor Region YMCA",
+  "website_url": "https://bangory.org/camps/",
+  "phone": "207-941-2808",
+  "street_address": "17 Second Street",
+  "city": "Bangor",
+  "state": "ME",
+  "zip": "04401",
+  "primary_categories": [
+    "nature"
+  ],
+  "grade_min": 0,
+  "grade_max": 12,
+  "description_short": "The Bangor Region YMCA runs several summer camps. It has three day camps: Camp Acorn (entering K–3rd grade), Camp G. Peirce Webber (entering K–6th) and Adventure Day Camp (entering 5th–10th). It also runs Camp Jordan, an overnight camp for ages 7 through 12th grade, which includes Mini-Camp, Sleep Away Camp, Adventure Seekers and Leaders School.",
+  "activities": [
+    "Play-based enrichment activities outdoors (Camp Acorn)",
+    "Exploring Maine and visiting Camp Jordan (Adventure Day Camp)",
+    "Overnight camp programs: Mini-Camp, Sleep Away Camp, Adventure Seekers",
+    "Leaders School for middle and high schoolers"
+  ],
+  "financial_aid": true,
+  "sources": [
+    {
+      "url": "https://bangory.org/camps/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "primary_categories",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "description_short",
+        "financial_aid"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://bangory.org/camps/",
+      "kind": "html",
+      "title": "Summer Camps - Bangor Region YMCAmembership"
+    },
+    "warnings": [
+      "This is an overview page for several YMCA camps: three day camps and one overnight camp (Camp Jordan). It is not a single camp, so camp_type is left null. Each camp's details are on its own 'Learn More' page.",
+      "No season year, dates or prices are shown. The page talks about 'this year's waiting list' and has a 2026 copyright, so the text probably describes the 2026 season, which has already passed (today is 2026-10-13). Nothing confirms 2027 details.",
+      "The minimum age differs by camp. The day camps start at children entering Kindergarten, but Camp Jordan starts at 7 years old.",
+      "The page has a typo, 'Adventure Damp Camp'; it means Adventure Day Camp."
+    ],
+    "unknowns": [
+      "Season year and session dates for 2027",
+      "Prices (the page mentions '3 tier pricing options' but gives no amounts)",
+      "Weekly rate for the day camps",
+      "When registration opens and the registration URL",
+      "Deposit and refund policy",
+      "Daily hours and whether before/after care is offered",
+      "Whether meals are included",
+      "Transportation",
+      "Swimming/waterfront details at Camp Jordan",
+      "Camp Jordan's location or address (the page gives only the YMCA's Bangor address)",
+      "Email addresses for the camp contacts (Keegan Wakana, Jayci Fournier)",
+      "Support for special needs",
+      "ACA accreditation"
+    ],
+    "low_confidence": [
+      {
+        "field": "primary_categories",
+        "confidence": 0.6,
+        "quote": "a focus on playbased learning in a primarily outdoor environment"
+      }
+    ],
+    "errors": [
+      "missing required camp_type",
+      "missing required season_year",
+      "camp_type must be one of ['day', 'sleepaway', 'specialty']"
+    ]
+  }
+}

@@ -1,0 +1,224 @@
+{
+  "slug": "lantern-light-camps",
+  "name": "Lantern Light Camps",
+  "website_url": "https://lanternlightcamps.org/",
+  "registration_url": "https://lanternlightcamps.org/go-to-camp/",
+  "city": null,
+  "state": "NH",
+  "zip": null,
+  "primary_categories": [
+    "nature"
+  ],
+  "age_min": 8,
+  "age_max": 15,
+  "description_short": "A non-profit New Hampshire camp held at the Wah-Tut-Ca property. It runs one-week day camp sessions for ages 8–14 and overnight sessions for ages 9–15, with campers staying in cabins.",
+  "activities": [
+    "Outdoor activities",
+    "Games",
+    "Evening programs",
+    "Camp traditions",
+    "Leadership development"
+  ],
+  "price_per_week": 389,
+  "price_min": 389,
+  "price_max": 1139,
+  "financial_aid": true,
+  "season_year": 2026,
+  "price_per": "week",
+  "sessions": [
+    {
+      "name": "Session 1 – Day Camp",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-03",
+      "price": 389,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 1 – Overnight Camp",
+      "start_date": "2026-06-28",
+      "end_date": "2026-07-03",
+      "price": 1139,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 2 – Day Camp",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": 389,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 2 – Overnight Camp",
+      "start_date": "2026-07-05",
+      "end_date": "2026-07-10",
+      "price": 1139,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 3 – Day Camp",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": 389,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 3 – Overnight Camp",
+      "start_date": "2026-07-12",
+      "end_date": "2026-07-17",
+      "price": 1139,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 4 – Day Camp",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": 389,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 4 – Overnight Camp",
+      "start_date": "2026-07-19",
+      "end_date": "2026-07-24",
+      "price": 1139,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 5 – Day Camp",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": 389,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 5 – Overnight Camp",
+      "start_date": "2026-07-26",
+      "end_date": "2026-07-31",
+      "price": 1139,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 6 – Day Camp",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": 389,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 6 – Overnight Camp",
+      "start_date": "2026-08-02",
+      "end_date": "2026-08-07",
+      "price": 1139,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://lanternlightcamps.org/go-to-camp/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "website_url",
+        "registration_url",
+        "state",
+        "primary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "price_min",
+        "price_max",
+        "price_per_week",
+        "price_per",
+        "financial_aid",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://lanternlightcamps.org/go-to-camp/",
+      "kind": "html",
+      "title": "Explore Summer Camp Programs at Lantern Light Camps"
+    },
+    "warnings": [
+      "Season is over: the page lists only 2026 sessions and prices, and today is 2026-10-13. No 2027 dates or prices are posted yet.",
+      "The camp offers both day and overnight programs, so camp_type is left empty. The sessions list shows both types.",
+      "price_per_week is the 2026 day camp rate ($389 per one-week session). Overnight sessions cost $1,139 each."
+    ],
+    "unknowns": [
+      "2027 session dates and prices",
+      "City, street address and ZIP (the page only says New Hampshire and the Wah-Tut-Ca property)",
+      "Phone and email",
+      "Session availability",
+      "When registration opens",
+      "Deposit and refund policy",
+      "Extended care for day camp",
+      "Whether day camp includes meals (overnight camp includes lodging and meals)",
+      "Transportation",
+      "Swimming or waterfront program",
+      "ACA accreditation",
+      "Support for special needs"
+    ],
+    "low_confidence": [
+      {
+        "field": "price_per_week",
+        "confidence": 0.6,
+        "quote": "Day Camp $389 per session"
+      },
+      {
+        "field": "price_min",
+        "confidence": 0.6,
+        "quote": "$389 per session"
+      },
+      {
+        "field": "price_max",
+        "confidence": 0.6,
+        "quote": "$1,139 per session"
+      },
+      {
+        "field": "sessions[0].start_date",
+        "confidence": 0.6,
+        "quote": "Session 1 June 29 – July 3, 2026 June 28 – July 3, 2026"
+      },
+      {
+        "field": "sessions[11].end_date",
+        "confidence": 0.6,
+        "quote": "Session 6 August 3–7, 2026 August 2–7, 2026"
+      },
+      {
+        "field": "activities",
+        "confidence": 0.7,
+        "quote": "Outdoor activities, games, and more"
+      },
+      {
+        "field": "primary_categories",
+        "confidence": 0.7,
+        "quote": "a lasting connection to the outdoors"
+      },
+      {
+        "field": "description_short",
+        "confidence": 0.7,
+        "quote": "A few snapshots from our renowned property."
+      },
+      {
+        "field": "registration_url",
+        "confidence": 0.7,
+        "quote": "Register for Camp"
+      },
+      {
+        "field": "website_url",
+        "confidence": 0.7,
+        "quote": "Explore Summer Camp Programs at Lantern Light Camps"
+      }
+    ],
+    "errors": [
+      "missing required city",
+      "missing required zip",
+      "missing required camp_type",
+      "camp_type must be one of ['day', 'sleepaway', 'specialty']",
+      "city None, NH is not in cities.py"
+    ]
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "slug": "kimama-half-moon",
+  "name": "Kimama Half Moon",
+  "operator_name": "Camp Kimama",
+  "website_url": "https://www.eng.campkimama.org/copy-of-half-moon-night-camp",
+  "registration_url": "https://kimamahalfmoon.campmanagement.com/p/campers/login_m.php",
+  "email": "usa@campkimama.org",
+  "phone": "+1-646-779-5579",
+  "city": null,
+  "state": "MA",
+  "zip": null,
+  "primary_categories": [
+    "sports"
+  ],
+  "age_min": 6,
+  "age_max": 17,
+  "description_short": "The US location of the Israeli camp organization Camp Kimama, on a lake property in the Berkshires of Massachusetts. Sessions run in July and August for ages 6-17, with day camp and sleepaway options and activities such as waterskiing, wakeboarding and woodshed.",
+  "activities": [
+    "waterskiing",
+    "wakeboarding",
+    "woodshed"
+  ],
+  "swim_waterfront_notes": "Camp is set on a lake on the property; waterskiing and wakeboarding are offered. Swim instruction and lifeguard details are not stated.",
+  "season_year": 2026,
+  "sources": [
+    {
+      "url": "https://www.eng.campkimama.org/copy-of-half-moon-night-camp",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "state",
+        "primary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "swim_waterfront_notes"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.eng.campkimama.org/copy-of-half-moon-night-camp",
+      "kind": "html",
+      "title": "HALFMOON NEW | Kimama"
+    },
+    "warnings": [
+      "This is an overview page with no session dates or prices; the linked Dates & Rates page (kimamahalfmoon.org/datesrates2026) is for 2026, a season that has already ended. No 2027 information is shown.",
+      "season_year is set to 2026 only because the site's menu and links mention 2026; the page doesn't tie this program to a specific year.",
+      "The page offers both a Day Camp and a Sleepaway Camp (the URL says 'night camp'), so camp_type is left blank.",
+      "The page says 'launch of our home in the USA', so this may be a new program with a short track record.",
+      "Two phone numbers appear: 099500544 (looks like the Israeli main office) and +1-646-779-5579 (the Half Moon US contact). The US number is recorded."
+    ],
+    "unknowns": [
+      "Session dates for 2027",
+      "Prices / weekly rates",
+      "Which camp type applies (day vs. sleepaway) and how the two programs differ",
+      "Exact street address, city and ZIP",
+      "Whether ages 6-17 apply to both day and sleepaway programs",
+      "Registration opening date and availability",
+      "Deposit and refund policy (a cancellation policy page is linked but not shown)",
+      "Financial aid",
+      "Transportation",
+      "Meals",
+      "Extended care for day camp",
+      "ACA accreditation",
+      "Special needs support",
+      "Swim instruction and waterfront supervision"
+    ],
+    "low_confidence": [
+      {
+        "field": "registration_url",
+        "confidence": 0.7,
+        "quote": "REGISTER NOW"
+      },
+      {
+        "field": "primary_categories",
+        "confidence": 0.6,
+        "quote": "waterskiing, wakeboarding"
+      },
+      {
+        "field": "season_year",
+        "confidence": 0.4,
+        "quote": "Summer 2026 Gallery"
+      }
+    ],
+    "errors": [
+      "missing required city",
+      "missing required zip",
+      "missing required camp_type",
+      "camp_type must be one of ['day', 'sleepaway', 'specialty']",
+      "city None, MA is not in cities.py"
+    ]
+  }
+}

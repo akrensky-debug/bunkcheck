@@ -1,0 +1,147 @@
+{
+  "slug": "camp-mowglis-hebron",
+  "name": "Camp Mowglis",
+  "website_url": "https://www.mowglis.org",
+  "registration_url": "https://www.mowglis.org/future-families/dates-rates/",
+  "phone": "603-744-8095",
+  "street_address": "4 Mowglis Drive",
+  "city": "Hebron",
+  "state": "NH",
+  "zip": "03241",
+  "camp_type": "sleepaway",
+  "primary_categories": [
+    "nature",
+    "sports",
+    "arts"
+  ],
+  "age_min": 7,
+  "age_max": 17,
+  "description_short": "Overnight summer camp for boys on Newfound Lake in Hebron, NH, with traditional outdoor activities such as swimming, hiking, climbing, crew and archery. About 100 campers, one counselor for every three campers, and campers sleep in screened open-air dormitories grouped by age.",
+  "activities": [
+    "swimming",
+    "hiking",
+    "rock climbing",
+    "crew",
+    "archery",
+    "nature studies",
+    "woodworking",
+    "cooking",
+    "arts and crafts",
+    "hiking trips",
+    "evening campfires"
+  ],
+  "price_min": 8100,
+  "price_max": 14410,
+  "swim_waterfront_notes": "Camp is beside Newfound Lake. Swimming and crew are listed as activities. The page gives no details on swim instruction or waterfront supervision.",
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "7-Week Full Season",
+      "start_date": "2027-06-26",
+      "end_date": "2027-08-15",
+      "price": 14410,
+      "availability": "open"
+    },
+    {
+      "name": "4-Week Cub Program",
+      "start_date": "2027-06-26",
+      "end_date": "2027-07-24",
+      "price": 9600,
+      "availability": "open"
+    },
+    {
+      "name": "4-Week Intro Pack",
+      "start_date": "2027-06-26",
+      "end_date": "2027-07-24",
+      "price": 11640,
+      "availability": "open"
+    },
+    {
+      "name": "3-Week Cub Program",
+      "start_date": "2027-07-25",
+      "end_date": "2027-08-15",
+      "price": 8100,
+      "availability": "open"
+    },
+    {
+      "name": "Yearling/Junior Staff",
+      "start_date": "2027-06-26",
+      "end_date": "2027-08-15",
+      "price": 8100,
+      "availability": "open"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.mowglis.org/best-boys-summer-camp-in-new-hampshire/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "price_min",
+        "price_max",
+        "swim_waterfront_notes",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.mowglis.org/best-boys-summer-camp-in-new-hampshire/",
+      "kind": "html",
+      "title": "Best Boys Summer Camp in New Hampshire 603-744-8095 | Camp Mowglis"
+    },
+    "warnings": [
+      "This is an SEO/marketing page on the camp's own site. The main text still says 'Sign up for our 2021 overnight camping session today', which is outdated. The 2027 dates and prices come from a rates table embedded in the page.",
+      "Banner says 'Camp is live!' even though today is October 2026. This text is out of date.",
+      "Yearling ages don't match: the rates table says 15-17, but the menu says 'Yearling Program: Ages 15-16' and 'Outdoor Leadership Camp for Boys 15-16'.",
+      "Yearling/Junior Staff (7 weeks) is listed at $8,100, the same as the 3-Week Cub Program. Check this with the camp.",
+      "Prices are labeled 'Full Freight'. Other rates may exist.",
+      "Footer copyright is 2025."
+    ],
+    "unknowns": [
+      "Email address (hidden on the page as '[email protected]')",
+      "Financial aid or reduced tuition (prices are labeled 'Full Freight', which suggests other rates may exist)",
+      "Deposit amount and payment schedule",
+      "Refund/cancellation policy (tuition insurance through Program Protector is offered)",
+      "Whether meals are included and dietary accommodations (there is a 'Food at Camp Mowglis' page)",
+      "Transportation from airports/arrival day logistics",
+      "ACA accreditation",
+      "Special needs support",
+      "Whether each session still has open spots",
+      "Waterfront/swim supervision details"
+    ],
+    "low_confidence": [
+      {
+        "field": "age_max",
+        "confidence": 0.7,
+        "quote": "Yearling/Junior Staff Ages (15-17)"
+      },
+      {
+        "field": "registration_url",
+        "confidence": 0.75,
+        "quote": "Rates & Dates"
+      },
+      {
+        "field": "sessions[*].availability",
+        "confidence": 0.65,
+        "quote": "2027 Registration is OPEN!"
+      }
+    ],
+    "errors": []
+  }
+}

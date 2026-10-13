@@ -1,0 +1,124 @@
+{
+  "slug": "camp-walt-whitman-piermont",
+  "name": "Camp Walt Whitman",
+  "website_url": "https://www.campwalt.com/",
+  "registration_url": "https://waltwhitman.campintouch.com/ui/forms/application/camper/App",
+  "phone": "1-800-657-8282",
+  "street_address": "1000 Cape Moonshine Road",
+  "city": "Piermont",
+  "state": "NH",
+  "zip": "03779",
+  "camp_type": "sleepaway",
+  "primary_categories": [
+    "sports",
+    "arts",
+    "nature"
+  ],
+  "grade_min": 2,
+  "description_short": "An overnight summer camp in Piermont, New Hampshire, built mainly around a seven-week full summer, with shorter first and second sessions for some age groups. The site lists athletics, arts, adventure and water sports.",
+  "activities": [
+    "Athletics",
+    "Arts",
+    "Adventure",
+    "Water Sports"
+  ],
+  "price_min": 9400,
+  "price_max": 17600,
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Full Summer",
+      "start_date": "2027-06-27",
+      "end_date": "2027-08-12",
+      "price": 17600,
+      "availability": "unknown"
+    },
+    {
+      "name": "First Session",
+      "start_date": "2027-06-27",
+      "end_date": "2027-07-24",
+      "price": 12150,
+      "availability": "unknown"
+    },
+    {
+      "name": "Second Session",
+      "start_date": "2027-07-25",
+      "end_date": "2027-08-12",
+      "price": 9400,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.campwalt.com/about/sessions-enrollment/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "grade_min",
+        "description_short",
+        "price_min",
+        "price_max",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.campwalt.com/about/sessions-enrollment/",
+      "kind": "html",
+      "title": "Summer Camp Sessions & Enrollments | Camp Walt Whitman"
+    },
+    "warnings": [
+      "Short sessions (First or Second Session) are mainly for campers currently in 2nd–3rd grade. For campers finishing 4th–7th grade they are offered only in limited numbers, and after finishing 6th grade every camper must attend all seven weeks.",
+      "The grade range is unclear. The page says 'currently in 2nd and 3rd grades' (the school year before camp) and 'finishing 4th through 7th grades', and does not state the oldest grade served.",
+      "The activities list comes from the site's menu, not from a description of the program."
+    ],
+    "unknowns": [
+      "Camper age range (the page gives only grades)",
+      "Oldest grade served",
+      "Whether a deposit is required and the payment schedule",
+      "Refund and cancellation policy",
+      "Financial aid availability",
+      "Transportation to and from camp",
+      "Whether meals are included (a 'Food & Nutrition' page exists but was not read)",
+      "ACA accreditation",
+      "Session availability and whether there is a waitlist",
+      "Registration opening date",
+      "Dates and price for Pioneer Camp (a 7-day orientation for first-timers)",
+      "Accommodations for special needs",
+      "Swim and waterfront details",
+      "Contact email",
+      "Operator or owner name"
+    ],
+    "low_confidence": [
+      {
+        "field": "grade_min",
+        "confidence": 0.7,
+        "quote": "half and full summer cabins for children currently in 2nd and 3rd grades"
+      },
+      {
+        "field": "activities",
+        "confidence": 0.7,
+        "quote": "Athletics Arts Adventure Water Sports"
+      },
+      {
+        "field": "primary_categories",
+        "confidence": 0.6,
+        "quote": "Athletics Arts Adventure Water Sports"
+      }
+    ],
+    "errors": []
+  }
+}

@@ -1,0 +1,173 @@
+{
+  "slug": "robin-hood-camp-brooksville",
+  "name": "Robin Hood Camp",
+  "website_url": "https://www.robinhoodcamp.com",
+  "registration_url": "https://robinhoodmaine.campintouch.com/ui/forms/application/camper/App",
+  "email": "robinhood@robinhoodcamp.com",
+  "phone": "207-359-8313",
+  "street_address": "70 Robin Hood Road (P.O. Box 189)",
+  "city": "Brooksville",
+  "state": "ME",
+  "zip": "04617",
+  "camp_type": "sleepaway",
+  "primary_categories": [
+    "sports",
+    "arts",
+    "performing_arts"
+  ],
+  "description_short": "Overnight summer camp in Brooksville, Maine, between a freshwater lake and the ocean, with more than 35 daily activities. Sessions run from two to seven weeks between June 27 and August 15, 2027.",
+  "activities": [
+    "Individual sports",
+    "Team sports",
+    "Waterfront",
+    "Indoor activities",
+    "Arts",
+    "Music",
+    "Performing arts",
+    "Trips and excursions",
+    "Golf",
+    "Tennis",
+    "Squash",
+    "Soccer",
+    "Horseback riding",
+    "Wakeboarding/waterskiing/wakesurfing"
+  ],
+  "price_min": 6615,
+  "price_max": 17515,
+  "refund_policy_summary": "The $1,000 registration fee is fully refundable until January 1, 2027. Tuition is fully refundable until April 1, 2027. After that there are no refunds for withdrawals or shortened stays (illness, homesickness, behavior dismissal), and no refunds for travel restrictions. The camp recommends tuition protection insurance (TravMark, 1-833-297-2258).",
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Seven Weeks (full season)",
+      "start_date": "2027-06-27",
+      "end_date": "2027-08-15",
+      "price": 17515,
+      "availability": "unknown"
+    },
+    {
+      "name": "Last Three Weeks",
+      "start_date": "2027-07-25",
+      "end_date": "2027-08-15",
+      "price": 8295,
+      "availability": "unknown"
+    },
+    {
+      "name": "Last Two Weeks",
+      "start_date": "2027-08-01",
+      "end_date": "2027-08-15",
+      "price": 6615,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.robinhoodcamp.com/maine-summer-camp-dates-rates/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "description_short",
+        "price_min",
+        "price_max",
+        "refund_policy_summary",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.robinhoodcamp.com/maine-summer-camp-dates-rates/",
+      "kind": "html",
+      "title": "Dates & Rates – Robin Hood Camp Maine"
+    },
+    "warnings": [
+      "The rate table is headed \"Tuition Rate Chart 2026\", but its due dates (April 1, 2027) and the camp dates are for 2027. These prices are most likely the 2027 rates, but check with the camp.",
+      "Session prices are the standard rates. They do not include the $1,000 registration fee, which is charged in every case. Lower rates apply if the application is in by October 15, 2026, which is two days from today: 'Early Registration' (tuition due April 1, 2027) and a lower 'Early Enrollment' (tuition paid with the application), for example $16,195 or $15,100 for seven weeks.",
+      "Last Three Weeks ($8,295) costs the same as Two Weeks. The page explains that the end-of-season sessions are discounted. The Last Two Weeks session has no Early Registration rate listed, only Early Enrollment ($6,200).",
+      "Start and end dates for the 6-, 5-, 4-, 3- and 2-week sessions are not stated, so they are left blank. Seven Weeks is assumed to cover Week One through Week Seven (June 27 – August 15, 2027).",
+      "Week Seven ends on Sunday, August 15. Every other week ends on a Saturday.",
+      "Sibling discounts: $500 for a second child and $1,000 more for a third, not given for two-week sessions. CIT campers pay an extra $200 per week activities fee. Extending a stay during the summer costs $1,700 per week.",
+      "5 sessions without full dates were left out"
+    ],
+    "unknowns": [
+      "Camper age range / grades",
+      "Exact dates for 6-, 5-, 4-, 3- and 2-week sessions",
+      "Session availability",
+      "Financial aid",
+      "Transportation to camp",
+      "ACA accreditation",
+      "Meals (assumed for a sleepaway camp, but not stated)",
+      "Swim/waterfront details and supervision",
+      "Special needs accommodations",
+      "Operator/owner name",
+      "Whether the 'Tuition Rate Chart 2026' label is a typo for 2027"
+    ],
+    "low_confidence": [
+      {
+        "field": "price_min",
+        "confidence": 0.75,
+        "quote": "Last Two Weeks (August 1-August 15) $6,615"
+      },
+      {
+        "field": "price_max",
+        "confidence": 0.75,
+        "quote": "Seven Weeks $17,515 Tuition due April 1, 2027"
+      },
+      {
+        "field": "sessions[0].price",
+        "confidence": 0.75,
+        "quote": "$17,515 Tuition due April 1, 2027"
+      },
+      {
+        "field": "sessions[1].price",
+        "confidence": 0.75,
+        "quote": "$15,680 Tuition due April  1, 2027"
+      },
+      {
+        "field": "sessions[2].price",
+        "confidence": 0.75,
+        "quote": "$13,780 Tuition due April 1, 2027"
+      },
+      {
+        "field": "sessions[3].price",
+        "confidence": 0.75,
+        "quote": "$11,760 Tuition due April  1, 2027"
+      },
+      {
+        "field": "sessions[4].price",
+        "confidence": 0.75,
+        "quote": "$10,185 Tuition due April  1, 2027"
+      },
+      {
+        "field": "sessions[5].price",
+        "confidence": 0.75,
+        "quote": "Two Weeks (by special approval) $8,295"
+      },
+      {
+        "field": "sessions[6].price",
+        "confidence": 0.7,
+        "quote": "Last Three Weeks (July 25 - August 15) $8,295"
+      },
+      {
+        "field": "sessions[7].price",
+        "confidence": 0.75,
+        "quote": "Last Two Weeks (August 1-August 15) $6,615"
+      }
+    ],
+    "errors": [
+      "city 'Brooksville', ME is not in cities.py"
+    ]
+  }
+}

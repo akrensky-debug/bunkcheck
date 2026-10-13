@@ -1,0 +1,101 @@
+{
+  "slug": "fun-in-the-sun-day-camp-manchester",
+  "name": "Fun In The Sun Day Camp",
+  "operator_name": "City of Manchester Parks & Recreation",
+  "website_url": "https://www.manchesternh.gov/Departments/Parks-and-Recreation/Programs-and-Activities",
+  "city": "Manchester",
+  "state": "NH",
+  "zip": null,
+  "camp_type": "day",
+  "primary_categories": [
+    "arts",
+    "sports"
+  ],
+  "grade_min": 1,
+  "grade_max": 8,
+  "description_short": "A summer day camp run by Manchester Parks & Recreation for Manchester residents in grades 1 to 8. Activities include games, arts and crafts, and swim lessons.",
+  "activities": [
+    "games",
+    "arts & crafts",
+    "swim lessons"
+  ],
+  "season_year": 2026,
+  "sources": [
+    {
+      "url": "https://www.manchesternh.gov/Departments/Parks-and-Recreation/Programs-and-Activities",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "description_short"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.manchesternh.gov/Departments/Parks-and-Recreation/Programs-and-Activities",
+      "kind": "html",
+      "title": "Programs and Activities"
+    },
+    "warnings": [
+      "This page lists all of the city's Parks & Recreation programs. The day camp gets only a short blurb, not a full camp page.",
+      "The only season shown is 2026, and it is marked 'FULL FOR 2026'. Today is 2026-10-13, so that season is over. Nothing has been posted yet about the 2027 season.",
+      "Open to Manchester residents only.",
+      "No session dates, prices or camp location are given. The only address on the page is City Hall (One City Hall Plaza), which may not be where the camp meets."
+    ],
+    "unknowns": [
+      "2027 session dates and weekly schedule",
+      "Price per week / session prices",
+      "When registration opens for 2027 and the registration link",
+      "Camp location / street address",
+      "Daily hours and whether before/after care is offered",
+      "Whether meals or snacks are provided",
+      "Where swimming happens and how swim lessons are supervised",
+      "Financial aid or fee assistance",
+      "Refund and deposit policy",
+      "Accommodations for children with special needs",
+      "Contact phone and email for the camp",
+      "Transportation"
+    ],
+    "low_confidence": [
+      {
+        "field": "grade_min",
+        "confidence": 0.7,
+        "quote": "Manchester residents, grades 1 to 8"
+      },
+      {
+        "field": "grade_max",
+        "confidence": 0.7,
+        "quote": "Manchester residents, grades 1 to 8"
+      },
+      {
+        "field": "activities",
+        "confidence": 0.75,
+        "quote": "Fill your summer with games, arts & crafts, swim lessons, and more!"
+      },
+      {
+        "field": "primary_categories",
+        "confidence": 0.5,
+        "quote": "games, arts & crafts, swim lessons, and more"
+      },
+      {
+        "field": "description_short",
+        "confidence": 0.75,
+        "quote": "Fill your summer with games, arts & crafts, swim lessons, and more! Manchester residents, grades 1 to 8"
+      }
+    ],
+    "errors": [
+      "missing required zip"
+    ]
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "slug": "camp-robindel",
+  "name": "Camp Robindel",
+  "website_url": "https://robindel.com",
+  "registration_url": "https://robindel.campintouch.com/ui/forms/application/camper/App",
+  "phone": "215-518-6021",
+  "city": null,
+  "state": null,
+  "zip": null,
+  "camp_type": "sleepaway",
+  "primary_categories": [
+    "sports",
+    "nature"
+  ],
+  "description_short": "An all-girls overnight summer camp, running since 1951, with a full seven-week summer session. There is also a two-week introductory session for girls entering 2nd grade.",
+  "activities": [
+    "horseback riding (optional, extra fee)",
+    "campfires",
+    "camp songs",
+    "canteen",
+    "Blue & White color war",
+    "senior trips: Maine coast camping, white water rafting, rock climbing, Canada trip"
+  ],
+  "price_min": 5500,
+  "price_max": 17300,
+  "transportation": true,
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "CR Full Experience (full session)",
+      "start_date": "2027-06-22",
+      "end_date": "2027-08-07",
+      "price": 17300,
+      "availability": "unknown"
+    },
+    {
+      "name": "2 Weeks on Winni (introductory, girls entering 2nd grade)",
+      "start_date": "2027-06-22",
+      "end_date": "2027-07-06",
+      "price": 5500,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://robindel.com/dates-rates",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "description_short",
+        "price_min",
+        "price_max",
+        "transportation",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://robindel.com/dates-rates",
+      "kind": "html",
+      "title": "All Girls Summer Camp Near You, Camp Robindel Dates & Rates"
+    },
+    "warnings": [
+      "Full session dates have no year printed; 2027 assumed from the '2027 Dates & Rates' heading (the weekdays match 2027).",
+      "Extra fees: transportation, baggage shipment, optional horseback riding ($1000 regular / $1600 intensive), and senior trips for campers entering 7th grade and up.",
+      "Sibling discount for full-session campers: $500 for the second child, $750 for a third.",
+      "Payment schedule (seems to apply to the full session): $3500 deposit with application, $3500 by Dec 1, $3500 by Feb 1, balance by Apr 1. The page does not say whether the 2-week program follows the same schedule.",
+      "Two director phone numbers are listed (Jolly 215-518-6021, Cori 858-245-9625); only the first is recorded in the phone field.",
+      "The page says ACA accredited: check it on acacamps.org and add aca_accredited with aca_source_url"
+    ],
+    "unknowns": [
+      "Camp street address, city, state and zip (page only mentions 'Lake Winni')",
+      "Age range and grade range for the full session (only the 2-week program, for girls entering 2nd grade, is stated)",
+      "Email addresses for the directors (links shown, addresses not given)",
+      "Cost of transportation, baggage shipment and senior trips",
+      "Refund/cancellation policy",
+      "Financial aid availability",
+      "Whether sessions have space or a waitlist",
+      "When 2027 registration opens",
+      "Special needs accommodations",
+      "Swim/waterfront details"
+    ],
+    "low_confidence": [
+      {
+        "field": "primary_categories",
+        "confidence": 0.6,
+        "quote": "optional horseback riding"
+      }
+    ],
+    "errors": [
+      "missing required city",
+      "missing required state",
+      "missing required zip"
+    ]
+  }
+}

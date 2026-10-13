@@ -109,6 +109,7 @@ Nothing here is on the site until it is promoted and imported.
 | [Summer at JWU – Summer Cooking Camps for Kids and Teens (Providence)](summer-at-jwu-summer-cooking-camps-for-kids-and-teens-providence-providence.json) | Providence | 4 | 0 | 1 | 5 | unchecked |
 | [Summer Camp with Six Bros. Baseball](summer-camp-with-six-bros-baseball-bellingham.json) | Bellingham | 2 | 1 | 10 | 4 | unchecked |
 | [Summer Camps at Bishop Hendricken High School](summer-camps-at-bishop-hendricken-high-school-warwick.json) | Warwick | 1 | 0 | 7 | 5 | unchecked |
+| [Summer Camps at Kingston Hill Academy](summer-camps-at-kingston-hill-academy-saunderstown.json) | Saunderstown | 6 | 0 | 4 | 5 | unchecked |
 | [Summer Elements (Nature Camp & Adventure Camp)](summer-elements-nature-camp-and-adventure-camp-south-dartmouth.json) | South Dartmouth | 12 | 2 | 9 | 6 | unchecked |
 | [Summer Friends](summer-friends-north-dartmouth.json) | North Dartmouth | 9 | 1 | 10 | 4 | unchecked |
 | [Summer Fun Program](summer-fun-program-new-bedford.json) | New Bedford | 8 | 1 | 9 | 4 | unchecked |
@@ -181,6 +182,7 @@ These hosts refused the fetcher. That is the answer: ask the camp to send its br
 - Ballet RI Children's Summer Dance Camps: https://balletri.org/summer/
 - Camp Grosvenor: https://bgcnewport.org/what-we-do/camp-grosvenor/
 - BGCNRI Summer Art Camps: https://bgcnri.org/summer-art-camps/
+- Ballet RI Summer Dance Camp: https://festivalballetprovidence.org/school/
 
 ## Failed
 

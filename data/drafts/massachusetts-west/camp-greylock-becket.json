@@ -1,0 +1,78 @@
+{
+  "slug": "camp-greylock-becket",
+  "name": "Camp Greylock",
+  "website_url": "https://campgreylock.com/",
+  "registration_url": "https://greylock.campintouch.com/ui/forms/application/camper/App",
+  "city": "Becket",
+  "state": "MA",
+  "zip": null,
+  "camp_type": "sleepaway",
+  "primary_categories": [
+    "sports",
+    "arts",
+    "nature"
+  ],
+  "age_min": 6,
+  "age_max": 16,
+  "description_short": "A traditional overnight camp for boys ages 6 to 16 on Center Lake in Becket, Massachusetts. The program covers land sports, watersports, arts and adventure, and campers are split evenly between junior and senior groups.",
+  "activities": [
+    "Land sports",
+    "Watersports",
+    "Arts",
+    "Adventure",
+    "Outdoor activities"
+  ],
+  "swim_waterfront_notes": "The camp is on Center Lake (lakefront campus of nearly 300 acres) and offers watersports. The page gives no details on swim instruction or waterfront supervision.",
+  "sources": [
+    {
+      "url": "https://campgreylock.com/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "website_url",
+        "registration_url",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "swim_waterfront_notes"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://campgreylock.com/",
+      "kind": "html",
+      "title": "The Best Boys Sports Camp Near You, Greylock Sleepaway Camp"
+    },
+    "warnings": [
+      "This is the camp's homepage only. It has no season dates or prices, so season_year is left blank and no sessions are recorded. Check the Dates & Fees page for 2027 details.",
+      "Boys-only camp.",
+      "The page says ACA accredited: check it on acacamps.org and add aca_accredited with aca_source_url"
+    ],
+    "unknowns": [
+      "2027 session dates and lengths (see https://campgreylock.com/dates-fees)",
+      "Tuition / session prices",
+      "Deposit requirement and refund policy",
+      "Financial aid availability",
+      "Transportation to camp",
+      "Exact street address, ZIP, phone, and email",
+      "Operator / owner name",
+      "Registration opening date and current availability",
+      "Accommodations for special needs",
+      "Swim instruction and waterfront supervision details",
+      "Whether ages 6 to 16 is the exact enrollment range or a grade range applies"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "missing required zip",
+      "missing required season_year"
+    ]
+  }
+}

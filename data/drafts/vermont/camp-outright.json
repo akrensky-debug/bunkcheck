@@ -1,0 +1,135 @@
+{
+  "slug": "camp-outright",
+  "name": "Camp Outright",
+  "operator_name": "Outright Vermont",
+  "website_url": "https://outrightvt.org/camp-outright",
+  "email": "jennifer@outrightvt.org",
+  "phone": "802-865-9677",
+  "city": null,
+  "state": "VT",
+  "zip": null,
+  "camp_type": "sleepaway",
+  "primary_categories": [
+    "nature",
+    "arts",
+    "performing_arts",
+    "sports"
+  ],
+  "age_min": 13,
+  "age_max": 17,
+  "description_short": "A one-week overnight summer camp in Vermont for LGBTQ+ and allied youth ages 13-17, run by Outright Vermont. Campers stay in rustic cabins and pick their own activities, including nature activities, arts, sports and social justice workshops.",
+  "activities": [
+    "hiking",
+    "swimming",
+    "archery",
+    "outdoor games and sports",
+    "campfires",
+    "zine making",
+    "drawing and sculpting",
+    "theater games",
+    "music",
+    "queer prom",
+    "Dungeons & Dragons",
+    "sockapella",
+    "fairy house crafting",
+    "astrology",
+    "tea parties",
+    "friendship bracelets",
+    "social justice workshops"
+  ],
+  "price_min": 1400,
+  "price_max": 1400,
+  "financial_aid": true,
+  "transportation": true,
+  "meals_included": true,
+  "special_needs_notes": "An onsite Wellness Team from UVM Medical Center (two medical residents and a nurse, supervised by a pediatric specialist) is at camp. Three licensed mental health providers are also there, but this is not a therapeutic camp. Medications are kept locked and handed out by medical staff. Allergens are labeled at meals, with vegetarian, vegan and gluten-free options.",
+  "swim_waterfront_notes": "Swimming is in a pond and is optional. Two certified lifeguards plus other staff always supervise. Campers must pass a swim test before going past the roped-off shallow end. Swimwear must cover the chest.",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Session 1",
+      "start_date": "2026-07-03",
+      "end_date": "2026-07-09",
+      "price": 1400,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 2",
+      "start_date": "2026-07-11",
+      "end_date": "2026-07-17",
+      "price": 1400,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://outrightvt.org/camp-outright",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "phone",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "price_min",
+        "price_max",
+        "transportation",
+        "meals_included",
+        "financial_aid",
+        "special_needs_notes",
+        "swim_waterfront_notes",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://outrightvt.org/camp-outright",
+      "kind": "html",
+      "title": "Camp Outright — Outright Vermont"
+    },
+    "warnings": [
+      "The page only shows the 2026 season (July 3-17, 2026), which has already ended. No 2027 dates, prices or application window are posted yet.",
+      "Applications for 2026 are listed as closed.",
+      "Tuition is $1,400, but scholarships can lower it to nothing, with no paperwork. The page does not say if 2027 tuition will change.",
+      "The only address given is Outright Vermont's PO Box in Burlington. The page does not say where the campsite is.",
+      "Transportation is not a camp-run service. The camp helps arrange carpools for in-state families, and volunteers drive campers from Burlington airport (BTV).",
+      "There is no deposit when you apply. Tuition can be paid in installments, as long as it is paid in full by the start of camp."
+    ],
+    "unknowns": [
+      "2027 session dates",
+      "2027 tuition",
+      "2027 application window",
+      "Campsite address/town",
+      "Refund/cancellation policy",
+      "ACA accreditation",
+      "Registration URL (applications go through CampBrain, but no link is given)"
+    ],
+    "low_confidence": [
+      {
+        "field": "deposit_required",
+        "confidence": 0.6,
+        "quote": "No deposit is required at this stage in the process."
+      },
+      {
+        "field": "transportation",
+        "confidence": 0.55,
+        "quote": "we can connect you with a volunteer to provide transportation to camp from the Burlington airport (BTV)"
+      }
+    ],
+    "errors": [
+      "missing required city",
+      "missing required zip",
+      "city None, VT is not in cities.py"
+    ]
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "slug": "waynflete-summer-camp-portland",
+  "name": "Waynflete Summer Camp",
+  "operator_name": "Waynflete",
+  "website_url": "https://summer.waynflete.org/camps",
+  "registration_url": "https://waynfletecamp.campbrainregistration.com/",
+  "email": "summer@waynflete.org",
+  "phone": "(207) 477-9473",
+  "street_address": "360 Spring St.",
+  "city": "Portland",
+  "state": "ME",
+  "zip": "04102",
+  "camp_type": "day",
+  "primary_categories": [
+    "sports",
+    "arts",
+    "performing_arts",
+    "nature",
+    "STEM",
+    "technology"
+  ],
+  "age_min": 4,
+  "age_max": 16,
+  "grade_min": 0,
+  "grade_max": 12,
+  "description_short": "Summer camp program run by Waynflete school in Portland, Maine, offering weekly camp sessions over seven weeks for ages 4–16. Options include sports, performing arts, nature, STEM and coding, arts, Dungeons & Dragons, and a Counselor-in-Training program.",
+  "activities": [
+    "Soccer",
+    "Sports",
+    "Performing arts",
+    "Nature exploration (Eco Explorers)",
+    "Science",
+    "STEAM",
+    "Coding",
+    "Ceramics",
+    "Specialty arts",
+    "Dungeons & Dragons",
+    "Counselor in Training program"
+  ],
+  "extended_care": true,
+  "transportation": true,
+  "sources": [
+    {
+      "url": "https://summer.waynflete.org/camps",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "grade_min",
+        "grade_max",
+        "description_short",
+        "extended_care",
+        "transportation"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://summer.waynflete.org/camps",
+      "kind": "html",
+      "title": "Waynflete Summer - Summer Camps For All Ages"
+    },
+    "warnings": [
+      "The 2026 season is over and the 2027 details are not out yet. The page says: \"THANK YOU FOR A GREAT SEASON! Stay tuned for 2027 camp information.\" The camp lineup shown may be from the past season and could change.",
+      "season_year is left blank because no year is given for the camps listed.",
+      "There are no session dates or prices on this page, so no sessions were recorded.",
+      "Treating this as a day camp is an inference from the 'Before/Aftercare & Bus' listing. The page doesn't say so directly.",
+      "Age and grade ranges differ by program (Mini Flyers ages 4-5, CIT ages 14-16, others listed by grade K-12). grade_min 0 stands for kindergarten.",
+      "Enrollment for each session closes on the Monday of the week before it starts."
+    ],
+    "unknowns": [
+      "2027 session dates (not yet published)",
+      "2027 tuition / weekly price (see Tuition page: https://summer.waynflete.org/about/tuition)",
+      "Daily hours",
+      "Before/aftercare hours and cost",
+      "Bus routes and cost",
+      "Deposit requirement",
+      "Refund policy (see Forms and Policies)",
+      "Financial aid availability",
+      "Whether lunch/snacks are provided",
+      "Swimming or waterfront activities",
+      "Special needs accommodations",
+      "ACA accreditation",
+      "When 2027 registration opens",
+      "Per-camp age/grade ranges and availability for 2027"
+    ],
+    "low_confidence": [
+      {
+        "field": "camp_type",
+        "confidence": 0.7,
+        "quote": "Before/Aftercare & Bus"
+      },
+      {
+        "field": "grade_min",
+        "confidence": 0.7,
+        "quote": "Flyers Camps (K-2)"
+      },
+      {
+        "field": "grade_max",
+        "confidence": 0.7,
+        "quote": "Bonus Camps (1-12)"
+      },
+      {
+        "field": "transportation",
+        "confidence": 0.75,
+        "quote": "Before/Aftercare & Bus"
+      }
+    ],
+    "errors": [
+      "missing required season_year"
+    ]
+  }
+}

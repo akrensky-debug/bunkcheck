@@ -1,0 +1,177 @@
+{
+  "slug": "camp-downer-sharon",
+  "name": "Camp Downer",
+  "website_url": "https://campdowner.com",
+  "registration_url": "https://campdowner.campbrainregistration.com",
+  "email": "registrar@campdowner.com",
+  "phone": "802-763-7007",
+  "street_address": "1535 Downer Road",
+  "city": "Sharon",
+  "state": "VT",
+  "zip": "05065",
+  "camp_type": "sleepaway",
+  "age_min": 8,
+  "age_max": 16,
+  "description_short": "Overnight summer camp in Sharon, Vermont for campers ages 8 to 16, with one-week sessions running Sunday to Friday and a two-week CIT II session for ages 11 to 16. Families pick one of three voluntary price tiers, and partial or full scholarships are available.",
+  "price_min": 560,
+  "price_max": 1540,
+  "financial_aid": true,
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Session 1",
+      "start_date": "2026-06-21",
+      "end_date": "2026-06-26",
+      "price": null,
+      "availability": "waitlist"
+    },
+    {
+      "name": "Session 2",
+      "start_date": "2026-06-28",
+      "end_date": "2026-07-03",
+      "price": null,
+      "availability": "waitlist"
+    },
+    {
+      "name": "Session 3 (two-week, CIT II)",
+      "start_date": "2026-07-05",
+      "end_date": "2026-07-17",
+      "price": null,
+      "availability": "waitlist"
+    },
+    {
+      "name": "Session 4",
+      "start_date": "2026-07-19",
+      "end_date": "2026-07-24",
+      "price": null,
+      "availability": "waitlist"
+    },
+    {
+      "name": "Session 5",
+      "start_date": "2026-07-26",
+      "end_date": "2026-07-31",
+      "price": null,
+      "availability": "open"
+    },
+    {
+      "name": "Session 6",
+      "start_date": "2026-08-02",
+      "end_date": "2026-08-07",
+      "price": null,
+      "availability": "waitlist"
+    },
+    {
+      "name": "Session 7",
+      "start_date": "2026-08-09",
+      "end_date": "2026-08-14",
+      "price": null,
+      "availability": "open"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://campdowner.com/registration/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "age_min",
+        "age_max",
+        "description_short",
+        "price_min",
+        "price_max",
+        "financial_aid",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://campdowner.com/registration/",
+      "kind": "html",
+      "title": "Registration, Calendar, & Rates | Camp Downer"
+    },
+    "warnings": [
+      "The page shows only the 2026 season, and that summer has already ended (today is 2026-10-13). There are no 2027 dates, prices or availability yet.",
+      "Availability is a past snapshot. For Sessions 5 and 7, only Boys+ campers had spots available; Girls+ campers were waitlisted. All other sessions were waitlisted for both groups.",
+      "Prices are tiered and the family chooses one: one week costs $560, $670 or $780, and two weeks cost $1320, $1430 or $1540. Session prices are left blank because there is no single price.",
+      "The February 7 registration date comes from the 2026 season."
+    ],
+    "unknowns": [
+      "2027 session dates, rates and registration opening date",
+      "2027 scholarship application timeline",
+      "Activities offered (programs page not included in source)",
+      "Deposit requirements",
+      "Refund/cancellation policy",
+      "Whether meals are included (likely for overnight camp but not stated)",
+      "Transportation options",
+      "Swim/waterfront details",
+      "Special needs accommodations",
+      "ACA accreditation",
+      "Operator/organization legal name"
+    ],
+    "low_confidence": [
+      {
+        "field": "price_min",
+        "confidence": 0.6,
+        "quote": "Tier C ... One-week session: $560"
+      },
+      {
+        "field": "price_max",
+        "confidence": 0.6,
+        "quote": "Tier A ... Two-week session: $1540"
+      },
+      {
+        "field": "sessions[0].start_date",
+        "confidence": 0.6,
+        "quote": "Session 1: Sunday, June 21st - Friday, June 26th"
+      },
+      {
+        "field": "sessions[1].start_date",
+        "confidence": 0.6,
+        "quote": "Session 2: Sunday, June 28th - Friday, July 3rd"
+      },
+      {
+        "field": "sessions[2].start_date",
+        "confidence": 0.6,
+        "quote": "Session 3: Sunday, July 5th - Friday, July 17th"
+      },
+      {
+        "field": "sessions[3].start_date",
+        "confidence": 0.6,
+        "quote": "Session 4: Sunday, July 19th - Friday, July 24th"
+      },
+      {
+        "field": "sessions[4].availability",
+        "confidence": 0.4,
+        "quote": "Boys+ Campers: Spots available! Girls+ Campers: Waitlisting"
+      },
+      {
+        "field": "sessions[5].start_date",
+        "confidence": 0.6,
+        "quote": "Session 6: Sunday, August 2nd - Friday, August 7th"
+      },
+      {
+        "field": "sessions[6].start_date",
+        "confidence": 0.6,
+        "quote": "Session 7: Sunday, August 9th - Friday, August 14th"
+      },
+      {
+        "field": "sessions[0].registration_opens_at",
+        "confidence": 0.5,
+        "quote": "will not need to enter general registration on February 7th"
+      }
+    ],
+    "errors": []
+  }
+}

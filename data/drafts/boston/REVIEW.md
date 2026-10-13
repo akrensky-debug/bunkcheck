@@ -16,10 +16,13 @@ Nothing here is on the site until it is promoted and imported.
 | [Brookline Recreation Summer Day Camp](brookline-recreation-summer-day-camp-brookline.json) | Brookline | 6 | 1 | 1 | 5 | unchecked |
 | [Brooks Day Camp – Group 3 (Ages 8-10)](brooks-day-camp-group-3-ages-8-10-north-andover.json) | North Andover | 4 | 0 | 2 | 2 | unchecked |
 | [Cambridge YMCA Summer Program](cambridge-ymca-summer-program-cambridge.json) | Cambridge | 8 | 0 | 3 | 6 | unchecked |
+| [Camp Bauercrest](camp-bauercrest-amesbury.json) | Amesbury | 7 | 0 | 1 | 6 | unchecked |
+| [Camp Bournedale](camp-bournedale-plymouth.json) | Plymouth | 14 | 0 | 11 | 4 | unchecked |
 | [Camp Brookside](camp-brookside-brockton.json) | Brockton | 8 | 0 | 2 | 4 | unchecked |
 | [Camp Christina](camp-christina-stoughton.json) | Stoughton | 10 | 0 | 6 | 5 | unchecked |
 | [Camp Clearbrook](camp-clearbrook-framingham.json) | Framingham | 0 | 0 | 5 | 4 | unchecked |
 | [Camp Evergreen](camp-evergreen-andover.json) | Andover | 0 | 3 | 1 | 3 | unchecked |
+| [Camp Jabberwocky Summer Camp](camp-jabberwocky-summer-camp-vineyard-haven.json) | Vineyard Haven | 8 | 1 | 2 | 4 | unchecked |
 | [Camp OCP (OCP Summer Program)](camp-ocp-ocp-summer-program-framingham.json) | Framingham | 0 | 0 | 5 | 7 | unchecked |
 | [Camp Satucket](camp-satucket-east-bridgewater.json) | East Bridgewater | 10 | 0 | 7 | 4 | unchecked |
 | [Camp Three Rivers](camp-three-rivers-concord.json) | Concord | 0 | 0 | 3 | 4 | unchecked |
@@ -29,7 +32,9 @@ Nothing here is on the site until it is promoted and imported.
 | [CSW Summer Day Camp](csw-summer-day-camp-weston.json) | Weston | 0 | 1 | 3 | 3 | unchecked |
 | [DHSP Summer Camps and Programs (K-8)](dhsp-summer-camps-and-programs-k-8-cambridge.json) | Cambridge | 3 | 0 | 1 | 5 | unchecked |
 | [Energy Center Camp (Ages 4-6)](energy-center-camp-ages-4-6-weymouth.json) | Weymouth | 2 | 0 | 7 | 5 | unchecked |
+| [Everwood Day Camp](everwood-day-camp-sharon.json) | Sharon | 5 | 0 | 2 | 4 | unchecked |
 | [FaySummer Classic Day Camp](faysummer-classic-day-camp-southborough.json) | Southborough | 5 | 0 | 12 | 3 | unchecked |
+| [Girl Scout Summer Day Camp (GSEMA)](girl-scout-summer-day-camp-gsema.json) | ? | 0 | 3 | 2 | 7 | unchecked |
 | [iSTEAM Robotics (Summer Shore)](isteam-robotics-summer-shore-beverly.json) | Beverly | 2 | 0 | 0 | 3 | unchecked |
 | [Kidstock! Creative Theater SUMMERSTAGE](kidstock-creative-theater-summerstage-winchester.json) | Winchester | 0 | 0 | 3 | 4 | unchecked |
 | [Lexington Summer Sports Clinics and Classes](lexington-summer-sports-clinics-and-classes-lexington.json) | Lexington | 0 | 2 | 1 | 4 | unchecked |
@@ -39,12 +44,18 @@ Nothing here is on the site until it is promoted and imported.
 | [Newton Community Education](newton-community-education-newton.json) | Newton | 0 | 3 | 0 | 3 | unchecked |
 | [North River Nature Camp](north-river-nature-camp-marshfield.json) | Marshfield | 0 | 1 | 1 | 4 | unchecked |
 | [Pequossette Summer Recreation Program](pequossette-summer-recreation-program-watertown.json) | Watertown | 9 | 1 | 1 | 6 | unchecked |
+| [Pingree Day Camp](pingree-day-camp-south-hamilton.json) | South Hamilton | 12 | 1 | 6 | 5 | unchecked |
+| [South Shore Art Center – Youth Education](south-shore-art-center-youth-education-cohasset.json) | Cohasset | 6 | 0 | 2 | 5 | unchecked |
 | [Summer Arts & Music](summer-arts-and-music-boston.json) | Boston | 4 | 1 | 3 | 4 | unchecked |
 | [Summer at Inly](summer-at-inly-scituate.json) | Scituate | 1 | 0 | 4 | 4 | unchecked |
+| [Summer at Park](summer-at-park-brookline.json) | Brookline | 0 | 1 | 5 | 6 | unchecked |
 | [Summer at Shady Hill School](summer-at-shady-hill-school-cambridge.json) | Cambridge | 0 | 0 | 4 | 4 | unchecked |
 | [Summer@Carroll](summer-carroll-waltham.json) | Waltham | 4 | 0 | 1 | 5 | unchecked |
 | [Summer Connect](summer-connect-lawrence.json) | Lawrence | 0 | 2 | 1 | 3 | unchecked |
+| [Summer Fenn](summer-fenn-concord.json) | Concord | 12 | 0 | 3 | 5 | unchecked |
 | [Summer Fun Program](summer-fun-program-medford.json) | Medford | 0 | 0 | 3 | 5 | unchecked |
+| [Summer Horsemanship Program](summer-horsemanship-program-wellesley.json) | Wellesley | 5 | 0 | 13 | 9 | unchecked |
+| [Summer Program for Children](summer-program-for-children-boston.json) | Boston | 7 | 1 | 0 | 5 | unchecked |
 | [Summer Programs at Walnut Hill](summer-programs-at-walnut-hill-natick.json) | Natick | 0 | 0 | 2 | 5 | unchecked |
 | [Summer Shore Day Camp](summer-shore-day-camp-beverly.json) | Beverly | 15 | 0 | 8 | 4 | unchecked |
 | [Summer @ SSC (South Shore Conservatory Summer Programs)](summer-ssc-south-shore-conservatory-summer-programs.json) | ? | 4 | 3 | 3 | 6 | unchecked |
@@ -88,6 +99,10 @@ These hosts refused the fetcher. That is the answer: ask the camp to send its br
 - Camp Eastman: https://www.ymcametronorth.org/summer-camp/campeastman/
 - Camp Quirk: https://ssymca.org/program/camp/camp-quirk/
 - Camp Harbor Quest at Forest River: https://www.northshoreymca.org/camps/salem-harbor-quest/
+- Steve & Kate's Camp Boston: https://steveandkatescamp.com/boston/
+- Steve & Kate's Camp Cambridge: http://steveandkatescamp.com/locations/cambridge/
+- Barnstable Recreation Summer Leisure Program: https://townofbarnstable.us/Departments/Recreation/Programs_and_Applications/SUMMER-Program-Brochure.pdf?tm=7/4/2025+4:48:24+AM
+- Camp Barnstable: https://ymcacapecod.org/programs/camp/west-barnstable-day-camp/
 
 ## Failed
 
@@ -103,3 +118,4 @@ These hosts refused the fetcher. That is the answer: ask the camp to send its br
 - Y STEAM Camp: https://www.metrowestymca.org/camps/y-steam-camp (fetch: https://www.metrowestymca.org/camps/y-steam-camp returned 404)
 - Camp Clark: https://www.oldcolonyymca.org/child-care-camps/camps/camp-clark (no camp on the page: the page names no camp)
 - Club Adventure Summer Camp: https://watertownbgc.org/wbgc-programs/summer/ (fetch: https://watertownbgc.org/wbgc-programs/summer/ could not be reached (ConnectTimeout); try again later)
+- Running Brook Camps: https://www.runningbrook.org/day-camp/schedules (fetch: https://www.runningbrook.org/day-camp/schedules returned 404)

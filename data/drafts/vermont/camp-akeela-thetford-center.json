@@ -1,0 +1,102 @@
+{
+  "slug": "camp-akeela-thetford-center",
+  "name": "Camp Akeela",
+  "website_url": "https://campakeela.com/",
+  "phone": "802-333-4843",
+  "street_address": "One Thoreau Way",
+  "city": "Thetford Center",
+  "state": "VT",
+  "zip": "05075",
+  "camp_type": "sleepaway",
+  "description_short": "Overnight summer camp in Thetford Center, Vermont, offering two three-week sessions in 2027. Tuition is all-inclusive, apart from baggage shipping and optional return transportation, and includes a one-way bus ride to camp.",
+  "price_min": 9900,
+  "price_max": 9900,
+  "financial_aid": true,
+  "transportation": true,
+  "special_needs_notes": "The page points families to CampLauncher, which provides needs-based camperships to neurodivergent youth. The site menu includes \"How We Approach Social Skills.\" This page does not say whether the camp serves a specific population.",
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Session 1",
+      "start_date": "2027-06-25",
+      "end_date": "2027-07-16",
+      "price": 9900,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 2",
+      "start_date": "2027-07-19",
+      "end_date": "2027-08-09",
+      "price": 9900,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://campakeela.com/dates-and-rates/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "website_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "description_short",
+        "price_min",
+        "price_max",
+        "transportation",
+        "financial_aid",
+        "special_needs_notes",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://campakeela.com/dates-and-rates/",
+      "kind": "html",
+      "title": "Dates and Rates - Camp Akeela"
+    },
+    "warnings": [
+      "The page also lists a separate Family Camp (Aug 12–17, 2027, $4400, plus $750 per person for guests beyond 4; cabins hold up to 10). This is a family program, not a camper session, so it is not included in sessions.",
+      "Beyond Akeela 2027 sessions are listed as TBA and are not recorded.",
+      "Financial aid comes from outside organizations (CampLauncher, ESS). The camp itself offers payment plans.",
+      "The camp has a winter office at 314 Bryn Mawr Avenue, Bala Cynwyd, PA 19004 (Sept 1 – May 31). The address recorded is the Vermont summer camp address."
+    ],
+    "unknowns": [
+      "Camper age or grade range",
+      "Activities offered (see the Activities/Typical Day page)",
+      "Whether the camp is designed for a specific population, e.g. neurodivergent kids or a social-skills focus",
+      "Whether meals are explicitly included (tuition is described as 'all inclusive')",
+      "Availability or openings for each session",
+      "Registration open date and how to apply",
+      "Deposit amount and payment terms",
+      "Cancellation and refund policy (linked from the page but not shown)",
+      "Email address",
+      "ACA accreditation",
+      "Swimming and waterfront details",
+      "Bus pickup locations and cost of the optional return transportation",
+      "Beyond Akeela 2027 dates and prices (listed as TBA)"
+    ],
+    "low_confidence": [
+      {
+        "field": "financial_aid",
+        "confidence": 0.7,
+        "quote": "Financial aid may be available from CampLauncher ... and ESS ... Payment plans are also available from Akeela"
+      },
+      {
+        "field": "special_needs_notes",
+        "confidence": 0.6,
+        "quote": "CampLauncher, which helps provide needs-based camperships to neurodivergent youth"
+      }
+    ],
+    "errors": [
+      "city 'Thetford Center', VT is not in cities.py"
+    ]
+  }
+}

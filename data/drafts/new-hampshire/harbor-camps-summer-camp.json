@@ -1,0 +1,148 @@
+{
+  "slug": "harbor-camps-summer-camp",
+  "name": "Harbor Camps Summer Camp",
+  "operator_name": "Harbor Camps",
+  "website_url": "https://harborcamps.org/our-programs/summer-program/",
+  "registration_url": "https://harborcamps.campmanagement.com/enroll",
+  "phone": "781-400-1617",
+  "city": null,
+  "state": "NH",
+  "zip": null,
+  "camp_type": "sleepaway",
+  "primary_categories": [
+    "nature",
+    "sports",
+    "arts"
+  ],
+  "age_min": 8,
+  "age_max": 15,
+  "description_short": "An overnight lakefront camp in New Hampshire for transgender and non-binary youth. It offers traditional camp activities and does not formally talk about gender. New campers must be ages 8-14, and returning campers can attend through age 15.",
+  "activities": [
+    "canoeing",
+    "kayaking",
+    "swimming",
+    "stand-up paddle boarding",
+    "tubing",
+    "arts & crafts",
+    "drama/acting",
+    "music",
+    "archery",
+    "rock climbing",
+    "gaga",
+    "low ropes course",
+    "soccer",
+    "kickball",
+    "basketball",
+    "volleyball",
+    "campfires",
+    "talent show"
+  ],
+  "price_per_week": 1725,
+  "price_min": 1170,
+  "price_max": 1725,
+  "financial_aid": true,
+  "transportation": true,
+  "meals_included": true,
+  "special_needs_notes": "The camp says it is not a therapeutic camp and is meant for kids who can be self-sufficient with help from counselors. At least two nurses and several health assistants are on site 24 hours a day and give medication as needed. The kitchen can handle allergen-free, vegetarian, vegan, gluten-free and dairy-free meals. Campers choose bunkmates with similar or varied gender identities, and restrooms and showers are private.",
+  "swim_waterfront_notes": "The camp has a mile of frontage on a 200-acre lake. Activities include swimming, canoeing, kayaking, stand-up paddle boarding and tubing behind a speed boat.",
+  "season_year": 2027,
+  "price_per": "week",
+  "sessions": [
+    {
+      "name": "2-week session, Option 1",
+      "start_date": "2027-06-27",
+      "end_date": "2027-07-09",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "2-week session, Option 2",
+      "start_date": "2027-07-11",
+      "end_date": "2027-07-23",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "1-week session, Option 1",
+      "start_date": "2027-07-25",
+      "end_date": "2027-07-31",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "1-week session, Option 2",
+      "start_date": "2027-08-01",
+      "end_date": "2027-08-07",
+      "price": null,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://harborcamps.org/our-programs/summer-program/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "price_min",
+        "price_max",
+        "price_per_week",
+        "price_per",
+        "transportation",
+        "meals_included",
+        "financial_aid",
+        "special_needs_notes",
+        "swim_waterfront_notes",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://harborcamps.org/our-programs/summer-program/",
+      "kind": "html",
+      "title": "Summer Camp - Harbor Camps for trans & non-binary youth"
+    },
+    "warnings": [
+      "Two weekly rates are listed: a full rate of $1,725 and an honor-system subsidized rate of $1,170. price_per_week is set to the full rate. Financial aid is also available on top of these.",
+      "Session registration_opens_at uses the new-camper date (October 15, 2026). Applications for returning campers open October 1, 2026.",
+      "The age range differs by camper. New campers must be ages 8-14 at their first summer. Returning campers can attend through age 15. Campers 15 and older must have started by age 14.",
+      "The off-season office address is a P.O. Box in Westminster, CO, but the camp itself is in New Hampshire. The P.O. Box was not recorded as the camp's address.",
+      "Bus service from Boston-Logan Airport costs extra: $125 each way."
+    ],
+    "unknowns": [
+      "Exact camp location (city, street address, ZIP): the camp only gives it to enrolled families",
+      "Email address",
+      "Total price for each session: only weekly rates are given (2-week sessions are about 13 nights)",
+      "Deposit requirement",
+      "Refund policy",
+      "ACA accreditation",
+      "How many spots are left in each session",
+      "Fees for unaccompanied minors on the bus"
+    ],
+    "low_confidence": [
+      {
+        "field": "primary_categories",
+        "confidence": 0.75,
+        "quote": "arts & crafts, drama/acting, music, archery, rock climbing"
+      }
+    ],
+    "errors": [
+      "missing required city",
+      "missing required zip",
+      "city None, NH is not in cities.py"
+    ]
+  }
+}

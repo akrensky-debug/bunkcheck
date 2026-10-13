@@ -1,0 +1,96 @@
+{
+  "slug": "boys-and-girls-clubs-of-southern-maine-summer-program-portland",
+  "name": "Boys & Girls Clubs of Southern Maine Summer Program",
+  "operator_name": "Boys & Girls Clubs of Southern Maine",
+  "website_url": "https://www.bgcmaine.org/summer-camp",
+  "registration_url": "https://www.bgcmaine.org/#Registration",
+  "email": "info@bgcmaine.org",
+  "phone": "(207) 874-1069",
+  "street_address": "277 Cumberland Avenue",
+  "city": "Portland",
+  "state": "ME",
+  "zip": "04112",
+  "description_short": "The Boys & Girls Clubs of Southern Maine run a summer program. The club has locations in Auburn, Lewiston, Portland and South Portland. For the 2025 season the page said the program was full and registration was closed.",
+  "season_year": 2025,
+  "sources": [
+    {
+      "url": "https://www.bgcmaine.org/summer-camp",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "description_short"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.bgcmaine.org/summer-camp",
+      "kind": "html",
+      "title": "Boys and Girls Club of Southern Maine | Portland, ME"
+    },
+    "warnings": [
+      "The source only covers the 2025 summer program, which has already happened (today is 2026-10-13). No 2027 information is published.",
+      "The page says 'WE ARE FULL - REGISTRATION IS CLOSED!' for the 2025 season.",
+      "The address and phone are for the organization's main offices, not necessarily where camp is held. The ZIP code 04112 goes with the PO Box, so it may not match the street address.",
+      "The organization has several club sites (Auburn, Lewiston, Portland, South Portland). The page does not say which sites run the summer program.",
+      "The linked Q&A PDF's filename says the program is called 'Camp Quest' and that the fee for 'all 8 weeks... this summer is $250', with a different rate for siblings. That text is only in the link filename, not on the page, and probably refers to 2025, so no price was recorded."
+    ],
+    "unknowns": [
+      "2027 session dates and whether a 2027 program will run",
+      "2027 price (2025 fee may have been $250 for 8 weeks per PDF filename)",
+      "Age or grade range",
+      "Camp type (day vs. other) and daily hours",
+      "Which club locations host the summer program",
+      "Activities offered",
+      "Meals, transportation, extended care",
+      "Financial aid / sibling discounts",
+      "Refund policy and deposit",
+      "When 2027 registration opens",
+      "ACA accreditation",
+      "Swim/waterfront activities",
+      "Special needs accommodations"
+    ],
+    "low_confidence": [
+      {
+        "field": "name",
+        "confidence": 0.6,
+        "quote": "2025 SUMMER PROGRAM"
+      },
+      {
+        "field": "street_address",
+        "confidence": 0.7,
+        "quote": "Main Offices 277 Cumberland Avenue"
+      },
+      {
+        "field": "zip",
+        "confidence": 0.5,
+        "quote": "PO Box 7830, Portland, ME 04112"
+      },
+      {
+        "field": "registration_url",
+        "confidence": 0.6,
+        "quote": "REGISTER"
+      },
+      {
+        "field": "description_short",
+        "confidence": 0.7,
+        "quote": "WE ARE FULL - REGISTRATION IS CLOSED!"
+      }
+    ],
+    "errors": [
+      "missing required camp_type",
+      "camp_type must be one of ['day', 'sleepaway', 'specialty']"
+    ]
+  }
+}

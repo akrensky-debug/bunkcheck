@@ -1,0 +1,114 @@
+{
+  "slug": "the-public-theatre-summer-theatre-camps-lewiston",
+  "name": "The Public Theatre Summer Theatre Camps",
+  "operator_name": "The Public Theatre (in partnership with Lewiston Parks and Recreation)",
+  "website_url": "https://thepublictheatre.org/summer-camps/",
+  "city": "Lewiston",
+  "state": "ME",
+  "zip": null,
+  "camp_type": "specialty",
+  "primary_categories": [
+    "performing_arts"
+  ],
+  "age_min": 8,
+  "age_max": 14,
+  "description_short": "One-week theatre day camps for ages 8-14, led by professional theatre artists from The Public Theatre and run with Lewiston Parks and Recreation. Camp runs 9:00 AM-3:00 PM: Monday to Thursday at Lewiston High School, and Friday at The Public Theatre, ending with a 3:00 PM presentation.",
+  "activities": [
+    "Musical theatre",
+    "Voice",
+    "Acting",
+    "Choreography",
+    "Theatre games",
+    "Final presentation"
+  ],
+  "price_per_week": 230,
+  "price_min": 230,
+  "price_max": 240,
+  "season_year": 2026,
+  "price_per": "week",
+  "sessions": [
+    {
+      "name": "Musical Theatre Camp I",
+      "start_date": "2026-07-07",
+      "end_date": "2026-07-11",
+      "price": 230,
+      "availability": "unknown"
+    },
+    {
+      "name": "Theatre Camp",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": 230,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://thepublictheatre.org/summer-camps/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "price_min",
+        "price_max",
+        "price_per_week",
+        "price_per",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://thepublictheatre.org/summer-camps/",
+      "kind": "html",
+      "title": "Summer Camps - The Public Theatre"
+    },
+    "warnings": [
+      "Only the 2026 season appears, and both sessions (July 2026) are before today (2026-10-13). There are no dates or prices for 2027 yet.",
+      "The Musical Theatre Camp I dates of July 7-11, 2026 run Tuesday to Saturday, but the page describes a Monday-to-Friday schedule. These may be old dates carried over from 2025, when July 7-11 was Monday to Friday.",
+      "Prices depend on residency: $230 for Lewiston residents and $240 for non-residents. The session prices recorded use the resident rate.",
+      "Registration goes through the Lewiston Recreation Department site (login required), not The Public Theatre. The page gives no direct registration link.",
+      "The page footer says 'Copyright 2019'."
+    ],
+    "unknowns": [
+      "2027 session dates and prices",
+      "Registration URL (Lewiston Recreation Department) and when registration opens",
+      "Street address for Lewiston High School and The Public Theatre",
+      "Phone and email contact",
+      "Availability / spots remaining",
+      "Refund and cancellation policy",
+      "Extended care before 9 AM or after 3 PM",
+      "Whether campers bring their own lunch",
+      "Financial aid or scholarships",
+      "Transportation between locations",
+      "Special needs accommodations",
+      "Deposit requirements"
+    ],
+    "low_confidence": [
+      {
+        "field": "state",
+        "confidence": 0.7,
+        "quote": "enrichment of the Lewiston-Auburn area"
+      },
+      {
+        "field": "sessions[0].start_date",
+        "confidence": 0.6,
+        "quote": "July 7-11, 2026  |  9:00 AM – 3:00 PM"
+      }
+    ],
+    "errors": [
+      "missing required zip"
+    ]
+  }
+}

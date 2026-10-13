@@ -1,0 +1,128 @@
+{
+  "slug": "camp-sentinel-center-tuftonboro",
+  "name": "Camp Sentinel",
+  "operator_name": "Camp Sentinel",
+  "website_url": "https://www.campsentinel.org",
+  "registration_url": "https://www.campsentinel.org/camps",
+  "email": "info@campsentinel.org",
+  "phone": "(603) 539-4839",
+  "street_address": "29 Sentinel Lodge Rd.",
+  "city": "Center Tuftonboro",
+  "state": "NH",
+  "zip": "03816",
+  "camp_type": "sleepaway",
+  "primary_categories": [
+    "faith",
+    "nature",
+    "sports",
+    "arts"
+  ],
+  "age_min": 5,
+  "age_max": 16,
+  "description_short": "A Christian summer camp in Center Tuftonboro, NH, running since 1949. It offers overnight camp for ages 7-15, day camp for ages 5-15, a short Little Adventures camp for ages 5-8, and teen programs, with activities like swimming, boating, archery and a ropes course, plus nightly worship and Bible study (Vespers).",
+  "activities": [
+    "swimming",
+    "boating",
+    "arts & crafts",
+    "teambuilding games",
+    "ropes course with zip line",
+    "rock wall",
+    "archery",
+    "hiking",
+    "large group team sports",
+    "canoeing",
+    "Bible study",
+    "outdoor survival skills"
+  ],
+  "price_min": 700,
+  "price_max": 800,
+  "financial_aid": true,
+  "meals_included": true,
+  "swim_waterfront_notes": "Swimming and boating are daily activities. The Leaders program includes a canoe trip on Dan Hole Pond. The page does not describe swim tests or lifeguard details.",
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "(WC) Winter Camp",
+      "start_date": "2027-01-08",
+      "end_date": "2027-01-10",
+      "price": 130,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.campsentinel.org/programs",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "price_min",
+        "price_max",
+        "meals_included",
+        "financial_aid",
+        "swim_waterfront_notes",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.campsentinel.org/programs",
+      "kind": "html",
+      "title": "Camp Sentinel | NH | Camp Programs"
+    },
+    "warnings": [
+      "The page is themed for 2027 but gives no dates for any summer session. Check the Program Brochure or registration page.",
+      "The Winter Camp dates (Fri Jan 8 to Sun Jan 10) have no year on the page. Jan 8 falls on a Friday in 2027, so 2027 is assumed. Confirm before booking.",
+      "The camp runs both overnight and day programs. camp_type is set to sleepaway because overnight camp is the main program.",
+      "Overnight camp uses tiered pricing: families choose to pay $700, $750 or $800.",
+      "Age ranges cover only the youth and teen summer programs (5-16). Winter Camp is for ages 12-18, Adult Camp is for ages 55+, and Homeschool Family Camp is for whole families.",
+      "10 sessions without full dates were left out"
+    ],
+    "unknowns": [
+      "Dates for all summer 2027 sessions (week numbers like TW12, TC6 and L12,34 are mentioned but no dates are given)",
+      "Day camp price per week",
+      "Prices for Little Adventures, Two-Week Camp, Teen Camp, Leaders, Outpost and Aspire",
+      "Whether the $700-$800 overnight price is per week",
+      "When registration opens and which sessions are still open",
+      "Deposit requirements",
+      "Refund policy",
+      "Whether extended care is offered beyond the 8:00am-5:00pm day camp hours",
+      "Transportation",
+      "ACA accreditation",
+      "Support for special needs",
+      "Swim test and waterfront supervision details"
+    ],
+    "low_confidence": [
+      {
+        "field": "meals_included",
+        "confidence": 0.75,
+        "quote": "Lunch provided."
+      },
+      {
+        "field": "sessions[8]",
+        "confidence": 0.6,
+        "quote": "(WC) Winter Camp Ages 12-18 $130 ... Friday, January 8th 6pm – Sunday, January 10th 2pm"
+      }
+    ],
+    "errors": [
+      "city 'Center Tuftonboro', NH is not in cities.py"
+    ]
+  }
+}

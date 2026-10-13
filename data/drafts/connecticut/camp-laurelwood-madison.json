@@ -1,0 +1,79 @@
+{
+  "slug": "camp-laurelwood-madison",
+  "name": "Camp Laurelwood",
+  "website_url": "https://www.camplaurelwood.org/",
+  "registration_url": "https://laurelwood.campintouch.com/ui/forms/application/camper/App",
+  "email": "info@camplaurelwood.org",
+  "phone": "(203) 421-3736",
+  "street_address": "463 Summer Hill Rd.",
+  "city": "Madison",
+  "state": "CT",
+  "zip": "06443",
+  "primary_categories": [
+    "faith"
+  ],
+  "grade_min": 0,
+  "grade_max": 11,
+  "description_short": "Jewish summer camp in Madison, CT, with an overnight camp (grades 2–9), a day camp (grades K–7), the Bonim travel program (grades 10–11) and an SIT program (grade 11).",
+  "financial_aid": true,
+  "season_year": 2027,
+  "sources": [
+    {
+      "url": "https://www.camplaurelwood.org/dates-and-rates/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "primary_categories",
+        "grade_min",
+        "grade_max",
+        "description_short",
+        "financial_aid"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.camplaurelwood.org/dates-and-rates/",
+      "kind": "html",
+      "title": "Dates & Rates | Camp Laurelwood - Connecticut's Premier Jewish Summer CampToggle Menu"
+    },
+    "warnings": [
+      "This is the main Dates & Rates page, which only links to each program. It lists no dates, prices or sessions. The details are on the program pages (/dates-and-rates-overnight-camp/, /dates-and-rates-day-camp/, /dates-and-rates-bonim-travel-program/, /dates-and-rates-sit-program/).",
+      "Camp Laurelwood has more than one program (overnight, day, travel, SIT), so one camp_type doesn't fit. camp_type is left blank.",
+      "grade_min 0 stands for kindergarten (Day Camp K-7th)."
+    ],
+    "unknowns": [
+      "2027 session dates for each program",
+      "2027 tuition and weekly rates",
+      "Registration open date and how many spots are left",
+      "Ages (only grades are listed)",
+      "ACA accreditation status (the menu has an 'ACA Accreditation' page, but this page doesn't say)",
+      "Deposit and refund policy",
+      "Transportation, extended care (day camp) and meals",
+      "Activities and swimming/waterfront details",
+      "Support for special needs",
+      "Details of the tuition assistance program"
+    ],
+    "low_confidence": [
+      {
+        "field": "financial_aid",
+        "confidence": 0.7,
+        "quote": "Tuition Assistance"
+      }
+    ],
+    "errors": [
+      "missing required camp_type",
+      "camp_type must be one of ['day', 'sleepaway', 'specialty']"
+    ]
+  }
+}

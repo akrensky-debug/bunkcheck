@@ -1,0 +1,86 @@
+{
+  "slug": "camp-taconic-hinsdale",
+  "name": "Camp Taconic",
+  "website_url": "https://camptaconic.com/",
+  "email": "info@camptaconic.com",
+  "phone": "201-871-2086",
+  "street_address": "770 New Windsor Road",
+  "city": "Hinsdale",
+  "state": "MA",
+  "zip": "01235",
+  "camp_type": "sleepaway",
+  "description_short": "Camp Taconic is a summer camp in Hinsdale, Massachusetts. For 2027 it offers a full season from late June to mid-August, plus a four-week part-season option for first-year campers only.",
+  "price_min": 11300,
+  "price_max": 17200,
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "2027 Full Season",
+      "start_date": "2027-06-27",
+      "end_date": "2027-08-14",
+      "price": 17200,
+      "availability": "unknown"
+    },
+    {
+      "name": "2027 Part-Season Program (First Summer Only)",
+      "start_date": "2027-06-27",
+      "end_date": "2027-07-24",
+      "price": 11300,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://camptaconic.com/rates-dates.php",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "website_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "description_short",
+        "price_min",
+        "price_max",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://camptaconic.com/rates-dates.php",
+      "kind": "html",
+      "title": "Camp Taconic | Rates and Dates"
+    },
+    "warnings": [
+      "15s and LITs (leaders in training) arrive one day early, on June 26, 2027; other campers arrive June 27.",
+      "The part-season program is limited to first-summer campers only.",
+      "Sleepaway camp type is inferred from the arrival/return-home schedule, Visiting Day and the 'Local Lodging' link; the page does not state it explicitly.",
+      "The camp has separate summer (Hinsdale, MA) and winter (Pearl River, NY) addresses; the summer camp location is the one recorded."
+    ],
+    "unknowns": [
+      "Camper age or grade range (page refers to groups like 'LC - 14s', '15s' and 'LITs' without defining them)",
+      "Activities offered",
+      "Whether sessions have open spots, a waitlist, or are full",
+      "When registration opens",
+      "Deposit requirements and refund policy",
+      "Financial aid availability",
+      "Transportation (e.g., camp bus from NYC area)",
+      "Swim/waterfront details",
+      "ACA accreditation",
+      "Special needs accommodations",
+      "What tuition includes and any extra fees",
+      "Registration URL",
+      "Rookie Day date (listed as TBD)",
+      "Operator/owner name"
+    ],
+    "low_confidence": [],
+    "errors": []
+  }
+}

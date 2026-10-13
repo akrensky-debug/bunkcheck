@@ -1,0 +1,75 @@
+{
+  "slug": "exeter-parks-and-recreation-summer-camps-exeter",
+  "name": "Exeter Parks & Recreation Summer Camps",
+  "operator_name": "Town of Exeter Parks and Recreation",
+  "website_url": "https://www.exeternh.gov/recreation/summer-camps",
+  "registration_url": "https://exeter.recdesk.com/Community/Home",
+  "phone": "603-773-6151",
+  "street_address": "10 Hampton Road",
+  "city": "Exeter",
+  "state": "NH",
+  "zip": "03833",
+  "grade_min": 1,
+  "grade_max": 9,
+  "description_short": "The Town of Exeter Parks and Recreation Department runs a Summer Adventure Camp for students entering grades 1–7, a Teen Summer Adventure Camp for grades 8 and 9, and a Summer Golf Camp. Campers are grouped by their grade as of 9/30/2026.",
+  "activities": [
+    "Golf"
+  ],
+  "season_year": 2026,
+  "sources": [
+    {
+      "url": "https://www.exeternh.gov/recreation/summer-camps",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "description_short"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.exeternh.gov/recreation/summer-camps",
+      "kind": "html",
+      "title": "Summer Camps | Town of Exeter New Hampshire Official Website"
+    },
+    "warnings": [
+      "This page only lists the 2026 season, which has already ended (today is 2026-10-13). No 2027 information is posted yet.",
+      "This is a summary page for three separate programs: Summer Adventure Camp, Teen Summer Adventure Camp and Golf Camp. Details are on the 'Read more' pages, which were not part of the source.",
+      "The three session entries are program names only. The page gives no camp dates, weeks or prices.",
+      "Card payments carry a 3% processing fee, charged as a separate transaction.",
+      "Registration has priority windows. For the teen camp, returning resident campers and siblings could register Feb 2–8, 2026, and other residents Feb 9–13, 2026. The page gives no date for non-residents.",
+      "3 sessions without full dates were left out"
+    ],
+    "unknowns": [
+      "2027 season dates and registration dates",
+      "Session or week dates for each program",
+      "Prices, including any resident vs. non-resident rates",
+      "Daily hours, and whether this is a day camp (likely, but not stated)",
+      "Camper ages (the page uses grades only)",
+      "Golf Camp grade range and location",
+      "Camp location (10 Hampton Road is the Parks & Rec office address)",
+      "Extended care, meals, transportation, financial aid",
+      "Refund and deposit policy",
+      "Swimming / waterfront details (the town runs Dan Healy Memorial Pool, but the page doesn't link it to camp)",
+      "Contact email"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "missing required camp_type",
+      "camp_type must be one of ['day', 'sleepaway', 'specialty']"
+    ]
+  }
+}

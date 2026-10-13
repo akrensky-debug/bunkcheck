@@ -1,0 +1,135 @@
+{
+  "slug": "ymca-of-southern-maine-summer-and-school-break-camps-camp-heartwood-and-camp-osp",
+  "name": "YMCA of Southern Maine Summer and School Break Camps (Camp Heartwood & Camp Osprey)",
+  "operator_name": "YMCA of Southern Maine",
+  "website_url": "https://www.ymcaofsouthernmaine.org/camps",
+  "registration_url": "https://www.ymcaofsouthernmaine.org/main/online-registration",
+  "city": null,
+  "state": "ME",
+  "zip": null,
+  "camp_type": "day",
+  "primary_categories": [
+    "nature",
+    "sports",
+    "arts"
+  ],
+  "age_min": 5,
+  "age_max": 12,
+  "description_short": "YMCA day camps for ages 5–12, running Monday–Friday 9:30am–3:30pm at two sites: Camp Heartwood in Biddeford, a nature program on 26 acres, and Camp Osprey in Freeport, a traditional camp with one-week sessions. Before and after care are included at no extra charge, and there are also February and April school break camps for ages 5–10.",
+  "activities": [
+    "hiking",
+    "nature exploration",
+    "sports and games",
+    "swimming",
+    "arts and crafts",
+    "reading"
+  ],
+  "extended_care": true,
+  "swim_waterfront_notes": "Camp Heartwood: swimming 3x per week. Camp Osprey lists swimming among activities. Pool/waterfront details not stated.",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "February Break Camp",
+      "start_date": "2026-02-16",
+      "end_date": "2026-02-20",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "April Break Camp",
+      "start_date": "2026-04-20",
+      "end_date": "2026-04-24",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Summer Camp 2026 (weekly sessions; no camp Fri June 19)",
+      "start_date": "2026-06-15",
+      "end_date": "2026-08-21",
+      "price": null,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.ymcaofsouthernmaine.org/camps",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "extended_care",
+        "swim_waterfront_notes",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.ymcaofsouthernmaine.org/camps",
+      "kind": "html",
+      "title": "YMCA Summer and School Break Camps - YMCA of Southern Maine"
+    },
+    "warnings": [
+      "The page shows only the 2026 season (break camps in Feb/Apr 2026, summer June 15–Aug 21), and all of those dates have passed as of 2026-10-13. 2027 dates are not posted yet.",
+      "The page covers two camp sites, so address and contact details differ by site. Camp Heartwood: 3 Pomerleau St., Biddeford, ME 04005, 207-283-0100, bhamilton@ymcaofsouthernmaine.org (Brenda Hamilton). Camp Osprey: 14 Old South Freeport Rd, Freeport, ME 04032, 207-865-9600, hsmith@ymcaofsouthernmaine.org (Haley Smith).",
+      "Summer is recorded as one block. Camp Osprey says it offers one-week sessions, but the page does not list individual weeks or say whether Heartwood books by the week.",
+      "The page does not say whether the break camps run at Heartwood, Osprey, or both.",
+      "The page gives registration open dates without a year. 2026 was inferred from the season shown."
+    ],
+    "unknowns": [
+      "2027 season dates and registration open dates",
+      "Prices (the page links to a separate Fees page)",
+      "Whether financial assistance applies to camp (the site menu has a Financial Assistance link under Membership)",
+      "Refund and deposit policy",
+      "Whether lunch or snacks are provided",
+      "Whether transportation is offered",
+      "ACA accreditation",
+      "Support for special needs",
+      "List of individual summer weeks and whether each is open, waitlisted or full",
+      "Which site hosts the break camps"
+    ],
+    "low_confidence": [
+      {
+        "field": "season_year",
+        "confidence": 0.7,
+        "quote": "June 15 – August 21 (No Camp – Juneteenth, Friday June 19)"
+      },
+      {
+        "field": "sessions[0].registration_opens_at",
+        "confidence": 0.7,
+        "quote": "(Registration Opens January 5)"
+      },
+      {
+        "field": "sessions[2].start_date",
+        "confidence": 0.75,
+        "quote": "June 15 – August 21 (No Camp – Juneteenth, Friday June 19)"
+      },
+      {
+        "field": "sessions[2].registration_opens_at",
+        "confidence": 0.65,
+        "quote": "(Registration Opens February 9)"
+      },
+      {
+        "field": "registration_url",
+        "confidence": 0.6,
+        "quote": "Programs: https://www.ymcaofsouthernmaine.org/main/online-registration"
+      }
+    ],
+    "errors": [
+      "missing required city",
+      "missing required zip",
+      "city None, ME is not in cities.py"
+    ]
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "slug": "burlington-parks-recreation-and-waterfront-summer-camps-burlington",
+  "name": "Burlington Parks, Recreation & Waterfront Summer Camps",
+  "operator_name": "City of Burlington Parks, Recreation & Waterfront",
+  "website_url": "https://www.burlingtonvt.gov/1084/Summer-Camps",
+  "registration_url": "https://secure.rec1.com/VT/burlington-vt/catalog/index/c1452aa09d5b9945035864902e4dbcb7?filter=c2VhcmNoPQ==",
+  "email": "bprwinfo@burlingtonvt.gov",
+  "phone": "802-864-0123",
+  "street_address": "645 Pine Street, Suite B",
+  "city": "Burlington",
+  "state": "VT",
+  "zip": "05401",
+  "camp_type": "day",
+  "description_short": "The City of Burlington runs a range of summer day camps for kids, held at city facilities, parks and schools. Named camps include Champ Camp, Cool Camp and Adventure Camp. You register online through Civic Rec.",
+  "financial_aid": true,
+  "transportation": true,
+  "meals_included": true,
+  "sources": [
+    {
+      "url": "https://www.burlingtonvt.gov/1084/Summer-Camps",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "description_short",
+        "transportation",
+        "meals_included",
+        "financial_aid"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.burlingtonvt.gov/1084/Summer-Camps",
+      "kind": "html",
+      "title": "Summer Camps | Burlington, VTArrow LeftArrow RightSlideshow Left ArrowSlideshow Right Arrow"
+    },
+    "warnings": [
+      "This is a city department overview page covering many different camps, not one camp. No season year, session dates, prices or ages are given. Those details are in the Civic Rec catalog and the Summer in Parks PDF.",
+      "Transportation is only offered for Champ Camp and Adventure Camp. For all other camps, parents handle drop-off and pick-up.",
+      "Free lunch and afternoon snack are only provided at Champ Camp, Cool Camp and Adventure Camp. At other camps, families pack their own food.",
+      "Scholarships are only for Burlington residents. State child-care subsidy is accepted only for Champ Camp, which is the only licensed camp, and families using it must register by phone."
+    ],
+    "unknowns": [
+      "Season year and session dates (2027)",
+      "Prices and weekly rates",
+      "Age or grade ranges",
+      "Registration opening dates (see Civic Rec)",
+      "Daily hours and whether extended care is offered",
+      "Refund and cancellation policy (on the Policies/Info page)",
+      "Whether a deposit is required",
+      "Activities offered at each camp",
+      "Special-needs accommodations beyond the medical information form",
+      "Whether the camps are ACA accredited",
+      "Swim and waterfront activities"
+    ],
+    "low_confidence": [
+      {
+        "field": "transportation",
+        "confidence": 0.7,
+        "quote": "Camps elegible for transportation are: Champ Camp and Adventure Camp"
+      },
+      {
+        "field": "meals_included",
+        "confidence": 0.6,
+        "quote": "For Champ Camp, Cool Camp, and Adventure Camp only: free lunch and afternoon snack will be provided by the Burlington School Food Project."
+      }
+    ],
+    "errors": [
+      "missing required season_year"
+    ]
+  }
+}

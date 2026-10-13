@@ -1,0 +1,116 @@
+{
+  "slug": "camp-winadu-pittsfield",
+  "name": "Camp Winadu",
+  "website_url": "https://campwinadu.com/summer/dates-rates",
+  "registration_url": "https://winadu.campintouch.com/ui/forms/application/camper/App",
+  "email": "directors@campwinadu.com",
+  "phone": "914-437-7200",
+  "city": "Pittsfield",
+  "state": "MA",
+  "zip": null,
+  "camp_type": "sleepaway",
+  "primary_categories": [
+    "sports",
+    "arts",
+    "nature"
+  ],
+  "description_short": "Boys' sleepaway camp in the Berkshire Mountains near Pittsfield, Massachusetts. Offers a full summer season and a 5-week option for new younger campers, with team and individual sports, ice hockey, waterfront, outdoor adventure, and arts.",
+  "activities": [
+    "Team sports",
+    "Individual sports",
+    "Ice hockey",
+    "Golf",
+    "Waterfront",
+    "Outdoor adventure",
+    "Arts & hobbies",
+    "Special events"
+  ],
+  "price_min": 13800,
+  "price_max": 16950,
+  "transportation": true,
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Full Season 2027",
+      "start_date": "2027-06-26",
+      "end_date": "2027-08-11",
+      "price": 16950,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://campwinadu.com/summer/dates-rates",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "description_short",
+        "price_min",
+        "price_max",
+        "transportation",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://campwinadu.com/summer/dates-rates",
+      "kind": "html",
+      "title": "Dates & Rates | Camp Winadu - Boys Summer Camp, Berkshire Mountains, Pittsfield, Massachusetts"
+    },
+    "warnings": [
+      "The 2027 prices depend on when you enroll: before September 15 it's $16,600 (full season) and $13,500 (5-week). After that it's $16,950 and $13,800. Today is 2026-10-13, so I recorded the after-September-15 prices. The page doesn't give a year for the deadline; I'm assuming it's September 15, 2026.",
+      "The page also shows dates for 2026 and dates and rates for 2024. In the 2024 table, the 5-week rate after the deadline ($12,300) is lower than the early rate ($12,600), which looks like a typo.",
+      "In the 2026 section, Sibling Rookie Day is listed as 'Saturday, July 17', but July 17, 2026 is a Friday.",
+      "The 2027 end date for the 5-week session isn't given. In 2024 it ended Monday, July 28.",
+      "Bus transportation, optional golf and ice hockey, and canteen and trip fees for older campers all cost extra on top of tuition.",
+      "This is a boys-only camp. A sister girls' camp is mentioned.",
+      "1 sessions without full dates were left out"
+    ],
+    "unknowns": [
+      "Overall camper age or grade range",
+      "2027 end date for the 5-week session",
+      "Cost of bus transportation and of the golf and ice hockey programs",
+      "Deposit amount and refund policy",
+      "Financial aid",
+      "ACA accreditation (the page says 'Accredited By' but the accrediting body isn't shown in the text)",
+      "Street address and ZIP",
+      "Space left for 2027",
+      "Whether meals are included (likely for a sleepaway camp, but not stated)",
+      "Swim and waterfront details",
+      "Special needs support",
+      "Operator name"
+    ],
+    "low_confidence": [
+      {
+        "field": "sessions[1].start_date",
+        "confidence": 0.7,
+        "quote": "Campers Arrive: Saturday, June 26"
+      },
+      {
+        "field": "transportation",
+        "confidence": 0.6,
+        "quote": "Tuition does not include transportation by bus to and from camp."
+      },
+      {
+        "field": "primary_categories",
+        "confidence": 0.75,
+        "quote": "Sports & Activities ... Outdoor Adventure ... Arts & Hobbies"
+      }
+    ],
+    "errors": [
+      "missing required zip"
+    ]
+  }
+}

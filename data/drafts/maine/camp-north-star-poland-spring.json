@@ -1,0 +1,171 @@
+{
+  "slug": "camp-north-star-poland-spring",
+  "name": "Camp North Star",
+  "website_url": "https://campnorthstarmaine.com/",
+  "registration_url": "https://northstar.campintouch.com/ui/forms/application/camper/App",
+  "email": "info@cnsmaine.com",
+  "phone": "201.414.6322",
+  "street_address": "200 Verrill Road",
+  "city": "Poland Spring",
+  "state": "ME",
+  "zip": "04274",
+  "camp_type": "sleepaway",
+  "grade_min": 2,
+  "grade_max": 11,
+  "description_short": "Overnight summer camp in Poland Spring, Maine, for rising 2nd through 11th graders. Sessions run 2, 3, 4, 5 or 7 weeks between June 27 and August 14, 2027.",
+  "activities": [
+    "Equestrian (extra fee)",
+    "Golf (extra fee)"
+  ],
+  "price_min": 4945,
+  "price_max": 14650,
+  "refund_policy_summary": "All fees, including the deposit, are fully refundable through January 1, 2027. No refunds after January 1, 2027.",
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "2 Weeks (Rising 2nd-5th graders)",
+      "start_date": "2027-06-27",
+      "end_date": "2027-07-10",
+      "price": 4945,
+      "availability": "unknown"
+    },
+    {
+      "name": "3 Weeks (Rising 2nd-5th graders)",
+      "start_date": "2027-07-25",
+      "end_date": "2027-08-14",
+      "price": 6120,
+      "availability": "unknown"
+    },
+    {
+      "name": "4 Weeks (Rising 2nd-5th graders)",
+      "start_date": "2027-06-27",
+      "end_date": "2027-07-24",
+      "price": 8100,
+      "availability": "unknown"
+    },
+    {
+      "name": "5 Weeks (Rising 2nd-5th graders)",
+      "start_date": "2027-07-11",
+      "end_date": "2027-08-14",
+      "price": 9000,
+      "availability": "unknown"
+    },
+    {
+      "name": "7 Weeks (Rising 2nd-5th graders)",
+      "start_date": "2027-06-27",
+      "end_date": "2027-08-14",
+      "price": 11845,
+      "availability": "unknown"
+    },
+    {
+      "name": "2 Weeks (Rising 6th-11th graders)",
+      "start_date": "2027-06-27",
+      "end_date": "2027-07-10",
+      "price": 5945,
+      "availability": "unknown"
+    },
+    {
+      "name": "3 Weeks (Rising 6th-11th graders)",
+      "start_date": "2027-07-25",
+      "end_date": "2027-08-14",
+      "price": 7420,
+      "availability": "unknown"
+    },
+    {
+      "name": "4 Weeks (Rising 6th-11th graders)",
+      "start_date": "2027-06-27",
+      "end_date": "2027-07-24",
+      "price": 9895,
+      "availability": "unknown"
+    },
+    {
+      "name": "5 Weeks (Rising 6th-11th graders)",
+      "start_date": "2027-07-11",
+      "end_date": "2027-08-14",
+      "price": 11050,
+      "availability": "unknown"
+    },
+    {
+      "name": "7 Weeks (Rising 6th-11th graders)",
+      "start_date": "2027-06-27",
+      "end_date": "2027-08-14",
+      "price": 14650,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://campnorthstarmaine.com/dates-rates/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "description_short",
+        "price_min",
+        "price_max",
+        "refund_policy_summary",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://campnorthstarmaine.com/dates-rates/",
+      "kind": "html",
+      "title": "Dates + Rates - Camp North Star"
+    },
+    "warnings": [
+      "The listed prices are early-enrollment rates 'valid through september 15th'. Today is 2026-10-13, so that window has probably closed and current tuition may be higher. The page does not show standard rates.",
+      "The 3-week session (July 25 - Aug 14) overlaps the 5-week session (July 11 - Aug 14). These look like alternative choices, not consecutive blocks.",
+      "Street name is spelled 'Verrill Road' in the contact section but 'Verril Road' in the footer.",
+      "Camp type is inferred as sleepaway from linen rental, luggage shipping and multi-week sessions. The page does not say 'overnight' directly."
+    ],
+    "unknowns": [
+      "Standard (non-early) tuition rates after September 15",
+      "Camper age range (only grades are given)",
+      "Deposit amount",
+      "Session availability",
+      "Whether transportation is provided (the site links to a 'Transportation To Camp' page)",
+      "Full list of activities and program categories",
+      "ACA accreditation",
+      "Financial aid",
+      "Swim/waterfront details",
+      "Special needs support",
+      "Operator name",
+      "Registration opening date"
+    ],
+    "low_confidence": [
+      {
+        "field": "price_min",
+        "confidence": 0.75,
+        "quote": "2 Weeks $4,945 June 27 - July 10"
+      },
+      {
+        "field": "price_max",
+        "confidence": 0.75,
+        "quote": "7 Weeks $14,650 June 27 - August 14"
+      },
+      {
+        "field": "sessions[*].price",
+        "confidence": 0.6,
+        "quote": "early enrollment rates valid through september 15th"
+      }
+    ],
+    "errors": [
+      "city 'Poland Spring', ME is not in cities.py"
+    ]
+  }
+}

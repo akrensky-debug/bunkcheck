@@ -1,0 +1,96 @@
+{
+  "slug": "roaring-brook-nature-center-summer-discovery-days",
+  "name": "Roaring Brook Nature Center Summer Discovery Days",
+  "operator_name": "The Children's Museum Inc.",
+  "website_url": "https://www.thechildrensmuseumct.org/summer-2026-discovery-days/",
+  "registration_url": "https://purchase.thechildrensmuseumct.org/calendar.aspx",
+  "phone": "860-693-0263",
+  "city": null,
+  "state": null,
+  "zip": null,
+  "camp_type": "day",
+  "primary_categories": [
+    "nature"
+  ],
+  "description_short": "Half-day weekly nature programs at Roaring Brook Nature Center, Monday through Friday from 9 am to noon. Each week has a theme, with short hikes, games, stories, crafts and visits with the Nature Center's animals.",
+  "activities": [
+    "short hikes",
+    "games",
+    "stories",
+    "crafts",
+    "animal visits"
+  ],
+  "price_per_week": 315,
+  "price_min": 270,
+  "price_max": 315,
+  "season_year": 2026,
+  "price_per": "week",
+  "sources": [
+    {
+      "url": "https://www.thechildrensmuseumct.org/summer-2026-discovery-days/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "description_short",
+        "price_min",
+        "price_max",
+        "price_per_week",
+        "price_per"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.thechildrensmuseumct.org/summer-2026-discovery-days/",
+      "kind": "html",
+      "title": "Summer 2026 Discovery Days – The Children's Museum"
+    },
+    "warnings": [
+      "This page covers Summer 2026, which is already over (today is 2026-10-13). Dates and prices for 2027 aren't posted here yet.",
+      "The page lists no individual program weeks, dates or grade ranges. It says the full list is on the RBNC website.",
+      "Prices are per program. The page doesn't say outright that a program is one week long; this is inferred from 'Each week offers themed activities' and the Monday–Friday schedule, so price_per_week uses the non-member rate as an estimate.",
+      "The page belongs to the parent organization (The Children's Museum), not Roaring Brook Nature Center's own site. The only address given (8 Wilcox Street, Suite E, Simsbury, CT 06070) is the administrative office, not the camp location."
+    ],
+    "unknowns": [
+      "2027 season dates, prices and registration opening date",
+      "Individual program/week titles and dates",
+      "Grade or age range for each program",
+      "Camp location street address",
+      "Extended care / before- and after-care",
+      "Refund and cancellation policy",
+      "Financial aid",
+      "Deposit requirements",
+      "Email contact",
+      "Membership cost",
+      "ACA accreditation",
+      "Accommodations for special needs",
+      "Availability"
+    ],
+    "low_confidence": [
+      {
+        "field": "price_per_week",
+        "confidence": 0.6,
+        "quote": "Non-members: $315/program ... Programs run Monday through Friday"
+      },
+      {
+        "field": "website_url",
+        "confidence": 0.7,
+        "quote": "For a full list of programs and details, visit the RBNC website!"
+      }
+    ],
+    "errors": [
+      "missing required city",
+      "missing required state",
+      "missing required zip"
+    ]
+  }
+}

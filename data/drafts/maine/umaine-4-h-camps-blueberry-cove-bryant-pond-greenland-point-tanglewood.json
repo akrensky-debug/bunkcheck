@@ -1,0 +1,84 @@
+{
+  "slug": "umaine-4-h-camps-blueberry-cove-bryant-pond-greenland-point-tanglewood",
+  "name": "UMaine 4-H Camps (Blueberry Cove, Bryant Pond, Greenland Point, Tanglewood)",
+  "operator_name": "University of Maine Cooperative Extension 4-H",
+  "website_url": "https://extension.umaine.edu/4h/2026/03/02/its-time-to-think-about-summer-camp/",
+  "phone": "207.665.2068 (Bryant Pond & Greenland Point, Bethany); 207.789.5868 (Tanglewood & Blueberry Cove, Emma)",
+  "city": null,
+  "state": "ME",
+  "zip": null,
+  "primary_categories": [
+    "nature",
+    "STEM",
+    "arts",
+    "sports"
+  ],
+  "description_short": "Four UMaine 4-H camps in Maine offer summer programs of one to three weeks, in both day and overnight formats. Programs include outdoor skills, shooting sports, STEM, creative arts, ecology, gardening and teen leadership.",
+  "activities": [
+    "outdoor skills",
+    "shooting sports",
+    "STEM",
+    "creative arts",
+    "ecology",
+    "gardening",
+    "teamwork",
+    "teen leadership"
+  ],
+  "financial_aid": true,
+  "season_year": 2026,
+  "sources": [
+    {
+      "url": "https://extension.umaine.edu/4h/2026/03/02/its-time-to-think-about-summer-camp/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "phone",
+        "state",
+        "primary_categories",
+        "activities",
+        "description_short",
+        "financial_aid"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://extension.umaine.edu/4h/2026/03/02/its-time-to-think-about-summer-camp/",
+      "kind": "html",
+      "title": "It’s Time to Think About Summer Camp! - Cooperative Extension: 4-H - University of Maine Cooperative Extension"
+    },
+    "warnings": [
+      "Source is a UMaine Extension 4-H news/blog post (March 2, 2026), not a camp registration page. It covers four separate camps in one post.",
+      "Only the 2026 season is shown, and it is already over (today is 2026-10-13). No 2027 information is given.",
+      "The listed dates are each camp's overall season window, not bookable sessions, so no sessions were recorded. 2026 windows: Blueberry Cove (Tenants Harbor) June 21-Aug 14; Bryant Pond (Bryant Pond) June 21-Aug 14; Greenland Point (Princeton) June 28-July 31; Tanglewood (Lincolnville) June 21-Aug 21.",
+      "camp_type left blank because the post says both day and overnight programs are offered.",
+      "Consider making a separate listing for each camp, since they have different locations and contacts."
+    ],
+    "unknowns": [
+      "2027 dates and sessions",
+      "Prices/tuition",
+      "Age or grade ranges",
+      "Which programs are day vs. overnight at each camp",
+      "Street addresses and zip codes",
+      "Registration URL and when registration opens",
+      "Email contacts",
+      "Deposit and refund policy",
+      "ACA accreditation",
+      "Meals, transportation, extended care",
+      "Swim/waterfront details",
+      "Special needs accommodations"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "missing required city",
+      "missing required zip",
+      "missing required camp_type",
+      "camp_type must be one of ['day', 'sleepaway', 'specialty']",
+      "city None, ME is not in cities.py"
+    ]
+  }
+}

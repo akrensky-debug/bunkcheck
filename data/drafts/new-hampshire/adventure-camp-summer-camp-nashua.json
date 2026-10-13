@@ -1,0 +1,110 @@
+{
+  "slug": "adventure-camp-summer-camp-nashua",
+  "name": "Adventure Camp (Summer Camp)",
+  "operator_name": "Nashua Adult Learning Center",
+  "website_url": "https://nashuaalc.org/for-children/adventure-camp/",
+  "phone": "(603) 882-9080 x2220",
+  "street_address": "40 Arlington St.",
+  "city": "Nashua",
+  "state": "NH",
+  "zip": "03060",
+  "camp_type": "day",
+  "primary_categories": [
+    "sports",
+    "arts",
+    "STEM"
+  ],
+  "age_min": 5,
+  "grade_min": 1,
+  "grade_max": 7,
+  "description_short": "A state-licensed full-day summer camp in Nashua for children entering grades 1 through 7. Activities include swimming, field trips, trips to NH state parks, sports, arts and crafts, and STEM. The Learning Center also runs vacation camps during the February and April school breaks.",
+  "activities": [
+    "Swimming",
+    "Field trips",
+    "Trips to NH State parks",
+    "Special theme days",
+    "Bicycling",
+    "Roller blading",
+    "Community service projects",
+    "Arts and crafts",
+    "Cooperative sports",
+    "STEM enrichment"
+  ],
+  "price_per_week": 295,
+  "swim_waterfront_notes": "The page lists swimming as a summer camp activity. It does not say where campers swim or how swimming is supervised.",
+  "season_year": 2026,
+  "price_per": "week",
+  "sources": [
+    {
+      "url": "https://nashuaalc.org/for-children/adventure-camp/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "age_min",
+        "grade_min",
+        "grade_max",
+        "description_short",
+        "price_per_week",
+        "price_per",
+        "swim_waterfront_notes"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=40+Arlington+St.&city=Nashua&state=NH&benchmark=Public_AR_Current&format=json",
+      "checked": "2026-10-13",
+      "fields": [
+        "zip"
+      ],
+      "note": "ZIP from the US Census geocoder for 40 ARLINGTON ST, NASHUA, NH, 03060"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://nashuaalc.org/for-children/adventure-camp/",
+      "kind": "html",
+      "title": "Adventure Camp – Adult Learning Center"
+    },
+    "warnings": [
+      "Filled zip 03060 from the US Census geocoder (40 ARLINGTON ST, NASHUA, NH, 03060)",
+      "Only 2026 summer details are shown, and that season is over (today is 2026-10-13). The 2027 summer rates, dates and registration have not been posted.",
+      "2026 summer registration said 'CALL FOR WAITLIST'.",
+      "The page says 2027 February and April vacation camp registration is 'COMING JANUARY'. Those camps are held at Sunset Heights Elementary and cost $260/week in 2026.",
+      "Weekly summer session dates are not listed. The page only says 'Enroll for 1 week…or all summer!' It also offers a daily rate of $70 (part-time slots are limited).",
+      "The page describes grades in two ways: 'current Kindergarten ... through completion of 6th grade' and 'entering into 1st grade through going into 7th grade'. Grades here are recorded as fall grades (1–7).",
+      "The contact email is hidden on the page and could not be read."
+    ],
+    "unknowns": [
+      "2027 summer camp dates and weekly sessions",
+      "2027 summer rates",
+      "When 2027 registration opens and the registration link",
+      "Contact email",
+      "Deposit and refund policy",
+      "Financial aid or subsidy acceptance",
+      "Whether lunch is provided (only an afternoon snack is mentioned)",
+      "Transportation",
+      "Where swimming happens and how it is supervised",
+      "Accommodations for special needs",
+      "ACA accreditation (the page says only that the program is state licensed)",
+      "Maximum age"
+    ],
+    "low_confidence": [
+      {
+        "field": "primary_categories",
+        "confidence": 0.75,
+        "quote": "Cooperative sports. STEM Enrichment activities."
+      }
+    ],
+    "errors": []
+  }
+}

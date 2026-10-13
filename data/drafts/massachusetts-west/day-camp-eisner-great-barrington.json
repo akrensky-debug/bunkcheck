@@ -1,0 +1,195 @@
+{
+  "slug": "day-camp-eisner-great-barrington",
+  "name": "Day Camp @ Eisner",
+  "operator_name": "Union for Reform Judaism (URJ Eisner Camp)",
+  "website_url": "https://eisnercamp.org/day-camp-eisner/",
+  "registration_url": "https://eisnercamp.org/register-login/",
+  "phone": "413-528-1652",
+  "street_address": "53 Brookside Road",
+  "city": "Great Barrington",
+  "state": "MA",
+  "zip": "01230",
+  "camp_type": "day",
+  "primary_categories": [
+    "faith",
+    "sports",
+    "arts",
+    "nature"
+  ],
+  "age_min": 4,
+  "grade_max": 2,
+  "description_short": "A Jewish day camp for children aged 4 through rising 2nd graders, held on the grounds of URJ Eisner Camp in Great Barrington, MA. Campers use the overnight camp's pools, fields, arts center, farm and lake, and each day includes lunch and Jewish activities. Hours are 9:00 a.m. to 4:00 p.m.",
+  "activities": [
+    "Swimming",
+    "Field sports",
+    "Tennis",
+    "Theater",
+    "Arts and crafts",
+    "Nature program (Teva)",
+    "Gardening",
+    "Animal farm",
+    "Indoor sports",
+    "Music",
+    "Jewish education",
+    "Playground games"
+  ],
+  "price_per_week": 525,
+  "price_min": 425,
+  "price_max": 525,
+  "financial_aid": true,
+  "transportation": true,
+  "meals_included": true,
+  "special_needs_notes": "Campers must be fully potty trained and have the immunizations required by Massachusetts. The camp pays special attention to children with allergies and limited diets, and the whole camp is peanut and tree nut aware. Lunch is Kosher-style.",
+  "swim_waterfront_notes": "There are two heated swimming pools and a lake on site. The page says swim staff get American Red Cross lifeguard training.",
+  "season_year": 2027,
+  "price_per": "week",
+  "sessions": [
+    {
+      "name": "Week 1",
+      "start_date": "2027-06-28",
+      "end_date": "2027-07-02",
+      "price": 525,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 2",
+      "start_date": "2027-07-05",
+      "end_date": "2027-07-09",
+      "price": 525,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 3",
+      "start_date": "2027-07-12",
+      "end_date": "2027-07-16",
+      "price": 525,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 4",
+      "start_date": "2027-07-19",
+      "end_date": "2027-07-23",
+      "price": 525,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 5",
+      "start_date": "2027-07-26",
+      "end_date": "2027-07-30",
+      "price": 525,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 6",
+      "start_date": "2027-08-02",
+      "end_date": "2027-08-06",
+      "price": 525,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 7",
+      "start_date": "2027-08-09",
+      "end_date": "2027-08-13",
+      "price": 525,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://eisnercamp.org/day-camp-eisner/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "age_min",
+        "grade_max",
+        "description_short",
+        "price_min",
+        "price_max",
+        "price_per_week",
+        "price_per",
+        "transportation",
+        "meals_included",
+        "financial_aid",
+        "special_needs_notes",
+        "swim_waterfront_notes",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://eisnercamp.org/day-camp-eisner/",
+      "kind": "html",
+      "title": "Day Camp @ Eisner - Eisner Camp"
+    },
+    "warnings": [
+      "The page gives conflicting season years. The table is headed 'Session 2027 Dates', but the text says 'seven week-long sessions for Summer 2026' and gives the age cutoff as 'by June 29, 2026'. The dates fall Monday to Friday in 2027 (June 28, 2027 is a Monday), so I recorded them as 2027. Confirm with the camp.",
+      "The $525 weekly price, $350 deposit and age cutoff may be carried over from 2026 and could change for 2027.",
+      "'Registration is now open' was written about Summer 2026. It is unclear whether 2027 registration is open.",
+      "One 'Register Now' link uses a 2023 email tracking tag (campintouch.com). I recorded the camp's own register/login page instead.",
+      "The administrative office phone (201-722-0400) is different from the camp phone (413-528-1652).",
+      "Eligibility: the page says campers come from families living year-round or seasonally in the southern Berkshire region of MA and NY.",
+      "The page says ACA accredited: check it on acacamps.org and add aca_accredited with aca_source_url"
+    ],
+    "unknowns": [
+      "Contact email (hidden on the page)",
+      "Whether 2027 registration is open and when it opens",
+      "2027 pricing and the age cutoff date",
+      "Refund and cancellation policy",
+      "Whether before-care or after-care is offered",
+      "Availability of each session",
+      "Exact age of the oldest campers (only described as rising 2nd graders)"
+    ],
+    "low_confidence": [
+      {
+        "field": "season_year",
+        "confidence": 0.6,
+        "quote": "Session 2027 Dates"
+      },
+      {
+        "field": "sessions[0].start_date",
+        "confidence": 0.65,
+        "quote": "Week 1June 28 - July 2"
+      },
+      {
+        "field": "sessions[6].end_date",
+        "confidence": 0.65,
+        "quote": "Week 7August 9 - August 13"
+      },
+      {
+        "field": "age_min",
+        "confidence": 0.7,
+        "quote": "Our youngest campers are 4 years old (by June 29, 2026)"
+      },
+      {
+        "field": "grade_max",
+        "confidence": 0.7,
+        "quote": "our oldest campers are rising 2nd graders"
+      },
+      {
+        "field": "price_per_week",
+        "confidence": 0.6,
+        "quote": "The cost per week per child is $525."
+      },
+      {
+        "field": "price_min",
+        "confidence": 0.55,
+        "quote": "$100 per week, per child discount to our local families whose children are enrolled in a Berkshire school district year-round"
+      }
+    ],
+    "errors": []
+  }
+}
