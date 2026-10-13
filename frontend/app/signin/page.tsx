@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { sendSignInLink, supabase, useSession } from '@/lib/auth'
 import { loadFamily } from '@/lib/agent'
+import { Button, Container, Heading, Input, Text } from '@/components/ui'
 
 export default function SignInPage() {
   const session = useSession()
@@ -30,41 +31,39 @@ export default function SignInPage() {
   }
 
   if (!supabase()) {
-    return <Shell><p className="text-gray-600">Sign-in isn't set up on this site yet.</p></Shell>
+    return <Shell><Text tone="muted">Sign-in isn&rsquo;t set up on this site yet.</Text></Shell>
   }
 
   if (session) {
-    return <Shell><p className="text-gray-600">Signing you in…</p></Shell>
+    return <Shell><Text tone="muted">Signing you in…</Text></Shell>
   }
 
   return (
     <Shell>
       {sent ? (
         <div>
-          <p className="text-gray-800 font-medium mb-1">Check your email.</p>
-          <p className="text-gray-600 text-sm">We sent a sign-in link to {email}. Open it on this device to continue.</p>
+          <Heading level="h3" as="p" className="mb-1">Check your email.</Heading>
+          <Text tone="muted">We sent a sign-in link to {email}. Open it on this device to continue.</Text>
         </div>
       ) : (
-        <form onSubmit={submit} className="space-y-3">
-          <p className="text-gray-600 text-sm">
-            No password. We'll email you a link. Your kids, plans and calendar are saved to your account,
+        <form onSubmit={submit} className="space-y-4">
+          <Text tone="muted">
+            No password. We&rsquo;ll email you a link. Your kids, plans and calendar are saved to your account,
             and your info kit stays locked to it.
-          </p>
-          <input
+          </Text>
+          <Input
             type="email"
             required
+            aria-label="Email"
+            autoComplete="email"
             value={email}
             onChange={e => setEmail(e.target.value)}
             placeholder="you@example.com"
-            className="w-full border border-gray-200 rounded-xl px-4 py-3 outline-none focus:border-brand-400"
           />
-          <button
-            disabled={busy}
-            className="w-full btn-lift bg-navy hover:bg-night text-white font-semibold rounded-xl py-3 disabled:opacity-50"
-          >
+          <Button type="submit" size="lg" block disabled={busy}>
             {busy ? 'Sending…' : 'Email me a sign-in link'}
-          </button>
-          {error && <p className="text-sm text-red-600">{error}</p>}
+          </Button>
+          {error && <p className="text-small text-error">{error}</p>}
         </form>
       )}
     </Shell>
@@ -73,9 +72,11 @@ export default function SignInPage() {
 
 function Shell({ children }: { children: React.ReactNode }) {
   return (
-    <div className="max-w-md mx-auto px-4 py-16">
-      <h1 className="text-2xl font-bold text-gray-900 mb-4">Save your family</h1>
-      {children}
-    </div>
+    <Container size="narrow" className="py-20 sm:py-28">
+      <div className="max-w-md">
+        <Heading level="h1" className="mb-4">Save your family</Heading>
+        {children}
+      </div>
+    </Container>
   )
 }

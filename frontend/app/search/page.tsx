@@ -5,6 +5,7 @@ import { useSearchParams, useRouter } from 'next/navigation'
 import { searchCamps, type CampSearchResult } from '@/lib/api'
 import { Events } from '@/lib/analytics'
 import CampCard from '@/components/CampCard'
+import { Container, EmptyState, List, SearchBar, SearchField, Skeleton } from '@/components/ui'
 
 
 function SearchResults() {
@@ -53,78 +54,59 @@ function SearchResults() {
   }
 
   return (
-    <div className="max-w-6xl mx-auto px-4 py-8">
-      {/* Compact re-search bar */}
-      <form onSubmit={handleReSearch} className="flex gap-2 mb-8 flex-wrap bg-white border border-line rounded-2xl p-2 animate-rise-in">
-        <input
+    <Container size="narrow" className="py-10 sm:py-14">
+      <SearchBar onSubmit={handleReSearch}>
+        <SearchField
+          label="Where"
+          grow
           value={loc}
           onChange={e => setLoc(e.target.value)}
-          placeholder="Location"
-          className="flex-1 min-w-[160px] px-4 py-2.5 bg-paper border border-transparent rounded-xl text-sm outline-none transition-colors focus:border-navy focus:bg-white"
+          placeholder="Town or ZIP"
+          autoComplete="address-level2"
         />
-        <input
+        <SearchField
+          label="Age"
           type="number"
+          inputMode="numeric"
           value={ageVal}
           onChange={e => setAgeVal(e.target.value)}
-          placeholder="Age"
-          min={3} max={18}
-          className="w-24 px-4 py-2.5 bg-paper border border-transparent rounded-xl text-sm outline-none transition-colors focus:border-navy focus:bg-white"
+          placeholder="Any"
+          min={3}
+          max={18}
         />
-        <button
-          type="submit"
-          className="btn-lift bg-navy text-white font-semibold px-5 py-2.5 rounded-xl text-sm hover:bg-night"
-        >
-          Search
-        </button>
-      </form>
+      </SearchBar>
 
-      {/* Loading */}
-      {loading && (
-        <div className="space-y-4">
-          {[1,2,3].map(i => (
-            <div key={i} className="bg-white border border-line rounded-2xl h-40 animate-pulse" />
-          ))}
-        </div>
-      )}
+      <div className="mt-10">
+        {loading && <Skeleton rows={4} />}
 
-      {/* Error */}
-      {!loading && error && (
-        <div className="text-center py-16 text-red-600">{error}</div>
-      )}
+        {!loading && error && <p className="py-16 text-center text-small text-error">{error}</p>}
 
-      {/* No results */}
-      {!loading && !error && results.length === 0 && (
-        <div className="text-center py-16">
-          <h2 className="text-xl font-bold text-navy mb-2">No camps found near {location}.</h2>
-          <p className="text-sm text-muted">Try a nearby city or expand your search radius.</p>
-        </div>
-      )}
+        {!loading && !error && results.length === 0 && (
+          <EmptyState
+            title={`No camps found near ${location}.`}
+            description="Try a nearby town, or leave the age blank."
+          />
+        )}
 
-      {/* Results */}
-      {!loading && results.length > 0 && (
-        <>
-          <p className="text-sm text-muted mb-4" data-reveal>
-            <span className="font-display font-bold text-navy text-base">{results.length}</span> camp{results.length !== 1 ? 's' : ''} near <strong>{location}</strong>
-            {age ? ` for age ${age}` : ''}
-          </p>
-
-          <div className="space-y-4">
-            {results.map((camp, i) => (
-              <div key={camp.id} data-reveal>
-                <CampCard camp={camp} rank={i + 1} />
-              </div>
-            ))}
-          </div>
-
-        </>
-      )}
-    </div>
+        {!loading && results.length > 0 && (
+          <>
+            <p className="mb-2 text-small text-muted">
+              {results.length} camp{results.length !== 1 ? 's' : ''} near {location}
+              {age ? ` for age ${age}` : ''}
+            </p>
+            <List>
+              {results.map((camp, i) => <CampCard key={camp.id} camp={camp} rank={i + 1} />)}
+            </List>
+          </>
+        )}
+      </div>
+    </Container>
   )
 }
 
 export default function SearchPage() {
   return (
-    <Suspense fallback={<div className="max-w-6xl mx-auto px-4 py-16 text-center text-muted">Loading...</div>}>
+    <Suspense fallback={<Container className="py-16"><Skeleton rows={4} /></Container>}>
       <SearchResults />
     </Suspense>
   )

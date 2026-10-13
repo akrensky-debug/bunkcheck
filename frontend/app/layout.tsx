@@ -2,7 +2,6 @@ import type { Metadata, Viewport } from 'next'
 import { Figtree } from 'next/font/google'
 import './globals.css'
 import AccountLink from '@/components/AccountLink'
-import RevealObserver from '@/components/RevealObserver'
 
 const figtree = Figtree({
   subsets: ['latin'],
@@ -27,7 +26,7 @@ export const metadata: Metadata = {
 }
 
 export const viewport: Viewport = {
-  themeColor: '#14213D',
+  themeColor: '#F7F5F0', // ui-check-ignore: metadata needs a literal; matches --bg
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -43,76 +42,59 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;600;700&display=swap"
         />
       </head>
-      <body className="bg-paper text-navy antialiased min-h-screen flex flex-col">
-        <RevealObserver />
-        <header className="border-b border-line bg-white/90 backdrop-blur supports-[backdrop-filter]:bg-white/80 sticky top-0 z-50">
-          <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between gap-3">
-            <a href="/" className="flex items-center shrink-0 rounded-md" aria-label="Bunkcheck home">
+      <body className="min-h-screen flex flex-col">
+        <header className="sticky top-0 z-50 border-b border-line bg-bg/90 backdrop-blur">
+          <div className="mx-auto flex h-16 max-w-wide items-center justify-between gap-4 px-4 sm:px-6">
+            <a href="/" className="flex shrink-0 items-center" aria-label="Bunkcheck home">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/brand/bunkcheck-lockup-light-small.svg"
                 alt="Bunkcheck"
                 width={160}
                 height={28}
-                className="h-7 md:h-8 w-auto"
+                className="h-6 w-auto sm:h-7"
               />
             </a>
-            <nav className="hidden md:flex items-center gap-6 text-sm font-semibold text-muted">
-              <a href="/" className="nav-link hover:text-navy transition-colors">Plan with Bunkcheck</a>
-              <a href="/search" className="nav-link hover:text-navy transition-colors">Browse Camps</a>
-              <a href="/operators" className="nav-link hover:text-navy transition-colors">For Camps</a>
-              <a href="/operators/claim" className="nav-link hover:text-navy transition-colors">Claim Listing</a>
-            </nav>
-            <div className="flex items-center gap-3 sm:gap-4">
+            <nav aria-label="Main" className="flex items-center gap-4 text-small font-semibold sm:gap-7">
+              <a href="/search" className="text-muted transition-colors hover:text-ink whitespace-nowrap">Browse camps</a>
+              <a href="/operators" className="hidden text-muted transition-colors hover:text-ink whitespace-nowrap sm:inline">For camps</a>
               <AccountLink />
-              <a
-                href="/operators/submit"
-                className="btn-lift bg-navy text-white text-sm font-semibold px-4 py-2 rounded-full hover:bg-night whitespace-nowrap"
-              >
-                List your camp
-              </a>
-            </div>
+            </nav>
           </div>
         </header>
-        <main className="flex-1">{children}</main>
-        <footer className="on-dark bg-night text-offwhite mt-16">
-          <div className="max-w-6xl mx-auto px-4 py-12 flex flex-col md:flex-row justify-between gap-8 text-sm">
-            <div className="max-w-sm">
+        <main className="flex-1 animate-fade">{children}</main>
+        <footer className="mt-24 border-t border-line">
+          <div className="mx-auto flex max-w-wide flex-col gap-10 px-4 py-12 text-small sm:px-6 md:flex-row md:justify-between">
+            <div>
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/brand/bunkcheck-lockup-dark-small.svg"
+                src="/brand/bunkcheck-lockup-light-small.svg"
                 alt="Bunkcheck"
-                width={154}
-                height={22}
-                className="h-7 w-auto mb-4"
+                width={160}
+                height={28}
+                className="mb-3 h-6 w-auto"
               />
-              <p className="font-display font-bold text-lg leading-snug text-white mb-2">
-                Summer, sorted.
-              </p>
-              <p className="text-xs text-[#AEB6C8]">The structured camp discoverability layer for the AI economy.</p>
+              <p className="text-muted">Summer, sorted.</p>
             </div>
-            <div className="flex flex-wrap gap-x-12 gap-y-6">
-              <div className="space-y-1.5">
-                <p className="font-semibold text-white mb-2">Parents</p>
-                <a href="/" className="block text-[#C9CFDC] hover:text-flashlight transition-colors">Plan your summer</a>
-                <a href="/search" className="block text-[#C9CFDC] hover:text-flashlight transition-colors">Browse camps</a>
-              </div>
-              <div className="space-y-1.5">
-                <p className="font-semibold text-white mb-2">Camps</p>
-                <a href="/operators" className="block text-[#C9CFDC] hover:text-flashlight transition-colors">For Camps</a>
-                <a href="/operators/submit" className="block text-[#C9CFDC] hover:text-flashlight transition-colors">List Your Camp</a>
-                <a href="/operators/claim" className="block text-[#C9CFDC] hover:text-flashlight transition-colors">Claim Listing</a>
-              </div>
-              <div className="space-y-1.5">
-                <p className="font-semibold text-white mb-2">Help</p>
-                <a href="/support" className="block text-[#C9CFDC] hover:text-flashlight transition-colors">Support</a>
-                <a href="/privacy" className="block text-[#C9CFDC] hover:text-flashlight transition-colors">Privacy</a>
-                <a href="/terms" className="block text-[#C9CFDC] hover:text-flashlight transition-colors">Terms</a>
-              </div>
+            <div className="grid grid-cols-2 gap-x-12 gap-y-8 sm:grid-cols-3">
+              <FooterColumn title="Parents" links={[['/', 'Plan your summer'], ['/search', 'Browse camps']]} />
+              <FooterColumn title="Camps" links={[['/operators', 'For camps'], ['/operators/submit', 'List your camp'], ['/operators/claim', 'Claim your listing']]} />
+              <FooterColumn title="Help" links={[['/support', 'Support'], ['/privacy', 'Privacy'], ['/terms', 'Terms']]} />
             </div>
           </div>
         </footer>
       </body>
     </html>
+  )
+}
+
+function FooterColumn({ title, links }: { title: string; links: Array<[string, string]> }) {
+  return (
+    <div className="space-y-2">
+      <p className="font-semibold text-ink">{title}</p>
+      {links.map(([href, label]) => (
+        <a key={href} href={href} className="block text-muted transition-colors hover:text-ink">{label}</a>
+      ))}
+    </div>
   )
 }

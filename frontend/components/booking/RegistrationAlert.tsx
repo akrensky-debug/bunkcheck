@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react'
 import { getCampRegistration, signUpForAlerts, type CampRegistration } from '@/lib/alerts'
 import { fmtWhen } from '@/lib/booking'
+import { Button, Input, Notice, Section } from '@/components/ui'
 
 /** "Email me when registration opens", on a camp's page. No account needed. */
 export default function RegistrationAlert({ campId, campName }: { campId: string; campName: string }) {
@@ -36,9 +37,8 @@ export default function RegistrationAlert({ campId, campName }: { campId: string
   }
 
   return (
-    <section className="bg-white rounded-2xl border border-gray-200 p-6 mb-4">
-      <h2 className="font-bold text-gray-900 mb-1">Registration</h2>
-      <p className="text-sm text-gray-600 mb-3">
+    <Section title="Registration" divided>
+      <p className="max-w-measure text-body text-ink">
         {isOpen
           ? <>Registration is open now.{closes ? ` It closes ${fmtWhen(reg!.closes_at!)}.` : ''}</>
           : opens && opens > now
@@ -47,35 +47,33 @@ export default function RegistrationAlert({ campId, campName }: { campId: string
       </p>
 
       {!isOpen && (sent ? (
-        <p className="text-sm bg-green-50 border border-green-200 text-green-800 rounded-xl px-4 py-3">
+        <Notice tone="success" className="mt-4 max-w-measure">
           Check your email for a link to confirm. Nothing else comes until you click it.
-        </p>
+        </Notice>
       ) : (
-        <form onSubmit={submit} className="space-y-2">
-          <label htmlFor="alert-email" className="text-sm font-medium text-gray-700">
+        <form onSubmit={submit} className="mt-5 max-w-narrow space-y-2">
+          <label htmlFor="alert-email" className="text-small font-semibold text-ink">
             Email me when registration opens
           </label>
-          <div className="flex flex-col sm:flex-row gap-2">
-            <input id="alert-email" type="email" required value={email} onChange={e => setEmail(e.target.value)}
-              placeholder="you@example.com" autoComplete="email"
-              className="flex-1 border border-gray-300 rounded-xl px-3 py-2 text-sm focus:outline-none focus:border-brand-500" />
-            <button type="submit" disabled={busy}
-              className="btn-lift bg-navy hover:bg-night text-white font-semibold rounded-xl px-4 py-2 text-sm disabled:opacity-50">
+          <div className="flex flex-col gap-2 sm:flex-row">
+            <Input id="alert-email" type="email" required value={email} onChange={e => setEmail(e.target.value)}
+              placeholder="you@example.com" autoComplete="email" className="flex-1" />
+            <Button type="submit" disabled={busy} size="lg">
               {busy ? 'Sending…' : 'Tell me'}
-            </button>
+            </Button>
           </div>
-          <p className="text-xs text-gray-500">
+          <p className="text-caption text-muted">
             No account. We email when the date is announced, the day before, and when it opens. One click stops it.
           </p>
-          {error && <p className="text-sm text-red-600">{error}</p>}
+          {error && <p className="text-small text-error">{error}</p>}
         </form>
       ))}
 
       {reg && reg.alerts_waiting > 1 && (
-        <p className="text-xs text-gray-400 mt-3">
+        <p className="mt-4 text-caption text-muted">
           {reg.alerts_waiting} families are waiting to hear when registration opens.
         </p>
       )}
-    </section>
+    </Section>
   )
 }
