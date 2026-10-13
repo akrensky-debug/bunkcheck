@@ -30,9 +30,9 @@ def build_ics(events: list[dict[str, Any]]) -> str:
     lines = [
         "BEGIN:VCALENDAR",
         "VERSION:2.0",
-        "PRODID:-//BunkCheck//Family Calendar//EN",
+        "PRODID:-//Bunkcheck//Family Calendar//EN",
         "CALSCALE:GREGORIAN",
-        "X-WR-CALNAME:Family plans (BunkCheck)",
+        "X-WR-CALNAME:Family plans (Bunkcheck)",
         "REFRESH-INTERVAL;VALUE=DURATION:PT6H",
     ]
     lines += ics_extended.vtimezone_lines(events)

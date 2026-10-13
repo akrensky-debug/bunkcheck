@@ -61,7 +61,7 @@ def is_enabled() -> bool:
 
 def _require_enabled() -> None:
     if not is_enabled():
-        raise HTTPException(status_code=404, detail="Booking through BunkCheck isn't available yet")
+        raise HTTPException(status_code=404, detail="Booking through Bunkcheck isn't available yet")
 
 
 def _bookable(camp_id: str, session_id: str | None) -> tuple[Any, str]:

@@ -99,7 +99,7 @@ def get_mailer() -> Mailer:
                 log.error("EMAIL_MODE=resend but RESEND_API_KEY is not set: no email will be sent")
                 _mailer = OffMailer()
             else:
-                _mailer = ResendMailer(key, os.environ.get("EMAIL_FROM", "BunkCheck <hello@mail.bunkcheck.ai>"))
+                _mailer = ResendMailer(key, os.environ.get("EMAIL_FROM", "Bunkcheck <hello@mail.bunkcheck.ai>"))
         elif mode == "off":
             _mailer = OffMailer()
         else:

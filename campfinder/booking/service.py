@@ -2,7 +2,7 @@
 Registration day for one family: what they're watching or registered for, when
 registration opens, the register-now checklist, and info kit packages for a camp's form.
 
-The parent does the registering on the camp's own site. BunkCheck tracks it, reminds
+The parent does the registering on the camp's own site. Bunkcheck tracks it, reminds
 her, puts dates on the family calendar, and prepares an info kit package she can
 share; nothing is registered, paid or shared without her doing it.
 """
