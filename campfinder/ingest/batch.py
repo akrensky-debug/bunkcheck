@@ -28,6 +28,7 @@ from campfinder.ingest.fetch import FetchError, Refused, UnsafeURL, fetch
 from campfinder.seed.import_real import DATA_DIR, load_dataset
 
 DRAFTS_DIR = DATA_DIR.parent / "drafts"
+PER_CAMP_SECONDS = 600   # a page that hangs (a browser load, a stalled host) fails that camp only
 
 
 def _site(url: str) -> str:
@@ -112,7 +113,10 @@ async def run(candidates: list[dict[str, Any]], *, metro: str, drafts: Path, lim
     async def go(cand: dict[str, Any]) -> None:
         async with sem:
             try:
-                res = await draft_one(cand, metro=metro, today=today, taken=taken)
+                res = await asyncio.wait_for(draft_one(cand, metro=metro, today=today, taken=taken),
+                                             PER_CAMP_SECONDS)
+            except TimeoutError:
+                res = {"outcome": "failed", "detail": f"timed out after {PER_CAMP_SECONDS}s; retry"}
             except Exception as e:  # noqa: BLE001 - one bad camp must not stop the run
                 res = {"outcome": "failed", "detail": f"{type(e).__name__}: {e}"}
         entry = {"name": cand.get("name"), "url": cand["url"], "outcome": res["outcome"], "detail": res.get("detail")}

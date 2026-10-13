@@ -173,3 +173,14 @@ async def test_a_page_with_no_camp_is_not_a_draft(fake_tool, tmp_path, monkeypat
                           concurrency=1, today=TODAY)
     assert log[0]["outcome"] == "failed" and "Program Not Found" in log[0]["detail"]
     assert not [f for f in (tmp_path / "p").glob("*.json") if not f.name.startswith("_")]
+
+
+async def test_a_hanging_page_fails_that_camp_only(fake_tool, tmp_path, monkeypatch):
+    import asyncio
+    async def hang(url):
+        await asyncio.sleep(60)
+    monkeypatch.setattr(batch, "fetch", hang)
+    monkeypatch.setattr(batch, "PER_CAMP_SECONDS", 0.05)
+    log = await batch.run(CANDIDATES[:1], metro="Providence, RI", drafts=tmp_path / "p", limit=None,
+                          concurrency=1, today=TODAY)
+    assert log[0]["outcome"] == "failed" and "timed out" in log[0]["detail"]
