@@ -7,7 +7,7 @@
   "phone": "203-656-7300",
   "city": "Darien",
   "state": "CT",
-  "zip": null,
+  "zip": "06820",
   "grade_min": 1,
   "grade_max": 9,
   "description_short": "The Town of Darien runs four youth summer camps grouped by grade: Stony Brook Camp (Grade 1), Settlers Camp (Grades 2–3) and Mather Camp (Grades 4–6) at Tokeneke Elementary School, and Middle School Camp (Grades 7–9) at The Depot, Darien's youth center. Campers are placed by the grade they will enter in the fall.",
@@ -29,6 +29,14 @@
         "description_short"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.census.gov/geographies/reference-files/time-series/geo/relationship-files.2020.html",
+      "checked": "2026-10-14",
+      "fields": [
+        "zip"
+      ],
+      "note": "Darien, CT sits inside one ZIP code (2020 Census ZCTA relationship file)"
     }
   ],
   "review": {
@@ -39,6 +47,7 @@
       "title": "Youth Summer Camps | Darien, CTArrow LeftArrow RightSlideshow Left ArrowSlideshow Right Arrow"
     },
     "warnings": [
+      "Filled zip 06820: Darien has one ZIP code (2020 Census)",
       "The 2027 season details aren't posted yet. The page says 'Check back in the winter for the summer 2027 season!' Grade groupings and locations are taken from the current page and could change.",
       "This is a town umbrella page for four separate camps (Stony Brook, Settlers, Mather, Middle School), not one camp. Each has its own handbook and calendar.",
       "The phone number is the main Darien Town Hall number, not a camp-specific line.",
@@ -80,7 +89,6 @@
       }
     ],
     "errors": [
-      "missing required zip",
       "missing required camp_type",
       "camp_type must be one of ['day', 'sleepaway', 'specialty']"
     ]

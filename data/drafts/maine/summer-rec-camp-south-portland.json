@@ -6,7 +6,7 @@
   "email": "kfilieo@southportland.gov",
   "city": "South Portland",
   "state": "ME",
-  "zip": null,
+  "zip": "04106",
   "camp_type": "day",
   "grade_min": 0,
   "grade_max": 8,
@@ -39,6 +39,14 @@
         "refund_policy_summary"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.census.gov/geographies/reference-files/time-series/geo/relationship-files.2020.html",
+      "checked": "2026-10-14",
+      "fields": [
+        "zip"
+      ],
+      "note": "South Portland, ME sits inside one ZIP code (2020 Census ZCTA relationship file)"
     }
   ],
   "review": {
@@ -49,6 +57,7 @@
       "title": "Out of School Programs | South Portland, MEArrow LeftArrow RightSlideshow Left ArrowSlideshow Right Arrow"
     },
     "warnings": [
+      "Filled zip 04106: South Portland has one ZIP code (2020 Census)",
       "This is a city recreation department page covering several programs (Teen Center, Sopo Kids Club before and after care, Summer Rec Camp). Only Summer Rec Camp is recorded here.",
       "No season year, dates, or prices are given. season_year is left blank.",
       "The financial aid deadline reads 'Friday, April 7th'. April 7 fell on a Friday in 2023, not in 2027, so the financial aid dates (April 7, April 17, June 9) are likely out of date.",
@@ -83,7 +92,6 @@
       }
     ],
     "errors": [
-      "missing required zip",
       "missing required season_year"
     ]
   }

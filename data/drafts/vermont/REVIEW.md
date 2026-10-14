@@ -12,7 +12,7 @@ Nothing here is on the site until it is promoted and imported.
 | [Bethany Birches Camp – Summit (Summit Mid & Summit High)](bethany-birches-camp-summit-summit-mid-and-summit-high.json) | ? | 2 | 3 | 2 | 3 | unchecked |
 | [Boys & Girls Club of Burlington Summer Camp](boys-and-girls-club-of-burlington-summer-camp-burlington.json) | Burlington | 0 | 0 | 3 | 4 | unchecked |
 | [Brattleboro Music Center Summer Programs](brattleboro-music-center-summer-programs-brattleboro.json) | Brattleboro | 0 | 0 | 3 | 4 | unchecked |
-| [Brattleboro Recreation & Parks Summer Camps](brattleboro-recreation-and-parks-summer-camps-brattleboro.json) | Brattleboro | 0 | 3 | 1 | 4 | unchecked |
+| [Brattleboro Recreation & Parks Summer Camps](brattleboro-recreation-and-parks-summer-camps-brattleboro.json) | Brattleboro | 0 | 2 | 1 | 5 | unchecked |
 | [Burlington Parks, Recreation & Waterfront Summer Camps](burlington-parks-recreation-and-waterfront-summer-camps-burlington.json) | Burlington | 0 | 1 | 2 | 4 | unchecked |
 | [Camp Akeela](camp-akeela-thetford-center.json) | Thetford Center | 2 | 0 | 2 | 4 | unchecked |
 | [Camp Billings](camp-billings-fairlee.json) | Fairlee | 4 | 0 | 2 | 5 | unchecked |
@@ -28,8 +28,8 @@ Nothing here is on the site until it is promoted and imported.
 | [Camp Ta-Kum-Ta](camp-ta-kum-ta.json) | ? | 9 | 3 | 1 | 4 | unchecked |
 | [Camp Thorpe](camp-thorpe-goshen.json) | Goshen | 4 | 0 | 1 | 4 | unchecked |
 | [Capital Kids Summer Day Camp](capital-kids-summer-day-camp-montpelier.json) | Montpelier | 8 | 1 | 10 | 4 | unchecked |
-| [City of Winooski Summer Camps (Thrive Summer Camps and Recreation & Parks Summer Camps)](city-of-winooski-summer-camps-thrive-summer-camps-and-recreation-and-parks-summe.json) | Winooski | 12 | 3 | 1 | 5 | unchecked |
-| [Colchester Parks & Recreation Programs (Summer)](colchester-parks-and-recreation-programs-summer-colchester.json) | Colchester | 0 | 3 | 0 | 4 | unchecked |
+| [City of Winooski Summer Camps (Thrive Summer Camps and Recreation & Parks Summer Camps)](city-of-winooski-summer-camps-thrive-summer-camps-and-recreation-and-parks-summe.json) | Winooski | 12 | 2 | 1 | 6 | unchecked |
+| [Colchester Parks & Recreation Programs (Summer)](colchester-parks-and-recreation-programs-summer-colchester.json) | Colchester | 0 | 2 | 0 | 5 | unchecked |
 | [Community Sailing Center Youth Camps](community-sailing-center-youth-camps-burlington.json) | Burlington | 57 | 1 | 4 | 9 | unchecked |
 | [EJRP Summer Full Day Camps](ejrp-summer-full-day-camps-essex-junction.json) | Essex Junction | 0 | 0 | 2 | 4 | unchecked |
 | [Farm & Wilderness Summer Camps](farm-and-wilderness-summer-camps-plymouth.json) | Plymouth | 7 | 0 | 5 | 7 | unchecked |
@@ -47,7 +47,7 @@ Nothing here is on the site until it is promoted and imported.
 | [Point CounterPoint Youth Sessions](point-counterpoint-youth-sessions-leicester.json) | Leicester | 5 | 0 | 0 | 3 | unchecked |
 | [Rutland Recreation Camps](rutland-recreation-camps-rutland.json) | Rutland | 0 | 1 | 4 | 4 | unchecked |
 | [Shelburne Farms Summer Camps](shelburne-farms-summer-camps-shelburne.json) | Shelburne | 0 | 2 | 3 | 3 | unchecked |
-| [Shelburne Parks and Recreation Summer Camps](shelburne-parks-and-recreation-summer-camps-shelburne.json) | Shelburne | 11 | 1 | 2 | 5 | unchecked |
+| [Shelburne Parks and Recreation Summer Camps](shelburne-parks-and-recreation-summer-camps-shelburne.json) | Shelburne | 11 | 0 | 2 | 6 | unchecked |
 | [Smirkus Camp](smirkus-camp-greensboro.json) | Greensboro | 13 | 0 | 1 | 7 | unchecked |
 | [Southern Vermont Arts Center Summer Camps](southern-vermont-arts-center-summer-camps-manchester.json) | Manchester | 0 | 2 | 1 | 3 | unchecked |
 | [Stowe Rec Summer Camp](stowe-rec-summer-camp-stowe.json) | Stowe | 11 | 0 | 7 | 6 | unchecked |

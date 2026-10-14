@@ -5,7 +5,7 @@
   "website_url": "https://www.shelburnevt.org/160/Parks-Recreation",
   "city": "Shelburne",
   "state": "VT",
-  "zip": null,
+  "zip": "05482",
   "camp_type": "day",
   "primary_categories": [
     "sports",
@@ -130,6 +130,14 @@
         "sessions"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.census.gov/geographies/reference-files/time-series/geo/relationship-files.2020.html",
+      "checked": "2026-10-14",
+      "fields": [
+        "zip"
+      ],
+      "note": "Shelburne, VT sits inside one ZIP code (2020 Census ZCTA relationship file)"
     }
   ],
   "review": {
@@ -140,6 +148,7 @@
       "title": null
     },
     "warnings": [
+      "Filled zip 05482: Shelburne has one ZIP code (2020 Census)",
       "Old season: the 2026 camps (June 22 - Aug 7, 2026) are already over as of 2026-10-13. Dates and prices for 2027 are not available yet.",
       "This page is a one-page summary of several separate single-activity camps run by the town recreation department, some of them taught by outside providers (Vermont Ultimate, Wicked Cool for Kids). It is not one general camp.",
       "Some sessions use grade levels instead of ages: High Perf. Tennis (entering 9th-12th grade), Rocketry (entering 3rd-7th), Redhawk Soccer (entering K-8th) and Hogwarts STEAM Express (entering 1st-5th). Grades mean the grade entering in fall 2026. Session ages were left blank for these.",
@@ -174,8 +183,6 @@
         "quote": "shelburnevt.org"
       }
     ],
-    "errors": [
-      "missing required zip"
-    ]
+    "errors": []
   }
 }

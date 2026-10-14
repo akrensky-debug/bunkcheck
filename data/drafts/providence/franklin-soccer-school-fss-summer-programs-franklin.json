@@ -5,7 +5,7 @@
   "website_url": "https://www.franklinsoccerschool.com/programs/summerprograms",
   "city": "Franklin",
   "state": "MA",
-  "zip": null,
+  "zip": "02038",
   "camp_type": "specialty",
   "primary_categories": [
     "sports"
@@ -32,6 +32,14 @@
         "state"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.census.gov/geographies/reference-files/time-series/geo/relationship-files.2020.html",
+      "checked": "2026-10-14",
+      "fields": [
+        "zip"
+      ],
+      "note": "Franklin, MA sits inside one ZIP code (2020 Census ZCTA relationship file)"
     }
   ],
   "review": {
@@ -42,6 +50,7 @@
       "title": "Franklin Soccer School - Summer Programs"
     },
     "warnings": [
+      "Filled zip 02038: Franklin has one ZIP code (2020 Census)",
       "Filled state MA: Franklin is in our town list under that state only",
       "The page gives no season year, dates, prices or ages. It says 'again this year' and the copyright runs to 2026, so the text may describe the 2026 summer, which has already passed. It may not reflect the 2027 season.",
       "Sessions aren't listed individually. The page only says there are four-day sessions in July and August for multiple age groups.",
@@ -62,7 +71,6 @@
     ],
     "low_confidence": [],
     "errors": [
-      "missing required zip",
       "missing required season_year"
     ]
   }

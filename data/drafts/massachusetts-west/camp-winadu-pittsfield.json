@@ -7,7 +7,7 @@
   "phone": "914-437-7200",
   "city": "Pittsfield",
   "state": "MA",
-  "zip": null,
+  "zip": "01201",
   "camp_type": "sleepaway",
   "primary_categories": [
     "sports",
@@ -60,6 +60,14 @@
         "sessions"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.census.gov/geographies/reference-files/time-series/geo/relationship-files.2020.html",
+      "checked": "2026-10-14",
+      "fields": [
+        "zip"
+      ],
+      "note": "Pittsfield, MA sits inside one ZIP code (2020 Census ZCTA relationship file)"
     }
   ],
   "review": {
@@ -70,6 +78,7 @@
       "title": "Dates & Rates | Camp Winadu - Boys Summer Camp, Berkshire Mountains, Pittsfield, Massachusetts"
     },
     "warnings": [
+      "Filled zip 01201: Pittsfield has one ZIP code (2020 Census)",
       "The 2027 prices depend on when you enroll: before September 15 it's $16,600 (full season) and $13,500 (5-week). After that it's $16,950 and $13,800. Today is 2026-10-13, so I recorded the after-September-15 prices. The page doesn't give a year for the deadline; I'm assuming it's September 15, 2026.",
       "The page also shows dates for 2026 and dates and rates for 2024. In the 2024 table, the 5-week rate after the deadline ($12,300) is lower than the early rate ($12,600), which looks like a typo.",
       "In the 2026 section, Sibling Rookie Day is listed as 'Saturday, July 17', but July 17, 2026 is a Friday.",
@@ -109,8 +118,6 @@
         "quote": "Sports & Activities ... Outdoor Adventure ... Arts & Hobbies"
       }
     ],
-    "errors": [
-      "missing required zip"
-    ]
+    "errors": []
   }
 }

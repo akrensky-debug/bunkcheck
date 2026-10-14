@@ -6,7 +6,7 @@
   "registration_url": "https://vtbrattleboroweb.myvscloud.com/webtrac/web/",
   "city": "Brattleboro",
   "state": "VT",
-  "zip": null,
+  "zip": "05301",
   "description_short": "Summer camps and programs run by the Town of Brattleboro's Recreation and Parks department. You can register online or in person at the Gibson-Aiken Center.",
   "season_year": 2026,
   "sources": [
@@ -23,6 +23,14 @@
         "description_short"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.census.gov/geographies/reference-files/time-series/geo/relationship-files.2020.html",
+      "checked": "2026-10-14",
+      "fields": [
+        "zip"
+      ],
+      "note": "Brattleboro, VT sits inside one ZIP code (2020 Census ZCTA relationship file)"
     }
   ],
   "review": {
@@ -33,6 +41,7 @@
       "title": "Summer Camp Registration Opens March 16"
     },
     "warnings": [
+      "Filled zip 05301: Brattleboro has one ZIP code (2020 Census)",
       "Source is a short news/blog post on the Town of Brattleboro website announcing registration. It is not a camp program page and gives no camp details.",
       "The post is about the 2026 season (registration opened March 16, 2026), which has already passed as of 2026-10-13. No 2027 information is given.",
       "No individual camps, sessions, dates, ages or prices are listed, so no sessions were recorded.",
@@ -59,7 +68,6 @@
       }
     ],
     "errors": [
-      "missing required zip",
       "missing required camp_type",
       "camp_type must be one of ['day', 'sleepaway', 'specialty']"
     ]

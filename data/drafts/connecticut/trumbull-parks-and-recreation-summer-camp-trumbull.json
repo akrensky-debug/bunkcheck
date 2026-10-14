@@ -7,7 +7,7 @@
   "phone": "(203) 452-5060",
   "city": "Trumbull",
   "state": "CT",
-  "zip": null,
+  "zip": "06611",
   "description_short": "Summer camp programs run by the Town of Trumbull Parks & Recreation. Details and registration are on the town's recreation website (trumbullct.myrec.com).",
   "season_year": 2026,
   "sources": [
@@ -25,6 +25,14 @@
         "description_short"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.census.gov/geographies/reference-files/time-series/geo/relationship-files.2020.html",
+      "checked": "2026-10-14",
+      "fields": [
+        "zip"
+      ],
+      "note": "Trumbull, CT sits inside one ZIP code (2020 Census ZCTA relationship file)"
     }
   ],
   "review": {
@@ -35,6 +43,7 @@
       "title": "News Flash Archive - 2026 Summer Camp preview is live. Registration opens March 2, 2026 at 9AM.Arrow LeftArrow RightSlideshow Left ArrowSlideshow Right Arrow"
     },
     "warnings": [
+      "Filled zip 06611: Trumbull has one ZIP code (2020 Census)",
       "Source is an archived town news announcement, not the camp's own program page; it contains no camp details itself.",
       "The page covers the 2026 season, which has already ended (today is 2026-10-13). No 2027 information is given.",
       "2026 registration opened March 2, 2026 at 9AM; that date has passed and does not apply to 2027.",
@@ -65,7 +74,6 @@
       }
     ],
     "errors": [
-      "missing required zip",
       "missing required camp_type",
       "camp_type must be one of ['day', 'sleepaway', 'specialty']"
     ]

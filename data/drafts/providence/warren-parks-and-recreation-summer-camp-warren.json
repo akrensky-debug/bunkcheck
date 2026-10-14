@@ -5,7 +5,7 @@
   "website_url": "https://www.townofwarren-ri.gov/town_government/departments/parks_and_recreation/visit_our_summer_camp_page_here.php",
   "city": "Warren",
   "state": "RI",
-  "zip": null,
+  "zip": "02885",
   "sources": [
     {
       "url": "https://www.townofwarren-ri.gov/town_government/departments/parks_and_recreation/visit_our_summer_camp_page_here.php",
@@ -18,6 +18,14 @@
         "state"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.census.gov/geographies/reference-files/time-series/geo/relationship-files.2020.html",
+      "checked": "2026-10-14",
+      "fields": [
+        "zip"
+      ],
+      "note": "Warren, RI sits inside one ZIP code (2020 Census ZCTA relationship file)"
     }
   ],
   "review": {
@@ -28,6 +36,7 @@
       "title": "Warren, Rhode Island"
     },
     "warnings": [
+      "Filled zip 02885: Warren has one ZIP code (2020 Census)",
       "The page text is the Town of Warren homepage (navigation menu, town news, town hall contact info), not a summer camp page. It has no camp details, even though the URL points to a summer camp page. The page may have redirected or be out of date.",
       "The only thing linking to a camp is a 'Summer Camp' item in the Parks & Recreation menu. The camp name is made up from that menu item and is not an official title.",
       "The contact details on the page (401-245-7340, 514 Main Street, Warren, RI 02885) are for Town Hall, not the camp, so they were not recorded as the camp's contact or location.",
@@ -69,7 +78,6 @@
       }
     ],
     "errors": [
-      "missing required zip",
       "missing required camp_type",
       "missing required season_year",
       "camp_type must be one of ['day', 'sleepaway', 'specialty']"

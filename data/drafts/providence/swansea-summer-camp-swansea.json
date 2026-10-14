@@ -6,7 +6,7 @@
   "email": "Jpozzi@swanseama.gov",
   "city": "Swansea",
   "state": "MA",
-  "zip": null,
+  "zip": "02777",
   "description_short": "A town-run summer camp in Swansea, MA. Registration is through the town's My REC system, and John Pozzi is the contact.",
   "sources": [
     {
@@ -22,6 +22,14 @@
         "description_short"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.census.gov/geographies/reference-files/time-series/geo/relationship-files.2020.html",
+      "checked": "2026-10-14",
+      "fields": [
+        "zip"
+      ],
+      "note": "Swansea, MA sits inside one ZIP code (2020 Census ZCTA relationship file)"
     }
   ],
   "review": {
@@ -32,6 +40,7 @@
       "title": "Summer Camp Registration is OPEN"
     },
     "warnings": [
+      "Filled zip 02777: Swansea has one ZIP code (2020 Census)",
       "This is a short news post on the Town of Swansea website, not a full camp page. It has almost no details.",
       "The post gives no year. Today is 2026-10-13, so 'registration is OPEN' probably refers to a past season, not 2027.",
       "The camp name is a guess built from the page title and town name. The page doesn't give an official program name.",
@@ -77,7 +86,6 @@
       }
     ],
     "errors": [
-      "missing required zip",
       "missing required camp_type",
       "missing required season_year",
       "camp_type must be one of ['day', 'sleepaway', 'specialty']"

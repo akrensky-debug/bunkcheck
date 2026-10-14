@@ -5,7 +5,7 @@
   "registration_url": "https://greylock.campintouch.com/ui/forms/application/camper/App",
   "city": "Becket",
   "state": "MA",
-  "zip": null,
+  "zip": "01223",
   "camp_type": "sleepaway",
   "primary_categories": [
     "sports",
@@ -42,6 +42,14 @@
         "swim_waterfront_notes"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.census.gov/geographies/reference-files/time-series/geo/relationship-files.2020.html",
+      "checked": "2026-10-14",
+      "fields": [
+        "zip"
+      ],
+      "note": "Becket, MA sits inside one ZIP code (2020 Census ZCTA relationship file)"
     }
   ],
   "review": {
@@ -52,6 +60,7 @@
       "title": "The Best Boys Sports Camp Near You, Greylock Sleepaway Camp"
     },
     "warnings": [
+      "Filled zip 01223: Becket has one ZIP code (2020 Census)",
       "This is the camp's homepage only. It has no season dates or prices, so season_year is left blank and no sessions are recorded. Check the Dates & Fees page for 2027 details.",
       "Boys-only camp.",
       "The page says ACA accredited: check it on acacamps.org and add aca_accredited with aca_source_url"
@@ -71,7 +80,6 @@
     ],
     "low_confidence": [],
     "errors": [
-      "missing required zip",
       "missing required season_year"
     ]
   }

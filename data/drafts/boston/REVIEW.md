@@ -31,7 +31,7 @@ Nothing here is on the site until it is promoted and imported.
 | [Connections Summer Expeditions](connections-summer-expeditions-boston.json) | Boston | 3 | 0 | 1 | 5 | unchecked |
 | [Creative Camp](creative-camp-marshfield.json) | Marshfield | 8 | 0 | 1 | 5 | unchecked |
 | [CSW Summer Day Camp](csw-summer-day-camp-weston.json) | Weston | 0 | 1 | 3 | 3 | unchecked |
-| [Dedham Public Schools Summer Institute](dedham-public-schools-summer-institute-dedham.json) | Dedham | 10 | 1 | 5 | 7 | unchecked |
+| [Dedham Public Schools Summer Institute](dedham-public-schools-summer-institute-dedham.json) | Dedham | 10 | 0 | 5 | 8 | unchecked |
 | [Derby Summer Programs](derby-summer-programs-hingham.json) | Hingham | 0 | 1 | 1 | 4 | unchecked |
 | [DHSP Summer Camps and Programs (K-8)](dhsp-summer-camps-and-programs-k-8-cambridge.json) | Cambridge | 3 | 0 | 1 | 5 | unchecked |
 | [Energy Center Camp (Ages 4-6)](energy-center-camp-ages-4-6-weymouth.json) | Weymouth | 2 | 0 | 7 | 5 | unchecked |
@@ -49,8 +49,8 @@ Nothing here is on the site until it is promoted and imported.
 | [NARA Summer Camp](nara-summer-camp-acton.json) | Acton | 1 | 0 | 4 | 6 | unchecked |
 | [Needham Park and Recreation Summer Camps](needham-park-and-recreation-summer-camps-needham.json) | Needham | 0 | 2 | 1 | 4 | unchecked |
 | [Newton Community Education](newton-community-education-newton.json) | Newton | 0 | 3 | 0 | 3 | unchecked |
-| [North River Nature Camp](north-river-nature-camp-marshfield.json) | Marshfield | 0 | 1 | 1 | 4 | unchecked |
-| [Pequossette Summer Recreation Program](pequossette-summer-recreation-program-watertown.json) | Watertown | 9 | 1 | 1 | 6 | unchecked |
+| [North River Nature Camp](north-river-nature-camp-marshfield.json) | Marshfield | 0 | 0 | 1 | 5 | unchecked |
+| [Pequossette Summer Recreation Program](pequossette-summer-recreation-program-watertown.json) | Watertown | 9 | 0 | 1 | 7 | unchecked |
 | [Pingree Day Camp](pingree-day-camp-south-hamilton.json) | South Hamilton | 12 | 0 | 6 | 5 | unchecked |
 | [Running Brook Camps Day Camp](running-brook-camps-day-camp-waltham.json) | Waltham | 0 | 1 | 1 | 5 | unchecked |
 | [South Shore Art Center – Youth Education](south-shore-art-center-youth-education-cohasset.json) | Cohasset | 6 | 0 | 2 | 5 | unchecked |

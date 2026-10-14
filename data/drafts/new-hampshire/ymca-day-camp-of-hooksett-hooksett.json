@@ -8,7 +8,7 @@
   "phone": "603.623.3558",
   "city": "Hooksett",
   "state": "NH",
-  "zip": null,
+  "zip": "03106",
   "camp_type": "day",
   "primary_categories": [
     "sports",
@@ -129,6 +129,14 @@
         "sessions"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.census.gov/geographies/reference-files/time-series/geo/relationship-files.2020.html",
+      "checked": "2026-10-14",
+      "fields": [
+        "zip"
+      ],
+      "note": "Hooksett, NH sits inside one ZIP code (2020 Census ZCTA relationship file)"
     }
   ],
   "review": {
@@ -139,6 +147,7 @@
       "title": "Hooksett Day Camp | The Granite YMCA"
     },
     "warnings": [
+      "Filled zip 03106: Hooksett has one ZIP code (2020 Census)",
       "This page shows the 2026 season, which ended before today (2026-10-13). Dates and details for 2027 are not posted yet. All sessions recorded here are the 2026 weeks.",
       "Registration opening depends on who you are: returning campers Dec 1, 2025; Y members Jan 5, 2026; non-members Feb 2, 2026 (all at 10:00 am). Because of this, the per-session registration date was left blank.",
       "Not every program runs all 9 weeks: the LIT program is two weeks and the CIT program is four weeks. The 9 theme weeks shown apply to the main camp; teen program dates are not given.",
@@ -173,8 +182,6 @@
         "quote": "Week 9 (August 17 – August 21): Mystery"
       }
     ],
-    "errors": [
-      "missing required zip"
-    ]
+    "errors": []
   }
 }

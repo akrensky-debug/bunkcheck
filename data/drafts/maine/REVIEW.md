@@ -15,7 +15,7 @@ Nothing here is on the site until it is promoted and imported.
 | [Blueberry Cove Sailing Camps](blueberry-cove-sailing-camps.json) | ? | 3 | 3 | 1 | 4 | unchecked |
 | [Boys & Girls Clubs of Southern Maine Summer Program](boys-and-girls-clubs-of-southern-maine-summer-program-portland.json) | Portland | 0 | 2 | 5 | 5 | unchecked |
 | [Bridgton Sports Camp](bridgton-sports-camp-north-bridgton.json) | North Bridgton | 2 | 0 | 1 | 4 | unchecked |
-| [Brunswick Parks & Recreation Summer Programs](brunswick-parks-and-recreation-summer-programs-brunswick.json) | Brunswick | 0 | 4 | 3 | 5 | unchecked |
+| [Brunswick Parks & Recreation Summer Programs](brunswick-parks-and-recreation-summer-programs-brunswick.json) | Brunswick | 0 | 3 | 3 | 6 | unchecked |
 | [Camp Agawam](camp-agawam-raymond.json) | Raymond | 6 | 0 | 4 | 4 | unchecked |
 | [Camp Androscoggin](camp-androscoggin.json) | ? | 2 | 3 | 0 | 4 | unchecked |
 | [Camp Arcadia](camp-arcadia-otisfield.json) | Otisfield | 6 | 0 | 1 | 4 | unchecked |
@@ -28,7 +28,7 @@ Nothing here is on the site until it is promoted and imported.
 | [Camp Fernwood](camp-fernwood.json) | ? | 1 | 3 | 0 | 3 | unchecked |
 | [Camp Kawanhee](camp-kawanhee-weld.json) | Weld | 7 | 0 | 1 | 6 | unchecked |
 | [Camp Kippewa](camp-kippewa.json) | ? | 9 | 3 | 1 | 4 | unchecked |
-| [Camp KV](camp-kv-readfield.json) | Readfield | 12 | 1 | 10 | 5 | unchecked |
+| [Camp KV](camp-kv-readfield.json) | Readfield | 12 | 0 | 10 | 6 | unchecked |
 | [Camp Laughing Loon](camp-laughing-loon-east-waterboro.json) | East Waterboro | 0 | 1 | 0 | 4 | unchecked |
 | [Camp Laurel](camp-laurel-readfield.json) | Readfield | 1 | 0 | 3 | 5 | unchecked |
 | [Camp Manitou](camp-manitou.json) | ? | 0 | 4 | 3 | 5 | unchecked |
@@ -46,7 +46,7 @@ Nothing here is on the site until it is promoted and imported.
 | [Camp Wawenock](camp-wawenock-raymond.json) | Raymond | 5 | 0 | 0 | 4 | unchecked |
 | [Camp Wekeela](camp-wekeela-hartford.json) | Hartford | 13 | 0 | 3 | 6 | unchecked |
 | [Camp Wigwam](camp-wigwam-waterford.json) | Waterford | 5 | 0 | 2 | 5 | unchecked |
-| [Camp Wildwood](camp-wildwood-bridgton.json) | Bridgton | 1 | 1 | 0 | 4 | unchecked |
+| [Camp Wildwood](camp-wildwood-bridgton.json) | Bridgton | 1 | 0 | 0 | 5 | unchecked |
 | [Camp Winnebago](camp-winnebago-fayette.json) | Fayette | 3 | 0 | 1 | 2 | unchecked |
 | [Camps Newfound Owatonna](camps-newfound-owatonna-harrison.json) | Harrison | 5 | 0 | 2 | 4 | unchecked |
 | [Center Day Camp](center-day-camp-windham.json) | Windham | 0 | 0 | 1 | 5 | unchecked |
@@ -75,10 +75,10 @@ Nothing here is on the site until it is promoted and imported.
 | [Seacoast United Youth Soccer Camps](seacoast-united-youth-soccer-camps.json) | ? | 0 | 4 | 1 | 5 | unchecked |
 | [Slovenski Camps](slovenski-camps-raymond.json) | Raymond | 38 | 0 | 2 | 7 | unchecked |
 | [Summer Day Camp (Grades 1-5)](summer-day-camp-grades-1-5-bath.json) | Bath | 0 | 0 | 2 | 4 | unchecked |
-| [Summer Rec Camp](summer-rec-camp-south-portland.json) | South Portland | 0 | 2 | 2 | 5 | unchecked |
+| [Summer Rec Camp](summer-rec-camp-south-portland.json) | South Portland | 0 | 1 | 2 | 6 | unchecked |
 | [Summer Track & Field](summer-track-and-field-auburn.json) | Auburn | 0 | 0 | 2 | 6 | unchecked |
-| [The Public Theatre Summer Theatre Camps](the-public-theatre-summer-theatre-camps-lewiston.json) | Lewiston | 2 | 1 | 2 | 5 | unchecked |
-| [Tripp Lake Camp](tripp-lake-camp-poland.json) | Poland | 1 | 1 | 0 | 4 | unchecked |
+| [The Public Theatre Summer Theatre Camps](the-public-theatre-summer-theatre-camps-lewiston.json) | Lewiston | 2 | 0 | 2 | 6 | unchecked |
+| [Tripp Lake Camp](tripp-lake-camp-poland.json) | Poland | 1 | 0 | 0 | 5 | unchecked |
 | [UMaine 4-H Camps (Blueberry Cove, Bryant Pond, Greenland Point, Tanglewood)](umaine-4-h-camps-blueberry-cove-bryant-pond-greenland-point-tanglewood.json) | ? | 0 | 5 | 0 | 5 | unchecked |
 | [University of Maine 4-H Camp & Learning Center at Bryant Pond – Summer Camp](university-of-maine-4-h-camp-and-learning-center-at-bryant-pond-summer-camp.json) | ? | 0 | 4 | 2 | 4 | unchecked |
 | [University of Maine 4-H Camp & Learning Center at Greenland Point](university-of-maine-4-h-camp-and-learning-center-at-greenland-point.json) | ? | 22 | 3 | 3 | 8 | unchecked |

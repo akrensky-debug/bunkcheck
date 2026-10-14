@@ -5,7 +5,7 @@
   "website_url": "https://thepublictheatre.org/summer-camps/",
   "city": "Lewiston",
   "state": "ME",
-  "zip": null,
+  "zip": "04240",
   "camp_type": "specialty",
   "primary_categories": [
     "performing_arts"
@@ -65,6 +65,14 @@
         "sessions"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.census.gov/geographies/reference-files/time-series/geo/relationship-files.2020.html",
+      "checked": "2026-10-14",
+      "fields": [
+        "zip"
+      ],
+      "note": "Lewiston, ME sits inside one ZIP code (2020 Census ZCTA relationship file)"
     }
   ],
   "review": {
@@ -75,6 +83,7 @@
       "title": "Summer Camps - The Public Theatre"
     },
     "warnings": [
+      "Filled zip 04240: Lewiston has one ZIP code (2020 Census)",
       "Only the 2026 season appears, and both sessions (July 2026) are before today (2026-10-13). There are no dates or prices for 2027 yet.",
       "The Musical Theatre Camp I dates of July 7-11, 2026 run Tuesday to Saturday, but the page describes a Monday-to-Friday schedule. These may be old dates carried over from 2025, when July 7-11 was Monday to Friday.",
       "Prices depend on residency: $230 for Lewiston residents and $240 for non-residents. The session prices recorded use the resident rate.",
@@ -107,8 +116,6 @@
         "quote": "July 7-11, 2026  |  9:00 AM – 3:00 PM"
       }
     ],
-    "errors": [
-      "missing required zip"
-    ]
+    "errors": []
   }
 }

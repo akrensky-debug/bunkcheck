@@ -6,7 +6,7 @@
   "registration_url": "http://kidsjunctionri.com/summer-registration-form/",
   "city": "Barrington",
   "state": "RI",
-  "zip": null,
+  "zip": "02806",
   "camp_type": "day",
   "primary_categories": [
     "sports",
@@ -124,6 +124,14 @@
         "sessions"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.census.gov/geographies/reference-files/time-series/geo/relationship-files.2020.html",
+      "checked": "2026-10-14",
+      "fields": [
+        "zip"
+      ],
+      "note": "Barrington, RI sits inside one ZIP code (2020 Census ZCTA relationship file)"
     }
   ],
   "review": {
@@ -134,6 +142,7 @@
       "title": "Summer Camp"
     },
     "warnings": [
+      "Filled zip 02806: Barrington has one ZIP code (2020 Census)",
       "This page shows only the 2026 season (June 22 – August 28, 2026), which has already ended. The 2027 dates, themes and field trips are not posted yet.",
       "Week 1 (June 22–26) does not appear in the theme list. Its dates come from the season start date and the field trip schedule, which numbers June 30 as Week 2.",
       "Field trips cost extra, have limited spots, and are only for children entering Grade 1 or higher. You are charged for a trip you signed up for even if your child is absent or late."
@@ -165,8 +174,6 @@
         "quote": "June 22 – August 28, 2026"
       }
     ],
-    "errors": [
-      "missing required zip"
-    ]
+    "errors": []
   }
 }

@@ -7,7 +7,7 @@
   "phone": "(203) 239-5321 ext. 8530",
   "city": "North Haven",
   "state": "CT",
-  "zip": null,
+  "zip": "06473",
   "description_short": "The North Haven Department of Recreation runs town summer programs, including camps, swim lessons and sports clinics, for North Haven residents. Details for each program are in the department's summer brochure.",
   "activities": [
     "swim lessons",
@@ -30,6 +30,14 @@
         "description_short"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.census.gov/geographies/reference-files/time-series/geo/relationship-files.2020.html",
+      "checked": "2026-10-14",
+      "fields": [
+        "zip"
+      ],
+      "note": "North Haven, CT sits inside one ZIP code (2020 Census ZCTA relationship file)"
     }
   ],
   "review": {
@@ -40,6 +48,7 @@
       "title": "Recreation Summer Brochure 2026 and Music Under the Stars Dates Now Available"
     },
     "warnings": [
+      "Filled zip 06473: North Haven has one ZIP code (2020 Census)",
       "The source is a town news post announcing the summer brochure. It is not the brochure and has no details about any specific camp.",
       "The season shown (Summer 2026) is already over as of today (2026-10-13). No 2027 information is given.",
       "No camp names, sessions, dates, ages or prices are given. Resident mail-in registration opened April 27 and walk-in registration May 4 (2026 season), but these dates don't belong to any specific session.",
@@ -67,7 +76,6 @@
       }
     ],
     "errors": [
-      "missing required zip",
       "missing required camp_type",
       "camp_type must be one of ['day', 'sleepaway', 'specialty']"
     ]

@@ -7,7 +7,7 @@
   "email": "Admin@LetGoYourMind.com",
   "city": "Bedford",
   "state": "NH",
-  "zip": null,
+  "zip": "03110",
   "camp_type": "specialty",
   "primary_categories": [
     "STEM",
@@ -76,6 +76,14 @@
         "sessions"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.census.gov/geographies/reference-files/time-series/geo/relationship-files.2020.html",
+      "checked": "2026-10-14",
+      "fields": [
+        "zip"
+      ],
+      "note": "Bedford, NH sits inside one ZIP code (2020 Census ZCTA relationship file)"
     }
   ],
   "review": {
@@ -86,6 +94,7 @@
       "title": "STEM LEGO & Robotics Summer Program | LetGoYourMind | Bedford, NH|nh, bedford"
     },
     "warnings": [
+      "Filled zip 03110: Bedford has one ZIP code (2020 Census)",
       "The only address on the page (785 NH-3A Bow, NH 03304) is the company's contact address in Bow, not the Bedford camp site, so it was not used as the camp's address.",
       "The page lists four 2027 weeks and five programs but doesn't say which program runs which week. The ages for each week depend on that, so they were left blank.",
       "The footer copyright says 2025, but the session dates are for 2027.",
@@ -113,8 +122,6 @@
         "quote": "Create an Account"
       }
     ],
-    "errors": [
-      "missing required zip"
-    ]
+    "errors": []
   }
 }

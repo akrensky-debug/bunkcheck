@@ -8,7 +8,7 @@
   "phone": "603-598-1533",
   "city": "Merrimack",
   "state": "NH",
-  "zip": null,
+  "zip": "03054",
   "camp_type": "day",
   "primary_categories": [
     "nature",
@@ -107,6 +107,14 @@
         "sessions"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.census.gov/geographies/reference-files/time-series/geo/relationship-files.2020.html",
+      "checked": "2026-10-14",
+      "fields": [
+        "zip"
+      ],
+      "note": "Merrimack, NH sits inside one ZIP code (2020 Census ZCTA relationship file)"
     }
   ],
   "review": {
@@ -117,6 +125,7 @@
       "title": "Camp Sargent - YMCA of Greater Nashua"
     },
     "warnings": [
+      "Filled zip 03054: Merrimack has one ZIP code (2020 Census)",
       "This page only shows the 2026 season, which has already ended (today is 2026-10-13). Nothing is posted for 2027 yet.",
       "Prices depend on membership: YMCA Family Member, Youth Member or Community Member. Summer Fun costs $270/$300/$410 per week, specialty camps cost $290/$315/$440 per week, the two-week Camp Sargent Players session costs $580/$630/$880, and LIT costs $450/$500/$530 per session. price_per_week and the session prices use the Community (non-member) rate.",
       "The age range of 5-16 comes from the site's navigation blurb. The program sections use grades instead: K-8 for Summer Fun, K-9 for specialty camps and 9-12 for LIT.",
@@ -182,8 +191,6 @@
         "quote": "PRICE PER SESSION ... Community Member: $530"
       }
     ],
-    "errors": [
-      "missing required zip"
-    ]
+    "errors": []
   }
 }

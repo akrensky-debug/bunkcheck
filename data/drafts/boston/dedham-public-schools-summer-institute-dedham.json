@@ -6,7 +6,7 @@
   "phone": "+1 781-310-1000",
   "city": "Dedham",
   "state": "MA",
-  "zip": null,
+  "zip": "02026",
   "camp_type": "day",
   "primary_categories": [
     "sports",
@@ -132,6 +132,14 @@
         "sessions"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.census.gov/geographies/reference-files/time-series/geo/relationship-files.2020.html",
+      "checked": "2026-10-14",
+      "fields": [
+        "zip"
+      ],
+      "note": "Dedham, MA sits inside one ZIP code (2020 Census ZCTA relationship file)"
     }
   ],
   "review": {
@@ -142,6 +150,7 @@
       "title": "Dedham Public Schools - Summer Institute Home"
     },
     "warnings": [
+      "Filled zip 02026: Dedham has one ZIP code (2020 Census)",
       "The page only covers the 2026 season (June 29-July 31, 2026), which has already ended. No 2027 information is posted.",
       "The 'full' availability comes from a February 4, 2026 update and only describes the 2026 season.",
       "The program is only open to children living in Dedham, and registration goes through the district's PowerSchool parent portal.",
@@ -189,8 +198,6 @@
         "quote": "Update: February 4, 2026 - 5:15pm. ... Currently all 1800+ program slots are full!"
       }
     ],
-    "errors": [
-      "missing required zip"
-    ]
+    "errors": []
   }
 }

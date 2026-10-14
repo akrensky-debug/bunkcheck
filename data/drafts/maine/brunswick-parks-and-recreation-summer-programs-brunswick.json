@@ -7,7 +7,7 @@
   "phone": "207-725-6100",
   "city": "Brunswick",
   "state": "ME",
-  "zip": null,
+  "zip": "04011",
   "primary_categories": [
     "sports",
     "arts",
@@ -56,6 +56,14 @@
         "swim_waterfront_notes"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.census.gov/geographies/reference-files/time-series/geo/relationship-files.2020.html",
+      "checked": "2026-10-14",
+      "fields": [
+        "zip"
+      ],
+      "note": "Brunswick, ME sits inside one ZIP code (2020 Census ZCTA relationship file)"
     }
   ],
   "review": {
@@ -66,6 +74,7 @@
       "title": "Summer | Brunswick, MEArrow LeftArrow RightSlideshow Left ArrowSlideshow Right Arrow"
     },
     "warnings": [
+      "Filled zip 04011: Brunswick has one ZIP code (2020 Census)",
       "This page is the town's index of summer programs, not the listing for one camp. It names about 25 programs (day camps, sport clinics, adult leagues, special events) with no details.",
       "No season year, dates, prices or ages appear on the page. The page says these programs are 'usually held', so 2027 offerings may differ.",
       "The phone number and address given are Town Hall's general contact, not necessarily the Parks & Recreation office.",
@@ -102,7 +111,6 @@
       }
     ],
     "errors": [
-      "missing required zip",
       "missing required camp_type",
       "missing required season_year",
       "camp_type must be one of ['day', 'sleepaway', 'specialty']"

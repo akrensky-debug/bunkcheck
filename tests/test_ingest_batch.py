@@ -201,3 +201,13 @@ def test_fill_only_gaps_with_one_answer() -> None:
     # No street address: never guessed from the town.
     d3 = to_draft(listing(zip=None), PAGE, metro="Providence, RI", today=TODAY)
     assert fill_draft(d3, metro="Providence, RI", today=TODAY, lookup=lambda url: hit) == []
+
+
+def test_zip_from_a_town_with_one_zip_code() -> None:
+    from campfinder.ingest.fill import fill_draft
+    d = to_draft(listing(city="Bristol", zip=None), PAGE, metro="Providence, RI", today=TODAY)
+    notes = fill_draft(d, metro="Providence, RI", today=TODAY, lookup=lambda url: [])
+    assert d["zip"] == "02809" and "one ZIP code" in notes[0] and d["sources"][-1]["fields"] == ["zip"]
+    # Cranston has several ZIP codes: left for a person.
+    d2 = to_draft(listing(zip=None), PAGE, metro="Providence, RI", today=TODAY)
+    assert fill_draft(d2, metro="Providence, RI", today=TODAY, lookup=lambda url: []) == [] and not d2.get("zip")
