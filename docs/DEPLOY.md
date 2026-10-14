@@ -24,6 +24,7 @@ The database and sign-in are the Supabase project `cdzzmyambonhkhsoltfw` (us-eas
 | `BOOKING_CRON_SECRET` | Optional. Any long random string; turns on the registration reminder and alert cron endpoints | Registration reminders and alerts |
 | `EMAIL_FROM` | With `EMAIL_MODE=resend`: the sender, on a domain verified in Resend. Default `Bunkcheck <hello@mail.bunkcheck.ai>` | All email |
 | `OWNER_EMAIL_SIGNATURE`, `OWNER_REPLY_TO` | Optional. Sign-off and reply address for camp owner emails | Owner confirmation |
+| `RESEND_WEBHOOK_SECRET`, `OWNER_FORWARD_TO`, `OWNER_UPDATES_FROM_MAIL` | Optional. Receive owners' replies through Resend and forward them to a person (`docs/owner-confirmation.md`) | Owner replies |
 | `OWNER_INBOUND_SECRET`, `OWNER_UPDATES_AUTO_APPLY` | Optional. Turn on the inbound hook for owners' emails; auto-apply stays off until Andrew says | Listing updates by email (`docs/owner-confirmation.md`) |
 | `OPENAI_APPS_CHALLENGE`, `CHATGPT_WIDGET_DOMAIN` | From the OpenAI dashboard, when submitting the ChatGPT app | ChatGPT app review |
 
