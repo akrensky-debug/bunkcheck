@@ -1,0 +1,82 @@
+{
+  "slug": "hingham-maritime-center-hingham",
+  "name": "Hingham Maritime Center",
+  "operator_name": "Hingham Maritime Center",
+  "website_url": "https://www.hinghammaritime.org",
+  "email": "contact@hinghammaritime.org",
+  "phone": "(781) 741-5225",
+  "street_address": "32 Summer Street",
+  "city": "Hingham",
+  "state": "MA",
+  "zip": "02043",
+  "primary_categories": [
+    "sports"
+  ],
+  "description_short": "Hingham Maritime Center in Hingham, MA, offers sailing, rowing, paddleboarding and maritime education.",
+  "activities": [
+    "Sailing",
+    "Rowing",
+    "Paddleboarding",
+    "Maritime education"
+  ],
+  "sources": [
+    {
+      "url": "https://www.hinghammaritime.org/programs",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "primary_categories",
+        "activities",
+        "description_short"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.hinghammaritime.org/programs",
+      "kind": "html",
+      "title": "Programs | Hingham Maritime Center"
+    },
+    "warnings": [
+      "The text we got from the Programs page is only the site navigation and footer, repeated three times. No program descriptions, dates, prices or ages came through. The program content may load dynamically, so check the live page or the FAQ (https://www.hinghammaritime.org/faq).",
+      "No season year is shown, so we can't confirm that any 2027 programs exist.",
+      "The site describes the organization as a maritime center, not a camp. Whether it runs a youth summer camp is not confirmed by this source."
+    ],
+    "unknowns": [
+      "Whether a youth summer camp or program is offered at all, and what it is called",
+      "Camp type (day, sleepaway or specialty)",
+      "Season year and session dates for 2027",
+      "Prices and deposit",
+      "Age or grade range",
+      "Registration URL and when registration opens",
+      "Whether financial aid is offered (the site has a 'Scholarship' link, but this page gives no details)",
+      "Swim test or waterfront safety requirements",
+      "Refund policy",
+      "Extended care, meals, transportation",
+      "ACA accreditation",
+      "Special needs accommodations"
+    ],
+    "low_confidence": [
+      {
+        "field": "primary_categories",
+        "confidence": 0.7,
+        "quote": "Sailing • Rowing • Paddleboarding • Maritime Education"
+      }
+    ],
+    "errors": [
+      "missing required camp_type",
+      "missing required season_year",
+      "camp_type must be one of ['day', 'sleepaway', 'specialty']"
+    ]
+  }
+}

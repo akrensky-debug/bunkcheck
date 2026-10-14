@@ -461,6 +461,36 @@ CITY_COORDS: dict[tuple[str, str], tuple[float, float]] = {
     ("contoocook", "NH"): (43.2307, -71.7131),
     ("lakeville", "CT"): (41.9621, -73.4433),
     ("vineyard haven", "MA"): (41.4572, -70.6075),
+    # Towns and villages from the 2023 Census Gazetteer (October 2026 drafts)
+    ("granby", "CT"): (41.9715, -72.8302),
+    ("dartmouth", "MA"): (41.5665, -70.9582),
+    ("lawrence", "MA"): (42.7003, -71.1614),
+    ("new bedford", "MA"): (41.6613, -70.9379),
+    ("brooksville", "ME"): (44.3512, -68.7593),
+    ("otisfield", "ME"): (44.0906, -70.5494),
+    ("grantham", "NH"): (43.5166, -72.1491),
+    ("hampton", "NH"): (42.9439, -70.8254),
+    ("sandwich", "NH"): (43.8386, -71.4431),
+    ("greenville", "RI"): (41.8799, -71.5524),
+    ("wallingford", "VT"): (43.4727, -72.9660),
+    # Villages not in the Gazetteer: the town they belong to
+    ("ivoryton", "CT"): (41.3499, -72.4134),   # village of Essex
+    ("south glastonbury", "CT"): (41.6919, -72.5522),   # village of Glastonbury
+    ("east otis", "MA"): (42.2043, -73.0850),   # village of Otis
+    ("foxboro", "MA"): (42.0613, -71.2458),   # village of Foxborough
+    ("north dartmouth", "MA"): (41.5665, -70.9582),   # village of Dartmouth
+    ("south dartmouth", "MA"): (41.5665, -70.9582),   # village of Dartmouth
+    ("south hamilton", "MA"): (42.6262, -70.8572),   # village of Hamilton
+    ("cumberland foreside", "ME"): (43.7871, -70.2512),   # village of Cumberland
+    ("east waterboro", "ME"): (43.6038, -70.7301),   # village of Waterboro
+    ("north bridgton", "ME"): (44.0475, -70.7433),   # village of Bridgton
+    ("poland spring", "ME"): (44.0481, -70.3936),   # village of Poland
+    ("alton bay", "NH"): (43.4883, -71.2406),   # village of Alton
+    ("center tuftonboro", "NH"): (43.6699, -71.2759),   # village of Tuftonboro
+    ("eaton center", "NH"): (43.9070, -71.0475),   # village of Eaton
+    ("craftsbury common", "VT"): (44.6481, -72.3894),   # village of Craftsbury
+    ("post mills", "VT"): (43.8367, -72.2495),   # village of Thetford
+    ("thetford center", "VT"): (43.8367, -72.2495),   # village of Thetford
 }
 
 

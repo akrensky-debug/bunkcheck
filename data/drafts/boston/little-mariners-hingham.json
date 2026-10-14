@@ -1,0 +1,97 @@
+{
+  "slug": "little-mariners-hingham",
+  "name": "Little Mariners",
+  "operator_name": "Hingham Maritime Center",
+  "website_url": "https://www.hinghammaritime.org/little-mariners",
+  "email": "contact@hinghammaritime.org",
+  "phone": "(781) 741-5225",
+  "street_address": "32 Summer Street",
+  "city": "Hingham",
+  "state": "MA",
+  "zip": "02043",
+  "camp_type": "specialty",
+  "primary_categories": [
+    "nature",
+    "STEM",
+    "arts"
+  ],
+  "age_min": 5,
+  "age_max": 7,
+  "description_short": "A mostly land-based marine science program for ages 5–7 at Hingham Harbor. Children learn about local marine life through beach exploration and arts and crafts, and on some days take a powerboat ride to a harbor island.",
+  "activities": [
+    "Marine science",
+    "Beach exploration",
+    "Marine life discovery (mollusks, fish, birds, crustaceans, coastal plants)",
+    "Marine-themed arts and crafts",
+    "Powerboat ride to harbor islands (select days)"
+  ],
+  "financial_aid": true,
+  "swim_waterfront_notes": "Primarily land-based; select days may include a powerboat ride to one of Hingham's harbor islands. Swim requirements and life jacket policy not stated.",
+  "sources": [
+    {
+      "url": "https://www.hinghammaritime.org/little-mariners",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "financial_aid",
+        "swim_waterfront_notes"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.hinghammaritime.org/little-mariners",
+      "kind": "html",
+      "title": "Little Mariners | Hingham Maritime Center"
+    },
+    "warnings": [
+      "The page shows no season year, dates or prices. The program description appears four times, each labeled '1 Week Sessions' with a Register button, which probably means four separate weeks, but no session details are given.",
+      "Day vs. overnight is not stated outright. It is set to 'specialty' because the program focuses on marine science.",
+      "Financial aid is based only on a 'Scholarship' link in the site footer."
+    ],
+    "unknowns": [
+      "Season year and session dates",
+      "Price per session or week",
+      "Daily schedule/hours (whether it is a half-day or full-day program)",
+      "Registration URL and when registration opens",
+      "Number of sessions (the page shows four identical 'Little Mariners – 1 Week Sessions' entries with no dates)",
+      "Availability",
+      "Refund and deposit policy (see Terms and Conditions / FAQ)",
+      "Scholarship/financial aid details",
+      "Extended care, meals, transportation",
+      "Life jacket and safety policy for the powerboat rides",
+      "ACA accreditation"
+    ],
+    "low_confidence": [
+      {
+        "field": "camp_type",
+        "confidence": 0.55,
+        "quote": "an introduction to marine science that takes them from the HMC classroom to HMC's own beachside classroom"
+      },
+      {
+        "field": "financial_aid",
+        "confidence": 0.55,
+        "quote": "Scholarship"
+      }
+    ],
+    "errors": [
+      "missing required season_year"
+    ]
+  }
+}

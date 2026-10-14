@@ -22,12 +22,12 @@ Nothing here is on the site until it is promoted and imported.
 | [Brown & Blue Lacrosse Fall Clinic](brown-and-blue-lacrosse-fall-clinic.json) | ? | 1 | 3 | 0 | 4 | unchecked |
 | [Camp Agawam](camp-agawam-rumford.json) | Rumford | 0 | 0 | 0 | 6 | unchecked |
 | [Camp Finberg](camp-finberg-norton.json) | Norton | 1 | 0 | 2 | 4 | unchecked |
-| [Camp Frederick Douglass](camp-frederick-douglass-new-bedford.json) | New Bedford | 0 | 2 | 1 | 2 | unchecked |
+| [Camp Frederick Douglass](camp-frederick-douglass-new-bedford.json) | New Bedford | 0 | 1 | 1 | 2 | unchecked |
 | [Camp Jack](camp-jack.json) | ? | 0 | 5 | 0 | 5 | unchecked |
 | [Camp Kaleidoscope](camp-kaleidoscope.json) | ? | 2 | 3 | 3 | 3 | unchecked |
 | [Camp Ker-Anna](camp-ker-anna.json) | ? | 0 | 6 | 1 | 3 | unchecked |
 | [Camp LMNTREE](camp-lmntree-franklin.json) | Franklin | 0 | 1 | 2 | 2 | unchecked |
-| [Camp Metacomet](camp-metacomet-dartmouth.json) | Dartmouth | 0 | 1 | 3 | 4 | unchecked |
+| [Camp Metacomet](camp-metacomet-dartmouth.json) | Dartmouth | 0 | 0 | 3 | 4 | unchecked |
 | [Camp Phoenix](camp-phoenix-north-smithfield.json) | North Smithfield | 8 | 0 | 4 | 5 | unchecked |
 | [Camp Ruggles](camp-ruggles.json) | ? | 0 | 6 | 1 | 3 | unchecked |
 | [Camp Taunton](camp-taunton-taunton.json) | Taunton | 0 | 1 | 3 | 3 | unchecked |
@@ -43,6 +43,7 @@ Nothing here is on the site until it is promoted and imported.
 | [CCF Summer Programs](ccf-summer-programs-woonsocket.json) | Woonsocket | 0 | 3 | 0 | 4 | unchecked |
 | [Children's Summer Ballet Camp](children-s-summer-ballet-camp.json) | ? | 2 | 3 | 4 | 3 | unchecked |
 | [City Camp](city-camp-providence.json) | Providence | 0 | 2 | 0 | 4 | unchecked |
+| [College Tennis Exposure Camp](college-tennis-exposure-camp.json) | ? | 1 | 3 | 1 | 5 | unchecked |
 | [COZ Summer Camp](coz-summer-camp-warren.json) | Warren | 0 | 1 | 3 | 4 | unchecked |
 | [Creative Corner Art Studio – Summer Art Club](creative-corner-art-studio-summer-art-club-franklin.json) | Franklin | 0 | 1 | 3 | 4 | unchecked |
 | [DARE to Dream Summer Day Program](dare-to-dream-summer-day-program-wrentham.json) | Wrentham | 2 | 0 | 2 | 5 | unchecked |
@@ -57,7 +58,7 @@ Nothing here is on the site until it is promoted and imported.
 | [Franklin Country Day Camp](franklin-country-day-camp-franklin.json) | Franklin | 0 | 0 | 3 | 3 | unchecked |
 | [Franklin Recreation Department Summer Camp](franklin-recreation-department-summer-camp-franklin.json) | Franklin | 0 | 0 | 0 | 4 | unchecked |
 | [Franklin Soccer School (FSS) Summer Programs](franklin-soccer-school-fss-summer-programs-franklin.json) | Franklin | 0 | 2 | 0 | 4 | unchecked |
-| [Friends Academy Summer Programs](friends-academy-summer-programs-north-dartmouth.json) | North Dartmouth | 0 | 1 | 0 | 4 | unchecked |
+| [Friends Academy Summer Programs](friends-academy-summer-programs-north-dartmouth.json) | North Dartmouth | 0 | 0 | 0 | 4 | unchecked |
 | [FUNdamentals](fundamentals-riverside.json) | Riverside | 0 | 3 | 0 | 3 | unchecked |
 | [Gamm Winter & Spring Intensive Jr. (The Gamm Theatre Camps)](gamm-winter-and-spring-intensive-jr-the-gamm-theatre-camps-warwick.json) | Warwick | 2 | 0 | 0 | 7 | unchecked |
 | [Half-Day Hangout](half-day-hangout-coventry.json) | Coventry | 0 | 1 | 4 | 4 | unchecked |
@@ -90,7 +91,7 @@ Nothing here is on the site until it is promoted and imported.
 | [Plainville Summer Recreation Program](plainville-summer-recreation-program-plainville.json) | Plainville | 8 | 0 | 1 | 6 | unchecked |
 | [PLL Rhode Island Overnight Lacrosse Camp 2026](pll-rhode-island-overnight-lacrosse-camp-2026-bristol.json) | Bristol | 2 | 0 | 0 | 4 | unchecked |
 | [Project FashionWorks Summer Classes](project-fashionworks-summer-classes.json) | ? | 0 | 4 | 6 | 5 | unchecked |
-| [Quinn Playground Center](quinn-playground-center-dartmouth.json) | Dartmouth | 8 | 2 | 2 | 5 | unchecked |
+| [Quinn Playground Center](quinn-playground-center-dartmouth.json) | Dartmouth | 8 | 1 | 2 | 5 | unchecked |
 | [Rhode Island College Sports Camps & Clinics](rhode-island-college-sports-camps-and-clinics-providence.json) | Providence | 0 | 0 | 6 | 5 | unchecked |
 | [Rhode Island Fencing Academy & Club (RIFAC) Summer Camps](rhode-island-fencing-academy-and-club-rifac-summer-camps-east-providence.json) | East Providence | 0 | 1 | 1 | 3 | unchecked |
 | [Rhode Island Youth Theatre – A Christmas Carol (Fall 2026 Production)](rhode-island-youth-theatre-a-christmas-carol-fall-2026-production-warwick.json) | Warwick | 1 | 0 | 0 | 6 | unchecked |
@@ -110,18 +111,19 @@ Nothing here is on the site until it is promoted and imported.
 | [Summer Camp with Six Bros. Baseball](summer-camp-with-six-bros-baseball-bellingham.json) | Bellingham | 2 | 1 | 10 | 4 | unchecked |
 | [Summer Camps at Bishop Hendricken High School](summer-camps-at-bishop-hendricken-high-school-warwick.json) | Warwick | 1 | 0 | 7 | 5 | unchecked |
 | [Summer Camps at Kingston Hill Academy](summer-camps-at-kingston-hill-academy-saunderstown.json) | Saunderstown | 6 | 0 | 4 | 5 | unchecked |
-| [Summer Elements (Nature Camp & Adventure Camp)](summer-elements-nature-camp-and-adventure-camp-south-dartmouth.json) | South Dartmouth | 12 | 2 | 9 | 6 | unchecked |
-| [Summer Friends](summer-friends-north-dartmouth.json) | North Dartmouth | 9 | 1 | 10 | 4 | unchecked |
-| [Summer Fun Program](summer-fun-program-new-bedford.json) | New Bedford | 8 | 1 | 9 | 4 | unchecked |
+| [Summer Day Camp](summer-day-camp.json) | ? | 0 | 3 | 0 | 4 | unchecked |
+| [Summer Elements (Nature Camp & Adventure Camp)](summer-elements-nature-camp-and-adventure-camp-south-dartmouth.json) | South Dartmouth | 12 | 1 | 9 | 6 | unchecked |
+| [Summer Friends](summer-friends-north-dartmouth.json) | North Dartmouth | 9 | 0 | 10 | 4 | unchecked |
+| [Summer Fun Program](summer-fun-program-new-bedford.json) | New Bedford | 8 | 0 | 9 | 4 | unchecked |
 | [Summer@Lincoln](summer-lincoln-providence.json) | Providence | 0 | 2 | 2 | 4 | unchecked |
 | [Summer Playground Camp](summer-playground-camp-cranston.json) | Cranston | 0 | 0 | 5 | 10 | unchecked |
 | [Summer Playground Program](summer-playground-program-lincoln.json) | Lincoln | 0 | 2 | 1 | 5 | unchecked |
 | [Summer Playground Program (SPP)](summer-playground-program-spp-north-attleborough-2.json) | North Attleborough | 0 | 2 | 2 | 6 | unchecked |
 | [Summer Playground Program (SPP)](summer-playground-program-spp-north-attleborough.json) | North Attleborough | 0 | 1 | 0 | 5 | unchecked |
-| [Summer Sage](summer-sage-foxboro.json) | Foxboro | 0 | 1 | 6 | 4 | unchecked |
+| [Summer Sage](summer-sage-foxboro.json) | Foxboro | 0 | 0 | 6 | 4 | unchecked |
 | [Summer Studio](summer-studio-woonsocket.json) | Woonsocket | 2 | 2 | 1 | 2 | unchecked |
 | [Summer Wild Adventure Programs](summer-wild-adventure-programs-millville.json) | Millville | 9 | 0 | 5 | 7 | unchecked |
-| [Summer Youth Sailing Program](summer-youth-sailing-program-new-bedford.json) | New Bedford | 0 | 3 | 10 | 7 | unchecked |
+| [Summer Youth Sailing Program](summer-youth-sailing-program-new-bedford.json) | New Bedford | 0 | 2 | 10 | 7 | unchecked |
 | [Swansea Summer Camp](swansea-summer-camp-swansea.json) | Swansea | 0 | 4 | 5 | 4 | unchecked |
 | [Talent Factory Summer Camps](talent-factory-summer-camps-north-kingstown.json) | North Kingstown | 0 | 0 | 2 | 4 | unchecked |
 | [Taste Buds Kitchen East Greenwich – Kids Summer Cooking Camps](taste-buds-kitchen-east-greenwich-kids-summer-cooking-camps-east-greenwich.json) | East Greenwich | 0 | 0 | 2 | 6 | unchecked |
@@ -143,12 +145,12 @@ Nothing here is on the site until it is promoted and imported.
 | [YMCA Camp Pawtucket](ymca-camp-pawtucket-pawtucket.json) | Pawtucket | 0 | 1 | 1 | 2 | unchecked |
 | [YMCA Camp Watchaug](ymca-camp-watchaug.json) | ? | 17 | 3 | 7 | 6 | unchecked |
 | [YMCA Camp Westwood](ymca-camp-westwood-coventry.json) | Coventry | 0 | 0 | 3 | 4 | unchecked |
-| [YMCA Summer Camp (Smithfield YMCA)](ymca-summer-camp-smithfield-ymca-greenville.json) | Greenville | 0 | 4 | 0 | 3 | unchecked |
+| [YMCA Summer Camp (Smithfield YMCA)](ymca-summer-camp-smithfield-ymca-greenville.json) | Greenville | 0 | 3 | 0 | 3 | unchecked |
 | [You Rock Summer Camp](you-rock-summer-camp-cranston.json) | Cranston | 0 | 1 | 0 | 3 | unchecked |
 | [Young Actors Summer Institute (YASI)](young-actors-summer-institute-yasi-providence.json) | Providence | 0 | 0 | 8 | 5 | unchecked |
-| [Young Naturalist Summer Program](young-naturalist-summer-program-dartmouth.json) | Dartmouth | 8 | 1 | 6 | 4 | unchecked |
+| [Young Naturalist Summer Program](young-naturalist-summer-program-dartmouth.json) | Dartmouth | 8 | 0 | 6 | 4 | unchecked |
 | [Youth Soccer I & II](youth-soccer-i-and-ii-fall-river.json) | Fall River | 0 | 1 | 4 | 6 | unchecked |
-| [ZooCrew at Buttonwood Park Zoo](zoocrew-at-buttonwood-park-zoo-new-bedford.json) | New Bedford | 2 | 1 | 4 | 8 | unchecked |
+| [ZooCrew at Buttonwood Park Zoo](zoocrew-at-buttonwood-park-zoo-new-bedford.json) | New Bedford | 2 | 0 | 4 | 8 | unchecked |
 
 ## Ask the owner for the brochure
 
@@ -190,19 +192,18 @@ These hosts refused the fetcher. That is the answer: ask the camp to send its br
 - Taunton Summer Camps & Programs: https://www.taunton-ma.gov/993/Summer-CampsPrograms (no camp on the page: This page is a municipal directory (City of Taunton), not one camp's own material. It lists at least 8 separate programs from different operators. Each one should be its own listing, built from that o)
 - RI Philharmonic Music School Summer Programs: https://www.riphil.org/sum26 (no camp on the page: the page names no camp)
 - Courage Quest Summer Camp: https://www.childanxietyprogram.com/summer-camp (fetch: https://www.childanxietyprogram.com/summer-camp has almost no text (0 words); it may need a browser or be a scanned PDF)
-- Johnston Parks and Recreation Day Camp: https://johnstonrec.com/day-camp (fetch: https://johnstonrec.com/day-camp could not be reached (ConnectError); try again later)
 - Newport Art Museum Summer Camps: https://newportartmuseum.org/education/classes/?category=camps/ (no camp on the page: the page names no camp)
-- North Kingstown Recreation Summer Camp: https://www.northkingstownri.gov/1227/Summer-Camp (fetch: https://www.northkingstownri.gov/1227/Summer-Camp could not be reached (ConnectError); try again later)
 - Igliozzi Day Camp: https://rec.providenceri.gov/program-details/?i=1594 (no camp on the page: The page shows 'Program Not Found.' It has no program details. The program ID (i=1594) may have been removed or may be wrong.)
 - John Rollins Day Camp: https://rec.providenceri.gov/program-details/?i=1595 (no camp on the page: The page says "Program Not Found." No program information loaded (program ID 1595).)
 - Providence Recreation Sailing Camp: https://rec.providenceri.gov/program-details/?i=1615 (no camp on the page: The page says "Program Not Found." No camp or program details are shown.)
 - Robert F. Kennedy Day Camp: https://rec.providenceri.gov/program-details/?i=1596 (no camp on the page: The source page says "Program Not Found." Program ID 1596 has no content, so nothing about any camp can be pulled from it.)
-- Vincent Brown Day Camp: https://rec.providenceri.gov/program-details/?i=1599 (fetch: https://rec.providenceri.gov/program-details/?i=1599 could not be reached (ConnectError); try again later)
 - Stony Brook Nature Camp: https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/stony-brook/camp (timed out (stopped by hand after the page hung); retry)
 - Camp Cedarwood: https://www.bbcri.org/cedarwood (fetch: https://www.bbcri.org/cedarwood returned 404)
 - Canonicus Camp (summer camping ministry): https://www.canonicus.org/a-grand-adventure/ (fetch: https://www.canonicus.org/a-grand-adventure/ returned 404)
 - Jamestown Arts Center Summer Arts Camp: https://www.jamestownartcenter.org/summer-arts-camp (fetch: https://www.jamestownartcenter.org/summer-arts-camp returned 404)
 - Boys & Girls Clubs of Providence Summer Day Camp: https://bgcprov.org/programs/summer-childcare/ (fetch: https://bgcprov.org/programs/summer-childcare/ has almost no text (2 words); it may need a browser or be a scanned PDF)
 - College Tennis Exposure Camp at Brown University: https://collegetennis.com/brown-university/ (fetch: https://collegetennis.com/brown-university/ returned 404)
-- Camp Surefire: https://campsurefire.org/ (fetch: https://campsurefire.org/ could not be reached (ConnectError); try again later)
 - Stepping Stone Ranch Kids Riding Camp: https://www.steppingstoneranch.com/lessons-riding-program (no camp on the page: the page names no camp)
+- Camp Surefire: https://campsurefire.org/ (fetch: https://campsurefire.org/ could not be reached (ConnectError); try again later)
+- Vincent Brown Day Camp: https://rec.providenceri.gov/program-details/?i=1599 (no camp on the page: The page says "Program Not Found." No camp or program details appear on it. Program ID 1599 may have been removed or expired, or the link may be broken.)
+- North Kingstown Recreation Summer Camp: https://www.northkingstownri.gov/1227/Summer-Camp (no camp on the page: Placeholder page: 2026 season is over and 2027 info isn't posted yet ('Check back in March/April for Summer 2027 camp information!'). No sessions, prices or ages are available.)
