@@ -11,7 +11,7 @@ Nothing here is on the site until it is promoted and imported.
 | [Adventure Camp (Summer Camp)](adventure-camp-summer-camp-nashua.json) | Nashua | 0 | 0 | 1 | 7 | unchecked |
 | [Ascend at Camp Monadnock](ascend-at-camp-monadnock-jaffrey.json) | Jaffrey | 2 | 0 | 2 | 4 | unchecked |
 | [BCH Camp (Barbara C. Harris Camp)](bch-camp-barbara-c-harris-camp-greenfield.json) | Greenfield | 8 | 0 | 4 | 6 | unchecked |
-| [Beam Camp](beam-camp-strafford.json) | Strafford | 2 | 1 | 0 | 5 | unchecked |
+| [Beam Camp](beam-camp-strafford.json) | Strafford | 2 | 0 | 0 | 6 | unchecked |
 | [Boys & Girls Club of Greater Salem Summer Camp](boys-and-girls-club-of-greater-salem-summer-camp-salem.json) | Salem | 0 | 0 | 1 | 4 | unchecked |
 | [Boys & Girls Clubs of Greater Manchester Summer Programs](boys-and-girls-clubs-of-greater-manchester-summer-programs-manchester.json) | Manchester | 4 | 0 | 4 | 6 | unchecked |
 | [C.A.K.E. Summer Camp (Creative Arts at Keene)](c-a-k-e-summer-camp-creative-arts-at-keene-keene.json) | Keene | 1 | 0 | 6 | 6 | unchecked |
@@ -23,7 +23,7 @@ Nothing here is on the site until it is promoted and imported.
 | [Camp Hawkeye](camp-hawkeye-charlestown.json) | Charlestown | 9 | 0 | 3 | 8 | unchecked |
 | [Camp K - Summer Day Camp](camp-k-summer-day-camp-lebanon.json) | Lebanon | 10 | 0 | 11 | 7 | unchecked |
 | [Camp Lawrence](camp-lawrence-laconia.json) | Laconia | 8 | 0 | 2 | 6 | unchecked |
-| [Camp Merriwood](camp-merriwood-orford.json) | Orford | 5 | 1 | 1 | 3 | unchecked |
+| [Camp Merriwood](camp-merriwood-orford.json) | Orford | 5 | 0 | 1 | 4 | unchecked |
 | [Camp Moosilauke](camp-moosilauke-orford.json) | Orford | 5 | 0 | 12 | 5 | unchecked |
 | [Camp Mowglis](camp-mowglis-hebron.json) | Hebron | 5 | 0 | 3 | 6 | unchecked |
 | [Camp Naticook](camp-naticook-merrimack.json) | Merrimack | 9 | 0 | 8 | 6 | unchecked |
@@ -52,7 +52,7 @@ Nothing here is on the site until it is promoted and imported.
 | [Fleur de Lis Camp](fleur-de-lis-camp-fitzwilliam.json) | Fitzwilliam | 8 | 0 | 1 | 6 | unchecked |
 | [Fort Friendship Day Camp](fort-friendship-day-camp-manchester.json) | Manchester | 5 | 0 | 1 | 4 | unchecked |
 | [Fun In The Sun Day Camp](fun-in-the-sun-day-camp-manchester.json) | Manchester | 0 | 1 | 5 | 4 | unchecked |
-| [Greenland Day Camp (YMCA Camp Gundalow)](greenland-day-camp-ymca-camp-gundalow-greenland.json) | Greenland | 10 | 1 | 0 | 4 | unchecked |
+| [Greenland Day Camp (YMCA Camp Gundalow)](greenland-day-camp-ymca-camp-gundalow-greenland.json) | Greenland | 10 | 0 | 0 | 5 | unchecked |
 | [Guided Discoveries Summer Camp](guided-discoveries-summer-camp-holderness.json) | Holderness | 0 | 2 | 1 | 4 | unchecked |
 | [Hanover Parks & Recreation Camps](hanover-parks-and-recreation-camps-hanover.json) | Hanover | 2 | 1 | 13 | 9 | unchecked |
 | [Harbor Camps Summer Camp](harbor-camps-summer-camp.json) | ? | 4 | 3 | 1 | 5 | unchecked |
@@ -63,9 +63,9 @@ Nothing here is on the site until it is promoted and imported.
 | [Keene Family YMCA Summer Camps](keene-family-ymca-summer-camps-keene.json) | Keene | 36 | 0 | 3 | 4 | unchecked |
 | [Lake Winnipesaukee Sailing Association Youth Sailing School](lake-winnipesaukee-sailing-association-youth-sailing-school-gilford.json) | Gilford | 0 | 0 | 2 | 3 | unchecked |
 | [Lantern Light Camps](lantern-light-camps.json) | ? | 12 | 5 | 10 | 3 | unchecked |
-| [LetGoYourMind – Bedford, NH (One Church - Bedford Outpost)](letgoyourmind-bedford-nh-one-church-bedford-outpost-bedford.json) | Bedford | 4 | 1 | 1 | 4 | unchecked |
+| [LetGoYourMind – Bedford, NH (One Church - Bedford Outpost)](letgoyourmind-bedford-nh-one-church-bedford-outpost-bedford.json) | Bedford | 4 | 0 | 1 | 5 | unchecked |
 | [Little Investigators Summer Program (Nashua YMCA Day Camps)](little-investigators-summer-program-nashua-ymca-day-camps-nashua.json) | Nashua | 0 | 1 | 6 | 5 | unchecked |
-| [Londonderry Day Camp (Camp Pa-Gon-Ki)](londonderry-day-camp-camp-pa-gon-ki-londonderry.json) | Londonderry | 11 | 1 | 2 | 6 | unchecked |
+| [Londonderry Day Camp (Camp Pa-Gon-Ki)](londonderry-day-camp-camp-pa-gon-ki-londonderry.json) | Londonderry | 11 | 0 | 2 | 7 | unchecked |
 | [Manchester Day Camp (Manchester Summer Program)](manchester-day-camp-manchester-summer-program-manchester.json) | Manchester | 9 | 1 | 0 | 4 | unchecked |
 | [McAuliffe-Shepard Discovery Center STEM Summer Camps](mcauliffe-shepard-discovery-center-stem-summer-camps-concord.json) | Concord | 6 | 0 | 14 | 6 | unchecked |
 | [Melody Pines Day Camp](melody-pines-day-camp-manchester.json) | Manchester | 10 | 0 | 0 | 5 | unchecked |
@@ -88,7 +88,7 @@ Nothing here is on the site until it is promoted and imported.
 | [Water Monkey Camp](water-monkey-camp-new-durham.json) | New Durham | 0 | 0 | 2 | 6 | unchecked |
 | [Westwood Park Day Camps (Sports Camps at Westwood Park)](westwood-park-day-camps-sports-camps-at-westwood-park.json) | ? | 7 | 3 | 9 | 8 | unchecked |
 | [WildQuest Day Camps](wildquest-day-camps-laconia.json) | Laconia | 11 | 0 | 4 | 4 | unchecked |
-| [Wildwood Camp](wildwood-camp-rindge.json) | Rindge | 8 | 1 | 5 | 4 | unchecked |
+| [Wildwood Camp](wildwood-camp-rindge.json) | Rindge | 8 | 0 | 5 | 5 | unchecked |
 | [William Lawrence Camp](william-lawrence-camp-center-tuftonboro.json) | Center Tuftonboro | 0 | 0 | 1 | 3 | unchecked |
 | [Windham Academy Summer Camp](windham-academy-summer-camp-windham.json) | Windham | 4 | 0 | 10 | 5 | unchecked |
 | [Windsor Mountain International Summer Camp](windsor-mountain-international-summer-camp-windsor.json) | Windsor | 0 | 1 | 0 | 3 | unchecked |
@@ -97,8 +97,8 @@ Nothing here is on the site until it is promoted and imported.
 | [YMCA Camp Foss](ymca-camp-foss.json) | ? | 17 | 3 | 1 | 5 | unchecked |
 | [YMCA Camp Lincoln Counselors in Training (CIT)](ymca-camp-lincoln-counselors-in-training-cit-kingston.json) | Kingston | 2 | 0 | 4 | 6 | unchecked |
 | [YMCA Camp Mi-Te-Na](ymca-camp-mi-te-na.json) | ? | 21 | 3 | 1 | 5 | unchecked |
-| [YMCA Camp Sargent](ymca-camp-sargent-merrimack.json) | Merrimack | 4 | 1 | 9 | 6 | unchecked |
-| [YMCA Day Camp of Hooksett](ymca-day-camp-of-hooksett-hooksett.json) | Hooksett | 9 | 1 | 3 | 4 | unchecked |
+| [YMCA Camp Sargent](ymca-camp-sargent-merrimack.json) | Merrimack | 4 | 0 | 9 | 7 | unchecked |
+| [YMCA Day Camp of Hooksett](ymca-day-camp-of-hooksett-hooksett.json) | Hooksett | 9 | 0 | 3 | 5 | unchecked |
 
 ## Ask the owner for the brochure
 

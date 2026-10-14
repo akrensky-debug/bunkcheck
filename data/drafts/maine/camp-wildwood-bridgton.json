@@ -7,7 +7,7 @@
   "phone": "207-647-8864",
   "city": "Bridgton",
   "state": "ME",
-  "zip": null,
+  "zip": "04009",
   "camp_type": "sleepaway",
   "description_short": "An overnight summer camp for boys in Bridgton, Maine. It runs a seven-week full summer session and a shorter four-week session at the start of the summer.",
   "price_min": 12600,
@@ -41,6 +41,14 @@
         "sessions"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.census.gov/geographies/reference-files/time-series/geo/relationship-files.2020.html",
+      "checked": "2026-10-14",
+      "fields": [
+        "zip"
+      ],
+      "note": "Bridgton, ME sits inside one ZIP code (2020 Census ZCTA relationship file)"
     }
   ],
   "review": {
@@ -51,6 +59,7 @@
       "title": "Camp Wildwood - Best Maine Sleepaway Camp for Boys"
     },
     "warnings": [
+      "Filled zip 04009: Bridgton has one ZIP code (2020 Census)",
       "The camp is for boys only.",
       "The page does not say whether these prices are for 2027 or carried over from an earlier year. The page footer says ©2020, and the menu also links to a second 'Dates & Rates' page (/dates-rates-2) that may show different rates. Check the price with the camp.",
       "The four-week session's start date is assumed to be opening day, because the page calls it a 'front end' session. Its end date is not given.",
@@ -71,8 +80,6 @@
       "Whether the listed prices include extra fees (e.g., Plus Programs, camp store, laundry)"
     ],
     "low_confidence": [],
-    "errors": [
-      "missing required zip"
-    ]
+    "errors": []
   }
 }

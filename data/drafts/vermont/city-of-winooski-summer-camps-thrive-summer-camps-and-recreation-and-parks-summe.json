@@ -6,7 +6,7 @@
   "registration_url": "http://winooskivt.gov/summer",
   "city": "Winooski",
   "state": "VT",
-  "zip": null,
+  "zip": "05404",
   "primary_categories": [
     "arts",
     "sports",
@@ -133,6 +133,14 @@
         "sessions"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.census.gov/geographies/reference-files/time-series/geo/relationship-files.2020.html",
+      "checked": "2026-10-14",
+      "fields": [
+        "zip"
+      ],
+      "note": "Winooski, VT sits inside one ZIP code (2020 Census ZCTA relationship file)"
     }
   ],
   "review": {
@@ -143,6 +151,7 @@
       "title": "News Flash Archive - 2026 Pool Passes and Summer Programs - Register Today!Arrow LeftArrow RightSlideshow Left ArrowSlideshow Right Arrow"
     },
     "warnings": [
+      "Filled zip 05404: Winooski has one ZIP code (2020 Census)",
       "Source is an archived City of Winooski news post (published 2/3/2026, archived 6/30/2026), not the camp's own program page. It describes the 2026 season, which is over as of today (2026-10-13). No 2027 information.",
       "The post covers two separate programs with different contacts. Thrive Summer Camps: 802 540 1533, thrive@winooskivt.gov. Recreation & Parks Summer Camps: 802 540 1476, recreation@winooskivt.gov. They are combined here, and session names are prefixed with the program name.",
       "Thrive is described as 'completed grades K-5' and Recreation & Parks as 'current Kindergarteners through current 5th graders (school year 2025-26)'. Both describe the same grade group, recorded here as K (0) through 5.",
@@ -170,7 +179,6 @@
       }
     ],
     "errors": [
-      "missing required zip",
       "missing required camp_type",
       "camp_type must be one of ['day', 'sleepaway', 'specialty']"
     ]

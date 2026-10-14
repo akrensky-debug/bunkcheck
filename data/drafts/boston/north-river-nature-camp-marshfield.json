@@ -5,7 +5,7 @@
   "website_url": "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/north-river/camp",
   "city": "Marshfield",
   "state": "MA",
-  "zip": null,
+  "zip": "02050",
   "camp_type": "day",
   "primary_categories": [
     "nature"
@@ -37,6 +37,14 @@
         "financial_aid"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.census.gov/geographies/reference-files/time-series/geo/relationship-files.2020.html",
+      "checked": "2026-10-14",
+      "fields": [
+        "zip"
+      ],
+      "note": "Marshfield, MA sits inside one ZIP code (2020 Census ZCTA relationship file)"
     }
   ],
   "review": {
@@ -47,6 +55,7 @@
       "title": "North River Nature Camp"
     },
     "warnings": [
+      "Filled zip 02050: Marshfield has one ZIP code (2020 Census)",
       "2027 registration is not open yet ('Coming Soon'), and the page lists no dates, sessions or prices.",
       "The page says the minimum age is 4.5, which doesn't fit the whole-number field, so age_min was left blank.",
       "The only phone number and address on the page are for Mass Audubon headquarters in Lincoln, MA, not the camp, so they were not recorded.",
@@ -74,8 +83,6 @@
         "quote": "comes home excited to play in the woods"
       }
     ],
-    "errors": [
-      "missing required zip"
-    ]
+    "errors": []
   }
 }

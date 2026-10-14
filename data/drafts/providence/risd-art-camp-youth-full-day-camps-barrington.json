@@ -7,7 +7,7 @@
   "phone": "401 454-6200",
   "city": "Barrington",
   "state": "RI",
-  "zip": null,
+  "zip": "02806",
   "camp_type": "day",
   "primary_categories": [
     "arts"
@@ -88,6 +88,14 @@
         "sessions"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.census.gov/geographies/reference-files/time-series/geo/relationship-files.2020.html",
+      "checked": "2026-10-14",
+      "fields": [
+        "zip"
+      ],
+      "note": "Barrington, RI sits inside one ZIP code (2020 Census ZCTA relationship file)"
     }
   ],
   "review": {
@@ -98,6 +106,7 @@
       "title": "Youth Full-Day Camps – RISD CE"
     },
     "warnings": [
+      "Filled zip 02806: Barrington has one ZIP code (2020 Census)",
       "Today is 2026-10-13 and the page only shows the Summer 2026 season, which is over. No 2027 dates, themes or prices are posted yet.",
       "All 2026 sessions are marked full. The page offers a waitlist.",
       "No price is shown anywhere on the page.",
@@ -125,8 +134,6 @@
         "quote": "Monday–Friday, 9 am–4 pm"
       }
     ],
-    "errors": [
-      "missing required zip"
-    ]
+    "errors": []
   }
 }

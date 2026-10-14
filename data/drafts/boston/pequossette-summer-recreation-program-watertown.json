@@ -7,7 +7,7 @@
   "phone": "617-972-6494",
   "city": "Watertown",
   "state": "MA",
-  "zip": null,
+  "zip": "02472",
   "camp_type": "day",
   "grade_min": 0,
   "grade_max": 8,
@@ -117,6 +117,14 @@
         "sessions"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.census.gov/geographies/reference-files/time-series/geo/relationship-files.2020.html",
+      "checked": "2026-10-14",
+      "fields": [
+        "zip"
+      ],
+      "note": "Watertown, MA sits inside one ZIP code (2020 Census ZCTA relationship file)"
     }
   ],
   "review": {
@@ -127,6 +135,7 @@
       "title": "Pequossette Summer Recreation Program | Watertown, MA - Official Website"
     },
     "warnings": [
+      "Filled zip 02472: Watertown has one ZIP code (2020 Census)",
       "The source shows only the 2026 season, which is already over (today is 2026-10-13). Dates and prices for 2027 are not published here and may change.",
       "Session prices are the resident rates. Non-residents pay $295 per week ($250 for the 4-day Week 2).",
       "Week 1 (June 22–26, 2026) was cancelled and is not included. Camp started June 29.",
@@ -155,8 +164,6 @@
         "quote": "For registrants choosing to use the deposit option"
       }
     ],
-    "errors": [
-      "missing required zip"
-    ]
+    "errors": []
   }
 }

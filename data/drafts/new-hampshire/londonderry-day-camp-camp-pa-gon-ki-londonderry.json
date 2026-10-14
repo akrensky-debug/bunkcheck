@@ -8,7 +8,7 @@
   "phone": "603.437.9622",
   "city": "Londonderry",
   "state": "NH",
-  "zip": null,
+  "zip": "03053",
   "camp_type": "day",
   "primary_categories": [
     "nature",
@@ -138,6 +138,14 @@
         "state"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.census.gov/geographies/reference-files/time-series/geo/relationship-files.2020.html",
+      "checked": "2026-10-14",
+      "fields": [
+        "zip"
+      ],
+      "note": "Londonderry, NH sits inside one ZIP code (2020 Census ZCTA relationship file)"
     }
   ],
   "review": {
@@ -148,6 +156,7 @@
       "title": "Londonderry Day Camp | The Granite YMCA"
     },
     "warnings": [
+      "Filled zip 03053: Londonderry has one ZIP code (2020 Census)",
       "Filled state NH: Londonderry is in our town list under that state only",
       "The page shows the 2026 season, which has already ended (today is 2026-10-13). The 2027 season is not posted yet.",
       "Registration opened at different times for each group in 2026: returning campers Dec 3, 2025; Y members Jan 7, 2026; non-members Feb 4, 2026. Session-level registration_opens_at was left blank because of this.",
@@ -183,8 +192,6 @@
         "quote": "followed by lunch and additional activities like swimming, structured games, and more"
       }
     ],
-    "errors": [
-      "missing required zip"
-    ]
+    "errors": []
   }
 }

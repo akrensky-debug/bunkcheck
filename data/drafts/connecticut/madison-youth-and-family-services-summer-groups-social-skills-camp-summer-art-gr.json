@@ -6,7 +6,7 @@
   "phone": "203-245-5645",
   "city": "Madison",
   "state": "CT",
-  "zip": null,
+  "zip": "06443",
   "camp_type": "specialty",
   "primary_categories": [
     "arts"
@@ -67,6 +67,14 @@
         "sessions"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.census.gov/geographies/reference-files/time-series/geo/relationship-files.2020.html",
+      "checked": "2026-10-14",
+      "fields": [
+        "zip"
+      ],
+      "note": "Madison, CT sits inside one ZIP code (2020 Census ZCTA relationship file)"
     }
   ],
   "review": {
@@ -77,6 +85,7 @@
       "title": "Summer Camp | Madison, CTArrow LeftArrow RightSlideshow Left ArrowSlideshow Right Arrow"
     },
     "warnings": [
+      "Filled zip 06443: Madison has one ZIP code (2020 Census)",
       "The page shows no year. The weekdays match the 2026 calendar (July 6, 2026 is a Monday and July 9, 2026 is a Thursday), so season_year is set to 2026 as an inference. If that's right, this season has already ended as of 2026-10-13, and no 2027 information is posted.",
       "The dates don't all add up: August 8 is listed as one of the 'Thursdays' for Walk and Talk, but August 8, 2026 is a Saturday. The Art Group dates also fall on different weekdays.",
       "These are short clinical or therapeutic groups (1-1.5 hours a day) run by the town's Youth & Family Services clinical department. They are not a traditional full-day camp.",
@@ -126,8 +135,6 @@
         "quote": "Do they enjoy painting, drawing, listening to music, acting"
       }
     ],
-    "errors": [
-      "missing required zip"
-    ]
+    "errors": []
   }
 }

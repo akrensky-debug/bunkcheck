@@ -8,7 +8,7 @@
   "phone": "603.994.4155",
   "city": "Greenland",
   "state": "NH",
-  "zip": null,
+  "zip": "03840",
   "camp_type": "day",
   "primary_categories": [
     "sports",
@@ -137,6 +137,14 @@
         "sessions"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.census.gov/geographies/reference-files/time-series/geo/relationship-files.2020.html",
+      "checked": "2026-10-14",
+      "fields": [
+        "zip"
+      ],
+      "note": "Greenland, NH sits inside one ZIP code (2020 Census ZCTA relationship file)"
     }
   ],
   "review": {
@@ -147,6 +155,7 @@
       "title": "Greenland Day Camp | The Granite YMCA"
     },
     "warnings": [
+      "Filled zip 03840: Greenland has one ZIP code (2020 Census)",
       "The page covers the 2026 season, which ended before today (2026-10-13). The 2027 dates, prices and registration dates have not been posted yet.",
       "Registration opened on different dates for each group in the 2026 cycle: returning campers on Dec 4, 2025, Y members on Jan 8, 2026 and non-members on Feb 5, 2026. Session registration_opens_at is left blank because the date depends on the camper's status.",
       "Week 10 (Aug 24–27) is only 4 days.",
@@ -167,8 +176,6 @@
       "Swim facility type (pool or open water)"
     ],
     "low_confidence": [],
-    "errors": [
-      "missing required zip"
-    ]
+    "errors": []
   }
 }

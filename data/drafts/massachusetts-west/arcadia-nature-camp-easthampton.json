@@ -5,7 +5,7 @@
   "website_url": "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/arcadia/camp",
   "city": "Easthampton",
   "state": "MA",
-  "zip": null,
+  "zip": "01027",
   "primary_categories": [
     "nature"
   ],
@@ -36,6 +36,14 @@
         "financial_aid"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.census.gov/geographies/reference-files/time-series/geo/relationship-files.2020.html",
+      "checked": "2026-10-14",
+      "fields": [
+        "zip"
+      ],
+      "note": "Easthampton, MA sits inside one ZIP code (2020 Census ZCTA relationship file)"
     }
   ],
   "review": {
@@ -46,6 +54,7 @@
       "title": "Arcadia Nature Camp"
     },
     "warnings": [
+      "Filled zip 01027: Easthampton has one ZIP code (2020 Census)",
       "2027 registration has not opened yet ('Coming Soon'). No 2027 dates or prices are on this page.",
       "This is an overview page. Pricing, policies and schedule details are on linked subpages that weren't provided.",
       "The only address and phones on the page (208 South Great Road, Lincoln, MA; 781-259-9500) belong to Mass Audubon headquarters, not the Easthampton camp, so they were not recorded."
@@ -66,7 +75,6 @@
     ],
     "low_confidence": [],
     "errors": [
-      "missing required zip",
       "missing required camp_type",
       "camp_type must be one of ['day', 'sleepaway', 'specialty']"
     ]

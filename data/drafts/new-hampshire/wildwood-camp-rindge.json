@@ -6,7 +6,7 @@
   "registration_url": "https://www.massaudubon.org/programs?prg%5Bpid%5D%5B%5D=17542&prg%5Bdaterange%5D=&prg%5Bquery%5D=&prg%5Bprogram_types%5D%5B%5D=849&prg%5Binclude_camps%5D=1&prg%5Bsubmit%5D=&prg%5Bage_min%5D=&prg%5Bage_max%5D=",
   "city": "Rindge",
   "state": "NH",
-  "zip": null,
+  "zip": "03461",
   "camp_type": "sleepaway",
   "primary_categories": [
     "nature"
@@ -107,6 +107,14 @@
         "sessions"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.census.gov/geographies/reference-files/time-series/geo/relationship-files.2020.html",
+      "checked": "2026-10-14",
+      "fields": [
+        "zip"
+      ],
+      "note": "Rindge, NH sits inside one ZIP code (2020 Census ZCTA relationship file)"
     }
   ],
   "review": {
@@ -117,6 +125,7 @@
       "title": "Wildwood Camp Programs"
     },
     "warnings": [
+      "Filled zip 03461: Rindge has one ZIP code (2020 Census)",
       "The source shows only the 2026 season, which is now over (today is 2026-10-13). Dates are from 2026, and 2027 dates may be different.",
       "The page has no prices. Rates are on a separate Rates & Dates page.",
       "The contact details on the page belong to Mass Audubon headquarters in Lincoln, MA, not to the camp, so they were not recorded.",
@@ -165,8 +174,6 @@
         "quote": "Environmental Leadership Teens •June 28-July 11, July 12-25, July 26-August 8 (2 week sessions)"
       }
     ],
-    "errors": [
-      "missing required zip"
-    ]
+    "errors": []
   }
 }

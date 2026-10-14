@@ -8,7 +8,7 @@ Nothing here is on the site until it is promoted and imported.
 
 | Camp | Town | Sessions | Errors | Unsure | Warnings | Status |
 |---|---|---|---|---|---|---|
-| [Arcadia Nature Camp](arcadia-nature-camp-easthampton.json) | Easthampton | 0 | 3 | 0 | 3 | unchecked |
+| [Arcadia Nature Camp](arcadia-nature-camp-easthampton.json) | Easthampton | 0 | 2 | 0 | 4 | unchecked |
 | [Belvoir Terrace](belvoir-terrace-lenox.json) | Lenox | 0 | 0 | 3 | 5 | unchecked |
 | [Berkshire Nature Camp at Pleasant Valley](berkshire-nature-camp-at-pleasant-valley-lenox.json) | Lenox | 5 | 1 | 1 | 5 | unchecked |
 | [Broad Meadow Brook Nature Camp](broad-meadow-brook-nature-camp-worcester.json) | Worcester | 17 | 1 | 4 | 6 | unchecked |
@@ -17,12 +17,12 @@ Nothing here is on the site until it is promoted and imported.
 | [Camp Danbee](camp-danbee-peru.json) | Peru | 0 | 1 | 2 | 4 | unchecked |
 | [Camp Farley Day Camp](camp-farley-day-camp-mashpee.json) | Mashpee | 0 | 0 | 4 | 4 | unchecked |
 | [Camp Farley](camp-farley-mashpee.json) | Mashpee | 22 | 2 | 1 | 7 | unchecked |
-| [Camp Greylock](camp-greylock-becket.json) | Becket | 0 | 2 | 0 | 3 | unchecked |
+| [Camp Greylock](camp-greylock-becket.json) | Becket | 0 | 1 | 0 | 4 | unchecked |
 | [Camp Mah-Kee-Nac – Mini Mak Two-Week Sleepaway Camp](camp-mah-kee-nac-mini-mak-two-week-sleepaway-camp-lenox.json) | Lenox | 2 | 0 | 1 | 5 | unchecked |
 | [Camp Taconic](camp-taconic-hinsdale.json) | Hinsdale | 2 | 0 | 0 | 4 | unchecked |
 | [Camp TAG (The Allergy Gang)](camp-tag-the-allergy-gang.json) | ? | 2 | 3 | 0 | 5 | unchecked |
 | [Camp Weber](camp-weber-west-springfield.json) | West Springfield | 0 | 2 | 2 | 5 | unchecked |
-| [Camp Winadu](camp-winadu-pittsfield.json) | Pittsfield | 1 | 1 | 3 | 7 | unchecked |
+| [Camp Winadu](camp-winadu-pittsfield.json) | Pittsfield | 1 | 0 | 3 | 8 | unchecked |
 | [Day Camp @ Eisner](day-camp-eisner-great-barrington.json) | Great Barrington | 7 | 0 | 7 | 7 | unchecked |
 | [Discovery Adventures](discovery-adventures-sturbridge.json) | Sturbridge | 0 | 0 | 5 | 6 | unchecked |
 | [EcoTarium Summer Discovery Camp and Vacation Week Camp](ecotarium-summer-discovery-camp-and-vacation-week-camp-worcester.json) | Worcester | 13 | 0 | 3 | 5 | unchecked |

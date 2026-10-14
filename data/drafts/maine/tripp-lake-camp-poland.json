@@ -5,7 +5,7 @@
   "phone": "207-998-4347",
   "city": "Poland",
   "state": "ME",
-  "zip": null,
+  "zip": "04274",
   "camp_type": "sleepaway",
   "primary_categories": [
     "sports",
@@ -60,6 +60,14 @@
         "sessions"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.census.gov/geographies/reference-files/time-series/geo/relationship-files.2020.html",
+      "checked": "2026-10-14",
+      "fields": [
+        "zip"
+      ],
+      "note": "Poland, ME sits inside one ZIP code (2020 Census ZCTA relationship file)"
     }
   ],
   "review": {
@@ -70,6 +78,7 @@
       "title": "Dates & Tuition at Tripp Lake Camp | A Kids Camp in Poland, Maine"
     },
     "warnings": [
+      "Filled zip 04274: Poland has one ZIP code (2020 Census)",
       "Camp is for girls only.",
       "Only one full season is offered (June 26 to August 12, 2027). Shorter stays may be allowed in rare cases by contacting the camp; no dates or prices are given for those.",
       "ACA accreditation comes from a footer link, not from a statement in the page text.",
@@ -89,8 +98,6 @@
       "Operator name"
     ],
     "low_confidence": [],
-    "errors": [
-      "missing required zip"
-    ]
+    "errors": []
   }
 }

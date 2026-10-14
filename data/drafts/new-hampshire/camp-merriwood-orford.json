@@ -5,7 +5,7 @@
   "registration_url": "https://merriwood.campintouch.com/ui/forms/application/camper/App",
   "city": "Orford",
   "state": "NH",
-  "zip": null,
+  "zip": "03777",
   "camp_type": "sleepaway",
   "age_min": 8,
   "age_max": 15,
@@ -76,6 +76,14 @@
         "sessions"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.census.gov/geographies/reference-files/time-series/geo/relationship-files.2020.html",
+      "checked": "2026-10-14",
+      "fields": [
+        "zip"
+      ],
+      "note": "Orford, NH sits inside one ZIP code (2020 Census ZCTA relationship file)"
     }
   ],
   "review": {
@@ -86,6 +94,7 @@
       "title": "Dates and Rates for Camp Merriwood, Orford, NH"
     },
     "warnings": [
+      "Filled zip 03777: Orford has one ZIP code (2020 Census)",
       "The page says 'Dates are subject to change' and 'Limited space'.",
       "Tuition doesn't include extras: horseback riding costs $300-$900 depending on session, bus transport is $90 each way, and the camp bank deposit is $25-$350 depending on age group.",
       "The Splash of Magic sessions are only for new campers in current grades 1-4. The page doesn't say how this fits with the camp's stated minimum age of 8, so these sessions have no age range."
@@ -109,8 +118,6 @@
         "quote": "ENROLL"
       }
     ],
-    "errors": [
-      "missing required zip"
-    ]
+    "errors": []
   }
 }

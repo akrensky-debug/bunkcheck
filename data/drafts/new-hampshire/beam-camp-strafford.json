@@ -7,7 +7,7 @@
   "phone": "718.855.7600",
   "city": "Strafford",
   "state": "NH",
-  "zip": null,
+  "zip": "03884",
   "camp_type": "sleepaway",
   "primary_categories": [
     "arts",
@@ -78,6 +78,14 @@
         "sessions"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.census.gov/geographies/reference-files/time-series/geo/relationship-files.2020.html",
+      "checked": "2026-10-14",
+      "fields": [
+        "zip"
+      ],
+      "note": "Strafford, NH sits inside one ZIP code (2020 Census ZCTA relationship file)"
     }
   ],
   "review": {
@@ -88,6 +96,7 @@
       "title": "Beam Camp — Beam Center"
     },
     "warnings": [
+      "Filled zip 03884: Strafford has one ZIP code (2020 Census)",
       "The phone, email and footer address (60 Sackett Street, Brooklyn, NY 11231) are for the Beam Center head office, not the camp site in NH.",
       "The age rule for the 4-week session is unclear: '11 years old (OR rising 5th graders)'. A rising 5th grader is usually about 10, so younger campers may qualify.",
       "Typo in the second listing of the 2-week session: '9 years of to 15 years old'. The first listing says 9 to 15.",
@@ -107,8 +116,6 @@
       "Exact grade ranges"
     ],
     "low_confidence": [],
-    "errors": [
-      "missing required zip"
-    ]
+    "errors": []
   }
 }

@@ -7,7 +7,7 @@
   "phone": "207-685-4644",
   "city": "Readfield",
   "state": "ME",
-  "zip": null,
+  "zip": "04355",
   "camp_type": "day",
   "primary_categories": [
     "sports",
@@ -151,6 +151,14 @@
         "sessions"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.census.gov/geographies/reference-files/time-series/geo/relationship-files.2020.html",
+      "checked": "2026-10-14",
+      "fields": [
+        "zip"
+      ],
+      "note": "Readfield, ME sits inside one ZIP code (2020 Census ZCTA relationship file)"
     }
   ],
   "review": {
@@ -161,6 +169,7 @@
       "title": "Camp Programs | Kennebec Valley YMCA"
     },
     "warnings": [
+      "Filled zip 04355: Readfield has one ZIP code (2020 Census)",
       "Old season: the page shows only the 2026 season (June 15 - August 21, 2026), and that season has already ended as of today (2026-10-13). No 2027 dates or prices are posted yet.",
       "The 10 day-camp weeks were worked out from the overall range 'June 15th - August 21st', the note that 'Sessions are broken into one-week programs', and the note that Week 3 is June 29-July 2. The page does not list each week by itself.",
       "Prices come in two tiers. Session prices and price_per_week/min/max use the Y Member rate. Non-member rates are $260/week, $208 for the 4-day week, $550 for LG/LIT and $780 for CIT. price_max ($780) is the non-member CIT rate.",
@@ -233,8 +242,6 @@
         "quote": "When: July 20th - August 14th"
       }
     ],
-    "errors": [
-      "missing required zip"
-    ]
+    "errors": []
   }
 }

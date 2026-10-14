@@ -31,7 +31,7 @@ Nothing here is on the site until it is promoted and imported.
 | [Chelsea Piers Athletic Club Stamford Summer Camps](chelsea-piers-athletic-club-stamford-summer-camps-stamford.json) | Stamford | 0 | 1 | 6 | 4 | unchecked |
 | [Clubhouse Camp](clubhouse-camp-greenwich.json) | Greenwich | 0 | 0 | 2 | 4 | unchecked |
 | [Darien Nature Center Summer Camp](darien-nature-center-summer-camp-darien.json) | Darien | 7 | 0 | 0 | 7 | unchecked |
-| [Darien Parks & Recreation Youth Summer Camps](darien-parks-and-recreation-youth-summer-camps-darien.json) | Darien | 0 | 3 | 3 | 4 | unchecked |
+| [Darien Parks & Recreation Youth Summer Camps](darien-parks-and-recreation-youth-summer-camps-darien.json) | Darien | 0 | 2 | 3 | 5 | unchecked |
 | [Darien YMCA School Age Camp](darien-ymca-school-age-camp-darien.json) | Darien | 9 | 0 | 1 | 8 | unchecked |
 | [Day Camps@The J (Summer@The J)](day-camps-the-j-summer-the-j-stamford.json) | Stamford | 0 | 0 | 1 | 4 | unchecked |
 | [Discovery Museum Camps](discovery-museum-camps-winchester.json) | Winchester | 0 | 2 | 4 | 6 | unchecked |
@@ -49,12 +49,12 @@ Nothing here is on the site until it is promoted and imported.
 | [JCC Day Camps](jcc-day-camps-woodbridge.json) | Woodbridge | 2 | 0 | 4 | 3 | unchecked |
 | [KenMont and KenWood Camps](kenmont-and-kenwood-camps.json) | ? | 4 | 3 | 1 | 6 | unchecked |
 | [Longshore Sailing School – Junior Programs](longshore-sailing-school-junior-programs-westport.json) | Westport | 0 | 1 | 1 | 3 | unchecked |
-| [Madison Youth & Family Services Summer Groups (Social Skills Camp, Summer Art Group, Walk and Talk)](madison-youth-and-family-services-summer-groups-social-skills-camp-summer-art-gr.json) | Madison | 3 | 1 | 6 | 4 | unchecked |
+| [Madison Youth & Family Services Summer Groups (Social Skills Camp, Summer Art Group, Walk and Talk)](madison-youth-and-family-services-summer-groups-social-skills-camp-summer-art-gr.json) | Madison | 3 | 0 | 6 | 5 | unchecked |
 | [Music Theatre of Connecticut Summer Theatre Programs](music-theatre-of-connecticut-summer-theatre-programs-norwalk.json) | Norwalk | 0 | 0 | 2 | 4 | unchecked |
 | [NESS Summer Camp Programs](ness-summer-camp-programs-stonington.json) | Stonington | 11 | 2 | 1 | 5 | unchecked |
 | [New Canaan Nature Summer Camp](new-canaan-nature-summer-camp.json) | ? | 10 | 3 | 1 | 5 | unchecked |
 | [Norma F. Pfriem Summer Day Camp](norma-f-pfriem-summer-day-camp-bridgeport.json) | Bridgeport | 10 | 0 | 1 | 5 | unchecked |
-| [North Haven Recreation Summer Programs](north-haven-recreation-summer-programs-north-haven.json) | North Haven | 0 | 3 | 1 | 4 | unchecked |
+| [North Haven Recreation Summer Programs](north-haven-recreation-summer-programs-north-haven.json) | North Haven | 0 | 2 | 1 | 5 | unchecked |
 | [Renbrook School Summer Adventure](renbrook-school-summer-adventure-west-hartford.json) | West Hartford | 0 | 0 | 5 | 4 | unchecked |
 | [Ridgefield Academy & Landmark Preschool Summer Programs (Camp RA / Camp Landmark / Explorer Programs)](ridgefield-academy-and-landmark-preschool-summer-programs-camp-ra-camp-landmark.json) | Ridgefield | 0 | 0 | 3 | 6 | unchecked |
 | [Roaring Brook Nature Center Summer Discovery Days](roaring-brook-nature-center-summer-discovery-days.json) | ? | 0 | 3 | 2 | 4 | unchecked |
@@ -70,7 +70,7 @@ Nothing here is on the site until it is promoted and imported.
 | [Sunrise at Camp Harkness](sunrise-at-camp-harkness-waterford.json) | Waterford | 0 | 2 | 1 | 3 | unchecked |
 | [Teen Camp](teen-camp-greenwich.json) | Greenwich | 1 | 0 | 2 | 5 | unchecked |
 | [Town of West Hartford Leisure Services Camps](town-of-west-hartford-leisure-services-camps-west-hartford.json) | West Hartford | 0 | 4 | 6 | 4 | unchecked |
-| [Trumbull Parks & Recreation Summer Camp](trumbull-parks-and-recreation-summer-camp-trumbull.json) | Trumbull | 0 | 3 | 2 | 4 | unchecked |
+| [Trumbull Parks & Recreation Summer Camp](trumbull-parks-and-recreation-summer-camp-trumbull.json) | Trumbull | 0 | 2 | 2 | 5 | unchecked |
 | [West Haven Parks and Recreation Summer Day Camp](west-haven-parks-and-recreation-summer-day-camp-west-haven.json) | West Haven | 0 | 1 | 5 | 4 | unchecked |
 | [Winding Trails Summer Camp](winding-trails-summer-camp.json) | ? | 8 | 3 | 0 | 7 | unchecked |
 | [Woodbridge Recreation Summer Camp](woodbridge-recreation-summer-camp-woodbridge.json) | Woodbridge | 6 | 0 | 1 | 5 | unchecked |
