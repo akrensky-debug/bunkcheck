@@ -1,5 +1,5 @@
 """
-Registration alert emails to parents. Signed as BunkCheck. Each one says why it came
+Registration alert emails to parents. Signed as Bunkcheck. Each one says why it came
 ("you asked us to tell you") and carries the link that stops it. Camp facts only.
 """
 
@@ -28,14 +28,14 @@ def _what(camp: dict[str, Any], session: dict[str, Any] | None) -> str:
 def confirm(to: str, camp: dict[str, Any], session: dict[str, Any] | None, token: str) -> Email:
     link = f"{_site()}/alerts/{token}"
     what = _what(camp, session)
-    text = (f"Hi,\n\nSomeone (we hope you) asked BunkCheck to email this address when registration opens "
+    text = (f"Hi,\n\nSomeone (we hope you) asked Bunkcheck to email this address when registration opens "
             f"for {what}.\n\nTo start, confirm here: {link}\n\n"
-            "If it wasn't you, ignore this email and we won't write again.\n\nThanks,\nBunkCheck")
-    body = (f"<p>Hi,</p><p>Someone (we hope you) asked BunkCheck to email this address when registration "
+            "If it wasn't you, ignore this email and we won't write again.\n\nThanks,\nBunkcheck")
+    body = (f"<p>Hi,</p><p>Someone (we hope you) asked Bunkcheck to email this address when registration "
             f"opens for <strong>{html.escape(what)}</strong>.</p>"
             f"<p><a href='{html.escape(link)}'>Confirm and start the alerts</a></p>"
             "<p style='color:#666'>If it wasn't you, ignore this email and we won't write again.</p>"
-            "<p>Thanks,<br>BunkCheck</p>")
+            "<p>Thanks,<br>Bunkcheck</p>")
     return Email(to=to, subject=f"Confirm: registration alerts for {camp['name']}", html=body, text=text)
 
 
@@ -89,9 +89,9 @@ def alert(to: str, items: list["Item"], now: datetime) -> Email:
                           f"Stop alerts for {html.escape(i.camp['name'])}</a></p></li>")
     text = ("Hi,\n\nYou asked us to tell you when camp registration opens.\n\n" + "\n\n".join(text_parts)
             + "\n\nDates are checked by our team against the camp's own site. If anything looks off, the camp's "
-              "page is the final word.\n\nThanks,\nBunkCheck\n")
+              "page is the final word.\n\nThanks,\nBunkcheck\n")
     body = ("<p>Hi,</p><p>You asked us to tell you when camp registration opens.</p>"
             f"<ul>{''.join(html_parts)}</ul>"
             "<p style='color:#666'>Dates are checked by our team against the camp's own site. If anything looks "
-            "off, the camp's page is the final word.</p><p>Thanks,<br>BunkCheck</p>")
+            "off, the camp's page is the final word.</p><p>Thanks,<br>Bunkcheck</p>")
     return Email(to=to, subject=subject(items, today), html=body, text=text)

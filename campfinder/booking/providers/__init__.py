@@ -1,5 +1,5 @@
 """
-Registration platforms BunkCheck could book through, behind a feature flag.
+Registration platforms Bunkcheck could book through, behind a feature flag.
 
 Only sandbox providers exist. BOOKING_PROVIDERS lists the enabled ones (default: none),
 and get_provider refuses anything whose environment isn't 'sandbox'; the database

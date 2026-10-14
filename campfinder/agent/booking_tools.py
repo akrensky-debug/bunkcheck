@@ -133,7 +133,7 @@ async def propose_package_tool(inp: ProposePackageInput, family_id: str) -> Tool
 BOOKING_TOOLS: list[ToolSpec] = [
     ToolSpec(
         "watch_registration",
-        "Track a camp or session the family wants, so BunkCheck reminds the parent before registration opens "
+        "Track a camp or session the family wants, so Bunkcheck reminds the parent before registration opens "
         "and puts opening day on the calendar. Use when she picks a camp that isn't open yet, or asks to be "
         "reminded. Does not register anything.",
         WatchRegistrationInput, watch_registration_tool, family=True, status="Saving to your registrations",

@@ -1,5 +1,5 @@
 """
-Everything BunkCheck holds about one family, for its owner to download (PRODUCT trust rule 1:
+Everything Bunkcheck holds about one family, for its owner to download (PRODUCT trust rule 1:
 parents can see, export and delete their family's data).
 
 Left out on purpose, and said so in the file: the secrets that open things (calendar links,

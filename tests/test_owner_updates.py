@@ -175,9 +175,12 @@ async def test_read_message_asks_claude_for_the_schema(listed):
 def test_inbound_endpoint(listed, client, monkeypatch):
     payload = {"from_email": "stranger@example.com", "text": "Week 3 is full", "message_id": "<m1>"}
     assert client.post("/api/v1/internal/owner-mail", json=payload, headers=SECRET).status_code == 404  # not set up
+    assert client.post("/api/v1/internal/owner-mail", content=b"").status_code == 404   # no secret: 404, not 422
     monkeypatch.setenv("OWNER_INBOUND_SECRET", "s3cret")
     assert client.post("/api/v1/internal/owner-mail", json=payload,
                        headers={"X-Inbound-Secret": "wrong"}).status_code == 404
+    assert client.post("/api/v1/internal/owner-mail", json={"text": "x"}, headers=SECRET).status_code == 422
+    assert client.post("/api/v1/internal/owner-mail", content=b"not json", headers=SECRET).status_code == 422
     res = client.post("/api/v1/internal/owner-mail", json=payload, headers=SECRET)
     assert res.status_code == 200 and res.json()["status"] == "needs_person"
 

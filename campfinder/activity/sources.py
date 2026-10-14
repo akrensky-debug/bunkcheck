@@ -1,5 +1,5 @@
 """
-Map BunkCheck's stored records onto the Family Activity schema.
+Map Bunkcheck's stored records onto the Family Activity schema.
 
 Two sources feed the same results: camps (with dated week-long sessions) and year-round
 programs (classes, lessons, leagues, after-school, with recurring offerings). Each has a

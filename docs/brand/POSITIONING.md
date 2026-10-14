@@ -1,6 +1,6 @@
 # Positioning
 
-*One page. Draft for Andrew to edit. The name is decided: **BunkCheck** (www.bunkcheck.ai, 13 October 2026). "CampFinder" below is the old working name.*
+*One page. Draft for Andrew to edit. The name is decided: **Bunkcheck** (www.bunkcheck.ai, 13 October 2026). "CampFinder" below is the old working name.*
 
 ## In one line
 

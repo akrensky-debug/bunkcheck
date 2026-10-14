@@ -167,7 +167,7 @@ class Program(BaseModel):
     policies: Policies | None = None
     verification: Verification
     registration_url: str | None = None
-    url: str = Field(description="BunkCheck page for this program; link here when you cite it.")
+    url: str = Field(description="Bunkcheck page for this program; link here when you cite it.")
     sessions: list[Session] | None = Field(default=None, description="Included when requested.")
     match_reasons: list[str] = Field(default_factory=list)
     skill_levels: list[str] = Field(default_factory=list, description="Levels offered, e.g. ['Stage 1', 'Stage 2'].")
@@ -177,7 +177,7 @@ class Program(BaseModel):
 
 
 class Attribution(BaseModel):
-    text: str = "Program data from BunkCheck"
+    text: str = "Program data from Bunkcheck"
     url: str = "https://www.bunkcheck.ai"
     required: bool = Field(default=True, description="Show the text and link wherever this data is displayed.")
 
