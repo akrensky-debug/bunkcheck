@@ -64,7 +64,10 @@ async def extract_listing(
     response = await client.messages.create(
         model=model,
         max_tokens=16000,
-        system=SYSTEM_PROMPT + "\nRecord the listing by calling record_listing once.",
+        # The tool schema and system prompt are the same on every call (~1,800 tokens), so cache them;
+        # only the page text after them changes. Tools render before system, so this covers both.
+        system=[{"type": "text", "text": SYSTEM_PROMPT + "\nRecord the listing by calling record_listing once.",
+                 "cache_control": {"type": "ephemeral"}}],
         messages=[{"role": "user", "content": _build_prompt(source, today or date.today())}],
         tools=[TOOL],
         tool_choice={"type": "auto"},
