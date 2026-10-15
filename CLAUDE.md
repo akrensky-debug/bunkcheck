@@ -1,7 +1,32 @@
 # Working on CampFinder
 
-Read this first, every session. Updated 4 October 2026 (order of work); 3 October: `main` is the trunk. This replaces the
+Read this first, every session. Updated 15 October 2026 (how to work); 4 October (order of work); 3 October: `main` is the trunk. This replaces the
 1 October rule (on `claude/product-plan`) that made `product-plan` the only line of work.
+
+## How to work (added 15 October 2026)
+
+**Deeper, not bigger.** Before starting anything beyond a one-line fix, answer four questions
+in a few lines, then restate the task as the deeper version and do that one:
+
+1. What would a top professional in this field do here that wasn't asked for?
+2. What is the rawest material they would start from, instead of what has already been
+   digested? (The camp's own calendar, not an aggregator; a parent's actual spreadsheet, not a
+   blog post about spreadsheets; the failing log, not the summary.)
+3. Which specific methods and tools would they use?
+4. What, other than you or Andrew, would show the result is right? (A test, a source with a
+   date, a real parent, a browser run, CI.)
+
+Deeper means more rigor on the same task. It does not mean more scope.
+
+**Share the thing, not the folder.** When you hand Andrew something to read or check, give a
+link that opens it: the Google Doc or Drive file link, the artifact URL, the PR or the file on
+GitHub, the preview deploy. A folder path or "it's in docs/" is a fallback, never the answer.
+If something only exists locally, say so and offer to publish it.
+
+**Always-on skill: `anthropic-skills:writing`.** Load it before writing anything a person will
+read: docs, PR descriptions, commit messages, emails, UI copy, and the closing summary of a
+task. It sets Andrew's voice and the house rules (no dashes in prose, plain verbs, the ask up
+front).
 
 ## Name
 
