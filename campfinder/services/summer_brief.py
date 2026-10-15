@@ -189,7 +189,7 @@ def _question(profile: dict[str, Any], field: BriefField, returning: bool = Fals
     names = _names(kids)
     older = [k for k in kids if (k.get("age") or 0) >= 9]
     text: dict[BriefField, tuple[str, str | None]] = {
-        "kids": ("Who's going to camp?", "First names and ages."),
+        "kids": ("Who’s going to camp?", "First names and ages."),
         "home": ("What town are you in?", "So we suggest camps near you."),
         "school": ("Which school do they go to?", "We'll use it to find the last day of school."),
         "sorted_weeks": ("Any weeks already sorted?", "Vacations, time with family, or a camp you've already booked."),
@@ -227,7 +227,9 @@ def next_question(profile: dict[str, Any], today: date, context: Iterable[Contex
         return not answered(profile, f) and f not in skipped and f not in not_sure
 
     def back(f: BriefField) -> bool:
-        return not answered(profile, f) and f in not_sure and _holds(RETURNS_WHEN[f], today, ctx)
+        # Never in the same sitting: "not sure" on Monday can come back Tuesday at the earliest.
+        rested = f in not_sure and date.fromisoformat(str(not_sure[f])[:10]) < today
+        return not answered(profile, f) and rested and _holds(RETURNS_WHEN[f], today, ctx)
 
     for f in CORE:
         if fresh(f):
@@ -291,7 +293,7 @@ def chips(profile: dict[str, Any]) -> list[Chip]:
         label = f"{profile['school']} · {dates}" if profile.get("school") else f"Summer {dates}"
         out.append(Chip(field="school", label=label, source=source("school")))
     if known("sorted_weeks"):
-        away = [a.get("label") or "Away" for a in profile.get("away") or []]
+        away = list(dict.fromkeys(a.get("label") or "Away" for a in profile.get("away") or []))
         label = "Nothing sorted yet" if not away else "Away: " + ", ".join(away[:2]) + (" +" if len(away) > 2 else "")
         out.append(Chip(field="sorted_weeks", label=label, source=source("sorted_weeks")))
     if known("care_hours") and profile.get("work_schedule"):

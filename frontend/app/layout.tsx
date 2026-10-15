@@ -56,6 +56,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               />
             </a>
             <nav aria-label="Main" className="flex items-center gap-4 text-small font-semibold sm:gap-7">
+              <a href="/summer" className="text-muted transition-colors hover:text-ink whitespace-nowrap">Your summer</a>
               <a href="/search" className="text-muted transition-colors hover:text-ink whitespace-nowrap">Browse camps</a>
               <a href="/operators" className="hidden text-muted transition-colors hover:text-ink whitespace-nowrap sm:inline">For camps</a>
               <AccountLink />
@@ -77,7 +78,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <p className="text-muted">Summer, sorted.</p>
             </div>
             <div className="grid grid-cols-2 gap-x-12 gap-y-8 sm:grid-cols-3">
-              <FooterColumn title="Parents" links={[['/', 'Plan your summer'], ['/search', 'Browse camps']]} />
+              <FooterColumn title="Parents" links={[['/', 'Plan your summer'], ['/summer', 'Your summer board'], ['/search', 'Browse camps']]} />
               <FooterColumn title="Camps" links={[['/operators', 'For camps'], ['/operators/submit', 'List your camp'], ['/operators/claim', 'Claim your listing']]} />
               <FooterColumn title="Help" links={[['/support', 'Support'], ['/privacy', 'Privacy'], ['/terms', 'Terms']]} />
             </div>

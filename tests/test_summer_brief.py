@@ -69,13 +69,15 @@ def test_not_sure_comes_back_when_it_matters() -> None:
     p = sb.apply_skip(p, "care_hours", OCT, not_sure=True)
     assert p["work_schedule"] == sb.GUESS_WORK  # 8 to 6, marked as a guess
     assert ask(p) is None
-    q = sb.next_question(p, OCT, ["suggestions"])
+    assert ask(p, context=("suggestions",)) == "max_drive_minutes"  # not the same sitting
+    later = date(2026, 10, 20)
+    q = sb.next_question(p, later, ["suggestions"])
     assert q and q.field == "care_hours" and q.returning
     chip = next(c for c in sb.chips(p) if c.field == "care_hours")
     assert chip.label == "Care about 8 to 6" and chip.source == "guessed"
     # Answering it clears the guess and the Finish later entry.
     p = said(p, work_schedule=[{"parent": "Sam", "days": ["Mon", "Tue", "Wed", "Thu", "Fri"], "start": "8:30", "end": "17:30"}])
-    assert ask(p, context=("suggestions",)) == "max_drive_minutes"  # the next thing that matters, not care hours
+    assert ask(p, today=later, context=("suggestions",)) == "max_drive_minutes"
     assert sb.build_brief(p, OCT).finish_later == []
     assert next(c for c in sb.chips(p) if c.field == "care_hours").label == "Care about 8:30 to 5:30"
 
@@ -142,3 +144,9 @@ async def test_assistant_saves_through_the_brief_and_hears_the_next_question(db)
     assert out.content["next_question"]["field"] == "home"  # still unanswered; school is behind us
     assert tools.ALL_TOOLS["not_sure_yet"].family
     assert "not_sure_yet" not in {t.name for t in tools.CAMP_TOOLS}
+
+
+def test_real_calendars_set_the_start_of_summer(client) -> None:
+    p = said({}, school="providence")
+    assert p["summer_start"] == "2027-06-18" and p["summer_end"] == "2027-08-31"
+    assert "Providence Public Schools" in client.get("/api/v1/schools").json()

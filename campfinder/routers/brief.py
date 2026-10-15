@@ -11,7 +11,8 @@ from fastapi import APIRouter, Depends, Query
 from campfinder.auth import authorize_family, optional_user
 from campfinder.models.brief import Brief, BriefField, BriefUpdate
 from campfinder.services import summer_brief
-from campfinder.services.summer_brief import Context
+from campfinder.services.school_calendars import school_names
+from campfinder.services.summer_brief import Context, summer_year
 
 router = APIRouter()
 
@@ -60,3 +61,9 @@ async def not_sure(
     """Moves on with a default, and asks again only when the answer matters (registration season, prices, suggestions)."""
     authorize_family(family_id, user_id)
     return _brief(summer_brief.skip(str(family_id), field, not_sure=True), context)
+
+
+@router.get("/schools", response_model=list[str], summary="Schools whose summer dates we know")
+async def schools() -> list[str]:
+    """For the "Which school?" chips. Any other school still works; its dates are guessed."""
+    return school_names(summer_year(date.today()))
