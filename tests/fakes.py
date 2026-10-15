@@ -30,6 +30,7 @@ DEFAULTS: dict[str, dict[str, Any]] = {
         "notes": None, "child_name": None, "due_time": None, "assignee_id": None, "status": "open", "event_id": None,
         "camp_id": None, "checklist": [], "created_by": None, "completed_by": None, "completed_at": None,
     },
+    "plan_picks": {"session_id": None, "state": "idea", "note": None, "added_by": None},
     "family_audit_log": {"via": "app", "target_type": None, "target_id": None, "detail": {}},
     "agent_conversations": {"messages": []},
     "reminder_sends": {"task_count": 0},
@@ -51,6 +52,7 @@ UNIQUE = {
     "registration_alerts": [("camp_id", "session_id", "email"), ("token",)],
     "registration_alert_sends": [("alert_id", "kind", "opens_at")],
     "family_members": [("family_id", "email")],
+    "plan_picks": [("family_id", "child_name", "week_of", "camp_id")],
     "reminder_sends": [("member_id", "kind", "period")],
 }
 SERIAL = {"family_audit_log", "reminder_sends", "kit_share_events", "activity_demand", "registration_reminder_sends",

@@ -229,6 +229,12 @@ export function AgentBlock({ data, familyId }: { data: UIData; familyId?: string
     case 'coverage':    return <CoverageView data={data} />
     case 'calendar':    return <CalendarList events={data.events} />
     case 'profile':     return null // reflected in the family panel
+    case 'board':
+      return (
+        <p className="text-small text-muted">
+          {data.planned} of {data.weeks_needed} weeks planned. <a href="/summer" className="text-ink underline underline-offset-4">See your Summer Board</a>
+        </p>
+      )
     case 'registrations':
     case 'register_checklist':
     case 'registration_package': return <BookingBlock data={data} />

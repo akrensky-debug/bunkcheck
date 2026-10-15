@@ -128,6 +128,7 @@ export type UIData =
   | ({ type: 'coverage' } & Coverage)
   | { type: 'calendar'; events: FamilyEvent[] }
   | { type: 'profile'; profile: FamilyProfile }
+  | { type: 'board'; planned: number; weeks_needed: number }
   | BookingUIData
   | { type: 'activities'; activities: ActivityCard[] }
   | { type: 'activity_detail'; activity: ActivityProgram }

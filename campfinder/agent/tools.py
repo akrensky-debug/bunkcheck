@@ -14,7 +14,7 @@ from __future__ import annotations
 
 import json
 from dataclasses import dataclass
-from datetime import date, datetime, timezone
+from datetime import date
 from typing import Any, Awaitable, Callable, Literal
 from uuid import UUID
 
@@ -23,6 +23,7 @@ from pydantic import BaseModel, Field, ValidationError
 
 from campfinder.activity.sources import find_sessions
 from campfinder.database import get_supabase
+from campfinder.models.brief import BriefField, BriefUpdate, Kid  # noqa: F401  (Kid: tool schemas)
 from campfinder.models.compare import CompareRequest
 from campfinder.models.coverage import AwayRange, WorkBlock
 from campfinder.models.plan import PlanRequest, PlanSessionInput
@@ -33,6 +34,8 @@ from campfinder.services.coverage import check_coverage
 from campfinder.services.errors import ServiceError
 from campfinder.services.plan import build_summer_plan
 from campfinder.services.search import run_search
+from campfinder.models.board import PickCreate
+from campfinder.services import summer_board, summer_brief
 
 
 class ToolError(Exception):
@@ -128,40 +131,22 @@ class BuildSummerPlanInput(BaseModel):
     summer_end: date
 
 
-class Kid(BaseModel):
-    name: str | None = Field(default=None, description="First name or nickname only.")
-    age: int | None = Field(default=None, ge=0, le=19)
-    interests: list[str] = Field(default_factory=list)
-    notes: str | None = Field(
-        default=None,
-        description="Friends, likes, dislikes, schedule needs. Never medical, allergy, medication or "
-        "dietary details: those belong in the encrypted info kit, not here.",
-    )
+# Kid and the profile fields live with the summer brief (campfinder/models/brief.py).
+UpdateFamilyProfileInput = BriefUpdate
 
 
-class UpdateFamilyProfileInput(BaseModel):
-    home_location: str | None = Field(default=None, description="'City, ST'.")
-    kids: list[Kid] | None = Field(
-        default=None, description="The full list of kids. Replaces the stored list, so include everyone."
-    )
-    summer_start: date | None = None
-    summer_end: date | None = None
-    weekly_budget: float | None = Field(default=None, ge=0, description="Per child, per week, in USD.")
-    needs: list[str] | None = Field(
-        default=None,
-        description="Household logistics, e.g. 'extended care until 5:30', 'no driving on Tuesdays'. Replaces the stored list.",
-    )
-    notes: str | None = Field(default=None, description="Anything else worth remembering. Replaces stored notes.")
-    work_schedule: list[WorkBlock] | None = Field(
-        default=None,
-        description="When each parent works over the summer (days and hours), used to find the hours "
-        "that need camp or care. Replaces the stored list, so include every parent.",
-    )
-    away: list[AwayRange] | None = Field(
-        default=None,
-        description="Vacations, travel and weeks a kid spends elsewhere (e.g. with grandparents). "
-        "Replaces the stored list, so include every trip.",
-    )
+class AddToBoardInput(BaseModel):
+    child_name: str = Field(description="The kid's first name, as saved in the profile.")
+    week_of: date = Field(description="Any day in the week the camp is for.")
+    camp_id: UUID
+    session_id: UUID | None = None
+    chosen: bool = Field(default=False, description="True only when the parent picked this camp for the week; "
+                         "otherwise it goes on the week's shortlist (up to 3).")
+
+
+class NotSureInput(BaseModel):
+    field: BriefField = Field(description="The question the parent can't answer yet.")
+    skip: bool = Field(default=False, description="True for 'skip for now'; false for 'not sure yet', which asks again when it matters.")
 
 
 class CalendarEventInput(BaseModel):
@@ -320,14 +305,39 @@ def list_family_events(family_id: str) -> list[dict[str, Any]]:
     )
 
 
+def _profile_output(profile: dict[str, Any]) -> ToolOutput:
+    q = summer_brief.next_question(profile, date.today())
+    content: dict[str, Any] = {"saved": True, "profile": profile}
+    if q:
+        content["next_question"] = q.model_dump(exclude_none=True)
+    return ToolOutput(content=content, ui={"type": "profile", "profile": profile})
+
+
 async def update_family_profile_tool(inp: UpdateFamilyProfileInput, family_id: str) -> ToolOutput:
-    profile = load_family_profile(family_id)
-    profile.update(inp.model_dump(mode="json", exclude_unset=True))
-    get_supabase().table("families").update({
-        "profile": profile,
-        "updated_at": datetime.now(timezone.utc).isoformat(),
-    }).eq("id", family_id).execute()
-    return ToolOutput(content={"saved": True, "profile": profile}, ui={"type": "profile", "profile": profile})
+    load_family_profile(family_id)  # a missing family is a ToolError
+    return _profile_output(summer_brief.update_brief(family_id, inp, "said"))
+
+
+async def add_to_board_tool(inp: AddToBoardInput, family_id: str) -> ToolOutput:
+    try:
+        summer_board.add_pick(family_id, PickCreate(
+            child_name=inp.child_name, week_of=inp.week_of, camp_id=inp.camp_id, session_id=inp.session_id,
+            state="chosen" if inp.chosen else "idea",
+        ))
+    except ServiceError as e:
+        raise ToolError(e.detail) from e
+    board = await summer_board.build_board(family_id)
+    content = {
+        "planned": f"{board.planned} of {board.weeks_needed} weeks planned",
+        "start_with": board.start_with.isoformat() if board.start_with else None,
+        "cost": board.cost,
+    }
+    return ToolOutput(content=content, ui={"type": "board", "planned": board.planned, "weeks_needed": board.weeks_needed})
+
+
+async def not_sure_tool(inp: NotSureInput, family_id: str) -> ToolOutput:
+    load_family_profile(family_id)
+    return _profile_output(summer_brief.skip(family_id, inp.field, not_sure=not inp.skip))
 
 
 async def check_coverage_tool(inp: CheckCoverageInput, family_id: str) -> ToolOutput:
@@ -450,6 +460,21 @@ FAMILY_TOOLS: list[ToolSpec] = [
         "location, kids (first name, age, interests, needs), summer dates, budget, logistics. "
         "Save as soon as the parent shares something durable. Only fields you pass are changed.",
         UpdateFamilyProfileInput, update_family_profile_tool, family=True, status="Saving to your family profile",
+    ),
+    ToolSpec(
+        "add_to_summer_board",
+        "Put a camp on the family's Summer Board for one kid and one week: on the week's shortlist, or as "
+        "the week's pick when the parent chose it. The parent sees the board on the Summer page. Use camp "
+        "and session ids from search or coverage results only. Choosing is not registering.",
+        AddToBoardInput, add_to_board_tool, family=True, status="Adding to your Summer Board",
+    ),
+    ToolSpec(
+        "not_sure_yet",
+        "The parent doesn't know an answer yet, or wants to skip a question (kids, school, sorted_weeks, "
+        "care_hours, interests, weekly_budget, max_drive_minutes, sleepaway, booked_elsewhere). Saves a "
+        "default marked as a guess where one helps, and moves on. 'Not sure' comes back when it matters; "
+        "'skip' waits in the Finish later list.",
+        NotSureInput, not_sure_tool, family=True, status="Noting that for later",
     ),
     ToolSpec(
         "add_to_family_calendar",
