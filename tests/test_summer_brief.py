@@ -27,6 +27,8 @@ def test_core_questions_come_in_order_constraints_first() -> None:
     p: dict[str, Any] = {}
     assert ask(p) == "kids"
     p = said(p, kids=[{"name": "Maya", "age": 7}, {"name": "Leo", "age": 10}])
+    assert ask(p) == "home"
+    p = said(p, home_location="Providence, RI")
     assert ask(p) == "school"
     p = said(p, summer_start="2027-06-18", summer_end="2027-08-31")
     assert ask(p) == "sorted_weeks"
@@ -46,7 +48,7 @@ def test_core_questions_come_in_order_constraints_first() -> None:
 
 
 def test_skip_moves_on_and_waits_in_finish_later() -> None:
-    p = said({}, kids=[{"name": "Maya", "age": 7}])
+    p = said({}, kids=[{"name": "Maya", "age": 7}], home_location="Cranston, RI")
     p = sb.apply_skip(p, "school", OCT)
     assert ask(p) == "sorted_weeks"
     # The board still gets dates to work with, marked as a guess.
@@ -62,8 +64,8 @@ def test_skip_moves_on_and_waits_in_finish_later() -> None:
 
 
 def test_not_sure_comes_back_when_it_matters() -> None:
-    p = said({}, kids=[{"name": "Maya", "age": 7, "interests": ["art"]}], summer_start="2027-06-21",
-             summer_end="2027-08-27", away=[])
+    p = said({}, kids=[{"name": "Maya", "age": 7, "interests": ["art"]}], home_location="Providence, RI",
+             summer_start="2027-06-21", summer_end="2027-08-27", away=[])
     p = sb.apply_skip(p, "care_hours", OCT, not_sure=True)
     assert p["work_schedule"] == sb.GUESS_WORK  # 8 to 6, marked as a guess
     assert ask(p) is None
@@ -103,7 +105,7 @@ def test_school_dates_are_looked_up_or_guessed(monkeypatch) -> None:
 
 
 def test_profiles_from_before_the_brief_count_as_answered() -> None:
-    legacy = {"kids": [{"name": "Maya", "age": 8}], "summer_start": "2027-06-21", "summer_end": "2027-08-13"}
+    legacy = {"kids": [{"name": "Maya", "age": 8}], "home_location": "Providence, RI", "summer_start": "2027-06-21", "summer_end": "2027-08-13"}
     assert ask(legacy) == "sorted_weeks"
 
 
@@ -134,9 +136,9 @@ async def test_assistant_saves_through_the_brief_and_hears_the_next_question(db)
     db.table("families").insert({"id": fam, "profile": {}}).execute()
     out = await tools.run_tool("update_family_profile", {"kids": [{"name": "Ada", "age": 6}]}, family_id=fam)
     assert out.content["profile"]["brief"]["facts"]["kids"]["source"] == "said"
-    assert out.content["next_question"]["field"] == "school"
+    assert out.content["next_question"]["field"] == "home"
     out = await tools.run_tool("not_sure_yet", {"field": "school"}, family_id=fam)
     assert out.content["profile"]["summer_start"].endswith("-06-18")
-    assert out.content["next_question"]["field"] == "sorted_weeks"
+    assert out.content["next_question"]["field"] == "home"  # still unanswered; school is behind us
     assert tools.ALL_TOOLS["not_sure_yet"].family
     assert "not_sure_yet" not in {t.name for t in tools.CAMP_TOOLS}

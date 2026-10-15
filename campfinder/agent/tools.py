@@ -34,7 +34,8 @@ from campfinder.services.coverage import check_coverage
 from campfinder.services.errors import ServiceError
 from campfinder.services.plan import build_summer_plan
 from campfinder.services.search import run_search
-from campfinder.services import summer_brief
+from campfinder.models.board import PickCreate
+from campfinder.services import summer_board, summer_brief
 
 
 class ToolError(Exception):
@@ -132,6 +133,15 @@ class BuildSummerPlanInput(BaseModel):
 
 # Kid and the profile fields live with the summer brief (campfinder/models/brief.py).
 UpdateFamilyProfileInput = BriefUpdate
+
+
+class AddToBoardInput(BaseModel):
+    child_name: str = Field(description="The kid's first name, as saved in the profile.")
+    week_of: date = Field(description="Any day in the week the camp is for.")
+    camp_id: UUID
+    session_id: UUID | None = None
+    chosen: bool = Field(default=False, description="True only when the parent picked this camp for the week; "
+                         "otherwise it goes on the week's shortlist (up to 3).")
 
 
 class NotSureInput(BaseModel):
@@ -308,6 +318,23 @@ async def update_family_profile_tool(inp: UpdateFamilyProfileInput, family_id: s
     return _profile_output(summer_brief.update_brief(family_id, inp, "said"))
 
 
+async def add_to_board_tool(inp: AddToBoardInput, family_id: str) -> ToolOutput:
+    try:
+        summer_board.add_pick(family_id, PickCreate(
+            child_name=inp.child_name, week_of=inp.week_of, camp_id=inp.camp_id, session_id=inp.session_id,
+            state="chosen" if inp.chosen else "idea",
+        ))
+    except ServiceError as e:
+        raise ToolError(e.detail) from e
+    board = await summer_board.build_board(family_id)
+    content = {
+        "planned": f"{board.planned} of {board.weeks_needed} weeks planned",
+        "start_with": board.start_with.isoformat() if board.start_with else None,
+        "cost": board.cost,
+    }
+    return ToolOutput(content=content, ui={"type": "board", "planned": board.planned, "weeks_needed": board.weeks_needed})
+
+
 async def not_sure_tool(inp: NotSureInput, family_id: str) -> ToolOutput:
     load_family_profile(family_id)
     return _profile_output(summer_brief.skip(family_id, inp.field, not_sure=not inp.skip))
@@ -433,6 +460,13 @@ FAMILY_TOOLS: list[ToolSpec] = [
         "location, kids (first name, age, interests, needs), summer dates, budget, logistics. "
         "Save as soon as the parent shares something durable. Only fields you pass are changed.",
         UpdateFamilyProfileInput, update_family_profile_tool, family=True, status="Saving to your family profile",
+    ),
+    ToolSpec(
+        "add_to_summer_board",
+        "Put a camp on the family's Summer Board for one kid and one week: on the week's shortlist, or as "
+        "the week's pick when the parent chose it. The parent sees the board on the Summer page. Use camp "
+        "and session ids from search or coverage results only. Choosing is not registering.",
+        AddToBoardInput, add_to_board_tool, family=True, status="Adding to your Summer Board",
     ),
     ToolSpec(
         "not_sure_yet",

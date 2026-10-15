@@ -73,6 +73,7 @@ def export_family(family: dict[str, Any]) -> dict[str, Any]:
         "family": _clean([family])[0] | {"account_email": owner_email},
         "info_kit": load_kit(fid).model_dump(mode="json") if has_kit else None,
         "calendar_events": by_family("family_events", "start_date"),
+        "summer_board_picks": by_family("plan_picks", "created_at"),
         "conversations": conversations,
         "household": {
             "members": members,

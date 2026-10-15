@@ -10,7 +10,7 @@ from pydantic import BaseModel, Field
 from campfinder.models.coverage import AwayRange, WorkBlock
 
 BriefField = Literal[
-    "kids", "school", "sorted_weeks", "care_hours", "interests",
+    "kids", "home", "school", "sorted_weeks", "care_hours", "interests",
     "weekly_budget", "max_drive_minutes", "sleepaway", "booked_elsewhere",
 ]
 Source = Literal["said", "looked_up", "guessed"]

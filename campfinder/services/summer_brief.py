@@ -29,21 +29,21 @@ from campfinder.services.school_calendars import find_school
 Context = Literal["suggestions", "prices"]
 
 # Asked in this order, one at a time. Constraints come before content.
-CORE: tuple[BriefField, ...] = ("kids", "school", "sorted_weeks", "care_hours", "interests")
+CORE: tuple[BriefField, ...] = ("kids", "home", "school", "sorted_weeks", "care_hours", "interests")
 # Asked only once the core is done, and only when they matter.
 LATER: tuple[BriefField, ...] = ("weekly_budget", "max_drive_minutes", "sleepaway", "booked_elsewhere")
 
 # A "not sure yet" comes back only when this holds: the season (registration, January to March)
 # or something on screen (suggestions or prices).
 RETURNS_WHEN: dict[BriefField, str] = {
-    "kids": "suggestions", "school": "season", "sorted_weeks": "season", "care_hours": "suggestions",
+    "kids": "suggestions", "home": "suggestions", "school": "season", "sorted_weeks": "season", "care_hours": "suggestions",
     "interests": "suggestions", "weekly_budget": "prices", "max_drive_minutes": "suggestions",
     "sleepaway": "season", "booked_elsewhere": "season",
 }
 
 # Profile keys and the brief field they answer.
 KEY_FIELD: dict[str, BriefField] = {
-    "school": "school", "summer_start": "school", "summer_end": "school", "away": "sorted_weeks",
+    "home_location": "home", "school": "school", "summer_start": "school", "summer_end": "school", "away": "sorted_weeks",
     "work_schedule": "care_hours", "weekly_budget": "weekly_budget", "max_drive_minutes": "max_drive_minutes",
     "sleepaway": "sleepaway", "booked_elsewhere": "booked_elsewhere",
 }
@@ -89,6 +89,8 @@ def answered(profile: dict[str, Any], field: BriefField) -> bool:
         return any(k.get("age") is not None for k in kids)
     if field == "school":
         return bool(profile.get("summer_start") and profile.get("summer_end"))
+    if field == "home":
+        return bool(profile.get("home_location"))
     if field == "sorted_weeks":
         return "away" in profile
     if field == "care_hours":
@@ -188,6 +190,7 @@ def _question(profile: dict[str, Any], field: BriefField, returning: bool = Fals
     older = [k for k in kids if (k.get("age") or 0) >= 9]
     text: dict[BriefField, tuple[str, str | None]] = {
         "kids": ("Who's going to camp?", "First names and ages."),
+        "home": ("What town are you in?", "So we suggest camps near you."),
         "school": ("Which school do they go to?", "We'll use it to find the last day of school."),
         "sorted_weeks": ("Any weeks already sorted?", "Vacations, time with family, or a camp you've already booked."),
         "care_hours": ("Roughly when do you need care?", "For example: both of us work about 8 to 6."),
@@ -281,6 +284,8 @@ def chips(profile: dict[str, Any]) -> list[Chip]:
             name = k.get("name") or "Your kid"
             out.append(Chip(field="kids", label=f"{name}, {k['age']}" if k.get("age") is not None else name,
                             source=source("kids")))
+    if known("home") and profile.get("home_location"):
+        out.append(Chip(field="home", label=profile["home_location"], source=source("home")))
     if known("school") and profile.get("summer_start") and profile.get("summer_end"):
         dates = f"{_day(profile['summer_start'])} to {_day(profile['summer_end'])}"
         label = f"{profile['school']} · {dates}" if profile.get("school") else f"Summer {dates}"

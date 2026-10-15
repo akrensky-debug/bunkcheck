@@ -261,14 +261,18 @@ def week_options(
     return [o for _, _, o in found[:limit]]
 
 
-async def check_coverage(family_id: str, with_options: bool = True) -> CoverageResponse:
-    """Load a family's profile and calendar, compute coverage, and add options for open weeks."""
+async def check_coverage(
+    family_id: str, with_options: bool = True, extra_events: list[dict[str, Any]] | None = None,
+) -> CoverageResponse:
+    """Load a family's profile and calendar, compute coverage, and add options for open weeks.
+    `extra_events` count as if they were on the calendar (the Summer Board's chosen picks)."""
     client = get_supabase()
     rows = client.table("families").select("profile").eq("id", family_id).execute().data
     if not rows:
         raise NotFound("Family not found")
     profile = rows[0].get("profile") or {}
     events = client.table("family_events").select("*").eq("family_id", family_id).execute().data or []
+    events = events + (extra_events or [])
     camp_ids = list({str(e["camp_id"]) for e in events if e.get("camp_id")})
     camps = {
         str(c["id"]): c for c in (
