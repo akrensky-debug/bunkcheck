@@ -73,7 +73,7 @@ def test_not_sure_comes_back_when_it_matters() -> None:
     assert chip.label == "Care about 8 to 6" and chip.source == "guessed"
     # Answering it clears the guess and the Finish later entry.
     p = said(p, work_schedule=[{"parent": "Sam", "days": ["Mon", "Tue", "Wed", "Thu", "Fri"], "start": "8:30", "end": "17:30"}])
-    assert ask(p, context=("suggestions",)) is None
+    assert ask(p, context=("suggestions",)) == "max_drive_minutes"  # the next thing that matters, not care hours
     assert sb.build_brief(p, OCT).finish_later == []
     assert next(c for c in sb.chips(p) if c.field == "care_hours").label == "Care about 8:30 to 5:30"
 
