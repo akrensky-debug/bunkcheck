@@ -109,27 +109,36 @@ Later questions, asked only when they matter:
 Follows "Where code goes" in CLAUDE.md: logic in `campfinder/services/`, routers and agent
 tools only call it.
 
-### `campfinder/services/summer_brief.py`
+### `campfinder/services/summer_brief.py` (built)
 
 ```
-get_brief(family_id) -> Brief
-update_brief(family_id, facts, source) -> Brief    # source: said | looked_up | guessed
-defer(family_id, field) -> Brief                    # "Not sure yet"
-next_question(brief, today) -> Question | None
+get_brief(family_id, today, context) -> Brief      # chips, next_question, finish_later
+update_brief(family_id, facts, source) -> profile   # source: said | looked_up | guessed
+skip(family_id, field, not_sure=False) -> profile   # "Skip for now" / "Not sure yet"
+next_question(profile, today, context) -> Question | None
 ```
 
 - The brief is `families.profile` (kids, `summer_start`/`summer_end`, `work_schedule`,
-  `away`, `weekly_budget`, `needs`) plus two new keys: `school` and `facts`, where `facts`
-  maps a field name to `{source, at}` and deferred fields to `{deferred: true, at}`. No new
-  table.
-- `next_question` walks the table above in order, skips anything answered or deferred, and
-  returns a deferred question only when its trigger in "Later questions" holds.
-- The existing `update_family_profile` agent tool calls `update_brief(..., source="said")`.
+  `away`, `weekly_budget`, `needs`) plus `school`, `max_drive_minutes`, `sleepaway`,
+  `booked_elsewhere` and one `brief` key: `facts` (field → `{source, at}`), `skipped` and
+  `not_sure` (field → when). No new table. Profiles saved before the brief count what they
+  already hold as said.
+- `next_question` asks the core questions in order, then a "not sure" core question whose
+  moment has come, then the later questions whose trigger holds. `context` says what the
+  parent is looking at (`suggestions`, `prices`); registration season is January to March.
+  Skipped questions never come back on their own; they wait in `finish_later`.
+- Skipping or "not sure" on the school or care hours fills a default (June 18 to August 31;
+  weekdays 8 to 6) marked as a guess, so the board always has something to show.
+- Endpoints (owner and co-parents): `GET /families/{id}/brief`, `PATCH /families/{id}/brief`,
+  `POST /families/{id}/brief/{field}/skip`, `POST /families/{id}/brief/{field}/not-sure`.
+- The agent's `update_family_profile` saves through `update_brief` and gets the next question
+  back; `not_sure_yet` handles "skip" and "not sure" in chat.
 
 ### School calendars
 
-- A small checked-in file (`campfinder/data/school_calendars.json`) with the 2027 last day and
-  2027 first day for each school, its source URL and the date it was checked.
+- `campfinder/services/school_calendars.py` (built, empty): the 2027 last day and first day for
+  each school, its source URL and the date it was checked. A school with only a last day gets
+  a guessed end of summer.
 - About 15 to start, entered and checked by hand: Providence Public Schools, Cranston, East
   Providence, Pawtucket, Warwick, Barrington, North Providence, Johnston, and the larger
   private and charter schools (Wheeler, Moses Brown, Lincoln, Gordon, Providence Country Day,

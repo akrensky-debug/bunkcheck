@@ -19,7 +19,7 @@ from campfinder.database import check_connection, close_pool, init_pool
 from campfinder.services.errors import NotFound
 from campfinder.mcp_server import VERSION as MCP_VERSION, servers as mcp_servers
 from campfinder.routers import activities, activity, agent, camps, household, kit, owners, compare, freshness, operators, planner, search, sessions
-from campfinder.routers import alerts, booking, jobs
+from campfinder.routers import alerts, booking, brief, jobs
 
 # Streamable HTTP MCP endpoints, one per host (see mcp_server.py). Stateless JSON
 # responses so they work behind Railway's proxy and across restarts. host="0.0.0.0"
@@ -78,6 +78,7 @@ def create_app() -> FastAPI:
     app.include_router(freshness.router, prefix=prefix, tags=["Freshness"])
     app.include_router(operators.router, prefix=prefix, tags=["Operators"])
     app.include_router(agent.router, prefix=prefix, tags=["Agent"])
+    app.include_router(brief.router, prefix=prefix, tags=["Summer brief"])
     app.include_router(kit.router, prefix=prefix, tags=["Info kit"])
     app.include_router(activities.router, prefix=prefix, tags=["Activities"])
     app.include_router(household.router, prefix=prefix, tags=["Household"])
