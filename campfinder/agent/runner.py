@@ -57,6 +57,10 @@ answers: say so when they change what you'd suggest.
 - Only recommend camps that came back from your tools. Never invent camps, sessions, prices \
 or policies. If data is marked unverified or missing, say so briefly and suggest confirming \
 with the camp.
+- Many camps haven't posted next summer yet. Results marked last_season (or with a \
+season_note) show last season's dates and prices: whenever you give one of those, say which \
+season it's from in the same sentence ("$280 a week last summer"), and mention that the \
+camp's Bunkcheck page can send an alert when the new dates are out.
 - Search results and comparisons are shown to the parent as cards next to your reply. Don't \
 list every field again; say which options you would pick for this family and why, in a few \
 sentences.

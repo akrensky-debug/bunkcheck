@@ -7,7 +7,7 @@ import { Events, captureAssistantArrival } from '@/lib/analytics'
 import TrustBadge from '@/components/TrustBadge'
 import RegistrationAlert from '@/components/booking/RegistrationAlert'
 import { CAMP_TYPE_LABEL } from '@/components/CampCard'
-import { Button, Container, EmptyState, Heading, Icon, Meta, Section, Skeleton, TRUST, TextLink } from '@/components/ui'
+import { Button, Container, EmptyState, Heading, Icon, Meta, Notice, Section, Skeleton, TRUST, TextLink } from '@/components/ui'
 
 const AVAILABILITY: Record<string, { label: string; cls: string }> = {
   open: { label: 'Open', cls: 'text-checked' },
@@ -112,7 +112,8 @@ export default function CampDetailPage() {
           )}
 
           {camp.sessions && camp.sessions.length > 0 && (
-            <Section title="2027 sessions">
+            <Section title={camp.season_year ? `${camp.season_year} sessions` : 'Sessions'}>
+              {camp.season_note && <Notice className="mb-4">{camp.season_note}</Notice>}
               <ul className="divide-y divide-line border-y border-line">
                 {camp.sessions.map(s => {
                   const avail = AVAILABILITY[s.availability] ?? AVAILABILITY.unknown
@@ -155,7 +156,11 @@ export default function CampDetailPage() {
             <h2 className="mb-2 text-small font-semibold text-ink">Quick facts</h2>
             <dl className="divide-y divide-line border-y border-line">
               {camp.age_min != null && camp.age_max != null && <Fact label="Ages">{camp.age_min}–{camp.age_max}</Fact>}
-              {camp.price_per_week && <Fact label="Price">${Math.round(camp.price_per_week)} a week</Fact>}
+              {camp.price_per_week && (
+                <Fact label="Price">
+                  ${Math.round(camp.price_per_week)} a week{camp.last_season && camp.season_year ? ` in ${camp.season_year}` : ''}
+                </Fact>
+              )}
               {camp.indoor_outdoor && <Fact label="Setting">{sentence(camp.indoor_outdoor)}</Fact>}
               {camp.gender_policy && <Fact label="Gender">{sentence(camp.gender_policy)}</Fact>}
               <Fact label="Transport">{camp.transportation ? 'Yes' : 'No'}</Fact>

@@ -27,7 +27,10 @@ export default function CampCard({ camp }: Props) {
     <ListRow href={`/camps/${camp.slug || camp.id}`} onClick={() => Events.campDetailViewed(camp.id)}>
       <div className="flex items-baseline justify-between gap-4">
         <h3 className="font-display text-h3 text-ink min-w-0">{camp.name}</h3>
-        {camp.price_per_week ? <Price amount={camp.price_per_week} unit="/wk" className="shrink-0" /> : null}
+        {camp.price_per_week ? (
+          <Price amount={camp.price_per_week} unit="/wk" prefix={camp.last_season && camp.season_year ? String(camp.season_year) : undefined}
+            className="shrink-0" />
+        ) : null}
       </div>
       <Meta
         className="mt-1"

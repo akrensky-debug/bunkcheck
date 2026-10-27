@@ -9,6 +9,7 @@ from campfinder.models.compare import CampComparison, CompareRequest, CompareRes
 from campfinder.services.differences import generate_differences
 from campfinder.services.errors import NotFound
 from campfinder.services.geo import geocode_location, haversine_miles
+from campfinder.services.season import is_last_season, planning_year
 
 
 def compare_camps(req: CompareRequest) -> CompareResponse:
@@ -73,6 +74,8 @@ def compare_camps(req: CompareRequest) -> CompareResponse:
             refund_policy_summary=camp.get("refund_policy_summary"),
             primary_categories=list(camp.get("primary_categories") or []),
             distance_miles=distance,
+            season_year=camp.get("season_year"),
+            last_season=is_last_season(camp.get("season_year")),
         ))
 
         diff_camp = dict(camp)
@@ -82,5 +85,18 @@ def compare_camps(req: CompareRequest) -> CompareResponse:
 
     return CompareResponse(
         camps=comparisons,
-        differences=generate_differences(diff_input),
+        differences=season_differences(comparisons) + generate_differences(diff_input),
     )
+
+
+def season_differences(camps: list[CampComparison]) -> list[str]:
+    """Say so first when the prices being compared are from different seasons, or all old."""
+    old = [c for c in camps if c.last_season]
+    if not old:
+        return []
+    if len(old) == len(camps):
+        years = sorted({c.season_year for c in old if c.season_year})
+        return [f"All of these show {' and '.join(map(str, years))} dates and prices; "
+                f"{planning_year()} details aren't posted yet."]
+    return ["Not like for like: " + ", ".join(f"{c.name} shows {c.season_year} dates and prices" for c in old)
+            + f"; the others show {planning_year()}."]

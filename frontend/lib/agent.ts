@@ -64,6 +64,8 @@ export interface Comparison {
     age_min: number | null
     age_max: number | null
     price_per_week: number | null
+    season_year?: number | null
+    last_season?: boolean
     session_count: number
     transportation: boolean
     extended_care: boolean
@@ -122,7 +124,7 @@ export interface Coverage {
 
 export type UIData =
   | { type: 'camps'; camps: CampSearchResult[] }
-  | { type: 'camp_detail'; camp: CampSearchResult & { sessions?: Array<{ id: string; name: string | null; start_date: string; end_date: string; price: number | null }> } }
+  | { type: 'camp_detail'; camp: CampSearchResult & { sessions?: Array<{ id: string; name: string | null; start_date: string; end_date: string; price: number | null }>; season_note?: string | null } }
   | ({ type: 'comparison' } & Comparison)
   | ({ type: 'plan' } & Plan)
   | ({ type: 'coverage' } & Coverage)
