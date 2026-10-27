@@ -2,10 +2,10 @@
   "slug": "camp-ker-anna",
   "name": "Camp Ker-Anna",
   "website_url": "https://www.keranna.org/",
-  "city": null,
+  "city": "Cumberland",
   "state": "RI",
   "zip": null,
-  "description_short": "Camp Ker-Anna is a summer camp in the woods of northern Rhode Island, run with help from volunteers. The homepage does not describe its programs, ages, dates or costs.",
+  "description_short": "A volunteer-run summer camp in the woods of Cumberland in northern Rhode Island, founded in 1937 and now open to all children. The site does not describe its programs, ages, dates or costs.",
   "sources": [
     {
       "url": "https://www.keranna.org/",
@@ -17,10 +17,21 @@
         "description_short"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.keranna.org/contact",
+      "checked": "2026-10-27",
+      "fields": [
+        "email",
+        "street_address",
+        "city"
+      ]
     }
   ],
+  "email": "camp@keranna.org",
+  "street_address": "500 Reservoir Road",
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.keranna.org/",
       "kind": "html",
@@ -55,12 +66,23 @@
       }
     ],
     "errors": [
-      "missing required city",
       "missing required zip",
       "missing required camp_type",
       "missing required season_year",
-      "camp_type must be one of ['day', 'sleepaway', 'specialty']",
-      "city None, RI is not in cities.py"
-    ]
+      "camp_type must be one of ['day', 'sleepaway', 'specialty']"
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.keranna.org/",
+      "changes": [
+        "Contact page gives camp@keranna.org and the address 500 Reservoir Road, Cumberland, RI (new source); set street_address, city, email",
+        "Updated description_short with Cumberland and the 1937 founding from the About Us page"
+      ],
+      "for_andrew": [
+        "ZIP conflict: contact page says 'Cumberland, RI 02816' but the US Census geocoder returns 02864 for 500 Reservoir Rd, Cumberland (02816 is Coventry); zip left null",
+        "No season year, dates, ages, prices or day/overnight info anywhere on the site, so season_year and camp_type stay empty; ask camp@keranna.org"
+      ]
+    }
   }
 }

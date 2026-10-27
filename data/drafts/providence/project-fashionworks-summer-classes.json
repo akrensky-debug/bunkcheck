@@ -4,9 +4,9 @@
   "operator_name": "Project FashionWorks",
   "website_url": "https://projectfashionworks.com/collections/frontpage",
   "email": "elana@projectfashionworks.com",
-  "city": null,
-  "state": null,
-  "zip": null,
+  "city": "Providence",
+  "state": "RI",
+  "zip": "02906",
   "camp_type": "specialty",
   "primary_categories": [
     "arts"
@@ -24,7 +24,7 @@
   "sources": [
     {
       "url": "https://projectfashionworks.com/collections/frontpage",
-      "checked": "2026-10-13",
+      "checked": "2026-10-27",
       "fields": [
         "name",
         "operator_name",
@@ -40,10 +40,30 @@
         "price_max"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://projectfashionworks.com/collections/frontpage/products/tween-fashion-design-class-for-designers-8-12",
+      "checked": "2026-10-27",
+      "fields": [
+        "street_address",
+        "city",
+        "state",
+        "zip"
+      ]
+    },
+    {
+      "url": "https://projectfashionworks.com/pages/faqs",
+      "checked": "2026-10-27",
+      "fields": [
+        "financial_aid"
+      ]
     }
   ],
+  "street_address": "Temple Emanu-El, 99 Taft Ave",
+  "season_year": 2026,
+  "financial_aid": true,
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://projectfashionworks.com/collections/frontpage",
       "kind": "html",
@@ -101,11 +121,20 @@
         "quote": "Availability Sold out"
       }
     ],
-    "errors": [
-      "missing required city",
-      "missing required state",
-      "missing required zip",
-      "missing required season_year"
-    ]
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://projectfashionworks.com/collections/frontpage",
+      "changes": [
+        "Added street_address/city/state/zip (Temple Emanu-El, 99 Taft Ave, Providence, RI 02906) from the class product pages.",
+        "Added financial_aid=true: FAQ says they take part in the PPAC Summer Camp Arts Scholarship Program for ages 11-14.",
+        "Set season_year 2026: product pages give Mon-Fri dates without a year that match 2026 weekdays; (c) 2026."
+      ],
+      "for_andrew": [
+        "Product pages list Tweens July 13-17 and Teens July 20-24, Mon-Fri 10-3, $425, both 'Sold out', with no year. They fit 2026 weekdays; sessions were not added because the year is not stated. Confirm year and add sessions, or wait for 2027.",
+        "price_min/price_max $425 is per one-week class; price_per not set."
+      ]
+    }
   }
 }

@@ -34,6 +34,7 @@
   .price small { color: var(--muted); font-weight: 400; }
   .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
   .chip { font-size: 12px; padding: 2px 8px; border-radius: 999px; background: var(--warn-soft); color: var(--muted); }
+  .season { color: var(--muted); font-size: 12.5px; margin-top: 4px; }
   .chip.ok { background: var(--ok-soft); color: var(--ok); font-weight: 600; }
   .why { color: var(--ink); font-size: 12.5px; margin-top: 8px; display: flex; gap: 6px; align-items: baseline; }
   .why::before { content: ""; flex: none; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 2px var(--brand-soft); transform: translateY(-1px); }
@@ -89,12 +90,17 @@
     if (c.financial_aid) chips.push(`<span class="chip">Financial aid</span>`);
     const where = [c.city && c.state ? `${c.city}, ${c.state}` : "", c.distance_miles != null ? `${c.distance_miles} mi` : ""].filter(Boolean).join(" · ");
     const price = session && session.price != null ? session.price : c.price_per_week;
+    // Last season's dates and prices are still useful, but never shown as this season's.
+    const oldYear = session ? (session.last_season ? session.start_date.slice(0, 4) : null)
+                            : (c.last_season ? c.season_year : null);
+    const season = oldYear ? `<div class="season">${esc(oldYear)} ${session ? "dates and price" : "price"}. New season not posted yet.</div>` : "";
     return `<div class="card">
       <div class="row">
         <div><div class="name">${esc(c.name)}</div><div class="meta">${esc(where)}</div></div>
         ${price != null ? `<div class="price">$${Math.round(price)}<small>${session ? "" : "/wk"}</small></div>` : ""}
       </div>
       ${session ? `<div class="dates">${day(session.start_date)} – ${day(session.end_date)}${session.availability === "limited" || session.availability === "waitlist" ? " · " + esc(session.availability) : ""}</div>` : ""}
+      ${season}
       <div class="chips">${chips.join("")}</div>
       ${c.match_reasons && c.match_reasons.length ? `<div class="why">${esc(c.match_reasons.slice(0, 2).join(" · "))}</div>` : ""}
       <button class="btn" data-url="${esc(c.url)}">Details and request info →</button>

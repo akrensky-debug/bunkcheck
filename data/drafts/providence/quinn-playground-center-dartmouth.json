@@ -10,7 +10,7 @@
   "zip": null,
   "camp_type": "day",
   "primary_categories": [
-    "arts"
+    "general"
   ],
   "age_min": 6,
   "age_max": 12,
@@ -86,7 +86,7 @@
   "sources": [
     {
       "url": "https://www.dartmouthma.gov/m/newsflash/Home/Detail/693",
-      "checked": "2026-10-13",
+      "checked": "2026-10-27",
       "fields": [
         "name",
         "operator_name",
@@ -96,7 +96,6 @@
         "city",
         "state",
         "camp_type",
-        "primary_categories",
         "activities",
         "age_min",
         "age_max",
@@ -104,13 +103,19 @@
         "price_per_week",
         "price_per",
         "extended_care",
-        "sessions"
+        "sessions",
+        "primary_categories",
+        "secondary_categories"
       ],
       "note": "Drafted by the listing tool from this page"
     }
   ],
+  "secondary_categories": [
+    "arts",
+    "outdoor"
+  ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.dartmouthma.gov/m/newsflash/Home/Detail/693",
       "kind": "html",
@@ -153,6 +158,20 @@
     ],
     "errors": [
       "missing required zip"
-    ]
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.dartmouthma.gov/m/newsflash/Home/Detail/693",
+      "changes": [
+        "primary_categories [arts] -> [general], with arts/outdoor as secondary: it is an open-play playground program."
+      ],
+      "for_andrew": [
+        "ZIP still missing: the news release gives no address for the Quinn Playground Center (only Town Hall, 400 Slocum Rd). Need the program's street address/ZIP (Dartmouth has more than one ZIP).",
+        "Sessions are 8 weeks split from the range 'June 29-August 21, 2026'; the page does not list weeks or holiday closures.",
+        "Before/after care is '$40 per child' with no unit (week/day/summer).",
+        "Dartmouth, MA is about 30 miles from Providence; at the edge of the area."
+      ]
+    }
   }
 }

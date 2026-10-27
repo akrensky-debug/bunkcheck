@@ -150,7 +150,11 @@ function WeekCell({ kid, cell, showWeek, busy, openCell, setOpenCell, onAdd, onC
                     <TextLink href={`/camps/${p.camp_id}`}>{p.name}</TextLink>
                     {p.state === 'chosen' && <span className="font-normal text-muted"> · picked</span>}
                   </Text>
-                  <Meta parts={[p.city, p.price_per_week != null ? `${money(p.price_per_week)}/wk` : null]} />
+                  <Meta parts={[
+                    p.city,
+                    p.price_per_week != null ? `${money(p.price_per_week)}/wk` : null,
+                    p.last_season ? 'price from last summer' : null,
+                  ]} />
                   <div className="flex gap-4">
                     {p.state !== 'chosen' && <Button variant="link" size="sm" disabled={busy} onClick={() => onChoose(p)}>Pick this one</Button>}
                     <Button variant="danger" size="sm" disabled={busy} onClick={() => onRemove(p)}>Remove</Button>

@@ -68,6 +68,7 @@ function CampDetailCard({ camp }: { camp: Extract<UIData, { type: 'camp_detail' 
             parts={camp.sessions.slice(0, 8).map(s => `${fmtRange(s.start_date, s.end_date)}${s.price ? ` ($${Math.round(s.price)})` : ''}`)}
           />
         )}
+        {camp.season_note && <p className="mt-1 text-small text-muted">{camp.season_note}</p>}
         <div className="mt-3"><TrustBadge status={camp.verification_status} aca={camp.aca_accredited} /></div>
       </ListRow>
     </List>
@@ -78,7 +79,7 @@ function ComparisonView({ data }: { data: Comparison }) {
   const rows: Array<[string, (c: Comparison['camps'][number]) => string]> = [
     ['Location', c => `${c.city}, ${c.state}${c.distance_miles != null ? ` · ${c.distance_miles} mi` : ''}`],
     ['Ages', c => (c.age_min != null && c.age_max != null ? `${c.age_min}–${c.age_max}` : '—')],
-    ['Per week', c => (c.price_per_week ? `$${Math.round(c.price_per_week)}` : '—')],
+    ['Per week', c => (c.price_per_week ? `$${Math.round(c.price_per_week)}${c.last_season && c.season_year ? ` (${c.season_year})` : ''}` : '—')],
     ['Sessions', c => String(c.session_count)],
     ['Extended care', c => (c.extended_care ? 'Yes' : 'No')],
     ['Transport', c => (c.transportation ? 'Yes' : 'No')],

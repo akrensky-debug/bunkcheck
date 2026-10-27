@@ -23,7 +23,6 @@
     "Arts & crafts"
   ],
   "refund_policy_summary": "A $25 non-refundable deposit is charged per camp week at registration, and the rest of the tuition is charged on June 1. No credits or refunds after June 1. You can switch weeks only if there is space.",
-  "special_needs_notes": "Kinder campers must be fully potty-trained.",
   "season_year": 2026,
   "sessions": [
     {
@@ -196,14 +195,13 @@
         "age_max",
         "description_short",
         "refund_policy_summary",
-        "special_needs_notes",
         "sessions"
       ],
       "note": "Drafted by the listing tool from this page"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "http://www.ebgym.com/summer-camp",
       "kind": "html",
@@ -238,6 +236,17 @@
         "quote": "Kinder Campers must be 4.5-5.5 years old"
       }
     ],
-    "errors": []
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "http://www.ebgym.com/summer-camp",
+      "changes": [
+        "Removed special_needs_notes: \"must be fully potty-trained\" is an enrollment requirement, not a special-needs accommodation"
+      ],
+      "for_andrew": [
+        "Half/full-day camps are girls only (6-12); Kinder Camp is co-ed 4.5-5.5; gender_policy left unset. No prices on the page"
+      ]
+    }
   }
 }

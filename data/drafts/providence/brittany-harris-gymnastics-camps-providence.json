@@ -3,30 +3,21 @@
   "name": "Brittany Harris Gymnastics Camps",
   "operator_name": "Brown University Women's Gymnastics coaching staff",
   "website_url": "https://www.brittanyharrisgymnasticscamps.com/",
-  "registration_url": "https://register.ryzer.com/camp.cfm?sport=16&id=338479",
-  "city": "Providence",
+  "registration_url": null,
+  "city": "Lincoln",
   "state": "RI",
-  "zip": null,
+  "zip": "02865",
   "camp_type": "specialty",
   "primary_categories": [
     "sports"
   ],
-  "description_short": "Gymnastics camps and clinics in Providence, Rhode Island, run by the Brown University Women's Gymnastics coaching staff. The site lists July and August summer camps and a high-performance clinic.",
+  "description_short": "Short commuter gymnastics camps for girls ages 7-18 (beginner to elite), run by the Brown University Women's Gymnastics coaching staff and held at Ocean State School of Gymnastics in Lincoln, RI. Gymnasts get skill instruction from the coaches and current Brown gymnasts.",
   "activities": [
     "Gymnastics"
   ],
-  "price_min": 244,
-  "price_max": 244,
+  "price_min": 323,
+  "price_max": 419,
   "season_year": 2026,
-  "sessions": [
-    {
-      "name": "November Bears Gymnastics High Performance Clinic",
-      "start_date": "2026-11-01",
-      "end_date": "2026-11-01",
-      "price": 244,
-      "availability": "unknown"
-    }
-  ],
   "sources": [
     {
       "url": "https://www.brittanyharrisgymnasticscamps.com/",
@@ -35,22 +26,62 @@
         "name",
         "operator_name",
         "website_url",
-        "registration_url",
-        "city",
-        "state",
         "camp_type",
         "primary_categories",
-        "activities",
-        "description_short",
-        "price_min",
-        "price_max",
-        "sessions"
+        "activities"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.brittanyharrisgymnasticscamps.com/july-bears-gymnastics-summer.cfm",
+      "checked": "2026-10-27",
+      "fields": [
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "email",
+        "age_min",
+        "age_max",
+        "gender_policy",
+        "price_min",
+        "refund_policy_summary",
+        "description_short",
+        "sessions"
+      ]
+    },
+    {
+      "url": "https://www.brittanyharrisgymnasticscamps.com/august-bears-gymnastics-summer.cfm",
+      "checked": "2026-10-27",
+      "fields": [
+        "price_max"
+      ]
+    }
+  ],
+  "street_address": "3 New England Way",
+  "email": "brittanyharris.ent@gmail.com",
+  "age_min": 7,
+  "age_max": 18,
+  "gender_policy": "girls",
+  "refund_policy_summary": "No refund for any reason unless Registration Protection is bought at registration. A $70 administrative fee applies to every cancellation, and there are no refunds within 7 days of camp.",
+  "sessions": [
+    {
+      "name": "July Bears Gymnastics Summer Camp (day-and-a-half)",
+      "start_date": "2026-07-11",
+      "end_date": "2026-07-12",
+      "price": 323,
+      "availability": "unknown"
+    },
+    {
+      "name": "August Bears Gymnastics Summer Camp (two days)",
+      "start_date": "2026-08-01",
+      "end_date": "2026-08-02",
+      "price": 419,
+      "availability": "unknown"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.brittanyharrisgymnasticscamps.com/",
       "kind": "html",
@@ -91,8 +122,22 @@
         "quote": "$244.00"
       }
     ],
-    "errors": [
-      "missing required zip"
-    ]
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.brittanyharrisgymnasticscamps.com/july-bears-gymnastics-summer.cfm",
+      "changes": [
+        "Removed the Nov 1 2026 High Performance Clinic session, its $244 price and its registration_url: it is a fall clinic, not summer camp",
+        "Read the July and August summer camp pages: added July 11-12 2026 ($323) and Aug 1-2 2026 ($419) sessions, price_min 323 / price_max 419",
+        "Location: camps are held at Ocean State School of Gymnastics, 3 New England Way, Lincoln, RI 02865, not in Providence; set street_address, city Lincoln, zip",
+        "Added ages 7-18, gender_policy girls, email and refund policy from the summer camp pages",
+        "Rewrote description_short for the summer camps"
+      ],
+      "for_andrew": [
+        "Slug still says 'providence' though the camp is in Lincoln, RI",
+        "Each camp is only 1.5-2 days long (commuter clinic style); confirm it should be listed as a camp"
+      ]
+    }
   }
 }

@@ -53,7 +53,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.fallriverbgc.org/camp-welch",
       "kind": "html",
@@ -115,6 +115,20 @@
     "errors": [
       "missing required camp_type",
       "camp_type must be one of ['day', 'sleepaway', 'specialty']"
-    ]
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.fallriverbgc.org/camp-welch",
+      "changes": [
+        "No field changes: address 127 North Main Street, Assonet, MA 02702 (shown on the camp page), ages 5-12, 165 acres, two pools and activity list all match"
+      ],
+      "for_andrew": [
+        "camp_type not stated: page calls it 'the Club's program site for 5-12 year olds during the summer months' (reads like a day camp) but never says day or overnight; set camp_type after checking",
+        "season_year 2026 rests only on 'View the 2026 Camp Welch Video!'; no dates or prices on the page",
+        "financial_aid true rests on donor-funded 'camperships'; page does not say how families apply",
+        "Camp Jack (People Inc. diabetes camp) uses the same Camp Welch site; separate program"
+      ]
+    }
   }
 }

@@ -27,10 +27,45 @@
         "description_short"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.aquidneckislanddaycamp.com/registration.html",
+      "checked": "2026-10-27",
+      "fields": [
+        "email",
+        "phone",
+        "age_min",
+        "age_max",
+        "price_min",
+        "price_max",
+        "price_per_week",
+        "price_per",
+        "extended_care",
+        "sessions"
+      ]
+    }
+  ],
+  "email": "aquidneckislanddaycamp@gmail.com",
+  "phone": "401-864-3183",
+  "age_min": 5,
+  "age_max": 13,
+  "season_year": 2026,
+  "price_min": 140,
+  "price_max": 380,
+  "price_per_week": 300,
+  "price_per": "week",
+  "extended_care": true,
+  "sessions": [
+    {
+      "name": "Summer 2026 (register by the week or full summer)",
+      "start_date": "2026-06-29",
+      "end_date": "2026-08-21",
+      "price": null,
+      "availability": "unknown"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.aquidneckislanddaycamp.com/",
       "kind": "html",
@@ -58,8 +93,22 @@
     ],
     "low_confidence": [],
     "errors": [
-      "missing required zip",
-      "missing required season_year"
-    ]
+      "missing required zip"
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.aquidneckislanddaycamp.com/registration.html",
+      "changes": [
+        "Added from the 2026 registration page: ages 5-13, season_year 2026, dates June 29 - Aug 21 2026 as one session",
+        "Prices: full week $300 regular / $380 extended; 2-day option $140; price_min 140, price_max 380, price_per_week 300",
+        "extended_care true: 'Extended Day 8:00am - 5:00pm' option",
+        "email and phone from the 'For more information' line"
+      ],
+      "for_andrew": [
+        "ZIP still missing: page gives the location only as 'Forrest Ave Elementary School' in Middletown with no street address, so it could not be geocoded; street_address/zip need a person",
+        "Middletown is about 25-30 miles from Providence; confirm it is in range"
+      ]
+    }
   }
 }

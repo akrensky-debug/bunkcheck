@@ -87,7 +87,7 @@
   "sources": [
     {
       "url": "https://bgcnewbedford.org/programs/summer-fun-program/",
-      "checked": "2026-10-13",
+      "checked": "2026-10-27",
       "fields": [
         "name",
         "operator_name",
@@ -115,7 +115,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://bgcnewbedford.org/programs/summer-fun-program/",
       "kind": "html",
@@ -188,6 +188,16 @@
         "quote": "All Summer Fun participants must be Club members."
       }
     ],
-    "errors": []
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://bgcnewbedford.org/programs/summer-fun-program/",
+      "changes": [],
+      "for_andrew": [
+        "refused: ask the owner for the brochure (bgcnewbedford.org returned 429 Too Many Requests)",
+        "Draft data is from the 2023 season (season_year 2023, $50/week); needs current dates and prices"
+      ]
+    }
   }
 }

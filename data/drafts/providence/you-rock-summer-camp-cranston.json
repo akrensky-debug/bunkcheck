@@ -30,6 +30,7 @@
     "Games",
     "Creative challenges"
   ],
+  "registration_url": "https://yourockschoolofmusic.opus1.io/w/summercamp2026",
   "sources": [
     {
       "url": "https://www.yourockschoolofmusic.com/summer-camp2026",
@@ -47,13 +48,14 @@
         "camp_type",
         "primary_categories",
         "activities",
-        "description_short"
+        "description_short",
+        "registration_url"
       ],
       "note": "Drafted by the listing tool from this page"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.yourockschoolofmusic.com/summer-camp2026",
       "kind": "html",
@@ -81,6 +83,17 @@
     "low_confidence": [],
     "errors": [
       "missing required season_year"
-    ]
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.yourockschoolofmusic.com/summer-camp2026",
+      "changes": [
+        "Added registration_url: the page's 'Book Your Camp!' button target."
+      ],
+      "for_andrew": [
+        "season_year missing: the page text gives no year, dates, ages or prices; only the URLs say 'summer-camp2026'/'summercamp2026' and the booking page is a JS app. Confirm the season and weeks with the school."
+      ]
+    }
   }
 }

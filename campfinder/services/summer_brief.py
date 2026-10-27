@@ -25,6 +25,7 @@ from campfinder.models.coverage import WorkBlock
 from campfinder.services.coverage import care_windows
 from campfinder.services.errors import NotFound
 from campfinder.services.school_calendars import find_school
+from campfinder.services.season import planning_year
 
 Context = Literal["suggestions", "prices"]
 
@@ -54,7 +55,7 @@ GUESS_WORK = [{"parent": "Parents", "days": ["Mon", "Tue", "Wed", "Thu", "Fri"],
 
 def summer_year(today: date) -> int:
     """The summer being planned: this year until July, then next year."""
-    return today.year if today.month < 7 else today.year + 1
+    return planning_year(today)
 
 
 def _now() -> str:
@@ -167,7 +168,7 @@ def apply_skip(profile: dict[str, Any], field: BriefField, today: date, *, not_s
     profile = copy.deepcopy(profile)
     meta = _meta(profile)
     keep, drop = ("not_sure", "skipped") if not_sure else ("skipped", "not_sure")
-    meta[keep][field] = _now()
+    meta[keep][field] = today.isoformat()  # the day it was put off; it can come back from tomorrow
     meta[drop].pop(field, None)
     _guess(profile, field, today)
     return profile

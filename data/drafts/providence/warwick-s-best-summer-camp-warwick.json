@@ -11,7 +11,7 @@
   "zip": "02888",
   "camp_type": "day",
   "primary_categories": [
-    "sports"
+    "general"
   ],
   "description_short": "A general day camp in Warwick, RI. Campers are grouped by age for planned games, arts and crafts, park and pool outings, field trips and special guests. Before and after care is available, and families can sign up for the full summer or for single weeks.",
   "activities": [
@@ -50,7 +50,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://warwicksbestsummercamp.com/",
       "kind": "html",
@@ -90,6 +90,17 @@
     ],
     "errors": [
       "missing required season_year"
-    ]
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://warwicksbestsummercamp.com/",
+      "changes": [
+        "primary_categories sports -> general: the page describes a general day camp (games, arts and crafts, park, pool, field trips, guests)."
+      ],
+      "for_andrew": [
+        "season_year still missing: the page is a static marketing page with no year, dates, ages or prices; those sit behind a contact-info form ('See Camp Info and Registration Options'). Ask the owner for 2027 dates and prices."
+      ]
+    }
   }
 }

@@ -40,7 +40,7 @@ from campfinder.database import get_supabase
 log = logging.getLogger(__name__)
 
 # Bump the version when widget.html changes: hosts cache templates by URI.
-WIDGET_URI = "ui://campfinder/camps-v3.html"
+WIDGET_URI = "ui://campfinder/camps-v4.html"
 WIDGET_MIME = "text/html;profile=mcp-app"
 MAX_CARDS = 8
 
@@ -57,13 +57,15 @@ INSTRUCTIONS = (
     "weigh a shortlist, and build_summer_plan to check week-by-week coverage. Results are "
     "shown to the parent as cards, so summarise which camps fit and why rather than "
     "repeating every field. Only state facts these tools return, and say when a camp's "
-    "details are not yet verified. For weekly classes, lessons, leagues and after-school "
+    "details are not yet verified. Many camps haven't posted next summer yet: results marked "
+    "last_season show last season's dates and prices, so say which season a date or price is "
+    "from whenever you give one. For weekly classes, lessons, leagues and after-school "
     "programs, use find_activities (days and times like 'after 3:30 on weekdays' or 'Saturday "
     "mornings' go in days/earliest_start/latest_end), get_activity_details, and "
     "check_schedule_fit to test a class against the family's other commitments. Outside the "
     "Northeast, say Bunkcheck doesn't cover that area yet."
 )
-VERSION = "1.3.0"
+VERSION = "1.4.0"
 
 
 @dataclass(frozen=True)
@@ -166,6 +168,7 @@ def _card(c: dict[str, Any], source: str) -> dict[str, Any]:
     keys = (
         "id", "name", "city", "state", "distance_miles", "price_per_week", "age_min", "age_max",
         "verification_status", "extended_care", "transportation", "financial_aid", "match_reasons",
+        "season_year", "last_season",
     )
     card = {k: c.get(k) for k in keys}
     card["url"] = _utm(f"{_site()}/camps/{c['id']}", source, "camp_card")

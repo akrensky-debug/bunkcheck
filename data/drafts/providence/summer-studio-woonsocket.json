@@ -51,7 +51,7 @@
   "sources": [
     {
       "url": "https://mountsaintcharles.org/arts/summer-studio/",
-      "checked": "2026-10-13",
+      "checked": "2026-10-27",
       "fields": [
         "name",
         "operator_name",
@@ -70,13 +70,14 @@
         "price_max",
         "price_per_week",
         "price_per",
-        "sessions"
+        "sessions",
+        "camp_type"
       ],
       "note": "Drafted by the listing tool from this page"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://mountsaintcharles.org/arts/summer-studio/",
       "kind": "html",
@@ -108,9 +109,18 @@
         "quote": "families may choose to attend one session or both"
       }
     ],
-    "errors": [
-      "missing required camp_type",
-      "camp_type must be one of ['day', 'sleepaway', 'specialty']"
-    ]
-  }
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://mountsaintcharles.org/arts/summer-studio/",
+      "changes": [
+        "Set camp_type specialty: the page describes a one-week \"hands on arts enrichment program\" (single focus: arts)"
+      ],
+      "for_andrew": [
+        "Daily hours and day vs. overnight are not stated; listed as an arts specialty program"
+      ]
+    }
+  },
+  "camp_type": "specialty"
 }

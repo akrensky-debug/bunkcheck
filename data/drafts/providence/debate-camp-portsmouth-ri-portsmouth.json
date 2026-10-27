@@ -85,7 +85,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.debatecamp.com/portsmouth",
       "kind": "html",
@@ -119,6 +119,15 @@
     ],
     "errors": [
       "missing required zip"
-    ]
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.debatecamp.com/portsmouth",
+      "changes": [],
+      "for_andrew": [
+        "refused: ask the owner for the brochure (site returned 429 with a bot-check page; no fields could be verified, zip still missing)"
+      ]
+    }
   }
 }

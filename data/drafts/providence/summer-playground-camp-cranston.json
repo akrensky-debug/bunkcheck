@@ -6,7 +6,7 @@
   "registration_url": "https://docs.google.com/forms/d/e/1FAIpQLSeP--Oygq7XdMcUP5Fg9tl_a_jwLryz3KnHpYbI9snwPeYvOA/viewform",
   "email": "cranstonparksandrecreation@cranstonri.org",
   "phone": "401-461-1000",
-  "street_address": "155 Gansett Avenue (Recreation Office, Peter Pastore Youth Center)",
+  "street_address": "155 Gansett Avenue",
   "city": "Cranston",
   "state": "RI",
   "zip": "02910",
@@ -28,7 +28,7 @@
   "sources": [
     {
       "url": "https://www.cranstonri.gov/departments/parks-and-recreation/default.aspx",
-      "checked": "2026-10-13",
+      "checked": "2026-10-27",
       "fields": [
         "name",
         "operator_name",
@@ -36,7 +36,6 @@
         "registration_url",
         "email",
         "phone",
-        "street_address",
         "city",
         "state",
         "camp_type",
@@ -48,7 +47,8 @@
         "price_max",
         "price_per_week",
         "price_per",
-        "meals_included"
+        "meals_included",
+        "street_address"
       ],
       "note": "Drafted by the listing tool from this page"
     },
@@ -62,7 +62,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.cranstonri.gov/departments/parks-and-recreation/default.aspx",
       "kind": "html",
@@ -123,6 +123,19 @@
         "quote": "SUMMER CAMP REGISTRATION WILL OPEN APRIL 27 at 5 p.m."
       }
     ],
-    "errors": []
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.cranstonri.gov/departments/parks-and-recreation/default.aspx",
+      "changes": [
+        "Trimmed street_address to \"155 Gansett Avenue\" (dropped the parenthetical note)"
+      ],
+      "for_andrew": [
+        "Street address is the Recreation Office (Pastore Youth Center); camp runs at four playground sites",
+        "Phone is the City Hall main line; email was given on the page for job applications",
+        "Cranston residents only"
+      ]
+    }
   }
 }

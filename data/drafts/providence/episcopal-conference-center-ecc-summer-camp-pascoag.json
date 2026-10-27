@@ -21,6 +21,7 @@
   "financial_aid": true,
   "swim_waterfront_notes": "Camp is on Echo Lake. Swimming is listed as an activity, but no details about the waterfront are given.",
   "season_year": 2027,
+  "camp_type": "sleepaway",
   "sources": [
     {
       "url": "https://www.eccri.org/",
@@ -41,10 +42,17 @@
         "swim_waterfront_notes"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.eccri.org/aboutecc",
+      "checked": "2026-10-27",
+      "fields": [
+        "camp_type"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.eccri.org/",
       "kind": "html",
@@ -87,9 +95,18 @@
         "quote": "finding peace by Echo Lake"
       }
     ],
-    "errors": [
-      "missing required camp_type",
-      "camp_type must be one of ['day', 'sleepaway', 'specialty']"
-    ]
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.eccri.org/",
+      "changes": [
+        "Set camp_type sleepaway: /aboutecc says \"ECC is an overnight summer camp and year-round conference center\" (new source entry)"
+      ],
+      "for_andrew": [
+        "season_year 2027 has no dates/prices yet (\"Stay tuned for more information about Summer 2027\"); ages not stated",
+        "ACA page explains accreditation but does not state outright that ECC is accredited; aca_accredited left null pending an acacamps.org check"
+      ]
+    }
   }
 }

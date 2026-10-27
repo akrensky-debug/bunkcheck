@@ -21,7 +21,7 @@
   "sources": [
     {
       "url": "https://www.northattleborough.gov/252/Programs-by-Season",
-      "checked": "2026-10-13",
+      "checked": "2026-10-27",
       "fields": [
         "name",
         "operator_name",
@@ -41,7 +41,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "drop",
     "source": {
       "url": "https://www.northattleborough.gov/252/Programs-by-Season",
       "kind": "html",
@@ -84,6 +84,14 @@
     "errors": [
       "missing required zip",
       "missing required season_year"
-    ]
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.northattleborough.gov/252/Programs-by-Season",
+      "changes": [],
+      "for_andrew": [],
+      "drop_reason": "Duplicate draft of summer-playground-program-spp-north-attleborough.json (same program, same page); keep that one"
+    }
   }
 }

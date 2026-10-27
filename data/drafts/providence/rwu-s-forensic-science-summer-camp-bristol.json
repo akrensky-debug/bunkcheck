@@ -27,10 +27,7 @@
     "Sailing center",
     "Kayaking"
   ],
-  "price_min": 1995,
-  "price_max": 1995,
   "meals_included": true,
-  "refund_policy_summary": "$500 deposit secures registration and is fully refundable before April 1 (the page says 2026). The remaining balance is due by May 1 (the page says 2026). The 2027 deadlines have not been confirmed.",
   "swim_waterfront_notes": "Campers have access to the recreation center, sailing center, kayaks and the RWU waterfront. The page does not describe swim testing or supervision.",
   "season_year": 2027,
   "sessions": [
@@ -38,21 +35,21 @@
       "name": "Session 1",
       "start_date": "2027-07-11",
       "end_date": "2027-07-16",
-      "price": 1995,
+      "price": null,
       "availability": "unknown"
     },
     {
       "name": "Session 2",
       "start_date": "2027-07-18",
       "end_date": "2027-07-23",
-      "price": 1995,
+      "price": null,
       "availability": "unknown"
     }
   ],
   "sources": [
     {
       "url": "https://www.rwu.edu/summer-camps/forensic-science-summer-camp",
-      "checked": "2026-10-13",
+      "checked": "2026-10-27",
       "fields": [
         "name",
         "operator_name",
@@ -69,10 +66,7 @@
         "grade_min",
         "grade_max",
         "description_short",
-        "price_min",
-        "price_max",
         "meals_included",
-        "refund_policy_summary",
         "swim_waterfront_notes",
         "sessions"
       ],
@@ -80,7 +74,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.rwu.edu/summer-camps/forensic-science-summer-camp",
       "kind": "html",
@@ -132,6 +126,19 @@
         "quote": "Cost: $1,995"
       }
     ],
-    "errors": []
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.rwu.edu/summer-camps/forensic-science-summer-camp",
+      "changes": [
+        "Removed price_min/price_max and session prices ($1,995) and refund_policy_summary: they sit next to deposit/payment deadlines dated April-May 2026, so they look carried over from 2026 while sessions are July 2027."
+      ],
+      "for_andrew": [
+        "Page says 'Cost: $1,995' (tuition, room and board) and $500 deposit refundable before April 1, 2026; confirm the 2027 price and deadlines before adding them back.",
+        "Registration is 'Coming Soon' for the 2027 sessions (July 11-16 and July 18-23, 2027).",
+        "Phone and address are RWU's general contacts from the page footer."
+      ]
+    }
   }
 }

@@ -27,7 +27,7 @@
   "sources": [
     {
       "url": "https://www.lincolnri.gov/180/Youth-Programs",
-      "checked": "2026-10-13",
+      "checked": "2026-10-27",
       "fields": [
         "name",
         "operator_name",
@@ -47,7 +47,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.lincolnri.gov/180/Youth-Programs",
       "kind": "html",
@@ -85,6 +85,18 @@
     "errors": [
       "missing required zip",
       "missing required season_year"
-    ]
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.lincolnri.gov/180/Youth-Programs",
+      "changes": [],
+      "for_andrew": [
+        "Judgement call: drop-in supervised playground program; children \"are free to enter and leave the parks at their own volition\", so it may not count as a camp",
+        "Page gives no year (standing text: \"first day of camp is July 1st\"), so season_year cannot be set without guessing",
+        "No ZIP: program runs at 5 unnamed parks and Lincoln, RI has several ZIP codes",
+        "No price stated; registration is described both as RecDesk and in person at the park"
+      ]
+    }
   }
 }

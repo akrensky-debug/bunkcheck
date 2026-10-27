@@ -2,23 +2,44 @@
   "slug": "warren-parks-and-recreation-summer-camp-warren",
   "name": "Warren Parks & Recreation Summer Camp",
   "operator_name": "Town of Warren Parks & Recreation",
-  "website_url": "https://www.townofwarren-ri.gov/town_government/departments/parks_and_recreation/visit_our_summer_camp_page_here.php",
+  "website_url": "https://www.townofwarren-ri.gov/departments/parks_recreation/summer_camp.php",
   "city": "Warren",
   "state": "RI",
   "zip": "02885",
-  "sources": [
+  "registration_url": "http://warrenri.myrec.com",
+  "camp_type": "day",
+  "season_year": 2026,
+  "primary_categories": [
+    "general"
+  ],
+  "age_min": 5,
+  "age_max": 14,
+  "activities": [
+    "Arts & crafts",
+    "Games",
+    "Bowling",
+    "Weekly contests",
+    "Swimming",
+    "Field trips",
+    "Camp performances"
+  ],
+  "description_short": "Town-run, electronics-free traditional day camp for ages 5-14 at Burr's Hill Park, 9am-3pm with extended hours 7-9am and 3-5pm. Activities include arts and crafts, games, bowling, weekly contests, swimming and field trips, and campers get a free summer lunch.",
+  "price_min": 350,
+  "price_max": 600,
+  "price_per": "session",
+  "extended_care": true,
+  "meals_included": true,
+  "financial_aid": true,
+  "sessions": [
     {
-      "url": "https://www.townofwarren-ri.gov/town_government/departments/parks_and_recreation/visit_our_summer_camp_page_here.php",
-      "checked": "2026-10-13",
-      "fields": [
-        "name",
-        "operator_name",
-        "website_url",
-        "city",
-        "state"
-      ],
-      "note": "Drafted by the listing tool from this page"
-    },
+      "name": "Summer Camp 2026 (Warren resident $350, non-resident $600)",
+      "start_date": "2026-06-24",
+      "end_date": "2026-08-14",
+      "price": null,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
     {
       "url": "https://www.census.gov/geographies/reference-files/time-series/geo/relationship-files.2020.html",
       "checked": "2026-10-14",
@@ -26,10 +47,35 @@
         "zip"
       ],
       "note": "Warren, RI sits inside one ZIP code (2020 Census ZCTA relationship file)"
+    },
+    {
+      "url": "https://www.townofwarren-ri.gov/departments/parks_recreation/summer_camp.php",
+      "checked": "2026-10-27",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "city",
+        "state",
+        "registration_url",
+        "camp_type",
+        "primary_categories",
+        "age_min",
+        "age_max",
+        "activities",
+        "description_short",
+        "price_min",
+        "price_max",
+        "price_per",
+        "extended_care",
+        "meals_included",
+        "financial_aid",
+        "sessions"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.townofwarren-ri.gov/town_government/departments/parks_and_recreation/visit_our_summer_camp_page_here.php",
       "kind": "html",
@@ -77,10 +123,19 @@
         "quote": "Welcome to the Town of Warren, Rhode Island"
       }
     ],
-    "errors": [
-      "missing required camp_type",
-      "missing required season_year",
-      "camp_type must be one of ['day', 'sleepaway', 'specialty']"
-    ]
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.townofwarren-ri.gov/departments/parks_recreation/summer_camp.php",
+      "changes": [
+        "The drafted URL is a site wrapper page; moved website_url and all sourced fields to the actual summer camp page (summer_camp.php).",
+        "Filled camp_type day, season_year 2026 and the June 24-August 14, 2026 session from the page.",
+        "Added ages 5-14, price $350 resident / $600 non-resident for the summer, extended care (7-9am, 3-5pm), free lunch, financial aid (Warren families), activities, registration link and description."
+      ],
+      "for_andrew": [
+        "Price is for the whole summer: $350 Warren resident ($200 each sibling), $600 non-resident; extended hours cost extra ($50/$100 per week). Session price left null."
+      ]
+    }
   }
 }

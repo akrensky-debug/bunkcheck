@@ -67,7 +67,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.agawamhunt.org/camp",
       "kind": "html",
@@ -97,6 +97,17 @@
       "Pool supervision and swim policies"
     ],
     "low_confidence": [],
-    "errors": []
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.agawamhunt.org/camp",
+      "changes": [
+        "No changes: every filled field matches the page (grades 1-6, 9-3 with extended day to 5pm, lunch included, $415/$465 for 5 days and $290/$320 for 3 days, Summer 2026)"
+      ],
+      "for_andrew": [
+        "Page lists 2026 weeks only as 'weeks of June 15, June 22, July 6 ... August 17' with no end dates, so no sessions recorded"
+      ]
+    }
   }
 }

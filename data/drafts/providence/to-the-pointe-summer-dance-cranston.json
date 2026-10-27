@@ -3,12 +3,12 @@
   "name": "To The Pointe Summer Dance",
   "operator_name": "To The Pointe Dance Studios",
   "website_url": "https://tothepointedancestudios.com/summerdance",
-  "registration_url": "https://tothepointedancestudios.com/locations",
+  "registration_url": "https://tothepointedancestudios.com/summer-camps",
   "email": "contact@tothepointedancestudios.com",
   "phone": "401-942-5554",
   "city": "Cranston",
   "state": "RI",
-  "zip": null,
+  "zip": "02920",
   "camp_type": "specialty",
   "primary_categories": [
     "performing_arts"
@@ -22,6 +22,40 @@
     "Summer Showcase performance"
   ],
   "season_year": 2026,
+  "street_address": "800 Oaklawn Ave",
+  "age_min": 3,
+  "price_min": 214,
+  "price_max": 299,
+  "sessions": [
+    {
+      "name": "K-Pop Camp (ages 4 and up)",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": 299,
+      "availability": "unknown"
+    },
+    {
+      "name": "Fairy Princess Camp (ages 3-10)",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": 299,
+      "availability": "unknown"
+    },
+    {
+      "name": "Wicked! Musical Theatre Camp (ages 7 and up; Mon/Wed/Fri 9am-1pm)",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": 214,
+      "availability": "unknown"
+    },
+    {
+      "name": "Zombies Camp (ages 3 and up)",
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-14",
+      "price": 299,
+      "availability": "unknown"
+    }
+  ],
   "sources": [
     {
       "url": "https://tothepointedancestudios.com/summerdance",
@@ -30,7 +64,6 @@
         "name",
         "operator_name",
         "website_url",
-        "registration_url",
         "email",
         "phone",
         "city",
@@ -41,10 +74,30 @@
         "description_short"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://tothepointedancestudios.com/summer-camps",
+      "checked": "2026-10-27",
+      "fields": [
+        "street_address",
+        "registration_url",
+        "age_min",
+        "price_min",
+        "price_max",
+        "sessions"
+      ]
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=800+Oaklawn+Ave&city=Cranston&state=RI&benchmark=Public_AR_Current&format=json",
+      "checked": "2026-10-27",
+      "fields": [
+        "zip"
+      ],
+      "note": "ZIP from the US Census geocoder for 800 OAKLAWN AVE, CRANSTON, RI, 02920"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://tothepointedancestudios.com/summerdance",
       "kind": "html",
@@ -75,8 +128,21 @@
         "quote": "REGISTER NOW"
       }
     ],
-    "errors": [
-      "missing required zip"
-    ]
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://tothepointedancestudios.com/summerdance (and /summer-camps)",
+      "changes": [
+        "Added street_address 800 Oaklawn Ave from the summer-camps page ('Address: 800 Oaklawn Ave Cranston').",
+        "Filled zip 02920 from the US Census geocoder for that address.",
+        "Replaced registration_url (/locations is a location picker) with the /summer-camps page that has the SIGN UP buttons.",
+        "Added age_min 3, price range $214-$299 and the four 2026 themed camp weeks from the /summer-camps page."
+      ],
+      "for_andrew": [
+        "The /directions page gives the Cranston studio as 999 Oaklawn Ave, the camps page says 800 Oaklawn Ave; kept 800.",
+        "Session prices are the full-week (5 full days) price; the cart adds a $15 registration fee, and half-day / single-day options exist."
+      ]
+    }
   }
 }

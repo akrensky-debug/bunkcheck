@@ -4,9 +4,9 @@
   "operator_name": "Extraordinary Kids Therapy",
   "website_url": "https://www.extraordinarykidstherapy.net/camps-and-groups",
   "email": "frontdesk@extraordinarykidstherapy.net",
-  "city": null,
+  "city": "Chepachet",
   "state": "RI",
-  "zip": null,
+  "zip": "02814",
   "camp_type": "day",
   "primary_categories": [
     "special_needs"
@@ -14,86 +14,9 @@
   "description_short": "A therapeutic summer day camp run by a pediatric therapy practice, open to children of all abilities. It offers full-day and half-day options, and each week has a theme that guides therapy and activities.",
   "refund_policy_summary": "Once staff accept your application, you pay a $50 non-refundable deposit for each week you register. No other refund terms are stated.",
   "special_needs_notes": "This is a therapeutic camp run by a pediatric therapy practice. Weekly themes \"guide our treatment, activity planning, and special events,\" and the camp describes itself as an inclusive environment for children of all abilities.",
-  "season_year": 2026,
-  "sessions": [
-    {
-      "name": "Week 1",
-      "start_date": "2026-06-15",
-      "end_date": "2026-06-19",
-      "price": null,
-      "availability": "unknown"
-    },
-    {
-      "name": "Week 2",
-      "start_date": "2026-06-22",
-      "end_date": "2026-06-26",
-      "price": null,
-      "availability": "full"
-    },
-    {
-      "name": "Week 3",
-      "start_date": "2026-06-29",
-      "end_date": "2026-07-03",
-      "price": null,
-      "availability": "full"
-    },
-    {
-      "name": "Week 4",
-      "start_date": "2026-07-06",
-      "end_date": "2026-07-10",
-      "price": null,
-      "availability": "full"
-    },
-    {
-      "name": "Week 5",
-      "start_date": "2026-07-13",
-      "end_date": "2026-07-17",
-      "price": null,
-      "availability": "full"
-    },
-    {
-      "name": "Week 6",
-      "start_date": "2026-07-20",
-      "end_date": "2026-07-24",
-      "price": null,
-      "availability": "full"
-    },
-    {
-      "name": "Week 7",
-      "start_date": "2026-07-27",
-      "end_date": "2026-07-31",
-      "price": null,
-      "availability": "full"
-    },
-    {
-      "name": "Week 8",
-      "start_date": "2026-08-03",
-      "end_date": "2026-08-07",
-      "price": null,
-      "availability": "full"
-    },
-    {
-      "name": "Week 9",
-      "start_date": "2026-08-10",
-      "end_date": "2026-08-14",
-      "price": null,
-      "availability": "full"
-    },
-    {
-      "name": "Week 10",
-      "start_date": "2026-08-17",
-      "end_date": "2026-08-21",
-      "price": null,
-      "availability": "full"
-    },
-    {
-      "name": "Week 11",
-      "start_date": "2026-08-24",
-      "end_date": "2026-08-28",
-      "price": null,
-      "availability": "unknown"
-    }
-  ],
+  "season_year": 2027,
+  "phone": "401-203-5444",
+  "street_address": "389 Putnam Pike",
   "sources": [
     {
       "url": "https://www.extraordinarykidstherapy.net/camps-and-groups",
@@ -103,19 +26,28 @@
         "operator_name",
         "website_url",
         "email",
-        "state",
         "camp_type",
         "primary_categories",
         "description_short",
         "refund_policy_summary",
-        "special_needs_notes",
-        "sessions"
+        "special_needs_notes"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.extraordinarykidstherapy.net/contact",
+      "checked": "2026-10-27",
+      "fields": [
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.extraordinarykidstherapy.net/camps-and-groups",
       "kind": "html",
@@ -147,10 +79,20 @@
         "quote": "These groups apply to both full and half day."
       }
     ],
-    "errors": [
-      "missing required city",
-      "missing required zip",
-      "city None, RI is not in cities.py"
-    ]
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.extraordinarykidstherapy.net/camps-and-groups",
+      "changes": [
+        "Removed the 11 2026 sessions: the page now shows \"2027 ENROLLMENT COMING SOON\" with \"2027 dates coming soon\" for every week",
+        "Set season_year 2027 to match the page (registration opens Jan/Feb 2027)",
+        "Filled phone, street_address, city Chepachet, state, zip 02814 from the clinic address on /contact (new source entry)"
+      ],
+      "for_andrew": [
+        "Address is the clinic (389 Putnam Pike, Chepachet); the camp page does not say camp is held there. Confirm location",
+        "No ages, dates or prices for 2027 yet; registration is by email only"
+      ]
+    }
   }
 }

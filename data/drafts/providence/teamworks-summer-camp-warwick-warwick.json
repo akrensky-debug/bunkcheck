@@ -66,7 +66,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.teamworkswarwick.com/summercamphome.aspx",
       "kind": "html",
@@ -101,6 +101,17 @@
         "quote": "Save your spot for ONLY $50 per camp week!"
       }
     ],
-    "errors": []
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.teamworkswarwick.com/summercamphome.aspx",
+      "changes": [
+        "No changes: every filled field and the season-long session (June 15 to September 4, 2026) match the page."
+      ],
+      "for_andrew": [
+        "No prices on the page (only a $50/week deposit and a required Teamworks Membership); 2027 dates not posted yet."
+      ]
+    }
   }
 }

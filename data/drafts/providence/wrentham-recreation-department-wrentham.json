@@ -32,7 +32,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "drop",
     "source": {
       "url": "https://wrenthamma.myrec.com/info/default.aspx",
       "kind": "html",
@@ -68,6 +68,14 @@
       "missing required camp_type",
       "missing required season_year",
       "camp_type must be one of ['day', 'sleepaway', 'specialty']"
-    ]
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://wrenthamma.myrec.com/info/default.aspx",
+      "changes": [],
+      "for_andrew": [],
+      "drop_reason": "Not a summer camp page: it is the Wrentham Recreation Department's generic MyRec registration home (5K race, youth basketball, adult pickup basketball) and names no summer camp, dates, ages or prices."
+    }
   }
 }

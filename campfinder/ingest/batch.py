@@ -72,15 +72,25 @@ async def draft_one(cand: dict[str, Any], *, metro: str, today: date, taken: set
 
 
 def write_summary(drafts: Path, log: list[dict[str, Any]]) -> None:
-    rows = []
+    rows, ready, needs, dropped = [], [], [], []
     for f in sorted(drafts.glob("*.json")):
         if f.name.startswith("_"):
             continue
         d = json.loads(f.read_text())
         r = d["review"]
-        rows.append(f"| [{d.get('name') or d['slug']}]({f.name}) | {d.get('city') or '?'} | "
-                    f"{len(d.get('sessions') or [])} | {len(r['errors'])} | {len(r['low_confidence'])} | "
-                    f"{len(r['warnings'])} | {r['status']} |")
+        link = f"[{d.get('name') or d['slug']}]({f.name})"
+        fp = r.get("first_pass")
+        if fp and r["status"] == "ready":
+            ready.append(f"| {link} | {d.get('city') or '?'} | {d.get('season_year') or '?'} | "
+                         f"{len(d.get('sessions') or [])} | {'; '.join(fp.get('changes') or []) or 'no changes'} |")
+        elif fp and r["status"] == "needs_andrew":
+            needs.append(f"- {link} ({d.get('city') or '?'}): {'; '.join(fp.get('for_andrew') or []) or 'see the draft'}")
+        elif fp and r["status"] == "drop":
+            dropped.append(f"- {link}: {fp.get('drop_reason') or 'see the draft'}")
+        else:
+            rows.append(f"| {link} | {d.get('city') or '?'} | "
+                        f"{len(d.get('sessions') or [])} | {len(r['errors'])} | {len(r['low_confidence'])} | "
+                        f"{len(r['warnings'])} | {r['status']} |")
     refused = [x for x in log if x["outcome"] == "refused"]
     failed = [x for x in log if x["outcome"] == "failed"]
     text = [
@@ -89,15 +99,29 @@ def write_summary(drafts: Path, log: list[dict[str, Any]]) -> None:
         "the page, fix the errors, then promote it:", "",
         f"    python -m campfinder.ingest.promote data/drafts/{drafts.name}/<file> --by <your name>", "",
         "Nothing here is on the site until it is promoted and imported.", "",
-        "| Camp | Town | Sessions | Errors | Unsure | Warnings | Status |", "|---|---|---|---|---|---|---|", *rows,
     ]
+    if ready:
+        text += [f"## Ready: first pass done ({len(ready)})", "",
+                 "Claude checked every filled field against the camp's page and the validator passes. "
+                 "Skim, then promote them all at once:", "",
+                 f"    python -m campfinder.ingest.promote --ready data/drafts/{drafts.name} --by <your name>", "",
+                 "| Camp | Town | Season | Sessions | What the first pass changed |", "|---|---|---|---|---|",
+                 *ready, ""]
+    if needs:
+        text += [f"## Needs a person ({len(needs)})", "", *needs, ""]
+    if dropped:
+        text += [f"## Dropped ({len(dropped)})", "", "Not promoted. Delete the file to clear it.", "", *dropped, ""]
+    if rows:
+        text += ["## Not checked yet", "",
+                 "| Camp | Town | Sessions | Errors | Unsure | Warnings | Status |", "|---|---|---|---|---|---|---|",
+                 *rows]
     if refused:
         text += ["", "## Ask the owner for the brochure", "",
                  "These hosts refused the fetcher. That is the answer: ask the camp to send its brochure.", "",
                  *[f"- {x['name']}: {x['url']}" for x in refused]]
     if failed:
         text += ["", "## Failed", "", *[f"- {x['name']}: {x['url']} ({x['detail']})" for x in failed]]
-    (drafts / "REVIEW.md").write_text("\n".join(text) + "\n")
+    (drafts / "REVIEW.md").write_text("\n".join(text).rstrip("\n") + "\n")
 
 
 async def run(candidates: list[dict[str, Any]], *, metro: str, drafts: Path, limit: int | None,

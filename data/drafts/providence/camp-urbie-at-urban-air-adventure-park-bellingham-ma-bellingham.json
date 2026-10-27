@@ -10,7 +10,7 @@
   "zip": "02019",
   "camp_type": "day",
   "primary_categories": [
-    "STEM"
+    "general"
   ],
   "description_short": "An indoor day camp at the Urban Air trampoline and adventure park in Bellingham, offered as a full day or a half day (morning or afternoon) during school breaks. It mixes open play, guided games and competitions, and a version with hands-on STEAM activities led by Snapology instructors.",
   "activities": [
@@ -37,13 +37,17 @@
         "primary_categories",
         "activities",
         "description_short",
-        "refund_policy_summary"
+        "refund_policy_summary",
+        "secondary_categories"
       ],
       "note": "Drafted by the listing tool from this page"
     }
   ],
+  "secondary_categories": [
+    "STEM"
+  ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.urbanair.com/massachusetts-bellingham/camps/",
       "kind": "html",
@@ -80,6 +84,19 @@
     ],
     "errors": [
       "missing required season_year"
-    ]
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.urbanair.com/massachusetts-bellingham/camps/",
+      "changes": [
+        "primary_categories STEM -> general (indoor play-park day camp); STEM moved to secondary for the Snapology STEAM option",
+        "Checked description, activities and no-refund policy against the page"
+      ],
+      "for_andrew": [
+        "Page has no dates, ages, prices or year and frames the camp as for 'a school break' / 'a day off school'; booking is only through the store link. Confirm it runs summer weeks and which season before listing",
+        "Meals conflict on the page: 'Healthy snacks and balanced lunches' included vs 'snacks and lunch on Wednesday and Friday' only; meals_included left null"
+      ]
+    }
   }
 }

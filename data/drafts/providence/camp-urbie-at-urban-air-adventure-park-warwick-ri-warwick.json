@@ -3,7 +3,7 @@
   "name": "Camp Urbie at Urban Air Adventure Park – Warwick, RI",
   "operator_name": "Urban Air Adventure Park (an Unleashed Brands company)",
   "website_url": "https://www.urbanair.com/rhode-island-warwick/camps/",
-  "registration_url": "https://www.urbanair.com/rhode-island-warwick/camps/#camp_price",
+  "registration_url": null,
   "phone": "401-227-0103",
   "street_address": "300 Quaker Ln",
   "city": "Warwick",
@@ -27,7 +27,6 @@
         "name",
         "operator_name",
         "website_url",
-        "registration_url",
         "phone",
         "street_address",
         "city",
@@ -42,7 +41,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.urbanair.com/rhode-island-warwick/camps/",
       "kind": "html",
@@ -77,6 +76,19 @@
     ],
     "errors": [
       "missing required season_year"
-    ]
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.urbanair.com/rhode-island-warwick/camps/",
+      "changes": [
+        "Removed registration_url: it only jumps to a section of the same page that says 'Coming Soon! No camps available at the moment.'",
+        "Checked description, activities and no-refund policy against the page"
+      ],
+      "for_andrew": [
+        "No camps are posted ('Coming Soon! No camps available at the moment'), so no dates, prices or season year; decide whether to list it now or wait for dates",
+        "Address and phone are not on the camps page as read (they come from the drafted source); confirm 300 Quaker Ln, Warwick 02886 and 401-227-0103 from the park page"
+      ]
+    }
   }
 }

@@ -4,7 +4,7 @@
   "operator_name": "International Tennis Hall of Fame",
   "website_url": "https://www.tennisfame.com/club/junior",
   "email": "newport@tennisfame.com",
-  "phone": "401-849-4777",
+  "phone": "401-849-3990",
   "street_address": "194 Bellevue Avenue",
   "city": "Newport",
   "state": "RI",
@@ -27,13 +27,12 @@
   "sources": [
     {
       "url": "https://www.tennisfame.com/club/junior",
-      "checked": "2026-10-13",
+      "checked": "2026-10-27",
       "fields": [
         "name",
         "operator_name",
         "website_url",
         "email",
-        "phone",
         "street_address",
         "city",
         "state",
@@ -47,13 +46,15 @@
         "price_min",
         "price_max",
         "price_per_week",
-        "price_per"
+        "price_per",
+        "registration_url",
+        "phone"
       ],
       "note": "Drafted by the listing tool from this page"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.tennisfame.com/club/junior",
       "kind": "html",
@@ -114,6 +115,18 @@
         "quote": "Weekly sessions beginning June 15"
       }
     ],
-    "errors": []
-  }
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.tennisfame.com/club/junior",
+      "changes": [
+        "Added registration_url: the page's 'Register & Pay' link (2026 Hall of Fame Summer Tennis Camp form).",
+        "Phone changed from the Pro Shop line (given for court bookings and lessons) to the main ITHF number 401-849-3990 in the page footer.",
+        "Confirmed season_year 2026: the registration form is the 2026 one and the page shows no 2027 dates."
+      ],
+      "for_andrew": []
+    }
+  },
+  "registration_url": "https://tennisfame.wufoo.com/forms/2026-hall-of-fame-summer-tennis-camp/"
 }

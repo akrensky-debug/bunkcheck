@@ -19,6 +19,9 @@ export interface CampSearchResult {
   financial_aid: boolean
   aca_accredited: boolean | null
   verification_status: string
+  season_year?: number | null
+  /** Price and dates are from last season; the camp hasn't posted the new one yet. */
+  last_season?: boolean
   description_short: string | null
   hero_image_url: string | null
   distance_miles: number | null
@@ -87,6 +90,7 @@ export interface CampDetail extends CampSearchResult {
   swim_waterfront_notes: string | null
   aca_source_url: string | null
   last_updated_date: string | null
+  season_note?: string | null
   sessions: SessionSummary[]
   trust_summary: TrustSummary
 }

@@ -8,7 +8,30 @@
   "city": "Greenville",
   "state": "RI",
   "zip": "02828",
-  "description_short": "Summer camp run by the Smithfield YMCA in Greenville, RI. The page asks families to read the \"Know Before You Go\" packet before registering and offers a waitlist.",
+  "description_short": "Smithfield YMCA's summer day camp in Greenville, RI for children entering kindergarten through 6th grade, chosen week by week (up to 9 weeks). Days mix outdoor play, sports, arts, STEM, optional daily swimming and field trips; extended hours run 7am to 6pm.",
+  "camp_type": "day",
+  "email": "abby@ymca1.org",
+  "primary_categories": [
+    "general"
+  ],
+  "grade_min": 0,
+  "grade_max": 6,
+  "extended_care": true,
+  "aca_accredited": true,
+  "aca_source_url": "http://ymca1.org/wp-content/uploads/2026/02/Smithfield-YMCA-Summer-Day-Camp-Know-Before-you-Go-4.pdf",
+  "activities": [
+    "Swimming (optional daily, weekly swim lesson)",
+    "Walking trails and fort building",
+    "Basketball",
+    "Tennis",
+    "Gaga ball",
+    "Soccer",
+    "Baseball",
+    "Kickball",
+    "Arts and crafts",
+    "STEM (Lego challenges, magnet tiles, slime)",
+    "Field trips"
+  ],
   "sources": [
     {
       "url": "https://ymca1.org/childcare/summer-camp/",
@@ -21,14 +44,29 @@
         "street_address",
         "city",
         "state",
-        "zip",
-        "description_short"
+        "zip"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "http://ymca1.org/wp-content/uploads/2026/02/Smithfield-YMCA-Summer-Day-Camp-Know-Before-you-Go-4.pdf",
+      "checked": "2026-10-27",
+      "fields": [
+        "camp_type",
+        "email",
+        "primary_categories",
+        "grade_min",
+        "grade_max",
+        "extended_care",
+        "aca_accredited",
+        "aca_source_url",
+        "activities",
+        "description_short"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://ymca1.org/childcare/summer-camp/",
       "kind": "html",
@@ -56,9 +94,19 @@
     ],
     "low_confidence": [],
     "errors": [
-      "missing required camp_type",
-      "missing required season_year",
-      "camp_type must be one of ['day', 'sleepaway', 'specialty']"
-    ]
+      "missing required season_year"
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://ymca1.org/childcare/summer-camp/ (and the linked Know Before You Go PDF)",
+      "changes": [
+        "Filled camp_type day, grades K-6, extended care (7am-6pm), ACA accreditation, director email, activities and a fuller description from the camp's 'Know Before You Go' PDF linked on the page."
+      ],
+      "for_andrew": [
+        "season_year missing: neither the page nor the PDF states the year or dates (only an image named 'Y-Camp-2026' and 2026/02 upload paths). Confirm the 2026/2027 dates and member/non-member weekly prices.",
+        "The site answered plain curl with a 307 JS redirect; Firecrawl read it on the first try."
+      ]
+    }
   }
 }

@@ -16,7 +16,7 @@
   "sources": [
     {
       "url": "https://www.northattleborough.gov/252/Programs-by-Season",
-      "checked": "2026-10-13",
+      "checked": "2026-10-27",
       "fields": [
         "name",
         "operator_name",
@@ -36,7 +36,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.northattleborough.gov/252/Programs-by-Season",
       "kind": "html",
@@ -65,6 +65,17 @@
     "low_confidence": [],
     "errors": [
       "missing required season_year"
-    ]
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.northattleborough.gov/252/Programs-by-Season",
+      "changes": [],
+      "for_andrew": [
+        "Page gives no year, dates or prices (standing text; only year on the page is 2012), so season_year cannot be set without guessing; check the MyRec registration site or ask the department",
+        "Address is the Parks & Rec office (446 Elm Street, Mason Fieldhouse); camp runs at the Community Field playground",
+        "Residents of North Attleborough only"
+      ]
+    }
   }
 }

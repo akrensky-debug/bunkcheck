@@ -14,6 +14,7 @@ from campfinder.models.camp import (
     TrustSummary,
 )
 from campfinder.services.errors import NotFound
+from campfinder.services.season import is_last_season, season_note
 
 TRUST_IMPORTANT_FIELDS = [
     "price_min", "price_per_week", "sessions",
@@ -135,6 +136,8 @@ def get_camp_detail(ref: UUID | str) -> CampDetail:
         faq=camp.get("faq"),
         is_active=camp.get("is_active") if camp.get("is_active") is not None else True,
         season_year=camp.get("season_year"),
+        last_season=is_last_season(camp.get("season_year")),
+        season_note=season_note(camp.get("season_year")),
         created_at=camp.get("created_at"),
         updated_at=camp.get("updated_at"),
         sessions=session_summaries,

@@ -3,7 +3,7 @@
   "name": "YMCA Camp MacColl",
   "operator_name": "YMCA of Pawtucket",
   "website_url": "https://ymcapawtucket.org/camps/camp-maccoll",
-  "registration_url": "https://ymcapawtucket.org/camps/activity-finder",
+  "registration_url": "https://operations.daxko.com/Programs/Redirector.aspx?program_id=22537831&cid=2058",
   "email": "maccoll@ymcapawt.org",
   "phone": "(401) 725-0773",
   "street_address": "32 Breakneck Hill Rd",
@@ -52,7 +52,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://ymcapawtucket.org/camps/camp-maccoll",
       "kind": "html",
@@ -91,6 +91,17 @@
         "quote": "Register for Summer 2026!"
       }
     ],
-    "errors": []
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://ymcapawtucket.org/camps/camp-maccoll",
+      "changes": [
+        "registration_url: replaced the generic activity-finder link with the page's 'Register for Summer 2026!' button target (Daxko program link)."
+      ],
+      "for_andrew": [
+        "Page shows no ages, dates or prices; only 'Register for Summer 2026!'. 2027 not posted."
+      ]
+    }
   }
 }
