@@ -47,7 +47,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://ampacademygym.com/day-camp/",
       "kind": "html",
@@ -76,6 +76,17 @@
     "low_confidence": [],
     "errors": [
       "missing required season_year"
-    ]
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://ampacademygym.com/day-camp/",
+      "changes": [
+        "No field changes: contact, address and activities match the page"
+      ],
+      "for_andrew": [
+        "Page only says the camp runs over 'School Breaks' and that it is static and never updated; it never mentions summer, dates, ages, prices or a year, so season_year cannot be set. Confirm it runs a summer camp (dates/prices are behind a contact form) or drop it"
+      ]
+    }
   }
 }

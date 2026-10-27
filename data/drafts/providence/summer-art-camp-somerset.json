@@ -14,7 +14,7 @@
   ],
   "age_min": 6,
   "age_max": 11,
-  "description_short": "A week-long morning art camp (9:00am–12pm) for ages 6–11 at the Art Pop studio in Somerset, MA. You can pay for an \"Open Create\" add-on that runs until 3:00pm.",
+  "description_short": "A week-long morning art camp (9:00am–12pm) at the Art Pop studio in Somerset, MA, where children create process art with many different materials. An \"Open Create\" add-on extends the day.",
   "activities": [
     "Art"
   ],
@@ -23,7 +23,7 @@
   "sources": [
     {
       "url": "https://www.artpopclub.com/summerartcamp",
-      "checked": "2026-10-13",
+      "checked": "2026-10-27",
       "fields": [
         "name",
         "operator_name",
@@ -37,14 +37,24 @@
         "activities",
         "age_min",
         "age_max",
-        "description_short",
-        "extended_care"
+        "extended_care",
+        "description_short"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.artpopclub.com/product-page/2026-summer-camp-whole-week",
+      "checked": "2026-10-27",
+      "fields": [
+        "price_per_week",
+        "price_min",
+        "price_max",
+        "price_per"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.artpopclub.com/summerartcamp",
       "kind": "html",
@@ -94,6 +104,24 @@
     ],
     "errors": [
       "missing required zip"
-    ]
-  }
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.artpopclub.com/summerartcamp",
+      "changes": [
+        "Rewrote description_short without the add-on end time: main page says till 3:00pm, product page says until 1pm or 2pm",
+        "Added price_per_week/price_min/price_max 200 and price_per week from the 2026 Whole Week product page"
+      ],
+      "for_andrew": [
+        "ZIP missing: US Census geocoder has no match for 1115 GAR Highway, Somerset, MA; needs a person to confirm the ZIP",
+        "Open Create add-on end time conflicts (3:00pm on camp page vs 1pm or 2pm on product page)",
+        "Ages: camp page says 6-11, product page says 6 and up (no upper limit)"
+      ]
+    }
+  },
+  "price_per_week": 200,
+  "price_min": 200,
+  "price_max": 200,
+  "price_per": "week"
 }

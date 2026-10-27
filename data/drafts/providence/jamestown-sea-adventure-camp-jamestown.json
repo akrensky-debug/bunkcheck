@@ -10,8 +10,8 @@
   "state": "RI",
   "zip": "02835",
   "primary_categories": [
-    "nature",
-    "sports"
+    "sailing",
+    "nature"
   ],
   "age_min": 4,
   "age_max": 16,
@@ -27,7 +27,7 @@
   "sources": [
     {
       "url": "https://www.jamestownsailing.org",
-      "checked": "2026-10-13",
+      "checked": "2026-10-27",
       "fields": [
         "name",
         "operator_name",
@@ -38,18 +38,44 @@
         "city",
         "state",
         "zip",
-        "primary_categories",
         "activities",
         "age_min",
         "age_max",
         "description_short",
-        "financial_aid"
+        "financial_aid",
+        "primary_categories"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.jamestownsailing.org/camp-schedule/",
+      "checked": "2026-10-27",
+      "fields": [
+        "camp_type",
+        "sessions"
+      ]
+    },
+    {
+      "url": "https://www.jamestownsailing.org/camp-pricing/",
+      "checked": "2026-10-27",
+      "fields": [
+        "price_min",
+        "price_max",
+        "price_per"
+      ]
+    },
+    {
+      "url": "https://www.jamestownsailing.org/camp-overview/",
+      "checked": "2026-10-27",
+      "fields": [
+        "email",
+        "refund_policy_summary",
+        "meals_included"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.jamestownsailing.org",
       "kind": "html",
@@ -84,10 +110,92 @@
         "quote": "seasonal programming: sailing, marine science, fishing, summer camps"
       }
     ],
-    "errors": [
-      "missing required camp_type",
-      "missing required season_year",
-      "camp_type must be one of ['day', 'sleepaway', 'specialty']"
-    ]
-  }
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.jamestownsailing.org/camp-schedule/",
+      "changes": [
+        "Set camp_type day: weekly day sessions (half day 9-12 or 1-4, full day 9-4) at Fort Getty, mixing sailing and marine science, per the 2026 schedule page.",
+        "Set season_year 2026 and added the 9 weekly 2026 sessions (June 15 - August 14) from the schedule page; session price left null because it depends on the age group.",
+        "Added price_min 215 / price_max 430 per week from the 2026 pricing page (half-day $215, full-day $430).",
+        "primary_categories changed from nature/sports to sailing/nature.",
+        "Added email, refund policy ($40 cancellation fee; after June 1 refund only if spot is filled) and meals_included false (campers bring snack and lunch) from the camp overview page."
+      ],
+      "for_andrew": []
+    }
+  },
+  "camp_type": "day",
+  "season_year": 2026,
+  "price_min": 215,
+  "price_max": 430,
+  "price_per": "week",
+  "email": "Contact@JamestownSailing.org",
+  "refund_policy_summary": "All changes and cancellations must be emailed to Contact@JamestownSailing.org. There is a $40 per child cancellation fee. After June 1, money (minus the fee) is refunded only if the camp spot is filled.",
+  "meals_included": false,
+  "sessions": [
+    {
+      "name": "Week 0 (Explorers, ages 4-6, half day)",
+      "start_date": "2026-06-15",
+      "end_date": "2026-06-19",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 1",
+      "start_date": "2026-06-22",
+      "end_date": "2026-06-26",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 2",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-03",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 3",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 4",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 5",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 6",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 7",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 8",
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-14",
+      "price": null,
+      "availability": "unknown"
+    }
+  ]
 }

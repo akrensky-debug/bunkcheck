@@ -11,9 +11,9 @@
   "zip": "02818",
   "camp_type": "day",
   "primary_categories": [
-    "sports"
+    "general"
   ],
-  "description_short": "Aim High Academy, a gymnastics and education center in East Greenwich, RI, runs summer day camps with a mix of activities. It also runs week-long (Monday to Friday) gymnastics training camps for girls who do recreational gymnastics, and day camps during school vacations.",
+  "description_short": "Summer day camps for ages 3-10 at Aim High Academy, a gymnastics and education center in East Greenwich, RI. Campers do a mix of indoor and outdoor activities (arts & crafts, games, gymnastics, adventure play) with theme-based sessions and themed Fun Fridays.",
   "activities": [
     "gymnastics",
     "arts & crafts",
@@ -28,22 +28,33 @@
         "name",
         "operator_name",
         "website_url",
+        "camp_type"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.aimhighacademy.com/camps-summer.aspx",
+      "checked": "2026-10-27",
+      "fields": [
         "email",
         "phone",
         "street_address",
         "city",
         "state",
         "zip",
-        "camp_type",
-        "primary_categories",
         "activities",
+        "age_min",
+        "age_max",
+        "primary_categories",
         "description_short"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
     }
   ],
+  "age_min": 3,
+  "age_max": 10,
+  "season_year": 2026,
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.aimhighacademy.com/camps.aspx",
       "kind": "html",
@@ -83,8 +94,21 @@
         "quote": "Gymnastics Training Camps for female recreational gymnasts"
       }
     ],
-    "errors": [
-      "missing required season_year"
-    ]
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.aimhighacademy.com/camps-summer.aspx",
+      "changes": [
+        "Read the Summer Day Camps page (camps-summer.aspx); added age_min 3 / age_max 10 from 'Ages 3-10'",
+        "season_year 2026 from the '2026 ... Summer Camp Flyer' links on that page",
+        "Activities are stated for the summer camp on that page, so kept; moved contact, address, activities and description to that source",
+        "primary_categories sports -> general: it is a general day camp, gymnastics is one activity among several",
+        "Rewrote description_short to describe the summer camp only (dropped the separate training and vacation camps)"
+      ],
+      "for_andrew": [
+        "2026 dates and prices are in two PDF flyers linked from camps-summer.aspx (Little Star preschool, Rising Star school age); not captured as sessions"
+      ]
+    }
   }
 }

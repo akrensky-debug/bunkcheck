@@ -44,7 +44,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "drop",
     "source": {
       "url": "https://easternusa.salvationarmy.org/massachusetts/fall-river/camp-summerprograms/",
       "kind": "html",
@@ -83,6 +83,14 @@
       "missing required camp_type",
       "missing required season_year",
       "camp_type must be one of ['day', 'sleepaway', 'specialty']"
-    ]
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://easternusa.salvationarmy.org/massachusetts/fall-river/camp-summerprograms/",
+      "changes": [],
+      "for_andrew": [],
+      "drop_reason": "Duplicate of salvation-army-camp-wonderland in data/camps/boston.json (same camp, same campintouch registration URL); this source is a Salvation Army Fall River Corps page, not the camp site"
+    }
   }
 }
