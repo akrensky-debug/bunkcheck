@@ -34,17 +34,87 @@
   "price_per": "week",
   "sessions": [
     {
-      "name": "Winter ZooCrew: Nature's Weirdos",
-      "start_date": "2026-02-17",
-      "end_date": "2026-02-20",
-      "price": 240,
+      "name": "Budding Scientists (ages 6-7)",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": 350,
       "availability": "unknown"
     },
     {
-      "name": "Spring ZooCrew: The Most Extreme: Builders",
-      "start_date": "2026-04-21",
-      "end_date": "2026-04-24",
-      "price": 240,
+      "name": "Sense-ational Animals (ages 8-9)",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": 350,
+      "availability": "unknown"
+    },
+    {
+      "name": "In My Backyard (ages 4-5)",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": 350,
+      "availability": "unknown"
+    },
+    {
+      "name": "Mythical Creatures (ages 6-7)",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": 350,
+      "availability": "unknown"
+    },
+    {
+      "name": "Animal Mythbusters (ages 8-9)",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": 350,
+      "availability": "unknown"
+    },
+    {
+      "name": "Wildlife Warriors (ages 10-12)",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": 350,
+      "availability": "unknown"
+    },
+    {
+      "name": "Survivor! (ages 8-9)",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": 350,
+      "availability": "unknown"
+    },
+    {
+      "name": "Where the Wild Things Are (ages 4-5)",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": 350,
+      "availability": "unknown"
+    },
+    {
+      "name": "Great Adaptations (ages 10-12)",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": 350,
+      "availability": "unknown"
+    },
+    {
+      "name": "Where in the World (ages 6-7)",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": 350,
+      "availability": "unknown"
+    },
+    {
+      "name": "Once Upon a Story (ages 4-5)",
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-14",
+      "price": 350,
+      "availability": "unknown"
+    },
+    {
+      "name": "ZooCrew Time Machine (ages 10-12)",
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-14",
+      "price": 350,
       "availability": "unknown"
     }
   ],
@@ -81,7 +151,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.bpzoo.org/education-and-conservation/for-families/zoocrew/",
       "kind": "html",
@@ -130,6 +200,17 @@
         "quote": "Cost: $60/day – Members receive a 15% discount"
       }
     ],
-    "errors": []
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.bpzoo.org/education-and-conservation/for-families/zoocrew/",
+      "changes": [
+        "Replaced the two school-vacation sessions (Feb 17-20 and Apr 21-24, 2026) with the twelve 2026 Summer ZooCrew weeks listed on the page (July 6-August 14, by age group), each at the $350 full-day weekly price."
+      ],
+      "for_andrew": [
+        "Session price is the full-day rate; half day is $175/week (ages 4-5 only), members get 15% off. New Bedford is about 30 miles from Providence, at the edge of the area."
+      ]
+    }
   }
 }
