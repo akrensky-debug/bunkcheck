@@ -29,7 +29,7 @@
     "Strings instruction"
   ],
   "price_per_week": 475,
-  "price_min": 250,
+  "price_min": 380,
   "price_max": 950,
   "financial_aid": true,
   "extended_care": true,
@@ -55,13 +55,6 @@
       "start_date": "2026-07-20",
       "end_date": "2026-07-24",
       "price": 500,
-      "availability": "unknown"
-    },
-    {
-      "name": "Moses Brown Summer String Orchestras (MBSSO), Tuesdays 5:30-7:30pm, Elementary-High School",
-      "start_date": "2026-06-23",
-      "end_date": "2026-08-11",
-      "price": 250,
       "availability": "unknown"
     },
     {
@@ -110,7 +103,7 @@
   "sources": [
     {
       "url": "https://www.camps.mosesbrown.org/arts",
-      "checked": "2026-10-13",
+      "checked": "2026-10-27",
       "fields": [
         "name",
         "operator_name",
@@ -149,7 +142,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.camps.mosesbrown.org/arts",
       "kind": "html",
@@ -247,6 +240,17 @@
         "quote": "Weeks: June 15 (no camp June 19) and August 10"
       }
     ],
-    "errors": []
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.camps.mosesbrown.org/arts",
+      "changes": [
+        "Removed the Moses Brown Summer String Orchestras session (Tuesday evenings 5:30-7:30, June 23 - Aug 11, $250): it is a weekly evening ensemble, not a camp week.",
+        "price_min changed from 250 (the MBSSO fee) to 380 (Project FashionWorks ages 8-12, the lowest full-week camp price).",
+        "season_year 2026 kept: the page shows no year, but 'no camp June 19' (Juneteenth, a Friday) and 'no camp July 3' match the 2026 calendar."
+      ],
+      "for_andrew": []
+    }
   }
 }

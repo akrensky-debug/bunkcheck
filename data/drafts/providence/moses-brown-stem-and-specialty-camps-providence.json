@@ -269,7 +269,7 @@
   "sources": [
     {
       "url": "https://www.camps.mosesbrown.org/stemandspecialty",
-      "checked": "2026-10-13",
+      "checked": "2026-10-27",
       "fields": [
         "name",
         "operator_name",
@@ -307,7 +307,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.camps.mosesbrown.org/stemandspecialty",
       "kind": "html",
@@ -358,6 +358,15 @@
         "quote": "Financial Aid and Camp Discounts"
       }
     ],
-    "errors": []
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.camps.mosesbrown.org/stemandspecialty",
+      "changes": [
+        "Checked every field and session against the page; no changes. Year is not printed but 'no camp June 19' matches 2026."
+      ],
+      "for_andrew": []
+    }
   }
 }

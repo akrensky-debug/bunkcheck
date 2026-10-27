@@ -43,13 +43,15 @@
         "transportation",
         "financial_aid",
         "refund_policy_summary",
-        "sessions"
+        "sessions",
+        "email"
       ],
       "note": "Drafted by the listing tool from this page"
     }
   ],
+  "email": "campadmin@attleboroymca.org",
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.attleboroymca.org/camps/camp-finberg",
       "kind": "html",
@@ -88,6 +90,18 @@
         "quote": "Deposits are transferable to other weeks."
       }
     ],
-    "errors": []
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.attleboroymca.org/camps/camp-finberg",
+      "changes": [
+        "Added email campadmin@attleboroymca.org (now shown on the page)",
+        "Checked the rest: June 1 - Aug 28 2026 season, 2/3/5-day registration, hours with before/after care, financial aid form, bus schedule link and change-fee policy all match"
+      ],
+      "for_andrew": [
+        "Ages and prices are only in the linked 2026 Camp Guide PDF; not captured"
+      ]
+    }
   }
 }

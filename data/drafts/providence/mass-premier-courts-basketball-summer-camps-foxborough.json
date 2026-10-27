@@ -24,7 +24,7 @@
   "sources": [
     {
       "url": "https://masspremiercourts.com/basketball/camps/",
-      "checked": "2026-10-13",
+      "checked": "2026-10-27",
       "fields": [
         "name",
         "operator_name",
@@ -44,7 +44,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://masspremiercourts.com/basketball/camps/",
       "kind": "html",
@@ -77,6 +77,17 @@
     ],
     "errors": [
       "missing required season_year"
-    ]
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://masspremiercourts.com/basketball/camps/",
+      "changes": [
+        "Checked fields against the page; no changes (email, phone and address are on the page)."
+      ],
+      "for_andrew": [
+        "No season_year can be set: the page says 'Check back soon for details on our summer camps' and shows no dates, ages or prices (footer is (c) 2023). Recheck in spring 2027 or drop."
+      ]
+    }
   }
 }

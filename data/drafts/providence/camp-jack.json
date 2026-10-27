@@ -5,9 +5,9 @@
   "website_url": "https://peopleincfr.org/services/diabetes-association-inc/camp-jack/",
   "registration_url": "https://campjack.funjoin.app/sign-in",
   "phone": "(508) 679-5233",
-  "city": null,
-  "state": null,
-  "zip": null,
+  "city": "Assonet",
+  "state": "MA",
+  "zip": "02702",
   "season_year": 2026,
   "sources": [
     {
@@ -21,10 +21,61 @@
         "phone"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://peopleincfr.org/wp-content/uploads/Camp-Jack-Brochure-2-1.pdf",
+      "checked": "2026-10-27",
+      "fields": [
+        "email",
+        "street_address",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "age_min",
+        "age_max",
+        "activities",
+        "description_short",
+        "financial_aid",
+        "special_needs_notes",
+        "aca_accredited",
+        "aca_source_url",
+        "swim_waterfront_notes"
+      ]
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=127+North+Main+Street&city=Assonet&state=MA&benchmark=Public_AR_Current&format=json",
+      "checked": "2026-10-27",
+      "fields": [
+        "zip"
+      ]
     }
   ],
+  "email": "emartins@peopleincfr.org",
+  "street_address": "127 North Main Street",
+  "camp_type": "day",
+  "primary_categories": [
+    "special_needs"
+  ],
+  "age_min": 5,
+  "age_max": 14,
+  "activities": [
+    "arts and crafts",
+    "swimming",
+    "nature exploration",
+    "team building",
+    "sports",
+    "physical fitness",
+    "theme weeks"
+  ],
+  "description_short": "The Jack Rua Camp for Children with Diabetes: a six-week July-August day camp for kids with type 1 diabetes ages 5-14, plus their siblings and friends, held at the Camp Welch site in Assonet, MA. Campers do theme weeks with sports, swimming, crafts and nature while learning diabetes management, with nurses on site.",
+  "financial_aid": true,
+  "special_needs_notes": "Built for children with type 1 diabetes: a lead RN, an RN and an LPN on site, a physician assistant as health care consultant, staff trained in T1D management, and snacks and meals planned for diabetes management. Campers must have T1D or be a sibling, relative or close friend of a camper with T1D.",
+  "swim_waterfront_notes": "Campers have access to swimming pools. The brochure does not describe swim tests or lifeguarding.",
+  "aca_accredited": true,
+  "aca_source_url": "https://peopleincfr.org/wp-content/uploads/Camp-Jack-Brochure-2-1.pdf",
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://peopleincfr.org/services/diabetes-association-inc/camp-jack/",
       "kind": "html",
@@ -56,12 +107,22 @@
       "2027 registration opening date"
     ],
     "low_confidence": [],
-    "errors": [
-      "missing required city",
-      "missing required state",
-      "missing required zip",
-      "missing required camp_type",
-      "camp_type must be one of ['day', 'sleepaway', 'specialty']"
-    ]
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://peopleincfr.org/services/diabetes-association-inc/camp-jack/",
+      "changes": [
+        "Read the camp brochure PDF linked from the page (new source): location is the Camp Welch site, 127 North Main Street, Assonet, MA; ages 5-14; T1D focus; ACA accredited; financial assistance; activities; director email",
+        "camp_type day, primary_categories special_needs from the brochure",
+        "zip 02702 from the US Census geocoder for 127 N Main St, Assonet (own source)",
+        "Wrote description_short, special_needs_notes and swim_waterfront_notes from the brochure"
+      ],
+      "for_andrew": [
+        "The brochure is the 2025 edition (its theme weeks are dated 2025); confirm ages, location and ACA status still hold. The page itself only says 'First Day of Camp: Monday, July 6th, 2026'",
+        "Brochure price is $230 per week per camper (2025 edition); left out of price fields because it may not be the 2026 rate",
+        "Same site as the Camp Welch draft (Fall River Boys & Girls Club); they are separate programs"
+      ]
+    }
   }
 }

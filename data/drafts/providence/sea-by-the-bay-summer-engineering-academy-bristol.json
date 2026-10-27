@@ -40,7 +40,7 @@
   "sources": [
     {
       "url": "https://www.rwu.edu/summer-camps/sea-bay",
-      "checked": "2026-10-13",
+      "checked": "2026-10-27",
       "fields": [
         "name",
         "operator_name",
@@ -65,7 +65,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.rwu.edu/summer-camps/sea-bay",
       "kind": "html",
@@ -121,6 +121,17 @@
         "quote": "Contact Us 1-800-458-7144"
       }
     ],
-    "errors": []
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.rwu.edu/summer-camps/sea-bay",
+      "changes": [],
+      "for_andrew": [
+        "Page says 'July 11-16' with no year and 'Registration Coming Soon'; recorded as 2027 (RWU's Forensic Science camp page lists Session 1 as July 11-16, 2027). Confirm.",
+        "Cost $1995 is not dated; the sister Forensic camp page pairs the same $1,995 with 2026 payment deadlines, so it may be the 2026 price.",
+        "Registration link is the same shared RWU summer-camp form used by the Forensic Science camp; phone/address are RWU general contacts."
+      ]
+    }
   }
 }

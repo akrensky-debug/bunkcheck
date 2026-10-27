@@ -66,7 +66,7 @@
   "sources": [
     {
       "url": "https://rownbc.org/row-with-nbc/youth-rowing/summer-camp/",
-      "checked": "2026-10-13",
+      "checked": "2026-10-27",
       "fields": [
         "name",
         "operator_name",
@@ -88,7 +88,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://rownbc.org/row-with-nbc/youth-rowing/summer-camp/",
       "kind": "html",
@@ -154,6 +154,17 @@
         "quote": "Waitlist only!"
       }
     ],
-    "errors": []
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://rownbc.org/row-with-nbc/youth-rowing/summer-camp/",
+      "changes": [
+        "Checked every field and the six weekly sessions against the page; no changes. The page prints no year; June 22-26 etc. are Monday-Friday weeks in 2026, so season_year 2026 kept."
+      ],
+      "for_andrew": [
+        "No price is shown on the camp page."
+      ]
+    }
   }
 }

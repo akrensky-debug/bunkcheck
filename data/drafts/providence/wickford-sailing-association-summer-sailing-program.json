@@ -3,12 +3,12 @@
   "name": "Wickford Sailing Association Summer Sailing Program",
   "operator_name": "Wickford Sailing Association",
   "website_url": "https://wickfordsailing.org/",
-  "city": null,
+  "city": "Wickford",
   "state": "RI",
-  "zip": null,
+  "zip": "02852",
   "camp_type": "specialty",
   "primary_categories": [
-    "sports"
+    "sailing"
   ],
   "description_short": "Summer sailing classes for young sailors of all abilities, from half-day Minnows to Opti racing and 420s, plus an adult class. Full-day classes run 9 am to 4 pm.",
   "activities": [
@@ -20,6 +20,19 @@
   ],
   "financial_aid": true,
   "season_year": 2026,
+  "street_address": "165 Pleasant Street",
+  "phone": "(401) 372-7224",
+  "age_min": 5,
+  "age_max": 17,
+  "sessions": [
+    {
+      "name": "Summer Sailing Program 2026",
+      "start_date": "2026-06-22",
+      "end_date": "2026-08-14",
+      "price": null,
+      "availability": "unknown"
+    }
+  ],
   "sources": [
     {
       "url": "https://wickfordsailing.org/",
@@ -33,13 +46,32 @@
         "primary_categories",
         "activities",
         "description_short",
-        "financial_aid"
+        "financial_aid",
+        "sessions"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://wickfordsailing.org/contact/",
+      "checked": "2026-10-27",
+      "fields": [
+        "street_address",
+        "city",
+        "zip",
+        "phone"
+      ]
+    },
+    {
+      "url": "https://wickfordsailing.org/classes/",
+      "checked": "2026-10-27",
+      "fields": [
+        "age_min",
+        "age_max"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://wickfordsailing.org/",
       "kind": "html",
@@ -65,9 +97,22 @@
     ],
     "low_confidence": [],
     "errors": [
-      "missing required city",
-      "missing required zip",
-      "city None, RI is not in cities.py"
-    ]
+      "city 'Wickford', RI is not in cities.py"
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://wickfordsailing.org/ (and /contact/, /classes/)",
+      "changes": [
+        "primary_categories sports -> sailing (sailing is its own category).",
+        "Added address 165 Pleasant Street, Wickford, RI 02852 and phone from the contact page.",
+        "Added ages 5-17 from the youth class list on /classes/ (Minnows 5-7 up to 420/Opti Racers 13-17; the adult class is not counted).",
+        "Added the program dates June 22-August 14, 2026 from the home page."
+      ],
+      "for_andrew": [
+        "City 'Wickford' (as the contact page gives it) is not in cities.py; Wickford is a village of North Kingstown (which is in cities.py). Decide whether to use North Kingstown or add Wickford.",
+        "Class prices are on the individual class pages, not checked here."
+      ]
+    }
   }
 }

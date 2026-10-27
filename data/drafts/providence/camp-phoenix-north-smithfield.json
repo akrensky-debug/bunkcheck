@@ -110,7 +110,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.campphoenixonline.com/",
       "kind": "html",
@@ -163,6 +163,15 @@
         "quote": "$220 per week ... Applies when a camper attends 3 or more days during the week."
       }
     ],
-    "errors": []
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.campphoenixonline.com/",
+      "changes": [
+        "No changes: grades K-7, 2026 'Year 21' weekly themes and dates, $220/week rate, phone and address all match; zip already from the Census geocoder"
+      ],
+      "for_andrew": []
+    }
   }
 }

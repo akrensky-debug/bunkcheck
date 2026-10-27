@@ -10,9 +10,7 @@
   "state": "MA",
   "zip": "02035",
   "camp_type": "day",
-  "primary_categories": [
-    "arts"
-  ],
+  "primary_categories": null,
   "age_min": 3,
   "grade_max": 5,
   "description_short": "A summer program at The Sage School in Foxboro, MA, with weekly themes, for children ages 3–4 through Grade 5. Children who don't attend Sage can enroll, and extended care is offered.",
@@ -21,7 +19,7 @@
   "sources": [
     {
       "url": "https://sageschool.org/program/summer-sage/",
-      "checked": "2026-10-13",
+      "checked": "2026-10-27",
       "fields": [
         "name",
         "operator_name",
@@ -33,17 +31,17 @@
         "state",
         "zip",
         "camp_type",
-        "primary_categories",
         "age_min",
         "grade_max",
         "description_short",
-        "extended_care"
+        "extended_care",
+        "sessions"
       ],
       "note": "Drafted by the listing tool from this page"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://sageschool.org/program/summer-sage/",
       "kind": "html",
@@ -102,6 +100,28 @@
         "quote": "Week 1: Stage, Studio, & Beyond"
       }
     ],
-    "errors": []
-  }
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://sageschool.org/program/summer-sage/",
+      "changes": [
+        "Removed primary_categories \"arts\": a guess from 2026 theme names (themes range from spy school to games), not stated on the page",
+        "Added the 2027 season session June 21 - August 13, 2027 stated on the page"
+      ],
+      "for_andrew": [
+        "Age groups (3-4 through Grade 5) are from the 2026 section; page says more 2027 info is coming soon",
+        "No prices or daily hours on the page"
+      ]
+    }
+  },
+  "sessions": [
+    {
+      "name": "Summer Sage 2027 (full season)",
+      "start_date": "2027-06-21",
+      "end_date": "2027-08-13",
+      "price": null,
+      "availability": "unknown"
+    }
+  ]
 }
