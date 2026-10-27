@@ -11,7 +11,9 @@
   "zip": "02895",
   "grade_min": 0,
   "grade_max": 8,
-  "description_short": "Connecting for Children & Families, a Woonsocket non-profit, runs three summer camps by grade: Camp Discovery (K-2), Chillin' and Skillin' (3-5) and Get Connected (6-8). The camps run for six weeks, from July through mid-August.",
+  "description_short": "Connecting for Children & Families, a Woonsocket non-profit, runs summer learning camps by grade: Camp Discovery (K-2), Chillin' and Skillin' (3-5) and Get Connected (6-8), a career-exploration camp. Camps run July through mid-August.",
+  "camp_type": "day",
+  "season_year": 2026,
   "sources": [
     {
       "url": "https://www.ccfcenter.org/summer-camps",
@@ -28,13 +30,14 @@
         "zip",
         "grade_min",
         "grade_max",
+        "camp_type",
         "description_short"
       ],
       "note": "Drafted by the listing tool from this page"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.ccfcenter.org/summer-camps",
       "kind": "html",
@@ -59,10 +62,19 @@
       "Availability"
     ],
     "low_confidence": [],
-    "errors": [
-      "missing required camp_type",
-      "missing required season_year",
-      "camp_type must be one of ['day', 'sleepaway', 'specialty']"
-    ]
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.ccfcenter.org/summer-camps",
+      "changes": [
+        "Set camp_type day: local summer learning programs in Woonsocket, no overnight stay mentioned (also read /summer-camps/grades-k-5 and /grades-6-thru-8)",
+        "Set season_year 2026: grade pages link 2026 registration forms",
+        "Description: dropped \"six weeks\" for all camps since Get Connected is a 4-week camp per the grades 6-8 page"
+      ],
+      "for_andrew": [
+        "camp_type day is inferred, not stated in those words; no dates or prices on the pages (registration is by 2026 .docx forms)"
+      ]
+    }
   }
 }

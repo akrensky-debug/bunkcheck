@@ -79,7 +79,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.watupparowingcenter.org/summer-rowing",
       "kind": "html",
@@ -117,6 +117,16 @@
       "missing required city",
       "missing required state",
       "missing required zip"
-    ]
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.watupparowingcenter.org/summer-rowing (HTTP 429 bot check; not read)",
+      "changes": [],
+      "for_andrew": [
+        "refused: ask the owner for the brochure (site answered HTTP 429 'Checking Your Request')",
+        "City, state and ZIP are still missing (Watuppa Rowing Center is presumably Fall River, MA, but nothing read confirms it); 2027 sessions and free price are unchecked."
+      ]
+    }
   }
 }

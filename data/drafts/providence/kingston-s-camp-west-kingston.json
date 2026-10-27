@@ -25,12 +25,11 @@
   "sources": [
     {
       "url": "https://www.kingstonscamp.com/kingstons-camp-home",
-      "checked": "2026-10-13",
+      "checked": "2026-10-27",
       "fields": [
         "name",
         "website_url",
         "registration_url",
-        "email",
         "phone",
         "street_address",
         "city",
@@ -48,10 +47,29 @@
         "zip"
       ],
       "note": "ZIP from the US Census geocoder for 2795 MINISTERIAL RD, WEST KINGSTON, RI, 02892"
+    },
+    {
+      "url": "https://www.kingstonscamp.com/kc-camp-registration-pricing",
+      "checked": "2026-10-27",
+      "fields": [
+        "email",
+        "camp_type",
+        "age_min",
+        "age_max",
+        "grade_min",
+        "grade_max",
+        "price_min",
+        "price_max",
+        "price_per",
+        "extended_care",
+        "financial_aid",
+        "refund_policy_summary",
+        "sessions"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.kingstonscamp.com/kingstons-camp-home",
       "kind": "html",
@@ -85,9 +103,102 @@
         "quote": "within an all outdoor camp environment"
       }
     ],
-    "errors": [
-      "missing required camp_type",
-      "camp_type must be one of ['day', 'sleepaway', 'specialty']"
-    ]
-  }
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.kingstonscamp.com/kc-camp-registration-pricing",
+      "changes": [
+        "Set camp_type day: Monday-Friday 9:00am-3:00pm weekly sessions (pricing page).",
+        "Added ages 4-14 / grades K-9 (Main Program K-6 ages 4-11; Middle School Gopher Program grades 7-9 ages 12-14).",
+        "Added price_min 205 / price_max 350 per week (three-tier pricing for both programs), extended_care true (early drop-off/late pickup), financial_aid true (tiered pricing plus extra assistance on request), refund policy.",
+        "Added the 10 weekly 2026 sessions (June 22 - Aug 28); availability left unknown because the Elementary program was waitlisted but Middle School still had space.",
+        "email moved to the pricing page source, where it appears."
+      ],
+      "for_andrew": []
+    }
+  },
+  "camp_type": "day",
+  "age_min": 4,
+  "age_max": 14,
+  "grade_min": 0,
+  "grade_max": 9,
+  "price_min": 205,
+  "price_max": 350,
+  "price_per": "week",
+  "extended_care": true,
+  "financial_aid": true,
+  "refund_policy_summary": "A $30 yearly registration fee and $30/week deposits are non-refundable. Program fees are fully refundable until June 1; no refunds for missed days, weather closures or withdrawal. Fees and deposits are refunded if camp cancels a week.",
+  "sessions": [
+    {
+      "name": "Week 1",
+      "start_date": "2026-06-22",
+      "end_date": "2026-06-26",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 2",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-03",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 3",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 4",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 5",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 6",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 7",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 8",
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-14",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 9",
+      "start_date": "2026-08-17",
+      "end_date": "2026-08-21",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 10 (bonus week at Larkin's Pond Beach Club, grades K-6, 9am-3pm)",
+      "start_date": "2026-08-24",
+      "end_date": "2026-08-28",
+      "price": null,
+      "availability": "unknown"
+    }
+  ]
 }

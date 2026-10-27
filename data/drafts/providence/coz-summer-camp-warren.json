@@ -31,6 +31,7 @@
   ],
   "price_min": 47,
   "price_max": 58,
+  "season_year": 2026,
   "sources": [
     {
       "url": "https://www.bwrsd.org/families1/family-resource-center/coz-summer-camp",
@@ -58,7 +59,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.bwrsd.org/families1/family-resource-center/coz-summer-camp",
       "kind": "html",
@@ -102,8 +103,17 @@
         "quote": "exploring art, music, science, sports, community service, fitness, gardening, reading, and more"
       }
     ],
-    "errors": [
-      "missing required season_year"
-    ]
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.bwrsd.org/families1/family-resource-center/coz-summer-camp",
+      "changes": [
+        "Set season_year 2026: page thanks families for the summer just ended and says 2027 info comes in March 2027; prices $47/$58 are from that season"
+      ],
+      "for_andrew": [
+        "$58 Full Day / $47 Mini Day are shown without a unit (likely per day); price_per left unset. 2027 info due March 2027"
+      ]
+    }
   }
 }

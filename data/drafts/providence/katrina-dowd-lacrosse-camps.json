@@ -1,35 +1,50 @@
 {
   "slug": "katrina-dowd-lacrosse-camps",
   "name": "Katrina Dowd Lacrosse Camps",
-  "website_url": "https://www.bearswlaxcamps.com/camps.cfm",
-  "city": null,
-  "state": null,
+  "website_url": "https://www.bearswlaxcamps.com/elite-summer-camp.cfm",
+  "city": "Providence",
+  "state": "RI",
   "zip": null,
   "camp_type": "specialty",
   "primary_categories": [
     "sports"
   ],
-  "description_short": "Lacrosse camps run under head coach Katrina Dowd. The site links to Brown Women's Lacrosse and lists an Elite Summer Camp.",
+  "description_short": "One-day Elite Summer Camps for lacrosse players in grades 8-12 at Brown University's Stevenson-Pincince Field in Providence, coached by current Brown women's lacrosse staff and players through skill stations and live game play. Camp runs 10:00 am to 4:00 pm.",
   "activities": [
     "Lacrosse"
   ],
   "sources": [
     {
       "url": "https://www.bearswlaxcamps.com/camps.cfm",
-      "checked": "2026-10-13",
+      "checked": "2026-10-27",
       "fields": [
         "name",
-        "website_url",
         "camp_type",
         "primary_categories",
-        "activities",
-        "description_short"
+        "activities"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.bearswlaxcamps.com/elite-summer-camp.cfm",
+      "checked": "2026-10-27",
+      "fields": [
+        "website_url",
+        "city",
+        "state",
+        "email",
+        "grade_min",
+        "grade_max",
+        "price_min",
+        "price_max",
+        "price_per",
+        "description_short",
+        "sessions"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.bearswlaxcamps.com/camps.cfm",
       "kind": "html",
@@ -64,10 +79,52 @@
       }
     ],
     "errors": [
-      "missing required city",
-      "missing required state",
-      "missing required zip",
-      "missing required season_year"
-    ]
-  }
+      "missing required zip"
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.bearswlaxcamps.com/elite-summer-camp.cfm",
+      "changes": [
+        "Read the Elite Summer Camp page (the listing page itself only says 'no upcoming events'); website_url now points there.",
+        "Added city Providence / state RI (location: Stevenson-Pincince Field, Providence RI), email, grades 8-12, and the three 2026 one-day sessions (June 29, July 13, Aug 23) at $296.50 ($275 + $21.50 fees).",
+        "Set season_year 2026, price_min/price_max 296.5 per session; rewrote description_short from the camp page."
+      ],
+      "for_andrew": [
+        "ZIP is still missing: the site names Stevenson-Pincince Field, Providence RI but gives no street address, so the geocoder cannot be used; a person needs to supply the field's address/ZIP.",
+        "These are single-day camps for grades 8-12; confirm they count as a summer camp listing.",
+        "gender_policy left null: the camp is run by Brown Women's Lacrosse coaches but the page says camps are open to all entrants."
+      ]
+    }
+  },
+  "email": "Katrinadowdlaxcamps@gmail.com",
+  "grade_min": 8,
+  "grade_max": 12,
+  "price_min": 296.5,
+  "price_max": 296.5,
+  "price_per": "session",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Elite Summer Camp",
+      "start_date": "2026-06-29",
+      "end_date": "2026-06-29",
+      "price": 296.5,
+      "availability": "unknown"
+    },
+    {
+      "name": "Elite Summer Camp",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-13",
+      "price": 296.5,
+      "availability": "unknown"
+    },
+    {
+      "name": "Elite Summer Camp",
+      "start_date": "2026-08-23",
+      "end_date": "2026-08-23",
+      "price": 296.5,
+      "availability": "unknown"
+    }
+  ]
 }

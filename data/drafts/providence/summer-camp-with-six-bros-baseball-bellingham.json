@@ -7,7 +7,7 @@
   "street_address": "Harpin St. Fields",
   "city": "Bellingham",
   "state": "MA",
-  "zip": null,
+  "zip": "02019",
   "camp_type": "specialty",
   "primary_categories": [
     "sports"
@@ -42,7 +42,7 @@
   "sources": [
     {
       "url": "https://www.bellinghamyouthbaseball.com/bellinghamyouthbaseball/CampsandClinics",
-      "checked": "2026-10-13",
+      "checked": "2026-10-27",
       "fields": [
         "name",
         "operator_name",
@@ -64,10 +64,18 @@
         "sessions"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.census.gov/geographies/reference-files/time-series/geo/relationship-files.2020.html",
+      "checked": "2026-10-27",
+      "fields": [
+        "zip"
+      ],
+      "note": "Bellingham, MA sits inside one ZIP code (2020 Census ZCTA relationship file)"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.bellinghamyouthbaseball.com/bellinghamyouthbaseball/CampsandClinics",
       "kind": "html",
@@ -147,8 +155,17 @@
         "quote": "Regular Price (per week): $250"
       }
     ],
-    "errors": [
-      "missing required zip"
-    ]
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.bellinghamyouthbaseball.com/bellinghamyouthbaseball/CampsandClinics",
+      "changes": [
+        "Filled zip 02019: Bellingham, MA has one ZIP code (2020 Census, same rule as campfinder/ingest/fill.py); Harpin St. Fields has no street number to geocode"
+      ],
+      "for_andrew": [
+        "Page says \"Stay tuned for 2027 Registration\"; refresh dates and prices when posted"
+      ]
+    }
   }
 }

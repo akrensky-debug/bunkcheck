@@ -5,10 +5,10 @@
   "website_url": "https://www.elementslearning.org/summer",
   "email": "info@elementslearning.org",
   "phone": "508-441-4660",
-  "street_address": "Round The Bend Farm",
+  "street_address": "92 Allen’s Neck Rd.",
   "city": "South Dartmouth",
   "state": "MA",
-  "zip": null,
+  "zip": "02748",
   "camp_type": "day",
   "primary_categories": [
     "nature",
@@ -128,14 +128,13 @@
   "sources": [
     {
       "url": "https://www.elementslearning.org/summer",
-      "checked": "2026-10-13",
+      "checked": "2026-10-27",
       "fields": [
         "name",
         "operator_name",
         "website_url",
         "email",
         "phone",
-        "street_address",
         "city",
         "state",
         "camp_type",
@@ -153,10 +152,18 @@
         "sessions"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.elementslearning.org/contact",
+      "checked": "2026-10-27",
+      "fields": [
+        "street_address",
+        "zip"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.elementslearning.org/summer",
       "kind": "html",
@@ -228,8 +235,18 @@
         "quote": "2026 Dates: July 7 - August 13. Tues, Wed, & Thurs only | Time: 9am-3pm"
       }
     ],
-    "errors": [
-      "missing required zip"
-    ]
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.elementslearning.org/summer",
+      "changes": [
+        "Filled street_address 92 Allen’s Neck Rd. and zip 02748 from the \"Where to Find Us\" address on elementslearning.org/contact (replaces the place name \"Round The Bend Farm\")"
+      ],
+      "for_andrew": [
+        "Page says Summer 2027 information comes in early January; refresh then",
+        "Session prices use the Tier 2 rate ($250); sliding scale is $215-$270"
+      ]
+    }
   }
 }

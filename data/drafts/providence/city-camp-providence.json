@@ -22,6 +22,7 @@
   "price_min": 0,
   "price_max": 0,
   "price_per": "week",
+  "season_year": 2026,
   "sources": [
     {
       "url": "https://www.eccri.org/citycamp",
@@ -48,7 +49,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.eccri.org/citycamp",
       "kind": "html",
@@ -75,8 +76,19 @@
     ],
     "low_confidence": [],
     "errors": [
-      "missing required zip",
-      "missing required season_year"
-    ]
+      "missing required zip"
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.eccri.org/citycamp",
+      "changes": [
+        "Set season_year 2026: page thanks families for the summer just ended (site menu shows Fall 2026); no dates shown"
+      ],
+      "for_andrew": [
+        "zip missing: site is Joslin Park, Florence Street, Providence with no street number, so the Census geocoder cannot place it (Olneyville is likely 02909, not confirmed)",
+        "Open only to children living in Olneyville and Manton; no 2027 dates posted"
+      ]
+    }
   }
 }

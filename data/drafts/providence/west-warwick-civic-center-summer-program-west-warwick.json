@@ -50,7 +50,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://westwarwickri.gov/civic-center",
       "kind": "html",
@@ -85,6 +85,17 @@
         "quote": "Phone: 401-822-9200 | Fax: 401-822-9266"
       }
     ],
-    "errors": []
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://westwarwickri.gov/civic-center",
+      "changes": [
+        "No changes: name, dates (June 16-August 14, 2026), hours, location, extended care and 'FULL' availability match the page."
+      ],
+      "for_andrew": [
+        "Phone 401-822-9200 is the town hall number from the page footer, not a camp-specific line. No ages or prices on the page."
+      ]
+    }
   }
 }
