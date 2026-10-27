@@ -21,7 +21,7 @@
   "sources": [
     {
       "url": "https://gfrrec.org/sailing-2/",
-      "checked": "2026-10-13",
+      "checked": "2026-10-27",
       "fields": [
         "name",
         "operator_name",
@@ -41,7 +41,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://gfrrec.org/sailing-2/",
       "kind": "html",
@@ -80,6 +80,17 @@
     "errors": [
       "missing required zip",
       "missing required season_year"
-    ]
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://gfrrec.org/sailing-2/",
+      "changes": [],
+      "for_andrew": [
+        "Page has no season year, dates, ages or prices ('Spring & Summer Sailing' only); the brochure embed (Flipsnack) fails to load. season_year and ZIP stay missing.",
+        "Sailing is at RE-CREATION's Boathouse, Heritage State Park, Fall River, with no street address/ZIP on the page (org office is 45 Rock St, Fall River, MA 02720).",
+        "Not clear the program is for kids specifically; site footer is (c) 2017 and the page may be stale. Call 508-679-0922 x148 to confirm it still runs."
+      ]
+    }
   }
 }

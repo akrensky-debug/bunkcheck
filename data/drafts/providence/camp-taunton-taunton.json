@@ -66,7 +66,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.oldcolonyymca.org/child-care-camps/camps/camp-taunton",
       "kind": "html",
@@ -109,6 +109,17 @@
     ],
     "errors": [
       "missing required season_year"
-    ]
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.oldcolonyymca.org/child-care-camps/camps/camp-taunton",
+      "changes": [
+        "No field changes: address, phone, activities, no transportation ('Transportation is currently not available') and daily bag lunch all match the page"
+      ],
+      "for_andrew": [
+        "season_year cannot be set: the newest material on the page is the 2025 brochure and 2025 family handbook (theme calendar is 2023); nothing for 2026 or 2027. Confirm the camp still runs and which season to list"
+      ]
+    }
   }
 }
