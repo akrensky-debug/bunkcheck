@@ -6,27 +6,89 @@
   "registration_url": "https://pawtucketri.gov/wp-content/uploads/2026/04/2026-REGISTRATION-PACKET-2026.pdf",
   "city": "Pawtucket",
   "state": "RI",
-  "zip": null,
-  "description_short": "A summer camp at Slater Park run by the City of Pawtucket. The city publishes an information and registration packet with dates and registration requirements.",
+  "zip": "02861",
+  "description_short": "A City of Pawtucket day camp at Slater Memorial Park for Pawtucket residents ages 6-13, weekdays 9am-2pm, in two 3-week sessions. Campers do sports, arts and crafts, games and nature walks, with lunch, pool trips and a camp T-shirt included and optional paid field trips.",
   "season_year": 2026,
   "sources": [
     {
       "url": "https://pawtucketri.gov/2026-slater-park-summer-camp-info-packet/",
-      "checked": "2026-10-13",
+      "checked": "2026-10-27",
       "fields": [
         "name",
         "operator_name",
         "website_url",
         "registration_url",
         "city",
-        "state",
-        "description_short"
+        "state"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://pawtucketri.gov/wp-content/uploads/2026/04/2026-REGISTRATION-PACKET-2026.pdf",
+      "checked": "2026-10-27",
+      "fields": [
+        "camp_type",
+        "street_address",
+        "zip",
+        "phone",
+        "primary_categories",
+        "age_min",
+        "age_max",
+        "activities",
+        "price_min",
+        "price_max",
+        "price_per",
+        "meals_included",
+        "description_short",
+        "sessions"
+      ]
+    }
+  ],
+  "camp_type": "day",
+  "street_address": "Slater Memorial Park, 825 Armistice Boulevard",
+  "phone": "401-728-0500 x253",
+  "primary_categories": [
+    "general"
+  ],
+  "age_min": 6,
+  "age_max": 13,
+  "activities": [
+    "Arts & crafts",
+    "Field games",
+    "Street hockey",
+    "Basketball",
+    "Baseball",
+    "Kickball",
+    "Soccer",
+    "Water games",
+    "Nature walks",
+    "Scavenger hunts",
+    "Pool trips",
+    "Field trips",
+    "Talent show"
+  ],
+  "price_min": 40,
+  "price_max": 80,
+  "price_per": "session",
+  "meals_included": true,
+  "sessions": [
+    {
+      "name": "Session 1",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-17",
+      "price": 40,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 2",
+      "start_date": "2026-07-20",
+      "end_date": "2026-08-07",
+      "price": 40,
+      "availability": "unknown"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://pawtucketri.gov/2026-slater-park-summer-camp-info-packet/",
       "kind": "html",
@@ -61,10 +123,18 @@
         "quote": "2026 REGISTRATION PACKET 2026"
       }
     ],
-    "errors": [
-      "missing required zip",
-      "missing required camp_type",
-      "camp_type must be one of ['day', 'sleepaway', 'specialty']"
-    ]
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://pawtucketri.gov/2026-slater-park-summer-camp-info-packet/",
+      "changes": [
+        "Read the linked 2026 registration packet PDF (same city site) and filled camp_type=day, ages 6-13, address (Slater Park Office, 825 Armistice Blvd, 02861), phone, activities, $40/session ($80 both), lunch included, and the two 2026 sessions; description rewritten from the packet."
+      ],
+      "for_andrew": [
+        "Camp is for Pawtucket residents only (proof of residency required).",
+        "Only the 2026 packet is posted; no 2027 dates yet. Optional field trips cost extra."
+      ]
+    }
   }
 }

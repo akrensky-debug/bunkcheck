@@ -63,7 +63,7 @@
       "start_date": "2027-07-26",
       "end_date": "2027-07-29",
       "price": 260,
-      "availability": "open"
+      "availability": "unknown"
     }
   ],
   "sources": [
@@ -97,7 +97,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.forecourtri.com/kids/summer-camp",
       "kind": "html",
@@ -153,6 +153,17 @@
         "quote": "(4 spots remain)"
       }
     ],
-    "errors": []
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.forecourtri.com/kids/summer-camp",
+      "changes": [
+        "Training Camp availability open -> unknown: \"4 spots remain\" sits under \"Updated May 26th\" and is likely left over from last season"
+      ],
+      "for_andrew": [
+        "Page is headed 2027 and the dates fit the 2027 calendar, but the \"Updated May 26th\" note suggests it may be a relabelled 2026 page; spot-check dates/prices in spring"
+      ]
+    }
   }
 }
