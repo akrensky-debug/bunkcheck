@@ -33,7 +33,7 @@ All in `campfinder/inquiries/service.py`, not in prompts.
 
 | Rule | How |
 | --- | --- |
-| Her yes comes first | `create()` only writes `pending`; only `confirm()` (CampFinder page) or `confirm_for_parent()` (approved partner keys) sends |
+| Her yes comes first | `create()` only writes `pending`; only `confirm()` (CampFinder page) or `confirm_for_parent()` (contracted partner keys, anonymous questions only) sends |
 | The channel is never the caller's | `site` for our agent and camp pages; `chatgpt`, `claude`, `assistant` from the MCP mount (`/chatgpt/mcp`, `/claude/mcp`, `/mcp`); `partner:<key name>` from the API key. Extra fields in the input are ignored |
 | No family identity through assistants | The question may not contain an email or phone number. Contact details are added only by the parent on CampFinder. Partner and MCP responses never include contact details or family ids, and neither does the confirm link's page (the link passes through the assistant), which only says whether she shared them |
 | Info kit only as a package | The assistant passes a share token (or the share link). We check it is live, not withdrawn, belongs to the family (when known) and, if it names a camp, that camp. The email carries the link; the preview shows field names only. A package withdrawn before delivery is left out. Opens are logged by the share link as before. The kit never reaches a model |
@@ -74,21 +74,29 @@ agent is not counted.
 A camp's billing choice is a `camp_inquiry_settings` row (no row: not opted in). There is no
 self-serve opt-in page yet; a person sets it after talking to the camp.
 
-## Open decisions for Andrew
+## Decided
 
-Both are built so either answer works; both default to the stricter answer.
+Andrew decided both on 5 November 2026.
 
-1. **Is a partner app's statement that the parent agreed enough, or must the confirm step always
-   run on CampFinder?** Today: always on CampFinder. To allow a partner, set
-   `api_clients.may_confirm_for_parent = true` for its key; it can then call
-   `POST /inquiries/{id}/confirm` with `parent_agreed: true`. Note: anyone holding the
-   `confirm_url` can press Send, and that includes an assistant that can browse. A stronger check
-   (sign-in or an emailed code) would be a separate change.
-2. **The API terms say partners must never send anything that identifies a family.** Today partners
-   can't: the question rejects contact details, and contact can be added only by the parent on
-   CampFinder. If the terms gain an exception for contact details the parent chooses to share in
-   an inquiry, set `api_clients.may_share_contact = true` for that key; it can then pass `contact`
-   when it confirms. The terms text in `docs/activity-api.md` is unchanged until Andrew decides.
+1. **Who confirms an inquiry: tiers.**
+   - **An anonymous question** (no info kit package, no contact details): a contracted partner
+     whose key has `api_clients.may_confirm_for_parent = true` may confirm it for the parent with
+     `POST /inquiries/{id}/confirm` and `parent_agreed: true`. The inquiry records which key made
+     the statement (`confirmed_by_client_id`, `confirmed_by_client_name`) and when
+     (`confirmed_at`, with `confirmed_via = 'partner'`), so records can be checked and the key
+     revoked. Contracted partners only.
+   - **An inquiry with an info kit package or contact details** always needs the parent's yes on
+     CampFinder: the confirm page, or our own card inside ChatGPT or Claude. `confirm_for_parent()`
+     refuses it (`403`, pointing to `confirm_url`) even for keys with `may_confirm_for_parent`.
+   - **Agents with no contract** (future pay-per-request use) always confirm on CampFinder.
+     `may_confirm_for_parent` is false by default; nothing else is built.
+
+   Note: anyone holding the `confirm_url` can press Send, and that includes an assistant that
+   can browse. A stronger check (sign-in or an emailed code) would be a separate change.
+2. **Contact details: no exception to the API terms.** Partners never send anything that
+   identifies a family. Contact details are added only by the parent on CampFinder.
+   `api_clients.may_share_contact` stays in the code but is false for every key, and a partner
+   confirmation that passes contact details is refused whatever the flag says.
 
 Also for Andrew, raised while building:
 

@@ -24,7 +24,8 @@ The default limit is 120 requests per minute; over it you get `429` with `Retry-
 
 Show the `attribution` text and link wherever you display CampFinder data. Tell families
 when a record is `unverified`. Send families to `url` or `registration_url` to register.
-Don't resell the data. Don't send us anything that identifies a family.
+Don't resell the data. Don't send us anything that identifies a family. Contact details reach a
+camp only when the parent adds them on CampFinder.
 
 ## Endpoints
 
@@ -141,7 +142,9 @@ POST /api/activity/v1/inquiries
   same camp is refused for a day (`409`); a camp that hasn't set up questions through CampFinder
   returns `409` with its own contact details.
 - **Confirming in your own app** (`POST /inquiries/{id}/confirm` with `{"parent_agreed": true}`)
-  is off for every key until CampFinder approves it (`403` otherwise).
+  is for contracted partners whose key CampFinder has approved (`403` otherwise), and only for an
+  anonymous question. An inquiry with a `kit_share_token` is always confirmed by the parent at
+  `confirm_url` (`403` if you try). We record which key confirmed and when.
 
 ## Also available over MCP
 

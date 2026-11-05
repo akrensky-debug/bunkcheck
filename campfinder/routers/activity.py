@@ -286,14 +286,15 @@ async def get_inquiry(inquiry_id: UUID, x_inquiry_token: str = Header(descriptio
 async def confirm_inquiry(inquiry_id: UUID, body: InquiryConfirm,
                           x_inquiry_token: str = Header(description="The token from POST /inquiries."),
                           client: ApiClient = Depends(require_api_client)) -> dict:
-    """Only for keys CampFinder has allowed to confirm in their own app. Everyone else sends the
-    parent to `confirm_url`."""
+    """Only for contracted partners whose key CampFinder has allowed to confirm in their own app,
+    and only for an anonymous question. An inquiry with an info kit package is always confirmed
+    by the parent at `confirm_url`; so is every inquiry from any other key."""
     if not body.parent_agreed:
         raise HTTPException(status_code=422, detail="parent_agreed must be true")
     try:
         row = await inquiries.confirm_for_parent(
             str(inquiry_id), x_inquiry_token, client_id=client.id, may_confirm=client.may_confirm_for_parent,
-            may_share_contact=client.may_share_contact, user_ref=body.user_ref, contact=body.contact,
+            may_share_contact=client.may_share_contact, client_name=client.name, user_ref=body.user_ref, contact=body.contact,
         )
     except inquiries.InquiryError as e:
         raise _inquiry_error(e) from e

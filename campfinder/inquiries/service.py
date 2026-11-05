@@ -11,8 +11,10 @@ after she says yes.
                 it with the read token
 
 Rules held here, not in prompts:
-- Nothing reaches a camp before the parent confirms. A partner may confirm for her only if
-  its key is allowed to (may_confirm_for_parent, off by default: an open decision).
+- Nothing reaches a camp before the parent confirms. A contracted partner whose key has
+  may_confirm_for_parent may confirm for her, but only an anonymous question: an inquiry with
+  an info kit package or contact details is always confirmed by her on CampFinder. We record
+  which key made the statement and when.
 - The info kit travels only as an existing share package's link, never its contents. The
   assistant passes the token; we check the package is live and made for this camp.
 - Assistants never send or receive her identity. The question may not carry contact details;
@@ -366,7 +368,8 @@ def _count_since(column: str, value: str, since: datetime) -> int:
 
 
 async def _confirm(row: dict[str, Any], *, via: str, contact: dict[str, Any] | None, family_id: str | None,
-                   user_ref: str | None, now: datetime) -> dict[str, Any]:
+                   user_ref: str | None, now: datetime,
+                   confirmed_by: dict[str, Any] | None = None) -> dict[str, Any]:
     if row["status"] in ("confirmed", "delivered"):
         return row  # a second click changes nothing
     if row["status"] != "pending":
@@ -387,7 +390,7 @@ async def _confirm(row: dict[str, Any], *, via: str, contact: dict[str, Any] | N
 
     claimed = get_supabase().table("inquiries").update({
         "status": "confirmed", "confirmed_at": now.isoformat(), "confirmed_via": via,
-        "contact": contact, "family_id": family_id, "family_key": key,
+        "contact": contact, "family_id": family_id, "family_key": key, **(confirmed_by or {}),
     }).eq("id", row["id"]).eq("status", "pending").execute().data
     if not claimed:  # confirmed at the same moment elsewhere
         return get_supabase().table("inquiries").select("*").eq("id", row["id"]).execute().data[0]
@@ -405,9 +408,14 @@ async def confirm(confirm_token: str, *, contact: Contact | None = None, family_
 
 
 async def confirm_for_parent(inquiry_id: str, read_token: str, *, client_id: str, may_confirm: bool,
-                             may_share_contact: bool, user_ref: str | None = None,
+                             may_share_contact: bool, client_name: str | None = None, user_ref: str | None = None,
                              contact: Contact | None = None, now: datetime | None = None) -> dict[str, Any]:
-    """A partner says the parent agreed in its own app. Only for keys allowed to (open decision)."""
+    """A contracted partner says the parent agreed in its own app.
+
+    Only for keys with may_confirm_for_parent, and only for an anonymous question. An inquiry
+    with an info kit package or contact details is always confirmed by the parent on CampFinder
+    (the confirm_url page, or our own card in ChatGPT or Claude), whatever the key may do.
+    """
     if not may_confirm:
         raise InquiryError("This key can't confirm for the parent. Show the parent the confirm_url: they "
                            "say yes on CampFinder.", 403)
@@ -416,7 +424,14 @@ async def confirm_for_parent(inquiry_id: str, read_token: str, *, client_id: str
         raise InquiryError("This key can't send the parent's contact details. The parent can add them on "
                            "the confirm_url page.", 403)
     row = _by_id(inquiry_id, read_token, client_id)
-    return await _confirm(row, via="partner", contact=cleaned, family_id=None, user_ref=user_ref, now=now or _now())
+    if row.get("kit_share_id") or row.get("contact") or cleaned:
+        raise InquiryError("This inquiry carries the parent's info kit or contact details, so only the parent "
+                           "can confirm it, on CampFinder. Send them to the confirm_url you got when you "
+                           "created it.", 403)
+    now = now or _now()
+    return await _confirm(row, via="partner", contact=None, family_id=None, user_ref=user_ref, now=now,
+                          confirmed_by={"confirmed_by_client_id": client_id,
+                                        "confirmed_by_client_name": client_name})
 
 
 def cancel(confirm_token: str) -> dict[str, Any]:

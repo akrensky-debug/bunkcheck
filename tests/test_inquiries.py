@@ -177,20 +177,61 @@ def test_partner_creates_and_reads_but_never_sees_the_family(client, db, outbox)
     assert "dana" not in flat and "family" not in flat and "contact" not in flat
 
 
-def test_partner_confirm_is_off_unless_the_key_is_allowed(client, db, outbox) -> None:
-    body = partner_create(client).json()
-    url, hdr = f"{API}/inquiries/{body['id']}/confirm", {**auth(), "X-Inquiry-Token": body["token"]}
-    assert client.post(url, headers=hdr, json={"parent_agreed": True}).status_code == 403
-    assert outbox == []
-
+def allow_partner_confirm(db) -> None:
     db.tables["api_clients"][0]["may_confirm_for_parent"] = True
     activity_auth._client_cache.clear()
-    assert client.post(url, headers=hdr, json={"parent_agreed": False}).status_code == 422
-    with_contact = {"parent_agreed": True, "contact": {"email": "dana@example.com"}}
-    assert client.post(url, headers=hdr, json=with_contact).status_code == 403  # contact needs its own permission
-    res = client.post(url, headers=hdr, json={"parent_agreed": True, "user_ref": "parent-123"})
-    assert res.status_code == 200 and res.json()["status"] == "delivered"
-    assert db.tables["inquiries"][0]["confirmed_via"] == "partner" and len(outbox) == 1
+
+
+def partner_confirm(client, body: dict, **extra) -> Any:
+    return client.post(f"{API}/inquiries/{body['id']}/confirm", headers={**auth(), "X-Inquiry-Token": body["token"]},
+                       json={"parent_agreed": True, **extra})
+
+
+def test_a_key_without_the_flag_cant_confirm(client, db, outbox) -> None:
+    body = partner_create(client).json()
+    res = partner_confirm(client, body)
+    assert res.status_code == 403 and "confirm_url" in res.text
+    assert outbox == [] and db.tables["inquiries"][0]["status"] == "pending"
+
+
+def test_a_partner_confirms_an_anonymous_question_and_we_record_its_key(client, db, outbox) -> None:
+    allow_partner_confirm(db)
+    body = partner_create(client).json()
+    assert partner_confirm(client, body, parent_agreed=False).status_code == 422
+    res = partner_confirm(client, body, user_ref="parent-123")
+    assert res.status_code == 200 and res.json()["status"] == "delivered" and len(outbox) == 1
+    row = db.tables["inquiries"][0]
+    assert row["confirmed_via"] == "partner" and row["confirmed_at"]
+    assert row["confirmed_by_client_id"] == "client-1" and row["confirmed_by_client_name"] == "Planner"
+    assert row["contact"] is None
+
+
+def test_a_partner_cant_confirm_an_inquiry_with_a_kit_package(client, db, family, outbox) -> None:
+    allow_partner_confirm(db)
+    body = partner_create(client, kit_share_token=share(db, family["id"])).json()
+    assert body["preview"]["kit_included"] is True
+    res = partner_confirm(client, body)
+    assert res.status_code == 403 and "confirm_url" in res.text and "only the parent" in res.text
+    assert outbox == [] and db.tables["inquiries"][0]["status"] == "pending"
+    assert db.tables["inquiries"][0]["confirmed_by_client_id"] is None
+
+    # Even a key allowed to share contact details can't: she adds them on CampFinder.
+    db.tables["api_clients"][0]["may_share_contact"] = True
+    activity_auth._client_cache.clear()
+    anonymous = partner_create(client, question="Is there extended care until 5:30 in week 3?").json()
+    res = partner_confirm(client, anonymous, contact={"email": "dana@example.com"})
+    assert res.status_code == 403 and "confirm_url" in res.text and outbox == []
+
+    # She can still say yes herself, on CampFinder.
+    res = client.post(f"/api/v1/inquiries/link/{token_of(body['confirm_url'])}/confirm", json={})
+    assert res.json()["status"] == "delivered" and db.tables["inquiries"][0]["confirmed_via"] == "campfinder"
+
+
+def test_a_partner_cant_pass_contact_details_without_the_contact_permission(client, db, outbox) -> None:
+    allow_partner_confirm(db)
+    body = partner_create(client).json()
+    assert partner_confirm(client, body, contact={"email": "dana@example.com"}).status_code == 403
+    assert outbox == []
 
 
 def test_partner_requests_use_the_key_rate_limit(client, db) -> None:
