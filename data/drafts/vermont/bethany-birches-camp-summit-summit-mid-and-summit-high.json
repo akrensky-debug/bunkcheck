@@ -1,0 +1,116 @@
+{
+  "slug": "bethany-birches-camp-summit-summit-mid-and-summit-high",
+  "name": "Bethany Birches Camp – Summit (Summit Mid & Summit High)",
+  "operator_name": "Bethany Birches Camp",
+  "website_url": "https://bethanybirches.org/summer-camps-summit/",
+  "registration_url": "https://bethanybirches.org/register-now/",
+  "city": null,
+  "state": null,
+  "zip": null,
+  "camp_type": "sleepaway",
+  "primary_categories": [
+    "nature"
+  ],
+  "age_min": 11,
+  "age_max": 16,
+  "description_short": "Summit is a set of overnight camp weeks (Sunday to Friday) for older campers: Summit Mid for ages 11-14 and Summit High for ages 13-16. Campers get more free time, spend time outdoors, and cook meals over the fire. Prices use a five-tier system.",
+  "activities": [
+    "Creek hike",
+    "Cardboard boat race",
+    "Cooking over the fire",
+    "Iron Chef",
+    "Coffee House",
+    "Barn Party",
+    "Capture the flag",
+    "Free time"
+  ],
+  "price_min": 175,
+  "price_max": 865,
+  "financial_aid": true,
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Summit Mid",
+      "start_date": "2026-07-12",
+      "end_date": "2026-07-17",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Summit High",
+      "start_date": "2026-07-19",
+      "end_date": "2026-07-24",
+      "price": null,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://bethanybirches.org/summer-camps-summit/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "price_min",
+        "price_max",
+        "financial_aid",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://bethanybirches.org/summer-camps-summit/",
+      "kind": "html",
+      "title": "Summit - Bethany Birches Camp"
+    },
+    "warnings": [
+      "Today is 2026-10-13. The page only shows 2026 dates (July 2026), so this season is over. It has no 2027 dates or prices yet.",
+      "The Expedition program on the same page still shows 2021 dates (July 18-23, ages 12-14) and 2021 prices (Tier I $110 to Tier IV $540). These are out of date, so Expedition is not recorded as a session.",
+      "Prices are tiered from $175 (Tier 1) to $865 (Tier 5), and the page does not explain how a family's tier is chosen. Because of this, no single price was recorded for each session."
+    ],
+    "unknowns": [
+      "2027 session dates and prices",
+      "How a family's pricing tier is chosen",
+      "Camp street address, city, state, zip",
+      "Phone and email",
+      "Whether a deposit is required",
+      "Refund policy",
+      "Whether meals are provided (page mentions cooking meals over the fire)",
+      "Swimming/waterfront details",
+      "Transportation",
+      "ACA accreditation",
+      "Whether the program is faith-based",
+      "Session availability",
+      "Registration opening date",
+      "Special needs accommodations"
+    ],
+    "low_confidence": [
+      {
+        "field": "financial_aid",
+        "confidence": 0.7,
+        "quote": "Financial Assistance"
+      },
+      {
+        "field": "primary_categories",
+        "confidence": 0.6,
+        "quote": "Spend time outdoors"
+      }
+    ],
+    "errors": [
+      "missing required city",
+      "missing required state",
+      "missing required zip"
+    ]
+  }
+}

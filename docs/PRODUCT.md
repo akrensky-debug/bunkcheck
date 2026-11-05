@@ -105,6 +105,53 @@ side effect. That solves the data problem a plain search site never solves.
 4. **Every summer adds more.** What kids actually did and how it went, year after year, is
    the data nobody else has.
 
+## Our data in a world of agent data markets
+
+*Added 13 October 2026, after searching Firecrawl's Alexandria catalogue: a marketplace of
+data sources that AI agents call and pay for per call.*
+
+**What we found.** Alexandria has 27 categories with sources for restaurant tables (Resy),
+salon appointments (Fresha), fitness classes (ClassPass), pet sitters (Rover), campgrounds
+(Campspot, Hipcamp, Recreation.gov) and tickets. It has nothing for kids' camps: no sessions,
+ages, dates, prices or spots. The closest are business listings (maps, OpenStreetMap, BBB),
+which give a camp's name, address and phone, never what parents compare on.
+
+**What it tells us.**
+
+1. **The gap is real.** Nobody has made kids' camps readable by agents. That backs the
+   1 October reordering in `ROADMAP.md`: a directory is worth little, because any agent can
+   read a camp's website.
+2. **The valuable sources sell availability, not listings.** Resy says booked out or closed;
+   Recreation.gov says which nights are open. Our version is spots left and the date
+   registration opens. That is the owner loop: confirmation, updates by email, registration
+   alerts.
+3. **Anything on a public page becomes a commodity.** Most of these sources read a site's own
+   web pages or API without the site's involvement. If someone lists ActivityHero, Sawyer,
+   Jumbula or CampMinder, camp listings are available to every agent overnight. Owner-confirmed
+   facts and spots left are not on any public page, so they cannot be copied that way. The
+   same is true of our own public data, so the Activity API needs terms of use and rate limits.
+4. **It is another way to reach parents' agents.** Next to our Claude and ChatGPT apps, a data
+   marketplace is a channel. Once most Providence listings are confirmed by their owners, we
+   could list our Activity API there as the first-party camp source: every fact with its
+   source, its date and whether the owner confirmed it. Public camp facts only, as on the MCP
+   server.
+
+**What we do about it.**
+
+- **Keep building the owner loop first.** Confirmation, updates by email and spots left are
+  the part nobody else can offer. Nothing here changes the order of work.
+- **Do not build the product on bought data.** Camp facts come from the owner and the camp's
+  own brochure or website, as now.
+- **Use business-listing sources only to find camps to recruit.** A maps or OpenStreetMap
+  search around Providence can list camp operators we have missed, as leads for the 150-camp
+  load. The owner still sends the brochure. About 5 credits per call; tell Andrew the cost.
+- **No family data to a data market.** Never send a home address or anything about a family
+  to an outside source, for drive times or anything else. Skip any source that gets past a
+  site's bot filter (bbb-org says it clears Cloudflare's challenge), for the same reason our
+  fetcher takes a refusal as the answer.
+- **Check the catalogue each quarter.** A source for a camp registration platform appearing
+  is the signal that public camp listings have become a commodity. Searching is free.
+
 ## Trust rules
 
 Trust is what makes this hard to copy. These rules come before any code that touches family
@@ -197,6 +244,8 @@ Parents book summer 2027 from about January to March. Early-bird registration op
 - A Grubhub-style booking marketplace, with money from booking fees.
 - Aim at low-tech camp owners: no new software for them to learn.
 - The trust rules above.
+- Owner-confirmed facts and spots left are what we sell to agents; we do not build on bought
+  listing data (13 October 2026, see "Our data in a world of agent data markets").
 
 ## Open questions
 
@@ -214,3 +263,6 @@ Parents book summer 2027 from about January to March. Early-bird registration op
    directories.
 9. **Time.** How many hours a week can go to this next to Small Street and PromptBridge?
 10. **Privacy counsel.** Who reviews the trust rules and data handling, and when?
+11. **List our camp data on agent data markets?** Once enough owners have confirmed, publish
+    the Activity API as the first-party camp source on Firecrawl's Alexandria or similar,
+    free or paid? Not before Phase 2 is done.

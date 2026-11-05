@@ -1,0 +1,126 @@
+{
+  "slug": "laurel-south-casco",
+  "name": "Laurel South",
+  "website_url": "https://www.camplaurelsouth.com",
+  "email": "fun@camplaurelsouth.com",
+  "phone": "800-327-3506",
+  "street_address": "48 Laurel Road",
+  "city": "Casco",
+  "state": "ME",
+  "zip": "04015",
+  "camp_type": "sleepaway",
+  "primary_categories": [
+    "sports",
+    "arts",
+    "nature"
+  ],
+  "description_short": "Laurel South is an overnight summer camp in Casco, Maine. It runs two sessions of about three and a half weeks each, with athletics, waterfront, tennis, adventure and arts programs.",
+  "activities": [
+    "Athletics",
+    "Waterfront",
+    "Tennis",
+    "Adventure",
+    "Inter-Arts",
+    "Equestrian (optional)"
+  ],
+  "price_min": 10800,
+  "price_max": 10800,
+  "transportation": true,
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "First Session",
+      "start_date": "2027-06-24",
+      "end_date": "2027-07-18",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Second Session",
+      "start_date": "2027-07-22",
+      "end_date": "2027-08-15",
+      "price": null,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.camplaurelsouth.com/summer-camp-families/dates-fees/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "website_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "description_short",
+        "price_min",
+        "price_max",
+        "transportation",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.camplaurelsouth.com/summer-camp-families/dates-fees/",
+      "kind": "html",
+      "title": "Dates & Fees - Laurel South"
+    },
+    "warnings": [
+      "The page doesn't say whether the $10,800 tuition is for one session or the whole summer. Session prices are left blank.",
+      "On top of tuition, the page lists Trip Day Expenses of $300, optional Equestrian for $600, and transportation that 'varies by location'.",
+      "The page says nothing directly about overnight stays. It is listed as sleepaway because each session runs about 3.5 weeks without a break."
+    ],
+    "unknowns": [
+      "Camper age or grade range",
+      "Whether the tuition is per session or for the full summer",
+      "Transportation cost and pickup locations",
+      "Deposit and refund policy",
+      "Financial aid",
+      "Registration opening date and URL",
+      "How many spots are left in each session",
+      "ACA accreditation",
+      "Whether meals are included (likely, but not stated)",
+      "Special needs support",
+      "Swim and waterfront details",
+      "Operator name"
+    ],
+    "low_confidence": [
+      {
+        "field": "price_min",
+        "confidence": 0.75,
+        "quote": "2027 Tuition $10,800"
+      },
+      {
+        "field": "price_max",
+        "confidence": 0.75,
+        "quote": "2027 Tuition $10,800"
+      },
+      {
+        "field": "transportation",
+        "confidence": 0.6,
+        "quote": "Transportation varies by location"
+      },
+      {
+        "field": "primary_categories",
+        "confidence": 0.65,
+        "quote": "Athletics Waterfront Tennis Adventure Inter-Arts"
+      },
+      {
+        "field": "description_short",
+        "confidence": 0.75,
+        "quote": "48 Laurel Road Casco, ME"
+      }
+    ],
+    "errors": []
+  }
+}

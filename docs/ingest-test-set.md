@@ -26,7 +26,7 @@ a real category of camp: the fix is the product's own path, the owner sends us t
 
 The two sessions of 28 September disagreed about the fetcher, and this settles it.
 
-**The rule.** The fetcher says who it is (`CampFinderBot`). If a host refuses it (401, 403 or 429),
+**The rule.** The fetcher says who it is (`BunkcheckBot`). If a host refuses it (401, 403 or 429),
 that is the answer: the tool stops with "ask the owner for the brochure" and does not try again
 with a browser or a borrowed identity. The owner's brochure is the product's own path, and a
 company asking camp owners for trust does not get past their filters. Headless Chromium is used
@@ -67,6 +67,7 @@ done
 
 ```bash
 python -m campfinder.ingest.batch candidates.json --metro providence     # writes data/drafts/providence/
+python -m campfinder.ingest.fill data/drafts/providence                  # gaps with one right answer
 python -m campfinder.ingest.promote data/drafts/providence/<slug>.json --by <your name>
 python -m campfinder.seed.import_real --check                             # then --load
 ```
@@ -177,7 +178,7 @@ widget at the foot of every page. Answer-key rows, from the fetched text:
   every header identical, Python's `urllib` gets 200 and gets 403 as soon as its handshake
   advertises HTTP/1.1 only (ALPN), which is what httpx always does. The fetcher could be
   changed to leave ALPN out. That would deliberately get past a bot filter these sites run,
-  even with the honest `CampFinderBot` name, so it's a policy decision, not made here.
+  even with the honest `BunkcheckBot` name, so it's a policy decision, not made here.
   The alternative is to ask the operators, or to enter these camps by hand.
   *Decided 29 September: we don't. See "Fetching, 29 September 2026" above.*
 - **Save The Bay (429)** is rate limiting and comes and goes between runs. Retry later rather

@@ -1,0 +1,88 @@
+{
+  "slug": "camp-lmntree-franklin",
+  "name": "Camp LMNTREE",
+  "operator_name": "elementreehouse",
+  "website_url": "https://www.elementreehouse.com/summer-camp",
+  "phone": "(508) 541-3998",
+  "street_address": "838 Upper Union Street",
+  "city": "Franklin",
+  "state": "MA",
+  "zip": "02038",
+  "camp_type": "day",
+  "primary_categories": [
+    "arts"
+  ],
+  "description_short": "A full-summer day camp in Franklin, MA with weekly themes, field trips, group games, free swim, and arts and crafts. It runs from the last day of the school year to the day before the next school year begins, 7:00 am to 6:00 pm on weekdays.",
+  "activities": [
+    "group games",
+    "free swim",
+    "arts and crafts",
+    "field trips",
+    "weekly theme-based activities"
+  ],
+  "swim_waterfront_notes": "Free swim is offered. A certified lifeguard is on duty at all times.",
+  "sources": [
+    {
+      "url": "https://www.elementreehouse.com/summer-camp",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "description_short",
+        "swim_waterfront_notes"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.elementreehouse.com/summer-camp",
+      "kind": "html",
+      "title": "SUMMER CAMP | elementreehouse"
+    },
+    "warnings": [
+      "The page doesn't give a season year, dates, prices, or ages. Check the Camp Schedule and Contact and Tuition pages for 2027 details.",
+      "This site belongs to a childcare center that also runs preschool and school-year programs. The summer camp is one of its programs. It is open 6:30 am - 6:00 pm during the school year and 7:00 am - 6:00 pm in summer."
+    ],
+    "unknowns": [
+      "Season year and exact 2027 start/end dates (the page only says the camp runs from the last day of school to the day before school starts)",
+      "Tuition and weekly price (might be on the Contact and Tuition page)",
+      "Age or grade range",
+      "Whether families can sign up by the week, and how sessions are split",
+      "Registration dates and how to register",
+      "Deposit and refund policy",
+      "Financial aid",
+      "Whether meals are included",
+      "Transportation",
+      "Email address",
+      "Where swimming takes place (pool or waterfront)",
+      "ACA accreditation",
+      "Support for children with special needs"
+    ],
+    "low_confidence": [
+      {
+        "field": "operator_name",
+        "confidence": 0.6,
+        "quote": "SUMMER CAMP | elementreehouse"
+      },
+      {
+        "field": "primary_categories",
+        "confidence": 0.5,
+        "quote": "arts and crafts"
+      }
+    ],
+    "errors": [
+      "missing required season_year"
+    ]
+  }
+}

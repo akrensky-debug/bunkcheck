@@ -28,6 +28,7 @@ from campfinder.ingest.fetch import FetchError, Refused, UnsafeURL, fetch
 from campfinder.seed.import_real import DATA_DIR, load_dataset
 
 DRAFTS_DIR = DATA_DIR.parent / "drafts"
+PER_CAMP_SECONDS = 600   # a page that hangs (a browser load, a stalled host) fails that camp only
 
 
 def _site(url: str) -> str:
@@ -62,6 +63,9 @@ async def draft_one(cand: dict[str, Any], *, metro: str, today: date, taken: set
         listing = await extract_listing(source, today=today)
     except Exception as e:  # noqa: BLE001 - one bad page must not stop the run
         return {"outcome": "failed", "detail": f"extract: {type(e).__name__}: {e}"}
+    if not listing.name:
+        why = (listing.warnings or ["the page names no camp"])[0]
+        return {"outcome": "failed", "detail": f"no camp on the page: {why[:200]}"}
     record = to_draft(listing, source, metro=metro, today=today, taken_slugs=taken)
     taken.add(record["slug"])
     return {"outcome": "drafted", "record": record}
@@ -108,7 +112,13 @@ async def run(candidates: list[dict[str, Any]], *, metro: str, drafts: Path, lim
 
     async def go(cand: dict[str, Any]) -> None:
         async with sem:
-            res = await draft_one(cand, metro=metro, today=today, taken=taken)
+            try:
+                res = await asyncio.wait_for(draft_one(cand, metro=metro, today=today, taken=taken),
+                                             PER_CAMP_SECONDS)
+            except TimeoutError:
+                res = {"outcome": "failed", "detail": f"timed out after {PER_CAMP_SECONDS}s; retry"}
+            except Exception as e:  # noqa: BLE001 - one bad camp must not stop the run
+                res = {"outcome": "failed", "detail": f"{type(e).__name__}: {e}"}
         entry = {"name": cand.get("name"), "url": cand["url"], "outcome": res["outcome"], "detail": res.get("detail")}
         if res["outcome"] == "drafted":
             rec = res["record"]

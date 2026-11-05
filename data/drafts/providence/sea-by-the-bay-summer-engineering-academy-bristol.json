@@ -1,0 +1,126 @@
+{
+  "slug": "sea-by-the-bay-summer-engineering-academy-bristol",
+  "name": "SEA by the Bay: Summer Engineering Academy",
+  "operator_name": "Roger Williams University",
+  "website_url": "https://www.rwu.edu/summer-camps/sea-bay",
+  "registration_url": "https://connect.rwu.edu/register/?id=dd9001ca-229a-4fb3-98c6-13559b5e65a6",
+  "phone": "1-800-458-7144",
+  "street_address": "1 Old Ferry Road",
+  "city": "Bristol",
+  "state": "RI",
+  "zip": "02809",
+  "camp_type": "specialty",
+  "primary_categories": [
+    "STEM"
+  ],
+  "grade_min": 11,
+  "description_short": "A one-week overnight engineering program on Roger Williams University's waterfront campus for high school juniors and above. Teams design, build and test coastal-themed prototypes with RWU engineering faculty, and afternoons include a boat tour and coastal field trips.",
+  "activities": [
+    "Engineering design challenges",
+    "3D modeling",
+    "Electronics",
+    "Prototype building and testing",
+    "Boat tour",
+    "Coastal field trips",
+    "Team project showcase"
+  ],
+  "price_min": 1995,
+  "price_max": 1995,
+  "meals_included": true,
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "SEA by the Bay (one week, residential)",
+      "start_date": "2027-07-11",
+      "end_date": "2027-07-16",
+      "price": 1995,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.rwu.edu/summer-camps/sea-bay",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "grade_min",
+        "description_short",
+        "price_min",
+        "price_max",
+        "meals_included",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.rwu.edu/summer-camps/sea-bay",
+      "kind": "html",
+      "title": "SEA by the Bay: Summer Engineering Academy | Roger Williams University"
+    },
+    "warnings": [
+      "The page gives the dates as 'July 11-16' with no year. Today is 2026-10-13, so July 2026 has already passed. 'Registration Coming Soon' and the fact that July 11, 2027 is a Sunday and July 16, 2027 is a Friday (a usual residential week) suggest these are 2027 dates. That is an inference, though, and the dates and the $1995 price could be left over from 2026. Check with RWU.",
+      "The phone number and address are the university's general contact details from the page footer, not a camp-specific contact."
+    ],
+    "unknowns": [
+      "Confirmed season year for the July 11-16 dates",
+      "Whether the $1995 cost applies to 2027",
+      "Date registration opens",
+      "Exact age range and maximum grade (whether graduating seniors are eligible)",
+      "Camp-specific contact email/phone",
+      "Deposit and refund policy",
+      "Financial aid or scholarships",
+      "Transportation",
+      "Daily schedule, check-in and check-out times",
+      "Waterfront and boat safety and supervision details",
+      "Accommodations for special needs",
+      "ACA accreditation"
+    ],
+    "low_confidence": [
+      {
+        "field": "sessions[0].start_date",
+        "confidence": 0.55,
+        "quote": "July 11-16"
+      },
+      {
+        "field": "sessions[0].end_date",
+        "confidence": 0.55,
+        "quote": "July 11-16"
+      },
+      {
+        "field": "season_year",
+        "confidence": 0.55,
+        "quote": "July 11-16 ... Registration Coming Soon"
+      },
+      {
+        "field": "street_address",
+        "confidence": 0.75,
+        "quote": "1 Old Ferry Road, Bristol, RI 02809"
+      },
+      {
+        "field": "zip",
+        "confidence": 0.75,
+        "quote": "1 Old Ferry Road, Bristol, RI 02809"
+      },
+      {
+        "field": "phone",
+        "confidence": 0.6,
+        "quote": "Contact Us 1-800-458-7144"
+      }
+    ],
+    "errors": []
+  }
+}

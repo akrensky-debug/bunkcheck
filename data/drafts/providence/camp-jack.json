@@ -1,0 +1,67 @@
+{
+  "slug": "camp-jack",
+  "name": "Camp Jack",
+  "operator_name": "People Incorporated",
+  "website_url": "https://peopleincfr.org/services/diabetes-association-inc/camp-jack/",
+  "registration_url": "https://campjack.funjoin.app/sign-in",
+  "phone": "(508) 679-5233",
+  "city": null,
+  "state": null,
+  "zip": null,
+  "season_year": 2026,
+  "sources": [
+    {
+      "url": "https://peopleincfr.org/services/diabetes-association-inc/camp-jack/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "phone"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://peopleincfr.org/services/diabetes-association-inc/camp-jack/",
+      "kind": "html",
+      "title": "Camp Jack – People Incorporated"
+    },
+    "warnings": [
+      "The page only covers the 2026 season, which has already ended. The only date given is \"First Day of Camp: Monday, July 6th, 2026\". The banner still says \"REGISTRATION NOW OPEN!\", but that refers to 2026. No 2027 information is shown.",
+      "This page belongs to the operator, People Incorporated, a multi-service agency. It is not a dedicated camp website. The camp's details are in a brochure that the text doesn't include.",
+      "The address and phone number belong to People Incorporated's main office (4 South Main St., Fall River, MA 02721). This may not be where the camp is held, so the camp's location fields were left empty.",
+      "The page URL puts the camp under 'diabetes-association-inc', which suggests a camp for children with diabetes. The page text doesn't say so, so no category or special-needs details were recorded.",
+      "The registration link had Facebook tracking parameters attached, and these were removed."
+    ],
+    "unknowns": [
+      "2027 season dates and sessions",
+      "End date and length of the camp",
+      "Camp location / street address",
+      "Ages or grades served",
+      "Price / fees and deposit",
+      "Day camp vs. overnight",
+      "Who the camp serves (possibly children with diabetes — confirm)",
+      "Activities offered",
+      "Meals, transportation, extended care",
+      "Financial aid",
+      "Refund policy",
+      "Medical/nursing support and special needs accommodations",
+      "Swim/waterfront details",
+      "ACA accreditation",
+      "Email contact",
+      "2027 registration opening date"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "missing required city",
+      "missing required state",
+      "missing required zip",
+      "missing required camp_type",
+      "camp_type must be one of ['day', 'sleepaway', 'specialty']"
+    ]
+  }
+}

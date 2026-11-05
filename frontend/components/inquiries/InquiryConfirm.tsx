@@ -86,7 +86,7 @@ export default function InquiryConfirm({ token, initial, compact = false }: {
       <div className="space-y-2">
         <label className="flex items-start gap-2 text-sm text-gray-700">
           <input type="checkbox" checked={share} onChange={e => setShare(e.target.checked)} className="mt-1" />
-          <span>Share how to reach me with {camp}. Otherwise they answer through CampFinder and see no contact details.</span>
+          <span>Share how to reach me with {camp}. Otherwise they answer through Bunkcheck and see no contact details.</span>
         </label>
         {share && (
           <div className="grid gap-2 sm:grid-cols-3">

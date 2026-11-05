@@ -1,0 +1,106 @@
+{
+  "slug": "camp-pasquaney-hebron",
+  "name": "Camp Pasquaney",
+  "operator_name": "Camp Pasquaney",
+  "website_url": "https://pasquaney.org",
+  "registration_url": "https://pasquaney.org/future-families/how-to-enroll",
+  "email": "office@pasquaney.org",
+  "phone": "603-744-8043",
+  "street_address": "19 Pasquaney Lane",
+  "city": "Hebron",
+  "state": "NH",
+  "zip": "03241",
+  "camp_type": "sleepaway",
+  "primary_categories": [
+    "nature",
+    "sports",
+    "performing_arts"
+  ],
+  "description_short": "Overnight summer camp in Hebron, New Hampshire, with a single season from June 26 to August 15, 2027. The calendar includes camping expeditions, a long hike, a theater play, crew races and a water sports weekend.",
+  "activities": [
+    "Camping expeditions",
+    "Hiking",
+    "Theater",
+    "Crew",
+    "Water sports"
+  ],
+  "price_min": 11725,
+  "price_max": 11725,
+  "financial_aid": true,
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "2027 Season",
+      "start_date": "2027-06-26",
+      "end_date": "2027-08-15",
+      "price": 11725,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://pasquaney.org/future-families/dates-rates",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "description_short",
+        "price_min",
+        "price_max",
+        "financial_aid",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://pasquaney.org/future-families/dates-rates",
+      "kind": "html",
+      "title": "Dates & Rates - Camp Pasquaney"
+    },
+    "warnings": [
+      "The page doesn't explicitly say campers stay overnight. 'Sleepaway' is inferred from the full-summer season, Visiting Weekend and the 'Dorm Life' menu item.",
+      "Only one full-season tuition is listed ($11,725, about seven weeks). No weekly rate is given."
+    ],
+    "unknowns": [
+      "Camper ages / grades served",
+      "Whether the camp is single-gender (not stated on this page)",
+      "Deposit requirement and payment schedule",
+      "Refund policy",
+      "Transportation to/from camp",
+      "Meals included (presumably, but not stated)",
+      "Availability / waitlist status for 2027",
+      "Registration opening date",
+      "ACA accreditation",
+      "Special needs accommodations",
+      "Swim/waterfront details",
+      "Whether shorter sessions are available"
+    ],
+    "low_confidence": [
+      {
+        "field": "registration_url",
+        "confidence": 0.7,
+        "quote": "How To Enroll"
+      },
+      {
+        "field": "primary_categories",
+        "confidence": 0.7,
+        "quote": "Camping Expeditions ... Crew Races ... Trustees Weekend Play"
+      }
+    ],
+    "errors": []
+  }
+}

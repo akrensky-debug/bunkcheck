@@ -184,11 +184,12 @@ export const confirmBooking = (familyId: string, attemptId: string, priceShownCe
 export const STATUS_LABEL: Record<RegStatus, string> = {
   watching: 'Watching', registered: 'Registered', waitlisted: 'Waitlist', cancelled: 'Cancelled',
 }
+/** Text color for each status (shown as plain colored text, not a pill). */
 export const STATUS_TONE: Record<RegStatus, string> = {
-  watching: 'bg-gray-100 text-gray-700',
-  registered: 'bg-green-50 text-green-700',
-  waitlisted: 'bg-amber-50 text-amber-700',
-  cancelled: 'bg-gray-50 text-gray-400',
+  watching: 'text-ink',
+  registered: 'text-checked',
+  waitlisted: 'text-warn',
+  cancelled: 'text-muted',
 }
 export const PAY_LABEL: Record<PaymentStatus, string> = {
   unpaid: 'Not paid', deposit: 'Deposit paid', paid: 'Paid', refunded: 'Refunded',

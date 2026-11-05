@@ -1,0 +1,92 @@
+{
+  "slug": "ymca-camp-mountain-laurel-day-camp-hamden",
+  "name": "YMCA Camp Mountain Laurel Day Camp",
+  "operator_name": "Hamden/North Haven YMCA (Central Connecticut Coast YMCA)",
+  "website_url": "https://cccymca.org/locations/hamden/camp/",
+  "registration_url": "https://ymcaccc.sgasoftware.com/Sales/Public",
+  "phone": "203.562.5129",
+  "street_address": "Downes Road",
+  "city": "Hamden",
+  "state": "CT",
+  "zip": null,
+  "camp_type": "day",
+  "primary_categories": [
+    "nature",
+    "sports"
+  ],
+  "description_short": "Summer day camp run by the Hamden/North Haven YMCA at Camp Mountain Laurel on Downes Road in Hamden. Activities include nature exploration, swimming and archery, and there is a Counselor in Training program for 14-15 year olds.",
+  "activities": [
+    "Nature exploration",
+    "Swimming",
+    "Archery",
+    "Counselor in Training program"
+  ],
+  "financial_aid": true,
+  "special_needs_notes": "Children who need special assistance or medicine at camp may need an Individual Care Plan and a Medicine Authorization form.",
+  "season_year": 2026,
+  "sources": [
+    {
+      "url": "https://cccymca.org/locations/hamden/camp/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "description_short",
+        "financial_aid",
+        "special_needs_notes"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://cccymca.org/locations/hamden/camp/",
+      "kind": "html",
+      "title": "Camp | Central Connecticut Coast YMCA\t\tCentral Connecticut Coast YMCA"
+    },
+    "warnings": [
+      "The page only has 2026 materials (brochure, handbook, registration packet). The 2026 summer is over as of 2026-10-13, and nothing for 2027 has been posted.",
+      "No session dates, prices or age range appear on the page. They are probably in the linked 2026 brochure/FAQ PDFs, which were not part of the source text.",
+      "The phone number and P.O. Box (Hamden, CT 06517) are the footer contact for the YMCA's website, not necessarily the camp's own contact details. The zip code was left blank because it belongs to the P.O. Box.",
+      "The page also describes YMCA Camp Hi-Rock, a separate overnight camp in the Berkshires (Mount Washington, MA). It is not included in this listing."
+    ],
+    "unknowns": [
+      "2027 session dates",
+      "Weekly price / session prices",
+      "Age or grade range for day campers",
+      "Daily hours and whether before/after care is offered",
+      "Whether lunch or snacks are provided",
+      "Whether transportation is offered",
+      "Deposit and refund policy",
+      "Swim program and waterfront details",
+      "Whether the camp is ACA accredited",
+      "2027 registration opening date",
+      "Camp's own email and full street address/zip"
+    ],
+    "low_confidence": [
+      {
+        "field": "phone",
+        "confidence": 0.6,
+        "quote": "Phone: 203.562.5129"
+      },
+      {
+        "field": "registration_url",
+        "confidence": 0.7,
+        "quote": "REGISTER FOR OUR PROGRAMS ONLINE"
+      }
+    ],
+    "errors": [
+      "missing required zip"
+    ]
+  }
+}

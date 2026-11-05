@@ -1,0 +1,113 @@
+{
+  "slug": "camp-laurel-readfield",
+  "name": "Camp Laurel",
+  "website_url": "https://www.camplaurel.com",
+  "registration_url": "https://www.camplaurel.com/enroll/",
+  "email": "summer@camplaurel.com",
+  "phone": "203-227-8866",
+  "street_address": "PO Box 327",
+  "city": "Readfield",
+  "state": "ME",
+  "zip": "04355",
+  "camp_type": "sleepaway",
+  "primary_categories": [
+    "sports",
+    "arts",
+    "nature"
+  ],
+  "description_short": "Camp Laurel is a Maine summer camp in Readfield running one season, June 26 to August 11, 2027. The program includes boys' and girls' athletics, waterfront, tennis, adventure, arts (\"Inter-Arts\") and optional equestrian.",
+  "activities": [
+    "Boys' Athletics",
+    "Girls' Athletics",
+    "Waterfront",
+    "Tennis",
+    "Adventure",
+    "Inter-Arts",
+    "Equestrian"
+  ],
+  "price_min": 18500,
+  "price_max": 18500,
+  "transportation": true,
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "2027 Full Season",
+      "start_date": "2027-06-26",
+      "end_date": "2027-08-11",
+      "price": 18500,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.camplaurel.com/summer-camp-families/dates-fees/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "description_short",
+        "price_min",
+        "price_max",
+        "transportation",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.camplaurel.com/summer-camp-families/dates-fees/",
+      "kind": "html",
+      "title": "Maine Summer Camp Dates & Rates | Summer Schedule for Camp Laurel"
+    },
+    "warnings": [
+      "Tuition ($18,500) excludes extra charges: Trip Day/Personal Expenses $600; optional Equestrian $1,500 (3 days/wk) or $2,500 (5 days/wk); 7th Grade Extended Trip $700; 8th & 9th Grade Extended Trip $975; Transportation varies by location.",
+      "Two phone numbers: summer 207-685-4945 (Readfield, ME) and winter 203-227-8866 (PO Box 508, Westport, CT 06881). The winter number is recorded since it is currently off-season.",
+      "Address is a PO Box, not a street address.",
+      "Sleepaway type inferred from the 7-week season and Visiting Day; the page does not explicitly say 'overnight'.",
+      "Grade-specific trips (7th–9th grade) suggest older campers attend, but the age range is not stated."
+    ],
+    "unknowns": [
+      "Camper age range / grades served",
+      "Whether shorter sessions (not just full season) are offered",
+      "Deposit amount and payment schedule",
+      "Refund/cancellation policy",
+      "Financial aid availability",
+      "Registration opening date and current availability",
+      "ACA accreditation",
+      "Physical street address of camp (only PO Box given)",
+      "Transportation cost and pickup locations",
+      "Special needs support",
+      "Swim/waterfront details"
+    ],
+    "low_confidence": [
+      {
+        "field": "street_address",
+        "confidence": 0.6,
+        "quote": "PO Box 327 Readfield, ME 04355"
+      },
+      {
+        "field": "primary_categories",
+        "confidence": 0.7,
+        "quote": "Program & Activities ... Boys' Athletics ... Inter-Arts ... Adventure"
+      },
+      {
+        "field": "transportation",
+        "confidence": 0.65,
+        "quote": "Transportation Varies by location"
+      }
+    ],
+    "errors": []
+  }
+}

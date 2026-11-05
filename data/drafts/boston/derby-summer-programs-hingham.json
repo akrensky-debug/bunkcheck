@@ -1,0 +1,105 @@
+{
+  "slug": "derby-summer-programs-hingham",
+  "name": "Derby Summer Programs",
+  "operator_name": "Derby Academy",
+  "website_url": "https://www.derbyacademy.org/summer2026/programs-and-tuition",
+  "registration_url": "http://derbyacademysummer.campbrainregistration.com/",
+  "phone": "781-749-0746",
+  "street_address": "56 Burditt Avenue",
+  "city": "Hingham",
+  "state": "MA",
+  "zip": "02043",
+  "camp_type": "day",
+  "primary_categories": [
+    "arts",
+    "performing_arts",
+    "STEM",
+    "technology",
+    "sports",
+    "nature"
+  ],
+  "description_short": "Half-day summer programs (9:00 AM–12:00 PM) at Derby Academy in Hingham in four tracks: Camp Derby, Arts, STEM and Sports. Families can pay extra for an Extended Day through 4:00 PM that includes lunch and two more classes.",
+  "activities": [
+    "art",
+    "nature",
+    "games",
+    "outdoor play",
+    "theater",
+    "dance",
+    "culinary",
+    "basketball",
+    "soccer",
+    "rowing",
+    "sailing",
+    "golf",
+    "LEGO Robotics",
+    "3-D printing",
+    "AI-focused labs"
+  ],
+  "financial_aid": true,
+  "extended_care": true,
+  "sources": [
+    {
+      "url": "https://www.derbyacademy.org/summer2026/programs-and-tuition",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "description_short",
+        "extended_care",
+        "financial_aid"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.derbyacademy.org/summer2026/programs-and-tuition",
+      "kind": "html",
+      "title": "Programs - Derby Academy | Pre-K – Grade 8 | Hingham, MA"
+    },
+    "warnings": [
+      "This is a program overview page. It has no session dates, prices or ages. Details are probably on the linked Camp Derby, Summer Arts, Summer STEM, Summer Sports and Tuition and Financial Aid pages.",
+      "The season is unclear. The URL path is /summer2026/, which has already passed, but the page gives an April 1, 2027 Tuition Assistance deadline. That suggests the page is being updated for summer 2027, so season_year was left blank.",
+      "The footer line 'Pre-K through Grade 8' describes Derby Academy's school, not necessarily the camp's age range, so no ages were recorded.",
+      "Lunch is included only with the paid Extended Day add-on, so meals_included was left blank."
+    ],
+    "unknowns": [
+      "Season year (the URL says 2026 but the Tuition Assistance deadline is April 1, 2027)",
+      "Session dates and weeks",
+      "Tuition for half-day programs",
+      "Extra cost for Extended Day",
+      "Age or grade range of campers",
+      "Lunch for half-day campers (lunch is only listed as part of Extended Day)",
+      "Refund policy",
+      "Deposit requirement",
+      "Registration opening date",
+      "Transportation",
+      "Swimming and waterfront details (rowing and sailing are listed)",
+      "ACA accreditation",
+      "Email contact",
+      "Support for children with special needs"
+    ],
+    "low_confidence": [
+      {
+        "field": "registration_url",
+        "confidence": 0.75,
+        "quote": "Register(opens in new window/tab)"
+      }
+    ],
+    "errors": [
+      "missing required season_year"
+    ]
+  }
+}

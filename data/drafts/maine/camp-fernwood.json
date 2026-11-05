@@ -1,0 +1,81 @@
+{
+  "slug": "camp-fernwood",
+  "name": "Camp Fernwood",
+  "website_url": "https://www.campfernwood.com/",
+  "registration_url": "https://fernwood.campintouch.com/ui/forms/application/camper/App",
+  "city": null,
+  "state": "ME",
+  "zip": null,
+  "camp_type": "sleepaway",
+  "description_short": "An overnight summer camp for girls in Maine, running since 1921. It runs one full session of about seven weeks.",
+  "activities": [
+    "Horseback riding (optional, extra cost)",
+    "Tennis (private lessons optional, extra cost)",
+    "Tripping"
+  ],
+  "price_min": 17300,
+  "price_max": 17300,
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "2027 Full Session",
+      "start_date": "2027-06-26",
+      "end_date": "2027-08-11",
+      "price": 17300,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.campfernwood.com/dates-and-pricing/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "website_url",
+        "registration_url",
+        "state",
+        "camp_type",
+        "activities",
+        "description_short",
+        "price_min",
+        "price_max",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.campfernwood.com/dates-and-pricing/",
+      "kind": "html",
+      "title": "Maine Girls Summer Camp | Camp Fernwood | Dates and Pricing"
+    },
+    "warnings": [
+      "The page never says outright that campers stay overnight. It is listed as sleepaway because it is a 7-week Maine camp with a Visiting Day and one-way email to campers. Confirm with the camp.",
+      "Horseback riding and private tennis lessons cost extra and are not in the $17,300 tuition. Those prices are not given.",
+      "The page says the camp is for girls, but no age or grade range is given."
+    ],
+    "unknowns": [
+      "Age or grade range",
+      "City and street address",
+      "Phone and email",
+      "Whether a deposit is required, and the deposit amount",
+      "Refund policy",
+      "Whether financial aid is offered",
+      "Whether shorter sessions are offered besides the full 7-week session",
+      "Prices for optional horseback riding and private tennis lessons",
+      "Whether places are still open for 2027",
+      "Whether the camp is ACA accredited",
+      "Whether transportation is offered",
+      "Swimming and waterfront details",
+      "Full list of activities"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "missing required city",
+      "missing required zip",
+      "city None, ME is not in cities.py"
+    ]
+  }
+}

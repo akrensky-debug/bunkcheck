@@ -1,0 +1,101 @@
+{
+  "slug": "upside-arts-overnight-camp",
+  "name": "Upside Arts Overnight Camp",
+  "operator_name": "Upside Arts LLC",
+  "website_url": "https://www.theupsideartscompany.org/",
+  "email": "info@theupsideartscompany.org",
+  "phone": "(207) 977-4190",
+  "city": null,
+  "state": null,
+  "zip": null,
+  "camp_type": "sleepaway",
+  "primary_categories": [
+    "performing_arts"
+  ],
+  "description_short": "An overnight theatre camp run by Upside Arts, with theatre training from working industry professionals. Campers also swim, hike, play gaga ball, learn sign language and take workshops.",
+  "activities": [
+    "theatre arts training",
+    "swimming",
+    "hiking",
+    "gaga ball",
+    "sign language",
+    "ballet workshops"
+  ],
+  "financial_aid": true,
+  "swim_waterfront_notes": "Swimming is listed as an overnight camp activity. The page gives no details about the waterfront or pool.",
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Overnight Camp 2027",
+      "start_date": "2027-08-17",
+      "end_date": "2027-08-28",
+      "price": null,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.theupsideartscompany.org/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "phone",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "description_short",
+        "financial_aid",
+        "swim_waterfront_notes",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.theupsideartscompany.org/",
+      "kind": "html",
+      "title": "Upside Arts | Theatre Camps and Classes | Portsmouth and Seacoast NH"
+    },
+    "warnings": [
+      "The day camp section shows only the 2026 season (Session I: June 22 - July 3; Session II: July 6 - 18; Session III: July 20 - August 1), and those dates have passed. They are not recorded as sessions. The 2027 day camp dates are not posted yet.",
+      "The day camp lists ages 7-17. It is not stated whether the same ages apply to the overnight camp.",
+      "The page title says 'Portsmouth and Seacoast NH', but the phone number has a Maine (207) area code and the overnight camp's location is not given. No location is recorded.",
+      "The camp type is set to sleepaway based on the only 2027 program (Overnight Camp). The organization also runs a theatre day camp, and both are theatre-focused, so 'specialty' could also fit."
+    ],
+    "unknowns": [
+      "Price of the 2027 overnight camp",
+      "Age range for the overnight camp (only the day camp lists ages 7-17)",
+      "Where the overnight camp is held (street address, city, state, zip)",
+      "Registration URL and when registration opens (there is an UltraCamp login, but no link was given)",
+      "Whether a deposit is required, and the refund policy",
+      "Whether the overnight session is open, waitlisted or full",
+      "Dates and prices for the 2027 day camp",
+      "Whether the camp is ACA accredited",
+      "Special needs accommodations",
+      "Transportation",
+      "Details of the scholarship or financial aid (only a 'Scholarship Application' menu item is shown)"
+    ],
+    "low_confidence": [
+      {
+        "field": "camp_type",
+        "confidence": 0.75,
+        "quote": "Upside Overnight Camp"
+      },
+      {
+        "field": "financial_aid",
+        "confidence": 0.6,
+        "quote": "Scholarship Application"
+      }
+    ],
+    "errors": [
+      "missing required city",
+      "missing required state",
+      "missing required zip"
+    ]
+  }
+}

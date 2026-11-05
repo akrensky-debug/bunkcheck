@@ -101,3 +101,33 @@ def test_bad_database_url_is_reported_without_its_value(capsys) -> None:
             settings.database_url = old
         err = capsys.readouterr().err
         assert says in err and "secret-part" not in err and "hunter2" not in err
+
+
+async def test_every_foreign_key_has_an_index(migrated: asyncpg.Connection) -> None:
+    """Deleting a camp or session scans every referencing table that has no index (migration 0015)."""
+    rows = await migrated.fetch("""
+        SELECT c.conrelid::regclass::text AS tbl, c.conname
+        FROM pg_constraint c
+        WHERE c.contype = 'f' AND c.connamespace = 'public'::regnamespace
+          AND NOT EXISTS (
+              SELECT 1 FROM pg_index i
+              WHERE i.indrelid = c.conrelid
+                AND (string_to_array(i.indkey::text, ' ')::int2[])[1:array_length(c.conkey, 1)] = c.conkey)""")
+    assert not rows, f"foreign keys without an index: {[(r['tbl'], r['conname']) for r in rows]}"
+
+
+async def test_our_functions_pin_their_search_path(migrated: asyncpg.Connection) -> None:
+    rows = await migrated.fetch("""
+        SELECT p.proname FROM pg_proc p
+        WHERE p.pronamespace = 'public'::regnamespace AND p.prolang = (SELECT oid FROM pg_language WHERE lanname = 'plpgsql')
+          AND NOT EXISTS (SELECT 1 FROM pg_depend d WHERE d.objid = p.oid AND d.deptype = 'e')
+          AND NOT coalesce(p.proconfig::text LIKE '%search_path=%', false)""")
+    assert not rows, f"functions without a fixed search_path: {[r['proname'] for r in rows]}"
+
+
+async def test_public_roles_reach_no_table(migrated: asyncpg.Connection) -> None:
+    """Only the backend reads tables; anon and authenticated get nothing, even on a new table."""
+    rows = await migrated.fetch("""
+        SELECT table_name, grantee, privilege_type FROM information_schema.role_table_grants
+        WHERE table_schema = 'public' AND grantee IN ('anon', 'authenticated')""")
+    assert not rows, f"public roles still have table privileges: {[tuple(r) for r in rows][:10]}"

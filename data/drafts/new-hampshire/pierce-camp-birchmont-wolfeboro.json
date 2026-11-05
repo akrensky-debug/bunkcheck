@@ -1,0 +1,98 @@
+{
+  "slug": "pierce-camp-birchmont-wolfeboro",
+  "name": "Pierce Camp Birchmont",
+  "website_url": "https://www.campbirchmont.com/",
+  "registration_url": "https://www.campbirchmont.com/enroll/",
+  "email": "mail@campbirchmont.com",
+  "phone": "603-569-1337",
+  "street_address": "693 Governor John Wentworth Hwy",
+  "city": "Wolfeboro",
+  "state": "NH",
+  "zip": "03894",
+  "camp_type": "sleepaway",
+  "primary_categories": [
+    "sports",
+    "arts",
+    "nature"
+  ],
+  "age_min": 7,
+  "age_max": 15,
+  "description_short": "A traditional co-ed overnight camp for boys and girls aged 7 to 15 on a 300-acre campus in Wolfeboro, New Hampshire. It offers 7-, 4- and 3-week sessions with over 30 activities in aquatics, athletics, arts and adventure.",
+  "activities": [
+    "Aquatics",
+    "Athletics",
+    "Arts",
+    "Adventure"
+  ],
+  "season_year": 2027,
+  "sources": [
+    {
+      "url": "https://www.campbirchmont.com/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.campbirchmont.com/",
+      "kind": "html",
+      "title": "Kids New Hampshire Summer Camp: Wolfeboro, NH: Camp Birchmont"
+    },
+    "warnings": [
+      "This is the camp's homepage. It has no session dates or prices; those appear to be on the linked '2027 Dates, Rates, FAQs' page, which was not part of this source.",
+      "Season year 2027 is taken from the navigation link label only.",
+      "The page shows two phone numbers run together ('603-569-1337516-621-5035'). They appear to be 603-569-1337 and 516-621-5035. Only the first is recorded.",
+      "The camp is called both 'Pierce Camp Birchmont' and 'Camp Birchmont'.",
+      "3 sessions without full dates were left out"
+    ],
+    "unknowns": [
+      "2027 session start and end dates (see the 2027 Dates, Rates, FAQs page)",
+      "Tuition for each session",
+      "Registration opening date and session availability",
+      "Deposit and refund policy",
+      "Financial aid",
+      "Transportation to camp",
+      "Whether meals are included and dietary accommodations (a 'Dining and Health Info' page is linked)",
+      "ACA accreditation",
+      "Swim and waterfront details",
+      "Special needs accommodations",
+      "Operator or legal entity name"
+    ],
+    "low_confidence": [
+      {
+        "field": "season_year",
+        "confidence": 0.7,
+        "quote": "2027 Dates, Rates, FAQs"
+      },
+      {
+        "field": "phone",
+        "confidence": 0.75,
+        "quote": "603-569-1337516-621-5035"
+      },
+      {
+        "field": "primary_categories",
+        "confidence": 0.7,
+        "quote": "Aquatics, Athletics, Arts, and Adventure"
+      }
+    ],
+    "errors": []
+  }
+}

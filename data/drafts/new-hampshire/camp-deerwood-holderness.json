@@ -1,0 +1,109 @@
+{
+  "slug": "camp-deerwood-holderness",
+  "name": "Camp Deerwood",
+  "website_url": "https://campdeerwood.com/",
+  "phone": "(603) 279-4237",
+  "city": "Holderness",
+  "state": "NH",
+  "zip": "03245",
+  "camp_type": "sleepaway",
+  "primary_categories": [
+    "sports",
+    "nature"
+  ],
+  "age_min": 8,
+  "age_max": 15,
+  "description_short": "Deerwood is an overnight camp for boys aged 8-15 on Squam Lake in Holderness, New Hampshire. Along with traditional camp activities, campers can try blacksmithing, waterskiing, rock climbing, kayaking, mountain biking and windsurfing.",
+  "activities": [
+    "blacksmithing",
+    "waterskiing",
+    "rock-climbing",
+    "kayaking",
+    "mountain-biking",
+    "windsurfing",
+    "trips"
+  ],
+  "swim_waterfront_notes": "Camp is on Squam Lake; waterfront activities include waterskiing, kayaking and windsurfing.",
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "1st Session",
+      "start_date": "2027-06-26",
+      "end_date": "2027-07-18",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "2nd Session",
+      "start_date": "2027-07-23",
+      "end_date": "2027-08-14",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Full Session",
+      "start_date": "2027-06-26",
+      "end_date": "2027-08-14",
+      "price": null,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://campdeerwood.com/current-schedule/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "website_url",
+        "phone",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "swim_waterfront_notes",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://campdeerwood.com/current-schedule/",
+      "kind": "html",
+      "title": "Current Schedule | Camp Deerwood"
+    },
+    "warnings": [
+      "Camp is boys only.",
+      "The Open House listing on the page is for November 2025, which has already passed. The page says the November 2026 schedule will be posted before 10/15/26.",
+      "Contact addresses are P.O. boxes: summer in Holderness, NH and winter in Waterbury Center, VT (802) 244-1203.",
+      "The weekdays given for the session dates match the 2027 calendar."
+    ],
+    "unknowns": [
+      "Tuition/price for each session (1st, 2nd, Full)",
+      "Deposit requirement and refund policy",
+      "Financial aid availability",
+      "Availability/openings for 2027 sessions",
+      "Registration opening date and direct application URL (page references 'Apply for 2027')",
+      "Street address of camp (only P.O. Box 188, Holderness given)",
+      "Email address (obfuscated on page)",
+      "ACA accreditation",
+      "Transportation to/from camp",
+      "Special needs accommodations",
+      "Swim instruction/lifeguard details"
+    ],
+    "low_confidence": [
+      {
+        "field": "primary_categories",
+        "confidence": 0.7,
+        "quote": "waterskiing, rock-climbing, kayaking, mountain-biking and windsurfing"
+      }
+    ],
+    "errors": []
+  }
+}

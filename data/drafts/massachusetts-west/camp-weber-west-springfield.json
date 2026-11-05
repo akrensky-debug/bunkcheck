@@ -1,0 +1,94 @@
+{
+  "slug": "camp-weber-west-springfield",
+  "name": "Camp Weber",
+  "operator_name": "YMCA of Greater Springfield",
+  "website_url": "https://springfieldy.org/camp-weber/",
+  "phone": "413.739.6955",
+  "street_address": "Dewey Street",
+  "city": "West Springfield",
+  "state": "MA",
+  "zip": null,
+  "camp_type": "day",
+  "primary_categories": [
+    "nature",
+    "sports"
+  ],
+  "age_min": 6,
+  "age_max": 12,
+  "description_short": "A YMCA day camp for ages 6-12 on 75 wooded acres in West Springfield, MA, with an outdoor pool used for swim lessons and free swim. Campers are grouped into small units by age.",
+  "activities": [
+    "Swimming instruction",
+    "Recreational swimming",
+    "Outdoor activities"
+  ],
+  "financial_aid": true,
+  "swim_waterfront_notes": "60' x 45' L-shaped pool used for both instructional and recreational swimming. The page also mentions smaller groups in the pool (part of its pandemic-era policies).",
+  "sources": [
+    {
+      "url": "https://springfieldy.org/camp-weber/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "financial_aid",
+        "swim_waterfront_notes"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://springfieldy.org/camp-weber/",
+      "kind": "html",
+      "title": "Camp Weber"
+    },
+    "warnings": [
+      "No season year, dates, or prices on the page. The text looks old: it describes COVID-era rules like face masks, temperature checks, curbside pickup and 1-to-6 groups, and may not reflect the 2027 season.",
+      "The 'Health & Safety' and 'Well-Being' sections refer to the pandemic and may be out of date.",
+      "A one-time $15.00 Facility Maintenance Fee per camper is charged at first registration. This is not a deposit and not the program price.",
+      "Up-to-date physical and immunization forms are due at registration.",
+      "The 'Programs and Registration' link goes to a general YMCA page, not a Camp Weber registration form."
+    ],
+    "unknowns": [
+      "Season year and session dates for 2027",
+      "Weekly price or session prices",
+      "Hours and whether before/after care is offered",
+      "Whether bus transportation is offered (the page mentions buses only in pandemic-era rules)",
+      "Whether meals or snacks are provided",
+      "Email address (hidden on the page)",
+      "Registration link and when registration opens",
+      "Deposit and refund policy",
+      "ACA accreditation",
+      "Support for children with special needs",
+      "Exact street address"
+    ],
+    "low_confidence": [
+      {
+        "field": "financial_aid",
+        "confidence": 0.75,
+        "quote": "CHILDCARE SCHOLARSHIPS APPLICATION"
+      },
+      {
+        "field": "primary_categories",
+        "confidence": 0.7,
+        "quote": "Your child will gain an appreciation for the outdoors at camp Weber."
+      }
+    ],
+    "errors": [
+      "missing required zip",
+      "missing required season_year"
+    ]
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "slug": "lotus-lake-camp",
+  "name": "Lotus Lake Camp",
+  "website_url": "http://lotuslakecamp.com/",
+  "registration_url": "http://lotuslakecamp.com/registration/",
+  "email": "LotusLakecamp@gmail.com",
+  "phone": "802-249-3814",
+  "city": null,
+  "state": null,
+  "zip": null,
+  "camp_type": "day",
+  "primary_categories": [
+    "sports",
+    "nature",
+    "arts"
+  ],
+  "age_min": 5,
+  "age_max": 14,
+  "grade_min": 0,
+  "grade_max": 9,
+  "description_short": "Full-day camp, 9:00-4:00 Monday to Friday, for children entering grades K-9. Campers are grouped by grade and do Red Cross swim lessons, boats or archery, crafts or tennis, and woodshop or outdoor adventure, plus a daily lunch hike into the woods.",
+  "activities": [
+    "Red Cross swim lessons",
+    "Games",
+    "Boats",
+    "Archery",
+    "Crafts",
+    "Tennis",
+    "Woodshop",
+    "Outdoor adventure / trails",
+    "Daily lunch hike",
+    "Fire building",
+    "Leave no trace",
+    "Counselor-led special activities",
+    "Free time",
+    "All camp activity",
+    "Visiting day"
+  ],
+  "price_per_week": 485,
+  "price_min": 485,
+  "price_max": 3095,
+  "financial_aid": true,
+  "transportation": true,
+  "meals_included": false,
+  "swim_waterfront_notes": "Red Cross swim lessons. Campers must pass LLC's own deep water test, without goggles, to swim in the deep end outside of lessons. Boating is offered as an activity choice.",
+  "season_year": 2026,
+  "price_per": "week",
+  "sessions": [
+    {
+      "name": "Session 1",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-03",
+      "price": 485,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 2",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-17",
+      "price": 970,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 3",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-30",
+      "price": 970,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 4",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-14",
+      "price": 970,
+      "availability": "unknown"
+    },
+    {
+      "name": "All summer rate",
+      "start_date": "2026-06-29",
+      "end_date": "2026-08-14",
+      "price": 3095,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "http://lotuslakecamp.com/programsfees/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "grade_min",
+        "grade_max",
+        "description_short",
+        "price_min",
+        "price_max",
+        "price_per_week",
+        "price_per",
+        "transportation",
+        "meals_included",
+        "financial_aid",
+        "swim_waterfront_notes",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "http://lotuslakecamp.com/programsfees/",
+      "kind": "html",
+      "title": "Programs/Fees - Lotus Lake Camp"
+    },
+    "warnings": [
+      "The page only lists the 2026 season, and every 2026 session has already ended (today is 2026-10-13). Dates and prices for 2027 are not posted yet.",
+      "The third session has no number on the page (\"Session July 20th – July 30th\"). It is recorded here as Session 3. It also ends on a Thursday (July 30), which may be a typo for July 31.",
+      "The 2026 transportation schedule is listed as TBD. The bus times shown are the 2025 schedule.",
+      "The 'All summer rate' is recorded as a session running from the first day of Session 1 to the last day of Session 4.",
+      "There is also a CIT program for campers going into 10th grade ($1650). No dates are given; families are asked to email if interested."
+    ],
+    "unknowns": [
+      "2027 session dates and prices",
+      "Street address, city, state and zip of the camp (bus stops are in Montpelier, Barre, Williamstown and Northfield)",
+      "Refund policy",
+      "Whether before or after care is offered",
+      "Session availability",
+      "When registration opens",
+      "Whether the campership funds give financial aid directly, and how to apply",
+      "ACA accreditation",
+      "Operator or organization name",
+      "Accommodations for special needs",
+      "Whether transportation costs extra",
+      "CIT program dates"
+    ],
+    "low_confidence": [
+      {
+        "field": "sessions[2].start_date",
+        "confidence": 0.75,
+        "quote": "Session July 20th – July 30th $970"
+      },
+      {
+        "field": "transportation",
+        "confidence": 0.65,
+        "quote": "TRANSPORTATION 2026 TBD, likely the same as 2025 seen below"
+      },
+      {
+        "field": "financial_aid",
+        "confidence": 0.6,
+        "quote": "The Jonathan Gilbert Campership ... Vermont Campership Fund"
+      },
+      {
+        "field": "primary_categories",
+        "confidence": 0.75,
+        "quote": "Red Cross Swim lessons ... Daily Lunch Hike and Quiet Time ... Crafts"
+      }
+    ],
+    "errors": [
+      "missing required city",
+      "missing required state",
+      "missing required zip"
+    ]
+  }
+}

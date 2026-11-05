@@ -1,0 +1,89 @@
+{
+  "slug": "seacoast-united-youth-soccer-camps",
+  "name": "Seacoast United Youth Soccer Camps",
+  "operator_name": "Seacoast United Soccer Club",
+  "website_url": "https://www.seacoastunited.com/page/youth-camps",
+  "email": "questions@seacoastunited.com",
+  "phone": "603-926-8444",
+  "city": null,
+  "state": null,
+  "zip": null,
+  "camp_type": "specialty",
+  "primary_categories": [
+    "sports"
+  ],
+  "age_min": 3,
+  "age_max": 18,
+  "description_short": "Youth soccer camps run by Seacoast United Soccer Club's coaching staff in several locations in Massachusetts, Maine and New Hampshire. Options include Grassroots (ages 3-6), Summer Skills (6-14), Advanced Training (7-15), Goalkeeper, and Residential (9-18) camps.",
+  "activities": [
+    "Soccer",
+    "Goalkeeper training",
+    "Skills sessions",
+    "Speed and agility work",
+    "Small-sided games",
+    "Full-sided matches"
+  ],
+  "refund_policy_summary": "No refunds. All registration fees are non-refundable for any reason, including program cancellation, injury, absence or non-participation. Families who withdraw after the season starts still owe all remaining payments.",
+  "sources": [
+    {
+      "url": "https://www.seacoastunited.com/page/youth-camps",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "phone",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "refund_policy_summary"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.seacoastunited.com/page/youth-camps",
+      "kind": "html",
+      "title": "Youth Camps -- Seacoast United"
+    },
+    "warnings": [
+      "This is a general overview page for several types of soccer camps. It lists no dates, prices or bookable sessions, and no season year.",
+      "Age ranges conflict: Residential Camps are titled '9-18 YEARS' but the text says 'U7 to U18'. Goalkeeper camps say 'all ages' but also 'U9 to U19'.",
+      "Camp types differ: Residential Camps are overnight, and the rest seem to be day programs. A single camp_type cannot describe all of them.",
+      "The only address is a mailing address (P.O. Box 779, Hampton, NH 03842). Camps run at several locations in MA, ME and NH, so no location was recorded.",
+      "The refund policy is strict: no refunds even if the program is cancelled."
+    ],
+    "unknowns": [
+      "Season year and session dates (no dates are listed)",
+      "Prices for each camp type",
+      "Specific camp locations and addresses",
+      "Registration URL and when registration opens",
+      "Daily hours and whether extended care is offered",
+      "Residential camp details: where it is held, overnight lodging, and meals",
+      "Whether financial aid is available",
+      "Deposit or payment schedule",
+      "Transportation",
+      "Accommodations for special needs",
+      "ACA accreditation"
+    ],
+    "low_confidence": [
+      {
+        "field": "age_max",
+        "confidence": 0.75,
+        "quote": "RESIDENTIAL CAMPS 9-18 YEARS"
+      }
+    ],
+    "errors": [
+      "missing required city",
+      "missing required state",
+      "missing required zip",
+      "missing required season_year"
+    ]
+  }
+}

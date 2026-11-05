@@ -1,0 +1,133 @@
+{
+  "slug": "town-of-west-hartford-leisure-services-camps-west-hartford",
+  "name": "Town of West Hartford Leisure Services Camps",
+  "operator_name": "Town of West Hartford Leisure Services",
+  "website_url": "https://www.westhartfordct.gov/town-departments/leisure-services/camps",
+  "phone": "860-561-7500",
+  "city": "West Hartford",
+  "state": "CT",
+  "zip": null,
+  "primary_categories": [
+    "sports",
+    "arts",
+    "performing_arts",
+    "STEM",
+    "nature"
+  ],
+  "age_min": 3,
+  "age_max": 14,
+  "description_short": "The Town of West Hartford's Leisure Services department runs summer and school-vacation camps for children ages 3 to 14. Camps include art, specialty, sports, nature and history camps, plus traditional camps in neighborhood parks.",
+  "activities": [
+    "painting",
+    "pottery",
+    "dance",
+    "drama",
+    "Lego engineering",
+    "cooking",
+    "circus",
+    "basketball",
+    "soccer",
+    "baseball",
+    "field hockey",
+    "lacrosse",
+    "tennis",
+    "ice hockey",
+    "nature",
+    "colonial history",
+    "crafts",
+    "swimming lessons"
+  ],
+  "financial_aid": true,
+  "special_needs_notes": "The page says there is something for every child \"no matter what his/her interests or abilities.\" The site has a separate Special Needs Recreation section, but this page gives no details on accommodations.",
+  "swim_waterfront_notes": "The page says the traditional neighborhood park camps include swimming lessons. No pool or waterfront details are given.",
+  "sources": [
+    {
+      "url": "https://www.westhartfordct.gov/town-departments/leisure-services/camps",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "phone",
+        "city",
+        "state",
+        "primary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "financial_aid",
+        "special_needs_notes",
+        "swim_waterfront_notes"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.westhartfordct.gov/town-departments/leisure-services/camps",
+      "kind": "html",
+      "title": "Camps - Town of West Hartford"
+    },
+    "warnings": [
+      "This is a hub page for several town-run camps (Buena Vista, Busy Bees & Mini Busy Bees, Camp Funtastic, Discovery Zone / Discovery Zone Jr., Westmoor Park), not one camp. Each camp should probably be its own listing, built from its own page.",
+      "No season year, dates or prices appear on the page, so season_year is left blank.",
+      "The age ranges conflict: the intro says ages 3 to 14, but Busy Bees is listed as ages 2-5. Westmoor Park is listed as 4-13 in the body and 3-13 in the navigation. Buena Vista says '6-Teen'.",
+      "The phone number and address are the general West Hartford Town Hall line and address, not camp-specific contacts."
+    ],
+    "unknowns": [
+      "Season year and session dates (no season shown)",
+      "Prices / weekly rates",
+      "Registration URL (the 'Click here to register online' link target is not given)",
+      "Registration opening date",
+      "Whether camps are day-only (it seems likely but the page doesn't say)",
+      "Camp locations / street addresses for each camp",
+      "Daily hours and extended care",
+      "Meals",
+      "Transportation",
+      "Deposit and refund policy (see the separate 'Refund, Cancellation, Waitlist Policies' page)",
+      "ACA accreditation",
+      "Camp-specific email/phone",
+      "Details of financial aid / scholarship fund"
+    ],
+    "low_confidence": [
+      {
+        "field": "phone",
+        "confidence": 0.55,
+        "quote": "P: 860-561-7500"
+      },
+      {
+        "field": "age_min",
+        "confidence": 0.6,
+        "quote": "children ages 3 to 14"
+      },
+      {
+        "field": "age_max",
+        "confidence": 0.6,
+        "quote": "children ages 3 to 14"
+      },
+      {
+        "field": "swim_waterfront_notes",
+        "confidence": 0.75,
+        "quote": "days filled with craft projects, sports, swimming lessons, and good old summertime fun"
+      },
+      {
+        "field": "financial_aid",
+        "confidence": 0.55,
+        "quote": "Help send a child to camp >"
+      },
+      {
+        "field": "special_needs_notes",
+        "confidence": 0.5,
+        "quote": "There's something for every child, no matter what his/her interests or abilities."
+      }
+    ],
+    "errors": [
+      "missing required zip",
+      "missing required camp_type",
+      "missing required season_year",
+      "camp_type must be one of ['day', 'sleepaway', 'specialty']"
+    ]
+  }
+}

@@ -8,8 +8,8 @@ import {
   listRegistrations, previewReminders, saveReminderPrefs, updateRegistration,
   type Registration, type RegistrationUpdate, type ReminderPreview, type ReminderPrefs,
 } from '@/lib/booking'
+import { Button, Checkbox, ChoiceChip, Container, EmptyState, Field, Heading, Input, Meta, Section, Select, Text, TextLink, cx } from '@/components/ui'
 
-const input = 'w-full border border-gray-200 rounded-lg px-3 py-2 text-sm outline-none focus:border-brand-500'
 
 export default function RegistrationsPage() {
   const session = useSession()
@@ -27,30 +27,31 @@ export default function RegistrationsPage() {
   const replace = (r: Registration) => setRegs(rs => (rs ?? []).map(x => (x.id === r.id ? r : x)))
 
   if (!family || !regs) {
-    return <div className="max-w-3xl mx-auto px-4 py-16 text-gray-400">{error || 'Loading…'}</div>
+    return <Container size="narrow" className="py-16"><Text tone="muted">{error || 'Loading…'}</Text></Container>
   }
 
   const active = regs.filter(r => r.status !== 'cancelled')
   const cancelled = regs.filter(r => r.status === 'cancelled')
 
   return (
-    <div className="max-w-3xl mx-auto px-4 py-10 space-y-10">
-      <header>
-        <h1 className="text-2xl font-bold text-gray-900">Registrations</h1>
-        <p className="text-gray-600 mt-1">
-          Camps you're watching and the ones you've signed up for. You register and pay on each camp's own
+    <Container size="narrow" className="space-y-14 py-12 sm:py-16">
+      <header className="space-y-3">
+        <Heading level="h1">Registrations</Heading>
+        <Text tone="muted">
+          Camps you&rsquo;re watching and the ones you&rsquo;ve signed up for. You register and pay on each camp&rsquo;s own
           site; record it here and your calendar and reminders keep up.
-        </p>
-        {session && <a href="/kit" className="inline-block mt-2 text-sm font-medium text-brand-700">Your info kit ›</a>}
+        </Text>
+        {session && <TextLink href="/kit" arrow className="text-small">Your info kit</TextLink>}
       </header>
 
       {active.length === 0 ? (
-        <div className="border border-dashed border-gray-200 rounded-2xl p-6 text-sm text-gray-500">
-          Nothing tracked yet. On a camp's page, press <strong>Get ready to register</strong>, or ask the
-          assistant to watch a camp for you.
-        </div>
+        <EmptyState
+          className="border-y border-line"
+          title="Nothing tracked yet"
+          description={<>On a camp&rsquo;s page, choose <strong className="text-ink">Get ready to register</strong>, or ask the assistant to watch a camp for you.</>}
+        />
       ) : (
-        <ul className="space-y-3">
+        <ul className="divide-y divide-line border-y border-line">
           {active.map(r => (
             <RegistrationCard key={r.id} familyId={family.id} reg={r} onChange={replace}
               onRemove={() => setRegs(rs => (rs ?? []).filter(x => x.id !== r.id))} />
@@ -59,8 +60,8 @@ export default function RegistrationsPage() {
       )}
 
       {cancelled.length > 0 && (
-        <details className="text-sm text-gray-500">
-          <summary className="cursor-pointer">{cancelled.length} cancelled</summary>
+        <details className="text-small text-muted">
+          <summary className="cursor-pointer hover:text-ink">{cancelled.length} cancelled</summary>
           <ul className="mt-2 space-y-1">
             {cancelled.map(r => <li key={r.id}>{r.camp_name}{r.child_name ? ` · ${r.child_name}` : ''}</li>)}
           </ul>
@@ -70,13 +71,14 @@ export default function RegistrationsPage() {
       {session ? (
         <ReminderSettings familyId={family.id} />
       ) : (
-        <section className="border-t border-gray-100 pt-6 text-sm text-gray-600">
-          <h2 className="font-semibold text-gray-900 mb-1">Reminders</h2>
-          <a href="/signin" className="text-brand-700 font-medium">Sign in</a> to get an email before registration
-          opens and before payments and forms are due.
-        </section>
+        <Section title="Reminders" divided>
+          <Text tone="muted" variant="small">
+            <TextLink href="/signin">Sign in</TextLink> to get an email before registration
+            opens and before payments and forms are due.
+          </Text>
+        </Section>
       )}
-    </div>
+    </Container>
   )
 }
 
@@ -86,20 +88,18 @@ function RegistrationCard({ familyId, reg, onChange, onRemove }: {
   const [editing, setEditing] = useState(false)
   const opens = reg.status === 'watching' && reg.opens_at
   return (
-    <li className="border border-gray-200 rounded-2xl p-4 space-y-3 bg-white">
+    <li className="space-y-3 py-6">
       <div className="flex flex-wrap justify-between gap-3">
         <div className="min-w-0">
-          <a href={`/camps/${reg.camp_id}`} className="font-semibold text-gray-900 hover:text-brand-700">{reg.camp_name}</a>
-          <p className="text-sm text-gray-500">
-            {[reg.child_name, reg.session_name,
-              reg.start_date && reg.end_date ? `${fmtDay(reg.start_date)} – ${fmtDay(reg.end_date)}` : null]
-              .filter(Boolean).join(' · ') || 'Any session'}
-          </p>
+          <a href={`/camps/${reg.camp_id}`} className="font-display text-h3 text-ink hover:underline underline-offset-4">{reg.camp_name}</a>
+          <Meta parts={[reg.child_name, reg.session_name,
+            reg.start_date && reg.end_date ? `${fmtDay(reg.start_date)} – ${fmtDay(reg.end_date)}` : null]} />
+          {!reg.child_name && !reg.session_name && !reg.start_date && <p className="text-small text-muted">Any session</p>}
         </div>
-        <div className="flex flex-wrap gap-1.5 items-start">
-          <span className={`text-xs font-medium px-2 py-0.5 rounded-full ${STATUS_TONE[reg.status]}`}>{STATUS_LABEL[reg.status]}</span>
+        <div className="flex flex-wrap items-start gap-x-3 text-small font-semibold">
+          <span className={STATUS_TONE[reg.status]}>{STATUS_LABEL[reg.status]}</span>
           {reg.status !== 'watching' && (
-            <span className={`text-xs font-medium px-2 py-0.5 rounded-full ${reg.payment_status === 'paid' ? 'bg-green-50 text-green-700' : 'bg-gray-100 text-gray-600'}`}>
+            <span className={reg.payment_status === 'paid' ? 'text-checked' : 'text-muted'}>
               {PAY_LABEL[reg.payment_status]}{reg.amount_paid ? ` · $${reg.amount_paid.toLocaleString()}` : ''}
             </span>
           )}
@@ -107,30 +107,29 @@ function RegistrationCard({ familyId, reg, onChange, onRemove }: {
       </div>
 
       {opens && (
-        <div className="flex flex-wrap items-baseline gap-x-3 text-sm">
-          <span className="font-semibold text-brand-700">{countdown(reg.opens_at!)}</span>
-          <span className="text-gray-500">
+        <div className="flex flex-wrap items-baseline gap-x-3 text-small">
+          <span className="font-semibold text-ink">{countdown(reg.opens_at!)}</span>
+          <span className="text-muted">
             {fmtWhen(reg.opens_at!)}{reg.opens_at_source === 'family' ? ' (your date)' : ''}
           </span>
         </div>
       )}
-      {!opens && <p className="text-sm text-gray-700">{reg.next_step}</p>}
+      {!opens && <p className="text-small text-ink">{reg.next_step}</p>}
 
-      <div className="flex flex-wrap gap-3 text-sm">
+      <div className="flex flex-wrap items-center gap-5">
         {reg.status !== 'registered' || reg.payment_status !== 'paid' ? (
-          <a href={`/register/${reg.camp_id}?registration=${reg.id}`}
-            className="bg-brand-600 hover:bg-brand-700 text-white font-semibold px-4 py-1.5 rounded-lg">
+          <Button href={`/register/${reg.camp_id}?registration=${reg.id}`} size="sm">
             {reg.status === 'watching' ? 'Register-now checklist' : 'Checklist'}
-          </a>
+          </Button>
         ) : null}
-        <button onClick={() => setEditing(e => !e)} className="font-medium text-brand-700">
+        <Button variant="link" onClick={() => setEditing(e => !e)}>
           {editing ? 'Close' : reg.status === 'watching' ? 'I registered' : 'Update'}
-        </button>
-        <button onClick={async () => {
+        </Button>
+        <Button variant="quiet" onClick={async () => {
           if (!confirm(`Stop tracking ${reg.camp_name}? Its dates come off your calendar.`)) return
           await deleteRegistration(familyId, reg.id)
           onRemove()
-        }} className="text-gray-400 hover:text-red-600">Stop tracking</button>
+        }}>Stop tracking</Button>
       </div>
 
       {editing && <RecordForm familyId={familyId} reg={reg} onSaved={r => { onChange(r); setEditing(false) }} />}
@@ -157,56 +156,56 @@ function RecordForm({ familyId, reg, onSaved }: { familyId: string; reg: Registr
   }
 
   return (
-    <form onSubmit={save} className="border-t border-gray-100 pt-3 grid sm:grid-cols-2 gap-3 text-sm">
-      <label className="space-y-1 text-gray-600">
+    <form onSubmit={save} className="grid gap-4 border-t border-line pt-5 text-small sm:grid-cols-2">
+      <label className="flex flex-col gap-1.5 font-semibold text-ink">
         <span>Status</span>
-        <select className={input} value={form.status} onChange={e => set('status', e.target.value)}>
+        <Select fieldSize="sm" className="font-normal" value={form.status} onChange={e => set('status', e.target.value)}>
           <option value="registered">Registered</option>
           <option value="waitlisted">On the waitlist</option>
           <option value="cancelled">Cancelled</option>
           <option value="watching">Not yet</option>
-        </select>
+        </Select>
       </label>
-      <label className="space-y-1 text-gray-600">
+      <label className="flex flex-col gap-1.5 font-semibold text-ink">
         <span>Payment</span>
-        <select className={input} value={form.payment_status} onChange={e => set('payment_status', e.target.value)}>
+        <Select fieldSize="sm" className="font-normal" value={form.payment_status} onChange={e => set('payment_status', e.target.value)}>
           <option value="unpaid">Not paid</option>
           <option value="deposit">Deposit paid</option>
           <option value="paid">Paid in full</option>
           <option value="refunded">Refunded</option>
-        </select>
+        </Select>
       </label>
-      <label className="space-y-1 text-gray-600">
+      <label className="flex flex-col gap-1.5 font-semibold text-ink">
         <span>Amount paid ($)</span>
-        <input type="number" min={0} step="0.01" className={input} value={form.amount_paid ?? ''} onChange={e => set('amount_paid', num(e.target.value))} />
+        <Input type="number" min={0} step="0.01" fieldSize="sm" className="font-normal" value={form.amount_paid ?? ''} onChange={e => set('amount_paid', num(e.target.value))} />
       </label>
-      <label className="space-y-1 text-gray-600">
+      <label className="flex flex-col gap-1.5 font-semibold text-ink">
         <span>Paid on</span>
-        <input type="date" className={input} value={form.paid_on ?? ''} onChange={e => set('paid_on', e.target.value)} />
+        <Input type="date" fieldSize="sm" className="font-normal" value={form.paid_on ?? ''} onChange={e => set('paid_on', e.target.value)} />
       </label>
       {form.payment_status !== 'paid' && (
         <>
-          <label className="space-y-1 text-gray-600">
+          <label className="flex flex-col gap-1.5 font-semibold text-ink">
             <span>Still owed ($)</span>
-            <input type="number" min={0} step="0.01" className={input} value={form.balance_due ?? ''} onChange={e => set('balance_due', num(e.target.value))} />
+            <Input type="number" min={0} step="0.01" fieldSize="sm" className="font-normal" value={form.balance_due ?? ''} onChange={e => set('balance_due', num(e.target.value))} />
           </label>
-          <label className="space-y-1 text-gray-600">
+          <label className="flex flex-col gap-1.5 font-semibold text-ink">
             <span>Payment due</span>
-            <input type="date" className={input} value={form.payment_due_date ?? ''} onChange={e => set('payment_due_date', e.target.value)} />
+            <Input type="date" fieldSize="sm" className="font-normal" value={form.payment_due_date ?? ''} onChange={e => set('payment_due_date', e.target.value)} />
           </label>
         </>
       )}
-      <label className="space-y-1 text-gray-600">
+      <label className="flex flex-col gap-1.5 font-semibold text-ink">
         <span>Forms due (medical, waiver)</span>
-        <input type="date" className={input} value={form.forms_due_date ?? ''} onChange={e => set('forms_due_date', e.target.value)} />
+        <Input type="date" fieldSize="sm" className="font-normal" value={form.forms_due_date ?? ''} onChange={e => set('forms_due_date', e.target.value)} />
       </label>
-      <label className="space-y-1 text-gray-600">
+      <label className="flex flex-col gap-1.5 font-semibold text-ink">
         <span>Confirmation number</span>
-        <input className={input} value={form.confirmation_number ?? ''} onChange={e => set('confirmation_number', e.target.value)} />
+        <Input fieldSize="sm" className="font-normal" value={form.confirmation_number ?? ''} onChange={e => set('confirmation_number', e.target.value)} />
       </label>
-      <div className="sm:col-span-2 flex items-center gap-3">
-        <button className="bg-brand-600 hover:bg-brand-700 text-white font-semibold px-4 py-2 rounded-lg">Save</button>
-        {error && <span className="text-red-600">{error}</span>}
+      <div className="flex items-center gap-3 sm:col-span-2">
+        <Button type="submit">Save</Button>
+        {error && <span className="text-error">{error}</span>}
       </div>
     </form>
   )
@@ -240,36 +239,30 @@ function ReminderSettings({ familyId }: { familyId: string }) {
   }
 
   return (
-    <section className="border-t border-gray-100 pt-6 space-y-4">
-      <div>
-        <h2 className="font-semibold text-gray-900">Reminders</h2>
-        <p className="text-sm text-gray-600">One email, only when something is coming up. It names the camp and the date, never anything from your info kit.</p>
-      </div>
-      <label className="flex items-center gap-2 text-sm text-gray-700">
-        <input type="checkbox" checked={prefs.enabled} onChange={e => setPrefs({ ...prefs, enabled: e.target.checked })} />
+    <Section title="Reminders" divided description="One email, only when something is coming up. It names the camp and the date, never anything from your info kit." className="space-y-5">
+      <Checkbox checked={prefs.enabled} onChange={e => setPrefs({ ...prefs, enabled: e.target.checked })}>
         Email me registration reminders
-      </label>
+      </Checkbox>
       {prefs.enabled && (
-        <div className="space-y-4 text-sm">
-          <label className="block space-y-1 text-gray-600 max-w-sm">
-            <span>Send to</span>
-            <input type="email" className={input} value={prefs.email ?? ''} onChange={e => setPrefs({ ...prefs, email: e.target.value || null })} />
-          </label>
+        <div className="space-y-5 text-small">
+          <Field label="Send to" className="max-w-sm">
+            {id => <Input id={id} fieldSize="sm" type="email" value={prefs.email ?? ''} onChange={e => setPrefs({ ...prefs, email: e.target.value || null })} />}
+          </Field>
           <DayChoices label="Before registration opens" choices={OPEN_CHOICES} chosen={prefs.opens_days} onToggle={d => toggle('opens_days', d)} />
           <DayChoices label="Before payments and forms are due" choices={DEADLINE_CHOICES} chosen={prefs.deadline_days} onToggle={d => toggle('deadline_days', d)} />
         </div>
       )}
       <div className="flex items-center gap-3">
-        <button onClick={save} className="bg-brand-600 hover:bg-brand-700 text-white text-sm font-semibold px-4 py-2 rounded-lg">Save reminders</button>
-        {status && <span className="text-sm text-gray-500">{status}</span>}
+        <Button onClick={save}>Save reminders</Button>
+        {status && <span className="text-small text-muted">{status}</span>}
       </div>
-      <div className="text-sm">
-        <p className="font-medium text-gray-700">Going out today</p>
+      <div className="text-small">
+        <p className="font-semibold text-ink">Going out today</p>
         {today.length ? (
-          <ul className="mt-1 space-y-1 text-gray-600">{today.map((t, i) => <li key={i}>✉️ {t.text}</li>)}</ul>
-        ) : <p className="text-gray-400">Nothing due today.</p>}
+          <ul className="mt-1 space-y-1 text-muted">{today.map((t, i) => <li key={i}>{t.text}</li>)}</ul>
+        ) : <p className="text-muted">Nothing due today.</p>}
       </div>
-    </section>
+    </Section>
   )
 }
 
@@ -278,13 +271,10 @@ function DayChoices({ label, choices, chosen, onToggle }: {
 }) {
   return (
     <fieldset>
-      <legend className="text-gray-700 font-medium mb-1.5">{label}</legend>
+      <legend className="mb-2 font-semibold text-ink">{label}</legend>
       <div className="flex flex-wrap gap-2">
         {choices.map(([d, text]) => (
-          <label key={d} className={`border rounded-full px-3 py-1 cursor-pointer ${chosen.includes(d) ? 'bg-brand-50 border-brand-500 text-brand-700' : 'border-gray-200 text-gray-600'}`}>
-            <input type="checkbox" className="sr-only" checked={chosen.includes(d)} onChange={() => onToggle(d)} />
-            {text}
-          </label>
+          <ChoiceChip key={d} checked={chosen.includes(d)} onChange={() => onToggle(d)}>{text}</ChoiceChip>
         ))}
       </div>
     </fieldset>

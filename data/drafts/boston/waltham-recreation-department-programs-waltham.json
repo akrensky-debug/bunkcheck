@@ -1,0 +1,72 @@
+{
+  "slug": "waltham-recreation-department-programs-waltham",
+  "name": "Waltham Recreation Department Programs",
+  "operator_name": "City of Waltham Recreation Department",
+  "website_url": "https://www.city.waltham.ma.us/1938/Program-Information",
+  "registration_url": "https://www.city.waltham.ma.us/1942/Register-for-Programs",
+  "phone": "781-314-3475",
+  "street_address": "510 Moody Street",
+  "city": "Waltham",
+  "state": "MA",
+  "zip": "02452",
+  "description_short": "The City of Waltham Recreation Department runs seasonal programs, including summer programs. Registration for Spring/Summer 2027 opens Tuesday, March 16, 2027 at 12:00 noon.",
+  "financial_aid": true,
+  "season_year": 2027,
+  "sources": [
+    {
+      "url": "https://www.city.waltham.ma.us/1938/Program-Information",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "description_short",
+        "financial_aid"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.city.waltham.ma.us/1938/Program-Information",
+      "kind": "html",
+      "title": "Program Information | Waltham, MAArrow LeftArrow RightSlideshow Left ArrowSlideshow Right Arrow"
+    },
+    "warnings": [
+      "This is a general program-information page for the City of Waltham Recreation Department, not a page for one specific camp. It names no summer camp programs.",
+      "The only brochures posted are for Fall 2026. No 2027 summer program details (sessions, dates, prices, ages) are posted yet.",
+      "The Spring/Summer 2027 registration date (March 16, 2027, 12:00 noon) covers the whole season. It is not tied to any particular camp session, so no sessions were recorded."
+    ],
+    "unknowns": [
+      "Specific summer camp program names and descriptions",
+      "Session dates for summer 2027",
+      "Prices / weekly rates",
+      "Age or grade ranges",
+      "Camp type (day vs. other)",
+      "Daily hours and extended care",
+      "Meals, transportation, swim details",
+      "Refund and deposit policy",
+      "Scholarship eligibility and how to apply",
+      "Special needs support (the site has an Inclusive Recreation page)",
+      "Contact email"
+    ],
+    "low_confidence": [
+      {
+        "field": "name",
+        "confidence": 0.5,
+        "quote": "Program Information"
+      }
+    ],
+    "errors": [
+      "missing required camp_type",
+      "camp_type must be one of ['day', 'sleepaway', 'specialty']"
+    ]
+  }
+}

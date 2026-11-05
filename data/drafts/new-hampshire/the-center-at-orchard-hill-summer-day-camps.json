@@ -1,0 +1,127 @@
+{
+  "slug": "the-center-at-orchard-hill-summer-day-camps",
+  "name": "The Center at Orchard Hill Summer Day Camps",
+  "operator_name": "The Center at Orchard Hill",
+  "website_url": "https://www.thecenteratorchardhill.org/child-youth-programs",
+  "registration_url": "https://linseed.works/forms/activities?background=true&department=DAC&header=true&key=XM2151u5gARl&view=card",
+  "email": "eleanor@theorchardschool.org",
+  "city": null,
+  "state": "NH",
+  "zip": null,
+  "camp_type": "day",
+  "primary_categories": [
+    "nature",
+    "arts",
+    "performing_arts"
+  ],
+  "description_short": "Nature- and arts-based summer day camps for school-age children, plus teen summer programs and a Counselor in Training program. Days include campfire stories, songs, games, swimming, art and cooking, and children of all abilities are welcome.",
+  "activities": [
+    "Campfire storytelling",
+    "Singing",
+    "Games",
+    "Swimming",
+    "Art",
+    "Cooking",
+    "Music",
+    "Counselor in Training"
+  ],
+  "price_per_week": 300,
+  "price_min": 300,
+  "price_max": 600,
+  "financial_aid": true,
+  "special_needs_notes": "The page says children of all abilities are welcome, with support from Monadnock Developmental Services. Families of children with a difference or disability who don't have public funding can work with the camp to arrange for their child to attend a week of day camp.",
+  "swim_waterfront_notes": "The page mentions swimming as a camp activity. It gives no details about the location, supervision or swim tests.",
+  "price_per": "week",
+  "sources": [
+    {
+      "url": "https://www.thecenteratorchardhill.org/child-youth-programs",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "email",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "description_short",
+        "price_min",
+        "price_max",
+        "price_per_week",
+        "price_per",
+        "financial_aid",
+        "special_needs_notes",
+        "swim_waterfront_notes"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.thecenteratorchardhill.org/child-youth-programs",
+      "kind": "html",
+      "title": "Child & Youth Programs | Nurture Growth Together — The Center at Orchard Hill"
+    },
+    "warnings": [
+      "The page does not say which season it covers. There are no years or dates, and the footer says © 2025. Today is 2026-10-13, so the $300/week price and 'Registration is open!' probably refer to a past summer (2025 or 2026), not 2027.",
+      "Prices vary by program: summer day camp is $300/week, teen programs are $300–$600 depending on the program, and the February/April school vacation camps are $200–$300/week. price_min and price_max cover summer programs only.",
+      "The email address listed is for Eleanor, the contact for the Counselor in Training program, and is on a different domain (theorchardschool.org). It may not be the main camp contact."
+    ],
+    "unknowns": [
+      "Season year and session dates",
+      "Number of weeks/sessions and their individual prices",
+      "Age or grade range for day camp and teen programs",
+      "Street address, city, zip",
+      "Phone number",
+      "Daily hours and extended care",
+      "Whether meals/snacks are provided",
+      "Transportation",
+      "Deposit and refund policy",
+      "ACA accreditation",
+      "Spots left for each session",
+      "Registration opening date for 2027",
+      "Swim location and supervision"
+    ],
+    "low_confidence": [
+      {
+        "field": "price_per_week",
+        "confidence": 0.6,
+        "quote": "Summer Camp Tuition is $300/week."
+      },
+      {
+        "field": "price_min",
+        "confidence": 0.55,
+        "quote": "Summer Camp Tuition is $300/week."
+      },
+      {
+        "field": "price_max",
+        "confidence": 0.55,
+        "quote": "Tuition is $300 - $600 depending on the program."
+      },
+      {
+        "field": "registration_url",
+        "confidence": 0.75,
+        "quote": "Information & Registration"
+      },
+      {
+        "field": "email",
+        "confidence": 0.6,
+        "quote": "Please reach out to Eleanor if your teen is interested. eleanor@theorchardschool.org"
+      },
+      {
+        "field": "name",
+        "confidence": 0.6,
+        "quote": "Summer Camps"
+      }
+    ],
+    "errors": [
+      "missing required city",
+      "missing required zip",
+      "missing required season_year",
+      "city None, NH is not in cities.py"
+    ]
+  }
+}

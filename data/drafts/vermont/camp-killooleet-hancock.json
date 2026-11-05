@@ -1,0 +1,140 @@
+{
+  "slug": "camp-killooleet-hancock",
+  "name": "Camp Killooleet",
+  "operator_name": "Killooleet Inc",
+  "website_url": "https://www.killooleet.com",
+  "registration_url": "https://killooleet.campintouch.com/ui/forms/application/camper/App",
+  "email": "info@killooleet.com",
+  "phone": "802-767-3152",
+  "city": "Hancock",
+  "state": "VT",
+  "zip": "05748",
+  "camp_type": "sleepaway",
+  "description_short": "A small overnight camp in Hancock, Vermont that runs one program for the full season, from late June to mid-August. First-time campers can choose to come for July only.",
+  "price_min": 9800,
+  "price_max": 14300,
+  "financial_aid": true,
+  "transportation": true,
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Full Season 2026",
+      "start_date": "2026-06-28",
+      "end_date": "2026-08-16",
+      "price": 13800,
+      "availability": "unknown"
+    },
+    {
+      "name": "July Only (first-time campers) 2026",
+      "start_date": "2026-06-28",
+      "end_date": "2026-07-26",
+      "price": 9800,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.killooleet.com/register",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "description_short",
+        "price_min",
+        "price_max",
+        "transportation",
+        "financial_aid",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.killooleet.com/register",
+      "kind": "html",
+      "title": "Register — Camp Killooleet"
+    },
+    "warnings": [
+      "The page shows only the 2026 season, which ended August 16, 2026. As of today (2026-10-13), 2027 dates and prices have not been published.",
+      "There are two tuition figures: $14,300 is the full rate, and $13,800 is the reduced rate charged. Families who can afford it are asked to pay the full $14,300. The full-season session price is recorded as $13,800.",
+      "The Financial Aid option in CampMinder defaults to $10,000, and the camp later adjusts it to the agreed amount.",
+      "The address shown is a mailing PO Box (PO Box 70, Hancock VT 05748), not the camp's physical location.",
+      "The July-only session is open only to first-time campers."
+    ],
+    "unknowns": [
+      "2027 season dates and tuition",
+      "Camper age or grade range",
+      "Activities offered",
+      "Physical street address of camp",
+      "Whether meals are included (likely for overnight camp, but not stated)",
+      "Refund/cancellation policy",
+      "ACA accreditation",
+      "Swim/waterfront details",
+      "Special needs accommodations",
+      "Session availability"
+    ],
+    "low_confidence": [
+      {
+        "field": "city",
+        "confidence": 0.75,
+        "quote": "PO Box 70, Hancock VT 05748"
+      },
+      {
+        "field": "zip",
+        "confidence": 0.7,
+        "quote": "PO Box 70, Hancock VT 05748"
+      },
+      {
+        "field": "registration_url",
+        "confidence": 0.6,
+        "quote": "Enroll for 2026"
+      },
+      {
+        "field": "price_min",
+        "confidence": 0.6,
+        "quote": "For those that only stay for a month, tuition is $9800."
+      },
+      {
+        "field": "price_max",
+        "confidence": 0.6,
+        "quote": "Tuition for 2026 is $14,300."
+      },
+      {
+        "field": "sessions[0].start_date",
+        "confidence": 0.6,
+        "quote": "The 2026 season will run from Sunday June 28 – Sunday August 16."
+      },
+      {
+        "field": "sessions[0].price",
+        "confidence": 0.55,
+        "quote": "Therefore, we have decided to charge $13,800."
+      },
+      {
+        "field": "sessions[1].start_date",
+        "confidence": 0.6,
+        "quote": "First time campers may choose to only commit to the month of July, (June 28 - July 26)"
+      },
+      {
+        "field": "sessions[1].price",
+        "confidence": 0.55,
+        "quote": "For those that only stay for a month, tuition is $9800."
+      },
+      {
+        "field": "transportation",
+        "confidence": 0.75,
+        "quote": "Transportation to and from New  York City in chaperoned Buses is available on June 28 and August 16."
+      }
+    ],
+    "errors": []
+  }
+}

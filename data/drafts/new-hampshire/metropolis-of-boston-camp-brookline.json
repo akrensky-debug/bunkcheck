@@ -1,0 +1,165 @@
+{
+  "slug": "metropolis-of-boston-camp-brookline",
+  "name": "Metropolis of Boston Camp",
+  "operator_name": "Greek Orthodox Metropolis of Boston",
+  "website_url": "https://www.metropolisofbostoncamp.org/",
+  "registration_url": "https://gomb.campintouch.com/ui/forms/application/camper/App",
+  "street_address": "162 Goddard Avenue",
+  "city": "Brookline",
+  "state": "MA",
+  "zip": "02445",
+  "camp_type": "sleepaway",
+  "primary_categories": [
+    "faith"
+  ],
+  "description_short": "A Greek Orthodox overnight camp run by the Metropolis of Boston. It offers week-long summer sessions plus weekend fall and winter camps.",
+  "price_min": 550,
+  "price_max": 650,
+  "financial_aid": true,
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Summer Session 1",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-05",
+      "price": 650,
+      "availability": "unknown"
+    },
+    {
+      "name": "Summer Session 2",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-12",
+      "price": 650,
+      "availability": "unknown"
+    },
+    {
+      "name": "Summer Session 3",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-19",
+      "price": 650,
+      "availability": "unknown"
+    },
+    {
+      "name": "Summer Session 4",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-26",
+      "price": 650,
+      "availability": "unknown"
+    },
+    {
+      "name": "Summer Session 5",
+      "start_date": "2026-07-27",
+      "end_date": "2026-08-02",
+      "price": 650,
+      "availability": "unknown"
+    },
+    {
+      "name": "Fall Camp 2026",
+      "start_date": "2026-10-10",
+      "end_date": "2026-10-12",
+      "price": 300,
+      "availability": "unknown"
+    },
+    {
+      "name": "Winter Camp 2026 Session 1",
+      "start_date": "2026-01-17",
+      "end_date": "2026-01-19",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Winter Camp 2026 Session 2",
+      "start_date": "2026-02-14",
+      "end_date": "2026-02-16",
+      "price": null,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.metropolisofbostoncamp.org/dates--rates.html",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "description_short",
+        "price_min",
+        "price_max",
+        "financial_aid",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.metropolisofbostoncamp.org/dates--rates.html",
+      "kind": "html",
+      "title": "DATES & RATES - METROPOLIS OF BOSTON CAMP"
+    },
+    "warnings": [
+      "The page shows only the 2026 season. Today is 2026-10-13, so all 2026 summer, fall and winter sessions have already happened. Dates and fees for 2027 are not posted yet.",
+      "The address shown is the camp office in Brookline, MA, not necessarily where the campground is.",
+      "Summer prices go down for siblings: $650 for the 1st camper, $600 for the 2nd and $550 for the 3rd or more. Session prices use the 1st-camper rate. The page says the true cost is about $1200 per camper per week.",
+      "Winter camp has two field-trip options at different prices: Tour De Tooky for $325 and Ski Mountain for $375. Because of this, no single price is recorded for the winter sessions. Winter needs a $150 deposit and summer needs a $200 deposit.",
+      "The registration link is for winter camp, with registration opening Dec 1 (2025, for winter 2026). It may not be the link for summer registration.",
+      "The page asks winter applicants to select 'Requesting Fall Camp Financial Aid', which looks like a mistake on the page."
+    ],
+    "unknowns": [
+      "2027 summer session dates and fees",
+      "2027 registration opening date",
+      "Camper age or grade range",
+      "Campground location (the address shown is the Brookline camp office)",
+      "Phone number and contact email (the email is hidden on the page)",
+      "Activities offered",
+      "Refund/cancellation policy",
+      "Swim and waterfront details",
+      "Transportation",
+      "Accessibility / special needs support details (the site has an Accessible Family Retreat and a Camper Support page)",
+      "ACA accreditation",
+      "Session availability"
+    ],
+    "low_confidence": [
+      {
+        "field": "street_address",
+        "confidence": 0.7,
+        "quote": "Metropolis of Boston Camp Office | 162 Goddard Avenue, Brookline, MA 02445"
+      },
+      {
+        "field": "city",
+        "confidence": 0.7,
+        "quote": "162 Goddard Avenue, Brookline, MA 02445"
+      },
+      {
+        "field": "state",
+        "confidence": 0.7,
+        "quote": "Brookline, MA 02445"
+      },
+      {
+        "field": "zip",
+        "confidence": 0.7,
+        "quote": "Brookline, MA 02445"
+      },
+      {
+        "field": "registration_url",
+        "confidence": 0.7,
+        "quote": "CLICK HERE TO REGISTER STARTING AT 7PM ON 12/1"
+      },
+      {
+        "field": "sessions[6].registration_opens_at",
+        "confidence": 0.7,
+        "quote": "WINTER 2026 REGISTRATION OPENS AT 7PM ON MONDAY, DECEMBER 1st"
+      }
+    ],
+    "errors": []
+  }
+}

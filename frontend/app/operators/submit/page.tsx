@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { submitCamp } from '@/lib/api'
 import { Events } from '@/lib/analytics'
+import { Button, ChoiceChip, Container, Field, Heading, Icon, Input, Section, Text, TextLink, Textarea } from '@/components/ui'
 
 const CAMP_TYPES = ['day', 'sleepaway', 'specialty']
 const CATEGORIES = [
@@ -76,238 +77,110 @@ export default function SubmitCampPage() {
 
   if (step === 'done') {
     return (
-      <div className="max-w-lg mx-auto px-4 py-24 text-center">
-        <div className="text-5xl mb-4">🎉</div>
-        <h1 className="text-2xl font-extrabold text-gray-900 mb-3">Camp submitted!</h1>
-        <p className="text-gray-500 text-sm mb-6">
-          We'll review your listing and publish it within 1-2 business days.
-          You'll receive a confirmation at <strong>{form.contact_email}</strong>.
+      <Container size="narrow" className="py-24">
+        <p className="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-pill bg-checked-soft text-checked">
+          <Icon name="check" size={24} label="Submitted" />
         </p>
-        <a href="/operators/claim" className="text-brand-600 underline text-sm">
-          Already listed? Claim your listing to verify and update it.
-        </a>
-      </div>
+        <Heading level="h1" className="mb-3">Camp submitted</Heading>
+        <Text tone="muted" className="mb-6">
+          We&rsquo;ll review your listing and publish it within one to two business days. You&rsquo;ll get a
+          confirmation at <strong className="text-ink">{form.contact_email}</strong>.
+        </Text>
+        <TextLink href="/operators/claim" arrow>Already listed? Claim your listing to verify and update it</TextLink>
+      </Container>
     )
   }
 
   return (
-    <div className="max-w-2xl mx-auto px-4 py-12">
-      <nav className="text-sm text-gray-400 mb-8">
-        <a href="/operators" className="hover:text-brand-600">← For camps</a>
-      </nav>
+    <Container size="narrow" className="py-12 sm:py-16">
+      <TextLink href="/operators" tone="muted" className="mb-10 text-small">
+        <Icon name="arrow-left" size={14} />For camps
+      </TextLink>
 
-      <div className="mb-8">
-        <h1 className="text-3xl font-extrabold text-gray-900 mb-2">List your camp</h1>
-        <p className="text-gray-500 text-sm">
-          Free to submit. Your listing will be reviewed and published within 1-2 business days.
-        </p>
-      </div>
+      <Heading level="h1" className="mb-3">List your camp</Heading>
+      <Text tone="muted" className="mb-12">
+        Free to submit. We review every listing and publish it within one to two business days.
+      </Text>
 
-      <form onSubmit={handleSubmit} className="space-y-6">
-        {/* Basic info */}
-        <section className="bg-white border border-gray-200 rounded-2xl p-6 space-y-4">
-          <h2 className="font-bold text-gray-900">Camp basics</h2>
-
-          <div>
-            <label className="block text-sm text-gray-600 mb-1">Camp name *</label>
-            <input
-              type="text"
-              required
-              value={form.name}
-              onChange={e => set('name', e.target.value)}
-              className="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm outline-none focus:border-brand-400"
-              placeholder="e.g. Sunrise Day Camp"
-            />
+      <form onSubmit={handleSubmit} className="space-y-12">
+        <Section title="Camp basics" level="h3" className="space-y-5">
+          <Field label="Camp name">
+            {id => <Input id={id} type="text" required value={form.name} onChange={e => set('name', e.target.value)} placeholder="Sunrise Day Camp" />}
+          </Field>
+          <div className="grid grid-cols-2 gap-4">
+            <Field label="Town">
+              {id => <Input id={id} type="text" required value={form.city} onChange={e => set('city', e.target.value)} placeholder="Boston" />}
+            </Field>
+            <Field label="State">
+              {id => <Input id={id} type="text" required maxLength={2} value={form.state} onChange={e => set('state', e.target.value.toUpperCase())} placeholder="MA" />}
+            </Field>
           </div>
-
-          <div className="grid grid-cols-2 gap-3">
-            <div>
-              <label className="block text-sm text-gray-600 mb-1">City *</label>
-              <input
-                type="text"
-                required
-                value={form.city}
-                onChange={e => set('city', e.target.value)}
-                className="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm outline-none focus:border-brand-400"
-                placeholder="e.g. Boston"
-              />
-            </div>
-            <div>
-              <label className="block text-sm text-gray-600 mb-1">State *</label>
-              <input
-                type="text"
-                required
-                maxLength={2}
-                value={form.state}
-                onChange={e => set('state', e.target.value.toUpperCase())}
-                className="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm outline-none focus:border-brand-400"
-                placeholder="MA"
-              />
-            </div>
-          </div>
-
-          <div>
-            <label className="block text-sm text-gray-600 mb-1">Camp type *</label>
-            <div className="flex gap-2 flex-wrap">
+          <fieldset>
+            <legend className="mb-2 text-small font-semibold text-ink">Camp type</legend>
+            <div className="flex flex-wrap gap-2">
               {CAMP_TYPES.map(t => (
-                <button
-                  key={t}
-                  type="button"
-                  onClick={() => set('camp_type', t)}
-                  className={`px-4 py-2 rounded-xl text-sm font-medium border transition-colors capitalize ${
-                    form.camp_type === t
-                      ? 'bg-brand-600 text-white border-brand-600'
-                      : 'border-gray-200 text-gray-600 hover:border-brand-300'
-                  }`}
-                >
-                  {t === 'day' ? 'Day Camp' : t === 'sleepaway' ? 'Sleepaway' : 'Specialty'}
-                </button>
+                <ChoiceChip key={t} type="radio" name="camp_type" checked={form.camp_type === t} onChange={() => set('camp_type', t)}>
+                  {t === 'day' ? 'Day camp' : t === 'sleepaway' ? 'Sleepaway' : 'Specialty'}
+                </ChoiceChip>
               ))}
             </div>
+          </fieldset>
+        </Section>
+
+        <Section title="Contact" level="h3" divided className="space-y-5">
+          <Field label="Contact email" hint="Used to verify ownership. Not shown publicly.">
+            {id => <Input id={id} type="email" required value={form.contact_email} onChange={e => set('contact_email', e.target.value)} placeholder="director@yourcamp.com" />}
+          </Field>
+          <div className="grid gap-4 sm:grid-cols-2">
+            <Field label="Your name" optional>
+              {id => <Input id={id} type="text" value={form.contact_name} onChange={e => set('contact_name', e.target.value)} placeholder="Jane Smith" />}
+            </Field>
+            <Field label="Phone" optional>
+              {id => <Input id={id} type="tel" value={form.phone} onChange={e => set('phone', e.target.value)} placeholder="(617) 555-0100" />}
+            </Field>
           </div>
-        </section>
+          <Field label="Camp website" optional>
+            {id => <Input id={id} type="url" value={form.website_url} onChange={e => set('website_url', e.target.value)} placeholder="https://yourcamp.com" />}
+          </Field>
+        </Section>
 
-        {/* Contact */}
-        <section className="bg-white border border-gray-200 rounded-2xl p-6 space-y-4">
-          <h2 className="font-bold text-gray-900">Contact info</h2>
-
-          <div>
-            <label className="block text-sm text-gray-600 mb-1">Contact email *</label>
-            <input
-              type="email"
-              required
-              value={form.contact_email}
-              onChange={e => set('contact_email', e.target.value)}
-              className="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm outline-none focus:border-brand-400"
-              placeholder="director@yourcamp.com"
-            />
-            <p className="text-xs text-gray-400 mt-1">Used to verify ownership. Not shown publicly.</p>
+        <Section title="Details" level="h3" divided className="space-y-5">
+          <Field label="Short description" optional hint={`${form.description_short.length}/300. One or two sentences; this appears in search results.`}>
+            {id => <Textarea id={id} rows={3} value={form.description_short} onChange={e => set('description_short', e.target.value)} maxLength={300} />}
+          </Field>
+          <div className="grid grid-cols-3 gap-4">
+            <Field label="Youngest">
+              {id => <Input id={id} type="number" min={3} max={18} value={form.age_min} onChange={e => set('age_min', e.target.value)} placeholder="5" />}
+            </Field>
+            <Field label="Oldest">
+              {id => <Input id={id} type="number" min={3} max={18} value={form.age_max} onChange={e => set('age_max', e.target.value)} placeholder="16" />}
+            </Field>
+            <Field label="$ a week">
+              {id => <Input id={id} type="number" min={0} value={form.price_per_week} onChange={e => set('price_per_week', e.target.value)} placeholder="650" />}
+            </Field>
           </div>
-
-          <div className="grid grid-cols-2 gap-3">
-            <div>
-              <label className="block text-sm text-gray-600 mb-1">Your name</label>
-              <input
-                type="text"
-                value={form.contact_name}
-                onChange={e => set('contact_name', e.target.value)}
-                className="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm outline-none focus:border-brand-400"
-                placeholder="Jane Smith"
-              />
-            </div>
-            <div>
-              <label className="block text-sm text-gray-600 mb-1">Phone</label>
-              <input
-                type="tel"
-                value={form.phone}
-                onChange={e => set('phone', e.target.value)}
-                className="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm outline-none focus:border-brand-400"
-                placeholder="(617) 555-0100"
-              />
-            </div>
-          </div>
-
-          <div>
-            <label className="block text-sm text-gray-600 mb-1">Camp website</label>
-            <input
-              type="url"
-              value={form.website_url}
-              onChange={e => set('website_url', e.target.value)}
-              className="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm outline-none focus:border-brand-400"
-              placeholder="https://yourcamp.com"
-            />
-          </div>
-        </section>
-
-        {/* Details */}
-        <section className="bg-white border border-gray-200 rounded-2xl p-6 space-y-4">
-          <h2 className="font-bold text-gray-900">Camp details</h2>
-
-          <div>
-            <label className="block text-sm text-gray-600 mb-1">Short description</label>
-            <textarea
-              rows={3}
-              value={form.description_short}
-              onChange={e => set('description_short', e.target.value)}
-              maxLength={300}
-              className="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm outline-none focus:border-brand-400 resize-none"
-              placeholder="1-2 sentences describing your camp. This appears in search results."
-            />
-            <p className="text-xs text-gray-400 mt-1">{form.description_short.length}/300</p>
-          </div>
-
-          <div className="grid grid-cols-3 gap-3">
-            <div>
-              <label className="block text-sm text-gray-600 mb-1">Min age</label>
-              <input
-                type="number"
-                min={3} max={18}
-                value={form.age_min}
-                onChange={e => set('age_min', e.target.value)}
-                className="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm outline-none focus:border-brand-400"
-                placeholder="5"
-              />
-            </div>
-            <div>
-              <label className="block text-sm text-gray-600 mb-1">Max age</label>
-              <input
-                type="number"
-                min={3} max={18}
-                value={form.age_max}
-                onChange={e => set('age_max', e.target.value)}
-                className="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm outline-none focus:border-brand-400"
-                placeholder="16"
-              />
-            </div>
-            <div>
-              <label className="block text-sm text-gray-600 mb-1">Price/week ($)</label>
-              <input
-                type="number"
-                min={0}
-                value={form.price_per_week}
-                onChange={e => set('price_per_week', e.target.value)}
-                className="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm outline-none focus:border-brand-400"
-                placeholder="650"
-              />
-            </div>
-          </div>
-
-          <div>
-            <label className="block text-sm text-gray-600 mb-2">Categories (select all that apply)</label>
+          <fieldset>
+            <legend className="mb-2 text-small font-semibold text-ink">Categories <span className="font-normal text-muted">(all that apply)</span></legend>
             <div className="flex flex-wrap gap-2">
               {CATEGORIES.map(cat => (
-                <button
-                  key={cat}
-                  type="button"
-                  onClick={() => toggleCategory(cat)}
-                  className={`px-3 py-1.5 rounded-full text-xs font-medium border transition-colors capitalize ${
-                    form.categories.includes(cat)
-                      ? 'bg-brand-600 text-white border-brand-600'
-                      : 'border-gray-200 text-gray-600 hover:border-brand-300'
-                  }`}
-                >
-                  {cat}
-                </button>
+                <ChoiceChip key={cat} checked={form.categories.includes(cat)} onChange={() => toggleCategory(cat)}>
+                  {cat === 'stem' ? 'STEM' : cat.charAt(0).toUpperCase() + cat.slice(1)}
+                </ChoiceChip>
               ))}
             </div>
-          </div>
-        </section>
+          </fieldset>
+        </Section>
 
-        {error && <p className="text-red-500 text-sm">{error}</p>}
-
-        <button
-          type="submit"
-          disabled={loading}
-          className="w-full bg-brand-600 hover:bg-brand-700 text-white font-bold py-4 rounded-xl transition-colors disabled:opacity-60 text-base"
-        >
-          {loading ? 'Submitting...' : 'Submit camp for review →'}
-        </button>
-
-        <p className="text-xs text-center text-gray-400">
-          By submitting you confirm you are authorized to list this camp.
-          Listings are reviewed before publishing.
-        </p>
+        <div className="space-y-3 border-t border-line pt-8">
+          {error && <p className="text-small text-error">{error}</p>}
+          <Button type="submit" size="lg" disabled={loading}>
+            {loading ? 'Submitting…' : 'Submit camp for review'}
+          </Button>
+          <p className="text-caption text-muted">
+            By submitting you confirm you&rsquo;re authorized to list this camp. We review listings before publishing.
+          </p>
+        </div>
       </form>
-    </div>
+    </Container>
   )
 }

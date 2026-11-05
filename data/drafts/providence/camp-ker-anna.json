@@ -1,0 +1,66 @@
+{
+  "slug": "camp-ker-anna",
+  "name": "Camp Ker-Anna",
+  "website_url": "https://www.keranna.org/",
+  "city": null,
+  "state": "RI",
+  "zip": null,
+  "description_short": "Camp Ker-Anna is a summer camp in the woods of northern Rhode Island, run with help from volunteers. The homepage does not describe its programs, ages, dates or costs.",
+  "sources": [
+    {
+      "url": "https://www.keranna.org/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "website_url",
+        "state",
+        "description_short"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.keranna.org/",
+      "kind": "html",
+      "title": "Camp Ker-Anna"
+    },
+    "warnings": [
+      "The source is just the homepage's general description. It has no season, dates, prices, ages or program details.",
+      "The season year is not stated anywhere on the page.",
+      "The site appears to be a nonprofit or volunteer site (it has Donate and The Hut Project pages). Check the About Us, Events and Contact pages for program information."
+    ],
+    "unknowns": [
+      "2027 season dates and sessions",
+      "Prices / weekly rate",
+      "Age or grade range",
+      "Day camp vs. overnight (camp_type)",
+      "Exact town, street address and zip",
+      "Phone and email (Contact page not provided)",
+      "Activities offered",
+      "Registration process and URL",
+      "Operator / sponsoring organization",
+      "Financial aid, deposit and refund policy",
+      "Meals, transportation, extended care",
+      "Swim/waterfront details",
+      "ACA accreditation",
+      "Special needs accommodations"
+    ],
+    "low_confidence": [
+      {
+        "field": "description_short",
+        "confidence": 0.7,
+        "quote": "Nestled in the woods, close to daily lives, but far enough to be a summer haven."
+      }
+    ],
+    "errors": [
+      "missing required city",
+      "missing required zip",
+      "missing required camp_type",
+      "missing required season_year",
+      "camp_type must be one of ['day', 'sleepaway', 'specialty']",
+      "city None, RI is not in cities.py"
+    ]
+  }
+}

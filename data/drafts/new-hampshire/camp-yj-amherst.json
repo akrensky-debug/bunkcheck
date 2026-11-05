@@ -1,0 +1,84 @@
+{
+  "slug": "camp-yj-amherst",
+  "name": "Camp YJ",
+  "operator_name": "Camp Young Judaea",
+  "website_url": "https://campyj.org/",
+  "registration_url": "https://campyj.org/register",
+  "phone": "(781) 237-9410",
+  "street_address": "9 Camp Road",
+  "city": "Amherst",
+  "state": "NH",
+  "zip": "03031",
+  "camp_type": "sleepaway",
+  "primary_categories": [
+    "faith"
+  ],
+  "age_min": 8,
+  "age_max": 15,
+  "description_short": "Camp YJ is an independent, non-profit Jewish overnight camp in Amherst, New Hampshire, for kids ages 8-15 from a range of Jewish backgrounds.",
+  "financial_aid": true,
+  "season_year": 2027,
+  "sources": [
+    {
+      "url": "https://campyj.org/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "age_min",
+        "age_max",
+        "description_short",
+        "financial_aid"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://campyj.org/",
+      "kind": "html",
+      "title": "Camp YJ"
+    },
+    "warnings": [
+      "Only the homepage was read; 2027 dates and rates are on a separate page (https://campyj.org/2027dates), so no sessions or prices were recorded.",
+      "Two addresses listed: the winter office is at 745 High Street, Suite 251, Westwood, MA 02090 (phone (781) 237-9410, after Sept 1), and the camp itself is at 9 Camp Road, Amherst, NH 03031 (phone (603) 673-3710, after June 1). The recorded address is the camp location; the recorded phone is the winter office number, which is the current one as of October.",
+      "Footer copyright says 2024, but the page content refers to Summer 2027 registration being open.",
+      "Financial aid is inferred only from a 'Grants and Scholarships' menu link."
+    ],
+    "unknowns": [
+      "2027 session names, dates and lengths (see https://campyj.org/2027dates)",
+      "2027 prices/tuition (see https://campyj.org/2027dates)",
+      "Deposit amount and whether a deposit is required",
+      "Refund/cancellation policy",
+      "Specific activities offered (Activities & Programs page not provided)",
+      "Grade range",
+      "ACA accreditation",
+      "Transportation to/from camp",
+      "Meals (presumably included for overnight camp, but not stated)",
+      "Special needs accommodations",
+      "Swimming/waterfront details",
+      "Contact email",
+      "Session availability (open/waitlist/full)",
+      "Details of financial aid (grants and scholarships page not provided)",
+      "Rookie Camp program details (ages, length, price)"
+    ],
+    "low_confidence": [
+      {
+        "field": "financial_aid",
+        "confidence": 0.7,
+        "quote": "Grants and Scholarships"
+      }
+    ],
+    "errors": []
+  }
+}

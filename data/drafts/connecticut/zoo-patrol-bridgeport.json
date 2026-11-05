@@ -1,0 +1,96 @@
+{
+  "slug": "zoo-patrol-bridgeport",
+  "name": "Zoo Patrol",
+  "operator_name": "Connecticut Zoological Society (Connecticut's Beardsley Zoo)",
+  "website_url": "https://beardsleyzoo.org/education/zoo-patrol/",
+  "registration_url": "http://zoopatrol26.givesmart.com/",
+  "email": "programming@beardsleyzoo.org",
+  "phone": "203-394-6563",
+  "street_address": "1875 Noble Avenue",
+  "city": "Bridgeport",
+  "state": "CT",
+  "zip": "06610",
+  "camp_type": "day",
+  "primary_categories": [
+    "nature",
+    "STEM"
+  ],
+  "description_short": "A summer program at Connecticut's Beardsley Zoo where children spend each day outdoors in a different part of the zoo. They hear staff talks about animals, enrichment and veterinary care, and do zoo-themed games and art.",
+  "activities": [
+    "Guided exploration of zoo areas",
+    "Staff presentations on animals, enrichment and veterinary care",
+    "Zoo-themed games",
+    "Art activities",
+    "Scientific observation, tracking and artifact identification"
+  ],
+  "sources": [
+    {
+      "url": "https://beardsleyzoo.org/education/zoo-patrol/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "description_short"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://beardsleyzoo.org/education/zoo-patrol/",
+      "kind": "html",
+      "title": "Zoo Patrol | Hours & Tickets | Connecticut's Beardsley Zoo"
+    },
+    "warnings": [
+      "The page lists no dates, prices or ages. The 'Registration Open' link goes to zoopatrol26.givesmart.com, which looks like the 2026 registration, and summer 2026 is already over. Check that the link and details are updated for 2027 before relying on them.",
+      "Season year is not stated on the page, so season_year is left blank.",
+      "Camp type 'day' is inferred: the page describes a daily program held at the zoo and a 'week' of activities, but it never says outright that campers go home each night."
+    ],
+    "unknowns": [
+      "Session dates and weeks for 2027",
+      "Price per week / session prices",
+      "Age or grade range",
+      "Daily hours (drop-off / pick-up times)",
+      "Extended care availability",
+      "Whether lunch/snacks are provided",
+      "Price of the Animal Adoption Box add-on",
+      "Registration opening date for 2027",
+      "Deposit and refund policy",
+      "Financial aid",
+      "Accommodations for children with special needs",
+      "Transportation"
+    ],
+    "low_confidence": [
+      {
+        "field": "camp_type",
+        "confidence": 0.6,
+        "quote": "Each day, participants explore a different area of the Zoo"
+      },
+      {
+        "field": "primary_categories",
+        "confidence": 0.75,
+        "quote": "spending time outdoors learning about animals"
+      },
+      {
+        "field": "registration_url",
+        "confidence": 0.4,
+        "quote": "Registration Open: http://zoopatrol26.givesmart.com/"
+      }
+    ],
+    "errors": [
+      "missing required season_year"
+    ]
+  }
+}

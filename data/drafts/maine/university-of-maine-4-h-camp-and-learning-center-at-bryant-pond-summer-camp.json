@@ -1,0 +1,96 @@
+{
+  "slug": "university-of-maine-4-h-camp-and-learning-center-at-bryant-pond-summer-camp",
+  "name": "University of Maine 4-H Camp & Learning Center at Bryant Pond – Summer Camp",
+  "operator_name": "University of Maine Cooperative Extension (Maine 4-H)",
+  "website_url": "https://extension.umaine.edu/bryantpond/summer-camp-at-bryant-pond/",
+  "registration_url": "https://extension.umaine.edu/bryantpond/register/",
+  "city": null,
+  "state": "ME",
+  "zip": null,
+  "camp_type": "sleepaway",
+  "primary_categories": [
+    "nature",
+    "sports"
+  ],
+  "description_short": "A 4-H summer camp run by the University of Maine in the mountains of Western Maine. Most programs run Sunday to Friday and cover topics such as wilderness survival, shooting sports, conservation, outdoor adventure and teen leadership. Day camp weeks are also offered.",
+  "activities": [
+    "canoeing",
+    "swimming",
+    "hiking",
+    "ropes course",
+    "wilderness survival",
+    "woodscraft",
+    "naturalist studies",
+    "shooting sports",
+    "outdoor leadership",
+    "recreational safety",
+    "campfire"
+  ],
+  "swim_waterfront_notes": "The page mentions canoeing and swimming at the camp waterfront, depending on the program. It gives no details on swim tests or lifeguards.",
+  "sources": [
+    {
+      "url": "https://extension.umaine.edu/bryantpond/summer-camp-at-bryant-pond/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "description_short",
+        "swim_waterfront_notes"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://extension.umaine.edu/bryantpond/summer-camp-at-bryant-pond/",
+      "kind": "html",
+      "title": "Summer Camp at Bryant Pond - University of Maine 4-H Camp & Learning Center at Bryant Pond - University of Maine Cooperative Extension"
+    },
+    "warnings": [
+      "This is a general overview page. It lists no dates, prices or ages, and no season year is stated, so season_year is left blank.",
+      "The camp offers both overnight programs (Sunday to Friday) and separate 'Day Camp Weeks'. camp_type is set to sleepaway because that is the main format, but it is inferred and not stated outright.",
+      "The phone number on the page (207.581.3188 / 800.287.0274) is for the main University of Maine Cooperative Extension office in Orono, not clearly the camp, so it was not recorded.",
+      "Program details are on subpages (Day Camp Weeks, program paths, Search by Week/Age, FAQ) that were not part of this source."
+    ],
+    "unknowns": [
+      "2027 session dates",
+      "Prices and weekly rate",
+      "Age or grade range (the page links to 'Search Camp Programs by Age' but lists no ages)",
+      "Street address, city and zip",
+      "Direct phone and email for the camp",
+      "Registration opening date",
+      "Deposit and refund policy",
+      "Financial aid or campership availability",
+      "ACA accreditation",
+      "Transportation",
+      "Whether meals are included",
+      "Extended care for day camp weeks",
+      "Support for special needs"
+    ],
+    "low_confidence": [
+      {
+        "field": "camp_type",
+        "confidence": 0.6,
+        "quote": "Most programs run Sunday through Friday, with longer experiences available"
+      },
+      {
+        "field": "primary_categories",
+        "confidence": 0.75,
+        "quote": "wilderness survival skills, exploring shooting sports, developing outdoor leadership abilities, or discovering Maine's natural world"
+      }
+    ],
+    "errors": [
+      "missing required city",
+      "missing required zip",
+      "missing required season_year",
+      "city None, ME is not in cities.py"
+    ]
+  }
+}

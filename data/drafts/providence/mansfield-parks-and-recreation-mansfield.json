@@ -1,0 +1,70 @@
+{
+  "slug": "mansfield-parks-and-recreation-mansfield",
+  "name": "Mansfield Parks & Recreation",
+  "operator_name": "Town of Mansfield Parks & Recreation Department",
+  "website_url": "https://www.mansfieldma.com/232/Parks-Recreation",
+  "registration_url": "https://unipaygold.unibank.com/CustomerInfo.aspx?Customerid=1540",
+  "phone": "508-851-6458",
+  "street_address": "6 Park Row, Town Hall, First Floor",
+  "city": "Mansfield",
+  "state": "MA",
+  "zip": "02048",
+  "description_short": "The Town of Mansfield, MA Parks & Recreation Department runs recreation leagues, events and programs for residents of all ages. This page lists fall programs only and gives no summer camp details.",
+  "sources": [
+    {
+      "url": "https://www.mansfieldma.com/232/Parks-Recreation",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "description_short"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.mansfieldma.com/232/Parks-Recreation",
+      "kind": "html",
+      "title": "PARKS & RECREATION | Mansfield, MAArrow LeftArrow RightSlideshow Left ArrowSlideshow Right Arrow"
+    },
+    "warnings": [
+      "This is a town Parks & Recreation department page, not a summer camp page. It has no summer camp program, dates, prices or ages.",
+      "The only programs listed are fall 2026 offerings (Fall II registration: yoga, pickleball, karate, tennis, Halloween events). None of them is a camp.",
+      "The '2027 Community Calendar' section is a photo contest and has nothing to do with a 2027 camp season.",
+      "The registration link is the town's general online payment portal, not a camp registration page."
+    ],
+    "unknowns": [
+      "Whether Mansfield Parks & Recreation runs a summer camp at all",
+      "Summer 2027 camp sessions and dates",
+      "Prices or weekly rate",
+      "Age or grade range",
+      "Camp type (day or other)",
+      "Camp location or site",
+      "Registration opening date",
+      "Extended care, transportation, meals",
+      "Financial aid and refund policy",
+      "Contact email (the page only has an 'Email the Parks & Recreation Department' form link)"
+    ],
+    "low_confidence": [
+      {
+        "field": "registration_url",
+        "confidence": 0.7,
+        "quote": "Online Registration & Payment"
+      }
+    ],
+    "errors": [
+      "missing required camp_type",
+      "missing required season_year",
+      "camp_type must be one of ['day', 'sleepaway', 'specialty']"
+    ]
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "slug": "ridgefield-academy-and-landmark-preschool-summer-programs-camp-ra-camp-landmark",
+  "name": "Ridgefield Academy & Landmark Preschool Summer Programs (Camp RA / Camp Landmark / Explorer Programs)",
+  "operator_name": "Ridgefield Academy / Landmark Preschool",
+  "website_url": "https://www.ridgefieldacademy.org/program/ra-summer-programs/camp-registration",
+  "phone": "203-894-1800",
+  "street_address": "223 West Mountain Road",
+  "city": "Ridgefield",
+  "state": "CT",
+  "zip": "06877",
+  "camp_type": "day",
+  "primary_categories": [
+    "academic",
+    "arts",
+    "nature"
+  ],
+  "grade_max": 8,
+  "description_short": "Summer programs run by Ridgefield Academy and Landmark Preschool for children from preschool age through Grade 8, mixing academic projects, arts and outdoor play. The Ridgefield campus offers Camp Landmark (ages 2–4), Camp RA (K–Grade 3) and Explorer Programs (Grades 4–8).",
+  "activities": [
+    "art",
+    "science",
+    "music",
+    "outdoor play",
+    "academic exploration"
+  ],
+  "season_year": 2026,
+  "sources": [
+    {
+      "url": "https://www.ridgefieldacademy.org/program/ra-summer-programs/camp-registration",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "grade_max",
+        "description_short"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.ridgefieldacademy.org/program/ra-summer-programs/camp-registration",
+      "kind": "html",
+      "title": "Summer Camp Registration - Summer Camp in CT & NY | RA"
+    },
+    "warnings": [
+      "Out-of-date page: it says planning is underway for the 2026 Summer Program, but today is 2026-10-13, so that season has ended. Nothing is posted for 2027.",
+      "No sessions, dates or prices are posted. The page is mainly a 'Notify Me When Enrollment Opens' form.",
+      "'Currently Enrolling: Camp Landmark Ridgefield (Ages 2 - 4), Camp RA (K - Grade 3)' probably refers to the old 2026 season. Don't take it as 2027 availability.",
+      "The ages conflict: the intro says 'ages 3 through Grade 8', but the interest form lists Camp Landmark for 2s–4s, so age_min was left blank.",
+      "The page covers several campuses (Bedford, NY and Westport, CT for Camp Landmark). This listing uses the Ridgefield, CT address.",
+      "Camp type 'day' is inferred because RA is a day school with preschool-age programs. The page doesn't state it directly."
+    ],
+    "unknowns": [
+      "2027 session dates",
+      "Prices / weekly rate",
+      "Registration opening date for 2027",
+      "Daily hours and extended care",
+      "Minimum age (page says 'ages 3' but Camp Landmark Ridgefield is listed as 2s–4s)",
+      "Whether lunch/meals are included",
+      "Financial aid for camp (the tuition assistance link is for the school)",
+      "Refund and deposit policy",
+      "Transportation",
+      "Swimming/waterfront",
+      "Special needs support",
+      "ACA accreditation",
+      "Camp-specific contact email"
+    ],
+    "low_confidence": [
+      {
+        "field": "camp_type",
+        "confidence": 0.6,
+        "quote": "RA is a private co-ed day school serving students in PS - Grade 8."
+      },
+      {
+        "field": "season_year",
+        "confidence": 0.5,
+        "quote": "we've already started planning the offerings for the 2026 Summer Program at RA and Landmark Preschool!"
+      },
+      {
+        "field": "primary_categories",
+        "confidence": 0.75,
+        "quote": "hands-on academic exploration, creative arts, and active outdoor fun"
+      }
+    ],
+    "errors": []
+  }
+}

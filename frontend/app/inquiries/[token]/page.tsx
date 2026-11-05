@@ -23,7 +23,7 @@ export default function InquiryPage() {
         <>
           <header>
             <p className="text-sm text-gray-500">
-              {view.channel && view.channel !== 'CampFinder' ? `Prepared by ${view.channel}` : 'Your question'}
+              {view.channel && view.channel !== 'Bunkcheck' ? `Prepared by ${view.channel}` : 'Your question'}
             </p>
             <h1 className="text-2xl font-bold text-gray-900">A question for {view.camp.name}</h1>
             {view.status === 'pending' && (

@@ -1,0 +1,82 @@
+{
+  "slug": "talent-factory-summer-camps-north-kingstown",
+  "name": "Talent Factory Summer Camps",
+  "operator_name": "Talent Factory RI, LLC",
+  "website_url": "https://www.talentfactoryri.com/summer-camps",
+  "registration_url": "https://app.thestudiodirector.com/talentfactoryri/portal.sd?page=Enroll&meth=search",
+  "email": "info@talentfactoryri.com",
+  "phone": "401-398-0606",
+  "street_address": "46 Frenchtown Rd (Marshalls Plaza)",
+  "city": "North Kingstown",
+  "state": "RI",
+  "zip": "02852",
+  "camp_type": "specialty",
+  "primary_categories": [
+    "performing_arts"
+  ],
+  "description_short": "A studio summer program running 8 weeks. Families choose from 30+ classes, and each extra class lowers the total summer tuition. A sibling discount is offered.",
+  "financial_aid": true,
+  "season_year": 2026,
+  "sources": [
+    {
+      "url": "https://www.talentfactoryri.com/summer-camps",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "description_short",
+        "financial_aid"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.talentfactoryri.com/summer-camps",
+      "kind": "html",
+      "title": "SUMMER CAMPS | Talentfactory"
+    },
+    "warnings": [
+      "The page only shows the Summer 2026 season, which has already ended (today is 2026-10-13). No 2027 information is available.",
+      "No prices, dates or ages are on this page. Details sit on the separate tuition page and the Studio Director registration portal.",
+      "The program looks like à la carte studio classes (likely dance/performing arts) rather than a traditional camp. The category and camp type are inferred from the studio's menu items.",
+      "The 'Unique Summer Camps' product section was empty ('We don't have any products to show here right now')."
+    ],
+    "unknowns": [
+      "2027 season dates and whether a 2027 summer program will be offered",
+      "Session/week dates (page says only '8 Weeks')",
+      "Prices and tuition (see https://www.talentfactoryri.com/tuition)",
+      "Age or grade range",
+      "Specific class offerings/activities (schedule is in the external registration portal)",
+      "Daily hours and whether it is day camp style or individual classes",
+      "Extended care, meals, transportation",
+      "Refund policy and deposit requirements",
+      "Exact multi-class and sibling discount amounts",
+      "Availability"
+    ],
+    "low_confidence": [
+      {
+        "field": "camp_type",
+        "confidence": 0.5,
+        "quote": "Choose 1 of our 30+ classes and register"
+      },
+      {
+        "field": "primary_categories",
+        "confidence": 0.6,
+        "quote": "THEATRE SHOWS ... NUTCRACKER ... DANCEWEAR BOUTIQUE"
+      }
+    ],
+    "errors": []
+  }
+}

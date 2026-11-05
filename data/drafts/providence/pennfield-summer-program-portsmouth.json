@@ -1,0 +1,101 @@
+{
+  "slug": "pennfield-summer-program-portsmouth",
+  "name": "Pennfield Summer Program",
+  "operator_name": "The Pennfield School",
+  "website_url": "https://www.pennfield.org/summer-program/",
+  "registration_url": "https://www.homeroom.com/sites/the-pennfield-school-portsmouth/summer-camp/all",
+  "email": "summer@pennfield.org",
+  "phone": "401-849-4646",
+  "street_address": "110 Sandy Point Avenue",
+  "city": "Portsmouth",
+  "state": "RI",
+  "zip": "02871",
+  "camp_type": "day",
+  "description_short": "Themed summer camps at The Pennfield School's 19-acre campus in Portsmouth, RI. They mix recreation with educational content and are led by educators and camp instructors.",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Summer Program (6 weeks)",
+      "start_date": "2026-06-22",
+      "end_date": "2026-07-31",
+      "price": null,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.pennfield.org/summer-program/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "description_short",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.pennfield.org/summer-program/",
+      "kind": "html",
+      "title": "Rhode Island Summer Camp at The Pennfield School"
+    },
+    "warnings": [
+      "The dates shown (June 22 to July 31, no year given) appear to be for summer 2026, which has already ended. June 22 is a Monday and July 31 is a Friday in 2026, and the page footer says © 2026. No 2027 dates are posted.",
+      "'Registration is now open' probably refers to the 2026 season and may be out of date.",
+      "The page gives only the overall 6-week span. It does not list the individual weeks or themes, so these are recorded as one session.",
+      "Camp type 'day' is inferred: the host is a day school and the page mentions no overnight stays. The page does not say this directly.",
+      "The Tuition & Financial Aid link is for the school's tuition. It is not clear that it applies to the summer camp."
+    ],
+    "unknowns": [
+      "2027 season dates",
+      "Week-by-week session dates and camp themes",
+      "Camper ages/grades eligible",
+      "Price per week or per session",
+      "Daily hours and extended care (before/after care)",
+      "Whether lunch/snacks are provided",
+      "Deposit and refund policy",
+      "Financial aid or discounts for camp",
+      "Transportation",
+      "Swimming/waterfront activities",
+      "Accommodations for campers with special needs",
+      "ACA accreditation",
+      "Registration opening date for 2027",
+      "Specific activities offered"
+    ],
+    "low_confidence": [
+      {
+        "field": "season_year",
+        "confidence": 0.7,
+        "quote": "This year we will offer 6 weeks of camp experiences, beginning June 22 and ending July 31."
+      },
+      {
+        "field": "camp_type",
+        "confidence": 0.6,
+        "quote": "An independent private day school in Portsmouth, Rhode Island"
+      },
+      {
+        "field": "sessions[0].start_date",
+        "confidence": 0.7,
+        "quote": "beginning June 22 and ending July 31"
+      },
+      {
+        "field": "sessions[0].end_date",
+        "confidence": 0.7,
+        "quote": "beginning June 22 and ending July 31"
+      }
+    ],
+    "errors": []
+  }
+}

@@ -5,7 +5,7 @@ after she says yes.
     create()    an assistant (our site agent, ChatGPT, Claude, a partner app) makes a pending
                 inquiry and gets back a preview of exactly what the camp will read, a confirm
                 link for the parent, and a read token for the reply
-    confirm()   the parent says yes on CampFinder (adding her contact details only if she
+    confirm()   the parent says yes on Bunkcheck (adding her contact details only if she
                 wants to); then it is emailed to the camp's verified contact
     reply()     the camp answers by replying to the email or on the web; the assistant reads
                 it with the read token
@@ -13,7 +13,7 @@ after she says yes.
 Rules held here, not in prompts:
 - Nothing reaches a camp before the parent confirms. A contracted partner whose key has
   may_confirm_for_parent may confirm for her, but only an anonymous question: an inquiry with
-  an info kit package or contact details is always confirmed by her on CampFinder. We record
+  an info kit package or contact details is always confirmed by her on Bunkcheck. We record
   which key made the statement and when.
 - The info kit travels only as an existing share package's link, never its contents. The
   assistant passes the token; we check the package is live and made for this camp.
@@ -59,7 +59,7 @@ MAX_DELIVERY_ATTEMPTS = 5
 MAX_REPLY_CHARS = 5000
 
 CHANNEL_LABELS = {
-    "site": "CampFinder",
+    "site": "Bunkcheck",
     "chatgpt": "ChatGPT",
     "claude": "Claude",
     "assistant": "An AI assistant",
@@ -221,7 +221,7 @@ def verified_contact(camp_id: str) -> dict[str, Any] | None:
 def _no_contact(camp: dict[str, Any]) -> InquiryError:
     own = camp.get("website_url") or camp.get("email") or camp.get("phone")
     tail = f" Their own contact details: {own}" if own else ""
-    return InquiryError(f"{camp['name']} hasn't set up questions through CampFinder yet.{tail}", 409)
+    return InquiryError(f"{camp['name']} hasn't set up questions through Bunkcheck yet.{tail}", 409)
 
 
 def _kit(token_or_url: str, camp_id: str, family_id: str | None) -> tuple[dict[str, Any], str]:
@@ -229,7 +229,7 @@ def _kit(token_or_url: str, camp_id: str, family_id: str | None) -> tuple[dict[s
     token = token_or_url.strip().rstrip("/").rsplit("/", 1)[-1].split("?", 1)[0]
     rows = get_supabase().table("kit_shares").select("*").eq("token_hash", _hash(token)).execute().data
     gone = InquiryError("That info package link doesn't work: it may have expired or been withdrawn. "
-                        "The parent can make a new one on CampFinder.")
+                        "The parent can make a new one on Bunkcheck.")
     if not rows:
         raise gone
     share = rows[0]
@@ -399,7 +399,7 @@ async def _confirm(row: dict[str, Any], *, via: str, contact: dict[str, Any] | N
 
 async def confirm(confirm_token: str, *, contact: Contact | None = None, family_id: str | None = None,
                   now: datetime | None = None) -> dict[str, Any]:
-    """The parent's yes, on CampFinder."""
+    """The parent's yes, on Bunkcheck."""
     row = _by("confirm_token_hash", confirm_token)
     if family_id and row.get("family_id") and str(row["family_id"]) != str(family_id):
         family_id = None  # keep the family it already belongs to
@@ -413,12 +413,12 @@ async def confirm_for_parent(inquiry_id: str, read_token: str, *, client_id: str
     """A contracted partner says the parent agreed in its own app.
 
     Only for keys with may_confirm_for_parent, and only for an anonymous question. An inquiry
-    with an info kit package or contact details is always confirmed by the parent on CampFinder
+    with an info kit package or contact details is always confirmed by the parent on Bunkcheck
     (the confirm_url page, or our own card in ChatGPT or Claude), whatever the key may do.
     """
     if not may_confirm:
         raise InquiryError("This key can't confirm for the parent. Show the parent the confirm_url: they "
-                           "say yes on CampFinder.", 403)
+                           "say yes on Bunkcheck.", 403)
     cleaned = contact.cleaned() if contact else None
     if cleaned and not may_share_contact:
         raise InquiryError("This key can't send the parent's contact details. The parent can add them on "
@@ -426,7 +426,7 @@ async def confirm_for_parent(inquiry_id: str, read_token: str, *, client_id: str
     row = _by_id(inquiry_id, read_token, client_id)
     if row.get("kit_share_id") or row.get("contact") or cleaned:
         raise InquiryError("This inquiry carries the parent's info kit or contact details, so only the parent "
-                           "can confirm it, on CampFinder. Send them to the confirm_url you got when you "
+                           "can confirm it, on Bunkcheck. Send them to the confirm_url you got when you "
                            "created it.", 403)
     now = now or _now()
     return await _confirm(row, via="partner", contact=None, family_id=None, user_ref=user_ref, now=now,

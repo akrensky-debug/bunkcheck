@@ -1,0 +1,154 @@
+{
+  "slug": "camp-kippewa",
+  "name": "Camp Kippewa",
+  "operator_name": "Camp Kippewa",
+  "website_url": "https://www.kippewa.com",
+  "registration_url": "https://www.kippewa.com/enroll",
+  "email": "info@kippewa.com",
+  "phone": "1-800-KIPPEWA",
+  "city": null,
+  "state": "ME",
+  "zip": null,
+  "camp_type": "sleepaway",
+  "primary_categories": [
+    "sports"
+  ],
+  "description_short": "An all-girls overnight camp in Maine with a 3½-week traditional camp, a 2-week traditional camp and a 2-week riding camp. Tuition covers bus or shuttle service from Newton MA, Rye NY and Portland ME, plus trips, linens and laundry.",
+  "activities": [
+    "Tennis (private lesson add-on)",
+    "Horseback riding (equestrian add-on and riding camp)",
+    "Trips"
+  ],
+  "price_min": 5550,
+  "price_max": 10150,
+  "transportation": true,
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "3½-week traditional camp – First Session",
+      "start_date": "2027-06-22",
+      "end_date": "2027-07-15",
+      "price": 10150,
+      "availability": "unknown"
+    },
+    {
+      "name": "3½-week traditional camp – Second Session",
+      "start_date": "2027-07-18",
+      "end_date": "2027-08-10",
+      "price": 10150,
+      "availability": "unknown"
+    },
+    {
+      "name": "2-week traditional camp – First Session",
+      "start_date": "2027-06-22",
+      "end_date": "2027-07-03",
+      "price": 5550,
+      "availability": "unknown"
+    },
+    {
+      "name": "2-week traditional camp – Second Session",
+      "start_date": "2027-07-05",
+      "end_date": "2027-07-15",
+      "price": 5550,
+      "availability": "unknown"
+    },
+    {
+      "name": "2-week traditional camp – Third Session",
+      "start_date": "2027-07-17",
+      "end_date": "2027-07-28",
+      "price": 5550,
+      "availability": "unknown"
+    },
+    {
+      "name": "2-week traditional camp – Fourth Session",
+      "start_date": "2027-07-30",
+      "end_date": "2027-08-10",
+      "price": 5550,
+      "availability": "unknown"
+    },
+    {
+      "name": "2-week riding camp – First Session",
+      "start_date": "2027-07-05",
+      "end_date": "2027-07-15",
+      "price": 6650,
+      "availability": "unknown"
+    },
+    {
+      "name": "2-week riding camp – Second Session",
+      "start_date": "2027-07-17",
+      "end_date": "2027-07-28",
+      "price": 6650,
+      "availability": "unknown"
+    },
+    {
+      "name": "2-week riding camp – Third Session (younger, newer riders)",
+      "start_date": "2027-07-30",
+      "end_date": "2027-08-10",
+      "price": 6650,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.kippewa.com/datesrates",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "description_short",
+        "price_min",
+        "price_max",
+        "transportation",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.kippewa.com/datesrates",
+      "kind": "html",
+      "title": "Dates & Rates | Camp Kippewa – Plan Your Summer Camp Experience in Maine  - Camp Kippea | All-Girls Camp in Maine"
+    },
+    "warnings": [
+      "The page covers three programs (Camp Kippewa, Camp Kippewa Point, Kippewa Equestrian Academy), but each block is labeled only by format ('half season (3 ½ week) traditional camp', '2 week traditional camp', '2 week specialty riding camp'). Going by the intro's order, these are probably Camp Kippewa, Camp Kippewa Point and Kippewa Equestrian Academy, but the page doesn't confirm that.",
+      "Discounts: $250 off the 2-week programs if enrolled by November 15. Returning families get $50 off per year attended (or $100 if re-enrolled by September 30). There's also a $125 sibling discount. Listed prices are before discounts.",
+      "Extras: private tennis add-on costs $400. Equestrian add-on fees aren't listed.",
+      "Footer says © 2025, but the session dates are for 2027."
+    ],
+    "unknowns": [
+      "Age/grade range for the 3½-week and 2-week traditional camps and the riding camp's first two sessions",
+      "Street address, city and ZIP code",
+      "Whether meals are included (not stated, though it's an overnight camp)",
+      "Deposit amount and payment schedule",
+      "Refund/cancellation policy",
+      "Financial aid availability",
+      "ACA accreditation",
+      "Equestrian add-on fees",
+      "Session availability (open/waitlist)",
+      "Swim/waterfront program details",
+      "Full activity list"
+    ],
+    "low_confidence": [
+      {
+        "field": "primary_categories",
+        "confidence": 0.6,
+        "quote": "Equestrian Program Add-on"
+      }
+    ],
+    "errors": [
+      "missing required city",
+      "missing required zip",
+      "city None, ME is not in cities.py"
+    ]
+  }
+}

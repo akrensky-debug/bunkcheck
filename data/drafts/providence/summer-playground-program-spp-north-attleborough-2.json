@@ -1,0 +1,89 @@
+{
+  "slug": "summer-playground-program-spp-north-attleborough-2",
+  "name": "Summer Playground Program (SPP)",
+  "operator_name": "North Attleborough Parks & Recreation",
+  "website_url": "https://www.northattleborough.gov/252/Programs-by-Season",
+  "registration_url": "https://northattleboroughma.myrec.com/info/default.aspx",
+  "phone": "508-699-0100 Ext. 2647",
+  "city": "North Attleborough",
+  "state": "MA",
+  "zip": null,
+  "camp_type": "day",
+  "primary_categories": [
+    "sports"
+  ],
+  "grade_min": 1,
+  "grade_max": 6,
+  "description_short": "An 8-week town summer day program at the Community Field playground, 9 am to 3:30 pm, for North Attleboro residents entering grades 1–6. A similar program (SPP2) is offered for residents entering grades 7–8.",
+  "activities": [
+    "Playground program"
+  ],
+  "sources": [
+    {
+      "url": "https://www.northattleborough.gov/252/Programs-by-Season",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "description_short"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.northattleborough.gov/252/Programs-by-Season",
+      "kind": "html",
+      "title": "Programs by Season | North Attleborough, MAArrow LeftArrow RightSlideshow Left ArrowSlideshow Right Arrow"
+    },
+    "warnings": [
+      "This page is the town's overview of Parks & Recreation programs across all seasons, not a page for one camp. Other summer programs on it (Summer Sports Weeks, Zoo Crew, Junior Zoo Rangers, Instrumental Music Week, swim lessons) are not recorded here.",
+      "No season year, dates or prices appear anywhere on the page. The only year mentioned is 2012 (Robotics), so the content may be out of date.",
+      "Summer Playground Program is for North Attleboro residents only.",
+      "Registration timing is described only as 'usually' the first Saturday of April, running until full.",
+      "Extended hours are not guaranteed: 'if there is enough interest in extended hours, we have run them in the past.'",
+      "The 446 Elm Street (Mason Fieldhouse) address is the Parks & Recreation office, not the program site (Community Field playground), so it was not used as the camp address."
+    ],
+    "unknowns": [
+      "2027 session dates (start and end of the 8-week program)",
+      "Price for full-time and for the 10-day drop-in option",
+      "Exact 2027 registration opening date (usually the first Saturday of April)",
+      "Whether extended hours will run in 2027",
+      "Street address of Community Field playground",
+      "Daily activities and schedule",
+      "Meals or snacks",
+      "Financial aid, deposit and refund policy",
+      "Swimming or waterfront activities",
+      "Accommodations for special needs",
+      "Email contact",
+      "Current availability (limited to 250 full-time spots)"
+    ],
+    "low_confidence": [
+      {
+        "field": "primary_categories",
+        "confidence": 0.4,
+        "quote": "Summer Playground Program"
+      },
+      {
+        "field": "activities",
+        "confidence": 0.5,
+        "quote": "takes place at the Community Field playground"
+      }
+    ],
+    "errors": [
+      "missing required zip",
+      "missing required season_year"
+    ]
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "slug": "slater-park-summer-camp-pawtucket",
+  "name": "Slater Park Summer Camp",
+  "operator_name": "City of Pawtucket",
+  "website_url": "https://pawtucketri.gov/2026-slater-park-summer-camp-info-packet/",
+  "registration_url": "https://pawtucketri.gov/wp-content/uploads/2026/04/2026-REGISTRATION-PACKET-2026.pdf",
+  "city": "Pawtucket",
+  "state": "RI",
+  "zip": null,
+  "description_short": "A summer camp at Slater Park run by the City of Pawtucket. The city publishes an information and registration packet with dates and registration requirements.",
+  "season_year": 2026,
+  "sources": [
+    {
+      "url": "https://pawtucketri.gov/2026-slater-park-summer-camp-info-packet/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "city",
+        "state",
+        "description_short"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://pawtucketri.gov/2026-slater-park-summer-camp-info-packet/",
+      "kind": "html",
+      "title": "2026 SLATER PARK SUMMER CAMP INFO. PACKET - City of Pawtucket"
+    },
+    "warnings": [
+      "Old season: this page covers the 2026 season, and today (2026-10-13) that summer is already over. Check whether there is a 2027 packet.",
+      "This is a City of Pawtucket announcement page. The camp details (dates, ages, prices) are in the linked PDF, which was not part of the source text.",
+      "The page says 'Registration opens this Friday, May 1st' (2026). This date was not recorded as a session because no sessions are listed.",
+      "The only address and phone on the page are for Pawtucket City Hall (137 Roosevelt Avenue, (401) 728-0500). These are the city's general contact details, not the camp's, so they were not recorded."
+    ],
+    "unknowns": [
+      "2027 season dates and registration opening date",
+      "Session/week dates",
+      "Ages or grades served",
+      "Price per week or per session",
+      "Camp type (day vs. overnight)",
+      "Daily hours and extended care",
+      "Activities offered",
+      "Camp street address within Slater Park",
+      "Camp contact phone and email",
+      "Residency requirements or resident vs. non-resident pricing",
+      "Financial aid",
+      "Meals, transportation, swimming",
+      "Refund and deposit policy",
+      "Special needs accommodations"
+    ],
+    "low_confidence": [
+      {
+        "field": "registration_url",
+        "confidence": 0.6,
+        "quote": "2026 REGISTRATION PACKET 2026"
+      }
+    ],
+    "errors": [
+      "missing required zip",
+      "missing required camp_type",
+      "camp_type must be one of ['day', 'sleepaway', 'specialty']"
+    ]
+  }
+}

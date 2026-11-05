@@ -1,7 +1,7 @@
 """
 Inquiry emails. The camp's email is built from the same function the parent's preview uses,
 so what she approves is what the camp reads (only the camp's private reply link is hidden
-from her). Signed as CampFinder (docs/decisions/agents.md rule 1). Plain text and HTML.
+from her). Signed as Bunkcheck (docs/decisions/agents.md rule 1). Plain text and HTML.
 """
 
 from __future__ import annotations
@@ -38,7 +38,7 @@ def camp_message(camp: dict[str, Any], session: dict[str, Any] | None, question:
                  kit: dict[str, Any] | None, contact: dict[str, Any] | None,
                  reply_link: str, can_reply_by_email: bool) -> tuple[str, str]:
     """(subject, plain text) of what the camp receives."""
-    lines = [f"A parent has a question for {camp['name']}, sent through CampFinder.", ""]
+    lines = [f"A parent has a question for {camp['name']}, sent through Bunkcheck.", ""]
     when = _session_line(session)
     if when:
         lines += [f"About: {when}", ""]
@@ -51,11 +51,11 @@ def camp_message(camp: dict[str, Any], session: dict[str, Any] | None, question:
         parts = [contact.get("name"), contact.get("email"), contact.get("phone")]
         lines += ["They chose to share how to reach them: " + ", ".join(p for p in parts if p), ""]
     else:
-        lines += ["They did not share contact details. Your answer reaches them through CampFinder.", ""]
+        lines += ["They did not share contact details. Your answer reaches them through Bunkcheck.", ""]
     how = "Reply to this email, or answer here: " if can_reply_by_email else "Answer here: "
     lines += [how + reply_link, "",
-              "Thanks,", "CampFinder", "",
-              "You get questions like this because your camp is listed on CampFinder. "
+              "Thanks,", "Bunkcheck", "",
+              "You get questions like this because your camp is listed on Bunkcheck. "
               "Reply and a person will help with anything else."]
     subject = f"A parent's question about {camp['name']}"
     return subject, "\n".join(lines)
@@ -75,7 +75,7 @@ def to_camp(to: str, subject: str, text: str, reply_token: str) -> Email:
 
 def reply_to_parent(to: str, camp_name: str, reply: str) -> Email:
     """Only sent when she chose to give the camp an email address, so the camp can also write to her."""
-    text = (f"Hi,\n\n{camp_name} answered the question you sent through CampFinder:\n\n{reply.strip()}\n\n"
+    text = (f"Hi,\n\n{camp_name} answered the question you sent through Bunkcheck:\n\n{reply.strip()}\n\n"
             f"You shared your email address with {camp_name}, so they can also write to you directly.\n\n"
-            "Thanks,\nCampFinder")
+            "Thanks,\nBunkcheck")
     return Email(to=to, subject=f"{camp_name} answered your question", html=_html(text), text=text)

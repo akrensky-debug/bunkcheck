@@ -63,7 +63,7 @@ export default function CampInquiryPage() {
         <p className="text-sm text-gray-600">
           {q.contact
             ? <>They shared: {[q.contact.name, q.contact.email, q.contact.phone].filter(Boolean).join(', ')}</>
-            : 'They did not share contact details. Your answer reaches them through CampFinder.'}
+            : 'They did not share contact details. Your answer reaches them through Bunkcheck.'}
         </p>
       </section>
 

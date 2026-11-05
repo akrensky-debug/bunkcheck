@@ -1,0 +1,180 @@
+{
+  "slug": "ymca-of-central-massachusetts-camps-multi-branch-overview",
+  "name": "YMCA of Central Massachusetts Camps (multi-branch overview)",
+  "operator_name": "YMCA of Central Massachusetts",
+  "website_url": "https://www.ymcaofcm.org/camp/",
+  "registration_url": "https://operations.daxko.com/Online/5104/ProgramsV2/Home.mvc",
+  "city": null,
+  "state": "MA",
+  "zip": null,
+  "camp_type": "day",
+  "primary_categories": [
+    "sports"
+  ],
+  "description_short": "This is the YMCA of Central Massachusetts overview page for its day camps at several branches: Boroughs, Camp Blanchard and Alden in the Worcester area, Camp Greendale on Indian Lake, and Camp Lowe. Programs include general day camp, preschool camp, sports, karate, tennis and teen leadership/CIT tracks. Most run in one-week sessions, and several offer extended care from 7:30 am to 6:00 pm.",
+  "activities": [
+    "Traditional camp activities",
+    "Sports camp",
+    "Karate camp",
+    "Tennis camp",
+    "Leaders in Training",
+    "Counselor in Training",
+    "Lifeguard/swim instructor training",
+    "Y Academy internship"
+  ],
+  "extended_care": true,
+  "transportation": true,
+  "swim_waterfront_notes": "Camp Blanchard is an outdoor day camp on Lake Manchaug (208 Manchaug Road, Sutton, MA). Camp Greendale is on Indian Lake. The Boroughs branch offers a lifeguard/swim instructor training track for teens entering high school. The page does not describe swim instruction or waterfront supervision.",
+  "season_year": 2018,
+  "sessions": [
+    {
+      "name": "Boroughs Counselor In Training, Session 1 (entering high school)",
+      "start_date": "2018-06-25",
+      "end_date": "2018-07-20",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Boroughs Counselor In Training, Session 2 (entering high school)",
+      "start_date": "2018-07-23",
+      "end_date": "2018-08-17",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Boroughs Leadership Track: Lifeguards/Swim Instructors in Training (Weeks 6-7)",
+      "start_date": "2018-07-23",
+      "end_date": "2018-08-03",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Boroughs Leadership Track: Y Academy Internship (Weeks 8-9)",
+      "start_date": "2018-08-06",
+      "end_date": "2018-08-17",
+      "price": null,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.ymcaofcm.org/camp/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "description_short",
+        "extended_care",
+        "transportation",
+        "swim_waterfront_notes",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.ymcaofcm.org/camp/",
+      "kind": "html",
+      "title": "Camp – YMCA of Central Massachusetts"
+    },
+    "warnings": [
+      "The content looks out of date. The page says 'Camp 2018' and mentions the '2018 Most Loved List', and its dates without a year fit the 2018 calendar (for example, 7/9 is a Monday in 2018). No 2027 or 2026 dates are shown, even though the footer says © 2026.",
+      "The session dates were recorded as 2018 and are almost certainly not valid for the 2027 season.",
+      "This is an overview page for several camps run by different YMCA branches (Camp Boroughs, Camp Blanchard, Alden Summer Program, Camp Greendale on Indian Lake, Camp Lowe). It is not one camp, and each camp has its own director, location and ages.",
+      "Ages vary by program, from 2.9 years (Greendale Pre School Camp) to 17 (Camp Greendale). Grades range from entering 1st to 7th (Blanchard/Alden) up to teens entering high school. Overall age/grade fields were left blank.",
+      "The only price stated is Boroughs transportation at $40/week. No tuition is listed anywhere.",
+      "Contact emails are hidden on the page ('[email protected]'). Greendale phone numbers have no area code.",
+      "A Y-Access Pricing / Financial Assistance link exists in the site menu, but it is listed under membership. The page does not say whether it applies to camp.",
+      "6 sessions without full dates were left out"
+    ],
+    "unknowns": [
+      "2027 session dates for all camps",
+      "Weekly tuition and session prices",
+      "Registration opening date for 2027",
+      "Whether financial aid covers camp fees",
+      "Whether a deposit is required, and the refund policy",
+      "Whether meals are included",
+      "ACA accreditation",
+      "Swim instruction and waterfront supervision details",
+      "Support for children with special needs",
+      "Current availability",
+      "Street address for the Boroughs, Greendale and Camp Lowe sites",
+      "Whether Camp Lowe is a day camp (only its 8:30 am-4:00 pm hours are given)"
+    ],
+    "low_confidence": [
+      {
+        "field": "camp_type",
+        "confidence": 0.75,
+        "quote": "Outdoor Day Camp located on Lake Manchaug"
+      },
+      {
+        "field": "registration_url",
+        "confidence": 0.6,
+        "quote": "Program Enrollment"
+      },
+      {
+        "field": "transportation",
+        "confidence": 0.65,
+        "quote": "Camp at the Boroughs Family Branch YMCA offers transportation to and from the Boroughs Family YMCA. Southborough / Marlborough / Northborough $40/WEEK"
+      },
+      {
+        "field": "activities",
+        "confidence": 0.7,
+        "quote": "Sports Camp ... Karate Camp ... TENNIS CAMP AT CAMP GREENDALE ON INDIAN LAKE"
+      },
+      {
+        "field": "swim_waterfront_notes",
+        "confidence": 0.7,
+        "quote": "Camp Greendale on Indian Lake"
+      },
+      {
+        "field": "sessions[0].start_date",
+        "confidence": 0.5,
+        "quote": "7-8 year olds\n Week 4 (7/9)"
+      },
+      {
+        "field": "sessions[5].start_date",
+        "confidence": 0.5,
+        "quote": "7-12 year olds\n Week 9 (8/13)"
+      },
+      {
+        "field": "sessions[6].start_date",
+        "confidence": 0.5,
+        "quote": "Session 1: 6/25 – 7/20"
+      },
+      {
+        "field": "sessions[7].start_date",
+        "confidence": 0.5,
+        "quote": "Session 2: 7/23 – 8/17"
+      },
+      {
+        "field": "sessions[8].start_date",
+        "confidence": 0.5,
+        "quote": "Week 6 and 7 (7/23-8/3)"
+      },
+      {
+        "field": "sessions[9].start_date",
+        "confidence": 0.5,
+        "quote": "Week 8 and 9  (8/6-8/17)"
+      },
+      {
+        "field": "description_short",
+        "confidence": 0.7,
+        "quote": "Schedule: One week sessions"
+      }
+    ],
+    "errors": [
+      "missing required city",
+      "missing required zip",
+      "city None, MA is not in cities.py"
+    ]
+  }
+}

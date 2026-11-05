@@ -1,0 +1,144 @@
+{
+  "slug": "c-a-k-e-summer-camp-creative-arts-at-keene-keene",
+  "name": "C.A.K.E. Summer Camp (Creative Arts at Keene)",
+  "operator_name": "MoCo Arts",
+  "website_url": "https://www.moco.org/camps/cake/",
+  "email": "info@moco.org",
+  "phone": "(603) 357-2100",
+  "street_address": "40 Roxbury St.",
+  "city": "Keene",
+  "state": "NH",
+  "zip": "03431",
+  "camp_type": "day",
+  "primary_categories": [
+    "arts",
+    "performing_arts"
+  ],
+  "grade_min": 3,
+  "grade_max": 12,
+  "description_short": "A four-week multi-arts day camp in July for students in grades 3–12. Campers choose their own full-day or half-day schedule of performing and visual arts classes, and the camp ends with a Festival Week of performances and exhibits.",
+  "activities": [
+    "dance",
+    "theatre",
+    "visual art",
+    "creative writing",
+    "music",
+    "tech theatre",
+    "film",
+    "podcasting",
+    "chainmail jewelry design",
+    "cooking",
+    "tabletop games (Dungeons and Dragons)",
+    "musicals",
+    "one-act plays",
+    "art exhibits"
+  ],
+  "price_per_week": 255,
+  "price_min": 135,
+  "price_max": 990,
+  "financial_aid": true,
+  "extended_care": true,
+  "season_year": 2026,
+  "price_per": "week",
+  "sessions": [
+    {
+      "name": "All four weeks (full day)",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-31",
+      "price": 990,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.moco.org/camps/cake/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "description_short",
+        "price_min",
+        "price_max",
+        "price_per_week",
+        "price_per",
+        "extended_care",
+        "financial_aid",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.moco.org/camps/cake/",
+      "kind": "html",
+      "title": "C.A.K.E. Summer Camp | MoCo Arts"
+    },
+    "warnings": [
+      "Old season: the page describes the 2026 camp (July 6–31, 2026), which is over as of 2026-10-13. 2027 details are not posted yet. Prices may change.",
+      "Dates conflict: the summary says July 6–31, 2026, but the week list says 'Week 1: July 5-9 ... Week 4: July 26-30'. In 2026, July 5 was a Sunday, so the week list may be from another year. Dates were left off the individual weeks.",
+      "Prices conflict: the early-bird price is 'All four weeks of camp for $890' if registered before May 1, and the standard price is $990 for 4 weeks. The weekly prices listed are $255 full day and $135 half day. Aftercare is $20 per day.",
+      "Discounts: a 5% sibling discount is offered, but it cannot be combined with the early-bird price. Payment plans are available. Registration forms were due by June 29 (2026 season).",
+      "Week 4 (Festival Week) can't be booked on its own. Campers must also register for Week 1, 2, or 3.",
+      "4 sessions without full dates were left out"
+    ],
+    "unknowns": [
+      "2027 dates, prices and registration opening (page says 'We can't wait for C.A.K.E. 2027!' but gives no details)",
+      "Exact start/end dates of each individual week",
+      "Ages (only grades 3–12 are given)",
+      "Whether meals or snacks are provided",
+      "Transportation",
+      "Refund/cancellation policy (may be on the Policies or FAQ page)",
+      "Online registration link (page mentions a Studio Pro Parent Portal and a downloadable form only)",
+      "Current availability",
+      "Whether there are accommodations for special needs",
+      "Whether accredited by the ACA"
+    ],
+    "low_confidence": [
+      {
+        "field": "price_per_week",
+        "confidence": 0.7,
+        "quote": "$255/week (Full days)"
+      },
+      {
+        "field": "price_min",
+        "confidence": 0.7,
+        "quote": "$135/week (Half days)"
+      },
+      {
+        "field": "price_max",
+        "confidence": 0.7,
+        "quote": "$990/4 weeks"
+      },
+      {
+        "field": "sessions[0].price",
+        "confidence": 0.65,
+        "quote": "$255/week (Full days)"
+      },
+      {
+        "field": "sessions[4].start_date",
+        "confidence": 0.75,
+        "quote": "from July 6-31, 2026, from 9:00 a.m. – 4:00 p.m., Monday – Friday"
+      },
+      {
+        "field": "sessions[4].price",
+        "confidence": 0.7,
+        "quote": "$990/4 weeks"
+      }
+    ],
+    "errors": []
+  }
+}

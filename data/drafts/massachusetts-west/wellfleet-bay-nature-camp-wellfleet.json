@@ -1,0 +1,71 @@
+{
+  "slug": "wellfleet-bay-nature-camp-wellfleet",
+  "name": "Wellfleet Bay Nature Camp",
+  "operator_name": "Mass Audubon",
+  "website_url": "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/wellfleet-bay/camp",
+  "city": "Wellfleet",
+  "state": "MA",
+  "zip": null,
+  "primary_categories": [
+    "nature"
+  ],
+  "age_min": 4,
+  "age_max": 13,
+  "description_short": "A Mass Audubon nature camp for ages 4–13 held at the 1,100-acre Wellfleet Bay Wildlife Sanctuary on Cape Cod, where campers explore the outdoors and learn about nature.",
+  "activities": [
+    "Nature exploration"
+  ],
+  "financial_aid": true,
+  "season_year": 2027,
+  "sources": [
+    {
+      "url": "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/wellfleet-bay/camp",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "city",
+        "state",
+        "primary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "financial_aid"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/wellfleet-bay/camp",
+      "kind": "html",
+      "title": "Wellfleet Bay Nature Camp"
+    },
+    "warnings": [
+      "This is a landing page. 2027 registration is not open yet ('Coming Soon'), and no dates or prices are listed here.",
+      "The only phone and address on the page (208 South Great Road, Lincoln, MA; 781-259-9500) belong to Mass Audubon headquarters, not the camp, so they were not recorded as camp contacts."
+    ],
+    "unknowns": [
+      "2027 session dates and weeks",
+      "2027 prices / weekly tuition (on separate 'Programs & Pricing' page)",
+      "Registration opening date",
+      "Whether it is a day camp or overnight (not stated on this page)",
+      "Camp street address and zip",
+      "Camp-specific phone and email",
+      "Deposit amount and refund policy (on separate 'Camp Policies' page)",
+      "Extended care, transportation, meals",
+      "Daily schedule and specific activities",
+      "Accommodations for campers with special needs (on 'Goals, Inclusion & Expectations' page)",
+      "ACA accreditation"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "missing required zip",
+      "missing required camp_type",
+      "camp_type must be one of ['day', 'sleepaway', 'specialty']"
+    ]
+  }
+}

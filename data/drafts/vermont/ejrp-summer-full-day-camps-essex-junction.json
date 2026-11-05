@@ -1,0 +1,79 @@
+{
+  "slug": "ejrp-summer-full-day-camps-essex-junction",
+  "name": "EJRP Summer Full Day Camps",
+  "operator_name": "Essex Junction Recreation & Parks",
+  "website_url": "https://www.ejrp.org/school-age-childcare/summer-full-day-camps",
+  "registration_url": "https://www.ejrp.org/programs/overview-2",
+  "phone": "802-878-1375",
+  "street_address": "75 Maple Street",
+  "city": "Essex Junction",
+  "state": "VT",
+  "zip": "05452",
+  "camp_type": "day",
+  "description_short": "Full-day summer camps for school-age children run by the Essex Junction Recreation & Parks department, including Camp Maple Street, Camp Discovery, Camp REACH and Camp Nova.",
+  "season_year": 2026,
+  "sources": [
+    {
+      "url": "https://www.ejrp.org/school-age-childcare/summer-full-day-camps",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "description_short"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.ejrp.org/school-age-childcare/summer-full-day-camps",
+      "kind": "html",
+      "title": "Summer Full Day Camps - Essex Junction Recreation & Parks"
+    },
+    "warnings": [
+      "The 2026 season is over and no 2027 details have been posted yet. The page says: \"Check back in January for details on Summer 2027 registration.\"",
+      "The page has almost no detail. It names four camps (Camp Maple Street, Camp Discovery, Camp REACH, Camp Nova) but gives no ages, dates or prices for any of them.",
+      "The 'Hours: 8am-4pm, Monday-Friday' line sits next to the department phone number. It is probably office hours, not camp hours.",
+      "The address and phone number belong to the Essex Junction Rec Dept. The camps may meet somewhere else."
+    ],
+    "unknowns": [
+      "2027 session dates",
+      "Weekly or session prices",
+      "Age or grade range for each camp (Maple Street, Discovery, REACH, Nova)",
+      "Daily camp hours and whether before/after care is offered",
+      "Camp location(s)",
+      "Activities offered",
+      "Whether scholarships apply to camps (the site has a 'Scholarship Application' link)",
+      "Deposit and refund policy",
+      "Whether meals or snacks are included",
+      "Transportation",
+      "Swimming (the department runs the Maple Street Pool)",
+      "Accommodations for children with special needs",
+      "When 2027 registration opens (the page says to check back in January)",
+      "Email contact",
+      "ACA accreditation"
+    ],
+    "low_confidence": [
+      {
+        "field": "registration_url",
+        "confidence": 0.6,
+        "quote": "Programs & Registration"
+      },
+      {
+        "field": "description_short",
+        "confidence": 0.75,
+        "quote": "Camp Maple Street\n\nCamp Discovery\n\nCamp REACH\n\nCamp Nova"
+      }
+    ],
+    "errors": []
+  }
+}

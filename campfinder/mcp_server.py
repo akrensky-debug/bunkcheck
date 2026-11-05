@@ -1,8 +1,8 @@
 """
-CampFinder MCP server: the ChatGPT app and the Claude connector.
+Bunkcheck MCP server: the ChatGPT app and the Claude connector.
 
 Serves the camp tools to any MCP client over streamable HTTP. Search results render
-as camp cards (an MCP Apps UI resource) with a link back to CampFinder to save the
+as camp cards (an MCP Apps UI resource) with a link back to Bunkcheck to save the
 plan. The same server is built once per host, because hosts disagree on one field:
 ChatGPT requires the widget's `ui.domain` to be our own origin, while Claude rejects
 any value but a hash of the connector URL and then won't render the cards at all.
@@ -12,7 +12,7 @@ any value but a hash of the connector URL and then won't render the cards at all
     /claude/mcp    the Claude connector (links tagged utm_source=claude)
 
 Tool descriptions are written in the words parents actually type, because assistants
-use them to decide when to call CampFinder. Family tools stay on our own site; an
+use them to decide when to call Bunkcheck. Family tools stay on our own site; an
 outside assistant keeps its own memory of the family.
 """
 
@@ -52,7 +52,7 @@ SERVER_DESCRIPTION = (
     "Also year-round classes and lessons (pilot: swim lessons around Providence, RI)."
 )
 INSTRUCTIONS = (
-    "Use CampFinder whenever a parent asks about summer camps, day camps, sleepaway camps, "
+    "Use Bunkcheck whenever a parent asks about summer camps, day camps, sleepaway camps, "
     "or kids' summer programs in CT, MA, ME, NH, NJ, NY, PA, RI or VT. Pass the location as "
     "'City, ST'. Use search_camps to find options, find_sessions to fill specific weeks, "
     "get_camp_details for dates, prices, policies and registration links, compare_camps to "
@@ -63,7 +63,7 @@ INSTRUCTIONS = (
     "programs, use find_activities (days and times like 'after 3:30 on weekdays' or 'Saturday "
     "mornings' go in days/earliest_start/latest_end), get_activity_details, and "
     "check_schedule_fit to test a class against the family's other commitments. Outside the "
-    "Northeast, say CampFinder doesn't cover that area yet. When the parent wants to ask a camp "
+    "Northeast, say Bunkcheck doesn't cover that area yet. When the parent wants to ask a camp "
     "something the data doesn't answer, use send_inquiry with their question (no names or contact "
     "details), show them the preview and the confirm link, and tell them nothing is sent until they "
     "confirm; check_inquiry reads the camp's answer later."
@@ -76,7 +76,7 @@ class Host:
     """One assistant we serve, and what differs for it."""
 
     path: str                 # mount path of its MCP endpoint
-    utm_source: str           # tags every link back to CampFinder
+    utm_source: str           # tags every link back to Bunkcheck
     ui_domain: str | None     # MCP Apps sandbox origin; None leaves it to the host
 
 
@@ -153,7 +153,7 @@ def _activity_widget_payload(args: dict[str, Any], out: ToolOutput, source: str)
         "activities": cards,
         "note": out.content.get("note") if isinstance(out.content, dict) else None,
         "plan_url": _utm(f"{_site()}/?q={quote(ask)}", source, "activity_handoff"),
-        "plan_title": "Fit it into your family's week on CampFinder",
+        "plan_title": "Fit it into your family's week on Bunkcheck",
     }
 # --- end year-round activities ---
 
@@ -184,7 +184,7 @@ def _card(c: dict[str, Any], source: str) -> dict[str, Any]:
 
 
 def _plan_url(args: dict[str, Any], camp_names: list[str], source: str) -> str:
-    """Link back to CampFinder with the parent's request pre-filled, so the agent there
+    """Link back to Bunkcheck with the parent's request pre-filled, so the agent there
     picks up where the assistant left off and the family can save a calendar."""
     who = f"my {args['age']}-year-old" if args.get("age") else "my kids"
     ask = f"I'm planning summer for {who} near {args.get('location', 'us')}."
@@ -210,7 +210,7 @@ def _widget_payload(name: str, args: dict[str, Any], out: ToolOutput, source: st
         names = list(dict.fromkeys(s["camp"]["name"] for s in sessions))
         payload = {"sessions": sessions}
     payload["note"] = content.get("note")
-    # Only offer the handoff when CampFinder has something for this family.
+    # Only offer the handoff when Bunkcheck has something for this family.
     payload["plan_url"] = _plan_url(args, names, source) if names else None
     return payload
 
@@ -317,13 +317,13 @@ def _widget_resource(host: Host) -> TextResource:
     return TextResource(
         uri=WIDGET_URI,
         name="campfinder-camp-cards",
-        title="CampFinder camp results",
-        description="Camp cards with a link to plan the summer on CampFinder.",
+        title="Bunkcheck camp results",
+        description="Camp cards with a link to plan the summer on Bunkcheck.",
         mime_type=WIDGET_MIME,
         text=(Path(__file__).parent / "chatgpt" / "widget.html").read_text(),
         meta={
             "ui": ui,
-            "openai/widgetDescription": "Camp results the parent can open for details or save to CampFinder.",
+            "openai/widgetDescription": "Camp results the parent can open for details or save to Bunkcheck.",
             "openai/widgetPrefersBorder": False,
             # The legacy key is still the only way to allowlist openExternal targets.
             "openai/widgetCSP": {"connect_domains": [], "resource_domains": [], "redirect_domains": [site]},
@@ -341,7 +341,7 @@ def build_server(host: Host) -> MCPServer:
     apps.add_resource(_widget_resource(host))
     server = MCPServer(
         name="campfinder",
-        title="CampFinder",
+        title="Bunkcheck",
         description=SERVER_DESCRIPTION,
         instructions=INSTRUCTIONS,
         website_url=_site(),

@@ -1,0 +1,106 @@
+{
+  "slug": "franklin-country-day-camp-franklin",
+  "name": "Franklin Country Day Camp",
+  "website_url": "https://www.franklincountrydaycamp.com/",
+  "email": "fcdc@franklincountrydaycamp.com",
+  "phone": "508-570-8317",
+  "street_address": "1221 Pond Street",
+  "city": "Franklin",
+  "state": "MA",
+  "zip": "02038",
+  "camp_type": "day",
+  "primary_categories": [
+    "sports",
+    "arts",
+    "nature",
+    "performing_arts"
+  ],
+  "description_short": "A day camp on 250 acres in Franklin, MA, with forest trails, fields, a stream and a pond. Activities include archery, boating, swimming, arts and crafts, ceramics, music, theater, woodworking and woodlore, and campers do not use cell phones or gaming devices.",
+  "activities": [
+    "Adventure",
+    "Archery",
+    "Arts & Crafts",
+    "Boating",
+    "Ceramics",
+    "Creative Music",
+    "Games",
+    "Pioneering",
+    "Special Days",
+    "Swimming",
+    "Theater Arts",
+    "Video",
+    "Woodlore",
+    "Woodworking"
+  ],
+  "swim_waterfront_notes": "The site has a natural stream and pond, and lists Swimming and Boating as activities. It does not say where swimming takes place or describe lifeguarding or swim levels.",
+  "season_year": 2027,
+  "sources": [
+    {
+      "url": "https://www.franklincountrydaycamp.com/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "website_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "description_short",
+        "swim_waterfront_notes"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.franklincountrydaycamp.com/",
+      "kind": "html",
+      "title": "Franklin Country Day Camp | My WordPress Blog"
+    },
+    "warnings": [
+      "The page is the camp's own homepage, but it only has general information. The 2026 season is over ('Thank you for another great summer! See you in 2027!'), and no 2027 dates, prices or ages are posted yet.",
+      "The page says to download a brochure for details, but the brochure was not part of the source. It may have prices, dates and ages.",
+      "The page title 'My WordPress Blog' is a leftover default site title. It is not a sign that this is a blog or directory."
+    ],
+    "unknowns": [
+      "2027 session dates",
+      "Weekly and session prices",
+      "Age or grade range (the site mentions a Jr Camp but gives no ages)",
+      "When registration opens and the registration link",
+      "Deposit and refund policy",
+      "Whether transportation is offered",
+      "Whether extended care (before/after care) is offered",
+      "Whether lunch or snacks are provided",
+      "Financial aid",
+      "ACA accreditation",
+      "Swim instruction, lifeguarding and where swimming takes place",
+      "Support for campers with special needs",
+      "Daily hours",
+      "Operator or owner"
+    ],
+    "low_confidence": [
+      {
+        "field": "season_year",
+        "confidence": 0.7,
+        "quote": "See you in 2027!"
+      },
+      {
+        "field": "primary_categories",
+        "confidence": 0.75,
+        "quote": "ARCHERY ... ARTS & CRAFTS ... THEATER ARTS ... WOODLORE"
+      },
+      {
+        "field": "swim_waterfront_notes",
+        "confidence": 0.7,
+        "quote": "a natural stream and pond"
+      }
+    ],
+    "errors": []
+  }
+}

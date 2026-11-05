@@ -1,0 +1,101 @@
+{
+  "slug": "camp-walden-denmark",
+  "name": "Camp Walden",
+  "website_url": "https://campwalden.com/",
+  "registration_url": "https://waldenme.campintouch.com/ui/forms/application/camper/App",
+  "email": "walden@campwalden.com",
+  "phone": "(207) 452-2901",
+  "street_address": "93 Camp Walden Drive, P.O. Box 230",
+  "city": "Denmark",
+  "state": "ME",
+  "zip": "04022",
+  "camp_type": "sleepaway",
+  "primary_categories": [
+    "sports",
+    "nature"
+  ],
+  "age_min": 8,
+  "age_max": 15,
+  "description_short": "A 7-week traditional overnight summer camp for girls ages 8–15 in Denmark, Maine, running since 1916. Activities include wilderness trips, horseback riding, tennis, sailing and water skiing.",
+  "activities": [
+    "wilderness trips",
+    "horseback riding",
+    "tennis",
+    "sailing",
+    "water skiing",
+    "ropes course"
+  ],
+  "price_max": 16000,
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Full Season (7 weeks)",
+      "start_date": "2027-06-25",
+      "end_date": "2027-08-13",
+      "price": 16000,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://campwalden.com/dates-rates/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "price_max",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://campwalden.com/dates-rates/",
+      "kind": "html",
+      "title": "Dates & Rates - Camp Walden"
+    },
+    "warnings": [
+      "Girls-only camp (ages 8–15).",
+      "A four-week option is offered on a limited basis to first-time campers only; its dates and price are not listed, so it is not recorded as a session.",
+      "The page mentions a Rookie Camp but gives no dates or price.",
+      "Visiting Days are Saturday, July 24 or Sunday, July 25, 2027."
+    ],
+    "unknowns": [
+      "Dates and price of the four-week option for first-time campers",
+      "Rookie Camp dates, ages and price",
+      "Availability / openings for 2027",
+      "Deposit requirement and payment schedule",
+      "Refund policy",
+      "Financial aid availability",
+      "ACA accreditation",
+      "Transportation to camp",
+      "Swim/waterfront details and supervision",
+      "Special needs accommodations",
+      "Grade ranges",
+      "Whether tuition includes all fees (trips, horseback riding, laundry, etc.)"
+    ],
+    "low_confidence": [
+      {
+        "field": "primary_categories",
+        "confidence": 0.75,
+        "quote": "wilderness trips, horseback riding, tennis, sailing and water skiing"
+      }
+    ],
+    "errors": []
+  }
+}

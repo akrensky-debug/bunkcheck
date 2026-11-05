@@ -1,0 +1,76 @@
+{
+  "slug": "rhode-island-fencing-academy-and-club-rifac-summer-camps-east-providence",
+  "name": "Rhode Island Fencing Academy & Club (RIFAC) Summer Camps",
+  "operator_name": "Rhode Island Fencing Academy & Club",
+  "website_url": "https://rifac.com/",
+  "registration_url": "https://rifac.com/enroll/",
+  "phone": "401-434-2404",
+  "street_address": "14 Almeida Avenue",
+  "city": "East Providence",
+  "state": "RI",
+  "zip": "02914",
+  "camp_type": "specialty",
+  "primary_categories": [
+    "sports"
+  ],
+  "description_short": "A fencing club in East Providence, RI that runs youth fencing classes and summer fencing camps. Owners Alex and Jill Ripa have taught fencing for over 30 years.",
+  "activities": [
+    "Fencing"
+  ],
+  "sources": [
+    {
+      "url": "https://rifac.com/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "description_short"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://rifac.com/",
+      "kind": "html",
+      "title": "RI Fencing: Fencing Academy Rhode Island | Recreational Fencing Club | Youth Sports in Providence RI"
+    },
+    "warnings": [
+      "Source is the club's homepage, not the Summer Camps page; it has no camp dates, prices, or ages.",
+      "Season year not stated for camps; season_year left null. The page mentions fall classes starting Oct 15 (2026).",
+      "The 'Bears Elite Fencing Clinic' is promoted as a summer option but may be a separate program; no details given."
+    ],
+    "unknowns": [
+      "Summer camp session dates for 2027",
+      "Camp prices / weekly rate",
+      "Age or grade range for camp",
+      "Daily camp hours and whether extended care is offered",
+      "Whether camp is day-only (presumably day camp at the club facility, not confirmed)",
+      "Deposit, refund policy, financial aid",
+      "Email address (page shows only an 'Email us' link)",
+      "Registration opening date for 2027 camps",
+      "Details of the 'Bears Elite Fencing Clinic' (dates, ages, price, location)"
+    ],
+    "low_confidence": [
+      {
+        "field": "camp_type",
+        "confidence": 0.7,
+        "quote": "Register for Camp"
+      }
+    ],
+    "errors": [
+      "missing required season_year"
+    ]
+  }
+}

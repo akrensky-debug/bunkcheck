@@ -1,0 +1,132 @@
+{
+  "slug": "camp-belknap-mirror-lake",
+  "name": "Camp Belknap",
+  "operator_name": "Camp Belknap",
+  "website_url": "https://campbelknap.org/",
+  "registration_url": "https://campbelknap.org/campers/#registration",
+  "email": "admincb@campbelknap.org",
+  "phone": "603-569-3475",
+  "street_address": "11 Chase Point Road",
+  "city": "Mirror Lake",
+  "state": "NH",
+  "zip": "03853",
+  "camp_type": "sleepaway",
+  "age_min": 8,
+  "age_max": 16,
+  "description_short": "Camp Belknap is a non-profit overnight camp for boys ages 8-16 on Lake Winnipesaukee in New Hampshire. It runs four two-week sessions, plus a one-week fifth session for ages 8-12.",
+  "price_min": 1275,
+  "price_max": 3375,
+  "financial_aid": true,
+  "meals_included": true,
+  "refund_policy_summary": "The $300 registration fee is non-refundable. The page gives no other refund terms.",
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Session 1 (2 weeks)",
+      "start_date": "2027-06-27",
+      "end_date": "2027-07-10",
+      "price": 3375,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 2 (2 weeks)",
+      "start_date": "2027-07-11",
+      "end_date": "2027-07-24",
+      "price": 3375,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 3 (2 weeks)",
+      "start_date": "2027-07-25",
+      "end_date": "2027-08-07",
+      "price": 3375,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 4 (2 weeks)",
+      "start_date": "2027-08-08",
+      "end_date": "2027-08-21",
+      "price": 3375,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 5 (1 week)",
+      "start_date": "2027-08-23",
+      "end_date": "2027-08-28",
+      "price": 1675,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://campbelknap.org/campers/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "age_min",
+        "age_max",
+        "description_short",
+        "price_min",
+        "price_max",
+        "meals_included",
+        "financial_aid",
+        "refund_policy_summary",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://campbelknap.org/campers/",
+      "kind": "html",
+      "title": "Camp Belknap is a Summer Camp for Boys | Lake Winnipesaukee New HampshireResponsive Table with 6 RowsResponsive Table with 6 RowsResponsive Table with 6 RowsCamp Activities"
+    },
+    "warnings": [
+      "Tuition is tiered, and families choose their tier. Session prices shown are Tier One (the 'true cost'): $3,375 for two weeks and $1,675 for one week. Tier Two costs $2,475 for two weeks and $1,275 for one week. All totals include a non-refundable $300 registration fee and a store deposit ($50 or $25).",
+      "Eight-year-olds can attend Sessions 1-4 only if an older brother is a current camper in the same session. They must turn 8 before June 1.",
+      "Sixteen-year-olds must still be 16 through the end of Session 4 (Aug. 21, 2027).",
+      "Returning campers get acceptance priority until November 12, 2026. A waitlist is kept, and submitting an application does not guarantee a spot.",
+      "A 4-week stay is possible by combining Sessions 1 & 2 or 3 & 4. The page gives no separate 4-week price.",
+      "Some linked documents still refer to 2024 or 2026 (policies, medication instructions, communicable disease plan, pre-camp checklist).",
+      "Registration starts with an inquiry form. Applications are then sent out; there is no direct booking."
+    ],
+    "unknowns": [
+      "Activity list (on a separate Camp Activities page)",
+      "Swim and waterfront details",
+      "Transportation to camp",
+      "ACA accreditation",
+      "Refund policy beyond the non-refundable registration fee",
+      "Whether spots are open in each session",
+      "Special needs accommodations",
+      "Payment plan terms and deposit schedule",
+      "New camper orientation date (listed as 'June TBD, 2027')"
+    ],
+    "low_confidence": [
+      {
+        "field": "registration_url",
+        "confidence": 0.75,
+        "quote": "Follow the link below to submit an inquiry to receive an application for the summer of 2027."
+      },
+      {
+        "field": "meals_included",
+        "confidence": 0.7,
+        "quote": "Board & Tuition: $3,025.00"
+      }
+    ],
+    "errors": [
+      "city 'Mirror Lake', NH is not in cities.py"
+    ]
+  }
+}

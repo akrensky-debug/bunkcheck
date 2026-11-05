@@ -1,0 +1,81 @@
+{
+  "slug": "windswept-farm-summer-riding-camp-warren",
+  "name": "Windswept Farm Summer Riding Camp",
+  "operator_name": "Windswept Farm",
+  "website_url": "http://www.windsweptfarmri.com/",
+  "email": "windsweptfarmri@gmail.com",
+  "phone": "401-258-3293",
+  "street_address": "25 Serpentine Road",
+  "city": "Warren",
+  "state": "RI",
+  "zip": "02885",
+  "camp_type": "specialty",
+  "primary_categories": [
+    "sports"
+  ],
+  "age_min": 6,
+  "description_short": "A horse boarding and riding lesson farm in Warren, RI, with indoor and outdoor arenas. In the summer it runs weekly riding camps for children age 6 and up.",
+  "activities": [
+    "horseback riding"
+  ],
+  "sources": [
+    {
+      "url": "http://www.windsweptfarmri.com/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "age_min",
+        "description_short"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "http://www.windsweptfarmri.com/",
+      "kind": "html",
+      "title": "Windswept Farm, Warren RI"
+    },
+    "warnings": [
+      "This is the farm's general homepage, not the camp page. It only says that summer riding camps exist. Camp details are probably on the 'Summer Camp' page, which wasn't provided.",
+      "The page doesn't name a season or year, so the info may be out of date. Check that camps run in 2027."
+    ],
+    "unknowns": [
+      "Season year and session dates",
+      "Price per week and deposit",
+      "Whether it is a day camp or overnight (most likely day, but the page doesn't say)",
+      "Daily hours and extended care",
+      "Maximum age",
+      "Registration process and URL",
+      "Refund policy",
+      "Financial aid",
+      "Meals",
+      "Transportation",
+      "Whether campers need riding experience",
+      "Accommodations for special needs",
+      "ACA accreditation"
+    ],
+    "low_confidence": [
+      {
+        "field": "primary_categories",
+        "confidence": 0.7,
+        "quote": "weekly riding camp programs"
+      }
+    ],
+    "errors": [
+      "missing required season_year"
+    ]
+  }
+}

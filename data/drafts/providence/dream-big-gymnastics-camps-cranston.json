@@ -1,0 +1,79 @@
+{
+  "slug": "dream-big-gymnastics-camps-cranston",
+  "name": "Dream Big Gymnastics Camps",
+  "operator_name": "Dream Big Gymnastics",
+  "website_url": "https://www.dreambiggym.com/camps",
+  "registration_url": "https://www.dreambiggym.com/events",
+  "email": "tanya@dreambiggym.com",
+  "phone": "(401) 228-8946",
+  "street_address": "41 Comstock Park Way",
+  "city": "Cranston",
+  "state": "RI",
+  "zip": "02921",
+  "camp_type": "day",
+  "primary_categories": [
+    "sports",
+    "arts"
+  ],
+  "description_short": "School-vacation day camp at a gymnastics gym in Cranston, RI. Campers learn gymnastics skills, do a ninja warrior obstacle course, and make an arts and crafts project, 8:30am–4pm, $75 per day.",
+  "activities": [
+    "Gymnastics",
+    "Ninja warrior obstacle course",
+    "Arts and crafts"
+  ],
+  "sources": [
+    {
+      "url": "https://www.dreambiggym.com/camps",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "description_short"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.dreambiggym.com/camps",
+      "kind": "html",
+      "title": "Camps | Dream Big Gymnastics"
+    },
+    "warnings": [
+      "The page's CAMP DATES table has no rows, so there are no sessions or dates to record. Dates are probably on the events/registration page.",
+      "No season year is stated for the camps. The footer reads '2026 Dream Big Gymnastics' but that is a copyright line, not the camp season.",
+      "The price is a daily rate ($75/day), not a weekly rate, so price_per_week is left blank.",
+      "This looks like a school-vacation camp offered on single days, not necessarily a summer program."
+    ],
+    "unknowns": [
+      "Camp dates (the CAMP DATES table on the page is empty)",
+      "Season year",
+      "Age or grade range",
+      "Weekly rate or multi-day discounts (only $75/day is stated)",
+      "Registration open date and availability",
+      "Deposit and refund policy",
+      "Whether extended care is offered beyond 8:30am-4pm",
+      "Whether lunch/snacks are provided",
+      "Financial aid",
+      "Transportation",
+      "ACA accreditation",
+      "Special needs accommodations"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "missing required season_year"
+    ]
+  }
+}

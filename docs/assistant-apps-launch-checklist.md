@@ -14,7 +14,7 @@ branch `claude/assistant-apps`. Domains below assume `campfinder.com` (site) and
         "Application not found", so no deploy is serving;
       - the site on Vercel.
 - [ ] **Custom domains.** `api.campfinder.com` on the Railway service and `campfinder.com` on
-      Vercel. Confirm you own the domain; the code already sends email from `hello@campfinder.com`.
+      Vercel. Confirm you own the domain; the code already sends email from `hello@bunkcheck.ai`.
 - [ ] **Railway env vars** (service `api`):
       - `FRONTEND_URL=https://campfinder.com` (already set; check the value);
       - `PUBLIC_API_URL=https://api.campfinder.com`;
@@ -27,7 +27,7 @@ branch `claude/assistant-apps`. Domains below assume `campfinder.com` (site) and
       key, and optionally `NEXT_PUBLIC_SUPPORT_EMAIL`.
 - [ ] **Smoke test production:** `python -m campfinder.scripts.check_mcp https://api.campfinder.com/chatgpt/mcp`
       then the same for `/claude/mcp`. All checks must pass.
-- [ ] **Support inbox.** `hello@campfinder.com` receives mail and someone answers within one
+- [ ] **Support inbox.** `hello@bunkcheck.ai` receives mail and someone answers within one
       business day (the support page promises this).
 - [ ] **Uptime alert** on `https://api.campfinder.com/health` (for example Better Stack or UptimeRobot).
 

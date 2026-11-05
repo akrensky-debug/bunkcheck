@@ -1,7 +1,38 @@
 # Working on CampFinder
 
-Read this first, every session. Updated 4 October 2026 (order of work); 3 October: `main` is the trunk. This replaces the
+Read this first, every session. Updated 15 October 2026 (how to work); 4 October (order of work); 3 October: `main` is the trunk. This replaces the
 1 October rule (on `claude/product-plan`) that made `product-plan` the only line of work.
+
+## How to work (added 15 October 2026)
+
+**Deeper, not bigger.** Before starting anything beyond a one-line fix, answer four questions
+in a few lines, then restate the task as the deeper version and do that one:
+
+1. What would a top professional in this field do here that wasn't asked for?
+2. What is the rawest material they would start from, instead of what has already been
+   digested? (The camp's own calendar, not an aggregator; a parent's actual spreadsheet, not a
+   blog post about spreadsheets; the failing log, not the summary.)
+3. Which specific methods and tools would they use?
+4. What, other than you or Andrew, would show the result is right? (A test, a source with a
+   date, a real parent, a browser run, CI.)
+
+Deeper means more rigor on the same task. It does not mean more scope.
+
+**Share the thing, not the folder.** When you hand Andrew something to read or check, give a
+link that opens it: the Google Doc or Drive file link, the artifact URL, the PR or the file on
+GitHub, the preview deploy. A folder path or "it's in docs/" is a fallback, never the answer.
+If something only exists locally, say so and offer to publish it.
+
+**Always-on skill: `anthropic-skills:writing`.** Load it before writing anything a person will
+read: docs, PR descriptions, commit messages, emails, UI copy, and the closing summary of a
+task. It sets Andrew's voice and the house rules (no dashes in prose, plain verbs, the ask up
+front).
+
+## Name
+
+The product is **Bunkcheck** (lowercase c, decided 13 October 2026; www.bunkcheck.ai). Everything a
+parent, a camp or an assistant sees says Bunkcheck. The repository, the `campfinder` package, table names and
+older docs keep the working name CampFinder; don't rename them.
 
 ## Branches
 
@@ -47,6 +78,15 @@ shared test fake, `leads` and the Pro columns dropped (migration 0013).
 - Only `campfinder/routers/` and `main.py` may import a router; `tests/test_camp_services.py`
   fails otherwise.
 
+## UI
+
+- Pages are built from `frontend/components/ui` (Button, Heading, Text, Section, List, Field,
+  SearchBar, Composer, TrustMark…). Tokens live in `tailwind.config.ts` and `app/globals.css`;
+  use role names (`text-ink`, `bg-surface`, `border-line`), never raw colors or arbitrary values.
+- `npm run check:ui` (also in CI) fails on hex colors, arbitrary values, emoji and uppercase
+  labels outside `components/ui`. Every primitive renders at `/ui`; rules in
+  `components/ui/README.md`. `/kit` is the family info kit, not the UI kit.
+
 ## Schema
 
 - Change the database only with a new `migrations/NNNN_*.sql`; never edit an applied one and
@@ -74,7 +114,7 @@ shared test fake, `leads` and the Pro columns dropped (migration 0013).
   16 with PostGIS (`postgresql-16`, `postgresql-16-postgis-3`), or use `TEST_DATABASE_URL`.
   Household, agent, booking and reminder tests use the one set of in-memory fakes in
   `tests/fakes.py`; give a new table its defaults there.
-- Frontend: `cd frontend && npx tsc --noEmit && npm run build`.
+- Frontend: `cd frontend && npx tsc --noEmit && npm run check:ui && npm run build`.
 - CI (`.github/workflows/test.yml`) runs both on every PR.
 - The listing tool eval: `scripts/run_ingest_eval.sh` (reads `CAMPFINDER_ANTHROPIC_API_KEY`).
   Check the key is set without printing it. The fetcher takes a refusal (401, 403, 429) as the

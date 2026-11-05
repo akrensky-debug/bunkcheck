@@ -1,0 +1,82 @@
+{
+  "slug": "mass-premier-courts-basketball-summer-camps-foxborough",
+  "name": "Mass Premier Courts Basketball Summer Camps",
+  "operator_name": "Mass Premier Courts",
+  "website_url": "https://masspremiercourts.com/basketball/camps/",
+  "email": "basketball@masspremiercourts.com",
+  "phone": "(508) 543-2626",
+  "street_address": "97 Green St",
+  "city": "Foxborough",
+  "state": "MA",
+  "zip": "02035",
+  "camp_type": "specialty",
+  "primary_categories": [
+    "sports"
+  ],
+  "description_short": "Youth basketball camps and clinics at an indoor facility in Foxborough, MA, teaching fundamentals through skill development, drills and game play. Details for the summer camps have not been posted yet.",
+  "activities": [
+    "Basketball skill development",
+    "Drills & exercises",
+    "Game play",
+    "Coaching",
+    "Character development"
+  ],
+  "sources": [
+    {
+      "url": "https://masspremiercourts.com/basketball/camps/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "description_short"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://masspremiercourts.com/basketball/camps/",
+      "kind": "html",
+      "title": "Summer Camps - Mass Premier Courts"
+    },
+    "warnings": [
+      "The page has no camp details yet: it says 'Check back soon for details on our summer camps', but also says 'Summer programs are now on our schedule!'. These two lines contradict each other, so check the camp's 'View all live programs' page.",
+      "No season year is given. The footer copyright reads 2023, so the page may be out of date.",
+      "The page mentions state licensing ('Must comply with regulations of the Massachusetts Department of Public Health and be licensed by the LBOH'). It does not mention ACA accreditation."
+    ],
+    "unknowns": [
+      "Season year and session dates",
+      "Prices / weekly rate",
+      "Age or grade range",
+      "Daily hours and whether extended care is offered",
+      "Registration URL and when registration opens",
+      "Deposit and refund policy",
+      "Financial aid",
+      "Meals",
+      "Transportation",
+      "Whether it is a day camp (likely, since it runs at an indoor facility, but the page does not say)",
+      "Special needs accommodations"
+    ],
+    "low_confidence": [
+      {
+        "field": "camp_type",
+        "confidence": 0.75,
+        "quote": "Basketball youth camps and clinics are typically organized to teach young players the fundamentals of basketball"
+      }
+    ],
+    "errors": [
+      "missing required season_year"
+    ]
+  }
+}

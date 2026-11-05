@@ -1,0 +1,141 @@
+{
+  "slug": "camp-sangamon-for-boys-pittsford",
+  "name": "Camp Sangamon For Boys",
+  "website_url": "https://campsangamon.com/",
+  "email": "darcey@campsangamon.com",
+  "phone": "(802) 665-7505",
+  "street_address": "382 Camp Lane",
+  "city": "Pittsford",
+  "state": "VT",
+  "zip": "05763",
+  "camp_type": "sleepaway",
+  "primary_categories": [
+    "sports",
+    "arts",
+    "nature"
+  ],
+  "age_min": 9,
+  "age_max": 16,
+  "description_short": "Boys' summer camp for ages 9-16 on a lake in central Vermont, near Rutland and Killington. Campers can book two-, three-, four- or five-week sessions, and activities include outdoor pursuits, aquatics, farming, creative arts and sports.",
+  "activities": [
+    "Outdoor pursuits",
+    "Aquatics",
+    "Farming",
+    "Creative arts",
+    "Sports"
+  ],
+  "price_min": 3595,
+  "price_max": 8413,
+  "financial_aid": true,
+  "refund_policy_summary": "For 2027: if camp can't safely open, all deposits and tuition are fully refunded. If your family withdraws after March 15 and before May 1, everything paid beyond the deposit is returned. Cancellations after May 1 get no refund. Deposit is $350 with the application, or $500 for early enrollment by December 31. Early enrollment gets 3% off, with the balance due March 1. Regular enrollment: half the balance is due June 1 and the rest on arrival. Siblings get 3% off each child's tuition.",
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Session 1 (3 weeks)",
+      "start_date": "2027-06-27",
+      "end_date": "2027-07-17",
+      "price": 5047,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 2 (2 weeks)",
+      "start_date": "2027-07-18",
+      "end_date": "2027-07-31",
+      "price": 3595,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 3 (2 weeks)",
+      "start_date": "2027-08-01",
+      "end_date": "2027-08-14",
+      "price": 3595,
+      "availability": "unknown"
+    },
+    {
+      "name": "Sessions 2 & 3 (4 weeks)",
+      "start_date": "2027-07-08",
+      "end_date": "2027-08-14",
+      "price": 6728,
+      "availability": "unknown"
+    },
+    {
+      "name": "Sessions 1 & 2 (5 weeks)",
+      "start_date": "2027-06-27",
+      "end_date": "2027-07-31",
+      "price": 8413,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://campsangamon.com/dates-rates/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "website_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "price_min",
+        "price_max",
+        "financial_aid",
+        "refund_policy_summary",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://campsangamon.com/dates-rates/",
+      "kind": "html",
+      "title": "Dates & Rates - Camp Sangamon For Boys"
+    },
+    "warnings": [
+      "Popup on the page says 'Camper enrollment has begun for summer 2022' — stale banner; the main body lists the 2027 season.",
+      "Sessions 2 & 3 combo is listed as 'July 8 - August 14', but Session 2 starts July 18; the July 8 date is likely a typo for July 18 — confirm with camp.",
+      "Refund policy text appears recycled from an earlier year (asks families to 'consider rolling payments and deposits forward to 2027' within the 2027 policy).",
+      "Two phone numbers: (802) 665-7505 Sept 1–May 31 (Brandon office, 14 Union St, Brandon VT 05733) and 802-483-2862 June 1–Aug 31 (camp). Off-season number recorded.",
+      "Overnight stay not stated outright; sleepaway inferred from multi-week sessions and 'remainder is due on arrival'.",
+      "The page says ACA accredited: check it on acacamps.org and add aca_accredited with aca_source_url"
+    ],
+    "unknowns": [
+      "Session availability",
+      "Whether meals are included (likely for a sleepaway camp, but not stated)",
+      "Transportation to camp",
+      "Online registration/application URL (application form linked but URL not shown)",
+      "Swim/waterfront supervision details",
+      "Special needs accommodations",
+      "Correct start date for the 4-week Sessions 2 & 3 combination",
+      "Whether an early-enrollment rate card PDF has different figures"
+    ],
+    "low_confidence": [
+      {
+        "field": "camp_type",
+        "confidence": 0.75,
+        "quote": "Five Weeks Sessions 1 & 2: June 27 - July 31"
+      },
+      {
+        "field": "primary_categories",
+        "confidence": 0.75,
+        "quote": "Outdoor Pursuits Aquatics Farming Creative Arts Sports"
+      },
+      {
+        "field": "sessions[3]",
+        "confidence": 0.5,
+        "quote": "Sessions 2 & 3: July 8 - August 14 -  $6728"
+      }
+    ],
+    "errors": []
+  }
+}

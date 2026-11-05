@@ -1,0 +1,137 @@
+{
+  "slug": "rwu-s-forensic-science-summer-camp-bristol",
+  "name": "RWU's Forensic Science Summer Camp",
+  "operator_name": "Roger Williams University",
+  "website_url": "https://www.rwu.edu/summer-camps/forensic-science-summer-camp",
+  "registration_url": "https://connect.rwu.edu/register/?id=dd9001ca-229a-4fb3-98c6-13559b5e65a6",
+  "phone": "1-800-458-7144",
+  "street_address": "1 Old Ferry Road",
+  "city": "Bristol",
+  "state": "RI",
+  "zip": "02809",
+  "camp_type": "specialty",
+  "primary_categories": [
+    "STEM",
+    "academic"
+  ],
+  "grade_min": 10,
+  "grade_max": 12,
+  "description_short": "A one-week overnight forensic science camp at Roger Williams University for students entering or in grades 10–12. Students work with RWU forensic scientists on fingerprinting, footwear evidence, chemical analysis and crime scenes in virtual reality, and can use campus recreation and waterfront facilities.",
+  "activities": [
+    "Fingerprint analysis",
+    "Footwear and tire impression evidence",
+    "Forensic chemistry / unknown substance analysis",
+    "Virtual reality crime scene processing",
+    "Bloodstain pattern analysis in VR",
+    "Recreation center",
+    "Sailing center",
+    "Kayaking"
+  ],
+  "price_min": 1995,
+  "price_max": 1995,
+  "meals_included": true,
+  "refund_policy_summary": "$500 deposit secures registration and is fully refundable before April 1 (the page says 2026). The remaining balance is due by May 1 (the page says 2026). The 2027 deadlines have not been confirmed.",
+  "swim_waterfront_notes": "Campers have access to the recreation center, sailing center, kayaks and the RWU waterfront. The page does not describe swim testing or supervision.",
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Session 1",
+      "start_date": "2027-07-11",
+      "end_date": "2027-07-16",
+      "price": 1995,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 2",
+      "start_date": "2027-07-18",
+      "end_date": "2027-07-23",
+      "price": 1995,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.rwu.edu/summer-camps/forensic-science-summer-camp",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "description_short",
+        "price_min",
+        "price_max",
+        "meals_included",
+        "refund_policy_summary",
+        "swim_waterfront_notes",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.rwu.edu/summer-camps/forensic-science-summer-camp",
+      "kind": "html",
+      "title": "RWU's Forensic Science Summer Camp | Roger Williams University"
+    },
+    "warnings": [
+      "The session dates are for 2027, but the deposit refund deadline (April 1, 2026), balance email (April 2, 2026) and final payment date (May 1, 2026) are 2026 dates that have already passed. These are probably left over from last season, so the $1,995 price may not be current for 2027 either.",
+      "Registration is not open yet. The page says 'Registration Coming Soon'.",
+      "The phone number and address are the university's general contacts, not the camp's own."
+    ],
+    "unknowns": [
+      "Age range (only grades are given)",
+      "Whether the $1,995 cost applies to 2027",
+      "2027 deposit refund and payment deadlines",
+      "Date registration opens",
+      "Session availability",
+      "Financial aid or scholarships",
+      "Transportation to campus",
+      "Camp-specific contact email or phone",
+      "Drop-off and pick-up times",
+      "Swim supervision and waterfront safety policies",
+      "Accommodations for special needs",
+      "ACA accreditation"
+    ],
+    "low_confidence": [
+      {
+        "field": "sessions[0].price",
+        "confidence": 0.6,
+        "quote": "Cost: $1,995 This fee includes the cost of tuition, room, and board."
+      },
+      {
+        "field": "refund_policy_summary",
+        "confidence": 0.5,
+        "quote": "This deposit is fully refundable prior to April 1st, 2026."
+      },
+      {
+        "field": "phone",
+        "confidence": 0.6,
+        "quote": "Contact Us 1-800-458-7144"
+      },
+      {
+        "field": "registration_url",
+        "confidence": 0.7,
+        "quote": "Registration Coming Soon"
+      },
+      {
+        "field": "price_min",
+        "confidence": 0.6,
+        "quote": "Cost: $1,995"
+      }
+    ],
+    "errors": []
+  }
+}

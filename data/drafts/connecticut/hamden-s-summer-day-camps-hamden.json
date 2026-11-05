@@ -1,0 +1,79 @@
+{
+  "slug": "hamden-s-summer-day-camps-hamden",
+  "name": "Hamden's Summer Day Camps",
+  "operator_name": "Town of Hamden Recreation Department",
+  "website_url": "https://www.hamden.com/summercamp",
+  "registration_url": "https://www.hamden.com/DocumentCenter/View/12479/2026-Summer-Grid-Registration-pdf",
+  "phone": "203-287-2579",
+  "street_address": "2750 Dixwell Avenue",
+  "city": "Hamden",
+  "state": "CT",
+  "zip": "06518",
+  "camp_type": "day",
+  "description_short": "The Town of Hamden Recreation Department runs several summer day camps. Details for each camp are in a separate PDF (the summer camp grid) linked from this page.",
+  "season_year": 2026,
+  "sources": [
+    {
+      "url": "https://www.hamden.com/summercamp",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "description_short"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.hamden.com/summercamp",
+      "kind": "html",
+      "title": "Hamden's Summer Day Camps | Hamden, CTArrow LeftArrow RightSlideshow Left ArrowSlideshow Right Arrow"
+    },
+    "warnings": [
+      "The only season shown is Summer 2026, and it is already over (today is 2026-10-13). No 2027 information has been posted yet.",
+      "This page is just an index. The camp details (dates, prices, ages, locations) are in linked PDFs that were not part of this source.",
+      "The address given is the Hamden Government Center, which is the Recreation Department's office. The camps may be held somewhere else.",
+      "There are several camps, not just one. Each one may need its own listing once the camp grid PDF has been read."
+    ],
+    "unknowns": [
+      "Session dates",
+      "Prices / weekly rate",
+      "Age or grade ranges",
+      "Camp locations",
+      "Activities offered at each camp",
+      "Extended care (before/after care)",
+      "Meals",
+      "Transportation",
+      "Financial aid",
+      "Deposit and refund policy",
+      "Swim/waterfront details",
+      "Special needs accommodations",
+      "ACA accreditation",
+      "Registration opening date for 2027",
+      "General email address"
+    ],
+    "low_confidence": [
+      {
+        "field": "street_address",
+        "confidence": 0.7,
+        "quote": "Hamden Government Center 2750 Dixwell Avenue Hamden, CT 06518"
+      },
+      {
+        "field": "registration_url",
+        "confidence": 0.6,
+        "quote": "2026 Summer Grid Registration pdf"
+      }
+    ],
+    "errors": []
+  }
+}

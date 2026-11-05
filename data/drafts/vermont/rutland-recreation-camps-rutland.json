@@ -1,0 +1,107 @@
+{
+  "slug": "rutland-recreation-camps-rutland",
+  "name": "Rutland Recreation Camps",
+  "operator_name": "Rutland Recreation Department",
+  "website_url": "https://www.rutlandrec.com/recreationcamps",
+  "email": "info@rutlandrec.com",
+  "phone": "802-773-1822",
+  "street_address": "134 Community Drive",
+  "city": "Rutland",
+  "state": "VT",
+  "zip": "05701",
+  "camp_type": "day",
+  "primary_categories": [
+    "sports",
+    "arts",
+    "performing_arts"
+  ],
+  "description_short": "The Rutland Recreation Department in Rutland, Vermont runs several camps and classes. These include summer day camps (Preschool Camp, Camp Maple Leaf and Camp Green Mountain), theatre, sports, art and skateboard camps, and February and April break camps for grades K-6.",
+  "activities": [
+    "Summer day camps",
+    "Preschool camp",
+    "Theatre",
+    "Skateboarding",
+    "Sports",
+    "Art",
+    "Leadership (Rising Leaders)",
+    "Babysitter training (CPR, First Aid)"
+  ],
+  "financial_aid": true,
+  "sources": [
+    {
+      "url": "https://www.rutlandrec.com/recreationcamps",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "description_short",
+        "financial_aid"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.rutlandrec.com/recreationcamps",
+      "kind": "html",
+      "title": "Recreation Camps —  rutlandrec.com"
+    },
+    "warnings": [
+      "This is an overview page that lists many separate programs (summer day camps, theatre, sports, art, skateboard, break camps, babysitter training). It is not one camp's page, and none of the programs list dates, prices or sessions.",
+      "The page does not show a season year, so season_year is left blank.",
+      "Several programs on this page (babysitter training, February and April break camps) are not summer camps.",
+      "The only registration link found is attached to the February Break Camp 'READ MORE' entry (vermontsystems.com). It was not used as the registration link for the summer camps."
+    ],
+    "unknowns": [
+      "Season year and session dates for each camp",
+      "Prices or weekly rates",
+      "Age or grade ranges for the summer day camps (only the break camps say grades K-6)",
+      "Where each camp takes place",
+      "Hours and whether before or after care is offered",
+      "Whether meals are included",
+      "Details of the refund policy (the page only links to 'Refund Policies and Requests')",
+      "Who qualifies for the scholarship program",
+      "Registration opening dates and availability",
+      "Whether there is swimming or waterfront activity",
+      "Whether a deposit is required",
+      "Whether transportation is provided",
+      "ACA accreditation"
+    ],
+    "low_confidence": [
+      {
+        "field": "name",
+        "confidence": 0.6,
+        "quote": "Summer Day Camps ... Preschool Camp, Camp Maple Leaf, and Camp Green Mountain!"
+      },
+      {
+        "field": "camp_type",
+        "confidence": 0.7,
+        "quote": "Learn more about our Summer Day Camps!"
+      },
+      {
+        "field": "primary_categories",
+        "confidence": 0.75,
+        "quote": "Theatre Summer Camps ... Summer Sports Camps Art Camps"
+      },
+      {
+        "field": "financial_aid",
+        "confidence": 0.6,
+        "quote": "Scholarship Program"
+      }
+    ],
+    "errors": [
+      "missing required season_year"
+    ]
+  }
+}

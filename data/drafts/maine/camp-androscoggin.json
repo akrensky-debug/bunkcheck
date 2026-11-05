@@ -1,0 +1,78 @@
+{
+  "slug": "camp-androscoggin",
+  "name": "Camp Androscoggin",
+  "website_url": "https://www.campandro.com/",
+  "city": null,
+  "state": null,
+  "zip": null,
+  "camp_type": "sleepaway",
+  "description_short": "An overnight summer camp for boys. For 2027 it offers a seven-week full session or a four-week session at the start of the summer, with all-inclusive tuition.",
+  "price_min": 12000,
+  "price_max": 18300,
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Full Session",
+      "start_date": "2027-06-27",
+      "end_date": "2027-08-13",
+      "price": 18300,
+      "availability": "unknown"
+    },
+    {
+      "name": "Four-Week Session",
+      "start_date": "2027-06-27",
+      "end_date": "2027-07-25",
+      "price": 12000,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.campandro.com/for-parents/dates-rates/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "website_url",
+        "camp_type",
+        "description_short",
+        "price_min",
+        "price_max",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.campandro.com/for-parents/dates-rates/",
+      "kind": "html",
+      "title": "Dates & Rates - Camp Androscoggin"
+    },
+    "warnings": [
+      "Only the Dates & Rates page was read, so the program, location and age details are missing.",
+      "The four-week session is only available at the start of the summer. Campers in it can extend to the full season.",
+      "Visiting days (July 23 and 24) are listed for both sessions. Rookie Days (Thursday, July 22 and Saturday, July 31, 9:45-1:30) are tour/trial days for prospective campers, not bookable sessions.",
+      "The page says 'Fully Accredited' but does not name the accrediting body, so aca_accredited is left null."
+    ],
+    "unknowns": [
+      "Camper age range / grades",
+      "Location (street address, city, state, zip)",
+      "Phone and email",
+      "Registration URL and when registration opens",
+      "Session availability",
+      "Deposit, refund policy and financial aid",
+      "Which body accredits the camp (page says only 'Fully Accredited'; ACA not named)",
+      "What 'all-inclusive' tuition covers (meals, laundry, trips, transportation)",
+      "Activities offered",
+      "Swim/waterfront details",
+      "Support for special needs"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "missing required city",
+      "missing required state",
+      "missing required zip"
+    ]
+  }
+}

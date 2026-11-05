@@ -1,0 +1,107 @@
+{
+  "slug": "camp-caribou-winslow",
+  "name": "Camp Caribou",
+  "website_url": "https://www.campcaribou.com/",
+  "registration_url": "https://caribou.campintouch.com/ui/forms/application/camper/App",
+  "phone": "207.872.9313",
+  "street_address": "1 Caribou Way",
+  "city": "Winslow",
+  "state": "ME",
+  "zip": "04901",
+  "camp_type": "sleepaway",
+  "primary_categories": [
+    "sports",
+    "arts"
+  ],
+  "description_short": "Overnight summer camp in Winslow, Maine, where campers live in cabins. You can book the full 2027 season or one of two sessions of about three and a half weeks each, with land and water sports, a ropes course, creative arts and trips.",
+  "activities": [
+    "Land sports",
+    "Water sports",
+    "Ropes course",
+    "Creative arts",
+    "Trips"
+  ],
+  "price_min": 10950,
+  "price_max": 17700,
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Full Season",
+      "start_date": "2027-06-25",
+      "end_date": "2027-08-11",
+      "price": 17700,
+      "availability": "unknown"
+    },
+    {
+      "name": "1st Session",
+      "start_date": "2027-06-25",
+      "end_date": "2027-07-18",
+      "price": 10950,
+      "availability": "unknown"
+    },
+    {
+      "name": "2nd Session",
+      "start_date": "2027-07-19",
+      "end_date": "2027-08-11",
+      "price": 10950,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.campcaribou.com/future-families/dates-rates/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "description_short",
+        "price_min",
+        "price_max",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.campcaribou.com/future-families/dates-rates/",
+      "kind": "html",
+      "title": "Dates & Rates – Camp Caribou"
+    },
+    "warnings": [
+      "The page lists several phone numbers: 508.358.5050 in the header, 207.872.9313 for summer and winter, and toll-free 1-888-305-CAMP. 207.872.9313 is recorded.",
+      "The winter office is at PO Box 129, Wayland, MA 01778. The camp itself is in Winslow, ME.",
+      "Prices are shown with '~', which may mean they are approximate."
+    ],
+    "unknowns": [
+      "Age or grade range of campers (the grade dropdown on the inquiry form is not an eligibility statement)",
+      "Whether the camp is boys-only, girls-only or coed",
+      "Session availability and when registration opens",
+      "Deposit amount and refund policy",
+      "Financial aid details (the menu has a 'Campership Initiative' link, but this page gives no details)",
+      "Transportation to camp",
+      "Swim and waterfront details",
+      "Whether the prices include extras such as trips, laundry or the camp store",
+      "Email address",
+      "ACA accreditation"
+    ],
+    "low_confidence": [
+      {
+        "field": "primary_categories",
+        "confidence": 0.75,
+        "quote": "Land Sports Water Sports Ropes Course Creative Arts"
+      }
+    ],
+    "errors": []
+  }
+}

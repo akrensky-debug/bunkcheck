@@ -1,0 +1,184 @@
+{
+  "slug": "hanover-parks-and-recreation-camps-hanover",
+  "name": "Hanover Parks & Recreation Camps",
+  "operator_name": "Hanover Parks & Recreation",
+  "website_url": "https://www.hanovernh.org/716/Camps",
+  "registration_url": "https://hanovernh.perfectmind.com/SocialSite/MemberRegistration/MemberSignIn",
+  "phone": "603-643-2411",
+  "city": "Hanover",
+  "state": "NH",
+  "zip": null,
+  "camp_type": "day",
+  "age_min": 2,
+  "grade_max": 5,
+  "description_short": "Town-run day camps for preschoolers (ages 2-4) and children entering kindergarten through grade 5. There are 6 themed summer weeks, 2 August minicamps, and weeklong camps during the February and April school vacations.",
+  "activities": [
+    "Themed indoor and outdoor activities",
+    "Time at Storrs Pond",
+    "Special events",
+    "Field trips",
+    "Arts and crafts",
+    "Free play",
+    "Gym time",
+    "Walks to a local park",
+    "Library trips",
+    "Outdoor games",
+    "Water activities",
+    "Mink Brook outdoor adventures"
+  ],
+  "price_per_week": 250,
+  "price_min": 55,
+  "price_max": 325,
+  "swim_waterfront_notes": "Each summer week includes time at Storrs Pond. The Outdoor Adventure minicamp visits Mink Brook every day and includes water activities. The page gives no details on swim instruction, swim tests or lifeguarding.",
+  "season_year": 2027,
+  "price_per": "week",
+  "sessions": [
+    {
+      "name": "February School Vacation Minicamp (K-5), resident rate",
+      "start_date": "2027-02-22",
+      "end_date": "2027-02-26",
+      "price": 275,
+      "availability": "unknown"
+    },
+    {
+      "name": "April School Vacation Minicamp (K-5), resident rate",
+      "start_date": "2027-04-19",
+      "end_date": "2027-04-23",
+      "price": 275,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.hanovernh.org/716/Camps",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "city",
+        "state",
+        "camp_type",
+        "activities",
+        "age_min",
+        "grade_max",
+        "description_short",
+        "price_min",
+        "price_max",
+        "price_per_week",
+        "price_per",
+        "swim_waterfront_notes",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.hanovernh.org/716/Camps",
+      "kind": "html",
+      "title": "Camps | Hanover, NHArrow LeftArrow RightSlideshow Left ArrowSlideshow Right Arrow"
+    },
+    "warnings": [
+      "This is the Town of Hanover website (Parks & Recreation), not a standalone camp site. The only address shown is Town Hall's, not the camp's.",
+      "The page mixes seasons: it mentions 2027 camper contact forms, but the minicamps still say \"2026 Dates: TBA\" and the schedules are labeled 2026 (\"2027 coming soon\"). Fees may be 2026 rates.",
+      "The February 22-26 and April 19-23 vacation camp dates have no year. They were recorded as 2027 because those dates fall Monday-Friday in 2027 (not in 2026), and today is Oct 2026.",
+      "Session prices use the resident rate. Non-residents pay $25 more ($275/week summer, $325 August minicamps, $300 vacation minicamps).",
+      "The PLAY price is the 5-day rate. 3-day ($80) and 2-day ($55) options also exist. PLAY is a half day (8:30am-12:30pm).",
+      "Summer registration_opens_at is calculated from \"2nd Friday in January\" (resident) = 2027-01-08. Non-residents open on the 4th Friday = 2027-01-22. It's assumed this also covers the August minicamps.",
+      "The six summer weeks are not listed one by one because their dates are TBA. Circle H/Dragonfly sessions stand for one weekly booking each.",
+      "Grades are the grade entering in the fall. Registration requires a Camper Contact Form (accepted from Dec 1) and an approved 2027 Summer Camp Membership in Xplor.",
+      "5 sessions without full dates were left out"
+    ],
+    "unknowns": [
+      "2027 summer camp dates (all listed as TBA)",
+      "Exact street addresses of camp locations (Richmond Middle School, RWB Community Center, Tenney Park)",
+      "Whether lunch or snacks are provided",
+      "Whether before/after care or extended hours are available",
+      "Transportation availability",
+      "Refund/cancellation policy details (in a linked Camp Cancellation Policy document that was not read)",
+      "Financial aid or scholarships",
+      "Deposit requirements",
+      "Whether the posted fees are the 2027 rates",
+      "Registration open date for the February/April 2027 vacation minicamps",
+      "Special needs accommodations",
+      "Swim instruction/lifeguard details at Storrs Pond",
+      "ACA accreditation",
+      "Session availability/capacity",
+      "Contact email"
+    ],
+    "low_confidence": [
+      {
+        "field": "price_per_week",
+        "confidence": 0.65,
+        "quote": "Weekly Fees: Resident $250; Non-Resident $275"
+      },
+      {
+        "field": "price_min",
+        "confidence": 0.6,
+        "quote": "Fees: 5 Days $125; 3 Days $80; 2 Days $55"
+      },
+      {
+        "field": "price_max",
+        "confidence": 0.6,
+        "quote": "Fees: Resident-$300   Non-Resident-$325"
+      },
+      {
+        "field": "sessions[0].price",
+        "confidence": 0.6,
+        "quote": "PLAY ... Fees: 5 Days $125; 3 Days $80; 2 Days $55"
+      },
+      {
+        "field": "sessions[0].registration_opens_at",
+        "confidence": 0.6,
+        "quote": "Residents the 2nd Friday in January at 8am; Non-residents the 4th Friday in January at 9am"
+      },
+      {
+        "field": "sessions[1].price",
+        "confidence": 0.6,
+        "quote": "Weekly Fees: Resident $250; Non-Resident $275"
+      },
+      {
+        "field": "sessions[2].price",
+        "confidence": 0.6,
+        "quote": "Weekly Fees: Resident $250; Non-Resident $275"
+      },
+      {
+        "field": "sessions[3].price",
+        "confidence": 0.55,
+        "quote": "Camp Quest ... Fees: Resident-$300   Non-Resident-$325"
+      },
+      {
+        "field": "sessions[4].price",
+        "confidence": 0.55,
+        "quote": "Outdoor Adventure ... Fees: Resident-$300   Non-Resident-$325"
+      },
+      {
+        "field": "sessions[5].start_date",
+        "confidence": 0.7,
+        "quote": "February 22-26 Theme: TBA"
+      },
+      {
+        "field": "sessions[5].price",
+        "confidence": 0.75,
+        "quote": "Fees: Resident-$275  Non-Resident-$300"
+      },
+      {
+        "field": "sessions[6].start_date",
+        "confidence": 0.7,
+        "quote": "April 19-23 Theme: TBA"
+      },
+      {
+        "field": "sessions[6].price",
+        "confidence": 0.75,
+        "quote": "Fees: Resident-$275  Non-Resident-$300"
+      }
+    ],
+    "errors": [
+      "missing required zip"
+    ]
+  }
+}

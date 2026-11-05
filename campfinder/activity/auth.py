@@ -25,7 +25,7 @@ class ApiClient:
     name: str
     rate_limit_per_minute: int
     may_confirm_for_parent: bool = False  # inquiries: contracted partners may say the parent agreed (anonymous questions only)
-    may_share_contact: bool = False       # inquiries: stays false for every key (decided: contact only on CampFinder)
+    may_share_contact: bool = False       # inquiries: stays false for every key (decided: contact only on Bunkcheck)
 
     @property
     def channel(self) -> str:

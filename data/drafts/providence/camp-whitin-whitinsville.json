@@ -1,0 +1,101 @@
+{
+  "slug": "camp-whitin-whitinsville",
+  "name": "Camp Whitin",
+  "operator_name": "Whitin Community Center",
+  "website_url": "https://www.whitincommunitycenter.com/our-community/camp-whitin/",
+  "registration_url": "https://operations.daxko.com/Online/5309/ProgramsV2/Home.mvc",
+  "email": "campwhitin@ourgym.org",
+  "phone": "508-234-8184",
+  "street_address": "60 Main Street",
+  "city": "Whitinsville",
+  "state": "MA",
+  "zip": "01588",
+  "camp_type": "day",
+  "primary_categories": [
+    "sports"
+  ],
+  "age_min": 4,
+  "age_max": 13,
+  "description_short": "Weekly co-ed day camps run by the Whitin Community Center in Whitinsville, MA. Children ages 7-13 choose sport or activity camps with daily swimming, and children ages 4-6 attend Mini camps. Camp runs 9:00am-3:00pm, Monday-Friday.",
+  "activities": [
+    "Sports",
+    "Swimming",
+    "Outdoor activities in Whitin Park",
+    "Educational activities",
+    "Crafts and games (extended care)"
+  ],
+  "financial_aid": true,
+  "extended_care": true,
+  "swim_waterfront_notes": "Campers ages 7-13 can swim daily in the WCC Competition Pool. Mini camps (ages 4-6) do not swim.",
+  "season_year": 2026,
+  "sources": [
+    {
+      "url": "https://www.whitincommunitycenter.com/our-community/camp-whitin/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "extended_care",
+        "financial_aid",
+        "swim_waterfront_notes"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.whitincommunitycenter.com/our-community/camp-whitin/",
+      "kind": "html",
+      "title": "Camp Whitin – Whitin Community Center"
+    },
+    "warnings": [
+      "Today is 2026-10-13, so the 2026 season on this page is over. The page has no information about 2027 yet.",
+      "Session dates and prices are not on the page itself. They are in linked 2026 brochures and PDFs (Camp Weeks, Mini Camps, Extended Care) that were not part of this source text.",
+      "The page conflicts with itself on ages: the introduction says 4-13, but the Camp Goals section says 7-13. Ages 4-6 are served by the separate Mini camps.",
+      "The page conflicts with itself on history: it says both '40 years' and 'Over 30 years of experience'.",
+      "The scholarship application is labeled 2025, so it may be out of date.",
+      "Awards listed on the page are from 2019 and 2021."
+    ],
+    "unknowns": [
+      "2027 session dates (the page mentions nine weekly camps)",
+      "Weekly prices for Sport/Activity, Mini camps, and Extended Care",
+      "Whether members and non-members pay different rates",
+      "Refund/cancellation policy (in a separate 2026 document)",
+      "Whether a deposit is required",
+      "Whether lunch is provided (only free pizza on Fridays is mentioned)",
+      "Transportation",
+      "When 2027 registration opens",
+      "ACA accreditation",
+      "How the camp accommodates special needs",
+      "Which themes or activities are offered each week"
+    ],
+    "low_confidence": [
+      {
+        "field": "registration_url",
+        "confidence": 0.7,
+        "quote": "Register"
+      },
+      {
+        "field": "activities",
+        "confidence": 0.75,
+        "quote": "Each day will include a new craft, game, and physical activity"
+      }
+    ],
+    "errors": []
+  }
+}

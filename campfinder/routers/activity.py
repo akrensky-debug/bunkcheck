@@ -226,7 +226,7 @@ class InquiryCreate(BaseModel):
                           description="The parent's question, in their words. No names or contact details.")
     kit_share_token: str | None = Field(
         default=None, max_length=300,
-        description="Token (or link) of an info kit package the parent already made on CampFinder.")
+        description="Token (or link) of an info kit package the parent already made on Bunkcheck.")
     user_ref: str | None = Field(
         default=None, max_length=200,
         description="Your own opaque, stable id for the parent (not an email or name). Hashed; only used to "
@@ -257,7 +257,7 @@ def _inquiry_error(e: inquiries.InquiryError) -> HTTPException:
 async def create_inquiry(body: InquiryCreate, client: ApiClient = Depends(require_api_client)) -> InquiryCreated:
     """
     Creates a **pending** inquiry and returns a preview of exactly what the camp will read. Nothing
-    is sent until the parent confirms at `confirm_url` on CampFinder. Read the camp's answer with
+    is sent until the parent confirms at `confirm_url` on Bunkcheck. Read the camp's answer with
     `GET /inquiries/{id}` and the returned token. We never return the parent's identity to you.
     """
     try:
@@ -286,7 +286,7 @@ async def get_inquiry(inquiry_id: UUID, x_inquiry_token: str = Header(descriptio
 async def confirm_inquiry(inquiry_id: UUID, body: InquiryConfirm,
                           x_inquiry_token: str = Header(description="The token from POST /inquiries."),
                           client: ApiClient = Depends(require_api_client)) -> dict:
-    """Only for contracted partners whose key CampFinder has allowed to confirm in their own app,
+    """Only for contracted partners whose key Bunkcheck has allowed to confirm in their own app,
     and only for an anonymous question. An inquiry with an info kit package is always confirmed
     by the parent at `confirm_url`; so is every inquiry from any other key."""
     if not body.parent_agreed:

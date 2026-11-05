@@ -1,0 +1,97 @@
+{
+  "slug": "camp-wetu-bristol",
+  "name": "Camp Wetu",
+  "operator_name": "Mount Hope Farm",
+  "website_url": "https://www.mounthopefarm.org/camp-wetu",
+  "phone": "401-254-1745",
+  "street_address": "250 Metacom Ave",
+  "city": "Bristol",
+  "state": "RI",
+  "zip": "02809",
+  "primary_categories": [
+    "nature"
+  ],
+  "description_short": "Camp Wetu is a summer camp at Mount Hope Farm in Bristol, RI. The 2026 season ran six weeks and included outdoor adventures, water days and creative activities.",
+  "activities": [
+    "Outdoor adventures",
+    "Water days",
+    "Creative activities"
+  ],
+  "season_year": 2026,
+  "sources": [
+    {
+      "url": "https://www.mounthopefarm.org/camp-wetu",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "primary_categories",
+        "activities",
+        "description_short"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.mounthopefarm.org/camp-wetu",
+      "kind": "html",
+      "title": "Camp Wetu | Join the Adventure - Register Today — Mount Hope Farm"
+    },
+    "warnings": [
+      "This page only covers the season that just ended (Summer 2026). It has no dates, prices or registration details for 2027: \"More information about dates, registration, and plans for next summer will be posted here as they become available.\"",
+      "season_year is set to 2026, the only season shown. That season is over.",
+      "The 'Nature' category is a guess based on the outdoor farm setting. The page does not name a category.",
+      "The phone number is the general Mount Hope Farm number from the site footer. It may not be a direct line to the camp."
+    ],
+    "unknowns": [
+      "2027 session dates",
+      "2027 prices / weekly rate",
+      "Registration open date and registration URL",
+      "Age or grade range",
+      "Camp type (day vs. overnight) and daily hours",
+      "Extended care",
+      "Meals included",
+      "Transportation",
+      "Financial aid",
+      "Deposit and refund policy",
+      "Swim/waterfront details (page mentions 'water days')",
+      "ACA accreditation",
+      "Special needs accommodations",
+      "Camp email address (page only shows an 'email us' link)"
+    ],
+    "low_confidence": [
+      {
+        "field": "phone",
+        "confidence": 0.75,
+        "quote": "401-254-1745"
+      },
+      {
+        "field": "activities",
+        "confidence": 0.7,
+        "quote": "filled with outdoor adventures, new discoveries, water days, creative activities"
+      },
+      {
+        "field": "primary_categories",
+        "confidence": 0.5,
+        "quote": "outdoor adventures, new discoveries, water days"
+      },
+      {
+        "field": "description_short",
+        "confidence": 0.7,
+        "quote": "We spent six wonderful weeks at Mount Hope Farm filled with outdoor adventures, new discoveries, water days, creative activities"
+      }
+    ],
+    "errors": [
+      "missing required camp_type",
+      "camp_type must be one of ['day', 'sleepaway', 'specialty']"
+    ]
+  }
+}

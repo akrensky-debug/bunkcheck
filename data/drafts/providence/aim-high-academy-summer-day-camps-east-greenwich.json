@@ -1,0 +1,90 @@
+{
+  "slug": "aim-high-academy-summer-day-camps-east-greenwich",
+  "name": "Aim High Academy Summer Day Camps",
+  "operator_name": "Aim High Academy",
+  "website_url": "https://www.aimhighacademy.com/camps.aspx",
+  "email": "info@aimhighacademy.com",
+  "phone": "(401) 886-7827",
+  "street_address": "3355 South County Trail",
+  "city": "East Greenwich",
+  "state": "RI",
+  "zip": "02818",
+  "camp_type": "day",
+  "primary_categories": [
+    "sports"
+  ],
+  "description_short": "Aim High Academy, a gymnastics and education center in East Greenwich, RI, runs summer day camps with a mix of activities. It also runs week-long (Monday to Friday) gymnastics training camps for girls who do recreational gymnastics, and day camps during school vacations.",
+  "activities": [
+    "gymnastics",
+    "arts & crafts",
+    "games",
+    "adventure play"
+  ],
+  "sources": [
+    {
+      "url": "https://www.aimhighacademy.com/camps.aspx",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "description_short"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.aimhighacademy.com/camps.aspx",
+      "kind": "html",
+      "title": "Aim High Academy - Camp Programs"
+    },
+    "warnings": [
+      "This is an overview page linking to three programs (Summer Day Camps, Gymnastics Training Camp, School's Out Vacation Camp). It has no dates, prices or ages. The details are on the 'Learn more' pages, which were not provided.",
+      "No season year is stated. Copyright reads 2009-2026, so it is unknown whether any 2027 information has been posted.",
+      "The activities listed (arts & crafts, games, gymnastics, adventure play) are described for the School's Out Vacation Camp. They may not match the summer camp exactly.",
+      "The Gymnastics Training Camp is a single-focus program for girls only, separate from the general day camp."
+    ],
+    "unknowns": [
+      "Season year and session dates for summer 2027",
+      "Prices (weekly or per session) and whether a deposit is required",
+      "Age or grade ranges for each camp program",
+      "Daily hours and whether before- or after-care is offered",
+      "Whether meals or snacks are included",
+      "Specific activities in the Summer Day Camp (the activity list given is for the School's Out Vacation Camp)",
+      "Registration opening date and registration link",
+      "Refund policy",
+      "Financial aid",
+      "Swimming or waterfront activities",
+      "Transportation",
+      "ACA accreditation",
+      "Accommodations for special needs",
+      "Details of the Gymnastics Training Camp (ages, skill level, dates, price)"
+    ],
+    "low_confidence": [
+      {
+        "field": "activities",
+        "confidence": 0.6,
+        "quote": "We offer a balance of indoor and outdoor activities including arts & crafts, games, gymnastics, and adventure play."
+      },
+      {
+        "field": "primary_categories",
+        "confidence": 0.7,
+        "quote": "Gymnastics Training Camps for female recreational gymnasts"
+      }
+    ],
+    "errors": [
+      "missing required season_year"
+    ]
+  }
+}

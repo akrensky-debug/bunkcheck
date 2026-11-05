@@ -1,0 +1,73 @@
+{
+  "slug": "horizons-summer-camp-brunswick",
+  "name": "Horizons Summer Camp",
+  "operator_name": "Adaptive Outdoor Education Center (AOEC)",
+  "website_url": "https://www.adaptiveoutdooreducationcenter.org/camps",
+  "email": "infoAOEC@gmail.com",
+  "phone": "207-237-2676",
+  "street_address": "675 Old Portland Rd",
+  "city": "Brunswick",
+  "state": "ME",
+  "zip": "04011",
+  "primary_categories": [
+    "special_needs",
+    "nature"
+  ],
+  "description_short": "A summer camp at AOEC's Brunswick, Maine location for school-aged youth with autism. Each camper is paired with a 1:1 volunteer support person.",
+  "special_needs_notes": "Designed for school-aged youth with autism. Each camper gets a 1:1 volunteer support person. Number of spots depends on how many volunteers sign up. A camp social story is offered.",
+  "season_year": 2027,
+  "sources": [
+    {
+      "url": "https://www.adaptiveoutdooreducationcenter.org/camps",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "primary_categories",
+        "description_short",
+        "special_needs_notes"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.adaptiveoutdooreducationcenter.org/camps",
+      "kind": "html",
+      "title": "Camps | AOEC"
+    },
+    "warnings": [
+      "2027 dates are not announced yet ('2027 DATES TBD!'). No sessions recorded.",
+      "The page lists a second program, the Horizons Inclusion Camp in Portland, ME. It is run with Maine Outdoor Kids and Evo Rock and Fitness (2 weeks, 2027 dates TBD). Spots are limited to children who have done other AOEC programs. This listing does not include it.",
+      "Families are asked to email to learn more or join the waitlist, so spots may only be available through the waitlist.",
+      "The street address is AOEC's Brunswick physical address from the page footer. The page says camp is 'based at our AOEC Brunswick location' but does not give a camp-specific address."
+    ],
+    "unknowns": [
+      "2027 session dates (listed as TBD)",
+      "Price / cost to attend",
+      "Exact age or grade range (only 'school-aged')",
+      "Whether it is a day camp or overnight",
+      "Daily schedule and hours",
+      "Activities offered",
+      "Whether spots are open now or waitlist only",
+      "Registration date and process",
+      "Financial aid",
+      "Refund policy",
+      "Meals, extended care, transportation",
+      "Swimming / waterfront details"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "missing required camp_type",
+      "camp_type must be one of ['day', 'sleepaway', 'specialty']"
+    ]
+  }
+}

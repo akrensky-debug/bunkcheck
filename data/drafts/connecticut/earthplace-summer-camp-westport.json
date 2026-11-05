@@ -1,0 +1,65 @@
+{
+  "slug": "earthplace-summer-camp-westport",
+  "name": "Earthplace Summer Camp",
+  "operator_name": "Earthplace",
+  "website_url": "https://earthplace.org/summer-camp/",
+  "phone": "203-557-4400",
+  "street_address": "10 Woodside Lane",
+  "city": "Westport",
+  "state": "CT",
+  "zip": "06880",
+  "sources": [
+    {
+      "url": "https://earthplace.org/summer-camp/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://earthplace.org/summer-camp/",
+      "kind": "html",
+      "title": "Summer Camp – Earthplace"
+    },
+    "warnings": [
+      "The text we got from the page is only the site menu, the newsletter form and the footer. None of the actual camp content came through (dates, prices, ages, description). It may load with JavaScript or be in images.",
+      "There's no season year anywhere on the page. The only date is the footer '© 2025'. It's unclear whether 2027 information has been posted yet.",
+      "The organization's email address is hidden on the page ('[email protected]'), so it wasn't recorded.",
+      "The street address and phone number are for Earthplace as an organization (from the site footer). They may not be where the camp itself meets."
+    ],
+    "unknowns": [
+      "2027 session dates",
+      "Prices and weekly rate",
+      "Age or grade range",
+      "Camp type (day or overnight)",
+      "Activities and program focus",
+      "Daily hours and before/after care",
+      "Registration opening date and link",
+      "Deposit and refund policy",
+      "Financial aid",
+      "Lunch and meals",
+      "Transportation",
+      "Accommodations for special needs",
+      "Swimming or waterfront activities",
+      "ACA accreditation",
+      "Camp email address"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "missing required camp_type",
+      "missing required season_year",
+      "camp_type must be one of ['day', 'sleepaway', 'specialty']"
+    ]
+  }
+}

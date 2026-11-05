@@ -1,0 +1,99 @@
+{
+  "slug": "summer-art-camp-somerset",
+  "name": "Summer Art Camp",
+  "operator_name": "Art Pop Club",
+  "website_url": "https://www.artpopclub.com/summerartcamp",
+  "phone": "508-567-5761",
+  "street_address": "1115 GAR Highway",
+  "city": "Somerset",
+  "state": "MA",
+  "zip": null,
+  "camp_type": "specialty",
+  "primary_categories": [
+    "arts"
+  ],
+  "age_min": 6,
+  "age_max": 11,
+  "description_short": "A week-long morning art camp (9:00am–12pm) for ages 6–11 at the Art Pop studio in Somerset, MA. You can pay for an \"Open Create\" add-on that runs until 3:00pm.",
+  "activities": [
+    "Art"
+  ],
+  "extended_care": true,
+  "season_year": 2026,
+  "sources": [
+    {
+      "url": "https://www.artpopclub.com/summerartcamp",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "extended_care"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.artpopclub.com/summerartcamp",
+      "kind": "html",
+      "title": "Summer Art Camp | Art Pop"
+    },
+    "warnings": [
+      "This page only shows the 2026 season, which has already happened (today is 2026-10-13). No 2027 information is listed.",
+      "The page lists no dates or prices. The session names come from shop product tiles ('Quick View') and may not be complete.",
+      "The page says 'Best for Ages 6-11', so the age range may be a recommendation rather than a strict limit.",
+      "Labeled a specialty camp because it focuses only on art. It is a half-day day camp (9am–12pm), and campers go home each day.",
+      "2 sessions without full dates were left out"
+    ],
+    "unknowns": [
+      "2027 session dates",
+      "Weekly price and price of the Open Create add-on",
+      "Number of weeks offered and the dates for each",
+      "When registration opens and the registration link",
+      "Email address",
+      "Whether a deposit is required, and the refund policy",
+      "Whether financial aid is offered",
+      "Whether snacks or meals are included",
+      "Whether the camp can support children with special needs",
+      "Whether 'Adventure Makers Expedition' is a separate themed week and how it differs from the whole-week option",
+      "Zip code"
+    ],
+    "low_confidence": [
+      {
+        "field": "extended_care",
+        "confidence": 0.7,
+        "quote": "Open Create Add on till 3:00pm"
+      },
+      {
+        "field": "camp_type",
+        "confidence": 0.7,
+        "quote": "A fun and creative week of Art!"
+      },
+      {
+        "field": "sessions[0].name",
+        "confidence": 0.6,
+        "quote": "Summer Camp - Adventure Makers Expedition"
+      },
+      {
+        "field": "sessions[1].name",
+        "confidence": 0.6,
+        "quote": "2026 Summer Camp - Whole Week"
+      }
+    ],
+    "errors": [
+      "missing required zip"
+    ]
+  }
+}

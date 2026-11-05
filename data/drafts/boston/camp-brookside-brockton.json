@@ -1,0 +1,138 @@
+{
+  "slug": "camp-brookside-brockton",
+  "name": "Camp Brookside",
+  "operator_name": "Boys & Girls Clubs of Metro South",
+  "website_url": "https://www.bgcmetrosouth.org/campbrookside",
+  "phone": "(508) 584-5209",
+  "street_address": "233 Warren Avenue",
+  "city": "Brockton",
+  "state": "MA",
+  "zip": "02301",
+  "camp_type": "day",
+  "age_min": 5,
+  "age_max": 12,
+  "description_short": "An indoor summer day camp for ages 5-12 at the Brockton Clubhouse, held Monday-Friday from 9:00 AM to 4:00 PM, with a different theme each week. Children must be Club members (or register as members) to attend.",
+  "extended_care": true,
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Session B: Holidays",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-03",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session C: World Cup",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session D: Superheroes",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session E: Disney",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session F: Outer Space",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session G: Animal Day",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session H: Hollywood",
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-14",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session I: Best of: Camp Brookside",
+      "start_date": "2026-08-17",
+      "end_date": "2026-08-21",
+      "price": null,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.bgcmetrosouth.org/campbrookside",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "age_min",
+        "age_max",
+        "description_short",
+        "extended_care",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.bgcmetrosouth.org/campbrookside",
+      "kind": "html",
+      "title": "Boys & Girls Clubs of Metro South"
+    },
+    "warnings": [
+      "The page only shows the 2026 season, which is already over (today is 2026-10-13). Nothing is posted yet for 2027.",
+      "Session A (June 22-26, Pirates & Mermaids) was cancelled and is left out: 'Session A (6/22-6/26) has been cancelled due to the extended school year resulting from significant snow closures.'",
+      "The bus transportation mentioned on the page is for Camp Riverside in Taunton, not for Camp Brookside.",
+      "The page names 'LaKeisha N. Franklin, Executive Director' as the camp contact, but gives no email for her."
+    ],
+    "unknowns": [
+      "2027 dates, sessions and registration opening date",
+      "Weekly price, membership fee and any extended-hours fee",
+      "Registration URL (the 'Register' link was not captured)",
+      "Whether meals or snacks are included",
+      "Deposit and refund policy",
+      "Financial aid or scholarships",
+      "Contact email",
+      "Activities offered beyond the weekly themes",
+      "Accommodations for children with special needs",
+      "Swimming (the program is described as building-centered)",
+      "ACA accreditation"
+    ],
+    "low_confidence": [
+      {
+        "field": "sessions[0].start_date",
+        "confidence": 0.6,
+        "quote": "Session B: June 29 - July 3 | Holidays"
+      },
+      {
+        "field": "sessions[7].end_date",
+        "confidence": 0.6,
+        "quote": "Session I: August 17 - August 21 | Best of: Camp Brookside"
+      }
+    ],
+    "errors": []
+  }
+}

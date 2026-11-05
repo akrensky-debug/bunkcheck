@@ -1,0 +1,132 @@
+{
+  "slug": "summer-ssc-south-shore-conservatory-summer-programs",
+  "name": "Summer @ SSC (South Shore Conservatory Summer Programs)",
+  "operator_name": "South Shore Conservatory",
+  "website_url": "https://summer.sscmusic.org/",
+  "city": null,
+  "state": "MA",
+  "zip": null,
+  "camp_type": "specialty",
+  "primary_categories": [
+    "performing_arts",
+    "arts"
+  ],
+  "age_min": 0,
+  "description_short": "South Shore Conservatory runs summer music, dance and arts programs for ages 0 through college age at its campuses in Duxbury and Hingham, MA. Programs run June to August and include early childhood classes, dance, piano, voice, rock band and music festivals.",
+  "activities": [
+    "Music Together",
+    "Early childhood music",
+    "Cooking/science",
+    "Outdoor arts",
+    "Dance",
+    "Flute ensemble",
+    "Rock band",
+    "Summer Music Festival",
+    "Piano",
+    "Voice/song",
+    "Duxbury Music Festival"
+  ],
+  "financial_aid": true,
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Conservatory Kids (5 weeks, 9-12 pm)",
+      "start_date": "2026-06-08",
+      "end_date": "2026-07-31",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Cooking With Creativity - Bringing Science into the Kitchen! (9-12 pm)",
+      "start_date": "2026-06-15",
+      "end_date": "2026-06-18",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Outdoor Explorers – Summer Arts Expedition, Week 1",
+      "start_date": "2026-06-08",
+      "end_date": "2026-06-13",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Outdoor Explorers – Summer Arts Expedition, Week 2 (9-12 pm)",
+      "start_date": "2026-06-22",
+      "end_date": "2026-06-26",
+      "price": null,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://summer.sscmusic.org/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "age_min",
+        "description_short",
+        "financial_aid",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://summer.sscmusic.org/",
+      "kind": "html",
+      "title": "Welcome to Summer @ SSC! - Summer at SSC"
+    },
+    "warnings": [
+      "The page shows only the 2026 season (June-August 2026), and that summer has already ended. No 2027 dates or programs are posted yet.",
+      "There are two campuses with different addresses and phones, so no single address was recorded. Duxbury: The Ellison Center for the Arts, 64 St. George Street, Duxbury, MA 02331, 781-934-2731. Hingham: One Conservatory Drive, Hingham, MA 02043, 781-749-7565.",
+      "Conservatory Kids is listed as '5 weeks' but the date range 6/8-7/31 covers about 8 weeks. Which weeks it meets is unclear.",
+      "Outdoor Explorers Week 1 is listed as '6/8 - 6/13, ages 4-6 pm'. The text looks garbled, so the hours are unclear and 6/13 is a Saturday.",
+      "This is a landing page for a set of separate arts programs, not a single general camp. Most programs have no dates on this page.",
+      "8 sessions without full dates were left out"
+    ],
+    "unknowns": [
+      "2027 season dates and programs",
+      "Prices/tuition for every program",
+      "Which campus hosts each program",
+      "Dates and hours for Music Together, Summer Dance, Flute Symphony, Rock Band Jam, Summer Music Festival, Summer Piano, Summer of Song, Duxbury Music Festival",
+      "Registration URL and when registration opens",
+      "Whether there is extended care",
+      "Deposit and refund policy",
+      "Email contact",
+      "Whether meals or transportation are provided",
+      "Details of tuition assistance eligibility",
+      "Whether any program is residential (Duxbury Music Festival, Summer Music Festival)"
+    ],
+    "low_confidence": [
+      {
+        "field": "camp_type",
+        "confidence": 0.6,
+        "quote": "Summer programs at South Shore Conservatory are a great opportunity for creative learners to continue their artistic growth"
+      },
+      {
+        "field": "financial_aid",
+        "confidence": 0.7,
+        "quote": "Tuition Assistance"
+      },
+      {
+        "field": "sessions[2].start_date",
+        "confidence": 0.7,
+        "quote": "Week 1: 6/8 - 6/13, ages 4-6 pm"
+      }
+    ],
+    "errors": [
+      "missing required city",
+      "missing required zip",
+      "city None, MA is not in cities.py"
+    ]
+  }
+}

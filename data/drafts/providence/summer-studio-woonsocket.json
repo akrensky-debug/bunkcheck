@@ -1,0 +1,116 @@
+{
+  "slug": "summer-studio-woonsocket",
+  "name": "Summer Studio",
+  "operator_name": "Mount Saint Charles Academy",
+  "website_url": "https://mountsaintcharles.org/arts/summer-studio/",
+  "phone": "401-769-0310",
+  "street_address": "800 Logee Street",
+  "city": "Woonsocket",
+  "state": "RI",
+  "zip": "02895",
+  "primary_categories": [
+    "arts",
+    "performing_arts"
+  ],
+  "grade_min": 4,
+  "grade_max": 12,
+  "description_short": "A one-week, hands-on arts program at Mount Saint Charles Academy for students in grades 4-12. Campers rotate through four studios per session, chosen from options such as dance, steel drums, architecture, D&D, ceramics, LEGO design, creative writing, sculpture, digital art and drama.",
+  "activities": [
+    "dance",
+    "steel drums",
+    "architecture",
+    "Dungeons & Dragons",
+    "ceramics",
+    "LEGO design",
+    "creative writing",
+    "sculpture",
+    "digital art",
+    "drama"
+  ],
+  "price_per_week": 250,
+  "price_min": 250,
+  "price_max": 500,
+  "season_year": 2026,
+  "price_per": "week",
+  "sessions": [
+    {
+      "name": "Session 1",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": 250,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 2",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": 250,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://mountsaintcharles.org/arts/summer-studio/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "primary_categories",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "description_short",
+        "price_min",
+        "price_max",
+        "price_per_week",
+        "price_per",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://mountsaintcharles.org/arts/summer-studio/",
+      "kind": "html",
+      "title": "Summer Studio 2026 | Mount Saint Charles AcademyRow rect ShapeRow rect Shape"
+    },
+    "warnings": [
+      "This page is for the 2026 season, and both sessions (July 2026) are already over as of 2026-10-13. Dates and prices for 2027 are not posted yet.",
+      "The page does not say whether this is a day program or overnight. camp_type is left blank."
+    ],
+    "unknowns": [
+      "2027 session dates and price",
+      "Day vs. overnight format and daily hours",
+      "Age range (only grades are given)",
+      "Registration URL (the 'REGISTER NOW' link was not captured)",
+      "Registration opening date and availability",
+      "Deposit and refund policy",
+      "Financial aid",
+      "Extended care",
+      "Meals/lunch",
+      "Transportation",
+      "Email contact",
+      "ACA accreditation",
+      "Special needs accommodations"
+    ],
+    "low_confidence": [
+      {
+        "field": "price_max",
+        "confidence": 0.7,
+        "quote": "families may choose to attend one session or both"
+      }
+    ],
+    "errors": [
+      "missing required camp_type",
+      "camp_type must be one of ['day', 'sleepaway', 'specialty']"
+    ]
+  }
+}

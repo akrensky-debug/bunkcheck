@@ -1,0 +1,119 @@
+{
+  "slug": "blueberry-cove-sailing-camps",
+  "name": "Blueberry Cove Sailing Camps",
+  "operator_name": "University of Maine Cooperative Extension 4-H (4-H Camp & Learning Centers at Tanglewood & Blueberry Cove)",
+  "website_url": "https://extension.umaine.edu/tanglewood/blueberry-cove-tenants-harbor/sailing-camps/",
+  "registration_url": "https://extension.umaine.edu/tanglewood/registration/",
+  "city": null,
+  "state": "ME",
+  "zip": null,
+  "camp_type": "specialty",
+  "primary_categories": [
+    "sports",
+    "nature"
+  ],
+  "age_min": 9,
+  "age_max": 14,
+  "description_short": "Two-week sailing sessions at Blueberry Cove, taught by the St. George Community Sailing Foundation, combined with regular camp activities. There is an overnight option for ages 10-14 and a Monday-Friday day option for ages 9-12.",
+  "activities": [
+    "Sailing",
+    "Seamanship",
+    "Water safety",
+    "Knots and lines",
+    "Weather, tides, and currents",
+    "Harbor ecology",
+    "Traditional camp activities",
+    "Weekend trips (overnight sessions)"
+  ],
+  "price_min": 900,
+  "price_max": 1950,
+  "swim_waterfront_notes": "Sailing instruction by the St. George Community Sailing Foundation; many instructors are certified by US Sailing. The curriculum covers safety and capsize and overboard recovery. Swim requirements are not stated.",
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Overnight Sailors, Weeks 2-3",
+      "start_date": "2027-07-04",
+      "end_date": "2027-07-15",
+      "price": 1950,
+      "availability": "unknown"
+    },
+    {
+      "name": "Overnight Sailors, Weeks 6-7",
+      "start_date": "2027-08-01",
+      "end_date": "2027-08-12",
+      "price": 1950,
+      "availability": "unknown"
+    },
+    {
+      "name": "Day Sailors, Weeks 4 & 5",
+      "start_date": "2027-07-19",
+      "end_date": "2027-07-30",
+      "price": 900,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://extension.umaine.edu/tanglewood/blueberry-cove-tenants-harbor/sailing-camps/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "price_min",
+        "price_max",
+        "swim_waterfront_notes",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://extension.umaine.edu/tanglewood/blueberry-cove-tenants-harbor/sailing-camps/",
+      "kind": "html",
+      "title": "Sailing Camps, 9-14 - 4-H Camp & Learning Centers at Tanglewood & Blueberry Cove - University of Maine Cooperative Extension"
+    },
+    "warnings": [
+      "The page covers both overnight and day sailing programs, so camp_type is set to 'specialty' (sailing focus). Overnight Sailors is sleepaway and Day Sailors is day camp.",
+      "Overnight sessions run Sunday-Thursday (the overnight program ends Thursday). Sailing on Friday is optional and campers have to get there on their own. Campers in the Weeks 2-3 and 6-7 sessions stay over the weekend.",
+      "price_per_week left blank: prices are for two-week sessions ($900 day, $1950 overnight).",
+      "The contact phone and Orono location in the footer belong to UMaine Extension, not the camp site."
+    ],
+    "unknowns": [
+      "Street address, city and ZIP of Blueberry Cove (the URL suggests Tenants Harbor, but the page doesn't say so)",
+      "Camp phone and email (only the Extension's general Orono number, 207.581.3188, is shown)",
+      "Daily hours for Day Sailors",
+      "Whether meals are included",
+      "Extended care",
+      "Transportation",
+      "Deposit and refund policy",
+      "Financial aid or scholarships",
+      "Registration opening date and session availability",
+      "Swim test or swimming ability requirements",
+      "ACA accreditation",
+      "Accommodations for special needs"
+    ],
+    "low_confidence": [
+      {
+        "field": "camp_type",
+        "confidence": 0.6,
+        "quote": "Blueberry Cove offers sailing instruction in two-week sessions as part of our day and overnight camp programs"
+      }
+    ],
+    "errors": [
+      "missing required city",
+      "missing required zip",
+      "city None, ME is not in cities.py"
+    ]
+  }
+}

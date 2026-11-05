@@ -1,0 +1,133 @@
+{
+  "slug": "kingsley-pines-camp-raymond",
+  "name": "Kingsley Pines Camp",
+  "website_url": "https://kingsleypines.com/rates-dates/",
+  "registration_url": "https://kingsleypines.campintouch.com/ui/forms/application/camper/App",
+  "email": "info@kingsleypines.com",
+  "phone": "207-894-9030",
+  "street_address": "51 Coughlan Cove Road",
+  "city": "Raymond",
+  "state": "ME",
+  "zip": "04071",
+  "camp_type": "sleepaway",
+  "description_short": "Traditional overnight camp in the Sebago Lakes Region of Maine. Sessions run one, two, three or five weeks, and there is a 1-week Explorer program for rising 3rd to 5th graders.",
+  "price_min": 2600,
+  "price_max": 11275,
+  "financial_aid": true,
+  "refund_policy_summary": "If you cancel before April 1, 2027, you get a full refund minus a $500 cancellation fee per child. No refunds after April 1, 2027. A $1,000 deposit is required to enroll. Installment plans are available. Siblings get 5% off for each additional child.",
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Session 1 (2 weeks)",
+      "start_date": "2027-06-27",
+      "end_date": "2027-07-10",
+      "price": 5725,
+      "availability": "open"
+    },
+    {
+      "name": "Session 2 (3 weeks)",
+      "start_date": "2027-07-11",
+      "end_date": "2027-07-31",
+      "price": 7450,
+      "availability": "open"
+    },
+    {
+      "name": "Session 3 (2 weeks)",
+      "start_date": "2027-08-01",
+      "end_date": "2027-08-14",
+      "price": 5725,
+      "availability": "open"
+    },
+    {
+      "name": "1 Week Explorer Program – Week 1 (rising 3rd to 5th graders only)",
+      "start_date": "2027-07-11",
+      "end_date": "2027-07-17",
+      "price": 2600,
+      "availability": "open"
+    },
+    {
+      "name": "Session 1 & Session 2 (5 weeks)",
+      "start_date": "2027-06-27",
+      "end_date": "2027-07-31",
+      "price": 11275,
+      "availability": "open"
+    },
+    {
+      "name": "Session 2 & Session 3 (5 weeks)",
+      "start_date": "2027-07-11",
+      "end_date": "2027-08-14",
+      "price": 11275,
+      "availability": "open"
+    },
+    {
+      "name": "Teen Leadership Program (3 weeks, returning campers only, 18 spaces)",
+      "start_date": "2027-07-11",
+      "end_date": "2027-07-31",
+      "price": 7950,
+      "availability": "open"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://kingsleypines.com/rates-dates/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "description_short",
+        "price_min",
+        "price_max",
+        "financial_aid",
+        "refund_policy_summary",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://kingsleypines.com/rates-dates/",
+      "kind": "html",
+      "title": "Summer Camp Rates & Dates for 2026 | Kingsley Pines Camp"
+    },
+    "warnings": [
+      "The page title says 'Rates & Dates for 2026', but the body lists Summer 2027 dates and rates. I recorded the 2027 figures from the body.",
+      "Availability is marked 'open' only because the page says 'Registration is now open!'. It doesn't say how much space is left in each session.",
+      "Financial aid is inferred from a 'Financial Aid Application' navigation link. The page itself has no financial aid details."
+    ],
+    "unknowns": [
+      "Camper age/grade range for the main sessions (only the Explorer program's rising 3rd–5th grade range is stated)",
+      "Age/grade requirement for the Teen Leadership Program",
+      "Activities offered",
+      "Swimming/waterfront details",
+      "Whether transportation is offered (e.g., from Boston)",
+      "Whether there are any extra fees beyond tuition",
+      "Space left in each session",
+      "ACA accreditation",
+      "Support for campers with special needs",
+      "Financial aid eligibility and amounts"
+    ],
+    "low_confidence": [
+      {
+        "field": "financial_aid",
+        "confidence": 0.75,
+        "quote": "Financial Aid Application"
+      },
+      {
+        "field": "sessions[*].availability",
+        "confidence": 0.6,
+        "quote": "Registration is now open!"
+      }
+    ],
+    "errors": []
+  }
+}

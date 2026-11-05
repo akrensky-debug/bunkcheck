@@ -64,7 +64,7 @@ own OAuth. The generic `/mcp` endpoint also omits it, so it works as a custom co
 - **Connector URL:** `https://api.campfinder.com/claude/mcp`
 - **Docs URL:** `https://campfinder.com/support`
 - **Privacy policy:** `https://campfinder.com/privacy`
-- **Support contact:** hello@campfinder.com (must be a monitored, verified address)
+- **Support contact:** hello@bunkcheck.ai (must be a monitored, verified address)
 - **Icon:** `campfinder/static/icon.png` (512 px)
 - **Allowed link URIs:** `https://campfinder.com`
 - **Auth:** No authentication

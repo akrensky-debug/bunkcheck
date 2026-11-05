@@ -1,0 +1,90 @@
+{
+  "slug": "windham-parks-and-recreation-summer-day-camp-windham",
+  "name": "Windham Parks & Recreation Summer Day Camp",
+  "operator_name": "Town of Windham Parks & Recreation",
+  "website_url": "https://www.windhammaine.us/165/Youth-Family-Programs",
+  "registration_url": "https://www.rec.us/organizations/town-of-windham",
+  "phone": "207-892-1905",
+  "street_address": "8 School Road",
+  "city": "Windham",
+  "state": "ME",
+  "zip": "04062",
+  "camp_type": "day",
+  "primary_categories": [
+    "sports",
+    "arts"
+  ],
+  "grade_min": 1,
+  "grade_max": 8,
+  "description_short": "A 7-week town-run summer day camp for grades 1-8, held at one of four camp locations. Campers do field trips, special events, arts and crafts, and sports and games.",
+  "activities": [
+    "field trips",
+    "special events",
+    "arts and crafts",
+    "sports and games"
+  ],
+  "sources": [
+    {
+      "url": "https://www.windhammaine.us/165/Youth-Family-Programs",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "description_short"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.windhammaine.us/165/Youth-Family-Programs",
+      "kind": "html",
+      "title": "Youth & Family Programs | Windham, ME - Official WebsiteArrow LeftArrow RightSlideshow Left ArrowSlideshow Right Arrow"
+    },
+    "warnings": [
+      "This page is the department's general overview of youth and family programs, not a dedicated camp page. Its details are an undated 'sample' of offerings, and current info is on rec.us/windham and the separate 'Summer Day Camp' page.",
+      "The page doesn't name a season year, so season_year is left blank. Registration is described as opening 'the last Monday in March and runs through late May' each year.",
+      "The same page lists other summer programs (Tennis Camp in July, Paddling Camp in August, Summer Track & Field, Summer Enrichment). These are separate programs and are not part of this listing.",
+      "The page shows two phone numbers: 207-892-1905 for Parks & Rec and 207-892-1907 for the Town office. The Parks & Rec number was recorded."
+    ],
+    "unknowns": [
+      "2027 session dates (page says only '7 weeks')",
+      "Weekly or per-session price",
+      "Names and locations of the 4 camp sites",
+      "Daily hours and whether before/after care is offered",
+      "Whether lunch/meals are provided",
+      "Whether transportation is provided (beyond field trips)",
+      "Financial aid for camp (the department has a 'Financial Assistance' page, but this page doesn't link it to camp)",
+      "Deposit and refund policy",
+      "Exact 2027 registration open date (page says only 'the last Monday in March')",
+      "Swimming/waterfront activities",
+      "Accommodations for special needs",
+      "ACA accreditation",
+      "Camp-specific email address",
+      "Camper ages (only grades are given)"
+    ],
+    "low_confidence": [
+      {
+        "field": "primary_categories",
+        "confidence": 0.7,
+        "quote": "arts and crafts, sports and games"
+      }
+    ],
+    "errors": [
+      "missing required season_year"
+    ]
+  }
+}

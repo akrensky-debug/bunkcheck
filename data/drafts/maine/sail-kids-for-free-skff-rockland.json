@@ -1,0 +1,179 @@
+{
+  "slug": "sail-kids-for-free-skff-rockland",
+  "name": "Sail Kids For Free (SKFF)",
+  "operator_name": "Sail, Power & Steam Museum",
+  "website_url": "https://www.sailpowersteammuseum.org/sail-kids-for-free-skff",
+  "phone": "207-701-7627",
+  "street_address": "75 Mechanic St.",
+  "city": "Rockland",
+  "state": "ME",
+  "zip": "04841",
+  "camp_type": "specialty",
+  "primary_categories": [
+    "sports",
+    "nature"
+  ],
+  "age_min": 8,
+  "age_max": 14,
+  "description_short": "A free, week-long beginner sailing program for ages 8–14. Kids sail Optimist Prams in the harbor from 9AM to 12PM, Monday to Friday, and the week ends with a friendly regatta.",
+  "activities": [
+    "Sailing (Optimist Prams)",
+    "Rigging",
+    "Line handling",
+    "Docking",
+    "Sail trim",
+    "Capsize recovery",
+    "Regatta"
+  ],
+  "price_per_week": 0,
+  "price_min": 0,
+  "price_max": 0,
+  "swim_waterfront_notes": "Sailing happens in the harbor on Optimist Prams. Kids practise capsizing safely and righting their boats.",
+  "season_year": 2027,
+  "price_per": "week",
+  "sessions": [
+    {
+      "name": "Session 1",
+      "start_date": "2027-06-21",
+      "end_date": "2027-06-25",
+      "price": 0,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 2",
+      "start_date": "2027-06-28",
+      "end_date": "2027-07-02",
+      "price": 0,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 3",
+      "start_date": "2027-07-05",
+      "end_date": "2027-07-09",
+      "price": 0,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 4",
+      "start_date": "2027-07-12",
+      "end_date": "2027-07-16",
+      "price": 0,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 5",
+      "start_date": "2027-07-19",
+      "end_date": "2027-07-23",
+      "price": 0,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 6",
+      "start_date": "2027-07-26",
+      "end_date": "2027-07-30",
+      "price": 0,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 7",
+      "start_date": "2027-08-02",
+      "end_date": "2027-08-06",
+      "price": 0,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 8",
+      "start_date": "2027-08-09",
+      "end_date": "2027-08-13",
+      "price": 0,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 9",
+      "start_date": "2027-08-16",
+      "end_date": "2027-08-20",
+      "price": 0,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 10",
+      "start_date": "2027-08-23",
+      "end_date": "2027-08-27",
+      "price": 0,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.sailpowersteammuseum.org/sail-kids-for-free-skff",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "price_min",
+        "price_max",
+        "price_per_week",
+        "price_per",
+        "swim_waterfront_notes",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=75+Mechanic+St.&city=Rockland&state=ME&benchmark=Public_AR_Current&format=json",
+      "checked": "2026-10-13",
+      "fields": [
+        "zip"
+      ],
+      "note": "ZIP from the US Census geocoder for 75 MECHANIC ST, ROCKLAND, ME, 04841"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.sailpowersteammuseum.org/sail-kids-for-free-skff",
+      "kind": "html",
+      "title": "Sail Kids For Free (SKFF) | SPSM"
+    },
+    "warnings": [
+      "Filled zip 04841 from the US Census geocoder (75 MECHANIC ST, ROCKLAND, ME, 04841)",
+      "The 2027 schedule is labelled 'Proposed', so the dates may change.",
+      "The page says registration opens April 1 but gives no year. 2027-04-01 is assumed because it is the next April 1 before the 2027 season.",
+      "There is no direct registration link, only a sign-up form for information and updates.",
+      "The page mentions a waitlist when sessions are full, but it does not show availability for each session."
+    ],
+    "unknowns": [
+      "Email address",
+      "ZIP code",
+      "Registration URL",
+      "Whether a swim test or life jackets are required",
+      "Whether snacks are provided",
+      "Whether transportation is offered",
+      "Whether extended care is available",
+      "Refund or cancellation policy (the program is free)",
+      "Accommodations for special needs",
+      "Whether the camp is ACA accredited",
+      "Instructor qualifications and the camper-to-instructor ratio",
+      "How many spots each session has"
+    ],
+    "low_confidence": [
+      {
+        "field": "sessions[0].registration_opens_at",
+        "confidence": 0.75,
+        "quote": "Registration for the upcoming SKFF season will open on April 1."
+      }
+    ],
+    "errors": []
+  }
+}

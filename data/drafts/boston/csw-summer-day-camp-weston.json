@@ -1,0 +1,95 @@
+{
+  "slug": "csw-summer-day-camp-weston",
+  "name": "CSW Summer Day Camp",
+  "operator_name": "The Cambridge School of Weston",
+  "website_url": "https://www.csw.org/community/summer-and-enrichment",
+  "phone": "781-642-8605",
+  "street_address": "45 Georgian Road",
+  "city": "Weston",
+  "state": "MA",
+  "zip": "02493",
+  "camp_type": "day",
+  "primary_categories": [
+    "sports",
+    "arts"
+  ],
+  "age_min": 4,
+  "age_max": 14,
+  "description_short": "A summer day camp on the campus of The Cambridge School of Weston for ages 4-14. Activities, led by counselors, include swimming, recreational sports, and arts and crafts, both indoors and outdoors.",
+  "activities": [
+    "swimming",
+    "recreational sports",
+    "arts and crafts"
+  ],
+  "sources": [
+    {
+      "url": "https://www.csw.org/community/summer-and-enrichment",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.csw.org/community/summer-and-enrichment",
+      "kind": "html",
+      "title": "Summer & Enrichment at CSW — Learn, Explore, Grow"
+    },
+    "warnings": [
+      "This page is the school's general Summer & Enrichment overview, not the day camp's own detail page. It also lists Summer Electives, Mini Mods and Lifelong Learning programs.",
+      "The page shows no season year, dates or prices, so this can't be confirmed as 2027 information.",
+      "The phone number listed is for the Director of Summer & Auxiliary Program. The school's main line is (781) 642-8600."
+    ],
+    "unknowns": [
+      "Season year and 2027 session dates",
+      "Weekly price / session prices",
+      "Registration URL and when registration opens",
+      "Daily hours and extended care",
+      "Whether lunch is included",
+      "Transportation",
+      "Financial aid for camp (the school's tuition aid links may not cover camp)",
+      "Refund and deposit policy",
+      "ACA accreditation",
+      "Swim instruction and pool supervision details",
+      "Email contact",
+      "Support for children with special needs",
+      "Dedicated camp webpage (linked as 'Learn More' but the URL isn't given)"
+    ],
+    "low_confidence": [
+      {
+        "field": "primary_categories",
+        "confidence": 0.6,
+        "quote": "swimming, recreational sports, and arts and crafts"
+      },
+      {
+        "field": "phone",
+        "confidence": 0.75,
+        "quote": "Meghan O'Leary Director of Summer & Auxiliary Program 781-642-8605"
+      },
+      {
+        "field": "website_url",
+        "confidence": 0.6,
+        "quote": "CSW Summer Day Camp ... Learn More"
+      }
+    ],
+    "errors": [
+      "missing required season_year"
+    ]
+  }
+}

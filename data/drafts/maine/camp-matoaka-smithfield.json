@@ -1,0 +1,112 @@
+{
+  "slug": "camp-matoaka-smithfield",
+  "name": "Camp Matoaka",
+  "website_url": "https://www.matoaka.com/",
+  "registration_url": "https://matoaka.campintouch.com/v2/camper/application/app0.aspx",
+  "phone": "207-512-2300",
+  "street_address": "One Great Place",
+  "city": "Smithfield",
+  "state": "ME",
+  "zip": "04978",
+  "camp_type": "sleepaway",
+  "primary_categories": [
+    "sports"
+  ],
+  "description_short": "Overnight summer camp for girls in Smithfield, Maine. For 2027 it offers two 3-week half sessions and a 7-week full session.",
+  "activities": [
+    "Tennis (private lessons available)",
+    "Horseback riding (English)",
+    "Color War",
+    "College League",
+    "Out-of-camp trips"
+  ],
+  "price_min": 11100,
+  "price_max": 18650,
+  "transportation": true,
+  "refund_policy_summary": "The $3,000 deposit is fully refundable. The page does not give a refund policy for the rest of the tuition.",
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "First Session",
+      "start_date": "2027-06-25",
+      "end_date": "2027-07-17",
+      "price": 11100,
+      "availability": "unknown"
+    },
+    {
+      "name": "Full Session",
+      "start_date": "2027-06-25",
+      "end_date": "2027-08-11",
+      "price": 18650,
+      "availability": "unknown"
+    },
+    {
+      "name": "Second Session",
+      "start_date": "2027-07-21",
+      "end_date": "2027-08-11",
+      "price": 11100,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.matoaka.com/rates-and-dates/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "description_short",
+        "price_min",
+        "price_max",
+        "transportation",
+        "refund_policy_summary",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.matoaka.com/rates-and-dates/",
+      "kind": "html",
+      "title": "Camp Matoaka's Summer Camp Dates & Rates | Girls Summer Camp in ME"
+    },
+    "warnings": [
+      "Extra costs on top of tuition: a $250 personal expense fee for half-session campers and $450 for full-session campers, a 3% fee on credit card payments made after the deposit, and nominal transportation fees.",
+      "The page footer says © 2025, but the dates are clearly marked as the 2027 season. The weekdays match the 2027 calendar.",
+      "Visiting Day for the Full Session is Sunday, July 18, 2027."
+    ],
+    "unknowns": [
+      "Age or grade range of campers",
+      "Email address (hidden on the page)",
+      "Whether meals are included (likely for a sleepaway camp, but not stated)",
+      "Financial aid or scholarships",
+      "Whether sessions are open or full",
+      "When registration opens",
+      "Refund policy for tuition beyond the deposit",
+      "ACA accreditation",
+      "Swimming and waterfront details",
+      "Accommodations for special needs",
+      "Prices for private tennis and horseback lessons",
+      "Exact transportation fees"
+    ],
+    "low_confidence": [
+      {
+        "field": "primary_categories",
+        "confidence": 0.7,
+        "quote": "Campers work with nationally-ranked college and professional tennis players on one of our nine tennis courts."
+      }
+    ],
+    "errors": []
+  }
+}

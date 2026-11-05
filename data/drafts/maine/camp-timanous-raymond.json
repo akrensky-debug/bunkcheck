@@ -1,0 +1,124 @@
+{
+  "slug": "camp-timanous-raymond",
+  "name": "Camp Timanous",
+  "operator_name": "Camp Timanous (501(c)3 non-profit)",
+  "website_url": "https://www.timanous.org/faq.html",
+  "registration_url": "https://timanous.campintouch.com/ui/forms/application/camper/App",
+  "phone": "207-655-4569",
+  "street_address": "85 Plains Road",
+  "city": "Raymond",
+  "state": "ME",
+  "zip": "04071",
+  "camp_type": "sleepaway",
+  "primary_categories": [
+    "sports",
+    "arts",
+    "nature"
+  ],
+  "description_short": "Boys' summer camp in Raymond, Maine, with a seven-week full season or two half sessions. Tuition covers activities such as woodshop, crafts, waterskiing and camping trips, plus laundry, health insurance and the yearbook.",
+  "activities": [
+    "woodshop",
+    "crafts",
+    "waterskiing",
+    "entertainment",
+    "camping trips"
+  ],
+  "price_min": 8900,
+  "price_max": 13400,
+  "financial_aid": true,
+  "refund_policy_summary": "Full refund of all money paid, minus a $200 administrative fee, through March 1. After that, refunds are made only if another camper fills the spot. Tuition insurance (Program Protector) is available through CampMinder.",
+  "swim_waterfront_notes": "Waterskiing is listed among the activities covered by tuition. The page gives no other swim or waterfront details.",
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Full Season",
+      "start_date": "2027-06-24",
+      "end_date": "2027-08-11",
+      "price": 13400,
+      "availability": "unknown"
+    },
+    {
+      "name": "1st Half Session",
+      "start_date": "2027-06-24",
+      "end_date": "2027-07-17",
+      "price": 8900,
+      "availability": "unknown"
+    },
+    {
+      "name": "2nd Half Session",
+      "start_date": "2027-07-19",
+      "end_date": "2027-08-11",
+      "price": 8900,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.timanous.org/faq.html",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "description_short",
+        "price_min",
+        "price_max",
+        "financial_aid",
+        "refund_policy_summary",
+        "swim_waterfront_notes",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.timanous.org/faq.html",
+      "kind": "html",
+      "title": "FAQ - Camp Timanous"
+    },
+    "warnings": [
+      "Boys-only camp.",
+      "The page does not say directly that campers stay overnight. Sleepaway is inferred from the seven-week season, laundry and health insurance being included, and a separate summer address.",
+      "Contact email is hidden on the page and could not be recorded.",
+      "Footer copyright reads 2024, but the schedule and rates are labeled 2027.",
+      "Discounts: early bird ($200 full season / $100 half season) if registered by October 31; sibling discount of 5% off the 2nd son and 10% off each additional son. Prices recorded are before discounts.",
+      "Extra costs not in tuition: transportation, uniforms, baggage charges, optional tutoring.",
+      "Payment schedule: $1,000 deposit at registration, $2,000 due February 1, balance due April 1.",
+      "The page says ACA accredited: check it on acacamps.org and add aca_accredited with aca_source_url"
+    ],
+    "unknowns": [
+      "Camper age or grade range (the page says boys only and gives no ages)",
+      "Contact email (hidden on the page as '[email protected]')",
+      "Whether meals are included (likely for an overnight camp, but not stated)",
+      "Transportation options and cost (not included in tuition; travel options are handled through CampMinder)",
+      "Session availability / open spots",
+      "Special needs accommodations",
+      "Swim and waterfront details beyond waterskiing",
+      "Uniform costs (required; bought through Maine Camp Outfitters)"
+    ],
+    "low_confidence": [
+      {
+        "field": "camp_type",
+        "confidence": 0.75,
+        "quote": "a full seven-week season ... laundry, health insurance"
+      },
+      {
+        "field": "primary_categories",
+        "confidence": 0.6,
+        "quote": "woodshop, crafts, waterskiing, entertainment, camping trips"
+      }
+    ],
+    "errors": []
+  }
+}

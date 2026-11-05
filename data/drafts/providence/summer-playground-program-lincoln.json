@@ -1,0 +1,90 @@
+{
+  "slug": "summer-playground-program-lincoln",
+  "name": "Summer Playground Program",
+  "operator_name": "Lincoln Parks and Recreation Department",
+  "website_url": "https://www.lincolnri.gov/180/Youth-Programs",
+  "registration_url": "https://lincolnri.recdesk.com",
+  "phone": "401-333-8416",
+  "city": "Lincoln",
+  "state": "RI",
+  "zip": null,
+  "camp_type": "day",
+  "primary_categories": [
+    "sports",
+    "arts"
+  ],
+  "grade_min": 2,
+  "grade_max": 8,
+  "description_short": "A town-run summer playground program at Lincoln's 5 major parks for children in grades 2-8, from 9 am to 4 pm. Children may come and go from the parks as they like, so this is not a drop-off camp where staff keep children on site.",
+  "activities": [
+    "baseball",
+    "kickball",
+    "basketball",
+    "informal games",
+    "special events",
+    "arts and crafts"
+  ],
+  "sources": [
+    {
+      "url": "https://www.lincolnri.gov/180/Youth-Programs",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "description_short"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.lincolnri.gov/180/Youth-Programs",
+      "kind": "html",
+      "title": "Youth Programs | Lincoln, RIArrow LeftArrow RightSlideshow Left ArrowSlideshow Right Arrow"
+    },
+    "warnings": [
+      "This is a town Parks & Recreation page that lists many youth programs, such as basketball leagues, chess, lacrosse, tennis, STEM/LEGO, theater and app invention. Only the Summer Playground Program is recorded here as the camp.",
+      "No season year appears anywhere on the page. The text seems to be a standing description that is not updated each year, so the July 1st start date is not confirmed for 2027.",
+      "Children are 'free to enter and leave the parks at their own volition'. Staff do not hold children on site the way most day camps do.",
+      "The registration instructions conflict. The page says all registrations go through RecDesk, but the playground program describes in-person sign-up: 'Early Registration on last weekday of June at your local park... or sign up any open camp day at your local park.'",
+      "The phone number belongs to the Parks and Recreation Director and is not a number specific to this program."
+    ],
+    "unknowns": [
+      "Season year and full dates for summer 2027 (page says only 'first day of camp is July 1st' with no year)",
+      "End date of the program",
+      "Price or fee (none stated)",
+      "Names and addresses of the 5 parks used",
+      "Whether registration is online through RecDesk or only in person at the park",
+      "Whether only Lincoln residents may attend",
+      "Whether meals or snacks are provided",
+      "Staff-to-child ratios and how children are supervised, since they may leave on their own",
+      "Accommodations for special needs",
+      "Financial aid",
+      "Refund policy",
+      "Transportation",
+      "ACA accreditation"
+    ],
+    "low_confidence": [
+      {
+        "field": "registration_url",
+        "confidence": 0.5,
+        "quote": "All registrations for programs are directly through RecDesk- https://lincolnri.recdesk.com"
+      }
+    ],
+    "errors": [
+      "missing required zip",
+      "missing required season_year"
+    ]
+  }
+}

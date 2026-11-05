@@ -1,0 +1,141 @@
+{
+  "slug": "camp-bauercrest-amesbury",
+  "name": "Camp Bauercrest",
+  "website_url": "https://bauercrest.org",
+  "registration_url": "https://bauercrest.campintouch.com/ui/forms/application/camper/App",
+  "phone": "(978) 388-4732",
+  "street_address": "17 Old County Road",
+  "city": "Amesbury",
+  "state": "MA",
+  "zip": "01913",
+  "camp_type": "sleepaway",
+  "primary_categories": [
+    "sports",
+    "faith",
+    "arts"
+  ],
+  "description_short": "Overnight camp for boys in Amesbury, MA, focused on sports in a Jewish setting. Families can choose a 7-week full summer, one of two 3.5-week sessions, or a 2-week Mini Camp for first-time campers up to 6th grade.",
+  "activities": [
+    "Athletics",
+    "Water sports",
+    "Creative arts & digital media"
+  ],
+  "price_min": 4200,
+  "price_max": 13200,
+  "financial_aid": true,
+  "refund_policy_summary": "Deposits cannot be refunded once a spot is reserved. Cancellations must be sent in writing by email. Full tuition is due by May 20, 2027 to keep the spot. Payment plans: pay in full, half now and half in January, or 4-, 6- or 8-month plans charged on the 20th of each month.",
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Full Session (7 weeks)",
+      "start_date": "2027-06-23",
+      "end_date": "2027-08-11",
+      "price": 13200,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 1 (3.5 weeks)",
+      "start_date": "2027-06-23",
+      "end_date": "2027-07-17",
+      "price": 8300,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 2 (3.5 weeks)",
+      "start_date": "2027-07-18",
+      "end_date": "2027-08-11",
+      "price": 8300,
+      "availability": "unknown"
+    },
+    {
+      "name": "Mini Camp 1 (2 weeks, first-time campers up to 6th grade)",
+      "start_date": "2027-06-23",
+      "end_date": "2027-07-07",
+      "price": 4200,
+      "availability": "unknown"
+    },
+    {
+      "name": "Mini Camp 2 (2 weeks, first-time campers up to 6th grade)",
+      "start_date": "2027-07-18",
+      "end_date": "2027-08-01",
+      "price": 4200,
+      "availability": "unknown"
+    },
+    {
+      "name": "Training Camp (24-hour free trial, prospective campers up to 6th grade)",
+      "start_date": "2027-07-11",
+      "end_date": "2027-07-12",
+      "price": 0,
+      "availability": "unknown"
+    },
+    {
+      "name": "Training Camp (24-hour free trial, prospective campers up to 6th grade)",
+      "start_date": "2027-07-25",
+      "end_date": "2027-07-26",
+      "price": 0,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://bauercrest.org/about/dates-rates/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "description_short",
+        "price_min",
+        "price_max",
+        "financial_aid",
+        "refund_policy_summary",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://bauercrest.org/about/dates-rates/",
+      "kind": "html",
+      "title": "Dates & Rates - Camp Bauercrest in MA"
+    },
+    "warnings": [
+      "The camp appears to be for boys only (\"your son\", \"Boys 1st-5th Grade Try Camp FREE\"), but the page does not say so directly.",
+      "Conflicting grade limits for Training Camp: the dates table says \"up to 6th grade\" but the banner says \"Boys 1st-5th Grade\".",
+      "The early enrollment discount (\"enrolling before August 29th\") has a deadline that is already past as of today (2026-10-13). Ask whether a 2027 discount is still available.",
+      "Visiting Day is listed as Saturday, July 17, which is also the last day of Session 1.",
+      "Training Camp is a free 24-hour trial, not a regular session. It is left out of price_min.",
+      "The activities list comes from the site's menu links, not from text on this page."
+    ],
+    "unknowns": [
+      "Overall camper age or grade range for the main sessions (only Mini Camp and Training Camp limits are stated)",
+      "Session availability (open, waitlist or full)",
+      "Deposit amount",
+      "Whether transportation to camp is offered",
+      "Whether ACA accredited",
+      "Contact email",
+      "Waterfront and swim details (there is an Aquatics page that was not reviewed)",
+      "Support for special needs",
+      "What tuition covers (meals, laundry, extra fees)",
+      "Current early enrollment discount and deadline for 2027"
+    ],
+    "low_confidence": [
+      {
+        "field": "activities",
+        "confidence": 0.7,
+        "quote": "Athletics Water Sports Creative Arts & Digital Media"
+      }
+    ],
+    "errors": []
+  }
+}

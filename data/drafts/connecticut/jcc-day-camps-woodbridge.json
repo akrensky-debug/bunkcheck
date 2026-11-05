@@ -1,0 +1,107 @@
+{
+  "slug": "jcc-day-camps-woodbridge",
+  "name": "JCC Day Camps",
+  "operator_name": "JCC of Greater New Haven",
+  "website_url": "https://www.jccnh.org/camp/dates-rates",
+  "email": "webmaster@jccnh.org",
+  "phone": "(203) 387-2424",
+  "street_address": "360 Amity Rd.",
+  "city": "Woodbridge",
+  "state": "CT",
+  "zip": "06525",
+  "camp_type": "day",
+  "description_short": "Day camp run by the JCC of Greater New Haven in Woodbridge, CT. It runs in two 4-week sessions, Monday to Friday from 9 AM to 4 PM, and offers after-camp enrichment.",
+  "financial_aid": true,
+  "extended_care": true,
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Session 1",
+      "start_date": "2027-06-21",
+      "end_date": "2027-07-16",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 2",
+      "start_date": "2027-07-19",
+      "end_date": "2027-08-13",
+      "price": null,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.jccnh.org/camp/dates-rates",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "description_short",
+        "extended_care",
+        "financial_aid",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.jccnh.org/camp/dates-rates",
+      "kind": "html",
+      "title": "Dates & Rates\n | JCC of Greater New Haven"
+    },
+    "warnings": [
+      "The page does not give a year for the session dates. They were taken as 2027 because June 21 and July 19, 2027 fall on Mondays, and July 16 and August 13, 2027 fall on Fridays. This matches the Monday–Friday schedule, and the rates are still marked TBD. Confirm the year with the camp.",
+      "Prices are not published yet: 'RATES TBD. Stay Tuned!'",
+      "The email recorded is the JCC's general webmaster address, not a camp-specific contact. Questions about after camp go to Kelly at kellyd@jccnh.org."
+    ],
+    "unknowns": [
+      "Prices (early bird and regular rates are listed as TBD)",
+      "Member vs. non-member rates",
+      "Age or grade range",
+      "Activities offered",
+      "Registration opening date and registration link",
+      "Whether lunch or snacks are included",
+      "Whether there is transportation",
+      "Deposit and refund policy",
+      "ACA accreditation",
+      "Cost and hours of after-camp enrichment (contact kellyd@jccnh.org)",
+      "Swim program details",
+      "Inclusion and special needs support for campers",
+      "Whether sessions can be booked by the week or only as 4-week blocks"
+    ],
+    "low_confidence": [
+      {
+        "field": "season_year",
+        "confidence": 0.7,
+        "quote": "Session 1: June 21 - July 16"
+      },
+      {
+        "field": "sessions[0].start_date",
+        "confidence": 0.7,
+        "quote": "Session 1: June 21 - July 16"
+      },
+      {
+        "field": "sessions[1].start_date",
+        "confidence": 0.7,
+        "quote": "Session 2: July 19 - August 13"
+      },
+      {
+        "field": "email",
+        "confidence": 0.6,
+        "quote": "webmaster@jccnh.org"
+      }
+    ],
+    "errors": []
+  }
+}

@@ -141,3 +141,73 @@ def test_promote_cli_reports_failures(tmp_path: Path, capsys) -> None:
     missing = tmp_path / "nowhere" / "x.json"
     assert promote.main([str(missing), "--by", "Andrew"]) == 1
     assert "x.json" in capsys.readouterr().err
+
+
+async def test_one_bad_camp_does_not_stop_the_run(fake_tool, tmp_path, monkeypatch):
+    """A page with a state but no town once crashed the dataset check and killed the batch."""
+    def boom(*_a, **_k):
+        raise ValueError("broken page")
+    calls = []
+    real = batch.to_draft
+
+    def flaky(listing, source, **kw):
+        calls.append(source.url)
+        return boom() if "riverside" in source.url else real(listing, source, **kw)
+    monkeypatch.setattr(batch, "to_draft", flaky)
+    log = await batch.run(CANDIDATES[:2], metro="Providence, RI", drafts=tmp_path / "p", limit=None,
+                          concurrency=1, today=TODAY)
+    assert {x["name"]: x["outcome"] for x in log} == {"Riverside": "failed", "Lakeside": "drafted"}
+
+
+def test_draft_with_a_state_but_no_town() -> None:
+    d = to_draft(listing(city=None), PAGE, metro="Providence, RI", today=TODAY)
+    assert "missing required city" in " ".join(d["review"]["errors"])
+
+
+async def test_a_page_with_no_camp_is_not_a_draft(fake_tool, tmp_path, monkeypatch):
+    """A dead link ("Program Not Found") or a directory page yields no name: report it, don't draft it."""
+    async def extract(source, today=None):
+        return ProposedListing(warnings=['The page says "Program Not Found."'])
+    monkeypatch.setattr(batch, "extract_listing", extract)
+    log = await batch.run(CANDIDATES[:1], metro="Providence, RI", drafts=tmp_path / "p", limit=None,
+                          concurrency=1, today=TODAY)
+    assert log[0]["outcome"] == "failed" and "Program Not Found" in log[0]["detail"]
+    assert not [f for f in (tmp_path / "p").glob("*.json") if not f.name.startswith("_")]
+
+
+async def test_a_hanging_page_fails_that_camp_only(fake_tool, tmp_path, monkeypatch):
+    import asyncio
+    async def hang(url):
+        await asyncio.sleep(60)
+    monkeypatch.setattr(batch, "fetch", hang)
+    monkeypatch.setattr(batch, "PER_CAMP_SECONDS", 0.05)
+    log = await batch.run(CANDIDATES[:1], metro="Providence, RI", drafts=tmp_path / "p", limit=None,
+                          concurrency=1, today=TODAY)
+    assert log[0]["outcome"] == "failed" and "timed out" in log[0]["detail"]
+
+
+def test_fill_only_gaps_with_one_answer() -> None:
+    from campfinder.ingest.fill import fill_draft
+    d = to_draft(listing(zip=None, street_address="1 Main St"), PAGE, metro="Providence, RI", today=TODAY)
+    hit = [{"matchedAddress": "1 MAIN ST, CRANSTON, RI, 02920", "addressComponents": {"zip": "02920"}}]
+    notes = fill_draft(d, metro="Providence, RI", today=TODAY, lookup=lambda url: hit)
+    assert d["zip"] == "02920" and "Census" in notes[0] and d["review"]["warnings"][0] == notes[0]
+    assert d["sources"][-1]["fields"] == ["zip"] and d["review"]["errors"] == []
+
+    # Two different zips, or no match, is not one right answer.
+    two = hit + [{"matchedAddress": "1 MAIN ST", "addressComponents": {"zip": "02921"}}]
+    d2 = to_draft(listing(zip=None, street_address="1 Main St"), PAGE, metro="Providence, RI", today=TODAY)
+    assert fill_draft(d2, metro="Providence, RI", today=TODAY, lookup=lambda url: two) == [] and not d2.get("zip")
+    # No street address: never guessed from the town.
+    d3 = to_draft(listing(zip=None), PAGE, metro="Providence, RI", today=TODAY)
+    assert fill_draft(d3, metro="Providence, RI", today=TODAY, lookup=lambda url: hit) == []
+
+
+def test_zip_from_a_town_with_one_zip_code() -> None:
+    from campfinder.ingest.fill import fill_draft
+    d = to_draft(listing(city="Bristol", zip=None), PAGE, metro="Providence, RI", today=TODAY)
+    notes = fill_draft(d, metro="Providence, RI", today=TODAY, lookup=lambda url: [])
+    assert d["zip"] == "02809" and "one ZIP code" in notes[0] and d["sources"][-1]["fields"] == ["zip"]
+    # Cranston has several ZIP codes: left for a person.
+    d2 = to_draft(listing(zip=None), PAGE, metro="Providence, RI", today=TODAY)
+    assert fill_draft(d2, metro="Providence, RI", today=TODAY, lookup=lambda url: []) == [] and not d2.get("zip")

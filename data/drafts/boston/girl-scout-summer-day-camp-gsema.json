@@ -1,0 +1,110 @@
+{
+  "slug": "girl-scout-summer-day-camp-gsema",
+  "name": "Girl Scout Summer Day Camp (GSEMA)",
+  "operator_name": "Girl Scouts of Eastern Massachusetts",
+  "website_url": "https://www.gsema.org/en/activities-and-camp/summer-camp/day.html",
+  "city": null,
+  "state": "MA",
+  "zip": null,
+  "camp_type": "day",
+  "primary_categories": [
+    "nature",
+    "arts",
+    "sports"
+  ],
+  "grade_min": 0,
+  "grade_max": 12,
+  "description_short": "Girl Scouts of Eastern Massachusetts runs five day camps for girls entering grades K-12: Cedar Hill (Waltham), Favorite (Brewster), Maude Eaton (Andover), Rice Moody (Reading) and Wind in the Pines (Plymouth). Camp runs 9 AM-4 PM, and round-trip bus transportation is included in the fee.",
+  "activities": [
+    "arts and crafts",
+    "games",
+    "campfires",
+    "swimming",
+    "archery",
+    "boating",
+    "canoeing",
+    "hiking",
+    "nature exploration",
+    "low and high ropes course",
+    "science exploration",
+    "slingshots",
+    "cookouts",
+    "singing",
+    "badge work",
+    "field games",
+    "day trips"
+  ],
+  "financial_aid": true,
+  "extended_care": true,
+  "transportation": true,
+  "swim_waterfront_notes": "Varies by camp: pools at Cedar Hill and Rice Moody (canoeing on the pond at Cedar Hill for some units); swimming in Pomps Pond at Maude Eaton; Gallows Pond at Wind in the Pines; swimming and boating at Favorite.",
+  "season_year": 2026,
+  "sources": [
+    {
+      "url": "https://www.gsema.org/en/activities-and-camp/summer-camp/day.html",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "description_short",
+        "extended_care",
+        "transportation",
+        "financial_aid",
+        "swim_waterfront_notes"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.gsema.org/en/activities-and-camp/summer-camp/day.html",
+      "kind": "html",
+      "title": "Girl Scout Summer Day Camp | Girl Scouts of Eastern Massachusetts (GSEMA)girl rock climbing at campgirl rock climbing at campgirl on lake in boatgirl on lake in boatgirl on ropes course at campgirl on ropes course at camptwo girls swimming in pool at camptwo girls swimming in pool at campgirl on lake in boatgirl on lake in boat"
+    },
+    "warnings": [
+      "Page shows the 2026 season, which is already over (today is 2026-10-13). There is no 2027 information yet.",
+      "This is a council overview page covering five separate day camps in different towns (Waltham, Brewster, Andover, Reading, Plymouth), not one camp. Each camp may need its own listing.",
+      "No prices, session dates or registration dates are on this page. They are in the 2026 Camp Guide, which this page links to.",
+      "Extended care differs by camp: Cedar Hill 7:30-9 AM ($10) and 4-6 PM ($15); Maude Eaton 7:30-9 AM ($10) and 4-5:30 PM ($10); Rice Moody 8:30-9 AM and 4-4:30 PM at no extra cost; none mentioned for Favorite or Wind in the Pines.",
+      "Grade K is recorded as grade_min 0. The page says camper age requirements depend on the camp program.",
+      "Copyright footer reads 2016-2022, but the page content refers to 2026.",
+      "The page says ACA accredited: check it on acacamps.org and add aca_accredited with aca_source_url"
+    ],
+    "unknowns": [
+      "2027 session dates",
+      "Session prices / weekly rate",
+      "Registration opening date and registration URL",
+      "Age ranges for each camp program",
+      "Whether meals are included (Rice Moody campers bring their own lunch; other camps not stated)",
+      "Deposit and refund policy",
+      "Phone and email contact",
+      "Street addresses of each camp",
+      "Special needs accommodations"
+    ],
+    "low_confidence": [
+      {
+        "field": "extended_care",
+        "confidence": 0.75,
+        "quote": "Extended care available: 7:30-9 AM ($10) and 4-6 PM ($15)"
+      },
+      {
+        "field": "season_year",
+        "confidence": 0.7,
+        "quote": "Check out the 2026 Camp Guide to browse all camp sessions"
+      }
+    ],
+    "errors": [
+      "missing required city",
+      "missing required zip",
+      "city None, MA is not in cities.py"
+    ]
+  }
+}

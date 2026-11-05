@@ -6,8 +6,8 @@ import hmac
 import os
 from typing import Any, Literal
 
-from fastapi import APIRouter, Header, HTTPException
-from pydantic import BaseModel, Field
+from fastapi import APIRouter, Header, HTTPException, Request
+from pydantic import BaseModel, Field, ValidationError
 
 from campfinder.owners import service, updates
 
@@ -65,11 +65,16 @@ class Received(BaseModel):
 
 
 @router.post("/internal/owner-mail", response_model=Received, include_in_schema=False)
-async def owner_mail(body: InboundEmail, x_inbound_secret: str | None = Header(default=None)) -> Received:
-    """Listing updates by email. 404 unless OWNER_INBOUND_SECRET is set and matches."""
+async def owner_mail(request: Request, x_inbound_secret: str | None = Header(default=None)) -> Received:
+    """Listing updates by email. 404 unless OWNER_INBOUND_SECRET is set and matches, checked before the body,
+    so a stranger can't tell the endpoint exists."""
     secret = os.environ.get("OWNER_INBOUND_SECRET", "")
     if not secret or not x_inbound_secret or not hmac.compare_digest(secret, x_inbound_secret):
         raise HTTPException(status_code=404, detail="Not found")
+    try:
+        body = InboundEmail.model_validate(await request.json())
+    except (ValueError, ValidationError) as e:
+        raise HTTPException(status_code=422, detail="Expected from_email and text") from e
     row = await updates.receive(body.from_email, body.text, subject=body.subject, message_id=body.message_id,
                                 sender_verified=body.sender_verified)
     return Received(id=str(row["id"]), status=row["status"])

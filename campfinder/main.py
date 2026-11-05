@@ -1,4 +1,4 @@
-"""CampFinder FastAPI application entry point."""
+"""Bunkcheck FastAPI application entry point."""
 
 from __future__ import annotations
 
@@ -19,7 +19,7 @@ from campfinder.database import check_connection, close_pool, init_pool
 from campfinder.services.errors import NotFound
 from campfinder.mcp_server import VERSION as MCP_VERSION, servers as mcp_servers
 from campfinder.routers import activities, activity, agent, camps, household, kit, owners, compare, freshness, operators, planner, search, sessions
-from campfinder.routers import alerts, booking, inquiries, jobs
+from campfinder.routers import alerts, board, booking, brief, inquiries, jobs
 from campfinder.inquiries.service import InquiryError
 
 # Streamable HTTP MCP endpoints, one per host (see mcp_server.py). Stateless JSON
@@ -48,7 +48,7 @@ def create_app() -> FastAPI:
     settings = get_settings()
 
     app = FastAPI(
-        title="CampFinder API",
+        title="Bunkcheck API",
         description=(
             "Agent-first camp discovery platform. "
             "Verified camp data served through a structured API."
@@ -83,6 +83,8 @@ def create_app() -> FastAPI:
     app.include_router(freshness.router, prefix=prefix, tags=["Freshness"])
     app.include_router(operators.router, prefix=prefix, tags=["Operators"])
     app.include_router(agent.router, prefix=prefix, tags=["Agent"])
+    app.include_router(brief.router, prefix=prefix, tags=["Summer brief"])
+    app.include_router(board.router, prefix=prefix, tags=["Summer Board"])
     app.include_router(kit.router, prefix=prefix, tags=["Info kit"])
     app.include_router(activities.router, prefix=prefix, tags=["Activities"])
     app.include_router(household.router, prefix=prefix, tags=["Household"])
@@ -137,7 +139,7 @@ def _rate_limited(asgi_app, per_minute: int):
         if len(window) >= per_minute:
             body = json.dumps({
                 "jsonrpc": "2.0", "id": None,
-                "error": {"code": -32000, "message": "Too many requests to CampFinder. Try again in a minute."},
+                "error": {"code": -32000, "message": "Too many requests to Bunkcheck. Try again in a minute."},
             }).encode()
             await send({"type": "http.response.start", "status": 429, "headers": [
                 (b"content-type", b"application/json"), (b"retry-after", b"60"),

@@ -1,0 +1,135 @@
+{
+  "slug": "lexrec-summer-day-camp-lexington",
+  "name": "LexRec Summer Day Camp",
+  "operator_name": "Town of Lexington Recreation & Community Programs (LexRec)",
+  "website_url": "https://www.lexingtonma.gov/2503/LexRec-Summer-Day-Camp",
+  "registration_url": "https://lexrecma.myrec.com/info/activities/program_details.aspx?ProgramID=30941",
+  "city": "Lexington",
+  "state": "MA",
+  "zip": null,
+  "camp_type": "day",
+  "primary_categories": [
+    "sports",
+    "arts"
+  ],
+  "grade_min": 0,
+  "grade_max": 8,
+  "description_short": "A town-run, outdoor-based day camp at the Center Recreation Complex in Lexington for children entering grades K–8, split into age groups (Primary K–1, Lower 2–3, Middle 4–5, Upper 6–8). Campers in grades K–5 get swim lessons Monday–Thursday mornings, and Upper Camp (6–8) goes on community trips and off-site outings.",
+  "activities": [
+    "Swim lessons (Red Cross Learn to Swim)",
+    "Free swim at Town Pool",
+    "Arts and crafts",
+    "Games",
+    "Recreational sports",
+    "Imaginative play",
+    "Group challenges",
+    "Community outings and local trips (Upper Camp)",
+    "Leader in Training program (grade 9+)"
+  ],
+  "special_needs_notes": "The camp describes itself as inclusive and links to an \"Inclusion Services at Camp\" resource. The Leader in Training program encourages applicants of all abilities to apply. Its eligibility rules include being able to handle personal care on their own and manage their own behavior with minimal staff help.",
+  "swim_waterfront_notes": "Campers use the Lexington Town Pool. Grades K–5 have 30-minute Red Cross Learn to Swim lessons Monday–Thursday mornings with Red Cross Lifeguard-certified instructors, and the pool is open to the public during these lessons. Upper Camp does not take lessons. Free swim is Monday, Wednesday and Friday afternoons. Parents choose a wristband level: red means the wading pool or splash pad only (2 ft); yellow means the Garrity Pool (4.5 ft) with a lifejacket; green means a camper who passed the deep-end test can use all pools (13 ft) without a lifejacket. Swim tests are free at the pool before camp starts. USCG Type II and III lifejackets are provided.",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Leader in Training (LIT) Session 1 (entering grade 9+)",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-17",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Leader in Training (LIT) Session 2 (entering grade 9+)",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-31",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Leader in Training (LIT) Session 3 (entering grade 9+)",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-14",
+      "price": null,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.lexingtonma.gov/2503/LexRec-Summer-Day-Camp",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "description_short",
+        "special_needs_notes",
+        "swim_waterfront_notes",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.lexingtonma.gov/2503/LexRec-Summer-Day-Camp",
+      "kind": "html",
+      "title": "LexRec Summer Day Camp | Lexington, MAArrow LeftArrow RightSlideshow Left ArrowSlideshow Right Arrow"
+    },
+    "warnings": [
+      "This page covers the 2026 season, which is already over (today is 2026-10-13). No 2027 information is posted yet.",
+      "The only dated sessions on the page are for the Leader in Training (LIT) program, for teens entering grade 9 or higher, and they need an application. The weekly dates for the main K–8 day camp are not listed; they may be on the linked registration page or information sheet.",
+      "No prices are given on this page.",
+      "The page is the Town of Lexington's official website, and its only contact details are the general Town Office Building ones (1625 Massachusetts Ave, 781-862-0500). These were not recorded as camp details.",
+      "grade_min 0 stands for kindergarten."
+    ],
+    "unknowns": [
+      "2027 season dates, weeks and registration opening date",
+      "Weekly price / session prices",
+      "Daily camp hours",
+      "Street address of the Center Recreation Complex",
+      "Camp-specific phone and email",
+      "Extended care (before/after camp)",
+      "Meals/snacks provided or not",
+      "Transportation",
+      "Financial aid or fee assistance",
+      "Deposit and refund policy",
+      "Camper ages (only grades given)",
+      "ACA accreditation",
+      "Availability/waitlist status",
+      "LIT program price"
+    ],
+    "low_confidence": [
+      {
+        "field": "primary_categories",
+        "confidence": 0.7,
+        "quote": "arts and crafts, team games, and recreational sports"
+      },
+      {
+        "field": "sessions[0].start_date",
+        "confidence": 0.7,
+        "quote": "Session 1: July 6 - July 17"
+      },
+      {
+        "field": "sessions[1].start_date",
+        "confidence": 0.7,
+        "quote": "Session 2: July 20 - July 31"
+      },
+      {
+        "field": "sessions[2].start_date",
+        "confidence": 0.7,
+        "quote": "Session 3: August 3 - August 14"
+      }
+    ],
+    "errors": [
+      "missing required zip"
+    ]
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "slug": "scarborough-summer-day-camp-scarborough",
+  "name": "Scarborough Summer Day Camp",
+  "operator_name": "Scarborough Community Services (Town of Scarborough)",
+  "website_url": "https://www.scarboroughmaine.org/departments/community-services/child-care/summer-day-camp",
+  "email": "comserv@scarboroughmaine.org",
+  "phone": "(207) 730-4150",
+  "city": "Scarborough",
+  "state": "ME",
+  "zip": "04070",
+  "camp_type": "day",
+  "primary_categories": [
+    "arts",
+    "sports"
+  ],
+  "grade_min": 0,
+  "grade_max": 6,
+  "description_short": "A town-run day camp for Scarborough resident children entering grades K–6, held at Wentworth School. You sign up for the whole 7-week summer at once, and an optional Week 8 can be added. Campers do art, gym, themed programs and field trips.",
+  "activities": [
+    "Art",
+    "Gym activities",
+    "Theme programming",
+    "Field trips"
+  ],
+  "price_min": 1650,
+  "price_max": 1750,
+  "extended_care": true,
+  "refund_policy_summary": "You enroll for all 7 weeks as one program. You can't drop single weeks; withdrawing means dropping all seven. The page doesn't say whether money is refunded.",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "7-Week Program (2026)",
+      "start_date": "2026-06-29",
+      "end_date": "2026-08-13",
+      "price": 1650,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 8 Add-On (under the tent, 2026)",
+      "start_date": "2026-08-17",
+      "end_date": "2026-08-20",
+      "price": 275,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.scarboroughmaine.org/departments/community-services/child-care/summer-day-camp",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "phone",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "description_short",
+        "price_min",
+        "price_max",
+        "extended_care",
+        "refund_policy_summary",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.scarboroughmaine.org/departments/community-services/child-care/summer-day-camp",
+      "kind": "html",
+      "title": "Summer Day Camp - Scarborough, Town of"
+    },
+    "warnings": [
+      "Old season: the page shows only Summer 2026, which is over (today is 2026-10-13). Nothing has been posted for 2027 yet.",
+      "The 2026 dates were labeled 'tentative'. There was no camp on 7/3/2026, and Week 8 was 'not guaranteed'.",
+      "Only Scarborough residents can enroll ('any resident child').",
+      "The page doesn't sell single weeks; you must enroll for the full 7 weeks. So price_per_week is left blank. Price range: $1,650 to pay in full, $1,750 on the payment plan. Week 8 is an extra $275.",
+      "Conflicting payment info: one part of the page says 'No payment is required at the time of registration', but Week 8 is 'Paid in full at registration'.",
+      "Enrollment is capped by staffing levels; once full, families go on a waitlist."
+    ],
+    "unknowns": [
+      "2027 dates, prices and registration opening date",
+      "Wentworth School street address (the page gives the Community Services office at 418 Payne Road and Town Hall at 259 US Route One)",
+      "Camper age range (only grades are given)",
+      "Online registration (WebTrac) link",
+      "Whether money is refunded if you withdraw",
+      "Whether meals or snacks are provided",
+      "Whether transportation to camp is provided (field trips are mentioned)",
+      "Financial aid or scholarships",
+      "Deposit requirements",
+      "ACA accreditation",
+      "Swimming or waterfront activities",
+      "Support for children with special needs",
+      "Whether spots are open or waitlisted"
+    ],
+    "low_confidence": [
+      {
+        "field": "extended_care",
+        "confidence": 0.75,
+        "quote": "Parents may utilize the span of camp hours with no additional charge... Programming specific to groups typically runs 8:30 am to 4:00 pm."
+      },
+      {
+        "field": "primary_categories",
+        "confidence": 0.6,
+        "quote": "Art and gym activities, theme programming, field trips"
+      },
+      {
+        "field": "sessions[1].start_date",
+        "confidence": 0.75,
+        "quote": "Week 8 (under the tent) is tentatively 8/17-8/20"
+      },
+      {
+        "field": "sessions[1].end_date",
+        "confidence": 0.75,
+        "quote": "Week 8 (under the tent) is tentatively 8/17-8/20"
+      },
+      {
+        "field": "sessions[1].registration_opens_at",
+        "confidence": 0.7,
+        "quote": "Indicate whether you want Week 8 (not guaranteed)."
+      }
+    ],
+    "errors": []
+  }
+}

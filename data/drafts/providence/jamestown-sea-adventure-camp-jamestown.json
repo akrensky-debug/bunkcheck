@@ -1,0 +1,93 @@
+{
+  "slug": "jamestown-sea-adventure-camp-jamestown",
+  "name": "Jamestown Sea Adventure Camp",
+  "operator_name": "Conanicut Island Sailing Foundation (CISF)",
+  "website_url": "https://www.jamestownsailing.org",
+  "registration_url": "https://seaadventurecamp.campbrainregistration.com/",
+  "phone": "401-855-6643",
+  "street_address": "1050 Fort Getty Road",
+  "city": "Jamestown",
+  "state": "RI",
+  "zip": "02835",
+  "primary_categories": [
+    "nature",
+    "sports"
+  ],
+  "age_min": 4,
+  "age_max": 16,
+  "description_short": "One-week sessions at Fort Getty in Jamestown for kids ages 4 to 16. Days are split between sailing, the salt marsh, the rocky shore and touch tanks, and campers don't need any sailing experience.",
+  "activities": [
+    "Sailing",
+    "Salt marsh exploration",
+    "Rocky shore exploration",
+    "Touch tanks",
+    "Marine science"
+  ],
+  "financial_aid": true,
+  "sources": [
+    {
+      "url": "https://www.jamestownsailing.org",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "primary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "financial_aid"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.jamestownsailing.org",
+      "kind": "html",
+      "title": "CISF | Education, access, and adventure on the water"
+    },
+    "warnings": [
+      "Source is the CISF homepage, not a camp-specific page. It covers several programs (after-school, adult keelboat, community sailing). The Sea Adventure Camp Pricing and Schedule pages are linked but were not provided.",
+      "No season year, session dates or prices appear for the camp. season_year is left blank. Today is 2026-10-13, so the next season would be summer 2027.",
+      "Camp type is not stated outright. Sessions are one week long, but the page doesn't say whether campers stay overnight.",
+      "The site also mentions a separate '*NEW* Coastal Ecology Camp' with no details."
+    ],
+    "unknowns": [
+      "2027 session dates",
+      "Weekly price and price range",
+      "Daily hours and whether it is a day camp (the page doesn't say if campers go home each night)",
+      "Extended care / before- and after-care",
+      "Whether meals or snacks are included",
+      "Deposit and refund policy",
+      "When registration opens for 2027 and how many spots are left",
+      "Swim requirements and waterfront safety policies",
+      "Whether transportation is offered",
+      "ACA accreditation",
+      "Email address",
+      "Grade ranges or age groups for each week",
+      "Details of the new Coastal Ecology Camp",
+      "Support for children with special needs"
+    ],
+    "low_confidence": [
+      {
+        "field": "primary_categories",
+        "confidence": 0.75,
+        "quote": "seasonal programming: sailing, marine science, fishing, summer camps"
+      }
+    ],
+    "errors": [
+      "missing required camp_type",
+      "missing required season_year",
+      "camp_type must be one of ['day', 'sleepaway', 'specialty']"
+    ]
+  }
+}

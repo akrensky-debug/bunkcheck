@@ -1,75 +1,56 @@
 import type { CampSearchResult } from '@/lib/api'
-import TrustBadge from './TrustBadge'
 import { Events } from '@/lib/analytics'
+import { ListRow, Meta, Price, TrustMark } from '@/components/ui'
 
 interface Props {
   camp: CampSearchResult
+  /** Position in the results. Kept for callers; no longer shown. */
   rank?: number
 }
 
-export default function CampCard({ camp, rank }: Props) {
-  const typeLabel: Record<string, string> = {
-    day: 'Day Camp', sleepaway: 'Sleepaway', specialty: 'Specialty'
-  }
+export const CAMP_TYPE_LABEL: Record<string, string> = {
+  day: 'Day camp', sleepaway: 'Sleepaway', specialty: 'Specialty',
+}
+
+function cap(s: string) {
+  return s.charAt(0).toUpperCase() + s.slice(1)
+}
+
+/** One camp as a row in a List: name and price, a meta line, description, why it matched, trust. */
+export default function CampCard({ camp }: Props) {
+  const ages = camp.age_min != null && camp.age_max != null ? `Ages ${camp.age_min}–${camp.age_max}` : null
+  const place = [camp.city && `${camp.city}, ${camp.state}`, camp.distance_miles != null && `${camp.distance_miles} mi`]
+    .filter(Boolean).join(' · ')
+  const interests = camp.primary_categories?.slice(0, 2).map(cap).join(', ')
 
   return (
-    <a
-      href={`/camps/${camp.slug || camp.id}`}
-      onClick={() => Events.campDetailViewed(camp.id)}
-      className="block bg-white rounded-2xl border border-gray-200 p-5 hover:border-brand-300 hover:shadow-md transition-all relative"
-    >
-
-      <div className="flex items-start justify-between gap-3 mb-3">
-        <div className="flex-1 min-w-0">
-          <div className="flex items-center gap-2 mb-1">
-            {rank && <span className="text-xs font-bold text-brand-600 bg-brand-50 px-2 py-0.5 rounded-full">#{rank}</span>}
-            <span className="text-xs text-gray-500 font-medium">{typeLabel[camp.camp_type] ?? camp.camp_type}</span>
-          </div>
-          <h3 className="font-bold text-gray-900 text-lg leading-tight truncate">{camp.name}</h3>
-          <p className="text-sm text-gray-500 mt-0.5">
-            {camp.city}, {camp.state}
-            {camp.distance_miles != null && ` · ${camp.distance_miles} mi`}
-          </p>
-        </div>
-        {camp.price_per_week && (
-          <div className="text-right shrink-0">
-            <span className="text-lg font-bold text-gray-900">${Math.round(camp.price_per_week)}</span>
-            <span className="text-xs text-gray-400">/wk</span>
-          </div>
-        )}
+    <ListRow href={`/camps/${camp.slug || camp.id}`} onClick={() => Events.campDetailViewed(camp.id)}>
+      <div className="flex items-baseline justify-between gap-4">
+        <h3 className="font-display text-h3 text-ink min-w-0">{camp.name}</h3>
+        {camp.price_per_week ? <Price amount={camp.price_per_week} unit="/wk" className="shrink-0" /> : null}
       </div>
-
+      <Meta
+        className="mt-1"
+        parts={[
+          place,
+          CAMP_TYPE_LABEL[camp.camp_type] ?? camp.camp_type,
+          ages,
+          interests,
+          camp.transportation && 'Transport',
+          camp.extended_care && 'Extended care',
+          camp.financial_aid && 'Financial aid',
+          camp.aca_accredited && 'ACA accredited',
+        ]}
+      />
       {camp.description_short && (
-        <p className="text-sm text-gray-600 mb-3 line-clamp-2">{camp.description_short}</p>
+        <p className="mt-2 max-w-measure text-small text-muted line-clamp-2">{camp.description_short}</p>
       )}
-
-      <div className="flex flex-wrap gap-2 mb-3">
-        {camp.primary_categories?.slice(0, 3).map(cat => (
-          <span key={cat} className="text-xs bg-gray-100 text-gray-600 px-2 py-0.5 rounded-full capitalize">{cat}</span>
-        ))}
-        {camp.age_min != null && camp.age_max != null && (
-          <span className="text-xs bg-gray-100 text-gray-600 px-2 py-0.5 rounded-full">
-            Ages {camp.age_min}-{camp.age_max}
-          </span>
+      <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-1">
+        {camp.match_reasons?.length > 0 && (
+          <span className="text-small font-semibold text-ink">{camp.match_reasons.slice(0, 2).join(' · ')}</span>
         )}
+        <TrustMark status={camp.verification_status} />
       </div>
-
-      <div className="flex items-center justify-between">
-        <TrustBadge status={camp.verification_status} aca={camp.aca_accredited} />
-        <div className="flex gap-2 text-xs text-gray-400">
-          {camp.transportation && <span>🚌 Transport</span>}
-          {camp.extended_care && <span>⏰ Extended care</span>}
-          {camp.financial_aid && <span>💰 Aid available</span>}
-        </div>
-      </div>
-
-      {camp.match_reasons && camp.match_reasons.length > 0 && (
-        <div className="mt-3 pt-3 border-t border-gray-100">
-          <p className="text-xs text-brand-600 font-medium">
-            {camp.match_reasons.slice(0, 2).join(' · ')}
-          </p>
-        </div>
-      )}
-    </a>
+    </ListRow>
   )
 }

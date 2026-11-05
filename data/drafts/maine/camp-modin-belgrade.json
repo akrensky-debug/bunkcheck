@@ -1,0 +1,155 @@
+{
+  "slug": "camp-modin-belgrade",
+  "name": "Camp Modin",
+  "operator_name": "KEF Camping Co. Inc. dba Camp Modin",
+  "website_url": "https://www.modin.com/",
+  "registration_url": "https://www.modin.com/enrollment",
+  "email": "info@modin.com",
+  "phone": "+1.207.465.4444",
+  "city": "Belgrade",
+  "state": "ME",
+  "zip": null,
+  "camp_type": "sleepaway",
+  "primary_categories": [
+    "sports",
+    "arts",
+    "performing_arts",
+    "nature",
+    "faith"
+  ],
+  "age_min": 7,
+  "age_max": 16,
+  "grade_min": 3,
+  "grade_max": 11,
+  "description_short": "A co-ed Jewish overnight camp on Salmon Lake in Maine's Belgrade Lakes region, for ages 7-16. It offers 3.5-week and 7-week sessions covering land and water sports, arts, performing arts and wilderness trips, with Shabbat observance and a kosher kitchen.",
+  "activities": [
+    "Sailing",
+    "Climbing wall",
+    "Theater",
+    "Swimming",
+    "Water-skiing",
+    "Canoeing",
+    "Tennis",
+    "Baseball",
+    "Basketball",
+    "Soccer",
+    "Arts & crafts",
+    "Radio station",
+    "Nature",
+    "Pioneering/wilderness trips",
+    "Horseback riding (optional extra)",
+    "Golf (optional extra)",
+    "Color war",
+    "Shabbat programming"
+  ],
+  "price_min": 10800,
+  "price_max": 17700,
+  "transportation": true,
+  "meals_included": true,
+  "special_needs_notes": "Diet only: kosher kitchen, with vegetarian and gluten-free options. The camp says it is nut and sesame aware and can handle certain food allergies, with details on request. The page does not mention support for other special needs.",
+  "swim_waterfront_notes": "On Salmon Lake, which the camp describes as a clear, sand-bottom, spring-fed lake with water around 75-80°F. Activities include swim lessons, general swim, sailing, canoeing and water-skiing with four tournament ski boats.",
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Full Session",
+      "start_date": "2027-06-23",
+      "end_date": "2027-08-08",
+      "price": 17700,
+      "availability": "unknown"
+    },
+    {
+      "name": "First Session",
+      "start_date": "2027-06-23",
+      "end_date": "2027-07-18",
+      "price": 10800,
+      "availability": "unknown"
+    },
+    {
+      "name": "Second Session",
+      "start_date": "2027-07-18",
+      "end_date": "2027-08-08",
+      "price": 10800,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.modin.com/parents/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "grade_min",
+        "grade_max",
+        "description_short",
+        "price_min",
+        "price_max",
+        "transportation",
+        "meals_included",
+        "special_needs_notes",
+        "swim_waterfront_notes",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.modin.com/parents/",
+      "kind": "html",
+      "title": "Parents: Everything You Need to Know: Camp Modin, Belgrade, Maine"
+    },
+    "warnings": [
+      "The rates table is headed \"Summer 2026\", but every session date in it is in 2027. The weekdays given (for example Wed. June 23) match the 2027 calendar, so I recorded this as the 2027 season. Ask the camp to confirm the rates are for 2027.",
+      "Prices shown are the discounted rates for cash, ACH or wire payments. Paying by credit card costs 3% more.",
+      "The only mailing address on the page is incomplete (\"Suite 265H, Scarsdale, NY 10583\"). It looks like the office address, not the camp's location in Belgrade, Maine.",
+      "Optional extras cost more: linen service $380 per session, horseback riding $595, golf $575, the Yonkers bus $260 each way, the Portland shuttle $95 each way and the Boston Logan shuttle $160 each way. There are also grade-specific trip fees.",
+      "The page gives drive times that don't match: Boston is \"three hours\" in one place and \"roughly two hours\" in another, and New York City is six hours in one place and five in another.",
+      "The page doesn't say whether the 3.5-week sessions are open to every age."
+    ],
+    "unknowns": [
+      "Street address of the camp",
+      "Session availability and when 2027 enrollment opens",
+      "Deposit amount",
+      "Refund and cancellation policy",
+      "Financial aid. The page only mentions \"tuition discounts of up to $1,200\" and gives no details",
+      "ACA accreditation",
+      "Whether meals are included in tuition (meals are described, but this isn't stated outright)",
+      "Supports for campers with special needs other than diet",
+      "Cost of the Montreal Teen Tour (listed as TBD)",
+      "Cost of the Lexington, MA bus"
+    ],
+    "low_confidence": [
+      {
+        "field": "grade_min",
+        "confidence": 0.75,
+        "quote": "Ages 7-9, entering grades 3 & 4"
+      },
+      {
+        "field": "grade_max",
+        "confidence": 0.75,
+        "quote": "Ages 15-16, entering grades 11"
+      },
+      {
+        "field": "meals_included",
+        "confidence": 0.7,
+        "quote": "The kitchen at Modin offers carefully prepared menus with a variety of selections."
+      }
+    ],
+    "errors": [
+      "missing required zip"
+    ]
+  }
+}

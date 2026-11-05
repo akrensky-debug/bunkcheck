@@ -1,0 +1,95 @@
+{
+  "slug": "camp-manitou",
+  "name": "Camp Manitou",
+  "website_url": "https://campmanitou.com/",
+  "phone": "(207) 465-2271",
+  "city": null,
+  "state": "ME",
+  "zip": null,
+  "camp_type": "sleepaway",
+  "primary_categories": [
+    "sports",
+    "arts"
+  ],
+  "age_min": 7,
+  "age_max": 16,
+  "description_short": "Camp Manitou is a summer camp for boys ages 7 to 16 in the Belgrade Lakes region of Maine, founded in 1947. It offers sports, arts and water activities.",
+  "activities": [
+    "Sports",
+    "Arts",
+    "Water activities",
+    "Swimming",
+    "Boating"
+  ],
+  "sources": [
+    {
+      "url": "https://campmanitou.com/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "website_url",
+        "phone",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://campmanitou.com/",
+      "kind": "html",
+      "title": "Camp Manitou, Best Boys Summer Camp for Sports, Arts, Water"
+    },
+    "warnings": [
+      "This is the camp's homepage only; it has no dates, prices or session details. Those are on the separate Sessions page.",
+      "The page mentions 'two back to back Covid-free summers', so some homepage content may be several years old.",
+      "Camp type is inferred as sleepaway ('summer home', Visiting Day, Little Brother Sleepover); the page does not state it outright.",
+      "The camp is for boys only. The site also mentions a sister camp and a short-session camp, which are not covered here.",
+      "A free one-day 'Fantasy Camp' trial is offered; this is separate from regular sessions."
+    ],
+    "unknowns": [
+      "Season year and 2027 session dates (see https://campmanitou.com/sessions)",
+      "Tuition / session prices",
+      "Registration opening date and registration URL",
+      "Exact street address, city and ZIP",
+      "Email address",
+      "ACA accreditation (page says 'Proud Member of' without naming the organization)",
+      "Deposit and refund policy",
+      "Financial aid",
+      "Transportation to camp",
+      "Whether meals are included (a 'Camp Food' page exists)",
+      "Swim/waterfront supervision details",
+      "Special needs support"
+    ],
+    "low_confidence": [
+      {
+        "field": "camp_type",
+        "confidence": 0.7,
+        "quote": "why so many boys make Manitou their summer home"
+      },
+      {
+        "field": "activities",
+        "confidence": 0.7,
+        "quote": "Run, Play, Swim"
+      },
+      {
+        "field": "activities",
+        "confidence": 0.7,
+        "quote": "even go on a boat ride on the lake"
+      }
+    ],
+    "errors": [
+      "missing required city",
+      "missing required zip",
+      "missing required season_year",
+      "city None, ME is not in cities.py"
+    ]
+  }
+}

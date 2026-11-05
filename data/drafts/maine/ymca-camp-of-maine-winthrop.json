@@ -1,0 +1,90 @@
+{
+  "slug": "ymca-camp-of-maine-winthrop",
+  "name": "YMCA Camp of Maine",
+  "operator_name": "YMCA Camp Of Maine",
+  "website_url": "https://www.maineycamp.org/",
+  "registration_url": "https://maineycamp.campintouch.com/ui/forms/application/camper/App",
+  "email": "info@maineycamp.org",
+  "phone": "207-395-4200",
+  "street_address": "305 Winthrop Center Rd",
+  "city": "Winthrop",
+  "state": "ME",
+  "zip": "04364",
+  "camp_type": "sleepaway",
+  "age_min": 7,
+  "age_max": 16,
+  "description_short": "Overnight YMCA camp founded in 1915 on the shores of Lake Cobbossee in Winthrop, Maine, offering one- and two-week sessions for boys and girls. Programs listed include Traditional Camp, Explorer's Camp and a LIT/CIT program.",
+  "financial_aid": true,
+  "season_year": 2027,
+  "sources": [
+    {
+      "url": "https://www.maineycamp.org/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "age_min",
+        "age_max",
+        "description_short",
+        "financial_aid"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.maineycamp.org/",
+      "kind": "html",
+      "title": "YMCA Camp of Maine | A Maine summer camp experience for youth ages 8-15FacebookInstagramYouTube"
+    },
+    "warnings": [
+      "Source is the camp homepage only; dates, fees, and session details are on a separate page (https://www.maineycamp.org/programs/dates-fees) that was not provided.",
+      "Conflicting age ranges: page title says 'youth ages 8-15' while body text says 'ages 7 - 16 years'. Recorded 7-16; confirm with camp.",
+      "Season year 2027 inferred from 'UNTIL SUMMER 2027' countdown; no 2027 dates or prices are shown."
+    ],
+    "unknowns": [
+      "2027 session dates",
+      "Session prices / fees",
+      "Exact age range (8-15 vs 7-16)",
+      "Registration open date",
+      "Deposit requirements",
+      "Refund policy",
+      "Transportation / transfers (a 'Transfers and Laundry' page exists but content not shown)",
+      "Activities offered",
+      "Meals details",
+      "Swim/waterfront details",
+      "ACA accreditation",
+      "Special needs accommodations",
+      "Availability of sessions",
+      "Financial aid details and eligibility"
+    ],
+    "low_confidence": [
+      {
+        "field": "age_min",
+        "confidence": 0.5,
+        "quote": "YCamp has programs for boys and girls ages 7 - 16 years."
+      },
+      {
+        "field": "age_max",
+        "confidence": 0.5,
+        "quote": "YCamp has programs for boys and girls ages 7 - 16 years."
+      },
+      {
+        "field": "financial_aid",
+        "confidence": 0.75,
+        "quote": "Financial Aid ... Military Family Scholarship ... Bill Munsey Campership"
+      }
+    ],
+    "errors": []
+  }
+}

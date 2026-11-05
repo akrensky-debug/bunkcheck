@@ -1,0 +1,104 @@
+{
+  "slug": "teen-camp-greenwich",
+  "name": "Teen Camp",
+  "operator_name": "Boys & Girls Club of Greenwich",
+  "website_url": "https://bgcg.org/what-we-do/summer-camps/teen-camp.html",
+  "phone": "(203) 869-3224",
+  "street_address": "4 Horseneck Ln",
+  "city": "Greenwich",
+  "state": "CT",
+  "zip": "06830",
+  "camp_type": "day",
+  "age_min": 13,
+  "age_max": 15,
+  "description_short": "A weekly summer program for teens ages 13–15 run by the Boys & Girls Club of Greenwich. It includes field trips and local travel, service learning, leadership training, and activities such as cooking classes and yoga.",
+  "activities": [
+    "Field trips",
+    "Local travel",
+    "Service learning",
+    "Leadership training",
+    "Cooking classes",
+    "Yoga",
+    "Walks to Greenwich Avenue"
+  ],
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Teen Camp 2026 (booked by the week)",
+      "start_date": "2026-06-22",
+      "end_date": "2026-08-14",
+      "price": null,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://bgcg.org/what-we-do/summer-camps/teen-camp.html",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://bgcg.org/what-we-do/summer-camps/teen-camp.html",
+      "kind": "html",
+      "title": "Teen Camp : Summer Camps : What We Do : Boys & Girls Club of Greenwich"
+    },
+    "warnings": [
+      "The page only shows the 2026 season (June 22 – August 14, 2026), which is already over as of 2026-10-13. Dates for 2027 have not been posted.",
+      "The camp is offered week by week, but the page does not list the individual weeks. It is recorded as one season-long block.",
+      "The address and phone number are the Club's main contact details from the page footer. The page does not say exactly where Teen Camp meets.",
+      "The page says the program is 'designed for high school students' but lists ages 13–15, which includes some middle-school ages.",
+      "The page does not directly say campers go home each night. 'Day' is inferred from the field-trip and downtown-walk format."
+    ],
+    "unknowns": [
+      "2027 season dates",
+      "Weekly price / tuition",
+      "Whether a Club membership is required",
+      "Daily hours",
+      "Registration open date and registration URL",
+      "Deposit and refund policy",
+      "Financial aid availability",
+      "Extended care",
+      "Transportation",
+      "Meals",
+      "Whether there is a swim or pool program for teens",
+      "Exact meeting location",
+      "Email contact",
+      "ACA accreditation",
+      "Grade range",
+      "Accommodations for special needs",
+      "Availability"
+    ],
+    "low_confidence": [
+      {
+        "field": "camp_type",
+        "confidence": 0.6,
+        "quote": "BGCG runs popular summer programs at our downtown location and at Camp Simmons"
+      },
+      {
+        "field": "street_address",
+        "confidence": 0.7,
+        "quote": "4 Horseneck Ln Greenwich, Connecticut 06830"
+      }
+    ],
+    "errors": []
+  }
+}

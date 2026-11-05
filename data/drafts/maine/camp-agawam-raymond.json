@@ -1,0 +1,155 @@
+{
+  "slug": "camp-agawam-raymond",
+  "name": "Camp Agawam",
+  "website_url": "https://campagawam.org/",
+  "registration_url": "https://campagawam.campintouch.com/ui/forms/application/camper/App",
+  "phone": "(207) 627-4780",
+  "street_address": "54 Agawam Road",
+  "city": "Raymond",
+  "state": "ME",
+  "zip": "04071",
+  "camp_type": "sleepaway",
+  "primary_categories": [
+    "nature",
+    "sports"
+  ],
+  "age_min": 8,
+  "age_max": 15,
+  "description_short": "An overnight summer camp for boys in Raymond, Maine, with 7-week and 3.5-week sessions and a Senior Club leadership program for former campers. Tuition covers meals, weekly laundry and most activities.",
+  "activities": [
+    "Canoe trips",
+    "Hiking trips",
+    "Tennis",
+    "Lifeguard certification (Senior Club)",
+    "Wilderness first aid certification (Senior Club)"
+  ],
+  "price_min": 8500,
+  "price_max": 13550,
+  "transportation": true,
+  "meals_included": true,
+  "refund_policy_summary": "$2,000 deposit is non-refundable if enrollment is cancelled after January 1. If a camper leaves during the summer by mutual agreement with the director for health or adjustment reasons, tuition is refunded pro rata. No refund if he leaves by his own choice or for breaking camp rules. Unspent money in the $300 personal account is refunded.",
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "7-week session",
+      "start_date": "2027-06-30",
+      "end_date": "2027-08-17",
+      "price": 13550,
+      "availability": "unknown"
+    },
+    {
+      "name": "3-1/2 week session, first half (ages 8-11)",
+      "start_date": "2027-06-30",
+      "end_date": "2027-07-25",
+      "price": 8500,
+      "availability": "unknown"
+    },
+    {
+      "name": "3-1/2 week session, second half (ages 8-11)",
+      "start_date": "2027-07-26",
+      "end_date": "2027-08-17",
+      "price": 8500,
+      "availability": "unknown"
+    },
+    {
+      "name": "3-1/2 week session, first half (ages 12-14)",
+      "start_date": "2027-06-30",
+      "end_date": "2027-07-25",
+      "price": 9700,
+      "availability": "unknown"
+    },
+    {
+      "name": "3-1/2 week session, second half (ages 12-14)",
+      "start_date": "2027-07-26",
+      "end_date": "2027-08-17",
+      "price": 9700,
+      "availability": "unknown"
+    },
+    {
+      "name": "Senior Club",
+      "start_date": "2027-06-27",
+      "end_date": "2027-08-17",
+      "price": 8500,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://campagawam.org/enrollment-and-pricing/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "price_min",
+        "price_max",
+        "transportation",
+        "meals_included",
+        "refund_policy_summary",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://campagawam.org/enrollment-and-pricing/",
+      "kind": "html",
+      "title": "Dates and Rates - Camp Agawam"
+    },
+    "warnings": [
+      "Appears to be a boys-only camp (page refers to campers as 'his' and Senior Club 'boys'); confirm with the camp.",
+      "Extra costs beyond tuition: $300 personal account deposit added to tuition, optional transportation ($120-$240 each way), and charges for longer trips.",
+      "The page says 'Pricing & Availability subject to change without notice.'",
+      "Age range 8-15 is pieced together from the session ages and the mention of 'campers aged 13-15'; the page does not give an overall age range."
+    ],
+    "unknowns": [
+      "Age range for the 7-week session",
+      "Exact age/eligibility for Senior Club (described only as former campers who have completed their 15-year-old summer)",
+      "Whether younger campers (under 8) are accepted",
+      "Session availability / openings",
+      "Financial aid or scholarships",
+      "ACA accreditation",
+      "Email contact",
+      "Swim/waterfront details",
+      "Special needs accommodations",
+      "Full list of daily activities",
+      "Registration opening date for 2027"
+    ],
+    "low_confidence": [
+      {
+        "field": "age_min",
+        "confidence": 0.7,
+        "quote": "3-1/2 week session (ages 8-11)"
+      },
+      {
+        "field": "age_max",
+        "confidence": 0.65,
+        "quote": "Upper and Upper Middle Campus trips (campers aged 13-15)"
+      },
+      {
+        "field": "activities",
+        "confidence": 0.6,
+        "quote": "Tennis racket restringing"
+      },
+      {
+        "field": "primary_categories",
+        "confidence": 0.6,
+        "quote": "Allagash Canoe Trip, Rangeley Lakes, Mt. Katahdin"
+      }
+    ],
+    "errors": []
+  }
+}

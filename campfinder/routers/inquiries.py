@@ -1,5 +1,5 @@
 """
-Inquiries on CampFinder itself: the parent's confirm page, the camp's answer page, the camp
+Inquiries on Bunkcheck itself: the parent's confirm page, the camp's answer page, the camp
 page's "Ask this camp" form, and the inbound hook for camps' email replies.
 
 Partners create inquiries through the Activity API (routers/activity.py) and assistants

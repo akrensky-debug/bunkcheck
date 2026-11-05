@@ -1,0 +1,73 @@
+{
+  "slug": "camp-ruggles",
+  "name": "Camp Ruggles",
+  "operator_name": "Camp Ruggles, Inc.",
+  "website_url": "https://www.campruggles.org/",
+  "city": null,
+  "state": null,
+  "zip": null,
+  "primary_categories": [
+    "special_needs"
+  ],
+  "description_short": "Camp Ruggles has run a therapeutic summer program for Rhode Island children for more than 50 years. The program focuses on support, confidence and friendship.",
+  "special_needs_notes": "The camp calls itself a \"therapeutic summer experience.\" This page does not say which needs or conditions it serves.",
+  "sources": [
+    {
+      "url": "https://www.campruggles.org/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "primary_categories",
+        "description_short",
+        "special_needs_notes"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.campruggles.org/",
+      "kind": "html",
+      "title": "Camp Ruggles, Inc."
+    },
+    "warnings": [
+      "This is the homepage, and it is mostly a fundraising message ('The Next 50 Years', 'Support Camp Ruggles'). It has no program details, dates, prices or ages.",
+      "No season year appears, so season_year is left blank.",
+      "Location isn't given. The page only says it serves 'Rhode Island children', so state is left blank. Details are probably on the 'Our Program' and 'Families & Apply' pages, but no links to them were provided."
+    ],
+    "unknowns": [
+      "2027 season dates and sessions",
+      "Prices / tuition and any deposit",
+      "Age or grade range served",
+      "Day camp vs. overnight (camp_type)",
+      "Street address, city, state, zip (page only says it serves Rhode Island children)",
+      "Phone and email",
+      "Registration URL and when registration opens",
+      "Which needs/diagnoses the therapeutic program serves",
+      "Activities offered",
+      "Financial aid availability",
+      "Transportation, meals, extended care",
+      "Swim/waterfront details",
+      "ACA accreditation",
+      "Refund policy"
+    ],
+    "low_confidence": [
+      {
+        "field": "primary_categories",
+        "confidence": 0.6,
+        "quote": "a therapeutic summer experience"
+      }
+    ],
+    "errors": [
+      "missing required city",
+      "missing required state",
+      "missing required zip",
+      "missing required camp_type",
+      "missing required season_year",
+      "camp_type must be one of ['day', 'sleepaway', 'specialty']"
+    ]
+  }
+}

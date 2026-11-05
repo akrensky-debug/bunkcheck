@@ -1,0 +1,116 @@
+{
+  "slug": "gamm-winter-and-spring-intensive-jr-the-gamm-theatre-camps-warwick",
+  "name": "Gamm Winter & Spring Intensive Jr. (The Gamm Theatre Camps)",
+  "operator_name": "The Gamm Theatre",
+  "website_url": "https://www.gammtheatre.org/camps",
+  "email": "education@gammtheatre.org",
+  "phone": "401-723-4266",
+  "street_address": "1245 Jefferson Blvd.",
+  "city": "Warwick",
+  "state": "RI",
+  "zip": "02886",
+  "camp_type": "specialty",
+  "primary_categories": [
+    "performing_arts"
+  ],
+  "grade_min": 2,
+  "grade_max": 8,
+  "description_short": "One-week theatre day programs for students in grades 2–8 during February and April school vacations, led by professional theatre artists. Each week ends with a 35-minute performance on Friday evening.",
+  "activities": [
+    "Musical theatre performance",
+    "Daily rehearsals",
+    "Teambuilding activities",
+    "Ensemble work",
+    "Character development",
+    "Technical theatre",
+    "Final performance"
+  ],
+  "price_min": 250,
+  "price_max": 350,
+  "financial_aid": true,
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Gamm Winter Intensive Jr. – Disney's The Little Mermaid KIDS",
+      "start_date": "2027-02-15",
+      "end_date": "2027-02-19",
+      "price": 350,
+      "availability": "unknown"
+    },
+    {
+      "name": "Gamm Spring Intensive Jr. – Greek Myths",
+      "start_date": "2027-04-19",
+      "end_date": "2027-04-23",
+      "price": 350,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.gammtheatre.org/camps",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "description_short",
+        "price_min",
+        "price_max",
+        "financial_aid",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=1245+Jefferson+Blvd.&city=Warwick&state=RI&benchmark=Public_AR_Current&format=json",
+      "checked": "2026-10-13",
+      "fields": [
+        "zip"
+      ],
+      "note": "ZIP from the US Census geocoder for 1245 JEFFERSON BLVD, WARWICK, RI, 02886"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.gammtheatre.org/camps",
+      "kind": "html",
+      "title": "Camps | The Gamm Theatre | Warwick, RI"
+    },
+    "warnings": [
+      "Filled zip 02886 from the US Census geocoder (1245 JEFFERSON BLVD, WARWICK, RI, 02886)",
+      "Tuition depends on residency: $350 for non-Warwick residents, $250 for Warwick residents. Session prices are recorded at the non-resident rate.",
+      "The Spring Intensive dates give no year (\"April 19th to Friday, April 23rd\"). They were recorded as 2027 because April 19, 2027 falls on a Monday, matching the listed weekday.",
+      "Each session has its own registration link. Winter: https://gammtheatre.my.salesforce-sites.com/ticket/#/instances/a0Fcw00000yuJLZEA2. Spring: https://gammtheatre.my.salesforce-sites.com/ticket/#/instances/a0Fcw00000yuJdJEAU.",
+      "The page describes summer camps (improv, backstage skills, Shakespeare, workshops of one to four weeks) but lists only February and April vacation intensives. No summer sessions are shown yet.",
+      "The page says \"Extended Day Friday\". This appears to mean the Friday evening performance at 7:00 PM, not an extended-care option.",
+      "price_per_week was left empty because the weekly rate depends on residency ($250 or $350)."
+    ],
+    "unknowns": [
+      "Age range (only grades 2-8 are given)",
+      "ZIP code",
+      "Session availability / spots remaining",
+      "Registration open dates",
+      "Whether a deposit is required",
+      "Refund/cancellation policy",
+      "Whether extended care (before/after camp) is offered",
+      "Whether lunch/snacks are provided",
+      "Transportation",
+      "Special needs accommodations",
+      "Summer 2027 camp dates and prices (summer camps are mentioned but not listed)",
+      "ACA accreditation"
+    ],
+    "low_confidence": [],
+    "errors": []
+  }
+}

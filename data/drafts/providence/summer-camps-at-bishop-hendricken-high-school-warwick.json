@@ -1,0 +1,125 @@
+{
+  "slug": "summer-camps-at-bishop-hendricken-high-school-warwick",
+  "name": "Summer Camps at Bishop Hendricken High School",
+  "operator_name": "Bishop Hendricken High School",
+  "website_url": "https://hendricken.com/camps/",
+  "phone": "401.739.3450",
+  "street_address": "2615 Warwick Avenue",
+  "city": "Warwick",
+  "state": "RI",
+  "zip": "02889",
+  "camp_type": "specialty",
+  "primary_categories": [
+    "sports",
+    "performing_arts"
+  ],
+  "grade_min": 0,
+  "grade_max": 12,
+  "description_short": "Bishop Hendricken High School hosts several summer sports camps (baseball, basketball, track, non-contact football) and a theatre workshop on its Warwick campus. Some are run by outside organizations, and each camp has its own registration.",
+  "activities": [
+    "Baseball",
+    "Basketball",
+    "Track and field (sprints, jumps, hurdles, throws)",
+    "Non-contact football",
+    "Theatre"
+  ],
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Best of Hoops Premier Basketball Camp (grades 7-12), 3:30pm-7:00pm",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-02",
+      "price": 175,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://hendricken.com/camps/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "description_short",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://hendricken.com/camps/",
+      "kind": "html",
+      "title": "Summer Camps - Bishop Hendricken High School"
+    },
+    "warnings": [
+      "This page is a school's list of several separate camps, some run by outside groups (e.g., Tape Ball Theatrics, Sprint.hurdle.soar), not a single camp. Each program has its own registration and details.",
+      "No year is given on the page. Dates (June 29–July 2) match 2026 weekdays and the page copyright runs to 2026, so this is most likely the past 2026 season. 2027 information is not yet posted.",
+      "The track coaching text (sprints, jumps, hurdles, throws; sprint.hurdle.soar@gmail.com) appears without its own heading directly under the basketball camp details. It may be a separate track program, and it is unclear whether the $175 and dates belong to basketball or track.",
+      "The only price shown is $175 for one camp, so overall price range is not recorded.",
+      "Grade range K-12 is across all camps combined: baseball grades 5-9, basketball 7-12, football K-8."
+    ],
+    "unknowns": [
+      "2027 dates, prices and registration openings for all camps",
+      "Dates, prices and hours for Green and Gold Baseball Camp",
+      "Dates, prices and hours for Elite Football School Camp",
+      "Details of the Summer Stage Theatre Workshop (see Tape Ball Theatrics)",
+      "Track/sprint program name, dates and price",
+      "Ages (only grades are given)",
+      "Registration URLs (link targets not provided)",
+      "Refund policy, deposit, financial aid",
+      "Extended care, meals, transportation",
+      "Contact email for the camps overall"
+    ],
+    "low_confidence": [
+      {
+        "field": "name",
+        "confidence": 0.7,
+        "quote": "Spend the summer at Bishop Hendricken!"
+      },
+      {
+        "field": "operator_name",
+        "confidence": 0.7,
+        "quote": "We're proud to host exciting summer camps and workshops for students of all ages!"
+      },
+      {
+        "field": "camp_type",
+        "confidence": 0.6,
+        "quote": "Green and Gold Baseball Camp (Grades 5-9)"
+      },
+      {
+        "field": "season_year",
+        "confidence": 0.5,
+        "quote": "© 2015-2026 BISHOP HENDRICKEN HIGH SCHOOL"
+      },
+      {
+        "field": "sessions[0].start_date",
+        "confidence": 0.6,
+        "quote": "June 29th – July 2nd"
+      },
+      {
+        "field": "sessions[0].end_date",
+        "confidence": 0.6,
+        "quote": "June 29th – July 2nd"
+      },
+      {
+        "field": "sessions[0].price",
+        "confidence": 0.75,
+        "quote": "$175"
+      }
+    ],
+    "errors": []
+  }
+}

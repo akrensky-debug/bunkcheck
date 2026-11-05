@@ -1,0 +1,73 @@
+{
+  "slug": "katrina-dowd-lacrosse-camps",
+  "name": "Katrina Dowd Lacrosse Camps",
+  "website_url": "https://www.bearswlaxcamps.com/camps.cfm",
+  "city": null,
+  "state": null,
+  "zip": null,
+  "camp_type": "specialty",
+  "primary_categories": [
+    "sports"
+  ],
+  "description_short": "Lacrosse camps run under head coach Katrina Dowd. The site links to Brown Women's Lacrosse and lists an Elite Summer Camp.",
+  "activities": [
+    "Lacrosse"
+  ],
+  "sources": [
+    {
+      "url": "https://www.bearswlaxcamps.com/camps.cfm",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "website_url",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "description_short"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.bearswlaxcamps.com/camps.cfm",
+      "kind": "html",
+      "title": "Katrina Dowd Lacrosse Camps"
+    },
+    "warnings": [
+      "The page says \"Currently there are no upcoming events. Check back soon!\" No sessions, dates, prices or season year are listed.",
+      "The page appears to be connected to Brown University women's lacrosse because of the 'Visit Brown Women's Lacrosse' link, but it does not name an operator or location.",
+      "The website and registration are hosted by Ryzer, a third-party platform."
+    ],
+    "unknowns": [
+      "2027 session dates",
+      "Prices",
+      "Age or grade range",
+      "Whether campers stay overnight or attend as a day camp",
+      "Location/address (Facilities & Directions page not provided)",
+      "Operator name",
+      "Contact phone and email",
+      "Registration URL and opening date",
+      "Refund policy",
+      "Deposit requirement",
+      "Financial aid",
+      "Meals included",
+      "Whether this is a girls-only camp",
+      "Skill level requirements for the Elite Summer Camp"
+    ],
+    "low_confidence": [
+      {
+        "field": "description_short",
+        "confidence": 0.7,
+        "quote": "Head Coach | Katrina Dowd ... Elite Summer Camp ... Visit Brown Women's Lacrosse"
+      }
+    ],
+    "errors": [
+      "missing required city",
+      "missing required state",
+      "missing required zip",
+      "missing required season_year"
+    ]
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "slug": "running-brook-camps-day-camp-waltham",
+  "name": "Running Brook Camps Day Camp",
+  "operator_name": "Chapel Hill - Chauncy Hall School",
+  "website_url": "https://www.runningbrook.org/day-camp/day-camp",
+  "registration_url": "https://runningbrook.campintouch.com/ui/forms/application/camper/App",
+  "email": "runningbrookcamp@chch.org",
+  "phone": "781-314-0994",
+  "street_address": "785 Beaver St.",
+  "city": "Waltham",
+  "state": "MA",
+  "zip": "02452",
+  "camp_type": "day",
+  "primary_categories": [
+    "arts",
+    "sports",
+    "STEM",
+    "nature",
+    "performing_arts"
+  ],
+  "grade_max": 6,
+  "description_short": "Co-ed day camp at Chapel Hill-Chauncy Hall School in Waltham for children from age 3.5 through completed 6th grade, run in two-week sessions. Activities include arts and crafts, drama, gym games, and nature, with archery, a challenge course, and STEM for older campers. Snack and lunch are provided.",
+  "activities": [
+    "Arts & Crafts",
+    "Camp Games",
+    "Core Value Challenge",
+    "Drama",
+    "Gym Games",
+    "Music",
+    "Nature",
+    "Yoga",
+    "Archery",
+    "Challenge Course",
+    "Creative Movement",
+    "Creation Station",
+    "STEM",
+    "Electives"
+  ],
+  "financial_aid": true,
+  "extended_care": true,
+  "transportation": true,
+  "meals_included": true,
+  "sources": [
+    {
+      "url": "https://www.runningbrook.org/day-camp/day-camp",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "grade_max",
+        "description_short",
+        "extended_care",
+        "transportation",
+        "meals_included",
+        "financial_aid"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.runningbrook.org/day-camp/day-camp",
+      "kind": "html",
+      "title": "Running Brook Camps |  Day Camp"
+    },
+    "warnings": [
+      "The page shows no season year, dates or prices, so the season can't be confirmed as 2027.",
+      "Minimum age is 3.5 years, which doesn't fit a whole-number age field, so age_min is left blank. grade_max 6 means 'completed 6th grade'.",
+      "Sessions are placeholders: the page says there are four two-week sessions but gives no dates.",
+      "Session 4 tuition is prorated because the last day ends early (pick-up 1:30–2:00pm, no PM Extended Day).",
+      "4 sessions without full dates were left out"
+    ],
+    "unknowns": [
+      "Season year: the page gives no year",
+      "Session start and end dates (see the Important Dates and Calendar pages)",
+      "Tuition and price per session or week (see the Tuition page)",
+      "Registration open date and deposit requirement",
+      "Refund policy",
+      "Swim or waterfront details for day campers (the site has a separate Swim Program page)",
+      "Whether the camp is ACA-accredited: the ACA logo and an Accreditation page appear, but the text only says ratios follow ACA standards",
+      "Exact minimum age as a whole number: the page says 3.5 years old (preschool)",
+      "Bus service areas and costs; Extended Day hours and cost",
+      "Details of financial aid (only a nav link is present)",
+      "Special needs support"
+    ],
+    "low_confidence": [
+      {
+        "field": "financial_aid",
+        "confidence": 0.55,
+        "quote": "Financial Aid"
+      }
+    ],
+    "errors": [
+      "missing required season_year"
+    ]
+  }
+}

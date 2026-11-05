@@ -1,0 +1,141 @@
+{
+  "slug": "winding-trails-summer-camp",
+  "name": "Winding Trails Summer Camp",
+  "operator_name": "Winding Trails",
+  "website_url": "https://windingtrails.org",
+  "registration_url": "https://windingtrails.org/camp",
+  "city": null,
+  "state": null,
+  "zip": null,
+  "camp_type": "day",
+  "age_min": 3,
+  "grade_min": 0,
+  "grade_max": 8,
+  "description_short": "A day camp running Monday to Friday in four two-week sessions. The full-day camp (9:00am–3:15pm) is for children entering kindergarten through eighth grade. A half-day camp (9:00am–1:45pm) is for 3- and 4-year-olds.",
+  "price_min": 575,
+  "price_max": 835,
+  "financial_aid": true,
+  "extended_care": true,
+  "transportation": true,
+  "refund_policy_summary": "Each child must pay a $200 deposit per session. The deposit cannot be refunded or transferred and is taken off the balance due. Full payment is due by each session's deadline (April 26, May 10, May 24 and June 7). After a deadline has passed, the only refunds are for a camper who misses at least 3 days in a row because of illness or injury that happened at camp, and a physician's note is required.",
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Session 1 – Full Day (Entering K–8th grade)",
+      "start_date": "2027-06-21",
+      "end_date": "2027-07-02",
+      "price": 835,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 2 – Full Day (Entering K–8th grade)",
+      "start_date": "2027-07-05",
+      "end_date": "2027-07-16",
+      "price": 835,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 3 – Full Day (Entering K–8th grade)",
+      "start_date": "2027-07-19",
+      "end_date": "2027-07-30",
+      "price": 835,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 4 – Full Day (Entering K–8th grade)",
+      "start_date": "2027-08-02",
+      "end_date": "2027-08-13",
+      "price": 835,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 1 – Half Day (ages 3–4)",
+      "start_date": "2027-06-21",
+      "end_date": "2027-07-02",
+      "price": 650,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 2 – Half Day (ages 3–4)",
+      "start_date": "2027-07-05",
+      "end_date": "2027-07-16",
+      "price": 650,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 3 – Half Day (ages 3–4)",
+      "start_date": "2027-07-19",
+      "end_date": "2027-07-30",
+      "price": 650,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 4 – Half Day (ages 3–4)",
+      "start_date": "2027-08-02",
+      "end_date": "2027-08-13",
+      "price": 650,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://windingtrails.org/session-dates-and-fees",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "camp_type",
+        "age_min",
+        "grade_min",
+        "grade_max",
+        "description_short",
+        "price_min",
+        "price_max",
+        "extended_care",
+        "transportation",
+        "financial_aid",
+        "refund_policy_summary",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://windingtrails.org/session-dates-and-fees",
+      "kind": "html",
+      "title": "Winding Trails"
+    },
+    "warnings": [
+      "Each session lasts two weeks, and the camp does not allow enrollment for part of a session. The page does not give a weekly rate, so price_per_week is left blank. Half of a session fee would be about $372.50 for members and $417.50 for non-members.",
+      "Session prices shown are non-member rates. Member rates are $745 for full day and $575 for half day. To get the member rate, the camper must be a 2027 Winding Trails member.",
+      "Registration opens January 18, 2027 at 10am for Winding Trails members and 2026 campers. New non-member campers can register from February 1, 2027 at 9am. That later date is the one recorded on each session.",
+      "The page lists half-day fees per session but does not confirm that the half-day camp runs on the same four session dates. This was assumed.",
+      "Payment deadlines are listed without a year (e.g., 'Monday, April 26th'). The weekdays do match 2027.",
+      "Session 2 starts Monday, July 5, 2027, which is the observed federal holiday for July 4. Check whether camp runs that day.",
+      "Extra fees: bus $50 per session; early drop-off $70 per session; late pickup $70 per session."
+    ],
+    "unknowns": [
+      "City, state, street address and ZIP (not on this page)",
+      "Phone and email",
+      "Activities offered (see the 'Camp Age Groups and Activities' page)",
+      "Whether meals or lunch are included",
+      "Swim and waterfront details",
+      "Whether the camp is ACA accredited",
+      "Accommodations for special needs",
+      "Maximum age (the page gives grades only)",
+      "Session availability",
+      "Campership eligibility and how to apply",
+      "Transportation routes and pickup locations"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "missing required city",
+      "missing required state",
+      "missing required zip"
+    ]
+  }
+}

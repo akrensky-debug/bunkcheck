@@ -1,0 +1,133 @@
+{
+  "slug": "camp-onaway-hebron",
+  "name": "Camp Onaway",
+  "operator_name": "Camp Onaway",
+  "website_url": "https://camponaway.org/",
+  "registration_url": "https://camponaway.org/enroll-here/",
+  "email": "bpendergast@camponaway.org",
+  "phone": "610-525-0676",
+  "street_address": "27 Camp Onaway Drive",
+  "city": "Hebron",
+  "state": "NH",
+  "zip": "03241",
+  "camp_type": "sleepaway",
+  "age_min": 9,
+  "age_max": 15,
+  "grade_min": 4,
+  "grade_max": 11,
+  "description_short": "A traditional overnight summer camp for girls on Newfound Lake in Hebron, NH. The main program is a 7-week session for rising 5th–10th graders, and there are shorter sessions for younger and older campers.",
+  "activities": [
+    "Trips",
+    "Leadership programs"
+  ],
+  "price_min": 7600,
+  "price_max": 12200,
+  "financial_aid": true,
+  "swim_waterfront_notes": "Camp is on Newfound Lake. The page gives no details about swimming or the waterfront.",
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "7 Week Camp Session (rising 5th–10th graders)",
+      "start_date": "2027-06-26",
+      "end_date": "2027-08-15",
+      "price": 12200,
+      "availability": "unknown"
+    },
+    {
+      "name": "3 Week Wendies Session 1 (rising 4th graders)",
+      "start_date": "2027-06-26",
+      "end_date": "2027-07-18",
+      "price": 7600,
+      "availability": "unknown"
+    },
+    {
+      "name": "3 Week Wendies Session 2 (rising 4th graders)",
+      "start_date": "2027-07-24",
+      "end_date": "2027-08-15",
+      "price": 7600,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://camponaway.org/how-to-enroll/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "activities",
+        "age_min",
+        "age_max",
+        "grade_min",
+        "grade_max",
+        "description_short",
+        "price_min",
+        "price_max",
+        "financial_aid",
+        "swim_waterfront_notes",
+        "sessions"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://camponaway.org/how-to-enroll/",
+      "kind": "html",
+      "title": "Dates, Tuition, and Enrollment – Camp Onaway"
+    },
+    "warnings": [
+      "The ages don't line up: the footer says girls ages 9–15, but the OWLE program is for rising 11th graders, who are usually 15–16 years old.",
+      "The footer copyright says 2024. The dates and rates table is clearly for 2027.",
+      "The director's email comes from a broken link (camponaway.org/how-to-enroll/bpendergast@camponaway.org). The address bpendergast@camponaway.org is inferred from it.",
+      "The camp has two phone numbers: 603-744-2180 for the summer office in Hebron (June–August) and 610-525-0676 for the year-round office in Glenside, PA.",
+      "Girls only. Returning campers get first choice of spots.",
+      "1 sessions without full dates were left out"
+    ],
+    "unknowns": [
+      "Dates for the 3.5 Week OWLE Program (listed as TBD)",
+      "Which sessions still have space (a waitlist starts once the summer fills)",
+      "Deposit amount and payment schedule",
+      "Refund and cancellation policy",
+      "Whether transportation to camp is provided",
+      "Activity list beyond trips and leadership programs",
+      "Swimming and waterfront details",
+      "Support for campers with special needs or health conditions",
+      "ACA accreditation",
+      "Financial aid application details and deadline (contact Camp Director Barrie Pendergast)"
+    ],
+    "low_confidence": [
+      {
+        "field": "email",
+        "confidence": 0.75,
+        "quote": "Barrie Pendergast, Camp Director, for details."
+      },
+      {
+        "field": "age_min",
+        "confidence": 0.75,
+        "quote": "summer camp for girls ages 9 - 15"
+      },
+      {
+        "field": "age_max",
+        "confidence": 0.6,
+        "quote": "summer camp for girls ages 9 - 15"
+      },
+      {
+        "field": "activities",
+        "confidence": 0.7,
+        "quote": "Leadership Programs\n\nTrips"
+      }
+    ],
+    "errors": []
+  }
+}

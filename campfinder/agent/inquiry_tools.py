@@ -4,7 +4,7 @@ Inquiry tools: send a camp the parent's question, and read the camp's answer.
 Public (served at /mcp, /chatgpt/mcp and /claude/mcp, and used by our own agent), because a
 question to a camp is how any assistant helps a parent who is choosing. What keeps it safe:
 - send_inquiry only creates a pending inquiry and returns a preview. Nothing reaches the camp
-  until the parent confirms on CampFinder (on our site, the card's button).
+  until the parent confirms on Bunkcheck (on our site, the card's button).
 - The question may not hold contact details, and the tool takes none. The parent adds them
   herself on the confirm page, if she wants the camp to have them.
 - The info kit goes only as a link to a package the parent already made; the tool takes the
@@ -31,7 +31,7 @@ class SendInquiryInput(BaseModel):
                     "the parent adds contact details on the confirm page if they want to.")
     kit_share_token: str | None = Field(
         default=None, max_length=300,
-        description="Only if the parent gives you a link to an info kit package they made on CampFinder: "
+        description="Only if the parent gives you a link to an info kit package they made on Bunkcheck: "
                     "the link or its token. Never type kit details into the question.")
 
 
@@ -94,7 +94,7 @@ INQUIRY_DISCOVERY_DESCRIPTIONS = {
         "spots', 'ask the camp about bus routes', 'ask if they do sibling discounts', or 'ask whether my kid "
         "can come for just one week'. Returns a preview and a link where the parent confirms; nothing is sent "
         "before that. Don't include names, contact or health details: the parent adds contact details when "
-        "confirming, if they want, and health details stay in their CampFinder info kit."
+        "confirming, if they want, and health details stay in their Bunkcheck info kit."
     ),
     "check_inquiry": (
         "Check whether a camp answered a question sent with send_inquiry. Use for 'did the camp reply' or "

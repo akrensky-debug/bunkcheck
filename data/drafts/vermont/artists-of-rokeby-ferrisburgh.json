@@ -1,0 +1,71 @@
+{
+  "slug": "artists-of-rokeby-ferrisburgh",
+  "name": "Artists of Rokeby",
+  "operator_name": "Rokeby Museum",
+  "website_url": "https://rokeby.org/series/artists-of-rokeby-2026/",
+  "phone": "802.877.3406",
+  "street_address": "4334 Route 7",
+  "city": "Ferrisburgh",
+  "state": "VT",
+  "zip": "05456",
+  "season_year": 2026,
+  "sources": [
+    {
+      "url": "https://rokeby.org/series/artists-of-rokeby-2026/",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://rokeby.org/series/artists-of-rokeby-2026/",
+      "kind": "html",
+      "title": "Artists of Rokeby 2026 - Rokeby Museum"
+    },
+    "warnings": [
+      "This page is an empty event-series listing on a museum website ('0 events found', 'There were no results found'), not a camp page. Nothing on it says Artists of Rokeby is a summer camp or a children's program.",
+      "The 2026 series is in the past. The museum says it was 'Open 10 am–5 pm, daily until October 11, 2026' and is now 'open ONLY for special events and programs, school visits, and by appointment.' No 2027 information is given.",
+      "The address and phone number belong to Rokeby Museum as a whole, not to any specific program."
+    ],
+    "unknowns": [
+      "Whether Artists of Rokeby is a youth or camp program at all, or an adult art event series",
+      "Camp type (day, sleepaway or specialty)",
+      "Ages or grades served",
+      "Session dates for 2026 or 2027",
+      "Prices and deposit",
+      "Registration URL and when registration opens",
+      "Activities offered",
+      "Contact email",
+      "Financial aid, extended care, meals, transportation",
+      "Refund policy",
+      "ACA accreditation"
+    ],
+    "low_confidence": [
+      {
+        "field": "name",
+        "confidence": 0.5,
+        "quote": "Artists of Rokeby 2026"
+      },
+      {
+        "field": "season_year",
+        "confidence": 0.6,
+        "quote": "Artists of Rokeby 2026"
+      }
+    ],
+    "errors": [
+      "missing required camp_type",
+      "camp_type must be one of ['day', 'sleepaway', 'specialty']"
+    ]
+  }
+}

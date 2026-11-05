@@ -1,0 +1,128 @@
+{
+  "slug": "summer-playground-camp-cranston",
+  "name": "Summer Playground Camp",
+  "operator_name": "City of Cranston Parks and Recreation Department",
+  "website_url": "https://www.cranstonri.gov/departments/parks-and-recreation/default.aspx",
+  "registration_url": "https://docs.google.com/forms/d/e/1FAIpQLSeP--Oygq7XdMcUP5Fg9tl_a_jwLryz3KnHpYbI9snwPeYvOA/viewform",
+  "email": "cranstonparksandrecreation@cranstonri.org",
+  "phone": "401-461-1000",
+  "street_address": "155 Gansett Avenue (Recreation Office, Peter Pastore Youth Center)",
+  "city": "Cranston",
+  "state": "RI",
+  "zip": "02910",
+  "camp_type": "day",
+  "age_min": 6,
+  "age_max": 12,
+  "description_short": "A 6-week city-run day program for Cranston residents ages 6-12, held rain or shine at four playground sites and built around field trips and activities. Campers bring their own lunch and must be picked up by 4:00pm.",
+  "activities": [
+    "Field trips",
+    "Performers",
+    "Playground activities"
+  ],
+  "price_per_week": 175,
+  "price_min": 165,
+  "price_max": 175,
+  "meals_included": false,
+  "season_year": 2026,
+  "price_per": "week",
+  "sources": [
+    {
+      "url": "https://www.cranstonri.gov/departments/parks-and-recreation/default.aspx",
+      "checked": "2026-10-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "camp_type",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "price_min",
+        "price_max",
+        "price_per_week",
+        "price_per",
+        "meals_included"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=155+Gansett+Avenue+%28Recreation+Office%2C+Peter+Pastore+Youth+Center%29&city=Cranston&state=RI&benchmark=Public_AR_Current&format=json",
+      "checked": "2026-10-13",
+      "fields": [
+        "zip"
+      ],
+      "note": "ZIP from the US Census geocoder for 155 GANSETT AVE, CRANSTON, RI, 02910"
+    }
+  ],
+  "review": {
+    "status": "unchecked",
+    "source": {
+      "url": "https://www.cranstonri.gov/departments/parks-and-recreation/default.aspx",
+      "kind": "html",
+      "title": "Parks and Recreation"
+    },
+    "warnings": [
+      "Filled zip 02910 from the US Census geocoder (155 GANSETT AVE, CRANSTON, RI, 02910)",
+      "The page shows only the 2026 season, which is already over (today is 2026-10-13). Nothing has been posted for 2027 yet.",
+      "This is the city Parks & Recreation department page, not a page just for the camp. It also covers jobs, permits and facility rentals.",
+      "Open to Cranston residents only. Residency and health insurance proof may be needed to finish registering.",
+      "The page calls it both a 'day camp' and a 'summer PROGRAM (not a camp)'. It says the fee does not qualify for the Child and Dependent Care tax credit.",
+      "The phone number is the main City Hall line, not a Parks & Rec line. The email address was given for job applications and may not be the right contact for camp questions.",
+      "No dates are given for the six weekly sessions. The April 27 registration date has no year, and 2026 is assumed.",
+      "Sibling rate: $175/week for the first child and $165/week for each additional child.",
+      "Camp runs at four sites: Doric Playground, Garden City Elementary, Glen Hills Elementary and Hope Highlands Middle School playgrounds. The street address listed is the Recreation Office, not a camp site.",
+      "6 sessions without full dates were left out"
+    ],
+    "unknowns": [
+      "2027 season dates, prices and registration date",
+      "Start and end dates for Weeks 1-6",
+      "Daily start time (pickup is by 4:00pm)",
+      "Whether extended care is offered",
+      "Whether a deposit is required and the payment schedule",
+      "Refund policy",
+      "Financial aid or fee help",
+      "Transportation to and from camp sites (buses are provided only for field trips, by Cranston School Department)",
+      "Swimming or waterfront activities",
+      "Special needs accommodations",
+      "ACA accreditation",
+      "Zip codes for the camp sites and the Recreation Office",
+      "A direct Parks & Rec phone number",
+      "Whether spots are still available"
+    ],
+    "low_confidence": [
+      {
+        "field": "street_address",
+        "confidence": 0.7,
+        "quote": "Recreation Office located at the Peter Pastore Youth Center, 155 Gansett Avenue"
+      },
+      {
+        "field": "phone",
+        "confidence": 0.5,
+        "quote": "Cranston City Hall ... 1-401-461-1000"
+      },
+      {
+        "field": "email",
+        "confidence": 0.6,
+        "quote": "emailed to cranstonparksandrecreation@cranstonri.org"
+      },
+      {
+        "field": "registration_url",
+        "confidence": 0.7,
+        "quote": "2026 Summer Camp Pre-Registration Form"
+      },
+      {
+        "field": "sessions[0].registration_opens_at",
+        "confidence": 0.75,
+        "quote": "SUMMER CAMP REGISTRATION WILL OPEN APRIL 27 at 5 p.m."
+      }
+    ],
+    "errors": []
+  }
+}
