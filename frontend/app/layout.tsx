@@ -80,7 +80,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <div className="grid grid-cols-2 gap-x-12 gap-y-8 sm:grid-cols-3">
               <FooterColumn title="Parents" links={[['/', 'Plan your summer'], ['/summer', 'Your summer board'], ['/search', 'Browse camps']]} />
               <FooterColumn title="Camps" links={[['/operators', 'For camps'], ['/operators/submit', 'List your camp'], ['/operators/claim', 'Claim your listing']]} />
-              <FooterColumn title="Help" links={[['/support', 'Support'], ['/privacy', 'Privacy'], ['/terms', 'Terms']]} />
+              <FooterColumn title="Help" links={[['/support', 'Support'], ['/ranking', 'How we rank'], ['/privacy', 'Privacy'], ['/terms', 'Terms']]} />
             </div>
           </div>
         </footer>
