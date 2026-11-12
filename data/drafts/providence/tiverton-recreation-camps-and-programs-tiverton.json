@@ -103,6 +103,22 @@
       "missing required camp_type",
       "missing required season_year",
       "camp_type must be one of ['day', 'sleepaway', 'specialty']"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.tiverton.ri.gov/174/Camps-Programs",
+        "https://www.tiverton.ri.gov/372/Sunset-Yoga",
+        "https://www.tiverton.ri.gov/373/Intro-to-Surfcasting",
+        "https://www.tiverton.ri.gov/374/Tiverton-Tennis"
+      ],
+      "changes": [
+        "No changes: not a summer camp listing (see open questions)."
+      ],
+      "open_questions": [
+        "Not a kids' summer camp: the town index lists only free weeknight Sunset Yoga for residents (Mondays 5:30-6:30 PM), a single-morning Intro to Surfcasting class for ages 10-15 on Wednesday September 9, and a 5-week after-school tennis clinic (4:15-7 PM, grades K-8, $70-$85).",
+        "Validator still fails (no camp_type, no season_year); left unfixed because the listing should not be promoted."
+      ]
+    }
   }
 }

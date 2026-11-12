@@ -14,9 +14,6 @@
     "sports",
     "arts"
   ],
-  "age_min": 6,
-  "age_max": 13,
-  "description_short": "A day camp at the Weymouth Club for ages 6-13, with campers grouped by age. Each day includes tennis lessons, fitness and gym games, arts and crafts, and free swim, with swim lessons twice a week. It runs every summer week and on many school-vacation days.",
   "activities": [
     "Tennis lessons",
     "Tennis/ladder matches",
@@ -27,15 +24,18 @@
     "Weekly themes",
     "Daily awards"
   ],
-  "price_per_week": 569,
+  "age_min": 6,
+  "age_max": 13,
+  "description_short": "A day camp at the Weymouth Club for ages 6-13, with campers grouped by age. Each day includes tennis lessons, fitness and gym games, arts and crafts, and free swim, with swim lessons twice a week. It runs every summer week and on many school-vacation days.",
   "price_min": 375,
   "price_max": 569,
+  "price_per_week": 569,
+  "price_per": "week",
   "extended_care": true,
   "meals_included": false,
   "refund_policy_summary": "There are no refunds. All withdrawals or cancellations must be emailed to TFACamp@weymouthclub.com.",
   "swim_waterfront_notes": "Indoor club pool (Aquatics Center). Swim lessons twice a week plus daily free swim. Bring a bathing suit and towel every day.",
   "season_year": 2027,
-  "price_per": "week",
   "sessions": [
     {
       "name": "MLK Day",
@@ -83,7 +83,7 @@
   "sources": [
     {
       "url": "https://www.weymouthclub.com/camps/tfa-camp-traditional-track-ages-6-13/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -180,6 +180,22 @@
         "quote": "June 14 – Sept. 3rd Summer Camp"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.weymouthclub.com/camps/tfa-camp-traditional-track-ages-6-13/"
+      ],
+      "changes": [
+        "No changes needed: every filled field matches the page",
+        "season_year 2027 confirmed: the date list is now headed '2026 / 2027 dates' and June 14 - Sept 3 fall Monday to Friday in 2027 (resolves the season_year and session-date low-confidence items)",
+        "Prices confirmed as posted (member $469 / non-member $569 per week; July 4th week $375 / $455); zip 02188 is the club's street address in the footer (02189 is only the forms mailing address)"
+      ],
+      "open_questions": [
+        "Weekly prices are still headed 'Summer Camp Pricing 2026'; 2027 rates may differ",
+        "Individual summer weeks are not listed (one June 14 - Sept 3 block); dates 'subject to change'",
+        "Sessions include school-vacation days (MLK Day, February and April vacation weeks, Good Friday) with no prices"
+      ]
+    }
   }
 }

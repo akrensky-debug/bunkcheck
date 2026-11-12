@@ -14,13 +14,13 @@
   "primary_categories": [
     "performing_arts"
   ],
-  "description_short": "A studio summer program running 8 weeks. Families choose from 30+ classes, and each extra class lowers the total summer tuition. A sibling discount is offered.",
+  "description_short": "Summer 2026 at The Talent Factory dance and performing arts studio in North Kingstown: 8 weeks in which families pick from 30+ weekly classes, with a lower total tuition for each added class and a sibling discount. Through the community-sponsored 'Every Kid on Stage' summer camp, a limited number of students can attend at no cost.",
   "financial_aid": true,
   "season_year": 2026,
   "sources": [
     {
       "url": "https://www.talentfactoryri.com/summer-camps",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -77,6 +77,24 @@
         "quote": "THEATRE SHOWS ... NUTCRACKER ... DANCEWEAR BOUTIQUE"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.talentfactoryri.com/summer-camps",
+        "https://www.talentfactoryri.com/tuition",
+        "https://www.talentfactoryri.com/summer-intensive",
+        "https://sponsor-camp.talentfactoryri.com/"
+      ],
+      "changes": [
+        "Description now names both parts of the summer page: the 8-week à la carte class session and the sponsored 'Every Kid on Stage' summer camp",
+        "Other fields verified against the page (contact, address, registration portal, sponsored spots as financial aid)"
+      ],
+      "open_questions": [
+        "Is this a camp? The main summer offer is 8 weeks of weekly studio classes picked from a schedule, not a camp day. The only 'camp' is 'Every Kid on Stage', a sponsored musical theater camp ($395 sponsors 1 child for 1 week per the sponsor page) with no dates, ages or public price on the site. Keep as a listing, or mark not_a_camp?",
+        "Tuition page: '(Summer session runs for 8 weeks starting June, 2027)' but no 2027 dates, prices or ages are posted",
+        "Also on site: Summer Dance Intensive, August 10-13, 2026 (a one-week dance intensive), not in this listing"
+      ]
+    }
   }
 }

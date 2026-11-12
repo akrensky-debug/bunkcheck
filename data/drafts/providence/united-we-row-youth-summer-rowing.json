@@ -4,9 +4,9 @@
   "operator_name": "Watuppa Rowing Center",
   "website_url": "https://www.watupparowingcenter.org/summer-rowing",
   "email": "Row@WatuppaRowingCenter.org",
-  "city": null,
-  "state": null,
-  "zip": null,
+  "city": "Fall River",
+  "state": "MA",
+  "zip": "02721",
   "camp_type": "specialty",
   "primary_categories": [
     "sports"
@@ -14,7 +14,7 @@
   "age_min": 12,
   "grade_min": 6,
   "grade_max": 12,
-  "description_short": "A free youth rowing program for students aged 12 and older in grades 6-12, held Monday to Friday from 8 am to 12 noon. Campers can join any number of sessions at any point in the summer.",
+  "description_short": "Free youth rowing at the Watuppa Rowing Center in Fall River for students aged 12 and older in grades 6-12, sponsored by the United Way of Greater Fall River. Sessions run Monday to Friday, 8 am to 12 noon, and athletes can join any and as many sessions as they like.",
   "activities": [
     "Rowing"
   ],
@@ -53,10 +53,11 @@
       "availability": "unknown"
     }
   ],
+  "street_address": "994 Jefferson Street Extension",
   "sources": [
     {
       "url": "https://www.watupparowingcenter.org/summer-rowing",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -76,6 +77,23 @@
         "sessions"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.watupparowingcenter.org/contact",
+      "checked": "2026-11-12",
+      "fields": [
+        "street_address",
+        "city",
+        "state"
+      ]
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=994+Jefferson+Street+Extension&city=Fall+River&state=MA&benchmark=Public_AR_Current&format=html",
+      "checked": "2026-11-12",
+      "fields": [
+        "zip"
+      ],
+      "note": "ZIP from the US Census geocoder for 994 JEFFERSON ST, FALL RIVER, MA, 02721"
     }
   ],
   "review": {
@@ -117,6 +135,24 @@
       "missing required city",
       "missing required state",
       "missing required zip"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.watupparowingcenter.org/summer-rowing",
+        "https://www.watupparowingcenter.org/contact",
+        "https://geocoding.geo.census.gov/geocoder/locations/address?street=994+Jefferson+Street+Extension&city=Fall+River&state=MA&benchmark=Public_AR_Current&format=html"
+      ],
+      "changes": [
+        "Added address from the Contact page: 994 Jefferson Street Extension, Fall River, MA; ZIP 02721 from the US Census geocoder.",
+        "Description now names the place and the United Way sponsorship.",
+        "2027 sessions confirmed on the page under 'United We Row 2027' (June 28 - July 2, July 5-16, July 19-30, August 2-13), free, 8am-12 noon."
+      ],
+      "open_questions": [
+        "The Census geocoder matched '994 JEFFERSON ST' (it drops 'Extension'); Andrew may want to confirm ZIP 02721.",
+        "Session 1 is one week although sessions are called '2-week'; the page also says Session 1 'may begin 1 week earlier on June 1st', which does not fit June 28.",
+        "The page does not say whether the program is on the water at the center's own site; the Contact address is assumed to be where it runs."
+      ]
+    }
   }
 }

@@ -8,17 +8,15 @@
   "state": "MA",
   "zip": "02777",
   "description_short": "A town-run summer camp in Swansea, MA. Registration is through the town's My REC system, and John Pozzi is the contact.",
+  "phone": "508-343-1502",
+  "registration_url": "https://swanseama.myrec.com/Information/default.aspx",
   "sources": [
     {
       "url": "https://www.swanseama.gov/_T2_R307.html",
       "checked": "2026-10-13",
       "fields": [
         "name",
-        "operator_name",
         "website_url",
-        "email",
-        "city",
-        "state",
         "description_short"
       ],
       "note": "Drafted by the listing tool from this page"
@@ -30,6 +28,18 @@
         "zip"
       ],
       "note": "Swansea, MA sits inside one ZIP code (2020 Census ZCTA relationship file)"
+    },
+    {
+      "url": "https://www.swanseama.gov/187/Parks-Recreation-Commission",
+      "checked": "2026-11-12",
+      "fields": [
+        "phone",
+        "registration_url",
+        "operator_name",
+        "email",
+        "city",
+        "state"
+      ]
     }
   ],
   "review": {
@@ -89,6 +99,25 @@
       "missing required camp_type",
       "missing required season_year",
       "camp_type must be one of ['day', 'sleepaway', 'specialty']"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.swanseama.gov/_T2_R307.html (404)",
+        "https://www.swanseama.gov/",
+        "https://www.swanseama.gov/directory.aspx",
+        "https://www.swanseama.gov/m/directory/department?did=49",
+        "https://www.swanseama.gov/187/Parks-Recreation-Commission",
+        "https://swanseama.myrec.com/info/activities/default.aspx?type=activities"
+      ],
+      "changes": [
+        "The drafted news post (https://www.swanseama.gov/_T2_R307.html) now returns 404; the town site has moved.",
+        "Added Recreation Director John Pozzi's phone 508-343-1502 and the town's MyRec registration site from the Parks & Recreation Commission page; operator, email, city and state now sourced there."
+      ],
+      "open_questions": [
+        "The only page about the camp is gone. The Parks & Recreation page and the MyRec activity list (leagues, fitness, one special event) do not mention a summer camp, so there is no name, camp type, ages, dates, prices or location. camp_type and season_year (required) stay empty.",
+        "Andrew: park this listing until Swansea posts its 2027 summer camp, or drop it."
+      ]
+    }
   }
 }

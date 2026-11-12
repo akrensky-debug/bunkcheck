@@ -5,24 +5,36 @@
   "website_url": "https://www.adirondackclub.com/camps",
   "email": "memberservices@adirondackclub.com",
   "phone": "(508) 541-1400",
-  "city": null,
-  "state": null,
-  "zip": null,
+  "street_address": "800 Chestnut Street",
+  "city": "Franklin",
+  "state": "MA",
+  "zip": "02038",
+  "camp_type": "day",
   "primary_categories": [
-    "sports",
-    "arts"
+    "general"
   ],
-  "description_short": "The Adirondack Club, a fitness and family club, runs three themed summer camps: Adventure Camp, Arts Camp and Sports Camp. Families can pick one camp or mix and match across the summer.",
+  "secondary_categories": [
+    "sports",
+    "arts",
+    "adventure",
+    "swimming"
+  ],
   "activities": [
     "Sports",
     "Arts",
     "Adventure"
   ],
+  "age_min": 5,
+  "age_max": 14,
+  "description_short": "Summer day camps at The Adirondack Club, a fitness and family club in Franklin, MA: Adventure Camp (ages 5-14 in four age groups), Arts Camp and Sports Camp, which families can mix and match. Camp runs 8:45am to 3:45pm with pre-camp from 7:30am and post-camp to 6pm, and uses the club's pools, indoor space and outdoor play areas.",
+  "indoor_outdoor": "both",
+  "extended_care": true,
+  "swim_waterfront_notes": "The club has a 6-lane lap pool and a large shallow-entry recreation pool for younger campers; campers bring a bathing suit and towel daily.",
   "season_year": 2026,
   "sources": [
     {
       "url": "https://www.adirondackclub.com/camps",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -30,10 +42,42 @@
         "email",
         "phone",
         "primary_categories",
+        "secondary_categories",
         "activities",
         "description_short"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Camps overview: Adventure, Arts and Sports camps, mix and match; 'SUMMER CAMP 2027 INFORMATION COMING LATER THIS FALL!'"
+    },
+    {
+      "url": "https://www.adirondackclub.com/contact-us",
+      "checked": "2026-11-12",
+      "fields": [
+        "street_address",
+        "city",
+        "state",
+        "zip"
+      ],
+      "note": "Contact page: 800 Chestnut Street, Franklin, MA 02038"
+    },
+    {
+      "url": "https://www.adirondackclub.com/camp-policies-and-forms",
+      "checked": "2026-11-12",
+      "fields": [
+        "camp_type",
+        "age_min",
+        "age_max",
+        "extended_care"
+      ],
+      "note": "Camp general information: drop-off 8:45, pick-up 3:45 (full day), pre-camp 7:30-8:45, post camp 4-6pm; Adventure groups ages 5-6 to 11-14"
+    },
+    {
+      "url": "https://www.adirondackclub.com/adventure-camp",
+      "checked": "2026-11-12",
+      "fields": [
+        "indoor_outdoor",
+        "swim_waterfront_notes"
+      ],
+      "note": "Adventure Camp FAQ: 6-lane lap pool, shallow-entry recreation pool, outdoor group play, air-conditioned indoor area"
     }
   ],
   "review": {
@@ -73,12 +117,28 @@
         "quote": "SUMMER CAMP 2026 INFO AND WEEKS ARE NOW AVAILABLE IN OUR SUMMER CAMP BROCHURES"
       }
     ],
-    "errors": [
-      "missing required city",
-      "missing required state",
-      "missing required zip",
-      "missing required camp_type",
-      "camp_type must be one of ['day', 'sleepaway', 'specialty']"
-    ]
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.adirondackclub.com/camps",
+        "https://www.adirondackclub.com/contact-us",
+        "https://www.adirondackclub.com/camp-policies-and-forms",
+        "https://www.adirondackclub.com/adventure-camp",
+        "https://www.adirondackclub.com/_files/ugd/5243d8_844d4cec42a049f984f3ca6de68e37b6.pdf",
+        "https://www.adirondackclub.com/_files/ugd/5243d8_1d267506a6ea4aec8ffbb8a79f390e12.pdf"
+      ],
+      "changes": [
+        "Added the address from the contact page: 800 Chestnut Street, Franklin, MA 02038 (fixes missing city, state, zip; Franklin is about 30 miles from Providence)",
+        "Set camp_type day (fixes missing camp_type): daily drop-off 8:45 and pick-up 3:45",
+        "Added ages 5-14 (Adventure Camp groups), extended care (pre-camp 7:30, post-camp to 6pm), pool note, indoor_outdoor both",
+        "Categories: primary general; sports, arts, adventure, swimming as secondary. Description rewritten"
+      ],
+      "open_questions": [
+        "2026 brochures (dates, weeks, prices) are over the fetcher's 8 MB limit, so no sessions or prices were recorded",
+        "Ages 5-14 come from the Adventure Camp groups; Arts and Sports camp ages are not stated outside the brochures",
+        "Is this one listing for three camps, or should Adventure/Arts/Sports be separate listings?"
+      ]
+    }
   }
 }

@@ -68,6 +68,17 @@
       "missing required camp_type",
       "missing required season_year",
       "camp_type must be one of ['day', 'sleepaway', 'specialty']"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://wrenthamma.myrec.com/info/default.aspx",
+        "https://wrenthamma.myrec.com/info/activities/default.aspx?type=activities"
+      ],
+      "changes": [
+        "No field changes: the portal lists no camp"
+      ],
+      "open_questions": []
+    }
   }
 }

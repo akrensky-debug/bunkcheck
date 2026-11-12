@@ -14,7 +14,7 @@
     "performing_arts",
     "arts"
   ],
-  "description_short": "A week-long rock band camp at a music school in Cranston, RI. Campers form bands, write original songs, rehearse, and perform live on Friday. Kids of all experience levels are welcome.",
+  "description_short": "A week-long rock band camp at You Rock School of Music in Cranston, RI, for kids of all experience levels. Campers form bands, name them, write original songs, rehearse and perform live at a Friday show, with tie-dye, games and jam sessions along the way. 2026 camp was 6 hours a day at $489 per week.",
   "activities": [
     "Band formation",
     "Songwriting",
@@ -33,7 +33,7 @@
   "sources": [
     {
       "url": "https://www.yourockschoolofmusic.com/summer-camp2026",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -46,10 +46,22 @@
         "zip",
         "camp_type",
         "primary_categories",
-        "activities",
+        "activities"
+      ],
+      "note": "Re-checked 2026-11-12: Summer Camp page (URL 'summer-camp2026'): week-long band camp, form bands, write songs, perform Friday; kids of all experience levels; 1802 Broad Street, Cranston; 'Book Your Camp!' links to the Opus1 booking page."
+    },
+    {
+      "url": "https://yourockschoolofmusic.opus1.io/w/summercamp2026",
+      "checked": "2026-11-12",
+      "fields": [
+        "registration_url",
+        "price_per_week",
+        "price_min",
+        "price_max",
+        "price_per",
         "description_short"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Booking page (linked from the camp page): 'Summer Camp 2026! 6 hrs $489.00 all ages'; 'There are no availabilities for this service at this time'. Description also uses the camp page."
     }
   ],
   "review": {
@@ -79,8 +91,29 @@
       "ACA accreditation"
     ],
     "low_confidence": [],
-    "errors": [
-      "missing required season_year"
-    ]
-  }
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.yourockschoolofmusic.com/summer-camp2026",
+        "https://yourockschoolofmusic.opus1.io/w/summercamp2026",
+        "https://www.yourockschoolofmusic.com/school-calendar"
+      ],
+      "changes": [
+        "Set season_year 2026 from the linked booking page ('Summer Camp 2026!') and the page URL; validator now passes.",
+        "Added registration_url (Opus1 booking page) and price $489 per week (6 hours a day).",
+        "Description now includes hours and price; other fields re-checked and match."
+      ],
+      "open_questions": [
+        "No week dates or ages on either page ('all ages'); the booking page shows no availability now.",
+        "No 2027 information yet."
+      ]
+    }
+  },
+  "season_year": 2026,
+  "registration_url": "https://yourockschoolofmusic.opus1.io/w/summercamp2026",
+  "price_per_week": 489,
+  "price_min": 489,
+  "price_max": 489,
+  "price_per": "week"
 }

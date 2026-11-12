@@ -59,6 +59,19 @@
       "missing required camp_type",
       "missing required season_year",
       "camp_type must be one of ['day', 'sleepaway', 'specialty']"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://ymca1.org/childcare/summer-camp/",
+        "https://ymca1.org/registration/"
+      ],
+      "changes": [
+        "No field changes: the filled fields match the page; camp_type and season_year cannot be filled from it"
+      ],
+      "open_questions": [
+        "The camp page has only a 'Know Before You Go' packet (no link our fetcher can follow), a Google Forms waitlist and contact details: no season, dates, ages, prices or camp type. The Registration Dates page lists only Fall II and Winter lesson registration. Ask the Y for the packet, or hold the listing?"
+      ]
+    }
   }
 }

@@ -13,10 +13,14 @@
   "grade_min": 1,
   "grade_max": 6,
   "description_short": "An 8-week town-run summer day program at the Community Field playground, 9 am to 3:30 pm, for North Attleboro residents entering grades 1 through 6. A drop-in option lets families pick any 10 days, and a similar program (SPP2) serves residents entering grades 7 and 8.",
+  "financial_aid": true,
+  "primary_categories": [
+    "general"
+  ],
   "sources": [
     {
       "url": "https://www.northattleborough.gov/252/Programs-by-Season",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -30,9 +34,17 @@
         "camp_type",
         "grade_min",
         "grade_max",
-        "description_short"
+        "description_short",
+        "primary_categories"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://northattleboroughma.myrec.com/info/activities/program_details.aspx?ProgramID=30925",
+      "checked": "2026-11-12",
+      "fields": [
+        "financial_aid"
+      ]
     }
   ],
   "review": {
@@ -65,6 +77,25 @@
     "low_confidence": [],
     "errors": [
       "missing required season_year"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.northattleborough.gov/252/Programs-by-Season",
+        "https://northattleboroughma.myrec.com/info/default.aspx",
+        "https://northattleboroughma.myrec.com/info/activities/default.aspx?type=activities",
+        "https://northattleboroughma.myrec.com/info/activities/program_details.aspx?ProgramID=30925"
+      ],
+      "changes": [
+        "Added financial_aid true: the Tony Calcia Scholarship Fund 'will provide scholarship funding for children and families in need to allow them to take part in the ... Summer Playground Program' (MyRec page).",
+        "Added primary category general (playground program).",
+        "Checked the rest against the Programs by Season page: 8 weeks at the Community Field playground, 9am-3:30pm, residents entering grades 1-6, 250 full-time places, 10-day drop-in option, SPP2 for grades 7-8, office at Mason Fieldhouse, 446 Elm Street, 508-699-0100 Ext. 2647."
+      ],
+      "open_questions": [
+        "No season year, dates or prices anywhere (town page or MyRec, where SPP is not listed out of season). season_year (required) stays empty; Andrew to decide whether to wait for the 2027 MyRec listing.",
+        "The address is the Parks & Recreation office (Mason Fieldhouse, 446 Elm Street); the program meets at the Community Field playground, whose street address is not given.",
+        "Residents of North Attleborough only."
+      ]
+    }
   }
 }

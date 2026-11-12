@@ -6,17 +6,14 @@
   "registration_url": "https://eliotschool.org/summer-program-for-children",
   "email": "vacationprograms@eliotschool.org",
   "phone": "617-553-1387",
-  "street_address": "24 Eliot Street",
+  "street_address": "24 Eliot Street (Jamaica Plain)",
   "city": "Boston",
   "state": "MA",
-  "zip": null,
+  "zip": "02130",
   "camp_type": "day",
   "primary_categories": [
     "arts"
   ],
-  "age_min": 6,
-  "age_max": 12,
-  "description_short": "A weekly arts day camp for ages 6-12 at the Eliot School Schoolhouse in Boston. Each week has a theme, and children take woodworking, fiber arts, mixed media, and Art Zone classes in half-day or full-day sessions, with lunch and play outdoors in the Schoolyard.",
   "activities": [
     "Woodworking",
     "Fiber arts",
@@ -26,61 +23,64 @@
     "Outdoor free play",
     "Friday Student Showcase"
   ],
-  "price_per_week": 585,
+  "age_min": 6,
+  "age_max": 12,
+  "description_short": "A weekly arts day camp for ages 6-12 at the Eliot School Schoolhouse in Jamaica Plain, Boston. Children take visual arts, mixed media, sewing and fiber arts, and woodworking classes in half-day or full-day weeks, in classes capped at 12, with lunch and play outdoors in the Schoolyard and a Friday Student Showcase.",
   "price_min": 290,
   "price_max": 585,
-  "financial_aid": true,
-  "extended_care": true,
-  "refund_policy_summary": "2026 policy: you must contact the Community Education Coordinator to withdraw. Full refund through May 1, 50% refund through June 5, and no refunds from June 6. A $20 processing fee applies to all refunds. Registrations made within two weeks of the start date, or after June 5, get no refund. Exceptions may be arranged for serious illness, major injury, or a death in the family.",
-  "season_year": 2026,
+  "price_per_week": 585,
   "price_per": "week",
+  "extended_care": true,
+  "financial_aid": true,
+  "refund_policy_summary": "Withdraw by contacting the Education & Engagement Coordinator. Full refund through May 5, 2027, 50% refund through June 2, 2027, no refunds from June 3. A $20 processing fee applies to all refunds. Registrations made within two weeks of the start date, or after June 3, get no refund. Exceptions may be arranged for serious illness, major injury, or a death in the family.",
+  "season_year": 2027,
   "sessions": [
     {
-      "name": "Week One: Stories We Love (4 days, full day)",
-      "start_date": "2026-06-29",
-      "end_date": "2026-07-02",
+      "name": "Week One (full day)",
+      "start_date": "2027-06-28",
+      "end_date": "2027-07-02",
+      "price": 585,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week Two (4 days, full day; no camp July 5)",
+      "start_date": "2027-07-06",
+      "end_date": "2027-07-09",
       "price": 522,
       "availability": "unknown"
     },
     {
-      "name": "Week Two: Adventures Underground (full day)",
-      "start_date": "2026-07-06",
-      "end_date": "2026-07-10",
+      "name": "Week Three (full day)",
+      "start_date": "2027-07-12",
+      "end_date": "2027-07-16",
       "price": 585,
       "availability": "unknown"
     },
     {
-      "name": "Week Three: Carnival of Craft (full day)",
-      "start_date": "2026-07-13",
-      "end_date": "2026-07-17",
+      "name": "Week Four (full day)",
+      "start_date": "2027-07-19",
+      "end_date": "2027-07-23",
       "price": 585,
       "availability": "unknown"
     },
     {
-      "name": "Week Four: Ingenious Inventors (full day)",
-      "start_date": "2026-07-20",
-      "end_date": "2026-07-24",
+      "name": "Week Five (full day)",
+      "start_date": "2027-07-26",
+      "end_date": "2027-07-30",
       "price": 585,
       "availability": "unknown"
     },
     {
-      "name": "Week Five: Fantastic Creatures (full day)",
-      "start_date": "2026-07-27",
-      "end_date": "2026-07-31",
+      "name": "Week Six (full day)",
+      "start_date": "2027-08-02",
+      "end_date": "2027-08-06",
       "price": 585,
       "availability": "unknown"
     },
     {
-      "name": "Week Six: Feast for the Imagination (full day)",
-      "start_date": "2026-08-03",
-      "end_date": "2026-08-07",
-      "price": 585,
-      "availability": "unknown"
-    },
-    {
-      "name": "Week Seven: Enchanted Objects (full day)",
-      "start_date": "2026-08-10",
-      "end_date": "2026-08-14",
+      "name": "Week Seven (full day)",
+      "start_date": "2027-08-09",
+      "end_date": "2027-08-13",
       "price": 585,
       "availability": "unknown"
     }
@@ -88,7 +88,7 @@
   "sources": [
     {
       "url": "https://eliotschool.org/summer-program-for-children",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -96,7 +96,6 @@
         "registration_url",
         "email",
         "phone",
-        "street_address",
         "city",
         "state",
         "camp_type",
@@ -114,7 +113,16 @@
         "refund_policy_summary",
         "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Drafted by the listing tool from this page; now shows 2027"
+    },
+    {
+      "url": "https://eliotschool.org/about/contact-us",
+      "checked": "2026-11-12",
+      "fields": [
+        "street_address",
+        "zip"
+      ],
+      "note": "Contact page: Schoolhouse 24 Eliot Street, Jamaica Plain; mailing address Boston MA 02130"
     }
   ],
   "review": {
@@ -142,8 +150,24 @@
       "Support for children with special needs"
     ],
     "low_confidence": [],
-    "errors": [
-      "missing required zip"
-    ]
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://eliotschool.org/summer-program-for-children",
+        "https://eliotschool.org/about/contact-us"
+      ],
+      "changes": [
+        "Moved to the 2027 season: page now shows June 28 - August 13, 2027, seven weeks (Week Two July 6-9 is 4 days); fees $585 full day / $325 half day ($522 / $290 for Week Two)",
+        "Refund policy updated to the 2027 deadlines (full refund through May 5, 2027; 50% through June 2; none from June 3)",
+        "Added ZIP 02130 and 'Jamaica Plain' to the address from the Contact page (resolves missing required zip)",
+        "Description updated (classes capped at 12; media list as on the page); prices, ages 6-12, hours, early drop-off and extended day unchanged",
+        "The gambling spam links noted in the first draft were not seen on the page today"
+      ],
+      "open_questions": [
+        "Weekly themes and class offerings will be added in December 2026",
+        "2027 scholarship application opens in December 2026"
+      ]
+    }
   }
 }

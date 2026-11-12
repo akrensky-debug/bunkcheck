@@ -32,17 +32,96 @@
   "season_year": 2026,
   "sessions": [
     {
-      "name": "Summer Camp 2026 (weekly enrollment across season; individual weeks not listed on this page)",
+      "name": "TW Camp Week 1",
       "start_date": "2026-06-15",
+      "end_date": "2026-06-19",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "TW Camp Week 2",
+      "start_date": "2026-06-22",
+      "end_date": "2026-06-26",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "TW Camp Week 3 (4-day week)",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-02",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "TW Camp Week 4",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "TW Camp Week 5",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "TW Camp Week 6",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "TW Camp Week 7",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "TW Camp Week 8",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "TW Camp Week 9",
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-14",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "TW Camp Week 10",
+      "start_date": "2026-08-17",
+      "end_date": "2026-08-21",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "TW Camp Week 11",
+      "start_date": "2026-08-24",
+      "end_date": "2026-08-28",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "TW Camp Week 12",
+      "start_date": "2026-08-31",
       "end_date": "2026-09-04",
       "price": null,
       "availability": "unknown"
     }
   ],
+  "email": "info@teamworkswarwick.com",
+  "meals_included": false,
   "sources": [
     {
       "url": "https://www.teamworkswarwick.com/summercamphome.aspx",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -59,10 +138,18 @@
         "age_min",
         "age_max",
         "description_short",
-        "extended_care",
-        "sessions"
+        "extended_care"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://service.twcenters.com/DownloadFile/RulesPolicy?strDocumentInfoId=6cd7d721-5352-4125-b210-db7ce6906909&location=2",
+      "checked": "2026-11-12",
+      "fields": [
+        "sessions",
+        "email",
+        "meals_included"
+      ]
     }
   ],
   "review": {
@@ -101,6 +188,25 @@
         "quote": "Save your spot for ONLY $50 per camp week!"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.teamworkswarwick.com/summercamphome.aspx",
+        "https://www.teamworkswarwick.com/upcomingsummerprogram.aspx",
+        "https://www.teamworkswarwick.com/campdiscount.aspx",
+        "https://service.twcenters.com/DownloadFile/RulesPolicy?strDocumentInfoId=6cd7d721-5352-4125-b210-db7ce6906909&location=2"
+      ],
+      "changes": [
+        "Replaced the one season-long session with the twelve 2026 TW Camp weeks from the 2026 camp brochure (June 15 - September 4; Week 3 June 29 - July 2 is a 4-day week).",
+        "Added email info@teamworkswarwick.com and meals_included false ('Snack & lunch options are also available for purchase') from the brochure.",
+        "Checked the rest against the camp page: ages 4-14 TW Camp and 4-15 specialty camps, 9am-3:30pm with extended day to 5pm, address and phone."
+      ],
+      "open_questions": [
+        "No weekly prices on the camp page, registration page or brochure; only a '$50 deposit per week' and a $15 annual Teamworks membership.",
+        "The registration page shows no programs now (season over). No 2027 dates or registration opening date.",
+        "The page footer cites Massachusetts Department of Public Health rules though this site is in Rhode Island (shared Teamworks template)."
+      ]
+    }
   }
 }
