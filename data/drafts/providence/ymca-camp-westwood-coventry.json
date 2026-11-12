@@ -41,7 +41,7 @@
   "sources": [
     {
       "url": "https://ymcapawtucket.org/camps/camp-westwood",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -60,6 +60,22 @@
         "swim_waterfront_notes"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://ymcapawtucket.org/camps/camp-westwood/day-camp",
+      "checked": "2026-11-12",
+      "fields": [
+        "age_min",
+        "age_max",
+        "price_min",
+        "price_max",
+        "price_per_week",
+        "price_per",
+        "extended_care",
+        "transportation",
+        "meals_included"
+      ],
+      "note": "Day Camp page: 'For children 5-16'; age groups from Seekers (4-5) to Survivor (12-15); half-day camp ages 4-6. Traditional $355/week, immersive and specialty $375, half day $260; bussing +$60/week (two Coventry-area routes); before care and after care +$30/week each (7:00-8:30, 4:30-6:00); 'Lunch is provided by Camp!'"
     }
   ],
   "review": {
@@ -107,6 +123,32 @@
         "quote": "Our program takes campers away from technology and places them in the great outdoors."
       }
     ],
-    "errors": []
-  }
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://ymcapawtucket.org/camps/camp-westwood",
+        "https://ymcapawtucket.org/camps/camp-westwood/day-camp"
+      ],
+      "changes": [
+        "Added ages 4-16 from the Day Camp page (age groups start at 4-5; the page says 'For children 5-16').",
+        "Added prices: price_min 260 (half day), price_max 375 (immersive/specialty), price_per_week 355 (traditional), per week.",
+        "Added extended_care true (before care 7:00 and after care to 6:00, $30/week each), transportation true (two bus routes, $60/week), meals_included true ('Lunch is provided by Camp!').",
+        "Existing fields re-checked against the main camp page: they match. Day Camp page added as a second source."
+      ],
+      "open_questions": [
+        "Page shows '2026 Dates and Rates' and 'Register for Summer 2026!'; no week dates in the page text and nothing for 2027 yet.",
+        "Ages: the text says 5-16 but the youngest groups and half-day camp start at 4; 4-16 used."
+      ]
+    }
+  },
+  "age_min": 4,
+  "age_max": 16,
+  "price_min": 260,
+  "price_max": 375,
+  "price_per_week": 355,
+  "price_per": "week",
+  "extended_care": true,
+  "transportation": true,
+  "meals_included": true
 }

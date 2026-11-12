@@ -36,7 +36,7 @@
   "sources": [
     {
       "url": "https://hendricken.com/camps/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -120,6 +120,20 @@
         "quote": "$175"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://hendricken.com/camps/"
+      ],
+      "changes": [
+        "No field changes: the camps listed (Green and Gold Baseball grades 5-9, Best of Hoops basketball grades 7-12 June 29-July 2 3:30-7:00pm $175, sprint/hurdle/throws coaching, Elite Football K-8 non-contact, Tape Ball Theatrics summer stage workshop), address and phone match the page. Source checked date updated."
+      ],
+      "open_questions": [
+        "This is a school page listing separate camps run by different outside operators (Green and Gold Baseball, Best of Hoops, Elite Football School, Tape Ball Theatrics, Sprint.hurdle.soar), each with its own registration. Should it be one listing, or should each operator's camp be drafted from its own site?",
+        "No year on the page; the basketball dates fit 2026 and images were uploaded in 2026. Nothing for 2027 yet.",
+        "The $175 and June 29-July 2 sit under the basketball camp; the track coaching text has no dates or price of its own."
+      ]
+    }
   }
 }

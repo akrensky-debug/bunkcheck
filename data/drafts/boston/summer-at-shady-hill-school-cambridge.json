@@ -3,7 +3,7 @@
   "name": "Summer at Shady Hill School",
   "operator_name": "Shady Hill School",
   "website_url": "https://www.shs.org/shs-life/auxiliary-and-summer-programs/summer-programs",
-  "registration_url": "https://www.shs.org/shs-life/auxiliary-and-summer-programs/summer-programs/registration",
+  "registration_url": "https://summeratshady.campbrainregistration.com/",
   "phone": "617.520.5260",
   "street_address": "178 Coolidge Hill",
   "city": "Cambridge",
@@ -17,7 +17,7 @@
   ],
   "age_min": 4,
   "age_max": 14,
-  "grade_max": 9,
+  "grade_max": 7,
   "description_short": "A six-week summer day camp at Shady Hill School in Cambridge for children ages 4 to 14, open to the public. Children are grouped by grade and each session has a theme, with arts, STEM and PE activities designed by Shady Hill teachers.",
   "activities": [
     "Arts",
@@ -34,17 +34,16 @@
     "Leaders-in-Training program (rising grades VIII-IX)"
   ],
   "extended_care": true,
-  "swim_waterfront_notes": "The page mentions water slide inflatables and optional water play only. It does not mention a pool or swim instruction.",
+  "swim_waterfront_notes": "No swimming: the school has no swimming facilities. Campers have daily water play on an inflatable water slide and other water activities.",
   "season_year": 2026,
   "sources": [
     {
       "url": "https://www.shs.org/shs-life/auxiliary-and-summer-programs/summer-programs",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
         "website_url",
-        "registration_url",
         "phone",
         "street_address",
         "city",
@@ -55,12 +54,36 @@
         "activities",
         "age_min",
         "age_max",
-        "grade_max",
         "description_short",
-        "extended_care",
-        "swim_waterfront_notes"
+        "grade_max"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.shs.org/shs-life/auxiliary-and-summer-programs/summer-programs/registration",
+      "checked": "2026-11-12",
+      "fields": [
+        "registration_url"
+      ]
+    },
+    {
+      "url": "https://www.shs.org/shs-life/auxiliary-and-summer-programs/summer-programs/faq",
+      "checked": "2026-11-12",
+      "fields": [
+        "email",
+        "transportation",
+        "swim_waterfront_notes",
+        "special_needs_notes",
+        "refund_policy_summary"
+      ]
+    },
+    {
+      "url": "https://www.shs.org/shs-life/auxiliary-and-summer-programs/summer-programs/schedule-26",
+      "checked": "2026-11-12",
+      "fields": [
+        "extended_care",
+        "sessions"
+      ]
     }
   ],
   "review": {
@@ -112,6 +135,42 @@
         "quote": "Optional Water Play"
       }
     ],
-    "errors": []
-  }
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.shs.org/shs-life/auxiliary-and-summer-programs/summer-programs",
+        "https://www.shs.org/shs-life/auxiliary-and-summer-programs/summer-programs/schedule-26",
+        "https://www.shs.org/shs-life/auxiliary-and-summer-programs/summer-programs/registration",
+        "https://www.shs.org/shs-life/auxiliary-and-summer-programs/summer-programs/faq"
+      ],
+      "changes": [
+        "registration_url changed to the CampBrain portal the Registration page links to ('Register for Summer Programs')",
+        "grade_max 9 -> 7: regular camper groups end at Explorers 'Rising Grades III-VII'; Leaders-in-Training are helpers, and the site gives their grades three ways (VI-IX, VII-IX, VIII-IX)",
+        "Added the 2026 season span from the Schedule '26 page (June 22-July 31, no camp July 3); tuition is only inside CampBrain",
+        "Added email alida.salins@shs.org (FAQ contact), transportation false ('We do not offer busing'), refund policy and special-needs note from the FAQ",
+        "extended_care now sourced to Schedule '26 (aftercare 3:30-6:00 PM, $200/week or $50/day)",
+        "swim_waterfront_notes: FAQ confirms no swimming facilities, daily water play on inflatable slide"
+      ],
+      "open_questions": [
+        "Tuition is not on the public pages (only 'Detailed rates and schedule options in CampBrain'); iCode add-ons are $100-$120",
+        "Meals unclear: FAQ says lunch delivery is offered 'at no additional cost' but also asks campers to bring lunch; meals_included left null",
+        "Financial aid only for Shady Hill school families; financial_aid left null",
+        "Registration page shows 2026 timing ('Thursday, January 15 at 12:00 PM', no year); no 2027 date yet"
+      ]
+    }
+  },
+  "email": "alida.salins@shs.org",
+  "transportation": false,
+  "special_needs_notes": "Families are invited to call the Auxiliary Programs Office before registering to discuss a child's needs; the program says it is not a medical or therapeutic program. Children must be toilet trained.",
+  "refund_policy_summary": "Refunds minus deposits are available until May 15, 2026; after that tuition is not refundable, with case-by-case exceptions by the Director of Auxiliary Programs. No refunds for missed days, or for a child withdrawn for safety reasons.",
+  "sessions": [
+    {
+      "name": "Summer 2026 (weekdays June 22-July 31, no camp July 3; booked by week or 2-week session)",
+      "start_date": "2026-06-22",
+      "end_date": "2026-07-31",
+      "price": null,
+      "availability": "unknown"
+    }
+  ]
 }

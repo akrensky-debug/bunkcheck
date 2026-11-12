@@ -2,7 +2,7 @@
   "slug": "running-brook-camps-day-camp-waltham",
   "name": "Running Brook Camps Day Camp",
   "operator_name": "Chapel Hill - Chauncy Hall School",
-  "website_url": "https://www.runningbrook.org/day-camp/day-camp",
+  "website_url": "https://www.runningbrook.org/day-camp/day-camp-ps-grade-6",
   "registration_url": "https://runningbrook.campintouch.com/ui/forms/application/camper/App",
   "email": "runningbrookcamp@chch.org",
   "phone": "781-314-0994",
@@ -19,7 +19,7 @@
     "performing_arts"
   ],
   "grade_max": 6,
-  "description_short": "Co-ed day camp at Chapel Hill-Chauncy Hall School in Waltham for children from age 3.5 through completed 6th grade, run in two-week sessions. Activities include arts and crafts, drama, gym games, and nature, with archery, a challenge course, and STEM for older campers. Snack and lunch are provided.",
+  "description_short": "Co-ed day camp at Chapel Hill-Chauncy Hall School in Waltham for children from age 3.5 through completed 6th grade, run in four two-week sessions from June 28 to August 20, 2027. Activities include arts and crafts, drama, gym games, and nature, with archery, a challenge course, and STEM for older campers. Snack and lunch are provided.",
   "activities": [
     "Arts & Crafts",
     "Camp Games",
@@ -42,8 +42,8 @@
   "meals_included": true,
   "sources": [
     {
-      "url": "https://www.runningbrook.org/day-camp/day-camp",
-      "checked": "2026-10-13",
+      "url": "https://www.runningbrook.org/day-camp/day-camp-ps-grade-6",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -62,10 +62,41 @@
         "description_short",
         "extended_care",
         "transportation",
-        "meals_included",
-        "financial_aid"
+        "meals_included"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.runningbrook.org/tuition-information",
+      "checked": "2026-11-12",
+      "fields": [
+        "sessions",
+        "price_min",
+        "price_max",
+        "price_per"
+      ]
+    },
+    {
+      "url": "https://www.runningbrook.org/how-to-register",
+      "checked": "2026-11-12",
+      "fields": [
+        "refund_policy_summary"
+      ]
+    },
+    {
+      "url": "https://www.runningbrook.org/financial-aid",
+      "checked": "2026-11-12",
+      "fields": [
+        "financial_aid"
+      ]
+    },
+    {
+      "url": "https://www.runningbrook.org/who-we-are/accreditation",
+      "checked": "2026-11-12",
+      "fields": [
+        "aca_accredited",
+        "aca_source_url"
+      ]
     }
   ],
   "review": {
@@ -104,6 +135,68 @@
     ],
     "errors": [
       "missing required season_year"
-    ]
-  }
+    ],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.runningbrook.org/day-camp/day-camp (404)",
+        "https://www.runningbrook.org/day-camp/day-camp-ps-grade-6",
+        "https://www.runningbrook.org/summer-family-resources/important-dates",
+        "https://www.runningbrook.org/tuition-information",
+        "https://www.runningbrook.org/financial-aid",
+        "https://www.runningbrook.org/how-to-register",
+        "https://www.runningbrook.org/who-we-are/accreditation"
+      ],
+      "changes": [
+        "The draft's page (/day-camp/day-camp) now returns 404; the same content moved to /day-camp/day-camp-ps-grade-6. Updated website_url and the source row",
+        "Updated to the 2027 season: four two-week sessions June 28-August 20, 2027 (Important Dates page) at $1,845 ($1,795 for prorated Session 4) from the 2027 Tuition page; price_min/max and price_per session",
+        "Added refund/payment policy from How to Register ($50 registration fee, $300 deposit per session, March 17 Commitment Day, March 31 balance)",
+        "financial_aid confirmed on the Financial Aid page (tuition assistance, apply by January 31) - low-confidence item resolved",
+        "Added ACA accreditation (Accreditation page)",
+        "Description now gives the 2027 session span; validator error (missing season_year) resolved"
+      ],
+      "open_questions": [
+        "age_min left null: page says 3.5 years old",
+        "Multi-session discounts (5% for three, 10% for four sessions) and sibling discount not reflected in prices",
+        "Session 4 early pick-up is '1:30pm - 2:00pm' on the dates pages but '1:30pm - 2:30pm' on the tuition page"
+      ]
+    }
+  },
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Session 1",
+      "start_date": "2027-06-28",
+      "end_date": "2027-07-09",
+      "price": 1845,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 2",
+      "start_date": "2027-07-12",
+      "end_date": "2027-07-23",
+      "price": 1845,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 3",
+      "start_date": "2027-07-26",
+      "end_date": "2027-08-06",
+      "price": 1845,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 4 (early dismissal Aug 20, prorated)",
+      "start_date": "2027-08-09",
+      "end_date": "2027-08-20",
+      "price": 1795,
+      "availability": "unknown"
+    }
+  ],
+  "price_min": 1795,
+  "price_max": 1845,
+  "price_per": "session",
+  "refund_policy_summary": "A $50 registration fee per child and a $300 deposit per two-week session are due at registration; full payment and forms are due March 31, 2027. Until March 17, 2027 (Commitment Day) one session can be dropped for an account credit; dropping more is allowed only if there is a waitlist, otherwise the full balance is owed.",
+  "aca_accredited": true,
+  "aca_source_url": "https://www.runningbrook.org/who-we-are/accreditation"
 }

@@ -23,11 +23,12 @@
   "sources": [
     {
       "url": "https://www.urbanair.com/massachusetts-bellingham/camps/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
         "website_url",
+        "registration_url",
         "phone",
         "street_address",
         "city",
@@ -80,6 +81,24 @@
     ],
     "errors": [
       "missing required season_year"
-    ]
-  }
+    ],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.urbanair.com/massachusetts-bellingham/camps/",
+        "https://store.unleashedbrands.com/urban-air/bellingham-ma/purchase/ticket?productType=Camp"
+      ],
+      "changes": [
+        "Added registration_url: the page's 'Book Camp Today' link to the Unleashed Brands store (camp product).",
+        "Other fields re-checked against the page: name, address, phone, description, activities and the no-refund policy match."
+      ],
+      "open_questions": [
+        "The camp page has no dates, ages, prices or season year; it is the chain's school-break camp template ('Time at home during a school break...'), though the page title says 'Summer & Year-Round Fun'.",
+        "The booking store linked from the page returned 403 with a bot challenge ('Just a moment...'), so camp dates could not be read. Not worked around.",
+        "season_year cannot be sourced, so the validator still fails. Andrew: ask the park for summer 2027 weeks or drop.",
+        "Meals conflict on the page: 'Healthy snacks and balanced lunches' vs. lunch provided only Wednesday and Friday for full-week campers; meals_included left null."
+      ]
+    }
+  },
+  "registration_url": "https://store.unleashedbrands.com/urban-air/bellingham-ma/purchase/ticket?productType=Camp"
 }

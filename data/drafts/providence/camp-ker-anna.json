@@ -2,21 +2,46 @@
   "slug": "camp-ker-anna",
   "name": "Camp Ker-Anna",
   "website_url": "https://www.keranna.org/",
-  "city": null,
+  "city": "Cumberland",
   "state": "RI",
-  "zip": null,
-  "description_short": "Camp Ker-Anna is a summer camp in the woods of northern Rhode Island, run with help from volunteers. The homepage does not describe its programs, ages, dates or costs.",
+  "zip": "02864",
+  "description_short": "A volunteer-run camp in the woods of Cumberland, RI, founded in 1937 for the Scouts of St. Matthew Church in Central Falls and now open to all children. It has run weekly day camp weeks and separate overnight weeks for boys and girls.",
   "sources": [
     {
       "url": "https://www.keranna.org/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
-        "website_url",
-        "state",
+        "website_url"
+      ],
+      "note": "Homepage."
+    },
+    {
+      "url": "https://www.keranna.org/contact",
+      "checked": "2026-11-12",
+      "fields": [
+        "email",
+        "street_address",
+        "city",
+        "state"
+      ],
+      "note": "'camp@keranna.org; 500 Reservoir Road, Cumberland, RI 02816' (the page's ZIP 02816 is Coventry's; the Census geocoder gives 02864)."
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=500+Reservoir+Road&city=Cumberland&state=RI&benchmark=Public_AR_Current&format=json",
+      "checked": "2026-11-12",
+      "fields": [
+        "zip"
+      ],
+      "note": "ZIP from the US Census geocoder: 500 RESERVOIR RD, CUMBERLAND, RI, 02864"
+    },
+    {
+      "url": "https://www.keranna.org/about-us",
+      "checked": "2026-11-12",
+      "fields": [
         "description_short"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "History: founded 1937 by Rev. Ronaldo Gadoury in Cumberland for the Scouts of St. Matthew, Central Falls; now open to all children; volunteer-run. Events page lists day camp weeks and overnight boys'/girls' weeks."
     }
   ],
   "review": {
@@ -61,6 +86,26 @@
       "missing required season_year",
       "camp_type must be one of ['day', 'sleepaway', 'specialty']",
       "city None, RI is not in cities.py"
-    ]
-  }
+    ],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.keranna.org/",
+        "https://www.keranna.org/about-us",
+        "https://www.keranna.org/contact",
+        "https://www.keranna.org/events"
+      ],
+      "changes": [
+        "Filled city Cumberland, street_address 500 Reservoir Road and email camp@keranna.org from the Contact page; ZIP 02864 from the Census geocoder (the page prints 02816, which is Coventry's ZIP).",
+        "Rewrote description from the About Us and Events pages."
+      ],
+      "open_questions": [
+        "The site looks stale: the Events page schedule (Day Camp Week 1 'Monday, June 28th'; overnight weeks from 'Sunday, July 4th') fits 2021, and nothing newer is posted. Is the camp still running? season_year cannot be set, so the validator fails.",
+        "Camp runs both day weeks and overnight weeks; camp_type left null until a current season is posted.",
+        "No ages, prices or phone on the site."
+      ]
+    }
+  },
+  "email": "camp@keranna.org",
+  "street_address": "500 Reservoir Road"
 }

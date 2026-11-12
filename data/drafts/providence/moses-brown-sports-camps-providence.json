@@ -35,7 +35,7 @@
   ],
   "price_min": 156,
   "price_max": 345,
-  "financial_aid": true,
+  "financial_aid": false,
   "extended_care": true,
   "season_year": 2026,
   "sessions": [
@@ -344,7 +344,7 @@
   "sources": [
     {
       "url": "https://www.camps.mosesbrown.org/sportscamps",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -365,8 +365,6 @@
         "description_short",
         "price_min",
         "price_max",
-        "extended_care",
-        "financial_aid",
         "sessions"
       ],
       "note": "Drafted by the listing tool from this page"
@@ -378,6 +376,30 @@
         "zip"
       ],
       "note": "ZIP from the US Census geocoder for 250 LLOYD AVE, PROVIDENCE, RI, 02906"
+    },
+    {
+      "url": "https://www.camps.mosesbrown.org/faanddiscounts",
+      "checked": "2026-11-12",
+      "fields": [
+        "financial_aid"
+      ],
+      "note": "'Financial Aid is only available for RISE Camp.' Discounts are also RISE-only."
+    },
+    {
+      "url": "https://www.camps.mosesbrown.org/summerextendedaay",
+      "checked": "2026-11-12",
+      "fields": [
+        "extended_care"
+      ],
+      "note": "Early arrival from 7:30 a.m. ($50/week) and extended day until 5:30 p.m. ($100/week), $125 for both; weekly only, no refunds."
+    },
+    {
+      "url": "https://www.camps.mosesbrown.org/lunch",
+      "checked": "2026-11-12",
+      "fields": [
+        "meals_included"
+      ],
+      "note": "Lunch is included only for RISE camps; other full-day campers bring lunch or buy the optional $40/week lunch."
     }
   ],
   "review": {
@@ -439,6 +461,32 @@
         "quote": "JUNE 22 SESSION IS FULL AND CURRENTLY WAITLIST ONLY"
       }
     ],
-    "errors": []
-  }
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.camps.mosesbrown.org/sportscamps",
+        "https://www.camps.mosesbrown.org/faanddiscounts",
+        "https://www.camps.mosesbrown.org/summerextendedaay",
+        "https://www.camps.mosesbrown.org/lunch",
+        "https://www.camps.mosesbrown.org/cancellationandfees",
+        "https://www.camps.mosesbrown.org/summer-camp",
+        "https://www.camps.mosesbrown.org/items-2/soccer"
+      ],
+      "changes": [
+        "financial_aid true -> false: the Financial Aid page says 'Financial Aid is only available for RISE Camp.'",
+        "Added meals_included false: lunch is included only for RISE; sports campers bring lunch or buy the optional $40/week lunch.",
+        "extended_care true now sourced to the Early Arrival and Extended Day page (7:30 a.m.-5:30 p.m., $50/$100/$125 per week).",
+        "All 43 sessions, prices, grades/ages, address, phone, email and registration link re-checked against the Sports Camps page: they match. Source checked date updated."
+      ],
+      "open_questions": [
+        "The page gives no year; weeks fit 2026 (June 15 Monday, no camp June 19). No 2027 sports camp schedule yet.",
+        "'July 22' week (a Wednesday in 2026) and the June 29 week ('no camp July 4', a Saturday in 2026) are left out because their dates are unclear on the page.",
+        "The Summer Camp page says MB Camps is ACA accredited; aca_accredited left null until checked on acacamps.org.",
+        "The Cancellation and Fees page renders with no text, so no refund policy is recorded.",
+        "The Summer Camp overview says sports camps are for ages 4 1/2-15, but individual programs run to grade 12 / age 18 (squash 6-18)."
+      ]
+    }
+  },
+  "meals_included": false
 }

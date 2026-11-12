@@ -3,7 +3,7 @@
   "name": "Summer Sage",
   "operator_name": "The Sage School",
   "website_url": "https://sageschool.org/program/summer-sage/",
-  "email": "ksollie@sageschool.org",
+  "email": "cgorea@sageschool.org",
   "phone": "(508) 543-9619",
   "street_address": "171 Mechanic Street",
   "city": "Foxboro",
@@ -11,7 +11,7 @@
   "zip": "02035",
   "camp_type": "day",
   "primary_categories": [
-    "arts"
+    "general"
   ],
   "age_min": 3,
   "grade_max": 5,
@@ -21,7 +21,7 @@
   "sources": [
     {
       "url": "https://sageschool.org/program/summer-sage/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -37,7 +37,8 @@
         "age_min",
         "grade_max",
         "description_short",
-        "extended_care"
+        "extended_care",
+        "sessions"
       ],
       "note": "Drafted by the listing tool from this page"
     }
@@ -102,6 +103,30 @@
         "quote": "Week 1: Stage, Studio, & Beyond"
       }
     ],
-    "errors": []
-  }
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://sageschool.org/program/summer-sage/"
+      ],
+      "changes": [
+        "email ksollie@sageschool.org -> cgorea@sageschool.org (the page now says to contact Constantin Gorea).",
+        "primary_categories ['arts'] -> ['general']: the 2026 weekly themes are mixed (stage and studio, real-world skills, secret agent, games, fantasy), and the page does not call it an arts camp.",
+        "Added one 2027 session for the overall season dates the page gives (June 21 - August 13, 2027); weekly themes and prices are not posted."
+      ],
+      "open_questions": [
+        "Weekly 2027 themes, prices and age groups are 'coming soon'; ages 3-4 through Grade 5 come from the 2026 groups.",
+        "Registration is through Homeroom; no 2027 opening date is given."
+      ]
+    }
+  },
+  "sessions": [
+    {
+      "name": "Summer Sage 2027 (overall season; weekly details coming soon)",
+      "start_date": "2027-06-21",
+      "end_date": "2027-08-13",
+      "price": null,
+      "availability": "unknown"
+    }
+  ]
 }

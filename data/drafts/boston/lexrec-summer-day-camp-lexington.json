@@ -6,11 +6,10 @@
   "registration_url": "https://lexrecma.myrec.com/info/activities/program_details.aspx?ProgramID=30941",
   "city": "Lexington",
   "state": "MA",
-  "zip": null,
+  "zip": "02421",
   "camp_type": "day",
   "primary_categories": [
-    "sports",
-    "arts"
+    "general"
   ],
   "grade_min": 0,
   "grade_max": 8,
@@ -55,7 +54,7 @@
   "sources": [
     {
       "url": "https://www.lexingtonma.gov/2503/LexRec-Summer-Day-Camp",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -71,9 +70,26 @@
         "description_short",
         "special_needs_notes",
         "swim_waterfront_notes",
-        "sessions"
+        "sessions",
+        "secondary_categories"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://lexingtonma.gov/1081/Town-Aquatics",
+      "checked": "2026-11-12",
+      "fields": [
+        "street_address",
+        "zip"
+      ]
+    },
+    {
+      "url": "https://lexrecma.myrec.com/info/activities/program_details.aspx?ProgramID=30941",
+      "checked": "2026-11-12",
+      "fields": [
+        "email",
+        "phone"
+      ]
     }
   ],
   "review": {
@@ -130,6 +146,35 @@
     ],
     "errors": [
       "missing required zip"
-    ]
-  }
+    ],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.lexingtonma.gov/2503/LexRec-Summer-Day-Camp",
+        "https://lexingtonma.gov/1081/Town-Aquatics",
+        "https://lexrecma.myrec.com/info/activities/program_details.aspx?ProgramID=30941",
+        "https://www.lexingtonma.gov/DocumentCenter/View/17402/Summer-2026-Caregiver-Manual"
+      ],
+      "changes": [
+        "Added street address and ZIP: the Town Aquatics page says the Town Pool 'is located at 80 Worthen Road at the Center Recreation Complex', Lexington, MA 02421 (fixes the missing-zip validator error)",
+        "Added Recreation Department email recdept@lexingtonma.gov and phone (781) 698-4800 (registration page and 2026 Caregiver Manual)",
+        "Categories: primary general (multi-activity town day camp); swimming, sports, arts as secondary",
+        "LIT session dates (July 6-17, July 20-31, August 3-14) confirmed on the page; all other fields match"
+      ],
+      "open_questions": [
+        "No weekly dates or prices for the K-8 day camp on the town pages; they sit in a Canva information sheet that can't be read as text, and the MyRec program now shows 'This program is unavailable'",
+        "MyRec page said 'INCLUSION REQUESTS ARE CLOSED FOR THE SUMMER' (2026)",
+        "Drop-off/pick-up is at the LHS Field House, 8:45-9:15 AM and 3:00-3:30 PM by age (Caregiver Manual)",
+        "Kept 2026 season: nothing posted for 2027"
+      ]
+    }
+  },
+  "street_address": "80 Worthen Road (Center Recreation Complex)",
+  "email": "recdept@lexingtonma.gov",
+  "phone": "(781) 698-4800",
+  "secondary_categories": [
+    "swimming",
+    "sports",
+    "arts"
+  ]
 }

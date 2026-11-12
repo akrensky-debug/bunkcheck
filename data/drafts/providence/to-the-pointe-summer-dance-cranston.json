@@ -3,44 +3,66 @@
   "name": "To The Pointe Summer Dance",
   "operator_name": "To The Pointe Dance Studios",
   "website_url": "https://tothepointedancestudios.com/summerdance",
-  "registration_url": "https://tothepointedancestudios.com/locations",
+  "registration_url": "https://tothepointedancestudios.com/summer-camps",
   "email": "contact@tothepointedancestudios.com",
   "phone": "401-942-5554",
   "city": "Cranston",
   "state": "RI",
-  "zip": null,
+  "zip": "02920",
   "camp_type": "specialty",
   "primary_categories": [
     "performing_arts"
   ],
-  "description_short": "A dance studio's summer program with weekly themed day camps at its Cranston, RI location, grouped by age and taught by studio dance teachers. No experience is needed. The studio also runs 6-week weekly classes at its three RI locations and a 6-week intensive for experienced dancers.",
+  "description_short": "Weekly themed dance camps at To The Pointe Dance Studios in Cranston, RI, for ages 3 and up, grouped by age and taught by studio dance teachers. Campers learn routines (hip hop, jazz, ballet, pom), make themed crafts and perform a showcase for families on Friday. Half day 9am-12pm or full day 9am-3pm; no experience needed.",
   "activities": [
-    "Dance",
-    "Weekly themed dance camps",
-    "Weekly dance classes (6 weeks)",
-    "Summer dance intensive (6 weeks)",
-    "Summer Showcase performance"
+    "Dance (hip hop, jazz, ballet, pom)",
+    "Musical theatre",
+    "Themed crafts",
+    "Games",
+    "Friday showcase performance"
   ],
   "season_year": 2026,
   "sources": [
     {
       "url": "https://tothepointedancestudios.com/summerdance",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
         "website_url",
-        "registration_url",
         "email",
         "phone",
         "city",
         "state",
         "camp_type",
-        "primary_categories",
-        "activities",
-        "description_short"
+        "primary_categories"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Summer Dance 2026 overview page."
+    },
+    {
+      "url": "https://tothepointedancestudios.com/summer-camps",
+      "checked": "2026-11-12",
+      "fields": [
+        "registration_url",
+        "age_min",
+        "description_short",
+        "activities",
+        "price_min",
+        "price_max",
+        "price_per",
+        "meals_included",
+        "sessions"
+      ],
+      "note": "2026 Summer Camp Themes page: drop-off 9am, half day to 12pm (pack snacks), full day to 3pm (pack snacks and lunch); per camp 1 half day $49, 1 full day $69, 5 half days $229, 5 full days $299, plus a $15 registration fee in the cart; Wicked camp $214."
+    },
+    {
+      "url": "https://tothepointedancestudios.com/locations-2-1",
+      "checked": "2026-11-12",
+      "fields": [
+        "street_address",
+        "zip"
+      ],
+      "note": "'MAIN OFFICE/FLAGSHIP STUDIO: 800 Oaklawn Ave Cranston RI 02920' (the studio moved there)."
     }
   ],
   "review": {
@@ -77,6 +99,63 @@
     ],
     "errors": [
       "missing required zip"
-    ]
-  }
+    ],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://tothepointedancestudios.com/summerdance",
+        "https://tothepointedancestudios.com/summer-camps",
+        "https://tothepointedancestudios.com/locations-2-1",
+        "https://tothepointedancestudios.com/locations"
+      ],
+      "changes": [
+        "Filled zip 02920 and street_address 800 Oaklawn Ave from the Locations page (camp page also gives '800 Oaklawn Ave Cranston').",
+        "Added the four 2026 camps from the Summer Camps page as sessions (K-Pop, Fairy Princess, Wicked!, Zombies) with prices.",
+        "Added age_min 3, prices $229 (5 half days) to $299 (5 full days) per week, meals_included false (pack lunch).",
+        "registration_url /locations (dance class registration) -> /summer-camps (where the camp 'SIGN UP' buttons are).",
+        "Rewrote description and activities around the camps; dropped the 6-week classes and intensive, which are not camps."
+      ],
+      "open_questions": [
+        "Page still shows 2026 camps; nothing for 2027 yet.",
+        "No upper age stated (camps say '3 & up', '4 and UP', 'ages 3-10', '7 & up'); age_max left null.",
+        "Cart adds a $15 registration fee to listed prices."
+      ]
+    }
+  },
+  "street_address": "800 Oaklawn Ave",
+  "age_min": 3,
+  "price_min": 229,
+  "price_max": 299,
+  "price_per": "week",
+  "meals_included": false,
+  "sessions": [
+    {
+      "name": "K-Pop Camp (ages 4+; 5 full days $299, 5 half days $229)",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": 299,
+      "availability": "unknown"
+    },
+    {
+      "name": "Fairy Princess Camp (ages 3-10; 5 full days $299, 5 half days $229)",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": 299,
+      "availability": "unknown"
+    },
+    {
+      "name": "Wicked! Musical Theatre Camp (ages 7+; Mon, Wed, Fri 9am-1pm)",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": 214,
+      "availability": "unknown"
+    },
+    {
+      "name": "Zombies Camp (ages 3+; 5 full days $299, 5 half days $229)",
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-14",
+      "price": 299,
+      "availability": "unknown"
+    }
+  ]
 }

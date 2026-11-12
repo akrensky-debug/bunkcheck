@@ -37,7 +37,7 @@
   "sources": [
     {
       "url": "https://www.teamworkssomerset.com/summercamphome.aspx",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -95,6 +95,21 @@
         "quote": "a wide variety of camp options for ages 4–14"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.teamworkssomerset.com/summercamphome.aspx",
+        "https://www.teamworkssomerset.com/upcomingsummerprogram.aspx"
+      ],
+      "changes": [
+        "No field changes: camp options (Cubs 4-6, TW Camp 7-14, TW Friends 6-14, sport specialty 4-14), hours with early drop-off and extended day, address and phone match the page. Source checked date updated."
+      ],
+      "open_questions": [
+        "Page still shows Summer Camp 2026 (June 15 - September 4); the registration page lists no upcoming programs, so no weeks or prices.",
+        "Page title says ages 5-14 but the body says 4-14 (Cubs 4-6); 4-14 kept.",
+        "A Teamworks Membership is required; its cost and weekly camp prices are not on the page (only a $50 per week deposit to save a spot)."
+      ]
+    }
   }
 }

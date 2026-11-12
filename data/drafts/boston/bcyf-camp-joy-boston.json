@@ -7,16 +7,18 @@
   "phone": "617-961-6952",
   "city": "Boston",
   "state": "MA",
-  "zip": null,
+  "zip": "02120",
   "camp_type": "day",
   "primary_categories": [
     "special_needs"
   ],
   "age_min": 3,
   "age_max": 15,
-  "description_short": "A free-standing city-run, four-week, full-day summer camp for Boston residents with disabilities ages 3-15 and their siblings ages 3-7. It includes breakfast, lunch, door-to-door transportation and a licensed nurse at each site.",
+  "description_short": "A city-run, four-week, full-day summer camp for Boston residents with disabilities ages 3-15 and their siblings ages 3-7, run by Boston Centers for Youth & Families. Activities range from group games to gym time and arts and crafts. It includes breakfast, lunch, door-to-door transportation and a licensed nurse at each site.",
   "activities": [
-    "Enrichment activities",
+    "Group games",
+    "Gym time",
+    "Arts and crafts",
     "Peer socialization"
   ],
   "transportation": true,
@@ -26,7 +28,7 @@
   "sources": [
     {
       "url": "https://www.boston.gov/departments/boston-centers-youth-and-families/bcyf-camp-joy",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -37,15 +39,28 @@
         "state",
         "camp_type",
         "primary_categories",
-        "activities",
         "age_min",
         "age_max",
-        "description_short",
         "transportation",
         "meals_included",
-        "special_needs_notes"
+        "special_needs_notes",
+        "registration_url"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.boston.gov/sites/default/files/file/2026/01/Application_CampJoy2026.pdf",
+      "checked": "2026-11-12",
+      "fields": [
+        "description_short",
+        "activities",
+        "zip",
+        "price_min",
+        "price_max",
+        "price_per",
+        "refund_policy_summary",
+        "sessions"
+      ]
     }
   ],
   "review": {
@@ -108,6 +123,39 @@
     ],
     "errors": [
       "missing required zip"
-    ]
-  }
+    ],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.boston.gov/departments/boston-centers-youth-and-families/bcyf-camp-joy",
+        "https://www.boston.gov/sites/default/files/file/2026/01/Application_CampJoy2026.pdf"
+      ],
+      "changes": [
+        "Description: removed 'free-standing' (not on the page); added activities from the 2026 application letter (group games, gym time, arts and crafts)",
+        "Added the 2026 session from the linked 2026 application PDF: Monday-Friday July 13-August 7, 8am-2pm, location TBD",
+        "Added prices from the application: $275 parent fee for the first child, $80 per sibling (agency fee $350 per child); price_per session; refund policy 'NO REFUNDS'",
+        "Added registration_url (the page's 'Summer 2026 application' PDF; applications are mailed or dropped off)",
+        "Filled zip 02120 from the application's BCYF mailing address (1483 Tremont Street, Boston, MA 02120) so the validator passes; the camp site itself is 'TBD'",
+        "Ages and other low-confidence items confirmed on the page"
+      ],
+      "open_questions": [
+        "Andrew to decide: the camp site is 'TBD', so zip 02120 is the BCYF office mailing address, not the camp location. Keep it, or hold the listing until a site is named?",
+        "Nothing posted for 2027 yet; the page still says 'Summer 2026 application now available!'"
+      ]
+    }
+  },
+  "registration_url": "https://www.boston.gov/sites/default/files/file/2026/01/Application_CampJoy2026.pdf",
+  "price_min": 80,
+  "price_max": 275,
+  "price_per": "session",
+  "refund_policy_summary": "Fees are paid by money order only, with no refunds.",
+  "sessions": [
+    {
+      "name": "Summer 2026 (Mon-Fri, 8am-2pm, location TBD)",
+      "start_date": "2026-07-13",
+      "end_date": "2026-08-07",
+      "price": 275,
+      "availability": "unknown"
+    }
+  ]
 }

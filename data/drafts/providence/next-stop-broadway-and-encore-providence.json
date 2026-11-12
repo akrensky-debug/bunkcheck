@@ -56,7 +56,7 @@
   "sources": [
     {
       "url": "https://www.ppacri.org/outreach/next-stop-broadway",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -159,6 +159,20 @@
         "quote": "The registration fee is $590 for a new, individual registration and $550 for siblings and returning registrations."
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.ppacri.org/outreach/next-stop-broadway"
+      ],
+      "changes": [
+        "No field changes: the three 2027 weeks, fees ($565/$525, $590/$550), ages 10-17, hours, snacks/Friday lunch, financial aid, email, phone and address all match the page. Source checked date updated."
+      ],
+      "open_questions": [
+        "Eligibility text still says 'first day of the program (July 20 and/or July 27)', the 2026 dates; the 2027 weeks at the top are July 12-16 and July 19-23.",
+        "Fees are not labeled with a year; they may be the 2026 fees.",
+        "ENCORE! is for high school or early college performers, so some campers may be older than age_max 17."
+      ]
+    }
   }
 }

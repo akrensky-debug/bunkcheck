@@ -10,19 +10,21 @@
   "state": "MA",
   "zip": "02043",
   "primary_categories": [
-    "sports"
+    "sailing"
   ],
-  "description_short": "Hingham Maritime Center in Hingham, MA, offers sailing, rowing, paddleboarding and maritime education.",
+  "description_short": "Youth summer programs on Hingham Harbor run by the Hingham Maritime Center: Little Mariners marine-science weeks for ages 5–7, sailing for ages 7 and up (Beginner, Intermediate, Venture, Opti Race, 420), and rowing for grades 7–12. Sessions run one to four weeks, led by experienced instructors with safety launches.",
   "activities": [
-    "Sailing",
+    "Sailing (Opti and 420)",
+    "Sail racing",
     "Rowing",
     "Paddleboarding",
-    "Maritime education"
+    "Marine science and beach exploration (Little Mariners)",
+    "Marine-themed arts and crafts"
   ],
   "sources": [
     {
       "url": "https://www.hinghammaritime.org/programs",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -32,12 +34,42 @@
         "street_address",
         "city",
         "state",
-        "zip",
-        "primary_categories",
-        "activities",
-        "description_short"
+        "zip"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.hinghammaritime.org/youth-sailing",
+      "checked": "2026-11-12",
+      "fields": [
+        "camp_type",
+        "primary_categories",
+        "description_short",
+        "activities"
+      ]
+    },
+    {
+      "url": "https://www.hinghammaritime.org/youth-rowing",
+      "checked": "2026-11-12",
+      "fields": [
+        "secondary_categories",
+        "swim_waterfront_notes",
+        "sessions"
+      ]
+    },
+    {
+      "url": "https://www.hinghammaritime.org/little-mariners",
+      "checked": "2026-11-12",
+      "fields": [
+        "age_min"
+      ]
+    },
+    {
+      "url": "https://www.hinghammaritime.org/scholarship",
+      "checked": "2026-11-12",
+      "fields": [
+        "financial_aid"
+      ]
     }
   ],
   "review": {
@@ -77,6 +109,68 @@
       "missing required camp_type",
       "missing required season_year",
       "camp_type must be one of ['day', 'sleepaway', 'specialty']"
-    ]
-  }
+    ],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.hinghammaritime.org/programs",
+        "https://www.hinghammaritime.org/youth-sailing",
+        "https://www.hinghammaritime.org/little-mariners",
+        "https://www.hinghammaritime.org/youth-rowing",
+        "https://www.hinghammaritime.org/scholarship",
+        "https://www.hinghammaritime.org/faq"
+      ],
+      "changes": [
+        "The draft's Programs page is a JavaScript menu; read the linked Youth Sailing, Little Mariners and Youth Rowing pages instead",
+        "Set camp_type specialty and season_year 2026 (fixes both validator errors). The rowing session dates (June 22-July 3 ... August 3-14) fall on 2026 weekdays",
+        "Added the four Youth Rowing: Beginner sessions (2026); prices are not on the pages (Bookeo registration)",
+        "Primary category sailing; sports and nature secondary; age_min 5 (Little Mariners ages 5-7)",
+        "Description and activities rewritten from the youth program pages; added swim notes and financial aid ('Scholarships available for the 2026 season!')"
+      ],
+      "open_questions": [
+        "Multi-program boating center rather than one camp: Little Mariners (5-7), sailing (7+), rowing (grades 7-12). Sailing week dates and all prices are only in the booking system, so most sessions are missing",
+        "The youth sailing page also lists a fall program (Fall 420 Race Technique) alongside summer ones; age_max left null",
+        "No 2027 dates yet; the sailing page says 'Registration is open' with no year"
+      ]
+    }
+  },
+  "camp_type": "specialty",
+  "season_year": 2026,
+  "secondary_categories": [
+    "sports",
+    "nature"
+  ],
+  "age_min": 5,
+  "financial_aid": true,
+  "swim_waterfront_notes": "Sailing and rowing require competent swimmers (rowers must be confident swimming underwater and watch the USRowing safety video). Sessions on Hingham Harbor are supported by safety launches. Little Mariners is mainly land-based.",
+  "sessions": [
+    {
+      "name": "Youth Rowing: Beginner Session 1 (grades 7-12)",
+      "start_date": "2026-06-22",
+      "end_date": "2026-07-03",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Youth Rowing: Beginner Session 2 (grades 7-12)",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-17",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Youth Rowing: Beginner Session 3 (grades 7-12)",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-31",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Youth Rowing: Beginner Session 4 (grades 7-12)",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-14",
+      "price": null,
+      "availability": "unknown"
+    }
+  ]
 }

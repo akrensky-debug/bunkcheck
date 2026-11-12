@@ -2,37 +2,54 @@
   "slug": "creative-corner-art-studio-summer-art-club-franklin",
   "name": "Creative Corner Art Studio – Summer Art Club",
   "operator_name": "Creative Corner Art Studio",
-  "website_url": "https://www.creativecornerartstudiofranklin.com/",
+  "website_url": "https://www.creativecornerartstudiofranklin.com/services-4",
   "email": "amy.creativecornerartstudio@gmail.com",
   "street_address": "21 E Central St",
   "city": "Franklin",
   "state": "MA",
   "zip": "02038",
-  "camp_type": "specialty",
+  "camp_type": "day",
   "primary_categories": [
     "arts"
   ],
-  "description_short": "Creative Corner is a community art studio in downtown Franklin, MA, that runs art classes for all ages. The studio lists a Summer Art Club, but this page gives no details about it.",
+  "description_short": "Weekly summer art clubs for ages 5-11 at Creative Corner Art Studio in downtown Franklin, MA. Each week has a theme, with painting, pottery and clay, mixed media, jewelry and LEGO builds; a two-week session in July makes a short film with Franklin High School students. Half day 8:30-12:00 or full day 8:30-3:30, with a Friday art share for families.",
   "refund_policy_summary": "No refunds on studio events, services or products. You can get a credit instead, good for up to one year from purchase, toward any studio event, class or studio-branded merchandise. This does not cover artwork by local or third-party artists.",
   "sources": [
     {
       "url": "https://www.creativecornerartstudiofranklin.com/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
-        "name",
         "operator_name",
-        "website_url",
         "email",
         "street_address",
         "city",
         "state",
         "zip",
-        "camp_type",
-        "primary_categories",
-        "description_short",
         "refund_policy_summary"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Studio homepage: address, email, no-refund/credit policy."
+    },
+    {
+      "url": "https://www.creativecornerartstudiofranklin.com/services-4",
+      "checked": "2026-11-12",
+      "fields": [
+        "name",
+        "website_url",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "price_min",
+        "price_max",
+        "price_per_week",
+        "price_per",
+        "extended_care",
+        "meals_included",
+        "sessions"
+      ],
+      "note": "Summer Art Club page: 'Creative Kid Art Summer Clubs, Summer 2026, Ages 5-11'; half day $300/week, full day $400/week; extended care 8:00-8:30 and 3:30-4:00 for $50/week; 'Lunch provided from home'; 2026 weeks and booking prices ('From $300', two-week session 'From $600'). Page header: 'Summer 2027 Programming Coming in January'."
     }
   ],
   "review": {
@@ -80,6 +97,87 @@
     ],
     "errors": [
       "missing required season_year"
-    ]
-  }
+    ],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.creativecornerartstudiofranklin.com/",
+        "https://www.creativecornerartstudiofranklin.com/services-4"
+      ],
+      "changes": [
+        "Found the Summer Art Club page (services-4) linked from the homepage menu; website_url now points to it.",
+        "Added season_year 2026 with 6 sessions (June 29-Aug 28, 2026) and their booking prices.",
+        "Added ages 5-11, camp_type specialty -> day (half-day and full-day weekly art day camp), prices $300 half day / $400 full day per week, extended_care true ($50/week), meals_included false (lunch from home).",
+        "Rewrote description_short and activities from the Summer Art Club page.",
+        "Sources split: homepage for contact/address/refund policy, Summer Art Club page for the rest."
+      ],
+      "open_questions": [
+        "Page says 'Summer 2027 Programming Coming in January'; no 2027 dates or registration date yet.",
+        "Children must have attended school or kindergarten; minimum 5 / maximum 18 per week.",
+        "No phone number on the site."
+      ]
+    }
+  },
+  "age_min": 5,
+  "age_max": 11,
+  "season_year": 2026,
+  "activities": [
+    "Painting (canvas, watercolor, acrylic, oil pastel)",
+    "Pottery & clay",
+    "Mixed media & sculpture",
+    "Wood, fabric and jewelry-making",
+    "LEGO builds",
+    "Movie production & performing arts (two-week session)",
+    "Outdoor sketching"
+  ],
+  "price_min": 300,
+  "price_max": 400,
+  "price_per_week": 300,
+  "price_per": "week",
+  "extended_care": true,
+  "meals_included": false,
+  "sessions": [
+    {
+      "name": "Week of June 29: American Beaches, Lakes & Rivers",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-03",
+      "price": 300,
+      "availability": "unknown"
+    },
+    {
+      "name": "Two weeks of July 6 & July 13: Movie Production & K-Pop (two-week enrollment)",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-17",
+      "price": 600,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week of July 20: The Art of Pottery",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": 300,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week of August 3: The Art of Sports",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": 300,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week of August 17: Nature & the Natural World",
+      "start_date": "2026-08-17",
+      "end_date": "2026-08-21",
+      "price": 300,
+      "availability": "unknown"
+    },
+    {
+      "name": "Summer Art Club, August 24-28",
+      "start_date": "2026-08-24",
+      "end_date": "2026-08-28",
+      "price": 300,
+      "availability": "unknown"
+    }
+  ]
 }

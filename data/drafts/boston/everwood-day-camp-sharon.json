@@ -10,18 +10,16 @@
   "zip": "02067",
   "camp_type": "day",
   "primary_categories": [
-    "sports",
-    "arts",
-    "nature",
-    "STEM"
+    "general"
   ],
-  "description_short": "A day camp in Sharon, MA (near Boston) that runs four 2-week sessions from June 21 to August 13, 2027, plus an optional add-on Post Week. Activities include arts, sports, adventure and waterfront, and tuition includes daily swim lessons.",
+  "description_short": "A traditional coed day camp on Lake Massapoag in Sharon, MA for children about 4 to 15, running four 2-week sessions from June 21 to August 13, 2027, plus an optional add-on Post Week. Activities include swim instruction, waterfront, sports, arts, outdoor adventure, special events and electives, and tuition includes daily swim lessons.",
   "activities": [
     "Daily swim lessons",
-    "Waterfront",
+    "Free swim",
+    "Waterfront (kayaking, canoeing, stand-up paddleboarding, fishing)",
     "Athletics/sports",
     "Arts and STEAM",
-    "Outdoor adventure",
+    "Outdoor adventure (high ropes, archery)",
     "Special events",
     "Electives"
   ],
@@ -31,7 +29,7 @@
   "extended_care": true,
   "transportation": true,
   "refund_policy_summary": "Before Feb 1, 2027: all tuition and deposits are fully refundable. After Feb 1, 2027: a $150 per week cancellation fee applies to each cancelled week. March 30, 2027 is the last day to reduce weeks for a refund (minus the fee). After the April 1, 2027 balance due date there are no refunds; money paid is credited to the 2028 season, minus $150 per week. No make-up days or credits for missed days.",
-  "swim_waterfront_notes": "Tuition includes daily swim lessons. The site also has a waterfront program.",
+  "swim_waterfront_notes": "Daily instructional swim (American Red Cross levels) is required for campers entering Pre-K to 4th grade, in teaching pools for Pre-K to 3rd grade and at Lake Massapoag for 4th grade; it is an elective for 5th-10th grade. All campers have a daily free swim and are assessed when they start camp. Waterfront activities on the lake may include kayaking, canoeing, paddleboarding and fishing.",
   "season_year": 2027,
   "sessions": [
     {
@@ -73,7 +71,7 @@
   "sources": [
     {
       "url": "https://everwooddaycamp.com/dates-enrollment/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "website_url",
@@ -84,19 +82,38 @@
         "state",
         "zip",
         "camp_type",
-        "primary_categories",
-        "activities",
-        "description_short",
         "price_min",
         "price_max",
         "extended_care",
         "transportation",
-        "financial_aid",
         "refund_policy_summary",
-        "swim_waterfront_notes",
-        "sessions"
+        "sessions",
+        "email"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://everwooddaycamp.com/about/faqs/",
+      "checked": "2026-11-12",
+      "fields": [
+        "age_min",
+        "age_max",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "meals_included",
+        "swim_waterfront_notes",
+        "aca_accredited",
+        "aca_source_url",
+        "description_short"
+      ]
+    },
+    {
+      "url": "https://everwooddaycamp.com/dates-enrollment/financial-assistance/",
+      "checked": "2026-11-12",
+      "fields": [
+        "financial_aid"
+      ]
     }
   ],
   "review": {
@@ -137,6 +154,46 @@
         "quote": "Athletics ... Arts and STEAM ... Outdoor Adventure"
       }
     ],
-    "errors": []
-  }
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://everwooddaycamp.com/dates-enrollment/",
+        "https://everwooddaycamp.com/",
+        "https://everwooddaycamp.com/about/faqs/",
+        "https://everwooddaycamp.com/dates-enrollment/financial-assistance/"
+      ],
+      "changes": [
+        "Added ages 4-15 (FAQ: 'serves children approximately ages 4 through 15'; homepage title 'A Day Camp for Ages 4-15')",
+        "Added email info@everwooddaycamp.com (Cloudflare-protected address on the Dates page)",
+        "Categories: primary general (FAQ: 'traditional coed day camp offering a wide range of activities'); swimming, sports, arts, outdoor, adventure, nature moved to secondary",
+        "meals_included false: FAQ says pack a peanut/tree-nut free lunch; the camp provides morning and afternoon snacks",
+        "swim_waterfront_notes rewritten from the FAQ (required daily Red Cross instruction Pre-K-4th, elective 5th-10th, daily free swim, Lake Massapoag)",
+        "Added aca_accredited true with the FAQ as source (camp's own statement)",
+        "financial_aid now sourced to the Financial Assistance page (limited scholarships for Sharon residents only)",
+        "Description: added the lake setting, ages and activity list from the FAQ",
+        "Kept the 2027 pricing-table rates ($1,995-$7,640); the Early Bird $1,890-$7,350 rates ended September 30, 2026"
+      ],
+      "open_questions": [
+        "Financial aid is limited to Sharon residents (income-based scholarships, apply before April 1)",
+        "ACA accreditation is the camp's own claim on its FAQ; not checked against ACA's site",
+        "Post Week price on its own and bus fees are not on the pages checked; daily core camp hours not stated",
+        "Session note says 4, 6 or 8 weeks; summary also mentions 9-week summers (Full Summer price $7,640 includes Post Week)"
+      ]
+    }
+  },
+  "email": "info@everwooddaycamp.com",
+  "age_min": 4,
+  "age_max": 15,
+  "secondary_categories": [
+    "swimming",
+    "sports",
+    "arts",
+    "outdoor",
+    "adventure",
+    "nature"
+  ],
+  "meals_included": false,
+  "aca_accredited": true,
+  "aca_source_url": "https://everwooddaycamp.com/about/faqs/"
 }

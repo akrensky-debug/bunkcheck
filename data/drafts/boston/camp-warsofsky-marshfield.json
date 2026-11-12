@@ -41,7 +41,7 @@
   "sources": [
     {
       "url": "https://www.bgcmarshfield.org/camp-warsofsky",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -70,6 +70,16 @@
         "financial_aid"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.bgcmarshfield.org/s/Camp-Warsofsky-Adventure-Manual-2026.pdf",
+      "checked": "2026-11-12",
+      "fields": [
+        "sessions",
+        "refund_policy_summary",
+        "swim_waterfront_notes",
+        "special_needs_notes"
+      ]
     }
   ],
   "review": {
@@ -181,6 +191,101 @@
     ],
     "errors": [
       "missing required season_year"
-    ]
-  }
+    ],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.bgcmarshfield.org/camp-warsofsky",
+        "https://www.bgcmarshfield.org/s/Camp-Warsofsky-Adventure-Manual-2026.pdf"
+      ],
+      "changes": [
+        "Set season_year 2026 and added the ten 2026 weeks (June 22-August 28) with themes from the linked 2026 Camper Handbook (PDF), $425/week each",
+        "Added refund policy (non-refundable deposits, $30 change fee with 3 weeks' notice, fees due May 1, 2026), swim notes (swim or splash twice daily) and special-needs note from the handbook",
+        "Confirmed on the page: ages 5-11 in three groups, Junior Leadership grades 6-9, 9am-4pm, early drop-off and late pick-up, $425/week, 10% sibling and 25% military discounts, financial assistance, complimentary bus 'this summer'",
+        "Validator error (missing season_year) resolved"
+      ],
+      "open_questions": [
+        "Handbook lists Week 2 as 'June 28-July 2 2026', but June 28, 2026 is a Sunday; recorded as written. Likely June 29",
+        "Email conflict: the page shows Membership@bgcmarshfield.com, the handbook membership@bgcmarshfield.org; kept the page's",
+        "Lunch is from home except a camp-provided Friday lunch; meals_included left null",
+        "Free transportation was tied to 2026 Teen Center construction and may not continue in 2027; the page doesn't name a year"
+      ]
+    }
+  },
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Week 1: World Cup",
+      "start_date": "2026-06-22",
+      "end_date": "2026-06-26",
+      "price": 425,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 2: Red White Blue (no camp July 3)",
+      "start_date": "2026-06-28",
+      "end_date": "2026-07-02",
+      "price": 425,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 3: Star Wars",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": 425,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 4: Sports Week",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": 425,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 5: Water Week",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": 425,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 6: Color Wars",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": 425,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 7: Super Hero",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": 425,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 8: Decades Week",
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-14",
+      "price": 425,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 9: Western Week",
+      "start_date": "2026-08-17",
+      "end_date": "2026-08-21",
+      "price": 425,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 10: Disney",
+      "start_date": "2026-08-24",
+      "end_date": "2026-08-28",
+      "price": 425,
+      "availability": "unknown"
+    }
+  ],
+  "refund_policy_summary": "Camp deposits are non-refundable and non-transferable. Fees were due in full by May 1, 2026. Changes or cancellations cost a $30 fee and need 3 weeks' notice, or the week is charged in full. Late payments cost $50/week.",
+  "swim_waterfront_notes": "Campers swim or splash twice a day, weather permitting; staff include lifeguards. The handbook gives no swim-test details.",
+  "special_needs_notes": "Families of campers with an IEP, behavior or accommodation plan, or other special needs are asked to call or email membership@bgcmarshfield.org so the camp can plan staff and resources."
 }

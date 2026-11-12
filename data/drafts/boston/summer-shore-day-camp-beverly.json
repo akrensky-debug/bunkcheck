@@ -11,10 +11,7 @@
   "zip": "01915",
   "camp_type": "day",
   "primary_categories": [
-    "STEM",
-    "arts",
-    "sports",
-    "performing_arts"
+    "general"
   ],
   "age_min": 3,
   "age_max": 12,
@@ -151,7 +148,7 @@
   "sources": [
     {
       "url": "https://www.shoreschool.org/summer-shore/day-camp",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -177,7 +174,9 @@
         "refund_policy_summary",
         "special_needs_notes",
         "swim_waterfront_notes",
-        "sessions"
+        "sessions",
+        "registration_url",
+        "secondary_categories"
       ],
       "note": "Drafted by the listing tool from this page"
     }
@@ -247,6 +246,28 @@
         "quote": "Ages: 3-4 ... Cost: $585 per week"
       }
     ],
-    "errors": []
-  }
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.shoreschool.org/summer-shore/day-camp"
+      ],
+      "changes": [
+        "Added registration_url (the page's 'REGISTER TODAY!' Enrollsy link, shared by all Summer Shore programs)",
+        "Categories: primary general (multi-activity day camp); STEM, arts, sports, performing_arts moved to secondary",
+        "Low-confidence items confirmed on the page: all 2026 week dates for both age groups, $550 full day / $275 half day (5-12), $585 (3-4), $40/week before and after care, $100 cancellation fee and May 31, 2026 refund cutoff",
+        "Kept 2026 season: page still shows Summer 2026"
+      ],
+      "open_questions": [
+        "No camp financial aid, transportation or registration opening date stated"
+      ]
+    }
+  },
+  "registration_url": "https://app.enrollsy.com/r/q3J4p1xW2ND6MUEdVaZQZ",
+  "secondary_categories": [
+    "STEM",
+    "arts",
+    "sports",
+    "performing_arts"
+  ]
 }
