@@ -10,22 +10,25 @@
   "state": "RI",
   "zip": "02892",
   "primary_categories": [
-    "nature",
-    "arts",
-    "sports"
+    "general",
+    "outdoor"
   ],
-  "description_short": "A small, independently run, all-outdoor summer camp in West Kingston, RI, with an Elementary Program and a Middle School Program. Activities include swimming, arts and crafts, and field games, and the camp is unplugged.",
+  "description_short": "A small, independently run, all-outdoor, unplugged day camp in West Kingston, RI for ages 4 to 14, with daily swim lessons, boating, arts and crafts and field games. The Main Program serves entering K-6th grade; the Middle School Gopher Program (grades 7-9) is a leadership program. Weekly sessions, 9am to 3pm.",
   "activities": [
-    "Swimming",
+    "Swimming and daily swim lessons",
+    "Boating",
     "Arts & crafts",
     "Field games",
-    "Nature / environmental stewardship"
+    "Sports",
+    "Outdoor skills",
+    "Environmental stewardship",
+    "Leadership (Middle School Gopher Program)"
   ],
   "season_year": 2026,
   "sources": [
     {
       "url": "https://www.kingstonscamp.com/kingstons-camp-home",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "website_url",
@@ -35,11 +38,9 @@
         "street_address",
         "city",
         "state",
-        "primary_categories",
-        "activities",
         "description_short"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Home page"
     },
     {
       "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=2795+Ministerial+Road&city=West+Kingston&state=RI&benchmark=Public_AR_Current&format=json",
@@ -48,6 +49,48 @@
         "zip"
       ],
       "note": "ZIP from the US Census geocoder for 2795 MINISTERIAL RD, WEST KINGSTON, RI, 02892"
+    },
+    {
+      "url": "https://www.kingstonscamp.com/kc-camp-registration-pricing",
+      "checked": "2026-11-12",
+      "fields": [
+        "price_min",
+        "price_max",
+        "price_per",
+        "extended_care",
+        "financial_aid",
+        "refund_policy_summary",
+        "grade_min",
+        "grade_max",
+        "sessions"
+      ],
+      "note": "Camp Registration & Pricing page: CAMP PROGRAM DATES 2026, ten weeks 6/22 to 8/28, all Waitlist (updated 2/28/26); Main Program Tier 1 $350/week, Gopher Tier 3 $205/week; extended day options"
+    },
+    {
+      "url": "https://www.kingstonscamp.com/kc-program-info-resources",
+      "checked": "2026-11-12",
+      "fields": [
+        "camp_type",
+        "indoor_outdoor",
+        "primary_categories",
+        "secondary_categories",
+        "activities"
+      ],
+      "note": "Program Info page: 'Kingston's Camp is an all outdoor day camp'; Gopher leadership program"
+    },
+    {
+      "url": "https://www.kingstonscamp.com/kc-parent-resources",
+      "checked": "2026-11-12",
+      "fields": [
+        "age_min",
+        "age_max",
+        "meals_included",
+        "aca_accredited",
+        "aca_source_url",
+        "special_needs_notes",
+        "swim_waterfront_notes"
+      ],
+      "note": "Parent Resources & FAQ: ages 4-14, bring own lunch, American Camp Accredited, swim lessons"
     }
   ],
   "review": {
@@ -78,16 +121,119 @@
       "ACA accreditation",
       "Special needs accommodations"
     ],
-    "low_confidence": [
-      {
-        "field": "primary_categories",
-        "confidence": 0.75,
-        "quote": "within an all outdoor camp environment"
-      }
-    ],
-    "errors": [
-      "missing required camp_type",
-      "camp_type must be one of ['day', 'sleepaway', 'specialty']"
-    ]
-  }
+    "low_confidence": [],
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.kingstonscamp.com/kingstons-camp-home",
+        "https://www.kingstonscamp.com/kc-camp-registration-pricing",
+        "https://www.kingstonscamp.com/kc-program-info-resources",
+        "https://www.kingstonscamp.com/kc-parent-resources"
+      ],
+      "changes": [
+        "Set camp_type day ('an all outdoor day camp') and outdoor setting.",
+        "Added the ten 2026 weeks (6/22 to 8/28) at the $350 Tier 1 Main Program rate, all shown as Waitlist; week 10 is the bonus week at Larkin's Pond.",
+        "Added ages 4-14, grades K-9, prices $205 to $350 per week (tiered), extended care, no meals, financial aid (tiered pricing), ACA accredited (stated on the FAQ page), refund, special needs and waterfront notes.",
+        "Categories changed to general and outdoor (secondary swimming, leadership); activities expanded; description rewritten from the pages."
+      ],
+      "open_questions": [
+        "The 2026 Middle School Gopher Program weeks had 'limited availability' at $205 to $265/week; sessions show the Main Program only.",
+        "No 2027 dates or prices posted; 2026 waitlisted families get the returning-camper window for 2027 but no date is given."
+      ]
+    }
+  },
+  "camp_type": "day",
+  "indoor_outdoor": "outdoor",
+  "secondary_categories": [
+    "swimming",
+    "leadership"
+  ],
+  "age_min": 4,
+  "age_max": 14,
+  "grade_min": 0,
+  "grade_max": 9,
+  "price_min": 205,
+  "price_max": 350,
+  "price_per": "week",
+  "extended_care": true,
+  "meals_included": false,
+  "financial_aid": true,
+  "aca_accredited": true,
+  "aca_source_url": "https://www.kingstonscamp.com/kc-parent-resources",
+  "refund_policy_summary": "$30 annual registration fee and $30/week deposit are non-refundable; program fees fully refundable until June 1; no refunds for missed days, weather closures, pond closures or withdrawal.",
+  "special_needs_notes": "Welcomes campers who can thrive in a group-based, active environment; reasonable accommodations offered when possible; families are asked to contact the camp before registering.",
+  "swim_waterfront_notes": "Swimming in Larkin's Pond (a natural pond monitored for bacteria; occasionally closed). Daily swim lessons, shallow and deep areas, swim competency test before deep water, lifeguard-supervised waterfront.",
+  "sessions": [
+    {
+      "name": "Week 1",
+      "start_date": "2026-06-22",
+      "end_date": "2026-06-26",
+      "price": 350,
+      "availability": "waitlist"
+    },
+    {
+      "name": "Week 2",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-03",
+      "price": 350,
+      "availability": "waitlist"
+    },
+    {
+      "name": "Week 3",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": 350,
+      "availability": "waitlist"
+    },
+    {
+      "name": "Week 4",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": 350,
+      "availability": "waitlist"
+    },
+    {
+      "name": "Week 5",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": 350,
+      "availability": "waitlist"
+    },
+    {
+      "name": "Week 6",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": 350,
+      "availability": "waitlist"
+    },
+    {
+      "name": "Week 7",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": 350,
+      "availability": "waitlist"
+    },
+    {
+      "name": "Week 8",
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-14",
+      "price": 350,
+      "availability": "waitlist"
+    },
+    {
+      "name": "Week 9",
+      "start_date": "2026-08-17",
+      "end_date": "2026-08-21",
+      "price": 350,
+      "availability": "waitlist"
+    },
+    {
+      "name": "Week 10 (bonus week at Larkin's Pond Beach Club, K-6, 9am-3pm, no extended hours)",
+      "start_date": "2026-08-24",
+      "end_date": "2026-08-28",
+      "price": 350,
+      "availability": "waitlist"
+    }
+  ]
 }

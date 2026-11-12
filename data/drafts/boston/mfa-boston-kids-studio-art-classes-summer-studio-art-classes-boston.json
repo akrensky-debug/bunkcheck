@@ -27,7 +27,7 @@
   "sources": [
     {
       "url": "https://www.mfa.org/programs/studio-art-classes/kids",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -46,6 +46,15 @@
         "special_needs_notes"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.mfa.org/programs/studio-art-classes/information-and-policies",
+      "checked": "2026-11-12",
+      "fields": [
+        "financial_aid",
+        "refund_policy_summary"
+      ],
+      "note": "Information and Policies page: refunds, Studio Art financial aid"
     }
   ],
   "review": {
@@ -77,8 +86,25 @@
       "Availability"
     ],
     "low_confidence": [],
-    "errors": [
-      "missing required season_year"
-    ]
-  }
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.mfa.org/programs/studio-art-classes/kids",
+        "https://www.mfa.org/programs/studio-art-classes/information-and-policies"
+      ],
+      "changes": [
+        "season_year set to 2027: the page's ticket table lists 'Summer 2027 On sale December 8' (no summer dates or prices yet); clears missing season_year",
+        "Added financial_aid=true and refund_policy_summary from the Information and Policies page ('All ticket sales are final' except MFA low-enrollment cancellations; limited Studio Art financial aid)",
+        "Confirmed ages 5-11 (groups 5-7, 6-8, 8-10, 9-11), full-day weekly themes, address and phone"
+      ],
+      "open_questions": [
+        "Summer 2027 dates, hours and prices not posted until the December 8 sale.",
+        "Lunch: policies say to pack lunch for full-day vacation-week classes; summer not stated, so meals_included left blank."
+      ]
+    }
+  },
+  "season_year": 2027,
+  "financial_aid": true,
+  "refund_policy_summary": "All ticket sales are final. Refunds are given only if the MFA cancels a class for low enrollment. No refunds or make-up classes for student absences or for classes cancelled for bad weather."
 }
