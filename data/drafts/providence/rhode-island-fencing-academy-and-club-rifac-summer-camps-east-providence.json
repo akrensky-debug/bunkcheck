@@ -2,7 +2,7 @@
   "slug": "rhode-island-fencing-academy-and-club-rifac-summer-camps-east-providence",
   "name": "Rhode Island Fencing Academy & Club (RIFAC) Summer Camps",
   "operator_name": "Rhode Island Fencing Academy & Club",
-  "website_url": "https://rifac.com/",
+  "website_url": "https://rifac.com/summer-camps/",
   "registration_url": "https://rifac.com/enroll/",
   "phone": "401-434-2404",
   "street_address": "14 Almeida Avenue",
@@ -13,30 +13,111 @@
   "primary_categories": [
     "sports"
   ],
-  "description_short": "A fencing club in East Providence, RI that runs youth fencing classes and summer fencing camps. Owners Alex and Jill Ripa have taught fencing for over 30 years.",
   "activities": [
     "Fencing"
+  ],
+  "age_min": 8,
+  "age_max": 18,
+  "description_short": "Summer fencing camps at the Rhode Island Fencing Academy & Club in East Providence: full-day camps (9am-4pm, ages 9-15), half-day camps (ages 8-14, including a new Fencing + Russian Math camp with the Russian School of Mathematics) and High Performance camps for advanced foil and epee fencers up to age 18. Beginners get all equipment.",
+  "indoor_outdoor": "indoor",
+  "price_min": 295,
+  "price_max": 470,
+  "price_per": "week",
+  "meals_included": false,
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Fencing + Russian Math (half day, Mon-Thu 12-4pm)",
+      "start_date": "2026-06-22",
+      "end_date": "2026-06-25",
+      "price": 295,
+      "availability": "unknown"
+    },
+    {
+      "name": "Half-Day Beginner (1:30-4:30pm)",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": 295,
+      "availability": "unknown"
+    },
+    {
+      "name": "Half-Day Experienced (1:30-4:30pm)",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": 295,
+      "availability": "unknown"
+    },
+    {
+      "name": "Full Day Camp (9am-4pm)",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": 470,
+      "availability": "unknown"
+    },
+    {
+      "name": "Full Day Camp (9am-4pm)",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": 470,
+      "availability": "unknown"
+    },
+    {
+      "name": "Full Day Camp (9am-4pm)",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": 470,
+      "availability": "unknown"
+    },
+    {
+      "name": "High Performance Camp I (ages 10-15, 9am-4pm)",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": 470,
+      "availability": "unknown"
+    },
+    {
+      "name": "High Performance Camp II (ages 12-18, 1-4pm)",
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-14",
+      "price": 295,
+      "availability": "unknown"
+    }
   ],
   "sources": [
     {
       "url": "https://rifac.com/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
-        "website_url",
         "registration_url",
         "phone",
         "street_address",
         "city",
         "state",
-        "zip",
+        "zip"
+      ],
+      "note": "Club homepage: address, phone, 'Register' link"
+    },
+    {
+      "url": "https://rifac.com/summer-camps/",
+      "checked": "2026-11-12",
+      "fields": [
+        "website_url",
         "camp_type",
         "primary_categories",
         "activities",
-        "description_short"
+        "age_min",
+        "age_max",
+        "price_min",
+        "price_max",
+        "price_per",
+        "indoor_outdoor",
+        "meals_included",
+        "description_short",
+        "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Summer Camps page: 2026 dates, full day $470 (ages 9-15), half day $295 (ages 8-14), HP I $470 (10-15), HP II $295 (12-18); bring snack and lunch"
     }
   ],
   "review": {
@@ -69,8 +150,23 @@
         "quote": "Register for Camp"
       }
     ],
-    "errors": [
-      "missing required season_year"
-    ]
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://rifac.com/",
+        "https://rifac.com/summer-camps/"
+      ],
+      "changes": [
+        "Set season_year 2026 (fixes missing required season_year) and added the eight 2026 camp weeks with prices from the Summer Camps page",
+        "website_url now the Summer Camps page instead of the homepage",
+        "Added ages 8-18, prices $295-$470 per week, meals_included false (bring lunch), indoor",
+        "Description rewritten from the camp page (full-day, half-day, Fencing + Russian Math and High Performance camps)"
+      ],
+      "open_questions": [
+        "2027 camps not posted yet",
+        "Page offers a 10% family/multi-camp discount and early drop-off at 8:45; not modelled as extended care"
+      ]
+    }
   }
 }

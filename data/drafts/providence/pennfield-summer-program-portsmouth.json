@@ -96,6 +96,21 @@
         "quote": "beginning June 22 and ending July 31"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.pennfield.org/summer-program/",
+        "https://www.homeroom.com/sites/the-pennfield-school-portsmouth/summer-camp/all"
+      ],
+      "changes": [
+        "No changes: every filled field matches the page (6 weeks June 22-July 31; 2026 by weekday and the © 2026 footer; contact, address, description)"
+      ],
+      "open_questions": [
+        "No ages, prices, weekly themes or hours on the page; the Homeroom registration link now loads Homeroom's general marketing page in our fetcher, so the camp catalog could not be read",
+        "camp_type 'day' rests on the host being a day school; the page does not mention overnight stays",
+        "2027 dates not posted; the page says to email summer@pennfield.org 'to be notified when registration begins'"
+      ]
+    }
   }
 }

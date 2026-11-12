@@ -15,7 +15,7 @@
   "sources": [
     {
       "url": "https://www.city.waltham.ma.us/1938/Program-Information",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -67,6 +67,19 @@
     "errors": [
       "missing required camp_type",
       "camp_type must be one of ['day', 'sleepaway', 'specialty']"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.city.waltham.ma.us/1938/Program-Information"
+      ],
+      "changes": [
+        "No field changes. Confirmed the Spring/Summer 2027 registration date, address, phone and the summer-only Usseglio/Fournier Family Scholarship link."
+      ],
+      "open_questions": [
+        "Not a camp listing: this is the Recreation Department's general program-information page (registration dates and brochures). No summer camp is named; only Fall 2026 and Winter 2026-27 brochures are posted. Re-check when the Spring/Summer 2027 brochure is published and draft the actual camp(s) then.",
+        "Validator fails on camp_type, left empty because the page describes no camp."
+      ]
+    }
   }
 }

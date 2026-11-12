@@ -71,7 +71,7 @@
   "sources": [
     {
       "url": "https://www.danahall.org/community-programs/equestrian-summer-program",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -130,73 +130,21 @@
       "Special needs accommodations",
       "Grade ranges"
     ],
-    "low_confidence": [
-      {
-        "field": "price_per_week",
-        "confidence": 0.6,
-        "quote": "tuition will be $800/week"
-      },
-      {
-        "field": "price_min",
-        "confidence": 0.55,
-        "quote": "Sessions will be one and two weeks long and tuition will be $800/week."
-      },
-      {
-        "field": "price_max",
-        "confidence": 0.55,
-        "quote": "Sessions will be one and two weeks long and tuition will be $800/week."
-      },
-      {
-        "field": "deposit_required",
-        "confidence": 0.6,
-        "quote": "Nonrefundable deposits of $200 are due on February 1"
-      },
-      {
-        "field": "refund_policy_summary",
-        "confidence": 0.6,
-        "quote": "nonrefundable balances are due on April 15"
-      },
-      {
-        "field": "phone",
-        "confidence": 0.7,
-        "quote": "781.235.3010"
-      },
-      {
-        "field": "sessions[0].start_date",
-        "confidence": 0.55,
-        "quote": "Session 1: June 15-19"
-      },
-      {
-        "field": "sessions[1].start_date",
-        "confidence": 0.55,
-        "quote": "Session 2: June 22-July 3"
-      },
-      {
-        "field": "sessions[2].start_date",
-        "confidence": 0.45,
-        "quote": "Session 3: July 6-10"
-      },
-      {
-        "field": "sessions[3].start_date",
-        "confidence": 0.55,
-        "quote": "Session 4: July 13-24"
-      },
-      {
-        "field": "sessions[4].start_date",
-        "confidence": 0.35,
-        "quote": "Session 5: July 27-July 27"
-      },
-      {
-        "field": "sessions[5].start_date",
-        "confidence": 0.55,
-        "quote": "Session 6: August 3-August 7(7-9 year olds)"
-      },
-      {
-        "field": "sessions[0].registration_opens_at",
-        "confidence": 0.5,
-        "quote": "General Public: Enrollment opens at 9 a.m. on January 12."
-      }
-    ],
-    "errors": []
+    "low_confidence": [],
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.danahall.org/community-programs/equestrian-summer-program"
+      ],
+      "changes": [
+        "No field changes: every filled field matches the page (ages 7-15, 8:30-1, $800/week, $200 deposit Feb 1 and balance April 15 nonrefundable, sessions 1-4 and 6 for 2026, bring lunch)"
+      ],
+      "open_questions": [
+        "Page still shows 'Dates and Rates 2026'; no 2027 dates, prices or enrollment dates.",
+        "Session 5 listed as 'July 27-July 27' (typo) and left out; Session 3 (July 6-10) is one week although the page calls Sessions 2-4 two-week sessions.",
+        "Session prices are $800 x weeks (page gives only the weekly rate)."
+      ]
+    }
   }
 }

@@ -10,7 +10,7 @@
   "zip": null,
   "camp_type": "day",
   "primary_categories": [
-    "arts"
+    "general"
   ],
   "age_min": 6,
   "age_max": 12,
@@ -86,7 +86,7 @@
   "sources": [
     {
       "url": "https://www.dartmouthma.gov/m/newsflash/Home/Detail/693",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -153,6 +153,25 @@
     ],
     "errors": [
       "missing required zip"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.dartmouthma.gov/m/newsflash/Home/Detail/693",
+        "https://dartmouth.activityreg.com/",
+        "https://dartmouth.activityreg.com/facilities",
+        "https://dartmouth.activityreg.com/selectActivity"
+      ],
+      "changes": [
+        "primary_categories arts -> general: the release describes open play, arts and crafts, group games, outdoor recreation and supervised free play, a general playground program.",
+        "Checked the rest against the March 25, 2026 release: ages 6-12, 8:30am-4:15pm, June 29 - August 21, 2026, $125/week, 55 children per week, before/after care 8:00-8:30am and 4:15-5:30pm, phone 508-910-1812."
+      ],
+      "open_questions": [
+        "ZIP (required) is missing: no page says where Quinn Playground Center meets (the release, the town contact block and the ActivityReg portal give only Town Hall / the Parks office at 400 Slocum Rd), and Dartmouth has more than one ZIP.",
+        "Weekly sessions are split from the range 'June 29-August 21, 2026'; the release does not list weeks or say whether Friday July 3 is a holiday.",
+        "Before and after care 'is $40 per child' without saying per week, day or summer.",
+        "No 2027 information yet."
+      ]
+    }
   }
 }

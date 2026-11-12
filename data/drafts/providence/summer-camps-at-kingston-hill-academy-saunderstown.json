@@ -14,7 +14,7 @@
     "arts",
     "nature"
   ],
-  "description_short": "A set of short summer day camps held at Kingston Hill Academy in Saunderstown, RI: Wizard Camp, a general Day Camp, a mostly outdoor Garden Art & Sciences Camp, and an outdoor Bike & STEM Camp. Each camp runs for one or two weeks in July.",
+  "description_short": "Short summer day camps held at Kingston Hill Academy in Saunderstown, RI, listed in the school's July 2026 newsletter: Wizard Camp, a Day Camp, a Garden Art & Sciences Camp (mainly in the outdoor classroom) and an outdoor Bike & STEM Camp, each running one or two weeks in July.",
   "activities": [
     "Wizard-themed camp",
     "Garden art",
@@ -70,7 +70,7 @@
   "sources": [
     {
       "url": "https://kingstonhill.org/chief-administrator-update-july-2026/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -137,6 +137,23 @@
         "quote": "Garden Art & Sciences Camp ... Bike & STEM Camp (Outside)"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://kingstonhill.org/chief-administrator-update-july-2026/",
+        "https://kingstonhill.org"
+      ],
+      "changes": [
+        "Description reworded to say only what the newsletter says (camps 'held at' KHA, listed in the July 2026 update); kept all six 2026 sessions, which match the newsletter.",
+        "Address and phone match the site footer."
+      ],
+      "open_questions": [
+        "The only source is one line-list in a school newsletter ('Summer Camps Offered at KHA! ... Please call the office for availability'). No ages, prices, camp descriptions, registration link, or who runs the camps (the school or outside providers). operator_name 'Kingston Hill Academy' is an assumption from 'Offered at KHA'.",
+        "Wizard Camp second week is printed '713-17'; read as July 13-17.",
+        "Andrew to decide whether this is enough to list, or whether to wait for the school to post a camp page for 2027.",
+        "No 2027 information and no registration date."
+      ]
+    }
   }
 }

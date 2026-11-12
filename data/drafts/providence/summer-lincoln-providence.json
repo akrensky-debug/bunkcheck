@@ -70,6 +70,19 @@
     "errors": [
       "missing required camp_type",
       "camp_type must be one of ['day', 'sleepaway', 'specialty']"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.lincolnschool.org/summerlincoln/summerlincoln"
+      ],
+      "changes": [
+        "No field changes: the page is a placeholder; camp_type cannot be filled without guessing, so the missing camp_type error stays"
+      ],
+      "open_questions": [
+        "Placeholder page: 'Information about next year’s summer camps will be available in December.' No camp type, ages, dates, prices or activities. Hold until December and re-check?",
+        "season_year 2027 rests on 'next year’s summer camps'; the school is a girls' K-12 school, but whether the camps are co-ed is not stated"
+      ]
+    }
   }
 }

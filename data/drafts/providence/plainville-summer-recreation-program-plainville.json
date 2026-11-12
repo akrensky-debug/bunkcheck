@@ -15,7 +15,7 @@
   ],
   "grade_min": 1,
   "grade_max": 8,
-  "description_short": "A town-run summer day program for children entering grades 1–8. It runs weekdays at Plainville Town Park for 8 weeks, with sports, games, arts and crafts, daily swimming in the town pool, and one field trip each week.",
+  "description_short": "A town-run summer day program for children entering grades 1-8, Monday-Friday 8:30 AM-4 PM at Plainville Town Park for 8 weeks, with before care from 7:30 and after care to 6. Sports, games, arts and crafts, daily swimming in the town pool, weekly cookouts and one field trip each week. Full weeks, single days and half days are offered.",
   "activities": [
     "sports",
     "field games",
@@ -100,7 +100,7 @@
   "sources": [
     {
       "url": "https://www.plainvillema.gov/281/Summer-Recreation-Program",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -124,9 +124,10 @@
         "financial_aid",
         "refund_policy_summary",
         "swim_waterfront_notes",
-        "sessions"
+        "sessions",
+        "secondary_categories"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Re-checked 2026-11-12. 'open to children entering 1st grade through 8th grade in September of 2026'; 2026 dates June 29-Aug 21 (8 weeks, field trips listed per week); '$280' per full week; before care 7:30-8:30, after care 4-6; 'Limited scholarships available'; '$50 per week per child' non-refundable deposit."
     }
   ],
   "review": {
@@ -155,13 +156,24 @@
       "Accommodations for children with special needs",
       "ACA accreditation"
     ],
-    "low_confidence": [
-      {
-        "field": "primary_categories",
-        "confidence": 0.75,
-        "quote": "sports, field games, court games, playground, swimming in the town pool, board games, arts and crafts"
-      }
-    ],
-    "errors": []
-  }
+    "low_confidence": [],
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.plainvillema.gov/281/Summer-Recreation-Program"
+      ],
+      "changes": [
+        "All filled fields re-checked against the page: grades, 2026 weeks and field trips, $280/week, extended care, scholarships, cancellation policy and address match.",
+        "Added secondary category swimming (daily town pool); kept primary sports/arts (resolves low-confidence item). Description now gives hours, extended care and daily/half-day options."
+      ],
+      "open_questions": [
+        "Page now says 'Summer Rec 2026 Registration is CLOSED until April 2027'; no 2027 dates or rates yet.",
+        "Payment due dates on the page ('Monday July 14th', 'Monday August 17th') look carried over from an earlier year; not used in the listing."
+      ]
+    }
+  },
+  "secondary_categories": [
+    "swimming"
+  ]
 }

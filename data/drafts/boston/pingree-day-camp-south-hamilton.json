@@ -3,6 +3,7 @@
   "name": "Pingree Day Camp",
   "operator_name": "Pingree School",
   "website_url": "https://www.pingree.org/pingree-day-camp",
+  "registration_url": "https://pingreedaycamp.campbrainregistration.com/",
   "email": "earaneo@pingree.org",
   "phone": "978.564.0657",
   "street_address": "537 Highland Street",
@@ -15,9 +16,6 @@
     "arts",
     "performing_arts"
   ],
-  "age_min": 4,
-  "grade_max": 8,
-  "description_short": "A general day camp on Pingree School's 100-acre campus in South Hamilton, MA, for children entering pre-K through grade 8, plus a counselor-in-training program. Campers are grouped by grade and do art, swim lessons, sports, games and elective periods. Snack and lunch are included.",
   "activities": [
     "art",
     "swim lessons",
@@ -31,98 +29,87 @@
     "computer labs",
     "field trips (Adventurers, grade 8)"
   ],
-  "price_per_week": 675,
+  "age_min": 4,
+  "grade_max": 8,
+  "description_short": "A general day camp on Pingree School's 100-acre campus in South Hamilton, MA, for children entering pre-K through grade 8, plus a counselor-in-training program. Campers are grouped by grade and do art, swim lessons, sports, games and elective periods. Snack and lunch are included.",
   "price_min": 400,
   "price_max": 1350,
+  "price_per_week": 675,
+  "price_per": "week",
   "extended_care": true,
   "meals_included": true,
   "refund_policy_summary": "Summer 2026 terms: full refund if you cancel January 1–February 28; full refund minus a $100 deposit per cancelled week for March 1–28; no refund from April 1 without a doctor's note. No prorated rates for missed days except in extenuating circumstances.",
   "special_needs_notes": "Food allergies: Pingree School's lunch staff and the camp health care supervisor handle allergies, and campers may not bring any food. Little Wonders campers must be toilet trained.",
   "swim_waterfront_notes": "The camp has a swimming pool and a private pond used for kayaking. Swim lessons are part of the daily schedule. Many staff are certified lifeguards and water safety instructors.",
-  "season_year": 2026,
-  "price_per": "week",
+  "season_year": 2027,
   "sessions": [
     {
-      "name": "Session 1 (Weeks 1-2; no camp July 3)",
-      "start_date": "2026-06-22",
-      "end_date": "2026-07-02",
+      "name": "Session 1 (Weeks 1-2; no camp July 2)",
+      "start_date": "2027-06-21",
+      "end_date": "2027-07-01",
       "price": 1075,
       "availability": "unknown"
     },
     {
       "name": "Session 2 (Weeks 3-4)",
-      "start_date": "2026-07-06",
-      "end_date": "2026-07-17",
+      "start_date": "2027-07-05",
+      "end_date": "2027-07-16",
       "price": 1200,
       "availability": "unknown"
     },
     {
       "name": "Session 3 (Weeks 5-6)",
-      "start_date": "2026-07-20",
-      "end_date": "2026-07-31",
+      "start_date": "2027-07-19",
+      "end_date": "2027-07-30",
       "price": 1200,
       "availability": "unknown"
     },
     {
       "name": "Session 4 (Weeks 7-8)",
-      "start_date": "2026-08-03",
-      "end_date": "2026-08-14",
+      "start_date": "2027-08-02",
+      "end_date": "2027-08-13",
       "price": 1200,
       "availability": "unknown"
     },
     {
-      "name": "Week 1",
-      "start_date": "2026-06-22",
-      "end_date": "2026-06-26",
-      "price": 675,
-      "availability": "unknown"
-    },
-    {
-      "name": "Week 2 (no camp July 3)",
-      "start_date": "2026-06-29",
-      "end_date": "2026-07-02",
-      "price": 675,
-      "availability": "unknown"
-    },
-    {
       "name": "Week 3",
-      "start_date": "2026-07-06",
-      "end_date": "2026-07-10",
+      "start_date": "2027-07-05",
+      "end_date": "2027-07-09",
       "price": 675,
       "availability": "unknown"
     },
     {
       "name": "Week 4",
-      "start_date": "2026-07-13",
-      "end_date": "2026-07-17",
+      "start_date": "2027-07-12",
+      "end_date": "2027-07-16",
       "price": 675,
       "availability": "unknown"
     },
     {
       "name": "Week 5",
-      "start_date": "2026-07-20",
-      "end_date": "2026-07-24",
+      "start_date": "2027-07-19",
+      "end_date": "2027-07-23",
       "price": 675,
       "availability": "unknown"
     },
     {
       "name": "Week 6",
-      "start_date": "2026-07-27",
-      "end_date": "2026-07-31",
+      "start_date": "2027-07-26",
+      "end_date": "2027-07-30",
       "price": 675,
       "availability": "unknown"
     },
     {
       "name": "Week 7",
-      "start_date": "2026-08-03",
-      "end_date": "2026-08-07",
+      "start_date": "2027-08-02",
+      "end_date": "2027-08-06",
       "price": 675,
       "availability": "unknown"
     },
     {
       "name": "Week 8",
-      "start_date": "2026-08-10",
-      "end_date": "2026-08-14",
+      "start_date": "2027-08-09",
+      "end_date": "2027-08-13",
       "price": 675,
       "availability": "unknown"
     }
@@ -130,7 +117,7 @@
   "sources": [
     {
       "url": "https://www.pingree.org/pingree-day-camp",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -156,7 +143,8 @@
         "refund_policy_summary",
         "special_needs_notes",
         "swim_waterfront_notes",
-        "sessions"
+        "sessions",
+        "registration_url"
       ],
       "note": "Drafted by the listing tool from this page"
     }
@@ -219,6 +207,26 @@
         "quote": "Week 2 (No camp on July 3 in observation of Independence Day) $675"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.pingree.org/pingree-day-camp",
+        "https://pingreedaycamp.campbrainregistration.com/"
+      ],
+      "changes": [
+        "Moved to the 2027 season: the page now groups campers by the grade they enter in fall 2027 and lists 2027 session dates (Session 1 June 21-July 1, Session 2 July 5-16, Session 3 July 19-30, Session 4 Aug 2-13; Weeks 3-8 Mon-Fri July 5 to Aug 13)",
+        "Weeks 1 and 2 left out: the page gives 'June 22-26' and 'June 29-July 1', which are 2026 weekdays and conflict with Session 1 starting Monday June 21, 2027",
+        "Session and week prices kept at the posted Little Wonders & Rainbows rates ($1,075 / $1,200 per session, $675 per week); price_min 400 (CIT week 2) and price_max 1,350 (Adventurers session) unchanged",
+        "Added registration_url (CampBrain portal linked from 'Register Today')",
+        "Other fields checked and match: ages 4+ through grade 8, 9:00-3:30 day, extended care 7:30-8:30 and 4:00-5:30, lunch and snack provided, pool and kayaking pond"
+      ],
+      "open_questions": [
+        "Tuition table still carries 2026 notes ('No camp on July 3', 'No camp on July 4') next to the 2027 dates; confirm the prices are 2027 rates",
+        "Week 1 and Week 2 dates on the page are 2026 dates; the 2027 Week 1-2 dates need confirming",
+        "Cancellation policy on the page is still the summer 2026 policy",
+        "Adventurers (grade 8, $750/week, $1,350/session, weeks 3-8) and CIT ($475/week) prices are not stored as separate sessions"
+      ]
+    }
   }
 }

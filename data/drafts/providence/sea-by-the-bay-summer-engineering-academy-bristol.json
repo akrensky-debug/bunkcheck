@@ -3,18 +3,18 @@
   "name": "SEA by the Bay: Summer Engineering Academy",
   "operator_name": "Roger Williams University",
   "website_url": "https://www.rwu.edu/summer-camps/sea-bay",
-  "registration_url": "https://connect.rwu.edu/register/?id=dd9001ca-229a-4fb3-98c6-13559b5e65a6",
+  "registration_url": "https://connect.rwu.edu/register/?id=9d947566-bf5c-4194-9623-7a2d4a9342d3",
   "phone": "1-800-458-7144",
   "street_address": "1 Old Ferry Road",
   "city": "Bristol",
   "state": "RI",
   "zip": "02809",
-  "camp_type": "specialty",
+  "camp_type": "sleepaway",
   "primary_categories": [
     "STEM"
   ],
   "grade_min": 11,
-  "description_short": "A one-week overnight engineering program on Roger Williams University's waterfront campus for high school juniors and above. Teams design, build and test coastal-themed prototypes with RWU engineering faculty, and afternoons include a boat tour and coastal field trips.",
+  "description_short": "A one-week residential engineering camp on Roger Williams University's waterfront campus in Bristol for high school juniors and above. Teams design, build and test coastal-themed prototypes, learning 3D modeling and electronics with RWU engineering professors, with afternoon activities such as a boat tour and coastal field trips and a final team showcase. Cost includes tuition and room and board.",
   "activities": [
     "Engineering design challenges",
     "3D modeling",
@@ -34,13 +34,13 @@
       "start_date": "2027-07-11",
       "end_date": "2027-07-16",
       "price": 1995,
-      "availability": "unknown"
+      "availability": "open"
     }
   ],
   "sources": [
     {
       "url": "https://www.rwu.edu/summer-camps/sea-bay",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -59,9 +59,18 @@
         "price_min",
         "price_max",
         "meals_included",
-        "sessions"
+        "sessions",
+        "price_per"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "SEA by the Bay page: 'Cost: $1995 (includes tuition, room/board)', 'July 11-16, 2027', Register Now link live"
+    },
+    {
+      "url": "https://www.rwu.edu/summer-camps",
+      "checked": "2026-11-12",
+      "fields": [
+        "grade_max"
+      ],
+      "note": "Summer Camps at RWU index: 'High school juniors and seniors'"
     }
   ],
   "review": {
@@ -89,38 +98,26 @@
       "Accommodations for special needs",
       "ACA accreditation"
     ],
-    "low_confidence": [
-      {
-        "field": "sessions[0].start_date",
-        "confidence": 0.55,
-        "quote": "July 11-16"
-      },
-      {
-        "field": "sessions[0].end_date",
-        "confidence": 0.55,
-        "quote": "July 11-16"
-      },
-      {
-        "field": "season_year",
-        "confidence": 0.55,
-        "quote": "July 11-16 ... Registration Coming Soon"
-      },
-      {
-        "field": "street_address",
-        "confidence": 0.75,
-        "quote": "1 Old Ferry Road, Bristol, RI 02809"
-      },
-      {
-        "field": "zip",
-        "confidence": 0.75,
-        "quote": "1 Old Ferry Road, Bristol, RI 02809"
-      },
-      {
-        "field": "phone",
-        "confidence": 0.6,
-        "quote": "Contact Us 1-800-458-7144"
-      }
-    ],
-    "errors": []
-  }
+    "low_confidence": [],
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.rwu.edu/summer-camps/sea-bay",
+        "https://www.rwu.edu/summer-camps"
+      ],
+      "changes": [
+        "Page now states 'July 11-16, 2027' and $1995 including tuition and room/board, so the 2027 session and price are confirmed; availability set to open (Register Now is live).",
+        "Registration URL updated to the new 2027 link (id=9d947566-...); the old id is no longer on the page.",
+        "camp_type changed from specialty to sleepaway: the week is residential (room/board included); STEM stays the category.",
+        "Added grade_max 12 (index page: 'High school juniors and seniors') and price per session; description adjusted to the page."
+      ],
+      "open_questions": [
+        "Phone 1-800-458-7144 and 1 Old Ferry Road are RWU's general contact and campus address, not a camp contact.",
+        "Registration date not stated; the Register Now link was already live on 2026-11-12."
+      ]
+    }
+  },
+  "grade_max": 12,
+  "price_per": "session"
 }

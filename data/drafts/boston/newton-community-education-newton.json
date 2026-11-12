@@ -1,34 +1,142 @@
 {
   "slug": "newton-community-education-newton",
-  "name": "Newton Community Education",
+  "name": "Newton Community Education Summer Camp",
   "operator_name": "Newton Community Education (Newton Public Schools)",
-  "website_url": "https://newtoncommunityed.org",
+  "website_url": "https://newtoncommunityed.org/summercamp/",
+  "registration_url": "https://newtoncommunityed.org/summercamp/",
   "email": "nce-staff@newton.k12.ma.us",
   "phone": "617-559-6999",
   "street_address": "457 Walnut Street",
   "city": "Newton",
   "state": "MA",
   "zip": "02460",
-  "description_short": "Newton Community Education is part of Newton Public Schools. It runs classes for adults and children, plus a summer camp program. This page is the organization's homepage and has no summer camp details.",
+  "camp_type": "day",
+  "primary_categories": [
+    "STEM",
+    "arts",
+    "sports",
+    "performing_arts"
+  ],
+  "activities": [
+    "3D printing",
+    "Minecraft and coding",
+    "Circuits and engineering",
+    "Filmmaking",
+    "Arts and crafts",
+    "Zentangle drawing",
+    "Chess",
+    "Dungeons & Dragons",
+    "Tennis",
+    "Soccer",
+    "Volleyball",
+    "Cheer",
+    "Gym games",
+    "Musical theater (5-week Willy Wonka Jr.)",
+    "Counselor-in-Training"
+  ],
+  "grade_min": 0,
+  "grade_max": 12,
+  "description_short": "Summer camps run by Newton Community Education, part of Newton Public Schools, at Newton North High School and Horace Mann Elementary School. Families pick weekly half-day (9 AM to 12 PM) or full-day (to 3:30 PM) camps for kids entering kindergarten through high school, from 3D printing and filmmaking to tennis and chess, plus a 5-week theater camp and a CIT program.",
+  "price_min": 280,
+  "price_max": 650,
+  "price_per": "week",
+  "extended_care": true,
   "financial_aid": true,
+  "refund_policy_summary": "A $10 non-refundable registration fee per session. Withdraw from a summer camp by June 1 for a refund minus a $50 cancellation fee per camp per student; no refunds after June 1. Transfers to another NCE summer class may be possible for a fee.",
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Week 1",
+      "start_date": "2027-06-28",
+      "end_date": "2027-07-02",
+      "availability": "open"
+    },
+    {
+      "name": "Week 2 (4 days)",
+      "start_date": "2027-07-06",
+      "end_date": "2027-07-09",
+      "availability": "open"
+    },
+    {
+      "name": "Week 3",
+      "start_date": "2027-07-12",
+      "end_date": "2027-07-16",
+      "availability": "open"
+    },
+    {
+      "name": "Week 4",
+      "start_date": "2027-07-19",
+      "end_date": "2027-07-23",
+      "availability": "open"
+    },
+    {
+      "name": "Week 5",
+      "start_date": "2027-07-26",
+      "end_date": "2027-07-30",
+      "availability": "open"
+    },
+    {
+      "name": "Week 6",
+      "start_date": "2027-08-02",
+      "end_date": "2027-08-06",
+      "availability": "open"
+    },
+    {
+      "name": "Week 7",
+      "start_date": "2027-08-09",
+      "end_date": "2027-08-13",
+      "availability": "open"
+    },
+    {
+      "name": "Week 8",
+      "start_date": "2027-08-16",
+      "end_date": "2027-08-20",
+      "availability": "open"
+    }
+  ],
   "sources": [
     {
       "url": "https://newtoncommunityed.org",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
-        "name",
         "operator_name",
-        "website_url",
         "email",
         "phone",
         "street_address",
         "city",
         "state",
         "zip",
-        "description_short",
         "financial_aid"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "NCE home page: 'Summer Camp 2027 is LIVE!'"
+    },
+    {
+      "url": "https://newtoncommunityed.org/summercamp/",
+      "checked": "2026-11-12",
+      "fields": [
+        "name",
+        "website_url",
+        "registration_url",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "description_short",
+        "price_min",
+        "price_max",
+        "price_per",
+        "extended_care",
+        "sessions"
+      ],
+      "note": "2027 summer camp listing (139 classes)"
+    },
+    {
+      "url": "https://newtoncommunityed.org/about-us/policies/",
+      "checked": "2026-11-12",
+      "fields": [
+        "refund_policy_summary"
+      ]
     }
   ],
   "review": {
@@ -56,10 +164,29 @@
       "ACA accreditation"
     ],
     "low_confidence": [],
-    "errors": [
-      "missing required camp_type",
-      "missing required season_year",
-      "camp_type must be one of ['day', 'sleepaway', 'specialty']"
-    ]
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://newtoncommunityed.org",
+        "https://newtoncommunityed.org/summercamp/",
+        "https://newtoncommunityed.org/about-us/policies/"
+      ],
+      "changes": [
+        "Rebuilt the listing around NCE's 2027 summer camp page (the draft was the organization's home page): name -> 'Newton Community Education Summer Camp', website_url and registration_url -> /summercamp/",
+        "Set camp_type day and season_year 2027 (home page: 'Summer Camp 2027 is LIVE!'; 2027 camps June 28 to August 20)",
+        "Added the eight 2027 weeks (Week 2 is 4 days, July 6-9) as sessions, open for enrollment",
+        "Added grades K-12 (classes run from K-1 to 11-12), categories STEM/arts/sports/performing_arts and activities from the 2027 class list",
+        "Added prices: most one-week camps are $350 half-day or $650 full-day, 4-day Week 2 camps $280 to $535; price_min 280, price_max 650 per week",
+        "Added extended_care true (the camp page has an 'Extended Day' category; home page says Monday-Friday 8:30 AM-5 PM)",
+        "Added refund policy from the Policies page; description rewritten to describe the summer camps instead of the organization",
+        "Resolved errors: camp_type and season_year set"
+      ],
+      "open_questions": [
+        "Longer programs are outside the weekly range: 5-week Willy Wonka Jr. theater camp $3,000 (CIT version $2,250), 2-week CIT $900, high school U.S. History $795",
+        "Extended Day prices and hours not listed in the class list text",
+        "Some full-day camps need more signups to run ('3 more signups needed')"
+      ]
+    }
   }
 }
