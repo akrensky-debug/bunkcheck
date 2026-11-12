@@ -3,6 +3,7 @@
   "name": "ZooCrew at Buttonwood Park Zoo",
   "operator_name": "Buttonwood Park Zoological Society",
   "website_url": "https://www.bpzoo.org/education-and-conservation/for-families/zoocrew/",
+  "registration_url": "https://bpzoo.ticketapp.org/portal/product/26/events",
   "email": "cdoremus@bpzoo.org",
   "phone": "508-991-4556",
   "street_address": "425 Hawthorn Street",
@@ -11,12 +12,11 @@
   "zip": "02740",
   "camp_type": "day",
   "primary_categories": [
-    "nature",
+    "nature"
+  ],
+  "secondary_categories": [
     "STEM"
   ],
-  "age_min": 4,
-  "age_max": 12,
-  "description_short": "A day camp at Buttonwood Park Zoo for ages 4-12, with a different animal or nature theme each week. Days include crafts, games, activities and animal encounters, plus recess in the Nature Play area. Summer runs in July and August, with short programs in February and April.",
   "activities": [
     "Crafts",
     "Games",
@@ -24,34 +24,108 @@
     "Nature Play recess",
     "Citizen science projects"
   ],
-  "price_per_week": 350,
+  "age_min": 4,
+  "age_max": 12,
+  "description_short": "Summer ZooCrew is a week-long day camp at Buttonwood Park Zoo in New Bedford for ages 4 to 12 in four age groups, with a different animal or nature theme each week. Days run 9am to 4pm (half day 9 to noon for ages 4-5) with crafts, games, activities, animal encounters and recess in the Nature Play area. Lunch can be bought for $10 a day or packed.",
+  "indoor_outdoor": "outdoor",
   "price_min": 175,
   "price_max": 350,
-  "financial_aid": true,
+  "price_per_week": 350,
+  "price_per": "week",
   "meals_included": false,
+  "financial_aid": true,
   "refund_policy_summary": "Cancellations are accepted until the week before your child's start date. After that there are no refunds, except for cancellations due to a Covid diagnosis.",
   "season_year": 2026,
-  "price_per": "week",
   "sessions": [
     {
-      "name": "Winter ZooCrew: Nature's Weirdos",
-      "start_date": "2026-02-17",
-      "end_date": "2026-02-20",
-      "price": 240,
+      "name": "Budding Scientists (6&7)",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": 350,
       "availability": "unknown"
     },
     {
-      "name": "Spring ZooCrew: The Most Extreme: Builders",
-      "start_date": "2026-04-21",
-      "end_date": "2026-04-24",
-      "price": 240,
+      "name": "Sense-ational Animals (8&9)",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": 350,
       "availability": "unknown"
+    },
+    {
+      "name": "In My Backyard (4&5)",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": 350,
+      "availability": "unknown"
+    },
+    {
+      "name": "Mythical Creatures (6&7)",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": 350,
+      "availability": "full"
+    },
+    {
+      "name": "Animal Mythbusters (8&9)",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": 350,
+      "availability": "full"
+    },
+    {
+      "name": "Wildlife Warriors (10-12)",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": 350,
+      "availability": "full"
+    },
+    {
+      "name": "Survivor! (8&9)",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": 350,
+      "availability": "full"
+    },
+    {
+      "name": "Where The Wild Things Are (4&5)",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": 350,
+      "availability": "unknown"
+    },
+    {
+      "name": "Where in the World (6&7)",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": 350,
+      "availability": "full"
+    },
+    {
+      "name": "Great Adaptations (10-12)",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": 350,
+      "availability": "unknown"
+    },
+    {
+      "name": "Once Upon A Story (4&5)",
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-14",
+      "price": 350,
+      "availability": "full"
+    },
+    {
+      "name": "ZooCrew Time Machine (10-12)",
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-14",
+      "price": 350,
+      "availability": "full"
     }
   ],
   "sources": [
     {
       "url": "https://www.bpzoo.org/education-and-conservation/for-families/zoocrew/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -75,9 +149,19 @@
         "meals_included",
         "financial_aid",
         "refund_policy_summary",
+        "indoor_outdoor",
+        "secondary_categories"
+      ],
+      "note": "ZooCrew page: Summer ZooCrew July-August, ages 4-12, $350/week full day, $175 half day (ages 4-5), lunch $10 or bring, scholarships, cancellation policy, registration starts March 1, 2026"
+    },
+    {
+      "url": "https://bpzoo.ticketapp.org/portal/product/26/events",
+      "checked": "2026-11-12",
+      "fields": [
+        "registration_url",
         "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Summer ZooCrew registration: 12 one-week sessions starting Mondays 7/6-8/10/2026 ('Children can be registered for one week increments'), $350 full day week; several marked Sold Out"
     }
   ],
   "review": {
@@ -130,6 +214,23 @@
         "quote": "Cost: $60/day – Members receive a 15% discount"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.bpzoo.org/education-and-conservation/for-families/zoocrew/",
+        "https://bpzoo.ticketapp.org/portal/product/26/events"
+      ],
+      "changes": [
+        "Replaced the winter (Feb) and spring (Apr) vacation sessions, whose $240 prices were computed, with the 12 summer 2026 weeks from the registration portal (Mon-Fri, $350 full day; 7 marked Sold Out = full)",
+        "Added registration_url (Summer ZooCrew registration portal)",
+        "Categories: nature primary, STEM secondary; indoor_outdoor outdoor",
+        "Description rewritten to the summer program (age groups, hours, lunch option)"
+      ],
+      "open_questions": [
+        "Session end dates are the Friday of each 'week of' Monday (the portal sells week-long registrations; Friday is not printed)",
+        "2027 not posted; the page still shows 2026 dates"
+      ]
+    }
   }
 }
