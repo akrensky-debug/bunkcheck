@@ -4,16 +4,14 @@
   "operator_name": "Athena, for the Town of Acton Recreation Department",
   "website_url": "https://actonma.gov/332/NARA-Summer-Camp",
   "phone": "978-929-6600",
+  "street_address": "25 Ledge Rock Way (NARA Park)",
   "city": "Acton",
   "state": "MA",
   "zip": "01720",
   "camp_type": "day",
   "primary_categories": [
-    "nature"
+    "general"
   ],
-  "grade_min": 0,
-  "grade_max": 6,
-  "description_short": "A summer camp at NARA Park in Acton, MA, run for the town Recreation Department, for children entering grades K–6. Activities include swimming, games, creative projects and field trips.",
   "activities": [
     "swimming",
     "games",
@@ -21,9 +19,12 @@
     "creative activities",
     "outdoor activities"
   ],
+  "grade_min": 0,
+  "grade_max": 6,
+  "description_short": "A summer camp at NARA Park in Acton, MA, run for the town Recreation Department, for children entering grades K–6. Activities include swimming, games, creative projects and field trips.",
   "financial_aid": true,
   "special_needs_notes": "The camp is nut-free. All physicals and immunization records must be uploaded to CampDoc.com. Paper copies are not accepted. Physicals must be from the last 18 months.",
-  "swim_waterfront_notes": "Swimming is part of the program at NARA Park. The page gives no details about the pool or waterfront, swim tests, or lifeguards.",
+  "swim_waterfront_notes": "Swimming is part of the program at NARA Park, which has a swimming pond (NARA Beach). The camp page gives no details about swim tests or lifeguards.",
   "season_year": 2026,
   "sessions": [
     {
@@ -37,7 +38,7 @@
   "sources": [
     {
       "url": "https://actonma.gov/332/NARA-Summer-Camp",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -54,10 +55,17 @@
         "description_short",
         "financial_aid",
         "special_needs_notes",
-        "swim_waterfront_notes",
         "sessions"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://actonma.gov/312/NARA-Park",
+      "checked": "2026-11-12",
+      "fields": [
+        "street_address",
+        "swim_waterfront_notes"
+      ]
     }
   ],
   "review": {
@@ -111,6 +119,23 @@
         "quote": "472 Main Street Acton, MA 01720 Phone: 978-929-6600"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://actonma.gov/332/NARA-Summer-Camp",
+        "https://actonma.gov/312/NARA-Park"
+      ],
+      "changes": [
+        "Added street address 25 Ledge Rock Way (NARA Park), from the town's NARA Park page; the camp is held there",
+        "Swim notes now say NARA Park has a swimming pond (NARA Beach)",
+        "Other fields match the page: grades K-6, June 29 to Aug 28, 2026, operated by Athena, nut-free, CampDoc physicals, Doli Atamian camperships (Acton and Boxborough residents)",
+        "primary_categories nature -> general (page describes a classic recreation camp: swimming, games, field trips, creativity), resolving the low-confidence item",
+        "Low-confidence items: camp_type day kept (packed lunches, town recreation camp); zip 01720 is right for NARA Park; phone is the Town Hall / Recreation main line"
+      ],
+      "open_questions": [
+        "Prices, weekly structure and hours not on the page; 2027 not posted ('We will see you again next year!')"
+      ]
+    }
   }
 }

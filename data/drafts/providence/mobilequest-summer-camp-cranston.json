@@ -15,10 +15,11 @@
   ],
   "description_short": "Summer camp run by MobileQuest STEM Center in Cranston, RI. The camp page gives contact and registration details only. It does not describe the program.",
   "season_year": 2026,
+  "refund_policy_summary": "No refunds, credits or make-up sessions for missed workshops, camps or events, including weather-related cancellations.",
   "sources": [
     {
       "url": "https://www.mobilequestadventures.com/camp",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -34,6 +35,13 @@
         "description_short"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.mobilequestadventures.com/refund",
+      "checked": "2026-11-12",
+      "fields": [
+        "refund_policy_summary"
+      ]
     }
   ],
   "review": {
@@ -87,6 +95,26 @@
     "errors": [
       "missing required camp_type",
       "camp_type must be one of ['day', 'sleepaway', 'specialty']"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.mobilequestadventures.com/camp",
+        "https://www.mobilequestadventures.com/register",
+        "https://www.mobilequestadventures.com/faq",
+        "https://www.mobilequestadventures.com/refund",
+        "https://www.mobilequestadventures.com/programguide",
+        "https://www.mobilequestadventures.com/offerings-1"
+      ],
+      "changes": [
+        "Added refund policy from the Refund page (no refunds, credits or make-ups, including for weather).",
+        "Address, phone, camp email and registration link match the camp page."
+      ],
+      "open_questions": [
+        "No camp description, camp type, ages, dates, hours or prices on any page the fetcher can read; the Register page loads its program list by script and shows nothing. camp_type (required) stays empty.",
+        "The camp page still says 'Camp 2026' and 'Save $25.00 if you register before 12/31/25'. Nothing posted for 2027.",
+        "season_year 2026 rests only on the 'Camp 2026' heading."
+      ]
+    }
   }
 }

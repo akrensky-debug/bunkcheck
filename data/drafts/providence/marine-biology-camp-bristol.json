@@ -3,7 +3,7 @@
   "name": "Marine Biology Camp",
   "operator_name": "Roger Williams University, Department of Biology, Marine Biology and Environmental Science",
   "website_url": "https://www.rwu.edu/academics/marine-biology-camp",
-  "registration_url": "https://connect.rwu.edu/register/?id=dd9001ca-229a-4fb3-98c6-13559b5e65a6",
+  "registration_url": "https://www.rwu.edu/academics/marine-biology-camp",
   "email": "mbiocamp@rwu.edu",
   "phone": "401-254-3814",
   "street_address": "1 Old Ferry Road",
@@ -18,7 +18,7 @@
   ],
   "grade_min": 11,
   "grade_max": 12,
-  "description_short": "A one-week overnight marine biology program for high school students at Roger Williams University in Bristol, RI. Campers stay in a residence hall and do daily field and lab work, including snorkeling, sea kayaking, plankton sampling and a whale-watching trip, plus guest lectures by RWU scientists.",
+  "description_short": "A one-week overnight marine biology program for rising high school juniors and seniors at Roger Williams University in Bristol, RI. Campers live in a waterside residence hall and do daily field and lab work, including snorkeling, sea kayaking, plankton sampling and a whale-watching trip off Cape Cod, plus guest lectures by RWU scientists. Enrollment is limited to 18 per session.",
   "activities": [
     "Oceanographic sampling",
     "Sea kayaking",
@@ -41,37 +41,44 @@
   "sessions": [
     {
       "name": "Session 1",
-      "start_date": "2027-07-07",
-      "end_date": "2027-07-13",
+      "start_date": "2027-06-27",
+      "end_date": "2027-07-03",
       "price": 2195,
-      "availability": "unknown"
+      "availability": "open"
     },
     {
       "name": "Session 2",
-      "start_date": "2027-07-14",
-      "end_date": "2027-07-20",
+      "start_date": "2027-07-11",
+      "end_date": "2027-07-17",
       "price": 2195,
-      "availability": "unknown"
+      "availability": "open"
     },
     {
       "name": "Session 3",
-      "start_date": "2027-07-21",
-      "end_date": "2027-07-27",
+      "start_date": "2027-07-18",
+      "end_date": "2027-07-24",
       "price": 2195,
-      "availability": "unknown"
+      "availability": "open"
     },
     {
       "name": "Session 4",
-      "start_date": "2027-07-28",
-      "end_date": "2027-08-03",
+      "start_date": "2027-07-25",
+      "end_date": "2027-07-31",
       "price": 2195,
-      "availability": "unknown"
+      "availability": "open"
+    },
+    {
+      "name": "Session 5",
+      "start_date": "2027-08-01",
+      "end_date": "2027-08-07",
+      "price": 2195,
+      "availability": "open"
     }
   ],
   "sources": [
     {
       "url": "https://www.rwu.edu/academics/marine-biology-camp",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -96,9 +103,10 @@
         "financial_aid",
         "refund_policy_summary",
         "swim_waterfront_notes",
-        "sessions"
+        "sessions",
+        "price_per"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Re-checked 2026-11-12: '2027 Dates: Session 1 - June 27 to July 3, 2027 ... Session 5 - August 1 to August 7, 2027'; 'Cost: $ 2,195'; per-session registration links (connect.rwu.edu) are live. Registration link set to this page, which links all five session forms."
     }
   ],
   "review": {
@@ -126,13 +134,24 @@
       "Support for special needs or medical needs",
       "The year of the April 1 deposit deadline and May 10 balance deadline (probably 2027)"
     ],
-    "low_confidence": [
-      {
-        "field": "registration_url",
-        "confidence": 0.7,
-        "quote": "Registration Coming Soon"
-      }
-    ],
-    "errors": []
-  }
+    "low_confidence": [],
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.rwu.edu/academics/marine-biology-camp",
+        "https://connect.rwu.edu/register/?id=187940bf-01b9-435c-9423-89f920da2ac5"
+      ],
+      "changes": [
+        "2027 dates changed on the page: now 5 sessions (Jun 27-Jul 3, Jul 11-17, Jul 18-24, Jul 25-31, Aug 1-7, 2027), Sunday to Saturday; replaced the draft's 4 sessions (Jul 7-Aug 3).",
+        "Registration is now open: each session has its own live form on connect.rwu.edu (Session 1 form shows 'Sunday, June 27, 2027 until Saturday, July 3, 2027'); sessions marked open and registration_url set to the camp page that links all five.",
+        "Added price_per 'session'; description now mentions the 18-camper cap and Cape Cod whale watch."
+      ],
+      "open_questions": [
+        "camp_type kept as 'specialty' (a one-subject program), though campers stay overnight in a residence hall; Andrew may prefer 'sleepaway'.",
+        "The page does not label $2,195 as the 2027 price, though it sits beside the 2027 dates."
+      ]
+    }
+  },
+  "price_per": "session"
 }

@@ -42,10 +42,11 @@
   "meals_included": true,
   "swim_waterfront_notes": "Field trips include swimming and splash parks at Pleasant View Elementary School. The page does not describe swim instruction or supervision.",
   "price_per": "week",
+  "registration_url": "https://schools.procareconnect.com/form/9f81c5bd-971b-4cac-9032-0ddb6bcd1bbd",
   "sources": [
     {
       "url": "https://www.pathwaykarateacademy.com/summer-vacation-camps",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -70,7 +71,8 @@
         "extended_care",
         "meals_included",
         "financial_aid",
-        "swim_waterfront_notes"
+        "swim_waterfront_notes",
+        "registration_url"
       ],
       "note": "Drafted by the listing tool from this page"
     }
@@ -144,6 +146,22 @@
     ],
     "errors": [
       "missing required season_year"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.pathwaykarateacademy.com/summer-vacation-camps"
+      ],
+      "changes": [
+        "Added registration URL (the page's 'Sign Up' link to the Procare enrollment form).",
+        "Checked the rest against the page: ages 5-13 / grades PK-6, the three weekly options ($235 Before & Day 6:30am-5pm, $220 Full Day 9am-5pm, $265 Before & Extended 6:30am-6pm; sibling rates $225/$200/$225), meals, field trips, DHS/CCAP, address, phone and email all match."
+      ],
+      "open_questions": [
+        "No season year or dates anywhere on the page ('This year, our theme will be around Nature & Our Environment'; footer © 2026). season_year (required) stays empty; Andrew to decide whether to list it as 2026 or wait for 2027 details.",
+        "financial_aid true rests on 'We accept DHS/CCAP' (state child care subsidy), not the camp's own aid.",
+        "meals_included true: two of the three options include breakfast, lunch and snacks; the Before & Day option lists snacks only.",
+        "No weekly session dates and no registration opening date."
+      ]
+    }
   }
 }
