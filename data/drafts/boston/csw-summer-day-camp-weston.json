@@ -2,7 +2,9 @@
   "slug": "csw-summer-day-camp-weston",
   "name": "CSW Summer Day Camp",
   "operator_name": "The Cambridge School of Weston",
-  "website_url": "https://www.csw.org/community/summer-and-enrichment",
+  "website_url": "https://cswsummer.org/",
+  "registration_url": "https://www.homeroom.com/sites/the-cambridge-school-of-weston-weston/camp",
+  "email": "summercamp@csw.org",
   "phone": "781-642-8605",
   "street_address": "45 Georgian Road",
   "city": "Weston",
@@ -13,22 +15,99 @@
     "sports",
     "arts"
   ],
-  "age_min": 4,
-  "age_max": 14,
-  "description_short": "A summer day camp on the campus of The Cambridge School of Weston for ages 4-14. Activities, led by counselors, include swimming, recreational sports, and arts and crafts, both indoors and outdoors.",
   "activities": [
     "swimming",
     "recreational sports",
     "arts and crafts"
   ],
+  "age_min": 4,
+  "age_max": 14,
+  "description_short": "A summer day camp on the campus of The Cambridge School of Weston for ages 4-14, run in two-week sessions from 9 a.m. to 4 p.m. Activities, led by counselors, include daily swim lessons and free swim in the campus pool, recreational sports, and arts and crafts, both indoors and outdoors. Lunch and snacks are provided.",
+  "price_min": 1500,
+  "price_max": 1700,
+  "price_per": "session",
+  "extended_care": true,
+  "meals_included": true,
+  "refund_policy_summary": "A $250 non-refundable deposit per session is due at registration. Deposits are not refunded after March 1, 2027. Other payments (less deposits) are refundable or transferable until May 1, 2027 with written notice. $100 per session early-bird discount before December 31.",
+  "swim_waterfront_notes": "Campers swim twice a day in CSW's outdoor pool (built 2025, 2.75 to 5 feet deep): lessons in the morning and free swim in the afternoon. Certified lifeguards are led by an Aquatics Director. A swim test (two widths and 60 seconds treading water) is needed for the deep end.",
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Session One, Traditional Camp, grades PreK-1",
+      "start_date": "2027-06-21",
+      "end_date": "2027-07-02",
+      "price": 1520,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session One, Traditional Camp, grades 2-8",
+      "start_date": "2027-06-21",
+      "end_date": "2027-07-02",
+      "price": 1500,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session Two (no camp July 5), Traditional Camp, grades PreK-1",
+      "start_date": "2027-07-06",
+      "end_date": "2027-07-16",
+      "price": 1520,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session Two (no camp July 5), Traditional Camp, grades 2-8",
+      "start_date": "2027-07-06",
+      "end_date": "2027-07-16",
+      "price": 1500,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session Three, Traditional Camp, grades PreK-1",
+      "start_date": "2027-07-19",
+      "end_date": "2027-07-30",
+      "price": 1520,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session Three, Traditional Camp, grades 2-8",
+      "start_date": "2027-07-19",
+      "end_date": "2027-07-30",
+      "price": 1500,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session Four, Traditional Camp, grades PreK-1",
+      "start_date": "2027-08-02",
+      "end_date": "2027-08-13",
+      "price": 1520,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session Four, Traditional Camp, grades 2-8",
+      "start_date": "2027-08-02",
+      "end_date": "2027-08-13",
+      "price": 1500,
+      "availability": "unknown"
+    }
+  ],
   "sources": [
     {
       "url": "https://www.csw.org/community/summer-and-enrichment",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
+        "age_min",
+        "age_max"
+      ],
+      "note": "CSW Summer & Enrichment overview (drafted from this page)"
+    },
+    {
+      "url": "https://cswsummer.org/",
+      "checked": "2026-11-12",
+      "fields": [
         "website_url",
+        "registration_url",
+        "email",
         "phone",
         "street_address",
         "city",
@@ -37,11 +116,41 @@
         "camp_type",
         "primary_categories",
         "activities",
-        "age_min",
-        "age_max",
         "description_short"
+      ]
+    },
+    {
+      "url": "https://cswsummer.org/dates-and-rates/",
+      "checked": "2026-11-12",
+      "fields": [
+        "price_min",
+        "price_max",
+        "price_per",
+        "extended_care",
+        "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "2027 Summer Camp Dates and Rates"
+    },
+    {
+      "url": "https://cswsummer.org/registration/",
+      "checked": "2026-11-12",
+      "fields": [
+        "refund_policy_summary"
+      ]
+    },
+    {
+      "url": "https://cswsummer.org/discover-csw-summer/",
+      "checked": "2026-11-12",
+      "fields": [
+        "meals_included"
+      ]
+    },
+    {
+      "url": "https://cswsummer.org/discover-csw-summer/aquatics-program/",
+      "checked": "2026-11-12",
+      "fields": [
+        "swim_waterfront_notes"
+      ]
     }
   ],
   "review": {
@@ -88,8 +197,30 @@
         "quote": "CSW Summer Day Camp ... Learn More"
       }
     ],
-    "errors": [
-      "missing required season_year"
-    ]
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.csw.org/community/summer-and-enrichment",
+        "https://cswsummer.org/",
+        "https://cswsummer.org/dates-and-rates/",
+        "https://cswsummer.org/registration/",
+        "https://cswsummer.org/discover-csw-summer/",
+        "https://cswsummer.org/discover-csw-summer/aquatics-program/"
+      ],
+      "changes": [
+        "website_url: csw.org overview page -> the camp's own site https://cswsummer.org/ (resolves the low-confidence website item)",
+        "Moved to the 2027 season (season_year 2027): four two-week sessions June 21 to Aug 13, 2027, Mon-Fri 9-4; Traditional Camp $1,520 (PreK-1) / $1,500 (grades 2-8) per session; Specialty Camp (grades 5-8) $1,700; price_min 1500, price_max 1700 per session",
+        "Added registration_url (Homeroom portal), email summercamp@csw.org",
+        "Added extended_care true (AM 7:30-9 $175/session, PM 4-5:30 $225/session), meals_included true (CulinArt prepares lunch and snacks for all campers)",
+        "Added refund policy ($250 non-refundable deposit per session; refunds less deposit until May 1, 2027)",
+        "Added swim notes (pool, twice-daily swim, lifeguards, deep-end test); description updated to mention two-week sessions, hours and meals",
+        "Phone 781-642-8605 confirmed as the camp's number on cswsummer.org (resolves low-confidence phone); errors resolved (season_year set)"
+      ],
+      "open_questions": [
+        "Which sessions the Specialty Camps (grades 5-8, $1,700) run in is not on the Dates & Rates page; only Traditional Camp sessions are listed",
+        "Early-bird prices ($100 off before December 31) are not stored as session prices"
+      ]
+    }
   }
 }

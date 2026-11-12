@@ -40,8 +40,7 @@
     "fencing",
     "running",
     "math",
-    "structured literacy",
-    "Challenge Course"
+    "structured literacy"
   ],
   "price_per_week": 450,
   "price_min": 300,
@@ -52,6 +51,71 @@
   "special_needs_notes": "Sally Borden Program (SBP) Academic Camps: 6-week summer courses in math, writing and structured literacy for grades 1-8 with language-based learning differences and/or vulnerabilities, taught by educators trained in Orton-Gillingham.",
   "season_year": 2026,
   "price_per": "week",
+  "sessions": [
+    {
+      "name": "Summer Friends Week 1: Building Community",
+      "start_date": "2026-06-22",
+      "end_date": "2026-06-26",
+      "price": 450,
+      "availability": "unknown"
+    },
+    {
+      "name": "Summer Friends Week 2: Blast Off!",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-02",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Summer Friends Week 3: Animal Adventures",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": 450,
+      "availability": "unknown"
+    },
+    {
+      "name": "Summer Friends Week 4: Under the Sea",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": 450,
+      "availability": "unknown"
+    },
+    {
+      "name": "Summer Friends Week 5: Music and More",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": 450,
+      "availability": "unknown"
+    },
+    {
+      "name": "Summer Friends Week 6: Nature Explorers",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": 450,
+      "availability": "unknown"
+    },
+    {
+      "name": "Summer Friends Week 7: Mad About Science",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": 450,
+      "availability": "unknown"
+    },
+    {
+      "name": "Summer Friends Week 8: Camp Olympics",
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-14",
+      "price": 450,
+      "availability": "unknown"
+    },
+    {
+      "name": "Counselor in Training (3 weeks)",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-24",
+      "price": 1215,
+      "availability": "unknown"
+    }
+  ],
   "sources": [
     {
       "url": "https://www.friendsacademy1810.org/summer/",
@@ -84,6 +148,13 @@
         "special_needs_notes"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.friendsacademy1810.org/summer/summer-friends-day-camp-dartmouth-ma/",
+      "checked": "2026-11-12",
+      "fields": [
+        "sessions"
+      ]
     }
   ],
   "review": {
@@ -110,6 +181,22 @@
       "Swimming or waterfront activities"
     ],
     "low_confidence": [],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.friendsacademy1810.org/summer/",
+        "https://www.friendsacademy1810.org/summer/summer-friends-day-camp-dartmouth-ma/"
+      ],
+      "changes": [
+        "Added sessions from the Summer Friends page: eight 2026 Summer Friends weeks (June 22 - August 14) at $450/week full day, and the 3-week CIT session July 6-24 at $1,215. Week 2 (June 29 - July 2, no camp July 3) price left blank because the page gives no short-week rate.",
+        "Removed 'Challenge Course' from activities: the page lists it as part of the campus, not as a camp activity.",
+        "Everything else matches the summer page (address, phone, email, ages 3-16, rates, Surround Care, deposits and cancellation policy, lunch from home)."
+      ],
+      "open_questions": [
+        "Creative, Enrichment, Sports and SBP camps have their own weeks on separate pages; only Summer Friends and CIT weeks are listed as sessions.",
+        "No 2027 dates, prices or registration opening date posted yet (page still shows 2026)."
+      ]
+    }
   }
 }

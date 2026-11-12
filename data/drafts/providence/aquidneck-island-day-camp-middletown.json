@@ -7,26 +7,57 @@
   "state": "RI",
   "zip": null,
   "camp_type": "day",
-  "description_short": "A summer day camp in Middletown, RI. It runs field trips through the summer, and campers choose from on-site activities. It mainly serves families from Newport, Middletown, Portsmouth, Tiverton, Little Compton, Bristol and Warren.",
+  "description_short": "A summer day camp for ages 5-13 at Forrest Ave Elementary School in Middletown, RI, 9am-4pm with extended day 8am-5pm. Campers choose among on-site activities (science, wilderness skills, makers' studio, field games) and go on field trips all summer. Register by the week or for the full summer.",
   "activities": [
     "Field trips",
-    "On-site activities (camper choice)"
+    "Camp visitors (Mad Science, animal ambassadors, story-telling)",
+    "Wilderness skills",
+    "Makers' studio (weaving, beading, painting, sculpture)",
+    "Science (slime labs, experiments)",
+    "Field games and sports"
   ],
   "sources": [
     {
       "url": "https://www.aquidneckislanddaycamp.com/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "website_url",
-        "registration_url",
         "city",
         "state",
-        "camp_type",
-        "activities",
+        "camp_type"
+      ],
+      "note": "Home page: 'Aquidneck Island Day Camp - Middletown, RI'; 'A Summer Camp'."
+    },
+    {
+      "url": "https://www.aquidneckislanddaycamp.com/registration.html",
+      "checked": "2026-11-12",
+      "fields": [
+        "registration_url",
+        "email",
+        "phone",
+        "age_min",
+        "age_max",
+        "price_min",
+        "price_max",
+        "price_per_week",
+        "price_per",
+        "extended_care",
+        "refund_policy_summary",
+        "sessions",
         "description_short"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "'2026 camp information and registration'; 'Location: Forrest Ave Elementary School'; 'Ages: 5-13'; 'Dates: June 29 – August 21, 2026'; Regular Day 9-4 $300/weekly, Extended Day 8-5 $380/weekly; 'Non-refundable Fee: $25'; call 401-864-3183. Sessions are the 8 Mon-Fri weeks in that range (campers register by the week). Description also uses the Activities page."
+    },
+    {
+      "url": "https://www.aquidneckislanddaycamp.com/activities.html",
+      "checked": "2026-11-12",
+      "fields": [
+        "activities",
+        "primary_categories",
+        "secondary_categories"
+      ],
+      "note": "Activities page: camp visitors, Wilderness Skills Lab, Makers' Studio, Science, Field Games, field trips."
     }
   ],
   "review": {
@@ -58,8 +89,105 @@
     ],
     "low_confidence": [],
     "errors": [
-      "missing required zip",
-      "missing required season_year"
-    ]
-  }
+      "missing required zip"
+    ],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.aquidneckislanddaycamp.com/",
+        "https://www.aquidneckislanddaycamp.com/registration.html",
+        "https://www.aquidneckislanddaycamp.com/activities.html",
+        "https://www.aquidneckislanddaycamp.com/learning.html",
+        "https://www.aquidneckislanddaycamp.com/counselors.html"
+      ],
+      "changes": [
+        "Added 2026 season: June 29 - Aug 21, 2026 as 8 weekly sessions at $300 (registration page); season_year 2026.",
+        "Added ages 5-13, phone 401-864-3183, email, prices ($300/week regular, $380/week extended day), extended_care true, $25 non-refundable fee and discounts.",
+        "Activities and categories rewritten from the Activities page; description now names ages, location, hours.",
+        "Census geocoder found no match for 'Forest Ave, Middletown RI' and Middletown has more than one ZIP, so zip is still empty."
+      ],
+      "open_questions": [
+        "ZIP: the page gives only 'Forrest Ave Elementary School' (no street number); Middletown RI is not a single-ZIP town in our list. Andrew needs to set zip (school's street address) before promote.",
+        "Weekly sessions assume Mon-Fri weeks across June 29 - Aug 21; the page does not say whether July 3 is a holiday.",
+        "No 2027 dates or registration opening posted yet; 'Scholarships – information coming soon'."
+      ]
+    }
+  },
+  "email": "aquidneckislanddaycamp@gmail.com",
+  "phone": "401-864-3183",
+  "age_min": 5,
+  "age_max": 13,
+  "season_year": 2026,
+  "price_min": 300,
+  "price_max": 380,
+  "price_per_week": 300,
+  "price_per": "week",
+  "extended_care": true,
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "STEM",
+    "arts",
+    "outdoor"
+  ],
+  "refund_policy_summary": "$25 non-refundable fee. Sibling discount 10% for each additional child; military discount 10%. Whole-summer payments can be split into 4 payments.",
+  "sessions": [
+    {
+      "name": "Week 1",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-03",
+      "price": 300,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 2",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": 300,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 3",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": 300,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 4",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": 300,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 5",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": 300,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 6",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": 300,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 7",
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-14",
+      "price": 300,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 8",
+      "start_date": "2026-08-17",
+      "end_date": "2026-08-21",
+      "price": 300,
+      "availability": "unknown"
+    }
+  ]
 }

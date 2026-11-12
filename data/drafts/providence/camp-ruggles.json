@@ -9,21 +9,35 @@
   "primary_categories": [
     "special_needs"
   ],
-  "description_short": "Camp Ruggles has run a therapeutic summer program for Rhode Island children for more than 50 years. The program focuses on support, confidence and friendship.",
+  "description_short": "Camp Ruggles has run a therapeutic summer program for Rhode Island children for more than 50 years. It combines highly structured therapeutic support with summer camp experiences such as friendships, swimming, boating, fishing and creative activities.",
   "special_needs_notes": "The camp calls itself a \"therapeutic summer experience.\" This page does not say which needs or conditions it serves.",
+  "activities": [
+    "Swimming",
+    "Boating",
+    "Fishing",
+    "Creative activities",
+    "Movement"
+  ],
   "sources": [
     {
       "url": "https://www.campruggles.org/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
         "website_url",
         "primary_categories",
-        "description_short",
         "special_needs_notes"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.campruggles.org/our-program",
+      "checked": "2026-11-12",
+      "fields": [
+        "activities",
+        "description_short"
+      ]
     }
   ],
   "review": {
@@ -68,6 +82,28 @@
       "missing required camp_type",
       "missing required season_year",
       "camp_type must be one of ['day', 'sleepaway', 'specialty']"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.campruggles.org/",
+        "https://www.campruggles.org/our-program",
+        "https://www.campruggles.org/families-apply",
+        "https://www.campruggles.org/about",
+        "https://www.campruggles.org/our-impact",
+        "https://www.campruggles.org/stories-camp-life",
+        "https://www.campruggles.org/the-next-50-years",
+        "https://www.campruggles.org/support-camp-ruggles"
+      ],
+      "changes": [
+        "Added activities (swimming, boating, fishing, creative activities, movement) from the Our Program page and widened the description to match it."
+      ],
+      "open_questions": [
+        "The whole site reads like a redesign draft, not a live family site: the Families & Apply page says 'The current website contains useful application, eligibility, transportation and FAQ information. The redesign keeps that operational value...' but gives no details and links nowhere.",
+        "No location anywhere on the site, so city, state and ZIP (all required) stay empty. The site says the Board approved a $1.5 million capital campaign 'to help establish a permanent home', so the camp may not have a fixed site.",
+        "No camp type, ages, dates, prices, contact details or season year on any page.",
+        "No 2027 or 2026 registration dates."
+      ]
+    }
   }
 }

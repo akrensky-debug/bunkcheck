@@ -5,22 +5,66 @@
   "website_url": "https://peopleincfr.org/services/diabetes-association-inc/camp-jack/",
   "registration_url": "https://campjack.funjoin.app/sign-in",
   "phone": "(508) 679-5233",
-  "city": null,
-  "state": null,
-  "zip": null,
+  "city": "Assonet",
+  "state": "MA",
+  "zip": "02702",
   "season_year": 2026,
   "sources": [
     {
       "url": "https://peopleincfr.org/services/diabetes-association-inc/camp-jack/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
         "website_url",
         "registration_url",
-        "phone"
+        "phone",
+        "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "'First Day of Camp: Monday, July 6th, 2026'; brochure says camp runs six weeks, so the sessions are the 6 Mon-Fri weeks from July 6 at the brochure's $230/week. Registration link with tracking parameters removed."
+    },
+    {
+      "url": "https://peopleincfr.org/wp-content/uploads/Camp-Jack-Brochure-2-1.pdf",
+      "checked": "2026-11-12",
+      "fields": [
+        "street_address",
+        "city",
+        "state",
+        "camp_type",
+        "age_min",
+        "age_max",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "description_short",
+        "price_per_week",
+        "price_min",
+        "price_max",
+        "price_per",
+        "financial_aid",
+        "special_needs_notes",
+        "aca_accredited",
+        "aca_source_url"
+      ],
+      "note": "Brochure: 'kids with diabetes, ages 5-14, their siblings, and friends'; 'Camp Welch site, located at 127 North Main Street in Assonet'; 'Camp Jack is $230 per week per camper. Financial assistance may be available'; 'Accredited member of the American Camp Association (ACA)'."
+    },
+    {
+      "url": "https://peopleincfr.org/wp-content/uploads/2026-Camper-Handbook-1.pdf",
+      "checked": "2026-11-12",
+      "fields": [
+        "transportation",
+        "meals_included",
+        "indoor_outdoor"
+      ],
+      "note": "2026 Camper Handbook: bus drop-off/pick-up with bus monitors; 'All campers must bring their own lunch' (pizza provided Fridays only); Camp Welch is an outdoor camp."
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=127+North+Main+Street&city=Assonet&state=MA&benchmark=Public_AR_Current&format=json",
+      "checked": "2026-11-12",
+      "fields": [
+        "zip"
+      ],
+      "note": "ZIP from the US Census geocoder: 127 N MAIN ST, ASSONET, MA, 02702"
     }
   ],
   "review": {
@@ -56,12 +100,106 @@
       "2027 registration opening date"
     ],
     "low_confidence": [],
-    "errors": [
-      "missing required city",
-      "missing required state",
-      "missing required zip",
-      "missing required camp_type",
-      "camp_type must be one of ['day', 'sleepaway', 'specialty']"
-    ]
-  }
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://peopleincfr.org/services/diabetes-association-inc/camp-jack/",
+        "https://peopleincfr.org/wp-content/uploads/Camp-Jack-Brochure-2-1.pdf",
+        "https://peopleincfr.org/wp-content/uploads/2026-Camper-Handbook-1.pdf"
+      ],
+      "changes": [
+        "Filled location from the brochure and handbook: Camp Welch, 127 North Main Street, Assonet, MA; ZIP 02702 from the Census geocoder (~35 min from Providence).",
+        "camp_type day, ages 5-14, categories special_needs/general, activities, description from the brochure.",
+        "Added $230/week, financial aid, ACA accreditation (brochure), bus transportation and bring-your-own-lunch (handbook).",
+        "Added 6 weekly 2026 sessions starting Monday July 6, 2026 (page) for the brochure's six-week season; dropped tracking parameters from the registration URL."
+      ],
+      "open_questions": [
+        "The brochure's theme weeks are for 2025, so $230/week may be the 2025 price; 2026 price not stated elsewhere.",
+        "2026 end date is inferred from 'six weeks' + first day July 6 (=> Aug 14); the page gives only the first day.",
+        "Campers must have type 1 diabetes or be a sibling/relative/close friend of a camper with T1D."
+      ]
+    }
+  },
+  "street_address": "127 North Main Street",
+  "camp_type": "day",
+  "age_min": 5,
+  "age_max": 14,
+  "primary_categories": [
+    "special_needs",
+    "general"
+  ],
+  "secondary_categories": [
+    "swimming",
+    "sports",
+    "arts",
+    "nature"
+  ],
+  "activities": [
+    "Diabetes management education",
+    "Swimming (two outdoor pools)",
+    "Sports and athletic fields",
+    "Arts and crafts",
+    "Nature explorations",
+    "Archery",
+    "Team building",
+    "Theme weeks",
+    "Counselor in Training program (ages 14-15)"
+  ],
+  "description_short": "The Jack Rua Camp for Children with Diabetes: a day camp for kids with type 1 diabetes ages 5-14, their siblings and friends, held for six weeks in July and August at Camp Welch in Assonet, MA. Nurses are on site, and activities, snacks and meals are planned around diabetes management.",
+  "price_per_week": 230,
+  "price_min": 230,
+  "price_max": 230,
+  "price_per": "week",
+  "financial_aid": true,
+  "transportation": true,
+  "meals_included": false,
+  "special_needs_notes": "For campers with type 1 diabetes, their siblings/relatives and close friends. A lead RN, an RN and an LPN are on site; blood glucose checks at snack and lunch times; staff trained in type 1 diabetes management.",
+  "aca_accredited": true,
+  "aca_source_url": "https://peopleincfr.org/wp-content/uploads/Camp-Jack-Brochure-2-1.pdf",
+  "indoor_outdoor": "outdoor",
+  "sessions": [
+    {
+      "name": "Week 1",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": 230,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 2",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": 230,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 3",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": 230,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 4",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": 230,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 5",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": 230,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 6",
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-14",
+      "price": 230,
+      "availability": "unknown"
+    }
+  ]
 }

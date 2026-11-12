@@ -15,9 +15,6 @@
     "arts",
     "sports"
   ],
-  "grade_min": 0,
-  "grade_max": 8,
-  "description_short": "City-run full-day summer camps for Cambridge children in Kindergarten through 8th grade, including Community Schools Summer Camps, the King Open Extended Day Summer Program, and Cambridge Youth Programs Pre-Teen / Middle School Summer Programs. Places are filled through a single lottery, and tuition is based on family size and income.",
   "activities": [
     "math",
     "science",
@@ -30,9 +27,15 @@
     "swim instruction (K-5)",
     "waterplay"
   ],
-  "financial_aid": true,
+  "grade_min": 0,
+  "grade_max": 8,
+  "description_short": "City-run full-day summer camps (8:30 a.m. to 5:30 p.m.) for Cambridge residents and City employees' children in Kindergarten through 8th grade, including Community Schools Summer Camps, the King Open Extended Day Summer Program, and Cambridge Youth Programs Pre-Teen / Middle School Summer Programs. Places are filled through a single lottery, and tuition is based on family size and income.",
+  "price_min": 60,
+  "price_max": 600,
+  "price_per": "session",
   "transportation": false,
   "meals_included": true,
+  "financial_aid": true,
   "refund_policy_summary": "A non-refundable tuition deposit is due in June. Other refund terms are not stated. To drop a session, contact DHSP.",
   "special_needs_notes": "Children with IEPs or 504 Plans are encouraged to apply, and having one does not affect lottery chances. DHSP's Inclusion Initiative assesses each child and arranges extra supports where needed. Camp Rainbow, a separate program, serves Cambridge residents with disabilities ages 6-22 and provides transportation.",
   "swim_waterfront_notes": "Campers swim at Cambridge pools staffed by Red Cross-certified lifeguards. Children in K-5 get swim instruction and learn pool safety. There is also waterplay at playgrounds near the camp sites.",
@@ -63,7 +66,7 @@
   "sources": [
     {
       "url": "https://www.cambridgema.gov/services/summercampsandprograms",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -89,6 +92,16 @@
         "sessions"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.cambridgema.gov/-/media/Files/DHSP/Summer/SummerTuition.pdf",
+      "checked": "2026-11-12",
+      "fields": [
+        "price_min",
+        "price_max",
+        "price_per"
+      ],
+      "note": "2026 DHSP Summer Programs Tuition Rates and Scale"
     }
   ],
   "review": {
@@ -123,6 +136,23 @@
         "quote": "activities ranging from math, science, and art to activities that promote physical activity"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.cambridgema.gov/services/summercampsandprograms",
+        "https://www.cambridgema.gov/-/media/Files/DHSP/Summer/SummerTuition.pdf",
+        "https://www.cambridgema.gov/Departments/humanserviceprograms/publicationsandforms/Documents/S/summerlotteryflyer"
+      ],
+      "changes": [
+        "Added 2026 sliding-scale tuition from the 2026 tuition chart: $60 to $600 per two-week session (Sessions 2-4) by household size and income; price_min 60, price_max 600, per session",
+        "Description now gives the hours (8:30 a.m. to 5:30 p.m.) and that only Cambridge residents and City employees can apply",
+        "All other fields checked against the page and match (sessions 2-4, no transportation, snacks and cold lunch provided, IEP/504 support, Red Cross lifeguards); primary_categories (STEM, arts, sports) kept as a fair reading of 'math, science, and art ... physical activity'"
+      ],
+      "open_questions": [
+        "Eligibility is limited to Cambridge residents and City of Cambridge employees, by lottery; Andrew may want that shown on the listing",
+        "2027 lottery details will be announced in February 2027"
+      ]
+    }
   }
 }

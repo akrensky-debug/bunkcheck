@@ -11,11 +11,11 @@
   "zip": "02895",
   "grade_min": 0,
   "grade_max": 8,
-  "description_short": "Connecting for Children & Families, a Woonsocket non-profit, runs three summer camps by grade: Camp Discovery (K-2), Chillin' and Skillin' (3-5) and Get Connected (6-8). The camps run for six weeks, from July through mid-August.",
+  "description_short": "Summer learning camps by grade from Connecting for Children & Families, a Woonsocket non-profit: Camp Discovery (incoming K-2) and Chillin' & Skillin' (grades 3-5) mix theme-based math, literacy and science with arts, games and play; Get Connected (grades 6-8) is a 4-week career exploration camp.",
   "sources": [
     {
       "url": "https://www.ccfcenter.org/summer-camps",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -26,11 +26,29 @@
         "city",
         "state",
         "zip",
+        "camp_type",
         "grade_min",
-        "grade_max",
+        "grade_max"
+      ],
+      "note": "Summer camps overview page"
+    },
+    {
+      "url": "https://www.ccfcenter.org/summer-camps/grades-k-5",
+      "checked": "2026-11-12",
+      "fields": [
+        "primary_categories",
+        "activities",
         "description_short"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Grades K-5 page: Camp Discovery and Chillin' & Skillin', 2026 registration forms (Word files)"
+    },
+    {
+      "url": "https://www.ccfcenter.org/summer-camps/grades-6-thru-8",
+      "checked": "2026-11-12",
+      "fields": [
+        "secondary_categories"
+      ],
+      "note": "Grades 6-8 page: Get Connected 4-week Career Exploration Summer Camp; STEM, art, music; SeaPerch July 13 to 17 at Woonsocket High School"
     }
   ],
   "review": {
@@ -59,10 +77,51 @@
       "Availability"
     ],
     "low_confidence": [],
-    "errors": [
-      "missing required camp_type",
-      "missing required season_year",
-      "camp_type must be one of ['day', 'sleepaway', 'specialty']"
-    ]
-  }
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.ccfcenter.org/summer-camps",
+        "https://www.ccfcenter.org/summer-camps/grades-k-5",
+        "https://www.ccfcenter.org/summer-camps/grades-6-thru-8",
+        "https://www.ccfcenter.org/s/CCF-Camp-Discovery-Registration-Form-2026.docx (fetcher cannot read .docx)"
+      ],
+      "changes": [
+        "Set camp_type day and season_year 2026 (the grade pages link 2026 registration forms).",
+        "Added categories (academic; STEM, arts) and activities from the grade K-5 and 6-8 pages.",
+        "Rewrote description from the grade pages; dropped 'six weeks July through mid-August' because the 6-8 page calls Get Connected a 4-week camp."
+      ],
+      "open_questions": [
+        "No session dates or prices on the pages; they may be in the 2026 registration forms, which are Word files the fetcher cannot read.",
+        "Overview page says camps run six weeks July through mid-August; Grades 6-8 page says Get Connected is 4 weeks.",
+        "No registration_url set: registration is by three downloadable Word forms, one per camp.",
+        "No 2027 information posted."
+      ]
+    }
+  },
+  "camp_type": "day",
+  "season_year": 2026,
+  "primary_categories": [
+    "academic"
+  ],
+  "secondary_categories": [
+    "STEM",
+    "arts"
+  ],
+  "activities": [
+    "Math, literacy and science",
+    "Social/emotional activities",
+    "Music and movement",
+    "Arts and crafts",
+    "Games",
+    "Physical activity",
+    "Water play",
+    "Theater",
+    "Animal science",
+    "Engineering",
+    "Financial education",
+    "Career exploration",
+    "Service learning",
+    "Underwater ROV building (SeaPerch, grades 6-8)"
+  ]
 }

@@ -3,50 +3,81 @@
   "name": "Brittany Harris Gymnastics Camps",
   "operator_name": "Brown University Women's Gymnastics coaching staff",
   "website_url": "https://www.brittanyharrisgymnasticscamps.com/",
-  "registration_url": "https://register.ryzer.com/camp.cfm?sport=16&id=338479",
-  "city": "Providence",
+  "registration_url": "https://register.ryzer.com/camp.cfm?id=327444",
+  "city": "Lincoln",
   "state": "RI",
-  "zip": null,
+  "zip": "02865",
   "camp_type": "specialty",
   "primary_categories": [
     "sports"
   ],
-  "description_short": "Gymnastics camps and clinics in Providence, Rhode Island, run by the Brown University Women's Gymnastics coaching staff. The site lists July and August summer camps and a high-performance clinic.",
+  "description_short": "Two-day commuter gymnastics camps for girls ages 7 to 18, from beginning levels to elite, hosted by the Brown University Women's Gymnastics coaching staff with current Brown gymnasts, held at Ocean State School of Gymnastics in Lincoln, RI.",
   "activities": [
     "Gymnastics"
   ],
-  "price_min": 244,
-  "price_max": 244,
+  "price_min": 323,
+  "price_max": 419,
   "season_year": 2026,
   "sessions": [
     {
-      "name": "November Bears Gymnastics High Performance Clinic",
-      "start_date": "2026-11-01",
-      "end_date": "2026-11-01",
-      "price": 244,
+      "name": "July Bears Gymnastics Summer Camp (day and a half)",
+      "start_date": "2026-07-11",
+      "end_date": "2026-07-12",
+      "price": 323,
+      "availability": "unknown"
+    },
+    {
+      "name": "August Bears Gymnastics Summer Camp",
+      "start_date": "2026-08-01",
+      "end_date": "2026-08-02",
+      "price": 419,
       "availability": "unknown"
     }
   ],
   "sources": [
     {
       "url": "https://www.brittanyharrisgymnasticscamps.com/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
-        "website_url",
+        "website_url"
+      ],
+      "note": "Home page: hosted by the Brown University Women's Gymnastics coaching staff"
+    },
+    {
+      "url": "https://www.brittanyharrisgymnasticscamps.com/july-bears-gymnastics-summer.cfm",
+      "checked": "2026-11-12",
+      "fields": [
         "registration_url",
+        "email",
+        "street_address",
         "city",
         "state",
+        "zip",
+        "gender_policy",
+        "age_min",
+        "age_max",
         "camp_type",
         "primary_categories",
         "activities",
         "description_short",
         "price_min",
-        "price_max",
-        "sessions"
+        "price_per",
+        "meals_included",
+        "refund_policy_summary",
+        "indoor_outdoor"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "July camp page: July 11th & 12th, 2026, $323 ($300 + $23 fees), girls ages 7 to 18, held at Ocean State School of Gymnastics, 3 New England Way, Lincoln, RI 02865, bring a sack lunch"
+    },
+    {
+      "url": "https://www.brittanyharrisgymnasticscamps.com/august-bears-gymnastics-summer.cfm",
+      "checked": "2026-11-12",
+      "fields": [
+        "sessions",
+        "price_max"
+      ],
+      "note": "August camp page: August 1st & 2nd, 2026, $419 ($390 + $29 fees); July session dates from the July camp page"
     }
   ],
   "review": {
@@ -74,25 +105,37 @@
       "Exact address of the facility",
       "Availability / spots remaining"
     ],
-    "low_confidence": [
-      {
-        "field": "season_year",
-        "confidence": 0.6,
-        "quote": "November 1st, 2026"
-      },
-      {
-        "field": "price_min",
-        "confidence": 0.7,
-        "quote": "$244.00"
-      },
-      {
-        "field": "price_max",
-        "confidence": 0.7,
-        "quote": "$244.00"
-      }
-    ],
-    "errors": [
-      "missing required zip"
-    ]
-  }
+    "low_confidence": [],
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.brittanyharrisgymnasticscamps.com/",
+        "https://www.brittanyharrisgymnasticscamps.com/camps.cfm",
+        "https://www.brittanyharrisgymnasticscamps.com/july-bears-gymnastics-summer.cfm",
+        "https://www.brittanyharrisgymnasticscamps.com/august-bears-gymnastics-summer.cfm",
+        "https://www.brittanyharrisgymnasticscamps.com/contact-us.cfm"
+      ],
+      "changes": [
+        "Replaced the one session (November 1 high performance clinic, not a summer camp) with the two 2026 summer camps: July 11 to 12 ($323) and August 1 to 2 ($419); prices include Ryzer fees as the page states them.",
+        "Set location to the camp site the page names: Ocean State School of Gymnastics, 3 New England Way, Lincoln, RI 02865 (was Providence, no ZIP).",
+        "Registration URL now the July summer camp's Ryzer link (was the fall clinic's).",
+        "Added email, girls only, ages 7 to 18, indoor, sack lunch (meals_included false), refund policy; rewrote description from the camp pages.",
+        "Resolved missing zip error and the low-confidence price/season items."
+      ],
+      "open_questions": [
+        "The site's camps list says 'Currently there are no upcoming events'; 2027 dates not posted.",
+        "Slug says providence but the camp is held in Lincoln, RI; slug left unchanged."
+      ]
+    }
+  },
+  "email": "brittanyharris.ent@gmail.com",
+  "street_address": "Ocean State School of Gymnastics, 3 New England Way",
+  "gender_policy": "girls",
+  "age_min": 7,
+  "age_max": 18,
+  "indoor_outdoor": "indoor",
+  "price_per": "session",
+  "meals_included": false,
+  "refund_policy_summary": "No refund unless Registration Protection is bought at registration; $70 administrative fee on all cancellations; no cancellation refunds within 7 days of camp."
 }
