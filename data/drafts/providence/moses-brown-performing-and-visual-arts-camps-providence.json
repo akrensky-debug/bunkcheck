@@ -31,7 +31,7 @@
   "price_per_week": 475,
   "price_min": 250,
   "price_max": 950,
-  "financial_aid": true,
+  "financial_aid": false,
   "extended_care": true,
   "season_year": 2026,
   "price_per": "week",
@@ -110,17 +110,11 @@
   "sources": [
     {
       "url": "https://www.camps.mosesbrown.org/arts",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
-        "operator_name",
         "website_url",
         "registration_url",
-        "email",
-        "phone",
-        "street_address",
-        "city",
-        "state",
         "camp_type",
         "primary_categories",
         "activities",
@@ -133,8 +127,6 @@
         "price_max",
         "price_per_week",
         "price_per",
-        "extended_care",
-        "financial_aid",
         "sessions"
       ],
       "note": "Drafted by the listing tool from this page"
@@ -146,8 +138,42 @@
         "zip"
       ],
       "note": "ZIP from the US Census geocoder for 250 LLOYD AVE, PROVIDENCE, RI, 02906"
+    },
+    {
+      "url": "https://www.camps.mosesbrown.org/",
+      "checked": "2026-11-12",
+      "fields": [
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "operator_name"
+      ]
+    },
+    {
+      "url": "https://www.camps.mosesbrown.org/faanddiscounts",
+      "checked": "2026-11-12",
+      "fields": [
+        "financial_aid"
+      ]
+    },
+    {
+      "url": "https://www.camps.mosesbrown.org/summerextendedaay",
+      "checked": "2026-11-12",
+      "fields": [
+        "extended_care"
+      ]
+    },
+    {
+      "url": "https://www.camps.mosesbrown.org/lunch",
+      "checked": "2026-11-12",
+      "fields": [
+        "meals_included"
+      ]
     }
   ],
+  "meals_included": false,
   "review": {
     "status": "unchecked",
     "source": {
@@ -247,6 +273,28 @@
         "quote": "Weeks: June 15 (no camp June 19) and August 10"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.camps.mosesbrown.org/arts",
+        "https://www.camps.mosesbrown.org/",
+        "https://www.camps.mosesbrown.org/faanddiscounts",
+        "https://www.camps.mosesbrown.org/summerextendedaay",
+        "https://www.camps.mosesbrown.org/lunch",
+        "https://www.camps.mosesbrown.org/cancellationandfees"
+      ],
+      "changes": [
+        "financial_aid: true -> false. The aid page says 'Financial Aid is only available for RISE Camp' and discounts are RISE-only; these are arts camps.",
+        "extended_care: kept true, now sourced to the Early Arrival and Extended Day page ('early arrival (7:30 a.m.) and Extended Day (until 5:30 p.m.) during all camp weeks', $50/$100 weekly).",
+        "meals_included: added false. Lunch page: lunch is included only for RISE; other full-day campers bring lunch or buy a $40/week lunch option.",
+        "Contact, address and operator re-sourced to the camps home page footer, which states them.",
+        "Confirmed every session, price and age/grade range on the arts page; season 2026 confirmed by the home page ('Thank you for a great summer!')."
+      ],
+      "open_questions": [
+        "Cancellation and Fees page is empty; refund policy left blank.",
+        "Art Odyssey June 15 prorated price not stated."
+      ]
+    }
   }
 }

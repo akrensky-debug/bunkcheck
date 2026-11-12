@@ -30,42 +30,42 @@
   "season_year": 2026,
   "sessions": [
     {
-      "name": "Week 1 (Multi-Sports, Flag Football, Boys Baseball, others) – no camp Fri July 3",
+      "name": "Week 1: Multi-Sports, Flag Football, Boys Baseball, Girls Soccer (no camp Fri July 3)",
       "start_date": "2026-06-29",
       "end_date": "2026-07-02",
       "price": null,
       "availability": "unknown"
     },
     {
-      "name": "Week 2 (Multi-Sports, Flag Football, Girls Lacrosse, others)",
+      "name": "Week 2: Multi-Sports, Flag Football, Girls Lacrosse, Boys Soccer",
       "start_date": "2026-07-06",
       "end_date": "2026-07-10",
       "price": null,
       "availability": "unknown"
     },
     {
-      "name": "Week 3 (Multi-Sports, Flag Football, Boys Basketball, others)",
+      "name": "Week 3: Multi-Sports, Flag Football, Boys Basketball, Boys Baseball",
       "start_date": "2026-07-13",
       "end_date": "2026-07-17",
       "price": null,
       "availability": "unknown"
     },
     {
-      "name": "Week 4 (Multi-Sports, Flag Football, Girls Basketball, others)",
+      "name": "Week 4: Multi-Sports, Flag Football, Girls Basketball, Boys Soccer",
       "start_date": "2026-07-20",
       "end_date": "2026-07-24",
       "price": null,
       "availability": "unknown"
     },
     {
-      "name": "Week 5 (Multi-Sports, Flag Football, Boys Basketball, others)",
+      "name": "Week 5: Multi-Sports, Flag Football, Boys Basketball, Girls Soccer",
       "start_date": "2026-07-27",
       "end_date": "2026-07-31",
       "price": null,
       "availability": "unknown"
     },
     {
-      "name": "Week 6 (Multi-Sports, Flag Football, Boys Lacrosse, others)",
+      "name": "Week 6: Multi-Sports, Flag Football, Boys Lacrosse, Girls Basketball",
       "start_date": "2026-08-03",
       "end_date": "2026-08-07",
       "price": null,
@@ -89,7 +89,7 @@
   "sources": [
     {
       "url": "https://www.belmonthill.org/about/summer-programs/sport-camps",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -108,7 +108,8 @@
         "description_short",
         "meals_included",
         "refund_policy_summary",
-        "sessions"
+        "sessions",
+        "registration_url"
       ],
       "note": "Drafted by the listing tool from this page"
     }
@@ -155,6 +156,23 @@
         "quote": "350 Prospect Street Belmont, MA 02478"
       }
     ],
-    "errors": []
-  }
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.belmonthill.org/about/summer-programs/sport-camps",
+        "https://programregistration.veracross.com/App/bhs/ProgramRegistration/sportcamps/Programs/Browse"
+      ],
+      "changes": [
+        "Session names now list every camp each week, read from the schedule table columns (resolves the soccer/basketball column warning)",
+        "Added registration_url (the page's Register Now link to Veracross)",
+        "Street address, city and ZIP confirmed in the page footer (350 Prospect Street Belmont, MA 02478); the page's parking map shows camps on this campus"
+      ],
+      "open_questions": [
+        "No prices on the page; the Veracross catalog says 'Sport Camps browsing was closed September 25, 2026'",
+        "2027 dates and registration opening not posted"
+      ]
+    }
+  },
+  "registration_url": "https://programregistration.veracross.com/App/bhs/ProgramRegistration/sportcamps/Landing/Public"
 }

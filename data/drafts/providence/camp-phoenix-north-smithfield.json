@@ -80,7 +80,7 @@
   "sources": [
     {
       "url": "https://www.campphoenixonline.com/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "website_url",
@@ -96,7 +96,8 @@
         "description_short",
         "price_per_week",
         "price_per",
-        "sessions"
+        "sessions",
+        "primary_categories"
       ],
       "note": "Drafted by the listing tool from this page"
     },
@@ -107,7 +108,19 @@
         "zip"
       ],
       "note": "ZIP from the US Census geocoder for 2214 PROVIDENCE PIKE, NORTH SMITHFIELD, RI, 02896"
+    },
+    {
+      "url": "https://www.campphoenixonline.com/registration-pricing",
+      "checked": "2026-11-12",
+      "fields": [
+        "extended_care"
+      ]
     }
+  ],
+  "extended_care": true,
+  "primary_categories": [
+    "general",
+    "outdoor"
   ],
   "review": {
     "status": "unchecked",
@@ -163,6 +176,21 @@
         "quote": "$220 per week ... Applies when a camper attends 3 or more days during the week."
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.campphoenixonline.com/",
+        "https://www.campphoenixonline.com/registration-pricing"
+      ],
+      "changes": [
+        "extended_care: true. The registration page offers 'Late Night' tiers: Extended Camp (a 5th activity period past dismissal, $20) and Full Late Night until 9:30 PM with dinner ($35).",
+        "primary_categories: added general, outdoor ('unplugged outdoor activities ... freedom to choose their adventures').",
+        "Confirmed 2026 dates (Year 21), $220 weekly rate, phone, address and grades K-7 on the live page; resolved low-confidence items."
+      ],
+      "open_questions": [
+        "No 2027 dates, rates or registration date posted; the site still shows the 2026 season."
+      ]
+    }
   }
 }

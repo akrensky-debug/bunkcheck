@@ -23,7 +23,7 @@
   "sources": [
     {
       "url": "https://franklinma.gov/1158/Summer-Camp",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -71,6 +71,20 @@
       "ACA accreditation"
     ],
     "low_confidence": [],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://franklinma.gov/1158/Summer-Camp"
+      ],
+      "changes": [
+        "No field changes: name, address 740 King Street, email, hours 8:30-3:30, activities, Wednesday field trips and extended care all match the page."
+      ],
+      "open_questions": [
+        "Page now has a '2027 Summer Camp' heading linking to a new MyRec program (ProgramID=29840), while the intro's 'Online Registration site' link still points to ProgramID=29874 (the draft's registration_url). Not changed because the MyRec page could not be opened (Firecrawl credits ran out); Andrew may want to switch registration_url to ProgramID=29840.",
+        "No 2027 week dates or prices on the town page; draft stays on 2026. Weekly fee and overall age range are not stated (field trips split ages 5-7 and 8+).",
+        "Extended care costs $10 per day per child (now stated under the 2027 heading)."
+      ]
+    }
   }
 }

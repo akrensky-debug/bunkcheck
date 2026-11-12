@@ -15,7 +15,7 @@
     "arts",
     "STEM"
   ],
-  "description_short": "Co-ed summer day camp in Plymouth, MA with weekly sessions offering water sports, field sports, rocketry, marine science and arts & crafts. Also runs a separate Little Guppies day camp for younger children, who must be fully potty trained.",
+  "description_short": "Co-ed summer day camp in Plymouth, MA for ages 7 to 14, Monday to Friday 9 AM to 5 PM, with waterfront sports on Great Herring Pond, an indoor heated pool, field sports, rocketry, marine science and arts & crafts. A separate Little Guppies program (ages 4 to 6, 9 AM to 3 PM) is for younger children, who must be fully toilet trained.",
   "activities": [
     "Fishing",
     "Water trampoline",
@@ -41,7 +41,7 @@
   "price_min": 350,
   "price_max": 575,
   "extended_care": true,
-  "swim_waterfront_notes": "Aquatics menu lists swimming, sailing, waterskiing, wakeboarding, tubing, kayaking/canoeing, paddleboarding, a water trampoline and an indoor pool facility. The page does not describe the waterfront, swim testing or lifeguard ratios.",
+  "swim_waterfront_notes": "Waterfront on Great Herring Pond with tubing, wakeboarding, waterskiing, sailing, kayaking, a large water trampoline and a 15-foot iceberg, plus a large indoor heated pool. Little Guppies have swim lessons in the indoor pool. The pages do not describe swim testing or lifeguard ratios.",
   "season_year": 2026,
   "price_per": "week",
   "sessions": [
@@ -147,7 +147,7 @@
   "sources": [
     {
       "url": "https://campbournedale.com/camp_dates_rates/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "website_url",
@@ -158,18 +158,35 @@
         "state",
         "zip",
         "camp_type",
-        "primary_categories",
-        "activities",
-        "description_short",
         "price_min",
         "price_max",
         "price_per_week",
         "price_per",
         "extended_care",
-        "swim_waterfront_notes",
-        "sessions"
+        "sessions",
+        "email"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://campbournedale.com/about-the-camp/summer-day-camp/",
+      "checked": "2026-11-12",
+      "fields": [
+        "age_max",
+        "description_short",
+        "swim_waterfront_notes",
+        "activities",
+        "primary_categories"
+      ],
+      "note": "Co-ed Summer Day Camp page"
+    },
+    {
+      "url": "https://campbournedale.com/littles_campers/",
+      "checked": "2026-11-12",
+      "fields": [
+        "age_min"
+      ],
+      "note": "Little Guppies page (ages 4-6)"
     }
   ],
   "review": {
@@ -259,6 +276,30 @@
         "quote": "WEEK 7:  August 03- August 07  $475"
       }
     ],
-    "errors": []
-  }
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://campbournedale.com/camp_dates_rates/",
+        "https://campbournedale.com/about-the-camp/summer-day-camp/",
+        "https://campbournedale.com/littles_campers/"
+      ],
+      "changes": [
+        "Added email bournedale@comcast.net (shown in the site header)",
+        "Added ages: Co-ed Day Camp ages 7 to 14 (age_max 14), Little Guppies ages 4 to 6 (age_min 4)",
+        "description_short now gives ages and hours (9 AM-5 PM day camp, 9 AM-3 PM Little Guppies)",
+        "swim_waterfront_notes now names Great Herring Pond, the 15-foot iceberg and the indoor heated pool",
+        "Re-sourced activities and primary_categories to the day camp page, which lists them; confirmed all 2026 session dates and prices on Dates & Rates (resolves low-confidence items)",
+        "extended_care true confirmed: early drop off at 8 AM and late pick up by 6 PM, $75 per week each"
+      ],
+      "open_questions": [
+        "Only 2026 dates and prices posted; no 2027 information yet",
+        "Page states two payment deadlines (10 days and 1 week before arrival)",
+        "No refund policy, deposit or financial aid information"
+      ]
+    }
+  },
+  "email": "bournedale@comcast.net",
+  "age_min": 4,
+  "age_max": 14
 }

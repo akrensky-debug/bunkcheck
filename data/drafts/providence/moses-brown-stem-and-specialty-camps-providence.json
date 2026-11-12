@@ -269,7 +269,7 @@
   "sources": [
     {
       "url": "https://www.camps.mosesbrown.org/stemandspecialty",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -358,6 +358,21 @@
         "quote": "Financial Aid and Camp Discounts"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.camps.mosesbrown.org/stemandspecialty"
+      ],
+      "changes": [
+        "No changes: all 11 programs, grades/ages, prices, weeks, waitlist notes, address, email, phone and registration link match the STEM and Specialty page on 2026-11-12. Page still shows the 2026 season with no year; no 2027 dates posted."
+      ],
+      "open_questions": [
+        "Session years are inferred as 2026 (\"June 15 (no camp June 19)\" fits 2026); the page itself shows no year.",
+        "Culinary Camp price is not shown.",
+        "Lunch, extended-day cost and cancellation policy are on separate pages that could not be fetched (Firecrawl credits ran out mid-check).",
+        "Page footer shows an ACA accreditation logo image only; aca_accredited left blank."
+      ]
+    }
   }
 }

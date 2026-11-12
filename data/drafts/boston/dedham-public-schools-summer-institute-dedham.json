@@ -107,7 +107,7 @@
   "sources": [
     {
       "url": "https://www.dedham.k12.ma.us/70469_4",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -198,6 +198,20 @@
         "quote": "Update: February 4, 2026 - 5:15pm. ... Currently all 1800+ program slots are full!"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.dedham.k12.ma.us/70469_4"
+      ],
+      "changes": [
+        "No field changes: every filled field matches the page (K-5, Dedham residents, morning 8:30-11:30 and afternoon 12:00-3:00 sessions, 5 weeks from June 29, $80 Week 1 / $135 Weeks 2-5 per session, lunch for full-day students, no transportation, no before/after care, change-free until April 16, invoices May 15)",
+        "Low-confidence items resolved: phone is the district number shown in the page footer; meals_included true per 'Students enrolled for a full day ... will have lunch provided by DPS Food Services' (full-day only); 'full' availability is the page's February 4, 2026 update",
+        "Kept 2026 season: nothing posted for 2027"
+      ],
+      "open_questions": [
+        "Open to Dedham residents only; meals only for children booked into both sessions of a day"
+      ]
+    }
   }
 }

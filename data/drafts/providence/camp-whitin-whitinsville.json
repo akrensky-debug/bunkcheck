@@ -16,12 +16,12 @@
   ],
   "age_min": 4,
   "age_max": 13,
-  "description_short": "Weekly co-ed day camps run by the Whitin Community Center in Whitinsville, MA. Children ages 7-13 choose sport or activity camps with daily swimming, and children ages 4-6 attend Mini camps. Camp runs 9:00am-3:00pm, Monday-Friday.",
+  "description_short": "Weekly co-ed day camps run by the Whitin Community Center in Whitinsville, MA, for ages 4-13. Children ages 7-13 choose a sport or activity camp with daily swimming in the WCC pool, and children ages 4-6 attend Mini camps. Camp runs 9:00am-3:00pm, Monday-Friday, with time outdoors in the 7.5-acre Whitin Park.",
   "activities": [
     "Sports",
+    "Activity camps",
     "Swimming",
     "Outdoor activities in Whitin Park",
-    "Educational activities",
     "Crafts and games (extended care)"
   ],
   "financial_aid": true,
@@ -31,7 +31,7 @@
   "sources": [
     {
       "url": "https://www.whitincommunitycenter.com/our-community/camp-whitin/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -54,6 +54,19 @@
         "swim_waterfront_notes"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.whitincommunitycenter.com/wp-content/uploads/2026/03/CampWhitin2026FINAL.pdf",
+      "checked": "2026-11-12",
+      "fields": [
+        "sessions",
+        "price_min",
+        "price_max",
+        "price_per",
+        "meals_included",
+        "refund_policy_summary"
+      ],
+      "note": "2026 brochure linked from the camp page: week themes, fees ($231 member / $305 guest before May 1; $261 / $335 after; extended care $92 / $116), deposit and refund policy, 'bring a snack, a bag lunch every day'."
     }
   ],
   "review": {
@@ -96,6 +109,97 @@
         "quote": "Each day will include a new craft, game, and physical activity"
       }
     ],
-    "errors": []
-  }
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.whitincommunitycenter.com/our-community/camp-whitin/",
+        "https://www.whitincommunitycenter.com/wp-content/uploads/2026/03/CampWhitin2026FINAL.pdf"
+      ],
+      "changes": [
+        "Added the 9 weekly 2026 sessions (June 22-Aug 21) from the 2026 brochure, with the sport/activity and Mini themes per week.",
+        "Added price_min 231, price_max 335, price_per week (member early-bird to guest regular rate).",
+        "Added meals_included false (brochure: campers bring a snack and a bag lunch every day; pizza is free on Fridays).",
+        "Added refund_policy_summary from the brochure.",
+        "description_short: said ages 4-13 explicitly and added Whitin Park; activities: replaced 'Educational activities' with 'Activity camps' (the page's camp category name).",
+        "Ages 4-13 kept: the intro says 4-13, Mini camps are 4-6 and Sport/Activity 7-13 (the 'Goals' line about 7-13 refers to Sport/Activity).",
+        "registration_url confirmed: the Daxko 'Programs' link is the site's online registration link in the page header; the brochure says 'Please Register Online'."
+      ],
+      "open_questions": [
+        "2027 dates and fees are not posted; 2026 season stays.",
+        "Scholarship application on the page is still the 2025 form.",
+        "Session price left blank because each week has member/guest and early-bird/regular rates."
+      ]
+    }
+  },
+  "sessions": [
+    {
+      "name": "Week 1: Color Wars / Makers & Masterpieces (ages 7-13); Mini: Under Construction (ages 4-6)",
+      "start_date": "2026-06-22",
+      "end_date": "2026-06-26",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 2: World Cup / Happy Birthday USA (ages 7-13); Mini: 3, 2, 1 Liftoff! (ages 4-6)",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-03",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 3: Splash Zone / Melody Makers (ages 7-13); Mini: Under The Sea (ages 4-6)",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 4: Dodge This! / Whitin Carnival (ages 7-13); Mini: Hero Academy (ages 4-6)",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 5: Camp Whitin Olympics / Secret Agent Week (ages 7-13); Mini: Wild, Wild, West (ages 4-6)",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 6: Home Run / Return To Hogwarts (ages 7-13); Mini: Jungle Safari (ages 4-6)",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 7: Camp Combine / Creative Engineering Lab (ages 7-13); Mini: Disney Dreamers (ages 4-6)",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 8: Full Court Press / Video Creators' Studio (ages 7-13); Mini: Silly Wacky Week (ages 4-6)",
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-14",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 9: Camp Favorites / Jedi Academy (ages 7-13); Mini: Prehistoric Discovery (ages 4-6)",
+      "start_date": "2026-08-17",
+      "end_date": "2026-08-21",
+      "price": null,
+      "availability": "unknown"
+    }
+  ],
+  "price_min": 231,
+  "price_max": 335,
+  "price_per": "week",
+  "meals_included": false,
+  "refund_policy_summary": "A $50 non-refundable deposit per camp week holds a space. Cancel by May 1 for a full refund minus the $50 deposit per week and a $25 processing fee; after that, a 75% refund (minus the same) only for a documented medical reason with at least 1 day's notice. Deposits are never refunded."
 }

@@ -13,21 +13,21 @@
   "financial_aid": true,
   "extended_care": true,
   "transportation": true,
-  "refund_policy_summary": "After May 31, a $25 change fee applies to any registration change, including changing weeks, cancelling, or switching camps. Change requests must be submitted at least two full weeks before the affected camp week. Deposits can be moved to other weeks. Downgrades and cancellations are handled manually by the Camp Registrar, not through the online account.",
+  "refund_policy_summary": "To cancel a week, notify the Camp Registrar at least two weeks ahead, before that week's payment is drafted. After May 31 a $25 change fee applies to any change (weeks, camps, added care). Deposits move to other weeks. A $25 Camp Improvement Fee is non-refundable; Specialty Camps take a $100 non-refundable deposit.",
   "season_year": 2026,
   "sessions": [
     {
-      "name": "Summer 2026 camp season (2, 3, or 5 days/week)",
+      "name": "Summer 2026 traditional camp (2, 3 or 5 days a week)",
       "start_date": "2026-06-01",
       "end_date": "2026-08-28",
-      "price": null,
+      "price": 345,
       "availability": "unknown"
     }
   ],
   "sources": [
     {
       "url": "https://www.attleboroymca.org/camps/camp-finberg",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -40,12 +40,38 @@
         "camp_type",
         "description_short",
         "extended_care",
-        "transportation",
-        "financial_aid",
-        "refund_policy_summary",
-        "sessions"
+        "sessions",
+        "email",
+        "financial_aid"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.attleboroymca.org/sites/default/files/2026-04/YCampGuide.2026.FINAL_.v2.pdf%20%28Booklet%20%28US%20Letter%29%29%20%281%29.pdf",
+      "checked": "2026-11-12",
+      "fields": [
+        "grade_min",
+        "grade_max",
+        "price_min",
+        "price_max",
+        "price_per_week",
+        "price_per",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "swim_waterfront_notes",
+        "special_needs_notes",
+        "transportation"
+      ],
+      "note": "2026 Camp Guide PDF linked from the camp page"
+    },
+    {
+      "url": "https://www.attleboroymca.org/sites/default/files/2025-12/2026-Camp-Finberg-Payments-and-Policies.pdf",
+      "checked": "2026-11-12",
+      "fields": [
+        "refund_policy_summary"
+      ],
+      "note": "2026 Camp & Payment Policy Highlights PDF linked from the camp page"
     }
   ],
   "review": {
@@ -88,6 +114,61 @@
         "quote": "Deposits are transferable to other weeks."
       }
     ],
-    "errors": []
-  }
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.attleboroymca.org/camps/camp-finberg",
+        "https://www.attleboroymca.org/sites/default/files/2026-04/YCampGuide.2026.FINAL_.v2.pdf%20%28Booklet%20%28US%20Letter%29%29%20%281%29.pdf",
+        "https://www.attleboroymca.org/sites/default/files/2025-12/2026-Camp-Finberg-Payments-and-Policies.pdf"
+      ],
+      "changes": [
+        "Added email campadmin@attleboroymca.org (now shown on the page).",
+        "Added grades 2-8 (Flyers entering grade 2 to Big Cats entering grades 7-8) from the 2026 Camp Guide.",
+        "Added prices from the guide: $285 member / $345 non-member a week, specialty camps $300/$360; price_min 285, price_max 360, price_per_week 345.",
+        "Added categories, activities, swim and inclusion notes from the guide.",
+        "Transportation confirmed by the guide (bus $25 a week per camper); source moved to the guide.",
+        "Refund summary rewritten from the policy PDF (two weeks' notice to cancel, $25 change fee after May 31, non-refundable fees).",
+        "Session price set to $345 (non-member full week)."
+      ],
+      "open_questions": [
+        "No 2027 dates, prices or registration opening posted; stays on 2026.",
+        "Guide lists a 'Kinder Camp' row in the weekly themes but gives no ages or details for it.",
+        "Guide gives bus weeks inconsistently (10 weeks June 22-Aug 22 in one place, 9 weeks June 29-Aug 21 in another)."
+      ]
+    }
+  },
+  "email": "campadmin@attleboroymca.org",
+  "grade_min": 2,
+  "grade_max": 8,
+  "price_min": 285,
+  "price_max": 360,
+  "price_per_week": 345,
+  "price_per": "week",
+  "primary_categories": [
+    "general",
+    "outdoor",
+    "sports"
+  ],
+  "secondary_categories": [
+    "arts",
+    "STEM",
+    "swimming"
+  ],
+  "activities": [
+    "recreational swim",
+    "splash pad",
+    "archery",
+    "ropes challenge course",
+    "STEM",
+    "arts",
+    "sports and active games",
+    "hikes and nature",
+    "theater",
+    "soccer",
+    "flag football",
+    "basketball"
+  ],
+  "swim_waterfront_notes": "Outdoor eight-lane pool with a three-foot entry area and a zero-depth splash pad; recreational swim on most days, supervised by lifeguards and counselors, with a swim check before swimming without flotation or in deeper water. Express Swim Lessons cost extra.",
+  "special_needs_notes": "Children with developmental and behavioral needs are integrated into regular groups of 10. No 1:1 support, but staff check in and give extra support; ABAs may accompany campers after a background check."
 }

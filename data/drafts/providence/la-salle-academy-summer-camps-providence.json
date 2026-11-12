@@ -125,7 +125,7 @@
   "sources": [
     {
       "url": "https://www.lasalle-academy.org/campus-life/summer-camps",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -186,6 +186,19 @@
         "quote": "COST \n$225"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.lasalle-academy.org/campus-life/summer-camps"
+      ],
+      "changes": [
+        "No field changes. Every session date and price, grades, contact (Abel Poirier, 401-351-7750 Ext 152), address and the bring-your-own-lunch note match the live page; volleyball $225 confirmed."
+      ],
+      "open_questions": [
+        "Page still shows summer 2026 only; no 2027 camps or registration date posted.",
+        "Girls Basketball Clinic and SAT Prep show no price on the page."
+      ]
+    }
   }
 }

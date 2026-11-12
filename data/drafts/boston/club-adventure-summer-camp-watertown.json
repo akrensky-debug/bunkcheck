@@ -12,8 +12,17 @@
   "camp_type": "day",
   "age_min": 7,
   "age_max": 12,
-  "description_short": "Weekly day camp at the Watertown Boys & Girls Club for ages 7-12, running 8:00 AM-4:00 PM with optional extended day until 5:30 PM. Some weeks include a full-camp field trip, and campers need an active WBGC membership ($25) to register.",
+  "description_short": "Weekly day camp at the Watertown Boys & Girls Club for ages 7-12, running 8:00 AM-4:00 PM with optional extended day until 5:30 PM. Days mix gym and outdoor games, swim lessons and free swim, STEM projects, arts and crafts and team building, and four weeks include a full-camp field trip. Campers need an active WBGC membership ($25) to register.",
   "activities": [
+    "Gym games",
+    "Outdoor games",
+    "Swim lessons (three times per week)",
+    "Free swim",
+    "Arts & crafts",
+    "STEM projects",
+    "Team building",
+    "Sports",
+    "Trivia",
     "Field trips (Tree Top Adventures, Boston Adventure, XtremeCraze, Water Wizz)",
     "Optional age-group mini-trips (extra cost)"
   ],
@@ -22,7 +31,7 @@
   "price_max": 330,
   "financial_aid": true,
   "extended_care": true,
-  "refund_policy_summary": "If not paying in full when registering, a $75 non-refundable deposit per child per week is required. The balance is due by June 1 for Weeks 1-5 and by July 1 for Weeks 6-11. No other refund terms are stated on the page.",
+  "refund_policy_summary": "A $75 non-refundable deposit per child per week is required if not paying in full at registration. Balances are due June 1 for June/July weeks and July 1 for August weeks. A cancellation made less than one week ahead forfeits the whole week's fee, and campers suspended for behavior get no refund. The $25 membership fee is non-refundable.",
   "season_year": 2026,
   "price_per": "week",
   "sessions": [
@@ -107,7 +116,7 @@
   "sources": [
     {
       "url": "https://watertownbgc.org/wbgc-programs/summer/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -119,20 +128,31 @@
         "state",
         "zip",
         "camp_type",
-        "activities",
         "age_min",
         "age_max",
-        "description_short",
         "price_min",
         "price_max",
         "price_per_week",
         "price_per",
         "extended_care",
         "financial_aid",
-        "refund_policy_summary",
-        "sessions"
+        "sessions",
+        "registration_url"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://watertownbgc.org/wp-content/uploads/2026/03/2026-Club-Adventure-brochure-3.17.26.pdf",
+      "checked": "2026-11-12",
+      "fields": [
+        "description_short",
+        "activities",
+        "primary_categories",
+        "meals_included",
+        "swim_waterfront_notes",
+        "special_needs_notes",
+        "refund_policy_summary"
+      ]
     }
   ],
   "review": {
@@ -234,6 +254,31 @@
         "quote": "Week 11: August 31 – September 4, 2026"
       }
     ],
-    "errors": []
-  }
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://watertownbgc.org/wbgc-programs/summer/",
+        "https://watertownbgc.org/wp-content/uploads/2026/03/2026-Club-Adventure-brochure-3.17.26.pdf"
+      ],
+      "changes": [
+        "Added registration_url (the page's TRAX 'Camper Registration' link)",
+        "Read the linked 2026 brochure PDF: added activities (gym and outdoor games, swim lessons 3x/week, free swim, STEM, arts & crafts, team building, sports), primary_categories general, meals_included false ('Campers should bring bagged lunch'), swim and special-needs notes, and the one-week cancellation rule to the refund summary",
+        "Description now names the daily activities from the brochure",
+        "Confirmed every 2026 week date and price, ages 7-12, hours, extended-day rates, $25 membership and $75 deposit on the page; low-confidence items resolved",
+        "Kept 2026 season: nothing posted for 2027"
+      ],
+      "open_questions": [
+        "Balance due dates differ: the page says Weeks 1-5 by June 1 and Weeks 6-11 by July 1; the brochure says Weeks 1-6 and 7-11 (and 'June/July' vs 'August' weeks elsewhere)",
+        "The brochure's financial-aid deadline reads 'May 1, 2025' (likely a stale year)"
+      ]
+    }
+  },
+  "registration_url": "https://online.traxsolutions.com/watertown/main#/activities/groups/75",
+  "primary_categories": [
+    "general"
+  ],
+  "meals_included": false,
+  "swim_waterfront_notes": "Swim lessons three times per week and a daily free swim period at the Club pool, per the sample schedule. Swimmers bring their own goggles. The brochure gives no detail on swim testing.",
+  "special_needs_notes": "The Club cannot provide 1-to-1 care or supervision; families of children with specialized care or supervision needs are asked to contact the Club before enrolling."
 }

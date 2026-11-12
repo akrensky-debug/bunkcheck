@@ -177,7 +177,7 @@
   "sources": [
     {
       "url": "http://www.ebgym.com/summer-camp",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -238,6 +238,21 @@
         "quote": "Kinder Campers must be 4.5-5.5 years old"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "http://www.ebgym.com/summer-camp"
+      ],
+      "changes": [
+        "None: name, operator, email, registration link, ages, description, activities, deposit/refund terms, potty-training note and the seven 2026 weeks all match the page; season 2026 confirmed ('2026 Summer Camps & Classes!')"
+      ],
+      "open_questions": [
+        "2027 dates, tuition and registration opening not posted",
+        "Weekly tuition is only in the JackRabbit registration grid, which did not render in the fetch",
+        "Phone (401) 253-1267 and 54 Gooding Ave were not in the main page content I captured (site header/footer not checked before the fetch tool ran out of credits); recheck on the Contact page",
+        "Age range recorded as 4-12 because Kinder Camp takes ages 4.5-5.5"
+      ]
+    }
   }
 }

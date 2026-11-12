@@ -2,7 +2,7 @@
   "slug": "summer-at-jwu-summer-cooking-camps-for-kids-and-teens-providence-providence",
   "name": "Summer at JWU – Summer Cooking Camps for Kids and Teens (Providence)",
   "operator_name": "Johnson & Wales University – College of Food Innovation & Technology (CFIT)",
-  "website_url": "https://inquire.jwu.edu/admissions/welcome/summer-at-jwu/providence.html",
+  "website_url": "https://www.jwu.edu/about/community-offerings/providence-kitchen-academy/",
   "phone": "401-598-4598",
   "street_address": "8 Abbott Park Place",
   "city": "Providence",
@@ -11,75 +11,49 @@
   "camp_type": "specialty",
   "age_min": 8,
   "age_max": 17,
-  "description_short": "Week-long cooking day camps at Johnson & Wales University's Providence campus, taught by College of Food Innovation & Technology instructors. There is a kids camp for ages 8-12 and a teens camp for ages 13-17. Both cover culinary and baking/pastry work and run 8:30am-4pm.",
+  "description_short": "Five-day cooking day camps (8:30am-4pm) at Johnson & Wales University's Providence Kitchen Academy, taught by College of Food Innovation & Technology instructors. Kids camp (ages 8-12, $600) works in groups on culinary and pastry activities; teens camp (ages 13-17, $700) covers regional and global dishes and baking & pastry.",
   "activities": [
-    "Culinary demonstrations",
+    "Culinary activities",
+    "Pastry activities",
     "Regional and global cuisine cooking",
-    "Baking and pastry",
-    "Group cooking projects"
+    "Baking and pastry"
   ],
   "price_min": 600,
   "price_max": 700,
-  "meals_included": true,
-  "refund_policy_summary": "Payments are nonrefundable unless JWU gets written notice of cancellation at least 30 days ahead. If JWU cancels a camp (health/safety reasons or low enrollment), it refunds the cancelled portion on a pro-rated basis.",
-  "season_year": 2025,
-  "sessions": [
-    {
-      "name": "Summer Cooking Camp for Kids – Week 1",
-      "start_date": "2025-07-21",
-      "end_date": "2025-07-25",
-      "price": 600,
-      "availability": "full"
-    },
-    {
-      "name": "Summer Cooking Camp for Kids – Week 2",
-      "start_date": "2025-07-28",
-      "end_date": "2025-08-01",
-      "price": 600,
-      "availability": "full"
-    },
-    {
-      "name": "Summer Cooking Camp for Teens – Week 1",
-      "start_date": "2025-07-21",
-      "end_date": "2025-07-25",
-      "price": 700,
-      "availability": "full"
-    },
-    {
-      "name": "Summer Cooking Camp for Teens – Week 2",
-      "start_date": "2025-07-28",
-      "end_date": "2025-08-01",
-      "price": 700,
-      "availability": "full"
-    }
-  ],
+  "refund_policy_summary": "Camp payments are nonrefundable within 30 days of the first camp day; cancellation notice must be in writing. If JWU cancels a camp, it refunds the cancelled portion to the original form of payment.",
+  "season_year": 2027,
   "sources": [
     {
-      "url": "https://inquire.jwu.edu/admissions/welcome/summer-at-jwu/providence.html",
-      "checked": "2026-10-13",
+      "url": "https://www.jwu.edu/about/community-offerings/providence-kitchen-academy/",
+      "checked": "2026-11-12",
       "fields": [
+        "website_url",
         "name",
         "operator_name",
-        "website_url",
         "phone",
+        "email",
+        "camp_type",
+        "age_min",
+        "age_max",
+        "price_min",
+        "price_max",
+        "description_short",
+        "activities",
+        "refund_policy_summary"
+      ]
+    },
+    {
+      "url": "https://www.jwu.edu/",
+      "checked": "2026-11-12",
+      "fields": [
         "street_address",
         "city",
         "state",
-        "zip",
-        "camp_type",
-        "activities",
-        "age_min",
-        "age_max",
-        "description_short",
-        "price_min",
-        "price_max",
-        "meals_included",
-        "refund_policy_summary",
-        "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+        "zip"
+      ]
     }
   ],
+  "email": "CFITKitchenAcademy@jwu.edu",
   "review": {
     "status": "unchecked",
     "source": {
@@ -114,6 +88,29 @@
         "quote": "8 Abbott Park Place, Providence, RI 02903"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://inquire.jwu.edu/admissions/welcome/summer-at-jwu/providence.html (now redirects to https://www.jwu.edu/)",
+        "https://www.jwu.edu/about/community-offerings/providence-kitchen-academy/",
+        "https://www.jwu.edu/"
+      ],
+      "changes": [
+        "The draft's source page is gone (redirects to the JWU home page). The camps now live on JWU's Kitchen Academy page; website_url and every source row moved there.",
+        "Removed the four 2025 sessions; the current page lists no dated sessions ('Classes will be announced in early 2027').",
+        "season_year 2025 -> 2027: the page shows current prices ($600 kids, $700 teens) with 'Classes will be announced in early 2027'.",
+        "email: added CFITKitchenAcademy@jwu.edu.",
+        "refund_policy_summary rewritten to the page's camp policy.",
+        "description and activities rewritten to the new page's wording.",
+        "meals_included removed: the new page does not mention meals (a search excerpt of JWU's enroll portal says lunch and snack are included, but that page was not opened).",
+        "Address sourced to the jwu.edu footer ('8 Abbott Park Place, Providence, RI 02903'); the page does not say the camp is held there."
+      ],
+      "open_questions": [
+        "No 2027 camp dates yet; listing has prices but no sessions.",
+        "Is season_year 2027 right for a listing with prices but no dates? Kept 2027 because the page announces 2027 classes.",
+        "meals_included: check enroll.jwu.edu/portal/pvd_kids_cul (not opened; Firecrawl credits ran out). The teen portal excerpt says ages 13-16, the main page says 13-17."
+      ]
+    }
   }
 }

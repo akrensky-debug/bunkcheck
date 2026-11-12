@@ -15,7 +15,7 @@
     "nature",
     "performing_arts"
   ],
-  "description_short": "A day camp on 250 acres in Franklin, MA, with forest trails, fields, a stream and a pond. Activities include archery, boating, swimming, arts and crafts, ceramics, music, theater, woodworking and woodlore, and campers do not use cell phones or gaming devices.",
+  "description_short": "A day camp on 250 acres in Franklin, MA, with forest trails, fields, a stream, a pond and two pools, for children from entering kindergarten through grade 6. Camp runs 9 a.m. to 4 p.m. in two-week sessions, with archery, boating, Red Cross swimming, arts and crafts, ceramics, music, theater, woodworking and woodlore, and no cell phones or gaming devices.",
   "activities": [
     "Adventure",
     "Archery",
@@ -32,12 +32,12 @@
     "Woodlore",
     "Woodworking"
   ],
-  "swim_waterfront_notes": "The site has a natural stream and pond, and lists Swimming and Boating as activities. It does not say where swimming takes place or describe lifeguarding or swim levels.",
+  "swim_waterfront_notes": "The camp has two inground swimming pools for its Red Cross swim program; Jr. Camp swimming lessons are taught by Red Cross accredited instructors. There is also a pond and a natural stream, and boating is an activity.",
   "season_year": 2027,
   "sources": [
     {
       "url": "https://www.franklincountrydaycamp.com/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "website_url",
@@ -49,11 +49,23 @@
         "zip",
         "camp_type",
         "primary_categories",
-        "activities",
-        "description_short",
-        "swim_waterfront_notes"
+        "activities"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.franklincountrydaycamp.com/about/",
+      "checked": "2026-11-12",
+      "fields": [
+        "age_min",
+        "age_max",
+        "grade_max",
+        "meals_included",
+        "swim_waterfront_notes",
+        "description_short",
+        "sessions"
+      ],
+      "note": "About page: 2027 session dates, ages, hours, lunch, pools"
     }
   ],
   "review": {
@@ -101,6 +113,54 @@
         "quote": "a natural stream and pond"
       }
     ],
-    "errors": []
-  }
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.franklincountrydaycamp.com/",
+        "https://www.franklincountrydaycamp.com/about/",
+        "https://www.franklincountrydaycamp.com/junior-camp/",
+        "https://www.franklincountrydaycamp.com/wp-content/uploads/2026/01/Franklin-Country-Day-Camp-2026-Brochure.pdf"
+      ],
+      "changes": [
+        "Added the three 2027 two-week sessions (Jul 5-16, Jul 19-30, Aug 2-13, 2027) from the About page; season_year stays 2027. No 2027 price is posted (2026 brochure: $1,250 per session), so prices stay blank.",
+        "Added ages 4-12 and grade_max 6 from the About page table (Jr. Camp I 4-5, Jr. Camp II 5-6, Regular Camp 6-12, grades 1-6).",
+        "Set meals_included=false: \"Children bring their own lunch.\"",
+        "Rewrote swim_waterfront_notes: two inground pools for the Red Cross swim program (the old note said the site did not say where swimming happens).",
+        "Updated description_short to add the pools, ages and 9-4 hours."
+      ],
+      "open_questions": [
+        "2027 prices not posted yet (2026 was $1,250 per camper per two-week session).",
+        "No registration URL beyond the Regpack account login.",
+        "Extended care, transportation, financial aid not mentioned."
+      ]
+    }
+  },
+  "age_min": 4,
+  "age_max": 12,
+  "grade_max": 6,
+  "meals_included": false,
+  "sessions": [
+    {
+      "name": "First session",
+      "start_date": "2027-07-05",
+      "end_date": "2027-07-16",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Second session",
+      "start_date": "2027-07-19",
+      "end_date": "2027-07-30",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Third session",
+      "start_date": "2027-08-02",
+      "end_date": "2027-08-13",
+      "price": null,
+      "availability": "unknown"
+    }
+  ]
 }

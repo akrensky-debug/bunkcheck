@@ -28,7 +28,7 @@
   "price_max": 360,
   "extended_care": true,
   "transportation": true,
-  "refund_policy_summary": "A $100 per-week deposit is due at registration and cannot be refunded. The page gives no other refund terms.",
+  "refund_policy_summary": "Specialty camps take a $100 non-refundable deposit per week at registration. If you cancel a week, the deposit goes toward any other camp balance or is forfeited if there is none. Cancellations need two weeks' notice, and after May 31 changes cost $25.",
   "season_year": 2026,
   "sessions": [
     {
@@ -67,10 +67,13 @@
       "availability": "unknown"
     }
   ],
+  "email": "campadmin@attleboroymca.org",
+  "price_per": "week",
+  "financial_aid": true,
   "sources": [
     {
       "url": "https://www.attleboroymca.org/art-camp",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -90,10 +93,33 @@
         "price_max",
         "extended_care",
         "transportation",
-        "refund_policy_summary",
-        "sessions"
+        "email",
+        "price_per"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.attleboroymca.org/sites/default/files/2026-04/YCampGuide.2026.FINAL_.v2.pdf%20%28Booklet%20%28US%20Letter%29%29%20%281%29.pdf",
+      "checked": "2026-11-12",
+      "fields": [
+        "sessions"
+      ],
+      "note": "2026 YMCA Camp Guide: Theater In The Woods July 13-17 and August 3-7; Art Camp July 6-10, July 27-31 and August 10-14; Camp Finberg runs June 1-August 28 (2026)."
+    },
+    {
+      "url": "https://www.attleboroymca.org/camps/camp-finberg",
+      "checked": "2026-11-12",
+      "fields": [
+        "financial_aid"
+      ],
+      "note": "Camp Finberg page: 2026 Financial Aid Form; camp runs June 1, 2026 - August 28, 2026."
+    },
+    {
+      "url": "https://www.attleboroymca.org/sites/default/files/2025-12/2026-Camp-Finberg-Payments-and-Policies.pdf",
+      "checked": "2026-11-12",
+      "fields": [
+        "refund_policy_summary"
+      ]
     }
   ],
   "review": {
@@ -167,6 +193,28 @@
         "quote": "August 10 – 14"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.attleboroymca.org/art-camp",
+        "https://www.attleboroymca.org/camps/camp-finberg",
+        "https://www.attleboroymca.org/sites/default/files/2026-04/YCampGuide.2026.FINAL_.v2.pdf%20%28Booklet%20%28US%20Letter%29%29%20%281%29.pdf",
+        "https://www.attleboroymca.org/sites/default/files/2025-12/2026-Camp-Finberg-Payments-and-Policies.pdf",
+        "https://operations.daxko.com/Online/4068/ProgramsV2/Search.mvc?keywords=theater"
+      ],
+      "changes": [
+        "Added email campadmin@attleboroymca.org (now shown on the page)",
+        "Set price_per to week: the page heads the $300 member / $360 non-member fee 'Specialty Camp Weekly Fee'",
+        "Season 2026 confirmed: the 2026 Camp Guide lists the same weeks and Camp Finberg runs June 1-August 28, 2026; sessions now sourced to the guide",
+        "Added financial_aid true (2026 Financial Aid Form on the Camp Finberg page)",
+        "Rewrote refund_policy_summary from the 2026 payment policies PDF: the $100 deposit is applied to the camp balance, or forfeited; two weeks' notice; $25 change fee after May 31"
+      ],
+      "open_questions": [
+        "2027 dates and prices not posted yet",
+        "Whether the $300/$360 weekly fee includes the $100 deposit; the policy says the deposit is applied toward the balance, which suggests yes",
+        "Registration links on the page (Daxko search) return no programs now"
+      ]
+    }
   }
 }

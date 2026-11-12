@@ -3,7 +3,7 @@
   "name": "Camp Satucket",
   "operator_name": "Old Colony YMCA",
   "website_url": "https://www.oldcolonyymca.org/child-care-camps/camps/camp-satucket",
-  "registration_url": "https://oldcolonyymca.my.site.com/s/registration",
+  "registration_url": "https://oldcolonyymca.my.site.com/s/registration?program=Camp%20Satucket",
   "phone": "508-378-3913",
   "street_address": "635 Plymouth St",
   "city": "East Bridgewater",
@@ -33,7 +33,7 @@
     "Family fun nights"
   ],
   "price_min": 345,
-  "price_max": 415,
+  "price_max": null,
   "financial_aid": true,
   "transportation": true,
   "meals_included": false,
@@ -114,12 +114,11 @@
   "sources": [
     {
       "url": "https://www.oldcolonyymca.org/child-care-camps/camps/camp-satucket",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
         "website_url",
-        "registration_url",
         "phone",
         "street_address",
         "city",
@@ -130,12 +129,14 @@
         "activities",
         "description_short",
         "price_min",
-        "price_max",
         "transportation",
         "meals_included",
         "financial_aid",
         "swim_waterfront_notes",
-        "sessions"
+        "sessions",
+        "registration_url",
+        "price_per_week",
+        "price_per"
       ],
       "note": "Drafted by the listing tool from this page"
     }
@@ -204,6 +205,25 @@
         "quote": "WEEK 11: 8/24 - 8/28* - Added fun!"
       }
     ],
-    "errors": []
-  }
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.oldcolonyymca.org/child-care-camps/camps/camp-satucket"
+      ],
+      "changes": [
+        "registration_url now the page's camp-specific Register Online link (?program=Camp%20Satucket)",
+        "Removed price_max 415: it is the non-member 'as low as' weekly rate, not a ceiling. Set price_per_week 345 and price_per week (member 'as low as' rate), matching Camp Christina",
+        "Season year 2026 confirmed: the page embeds the 'CAMP SATUCKET FAMILY HANDBOOK SUMMER 2026' and 'Camp 2026 Theme Calendar'",
+        "meals_included false confirmed ('Non-perishable bag lunch' in the packing list); camp_type day confirmed (weekly day schedule, bus routes)"
+      ],
+      "open_questions": [
+        "Camper age range not stated (only archery 'Ages 5 & up')",
+        "Before and after care are mentioned only as occasional extra-cost services; extended_care left empty",
+        "2027 weeks, prices and registration opening not posted"
+      ]
+    }
+  },
+  "price_per_week": 345,
+  "price_per": "week"
 }

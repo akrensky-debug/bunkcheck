@@ -43,7 +43,7 @@
   "sources": [
     {
       "url": "https://www.artists-exchange.org/summer-camps",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -125,6 +125,20 @@
         "quote": "there is a $50 non-refundable fee, your remaining balance paid will be refunded to your original payment method. Cancellations must be made two weeks prior to the start of camp."
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.artists-exchange.org/summer-camps"
+      ],
+      "changes": [
+        "No field changes: name, contacts, address (footer), ages 6-14, prices $365/$292, extended care, scholarships and cancellation policy all match the page."
+      ],
+      "open_questions": [
+        "Page header says 'Registration Opens February 2, 12pm' with no year; unclear whether this is the 2026 or the 2027 opening.",
+        "No 2027 session dates or prices posted; draft stays on 2026 (page says 'For the 2026 season').",
+        "Registration is through care.com but the page gives no registration link, so registration_url stays empty."
+      ]
+    }
   }
 }

@@ -54,7 +54,7 @@
   "sources": [
     {
       "url": "https://www.newportequestrian.com/summer",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -109,6 +109,19 @@
       "Accommodations for special needs"
     ],
     "low_confidence": [],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.newportequestrian.com/summer"
+      ],
+      "changes": [
+        "No field changes. Hours, ages 6 and up, $475/week, 2026 weeks 1, 3, 5, ECPro registration link, bagged-lunch note and contact details all match the live page."
+      ],
+      "open_questions": [
+        "Page still shows 2026 dates; no 2027 dates or registration date posted.",
+        "Sold-out weeks 2, 4, 6-9 have no dates on the page and stay out of sessions."
+      ]
+    }
   }
 }

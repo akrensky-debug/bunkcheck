@@ -25,13 +25,17 @@
     "Arts and crafts",
     "Guest speakers",
     "Water slides",
-    "Bounce houses"
+    "Bounce houses",
+    "Martial arts",
+    "Dance",
+    "Team sports",
+    "Leadership training"
   ],
   "season_year": 2027,
   "sources": [
     {
       "url": "https://kentcountysummercamp.com/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -98,6 +102,22 @@
         "quote": "indoor sports, outdoor sports, educational lessons, arts and crafts"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://kentcountysummercamp.com/"
+      ],
+      "changes": [
+        "Added martial arts, dance, team sports and leadership training to activities (named in the activity gallery captions on the homepage).",
+        "Confirmed name, operator, phone, 555 Quaker Lane address, K-5 grades and 2027 season (\"only a few spots left in our 2027 Summer Camp\") on 2026-11-12."
+      ],
+      "open_questions": [
+        "Tuition, dates, hours and schedule are only given after submitting the lead form, which we must not submit; registration_url is that lead form, not a sign-up.",
+        "camp_type day is inferred (local K-5 campus with an after-school program).",
+        "Scarcity claims (\"only a few spots left\") are marketing; availability not recorded.",
+        "Same template and marketing style as warwick-s-best-summer-camp; different site, address check pending in that draft."
+      ]
+    }
   }
 }

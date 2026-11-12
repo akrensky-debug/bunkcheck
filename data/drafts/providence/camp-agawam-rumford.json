@@ -38,7 +38,7 @@
   "sources": [
     {
       "url": "https://www.agawamhunt.org/camp",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -97,6 +97,21 @@
       "Pool supervision and swim policies"
     ],
     "low_confidence": [],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.agawamhunt.org/camp",
+        "https://www.agawamhunt.org/camp-registration"
+      ],
+      "changes": [
+        "No changes: every filled field (name, contact and address in the page footer, grades 1-6, 9-3 hours, extended day, $465 non-member week, $290-$465 range, lunch included, pool) matches the camp page on 2026-11-12."
+      ],
+      "open_questions": [
+        "2026 weeks are given only as start weeks (June 15 ... Aug 17), so sessions stay empty.",
+        "No 2027 dates, prices or registration opening posted; registration page still says 2026 registration is live.",
+        "Cancellation policy is only on the Lincoln School (Sawyer) registration site."
+      ]
+    }
   }
 }

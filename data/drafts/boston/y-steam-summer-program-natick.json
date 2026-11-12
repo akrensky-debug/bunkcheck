@@ -41,12 +41,12 @@
   "refund_policy_summary": "A $50 per week, per child deposit is due at registration and is not refundable. Deposits can be moved to other camp programs before April 1 but not after. The cancellation and transfer deadline is May 31; after that there are no refunds, credits or transfers. Extended care is paid in full at registration. A credit or refund (minus the deposit) may be given for an illness or injury lasting 3 or more days if you send a doctor's note before the session ends. All changes must be made in writing by email.",
   "special_needs_notes": "The MetroWest YMCA tries to make its programs accessible and asks families to share any needs in advance. It says it is not a therapeutic or special needs organization. Director of Inclusion: Laina Abolfazli, (508) 876-6094, labolfazli@metrowestymca.org. Children with chronic medical conditions or allergies need an Individual Health Care Plan.",
   "swim_waterfront_notes": "Campers travel to Clearbrook Pool to swim each day. Every child takes a swim test on the first day of each session. Red-neckband swimmers must wear a Coast Guard-approved flotation device during open swim. YMCA swim lessons and recreational swim are included.",
-  "season_year": 2027,
+  "season_year": 2026,
   "price_per": "week",
   "sources": [
     {
       "url": "https://www.metrowestymca.org/camp/y-steam-camp",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -135,6 +135,25 @@
         "quote": "The cancellation deadline is May 31. After May 31 there will be no refunds, credits, or money transfers of any kind"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.metrowestymca.org/camp/y-steam-camp"
+      ],
+      "changes": [
+        "season_year changed from 2027 to 2026: page says '2027 Dates Coming Soon! (9 weeks)' with no 2027 sessions; weekly prices carry no year and sit next to a '2026 Y STEAM Summer Program' sticker",
+        "Confirmed name, East School address (90 Oak Street, Natick 01760), phone, director email, grades 1-6, 9:00 AM-4:00 PM hours, prices $415/$482/$519 and the sample-day activities",
+        "camp_type specialty kept: page calls it 'a boutique specialty program' (resolves low-confidence item)",
+        "extended_care true: AM care 7-9 AM and PM care 4:15-6 PM listed as add-ons on this camp's own page ($75 member / $94 community)",
+        "meals_included false confirmed: lunch is an add-on at $30/week",
+        "Refund policy summary matches the cancellation policy FAQ"
+      ],
+      "open_questions": [
+        "2027 dates, themes and prices not posted; unclear if listed prices hold for 2027",
+        "AM/PM care member price shows '75' without a $ sign",
+        "Members get priority registration; no 2027 registration date posted"
+      ]
+    }
   }
 }

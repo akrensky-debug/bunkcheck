@@ -3,7 +3,7 @@
   "name": "RWU's Forensic Science Summer Camp",
   "operator_name": "Roger Williams University",
   "website_url": "https://www.rwu.edu/summer-camps/forensic-science-summer-camp",
-  "registration_url": "https://connect.rwu.edu/register/?id=dd9001ca-229a-4fb3-98c6-13559b5e65a6",
+  "registration_url": "https://connect.rwu.edu/register/?id=791809ee-3c91-47f7-b9cd-7f3b24141bb4",
   "phone": "1-800-458-7144",
   "street_address": "1 Old Ferry Road",
   "city": "Bristol",
@@ -30,7 +30,7 @@
   "price_min": 1995,
   "price_max": 1995,
   "meals_included": true,
-  "refund_policy_summary": "$500 deposit secures registration and is fully refundable before April 1 (the page says 2026). The remaining balance is due by May 1 (the page says 2026). The 2027 deadlines have not been confirmed.",
+  "refund_policy_summary": "A $500 deposit is due at registration and is fully refundable before April 1. The remaining balance is due by May 1. (The camp page still prints these deadlines as April 1, 2026 and May 1, 2026; the 2027 registration form says only 'refundable before April 1'.)",
   "swim_waterfront_notes": "Campers have access to the recreation center, sailing center, kayaks and the RWU waterfront. The page does not describe swim testing or supervision.",
   "season_year": 2027,
   "sessions": [
@@ -52,12 +52,11 @@
   "sources": [
     {
       "url": "https://www.rwu.edu/summer-camps/forensic-science-summer-camp",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
         "website_url",
-        "registration_url",
         "phone",
         "street_address",
         "city",
@@ -72,13 +71,22 @@
         "price_min",
         "price_max",
         "meals_included",
-        "refund_policy_summary",
         "swim_waterfront_notes",
-        "sessions"
+        "sessions",
+        "registration_url",
+        "refund_policy_summary"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://connect.rwu.edu/register/?id=791809ee-3c91-47f7-b9cd-7f3b24141bb4",
+      "checked": "2026-11-12",
+      "fields": [
+        "email"
+      ]
     }
   ],
+  "email": "summer@rwu.edu",
   "review": {
     "status": "unchecked",
     "source": {
@@ -132,6 +140,23 @@
         "quote": "Cost: $1,995"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.rwu.edu/summer-camps/forensic-science-summer-camp",
+        "https://connect.rwu.edu/register/?id=791809ee-3c91-47f7-b9cd-7f3b24141bb4"
+      ],
+      "changes": [
+        "registration_url: replaced the old link with the live Session 1 registration form (https://connect.rwu.edu/register/?id=791809ee-3c91-47f7-b9cd-7f3b24141bb4). Session 2 has its own form: https://connect.rwu.edu/register/?id=65f6e93d-ad9d-4fcc-a0f6-66e0838d0d5e. Registration is now open (the page no longer says 'Registration Coming Soon').",
+        "email: added summer@rwu.edu ('Questions about your registration? Contact us at summer@rwu.edu' on the registration form).",
+        "refund_policy_summary rewritten to match the page and the 2027 form wording.",
+        "Confirmed 2027 sessions (July 11-16 and July 18-23, 2027), grades 10-12, $1,995 including tuition, room and board, and the activities and waterfront access on the live page."
+      ],
+      "open_questions": [
+        "Phone 1-800-458-7144 is not on the camp page itself; it is the university's general line (kept from the draft, low confidence).",
+        "The page prints 2026 payment deadlines next to 2027 dates; the $1,995 price is shown with the 2027 dates and was kept."
+      ]
+    }
   }
 }
