@@ -3,8 +3,8 @@
 **Draft for counsel.** Launch legal list item 18. Not legal advice. Counsel finishes this and
 decides governing law, liability, indemnity and every other term marked as a question.
 
-Drafted 13 November 2026. The company is Bunkcheck; its full legal name goes in once the
-entity is formed (item 1).
+Drafted 13 November 2026. The company is PromptBridge LLC, doing business as Bunkcheck
+(`docs/decisions/company.md` rule 15).
 
 This draft has three parts: the agreement text a camp would read, notes for counsel on each
 section, and a table showing where the product already enforces each promise and where it does
@@ -17,7 +17,8 @@ we would break.
 
 ### Bunkcheck Camp Agreement
 
-This agreement is between **Bunkcheck [entity type, state]** ("Bunkcheck", "we") and the camp that accepts it ("the
+This agreement is between **PromptBridge LLC, a Rhode Island limited liability company doing business as Bunkcheck**
+("Bunkcheck", "we") and the camp that accepts it ("the
 camp", "you"). It covers two paid services, the verified check and paid inquiries, and the
 listing content you send us. A camp can be listed on Bunkcheck and receive every parent's
 inquiry without paying for anything.

@@ -5,11 +5,10 @@ Where a law is named, it is a question for counsel, not a conclusion.
 
 List set 13 November 2026. Keep the status column current: change it in the same PR as the work.
 
-The company is **Bunkcheck** (Andrew, 13 November 2026). Drafts write it as **Bunkcheck
-[entity type, state]** until the entity is formed and its full legal name is known. Two
-places still use older names: the live site's legal pages say Invisible Industries
-(`frontend/lib/site.ts`), and the trademark checklist on
-`claude/bunkcheck-trademark-uspto-j41hrz` files under PromptBridge LLC.
+Bunkcheck runs under **PromptBridge LLC** (Rhode Island) for now, decided by Andrew on
+13 November 2026 (`docs/decisions/company.md` rule 15). The live legal pages, the ChatGPT
+listing and the trademark checklist already use it. The drafts here name PromptBridge LLC,
+doing business as Bunkcheck. The name Invisible Industries is not used.
 
 ## Status key
 
@@ -25,7 +24,7 @@ places still use older names: the live site's legal pages say Invisible Industri
 
 | # | Item | Owner | Status | Where |
 | --- | --- | --- | --- | --- |
-| 1 | Which legal entity runs Bunkcheck | Andrew with his own lawyer | Name decided 13 November 2026: Bunkcheck. Still open: entity type, state, name clearance in that state's registry, and formation | Questions below |
+| 1 | Which legal entity runs Bunkcheck | Andrew with his own lawyer | Decided 13 November 2026: PromptBridge LLC (Rhode Island), for now | `docs/decisions/company.md` rule 15; questions below |
 | 2 | Founder paperwork: IP assignment, company-owned accounts, 83(b) | Andrew's lawyer | Not started | `docs/decisions/company.md` rules 9 to 12 |
 | 3 | Trademark BUNKCHECK: clearance and an intent-to-use filing, Classes 41 and 42 | Andrew files; a trademark lawyer checks | Drafting | `claude/bunkcheck-trademark-uspto-j41hrz` |
 | 4 | Terms of service: governing law, liability cap, disputes, AI disclaimer, paid camps and ranking | Counsel | Drafting | `frontend/app/terms/page.tsx` |
@@ -37,15 +36,15 @@ places still use older names: the live site's legal pages say Invisible Industri
 
 ### Questions for counsel on item 1
 
-1. LLC or corporation, and in which state, given a single founder now and possible outside
-   investment later?
-2. Is "Bunkcheck" free to register in that state? The name clearance done for Invisible
-   Industries doesn't carry over.
-3. The trademark checklist names PromptBridge LLC as the applicant. Should the intent-to-use
-   application (item 3) wait until the Bunkcheck entity exists and file in its name? Can an
-   intent-to-use application be assigned from PromptBridge LLC to the new entity before the
-   mark is in use?
-4. Until the entity exists, what should the live terms and privacy pages name as the operator?
+1. Does PromptBridge LLC need to register "Bunkcheck" as a fictitious business name (DBA) in
+   Rhode Island, or anywhere else it does business?
+2. If Bunkcheck later moves to its own entity, how do the camp agreements, partner terms,
+   Stripe account and trademark move with it? Should the agreements allow assignment to an
+   affiliate or successor without consent?
+3. The trademark filing (item 3) names PromptBridge LLC. Can an intent-to-use application be
+   assigned to a new entity before the mark is in use, or should a move wait until it is?
+4. PromptBridge LLC also does other work. Does Bunkcheck's liability (family data, camp
+   billing) need to sit in a separate entity sooner, and what would insurance (item 22) say?
 
 ## Gate 2: before family data at scale
 

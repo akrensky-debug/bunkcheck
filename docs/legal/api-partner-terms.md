@@ -3,8 +3,8 @@
 **Draft for counsel.** Launch legal list item 19. Not legal advice. Counsel finishes this and
 decides liability, warranties, governing law and every term marked as a question.
 
-Drafted 13 November 2026. The company is Bunkcheck; its full legal name goes in once the
-entity is formed (item 1).
+Drafted 13 November 2026. The company is PromptBridge LLC, doing business as Bunkcheck
+(`docs/decisions/company.md` rule 15).
 These terms replace the one-paragraph summary in `docs/activity-api.md` once counsel signs off.
 
 Part 1 is the text a partner reads. Part 2 is notes for counsel. Part 3 shows which terms the
@@ -16,7 +16,8 @@ code already enforces.
 
 ### Bunkcheck Activity API Partner Terms
 
-These terms are between **Bunkcheck [entity type, state]** ("Bunkcheck", "we") and the organization that holds a
+These terms are between **PromptBridge LLC, a Rhode Island limited liability company doing business as Bunkcheck**
+("Bunkcheck", "we") and the organization that holds a
 Bunkcheck API key ("the partner", "you"). They apply to every use of the Activity API,
 including the inquiry endpoints.
 
