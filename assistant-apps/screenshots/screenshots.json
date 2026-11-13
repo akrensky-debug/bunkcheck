@@ -1,0 +1,51 @@
+[
+  {
+    "file": "1-providence-age-8.png",
+    "prompt": "Find summer day camps near Providence, RI for my 8-year-old.",
+    "tool": "search_camps",
+    "arguments": {
+      "location": "Providence, RI",
+      "age": 8,
+      "camp_type": "day",
+      "limit": 3
+    },
+    "results": 3
+  },
+  {
+    "file": "2-providence-extended-care-under-350.png",
+    "prompt": "Day camps near Providence with extended care for under $350 a week.",
+    "tool": "search_camps",
+    "arguments": {
+      "location": "Providence, RI",
+      "camp_type": "day",
+      "requires_extended_care": true,
+      "max_price_per_week": 350,
+      "limit": 3
+    },
+    "results": 3
+  },
+  {
+    "file": "3-cranston-week-of-july-5.png",
+    "prompt": "What camps still have openings the week of July 5 near Cranston, RI?",
+    "tool": "find_sessions",
+    "arguments": {
+      "location": "Cranston, RI",
+      "starts_on_or_after": "2027-07-05",
+      "ends_on_or_before": "2027-07-11",
+      "limit": 3
+    },
+    "results": 3
+  },
+  {
+    "file": "4-providence-age-8-dark.png",
+    "prompt": "Find summer day camps near Providence, RI for my 8-year-old.",
+    "tool": "search_camps",
+    "arguments": {
+      "location": "Providence, RI",
+      "age": 8,
+      "camp_type": "day",
+      "limit": 3
+    },
+    "results": 3
+  }
+]

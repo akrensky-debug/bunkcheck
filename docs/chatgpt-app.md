@@ -9,7 +9,7 @@ Strategy: `docs/assistant-apps-strategy.md`. Founder steps: `docs/assistant-apps
 
 | Piece | Where |
 | --- | --- |
-| ChatGPT endpoint | `https://<api>/chatgpt/mcp` (stateless streamable HTTP, no auth) |
+| ChatGPT endpoint | `https://<api>/chatgpt/mcp` (stateless streamable HTTP, no auth); `<api>` will be `api.bunkcheck.ai` |
 | Tools and their discovery descriptions | `campfinder/mcp_server.py` |
 | Camp cards (MCP Apps UI, protocol 2026-01-26) | `campfinder/chatgpt/widget.html`, served as `ui://campfinder/camps-v5.html` |
 | Widget origin (`_meta.ui.domain`) | `CHATGPT_WIDGET_DOMAIN`, default `FRONTEND_URL`. Required by OpenAI, unique per app |
@@ -59,17 +59,17 @@ parent confirms outside ChatGPT). Nothing moves money. Full rules: `docs/inquiri
 
 ## Listing (as in `assistant-apps/chatgpt/plugin.json`)
 
-- **Display name:** CampFinder
+- **Display name:** Bunkcheck
 - **Subtitle:** Find and plan kids' camps
 - **Category:** Lifestyle (confirm against the dashboard's list)
-- **Description:** CampFinder helps parents find the right summer camps for each child in the
+- **Description:** Bunkcheck helps parents find the right summer camps for each child in the
   Northeast US (CT, MA, ME, NH, NJ, NY, PA, RI and VT), starting with Providence and Boston. Tell
-  ChatGPT your town, your kids' ages and interests, and the weeks you need covered. CampFinder
+  ChatGPT your town, your kids' ages and interests, and the weeks you need covered. Bunkcheck
   returns day camps, sleepaway camps and specialty programs ranked for your child, with weekly
   prices, session dates, extended care, transportation and financial aid, and shows which details
-  are verified by CampFinder or by the camp. Find camps with openings in a given week, compare a
+  are verified by Bunkcheck or by the camp. Find camps with openings in a given week, compare a
   shortlist, and check which weeks are covered. To plan every week for every child on one family
-  calendar, continue on CampFinder. CampFinder is for parents and guardians. It doesn't register
+  calendar, continue on Bunkcheck. Bunkcheck is for parents and guardians. It doesn't register
   you or take payments, and it only receives the search details ChatGPT fills in, never your
   conversation.
 - **Starter prompts:** Find STEM day camps near Providence for my 8-year-old · Which camps near
@@ -82,7 +82,7 @@ parent confirms outside ChatGPT). Nothing moves money. Full rules: `docs/inquiri
 | # | Prompt | Tools | Expected |
 | --- | --- | --- | --- |
 | + | Find summer day camps near Providence, RI for my 8 year old who loves science. | search_camps | Cards with price, distance, ages, verification, reasons; continue link |
-| + | Day camps in Boston with extended care for under $400 a week. | search_camps | Only camps with extended care at or under $400, or "none matched" |
+| + | Day camps near Providence with extended care for under $350 a week. | search_camps | Only camps with extended care at or under $350, or "none matched" |
 | + | What camps still have openings the week of July 5 near Cranston, RI? | find_sessions | Dated session cards, soonest first |
 | + | Compare the top two camps for my 8 year old near Providence and tell me their refund policies. | search_camps, compare_camps, get_camp_details | Plain-language comparison; refund policy or "not listed" |
 | + | Find summer camps in Columbus, Ohio for my 9 year old. | search_camps | No camps; explains Northeast coverage; no continue link |
@@ -94,6 +94,10 @@ Also check by hand (not one of the eight): "Ask Riverside Soccer whether week 3 
 calls `send_inquiry`, shows a preview card with a confirm button, and ChatGPT says nothing was sent
 yet. Whether `send_inquiry` replaces one of the five positive cases is Andrew's call before the next
 submission.
+
+The budget case used Boston under $400 until 13 November 2026. Every Boston camp that matched had
+no price on file, and search keeps camps with no price when a budget is set, so a reviewer saw
+eight priceless cards for "under $400". Providence has prices.
 
 Run each case in developer mode on web and mobile before submitting. Positive cases depend on
 real listings: rerun them once the Providence and Boston data is live.
