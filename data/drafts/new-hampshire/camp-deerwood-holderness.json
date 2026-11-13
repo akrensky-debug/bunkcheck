@@ -2,11 +2,13 @@
   "slug": "camp-deerwood-holderness",
   "name": "Camp Deerwood",
   "website_url": "https://campdeerwood.com/",
+  "email": "info@campdeerwood.com",
   "phone": "(603) 279-4237",
   "city": "Holderness",
   "state": "NH",
   "zip": "03245",
   "camp_type": "sleepaway",
+  "gender_policy": "boys",
   "primary_categories": [
     "sports",
     "nature"
@@ -23,6 +25,10 @@
     "windsurfing",
     "trips"
   ],
+  "price_min": 7100,
+  "price_max": 12100,
+  "price_per": "session",
+  "financial_aid": true,
   "swim_waterfront_notes": "Camp is on Squam Lake; waterfront activities include waterskiing, kayaking and windsurfing.",
   "season_year": 2027,
   "sessions": [
@@ -30,28 +36,28 @@
       "name": "1st Session",
       "start_date": "2027-06-26",
       "end_date": "2027-07-18",
-      "price": null,
+      "price": 7100,
       "availability": "unknown"
     },
     {
       "name": "2nd Session",
       "start_date": "2027-07-23",
       "end_date": "2027-08-14",
-      "price": null,
+      "price": 7100,
       "availability": "unknown"
     },
     {
       "name": "Full Session",
       "start_date": "2027-06-26",
       "end_date": "2027-08-14",
-      "price": null,
+      "price": 12100,
       "availability": "unknown"
     }
   ],
   "sources": [
     {
       "url": "https://campdeerwood.com/current-schedule/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "website_url",
@@ -66,13 +72,31 @@
         "age_max",
         "description_short",
         "swim_waterfront_notes",
-        "sessions"
+        "sessions",
+        "email",
+        "gender_policy"
+      ]
+    },
+    {
+      "url": "https://campdeerwood.com/faqs/",
+      "checked": "2026-11-13",
+      "fields": [
+        "price_min",
+        "price_max",
+        "price_per"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Session prices in sessions also come from this FAQ (2027 Half Session $7,100, Full Session $12,100)"
+    },
+    {
+      "url": "https://campdeerwood.com/quick-facts/",
+      "checked": "2026-11-13",
+      "fields": [
+        "financial_aid"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://campdeerwood.com/current-schedule/",
       "kind": "html",
@@ -104,6 +128,20 @@
         "quote": "waterskiing, rock-climbing, kayaking, mountain-biking and windsurfing"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://campdeerwood.com/current-schedule/",
+        "https://campdeerwood.com/quick-facts/",
+        "https://campdeerwood.com/faqs/"
+      ],
+      "changes": [
+        "Added 2027 prices from the FAQ: $7,100 for each half session and $12,100 for the full session; price range $7,100 to $12,100 per session.",
+        "Added email info@campdeerwood.com (the address hidden behind the site's email link), gender_policy boys ('residential camp for boys aged 8-15') and financial aid through The Deerwood Foundation (Quick Facts).",
+        "Checked 2027 dates (26 June to 18 July, 23 July to 14 August, full 26 June to 14 August), ages 8 to 15, phone, Holderness ZIP 03245 and activities; all match."
+      ],
+      "open_questions": []
+    }
   }
 }

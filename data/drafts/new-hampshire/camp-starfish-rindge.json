@@ -14,7 +14,7 @@
   ],
   "age_min": 6,
   "age_max": 17,
-  "description_short": "An overnight camp in Rindge, NH for children with emotional, behavioral and learning challenges. Its core programs have one staff member for every camper, and campers live in cabins on Lake Monomonac.",
+  "description_short": "An overnight camp on Lake Monomonac in Rindge, NH for children ages 6 to 17 with emotional, behavioral and learning challenges. Its core programs (two-week Navigators and OCP sessions, five-day Lite and Havvago) have one staff member for every camper; shorter specialty weeks serve siblings and teens.",
   "activities": [
     "Soccer",
     "Kayaking",
@@ -31,11 +31,12 @@
   "sources": [
     {
       "url": "https://campstarfish.org/programs/parent-guardian-faq/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
         "website_url",
+        "email",
         "phone",
         "street_address",
         "city",
@@ -43,20 +44,132 @@
         "zip",
         "camp_type",
         "primary_categories",
-        "activities",
         "age_min",
         "age_max",
-        "description_short",
         "meals_included",
         "financial_aid",
         "special_needs_notes",
         "swim_waterfront_notes"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
+    },
+    {
+      "url": "https://campstarfish.org/programs/1-to-1/",
+      "checked": "2026-11-13",
+      "fields": [
+        "description_short"
+      ]
+    },
+    {
+      "url": "https://campstarfish.org/programs/1-to-1/navigators/",
+      "checked": "2026-11-13",
+      "fields": [
+        "activities"
+      ]
+    },
+    {
+      "url": "https://campstarfish.org/programs/first-time-camper-application/",
+      "checked": "2026-11-13",
+      "fields": [
+        "registration_url"
+      ]
+    },
+    {
+      "url": "https://campstarfish.org/wp-content/uploads/2025/10/2026-Dates-and-Rates.pdf",
+      "checked": "2026-11-13",
+      "fields": [
+        "price_min",
+        "price_max",
+        "price_per",
+        "sessions"
+      ]
+    }
+  ],
+  "email": "info@campstarfish.org",
+  "registration_url": "https://campstarfish.org/programs/first-time-camper-application/",
+  "price_min": 1000,
+  "price_max": 5350,
+  "price_per": "session",
+  "sessions": [
+    {
+      "name": "LITE 1 / Havvago (5 days, 1:1)",
+      "start_date": "2026-06-22",
+      "end_date": "2026-06-26",
+      "price": 2100,
+      "availability": "unknown"
+    },
+    {
+      "name": "LITE 2 / Havvago (5 days, 1:1)",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-03",
+      "price": 2100,
+      "availability": "unknown"
+    },
+    {
+      "name": "LITE 3 / Havvago (5 days, 1:1)",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": 2100,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 1: Navigators ages 7-13 and OCP teens (14 days, 1:1)",
+      "start_date": "2026-07-14",
+      "end_date": "2026-07-27",
+      "price": 5350,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 2: Navigators ages 7-13 and OCP teens (14 days, 1:1)",
+      "start_date": "2026-07-30",
+      "end_date": "2026-08-12",
+      "price": 5350,
+      "availability": "unknown"
+    },
+    {
+      "name": "Sibling Camp (ages 6-14, 5 days)",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-03",
+      "price": 1000,
+      "availability": "unknown"
+    },
+    {
+      "name": "Teen Adventure Week (teens 13-17)",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": 2100,
+      "availability": "unknown"
+    },
+    {
+      "name": "Teen Creative Week (teens 13-17)",
+      "start_date": "2026-07-14",
+      "end_date": "2026-07-18",
+      "price": 2100,
+      "availability": "unknown"
+    },
+    {
+      "name": "LARP Week (teens 13-17)",
+      "start_date": "2026-07-21",
+      "end_date": "2026-07-25",
+      "price": 2100,
+      "availability": "unknown"
+    },
+    {
+      "name": "Counselor-in-Training (teens 15-17, 14 days)",
+      "start_date": "2026-07-30",
+      "end_date": "2026-08-12",
+      "price": 4900,
+      "availability": "unknown"
+    },
+    {
+      "name": "August Bonus Week (returning campers up to 15)",
+      "start_date": "2026-08-14",
+      "end_date": "2026-08-18",
+      "price": 2050,
+      "availability": "unknown"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://campstarfish.org/programs/parent-guardian-faq/",
       "kind": "html",
@@ -93,6 +206,24 @@
         "quote": "2026 Dates & Rates"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://campstarfish.org/programs/parent-guardian-faq/",
+        "https://campstarfish.org/programs/1-to-1/",
+        "https://campstarfish.org/programs/1-to-1/navigators/",
+        "https://campstarfish.org/programs/first-time-camper-application/",
+        "https://campstarfish.org/wp-content/uploads/2025/10/2026-Dates-and-Rates.pdf"
+      ],
+      "changes": [
+        "Added the eleven summer 2026 sessions from the camp's 2026 Dates & Rates PDF (LITE/Havvago weeks $2,100, Sessions 1 and 2 $5,350, Sibling Camp $1,000, teen weeks $2,100, CIT $4,900, August Bonus Week $2,050). Treetops is referral-only with no price and was left out. 2027 dates are not posted; the application page says 2027 details come this winter.",
+        "Price range $1,000 to $5,350 per session, from the same PDF.",
+        "Added email info@campstarfish.org (summer office contact on the FAQ page) and the first-time camper application page as registration_url.",
+        "Description now names the program lineup and ages 6 to 17, from the 1:1 programs page.",
+        "Activities (soccer, kayaking, raft building, campfire, talent show) are only named in staff bios on the Navigators page; moved their source there. Swimming stays from the FAQ (private beaches on Lake Monomonac)."
+      ],
+      "open_questions": []
+    }
   }
 }
