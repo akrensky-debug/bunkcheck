@@ -9,37 +9,38 @@
   "city": "Exeter",
   "state": "NH",
   "zip": "03833",
-  "grade_min": 1,
-  "grade_max": 9,
-  "description_short": "The Town of Exeter Parks and Recreation Department runs a Summer Adventure Camp for students entering grades 1–7, a Teen Summer Adventure Camp for grades 8 and 9, and a Summer Golf Camp. Campers are grouped by their grade as of 9/30/2026.",
-  "activities": [
-    "Golf"
-  ],
-  "season_year": 2026,
+  "grade_min": null,
+  "grade_max": null,
+  "description_short": null,
+  "activities": null,
+  "season_year": null,
   "sources": [
     {
       "url": "https://www.exeternh.gov/recreation/summer-camps",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
+        "website_url"
+      ],
+      "note": "Returned 404 on 2026-11-13; the town site has moved to a new platform"
+    },
+    {
+      "url": "https://exeter.recdesk.com/Community/Home",
+      "checked": "2026-11-13",
+      "fields": [
         "operator_name",
-        "website_url",
         "registration_url",
         "phone",
+        "email",
         "street_address",
         "city",
         "state",
-        "zip",
-        "activities",
-        "grade_min",
-        "grade_max",
-        "description_short"
-      ],
-      "note": "Drafted by the listing tool from this page"
+        "zip"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.exeternh.gov/recreation/summer-camps",
       "kind": "html",
@@ -70,6 +71,27 @@
     "errors": [
       "missing required camp_type",
       "camp_type must be one of ['day', 'sleepaway', 'specialty']"
-    ]
-  }
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.exeternh.gov/recreation/summer-camps",
+        "https://www.exeternh.gov/recreation",
+        "https://www.exeternh.gov/",
+        "https://www.exeternh.gov/sitemap",
+        "https://exeter.recdesk.com/Community/Home",
+        "https://exeter.recdesk.com/Community/Program?keyword=camp"
+      ],
+      "changes": [
+        "The source page now returns 404. The town moved its site to CivicPlus and I could not find a new summer camp page.",
+        "Confirmed the Parks and Recreation office (10 Hampton Road, Exeter 03833, 603-773-6151) on the town's RecDesk registration site and added its email, recreation@exeternh.gov.",
+        "Cleared grade_min, grade_max, activities, description_short and season_year: no live camp page shows them now.",
+        "camp_type stays empty, so check_draft fails on it."
+      ],
+      "open_questions": [
+        "The camp page is gone (404) and RecDesk lists no summer camp yet. Hold until Exeter posts its 2027 summer camp page, then redraft from that, or drop?"
+      ]
+    }
+  },
+  "email": "recreation@exeternh.gov"
 }

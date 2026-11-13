@@ -12,14 +12,19 @@
   "primary_categories": [
     "nature"
   ],
-  "description_short": "A nature camp run by Squam Lakes Natural Science Center in Holderness, NH. Children spend time outdoors learning about local wildlife and New Hampshire ecosystems through exploration, group games and hands-on activities, using the center's Live Animal Exhibit Trail and forested campus.",
+  "description_short": "A nature day camp at Squam Lakes Natural Science Center in Holderness, NH, for ages 5 to 13. Week-long half-day and full-day sessions mix outdoor exploration, games, crafts and up-close meetings with the center's live animals. The center also runs February and April break camps.",
   "activities": [
-    "Live Animal Exhibit Trail",
-    "Up Close to Animal programs",
+    "Up-close animal encounters",
+    "Live Animal Exhibit Trail walks",
     "Outdoor exploration",
-    "Group games",
-    "Hands-on activities",
-    "Wildlife and ecosystem learning"
+    "Games",
+    "Crafts and nature art",
+    "Animal care (Junior Animal Keepers)",
+    "Ceramics (Nature of Clay)",
+    "Nature journaling",
+    "Orienteering",
+    "Fort building",
+    "Conservation projects (Earth Camp)"
   ],
   "financial_aid": true,
   "refund_policy_summary": "A $25 administration fee applies to all cancellations. Cancel more than 30 days before a session: full refund minus $25. Cancel 14–30 days before: 50% refund minus $25. Cancel less than 14 days before: no refund. If enrollment is low, the center cancels week-long programs on the Wednesday before the start date and gives a full refund. Families may also transfer to another session at no extra cost if space allows.",
@@ -27,11 +32,12 @@
   "sources": [
     {
       "url": "https://nhnature.org/learn/camp/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
         "website_url",
+        "registration_url",
         "email",
         "phone",
         "street_address",
@@ -39,16 +45,28 @@
         "state",
         "zip",
         "primary_categories",
-        "activities",
         "description_short",
         "financial_aid",
         "refund_policy_summary"
+      ]
+    },
+    {
+      "url": "https://nhnature.org/wp-content/uploads/2026/05/2026_20Guided_Discoveries_Schedule_Sessions.pdf",
+      "checked": "2026-11-13",
+      "fields": [
+        "camp_type",
+        "age_min",
+        "age_max",
+        "price_min",
+        "price_max",
+        "activities",
+        "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "2026 summer schedule PDF linked from the camp page; session prices are the non-member rates"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://nhnature.org/learn/camp/",
       "kind": "html",
@@ -84,6 +102,247 @@
     "errors": [
       "missing required camp_type",
       "camp_type must be one of ['day', 'sleepaway', 'specialty']"
-    ]
-  }
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://nhnature.org/learn/camp/",
+        "https://nhnature.org/wp-content/uploads/2026/05/2026_20Guided_Discoveries_Schedule_Sessions.pdf"
+      ],
+      "changes": [
+        "Read the 2026 summer schedule PDF the draft skipped and added all 31 sessions over 9 weeks (June 22 to August 21), each at its non-member price.",
+        "Set camp_type to day (half-day 9:30-12:30 or 1:30-4:30 and full-day 9:30-3:30 sessions), ages 5 to 13, prices $260 to $420 (non-member; members pay $224 to $378).",
+        "Added the registration link (CampBrain) from the camp page.",
+        "Rewrote the description and activities from the PDF; dropped 'Up Close to Animal programs', which no page says.",
+        "The camp page now also lists 2027 February and April break camps for ages 7-10; summer 2027 is not posted, so the listing stays on summer 2026.",
+        "Checked refund policy, scholarships, address, phone and email against the camp page; all match."
+      ],
+      "open_questions": []
+    }
+  },
+  "sessions": [
+    {
+      "name": "Week 1: Animal Senses, morning (ages 5-6)",
+      "start_date": "2026-06-22",
+      "end_date": "2026-06-26",
+      "price": 260,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 1: Forest Safari, full day (ages 7-9)",
+      "start_date": "2026-06-22",
+      "end_date": "2026-06-26",
+      "price": 420,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 1: Animal Senses, afternoon (ages 5-6)",
+      "start_date": "2026-06-22",
+      "end_date": "2026-06-26",
+      "price": 260,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 2: Fur, Feathers & Scales, morning (ages 5-6)",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-03",
+      "price": 260,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 2: Worlds in our Backyard, morning (ages 7-9)",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-03",
+      "price": 260,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 2: Predator Survival, afternoon (ages 10-13)",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-03",
+      "price": 260,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 2: Earth Camp Jr., afternoon (ages 7-9)",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-03",
+      "price": 260,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 3: Insect Adventure, morning (ages 5-6)",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": 260,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 3: Junior Animal Keepers I, full day (ages 10-13)",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": 420,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 3: World of Birds, afternoon (ages 7-9)",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": 260,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 4: Turtle Time!, morning (ages 5-6)",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": 260,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 4: Earth Camp, full day (ages 10-13)",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": 420,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 4: Discovering Reptiles & Amphibians, afternoon (ages 7-9)",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": 260,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 5: Animal Superheroes, morning (ages 5-6)",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": 260,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 5: Nature of Clay I, morning (ages 10-13)",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": 300,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 5: Animal Superheroes, afternoon (ages 5-6)",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": 260,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 5: Powerful Pollinators, afternoon (ages 7-9)",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": 260,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 6: Have to Have a Habitat, morning (ages 5-6)",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": 260,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 6: Nature of Clay II, morning (ages 7-9)",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": 300,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 6: Have to Have a Habitat, afternoon (ages 5-6)",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": 260,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 6: Nature Guides, afternoon (ages 10-13)",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": 260,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 7: Sky Hunters, morning (ages 5-6)",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": 260,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 7: Junior Animal Keepers II, full day (ages 10-13)",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": 420,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 7: Sky Hunters, afternoon (ages 5-6)",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": 260,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 8: Marvelous Mammals, morning (ages 5-6)",
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-14",
+      "price": 260,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 8: Art in Nature I, morning (ages 7-9)",
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-14",
+      "price": 290,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 8: Marvelous Mammals, afternoon (ages 5-6)",
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-14",
+      "price": 260,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 8: Art in Nature II, afternoon (ages 10-13)",
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-14",
+      "price": 290,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 9: Nature Explorers, morning (ages 5-6)",
+      "start_date": "2026-08-17",
+      "end_date": "2026-08-21",
+      "price": 260,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 9: Junior Naturalists, full day (ages 7-9)",
+      "start_date": "2026-08-17",
+      "end_date": "2026-08-21",
+      "price": 420,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 9: Nature Explorers, afternoon (ages 5-6)",
+      "start_date": "2026-08-17",
+      "end_date": "2026-08-21",
+      "price": 260,
+      "availability": "unknown"
+    }
+  ],
+  "camp_type": "day",
+  "age_min": 5,
+  "age_max": 13,
+  "price_min": 260,
+  "price_max": 420,
+  "registration_url": "https://nhnature.campbrainregistration.com/"
 }

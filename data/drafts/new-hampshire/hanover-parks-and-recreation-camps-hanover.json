@@ -7,11 +7,11 @@
   "phone": "603-643-2411",
   "city": "Hanover",
   "state": "NH",
-  "zip": null,
+  "zip": "03755",
   "camp_type": "day",
   "age_min": 2,
   "grade_max": 5,
-  "description_short": "Town-run day camps for preschoolers (ages 2-4) and children entering kindergarten through grade 5. There are 6 themed summer weeks, 2 August minicamps, and weeklong camps during the February and April school vacations.",
+  "description_short": "Town-run day camps for preschoolers (ages 2-4) and children entering kindergarten through grade 5: 6 themed summer weeks at Richmond Middle School, 2 August minicamps, and weeklong camps during the February and April school vacations.",
   "activities": [
     "Themed indoor and outdoor activities",
     "Time at Storrs Pond",
@@ -30,28 +30,56 @@
   "price_min": 55,
   "price_max": 325,
   "swim_waterfront_notes": "Each summer week includes time at Storrs Pond. The Outdoor Adventure minicamp visits Mink Brook every day and includes water activities. The page gives no details on swim instruction, swim tests or lifeguarding.",
-  "season_year": 2027,
+  "season_year": 2026,
   "price_per": "week",
   "sessions": [
     {
-      "name": "February School Vacation Minicamp (K-5), resident rate",
-      "start_date": "2027-02-22",
-      "end_date": "2027-02-26",
-      "price": 275,
+      "name": "Week 1: Color Burst Bash (3 days)",
+      "start_date": "2026-06-24",
+      "end_date": "2026-06-26",
+      "price": null,
       "availability": "unknown"
     },
     {
-      "name": "April School Vacation Minicamp (K-5), resident rate",
-      "start_date": "2027-04-19",
-      "end_date": "2027-04-23",
-      "price": 275,
+      "name": "Week 2: Celebrate Hanover (4 days)",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-02",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 3: Keepin' It Cozy",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 4: Fantasy Land Adventures",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 5: Sports Spectacular Showdown",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 6: Happy Campers",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": null,
       "availability": "unknown"
     }
   ],
   "sources": [
     {
       "url": "https://www.hanovernh.org/716/Camps",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -69,14 +97,38 @@
         "price_max",
         "price_per_week",
         "price_per",
-        "swim_waterfront_notes",
+        "swim_waterfront_notes"
+      ]
+    },
+    {
+      "url": "https://www.hanovernh.org/DocumentCenter/View/8966/Summer-Camp-Themes-2026",
+      "checked": "2026-11-13",
+      "fields": [
         "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Summer Camp Themes 2026, linked from the Camps page"
+    },
+    {
+      "url": "https://nh-hanover.civicplus.com/DocumentCenter/View/1277/Camp-Location-Maps",
+      "checked": "2026-11-13",
+      "fields": [
+        "street_address",
+        "zip"
+      ],
+      "note": "Richmond Middle School drop-off for PLAY, Circle H and Dragonfly"
+    },
+    {
+      "url": "https://www.hanovernh.org/DocumentCenter/View/1145",
+      "checked": "2026-11-13",
+      "fields": [
+        "email",
+        "refund_policy_summary"
+      ],
+      "note": "Camp Cancellation Policy v.5, amended 31 Aug 2026"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.hanovernh.org/716/Camps",
       "kind": "html",
@@ -179,6 +231,26 @@
     ],
     "errors": [
       "missing required zip"
-    ]
-  }
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.hanovernh.org/716/Camps",
+        "https://www.hanovernh.org/DocumentCenter/View/8966/Summer-Camp-Themes-2026",
+        "https://nh-hanover.civicplus.com/DocumentCenter/View/1277/Camp-Location-Maps",
+        "https://www.hanovernh.org/DocumentCenter/View/1145"
+      ],
+      "changes": [
+        "Switched the season from 2027 to 2026: the only 2027 dates are the February and April vacation minicamps, and a summer listing showing only those would mislead. Summer 2027 dates are 'TBA'.",
+        "Replaced the two vacation sessions with the six 2026 summer weeks from the town's Summer Camp Themes 2026 PDF (week 1 is 3 days, week 2 is 4 days). Session prices left empty because the page's fees carry no year.",
+        "Added the summer camp site, Richmond Middle School, 63 Lyme Road, Hanover 03755, from the Camp Location Maps PDF; this fills the required ZIP.",
+        "Added email and refund policy from the Camp Cancellation Policy PDF.",
+        "Checked ages, grades, fees ($55 to $325, $250 resident week), activities, Storrs Pond and Mink Brook notes and phone against the Camps page; all match."
+      ],
+      "open_questions": []
+    }
+  },
+  "street_address": "63 Lyme Road",
+  "email": "parksandrec@hanovernh.org",
+  "refund_policy_summary": "Summer camps: full refund if you cancel before March 1; from March 1 on, a refund only if the spot is filled from the waiting list. Minicamps: refund only if the spot is filled from the waiting list. Card refunds lose a 5% processing fee. Camp membership fees are not refundable, and there is no refund if a child is removed for behavior. Requests go in writing to parksandrec@hanovernh.org."
 }
