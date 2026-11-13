@@ -26,11 +26,13 @@ WEEK_1 = "55555555-5555-5555-5555-555555555551"
 # ---------------------------------------------------------------------------
 
 def test_migration_keeps_every_curated_slug() -> None:
-    """Real camps' ids come from their dataset slug, so the migration must name every one."""
+    """Real camps' ids come from their dataset slug, so every slug the migration names must still
+    be in the dataset with the same id. Camps promoted after it ran get their slug from the
+    importer (test_importer_writes_the_slug)."""
     listed = dict(re.findall(r"\('([0-9a-f-]{36})'::uuid, '([a-z0-9-]+)'\)", MIGRATION.read_text()))
     dataset = {camp_id(c["slug"]): c["slug"]
                for f in sorted((ROOT / "data" / "camps").glob("*.json")) for c in json.loads(f.read_text())["camps"]}
-    assert listed == dataset
+    assert listed.items() <= dataset.items()
 
 
 def test_importer_writes_the_slug() -> None:
