@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { Events, captureAssistantArrival, track } from '@/lib/analytics'
 import {
-  loadFamily, resetCalendarLink, streamChat,
+  ChatRefused, loadFamily, resetCalendarLink, streamChat,
   type AgentEvent, type Family, type UIData,
 } from '@/lib/agent'
 import { AgentBlock, AgentText, CalendarList } from '@/components/agent/AgentBlocks'
@@ -119,8 +119,9 @@ export default function AgentHome() {
     track('agent_message_sent', { conversation_id: conversationId, first: !conversationId })
     try {
       await streamChat({ family_id: family.id, conversation_id: conversationId, message }, handleEvent)
-    } catch {
-      updateLast(m => ({ ...m, error: 'Connection lost. Please try again.', status: undefined }))
+    } catch (e) {
+      const error = e instanceof ChatRefused && [429, 503].includes(e.status) ? e.message : 'Connection lost. Please try again.'
+      updateLast(m => ({ ...m, error, status: undefined }))
     } finally {
       setBusy(false)
     }

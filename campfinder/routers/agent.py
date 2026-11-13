@@ -8,20 +8,42 @@ from typing import Any, AsyncIterator
 from uuid import UUID
 
 from fastapi import APIRouter, Depends, HTTPException, Request
-from fastapi.responses import Response, StreamingResponse
+from fastapi.responses import JSONResponse, Response, StreamingResponse
 from pydantic import BaseModel, Field
 
+from campfinder.agent.budget import ChatBudget, LimitReached
 from campfinder.agent.runner import run_agent
 from campfinder.agent.tools import list_family_events
 from campfinder.household.context import acting_as
 from campfinder.household.service import actor_for, audit
 from campfinder.auth import ALL_ROLES, FamilyAccess, active_membership, authorize_family, family_access, optional_user, required_user
+from campfinder.client_ip import client_ip, rate_key
+from campfinder.config import get_settings
 from campfinder.kit.service import delete_family_data
+from campfinder.limits import SlidingWindow
 from campfinder.database import get_supabase
 from campfinder.services import family_export
 from campfinder.services.calendar import build_ics
 
 router = APIRouter()
+
+# Request-rate limits, in memory (campfinder/limits.py). Spend caps live in agent/budget.py.
+_settings = get_settings()
+guest_families_hourly = SlidingWindow(lambda: _settings.guest_families_per_hour_ip, 3600)
+guest_families_daily = SlidingWindow(lambda: _settings.guest_families_per_day_ip, 86400)
+chats_per_ip = SlidingWindow(lambda: _settings.agent_chats_per_minute_ip, 60)
+chats_per_family = SlidingWindow(lambda: _settings.agent_chats_per_minute_family, 60)
+TOO_FAST = "You're sending messages faster than we can answer. Wait a minute and try again."
+
+
+def _ip_key(request: Request) -> str:
+    """Callers with no readable address share one bucket: limits fail closed."""
+    return rate_key(client_ip(request)) or "unknown"
+
+
+def _refuse(e: LimitReached) -> JSONResponse:
+    headers = {"Retry-After": str(e.retry_after)} if e.retry_after else None
+    return JSONResponse(status_code=e.status, content={"detail": e.detail}, headers=headers)
 
 
 class FamilyResponse(BaseModel):
@@ -72,8 +94,13 @@ def _family_response(request: Request, family: dict[str, Any], access: FamilyAcc
     )
 
 
-@router.post("/families", response_model=FamilyResponse, summary="Create a guest family")
+@router.post("/families", response_model=FamilyResponse, summary="Create a guest family",
+             responses={429: {"description": "Too many new guest families from this address"}})
 async def create_family(request: Request) -> FamilyResponse:
+    ip = _ip_key(request)
+    if not (guest_families_hourly.hit(ip) and guest_families_daily.hit(ip)):
+        raise HTTPException(status_code=429, detail="Too many new sessions from here. Try again later.",
+                            headers={"Retry-After": "3600"})
     row = get_supabase().table("families").insert({}).execute().data[0]
     return _family_response(request, row)
 
@@ -155,9 +182,21 @@ async def delete_family(family_id: UUID, user_id: str | None = Depends(optional_
     return Response(status_code=204)
 
 
-@router.post("/agent/chat", summary="Chat with the family agent (server-sent events)")
-async def chat(req: ChatRequest, user_id: str | None = Depends(optional_user)) -> StreamingResponse:
+@router.post("/agent/chat", summary="Chat with the family agent (server-sent events)",
+             responses={429: {"description": "Rate limit or this family's daily assistant limit"},
+                        503: {"description": "The assistant's daily limit for everyone is reached"}})
+async def chat(req: ChatRequest, request: Request, user_id: str | None = Depends(optional_user)) -> Response:
+    ip = _ip_key(request)
+    if not chats_per_ip.hit(ip):
+        return _refuse(LimitReached(TOO_FAST, retry_after=60))
     access = family_access(req.family_id, user_id)  # owner and co-parents
+    if not chats_per_family.hit(str(req.family_id)):
+        return _refuse(LimitReached(TOO_FAST, retry_after=60))
+    budget = ChatBudget(str(req.family_id), signed_in=access.family.get("owner_user_id") is not None, ip_key=ip)
+    try:
+        budget.check()
+    except LimitReached as e:
+        return _refuse(e)
     actor_for(access)  # make sure the speaker has a member row, so the conversation is theirs
 
     async def events() -> AsyncIterator[str]:
@@ -166,6 +205,7 @@ async def chat(req: ChatRequest, user_id: str | None = Depends(optional_user)) -
             str(req.family_id),
             str(req.conversation_id) if req.conversation_id else None,
             req.message,
+            budget=budget,
         ):
             yield f"data: {json.dumps(event, default=str)}\n\n"
 

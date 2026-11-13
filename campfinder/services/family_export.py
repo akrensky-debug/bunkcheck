@@ -95,5 +95,6 @@ def export_family(family: dict[str, Any]) -> dict[str, Any]:
         },
         "registration_alerts": alerts,
         "inquiries": by_family("inquiries", "created_at"),
+        "assistant_usage": by_family("ai_spend_daily", "day"),
         "not_included": NOT_INCLUDED,
     }

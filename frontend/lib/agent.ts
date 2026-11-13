@@ -171,7 +171,10 @@ function writeFamilyId(id: string) {
 
 async function createGuestFamily(): Promise<Family> {
   const res = await fetch(`${API}/api/v1/families`, { method: 'POST' })
-  if (!res.ok) throw new Error('Could not start a session')
+  if (!res.ok) {
+    const detail = await res.json().then(d => d?.detail, () => null)
+    throw new Error(typeof detail === 'string' ? detail : 'Could not start a session')
+  }
   const family: Family = await res.json()
   writeFamilyId(family.id)
   return family
@@ -245,6 +248,13 @@ export async function deleteFamily(familyId: string): Promise<void> {
   try { localStorage.removeItem(FAMILY_KEY) } catch {}
 }
 
+/** The API turned a chat message away before it started. `message` is written for the parent. */
+export class ChatRefused extends Error {
+  constructor(message: string, readonly status: number) {
+    super(message)
+  }
+}
+
 /** Stream one agent turn. Calls onEvent for each server-sent event. */
 export async function streamChat(
   body: { family_id: string; conversation_id?: string | null; message: string },
@@ -257,7 +267,11 @@ export async function streamChat(
     body: JSON.stringify(body),
     signal,
   })
-  if (!res.ok || !res.body) throw new Error('Chat request failed')
+  if (!res.ok || !res.body) {
+    // 429 and 503 carry a sentence for the parent: a rate limit or today's assistant limit.
+    const detail = await res.json().then(d => d?.detail, () => null)
+    throw new ChatRefused(typeof detail === 'string' ? detail : 'Chat request failed', res.status)
+  }
 
   const reader = res.body.getReader()
   const decoder = new TextDecoder()
