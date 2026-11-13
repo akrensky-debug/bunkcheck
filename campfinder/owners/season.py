@@ -258,6 +258,19 @@ def _source(camp_id: str, field_name: str, note: str) -> None:
         sb.table("field_sources").insert({"camp_id": camp_id, "field_name": field_name, **values}).execute()
 
 
+HELD_PRICE = "price_per_week_held"
+
+
+def held_price(camp_id: str, season: int) -> float | None:
+    """The newest price the owner sent for `season` before its dates were on the listing."""
+    rows = [c for c in get_supabase().table("listing_changes").select("*").eq("camp_id", camp_id)
+            .eq("field_name", HELD_PRICE).execute().data or []
+            if isinstance(c.get("new_value"), dict) and c["new_value"].get("season") == season]
+    if not rows:
+        return None
+    return float(max(rows, key=lambda c: str(c.get("created_at") or ""))["new_value"]["price_per_week"])
+
+
 def season_window(camp_id: str, season: int) -> dict[str, Any] | None:
     """The camp-wide registration window for `season`: one that opens from July of the year
     before through the end of that summer."""
@@ -282,11 +295,12 @@ class Applied:
     price_now: Any = None
     camp_verified: bool = False
     not_set: list[str] = field(default_factory=list)
+    held: list[str] = field(default_factory=list)                 # sent, but waiting for something
     skipped: list[str] = field(default_factory=list)              # what we couldn't take, and why
 
     def as_dict(self) -> dict[str, Any]:
         return {"changes": self.changes, "sessions_now": self.sessions_now, "registration_now": self.registration_now,
-                "price_now": self.price_now, "camp_verified": self.camp_verified, "not_set": self.not_set,
+                "price_now": self.price_now, "camp_verified": self.camp_verified, "not_set": self.not_set, "held": self.held,
                 "skipped": self.skipped}
 
 
@@ -316,6 +330,8 @@ def apply_facts(camp: dict[str, Any], facts: SeasonFacts, *, changed_by: str, ac
     note = f"Sent by {actor or 'the camp'} through {where}"
     old_sessions = _sessions(camp["id"])
 
+    if facts.sessions and facts.price_per_week is None and held_price(camp["id"], y) is not None:
+        facts = facts.model_copy(update={"price_per_week": held_price(camp["id"], y)})
     if facts.sessions:
         before_lines = [session_line(s) for s in old_sessions]
         for before, new in _pair(old_sessions, facts.sessions):
@@ -345,7 +361,20 @@ def apply_facts(camp: dict[str, Any], facts: SeasonFacts, *, changed_by: str, ac
     elif facts.dates_not_set:
         out.not_set.append("dates")
 
-    if facts.price_per_week is not None:
+    weekly = facts.price_per_week
+    shows_season = bool(facts.sessions) or camp.get("season_year") == y
+    if weekly is not None and not shows_season:
+        # A 2027 price next to 2026 dates would be read as the 2026 price. Hold it until the
+        # 2027 dates are on the listing; they bring it with them.
+        record_change(camp["id"], HELD_PRICE, changed_by, actor, new_value={"season": y, "price_per_week": weekly},
+                      raw_message=raw_message)
+        out.held.append(f"We'll show your {y} price of {_money(weekly)} once your {y} dates are on the listing, so "
+                        f"parents don't read it as last season's price.")
+        weekly = None
+    elif weekly is None and facts.sessions:
+        weekly = held_price(camp["id"], y)
+    if weekly is not None:
+        facts = facts.model_copy(update={"price_per_week": weekly})
         old = camp.get("price_per_week")
         camp_values["price_per_week"] = facts.price_per_week
         out.changes.append({"what": f"Price per week ({y})", "before": _money(old), "after": _money(facts.price_per_week),

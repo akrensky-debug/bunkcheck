@@ -79,6 +79,7 @@ class UpdateResult(BaseModel):
     registration_now: str | None = None
     camp_verified: bool
     not_set: list[str]
+    held: list[str]
     skipped: list[str]
 
 
