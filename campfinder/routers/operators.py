@@ -1,8 +1,10 @@
 """
 Camp operators and analytics: submissions, the claim flow, and client analytics events.
 
-Parent lead capture (the search email gate and "request info") was removed in Phase 1:
-we don't sell parent contacts to camps. See docs/PRODUCT.md, trust rules.
+Parent lead capture (the search email gate and the "request info" form) was removed in Phase 1:
+we don't sell parent contacts to camps. A parent's question to a camp now goes through
+inquiries (routers/inquiries.py, docs/inquiries.md), where contact details reach the camp
+only if the parent chooses to share them.
 
 POST /api/v1/submissions        — operator self-submits new camp
 POST /api/v1/claims             — operator initiates claim
