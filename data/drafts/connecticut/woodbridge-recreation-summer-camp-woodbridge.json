@@ -3,6 +3,7 @@
   "name": "Woodbridge Recreation Summer Camp",
   "operator_name": "Woodbridge Recreation Department",
   "website_url": "https://www.woodbridgect.org/292/Summer-Camp",
+  "email": "recreation@woodbridgect.org",
   "phone": "203-389-3446",
   "street_address": "Beecher Road School, 40 Beecher Rd.",
   "city": "Woodbridge",
@@ -74,7 +75,7 @@
   "sources": [
     {
       "url": "https://www.woodbridgect.org/292/Summer-Camp",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -83,7 +84,6 @@
         "street_address",
         "city",
         "state",
-        "zip",
         "camp_type",
         "primary_categories",
         "activities",
@@ -92,13 +92,21 @@
         "description_short",
         "price_min",
         "price_max",
-        "sessions"
+        "sessions",
+        "email"
+      ]
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=40+Beecher+Rd&city=Woodbridge&state=CT&benchmark=Public_AR_Current&format=html",
+      "checked": "2026-11-13",
+      "fields": [
+        "zip"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "US Census geocoder for the camp's own address, 40 Beecher Rd, Woodbridge, CT"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.woodbridgect.org/292/Summer-Camp",
       "kind": "html",
@@ -133,6 +141,19 @@
         "quote": "11 Meetinghouse Lane Woodbridge, CT 06525"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.woodbridgect.org/292/Summer-Camp",
+        "https://geocoding.geo.census.gov/geocoder/locations/address?street=40+Beecher+Rd&city=Woodbridge&state=CT&benchmark=Public_AR_Current&format=html"
+      ],
+      "changes": [
+        "ZIP 06525 now sourced from the US Census geocoder for the camp site (40 Beecher Rd, Woodbridge), not the Town Hall address; the value is the same.",
+        "Added the Recreation Department email recreation@woodbridgect.org shown on the camp page.",
+        "Checked 2026 dates (June 22 to July 31, no camp July 3), grades K-8, 9 a.m. to noon, activities and the resident and non-resident price table against the camp page: all match. 2027 is not posted yet."
+      ],
+      "open_questions": []
+    }
   }
 }

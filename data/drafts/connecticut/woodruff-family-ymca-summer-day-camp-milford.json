@@ -1,6 +1,6 @@
 {
   "slug": "woodruff-family-ymca-summer-day-camp-milford",
-  "name": "Woodruff Family YMCA Summer Day Camp",
+  "name": "Woodruff Family YMCA Camp Wepawaug",
   "operator_name": "Central Connecticut Coast YMCA",
   "website_url": "https://cccymca.org/locations/woodruff/",
   "registration_url": "https://ymcaccc.sgasoftware.com/Sales/Public",
@@ -11,17 +11,113 @@
   "state": "CT",
   "zip": "06461",
   "camp_type": "day",
-  "description_short": "A YMCA summer day camp run by the Woodruff Family YMCA in Milford, CT, for kids and teens. The branch also offers a Counselor in Training program for 14- to 15-year-olds.",
+  "primary_categories": [
+    "general",
+    "sports"
+  ],
+  "activities": [
+    "Swimming (daily)",
+    "Gaga",
+    "Ropes course",
+    "Rock wall",
+    "STEM",
+    "Archery",
+    "Arts and crafts",
+    "Weekly theme activities",
+    "Specialty camps: STEAM, Archery, Creative Crafts, Challenge Camp"
+  ],
+  "grade_min": 0,
+  "grade_max": 9,
+  "description_short": "The Woodruff Family YMCA's summer day camp, Camp Wepawaug, on 20 acres in Milford for children entering kindergarten through 9th grade. Campers swim every day and do gaga, ropes and rock wall, STEM, archery and arts and crafts, with weekly themes. Camp runs 9:00 to 3:30 with pre and post care.",
+  "price_min": 219,
+  "price_max": 399,
+  "price_per_week": 322,
+  "price_per": "week",
+  "extended_care": true,
   "financial_aid": true,
-  "special_needs_notes": "If a child needs special assistance or medicine at camp, an Individual Care Plan / Medicine Authorization form may be required.",
+  "refund_policy_summary": "A $50 deposit per camper per week is due at registration and cannot be refunded or transferred.",
+  "special_needs_notes": "The Y works with children of all abilities. Families of a child who needs social, behavioral or medical accommodations are asked to contact the Camp Director. A child who needs special assistance or medicine at camp may also need an Individual Care Plan and Medicine Authorization form.",
+  "swim_waterfront_notes": "Campers swim every day. The branch has a 25-yard indoor pool; the brochure does not say which pool camp uses or give swim test details.",
+  "aca_accredited": true,
+  "aca_source_url": "https://cccymca.org/wp-content/uploads/WDF-2026-Summer-Camp-Brochure-Compressed-2.pdf",
   "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Aloha Summer (Jun 15 to Jun 19)",
+      "start_date": "2026-06-15",
+      "end_date": "2026-06-19",
+      "price": 322,
+      "availability": "unknown"
+    },
+    {
+      "name": "Disney Week (Jun 22 to Jun 26)",
+      "start_date": "2026-06-22",
+      "end_date": "2026-06-26",
+      "price": 322,
+      "availability": "unknown"
+    },
+    {
+      "name": "Splash of Colors Week (Jun 29 to Jul 3)",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-03",
+      "price": 322,
+      "availability": "unknown"
+    },
+    {
+      "name": "Sports Mania (Jul 6 to Jul 10)",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": 322,
+      "availability": "unknown"
+    },
+    {
+      "name": "Super Heros (Jul 13 to Jul 17)",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": 322,
+      "availability": "unknown"
+    },
+    {
+      "name": "Camp Carnival (Jul 20 to Jul 24)",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": 322,
+      "availability": "unknown"
+    },
+    {
+      "name": "Family Feud (Jul 27 to Jul 31)",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": 322,
+      "availability": "unknown"
+    },
+    {
+      "name": "Color Wars (Aug 3 to Aug 7)",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": 322,
+      "availability": "unknown"
+    },
+    {
+      "name": "Mystery Week (Aug 10 to Aug 14)",
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-14",
+      "price": 322,
+      "availability": "unknown"
+    },
+    {
+      "name": "All Silly Things (Aug 17 to Aug 21)",
+      "start_date": "2026-08-17",
+      "end_date": "2026-08-21",
+      "price": 322,
+      "availability": "unknown"
+    }
+  ],
   "sources": [
     {
       "url": "https://cccymca.org/locations/woodruff/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
-        "name",
-        "operator_name",
         "website_url",
         "registration_url",
         "email",
@@ -30,16 +126,37 @@
         "city",
         "state",
         "zip",
-        "camp_type",
-        "description_short",
-        "financial_aid",
         "special_needs_notes"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
+    },
+    {
+      "url": "https://cccymca.org/wp-content/uploads/WDF-2026-Summer-Camp-Brochure-Compressed-2.pdf",
+      "checked": "2026-11-13",
+      "fields": [
+        "name",
+        "operator_name",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "description_short",
+        "price_min",
+        "price_max",
+        "price_per_week",
+        "price_per",
+        "extended_care",
+        "financial_aid",
+        "refund_policy_summary",
+        "swim_waterfront_notes",
+        "aca_accredited",
+        "aca_source_url",
+        "sessions"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://cccymca.org/locations/woodruff/",
       "kind": "html",
@@ -70,6 +187,24 @@
         "quote": "REGISTER FOR OUR PROGRAMS ONLINE"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://cccymca.org/locations/woodruff/",
+        "https://cccymca.org/wp-content/uploads/WDF-2026-Summer-Camp-Brochure-Compressed-2.pdf"
+      ],
+      "changes": [
+        "Renamed to Woodruff Family YMCA Camp Wepawaug, the camp's own name in the 2026 brochure.",
+        "Added ten 2026 weekly sessions (June 15 to August 21) from the brochure's weekly theme list, each at the $322 program participant rate.",
+        "Added prices from the brochure: $219 a week for members, $322 for others, specialty camps $275 to $399; price_min 219, price_max 399, price_per_week 322.",
+        "Added grades K to 9 (entering), activities, daily swim, hours 9:00 to 3:30, and extended care (pre care from 7:00, post care to 6:00).",
+        "Added ACA accreditation, which the brochure states, with the brochure as the source.",
+        "Added the refund rule: $50 deposit per camper per week, not refundable or transferable.",
+        "Rewrote the description and special needs notes from the brochure.",
+        "Note: the brochure gives camp dates as June 15 to August 28 but its weekly list ends August 21; only the ten listed weeks are recorded. 2027 is not posted yet."
+      ],
+      "open_questions": []
+    }
   }
 }

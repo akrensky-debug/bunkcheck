@@ -4,10 +4,45 @@
   "operator_name": "Winding Trails",
   "website_url": "https://windingtrails.org",
   "registration_url": "https://windingtrails.org/camp",
-  "city": null,
-  "state": null,
-  "zip": null,
+  "phone": "(860) 677-8458",
+  "street_address": "50 Winding Trails Drive",
+  "city": "Farmington",
+  "state": "CT",
+  "zip": "06032",
   "camp_type": "day",
+  "primary_categories": [
+    "general",
+    "outdoor",
+    "sports"
+  ],
+  "activities": [
+    "Archery",
+    "Arts & Crafts",
+    "Baseball",
+    "Basketball",
+    "Boating",
+    "Climbing Tower",
+    "Cooperative Games",
+    "Dance",
+    "Drama",
+    "Fishing",
+    "Fort Building",
+    "Gaga",
+    "Giant Slide",
+    "High Ropes",
+    "Low Ropes",
+    "Mountain Biking",
+    "Music",
+    "Nature",
+    "Orienteering",
+    "Sailing (grades 6-8, extra fee)",
+    "Soccer",
+    "Softball",
+    "Street Hockey",
+    "Swimming",
+    "Tennis",
+    "Volleyball"
+  ],
   "age_min": 3,
   "grade_min": 0,
   "grade_max": 8,
@@ -80,30 +115,55 @@
   "sources": [
     {
       "url": "https://windingtrails.org/session-dates-and-fees",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
         "website_url",
         "registration_url",
         "camp_type",
-        "age_min",
         "grade_min",
         "grade_max",
         "description_short",
         "price_min",
         "price_max",
+        "price_per",
         "extended_care",
         "transportation",
         "financial_aid",
         "refund_policy_summary",
         "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
+    },
+    {
+      "url": "https://windingtrails.org/hours-directions-maps",
+      "checked": "2026-11-13",
+      "fields": [
+        "street_address",
+        "city",
+        "state",
+        "zip"
+      ]
+    },
+    {
+      "url": "https://windingtrails.org/camp-age-groups-and-activities",
+      "checked": "2026-11-13",
+      "fields": [
+        "age_min",
+        "primary_categories",
+        "activities"
+      ]
+    },
+    {
+      "url": "https://windingtrails.org/contact-us",
+      "checked": "2026-11-13",
+      "fields": [
+        "phone"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://windingtrails.org/session-dates-and-fees",
       "kind": "html",
@@ -136,6 +196,26 @@
       "missing required city",
       "missing required state",
       "missing required zip"
-    ]
-  }
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://windingtrails.org/session-dates-and-fees",
+        "https://windingtrails.org/hours-directions-maps",
+        "https://windingtrails.org/half-day-camps",
+        "https://windingtrails.org/contact-us",
+        "https://windingtrails.org/camp-age-groups-and-activities",
+        "https://windingtrails.org/camp-transportation"
+      ],
+      "changes": [
+        "Filled street address, city, state and ZIP (50 Winding Trails Drive, Farmington, CT 06032) from the Hours & Directions page.",
+        "Added the office phone (860) 677-8458 from the Contact Us page.",
+        "Added the activity list and categories (general, outdoor, sports) from the Camp Age Groups and Activities page; age_min 3 is now sourced there.",
+        "Set price_per to session, since fees are per two-week session.",
+        "Checked 2027 dates, member and non-member fees, deposit, refund rules, bus and extended day fees against the Session Dates and Fees page: all match."
+      ],
+      "open_questions": []
+    }
+  },
+  "price_per": "session"
 }

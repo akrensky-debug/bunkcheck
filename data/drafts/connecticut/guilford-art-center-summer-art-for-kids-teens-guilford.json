@@ -15,7 +15,7 @@
     "arts"
   ],
   "age_min": 5,
-  "description_short": "Weekly half-day art classes for kids ages 5-12 and teens 13+, held 9am-12pm and 1-4pm. You can combine a morning and an afternoon class with paid bridge care at midday to make a full day. Classes include ceramics, wheel pottery, sewing, metalsmithing, stained glass, blacksmithing, comics, drawing, painting and mixed media.",
+  "description_short": "Weekly half-day art classes for kids ages 5-12 and teens 13+, mostly 9am-12pm and 1-4pm. Combine a morning and an afternoon class with paid bridge care at midday to make a full day. Classes include ceramics, wheel pottery, sewing, metalsmithing, stained glass, blacksmithing, comics, drawing, painting and mixed media.",
   "activities": [
     "ceramics",
     "wheel throwing pottery",
@@ -201,35 +201,35 @@
       "availability": "unknown"
     },
     {
-      "name": "Week 5 (inferred): Creative Comics (1-4pm)",
+      "name": "Week 5: Creative Comics (1-4pm)",
       "start_date": "2026-07-20",
       "end_date": "2026-07-24",
       "price": 225,
       "availability": "unknown"
     },
     {
-      "name": "Week 5 (inferred): Wheel Throwing Pottery: Session D (1-4pm)",
+      "name": "Week 5: Wheel Throwing Pottery: Session D (1-4pm)",
       "start_date": "2026-07-20",
       "end_date": "2026-07-24",
       "price": 225,
       "availability": "unknown"
     },
     {
-      "name": "Week 5 (inferred): Mini Makers Mixed Media Crafts: Session C (9am-12pm)",
+      "name": "Week 5: Mini Makers Mixed Media Crafts: Session C (9am-12pm)",
       "start_date": "2026-07-20",
       "end_date": "2026-07-24",
       "price": 225,
       "availability": "unknown"
     },
     {
-      "name": "Week 5 (inferred): A Midsummer Night's Dream Tea Party (1-4pm)",
+      "name": "Week 5: A Midsummer Night's Dream Tea Party (1-4pm)",
       "start_date": "2026-07-20",
       "end_date": "2026-07-24",
       "price": 225,
       "availability": "unknown"
     },
     {
-      "name": "Week 5 (inferred): Native American Beading (9am-12pm)",
+      "name": "Week 5: Native American Beading (9am-12pm)",
       "start_date": "2026-07-20",
       "end_date": "2026-07-24",
       "price": 225,
@@ -292,28 +292,28 @@
       "availability": "unknown"
     },
     {
-      "name": "Week 7 (inferred): Drawing as a Brain Skill (9am-12pm)",
+      "name": "Week 7: Drawing as a Brain Skill (9am-12pm)",
       "start_date": "2026-08-03",
       "end_date": "2026-08-07",
       "price": 225,
       "availability": "unknown"
     },
     {
-      "name": "Week 7 (inferred): Beachy Sculpture and Painting Fun (1-4pm)",
+      "name": "Week 7: Beachy Sculpture and Painting Fun (1-4pm)",
       "start_date": "2026-08-03",
       "end_date": "2026-08-07",
       "price": 225,
       "availability": "unknown"
     },
     {
-      "name": "Week 7 (inferred): Creative Comics (9am-12pm)",
+      "name": "Week 7: Creative Comics (9am-12pm)",
       "start_date": "2026-08-03",
       "end_date": "2026-08-07",
       "price": 225,
       "availability": "unknown"
     },
     {
-      "name": "Week 7 (inferred): Character Creation (1-4pm)",
+      "name": "Week 7: Character Creation (1-4pm)",
       "start_date": "2026-08-03",
       "end_date": "2026-08-07",
       "price": 225,
@@ -421,7 +421,7 @@
   "sources": [
     {
       "url": "https://guilfordartcenter.org/wp-content/uploads/2026/01/GAC-SummerYouth26.pdf",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -453,7 +453,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://guilfordartcenter.org/wp-content/uploads/2026/01/GAC-SummerYouth26.pdf",
       "kind": "pdf",
@@ -495,6 +495,21 @@
         "quote": "WEEK 7 AUGUST 3 -7"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://guilfordartcenter.org/wp-content/uploads/2026/01/GAC-SummerYouth26.pdf",
+        "https://guilfordartcenter.org",
+        "https://guilfordartcenter.org/about-the-school/art-classes-for-youth-teens/"
+      ],
+      "changes": [
+        "Checked every field and all 54 class sessions against the 2026 summer brochure PDF; dates, tuition, ages, hours, bridge care, aid, refund policy and contact all match.",
+        "Removed '(inferred)' from the Week 5 and Week 7 class names: the brochure gives one page per week (page 6 is Week 5, page 8 is Week 7), so those week assignments are confirmed.",
+        "Description now says classes are 'mostly' 9am-12pm and 1-4pm, since Teen Blacksmithing runs 10am-12pm.",
+        "Kept season_year 2026: the site has no 2027 summer catalog yet (only the Winter 2027 catalog)."
+      ],
+      "open_questions": []
+    }
   }
 }
