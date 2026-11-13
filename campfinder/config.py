@@ -40,6 +40,9 @@ class Settings:
     # Requests per minute per client IP on the MCP endpoints. ChatGPT and Claude call
     # from shared IP ranges, so this guards against abuse, not per-parent use.
     mcp_rate_per_minute: int = int(os.environ.get("MCP_RATE_PER_MINUTE", "600"))
+    # The header our proxy sets to the caller's address, used for every per-IP limit. Railway's
+    # edge sets X-Real-IP; a caller's own X-Forwarded-For is never trusted. See client_ip.py.
+    client_ip_header: str = os.environ.get("CLIENT_IP_HEADER", "x-real-ip")
 
     # Browser origins allowed to call the API, comma-separated. Defaults to the frontend
     # and local development. Sign-in uses a bearer token, never cookies.
