@@ -1,17 +1,18 @@
 {
   "slug": "new-canaan-nature-summer-camp",
-  "name": "New Canaan Nature Summer Camp",
-  "website_url": "https://www.NewCanaanNature.org",
-  "city": null,
-  "state": null,
-  "zip": null,
+  "name": "New Canaan Nature Center Summer Camp",
+  "operator_name": "New Canaan Nature Center",
+  "website_url": "https://newcanaannature.org/summer-camp-updated/",
+  "email": "camp@newcanaannature.org",
+  "phone": "(203) 966-9577 x1041",
+  "street_address": "144 Oenoke Ridge",
+  "city": "New Canaan",
+  "state": "CT",
+  "zip": "06840",
   "camp_type": "day",
   "primary_categories": [
     "nature"
   ],
-  "age_min": 3,
-  "grade_max": 5,
-  "description_short": "Nature day camp for preschool through 5th grade with a different nature theme each week (forest, bugs, birds, ponds, etc.) on a 40-acre property. Half-day (9am–12pm) for 3- and 4-year-olds, full day (9am–3:30pm) for ages 4 through 5th grade.",
   "activities": [
     "Forest exploration",
     "Insect and bug study",
@@ -25,11 +26,16 @@
     "Recycling projects",
     "Water play and slip and slides"
   ],
-  "price_per_week": 545,
+  "age_min": 3,
+  "grade_max": 8,
+  "description_short": "Outdoor nature day camp on the New Canaan Nature Center's 40 acres of ponds, fields and forest, with a new theme each week. Half day (9am to noon) for ages 3 and 4, full day (9am to 3:30pm) from the 4s and 5s through 5th grade, and an Adventure Camp for grades 6 to 8 with daily off-site trips and a Thursday cookout until 7pm.",
   "price_min": 385,
-  "price_max": 575,
-  "season_year": 2026,
+  "price_max": 640,
+  "price_per_week": 545,
   "price_per": "week",
+  "financial_aid": true,
+  "refund_policy_summary": "75% refund for cancellations before May 15, 2026; no refunds after that. Changing or swapping weeks costs $25. Illness or family emergencies are handled case by case.",
+  "season_year": 2026,
   "sessions": [
     {
       "name": "Forest Exploration",
@@ -104,28 +110,57 @@
   ],
   "sources": [
     {
-      "url": "https://newcanaannature.org/wp-content/uploads/2026/01/2026-themes-summer-camp.pdf",
-      "checked": "2026-10-13",
+      "url": "https://newcanaannature.org/summer-camp-updated/",
+      "checked": "2026-11-13",
       "fields": [
         "name",
+        "operator_name",
         "website_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
         "camp_type",
+        "grade_max",
+        "description_short",
+        "financial_aid"
+      ],
+      "note": "Summer Camp page"
+    },
+    {
+      "url": "https://newcanaannature.org/wp-content/uploads/2026/01/2026-themes-summer-camp.pdf",
+      "checked": "2026-11-13",
+      "fields": [
         "primary_categories",
         "activities",
         "age_min",
-        "grade_max",
-        "description_short",
         "price_min",
-        "price_max",
         "price_per_week",
         "price_per",
         "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "2026 weekly themes and pricing, preschool to grade 5"
+    },
+    {
+      "url": "https://newcanaannature.org/wp-content/uploads/2026/01/2026-adventure-camp-brochure_draft1.pdf",
+      "checked": "2026-11-13",
+      "fields": [
+        "price_max"
+      ],
+      "note": "2026 Adventure Camp brochure, grades 6-8, $640 a week"
+    },
+    {
+      "url": "https://newcanaannature.org/wp-content/uploads/2026/04/2026-summer-program-refund-policy.pdf",
+      "checked": "2026-11-13",
+      "fields": [
+        "refund_policy_summary"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://newcanaannature.org/wp-content/uploads/2026/01/2026-themes-summer-camp.pdf",
       "kind": "pdf",
@@ -166,6 +201,27 @@
       "missing required city",
       "missing required state",
       "missing required zip"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://newcanaannature.org/wp-content/uploads/2026/01/2026-themes-summer-camp.pdf",
+        "https://newcanaannature.org/",
+        "https://newcanaannature.org/summer-camp-updated/",
+        "https://newcanaannature.org/wp-content/uploads/2026/01/2026-adventure-camp-brochure_draft1.pdf",
+        "https://newcanaannature.org/wp-content/uploads/2026/04/2026-summer-program-refund-policy.pdf"
+      ],
+      "changes": [
+        "Filled the missing city, state and ZIP (144 Oenoke Ridge, New Canaan, CT 06840) from the camp page, which fixes the validator errors.",
+        "Renamed to New Canaan Nature Center Summer Camp and added the operator, camp email and phone (camp director line x1041).",
+        "website_url now points to the Summer Camp page.",
+        "Raised grade_max from 5 to 8: the camp page also lists an Adventure Camp for grades 6 to 8.",
+        "Raised price_max from $575 to $640, the 2026 Adventure Camp weekly fee.",
+        "Added financial_aid true (the camp page links a camp financial aid application) and the 2026 refund policy.",
+        "Rewrote the description to cover the Adventure Camp.",
+        "Sessions stay the ten 2026 theme weeks from the themes PDF; the six Adventure Camp weeks fall in the same weeks and are not listed separately."
+      ],
+      "open_questions": []
+    }
   }
 }

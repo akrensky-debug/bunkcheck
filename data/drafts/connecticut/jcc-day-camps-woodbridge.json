@@ -2,7 +2,7 @@
   "slug": "jcc-day-camps-woodbridge",
   "name": "JCC Day Camps",
   "operator_name": "JCC of Greater New Haven",
-  "website_url": "https://www.jccnh.org/camp/dates-rates",
+  "website_url": "https://jccnh.org/daycamps",
   "email": "webmaster@jccnh.org",
   "phone": "(203) 387-2424",
   "street_address": "360 Amity Rd.",
@@ -10,7 +10,7 @@
   "state": "CT",
   "zip": "06525",
   "camp_type": "day",
-  "description_short": "Day camp run by the JCC of Greater New Haven in Woodbridge, CT. It runs in two 4-week sessions, Monday to Friday from 9 AM to 4 PM, and offers after-camp enrichment.",
+  "description_short": "Day camp for age 4 through grade 9 on the JCC of Greater New Haven's 54-acre Woodbridge campus, with an outdoor pool, low ropes course, archery, sports fields, a stage and four miles of trails. Two 4-week sessions, Monday to Friday 9 AM to 4 PM, with after-camp enrichment. Based on Jewish values and open to all.",
   "financial_aid": true,
   "extended_care": true,
   "season_year": 2027,
@@ -32,8 +32,8 @@
   ],
   "sources": [
     {
-      "url": "https://www.jccnh.org/camp/dates-rates",
-      "checked": "2026-10-13",
+      "url": "https://jccnh.org/daycamps",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -45,16 +45,39 @@
         "state",
         "zip",
         "camp_type",
-        "description_short",
-        "extended_care",
+        "age_min",
+        "grade_max",
+        "religious_affiliation",
+        "description_short"
+      ]
+    },
+    {
+      "url": "https://www.jccnh.org/camp/dates-rates",
+      "checked": "2026-11-13",
+      "fields": [
         "financial_aid",
+        "extended_care",
         "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
+    },
+    {
+      "url": "https://jccnh.org/camp/faq",
+      "checked": "2026-11-13",
+      "fields": [
+        "swim_waterfront_notes"
+      ]
+    },
+    {
+      "url": "https://jccnh.org/camp/our-facilities",
+      "checked": "2026-11-13",
+      "fields": [
+        "primary_categories",
+        "activities"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.jccnh.org/camp/dates-rates",
       "kind": "html",
@@ -102,6 +125,46 @@
         "quote": "webmaster@jccnh.org"
       }
     ],
-    "errors": []
-  }
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.jccnh.org/camp/dates-rates",
+        "https://jccnh.org/daycamps",
+        "https://jccnh.org/camp/faq",
+        "https://jccnh.org/camp/our-facilities"
+      ],
+      "changes": [
+        "Year confirmed: the camp home page says '2027 JCC Day Camps Season: June 21 - August 13', matching the two sessions (June 21 to July 16, July 19 to August 13). Rates are still TBD, so prices stay empty.",
+        "Added ages (age 4 to grade 9), religious affiliation (Jewish values, open to all) and a fuller description from the camp home page.",
+        "Added activities and category from the facilities page, and the swim note (lessons for age 4 to grade 5) from the FAQ.",
+        "website_url now the camp home page instead of the dates page.",
+        "Note: the FAQ still shows last year's dates (June 22 to August 14); the dates page and home page agree on 2027."
+      ],
+      "open_questions": []
+    }
+  },
+  "primary_categories": [
+    "general"
+  ],
+  "activities": [
+    "Swimming and swim lessons",
+    "Arts and crafts",
+    "Drama",
+    "Music and dance",
+    "STEAM / MakerSpace",
+    "Low ropes course",
+    "Archery",
+    "Sports",
+    "Basketball",
+    "Volleyball",
+    "Ga-ga",
+    "Hiking",
+    "Israel Day and Jewish values activities",
+    "Community service and tzedakah projects"
+  ],
+  "religious_affiliation": "Jewish",
+  "age_min": 4,
+  "grade_max": 9,
+  "swim_waterfront_notes": "Outdoor pool. Campers age 4 through grade 5 get swim lessons 4 days a week plus free swim; older campers have free swim only."
 }
