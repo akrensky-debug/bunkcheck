@@ -19,7 +19,7 @@
   ],
   "grade_min": 3,
   "grade_max": 12,
-  "description_short": "La Salle Academy, a Catholic high school in Providence, runs a set of separate half-day and full-day summer camps on its campus. They cover sports (tennis, basketball, volleyball, soccer), musical theater, robotics/STEM, academic enrichment and SAT prep for students in about grades 3-12.",
+  "description_short": "La Salle Academy, a Catholic high school in Providence, runs a set of separate half-day and full-day summer camps on its campus. They cover sports (tennis, basketball, volleyball, soccer), musical theater, robotics/STEM and academic enrichment for students in about grades 3-12.",
   "activities": [
     "Tennis",
     "Soccer",
@@ -29,8 +29,7 @@
     "Robotics",
     "STEM",
     "ELA and math enrichment",
-    "Field trips",
-    "SAT prep"
+    "Field trips"
   ],
   "price_min": 200,
   "price_max": 500,
@@ -108,13 +107,6 @@
       "availability": "unknown"
     },
     {
-      "name": "Summer SAT Prep Program",
-      "start_date": "2026-06-26",
-      "end_date": "2026-08-19",
-      "price": null,
-      "availability": "unknown"
-    },
-    {
       "name": "Women in STEM Camp",
       "start_date": "2026-06-22",
       "end_date": "2026-06-26",
@@ -125,7 +117,7 @@
   "sources": [
     {
       "url": "https://www.lasalle-academy.org/campus-life/summer-camps",
-      "checked": "2026-10-13",
+      "checked": "2026-10-27",
       "fields": [
         "name",
         "operator_name",
@@ -152,7 +144,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.lasalle-academy.org/campus-life/summer-camps",
       "kind": "html",
@@ -186,6 +178,16 @@
         "quote": "COST \n$225"
       }
     ],
-    "errors": []
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.lasalle-academy.org/campus-life/summer-camps",
+      "changes": [
+        "Removed the Summer SAT Prep Program session (June 26 - Aug 19): it is a series of separate 2-hour evening tutoring classes, not a camp week; also dropped 'SAT prep' from activities and the description.",
+        "Checked all other sessions, prices, grades, contact and meals_included false ('Campers are required to bring their own snacks, lunch') against the page."
+      ],
+      "for_andrew": []
+    }
   }
 }

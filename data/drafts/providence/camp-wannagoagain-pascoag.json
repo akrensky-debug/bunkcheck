@@ -74,7 +74,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://theautismproject.org/parents-families/programs-resources/summer-camp",
       "kind": "html",
@@ -108,6 +108,19 @@
     ],
     "errors": [
       "missing required zip"
-    ]
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://theautismproject.org/parents-families/programs-resources/summer-camp",
+      "changes": [
+        "No field changes: location (Buck Hill Scout Reservation, Pascoag), 2026 Sessions I-III, supports, activities and contact all match the page"
+      ],
+      "for_andrew": [
+        "ZIP missing: the page names Buck Hill Scout Reservation in Pascoag but gives no street address, so it could not be geocoded",
+        "Session III (Aug 3-7) is probably the new adult-only (18+) week but the page does not say which week; consider whether to keep it",
+        "No ages or prices on the page"
+      ]
+    }
   }
 }

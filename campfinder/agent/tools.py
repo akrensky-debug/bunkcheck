@@ -14,7 +14,7 @@ from __future__ import annotations
 
 import json
 from dataclasses import dataclass
-from datetime import date, datetime, timezone
+from datetime import date, timedelta
 from typing import Any, Awaitable, Callable, Literal
 from uuid import UUID
 
@@ -23,6 +23,7 @@ from pydantic import BaseModel, Field, ValidationError
 
 from campfinder.activity.sources import find_sessions
 from campfinder.database import get_supabase
+from campfinder.models.brief import BriefField, BriefUpdate, Kid  # noqa: F401  (Kid: tool schemas)
 from campfinder.models.compare import CompareRequest
 from campfinder.models.coverage import AwayRange, WorkBlock
 from campfinder.models.plan import PlanRequest, PlanSessionInput
@@ -33,6 +34,9 @@ from campfinder.services.coverage import check_coverage
 from campfinder.services.errors import ServiceError
 from campfinder.services.plan import build_summer_plan
 from campfinder.services.search import run_search
+from campfinder.services.season import is_last_season, planning_year
+from campfinder.models.board import PickCreate
+from campfinder.services import summer_board, summer_brief
 
 
 class ToolError(Exception):
@@ -128,40 +132,22 @@ class BuildSummerPlanInput(BaseModel):
     summer_end: date
 
 
-class Kid(BaseModel):
-    name: str | None = Field(default=None, description="First name or nickname only.")
-    age: int | None = Field(default=None, ge=0, le=19)
-    interests: list[str] = Field(default_factory=list)
-    notes: str | None = Field(
-        default=None,
-        description="Friends, likes, dislikes, schedule needs. Never medical, allergy, medication or "
-        "dietary details: those belong in the encrypted info kit, not here.",
-    )
+# Kid and the profile fields live with the summer brief (campfinder/models/brief.py).
+UpdateFamilyProfileInput = BriefUpdate
 
 
-class UpdateFamilyProfileInput(BaseModel):
-    home_location: str | None = Field(default=None, description="'City, ST'.")
-    kids: list[Kid] | None = Field(
-        default=None, description="The full list of kids. Replaces the stored list, so include everyone."
-    )
-    summer_start: date | None = None
-    summer_end: date | None = None
-    weekly_budget: float | None = Field(default=None, ge=0, description="Per child, per week, in USD.")
-    needs: list[str] | None = Field(
-        default=None,
-        description="Household logistics, e.g. 'extended care until 5:30', 'no driving on Tuesdays'. Replaces the stored list.",
-    )
-    notes: str | None = Field(default=None, description="Anything else worth remembering. Replaces stored notes.")
-    work_schedule: list[WorkBlock] | None = Field(
-        default=None,
-        description="When each parent works over the summer (days and hours), used to find the hours "
-        "that need camp or care. Replaces the stored list, so include every parent.",
-    )
-    away: list[AwayRange] | None = Field(
-        default=None,
-        description="Vacations, travel and weeks a kid spends elsewhere (e.g. with grandparents). "
-        "Replaces the stored list, so include every trip.",
-    )
+class AddToBoardInput(BaseModel):
+    child_name: str = Field(description="The kid's first name, as saved in the profile.")
+    week_of: date = Field(description="Any day in the week the camp is for.")
+    camp_id: UUID
+    session_id: UUID | None = None
+    chosen: bool = Field(default=False, description="True only when the parent picked this camp for the week; "
+                         "otherwise it goes on the week's shortlist (up to 3).")
+
+
+class NotSureInput(BaseModel):
+    field: BriefField = Field(description="The question the parent can't answer yet.")
+    skip: bool = Field(default=False, description="True for 'skip for now'; false for 'not sure yet', which asks again when it matters.")
 
 
 class CalendarEventInput(BaseModel):
@@ -198,9 +184,12 @@ def _compact_camp(c: dict[str, Any]) -> dict[str, Any]:
     keys = (
         "id", "name", "city", "state", "camp_type", "primary_categories", "age_min", "age_max",
         "price_per_week", "distance_miles", "transportation", "extended_care", "meals_included",
-        "financial_aid", "aca_accredited", "verification_status", "match_reasons",
+        "financial_aid", "aca_accredited", "verification_status", "match_reasons", "season_year",
     )
-    return {k: c.get(k) for k in keys if c.get(k) not in (None, [], "")}
+    out = {k: c.get(k) for k in keys if c.get(k) not in (None, [], "")}
+    if c.get("last_season"):
+        out["last_season"] = True  # price is last season's: say so
+    return out
 
 
 async def search_camps_tool(inp: SearchCampsInput) -> ToolOutput:
@@ -212,12 +201,15 @@ async def search_camps_tool(inp: SearchCampsInput) -> ToolOutput:
     camps = [r.model_dump(mode="json") for r in res.results]
     if not camps:
         _record_unmet_demand(inp)
+    old = sum(1 for c in camps if c.get("last_season"))
     return ToolOutput(
         content={
             "total": res.total,
             "camps": [_compact_camp(c) for c in camps],
-            "note": None if camps else _empty_note(
-                inp.location, "No camps matched. Widen the radius, drop a filter, or try a nearby city."),
+            "note": _empty_note(inp.location, "No camps matched. Widen the radius, drop a filter, or try a nearby city.")
+            if not camps else (f"{old} of these show last season's prices (last_season); "
+                               f"{planning_year()} details aren't posted yet. Say so when you mention a price."
+                               if old else None),
         },
         ui={"type": "camps", "camps": camps, "query": inp.model_dump(mode="json", exclude_none=True)},
     )
@@ -243,23 +235,40 @@ def _record_unmet_demand(inp: SearchCampsInput) -> None:
         pass  # demand logging never blocks the family
 
 
+LAST_YEAR = timedelta(weeks=52)  # same weekday, a year back
+
+
 async def find_sessions_tool(inp: FindSessionsInput) -> ToolOutput:
-    matches = await find_sessions(
-        near=inp.location, api_base="", radius_miles=inp.radius_miles, age=inp.age,
-        categories=inp.categories, max_price_per_week=inp.max_price_per_week,
-        starts_on_or_after=inp.starts_on_or_after, ends_on_or_before=inp.ends_on_or_before,
-        open_only=True, limit=inp.limit,
-    )
+    args = dict(near=inp.location, api_base="", radius_miles=inp.radius_miles, age=inp.age,
+                categories=inp.categories, max_price_per_week=inp.max_price_per_week, open_only=True, limit=inp.limit)
+    matches = await find_sessions(starts_on_or_after=inp.starts_on_or_after,
+                                  ends_on_or_before=inp.ends_on_or_before, **args)
+    # Most camps post next summer's dates in winter. For a window in the summer being planned,
+    # also show camps that ran the same week last season, marked, rather than an empty answer.
+    window = [d for d in (inp.starts_on_or_after, inp.ends_on_or_before) if d]
+    if window and all(d.year == planning_year() for d in window) and len(matches) < inp.limit:
+        seen = {p.id for _, p in matches}
+        older = await find_sessions(
+            starts_on_or_after=inp.starts_on_or_after - LAST_YEAR if inp.starts_on_or_after else None,
+            ends_on_or_before=inp.ends_on_or_before - LAST_YEAR if inp.ends_on_or_before else None, **args)
+        matches += [(s, p) for s, p in older if p.id not in seen][: inp.limit - len(matches)]
     rows = [
         {"camp_id": str(p.id), "camp": p.name, "session_id": str(s.id), "session": s.name,
          "start_date": s.start_date.isoformat(), "end_date": s.end_date.isoformat(),
-         "price": s.price, "availability": s.availability, "distance_miles": p.distance_miles}
+         "price": s.price, "availability": s.availability, "distance_miles": p.distance_miles,
+         **({"last_season": True} if is_last_season(s.start_date.year) else {})}
         for s, p in matches
     ]
+    old = sum(1 for r in rows if r.get("last_season"))
+    note = (_empty_note(inp.location, "Nothing open in that window.") if not rows else
+            f"{old} of these are last season's dates and prices for the same week (last_season); "
+            f"{planning_year()} dates aren't posted yet. Say so; the camp's page can alert them when they're out."
+            if old else None)
     ui_sessions = [
         {
             "session_id": str(s.id), "name": s.name, "start_date": s.start_date.isoformat(),
             "end_date": s.end_date.isoformat(), "price": s.price, "availability": s.availability,
+            "last_season": is_last_season(s.start_date.year),
             "camp": {
                 "id": str(p.id), "name": p.name, "city": p.location.city, "state": p.location.state,
                 "distance_miles": p.distance_miles, "price_per_week": p.price.per_week,
@@ -272,7 +281,7 @@ async def find_sessions_tool(inp: FindSessionsInput) -> ToolOutput:
         for s, p in matches
     ]
     return ToolOutput(
-        content={"sessions": rows, "note": None if rows else _empty_note(inp.location, "Nothing open in that window.")},
+        content={"sessions": rows, "note": note},
         ui={"type": "sessions", "sessions": ui_sessions},
     )
 
@@ -320,14 +329,39 @@ def list_family_events(family_id: str) -> list[dict[str, Any]]:
     )
 
 
+def _profile_output(profile: dict[str, Any]) -> ToolOutput:
+    q = summer_brief.next_question(profile, date.today())
+    content: dict[str, Any] = {"saved": True, "profile": profile}
+    if q:
+        content["next_question"] = q.model_dump(exclude_none=True)
+    return ToolOutput(content=content, ui={"type": "profile", "profile": profile})
+
+
 async def update_family_profile_tool(inp: UpdateFamilyProfileInput, family_id: str) -> ToolOutput:
-    profile = load_family_profile(family_id)
-    profile.update(inp.model_dump(mode="json", exclude_unset=True))
-    get_supabase().table("families").update({
-        "profile": profile,
-        "updated_at": datetime.now(timezone.utc).isoformat(),
-    }).eq("id", family_id).execute()
-    return ToolOutput(content={"saved": True, "profile": profile}, ui={"type": "profile", "profile": profile})
+    load_family_profile(family_id)  # a missing family is a ToolError
+    return _profile_output(summer_brief.update_brief(family_id, inp, "said"))
+
+
+async def add_to_board_tool(inp: AddToBoardInput, family_id: str) -> ToolOutput:
+    try:
+        summer_board.add_pick(family_id, PickCreate(
+            child_name=inp.child_name, week_of=inp.week_of, camp_id=inp.camp_id, session_id=inp.session_id,
+            state="chosen" if inp.chosen else "idea",
+        ))
+    except ServiceError as e:
+        raise ToolError(e.detail) from e
+    board = await summer_board.build_board(family_id)
+    content = {
+        "planned": f"{board.planned} of {board.weeks_needed} weeks planned",
+        "start_with": board.start_with.isoformat() if board.start_with else None,
+        "cost": board.cost,
+    }
+    return ToolOutput(content=content, ui={"type": "board", "planned": board.planned, "weeks_needed": board.weeks_needed})
+
+
+async def not_sure_tool(inp: NotSureInput, family_id: str) -> ToolOutput:
+    load_family_profile(family_id)
+    return _profile_output(summer_brief.skip(family_id, inp.field, not_sure=not inp.skip))
 
 
 async def check_coverage_tool(inp: CheckCoverageInput, family_id: str) -> ToolOutput:
@@ -408,6 +442,8 @@ class ToolSpec:
     family: bool = False  # needs a family_id
     status: str = ""  # shown in the UI while the tool runs
     family_optional: bool = False  # public, but also gets the family_id when there is one
+    needs_channel: bool = False  # also gets who is calling: site, chatgpt, claude, assistant
+    writes: bool = False  # changes something outside the conversation (MCP annotations say so)
 
 
 CAMP_TOOLS: list[ToolSpec] = [
@@ -452,6 +488,21 @@ FAMILY_TOOLS: list[ToolSpec] = [
         UpdateFamilyProfileInput, update_family_profile_tool, family=True, status="Saving to your family profile",
     ),
     ToolSpec(
+        "add_to_summer_board",
+        "Put a camp on the family's Summer Board for one kid and one week: on the week's shortlist, or as "
+        "the week's pick when the parent chose it. The parent sees the board on the Summer page. Use camp "
+        "and session ids from search or coverage results only. Choosing is not registering.",
+        AddToBoardInput, add_to_board_tool, family=True, status="Adding to your Summer Board",
+    ),
+    ToolSpec(
+        "not_sure_yet",
+        "The parent doesn't know an answer yet, or wants to skip a question (kids, school, sorted_weeks, "
+        "care_hours, interests, weekly_budget, max_drive_minutes, sleepaway, booked_elsewhere). Saves a "
+        "default marked as a guess where one helps, and moves on. 'Not sure' comes back when it matters; "
+        "'skip' waits in the Finish later list.",
+        NotSureInput, not_sure_tool, family=True, status="Noting that for later",
+    ),
+    ToolSpec(
         "add_to_family_calendar",
         "Put camp sessions or other commitments on the family's shared calendar, which the "
         "parent can subscribe to from Google, Apple or Outlook Calendar. Only add what the "
@@ -489,6 +540,10 @@ import campfinder.agent.booking_tools  # noqa: E402,F401
 import campfinder.agent.activity_tools  # noqa: E402,F401
 
 
+# Inquiries (a parent's question to a camp, sent after the parent says yes) add theirs.
+import campfinder.agent.inquiry_tools  # noqa: E402,F401
+
+
 def _inline_refs(schema: dict[str, Any]) -> dict[str, Any]:
     """Inline $defs so each tool's input_schema is a single self-contained object."""
     defs = schema.pop("$defs", {})
@@ -522,8 +577,11 @@ def anthropic_tools(include_family: bool) -> list[dict[str, Any]]:
     ]
 
 
-async def run_tool(name: str, raw_input: Any, family_id: str | None = None) -> ToolOutput:
-    """Validate the model's input and run the tool. Raises ToolError on any failure."""
+async def run_tool(name: str, raw_input: Any, family_id: str | None = None, channel: str = "site") -> ToolOutput:
+    """Validate the model's input and run the tool. Raises ToolError on any failure.
+
+    channel is who is calling, set by the server (the MCP host, or "site" for our own agent),
+    never by the model."""
     spec = ALL_TOOLS.get(name)
     if spec is None or (spec.family and not family_id):
         raise ToolError(f"Unknown tool: {name}")
@@ -532,6 +590,8 @@ async def run_tool(name: str, raw_input: Any, family_id: str | None = None) -> T
     except ValidationError as e:
         raise ToolError(f"Invalid input: {e.errors(include_url=False)}") from e
     try:
+        if spec.needs_channel:
+            return await spec.fn(inp, family_id, channel)
         if spec.family or spec.family_optional:
             return await spec.fn(inp, family_id)
         return await spec.fn(inp)

@@ -104,7 +104,10 @@ class CampDetail(BaseModel):
     gallery_image_urls: list[str] = Field(default_factory=list)
     faq: list[dict[str, Any]] | None = None
     is_active: bool = True
-    season_year: int | None = None
+    season_year: int | None = Field(default=None, description="The summer these dates and prices are for.")
+    last_season: bool = Field(default=False, description="True when season_year is before the summer parents are "
+                              "planning now: the camp hasn't posted the new season yet.")
+    season_note: str | None = Field(default=None, description="Say this to the parent whenever you give a date or price.")
     created_at: datetime | None = None
     updated_at: datetime | None = None
     sessions: list[SessionSummary] = Field(default_factory=list)
@@ -137,6 +140,8 @@ class CampSearchResult(BaseModel):
     aca_accredited: bool | None = None
     verification_status: str
     last_updated_date: datetime | None = None
+    season_year: int | None = None
+    last_season: bool = Field(default=False, description="Price and dates are from last season; new ones not posted.")
     description_short: str | None = None
     hero_image_url: str | None = None
     distance_miles: float | None = None

@@ -87,5 +87,6 @@ async def test_extract_uses_structured_output(monkeypatch: pytest.MonkeyPatch) -
     assert isinstance(listing, ProposedListing)
     assert captured["tools"] == [extract.TOOL] and captured["tool_choice"] == {"type": "auto"}
     assert captured["model"] == "claude-opus-5-5"
+    assert captured["system"][-1]["cache_control"] == {"type": "ephemeral"}
     assert "Today is 2026-10-01" in captured["messages"][0]["content"]
     assert "Register: https://riverbend.example/register" in captured["messages"][0]["content"]

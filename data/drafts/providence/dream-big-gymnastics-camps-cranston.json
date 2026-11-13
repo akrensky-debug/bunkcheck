@@ -45,7 +45,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.dreambiggym.com/camps",
       "kind": "html",
@@ -74,6 +74,16 @@
     "low_confidence": [],
     "errors": [
       "missing required season_year"
-    ]
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.dreambiggym.com/camps",
+      "changes": [],
+      "for_andrew": [
+        "Page describes school-vacation day camps ($75/day, 8:30-4) and never mentions summer; CAMP DATES table is empty (also empty when rendered). Confirm summer camps exist before listing; season_year cannot be set",
+        "primary_categories includes arts only because of one craft project per day; sports alone may fit better"
+      ]
+    }
   }
 }

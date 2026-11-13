@@ -177,7 +177,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://oceancommunityymca.org/camp-watchaug/",
       "kind": "html",
@@ -247,6 +247,18 @@
       "missing required city",
       "missing required state",
       "missing required zip"
-    ]
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://oceancommunityymca.org/camp-watchaug/",
+      "changes": [
+        "No field changes: description, activities, Toni's Kids notes, financial aid (YCares), bus routes and the 2026 themed and specialty sessions match the page."
+      ],
+      "for_andrew": [
+        "City/state/ZIP missing: the page gives no street address, only 'Watchaug Pond'. Watchaug Pond is in Charlestown, RI, which is not in cities.py and is roughly 35-40 miles from Providence, so it may be outside the metro. Decide keep or drop.",
+        "No ages or prices on the page (they are in the 2026 brochure)."
+      ]
+    }
   }
 }

@@ -68,7 +68,7 @@
   "sources": [
     {
       "url": "https://providence.1on1basketball.com/programs?type=1",
-      "checked": "2026-10-13",
+      "checked": "2026-10-27",
       "fields": [
         "name",
         "operator_name",
@@ -92,7 +92,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://providence.1on1basketball.com/programs?type=1",
       "kind": "html",
@@ -122,6 +122,16 @@
         "quote": "Moses Brown Summer Hoops"
       }
     ],
-    "errors": []
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://providence.1on1basketball.com/programs?type=1",
+      "changes": [],
+      "for_andrew": [
+        "Only 2026 sessions (Aug 10-14 Moses Brown, Aug 24-28 South Kingstown) are posted; no 2027 dates yet.",
+        "No ages or grades are given on the camps list page."
+      ]
+    }
   }
 }

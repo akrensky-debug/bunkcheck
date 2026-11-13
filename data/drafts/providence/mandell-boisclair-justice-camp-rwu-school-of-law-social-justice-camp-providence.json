@@ -29,21 +29,21 @@
       "name": "Week One (first-time campers)",
       "start_date": "2026-07-13",
       "end_date": "2026-07-17",
-      "price": 49,
+      "price": null,
       "availability": "unknown"
     },
     {
       "name": "Week Two (returning campers: democracy, elections and voting rights)",
       "start_date": "2026-07-20",
       "end_date": "2026-07-24",
-      "price": 49,
+      "price": null,
       "availability": "unknown"
     }
   ],
   "sources": [
     {
       "url": "https://www.rwu.edu/summer-camps/rwu-school-law-social-justice-camp",
-      "checked": "2026-10-13",
+      "checked": "2026-10-27",
       "fields": [
         "name",
         "operator_name",
@@ -65,7 +65,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.rwu.edu/summer-camps/rwu-school-law-social-justice-camp",
       "kind": "html",
@@ -135,6 +135,19 @@
         "quote": "Registration $49"
       }
     ],
-    "errors": []
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.rwu.edu/summer-camps/rwu-school-law-social-justice-camp",
+      "changes": [
+        "Session prices set to null: the page lists 'Registration $49', which may be a registration fee rather than the week's cost.",
+        "Checked grades 6-9, day hours 8:45-4:00, address and phone (university footer) against the page."
+      ],
+      "for_andrew": [
+        "The page gives no year for the dates (July 13-17 and July 20-24); season_year 2026 is inferred only because those dates are Monday-Friday in 2026. Confirm the year, or wait for 2027 dates ('Registration Coming Soon').",
+        "Confirm whether $49 is the full price of a week or only a registration fee."
+      ]
+    }
   }
 }

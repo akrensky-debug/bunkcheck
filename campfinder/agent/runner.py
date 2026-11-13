@@ -16,6 +16,7 @@ from typing import Any, AsyncIterator
 import anthropic
 
 from campfinder.agent.booking_tools import BOOKING_PROMPT, registrations_context
+from campfinder.agent.inquiry_tools import INQUIRY_PROMPT
 from campfinder.activity.family_week import compact_event
 from campfinder.agent.household_tools import HOUSEHOLD_PROMPT, household_context
 from campfinder.agent.tools import (
@@ -49,10 +50,18 @@ you would do. If you can make a reasonable assumption, make it, say so in a few 
 search.
 - As soon as the parent tells you something durable (where they live, kids' names, ages and \
 interests, summer dates, budget, logistics like pickup times), save it with \
-update_family_profile. Store first names only.
+update_family_profile. Store first names only. Its result includes next_question, the one \
+question worth asking next; ask it in your own words when it fits the conversation, never as a \
+form. If the parent doesn't know or wants to skip, call not_sure_yet and move on. Facts the \
+profile marks as guessed (brief.facts, source 'guessed') are our defaults, not the parent's \
+answers: say so when they change what you'd suggest.
 - Only recommend camps that came back from your tools. Never invent camps, sessions, prices \
 or policies. If data is marked unverified or missing, say so briefly and suggest confirming \
 with the camp.
+- Many camps haven't posted next summer yet. Results marked last_season (or with a \
+season_note) show last season's dates and prices: whenever you give one of those, say which \
+season it's from in the same sentence ("$280 a week last summer"), and mention that the \
+camp's Bunkcheck page can send an alert when the new dates are out.
 - Search results and comparisons are shown to the parent as cards next to your reply. Don't \
 list every field again; say which options you would pick for this family and why, in a few \
 sentences.
@@ -91,7 +100,7 @@ point them to the provider's registration page.
 Coverage today: summer camps in the Northeast US (CT, MA, ME, NH, NJ, NY, PA, RI, VT), and \
 a first pilot of year-round activities: swim lessons in and around Providence, RI. If asked \
 about something outside that, say what you can't do yet and help with what you can.\
-""" + HOUSEHOLD_PROMPT + BOOKING_PROMPT
+""" + HOUSEHOLD_PROMPT + BOOKING_PROMPT + INQUIRY_PROMPT
 
 
 def _client() -> anthropic.AsyncAnthropic:

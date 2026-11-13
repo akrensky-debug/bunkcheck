@@ -4,9 +4,9 @@
   "operator_name": "Brae Crest School of Ballet",
   "website_url": "https://braecrestschool.com/summer/childrens-summer-camp",
   "registration_url": "https://braecrestschool.com/contact",
-  "city": null,
+  "city": "Lincoln",
   "state": "RI",
-  "zip": null,
+  "zip": "02865",
   "camp_type": "specialty",
   "primary_categories": [
     "performing_arts",
@@ -46,6 +46,8 @@
       "availability": "full"
     }
   ],
+  "phone": "(401) 334-2560",
+  "street_address": "52 Sherman Ave.",
   "sources": [
     {
       "url": "https://braecrestschool.com/summer/childrens-summer-camp",
@@ -55,7 +57,6 @@
         "operator_name",
         "website_url",
         "registration_url",
-        "state",
         "camp_type",
         "primary_categories",
         "activities",
@@ -66,10 +67,21 @@
         "sessions"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://braecrestschool.com/contact",
+      "checked": "2026-10-27",
+      "fields": [
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://braecrestschool.com/summer/childrens-summer-camp",
       "kind": "html",
@@ -115,10 +127,18 @@
         "quote": "I AM MOANA! - July 13-17"
       }
     ],
-    "errors": [
-      "missing required city",
-      "missing required zip",
-      "city None, RI is not in cities.py"
-    ]
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://braecrestschool.com/summer/childrens-summer-camp",
+      "changes": [
+        "Filled street_address, city Lincoln, state, zip 02865 and phone from the school contact page (braecrestschool.com/contact); state moved to that source"
+      ],
+      "for_andrew": [
+        "Session dates (July 6-10, July 13-17) show no year; 2026 inferred (both Mon-Fri in 2026, page (c) 2026). 2027 dates not posted",
+        "No prices on the page; both weeks marked fully booked; slug lacks a town suffix (children-s-summer-ballet-camp)"
+      ]
+    }
   }
 }

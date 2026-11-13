@@ -48,7 +48,7 @@
   "sources": [
     {
       "url": "https://www.gammtheatre.org/camps",
-      "checked": "2026-10-13",
+      "checked": "2026-10-27",
       "fields": [
         "name",
         "operator_name",
@@ -81,7 +81,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "drop",
     "source": {
       "url": "https://www.gammtheatre.org/camps",
       "kind": "html",
@@ -111,6 +111,16 @@
       "ACA accreditation"
     ],
     "low_confidence": [],
-    "errors": []
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.gammtheatre.org/camps",
+      "changes": [],
+      "for_andrew": [
+        "The Gamm camps page currently lists summer camps only in general terms (improv, Shakespeare, workshops of 1-4 weeks); recheck it in spring for 2027 summer sessions and add those as a new listing."
+      ],
+      "drop_reason": "Not a summer camp: this listing is the February and April 2027 school-vacation intensives (one week each); the page shows no summer sessions."
+    }
   }
 }

@@ -4,7 +4,6 @@
   "operator_name": "Providence Performing Arts Center",
   "website_url": "https://www.ppacri.org/outreach/next-stop-broadway",
   "email": "nsb@ppacri.org",
-  "phone": "(401) 421-2787",
   "street_address": "220 Weybosset St",
   "city": "Providence",
   "state": "RI",
@@ -56,13 +55,12 @@
   "sources": [
     {
       "url": "https://www.ppacri.org/outreach/next-stop-broadway",
-      "checked": "2026-10-13",
+      "checked": "2026-10-27",
       "fields": [
         "name",
         "operator_name",
         "website_url",
         "email",
-        "phone",
         "street_address",
         "city",
         "state",
@@ -85,7 +83,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.ppacri.org/outreach/next-stop-broadway",
       "kind": "html",
@@ -159,6 +157,19 @@
         "quote": "The registration fee is $590 for a new, individual registration and $550 for siblings and returning registrations."
       }
     ],
-    "errors": []
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.ppacri.org/outreach/next-stop-broadway",
+      "changes": [
+        "Removed phone (401) 421-2787: not on the page."
+      ],
+      "for_andrew": [
+        "Session dates (July 12-16, July 19-23, Aug 2-6) carry no year; recorded as 2027 since the page says Summer 2027 registration opens Jan 15 and they fall Mon-Fri in 2027. Confirm.",
+        "Age rule still names 'July 20 and/or July 27' (2026 start dates), so the fees ($565/$525 Next Stop, $590/$550 ENCORE!) may be 2026 carry-overs. Confirm 2027 fees before publishing.",
+        "ENCORE! is for high school / early college performers, so some campers may be over age_max 17."
+      ]
+    }
   }
 }

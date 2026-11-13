@@ -34,7 +34,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "drop",
     "source": {
       "url": "https://coventryri.myrec.com/info/activities/default.aspx?CategoryID=1600",
       "kind": "html",
@@ -85,6 +85,14 @@
     ],
     "errors": [
       "missing required season_year"
-    ]
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://coventryri.myrec.com/info/activities/program_details.aspx?ProgramID=31259",
+      "changes": [],
+      "for_andrew": [],
+      "drop_reason": "Not a summer camp: the program page says Half-Day Hangout is an afternoon drop-in at the Teen Center for school early-release days (grades K-5, Coventry residents only)."
+    }
   }
 }

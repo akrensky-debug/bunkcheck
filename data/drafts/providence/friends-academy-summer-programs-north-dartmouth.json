@@ -22,7 +22,6 @@
   ],
   "age_min": 3,
   "age_max": 16,
-  "grade_max": 9,
   "description_short": "Day camps for ages 3-16 on Friends Academy's 65-acre campus in North Dartmouth, with more than 40 full-day and half-day options: the general Summer Friends camp, creative, enrichment and sports camps, a counselor-in-training program, and academic camps for students with language-based learning differences.",
   "activities": [
     "art",
@@ -72,7 +71,6 @@
         "activities",
         "age_min",
         "age_max",
-        "grade_max",
         "description_short",
         "price_min",
         "price_max",
@@ -87,7 +85,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.friendsacademy1810.org/summer/",
       "kind": "html",
@@ -110,6 +108,17 @@
       "Swimming or waterfront activities"
     ],
     "low_confidence": [],
-    "errors": []
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.friendsacademy1810.org/summer/",
+      "changes": [
+        "Removed grade_max 9: \"PreK to Grade 9\" is the school menu, not the camp (camps are ages 3-16; Summer Friends K-8, CIT 14-16)"
+      ],
+      "for_andrew": [
+        "North Dartmouth is about 30 miles from Providence, at the edge of the area"
+      ]
+    }
   }
 }

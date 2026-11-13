@@ -108,7 +108,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://wrwc.org/camp-woonasquatucket/",
       "kind": "html",
@@ -211,6 +211,18 @@
     ],
     "errors": [
       "missing required zip"
-    ]
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://wrwc.org/camp-woonasquatucket/",
+      "changes": [],
+      "for_andrew": [
+        "Page is a March 2025 blog post: only 2025 sessions/price shown, nothing for 2026 or 2027; confirm the camp still runs (season_year 2025 is outside 2026/2027)",
+        "zip missing: page gives no street address for the Leo Bouchard Conservation Center, Smithfield (only WRWC office at 45 Eagle St, Providence)",
+        "Phone 401.861.9046 is the WRWC main office; registration is via Smithfield Parks & Rec (link not captured)",
+        "financial_aid true rests on a Smithfield Parks & Rec donation page to cover tuition, not a stated aid program"
+      ]
+    }
   }
 }

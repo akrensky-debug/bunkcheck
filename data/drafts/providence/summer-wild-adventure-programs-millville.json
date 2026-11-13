@@ -96,7 +96,7 @@
   "sources": [
     {
       "url": "https://www.earthltd.org/wild-adventure-programs/summer/",
-      "checked": "2026-10-13",
+      "checked": "2026-10-27",
       "fields": [
         "name",
         "operator_name",
@@ -121,7 +121,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.earthltd.org/wild-adventure-programs/summer/",
       "kind": "html",
@@ -177,6 +177,17 @@
         "quote": "Lunch & snacks – We provide snacks and water during morning and afternoon snack time."
       }
     ],
-    "errors": []
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.earthltd.org/wild-adventure-programs/summer/",
+      "changes": [],
+      "for_andrew": [
+        "Address is the EARTH Nature Center office in Millville; programs run at Southwick's Zoo (Mendon, MA) and the page does not give its address",
+        "meals_included false: campers bring lunch, but the program provides snacks and water",
+        "Session prices are non-member rates incl. Eventbrite fees; members get 10% off"
+      ]
+    }
   }
 }

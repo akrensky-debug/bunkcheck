@@ -13,11 +13,14 @@
   "primary_categories": [
     "sports"
   ],
-  "age_min": 6,
-  "description_short": "A horse boarding and riding lesson farm in Warren, RI, with indoor and outdoor arenas. In the summer it runs weekly riding camps for children age 6 and up.",
+  "age_min": null,
+  "description_short": "A horse boarding and riding lesson farm in Warren, RI, with indoor and outdoor arenas. In the summer it runs weekly riding camps for all experience levels, with daily riding lessons plus unmounted horse-care activities.",
   "activities": [
     "horseback riding"
   ],
+  "price_per_week": 400,
+  "price_per": "week",
+  "meals_included": false,
   "sources": [
     {
       "url": "http://www.windsweptfarmri.com/",
@@ -35,14 +38,22 @@
         "camp_type",
         "primary_categories",
         "activities",
-        "age_min",
         "description_short"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "http://www.windsweptfarmri.com/summercamp.html",
+      "checked": "2026-10-27",
+      "fields": [
+        "price_per_week",
+        "price_per",
+        "meals_included"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "http://www.windsweptfarmri.com/",
       "kind": "html",
@@ -76,6 +87,20 @@
     ],
     "errors": [
       "missing required season_year"
-    ]
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "http://www.windsweptfarmri.com/ (and /summercamp.html)",
+      "changes": [
+        "Added $400 per week and meals_included false ('bring ... drinks and a bag lunch') from the summer camp page.",
+        "Removed age_min 6: the home page says age six and older but the summer camp page says 7 and older.",
+        "Rewrote description_short without the conflicting age."
+      ],
+      "for_andrew": [
+        "season_year missing: the camp page lists weeks July 6-10 through August 3-7 with no year (they fall on Mon-Fri in 2026). Confirm the year with the farm.",
+        "Minimum age conflicts: home page 'age six and older', camp page 'Student age: 7 and older'."
+      ]
+    }
   }
 }

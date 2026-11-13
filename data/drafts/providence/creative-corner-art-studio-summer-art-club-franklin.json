@@ -36,7 +36,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.creativecornerartstudiofranklin.com/",
       "kind": "html",
@@ -80,6 +80,16 @@
     ],
     "errors": [
       "missing required season_year"
-    ]
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.creativecornerartstudiofranklin.com/",
+      "changes": [],
+      "for_andrew": [
+        "refused: ask the owner for the brochure (Summer Art Club page /services-4 returned 429; homepage has no summer details, no ages, dates or prices)",
+        "season_year missing until the summer program page can be read"
+      ]
+    }
   }
 }

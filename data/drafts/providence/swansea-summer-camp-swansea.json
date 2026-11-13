@@ -11,7 +11,7 @@
   "sources": [
     {
       "url": "https://www.swanseama.gov/_T2_R307.html",
-      "checked": "2026-10-13",
+      "checked": "2026-10-27",
       "fields": [
         "name",
         "operator_name",
@@ -33,7 +33,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.swanseama.gov/_T2_R307.html",
       "kind": "html",
@@ -89,6 +89,17 @@
       "missing required camp_type",
       "missing required season_year",
       "camp_type must be one of ['day', 'sleepaway', 'specialty']"
-    ]
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.swanseama.gov/_T2_R307.html",
+      "changes": [],
+      "for_andrew": [
+        "Source is a 5-line undated town news post (\"Summer Camp Registration is OPEN\"); no year, dates, ages, prices, camp type or location",
+        "Name \"Swansea Summer Camp\" is made up from the post title and town; the page gives no program name",
+        "Ask John Pozzi (email on the page) or find the program on Swansea MyRec before listing; otherwise drop"
+      ]
+    }
   }
 }
