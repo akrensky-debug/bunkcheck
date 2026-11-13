@@ -2,53 +2,134 @@
   "slug": "roaring-brook-nature-center-summer-discovery-days",
   "name": "Roaring Brook Nature Center Summer Discovery Days",
   "operator_name": "The Children's Museum Inc.",
-  "website_url": "https://www.thechildrensmuseumct.org/summer-2026-discovery-days/",
+  "website_url": "https://roaringbrook.org/summer-2027-discovery-days/",
   "registration_url": "https://purchase.thechildrensmuseumct.org/calendar.aspx",
   "phone": "860-693-0263",
-  "city": null,
-  "state": null,
-  "zip": null,
+  "street_address": "70 Gracey Road",
+  "city": "Canton",
+  "state": "CT",
+  "zip": "06019",
   "camp_type": "day",
   "primary_categories": [
     "nature"
   ],
-  "description_short": "Half-day weekly nature programs at Roaring Brook Nature Center, Monday through Friday from 9 am to noon. Each week has a theme, with short hikes, games, stories, crafts and visits with the Nature Center's animals.",
   "activities": [
-    "short hikes",
-    "games",
-    "stories",
-    "crafts",
-    "animal visits"
+    "Hikes",
+    "Games",
+    "Stories",
+    "Crafts",
+    "Animal visits",
+    "Stream and pond exploration"
   ],
-  "price_per_week": 315,
+  "age_min": 4,
+  "description_short": "Weekly themed nature programs at Roaring Brook Nature Center in Canton, in four age groups from Acorns (ages 4 to 5) to Oaks (grades 4 and up). Each week brings hikes, games, stories, crafts and visits with the center's animals. Summer 2027 dates and themes will be posted in early 2027.",
   "price_min": 270,
   "price_max": 315,
-  "season_year": 2026,
+  "price_per_week": 315,
   "price_per": "week",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Week 1",
+      "start_date": "2026-06-22",
+      "end_date": "2026-06-26",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 2",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-03",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 3",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 4",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 5",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 6",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 7",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 8",
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-14",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Summer Send-Off (grades K-5)",
+      "start_date": "2026-08-17",
+      "end_date": "2026-08-21",
+      "price": null,
+      "availability": "unknown"
+    }
+  ],
   "sources": [
     {
-      "url": "https://www.thechildrensmuseumct.org/summer-2026-discovery-days/",
-      "checked": "2026-10-13",
+      "url": "https://roaringbrook.org/summer-2027-discovery-days/",
+      "checked": "2026-11-13",
       "fields": [
         "name",
-        "operator_name",
         "website_url",
-        "registration_url",
         "phone",
-        "camp_type",
+        "street_address",
+        "city",
+        "state",
+        "zip",
         "primary_categories",
         "activities",
+        "age_min",
         "description_short",
+        "sessions"
+      ],
+      "note": "Roaring Brook's own Summer Discovery Days page; shows the 2026 programs, 2027 not yet posted"
+    },
+    {
+      "url": "https://www.thechildrensmuseumct.org/summer-2026-discovery-days/",
+      "checked": "2026-11-13",
+      "fields": [
+        "operator_name",
+        "registration_url",
+        "camp_type",
         "price_min",
         "price_max",
         "price_per_week",
         "price_per"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Operator's 2026 page: $270 members, $315 non-members per program, Mon-Fri 9am to noon"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.thechildrensmuseumct.org/summer-2026-discovery-days/",
       "kind": "html",
@@ -91,6 +172,23 @@
       "missing required city",
       "missing required state",
       "missing required zip"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.thechildrensmuseumct.org/summer-2026-discovery-days/",
+        "https://roaringbrook.org/",
+        "https://roaringbrook.org/summer-2027-discovery-days/"
+      ],
+      "changes": [
+        "Filled the missing city, state and ZIP from Roaring Brook's own site: 70 Gracey Road, Canton, CT 06019. This fixes the validator errors.",
+        "website_url now points to Roaring Brook's own Summer Discovery Days page instead of the parent museum's page.",
+        "Added age_min 4 (Acorns, ages 4 to 5); the oldest group is grades 4 and up, so no maximum is set.",
+        "Added the nine 2026 weeks: eight theme weeks June 22 to August 14 plus Summer Send-Off (grades K-5) August 17-21.",
+        "Rewrote the description and activities from Roaring Brook's page and noted that 2027 dates come in early 2027.",
+        "Kept prices ($270 members, $315 non-members per weekly program) from the operator's 2026 page."
+      ],
+      "open_questions": []
+    }
   }
 }

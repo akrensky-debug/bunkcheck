@@ -14,9 +14,6 @@
     "sports",
     "nature"
   ],
-  "age_min": 9,
-  "age_max": 16,
-  "description_short": "Full-day (9am-4pm) camp on Lake Quassapaug, run in two-week sessions. Children can pick sailing plus nature exploration in Flanders' Whittemore Sanctuary (Sails & Trails), or a sailing-only program in Optimist dinghies (ages 9-12) or 420 dinghies (ages 12-16).",
   "activities": [
     "Sailing (Optimist dinghies)",
     "Sailing (420 dinghies)",
@@ -28,12 +25,16 @@
     "Wetland exploration",
     "Intro to racing"
   ],
+  "age_min": 9,
+  "age_max": 16,
+  "description_short": "Full-day (9am-4pm) camp on Lake Quassapaug, run in two-week sessions. Children can pick sailing plus nature exploration in Flanders' Whittemore Sanctuary (Sails & Trails), or a sailing-only program in Optimist dinghies (ages 9-12) or 420 dinghies (ages 12-16).",
   "price_min": 480,
   "price_max": 690,
-  "financial_aid": true,
+  "price_per": "session",
   "extended_care": true,
   "meals_included": false,
-  "refund_policy_summary": "No refunds for camp registrations. The only exception is a cancellation caused by COVID-related government restrictions. Families registered for the cancelled 2026 Session 4 were offered a transfer or a refund.",
+  "financial_aid": true,
+  "refund_policy_summary": "No refunds for camp registrations, except when camp is cancelled because of COVID-related government restrictions. Families registered for the cancelled 2026 Session 4 were offered a transfer or a refund.",
   "swim_waterfront_notes": "Campers sail and kayak on Lake Quassapaug. They must be comfortable swimming in a life jacket, and there is a swim test (done in a life jacket). Life jackets (Type III USCG approved, non-inflatable) must be worn at all times on or near the water. QSC provides them, but campers may bring their own.",
   "season_year": 2026,
   "sessions": [
@@ -62,7 +63,7 @@
   "sources": [
     {
       "url": "https://www.qsailingcenter.org/sailsandtrails",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -86,13 +87,14 @@
         "financial_aid",
         "refund_policy_summary",
         "swim_waterfront_notes",
-        "sessions"
+        "sessions",
+        "price_per"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Sails & Trails page, 2026 season"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.qsailingcenter.org/sailsandtrails",
       "kind": "html",
@@ -133,6 +135,18 @@
         "quote": "Sails & Trails 19-11$630$690$480$540"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.qsailingcenter.org/sailsandtrails"
+      ],
+      "changes": [
+        "Checked every field against the Sails & Trails page; contact, ages, activities, hours, extended care ($9/hr, 8-9am and 4-5pm), scholarships, swim test and the three 2026 sessions all match.",
+        "Added price_per session: every price ($480 to $690) is for a two-week session. Session prices show the $630 non-member early rate.",
+        "City and ZIP come from the P.O. Box in Middlebury; the page gives no street address for the sailing center on Lake Quassapaug."
+      ],
+      "open_questions": []
+    }
   }
 }
