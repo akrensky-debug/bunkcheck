@@ -4,14 +4,13 @@
   "operator_name": "Medford Community Schools (Medford Public Schools)",
   "website_url": "https://www.mps02155.org/extracurricular/medford-community-schools/summer-fun-program",
   "email": "apetrelis@medford.k12.ma.us",
-  "street_address": "Missituk School, 37 Hicks Avenue",
+  "street_address": "37 Hicks Avenue (Missituk School)",
   "city": "Medford",
   "state": "MA",
   "zip": "02155",
   "camp_type": "day",
   "primary_categories": [
-    "sports",
-    "arts"
+    "general"
   ],
   "grade_min": 1,
   "grade_max": 8,
@@ -21,9 +20,10 @@
     "Games",
     "Arts & Crafts",
     "Movies",
-    "Swimming",
+    "Swimming (outdoor pool)",
     "DJ dance party (Fridays)",
     "Basketball",
+    "Indoor gym",
     "In-house field trips"
   ],
   "price_min": 250,
@@ -35,7 +35,7 @@
   "sources": [
     {
       "url": "https://www.mps02155.org/extracurricular/medford-community-schools/summer-fun-program",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -54,7 +54,8 @@
         "price_max",
         "meals_included",
         "special_needs_notes",
-        "swim_waterfront_notes"
+        "swim_waterfront_notes",
+        "secondary_categories"
       ],
       "note": "Drafted by the listing tool from this page"
     },
@@ -68,7 +69,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.mps02155.org/extracurricular/medford-community-schools/summer-fun-program",
       "kind": "html",
@@ -111,6 +112,46 @@
         "quote": "The Summer Fun Program takes place at the Missituk School"
       }
     ],
-    "errors": []
-  }
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.mps02155.org/extracurricular/medford-community-schools/summer-fun-program"
+      ],
+      "changes": [
+        "Street address reordered to '37 Hicks Avenue (Missituk School)' so the street comes first",
+        "Categories: primary general (page lists sports, games, arts & crafts, movies, swimming); sports, arts, swimming as secondary",
+        "Activities: added indoor gym, noted outdoor pool",
+        "Confirmed the rest on the page: grades 1-8, Missituk School, 2026 cost $250 resident / $300 non-resident, free breakfast and lunch, special-needs and health-record notes, director email",
+        "Kept 2026 season: page says 'Please be on the lookout for 2027 Registration Information soon!'",
+        "Re-fetched as BunkcheckBot on 2026-11-12: confirmed"
+      ],
+      "open_questions": [
+        "The page does not say whether $250/$300 is per week or for the whole summer, and gives no dates or daily hours, so there are no sessions",
+        "Registration is open-ended ('Registration DOES NOT CLOSE ... Register all Winter and Spring!'); no 2027 date"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.mps02155.org/extracurricular/medford-community-schools/summer-fun-program",
+      "changes": [
+        "Street address reordered to '37 Hicks Avenue (Missituk School)' so the street comes first",
+        "Categories: primary general (page lists sports, games, arts & crafts, movies, swimming); sports, arts, swimming as secondary",
+        "Activities: added indoor gym, noted outdoor pool",
+        "Confirmed the rest on the page: grades 1-8, Missituk School, 2026 cost $250 resident / $300 non-resident, free breakfast and lunch, special-needs and health-record notes, director email",
+        "Kept 2026 season: page says 'Please be on the lookout for 2027 Registration Information soon!'",
+        "Re-fetched as BunkcheckBot on 2026-11-12: confirmed"
+      ],
+      "for_andrew": [
+        "The page does not say whether $250/$300 is per week or for the whole summer, and gives no dates or daily hours, so there are no sessions",
+        "Registration is open-ended ('Registration DOES NOT CLOSE ... Register all Winter and Spring!'); no 2027 date"
+      ]
+    }
+  },
+  "secondary_categories": [
+    "sports",
+    "arts",
+    "swimming"
+  ]
 }

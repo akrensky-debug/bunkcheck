@@ -16,9 +16,6 @@
     "arts",
     "nature"
   ],
-  "age_min": 3,
-  "grade_max": 6,
-  "description_short": "A general day camp at Fay School in Southborough for children age 3 through entering grade 6. Campers are grouped by grade and do sports, arts and crafts, a ropes/challenge course, and pool time, with younger groups on a more structured schedule.",
   "activities": [
     "Archery",
     "Arts & Crafts",
@@ -38,13 +35,19 @@
     "Wood Shop",
     "Swimming"
   ],
-  "price_per_week": 610,
+  "age_min": 3,
+  "grade_max": 6,
+  "description_short": "A general day camp at Fay School in Southborough for children age 3 through entering grade 6, 9:00 AM to 4:00 PM, in a launch week and four two-week sessions. Campers are grouped by grade and do sports, arts and crafts, a ropes/challenge course, and pool time, with younger groups on a more structured schedule. Discoverers (preschool to kindergarten) can attend half days.",
   "price_min": 395,
   "price_max": 1220,
+  "price_per_week": 610,
+  "price_per": "session",
   "extended_care": true,
+  "meals_included": false,
+  "financial_aid": true,
+  "refund_policy_summary": "A non-refundable deposit is due at registration and is deducted from session fees. Cancelling before the payment due date gives a full refund minus the deposit; no refunds after the payment due date. Full refund if FaySummer cancels a program.",
   "swim_waterfront_notes": "All campers get time in the camp's pools. Discoverers (preschool to kindergarten) have swim lessons as part of their daily activities.",
   "season_year": 2026,
-  "price_per": "week",
   "sessions": [
     {
       "name": "FaySummer Launch Week",
@@ -54,7 +57,7 @@
       "availability": "unknown"
     },
     {
-      "name": "Session 1",
+      "name": "Session 1 (no camp Friday July 3; prorated)",
       "start_date": "2026-06-29",
       "end_date": "2026-07-10",
       "price": 1220,
@@ -85,7 +88,7 @@
   "sources": [
     {
       "url": "https://www.faysummer.org/day-programs/classic-day-camp-age-3-grade-6",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -112,10 +115,19 @@
         "sessions"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.faysummer.org/rates-and-registration",
+      "checked": "2026-11-12",
+      "fields": [
+        "financial_aid",
+        "meals_included",
+        "refund_policy_summary"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.faysummer.org/day-programs/classic-day-camp-age-3-grade-6",
       "kind": "html",
@@ -201,6 +213,42 @@
         "quote": "$1220 - Two-Week Session"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.faysummer.org/day-programs/classic-day-camp-age-3-grade-6",
+        "https://www.faysummer.org/rates-and-registration",
+        "https://www.faysummer.org/faq",
+        "https://www.faysummer.org/"
+      ],
+      "changes": [
+        "price_per: week -> session ($395 is the half-day Launch Week, $1,220 a full-day two-week session); price_per_week 610 kept (Launch Week is one week)",
+        "Session 1 name notes no camp Friday July 3 (prorated), from the Rates & Registration page",
+        "Added financial_aid true (limited need-based aid), meals_included false (lunch $5/day extra or bring from home), refund policy",
+        "Description now gives hours, session pattern and the half-day option",
+        "All low-confidence items (operator, prices, session dates, activities) confirmed on the page; 2026 season kept since 2027 is not posted"
+      ],
+      "open_questions": [
+        "2027 dates and rates not posted; home page says FaySummer 'will reach out in the fall regarding registration for next summer'",
+        "Deposit amount not stated on the pages checked"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.faysummer.org/day-programs/classic-day-camp-age-3-grade-6",
+      "changes": [
+        "price_per: week -> session ($395 is the half-day Launch Week, $1,220 a full-day two-week session); price_per_week 610 kept (Launch Week is one week)",
+        "Session 1 name notes no camp Friday July 3 (prorated), from the Rates & Registration page",
+        "Added financial_aid true (limited need-based aid), meals_included false (lunch $5/day extra or bring from home), refund policy",
+        "Description now gives hours, session pattern and the half-day option",
+        "All low-confidence items (operator, prices, session dates, activities) confirmed on the page; 2026 season kept since 2027 is not posted"
+      ],
+      "for_andrew": [
+        "2027 dates and rates not posted; home page says FaySummer 'will reach out in the fall regarding registration for next summer'",
+        "Deposit amount not stated on the pages checked"
+      ]
+    }
   }
 }

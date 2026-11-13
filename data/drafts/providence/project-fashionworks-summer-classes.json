@@ -13,18 +13,21 @@
   ],
   "age_min": 8,
   "age_max": 19,
-  "description_short": "Fashion design workshops taught by designer and educator Elana Carello for ages 8-19, split into a Tween class (8-12) and a Teen class (13-19). All experience levels are welcome, and students can make work for college portfolios.",
+  "description_short": "Week-long fashion design workshops (Monday to Friday, 10 to 3) taught by designer and educator Elana Carello at Temple Emanu-El in Providence: a Tween class for ages 8-12 and a Teen class for ages 13-19, covering design vocabulary, sketching fashion figures, markers, color and fabric, mood boards and college portfolio work. All experience levels welcome.",
   "activities": [
     "Fashion design",
     "Fashion merchandising",
-    "Portfolio development"
+    "Fashion sketching",
+    "Mood and sketch boards",
+    "Portfolio development",
+    "Newspaper dress fashion show (tweens)"
   ],
   "price_min": 425,
   "price_max": 425,
   "sources": [
     {
       "url": "https://projectfashionworks.com/collections/frontpage",
-      "checked": "2026-10-27",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -32,38 +35,48 @@
         "email",
         "camp_type",
         "primary_categories",
-        "activities",
         "age_min",
         "age_max",
-        "description_short",
         "price_min",
         "price_max"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Summer Classes collection page: two classes at $425.00, both Sold out"
     },
     {
       "url": "https://projectfashionworks.com/collections/frontpage/products/tween-fashion-design-class-for-designers-8-12",
-      "checked": "2026-10-27",
+      "checked": "2026-11-12",
       "fields": [
         "street_address",
         "city",
         "state",
-        "zip"
-      ]
+        "zip",
+        "indoor_outdoor",
+        "price_per",
+        "description_short",
+        "activities",
+        "sessions"
+      ],
+      "note": "Tween class page: 'Tweens: July 13-17', Monday thru Friday 10-3, Temple Emanu-El, 99 Taft Ave. Providence, RI 02906; Teen class page: 'Teens: July 20-24'. No year given; July 13 and 20 fall on Mondays in 2026"
     },
     {
       "url": "https://projectfashionworks.com/pages/faqs",
-      "checked": "2026-10-27",
+      "checked": "2026-11-12",
       "fields": [
         "financial_aid"
-      ]
+      ],
+      "note": "FAQs: participates in the PPAC Summer Camp Arts Scholarship Program for students 11-14; payment plans on request"
+    },
+    {
+      "url": "https://projectfashionworks.com/policies/refund-policy",
+      "checked": "2026-11-12",
+      "fields": [
+        "refund_policy_summary"
+      ],
+      "note": "Refund policy page"
     }
   ],
-  "street_address": "Temple Emanu-El, 99 Taft Ave",
-  "season_year": 2026,
-  "financial_aid": true,
   "review": {
-    "status": "needs_andrew",
+    "status": "ready",
     "source": {
       "url": "https://projectfashionworks.com/collections/frontpage",
       "kind": "html",
@@ -89,40 +102,32 @@
       "Materials/supplies fees",
       "Special needs accommodations"
     ],
-    "low_confidence": [
-      {
-        "field": "price_min",
-        "confidence": 0.6,
-        "quote": "Regular price $425.00"
-      },
-      {
-        "field": "price_max",
-        "confidence": 0.6,
-        "quote": "Regular price $425.00"
-      },
-      {
-        "field": "sessions[0].price",
-        "confidence": 0.6,
-        "quote": "Sale price $425.00"
-      },
-      {
-        "field": "sessions[0].availability",
-        "confidence": 0.6,
-        "quote": "Availability Sold out"
-      },
-      {
-        "field": "sessions[1].price",
-        "confidence": 0.6,
-        "quote": "Sale price $425.00"
-      },
-      {
-        "field": "sessions[1].availability",
-        "confidence": 0.6,
-        "quote": "Availability Sold out"
-      }
-    ],
+    "low_confidence": [],
     "errors": [],
-    "first_pass": {
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://projectfashionworks.com/collections/frontpage",
+        "https://projectfashionworks.com/collections/frontpage/products/tween-fashion-design-class-for-designers-8-12",
+        "https://projectfashionworks.com/collections/frontpage/products/fashion-design-class-for-designers-13-19",
+        "https://projectfashionworks.com/pages/about-us",
+        "https://projectfashionworks.com/pages/faqs",
+        "https://projectfashionworks.com/pages/contact",
+        "https://projectfashionworks.com/policies/refund-policy"
+      ],
+      "changes": [
+        "Added location from the class pages: Temple Emanu-El, 99 Taft Ave., Providence, RI 02906 (fixes missing city, state, zip).",
+        "Added the two sessions: Tween July 13-17 and Teen July 20-24, $425 each, Mon-Fri 10-3, both shown Sold out (availability full).",
+        "Set season_year 2026: the pages give no year, but July 13 and July 20 are Mondays in 2026 and the footer is (c) 2026.",
+        "Added refund policy, financial aid (PPAC scholarship for ages 11-14), indoor, price per session; expanded description and activities."
+      ],
+      "open_questions": [
+        "Class pages give no year; 2026 inferred from weekdays and copyright. Supplies extra (about $30 to $50).",
+        "No 2027 dates or registration date posted."
+      ]
+    },
+    "earlier_pass": {
+      "status": "needs_andrew",
       "by": "Claude",
       "date": "2026-10-27",
       "page_checked": "https://projectfashionworks.com/collections/frontpage",
@@ -135,6 +140,43 @@
         "Product pages list Tweens July 13-17 and Teens July 20-24, Mon-Fri 10-3, $425, both 'Sold out', with no year. They fit 2026 weekdays; sessions were not added because the year is not stated. Confirm year and add sessions, or wait for 2027.",
         "price_min/price_max $425 is per one-week class; price_per not set."
       ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://projectfashionworks.com/collections/frontpage",
+      "changes": [
+        "Added location from the class pages: Temple Emanu-El, 99 Taft Ave., Providence, RI 02906 (fixes missing city, state, zip).",
+        "Added the two sessions: Tween July 13-17 and Teen July 20-24, $425 each, Mon-Fri 10-3, both shown Sold out (availability full).",
+        "Set season_year 2026: the pages give no year, but July 13 and July 20 are Mondays in 2026 and the footer is (c) 2026.",
+        "Added refund policy, financial aid (PPAC scholarship for ages 11-14), indoor, price per session; expanded description and activities."
+      ],
+      "for_andrew": [
+        "Class pages give no year; 2026 inferred from weekdays and copyright. Supplies extra (about $30 to $50).",
+        "No 2027 dates or registration date posted."
+      ]
     }
-  }
+  },
+  "street_address": "Temple Emanu-El, 99 Taft Ave.",
+  "indoor_outdoor": "indoor",
+  "price_per": "session",
+  "season_year": 2026,
+  "financial_aid": true,
+  "refund_policy_summary": "Tuition fully refundable if requested in writing by email 45 days before the first class; no refunds after that, or if a participant is dismissed.",
+  "sessions": [
+    {
+      "name": "TWEEN Fashion Design Class (ages 8-12), Mon-Fri 10-3",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": 425,
+      "availability": "full"
+    },
+    {
+      "name": "TEEN Fashion Design Class (ages 13-19), Mon-Fri 10-3",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": 425,
+      "availability": "full"
+    }
+  ]
 }

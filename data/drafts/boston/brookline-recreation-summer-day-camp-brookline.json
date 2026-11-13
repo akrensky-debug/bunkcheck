@@ -3,19 +3,19 @@
   "name": "Brookline Recreation Summer Day Camp",
   "operator_name": "Brookline Recreation Department",
   "website_url": "https://www.brooklinerec.com/156/Camp-Information",
-  "registration_url": "https://register.brooklinerec.com",
+  "registration_url": "https://rec.us/brookline",
   "email": "recreation@brooklinema.gov",
   "phone": "617-730-2069",
   "city": "Brookline",
   "state": "MA",
-  "zip": null,
+  "zip": "02446",
   "camp_type": "day",
   "primary_categories": [
     "arts"
   ],
   "grade_min": 0,
   "grade_max": 8,
-  "description_short": "A town-run summer day camp for children entering grades K–8, focused on arts and crafts and non-competitive games. Children are placed at one of three Brookline school sites based on their fall grade: Driscoll (K–1), Hayes (2–4) or Runkle (5–8).",
+  "description_short": "A town-run summer day camp for children entering grades K–8, with an emphasis on arts and crafts and non-competitive games. Campers go to one of three camps by fall grade: Camp Chestnut (K–1) at Driscoll School, Camp Coolidge (grades 2–4) at Hayes School, and Camp Washington (grades 5–8) at Runkle School. Hours are 8:30am to 4pm, with extended day to 5:30pm for Chestnut and Coolidge.",
   "activities": [
     "Arts and crafts",
     "Non-competitive games"
@@ -75,12 +75,11 @@
   "sources": [
     {
       "url": "https://www.brooklinerec.com/156/Camp-Information",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
         "website_url",
-        "registration_url",
         "email",
         "phone",
         "city",
@@ -98,13 +97,16 @@
         "financial_aid",
         "refund_policy_summary",
         "special_needs_notes",
-        "sessions"
+        "sessions",
+        "registration_url",
+        "street_address",
+        "zip"
       ],
       "note": "Drafted by the listing tool from this page"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.brooklinerec.com/156/Camp-Information",
       "kind": "html",
@@ -127,15 +129,42 @@
       "Exact weekly session breakdown and whether partial weeks exist",
       "Whether extended day is offered for Washington (grades 5-8): the page says it is only for Chestnut and Coolidge"
     ],
-    "low_confidence": [
-      {
-        "field": "sessions",
-        "confidence": 0.7,
-        "quote": "Camp will run from July 6th 2026 - August 14th 2026"
-      }
-    ],
-    "errors": [
-      "missing required zip"
-    ]
-  }
+    "low_confidence": [],
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.brooklinerec.com/156/Camp-Information",
+        "https://rec.us/brookline"
+      ],
+      "changes": [
+        "Added street_address 725 Washington St and ZIP 02446 (Driscoll School, the first listed site) to clear the missing-zip error",
+        "registration_url changed to https://rec.us/brookline (the page's Register Now button; register.brooklinerec.com is the older account login)",
+        "Description now names the three camps (Chestnut, Coolidge, Washington) and their schools, hours, and that extended day is only for Chestnut and Coolidge",
+        "Confirmed sessions: page says 'Camp will run from July 6th 2026 - August 14th 2026' at $325 per week; six Mon-Fri weeks match"
+      ],
+      "open_questions": [
+        "Camp runs at three sites; street_address/zip use the first listed site (Driscoll School, 725 Washington St, 02446). Hayes is 02467 and Runkle 02445. Andrew may prefer a different site or the Recreation office.",
+        "No 2027 dates, prices or registration date posted (page still shows the 2026 season; registration portal lists no camps yet).",
+        "Meals not mentioned for Summer Day Camp."
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.brooklinerec.com/156/Camp-Information",
+      "changes": [
+        "Added street_address 725 Washington St and ZIP 02446 (Driscoll School, the first listed site) to clear the missing-zip error",
+        "registration_url changed to https://rec.us/brookline (the page's Register Now button; register.brooklinerec.com is the older account login)",
+        "Description now names the three camps (Chestnut, Coolidge, Washington) and their schools, hours, and that extended day is only for Chestnut and Coolidge",
+        "Confirmed sessions: page says 'Camp will run from July 6th 2026 - August 14th 2026' at $325 per week; six Mon-Fri weeks match"
+      ],
+      "for_andrew": [
+        "Camp runs at three sites; street_address/zip use the first listed site (Driscoll School, 725 Washington St, 02446). Hayes is 02467 and Runkle 02445. Andrew may prefer a different site or the Recreation office.",
+        "No 2027 dates, prices or registration date posted (page still shows the 2026 season; registration portal lists no camps yet).",
+        "Meals not mentioned for Summer Day Camp."
+      ]
+    }
+  },
+  "street_address": "725 Washington St"
 }

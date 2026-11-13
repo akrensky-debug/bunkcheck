@@ -21,11 +21,10 @@
   "financial_aid": true,
   "swim_waterfront_notes": "Camp is on Echo Lake. Swimming is listed as an activity, but no details about the waterfront are given.",
   "season_year": 2027,
-  "camp_type": "sleepaway",
   "sources": [
     {
       "url": "https://www.eccri.org/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -38,17 +37,25 @@
         "primary_categories",
         "activities",
         "description_short",
-        "financial_aid",
         "swim_waterfront_notes"
       ],
       "note": "Drafted by the listing tool from this page"
     },
     {
       "url": "https://www.eccri.org/aboutecc",
-      "checked": "2026-10-27",
+      "checked": "2026-11-12",
       "fields": [
         "camp_type"
-      ]
+      ],
+      "note": "'ECC is an overnight summer camp and year-round conference center located in Pascoag, Rhode Island.'"
+    },
+    {
+      "url": "https://www.eccri.org/pricingandscholarship",
+      "checked": "2026-11-12",
+      "fields": [
+        "financial_aid"
+      ],
+      "note": "Three-tier pricing (amounts not shown in page text); need-based scholarships applied for during online registration, with a $25 per person per camp deposit; extended payment plans through December."
     },
     {
       "url": "https://www.eccri.org/staff",
@@ -103,8 +110,31 @@
         "quote": "finding peace by Echo Lake"
       }
     ],
-    "errors": [],
-    "first_pass": {
+    "errors": [
+      "missing required camp_type",
+      "camp_type must be one of ['day', 'sleepaway', 'specialty']"
+    ],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.eccri.org/",
+        "https://www.eccri.org/aboutecc",
+        "https://www.eccri.org/pricingandscholarship",
+        "https://www.eccri.org/acaaccreditation"
+      ],
+      "changes": [
+        "Added camp_type sleepaway: the About page says 'ECC is an overnight summer camp'. Validator now passes.",
+        "financial_aid true now sourced to the Pricing and Scholarship page (need-based scholarships).",
+        "Other fields re-checked against the homepage: they match."
+      ],
+      "open_questions": [
+        "Homepage: 'Stay tuned for more information about Summer 2027!' No dates, ages, prices or registration date yet.",
+        "The ACA Accreditation page says 'ECC is accredited by the American Camp Association'; aca_accredited left null until checked on acacamps.org.",
+        "The About page still says 'Registration for summer camp is officially open!' (stale)."
+      ]
+    },
+    "earlier_pass": {
+      "status": "ready",
       "by": "Claude",
       "date": "2026-10-27",
       "page_checked": "https://www.eccri.org/",
@@ -115,8 +145,24 @@
         "season_year 2027 has no dates/prices yet (\"Stay tuned for more information about Summer 2027\"); ages not stated",
         "ACA page explains accreditation but does not state outright that ECC is accredited; aca_accredited left null pending an acacamps.org check"
       ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.eccri.org/",
+      "changes": [
+        "Added camp_type sleepaway: the About page says 'ECC is an overnight summer camp'. Validator now passes.",
+        "financial_aid true now sourced to the Pricing and Scholarship page (need-based scholarships).",
+        "Other fields re-checked against the homepage: they match."
+      ],
+      "for_andrew": [
+        "Homepage: 'Stay tuned for more information about Summer 2027!' No dates, ages, prices or registration date yet.",
+        "The ACA Accreditation page says 'ECC is accredited by the American Camp Association'; aca_accredited left null until checked on acacamps.org.",
+        "The About page still says 'Registration for summer camp is officially open!' (stale)."
+      ]
     }
   },
+  "camp_type": "sleepaway",
   "email": "ally@eccri.org",
   "contacts": [
     {

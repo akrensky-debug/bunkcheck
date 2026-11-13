@@ -2,7 +2,7 @@
   "slug": "kidstock-creative-theater-summerstage-winchester",
   "name": "Kidstock! Creative Theater SUMMERSTAGE",
   "operator_name": "Kidstock! Creative Theater",
-  "website_url": "https://kidstocktheater.com/summer/",
+  "website_url": "https://kidstocktheater.com/summer-2027/",
   "registration_url": "https://kidstocktheater.com/registration-portal/",
   "email": "admin@kidstocktheater.com",
   "phone": "781-729-5543",
@@ -14,32 +14,33 @@
   "primary_categories": [
     "performing_arts"
   ],
-  "description_short": "A weekly summer theater day program in Winchester, MA, running 9 AM–4:30 PM. Each week ends with a Friday presentation.",
+  "description_short": "Kidstock!'s SUMMERSTAGE theater day program in Winchester, MA for Pre-K (age 4+) through Grade 6, 9 AM–4:30 PM. Full show weeks ($650) end with a Friday presentation; individual-day weeks ($150 per day) mix art, music, drama and dance with no final show. Extended day runs 8 AM–6 PM for an added fee.",
   "activities": [
-    "Theater",
-    "Songs and dances",
-    "Rehearsal",
+    "Creative drama",
+    "Music and movement",
+    "Dance",
     "Art projects",
+    "Movie-making (JingleVision)",
+    "Outdoor recreation",
     "Friday presentations"
   ],
   "price_per_week": 650,
-  "price_min": 595,
+  "price_min": 520,
   "price_max": 650,
   "financial_aid": true,
   "extended_care": true,
   "meals_included": false,
-  "refund_policy_summary": "You can move to another available summer week at no charge. If you withdraw before March 1, you get a 100% tuition refund. Before June 1, you get 50% back plus a 50% credit that never expires. After June 1, you get 50% back. Discounted tuition gets no refund or credit, and neither does the $25 family registration fee. Withdrawals must be emailed by noon on the Friday before your week. There are no refunds once a week has started.",
+  "refund_policy_summary": "Transfers to another week are free when space allows (you pay any tuition difference). Withdrawals must be emailed by noon on the Friday before your week. Withdraw 30+ days before that Friday: 100% tuition back minus the registration fee and a $50 cancellation fee per child per week. Within 29 days: 50% back. After that Friday: no refunds or credits. The $35 family registration fee is nonrefundable.",
   "special_needs_notes": "The program is nut-free, and staff check what's in lunch bags. Inhalers, EpiPens and any other medication must be handed to the office.",
-  "season_year": 2026,
+  "season_year": 2027,
   "price_per": "week",
   "sources": [
     {
       "url": "https://kidstocktheater.com/summer-tuition-policies/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
-        "website_url",
         "registration_url",
         "email",
         "phone",
@@ -48,8 +49,6 @@
         "state",
         "camp_type",
         "primary_categories",
-        "activities",
-        "description_short",
         "price_min",
         "price_max",
         "price_per_week",
@@ -69,10 +68,22 @@
         "zip"
       ],
       "note": "ZIP from the US Census geocoder for 50 CROSS ST, WINCHESTER, MA, 01890"
+    },
+    {
+      "url": "https://kidstocktheater.com/summer-2027/",
+      "checked": "2026-11-12",
+      "fields": [
+        "sessions",
+        "age_min",
+        "description_short",
+        "activities",
+        "website_url"
+      ],
+      "note": "SUMMERSTAGE 2027 page: programs, dates, tuition, ages, sample day"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://kidstocktheater.com/summer-tuition-policies/",
       "kind": "html",
@@ -95,23 +106,124 @@
       "Whether a deposit is required (a $25 non-refundable family registration fee applies)",
       "Swim or waterfront activities (none mentioned)"
     ],
-    "low_confidence": [
-      {
-        "field": "camp_type",
-        "confidence": 0.75,
-        "quote": "Our full day program for all ages runs from 9 AM–4:30 PM."
-      },
-      {
-        "field": "website_url",
-        "confidence": 0.7,
-        "quote": "Summer Programs"
-      },
-      {
-        "field": "registration_url",
-        "confidence": 0.7,
-        "quote": "Register"
-      }
-    ],
-    "errors": []
-  }
+    "low_confidence": [],
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://kidstocktheater.com/summer-2027/",
+        "https://kidstocktheater.com/summer-tuition-policies/",
+        "https://kidstocktheater.com/summer/"
+      ],
+      "changes": [
+        "Updated to 2027 (season_year 2027): 11 sessions from the SUMMERSTAGE 2027 page, June 21 to Sept 2, 2027; seven full show weeks at $650 (early bird $520), four individual-day weeks at $150/day (session price left blank)",
+        "website_url now https://kidstocktheater.com/summer-2027/ (where /summer/ redirects)",
+        "price_min 520 (2027 early bird full week, was 2026's $595); price_max/price_per_week 650 unchanged",
+        "Added age_min 4 (Pre-K age 4+ through Grade 6)",
+        "Rewrote refund policy for 2027: 30+ days = 100% minus $35 registration fee and $50 cancellation fee; within 29 days = 50%; registration fee now $35 (was $25)",
+        "Description and activities rewritten from the 2027 page (drama, music and movement, dance, art, JingleVision movie-making, outdoor recreation)"
+      ],
+      "open_questions": [
+        "Ages are by grade completed; the page says 'the grade your child will have completed by June 2026', likely a typo for 2027. grade fields left blank.",
+        "Individual-day weeks are priced per day ($150; early bird $600 for five days / $480 for four), so no single session price recorded."
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://kidstocktheater.com/summer-2027/",
+      "changes": [
+        "Updated to 2027 (season_year 2027): 11 sessions from the SUMMERSTAGE 2027 page, June 21 to Sept 2, 2027; seven full show weeks at $650 (early bird $520), four individual-day weeks at $150/day (session price left blank)",
+        "website_url now https://kidstocktheater.com/summer-2027/ (where /summer/ redirects)",
+        "price_min 520 (2027 early bird full week, was 2026's $595); price_max/price_per_week 650 unchanged",
+        "Added age_min 4 (Pre-K age 4+ through Grade 6)",
+        "Rewrote refund policy for 2027: 30+ days = 100% minus $35 registration fee and $50 cancellation fee; within 29 days = 50%; registration fee now $35 (was $25)",
+        "Description and activities rewritten from the 2027 page (drama, music and movement, dance, art, JingleVision movie-making, outdoor recreation)"
+      ],
+      "for_andrew": [
+        "Ages are by grade completed; the page says 'the grade your child will have completed by June 2026', likely a typo for 2027. grade fields left blank.",
+        "Individual-day weeks are priced per day ($150; early bird $600 for five days / $480 for four), so no single session price recorded."
+      ]
+    }
+  },
+  "sessions": [
+    {
+      "name": "Once Upon a Cruise: Jungle Quest (individual days)",
+      "start_date": "2027-06-21",
+      "end_date": "2027-06-25",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Once Upon a Cruise: Ocean Voyage (individual days)",
+      "start_date": "2027-06-28",
+      "end_date": "2027-07-02",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "JingleVision: Queen Kong (individual days)",
+      "start_date": "2027-07-06",
+      "end_date": "2027-07-09",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Swan Cake",
+      "start_date": "2027-07-12",
+      "end_date": "2027-07-16",
+      "price": 650,
+      "availability": "unknown"
+    },
+    {
+      "name": "Broadway Week: Aladdin",
+      "start_date": "2027-07-19",
+      "end_date": "2027-07-23",
+      "price": 650,
+      "availability": "unknown"
+    },
+    {
+      "name": "Dog Quixote",
+      "start_date": "2027-07-26",
+      "end_date": "2027-07-30",
+      "price": 650,
+      "availability": "unknown"
+    },
+    {
+      "name": "Off-Broadway Week: Alienne",
+      "start_date": "2027-08-02",
+      "end_date": "2027-08-06",
+      "price": 650,
+      "availability": "unknown"
+    },
+    {
+      "name": "Old Monet Had a Farm",
+      "start_date": "2027-08-09",
+      "end_date": "2027-08-13",
+      "price": 650,
+      "availability": "unknown"
+    },
+    {
+      "name": "Shakespeare Week: Rodeo & Juliet",
+      "start_date": "2027-08-16",
+      "end_date": "2027-08-20",
+      "price": 650,
+      "availability": "unknown"
+    },
+    {
+      "name": "101 Dinosaurs",
+      "start_date": "2027-08-23",
+      "end_date": "2027-08-27",
+      "price": 650,
+      "availability": "unknown"
+    },
+    {
+      "name": "JingleVision: A Starfish Is Born (individual days)",
+      "start_date": "2027-08-30",
+      "end_date": "2027-09-02",
+      "price": null,
+      "availability": "unknown"
+    }
+  ],
+  "age_min": 4
 }

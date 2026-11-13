@@ -12,10 +12,7 @@
   "zip": "02747",
   "camp_type": "day",
   "primary_categories": [
-    "sports",
-    "arts",
-    "nature",
-    "STEM"
+    "general"
   ],
   "age_min": 3,
   "age_max": 16,
@@ -40,7 +37,7 @@
       "name": "Week 1: Building Community",
       "start_date": "2026-06-22",
       "end_date": "2026-06-26",
-      "price": null,
+      "price": 450,
       "availability": "unknown"
     },
     {
@@ -54,56 +51,56 @@
       "name": "Week 3: Animal Adventures",
       "start_date": "2026-07-06",
       "end_date": "2026-07-10",
-      "price": null,
+      "price": 450,
       "availability": "unknown"
     },
     {
       "name": "Week 4: Under the Sea",
       "start_date": "2026-07-13",
       "end_date": "2026-07-17",
-      "price": null,
+      "price": 450,
       "availability": "unknown"
     },
     {
       "name": "Week 5: Music and More",
       "start_date": "2026-07-20",
       "end_date": "2026-07-24",
-      "price": null,
+      "price": 450,
       "availability": "unknown"
     },
     {
       "name": "Week 6: Nature Explorers",
       "start_date": "2026-07-27",
       "end_date": "2026-07-31",
-      "price": null,
+      "price": 450,
       "availability": "unknown"
     },
     {
       "name": "Week 7: Mad About Science",
       "start_date": "2026-08-03",
       "end_date": "2026-08-07",
-      "price": null,
+      "price": 450,
       "availability": "unknown"
     },
     {
       "name": "Week 8: Camp Olympics",
       "start_date": "2026-08-10",
       "end_date": "2026-08-14",
-      "price": null,
+      "price": 450,
       "availability": "unknown"
     },
     {
-      "name": "Counselor in Training (3-week session)",
+      "name": "Counselor in Training (ages 14-16, 3-week session, 9-3)",
       "start_date": "2026-07-06",
       "end_date": "2026-07-24",
-      "price": null,
+      "price": 1215,
       "availability": "unknown"
     }
   ],
   "sources": [
     {
       "url": "https://www.friendsacademy1810.org/summer/summer-friends-day-camp-dartmouth-ma/",
-      "checked": "2026-10-27",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -124,9 +121,21 @@
         "grade_max",
         "description_short",
         "extended_care",
-        "sessions"
+        "sessions",
+        "secondary_categories"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Summer Friends page: 2026 Season June 22 to August 14 (8 weeks), weekly themes, CIT July 6-24; session prices from the Summer at FA rates table"
+    },
+    {
+      "url": "https://www.friendsacademy1810.org/summer/",
+      "checked": "2026-11-12",
+      "fields": [
+        "price_min",
+        "price_max",
+        "price_per_week",
+        "price_per"
+      ],
+      "note": "Summer at Friends Academy page, 2026 Camp Rates: Summer Friends full day $450/week; Little Friends $450 full / $300 half day per week; CIT $1,215 (3 weeks); Surround Care $85/week"
     }
   ],
   "review": {
@@ -154,60 +163,27 @@
       "Swim and waterfront details (only water play is mentioned)",
       "When registration opens and which sessions have space"
     ],
-    "low_confidence": [
-      {
-        "field": "primary_categories",
-        "confidence": 0.75,
-        "quote": "crafts, sports, music, water play, science experiments, nature exploration"
-      },
-      {
-        "field": "sessions[0].start_date",
-        "confidence": 0.6,
-        "quote": "Week 1: June 22-26"
-      },
-      {
-        "field": "sessions[1].start_date",
-        "confidence": 0.6,
-        "quote": "Week 2: June 29-July 2* *no camp Friday, July 3"
-      },
-      {
-        "field": "sessions[2].start_date",
-        "confidence": 0.6,
-        "quote": "Week 3: July 6-10"
-      },
-      {
-        "field": "sessions[3].start_date",
-        "confidence": 0.6,
-        "quote": "Week 4: July 13-17"
-      },
-      {
-        "field": "sessions[4].start_date",
-        "confidence": 0.6,
-        "quote": "Week 5: July 20-24"
-      },
-      {
-        "field": "sessions[5].start_date",
-        "confidence": 0.6,
-        "quote": "Week 6: July 27-31"
-      },
-      {
-        "field": "sessions[6].start_date",
-        "confidence": 0.6,
-        "quote": "Week 7: August 3-7"
-      },
-      {
-        "field": "sessions[7].start_date",
-        "confidence": 0.6,
-        "quote": "Week 8: August 10-14"
-      },
-      {
-        "field": "sessions[8].start_date",
-        "confidence": 0.6,
-        "quote": "3-Week CIT Session: July 6-24"
-      }
-    ],
+    "low_confidence": [],
     "errors": [],
-    "first_pass": {
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.friendsacademy1810.org/summer/summer-friends-day-camp-dartmouth-ma/",
+        "https://www.friendsacademy1810.org/summer/"
+      ],
+      "changes": [
+        "Confirmed all 2026 weeks, themes, ages 3-16, grades K-8, contact and address against the page.",
+        "Added 2026 prices from the Summer at FA rates table: $450/week full day (each full week), CIT $1,215 for 3 weeks; price range $300 (Little Friends half day) to $450 per week.",
+        "Primary category changed to general (a traditional day camp), with sports, arts, nature, STEM as secondary."
+      ],
+      "open_questions": [
+        "Week 2 (June 29 to July 2, no camp July 3) price left blank: the page does not say whether the 4-day week is prorated.",
+        "4+ week 12% discount and Surround Care ($85/week) not modelled.",
+        "No 2027 dates, prices or registration opening posted."
+      ]
+    },
+    "earlier_pass": {
+      "status": "ready",
       "by": "Claude",
       "date": "2026-10-27",
       "page_checked": "https://www.friendsacademy1810.org/summer/summer-friends-day-camp-dartmouth-ma/",
@@ -215,6 +191,31 @@
       "for_andrew": [
         "No prices on the page; price fields are empty"
       ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.friendsacademy1810.org/summer/summer-friends-day-camp-dartmouth-ma/",
+      "changes": [
+        "Confirmed all 2026 weeks, themes, ages 3-16, grades K-8, contact and address against the page.",
+        "Added 2026 prices from the Summer at FA rates table: $450/week full day (each full week), CIT $1,215 for 3 weeks; price range $300 (Little Friends half day) to $450 per week.",
+        "Primary category changed to general (a traditional day camp), with sports, arts, nature, STEM as secondary."
+      ],
+      "for_andrew": [
+        "Week 2 (June 29 to July 2, no camp July 3) price left blank: the page does not say whether the 4-day week is prorated.",
+        "4+ week 12% discount and Surround Care ($85/week) not modelled.",
+        "No 2027 dates, prices or registration opening posted."
+      ]
     }
-  }
+  },
+  "secondary_categories": [
+    "sports",
+    "arts",
+    "nature",
+    "STEM"
+  ],
+  "price_min": 300,
+  "price_max": 450,
+  "price_per_week": 450,
+  "price_per": "week"
 }

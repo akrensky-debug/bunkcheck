@@ -16,24 +16,27 @@
   ],
   "age_min": 4,
   "age_max": 14,
-  "description_short": "Weekly day camp at the Teamworks indoor sports facility in Seekonk, running 9am–3:30pm with extended day until 5pm. Offers a general camp (ages 4–14) with sports, games and arts & crafts, plus sport specialty weeks (ages 6–14) in basketball, flag football, soccer and baseball.",
+  "description_short": "Weekly day camp at the Teamworks indoor sports facility in Seekonk (turf fields, basketball and volleyball courts), 9am to 3:30pm with extended day until 5pm and single-day options. TW Camp (ages 4-14) mixes sports, games and arts & crafts; sport specialty weeks cover basketball, flag football, soccer, baseball and volleyball, plus half-day Learn To Play camps.",
   "activities": [
     "sports",
     "playground games",
     "arts & crafts",
+    "cards and board games",
+    "gaga ball",
     "team-building activities",
     "theme days",
     "basketball",
     "flag football",
     "soccer",
-    "baseball"
+    "baseball",
+    "volleyball"
   ],
   "extended_care": true,
   "season_year": 2026,
   "sources": [
     {
       "url": "https://www.teamworksseekonk.com/summercamphome.aspx",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -46,13 +49,23 @@
         "zip",
         "camp_type",
         "primary_categories",
-        "activities",
         "age_min",
         "age_max",
-        "description_short",
         "extended_care"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Summer Camp page: SUMMER CAMP 2026 June 15th-September 4th, 9am-3:30pm, extended day until 5pm, $50 per week deposit, Teamworks Membership required"
+    },
+    {
+      "url": "https://service.twcenters.com/DownloadFile/RulesPolicy?strDocumentInfoId=6cd7d721-5352-4125-b210-db7ce6906909&location=10",
+      "checked": "2026-11-12",
+      "fields": [
+        "email",
+        "indoor_outdoor",
+        "activities",
+        "description_short",
+        "sessions"
+      ],
+      "note": "2026 camp brochure (PDF linked from the camp page): twelve camp weeks 6/15 to 9/4, specialty camp weeks, info@teamworksseekonk.com; no prices"
     },
     {
       "url": "https://www.teamworksseekonk.com/contactdirector.aspx?strContactDirectorType=EnumContactDirectorType.enumCampProgram",
@@ -95,15 +108,29 @@
       "Special needs accommodations",
       "Availability for individual weeks"
     ],
-    "low_confidence": [
-      {
-        "field": "deposit_required",
-        "confidence": 0.7,
-        "quote": "Save your spot for ONLY $50 per camp week!"
-      }
-    ],
+    "low_confidence": [],
     "errors": [],
-    "first_pass": {
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.teamworksseekonk.com/summercamphome.aspx",
+        "https://service.twcenters.com/DownloadFile/RulesPolicy?strDocumentInfoId=6cd7d721-5352-4125-b210-db7ce6906909&location=10",
+        "https://www.teamworksseekonk.com/campdiscount.aspx",
+        "https://www.teamworksseekonk.com/upcomingsummerprogram.aspx"
+      ],
+      "changes": [
+        "Added the twelve 2026 weeks (June 15 to September 4) from the 2026 brochure, with each week's specialty sport; prices left blank because none are published.",
+        "Added email info@teamworksseekonk.com, indoor facility, volleyball and other activities from the brochure; rewrote description.",
+        "Removed a low-confidence note on 'deposit_required', which is not a listing field ($50 per week deposit is in the source note)."
+      ],
+      "open_questions": [
+        "No camp prices on the site (registration needs an account); membership $10 online.",
+        "Page and brochure differ on Learn To Play ages (page: specialty camps ages 6-14; brochure table: Learn To Play ages 4-6).",
+        "No 2027 dates or registration date posted."
+      ]
+    },
+    "earlier_pass": {
+      "status": "ready",
       "by": "Claude",
       "date": "2026-10-27",
       "page_checked": "https://www.teamworksseekonk.com/summercamphome.aspx",
@@ -113,7 +140,109 @@
       "for_andrew": [
         "No prices on the page (only a $50/week deposit and a required Teamworks Membership); 2027 dates not posted yet."
       ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.teamworksseekonk.com/summercamphome.aspx",
+      "changes": [
+        "Added the twelve 2026 weeks (June 15 to September 4) from the 2026 brochure, with each week's specialty sport; prices left blank because none are published.",
+        "Added email info@teamworksseekonk.com, indoor facility, volleyball and other activities from the brochure; rewrote description.",
+        "Removed a low-confidence note on 'deposit_required', which is not a listing field ($50 per week deposit is in the source note)."
+      ],
+      "for_andrew": [
+        "No camp prices on the site (registration needs an account); membership $10 online.",
+        "Page and brochure differ on Learn To Play ages (page: specialty camps ages 6-14; brochure table: Learn To Play ages 4-6).",
+        "No 2027 dates or registration date posted."
+      ]
     }
   },
-  "email": "info@teamworksseekonk.com"
+  "email": "info@teamworksseekonk.com",
+  "indoor_outdoor": "indoor",
+  "sessions": [
+    {
+      "name": "Week 1: TW Camp (ages 4-14)",
+      "start_date": "2026-06-15",
+      "end_date": "2026-06-19",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 2: TW Camp (ages 4-14); specialty: Soccer",
+      "start_date": "2026-06-22",
+      "end_date": "2026-06-26",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 3: TW Camp (ages 4-14)",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-03",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 4: TW Camp (ages 4-14)",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 5: TW Camp (ages 4-14); specialty: Basketball",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 6: TW Camp (ages 4-14)",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 7: TW Camp (ages 4-14); specialty: Baseball",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 8: TW Camp (ages 4-14); specialty: Volleyball (ages 7-14)",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 9: TW Camp (ages 4-14); specialty: Flag Football",
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-14",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 10: TW Camp (ages 4-14)",
+      "start_date": "2026-08-17",
+      "end_date": "2026-08-21",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 11: TW Camp (ages 4-14)",
+      "start_date": "2026-08-24",
+      "end_date": "2026-08-28",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 12: TW Camp (ages 4-14)",
+      "start_date": "2026-08-31",
+      "end_date": "2026-09-04",
+      "price": null,
+      "availability": "unknown"
+    }
+  ]
 }

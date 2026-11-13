@@ -10,24 +10,26 @@
   "state": "RI",
   "zip": "02835",
   "primary_categories": [
-    "sailing",
-    "nature"
+    "sailing"
   ],
   "age_min": 4,
   "age_max": 16,
-  "description_short": "One-week sessions at Fort Getty in Jamestown for kids ages 4 to 16. Days are split between sailing, the salt marsh, the rocky shore and touch tanks, and campers don't need any sailing experience.",
+  "description_short": "One-week sessions at Fort Getty in Jamestown for kids ages 4 to 16, mixing sailing on Hobie Waves and skiffs with marine science on the salt marsh, rocky shore and touch tanks. Half-day groups for younger children, full days (9am to 4pm) for ages 8-16, plus Strictly Sailin' and a Leadership Program. No sailing experience needed.",
   "activities": [
     "Sailing",
     "Salt marsh exploration",
     "Rocky shore exploration",
     "Touch tanks",
-    "Marine science"
+    "Marine science",
+    "Crabbing",
+    "Arts and crafts",
+    "Swimming"
   ],
   "financial_aid": true,
   "sources": [
     {
       "url": "https://www.jamestownsailing.org",
-      "checked": "2026-10-27",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -38,40 +40,45 @@
         "city",
         "state",
         "zip",
-        "activities",
         "age_min",
-        "age_max",
-        "description_short",
-        "financial_aid",
-        "primary_categories"
+        "age_max"
       ],
-      "note": "Drafted by the listing tool from this page"
-    },
-    {
-      "url": "https://www.jamestownsailing.org/camp-schedule/",
-      "checked": "2026-10-27",
-      "fields": [
-        "camp_type",
-        "sessions"
-      ]
-    },
-    {
-      "url": "https://www.jamestownsailing.org/camp-pricing/",
-      "checked": "2026-10-27",
-      "fields": [
-        "price_min",
-        "price_max",
-        "price_per"
-      ]
+      "note": "CISF home page"
     },
     {
       "url": "https://www.jamestownsailing.org/camp-overview/",
-      "checked": "2026-10-27",
+      "checked": "2026-11-12",
       "fields": [
         "email",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "description_short",
+        "swim_waterfront_notes",
+        "indoor_outdoor"
+      ],
+      "note": "Camp Overview page: 2026 registration information, camp groups, Fort Getty location"
+    },
+    {
+      "url": "https://www.jamestownsailing.org/camp-pricing/",
+      "checked": "2026-11-12",
+      "fields": [
+        "price_min",
+        "price_max",
+        "price_per",
         "refund_policy_summary",
-        "meals_included"
-      ]
+        "financial_aid"
+      ],
+      "note": "Pricing page: 2026 Prices per camper per week, $215 to $430; Strictly Sailin' $230"
+    },
+    {
+      "url": "https://www.jamestownsailing.org/camp-schedule/",
+      "checked": "2026-11-12",
+      "fields": [
+        "sessions"
+      ],
+      "note": "Camp Schedule page: 2026 Camp Schedule by week, Week 0 June 15 to Week 8 August 10 to 14; prices from the Pricing page"
     }
   ],
   "review": {
@@ -103,15 +110,29 @@
       "Details of the new Coastal Ecology Camp",
       "Support for children with special needs"
     ],
-    "low_confidence": [
-      {
-        "field": "primary_categories",
-        "confidence": 0.75,
-        "quote": "seasonal programming: sailing, marine science, fishing, summer camps"
-      }
-    ],
+    "low_confidence": [],
     "errors": [],
-    "first_pass": {
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.jamestownsailing.org",
+        "https://www.jamestownsailing.org/camp-overview/",
+        "https://www.jamestownsailing.org/camp-pricing/",
+        "https://www.jamestownsailing.org/camp-schedule/"
+      ],
+      "changes": [
+        "Added the 2026 schedule: 26 group sessions across Weeks 0 to 8 (June 15 to August 14) with 2026 weekly prices ($215 half day, $230 Strictly Sailin', $430 full day).",
+        "Set camp_type day and season_year 2026; primary category sailing, secondary nature (was nature, sports).",
+        "Added email, price range per week, refund policy, swim and waterfront notes, outdoor setting; rewrote description from the overview page.",
+        "Financial aid now sourced to the pricing page (scholarships)."
+      ],
+      "open_questions": [
+        "The new Coastal Ecology Camp (ages 12-16, $300 half day, 'More info soon!') has no dates; not added as a session.",
+        "No 2027 schedule, prices or registration dates posted yet; 2026 opened March 16 (Jamestown Connection) and March 23 (everyone else)."
+      ]
+    },
+    "earlier_pass": {
+      "status": "ready",
       "by": "Claude",
       "date": "2026-10-27",
       "page_checked": "https://www.jamestownsailing.org/camp-schedule/",
@@ -123,78 +144,216 @@
         "Added email, refund policy ($40 cancellation fee; after June 1 refund only if spot is filled) and meals_included false (campers bring snack and lunch) from the camp overview page."
       ],
       "for_andrew": []
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.jamestownsailing.org",
+      "changes": [
+        "Added the 2026 schedule: 26 group sessions across Weeks 0 to 8 (June 15 to August 14) with 2026 weekly prices ($215 half day, $230 Strictly Sailin', $430 full day).",
+        "Set camp_type day and season_year 2026; primary category sailing, secondary nature (was nature, sports).",
+        "Added email, price range per week, refund policy, swim and waterfront notes, outdoor setting; rewrote description from the overview page.",
+        "Financial aid now sourced to the pricing page (scholarships)."
+      ],
+      "for_andrew": [
+        "The new Coastal Ecology Camp (ages 12-16, $300 half day, 'More info soon!') has no dates; not added as a session.",
+        "No 2027 schedule, prices or registration dates posted yet; 2026 opened March 16 (Jamestown Connection) and March 23 (everyone else)."
+      ]
     }
   },
+  "email": "Contact@JamestownSailing.org",
   "camp_type": "day",
   "season_year": 2026,
+  "secondary_categories": [
+    "nature"
+  ],
   "price_min": 215,
   "price_max": 430,
   "price_per": "week",
-  "email": "Contact@JamestownSailing.org",
-  "refund_policy_summary": "All changes and cancellations must be emailed to Contact@JamestownSailing.org. There is a $40 per child cancellation fee. After June 1, money (minus the fee) is refunded only if the camp spot is filled.",
-  "meals_included": false,
+  "refund_policy_summary": "$40 per child administrative fee on all cancellations; before June 1 the balance is refunded, after June 1 only if the spot is filled. Changes must be emailed to Contact@JamestownSailing.org.",
+  "swim_waterfront_notes": "Camp is outdoors at Fort Getty under a tent near the boat ramp. Life jackets are provided for sailing; an informal swim check (short swim with life jacket) may be done before sailing. Explorers (4-6) are land-based and do not swim or sail.",
+  "indoor_outdoor": "outdoor",
   "sessions": [
     {
-      "name": "Week 0 (Explorers, ages 4-6, half day)",
+      "name": "Week 0: Explorers (ages 4-6), 9am-12pm",
       "start_date": "2026-06-15",
       "end_date": "2026-06-19",
-      "price": null,
+      "price": 215,
       "availability": "unknown"
     },
     {
-      "name": "Week 1",
+      "name": "Week 1: Ages 8-10, full day 9am-4pm",
       "start_date": "2026-06-22",
       "end_date": "2026-06-26",
-      "price": null,
+      "price": 430,
       "availability": "unknown"
     },
     {
-      "name": "Week 2",
+      "name": "Week 1: Ages 11-16, full day 9am-4pm",
+      "start_date": "2026-06-22",
+      "end_date": "2026-06-26",
+      "price": 430,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 2: Marine Adventurers (ages 5-8), 9am-12pm",
       "start_date": "2026-06-29",
       "end_date": "2026-07-03",
-      "price": null,
+      "price": 215,
       "availability": "unknown"
     },
     {
-      "name": "Week 3",
+      "name": "Week 2: Marine Adventurers (ages 5-8), 1-4pm",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-03",
+      "price": 215,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 2: Ages 8-10, full day 9am-4pm",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-03",
+      "price": 430,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 2: Ages 11-16, full day 9am-4pm",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-03",
+      "price": 430,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 3: Ages 7-12, 9am-12pm",
       "start_date": "2026-07-06",
       "end_date": "2026-07-10",
-      "price": null,
+      "price": 215,
       "availability": "unknown"
     },
     {
-      "name": "Week 4",
+      "name": "Week 3: Ages 7-12, 1-4pm",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": 215,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 3: Marine Adventurers (ages 5-8), 9am-12pm",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": 215,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 3: Strictly Sailin' (ages 10-16), 1-4pm",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": 230,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 4: Ages 8-10, full day 9am-4pm",
       "start_date": "2026-07-13",
       "end_date": "2026-07-17",
-      "price": null,
+      "price": 430,
       "availability": "unknown"
     },
     {
-      "name": "Week 5",
+      "name": "Week 4: Ages 11-16, full day 9am-4pm",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": 430,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 4: Leadership Program (ages 12-16), full day",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": 430,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 5: Ages 7-12, 9am-12pm",
       "start_date": "2026-07-20",
       "end_date": "2026-07-24",
-      "price": null,
+      "price": 215,
       "availability": "unknown"
     },
     {
-      "name": "Week 6",
+      "name": "Week 5: Marine Adventurers (ages 5-8), 1-4pm",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": 215,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 5: Strictly Sailin' (ages 10-16), 9am-12pm",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": 230,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 5: Strictly Sailin' (ages 10-16), 1-4pm",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": 230,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 6: Ages 8-10, full day 9am-4pm",
       "start_date": "2026-07-27",
       "end_date": "2026-07-31",
-      "price": null,
+      "price": 430,
       "availability": "unknown"
     },
     {
-      "name": "Week 7",
+      "name": "Week 6: Ages 11-16, full day 9am-4pm",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": 430,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 6: Leadership Program (ages 12-16), full day",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": 430,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 7: Marine Adventurers (ages 5-8), 9am-12pm",
       "start_date": "2026-08-03",
       "end_date": "2026-08-07",
-      "price": null,
+      "price": 215,
       "availability": "unknown"
     },
     {
-      "name": "Week 8",
+      "name": "Week 7: Ages 8-10, full day 9am-4pm",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": 430,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 7: Ages 11-16, full day 9am-4pm",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": 430,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 8: Ages 8-10, full day 9am-4pm",
       "start_date": "2026-08-10",
       "end_date": "2026-08-14",
-      "price": null,
+      "price": 430,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 8: Ages 11-16, full day 9am-4pm",
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-14",
+      "price": 430,
       "availability": "unknown"
     }
   ]

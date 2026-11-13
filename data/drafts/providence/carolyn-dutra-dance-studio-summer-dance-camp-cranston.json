@@ -49,7 +49,7 @@
   "sources": [
     {
       "url": "http://www.carolyndutradancestudio.com/camp",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -149,7 +149,22 @@
       }
     ],
     "errors": [],
-    "first_pass": {
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "http://www.carolyndutradancestudio.com/camp"
+      ],
+      "changes": [
+        "No field changes: name, contacts, Cranston address, ages 3-10, prices $105/$180, Disney theme, times and activities match the camp page on 2026-11-12."
+      ],
+      "open_questions": [
+        "Year is unclear: the page heading is \"Dance Camps 2026\" and placement notes refer to the 2025-2026 season, yet the date reads \"Next Camp: August 4-7, 2027 @ Cranston\". Aug 4-7 is Tue-Fri in 2026 but Wed-Sat in 2027, so 2027 may be a typo for the 2026 camp that has already happened. Andrew should decide whether to keep the 2027 sessions or ask the studio.",
+        "meals_included=false rests on the page asking campers to bring their own snack; the page does not say outright that no food is provided.",
+        "No registration opening date posted."
+      ]
+    },
+    "earlier_pass": {
+      "status": "needs_andrew",
       "by": "Claude",
       "date": "2026-10-27",
       "page_checked": "http://www.carolyndutradancestudio.com/camp",
@@ -157,6 +172,19 @@
       "for_andrew": [
         "Date conflict on the page: heading says \"Dance Camps 2026\" and placement notes refer to the 2025-2026 season, but the date reads \"August 4-7, 2027\" (a Wed-Sat; Aug 4-7 2026 is Tue-Fri). Confirm year before using the 2027 sessions/prices",
         "It is a 4-day half-day vacation camp; phone is the Warwick main office (Cranston studio line is 401-461-5487)"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "http://www.carolyndutradancestudio.com/camp",
+      "changes": [
+        "No field changes: name, contacts, Cranston address, ages 3-10, prices $105/$180, Disney theme, times and activities match the camp page on 2026-11-12."
+      ],
+      "for_andrew": [
+        "Year is unclear: the page heading is \"Dance Camps 2026\" and placement notes refer to the 2025-2026 season, yet the date reads \"Next Camp: August 4-7, 2027 @ Cranston\". Aug 4-7 is Tue-Fri in 2026 but Wed-Sat in 2027, so 2027 may be a typo for the 2026 camp that has already happened. Andrew should decide whether to keep the 2027 sessions or ask the studio.",
+        "meals_included=false rests on the page asking campers to bring their own snack; the page does not say outright that no food is provided.",
+        "No registration opening date posted."
       ]
     }
   }

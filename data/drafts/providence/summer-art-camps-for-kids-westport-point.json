@@ -15,7 +15,6 @@
   ],
   "age_min": 7,
   "age_max": 11,
-  "grade_min": 2,
   "description_short": "A week-long art camp for children ages 7-11, run by the Westport Art Group at its building in Westport Point, MA. All materials are included, and each session takes up to 12 campers.",
   "activities": [
     "Art"
@@ -41,7 +40,7 @@
   "sources": [
     {
       "url": "https://www.westportartgroup.com/summer-art-camps",
-      "checked": "2026-10-27",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -57,12 +56,11 @@
         "activities",
         "age_min",
         "age_max",
-        "grade_min",
         "description_short",
         "refund_policy_summary",
         "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Re-checked 2026-11-12: 'SUMMER ART CAMPS FOR KIDS - 2026!'; Session 1: July 6-10, 2026; Session 2: August 10-14, 2026; 'ages 7-11, entering grade 2'; 1740 Main Road, Westport Point; 12 campers per session; cancellation policy."
     }
   ],
   "review": {
@@ -90,20 +88,24 @@
       "Transportation",
       "Accommodations for children with special needs"
     ],
-    "low_confidence": [
-      {
-        "field": "grade_min",
-        "confidence": 0.5,
-        "quote": "entering grade 2"
-      },
-      {
-        "field": "camp_type",
-        "confidence": 0.7,
-        "quote": "SUMMER ART CAMPS FOR KIDS"
-      }
-    ],
+    "low_confidence": [],
     "errors": [],
-    "first_pass": {
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.westportartgroup.com/summer-art-camps"
+      ],
+      "changes": [
+        "Removed grade_min 2: the page's 'ages 7-11, entering grade 2' does not give a clear grade range, and ages 7-11 already cover it.",
+        "camp_type specialty kept (art-only week-long camp). All other fields re-checked and match."
+      ],
+      "open_questions": [
+        "No price on the page ('All materials are included in the cost'); no daily hours.",
+        "'Stay tuned in February for news of 2027 camps.'"
+      ]
+    },
+    "earlier_pass": {
+      "status": "ready",
       "by": "Claude",
       "date": "2026-10-27",
       "page_checked": "https://www.westportartgroup.com/summer-art-camps",
@@ -111,6 +113,19 @@
       "for_andrew": [
         "Page says 2027 camp news comes in February; refresh sessions then",
         "ZIP 02791 is taken from the P.O. Box mailing address on the page (same village as 1740 Main Road)"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.westportartgroup.com/summer-art-camps",
+      "changes": [
+        "Removed grade_min 2: the page's 'ages 7-11, entering grade 2' does not give a clear grade range, and ages 7-11 already cover it.",
+        "camp_type specialty kept (art-only week-long camp). All other fields re-checked and match."
+      ],
+      "for_andrew": [
+        "No price on the page ('All materials are included in the cost'); no daily hours.",
+        "'Stay tuned in February for news of 2027 camps.'"
       ]
     }
   }

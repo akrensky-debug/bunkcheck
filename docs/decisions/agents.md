@@ -42,6 +42,13 @@ info kit. The other three are planned.
 5. **Family data does not go to third-party assistants** until privacy counsel has reviewed it
    (trust rule 2). Until then, booking through a parent's own assistant is off.
 
+6. **A person reads every owner reply, and that is a selling point.** Decided by Andrew on
+   13 November 2026. Every email to a camp owner says a person reads replies, and it stays
+   true at launch: replies are forwarded to a person, and a change read from an owner's
+   email goes live only after a person applies it. We say this to owners and parents as a
+   reason to trust Bunkcheck. `OWNER_UPDATES_AUTO_APPLY` stays off unless Andrew changes
+   this rule here; turning it on would also mean changing what the emails promise.
+
 ## Booking through agents
 
 Two kinds, both later than the read-only MCP server:

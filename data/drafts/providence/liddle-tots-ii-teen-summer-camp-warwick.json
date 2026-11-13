@@ -10,12 +10,12 @@
   "state": "RI",
   "zip": "02888",
   "camp_type": "day",
-  "description_short": "A summer day camp run by Liddle Tots II Teen, a Warwick, RI childcare program that has operated since 1993. Summer camp runs Monday to Friday, 7 AM to 5:30 PM.",
+  "description_short": "A summer day camp run by Liddle Tots II Teen, a DCYF-licensed childcare center in Warwick, RI. Programs for each age group mix sports, cooking, arts and drama, team games, crafts and science, with weekly themes and field trips. Camp runs Monday to Friday, 7 AM to 5:30 PM.",
   "season_year": 2026,
   "sources": [
     {
       "url": "https://www.liddletots2teen.com/",
-      "checked": "2026-10-27",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -26,10 +26,30 @@
         "city",
         "state",
         "zip",
-        "camp_type",
-        "description_short"
+        "camp_type"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.liddletots2teen.com/summer-camp",
+      "checked": "2026-11-12",
+      "fields": [
+        "primary_categories",
+        "activities",
+        "description_short"
+      ],
+      "note": "Summer camp page: program list, 'LICENSED BY DCYF'. Hours (7AM-5:30PM) are on the homepage."
+    },
+    {
+      "url": "https://www.liddletots2teen.com/tuition-rates",
+      "checked": "2026-11-12",
+      "fields": [
+        "price_min",
+        "price_max",
+        "price_per_week",
+        "price_per"
+      ],
+      "note": "'Summer Camp - $260.00'; tuition due the Friday before the following week; registration fee $35 first child, $15 each additional; 10% sibling discount (full time); DHS certificates accepted."
     }
   ],
   "review": {
@@ -66,7 +86,27 @@
       }
     ],
     "errors": [],
-    "first_pass": {
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.liddletots2teen.com/",
+        "https://www.liddletots2teen.com/summer-camp",
+        "https://www.liddletots2teen.com/tuition-rates"
+      ],
+      "changes": [
+        "Added activities and primary_categories ['general'] from the Summer Camp page.",
+        "Added weekly price $260 (price_min/max/per_week, price_per week) from the Tuition Rates page.",
+        "Rewrote description_short from the Summer Camp page and homepage (dropped 'since 1993', which only appears in the '1993-2025' banner)."
+      ],
+      "open_questions": [
+        "Camper ages are not stated anywhere on the site.",
+        "Homepage still says both 'SUMMER CAMP 2026 COMING SOON!' and 'Now enrolling for Summer Camp 2026'; nothing for 2027 yet.",
+        "DHS childcare certificates are accepted; financial_aid left null since that is a state subsidy, not camp aid.",
+        "No session dates are posted."
+      ]
+    },
+    "earlier_pass": {
+      "status": "ready",
       "by": "Claude",
       "date": "2026-10-27",
       "page_checked": "https://www.liddletots2teen.com/",
@@ -76,6 +116,43 @@
       "for_andrew": [
         "Listing is thin: the homepage gives no ages, prices or dates for camp; the Tuition Rates & Forms page may have more."
       ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.liddletots2teen.com/",
+      "changes": [
+        "Added activities and primary_categories ['general'] from the Summer Camp page.",
+        "Added weekly price $260 (price_min/max/per_week, price_per week) from the Tuition Rates page.",
+        "Rewrote description_short from the Summer Camp page and homepage (dropped 'since 1993', which only appears in the '1993-2025' banner)."
+      ],
+      "for_andrew": [
+        "Camper ages are not stated anywhere on the site.",
+        "Homepage still says both 'SUMMER CAMP 2026 COMING SOON!' and 'Now enrolling for Summer Camp 2026'; nothing for 2027 yet.",
+        "DHS childcare certificates are accepted; financial_aid left null since that is a state subsidy, not camp aid.",
+        "No session dates are posted."
+      ]
     }
-  }
+  },
+  "primary_categories": [
+    "general"
+  ],
+  "activities": [
+    "Sports",
+    "Cooking",
+    "Arts & drama",
+    "Team games",
+    "Crafts",
+    "Science",
+    "Weekly themes",
+    "Field trips",
+    "Olympic games",
+    "Trivia competitions",
+    "Cheerleading and football teams",
+    "CIT (Counselor in Training) program"
+  ],
+  "price_min": 260,
+  "price_max": 260,
+  "price_per_week": 260,
+  "price_per": "week"
 }

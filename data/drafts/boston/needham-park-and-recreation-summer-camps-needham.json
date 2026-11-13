@@ -9,12 +9,12 @@
   "city": "Needham",
   "state": "MA",
   "zip": "02492",
-  "description_short": "Town of Needham Park and Recreation runs summer camps and programs. Every camper needs a completed JotForm to stay at camp, and staff follow a written code of conduct and step-by-step discipline policy.",
+  "description_short": "Town of Needham Park and Recreation runs several summer day camps: Art Lab, Jr. All Stars, Kids off Broadway, KidzArt, Summer Recess (Explorers, Adventurers and Summer Bridges), Sports Specialties and Tennis Academy. Camps run in weekly sessions from late June to mid-August, with drop-off from 9:00am. Campers bring their own lunch and two nut-free snacks.",
   "season_year": 2026,
   "sources": [
     {
       "url": "https://www.needhamma.gov/5541/Summer-Camp-Guide",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -25,13 +25,25 @@
         "city",
         "state",
         "zip",
-        "description_short"
+        "email"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://needhamma.gov/DocumentCenter/View/47577/Parent-Guide-2025",
+      "checked": "2026-11-12",
+      "fields": [
+        "sessions",
+        "camp_type",
+        "meals_included",
+        "refund_policy_summary",
+        "description_short"
+      ],
+      "note": "2026 Parent Guide PDF linked from the Summer Camp Guide page: camps offered, weeks, registration, policies"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.needhamma.gov/5541/Summer-Camp-Guide",
       "kind": "html",
@@ -59,16 +71,97 @@
       "Contact email address (the page only shows an 'Email Parks & Rec' link)",
       "ACA accreditation"
     ],
-    "low_confidence": [
-      {
-        "field": "name",
-        "confidence": 0.7,
-        "quote": "Needham Park and Recreation is looking forward to providing your child with a fun, memorable and safe summer."
-      }
-    ],
-    "errors": [
-      "missing required camp_type",
-      "camp_type must be one of ['day', 'sleepaway', 'specialty']"
-    ]
-  }
+    "low_confidence": [],
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.needhamma.gov/5541/Summer-Camp-Guide",
+        "https://needhamma.gov/DocumentCenter/View/47577/Parent-Guide-2025",
+        "https://www.needhamma.gov/5341/Brochures"
+      ],
+      "changes": [
+        "camp_type set to day (Parent Guide: daily drop-off from 9:00am, campers bring lunch); clears the camp_type error",
+        "Added the seven 2026 weeks (June 29-July 2 through Aug 10-14) from the 2026 Parent Guide PDF",
+        "Description rewritten to name the nine camps offered (it was about JotForm and discipline)",
+        "Added meals_included=false, refund policy (no refunds, credits; cancel by noon Thursday before) and email parkandrecreation@needhamma.gov"
+      ],
+      "open_questions": [
+        "Umbrella listing for nine different town camps with no ages, grades or prices on the site (the Summer Brochure is not posted; only Fall/Winter 2026-2027 is). Andrew to decide: keep as one listing, split into per-camp listings once the 2027 brochure is out, or drop.",
+        "Parent Guide gives the office ZIP as 02494; the web page says 02492. Draft keeps 02492.",
+        "No 2027 dates or registration date posted. 2026 registration began February 11 (non-residents one week later)."
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.needhamma.gov/5541/Summer-Camp-Guide",
+      "changes": [
+        "camp_type set to day (Parent Guide: daily drop-off from 9:00am, campers bring lunch); clears the camp_type error",
+        "Added the seven 2026 weeks (June 29-July 2 through Aug 10-14) from the 2026 Parent Guide PDF",
+        "Description rewritten to name the nine camps offered (it was about JotForm and discipline)",
+        "Added meals_included=false, refund policy (no refunds, credits; cancel by noon Thursday before) and email parkandrecreation@needhamma.gov"
+      ],
+      "for_andrew": [
+        "Umbrella listing for nine different town camps with no ages, grades or prices on the site (the Summer Brochure is not posted; only Fall/Winter 2026-2027 is). Andrew to decide: keep as one listing, split into per-camp listings once the 2027 brochure is out, or drop.",
+        "Parent Guide gives the office ZIP as 02494; the web page says 02492. Draft keeps 02492.",
+        "No 2027 dates or registration date posted. 2026 registration began February 11 (non-residents one week later)."
+      ]
+    }
+  },
+  "sessions": [
+    {
+      "name": "Week 1",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-02",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 2",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 3",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 4",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 5",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 6",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 7",
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-14",
+      "price": null,
+      "availability": "unknown"
+    }
+  ],
+  "camp_type": "day",
+  "meals_included": false,
+  "refund_policy_summary": "No refunds unless the department cancels the program or there are special circumstances; in most cases credits are given and do not expire. Cancelling or switching is free but must be done in writing by 12:00pm the Thursday before your session.",
+  "email": "parkandrecreation@needhamma.gov"
 }

@@ -42,7 +42,7 @@
   "sources": [
     {
       "url": "https://www.gsema.org/en/activities-and-camp/summer-camp/day.html",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -63,7 +63,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.gsema.org/en/activities-and-camp/summer-camp/day.html",
       "kind": "html",
@@ -105,6 +105,37 @@
       "missing required city",
       "missing required zip",
       "city None, MA is not in cities.py"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.gsema.org/en/activities-and-camp/summer-camp/day.html",
+        "https://www.gsema.org/en/activities-and-camp/summer-camp.html",
+        "https://www.gsema.org/en/activities-and-camp/summer-camp/camp-faqs.html"
+      ],
+      "changes": [
+        "No field changes: the draft's filled fields match the day camp page (five camps, grades K-12, 9 AM-4 PM, bus included, financial aid, extended care at three camps). City/ZIP left empty because the listing covers five towns."
+      ],
+      "open_questions": [
+        "Needs a decision: this is a council overview of five separate day camps, so it has no single city or ZIP (validator fails on city/zip). Suggest one listing per camp using the page's direction links: Cedar Hill, 241 Forest St, Waltham 02452; Maude Eaton, 141 Abbot St, Andover 01810; Rice Moody, Rice Rd, Reading 01867; Wind in the Pines, Plymouth (no street address on page); Favorite, 208 Crowells Bog Rd, Brewster 02631 (Cape Cod, likely out of area).",
+        "No sessions or prices on the page; they are in the 2026 Camp Guide on issuu.com, not fetched here. Deposit is $75 per session (FAQ).",
+        "Page says each camp is ACA accredited; aca_accredited not set because there is no acacamps.org source.",
+        "Summer 2027 registration opens 'in January' (no exact date)."
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.gsema.org/en/activities-and-camp/summer-camp/day.html",
+      "changes": [
+        "No field changes: the draft's filled fields match the day camp page (five camps, grades K-12, 9 AM-4 PM, bus included, financial aid, extended care at three camps). City/ZIP left empty because the listing covers five towns."
+      ],
+      "for_andrew": [
+        "Needs a decision: this is a council overview of five separate day camps, so it has no single city or ZIP (validator fails on city/zip). Suggest one listing per camp using the page's direction links: Cedar Hill, 241 Forest St, Waltham 02452; Maude Eaton, 141 Abbot St, Andover 01810; Rice Moody, Rice Rd, Reading 01867; Wind in the Pines, Plymouth (no street address on page); Favorite, 208 Crowells Bog Rd, Brewster 02631 (Cape Cod, likely out of area).",
+        "No sessions or prices on the page; they are in the 2026 Camp Guide on issuu.com, not fetched here. Deposit is $75 per session (FAQ).",
+        "Page says each camp is ACA accredited; aca_accredited not set because there is no acacamps.org source.",
+        "Summer 2027 registration opens 'in January' (no exact date)."
+      ]
+    }
   }
 }

@@ -12,7 +12,7 @@
   "primary_categories": [
     "sports"
   ],
-  "description_short": "Indoor, air-conditioned soccer day camps run by MACH 1 Futbol Club at Wide World of Indoor Sports in North Smithfield, RI. Younger players (U6-U8) attend a half day (9:00-12:00). Older players (U7-U11 and U12-U14) attend a full day (9:00-3:30) of skills and tactics training.",
+  "description_short": "Indoor, air-conditioned soccer day camps run by MACH 1 Futbol Club at Wide World of Indoor Sports in North Smithfield, RI. Younger players (U6-U8) attend a half day (9:00-12:00); older players (U7-U11 and U12-U14) attend a full day (9:00-3:30) of skills and tactics training. Early drop-off and late pickup cost extra.",
   "activities": [
     "Soccer skills training",
     "Small-sided games",
@@ -58,7 +58,7 @@
   "sources": [
     {
       "url": "http://mach1fc.com/camps",
-      "checked": "2026-10-27",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -114,7 +114,25 @@
     ],
     "low_confidence": [],
     "errors": [],
-    "first_pass": {
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "http://mach1fc.com/camps"
+      ],
+      "changes": [
+        "Removed the three Montville, CT sessions (Jul 12-16, Jul 26-30, Aug 9-13, 2027): they run at a different site about 70 miles from Providence, and this listing is the North Smithfield camp. Kept the four North Smithfield 2027 weeks.",
+        "Rewrote description_short to drop Montville and name the North Smithfield venue.",
+        "Confirmed $279 full day / $179 half day per week, $40/week early drop-off (7:30) and late pickup (5 PM), address and email on 2026-11-12."
+      ],
+      "open_questions": [
+        "Ages are only given as birth-date ranges (U6-U8 Aug 2018-Jul 2021, U7-U11 Aug 2015-Jul 2020, U12-U14 Aug 2012-Jul 2015); age_min/age_max left blank.",
+        "Page says Summer 2027 \"early bird and registrations opening soon\", yet each session button says REGISTRATION OPEN; availability left unknown.",
+        "No phone number on the page.",
+        "Montville, CT camp could be its own listing if Andrew wants CT coverage (out of the Providence area at ~1h15)."
+      ]
+    },
+    "earlier_pass": {
+      "status": "ready",
       "by": "Claude",
       "date": "2026-10-27",
       "page_checked": "http://mach1fc.com/camps",
@@ -124,6 +142,22 @@
       ],
       "for_andrew": [
         "Ages are given only as birth-date ranges (U6-U14) that look unchanged from 2026, so age_min/age_max were left empty."
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "http://mach1fc.com/camps",
+      "changes": [
+        "Removed the three Montville, CT sessions (Jul 12-16, Jul 26-30, Aug 9-13, 2027): they run at a different site about 70 miles from Providence, and this listing is the North Smithfield camp. Kept the four North Smithfield 2027 weeks.",
+        "Rewrote description_short to drop Montville and name the North Smithfield venue.",
+        "Confirmed $279 full day / $179 half day per week, $40/week early drop-off (7:30) and late pickup (5 PM), address and email on 2026-11-12."
+      ],
+      "for_andrew": [
+        "Ages are only given as birth-date ranges (U6-U8 Aug 2018-Jul 2021, U7-U11 Aug 2015-Jul 2020, U12-U14 Aug 2012-Jul 2015); age_min/age_max left blank.",
+        "Page says Summer 2027 \"early bird and registrations opening soon\", yet each session button says REGISTRATION OPEN; availability left unknown.",
+        "No phone number on the page.",
+        "Montville, CT camp could be its own listing if Andrew wants CT coverage (out of the Providence area at ~1h15)."
       ]
     }
   }

@@ -3,15 +3,14 @@
   "name": "Summer All Day Program",
   "operator_name": "City of Attleboro Recreation Department",
   "website_url": "https://www.cityofattleboro.us/266/Summer-All-Day-Program",
-  "phone": "508-223-2222",
+  "phone": "774-203-1889",
   "street_address": "81 Pine Street",
   "city": "Attleboro",
   "state": "MA",
   "zip": "02703",
   "camp_type": "day",
   "primary_categories": [
-    "sports",
-    "arts"
+    "general"
   ],
   "age_max": 12,
   "grade_min": 1,
@@ -42,15 +41,17 @@
       "availability": "unknown"
     }
   ],
+  "email": "CClausen@cityofattleboro.us",
+  "refund_policy_summary": "Cancel in writing at least 14 days before the scheduled start for a refund minus the non-refundable deposit (the deposit equals the last week's payment). No refund for cancellations less than 14 days before, no-shows or missed days unless there is a documented medical emergency. Full refund for a week the department cancels.",
+  "registration_url": "https://www.cityofattleboro.us/DocumentCenter/View/1263/2026-All-Day-Program-Application-Form-PDF",
   "sources": [
     {
       "url": "https://www.cityofattleboro.us/266/Summer-All-Day-Program",
-      "checked": "2026-10-27",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
         "website_url",
-        "phone",
         "street_address",
         "city",
         "state",
@@ -67,7 +68,8 @@
         "meals_included",
         "special_needs_notes",
         "swim_waterfront_notes",
-        "sessions"
+        "sessions",
+        "registration_url"
       ],
       "note": "Drafted by the listing tool from this page"
     },
@@ -78,6 +80,15 @@
         "zip"
       ],
       "note": "ZIP from the US Census geocoder for 81 PINE ST, ATTLEBORO, MA, 02703"
+    },
+    {
+      "url": "https://www.cityofattleboro.us/DocumentCenter/View/13679/Cancellation-Policy-PDF",
+      "checked": "2026-11-12",
+      "fields": [
+        "phone",
+        "email",
+        "refund_policy_summary"
+      ]
     },
     {
       "url": "https://www.cityofattleboro.us/DocumentCenter/View/13799/2026-Attleboro-Recreation-Summer-Brochure",
@@ -135,7 +146,28 @@
       }
     ],
     "errors": [],
-    "first_pass": {
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.cityofattleboro.us/266/Summer-All-Day-Program",
+        "https://www.cityofattleboro.us/DocumentCenter/View/13679/Cancellation-Policy-PDF",
+        "https://www.cityofattleboro.us/DocumentCenter/View/1263/2026-All-Day-Program-Application-Form-PDF",
+        "https://www.cityofattleboro.us/218/Recreation-Department"
+      ],
+      "changes": [
+        "Phone 508-223-2222 (City Hall) -> 774-203-1889, the Recreation Department line on the cancellation policy (also on the department page); added email recreation@cityofattleboro.us.",
+        "Added refund policy from the All Day Program cancellation policy PDF.",
+        "Added registration URL: the 2026 application form PDF (registration is on paper; no online sign-up).",
+        "primary_categories sports+arts -> general: a full-day working-parent program with crafts, computer lab, swim, playground, indoor sports and field trips.",
+        "Checked the rest: Bartek Recreation Center, 81 Pine Street; entering grade 1 through age 12; 8:00am-5:00pm; June 29 - August 14, 2026; $200/week first child, $170 additional, $55 daily; minimum six weeks and three days a week."
+      ],
+      "open_questions": [
+        "No 2027 dates or prices yet.",
+        "Attleboro residents register first; the page gives no registration opening date."
+      ]
+    },
+    "earlier_pass": {
+      "status": "ready",
       "by": "Claude",
       "date": "2026-10-27",
       "page_checked": "https://www.cityofattleboro.us/266/Summer-All-Day-Program",
@@ -144,9 +176,24 @@
         "phone 508-223-2222 is the Attleboro City Hall number in the page footer, not a Recreation Department line",
         "primary_categories sports+arts is a judgement call for a general rec day program; \"general\" may fit better"
       ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.cityofattleboro.us/266/Summer-All-Day-Program",
+      "changes": [
+        "Phone 508-223-2222 (City Hall) -> 774-203-1889, the Recreation Department line on the cancellation policy (also on the department page); added email recreation@cityofattleboro.us.",
+        "Added refund policy from the All Day Program cancellation policy PDF.",
+        "Added registration URL: the 2026 application form PDF (registration is on paper; no online sign-up).",
+        "primary_categories sports+arts -> general: a full-day working-parent program with crafts, computer lab, swim, playground, indoor sports and field trips.",
+        "Checked the rest: Bartek Recreation Center, 81 Pine Street; entering grade 1 through age 12; 8:00am-5:00pm; June 29 - August 14, 2026; $200/week first child, $170 additional, $55 daily; minimum six weeks and three days a week."
+      ],
+      "for_andrew": [
+        "No 2027 dates or prices yet.",
+        "Attleboro residents register first; the page gives no registration opening date."
+      ]
     }
   },
-  "email": "CClausen@cityofattleboro.us",
   "contacts": [
     {
       "email": "CClausen@cityofattleboro.us",

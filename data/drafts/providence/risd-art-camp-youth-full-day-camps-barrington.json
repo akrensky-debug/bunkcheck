@@ -8,7 +8,7 @@
   "city": "Barrington",
   "state": "RI",
   "zip": "02806",
-  "camp_type": "specialty",
+  "camp_type": "day",
   "primary_categories": [
     "arts"
   ],
@@ -33,41 +33,41 @@
       "start_date": "2026-07-06",
       "end_date": "2026-07-10",
       "price": null,
-      "availability": "full"
+      "availability": "unknown"
     },
     {
       "name": "Terrestrial Treasures (Week of July 13)",
       "start_date": "2026-07-13",
       "end_date": "2026-07-17",
       "price": null,
-      "availability": "full"
+      "availability": "unknown"
     },
     {
       "name": "Marine Marvels (Week of July 20)",
       "start_date": "2026-07-20",
       "end_date": "2026-07-24",
       "price": null,
-      "availability": "full"
+      "availability": "unknown"
     },
     {
       "name": "Terrestrial Treasures (Week of July 27)",
       "start_date": "2026-07-27",
       "end_date": "2026-07-31",
       "price": null,
-      "availability": "full"
+      "availability": "unknown"
     },
     {
       "name": "Marine Marvels (Week of August 3)",
       "start_date": "2026-08-03",
       "end_date": "2026-08-07",
       "price": null,
-      "availability": "full"
+      "availability": "unknown"
     }
   ],
   "sources": [
     {
       "url": "https://ce.risd.edu/youth-full-day-camps/",
-      "checked": "2026-10-27",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -135,7 +135,23 @@
       }
     ],
     "errors": [],
-    "first_pass": {
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://ce.risd.edu/youth-full-day-camps/"
+      ],
+      "changes": [
+        "Session availability full -> unknown: the page (updated 2026-11-05) no longer marks the 2026 weeks as full.",
+        "Checked the rest: Tillinghast Place, Barrington; ages 6-8 and 9-12; Monday-Friday 9am-4pm; the five 2026 theme weeks; bring lunch; beach visits without swimming; accommodations and medication policy; RISD CE email and phone all match."
+      ],
+      "open_questions": [
+        "No price on the page.",
+        "Page says 'Summer 2027 Camp Information coming soon.' and 'Registration coming soon.' No 2027 dates or opening date yet.",
+        "No street address for Tillinghast Place; ZIP 02806 comes from Barrington having one ZIP code."
+      ]
+    },
+    "earlier_pass": {
+      "status": "ready",
       "by": "Claude",
       "date": "2026-10-27",
       "page_checked": "https://ce.risd.edu/youth-full-day-camps/",
@@ -145,6 +161,20 @@
       "for_andrew": [
         "Only Summer 2026 is posted (all weeks full, waitlist); no 2027 dates and no price anywhere on the page.",
         "Camp is at Tillinghast Place, Barrington, with no street address; ZIP 02806 comes from the Census ZCTA file (Barrington has one ZIP)."
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://ce.risd.edu/youth-full-day-camps/",
+      "changes": [
+        "Session availability full -> unknown: the page (updated 2026-11-05) no longer marks the 2026 weeks as full.",
+        "Checked the rest: Tillinghast Place, Barrington; ages 6-8 and 9-12; Monday-Friday 9am-4pm; the five 2026 theme weeks; bring lunch; beach visits without swimming; accommodations and medication policy; RISD CE email and phone all match."
+      ],
+      "for_andrew": [
+        "No price on the page.",
+        "Page says 'Summer 2027 Camp Information coming soon.' and 'Registration coming soon.' No 2027 dates or opening date yet.",
+        "No street address for Tillinghast Place; ZIP 02806 comes from Barrington having one ZIP code."
       ]
     }
   }

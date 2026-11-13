@@ -2,96 +2,78 @@
   "slug": "camp-woonasquatucket-smithfield",
   "name": "Camp Woonasquatucket",
   "operator_name": "Woonasquatucket River Watershed Council (WRWC)",
-  "website_url": "https://wrwc.org/camp-woonasquatucket/",
+  "website_url": "https://wrwc.org/what-we-do/education/camp-woonasquatucket/",
   "email": "camp@wrwc.org",
   "phone": "401.861.9046",
   "city": "Smithfield",
   "state": "RI",
-  "zip": null,
+  "zip": "02917",
   "camp_type": "day",
   "primary_categories": [
     "nature",
     "STEM"
   ],
-  "age_min": 8,
+  "age_min": 7,
   "age_max": 13,
-  "description_short": "Half-day (9 AM–12 PM) week-long environmental education camp at the Leo Bouchard Conservation Center in Smithfield, RI. Campers hike, observe wildlife and bugs, do water and soil science, make nature crafts, and work on conservation projects. Sessions alternate between ages 8–10 and 11–13.",
+  "description_short": "An environmental education day camp (Mon-Fri, 9 AM-3 PM) at the Leo Bouchard Conservation Center in Smithfield, RI, for ages 8-13 (now also age 7). Campers hike forests and wetlands, watch wildlife and birds, do science experiments, study bugs, make upcycled nature crafts and take part in conservation projects.",
   "activities": [
-    "Hiking",
-    "Bird watching",
-    "Animal tracking",
-    "Catch and release of critters",
-    "Science experiments (water, soil)",
-    "Insect study",
-    "Nature crafts with upcycled and natural materials",
-    "Aquatic life investigation",
-    "Hands-on conservation projects"
+    "Hiking forests and wetlands",
+    "Wildlife observation, animal tracking and bird watching",
+    "Science experiments",
+    "Bug study",
+    "Upcycled nature crafts",
+    "Aquatic life and conservation projects",
+    "Environmental stewardship"
   ],
-  "price_per_week": 250,
-  "price_min": 250,
-  "price_max": 250,
+  "price_per_week": 400,
+  "price_min": 400,
+  "price_max": 400,
   "financial_aid": true,
-  "swim_waterfront_notes": "The center has a waterfront on Stillwater Reservoir and a kayak and canoe launch. The page mentions campers will \"splash around\" and look at aquatic life. It does not say whether there is swimming, boating, or lifeguard supervision.",
-  "season_year": 2025,
+  "swim_waterfront_notes": "The center has a canoe/kayak launch and campers 'splash into aquatic life'. The page does not say whether there is swimming, boating or lifeguard supervision.",
+  "season_year": 2026,
   "price_per": "week",
   "sessions": [
     {
-      "name": "Week of July 7 (Ages 8-10)",
-      "start_date": "2025-07-07",
-      "end_date": "2025-07-11",
-      "price": 250,
+      "name": "Session 1",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": 400,
       "availability": "unknown"
     },
     {
-      "name": "Week of July 14 (Ages 11-13)",
-      "start_date": "2025-07-14",
-      "end_date": "2025-07-18",
-      "price": 250,
+      "name": "Session 2",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": 400,
       "availability": "unknown"
     },
     {
-      "name": "Week of July 21 (Ages 8-10)",
-      "start_date": "2025-07-21",
-      "end_date": "2025-07-25",
-      "price": 250,
-      "availability": "unknown"
-    },
-    {
-      "name": "Week of July 28 (Ages 11-13)",
-      "start_date": "2025-07-28",
-      "end_date": "2025-08-01",
-      "price": 250,
-      "availability": "unknown"
-    },
-    {
-      "name": "Week of August 4 (Ages 8-10)",
-      "start_date": "2025-08-04",
-      "end_date": "2025-08-08",
-      "price": 250,
-      "availability": "unknown"
-    },
-    {
-      "name": "Week of August 11 (Ages 11-13)",
-      "start_date": "2025-08-11",
-      "end_date": "2025-08-15",
-      "price": 250,
+      "name": "Session 3",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": 400,
       "availability": "unknown"
     }
   ],
   "sources": [
     {
-      "url": "https://wrwc.org/camp-woonasquatucket/",
-      "checked": "2026-10-13",
+      "url": "https://wrwc.org/what-we-do/education/camp-woonasquatucket/",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
         "website_url",
+        "registration_url",
         "email",
         "phone",
+        "street_address",
         "city",
         "state",
+        "zip",
         "camp_type",
         "primary_categories",
+        "secondary_categories",
+        "indoor_outdoor",
         "activities",
         "age_min",
         "age_max",
@@ -101,14 +83,15 @@
         "price_per_week",
         "price_per",
         "financial_aid",
+        "refund_policy_summary",
         "swim_waterfront_notes",
         "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "'2026 CAMP. Location: Leo Bouchard Conservation Center, 5 Waterview Drive, Smithfield, RI 02917. When: Monday–Friday, 9:00 AM – 3:00 PM. Tuition: $400 per camper ... Ages: 8-13 years old *NOW ACCEPTING AGES 7'; sessions July 6-10, 13-17, 20-24; 'Need-based scholarships are available'. Phone is WRWC's office in the page footer."
     }
   ],
   "review": {
-    "status": "needs_andrew",
+    "status": "ready",
     "source": {
       "url": "https://wrwc.org/camp-woonasquatucket/",
       "kind": "html",
@@ -137,82 +120,28 @@
       "Special needs accommodations",
       "Session availability"
     ],
-    "low_confidence": [
-      {
-        "field": "phone",
-        "confidence": 0.6,
-        "quote": "Tel: 401.861.9046"
-      },
-      {
-        "field": "age_min",
-        "confidence": 0.6,
-        "quote": "July 7 – July 11 (Ages 8-10)"
-      },
-      {
-        "field": "age_max",
-        "confidence": 0.6,
-        "quote": "July 14 – July 18 (Ages 11-13)"
-      },
-      {
-        "field": "price_per_week",
-        "confidence": 0.55,
-        "quote": "Tuition: $250 per camper"
-      },
-      {
-        "field": "price_min",
-        "confidence": 0.55,
-        "quote": "Tuition: $250 per camper"
-      },
-      {
-        "field": "price_max",
-        "confidence": 0.55,
-        "quote": "Tuition: $250 per camper"
-      },
-      {
-        "field": "financial_aid",
-        "confidence": 0.5,
-        "quote": "special donation page for those who want to help cover the cost of tuition for young people to attend Camp Woonasquatucket"
-      },
-      {
-        "field": "swim_waterfront_notes",
-        "confidence": 0.7,
-        "quote": "with a waterfront on Stillwater Reservoir, access to Wolf Hill trails, and even a kayak and canoe launch"
-      },
-      {
-        "field": "sessions[0].start_date",
-        "confidence": 0.5,
-        "quote": "July 7 – July 11 (Ages 8-10)"
-      },
-      {
-        "field": "sessions[1].start_date",
-        "confidence": 0.5,
-        "quote": "July 14 – July 18 (Ages 11-13)"
-      },
-      {
-        "field": "sessions[2].start_date",
-        "confidence": 0.5,
-        "quote": "July 21 – July 25 (Ages 8-10)"
-      },
-      {
-        "field": "sessions[3].start_date",
-        "confidence": 0.5,
-        "quote": "July 28 – August 1 (Ages 11-13)"
-      },
-      {
-        "field": "sessions[4].start_date",
-        "confidence": 0.5,
-        "quote": "August 4 – August 8 (Ages 8-10)"
-      },
-      {
-        "field": "sessions[5].start_date",
-        "confidence": 0.5,
-        "quote": "August 11 – August 15 (Ages 11-13)"
-      }
-    ],
-    "errors": [
-      "missing required zip"
-    ],
-    "first_pass": {
+    "low_confidence": [],
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://wrwc.org/camp-woonasquatucket/",
+        "https://wrwc.org/what-we-do/education/camp-woonasquatucket/",
+        "https://wrwc.org/what-we-do/education/"
+      ],
+      "changes": [
+        "Moved from the 2025 blog post to the camp's own page, which posts the 2026 season: 3 weeks (July 6-24, 2026), $400/week, 9 AM-3 PM (was 2025: 6 half-day weeks at $250).",
+        "season_year 2025 -> 2026; ages 8-13 -> 7-13 ('NOW ACCEPTING AGES 7'); the sessions no longer alternate age groups.",
+        "Added street address and ZIP 02917 from the page, Eventbrite registration link, refund policy, outdoor category; website_url now the camp page.",
+        "Financial aid kept true (need-based scholarships), resolving the low-confidence item."
+      ],
+      "open_questions": [
+        "Page says 'Scholarships are no longer available for 2026.'",
+        "No 2027 dates or registration opening posted."
+      ]
+    },
+    "earlier_pass": {
+      "status": "needs_andrew",
       "by": "Claude",
       "date": "2026-10-27",
       "page_checked": "https://wrwc.org/camp-woonasquatucket/",
@@ -223,6 +152,28 @@
         "Phone 401.861.9046 is the WRWC main office; registration is via Smithfield Parks & Rec (link not captured)",
         "financial_aid true rests on a Smithfield Parks & Rec donation page to cover tuition, not a stated aid program"
       ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://wrwc.org/camp-woonasquatucket/",
+      "changes": [
+        "Moved from the 2025 blog post to the camp's own page, which posts the 2026 season: 3 weeks (July 6-24, 2026), $400/week, 9 AM-3 PM (was 2025: 6 half-day weeks at $250).",
+        "season_year 2025 -> 2026; ages 8-13 -> 7-13 ('NOW ACCEPTING AGES 7'); the sessions no longer alternate age groups.",
+        "Added street address and ZIP 02917 from the page, Eventbrite registration link, refund policy, outdoor category; website_url now the camp page.",
+        "Financial aid kept true (need-based scholarships), resolving the low-confidence item."
+      ],
+      "for_andrew": [
+        "Page says 'Scholarships are no longer available for 2026.'",
+        "No 2027 dates or registration opening posted."
+      ]
     }
-  }
+  },
+  "registration_url": "https://www.eventbrite.com/cc/camp-woonasquatucket-2026-4813273",
+  "street_address": "5 Waterview Drive",
+  "secondary_categories": [
+    "outdoor"
+  ],
+  "indoor_outdoor": "outdoor",
+  "refund_policy_summary": "Full payment due at registration. Cancellations at least 10 days before the session are refunded minus a $50 processing fee; no refunds within 10 days. Full refund if a session is canceled for low enrollment. 50% off for the second child."
 }

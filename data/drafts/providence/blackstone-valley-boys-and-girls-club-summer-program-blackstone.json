@@ -10,7 +10,9 @@
   "zip": "01504",
   "camp_type": "day",
   "primary_categories": [
-    "general"
+    "general",
+    "sports",
+    "swimming"
   ],
   "age_min": 6,
   "age_max": 13,
@@ -33,7 +35,7 @@
   "sources": [
     {
       "url": "https://www.bvbgc.com/summer-program.html",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -44,7 +46,6 @@
         "state",
         "zip",
         "camp_type",
-        "primary_categories",
         "activities",
         "age_min",
         "age_max",
@@ -52,7 +53,8 @@
         "description_short",
         "extended_care",
         "refund_policy_summary",
-        "swim_waterfront_notes"
+        "swim_waterfront_notes",
+        "primary_categories"
       ],
       "note": "Drafted by the listing tool from this page"
     },
@@ -112,7 +114,23 @@
       }
     ],
     "errors": [],
-    "first_pass": {
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.bvbgc.com/summer-program.html"
+      ],
+      "changes": [
+        "primary_categories: replaced 'nature' with 'general' and 'swimming' (page describes a recreational program with an outdoor pool and sports fields; fishing alone does not make it a nature camp)",
+        "Re-checked all other fields against the page; they match. Source row date updated."
+      ],
+      "open_questions": [
+        "Prices are placeholders on the page ('$000', '$0000'); no tuition recorded.",
+        "No session dates on the page; 2027 information promised 'after the New Year'.",
+        "An ACA logo image appears on the page but no text says the camp is accredited; aca_accredited left empty."
+      ]
+    },
+    "earlier_pass": {
+      "status": "needs_andrew",
       "by": "Claude",
       "date": "2026-10-27",
       "page_checked": "https://www.bvbgc.com/summer-program.html",
@@ -123,6 +141,21 @@
       "for_andrew": [
         "Prices on the page are placeholders ($000 per child, $20 membership); the club says 2027 information comes 'after the New Year'. Ask the owner, or re-check in January.",
         "Page shows an ACA logo image but never says the program is accredited; aca_accredited left null"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.bvbgc.com/summer-program.html",
+      "changes": [
+        "primary_categories: replaced 'nature' with 'general' and 'swimming' (page describes a recreational program with an outdoor pool and sports fields; fishing alone does not make it a nature camp)",
+        "Re-checked all other fields against the page; they match. Source row date updated."
+      ],
+      "for_andrew": [
+        "Prices on the page are placeholders ($000 per child, $20 membership); the club says 2027 information comes 'after the New Year'. Ask the owner, or re-check in January.",
+        "Prices are placeholders on the page ('$000', '$0000'); no tuition recorded.",
+        "No session dates on the page; 2027 information promised 'after the New Year'.",
+        "An ACA logo image appears on the page but no text says the camp is accredited; aca_accredited left empty."
       ]
     },
     "ask_owner": [

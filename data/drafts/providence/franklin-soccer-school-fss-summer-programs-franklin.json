@@ -10,7 +10,7 @@
   "primary_categories": [
     "sports"
   ],
-  "description_short": "Four-day indoor soccer sessions in July and August for several age groups, focused on technical skills and skill games with a Smart Soccer World Cup theme. Held at Downtown Sports, an air-conditioned indoor facility in Franklin.",
+  "description_short": "Four-day indoor soccer sessions in July and August for multiple age groups, with fun skill games, a focus on technical skills and a Smart Soccer World Cup theme. Held at Downtown Sports, an air-conditioned facility in Franklin; every player gets a ball and t-shirt. Club/Advanced sessions are offered for more focused players.",
   "activities": [
     "soccer",
     "skill games",
@@ -19,27 +19,37 @@
   "sources": [
     {
       "url": "https://www.franklinsoccerschool.com/programs/summerprograms",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
         "website_url",
-        "city",
         "camp_type",
         "primary_categories",
         "activities",
         "description_short",
-        "state"
+        "indoor_outdoor"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "FSS Summer Programs page (undated; copyright 2001 - 2026)"
     },
     {
-      "url": "https://www.census.gov/geographies/reference-files/time-series/geo/relationship-files.2020.html",
-      "checked": "2026-10-14",
+      "url": "https://www.downtownsports.net/location",
+      "checked": "2026-11-12",
       "fields": [
+        "street_address",
+        "city",
+        "state",
         "zip"
       ],
-      "note": "Franklin, MA sits inside one ZIP code (2020 Census ZCTA relationship file)"
+      "note": "Downtown Sports location page (FSS's indoor home, linked from the FSS summer page): 240 Cottage Street, Franklin, MA 02038"
+    },
+    {
+      "url": "https://www.downtownsports.net/registration",
+      "checked": "2026-11-12",
+      "fields": [
+        "registration_url"
+      ],
+      "note": "Downtown Sports Event Registration (FSS links its contact to Downtown Sports); no summer events listed on 2026-11-12"
     },
     {
       "url": "https://www.franklinsoccerschool.com/about/seniorstaff",
@@ -78,10 +88,33 @@
       "Availability / enrollment caps"
     ],
     "low_confidence": [],
-    "errors": [
-      "missing required season_year"
-    ],
-    "first_pass": {
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.franklinsoccerschool.com/programs/summerprograms",
+        "https://www.franklinsoccerschool.com/programs/summerprograms/summerprogramsadv",
+        "https://www.franklinsoccerschool.com/",
+        "https://www.franklinsoccerschool.com/contact",
+        "https://www.franklinsoccerschool.com/programs",
+        "https://www.downtownsports.net/programs/soccer",
+        "https://www.downtownsports.net/location",
+        "https://www.downtownsports.net/registration",
+        "https://www.downtownsports.net/franklin-soccer-school-programs/soccer/soccer-course"
+      ],
+      "changes": [
+        "Replaced the Census ZCTA zip source with the facility's own address: Downtown Sports, 240 Cottage Street, Franklin, MA 02038.",
+        "Added registration URL (Downtown Sports Event Registration, where FSS courses are sold), indoor setting, and mention of Club/Advanced sessions and ball and t-shirt in the description.",
+        "Set season_year 2026 as a placeholder: the page is undated ('again this year', copyright 2001 - 2026); no sessions or prices added."
+      ],
+      "open_questions": [
+        "Ages conflict: the FSS home page says summer camps are 'Ages 5-14'; Downtown Sports' soccer page says 'In July and August, FSS offers several 4-day summer training ages 4-13'. age_min/age_max left null.",
+        "No summer dates or prices anywhere: the registration system lists only Nov 2026 to Mar 2027 Smart Soccer and Creating Skills courses. Andrew should decide whether to publish an undated listing.",
+        "No 2027 registration date posted."
+      ]
+    },
+    "earlier_pass": {
+      "status": "needs_andrew",
       "by": "Claude",
       "date": "2026-10-27",
       "page_checked": "https://www.franklinsoccerschool.com/programs/summerprograms",
@@ -90,8 +123,27 @@
         "Page gives no year, dates, prices or ages (\"again this year\", copyright 2001-2026); cannot tell whether it is current, so season_year is unset. Ask FSS for the 2027 schedule",
         "Venue Downtown Sports, Franklin has no street address on the page; zip comes from the one-ZIP town rule"
       ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.franklinsoccerschool.com/programs/summerprograms",
+      "changes": [
+        "Replaced the Census ZCTA zip source with the facility's own address: Downtown Sports, 240 Cottage Street, Franklin, MA 02038.",
+        "Added registration URL (Downtown Sports Event Registration, where FSS courses are sold), indoor setting, and mention of Club/Advanced sessions and ball and t-shirt in the description.",
+        "Set season_year 2026 as a placeholder: the page is undated ('again this year', copyright 2001 - 2026); no sessions or prices added."
+      ],
+      "for_andrew": [
+        "Ages conflict: the FSS home page says summer camps are 'Ages 5-14'; Downtown Sports' soccer page says 'In July and August, FSS offers several 4-day summer training ages 4-13'. age_min/age_max left null.",
+        "No summer dates or prices anywhere: the registration system lists only Nov 2026 to Mar 2027 Smart Soccer and Creating Skills courses. Andrew should decide whether to publish an undated listing.",
+        "No 2027 registration date posted."
+      ]
     }
   },
+  "street_address": "Downtown Sports, 240 Cottage Street",
+  "registration_url": "https://www.downtownsports.net/registration",
+  "indoor_outdoor": "indoor",
+  "season_year": 2026,
   "email": "coachrich@franklinsoccerschool.com",
   "contacts": [
     {

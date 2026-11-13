@@ -8,13 +8,13 @@
   "phone": "401-785-2666 ext. 76787",
   "city": "Pascoag",
   "state": "RI",
-  "zip": null,
+  "zip": "02859",
   "camp_type": "day",
   "primary_categories": [
     "special_needs",
     "nature"
   ],
-  "description_short": "A week-long day camp at Buck Hill Scout Reservation for children, teens, and young adults with autism and related social-emotional or communication challenges, with visual supports, a low camper-to-counselor ratio, and 1:1 support when needed. In 2026 it added a third week just for adult campers (18+).",
+  "description_short": "A week-long day camp at Buck Hill Scout Reservation in Pascoag, RI for children, teens, and young adults with autism and related social-emotional or communication challenges, with visual supports, a low camper-to-counselor ratio, and 1:1 support when needed. The third week is for adult campers (18+).",
   "activities": [
     "Swimming",
     "Boating",
@@ -31,50 +31,80 @@
       "name": "Session I",
       "start_date": "2026-07-20",
       "end_date": "2026-07-24",
-      "price": null,
+      "price": 550,
       "availability": "unknown"
     },
     {
       "name": "Session II",
       "start_date": "2026-07-27",
       "end_date": "2026-07-31",
-      "price": null,
+      "price": 550,
       "availability": "unknown"
     },
     {
-      "name": "Session III",
+      "name": "Session III (adults 18+ only)",
       "start_date": "2026-08-03",
       "end_date": "2026-08-07",
-      "price": null,
+      "price": 550,
       "availability": "unknown"
     }
   ],
   "sources": [
     {
       "url": "https://theautismproject.org/parents-families/programs-resources/summer-camp",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
         "website_url",
-        "registration_url",
         "email",
         "phone",
-        "city",
-        "state",
         "camp_type",
         "primary_categories",
         "activities",
         "description_short",
         "special_needs_notes",
-        "swim_waterfront_notes",
+        "swim_waterfront_notes"
+      ],
+      "note": "Summer camp page"
+    },
+    {
+      "url": "https://theautismproject.org/parents-families/programs-resources/summer-camp/camp-faqs",
+      "checked": "2026-11-12",
+      "fields": [
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "price_min",
+        "price_max",
+        "price_per",
+        "transportation",
         "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Camp Details page: 2026 Sessions I to III, Buck Hill Scout Reservation, 422 Croff Rd, Pascoag, RI 02859, $550.00 for the week, bus from Johnston High School $100; FAQ page says the third week is for adults over 18 only"
+    },
+    {
+      "url": "https://theautismproject.org/parents-families/programs-resources/summer-camp/camp-faqs-1",
+      "checked": "2026-11-12",
+      "fields": [
+        "age_min",
+        "financial_aid"
+      ],
+      "note": "Camp FAQs: Children from age 5 (and entering kindergarten) to 21+; camperships on a sliding scale"
+    },
+    {
+      "url": "https://theautismproject.org/parents-families/programs-resources/summer-camp/camper-registration",
+      "checked": "2026-11-12",
+      "fields": [
+        "registration_url",
+        "refund_policy_summary"
+      ],
+      "note": "Camper Application page: $75 registration fee, returned if the child is waitlisted and not placed"
     }
   ],
   "review": {
-    "status": "needs_andrew",
+    "status": "ready",
     "source": {
       "url": "https://theautismproject.org/parents-families/programs-resources/summer-camp",
       "kind": "html",
@@ -99,17 +129,31 @@
       "Extended care (hours are 9-3 Mon-Thu, 9-1 Fri)",
       "Camp street address"
     ],
-    "low_confidence": [
-      {
-        "field": "registration_url",
-        "confidence": 0.6,
-        "quote": "Camp Registration Applications for camp available NOW!"
-      }
-    ],
-    "errors": [
-      "missing required zip"
-    ],
-    "first_pass": {
+    "low_confidence": [],
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://theautismproject.org/parents-families/programs-resources/summer-camp",
+        "https://theautismproject.org/parents-families/programs-resources/summer-camp/camp-faqs-1",
+        "https://theautismproject.org/parents-families/programs-resources/summer-camp/camp-faqs",
+        "https://theautismproject.org/parents-families/programs-resources/summer-camp/camper-registration"
+      ],
+      "changes": [
+        "Added camp address Buck Hill Scout Reservation, 422 Croff Rd, Pascoag, RI 02859 (fixes missing zip).",
+        "Added price $550 per week (includes $75 non-refundable registration fee) to every session and price_min/max.",
+        "Session III marked as adults 18+ only (Camp FAQs: 'The third week will be for adults over 18 only!').",
+        "Added age_min 5, transportation true ($100 bus from Johnston High School), financial aid true (camperships), refund summary.",
+        "Registration URL confirmed as the Camper Application page."
+      ],
+      "open_questions": [
+        "age_max left null: the FAQ says ages 5 to 21+ and the adult week is 18+.",
+        "Optional 1:1 support costs $750 (or $1,000 with bus) extra; not in price_max.",
+        "No 2027 dates or registration opening posted; the summer camp page says 'Camp Applications Closed'."
+      ]
+    },
+    "earlier_pass": {
+      "status": "needs_andrew",
       "by": "Claude",
       "date": "2026-10-27",
       "page_checked": "https://theautismproject.org/parents-families/programs-resources/summer-camp",
@@ -121,6 +165,31 @@
         "Session III (Aug 3-7) is probably the new adult-only (18+) week but the page does not say which week; consider whether to keep it",
         "No ages or prices on the page"
       ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://theautismproject.org/parents-families/programs-resources/summer-camp",
+      "changes": [
+        "Added camp address Buck Hill Scout Reservation, 422 Croff Rd, Pascoag, RI 02859 (fixes missing zip).",
+        "Added price $550 per week (includes $75 non-refundable registration fee) to every session and price_min/max.",
+        "Session III marked as adults 18+ only (Camp FAQs: 'The third week will be for adults over 18 only!').",
+        "Added age_min 5, transportation true ($100 bus from Johnston High School), financial aid true (camperships), refund summary.",
+        "Registration URL confirmed as the Camper Application page."
+      ],
+      "for_andrew": [
+        "age_max left null: the FAQ says ages 5 to 21+ and the adult week is 18+.",
+        "Optional 1:1 support costs $750 (or $1,000 with bus) extra; not in price_max.",
+        "No 2027 dates or registration opening posted; the summer camp page says 'Camp Applications Closed'."
+      ]
     }
-  }
+  },
+  "street_address": "Buck Hill Scout Reservation, 422 Croff Rd",
+  "age_min": 5,
+  "price_min": 550,
+  "price_max": 550,
+  "price_per": "week",
+  "transportation": true,
+  "financial_aid": true,
+  "refund_policy_summary": "$550 for the week includes a $75 non-refundable registration fee; the fee is returned if a waitlisted child is not placed."
 }

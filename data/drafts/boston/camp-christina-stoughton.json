@@ -3,7 +3,7 @@
   "name": "Camp Christina",
   "operator_name": "Old Colony YMCA",
   "website_url": "https://www.oldcolonyymca.org/child-care-camps/camps/camp-christina",
-  "registration_url": "https://oldcolonyymca.my.site.com/s/registration",
+  "registration_url": "https://oldcolonyymca.my.site.com/s/registration?program=Camp%20Christina",
   "phone": "781-341-2016",
   "street_address": "445 Central Street",
   "city": "Stoughton",
@@ -110,12 +110,11 @@
   "sources": [
     {
       "url": "https://www.oldcolonyymca.org/child-care-camps/camps/camp-christina",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
         "website_url",
-        "registration_url",
         "phone",
         "street_address",
         "city",
@@ -128,17 +127,24 @@
         "price_min",
         "price_per_week",
         "price_per",
-        "extended_care",
         "transportation",
         "meals_included",
         "swim_waterfront_notes",
-        "sessions"
+        "sessions",
+        "registration_url"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.oldcolonyymca.org/sites/default/files/2026-05/FamilyHandbook_CampChristina_SummerCamp_2026.pdf",
+      "checked": "2026-11-12",
+      "fields": [
+        "extended_care"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.oldcolonyymca.org/child-care-camps/camps/camp-christina",
       "kind": "html",
@@ -197,6 +203,38 @@
         "quote": "WEEK 11: 8/24 - 8/28* - Added fun!"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.oldcolonyymca.org/child-care-camps/camps/camp-christina",
+        "https://www.oldcolonyymca.org/sites/default/files/2026-05/FamilyHandbook_CampChristina_SummerCamp_2026.pdf"
+      ],
+      "changes": [
+        "registration_url now the page's camp-specific Register Online link (?program=Camp%20Christina)",
+        "extended_care now sourced to the 2026 Family Handbook, which lists '8:00-9:00am Extended AM Care (Optional, Additional Cost)'",
+        "Season year 2026 confirmed: the 2026 Family Handbook gives bus service 'June 29—August 21, 2026', matching the undated weeks on the page",
+        "price_per_week/price_min 345 kept: it is the page's 'as low as $345 for members' weekly rate (non-members $415)"
+      ],
+      "open_questions": [
+        "Camper age range not stated on the page; the handbook mentions ratios for 'Campers age 4-6' and 'ages 7 and up' but gives no upper age",
+        "2027 weeks, prices and registration opening not posted"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.oldcolonyymca.org/child-care-camps/camps/camp-christina",
+      "changes": [
+        "registration_url now the page's camp-specific Register Online link (?program=Camp%20Christina)",
+        "extended_care now sourced to the 2026 Family Handbook, which lists '8:00-9:00am Extended AM Care (Optional, Additional Cost)'",
+        "Season year 2026 confirmed: the 2026 Family Handbook gives bus service 'June 29—August 21, 2026', matching the undated weeks on the page",
+        "price_per_week/price_min 345 kept: it is the page's 'as low as $345 for members' weekly rate (non-members $415)"
+      ],
+      "for_andrew": [
+        "Camper age range not stated on the page; the handbook mentions ratios for 'Campers age 4-6' and 'ages 7 and up' but gives no upper age",
+        "2027 weeks, prices and registration opening not posted"
+      ]
+    }
   }
 }

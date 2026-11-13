@@ -1,58 +1,89 @@
 {
   "slug": "summer-day-camp",
-  "name": "Summer Day Camp",
-  "operator_name": "Johnston Parks and Recreation",
+  "name": "Johnston Recreation Summer Day Camp",
+  "operator_name": "Johnston Recreation Department",
   "website_url": "https://johnstonrec.com/day-camp",
+  "email": "johnstonyouthsports@gmail.com",
+  "phone": "401-272-3460",
+  "street_address": "Johnston Memorial Park, 1583 Hartford Ave",
   "city": "Johnston",
   "state": "RI",
   "zip": "02919",
   "camp_type": "day",
-  "description_short": "A town-run summer day camp for ages 6-12 (grouped 6-7, 8-9 and 10-12), Monday to Friday 8:30am-4:30pm, run by Johnston Parks and Recreation. Up to 80 campers; 2026 registration closed when the camp filled.",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "sports",
+    "arts"
+  ],
+  "activities": [
+    "group games",
+    "sports games",
+    "playground",
+    "arts and crafts",
+    "water play (sprinklers, splash pad, inflatable waterslide)",
+    "tennis",
+    "field trips (extra cost)"
+  ],
+  "age_min": 6,
+  "age_max": 12,
+  "description_short": "Johnston Recreation Department's six-week summer day camp at Johnston Memorial Park for ages 6 to 12, Monday to Friday 8:30am to 4:30pm, with group games, sports, arts and crafts, playground time and afternoon water play, plus optional field trips 2 to 3 times a week at extra cost. Families can sign up for the whole summer, single weeks or single days.",
+  "indoor_outdoor": "outdoor",
+  "price_min": 75,
+  "price_max": 975,
+  "price_per_week": 250,
+  "price_per": "week",
+  "refund_policy_summary": "$100 per family due at registration to hold a spot; balance due by July 1. Once camp begins, no refunds without a doctor's note (prorated). Field trips cost extra and are non-refundable without a doctor's note.",
+  "swim_waterfront_notes": "No swimming listed; most afternoons have water play (sprinklers, splash pad, inflatable waterslide).",
   "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Summer Day Camp (6 weeks; no camp Aug 10)",
+      "start_date": "2026-07-07",
+      "end_date": "2026-08-14",
+      "price": 975,
+      "availability": "full"
+    }
+  ],
   "sources": [
     {
       "url": "https://johnstonrec.com/day-camp",
-      "checked": "2026-10-27",
+      "checked": "2026-11-12",
       "fields": [
-        "name",
-        "operator_name",
         "website_url",
         "camp_type"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Day Camp page: 'Summer Day Camp 2026 ... no longer accepting registrations ... as we are at max capacity'"
     },
     {
-      "url": "https://johnstonrec.com/contact-us",
-      "checked": "2026-10-27",
+      "url": "https://img1.wsimg.com/blobby/go/08eb0b44-c11a-49c3-be03-2310cc6926c6/downloads/9061d9ae-655a-40f5-8be6-31ddb1bc85b7/Camp%20Parent%20Packet%20-%202026.pdf?ver=1793887585123",
+      "checked": "2026-11-12",
       "fields": [
+        "name",
+        "operator_name",
+        "email",
+        "phone",
+        "street_address",
         "city",
         "state",
-        "phone",
-        "email"
-      ]
-    },
-    {
-      "url": "https://www.census.gov/geographies/reference-files/time-series/geo/relationship-files.2020.html",
-      "checked": "2026-10-27",
-      "fields": [
-        "zip"
-      ],
-      "note": "Johnston, RI sits inside one ZIP code (2020 Census ZCTA relationship file)"
-    },
-    {
-      "url": "https://img1.wsimg.com/blobby/go/08eb0b44-c11a-49c3-be03-2310cc6926c6/daycampflyer2026web.pdf",
-      "checked": "2026-10-27",
-      "fields": [
+        "zip",
         "age_min",
         "age_max",
-        "price_per_week",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "indoor_outdoor",
         "price_min",
         "price_max",
+        "price_per_week",
         "price_per",
         "refund_policy_summary",
+        "swim_waterfront_notes",
         "description_short",
         "sessions"
-      ]
+      ],
+      "note": "2026 Parent Packet: July 7-Aug 14, M-F 8:30-4:30 at Johnston Memorial Park (1583 Hartford Ave, Johnston, RI 02919), ages 6-12, $975/6 weeks, $250/week, $75/day for one child"
     }
   ],
   "review": {
@@ -87,7 +118,26 @@
     ],
     "low_confidence": [],
     "errors": [],
-    "first_pass": {
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://johnstonrec.com/day-camp",
+        "https://img1.wsimg.com/blobby/go/08eb0b44-c11a-49c3-be03-2310cc6926c6/downloads/9061d9ae-655a-40f5-8be6-31ddb1bc85b7/Camp%20Parent%20Packet%20-%202026.pdf?ver=1793887585123",
+        "https://img1.wsimg.com/blobby/go/08eb0b44-c11a-49c3-be03-2310cc6926c6/daycampflyer2026web.pdf"
+      ],
+      "changes": [
+        "Located the camp: Johnston, RI (Johnston Memorial Park, 1583 Hartford Ave, 02919) from the 2026 Parent Packet (fixes missing city, state, zip)",
+        "Name now 'Johnston Recreation Summer Day Camp'; operator 'Johnston Recreation Department'; added office phone and email",
+        "Added ages 6-12, 2026 season July 7-Aug 14 (marked full: page says registration closed at max capacity), prices $250/week, $975/6 weeks, $75/day; activities, refund/deposit terms, water-play note",
+        "Description rewritten from the parent packet"
+      ],
+      "open_questions": [
+        "2027 not posted; the page still shows the 2026 'max capacity' notice",
+        "The 2026 flyer PDF does not extract as text (font encoding), so it was not used"
+      ]
+    },
+    "earlier_pass": {
+      "status": "ready",
       "by": "Claude",
       "date": "2026-10-27",
       "page_checked": "https://johnstonrec.com/day-camp",
@@ -101,24 +151,21 @@
         "Sibling rates ($1,475 / $1,725 for 6 weeks) and $75 day rate are not in the fields",
         "Camp location is not stated (registration is at the Recreation Office at Johnston Memorial Park); street_address left empty"
       ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://johnstonrec.com/day-camp",
+      "changes": [
+        "Located the camp: Johnston, RI (Johnston Memorial Park, 1583 Hartford Ave, 02919) from the 2026 Parent Packet (fixes missing city, state, zip)",
+        "Name now 'Johnston Recreation Summer Day Camp'; operator 'Johnston Recreation Department'; added office phone and email",
+        "Added ages 6-12, 2026 season July 7-Aug 14 (marked full: page says registration closed at max capacity), prices $250/week, $975/6 weeks, $75/day; activities, refund/deposit terms, water-play note",
+        "Description rewritten from the parent packet"
+      ],
+      "for_andrew": [
+        "2027 not posted; the page still shows the 2026 'max capacity' notice",
+        "The 2026 flyer PDF does not extract as text (font encoding), so it was not used"
+      ]
     }
-  },
-  "phone": "401-272-3460",
-  "email": "info@johnstonrec.com",
-  "age_min": 6,
-  "age_max": 12,
-  "price_per_week": 250,
-  "price_min": 250,
-  "price_max": 250,
-  "price_per": "week",
-  "refund_policy_summary": "A $100 deposit per family holds a spot and camp must be paid in full by July 2. No refunds once camp begins.",
-  "sessions": [
-    {
-      "name": "Summer Day Camp 2026 (6 weeks)",
-      "start_date": "2026-07-07",
-      "end_date": "2026-08-14",
-      "price": 975,
-      "availability": "full"
-    }
-  ]
+  }
 }

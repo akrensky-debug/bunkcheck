@@ -4,20 +4,24 @@
   "operator_name": "Kids Junction",
   "website_url": "http://kidsjunctionri.com/summer-camp/",
   "registration_url": "http://kidsjunctionri.com/summer-registration-form/",
+  "email": "kjmissdenise@outlook.com",
+  "phone": "401-245-3928",
+  "street_address": "406 Maple Ave",
   "city": "Barrington",
   "state": "RI",
   "zip": "02806",
   "camp_type": "day",
   "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
     "sports",
     "arts",
     "STEM",
     "nature",
-    "performing_arts"
+    "performing_arts",
+    "swimming"
   ],
-  "age_min": 3,
-  "age_max": 12,
-  "description_short": "A summer day camp in Barrington, RI for ages 3–12 with weekly themes, swim lessons, sports, arts and crafts, cooking, theater, and science and nature. Hours are 7:00 a.m. to 6:00 p.m. Field trips are optional, cost extra, and are open only to children entering Grade 1 or higher.",
   "activities": [
     "Swim lessons",
     "Weekly themes",
@@ -29,93 +33,80 @@
     "Field trips",
     "Special guests/events"
   ],
+  "age_min": 3,
+  "age_max": 12,
+  "description_short": "A summer day camp at Kids Junction in Barrington, RI for ages 3 to 12, open 7:00 a.m. to 6:00 p.m. with the program starting at 8:45. Weekly themes, swim lessons, cooking, daily sports, arts and crafts, theater, and science and nature, plus weekly field trips (extra fee) for children entering grade 1 and up.",
   "swim_waterfront_notes": "Swim lessons are listed as a camp highlight. The page does not say where swimming takes place or what the swim staffing is.",
   "season_year": 2026,
   "sessions": [
     {
-      "name": "Week 1",
-      "start_date": "2026-06-22",
-      "end_date": "2026-06-26",
-      "price": null,
-      "availability": "unknown"
-    },
-    {
       "name": "Week 2: Happy Birthday, America!",
       "start_date": "2026-06-29",
       "end_date": "2026-07-03",
-      "price": null,
       "availability": "unknown"
     },
     {
       "name": "Week 3: Creepy, Crawly Bug Week",
       "start_date": "2026-07-06",
       "end_date": "2026-07-10",
-      "price": null,
       "availability": "unknown"
     },
     {
       "name": "Week 4: STEM and Creation Week",
       "start_date": "2026-07-13",
       "end_date": "2026-07-17",
-      "price": null,
       "availability": "unknown"
     },
     {
       "name": "Week 5: Storybooks & Fairytales",
       "start_date": "2026-07-20",
       "end_date": "2026-07-24",
-      "price": null,
       "availability": "unknown"
     },
     {
       "name": "Week 6: Time Travelin'",
       "start_date": "2026-07-27",
       "end_date": "2026-07-31",
-      "price": null,
       "availability": "unknown"
     },
     {
       "name": "Week 7: Mermaids & Pirates Week",
       "start_date": "2026-08-03",
       "end_date": "2026-08-07",
-      "price": null,
       "availability": "unknown"
     },
     {
       "name": "Week 8: Super Animal Safari Week",
       "start_date": "2026-08-10",
       "end_date": "2026-08-14",
-      "price": null,
       "availability": "unknown"
     },
     {
       "name": "Week 9: Around the World in 5 Days",
       "start_date": "2026-08-17",
       "end_date": "2026-08-21",
-      "price": null,
       "availability": "unknown"
     },
     {
       "name": "Week 10: Down by the Sea Week",
       "start_date": "2026-08-24",
       "end_date": "2026-08-28",
-      "price": null,
       "availability": "unknown"
     }
   ],
   "sources": [
     {
       "url": "http://kidsjunctionri.com/summer-camp/",
-      "checked": "2026-10-27",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
         "website_url",
-        "registration_url",
         "city",
         "state",
         "camp_type",
         "primary_categories",
+        "secondary_categories",
         "activities",
         "age_min",
         "age_max",
@@ -123,11 +114,29 @@
         "swim_waterfront_notes",
         "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Summer Camp page: Ages 3-12, 7am-6pm, highlights list, 'Kids Junction Summer 2026 Camp Themes' (6/29-8/28); header now reads 'June 21 – August 20, 2027'"
+    },
+    {
+      "url": "http://kidsjunctionri.com/contact-kids-junction-child-daycare-center-in-barrington-ri/",
+      "checked": "2026-11-12",
+      "fields": [
+        "street_address",
+        "phone",
+        "email"
+      ],
+      "note": "Contact page: 406 Maple Ave, Barrington, RI 02806; 401-245-3928; billing/general questions email"
+    },
+    {
+      "url": "http://kidsjunctionri.com/summer-registration-form/",
+      "checked": "2026-11-12",
+      "fields": [
+        "registration_url"
+      ],
+      "note": "Summer Registration Form page with the 2026 Playground registration links"
     },
     {
       "url": "https://www.census.gov/geographies/reference-files/time-series/geo/relationship-files.2020.html",
-      "checked": "2026-10-14",
+      "checked": "2026-11-12",
       "fields": [
         "zip"
       ],
@@ -144,7 +153,7 @@
     }
   ],
   "review": {
-    "status": "ready",
+    "status": "needs_andrew",
     "source": {
       "url": "http://kidsjunctionri.com/summer-camp/",
       "kind": "html",
@@ -184,7 +193,29 @@
       }
     ],
     "errors": [],
-    "first_pass": {
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "http://kidsjunctionri.com/summer-camp/",
+        "http://kidsjunctionri.com/summer-registration-form/",
+        "http://kidsjunctionri.com/contact-kids-junction-child-daycare-center-in-barrington-ri/",
+        "http://kidsjunctionri.com/breaking-news/",
+        "http://kidsjunctionri.com/general-information/"
+      ],
+      "changes": [
+        "Removed 'Week 1' (6/22-6/26/2026): its dates were inferred, and the page no longer shows the 2026 start date (header now reads June 21 - August 20, 2027)",
+        "Added street address 406 Maple Ave, phone 401-245-3928 and the general questions email from the contact page",
+        "Categories: primary general, the five activity areas plus swimming as secondary",
+        "Dropped null session prices; description tightened (program starts 8:45, field trips grade 1+ at extra fee)"
+      ],
+      "open_questions": [
+        "The page header now says the 2027 season runs 'June 21 – August 20, 2027', but the weekly themes are still labelled 2026 and the field trip list is titled 'Summer 2027' with 2026 dates (e.g. 'Week 2: Tues- June 30th'). Kept the 2026 weeks; switch to 2027 once 2027 weeks are posted, or now as a single 6/21-8/20/2027 season?",
+        "No prices posted for either season",
+        "The registration page still lists only '2026 Summer Camp Registration Links'"
+      ]
+    },
+    "earlier_pass": {
+      "status": "ready",
       "by": "Claude",
       "date": "2026-10-27",
       "page_checked": "http://kidsjunctionri.com/summer-camp/",
@@ -192,6 +223,22 @@
         "Checked every field against the page; no changes. Only the 2026 season (June 22 - Aug 28, 2026) is posted."
       ],
       "for_andrew": []
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "http://kidsjunctionri.com/summer-camp/",
+      "changes": [
+        "Removed 'Week 1' (6/22-6/26/2026): its dates were inferred, and the page no longer shows the 2026 start date (header now reads June 21 - August 20, 2027)",
+        "Added street address 406 Maple Ave, phone 401-245-3928 and the general questions email from the contact page",
+        "Categories: primary general, the five activity areas plus swimming as secondary",
+        "Dropped null session prices; description tightened (program starts 8:45, field trips grade 1+ at extra fee)"
+      ],
+      "for_andrew": [
+        "The page header now says the 2027 season runs 'June 21 – August 20, 2027', but the weekly themes are still labelled 2026 and the field trip list is titled 'Summer 2027' with 2026 dates (e.g. 'Week 2: Tues- June 30th'). Kept the 2026 weeks; switch to 2027 once 2027 weeks are posted, or now as a single 6/21-8/20/2027 season?",
+        "No prices posted for either season",
+        "The registration page still lists only '2026 Summer Camp Registration Links'"
+      ]
     }
   },
   "email": "Kidsjunctionri@outlook.com",

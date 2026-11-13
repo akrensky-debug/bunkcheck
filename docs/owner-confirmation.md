@@ -167,7 +167,8 @@ changed, reply if wrong" (ROADMAP Phase 2, item 2). Code: `campfinder/owners/upd
    because some owners will read it with their own AI. Season facts go through the same code
    as the form (`season.apply_facts`), logged as `owner_email`.
 
-Turning on `OWNER_UPDATES_AUTO_APPLY=1` lets routine updates apply without a person, but only
+A person applying each change is a promise we make at launch, not a stopgap
+(`docs/decisions/agents.md`, rule 6). Turning on `OWNER_UPDATES_AUTO_APPLY=1` lets routine updates apply without a person, but only
 when the provider reports the sender passed SPF/DKIM (`sender_verified`): a From address alone
 is easy to fake. Leave it off until the inbound provider is set up and a few weeks of proposals
 have been right.

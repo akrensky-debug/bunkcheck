@@ -2,9 +2,9 @@
   "slug": "summer-programs-at-walnut-hill-natick",
   "name": "Summer Programs at Walnut Hill",
   "operator_name": "Walnut Hill School for the Arts",
-  "website_url": "https://www.walnuthillarts.org/summer",
+  "website_url": "https://summer.walnuthillarts.org/",
   "email": "dkikuchi@walnuthillarts.org",
-  "phone": "(508) 653-4312",
+  "phone": "(508) 652 7819",
   "street_address": "12 Highland Street",
   "city": "Natick",
   "state": "MA",
@@ -14,28 +14,27 @@
     "arts",
     "performing_arts"
   ],
-  "description_short": "Walnut Hill School for the Arts runs summer arts programs on its Natick, MA campus, taught by school faculty and guest artists. In 2026 the programs covered visual art, voice, brass, theater, fashion, comic books, string quartet and dance.",
+  "description_short": "Walnut Hill School for the Arts runs two summer programs on its Natick campus. The new Arts Day Camp (launching 2027) is a two-week, multi-disciplinary arts day camp for ages 4 through rising 6th grade, 8:30am–3:30pm. Summer Arts Intensives are one- to three-week programs for students going into grades 6–12, by application or audition, in film, voice, strings, brass, visual art, comics, fashion, theater and dance.",
   "activities": [
     "Visual art",
+    "Film",
     "Voice",
     "Brass",
-    "Theater",
-    "Fashion",
-    "Comic books",
     "String quartet",
+    "Comic books",
+    "Fashion",
+    "Theater",
     "Dance"
   ],
-  "season_year": 2026,
+  "season_year": 2027,
   "sources": [
     {
-      "url": "https://www.walnuthillarts.org/summer",
-      "checked": "2026-10-13",
+      "url": "https://summer.walnuthillarts.org/",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
         "website_url",
-        "email",
-        "phone",
         "street_address",
         "city",
         "state",
@@ -43,13 +42,35 @@
         "camp_type",
         "primary_categories",
         "activities",
-        "description_short"
+        "description_short",
+        "age_min",
+        "phone"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "New Walnut Hill Summer site (www.walnuthillarts.org/summer redirects here)"
+    },
+    {
+      "url": "https://summer.walnuthillarts.org/dates-rates",
+      "checked": "2026-11-12",
+      "fields": [
+        "sessions",
+        "extended_care",
+        "financial_aid",
+        "refund_policy_summary",
+        "email"
+      ],
+      "note": "Dates & Rates page: 2027 Arts Day Camp sessions and tuition, extended day, refund policy, financial aid"
+    },
+    {
+      "url": "https://summer.walnuthillarts.org/registration",
+      "checked": "2026-11-12",
+      "fields": [
+        "registration_url"
+      ],
+      "note": "Registration page: 2027 opening windows"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.walnuthillarts.org/summer",
       "kind": "html",
@@ -75,18 +96,82 @@
       "Accommodations for special needs",
       "ACA accreditation"
     ],
-    "low_confidence": [
-      {
-        "field": "phone",
-        "confidence": 0.7,
-        "quote": "(508) 653-4312"
-      },
-      {
-        "field": "camp_type",
-        "confidence": 0.6,
-        "quote": "String Quartet Intensive ... Summer Theater Intensive ... Summer Fashion Immersion"
-      }
-    ],
-    "errors": []
-  }
+    "low_confidence": [],
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.walnuthillarts.org/summer",
+        "https://summer.walnuthillarts.org/",
+        "https://summer.walnuthillarts.org/dates-rates",
+        "https://summer.walnuthillarts.org/registration",
+        "https://summer.walnuthillarts.org/programs/day-camp",
+        "https://summer.walnuthillarts.org/programs/arts-intensives/summer-film-camp"
+      ],
+      "changes": [
+        "www.walnuthillarts.org/summer now redirects to the new site summer.walnuthillarts.org; website_url and all sources moved there",
+        "Updated to 2027 (season_year 2027): four Arts Day Camp sessions from Dates & Rates (Mini Camp June 21-25 $830; Sessions 1-3 June 28-July 9, July 12-23, July 26-Aug 5 at $1,630)",
+        "Description rewritten: new Arts Day Camp (ages 4 to rising 6th grade, 8:30-3:30) plus Summer Arts Intensives (grades 6-12, by application or audition); added film to activities and age_min 4",
+        "Phone changed to the summer site's (508) 652 7819 (was the school's (508) 653-4312)",
+        "Added extended_care (before camp 7:30-8:30 $55/week, after camp 3:30-6:00 $140/week), financial_aid, refund policy, registration_url"
+      ],
+      "open_questions": [
+        "The listing mixes a new day camp (ages 4 to rising 6th) with application/audition intensives (grades 6-12, some with room and board). Recommend splitting into 'Walnut Hill Arts Day Camp' (camp_type day) and an intensives listing; session list currently holds only the day camp.",
+        "Early enrollment discount: $100 off per week before February 1, 2027.",
+        "Session 3 runs Monday July 26 to Thursday August 5, 2027 as printed."
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.walnuthillarts.org/summer",
+      "changes": [
+        "www.walnuthillarts.org/summer now redirects to the new site summer.walnuthillarts.org; website_url and all sources moved there",
+        "Updated to 2027 (season_year 2027): four Arts Day Camp sessions from Dates & Rates (Mini Camp June 21-25 $830; Sessions 1-3 June 28-July 9, July 12-23, July 26-Aug 5 at $1,630)",
+        "Description rewritten: new Arts Day Camp (ages 4 to rising 6th grade, 8:30-3:30) plus Summer Arts Intensives (grades 6-12, by application or audition); added film to activities and age_min 4",
+        "Phone changed to the summer site's (508) 652 7819 (was the school's (508) 653-4312)",
+        "Added extended_care (before camp 7:30-8:30 $55/week, after camp 3:30-6:00 $140/week), financial_aid, refund policy, registration_url"
+      ],
+      "for_andrew": [
+        "The listing mixes a new day camp (ages 4 to rising 6th) with application/audition intensives (grades 6-12, some with room and board). Recommend splitting into 'Walnut Hill Arts Day Camp' (camp_type day) and an intensives listing; session list currently holds only the day camp.",
+        "Early enrollment discount: $100 off per week before February 1, 2027.",
+        "Session 3 runs Monday July 26 to Thursday August 5, 2027 as printed."
+      ]
+    }
+  },
+  "age_min": 4,
+  "sessions": [
+    {
+      "name": "Arts Day Camp: Mini Camp (Pre-K to Grade 4)",
+      "start_date": "2027-06-21",
+      "end_date": "2027-06-25",
+      "price": 830,
+      "availability": "unknown"
+    },
+    {
+      "name": "Arts Day Camp: Session 1 (Pre-K to Grade 6)",
+      "start_date": "2027-06-28",
+      "end_date": "2027-07-09",
+      "price": 1630,
+      "availability": "unknown"
+    },
+    {
+      "name": "Arts Day Camp: Session 2 (Pre-K to Grade 6)",
+      "start_date": "2027-07-12",
+      "end_date": "2027-07-23",
+      "price": 1630,
+      "availability": "unknown"
+    },
+    {
+      "name": "Arts Day Camp: Session 3 (Pre-K to Grade 6)",
+      "start_date": "2027-07-26",
+      "end_date": "2027-08-05",
+      "price": 1630,
+      "availability": "unknown"
+    }
+  ],
+  "extended_care": true,
+  "financial_aid": true,
+  "refund_policy_summary": "Arts Day Camp: a non-refundable $100/week deposit holds the spot. Cancel before April 15, 2027 for a full refund or credit minus the deposit; April 15 to June 1 for 50% minus the deposit; nothing after June 1. Summer Arts Intensives use the same dates with a non-refundable 25% deposit.",
+  "registration_url": "https://summer.walnuthillarts.org/registration"
 }

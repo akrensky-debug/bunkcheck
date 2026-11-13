@@ -105,7 +105,7 @@
   "sources": [
     {
       "url": "https://almsports.com/pages/summer-camp-swansea",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -209,7 +209,22 @@
       }
     ],
     "errors": [],
-    "first_pass": {
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://almsports.com/pages/summer-camp-swansea"
+      ],
+      "changes": [
+        "No field changes: every filled field matches the page (address, ages 5-15, 8am-6pm, weeks 1-10, $50 non-refundable registration fee, activities, phone and email in the site header). Updated source checked date to 2026-11-12."
+      ],
+      "open_questions": [
+        "Weekly full-day and half-day prices are not on the page (the payment options widget only shows 'Loading...').",
+        "Week dates have no year; they fit 2026 (Monday June 22) and no 2027 dates are posted, so the 2026 season stays.",
+        "No 2027 registration opening date is posted."
+      ]
+    },
+    "earlier_pass": {
+      "status": "ready",
       "by": "Claude",
       "date": "2026-10-27",
       "page_checked": "https://almsports.com/pages/summer-camp-swansea",
@@ -218,6 +233,19 @@
       ],
       "for_andrew": [
         "Weekly prices do not show on the page (payment widget only says 'Loading...')"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://almsports.com/pages/summer-camp-swansea",
+      "changes": [
+        "No field changes: every filled field matches the page (address, ages 5-15, 8am-6pm, weeks 1-10, $50 non-refundable registration fee, activities, phone and email in the site header). Updated source checked date to 2026-11-12."
+      ],
+      "for_andrew": [
+        "Weekly full-day and half-day prices are not on the page (the payment options widget only shows 'Loading...').",
+        "Week dates have no year; they fit 2026 (Monday June 22) and no 2027 dates are posted, so the 2026 season stays.",
+        "No 2027 registration opening date is posted."
       ]
     }
   }

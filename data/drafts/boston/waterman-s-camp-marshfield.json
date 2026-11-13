@@ -14,44 +14,41 @@
     "sports",
     "nature"
   ],
-  "age_min": 13,
-  "age_max": 15,
-  "description_short": "A small-group ocean skills program for ages 13–15 at Rexhame Beach in Marshfield. Campers learn to surf, paddleboard and handle tricky conditions, 4 hours a day, Monday through Thursday.",
   "activities": [
     "Surfing",
     "Paddleboarding",
     "Ocean navigation / water safety skills"
   ],
+  "age_min": 13,
+  "age_max": 15,
+  "description_short": "A small-group ocean skills program for ages 13–15 at Rexhame Beach in Marshfield. Campers learn to surf, paddleboard and handle tricky conditions, 4 hours a day for a week, at tide-dependent times.",
   "refund_policy_summary": "10% deposit is non-refundable. Cancel 60+ days before start for a 90% refund; 30–59 days before for 50%; no refund within 30 days or during the session, and none for missed days, late arrivals or early pickups. Full refund if camp is canceled for public health reasons. You can switch sessions for free if space allows.",
   "swim_waterfront_notes": "Held on the ocean at Rexhame Beach. Campers surf and paddleboard, and session times change with the tide. Swim ability requirements and lifeguard staffing are not stated.",
-  "season_year": 2026,
+  "season_year": 2027,
   "sessions": [
     {
-      "name": "Week of 7/13 (7:00am-11:00am)",
-      "start_date": "2026-07-13",
-      "end_date": "2026-07-16",
-      "price": null,
+      "name": "Week of 7/5 (3:30pm-7:30pm)",
+      "start_date": "2027-07-05",
+      "end_date": "2027-07-09",
       "availability": "unknown"
     },
     {
-      "name": "Week of 7/20 (3:30pm-7:30pm)",
-      "start_date": "2026-07-20",
-      "end_date": "2026-07-23",
-      "price": null,
+      "name": "Week of 7/19 (3:30pm-7:30pm)",
+      "start_date": "2027-07-19",
+      "end_date": "2027-07-23",
       "availability": "unknown"
     },
     {
-      "name": "Week of 8/3 (3:30pm-7:30pm)",
-      "start_date": "2026-08-03",
-      "end_date": "2026-08-06",
-      "price": null,
+      "name": "Week of 8/2 (7:00am-11:00am)",
+      "start_date": "2027-08-02",
+      "end_date": "2027-08-06",
       "availability": "unknown"
     }
   ],
   "sources": [
     {
       "url": "https://levitatecamps.com/watermans-camp/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -76,7 +73,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://levitatecamps.com/watermans-camp/",
       "kind": "html",
@@ -107,6 +104,40 @@
         "quote": "Waterman's campers will learn to surf, paddleboard, and navigate tricky conditions"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://levitatecamps.com/watermans-camp/",
+        "https://levitatecamps.com/registration/",
+        "https://levitatecamps.com/faq/",
+        "https://levitatecamps.com/info/"
+      ],
+      "changes": [
+        "Moved to the 2027 season: the page banner now reads '2027 Camp Registration January 22 9AM' and lists three weeks, Monday 7/5 - Friday 7/9 (3:30-7:30pm), Monday 7/19 - Friday 7/23 (3:30-7:30pm) and Monday 8/2 - Friday 8/6 (7:00-11:00am), which fall Monday to Friday in 2027",
+        "Description: 'Monday through Thursday' removed, since the 2027 weeks are listed Monday to Friday (the page still says 'Monday through Thursday, 4 hours per day')",
+        "Other fields match: ages 13-15, Rexhame Beach 325 Standish St, refund policy (also on the Registration and FAQ pages)"
+      ],
+      "open_questions": [
+        "The page says sessions run Monday through Thursday but lists each 2027 week as Monday to Friday",
+        "No price on the camp, Registration or FAQ pages (prices only in UltraCamp)",
+        "Swim ability requirement not stated on the Waterman's page"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://levitatecamps.com/watermans-camp/",
+      "changes": [
+        "Moved to the 2027 season: the page banner now reads '2027 Camp Registration January 22 9AM' and lists three weeks, Monday 7/5 - Friday 7/9 (3:30-7:30pm), Monday 7/19 - Friday 7/23 (3:30-7:30pm) and Monday 8/2 - Friday 8/6 (7:00-11:00am), which fall Monday to Friday in 2027",
+        "Description: 'Monday through Thursday' removed, since the 2027 weeks are listed Monday to Friday (the page still says 'Monday through Thursday, 4 hours per day')",
+        "Other fields match: ages 13-15, Rexhame Beach 325 Standish St, refund policy (also on the Registration and FAQ pages)"
+      ],
+      "for_andrew": [
+        "The page says sessions run Monday through Thursday but lists each 2027 week as Monday to Friday",
+        "No price on the camp, Registration or FAQ pages (prices only in UltraCamp)",
+        "Swim ability requirement not stated on the Waterman's page"
+      ]
+    }
   }
 }

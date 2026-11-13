@@ -1,28 +1,35 @@
 {
   "slug": "rock-spot-climbing-school-vacation-and-summer-youth-adventure-programs",
-  "name": "Rock Spot Climbing – School Vacation & Summer Youth Adventure Programs",
+  "name": "Rock Spot Climbing Youth Adventure Programs (Lincoln, RI)",
   "operator_name": "Rock Spot Climbing",
   "website_url": "https://rockspotclimbing.com/youthadventure/",
+  "registration_url": "https://climber.hellocapitan.com/rockspot/schedule/events/97/?day=2026-06-22&categories=62",
   "email": "Questions@rockspotclimbing.com",
-  "city": null,
-  "state": null,
-  "zip": null,
+  "phone": "401-727-1704",
+  "street_address": "100 Higginson Ave",
+  "city": "Lincoln",
+  "state": "RI",
+  "zip": "02865",
   "camp_type": "specialty",
   "primary_categories": [
-    "sports",
-    "nature"
+    "sports"
   ],
-  "age_min": 6,
-  "description_short": "Week-long rock climbing programs for kids during summer and school vacations, held at Rock Spot gyms in Massachusetts, Rhode Island and Connecticut. Indoor programs are for ages 6 and up and outdoor programs for ages 10 and up. All equipment is provided and no climbing experience is needed.",
+  "secondary_categories": [
+    "adventure",
+    "outdoor"
+  ],
   "activities": [
     "Indoor rock climbing",
     "Outdoor rock climbing"
   ],
+  "age_min": 6,
+  "description_short": "Week-long indoor and outdoor rock climbing programs for kids during summer and school vacations, booked through Rock Spot's Lincoln, RI gym (Providence gym camps also run through Lincoln). Indoor programs are for ages 6 and up, outdoor programs for ages 10 and up. All equipment is provided and no climbing experience is needed.",
+  "indoor_outdoor": "both",
   "season_year": 2026,
   "sources": [
     {
       "url": "https://rockspotclimbing.com/youthadventure/",
-      "checked": "2026-10-27",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -30,15 +37,30 @@
         "email",
         "camp_type",
         "primary_categories",
+        "secondary_categories",
+        "indoor_outdoor",
         "activities",
         "age_min",
-        "description_short"
+        "description_short",
+        "registration_url"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Youth Adventure page: 'Providence, RI (run through Lincoln)', ages 6+ indoor / 10+ outdoor, Summer 2026 weeks from June 22; Lincoln schedule link"
+    },
+    {
+      "url": "https://rockspotclimbing.com/locations/ri/lincoln/",
+      "checked": "2026-11-12",
+      "fields": [
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "phone"
+      ],
+      "note": "Lincoln, RI location page: 100 Higginson Ave, Lincoln, RI 02865, (401) 727-1704"
     }
   ],
   "review": {
-    "status": "needs_andrew",
+    "status": "ready",
     "source": {
       "url": "https://rockspotclimbing.com/youthadventure/",
       "kind": "html",
@@ -74,12 +96,29 @@
         "quote": "Give your aspiring climber an unforgettable experience filled with adventure"
       }
     ],
-    "errors": [
-      "missing required city",
-      "missing required state",
-      "missing required zip"
-    ],
-    "first_pass": {
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://rockspotclimbing.com/youthadventure/",
+        "https://rockspotclimbing.com/locations/ri/lincoln/",
+        "https://climber.hellocapitan.com/rockspot/schedule/events/97/?day=2026-06-22&categories=62",
+        "https://rockspotclimbing.com/rates/"
+      ],
+      "changes": [
+        "Pinned the listing to the Lincoln, RI gym, which runs the Providence camps too: added 100 Higginson Ave, Lincoln, RI 02865 and phone 401-727-1704 (fixes missing required city, state and zip)",
+        "Name now says '(Lincoln, RI)'; description says where it is booked",
+        "registration_url set to the Lincoln School & Summer Vacation schedule linked from the page",
+        "Categories: primary sports, secondary adventure and outdoor ('nature' dropped); indoor_outdoor both"
+      ],
+      "open_questions": [
+        "Rock Spot also runs camps at Peace Dale, RI (and MA/CT gyms near Boston). Should Peace Dale get its own listing?",
+        "No prices or session list: the page says only 'Week-long programs start the week of June 22 and run every week until August' (2026), and the Lincoln schedule shows no events in our fetch",
+        "2027 not posted; the page still says 'SUMMER 2026 REGISTRATION IS LIVE!'"
+      ]
+    },
+    "earlier_pass": {
+      "status": "needs_andrew",
       "by": "Claude",
       "date": "2026-10-27",
       "page_checked": "https://rockspotclimbing.com/youthadventure/",
@@ -87,6 +126,22 @@
       "for_andrew": [
         "City/state/ZIP missing: this is a chain page for 9 gyms in MA, RI and CT. Decide whether to list it as the Lincoln, RI gym (Providence camps 'run through Lincoln'; corporate address 100 Higginson Ave, Lincoln, RI 02865) and confirm that address is the Lincoln gym.",
         "Page says only 'Week-long programs start the week of June 22 and run every week until August' (Summer 2026); no per-session dates or prices on this page."
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://rockspotclimbing.com/youthadventure/",
+      "changes": [
+        "Pinned the listing to the Lincoln, RI gym, which runs the Providence camps too: added 100 Higginson Ave, Lincoln, RI 02865 and phone 401-727-1704 (fixes missing required city, state and zip)",
+        "Name now says '(Lincoln, RI)'; description says where it is booked",
+        "registration_url set to the Lincoln School & Summer Vacation schedule linked from the page",
+        "Categories: primary sports, secondary adventure and outdoor ('nature' dropped); indoor_outdoor both"
+      ],
+      "for_andrew": [
+        "Rock Spot also runs camps at Peace Dale, RI (and MA/CT gyms near Boston). Should Peace Dale get its own listing?",
+        "No prices or session list: the page says only 'Week-long programs start the week of June 22 and run every week until August' (2026), and the Lincoln schedule shows no events in our fetch",
+        "2027 not posted; the page still says 'SUMMER 2026 REGISTRATION IS LIVE!'"
       ]
     }
   }

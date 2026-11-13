@@ -3,83 +3,187 @@
   "name": "Summer @ SSC (South Shore Conservatory Summer Programs)",
   "operator_name": "South Shore Conservatory",
   "website_url": "https://summer.sscmusic.org/",
-  "city": null,
+  "phone": "781-749-7565",
+  "street_address": "One Conservatory Drive",
+  "city": "Hingham",
   "state": "MA",
-  "zip": null,
+  "zip": "02043",
   "camp_type": "specialty",
   "primary_categories": [
     "performing_arts",
     "arts"
   ],
-  "age_min": 0,
-  "description_short": "South Shore Conservatory runs summer music, dance and arts programs for ages 0 through college age at its campuses in Duxbury and Hingham, MA. Programs run June to August and include early childhood classes, dance, piano, voice, rock band and music festivals.",
   "activities": [
-    "Music Together",
-    "Early childhood music",
-    "Cooking/science",
-    "Outdoor arts",
-    "Dance",
-    "Flute ensemble",
-    "Rock band",
-    "Summer Music Festival",
+    "Arts-integrated themed weeks (Conservatory Kids)",
+    "Cooking and kitchen science",
+    "Outdoor nature and STEAM projects",
+    "Dance (ballet, hip hop, jazz, creative movement)",
     "Piano",
     "Voice/song",
-    "Duxbury Music Festival"
+    "Rock band",
+    "Art",
+    "Musical theater"
   ],
+  "age_min": 3,
+  "age_max": 18,
+  "description_short": "South Shore Conservatory's summer arts programs at its Hingham campus (and Duxbury for Summer Dance): week-long morning and full-day camps for young children (Conservatory Kids, Outdoor Explorers, Cooking With Creativity, Dance Discovery) and music weeks for older students (Summer Piano, Summer of Song, Rock Band Jam), each with a showcase or concert at the end of the week.",
+  "price_min": 350,
+  "price_max": 625,
+  "price_per": "session",
+  "extended_care": true,
   "financial_aid": true,
   "season_year": 2026,
   "sessions": [
     {
-      "name": "Conservatory Kids (5 weeks, 9-12 pm)",
+      "name": "Conservatory Kids Week 1 - Pirates and Mermaids (ages 3-5, 9-12)",
       "start_date": "2026-06-08",
-      "end_date": "2026-07-31",
-      "price": null,
+      "end_date": "2026-06-12",
+      "price": 425,
       "availability": "unknown"
     },
     {
-      "name": "Cooking With Creativity - Bringing Science into the Kitchen! (9-12 pm)",
+      "name": "Conservatory Kids Week 2 - Fun with Fairy Tales (ages 3-5, 4 days)",
       "start_date": "2026-06-15",
       "end_date": "2026-06-18",
-      "price": null,
+      "price": 350,
       "availability": "unknown"
     },
     {
-      "name": "Outdoor Explorers – Summer Arts Expedition, Week 1",
-      "start_date": "2026-06-08",
-      "end_date": "2026-06-13",
-      "price": null,
-      "availability": "unknown"
-    },
-    {
-      "name": "Outdoor Explorers – Summer Arts Expedition, Week 2 (9-12 pm)",
+      "name": "Conservatory Kids Week 3 - All-Star Sports (ages 3-5)",
       "start_date": "2026-06-22",
       "end_date": "2026-06-26",
-      "price": null,
+      "price": 425,
+      "availability": "unknown"
+    },
+    {
+      "name": "Conservatory Kids Week 4 - Superheroes in Training (ages 3-5)",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": 425,
+      "availability": "unknown"
+    },
+    {
+      "name": "Conservatory Kids Week 5 - To Infinity and Beyond (ages 3-5)",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": 425,
+      "availability": "unknown"
+    },
+    {
+      "name": "Cooking With Creativity (ages 4-6, 9-12, 4 days)",
+      "start_date": "2026-06-15",
+      "end_date": "2026-06-18",
+      "price": 350,
+      "availability": "unknown"
+    },
+    {
+      "name": "Outdoor Explorers Week 1 (ages 4-6, 9-12)",
+      "start_date": "2026-06-08",
+      "end_date": "2026-06-12",
+      "price": 425,
+      "availability": "full"
+    },
+    {
+      "name": "Outdoor Explorers Week 2 (ages 5-7, 9-12)",
+      "start_date": "2026-06-22",
+      "end_date": "2026-06-26",
+      "price": 425,
+      "availability": "unknown"
+    },
+    {
+      "name": "Dance Discovery (ages 4-10, 9-12:30)",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-03",
+      "price": 500,
+      "availability": "unknown"
+    },
+    {
+      "name": "Summer Dance (ages 4-11, 9-2, Duxbury campus)",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": 575,
+      "availability": "unknown"
+    },
+    {
+      "name": "Summer Piano full-day institute (ages 5-18, 9-3)",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": 625,
+      "availability": "unknown"
+    },
+    {
+      "name": "Summer of Song (ages 7-18, 9-1)",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": 475,
+      "availability": "unknown"
+    },
+    {
+      "name": "Rock Band Jam (ages 11-18, 10-3)",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": 575,
       "availability": "unknown"
     }
   ],
   "sources": [
     {
       "url": "https://summer.sscmusic.org/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
         "website_url",
+        "phone",
+        "street_address",
+        "city",
         "state",
+        "zip",
         "camp_type",
         "primary_categories",
-        "activities",
-        "age_min",
-        "description_short",
-        "financial_aid",
-        "sessions"
+        "age_max",
+        "description_short"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Summer@SSC landing page (2026)"
+    },
+    {
+      "url": "https://summer.sscmusic.org/conservatory-kids/",
+      "checked": "2026-11-12",
+      "fields": [
+        "age_min",
+        "sessions",
+        "price_min",
+        "price_per",
+        "extended_care"
+      ],
+      "note": "Session dates and prices from each 2026 program page: conservatory-kids, cooking-with-creativity, outdoor-explorers, summer-dance, summer-piano, song, rock-band-jam"
+    },
+    {
+      "url": "https://summer.sscmusic.org/summer-piano/",
+      "checked": "2026-11-12",
+      "fields": [
+        "price_max"
+      ]
+    },
+    {
+      "url": "https://summer.sscmusic.org/summer-dance/",
+      "checked": "2026-11-12",
+      "fields": [
+        "activities"
+      ],
+      "note": "Activities from the program pages"
+    },
+    {
+      "url": "https://sscmusic.org/tuition-assistance/",
+      "checked": "2026-11-12",
+      "fields": [
+        "financial_aid"
+      ],
+      "note": "SSC Tuition Assistance page lists Summer@SSC"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://summer.sscmusic.org/",
       "kind": "html",
@@ -123,10 +227,50 @@
         "quote": "Week 1: 6/8 - 6/13, ages 4-6 pm"
       }
     ],
-    "errors": [
-      "missing required city",
-      "missing required zip",
-      "city None, MA is not in cities.py"
-    ]
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://summer.sscmusic.org/",
+        "https://summer.sscmusic.org/conservatory-kids/",
+        "https://summer.sscmusic.org/cooking-with-creativity/",
+        "https://summer.sscmusic.org/outdoor-explorers/",
+        "https://summer.sscmusic.org/summer-dance/",
+        "https://summer.sscmusic.org/summer-piano/",
+        "https://summer.sscmusic.org/song/",
+        "https://summer.sscmusic.org/rock-band-jam/",
+        "https://summer.sscmusic.org/smf/",
+        "https://sscmusic.org/tuition-assistance/"
+      ],
+      "changes": [
+        "Address set to the Hingham campus (One Conservatory Drive, Hingham 02043, 781-749-7565), where all child camps but Summer Dance run; resolves missing city/zip errors",
+        "Sessions rebuilt from each program page: Conservatory Kids is five separate weeks (not one June 8-July 31 block); Outdoor Explorers Week 1 is Mon 6/8-Fri 6/12 (the landing page's '6/13' and 'ages 4-6 pm' were garbled); added Dance Discovery, Summer Dance (Duxbury), Summer Piano, Summer of Song and Rock Band Jam with 2026 prices",
+        "Added price_min 350 / price_max 625 per session, extended_care true (Lunch & Learn add-on hour; Summer Piano 8 am drop-off and 4 pm pick-up)",
+        "Ages now 3-18 (camp programs only; Music Together for ages 0-5 and the Flute Symphony and Duxbury Music Festival are classes or teen/adult programs, not kids' camps); activities and description rewritten to the camp programs",
+        "financial_aid confirmed on SSC's Tuition Assistance page (lists Summer@SSC)"
+      ],
+      "open_questions": [
+        "Umbrella listing for several separate programs at two campuses; Andrew may prefer to list only the Hingham child camps or split them",
+        "Summer Music Festival page (grades 4-college) returned no readable text; not included",
+        "2027 programs not posted"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://summer.sscmusic.org/",
+      "changes": [
+        "Address set to the Hingham campus (One Conservatory Drive, Hingham 02043, 781-749-7565), where all child camps but Summer Dance run; resolves missing city/zip errors",
+        "Sessions rebuilt from each program page: Conservatory Kids is five separate weeks (not one June 8-July 31 block); Outdoor Explorers Week 1 is Mon 6/8-Fri 6/12 (the landing page's '6/13' and 'ages 4-6 pm' were garbled); added Dance Discovery, Summer Dance (Duxbury), Summer Piano, Summer of Song and Rock Band Jam with 2026 prices",
+        "Added price_min 350 / price_max 625 per session, extended_care true (Lunch & Learn add-on hour; Summer Piano 8 am drop-off and 4 pm pick-up)",
+        "Ages now 3-18 (camp programs only; Music Together for ages 0-5 and the Flute Symphony and Duxbury Music Festival are classes or teen/adult programs, not kids' camps); activities and description rewritten to the camp programs",
+        "financial_aid confirmed on SSC's Tuition Assistance page (lists Summer@SSC)"
+      ],
+      "for_andrew": [
+        "Umbrella listing for several separate programs at two campuses; Andrew may prefer to list only the Hingham child camps or split them",
+        "Summer Music Festival page (grades 4-college) returned no readable text; not included",
+        "2027 programs not posted"
+      ]
+    }
   }
 }

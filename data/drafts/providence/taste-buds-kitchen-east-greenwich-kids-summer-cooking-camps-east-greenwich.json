@@ -29,7 +29,7 @@
   "sources": [
     {
       "url": "https://tastebudskitchen.com/east-greenwich/kids-cooking-camps/",
-      "checked": "2026-10-27",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -48,9 +48,10 @@
         "extended_care",
         "meals_included",
         "refund_policy_summary",
-        "special_needs_notes"
+        "special_needs_notes",
+        "indoor_outdoor"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Re-checked 2026-11-12: '2027 Summer Camp Registration will open January 13, 2027 at 9 AM'; ages 4-17; Morning Camp 9-12 (ages 4-8), Afternoon Camp 1-4 (ages 9-13); 'Early drop-off and late pick-up available'; 'indoor activities cooking camp'; nut-free menus; all sales final; 5600 Post Road, Unit #110, East Greenwich."
     }
   ],
   "review": {
@@ -81,20 +82,26 @@
       "ACA accreditation",
       "Grade ranges"
     ],
-    "low_confidence": [
-      {
-        "field": "sessions[2]",
-        "confidence": 0.6,
-        "quote": "Advanced Teen Camp – Ages 13-17 ... Note: Available at select locations."
-      },
-      {
-        "field": "meals_included",
-        "confidence": 0.7,
-        "quote": "Breakfast and lunch are always recommended before/after camp"
-      }
-    ],
+    "low_confidence": [],
     "errors": [],
-    "first_pass": {
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://tastebudskitchen.com/east-greenwich/kids-cooking-camps/"
+      ],
+      "changes": [
+        "All filled fields re-checked and match the page (ages, hours, extended care, refund/reschedule rules, allergy notes, address, phone).",
+        "Added indoor_outdoor 'indoor' ('fun indoor activities cooking camp'). meals_included false kept: the FAQ says breakfast and lunch are recommended before/after camp (resolves low-confidence item).",
+        "season_year 2027 kept: the page is for the 2027 season, but its week dates and prices are only in the booking calendar, not the page text, so no sessions or prices are listed."
+      ],
+      "open_questions": [
+        "2027 week dates and prices not in the page text (booking calendar opens with registration Jan 13, 2027).",
+        "Advanced Teen Camp (13-17) is 'available at select locations'; unclear if East Greenwich offers it, so age_max 17 may be high.",
+        "No primary category fits cooking; none set."
+      ]
+    },
+    "earlier_pass": {
+      "status": "ready",
       "by": "Claude",
       "date": "2026-10-27",
       "page_checked": "https://tastebudskitchen.com/east-greenwich/kids-cooking-camps/",
@@ -103,6 +110,22 @@
         "2027 registration opens January 13, 2027; dates and prices are only in the booking calendar, so there are no sessions or prices yet",
         "Advanced Teen Camp (13-17) is \"available at select locations\"; age_max 17 may not apply to East Greenwich"
       ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://tastebudskitchen.com/east-greenwich/kids-cooking-camps/",
+      "changes": [
+        "All filled fields re-checked and match the page (ages, hours, extended care, refund/reschedule rules, allergy notes, address, phone).",
+        "Added indoor_outdoor 'indoor' ('fun indoor activities cooking camp'). meals_included false kept: the FAQ says breakfast and lunch are recommended before/after camp (resolves low-confidence item).",
+        "season_year 2027 kept: the page is for the 2027 season, but its week dates and prices are only in the booking calendar, not the page text, so no sessions or prices are listed."
+      ],
+      "for_andrew": [
+        "2027 week dates and prices not in the page text (booking calendar opens with registration Jan 13, 2027).",
+        "Advanced Teen Camp (13-17) is 'available at select locations'; unclear if East Greenwich offers it, so age_max 17 may be high.",
+        "No primary category fits cooking; none set."
+      ]
     }
-  }
+  },
+  "indoor_outdoor": "indoor"
 }

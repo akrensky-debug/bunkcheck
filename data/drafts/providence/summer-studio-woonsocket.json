@@ -8,13 +8,11 @@
   "city": "Woonsocket",
   "state": "RI",
   "zip": "02895",
+  "camp_type": "specialty",
   "primary_categories": [
     "arts",
     "performing_arts"
   ],
-  "grade_min": 4,
-  "grade_max": 12,
-  "description_short": "A one-week, hands-on arts program at Mount Saint Charles Academy for students in grades 4-12. Campers rotate through four studios per session, chosen from options such as dance, steel drums, architecture, D&D, ceramics, LEGO design, creative writing, sculpture, digital art and drama.",
   "activities": [
     "dance",
     "steel drums",
@@ -27,11 +25,14 @@
     "digital art",
     "drama"
   ],
-  "price_per_week": 250,
+  "grade_min": 4,
+  "grade_max": 12,
+  "description_short": "A one-week, hands-on arts program at Mount Saint Charles Academy for students in grades 4-12. Campers rotate through four studios per session, chosen from options such as dance, steel drums, architecture, D&D, ceramics, LEGO design, creative writing, sculpture, digital art and drama.",
   "price_min": 250,
   "price_max": 500,
-  "season_year": 2026,
+  "price_per_week": 250,
   "price_per": "week",
+  "season_year": 2026,
   "sessions": [
     {
       "name": "Session 1",
@@ -51,7 +52,7 @@
   "sources": [
     {
       "url": "https://mountsaintcharles.org/arts/summer-studio/",
-      "checked": "2026-10-27",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -73,7 +74,7 @@
         "sessions",
         "camp_type"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Summer Studio 2026 page: arts enrichment program, two one-week sessions (July 13-17, July 27-31), $250 each, grades 4-12"
     }
   ],
   "review": {
@@ -110,7 +111,22 @@
       }
     ],
     "errors": [],
-    "first_pass": {
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://mountsaintcharles.org/arts/summer-studio/"
+      ],
+      "changes": [
+        "Set camp_type specialty (fixes missing required camp_type): the page calls it a 'hands on arts enrichment program' of one-week sessions; it does not say day or overnight",
+        "Verified sessions, $250 per session, grades 4-12, studio list, address and phone against the page"
+      ],
+      "open_questions": [
+        "Daily hours and day vs. overnight are not stated",
+        "2027 sessions not posted; no registration link captured (the 'REGISTER NOW!' text is not a link in our fetch)"
+      ]
+    },
+    "earlier_pass": {
+      "status": "ready",
       "by": "Claude",
       "date": "2026-10-27",
       "page_checked": "https://mountsaintcharles.org/arts/summer-studio/",
@@ -120,7 +136,19 @@
       "for_andrew": [
         "Daily hours and day vs. overnight are not stated; listed as an arts specialty program"
       ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://mountsaintcharles.org/arts/summer-studio/",
+      "changes": [
+        "Set camp_type specialty (fixes missing required camp_type): the page calls it a 'hands on arts enrichment program' of one-week sessions; it does not say day or overnight",
+        "Verified sessions, $250 per session, grades 4-12, studio list, address and phone against the page"
+      ],
+      "for_andrew": [
+        "Daily hours and day vs. overnight are not stated",
+        "2027 sessions not posted; no registration link captured (the 'REGISTER NOW!' text is not a link in our fetch)"
+      ]
     }
-  },
-  "camp_type": "specialty"
+  }
 }

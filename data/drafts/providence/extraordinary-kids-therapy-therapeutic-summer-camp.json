@@ -4,23 +4,100 @@
   "operator_name": "Extraordinary Kids Therapy",
   "website_url": "https://www.extraordinarykidstherapy.net/camps-and-groups",
   "email": "frontdesk@extraordinarykidstherapy.net",
-  "city": "Chepachet",
+  "city": "Glocester",
   "state": "RI",
   "zip": "02814",
   "camp_type": "day",
   "primary_categories": [
     "special_needs"
   ],
-  "description_short": "A therapeutic summer day camp run by a pediatric therapy practice, open to children of all abilities. It offers full-day and half-day options, and each week has a theme that guides therapy and activities.",
-  "refund_policy_summary": "Once staff accept your application, you pay a $50 non-refundable deposit for each week you register. No other refund terms are stated.",
+  "description_short": "A therapeutic summer day camp run by Extraordinary Kids Therapy, a pediatric therapy practice in Chepachet (Glocester), RI, for children of all abilities. Full-day and half-day options; each week has a theme (Farm Week, Shark Week, Zoo Camp and more) that guides therapy, activities and special events. Full day is capped at 20 children per week.",
+  "refund_policy_summary": "Apply by email; once staff accept the application you pay a $50 non-refundable deposit for each week you register. No other refund terms are stated.",
   "special_needs_notes": "This is a therapeutic camp run by a pediatric therapy practice. Weekly themes \"guide our treatment, activity planning, and special events,\" and the camp describes itself as an inclusive environment for children of all abilities.",
-  "season_year": 2027,
-  "phone": "401-203-5444",
-  "street_address": "389 Putnam Pike",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Week 1",
+      "start_date": "2026-06-15",
+      "end_date": "2026-06-19",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 2",
+      "start_date": "2026-06-22",
+      "end_date": "2026-06-26",
+      "price": null,
+      "availability": "full"
+    },
+    {
+      "name": "Week 3",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-03",
+      "price": null,
+      "availability": "full"
+    },
+    {
+      "name": "Week 4",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": null,
+      "availability": "full"
+    },
+    {
+      "name": "Week 5",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": null,
+      "availability": "full"
+    },
+    {
+      "name": "Week 6",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": null,
+      "availability": "full"
+    },
+    {
+      "name": "Week 7",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": null,
+      "availability": "full"
+    },
+    {
+      "name": "Week 8",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": null,
+      "availability": "full"
+    },
+    {
+      "name": "Week 9",
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-14",
+      "price": null,
+      "availability": "full"
+    },
+    {
+      "name": "Week 10",
+      "start_date": "2026-08-17",
+      "end_date": "2026-08-21",
+      "price": null,
+      "availability": "full"
+    },
+    {
+      "name": "Week 11",
+      "start_date": "2026-08-24",
+      "end_date": "2026-08-28",
+      "price": null,
+      "availability": "unknown"
+    }
+  ],
   "sources": [
     {
       "url": "https://www.extraordinarykidstherapy.net/camps-and-groups",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -30,24 +107,26 @@
         "primary_categories",
         "description_short",
         "refund_policy_summary",
-        "special_needs_notes"
+        "special_needs_notes",
+        "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Drafted 2026-10-13 from this page when it showed the 2026 weeks (Weeks 2-10 marked full). Re-checked 2026-11-12: page now reads '2027 ENROLLMENT COMING SOON!' with '2027 dates coming soon' for Weeks 1-11; themes, $50 deposit and 20-child cap unchanged."
     },
     {
       "url": "https://www.extraordinarykidstherapy.net/contact",
-      "checked": "2026-10-27",
+      "checked": "2026-11-12",
       "fields": [
-        "phone",
         "street_address",
         "city",
         "state",
-        "zip"
-      ]
+        "zip",
+        "phone"
+      ],
+      "note": "Contact page: 'Contact Details 389 Putnam Pike Chepachet, RI 02814'; 401-203-5444. Chepachet is a village of Glocester (city set to Glocester for our town list)."
     }
   ],
   "review": {
-    "status": "needs_andrew",
+    "status": "ready",
     "source": {
       "url": "https://www.extraordinarykidstherapy.net/camps-and-groups",
       "kind": "html",
@@ -72,15 +151,28 @@
       "Meals, extended care, transportation and financial aid",
       "Staff-to-camper ratio and what therapies are offered (OT, speech, etc.)"
     ],
-    "low_confidence": [
-      {
-        "field": "camp_type",
-        "confidence": 0.7,
-        "quote": "These groups apply to both full and half day."
-      }
-    ],
+    "low_confidence": [],
     "errors": [],
-    "first_pass": {
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.extraordinarykidstherapy.net/camps-and-groups",
+        "https://www.extraordinarykidstherapy.net/contact",
+        "https://www.extraordinarykidstherapy.net/about"
+      ],
+      "changes": [
+        "Added the clinic address from the Contact page: 389 Putnam Pike, Chepachet, RI 02814 (city Glocester, since Chepachet is a Glocester village not in our town list); phone 401-203-5444.",
+        "Description now names the place, weekly themes and the 20-child full-day cap; refund line notes the email application.",
+        "camp_type 'day' kept: full-day and half-day options are stated ('These groups apply to both full and half day')."
+      ],
+      "open_questions": [
+        "The page no longer shows the 2026 week dates (now '2027 dates coming soon'); the 2026 sessions in the draft come from the Oct 13 copy of the page.",
+        "The page does not say the camp is held at the clinic, but that is the only address the practice gives.",
+        "No ages or prices on the page."
+      ]
+    },
+    "earlier_pass": {
+      "status": "needs_andrew",
       "by": "Claude",
       "date": "2026-10-27",
       "page_checked": "https://www.extraordinarykidstherapy.net/camps-and-groups",
@@ -93,6 +185,23 @@
         "Address is the clinic (389 Putnam Pike, Chepachet); the camp page does not say camp is held there. Confirm location",
         "No ages, dates or prices for 2027 yet; registration is by email only"
       ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.extraordinarykidstherapy.net/camps-and-groups",
+      "changes": [
+        "Added the clinic address from the Contact page: 389 Putnam Pike, Chepachet, RI 02814 (city Glocester, since Chepachet is a Glocester village not in our town list); phone 401-203-5444.",
+        "Description now names the place, weekly themes and the 20-child full-day cap; refund line notes the email application.",
+        "camp_type 'day' kept: full-day and half-day options are stated ('These groups apply to both full and half day')."
+      ],
+      "for_andrew": [
+        "The page no longer shows the 2026 week dates (now '2027 dates coming soon'); the 2026 sessions in the draft come from the Oct 13 copy of the page.",
+        "The page does not say the camp is held at the clinic, but that is the only address the practice gives.",
+        "No ages or prices on the page."
+      ]
     }
-  }
+  },
+  "street_address": "389 Putnam Pike",
+  "phone": "401-203-5444"
 }

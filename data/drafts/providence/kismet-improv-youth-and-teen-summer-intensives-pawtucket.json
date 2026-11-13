@@ -20,7 +20,7 @@
   "sources": [
     {
       "url": "https://www.kismetimprov.com/summer",
-      "checked": "2026-10-27",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -80,7 +80,20 @@
     "errors": [
       "missing required season_year"
     ],
-    "first_pass": {
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.kismetimprov.com/summer"
+      ],
+      "changes": [
+        "No field changes: name, address, email, phone and the improv focus match the page. Source checked date updated."
+      ],
+      "open_questions": [
+        "The page still says 'Nothing to book right now. Check back soon.' No ages, dates, prices or year, so season_year cannot be set and the validator fails. Hold the draft and recheck in spring 2027."
+      ]
+    },
+    "earlier_pass": {
+      "status": "needs_andrew",
       "by": "Claude",
       "date": "2026-10-27",
       "page_checked": "https://www.kismetimprov.com/summer",
@@ -89,6 +102,17 @@
       ],
       "for_andrew": [
         "No season_year can be set: the page says 'Nothing to book right now. Check back soon.' and shows no dates, ages or prices. Recheck in spring for the 2027 intensives, or drop for now."
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.kismetimprov.com/summer",
+      "changes": [
+        "No field changes: name, address, email, phone and the improv focus match the page. Source checked date updated."
+      ],
+      "for_andrew": [
+        "The page still says 'Nothing to book right now. Check back soon.' No ages, dates, prices or year, so season_year cannot be set and the validator fails. Hold the draft and recheck in spring 2027."
       ]
     }
   }

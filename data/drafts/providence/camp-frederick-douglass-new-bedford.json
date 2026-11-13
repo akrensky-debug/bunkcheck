@@ -3,6 +3,7 @@
   "name": "Camp Frederick Douglass",
   "operator_name": "YMCA Southcoast",
   "website_url": "https://ymcasouthcoast.org/location/camp-frederick-douglass/",
+  "registration_url": "https://operations.daxko.com/online/2096/ProgramsV2/Home.mvc",
   "email": "kjackson-lee@ymcasc.org",
   "phone": "(508) 997-0734 x 127",
   "street_address": "25 South Water Street",
@@ -13,7 +14,11 @@
   "primary_categories": [
     "general"
   ],
-  "description_short": "A YMCA day camp at the New Bedford YMCA, open weekdays from 7:30 AM to 5:30 PM. Campers do gym and outdoor games, swimming, archery and drama, and learn about Frederick Douglass and his time in New Bedford through projects, field trips and museum visits.",
+  "secondary_categories": [
+    "sports",
+    "performing_arts",
+    "swimming"
+  ],
   "activities": [
     "gym games",
     "outdoor games",
@@ -25,10 +30,77 @@
     "museum visits",
     "local history projects"
   ],
+  "description_short": "A YMCA day camp at the New Bedford YMCA, open weekdays from 7:30 AM to 5:30 PM. Campers do gym and outdoor games, swimming, archery and drama, and learn about Frederick Douglass and his time in New Bedford through projects, field trips and museum visits.",
+  "extended_care": true,
+  "financial_aid": true,
+  "refund_policy_summary": "$50 non-refundable deposit per session per child at registration; tuition due in full 6/1 (Sessions A-C), 7/1 (D-F) and 8/1 (G-J). Withdrawal needs four weeks' written notice for a refund less the deposit; refunds after camp starts only for illness or injury with a doctor's note. $25 fee for approved session changes.",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Session A",
+      "start_date": "2026-06-22",
+      "end_date": "2026-06-26",
+      "availability": "unknown"
+    },
+    {
+      "name": "Session B",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-03",
+      "availability": "unknown"
+    },
+    {
+      "name": "Session C",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "availability": "unknown"
+    },
+    {
+      "name": "Session D",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "availability": "unknown"
+    },
+    {
+      "name": "Session E",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "availability": "unknown"
+    },
+    {
+      "name": "Session F",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "availability": "unknown"
+    },
+    {
+      "name": "Session G",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "availability": "unknown"
+    },
+    {
+      "name": "Session H",
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-14",
+      "availability": "unknown"
+    },
+    {
+      "name": "Session I",
+      "start_date": "2026-08-17",
+      "end_date": "2026-08-21",
+      "availability": "unknown"
+    },
+    {
+      "name": "Session J",
+      "start_date": "2026-08-24",
+      "end_date": "2026-08-28",
+      "availability": "unknown"
+    }
+  ],
   "sources": [
     {
       "url": "https://ymcasouthcoast.org/location/camp-frederick-douglass/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -41,21 +113,32 @@
         "zip",
         "camp_type",
         "primary_categories",
+        "secondary_categories",
         "activities",
         "description_short"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Camp location page: hours 7:30-5:30 weekdays, activities, director contact"
     },
     {
       "url": "https://ymcasouthcoast.org/programs/child-care-camps/summer-day-camp/",
-      "checked": "2026-10-27",
+      "checked": "2026-11-12",
       "fields": [
+        "registration_url",
         "financial_aid"
-      ]
+      ],
+      "note": "YMCA Southcoast Summer Day Camp page: 'Online Registration' link; FAQ 'Does YMCA Southcoast offer financial aid... YES'"
+    },
+    {
+      "url": "https://ymcasouthcoast.org/wp-content/uploads/2026/04/2026_CampRegistration_Fill.pdf",
+      "checked": "2026-11-12",
+      "fields": [
+        "extended_care",
+        "refund_policy_summary",
+        "sessions"
+      ],
+      "note": "2026 Summer Camp Registration Form: Sessions A-J (6/22-8/28); Frederick Douglass extended care AM $60/PM $40/both $100 per week, New Bedford YMCA 7:30-9:00am and 4:00-5:30pm; payment and refund policy"
     }
   ],
-  "season_year": 2026,
-  "financial_aid": true,
   "review": {
     "status": "ready",
     "source": {
@@ -90,7 +173,30 @@
       }
     ],
     "errors": [],
-    "first_pass": {
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://ymcasouthcoast.org/location/camp-frederick-douglass/",
+        "https://ymcasouthcoast.org/programs/child-care-camps/summer-day-camp/",
+        "https://ymcasouthcoast.org/wp-content/uploads/2026/04/2026_CampRegistration_Fill.pdf",
+        "https://ymcasouthcoast.org/wp-content/uploads/2026/10/NB-Closure-Updates-October-26.pdf",
+        "https://operations.daxko.com/online/2096/ProgramsV2/Home.mvc"
+      ],
+      "changes": [
+        "Set season_year 2026 (fixes missing required season_year); no 2027 information posted",
+        "Added 10 weekly 2026 sessions (A-J, 6/22-8/28) from the YMCA Southcoast 2026 registration form",
+        "Added extended care (true), financial aid (true, Camp For All), refund/payment policy and the online registration URL",
+        "Categories: primary now general (traditional YMCA day camp), sports/performing_arts/swimming moved to secondary; 'academic' dropped (page describes history projects, not academics)",
+        "Verified name, operator, address, phone, director email, activities and description against the location page"
+      ],
+      "open_questions": [
+        "Weekly tuition and age range for the Frederick Douglass traditional camp are not readable on the 2026 form (the price grid in the PDF does not line up by location), so prices and ages stay null",
+        "Transportation: the form says bussing is available at Massasoit, Metacomet and Quequechan, which suggests none at Frederick Douglass, but it does not say so directly; left null",
+        "2027 dates, prices and registration opening not posted"
+      ]
+    },
+    "earlier_pass": {
+      "status": "ready",
       "by": "Claude",
       "date": "2026-10-27",
       "page_checked": "https://ymcasouthcoast.org/location/camp-frederick-douglass/",
@@ -103,6 +209,23 @@
       "for_andrew": [
         "New Bedford is about 30-33 miles from Providence, at the edge of the range",
         "No ages or prices on the camp page (rates are in a PDF)"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://ymcasouthcoast.org/location/camp-frederick-douglass/",
+      "changes": [
+        "Set season_year 2026 (fixes missing required season_year); no 2027 information posted",
+        "Added 10 weekly 2026 sessions (A-J, 6/22-8/28) from the YMCA Southcoast 2026 registration form",
+        "Added extended care (true), financial aid (true, Camp For All), refund/payment policy and the online registration URL",
+        "Categories: primary now general (traditional YMCA day camp), sports/performing_arts/swimming moved to secondary; 'academic' dropped (page describes history projects, not academics)",
+        "Verified name, operator, address, phone, director email, activities and description against the location page"
+      ],
+      "for_andrew": [
+        "Weekly tuition and age range for the Frederick Douglass traditional camp are not readable on the 2026 form (the price grid in the PDF does not line up by location), so prices and ages stay null",
+        "Transportation: the form says bussing is available at Massasoit, Metacomet and Quequechan, which suggests none at Frederick Douglass, but it does not say so directly; left null",
+        "2027 dates, prices and registration opening not posted"
       ]
     }
   }

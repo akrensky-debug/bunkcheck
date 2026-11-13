@@ -63,13 +63,13 @@
       "start_date": "2027-07-26",
       "end_date": "2027-07-29",
       "price": 260,
-      "availability": "unknown"
+      "availability": "open"
     }
   ],
   "sources": [
     {
       "url": "https://www.forecourtri.com/kids/summer-camp",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -154,7 +154,22 @@
       }
     ],
     "errors": [],
-    "first_pass": {
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.forecourtri.com/kids/summer-camp"
+      ],
+      "changes": [
+        "No field changes: name, ages 5-17, the four 9 AM-12 PM weeks ($280), the advanced training camp July 26-29 4-6 PM ($260, '4 spots remain'), address, phone, email and non-refundable policy all match the page. Source checked date updated."
+      ],
+      "open_questions": [
+        "Dates have no year beside them, but the headings say 2027 and the weekdays fit 2027 (July 12-15 is Mon-Thu in 2027, Sun-Wed in 2026), so 2027 stays.",
+        "'Updated May 26th' and '(4 spots remain)' look carried over; the training camp availability 'open' may be stale.",
+        "The page has a 'Summer Camp Registration' label but no working registration link in the HTML, so registration_url stays empty. No registration opening date is given."
+      ]
+    },
+    "earlier_pass": {
+      "status": "ready",
       "by": "Claude",
       "date": "2026-10-27",
       "page_checked": "https://www.forecourtri.com/kids/summer-camp",
@@ -163,6 +178,19 @@
       ],
       "for_andrew": [
         "Page is headed 2027 and the dates fit the 2027 calendar, but the \"Updated May 26th\" note suggests it may be a relabelled 2026 page; spot-check dates/prices in spring"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.forecourtri.com/kids/summer-camp",
+      "changes": [
+        "No field changes: name, ages 5-17, the four 9 AM-12 PM weeks ($280), the advanced training camp July 26-29 4-6 PM ($260, '4 spots remain'), address, phone, email and non-refundable policy all match the page. Source checked date updated."
+      ],
+      "for_andrew": [
+        "Dates have no year beside them, but the headings say 2027 and the weekdays fit 2027 (July 12-15 is Mon-Thu in 2027, Sun-Wed in 2026), so 2027 stays.",
+        "'Updated May 26th' and '(4 spots remain)' look carried over; the training camp availability 'open' may be stale.",
+        "The page has a 'Summer Camp Registration' label but no working registration link in the HTML, so registration_url stays empty. No registration opening date is given."
       ]
     }
   }

@@ -19,7 +19,7 @@
   ],
   "grade_min": 3,
   "grade_max": 12,
-  "description_short": "La Salle Academy, a Catholic high school in Providence, runs a set of separate half-day and full-day summer camps on its campus. They cover sports (tennis, basketball, volleyball, soccer), musical theater, robotics/STEM and academic enrichment for students in about grades 3-12.",
+  "description_short": "La Salle Academy, a Catholic high school in Providence, runs a set of separate half-day and full-day summer camps on its campus. They cover sports (tennis, basketball, volleyball, soccer), musical theater, robotics/STEM, academic enrichment and SAT prep for students in about grades 3-12.",
   "activities": [
     "Tennis",
     "Soccer",
@@ -29,7 +29,8 @@
     "Robotics",
     "STEM",
     "ELA and math enrichment",
-    "Field trips"
+    "Field trips",
+    "SAT prep"
   ],
   "price_min": 200,
   "price_max": 500,
@@ -107,6 +108,13 @@
       "availability": "unknown"
     },
     {
+      "name": "Summer SAT Prep Program",
+      "start_date": "2026-06-26",
+      "end_date": "2026-08-19",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
       "name": "Women in STEM Camp",
       "start_date": "2026-06-22",
       "end_date": "2026-06-26",
@@ -117,7 +125,7 @@
   "sources": [
     {
       "url": "https://www.lasalle-academy.org/campus-life/summer-camps",
-      "checked": "2026-10-27",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -179,7 +187,21 @@
       }
     ],
     "errors": [],
-    "first_pass": {
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.lasalle-academy.org/campus-life/summer-camps"
+      ],
+      "changes": [
+        "No field changes. Every session date and price, grades, contact (Abel Poirier, 401-351-7750 Ext 152), address and the bring-your-own-lunch note match the live page; volleyball $225 confirmed."
+      ],
+      "open_questions": [
+        "Page still shows summer 2026 only; no 2027 camps or registration date posted.",
+        "Girls Basketball Clinic and SAT Prep show no price on the page."
+      ]
+    },
+    "earlier_pass": {
+      "status": "ready",
       "by": "Claude",
       "date": "2026-10-27",
       "page_checked": "https://www.lasalle-academy.org/campus-life/summer-camps",
@@ -188,6 +210,18 @@
         "Checked all other sessions, prices, grades, contact and meals_included false ('Campers are required to bring their own snacks, lunch') against the page."
       ],
       "for_andrew": []
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.lasalle-academy.org/campus-life/summer-camps",
+      "changes": [
+        "No field changes. Every session date and price, grades, contact (Abel Poirier, 401-351-7750 Ext 152), address and the bring-your-own-lunch note match the live page; volleyball $225 confirmed."
+      ],
+      "for_andrew": [
+        "Page still shows summer 2026 only; no 2027 camps or registration date posted.",
+        "Girls Basketball Clinic and SAT Prep show no price on the page."
+      ]
     }
   }
 }

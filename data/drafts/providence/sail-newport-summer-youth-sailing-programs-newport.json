@@ -10,94 +10,96 @@
   "zip": "02840",
   "camp_type": "specialty",
   "primary_categories": [
-    "sports",
-    "nature"
+    "sailing"
   ],
   "age_min": 5,
   "age_max": 17,
-  "description_short": "Summer sailing lessons for ages 5-17 at Fort Adams in Newport, RI: two-week dinghy sessions (ages 7-17) and one-week keelboat sessions (ages 12-17) from beginner to advanced, plus a short one-week Little Guppies intro program for 5- and 6-year-olds.",
+  "description_short": "Summer sailing classes for ages 5-17 at Fort Adams in Newport, RI. Two-week dinghy sessions (ages 7-17) and one-week keelboat sessions (ages 12-17) run from beginner to advanced, and Little Guppies is a short one-week introduction for 5- and 6-year-olds. Families apply online and are placed by experience, age and size.",
   "activities": [
     "Dinghy sailing",
     "Keelboat sailing",
     "Race training",
     "Sailing games (Little Guppies)"
   ],
+  "price_min": null,
+  "price_max": null,
   "financial_aid": true,
+  "refund_policy_summary": "Once a student is accepted and paid: no obligation if they can't attend at the payment deadline (usually March). Cancel before the mid-April cutoff (April 12 in the 2026 policy) for a refund minus a $30 fee; after that, a refund minus $50 only if the spot is filled, otherwise no refund.",
   "swim_waterfront_notes": "Every child must pass a swim check at the start of each session: swim 20 yards and tread water for 2 minutes, wearing a life jacket. Life jackets must be worn at all times on the docks and in boats. Loaner life jackets are available for first-time sailors.",
   "season_year": 2027,
   "sessions": [
     {
-      "name": "Dinghy Session 1",
+      "name": "Dinghy Session 1 (ages 7-17, 9:00-3:30)",
       "start_date": "2027-06-21",
       "end_date": "2027-07-02",
       "price": null,
       "availability": "unknown"
     },
     {
-      "name": "Dinghy Session 2 (starts Tuesday)",
+      "name": "Dinghy Session 2 (ages 7-17, 9:00-4:00, starts Tuesday)",
       "start_date": "2027-07-06",
       "end_date": "2027-07-16",
       "price": null,
       "availability": "unknown"
     },
     {
-      "name": "Dinghy Session 3",
+      "name": "Dinghy Session 3 (ages 7-17, 9:00-3:30)",
       "start_date": "2027-07-19",
       "end_date": "2027-07-30",
       "price": null,
       "availability": "unknown"
     },
     {
-      "name": "Dinghy Session 4",
+      "name": "Dinghy Session 4 (ages 7-17, 9:00-3:30)",
       "start_date": "2027-08-02",
       "end_date": "2027-08-13",
       "price": null,
       "availability": "unknown"
     },
     {
-      "name": "Little Guppies Session 1 (AM or PM)",
+      "name": "Little Guppies Session 1 (born 2020-2021; AM 9:00-11:30 or PM 12:30-3:00)",
       "start_date": "2027-06-14",
       "end_date": "2027-06-18",
       "price": null,
       "availability": "unknown"
     },
     {
-      "name": "Little Guppies Session 2 (AM or PM)",
+      "name": "Little Guppies Session 2 (born 2020-2021; AM 9:00-11:30 or PM 12:30-3:00)",
       "start_date": "2027-08-16",
       "end_date": "2027-08-20",
       "price": null,
       "availability": "unknown"
     },
     {
-      "name": "Keelboat Session 1",
+      "name": "Keelboat Session 1 (ages 12-17, 9:00-3:30)",
       "start_date": "2027-06-14",
       "end_date": "2027-06-18",
       "price": null,
       "availability": "unknown"
     },
     {
-      "name": "Keelboat Session 2",
+      "name": "Keelboat Session 2 (ages 12-17, 9:00-3:30)",
       "start_date": "2027-06-21",
       "end_date": "2027-06-25",
       "price": null,
       "availability": "unknown"
     },
     {
-      "name": "Keelboat Session 3",
+      "name": "Keelboat Session 3 (ages 12-17, 9:00-3:30)",
       "start_date": "2027-06-28",
       "end_date": "2027-07-02",
       "price": null,
       "availability": "unknown"
     },
     {
-      "name": "Keelboat Session 4",
+      "name": "Keelboat Session 4 (ages 12-17, 9:00-3:30)",
       "start_date": "2027-08-02",
       "end_date": "2027-08-06",
       "price": null,
       "availability": "unknown"
     },
     {
-      "name": "Keelboat Session 5",
+      "name": "Keelboat Session 5 (ages 12-17, 9:00-3:30)",
       "start_date": "2027-08-09",
       "end_date": "2027-08-13",
       "price": null,
@@ -107,7 +109,7 @@
   "sources": [
     {
       "url": "https://sailnewport.org/youth-sailing-programs/youth-instruction/",
-      "checked": "2026-10-27",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -124,10 +126,11 @@
         "age_max",
         "description_short",
         "financial_aid",
+        "refund_policy_summary",
         "swim_waterfront_notes",
         "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Rechecked 2026-11-12: page now shows the 2027 schedule (rates TBD) and the 2027 application window."
     },
     {
       "url": "https://sailnewport.org/youth-sailing-programs/youth-instruction/",
@@ -184,7 +187,26 @@
       }
     ],
     "errors": [],
-    "first_pass": {
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://sailnewport.org/youth-sailing-programs/youth-instruction/"
+      ],
+      "changes": [
+        "Moved to the 2027 season: the page now posts the 2027 schedule. Replaced all sessions with 2027 dates: 4 dinghy, 2 Little Guppies, 5 keelboat sessions.",
+        "Removed price_min/price_max ($230-$825 were 2026 rates); page says '2027 Rates – TBD', so session prices are null.",
+        "primary_categories ['sports','nature'] -> ['sailing'].",
+        "description_short rewritten: Little Guppies now has two sessions; added the application/placement process.",
+        "refund_policy_summary reworded so the 2026 cutoff date is labeled as such."
+      ],
+      "open_questions": [
+        "2027 rates are TBD.",
+        "The refund policy on the page still carries 2026 dates (April 12/13, 2026).",
+        "Handbooks for 2027 come Feb. 1; Little Guppies and Keelboat handbooks linked are 2025."
+      ]
+    },
+    "earlier_pass": {
+      "status": "ready",
       "by": "Claude",
       "date": "2026-10-27",
       "page_checked": "https://sailnewport.org/youth-sailing-programs/youth-instruction/",
@@ -196,6 +218,23 @@
       ],
       "for_andrew": [
         "2027 rates are TBD; 2027 application window runs Dec 28, 2026 - Jan 31, 2027. Add prices and the refund policy when posted."
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://sailnewport.org/youth-sailing-programs/youth-instruction/",
+      "changes": [
+        "Moved to the 2027 season: the page now posts the 2027 schedule. Replaced all sessions with 2027 dates: 4 dinghy, 2 Little Guppies, 5 keelboat sessions.",
+        "Removed price_min/price_max ($230-$825 were 2026 rates); page says '2027 Rates – TBD', so session prices are null.",
+        "primary_categories ['sports','nature'] -> ['sailing'].",
+        "description_short rewritten: Little Guppies now has two sessions; added the application/placement process.",
+        "refund_policy_summary reworded so the 2026 cutoff date is labeled as such."
+      ],
+      "for_andrew": [
+        "2027 rates are TBD.",
+        "The refund policy on the page still carries 2026 dates (April 12/13, 2026).",
+        "Handbooks for 2027 come Feb. 1; Little Guppies and Keelboat handbooks linked are 2025."
       ]
     }
   },

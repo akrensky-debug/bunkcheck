@@ -4,6 +4,7 @@
   "operator_name": "The Fenn School",
   "website_url": "https://www.summerfenn.org",
   "registration_url": "https://summerfenn.campbrainregistration.com/",
+  "email": "CampOffice@fenn.org",
   "phone": "978-318-3614",
   "street_address": "516 Monument Street",
   "city": "Concord",
@@ -11,12 +12,10 @@
   "zip": "01742",
   "camp_type": "day",
   "primary_categories": [
-    "nature"
+    "general",
+    "outdoor",
+    "adventure"
   ],
-  "age_min": 4,
-  "grade_min": 0,
-  "grade_max": 10,
-  "description_short": "Summer Fenn is a day camp in Concord, MA. Its Base Camp is a general day camp for children entering grades K-10, and SF Junior is a full-day program for 4- and 5-year-olds. It also runs specialty, outdoor expedition and off-site day-trip camps. Camp runs 9:00am-3:45pm, mostly in two-week sessions.",
   "activities": [
     "Electives",
     "Outdoor adventure (Expedition Camps)",
@@ -26,9 +25,16 @@
     "After-camp swim lessons",
     "Red Cross Lifeguard and WSI certification"
   ],
-  "financial_aid": true,
+  "age_min": 4,
+  "grade_min": 0,
+  "grade_max": 10,
+  "description_short": "Summer Fenn is a day camp in Concord, MA. Its Base Camp is a general day camp for children entering grades K-10, and SF Junior is a full-day program for 4- and 5-year-olds. It also runs specialty, outdoor expedition and off-site day-trip camps. Camp runs 9:00am-3:45pm, mostly in two-week sessions.",
   "extended_care": true,
-  "swim_waterfront_notes": "Swim lessons are offered after camp at an extra charge. Red Cross Lifeguard and Water Safety Instructor (WSI) certification courses are also offered. The page does not describe the pool or waterfront.",
+  "transportation": true,
+  "meals_included": true,
+  "financial_aid": true,
+  "refund_policy_summary": "2026 policy: tuition is fully refundable until March 31, less a $100 per week, per child deposit; after March 31 a 25% refund until 2 weeks before the program starts; no refunds within 2 weeks of the start. Cancellations must be emailed in writing.",
+  "swim_waterfront_notes": "The Fenn School campus has a 30' x 75' heated swimming pool. Swim lessons are offered after camp at an extra charge, and Red Cross Lifeguard and Water Safety Instructor (WSI) certification courses are also offered.",
   "season_year": 2027,
   "sessions": [
     {
@@ -119,7 +125,7 @@
   "sources": [
     {
       "url": "https://www.summerfenn.org",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -138,15 +144,38 @@
         "grade_max",
         "description_short",
         "extended_care",
-        "financial_aid",
-        "swim_waterfront_notes",
         "sessions"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.summerfenn.org/camp-rates",
+      "checked": "2026-11-12",
+      "fields": [
+        "email",
+        "meals_included",
+        "refund_policy_summary",
+        "financial_aid"
+      ],
+      "note": "2027 Camp Rates page (prices TBD)"
+    },
+    {
+      "url": "https://www.summerfenn.org/facilities",
+      "checked": "2026-11-12",
+      "fields": [
+        "swim_waterfront_notes"
+      ]
+    },
+    {
+      "url": "https://www.summerfenn.org/transportation",
+      "checked": "2026-11-12",
+      "fields": [
+        "transportation"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.summerfenn.org",
       "kind": "html",
@@ -192,6 +221,46 @@
         "quote": "Expedition Camps outdoor adventure Programs"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.summerfenn.org",
+        "https://www.summerfenn.org/camp-rates",
+        "https://www.summerfenn.org/facilities",
+        "https://www.summerfenn.org/transportation"
+      ],
+      "changes": [
+        "Added meals_included true (Camp Rates: 'tuition includes lunch and snack'), transportation true (optional bus routes, Transportation page), email CampOffice@fenn.org",
+        "Added refund policy (the page labels it the 2026 refund policy)",
+        "Swim notes now mention the 30' x 75' heated pool (Facilities page)",
+        "primary_categories nature -> general, outdoor, adventure (Base Camp is a 'classic, well rounded day camp' plus Expedition outdoor adventure camps), resolving the low-confidence item",
+        "financial_aid confirmed on the Camp Rates page ('Summer Fenn offers Financial Aid as we are able'); operator confirmed (Fenn School campus, CampOffice@fenn.org)",
+        "2027 Base Camp sessions and single weeks checked against the home page and match"
+      ],
+      "open_questions": [
+        "2027 prices are all '$TBD' on the Camp Rates page",
+        "Exact 2027 registration dates TBD (early January)",
+        "SF Junior and specialty camp dates by grade/week are 'Coming soon'"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.summerfenn.org",
+      "changes": [
+        "Added meals_included true (Camp Rates: 'tuition includes lunch and snack'), transportation true (optional bus routes, Transportation page), email CampOffice@fenn.org",
+        "Added refund policy (the page labels it the 2026 refund policy)",
+        "Swim notes now mention the 30' x 75' heated pool (Facilities page)",
+        "primary_categories nature -> general, outdoor, adventure (Base Camp is a 'classic, well rounded day camp' plus Expedition outdoor adventure camps), resolving the low-confidence item",
+        "financial_aid confirmed on the Camp Rates page ('Summer Fenn offers Financial Aid as we are able'); operator confirmed (Fenn School campus, CampOffice@fenn.org)",
+        "2027 Base Camp sessions and single weeks checked against the home page and match"
+      ],
+      "for_andrew": [
+        "2027 prices are all '$TBD' on the Camp Rates page",
+        "Exact 2027 registration dates TBD (early January)",
+        "SF Junior and specialty camp dates by grade/week are 'Coming soon'"
+      ]
+    }
   }
 }

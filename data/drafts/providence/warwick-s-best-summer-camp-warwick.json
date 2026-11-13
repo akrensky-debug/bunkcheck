@@ -13,7 +13,10 @@
   "primary_categories": [
     "general"
   ],
-  "description_short": "A general day camp in Warwick, RI. Campers are grouped by age for planned games, arts and crafts, park and pool outings, field trips and special guests. Before and after care is available, and families can sign up for the full summer or for single weeks.",
+  "secondary_categories": [
+    "sports",
+    "arts"
+  ],
   "activities": [
     "Group games (dodgeball, tag, banana tag)",
     "Arts and crafts",
@@ -23,12 +26,13 @@
     "Pool outings",
     "Special guests"
   ],
+  "description_short": "A general day camp in Warwick, RI. Campers are grouped by age for planned games, arts and crafts, park and pool outings, field trips and special guests. Before and after care is available, and families can sign up for the full summer or for single weeks.",
   "extended_care": true,
   "swim_waterfront_notes": "The page says campers go to the pool on outings. It does not say where, how often, or how swimming is supervised.",
   "sources": [
     {
       "url": "https://warwicksbestsummercamp.com/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -44,7 +48,8 @@
         "activities",
         "description_short",
         "extended_care",
-        "swim_waterfront_notes"
+        "swim_waterfront_notes",
+        "secondary_categories"
       ],
       "note": "Drafted by the listing tool from this page"
     }
@@ -91,7 +96,22 @@
     "errors": [
       "missing required season_year"
     ],
-    "first_pass": {
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://warwicksbestsummercamp.com/"
+      ],
+      "changes": [
+        "Categories: primary general (traditional day camp: games, crafts, park, pool, field trips), sports and arts as secondary; 'sports' alone was a guess",
+        "Verified contact, address, activities, before/after care and description against the page; season_year still missing"
+      ],
+      "open_questions": [
+        "The page says it is 'static (not updated) year round' and puts dates, prices and registration behind a contact form ('Entering your information will forward you to a page with up-to-date scheduling and registration details'). We may not submit forms, so season_year (required), ages, dates and prices cannot be filled. Ask the camp, or drop the listing?",
+        "Parts of the page are template text about martial-arts 'classes' and 'ninja moves' that do not describe the camp; they were not used"
+      ]
+    },
+    "earlier_pass": {
+      "status": "needs_andrew",
       "by": "Claude",
       "date": "2026-10-27",
       "page_checked": "https://warwicksbestsummercamp.com/",
@@ -100,6 +120,19 @@
       ],
       "for_andrew": [
         "season_year still missing: the page is a static marketing page with no year, dates, ages or prices; those sit behind a contact-info form ('See Camp Info and Registration Options'). Ask the owner for 2027 dates and prices."
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://warwicksbestsummercamp.com/",
+      "changes": [
+        "Categories: primary general (traditional day camp: games, crafts, park, pool, field trips), sports and arts as secondary; 'sports' alone was a guess",
+        "Verified contact, address, activities, before/after care and description against the page; season_year still missing"
+      ],
+      "for_andrew": [
+        "The page says it is 'static (not updated) year round' and puts dates, prices and registration behind a contact form ('Entering your information will forward you to a page with up-to-date scheduling and registration details'). We may not submit forms, so season_year (required), ages, dates and prices cannot be filled. Ask the camp, or drop the listing?",
+        "Parts of the page are template text about martial-arts 'classes' and 'ninja moves' that do not describe the camp; they were not used"
       ]
     }
   }

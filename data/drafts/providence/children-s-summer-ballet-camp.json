@@ -46,12 +46,13 @@
       "availability": "full"
     }
   ],
-  "phone": "(401) 334-2560",
   "street_address": "52 Sherman Ave.",
+  "phone": "(401) 334-2560",
+  "email": "braecrest@stateballet.com",
   "sources": [
     {
       "url": "https://braecrestschool.com/summer/childrens-summer-camp",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -70,13 +71,14 @@
     },
     {
       "url": "https://braecrestschool.com/contact",
-      "checked": "2026-10-27",
+      "checked": "2026-11-12",
       "fields": [
-        "phone",
         "street_address",
         "city",
         "state",
-        "zip"
+        "zip",
+        "phone",
+        "email"
       ]
     },
     {
@@ -135,8 +137,35 @@
         "quote": "I AM MOANA! - July 13-17"
       }
     ],
-    "errors": [],
-    "first_pass": {
+    "errors": [
+      "missing required city",
+      "missing required zip",
+      "city None, RI is not in cities.py"
+    ],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://braecrestschool.com/summer/childrens-summer-camp",
+        "https://braecrestschool.com/contact",
+        "https://braecrestschool.com/announcements",
+        "https://braecrestschool.com/announcements/childrens-summer-camp",
+        "https://braecrestschool.com/announcements/open-enrollment-for-summer-and-fall-2026"
+      ],
+      "changes": [
+        "Added the school's address, phone and email from the Contact page: 52 Sherman Ave., Lincoln, RI 02865, (401) 334-2560, braecrest@stateballet.com. State now sourced from that page instead of the 'State Ballet of Rhode Island' line.",
+        "Season year 2026 confirmed: the 'Children's Summer Camp' announcement was published June 4th, 2026 with the same two weeks (July 6-10 and July 13-17).",
+        "Kept both sessions as full: the camp page says 'This session is fully booked' for both weeks.",
+        "Everything else (ages 5-12 with one year of ballet, activities, bring your own lunch) matches the page."
+      ],
+      "open_questions": [
+        "Prices are not on the camp page or the announcement.",
+        "Daily hours are not stated.",
+        "The contact address is the school's; the camp page does not name a different site, so the camp is assumed to run there ('a beautiful country setting').",
+        "No 2027 dates or registration date posted. The camp page says 'Enrollment is open year-round' and registration is by phone or email."
+      ]
+    },
+    "earlier_pass": {
+      "status": "ready",
       "by": "Claude",
       "date": "2026-10-27",
       "page_checked": "https://braecrestschool.com/summer/childrens-summer-camp",
@@ -146,6 +175,23 @@
       "for_andrew": [
         "Session dates (July 6-10, July 13-17) show no year; 2026 inferred (both Mon-Fri in 2026, page (c) 2026). 2027 dates not posted",
         "No prices on the page; both weeks marked fully booked; slug lacks a town suffix (children-s-summer-ballet-camp)"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://braecrestschool.com/summer/childrens-summer-camp",
+      "changes": [
+        "Added the school's address, phone and email from the Contact page: 52 Sherman Ave., Lincoln, RI 02865, (401) 334-2560, braecrest@stateballet.com. State now sourced from that page instead of the 'State Ballet of Rhode Island' line.",
+        "Season year 2026 confirmed: the 'Children's Summer Camp' announcement was published June 4th, 2026 with the same two weeks (July 6-10 and July 13-17).",
+        "Kept both sessions as full: the camp page says 'This session is fully booked' for both weeks.",
+        "Everything else (ages 5-12 with one year of ballet, activities, bring your own lunch) matches the page."
+      ],
+      "for_andrew": [
+        "Prices are not on the camp page or the announcement.",
+        "Daily hours are not stated.",
+        "The contact address is the school's; the camp page does not name a different site, so the camp is assumed to run there ('a beautiful country setting').",
+        "No 2027 dates or registration date posted. The camp page says 'Enrollment is open year-round' and registration is by phone or email."
       ]
     }
   },
