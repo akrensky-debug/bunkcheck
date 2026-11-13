@@ -26,18 +26,9 @@
   ],
   "gender_policy": "coed",
   "swim_waterfront_notes": "Camp Heartwood: swimming 3 times a week. Camp Osprey lists swimming among its activities; its December break camp has daily swimming.",
-  "price_min": 225,
-  "price_max": 225,
   "financial_aid": true,
   "season_year": 2027,
   "sessions": [
-    {
-      "name": "Camp Osprey December School Break Camp (3 days, Freeport)",
-      "start_date": "2026-12-28",
-      "end_date": "2026-12-30",
-      "price": 225,
-      "availability": "unknown"
-    },
     {
       "name": "February School Break Camp (Camp Heartwood or Camp Osprey)",
       "start_date": "2027-02-15",
@@ -84,9 +75,7 @@
       "checked": "2026-11-13",
       "fields": [
         "age_min",
-        "age_max",
-        "price_min",
-        "price_max"
+        "age_max"
       ]
     }
   ],
@@ -159,10 +148,10 @@
       ],
       "changes": [
         "The camps page changed since drafting: summer 2026 is gone and it now says 'SUMMER 2027 Information coming soon'",
-        "Replaced the past 2026 sessions with what is posted now: Camp Osprey December break camp Dec 28-30, 2026 ($225), and February 15-19 and April 19-23, 2027 break camps at both sites (no price yet); season_year set to 2027",
+        "Replaced the past 2026 sessions with the February 15-19 and April 19-23, 2027 break camps at both sites (no price yet); season_year set to 2027. Left out the Camp Osprey December break camp (Dec 28-30, 2026, $225, ages 5-12, 8:00 am to 5:30 pm) because the validator requires sessions inside season_year",
         "Removed extended_care and the 9:30-3:30 and free before/after care claims: no current YMCA page states them (the December flyer gives 8:00 am to 5:30 pm)",
         "Ages 5-12 now sourced to the December break camp flyer; no page states summer 2027 ages",
-        "Added gender_policy coed (both camp pages say co-ed day camp), financial_aid (financial assistance FAQ) and price $225 (December flyer)",
+        "Added gender_policy coed (both camp pages say co-ed day camp) and financial_aid (financial assistance FAQ on the camp pages); no 2027 prices are posted",
         "Rewrote description and swim notes to match the current pages"
       ],
       "open_questions": [
