@@ -3,37 +3,146 @@
   "name": "EJRP Summer Full Day Camps",
   "operator_name": "Essex Junction Recreation & Parks",
   "website_url": "https://www.ejrp.org/school-age-childcare/summer-full-day-camps",
-  "registration_url": "https://www.ejrp.org/programs/overview-2",
+  "registration_url": "https://www.registration.ejrp.org/essexjunction",
   "phone": "802-878-1375",
   "street_address": "75 Maple Street",
   "city": "Essex Junction",
   "state": "VT",
   "zip": "05452",
   "camp_type": "day",
-  "description_short": "Full-day summer camps for school-age children run by the Essex Junction Recreation & Parks department, including Camp Maple Street, Camp Discovery, Camp REACH and Camp Nova.",
+  "description_short": "Weekday full-day camps (7:30 am to 5:30 pm) run by Essex Junction Recreation & Parks for children entering grades 1 to 8: Camp Maple Street, Camp Discovery, Camp REACH and Camp Nova, based at Maple Street Park and local schools, with swim lessons, sports, art and Friday field trips.",
   "season_year": 2026,
+  "email": "reckids@ejrp.org",
+  "grade_min": 1,
+  "grade_max": 8,
+  "primary_categories": [
+    "general"
+  ],
+  "activities": [
+    "swim lessons",
+    "free swim",
+    "sports",
+    "art",
+    "STEAM",
+    "enrichment",
+    "service",
+    "specialty instruction",
+    "field trips"
+  ],
+  "price_per_week": 245,
+  "price_min": 120,
+  "price_max": 245,
+  "price_per": "week",
+  "meals_included": true,
+  "financial_aid": true,
+  "refund_policy_summary": "Cancel in writing to reckids@ejrp.org at least three weeks before the week starts for a refund minus an administrative fee (5% before May 1, 10% after). With less notice, a refund is given only if the week is full, there is a waitlist and another family takes the spot; fees then run 15% to 25%.",
+  "swim_waterfront_notes": "Every Camp Maple Street camper gets swim lessons at Maple Street Pool and two hours of free swim; Camp Discovery campers get swim lessons at Sandhill Pool.",
+  "sessions": [
+    {
+      "name": "Week A",
+      "start_date": "2026-06-24",
+      "end_date": "2026-06-26",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week B",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-02",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week C",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week D",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week E",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week F",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week G",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week H",
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-14",
+      "price": null,
+      "availability": "unknown"
+    }
+  ],
   "sources": [
     {
       "url": "https://www.ejrp.org/school-age-childcare/summer-full-day-camps",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
+        "website_url"
+      ]
+    },
+    {
+      "url": "https://www.ejrp.org/fileadmin/files/Rec/Programs/summer-full-day-camps/EJRP_Summer_Full_Day_Camps-_Registration_Checklist.pdf",
+      "checked": "2026-11-13",
+      "fields": [
+        "registration_url"
+      ]
+    },
+    {
+      "url": "https://www.ejrp.org/fileadmin/files/Rec/Programs/summer-full-day-camps/EJRP_Summer_Full_Day_Camps_2026_Brochure.pdf",
+      "checked": "2026-11-13",
+      "fields": [
         "operator_name",
-        "website_url",
-        "registration_url",
         "phone",
+        "email",
         "street_address",
         "city",
         "state",
         "zip",
         "camp_type",
-        "description_short"
+        "primary_categories",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "description_short",
+        "price_per_week",
+        "price_min",
+        "price_max",
+        "price_per",
+        "meals_included",
+        "financial_aid",
+        "refund_policy_summary",
+        "swim_waterfront_notes",
+        "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Grades are the grade entering in fall. $245/week is for Camp Maple Street, Discovery and REACH; Camp Nova is $200/week; short weeks A ($147/$120) and B ($196/$160). Session prices left blank because they differ by camp."
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.ejrp.org/school-age-childcare/summer-full-day-camps",
       "kind": "html",
@@ -74,6 +183,28 @@
         "quote": "Camp Maple Street\n\nCamp Discovery\n\nCamp REACH\n\nCamp Nova"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.ejrp.org/school-age-childcare/summer-full-day-camps",
+        "https://www.ejrp.org/fileadmin/files/Rec/Programs/summer-full-day-camps/EJRP_Summer_Full_Day_Camps_2026_Brochure.pdf",
+        "https://www.ejrp.org/fileadmin/files/Rec/Programs/summer-full-day-camps/EJRP_Summer_Full_Day_Camps-_Registration_Checklist.pdf",
+        "https://www.ejrp.org/school-age-childcare/summer-full-day-camps/camp-maple-street",
+        "https://www.ejrp.org/school-age-childcare/summer-full-day-camps/camp-discovery",
+        "https://www.ejrp.org/school-age-childcare/summer-full-day-camps/camp-reach",
+        "https://www.ejrp.org/school-age-childcare/summer-full-day-camps/camp-star",
+        "https://www.ejrp.org/about/brochures-forms"
+      ],
+      "changes": [
+        "Added the eight 2026 weeks (A to H) from the 2026 Full Day Camps brochure.",
+        "Added grades 1 to 8 (entering), prices $120 to $245 a week, meals (breakfast, lunch, snack), financial aid via Child Care Resource, refund policy, swim notes, activities and the reckids@ejrp.org email from the brochure.",
+        "registration_url now points to the registration portal named in the 2026 checklist, not the generic programs page.",
+        "Added primary category general and rewrote the description with hours, grades and locations."
+      ],
+      "open_questions": [
+        "This is one listing for four camps at different sites (Maple Street Park, ADL Middle School, Essex Elementary and Middle, Fleming and Founders schools) with different grades, prices and resident priority. Keep it as one listing, or split into Camp Maple Street, Camp Discovery, Camp REACH and Camp Nova?"
+      ]
+    }
   }
 }

@@ -37,6 +37,8 @@
   "swim_waterfront_notes": "There is daily waterfront time (free swim or volleyball). Certified lifeguards supervise all aquatic activities. The shore is rocky and has zebra mussels, so sandals or water shoes are strongly recommended.",
   "season_year": 2027,
   "price_per": "week",
+  "gender_policy": "boys",
+  "email": "info@campabnaki.org",
   "sessions": [
     {
       "name": "Day Camp Session 1",
@@ -98,7 +100,7 @@
   "sources": [
     {
       "url": "https://campabnaki.org/summer-camp-options/day-camp/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -123,13 +125,15 @@
         "financial_aid",
         "refund_policy_summary",
         "swim_waterfront_notes",
-        "sessions"
+        "sessions",
+        "gender_policy",
+        "email"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Email is Cloudflare-obscured on the page; decoded from the page's own mailto link. Grades are grades completed (K = 0)."
     },
     {
       "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=1252+Abnaki+Road&city=North+Hero&state=VT&benchmark=Public_AR_Current&format=json",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "zip"
       ],
@@ -137,7 +141,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://campabnaki.org/summer-camp-options/day-camp/",
       "kind": "html",
@@ -179,6 +183,19 @@
         "quote": "a mix of small and large group games, swimming, and other great activities such as archery, arts + crafts"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://campabnaki.org/summer-camp-options/day-camp/",
+        "https://geocoding.geo.census.gov/geocoder/locations/address?street=1252+Abnaki+Road&city=North+Hero&state=VT&benchmark=Public_AR_Current&format=json"
+      ],
+      "changes": [
+        "Added gender_policy boys ('a weekday program for boys who have completed K to grade 4').",
+        "Added the camp email from the page's contact link.",
+        "Confirmed all eight 2027 sessions (June 28 to August 20), $525 a week, lunch and snack, bus from South Burlington, refund policy and waterfront notes on the day camp page."
+      ],
+      "open_questions": []
+    }
   }
 }

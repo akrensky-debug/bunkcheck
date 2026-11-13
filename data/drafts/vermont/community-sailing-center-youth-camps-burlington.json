@@ -8,7 +8,7 @@
   "street_address": "505 Lake Street",
   "city": "Burlington",
   "state": "VT",
-  "zip": null,
+  "zip": "05401",
   "camp_type": "day",
   "primary_categories": [
     "sports",
@@ -30,14 +30,14 @@
     "Swimming",
     "Tennis",
     "Lake science/STEM",
-    "Pirate-themed games"
+    "Pirates of the Champlain camp"
   ],
   "price_per_week": 565,
   "price_min": 450,
   "price_max": 1070,
   "financial_aid": true,
   "extended_care": true,
-  "swim_waterfront_notes": "Camps take place on Lake Champlain (Burlington Bay). Level II requires basic swimming proficiency. Swim & Sail campers take swim lessons in a pool at the Burlington Tennis Club.",
+  "swim_waterfront_notes": "Camps run on Lake Champlain. Campers and staff wear life jackets on docks and boats, and every camper does a short swim assessment on day one; knowing how to swim is not required to sail, but Level II and III need basic swimming proficiency. Water time depends on cyanobacteria; in a bloom campers stay out of the water and sail farther offshore. Swim & Sail campers take swim lessons in the Burlington Tennis Club pool.",
   "season_year": 2026,
   "price_per": "week",
   "sessions": [
@@ -217,70 +217,70 @@
       "availability": "unknown"
     },
     {
-      "name": "Level II (Ages 9-11), two weeks",
+      "name": "Level II (Ages 9-11)",
       "start_date": "2026-07-06",
       "end_date": "2026-07-17",
       "price": 1070,
       "availability": "unknown"
     },
     {
-      "name": "Level II (Ages 9-11), two weeks",
+      "name": "Level II (Ages 9-11)",
       "start_date": "2026-07-20",
       "end_date": "2026-07-31",
       "price": 1070,
       "availability": "unknown"
     },
     {
-      "name": "Level II (Ages 9-11), two weeks",
+      "name": "Level II (Ages 9-11)",
       "start_date": "2026-08-03",
       "end_date": "2026-08-14",
       "price": 1070,
       "availability": "unknown"
     },
     {
-      "name": "Level II (Ages 12-16), 9 days (holiday-shortened)",
+      "name": "Level II (Ages 12-16)",
       "start_date": "2026-06-22",
       "end_date": "2026-07-02",
-      "price": null,
+      "price": 1070,
       "availability": "unknown"
     },
     {
-      "name": "Level II (Ages 12-16), two weeks",
+      "name": "Level II (Ages 12-16)",
       "start_date": "2026-07-06",
       "end_date": "2026-07-17",
       "price": 1070,
       "availability": "unknown"
     },
     {
-      "name": "Level II (Ages 12-16), two weeks",
+      "name": "Level II (Ages 12-16)",
       "start_date": "2026-07-20",
       "end_date": "2026-07-31",
       "price": 1070,
       "availability": "unknown"
     },
     {
-      "name": "Level II (Ages 12-16), two weeks",
+      "name": "Level II (Ages 12-16)",
       "start_date": "2026-08-03",
       "end_date": "2026-08-14",
       "price": 1070,
       "availability": "unknown"
     },
     {
-      "name": "Level III (Ages 12-16), two weeks",
+      "name": "Level III (Ages 12-16)",
       "start_date": "2026-07-06",
       "end_date": "2026-07-17",
       "price": 1070,
       "availability": "unknown"
     },
     {
-      "name": "Level III (Ages 12-16), two weeks",
+      "name": "Level III (Ages 12-16)",
       "start_date": "2026-07-20",
       "end_date": "2026-07-31",
       "price": 1070,
       "availability": "unknown"
     },
     {
-      "name": "Level III (Ages 12-16), two weeks",
+      "name": "Level III (Ages 12-16)",
       "start_date": "2026-08-03",
       "end_date": "2026-08-14",
       "price": 1070,
@@ -444,7 +444,7 @@
   "sources": [
     {
       "url": "https://communitysailingcenter.org/youth-camps/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -466,14 +466,29 @@
         "price_per",
         "extended_care",
         "financial_aid",
-        "swim_waterfront_notes",
         "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "2026 season page (2026 camps have concluded, registration closed)"
+    },
+    {
+      "url": "https://communitysailingcenter.org/hours-location/",
+      "checked": "2026-11-13",
+      "fields": [
+        "zip"
+      ]
+    },
+    {
+      "url": "https://communitysailingcenter.org/youth-camp-guide/",
+      "checked": "2026-11-13",
+      "fields": [
+        "swim_waterfront_notes",
+        "meals_included"
+      ],
+      "note": "Youth Camp Guide: lunch only for families who opt in to the Burlington School Food Project bag lunch"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://communitysailingcenter.org/youth-camps/",
       "kind": "html",
@@ -530,6 +545,25 @@
     ],
     "errors": [
       "missing required zip"
-    ]
-  }
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://communitysailingcenter.org/youth-camps/",
+        "https://communitysailingcenter.org/youth-camp-guide/",
+        "https://communitysailingcenter.org/hours-location/"
+      ],
+      "changes": [
+        "Filled ZIP 05401 from the Hours & Location page (505 Lake Street, Burlington, Vermont 05401).",
+        "The Level II (Ages 12-16) session June 22 to July 2 now has price $1,070: the page lists that program at $1070.00 / session for all its sessions. Removed the '9 days (holiday-shortened)' and ', two weeks' wording from session names because the page doesn't name them that way.",
+        "Rewrote swim notes from the Youth Camp Guide (life jackets, day-one swim assessment, cyanobacteria rule) and removed 'Burlington Bay', which no page says.",
+        "Set meals_included false: the guide says lunch is provided only to campers who opt in to a bag-lunch program.",
+        "Checked all 57 sessions, ages and prices against the 2026 schedule; they match. Season is 2026; the page says 2026 camps have concluded and no 2027 schedule is posted."
+      ],
+      "open_questions": [
+        "The intro says ages 6 through 17, but no listed camp goes above 16; age_max stays 16. OK?"
+      ]
+    }
+  },
+  "meals_included": false
 }

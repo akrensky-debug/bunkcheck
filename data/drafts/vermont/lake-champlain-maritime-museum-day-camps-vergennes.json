@@ -46,55 +46,55 @@
       "start_date": "2026-06-22",
       "end_date": "2026-06-26",
       "price": 400,
-      "availability": "full"
+      "availability": "unknown"
     },
     {
       "name": "Kayak Building Camp",
       "start_date": "2026-06-22",
       "end_date": "2026-07-10",
       "price": 2950,
-      "availability": "full"
+      "availability": "unknown"
     },
     {
       "name": "The Fish Camp – Session B",
       "start_date": "2026-06-29",
       "end_date": "2026-07-03",
       "price": 400,
-      "availability": "full"
+      "availability": "unknown"
     },
     {
       "name": "Watershed Ecology Camp",
       "start_date": "2026-07-06",
       "end_date": "2026-07-10",
       "price": 400,
-      "availability": "full"
+      "availability": "unknown"
     },
     {
       "name": "Underwater Exploration Camp",
       "start_date": "2026-07-20",
       "end_date": "2026-07-24",
       "price": 400,
-      "availability": "full"
+      "availability": "unknown"
     },
     {
       "name": "Heavy Metal Mania Camp",
       "start_date": "2026-07-27",
       "end_date": "2026-07-31",
       "price": 400,
-      "availability": "full"
+      "availability": "unknown"
     },
     {
       "name": "Boats, Boats, Boats Camp",
       "start_date": "2026-08-10",
       "end_date": "2026-08-14",
       "price": 400,
-      "availability": "full"
+      "availability": "unknown"
     }
   ],
   "sources": [
     {
       "url": "https://www.lcmm.org/camps/day-camps/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -119,12 +119,11 @@
         "refund_policy_summary",
         "swim_waterfront_notes",
         "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.lcmm.org/camps/day-camps/",
       "kind": "html",
@@ -217,6 +216,17 @@
         "quote": "Full! Sign up for the wait list"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.lcmm.org/camps/day-camps/"
+      ],
+      "changes": [
+        "Set every 2026 session's availability to unknown: the season is over (the page still shows each as 'Full! Sign up for the wait list').",
+        "Confirmed all 2026 dates, $400 standard tuition ($2,950 for three-week Kayak Building), pay-what-you-can, ages 6 to 16, refund rule, address and contact on the day camps page. No 2027 dates yet."
+      ],
+      "open_questions": []
+    }
   }
 }

@@ -110,26 +110,12 @@
       "end_date": "2027-07-23",
       "price": 3650,
       "availability": "unknown"
-    },
-    {
-      "name": "Adult Camp",
-      "start_date": "2027-08-20",
-      "end_date": "2027-08-22",
-      "price": null,
-      "availability": "unknown"
-    },
-    {
-      "name": "Family & Friends Weekend",
-      "start_date": "2027-09-03",
-      "end_date": "2027-09-05",
-      "price": null,
-      "availability": "unknown"
     }
   ],
   "sources": [
     {
       "url": "https://www.smirkus.org/smirkus-camp/camp-sessions/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -152,11 +138,11 @@
         "financial_aid",
         "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Camp Sessions page: '2027 Sessions' with dates, ages and prices for each program; contact block 409 Breezy Ave, Greensboro VT 05841, camp office 802-533-2423 (in season only), camp@smirkus.org; financial aid 'Opening Nov. 15'"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.smirkus.org/smirkus-camp/camp-sessions/",
       "kind": "html",
@@ -191,6 +177,20 @@
         "quote": "June 27-July 29 (2 week) Price $3650 • Ages 16-18"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.smirkus.org/smirkus-camp/camp-sessions/"
+      ],
+      "changes": [
+        "Checked all 2027 sessions, ages 5 to 18, prices $250 to $5,500, address, phone and email against the Camp Sessions page; they match.",
+        "Removed Adult Camp (August 20 to 22) and Family & Friends Weekend (September 3 to 5): not kids' sessions and no price posted.",
+        "Kept the CIT 2-week session that starts June 27 out: the page gives its end as 'July 29', which doesn't fit a 2-week session."
+      ],
+      "open_questions": [
+        "The camp office phone 802-533-2423 is 'in season only'; the year-round headquarters number is 802-533-7443. Keep the camp office number?"
+      ]
+    }
   }
 }

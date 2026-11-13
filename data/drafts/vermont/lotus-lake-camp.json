@@ -18,7 +18,7 @@
   "age_max": 14,
   "grade_min": 0,
   "grade_max": 9,
-  "description_short": "Family-run day camp since 1952 on a 16-acre lake in Williamstown, Vermont, for ages 5 to 14 (entering grades K to 9), 9:00 to 4:00 Monday to Friday. Campers are grouped by grade and do Red Cross swim lessons, boats or archery, crafts or tennis, and woodshop or outdoor adventure, plus a daily lunch hike into the woods. Buses from Montpelier, Barre, Williamstown and Northfield.",
+  "description_short": "Day camp in Williamstown, Vermont, for ages 5 to 14 (entering grades K to 9), 9:00 to 4:00 Monday to Friday. Campers are grouped by grade and do Red Cross swim lessons, boats or archery, crafts or tennis, and woodshop or outdoor adventure, plus a daily lunch hike into the woods. Buses from Montpelier, Barre, Williamstown and Northfield.",
   "activities": [
     "Red Cross swim lessons",
     "Games",
@@ -140,7 +140,7 @@
   ],
   "street_address": "4785 Vermont Route 14",
   "review": {
-    "status": "ready",
+    "status": "needs_andrew",
     "source": {
       "url": "http://lotuslakecamp.com/programsfees/",
       "kind": "html",
@@ -211,9 +211,10 @@
         "Phone changed to the camp office (802) 433-5451 from the Contact page; the draft had co-director Abbey Allen's number.",
         "Session 3 now ends July 31, 2026 (Friday), as the home page lists it; the Programs/Fees page says July 30.",
         "Renamed the 'All summer rate' session to 'All summer (Sessions 1 to 4)'; kept its $3,095 price.",
-        "Moved email, registration and financial aid to the pages that show them; rewrote the description with the lake, founding year and bus towns."
+        "Moved email, registration and financial aid to the pages that show them; rewrote the description with the town and bus stops."
       ],
       "open_questions": [
+        "Williamstown, VT is not in cities.py, so the validator rejects the town. Add Williamstown (camp is on Route 14, 2 miles south of the village) or list under a nearby accepted town?",
         "Home page says Session 3 is July 20 to 31, the Programs/Fees page says July 20 to 30. Used July 31; confirm with the camp if it matters."
       ]
     }
