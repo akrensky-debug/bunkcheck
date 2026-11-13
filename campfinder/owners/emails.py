@@ -279,7 +279,7 @@ def season_updated(to: str, camp: dict[str, Any], season: int, applied: dict[str
             + "<br>".join(_e(x) for x in lines(c["before"])) + "</td></tr><tr><td style='vertical-align:top;"
             "padding-right:12px;color:#666'>Now</td><td><strong>" + "<br>".join(_e(x) for x in lines(c["after"]))
             + "</strong></td></tr></table>")
-    now = [f"Sessions: {'none listed' if not applied['sessions_now'] else ''}",
+    now = ["Sessions:" if applied["sessions_now"] else "Sessions: none listed",
            *[f"  {s}" for s in applied["sessions_now"]],
            f"Price per week: {applied.get('price_now') or 'not listed'}",
            f"Registration opens: {applied.get('registration_now') or 'not listed yet'}"]
@@ -287,7 +287,7 @@ def season_updated(to: str, camp: dict[str, Any], season: int, applied: dict[str
     if not_set:
         tail.append(f"You said {_and(not_set)} {'isn' if len(not_set) == 1 else 'aren'}'t set yet. Reply when "
                     f"{'it is' if len(not_set) == 1 else 'they are'} and we'll add {'it' if len(not_set) == 1 else 'them'}.")
-    tail += applied.get("skipped") or []
+    tail += (applied.get("held") or []) + (applied.get("skipped") or [])
     if applied.get("camp_verified"):
         tail.append("Your page now shows \"confirmed by the camp\" with today's date.")
 

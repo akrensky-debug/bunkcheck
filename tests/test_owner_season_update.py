@@ -253,3 +253,22 @@ async def test_queue_prints_the_january_number(camp, db, capsys):
     out = capsys.readouterr().out
     assert out.startswith("Providence, RI: 0 of 1 live camps have 2027 facts confirmed by the owner.")
     assert "Ready to ask, the season update (2):" in out
+
+
+async def test_a_price_without_dates_waits_for_the_dates(client, camp, db, outbox):
+    await season.send(camp, sent_by="Andrew")
+    res = client.post(f"/api/v1/owners/update/{token_from(outbox[-1])}",
+                      json={"dates_not_set": True, "price_per_week": 295}).json()
+    # $295 next to 2026 dates would read as the 2026 price, so the listing keeps $325 for now.
+    assert rows(db, "camps", id=CAMP)[0]["price_per_week"] == 325
+    assert "once your 2027 dates are on the listing" in res["held"][0] and res["held"][0] in outbox[-1].text
+    assert season.held_price(CAMP, 2027) == 295
+
+    # The dates arrive later (here, a second email's form): they bring the price with them.
+    await season.send(service.find_camp(CAMP), sent_by="Andrew")
+    client.post(f"/api/v1/owners/update/{token_from(outbox[-1])}", json={"sessions": ANSWER["sessions"][:1]})
+    camp_row = rows(db, "camps", id=CAMP)[0]
+    assert camp_row["season_year"] == 2027 and camp_row["price_per_week"] == 295
+    [week] = rows(db, "sessions", camp_id=CAMP)
+    assert week["price"] == 295                       # last year's $325 weekly rate, moved to $295
+    assert "Price per week (2027)" in outbox[-1].text

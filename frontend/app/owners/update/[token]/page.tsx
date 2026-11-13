@@ -32,6 +32,7 @@ interface Result {
   camp_verified: boolean
   not_set: string[]
   skipped: string[]
+  held: string[]
 }
 
 interface Row { key: number; name: string; start: string; end: string; price: string; note: string | null; was: string | null }
@@ -153,6 +154,7 @@ export default function SeasonUpdatePage() {
             </dl>
           </Section>
         ))}
+        {done.held.map(s => <Notice key={s}>{s}</Notice>)}
         {done.skipped.map(s => <Notice key={s} tone="warn">{s}</Notice>)}
         {done.camp_verified && (
           <Notice tone="success">Your page now shows &ldquo;confirmed by the camp&rdquo; with today&rsquo;s date.</Notice>
