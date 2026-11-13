@@ -111,13 +111,10 @@
   "sources": [
     {
       "url": "https://www.shelburnevt.org/DocumentCenter/View/7592/2026-summer-camp-overview",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
-        "website_url",
-        "city",
-        "state",
         "camp_type",
         "primary_categories",
         "activities",
@@ -127,21 +124,27 @@
         "description_short",
         "price_min",
         "price_max",
+        "price_per",
         "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "2026 summer camp overview: one row per camp week with dates, hours, cost and ages or grades"
     },
     {
-      "url": "https://www.census.gov/geographies/reference-files/time-series/geo/relationship-files.2020.html",
-      "checked": "2026-10-14",
+      "url": "https://www.shelburnevt.org/160/Parks-Recreation",
+      "checked": "2026-11-13",
       "fields": [
-        "zip"
+        "website_url",
+        "phone",
+        "city",
+        "state",
+        "zip",
+        "financial_aid"
       ],
-      "note": "Shelburne, VT sits inside one ZIP code (2020 Census ZCTA relationship file)"
+      "note": "Parks & Recreation office, 5420 Shelburne Road, Shelburne, VT 05482; discounts, scholarships and payment plans available"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.shelburnevt.org/DocumentCenter/View/7592/2026-summer-camp-overview",
       "kind": "pdf",
@@ -183,6 +186,23 @@
         "quote": "shelburnevt.org"
       }
     ],
-    "errors": []
-  }
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.shelburnevt.org/DocumentCenter/View/7592/2026-summer-camp-overview",
+        "https://www.shelburnevt.org/160/Parks-Recreation"
+      ],
+      "changes": [
+        "Checked all eleven 2026 camp weeks, hours, prices and ages against the overview PDF; they match.",
+        "Took the ZIP 05482 from the town's Parks & Recreation page instead of the Census file.",
+        "Added the Parks & Recreation phone (802-985-9551) and financial aid (the page offers discounts, scholarships and payment plans).",
+        "Added price_per week: every camp is a one-week session."
+      ],
+      "open_questions": []
+    }
+  },
+  "phone": "802-985-9551",
+  "financial_aid": true,
+  "price_per": "week"
 }

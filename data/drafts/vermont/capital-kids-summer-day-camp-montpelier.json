@@ -8,7 +8,7 @@
   "street_address": "Montpelier Recreation Area, Elm St.",
   "city": "Montpelier",
   "state": "VT",
-  "zip": null,
+  "zip": "05602",
   "camp_type": "day",
   "primary_categories": [
     "arts",
@@ -20,7 +20,7 @@
   "age_max": 12,
   "grade_min": 1,
   "grade_max": 6,
-  "description_short": "City-run licensed day camp for grades 1-6 at the Montpelier Recreation Area, running eight one-week themed sessions with arts and crafts, games and sports, STEAM projects and daily pool trips. Thursdays have a field trip or a specialty workshop.",
+  "description_short": "City-run licensed day camp for grades 1-6 (ages 6-12) at the Montpelier Recreation Area, running eight one-week themed sessions, 7:45am to 4:45pm, with arts and crafts, games and sports, STEAM projects and daily pool trips. Thursdays have a field trip or a specialty workshop.",
   "activities": [
     "arts & crafts",
     "games & sports",
@@ -63,13 +63,6 @@
       "availability": "unknown"
     },
     {
-      "name": "Session 4 (#1304)",
-      "start_date": "2026-07-13",
-      "end_date": "2026-07-17",
-      "price": 175,
-      "availability": "unknown"
-    },
-    {
       "name": "Session 5 (#1305)",
       "start_date": "2026-07-20",
       "end_date": "2026-07-24",
@@ -101,7 +94,7 @@
   "sources": [
     {
       "url": "https://montpelier-vt.org/843/Capital-Kids-Day-Camp",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -128,11 +121,19 @@
         "swim_waterfront_notes",
         "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "2026 season. Week 4 is left out: the page gives it as both July 13-17 and July 14-18."
+    },
+    {
+      "url": "https://montpelier-vt.org/Directory.aspx?DID=29",
+      "checked": "2026-11-13",
+      "fields": [
+        "zip"
+      ],
+      "note": "Montpelier Recreation Department's own address, 58 Barre Street, Montpelier, VT 05602. The camp page gives the site as Elm St. with no number or ZIP."
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://montpelier-vt.org/843/Capital-Kids-Day-Camp",
       "kind": "html",
@@ -209,6 +210,22 @@
     ],
     "errors": [
       "missing required zip"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://montpelier-vt.org/843/Capital-Kids-Day-Camp",
+        "https://montpelier-vt.org/Directory.aspx?DID=29",
+        "https://montpelier-vt.org/DocumentCenter/View/12656/2026-Capital-Kids-Day-Camp-and-Swim-Lesson-Registration"
+      ],
+      "changes": [
+        "Checked every field against the camp page; dates, grades, ages, fees, payment and refund terms match the 2026 season.",
+        "Left out Session 4: the page lists it as July 13-17 in one place and July 14-18 in another, so its date isn't certain.",
+        "Filled ZIP 05602 from the Recreation Department's own contact page (58 Barre Street, Montpelier). The camp page names Elm St. without a number or ZIP.",
+        "Added the 7:45am to 4:45pm hours to the description.",
+        "The registration form PDF is a scan with no readable text."
+      ],
+      "open_questions": []
+    }
   }
 }

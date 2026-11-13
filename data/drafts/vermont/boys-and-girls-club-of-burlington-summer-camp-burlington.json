@@ -15,7 +15,7 @@
     "academic",
     "nature"
   ],
-  "description_short": "An eight-week, full-day summer camp from the last week of June through late August, offered as two four-week sessions. Campers get meals and snacks, swimming lessons in the Club pool, tennis, outdoor exploration and help with summer learning plans.",
+  "description_short": "An eight-week, full-day summer camp from the last week of June through late August, offered as two four-week sessions. Campers get meals and snacks, swimming lessons in the Club pool, tennis, outdoor exploration and help with summer learning plans. The Club says 90% of campers receive full scholarships.",
   "activities": [
     "swimming lessons",
     "tennis",
@@ -25,12 +25,12 @@
   ],
   "financial_aid": true,
   "meals_included": true,
-  "swim_waterfront_notes": "Swimming lessons and water safety in the Club pool; the page says more than 120 children and teens build swimming skills there each year.",
+  "swim_waterfront_notes": "Swimming lessons and water safety in the Club pool. The handbook says each group swims up to twice a day, split between lessons, pool games and free swim, with at least four certified lifeguards on duty.",
   "season_year": 2026,
   "sources": [
     {
       "url": "https://www.bandgclub.org/summercamp",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -46,14 +46,22 @@
         "activities",
         "description_short",
         "meals_included",
-        "financial_aid",
+        "financial_aid"
+      ]
+    },
+    {
+      "url": "https://www.bandgclub.org/_files/ugd/7af1b2_1551361a54884b60b2875e44415299d7.pdf",
+      "checked": "2026-11-13",
+      "fields": [
+        "price_per_week",
+        "price_per",
         "swim_waterfront_notes"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Summer Camp Family & Member Handbook (PDF linked from the camp page); undated, mentions closing Friday July 3rd, which fits 2026"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.bandgclub.org/summercamp",
       "kind": "html",
@@ -96,6 +104,25 @@
         "quote": "offered in two four-week sessions"
       }
     ],
-    "errors": []
-  }
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.bandgclub.org/summercamp",
+        "https://www.bandgclub.org/_files/ugd/7af1b2_1551361a54884b60b2875e44415299d7.pdf"
+      ],
+      "changes": [
+        "Added price_per_week $50 and price_per week from the handbook: 'Our tuition cost is $50 per week (25% discount for each additional child)'.",
+        "Added to the description that 90% of campers get full scholarships (camp page).",
+        "Swim notes now cite the handbook: up to two swim times a day, at least four certified lifeguards; source moved to the handbook PDF.",
+        "Checked name, contact, address, ZIP, day camp, meals, financial aid and activities against the camp page; all match.",
+        "Left ages, grades and session dates empty: the page and handbook give only 'last week of June through late August' and groups 'split primarily by grade'. Hours 9am to 5pm are in the handbook but there is no field for them."
+      ],
+      "open_questions": [
+        "Camp admits by need through an application (about 100 spots for 150+ applicants), not first come. Fine to list as a regular camp?"
+      ]
+    }
+  },
+  "price_per_week": 50,
+  "price_per": "week"
 }

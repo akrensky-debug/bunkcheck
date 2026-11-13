@@ -12,12 +12,11 @@
   "camp_type": "day",
   "primary_categories": [
     "nature",
-    "arts",
-    "STEM"
+    "arts"
   ],
   "grade_min": 2,
   "grade_max": 8,
-  "description_short": "Week-long nature, farm and art day camps (9am–3pm) on the Hildene estate in Manchester, Vermont, for children entering grades 2–6. There is also a two-week Youth Corps carpentry and farm program for youth entering grades 7–8.",
+  "description_short": "Week-long nature, farm and art day camps (9am to 3pm) on the Hildene estate in Manchester, Vermont, for children entering grades 2 to 6, plus a two-week Youth Corps carpentry and farm program for youth entering grades 7 and 8. Members pay less; scholarships are available.",
   "activities": [
     "aquatic insect study",
     "farm animal care",
@@ -106,7 +105,7 @@
   "sources": [
     {
       "url": "https://hildene.org/pages/day-camps",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -134,7 +133,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://hildene.org/pages/day-camps",
       "kind": "html",
@@ -214,6 +213,19 @@
         "quote": "Farm Camp is FULL."
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://hildene.org/pages/day-camps"
+      ],
+      "changes": [
+        "Checked all nine sessions, dates, hours, grades, member and nonmember prices, FULL notes, scholarship contact, address and phone on the Day Camps page; they match.",
+        "Dropped the STEM category: the camps are nature, farm and art weeks. Kept nature and arts.",
+        "Added the member discount and scholarships to the description.",
+        "Kept season_year 2026: the page gives no year on the dates, but it refers to 'the 2026 youth corps team' and June 22 falls on a Monday in 2026. No 2027 camps are posted yet."
+      ],
+      "open_questions": []
+    }
   }
 }

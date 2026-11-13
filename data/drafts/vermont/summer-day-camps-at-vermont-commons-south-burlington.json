@@ -52,7 +52,7 @@
   "sources": [
     {
       "url": "https://www.vermontcommons.org/summer-day-camps",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -72,13 +72,14 @@
         "price_max",
         "price_per_week",
         "price_per",
-        "sessions"
+        "sessions",
+        "registration_url"
       ],
       "note": "Drafted by the listing tool from this page"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.vermontcommons.org/summer-day-camps",
       "kind": "html",
@@ -112,6 +113,18 @@
         "quote": "hands-on, project-based activities that allow them to create, explore, and connect"
       }
     ],
-    "errors": []
-  }
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.vermontcommons.org/summer-day-camps"
+      ],
+      "changes": [
+        "Checked every field against the camp page; ages 8-11, the two 2026 sessions and prices match.",
+        "Added the registration link (the page's Click Here to Register button, a Homeroom summer-2026 page)."
+      ],
+      "open_questions": []
+    }
+  },
+  "registration_url": "https://www.homeroom.com/sites/vermont-commons-school-south-burlington/summer-2026/summer-day-camps/"
 }

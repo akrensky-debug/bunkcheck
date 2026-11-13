@@ -34,49 +34,49 @@
       "name": "Hillside History (Grades 4-7)",
       "start_date": "2026-06-29",
       "end_date": "2026-07-02",
-      "price": null,
+      "price": 370,
       "availability": "unknown"
     },
     {
       "name": "The Legend of the Loon (Grades 4-7)",
       "start_date": "2026-07-20",
       "end_date": "2026-07-24",
-      "price": null,
+      "price": 460,
       "availability": "unknown"
     },
     {
       "name": "North Branch Naturalists (Grades 4-7)",
       "start_date": "2026-07-27",
       "end_date": "2026-07-31",
-      "price": null,
+      "price": 460,
       "availability": "unknown"
     },
     {
       "name": "Animal Engineers (Grades 1-3)",
       "start_date": "2026-06-29",
       "end_date": "2026-07-02",
-      "price": null,
+      "price": 310,
       "availability": "unknown"
     },
     {
       "name": "On the Wing (Grades 1-3)",
       "start_date": "2026-07-06",
       "end_date": "2026-07-10",
-      "price": null,
+      "price": 385,
       "availability": "unknown"
     },
     {
-      "name": "Camp BranchOUT (with Outright Vermont)",
+      "name": "Camp BranchOUT (with Outright Vermont, ages 10-12)",
       "start_date": "2026-08-10",
       "end_date": "2026-08-14",
-      "price": null,
+      "price": 485,
       "availability": "unknown"
     }
   ],
   "sources": [
     {
       "url": "https://northbranchnaturecenter.org/youth-programs/camps",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -95,13 +95,30 @@
         "transportation",
         "financial_aid",
         "refund_policy_summary",
-        "sessions"
+        "sessions",
+        "price_per"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "2026 camps and dates. Each session's price is from its registration page on the center's Jumbula site."
+    },
+    {
+      "url": "https://north-branch-nature-center.jumbula.com/SummerCamp2026/AnimalEngineers",
+      "checked": "2026-11-13",
+      "fields": [
+        "price_min"
+      ],
+      "note": "Animal Engineers, grades 1-3, June 29-July 2, 2026: $310"
+    },
+    {
+      "url": "https://north-branch-nature-center.jumbula.com/CampBranchOUT2026/CampBranchOUT2026",
+      "checked": "2026-11-13",
+      "fields": [
+        "price_max"
+      ],
+      "note": "Camp BranchOUT, ages 10-12, Aug 10-14, 2026: $485"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://northbranchnaturecenter.org/youth-programs/camps",
       "kind": "html",
@@ -130,6 +147,29 @@
       "Special needs accommodations"
     ],
     "low_confidence": [],
-    "errors": []
-  }
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://northbranchnaturecenter.org/youth-programs/camps",
+        "https://north-branch-nature-center.jumbula.com/SummerCamp2026/HillsideHistory",
+        "https://north-branch-nature-center.jumbula.com/SummerCamp2026/TheLegendoftheLoon",
+        "https://north-branch-nature-center.jumbula.com/SummerCamp2026/NorthBranchNaturalists",
+        "https://north-branch-nature-center.jumbula.com/SummerCamp2026/AnimalEngineers",
+        "https://north-branch-nature-center.jumbula.com/SummerCamp2026/OntheWing",
+        "https://north-branch-nature-center.jumbula.com/CampBranchOUT2026/CampBranchOUT2026",
+        "https://northbranchnaturecenter.org/wp-content/uploads/2026/06/Summer-Camp-Information-Packet-2026.pdf"
+      ],
+      "changes": [
+        "Added each 2026 session's price from the center's own registration pages: Hillside History $370, Legend of the Loon $460, North Branch Naturalists $460, Animal Engineers $310, On the Wing $385, Camp BranchOUT $485.",
+        "Added price range $310 to $485 per session.",
+        "Added ages 10-12 to the Camp BranchOUT session name.",
+        "All other fields match the camps page; 2027 camps are not posted yet."
+      ],
+      "open_questions": []
+    }
+  },
+  "price_min": 310,
+  "price_max": 485,
+  "price_per": "session"
 }

@@ -9,9 +9,31 @@
   "state": "VT",
   "zip": "05058",
   "camp_type": "sleepaway",
-  "description_short": "An overnight summer camp for girls in Post Mills, Vermont. It offers two full sessions of about three and a half weeks each, plus shorter \"Middler\" sessions of about two weeks for younger campers.",
+  "description_short": "An overnight summer camp for girls ages 7 to 15 on Lake Fairlee in Post Mills, Vermont, founded in 1916. It offers two full sessions of about three and a half weeks, plus shorter \"Middler\" sessions of about two weeks for girls who have finished 4th grade or younger.",
   "activities": [
-    "Horseback riding (optional add-on)"
+    "Horseback riding (English, optional add-on)",
+    "Swimming",
+    "Sailing",
+    "Canoeing",
+    "Kayaking",
+    "Paddleboarding",
+    "Waterskiing",
+    "Wakeboarding",
+    "Archery",
+    "Tennis",
+    "Soccer",
+    "Lacrosse",
+    "Field hockey",
+    "Gymnastics",
+    "Arts and crafts",
+    "Ceramics",
+    "Drama",
+    "Dance",
+    "Musical theatre",
+    "Climbing",
+    "Outdoor adventure",
+    "Culinary arts",
+    "Leadership training (ages 15-16)"
   ],
   "price_min": 6225,
   "price_max": 10200,
@@ -58,7 +80,7 @@
   "sources": [
     {
       "url": "https://www.camplochearn.com/about-lochearn/dates-fees.php",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "website_url",
@@ -69,19 +91,45 @@
         "state",
         "zip",
         "camp_type",
-        "activities",
-        "description_short",
         "price_min",
         "price_max",
         "transportation",
         "refund_policy_summary",
         "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "2027 dates and tuition. $10,200 is shown once under the two full sessions; read as per session (the two-week Middler sessions are $6,225)."
+    },
+    {
+      "url": "https://www.camplochearn.com/about-lochearn/camp-activities.php",
+      "checked": "2026-11-13",
+      "fields": [
+        "activities",
+        "age_min",
+        "age_max",
+        "gender_policy"
+      ],
+      "note": "Activities summary: girls overnight camp for ages 7-15; the FAQ's divisions (7-10, 11-12, 13-15) agree"
+    },
+    {
+      "url": "https://www.camplochearn.com/about-lochearn/faqs.php",
+      "checked": "2026-11-13",
+      "fields": [
+        "description_short",
+        "meals_included",
+        "aca_accredited",
+        "aca_source_url"
+      ]
+    },
+    {
+      "url": "https://www.camplochearn.com/apply.php",
+      "checked": "2026-11-13",
+      "fields": [
+        "registration_url"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.camplochearn.com/about-lochearn/dates-fees.php",
       "kind": "html",
@@ -125,6 +173,30 @@
         "quote": "2027 Tuition $10,200"
       }
     ],
-    "errors": []
-  }
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.camplochearn.com/about-lochearn/dates-fees.php",
+        "https://www.camplochearn.com/about-lochearn/faqs.php",
+        "https://www.camplochearn.com/about-lochearn/camp-activities.php",
+        "https://www.camplochearn.com/apply.php"
+      ],
+      "changes": [
+        "Confirmed all 2027 session dates and tuition ($10,200 full session, $6,225 Middler) on the Dates & Fees page.",
+        "Added ages 7 to 15 and girls only from the Activities page (the FAQ's divisions agree).",
+        "Added ACA accreditation and meals included from the FAQ page.",
+        "Added the registration link (Apply page) and the camp's own activity list; rewrote the description to mention ages and Lake Fairlee.",
+        "Kept the reading that $10,200 is per session: it sits once under both full sessions, and the two-week Middler session is $6,225."
+      ],
+      "open_questions": []
+    }
+  },
+  "registration_url": "https://www.camplochearn.com/apply.php",
+  "gender_policy": "girls",
+  "age_min": 7,
+  "age_max": 15,
+  "meals_included": true,
+  "aca_accredited": true,
+  "aca_source_url": "https://www.camplochearn.com/about-lochearn/faqs.php"
 }
