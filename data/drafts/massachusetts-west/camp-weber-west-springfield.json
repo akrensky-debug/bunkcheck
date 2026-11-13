@@ -3,6 +3,7 @@
   "name": "Camp Weber",
   "operator_name": "YMCA of Greater Springfield",
   "website_url": "https://springfieldy.org/camp-weber/",
+  "email": "campregistrationforms@springfieldy.org",
   "phone": "413.739.6955",
   "street_address": "Dewey Street",
   "city": "West Springfield",
@@ -22,15 +23,16 @@
     "Outdoor activities"
   ],
   "financial_aid": true,
-  "swim_waterfront_notes": "60' x 45' L-shaped pool used for both instructional and recreational swimming. The page also mentions smaller groups in the pool (part of its pandemic-era policies).",
+  "swim_waterfront_notes": "A 60' x 45' L-shaped pool is used for both instructional and recreational swimming.",
   "sources": [
     {
       "url": "https://springfieldy.org/camp-weber/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
         "website_url",
+        "email",
         "phone",
         "street_address",
         "city",
@@ -48,7 +50,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://springfieldy.org/camp-weber/",
       "kind": "html",
@@ -89,6 +91,24 @@
     "errors": [
       "missing required zip",
       "missing required season_year"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://springfieldy.org/camp-weber/",
+        "https://springfieldy.org/camps/",
+        "https://springfieldy.org/family-centers/schedules/",
+        "https://springfieldy.org/family-centers/join/our-focus/"
+      ],
+      "changes": [
+        "Added email campregistrationforms@springfieldy.org, the address behind the page's protected email link.",
+        "Trimmed the swim note to the pool facts; dropped the pandemic-era 'smaller groups' line.",
+        "Rechecked name, operator, ages 6 to 12, Dewey Street location, phone, 75 wooded acres and the scholarship forms: all match.",
+        "Still invalid: no ZIP and no season year. The YMCA site posts no Camp Weber dates, prices or season for 2026 or 2027, and gives only 'Dewey Street, West Springfield' as the address."
+      ],
+      "open_questions": [
+        "The Y's site has no Camp Weber dates, prices, season year or ZIP, and the page text is pandemic-era (masks, temperature checks). Should we ask the YMCA of Greater Springfield for the 2027 season and street address, or hold this listing until they post it?"
+      ]
+    }
   }
 }

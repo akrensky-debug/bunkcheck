@@ -8,12 +8,33 @@
   "city": "Lyme",
   "state": "CT",
   "zip": "06371",
-  "description_short": "Camp Claire in Lyme, CT runs a day camp, a residential (overnight) camp, and Leader in Training / Counselor in Training programs. Dates and prices for 2027 have not been posted yet.",
+  "description_short": "Camp Claire in Lyme, CT runs a residential (overnight) camp for ages 8 to 14 and a day camp for ages 7 to 14, plus Leader in Training and Counselor in Training programs for teens. Activities include sailing, canoeing and kayaking on Hamburg Cove, swimming, archery, fishing, low ropes and campcraft. Dates and prices for 2027 have not been posted yet.",
   "season_year": 2027,
+  "camp_type": "sleepaway",
+  "age_min": 7,
+  "age_max": 14,
+  "primary_categories": [
+    "outdoor",
+    "sailing",
+    "sports"
+  ],
+  "activities": [
+    "Sailing",
+    "Canoeing and kayaking",
+    "Swimming",
+    "Fishing",
+    "Archery",
+    "Low ropes course",
+    "CampCraft (fire building, outdoor cooking, orienteering, shelters)",
+    "Team sports",
+    "Arts and crafts",
+    "Campfires"
+  ],
+  "swim_waterfront_notes": "Campers take a swim assessment, then structured morning lessons and afternoon free swim in the pool, with at least 1 lifeguard per 10 campers. Canoeing and kayaking are on the Eight Mile River in Hamburg Cove; sailing (age 10+) needs a camper who can swim 2 pool laps nonstop.",
   "sources": [
     {
       "url": "https://www.campclaire.org/enroll-now/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "website_url",
@@ -24,12 +45,35 @@
         "state",
         "zip",
         "description_short"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
+    },
+    {
+      "url": "https://www.campclaire.org/our-programs-2023/residential-camp/",
+      "checked": "2026-11-13",
+      "fields": [
+        "camp_type",
+        "age_max"
+      ]
+    },
+    {
+      "url": "https://www.campclaire.org/our-programs-2023/day-camp/",
+      "checked": "2026-11-13",
+      "fields": [
+        "age_min"
+      ]
+    },
+    {
+      "url": "https://www.campclaire.org/camp-life/activities/",
+      "checked": "2026-11-13",
+      "fields": [
+        "primary_categories",
+        "activities",
+        "swim_waterfront_notes"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.campclaire.org/enroll-now/",
       "kind": "html",
@@ -71,6 +115,25 @@
     "errors": [
       "missing required camp_type",
       "camp_type must be one of ['day', 'sleepaway', 'specialty']"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.campclaire.org/enroll-now/",
+        "https://www.campclaire.org/our-programs-2023/day-camp/",
+        "https://www.campclaire.org/our-programs-2023/residential-camp/",
+        "https://www.campclaire.org/camp-life/activities/"
+      ],
+      "changes": [
+        "Set camp_type to sleepaway so the draft validates; the camp runs both a residential camp and a day camp (see question).",
+        "Added ages 7 to 14: day camp 7 to 14 and residential 8 to 14, per the program pages' text.",
+        "Added activities, primary categories (outdoor, sailing, sports) and a swim note from the activities page.",
+        "Rewrote the description with ages and activities; kept that 2027 dates and prices are not posted."
+      ],
+      "open_questions": [
+        "Camp Claire runs both a residential camp (ages 8 to 14) and a day camp (ages 7 to 14) on one campus. One sleepaway listing, or two listings?",
+        "Every 2027 date and price is TBA or $TBD. Publish now with no sessions or prices, or wait until enrollment opens?"
+      ]
+    }
   }
 }

@@ -2,15 +2,15 @@
   "slug": "camp-badakookala-fairfield",
   "name": "Camp Badakookala",
   "operator_name": "Central Connecticut Coast YMCA (Fairfield YMCA branch)",
-  "website_url": "https://www.fairfieldy.org",
+  "website_url": "https://cccymca.org/locations/fairfield/camp/",
   "email": "campbada@cccymca.org",
   "phone": "203-255-2834",
   "city": "Fairfield",
   "state": "CT",
-  "zip": null,
+  "zip": "06824",
   "camp_type": "day",
   "grade_min": 0,
-  "description_short": "A YMCA summer day camp run by the Fairfield YMCA for children from kindergarten up. Camp runs 9:00am to 3:00pm, and before-care (7:15–9:00am) and after-care (3:00–6:00pm) can be booked by the week.",
+  "description_short": "Camp Badakookala is the Fairfield YMCA's summer day camp for children from kindergarten up, grouped as Greenhorns (K-1st grade), Explorers, Pioneers and Adventurers. Camp runs 9:00 am to 3:00 pm, with before care (7:15 to 9:00 am) and after care (3:00 to 6:00 pm) booked by the week. Financial aid is available and the Y accepts Care4Kids.",
   "activities": [
     "Swimming"
   ],
@@ -20,33 +20,41 @@
   "special_needs_notes": "Children of all abilities are welcome. Contact the Camp Director ahead of time to talk about your child's needs. An Individual Plan of Care for a Child is required. It is preferred at registration and due no later than two weeks before the session starts.",
   "swim_waterfront_notes": "Swim instructors are lifeguard certified (this is a general statement for all CCCY camps). Campers bring a labeled towel and swimsuit every day. A Transportation/Swimming Permission Slip is required.",
   "season_year": 2026,
+  "street_address": "841 Old Post Road",
   "sources": [
     {
       "url": "https://cccymca.org/wp-content/uploads/2026-Fairfield-YMCA-Day-Camp-Parent-Handbook-Camp-Badakookala.pdf",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
-        "website_url",
         "email",
         "phone",
-        "city",
-        "state",
         "camp_type",
-        "activities",
         "grade_min",
         "description_short",
         "extended_care",
-        "financial_aid",
         "refund_policy_summary",
         "special_needs_notes",
         "swim_waterfront_notes"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
+    },
+    {
+      "url": "https://cccymca.org/locations/fairfield/camp/",
+      "checked": "2026-11-13",
+      "fields": [
+        "website_url",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "activities",
+        "financial_aid"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://cccymca.org/wp-content/uploads/2026-Fairfield-YMCA-Day-Camp-Parent-Handbook-Camp-Badakookala.pdf",
       "kind": "pdf",
@@ -89,6 +97,24 @@
     ],
     "errors": [
       "missing required zip"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://cccymca.org/wp-content/uploads/2026-Fairfield-YMCA-Day-Camp-Parent-Handbook-Camp-Badakookala.pdf",
+        "https://www.fairfieldy.org",
+        "https://cccymca.org/locations/fairfield/camp/"
+      ],
+      "changes": [
+        "Added the address 841 Old Post Road, Fairfield, CT 06824 (the Fairfield YMCA) from the Fairfield camp page; zip was missing.",
+        "Changed website_url to the Fairfield YMCA camp page: www.fairfieldy.org now redirects to the branch home page on cccymca.org.",
+        "Moved financial_aid and activities (swimming) to the Fairfield camp page, which states both for this camp.",
+        "Checked hours, before and after care, refund policy, special needs and swim notes against the 2026 handbook: they match. Tidied the description."
+      ],
+      "open_questions": [
+        "The camp's own pages give no dates or prices for any year, only the 2026 parent handbook (with template placeholder text still in it). Publish a listing with no sessions or prices, or drop it until the Y posts 2027 details?",
+        "The handbook never states where camp is held. I used the Fairfield YMCA building at 841 Old Post Road, which the Bridgeport Y's 2026 brochure lists as a day camp location. OK?"
+      ]
+    }
   }
 }

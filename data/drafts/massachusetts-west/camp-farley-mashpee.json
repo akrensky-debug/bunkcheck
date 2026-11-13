@@ -1,7 +1,8 @@
 {
   "slug": "camp-farley-mashpee",
-  "name": "Camp Farley",
-  "website_url": "https://campfarley.com",
+  "name": "Camp Farley Overnight Camp",
+  "operator_name": "Camp Farley",
+  "website_url": "https://campfarley.com/camp-options/overnight-camp",
   "registration_url": "https://campfarley.campbrainregistration.com",
   "email": "office@campfarley.com",
   "phone": "508-477-0181",
@@ -9,138 +10,106 @@
   "city": "Mashpee",
   "state": "MA",
   "zip": "02649",
-  "description_short": "Camp Farley in Mashpee, MA runs a weekday day camp (8:30AM–5:30PM), Sunday–Friday and 2-week overnight camp, a Sprouts program (full or half day), and a Counselor-in-Training program.",
-  "price_per_week": 590,
-  "price_min": 295,
-  "price_max": 1900,
-  "refund_policy_summary": "$100 deposit per camper is non-refundable and non-transferable. Cancel by March 31, 2027: full refund minus the deposit and a $25 admin fee. April 1–May 31, 2027: camp keeps the deposit plus 25% of tuition. June 1, 2027 or later: no refund. Prorated refunds for acute medical illness/injury with a doctor's note, at the camp's discretion. No refunds for early departures or late arrivals. Any balance is auto-charged June 1, 2027.",
-  "season_year": 2027,
+  "camp_type": "sleepaway",
+  "primary_categories": [
+    "general"
+  ],
+  "activities": [
+    "Swimming",
+    "Canoeing and kayaking",
+    "Pedal boating",
+    "Archery",
+    "Nature",
+    "Creative arts",
+    "Pioneering",
+    "Music",
+    "Theater",
+    "Dance",
+    "Fishing",
+    "Barnyard animals",
+    "Friday campfire"
+  ],
+  "age_min": 8,
+  "age_max": 15,
+  "description_short": "Overnight camp in Mashpee on Cape Cod for ages 8 to 15, running Sunday to Friday each week. Campers 13 to 15 can stay two weeks, including a Saturday trip. A two-week Counselor-in-Training program is also offered.",
+  "price_min": 750,
+  "price_max": 1950,
+  "price_per_week": 875,
   "price_per": "week",
+  "meals_included": true,
+  "refund_policy_summary": "$100 deposit per camper is non-refundable and non-transferable. Cancel by March 31, 2027: full refund minus the deposit and a $25 admin fee. April 1 to May 31, 2027: camp keeps the deposit plus 25% of tuition. June 1, 2027 or later: no refund. Prorated refunds for acute medical illness or injury with a doctor's note, at the camp's discretion. No refunds for early departures or late arrivals. Any balance is charged automatically on June 1, 2027.",
+  "aca_accredited": true,
+  "aca_source_url": "https://campfarley.com/about-us/general-information",
+  "season_year": 2027,
   "sessions": [
     {
-      "name": "2 Week Overnight Camp Session A (Martha's Vineyard)",
+      "name": "2 Week Overnight Session A, Martha's Vineyard trip (ages 13-15)",
       "start_date": "2027-07-11",
       "end_date": "2027-07-23",
-      "price": 1900,
+      "price": 1950,
       "availability": "unknown"
     },
     {
-      "name": "2 Week Overnight Camp Session B (Boston Faneuil Hall)",
+      "name": "2 Week Overnight Session B, Boston Faneuil Hall trip (ages 13-15)",
       "start_date": "2027-07-25",
       "end_date": "2027-08-06",
-      "price": 1900,
+      "price": 1950,
       "availability": "unknown"
     },
     {
-      "name": "2 Week Overnight Camp Session C (Nantucket)",
+      "name": "2 Week Overnight Session C, Nantucket trip (ages 13-15)",
       "start_date": "2027-08-08",
       "end_date": "2027-08-20",
-      "price": 1900,
+      "price": 1950,
       "availability": "unknown"
     },
     {
       "name": "Sunday-Friday Overnight Week 2 (Monday start)",
       "start_date": "2027-07-05",
       "end_date": "2027-07-09",
-      "price": 750,
+      "price": 775,
       "availability": "unknown"
     },
     {
       "name": "Sunday-Friday Overnight Week 3",
       "start_date": "2027-07-11",
       "end_date": "2027-07-16",
-      "price": 850,
+      "price": 875,
       "availability": "unknown"
     },
     {
       "name": "Sunday-Friday Overnight Week 4",
       "start_date": "2027-07-18",
       "end_date": "2027-07-23",
-      "price": 850,
+      "price": 875,
       "availability": "unknown"
     },
     {
       "name": "Sunday-Friday Overnight Week 5",
       "start_date": "2027-07-25",
       "end_date": "2027-07-30",
-      "price": 850,
+      "price": 875,
       "availability": "unknown"
     },
     {
       "name": "Sunday-Friday Overnight Week 6",
       "start_date": "2027-08-01",
       "end_date": "2027-08-06",
-      "price": 850,
+      "price": 875,
       "availability": "unknown"
     },
     {
       "name": "Sunday-Friday Overnight Week 7",
       "start_date": "2027-08-08",
       "end_date": "2027-08-13",
-      "price": 850,
+      "price": 875,
       "availability": "unknown"
     },
     {
       "name": "Sunday-Friday Overnight Week 8",
       "start_date": "2027-08-15",
       "end_date": "2027-08-20",
-      "price": 850,
-      "availability": "unknown"
-    },
-    {
-      "name": "Day Camp Week 1",
-      "start_date": "2027-06-28",
-      "end_date": "2027-07-02",
-      "price": 590,
-      "availability": "unknown"
-    },
-    {
-      "name": "Day Camp Week 2 (4 day week)",
-      "start_date": "2027-07-06",
-      "end_date": "2027-07-09",
-      "price": 475,
-      "availability": "unknown"
-    },
-    {
-      "name": "Day Camp Week 3",
-      "start_date": "2027-07-12",
-      "end_date": "2027-07-16",
-      "price": 590,
-      "availability": "unknown"
-    },
-    {
-      "name": "Day Camp Week 4",
-      "start_date": "2027-07-19",
-      "end_date": "2027-07-23",
-      "price": 590,
-      "availability": "unknown"
-    },
-    {
-      "name": "Day Camp Week 5",
-      "start_date": "2027-07-26",
-      "end_date": "2027-07-30",
-      "price": 590,
-      "availability": "unknown"
-    },
-    {
-      "name": "Day Camp Week 6",
-      "start_date": "2027-08-02",
-      "end_date": "2027-08-06",
-      "price": 590,
-      "availability": "unknown"
-    },
-    {
-      "name": "Day Camp Week 7",
-      "start_date": "2027-08-09",
-      "end_date": "2027-08-13",
-      "price": 590,
-      "availability": "unknown"
-    },
-    {
-      "name": "Day Camp Week 8",
-      "start_date": "2027-08-16",
-      "end_date": "2027-08-20",
-      "price": 590,
+      "price": 875,
       "availability": "unknown"
     },
     {
@@ -174,38 +143,64 @@
   ],
   "sources": [
     {
-      "url": "https://campfarley.com/rates-and-dates",
-      "checked": "2026-10-13",
+      "url": "https://campfarley.com/camp-options/overnight-camp",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "website_url",
+        "camp_type",
+        "age_min",
+        "age_max",
+        "description_short"
+      ]
+    },
+    {
+      "url": "https://campfarley.com/rates-and-dates",
+      "checked": "2026-11-13",
+      "fields": [
+        "operator_name",
         "registration_url",
         "email",
         "phone",
         "street_address",
         "city",
         "state",
-        "description_short",
+        "price_per_week",
         "price_min",
         "price_max",
-        "price_per_week",
         "price_per",
         "refund_policy_summary",
         "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
+    },
+    {
+      "url": "https://campfarley.com/about-us/programs-and-activities",
+      "checked": "2026-11-13",
+      "fields": [
+        "primary_categories",
+        "activities"
+      ]
+    },
+    {
+      "url": "https://campfarley.com/about-us/general-information",
+      "checked": "2026-11-13",
+      "fields": [
+        "meals_included",
+        "aca_accredited",
+        "aca_source_url"
+      ]
     },
     {
       "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=615+Route+130&city=Mashpee&state=MA&benchmark=Public_AR_Current&format=json",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "zip"
       ],
-      "note": "ZIP from the US Census geocoder for 615 STATE RTE 130, MASHPEE, MA, 02649"
+      "note": "ZIP from the US Census geocoder for 615 STATE RTE 130, MASHPEE, MA, 02649; the camp's pages give the street and town only"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://campfarley.com/rates-and-dates",
       "kind": "html",
@@ -247,6 +242,27 @@
     "errors": [
       "missing required camp_type",
       "camp_type must be one of ['day', 'sleepaway', 'specialty']"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://campfarley.com/rates-and-dates",
+        "https://campfarley.com/camp-options/overnight-camp",
+        "https://campfarley.com/camp-options/lit-program",
+        "https://campfarley.com/about-us/general-information",
+        "https://campfarley.com/about-us/programs-and-activities",
+        "https://campfarley.com"
+      ],
+      "changes": [
+        "Made this the overnight listing (camp_type sleepaway, ages 8 to 15), since the day camp has its own draft; name now 'Camp Farley Overnight Camp' and website_url the overnight page",
+        "2027 prices updated: overnight week $850 to $875 (week 2 $775), 2-week session $1,900 to $1,950 plus an adventure fee not yet set",
+        "Removed the 8 day camp weeks from this listing (they are on the day camp draft)",
+        "2-week sessions marked ages 13 to 15, as the overnight page says",
+        "Added meals (three a day for overnight campers), ACA accreditation, activities"
+      ],
+      "open_questions": [
+        "Camp Farley is one camp with day and overnight programs. I split it into two listings (this overnight one and camp-farley-day-camp-mashpee) because a listing takes one camp type. OK, or would you rather keep one listing?"
+      ]
+    }
   }
 }

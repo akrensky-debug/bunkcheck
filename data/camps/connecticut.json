@@ -1,6 +1,1489 @@
 {
   "metro": "Connecticut",
-  "checked": "2026-10-13",
+  "checked": "2026-11-13",
   "notes": "Real listings from each camp's own website. Unverified until a camp confirms. Edit here and re-run: python -m campfinder.seed.import_real --check",
-  "camps": []
+  "camps": [
+    {
+      "slug": "asap-summer-camp-washington",
+      "name": "ASAP! Summer Camp",
+      "operator_name": "After School Arts Program, Inc. (ASAP!)",
+      "website_url": "https://asapct.org/programs/summer-camp/",
+      "registration_url": null,
+      "phone": "860-868-0740",
+      "street_address": "Rumsey Hall School, 201 Romford Road",
+      "city": "Washington",
+      "state": "CT",
+      "zip": "06794",
+      "camp_type": "day",
+      "primary_categories": [
+        "arts",
+        "performing_arts",
+        "nature"
+      ],
+      "grade_min": 1,
+      "grade_max": 10,
+      "description_short": "An arts and outdoor day camp for grades 1-10, held in August at Rumsey Hall School in Washington, CT, from 9:00 am to 3:30 pm. Professional teaching artists lead visual, culinary and performing arts, plus nature hikes, an adventure course, climbing and field trips.",
+      "activities": [
+        "sculpture",
+        "cooking",
+        "theater",
+        "circus arts",
+        "high wire",
+        "adventure course",
+        "nature hikes",
+        "tie-dye",
+        "music",
+        "creative movement",
+        "fort building",
+        "entomology",
+        "drumming",
+        "rock climbing",
+        "makerspace",
+        "weaving",
+        "jewelry",
+        "painting",
+        "face painting",
+        "crafting",
+        "field trips"
+      ],
+      "price_min": 800,
+      "price_max": 900,
+      "financial_aid": true,
+      "transportation": true,
+      "meals_included": false,
+      "refund_policy_summary": "Full tuition refund for cancellations before June 1; 50% refund for cancellations June 1-30; no refund for cancellations on or after July 1.",
+      "season_year": 2027,
+      "email": "asap@asapct.org",
+      "sources": [
+        {
+          "url": "https://asapct.org/programs/summer-camp/",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "primary_categories",
+            "activities",
+            "grade_min",
+            "grade_max",
+            "description_short",
+            "price_min",
+            "price_max",
+            "transportation",
+            "meals_included",
+            "financial_aid",
+            "refund_policy_summary"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://asapct.org/contact/",
+          "checked": "2026-11-13",
+          "fields": [
+            "email"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ]
+    },
+    {
+      "slug": "auer-camp-bloomfield",
+      "name": "Auer Camp",
+      "operator_name": "The 4-H Center at Auerfarm, Inc.",
+      "website_url": "https://auerfarm.org/summercamps/",
+      "registration_url": null,
+      "email": "jmarshall@auerfarm.org",
+      "phone": "860-242-7144",
+      "street_address": "158 Auer Farm Road",
+      "city": "Bloomfield",
+      "state": "CT",
+      "zip": "06002",
+      "camp_type": "day",
+      "primary_categories": [
+        "nature",
+        "STEM",
+        "arts"
+      ],
+      "age_min": 3,
+      "age_max": 15,
+      "grade_max": 10,
+      "description_short": "A farm-based day camp on a 120-acre farm in Bloomfield, CT, for ages 3-15. Summer 2027 runs for 7 weeks, June 21 to August 6, with a S.T.E.A.M. curriculum built around farm animals, gardening, nature exploration and arts. Groups run from a half-day Sprouts program (ages 3-5) up to a leadership program for grades 9-10. Registration opens January 1, 2027.",
+      "activities": [
+        "Barn exploration / farm animal care",
+        "Play forest and fort building",
+        "Hiking and survival skills",
+        "Garden exploration",
+        "Stream exploration and fishing",
+        "Arts & crafts / tie-dye",
+        "Science exploration",
+        "Cooking",
+        "Hayrides",
+        "Sports and games",
+        "Leadership skills (grades 9-10)"
+      ],
+      "price_per_week": 395,
+      "price_min": 370,
+      "price_max": 395,
+      "extended_care": true,
+      "refund_policy_summary": "Cancellation fees depend on how much notice you give: $75 for more than 30 days, $200 for 14-30 days, $300 for less than 2 weeks.",
+      "special_needs_notes": "Sprouts (ages 3-5) must be fully potty-trained. Barn activities are adjusted for each child's age and comfort.",
+      "swim_waterfront_notes": "No pool or swim program is described. Older campers may explore, fish and play in a stream on the farm.",
+      "season_year": 2027,
+      "price_per": "week",
+      "grade_min": 0,
+      "sessions": [
+        {
+          "name": "Summer Camp 2027 (7 weeks, priced by the week)",
+          "start_date": "2027-06-21",
+          "end_date": "2027-08-06",
+          "price": null,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://auerfarm.org/summercamps/",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "email",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "primary_categories",
+            "activities",
+            "age_min",
+            "age_max",
+            "grade_min",
+            "grade_max",
+            "description_short",
+            "price_min",
+            "price_max",
+            "price_per_week",
+            "price_per",
+            "extended_care",
+            "refund_policy_summary",
+            "special_needs_notes",
+            "swim_waterfront_notes",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ]
+    },
+    {
+      "slug": "buck-s-rock-camp-new-milford",
+      "name": "Buck's Rock Camp",
+      "operator_name": "Buck's Rock Camp, Inc.",
+      "website_url": "https://bucksrockcamp.org",
+      "email": "info@bucksrockcamp.org",
+      "phone": "(860) 354-5030",
+      "street_address": "59 Buck's Rock Road",
+      "city": "New Milford",
+      "state": "CT",
+      "zip": "06776",
+      "camp_type": "sleepaway",
+      "primary_categories": [
+        "arts",
+        "performing_arts"
+      ],
+      "description_short": "Buck's Rock is a nonprofit overnight arts camp in New Milford, CT, for teens ages 11 to 17, with 32 visual and performing arts programs plus outdoor activities. In 2027 you can book the 8-week full season (July 1 to August 21), a 4-week first or second session, a 6-week session, or the CIT program. Tuition is tiered by household size and income, from $0 up to the full rate.",
+      "activities": [
+        "Visual arts",
+        "Performing arts",
+        "Outdoor activities"
+      ],
+      "season_year": 2027,
+      "age_min": 11,
+      "age_max": 17,
+      "price_min": 9275,
+      "price_max": 15991,
+      "meals_included": true,
+      "financial_aid": true,
+      "swim_waterfront_notes": "The camp has a swimming pool on its wooded grounds.",
+      "sessions": [
+        {
+          "name": "Full Season (8 weeks)",
+          "start_date": "2027-07-01",
+          "end_date": "2027-08-21",
+          "price": 15991,
+          "availability": "open"
+        },
+        {
+          "name": "CIT Program",
+          "start_date": "2027-06-29",
+          "end_date": "2027-08-21",
+          "price": null,
+          "availability": "open"
+        },
+        {
+          "name": "First Session (4 weeks)",
+          "start_date": "2027-07-01",
+          "end_date": "2027-07-26",
+          "price": 9275,
+          "availability": "open"
+        },
+        {
+          "name": "Second Session (4 weeks)",
+          "start_date": "2027-07-27",
+          "end_date": "2027-08-21",
+          "price": 9275,
+          "availability": "open"
+        },
+        {
+          "name": "Six-Week Session (6 weeks)",
+          "start_date": "2027-07-01",
+          "end_date": "2027-08-08",
+          "price": 12260,
+          "availability": "open"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://bucksrockcamp.org/dates",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "email",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://bucksrockcamp.org/rates",
+          "checked": "2026-11-13",
+          "fields": [
+            "camp_type",
+            "primary_categories",
+            "activities",
+            "price_min",
+            "price_max",
+            "meals_included",
+            "financial_aid",
+            "swim_waterfront_notes",
+            "description_short"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://bucksrockcamp.org/faqs",
+          "checked": "2026-11-13",
+          "fields": [
+            "age_min",
+            "age_max"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ]
+    },
+    {
+      "slug": "camp-awosting-morris",
+      "name": "Camp Awosting",
+      "operator_name": "Ebner Camps Inc.",
+      "website_url": "https://awosting.com/",
+      "registration_url": "https://awosting.campintouch.com/ui/forms/application/camper/App",
+      "phone": "(860) 567-4924",
+      "street_address": "296 West Street",
+      "city": "Morris",
+      "state": "CT",
+      "zip": "06763",
+      "camp_type": "sleepaway",
+      "description_short": "Camp Awosting is an overnight summer camp for boys ages 7 to 16 on Bantam Lake in Morris, Connecticut, with 40+ activities including motor sports, waterskiing, high ropes and team sports. Summer 2027 sessions run from 1 to 8 weeks between June 27 and August 21. Tuition covers meals, snacks, laundry, towel service, gratuities, the canteen shop and all on-camp activities.",
+      "price_min": 2675,
+      "price_max": 13230,
+      "transportation": true,
+      "meals_included": true,
+      "refund_policy_summary": "Half of the deposit cannot be refunded under any circumstances, and the whole deposit becomes non-refundable after 12/31/26. Balances are due May 1. Unused canteen money is not refunded. Families in the Guaranteed Tuition Program pay no deposit; they pay half the tuition by November 15 and half by January 15.",
+      "season_year": 2027,
+      "gender_policy": "boys",
+      "age_min": 7,
+      "age_max": 16,
+      "primary_categories": [
+        "sports",
+        "adventure"
+      ],
+      "activities": [
+        "Motocross",
+        "Go-karts",
+        "High ropes",
+        "Climbing",
+        "Archery",
+        "Wakeboarding",
+        "Waterskiing",
+        "Wakesurfing",
+        "Sailing",
+        "Canoeing",
+        "Kayaking and rowing",
+        "Stand-up paddleboard",
+        "Swimming",
+        "Fishing",
+        "Soccer",
+        "Baseball",
+        "Basketball",
+        "Lacrosse",
+        "Fencing",
+        "Mountain biking",
+        "Arts and crafts",
+        "Woodshop",
+        "Ceramics",
+        "Music",
+        "Drama",
+        "Overnight camping"
+      ],
+      "swim_waterfront_notes": "The waterfront is on Bantam Lake, with swimming, sailing, canoeing, kayaking, waterskiing, a water trampoline and inflatables. Life vests are required on the water trampoline.",
+      "sessions": [
+        {
+          "name": "1 Week Rookie Session 1",
+          "start_date": "2027-06-27",
+          "end_date": "2027-07-03",
+          "price": 2675,
+          "availability": "open"
+        },
+        {
+          "name": "1 Week Rookie Session 7",
+          "start_date": "2027-08-08",
+          "end_date": "2027-08-14",
+          "price": 2675,
+          "availability": "open"
+        },
+        {
+          "name": "2 Week Session 1",
+          "start_date": "2027-06-27",
+          "end_date": "2027-07-10",
+          "price": 5200,
+          "availability": "open"
+        },
+        {
+          "name": "2 Week Session 2",
+          "start_date": "2027-07-11",
+          "end_date": "2027-07-24",
+          "price": 5200,
+          "availability": "open"
+        },
+        {
+          "name": "2 Week Session 3",
+          "start_date": "2027-07-25",
+          "end_date": "2027-08-07",
+          "price": 5200,
+          "availability": "open"
+        },
+        {
+          "name": "2 Week Session 4",
+          "start_date": "2027-08-08",
+          "end_date": "2027-08-21",
+          "price": 5200,
+          "availability": "open"
+        },
+        {
+          "name": "3 Week Session: Weeks 1–3",
+          "start_date": "2027-06-27",
+          "end_date": "2027-07-17",
+          "price": 7060,
+          "availability": "open"
+        },
+        {
+          "name": "3 Week Session: Weeks 3–5",
+          "start_date": "2027-07-11",
+          "end_date": "2027-07-31",
+          "price": 7060,
+          "availability": "open"
+        },
+        {
+          "name": "3 Week Session: Weeks 5–7",
+          "start_date": "2027-07-25",
+          "end_date": "2027-08-14",
+          "price": 7060,
+          "availability": "open"
+        },
+        {
+          "name": "4 Week Session: Sessions 1 & 2",
+          "start_date": "2027-06-27",
+          "end_date": "2027-07-24",
+          "price": 9000,
+          "availability": "open"
+        },
+        {
+          "name": "4 Week Session: Sessions 2 & 3",
+          "start_date": "2027-07-11",
+          "end_date": "2027-08-07",
+          "price": 9000,
+          "availability": "open"
+        },
+        {
+          "name": "4 Week Session: Sessions 3 & 4",
+          "start_date": "2027-07-25",
+          "end_date": "2027-08-21",
+          "price": 9000,
+          "availability": "open"
+        },
+        {
+          "name": "6 Week Session: Sessions 1, 2 & 3",
+          "start_date": "2027-06-27",
+          "end_date": "2027-08-07",
+          "price": 11320,
+          "availability": "open"
+        },
+        {
+          "name": "6 Week Session: Sessions 2, 3 & 4",
+          "start_date": "2027-07-11",
+          "end_date": "2027-08-21",
+          "price": 11320,
+          "availability": "open"
+        },
+        {
+          "name": "Full Season (8 Weeks)",
+          "start_date": "2027-06-27",
+          "end_date": "2027-08-21",
+          "price": 13100,
+          "availability": "open"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://awosting.com/dates-rates/",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "registration_url",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "price_min",
+            "price_max",
+            "transportation",
+            "meals_included",
+            "refund_policy_summary",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://awosting.com/",
+          "checked": "2026-11-13",
+          "fields": [
+            "gender_policy",
+            "description_short",
+            "primary_categories"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://awosting.com/future-families/faqs/",
+          "checked": "2026-11-13",
+          "fields": [
+            "age_min",
+            "age_max"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://awosting.com/activities/",
+          "checked": "2026-11-13",
+          "fields": [
+            "activities",
+            "swim_waterfront_notes"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ]
+    },
+    {
+      "slug": "camp-chinqueka-bantam",
+      "name": "Camp Chinqueka",
+      "operator_name": "Ebner Camps Inc.",
+      "website_url": "https://chinqueka.com/",
+      "registration_url": "https://chinqueka.campintouch.com/ui/forms/application/camper/App",
+      "phone": "860-567-9678",
+      "street_address": "1519 Bantam Road",
+      "city": "Bantam",
+      "state": "CT",
+      "zip": "06750",
+      "camp_type": "sleepaway",
+      "description_short": "Camp Chinqueka is an overnight summer camp for girls ages 7 to 16 in Bantam, Connecticut, with sessions from one week (Rookie) to a full eight-week season between June 27 and August 21, 2027. Activities range from waterskiing, sailing and climbing to dance, ceramics and horseback riding. Tuition includes meals, snacks, laundry, towel service, gratuities, the canteen shop and all on-camp activities.",
+      "activities": [
+        "Horseback riding (extra fee)",
+        "Climbing and zip line",
+        "High ropes",
+        "Archery",
+        "Go-karts",
+        "Waterskiing",
+        "Sailing",
+        "Canoeing",
+        "Kayaking and rowing",
+        "Paddleboarding",
+        "Swimming",
+        "Synchronized swimming",
+        "Soccer",
+        "Field hockey",
+        "Tennis",
+        "Gymnastics",
+        "Cheerleading",
+        "Dance",
+        "Drama",
+        "Music",
+        "Ceramics",
+        "Arts and crafts",
+        "Jewelry making",
+        "Photography",
+        "Culinary arts",
+        "STEM",
+        "Overnight camping"
+      ],
+      "price_min": 2675,
+      "price_max": 13230,
+      "transportation": true,
+      "meals_included": true,
+      "refund_policy_summary": "Half of the deposit cannot be refunded under any circumstances, and the whole deposit becomes non-refundable after 12/31/26. Balances are due May 1. Unused canteen money is not refunded.",
+      "season_year": 2027,
+      "gender_policy": "girls",
+      "age_min": 7,
+      "age_max": 16,
+      "primary_categories": [
+        "sports",
+        "arts",
+        "adventure"
+      ],
+      "swim_waterfront_notes": "Campers get swim instruction from American Red Cross certified counselors, from Level 1 to Lifeguard Training, plus free swim in the camp's lake. Waterskiing, shared with Camp Awosting, is on Bantam Lake, 7 miles away.",
+      "sessions": [
+        {
+          "name": "1 Week Rookie Session 1",
+          "start_date": "2027-06-27",
+          "end_date": "2027-07-03",
+          "price": 2675,
+          "availability": "unknown"
+        },
+        {
+          "name": "1 Week Rookie Session 7",
+          "start_date": "2027-08-08",
+          "end_date": "2027-08-14",
+          "price": 2675,
+          "availability": "unknown"
+        },
+        {
+          "name": "2 Week Session 1",
+          "start_date": "2027-06-27",
+          "end_date": "2027-07-10",
+          "price": 5200,
+          "availability": "unknown"
+        },
+        {
+          "name": "2 Week Session 2",
+          "start_date": "2027-07-11",
+          "end_date": "2027-07-24",
+          "price": 5200,
+          "availability": "unknown"
+        },
+        {
+          "name": "2 Week Session 3",
+          "start_date": "2027-07-25",
+          "end_date": "2027-08-07",
+          "price": 5200,
+          "availability": "unknown"
+        },
+        {
+          "name": "2 Week Session 4",
+          "start_date": "2027-08-08",
+          "end_date": "2027-08-21",
+          "price": 5200,
+          "availability": "unknown"
+        },
+        {
+          "name": "3 Week Session: Weeks 1–3",
+          "start_date": "2027-06-27",
+          "end_date": "2027-07-17",
+          "price": 7060,
+          "availability": "unknown"
+        },
+        {
+          "name": "3 Week Session: Weeks 3–5",
+          "start_date": "2027-07-11",
+          "end_date": "2027-07-31",
+          "price": 7060,
+          "availability": "unknown"
+        },
+        {
+          "name": "3 Week Session: Weeks 5–7",
+          "start_date": "2027-07-25",
+          "end_date": "2027-08-14",
+          "price": 7060,
+          "availability": "unknown"
+        },
+        {
+          "name": "4 Week Session: Sessions 1 & 2",
+          "start_date": "2027-06-27",
+          "end_date": "2027-07-24",
+          "price": 9000,
+          "availability": "unknown"
+        },
+        {
+          "name": "4 Week Session: Sessions 2 & 3",
+          "start_date": "2027-07-11",
+          "end_date": "2027-08-07",
+          "price": 9000,
+          "availability": "unknown"
+        },
+        {
+          "name": "4 Week Session: Sessions 3 & 4",
+          "start_date": "2027-07-25",
+          "end_date": "2027-08-21",
+          "price": 9000,
+          "availability": "unknown"
+        },
+        {
+          "name": "6 Week Session: Sessions 1, 2 & 3",
+          "start_date": "2027-06-27",
+          "end_date": "2027-08-07",
+          "price": 11320,
+          "availability": "unknown"
+        },
+        {
+          "name": "6 Week Session: Sessions 2, 3 & 4",
+          "start_date": "2027-07-11",
+          "end_date": "2027-08-21",
+          "price": 11320,
+          "availability": "unknown"
+        },
+        {
+          "name": "Full Season (8 weeks)",
+          "start_date": "2027-06-27",
+          "end_date": "2027-08-21",
+          "price": 13100,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://chinqueka.com/dates-rates/",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "registration_url",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "description_short",
+            "price_min",
+            "price_max",
+            "transportation",
+            "meals_included",
+            "refund_policy_summary",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://chinqueka.com/",
+          "checked": "2026-11-13",
+          "fields": [
+            "gender_policy"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://chinqueka.com/future-families/faqs/",
+          "checked": "2026-11-13",
+          "fields": [
+            "age_min",
+            "age_max"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://chinqueka.com/activities/",
+          "checked": "2026-11-13",
+          "fields": [
+            "activities",
+            "primary_categories",
+            "swim_waterfront_notes"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ]
+    },
+    {
+      "slug": "camp-farmington-valley-granby",
+      "name": "Camp Farmington Valley",
+      "operator_name": "YMCA of Greater Hartford (Farmington Valley YMCA)",
+      "website_url": "https://www.ghymca.org/camps/farmington-valley-ymca-camp-farmington-valley",
+      "email": "campfvy@ghymca.org",
+      "phone": "860 653 5524",
+      "street_address": "97 Salmon Brook Street",
+      "city": "Granby",
+      "state": "CT",
+      "zip": "06035",
+      "camp_type": "day",
+      "primary_categories": [
+        "sports",
+        "arts",
+        "nature",
+        "STEM"
+      ],
+      "grade_min": 0,
+      "grade_max": 8,
+      "description_short": "A state-licensed YMCA day camp in Granby, CT, for children entering kindergarten through 8th grade. Each week has a theme, and activities include swim lessons, archery, a climbing wall, arts and crafts, nature and field trips.",
+      "activities": [
+        "Field trips",
+        "Gaga",
+        "Arts & Crafts",
+        "Free swim",
+        "Swim instruction",
+        "Archery",
+        "Rock wall",
+        "Nature adventures",
+        "Camp songs",
+        "S.T.E.M.",
+        "Sports",
+        "Basketball",
+        "Team building",
+        "Large group games"
+      ],
+      "financial_aid": true,
+      "extended_care": true,
+      "meals_included": false,
+      "refund_policy_summary": "Deposits are nonrefundable and can only be transferred within the current camp year. No refunds for cancellations made within 4 weeks of a session's start. If you ask in writing, paid fees can be moved to another week if there is space. The remaining balance is drafted 4 weeks before each session.",
+      "swim_waterfront_notes": "The camp has an indoor pool. The program includes free swim and swim instruction.",
+      "season_year": 2026,
+      "sessions": [
+        {
+          "name": "Week 1: Summer Kick Off",
+          "start_date": "2026-06-16",
+          "end_date": "2026-06-19",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 2: Pokemon Palooza",
+          "start_date": "2026-06-22",
+          "end_date": "2026-06-26",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 3: Stars & Stripes",
+          "start_date": "2026-06-29",
+          "end_date": "2026-07-03",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 4: Spirit Week: Color Wars",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 5: S.T.E.M.-tastic",
+          "start_date": "2026-07-13",
+          "end_date": "2026-07-17",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 6: Camp's Got Talent",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 7: Mystery Week: Camp Clue",
+          "start_date": "2026-07-27",
+          "end_date": "2026-07-31",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 8: Sports Showdown: Camp Olympics",
+          "start_date": "2026-08-03",
+          "end_date": "2026-08-07",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 9: Time Travelers Tale",
+          "start_date": "2026-08-10",
+          "end_date": "2026-08-14",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 10: Camp Favorites",
+          "start_date": "2026-08-17",
+          "end_date": "2026-08-21",
+          "price": null,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.ghymca.org/camps/farmington-valley-ymca-camp-farmington-valley",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "email",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "primary_categories",
+            "activities",
+            "grade_min",
+            "grade_max",
+            "description_short",
+            "extended_care",
+            "meals_included",
+            "financial_aid",
+            "refund_policy_summary",
+            "swim_waterfront_notes",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ]
+    },
+    {
+      "slug": "camp-glawackus-glastonbury-ymca-south-glastonbury",
+      "name": "Camp Glawackus (Glastonbury YMCA)",
+      "operator_name": "YMCA of Greater Hartford",
+      "website_url": "https://www.ghymca.org/camps/glastonbury-ymca-camp-glawackus",
+      "email": "campglawackus@ghymca.org",
+      "phone": "860-633-6548",
+      "street_address": "30 High Street",
+      "city": "South Glastonbury",
+      "state": "CT",
+      "zip": "06073",
+      "camp_type": "day",
+      "primary_categories": [
+        "sports",
+        "arts",
+        "STEM",
+        "nature"
+      ],
+      "age_min": 5,
+      "age_max": 15,
+      "description_short": "YMCA day camp for ages 5-11 and teen camp for ages 12-15 in South Glastonbury. Activities include archery, arts and crafts, STEM, nature, sports, weekly field trips and swimming. Teen campers also visit Connecticut attractions, hike and do a service project each week.",
+      "activities": [
+        "Archery",
+        "Arts & Crafts",
+        "STEM",
+        "Nature activities",
+        "Sports",
+        "Basketball",
+        "Volleyball",
+        "Gaga pit",
+        "Large group games",
+        "Songs, skits & plays",
+        "Team building",
+        "Swimming",
+        "Field trips",
+        "Hiking (teen camp)",
+        "Community service (teen camp)"
+      ],
+      "financial_aid": true,
+      "extended_care": true,
+      "meals_included": false,
+      "refund_policy_summary": "Deposits cannot be refunded and can only be transferred within the current camp year. There are no refunds for cancellations within 4 weeks of a session's start. If you ask in writing, paid fees may be moved to another week when space is available. The rest of the balance is charged 4 weeks before each session.",
+      "swim_waterfront_notes": "Day camp swims weekly at the Downtown YMCA, with some weeks also including swimming at YMCA Camp Chase. Teen camp swims once per week. Staff receive water safety training.",
+      "season_year": 2026,
+      "sessions": [
+        {
+          "name": "Day Camp Week 1: Safari",
+          "start_date": "2026-06-22",
+          "end_date": "2026-06-26",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Day Camp Week 2: Superhero Training Camp",
+          "start_date": "2026-06-29",
+          "end_date": "2026-07-03",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Day Camp Week 3: Science",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Day Camp Week 4: Survival",
+          "start_date": "2026-07-13",
+          "end_date": "2026-07-17",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Day Camp Week 5: Creative Arts",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Day Camp Week 6: Under the Sea",
+          "start_date": "2026-07-27",
+          "end_date": "2026-07-31",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Day Camp Week 7: Camp's Got Talent",
+          "start_date": "2026-08-03",
+          "end_date": "2026-08-07",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Day Camp Week 8: Camp Olympics",
+          "start_date": "2026-08-10",
+          "end_date": "2026-08-14",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Day Camp Week 9: Around the World",
+          "start_date": "2026-08-17",
+          "end_date": "2026-08-21",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Teen Camp: Fictional Character",
+          "start_date": "2026-06-29",
+          "end_date": "2026-07-03",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Teen Camp: Space",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Teen Camp: Dinosaur",
+          "start_date": "2026-07-13",
+          "end_date": "2026-07-17",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Teen Camp: Survival of the Fittest",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Teen Camp: Mad Science",
+          "start_date": "2026-07-27",
+          "end_date": "2026-07-31",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Teen Camp: Around the World",
+          "start_date": "2026-08-03",
+          "end_date": "2026-08-07",
+          "price": null,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.ghymca.org/camps/glastonbury-ymca-camp-glawackus",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "email",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "primary_categories",
+            "activities",
+            "age_min",
+            "age_max",
+            "description_short",
+            "extended_care",
+            "meals_included",
+            "financial_aid",
+            "refund_policy_summary",
+            "swim_waterfront_notes",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ]
+    },
+    {
+      "slug": "camp-laurelwood-madison",
+      "name": "Camp Laurelwood",
+      "website_url": "https://www.camplaurelwood.org/",
+      "registration_url": "https://laurelwood.campintouch.com/ui/forms/application/camper/App",
+      "email": "info@camplaurelwood.org",
+      "phone": "(203) 421-3736",
+      "street_address": "463 Summer Hill Rd.",
+      "city": "Madison",
+      "state": "CT",
+      "zip": "06443",
+      "primary_categories": [
+        "faith",
+        "general"
+      ],
+      "grade_min": 0,
+      "grade_max": 11,
+      "description_short": "Jewish summer camp in Madison, CT. Overnight camp for grades 2-9 in sessions from 2 to 7 weeks, a day camp for rising K-7th graders that can be booked by the week, the Bonim travel program (grades 10-11) and an SIT program (grade 11). Overnight tuition is all-inclusive.",
+      "financial_aid": true,
+      "season_year": 2027,
+      "sources": [
+        {
+          "url": "https://www.camplaurelwood.org/dates-and-rates/",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "website_url",
+            "registration_url",
+            "email",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "primary_categories",
+            "grade_min",
+            "grade_max",
+            "description_short"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://www.camplaurelwood.org/dates-and-rates-overnight-camp/",
+          "checked": "2026-11-13",
+          "fields": [
+            "camp_type",
+            "price_max",
+            "sessions",
+            "price_per"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://www.camplaurelwood.org/dates-and-rates-day-camp/",
+          "checked": "2026-11-13",
+          "fields": [
+            "price_min",
+            "extended_care"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://www.camplaurelwood.org/tuition-assistance/",
+          "checked": "2026-11-13",
+          "fields": [
+            "financial_aid"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ],
+      "camp_type": "sleepaway",
+      "price_min": 685,
+      "price_max": 12655,
+      "price_per": "session",
+      "extended_care": true,
+      "sessions": [
+        {
+          "name": "Overnight Full Summer (grades 2-9)",
+          "start_date": "2027-06-27",
+          "end_date": "2027-08-15",
+          "price": 12655,
+          "availability": "unknown"
+        },
+        {
+          "name": "Overnight Session 1 (grades 2-9)",
+          "start_date": "2027-06-27",
+          "end_date": "2027-07-25",
+          "price": 8700,
+          "availability": "unknown"
+        },
+        {
+          "name": "Overnight Session 2 (grades 2-9)",
+          "start_date": "2027-07-25",
+          "end_date": "2027-08-15",
+          "price": 7240,
+          "availability": "unknown"
+        },
+        {
+          "name": "Overnight Mini Session 1 (grades 2-9)",
+          "start_date": "2027-06-27",
+          "end_date": "2027-07-11",
+          "price": 5385,
+          "availability": "unknown"
+        },
+        {
+          "name": "Overnight Mini Session 2 (grades 2-9)",
+          "start_date": "2027-07-25",
+          "end_date": "2027-08-08",
+          "price": 5385,
+          "availability": "unknown"
+        },
+        {
+          "name": "Day Camp Full Summer (rising K-7)",
+          "start_date": "2027-06-28",
+          "end_date": "2027-08-13",
+          "price": 3880,
+          "availability": "unknown"
+        },
+        {
+          "name": "Day Camp Session 1 (rising K-7)",
+          "start_date": "2027-06-28",
+          "end_date": "2027-07-23",
+          "price": 2250,
+          "availability": "unknown"
+        },
+        {
+          "name": "Day Camp Session 2 (rising K-7)",
+          "start_date": "2027-07-26",
+          "end_date": "2027-08-13",
+          "price": 1710,
+          "availability": "unknown"
+        },
+        {
+          "name": "Day Camp Mini Session 1 (rising K-7)",
+          "start_date": "2027-06-28",
+          "end_date": "2027-07-09",
+          "price": 1225,
+          "availability": "unknown"
+        },
+        {
+          "name": "Day Camp Mini Session 2 (rising K-7)",
+          "start_date": "2027-07-26",
+          "end_date": "2027-08-06",
+          "price": 1225,
+          "availability": "unknown"
+        }
+      ]
+    },
+    {
+      "slug": "camp-sloane-ymca-day-camp-lakeville",
+      "name": "Camp Sloane YMCA Day Camp",
+      "operator_name": "Camp Sloane YMCA",
+      "website_url": "https://campsloane.org/day-camp",
+      "registration_url": "https://campsloane.campintouch.com/ui/forms/application/camper/App",
+      "email": "info@campsloane.org",
+      "phone": "(860) 435-2557",
+      "street_address": "124 Indian Mountain Rd",
+      "city": "Lakeville",
+      "state": "CT",
+      "zip": "06039",
+      "camp_type": "day",
+      "primary_categories": [
+        "sports",
+        "arts",
+        "nature"
+      ],
+      "grade_min": 0,
+      "grade_max": 6,
+      "description_short": "A day camp for children entering grades K-6, run 8:45am-4:45pm at Camp Sloane YMCA in Lakeville, CT. Campers are grouped by rising grade and do sports, arts and crafts, boating, adventure activities and daily swim lessons. Lunch and an afternoon snack are included.",
+      "activities": [
+        "Sports",
+        "Arts and crafts",
+        "Boating",
+        "Adventure",
+        "Instructional swimming",
+        "Horseback riding lessons (extra fee)"
+      ],
+      "price_per_week": 560,
+      "price_min": 480,
+      "price_max": 1115,
+      "financial_aid": true,
+      "extended_care": true,
+      "meals_included": true,
+      "swim_waterfront_notes": "Instructional swim lessons every day. Boating is one of the day camp activities.",
+      "season_year": 2027,
+      "price_per": "week",
+      "sessions": [
+        {
+          "name": "Session A",
+          "start_date": "2027-06-28",
+          "end_date": "2027-07-09",
+          "price": 1115,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session B",
+          "start_date": "2027-07-12",
+          "end_date": "2027-07-23",
+          "price": 1115,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session C",
+          "start_date": "2027-07-26",
+          "end_date": "2027-08-06",
+          "price": 1115,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session D",
+          "start_date": "2027-08-09",
+          "end_date": "2027-08-20",
+          "price": 1115,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session E (1 week)",
+          "start_date": "2027-08-23",
+          "end_date": "2027-08-27",
+          "price": 560,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://campsloane.org/day-camp",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "email",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "primary_categories",
+            "activities",
+            "grade_min",
+            "grade_max",
+            "description_short",
+            "price_min",
+            "price_max",
+            "price_per_week",
+            "price_per",
+            "extended_care",
+            "meals_included",
+            "financial_aid",
+            "swim_waterfront_notes",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://campsloane.org/dates-and-rates",
+          "checked": "2026-11-13",
+          "fields": [
+            "registration_url"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ]
+    },
+    {
+      "slug": "camp-sloane-ymca-lakeville",
+      "name": "Camp Sloane YMCA",
+      "website_url": "https://campsloane.org",
+      "registration_url": "https://campsloane.campintouch.com/ui/forms/application/camper/App",
+      "email": "info@campsloane.org",
+      "phone": "(860) 435-2557",
+      "street_address": "124 Indian Mountain Rd",
+      "city": "Lakeville",
+      "state": "CT",
+      "zip": "06039",
+      "camp_type": "sleepaway",
+      "primary_categories": [
+        "sports",
+        "nature",
+        "outdoor"
+      ],
+      "grade_min": 4,
+      "grade_max": 11,
+      "description_short": "Overnight YMCA camp in Lakeville, CT, for rising 4th-10th graders, with a LEAD teen leadership program for rising 11th graders. Campers live in platform tents in villages grouped by grade and choose their own activities, with riding and waterski lessons on offer. Four 2-week sessions, one 1-week session and a 2-week Riding Camp. The day camp is listed separately.",
+      "activities": [
+        "Horseback riding",
+        "Waterskiing",
+        "Swimming",
+        "High ropes and zip line",
+        "Gaga",
+        "Tennis",
+        "Basketball",
+        "Soccer",
+        "American Red Cross Lifeguard course (LEAD)",
+        "Teen leadership (LEAD)"
+      ],
+      "price_per_week": 1625,
+      "price_min": 1325,
+      "price_max": 3495,
+      "financial_aid": true,
+      "season_year": 2027,
+      "price_per": "session",
+      "sessions": [
+        {
+          "name": "Session 1 (2 weeks, rising 4th-10th)",
+          "start_date": "2027-06-27",
+          "end_date": "2027-07-10",
+          "price": 3045,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 2 (2 weeks, rising 4th-10th)",
+          "start_date": "2027-07-11",
+          "end_date": "2027-07-24",
+          "price": 3045,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 3 (2 weeks, rising 4th-10th)",
+          "start_date": "2027-07-25",
+          "end_date": "2027-08-07",
+          "price": 3045,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 4 (2 weeks, rising 4th-10th)",
+          "start_date": "2027-08-08",
+          "end_date": "2027-08-21",
+          "price": 3045,
+          "availability": "unknown"
+        },
+        {
+          "name": "One Week Session (rising 4th-10th)",
+          "start_date": "2027-07-04",
+          "end_date": "2027-07-10",
+          "price": 1625,
+          "availability": "unknown"
+        },
+        {
+          "name": "Riding Camp (2-week specialty, rising 4th-10th)",
+          "start_date": "2027-08-08",
+          "end_date": "2027-08-21",
+          "price": 3495,
+          "availability": "unknown"
+        },
+        {
+          "name": "LEAD Session 1 (rising 11th)",
+          "start_date": "2027-06-27",
+          "end_date": "2027-07-10",
+          "price": 3045,
+          "availability": "unknown"
+        },
+        {
+          "name": "LEAD Session 2 (rising 11th)",
+          "start_date": "2027-07-11",
+          "end_date": "2027-07-24",
+          "price": 3045,
+          "availability": "unknown"
+        },
+        {
+          "name": "LEAD Session 3 (rising 11th)",
+          "start_date": "2027-07-25",
+          "end_date": "2027-08-07",
+          "price": 3045,
+          "availability": "unknown"
+        },
+        {
+          "name": "LEAD Session 4 (rising 11th)",
+          "start_date": "2027-08-08",
+          "end_date": "2027-08-21",
+          "price": 3045,
+          "availability": "unknown"
+        },
+        {
+          "name": "Lifeguard A (free, LEAD campers only)",
+          "start_date": "2027-06-27",
+          "end_date": "2027-07-03",
+          "price": 0,
+          "availability": "unknown"
+        },
+        {
+          "name": "Lifeguard B (free, LEAD campers only)",
+          "start_date": "2027-07-04",
+          "end_date": "2027-07-10",
+          "price": 0,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://campsloane.org/dates-and-rates",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "website_url",
+            "registration_url",
+            "email",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "grade_min",
+            "grade_max",
+            "price_min",
+            "price_max",
+            "price_per_week",
+            "price_per",
+            "financial_aid",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://campsloane.org/overnight-camp",
+          "checked": "2026-11-13",
+          "fields": [
+            "primary_categories",
+            "activities",
+            "description_short",
+            "meals_included"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ],
+      "meals_included": true
+    }
+  ]
 }

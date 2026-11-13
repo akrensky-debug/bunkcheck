@@ -26,7 +26,6 @@
     "Fishing",
     "Science",
     "Free play",
-    "Basketball",
     "STEM",
     "Reading",
     "Boating"
@@ -109,13 +108,12 @@
   "sources": [
     {
       "url": "https://www.ymcaofcm.org/camp-blanchard/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
         "website_url",
         "registration_url",
-        "phone",
         "street_address",
         "city",
         "state",
@@ -134,8 +132,14 @@
         "financial_aid",
         "swim_waterfront_notes",
         "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
+    },
+    {
+      "url": "https://www.ymcaofcm.org/contact/",
+      "checked": "2026-11-13",
+      "fields": [
+        "phone"
+      ]
     },
     {
       "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=208+Manchaug+Road&city=Sutton&state=MA&benchmark=Public_AR_Current&format=json",
@@ -147,7 +151,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.ymcaofcm.org/camp-blanchard/",
       "kind": "html",
@@ -181,6 +185,23 @@
         "quote": "Enroll Online for 2026 Camp"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.ymcaofcm.org/camp-blanchard/",
+        "https://www.ymcaofcm.org/contact/",
+        "https://www.ymcaofcm.org/locations/central-community-branch/",
+        "https://www.ymcaofcm.org/camp/"
+      ],
+      "changes": [
+        "phone 508-755-6101 re-sourced to the YMCA of Central Massachusetts contact page: it is the association's main line, and the Camp Blanchard page itself lists no phone (only a contact form).",
+        "'Basketball' removed from activities: the page mentions a basketball court and a site-menu link, not a camp activity.",
+        "Sessions 2 to 10 (June 29 to August 28, 2026), $270 a week, ages 7 and up, 8:00 to 5:00 with no extended day, bus from Worcester, financial assistance and bring-your-own lunch all match the page. Session 1 (June 22) is still marked canceled and stays out."
+      ],
+      "open_questions": [
+        "The camp's own pages give the street address (208 Manchaug Road, Sutton) but never a ZIP. The draft's 01590 comes from the US Census geocoder, not the camp. Accept a Census ZIP for a camp-stated street address, or leave it empty (which blocks publishing)?"
+      ]
+    }
   }
 }
