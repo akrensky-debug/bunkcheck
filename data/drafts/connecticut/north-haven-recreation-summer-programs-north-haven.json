@@ -1,47 +1,112 @@
 {
   "slug": "north-haven-recreation-summer-programs-north-haven",
-  "name": "North Haven Recreation Summer Programs",
+  "name": "North Haven Recreation Summer Day Camp",
   "operator_name": "North Haven Department of Recreation",
-  "website_url": "https://www.northhaven-ct.gov/news_detail_T4_R343.php",
+  "website_url": "https://www.northhaven-ct.gov/government/town_departments/departments_(m_-_r)/recreation/summer_brochure_2023.php",
   "email": "Rec@northhaven-ct.gov",
   "phone": "(203) 239-5321 ext. 8530",
+  "street_address": "7 Linsley Street",
   "city": "North Haven",
   "state": "CT",
   "zip": "06473",
-  "description_short": "The North Haven Department of Recreation runs town summer programs, including camps, swim lessons and sports clinics, for North Haven residents. Details for each program are in the department's summer brochure.",
-  "activities": [
-    "swim lessons",
-    "sports clinics"
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
   ],
+  "activities": [
+    "Cooperative games",
+    "Arts and crafts",
+    "Reading program",
+    "Weekly special events",
+    "Pizza Day Fridays"
+  ],
+  "age_min": 3,
+  "age_max": 13,
+  "description_short": "The town of North Haven's summer day camp for ages 3 to 13 at the Wakeley Community & Recreation Center, 8am to 5pm on weekdays. Each week has a theme with cooperative games, arts and crafts, a reading program and a special event, and ends with Pizza Day. Non-residents can join for $10 more a week.",
+  "price_min": 250,
+  "price_max": 310,
+  "price_per_week": 310,
+  "price_per": "week",
+  "refund_policy_summary": "No refunds unless the department cancels the program, your place can be filled by another registration, or you provide a physician's note.",
+  "special_needs_notes": "The Recreation Department welcomes participants with disabilities and makes reasonable accommodations under the ADA. Ask at registration, at least two weeks before the program starts.",
   "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Week 1: Color Wars",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-02",
+      "price": 250,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 2: Animals Kingdom",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": 310,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 3: Camp Olympics!",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": 310,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 4: Happiest Camp in the Universe",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": 310,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 5: Out of this World",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": 310,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 6: Talent Week!",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": 310,
+      "availability": "unknown"
+    }
+  ],
   "sources": [
     {
-      "url": "https://www.northhaven-ct.gov/news_detail_T4_R343.php",
-      "checked": "2026-10-13",
+      "url": "https://www.northhaven-ct.gov/government/town_departments/departments_(m_-_r)/recreation/summer_brochure_2023.php",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
         "website_url",
         "email",
         "phone",
+        "street_address",
         "city",
         "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
         "activities",
-        "description_short"
+        "age_min",
+        "age_max",
+        "description_short",
+        "price_min",
+        "price_max",
+        "price_per_week",
+        "price_per",
+        "refund_policy_summary",
+        "special_needs_notes",
+        "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
-    },
-    {
-      "url": "https://www.census.gov/geographies/reference-files/time-series/geo/relationship-files.2020.html",
-      "checked": "2026-10-14",
-      "fields": [
-        "zip"
-      ],
-      "note": "North Haven, CT sits inside one ZIP code (2020 Census ZCTA relationship file)"
+      "note": "Summer Brochure 2026, full text on the town site"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.northhaven-ct.gov/news_detail_T4_R343.php",
       "kind": "html",
@@ -78,6 +143,26 @@
     "errors": [
       "missing required camp_type",
       "camp_type must be one of ['day', 'sleepaway', 'specialty']"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.northhaven-ct.gov/news_detail_T4_R343.php",
+        "https://www.northhaven-ct.gov/government/town_departments/departments_(m_-_r)/recreation/index.php",
+        "https://www.northhaven-ct.gov/government/town_departments/departments_(m_-_r)/recreation/summer_brochure_2023.php"
+      ],
+      "changes": [
+        "Narrowed the listing from all town summer programs to the Summer Day Camp, the one camp in the 2026 brochure that runs all summer; renamed it North Haven Recreation Summer Day Camp.",
+        "Moved the source from the town news post to the full-text Summer Brochure 2026 page.",
+        "Set camp_type to day, which fixes the validator error, and added ages 3 to 13.",
+        "Added the six 2026 weeks (June 29 to August 7) with their themes and fees: $250 for the four-day first week, $310 for the others.",
+        "Added the address 7 Linsley Street; the ZIP 06473 now comes from the brochure itself, not the Census file.",
+        "Added the refund policy and the ADA accommodation note; rewrote the description and activities for the day camp.",
+        "Corrected the description: non-residents can attend for $10 more a week."
+      ],
+      "open_questions": [
+        "The brochure also has Playground Camp (Montowese Elementary School, ages 6 to 12, June 29 to July 31, $300 for five weeks, residents only). Should it get its own listing?"
+      ]
+    }
   }
 }

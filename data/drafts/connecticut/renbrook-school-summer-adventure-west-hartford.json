@@ -3,6 +3,7 @@
   "name": "Renbrook School Summer Adventure",
   "operator_name": "Renbrook School",
   "website_url": "https://www.renbrook.org/summer/",
+  "registration_url": "https://renbrook.campintouch.com/ui/forms/application/camper/App",
   "phone": "860-236-1661",
   "street_address": "2865 Albany Avenue",
   "city": "West Hartford",
@@ -16,9 +17,6 @@
     "academic",
     "sports"
   ],
-  "age_min": 3,
-  "grade_max": 9,
-  "description_short": "A day camp at Renbrook School in West Hartford for children age 3 through Grade 9, run by teachers and educators. Summer 2027 runs June 14–July 30 in three two-week sessions, plus a one-week Pre-Season Camp.",
   "activities": [
     "swimming",
     "archery",
@@ -28,18 +26,32 @@
     "ceramics",
     "woodworking"
   ],
-  "financial_aid": true,
+  "age_min": 3,
+  "grade_max": 9,
+  "description_short": "A day camp at Renbrook School in West Hartford for children age 3 through Grade 9, led by teachers and educators. Summer 2027 runs June 14 to July 30: a one-week Pre-Season Camp (June 14-17), then three two-week sessions. Registration for 2027 is open.",
   "extended_care": true,
-  "swim_waterfront_notes": "The site has a \"Life at the Pool\" page and lists swimming as an activity. Details such as lessons and supervision are not on this page.",
+  "financial_aid": true,
+  "refund_policy_summary": "Each session includes a non-refundable $75 registration fee. The rest of tuition is refundable until May 1, 2027, when payment in full is due.",
+  "swim_waterfront_notes": "All campers swim every day. Lessons follow the American Red Cross Learn to Swim program at about one staff member per four campers, with a placement test on day one. Three fenced pools (two 2.5 feet deep, one 3.5 to 8 feet) each have a Red Cross lifeguard on duty; floaties are not allowed.",
   "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Pre-Season Camp (4 days, no camp Friday June 18)",
+      "start_date": "2027-06-14",
+      "end_date": "2027-06-17",
+      "price": null,
+      "availability": "unknown"
+    }
+  ],
   "sources": [
     {
       "url": "https://www.renbrook.org/summer/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
         "website_url",
+        "registration_url",
         "phone",
         "street_address",
         "city",
@@ -50,16 +62,52 @@
         "activities",
         "age_min",
         "grade_max",
-        "description_short",
-        "extended_care",
-        "financial_aid",
-        "swim_waterfront_notes"
+        "description_short"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Summer Adventure home page, Summer 2027"
+    },
+    {
+      "url": "https://www.renbrook.org/summer/general-info/before-and-after-camp-care/",
+      "checked": "2026-11-13",
+      "fields": [
+        "extended_care"
+      ],
+      "note": "Before care 7:30-8:30am, after care 3:30-5:30pm"
+    },
+    {
+      "url": "https://www.renbrook.org/summer/general-info/campership/",
+      "checked": "2026-11-13",
+      "fields": [
+        "financial_aid"
+      ],
+      "note": "RSA Campership Fund"
+    },
+    {
+      "url": "https://www.renbrook.org/summer/general-info/dates-and-rates/",
+      "checked": "2026-11-13",
+      "fields": [
+        "refund_policy_summary"
+      ],
+      "note": "2027 payment terms"
+    },
+    {
+      "url": "https://www.renbrook.org/summer/camp-programs/life-at-the-pool/",
+      "checked": "2026-11-13",
+      "fields": [
+        "swim_waterfront_notes"
+      ]
+    },
+    {
+      "url": "https://www.renbrook.org/summer/general-info/pre-season-camp/",
+      "checked": "2026-11-13",
+      "fields": [
+        "sessions"
+      ],
+      "note": "Pre-Season Camp June 14-17; season is June 14 to July 30, 2027 per the home page"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.renbrook.org/summer/",
       "kind": "html",
@@ -111,6 +159,26 @@
         "quote": "Life at the Pool"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.renbrook.org/summer/",
+        "https://www.renbrook.org/summer/general-info/dates-and-rates/",
+        "https://www.renbrook.org/summer/general-info/pre-season-camp/",
+        "https://www.renbrook.org/summer/general-info/before-and-after-camp-care/",
+        "https://www.renbrook.org/summer/general-info/campership/",
+        "https://www.renbrook.org/summer/camp-programs/life-at-the-pool/"
+      ],
+      "changes": [
+        "Registration for 2027 is now open (the draft said coming soon); added the online registration link and updated the description.",
+        "Added the 2027 Pre-Season Camp session, June 14-17 (no camp Friday June 18). The three two-week session dates are not in the page text, so they are not listed.",
+        "Added the 2027 refund terms: $75 non-refundable fee per session, the rest refundable until May 1, 2027.",
+        "Rewrote the swim note from the Life at the Pool page (daily Red Cross lessons, three fenced pools, lifeguards).",
+        "Gave extended_care and financial_aid their own source pages (Before & After Camp Care, RSA Campership Fund). Kept financial_aid true: the Campership Fund pays for camp for local children that educators and town officials identify, though families don't apply directly.",
+        "The Dates & Rates page shows hours and payment terms but its rate table isn't in the page text, so prices stay empty."
+      ],
+      "open_questions": []
+    }
   }
 }

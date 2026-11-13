@@ -43,7 +43,7 @@
   "sources": [
     {
       "url": "https://www.westhartfordct.gov/town-departments/leisure-services/camps",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -59,12 +59,11 @@
         "financial_aid",
         "special_needs_notes",
         "swim_waterfront_notes"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.westhartfordct.gov/town-departments/leisure-services/camps",
       "kind": "html",
@@ -128,6 +127,19 @@
       "missing required camp_type",
       "missing required season_year",
       "camp_type must be one of ['day', 'sleepaway', 'specialty']"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.westhartfordct.gov/town-departments/leisure-services/camps"
+      ],
+      "changes": [
+        "No field changes; the camps hub page still shows no year, dates, prices or ZIP."
+      ],
+      "open_questions": [
+        "This is a hub for five separate town camps: Buena Vista (6 to teen), Busy Bees and Mini Busy Bees (2 to 5), Camp Funtastic (6 to 11), Discovery Zone and Discovery Zone Jr. (5 to 12), Westmoor Park (4 to 13). Replace it with one listing per camp, each built from its own page?",
+        "As it stands it can't pass: zip, camp_type and season_year are all missing from the hub page."
+      ]
+    }
   }
 }

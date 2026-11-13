@@ -4,13 +4,14 @@
   "website_url": "https://www.kenmontkenwood.com/",
   "registration_url": "https://www.kenmontkenwood.com/enrollment/",
   "phone": "860.927.3042",
-  "city": null,
-  "state": null,
-  "zip": null,
+  "street_address": "65 KenMont Road",
+  "city": "Kent",
+  "state": "CT",
+  "zip": "06757",
   "camp_type": "sleepaway",
   "grade_min": 2,
   "grade_max": 10,
-  "description_short": "Overnight brother/sister camps: KenMont Camp for Boys and KenWood Camp for Girls. Campers entering grades 2–10 can choose a four-week session or one of two two-week options.",
+  "description_short": "Brother/sister overnight camps on North Spectacle Lake in Kent, CT: KenMont Camp for Boys and KenWood Camp for Girls, with separate programs and shared events. Campers entering grades 2-10 choose a four-week session or a two-week option. Tuition includes laundry, canteen, photos and bus or airport transfer; a $400 personal and trip expense and the uniform are extra.",
   "price_min": 7600,
   "price_max": 10200,
   "transportation": true,
@@ -49,7 +50,7 @@
   "sources": [
     {
       "url": "https://www.kenmontkenwood.com/enrollment/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "website_url",
@@ -58,18 +59,42 @@
         "camp_type",
         "grade_min",
         "grade_max",
-        "description_short",
         "price_min",
         "price_max",
         "transportation",
         "refund_policy_summary",
         "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
+    },
+    {
+      "url": "https://www.kenmontkenwood.com/experience-camp/our-location/",
+      "checked": "2026-11-13",
+      "fields": [
+        "street_address",
+        "city",
+        "state",
+        "zip"
+      ]
+    },
+    {
+      "url": "https://www.kenmontkenwood.com/about-us/program-activities/",
+      "checked": "2026-11-13",
+      "fields": [
+        "primary_categories",
+        "activities",
+        "swim_waterfront_notes"
+      ]
+    },
+    {
+      "url": "https://www.kenmontkenwood.com/experience-camp/brother-sister-camp/",
+      "checked": "2026-11-13",
+      "fields": [
+        "description_short"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.kenmontkenwood.com/enrollment/",
       "kind": "html",
@@ -108,6 +133,65 @@
       "missing required city",
       "missing required state",
       "missing required zip"
-    ]
-  }
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.kenmontkenwood.com/enrollment/",
+        "https://www.kenmontkenwood.com/experience-camp/our-location/",
+        "https://www.kenmontkenwood.com/about-us/program-activities/",
+        "https://www.kenmontkenwood.com/experience-camp/brother-sister-camp/",
+        "https://www.kenmontkenwood.com/contact/",
+        "https://www.kenmontkenwood.com/directions/"
+      ],
+      "changes": [
+        "Confirmed the 2027 sessions and fees on the enrollment page: two 4-week sessions ($10,200; June 24 to July 18 and July 22 to August 15) and two 2-week options ($7,600; June 24 to July 7 and July 22 to August 4), grades 2-10, transportation included, refund and payment schedule.",
+        "Added the camp address (65 KenMont Road, Kent, CT 06757) from the location page; city, state and ZIP were empty.",
+        "Added categories, a full activity list and the waterfront note from the Program & Activities page.",
+        "Description now names both camps, the lake, what tuition covers and the extra $400 personal and trip expense.",
+        "No general email on the site, only named directors' addresses on the contact page, so email stays empty."
+      ],
+      "open_questions": [
+        "KenMont (boys) and KenWood (girls) call themselves two camps with separate staff and facilities, but share one site, leadership, enrollment, dates and fees. Keep one listing (as drafted), or split into a boys' listing and a girls' listing with gender_policy set?"
+      ]
+    }
+  },
+  "primary_categories": [
+    "general",
+    "sports",
+    "arts",
+    "adventure"
+  ],
+  "activities": [
+    "Swimming",
+    "Sailing",
+    "Paddleboarding",
+    "Wakeboarding",
+    "Kneeboarding",
+    "Water skiing",
+    "Canoeing",
+    "Basketball",
+    "Baseball",
+    "Football",
+    "Gaga",
+    "Lacrosse",
+    "Tennis",
+    "Golf",
+    "Gymnastics",
+    "Hockey",
+    "Soccer",
+    "Crafts",
+    "Painting and drawing",
+    "Ceramics",
+    "Dance",
+    "Culinary arts",
+    "Go-karts",
+    "Climbing",
+    "Ropes course",
+    "Archery",
+    "Skate park",
+    "Pioneering",
+    "Fishing"
+  ],
+  "swim_waterfront_notes": "Lake and pool: swimming, sailing, paddleboarding, wakeboarding, kneeboarding, water skiing and canoeing on North Spectacle Lake."
 }

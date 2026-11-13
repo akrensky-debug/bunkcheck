@@ -13,7 +13,7 @@
   "sources": [
     {
       "url": "https://www.trumbull-ct.gov/m/newsflash/Archive/Item/3001?arcId=4693",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -24,19 +24,19 @@
         "state",
         "description_short"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Archived Feb 2026 notice: 2026 summer camp preview live, registration opened March 2, 2026"
     },
     {
-      "url": "https://www.census.gov/geographies/reference-files/time-series/geo/relationship-files.2020.html",
-      "checked": "2026-10-14",
+      "url": "https://trumbullct.myrec.com/info/default.aspx",
+      "checked": "2026-11-13",
       "fields": [
         "zip"
       ],
-      "note": "Trumbull, CT sits inside one ZIP code (2020 Census ZCTA relationship file)"
+      "note": "Trumbull Parks & Recreation, 5892 Main Street, Trumbull, CT 06611"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "drop",
     "source": {
       "url": "https://www.trumbull-ct.gov/m/newsflash/Archive/Item/3001?arcId=4693",
       "kind": "html",
@@ -76,6 +76,22 @@
     "errors": [
       "missing required camp_type",
       "camp_type must be one of ['day', 'sleepaway', 'specialty']"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.trumbull-ct.gov/m/newsflash/Archive/Item/3001?arcId=4693",
+        "https://trumbullct.myrec.com/info/default.aspx",
+        "https://trumbullct.myrec.com/info/activities/default.aspx?type=activities",
+        "https://trumbullct.myrec.com/info/activities/default.aspx?CategoryID=1536&type=activities"
+      ],
+      "changes": [
+        "ZIP 06611 now sourced to the department's own registration site instead of the Census file.",
+        "The registration site's Camps category now lists only Future Stars; the 2026 summer camps are gone, so there is no camp, age, date, price or camp type to list."
+      ],
+      "open_questions": [
+        "Nothing usable today. Rebuild from trumbullct.myrec.com when the 2027 summer camp preview goes live (the 2026 one went up in mid-February)."
+      ]
+    }
   }
 }
