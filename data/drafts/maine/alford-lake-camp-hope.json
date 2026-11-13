@@ -24,8 +24,8 @@
     "Library",
     "Out of Camp Trips"
   ],
-  "price_min": 11100,
-  "price_max": 15400,
+  "price_min": 10350,
+  "price_max": 15800,
   "financial_aid": true,
   "refund_policy_summary": "A $1,500 tuition deposit is due at registration. It is non-refundable and is credited toward tuition. Credit card convenience fees (3.5%) are also non-refundable. The page does not give a refund policy for the rest of the tuition.",
   "season_year": 2027,
@@ -55,10 +55,9 @@
   "sources": [
     {
       "url": "https://www.alfordlakecamp.com/rates-dates",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
-        "website_url",
         "registration_url",
         "email",
         "phone",
@@ -66,7 +65,6 @@
         "city",
         "state",
         "zip",
-        "camp_type",
         "primary_categories",
         "activities",
         "description_short",
@@ -75,12 +73,22 @@
         "financial_aid",
         "refund_policy_summary",
         "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
+    },
+    {
+      "url": "https://www.alfordlakecamp.com",
+      "checked": "2026-11-13",
+      "fields": [
+        "website_url",
+        "camp_type",
+        "gender_policy",
+        "age_min",
+        "age_max"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.alfordlakecamp.com/rates-dates",
       "kind": "html",
@@ -115,6 +123,23 @@
         "quote": "Drama ... Tennis ... Canoeing ... Sailing"
       }
     ],
-    "errors": []
-  }
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.alfordlakecamp.com/rates-dates",
+        "https://www.alfordlakecamp.com",
+        "https://www.alfordlakecamp.com/future-alcers"
+      ],
+      "changes": [
+        "Confirmed 2027 dates (Full Season June 29-August 16, Session I June 29-July 22, Session II July 25-August 16), $15,400 full and $11,100 half season, $1,500 non-refundable deposit, address, email and phone on the rates page",
+        "Added gender_policy girls and ages 8-17 from the home page ('a traditional Maine sleepaway camp for girls ages 8-17')",
+        "Widened price range to $10,350-$15,800 to cover all posted 2027 rates (Junior CT Program $10,350, AMT LII $15,800)"
+      ],
+      "open_questions": []
+    }
+  },
+  "gender_policy": "girls",
+  "age_min": 8,
+  "age_max": 17
 }

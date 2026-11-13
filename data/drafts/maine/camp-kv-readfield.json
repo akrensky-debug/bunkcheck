@@ -18,7 +18,7 @@
   "age_max": 14,
   "grade_min": 0,
   "grade_max": 8,
-  "description_short": "State-licensed co-ed day camp run by the Kennebec Valley YMCA on 23 acres on Maranacook Lake in Readfield, Maine, for ages 5-14 (K-8). Camp is booked one week at a time, with traditional activities such as swimming, boating, archery and arts and crafts.",
+  "description_short": "State-licensed co-ed day camp run by the Kennebec Valley YMCA on Maranacook Lake in Readfield, Maine, for ages 5 to 14. Camp is booked one week at a time, with swimming, boating, archery, arts and crafts, nature, field sports and disc golf.",
   "activities": [
     "Swimming",
     "Boating",
@@ -29,11 +29,11 @@
     "Disc Golf",
     "Literacy"
   ],
-  "price_per_week": 230,
-  "price_min": 178,
+  "price_per_week": 260,
+  "price_min": 208,
   "price_max": 780,
   "financial_aid": true,
-  "swim_waterfront_notes": "Camp is on Maranacook Lake; swimming and boating are offered. A Lifeguard/Leader in Training program is available for ages 12-14. The page does not describe swim testing or supervision.",
+  "swim_waterfront_notes": "Camp is on Maranacook Lake, with swimming and boating. A 2-week Lifeguard/Leader in Training program for ages 12 to 14 teaches CPR, water scanning and shallow water rescues. The pages don't describe swim tests or waterfront supervision.",
   "season_year": 2026,
   "price_per": "week",
   "sessions": [
@@ -41,100 +41,103 @@
       "name": "Day Camp Week 1",
       "start_date": "2026-06-15",
       "end_date": "2026-06-19",
-      "price": 230,
+      "price": 260,
       "availability": "unknown"
     },
     {
       "name": "Day Camp Week 2",
       "start_date": "2026-06-22",
       "end_date": "2026-06-26",
-      "price": 230,
+      "price": 260,
       "availability": "unknown"
     },
     {
       "name": "Day Camp Week 3 (4-day week, no camp Fri July 3)",
       "start_date": "2026-06-29",
       "end_date": "2026-07-02",
-      "price": 178,
+      "price": 208,
       "availability": "unknown"
     },
     {
       "name": "Day Camp Week 4",
       "start_date": "2026-07-06",
       "end_date": "2026-07-10",
-      "price": 230,
+      "price": 260,
       "availability": "unknown"
     },
     {
       "name": "Day Camp Week 5",
       "start_date": "2026-07-13",
       "end_date": "2026-07-17",
-      "price": 230,
+      "price": 260,
       "availability": "unknown"
     },
     {
       "name": "Day Camp Week 6",
       "start_date": "2026-07-20",
       "end_date": "2026-07-24",
-      "price": 230,
+      "price": 260,
       "availability": "unknown"
     },
     {
       "name": "Day Camp Week 7",
       "start_date": "2026-07-27",
       "end_date": "2026-07-31",
-      "price": 230,
+      "price": 260,
       "availability": "unknown"
     },
     {
       "name": "Day Camp Week 8",
       "start_date": "2026-08-03",
       "end_date": "2026-08-07",
-      "price": 230,
+      "price": 260,
       "availability": "unknown"
     },
     {
       "name": "Day Camp Week 9",
       "start_date": "2026-08-10",
       "end_date": "2026-08-14",
-      "price": 230,
+      "price": 260,
       "availability": "unknown"
     },
     {
       "name": "Day Camp Week 10",
       "start_date": "2026-08-17",
       "end_date": "2026-08-21",
-      "price": 230,
+      "price": 260,
       "availability": "unknown"
     },
     {
-      "name": "Lifeguard/Leader in Training (LG/LIT)",
+      "name": "Lifeguard/Leader in Training (LG/LIT), ages 12-14, 2 weeks",
       "start_date": "2026-07-06",
-      "end_date": "2026-07-12",
-      "price": 490,
+      "end_date": "2026-07-17",
+      "price": 550,
       "availability": "unknown"
     },
     {
-      "name": "Counselor in Training (CIT)",
+      "name": "Counselor in Training (CIT), ages 13-14, 4 weeks",
       "start_date": "2026-07-20",
       "end_date": "2026-08-14",
-      "price": 680,
+      "price": 780,
       "availability": "unknown"
     }
   ],
   "sources": [
     {
       "url": "https://kvymca.org/camp-programs",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
         "website_url",
         "registration_url",
         "phone",
+        "street_address",
         "city",
         "state",
+        "zip",
         "camp_type",
+        "gender_policy",
         "primary_categories",
         "activities",
         "age_min",
@@ -142,27 +145,27 @@
         "grade_min",
         "grade_max",
         "description_short",
+        "price_per",
+        "financial_aid"
+      ]
+    },
+    {
+      "url": "https://kvymca.org/files/2026/06/Camp_KV_Brochure_26-2_(5).pdf",
+      "checked": "2026-11-13",
+      "fields": [
+        "email",
+        "price_per_week",
         "price_min",
         "price_max",
-        "price_per_week",
-        "price_per",
-        "financial_aid",
+        "refund_policy_summary",
         "swim_waterfront_notes",
         "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
-    },
-    {
-      "url": "https://www.census.gov/geographies/reference-files/time-series/geo/relationship-files.2020.html",
-      "checked": "2026-10-14",
-      "fields": [
-        "zip"
-      ],
-      "note": "Readfield, ME sits inside one ZIP code (2020 Census ZCTA relationship file)"
+      "note": "2026 Summer Guide: weekly theme dates, LG/LIT and CIT dates, rates, deposit"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://kvymca.org/camp-programs",
       "kind": "html",
@@ -242,6 +245,28 @@
         "quote": "When: July 20th - August 14th"
       }
     ],
-    "errors": []
-  }
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://kvymca.org/camp-programs",
+        "https://kvymca.org/files/2026/06/Camp_KV_Brochure_26-2_(5).pdf"
+      ],
+      "changes": [
+        "Added street address 916 Main Street, Readfield, ME 04355 from the camp's directions link on the programs page; ZIP now comes from that page instead of the Census file.",
+        "Added gender_policy coed (page says co-ed day camp).",
+        "Prices now use the standard non-member rates ($260 a week, $208 for the 4-day week, $550 LG/LIT, $780 CIT); the brochure says Y members get $30 off each session.",
+        "Each of the 10 weeks now comes from the brochure's dated week list, not worked out from the season range.",
+        "LG/LIT end date changed from July 12 to July 17: the brochure calls it a 2 week program July 6 to 17; the web page says July 6 to 12.",
+        "Added the questions email from the brochure (jennifer@kvymca.org) and the $50 non-refundable deposit per week.",
+        "Dropped the acreage from the description: the page says 23 acres, the brochure says 70.",
+        "Season stays 2026; no 2027 dates or prices are posted."
+      ],
+      "open_questions": []
+    }
+  },
+  "street_address": "916 Main Street",
+  "gender_policy": "coed",
+  "email": "jennifer@kvymca.org",
+  "refund_policy_summary": "Each week you register for needs a $50 non-refundable deposit. You then pay in full at registration, in full before camp starts, or weekly."
 }

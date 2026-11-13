@@ -3,34 +3,34 @@
   "name": "Agassiz Village Summer Camp",
   "operator_name": "Agassiz Village",
   "website_url": "https://www.agassizvillage.org/summercamp",
-  "registration_url": "https://agassizvillage.campbrainregistration.com",
+  "registration_url": null,
   "phone": "781-860-0200",
   "street_address": "71 Agassiz Village Road",
   "city": "Poland",
   "state": "ME",
   "zip": "04274",
   "camp_type": "sleepaway",
-  "description_short": "Agassiz Village is a nonprofit youth development organization. It runs a summer camp in Poland, Maine, for children from underserved communities, and the camp's 2026 sessions ran Sunday to Thursday over about two weeks.",
-  "season_year": 2026,
+  "description_short": "Nonprofit overnight camp on Thompson Lake in Poland, Maine, for children from underserved communities. Campers ages 8-13 spend 11 days swimming, canoeing, on the ropes course, in arts and sports; teens 14-17 join the iThrive leadership program. Scholarships cover most of the cost, and transportation and meals are included.",
+  "season_year": 2027,
   "sessions": [
     {
       "name": "Session 1",
-      "start_date": "2026-06-28",
-      "end_date": "2026-07-09",
+      "start_date": "2027-06-27",
+      "end_date": "2027-07-07",
       "price": null,
       "availability": "unknown"
     },
     {
       "name": "Session 2",
-      "start_date": "2026-07-12",
-      "end_date": "2026-07-23",
+      "start_date": "2027-07-11",
+      "end_date": "2027-07-21",
       "price": null,
       "availability": "unknown"
     },
     {
       "name": "Session 3",
-      "start_date": "2026-07-26",
-      "end_date": "2026-08-06",
+      "start_date": "2027-07-25",
+      "end_date": "2027-08-04",
       "price": null,
       "availability": "unknown"
     }
@@ -38,12 +38,11 @@
   "sources": [
     {
       "url": "https://www.agassizvillage.org/summercamp",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
         "website_url",
-        "registration_url",
         "phone",
         "street_address",
         "city",
@@ -51,13 +50,19 @@
         "zip",
         "camp_type",
         "description_short",
+        "age_min",
+        "age_max",
+        "activities",
+        "financial_aid",
+        "transportation",
+        "meals_included",
+        "swim_waterfront_notes",
         "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.agassizvillage.org/summercamp",
       "kind": "html",
@@ -107,6 +112,34 @@
         "quote": "SESSION 3: Sunday, July 26 - Thursday, August 6"
       }
     ],
-    "errors": []
-  }
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.agassizvillage.org/summercamp"
+      ],
+      "changes": [
+        "Replaced the 2026 sessions with the posted 2027 dates: June 27-July 7, July 11-21, July 25-August 4 (Sunday to Wednesday, 11 days); season_year 2027",
+        "Removed registration_url (the CampBrain link is not on the camp's page; the page's only step is a Camper Interest Form, which it says is not registration)",
+        "Added ages 8-17 (Overnight Summer Camp ages 8-13, iThrive teen leadership ages 14-17), activities, financial aid, transportation and meals from the page",
+        "Confirmed camp_type sleepaway (page says Overnight Summer Camp), camp address 71 Agassiz Village Road, Poland, ME 04274, phone 781-860-0200",
+        "Rewrote description without the stale 2026 wording",
+        "Left prices null: the page gives only the true cost (about $3,200 per camper) and says scholarships cover 90-100%, no family price"
+      ],
+      "open_questions": []
+    }
+  },
+  "age_min": 8,
+  "age_max": 17,
+  "activities": [
+    "Swimming",
+    "Canoeing",
+    "Ropes course",
+    "Arts",
+    "Sports"
+  ],
+  "financial_aid": true,
+  "transportation": true,
+  "meals_included": true,
+  "swim_waterfront_notes": "400+ acre campus with two miles of waterfront on Thompson Lake."
 }
