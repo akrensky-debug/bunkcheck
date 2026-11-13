@@ -15,7 +15,7 @@ repeat them.
   in and script the assistant without limit, up to ten Opus calls per message. Branch
   `claude/agent-spend-limits` caps it: per address, per family, per day, and for everyone.
 - **Every per-IP limit could be skipped** by sending a new `X-Forwarded-For` header each time.
-  Branch `claude/trusted-client-ip` reads only the header Railway sets.
+  PR #77 reads only the header Railway sets.
 - **Anyone can mark any camp "Claimed by the camp"** with their own email address, and the same
   request removes a "Verified by our team" mark. That is now the top open gap. It isn't a
   money risk; it breaks the trust promise parents rely on.
@@ -57,7 +57,7 @@ Auth terms:
 - **Link** means the token in the URL is the key.
 - **Secret** means a shared secret header compared in constant time.
 
-Limits marked *new* come from the two branches above. Everything else is on `main` today.
+Limits marked *new* come from #77 and #78. Everything else is on `main` today.
 
 ### The assistant and families
 
@@ -114,9 +114,9 @@ Limits marked *new* come from the two branches above. Everything else is on `mai
 | `POST /internal/cron/tick`, `/internal/*/run` (4 routes) | Secret (`BOOKING_CRON_SECRET`, `REMINDER_CRON_SECRET`) | None | Off when the secret is unset |
 | `POST /internal/owner-mail`, `/internal/inquiry-mail` | Secret (`OWNER_INBOUND_SECRET`, `INQUIRY_INBOUND_SECRET`) | None | Off when the secret is unset |
 
-## What the two branches fix
+## What #77 and #78 fix
 
-### Gap 1: the assistant's spend (`claude/agent-spend-limits`)
+### Gap 1: the assistant's spend (#78)
 
 Requests are cheap to refuse and Opus calls are not, so the limits are on money as well as
 requests. Before a chat starts, and again after every model call:
@@ -143,7 +143,7 @@ At $4 per million input tokens and $20 per million output, a typical message (tw
 calls) costs a few cents, so $1 is a real trial and $5 is a heavy day of planning. Those two
 numbers should move once we see real usage in `ai_spend_daily`.
 
-### Gap 2: the caller's address (`claude/trusted-client-ip`)
+### Gap 2: the caller's address (#77)
 
 Railway's edge sets `X-Real-IP` to the address that connected to it ([Railway, "Specs &
 Limits", request headers](https://docs.railway.com/networking/public-networking/specs-and-limits)).
