@@ -12,15 +12,24 @@
   "primary_categories": [
     "sports",
     "arts",
-    "nature"
+    "adventure"
   ],
   "grade_min": 2,
-  "description_short": "An overnight summer camp in Piermont, New Hampshire, built mainly around a seven-week full summer, with shorter first and second sessions for some age groups. The site lists athletics, arts, adventure and water sports.",
+  "description_short": "A coed overnight summer camp in Piermont, New Hampshire, built mainly around a seven-week full summer, with shorter first and second sessions for some age groups. The program mixes athletics, arts, adventure and water sports.",
   "activities": [
     "Athletics",
     "Arts",
     "Adventure",
-    "Water Sports"
+    "Water Sports",
+    "Ceramics",
+    "Woodworking",
+    "Crafts",
+    "Drama",
+    "Music",
+    "Ropes courses",
+    "Hiking",
+    "Whitewater rafting",
+    "Overnight camping trips"
   ],
   "price_min": 9400,
   "price_max": 17600,
@@ -51,7 +60,7 @@
   "sources": [
     {
       "url": "https://www.campwalt.com/about/sessions-enrollment/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "website_url",
@@ -62,19 +71,31 @@
         "state",
         "zip",
         "camp_type",
-        "primary_categories",
-        "activities",
         "grade_min",
         "description_short",
         "price_min",
         "price_max",
         "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
+    },
+    {
+      "url": "https://www.campwalt.com/about/program-activities/",
+      "checked": "2026-11-13",
+      "fields": [
+        "primary_categories",
+        "activities"
+      ]
+    },
+    {
+      "url": "https://www.campwalt.com/about/faqs/",
+      "checked": "2026-11-13",
+      "fields": [
+        "gender_policy"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.campwalt.com/about/sessions-enrollment/",
       "kind": "html",
@@ -119,6 +140,23 @@
         "quote": "Athletics Arts Adventure Water Sports"
       }
     ],
-    "errors": []
-  }
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.campwalt.com/about/sessions-enrollment/",
+        "https://www.campwalt.com/about/program-activities/",
+        "https://www.campwalt.com/about/faqs/"
+      ],
+      "changes": [
+        "Confirmed Summer 2027 dates and prices for Full Summer, First and Second Session on the sessions page.",
+        "Changed primary_categories from sports/arts/nature to sports/arts/adventure; the program page names athletics, arts and adventure, not nature.",
+        "Expanded activities from the program page (ceramics, woodworking, drama, music, ropes courses, hikes, whitewater rafting, overnight trips).",
+        "Added gender_policy coed from the FAQ (400 campers, equally divided between boys and girls).",
+        "Moved sources to the pages that show each field."
+      ],
+      "open_questions": []
+    }
+  },
+  "gender_policy": "coed"
 }

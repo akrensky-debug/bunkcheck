@@ -2,7 +2,7 @@
   "slug": "bch-camp-barbara-c-harris-camp-greenfield",
   "name": "BCH Camp (Barbara C. Harris Camp)",
   "operator_name": "Barbara C. Harris Camp & Conference Center (Episcopal Diocese of Massachusetts)",
-  "website_url": "https://bchcenter.org/bchcamp/",
+  "website_url": "https://bchcenter.org/summer-camp/",
   "registration_url": "http://bchcamp.campbrainregistration.com/",
   "email": "info@bchcenter.org",
   "phone": "(603) 547-3400",
@@ -17,117 +17,105 @@
   ],
   "grade_min": 0,
   "grade_max": 12,
-  "description_short": "Episcopal overnight camp on Otter Lake in Greenfield, NH, with sessions for kindergarten through 12th grade plus a family camp weekend. Activities include boating, fishing, archery, a ropes course, rock climbing, arts and crafts, and daily faith activities.",
+  "description_short": "Episcopal overnight camp on Otter Lake in Greenfield, NH, with a Mini Camp for kids who have completed K to 3rd grade, three youth weeks and a High School Camp for 9th to 12th graders. Campers boat, swim in the lake, do archery, basketball, arts and crafts and the challenge course, with chapel and worship each day.",
   "activities": [
-    "archery",
-    "ropes course",
-    "challenge course",
     "boating",
-    "canoeing",
-    "fishing",
-    "rock climbing",
+    "swimming in the lake",
+    "archery",
+    "basketball",
     "arts and crafts",
-    "swimming",
-    "all-camp games",
-    "worship"
+    "challenge course",
+    "games in the gym",
+    "chapel and evening worship",
+    "Rock Out Sesh talent show and dance party"
   ],
-  "price_min": 150,
-  "price_max": 780,
   "financial_aid": true,
+  "meals_included": true,
+  "refund_policy_summary": "Every registration needs a $250 deposit that is not refunded. Cancel 30 or more days ahead and all other fees are refunded or moved to another week; cancel within 30 days and nothing is refunded, except for illness or a family emergency requested in writing.",
   "special_needs_notes": "The page has an inclusion statement saying people of all abilities are welcome. It does not describe any specific accommodations.",
-  "swim_waterfront_notes": "Camp has a waterfront on Otter Lake; the page mentions boating, fishing, canoeing and swimming. It does not describe swim tests or lifeguard details.",
-  "season_year": 2026,
+  "swim_waterfront_notes": "Campers swim in Otter Lake and go boating from the camp waterfront. The camp's pages don't describe swim tests or lifeguarding.",
+  "season_year": 2027,
   "sessions": [
     {
-      "name": "Family Camp (all ages; per person, kids under 5 free; $250-$350/person by housing)",
-      "start_date": "2026-06-25",
-      "end_date": "2026-06-28",
+      "name": "Mini Camp (completed K to 3rd grade)",
+      "start_date": "2027-06-28",
+      "end_date": "2027-06-30",
       "price": null,
       "availability": "unknown"
     },
     {
-      "name": "High School Camp (rising grades 9-12)",
-      "start_date": "2026-06-28",
-      "end_date": "2026-07-03",
-      "price": 780,
+      "name": "High School Camp",
+      "start_date": "2027-07-04",
+      "end_date": "2027-07-09",
+      "price": null,
       "availability": "unknown"
     },
     {
-      "name": "Mini Camp (grades K-3, 3 days/2 nights)",
-      "start_date": "2026-07-08",
-      "end_date": "2026-07-10",
-      "price": 330,
+      "name": "Youth Overnight Session 1",
+      "start_date": "2027-07-18",
+      "end_date": "2027-07-23",
+      "price": null,
       "availability": "unknown"
     },
     {
-      "name": "Youth Camp Session One (rising grades 2-10)",
-      "start_date": "2026-07-12",
-      "end_date": "2026-07-17",
-      "price": 780,
+      "name": "Youth Overnight Session 2",
+      "start_date": "2027-07-25",
+      "end_date": "2027-07-30",
+      "price": null,
       "availability": "unknown"
     },
     {
-      "name": "Youth Camp Session Two (rising grades 2-10)",
-      "start_date": "2026-07-19",
-      "end_date": "2026-07-24",
-      "price": 780,
-      "availability": "unknown"
-    },
-    {
-      "name": "Youth Camp Session Three (rising grades 2-10)",
-      "start_date": "2026-07-26",
-      "end_date": "2026-07-31",
-      "price": 780,
-      "availability": "unknown"
-    },
-    {
-      "name": "Intersession Weekend 1 (for multi-session campers)",
-      "start_date": "2026-07-16",
-      "end_date": "2026-07-19",
-      "price": 150,
-      "availability": "unknown"
-    },
-    {
-      "name": "Intersession Weekend 2 (for multi-session campers)",
-      "start_date": "2026-07-24",
-      "end_date": "2026-07-26",
-      "price": 150,
+      "name": "Youth Overnight Session 3",
+      "start_date": "2027-08-01",
+      "end_date": "2027-08-06",
+      "price": null,
       "availability": "unknown"
     }
   ],
   "sources": [
     {
-      "url": "https://bchcenter.org/bchcamp/",
-      "checked": "2026-10-13",
+      "url": "https://bchcenter.org/summer-camp/",
+      "checked": "2026-11-13",
       "fields": [
         "name",
-        "operator_name",
         "website_url",
-        "registration_url",
-        "email",
-        "phone",
-        "street_address",
-        "city",
-        "state",
-        "zip",
-        "camp_type",
         "primary_categories",
         "activities",
         "grade_min",
         "grade_max",
         "description_short",
-        "price_min",
-        "price_max",
-        "financial_aid",
         "special_needs_notes",
         "swim_waterfront_notes",
-        "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+        "sessions",
+        "camp_type"
+      ]
+    },
+    {
+      "url": "https://bchcenter.org/",
+      "checked": "2026-11-13",
+      "fields": [
+        "operator_name",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip"
+      ]
+    },
+    {
+      "url": "https://bchcenter.org/wp-content/uploads/2026/09/26OCParentGuide-1.pdf",
+      "checked": "2026-11-13",
+      "fields": [
+        "registration_url",
+        "financial_aid",
+        "meals_included",
+        "refund_policy_summary"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://bchcenter.org/bchcamp/",
       "kind": "html",
@@ -174,6 +162,27 @@
         "quote": "Intersession Weekends, July 16-19th and/or 24-26th. $150 per camper, per weekend."
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://bchcenter.org/bchcamp/",
+        "https://bchcenter.org/",
+        "https://bchcenter.org/summer-camp/",
+        "https://bchcenter.org/summer-camp/new-to-camp/",
+        "https://bchcenter.org/wp-content/uploads/2026/09/26OCParentGuide-1.pdf"
+      ],
+      "changes": [
+        "The old camp page (bchcenter.org/bchcamp/) now returns 404; moved website_url to https://bchcenter.org/summer-camp/.",
+        "Replaced the 2026 sessions with the 2027 dates now posted: Mini Camp 28 to 30 June, High School Camp 4 to 9 July, Youth Sessions 18 to 23 July, 25 to 30 July and 1 to 6 August. Season year is now 2027.",
+        "Removed price_min and price_max and the session prices: the camp has not posted 2027 prices.",
+        "Dropped Family Camp and the Intersession Weekends, which are not on the 2027 list.",
+        "Trimmed activities to what the camp's pages name now (boating, lake swimming, archery, basketball, arts and crafts, challenge course, chapel); removed fishing, canoeing, ropes course and rock climbing, which no current page mentions.",
+        "Added the refund policy (with the $250 deposit that is not refunded), meals and the Campership aid from the camp's Overnight Parent Guide (2026 edition, posted September 2026).",
+        "Kept grades 0 to 12: Mini Camp is for kids who completed K to 3rd grade and High School Camp is for 9th to 12th graders. The page does not give grades for the 2027 youth sessions.",
+        "Did not add aca_accredited: the camp says it is ACA accredited, but checking that needs the ACA's own site, which is outside this check."
+      ],
+      "open_questions": []
+    }
   }
 }

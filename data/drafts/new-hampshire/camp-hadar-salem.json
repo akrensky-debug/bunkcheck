@@ -10,74 +10,115 @@
   "state": "NH",
   "zip": "03079",
   "camp_type": "day",
+  "primary_categories": [
+    "general",
+    "swimming",
+    "sports",
+    "arts"
+  ],
+  "activities": [
+    "Red Cross swim lessons",
+    "free swim",
+    "canoeing",
+    "kayaking",
+    "paddleboats",
+    "waterbikes",
+    "paddle boards",
+    "softball",
+    "archery",
+    "basketball",
+    "tennis",
+    "street hockey",
+    "beach volleyball",
+    "soccer",
+    "gaga",
+    "music",
+    "crafts",
+    "dance",
+    "drama",
+    "Jewish songs and Israeli dance",
+    "electives (chugim)"
+  ],
+  "gender_policy": "coed",
   "age_min": 5,
   "age_max": 15,
-  "description_short": "Co-ed day camp for ages 5-15 on 17 acres of woods and sandy beach on Captain's Pond in Salem, New Hampshire. Camp runs 9:00 am to 4:00 pm, with optional busing from Massachusetts for an extra fee.",
+  "grade_min": 0,
+  "grade_max": 10,
+  "description_short": "Co-ed day camp for ages 5-15 (entering kindergarten through 10th grade CITs) on 17 acres of woods and sandy beach on Captain's Pond in Salem, NH. Weekly sessions run 9:00 am to 4:00 pm, with Red Cross swim lessons, boating, sports and arts, and optional busing from Chelmsford, Andover and Peabody, MA for $50 a week.",
+  "religious_affiliation": "Jewish",
+  "price_per_week": 419,
+  "price_min": 419,
+  "price_max": 419,
+  "price_per": "week",
+  "financial_aid": true,
+  "extended_care": false,
   "transportation": true,
-  "swim_waterfront_notes": "Camp is on a sandy beach on Captain's Pond. The page does not describe swim instruction or waterfront supervision.",
+  "meals_included": false,
+  "refund_policy_summary": "A $100 deposit per week, per child, is due with the application. After May 1, 2026 the camp keeps the deposit; from June 1, 2026 there are no refunds or credits. Balances were due in full by May 30, 2026.",
+  "swim_waterfront_notes": "Sandy beach on Captain's Pond. The camp runs a Red Cross swim instruction program plus free swim, and boating in canoes, kayaks, paddleboats, waterbikes and paddle boards.",
   "season_year": 2026,
   "sessions": [
     {
       "name": "Week 1",
       "start_date": "2026-06-22",
       "end_date": "2026-06-26",
-      "price": null,
+      "price": 419,
       "availability": "unknown"
     },
     {
       "name": "Week 2",
       "start_date": "2026-06-29",
       "end_date": "2026-07-03",
-      "price": null,
+      "price": 419,
       "availability": "unknown"
     },
     {
       "name": "Week 3",
       "start_date": "2026-07-06",
       "end_date": "2026-07-10",
-      "price": null,
+      "price": 419,
       "availability": "unknown"
     },
     {
       "name": "Week 4",
       "start_date": "2026-07-13",
       "end_date": "2026-07-17",
-      "price": null,
+      "price": 419,
       "availability": "unknown"
     },
     {
       "name": "Week 5",
       "start_date": "2026-07-20",
       "end_date": "2026-07-24",
-      "price": null,
+      "price": 419,
       "availability": "unknown"
     },
     {
       "name": "Week 6",
       "start_date": "2026-07-27",
       "end_date": "2026-07-31",
-      "price": null,
+      "price": 419,
       "availability": "unknown"
     },
     {
       "name": "Week 7",
       "start_date": "2026-08-03",
       "end_date": "2026-08-07",
-      "price": null,
+      "price": 419,
       "availability": "unknown"
     },
     {
       "name": "Week 8",
       "start_date": "2026-08-10",
       "end_date": "2026-08-14",
-      "price": null,
+      "price": 419,
       "availability": "unknown"
     }
   ],
   "sources": [
     {
       "url": "https://www.camphadar.org/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "website_url",
@@ -91,16 +132,59 @@
         "camp_type",
         "age_min",
         "age_max",
-        "description_short",
-        "transportation",
-        "swim_waterfront_notes",
+        "gender_policy",
+        "description_short"
+      ]
+    },
+    {
+      "url": "https://www.camphadar.org/programs/registration-information-and-fees/",
+      "checked": "2026-11-13",
+      "fields": [
+        "price_per_week",
+        "price_min",
+        "price_max",
+        "price_per",
+        "financial_aid",
+        "refund_policy_summary"
+      ]
+    },
+    {
+      "url": "https://www.camphadar.org/programs/dates/",
+      "checked": "2026-11-13",
+      "fields": [
         "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
+    },
+    {
+      "url": "https://www.camphadar.org/programs/daily-programming/",
+      "checked": "2026-11-13",
+      "fields": [
+        "grade_min",
+        "grade_max",
+        "primary_categories",
+        "activities",
+        "swim_waterfront_notes"
+      ]
+    },
+    {
+      "url": "https://www.camphadar.org/current-families/information-for-parents/",
+      "checked": "2026-11-13",
+      "fields": [
+        "religious_affiliation",
+        "extended_care",
+        "meals_included"
+      ]
+    },
+    {
+      "url": "https://www.camphadar.org/current-families/transportation-information/",
+      "checked": "2026-11-13",
+      "fields": [
+        "transportation"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.camphadar.org/",
       "kind": "html",
@@ -130,6 +214,31 @@
       "Session availability"
     ],
     "low_confidence": [],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.camphadar.org/",
+        "https://www.camphadar.org/programs/registration-information-and-fees/",
+        "https://www.camphadar.org/programs/dates/",
+        "https://www.camphadar.org/programs/daily-programming/",
+        "https://www.camphadar.org/current-families/information-for-parents/",
+        "https://www.camphadar.org/current-families/transportation-information/"
+      ],
+      "changes": [
+        "Confirmed the eight 2026 weeks (June 22 to August 14, 2026) on the dates page and set each at the $419/week 2026 rate from the fees page",
+        "Added price_per_week, price_min, price_max 419 and price_per week (2026 rate for campers and CITs)",
+        "Added refund policy: $100/week deposit, kept after May 1, 2026; no refunds or credits from June 1, 2026",
+        "Added grades K to 10 from the unit list (Negev K-1 through CIT entering 10th grade), co-ed, activities, categories and Red Cross swim program notes",
+        "Added religious_affiliation Jewish (FAQ: 'an independent non-profit Jewish day camp', open to all faiths)",
+        "Set extended_care false (FAQ: no extended day option for 2026) and meals_included false (campers bring lunch)",
+        "Set financial_aid true (fees page: scholarships awarded by Camp Hadar are applied to the balance)",
+        "Added the $50/week bus fee and bus towns to the description; transportation sourced to the transportation page"
+      ],
+      "open_questions": [
+        "The site still says LIT is for 8th and 9th graders in one place and 7th to 9th in another; grade range uses K to 10 so this does not change the listing",
+        "Only 2026 dates and rates are posted; 2027 not yet published"
+      ]
+    }
   }
 }

@@ -125,7 +125,7 @@
   "sources": [
     {
       "url": "https://camp.mvymca.org/camp/camp-otter/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -153,13 +153,14 @@
         "refund_policy_summary",
         "special_needs_notes",
         "swim_waterfront_notes",
-        "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+        "sessions",
+        "gender_policy"
+      ]
     }
   ],
+  "gender_policy": "coed",
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://camp.mvymca.org/camp/camp-otter/",
       "kind": "html",
@@ -186,6 +187,18 @@
         "quote": "Camp Otter offers a rare setting for appreciation of the outdoors."
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://camp.mvymca.org/camp/camp-otter/"
+      ],
+      "changes": [
+        "Checked every field against the Camp Otter page (rates, dates, activities, transportation, financial aid, FAQ sections): address, phone, email, ages 6-13, $405 weekly rate, ten 2027 weeks June 21 to August 27, refund terms and bus towns all match.",
+        "Added gender_policy coed (page: Day Camp for Boys and Girls Ages 6-13).",
+        "Listed season_year under the source; refreshed the checked date."
+      ],
+      "open_questions": []
+    }
   }
 }

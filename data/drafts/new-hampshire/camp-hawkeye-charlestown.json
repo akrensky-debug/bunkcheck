@@ -11,20 +11,39 @@
   "zip": "03603",
   "camp_type": "sleepaway",
   "primary_categories": [
-    "nature"
+    "outdoor",
+    "sports",
+    "arts"
   ],
-  "description_short": "Overnight summer camp in Charlestown, NH, with sessions of 2, 4, 6 or 8 weeks. Tuition covers everything: program materials, out-of-camp hikes and trips, overnights, laundry, food and housing.",
   "activities": [
-    "Hiking",
-    "Sleep outs",
-    "Out-of-camp trips",
-    "Special events"
+    "archery",
+    "adventure course",
+    "swimming",
+    "climbing tower",
+    "zip line",
+    "arts & crafts",
+    "bugs & dirt (nature)",
+    "gaga",
+    "multimedia",
+    "athletics",
+    "ceramics",
+    "drama",
+    "outdoor skills",
+    "Iron Chef (cooking)",
+    "weekly hiking or boating trip",
+    "cabin sleep outs"
   ],
+  "gender_policy": "coed",
+  "age_min": 7,
+  "age_max": 17,
+  "description_short": "Small, gender-inclusive overnight camp for ages 7-17 in Charlestown, NH, with sessions of 2, 4, 6 or 8 weeks. Tuition covers everything: program materials, out-of-camp hikes and trips, overnights, laundry, food and housing.",
   "price_min": 3000,
   "price_max": 11400,
   "financial_aid": true,
+  "transportation": true,
   "meals_included": true,
   "refund_policy_summary": "You must cancel in writing to Jess@camphawkeye.com. Before January 1, all tuition is refunded, including the deposit. After January 1, the deposit is not refunded. After April 1, half of the tuition is not refunded. After June 1, none of the tuition is refunded.",
+  "swim_waterfront_notes": "A 2,600 square foot pool and the stream-fed Lily Pond, with a rope swing. Daily recreational and instructional swim periods; certified lifeguards oversee all waterfront activities.",
   "season_year": 2027,
   "sessions": [
     {
@@ -93,11 +112,20 @@
   ],
   "sources": [
     {
-      "url": "https://www.camphawkeye.com/datesandrates",
-      "checked": "2026-10-13",
+      "url": "https://www.camphawkeye.com",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "website_url",
+        "age_min",
+        "age_max",
+        "gender_policy"
+      ]
+    },
+    {
+      "url": "https://www.camphawkeye.com/datesandrates",
+      "checked": "2026-11-13",
+      "fields": [
         "registration_url",
         "email",
         "phone",
@@ -106,21 +134,34 @@
         "state",
         "zip",
         "camp_type",
-        "primary_categories",
-        "activities",
         "description_short",
         "price_min",
         "price_max",
-        "meals_included",
         "financial_aid",
         "refund_policy_summary",
-        "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+        "sessions",
+        "meals_included"
+      ]
+    },
+    {
+      "url": "https://www.camphawkeye.com/activities",
+      "checked": "2026-11-13",
+      "fields": [
+        "primary_categories",
+        "activities",
+        "swim_waterfront_notes"
+      ]
+    },
+    {
+      "url": "https://www.camphawkeye.com/familyfaq",
+      "checked": "2026-11-13",
+      "fields": [
+        "transportation"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.camphawkeye.com/datesandrates",
       "kind": "html",
@@ -164,6 +205,27 @@
         "quote": "CLICK TO ENROLL NOW!"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.camphawkeye.com",
+        "https://www.camphawkeye.com/datesandrates",
+        "https://www.camphawkeye.com/activities",
+        "https://www.camphawkeye.com/familyfaq",
+        "https://hawkeye.campintouch.com/ui/unrestricted/pricing/DatesAndRates"
+      ],
+      "changes": [
+        "Confirmed all nine 2027 sessions and prices ($3,000 / $5,800 / $8,600 / $11,400), deposit and cancellation terms on the Dates & Rates page",
+        "Added ages 7-17 and coed (home page: 'small overnight camp for all humans ages 7-17', gender-identity inclusive)",
+        "Replaced the four generic activities with the camp's 14 activity areas plus weekly trips and sleep outs; categories now outdoor, sports, arts",
+        "Added swim notes: pool and Lily Pond, instructional and recreational swim, certified lifeguards",
+        "Set transportation true (FAQ: extra-fee transport from Logan, South Station, Manchester airport and Concord bus station)",
+        "Moved name, website and ages to the home page source; meals_included stays on Dates & Rates (all-inclusive tuition covers food)"
+      ],
+      "open_questions": [
+        "The $6,000 'Mid Summer Session' has no dates on the camp's pages (the registration system lists it by grade group but shows no dates), so it is left out"
+      ]
+    }
   }
 }

@@ -33,6 +33,9 @@
     "Wagon rides",
     "Campfire"
   ],
+  "price_min": 635,
+  "price_max": 685,
+  "price_per": "session",
   "financial_aid": true,
   "meals_included": true,
   "special_needs_notes": "You can share allergies and dietary restrictions during registration, and the camp says it works hard to accommodate them. Nurses are on site.",
@@ -43,21 +46,21 @@
       "name": "Ascend Kids Camp (finishing grades 2-5)",
       "start_date": "2027-07-11",
       "end_date": "2027-07-15",
-      "price": null,
+      "price": 685,
       "availability": "unknown"
     },
     {
       "name": "Ascend Jr/Sr High Camp (finishing grades 6-12)",
       "start_date": "2027-07-18",
       "end_date": "2027-07-22",
-      "price": null,
+      "price": 685,
       "availability": "unknown"
     }
   ],
   "sources": [
     {
       "url": "https://www.monadnock.camp/summercamp/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -79,13 +82,15 @@
         "financial_aid",
         "special_needs_notes",
         "swim_waterfront_notes",
-        "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+        "sessions",
+        "price_min",
+        "price_max",
+        "price_per"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.monadnock.camp/summercamp/",
       "kind": "html",
@@ -120,6 +125,18 @@
         "quote": "For students finishing 6th-12th grade in Spring 2026."
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.monadnock.camp/summercamp/"
+      ],
+      "changes": [
+        "2027 prices are now posted: $635 per week before 30 April, $685 from 1 May, for both weeks. Set each session to $685 and added price_min 635, price_max 685, price per session.",
+        "Checked dates (Kids 11 to 15 July 2027, Jr/Sr High 18 to 22 July 2027), address, phone, email, registration link, meals, Camperships and nurses on site against the camp page; all match.",
+        "Kept grades 2 to 12 as the camp words them: the grade a camper is finishing. The page still says 'finishing ... in Spring 2026' next to the 2027 dates, which looks like a leftover year; the grade range itself is unchanged."
+      ],
+      "open_questions": []
+    }
   }
 }

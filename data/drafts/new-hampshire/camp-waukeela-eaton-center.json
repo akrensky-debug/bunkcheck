@@ -11,15 +11,35 @@
   "camp_type": "sleepaway",
   "primary_categories": [
     "sports",
-    "nature"
+    "arts",
+    "outdoor"
   ],
-  "description_short": "Overnight summer camp for girls in Eaton Center, New Hampshire, running since 1922. It offers two sessions of about 3½ weeks, a full summer, and 2-week sessions for first-time campers only.",
+  "description_short": "Overnight summer camp for girls on Crystal Lake near Eaton Center, New Hampshire, running since 1922. It offers two sessions of about 3½ weeks, a 7-week full summer, and 2-week sessions for first-time campers entering grades 3 to 5.",
   "activities": [
-    "Horseback riding",
-    "Rock climbing",
+    "Kayaking",
+    "Canoeing",
+    "Paddleboarding",
+    "Sailing",
     "Swimming",
+    "Synchronized swimming",
+    "Archery",
+    "Field sports",
+    "Tennis",
+    "Golf",
+    "Outdoor living skills",
+    "Arts and crafts",
+    "Pottery",
+    "Textiles",
+    "Drama",
+    "Dance",
+    "Film",
+    "Music",
     "Hiking",
-    "Theater"
+    "Outdoor camping",
+    "Whitewater canoeing",
+    "Horseback riding (extra cost)",
+    "Rock climbing (extra cost)",
+    "Junior lifeguard training"
   ],
   "price_min": 6000,
   "price_max": 12500,
@@ -74,7 +94,7 @@
   "sources": [
     {
       "url": "https://www.waukeela.com/camp-families-dates-rates",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "website_url",
@@ -85,21 +105,33 @@
         "state",
         "zip",
         "camp_type",
-        "primary_categories",
-        "activities",
-        "description_short",
+        "gender_policy",
         "price_min",
         "price_max",
         "transportation",
         "financial_aid",
         "refund_policy_summary",
         "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
+    },
+    {
+      "url": "https://www.waukeela.com/experience-activities-trips",
+      "checked": "2026-11-13",
+      "fields": [
+        "primary_categories",
+        "activities"
+      ]
+    },
+    {
+      "url": "https://www.waukeela.com/summer-programs",
+      "checked": "2026-11-13",
+      "fields": [
+        "description_short"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.waukeela.com/camp-families-dates-rates",
       "kind": "html",
@@ -142,6 +174,25 @@
         "quote": "riding, swimming, hiking"
       }
     ],
-    "errors": []
-  }
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.waukeela.com/camp-families-dates-rates",
+        "https://www.waukeela.com/experience-activities-trips",
+        "https://www.waukeela.com/experience-campus",
+        "https://www.waukeela.com/summer-programs"
+      ],
+      "changes": [
+        "Confirmed all six Summer 2027 sessions, dates and tuition on the dates and rates page (June 24, 2027 is a Thursday, so the year is right). Session B really does start July 5, overlapping Session A; that is what the camp posts.",
+        "Replaced activities taken from parent testimonials with the camp's own activities list (watersports, landsports, arts, performing arts, outdoor adventures, extras).",
+        "Changed primary_categories from sports/nature to sports/arts/outdoor to match that list.",
+        "Added gender_policy girls (dates page: 'your daughter', 'Waukeela girl'; sister-camp framing).",
+        "Description now says the 2-week sessions are for first-time campers entering grades 3 to 5, per the summer programs page.",
+        "Left street_address empty: the location page gives the drive-to address as 23 Brownfield Road, Madison, NH 03832, while the camp names its town as Eaton Center (PO 265). City kept as Eaton Center, ZIP 03832 matches both."
+      ],
+      "open_questions": []
+    }
+  },
+  "gender_policy": "girls"
 }

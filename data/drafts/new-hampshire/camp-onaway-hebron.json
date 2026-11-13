@@ -2,9 +2,9 @@
   "slug": "camp-onaway-hebron",
   "name": "Camp Onaway",
   "operator_name": "Camp Onaway",
-  "website_url": "https://camponaway.org/",
-  "registration_url": "https://camponaway.org/enroll-here/",
-  "email": "bpendergast@camponaway.org",
+  "website_url": "https://www.camponaway.org/",
+  "registration_url": "https://www.camponaway.org/enroll-here",
+  "email": "bbeckman@camponaway.org",
   "phone": "610-525-0676",
   "street_address": "27 Camp Onaway Drive",
   "city": "Hebron",
@@ -15,15 +15,27 @@
   "age_max": 15,
   "grade_min": 4,
   "grade_max": 11,
-  "description_short": "A traditional overnight summer camp for girls on Newfound Lake in Hebron, NH. The main program is a 7-week session for rising 5th–10th graders, and there are shorter sessions for younger and older campers.",
+  "description_short": "A traditional residential summer camp for girls ages 9 to 15 on Newfound Lake in Hebron, NH, since 1911. The main program is a 7-week session for rising 5th to 10th graders, with 3-week Wendies sessions for rising 4th graders.",
   "activities": [
-    "Trips",
+    "Swimming",
+    "Boating",
+    "Canoeing",
+    "Crew",
+    "Sailing",
+    "Tennis",
+    "Woodworking",
+    "Dance",
+    "Theatre",
+    "Music",
+    "Arts",
+    "Nature / Hiking",
+    "Wilderness trips",
     "Leadership programs"
   ],
   "price_min": 7600,
   "price_max": 12200,
   "financial_aid": true,
-  "swim_waterfront_notes": "Camp is on Newfound Lake. The page gives no details about swimming or the waterfront.",
+  "swim_waterfront_notes": "Camp is on Newfound Lake. Every camper has daily swimming instruction; campers progress through boating, then canoeing, and add crew in their final two years. Sailing is scheduled for all campers.",
   "season_year": 2027,
   "sessions": [
     {
@@ -50,13 +62,12 @@
   ],
   "sources": [
     {
-      "url": "https://camponaway.org/how-to-enroll/",
-      "checked": "2026-10-13",
+      "url": "https://www.camponaway.org/",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
         "website_url",
-        "registration_url",
         "email",
         "phone",
         "street_address",
@@ -64,23 +75,39 @@
         "state",
         "zip",
         "camp_type",
-        "activities",
         "age_min",
         "age_max",
         "grade_min",
         "grade_max",
-        "description_short",
+        "gender_policy",
+        "description_short"
+      ]
+    },
+    {
+      "url": "https://www.camponaway.org/enroll-here",
+      "checked": "2026-11-13",
+      "fields": [
+        "registration_url",
         "price_min",
         "price_max",
+        "price_per",
         "financial_aid",
-        "swim_waterfront_notes",
         "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
+    },
+    {
+      "url": "https://www.camponaway.org/activities",
+      "checked": "2026-11-13",
+      "fields": [
+        "activities",
+        "swim_waterfront_notes"
+      ]
     }
   ],
+  "gender_policy": "girls",
+  "price_per": "session",
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://camponaway.org/how-to-enroll/",
       "kind": "html",
@@ -128,6 +155,25 @@
         "quote": "Leadership Programs\n\nTrips"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://camponaway.org/how-to-enroll/ (404)",
+        "https://www.camponaway.org/",
+        "https://www.camponaway.org/enroll-here",
+        "https://www.camponaway.org/activities"
+      ],
+      "changes": [
+        "The old source page /how-to-enroll/ is gone (404); moved provenance to the homepage, the enroll page and the activities page.",
+        "Email changed from the inferred bpendergast@camponaway.org to bbeckman@camponaway.org, the address in the site footer (the director link on the enroll page is misspelled bpedergast@).",
+        "Registration URL and website now use www.camponaway.org (the old addresses redirect or 404).",
+        "Added gender_policy girls (homepage: residential summer camp for girls) and price_per session.",
+        "Activities now list the activities page: swimming, boating, canoeing, crew, sailing, tennis, woodworking, dance, theatre, music, arts, nature/hiking, plus wilderness trips and leadership programs.",
+        "Swim notes now say what the activities page states: daily swim instruction for every camper.",
+        "Checked 2027 dates and tuition on the enroll page: 7 weeks June 26 to August 15, $12,200; Wendies $7,600 each. OWLE (rising 11th graders, $7,600) has dates TBD and stays out of sessions."
+      ],
+      "open_questions": []
+    }
   }
 }

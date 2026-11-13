@@ -15,7 +15,7 @@
     "sports",
     "arts",
     "performing_arts",
-    "nature"
+    "outdoor"
   ],
   "grade_min": 1,
   "grade_max": 9,
@@ -72,7 +72,7 @@
   "sources": [
     {
       "url": "https://www.campwicosuta.com/dates-rates/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -85,22 +85,28 @@
         "state",
         "zip",
         "camp_type",
+        "gender_policy",
         "primary_categories",
         "activities",
-        "grade_min",
-        "grade_max",
         "description_short",
         "price_min",
         "price_max",
         "transportation",
         "refund_policy_summary",
         "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
+    },
+    {
+      "url": "https://www.campwicosuta.com/progressive-program/",
+      "checked": "2026-11-13",
+      "fields": [
+        "grade_min",
+        "grade_max"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.campwicosuta.com/dates-rates/",
       "kind": "html",
@@ -132,6 +138,22 @@
         "quote": "© Copyright Camp Wicosuta 2026"
       }
     ],
-    "errors": []
-  }
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.campwicosuta.com/dates-rates/",
+        "https://www.campwicosuta.com/progressive-program/"
+      ],
+      "changes": [
+        "Confirmed 2027 Session 1 and 2 ($10,350) and Explorers sessions ($7,125) with dates, the payment terms and the CAP cancellation rules on the dates and rates page.",
+        "Moved grade_min 1 and grade_max 9 to the progressive program page, which lists Oski (1st and 2nd grade) through Totem (9th grade).",
+        "Added gender_policy girls (page title 'Camp Wicosuta for Girls'; program page speaks of 'each girl').",
+        "Changed primary category nature to outdoor; the camp's menu names Outdoor Adventures, not nature study.",
+        "Email info@campwicosuta.com confirmed from the page footer."
+      ],
+      "open_questions": []
+    }
+  },
+  "gender_policy": "girls"
 }

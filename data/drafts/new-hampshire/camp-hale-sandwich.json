@@ -15,9 +15,6 @@
     "sports",
     "arts"
   ],
-  "age_min": 5,
-  "age_max": 17,
-  "description_short": "Overnight camp on Squam Lake in Sandwich, NH, run by Boston's United South End Settlements for Boston youth ages 5–17. It offers boys, girls and all-gender sessions, leadership programs for teens, and a 4-day Family Camp, with bus transport from Boston and fees on a sliding scale.",
   "activities": [
     "swimming",
     "canoeing",
@@ -36,8 +33,12 @@
     "hiking",
     "camping"
   ],
+  "age_min": 5,
+  "age_max": 17,
+  "description_short": "Overnight camp on Squam Lake in Sandwich, NH, run by Boston's United South End Settlements for Boston youth ages 5-17. It offers 2-week boys and girls sessions, a 7-day all-gender session, 4-week leadership programs for teens and a 4-day Family Camp, with bus pickup in Boston and fees on a sliding scale by household income.",
   "price_min": 100.82,
   "price_max": 2625,
+  "price_per": "session",
   "financial_aid": true,
   "transportation": true,
   "meals_included": true,
@@ -91,7 +92,7 @@
   "sources": [
     {
       "url": "https://www.uses.org/programs/camphale/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -115,13 +116,13 @@
         "financial_aid",
         "refund_policy_summary",
         "swim_waterfront_notes",
-        "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+        "sessions",
+        "price_per"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.uses.org/programs/camphale/",
       "kind": "html",
@@ -156,6 +157,22 @@
         "quote": "Co-Ed Session Rate$100.82"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.uses.org/programs/camphale/"
+      ],
+      "changes": [
+        "Re-checked every field on the camp page: Squam Lake, 92 Millbridge Rd., Sandwich, NH 03227, ages 5-17, rpoulin@uses.org, registration link, 2026 dates, activities, swim notes, non-refundable payments",
+        "Added price_per session: the sliding scale gives a per-session rate ($142 to $2,625 for 2 weeks, $100.82 to $1,863.75 for the 7-day co-ed session)",
+        "Description now names the 2-week single-gender sessions, the 7-day all-gender session and the 4-week LIT/CIT programs"
+      ],
+      "open_questions": [
+        "Sessions are boys-only, girls-only and one all-gender week, so gender_policy is left null",
+        "Only 2026 dates are posted (tab labelled '2026 Dates'); 2027 not yet published",
+        "Family Camp (July 23-26, 2026) is a family session, not a camper session; kept as listed on the page"
+      ]
+    }
   }
 }

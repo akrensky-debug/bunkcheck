@@ -2,7 +2,7 @@
   "slug": "camp-pasquaney-hebron",
   "name": "Camp Pasquaney",
   "operator_name": "Camp Pasquaney",
-  "website_url": "https://pasquaney.org",
+  "website_url": "https://pasquaney.org/",
   "registration_url": "https://pasquaney.org/future-families/how-to-enroll",
   "email": "office@pasquaney.org",
   "phone": "603-744-8043",
@@ -16,13 +16,21 @@
     "sports",
     "performing_arts"
   ],
-  "description_short": "Overnight summer camp in Hebron, New Hampshire, with a single season from June 26 to August 15, 2027. The calendar includes camping expeditions, a long hike, a theater play, crew races and a water sports weekend.",
+  "description_short": "A seven-week overnight summer camp for boys ages 11 to 16 on Newfound Lake in Hebron, NH, founded in 1895. The 2027 season runs June 26 to August 15 and includes camping expeditions, a long hike, a theater play, crew races and a water sports weekend.",
   "activities": [
+    "Baseball",
+    "Canoeing",
+    "Crew",
+    "Diving",
+    "Nature",
+    "Sailing",
+    "Woodshop",
+    "Swimming",
+    "Tennis",
+    "Water sports",
     "Camping expeditions",
     "Hiking",
-    "Theater",
-    "Crew",
-    "Water sports"
+    "Theater"
   ],
   "price_min": 11725,
   "price_max": 11725,
@@ -39,33 +47,60 @@
   ],
   "sources": [
     {
-      "url": "https://pasquaney.org/future-families/dates-rates",
-      "checked": "2026-10-13",
+      "url": "https://pasquaney.org/",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
         "website_url",
-        "registration_url",
+        "camp_type",
+        "gender_policy",
+        "age_min",
+        "age_max",
+        "description_short"
+      ]
+    },
+    {
+      "url": "https://pasquaney.org/future-families/dates-rates",
+      "checked": "2026-11-13",
+      "fields": [
         "email",
         "phone",
         "street_address",
         "city",
         "state",
         "zip",
-        "camp_type",
-        "primary_categories",
-        "activities",
-        "description_short",
         "price_min",
         "price_max",
+        "price_per",
         "financial_aid",
         "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
+    },
+    {
+      "url": "https://pasquaney.org/future-families/how-to-enroll",
+      "checked": "2026-11-13",
+      "fields": [
+        "registration_url"
+      ]
+    },
+    {
+      "url": "https://pasquaney.org/camp-life/activities",
+      "checked": "2026-11-13",
+      "fields": [
+        "primary_categories",
+        "activities",
+        "swim_waterfront_notes"
+      ]
     }
   ],
+  "gender_policy": "boys",
+  "age_min": 11,
+  "age_max": 16,
+  "price_per": "session",
+  "swim_waterfront_notes": "Camp is on a half mile of Newfound Lake shoreline. Each boy takes a series of swim tests; counsellors teach swimmers of all levels, and the diving raft has a springboard and a high dive.",
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://pasquaney.org/future-families/dates-rates",
       "kind": "html",
@@ -101,6 +136,26 @@
         "quote": "Camping Expeditions ... Crew Races ... Trustees Weekend Play"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://pasquaney.org/future-families/dates-rates",
+        "https://pasquaney.org/",
+        "https://pasquaney.org/future-families/how-to-enroll",
+        "https://pasquaney.org/camp-life/activities",
+        "https://pasquaney.org/camp-life/dorm-life",
+        "https://pasquaney.org/about/our-sister-camp"
+      ],
+      "changes": [
+        "Added gender_policy boys and ages 11 to 16 from the homepage (seven-week summer camp for boys, 11- to 16-year-olds).",
+        "Sleepaway confirmed: the homepage says seven-week camp and the Dorm Life page describes campers living in seven dorms.",
+        "Activities now follow the activities page (baseball, canoeing, crew, diving, nature, sailing, woodshop, swimming, tennis, water sports) plus expeditions, hiking and theater from the season calendar.",
+        "Added swim notes from the activities page and price_per session.",
+        "Checked the 2027 calendar (June 26 to August 15) and tuition $11,725 on the Dates & Rates page; financial aid is offered on the basis of need.",
+        "Split provenance across the homepage, Dates & Rates, How To Enroll and Activities pages."
+      ],
+      "open_questions": []
+    }
   }
 }
