@@ -15,7 +15,7 @@
   ],
   "age_min": 5,
   "age_max": 12,
-  "description_short": "YMCA day camps for ages 5–12, running Monday–Friday 9:30am–3:30pm at two sites: Camp Heartwood in Biddeford, a nature program on 26 acres, and Camp Osprey in Freeport, a traditional camp with one-week sessions. Before and after care are included at no extra charge, and there are also February and April school break camps for ages 5–10.",
+  "description_short": "YMCA of Southern Maine runs two co-ed day camps: Camp Heartwood in Biddeford, a mostly outdoor nature program on 26 acres with ten one-week summer sessions, and Camp Osprey in Freeport, with one-week sessions of traditional camp. Both also run February and April school break camps. Summer 2027 details are not posted yet.",
   "activities": [
     "hiking",
     "nature exploration",
@@ -24,28 +24,31 @@
     "arts and crafts",
     "reading"
   ],
-  "extended_care": true,
-  "swim_waterfront_notes": "Camp Heartwood: swimming 3x per week. Camp Osprey lists swimming among activities. Pool/waterfront details not stated.",
-  "season_year": 2026,
+  "gender_policy": "coed",
+  "swim_waterfront_notes": "Camp Heartwood: swimming 3 times a week. Camp Osprey lists swimming among its activities; its December break camp has daily swimming.",
+  "price_min": 225,
+  "price_max": 225,
+  "financial_aid": true,
+  "season_year": 2027,
   "sessions": [
     {
-      "name": "February Break Camp",
-      "start_date": "2026-02-16",
-      "end_date": "2026-02-20",
+      "name": "Camp Osprey December School Break Camp (3 days, Freeport)",
+      "start_date": "2026-12-28",
+      "end_date": "2026-12-30",
+      "price": 225,
+      "availability": "unknown"
+    },
+    {
+      "name": "February School Break Camp (Camp Heartwood or Camp Osprey)",
+      "start_date": "2027-02-15",
+      "end_date": "2027-02-19",
       "price": null,
       "availability": "unknown"
     },
     {
-      "name": "April Break Camp",
-      "start_date": "2026-04-20",
-      "end_date": "2026-04-24",
-      "price": null,
-      "availability": "unknown"
-    },
-    {
-      "name": "Summer Camp 2026 (weekly sessions; no camp Fri June 19)",
-      "start_date": "2026-06-15",
-      "end_date": "2026-08-21",
+      "name": "April School Break Camp (Camp Heartwood or Camp Osprey)",
+      "start_date": "2027-04-19",
+      "end_date": "2027-04-23",
       "price": null,
       "availability": "unknown"
     }
@@ -53,7 +56,7 @@
   "sources": [
     {
       "url": "https://www.ymcaofsouthernmaine.org/camps",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -63,18 +66,32 @@
         "camp_type",
         "primary_categories",
         "activities",
-        "age_min",
-        "age_max",
         "description_short",
-        "extended_care",
         "swim_waterfront_notes",
         "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
+    },
+    {
+      "url": "https://www.ymcaofsouthernmaine.org/campheartwood",
+      "checked": "2026-11-13",
+      "fields": [
+        "gender_policy",
+        "financial_aid"
+      ]
+    },
+    {
+      "url": "https://www.ymcaofsouthernmaine.org/clientuploads/Summer_Camp/2026/2026-Dec-Break-Flyer/2026-CBY-December-Vacation-Camp-Flyer-final.pdf",
+      "checked": "2026-11-13",
+      "fields": [
+        "age_min",
+        "age_max",
+        "price_min",
+        "price_max"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.ymcaofsouthernmaine.org/camps",
       "kind": "html",
@@ -130,6 +147,28 @@
       "missing required city",
       "missing required zip",
       "city None, ME is not in cities.py"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.ymcaofsouthernmaine.org/camps",
+        "https://www.ymcaofsouthernmaine.org/campheartwood",
+        "https://www.ymcaofsouthernmaine.org/camposprey",
+        "https://www.ymcaofsouthernmaine.org/clientuploads/Summer_Camp/2026/2026-Dec-Break-Flyer/2026-CBY-December-Vacation-Camp-Flyer-final.pdf",
+        "https://www.ymcaofsouthernmaine.org/clientuploads/School_Break_Camp/2026-Registration_Packet/2026-27-CBY-School-Break-Camp-Registration-Packet-10.5.26-final-fillable.pdf"
+      ],
+      "changes": [
+        "The camps page changed since drafting: summer 2026 is gone and it now says 'SUMMER 2027 Information coming soon'",
+        "Replaced the past 2026 sessions with what is posted now: Camp Osprey December break camp Dec 28-30, 2026 ($225), and February 15-19 and April 19-23, 2027 break camps at both sites (no price yet); season_year set to 2027",
+        "Removed extended_care and the 9:30-3:30 and free before/after care claims: no current YMCA page states them (the December flyer gives 8:00 am to 5:30 pm)",
+        "Ages 5-12 now sourced to the December break camp flyer; no page states summer 2027 ages",
+        "Added gender_policy coed (both camp pages say co-ed day camp), financial_aid (financial assistance FAQ) and price $225 (December flyer)",
+        "Rewrote description and swim notes to match the current pages"
+      ],
+      "open_questions": [
+        "Two camps at two sites: Camp Heartwood (3 Pomerleau St., Biddeford, ME 04005, 207-283-0100) and Camp Osprey (14 Old South Freeport Rd, Freeport, ME 04032, 207-865-9600). Split into two listings? As one listing it has no city or ZIP, so check_draft fails.",
+        "Only school break camps have dates now (one of them in December 2026). List them, or hold the listing until summer 2027 sessions are posted?"
+      ]
+    }
   }
 }

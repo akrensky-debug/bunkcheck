@@ -11,6 +11,38 @@
   "state": "ME",
   "zip": "04364",
   "camp_type": "sleepaway",
+  "primary_categories": [
+    "sports",
+    "arts",
+    "outdoor",
+    "nature"
+  ],
+  "activities": [
+    "Canoeing",
+    "Kayaking",
+    "Sailing",
+    "Paddle boarding",
+    "Snorkeling",
+    "Swim lessons",
+    "Free swim",
+    "Volleyball",
+    "Basketball",
+    "Tennis",
+    "Soccer",
+    "Yoga",
+    "Archery",
+    "Axe throwing",
+    "Challenge course",
+    "Overnight camping",
+    "Fishing",
+    "Outdoor cooking",
+    "Musical theater",
+    "Dance",
+    "Painting and drawing",
+    "Guitar and ukulele",
+    "Pottery/ceramics"
+  ],
+  "gender_policy": "coed",
   "age_min": 7,
   "age_max": 16,
   "description_short": "Overnight YMCA camp founded in 1915 on the shores of Lake Cobbossee in Winthrop, Maine, offering one- and two-week sessions for boys and girls. Programs listed include Traditional Camp, Explorer's Camp and a LIT/CIT program.",
@@ -19,7 +51,7 @@
   "sources": [
     {
       "url": "https://www.maineycamp.org/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -32,16 +64,40 @@
         "state",
         "zip",
         "camp_type",
+        "gender_policy",
         "age_min",
         "age_max",
-        "description_short",
-        "financial_aid"
+        "description_short"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Camp home page: 'boys and girls ages 7 - 16 years', address 305 Winthrop Center Rd, Winthrop, ME 04364"
+    },
+    {
+      "url": "https://www.maineycamp.org/programs/dates-fees",
+      "checked": "2026-11-13",
+      "fields": [
+        "price_min",
+        "price_max",
+        "price_per",
+        "financial_aid",
+        "meals_included",
+        "refund_policy_summary",
+        "sessions"
+      ],
+      "note": "Dates and Fees - Summer 2027: tiered pricing (Tier 1 includes meals), Tier 4 financial aid, cancellations"
+    },
+    {
+      "url": "https://www.maineycamp.org/camp-life/activities",
+      "checked": "2026-11-13",
+      "fields": [
+        "primary_categories",
+        "activities",
+        "swim_waterfront_notes"
+      ],
+      "note": "Camp Life: Activities page"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.maineycamp.org/",
       "kind": "html",
@@ -85,6 +141,96 @@
         "quote": "Financial Aid ... Military Family Scholarship ... Bill Munsey Campership"
       }
     ],
-    "errors": []
-  }
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.maineycamp.org/",
+        "https://www.maineycamp.org/programs/dates-fees",
+        "https://www.maineycamp.org/camp-life/activities",
+        "https://www.maineycamp.org/programs/traditional-camp"
+      ],
+      "changes": [
+        "Added all nine Summer 2027 sessions from the Dates and Fees page (Session 1, Sessions 2-4, LIT 2-4, Explorers 1-2) at the Tier 1 price, with the lower tiers in each name; Session 1 marked full",
+        "Added price_min $534 (Explorers Tier 3) and price_max $2,642 (two-week Tier 1), price_per session",
+        "Added refund_policy_summary (deposit never refunded, 25% back if you cancel more than 30 days out), meals_included true and financial_aid sourced to the Dates and Fees page",
+        "Added gender_policy coed (home page: 'boys and girls'; separate boys' and girls' villages), primary_categories, activities and swim_waterfront_notes from the Activities page",
+        "Ages 7-16 checked: the page title says 8-15, but the camp's own pages together run from 7 (Explorers 7-9) to 16 (oldest cabins and international LIT), matching the home page text"
+      ],
+      "open_questions": [
+        "registration_url is the camp's CampInTouch camper application, which we didn't open; it is the Register link on the camp site."
+      ]
+    }
+  },
+  "price_min": 534,
+  "price_max": 2642,
+  "price_per": "session",
+  "meals_included": true,
+  "refund_policy_summary": "Balances are due June 1. The deposit ($125 a week, $250 a two-week session, per camper) is never refunded. Cancel more than 30 days before your session and you get 25% of the full tuition back; within 30 days there is no refund.",
+  "swim_waterfront_notes": "The camp is on Lake Cobbossee. Certified lifeguards run the waterfront, which offers canoeing, kayaking, sailing, paddle boarding, snorkeling, water games and free swim. Younger cabins (Kennebec Porch and Cobbossee) are all assigned a period of swim lessons.",
+  "sessions": [
+    {
+      "name": "Session 1, one week, ages 8-15 (both villages listed FULL); Tier 1 price, Tier 2 $1,200, Tier 3 $1,067",
+      "start_date": "2027-06-27",
+      "end_date": "2027-07-03",
+      "price": 1334,
+      "availability": "full"
+    },
+    {
+      "name": "Session 2, two weeks, ages 8-15; Tier 1 price, Tier 2 $2,375, Tier 3 $2,114",
+      "start_date": "2027-07-04",
+      "end_date": "2027-07-17",
+      "price": 2642,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 3, two weeks, ages 8-15; Tier 1 price, Tier 2 $2,375, Tier 3 $2,114",
+      "start_date": "2027-07-18",
+      "end_date": "2027-07-31",
+      "price": 2642,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 4, two weeks, ages 8-15; Tier 1 price, Tier 2 $2,375, Tier 3 $2,114",
+      "start_date": "2027-08-01",
+      "end_date": "2027-08-14",
+      "price": 2642,
+      "availability": "unknown"
+    },
+    {
+      "name": "LIT 2, Leader in Training, age 15 (16 international; North Village FULL); Tier 1 price",
+      "start_date": "2027-07-04",
+      "end_date": "2027-07-17",
+      "price": 2642,
+      "availability": "unknown"
+    },
+    {
+      "name": "LIT 3, Leader in Training, age 15 (16 international; North Village FULL); Tier 1 price",
+      "start_date": "2027-07-18",
+      "end_date": "2027-07-31",
+      "price": 2642,
+      "availability": "unknown"
+    },
+    {
+      "name": "LIT 4, Leader in Training, age 15 (16 international); Tier 1 price",
+      "start_date": "2027-08-01",
+      "end_date": "2027-08-14",
+      "price": 2642,
+      "availability": "unknown"
+    },
+    {
+      "name": "Explorers 1, ages 7-9; Tier 1 price, Tier 2 $601, Tier 3 $534",
+      "start_date": "2027-06-27",
+      "end_date": "2027-06-30",
+      "price": 668,
+      "availability": "unknown"
+    },
+    {
+      "name": "Explorers 2, ages 7-9; Tier 1 price, Tier 2 $601, Tier 3 $534",
+      "start_date": "2027-06-30",
+      "end_date": "2027-07-03",
+      "price": 668,
+      "availability": "unknown"
+    }
+  ]
 }
