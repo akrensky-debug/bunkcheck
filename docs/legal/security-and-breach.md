@@ -5,7 +5,7 @@ law requires; this draft describes what Bunkcheck does today, what it should do 
 it responds to an incident.
 
 Drafted 13 November 2026 from the code on `main` at `0a418ce` and `docs/DEPLOY.md`.
-**[Company]** stands for the legal entity until item 1 is settled.
+The company is Bunkcheck; its full legal name goes in once the entity is formed (item 1).
 
 ## The short version
 
@@ -29,7 +29,7 @@ The program covers the Bunkcheck API (Railway), database and sign-in (Supabase, 
 website (Vercel), email (Resend), the AI model (Anthropic), the source code (GitHub) and,
 once billing starts, Stripe.
 
-Owner: Andrew, as [title at Company]. He reviews this document every [6 months] and after
+Owner: Andrew, as [title] of Bunkcheck. He reviews this document every [6 months] and after
 any incident.
 
 ### 1.2 What we protect
