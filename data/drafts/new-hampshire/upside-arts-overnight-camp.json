@@ -2,7 +2,7 @@
   "slug": "upside-arts-overnight-camp",
   "name": "Upside Arts Overnight Camp",
   "operator_name": "Upside Arts LLC",
-  "website_url": "https://www.theupsideartscompany.org/",
+  "website_url": "https://www.theupsideartscompany.org/overnightcamp",
   "email": "info@theupsideartscompany.org",
   "phone": "(207) 977-4190",
   "city": null,
@@ -12,17 +12,27 @@
   "primary_categories": [
     "performing_arts"
   ],
-  "description_short": "An overnight theatre camp run by Upside Arts, with theatre training from working industry professionals. Campers also swim, hike, play gaga ball, learn sign language and take workshops.",
+  "description_short": "A 12-day overnight theatre camp for ages 8-17 run by Upside Arts. Campers take daily electives such as musical theatre, acting, dance, improv, a cappella and songwriting with working theatre professionals, live in cabins of 6-10 with counselors, and also swim, hike and do low ropes, campfires and talent shows.",
   "activities": [
-    "theatre arts training",
-    "swimming",
-    "hiking",
-    "gaga ball",
-    "sign language",
-    "ballet workshops"
+    "Musical theatre",
+    "Acting",
+    "Dance",
+    "Improv",
+    "A cappella",
+    "Songwriting",
+    "Outdoor adventure",
+    "Arts and crafts",
+    "Swimming",
+    "Hiking",
+    "Low ropes",
+    "Gaga ball",
+    "Sign language",
+    "Ballet workshops",
+    "Campfires",
+    "Talent shows"
   ],
   "financial_aid": true,
-  "swim_waterfront_notes": "Swimming is listed as an overnight camp activity. The page gives no details about the waterfront or pool.",
+  "swim_waterfront_notes": null,
   "season_year": 2027,
   "sessions": [
     {
@@ -35,27 +45,33 @@
   ],
   "sources": [
     {
-      "url": "https://www.theupsideartscompany.org/",
-      "checked": "2026-10-13",
+      "url": "https://www.theupsideartscompany.org/overnightcamp",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
         "website_url",
+        "registration_url",
         "email",
         "phone",
         "camp_type",
         "primary_categories",
         "activities",
+        "age_min",
+        "age_max",
         "description_short",
         "financial_aid",
-        "swim_waterfront_notes",
+        "refund_policy_summary",
         "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
     }
   ],
+  "registration_url": "http://www.ultracamp.com/info/sessiondetail.aspx?idCamp=956&campCode=aqO&idSession=588759",
+  "age_min": 8,
+  "age_max": 17,
+  "refund_policy_summary": "A non-refundable deposit of at least $300 is due at registration, and full payment 15 days before camp. Cancel more than 2 weeks before camp and everything above the deposit is refunded; within 2 weeks, half of what was paid above the deposit. No refunds once camp starts.",
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.theupsideartscompany.org/",
       "kind": "html",
@@ -96,6 +112,28 @@
       "missing required city",
       "missing required state",
       "missing required zip"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.theupsideartscompany.org/",
+        "https://www.theupsideartscompany.org/overnightcamp",
+        "https://www.theupsideartscompany.org/daycamp",
+        "https://www.theupsideartscompany.org/contact"
+      ],
+      "changes": [
+        "website_url now points to the Overnight Camp page instead of the home page.",
+        "Added ages 8-17 and the UltraCamp registration link from the Overnight Camp page.",
+        "Added the refund and deposit policy ($300 non-refundable deposit; full refund above deposit until 2 weeks out, then 50%).",
+        "Fuller activity list and description from the Overnight Camp page (daily theatre electives, cabins of 6-10, low ropes, campfires).",
+        "financial_aid stays true: the page says limited scholarships are available.",
+        "Cleared swim_waterfront_notes: the page only lists swimming as an activity, with no detail.",
+        "Left price empty: the page shows only 2026 tuition ($2,495) next to the 2027 dates."
+      ],
+      "open_questions": [
+        "The page says 'Camp Location: TBA' for 2027, so there's no city, state or ZIP and it can't publish. Wait for the location, or list it under the company's Dover, NH address (20 Third St, 03820) from the Contact page?",
+        "Upside Arts also runs a 2027 day camp (ages 7-17, three two-week sessions June 28 to August 7, 9am-4pm, 2026 tuition $795) with no location on the page. Should it get its own listing in Dover?"
+      ]
+    }
   }
 }

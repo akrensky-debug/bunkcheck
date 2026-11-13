@@ -1,6 +1,3252 @@
 {
   "metro": "Central & Western Massachusetts",
-  "checked": "2026-10-13",
+  "checked": "2026-11-13",
   "notes": "Real listings from each camp's own website. Unverified until a camp confirms. Edit here and re-run: python -m campfinder.seed.import_real --check",
-  "camps": []
+  "camps": [
+    {
+      "slug": "arcadia-nature-camp-easthampton",
+      "name": "Arcadia Nature Camp",
+      "operator_name": "Mass Audubon",
+      "website_url": "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/arcadia/camp",
+      "phone": "413-276-7611",
+      "street_address": "127 Combs Road",
+      "city": "Easthampton",
+      "state": "MA",
+      "zip": "01027",
+      "camp_type": "day",
+      "primary_categories": [
+        "nature"
+      ],
+      "activities": [
+        "Hiking",
+        "Habitat exploration",
+        "Animal and plant identification",
+        "Games",
+        "Crafts",
+        "Scavenger hunts",
+        "Storytelling",
+        "Canoeing (ages 10-12)",
+        "Nature photography (specialty week)",
+        "Environmental leadership (specialty week)"
+      ],
+      "age_min": 5,
+      "age_max": 15,
+      "description_short": "A Mass Audubon nature day camp for ages 5–15 at Arcadia Wildlife Sanctuary in Easthampton, Monday to Friday, 9 am to 3 pm. Campers hike, play games, make crafts and explore forests, meadows, streams and vernal pools, with specialty weeks for nature photography and environmental leadership.",
+      "price_min": 107,
+      "price_max": 535,
+      "price_per": "week",
+      "financial_aid": true,
+      "aca_accredited": true,
+      "aca_source_url": "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/arcadia/camp/about-camp",
+      "season_year": 2026,
+      "sources": [
+        {
+          "url": "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/arcadia/camp",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "city",
+            "state",
+            "age_min",
+            "age_max",
+            "primary_categories",
+            "financial_aid"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/arcadia/camp/programs-pricing",
+          "checked": "2026-11-13",
+          "fields": [
+            "camp_type",
+            "activities",
+            "description_short",
+            "price_min",
+            "price_max",
+            "price_per"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/arcadia/camp/about-camp",
+          "checked": "2026-11-13",
+          "fields": [
+            "phone",
+            "aca_accredited",
+            "aca_source_url"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/arcadia",
+          "checked": "2026-11-13",
+          "fields": [
+            "street_address",
+            "zip"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ]
+    },
+    {
+      "slug": "belvoir-terrace-lenox",
+      "name": "Belvoir Terrace",
+      "website_url": "https://www.belvoirterrace.com/",
+      "registration_url": "https://belvoirterrace.campintouch.com/ui/forms/application/camper/App",
+      "email": "info@belvoirterrace.com",
+      "phone": "413-637-0555",
+      "street_address": "80 Cliffwood St.",
+      "city": "Lenox",
+      "state": "MA",
+      "zip": "01240",
+      "camp_type": "sleepaway",
+      "primary_categories": [
+        "arts",
+        "performing_arts",
+        "sports"
+      ],
+      "activities": [
+        "Studio art",
+        "Ballet",
+        "Dance",
+        "Music",
+        "Theater",
+        "Swimming",
+        "Tennis",
+        "Horseback riding",
+        "Archery",
+        "Fencing",
+        "Basketball",
+        "Soccer",
+        "Volleyball",
+        "Outdoor education (younger campers)",
+        "Trips to cultural venues"
+      ],
+      "gender_policy": "girls",
+      "grade_min": 2,
+      "grade_max": 10,
+      "description_short": "An overnight summer camp for girls in grades 2 to 10 in Lenox, Massachusetts. Campers choose all their own classes in art, dance, music, theater and individual sports, taught by professional staff, in 6, 5 or 3 week sessions.",
+      "price_min": 13500,
+      "price_max": 17400,
+      "price_per": "session",
+      "meals_included": true,
+      "swim_waterfront_notes": "Swimming classes with professional instruction, plus beach days at Camp Greylock.",
+      "season_year": 2027,
+      "sessions": [
+        {
+          "name": "6 Week Session",
+          "start_date": "2027-06-27",
+          "end_date": "2027-08-11",
+          "price": 17400,
+          "availability": "unknown"
+        },
+        {
+          "name": "5 Week Session",
+          "start_date": "2027-06-27",
+          "end_date": "2027-08-01",
+          "price": 16500,
+          "availability": "unknown"
+        },
+        {
+          "name": "3 Week Session (grades 2-5)",
+          "start_date": "2027-06-27",
+          "end_date": "2027-07-18",
+          "price": 13500,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.belvoirterrace.com/",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "website_url",
+            "registration_url",
+            "primary_categories",
+            "activities",
+            "gender_policy",
+            "grade_min",
+            "grade_max",
+            "description_short",
+            "swim_waterfront_notes"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://www.belvoirterrace.com/camp-life/",
+          "checked": "2026-11-13",
+          "fields": [
+            "camp_type",
+            "meals_included"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://www.belvoirterrace.com/dates-rates/",
+          "checked": "2026-11-13",
+          "fields": [
+            "email",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "price_min",
+            "price_max",
+            "price_per",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ]
+    },
+    {
+      "slug": "berkshire-nature-camp-at-pleasant-valley-lenox",
+      "name": "Berkshire Nature Camp at Pleasant Valley",
+      "operator_name": "Mass Audubon",
+      "website_url": "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/pleasant-valley/camp",
+      "registration_url": "https://www.massaudubon.org/programs-events/nature-camps/registration-instructions",
+      "phone": "413-728-1545",
+      "street_address": "472 West Mountain Road",
+      "city": "Lenox",
+      "state": "MA",
+      "zip": "01240",
+      "camp_type": "day",
+      "primary_categories": [
+        "nature"
+      ],
+      "activities": [
+        "Trail exploration and hiking",
+        "Wildlife observation",
+        "Outdoor play and games",
+        "Crafts",
+        "Songs and stories",
+        "Pond exploration",
+        "Building survival shelters",
+        "Plant and animal identification",
+        "Field science techniques",
+        "Leadership training (CIT)"
+      ],
+      "age_min": 4,
+      "age_max": 17,
+      "description_short": "Weekly outdoor nature day camp at Mass Audubon's Pleasant Valley Wildlife Sanctuary in Lenox, Monday to Friday, 9 am to 3 pm. Groups for ages 4 to 12 explore trails, ponds and forests, play games and make crafts, and there is a Counselor-in-Training program for ages 14 to 17.",
+      "price_min": 104,
+      "price_max": 518,
+      "price_per": "week",
+      "financial_aid": true,
+      "special_needs_notes": "Campers must be able to move about on uneven terrain because camp is outdoors and exploratory.",
+      "aca_accredited": true,
+      "aca_source_url": "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/pleasant-valley/camp/about-camp",
+      "season_year": 2026,
+      "sources": [
+        {
+          "url": "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/pleasant-valley/camp",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "city",
+            "state",
+            "age_min",
+            "age_max",
+            "primary_categories",
+            "financial_aid"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/pleasant-valley/camp/programs-pricing",
+          "checked": "2026-11-13",
+          "fields": [
+            "registration_url",
+            "camp_type",
+            "activities",
+            "description_short",
+            "price_min",
+            "price_max",
+            "price_per",
+            "special_needs_notes"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/pleasant-valley/camp/about-camp",
+          "checked": "2026-11-13",
+          "fields": [
+            "phone",
+            "aca_accredited",
+            "aca_source_url"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/pleasant-valley",
+          "checked": "2026-11-13",
+          "fields": [
+            "street_address",
+            "zip"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ]
+    },
+    {
+      "slug": "broad-meadow-brook-nature-camp-worcester",
+      "name": "Broad Meadow Brook Nature Camp",
+      "operator_name": "Mass Audubon",
+      "website_url": "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/broad-meadow-brook/camp",
+      "registration_url": "https://www.massaudubon.org/programs-events/nature-camps/registration-instructions",
+      "phone": "508-640-5615",
+      "street_address": "414 Massasoit Road",
+      "city": "Worcester",
+      "state": "MA",
+      "zip": "01604",
+      "camp_type": "day",
+      "primary_categories": [
+        "nature",
+        "STEM"
+      ],
+      "activities": [
+        "Hiking",
+        "Arts and crafts",
+        "Games",
+        "Birding",
+        "Stream restoration project",
+        "Animal adaptations",
+        "Habitat and wildlife exploration",
+        "Animal identification",
+        "Team building",
+        "Leadership training"
+      ],
+      "age_min": 4,
+      "age_max": 16,
+      "description_short": "Mass Audubon day camp at Broad Meadow Brook Wildlife Sanctuary in Worcester for ages 4.5 to 16, with most of the day spent outdoors hiking, exploring habitats and doing nature projects. Options include a three-day mini camp, weekly camp by age group, a field-trip specialty week, a Counselor-in-Training program, and before and after care.",
+      "price_min": 42,
+      "price_max": 518,
+      "extended_care": true,
+      "meals_included": false,
+      "financial_aid": true,
+      "aca_accredited": true,
+      "aca_source_url": "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/broad-meadow-brook/camp/about-broad-meadow-brook-nature-camp",
+      "season_year": 2026,
+      "sessions": [
+        {
+          "name": "Three-day Mini Camp (Bear Cubs) – June 30–July 2",
+          "start_date": "2026-06-30",
+          "end_date": "2026-07-02",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Three-day Mini Camp (Bear Cubs) – July 14–16",
+          "start_date": "2026-07-14",
+          "end_date": "2026-07-16",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Three-day Mini Camp (Bear Cubs) – July 21–23",
+          "start_date": "2026-07-21",
+          "end_date": "2026-07-23",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Three-day Mini Camp (Bear Cubs) – Aug 11–13",
+          "start_date": "2026-08-11",
+          "end_date": "2026-08-13",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Three-day Mini Camp (Bear Cubs) – Aug 18–20",
+          "start_date": "2026-08-18",
+          "end_date": "2026-08-20",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "One-week Nature Camp Week 1 (Grasshoppers, Flickers, Mighty Oaks, Coyotes)",
+          "start_date": "2026-06-22",
+          "end_date": "2026-06-26",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "One-week Nature Camp Week 2 (Grasshoppers, Flickers, Mighty Oaks, Coyotes)",
+          "start_date": "2026-06-29",
+          "end_date": "2026-07-03",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "One-week Nature Camp Week 3 (Grasshoppers, Flickers, Mighty Oaks, Coyotes)",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "One-week Nature Camp Week 4 (Grasshoppers, Flickers, Mighty Oaks, Coyotes)",
+          "start_date": "2026-07-13",
+          "end_date": "2026-07-17",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "One-week Nature Camp Week 5 (Grasshoppers, Flickers, Mighty Oaks, Coyotes)",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "One-week Nature Camp Week 6 (Grasshoppers, Flickers, Mighty Oaks, Coyotes)",
+          "start_date": "2026-07-27",
+          "end_date": "2026-07-31",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "One-week Nature Camp Week 7 (Grasshoppers, Flickers, Mighty Oaks, Coyotes)",
+          "start_date": "2026-08-03",
+          "end_date": "2026-08-07",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "One-week Nature Camp Week 8 (Grasshoppers, Flickers, Mighty Oaks, Coyotes)",
+          "start_date": "2026-08-10",
+          "end_date": "2026-08-14",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "One-week Nature Camp Week 9 (Grasshoppers, Flickers, Mighty Oaks, Coyotes)",
+          "start_date": "2026-08-17",
+          "end_date": "2026-08-21",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "One-week Nature Camp Week 10 (Grasshoppers, Flickers, Mighty Oaks, Coyotes)",
+          "start_date": "2026-08-24",
+          "end_date": "2026-08-28",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Exploring Mass Audubon (Specialty & Leadership)",
+          "start_date": "2026-08-10",
+          "end_date": "2026-08-14",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Counselors-in-Training – mandatory first-year training",
+          "start_date": "2026-06-22",
+          "end_date": "2026-06-26",
+          "price": null,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/broad-meadow-brook/camp",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "city",
+            "state",
+            "age_min",
+            "age_max"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/broad-meadow-brook/camp/programs-pricing",
+          "checked": "2026-11-13",
+          "fields": [
+            "registration_url",
+            "camp_type",
+            "primary_categories",
+            "activities",
+            "description_short",
+            "price_min",
+            "price_max",
+            "extended_care",
+            "meals_included",
+            "financial_aid",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/broad-meadow-brook/camp/about-broad-meadow-brook-nature-camp",
+          "checked": "2026-11-13",
+          "fields": [
+            "phone",
+            "aca_accredited",
+            "aca_source_url"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/broad-meadow-brook",
+          "checked": "2026-11-13",
+          "fields": [
+            "street_address",
+            "zip"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ]
+    },
+    {
+      "slug": "camp-danbee-peru",
+      "name": "Camp Danbee",
+      "website_url": "https://www.campdanbee.com/",
+      "registration_url": "https://danbee.campintouch.com/ui/forms/application/camper/App",
+      "email": "info@campdanbee.com",
+      "phone": "413-655-8115",
+      "street_address": "101 West Main Road",
+      "city": "Peru",
+      "state": "MA",
+      "zip": "01235",
+      "camp_type": "sleepaway",
+      "primary_categories": [
+        "sports",
+        "arts",
+        "performing_arts",
+        "nature"
+      ],
+      "activities": [
+        "Swimming (lake and two heated pools)",
+        "Waterskiing and wakeboarding",
+        "Sailing",
+        "Paddleboarding",
+        "Canoeing and kayaking",
+        "Tennis",
+        "Soccer and team sports",
+        "Gymnastics and cheerleading",
+        "Horseback riding (extra fee)",
+        "Ice hockey (extra fee)",
+        "Archery",
+        "Ropes and climbing wall",
+        "Arts and crafts",
+        "Pottery",
+        "Jewelry",
+        "Woodcraft",
+        "Culinary arts",
+        "Theater",
+        "Dance",
+        "Journalism and media",
+        "Camping and hiking",
+        "Day and overnight trips",
+        "Community service"
+      ],
+      "gender_policy": "girls",
+      "grade_min": 1,
+      "grade_max": 9,
+      "description_short": "An overnight camp for girls finishing 1st through 9th grade on Lake Ashmere in the Berkshires. Over 30 activities, from waterskiing and tennis to theater, gymnastics and pottery, with a 1:3 counselor to camper ratio and an emphasis on skill building over competition.",
+      "price_min": 800,
+      "price_max": 16950,
+      "price_per": "session",
+      "transportation": true,
+      "meals_included": true,
+      "swim_waterfront_notes": "Campers swim in Lake Ashmere and in two heated pools. The waterfront offers waterskiing, wakeboarding, sailing, paddleboarding, canoeing, kayaking and fishing.",
+      "season_year": 2027,
+      "sessions": [
+        {
+          "name": "Full Season",
+          "start_date": "2027-06-26",
+          "end_date": "2027-08-11",
+          "price": 16950,
+          "availability": "unknown"
+        },
+        {
+          "name": "Danbee in 4",
+          "start_date": "2027-06-26",
+          "end_date": "2027-07-23",
+          "price": 11000,
+          "availability": "unknown"
+        },
+        {
+          "name": "Danbee in 3",
+          "start_date": "2027-07-23",
+          "end_date": "2027-08-11",
+          "price": 9425,
+          "availability": "unknown"
+        },
+        {
+          "name": "Discovery Weekend",
+          "start_date": "2027-07-30",
+          "end_date": "2027-08-01",
+          "price": 800,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.campdanbee.com/about/",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "website_url",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "primary_categories",
+            "description_short"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://www.campdanbee.com/about/dates-and-rates/",
+          "checked": "2026-11-13",
+          "fields": [
+            "registration_url",
+            "price_min",
+            "price_max",
+            "price_per",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://www.campdanbee.com/about/faqs/",
+          "checked": "2026-11-13",
+          "fields": [
+            "email",
+            "camp_type",
+            "gender_policy",
+            "grade_min",
+            "grade_max",
+            "activities",
+            "transportation",
+            "meals_included",
+            "swim_waterfront_notes"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ]
+    },
+    {
+      "slug": "camp-farley-day-camp-mashpee",
+      "name": "Camp Farley Day Camp",
+      "operator_name": "Camp Farley",
+      "website_url": "https://campfarley.com/camp-options/day-camp",
+      "registration_url": "https://campfarley.campbrainregistration.com",
+      "email": "office@campfarley.com",
+      "phone": "508-477-0181",
+      "street_address": "615 Route 130",
+      "city": "Mashpee",
+      "state": "MA",
+      "zip": "02649",
+      "camp_type": "day",
+      "primary_categories": [
+        "sports",
+        "arts",
+        "nature"
+      ],
+      "activities": [
+        "Swimming",
+        "Canoeing and kayaking",
+        "Archery",
+        "Arts and crafts",
+        "Nature",
+        "Sports and games",
+        "Music",
+        "Theater",
+        "Fishing",
+        "Barnyard animals"
+      ],
+      "age_min": 4,
+      "age_max": 15,
+      "description_short": "Weekday day camp in Mashpee on Cape Cod for ages 6 to 15, with swimming, boating, archery, arts and crafts, nature and sports. Sprouts, for ages 4 and 5, runs full or half days. Eight weekly sessions in summer 2027.",
+      "price_min": 305,
+      "price_max": 610,
+      "price_per_week": 610,
+      "price_per": "week",
+      "transportation": false,
+      "meals_included": false,
+      "refund_policy_summary": "$100 deposit per camper is non-refundable and non-transferable. Cancel by March 31, 2027: full refund minus the deposit and a $25 admin fee. April 1 to May 31, 2027: camp keeps the deposit plus 25% of tuition. June 1, 2027 or later: no refund. Prorated refunds for acute medical illness or injury with a doctor's note, at the camp's discretion. No refunds for early departures or late arrivals. Any balance is charged automatically on June 1, 2027.",
+      "aca_accredited": true,
+      "aca_source_url": "https://campfarley.com/about-us/general-information",
+      "season_year": 2027,
+      "sessions": [
+        {
+          "name": "Day Camp Week 1",
+          "start_date": "2027-06-28",
+          "end_date": "2027-07-02",
+          "price": 610,
+          "availability": "unknown"
+        },
+        {
+          "name": "Day Camp Week 2 (4 day week)",
+          "start_date": "2027-07-06",
+          "end_date": "2027-07-09",
+          "price": 485,
+          "availability": "unknown"
+        },
+        {
+          "name": "Day Camp Week 3",
+          "start_date": "2027-07-12",
+          "end_date": "2027-07-16",
+          "price": 610,
+          "availability": "unknown"
+        },
+        {
+          "name": "Day Camp Week 4",
+          "start_date": "2027-07-19",
+          "end_date": "2027-07-23",
+          "price": 610,
+          "availability": "unknown"
+        },
+        {
+          "name": "Day Camp Week 5",
+          "start_date": "2027-07-26",
+          "end_date": "2027-07-30",
+          "price": 610,
+          "availability": "unknown"
+        },
+        {
+          "name": "Day Camp Week 6",
+          "start_date": "2027-08-02",
+          "end_date": "2027-08-06",
+          "price": 610,
+          "availability": "unknown"
+        },
+        {
+          "name": "Day Camp Week 7",
+          "start_date": "2027-08-09",
+          "end_date": "2027-08-13",
+          "price": 610,
+          "availability": "unknown"
+        },
+        {
+          "name": "Day Camp Week 8",
+          "start_date": "2027-08-16",
+          "end_date": "2027-08-20",
+          "price": 610,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://campfarley.com/camp-options/day-camp",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "registration_url",
+            "email",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "camp_type",
+            "primary_categories",
+            "age_min",
+            "age_max",
+            "description_short",
+            "price_per_week",
+            "price_min",
+            "price_max",
+            "price_per",
+            "transportation",
+            "meals_included"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://campfarley.com/rates-and-dates",
+          "checked": "2026-11-13",
+          "fields": [
+            "refund_policy_summary",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://campfarley.com/about-us/programs-and-activities",
+          "checked": "2026-11-13",
+          "fields": [
+            "activities"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://campfarley.com/about-us/general-information",
+          "checked": "2026-11-13",
+          "fields": [
+            "aca_accredited",
+            "aca_source_url"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=615+Route+130&city=Mashpee&state=MA&benchmark=Public_AR_Current&format=json",
+          "checked": "2026-11-13",
+          "fields": [
+            "zip"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ]
+    },
+    {
+      "slug": "camp-greylock-becket",
+      "name": "Camp Greylock",
+      "website_url": "https://campgreylock.com/",
+      "registration_url": "https://greylock.campintouch.com/ui/forms/application/camper/App",
+      "phone": "(413) 623-8921",
+      "street_address": "1525 Main Street",
+      "city": "Becket",
+      "state": "MA",
+      "zip": "01223",
+      "camp_type": "sleepaway",
+      "primary_categories": [
+        "sports",
+        "arts",
+        "nature"
+      ],
+      "activities": [
+        "Baseball",
+        "Basketball",
+        "Soccer",
+        "Lacrosse",
+        "Tennis",
+        "Golf",
+        "Flag football",
+        "Volleyball",
+        "Roller hockey",
+        "Swimming",
+        "Sailing",
+        "Boating and canoeing",
+        "Waterskiing",
+        "Wakeboarding",
+        "Tubing",
+        "Fishing",
+        "Archery",
+        "Fencing",
+        "Climbing wall",
+        "Ropes course",
+        "Zip line",
+        "Mountain biking",
+        "Hiking and overnights",
+        "Art",
+        "Drama",
+        "Radio and electronics",
+        "Nature",
+        "Trips"
+      ],
+      "gender_policy": "boys",
+      "age_min": 6,
+      "age_max": 16,
+      "description_short": "A traditional overnight camp for boys ages 6 to 16 on Center Lake in Becket, Massachusetts. The program covers land sports, watersports, arts and adventure, and campers are split evenly between junior and senior groups.",
+      "price_min": 11600,
+      "price_max": 17100,
+      "price_per": "session",
+      "swim_waterfront_notes": "Lakefront campus on Center Lake. Activities include swimming, sailing, boating, canoeing, waterskiing, wakeboarding and tubing.",
+      "aca_accredited": true,
+      "aca_source_url": "https://campgreylock.com/",
+      "season_year": 2027,
+      "sessions": [
+        {
+          "name": "Full season (7 weeks)",
+          "start_date": "2027-06-25",
+          "end_date": "2027-08-13",
+          "price": 17100,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://campgreylock.com/",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "website_url",
+            "registration_url",
+            "city",
+            "state",
+            "camp_type",
+            "primary_categories",
+            "gender_policy",
+            "age_min",
+            "age_max",
+            "description_short",
+            "aca_accredited",
+            "aca_source_url"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://campgreylock.com/about-greylock/activities",
+          "checked": "2026-11-13",
+          "fields": [
+            "activities",
+            "swim_waterfront_notes"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://campgreylock.com/dates-fees",
+          "checked": "2026-11-13",
+          "fields": [
+            "price_min",
+            "price_max",
+            "price_per",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://campgreylock.com/contact-us",
+          "checked": "2026-11-13",
+          "fields": [
+            "phone",
+            "street_address",
+            "zip"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ]
+    },
+    {
+      "slug": "camp-mah-kee-nac-mini-mak-two-week-sleepaway-camp-lenox",
+      "name": "Camp Mah-Kee-Nac – Mini Mak Two-Week Sleepaway Camp",
+      "website_url": "https://www.campmkn.com/future-families/mini-mak-two-week-camp/",
+      "registration_url": "https://mkn.campintouch.com/ui/forms/application/camper/App",
+      "email": "office@campmkn.com",
+      "phone": "413-274-4092",
+      "street_address": "6 Hawthorne Rd",
+      "city": "Lenox",
+      "state": "MA",
+      "zip": "01240",
+      "camp_type": "sleepaway",
+      "primary_categories": [
+        "sports",
+        "nature"
+      ],
+      "grade_min": 1,
+      "grade_max": 5,
+      "description_short": "A two-week sleepaway session for boys new to Camp Mah-Kee-Nac who are entering grades 1–5. Campers live in Junior Camp cabins and do all the regular camp activities. Families can choose to extend into the full session.",
+      "activities": [
+        "swimming",
+        "sports",
+        "soccer",
+        "ropes course",
+        "paddling",
+        "arts",
+        "evening programs",
+        "trip day"
+      ],
+      "price_min": 6300,
+      "price_max": 6300,
+      "transportation": true,
+      "swim_waterfront_notes": "Campers swim and paddle in the lake. The page does not describe swim instruction, swim tests or lifeguard staffing.",
+      "season_year": 2027,
+      "sessions": [
+        {
+          "name": "Mini Mak Session 1",
+          "start_date": "2027-06-26",
+          "end_date": "2027-07-09",
+          "price": 6300,
+          "availability": "unknown"
+        },
+        {
+          "name": "Mini Mak Session 2",
+          "start_date": "2027-07-22",
+          "end_date": "2027-08-05",
+          "price": 6300,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.campmkn.com/future-families/mini-mak-two-week-camp/",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "website_url",
+            "registration_url",
+            "email",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "primary_categories",
+            "activities",
+            "grade_min",
+            "grade_max",
+            "description_short",
+            "price_min",
+            "price_max",
+            "transportation",
+            "swim_waterfront_notes",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ]
+    },
+    {
+      "slug": "camp-taconic-hinsdale",
+      "name": "Camp Taconic",
+      "website_url": "https://camptaconic.com/",
+      "email": "info@camptaconic.com",
+      "phone": "201-871-2086",
+      "street_address": "770 New Windsor Road",
+      "city": "Hinsdale",
+      "state": "MA",
+      "zip": "01235",
+      "camp_type": "sleepaway",
+      "primary_categories": [
+        "sports",
+        "arts",
+        "performing_arts",
+        "adventure"
+      ],
+      "activities": [
+        "baseball",
+        "basketball",
+        "soccer",
+        "lacrosse",
+        "flag football",
+        "tennis",
+        "golf",
+        "archery",
+        "gymnastics",
+        "swimming",
+        "sailing",
+        "waterskiing",
+        "canoeing",
+        "stand up paddle boarding",
+        "fishing",
+        "climbing wall",
+        "aerial park",
+        "low ropes",
+        "circus (trapeze, tight rope, juggling)",
+        "horseback riding",
+        "musical theater",
+        "dance",
+        "ceramics",
+        "woodworking",
+        "cooking",
+        "Lego/robotics",
+        "digital photography"
+      ],
+      "age_min": 7,
+      "age_max": 15,
+      "description_short": "Camp Taconic is a coed sleepaway camp for ages 7 to 15 on Lake Ashmere in Hinsdale, in the Berkshires. For 2027 it offers a full season from late June to mid-August, plus a four-week part season for first-summer campers only.",
+      "price_min": 11300,
+      "price_max": 17200,
+      "transportation": true,
+      "season_year": 2027,
+      "sessions": [
+        {
+          "name": "2027 Full Season",
+          "start_date": "2027-06-27",
+          "end_date": "2027-08-14",
+          "price": 17200,
+          "availability": "unknown"
+        },
+        {
+          "name": "2027 Part-Season Program (First Summer Only)",
+          "start_date": "2027-06-27",
+          "end_date": "2027-07-24",
+          "price": 11300,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://camptaconic.com/rates-dates.php",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "website_url",
+            "email",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "price_min",
+            "price_max",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://camptaconic.com/faq.php",
+          "checked": "2026-11-13",
+          "fields": [
+            "camp_type",
+            "age_min",
+            "age_max",
+            "transportation",
+            "description_short"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://camptaconic.com/our-activities.php",
+          "checked": "2026-11-13",
+          "fields": [
+            "primary_categories",
+            "activities"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ]
+    },
+    {
+      "slug": "camp-winadu-pittsfield",
+      "name": "Camp Winadu",
+      "website_url": "https://campwinadu.com/summer/dates-rates",
+      "registration_url": "https://winadu.campintouch.com/ui/forms/application/camper/App",
+      "email": "directors@campwinadu.com",
+      "phone": "914-437-7200",
+      "street_address": "700 Churchill Street",
+      "city": "Pittsfield",
+      "state": "MA",
+      "zip": "01201",
+      "camp_type": "sleepaway",
+      "primary_categories": [
+        "sports",
+        "arts",
+        "nature"
+      ],
+      "description_short": "Boys' sleepaway camp in the Berkshire Mountains near Pittsfield, Massachusetts. Offers a full summer season and a 5-week option for new younger campers, with team and individual sports, ice hockey, waterfront, outdoor adventure, and arts.",
+      "activities": [
+        "Team sports",
+        "Individual sports",
+        "Ice hockey",
+        "Golf",
+        "Waterfront",
+        "Outdoor adventure",
+        "Arts & hobbies",
+        "Special events"
+      ],
+      "price_min": 13800,
+      "price_max": 16950,
+      "transportation": true,
+      "season_year": 2027,
+      "sessions": [
+        {
+          "name": "Full Season 2027",
+          "start_date": "2027-06-25",
+          "end_date": "2027-08-10",
+          "price": 16950,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://campwinadu.com/summer/dates-rates",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "website_url",
+            "registration_url",
+            "email",
+            "phone",
+            "camp_type",
+            "primary_categories",
+            "activities",
+            "description_short",
+            "price_min",
+            "price_max",
+            "transportation",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://campwinadu.com/contact-us",
+          "checked": "2026-11-13",
+          "fields": [
+            "street_address",
+            "city",
+            "state",
+            "zip"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ]
+    },
+    {
+      "slug": "discovery-adventures-sturbridge",
+      "name": "Discovery Adventures",
+      "operator_name": "Old Sturbridge Village",
+      "website_url": "https://www.osv.org/education/discovery-adventures/",
+      "email": "osved@osv.org",
+      "phone": "(508) 347-0274",
+      "street_address": "1 Old Sturbridge Village Road",
+      "city": "Sturbridge",
+      "state": "MA",
+      "zip": "01566",
+      "camp_type": "day",
+      "primary_categories": [
+        "academic",
+        "arts"
+      ],
+      "age_min": 6,
+      "age_max": 17,
+      "description_short": "Week-long themed history day programs at Old Sturbridge Village, a living history museum. In summer, kids ages 6 to 17 spend 9 a.m. to 3 p.m. in 19th-century costume, cooking over the open hearth, doing farm chores, making crafts and working with the Village's costumed historians. Groups are by age, with themes that change each week.",
+      "activities": [
+        "hearth cooking",
+        "19th-century crafts",
+        "farm and garden chores",
+        "19th-century games",
+        "sewing and quilting",
+        "blacksmithing, pottery and woodwork (ages 11-14)",
+        "militia drills (ages 11-14)",
+        "art (watercolor, charcoal, pinch pots)"
+      ],
+      "price_per_week": 390,
+      "price_min": 315,
+      "price_max": 415,
+      "price_per": "week",
+      "extended_care": false,
+      "financial_aid": true,
+      "meals_included": false,
+      "refund_policy_summary": "Refunds are available up to two weeks before your week's program starts. You can switch weeks if there is space in your child's age group; a change fee applies.",
+      "season_year": 2026,
+      "sessions": [
+        {
+          "name": "Summer Discovery Adventures, week of June 29",
+          "start_date": "2026-06-29",
+          "end_date": "2026-07-03",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Summer Discovery Adventures, week of July 6",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Summer Discovery Adventures, week of July 13",
+          "start_date": "2026-07-13",
+          "end_date": "2026-07-17",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Summer Discovery Adventures, week of July 20",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Summer Discovery Adventures, week of July 27",
+          "start_date": "2026-07-27",
+          "end_date": "2026-07-31",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Summer Discovery Adventures, week of August 3",
+          "start_date": "2026-08-03",
+          "end_date": "2026-08-07",
+          "price": null,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.osv.org/education/discovery-adventures/",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "age_min",
+            "age_max",
+            "financial_aid"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://www.osv.org/event/summer-discovery-adventures/",
+          "checked": "2026-11-13",
+          "fields": [
+            "primary_categories",
+            "description_short",
+            "activities",
+            "price_per_week",
+            "price_min",
+            "price_max",
+            "price_per",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://www.osv.org/education/discovery-adventures/registration-information-and-packet/",
+          "checked": "2026-11-13",
+          "fields": [
+            "email",
+            "phone",
+            "extended_care",
+            "meals_included",
+            "refund_policy_summary"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ]
+    },
+    {
+      "slug": "ecotarium-summer-discovery-camp-and-vacation-week-camp-worcester",
+      "name": "EcoTarium Summer Discovery Camp and Vacation Week Camp",
+      "operator_name": "EcoTarium",
+      "website_url": "https://ecotarium.org/camp/",
+      "email": "reservations@ecotarium.org",
+      "phone": "(508) 929-2703",
+      "street_address": "222 Harrington Way",
+      "city": "Worcester",
+      "state": "MA",
+      "zip": "01604",
+      "camp_type": "day",
+      "primary_categories": [
+        "STEM",
+        "nature"
+      ],
+      "age_min": 5,
+      "age_max": 12,
+      "description_short": "Week-long themed science and nature day camps at the EcoTarium museum in Worcester for ages 5-12, run 9 am-4 pm, Monday-Friday. Campers are grouped by age. There is also a Counselor-in-Training program for ages 13-15.",
+      "activities": [
+        "Outdoor exploration and shelter building",
+        "Animal encounters",
+        "Planetarium and space science",
+        "Rocket building",
+        "Engineering challenges",
+        "Forensic science mysteries",
+        "Behind-the-scenes zoo tour",
+        "Chemistry and slime",
+        "STEAM art projects"
+      ],
+      "price_per_week": 395,
+      "price_min": 365,
+      "price_max": 425,
+      "financial_aid": true,
+      "transportation": false,
+      "meals_included": false,
+      "refund_policy_summary": "Deposits and camp fees are nonrefundable and nontransferable. Fees minus the $75 deposit can be refunded only if you cancel in writing by May 1 for summer camp, or four weeks before a vacation week camp. Later refunds are considered only for medical or emergency reasons.",
+      "special_needs_notes": "The camp works with children who have school aides, IEPs or BIPs; a child's aide is welcome at camp after CORI/SORI checks. Give the Camp Director at least three weeks' notice of any accommodation, assistive device or major allergy. All food must be peanut and tree nut free, and staff are trained for allergy emergencies.",
+      "season_year": 2026,
+      "price_per": "week",
+      "sessions": [
+        {
+          "name": "Outdoor Adventures",
+          "start_date": "2026-06-22",
+          "end_date": "2026-06-26",
+          "price": 395,
+          "availability": "unknown"
+        },
+        {
+          "name": "Creature Feature",
+          "start_date": "2026-06-29",
+          "end_date": "2026-07-03",
+          "price": 395,
+          "availability": "unknown"
+        },
+        {
+          "name": "Space Explorations",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "price": 395,
+          "availability": "unknown"
+        },
+        {
+          "name": "Eco Explore",
+          "start_date": "2026-07-13",
+          "end_date": "2026-07-17",
+          "price": 395,
+          "availability": "unknown"
+        },
+        {
+          "name": "Engineer Your World",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "price": 395,
+          "availability": "unknown"
+        },
+        {
+          "name": "Spies & Mysteries",
+          "start_date": "2026-07-27",
+          "end_date": "2026-07-31",
+          "price": 395,
+          "availability": "unknown"
+        },
+        {
+          "name": "Zoo and You",
+          "start_date": "2026-08-03",
+          "end_date": "2026-08-07",
+          "price": 395,
+          "availability": "unknown"
+        },
+        {
+          "name": "Messy Science",
+          "start_date": "2026-08-10",
+          "end_date": "2026-08-14",
+          "price": 395,
+          "availability": "unknown"
+        },
+        {
+          "name": "Eco Explore",
+          "start_date": "2026-08-17",
+          "end_date": "2026-08-21",
+          "price": 395,
+          "availability": "unknown"
+        },
+        {
+          "name": "Counselor in Training (CIT) Session 1",
+          "start_date": "2026-06-29",
+          "end_date": "2026-07-24",
+          "price": 760,
+          "availability": "unknown"
+        },
+        {
+          "name": "Counselor in Training (CIT) Session 2",
+          "start_date": "2026-07-27",
+          "end_date": "2026-08-21",
+          "price": 760,
+          "availability": "unknown"
+        },
+        {
+          "name": "February Vacation Week: Eco Explore",
+          "start_date": "2026-02-16",
+          "end_date": "2026-02-20",
+          "price": 395,
+          "availability": "unknown"
+        },
+        {
+          "name": "April Vacation Week: Engineer Your World",
+          "start_date": "2026-04-20",
+          "end_date": "2026-04-24",
+          "price": 395,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://ecotarium.org/camp/",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "email",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "primary_categories",
+            "activities",
+            "age_min",
+            "age_max",
+            "description_short",
+            "price_min",
+            "price_max",
+            "price_per_week",
+            "price_per",
+            "financial_aid",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://ecotarium.org/wp-content/uploads/2024/10/Vacation-Summer-Camp-Cancellation-Refund-2024-2025.pdf",
+          "checked": "2026-11-13",
+          "fields": [
+            "refund_policy_summary"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://ecotarium.org/wp-content/uploads/2026/05/Camp-Caregiver-Handbook.docx.pdf",
+          "checked": "2026-11-13",
+          "fields": [
+            "transportation",
+            "meals_included",
+            "special_needs_notes"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ]
+    },
+    {
+      "slug": "fa-summer-falmouth-academy-summer-camps-falmouth",
+      "name": "FA Summer (Falmouth Academy Summer Camps)",
+      "operator_name": "Falmouth Academy",
+      "website_url": "https://www.falmouthacademy.org/summer/welcome",
+      "email": "fasummer@falmouthacademy.org",
+      "phone": "(508) 457-9696 x221",
+      "street_address": "7 Highfield Drive",
+      "city": "Falmouth",
+      "state": "MA",
+      "zip": "02540",
+      "camp_type": "day",
+      "primary_categories": [
+        "sports",
+        "arts",
+        "STEM",
+        "performing_arts",
+        "academic",
+        "nature"
+      ],
+      "age_min": 5,
+      "age_max": 14,
+      "description_short": "A weekly day camp at Falmouth Academy in Falmouth, MA for ages 5–14, split by age into Camp Mariner (5–6), Camp Seafarer (7–9) and Camp Navigator (10–14). Families choose half-day or full-day weeks with activities in sports, arts, STEM, nature and academics.",
+      "activities": [
+        "arts and crafts",
+        "outdoor play",
+        "cooperative team games",
+        "Rec Games (soccer, basketball, Wiffle Ball, floor hockey, pickleball, flag football, Capture the Flag, volleyball)",
+        "tennis lessons",
+        "Musical Theater Academy",
+        "pottery on the wheel",
+        "Rock Band",
+        "ukulele",
+        "Hip Hop, Ballet, Jazz and Lyrical dance",
+        "coding",
+        "robotics",
+        "engineering",
+        "seashore ecology",
+        "physics",
+        "forensics",
+        "academic tutoring"
+      ],
+      "price_per_week": 750,
+      "price_min": 375,
+      "price_max": 750,
+      "meals_included": false,
+      "refund_policy_summary": "2026 policy: written cancellations before May 1 get a full refund minus 50% of the deposit. Written cancellations after May 1 get 50% of the total camp cost back. No refund for cancellations made less than 14 days before camp starts.",
+      "season_year": 2026,
+      "price_per": "week",
+      "sessions": [
+        {
+          "name": "Week 1 (full day)",
+          "start_date": "2026-06-22",
+          "end_date": "2026-06-26",
+          "price": 750,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 2 (full day)",
+          "start_date": "2026-06-29",
+          "end_date": "2026-07-03",
+          "price": 750,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 3 (full day)",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "price": 750,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 4 (full day)",
+          "start_date": "2026-07-13",
+          "end_date": "2026-07-17",
+          "price": 750,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 5 (full day)",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "price": 750,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 6 (full day)",
+          "start_date": "2026-07-27",
+          "end_date": "2026-07-31",
+          "price": 750,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 7 (full day)",
+          "start_date": "2026-08-03",
+          "end_date": "2026-08-07",
+          "price": 750,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 8 (full day)",
+          "start_date": "2026-08-10",
+          "end_date": "2026-08-14",
+          "price": 750,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.falmouthacademy.org/summer/welcome",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "email",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "primary_categories",
+            "activities",
+            "age_min",
+            "age_max",
+            "description_short",
+            "price_min",
+            "price_max",
+            "price_per_week",
+            "price_per",
+            "meals_included",
+            "refund_policy_summary",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ]
+    },
+    {
+      "slug": "hitchcock-center-nature-summer-camp-amherst",
+      "name": "Hitchcock Center Nature Summer Camp",
+      "operator_name": "Hitchcock Center for the Environment",
+      "website_url": "https://www.hitchcockcenter.org/camp-programs/",
+      "registration_url": "https://campscui.active.com/orgs/HitchcockCenterfortheEnvironment?season=3749244",
+      "email": "jeff@hitchcockcenter.org",
+      "phone": "413-256-6006",
+      "street_address": "845 West Street",
+      "city": "Amherst",
+      "state": "MA",
+      "zip": "01002",
+      "camp_type": "day",
+      "primary_categories": [
+        "nature",
+        "STEM"
+      ],
+      "age_min": 5,
+      "grade_min": 0,
+      "grade_max": 9,
+      "description_short": "An outdoor nature day camp at the Hitchcock Center for the Environment in Amherst. Kids do hikes, animal observation, science and crafts. Nature Camp runs 8:45 AM to 3:00 PM for kids entering grades K to 6. Chickadee Camp is a half-day program (8:45 AM to 1:00 PM) for rising kindergartners. The Leadership Training Camp is for grades 7 to 9.",
+      "activities": [
+        "Guided hikes and field investigations",
+        "Animal and insect observation",
+        "Mud and dirt play, slime making",
+        "Crafts and science projects",
+        "Nature-inspired inventing / biomimicry",
+        "Songs, stories and team-building games",
+        "Field trips",
+        "Sprinkler play",
+        "Caving, hikes and overnight camping (Leadership Training Camp)"
+      ],
+      "price_per_week": 465,
+      "price_min": 305,
+      "price_max": 1080,
+      "financial_aid": true,
+      "meals_included": false,
+      "refund_policy_summary": "You can cancel yourself through your Active account. More than 90 days before your session starts: full refund minus a 6% platform fee. 30–90 days before: refund minus the $150 deposit. Less than 30 days before: no refund, unless the program is full and your spot gets filled, in which case you may get 50% back. There are no refunds for absences, sick days or vacations. Exceptions are made only for a health emergency, documented by a physician, that keeps the child out for the whole session.",
+      "special_needs_notes": "The camp welcomes campers with social, emotional, physical, cognitive or behavioral challenges. If a child has a 1:1 aide at school, a 1:1 must also be provided at camp (a parent or guardian can do this). Campers must be able to move around on uneven terrain. Families should contact the Camp Director before enrolling to talk through accommodations. If needs are not disclosed, the child may be dismissed without a refund. Staff are trained to give EpiPens, and there is an individual health plan process for life-threatening allergies.",
+      "swim_waterfront_notes": "No swimming program is mentioned. Campers bring a swimsuit and towel for sprinkler play only.",
+      "season_year": 2026,
+      "price_per": "week",
+      "sessions": [
+        {
+          "name": "Nature Camp Session 1: Ew, That's Gross! (1 week)",
+          "start_date": "2026-06-29",
+          "end_date": "2026-07-03",
+          "price": 465,
+          "availability": "unknown"
+        },
+        {
+          "name": "Nature Camp Session 2: Biologists in Training (2 weeks)",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-17",
+          "price": 900,
+          "availability": "waitlist"
+        },
+        {
+          "name": "Nature Camp Session 3: Making and Tinkering (1 week)",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "price": 465,
+          "availability": "unknown"
+        },
+        {
+          "name": "Nature Camp Session 4: Biologists in Training (2 weeks)",
+          "start_date": "2026-07-27",
+          "end_date": "2026-08-07",
+          "price": 900,
+          "availability": "waitlist"
+        },
+        {
+          "name": "Nature Camp Session 5: Ew, That's Gross! (1 week)",
+          "start_date": "2026-08-10",
+          "end_date": "2026-08-14",
+          "price": 465,
+          "availability": "unknown"
+        },
+        {
+          "name": "Leadership Training Camp (grades 7-9, 2 weeks)",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-17",
+          "price": 930,
+          "availability": "waitlist"
+        },
+        {
+          "name": "Chickadee Camp Session 1 (entering K, half day, 1 week)",
+          "start_date": "2026-06-29",
+          "end_date": "2026-07-03",
+          "price": 360,
+          "availability": "unknown"
+        },
+        {
+          "name": "Chickadee Camp Session 2 (entering K, half day, 2 weeks)",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-17",
+          "price": 900,
+          "availability": "unknown"
+        },
+        {
+          "name": "Chickadee Camp Session 3 (entering K, half day, 1 week)",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "price": 360,
+          "availability": "unknown"
+        },
+        {
+          "name": "Chickadee Camp Session 4 (entering K, half day, 2 weeks)",
+          "start_date": "2026-07-27",
+          "end_date": "2026-08-07",
+          "price": 900,
+          "availability": "unknown"
+        },
+        {
+          "name": "Chickadee Camp Session 5 (entering K, half day, 1 week)",
+          "start_date": "2026-08-10",
+          "end_date": "2026-08-14",
+          "price": 360,
+          "availability": "waitlist"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.hitchcockcenter.org/camp-programs/",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "registration_url",
+            "email",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "primary_categories",
+            "activities",
+            "age_min",
+            "grade_min",
+            "grade_max",
+            "description_short",
+            "price_min",
+            "price_max",
+            "price_per_week",
+            "price_per",
+            "meals_included",
+            "financial_aid",
+            "refund_policy_summary",
+            "special_needs_notes",
+            "swim_waterfront_notes",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ]
+    },
+    {
+      "slug": "nantucket-community-sailing-youth-camps-and-classes-nantucket",
+      "name": "Nantucket Community Sailing Youth Camps & Classes",
+      "operator_name": "Nantucket Community Sailing",
+      "website_url": "https://nantucketcommunitysailing.org/pages/youth-camps-classes",
+      "registration_url": "https://campscui.active.com/orgs/NantucketCommunitySailing?orglink=camps-registration",
+      "email": "info@nantucketcommunitysailing.org",
+      "phone": "508-228-6600",
+      "city": "Nantucket",
+      "state": "MA",
+      "zip": "02584",
+      "camp_type": "specialty",
+      "primary_categories": [
+        "sailing"
+      ],
+      "age_min": 4,
+      "age_max": 18,
+      "description_short": "Half-day youth sailing classes for ages 4–18 in one- or two-week sessions. Younger and beginner sailors go to Polpis Harbor, and older or more advanced sailors go to Jetties Beach. Programs run Monday–Friday from June 21 to August 13, 2027.",
+      "activities": [
+        "Sailing",
+        "Sail racing",
+        "Regattas",
+        "Optimist dinghy sailing",
+        "420 double-handed sailing",
+        "Keelboat sailing (J70, Rhodes 19, IOD)",
+        "Seamanship"
+      ],
+      "price_per_week": 475,
+      "price_min": 455,
+      "price_max": 1140,
+      "financial_aid": true,
+      "swim_waterfront_notes": "Sailing is on open water at two sites. Polpis Harbor is a protected, calm harbor used for younger and beginner sailors. Jetties Beach on Nantucket Sound has open-water sailing for older and more experienced sailors. The page does not mention a swim test or swim requirements.",
+      "season_year": 2027,
+      "price_per": "week",
+      "sessions": [
+        {
+          "name": "Guppies AM (ages 4-5, 9:30AM-12PM), Polpis",
+          "start_date": "2027-06-21",
+          "end_date": "2027-06-25",
+          "price": 475,
+          "availability": "unknown"
+        },
+        {
+          "name": "Guppies AM (ages 4-5, 9:30AM-12PM), Polpis",
+          "start_date": "2027-06-28",
+          "end_date": "2027-07-02",
+          "price": 475,
+          "availability": "unknown"
+        },
+        {
+          "name": "Guppies AM (ages 4-5, 9:30AM-12PM), Polpis",
+          "start_date": "2027-07-05",
+          "end_date": "2027-07-09",
+          "price": 475,
+          "availability": "unknown"
+        },
+        {
+          "name": "Guppies AM (ages 4-5, 9:30AM-12PM), Polpis",
+          "start_date": "2027-07-12",
+          "end_date": "2027-07-16",
+          "price": 475,
+          "availability": "unknown"
+        },
+        {
+          "name": "Guppies AM (ages 4-5, 9:30AM-12PM), Polpis",
+          "start_date": "2027-07-19",
+          "end_date": "2027-07-23",
+          "price": 475,
+          "availability": "unknown"
+        },
+        {
+          "name": "Guppies AM (ages 4-5, 9:30AM-12PM), Polpis",
+          "start_date": "2027-07-26",
+          "end_date": "2027-07-30",
+          "price": 475,
+          "availability": "unknown"
+        },
+        {
+          "name": "Guppies AM (ages 4-5, 9:30AM-12PM), Polpis",
+          "start_date": "2027-08-02",
+          "end_date": "2027-08-06",
+          "price": 475,
+          "availability": "unknown"
+        },
+        {
+          "name": "Guppies AM (ages 4-5, 9:30AM-12PM), Polpis",
+          "start_date": "2027-08-09",
+          "end_date": "2027-08-13",
+          "price": 475,
+          "availability": "unknown"
+        },
+        {
+          "name": "Guppies PM (ages 4-5, 1:15-3:45PM), Polpis",
+          "start_date": "2027-06-21",
+          "end_date": "2027-06-25",
+          "price": 475,
+          "availability": "unknown"
+        },
+        {
+          "name": "Guppies PM (ages 4-5, 1:15-3:45PM), Polpis",
+          "start_date": "2027-06-28",
+          "end_date": "2027-07-02",
+          "price": 475,
+          "availability": "unknown"
+        },
+        {
+          "name": "Guppies PM (ages 4-5, 1:15-3:45PM), Polpis",
+          "start_date": "2027-07-05",
+          "end_date": "2027-07-09",
+          "price": 475,
+          "availability": "unknown"
+        },
+        {
+          "name": "Guppies PM (ages 4-5, 1:15-3:45PM), Polpis",
+          "start_date": "2027-07-12",
+          "end_date": "2027-07-16",
+          "price": 475,
+          "availability": "unknown"
+        },
+        {
+          "name": "Guppies PM (ages 4-5, 1:15-3:45PM), Polpis",
+          "start_date": "2027-07-19",
+          "end_date": "2027-07-23",
+          "price": 475,
+          "availability": "unknown"
+        },
+        {
+          "name": "Guppies PM (ages 4-5, 1:15-3:45PM), Polpis",
+          "start_date": "2027-07-26",
+          "end_date": "2027-07-30",
+          "price": 475,
+          "availability": "unknown"
+        },
+        {
+          "name": "Guppies PM (ages 4-5, 1:15-3:45PM), Polpis",
+          "start_date": "2027-08-02",
+          "end_date": "2027-08-06",
+          "price": 475,
+          "availability": "unknown"
+        },
+        {
+          "name": "Guppies PM (ages 4-5, 1:15-3:45PM), Polpis",
+          "start_date": "2027-08-09",
+          "end_date": "2027-08-13",
+          "price": 475,
+          "availability": "unknown"
+        },
+        {
+          "name": "Whalers AM (ages 6-8, 9:30AM-12PM), Polpis",
+          "start_date": "2027-06-21",
+          "end_date": "2027-06-25",
+          "price": 475,
+          "availability": "unknown"
+        },
+        {
+          "name": "Whalers AM (ages 6-8, 9:30AM-12PM), Polpis",
+          "start_date": "2027-06-28",
+          "end_date": "2027-07-02",
+          "price": 475,
+          "availability": "unknown"
+        },
+        {
+          "name": "Whalers AM (ages 6-8, 9:30AM-12PM), Polpis",
+          "start_date": "2027-07-05",
+          "end_date": "2027-07-09",
+          "price": 475,
+          "availability": "unknown"
+        },
+        {
+          "name": "Whalers AM (ages 6-8, 9:30AM-12PM), Polpis",
+          "start_date": "2027-07-12",
+          "end_date": "2027-07-16",
+          "price": 475,
+          "availability": "unknown"
+        },
+        {
+          "name": "Whalers AM (ages 6-8, 9:30AM-12PM), Polpis",
+          "start_date": "2027-07-19",
+          "end_date": "2027-07-23",
+          "price": 475,
+          "availability": "unknown"
+        },
+        {
+          "name": "Whalers AM (ages 6-8, 9:30AM-12PM), Polpis",
+          "start_date": "2027-07-26",
+          "end_date": "2027-07-30",
+          "price": 475,
+          "availability": "unknown"
+        },
+        {
+          "name": "Whalers AM (ages 6-8, 9:30AM-12PM), Polpis",
+          "start_date": "2027-08-02",
+          "end_date": "2027-08-06",
+          "price": 475,
+          "availability": "unknown"
+        },
+        {
+          "name": "Whalers AM (ages 6-8, 9:30AM-12PM), Polpis",
+          "start_date": "2027-08-09",
+          "end_date": "2027-08-13",
+          "price": 475,
+          "availability": "unknown"
+        },
+        {
+          "name": "Whalers PM (ages 6-8, 1:15-3:45PM), Polpis",
+          "start_date": "2027-06-21",
+          "end_date": "2027-06-25",
+          "price": 475,
+          "availability": "unknown"
+        },
+        {
+          "name": "Whalers PM (ages 6-8, 1:15-3:45PM), Polpis",
+          "start_date": "2027-06-28",
+          "end_date": "2027-07-02",
+          "price": 475,
+          "availability": "unknown"
+        },
+        {
+          "name": "Whalers PM (ages 6-8, 1:15-3:45PM), Polpis",
+          "start_date": "2027-07-05",
+          "end_date": "2027-07-09",
+          "price": 475,
+          "availability": "unknown"
+        },
+        {
+          "name": "Whalers PM (ages 6-8, 1:15-3:45PM), Polpis",
+          "start_date": "2027-07-12",
+          "end_date": "2027-07-16",
+          "price": 475,
+          "availability": "unknown"
+        },
+        {
+          "name": "Whalers PM (ages 6-8, 1:15-3:45PM), Polpis",
+          "start_date": "2027-07-19",
+          "end_date": "2027-07-23",
+          "price": 475,
+          "availability": "unknown"
+        },
+        {
+          "name": "Whalers PM (ages 6-8, 1:15-3:45PM), Polpis",
+          "start_date": "2027-07-26",
+          "end_date": "2027-07-30",
+          "price": 475,
+          "availability": "unknown"
+        },
+        {
+          "name": "Whalers PM (ages 6-8, 1:15-3:45PM), Polpis",
+          "start_date": "2027-08-02",
+          "end_date": "2027-08-06",
+          "price": 475,
+          "availability": "unknown"
+        },
+        {
+          "name": "Whalers PM (ages 6-8, 1:15-3:45PM), Polpis",
+          "start_date": "2027-08-09",
+          "end_date": "2027-08-13",
+          "price": 475,
+          "availability": "unknown"
+        },
+        {
+          "name": "Discovery AM (ages 8-12, 9:15-11:45AM), Polpis",
+          "start_date": "2027-06-21",
+          "end_date": "2027-06-25",
+          "price": 475,
+          "availability": "unknown"
+        },
+        {
+          "name": "Discovery AM (ages 8-12, 9:15-11:45AM), Polpis",
+          "start_date": "2027-06-28",
+          "end_date": "2027-07-02",
+          "price": 475,
+          "availability": "unknown"
+        },
+        {
+          "name": "Discovery AM (ages 8-12, 9:15-11:45AM), Polpis, 2 weeks",
+          "start_date": "2027-07-05",
+          "end_date": "2027-07-16",
+          "price": 950,
+          "availability": "unknown"
+        },
+        {
+          "name": "Discovery AM (ages 8-12, 9:15-11:45AM), Polpis, 2 weeks",
+          "start_date": "2027-07-19",
+          "end_date": "2027-07-30",
+          "price": 950,
+          "availability": "unknown"
+        },
+        {
+          "name": "Discovery AM (ages 8-12, 9:15-11:45AM), Polpis",
+          "start_date": "2027-08-02",
+          "end_date": "2027-08-06",
+          "price": 475,
+          "availability": "unknown"
+        },
+        {
+          "name": "Discovery AM (ages 8-12, 9:15-11:45AM), Polpis",
+          "start_date": "2027-08-09",
+          "end_date": "2027-08-13",
+          "price": 475,
+          "availability": "unknown"
+        },
+        {
+          "name": "Discovery PM (ages 8-12, 1-3:30PM), Polpis",
+          "start_date": "2027-06-21",
+          "end_date": "2027-06-25",
+          "price": 475,
+          "availability": "unknown"
+        },
+        {
+          "name": "Discovery PM (ages 8-12, 1-3:30PM), Polpis",
+          "start_date": "2027-06-28",
+          "end_date": "2027-07-02",
+          "price": 475,
+          "availability": "unknown"
+        },
+        {
+          "name": "Discovery PM (ages 8-12, 1-3:30PM), Polpis, 2 weeks",
+          "start_date": "2027-07-05",
+          "end_date": "2027-07-16",
+          "price": 950,
+          "availability": "unknown"
+        },
+        {
+          "name": "Discovery PM (ages 8-12, 1-3:30PM), Polpis, 2 weeks",
+          "start_date": "2027-07-19",
+          "end_date": "2027-07-30",
+          "price": 950,
+          "availability": "unknown"
+        },
+        {
+          "name": "Discovery PM (ages 8-12, 1-3:30PM), Polpis",
+          "start_date": "2027-08-02",
+          "end_date": "2027-08-06",
+          "price": 475,
+          "availability": "unknown"
+        },
+        {
+          "name": "Discovery PM (ages 8-12, 1-3:30PM), Polpis",
+          "start_date": "2027-08-09",
+          "end_date": "2027-08-13",
+          "price": 475,
+          "availability": "unknown"
+        },
+        {
+          "name": "Opti Green AM (ages 8-12, 9:15-11:45AM), Polpis",
+          "start_date": "2027-06-21",
+          "end_date": "2027-06-25",
+          "price": 475,
+          "availability": "unknown"
+        },
+        {
+          "name": "Opti Green AM (ages 8-12, 9:15-11:45AM), Polpis",
+          "start_date": "2027-06-28",
+          "end_date": "2027-07-02",
+          "price": 475,
+          "availability": "unknown"
+        },
+        {
+          "name": "Opti Green AM (ages 8-12, 9:15-11:45AM), Polpis, 2 weeks",
+          "start_date": "2027-07-05",
+          "end_date": "2027-07-16",
+          "price": 950,
+          "availability": "unknown"
+        },
+        {
+          "name": "Opti Green AM (ages 8-12, 9:15-11:45AM), Polpis, 2 weeks",
+          "start_date": "2027-07-19",
+          "end_date": "2027-07-30",
+          "price": 950,
+          "availability": "unknown"
+        },
+        {
+          "name": "Opti Green AM (ages 8-12, 9:15-11:45AM), Polpis, 2 weeks",
+          "start_date": "2027-08-02",
+          "end_date": "2027-08-13",
+          "price": 950,
+          "availability": "unknown"
+        },
+        {
+          "name": "Opti Green PM (ages 8-12, 1-3:30PM), Polpis",
+          "start_date": "2027-06-21",
+          "end_date": "2027-06-25",
+          "price": 475,
+          "availability": "unknown"
+        },
+        {
+          "name": "Opti Green PM (ages 8-12, 1-3:30PM), Polpis",
+          "start_date": "2027-06-28",
+          "end_date": "2027-07-02",
+          "price": 475,
+          "availability": "unknown"
+        },
+        {
+          "name": "Opti Green PM (ages 8-12, 1-3:30PM), Polpis, 2 weeks",
+          "start_date": "2027-07-05",
+          "end_date": "2027-07-16",
+          "price": 950,
+          "availability": "unknown"
+        },
+        {
+          "name": "Opti Green PM (ages 8-12, 1-3:30PM), Polpis, 2 weeks",
+          "start_date": "2027-07-19",
+          "end_date": "2027-07-30",
+          "price": 950,
+          "availability": "unknown"
+        },
+        {
+          "name": "Opti Green PM (ages 8-12, 1-3:30PM), Polpis, 2 weeks",
+          "start_date": "2027-08-02",
+          "end_date": "2027-08-13",
+          "price": 950,
+          "availability": "unknown"
+        },
+        {
+          "name": "Opti Blue (ages 9-12, 1-4PM), Jetties, 2 weeks",
+          "start_date": "2027-06-21",
+          "end_date": "2027-07-02",
+          "price": 1140,
+          "availability": "unknown"
+        },
+        {
+          "name": "Opti Blue (ages 9-12, 1-4PM), Jetties, 2 weeks",
+          "start_date": "2027-07-05",
+          "end_date": "2027-07-16",
+          "price": 1140,
+          "availability": "unknown"
+        },
+        {
+          "name": "Opti Blue (ages 9-12, 1-4PM), Jetties, 2 weeks",
+          "start_date": "2027-07-19",
+          "end_date": "2027-07-30",
+          "price": 1140,
+          "availability": "unknown"
+        },
+        {
+          "name": "Opti Blue (ages 9-12, 1-4PM), Jetties, 2 weeks",
+          "start_date": "2027-08-02",
+          "end_date": "2027-08-13",
+          "price": 1140,
+          "availability": "unknown"
+        },
+        {
+          "name": "420 Green (ages 12-18, 9AM-12PM), Jetties, 2 weeks",
+          "start_date": "2027-06-21",
+          "end_date": "2027-07-02",
+          "price": 1140,
+          "availability": "unknown"
+        },
+        {
+          "name": "420 Green (ages 12-18, 9AM-12PM), Jetties, 2 weeks",
+          "start_date": "2027-07-05",
+          "end_date": "2027-07-16",
+          "price": 1140,
+          "availability": "unknown"
+        },
+        {
+          "name": "420 Green (ages 12-18, 9AM-12PM), Jetties, 2 weeks",
+          "start_date": "2027-07-19",
+          "end_date": "2027-07-30",
+          "price": 1140,
+          "availability": "unknown"
+        },
+        {
+          "name": "420 Green (ages 12-18, 9AM-12PM), Jetties, 2 weeks",
+          "start_date": "2027-08-02",
+          "end_date": "2027-08-13",
+          "price": 1140,
+          "availability": "unknown"
+        },
+        {
+          "name": "420 Blue (ages 12-18, 9AM-12PM), Jetties, 2 weeks",
+          "start_date": "2027-06-21",
+          "end_date": "2027-07-02",
+          "price": 1140,
+          "availability": "unknown"
+        },
+        {
+          "name": "420 Blue (ages 12-18, 9AM-12PM), Jetties, 2 weeks",
+          "start_date": "2027-07-05",
+          "end_date": "2027-07-16",
+          "price": 1140,
+          "availability": "unknown"
+        },
+        {
+          "name": "420 Blue (ages 12-18, 9AM-12PM), Jetties, 2 weeks",
+          "start_date": "2027-07-19",
+          "end_date": "2027-07-30",
+          "price": 1140,
+          "availability": "unknown"
+        },
+        {
+          "name": "420 Blue (ages 12-18, 9AM-12PM), Jetties, 2 weeks",
+          "start_date": "2027-08-02",
+          "end_date": "2027-08-13",
+          "price": 1140,
+          "availability": "unknown"
+        },
+        {
+          "name": "All Island 420 Race Team (ages 13-18, Mon-Thu 11AM-5PM, invitation only, 4-week minimum)",
+          "start_date": "2027-06-21",
+          "end_date": "2027-06-24",
+          "price": 915,
+          "availability": "unknown"
+        },
+        {
+          "name": "All Island 420 Race Team (ages 13-18, Mon-Thu 11AM-5PM, invitation only, 4-week minimum)",
+          "start_date": "2027-06-28",
+          "end_date": "2027-07-01",
+          "price": 915,
+          "availability": "unknown"
+        },
+        {
+          "name": "All Island 420 Race Team (ages 13-18, Mon-Thu 11AM-5PM, invitation only, 4-week minimum)",
+          "start_date": "2027-07-05",
+          "end_date": "2027-07-08",
+          "price": 915,
+          "availability": "unknown"
+        },
+        {
+          "name": "All Island 420 Race Team (ages 13-18, Mon-Thu 11AM-5PM, invitation only, 4-week minimum)",
+          "start_date": "2027-07-12",
+          "end_date": "2027-07-15",
+          "price": 915,
+          "availability": "unknown"
+        },
+        {
+          "name": "All Island 420 Race Team (ages 13-18, Mon-Thu 11AM-5PM, invitation only, 4-week minimum)",
+          "start_date": "2027-07-19",
+          "end_date": "2027-07-22",
+          "price": 915,
+          "availability": "unknown"
+        },
+        {
+          "name": "All Island 420 Race Team (ages 13-18, Mon-Thu 11AM-5PM, invitation only, 4-week minimum)",
+          "start_date": "2027-07-26",
+          "end_date": "2027-07-29",
+          "price": 915,
+          "availability": "unknown"
+        },
+        {
+          "name": "All Island 420 Race Team (ages 13-18, Mon-Thu 11AM-5PM, invitation only, 4-week minimum)",
+          "start_date": "2027-08-02",
+          "end_date": "2027-08-05",
+          "price": 915,
+          "availability": "unknown"
+        },
+        {
+          "name": "All Island 420 Race Team (ages 13-18, Mon-Thu 11AM-5PM, invitation only, 4-week minimum)",
+          "start_date": "2027-08-09",
+          "end_date": "2027-08-12",
+          "price": 915,
+          "availability": "unknown"
+        },
+        {
+          "name": "All Island Opti Race Team (ages 9-15, Mon-Fri 1-5PM, invitation only, 4-week minimum)",
+          "start_date": "2027-06-21",
+          "end_date": "2027-06-25",
+          "price": 760,
+          "availability": "unknown"
+        },
+        {
+          "name": "All Island Opti Race Team (ages 9-15, Mon-Fri 1-5PM, invitation only, 4-week minimum)",
+          "start_date": "2027-06-28",
+          "end_date": "2027-07-02",
+          "price": 760,
+          "availability": "unknown"
+        },
+        {
+          "name": "All Island Opti Race Team (ages 9-15, Mon-Fri 1-5PM, invitation only, 4-week minimum)",
+          "start_date": "2027-07-05",
+          "end_date": "2027-07-09",
+          "price": 760,
+          "availability": "unknown"
+        },
+        {
+          "name": "All Island Opti Race Team (ages 9-15, Mon-Fri 1-5PM, invitation only, 4-week minimum)",
+          "start_date": "2027-07-12",
+          "end_date": "2027-07-16",
+          "price": 760,
+          "availability": "unknown"
+        },
+        {
+          "name": "All Island Opti Race Team (ages 9-15, Mon-Fri 1-5PM, invitation only, 4-week minimum)",
+          "start_date": "2027-07-19",
+          "end_date": "2027-07-23",
+          "price": 760,
+          "availability": "unknown"
+        },
+        {
+          "name": "All Island Opti Race Team (ages 9-15, Mon-Fri 1-5PM, invitation only, 4-week minimum)",
+          "start_date": "2027-07-26",
+          "end_date": "2027-07-30",
+          "price": 760,
+          "availability": "unknown"
+        },
+        {
+          "name": "All Island Opti Race Team (ages 9-15, Mon-Fri 1-5PM, invitation only, 4-week minimum)",
+          "start_date": "2027-08-02",
+          "end_date": "2027-08-06",
+          "price": 760,
+          "availability": "unknown"
+        },
+        {
+          "name": "All Island Opti Race Team (ages 9-15, Mon-Fri 1-5PM, invitation only, 4-week minimum)",
+          "start_date": "2027-08-09",
+          "end_date": "2027-08-13",
+          "price": 760,
+          "availability": "unknown"
+        },
+        {
+          "name": "Jetties Sailing Club (ages 11-18, Mon, Wed-Fri 1-4PM)",
+          "start_date": "2027-06-21",
+          "end_date": "2027-06-25",
+          "price": 455,
+          "availability": "unknown"
+        },
+        {
+          "name": "Jetties Sailing Club (ages 11-18, Mon, Wed-Fri 1-4PM)",
+          "start_date": "2027-06-28",
+          "end_date": "2027-07-02",
+          "price": 455,
+          "availability": "unknown"
+        },
+        {
+          "name": "Jetties Sailing Club (ages 11-18, Mon, Wed-Fri 1-4PM)",
+          "start_date": "2027-07-05",
+          "end_date": "2027-07-09",
+          "price": 455,
+          "availability": "unknown"
+        },
+        {
+          "name": "Jetties Sailing Club (ages 11-18, Mon, Wed-Fri 1-4PM)",
+          "start_date": "2027-07-12",
+          "end_date": "2027-07-16",
+          "price": 455,
+          "availability": "unknown"
+        },
+        {
+          "name": "Jetties Sailing Club (ages 11-18, Mon, Wed-Fri 1-4PM)",
+          "start_date": "2027-07-19",
+          "end_date": "2027-07-23",
+          "price": 455,
+          "availability": "unknown"
+        },
+        {
+          "name": "Jetties Sailing Club (ages 11-18, Mon, Wed-Fri 1-4PM)",
+          "start_date": "2027-07-26",
+          "end_date": "2027-07-30",
+          "price": 455,
+          "availability": "unknown"
+        },
+        {
+          "name": "Jetties Sailing Club (ages 11-18, Mon, Wed-Fri 1-4PM)",
+          "start_date": "2027-08-02",
+          "end_date": "2027-08-06",
+          "price": 455,
+          "availability": "unknown"
+        },
+        {
+          "name": "Jetties Sailing Club (ages 11-18, Mon, Wed-Fri 1-4PM)",
+          "start_date": "2027-08-09",
+          "end_date": "2027-08-13",
+          "price": 455,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://nantucketcommunitysailing.org/pages/youth-camps-classes",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "registration_url",
+            "email",
+            "phone",
+            "city",
+            "state",
+            "camp_type",
+            "primary_categories",
+            "activities",
+            "age_min",
+            "age_max",
+            "description_short",
+            "price_min",
+            "price_max",
+            "price_per_week",
+            "price_per",
+            "financial_aid",
+            "swim_waterfront_notes",
+            "sessions",
+            "zip"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://nantucketcommunitysailing.org/pages/faq",
+          "checked": "2026-11-13",
+          "fields": [
+            "refund_policy_summary"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ],
+      "refund_policy_summary": "Cancel on or before April 30 for a 90% refund of tuition; from May 1 registrations are non-refundable. Transfers after June 1 cost 10% per sailor per session. Classes missed for weather are not made up or refunded."
+    },
+    {
+      "slug": "nantucket-nature-bound-program-teen-naturalist-leadership-program-nantucket",
+      "name": "Nantucket Nature Bound Program (Teen Naturalist Leadership Program)",
+      "operator_name": "Maria Mitchell Association",
+      "website_url": "https://www.mariamitchell.org/teen-naturalist-leadership-program",
+      "email": "info@mariamitchell.org",
+      "phone": "(508) 228-9198",
+      "street_address": "4 Vestal Street",
+      "city": "Nantucket",
+      "state": "MA",
+      "zip": "02554",
+      "camp_type": "day",
+      "primary_categories": [
+        "nature",
+        "STEM"
+      ],
+      "age_min": 13,
+      "age_max": 17,
+      "description_short": "A set of week-long afternoon nature programs (1:15-4:15pm) for teens aged 13-17, run by the Maria Mitchell Association on Nantucket. Each week has its own theme, such as coastal ecology, marine and land ecology, cross-island hikes, or behind-the-scenes work at the museum and aquarium.",
+      "activities": [
+        "animal husbandry",
+        "museum operations",
+        "ecological fieldwork",
+        "snorkeling",
+        "seining",
+        "hiking",
+        "kayaking",
+        "beach combing",
+        "animal tracking",
+        "dissections",
+        "fish printing",
+        "plankton collection",
+        "orienteering",
+        "plant identification",
+        "ocean-themed art projects",
+        "community service projects"
+      ],
+      "price_per_week": 665,
+      "price_min": 665,
+      "price_max": 665,
+      "financial_aid": true,
+      "refund_policy_summary": "MMA may cancel a camper's spot without a refund if the medical and registration forms are not received at least two weeks before the session starts. The page gives no general refund policy.",
+      "swim_waterfront_notes": "Campers must show strong swimming ability to snorkel (this applies to the Marine and Terrestrial Ecology and Aquarists of Tomorrow programs). Activities also include kayaking and seining.",
+      "season_year": 2026,
+      "price_per": "week",
+      "sessions": [
+        {
+          "name": "Coastal Resiliency and Nantucket Ecology I (Week 2)",
+          "start_date": "2026-06-22",
+          "end_date": "2026-06-26",
+          "price": 665,
+          "availability": "unknown"
+        },
+        {
+          "name": "Marine and Terrestrial Ecology I (Week 3)",
+          "start_date": "2026-06-29",
+          "end_date": "2026-07-03",
+          "price": 665,
+          "availability": "unknown"
+        },
+        {
+          "name": "Cross Island Habitat Hike I (Week 4)",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "price": 665,
+          "availability": "unknown"
+        },
+        {
+          "name": "Coastal Resiliency and Nantucket Ecology II (Week 6)",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "price": 665,
+          "availability": "unknown"
+        },
+        {
+          "name": "Marine and Terrestrial Ecology II (Week 7)",
+          "start_date": "2026-07-27",
+          "end_date": "2026-07-31",
+          "price": 665,
+          "availability": "unknown"
+        },
+        {
+          "name": "Cross Island Habitat Hike II (Week 8)",
+          "start_date": "2026-08-03",
+          "end_date": "2026-08-07",
+          "price": 665,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.mariamitchell.org/teen-naturalist-leadership-program",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "email",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "primary_categories",
+            "activities",
+            "age_min",
+            "age_max",
+            "description_short",
+            "price_min",
+            "price_max",
+            "price_per_week",
+            "price_per",
+            "refund_policy_summary",
+            "swim_waterfront_notes",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://www.mariamitchell.org/scholarships-discounts",
+          "checked": "2026-11-13",
+          "fields": [
+            "financial_aid"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ]
+    },
+    {
+      "slug": "springfield-jcc-summer-camp-springfield",
+      "name": "Springfield JCC Summer Camp",
+      "operator_name": "Springfield Jewish Community Center",
+      "website_url": "https://www.springfieldjcc.org/camp/",
+      "email": "info@springfieldjcc.org",
+      "phone": "413-739-4715",
+      "street_address": "1160 Dickinson Street",
+      "city": "Springfield",
+      "state": "MA",
+      "zip": "01108",
+      "camp_type": "day",
+      "primary_categories": [
+        "sports",
+        "arts",
+        "faith",
+        "special_needs"
+      ],
+      "age_min": 5,
+      "description_short": "A full day camp for children ages 5 and up on the Springfield JCC's 20-acre campus. It offers Traditional Camp, Inclusion Camp and 2-4-1 Sports Camp, and teens ages 14-15 can join a Counselors in Training program. The camp is rooted in Jewish values and open to children of all backgrounds.",
+      "activities": [
+        "Swimming",
+        "Ropes course",
+        "Archery",
+        "Indoor and outdoor sports and games",
+        "Arts & crafts",
+        "Jewish activities and celebrations",
+        "Counselors in Training (ages 14-15)"
+      ],
+      "financial_aid": true,
+      "extended_care": true,
+      "special_needs_notes": "The Inclusion Camp supports children with different abilities so they can take part in camp with their peers. Financial aid covers Inclusion Camp.",
+      "swim_waterfront_notes": "Campers swim in the JCC's pool. Traditional Camp has two swim lessons and two free swims each week, with a swim test every Monday; lifeguards hold the required certifications.",
+      "aca_accredited": true,
+      "aca_source_url": "https://www.springfieldjcc.org/camp/",
+      "season_year": 2026,
+      "sessions": [
+        {
+          "name": "Summer 2026 season (book by the week; weekly dates not listed)",
+          "start_date": "2026-06-22",
+          "end_date": "2026-08-21",
+          "price": null,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.springfieldjcc.org/camp/",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "email",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "primary_categories",
+            "activities",
+            "age_min",
+            "description_short",
+            "extended_care",
+            "financial_aid",
+            "special_needs_notes",
+            "sessions",
+            "aca_accredited",
+            "aca_source_url"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://www.springfieldjcc.org/traditional-camp/",
+          "checked": "2026-11-13",
+          "fields": [
+            "swim_waterfront_notes"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ]
+    },
+    {
+      "slug": "urj-crane-lake-camp-west-stockbridge",
+      "name": "URJ Crane Lake Camp",
+      "operator_name": "Union for Reform Judaism",
+      "website_url": "https://cranelakecamp.org/",
+      "registration_url": "https://cranelakecamp.org/register-login/",
+      "phone": "(201) 722-0400",
+      "street_address": "46 State Line Road",
+      "city": "West Stockbridge",
+      "state": "MA",
+      "zip": "01266",
+      "camp_type": "sleepaway",
+      "primary_categories": [
+        "faith"
+      ],
+      "grade_min": 2,
+      "grade_max": 11,
+      "description_short": "Reform Jewish overnight camp in West Stockbridge, Massachusetts, run by the Union for Reform Judaism. Campers entering grades 2–10 come for 2-week, roughly 3–4-week, or full-summer sessions, and there is an Israel trip for grade 11.",
+      "price_min": 4450,
+      "price_max": 14700,
+      "financial_aid": true,
+      "season_year": 2027,
+      "sessions": [
+        {
+          "name": "1st Session – K'tanim (Grades 2-4) [Hillside: Filling Fast; Lakeside: Filling]",
+          "start_date": "2027-06-27",
+          "end_date": "2027-07-11",
+          "price": 4450,
+          "availability": "open"
+        },
+        {
+          "name": "1st Session – Lower Nitzanim (Grades 2-4) [Hillside: Filling Fast; Lakeside: Filling]",
+          "start_date": "2027-06-27",
+          "end_date": "2027-07-23",
+          "price": 8575,
+          "availability": "open"
+        },
+        {
+          "name": "1st Session – Upper Nitzanim (Grade 5) [Hillside: Almost Full; Lakeside: Filling Fast]",
+          "start_date": "2027-06-27",
+          "end_date": "2027-07-23",
+          "price": 8575,
+          "availability": "open"
+        },
+        {
+          "name": "1st Session – Lower Bonim (Grade 6) [Hillside: Almost Full; Lakeside: Filling]",
+          "start_date": "2027-06-27",
+          "end_date": "2027-07-23",
+          "price": 8575,
+          "availability": "open"
+        },
+        {
+          "name": "1st Session – Upper Bonim (Grade 7) [Hillside: Filling Fast; Lakeside: Filling]",
+          "start_date": "2027-06-27",
+          "end_date": "2027-07-23",
+          "price": 8575,
+          "availability": "open"
+        },
+        {
+          "name": "1st Session – Lower Chaverim (Grade 8) [Hillside: WAITLIST; Lakeside: Filling]",
+          "start_date": "2027-06-27",
+          "end_date": "2027-07-23",
+          "price": 8775,
+          "availability": "unknown"
+        },
+        {
+          "name": "1st Session – Upper Chaverim (Grade 9) [Hillside: Filling Fast; Lakeside: Filling]",
+          "start_date": "2027-06-27",
+          "end_date": "2027-07-23",
+          "price": 8775,
+          "availability": "open"
+        },
+        {
+          "name": "1st Session – Olim (Grade 10) [Hillside: Filling Fast; Lakeside: Almost Full]",
+          "start_date": "2027-06-27",
+          "end_date": "2027-07-23",
+          "price": 8775,
+          "availability": "open"
+        },
+        {
+          "name": "2nd Session – K'tanim (Grades 2-4) [Hillside: Filling; Lakeside: Filling]",
+          "start_date": "2027-07-25",
+          "end_date": "2027-08-08",
+          "price": 4450,
+          "availability": "open"
+        },
+        {
+          "name": "2nd Session – Lower Nitzanim (Grades 2-4) [Hillside: Filling; Lakeside: Filling]",
+          "start_date": "2027-07-25",
+          "end_date": "2027-08-15",
+          "price": 7100,
+          "availability": "open"
+        },
+        {
+          "name": "2nd Session – Upper Nitzanim (Grade 5) [Hillside: Filling Fast; Lakeside: Filling Fast]",
+          "start_date": "2027-07-25",
+          "end_date": "2027-08-15",
+          "price": 7100,
+          "availability": "open"
+        },
+        {
+          "name": "2nd Session – Lower Bonim (Grade 6) [Hillside: Filling Fast; Lakeside: Almost Full]",
+          "start_date": "2027-07-25",
+          "end_date": "2027-08-15",
+          "price": 7100,
+          "availability": "open"
+        },
+        {
+          "name": "2nd Session – Upper Bonim (Grade 7) [Hillside: Almost Full; Lakeside: Filling]",
+          "start_date": "2027-07-25",
+          "end_date": "2027-08-15",
+          "price": 7100,
+          "availability": "open"
+        },
+        {
+          "name": "2nd Session – Lower Chaverim (Grade 8) [Hillside: WAITLIST; Lakeside: Filling Fast]",
+          "start_date": "2027-07-25",
+          "end_date": "2027-08-15",
+          "price": 7300,
+          "availability": "unknown"
+        },
+        {
+          "name": "2nd Session – Upper Chaverim (Grade 9) [Hillside: Almost Full; Lakeside: Filling]",
+          "start_date": "2027-07-25",
+          "end_date": "2027-08-15",
+          "price": 7300,
+          "availability": "open"
+        },
+        {
+          "name": "2nd Session – Olim (Grade 10) [Hillside: Filling Fast; Lakeside: WAITLIST]",
+          "start_date": "2027-07-25",
+          "end_date": "2027-08-15",
+          "price": 7300,
+          "availability": "unknown"
+        },
+        {
+          "name": "Full Summer – Grades 3-7",
+          "start_date": "2027-06-27",
+          "end_date": "2027-08-15",
+          "price": 14500,
+          "availability": "unknown"
+        },
+        {
+          "name": "Full Summer – Grades 8-10",
+          "start_date": "2027-06-27",
+          "end_date": "2027-08-15",
+          "price": 14700,
+          "availability": "unknown"
+        },
+        {
+          "name": "Crane Lake in Israel – Yallah! Israel (1 week Poland, 4 weeks Israel), Grade 11",
+          "start_date": "2027-06-30",
+          "end_date": "2027-08-04",
+          "price": null,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://cranelakecamp.org/dates-rates/",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "registration_url",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "primary_categories",
+            "grade_min",
+            "grade_max",
+            "description_short",
+            "price_min",
+            "price_max",
+            "financial_aid",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ]
+    },
+    {
+      "slug": "wellfleet-bay-nature-camp-wellfleet",
+      "name": "Wellfleet Bay Nature Camp",
+      "operator_name": "Mass Audubon",
+      "website_url": "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/wellfleet-bay/camp",
+      "phone": "508-694-3620",
+      "street_address": "291 State Highway Route 6",
+      "city": "Wellfleet",
+      "state": "MA",
+      "zip": "02663",
+      "camp_type": "day",
+      "primary_categories": [
+        "nature"
+      ],
+      "age_min": 4,
+      "age_max": 13,
+      "description_short": "A Mass Audubon nature camp for ages 4–13 held at the 1,100-acre Wellfleet Bay Wildlife Sanctuary on Cape Cod, where campers explore the outdoors and learn about nature.",
+      "activities": [
+        "Habitat hikes",
+        "Tide pooling",
+        "Dip-netting",
+        "Wildlife observation",
+        "Nature crafts",
+        "Outdoor games",
+        "Science activities",
+        "Counselor-in-Training program (ages 14-17)"
+      ],
+      "financial_aid": true,
+      "season_year": 2026,
+      "price_min": 60,
+      "price_max": 698,
+      "price_per": "week",
+      "extended_care": true,
+      "aca_accredited": true,
+      "aca_source_url": "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/wellfleet-bay/camp/about-camp",
+      "sources": [
+        {
+          "url": "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/wellfleet-bay/camp",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "city",
+            "state",
+            "primary_categories",
+            "age_min",
+            "age_max",
+            "description_short",
+            "financial_aid"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/wellfleet-bay/camp/programs-pricing",
+          "checked": "2026-11-13",
+          "fields": [
+            "activities",
+            "price_min",
+            "price_max",
+            "price_per",
+            "extended_care"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/wellfleet-bay/camp/about-camp",
+          "checked": "2026-11-13",
+          "fields": [
+            "phone",
+            "camp_type",
+            "aca_accredited",
+            "aca_source_url"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/wellfleet-bay",
+          "checked": "2026-11-13",
+          "fields": [
+            "street_address",
+            "zip"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ]
+    },
+    {
+      "slug": "worcester-center-for-crafts-youth-summer-program-worcester",
+      "name": "Worcester Center for Crafts Youth Summer Program",
+      "operator_name": "Worcester Center for Crafts",
+      "website_url": "https://worcestercraftcenter.org/youth-summer-program/",
+      "registration_url": "https://register.worcestercraftcenter.org/wconnect/ace/ShowSchedule.awp?Group=YC_SUM&Title=YOUTH:+Summer+Classes",
+      "phone": "508-753-8183 ext 301",
+      "street_address": "25 Sagamore Road",
+      "city": "Worcester",
+      "state": "MA",
+      "zip": "01605",
+      "camp_type": "day",
+      "primary_categories": [
+        "arts"
+      ],
+      "age_min": 7,
+      "age_max": 13,
+      "description_short": "A full-day craft and art day camp in Worcester, MA for ages 7–13, running 9:00am–3:00pm. Each week you pick one class from separate tracks for ages 7–9 and 10–13, covering things like stained glass, metalsmithing, fiber arts and animation.",
+      "activities": [
+        "stained glass",
+        "kiln-formed glass",
+        "metalsmithing",
+        "chainmail jewelry",
+        "enameling",
+        "weaving",
+        "natural dyes",
+        "fiber arts",
+        "crochet",
+        "polymer clay",
+        "sculpture",
+        "game design",
+        "comic book and digital art",
+        "2D animation",
+        "movie making",
+        "streetwear fashion design"
+      ],
+      "price_per_week": 420,
+      "price_min": 252,
+      "price_max": 780,
+      "extended_care": true,
+      "meals_included": false,
+      "season_year": 2026,
+      "price_per": "week",
+      "sessions": [
+        {
+          "name": "Ages 7-9 – Week 1: Color My World: Stained Glass Exploration",
+          "start_date": "2026-06-29",
+          "end_date": "2026-07-02",
+          "price": 360,
+          "availability": "unknown"
+        },
+        {
+          "name": "Ages 7-9 – Week 1: Metal Magic: Create Your Own Wearable Art!",
+          "start_date": "2026-06-29",
+          "end_date": "2026-07-02",
+          "price": 360,
+          "availability": "unknown"
+        },
+        {
+          "name": "Ages 7-9 – Week 2: Fantasy Game Making",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "price": 420,
+          "availability": "unknown"
+        },
+        {
+          "name": "Ages 7-9 – Week 3: Weaving/ Natural Dyes/ Fiber & Form",
+          "start_date": "2026-07-13",
+          "end_date": "2026-07-15",
+          "price": 252,
+          "availability": "unknown"
+        },
+        {
+          "name": "Ages 7-9 – Week 3: The Miniature Village with Polymer Clay",
+          "start_date": "2026-07-13",
+          "end_date": "2026-07-15",
+          "price": 270,
+          "availability": "unknown"
+        },
+        {
+          "name": "Ages 7-9 – Week 4: Fiber Art Adventure: From Loom to Luxe Pillow",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "price": 450,
+          "availability": "unknown"
+        },
+        {
+          "name": "Ages 7-9 – Week 5: Crochet Creatures & Creations!",
+          "start_date": "2026-07-27",
+          "end_date": "2026-07-31",
+          "price": 420,
+          "availability": "unknown"
+        },
+        {
+          "name": "Ages 7-9 – Week 6: Creative Chemistry: Maker Lab",
+          "start_date": "2026-08-03",
+          "end_date": "2026-08-07",
+          "price": 420,
+          "availability": "unknown"
+        },
+        {
+          "name": "Ages 7-9 – Week 6: Kiln Formed Glass Survey",
+          "start_date": "2026-08-03",
+          "end_date": "2026-08-07",
+          "price": 450,
+          "availability": "unknown"
+        },
+        {
+          "name": "Ages 7-9 – Week 7: Wearable Sculpture",
+          "start_date": "2026-08-10",
+          "end_date": "2026-08-14",
+          "price": 420,
+          "availability": "unknown"
+        },
+        {
+          "name": "Ages 7-9 – Week 8: Sculpture with an Armature",
+          "start_date": "2026-08-17",
+          "end_date": "2026-08-21",
+          "price": 420,
+          "availability": "unknown"
+        },
+        {
+          "name": "Ages 7-9 – Week 8: Cosmic Glass Creations: Stained Glass Suns & Planets",
+          "start_date": "2026-08-17",
+          "end_date": "2026-08-21",
+          "price": 450,
+          "availability": "unknown"
+        },
+        {
+          "name": "Ages 10-13 – Week 1: Weaving/ Natural Dyes/ Fiber & Form",
+          "start_date": "2026-06-29",
+          "end_date": "2026-07-02",
+          "price": 336,
+          "availability": "unknown"
+        },
+        {
+          "name": "Ages 10-13 – Week 1: Creative Chemistry: Maker Lab",
+          "start_date": "2026-06-29",
+          "end_date": "2026-07-02",
+          "price": 336,
+          "availability": "unknown"
+        },
+        {
+          "name": "Ages 10-13 – Week 2: Streetwear Fashion Design + Videography",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "price": 420,
+          "availability": "unknown"
+        },
+        {
+          "name": "Ages 10-13 – Week 2: Medieval Wonders: Stained Glass Adventures",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "price": 450,
+          "availability": "unknown"
+        },
+        {
+          "name": "Ages 10-13 – Week 2: Chainmail Jewelry & Keychains + Create Your Own Wearable Art!",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "price": 450,
+          "availability": "unknown"
+        },
+        {
+          "name": "Ages 10-13 – Week 3: Fantasy Game Making",
+          "start_date": "2026-07-13",
+          "end_date": "2026-07-15",
+          "price": 252,
+          "availability": "unknown"
+        },
+        {
+          "name": "Ages 10-13 – Week 3: Bloom in Glass: Stained Glass Flower Garden",
+          "start_date": "2026-07-13",
+          "end_date": "2026-07-15",
+          "price": 270,
+          "availability": "unknown"
+        },
+        {
+          "name": "Ages 10-13 – Week 4: Comic Book Creation & Digital Art",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "price": 420,
+          "availability": "unknown"
+        },
+        {
+          "name": "Ages 10-13 – Week 4: Stamping, Sawing, and Shaping – Intro to Metalsmithing",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "price": 450,
+          "availability": "unknown"
+        },
+        {
+          "name": "Ages 10-13 – Week 5: Introduction to 2D Animation",
+          "start_date": "2026-07-27",
+          "end_date": "2026-07-31",
+          "price": 420,
+          "availability": "unknown"
+        },
+        {
+          "name": "Ages 10-13 – Week 5: Exploring Enameling and Identity",
+          "start_date": "2026-07-27",
+          "end_date": "2026-07-31",
+          "price": 450,
+          "availability": "unknown"
+        },
+        {
+          "name": "Ages 10-13 – Weeks 6 & 7: Creative Movie Making (two-week class)",
+          "start_date": "2026-08-03",
+          "end_date": "2026-08-14",
+          "price": 780,
+          "availability": "unknown"
+        },
+        {
+          "name": "Ages 10-13 – Week 7: Glass Menagerie: Create Your Own Stained Glass Animals",
+          "start_date": "2026-08-10",
+          "end_date": "2026-08-14",
+          "price": 450,
+          "availability": "unknown"
+        },
+        {
+          "name": "Ages 10-13 – Week 8: Cosmic Glass Creations: Stained Glass Suns & Planets",
+          "start_date": "2026-08-17",
+          "end_date": "2026-08-21",
+          "price": 450,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://worcestercraftcenter.org/youth-summer-program/",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "registration_url",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "primary_categories",
+            "activities",
+            "age_min",
+            "age_max",
+            "description_short",
+            "price_min",
+            "price_max",
+            "price_per_week",
+            "price_per",
+            "extended_care",
+            "meals_included",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ]
+    }
+  ]
 }

@@ -81,7 +81,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "drop",
     "source": {
       "url": "https://www.foodallergyawareness.org/camp-tag/hinsdale-massachusetts",
       "kind": "html",
@@ -112,6 +112,17 @@
       "missing required city",
       "missing required state",
       "missing required zip"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.foodallergyawareness.org/camp-tag/hinsdale-massachusetts"
+      ],
+      "changes": [
+        "Marked drop: the operator's own page lists only two 2027 Camp TAG locations, Lebanon, Ohio (June 7 to 11, YMCA Camp Kern) and Nashville, Tennessee (June 21 to 25, YMCA Camp Widjiwagan). There is no Massachusetts session, so the camp is not near Hinsdale or anywhere in this metro.",
+        "Left the fields as drafted; city, state and zip stay empty, so the draft cannot validate for this metro anyway."
+      ],
+      "open_questions": []
+    }
   }
 }

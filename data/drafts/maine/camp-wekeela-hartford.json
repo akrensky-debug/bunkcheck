@@ -3,12 +3,14 @@
   "name": "Camp Wekeela",
   "website_url": "https://www.campwekeela.com",
   "registration_url": "https://www.campwekeela.com/enroll.php",
+  "email": "info@campwekeela.com",
   "phone": "207-224-7878",
   "street_address": "1750 Bear Pond Road",
   "city": "Hartford",
   "state": "ME",
   "zip": "04220",
   "camp_type": "sleepaway",
+  "gender_policy": "coed",
   "age_min": 7,
   "age_max": 16,
   "description_short": "Overnight camp in Hartford, Maine, for about 280 campers ages 7-16 per session. Families can choose a seven-week full session, a first or second session, or (for first-time campers only) a two-week rookie session. There are separate Kids Camp, Teen Camp (grades 7-9) and Leadership in Training (10th grade) programs.",
@@ -22,10 +24,7 @@
     "Overnight trips",
     "Community service trip to Puerto Rico (LIT first session)"
   ],
-  "price_min": 5500,
-  "price_max": 17900,
   "transportation": true,
-  "meals_included": true,
   "special_needs_notes": "The camp is nut-aware and offers special-diet meals for campers with dietary restrictions. It has a separate Food Allergies page.",
   "season_year": 2027,
   "sessions": [
@@ -124,7 +123,7 @@
   "sources": [
     {
       "url": "https://www.campwekeela.com/dates-and-rates.php",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "website_url",
@@ -134,23 +133,27 @@
         "city",
         "state",
         "zip",
-        "camp_type",
         "activities",
         "age_min",
         "age_max",
         "description_short",
-        "price_min",
-        "price_max",
         "transportation",
-        "meals_included",
         "special_needs_notes",
-        "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+        "sessions",
+        "email"
+      ]
+    },
+    {
+      "url": "https://www.campwekeela.com/summer-camp-faqs.php",
+      "checked": "2026-11-13",
+      "fields": [
+        "camp_type",
+        "gender_policy"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.campwekeela.com/dates-and-rates.php",
       "kind": "html",
@@ -193,6 +196,26 @@
         "quote": "LITs (current 10th Graders) - Full Session ... $17,900"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.campwekeela.com/dates-and-rates.php",
+        "https://www.campwekeela.com/dates-and-rates-current-families.php",
+        "https://www.campwekeela.com/summer-camp-faqs.php"
+      ],
+      "changes": [
+        "Removed price_min 5,500 and price_max 17,900: every session shows two prices with no label (for example Full Kids $15,900 and $15,200), so the price a family pays can't be read from the page.",
+        "Removed meals_included: the page says the camp offers special-diet meals but never says meals are in tuition.",
+        "Added gender_policy coed from the FAQ (boys and girls live in separate cabin villages; the sample schedule has Freshman Boys and Freshman Girls).",
+        "Added email info@campwekeela.com, linked from the Dates & Rates page.",
+        "camp_type sleepaway now rests on the FAQ ('Where do campers sleep?': cabins of 10 to 12 campers).",
+        "Checked all 13 session rows and dates against the Dates & Rates page; they match. Session prices stay empty.",
+        "The old warnings have two small errors: payments are due November 1 and February 1 (not December 1 and March 1), and the Portland Jetport round trip is $305 (not $285)."
+      ],
+      "open_questions": [
+        "Each Wekeela session shows two unlabeled prices (e.g. $15,900 and $15,200), probably a crossed-out price and a current one, but the text alone doesn't say which. Should we ask the camp, or check the page in a browser, before filling prices?"
+      ]
+    }
   }
 }

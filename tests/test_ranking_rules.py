@@ -126,3 +126,9 @@ def test_activity_rank_ignores_our_check_and_billing() -> None:
     confirmed, _ = score_activity({**base, "verification_status": "provider_verified"}, [], q, 2.0, [])
     assert plain == checked == paying
     assert confirmed == pytest.approx(plain + 0.02)
+
+
+def test_reason_line_keeps_acronym_categories_uppercase():
+    """Categories are matched lowercase; the reason a parent reads says STEM, not stem."""
+    _, reasons = score_camp(CAMPS[3], [], age=8, categories=["STEM"])
+    assert "Offers STEM programs" in reasons

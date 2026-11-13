@@ -9,7 +9,7 @@
   "city": "Colchester",
   "state": "VT",
   "zip": "05446",
-  "description_short": "Colchester, VT Parks & Recreation runs programs for all ages, including summer camps from June to August. This page covers how to register, pay, and get refunds. It does not list individual camps.",
+  "description_short": "Colchester, VT Parks & Recreation runs programs for all ages, including summer camps from June to August. This page covers how to register, pay and get refunds. It does not list individual camps.",
   "financial_aid": true,
   "refund_policy_summary": "Camp refunds: until May 31, 100% back minus a $25 admin fee. From June 1 until 14 days before camp starts, 75% back minus a $25 admin fee. The same rules apply to transfers. Requests must be in writing to recreation@colchestervt.gov. If a program is cancelled for low enrollment, you get a full refund. Card and online payments carry a 3% service fee, and online registrations must be paid in full.",
   "special_needs_notes": "Children with special needs are encouraged to take part. Most parks and facilities comply with the ADA. Call the Recreation Department to ask about access or program details.",
@@ -17,7 +17,7 @@
   "sources": [
     {
       "url": "https://colchestervt.gov/335/Program-Registration",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -27,24 +27,16 @@
         "phone",
         "city",
         "state",
+        "zip",
         "description_short",
         "financial_aid",
         "refund_policy_summary",
         "special_needs_notes"
-      ],
-      "note": "Drafted by the listing tool from this page"
-    },
-    {
-      "url": "https://www.census.gov/geographies/reference-files/time-series/geo/relationship-files.2020.html",
-      "checked": "2026-10-14",
-      "fields": [
-        "zip"
-      ],
-      "note": "Colchester, VT sits inside one ZIP code (2020 Census ZCTA relationship file)"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "drop",
     "source": {
       "url": "https://colchestervt.gov/335/Program-Registration",
       "kind": "html",
@@ -71,6 +63,24 @@
     "errors": [
       "missing required camp_type",
       "camp_type must be one of ['day', 'sleepaway', 'specialty']"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://colchestervt.gov/335/Program-Registration",
+        "https://colchestervt.gov/DocumentCenter/View/11676/2026WinterBrochure",
+        "https://colchestervt.gov/recreation",
+        "https://secure.rec1.com/VT/colchester-vt/catalog (not opened: online registration system)"
+      ],
+      "changes": [
+        "Checked email, phone, registration link, scholarship, refund and special needs text on the Program Registration page; they match.",
+        "Sourced the ZIP 05446 to the town's own page footer (781 Blakely Road, Colchester, VT 05446) instead of the Census file. Colchester is not a one-ZIP town (05439 is also Colchester), so the old note was wrong.",
+        "Marked drop: this is the town's registration policy page, not a camp. It names no camp, dates, ages, price or day/overnight type, so camp_type can't be filled and the validator fails.",
+        "The page's '2026 Summer Brochure' link actually opens the Winter 2026 brochure, so I could not read the summer camp listings. The Recreation home page now shows only the Fall 2026 brochure."
+      ],
+      "open_questions": [
+        "Colchester Rec does run summer camps. Worth drafting real camp listings from the 2027 Summer Brochure once the town posts it (residents' registration opened late January last year)."
+      ]
+    }
   }
 }

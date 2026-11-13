@@ -13,43 +13,43 @@
   ],
   "grade_min": 2,
   "grade_max": 8,
-  "description_short": "Half-day, 4-day lacrosse camps for boys and girls in grades 2–8, held outdoors on town fields in several Maine towns. Players are grouped by age and skill level, and you register through each town's Parks & Recreation department.",
+  "description_short": "Half-day (9:30am-12:00pm), 4-day lacrosse camps for boys and girls entering grades 2-8 in fall 2026, held outdoors on town fields in Scarborough, Brunswick, Cumberland, Kennebunk and Cape Elizabeth. Players are grouped by age and skill level, and you register through each town's Parks & Recreation department.",
   "activities": [
     "Lacrosse"
   ],
-  "refund_policy_summary": "Sessions canceled because of bad weather are not rescheduled or refunded. The site also links to a separate Business & Refund Policy that was not included in this source.",
+  "refund_policy_summary": "All Maineiax payments are non-refundable. If a player is injured or ill before the program starts and you send a doctor's note before the start date, you get a house credit good for any Maineiax program until the end of that calendar year. Absences, mid-program cancellations and weather cancellations are not credited or refunded. Transfers to another program are honored if space allows and you ask three weeks ahead.",
   "season_year": 2026,
   "sessions": [
     {
-      "name": "Scarborough",
+      "name": "Scarborough (9:30am-12:00pm; register through Scarborough Parks & Rec)",
       "start_date": "2026-06-22",
       "end_date": "2026-06-25",
       "price": null,
       "availability": "unknown"
     },
     {
-      "name": "Brunswick",
+      "name": "Brunswick (9:30am-12:00pm; register through Brunswick Parks & Rec)",
       "start_date": "2026-06-29",
       "end_date": "2026-07-02",
       "price": null,
       "availability": "unknown"
     },
     {
-      "name": "Cumberland",
+      "name": "Cumberland (9:30am-12:00pm; register through Cumberland Parks & Rec)",
       "start_date": "2026-07-06",
       "end_date": "2026-07-09",
       "price": null,
       "availability": "unknown"
     },
     {
-      "name": "Kennebunk",
+      "name": "Kennebunk (9:30am-12:00pm; register through Kennebunk Parks & Rec)",
       "start_date": "2026-07-13",
       "end_date": "2026-07-16",
       "price": null,
       "availability": "unknown"
     },
     {
-      "name": "Cape Elizabeth",
+      "name": "Cape Elizabeth (9:30am-12:00pm; register through Cape Elizabeth Parks & Rec)",
       "start_date": "2026-07-20",
       "end_date": "2026-07-23",
       "price": null,
@@ -59,7 +59,7 @@
   "sources": [
     {
       "url": "https://maineiax.com/camp/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -72,14 +72,21 @@
         "grade_min",
         "grade_max",
         "description_short",
-        "refund_policy_summary",
         "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Camp's own 2026 camp page"
+    },
+    {
+      "url": "https://maineiax.com/wp-content/uploads/Maineiax-Business-Policy.pdf",
+      "checked": "2026-11-13",
+      "fields": [
+        "refund_policy_summary"
+      ],
+      "note": "Maineiax Business & Refund Policy PDF, linked from the camp page"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://maineiax.com/camp/",
       "kind": "html",
@@ -106,6 +113,22 @@
       "missing required city",
       "missing required zip",
       "city None, ME is not in cities.py"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://maineiax.com/camp/",
+        "https://maineiax.com/wp-content/uploads/Maineiax-Business-Policy.pdf",
+        "https://maineiax.com/contact/"
+      ],
+      "changes": [
+        "Rewrote refund_policy_summary from the linked Business & Refund Policy PDF (all payments non-refundable, house credit with a doctor's note, transfers with three weeks' notice)",
+        "Added hours (9:30am-12:00pm) and the five towns to description_short and session names",
+        "All other filled fields match the 2026 camp page; city and zip stay empty because the club gives no home address"
+      ],
+      "open_questions": [
+        "This is a traveling program run on town fields in five different towns (Scarborough, Brunswick, Cumberland, Kennebunk, Cape Elizabeth), registered and priced by each town's Parks & Rec. The camp's site gives no home town, street address or ZIP, so city and zip are missing and it cannot validate. List it once under one town, split it into five listings, or drop it?"
+      ]
+    }
   }
 }

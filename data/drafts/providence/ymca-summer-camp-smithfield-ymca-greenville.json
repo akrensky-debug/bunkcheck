@@ -8,30 +8,7 @@
   "city": "Greenville",
   "state": "RI",
   "zip": "02828",
-  "description_short": "Smithfield YMCA's summer day camp in Greenville, RI for children entering kindergarten through 6th grade, chosen week by week (up to 9 weeks). Days mix outdoor play, sports, arts, STEM, optional daily swimming and field trips; extended hours run 7am to 6pm.",
-  "camp_type": "day",
-  "email": "abby@ymca1.org",
-  "primary_categories": [
-    "general"
-  ],
-  "grade_min": 0,
-  "grade_max": 6,
-  "extended_care": true,
-  "aca_accredited": true,
-  "aca_source_url": "http://ymca1.org/wp-content/uploads/2026/02/Smithfield-YMCA-Summer-Day-Camp-Know-Before-you-Go-4.pdf",
-  "activities": [
-    "Swimming (optional daily, weekly swim lesson)",
-    "Walking trails and fort building",
-    "Basketball",
-    "Tennis",
-    "Gaga ball",
-    "Soccer",
-    "Baseball",
-    "Kickball",
-    "Arts and crafts",
-    "STEM (Lego challenges, magnet tiles, slime)",
-    "Field trips"
-  ],
+  "description_short": "Summer camp run by the Smithfield YMCA in Greenville, RI. The page asks families to read the \"Know Before You Go\" packet before registering and offers a waitlist.",
   "sources": [
     {
       "url": "https://ymca1.org/childcare/summer-camp/",
@@ -44,25 +21,10 @@
         "street_address",
         "city",
         "state",
-        "zip"
+        "zip",
+        "description_short"
       ],
       "note": "Drafted by the listing tool from this page"
-    },
-    {
-      "url": "http://ymca1.org/wp-content/uploads/2026/02/Smithfield-YMCA-Summer-Day-Camp-Know-Before-you-Go-4.pdf",
-      "checked": "2026-10-27",
-      "fields": [
-        "camp_type",
-        "email",
-        "primary_categories",
-        "grade_min",
-        "grade_max",
-        "extended_care",
-        "aca_accredited",
-        "aca_source_url",
-        "activities",
-        "description_short"
-      ]
     }
   ],
   "review": {
@@ -94,9 +56,25 @@
     ],
     "low_confidence": [],
     "errors": [
-      "missing required season_year"
+      "missing required camp_type",
+      "missing required season_year",
+      "camp_type must be one of ['day', 'sleepaway', 'specialty']"
     ],
-    "first_pass": {
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://ymca1.org/childcare/summer-camp/",
+        "https://ymca1.org/registration/"
+      ],
+      "changes": [
+        "No field changes: the filled fields match the page; camp_type and season_year cannot be filled from it"
+      ],
+      "open_questions": [
+        "The camp page has only a 'Know Before You Go' packet (no link our fetcher can follow), a Google Forms waitlist and contact details: no season, dates, ages, prices or camp type. The Registration Dates page lists only Fall II and Winter lesson registration. Ask the Y for the packet, or hold the listing?"
+      ]
+    },
+    "earlier_pass": {
+      "status": "needs_andrew",
       "by": "Claude",
       "date": "2026-10-27",
       "page_checked": "https://ymca1.org/childcare/summer-camp/ (and the linked Know Before You Go PDF)",
@@ -106,6 +84,17 @@
       "for_andrew": [
         "season_year missing: neither the page nor the PDF states the year or dates (only an image named 'Y-Camp-2026' and 2026/02 upload paths). Confirm the 2026/2027 dates and member/non-member weekly prices.",
         "The site answered plain curl with a 307 JS redirect; Firecrawl read it on the first try."
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://ymca1.org/childcare/summer-camp/",
+      "changes": [
+        "No field changes: the filled fields match the page; camp_type and season_year cannot be filled from it"
+      ],
+      "for_andrew": [
+        "The camp page has only a 'Know Before You Go' packet (no link our fetcher can follow), a Google Forms waitlist and contact details: no season, dates, ages, prices or camp type. The Registration Dates page lists only Fall II and Winter lesson registration. Ask the Y for the packet, or hold the listing?"
       ]
     }
   }

@@ -61,7 +61,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "drop",
     "source": {
       "url": "https://salemnh.myrec.com/info/activities/program_details.aspx?ProgramID=29933",
       "kind": "html",
@@ -121,6 +121,19 @@
         "quote": "through Friday, August 4th"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://salemnh.myrec.com/info/activities/program_details.aspx?ProgramID=29933",
+        "https://salemnh.myrec.com/info/activities/default.aspx?type=activities"
+      ],
+      "changes": [
+        "No field changes. The program page says 'This program is unavailable', its only dates (June 19 to August 4, no year) match 2023 and its form is summer_fun_2023_cd.pdf; it shows no price.",
+        "The town's current program list on salemnh.myrec.com has no summer camp at all, so there is no 2026 or 2027 season to list.",
+        "Dropped: nothing current on the camp's own site. Worth a fresh draft if Salem posts a 2027 Summer Fun Camp."
+      ],
+      "open_questions": []
+    }
   }
 }

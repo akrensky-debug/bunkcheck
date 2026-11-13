@@ -5,19 +5,28 @@
   "registration_url": "https://www.ultracamp.com/clientlogin.aspx?idCamp=602&campCode=cff",
   "email": "MailForDirectors@farwell.com",
   "phone": "802-429-2244",
-  "city": null,
-  "state": null,
-  "zip": null,
+  "street_address": "421 Camp Farwell Drive",
+  "city": "Newbury",
+  "state": "VT",
+  "zip": "05051",
   "camp_type": "sleepaway",
   "primary_categories": [
+    "general",
     "sports"
   ],
-  "description_short": "Overnight camp offering 2-, 3-, 4- and 7-week sessions plus one-week \"Rookie Week\" sessions for the 2027 summer. Horseback riding can be added for an extra fee, and custom sessions are available on request.",
+  "description_short": "Overnight camp for girls ages 6 to 17 on Halls Lake in Newbury, Vermont, founded in 1889. Campers choose their own activities, with horseback riding at the center. 2027 offers 7-, 4-, 3- and 2-week sessions plus one-week Rookie Weeks for first-timers; riding costs extra and custom sessions are available.",
   "activities": [
     "Horseback riding",
+    "Water sports",
+    "Music",
+    "Dance",
+    "Team challenges",
     "Tennis",
     "Swimming"
   ],
+  "gender_policy": "girls",
+  "age_min": 6,
+  "age_max": 17,
   "price_min": 2385,
   "price_max": 14550,
   "season_year": 2027,
@@ -89,7 +98,7 @@
   "sources": [
     {
       "url": "https://farwell.com/2027-rates-and-dates/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "website_url",
@@ -97,18 +106,36 @@
         "email",
         "phone",
         "camp_type",
-        "primary_categories",
-        "activities",
-        "description_short",
         "price_min",
         "price_max",
         "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
+    },
+    {
+      "url": "https://farwell.com/contact-us/",
+      "checked": "2026-11-13",
+      "fields": [
+        "street_address",
+        "city",
+        "state",
+        "zip"
+      ]
+    },
+    {
+      "url": "https://farwell.com/",
+      "checked": "2026-11-13",
+      "fields": [
+        "gender_policy",
+        "age_min",
+        "age_max",
+        "primary_categories",
+        "activities",
+        "description_short"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://farwell.com/2027-rates-and-dates/",
       "kind": "html",
@@ -147,6 +174,29 @@
       "missing required city",
       "missing required state",
       "missing required zip"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://farwell.com/2027-rates-and-dates/",
+        "https://farwell.com/contact-us/",
+        "https://farwell.com/",
+        "https://farwell.com/why-camp-farwell/",
+        "https://farwell.com/first-time-campers/"
+      ],
+      "changes": [
+        "Checked all nine 2027 sessions, dates and base prices on the 2027 Rates and Dates page; they match.",
+        "Added the camp's physical address from the Contact page: 421 Camp Farwell Drive, Newbury, VT 05051.",
+        "Added girls only and ages 6 to 17 from the home page.",
+        "Added general as a category and the home page's activity list (riding, water sports, music, dance, team challenges).",
+        "Rewrote the description to say it is a girls' camp and to name the town.",
+        "Left financial aid empty: the home page links a Financial Info page but I found no URL for it to read.",
+        "Left ACA accreditation empty: the home page says the camp is ACA accredited, but that needs checking on acacamps.org first.",
+        "The validator rejects the listing: Newbury, VT is not in cities.py."
+      ],
+      "open_questions": [
+        "Newbury, VT is the camp's town but the validator doesn't accept it. Add Newbury to cities.py, or list under a nearby accepted town?"
+      ]
+    }
   }
 }

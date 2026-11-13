@@ -11,19 +11,20 @@
   "state": "MA",
   "zip": "01223",
   "camp_type": "sleepaway",
-  "grade_min": 2,
-  "grade_max": 9,
-  "description_short": "Overnight YMCA camps (Camp Becket and Chimney Corners Camp) in Becket, MA, for campers finishing 2nd–9th grade. They offer 4-week traditional sessions, 2- and 3-week first-camp options, and specialty programs, with tiered pricing that lets families choose what they pay.",
   "activities": [
     "Traditional camp program",
     "Construction program",
     "Adventure Odyssey",
     "Gibson Weekend (3- and 4-week campers)"
   ],
+  "grade_min": 2,
+  "grade_max": 9,
+  "description_short": "Two YMCA overnight camps in Becket, MA, sharing 1,400 acres: Camp Becket for boys and Chimney Corners Camp for girls, each for campers finishing 2nd to 9th grade. Four-week traditional sessions, two- and three-week first-summer options, and specialty programs, with tiered pricing that lets families choose what they pay.",
   "price_min": 3500,
   "price_max": 9150,
-  "financial_aid": true,
   "meals_included": true,
+  "financial_aid": true,
+  "swim_waterfront_notes": "Private pond for swimming and boating.",
   "season_year": 2027,
   "sessions": [
     {
@@ -128,7 +129,7 @@
   "sources": [
     {
       "url": "https://bccymca.org/dates-rates/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -150,12 +151,19 @@
         "meals_included",
         "financial_aid",
         "sessions"
+      ]
+    },
+    {
+      "url": "https://bccymca.org/camp-becket/",
+      "checked": "2026-11-13",
+      "fields": [
+        "swim_waterfront_notes"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Chimney Corners page says the same"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://bccymca.org/dates-rates/",
       "kind": "html",
@@ -193,6 +201,22 @@
         "quote": "Enrollment for Summer 2027 is Open!"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://bccymca.org/dates-rates/",
+        "https://bccymca.org/camp-becket/",
+        "https://bccymca.org/chimney-corners-camp/"
+      ],
+      "changes": [
+        "All 2027 dates, tier prices ($3,500 to $9,150), grades, contact and address checked against the Dates & Rates page; they match",
+        "Description now says Camp Becket is for boys and Chimney Corners for girls (both camp pages say so)",
+        "Added swim note: private pond for swimming and boating"
+      ],
+      "open_questions": [
+        "This one listing covers two single-gender camps (Camp Becket, boys; Chimney Corners, girls) with separate pages. Split into two listings so a parent filtering by gender finds the right one?"
+      ]
+    }
   }
 }

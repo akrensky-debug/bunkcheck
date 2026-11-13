@@ -4,6 +4,7 @@
   "operator_name": "Union for Reform Judaism (URJ Eisner Camp)",
   "website_url": "https://eisnercamp.org/day-camp-eisner/",
   "registration_url": "https://eisnercamp.org/register-login/",
+  "email": "lbelferder@urj.org",
   "phone": "413-528-1652",
   "street_address": "53 Brookside Road",
   "city": "Great Barrington",
@@ -18,7 +19,7 @@
   ],
   "age_min": 4,
   "grade_max": 2,
-  "description_short": "A Jewish day camp for children aged 4 through rising 2nd graders, held on the grounds of URJ Eisner Camp in Great Barrington, MA. Campers use the overnight camp's pools, fields, arts center, farm and lake, and each day includes lunch and Jewish activities. Hours are 9:00 a.m. to 4:00 p.m.",
+  "description_short": "A Jewish day camp for children from age 4 through rising 2nd graders, held on the grounds of URJ Eisner Camp in Great Barrington, MA, for families living year-round or seasonally in the southern Berkshire region of Massachusetts and New York. Campers use the overnight camp's pools, fields, arts center, farm and lake, and each day includes lunch and Jewish activities. Hours are 9:00 a.m. to 4:00 p.m.",
   "activities": [
     "Swimming",
     "Field sports",
@@ -97,12 +98,13 @@
   "sources": [
     {
       "url": "https://eisnercamp.org/day-camp-eisner/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
         "website_url",
         "registration_url",
+        "email",
         "phone",
         "street_address",
         "city",
@@ -129,7 +131,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://eisnercamp.org/day-camp-eisner/",
       "kind": "html",
@@ -190,6 +192,20 @@
         "quote": "$100 per week, per child discount to our local families whose children are enrolled in a Berkshire school district year-round"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://eisnercamp.org/day-camp-eisner/"
+      ],
+      "changes": [
+        "Added email lbelferder@urj.org, the Day Camp contact (Lulu Belferder) behind the page's protected email link.",
+        "Added to the description that the day camp is for families living year-round or seasonally in the southern Berkshires of MA and NY.",
+        "Rechecked the seven weeks (June 28 to August 13, 2027, Monday to Friday), $525 a week, the $100 local discount ($425), $100 a week transportation from Crane Lake Camp, lunch, hours, address and phones: all match the page."
+      ],
+      "open_questions": [
+        "The page is half updated: the table says 'Session 2027 Dates' and the dates fall Monday to Friday in 2027, but the text still says 'seven week-long sessions for Summer 2026' and gives the age cutoff as 'by June 29, 2026'. The $525 rate may be the 2026 price. Publish as 2027 at $525, or wait until Eisner finishes updating the page?"
+      ]
+    }
   }
 }

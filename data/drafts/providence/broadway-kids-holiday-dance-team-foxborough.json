@@ -1,9 +1,9 @@
 {
   "slug": "broadway-kids-holiday-dance-team-foxborough",
-  "name": "Broadway Kids Holiday Dance Team",
+  "name": "Broadway Kids",
   "operator_name": "Marilyn Rodman Performing Arts Center",
   "website_url": "https://mrpac.art/broadway-kids",
-  "email": "JenniferR@mrpac.art",
+  "email": "AnnieB@mrpac.art",
   "phone": "508-543-2787",
   "street_address": "1 School Street",
   "city": "Foxborough",
@@ -13,30 +13,31 @@
   "primary_categories": [
     "performing_arts"
   ],
-  "age_min": 6,
-  "age_max": 12,
-  "description_short": "A fall dance program for kids ages 6-12. Children rehearse holiday dance numbers on five Monday afternoons, then perform in two shows with country singer Jessica Lynn at the MRPAC in Foxborough.",
+  "age_min": 5,
+  "age_max": 10,
+  "description_short": "A performing arts program for ages 5-10 (K to 5th grade) at the Marilyn Rodman Performing Arts Center in Foxborough. Children build performance skills through acting, singing and dancing, and every program ends with a performance for family and friends. No audition or experience is needed.",
   "activities": [
-    "Dance",
-    "Choreography",
+    "Acting",
+    "Singing",
+    "Dancing",
     "Stage performance"
   ],
-  "price_min": 175,
-  "price_max": 175,
-  "season_year": 2026,
+  "price_min": null,
+  "price_max": null,
+  "season_year": 2027,
   "sessions": [
     {
-      "name": "2026 Broadway Kids Holiday Dance Team (rehearsals Oct 5–Nov 23, shows Nov 25 & 27)",
-      "start_date": "2026-10-05",
-      "end_date": "2026-11-27",
-      "price": 175,
+      "name": "3-Week Summer 2027 Session",
+      "start_date": "2027-08-02",
+      "end_date": "2027-08-20",
+      "price": null,
       "availability": "unknown"
     }
   ],
   "sources": [
     {
       "url": "https://mrpac.art/broadway-kids",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -52,16 +53,16 @@
         "activities",
         "age_min",
         "age_max",
+        "grade_min",
+        "grade_max",
         "description_short",
-        "price_min",
-        "price_max",
         "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Rechecked 2026-11-12. The page no longer shows the fall Holiday Dance Team; it now lists Broadway Kids 2027 dates, including a 3-week summer session August 2-20, 2027. Phone and ZIP from the site footer (administrative office)."
     }
   ],
   "review": {
-    "status": "drop",
+    "status": "needs_andrew",
     "source": {
       "url": "https://mrpac.art/broadway-kids",
       "kind": "html",
@@ -85,13 +86,57 @@
     ],
     "low_confidence": [],
     "errors": [],
-    "first_pass": {
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://mrpac.art/broadway-kids"
+      ],
+      "changes": [
+        "The Holiday Dance Team (fall 2026 after-school program) is gone from the page; rewrote the draft to the Broadway Kids 3-Week Summer 2027 Session (August 2-20, 2027), season_year 2027.",
+        "name: 'Broadway Kids Holiday Dance Team' -> 'Broadway Kids'.",
+        "ages 6-12 -> 5-10, added grades K-5 ('Age Range: 5-10 years old (K to 5th Grade)').",
+        "email JenniferR@mrpac.art -> AnnieB@mrpac.art (program manager named on the page).",
+        "activities -> Acting, Singing, Dancing, Stage performance; description rewritten from the page.",
+        "Removed $175 price (holiday program); summer price is not posted.",
+        "Session replaced: 3-Week Summer 2027 Session 2027-08-02 to 2027-08-20."
+      ],
+      "open_questions": [
+        "Slug and filename still say 'holiday-dance-team-foxborough'; should be renamed (e.g. broadway-kids-summer-foxborough) before promote.",
+        "Summer 2027 tuition and daily hours are not posted; the page only gives February vacation week details ($350, 9am-3pm, after care 3-5pm).",
+        "The page's 'Program Schedule' says February 15-19, 2026, but the heading and register link say February 2027 (Feb 15, 2026 was a Sunday): a typo on the page.",
+        "Summer registration opens March 2027 (no exact date); no registration link for summer yet."
+      ]
+    },
+    "earlier_pass": {
+      "status": "drop",
       "by": "Claude",
       "date": "2026-10-27",
       "page_checked": "https://mrpac.art/broadway-kids",
       "changes": [],
       "for_andrew": [],
       "drop_reason": "Not a summer camp: a fall/holiday dance team with five Monday after-school rehearsals (Oct 5 - Nov 23, 2026) and two holiday shows"
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://mrpac.art/broadway-kids",
+      "changes": [
+        "The Holiday Dance Team (fall 2026 after-school program) is gone from the page; rewrote the draft to the Broadway Kids 3-Week Summer 2027 Session (August 2-20, 2027), season_year 2027.",
+        "name: 'Broadway Kids Holiday Dance Team' -> 'Broadway Kids'.",
+        "ages 6-12 -> 5-10, added grades K-5 ('Age Range: 5-10 years old (K to 5th Grade)').",
+        "email JenniferR@mrpac.art -> AnnieB@mrpac.art (program manager named on the page).",
+        "activities -> Acting, Singing, Dancing, Stage performance; description rewritten from the page.",
+        "Removed $175 price (holiday program); summer price is not posted.",
+        "Session replaced: 3-Week Summer 2027 Session 2027-08-02 to 2027-08-20."
+      ],
+      "for_andrew": [
+        "Slug and filename still say 'holiday-dance-team-foxborough'; should be renamed (e.g. broadway-kids-summer-foxborough) before promote.",
+        "Summer 2027 tuition and daily hours are not posted; the page only gives February vacation week details ($350, 9am-3pm, after care 3-5pm).",
+        "The page's 'Program Schedule' says February 15-19, 2026, but the heading and register link say February 2027 (Feb 15, 2026 was a Sunday): a typo on the page.",
+        "Summer registration opens March 2027 (no exact date); no registration link for summer yet."
+      ]
     }
-  }
+  },
+  "grade_min": 0,
+  "grade_max": 5
 }

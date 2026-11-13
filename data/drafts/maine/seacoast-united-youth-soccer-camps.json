@@ -27,7 +27,7 @@
   "sources": [
     {
       "url": "https://www.seacoastunited.com/page/youth-camps",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -42,11 +42,11 @@
         "description_short",
         "refund_policy_summary"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Youth camps overview: camp types and ages, refund policy; P.O. Box, email and phone in the footer"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.seacoastunited.com/page/youth-camps",
       "kind": "html",
@@ -84,6 +84,24 @@
       "missing required state",
       "missing required zip",
       "missing required season_year"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.seacoastunited.com/page/youth-camps",
+        "https://www.seacoastunited.com/page/camps",
+        "https://www.seacoastunited.com/page/residential-camps"
+      ],
+      "changes": [
+        "Checked the filled fields against the youth camps page; they match. Source date updated to 2026-11-13",
+        "No town, ZIP, dates, prices or season year on any camp page, so city, state, zip and season_year stay blank and the draft cannot pass the validator"
+      ],
+      "open_questions": [
+        "This is a club-wide overview of soccer camps run at many sites in MA, ME and NH, with only a Hampton, NH P.O. box. No Maine site, date or price is posted ('2027 Residential Camps will be available in January'). Drop it, or wait and list specific Maine sites (the Maine regional director is Kevin Mollison) once 2027 camps are posted?",
+        "Mixed formats: Residential Camps are overnight (5 days, 4 nights, meals included) with a commuter option; the other camps are day clinics. One camp_type cannot cover both.",
+        "Age labels conflict on the camp's own pages: Residential says '9-18 YEARS' and 'U7 to U18'; Goalkeeper says 'all ages' and 'U9 to U19'.",
+        "The residential page also lists a non-refundable $100 deposit, on top of the club-wide no-refunds policy."
+      ]
+    }
   }
 }

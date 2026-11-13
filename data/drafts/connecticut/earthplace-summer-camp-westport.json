@@ -11,7 +11,7 @@
   "sources": [
     {
       "url": "https://earthplace.org/summer-camp/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -22,11 +22,11 @@
         "state",
         "zip"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Address and phone are Earthplace's, from the site footer. The page says priority registration opens January 4, 2027 and general registration January 11, 2027."
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://earthplace.org/summer-camp/",
       "kind": "html",
@@ -60,6 +60,20 @@
       "missing required camp_type",
       "missing required season_year",
       "camp_type must be one of ['day', 'sleepaway', 'specialty']"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://earthplace.org/summer-camp/",
+        "https://earthplace.org/camp/"
+      ],
+      "changes": [
+        "Checked name, address (10 Woodside Lane, Westport, CT 06880) and phone (203.557.4400) against the page; they match.",
+        "Still no camp details: the summer camp page now shows only 'Priority registration opens January 4, 2027. General registration opens January 11, 2027.' No ages, dates, prices, hours or camp type, so camp_type and season_year stay empty and the draft cannot validate."
+      ],
+      "open_questions": [
+        "Earthplace's camp page has no camp details yet (only 2027 registration dates). Hold this draft and re-check after the details post around January 2027, or drop it for now?"
+      ]
+    }
   }
 }

@@ -39,6 +39,7 @@ DEFAULTS: dict[str, dict[str, Any]] = {
         "paid_on": None, "balance_due": None, "payment_due_date": None, "forms_due_date": None, "opens_at": None,
         "confirmation_number": None, "notes": None, "remind": True, "event_ids": {}, "registered_at": None,
     },
+    "listing_confirmations": {"kind": "listing", "season_year": None, "answer": None, "responded_at": None},
     "registration_windows": {"session_id": None, "closes_at": None, "source_url": None, "verified": False, "notes": None},
     "registration_alerts": {"session_id": None, "confirm_sent_at": None, "confirmed_at": None, "unsubscribed_at": None},
     "owner_messages": {"message_id": None, "sender_verified": False, "subject": None, "camp_id": None,

@@ -15,71 +15,85 @@
   ],
   "age_min": 4,
   "age_max": 17,
-  "description_short": "A group of summer camps in Plymouth, Vermont. It runs 3-week overnight camps (Firefly Song, Timberlake, Saltash Mountain, Tamarack Farm), a 2-week overnight camp (The Clearing), and Barn Day Camp for ages 4-10.",
-  "price_per_week": 700,
-  "price_min": 700,
-  "price_max": 7200,
+  "description_short": "A group of summer camps in Plymouth, Vermont, for ages 4 to 17: 3-week overnight camps (Firefly Song, Timberlake, Saltash Mountain, Tamarack Farm), a 2-week overnight camp (The Clearing), a 1-week overnight session (Spark), and Barn Day Camp for ages 4-10. Tuition is on a sliding scale by family income.",
+  "price_per_week": null,
+  "price_min": 740,
+  "price_max": 7600,
   "financial_aid": true,
   "transportation": true,
   "refund_policy_summary": "Full payment is due June 1. Deposits are $500 per child per session for overnight camp and $100 for day camp. Deposits are non-refundable except for some campership (financial aid) applicants. If you cancel before March 1, the deposit is kept or rolled over, and tuition paid beyond the deposit can be refunded, rolled over, transferred to a sibling, or donated. Between March 1 and June 1, there is no refund, but tuition paid can be rolled over, transferred, or donated. After June 1, all payments are kept. There are no refunds for arriving late, leaving early, being dismissed, or withdrawing voluntarily. Optional third-party trip insurance is available.",
   "special_needs_notes": "After registration, staff pre-screen each camper's medical and behavioral health information to make sure the camper can meet the essential functions of camp. Families are asked to share this information openly.",
-  "season_year": 2026,
-  "price_per": "week",
+  "season_year": 2027,
+  "price_per": "session",
   "sessions": [
     {
       "name": "3-Week Overnight Session 1 (Firefly Song, Timberlake, Saltash Mountain, Tamarack Farm)",
-      "start_date": "2026-06-24",
-      "end_date": "2026-07-16",
-      "price": 7200,
+      "start_date": "2027-06-30",
+      "end_date": "2027-07-22",
+      "price": 7600,
       "availability": "unknown"
     },
     {
       "name": "3-Week Overnight Session 2 (Firefly Song, Timberlake, Saltash Mountain, Tamarack Farm)",
-      "start_date": "2026-07-19",
-      "end_date": "2026-08-09",
-      "price": 7200,
+      "start_date": "2027-07-25",
+      "end_date": "2027-08-16",
+      "price": 7600,
       "availability": "unknown"
     },
     {
       "name": "The Clearing 2-Week Overnight Session 1",
-      "start_date": "2026-06-24",
-      "end_date": "2026-07-09",
-      "price": 4900,
+      "start_date": "2027-06-30",
+      "end_date": "2027-07-14",
+      "price": 5175,
       "availability": "unknown"
     },
     {
       "name": "The Clearing 2-Week Overnight Session 2",
-      "start_date": "2026-07-19",
-      "end_date": "2026-08-02",
-      "price": 4900,
+      "start_date": "2027-07-25",
+      "end_date": "2027-08-08",
+      "price": 5175,
+      "availability": "unknown"
+    },
+    {
+      "name": "Spark 1-Week Overnight",
+      "start_date": "2027-08-22",
+      "end_date": "2027-08-28",
+      "price": 3000,
+      "availability": "unknown"
+    },
+    {
+      "name": "Barn Day Camp Session 1 (one week)",
+      "start_date": "2027-06-28",
+      "end_date": "2027-07-02",
+      "price": 740,
       "availability": "unknown"
     },
     {
       "name": "Barn Day Camp Session 2",
-      "start_date": "2026-06-29",
-      "end_date": "2026-07-10",
-      "price": 1400,
+      "start_date": "2027-07-05",
+      "end_date": "2027-07-16",
+      "price": 1480,
       "availability": "unknown"
     },
     {
       "name": "Barn Day Camp Session 3",
-      "start_date": "2026-07-13",
-      "end_date": "2026-07-24",
-      "price": 1400,
+      "start_date": "2027-07-19",
+      "end_date": "2027-07-30",
+      "price": 1480,
       "availability": "unknown"
     },
     {
       "name": "Barn Day Camp Session 4",
-      "start_date": "2026-07-27",
-      "end_date": "2026-08-07",
-      "price": 1400,
+      "start_date": "2027-08-02",
+      "end_date": "2027-08-13",
+      "price": 1480,
       "availability": "unknown"
     }
   ],
   "sources": [
     {
       "url": "https://www.farmandwilderness.org/admissions",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -97,7 +111,6 @@
         "description_short",
         "price_min",
         "price_max",
-        "price_per_week",
         "price_per",
         "transportation",
         "financial_aid",
@@ -105,11 +118,11 @@
         "special_needs_notes",
         "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Summer 2027 dates and full rates. Barn Day Camp Session 1 is 'priced at half the cost of a two-week session' ($1,480), so $740. Lower rates on the campership sliding scale."
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.farmandwilderness.org/admissions",
       "kind": "html",
@@ -165,6 +178,21 @@
         "quote": "one-week session is priced at half the cost of a two-week session"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.farmandwilderness.org/admissions"
+      ],
+      "changes": [
+        "Updated all sessions to the 2027 dates and full rates now posted: 3-week overnight $7,600 (June 30 to July 22, July 25 to August 16), The Clearing $5,175 (June 30 to July 14, July 25 to August 8), Barn Day Camp $1,480 for two weeks.",
+        "Added the new Spark 1-week overnight (August 22 to 28, $3,000) and Barn Day Camp Session 1 (June 28 to July 2, $740, which the page prices at half a two-week session).",
+        "Set season_year to 2027, price range $740 to $7,600 per session, and cleared the $700 weekly rate (no single weekly rate fits overnight and day programs).",
+        "Rewrote the description to include Spark and the sliding-scale tuition."
+      ],
+      "open_questions": [
+        "This listing covers six named camps plus Barn Day Camp, a day camp for ages 4-10, under camp_type sleepaway. Keep it as one listing, or split Barn Day Camp into its own day-camp listing?"
+      ]
+    }
   }
 }

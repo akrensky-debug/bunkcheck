@@ -224,7 +224,7 @@ async def send(camp: dict[str, Any], *, sent_by: str, to: str | None = None) -> 
     p = prepare(camp, to=to)
     sb = get_supabase()
     sb.table("listing_confirmations").update({"status": "superseded"}) \
-        .eq("camp_id", camp["id"]).eq("status", "sent").execute()
+        .eq("camp_id", camp["id"]).eq("kind", "listing").eq("status", "sent").execute()
     sb.table("listing_confirmations").insert({
         "camp_id": camp["id"], "email": p.email.to, "token_hash": _hash(p.token), "snapshot": p.snapshot,
         "status": "sent", "sent_by": sent_by, "sent_at": _now().isoformat(), "expires_at": (_now() + CONFIRMATION_TTL).isoformat(),
@@ -248,7 +248,7 @@ def queue(now: datetime | None = None) -> Queue:
     sb = get_supabase()
     now = now or _now()
     open_links = {}
-    for c in sb.table("listing_confirmations").select("*").eq("status", "sent").execute().data or []:
+    for c in sb.table("listing_confirmations").select("*").eq("kind", "listing").eq("status", "sent").execute().data or []:
         expires = datetime.fromisoformat(str(c["expires_at"]).replace("Z", "+00:00"))
         if expires > now:
             open_links[str(c["camp_id"])] = expires
@@ -277,6 +277,7 @@ def queue(now: datetime | None = None) -> Queue:
 
 
 def confirmations_for(camp_id: str) -> list[dict[str, Any]]:
+    """Both kinds of owner email: the listing confirmation and the season update."""
     return (get_supabase().table("listing_confirmations").select("*").eq("camp_id", camp_id)
             .order("sent_at", desc=True).execute().data or [])
 
@@ -287,7 +288,7 @@ def confirmations_for(camp_id: str) -> list[dict[str, Any]]:
 
 def _open(token: str) -> dict[str, Any] | None:
     rows = get_supabase().table("listing_confirmations").select("*") \
-        .eq("token_hash", _hash(token)).eq("status", "sent").execute().data
+        .eq("token_hash", _hash(token)).eq("kind", "listing").eq("status", "sent").execute().data
     if not rows:
         return None
     expires = datetime.fromisoformat(str(rows[0]["expires_at"]).replace("Z", "+00:00"))

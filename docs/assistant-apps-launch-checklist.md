@@ -1,35 +1,39 @@
 # Launch checklist: what the founder does by hand
 
-Everything here needs your accounts, your judgement or a legal sign-off. Code-side work is done on
-branch `claude/assistant-apps`. Domains below assume `campfinder.com` (site) and
-`api.campfinder.com` (API). If yours differ, change them in `assistant-apps/chatgpt/plugin.json`,
-`assistant-apps/chatgpt/mcp.json`, `docs/claude-connector.md` and `frontend/lib/site.ts`.
+Everything here needs your accounts, your judgement or a legal sign-off. The listing text,
+screenshots and portal steps are in `docs/directory-submissions.md`.
+
+Addresses (13 November 2026):
+- Site: `https://www.bunkcheck.ai` (the bare `bunkcheck.ai` redirects to www).
+- Claude connector: `https://www.bunkcheck.ai/mcp`, proxied by the site to the API's `/claude/mcp`.
+- API today: `https://api-production-4a03.up.railway.app`. Planned: `https://api.bunkcheck.ai`,
+  which ChatGPT needs (step 3). `assistant-apps/chatgpt/mcp.json` already points there.
 
 ## 1. Before anything is submitted
 
 - [ ] **Real data is live.** The Providence and Boston listings from `claude/real-camp-data` are
       in the Supabase project "campfinder", and the synthetic seed is **not**.
-- [ ] **Merge and deploy.** Merge this branch (with the data branch) and deploy:
-      - the API on Railway. Its URL `api-production-4a03.up.railway.app` currently answers
-        "Application not found", so no deploy is serving;
-      - the site on Vercel.
-- [ ] **Custom domains.** `api.campfinder.com` on the Railway service and `campfinder.com` on
-      Vercel. Confirm you own the domain; the code already sends email from `hello@bunkcheck.ai`.
+- [x] **API and site deployed.** The API answers at `api-production-4a03.up.railway.app/health`
+      and the site at `www.bunkcheck.ai`.
+- [ ] **Custom API domain.** Add `api.bunkcheck.ai` to the Railway service `api` and the CNAME it
+      gives you at the DNS host. Needed before the ChatGPT submission, not before Claude's.
 - [ ] **Railway env vars** (service `api`):
-      - `FRONTEND_URL=https://campfinder.com` (already set; check the value);
-      - `PUBLIC_API_URL=https://api.campfinder.com`;
-      - `DATABASE_URL`, `ANTHROPIC_API_KEY` and `KIT_ENCRYPTION_KEY` (missing today; the site
-        chat and info kit need them);
+      - `FRONTEND_URL=https://www.bunkcheck.ai` (set; the card links already use it);
+      - `PUBLIC_API_URL=https://api.bunkcheck.ai` once that domain answers;
+      - `DATABASE_URL` (set; `/health` reports the database connected), `ANTHROPIC_API_KEY`
+        and `KIT_ENCRYPTION_KEY` (the site chat and info kit need them);
       - `OPENAI_APPS_CHALLENGE` (step 3);
       - optional: `CHATGPT_WIDGET_DOMAIN` (defaults to `FRONTEND_URL`) and
         `MCP_RATE_PER_MINUTE` (default 600).
-- [ ] **Vercel env:** `NEXT_PUBLIC_API_URL=https://api.campfinder.com`, the Supabase URL and anon
+- [ ] **Vercel env:** `NEXT_PUBLIC_API_URL` (today the Railway URL; it also sets where `/mcp`
+      proxies to, so change it only to an address that serves `/claude/mcp`), the Supabase URL and anon
       key, and optionally `NEXT_PUBLIC_SUPPORT_EMAIL`.
-- [ ] **Smoke test production:** `python -m campfinder.scripts.check_mcp https://api.campfinder.com/chatgpt/mcp`
-      then the same for `/claude/mcp`. All checks must pass.
+- [ ] **Smoke test production:** `python -m campfinder.scripts.check_mcp https://www.bunkcheck.ai/mcp`,
+      then the API's `/chatgpt/mcp`. All checks must pass. (13 November: all three API
+      endpoints pass directly.)
 - [ ] **Support inbox.** `hello@bunkcheck.ai` receives mail and someone answers within one
       business day (the support page promises this).
-- [ ] **Uptime alert** on `https://api.campfinder.com/health` (for example Better Stack or UptimeRobot).
+- [ ] **Uptime alert** on the API's `/health` and on `https://www.bunkcheck.ai/mcp` (for example Better Stack or UptimeRobot).
 
 ## 2. Legal review (flagged, not decided)
 
@@ -49,8 +53,8 @@ branch `claude/assistant-apps`. Domains below assume `campfinder.com` (site) and
       platform.openai.com. Org owners can submit; others need *Apps Management Write*.
 - [ ] Open the Plugins dashboard. Copy the domain challenge token into Railway as
       `OPENAI_APPS_CHALLENGE`, redeploy, then confirm that
-      `https://api.campfinder.com/.well-known/openai-apps-challenge` shows it.
-- [ ] Turn on developer mode in ChatGPT, add `https://api.campfinder.com/chatgpt/mcp`, and run all
+      `https://api.bunkcheck.ai/.well-known/openai-apps-challenge` shows it.
+- [ ] Turn on developer mode in ChatGPT, add `https://api.bunkcheck.ai/chatgpt/mcp`, and run all
       8 test cases in `docs/chatgpt-app.md` on web **and** mobile. Check that cards and links work
       and that the Ohio prompt shows no continue link.
 - [ ] Record a 2-3 minute demo video of those cases. Upload it unlisted (YouTube or Loom) and put
@@ -62,18 +66,15 @@ branch `claude/assistant-apps`. Domains below assume `campfinder.com` (site) and
 
 ## 4. Claude
 
-- [ ] Use a Claude Pro, Max, Team or Enterprise account (Free can't submit).
-- [ ] Add `https://api.campfinder.com/claude/mcp` as a custom connector (Customize > Connectors >
-      Add custom connector, "No sign in"). Run the 5 example prompts on web, desktop and mobile.
-- [ ] Take 3-5 PNG screenshots of the camp cards (at least 1000 px wide, cropped to the card,
-      including one in dark mode), each with its prompt.
-- [ ] Submit at claude.ai/directory/manage > MCP connector with the listing in
-      `docs/claude-connector.md`:
-      - Allowed link URIs: `https://campfinder.com`;
-      - Auth: none;
-      - accept the seven policy acknowledgments.
-- [ ] After listing, put the directory link (`https://claude.ai/directory/connectors/<slug>`) on
-      the site and in the support page.
+- [ ] Use a paid Claude plan (Pro, Max, Team or Enterprise). Free can add the connector but
+      can't submit.
+- [ ] Add `https://www.bunkcheck.ai/mcp` as a custom connector, following
+      `www.bunkcheck.ai/connect`. Run the 5 example prompts on web, desktop and mobile.
+- [x] Screenshots: four PNGs in `assistant-apps/screenshots/` (1440 px, one dark), each with its
+      prompt. Rerun `node assistant-apps/card-screenshots.js` after a deploy.
+- [ ] Submit at claude.ai/directory/manage > MCP connector, following
+      `docs/directory-submissions.md`. Allowed link URIs: `https://www.bunkcheck.ai`. Auth: none.
+- [ ] After listing, put the directory link on `/connect` and `/support`.
 
 ## 5. After launch, weekly
 

@@ -1,21 +1,22 @@
-# CampFinder in Claude
+# Bunkcheck in Claude
 
-CampFinder is a remote MCP connector for Claude. Parents can add it from the connectors
-directory (Customize > Connectors). Claude can also suggest it in a chat about camps, which only
-directory listings are eligible for. Results render as interactive camp cards on Claude web,
-desktop and mobile, with the same handoff to CampFinder as in ChatGPT.
+Bunkcheck is a remote MCP connector for Claude. Until it is listed, parents add it as a custom
+connector from [www.bunkcheck.ai/connect](https://www.bunkcheck.ai/connect), which gives the
+address `https://www.bunkcheck.ai/mcp` (proxied by the site to the API's `/claude/mcp`). Once it is
+in the directory, Claude can also suggest it in a chat about camps. Results render as interactive
+camp cards on Claude web, desktop and mobile, with the same handoff to Bunkcheck as in ChatGPT.
 Strategy: `docs/assistant-apps-strategy.md`. Founder steps: `docs/assistant-apps-launch-checklist.md`.
 
 ## How it works
 
 | Piece | Where |
 | --- | --- |
-| Claude endpoint | `https://<api>/claude/mcp` (stateless streamable HTTP, no auth) |
-| Tools | the same five read-only tools as ChatGPT (`campfinder/mcp_server.py`) |
+| Claude endpoint | `https://www.bunkcheck.ai/mcp`, which proxies to `https://<api>/claude/mcp` (stateless streamable HTTP, JSON responses, no auth) |
+| Tools | the same ten tools as ChatGPT (`campfinder/mcp_server.py`): nine read-only, plus `send_inquiry`, which drafts a question the parent sends from our site |
 | Camp cards | the same MCP App (`ui://campfinder/camps-v5.html`) **without** `ui.domain` |
 | Links | `ui/open-link` to our own site; tagged `utm_source=claude` |
 | Server metadata | `title`, `websiteUrl` and light and dark `icons` served from `/static/` |
-| Smoke test | `python -m campfinder.scripts.check_mcp https://<api>/claude/mcp` |
+| Smoke test | `python -m campfinder.scripts.check_mcp https://www.bunkcheck.ai/mcp` |
 
 **Why a separate endpoint:** Claude checks `_meta.ui.domain` against a hash of the connector URL
 and refuses to render the app if it doesn't match, while ChatGPT requires `ui.domain` to be our
@@ -43,46 +44,9 @@ own OAuth. The generic `/mcp` endpoint also omits it, so it works as a custom co
 - Listing health: "Healthy" at 2% or fewer tool errors over 30 days (`isError` results count).
 - Claude calls from `160.79.104.0/21`; keep it unblocked (our rate limit is per IP and set high for this reason).
 
-## Listing
+## Listing, example prompts and screenshots
 
-- **Name:** CampFinder
-- **One-liner (max 200):** Find and plan kids' summer camps in the Northeast US, with verified
-  dates, prices, extended care and open weeks.
-- **Description (max 2,000):** CampFinder helps parents find the right summer camps for each child
-  in the Northeast US (CT, MA, ME, NH, NJ, NY, PA, RI and VT), starting with Providence and
-  Boston. Ask Claude in your own words, for example "STEM day camps near Providence for my
-  8-year-old with aftercare". CampFinder returns day camps, sleepaway camps and specialty programs
-  ranked for your child, with weekly prices, session dates, extended care, transportation and
-  financial aid, and shows which details are verified by CampFinder or the camp. It can find
-  camps with openings in a specific week, compare a shortlist side by side, and lay chosen
-  sessions onto the summer to show covered weeks, gaps and total cost. Results appear as camp
-  cards; open one for full details, or continue on CampFinder to plan every week for every child
-  on one shareable family calendar. CampFinder is read-only and needs no sign-in. It receives only
-  the search details Claude fills in (town, ages, interests, dates, budget), never your
-  conversation, and it does not register you or take payments.
-- **Categories:** Lifestyle; Family (pick the closest from the form's list)
-- **Connector URL:** `https://api.campfinder.com/claude/mcp`
-- **Docs URL:** `https://campfinder.com/support`
-- **Privacy policy:** `https://campfinder.com/privacy`
-- **Support contact:** hello@bunkcheck.ai (must be a monitored, verified address)
-- **Icon:** `campfinder/static/icon.png` (512 px)
-- **Allowed link URIs:** `https://campfinder.com`
-- **Auth:** No authentication
-- **Data handling:** no personal health data; no sponsored content
-- **Test account:** not needed (no sign-in)
-
-## Example prompts and expected results
-
-1. "Find summer day camps near Providence, RI for my 8 year old who loves science." → `search_camps`; camp cards; continue link.
-2. "Which day camps in Boston have extended care for under $400 a week?" → `search_camps` with filters.
-3. "What camps still have openings the week of July 5 near Cranston, RI?" → `find_sessions`; dated cards.
-4. "Compare the top two and tell me their refund policies." → `compare_camps`, `get_camp_details`; facts only.
-5. "Find summer camps in Columbus, Ohio." → no camps; explains Northeast coverage.
-
-## Screenshots to take (in Claude, after real data is live)
-
-Use prompts 1, 2 and 3, plus a dark-mode version of prompt 1. Crop each to the card area,
-at least 1000 px wide, PNG.
+All in [`docs/directory-submissions.md`](directory-submissions.md), with the portal steps.
 
 ## Measuring it
 

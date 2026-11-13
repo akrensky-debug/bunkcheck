@@ -16,83 +16,72 @@
     "arts"
   ],
   "age_min": 5,
-  "description_short": "Episcopal camp and retreat center in Lakeside, Connecticut, founded in 1917. It runs one-week children's and teen camps, plus shorter Mini Camp, Changemakers, Women's and Family Camp sessions.",
+  "description_short": "Episcopal camp and retreat center on a 300-acre campus in the Litchfield Hills (Lakeside, CT), founded in 1917. Week-long overnight Children's Camp (ages 7-12) and Teen Camp (ages 12-16), a 3-day Mini Camp (ages 5-10) and a Family Camp weekend. Open to campers of all faith traditions.",
   "activities": [
-    "hiking",
-    "swimming",
-    "arts & crafts",
-    "campfires",
-    "zip line",
-    "archery"
+    "Archery",
+    "Arts & crafts",
+    "Boating",
+    "Campfires",
+    "Hiking",
+    "Sports",
+    "Singing",
+    "Swimming",
+    "Theatre"
   ],
   "price_per_week": 875,
   "price_min": 450,
   "price_max": 875,
   "financial_aid": true,
-  "season_year": 2026,
-  "price_per": "week",
+  "season_year": 2027,
+  "price_per": "session",
   "sessions": [
     {
-      "name": "Family Camp (All ages)",
-      "start_date": "2026-07-03",
-      "end_date": "2026-07-05",
+      "name": "Children's Camp 1 (ages 7-12)",
+      "start_date": "2027-07-04",
+      "end_date": "2027-07-09",
+      "price": 875,
+      "availability": "unknown"
+    },
+    {
+      "name": "Family Camp (all ages, priced per person)",
+      "start_date": "2027-07-09",
+      "end_date": "2027-07-11",
       "price": null,
       "availability": "unknown"
     },
     {
-      "name": "Mini Camp (Ages 5-10)",
-      "start_date": "2026-07-06",
-      "end_date": "2026-07-08",
+      "name": "Mini Camp (ages 5-10)",
+      "start_date": "2027-07-12",
+      "end_date": "2027-07-14",
       "price": 450,
       "availability": "unknown"
     },
     {
-      "name": "Changemakers Camp",
-      "start_date": "2026-07-06",
-      "end_date": "2026-07-09",
-      "price": 525,
-      "availability": "unknown"
-    },
-    {
-      "name": "Women's Camp (Ages 21+)",
-      "start_date": "2026-07-06",
-      "end_date": "2026-07-08",
-      "price": 450,
-      "availability": "unknown"
-    },
-    {
-      "name": "Children's Camp 1 (One Week)",
-      "start_date": "2026-07-12",
-      "end_date": "2026-07-17",
+      "name": "Teen Camp 1 (ages 12-16)",
+      "start_date": "2027-07-18",
+      "end_date": "2027-07-23",
       "price": 875,
       "availability": "unknown"
     },
     {
-      "name": "Teen Camp 1 (One Week)",
-      "start_date": "2026-07-19",
-      "end_date": "2026-07-24",
+      "name": "Children's Camp 2 (ages 7-12)",
+      "start_date": "2027-07-25",
+      "end_date": "2027-07-30",
       "price": 875,
       "availability": "unknown"
     },
     {
-      "name": "Children's Camp 2 (One Week)",
-      "start_date": "2026-08-02",
-      "end_date": "2026-08-07",
-      "price": 875,
-      "availability": "unknown"
-    },
-    {
-      "name": "Teen Camp 2 (One Week)",
-      "start_date": "2026-08-09",
-      "end_date": "2026-08-14",
+      "name": "Teen Camp 2 (ages 12-16)",
+      "start_date": "2027-08-01",
+      "end_date": "2027-08-06",
       "price": 875,
       "availability": "unknown"
     }
   ],
   "sources": [
     {
-      "url": "https://www.campwashington.org/summer-camp-hold-page",
-      "checked": "2026-10-13",
+      "url": "https://www.campwashington.org/summercamp",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "website_url",
@@ -107,6 +96,7 @@
         "primary_categories",
         "activities",
         "age_min",
+        "age_max",
         "description_short",
         "price_min",
         "price_max",
@@ -115,11 +105,11 @@
         "financial_aid",
         "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "2027 sessions and regular prices (after March 20, 2027); early bird is $675 for week camps, $350 for Mini Camp"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.campwashington.org/summer-camp-hold-page",
       "kind": "html",
@@ -179,6 +169,27 @@
     ],
     "errors": [
       "city 'Lakeside', CT is not in cities.py"
-    ]
-  }
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.campwashington.org/summercamp",
+        "https://www.campwashington.org/summer-camp-hold-page"
+      ],
+      "changes": [
+        "Season moved from 2026 to 2027: the camp's Summer Camp page now posts 2027 sessions and prices, and registration is open.",
+        "Sessions replaced with the 2027 dates: Children's Camp July 4-9 and July 25-30, Teen Camp July 18-23 and Aug 1-6, Mini Camp July 12-14, Family Camp July 9-11.",
+        "Dropped Changemakers Camp (not offered in 2027) and the adult Women's Camp (ages 21+, July 12-14, 2027) from the sessions.",
+        "age_max set to 16 (Teen Camp tops out at 16); age_min stays 5 (Mini Camp).",
+        "price_per changed to session; prices are the regular 2027 rates ($875 week camps, $450 Mini Camp).",
+        "Activities replaced with the list on the 2027 page (archery, arts & crafts, boating, campfires, hiking, sports, singing, swimming, theatre); zip line came from an old Young Adult Camp blurb and was removed.",
+        "Source changed from the old hold page to the current Summer Camp page (/summercamp), which is also the website_url.",
+        "Description rewritten to describe the 2027 programs."
+      ],
+      "open_questions": [
+        "The camp's address is '190 Kenyon Road, Lakeside, Connecticut 06758', and Lakeside is not in campfinder/seed/cities.py, so check_draft fails ('city Lakeside, CT is not in cities.py'). Lakeside is a village in the town of Morris, which is in cities.py. Should we add Lakeside to cities.py (same coordinates as Morris), or list the city as Morris even though the camp writes Lakeside?"
+      ]
+    }
+  },
+  "age_max": 16
 }

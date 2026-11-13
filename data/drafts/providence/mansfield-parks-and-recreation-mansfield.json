@@ -13,7 +13,7 @@
   "sources": [
     {
       "url": "https://www.mansfieldma.com/232/Parks-Recreation",
-      "checked": "2026-10-27",
+      "checked": "2026-10-13",
       "fields": [
         "name",
         "operator_name",
@@ -66,13 +66,33 @@
       "missing required season_year",
       "camp_type must be one of ['day', 'sleepaway', 'specialty']"
     ],
-    "first_pass": {
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.mansfieldma.com/232/Parks-Recreation"
+      ],
+      "changes": [
+        "No field changes: the page lists no camp"
+      ],
+      "open_questions": []
+    },
+    "earlier_pass": {
+      "status": "drop",
       "by": "Claude",
       "date": "2026-10-27",
       "page_checked": "https://www.mansfieldma.com/232/Parks-Recreation",
       "changes": [],
       "for_andrew": [],
       "drop_reason": "Not a summer camp: this is the town Parks & Recreation department page; it lists only fall programs (yoga, pickleball, karate, Halloween events) and no summer camp."
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.mansfieldma.com/232/Parks-Recreation",
+      "changes": [
+        "No field changes: the page lists no camp"
+      ],
+      "for_andrew": []
     }
   }
 }

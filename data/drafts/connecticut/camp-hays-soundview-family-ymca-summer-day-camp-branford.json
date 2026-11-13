@@ -2,7 +2,7 @@
   "slug": "camp-hays-soundview-family-ymca-summer-day-camp-branford",
   "name": "Camp Hays (Soundview Family YMCA Summer Day Camp)",
   "operator_name": "Central Connecticut Coast YMCA",
-  "website_url": "https://www.soundviewymca.org",
+  "website_url": "https://cccymca.org/locations/soundview/camp/",
   "registration_url": "https://www.soundviewymca.org",
   "email": "soundviewymcacamp@cccymca.org",
   "phone": "203-481-9622",
@@ -27,13 +27,11 @@
     "Nature",
     "Themed Wacky Wednesday dress-up and games"
   ],
-  "price_per_week": 99,
   "financial_aid": true,
   "extended_care": true,
-  "refund_policy_summary": "A $50 deposit per camper per week is due at registration. It cannot be refunded or transferred. No other refund terms are stated.",
+  "refund_policy_summary": "A $50 deposit per camper per week is due at registration and cannot be refunded or transferred. Fees are due in full the Monday two weeks before each session. Refund requests must be in writing; none are given within 2 weeks of a session except for medical emergencies with a doctor's note, and there is a $10 fee on all refunds.",
   "special_needs_notes": "The Y says it works with children of all abilities. Families whose child needs social, behavioral or medical accommodations should contact the Camp Director.",
   "season_year": 2026,
-  "price_per": "week",
   "sessions": [
     {
       "name": "Week 1: Aloha, Bonjour, Hola, Guten Tag, Ciao, Salve",
@@ -109,11 +107,10 @@
   "sources": [
     {
       "url": "https://cccymca.org/wp-content/uploads/SDV-CAMP-HAYS-YMCA-SUMMER-DAY-CAMP-GUIDE.pdf",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
-        "website_url",
         "registration_url",
         "email",
         "phone",
@@ -127,19 +124,32 @@
         "age_min",
         "age_max",
         "description_short",
-        "price_per_week",
-        "price_per",
         "extended_care",
         "financial_aid",
-        "refund_policy_summary",
         "special_needs_notes",
         "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "2026 Camp Hays brochure; rechecked 2026-11-13"
+    },
+    {
+      "url": "https://cccymca.org/wp-content/uploads/SDV-YMCA-SUMMER-DAY-CAMP-HAYS-Parent-Manual-2026.pdf",
+      "checked": "2026-11-13",
+      "fields": [
+        "refund_policy_summary"
+      ],
+      "note": "2026 Camp Hays parent manual"
+    },
+    {
+      "url": "https://cccymca.org/locations/soundview/camp/",
+      "checked": "2026-11-13",
+      "fields": [
+        "website_url"
+      ],
+      "note": "Soundview YMCA camp page; links the 2026 Camp Hays brochure, manual and registration packet"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://cccymca.org/wp-content/uploads/SDV-CAMP-HAYS-YMCA-SUMMER-DAY-CAMP-GUIDE.pdf",
       "kind": "pdf",
@@ -176,6 +186,28 @@
         "quote": "Gaga, Arts & Crafts, Archery, Sports and Nature"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://cccymca.org/wp-content/uploads/SDV-CAMP-HAYS-YMCA-SUMMER-DAY-CAMP-GUIDE.pdf",
+        "https://cccymca.org/wp-content/uploads/SDV-YMCA-SUMMER-DAY-CAMP-HAYS-Parent-Manual-2026.pdf",
+        "https://cccymca.org/locations/soundview/camp/",
+        "https://cccymca.org/locations/soundview/",
+        "https://cccymca.org/",
+        "https://www.soundviewymca.org (could not be reached)"
+      ],
+      "changes": [
+        "Removed price_per_week ($99) and price_per: the 2026 fee table lists $99 for every group with no unit and typo dates ('6/15/25-8/21/2'), so it does not reliably state a weekly rate.",
+        "refund_policy_summary expanded from the parent manual: fees due 2 weeks before each session, written refund requests, no refunds within 2 weeks except medical emergencies, $10 refund fee.",
+        "website_url changed from www.soundviewymca.org (could not be reached) to the Soundview YMCA camp page on cccymca.org, which links the Camp Hays brochure and forms.",
+        "Other fields (ages 3-15 with CIT at 14-15, groups by grade, 35-minute periods, the ten 2026 weeks June 15-Aug 21, before and after care, $50 deposit, special needs note) match the brochure."
+      ],
+      "open_questions": [
+        "Where does Camp Hays actually meet? The Soundview camp page calls it 'Soundview Family Y Camp at Hays School', and a staff bio on the Soundview page says 'Camp Hays in East Haven'. The brochure only gives the YMCA branch at 628 East Main Street, Branford. If camp is at a school in East Haven, the street address, city and zip are wrong.",
+        "What is the 2026 weekly price? The fee table says $99 for every group, member and non-member alike, which looks like an unfilled template (it also says 'Include other fees/financial associated info'). Ask the camp or wait for the 2027 brochure.",
+        "Only 2026 material is posted (2026 registration opened January 2). Keep the 2026 season, or hold the listing until the 2027 brochure is up?"
+      ]
+    }
   }
 }

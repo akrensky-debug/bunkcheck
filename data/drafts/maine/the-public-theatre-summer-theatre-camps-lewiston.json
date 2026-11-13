@@ -3,6 +3,7 @@
   "name": "The Public Theatre Summer Theatre Camps",
   "operator_name": "The Public Theatre (in partnership with Lewiston Parks and Recreation)",
   "website_url": "https://thepublictheatre.org/summer-camps/",
+  "email": "education@thepublictheatre.org",
   "city": "Lewiston",
   "state": "ME",
   "zip": "04240",
@@ -45,7 +46,7 @@
   "sources": [
     {
       "url": "https://thepublictheatre.org/summer-camps/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -62,21 +63,22 @@
         "price_max",
         "price_per_week",
         "price_per",
-        "sessions"
+        "sessions",
+        "email"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Camp page; 'Email a Question' link goes to education@thepublictheatre.org."
     },
     {
-      "url": "https://www.census.gov/geographies/reference-files/time-series/geo/relationship-files.2020.html",
-      "checked": "2026-10-14",
+      "url": "https://thepublictheatre.org/contact/",
+      "checked": "2026-11-13",
       "fields": [
         "zip"
       ],
-      "note": "Lewiston, ME sits inside one ZIP code (2020 Census ZCTA relationship file)"
+      "note": "ZIP from The Public Theatre's own address on its contact page: 31 Maple Street, Lewiston, ME 04240 (Friday sessions and the final presentation happen there)."
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://thepublictheatre.org/summer-camps/",
       "kind": "html",
@@ -116,6 +118,21 @@
         "quote": "July 7-11, 2026  |  9:00 AM – 3:00 PM"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://thepublictheatre.org/summer-camps/",
+        "https://thepublictheatre.org/contact/"
+      ],
+      "changes": [
+        "Moved the ZIP source from the 2020 Census file (Lewiston also has PO box ZIPs, so 'one ZIP' was wrong) to the theatre's own contact page: 31 Maple Street, Lewiston, ME 04240.",
+        "Added email education@thepublictheatre.org from the camp page's 'Email a Question' link.",
+        "Confirmed ages 8 to 14, 9:00 AM to 3:00 PM, $230 resident and $240 non-resident, Monday to Thursday at Lewiston High School and Friday at the theatre, and both 2026 dates as printed."
+      ],
+      "open_questions": [
+        "The camp page lists Musical Theatre Camp I as July 7-11, 2026, which is Tuesday to Saturday, while the same page says camp ends with a Friday presentation. Publish the date as printed, or drop that session until 2027 dates are posted?"
+      ]
+    }
   }
 }

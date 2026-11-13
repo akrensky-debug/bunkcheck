@@ -2,7 +2,7 @@
   "slug": "summer-zoocamp",
   "name": "Summer ZooCamp",
   "operator_name": "Zoo New England",
-  "website_url": "https://www.zoonewengland.org/discover/zoocamp/",
+  "website_url": "https://www.zoonewengland.org/discover/camps/zoocamp/",
   "city": null,
   "state": null,
   "zip": null,
@@ -19,8 +19,8 @@
   ],
   "sources": [
     {
-      "url": "https://www.zoonewengland.org/discover/zoocamp/",
-      "checked": "2026-10-13",
+      "url": "https://www.zoonewengland.org/discover/camps/zoocamp/",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -33,7 +33,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.zoonewengland.org/discover/zoocamp/",
       "kind": "html",
@@ -68,6 +68,36 @@
       "missing required camp_type",
       "missing required season_year",
       "camp_type must be one of ['day', 'sleepaway', 'specialty']"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.zoonewengland.org/discover/zoocamp/ (404)",
+        "https://www.zoonewengland.org/discover/camps/zoocamp/"
+      ],
+      "changes": [
+        "The draft's URL (/discover/zoocamp/) now returns 404; the same ZooCamp text moved to /discover/camps/zoocamp/. Updated website_url and the source row",
+        "Name, operator, description and activities still match the page word for word",
+        "Re-fetched as BunkcheckBot on 2026-11-12: confirmed"
+      ],
+      "open_questions": [
+        "Andrew to decide: the page is now only a short blurb plus a mailing-list sign-up form. It gives no year, dates, ages, prices, hours or registration, so city/state/ZIP, camp_type and season_year cannot be filled and the validator fails. Hold until Zoo New England posts summer 2027 details",
+        "ZooCamp runs at two sites (Franklin Park Zoo in Boston and Stone Zoo in Stoneham); when details appear it likely needs two listings, one per site"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.zoonewengland.org/discover/zoocamp/ (404)",
+      "changes": [
+        "The draft's URL (/discover/zoocamp/) now returns 404; the same ZooCamp text moved to /discover/camps/zoocamp/. Updated website_url and the source row",
+        "Name, operator, description and activities still match the page word for word",
+        "Re-fetched as BunkcheckBot on 2026-11-12: confirmed"
+      ],
+      "for_andrew": [
+        "Andrew to decide: the page is now only a short blurb plus a mailing-list sign-up form. It gives no year, dates, ages, prices, hours or registration, so city/state/ZIP, camp_type and season_year cannot be filled and the validator fails. Hold until Zoo New England posts summer 2027 details",
+        "ZooCamp runs at two sites (Franklin Park Zoo in Boston and Stone Zoo in Stoneham); when details appear it likely needs two listings, one per site"
+      ]
+    }
   }
 }

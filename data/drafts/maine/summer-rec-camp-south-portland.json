@@ -2,12 +2,12 @@
   "slug": "summer-rec-camp-south-portland",
   "name": "Summer Rec Camp",
   "operator_name": "City of South Portland Parks, Recreation & Waterfront",
-  "website_url": "https://southportland.gov/571/Out-of-School-Programs",
+  "website_url": "https://www.southportland.gov/571/Out-of-School-Programs",
   "email": "kfilieo@southportland.gov",
   "city": "South Portland",
   "state": "ME",
   "zip": "04106",
-  "camp_type": "day",
+  "camp_type": null,
   "grade_min": 0,
   "grade_max": 8,
   "description_short": "A city-run summer recreation camp for South Portland residents entering grades K-8, with field trips, performers, games, and arts and crafts. Only South Portland residents can attend, and spaces are limited.",
@@ -18,11 +18,11 @@
     "arts and crafts"
   ],
   "financial_aid": true,
-  "refund_policy_summary": "The $50 deposit can be refunded until June 9 (this date is from the current page and may be from a past season).",
+  "refund_policy_summary": "The $50 deposit is refundable until June 9 (the page gives no year; its financial aid dates look like they are from a past season).",
   "sources": [
     {
-      "url": "https://southportland.gov/571/Out-of-School-Programs",
-      "checked": "2026-10-13",
+      "url": "https://www.southportland.gov/571/Out-of-School-Programs",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -30,27 +30,18 @@
         "email",
         "city",
         "state",
-        "camp_type",
+        "zip",
         "activities",
         "grade_min",
         "grade_max",
         "description_short",
         "financial_aid",
         "refund_policy_summary"
-      ],
-      "note": "Drafted by the listing tool from this page"
-    },
-    {
-      "url": "https://www.census.gov/geographies/reference-files/time-series/geo/relationship-files.2020.html",
-      "checked": "2026-10-14",
-      "fields": [
-        "zip"
-      ],
-      "note": "South Portland, ME sits inside one ZIP code (2020 Census ZCTA relationship file)"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://southportland.gov/571/Out-of-School-Programs",
       "kind": "html",
@@ -93,6 +84,26 @@
     ],
     "errors": [
       "missing required season_year"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://southportland.gov/571/Out-of-School-Programs (could not be reached)",
+        "https://www.southportland.gov/571/Out-of-School-Programs",
+        "https://southportlandme.myrec.com/info/activities/default.aspx",
+        "https://southportlandme.myrec.com/info/activities/default.aspx?CategoryID=1540&type="
+      ],
+      "changes": [
+        "website_url changed to the www address; the address without www could not be reached",
+        "camp_type set to null: the page never says day camp (the draft inferred it)",
+        "ZIP 04106 now sourced to the city's own page footer (South Portland City Hall, 25 Cottage Road, South Portland, ME 04106) instead of the Census file",
+        "Confirmed grades K-8, residents only, field trips, performers, games, arts and crafts, Kari Filieo's email, financial aid and the $50 refundable deposit on the page",
+        "The page gives no season year, dates or prices, and the city's MyRec registration site lists no summer rec camp right now (only December and school vacation camps and STEM camps); season_year stays empty, so check_draft fails on season_year and camp_type"
+      ],
+      "open_questions": [
+        "Can't be valid yet: no season year, dates or prices anywhere on the city's pages. The page says registration opens in early February; hold until 2027 details are posted, or drop?",
+        "OK to list camp_type 'day' for a city rec camp with field trips, though the page doesn't say it?"
+      ]
+    }
   }
 }

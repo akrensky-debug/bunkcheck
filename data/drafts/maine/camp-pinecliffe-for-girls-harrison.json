@@ -2,19 +2,41 @@
   "slug": "camp-pinecliffe-for-girls-harrison",
   "name": "Camp Pinecliffe for Girls",
   "website_url": "https://www.pinecliffe.com",
+  "registration_url": "https://pinecliffe.campintouch.com/ui/forms/application/camper/App",
   "phone": "(207) 583-2201",
   "street_address": "64 Camp Pinecliffe Road",
   "city": "Harrison",
   "state": "ME",
   "zip": "04040",
   "camp_type": "sleepaway",
-  "description_short": "An all-girls overnight camp in Harrison, Maine. It offers a full summer session and a four-week session for first-time campers.",
-  "activities": [
-    "Horseback riding (optional, extra fee)"
+  "primary_categories": [
+    "sports",
+    "arts",
+    "outdoor"
   ],
+  "activities": [
+    "land sports",
+    "tennis",
+    "watersports",
+    "camp craft",
+    "nature",
+    "ropes",
+    "gymnastics",
+    "horseback riding (optional, extra fee)",
+    "studio arts",
+    "performing arts",
+    "senior trips"
+  ],
+  "gender_policy": "girls",
+  "age_min": 7,
+  "age_max": 15,
+  "description_short": "Overnight camp for girls ages 7 to 15 in Harrison, Maine, run by the same family since 1917. Girls live by bunk and age group and take part in sports, tennis, watersports, arts, riding and camping trips, mostly over a full summer season.",
   "price_min": 13100,
   "price_max": 17900,
+  "price_per": "session",
   "transportation": true,
+  "aca_accredited": true,
+  "aca_source_url": "https://www.pinecliffe.com/dates-rates",
   "season_year": 2027,
   "sessions": [
     {
@@ -28,28 +50,54 @@
   "sources": [
     {
       "url": "https://www.pinecliffe.com/dates-rates",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "website_url",
+        "registration_url",
         "phone",
         "street_address",
         "city",
         "state",
         "zip",
-        "camp_type",
-        "activities",
-        "description_short",
         "price_min",
         "price_max",
-        "transportation",
+        "price_per",
+        "aca_accredited",
+        "aca_source_url",
         "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "2027 tuition: full session $17,900, first-time four-week session $13,100. Footer shows 'ACA Accredited'."
+    },
+    {
+      "url": "https://www.pinecliffe.com/",
+      "checked": "2026-11-13",
+      "fields": [
+        "camp_type",
+        "gender_policy",
+        "age_min",
+        "age_max",
+        "description_short"
+      ]
+    },
+    {
+      "url": "https://www.pinecliffe.com/activities",
+      "checked": "2026-11-13",
+      "fields": [
+        "primary_categories",
+        "activities"
+      ]
+    },
+    {
+      "url": "https://www.pinecliffe.com/parents/faqs",
+      "checked": "2026-11-13",
+      "fields": [
+        "transportation"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.pinecliffe.com/dates-rates",
       "kind": "html",
@@ -83,6 +131,27 @@
         "quote": "Additional fees for both programs include canteen fees, transportation to and from camp"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.pinecliffe.com/dates-rates",
+        "https://www.pinecliffe.com/",
+        "https://www.pinecliffe.com/parents/faqs",
+        "https://www.pinecliffe.com/activities",
+        "https://www.pinecliffe.com/about-pinecliffe",
+        "https://www.pinecliffe.com/parents/food-health-safety"
+      ],
+      "changes": [
+        "Added girls ages 7 to 15 from the homepage ('a full-season summer camp for girls, ages 7-15').",
+        "Added ACA accreditation from the camp's own 'ACA Accredited' mark on its pages; not checked on ACA's site.",
+        "Added the online application link, activities and categories from the activities page, and price_per session.",
+        "Transportation confirmed from the FAQ: chaperoned buses from New York City, Westchester and Boston, and airport meet-ups.",
+        "The full 2027 session is still not recorded as a session: the page lists June 25, July 23 and August 11, 2027 without labels."
+      ],
+      "open_questions": [
+        "The full session ($17,900) dates aren't labeled. The page lists June 25, July 23 and August 11, 2027, and gives the four-week session as June 25 to July 23, so the full session is most likely June 25 to August 11. Record it, or leave only the four-week first-timer session until the camp confirms?"
+      ]
+    }
   }
 }

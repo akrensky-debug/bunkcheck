@@ -5,7 +5,7 @@ import { useSearchParams, useRouter } from 'next/navigation'
 import { searchCamps, type CampSearchResult } from '@/lib/api'
 import { Events } from '@/lib/analytics'
 import CampCard from '@/components/CampCard'
-import { Container, EmptyState, List, SearchBar, SearchField, Skeleton } from '@/components/ui'
+import { Container, EmptyState, List, SearchBar, SearchField, Skeleton, Text, TextLink } from '@/components/ui'
 
 
 function SearchResults() {
@@ -97,6 +97,9 @@ function SearchResults() {
             <List>
               {results.map((camp, i) => <CampCard key={camp.id} camp={camp} rank={i + 1} />)}
             </List>
+            <Text variant="small" tone="muted" className="mt-8">
+              Rather ask in your own words? <TextLink href="/connect" arrow>Use Bunkcheck in Claude</TextLink>
+            </Text>
           </>
         )}
       </div>

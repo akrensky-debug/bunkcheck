@@ -4,16 +4,16 @@
   "website_url": "https://bushyhill.org/bushy-hill-camp",
   "registration_url": "https://icdaycamps.campbrainregistration.com/",
   "email": "director@bushyhill.org",
-  "city": null,
-  "state": null,
-  "zip": null,
+  "city": "Ivoryton",
+  "state": "CT",
+  "zip": "06442",
   "camp_type": "day",
   "primary_categories": [
     "nature",
     "STEM"
   ],
   "age_min": 5,
-  "description_short": "A nature-based day camp where campers hike, canoe, build shelters, learn outdoor skills, and swim in a private lake under lifeguard supervision, in age-based field groups. Sessions are two weeks long. Campers ages 5-7 are in the Saplings program, and campers 8 and up can add one overnight campout per session.",
+  "description_short": "A nature-based day camp for ages 5-12 on a mile-long private lake in Ivoryton, CT. Campers hike, canoe, build shelters, learn outdoor skills and swim under lifeguard supervision in age-based field groups. Summer 2027 runs in five two-week sessions from June 14 to August 20 at $680 each; ages 5-7 join the Saplings groups. AM care, PM care and bus service from eight shoreline towns cost extra.",
   "activities": [
     "Hiking",
     "Canoeing",
@@ -28,7 +28,6 @@
     "Native plant identification",
     "STEAM challenges",
     "Wildlife tracking",
-    "Overnight campout (ages 8+)",
     "Water slide, water trampolines, rope swing",
     "Skits and storytelling"
   ],
@@ -38,41 +37,46 @@
   "extended_care": true,
   "transportation": true,
   "swim_waterfront_notes": "Daily afternoon waterfront time on a mile-long private lake with a sandy beach and lifeguard-supervised swimming. Certified lifeguards test every camper's swimming at the start of each session and assign swim areas based on ability. A different water activity each day (water slide, water trampolines, or rope swing). There is also a fishing dock for catch-and-release fishing.",
-  "season_year": 2026,
+  "season_year": 2027,
   "price_per": "week",
+  "street_address": "253 Bushy Hill Road",
+  "phone": "860-767-0848",
+  "age_max": 12,
+  "financial_aid": true,
+  "refund_policy_summary": "Each session has a non-refundable $75 deposit. Cancel more than a month before your first session for a full refund less the deposit; within 4 weeks, 75%; within 3 weeks, 50%; within 2 weeks, 25%; within a week, no refund. No refund for early withdrawal or dismissal for behavior.",
   "sessions": [
     {
       "name": "Session A (2 weeks)",
-      "start_date": "2026-06-15",
-      "end_date": "2026-06-26",
+      "start_date": "2027-06-14",
+      "end_date": "2027-06-25",
       "price": 680,
       "availability": "unknown"
     },
     {
       "name": "Session B (2 weeks)",
-      "start_date": "2026-06-29",
-      "end_date": "2026-07-10",
+      "start_date": "2027-06-28",
+      "end_date": "2027-07-09",
       "price": 680,
       "availability": "unknown"
     },
     {
       "name": "Session C (2 weeks)",
-      "start_date": "2026-07-13",
-      "end_date": "2026-07-24",
+      "start_date": "2027-07-12",
+      "end_date": "2027-07-23",
       "price": 680,
       "availability": "unknown"
     },
     {
       "name": "Session D (2 weeks)",
-      "start_date": "2026-07-27",
-      "end_date": "2026-08-07",
+      "start_date": "2027-07-26",
+      "end_date": "2027-08-06",
       "price": 680,
       "availability": "unknown"
     },
     {
       "name": "Session E (2 weeks)",
-      "start_date": "2026-08-10",
-      "end_date": "2026-08-21",
+      "start_date": "2027-08-09",
+      "end_date": "2027-08-20",
       "price": 680,
       "availability": "unknown"
     }
@@ -80,7 +84,7 @@
   "sources": [
     {
       "url": "https://bushyhill.org/bushy-hill-camp",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "website_url",
@@ -99,12 +103,43 @@
         "transportation",
         "swim_waterfront_notes",
         "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
+    },
+    {
+      "url": "https://bushyhill.org/",
+      "checked": "2026-11-13",
+      "fields": [
+        "age_max"
+      ]
+    },
+    {
+      "url": "https://bushyhill.org/dates-and-rates-hub",
+      "checked": "2026-11-13",
+      "fields": [
+        "financial_aid"
+      ]
+    },
+    {
+      "url": "https://bushyhill.org/registration-info",
+      "checked": "2026-11-13",
+      "fields": [
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "phone"
+      ]
+    },
+    {
+      "url": "https://bushyhill.org/faqs",
+      "checked": "2026-11-13",
+      "fields": [
+        "refund_policy_summary"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://bushyhill.org/bushy-hill-camp",
       "kind": "html",
@@ -147,6 +182,30 @@
       "missing required city",
       "missing required state",
       "missing required zip"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://bushyhill.org/bushy-hill-camp",
+        "https://bushyhill.org/dates-and-rates-hub",
+        "https://bushyhill.org/",
+        "https://bushyhill.org/registration-info",
+        "https://bushyhill.org/transport-information",
+        "https://bushyhill.org/faqs"
+      ],
+      "changes": [
+        "Changed season_year from 2026 to 2027.",
+        "Moved the sessions to summer 2027: the camp page now lists A to E as June 14 to August 20, and the dates and rates page says 'tuition rates for summer 2027' (June 14, 2027 is a Monday). The old 2026 dates were wrong.",
+        "Added the address 253 Bushy Hill Road, Ivoryton, CT 06442 and phone 860-767-0848 from the registration info page; city, state and zip were missing.",
+        "Added age_max 12 from the home page (Bushy Hill Day Camp and Saplings, ages 5-12).",
+        "Added financial_aid (scholarships up to 50%) and the refund policy from the FAQ.",
+        "Removed the overnight campout from activities and the description: the current camp page no longer mentions it, and the rates page says sleepover only 'if available'.",
+        "Rewrote the description with 2027 dates, price and Ivoryton; extras are now $100 AM care, $100 PM care, $160 bus per two-week session."
+      ],
+      "open_questions": [
+        "Ages differ between the camp's own pages: the home page says 5-12, the dates and rates page says main camp is 5 to 13. I used 12.",
+        "The transport page gives the street address as Deep River, while the registration page and its map link say Ivoryton 06442. I used Ivoryton. The slug has no town; leave it?"
+      ]
+    }
   }
 }

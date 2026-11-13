@@ -12,25 +12,26 @@
   "zip": "02860",
   "camp_type": "day",
   "age_min": 5,
-  "age_max": 13,
-  "description_short": "A YMCA summer day camp for ages 5–13 at the Pawtucket Family YMCA in downtown Pawtucket. Campers rotate through daily activities including crafts, swimming, group games and time outdoors.",
+  "age_max": 16,
+  "description_short": "YMCA traditional day camp at the Pawtucket Family YMCA in downtown Pawtucket, grouped by age from Pathfinders (5-6) to Leaders in Training (15-16). Days mix indoor and outdoor activities such as swimming, creative arts, group games and nature exploration, with daily lunch and weekly field trips to Camp Westwood. Specialty weeks include Sports Medley, Art Explosion and the Voyagers travel camp.",
   "activities": [
     "crafts",
+    "creative arts",
     "swimming",
     "group games",
-    "outdoor time"
+    "nature exploration",
+    "outdoor time",
+    "weekly field trips to Camp Westwood",
+    "Sports Medley specialty camp",
+    "Art Explosion specialty camp",
+    "Voyagers travel camp (ages 12-16)",
+    "swim lesson add-on"
   ],
   "swim_waterfront_notes": "Swimming is listed among daily activities; the camp is based at the Pawtucket Family YMCA. Pool details and swim testing are not described.",
-  "primary_categories": [
-    "general"
-  ],
-  "price_min": 285,
-  "price_per": "week",
-  "meals_included": true,
   "sources": [
     {
       "url": "https://ymcapawtucket.org/camps/camp-pawtucket",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -43,23 +44,27 @@
         "state",
         "zip",
         "camp_type",
-        "activities",
         "age_min",
-        "age_max",
-        "description_short",
         "swim_waterfront_notes"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Camp Pawtucket home page: 'welcomes youth ages 5-13'"
     },
     {
       "url": "https://ymcapawtucket.org/camps/camp-pawtucket-day-camp",
-      "checked": "2026-10-27",
+      "checked": "2026-11-12",
       "fields": [
+        "age_max",
         "primary_categories",
+        "secondary_categories",
+        "activities",
+        "description_short",
         "price_min",
+        "price_max",
         "price_per",
-        "meals_included"
-      ]
+        "meals_included",
+        "sessions"
+      ],
+      "note": "Day Camp page: Dates: June 22 - August 28 (no year; weekdays match 2026), 6:30 AM - 6 PM, starting at $285 per week, includes daily lunch and weekly field trips; Weeks 1-10; age groups to LIT 15-16; specialty camps $285-$295"
     }
   ],
   "review": {
@@ -87,17 +92,28 @@
       "Special needs accommodations (page says staff support 'each child's individual needs' but gives no specifics)",
       "Pool and swim supervision details"
     ],
-    "low_confidence": [
-      {
-        "field": "registration_url",
-        "confidence": 0.7,
-        "quote": "Register Now"
-      }
-    ],
-    "errors": [
-      "missing required season_year"
-    ],
-    "first_pass": {
+    "low_confidence": [],
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://ymcapawtucket.org/camps/camp-pawtucket",
+        "https://ymcapawtucket.org/camps/camp-pawtucket-day-camp"
+      ],
+      "changes": [
+        "Added season 2026 and ten weekly sessions June 22 to August 28 from the Day Camp page (no year given; June 22 and August 28 fall on Monday and Friday in 2026). Session prices left blank ('starting at $285 per week').",
+        "Added prices $285 to $295 per week, daily lunch included, categories (general; arts, sports, swimming), specialty camps in activities, new description from the Day Camp page.",
+        "age_max raised from 13 to 16: the Day Camp page groups campers up to Leaders in Training (15-16) and lists specialty camps for ages 5-16."
+      ],
+      "open_questions": [
+        "Ages conflict: the Camp Pawtucket home page says 'ages 5-13'; the Day Camp page lists groups up to 16. Which should the listing show?",
+        "Day Camp page says 'Registration is Open!' but its dates match 2026 (June 22 to August 28 on Monday to Friday). Unclear whether this is stale or 2027 registration opened with old dates.",
+        "Day hours 6:30 AM to 6 PM; extended care not separately described.",
+        "No 2027 dates posted."
+      ]
+    },
+    "earlier_pass": {
+      "status": "needs_andrew",
       "by": "Claude",
       "date": "2026-10-27",
       "page_checked": "https://ymcapawtucket.org/camps/camp-pawtucket (and /camps/camp-pawtucket-day-camp)",
@@ -108,6 +124,107 @@
         "season_year missing: the Day Camp page gives 'June 22 - August 28' (6:30am-6pm) with no year (Mon/Fri in 2026); no session added until the year is confirmed.",
         "Ages conflict: main page says ages 5-13; Day Camp page has groups up to 15-16 (LIT) and specialty camps for 5-16. Kept 5-13."
       ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://ymcapawtucket.org/camps/camp-pawtucket",
+      "changes": [
+        "Added season 2026 and ten weekly sessions June 22 to August 28 from the Day Camp page (no year given; June 22 and August 28 fall on Monday and Friday in 2026). Session prices left blank ('starting at $285 per week').",
+        "Added prices $285 to $295 per week, daily lunch included, categories (general; arts, sports, swimming), specialty camps in activities, new description from the Day Camp page.",
+        "age_max raised from 13 to 16: the Day Camp page groups campers up to Leaders in Training (15-16) and lists specialty camps for ages 5-16."
+      ],
+      "for_andrew": [
+        "Ages conflict: the Camp Pawtucket home page says 'ages 5-13'; the Day Camp page lists groups up to 16. Which should the listing show?",
+        "Day Camp page says 'Registration is Open!' but its dates match 2026 (June 22 to August 28 on Monday to Friday). Unclear whether this is stale or 2027 registration opened with old dates.",
+        "Day hours 6:30 AM to 6 PM; extended care not separately described.",
+        "No 2027 dates posted."
+      ]
     }
-  }
+  },
+  "season_year": 2026,
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "arts",
+    "sports",
+    "swimming"
+  ],
+  "price_min": 285,
+  "price_max": 295,
+  "price_per": "week",
+  "meals_included": true,
+  "sessions": [
+    {
+      "name": "Week 1",
+      "start_date": "2026-06-22",
+      "end_date": "2026-06-26",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 2",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-03",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 3",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 4",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 5",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 6",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 7",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 8",
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-14",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 9",
+      "start_date": "2026-08-17",
+      "end_date": "2026-08-21",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 10",
+      "start_date": "2026-08-24",
+      "end_date": "2026-08-28",
+      "price": null,
+      "availability": "unknown"
+    }
+  ]
 }

@@ -26,6 +26,9 @@ HEADERS = {
 
 failures: list[str] = []
 
+# Tools that may lead to something outside the conversation. Every other tool must be read-only.
+WRITE_TOOLS = {"send_inquiry"}
+
 
 def check(ok: bool, label: str) -> None:
     print(f"  {'ok ' if ok else 'FAIL'} {label}")
@@ -64,10 +67,14 @@ def main() -> None:
         tools = {t["name"]: t for t in rpc(client, url, "tools/list")["tools"]}
         for t in tools.values():
             a = t.get("annotations") or {}
-            check(
-                a.get("readOnlyHint") is True and a.get("destructiveHint") is False and "openWorldHint" in a and bool(t.get("title")),
-                f"{t['name']}: title and read-only annotations",
-            )
+            if t["name"] in WRITE_TOOLS:
+                # Creates a pending inquiry the parent confirms on our site (docs/inquiries.md).
+                ok = a.get("readOnlyHint") is False and a.get("destructiveHint") is False and a.get("openWorldHint") is True
+                kind = "write (not destructive, open world)"
+            else:
+                ok = a.get("readOnlyHint") is True and a.get("destructiveHint") is False and "openWorldHint" in a
+                kind = "read-only"
+            check(ok and bool(t.get("title")), f"{t['name']}: title and {kind} annotations")
         widget_tools = [t for t in tools.values() if (t.get("_meta") or {}).get("ui", {}).get("resourceUri")]
         check(len(widget_tools) >= 2, "search_camps and find_sessions carry a UI resource")
 

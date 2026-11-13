@@ -26,11 +26,15 @@ WEEK_1 = "55555555-5555-5555-5555-555555555551"
 # ---------------------------------------------------------------------------
 
 def test_migration_keeps_every_curated_slug() -> None:
-    """Real camps' ids come from their dataset slug, so the migration must name every one."""
+    """Real camps' ids come from their dataset slug. 0012 named every camp live then; a camp
+    published since must be inserted, id and slug, by a later migration."""
     listed = dict(re.findall(r"\('([0-9a-f-]{36})'::uuid, '([a-z0-9-]+)'\)", MIGRATION.read_text()))
     dataset = {camp_id(c["slug"]): c["slug"]
                for f in sorted((ROOT / "data" / "camps").glob("*.json")) for c in json.loads(f.read_text())["camps"]}
-    assert listed == dataset
+    assert {k: dataset.get(k) for k in listed} == listed       # nothing 0012 named has gone or changed slug
+    later = "".join(p.read_text() for p in sorted(MIGRATION.parent.glob("*.sql")) if p.name > MIGRATION.name)
+    missing = [s for i, s in dataset.items() if i not in listed and not (f"'{i}'" in later and f"'{s}'" in later)]
+    assert not missing, f"published but in no migration: {missing[:5]}"
 
 
 def test_importer_writes_the_slug() -> None:

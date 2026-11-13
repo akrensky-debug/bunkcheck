@@ -9,7 +9,7 @@
   "state": "ME",
   "zip": "04401",
   "primary_categories": [
-    "nature"
+    "general"
   ],
   "grade_min": 0,
   "grade_max": 12,
@@ -24,7 +24,7 @@
   "sources": [
     {
       "url": "https://bangory.org/camps/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -40,12 +40,11 @@
         "grade_max",
         "description_short",
         "financial_aid"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://bangory.org/camps/",
       "kind": "html",
@@ -83,6 +82,22 @@
       "missing required camp_type",
       "missing required season_year",
       "camp_type must be one of ['day', 'sleepaway', 'specialty']"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://bangory.org/camps/",
+        "https://bangory.org/camp-peirce-webber/"
+      ],
+      "changes": [
+        "Confirmed on the overview page: four programs (Camp Acorn K-3, Camp G. Peirce Webber K-6, Adventure Day Camp 5-10, Camp Jordan overnight age 7 to grade 12), tier pricing, financial assistance, 17 Second Street, Bangor 04401, 207-941-2808",
+        "Changed primary_categories from nature to general: three of the four are general YMCA day camps",
+        "Left camp_type and season_year empty, so the draft is not valid: the listing covers day camps and an overnight camp at different sites",
+        "Found on the Camp G. Peirce Webber page: 2026 weeks June 22-August 21, $294-$331 per week by tier, at a 55-acre site in Hampden (not Bangor); no 2027 dates yet"
+      ],
+      "open_questions": [
+        "This listing is four camps at three sites (Camp Acorn at the Y in Bangor, Camp G. Peirce Webber and Adventure Day Camp in Hampden, Camp Jordan overnight at campjordan.org). Split it into a Peirce Webber day camp listing (Hampden is not in cities.py) and a Camp Jordan listing, or drop the umbrella?"
+      ]
+    }
   }
 }

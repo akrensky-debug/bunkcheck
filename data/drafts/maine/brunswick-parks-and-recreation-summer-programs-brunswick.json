@@ -41,7 +41,7 @@
   "sources": [
     {
       "url": "https://www.brunswickme.gov/221/Summer",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -50,24 +50,16 @@
         "phone",
         "city",
         "state",
+        "zip",
         "primary_categories",
         "activities",
         "description_short",
         "swim_waterfront_notes"
-      ],
-      "note": "Drafted by the listing tool from this page"
-    },
-    {
-      "url": "https://www.census.gov/geographies/reference-files/time-series/geo/relationship-files.2020.html",
-      "checked": "2026-10-14",
-      "fields": [
-        "zip"
-      ],
-      "note": "Brunswick, ME sits inside one ZIP code (2020 Census ZCTA relationship file)"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.brunswickme.gov/221/Summer",
       "kind": "html",
@@ -114,6 +106,21 @@
       "missing required camp_type",
       "missing required season_year",
       "camp_type must be one of ['day', 'sleepaway', 'specialty']"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.brunswickme.gov/221/Summer",
+        "https://www.brunswickme.gov/656/Current-Past-Program-Brochures"
+      ],
+      "changes": [
+        "Confirmed the program list, CivicRec link and Town Hall contact (85 Union Street, Brunswick, ME 04011, 207-725-6100) on the page",
+        "Moved zip to the town page, which shows Brunswick, ME 04011, and dropped the Census file source",
+        "Left camp_type and season_year empty, so the draft is not valid: the page is an index of about 25 programs with no dates, prices or ages"
+      ],
+      "open_questions": [
+        "This is the town's index of summer programs, several run by outside providers (Mad Science, Maineiax Lacrosse, which has its own draft). List only the town's own Summer Day Camp from the CivicRec catalog or the Summer 2026 brochure, or drop this umbrella listing?"
+      ]
+    }
   }
 }
