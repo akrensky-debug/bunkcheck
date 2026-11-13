@@ -62,7 +62,7 @@ that holds a copy.
 | --- | --- | --- | --- | --- | --- |
 | Unconfirmed inquiry | `inquiries`, status `pending` | Question, channel | Expires after 72 hours; deleted 30 days later | **Enforced** (`inquiries/service.py`, hourly tick) | Keep |
 | Delivered inquiry | `inquiries` | Question, replies, contact if she added it, kit link token | 365 days, then text, replies, contact and links removed; date, camp, source and billing kept | **Enforced** (`RETENTION_DAYS = 365`) | Keep 365 days for the text. Keep the billing fields as long as billing records (below) |
-| Inquiry on family delete | `inquiries.family_id ON DELETE CASCADE` | The whole row, billing fields included | Deleted with the family | Enforced and tested on purpose, **but it conflicts with billing** | Redact the text and contact, set `family_id` to null, keep billing fields |
+| Inquiry on family delete | `inquiries.family_id ON DELETE CASCADE` | The whole row, billing fields included | Deleted with the family | Enforced and tested on purpose, **but it conflicts with billing** | **Decided 13 November 2026: redact and keep the billing fields.** See "Inquiries when a family is deleted" below |
 | Search appearances | `result_appearances` | Channel, endpoint, program ids. No query, no family | Forever | **None** | [24 months]. Holds no personal data |
 | Camp billing setting | `camp_inquiry_settings` | Opt-in, cap, who changed it | Until the camp is removed | n/a | Keep while the agreement runs, then as billing records |
 
@@ -108,13 +108,48 @@ which is item 13 (processor agreements).
 | Anthropic | Each assistant turn, as sent to the API. The info kit is never sent | Not documented | Retention under our commercial terms, and whether zero data retention is available |
 | Stripe (future) | Camp billing contacts and payment details | n/a | Stripe keeps its own records; ours follow the billing row |
 
+## Inquiries when a family is deleted
+
+Decided by Andrew on 13 November 2026. Build on `claude/inquiry-tool` before any camp is billed.
+
+| Inquiry status | What happens |
+| --- | --- |
+| `pending`, `expired`, `cancelled` | Delete the row. Nothing was delivered and nothing is billable |
+| `confirmed`, `delivered` | Redact and keep, as below |
+
+| Column | On redaction |
+| --- | --- |
+| `question`, `replies`, `contact`, `kit_token`, `kit_share_id` | Removed (null, or `[]` for `replies`) |
+| `family_id`, `family_key` | Set to null. The family is gone, and the hash identifies a person |
+| `token_hash`, `confirm_token_hash`, `reply_token_hash` | Replaced, so the assistant's read link, the confirm link and the camp's reply link stop working |
+| `redacted_at` | Set to the time of deletion |
+| `id`, `camp_id`, `session_id`, `channel`, `api_client_id`, `status`, `confirmed_via`, `confirmed_at`, `delivered_at`, `billable`, `bill_reason`, `price_cents`, `created_at` | Kept, for the camp's invoice and the 14-day dispute window |
+
+How:
+
+- `kit/service.delete_family_data` redacts the family's inquiries first, then deletes the family.
+- The foreign key changes from `ON DELETE CASCADE` to `ON DELETE SET NULL`, so a delete that
+  skips the service can't remove billing records. If migration 0017 has been applied
+  anywhere, this is a new migration; never edit an applied one.
+- The redaction reuses the 365-day retention job's code, so the two paths remove the same
+  columns.
+- Tests: `test_inquiries_are_in_the_family_export_and_go_when_the_family_is_deleted` changes to
+  check that pending rows are gone and delivered rows keep only the columns above; a second
+  test checks that a raw `DELETE FROM families` leaves the billing fields.
+- The camp's inquiry page shows a redacted inquiry as "Removed at the parent's request", with
+  the date, source and bill reason.
+
+Known effect: with `family_key` cleared, a family that deletes and comes back within 7 days
+may be billed again for the same camp. That is rare and is credited under the dispute rules.
+
 ## What has to be built to keep this schedule
 
 In order of risk. None of this is in this PR.
 
 1. Fix family deletion: also delete the Supabase Auth accounts that belong only to that family,
    and registration alerts on the account email.
-2. Change `inquiries.family_id` to redact and keep billing fields, before billing starts.
+2. Redact inquiries on family delete and keep their billing fields, before billing starts
+   (decided; requirements below).
 3. A conversation limit for `agent_conversations`, run on the hourly tick next to the inquiry
    retention job.
 4. Clean-up of expired kit shares, unaccepted invites and unconfirmed alerts.

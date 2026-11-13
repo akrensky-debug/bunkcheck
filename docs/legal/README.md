@@ -70,6 +70,9 @@ names Invisible Industries (`frontend/lib/site.ts`); the trademark checklist on
   its own field, which ranking never reads. The free team check (`team_verified`) keeps its
   ranking weight. Build requirements are in [camp-agreement.md](camp-agreement.md), Part 3,
   row 11.2.
+- Decided 13 November 2026: when a parent deletes her family, her delivered inquiries are
+  redacted and their billing fields kept for the camp. Requirements are in
+  [retention.md](retention.md), "Inquiries when a family is deleted".
 - Inquiry wording drafts: "Bunkcheck: before we bill anyone" (https://claude.ai/artifact/HiVgJiRY7qbFEUoaqTcdmz).
 - Payments design: https://claude.ai/artifact/QTUXBbMsEdGJbVUagX1sBD.
 - How inquiries work in code: `docs/inquiries.md` on `claude/inquiry-tool` (not merged yet).
