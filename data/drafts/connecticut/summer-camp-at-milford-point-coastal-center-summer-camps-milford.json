@@ -39,7 +39,7 @@
   "sources": [
     {
       "url": "https://ctaudubon.org/locations/the-coastal-center-at-milford-point-and-smith-hubbell-sanctuary/summer-camp/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -64,11 +64,11 @@
         "special_needs_notes",
         "swim_waterfront_notes"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "$395 per week, $316 for 4-day weeks; weekly sessions June 16 to August 15, 2026"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://ctaudubon.org/locations/the-coastal-center-at-milford-point-and-smith-hubbell-sanctuary/summer-camp/",
       "kind": "html",
@@ -115,6 +115,18 @@
         "quote": "For cancellation requests before June 1, you will receive a refund minus a 20% fee per program cancelled. Membership fees will not be refunded. After June 1, there are no summer program refunds."
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://ctaudubon.org/locations/the-coastal-center-at-milford-point-and-smith-hubbell-sanctuary/summer-camp/",
+        "https://ctaudubon.org/education/camps"
+      ],
+      "changes": [
+        "No corrections needed: prices ($395 a week, $316 for 4-day weeks), grades K-5 completed, contact, refund policy, special needs and no-swimming notes all match the camp page.",
+        "No weekly sessions added: the page gives only the season range, and its June 16 to August 15, 2026 range does not fall on Monday to Friday, so individual weeks can't be worked out without guessing."
+      ],
+      "open_questions": []
+    }
   }
 }

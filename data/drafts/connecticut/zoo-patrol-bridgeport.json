@@ -15,7 +15,7 @@
     "nature",
     "STEM"
   ],
-  "description_short": "A summer program at Connecticut's Beardsley Zoo where children spend each day outdoors in a different part of the zoo. They hear staff talks about animals, enrichment and veterinary care, and do zoo-themed games and art.",
+  "description_short": "A half-day summer week at Connecticut's Beardsley Zoo in Bridgeport for ages 7-10 and 11-13, running 9 am to 12:30 pm. Each day children explore a different area of the zoo outdoors, hear staff talks on animal care, enrichment and veterinary care, and play zoo-themed games and art activities.",
   "activities": [
     "Guided exploration of zoo areas",
     "Staff presentations on animals, enrichment and veterinary care",
@@ -23,10 +23,68 @@
     "Art activities",
     "Scientific observation, tracking and artifact identification"
   ],
+  "age_min": 7,
+  "age_max": 13,
+  "price_min": 295,
+  "price_max": 320,
+  "price_per_week": 320,
+  "price_per": "week",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Ages 11-13, week of Jun 29 to Jul 3",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-03",
+      "price": 320,
+      "availability": "unknown"
+    },
+    {
+      "name": "Ages 7-10, week of Jul 6 to Jul 10",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": 320,
+      "availability": "unknown"
+    },
+    {
+      "name": "Ages 11-13, week of Jul 13 to Jul 17",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": 320,
+      "availability": "unknown"
+    },
+    {
+      "name": "Ages 7-10, week of Jul 20 to Jul 24",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": 320,
+      "availability": "unknown"
+    },
+    {
+      "name": "Ages 11-13, week of Jul 27 to Jul 31",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": 320,
+      "availability": "unknown"
+    },
+    {
+      "name": "Ages 7-10, week of Aug 3 to Aug 7",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": 320,
+      "availability": "unknown"
+    },
+    {
+      "name": "Ages 7-10, week of Aug 10 to Aug 14",
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-14",
+      "price": 320,
+      "availability": "unknown"
+    }
+  ],
   "sources": [
     {
       "url": "https://beardsleyzoo.org/education/zoo-patrol/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -38,16 +96,28 @@
         "city",
         "state",
         "zip",
-        "camp_type",
         "primary_categories",
-        "activities",
-        "description_short"
-      ],
-      "note": "Drafted by the listing tool from this page"
+        "activities"
+      ]
+    },
+    {
+      "url": "https://e.givesmart.com/events/N8V/",
+      "checked": "2026-11-13",
+      "fields": [
+        "camp_type",
+        "age_min",
+        "age_max",
+        "description_short",
+        "price_min",
+        "price_max",
+        "price_per_week",
+        "price_per",
+        "sessions"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://beardsleyzoo.org/education/zoo-patrol/",
       "kind": "html",
@@ -91,6 +161,21 @@
     ],
     "errors": [
       "missing required season_year"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://beardsleyzoo.org/education/zoo-patrol/",
+        "http://zoopatrol26.givesmart.com/ (redirects to https://e.givesmart.com/events/N8V/)"
+      ],
+      "changes": [
+        "Added the 2026 season from the zoo's own registration page (linked as Registration Open): seven one-week sessions June 29 to August 14, each for ages 7-10 or 11-13.",
+        "Added ages 7 to 13, hours 9 am to 12:30 pm, and prices $295 a week for zoo members and $320 for others (price_per_week 320).",
+        "camp_type day is now confirmed: drop-off 8:50 to 9:10 am and pick-up at 12:30 pm each day.",
+        "Rewrote the description to give the ages, hours and half-day schedule.",
+        "2027 dates and prices are not posted yet."
+      ],
+      "open_questions": []
+    }
   }
 }
