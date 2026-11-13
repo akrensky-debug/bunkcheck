@@ -251,8 +251,8 @@ export function AgentBlock({ data, familyId }: { data: UIData; familyId?: string
     case 'message_draft':   return <MessageDraft data={data} />
     case 'inquiry':
       return (
-        <div className="bg-white rounded-2xl border border-gray-200 p-4">
-          <p className="font-semibold text-gray-900 mb-3">Your question for {data.camp.name}</p>
+        <div className="bg-surface rounded-lg border border-line p-4">
+          <p className="font-semibold text-ink mb-3">Your question for {data.camp.name}</p>
           <InquiryConfirm token={data.confirm_token} initial={data} compact />
         </div>
       )
