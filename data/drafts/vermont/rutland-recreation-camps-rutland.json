@@ -1,8 +1,8 @@
 {
   "slug": "rutland-recreation-camps-rutland",
-  "name": "Rutland Recreation Camps",
+  "name": "Rutland Recreation Summer Day Camps",
   "operator_name": "Rutland Recreation Department",
-  "website_url": "https://www.rutlandrec.com/recreationcamps",
+  "website_url": "https://www.rutlandrec.com/daycamps",
   "email": "info@rutlandrec.com",
   "phone": "802-773-1822",
   "street_address": "134 Community Drive",
@@ -10,31 +10,19 @@
   "state": "VT",
   "zip": "05701",
   "camp_type": "day",
-  "primary_categories": [
-    "sports",
-    "arts",
-    "performing_arts"
-  ],
-  "description_short": "The Rutland Recreation Department in Rutland, Vermont runs several camps and classes. These include summer day camps (Preschool Camp, Camp Maple Leaf and Camp Green Mountain), theatre, sports, art and skateboard camps, and February and April break camps for grades K-6.",
-  "activities": [
-    "Summer day camps",
-    "Preschool camp",
-    "Theatre",
-    "Skateboarding",
-    "Sports",
-    "Art",
-    "Leadership (Rising Leaders)",
-    "Babysitter training (CPR, First Aid)"
-  ],
+  "primary_categories": null,
+  "description_short": "Summer day camps run by the Rutland Recreation and Parks Department: Preschool Camp, Camp Maple Leaf and Camp Green Mountain. In 2026 they ran 8 weeks, Monday to Friday, June 22 to August 14, and were full.",
+  "activities": null,
   "financial_aid": true,
   "sources": [
     {
-      "url": "https://www.rutlandrec.com/recreationcamps",
-      "checked": "2026-10-13",
+      "url": "https://www.rutlandrec.com/daycamps",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
         "website_url",
+        "registration_url",
         "email",
         "phone",
         "street_address",
@@ -42,16 +30,21 @@
         "state",
         "zip",
         "camp_type",
-        "primary_categories",
-        "activities",
         "description_short",
         "financial_aid"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Summer Day Camps 2026 page"
+    },
+    {
+      "url": "https://www.rutlandrec.com/refund",
+      "checked": "2026-11-13",
+      "fields": [
+        "refund_policy_summary"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.rutlandrec.com/recreationcamps",
       "kind": "html",
@@ -102,6 +95,29 @@
     ],
     "errors": [
       "missing required season_year"
-    ]
-  }
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.rutlandrec.com/recreationcamps",
+        "https://www.rutlandrec.com/daycamps",
+        "https://www.rutlandrec.com/refund",
+        "https://secure.rec1.com/VT/rutland-vt/catalog/index?filter=c2VhcmNoPWNhbXAmcmVudGFsJTVCZnJvbSU1RD0mcmVudGFsJTVCdG8lNUQ9JmFjMDllYjBiZGFjY2E3ZjhkM2Y1NzM0NmU2ZTdhMWVmPTQ2ZTJkNGUyOGZlZjIyZTQ4OGI0NzJkN2FlYTVlODJi"
+      ],
+      "changes": [
+        "Refocused the listing on the Summer Day Camps: name now 'Rutland Recreation Summer Day Camps' and website_url the Summer Day Camps 2026 page. The old draft described the whole camps-and-classes menu (theatre, skateboard, babysitter training, February and April break camps), which are separate programs and mostly not summer camps.",
+        "Set season_year 2026 from that page: 8 weeks, Monday to Friday, June 22 to August 14, 2026, marked FULL.",
+        "Removed the activities list and the sports/arts/performing_arts categories: they belonged to the other programs, and the day camp page does not describe its program, so categories are left empty.",
+        "Added registration_url (the department's Rec1 catalog linked as 'Register here') and the 2026 summer camp refund policy.",
+        "No sessions added: the page gives only the season span, not whether weeks are sold separately. No ages, grades or prices are published; the Rec1 catalog shows nothing without JavaScript."
+      ],
+      "open_questions": [
+        "The Summer Day Camps page names three camps (Preschool Camp, Camp Maple Leaf, Camp Green Mountain) but gives no ages, prices or weekly sessions for any of them. List them as one thin listing, split into three, or wait for the 2027 page?",
+        "Theatre, sports, art and skateboard summer camps on the overview page are left out. Draft them separately?"
+      ]
+    }
+  },
+  "registration_url": "https://secure.rec1.com/VT/rutland-vt/catalog/index?filter=c2VhcmNoPWNhbXAmcmVudGFsJTVCZnJvbSU1RD0mcmVudGFsJTVCdG8lNUQ9JmFjMDllYjBiZGFjY2E3ZjhkM2Y1NzM0NmU2ZTdhMWVmPTQ2ZTJkNGUyOGZlZjIyZTQ4OGI0NzJkN2FlYTVlODJi",
+  "refund_policy_summary": "For 2026 summer camp: 90% refund if you withdraw on or before June 15, 2026; no refunds from June 16.",
+  "season_year": 2026
 }

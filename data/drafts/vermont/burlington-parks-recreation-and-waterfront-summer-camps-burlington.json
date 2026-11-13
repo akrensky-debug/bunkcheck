@@ -11,14 +11,12 @@
   "state": "VT",
   "zip": "05401",
   "camp_type": "day",
-  "description_short": "The City of Burlington runs a range of summer day camps for kids, held at city facilities, parks and schools. Named camps include Champ Camp, Cool Camp and Adventure Camp. You register online through Civic Rec.",
+  "description_short": "Burlington Parks, Recreation & Waterfront runs many summer day camps across the city's facilities, parks and schools, including Champ Camp (its only licensed camp), Cool Camp and Adventure Camp. Champ, Cool and Adventure Camp get free lunch and afternoon snack; Champ and Adventure Camp offer bus transportation. Register online through Civic Rec; scholarships for Burlington residents.",
   "financial_aid": true,
-  "transportation": true,
-  "meals_included": true,
   "sources": [
     {
       "url": "https://www.burlingtonvt.gov/1084/Summer-Camps",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -32,15 +30,14 @@
         "zip",
         "camp_type",
         "description_short",
-        "transportation",
-        "meals_included",
         "financial_aid"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "City Summer Camps page: camps 'across the city in our facilities, parks, and schools'; FAQ on meals (Champ, Cool, Adventure only), transportation (Champ, Adventure only), subsidy (Champ only licensed); scholarships for Burlington residents; contact block 645 Pine Street, Suite B, Burlington, VT 05401, 802-864-0123"
     }
   ],
+  "season_year": 2026,
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.burlingtonvt.gov/1084/Summer-Camps",
       "kind": "html",
@@ -79,6 +76,23 @@
     ],
     "errors": [
       "missing required season_year"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.burlingtonvt.gov/1084/Summer-Camps",
+        "https://summerbtvparks.com/",
+        "https://secure.rec1.com/VT/burlington-vt/catalog/index/c1452aa09d5b9945035864902e4dbcb7?filter=c2VhcmNoPQ=="
+      ],
+      "changes": [
+        "Set season_year 2026 from the Summer BTV Parks site ('SUMMER 2026 guide', resident enrollment from February 4, 2026).",
+        "Cleared transportation and meals_included: each is true only for two or three of the city's camps, so a yes for the whole listing would mislead; the description now says which camps get them.",
+        "Rewrote the description; kept contact, address, Civic Rec registration link and resident scholarships, which match the city page."
+      ],
+      "open_questions": [
+        "This is a city umbrella for many different camps with different ages, prices and sites. No dates, prices or ages are readable: the Civic Rec catalog and the summer guide grid load by script and our fetcher got no camp listings. List it as one umbrella, split out Champ Camp, Cool Camp and Adventure Camp as separate listings, or drop?",
+        "Is the 645 Pine Street office address acceptable as the listing address, given camps meet at many sites?"
+      ]
+    }
   }
 }
