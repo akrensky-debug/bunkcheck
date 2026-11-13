@@ -74,7 +74,7 @@ parent confirms outside ChatGPT). Nothing moves money. Full rules: `docs/inquiri
   conversation.
 - **Starter prompts:** Find STEM day camps near Providence for my 8-year-old · Which camps near
   Boston have aftercare until 5:30? · I need camp coverage for the week of July 5
-- **URLs:** website `https://campfinder.com`, support `/support`, privacy `/privacy`, terms `/terms`
+- **URLs:** website `https://www.bunkcheck.ai`, support `/support`, privacy `/privacy`, terms `/terms`
 - **Countries:** US
 
 ## Review test cases
