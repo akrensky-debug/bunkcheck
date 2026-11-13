@@ -2,7 +2,7 @@
   "slug": "camp-mowglis-hebron",
   "name": "Camp Mowglis",
   "website_url": "https://www.mowglis.org",
-  "registration_url": "https://www.mowglis.org/future-families/dates-rates/",
+  "registration_url": "https://mowglis.campintouch.com/ui/forms/application/camper/App",
   "phone": "603-744-8095",
   "street_address": "4 Mowglis Drive",
   "city": "Hebron",
@@ -14,9 +14,6 @@
     "sports",
     "arts"
   ],
-  "age_min": 7,
-  "age_max": 17,
-  "description_short": "Overnight summer camp for boys on Newfound Lake in Hebron, NH, with traditional outdoor activities such as swimming, hiking, climbing, crew and archery. About 100 campers, one counselor for every three campers, and campers sleep in screened open-air dormitories grouped by age.",
   "activities": [
     "swimming",
     "hiking",
@@ -30,76 +27,92 @@
     "hiking trips",
     "evening campfires"
   ],
-  "price_min": 8100,
-  "price_max": 14410,
+  "gender_policy": "boys",
+  "age_min": 7,
+  "age_max": 15,
+  "description_short": "Overnight summer camp for boys on Newfound Lake in Hebron, NH, with traditional outdoor activities such as swimming, hiking, climbing, crew and archery. About 100 campers, one counselor for every three campers, and campers sleep in screened open-air dormitories grouped by age.",
+  "price_min": 6370,
+  "price_max": 11300,
+  "price_per": "session",
+  "financial_aid": true,
+  "refund_policy_summary": "A $500 registration deposit, applied to tuition, is due at enrollment and is non-refundable. Tuition payments are non-refundable after January 31; 50% is due March 15 and the rest by May 15. The camp recommends tuition insurance.",
   "swim_waterfront_notes": "Camp is beside Newfound Lake. Swimming and crew are listed as activities. The page gives no details on swim instruction or waterfront supervision.",
   "season_year": 2027,
   "sessions": [
     {
-      "name": "7-Week Full Season",
+      "name": "7-Week Full Season (ages 7-15)",
       "start_date": "2027-06-26",
       "end_date": "2027-08-15",
-      "price": 14410,
-      "availability": "open"
+      "price": 11300,
+      "availability": "unknown"
     },
     {
-      "name": "4-Week Cub Program",
+      "name": "4-Week Cub Program (ages 7-9)",
       "start_date": "2027-06-26",
       "end_date": "2027-07-24",
-      "price": 9600,
-      "availability": "open"
+      "price": 7560,
+      "availability": "unknown"
     },
     {
-      "name": "4-Week Intro Pack",
+      "name": "4-Week Intro Pack (ages 10-15)",
       "start_date": "2027-06-26",
       "end_date": "2027-07-24",
-      "price": 11640,
-      "availability": "open"
+      "price": 8980,
+      "availability": "unknown"
     },
     {
-      "name": "3-Week Cub Program",
+      "name": "3-Week Cub Program (ages 7-9)",
       "start_date": "2027-07-25",
       "end_date": "2027-08-15",
-      "price": 8100,
-      "availability": "open"
+      "price": 6370,
+      "availability": "unknown"
     },
     {
       "name": "Yearling/Junior Staff",
       "start_date": "2027-06-26",
       "end_date": "2027-08-15",
-      "price": 8100,
-      "availability": "open"
+      "price": 6370,
+      "availability": "unknown"
     }
   ],
   "sources": [
     {
       "url": "https://www.mowglis.org/best-boys-summer-camp-in-new-hampshire/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "website_url",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "description_short",
+        "swim_waterfront_notes"
+      ]
+    },
+    {
+      "url": "https://www.mowglis.org/future-families/dates-rates/",
+      "checked": "2026-11-13",
+      "fields": [
         "registration_url",
         "phone",
         "street_address",
         "city",
         "state",
         "zip",
-        "camp_type",
-        "primary_categories",
-        "activities",
+        "gender_policy",
         "age_min",
         "age_max",
-        "description_short",
         "price_min",
         "price_max",
-        "swim_waterfront_notes",
+        "price_per",
+        "financial_aid",
+        "refund_policy_summary",
         "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.mowglis.org/best-boys-summer-camp-in-new-hampshire/",
       "kind": "html",
@@ -142,6 +155,25 @@
         "quote": "2027 Registration is OPEN!"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.mowglis.org/best-boys-summer-camp-in-new-hampshire/",
+        "https://www.mowglis.org/future-families/dates-rates/"
+      ],
+      "changes": [
+        "Session prices changed from the optional 'Full Freight' rates to the Standard Tuition the camp lists first: $11,300 (7 weeks), $7,560 and $8,980 (4 weeks), $6,370 (3-week Cub and Yearling); price range now 6,370 to 11,300",
+        "Session availability changed from 'open' to unknown: the page says registration is open, not that each session has space",
+        "registration_url changed from the rates page to the online application (mowglis.campintouch.com)",
+        "Age max changed from 17 to 15: the rates page says 'the Mowglis camper program is for boys ages 7 to 15'",
+        "Added gender_policy boys, financial_aid true (need-based scholarship fund), price_per session and refund terms ($500 deposit; no refunds after January 31)",
+        "Moved sessions, prices, address and phone to the 2027 Dates & Rates page; the marketing page still says 'Sign up for our 2021 overnight camping session'"
+      ],
+      "open_questions": [
+        "Yearling/Junior Staff ages differ across the camp's own pages: 15-17 on the rates table, 15-16 in the menu; the session name carries no age",
+        "Full Freight rates ($8,100 to $14,410) are an optional higher tuition; listed prices use Standard Tuition"
+      ]
+    }
   }
 }
