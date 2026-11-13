@@ -10,13 +10,49 @@
   "state": "CT",
   "zip": "06763",
   "camp_type": "sleepaway",
-  "description_short": "Camp Awosting is an overnight summer camp for boys in Morris, Connecticut, with sessions from 1 to 8 weeks between June 27 and August 21, 2027. Tuition covers meals, snacks, laundry, towel service, gratuities, the canteen shop and all on-camp activities.",
+  "description_short": "Camp Awosting is an overnight summer camp for boys ages 7 to 16 on Bantam Lake in Morris, Connecticut, with 40+ activities including motor sports, waterskiing, high ropes and team sports. Summer 2027 sessions run from 1 to 8 weeks between June 27 and August 21. Tuition covers meals, snacks, laundry, towel service, gratuities, the canteen shop and all on-camp activities.",
   "price_min": 2675,
   "price_max": 13230,
   "transportation": true,
   "meals_included": true,
   "refund_policy_summary": "Half of the deposit cannot be refunded under any circumstances, and the whole deposit becomes non-refundable after 12/31/26. Balances are due May 1. Unused canteen money is not refunded. Families in the Guaranteed Tuition Program pay no deposit; they pay half the tuition by November 15 and half by January 15.",
   "season_year": 2027,
+  "gender_policy": "boys",
+  "age_min": 7,
+  "age_max": 16,
+  "primary_categories": [
+    "sports",
+    "adventure"
+  ],
+  "activities": [
+    "Motocross",
+    "Go-karts",
+    "High ropes",
+    "Climbing",
+    "Archery",
+    "Wakeboarding",
+    "Waterskiing",
+    "Wakesurfing",
+    "Sailing",
+    "Canoeing",
+    "Kayaking and rowing",
+    "Stand-up paddleboard",
+    "Swimming",
+    "Fishing",
+    "Soccer",
+    "Baseball",
+    "Basketball",
+    "Lacrosse",
+    "Fencing",
+    "Mountain biking",
+    "Arts and crafts",
+    "Woodshop",
+    "Ceramics",
+    "Music",
+    "Drama",
+    "Overnight camping"
+  ],
+  "swim_waterfront_notes": "The waterfront is on Bantam Lake, with swimming, sailing, canoeing, kayaking, waterskiing, a water trampoline and inflatables. Life vests are required on the water trampoline.",
   "sessions": [
     {
       "name": "1 Week Rookie Session 1",
@@ -127,7 +163,7 @@
   "sources": [
     {
       "url": "https://awosting.com/dates-rates/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -139,19 +175,42 @@
         "state",
         "zip",
         "camp_type",
-        "description_short",
         "price_min",
         "price_max",
         "transportation",
         "meals_included",
         "refund_policy_summary",
         "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
+    },
+    {
+      "url": "https://awosting.com/",
+      "checked": "2026-11-13",
+      "fields": [
+        "gender_policy",
+        "description_short",
+        "primary_categories"
+      ]
+    },
+    {
+      "url": "https://awosting.com/future-families/faqs/",
+      "checked": "2026-11-13",
+      "fields": [
+        "age_min",
+        "age_max"
+      ]
+    },
+    {
+      "url": "https://awosting.com/activities/",
+      "checked": "2026-11-13",
+      "fields": [
+        "activities",
+        "swim_waterfront_notes"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://awosting.com/dates-rates/",
       "kind": "html",
@@ -188,6 +247,23 @@
         "quote": "Early Enrollment for Summer 2027 Starts September 30th!"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://awosting.com/dates-rates/",
+        "https://awosting.com/",
+        "https://awosting.com/future-families/faqs/",
+        "https://awosting.com/activities/"
+      ],
+      "changes": [
+        "Checked all 15 sessions, Early Bird and regular rates, deposit and refund terms against the dates and rates page: all match.",
+        "Added ages 7 to 16 (FAQ and home page) and gender_policy boys.",
+        "Added primary categories (sports, adventure) and 26 activities from the activities page; it had none.",
+        "Added a swim note from the activities page: Bantam Lake waterfront with swimming, boating and inflatables.",
+        "Added ages and Bantam Lake to the description."
+      ],
+      "open_questions": []
+    }
   }
 }

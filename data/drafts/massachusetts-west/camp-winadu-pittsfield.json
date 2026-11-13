@@ -5,6 +5,7 @@
   "registration_url": "https://winadu.campintouch.com/ui/forms/application/camper/App",
   "email": "directors@campwinadu.com",
   "phone": "914-437-7200",
+  "street_address": "700 Churchill Street",
   "city": "Pittsfield",
   "state": "MA",
   "zip": "01201",
@@ -32,8 +33,8 @@
   "sessions": [
     {
       "name": "Full Season 2027",
-      "start_date": "2027-06-26",
-      "end_date": "2027-08-11",
+      "start_date": "2027-06-25",
+      "end_date": "2027-08-10",
       "price": 16950,
       "availability": "unknown"
     }
@@ -41,15 +42,13 @@
   "sources": [
     {
       "url": "https://campwinadu.com/summer/dates-rates",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "website_url",
         "registration_url",
         "email",
         "phone",
-        "city",
-        "state",
         "camp_type",
         "primary_categories",
         "activities",
@@ -62,16 +61,18 @@
       "note": "Drafted by the listing tool from this page"
     },
     {
-      "url": "https://www.census.gov/geographies/reference-files/time-series/geo/relationship-files.2020.html",
-      "checked": "2026-10-14",
+      "url": "https://campwinadu.com/contact-us",
+      "checked": "2026-11-13",
       "fields": [
+        "street_address",
+        "city",
+        "state",
         "zip"
-      ],
-      "note": "Pittsfield, MA sits inside one ZIP code (2020 Census ZCTA relationship file)"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://campwinadu.com/summer/dates-rates",
       "kind": "html",
@@ -118,6 +119,23 @@
         "quote": "Sports & Activities ... Outdoor Adventure ... Arts & Hobbies"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://campwinadu.com/summer/dates-rates",
+        "https://campwinadu.com/contact-us",
+        "https://campwinadu.com/the-winadu-idea/about-winadu",
+        "https://campwinadu.com/sports-activities"
+      ],
+      "changes": [
+        "Fixed the 2027 full season dates: the camp now shows arrival Friday, June 25 and departure Tuesday, August 10, 2027 (the draft had June 26 to August 11).",
+        "Added the street address 700 Churchill Street, Pittsfield, MA 01201 from the camp's contact page, and replaced the Census source for the ZIP with that page.",
+        "Rechecked prices: after the September 15 early deadline, $16,950 full season and $13,800 for the 5-week option. Both match.",
+        "Kept transportation true: the page says bus transportation to and from camp is offered but costs extra on top of tuition.",
+        "The 2027 5-week session is still left out because the page gives no end date for it."
+      ],
+      "open_questions": []
+    }
   }
 }

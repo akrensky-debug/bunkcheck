@@ -79,7 +79,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "drop",
     "source": {
       "url": "https://www.ymcaofcm.org/camp/",
       "kind": "html",
@@ -175,6 +175,18 @@
       "missing required city",
       "missing required zip",
       "city None, MA is not in cities.py"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.ymcaofcm.org/camp/"
+      ],
+      "changes": [
+        "Status set to drop: this is the YMCA of Central Massachusetts index of camps at several branches (Camp Boroughs, Camp Blanchard, Alden Summer Program, Camp Greendale on Indian Lake, Camp Lowe), not one camp, and its content is from 2018 ('Camp 2018', 2018 calendar dates, no prices).",
+        "Camp Blanchard already has its own draft (ymca-camp-blanchard-sutton). Boroughs, Greendale, Alden and Lowe would need their own drafts from each branch's camp page.",
+        "No fields edited."
+      ],
+      "open_questions": []
+    }
   }
 }

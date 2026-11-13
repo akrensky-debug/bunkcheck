@@ -12,11 +12,11 @@
   "primary_categories": [
     "arts"
   ],
-  "description_short": "Summer studio art classes for young people at the Worcester Art Museum. The summer session is not open for registration yet, so no class details are posted.",
+  "description_short": "Studio art classes for children and teens at the Worcester Art Museum, grouped by age and taught by professional artists and educators, with all materials provided. Summer class dates, ages and prices are not posted yet.",
   "sources": [
     {
       "url": "https://www.worcesterart.org/learning/classes/youth-classes/summer-session/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -27,14 +27,19 @@
         "city",
         "state",
         "zip",
-        "primary_categories",
+        "primary_categories"
+      ]
+    },
+    {
+      "url": "https://www.worcesterart.org/learning/classes/youth-classes/",
+      "checked": "2026-11-13",
+      "fields": [
         "description_short"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.worcesterart.org/learning/classes/youth-classes/summer-session/",
       "kind": "html",
@@ -67,6 +72,22 @@
       "missing required camp_type",
       "missing required season_year",
       "camp_type must be one of ['day', 'sleepaway', 'specialty']"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.worcesterart.org/learning/classes/youth-classes/summer-session/",
+        "https://www.worcesterart.org/learning/classes/youth-classes/",
+        "https://www.worcesterart.org/learning/youth-and-families/"
+      ],
+      "changes": [
+        "description_short rewritten from the Youth classes page (age-grouped studio classes, professional artists and educators, materials provided) instead of describing the registration status only.",
+        "Contact, address and category confirmed against the summer page and footer; no other changes.",
+        "camp_type and season_year still empty, so check_draft is not VALID: the summer page says only 'This session of classes is not yet open for registration' and gives no year, dates, ages, prices or format."
+      ],
+      "open_questions": [
+        "The summer page has no year, dates, ages, prices or format yet, so this can't pass validation. Hold it and recheck when WAM posts summer 2027 classes (likely late winter), or drop it for now? It may also be single classes rather than a camp week, which decides day vs specialty."
+      ]
+    }
   }
 }

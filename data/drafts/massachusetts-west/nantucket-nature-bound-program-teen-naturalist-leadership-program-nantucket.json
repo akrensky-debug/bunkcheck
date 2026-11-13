@@ -90,7 +90,7 @@
   "sources": [
     {
       "url": "https://www.mariamitchell.org/teen-naturalist-leadership-program",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -111,16 +111,21 @@
         "price_max",
         "price_per_week",
         "price_per",
-        "financial_aid",
         "refund_policy_summary",
         "swim_waterfront_notes",
         "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
+    },
+    {
+      "url": "https://www.mariamitchell.org/scholarships-discounts",
+      "checked": "2026-11-13",
+      "fields": [
+        "financial_aid"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.mariamitchell.org/teen-naturalist-leadership-program",
       "kind": "html",
@@ -163,6 +168,18 @@
         "quote": "Camp Program Scholarships & Discounts"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.mariamitchell.org/teen-naturalist-leadership-program",
+        "https://www.mariamitchell.org/scholarships-discounts"
+      ],
+      "changes": [
+        "financial_aid now sourced to the Camp Program Scholarships & Discounts page (GFF scholarships of 50 to 80 percent off), which is where the page states it.",
+        "All other fields, the six 2026 sessions and the $665 price match the program page as it stands today; no 2027 dates are posted yet, so season_year stays 2026."
+      ],
+      "open_questions": []
+    }
   }
 }

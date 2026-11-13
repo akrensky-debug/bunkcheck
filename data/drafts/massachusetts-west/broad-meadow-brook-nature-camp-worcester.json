@@ -2,20 +2,18 @@
   "slug": "broad-meadow-brook-nature-camp-worcester",
   "name": "Broad Meadow Brook Nature Camp",
   "operator_name": "Mass Audubon",
-  "website_url": "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/broad-meadow-brook/camp/programs-pricing",
-  "registration_url": "https://www.massaudubon.org/programs-events/nature-camps/mass-audubon-camp-registration-instructions",
-  "phone": "508-753-6087",
+  "website_url": "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/broad-meadow-brook/camp",
+  "registration_url": "https://www.massaudubon.org/programs-events/nature-camps/registration-instructions",
+  "phone": "508-640-5615",
+  "street_address": "414 Massasoit Road",
   "city": "Worcester",
   "state": "MA",
-  "zip": null,
+  "zip": "01604",
   "camp_type": "day",
   "primary_categories": [
     "nature",
     "STEM"
   ],
-  "age_min": 4,
-  "age_max": 16,
-  "description_short": "Mass Audubon day camp at Broad Meadow Brook Wildlife Sanctuary in Worcester for ages 4.5–16, with most of the day spent outdoors hiking, exploring habitats and doing nature projects. Options include a three-day mini camp, weekly camp by age group, a specialty field-trip week, and a Counselor-in-Training program.",
   "activities": [
     "Hiking",
     "Arts and crafts",
@@ -28,11 +26,16 @@
     "Team building",
     "Leadership training"
   ],
+  "age_min": 4,
+  "age_max": 16,
+  "description_short": "Mass Audubon day camp at Broad Meadow Brook Wildlife Sanctuary in Worcester for ages 4.5 to 16, with most of the day spent outdoors hiking, exploring habitats and doing nature projects. Options include a three-day mini camp, weekly camp by age group, a field-trip specialty week, a Counselor-in-Training program, and before and after care.",
   "price_min": 42,
   "price_max": 518,
-  "financial_aid": true,
   "extended_care": true,
   "meals_included": false,
+  "financial_aid": true,
+  "aca_accredited": true,
+  "aca_source_url": "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/broad-meadow-brook/camp/about-broad-meadow-brook-nature-camp",
   "season_year": 2026,
   "sessions": [
     {
@@ -157,21 +160,26 @@
   ],
   "sources": [
     {
-      "url": "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/broad-meadow-brook/camp/programs-pricing",
-      "checked": "2026-10-13",
+      "url": "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/broad-meadow-brook/camp",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
         "website_url",
-        "registration_url",
-        "phone",
         "city",
         "state",
+        "age_min",
+        "age_max"
+      ]
+    },
+    {
+      "url": "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/broad-meadow-brook/camp/programs-pricing",
+      "checked": "2026-11-13",
+      "fields": [
+        "registration_url",
         "camp_type",
         "primary_categories",
         "activities",
-        "age_min",
-        "age_max",
         "description_short",
         "price_min",
         "price_max",
@@ -180,11 +188,28 @@
         "financial_aid",
         "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "One-week Nature Camp weeks are worked out from 'Weekly sessions: June 22- August 28'"
+    },
+    {
+      "url": "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/broad-meadow-brook/camp/about-broad-meadow-brook-nature-camp",
+      "checked": "2026-11-13",
+      "fields": [
+        "phone",
+        "aca_accredited",
+        "aca_source_url"
+      ]
+    },
+    {
+      "url": "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/broad-meadow-brook",
+      "checked": "2026-11-13",
+      "fields": [
+        "street_address",
+        "zip"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/broad-meadow-brook/camp/programs-pricing",
       "kind": "html",
@@ -237,6 +262,24 @@
     ],
     "errors": [
       "missing required zip"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/broad-meadow-brook/camp/programs-pricing",
+        "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/broad-meadow-brook/camp",
+        "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/broad-meadow-brook/camp/about-broad-meadow-brook-nature-camp",
+        "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/broad-meadow-brook"
+      ],
+      "changes": [
+        "website_url now the camp's main page instead of the pricing page",
+        "Phone changed from 508-753-6087 (the sanctuary line, given for CIT applications) to 508-640-5615, the camp staff number on the About Camp page",
+        "registration_url corrected to the link the pricing page actually gives (.../nature-camps/registration-instructions)",
+        "Added zip 01604 and street address 414 Massasoit Road from the sanctuary page (zip was missing, which blocked publishing)",
+        "Added ACA accreditation from the About Camp page",
+        "Sessions and sliding scale prices checked against the 2026 pricing page; no change"
+      ],
+      "open_questions": []
+    }
   }
 }

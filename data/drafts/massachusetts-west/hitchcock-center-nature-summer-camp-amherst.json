@@ -18,7 +18,7 @@
   "age_min": 5,
   "grade_min": 0,
   "grade_max": 9,
-  "description_short": "An outdoor nature day camp at the Hitchcock Center on the Hampshire College campus in Amherst. Kids do hikes, animal observation, science and crafts. Nature Camp runs 8:45 AM–3:00 PM and serves rising K–6 graders. Chickadee Camp is a half-day program (8:45 AM–1:00 PM) for rising kindergartners. The Leadership Training Camp is for grades 7–9.",
+  "description_short": "An outdoor nature day camp at the Hitchcock Center for the Environment in Amherst. Kids do hikes, animal observation, science and crafts. Nature Camp runs 8:45 AM to 3:00 PM for kids entering grades K to 6. Chickadee Camp is a half-day program (8:45 AM to 1:00 PM) for rising kindergartners. The Leadership Training Camp is for grades 7 to 9.",
   "activities": [
     "Guided hikes and field investigations",
     "Animal and insect observation",
@@ -26,7 +26,7 @@
     "Crafts and science projects",
     "Nature-inspired inventing / biomimicry",
     "Songs, stories and team-building games",
-    "Field trips (by van or PVTA bus)",
+    "Field trips",
     "Sprinkler play",
     "Caving, hikes and overnight camping (Leadership Training Camp)"
   ],
@@ -122,7 +122,7 @@
   "sources": [
     {
       "url": "https://www.hitchcockcenter.org/camp-programs/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -156,7 +156,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.hitchcockcenter.org/camp-programs/",
       "kind": "html",
@@ -192,6 +192,19 @@
         "quote": "Hearty snack and lunch that do not require heating or refrigeration"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.hitchcockcenter.org/camp-programs/"
+      ],
+      "changes": [
+        "Removed 'on the Hampshire College campus' from the description; the camp page doesn't say it.",
+        "Changed the activity 'Field trips (by van or PVTA bus)' to 'Field trips'; the page mentions vans but not PVTA buses.",
+        "Rechecked the 2026 sessions, Tier B prices ($360 to $930), price range $305 to $1,080, hours, grades, waitlist flags, refund policy, special needs notes, address, phone and email: all match the page.",
+        "Season stays 2026: the page has no 2027 dates yet (details go out to the email list in January)."
+      ],
+      "open_questions": []
+    }
   }
 }

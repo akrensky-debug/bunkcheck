@@ -30,7 +30,9 @@
   "financial_aid": true,
   "extended_care": true,
   "special_needs_notes": "The Inclusion Camp supports children with different abilities so they can take part in camp with their peers. Financial aid covers Inclusion Camp.",
-  "swim_waterfront_notes": "Campers swim in the JCC's pool.",
+  "swim_waterfront_notes": "Campers swim in the JCC's pool. Traditional Camp has two swim lessons and two free swims each week, with a swim test every Monday; lifeguards hold the required certifications.",
+  "aca_accredited": true,
+  "aca_source_url": "https://www.springfieldjcc.org/camp/",
   "season_year": 2026,
   "sessions": [
     {
@@ -44,7 +46,7 @@
   "sources": [
     {
       "url": "https://www.springfieldjcc.org/camp/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -63,14 +65,21 @@
         "extended_care",
         "financial_aid",
         "special_needs_notes",
-        "swim_waterfront_notes",
-        "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+        "sessions",
+        "aca_accredited",
+        "aca_source_url"
+      ]
+    },
+    {
+      "url": "https://www.springfieldjcc.org/traditional-camp/",
+      "checked": "2026-11-13",
+      "fields": [
+        "swim_waterfront_notes"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.springfieldjcc.org/camp/",
       "kind": "html",
@@ -99,6 +108,22 @@
       "Camp director's direct email"
     ],
     "low_confidence": [],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.springfieldjcc.org/camp/",
+        "https://www.springfieldjcc.org/traditional-camp/",
+        "https://www.springfieldjcc.org/camp/camp-registration/"
+      ],
+      "changes": [
+        "swim_waterfront_notes expanded from the Traditional Camp page (two lessons and two free swims a week, Monday swim test, certified lifeguards) and sourced there.",
+        "aca_accredited true, from the camp page ('An ACA-accredited, full-day camp experience'), with aca_source_url pointing there.",
+        "Everything else matches the camp page as it stands today (2026 season June 22 to August 21, ages 5+, ACA-accredited, financial aid, pre- and post-camp hours).",
+        "registration_url left empty: the registration page the camp links to returns 404.",
+        "age_max left empty: the overview says ages 5+, the Traditional Camp page says 5-15, Inclusion Camp ages not checked."
+      ],
+      "open_questions": []
+    }
   }
 }

@@ -2,6 +2,8 @@
   "slug": "camp-danbee-peru",
   "name": "Camp Danbee",
   "website_url": "https://www.campdanbee.com/",
+  "registration_url": "https://danbee.campintouch.com/ui/forms/application/camper/App",
+  "email": "info@campdanbee.com",
   "phone": "413-655-8115",
   "street_address": "101 West Main Road",
   "city": "Peru",
@@ -14,36 +16,76 @@
     "performing_arts",
     "nature"
   ],
-  "description_short": "An all-girls summer camp on Lake Ashmere in the Berkshire Mountains of Massachusetts. It has a 1:3 counselor-to-camper ratio and puts skill development and participation ahead of competition.",
   "activities": [
-    "Fitness center",
+    "Swimming (lake and two heated pools)",
+    "Waterskiing and wakeboarding",
+    "Sailing",
+    "Paddleboarding",
+    "Canoeing and kayaking",
     "Tennis",
-    "Team sports",
-    "Soccer",
-    "Swimming",
-    "Lakefront",
-    "Arts & crafts",
+    "Soccer and team sports",
+    "Gymnastics and cheerleading",
+    "Horseback riding (extra fee)",
+    "Ice hockey (extra fee)",
+    "Archery",
+    "Ropes and climbing wall",
+    "Arts and crafts",
+    "Pottery",
     "Jewelry",
     "Woodcraft",
     "Culinary arts",
-    "Pottery",
-    "Campsite",
-    "Gymnastics",
-    "Cheerleading",
-    "Horseback riding",
-    "Ice hockey",
     "Theater",
     "Dance",
     "Journalism and media",
+    "Camping and hiking",
     "Day and overnight trips",
-    "Special events",
     "Community service"
   ],
-  "swim_waterfront_notes": "The camp is on Lake Ashmere. Swimming and lakefront are both listed as programs. The page gives no details on swim instruction, testing or supervision.",
+  "gender_policy": "girls",
+  "grade_min": 1,
+  "grade_max": 9,
+  "description_short": "An overnight camp for girls finishing 1st through 9th grade on Lake Ashmere in the Berkshires. Over 30 activities, from waterskiing and tennis to theater, gymnastics and pottery, with a 1:3 counselor to camper ratio and an emphasis on skill building over competition.",
+  "price_min": 800,
+  "price_max": 16950,
+  "price_per": "session",
+  "transportation": true,
+  "meals_included": true,
+  "swim_waterfront_notes": "Campers swim in Lake Ashmere and in two heated pools. The waterfront offers waterskiing, wakeboarding, sailing, paddleboarding, canoeing, kayaking and fishing.",
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Full Season",
+      "start_date": "2027-06-26",
+      "end_date": "2027-08-11",
+      "price": 16950,
+      "availability": "unknown"
+    },
+    {
+      "name": "Danbee in 4",
+      "start_date": "2027-06-26",
+      "end_date": "2027-07-23",
+      "price": 11000,
+      "availability": "unknown"
+    },
+    {
+      "name": "Danbee in 3",
+      "start_date": "2027-07-23",
+      "end_date": "2027-08-11",
+      "price": 9425,
+      "availability": "unknown"
+    },
+    {
+      "name": "Discovery Weekend",
+      "start_date": "2027-07-30",
+      "end_date": "2027-08-01",
+      "price": 800,
+      "availability": "unknown"
+    }
+  ],
   "sources": [
     {
       "url": "https://www.campdanbee.com/about/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "website_url",
@@ -52,17 +94,40 @@
         "city",
         "state",
         "zip",
-        "camp_type",
         "primary_categories",
-        "activities",
-        "description_short",
-        "swim_waterfront_notes"
+        "description_short"
+      ]
+    },
+    {
+      "url": "https://www.campdanbee.com/about/dates-and-rates/",
+      "checked": "2026-11-13",
+      "fields": [
+        "registration_url",
+        "price_min",
+        "price_max",
+        "price_per",
+        "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Prices are the tuition after October 1, 2026"
+    },
+    {
+      "url": "https://www.campdanbee.com/about/faqs/",
+      "checked": "2026-11-13",
+      "fields": [
+        "email",
+        "camp_type",
+        "gender_policy",
+        "grade_min",
+        "grade_max",
+        "activities",
+        "transportation",
+        "meals_included",
+        "swim_waterfront_notes"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.campdanbee.com/about/",
       "kind": "html",
@@ -103,6 +168,22 @@
     ],
     "errors": [
       "missing required season_year"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.campdanbee.com/about/",
+        "https://www.campdanbee.com/about/dates-and-rates/",
+        "https://www.campdanbee.com/about/faqs/"
+      ],
+      "changes": [
+        "Added season 2027 and four sessions: Full Season June 26 to Aug 11 ($16,950), Danbee in 4 June 26 to July 23 ($11,000), Danbee in 3 July 23 to Aug 11 ($9,425), Discovery Weekend July 30 to Aug 1 ($800); prices are the current rates after Oct 1, 2026",
+        "Added girls finishing grades 1 to 9 (finishing grade, as the FAQ states it)",
+        "Added registration link, email info@campdanbee.com, bus transportation (offered from NY, NJ, Philadelphia and Boston), meals",
+        "Rewrote swim note: lake plus two heated pools, with waterskiing, sailing and paddleboarding",
+        "camp_type sleepaway now sourced to the FAQ (cabins, 8 to 10 girls with 3 counselors)"
+      ],
+      "open_questions": []
+    }
   }
 }

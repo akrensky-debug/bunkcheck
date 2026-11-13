@@ -228,7 +228,7 @@
   "sources": [
     {
       "url": "https://worcestercraftcenter.org/youth-summer-program/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -252,12 +252,11 @@
         "extended_care",
         "meals_included",
         "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://worcestercraftcenter.org/youth-summer-program/",
       "kind": "html",
@@ -290,6 +289,17 @@
         "quote": "Crochet Creatures & Creations! Cost: $420"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://worcestercraftcenter.org/youth-summer-program/"
+      ],
+      "changes": [
+        "No changes needed: every field and all 26 sessions (dates, prices, age tracks) match the 2026 Youth Summer Program page as it stands today, including address, phone, 9 to 3 hours, extended care 8-9 and 3-5, and bring-your-own lunch.",
+        "season_year stays 2026: no 2027 dates or prices are posted yet."
+      ],
+      "open_questions": []
+    }
   }
 }

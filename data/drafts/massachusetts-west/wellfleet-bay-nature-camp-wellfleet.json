@@ -3,9 +3,12 @@
   "name": "Wellfleet Bay Nature Camp",
   "operator_name": "Mass Audubon",
   "website_url": "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/wellfleet-bay/camp",
+  "phone": "508-694-3620",
+  "street_address": "291 State Highway Route 6",
   "city": "Wellfleet",
   "state": "MA",
-  "zip": null,
+  "zip": "02663",
+  "camp_type": "day",
   "primary_categories": [
     "nature"
   ],
@@ -13,14 +16,27 @@
   "age_max": 13,
   "description_short": "A Mass Audubon nature camp for ages 4–13 held at the 1,100-acre Wellfleet Bay Wildlife Sanctuary on Cape Cod, where campers explore the outdoors and learn about nature.",
   "activities": [
-    "Nature exploration"
+    "Habitat hikes",
+    "Tide pooling",
+    "Dip-netting",
+    "Wildlife observation",
+    "Nature crafts",
+    "Outdoor games",
+    "Science activities",
+    "Counselor-in-Training program (ages 14-17)"
   ],
   "financial_aid": true,
-  "season_year": 2027,
+  "season_year": 2026,
+  "price_min": 60,
+  "price_max": 698,
+  "price_per": "week",
+  "extended_care": true,
+  "aca_accredited": true,
+  "aca_source_url": "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/wellfleet-bay/camp/about-camp",
   "sources": [
     {
       "url": "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/wellfleet-bay/camp",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -28,17 +44,44 @@
         "city",
         "state",
         "primary_categories",
-        "activities",
         "age_min",
         "age_max",
         "description_short",
         "financial_aid"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
+    },
+    {
+      "url": "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/wellfleet-bay/camp/programs-pricing",
+      "checked": "2026-11-13",
+      "fields": [
+        "activities",
+        "price_min",
+        "price_max",
+        "price_per",
+        "extended_care"
+      ]
+    },
+    {
+      "url": "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/wellfleet-bay/camp/about-camp",
+      "checked": "2026-11-13",
+      "fields": [
+        "phone",
+        "camp_type",
+        "aca_accredited",
+        "aca_source_url"
+      ]
+    },
+    {
+      "url": "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/wellfleet-bay",
+      "checked": "2026-11-13",
+      "fields": [
+        "street_address",
+        "zip"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/wellfleet-bay/camp",
       "kind": "html",
@@ -66,6 +109,26 @@
       "missing required zip",
       "missing required camp_type",
       "camp_type must be one of ['day', 'sleepaway', 'specialty']"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/wellfleet-bay/camp",
+        "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/wellfleet-bay/camp/programs-pricing",
+        "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/wellfleet-bay/camp/about-camp",
+        "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/wellfleet-bay"
+      ],
+      "changes": [
+        "season_year changed from 2027 to 2026: 2027 registration is 'Coming Soon' and the Programs & Pricing page still shows the 2026 season (weekly sessions June 22 to August 17, no camp July 3).",
+        "camp_type set to day (the About page calls it a day camp; 9:00 to 2:45 full day, half day for ages 4.5-6).",
+        "street_address and zip filled from the sanctuary page: 291 State Highway Route 6, South Wellfleet, MA 02663.",
+        "phone set to the camp staff line 508-694-3620 from the About Camp page.",
+        "Prices filled from the 2026 sliding scale: weekly $60 (CIT, lowest tier) to $698 (Naturalists and Ecologists, top tier); price_per week. price_per_week left empty because the sliding scale has no single typical rate.",
+        "extended_care true (After Camp 2:30 to 4:00, $21-$105 a week); aca_accredited true per the About Camp page.",
+        "activities replaced with the specific ones the Programs page names, instead of 'Nature exploration'.",
+        "No sessions added: the 2026 weeks have passed and 2027 dates aren't posted."
+      ],
+      "open_questions": []
+    }
   }
 }

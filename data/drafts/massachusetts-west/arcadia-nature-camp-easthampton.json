@@ -3,51 +3,85 @@
   "name": "Arcadia Nature Camp",
   "operator_name": "Mass Audubon",
   "website_url": "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/arcadia/camp",
+  "phone": "413-276-7611",
+  "street_address": "127 Combs Road",
   "city": "Easthampton",
   "state": "MA",
   "zip": "01027",
+  "camp_type": "day",
   "primary_categories": [
     "nature"
   ],
+  "activities": [
+    "Hiking",
+    "Habitat exploration",
+    "Animal and plant identification",
+    "Games",
+    "Crafts",
+    "Scavenger hunts",
+    "Storytelling",
+    "Canoeing (ages 10-12)",
+    "Nature photography (specialty week)",
+    "Environmental leadership (specialty week)"
+  ],
   "age_min": 5,
   "age_max": 15,
-  "description_short": "A Mass Audubon nature camp for ages 5–15 at the 734-acre Arcadia Wildlife Sanctuary in Easthampton, MA. Campers explore forests, meadows, rivers and vernal pools, play games and learn about protecting the natural world.",
-  "activities": [
-    "Nature exploration",
-    "Games"
-  ],
+  "description_short": "A Mass Audubon nature day camp for ages 5–15 at Arcadia Wildlife Sanctuary in Easthampton, Monday to Friday, 9 am to 3 pm. Campers hike, play games, make crafts and explore forests, meadows, streams and vernal pools, with specialty weeks for nature photography and environmental leadership.",
+  "price_min": 107,
+  "price_max": 535,
+  "price_per": "week",
   "financial_aid": true,
-  "season_year": 2027,
+  "aca_accredited": true,
+  "aca_source_url": "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/arcadia/camp/about-camp",
+  "season_year": 2026,
   "sources": [
     {
       "url": "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/arcadia/camp",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
         "website_url",
         "city",
         "state",
-        "primary_categories",
-        "activities",
         "age_min",
         "age_max",
-        "description_short",
+        "primary_categories",
         "financial_aid"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
     },
     {
-      "url": "https://www.census.gov/geographies/reference-files/time-series/geo/relationship-files.2020.html",
-      "checked": "2026-10-14",
+      "url": "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/arcadia/camp/programs-pricing",
+      "checked": "2026-11-13",
       "fields": [
+        "camp_type",
+        "activities",
+        "description_short",
+        "price_min",
+        "price_max",
+        "price_per"
+      ]
+    },
+    {
+      "url": "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/arcadia/camp/about-camp",
+      "checked": "2026-11-13",
+      "fields": [
+        "phone",
+        "aca_accredited",
+        "aca_source_url"
+      ]
+    },
+    {
+      "url": "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/arcadia",
+      "checked": "2026-11-13",
+      "fields": [
+        "street_address",
         "zip"
-      ],
-      "note": "Easthampton, MA sits inside one ZIP code (2020 Census ZCTA relationship file)"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/arcadia/camp",
       "kind": "html",
@@ -77,6 +111,26 @@
     "errors": [
       "missing required camp_type",
       "camp_type must be one of ['day', 'sleepaway', 'specialty']"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/arcadia/camp",
+        "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/arcadia/camp/programs-pricing",
+        "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/arcadia/camp/about-camp",
+        "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/arcadia",
+        "https://www.massaudubon.org/programs?prg%5Bpid%5D%5B%5D=17520&prg%5Bprogram_types%5D%5B%5D=849&prg%5Binclude_camps%5D=1&prg%5Bage_min%5D=5&prg%5Bage_max%5D=6"
+      ],
+      "changes": [
+        "season_year 2027 to 2026: 2027 registration is 'coming soon' and the pricing page shows 2026 only",
+        "Added camp_type day (Monday to Friday, 9 am to 3 pm)",
+        "Added the 2026 weekly sliding scale range, $107 to $535 per week",
+        "Added camp phone 413-276-7611 from the About Camp page",
+        "Added street address 127 Combs Road; zip 01027 now sourced to the sanctuary page instead of the Census file",
+        "Added ACA accredited, as stated on the About Camp page",
+        "Rewrote description and activities from the pricing page; dropped the 734-acre figure (the sanctuary page says 751)"
+      ],
+      "open_questions": []
+    }
   }
 }

@@ -3,7 +3,7 @@
   "name": "ASAP! Summer Camp",
   "operator_name": "After School Arts Program, Inc. (ASAP!)",
   "website_url": "https://asapct.org/programs/summer-camp/",
-  "registration_url": "https://asap.app.neoncrm.com/np/clients/asap/event.jsp?event=4287&",
+  "registration_url": null,
   "phone": "860-868-0740",
   "street_address": "Rumsey Hall School, 201 Romford Road",
   "city": "Washington",
@@ -48,15 +48,15 @@
   "meals_included": false,
   "refund_policy_summary": "Full tuition refund for cancellations before June 1; 50% refund for cancellations June 1-30; no refund for cancellations on or after July 1.",
   "season_year": 2027,
+  "email": "asap@asapct.org",
   "sources": [
     {
       "url": "https://asapct.org/programs/summer-camp/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
         "website_url",
-        "registration_url",
         "phone",
         "street_address",
         "city",
@@ -74,12 +74,18 @@
         "meals_included",
         "financial_aid",
         "refund_policy_summary"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
+    },
+    {
+      "url": "https://asapct.org/contact/",
+      "checked": "2026-11-13",
+      "fields": [
+        "email"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://asapct.org/programs/summer-camp/",
       "kind": "html",
@@ -123,6 +129,20 @@
         "quote": "COST $900"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://asapct.org/programs/summer-camp/",
+        "https://asap.app.neoncrm.com/np/clients/asap/event.jsp?event=4287&",
+        "https://asapct.org/contact/"
+      ],
+      "changes": [
+        "Removed registration_url: it opens the closed 2026 event for grades 4-6 only, and 2027 registration opens in winter 2027.",
+        "Added email asap@asapct.org from the camp's contact page.",
+        "Checked the rest against the summer camp page: August 2027, 9:00 to 3:30 at Rumsey Hall School, grades 1 to 10, $900 or $800 before April 1, bus from six towns, bring lunch with snack provided, financial aid, cancellation policy all match."
+      ],
+      "open_questions": []
+    }
   }
 }

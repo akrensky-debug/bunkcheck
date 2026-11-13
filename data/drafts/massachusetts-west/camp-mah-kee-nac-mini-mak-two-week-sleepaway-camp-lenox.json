@@ -3,7 +3,7 @@
   "name": "Camp Mah-Kee-Nac – Mini Mak Two-Week Sleepaway Camp",
   "website_url": "https://www.campmkn.com/future-families/mini-mak-two-week-camp/",
   "registration_url": "https://mkn.campintouch.com/ui/forms/application/camper/App",
-  "email": "info@campmkn.com",
+  "email": "office@campmkn.com",
   "phone": "413-274-4092",
   "street_address": "6 Hawthorne Rd",
   "city": "Lenox",
@@ -51,7 +51,7 @@
   "sources": [
     {
       "url": "https://www.campmkn.com/future-families/mini-mak-two-week-camp/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "website_url",
@@ -78,7 +78,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.campmkn.com/future-families/mini-mak-two-week-camp/",
       "kind": "html",
@@ -111,6 +111,19 @@
         "quote": "Days are filled with swimming in the lake, playing sports, trying new activities"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.campmkn.com/future-families/mini-mak-two-week-camp/",
+        "https://www.campmkn.com/future-families/session-dates-rates/"
+      ],
+      "changes": [
+        "Changed email from info@campmkn.com (not on the site) to office@campmkn.com, the address in the page footer and Send a Message link.",
+        "Rechecked dates (June 26 to July 9 and July 22 to August 5, 2027), $6,300 tuition, grades 1 to 5, Lenox address, phone and one-way busing against the page: all match.",
+        "Updated the source checked date to 2026-11-13."
+      ],
+      "open_questions": []
+    }
   }
 }

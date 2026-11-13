@@ -15,46 +15,100 @@
     "performing_arts",
     "sports"
   ],
-  "description_short": "An overnight summer camp for girls in Lenox, Massachusetts, offering art, dance, music, theater and sports. Campers pick their own classes from all program areas to build their schedule.",
   "activities": [
-    "art",
-    "ballet",
-    "dance",
-    "music",
-    "theater",
-    "sports",
-    "tennis",
-    "swimming"
+    "Studio art",
+    "Ballet",
+    "Dance",
+    "Music",
+    "Theater",
+    "Swimming",
+    "Tennis",
+    "Horseback riding",
+    "Archery",
+    "Fencing",
+    "Basketball",
+    "Soccer",
+    "Volleyball",
+    "Outdoor education (younger campers)",
+    "Trips to cultural venues"
   ],
+  "gender_policy": "girls",
+  "grade_min": 2,
+  "grade_max": 10,
+  "description_short": "An overnight summer camp for girls in grades 2 to 10 in Lenox, Massachusetts. Campers choose all their own classes in art, dance, music, theater and individual sports, taught by professional staff, in 6, 5 or 3 week sessions.",
+  "price_min": 13500,
+  "price_max": 17400,
+  "price_per": "session",
   "meals_included": true,
-  "swim_waterfront_notes": "The camp lists swimming facilities. This page doesn't say what kind (pool or lake) or describe swim supervision.",
+  "swim_waterfront_notes": "Swimming classes with professional instruction, plus beach days at Camp Greylock.",
   "season_year": 2027,
+  "sessions": [
+    {
+      "name": "6 Week Session",
+      "start_date": "2027-06-27",
+      "end_date": "2027-08-11",
+      "price": 17400,
+      "availability": "unknown"
+    },
+    {
+      "name": "5 Week Session",
+      "start_date": "2027-06-27",
+      "end_date": "2027-08-01",
+      "price": 16500,
+      "availability": "unknown"
+    },
+    {
+      "name": "3 Week Session (grades 2-5)",
+      "start_date": "2027-06-27",
+      "end_date": "2027-07-18",
+      "price": 13500,
+      "availability": "unknown"
+    }
+  ],
   "sources": [
     {
-      "url": "https://www.belvoirterrace.com/camp-life/",
-      "checked": "2026-10-13",
+      "url": "https://www.belvoirterrace.com/",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "website_url",
         "registration_url",
+        "primary_categories",
+        "activities",
+        "gender_policy",
+        "grade_min",
+        "grade_max",
+        "description_short",
+        "swim_waterfront_notes"
+      ]
+    },
+    {
+      "url": "https://www.belvoirterrace.com/camp-life/",
+      "checked": "2026-11-13",
+      "fields": [
+        "camp_type",
+        "meals_included"
+      ]
+    },
+    {
+      "url": "https://www.belvoirterrace.com/dates-rates/",
+      "checked": "2026-11-13",
+      "fields": [
         "email",
         "phone",
         "street_address",
         "city",
         "state",
         "zip",
-        "camp_type",
-        "primary_categories",
-        "activities",
-        "description_short",
-        "meals_included",
-        "swim_waterfront_notes"
-      ],
-      "note": "Drafted by the listing tool from this page"
+        "price_min",
+        "price_max",
+        "price_per",
+        "sessions"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.belvoirterrace.com/camp-life/",
       "kind": "html",
@@ -97,6 +151,23 @@
         "quote": "outstanding facilities for art, dance, music, theater, tennis, swimming and more"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.belvoirterrace.com/camp-life/",
+        "https://www.belvoirterrace.com/dates-rates/",
+        "https://www.belvoirterrace.com/"
+      ],
+      "changes": [
+        "Added 2027 sessions: 6 weeks June 27 to Aug 11 ($17,400), 5 weeks June 27 to Aug 1 ($16,500), 3 weeks for grades 2 to 5 June 27 to July 18 ($13,500)",
+        "Added prices $13,500 to $17,400 per session",
+        "Added grades 2 to 10 and girls only, from the homepage",
+        "Added horseback riding, archery, fencing and team sports to activities",
+        "Rewrote swim note from the homepage (swim classes, beach days at Greylock)",
+        "Left out the 4 day Belvoir Family Camp (a family program, not a kids session)"
+      ],
+      "open_questions": []
+    }
   }
 }

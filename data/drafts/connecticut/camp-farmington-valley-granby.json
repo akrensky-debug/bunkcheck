@@ -116,7 +116,7 @@
   "sources": [
     {
       "url": "https://www.ghymca.org/camps/farmington-valley-ymca-camp-farmington-valley",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -140,11 +140,11 @@
         "swim_waterfront_notes",
         "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Drafted by the listing tool; every field rechecked against this page on 2026-11-13"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.ghymca.org/camps/farmington-valley-ymca-camp-farmington-valley",
       "kind": "html",
@@ -176,6 +176,19 @@
         "quote": "What should my camper bring each day? ... Healthy Lunch"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.ghymca.org/camps/farmington-valley-ymca-camp-farmington-valley",
+        "https://www.ghymca.org/media/17706"
+      ],
+      "changes": [
+        "No field changes: name, contact, address, grades K-8, activities, extended care (before and after care included in the price), bring-your-own lunch, refund policy, indoor pool and the ten 2026 weeks all match the camp page.",
+        "The 2026 Family Guide link (ghymca.org/media/17706) opens an empty page, so nothing was taken from it."
+      ],
+      "open_questions": [],
+      "notes": "2027 is still 'Pricing and Registration Coming Soon', so season_year stays 2026 and no weekly price is listed. Recheck when 2027 is posted."
+    }
   }
 }

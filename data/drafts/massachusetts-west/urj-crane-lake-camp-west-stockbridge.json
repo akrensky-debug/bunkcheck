@@ -17,7 +17,7 @@
   "grade_max": 11,
   "description_short": "Reform Jewish overnight camp in West Stockbridge, Massachusetts, run by the Union for Reform Judaism. Campers entering grades 2–10 come for 2-week, roughly 3–4-week, or full-summer sessions, and there is an Israel trip for grade 11.",
   "price_min": 4450,
-  "price_max": 15000,
+  "price_max": 14700,
   "financial_aid": true,
   "season_year": 2027,
   "sessions": [
@@ -57,11 +57,11 @@
       "availability": "open"
     },
     {
-      "name": "1st Session – Lower Chaverim (Grade 8) [Hillside: Almost Full; Lakeside: Filling]",
+      "name": "1st Session – Lower Chaverim (Grade 8) [Hillside: WAITLIST; Lakeside: Filling]",
       "start_date": "2027-06-27",
       "end_date": "2027-07-23",
       "price": 8775,
-      "availability": "open"
+      "availability": "unknown"
     },
     {
       "name": "1st Session – Upper Chaverim (Grade 9) [Hillside: Filling Fast; Lakeside: Filling]",
@@ -113,7 +113,7 @@
       "availability": "open"
     },
     {
-      "name": "2nd Session – Lower Chaverim (Grade 8) [Hillside: WAITLIST; Lakeside: Filling]",
+      "name": "2nd Session – Lower Chaverim (Grade 8) [Hillside: WAITLIST; Lakeside: Filling Fast]",
       "start_date": "2027-07-25",
       "end_date": "2027-08-15",
       "price": 7300,
@@ -158,7 +158,7 @@
   "sources": [
     {
       "url": "https://cranelakecamp.org/dates-rates/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -178,12 +178,11 @@
         "price_max",
         "financial_aid",
         "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://cranelakecamp.org/dates-rates/",
       "kind": "html",
@@ -217,6 +216,18 @@
         "quote": "Deposits and electronic payments may be made by E-check, Debit Card"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://cranelakecamp.org/dates-rates/"
+      ],
+      "changes": [
+        "Availability refreshed to the page's October 15 figures: 1st Session Lower Chaverim is now Waitlist on Hillside (was Almost Full), so its availability is now unknown; 2nd Session Lower Chaverim Lakeside is now Filling Fast.",
+        "price_max changed from 15000 (the non-member full-summer rate) to 14700, the URJ member full-summer rate, so it matches price_min and the session prices, which are all member rates.",
+        "Dates, grades, prices, address, phone and the 2027 Israel trip all match the page."
+      ],
+      "open_questions": []
+    }
   }
 }

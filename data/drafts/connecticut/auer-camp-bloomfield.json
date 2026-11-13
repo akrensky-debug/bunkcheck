@@ -3,7 +3,7 @@
   "name": "Auer Camp",
   "operator_name": "The 4-H Center at Auerfarm, Inc.",
   "website_url": "https://auerfarm.org/summercamps/",
-  "registration_url": "https://auerfarm.salsalabs.org/202627VacationCamps?page=register",
+  "registration_url": null,
   "email": "jmarshall@auerfarm.org",
   "phone": "860-242-7144",
   "street_address": "158 Auer Farm Road",
@@ -19,7 +19,7 @@
   "age_min": 3,
   "age_max": 15,
   "grade_max": 10,
-  "description_short": "A farm-based day camp on a 120-acre farm in Bloomfield, CT. It follows a S.T.E.A.M. curriculum built around farm animals, gardening, nature exploration and arts, with groups from a half-day preschool program (ages 3-5) up to a leadership program for grades 9-10. School-vacation camps run for ages 5-12.",
+  "description_short": "A farm-based day camp on a 120-acre farm in Bloomfield, CT, for ages 3-15. Summer 2027 runs for 7 weeks, June 21 to August 6, with a S.T.E.A.M. curriculum built around farm animals, gardening, nature exploration and arts. Groups run from a half-day Sprouts program (ages 3-5) up to a leadership program for grades 9-10. Registration opens January 1, 2027.",
   "activities": [
     "Barn exploration / farm animal care",
     "Play forest and fort building",
@@ -34,32 +34,32 @@
     "Leadership skills (grades 9-10)"
   ],
   "price_per_week": 395,
-  "price_min": 85,
-  "price_max": 425,
+  "price_min": 370,
+  "price_max": 395,
   "extended_care": true,
-  "refund_policy_summary": "Cancellation fees depend on how much notice you give: $50 for more than 30 days, $200 for 14-30 days, $300 for less than 2 weeks.",
+  "refund_policy_summary": "Cancellation fees depend on how much notice you give: $75 for more than 30 days, $200 for 14-30 days, $300 for less than 2 weeks.",
   "special_needs_notes": "Sprouts (ages 3-5) must be fully potty-trained. Barn activities are adjusted for each child's age and comfort.",
-  "swim_waterfront_notes": "There is no swimming program listed. Older campers may explore, fish and play in a stream on the farm.",
+  "swim_waterfront_notes": "No pool or swim program is described. Older campers may explore, fish and play in a stream on the farm.",
   "season_year": 2027,
   "price_per": "week",
+  "grade_min": 0,
   "sessions": [
     {
-      "name": "Spring Camp",
-      "start_date": "2027-04-12",
-      "end_date": "2027-04-16",
-      "price": 425,
+      "name": "Summer Camp 2027 (7 weeks, priced by the week)",
+      "start_date": "2027-06-21",
+      "end_date": "2027-08-06",
+      "price": null,
       "availability": "unknown"
     }
   ],
   "sources": [
     {
       "url": "https://auerfarm.org/summercamps/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
         "website_url",
-        "registration_url",
         "email",
         "phone",
         "street_address",
@@ -71,6 +71,7 @@
         "activities",
         "age_min",
         "age_max",
+        "grade_min",
         "grade_max",
         "description_short",
         "price_min",
@@ -82,12 +83,11 @@
         "special_needs_notes",
         "swim_waterfront_notes",
         "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://auerfarm.org/summercamps/",
       "kind": "html",
@@ -141,6 +141,24 @@
         "quote": "a seven-week-long operation including am & pm care for ages 3-15"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://auerfarm.org/summercamps/"
+      ],
+      "changes": [
+        "Replaced the Spring vacation camp session with the summer season the page now states: 7 weeks, June 21 to August 6, 2027.",
+        "Changed price_min/price_max from vacation-camp prices ($85 day, $425 week) to the summer weekly rates on the page ($370 to $395).",
+        "Fixed the refund fee for more than 30 days notice: $75, not $50.",
+        "Removed registration_url: the summer link is the 2026 form and the other is for vacation camps; summer registration opens January 1, 2027.",
+        "Added grade_min 0 (Young Farmers are entering grades K-5).",
+        "Rewrote the swim note so it no longer claims there is no swimming; the page only mentions a stream.",
+        "Rewrote the description around the summer 2027 dates instead of the vacation camps."
+      ],
+      "open_questions": [
+        "The weekly rates ($370 Sprouts and Leadership, $395 Young Farmers and Explorers) carry no year. They sit beside the 2027 dates, so I kept them; confirm when registration opens January 1."
+      ]
+    }
   }
 }

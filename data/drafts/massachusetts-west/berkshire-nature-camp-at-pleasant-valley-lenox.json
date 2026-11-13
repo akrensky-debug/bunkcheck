@@ -2,18 +2,17 @@
   "slug": "berkshire-nature-camp-at-pleasant-valley-lenox",
   "name": "Berkshire Nature Camp at Pleasant Valley",
   "operator_name": "Mass Audubon",
-  "website_url": "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/pleasant-valley/camp/programs-pricing",
-  "registration_url": "https://www.massaudubon.org/programs-events/nature-camps/mass-audubon-camp-registration-instructions",
+  "website_url": "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/pleasant-valley/camp",
+  "registration_url": "https://www.massaudubon.org/programs-events/nature-camps/registration-instructions",
+  "phone": "413-728-1545",
+  "street_address": "472 West Mountain Road",
   "city": "Lenox",
   "state": "MA",
-  "zip": null,
+  "zip": "01240",
   "camp_type": "day",
   "primary_categories": [
     "nature"
   ],
-  "age_min": 4,
-  "age_max": 17,
-  "description_short": "Weekly outdoor nature day camp at Mass Audubon's Pleasant Valley Wildlife Sanctuary in Lenox, running 9 am to 3 pm, Monday to Friday. Groups for ages 4–12 do trail walks, wildlife observation, games and crafts, and there is a Counselor-in-Training program for ages 14–17.",
   "activities": [
     "Trail exploration and hiking",
     "Wildlife observation",
@@ -26,76 +25,67 @@
     "Field science techniques",
     "Leadership training (CIT)"
   ],
+  "age_min": 4,
+  "age_max": 17,
+  "description_short": "Weekly outdoor nature day camp at Mass Audubon's Pleasant Valley Wildlife Sanctuary in Lenox, Monday to Friday, 9 am to 3 pm. Groups for ages 4 to 12 explore trails, ponds and forests, play games and make crafts, and there is a Counselor-in-Training program for ages 14 to 17.",
   "price_min": 104,
   "price_max": 518,
+  "price_per": "week",
   "financial_aid": true,
   "special_needs_notes": "Campers must be able to move about on uneven terrain because camp is outdoors and exploratory.",
+  "aca_accredited": true,
+  "aca_source_url": "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/pleasant-valley/camp/about-camp",
   "season_year": 2026,
-  "sessions": [
-    {
-      "name": "Knee-High Naturalists (ages 4-5), weekly sessions",
-      "start_date": "2026-06-22",
-      "end_date": "2026-08-14",
-      "price": null,
-      "availability": "unknown"
-    },
-    {
-      "name": "Discoverers (ages 6-7), weekly sessions",
-      "start_date": "2026-06-22",
-      "end_date": "2026-08-14",
-      "price": null,
-      "availability": "unknown"
-    },
-    {
-      "name": "Explorers (ages 8-9), weekly sessions",
-      "start_date": "2026-06-22",
-      "end_date": "2026-08-14",
-      "price": null,
-      "availability": "unknown"
-    },
-    {
-      "name": "Naturalists (ages 10-12), weekly sessions",
-      "start_date": "2026-06-22",
-      "end_date": "2026-08-14",
-      "price": null,
-      "availability": "unknown"
-    },
-    {
-      "name": "Counselors-in-Training (ages 14-17), weekly sessions",
-      "start_date": "2026-06-22",
-      "end_date": "2026-08-14",
-      "price": 125,
-      "availability": "unknown"
-    }
-  ],
   "sources": [
     {
-      "url": "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/pleasant-valley/camp/programs-pricing",
-      "checked": "2026-10-13",
+      "url": "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/pleasant-valley/camp",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
         "website_url",
-        "registration_url",
         "city",
         "state",
-        "camp_type",
-        "primary_categories",
-        "activities",
         "age_min",
         "age_max",
+        "primary_categories",
+        "financial_aid"
+      ]
+    },
+    {
+      "url": "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/pleasant-valley/camp/programs-pricing",
+      "checked": "2026-11-13",
+      "fields": [
+        "registration_url",
+        "camp_type",
+        "activities",
         "description_short",
         "price_min",
         "price_max",
-        "financial_aid",
-        "special_needs_notes",
-        "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+        "price_per",
+        "special_needs_notes"
+      ]
+    },
+    {
+      "url": "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/pleasant-valley/camp/about-camp",
+      "checked": "2026-11-13",
+      "fields": [
+        "phone",
+        "aca_accredited",
+        "aca_source_url"
+      ]
+    },
+    {
+      "url": "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/pleasant-valley",
+      "checked": "2026-11-13",
+      "fields": [
+        "street_address",
+        "zip"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/pleasant-valley/camp/programs-pricing",
       "kind": "html",
@@ -130,6 +120,24 @@
     ],
     "errors": [
       "missing required zip"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/pleasant-valley/camp/programs-pricing",
+        "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/pleasant-valley/camp",
+        "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/pleasant-valley/camp/about-camp",
+        "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/pleasant-valley"
+      ],
+      "changes": [
+        "website_url now the camp's main page instead of the pricing page",
+        "registration_url corrected to the link the pricing page actually gives (.../nature-camps/registration-instructions)",
+        "Added zip 01240 and street address 472 West Mountain Road from the sanctuary page (zip was missing, which blocked publishing)",
+        "Added camp phone 413-728-1545 and ACA accreditation from the About Camp page",
+        "Added price_per week to the $104 to $518 sliding scale",
+        "Removed the 5 sessions: each spanned the whole 2026 season rather than a bookable week, and the per-week listings are no longer online"
+      ],
+      "open_questions": []
+    }
   }
 }

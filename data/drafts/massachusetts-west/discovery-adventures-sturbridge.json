@@ -3,7 +3,8 @@
   "name": "Discovery Adventures",
   "operator_name": "Old Sturbridge Village",
   "website_url": "https://www.osv.org/education/discovery-adventures/",
-  "phone": "(800) 733-1830",
+  "email": "osved@osv.org",
+  "phone": "(508) 347-0274",
   "street_address": "1 Old Sturbridge Village Road",
   "city": "Sturbridge",
   "state": "MA",
@@ -11,45 +12,120 @@
   "camp_type": "day",
   "primary_categories": [
     "academic",
-    "arts",
-    "nature"
+    "arts"
   ],
   "age_min": 6,
   "age_max": 17,
-  "description_short": "Three-day and five-day themed day programs at Old Sturbridge Village, a living history museum, held during February, April and summer school vacations. Kids explore part of the Village's history and environment, do hands-on crafts, and get an afternoon snack.",
+  "description_short": "Week-long themed history day programs at Old Sturbridge Village, a living history museum. In summer, kids ages 6 to 17 spend 9 a.m. to 3 p.m. in 19th-century costume, cooking over the open hearth, doing farm chores, making crafts and working with the Village's costumed historians. Groups are by age, with themes that change each week.",
   "activities": [
-    "History exploration",
-    "Hands-on crafts",
-    "Village environment exploration"
+    "hearth cooking",
+    "19th-century crafts",
+    "farm and garden chores",
+    "19th-century games",
+    "sewing and quilting",
+    "blacksmithing, pottery and woodwork (ages 11-14)",
+    "militia drills (ages 11-14)",
+    "art (watercolor, charcoal, pinch pots)"
   ],
+  "price_per_week": 390,
+  "price_min": 315,
+  "price_max": 415,
+  "price_per": "week",
+  "extended_care": false,
   "financial_aid": true,
+  "meals_included": false,
+  "refund_policy_summary": "Refunds are available up to two weeks before your week's program starts. You can switch weeks if there is space in your child's age group; a change fee applies.",
   "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Summer Discovery Adventures, week of June 29",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-03",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Summer Discovery Adventures, week of July 6",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Summer Discovery Adventures, week of July 13",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Summer Discovery Adventures, week of July 20",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Summer Discovery Adventures, week of July 27",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Summer Discovery Adventures, week of August 3",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": null,
+      "availability": "unknown"
+    }
+  ],
   "sources": [
     {
       "url": "https://www.osv.org/education/discovery-adventures/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
         "website_url",
-        "phone",
         "street_address",
         "city",
         "state",
         "zip",
         "camp_type",
-        "primary_categories",
-        "activities",
         "age_min",
         "age_max",
-        "description_short",
         "financial_aid"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
+    },
+    {
+      "url": "https://www.osv.org/event/summer-discovery-adventures/",
+      "checked": "2026-11-13",
+      "fields": [
+        "primary_categories",
+        "description_short",
+        "activities",
+        "price_per_week",
+        "price_min",
+        "price_max",
+        "price_per",
+        "sessions"
+      ]
+    },
+    {
+      "url": "https://www.osv.org/education/discovery-adventures/registration-information-and-packet/",
+      "checked": "2026-11-13",
+      "fields": [
+        "email",
+        "phone",
+        "extended_care",
+        "meals_included",
+        "refund_policy_summary"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.osv.org/education/discovery-adventures/",
       "kind": "html",
@@ -104,6 +180,23 @@
         "quote": "(800) 733-1830"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.osv.org/education/discovery-adventures/",
+        "https://www.osv.org/event/summer-discovery-adventures/",
+        "https://www.osv.org/education/discovery-adventures/registration-information-and-packet/"
+      ],
+      "changes": [
+        "Added the six summer 2026 weeks (June 29 to August 7, 2026) from the program page; prices per session left empty because they vary by age group and membership.",
+        "Added prices: $315 to $415 a week depending on age group, membership and booking date; typical rate $390 (non-member, ages 6 to 10, after April 20, 2026).",
+        "Replaced the museum's general 800 number with the Discovery Adventures office line, (508) 347-0274, and added the program email osved@osv.org.",
+        "Added extended_care false (the FAQ says it is not available), meals_included false (boxed lunch is a $43 add-on) and the refund policy (refunds up to two weeks before the program).",
+        "Rewrote the description and activities from the summer program page (9 to 3, costumed, hearth cooking, chores, crafts); dropped the nature category, which the pages don't support.",
+        "Season stays 2026: OSV has not posted 2027 summer programs yet."
+      ],
+      "open_questions": []
+    }
   }
 }

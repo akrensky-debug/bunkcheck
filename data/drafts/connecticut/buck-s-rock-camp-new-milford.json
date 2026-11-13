@@ -14,19 +14,26 @@
     "arts",
     "performing_arts"
   ],
-  "description_short": "Buck's Rock is a nonprofit summer camp in New Milford, CT, with visual arts, performing arts and outdoor programs. You can book the 8-week full season, a 4-week first or second session, a 6-week session, or the CIT program.",
+  "description_short": "Buck's Rock is a nonprofit overnight arts camp in New Milford, CT, for teens ages 11 to 17, with 32 visual and performing arts programs plus outdoor activities. In 2027 you can book the 8-week full season (July 1 to August 21), a 4-week first or second session, a 6-week session, or the CIT program. Tuition is tiered by household size and income, from $0 up to the full rate.",
   "activities": [
     "Visual arts",
     "Performing arts",
     "Outdoor activities"
   ],
   "season_year": 2027,
+  "age_min": 11,
+  "age_max": 17,
+  "price_min": 9275,
+  "price_max": 15991,
+  "meals_included": true,
+  "financial_aid": true,
+  "swim_waterfront_notes": "The camp has a swimming pool on its wooded grounds.",
   "sessions": [
     {
       "name": "Full Season (8 weeks)",
       "start_date": "2027-07-01",
       "end_date": "2027-08-21",
-      "price": null,
+      "price": 15991,
       "availability": "open"
     },
     {
@@ -40,28 +47,28 @@
       "name": "First Session (4 weeks)",
       "start_date": "2027-07-01",
       "end_date": "2027-07-26",
-      "price": null,
+      "price": 9275,
       "availability": "open"
     },
     {
       "name": "Second Session (4 weeks)",
       "start_date": "2027-07-27",
       "end_date": "2027-08-21",
-      "price": null,
+      "price": 9275,
       "availability": "open"
     },
     {
       "name": "Six-Week Session (6 weeks)",
       "start_date": "2027-07-01",
       "end_date": "2027-08-08",
-      "price": null,
+      "price": 12260,
       "availability": "open"
     }
   ],
   "sources": [
     {
       "url": "https://bucksrockcamp.org/dates",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -72,17 +79,35 @@
         "city",
         "state",
         "zip",
+        "sessions"
+      ]
+    },
+    {
+      "url": "https://bucksrockcamp.org/rates",
+      "checked": "2026-11-13",
+      "fields": [
         "camp_type",
         "primary_categories",
         "activities",
-        "description_short",
-        "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+        "price_min",
+        "price_max",
+        "meals_included",
+        "financial_aid",
+        "swim_waterfront_notes",
+        "description_short"
+      ]
+    },
+    {
+      "url": "https://bucksrockcamp.org/faqs",
+      "checked": "2026-11-13",
+      "fields": [
+        "age_min",
+        "age_max"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://bucksrockcamp.org/dates",
       "kind": "html",
@@ -113,6 +138,23 @@
         "quote": "Packing List ... Visiting Days ... Full Season (8 weeks)"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://bucksrockcamp.org/dates",
+        "https://bucksrockcamp.org/rates",
+        "https://bucksrockcamp.org/faqs"
+      ],
+      "changes": [
+        "Confirmed sleepaway: the rates page says tuition includes room and board with all meals.",
+        "Added ages 11 to 17 from the FAQ page.",
+        "Added 2027 session prices at the full (Tier 1) rate: $15,991 full season, $9,275 for a 4-week session, $12,260 for six weeks; CIT price left empty (it is a 3.5% to 7% discount off tuition).",
+        "Set price_min $9,275 and price_max $15,991 (Tier 1), financial_aid true (income-tiered tuition down to $0 for Tier 6), meals_included true.",
+        "Added a swim note (swimming pool) and rewrote the description with ages and the tiered tuition.",
+        "Left transportation empty: the FAQ says there is no bus, but there is a JFK airport pick-up for fly-in campers."
+      ],
+      "open_questions": []
+    }
   }
 }

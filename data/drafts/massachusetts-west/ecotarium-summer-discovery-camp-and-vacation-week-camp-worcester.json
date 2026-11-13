@@ -32,7 +32,10 @@
   "price_min": 365,
   "price_max": 425,
   "financial_aid": true,
-  "refund_policy_summary": "Payments are nonrefundable. A $75 deposit is due at registration. Payment plans are available through CampDoc. There is a separate Refund Policy document that is not included in this text.",
+  "transportation": false,
+  "meals_included": false,
+  "refund_policy_summary": "Deposits and camp fees are nonrefundable and nontransferable. Fees minus the $75 deposit can be refunded only if you cancel in writing by May 1 for summer camp, or four weeks before a vacation week camp. Later refunds are considered only for medical or emergency reasons.",
+  "special_needs_notes": "The camp works with children who have school aides, IEPs or BIPs; a child's aide is welcome at camp after CORI/SORI checks. Give the Camp Director at least three weeks' notice of any accommodation, assistive device or major allergy. All food must be peanut and tree nut free, and staff are trained for allergy emergencies.",
   "season_year": 2026,
   "price_per": "week",
   "sessions": [
@@ -131,7 +134,7 @@
   "sources": [
     {
       "url": "https://ecotarium.org/camp/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -153,14 +156,29 @@
         "price_per_week",
         "price_per",
         "financial_aid",
-        "refund_policy_summary",
         "sessions"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://ecotarium.org/wp-content/uploads/2024/10/Vacation-Summer-Camp-Cancellation-Refund-2024-2025.pdf",
+      "checked": "2026-11-13",
+      "fields": [
+        "refund_policy_summary"
+      ]
+    },
+    {
+      "url": "https://ecotarium.org/wp-content/uploads/2026/05/Camp-Caregiver-Handbook.docx.pdf",
+      "checked": "2026-11-13",
+      "fields": [
+        "transportation",
+        "meals_included",
+        "special_needs_notes"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://ecotarium.org/camp/",
       "kind": "html",
@@ -203,6 +221,22 @@
         "quote": "April 20 - April 24: Engineer Your World"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://ecotarium.org/camp/",
+        "https://ecotarium.org/wp-content/uploads/2024/10/Vacation-Summer-Camp-Cancellation-Refund-2024-2025.pdf",
+        "https://ecotarium.org/wp-content/uploads/2026/05/Camp-Caregiver-Handbook.docx.pdf"
+      ],
+      "changes": [
+        "Rewrote the refund policy from the camp's own refund PDF: refunds minus the $75 deposit only with written notice by May 1 (summer) or four weeks before a vacation week; the draft only said payments are nonrefundable.",
+        "Added transportation false and meals_included false from the 2026 caregiver handbook (caregiver drop-off only; campers bring a nut-free lunch and two snacks).",
+        "Added special needs notes from the handbook (aides welcome, three weeks' notice for accommodations, nut-free policy).",
+        "Rechecked the nine 2026 summer weeks (June 22 to August 21), CIT sessions, February and April vacation weeks, ages 5 to 12, hours, prices ($365 to $425, $395 general) and contacts: all match.",
+        "Season stays 2026: no 2027 dates or prices are posted yet; the page says returning campers get a 2027 registration link by the end of October."
+      ],
+      "open_questions": []
+    }
   }
 }

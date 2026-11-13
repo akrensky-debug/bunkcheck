@@ -9,9 +9,47 @@
   "state": "MA",
   "zip": "01235",
   "camp_type": "sleepaway",
-  "description_short": "Camp Taconic is a summer camp in Hinsdale, Massachusetts. For 2027 it offers a full season from late June to mid-August, plus a four-week part-season option for first-year campers only.",
+  "primary_categories": [
+    "sports",
+    "arts",
+    "performing_arts",
+    "adventure"
+  ],
+  "activities": [
+    "baseball",
+    "basketball",
+    "soccer",
+    "lacrosse",
+    "flag football",
+    "tennis",
+    "golf",
+    "archery",
+    "gymnastics",
+    "swimming",
+    "sailing",
+    "waterskiing",
+    "canoeing",
+    "stand up paddle boarding",
+    "fishing",
+    "climbing wall",
+    "aerial park",
+    "low ropes",
+    "circus (trapeze, tight rope, juggling)",
+    "horseback riding",
+    "musical theater",
+    "dance",
+    "ceramics",
+    "woodworking",
+    "cooking",
+    "Lego/robotics",
+    "digital photography"
+  ],
+  "age_min": 7,
+  "age_max": 15,
+  "description_short": "Camp Taconic is a coed sleepaway camp for ages 7 to 15 on Lake Ashmere in Hinsdale, in the Berkshires. For 2027 it offers a full season from late June to mid-August, plus a four-week part season for first-summer campers only.",
   "price_min": 11300,
   "price_max": 17200,
+  "transportation": true,
   "season_year": 2027,
   "sessions": [
     {
@@ -32,7 +70,7 @@
   "sources": [
     {
       "url": "https://camptaconic.com/rates-dates.php",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "website_url",
@@ -42,17 +80,34 @@
         "city",
         "state",
         "zip",
-        "camp_type",
-        "description_short",
         "price_min",
         "price_max",
         "sessions"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://camptaconic.com/faq.php",
+      "checked": "2026-11-13",
+      "fields": [
+        "camp_type",
+        "age_min",
+        "age_max",
+        "transportation",
+        "description_short"
+      ]
+    },
+    {
+      "url": "https://camptaconic.com/our-activities.php",
+      "checked": "2026-11-13",
+      "fields": [
+        "primary_categories",
+        "activities"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://camptaconic.com/rates-dates.php",
       "kind": "html",
@@ -81,6 +136,24 @@
       "Operator/owner name"
     ],
     "low_confidence": [],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://camptaconic.com/rates-dates.php",
+        "https://camptaconic.com/faq.php",
+        "https://camptaconic.com/our-activities.php"
+      ],
+      "changes": [
+        "Rechecked 2027 dates and tuition on the rates page: full season June 27 to August 14, 2027 at $17,200; part season June 27 to July 24, 2027 at $11,300 (first summer only). All match.",
+        "Added ages 7 to 15 from the FAQ.",
+        "Added transportation: true; the FAQ describes chaperoned coach buses from Westchester County and Natick, MA.",
+        "Confirmed sleepaway from the FAQ (residential camp, 24 hour health center) and moved camp_type to that source.",
+        "Added activities and primary categories from the activities page (athletics, waterfront, arts and tech, adventure, performing arts, circus, horseback riding).",
+        "Rewrote the description to say coed, ages 7 to 15, on Lake Ashmere.",
+        "Rookie Days are now posted (July 3 and July 11, 2027), so the old 'Rookie Day TBD' unknown is out of date."
+      ],
+      "open_questions": []
+    }
   }
 }

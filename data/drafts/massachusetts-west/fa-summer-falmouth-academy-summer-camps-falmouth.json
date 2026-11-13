@@ -20,7 +20,7 @@
   ],
   "age_min": 5,
   "age_max": 14,
-  "description_short": "A weekly day camp at Falmouth Academy on Cape Cod for ages 5–14, split by age into Camp Mariner (5–6), Camp Seafarer (7–9) and Camp Navigator (10–14). Families choose half-day or full-day weeks with activities in sports, arts, STEM, nature and academics.",
+  "description_short": "A weekly day camp at Falmouth Academy in Falmouth, MA for ages 5–14, split by age into Camp Mariner (5–6), Camp Seafarer (7–9) and Camp Navigator (10–14). Families choose half-day or full-day weeks with activities in sports, arts, STEM, nature and academics.",
   "activities": [
     "arts and crafts",
     "outdoor play",
@@ -108,7 +108,7 @@
   "sources": [
     {
       "url": "https://www.falmouthacademy.org/summer/welcome",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -137,7 +137,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.falmouthacademy.org/summer/welcome",
       "kind": "html",
@@ -199,6 +199,19 @@
         "quote": "Our STEM sessions offer exciting options like coding, robotics, engineering, seashore ecology, physics, and forensics."
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.falmouthacademy.org/summer/welcome"
+      ],
+      "changes": [
+        "Rechecked all fields against the FA Summer page: 2026 weeks 1 to 8 (June 22 to August 14), $750 full day and $375 half day per week, ages 5 to 14 in three age groups, bag lunch, refund policy, address, phone and email all match.",
+        "Changed 'on Cape Cod' in the description to 'in Falmouth, MA', since the page doesn't say Cape Cod.",
+        "Season stays 2026: no 2027 dates or prices are posted yet.",
+        "Note: Falmouth is on Cape Cod, far from Central and Western Massachusetts; the listing is accurate for its town, but check it belongs in this metro."
+      ],
+      "open_questions": []
+    }
   }
 }
