@@ -4,51 +4,174 @@
   "operator_name": "Hamden/North Haven YMCA (Central Connecticut Coast YMCA)",
   "website_url": "https://cccymca.org/locations/hamden/camp/",
   "registration_url": "https://ymcaccc.sgasoftware.com/Sales/Public",
-  "phone": "203.562.5129",
-  "street_address": "Downes Road",
+  "email": "Campmtlaurel@cccymca.org",
+  "phone": "203-535-2569",
+  "street_address": "2705 Downes Road",
   "city": "Hamden",
   "state": "CT",
-  "zip": null,
+  "zip": "06514",
   "camp_type": "day",
   "primary_categories": [
-    "nature",
+    "general",
+    "outdoor",
     "sports"
   ],
-  "description_short": "Summer day camp run by the Hamden/North Haven YMCA at Camp Mountain Laurel on Downes Road in Hamden. Activities include nature exploration, swimming and archery, and there is a Counselor in Training program for 14-15 year olds.",
   "activities": [
-    "Nature exploration",
-    "Swimming",
+    "Swim lessons and recreational swim",
     "Archery",
-    "Counselor in Training program"
+    "STEAM activities",
+    "Hiking",
+    "Active games and sports",
+    "Arts and crafts",
+    "Ropes course",
+    "Climbing wall",
+    "Gaga",
+    "Specialty weeks: pottery, fort building, engineering, photography, music, theater, dance, cooking, sports, wilderness survival",
+    "Swim camps and Aquatic Leader program",
+    "Counselor in Training program (ages 14-15)"
   ],
+  "age_min": 3,
+  "age_max": 15,
+  "grade_max": 9,
+  "description_short": "The Hamden/North Haven YMCA's summer day camp on twenty wooded acres at 2705 Downes Road in Hamden, for ages 3 through entering 9th grade, plus a CIT program for ages 14-15. Campers swim in an outdoor pool and do archery, STEAM, hiking, sports, ropes and climbing, and arts and crafts, with weekly themes and specialty camps. Camp runs 9:00 to 4:00.",
+  "price_min": 110,
+  "price_max": 365,
+  "price_per_week": 325,
+  "price_per": "week",
+  "extended_care": true,
+  "transportation": true,
   "financial_aid": true,
-  "special_needs_notes": "Children who need special assistance or medicine at camp may need an Individual Care Plan and a Medicine Authorization form.",
+  "refund_policy_summary": "A $50 deposit per camper per week is due at registration and cannot be refunded or transferred.",
+  "special_needs_notes": "The Y works with children of all abilities. Families of a child who needs social, behavioral or medical accommodations are asked to contact the Camp Director.",
+  "swim_waterfront_notes": "Camp has an outdoor swimming pool. Weekly activities include swim lessons and recreational swim; beginner and intermediate swim camps are offered, and the intermediate camp requires a skills assessment.",
+  "aca_accredited": true,
+  "aca_source_url": "https://cccymca.org/wp-content/uploads/CML-SUMMER-DAY-CAMP-GUIDE-1.pdf",
   "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Aloha Summer (Jun 15 to Jun 19)",
+      "start_date": "2026-06-15",
+      "end_date": "2026-06-19",
+      "price": 325,
+      "availability": "unknown"
+    },
+    {
+      "name": "Go For the Gold (Jun 22 to Jun 26)",
+      "start_date": "2026-06-22",
+      "end_date": "2026-06-26",
+      "price": 325,
+      "availability": "unknown"
+    },
+    {
+      "name": "Ninja Warriors (Jun 29 to Jul 3)",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-03",
+      "price": 325,
+      "availability": "unknown"
+    },
+    {
+      "name": "World Cup (Jul 6 to Jul 10)",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": 325,
+      "availability": "unknown"
+    },
+    {
+      "name": "All Things Disney (Jul 13 to Jul 17)",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": 325,
+      "availability": "unknown"
+    },
+    {
+      "name": "Celebration (Jul 20 to Jul 24)",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": 325,
+      "availability": "unknown"
+    },
+    {
+      "name": "Color Wars (Jul 27 to Jul 31)",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": 325,
+      "availability": "unknown"
+    },
+    {
+      "name": "Carnival Week (Aug 3 to Aug 7)",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": 325,
+      "availability": "unknown"
+    },
+    {
+      "name": "Splish Splash (Aug 10 to Aug 14)",
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-14",
+      "price": 325,
+      "availability": "unknown"
+    },
+    {
+      "name": "Trivia Mania (Aug 17 to Aug 21)",
+      "start_date": "2026-08-17",
+      "end_date": "2026-08-21",
+      "price": 325,
+      "availability": "unknown"
+    },
+    {
+      "name": "Endless Enrichment (Aug 24 to Aug 28)",
+      "start_date": "2026-08-24",
+      "end_date": "2026-08-28",
+      "price": 325,
+      "availability": "unknown"
+    }
+  ],
   "sources": [
     {
       "url": "https://cccymca.org/locations/hamden/camp/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
+      "fields": [
+        "website_url",
+        "registration_url",
+        "financial_aid"
+      ]
+    },
+    {
+      "url": "https://cccymca.org/wp-content/uploads/CML-SUMMER-DAY-CAMP-GUIDE-1.pdf",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
-        "website_url",
-        "registration_url",
+        "email",
         "phone",
         "street_address",
         "city",
         "state",
+        "zip",
         "camp_type",
         "primary_categories",
         "activities",
+        "age_min",
+        "age_max",
+        "grade_max",
         "description_short",
-        "financial_aid",
-        "special_needs_notes"
-      ],
-      "note": "Drafted by the listing tool from this page"
+        "price_min",
+        "price_max",
+        "price_per_week",
+        "price_per",
+        "extended_care",
+        "transportation",
+        "refund_policy_summary",
+        "special_needs_notes",
+        "swim_waterfront_notes",
+        "aca_accredited",
+        "aca_source_url",
+        "sessions"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://cccymca.org/locations/hamden/camp/",
       "kind": "html",
@@ -87,6 +210,22 @@
     ],
     "errors": [
       "missing required zip"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://cccymca.org/locations/hamden/camp/",
+        "https://cccymca.org/wp-content/uploads/CML-SUMMER-DAY-CAMP-GUIDE-1.pdf"
+      ],
+      "changes": [
+        "Added the street address and ZIP, 2705 Downes Road, Hamden, CT 06514, from the 2026 brochure (the draft had only Downes Road and no ZIP).",
+        "Replaced the footer phone and P.O. box contact with the camp's own phone 203-535-2569 and email Campmtlaurel@cccymca.org from the brochure.",
+        "Added eleven 2026 weekly sessions, June 15 to August 28, at the $325 Classic Camp program participant rate.",
+        "Added prices from the brochure: Classic Camp $225 members and $325 others; full range $110 (CIT, members) to $365 (Creative Cooking, others).",
+        "Added ages 3 to 15 and grades up to entering 9th, hours 9:00 to 4:00, before and after care, bus ($30 or $60 a week), ACA accreditation, the $50 non-refundable deposit, swim and special needs notes.",
+        "Replaced the activity list with the brochure's activities and specialty camps. 2027 is not posted yet."
+      ],
+      "open_questions": []
+    }
   }
 }

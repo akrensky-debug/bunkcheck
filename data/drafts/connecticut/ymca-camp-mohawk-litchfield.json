@@ -1,30 +1,63 @@
 {
   "slug": "ymca-camp-mohawk-litchfield",
   "name": "YMCA Camp Mohawk",
-  "operator_name": "YMCA",
+  "operator_name": "YMCA Camp Mohawk",
   "website_url": "https://www.campmohawk.org",
   "registration_url": "https://ymcacampmohawk.campintouch.com/ui/forms/application/camper/App",
   "email": "info@campmohawk.org",
   "phone": "(860) 672-6655",
+  "street_address": "246 Great Hill Road",
   "city": "Litchfield",
   "state": "CT",
   "zip": "06759",
   "camp_type": "sleepaway",
   "primary_categories": [
-    "sports"
+    "general",
+    "sports",
+    "arts"
   ],
+  "activities": [
+    "Swimming",
+    "Canoeing",
+    "Kayaking",
+    "Sailing",
+    "Rowing",
+    "Windsurfing",
+    "Stand up paddleboarding",
+    "Log rolling",
+    "Fishing (11+)",
+    "Archery",
+    "Tennis",
+    "Soccer",
+    "Field hockey",
+    "Basketball",
+    "Volleyball",
+    "Yoga",
+    "Dance",
+    "Cheerleading",
+    "Tumbling",
+    "Ropes course (11+)",
+    "Nature",
+    "Outdoor living",
+    "Arts and crafts",
+    "Ceramics",
+    "Drama production",
+    "Chorus",
+    "Ukulele (11+)",
+    "Baking",
+    "Sewing and design",
+    "Farm and animal care",
+    "Horseback riding lessons (extra fee)"
+  ],
+  "gender_policy": "girls",
   "age_min": 5,
   "age_max": 17,
-  "description_short": "YMCA camp for girls with one- and two-week overnight sessions for ages 7-15, a weekly day camp for ages 5-12, and a four-week Counselor in Training program for ages 16-17. Horseback riding lessons can be added for an extra fee.",
-  "activities": [
-    "Horseback riding lessons (add-on)",
-    "Counselor in Training program"
-  ],
-  "price_per_week": 483,
+  "description_short": "A YMCA camp for girls in Litchfield, CT, on its own pond. Overnight camp runs in two-week sessions for ages 7-15 and one-week sessions mostly for ages 7-11; there is also a weekly day camp for ages 5-12 and a four-week Counselor in Training program for ages 16-17. Horseback riding lessons can be added for an extra fee.",
+  "price_per_week": 1646,
   "price_min": 483,
   "price_max": 3150,
   "financial_aid": true,
-  "refund_policy_summary": "Deposits are non-refundable: $300 per overnight session and $80 per day camp week. Deposits move with the camper if she switches to another session that has space. The full refund policy is on a separate page.",
+  "refund_policy_summary": "Overnight camp: a $300 deposit per session is not refundable; cancellations in writing before April 1 get all other fees back, and there are no refunds after April 1 or once camp has started. Day camp: an $80 deposit per week is not refundable; cancellations before June 1 get all other fees back, none after. Deposits move with the camper if she switches to a session with space.",
   "season_year": 2027,
   "price_per": "week",
   "sessions": [
@@ -47,7 +80,7 @@
       "start_date": "2027-07-25",
       "end_date": "2027-08-07",
       "price": 3039,
-      "availability": "open"
+      "availability": "waitlist"
     },
     {
       "name": "Session 4 (two-week overnight)",
@@ -57,35 +90,35 @@
       "availability": "open"
     },
     {
-      "name": "Session 1A (one-week overnight)",
+      "name": "Session 1A (one-week overnight, ages 7-11)",
       "start_date": "2027-06-27",
       "end_date": "2027-07-03",
       "price": 1646,
       "availability": "open"
     },
     {
-      "name": "Session 1B (one-week overnight)",
+      "name": "Session 1B (one-week overnight, ages 7-11)",
       "start_date": "2027-07-04",
       "end_date": "2027-07-10",
       "price": 1646,
       "availability": "open"
     },
     {
-      "name": "Session 4A (one-week overnight)",
+      "name": "Session 4A (one-week overnight, ages 7-11)",
       "start_date": "2027-08-08",
       "end_date": "2027-08-14",
       "price": 1646,
       "availability": "open"
     },
     {
-      "name": "Session 4B (one-week overnight)",
+      "name": "Session 4B (one-week overnight, ages 7-11)",
       "start_date": "2027-08-15",
       "end_date": "2027-08-21",
       "price": 1646,
       "availability": "open"
     },
     {
-      "name": "Session 5 (one-week overnight)",
+      "name": "Session 5 (one-week overnight, ages 7-15)",
       "start_date": "2027-08-22",
       "end_date": "2027-08-28",
       "price": 1646,
@@ -165,10 +198,9 @@
   "sources": [
     {
       "url": "https://www.campmohawk.org/dates-rates",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
-        "operator_name",
         "website_url",
         "registration_url",
         "email",
@@ -177,8 +209,6 @@
         "state",
         "zip",
         "camp_type",
-        "primary_categories",
-        "activities",
         "age_min",
         "age_max",
         "description_short",
@@ -187,14 +217,45 @@
         "price_per_week",
         "price_per",
         "financial_aid",
-        "refund_policy_summary",
         "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
+    },
+    {
+      "url": "https://www.campmohawk.org/directions",
+      "checked": "2026-11-13",
+      "fields": [
+        "street_address"
+      ]
+    },
+    {
+      "url": "https://www.campmohawk.org/activities",
+      "checked": "2026-11-13",
+      "fields": [
+        "operator_name",
+        "primary_categories",
+        "activities",
+        "gender_policy",
+        "swim_waterfront_notes"
+      ]
+    },
+    {
+      "url": "https://www.campmohawk.org/daycamp",
+      "checked": "2026-11-13",
+      "fields": [
+        "transportation",
+        "meals_included"
+      ]
+    },
+    {
+      "url": "https://www.campmohawk.org/refund-policy",
+      "checked": "2026-11-13",
+      "fields": [
+        "refund_policy_summary"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.campmohawk.org/dates-rates",
       "kind": "html",
@@ -237,6 +298,31 @@
         "quote": "HORSEBACK RIDING LESSONS"
       }
     ],
-    "errors": []
-  }
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.campmohawk.org/dates-rates",
+        "https://www.campmohawk.org/directions",
+        "https://www.campmohawk.org/activities",
+        "https://www.campmohawk.org/daycamp",
+        "https://www.campmohawk.org/refund-policy"
+      ],
+      "changes": [
+        "Added the camp's street address, 246 Great Hill Road, Litchfield, from the Directions page (the Dates & Rates page shows only a P.O. box).",
+        "Updated availability: Session 3 is now full with a waitlist (was open); Session 2 still waitlist; Sessions 1 and 4 open.",
+        "Added the age limits to one-week session names (7-11, Session 5 is 7-15).",
+        "Set gender_policy to girls and operator_name to YMCA Camp Mohawk.",
+        "Replaced the two-item activity list with the camp's activity list and changed categories to general, sports and arts (horseback riding is only an add-on).",
+        "Changed price_per_week from 483 (day camp) to 1646, the one-week overnight rate, since the listing is a sleepaway camp.",
+        "Added transportation (day camp bus from Litchfield and Bantam) and meals_included (day camp lunch and snack provided) from the Day Camp page.",
+        "Added waterfront notes from the Activities page.",
+        "Rewrote the refund summary from the Refund Policy page (April 1 cutoff for overnight, June 1 for day camp)."
+      ],
+      "open_questions": []
+    }
+  },
+  "transportation": true,
+  "meals_included": true,
+  "swim_waterfront_notes": "Waterfront activities are on Mohawk Pond, which camp has to itself: instructional and free swimming, canoeing, kayaking, rowing, sailing, windsurfing, paddleboarding and log rolling. Day campers have a daily free swim and waterfront period."
 }

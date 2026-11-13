@@ -6,29 +6,24 @@
   "city": null,
   "state": "CT",
   "zip": null,
-  "primary_categories": [
-    "nature"
-  ],
   "age_min": 5,
   "description_short": "The YMCA of Greater Hartford runs overnight camps at Camp Jewell (Colebrook) and Camp Woodstock (Woodstock Valley), plus day camps in several Connecticut towns. Day camp is for ages 5-12, overnight camp is usually for ages 7-16, and there are teen leadership and specialty programs.",
   "sources": [
     {
       "url": "https://www.ghymca.org/camping",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
         "website_url",
         "state",
-        "primary_categories",
         "age_min",
         "description_short"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.ghymca.org/camping",
       "kind": "html",
@@ -72,6 +67,19 @@
       "missing required season_year",
       "camp_type must be one of ['day', 'sleepaway', 'specialty']",
       "city None, CT is not in cities.py"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.ghymca.org/camping"
+      ],
+      "changes": [
+        "Removed primary_categories (nature): the page does not describe the camps as nature camps.",
+        "Rechecked name, operator, state, age_min 5 and the description against the camping overview page: they match. City, ZIP, camp type and season cannot be filled because the page covers many sites, so check_draft cannot pass."
+      ],
+      "open_questions": [
+        "This is the YMCA of Greater Hartford's overview of all its camps (overnight Camp Jewell in Colebrook and Camp Woodstock in Woodstock Valley, plus day camps in about ten towns), not one camp. Two of its day camps, Farmington Valley YMCA and Glastonbury YMCA Camp Glawackus, are already published from their own ghymca.org pages. Should this umbrella draft be dropped and Camp Jewell, Camp Woodstock and the other day camps drafted one by one from their own pages?"
+      ]
+    }
   }
 }

@@ -3,37 +3,53 @@
   "name": "Hamden's Summer Day Camps",
   "operator_name": "Town of Hamden Recreation Department",
   "website_url": "https://www.hamden.com/summercamp",
-  "registration_url": "https://www.hamden.com/DocumentCenter/View/12479/2026-Summer-Grid-Registration-pdf",
+  "registration_url": "https://hamdenct.myrec.com",
   "phone": "203-287-2579",
   "street_address": "2750 Dixwell Avenue",
   "city": "Hamden",
   "state": "CT",
   "zip": "06518",
   "camp_type": "day",
-  "description_short": "The Town of Hamden Recreation Department runs several summer day camps. Details for each camp are in a separate PDF (the summer camp grid) linked from this page.",
+  "description_short": "Town of Hamden two-week day camps, 8:30am-3pm: Munchkins (age 3 1/2 to kindergarten) and Rascal (grades 1-2) at Shepherd Glen, Green Dragons (grades 3-5) and Gold Dragons (grades 6-7) at Hamden High, and Camp Brooksvale (ages 6-14, 9am-3pm) with nature programs and barnyard animals at Brooksvale Park. Field trips, arts and crafts, games and theme days. Resident rates; non-resident rates on request.",
   "season_year": 2026,
   "sources": [
     {
       "url": "https://www.hamden.com/summercamp",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
         "website_url",
-        "registration_url",
+        "email",
         "phone",
         "street_address",
         "city",
         "state",
         "zip",
-        "camp_type",
-        "description_short"
-      ],
-      "note": "Drafted by the listing tool from this page"
+        "camp_type"
+      ]
+    },
+    {
+      "url": "https://www.hamden.com/DocumentCenter/View/12657",
+      "checked": "2026-11-13",
+      "fields": [
+        "registration_url",
+        "description_short",
+        "primary_categories",
+        "activities",
+        "age_max",
+        "price_min",
+        "price_max",
+        "price_per",
+        "extended_care",
+        "swim_waterfront_notes",
+        "special_needs_notes",
+        "sessions"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.hamden.com/summercamp",
       "kind": "html",
@@ -74,6 +90,158 @@
         "quote": "2026 Summer Grid Registration pdf"
       }
     ],
-    "errors": []
-  }
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.hamden.com/summercamp",
+        "https://www.hamden.com/DocumentCenter/View/12657",
+        "https://www.hamden.com/DocumentCenter/View/12479/2026-Summer-Grid-Registration-pdf",
+        "https://www.hamden.com/DocumentCenter/View/12475/2026-Summer-Camp-Parent-Information-"
+      ],
+      "changes": [
+        "Read the 2026 Summer Camp Grid PDF and filled the listing from it: five town-run camps, three two-week sessions each (June 29 to August 7, 2026, no camp July 3), 15 sessions at the resident registration rates ($245 to $270; Gold Dragons $315 to $350; late rates $10 higher, up to $360).",
+        "registration_url now points to hamdenct.myrec.com (the grid says sign up there) instead of the PDF.",
+        "Added email recreation@hamden.com from the camp page, extended care ($50 a week, 7:30-8:30am and 3-5:30pm), age_max 14, activities, categories, the optional swim note for Rascal Camp and the toilet-training rule for Munchkins.",
+        "Left out the partner camps on the grid (Mad Science, Chess Wizards, Creative Kids, Build with Ricky): they are run by other companies and register elsewhere.",
+        "Used the grid linked as 'Summer Camp Grid 2026' (View/12657); the older registration grid (View/12479, dated 01/13/2025) shows different partner-camp prices but the same town-camp rates.",
+        "Couldn't fetch the 2026 Summer Camp Parent Information PDF (connection error)."
+      ],
+      "open_questions": [
+        "This is five town camps at three sites (Shepherd Glen, Hamden High, Brooksvale Park) under one listing, with the town hall as the address. Keep one umbrella listing, or split Camp Brooksvale (a nature and farm camp at Brooksvale Park) into its own listing?",
+        "Prices are resident rates; non-resident rates are 'available upon request'. OK to publish resident rates with that note in the description?"
+      ]
+    }
+  },
+  "email": "recreation@hamden.com",
+  "primary_categories": [
+    "general",
+    "nature"
+  ],
+  "activities": [
+    "field trips",
+    "arts and crafts",
+    "theme days",
+    "outdoor games",
+    "tournaments",
+    "movies",
+    "optional swimming (Rascal Camp)",
+    "nature programs",
+    "barnyard animal care",
+    "gardening"
+  ],
+  "age_max": 14,
+  "price_min": 245,
+  "price_max": 360,
+  "price_per": "session",
+  "extended_care": true,
+  "swim_waterfront_notes": "Rascal Camp (grades 1-2) may swim, optionally, twice a week at the Hamden High School pool. Send a flotation device with non-swimmers.",
+  "special_needs_notes": "Munchkins Camp campers must be toilet trained.",
+  "sessions": [
+    {
+      "name": "Munchkins Camp (age 3 1/2 to K): Session 1",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-10",
+      "price": 245,
+      "availability": "unknown"
+    },
+    {
+      "name": "Munchkins Camp (age 3 1/2 to K): Session 2",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-24",
+      "price": 270,
+      "availability": "unknown"
+    },
+    {
+      "name": "Munchkins Camp (age 3 1/2 to K): Session 3",
+      "start_date": "2026-07-27",
+      "end_date": "2026-08-07",
+      "price": 270,
+      "availability": "unknown"
+    },
+    {
+      "name": "Rascal Camp (grades 1-2): Session 1",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-10",
+      "price": 245,
+      "availability": "unknown"
+    },
+    {
+      "name": "Rascal Camp (grades 1-2): Session 2",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-24",
+      "price": 270,
+      "availability": "unknown"
+    },
+    {
+      "name": "Rascal Camp (grades 1-2): Session 3",
+      "start_date": "2026-07-27",
+      "end_date": "2026-08-07",
+      "price": 270,
+      "availability": "unknown"
+    },
+    {
+      "name": "Green Dragons (grades 3-5): Session 1",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-10",
+      "price": 245,
+      "availability": "unknown"
+    },
+    {
+      "name": "Green Dragons (grades 3-5): Session 2",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-24",
+      "price": 270,
+      "availability": "unknown"
+    },
+    {
+      "name": "Green Dragons (grades 3-5): Session 3",
+      "start_date": "2026-07-27",
+      "end_date": "2026-08-07",
+      "price": 270,
+      "availability": "unknown"
+    },
+    {
+      "name": "Gold Dragons (grades 6-7): Session 1",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-10",
+      "price": 315,
+      "availability": "unknown"
+    },
+    {
+      "name": "Gold Dragons (grades 6-7): Session 2",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-24",
+      "price": 350,
+      "availability": "unknown"
+    },
+    {
+      "name": "Gold Dragons (grades 6-7): Session 3",
+      "start_date": "2026-07-27",
+      "end_date": "2026-08-07",
+      "price": 350,
+      "availability": "unknown"
+    },
+    {
+      "name": "Camp Brooksvale (ages 6-14): Session 1",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-10",
+      "price": 245,
+      "availability": "unknown"
+    },
+    {
+      "name": "Camp Brooksvale (ages 6-14): Session 2",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-24",
+      "price": 270,
+      "availability": "unknown"
+    },
+    {
+      "name": "Camp Brooksvale (ages 6-14): Session 3",
+      "start_date": "2026-07-27",
+      "end_date": "2026-08-07",
+      "price": 270,
+      "availability": "unknown"
+    }
+  ]
 }

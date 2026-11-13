@@ -10,33 +10,43 @@
   "state": "CT",
   "zip": "06032",
   "camp_type": "day",
-  "description_short": "A free summer day camp for Hartford children with recreational and educational activities. It includes bus transportation from Hartford, free breakfast and lunch, a full-time nurse and free dental screenings.",
+  "description_short": "A free summer day camp, 8:30am-3:30pm, for children ages 5-12 who live in Hartford or East Hartford, at a campsite in Farmington. Hartford campers pay only a $125 non-refundable application fee; East Hartford campers pay $200 a week. Buses from Hartford stops, free breakfast and lunch, a full-time nurse, swimming, arts, nature, STEM, music and sports.",
   "activities": [
-    "Swimming",
-    "Dental screenings and dental education"
+    "swimming",
+    "arts and crafts",
+    "nature program and hikes",
+    "gardening",
+    "LEGO STEM",
+    "computer lab coding",
+    "photography",
+    "music and performing arts",
+    "sports and recreation",
+    "yoga",
+    "healthy choices",
+    "financial literacy",
+    "golf (First Tee)",
+    "deck hockey",
+    "Girl Scouts program",
+    "free dental screenings"
   ],
-  "price_per_week": 0,
-  "price_min": 0,
-  "price_max": 0,
   "transportation": true,
   "meals_included": true,
   "special_needs_notes": "A full-time nurse is on staff. In an emergency, campers go to the UConn Health Center, two minutes away.",
-  "swim_waterfront_notes": "Campers should bring a bathing suit and towel. Camp provides them if a camper has none. The camp publishes an Aquatics Safety Guide, but this page does not show its contents.",
+  "swim_waterfront_notes": "Swimming and aquatics program teaches water safety and basic strokes; the camp publishes an Aquatics Safety Guide. Campers bring a bathing suit and towel, or the camp provides them.",
   "season_year": 2026,
-  "price_per": "week",
   "sessions": [
     {
       "name": "Summer 2026 program",
       "start_date": "2026-06-29",
       "end_date": "2026-07-31",
-      "price": 0,
+      "price": null,
       "availability": "unknown"
     }
   ],
   "sources": [
     {
       "url": "https://campcourant.org/parents/camp-info/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -48,23 +58,41 @@
         "state",
         "zip",
         "camp_type",
-        "activities",
-        "description_short",
-        "price_min",
-        "price_max",
-        "price_per_week",
-        "price_per",
         "transportation",
         "meals_included",
         "special_needs_notes",
         "swim_waterfront_notes",
         "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
+    },
+    {
+      "url": "https://campcourant.org/parents/camp-registration-information/",
+      "checked": "2026-11-13",
+      "fields": [
+        "description_short",
+        "financial_aid",
+        "refund_policy_summary"
+      ]
+    },
+    {
+      "url": "https://campcourant.org/parents/camp-faqs/",
+      "checked": "2026-11-13",
+      "fields": [
+        "age_min",
+        "age_max"
+      ]
+    },
+    {
+      "url": "https://campcourant.org/parents/camp-info/camp-programs/",
+      "checked": "2026-11-13",
+      "fields": [
+        "primary_categories",
+        "activities"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://campcourant.org/parents/camp-info/",
       "kind": "html",
@@ -95,6 +123,31 @@
         "quote": "bring a bathing suit and towel"
       }
     ],
-    "errors": []
-  }
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://campcourant.org/parents/camp-info/",
+        "https://campcourant.org/parents/camp-registration-information/",
+        "https://campcourant.org/parents/camp-faqs/",
+        "https://campcourant.org/parents/camp-info/camp-programs/"
+      ],
+      "changes": [
+        "Removed the $0 prices: the registration page charges a $125 non-refundable application fee per camper per session, and East Hartford campers pay $200 a week. The description says this; session price left empty.",
+        "Added ages 5-12 and the Hartford or East Hartford residency rule from the FAQ.",
+        "Added the full activity list from the Camp Programs page and set the category to general.",
+        "financial_aid true: the registration page says Care 4 Kids (state child care subsidy) is accepted.",
+        "Added the refund note (application fee is non-refundable).",
+        "Confirmed address, phone, hours, bus-only drop-off, free breakfast and lunch, nurse and the June 29 to July 31, 2026 dates."
+      ],
+      "open_questions": []
+    }
+  },
+  "age_min": 5,
+  "age_max": 12,
+  "primary_categories": [
+    "general"
+  ],
+  "financial_aid": true,
+  "refund_policy_summary": "The $125 application fee per camper per session is non-refundable."
 }
