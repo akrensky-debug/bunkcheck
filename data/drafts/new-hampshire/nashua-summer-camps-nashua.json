@@ -46,7 +46,7 @@
   "sources": [
     {
       "url": "https://www.nashuanh.gov/534/Summer-Camps",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -63,12 +63,11 @@
         "activities",
         "description_short",
         "refund_policy_summary"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.nashuanh.gov/534/Summer-Camps",
       "kind": "html",
@@ -108,6 +107,20 @@
         "quote": "City-Run Camps include: All Sports Camp Baseball Basketball (Girls and Boys) Camp Mine Falls ..."
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.nashuanh.gov/534/Summer-Camps",
+        "https://www.nashuanh.gov/DocumentCenter/View/34799"
+      ],
+      "changes": [
+        "Checked every filled field against the city's Summer Camps page; all match. Updated the checked date.",
+        "No sessions, ages or prices added: the page says 2027 camps and dates will be posted in February 2027 and registration opens TBD; the 2026 registration form PDF has no camp list."
+      ],
+      "open_questions": [
+        "This is the city's overview page for about 18 separate camps (city-run sports camps, Camp Mine Falls, and partner camps run by Nashua Community Music School, New England School of Archery, Skyhawks and Wicked Cool for Kids), each with its own dates, ages and prices on nashua.recdesk.com. Publish it as one umbrella listing with no sessions, ages or prices, or hold it until February 2027 and list the main camps (for example Camp Mine Falls) one by one?"
+      ]
+    }
   }
 }

@@ -62,7 +62,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://squamlakes.org/jsla/",
       "kind": "html",
@@ -95,6 +95,18 @@
       "ZIP code"
     ],
     "low_confidence": [],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://squamlakes.org/jsla/"
+      ],
+      "changes": [
+        "No changes: couldn't fetch the camp's page (squamlakes.org returned a bot-check page), so nothing could be checked."
+      ],
+      "open_questions": [
+        "squamlakes.org served a bot check to BunkcheckBot, so none of the fields could be checked against the camp's site. Ask the Squam Lakes Association for the 2027 schedule and rates (the draft says they post January 2, 2027), or have someone check the page by hand."
+      ]
+    }
   }
 }

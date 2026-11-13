@@ -336,7 +336,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.wanakee.org/dates-and-rates",
       "kind": "html",
@@ -398,6 +398,19 @@
         "quote": "July 22 - July 25 Family Camp"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.wanakee.org/dates-and-rates"
+      ],
+      "changes": [
+        "No changes: wanakee.org refused our fetch (401), so no field could be checked against the camp's own pages."
+      ],
+      "open_questions": [
+        "wanakee.org refused an automated request (401). Ask Wanakee for its dates and rates (or permission to read the page) before publishing; nothing in this draft is verified.",
+        "From the earlier draft: Wanakee runs a day camp and overnight camps under one listing with conflicting dates and grades on its page (Family Camp, LIT Part 2, several grade ranges). One listing or two, once the page can be read?"
+      ]
+    }
   }
 }

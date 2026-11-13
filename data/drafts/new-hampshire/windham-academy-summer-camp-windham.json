@@ -12,47 +12,17 @@
   "camp_type": "day",
   "age_min": 4,
   "age_max": 13,
-  "description_short": "A four-week summer camp for ages 4–13, run by Windham Academy, a public charter school in Windham, NH. Families can sign up by the week, and a paid extended hour from 3 to 4 PM is offered.",
+  "description_short": "A summer camp for ages 4-13 run by Windham Academy, a public charter school in Windham, NH. In 2026 families could sign up for any of four weeks, with a paid extended hour from 3 to 4 PM; 2027 details are not posted yet.",
   "price_per_week": 375,
   "extended_care": true,
-  "refund_policy_summary": "Registration fee (one-time, per child) is non-refundable and does not count toward tuition. Tuition is refundable, minus the registration fee, only if you cancel before May 1; after that it is non-refundable. No refunds or credits for missed days or weeks. Full payment is due by June 1.",
-  "special_needs_notes": "Campers must be potty trained. Four-year-olds must turn 4 by January 31, 2026.",
+  "refund_policy_summary": "A $50 registration fee per child is non-refundable and does not count toward tuition. Tuition is refundable only if you cancel before May 1; after that it is non-refundable, and there are no refunds or credits for missed days or weeks. Full payment is due by June 1.",
+  "special_needs_notes": "Campers must be potty trained. In 2026, four-year-olds had to turn 4 by January 31, 2026.",
   "season_year": 2026,
   "price_per": "week",
-  "sessions": [
-    {
-      "name": "Week 1",
-      "start_date": "2026-07-06",
-      "end_date": "2026-07-10",
-      "price": 375,
-      "availability": "unknown"
-    },
-    {
-      "name": "Week 2",
-      "start_date": "2026-07-13",
-      "end_date": "2026-07-17",
-      "price": 375,
-      "availability": "unknown"
-    },
-    {
-      "name": "Week 3",
-      "start_date": "2026-07-20",
-      "end_date": "2026-07-24",
-      "price": 375,
-      "availability": "unknown"
-    },
-    {
-      "name": "Week 4",
-      "start_date": "2026-07-27",
-      "end_date": "2026-07-31",
-      "price": 375,
-      "availability": "unknown"
-    }
-  ],
   "sources": [
     {
       "url": "https://www.windhamacademy.net/summer-camp",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -71,14 +41,13 @@
         "price_per",
         "extended_care",
         "refund_policy_summary",
-        "special_needs_notes",
-        "sessions"
+        "special_needs_notes"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "2026 pricing; $375 per week regular, $350 early bird, $25 off per additional sibling, extended hour $100/week. camp_type day is inferred from the 3-4 PM extended hour."
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.windhamacademy.net/summer-camp",
       "kind": "html",
@@ -158,6 +127,21 @@
         "quote": "$375 per week"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.windhamacademy.net/summer-camp",
+        "https://www.windhamacademy.net/product-page/summer-camp-2026-week-1"
+      ],
+      "changes": [
+        "Removed all four sessions: the page lists Week 1 to Week 4 with no dates, and the 'July 6 - 31, 2026' line the draft relied on is no longer on the page (week product pages now return 404)",
+        "Added the $50 registration fee amount to refund_policy_summary",
+        "Description now says 2027 details are not posted yet (page: 'More information coming soon for 2027!')"
+      ],
+      "open_questions": [
+        "The page gives 2026 prices but no dates, hours or activities, and never says campers go home each day (day is inferred from the 3-4 PM extended hour). Publish this thin listing as a day camp, or hold until Windham Academy posts 2027 details?"
+      ]
+    }
   }
 }

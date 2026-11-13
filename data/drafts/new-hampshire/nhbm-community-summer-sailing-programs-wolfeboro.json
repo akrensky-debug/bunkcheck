@@ -1,50 +1,72 @@
 {
   "slug": "nhbm-community-summer-sailing-programs-wolfeboro",
-  "name": "NHBM Community Summer Sailing Programs",
-  "operator_name": "New Hampshire Boat Museum (with Wolfeboro Parks and Recreation Department)",
-  "website_url": "https://www.nhbm.org/press/registration-open-for-community-summer-sailing-programs/",
+  "name": "NHBM Community Sailing Program",
+  "operator_name": "New Hampshire Boat Museum (with Wolfeboro and Tuftonboro Parks and Recreation)",
+  "website_url": "https://www.nhbm.org/community-sailing/",
   "email": "museum@nhbm.org",
-  "phone": "(603) 569-4554",
+  "phone": "603-569-5639",
   "city": "Wolfeboro",
   "state": "NH",
   "zip": null,
   "camp_type": "specialty",
   "primary_categories": [
-    "sports",
-    "nature"
+    "sailing"
   ],
-  "description_short": "Sailing lessons for kids and adults, run by the New Hampshire Boat Museum with Wolfeboro Parks and Recreation. Youth start in Optimist dinghies at Albee Beach on Lake Wentworth in Wolfeboro, and keelboat classes for ages 16 and up are held at 19 Mile Bay on Lake Winnipesaukee in Tuftonboro.",
+  "description_short": "Youth sailing lessons for ages 9-16 run by the New Hampshire Boat Museum with Wolfeboro Parks and Recreation at Albee Beach on Lake Wentworth. Beginners start in Optimist dinghies and move to Sunfish; advanced youth can race. Classes run Monday to Thursday, with Friday as a rain date or free sail day.",
   "activities": [
-    "Sailing (Optimist dinghies, youth)",
-    "Sailing (Sunfish, adults)",
-    "Youth racing instruction",
-    "Keelboat sailing (ages 16+)"
+    "Sailing in Optimist dinghies (beginners)",
+    "Sunfish sailing (intermediate)",
+    "Boat handling and knots",
+    "Youth racing instruction"
   ],
-  "swim_waterfront_notes": "Lake-based. Youth and adult dinghy classes are at Albee Beach on Lake Wentworth (Wolfeboro). Keelboat classes are at 19 Mile Bay on Lake Winnipesaukee (Tuftonboro), taught by US Sailing-certified instructors. The source gives no swim test or life jacket rules.",
+  "swim_waterfront_notes": "Classes are on Lake Wentworth at Albee Beach, taught by US Sailing certified instructors. Youth sailors must pass the program's own swim test (no certificate substitutes) and be able to climb back onto a boat in deep water.",
   "season_year": 2026,
   "sources": [
     {
-      "url": "https://www.nhbm.org/press/registration-open-for-community-summer-sailing-programs/",
-      "checked": "2026-10-13",
+      "url": "https://www.nhbm.org/community-sailing/",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
         "website_url",
-        "email",
+        "registration_url",
         "phone",
         "city",
         "state",
         "camp_type",
-        "primary_categories",
-        "activities",
+        "primary_categories"
+      ]
+    },
+    {
+      "url": "https://www.nhbm.org/cs-class/youth-sailing/",
+      "checked": "2026-11-13",
+      "fields": [
         "description_short",
+        "activities"
+      ]
+    },
+    {
+      "url": "https://www.nhbm.org/sailing-qualifications-and-requirements/",
+      "checked": "2026-11-13",
+      "fields": [
+        "age_min",
+        "age_max",
         "swim_waterfront_notes"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
+    },
+    {
+      "url": "https://www.nhbm.org/press/registration-open-for-community-summer-sailing-programs/",
+      "checked": "2026-11-13",
+      "fields": [
+        "email"
+      ]
     }
   ],
+  "registration_url": "https://wolfeboro.recdesk.com/Community/Home",
+  "age_min": 9,
+  "age_max": 16,
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.nhbm.org/press/registration-open-for-community-summer-sailing-programs/",
       "kind": "html",
@@ -79,6 +101,29 @@
     ],
     "errors": [
       "missing required zip"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.nhbm.org/press/registration-open-for-community-summer-sailing-programs/",
+        "https://www.nhbm.org/community-sailing/",
+        "https://www.nhbm.org/cs-class/youth-sailing/",
+        "https://www.nhbm.org/sailing-qualifications-and-requirements/",
+        "https://www.nhbm.org/cs-class/adult-learn-sail-keelboats/",
+        "https://wolfeboro.recdesk.com/Community/Home"
+      ],
+      "changes": [
+        "Moved website_url from the April 2026 press release to the museum's Community Sailing page.",
+        "Refocused the listing on the youth program: ages 9-16 from the Qualifications page, Monday to Thursday classes from the Youth Sailing page; dropped adult Sunfish and keelboat (16+) activities.",
+        "primary_categories changed to sailing.",
+        "Phone changed to Wolfeboro Parks and Recreation (603-569-5639), which the page says to call to register; registration_url set to the Wolfeboro RecDesk site the page links.",
+        "Swim notes now give the required swim test from the Qualifications page.",
+        "Zip is still empty: the sailing site (Albee Beach, Beach Road off Route 28) has no street address and Wolfeboro has more than one ZIP name (Wolfeboro 03894, Wolfeboro Falls 03896)."
+      ],
+      "open_questions": [
+        "No zip, so it can't publish yet: use 03894 for Albee Beach in Wolfeboro?",
+        "No dates or prices on the museum's site or on Wolfeboro RecDesk (nothing posted for summer yet). Is a lesson program with no posted schedule worth listing now, or hold until spring 2027?"
+      ]
+    }
   }
 }
