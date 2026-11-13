@@ -1,8 +1,8 @@
 {
   "slug": "camp-timanous-raymond",
   "name": "Camp Timanous",
-  "operator_name": "Camp Timanous (501(c)3 non-profit)",
-  "website_url": "https://www.timanous.org/faq.html",
+  "operator_name": "Camp Timanous",
+  "website_url": "https://www.timanous.org/",
   "registration_url": "https://timanous.campintouch.com/ui/forms/application/camper/App",
   "phone": "207-655-4569",
   "street_address": "85 Plains Road",
@@ -15,19 +15,43 @@
     "arts",
     "nature"
   ],
+  "gender_policy": "boys",
   "description_short": "Boys' summer camp in Raymond, Maine, with a seven-week full season or two half sessions. Tuition covers activities such as woodshop, crafts, waterskiing and camping trips, plus laundry, health insurance and the yearbook.",
   "activities": [
-    "woodshop",
-    "crafts",
-    "waterskiing",
-    "entertainment",
-    "camping trips"
+    "Archery",
+    "Basketball",
+    "Baseball",
+    "Canoeing",
+    "Disc golf",
+    "Drama",
+    "Fishing",
+    "Handicrafts",
+    "Kayaking",
+    "Lacrosse",
+    "Music",
+    "Nature",
+    "Paddleboarding",
+    "Ping pong",
+    "Pickleball",
+    "Riflery",
+    "Running",
+    "Sailing",
+    "Soccer",
+    "Softball",
+    "Swimming",
+    "Tennis",
+    "Ultimate frisbee",
+    "Volleyball",
+    "Waterskiing",
+    "Wakeboarding",
+    "Woodshop",
+    "Camping trips"
   ],
   "price_min": 8900,
   "price_max": 13400,
   "financial_aid": true,
   "refund_policy_summary": "Full refund of all money paid, minus a $200 administrative fee, through March 1. After that, refunds are made only if another camper fills the spot. Tuition insurance (Program Protector) is available through CampMinder.",
-  "swim_waterfront_notes": "Waterskiing is listed among the activities covered by tuition. The page gives no other swim or waterfront details.",
+  "swim_waterfront_notes": "Activities include swimming, sailing, canoeing, kayaking, paddleboarding, waterskiing and wakeboarding. The site gives no details on lifeguards or swim tests.",
   "season_year": 2027,
   "sessions": [
     {
@@ -54,34 +78,40 @@
   ],
   "sources": [
     {
+      "url": "https://www.timanous.org/",
+      "checked": "2026-11-13",
+      "fields": [
+        "website_url",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "swim_waterfront_notes"
+      ]
+    },
+    {
       "url": "https://www.timanous.org/faq.html",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
-        "website_url",
         "registration_url",
         "phone",
         "street_address",
         "city",
         "state",
         "zip",
-        "camp_type",
-        "primary_categories",
-        "activities",
+        "gender_policy",
         "description_short",
         "price_min",
         "price_max",
         "financial_aid",
         "refund_policy_summary",
-        "swim_waterfront_notes",
         "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.timanous.org/faq.html",
       "kind": "html",
@@ -119,6 +149,24 @@
         "quote": "woodshop, crafts, waterskiing, entertainment, camping trips"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.timanous.org/faq.html",
+        "https://www.timanous.org/",
+        "https://www.timanous.org/contact-us.html"
+      ],
+      "changes": [
+        "Changed website_url from the FAQ page to the home page, https://www.timanous.org/.",
+        "Set operator_name to plain 'Camp Timanous'; the nonprofit status stays out of the name.",
+        "Set gender_policy to boys; the Summer Info page speaks only of sons and boys.",
+        "Replaced the activity list with the 27 activities on the home page, plus camping trips from the tuition note.",
+        "Rewrote swim_waterfront_notes from the home page's activity list (swimming, sailing, canoeing, kayaking, paddleboarding, waterskiing, wakeboarding).",
+        "Checked the 2027 dates (June 24 to August 11; halves end July 17 and start July 19), $13,400 and $8,900 prices, camperships, refund policy and summer address against the Summer Info page; they match.",
+        "Email stays empty: the site hides it behind an email-protection script. Ages stay null: no page states them. ACA left unset: the footer claims it but it was not checked on acacamps.org."
+      ],
+      "open_questions": []
+    }
   }
 }

@@ -2,15 +2,18 @@
   "slug": "camp-takajo",
   "name": "Camp Takajo",
   "website_url": "https://www.camptakajo.com/",
+  "email": "info@camptakajo.com",
   "phone": "(207) 693-6675",
-  "city": null,
+  "street_address": "60 Takajo Road",
+  "city": "Naples",
   "state": "ME",
-  "zip": null,
+  "zip": "04055",
   "camp_type": "sleepaway",
   "primary_categories": [
     "sports"
   ],
-  "description_short": "Camp Takajo is a summer camp for boys in Maine, near the Portland area. Parents use an online myTakajo account for forms, emailing their son, and viewing camp photos and news.",
+  "gender_policy": "boys",
+  "description_short": "Camp Takajo is a full-season overnight camp for boys in Naples, Maine, founded in 1947. The 2027 season runs about seven weeks, with sports, waterfront, hobbies, skills and pioneering.",
   "activities": [
     "Sports",
     "Waterfront",
@@ -18,25 +21,62 @@
     "Skills",
     "Pioneering"
   ],
+  "price_min": 18200,
+  "price_max": 18200,
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Full Season",
+      "start_date": "2027-06-26",
+      "end_date": "2027-08-12",
+      "price": 18200,
+      "availability": "unknown"
+    }
+  ],
   "sources": [
     {
-      "url": "http://www.takajo.com/parents/",
-      "checked": "2026-10-13",
+      "url": "https://www.camptakajo.com/",
+      "checked": "2026-11-13",
+      "fields": [
+        "website_url",
+        "camp_type"
+      ]
+    },
+    {
+      "url": "https://www.camptakajo.com/contact/",
+      "checked": "2026-11-13",
+      "fields": [
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip"
+      ]
+    },
+    {
+      "url": "https://www.camptakajo.com/about/",
+      "checked": "2026-11-13",
+      "fields": [
+        "gender_policy",
+        "primary_categories",
+        "activities"
+      ]
+    },
+    {
+      "url": "https://www.camptakajo.com/about/dates-tuition/",
+      "checked": "2026-11-13",
       "fields": [
         "name",
-        "website_url",
-        "phone",
-        "state",
-        "camp_type",
-        "primary_categories",
-        "activities",
-        "description_short"
-      ],
-      "note": "Drafted by the listing tool from this page"
+        "description_short",
+        "price_min",
+        "price_max",
+        "sessions"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "http://www.takajo.com/parents/",
       "kind": "html",
@@ -89,6 +129,27 @@
       "missing required zip",
       "missing required season_year",
       "city None, ME is not in cities.py"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "http://www.takajo.com/parents/",
+        "https://www.camptakajo.com/about/dates-tuition/",
+        "https://www.camptakajo.com/contact/",
+        "https://www.camptakajo.com/about/",
+        "https://www.camptakajo.com/about/bunk-life/",
+        "https://www.camptakajo.com/"
+      ],
+      "changes": [
+        "Moved the source off the parents' login page to the camp's own dates, contact, about and home pages.",
+        "Filled city Naples, ZIP 04055, street 60 Takajo Road and email info@camptakajo.com from the contact page.",
+        "Added the 2027 full season (June 26 to August 12, 2027) at $18,200 and set price_min, price_max and season_year 2027 from the Dates & Tuition page.",
+        "Set gender_policy to boys; the about and dates pages call it a boys' camp.",
+        "camp_type sleepaway now rests on the home page title, which calls it a summer overnight camp.",
+        "Rewrote the description: it said the camp is near Portland and talked about the parent account; it now says Naples and gives the season.",
+        "Left ages null: no page gives an age or grade range. Left ACA unset: the footer claims it but it was not checked on acacamps.org."
+      ],
+      "open_questions": []
+    }
   }
 }

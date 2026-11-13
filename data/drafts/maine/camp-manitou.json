@@ -2,46 +2,149 @@
   "slug": "camp-manitou",
   "name": "Camp Manitou",
   "website_url": "https://campmanitou.com/",
+  "registration_url": "https://manitou.campintouch.com/ui/forms/application/camper/App",
+  "email": "mailbox@campmanitou.com",
   "phone": "(207) 465-2271",
-  "city": null,
+  "street_address": "47 Camp Manitou Cove",
+  "city": "Oakland",
   "state": "ME",
-  "zip": null,
+  "zip": "04963",
   "camp_type": "sleepaway",
   "primary_categories": [
     "sports",
-    "arts"
+    "arts",
+    "performing_arts"
   ],
+  "activities": [
+    "baseball",
+    "basketball",
+    "soccer",
+    "lacrosse",
+    "tennis",
+    "golf",
+    "roller hockey",
+    "archery",
+    "BMX",
+    "climbing tower",
+    "ropes course",
+    "swimming",
+    "sailing",
+    "water-skiing",
+    "wakeboarding",
+    "canoeing and kayaking",
+    "fishing",
+    "theater",
+    "ceramics",
+    "computer animation",
+    "radio",
+    "culinary"
+  ],
+  "gender_policy": "boys",
   "age_min": 7,
   "age_max": 16,
-  "description_short": "Camp Manitou is a summer camp for boys ages 7 to 16 in the Belgrade Lakes region of Maine, founded in 1947. It offers sports, arts and water activities.",
-  "activities": [
-    "Sports",
-    "Arts",
-    "Water activities",
-    "Swimming",
-    "Boating"
+  "description_short": "Overnight camp for boys ages 7 to 16 on East Pond in the Belgrade Lakes region, with an address in Oakland, Maine. Boys plan their own schedules across land sports, water sports and creative arts such as theater, radio and animation, in 3-week half sessions or a 7-week full session.",
+  "price_min": 10950,
+  "price_max": 18350,
+  "price_per": "session",
+  "transportation": true,
+  "meals_included": true,
+  "swim_waterfront_notes": "Camp is on East Pond. Sixteen instructional water activities include swimming, competitive swimming, sailing, water-skiing, wakeboarding, canoeing, kayaking and fishing. CPR, basic rescue and advanced lifesaving courses are offered.",
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "First Session",
+      "start_date": "2027-06-24",
+      "end_date": "2027-07-16",
+      "price": 10950,
+      "availability": "unknown"
+    },
+    {
+      "name": "Second Session",
+      "start_date": "2027-07-19",
+      "end_date": "2027-08-10",
+      "price": 10950,
+      "availability": "unknown"
+    },
+    {
+      "name": "Full Session",
+      "start_date": "2027-06-24",
+      "end_date": "2027-08-10",
+      "price": 18350,
+      "availability": "unknown"
+    }
   ],
   "sources": [
     {
       "url": "https://campmanitou.com/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "website_url",
         "phone",
         "state",
         "camp_type",
-        "primary_categories",
-        "activities",
+        "gender_policy",
         "age_min",
         "age_max",
+        "primary_categories",
         "description_short"
+      ]
+    },
+    {
+      "url": "https://campmanitou.com/sessions",
+      "checked": "2026-11-13",
+      "fields": [
+        "registration_url",
+        "email",
+        "price_min",
+        "price_max",
+        "price_per",
+        "sessions"
+      ]
+    },
+    {
+      "url": "https://campmanitou.com/contact",
+      "checked": "2026-11-13",
+      "fields": [
+        "street_address",
+        "city",
+        "zip"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Summer address: 47 Camp Manitou Cove, Oakland, Maine 04963"
+    },
+    {
+      "url": "https://campmanitou.com/prospective-families/activities",
+      "checked": "2026-11-13",
+      "fields": [
+        "activities"
+      ],
+      "note": "Activities from the landsports, watersports and creative arts pages linked here"
+    },
+    {
+      "url": "https://campmanitou.com/collections/activities/watersports",
+      "checked": "2026-11-13",
+      "fields": [
+        "swim_waterfront_notes"
+      ]
+    },
+    {
+      "url": "https://campmanitou.com/prospective-families/camp-food",
+      "checked": "2026-11-13",
+      "fields": [
+        "meals_included"
+      ]
+    },
+    {
+      "url": "https://campmanitou.com/current-families/travel-to-camp",
+      "checked": "2026-11-13",
+      "fields": [
+        "transportation"
+      ],
+      "note": "Escorted group flights and buses from Burlington MA, Port Chester NY and Fairfield CT, for a fee"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://campmanitou.com/",
       "kind": "html",
@@ -85,11 +188,29 @@
         "quote": "even go on a boat ride on the lake"
       }
     ],
-    "errors": [
-      "missing required city",
-      "missing required zip",
-      "missing required season_year",
-      "city None, ME is not in cities.py"
-    ]
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://campmanitou.com/",
+        "https://campmanitou.com/sessions",
+        "https://campmanitou.com/contact",
+        "https://campmanitou.com/current-families/directions",
+        "https://campmanitou.com/prospective-families/activities",
+        "https://campmanitou.com/collections/activities/watersports",
+        "https://campmanitou.com/collections/activities/landsports",
+        "https://campmanitou.com/collections/activities/creative-arts",
+        "https://campmanitou.com/prospective-families/camp-food",
+        "https://campmanitou.com/current-families/travel-to-camp"
+      ],
+      "changes": [
+        "Added the 2027 sessions from the sessions page: First June 24 to July 16 and Second July 19 to August 10 at $10,950 each, Full June 24 to August 10 at $18,350.",
+        "Added city Oakland, ZIP 04963 and street address 47 Camp Manitou Cove from the contact page (camp is on East Pond in the Belgrade Lakes).",
+        "Added gender_policy boys (homepage: summer camp for boys ages 7 to 16).",
+        "Added email, application link, transportation (group flights and buses), meals and waterfront notes; replaced the vague activities with the camp's own activity lists.",
+        "Ages stay 7 to 16 from Manitou's homepage; the short-session sister program Camp Eastwood (finishing 4th grade and younger) was not used for ages."
+      ],
+      "open_questions": []
+    }
   }
 }

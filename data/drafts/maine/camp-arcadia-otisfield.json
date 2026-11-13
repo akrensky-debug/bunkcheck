@@ -62,10 +62,15 @@
       "availability": "unknown"
     }
   ],
+  "gender_policy": "girls",
+  "age_min": 7,
+  "age_max": 17,
+  "aca_accredited": true,
+  "aca_source_url": "https://www.camparcadia.com/aca-accredited",
   "sources": [
     {
       "url": "https://www.camparcadia.com/dates-rates",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "website_url",
@@ -86,11 +91,30 @@
         "refund_policy_summary",
         "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "2027 dates, tuition, grades, deposit, cancellation terms, contact block"
+    },
+    {
+      "url": "https://www.camparcadia.com/",
+      "checked": "2026-11-13",
+      "fields": [
+        "gender_policy",
+        "age_min",
+        "age_max"
+      ],
+      "note": "Home page: girls summer camp for ages 7 to 17"
+    },
+    {
+      "url": "https://www.camparcadia.com/aca-accredited",
+      "checked": "2026-11-13",
+      "fields": [
+        "aca_accredited",
+        "aca_source_url"
+      ],
+      "note": "Camp's own accreditation page states it is accredited by the American Camp Association"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.camparcadia.com/dates-rates",
       "kind": "html",
@@ -122,6 +146,20 @@
         "quote": "ACA Accredited"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.camparcadia.com/dates-rates",
+        "https://www.camparcadia.com/",
+        "https://www.camparcadia.com/aca-accredited"
+      ],
+      "changes": [
+        "Checked all 6 sessions, tuition, grades, deposit, cancellation and contact details against the 2027 Dates and Rates page; all match.",
+        "Added gender_policy girls and ages 7 to 17 from the home page (the camp's own page, consistent with grades 1 to 11).",
+        "Added aca_accredited true with the camp's own accreditation page as aca_source_url; not cross-checked on acacamps.org."
+      ],
+      "open_questions": []
+    }
   }
 }

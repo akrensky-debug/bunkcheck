@@ -3,8 +3,8 @@
   "name": "Hidden Valley Camp",
   "website_url": "https://hiddenvalleycamp.com",
   "registration_url": "https://hiddenvalleycamp.com/enroll",
-  "phone": "+1-207-342-5177",
-  "street_address": "161 Hidden Valley Road",
+  "phone": "(207) 342-5177",
+  "street_address": "161 Hidden Valley Rd.",
   "city": "Freedom",
   "state": "ME",
   "zip": "04941",
@@ -13,13 +13,28 @@
     "arts",
     "nature"
   ],
-  "description_short": "Overnight camp in Freedom, Maine. Most campers stay for a roughly four-week session, and there are teen programs in wilderness travel, advanced arts and counselor training. Tuition covers almost everything. Some travel to and from camp and optional riding lessons cost extra.",
+  "description_short": "Overnight camp on 350 acres with a private lake in Freedom, Maine, for ages 8 to 14, with teen programs (adventure trips, advanced arts, counselor training, apprenticeships) for 14 to 17. Known for arts such as glass and ceramics, plus animals, riding, water sports and outdoor trips. Most campers stay one roughly four-week session; tuition is all-inclusive.",
   "activities": [
-    "Wilderness adventures (teens)",
-    "Creative arts",
-    "Horseback riding lessons (optional, extra charge)",
-    "Counselor training (AWACs)",
-    "Apprenticeships in camp program areas"
+    "glass and ceramics",
+    "creative arts",
+    "performing arts",
+    "dance",
+    "music",
+    "horseback riding (lessons extra)",
+    "canoeing",
+    "kayaking",
+    "windsurfing",
+    "fishing",
+    "swim instruction",
+    "ropes course",
+    "mountain biking",
+    "tennis",
+    "llama treks",
+    "organic gardening",
+    "hikes and campouts",
+    "teen wilderness trips (Hidden Valley Adventures)",
+    "counselor training (AWACs)",
+    "apprenticeships"
   ],
   "price_min": 5350,
   "price_max": 15900,
@@ -32,121 +47,176 @@
       "start_date": "2027-06-27",
       "end_date": "2027-07-22",
       "price": 8925,
-      "availability": "open"
+      "availability": "unknown"
     },
     {
       "name": "2nd Session",
       "start_date": "2027-07-25",
       "end_date": "2027-08-19",
       "price": 8925,
-      "availability": "open"
+      "availability": "unknown"
     },
     {
       "name": "1.5 Sessions (early)",
       "start_date": "2027-06-27",
       "end_date": "2027-08-06",
       "price": 12950,
-      "availability": "open"
+      "availability": "unknown"
     },
     {
       "name": "1.5 Sessions (late)",
       "start_date": "2027-07-09",
       "end_date": "2027-08-19",
       "price": 12950,
-      "availability": "open"
+      "availability": "unknown"
     },
     {
       "name": "Double Session (Full Summer)",
       "start_date": "2027-06-27",
       "end_date": "2027-08-19",
       "price": 15900,
-      "availability": "open"
+      "availability": "unknown"
     },
     {
       "name": "Half Session (Intro, new campers only) A",
       "start_date": "2027-06-27",
       "end_date": "2027-07-09",
       "price": 5350,
-      "availability": "open"
+      "availability": "unknown"
     },
     {
       "name": "Half Session (Intro, new campers only) B",
       "start_date": "2027-07-09",
       "end_date": "2027-07-22",
       "price": 5350,
-      "availability": "open"
+      "availability": "unknown"
     },
     {
       "name": "Half Session (Intro, new campers only) C",
       "start_date": "2027-07-25",
       "end_date": "2027-08-06",
       "price": 5350,
-      "availability": "open"
+      "availability": "unknown"
     },
     {
       "name": "Half Session (Intro, new campers only) D",
       "start_date": "2027-08-06",
       "end_date": "2027-08-19",
       "price": 5350,
-      "availability": "open"
+      "availability": "unknown"
     },
     {
-      "name": "Hidden Valley Arts – 1st Session",
+      "name": "Hidden Valley Arts – 1st Session (ages 14-16)",
       "start_date": "2027-06-27",
       "end_date": "2027-07-22",
       "price": 8925,
       "availability": "unknown"
     },
     {
-      "name": "Hidden Valley Arts – 2nd Session",
+      "name": "Hidden Valley Arts – 2nd Session (ages 14-16)",
       "start_date": "2027-07-25",
       "end_date": "2027-08-19",
       "price": 8925,
       "availability": "unknown"
     },
     {
-      "name": "Hidden Valley Apprentices – 1st Session",
+      "name": "Hidden Valley Apprentices – 1st Session (ages 15-17, former campers)",
       "start_date": "2027-06-27",
       "end_date": "2027-07-22",
       "price": 8925,
       "availability": "unknown"
     },
     {
-      "name": "Hidden Valley Apprentices – 2nd Session",
+      "name": "Hidden Valley Apprentices – 2nd Session (ages 15-17, former campers)",
       "start_date": "2027-07-25",
       "end_date": "2027-08-19",
       "price": 8925,
+      "availability": "waitlist"
+    },
+    {
+      "name": "Hidden Valley Adventures – 1st Session (ages 14-16)",
+      "start_date": "2027-06-27",
+      "end_date": "2027-07-22",
+      "price": 9300,
+      "availability": "waitlist"
+    },
+    {
+      "name": "Hidden Valley Adventures – 2nd Session (ages 14-16)",
+      "start_date": "2027-07-25",
+      "end_date": "2027-08-19",
+      "price": 9300,
       "availability": "unknown"
     }
   ],
   "sources": [
     {
       "url": "https://hiddenvalleycamp.com/parents/dates-and-tuition",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "website_url",
         "registration_url",
-        "phone",
         "street_address",
         "city",
         "state",
         "zip",
         "camp_type",
-        "primary_categories",
-        "activities",
-        "description_short",
         "price_min",
         "price_max",
-        "transportation",
         "financial_aid",
         "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
+    },
+    {
+      "url": "https://hiddenvalleycamp.com/about",
+      "checked": "2026-11-13",
+      "fields": [
+        "age_min",
+        "age_max",
+        "primary_categories",
+        "secondary_categories",
+        "description_short"
+      ]
+    },
+    {
+      "url": "https://hiddenvalleycamp.com/programs",
+      "checked": "2026-11-13",
+      "fields": [
+        "activities",
+        "swim_waterfront_notes"
+      ]
+    },
+    {
+      "url": "https://hiddenvalleycamp.com/parents/faq",
+      "checked": "2026-11-13",
+      "fields": [
+        "transportation",
+        "aca_accredited",
+        "aca_source_url"
+      ]
+    },
+    {
+      "url": "https://hiddenvalleycamp.com/contact",
+      "checked": "2026-11-13",
+      "fields": [
+        "email",
+        "phone"
+      ]
     }
   ],
+  "email": "summer@hiddenvalleycamp.com",
+  "age_min": 8,
+  "age_max": 17,
+  "secondary_categories": [
+    "outdoor",
+    "performing_arts",
+    "swimming"
+  ],
+  "swim_waterfront_notes": "Private lake for canoeing, windsurfing, fishing and kayaking, plus a 75 by 25 foot heated pool with swim instruction at all levels. Red Cross lifeguards, buddy system, swim evaluations on opening day, life jackets while boating.",
+  "aca_accredited": true,
+  "aca_source_url": "https://hiddenvalleycamp.com/parents/faq",
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://hiddenvalleycamp.com/parents/dates-and-tuition",
       "kind": "html",
@@ -198,6 +268,27 @@
         "quote": "For ages 15-17. Candidates must be a former camper ... 1st and 2nd Session $6,700"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://hiddenvalleycamp.com/parents/dates-and-tuition",
+        "https://hiddenvalleycamp.com/about",
+        "https://hiddenvalleycamp.com/programs",
+        "https://hiddenvalleycamp.com/parents/faq",
+        "https://hiddenvalleycamp.com/contact"
+      ],
+      "changes": [
+        "Checked every 2027 session date and price on the Dates & Tuition page; all match.",
+        "Set availability to unknown on all sessions ('registration is open' does not mean a session has room), and waitlist on Apprentices 2nd session, which the page marks full.",
+        "Added Hidden Valley Adventures 1st and 2nd session at $9,300 (1st marked full, waitlist available); left out the $5,525 Adventures half sessions because no dates are given.",
+        "Added ages 8 to 17 from the About page (camp for 8 to 14, teen programs 14 to 17) and labeled teen sessions with their ages.",
+        "Added email summer@hiddenvalleycamp.com from the Contact page and formatted the phone.",
+        "Added ACA accreditation, which the camp states on every page (Accredited for 40+ years), and transportation from the FAQ (buses from NY, CT, Boston; Portland and Boston airport pickups).",
+        "Added swim and waterfront notes, secondary categories and a fuller activity list from the Programs page, and rewrote the description.",
+        "Did not set meals_included or gender_policy: the pages don't state them outright."
+      ],
+      "open_questions": []
+    }
   }
 }

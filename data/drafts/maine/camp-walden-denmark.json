@@ -14,6 +14,7 @@
     "sports",
     "nature"
   ],
+  "gender_policy": "girls",
   "age_min": 8,
   "age_max": 15,
   "description_short": "A 7-week traditional overnight summer camp for girls ages 8–15 in Denmark, Maine, running since 1916. Activities include wilderness trips, horseback riding, tennis, sailing and water skiing.",
@@ -25,6 +26,7 @@
     "water skiing",
     "ropes course"
   ],
+  "price_min": 16000,
   "price_max": 16000,
   "season_year": 2027,
   "sessions": [
@@ -39,7 +41,7 @@
   "sources": [
     {
       "url": "https://campwalden.com/dates-rates/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "website_url",
@@ -57,13 +59,14 @@
         "age_max",
         "description_short",
         "price_max",
-        "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+        "sessions",
+        "gender_policy",
+        "price_min"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://campwalden.com/dates-rates/",
       "kind": "html",
@@ -96,6 +99,20 @@
         "quote": "wilderness trips, horseback riding, tennis, sailing and water skiing"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://campwalden.com/dates-rates/",
+        "https://campwalden.com/explore-walden/rookie-camp/"
+      ],
+      "changes": [
+        "Added gender_policy girls from the dates page footer ('a close-knit community of girls, ages 8 to 15').",
+        "Added price_min 16000 to match the one posted tuition (7 weeks, $16,000).",
+        "Checked the 2027 dates (June 25 to August 13), tuition, ages 8 to 15, address and phone against the Dates & Rates page; they match.",
+        "Left Rookie Camp out of sessions: its page lists only 2026 dates (July 17 to 20 and July 31 to August 3, $450, for rising 1st to 3rd graders), and the listing is for 2027."
+      ],
+      "open_questions": []
+    }
   }
 }

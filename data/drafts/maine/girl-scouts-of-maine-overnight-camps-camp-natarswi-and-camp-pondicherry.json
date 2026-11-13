@@ -46,6 +46,7 @@
     "Junior Maine Guide program (Natarswi)",
     "Wilderness expedition (off-site)"
   ],
+  "gender_policy": "girls",
   "price_min": 400,
   "price_max": 3050,
   "financial_aid": true,
@@ -464,13 +465,11 @@
   "sources": [
     {
       "url": "https://www.girlscoutsofmaine.org/content/dam/girlscoutsofmaine-redesign/documents/marketing-and-communications/Camp_Guide.pdf",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
         "website_url",
-        "registration_url",
-        "email",
         "phone",
         "state",
         "camp_type",
@@ -487,11 +486,20 @@
         "swim_waterfront_notes",
         "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Camp Guide 2026"
+    },
+    {
+      "url": "https://www.girlscoutsofmaine.org/campregistration",
+      "checked": "2026-11-13",
+      "fields": [
+        "registration_url",
+        "email",
+        "gender_policy"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.girlscoutsofmaine.org/content/dam/girlscoutsofmaine-redesign/documents/marketing-and-communications/Camp_Guide.pdf",
       "kind": "pdf",
@@ -523,6 +531,25 @@
       "missing required city",
       "missing required zip",
       "city None, ME is not in cities.py"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.girlscoutsofmaine.org/content/dam/girlscoutsofmaine-redesign/documents/marketing-and-communications/Camp_Guide.pdf",
+        "https://www.girlscoutsofmaine.org/campregistration"
+      ],
+      "changes": [
+        "Checked all 58 sessions, grades and member prices against the 2026 Camp Guide tables for Pondicherry and Natarswi; they match.",
+        "Checked the refund policy, $40 deposit, camperships, Natarswi bus ($40 each way from Bangor) and the 888-922-4763 number in the guide; they match.",
+        "Added gender_policy girls: the registration page says the camps are open to all girls, membership not required.",
+        "Moved registration_url and email to the registration page as their source.",
+        "Still no city or ZIP, so the validator fails: missing city and ZIP.",
+        "The 2027 registration page says registration opens January 13, 2027, the 2027 guide is coming soon, and members now get 10% off rather than a separate member price."
+      ],
+      "open_questions": [
+        "This listing covers two camps in two towns: Camp Pondicherry in Bridgton and Camp Natarswi in Millinocket (Baxter State Park). Both towns are in cities.py. Split it into two listings, one per camp, each with its own sessions? Neither camp's street address or ZIP is on the pages I opened, so each split listing would also need a ZIP source.",
+        "Publish the 2026 sessions now, or wait for the 2027 Camp Guide (registration opens January 13, 2027, with a new 10% member discount instead of the member/non-member price table)?"
+      ]
+    }
   }
 }

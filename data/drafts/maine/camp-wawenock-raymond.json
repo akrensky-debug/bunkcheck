@@ -17,6 +17,7 @@
     "performing_arts",
     "nature"
   ],
+  "gender_policy": "girls",
   "grade_min": 2,
   "grade_max": 10,
   "description_short": "All-girls overnight camp in Raymond, Maine. It offers a 7-week full season, two half seasons, and shorter introductory programs for younger girls (Wayseeker, 2 weeks, and Wonder Week, 1 week).",
@@ -80,7 +81,7 @@
   "sources": [
     {
       "url": "https://campwawenock.com/about-us/dates-rates/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -102,13 +103,13 @@
         "price_max",
         "refund_policy_summary",
         "swim_waterfront_notes",
-        "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+        "sessions",
+        "gender_policy"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://campwawenock.com/about-us/dates-rates/",
       "kind": "html",
@@ -133,6 +134,18 @@
       "Uniform cost"
     ],
     "low_confidence": [],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://campwawenock.com/about-us/dates-rates/"
+      ],
+      "changes": [
+        "Added gender_policy girls; the page header reads 'All-Girls Summer Camp in Maine'.",
+        "Checked all five 2027 sessions and prices (Full $13,700, halves $9,500, Wayseeker $6,000, Wonder Week $2,900), grades (entering 2nd to entering 10th), deposit refund by February 1, add-on fees and address against the Dates & Rates page; they match.",
+        "The early registration rate in the old warning is no longer on the page; the listed prices are the current ones."
+      ],
+      "open_questions": []
+    }
   }
 }

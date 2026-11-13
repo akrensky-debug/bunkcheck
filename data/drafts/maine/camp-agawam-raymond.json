@@ -17,9 +17,7 @@
   "age_max": 15,
   "description_short": "An overnight summer camp for boys in Raymond, Maine, with 7-week and 3.5-week sessions and a Senior Club leadership program for former campers. Tuition covers meals, weekly laundry and most activities.",
   "activities": [
-    "Canoe trips",
-    "Hiking trips",
-    "Tennis",
+    "Trips to Acadia, Allagash (canoe), Rangeley Lakes, Mt. Katahdin, Mt. Washington and Moosehead",
     "Lifeguard certification (Senior Club)",
     "Wilderness first aid certification (Senior Club)"
   ],
@@ -76,17 +74,15 @@
   "sources": [
     {
       "url": "https://campagawam.org/enrollment-and-pricing/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
-        "website_url",
         "registration_url",
         "phone",
         "street_address",
         "city",
         "state",
         "zip",
-        "camp_type",
         "primary_categories",
         "activities",
         "age_min",
@@ -98,12 +94,21 @@
         "meals_included",
         "refund_policy_summary",
         "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
+    },
+    {
+      "url": "https://campagawam.org/",
+      "checked": "2026-11-13",
+      "fields": [
+        "website_url",
+        "camp_type",
+        "gender_policy",
+        "swim_waterfront_notes"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://campagawam.org/enrollment-and-pricing/",
       "kind": "html",
@@ -150,6 +155,25 @@
         "quote": "Allagash Canoe Trip, Rangeley Lakes, Mt. Katahdin"
       }
     ],
-    "errors": []
-  }
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://campagawam.org/enrollment-and-pricing/",
+        "https://campagawam.org/",
+        "https://campagawam.org/about-us/"
+      ],
+      "changes": [
+        "Confirmed 2027 sessions and tuition (7 weeks $13,550, 3.5 weeks $8,500 for ages 8-11 and $9,700 for 12-14, Senior Club $8,500), deposit and refund terms, optional transport, address and phone",
+        "Added gender_policy boys from the home page ('a residential summer camp for boys')",
+        "Replaced inferred activities (canoe trips, hiking, tennis) with the trips and certifications the page names",
+        "Added waterfront note (Crescent Lake, 165 acres) from the home page"
+      ],
+      "open_questions": [
+        "Age range 8-15 comes from the dates page (sessions for 8-11 and 12-14, Upper campus campers 13-15); no page states one overall range"
+      ]
+    }
+  },
+  "gender_policy": "boys",
+  "swim_waterfront_notes": "165-acre campus on Crescent Lake in Raymond."
 }

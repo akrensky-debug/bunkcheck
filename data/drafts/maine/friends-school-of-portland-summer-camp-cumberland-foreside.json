@@ -13,10 +13,21 @@
   "camp_type": "day",
   "age_min": 4,
   "age_max": 14,
-  "description_short": "Day camp at Friends School of Portland in Cumberland Foreside, Maine, with age groups Chickadee (4-5), Fox (6-8) and Crow (9-11), plus a Counselor in Training program for ages 12-14. Camp weeks run Monday to Friday, 8:30 am to 3:00 pm.",
+  "description_short": "Nature and arts day camp at Friends School of Portland, a Quaker school in Cumberland Foreside, Maine: Chickadee (ages 4-5), Fox (6-8) and Crow (9-11) groups plus a Counselor in Training program for 12-14. Weeks run Monday to Friday, 8:30 am to 3 pm; Crow Camp is outdoors all day and ends with a camping adventure week.",
   "activities": [
-    "Wilderness First Aid training (CIT)",
-    "Crow Camp Adventure Week"
+    "forest play",
+    "hikes",
+    "outdoor skills",
+    "stewardship",
+    "bird and plant identification",
+    "drawing",
+    "fort building",
+    "singing",
+    "sewing",
+    "plays and skits",
+    "watercolor painting",
+    "overnight camping trip (Crow Adventure Week)",
+    "Wilderness First Aid (CIT)"
   ],
   "price_per_week": 415,
   "price_min": 345,
@@ -30,69 +41,69 @@
       "start_date": "2026-06-15",
       "end_date": "2026-06-18",
       "price": 345,
-      "availability": "open"
+      "availability": "unknown"
     },
     {
       "name": "Week 2",
       "start_date": "2026-06-22",
       "end_date": "2026-06-26",
       "price": 415,
-      "availability": "waitlist"
+      "availability": "unknown"
     },
     {
       "name": "Week 3 (4-day week)",
       "start_date": "2026-06-29",
       "end_date": "2026-07-02",
       "price": 345,
-      "availability": "open"
+      "availability": "unknown"
     },
     {
       "name": "Week 4",
       "start_date": "2026-07-06",
       "end_date": "2026-07-10",
       "price": 415,
-      "availability": "waitlist"
+      "availability": "unknown"
     },
     {
       "name": "Week 5",
       "start_date": "2026-07-13",
       "end_date": "2026-07-17",
       "price": 415,
-      "availability": "waitlist"
+      "availability": "unknown"
     },
     {
       "name": "Week 6",
       "start_date": "2026-07-20",
       "end_date": "2026-07-24",
       "price": 415,
-      "availability": "open"
+      "availability": "unknown"
     },
     {
-      "name": "Week 7 (4-day week)",
+      "name": "Week 7 (4-day week; also Crow Camp Adventure Week, $585 for Crow campers)",
       "start_date": "2026-07-27",
       "end_date": "2026-07-30",
       "price": 345,
-      "availability": "waitlist"
+      "availability": "unknown"
     },
     {
       "name": "CIT Week 1 (First Aid Training Day / Wilderness First Aid)",
       "start_date": "2026-06-26",
       "end_date": "2026-06-26",
       "price": 450,
-      "availability": "open"
+      "availability": "unknown"
     },
     {
       "name": "CIT Week 2",
       "start_date": "2026-06-29",
       "end_date": "2026-07-02",
       "price": 345,
-      "availability": "open"
+      "availability": "unknown"
     }
   ],
   "sources": [
     {
       "url": "https://www.friendsschoolportland.org/new-page-2",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -105,22 +116,35 @@
         "state",
         "zip",
         "camp_type",
-        "activities",
         "age_min",
         "age_max",
-        "description_short",
         "price_min",
         "price_max",
         "price_per_week",
         "price_per",
         "financial_aid",
         "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
+    },
+    {
+      "url": "https://www.friendsschoolportland.org/summercamp",
+      "checked": "2026-11-13",
+      "fields": [
+        "primary_categories",
+        "description_short"
+      ]
+    },
+    {
+      "url": "https://www.friendsschoolportland.org/crow-camp",
+      "checked": "2026-11-13",
+      "fields": [
+        "secondary_categories",
+        "activities"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.friendsschoolportland.org/new-page-2",
       "kind": "html",
@@ -234,6 +258,31 @@
         "quote": "Week 2: Monday, June 29-Thursday, July 2 (availability)"
       }
     ],
-    "errors": []
-  }
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.friendsschoolportland.org/new-page-2",
+        "https://www.friendsschoolportland.org/summercamp",
+        "https://www.friendsschoolportland.org/crow-camp"
+      ],
+      "changes": [
+        "Checked the 2026 calendar, prices ($415 week, $345 4-day week, $585 Crow Adventure Week, CIT $450 and $345) and the $125 deposit against the Calendar and Registration page; all match. 2027 is not posted yet.",
+        "Set every session's availability to unknown; the open and waitlist labels were for the 2026 season, which is over.",
+        "Noted on Week 7 that it is also the Crow Camp Adventure Week (July 27 to 30, $585), per the Crow Camp page.",
+        "Added categories nature and arts, secondary outdoor, from the overview and Crow Camp pages.",
+        "Replaced activities with what the overview and Crow Camp pages describe (forest play, hikes, stewardship, arts, overnight camping trip).",
+        "Rewrote the description to say what the camp does, not just its schedule.",
+        "Ages 4 to 14 come from the camp's own group names in the Summer menu (Chickadee 4-5 through CIT 12-14)."
+      ],
+      "open_questions": []
+    }
+  },
+  "primary_categories": [
+    "nature",
+    "arts"
+  ],
+  "secondary_categories": [
+    "outdoor"
+  ]
 }

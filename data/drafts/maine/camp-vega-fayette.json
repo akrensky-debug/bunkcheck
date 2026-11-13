@@ -2,6 +2,7 @@
   "slug": "camp-vega-fayette",
   "name": "Camp Vega",
   "website_url": "https://campvega.com/",
+  "registration_url": "https://vega.campintouch.com/ui/forms/application/camper/App",
   "email": "info@campvega.com",
   "phone": "207-685-3707",
   "street_address": "317 Echo Lake Rd.",
@@ -15,6 +16,9 @@
     "performing_arts",
     "nature"
   ],
+  "gender_policy": "girls",
+  "age_min": 7,
+  "age_max": 15,
   "description_short": "An overnight summer camp for girls on Echo Lake in Fayette, Maine. It runs one full session of about seven weeks, with activities including sports, arts, waterfront and horseback riding.",
   "activities": [
     "Culinary arts",
@@ -53,17 +57,17 @@
   "sources": [
     {
       "url": "https://campvega.com/parents/rates-dates/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "website_url",
+        "registration_url",
         "email",
         "phone",
         "street_address",
         "city",
         "state",
         "zip",
-        "camp_type",
         "primary_categories",
         "activities",
         "description_short",
@@ -73,12 +77,21 @@
         "refund_policy_summary",
         "swim_waterfront_notes",
         "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
+    },
+    {
+      "url": "https://campvega.com/girls_summer_camp/",
+      "checked": "2026-11-13",
+      "fields": [
+        "camp_type",
+        "gender_policy",
+        "age_min",
+        "age_max"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://campvega.com/parents/rates-dates/",
       "kind": "html",
@@ -102,6 +115,21 @@
       "Registration/application URL (the enrollment process is described on the Next Steps page)"
     ],
     "low_confidence": [],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://campvega.com/parents/rates-dates/",
+        "https://campvega.com/girls_summer_camp/",
+        "https://campvega.com/parents/next-steps-enrollment-process/"
+      ],
+      "changes": [
+        "Added age_min 7 and age_max 15 and gender_policy girls from the About page ('300 girls, ages 7 to 15').",
+        "Added registration_url, the camper application linked from the Tuition & Dates page.",
+        "camp_type sleepaway now rests on the About page (bunk life, a summer community on Echo Lake).",
+        "Checked the 2027 session (June 26 to August 11), $18,000 tuition, $4,000 deposit refund terms, chaperoned transportation and contact details against the Tuition & Dates page; they match."
+      ],
+      "open_questions": []
+    }
   }
 }

@@ -1,7 +1,7 @@
 {
   "slug": "birch-rock-camp-waterford",
   "name": "Birch Rock Camp",
-  "operator_name": "Birch Rock Camp (501(c)(3) nonprofit)",
+  "operator_name": null,
   "website_url": "https://birchrock.org/",
   "phone": "207-583-4478",
   "street_address": "293 McWain Hill Rd",
@@ -14,7 +14,7 @@
     "sports"
   ],
   "age_min": 7,
-  "age_max": 17,
+  "age_max": null,
   "description_short": "Overnight summer camp for boys in Waterford, Maine, offering full, half and two-week sessions. It also has a Cubs program for new campers ages 7-12 and a leadership program for ages 16-17.",
   "activities": [
     "Soccer clinic",
@@ -77,45 +77,44 @@
       "end_date": "2027-08-07",
       "price": 5500,
       "availability": "unknown"
-    },
-    {
-      "name": "Family Camp",
-      "start_date": "2027-08-19",
-      "end_date": "2027-08-23",
-      "price": null,
-      "availability": "unknown"
     }
   ],
   "sources": [
     {
       "url": "https://birchrock.org/dates-rates/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
-        "operator_name",
         "website_url",
         "phone",
         "street_address",
         "city",
         "state",
         "zip",
-        "camp_type",
         "primary_categories",
         "activities",
-        "age_min",
-        "age_max",
         "description_short",
         "price_min",
         "price_max",
         "financial_aid",
         "refund_policy_summary",
         "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
+    },
+    {
+      "url": "https://birchrock.org/",
+      "checked": "2026-11-13",
+      "fields": [
+        "camp_type",
+        "gender_policy",
+        "age_min",
+        "aca_accredited",
+        "aca_source_url"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://birchrock.org/dates-rates/",
       "kind": "html",
@@ -151,6 +150,26 @@
         "quote": "Soccer Clinic (13-16)"
       }
     ],
-    "errors": []
-  }
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://birchrock.org/dates-rates/",
+        "https://birchrock.org/"
+      ],
+      "changes": [
+        "Confirmed all seven 2027 camper sessions and tuition ($5,500-$13,000), refund and payment terms, address and phone on the dates page",
+        "Removed the Family Camp row (a family program with a per-person price not shown, not a camper session)",
+        "Added gender_policy boys and ACA accreditation from the home page",
+        "Cleared operator_name (the camp is its own nonprofit; the '501(c)(3)' text was not a name)",
+        "Cleared age_max: the home page says boys ages 7 to 16, the dates page lists Leadership age 16-17 and Junior Counselor (17); age_min 7 agrees on both"
+      ],
+      "open_questions": [
+        "Age max: home page says 7-16, programs pages go to 17 (Leadership 16-17, Junior Counselor 17). Left null; is 17 right?"
+      ]
+    }
+  },
+  "gender_policy": "boys",
+  "aca_accredited": true,
+  "aca_source_url": "https://birchrock.org/"
 }

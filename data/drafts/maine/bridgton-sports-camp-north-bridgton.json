@@ -14,7 +14,7 @@
   ],
   "age_min": 8,
   "age_max": 15,
-  "description_short": "An overnight sports camp in North Bridgton, Maine, for boys ages 8–15. Campers can come for a full season or one of two three-week sessions, focused on athletics and waterfront activities.",
+  "description_short": "Overnight sports camp for boys ages 8-15 in North Bridgton, Maine, with two three-week sessions in 2027 focused on athletics and waterfront activities. Tuition is all-inclusive: dorm lodging, meals, laundry, trips and canteen.",
   "activities": [
     "Athletics",
     "Waterfront activities",
@@ -47,7 +47,7 @@
   "sources": [
     {
       "url": "https://www.bridgtonsportscamp.com/dates-rates/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "website_url",
@@ -60,21 +60,22 @@
         "camp_type",
         "primary_categories",
         "activities",
+        "gender_policy",
         "age_min",
         "age_max",
         "description_short",
         "price_min",
         "price_max",
+        "price_per",
         "transportation",
         "meals_included",
         "swim_waterfront_notes",
         "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.bridgtonsportscamp.com/dates-rates/",
       "kind": "html",
@@ -107,6 +108,20 @@
         "quote": "$6,500 – All Inclusive* ... * Session tuition includes all camp activities"
       }
     ],
-    "errors": []
-  }
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.bridgtonsportscamp.com/dates-rates/"
+      ],
+      "changes": [
+        "Confirmed 2027 sessions June 26-July 16 and July 18-August 7, $6,500 all-inclusive session tuition, boys 8-15, address, phone and transport (free Portland airport pickup, bus from Boston and northern New Jersey)",
+        "Added gender_policy boys and price_per session",
+        "Rewrote description: the page lists only the two sessions, no full-season dates or price"
+      ],
+      "open_questions": []
+    }
+  },
+  "gender_policy": "boys",
+  "price_per": "session"
 }

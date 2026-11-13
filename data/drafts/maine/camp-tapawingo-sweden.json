@@ -11,15 +11,22 @@
   "state": "ME",
   "zip": "04040",
   "camp_type": "sleepaway",
+  "gender_policy": "girls",
   "description_short": "Camp Tapawingo is a girls' overnight camp in Sweden, Maine. For 2027 it offers a seven-week full summer, two shorter sessions and a CIT program.",
   "activities": [
-    "Horseback riding",
-    "Lifeguard training",
-    "Mount Washington trip",
-    "Vagabond trips"
+    "Arts & crafts",
+    "Landsports (basketball, soccer, softball, volleyball, field hockey, lacrosse)",
+    "Archery and gymnastics",
+    "Tennis and pickleball",
+    "Horseback riding (optional, extra fee)",
+    "Performing arts",
+    "Trips (camping, hiking, backpacking, canoeing)",
+    "Ropes course",
+    "Waterfront (sailing, paddleboarding, canoeing, water skiing, tubing, swimming)"
   ],
   "price_min": 9100,
   "price_max": 16050,
+  "swim_waterfront_notes": "The camp is on Keyes Pond, a 191-acre spring-fed pond, and is the only operator of motorized watercraft on it. All campers swim at least five days a week.",
   "season_year": 2027,
   "sessions": [
     {
@@ -49,19 +56,12 @@
       "end_date": "2027-08-14",
       "price": 10000,
       "availability": "unknown"
-    },
-    {
-      "name": "Rookie Experience",
-      "start_date": "2027-07-23",
-      "end_date": "2027-07-24",
-      "price": null,
-      "availability": "unknown"
     }
   ],
   "sources": [
     {
       "url": "https://www.camptapawingo.com/dates-rates",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -73,18 +73,31 @@
         "city",
         "state",
         "zip",
-        "camp_type",
-        "activities",
         "description_short",
         "price_min",
         "price_max",
         "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
+    },
+    {
+      "url": "https://www.camptapawingo.com/explore/faqs",
+      "checked": "2026-11-13",
+      "fields": [
+        "camp_type",
+        "gender_policy",
+        "swim_waterfront_notes"
+      ]
+    },
+    {
+      "url": "https://www.camptapawingo.com/explore/activities",
+      "checked": "2026-11-13",
+      "fields": [
+        "activities"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.camptapawingo.com/dates-rates",
       "kind": "html",
@@ -110,6 +123,25 @@
       "Special needs accommodations"
     ],
     "low_confidence": [],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.camptapawingo.com/dates-rates",
+        "https://www.camptapawingo.com/explore/faqs",
+        "https://www.camptapawingo.com/explore/activities",
+        "https://www.camptapawingo.com/our-story/why-tapawingo"
+      ],
+      "changes": [
+        "Removed the 'Rookie Experience' row from sessions: the page calls it a Friday to Saturday visit with a daytime-only option, gives no price and says to email Marianne, so it is not a bookable session.",
+        "Set gender_policy to girls; the FAQ and why-Tapawingo pages describe a camp for girls.",
+        "camp_type sleepaway now rests on the FAQ, which says eight campers live in each bunk with two counselors.",
+        "Replaced the four add-on activities with the full program from the Activities page.",
+        "Added swim_waterfront_notes from the FAQ: Keyes Pond, the camp runs the only motorboats on it, and every camper swims at least five days a week.",
+        "Checked all four 2027 sessions and prices against the Dates & Rates page; they match.",
+        "Left ages null: the site mentions rising 3rd graders through rising 11th graders in passing but states no age range. Left ACA unset: the FAQ says accredited but it was not checked on acacamps.org."
+      ],
+      "open_questions": []
+    }
   }
 }

@@ -10,20 +10,44 @@
   "zip": "04978",
   "camp_type": "sleepaway",
   "primary_categories": [
-    "sports"
+    "sports",
+    "arts",
+    "performing_arts"
   ],
-  "description_short": "Overnight summer camp for girls in Smithfield, Maine. For 2027 it offers two 3-week half sessions and a 7-week full session.",
   "activities": [
-    "Tennis (private lessons available)",
-    "Horseback riding (English)",
-    "Color War",
-    "College League",
-    "Out-of-camp trips"
+    "tennis",
+    "swimming",
+    "gymnastics",
+    "horseback riding (English, extra fee)",
+    "archery",
+    "basketball",
+    "lacrosse",
+    "golf",
+    "mountain biking",
+    "dance",
+    "theater",
+    "ceramics",
+    "creative arts",
+    "sewing",
+    "culinary arts",
+    "fishing",
+    "ropes course",
+    "ninja warrior course",
+    "yoga",
+    "fitness"
   ],
+  "gender_policy": "girls",
+  "description_short": "Overnight camp for girls on East Pond in Smithfield, Maine, open since 1951. Girls choose from over 30 activities, including tennis, gymnastics, swimming, dance, theater, arts and riding, in two 3.5-week half sessions or one 7-week full session.",
   "price_min": 11100,
   "price_max": 18650,
+  "price_per": "session",
   "transportation": true,
-  "refund_policy_summary": "The $3,000 deposit is fully refundable. The page does not give a refund policy for the rest of the tuition.",
+  "meals_included": true,
+  "refund_policy_summary": "A fully refundable $3,000 deposit is due with the online application. The page doesn't give a refund policy for the rest of the tuition. Card payments after the deposit carry a 3% fee.",
+  "special_needs_notes": "A Food Allergy Coach and five nurses support campers with food allergies, dietary restrictions and medical needs. The site doesn't describe support for other special needs.",
+  "swim_waterfront_notes": "Two swim areas: a 10,000 square-foot area on East Pond with three enclosed cribs and an aqua park, and a heated 25-meter pool with waterslides. Swim staff are lifeguards and certified instructors teaching the Red Cross curriculum; younger campers take three swim lessons a week.",
+  "aca_accredited": true,
+  "aca_source_url": "https://www.matoaka.com/faq/",
   "season_year": 2027,
   "sessions": [
     {
@@ -34,24 +58,24 @@
       "availability": "unknown"
     },
     {
-      "name": "Full Session",
-      "start_date": "2027-06-25",
-      "end_date": "2027-08-11",
-      "price": 18650,
-      "availability": "unknown"
-    },
-    {
       "name": "Second Session",
       "start_date": "2027-07-21",
       "end_date": "2027-08-11",
       "price": 11100,
+      "availability": "unknown"
+    },
+    {
+      "name": "Full Session",
+      "start_date": "2027-06-25",
+      "end_date": "2027-08-11",
+      "price": 18650,
       "availability": "unknown"
     }
   ],
   "sources": [
     {
       "url": "https://www.matoaka.com/rates-and-dates/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "website_url",
@@ -62,20 +86,51 @@
         "state",
         "zip",
         "camp_type",
-        "primary_categories",
-        "activities",
-        "description_short",
         "price_min",
         "price_max",
+        "price_per",
         "transportation",
         "refund_policy_summary",
         "sessions"
+      ]
+    },
+    {
+      "url": "https://www.matoaka.com/",
+      "checked": "2026-11-13",
+      "fields": [
+        "gender_policy",
+        "description_short"
+      ]
+    },
+    {
+      "url": "https://www.matoaka.com/activities/",
+      "checked": "2026-11-13",
+      "fields": [
+        "primary_categories",
+        "activities",
+        "swim_waterfront_notes"
+      ]
+    },
+    {
+      "url": "https://www.matoaka.com/faq/",
+      "checked": "2026-11-13",
+      "fields": [
+        "special_needs_notes",
+        "aca_accredited",
+        "aca_source_url"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "FAQ: 'Camp Matoaka is an accredited member of the American Camp Association.'"
+    },
+    {
+      "url": "https://www.matoaka.com/nutrition-wellness/",
+      "checked": "2026-11-13",
+      "fields": [
+        "meals_included"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.matoaka.com/rates-and-dates/",
       "kind": "html",
@@ -107,6 +162,27 @@
         "quote": "Campers work with nationally-ranked college and professional tennis players on one of our nine tennis courts."
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.matoaka.com/rates-and-dates/",
+        "https://www.matoaka.com/",
+        "https://www.matoaka.com/faq/",
+        "https://www.matoaka.com/activities/",
+        "https://www.matoaka.com/nutrition-wellness/",
+        "https://www.matoaka.com/first-time-camper/"
+      ],
+      "changes": [
+        "Confirmed 2027 dates and prices: First June 25 to July 17 and Second July 21 to August 11 at $11,100; Full June 25 to August 11 at $18,650.",
+        "Added gender_policy girls (homepage and every page describe a camp for girls).",
+        "Added ACA accreditation from the camp's FAQ ('an accredited member of the American Camp Association'), not checked on ACA's own site.",
+        "Replaced the activity list with the camp's activities page and added arts and performing arts to categories.",
+        "Added meals_included true, waterfront notes, allergy and medical support notes, and price_per session.",
+        "Description no longer says 3-week: the site calls the half sessions 3.5 weeks.",
+        "Ages and grades are not stated anywhere on the site; left blank."
+      ],
+      "open_questions": []
+    }
   }
 }

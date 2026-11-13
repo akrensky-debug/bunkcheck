@@ -13,7 +13,7 @@
   "camp_type": "day",
   "grade_min": 0,
   "grade_max": 7,
-  "description_short": "Weekly summer camp on Mount Desert Island, Maine. Traditional camps are for grades K-7, with separate specialty, teen and Friday overnight programs. Rates are lower for Hancock County residents.",
+  "description_short": "Weekly day camp on Mount Desert Island, Maine. Traditional camps are grouped by grade for K-7, with separate specialty, teen and Friday overnight programs. Rates are lower for Hancock County residents.",
   "price_per_week": 495,
   "price_min": 300,
   "price_max": 495,
@@ -93,10 +93,11 @@
       "availability": "unknown"
     }
   ],
+  "swim_waterfront_notes": "Traditional campers go to the waterfront every day for swimming, weather permitting. The page gives no details on swim instruction or supervision.",
   "sources": [
     {
       "url": "https://www.campbeechcliff.org/dates-rates",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -108,10 +109,8 @@
         "city",
         "state",
         "zip",
-        "camp_type",
         "grade_min",
         "grade_max",
-        "description_short",
         "price_min",
         "price_max",
         "price_per_week",
@@ -120,11 +119,21 @@
         "refund_policy_summary",
         "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "2026 weeks, weekly rates, campership, payment and refund terms, contact block"
+    },
+    {
+      "url": "https://www.campbeechcliff.org/traditional-k7",
+      "checked": "2026-11-13",
+      "fields": [
+        "camp_type",
+        "description_short",
+        "swim_waterfront_notes"
+      ],
+      "note": "Traditional Camps page: grade groups, daily schedule ending with dismissal for buses or parent pick-up at 4 pm, daily waterfront"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.campbeechcliff.org/dates-rates",
       "kind": "html",
@@ -162,6 +171,19 @@
         "quote": "Traditional Camps (Grades K-7)"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.campbeechcliff.org/dates-rates",
+        "https://www.campbeechcliff.org/traditional-k7"
+      ],
+      "changes": [
+        "Checked the 10 weeks, $495 and $300 weekly rates, fees, refund terms and contact details against the Dates and Rates page; all match. Only 2026 is posted, so season_year stays 2026.",
+        "Confirmed day camp from the Traditional Camps page (daily schedule ends with 4 pm dismissal for buses or parent pick-up) and moved camp_type and description_short to that source.",
+        "Added swim_waterfront_notes: daily waterfront swimming, from the Traditional Camps page."
+      ],
+      "open_questions": []
+    }
   }
 }
