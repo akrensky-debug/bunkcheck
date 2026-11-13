@@ -88,7 +88,7 @@
     }
   ],
   "review": {
-    "status": "ready",
+    "status": "needs_andrew",
     "source": {
       "url": "https://campbelknap.org/campers/",
       "kind": "html",
@@ -139,7 +139,9 @@
         "Added gender_policy boys: the page calls Belknap 'a traditional residential camp for boys ages 8-16'.",
         "Registration for 2027 opens 5 November 2026 through an inquiry form; the registration link stays on the Campers page."
       ],
-      "open_questions": []
+      "open_questions": [
+        "The validator rejects the city 'Mirror Lake' (not in cities.py). The camp gives its physical address as 11 Chase Point Road, Mirror Lake, NH 03853; Mirror Lake is a village in Tuftonboro, which cities.py has. Set city to Tuftonboro, or add Mirror Lake to cities.py? Everything else checks out."
+      ]
     }
   }
 }

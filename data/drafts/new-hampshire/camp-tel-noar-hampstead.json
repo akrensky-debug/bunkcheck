@@ -36,7 +36,7 @@
   "sources": [
     {
       "url": "https://www.cohencamps.org/tel-noar/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -49,17 +49,68 @@
         "state",
         "zip",
         "camp_type",
+        "gender_policy",
         "primary_categories",
         "activities",
         "description_short",
-        "financial_aid",
         "swim_waterfront_notes"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
+    },
+    {
+      "url": "https://www.cohencamps.org/tel-noar/summer/dates-tuition/",
+      "checked": "2026-11-13",
+      "fields": [
+        "price_min",
+        "price_max",
+        "price_per",
+        "financial_aid",
+        "sessions"
+      ]
+    }
+  ],
+  "gender_policy": "coed",
+  "price_min": 4650,
+  "price_max": 14490,
+  "price_per": "session",
+  "sessions": [
+    {
+      "name": "Full Season (7 weeks)",
+      "start_date": "2027-06-23",
+      "end_date": "2027-08-11",
+      "price": 14490,
+      "availability": "unknown"
+    },
+    {
+      "name": "First Session (3.5 weeks)",
+      "start_date": "2027-06-23",
+      "end_date": "2027-07-18",
+      "price": 8825,
+      "availability": "unknown"
+    },
+    {
+      "name": "Second Session (3.5 weeks)",
+      "start_date": "2027-07-19",
+      "end_date": "2027-08-11",
+      "price": 8525,
+      "availability": "unknown"
+    },
+    {
+      "name": "2-Week Ta'am (Taste) of Tel Noar 1 (first-timers, entering grades 2-8)",
+      "start_date": "2027-06-23",
+      "end_date": "2027-07-06",
+      "price": 4650,
+      "availability": "unknown"
+    },
+    {
+      "name": "2-Week Ta'am (Taste) of Tel Noar 2 (first-timers, entering grades 2-8)",
+      "start_date": "2027-07-19",
+      "end_date": "2027-08-01",
+      "price": 4650,
+      "availability": "unknown"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.cohencamps.org/tel-noar/",
       "kind": "html",
@@ -81,6 +132,23 @@
       "Registration deadlines and availability for each session"
     ],
     "low_confidence": [],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.cohencamps.org/tel-noar/",
+        "https://www.cohencamps.org/tel-noar/summer/dates-tuition/",
+        "https://www.cohencamps.org/tel-noar/summer/faqs/",
+        "https://www.cohencamps.org/tel-noar/about-tel-noar/welcome/"
+      ],
+      "changes": [
+        "Added the five 2027 sessions from the Dates + Tuition page: Full Season June 23 to August 11 ($14,490), First Session June 23 to July 18 ($8,825), Second Session July 19 to August 11 ($8,525), and two first-timer 2-week Ta'am sessions ($4,650 each, entering grades 2-8).",
+        "Session prices are the returning-camper rates; first-time campers pay $500 less for the full season and $200 less for a session, and Massachusetts families under $300K income can pay much less (Road to Camp).",
+        "Added price range $4,650 to $14,490, price_per session, and gender_policy coed (homepage: co-ed Jewish overnight camp).",
+        "Moved financial_aid to the Dates + Tuition page, which describes the Cohen Camps scholarship fund.",
+        "Left out the free 1-night sleepovers: their dates on the page are from 2026."
+      ],
+      "open_questions": []
+    }
   }
 }
