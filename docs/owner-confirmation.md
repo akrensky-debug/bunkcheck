@@ -37,6 +37,11 @@ A camp is ready when a person has checked it, it's on the site, the camp hasn't 
 there's an email for it (primary contact first, then the camp's own email), and no earlier link
 is still waiting for an answer. `preview <camp>` shows any one email first.
 
+Named contacts (a camp director or registrar) come from the dataset. A camp in
+`data/camps/*.json` can list them under `contacts`, each with the camp's own page that shows the
+address. `import_real` adds them to `camp_contacts` and never changes a contact who is already
+verified or primary. A named contact is used before the camp's info@ address.
+
 ## Spots left
 
 When an owner tells us how many spots a session has left (by reply, phone or text), record it:
