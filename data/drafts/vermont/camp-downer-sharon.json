@@ -23,55 +23,55 @@
       "start_date": "2026-06-21",
       "end_date": "2026-06-26",
       "price": null,
-      "availability": "waitlist"
+      "availability": "unknown"
     },
     {
       "name": "Session 2",
       "start_date": "2026-06-28",
       "end_date": "2026-07-03",
       "price": null,
-      "availability": "waitlist"
+      "availability": "unknown"
     },
     {
       "name": "Session 3 (two-week, CIT II)",
       "start_date": "2026-07-05",
       "end_date": "2026-07-17",
       "price": null,
-      "availability": "waitlist"
+      "availability": "unknown"
     },
     {
       "name": "Session 4",
       "start_date": "2026-07-19",
       "end_date": "2026-07-24",
       "price": null,
-      "availability": "waitlist"
+      "availability": "unknown"
     },
     {
       "name": "Session 5",
       "start_date": "2026-07-26",
       "end_date": "2026-07-31",
       "price": null,
-      "availability": "open"
+      "availability": "unknown"
     },
     {
       "name": "Session 6",
       "start_date": "2026-08-02",
       "end_date": "2026-08-07",
       "price": null,
-      "availability": "waitlist"
+      "availability": "unknown"
     },
     {
       "name": "Session 7",
       "start_date": "2026-08-09",
       "end_date": "2026-08-14",
       "price": null,
-      "availability": "open"
+      "availability": "unknown"
     }
   ],
   "sources": [
     {
       "url": "https://campdowner.com/registration/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "website_url",
@@ -90,12 +90,11 @@
         "price_max",
         "financial_aid",
         "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://campdowner.com/registration/",
       "kind": "html",
@@ -172,6 +171,17 @@
         "quote": "will not need to enter general registration on February 7th"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://campdowner.com/registration/"
+      ],
+      "changes": [
+        "Set every 2026 session's availability to unknown: the season is over, and the page's waitlist/open labels were split by Boys+ and Girls+ campers.",
+        "Confirmed 2026 dates, ages 8 to 16 (11 to 16 for the two-week CIT II session), tier prices $560 to $1,540, scholarships, address and phone on the registration page. No 2027 dates posted yet."
+      ],
+      "open_questions": []
+    }
   }
 }

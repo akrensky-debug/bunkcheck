@@ -3,7 +3,7 @@
   "name": "Brattleboro Music Center Summer Programs",
   "operator_name": "Brattleboro Music Center",
   "website_url": "https://bmcvt.org/summer-programs/",
-  "registration_url": "https://bmcvt.org/registration/",
+  "registration_url": null,
   "email": "info@bmcvt.org",
   "phone": "(802) 257-4523",
   "street_address": "72 Blanche Moyse Way",
@@ -16,24 +16,22 @@
   ],
   "age_min": 6,
   "age_max": 12,
-  "description_short": "A community music school in Brattleboro, VT, that runs a one-week morning camp of songs, dances, stories and singing games for children ages 6-12. It also hosts weekly string orchestra reading sessions for players in high school and up.",
+  "description_short": "A community music school in Brattleboro, VT, that runs Step it Down, a one-week morning camp of songs, dances, folktales and singing games for children ages 6 to 12. 2027 dates are not posted yet.",
   "activities": [
     "singing",
     "dancing",
     "storytelling",
-    "singing games",
-    "string orchestra"
+    "singing games"
   ],
   "season_year": 2027,
   "sources": [
     {
       "url": "https://bmcvt.org/summer-programs/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
         "website_url",
-        "registration_url",
         "email",
         "phone",
         "street_address",
@@ -47,11 +45,11 @@
         "age_max",
         "description_short"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Ages, activities and one-week morning format are for the Step it Down children's camp; 2027 dates TBA"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://bmcvt.org/summer-programs/",
       "kind": "html",
@@ -91,6 +89,19 @@
         "quote": "String Orchestra “Reads” – 2026 ... Start date for summer 2027 TBA"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://bmcvt.org/summer-programs/",
+        "https://bmcvt.org/registration/"
+      ],
+      "changes": [
+        "Removed registration_url: bmcvt.org/registration is for school-year lessons and classes, not the summer camp.",
+        "Rewrote description and activities to cover only the Step it Down children's camp; dropped String Orchestra Reads, which is for high school players and adults.",
+        "Refreshed the source check date; every other field matches the summer programs page."
+      ],
+      "open_questions": []
+    }
   }
 }
