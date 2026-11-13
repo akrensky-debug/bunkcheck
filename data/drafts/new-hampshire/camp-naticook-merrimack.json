@@ -3,6 +3,7 @@
   "name": "Camp Naticook",
   "operator_name": "Merrimack Parks & Recreation Department",
   "website_url": "https://merrimackparksandrec.org/camp-naticook",
+  "registration_url": "https://merrimack.recdesk.com/Community/Program?category=48",
   "phone": "603-420-1662",
   "street_address": "116 Naticook Road",
   "city": "Merrimack",
@@ -15,9 +16,6 @@
     "nature",
     "performing_arts"
   ],
-  "grade_min": 0,
-  "grade_max": 5,
-  "description_short": "A town-run traditional day camp at Wasserman Park on Naticook Lake in Merrimack, NH, for children entering Kindergarten through 5th grade. Campers do sports, games, arts and crafts, nature activities, swimming, boating, archery and theater, and a daily hot lunch is included.",
   "activities": [
     "sports & games",
     "arts & crafts",
@@ -29,86 +27,89 @@
     "theater/drama",
     "Friday special events"
   ],
+  "grade_min": 0,
+  "grade_max": 5,
+  "description_short": "A town-run traditional day camp at Wasserman Park on Naticook Lake in Merrimack, NH, for children entering Kindergarten through 5th grade. Campers do sports, games, arts and crafts, nature activities, swimming, boating, archery and theater, and a daily hot lunch is included.",
   "price_per_week": 325,
   "price_min": 325,
   "price_max": 375,
+  "price_per": "week",
   "financial_aid": true,
   "extended_care": true,
   "meals_included": true,
   "refund_policy_summary": "Each session requires a $50 non-refundable deposit, and the full balance is due 45 days before the session starts. If you cancel at least 30 days ahead, you lose only the deposit. Cancelling 15–30 days ahead gets a 50% refund of what you paid, minus the deposit, and there are no refunds within 15 days of the start. Transfers to another session have no penalty if made at least 30 days ahead. Medical cancellations within 14 days of the start need a doctor's letter and get a 50% refund of the remaining amount, minus the deposit.",
   "special_needs_notes": "The camp no longer provides one-to-one aides. Campers must be able to take part in their assigned group and tell staff what they need. Families are encouraged to call the camp to discuss fit. For one-to-one support, the camp suggests Camp Allen (Bedford), Recreational Education Center (Londonderry) or Camp Starfish (Rindge).",
-  "swim_waterfront_notes": "The camp is on Naticook Lake. Campers go on canoe trips and have free swim time at the waterfront and beach. The page says American Red Cross swim lessons are offered at no extra cost, though that text says \"Returning for 2025\".",
+  "swim_waterfront_notes": "The camp is on Naticook Lake. Campers go on canoe trips and have free swim time at the waterfront and beach. American Red Cross swim lessons are offered at no extra cost (the page's text says 'Returning for 2025').",
   "season_year": 2026,
-  "price_per": "week",
   "sessions": [
     {
       "name": "Week 1: Spirit Week",
       "start_date": "2026-06-22",
       "end_date": "2026-06-26",
-      "price": null,
+      "price": 325,
       "availability": "unknown"
     },
     {
       "name": "Week 2: Wild West",
       "start_date": "2026-06-29",
       "end_date": "2026-07-03",
-      "price": null,
+      "price": 325,
       "availability": "unknown"
     },
     {
       "name": "Week 3: Color Wars",
       "start_date": "2026-07-06",
       "end_date": "2026-07-10",
-      "price": null,
+      "price": 325,
       "availability": "unknown"
     },
     {
       "name": "Week 4: Myth Busters",
       "start_date": "2026-07-13",
       "end_date": "2026-07-17",
-      "price": null,
+      "price": 325,
       "availability": "unknown"
     },
     {
       "name": "Week 5: Wizard Week",
       "start_date": "2026-07-20",
       "end_date": "2026-07-24",
-      "price": null,
+      "price": 325,
       "availability": "unknown"
     },
     {
       "name": "Week 6: Carnival Chaos",
       "start_date": "2026-07-27",
       "end_date": "2026-07-31",
-      "price": null,
+      "price": 325,
       "availability": "unknown"
     },
     {
       "name": "Week 7: Wilderness Explorers",
       "start_date": "2026-08-03",
       "end_date": "2026-08-07",
-      "price": null,
+      "price": 325,
       "availability": "unknown"
     },
     {
       "name": "Week 8: Holiday Palooza",
       "start_date": "2026-08-10",
       "end_date": "2026-08-14",
-      "price": null,
+      "price": 325,
       "availability": "unknown"
     },
     {
       "name": "Week 9: Summer Showcase",
       "start_date": "2026-08-17",
       "end_date": "2026-08-21",
-      "price": null,
+      "price": 325,
       "availability": "unknown"
     }
   ],
   "sources": [
     {
       "url": "https://merrimackparksandrec.org/camp-naticook",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -134,13 +135,13 @@
         "refund_policy_summary",
         "special_needs_notes",
         "swim_waterfront_notes",
-        "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+        "sessions",
+        "registration_url"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://merrimackparksandrec.org/camp-naticook",
       "kind": "html",
@@ -206,6 +207,21 @@
         "quote": "Week 9:8/17 - 8/21  Theme: Summer Showcase"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://merrimackparksandrec.org/camp-naticook"
+      ],
+      "changes": [
+        "Re-checked every field on the camp page: nine 2026 weeks (June 22 to August 21, 2026) with themes, grades entering K to 5, 8:00-4:00 with AM/PM extended care, $325 resident / $375 non-resident a week, daily hot lunch, scholarships, deposit and refund terms, one-to-one aide note",
+        "Added registration_url (merrimack.recdesk.com, the page's 'Click here to register' link)",
+        "Set each week's price to the $325 Merrimack resident rate (non-residents pay $375), matching price_per_week"
+      ],
+      "open_questions": [
+        "The page says the camp has been accredited by the American Camp Association since 1994; aca_accredited left null since we only check the camp's own pages",
+        "Only 2026 dates and rates are posted; 2027 not yet published"
+      ]
+    }
   }
 }
