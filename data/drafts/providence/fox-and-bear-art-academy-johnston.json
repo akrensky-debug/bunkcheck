@@ -40,7 +40,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "drop",
     "source": {
       "url": "https://www.foxandbearartacademy.com/",
       "kind": "html",
@@ -69,6 +69,14 @@
       "missing required camp_type",
       "missing required season_year",
       "camp_type must be one of ['day', 'sleepaway', 'specialty']"
-    ]
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.foxandbearartacademy.com/",
+      "changes": [],
+      "for_andrew": [],
+      "drop_reason": "Not a summer camp: the site describes a Fall 2026-Spring 2027 after-school art class program and birthday parties; no summer camp is mentioned"
+    }
   }
 }

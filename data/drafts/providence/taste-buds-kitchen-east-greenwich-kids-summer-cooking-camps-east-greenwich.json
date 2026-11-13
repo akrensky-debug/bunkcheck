@@ -29,7 +29,7 @@
   "sources": [
     {
       "url": "https://tastebudskitchen.com/east-greenwich/kids-cooking-camps/",
-      "checked": "2026-10-13",
+      "checked": "2026-10-27",
       "fields": [
         "name",
         "operator_name",
@@ -54,7 +54,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://tastebudskitchen.com/east-greenwich/kids-cooking-camps/",
       "kind": "html",
@@ -93,6 +93,16 @@
         "quote": "Breakfast and lunch are always recommended before/after camp"
       }
     ],
-    "errors": []
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://tastebudskitchen.com/east-greenwich/kids-cooking-camps/",
+      "changes": [],
+      "for_andrew": [
+        "2027 registration opens January 13, 2027; dates and prices are only in the booking calendar, so there are no sessions or prices yet",
+        "Advanced Teen Camp (13-17) is \"available at select locations\"; age_max 17 may not apply to East Greenwich"
+      ]
+    }
   }
 }

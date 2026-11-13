@@ -2,6 +2,7 @@ import type { CampSearchResult } from '@/lib/api'
 import type { ActivityCard, ActivityProgram, FamilyWeek, ScheduleFitResult } from '@/lib/activities'
 import { authHeaders } from '@/lib/auth'
 import type { BookingUIData } from '@/components/booking/BookingBlocks'
+import type { InquiryView } from '@/lib/inquiries'
 import { Events } from '@/lib/analytics'
 import type { Role, Task } from '@/lib/household'
 
@@ -64,6 +65,8 @@ export interface Comparison {
     age_min: number | null
     age_max: number | null
     price_per_week: number | null
+    season_year?: number | null
+    last_season?: boolean
     session_count: number
     transportation: boolean
     extended_care: boolean
@@ -122,7 +125,7 @@ export interface Coverage {
 
 export type UIData =
   | { type: 'camps'; camps: CampSearchResult[] }
-  | { type: 'camp_detail'; camp: CampSearchResult & { sessions?: Array<{ id: string; name: string | null; start_date: string; end_date: string; price: number | null }> } }
+  | { type: 'camp_detail'; camp: CampSearchResult & { sessions?: Array<{ id: string; name: string | null; start_date: string; end_date: string; price: number | null }>; season_note?: string | null } }
   | ({ type: 'comparison' } & Comparison)
   | ({ type: 'plan' } & Plan)
   | ({ type: 'coverage' } & Coverage)
@@ -139,6 +142,7 @@ export type UIData =
   | { type: 'assign_proposal'; summary: string; member: { id: string; name: string; status: string } | null; task_ids: string[]; tasks: Task[] }
   | { type: 'invite_proposal'; display_name: string; role: Exclude<Role, 'owner'>; email: string }
   | { type: 'message_draft'; subject: string; body: string; recipients: Array<{ name: string; email: string | null }> }
+  | ({ type: 'inquiry'; confirm_token: string } & InquiryView)
 
 export type AgentEvent =
   | { type: 'conversation'; id: string }
@@ -150,6 +154,11 @@ export type AgentEvent =
 
 function readFamilyId(): string | null {
   try { return localStorage.getItem(FAMILY_KEY) } catch { return null }
+}
+
+/** The family this browser plans for, if any. */
+export function storedFamilyId(): string | null {
+  return readFamilyId()
 }
 
 export function rememberFamily(id: string) {

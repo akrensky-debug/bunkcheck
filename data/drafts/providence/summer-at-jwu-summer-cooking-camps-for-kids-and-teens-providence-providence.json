@@ -56,7 +56,7 @@
   "sources": [
     {
       "url": "https://inquire.jwu.edu/admissions/welcome/summer-at-jwu/providence.html",
-      "checked": "2026-10-13",
+      "checked": "2026-10-27",
       "fields": [
         "name",
         "operator_name",
@@ -81,7 +81,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "drop",
     "source": {
       "url": "https://inquire.jwu.edu/admissions/welcome/summer-at-jwu/providence.html",
       "kind": "html",
@@ -114,6 +114,16 @@
         "quote": "8 Abbott Park Place, Providence, RI 02903"
       }
     ],
-    "errors": []
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://inquire.jwu.edu/admissions/welcome/summer-at-jwu/providence.html",
+      "changes": [],
+      "for_andrew": [
+        "If JWU still runs kids cooking camps, a new page would need to be found; the draft holds only 2025 data"
+      ],
+      "drop_reason": "Page is gone: the URL now redirects (302) to the jwu.edu homepage, and the draft only had 2025 sessions"
+    }
   }
 }

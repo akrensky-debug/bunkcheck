@@ -34,7 +34,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "drop",
     "source": {
       "url": "https://www.tiverton.ri.gov/174/Camps-Programs",
       "kind": "html",
@@ -103,6 +103,14 @@
       "missing required camp_type",
       "missing required season_year",
       "camp_type must be one of ['day', 'sleepaway', 'specialty']"
-    ]
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.tiverton.ri.gov/174/Camps-Programs",
+      "changes": [],
+      "for_andrew": [],
+      "drop_reason": "Not a kids' summer camp: the page is a town recreation index that lists only Sunset Yoga, Intro to Surfcasting and Tiverton Tennis, with no camp, ages, dates or prices."
+    }
   }
 }

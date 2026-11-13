@@ -61,3 +61,9 @@ and they hold unless Andrew changes them in writing here.*
 
 This is not a plan for a fight and it does not assume bad faith from anyone who works with
 us. It is the paperwork that lets a partnership stay a friendship.
+
+## Legal entity
+
+15. **Bunkcheck runs under PromptBridge LLC (Rhode Island) for now.** Decided by Andrew on
+    13 November 2026. The product, its legal pages, the app listings, the Stripe account and
+    the trademark use this name. The name Invisible Industries is not used anywhere.

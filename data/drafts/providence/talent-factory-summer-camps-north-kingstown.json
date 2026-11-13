@@ -6,7 +6,7 @@
   "registration_url": "https://app.thestudiodirector.com/talentfactoryri/portal.sd?page=Enroll&meth=search",
   "email": "info@talentfactoryri.com",
   "phone": "401-398-0606",
-  "street_address": "46 Frenchtown Rd (Marshalls Plaza)",
+  "street_address": "46 Frenchtown Rd",
   "city": "North Kingstown",
   "state": "RI",
   "zip": "02852",
@@ -20,7 +20,7 @@
   "sources": [
     {
       "url": "https://www.talentfactoryri.com/summer-camps",
-      "checked": "2026-10-13",
+      "checked": "2026-10-27",
       "fields": [
         "name",
         "operator_name",
@@ -28,20 +28,20 @@
         "registration_url",
         "email",
         "phone",
-        "street_address",
         "city",
         "state",
         "zip",
         "camp_type",
         "primary_categories",
         "description_short",
-        "financial_aid"
+        "financial_aid",
+        "street_address"
       ],
       "note": "Drafted by the listing tool from this page"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.talentfactoryri.com/summer-camps",
       "kind": "html",
@@ -77,6 +77,19 @@
         "quote": "THEATRE SHOWS ... NUTCRACKER ... DANCEWEAR BOUTIQUE"
       }
     ],
-    "errors": []
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.talentfactoryri.com/summer-camps",
+      "changes": [
+        "Trimmed street_address to \"46 Frenchtown Rd\" (dropped \"(Marshalls Plaza)\")"
+      ],
+      "for_andrew": [
+        "Judgement call: page sells 8 weeks of a-la-carte studio classes (\"Choose 1 of our 30+ classes\"), not clearly a camp; the camp-products section is empty",
+        "Page shows \"SUMMER 2026\" but no dates, ages or prices",
+        "performing_arts category is inferred from the dance/theatre studio menu, not from the summer page"
+      ]
+    }
   }
 }

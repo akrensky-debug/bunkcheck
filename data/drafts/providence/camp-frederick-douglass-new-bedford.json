@@ -11,9 +11,7 @@
   "zip": "02740",
   "camp_type": "day",
   "primary_categories": [
-    "sports",
-    "performing_arts",
-    "academic"
+    "general"
   ],
   "description_short": "A YMCA day camp at the New Bedford YMCA, open weekdays from 7:30 AM to 5:30 PM. Campers do gym and outdoor games, swimming, archery and drama, and learn about Frederick Douglass and his time in New Bedford through projects, field trips and museum visits.",
   "activities": [
@@ -47,10 +45,19 @@
         "description_short"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://ymcasouthcoast.org/programs/child-care-camps/summer-day-camp/",
+      "checked": "2026-10-27",
+      "fields": [
+        "financial_aid"
+      ]
     }
   ],
+  "season_year": 2026,
+  "financial_aid": true,
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://ymcasouthcoast.org/location/camp-frederick-douglass/",
       "kind": "html",
@@ -82,8 +89,21 @@
         "quote": "gym and outdoor games, swimming, archery, drama"
       }
     ],
-    "errors": [
-      "missing required season_year"
-    ]
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://ymcasouthcoast.org/location/camp-frederick-douglass/",
+      "changes": [
+        "season_year 2026: the YMCA Southcoast Summer Day Camp page that lists this camp links the '2026 Camp Registration Form' and '2026 Rates'",
+        "financial_aid true: same page's FAQ answers 'YES' to financial aid for qualifying families (new source)",
+        "primary_categories sports/performing_arts/academic -> general: it is a traditional YMCA day camp with mixed activities",
+        "Checked contact, address, hours and activities against the camp page"
+      ],
+      "for_andrew": [
+        "New Bedford is about 30-33 miles from Providence, at the edge of the range",
+        "No ages or prices on the camp page (rates are in a PDF)"
+      ]
+    }
   }
 }

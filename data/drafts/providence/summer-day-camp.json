@@ -3,28 +3,60 @@
   "name": "Summer Day Camp",
   "operator_name": "Johnston Parks and Recreation",
   "website_url": "https://johnstonrec.com/day-camp",
-  "city": null,
-  "state": null,
-  "zip": null,
+  "city": "Johnston",
+  "state": "RI",
+  "zip": "02919",
   "camp_type": "day",
-  "description_short": "A summer day camp run by Johnston Parks and Recreation. For 2026, registration closed because the camp was full.",
+  "description_short": "A town-run summer day camp for ages 6-12 (grouped 6-7, 8-9 and 10-12), Monday to Friday 8:30am-4:30pm, run by Johnston Parks and Recreation. Up to 80 campers; 2026 registration closed when the camp filled.",
   "season_year": 2026,
   "sources": [
     {
       "url": "https://johnstonrec.com/day-camp",
-      "checked": "2026-10-13",
+      "checked": "2026-10-27",
       "fields": [
         "name",
         "operator_name",
         "website_url",
-        "camp_type",
-        "description_short"
+        "camp_type"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://johnstonrec.com/contact-us",
+      "checked": "2026-10-27",
+      "fields": [
+        "city",
+        "state",
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "url": "https://www.census.gov/geographies/reference-files/time-series/geo/relationship-files.2020.html",
+      "checked": "2026-10-27",
+      "fields": [
+        "zip"
+      ],
+      "note": "Johnston, RI sits inside one ZIP code (2020 Census ZCTA relationship file)"
+    },
+    {
+      "url": "https://img1.wsimg.com/blobby/go/08eb0b44-c11a-49c3-be03-2310cc6926c6/daycampflyer2026web.pdf",
+      "checked": "2026-10-27",
+      "fields": [
+        "age_min",
+        "age_max",
+        "price_per_week",
+        "price_min",
+        "price_max",
+        "price_per",
+        "refund_policy_summary",
+        "description_short",
+        "sessions"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://johnstonrec.com/day-camp",
       "kind": "html",
@@ -54,10 +86,39 @@
       "Online registration URL"
     ],
     "low_confidence": [],
-    "errors": [
-      "missing required city",
-      "missing required state",
-      "missing required zip"
-    ]
-  }
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://johnstonrec.com/day-camp",
+      "changes": [
+        "Filled city Johnston, state RI, phone and email from johnstonrec.com/contact-us (site links to townofjohnstonri.com; 401 numbers)",
+        "Filled zip 02919: Johnston, RI has one ZIP code (2020 Census, same rule as fill.py)",
+        "Moved description_short to the 2026 flyer and added ages 6-12, $250/week, refund terms and the July 7-Aug 14 session ($975 for 6 weeks, full) from the flyer PDF linked on the page"
+      ],
+      "for_andrew": [
+        "Slug \"summer-day-camp\" has no town in it; consider renaming to summer-day-camp-johnston before promote",
+        "Sibling rates ($1,475 / $1,725 for 6 weeks) and $75 day rate are not in the fields",
+        "Camp location is not stated (registration is at the Recreation Office at Johnston Memorial Park); street_address left empty"
+      ]
+    }
+  },
+  "phone": "401-272-3460",
+  "email": "info@johnstonrec.com",
+  "age_min": 6,
+  "age_max": 12,
+  "price_per_week": 250,
+  "price_min": 250,
+  "price_max": 250,
+  "price_per": "week",
+  "refund_policy_summary": "A $100 deposit per family holds a spot and camp must be paid in full by July 2. No refunds once camp begins.",
+  "sessions": [
+    {
+      "name": "Summer Day Camp 2026 (6 weeks)",
+      "start_date": "2026-07-07",
+      "end_date": "2026-08-14",
+      "price": 975,
+      "availability": "full"
+    }
+  ]
 }

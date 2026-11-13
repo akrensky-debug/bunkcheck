@@ -132,7 +132,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://almsports.com/pages/summer-camp-swansea",
       "kind": "html",
@@ -208,6 +208,17 @@
         "quote": "Week 10: Monday Aug 24 - Friday Aug 28"
       }
     ],
-    "errors": []
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://almsports.com/pages/summer-camp-swansea",
+      "changes": [
+        "No changes: every filled field matches the page; week dates have no year but June 22 is a Monday in 2026 and the page fits the 2026 season"
+      ],
+      "for_andrew": [
+        "Weekly prices do not show on the page (payment widget only says 'Loading...')"
+      ]
+    }
   }
 }

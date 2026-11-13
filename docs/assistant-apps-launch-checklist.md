@@ -34,7 +34,7 @@ branch `claude/assistant-apps`. Domains below assume `campfinder.com` (site) and
 ## 2. Legal review (flagged, not decided)
 
 - [ ] Privacy policy (`/privacy`) and terms (`/terms`) are drafts. Have counsel check:
-      - the legal entity name ("Invisible Industries");
+      - the legal entity name ("PromptBridge LLC");
       - the list of processors;
       - retention periods;
       - whether request-info messages are forwarded to camps (the policy says they are);

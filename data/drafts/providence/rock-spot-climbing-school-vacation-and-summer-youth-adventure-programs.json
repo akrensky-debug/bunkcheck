@@ -22,7 +22,7 @@
   "sources": [
     {
       "url": "https://rockspotclimbing.com/youthadventure/",
-      "checked": "2026-10-13",
+      "checked": "2026-10-27",
       "fields": [
         "name",
         "operator_name",
@@ -38,7 +38,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://rockspotclimbing.com/youthadventure/",
       "kind": "html",
@@ -78,6 +78,16 @@
       "missing required city",
       "missing required state",
       "missing required zip"
-    ]
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://rockspotclimbing.com/youthadventure/",
+      "changes": [],
+      "for_andrew": [
+        "City/state/ZIP missing: this is a chain page for 9 gyms in MA, RI and CT. Decide whether to list it as the Lincoln, RI gym (Providence camps 'run through Lincoln'; corporate address 100 Higginson Ave, Lincoln, RI 02865) and confirm that address is the Lincoln gym.",
+        "Page says only 'Week-long programs start the week of June 22 and run every week until August' (Summer 2026); no per-session dates or prices on this page."
+      ]
+    }
   }
 }

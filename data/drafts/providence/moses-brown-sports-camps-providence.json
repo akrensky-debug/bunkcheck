@@ -344,7 +344,7 @@
   "sources": [
     {
       "url": "https://www.camps.mosesbrown.org/sportscamps",
-      "checked": "2026-10-13",
+      "checked": "2026-10-27",
       "fields": [
         "name",
         "operator_name",
@@ -381,7 +381,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.camps.mosesbrown.org/sportscamps",
       "kind": "html",
@@ -439,6 +439,17 @@
         "quote": "JUNE 22 SESSION IS FULL AND CURRENTLY WAITLIST ONLY"
       }
     ],
-    "errors": []
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.camps.mosesbrown.org/sportscamps",
+      "changes": [
+        "Checked every field and session against the page; no changes. Year is not printed but 'no camp June 19' matches 2026."
+      ],
+      "for_andrew": [
+        "Sessions for weeks the page lists as 'July 22' (a Wednesday) and 'June 29 (no camp July 4)' were left out because their dates are unclear on the page."
+      ]
+    }
   }
 }

@@ -75,20 +75,6 @@
       "end_date": "2026-08-28",
       "price": null,
       "availability": "unknown"
-    },
-    {
-      "name": "Move Up Skills Clinic - Session 1 (Wednesdays July 16, 23, 30)",
-      "start_date": "2026-07-16",
-      "end_date": "2026-07-30",
-      "price": 72,
-      "availability": "unknown"
-    },
-    {
-      "name": "Move Up Skills Clinic - Session 2 (Wednesdays Aug 6, 13, 20)",
-      "start_date": "2026-08-06",
-      "end_date": "2026-08-20",
-      "price": 72,
-      "availability": "unknown"
     }
   ],
   "sources": [
@@ -119,7 +105,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.arnoldsgymnastics.com/camps",
       "kind": "html",
@@ -189,6 +175,20 @@
         "quote": "The second session runs August 6, 13, and 20. ... Clinics are $72 per session."
       }
     ],
-    "errors": []
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.arnoldsgymnastics.com/camps",
+      "changes": [
+        "Removed the two Move Up Skills Clinic entries from sessions: they are 1-hour Wednesday team-skills classes, not summer camp",
+        "Checked all other fields against the page; contact, address, ages, prices and the 7 weekly themes match"
+      ],
+      "for_andrew": [
+        "Dates conflict: header says '7 WEEKS - JULY 13- AUGUST 27' but Week 7 is listed as 'August 24 - August 28' (weeks 1-6 run Mon-Thu); confirm Week 7 end date",
+        "$215 half day / $395 full day: page does not say if these are per week or for all 7 weeks, so price_per / price_per_week left null",
+        "camp_type kept as day; it is gymnastics/ninja focused, so specialty is also defensible"
+      ]
+    }
   }
 }

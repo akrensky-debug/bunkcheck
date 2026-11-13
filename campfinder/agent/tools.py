@@ -14,7 +14,7 @@ from __future__ import annotations
 
 import json
 from dataclasses import dataclass
-from datetime import date
+from datetime import date, timedelta
 from typing import Any, Awaitable, Callable, Literal
 from uuid import UUID
 
@@ -34,6 +34,7 @@ from campfinder.services.coverage import check_coverage
 from campfinder.services.errors import ServiceError
 from campfinder.services.plan import build_summer_plan
 from campfinder.services.search import run_search
+from campfinder.services.season import is_last_season, planning_year
 from campfinder.models.board import PickCreate
 from campfinder.services import summer_board, summer_brief
 
@@ -183,9 +184,12 @@ def _compact_camp(c: dict[str, Any]) -> dict[str, Any]:
     keys = (
         "id", "name", "city", "state", "camp_type", "primary_categories", "age_min", "age_max",
         "price_per_week", "distance_miles", "transportation", "extended_care", "meals_included",
-        "financial_aid", "aca_accredited", "verification_status", "match_reasons",
+        "financial_aid", "aca_accredited", "verification_status", "match_reasons", "season_year",
     )
-    return {k: c.get(k) for k in keys if c.get(k) not in (None, [], "")}
+    out = {k: c.get(k) for k in keys if c.get(k) not in (None, [], "")}
+    if c.get("last_season"):
+        out["last_season"] = True  # price is last season's: say so
+    return out
 
 
 async def search_camps_tool(inp: SearchCampsInput) -> ToolOutput:
@@ -197,12 +201,15 @@ async def search_camps_tool(inp: SearchCampsInput) -> ToolOutput:
     camps = [r.model_dump(mode="json") for r in res.results]
     if not camps:
         _record_unmet_demand(inp)
+    old = sum(1 for c in camps if c.get("last_season"))
     return ToolOutput(
         content={
             "total": res.total,
             "camps": [_compact_camp(c) for c in camps],
-            "note": None if camps else _empty_note(
-                inp.location, "No camps matched. Widen the radius, drop a filter, or try a nearby city."),
+            "note": _empty_note(inp.location, "No camps matched. Widen the radius, drop a filter, or try a nearby city.")
+            if not camps else (f"{old} of these show last season's prices (last_season); "
+                               f"{planning_year()} details aren't posted yet. Say so when you mention a price."
+                               if old else None),
         },
         ui={"type": "camps", "camps": camps, "query": inp.model_dump(mode="json", exclude_none=True)},
     )
@@ -228,23 +235,40 @@ def _record_unmet_demand(inp: SearchCampsInput) -> None:
         pass  # demand logging never blocks the family
 
 
+LAST_YEAR = timedelta(weeks=52)  # same weekday, a year back
+
+
 async def find_sessions_tool(inp: FindSessionsInput) -> ToolOutput:
-    matches = await find_sessions(
-        near=inp.location, api_base="", radius_miles=inp.radius_miles, age=inp.age,
-        categories=inp.categories, max_price_per_week=inp.max_price_per_week,
-        starts_on_or_after=inp.starts_on_or_after, ends_on_or_before=inp.ends_on_or_before,
-        open_only=True, limit=inp.limit,
-    )
+    args = dict(near=inp.location, api_base="", radius_miles=inp.radius_miles, age=inp.age,
+                categories=inp.categories, max_price_per_week=inp.max_price_per_week, open_only=True, limit=inp.limit)
+    matches = await find_sessions(starts_on_or_after=inp.starts_on_or_after,
+                                  ends_on_or_before=inp.ends_on_or_before, **args)
+    # Most camps post next summer's dates in winter. For a window in the summer being planned,
+    # also show camps that ran the same week last season, marked, rather than an empty answer.
+    window = [d for d in (inp.starts_on_or_after, inp.ends_on_or_before) if d]
+    if window and all(d.year == planning_year() for d in window) and len(matches) < inp.limit:
+        seen = {p.id for _, p in matches}
+        older = await find_sessions(
+            starts_on_or_after=inp.starts_on_or_after - LAST_YEAR if inp.starts_on_or_after else None,
+            ends_on_or_before=inp.ends_on_or_before - LAST_YEAR if inp.ends_on_or_before else None, **args)
+        matches += [(s, p) for s, p in older if p.id not in seen][: inp.limit - len(matches)]
     rows = [
         {"camp_id": str(p.id), "camp": p.name, "session_id": str(s.id), "session": s.name,
          "start_date": s.start_date.isoformat(), "end_date": s.end_date.isoformat(),
-         "price": s.price, "availability": s.availability, "distance_miles": p.distance_miles}
+         "price": s.price, "availability": s.availability, "distance_miles": p.distance_miles,
+         **({"last_season": True} if is_last_season(s.start_date.year) else {})}
         for s, p in matches
     ]
+    old = sum(1 for r in rows if r.get("last_season"))
+    note = (_empty_note(inp.location, "Nothing open in that window.") if not rows else
+            f"{old} of these are last season's dates and prices for the same week (last_season); "
+            f"{planning_year()} dates aren't posted yet. Say so; the camp's page can alert them when they're out."
+            if old else None)
     ui_sessions = [
         {
             "session_id": str(s.id), "name": s.name, "start_date": s.start_date.isoformat(),
             "end_date": s.end_date.isoformat(), "price": s.price, "availability": s.availability,
+            "last_season": is_last_season(s.start_date.year),
             "camp": {
                 "id": str(p.id), "name": p.name, "city": p.location.city, "state": p.location.state,
                 "distance_miles": p.distance_miles, "price_per_week": p.price.per_week,
@@ -257,7 +281,7 @@ async def find_sessions_tool(inp: FindSessionsInput) -> ToolOutput:
         for s, p in matches
     ]
     return ToolOutput(
-        content={"sessions": rows, "note": None if rows else _empty_note(inp.location, "Nothing open in that window.")},
+        content={"sessions": rows, "note": note},
         ui={"type": "sessions", "sessions": ui_sessions},
     )
 
@@ -418,6 +442,8 @@ class ToolSpec:
     family: bool = False  # needs a family_id
     status: str = ""  # shown in the UI while the tool runs
     family_optional: bool = False  # public, but also gets the family_id when there is one
+    needs_channel: bool = False  # also gets who is calling: site, chatgpt, claude, assistant
+    writes: bool = False  # changes something outside the conversation (MCP annotations say so)
 
 
 CAMP_TOOLS: list[ToolSpec] = [
@@ -514,6 +540,10 @@ import campfinder.agent.booking_tools  # noqa: E402,F401
 import campfinder.agent.activity_tools  # noqa: E402,F401
 
 
+# Inquiries (a parent's question to a camp, sent after the parent says yes) add theirs.
+import campfinder.agent.inquiry_tools  # noqa: E402,F401
+
+
 def _inline_refs(schema: dict[str, Any]) -> dict[str, Any]:
     """Inline $defs so each tool's input_schema is a single self-contained object."""
     defs = schema.pop("$defs", {})
@@ -547,8 +577,11 @@ def anthropic_tools(include_family: bool) -> list[dict[str, Any]]:
     ]
 
 
-async def run_tool(name: str, raw_input: Any, family_id: str | None = None) -> ToolOutput:
-    """Validate the model's input and run the tool. Raises ToolError on any failure."""
+async def run_tool(name: str, raw_input: Any, family_id: str | None = None, channel: str = "site") -> ToolOutput:
+    """Validate the model's input and run the tool. Raises ToolError on any failure.
+
+    channel is who is calling, set by the server (the MCP host, or "site" for our own agent),
+    never by the model."""
     spec = ALL_TOOLS.get(name)
     if spec is None or (spec.family and not family_id):
         raise ToolError(f"Unknown tool: {name}")
@@ -557,6 +590,8 @@ async def run_tool(name: str, raw_input: Any, family_id: str | None = None) -> T
     except ValidationError as e:
         raise ToolError(f"Invalid input: {e.errors(include_url=False)}") from e
     try:
+        if spec.needs_channel:
+            return await spec.fn(inp, family_id, channel)
         if spec.family or spec.family_optional:
             return await spec.fn(inp, family_id)
         return await spec.fn(inp)

@@ -57,7 +57,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.whitincommunitycenter.com/our-community/camp-whitin/",
       "kind": "html",
@@ -96,6 +96,15 @@
         "quote": "Each day will include a new craft, game, and physical activity"
       }
     ],
-    "errors": []
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.whitincommunitycenter.com/our-community/camp-whitin/",
+      "changes": [],
+      "for_andrew": [
+        "2026 dates and prices are only in linked PDF brochures, not captured; registration_url is the center-wide Daxko programs page"
+      ]
+    }
   }
 }

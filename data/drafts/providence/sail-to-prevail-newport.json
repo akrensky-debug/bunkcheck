@@ -24,7 +24,7 @@
   "sources": [
     {
       "url": "https://sailtoprevail.org/",
-      "checked": "2026-10-13",
+      "checked": "2026-10-27",
       "fields": [
         "name",
         "operator_name",
@@ -43,10 +43,18 @@
         "swim_waterfront_notes"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://sailtoprevail.org/newport/",
+      "checked": "2026-10-27",
+      "fields": [
+        "financial_aid"
+      ]
     }
   ],
+  "financial_aid": true,
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://sailtoprevail.org/",
       "kind": "html",
@@ -87,6 +95,19 @@
     ],
     "errors": [
       "missing required season_year"
-    ]
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://sailtoprevail.org/",
+      "changes": [
+        "Added financial_aid=true: Newport page says need-based scholarships are available."
+      ],
+      "for_andrew": [
+        "Judgement call, leaning drop: this is a therapeutic sailing program for disabled children and adults (2-hour instructional sails, $70 per boat, weekdays mid-June to mid-August), not a camp with sessions.",
+        "No season year on the site: the Newport page still says 'Our 2020 Newport programming will run from June 29-August 14, 2020' and the homepage says only 'Registration opens in April!'. season_year stays missing.",
+        "ZIP 02840 comes from the P.O. Box mailing address; docks are at Fort Adams State Park, Newport."
+      ]
+    }
   }
 }

@@ -3,9 +3,9 @@
   "name": "Camp Kaleidoscope",
   "website_url": "https://kaleidoscopepvd.org/camp.html",
   "registration_url": "https://kaleidoscopepvd.cheddarup.com",
-  "city": null,
-  "state": null,
-  "zip": null,
+  "city": "Providence",
+  "state": "RI",
+  "zip": "02903",
   "camp_type": "day",
   "primary_categories": [
     "STEM",
@@ -66,10 +66,39 @@
         "sessions"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://kaleidoscopepvd.org/about.html",
+      "checked": "2026-10-27",
+      "fields": [
+        "email",
+        "street_address",
+        "city",
+        "state"
+      ]
+    },
+    {
+      "url": "https://kaleidoscopepvd.org/index.html",
+      "checked": "2026-10-27",
+      "fields": [
+        "age_min",
+        "age_max"
+      ]
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=131+Washington+Street&city=Providence&state=RI&benchmark=Public_AR_Current&format=json",
+      "checked": "2026-10-27",
+      "fields": [
+        "zip"
+      ]
     }
   ],
+  "email": "contact@kaleidoscopepvd.org",
+  "street_address": "131 Washington Street",
+  "age_min": 6,
+  "age_max": 12,
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://kaleidoscopepvd.org/camp.html",
       "kind": "html",
@@ -112,10 +141,18 @@
         "quote": "Sliding Scale"
       }
     ],
-    "errors": [
-      "missing required city",
-      "missing required state",
-      "missing required zip"
-    ]
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://kaleidoscopepvd.org/camp.html",
+      "changes": [
+        "Location from the About page: AS220 Community Studios, 131 Washington Street, Providence, RI (new source); email contact@kaleidoscopepvd.org",
+        "zip 02903 from the US Census geocoder (own source)",
+        "Ages 6-12 from the home page ('for curious kids ages 6-12')",
+        "Checked sessions (June 22-26, June 29 - July 3, 2026), $350/week base price and sliding scale against camp.html"
+      ],
+      "for_andrew": []
+    }
   }
 }

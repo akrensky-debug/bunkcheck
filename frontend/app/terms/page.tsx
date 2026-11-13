@@ -32,6 +32,9 @@ export default function TermsPage() {
         Always confirm with the camp before you register or pay. Bunkcheck is provided &quot;as is&quot; and
         we are not responsible for a camp&apos;s programs, staff, safety or decisions.
       </p>
+      <p>
+        How we order camps, and what never counts, is on our <a href="/ranking">ranking rules</a> page.
+      </p>
 
       <h2>AI answers</h2>
       <p>

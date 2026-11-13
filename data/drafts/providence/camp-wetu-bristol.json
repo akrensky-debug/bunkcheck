@@ -8,9 +8,6 @@
   "city": "Bristol",
   "state": "RI",
   "zip": "02809",
-  "primary_categories": [
-    "nature"
-  ],
   "description_short": "Camp Wetu is a summer camp at Mount Hope Farm in Bristol, RI. The 2026 season ran six weeks and included outdoor adventures, water days and creative activities.",
   "activities": [
     "Outdoor adventures",
@@ -31,7 +28,6 @@
         "city",
         "state",
         "zip",
-        "primary_categories",
         "activities",
         "description_short"
       ],
@@ -39,7 +35,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.mounthopefarm.org/camp-wetu",
       "kind": "html",
@@ -92,6 +88,19 @@
     "errors": [
       "missing required camp_type",
       "camp_type must be one of ['day', 'sleepaway', 'specialty']"
-    ]
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.mounthopefarm.org/camp-wetu",
+      "changes": [
+        "Removed primary_categories [nature]: the page names no category (draft guessed it from the farm setting)"
+      ],
+      "for_andrew": [
+        "camp_type is missing: the page does not say day or overnight (likely day camp, but not stated); set it or ask Mount Hope Farm",
+        "Page is a 2026 wrap-up only: no ages, prices or sessions; 2027 details not posted yet",
+        "Phone 401-254-1745 is the general Mount Hope Farm number from the footer"
+      ]
+    }
   }
 }

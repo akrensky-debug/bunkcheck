@@ -45,7 +45,7 @@
   "sources": [
     {
       "url": "https://www.cityofattleboro.us/266/Summer-All-Day-Program",
-      "checked": "2026-10-13",
+      "checked": "2026-10-27",
       "fields": [
         "name",
         "operator_name",
@@ -81,7 +81,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.cityofattleboro.us/266/Summer-All-Day-Program",
       "kind": "html",
@@ -126,6 +126,16 @@
         "quote": "Arts and Crafts ... Various Indoor Sports and Exercise"
       }
     ],
-    "errors": []
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.cityofattleboro.us/266/Summer-All-Day-Program",
+      "changes": [],
+      "for_andrew": [
+        "phone 508-223-2222 is the Attleboro City Hall number in the page footer, not a Recreation Department line",
+        "primary_categories sports+arts is a judgement call for a general rec day program; \"general\" may fit better"
+      ]
+    }
   }
 }

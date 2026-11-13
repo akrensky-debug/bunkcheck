@@ -27,10 +27,7 @@
     "Sailing center",
     "Kayaking"
   ],
-  "price_min": 1995,
-  "price_max": 1995,
   "meals_included": true,
-  "refund_policy_summary": "$500 deposit secures registration and is fully refundable before April 1 (the page says 2026). The remaining balance is due by May 1 (the page says 2026). The 2027 deadlines have not been confirmed.",
   "swim_waterfront_notes": "Campers have access to the recreation center, sailing center, kayaks and the RWU waterfront. The page does not describe swim testing or supervision.",
   "season_year": 2027,
   "sessions": [
@@ -52,7 +49,7 @@
   "sources": [
     {
       "url": "https://www.rwu.edu/summer-camps/forensic-science-summer-camp",
-      "checked": "2026-10-13",
+      "checked": "2026-10-27",
       "fields": [
         "name",
         "operator_name",
@@ -69,18 +66,18 @@
         "grade_min",
         "grade_max",
         "description_short",
+        "meals_included",
+        "swim_waterfront_notes",
+        "sessions",
         "price_min",
         "price_max",
-        "meals_included",
-        "refund_policy_summary",
-        "swim_waterfront_notes",
-        "sessions"
+        "price_per"
       ],
       "note": "Drafted by the listing tool from this page"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.rwu.edu/summer-camps/forensic-science-summer-camp",
       "kind": "html",
@@ -132,6 +129,21 @@
         "quote": "Cost: $1,995"
       }
     ],
-    "errors": []
-  }
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.rwu.edu/summer-camps/forensic-science-summer-camp",
+      "changes": [
+        "Removed price_min/price_max and session prices ($1,995) and refund_policy_summary: they sit next to deposit/payment deadlines dated April-May 2026, so they look carried over from 2026 while sessions are July 2027.",
+        "Added $1,995 per session (tuition, room and board) at Andrew's request, 2026-11-13: the page states 'Cost: $1,995' beside the July 2027 sessions"
+      ],
+      "for_andrew": [
+        "The deposit and payment deadlines on the page are still dated April and May 2026, so confirm with RWU that $1,995 is the 2027 price."
+      ]
+    }
+  },
+  "price_min": 1995,
+  "price_max": 1995,
+  "price_per": "session"
 }

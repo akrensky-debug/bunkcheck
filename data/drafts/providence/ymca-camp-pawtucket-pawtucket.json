@@ -21,6 +21,12 @@
     "outdoor time"
   ],
   "swim_waterfront_notes": "Swimming is listed among daily activities; the camp is based at the Pawtucket Family YMCA. Pool details and swim testing are not described.",
+  "primary_categories": [
+    "general"
+  ],
+  "price_min": 285,
+  "price_per": "week",
+  "meals_included": true,
   "sources": [
     {
       "url": "https://ymcapawtucket.org/camps/camp-pawtucket",
@@ -44,10 +50,20 @@
         "swim_waterfront_notes"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://ymcapawtucket.org/camps/camp-pawtucket-day-camp",
+      "checked": "2026-10-27",
+      "fields": [
+        "primary_categories",
+        "price_min",
+        "price_per",
+        "meals_included"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://ymcapawtucket.org/camps/camp-pawtucket",
       "kind": "html",
@@ -80,6 +96,18 @@
     ],
     "errors": [
       "missing required season_year"
-    ]
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://ymcapawtucket.org/camps/camp-pawtucket (and /camps/camp-pawtucket-day-camp)",
+      "changes": [
+        "Added primary_categories general, 'Starting at $285 per week' (price_min) and meals_included true ('Includes daily lunch') from the Day Camp page."
+      ],
+      "for_andrew": [
+        "season_year missing: the Day Camp page gives 'June 22 - August 28' (6:30am-6pm) with no year (Mon/Fri in 2026); no session added until the year is confirmed.",
+        "Ages conflict: main page says ages 5-13; Day Camp page has groups up to 15-16 (LIT) and specialty camps for 5-16. Kept 5-13."
+      ]
+    }
   }
 }

@@ -47,7 +47,7 @@
   "sources": [
     {
       "url": "https://www.newportchildrenstheatre.org/summer-camps",
-      "checked": "2026-10-13",
+      "checked": "2026-10-27",
       "fields": [
         "name",
         "operator_name",
@@ -76,7 +76,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.newportchildrenstheatre.org/summer-camps",
       "kind": "html",
@@ -122,6 +122,15 @@
         "quote": "for ages 8-18 July 27-August 8th"
       }
     ],
-    "errors": []
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.newportchildrenstheatre.org/summer-camps",
+      "changes": [],
+      "for_andrew": [
+        "refused: ask the owner for the brochure (the site returned HTTP 429 Too Many Requests on the check fetch)."
+      ]
+    }
   }
 }

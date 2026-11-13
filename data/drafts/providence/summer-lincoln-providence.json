@@ -13,7 +13,7 @@
   "sources": [
     {
       "url": "https://www.lincolnschool.org/summerlincoln/summerlincoln",
-      "checked": "2026-10-13",
+      "checked": "2026-10-27",
       "fields": [
         "name",
         "operator_name",
@@ -29,7 +29,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.lincolnschool.org/summerlincoln/summerlincoln",
       "kind": "html",
@@ -70,6 +70,16 @@
     "errors": [
       "missing required camp_type",
       "camp_type must be one of ['day', 'sleepaway', 'specialty']"
-    ]
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.lincolnschool.org/summerlincoln/summerlincoln",
+      "changes": [],
+      "for_andrew": [
+        "Placeholder page: \"Information about next year’s summer camps will be available in December\"; no camp type, ages, dates or prices, so camp_type cannot be set from the page",
+        "Recheck in December 2026 for 2027 details, or hold the listing until then; season_year 2027 is inferred from \"next year’s summer camps\""
+      ]
+    }
   }
 }

@@ -384,9 +384,12 @@ def score_activity(
     if p.get("trial_available"):
         score += 0.03
         reasons.append("Trial class available")
-    if p.get("verification_status") in ("team_verified", "provider_verified"):
+    # Only the provider's own free confirmation counts. Our check (team_verified) is what the
+    # paid verified profile sells, so it never adds to the score (services/ranking.py).
+    status = p.get("verification_status")
+    if status == "provider_verified":
         score += 0.02
-    else:
+    if status not in ("team_verified", "provider_verified"):
         reasons.append("Not yet verified")
     return min(score, 1.0), reasons
 

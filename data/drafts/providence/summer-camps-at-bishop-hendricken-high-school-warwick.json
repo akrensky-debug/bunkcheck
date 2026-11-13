@@ -36,7 +36,7 @@
   "sources": [
     {
       "url": "https://hendricken.com/camps/",
-      "checked": "2026-10-13",
+      "checked": "2026-10-27",
       "fields": [
         "name",
         "operator_name",
@@ -58,7 +58,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://hendricken.com/camps/",
       "kind": "html",
@@ -120,6 +120,17 @@
         "quote": "$175"
       }
     ],
-    "errors": []
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://hendricken.com/camps/",
+      "changes": [],
+      "for_andrew": [
+        "Page is a school list of separate camps, several run by outside groups (Best of Hoops, Elite Football School, Tape Ball Theatrics, sprint.hurdle.soar); decide whether to keep one umbrella listing, split it, or drop it",
+        "Page gives no year; season_year 2026 and the June 29-July 2 session are inferred from weekdays and the 2026 copyright",
+        "Unclear whether the $175 / June 29-July 2 / 3:30-7pm details belong to the basketball camp or the track coaching text below it"
+      ]
+    }
   }
 }
