@@ -18,7 +18,7 @@
   "sources": [
     {
       "url": "https://www.mobilequestadventures.com/camp",
-      "checked": "2026-10-13",
+      "checked": "2026-10-27",
       "fields": [
         "name",
         "operator_name",
@@ -37,7 +37,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.mobilequestadventures.com/camp",
       "kind": "html",
@@ -87,6 +87,17 @@
     "errors": [
       "missing required camp_type",
       "camp_type must be one of ['day', 'sleepaway', 'specialty']"
-    ]
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.mobilequestadventures.com/camp",
+      "changes": [
+        "Checked fields against the page; no changes. The page says 'Camp 2026' with contact and register link only."
+      ],
+      "for_andrew": [
+        "camp_type cannot be set from the page: neither the camp page nor the Register page (programs load in a widget) describes the program, hours, ages or prices. A person should check the program guide or ask the center."
+      ]
+    }
   }
 }

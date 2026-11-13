@@ -19,7 +19,7 @@
     "playgrounds"
   ],
   "extended_care": true,
-  "season_year": 2026,
+  "season_year": 2027,
   "sources": [
     {
       "url": "https://franklinma.gov/1158/Summer-Camp",
@@ -43,7 +43,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://franklinma.gov/1158/Summer-Camp",
       "kind": "html",
@@ -71,6 +71,17 @@
       "ACA accreditation"
     ],
     "low_confidence": [],
-    "errors": []
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://franklinma.gov/1158/Summer-Camp",
+      "changes": [
+        "season_year 2026 -> 2027: page is now headed \"2027 Summer Camp\" (registration begins March 1, 2027); no dates or prices posted"
+      ],
+      "for_andrew": [
+        "No ages, week dates or camp fee on the page (in the brochure); registration_url is the myrec program link from the page and may be the 2026 program"
+      ]
+    }
   }
 }

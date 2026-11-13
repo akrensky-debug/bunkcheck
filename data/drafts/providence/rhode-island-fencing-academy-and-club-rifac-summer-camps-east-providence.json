@@ -20,7 +20,7 @@
   "sources": [
     {
       "url": "https://rifac.com/",
-      "checked": "2026-10-13",
+      "checked": "2026-10-27",
       "fields": [
         "name",
         "operator_name",
@@ -40,7 +40,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://rifac.com/",
       "kind": "html",
@@ -71,6 +71,16 @@
     ],
     "errors": [
       "missing required season_year"
-    ]
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://rifac.com/",
+      "changes": [],
+      "for_andrew": [
+        "refused: ask the owner for the brochure. The Summer Camps page (https://rifac.com/summer-camps/) returns a bot challenge (SiteGround captcha); the homepage has no camp dates, prices, ages or year, so season_year stays missing.",
+        "Homepage fields (name, address, phone, fencing, registration link) were checked and match."
+      ]
+    }
   }
 }

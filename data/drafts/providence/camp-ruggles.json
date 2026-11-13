@@ -24,10 +24,24 @@
         "special_needs_notes"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.campruggles.org/our-program",
+      "checked": "2026-10-27",
+      "fields": [
+        "activities"
+      ]
     }
   ],
+  "activities": [
+    "swimming",
+    "boating",
+    "fishing",
+    "creative activities",
+    "movement"
+  ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.campruggles.org/",
       "kind": "html",
@@ -68,6 +82,18 @@
       "missing required camp_type",
       "missing required season_year",
       "camp_type must be one of ['day', 'sleepaway', 'specialty']"
-    ]
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.campruggles.org/",
+      "changes": [
+        "Added activities (swimming, boating, fishing, creative activities, movement) from the Our Program page (new source)",
+        "Checked name, therapeutic focus and 50+ years against the home page"
+      ],
+      "for_andrew": [
+        "The site looks like an unfinished redesign: the Families & Apply page is placeholder text ('The redesign keeps that operational value...'). No location, ages, dates, prices or day/overnight info anywhere, so city/state/zip, camp_type and season_year stay empty; ask the camp directly"
+      ]
+    }
   }
 }

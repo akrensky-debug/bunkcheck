@@ -20,7 +20,7 @@
   "sources": [
     {
       "url": "https://www.kismetimprov.com/summer",
-      "checked": "2026-10-13",
+      "checked": "2026-10-27",
       "fields": [
         "name",
         "operator_name",
@@ -47,7 +47,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.kismetimprov.com/summer",
       "kind": "html",
@@ -79,6 +79,17 @@
     ],
     "errors": [
       "missing required season_year"
-    ]
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.kismetimprov.com/summer",
+      "changes": [
+        "Checked fields against the page; no changes (address, phone, email and Suite 2205 all on the page)."
+      ],
+      "for_andrew": [
+        "No season_year can be set: the page says 'Nothing to book right now. Check back soon.' and shows no dates, ages or prices. Recheck in spring for the 2027 intensives, or drop for now."
+      ]
+    }
   }
 }

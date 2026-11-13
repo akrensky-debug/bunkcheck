@@ -25,6 +25,7 @@ from campfinder.models.coverage import WorkBlock
 from campfinder.services.coverage import care_windows
 from campfinder.services.errors import NotFound
 from campfinder.services.school_calendars import find_school
+from campfinder.services.season import planning_year
 
 Context = Literal["suggestions", "prices"]
 
@@ -54,7 +55,7 @@ GUESS_WORK = [{"parent": "Parents", "days": ["Mon", "Tue", "Wed", "Thu", "Fri"],
 
 def summer_year(today: date) -> int:
     """The summer being planned: this year until July, then next year."""
-    return today.year if today.month < 7 else today.year + 1
+    return planning_year(today)
 
 
 def _now() -> str:

@@ -11,11 +11,7 @@
   "zip": "02908",
   "camp_type": "day",
   "primary_categories": [
-    "sports",
-    "arts",
-    "STEM",
-    "academic",
-    "nature"
+    "general"
   ],
   "age_min": 5,
   "age_max": 13,
@@ -45,7 +41,7 @@
   "sources": [
     {
       "url": "https://www.pathwaykarateacademy.com/summer-vacation-camps",
-      "checked": "2026-10-13",
+      "checked": "2026-10-27",
       "fields": [
         "name",
         "operator_name",
@@ -57,7 +53,6 @@
         "state",
         "zip",
         "camp_type",
-        "primary_categories",
         "activities",
         "age_min",
         "age_max",
@@ -70,13 +65,23 @@
         "extended_care",
         "meals_included",
         "financial_aid",
-        "swim_waterfront_notes"
+        "swim_waterfront_notes",
+        "primary_categories",
+        "secondary_categories"
       ],
       "note": "Drafted by the listing tool from this page"
     }
   ],
+  "season_year": 2026,
+  "secondary_categories": [
+    "sports",
+    "arts",
+    "STEM",
+    "academic",
+    "nature"
+  ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.pathwaykarateacademy.com/summer-vacation-camps",
       "kind": "html",
@@ -142,8 +147,20 @@
         "quote": "This year, our theme will be around Nature & Our Environment."
       }
     ],
-    "errors": [
-      "missing required season_year"
-    ]
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.pathwaykarateacademy.com/summer-vacation-camps",
+      "changes": [
+        "Set season_year 2026: page has no dates, only 'This year' and (c) 2026.",
+        "primary_categories -> [general], moved sports/arts/STEM/academic/nature to secondary_categories: it is a general day camp with many activities."
+      ],
+      "for_andrew": [
+        "Page shows no session dates or year; prices ('From $220/$235/$265 weekly') may be for 2026 only. Confirm season and prices.",
+        "financial_aid=true rests only on 'We accept DHS/CCAP' (state child care subsidy), not camp scholarships. Keep or set null?",
+        "Before & Day Camp tier ($235) lists snacks only, while the other two tiers include breakfast and lunch; meals_included=true is for those tiers."
+      ]
+    }
   }
 }

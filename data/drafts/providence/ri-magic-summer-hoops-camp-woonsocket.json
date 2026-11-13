@@ -37,7 +37,7 @@
   "sources": [
     {
       "url": "https://www.rhodeislandmagic.com/copy-of-summer-camp-2026",
-      "checked": "2026-10-13",
+      "checked": "2026-10-27",
       "fields": [
         "name",
         "operator_name",
@@ -70,7 +70,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.rhodeislandmagic.com/copy-of-summer-camp-2026",
       "kind": "html",
@@ -140,6 +140,15 @@
         "quote": "COST $275"
       }
     ],
-    "errors": []
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.rhodeislandmagic.com/copy-of-summer-camp-2026",
+      "changes": [],
+      "for_andrew": [
+        "Page gives 'Monday, June 29th - Thursday, July 2nd' with no year; these weekdays fit 2026 (URL also says 2026). No 2027 dates posted."
+      ]
+    }
   }
 }

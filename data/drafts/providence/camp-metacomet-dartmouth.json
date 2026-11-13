@@ -11,10 +11,7 @@
   "zip": "02748",
   "camp_type": "day",
   "primary_categories": [
-    "sports",
-    "arts",
-    "nature",
-    "performing_arts"
+    "general"
   ],
   "description_short": "YMCA Southcoast summer day camp on 58 acres in Dartmouth, MA, open weekdays 9:00 AM to 4:00 PM with an outdoor pool. Activities include archery, sports, rock climbing, arts and crafts and swimming, plus specialty weeks for ages 9-14.",
   "activities": [
@@ -55,13 +52,20 @@
         "description_short",
         "extended_care",
         "transportation",
-        "swim_waterfront_notes"
+        "swim_waterfront_notes",
+        "secondary_categories"
       ],
       "note": "Drafted by the listing tool from this page"
     }
   ],
+  "secondary_categories": [
+    "sports",
+    "arts",
+    "nature",
+    "performing_arts"
+  ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://ymcasouthcoast.org/location/camp-metacomet/",
       "kind": "html",
@@ -103,6 +107,18 @@
         "quote": "Camp Metacomet Bus Schedule 2026"
       }
     ],
-    "errors": []
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://ymcasouthcoast.org/location/camp-metacomet/",
+      "changes": [
+        "primary_categories -> general (traditional YMCA day camp); moved sports, arts, nature, performing_arts to secondary_categories",
+        "Checked the rest: address, director contact, hours 9-4 with 7-9 / 4-5 extended care, 2026 bus schedule, outdoor pool, specialty camps for ages 9-14"
+      ],
+      "for_andrew": [
+        "No dates, ages or prices on the page (in the 2026 parent guide PDF); Dartmouth is about 30 miles from Providence"
+      ]
+    }
   }
 }

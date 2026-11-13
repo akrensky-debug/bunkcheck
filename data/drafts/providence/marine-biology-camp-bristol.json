@@ -71,7 +71,7 @@
   "sources": [
     {
       "url": "https://www.rwu.edu/academics/marine-biology-camp",
-      "checked": "2026-10-13",
+      "checked": "2026-10-27",
       "fields": [
         "name",
         "operator_name",
@@ -102,7 +102,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.rwu.edu/academics/marine-biology-camp",
       "kind": "html",
@@ -133,6 +133,17 @@
         "quote": "Registration Coming Soon"
       }
     ],
-    "errors": []
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.rwu.edu/academics/marine-biology-camp",
+      "changes": [
+        "Checked every field against the page; no changes. 2027 dates (4 one-week overnight sessions, July 7 - Aug 3) and $2,195 cost confirmed."
+      ],
+      "for_andrew": [
+        "The $2,195 cost is not labelled with a year; it sits beside the 2027 dates. Registration is 'Coming Soon'."
+      ]
+    }
   }
 }

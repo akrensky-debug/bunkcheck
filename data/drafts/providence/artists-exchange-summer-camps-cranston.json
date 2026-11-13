@@ -9,7 +9,7 @@
   "city": "Cranston",
   "state": "RI",
   "zip": "02910",
-  "camp_type": "day",
+  "camp_type": "specialty",
   "primary_categories": [
     "arts",
     "performing_arts",
@@ -72,7 +72,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.artists-exchange.org/summer-camps",
       "kind": "html",
@@ -125,6 +125,18 @@
         "quote": "there is a $50 non-refundable fee, your remaining balance paid will be refunded to your original payment method. Cancellations must be made two weeks prior to the start of camp."
       }
     ],
-    "errors": []
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.artists-exchange.org/summer-camps",
+      "changes": [
+        "camp_type day -> specialty: every camp is a single-focus arts program (art, clay, digital media, theater & dance)",
+        "Checked the rest against the page: ages 6-14 across camps, $365 base / $292 four-day camp, extended care $50/week, scholarships, cancellation policy, '2026 season' all match"
+      ],
+      "for_andrew": [
+        "Page has no session dates for 2026, only 'Registration Opens February 2'"
+      ]
+    }
   }
 }

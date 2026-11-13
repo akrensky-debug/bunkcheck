@@ -45,7 +45,7 @@
   "sources": [
     {
       "url": "https://kslc89.webnode.page/",
-      "checked": "2026-10-13",
+      "checked": "2026-10-27",
       "fields": [
         "name",
         "website_url",
@@ -66,7 +66,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://kslc89.webnode.page/",
       "kind": "html",
@@ -116,6 +116,18 @@
         "quote": "New class for the week of July 22 for students in grades 4 thru 8."
       }
     ],
-    "errors": []
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://kslc89.webnode.page/",
+      "changes": [
+        "Checked fields against the page; no field changes."
+      ],
+      "for_andrew": [
+        "The site shows only Summer 2024 ('Classes for Summer 2024', 'Register now for summer 2024!'); season_year is left as 2024 because no 2026 or 2027 dates exist. Someone should confirm KSLC still runs before listing it (drop if not).",
+        "The contact email on the site reads william.aguair@ns.sbregional.org (possibly a misspelling of 'aguiar'); confirm before use."
+      ]
+    }
   }
 }

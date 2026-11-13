@@ -8,7 +8,7 @@
   "city": "Barrington",
   "state": "RI",
   "zip": "02806",
-  "camp_type": "day",
+  "camp_type": "specialty",
   "primary_categories": [
     "arts"
   ],
@@ -67,7 +67,7 @@
   "sources": [
     {
       "url": "https://ce.risd.edu/youth-full-day-camps/",
-      "checked": "2026-10-13",
+      "checked": "2026-10-27",
       "fields": [
         "name",
         "operator_name",
@@ -99,7 +99,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://ce.risd.edu/youth-full-day-camps/",
       "kind": "html",
@@ -134,6 +134,18 @@
         "quote": "Monday–Friday, 9 am–4 pm"
       }
     ],
-    "errors": []
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://ce.risd.edu/youth-full-day-camps/",
+      "changes": [
+        "camp_type day -> specialty: it is a single-focus art camp (RISD Art Camp)."
+      ],
+      "for_andrew": [
+        "Only Summer 2026 is posted (all weeks full, waitlist); no 2027 dates and no price anywhere on the page.",
+        "Camp is at Tillinghast Place, Barrington, with no street address; ZIP 02806 comes from the Census ZCTA file (Barrington has one ZIP)."
+      ]
+    }
   }
 }

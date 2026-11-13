@@ -6,10 +6,10 @@
   "registration_url": "https://campscui.active.com/orgs/CommunityBoatingCenter?season=3780946&sessionType=168801",
   "city": "New Bedford",
   "state": "MA",
-  "zip": null,
+  "zip": "02740",
   "camp_type": "specialty",
   "primary_categories": [
-    "sports"
+    "sailing"
   ],
   "age_min": 5,
   "age_max": 17,
@@ -30,7 +30,7 @@
   "sources": [
     {
       "url": "https://www.communityboating.org/project/summer-youth-sailing-program/",
-      "checked": "2026-10-13",
+      "checked": "2026-10-27",
       "fields": [
         "name",
         "operator_name",
@@ -39,7 +39,6 @@
         "city",
         "state",
         "camp_type",
-        "primary_categories",
         "activities",
         "age_min",
         "age_max",
@@ -48,13 +47,24 @@
         "price_max",
         "meals_included",
         "financial_aid",
-        "swim_waterfront_notes"
+        "swim_waterfront_notes",
+        "primary_categories"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.communityboating.org/contact-cbc/",
+      "checked": "2026-10-27",
+      "fields": [
+        "street_address",
+        "zip",
+        "phone",
+        "email"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.communityboating.org/project/summer-youth-sailing-program/",
       "kind": "html",
@@ -138,8 +148,25 @@
       }
     ],
     "errors": [
-      "missing required zip",
       "missing required season_year"
-    ]
-  }
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.communityboating.org/project/summer-youth-sailing-program/",
+      "changes": [
+        "primary_categories sports -> sailing (the category list has sailing; the page is a sailing/windsurfing program)",
+        "Added street_address 1641 Padanaram Avenue, zip 02740, phone and email from the Clark's Cove Site/Headquarters block on communityboating.org/contact-cbc"
+      ],
+      "for_andrew": [
+        "Page gives no year or session dates, so season_year cannot be set without guessing; check the ActiveNetwork registration site or ask CBC",
+        "Page conflicts: Summer Youth Sailing \"sold out for the season\" but also \"Registration Open\"",
+        "CBC has a second site (Fort Taber, 1000 South Rodney French Blvd, 02744); page does not say which site the program uses",
+        "Not a duplicate of Providence's Community Boating Center (communityboating.com): this is New Bedford's (communityboating.org)"
+      ]
+    }
+  },
+  "street_address": "1641 Padanaram Avenue",
+  "phone": "(508) 992-6219",
+  "email": "cbc@communityboating.org"
 }
