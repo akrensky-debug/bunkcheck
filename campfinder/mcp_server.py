@@ -42,7 +42,7 @@ from campfinder.inquiries.service import record_appearances
 log = logging.getLogger(__name__)
 
 # Bump the version when widget.html changes: hosts cache templates by URI.
-WIDGET_URI = "ui://campfinder/camps-v4.html"
+WIDGET_URI = "ui://campfinder/camps-v5.html"
 WIDGET_MIME = "text/html;profile=mcp-app"
 MAX_CARDS = 8
 
@@ -70,7 +70,7 @@ INSTRUCTIONS = (
     "details), show them the preview and the confirm link, and tell them nothing is sent until they "
     "confirm; check_inquiry reads the camp's answer later."
 )
-VERSION = "1.4.0"
+VERSION = "1.5.0"
 
 
 @dataclass(frozen=True)
