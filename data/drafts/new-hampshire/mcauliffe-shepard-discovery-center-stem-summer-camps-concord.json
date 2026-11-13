@@ -79,7 +79,7 @@
   "sources": [
     {
       "url": "https://www.starhop.com/summer-camps",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -103,12 +103,11 @@
         "price_per",
         "refund_policy_summary",
         "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.starhop.com/summer-camps",
       "kind": "html",
@@ -204,6 +203,18 @@
         "quote": "Open Registration begins: February 1, 2026"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.starhop.com/summer-camps"
+      ],
+      "changes": [
+        "No field changes: name, contact, address, ages 5-14, six 2026 weeks with dates, $288/$360 non-member prices, sold-out weeks, and the 30-day refund policy all match the camp page.",
+        "financial_aid stays empty: the page links a scholarship form but also says scholarships are no longer available.",
+        "Only the 2026 season is posted; no 2027 dates yet."
+      ],
+      "open_questions": []
+    }
   }
 }

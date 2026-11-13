@@ -2,9 +2,9 @@
   "slug": "william-lawrence-camp-center-tuftonboro",
   "name": "William Lawrence Camp",
   "website_url": "https://wlcamp.org/",
-  "registration_url": "https://wlcamp.org/enroll/",
+  "registration_url": "https://wlcamp.campintouch.com/ui/forms/application/camper/App",
   "email": "knoll@wlcamp.org",
-  "phone": "(603) 569-3698",
+  "phone": "603-569-3698",
   "street_address": "139 Federal Corner Road",
   "city": "Center Tuftonboro",
   "state": "NH",
@@ -14,25 +14,99 @@
     "nature",
     "sports"
   ],
+  "activities": [
+    "Swimming",
+    "Sailing",
+    "Canoeing and kayaking",
+    "Waterskiing",
+    "Tubing",
+    "Fishing",
+    "Low and high ropes",
+    "Climbing tower",
+    "Archery",
+    "Riflery",
+    "Skeet shooting (senior campers)",
+    "Fly fishing and tying",
+    "Wilderness skills",
+    "Woodworking",
+    "Soccer",
+    "Basketball",
+    "Tennis",
+    "Volleyball"
+  ],
+  "gender_policy": "boys",
   "grade_min": 3,
   "grade_max": 11,
-  "description_short": "A traditional, not-for-profit overnight camp for boys entering grades 3–11 in New Hampshire's Lakes Region, founded in 1913. The camp is device-free, cabins have no electricity, and activities are nature-based and outdoors.",
-  "activities": [
-    "archery",
-    "camping",
-    "ropes courses",
-    "swim lessons",
-    "swimming",
-    "sailing",
-    "paddling",
-    "overnight out-camping trips"
-  ],
-  "swim_waterfront_notes": "The camp lists daily swim lessons. Waterfront activities include swimming, sailing and paddling.",
+  "description_short": "A nonprofit overnight camp for boys entering grades 3 to 10 on 250 acres in Center Tuftonboro, in New Hampshire's Lakes Region. Founded in 1913. Cabins have no electricity, boys spend the summer away from screens, and activities include archery, sailing, waterskiing, team sports and wilderness trips.",
+  "price_min": 1905,
+  "price_max": 7350,
+  "meals_included": true,
+  "financial_aid": true,
+  "refund_policy_summary": "A $500 enrollment deposit is refundable until December 1, 2026, then nonrefundable. Tuition is nonrefundable; the camp recommends tuition refund insurance through CampMinder. Final payment is due May 15, 2027.",
+  "swim_waterfront_notes": "Waterfront on Lower Beech Pond. Regular swimming lessons taught by Red Cross certified instructors, plus daily free swim. Sailing, canoeing, kayaking, waterskiing, tubing and catch-and-release fishing.",
   "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Session 1 (4 weeks)",
+      "start_date": "2027-06-27",
+      "end_date": "2027-07-24",
+      "price": 5695,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 2 (3 weeks)",
+      "start_date": "2027-07-25",
+      "end_date": "2027-08-14",
+      "price": 5140,
+      "availability": "unknown"
+    },
+    {
+      "name": "Full Summer (7 weeks)",
+      "start_date": "2027-06-27",
+      "end_date": "2027-08-14",
+      "price": 7350,
+      "availability": "unknown"
+    },
+    {
+      "name": "Two-Week A",
+      "start_date": "2027-06-27",
+      "end_date": "2027-07-10",
+      "price": 3805,
+      "availability": "unknown"
+    },
+    {
+      "name": "Two-Week B",
+      "start_date": "2027-07-11",
+      "end_date": "2027-07-24",
+      "price": 3805,
+      "availability": "unknown"
+    },
+    {
+      "name": "Two-Week C",
+      "start_date": "2027-07-25",
+      "end_date": "2027-08-07",
+      "price": 3805,
+      "availability": "unknown"
+    },
+    {
+      "name": "One-Week Introduction A (new campers only)",
+      "start_date": "2027-06-27",
+      "end_date": "2027-07-03",
+      "price": 1905,
+      "availability": "unknown"
+    },
+    {
+      "name": "One-Week Introduction B (new campers only)",
+      "start_date": "2027-07-25",
+      "end_date": "2027-07-31",
+      "price": 1905,
+      "availability": "unknown"
+    }
+  ],
   "sources": [
     {
       "url": "https://wlcamp.org/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "website_url",
@@ -45,17 +119,37 @@
         "zip",
         "camp_type",
         "primary_categories",
-        "activities",
+        "gender_policy",
+        "description_short"
+      ],
+      "note": "Homepage: boys' overnight camp, grades 3 to 10, est. 1913, address, contact, Enroll Now link"
+    },
+    {
+      "url": "https://wlcamp.org/enrollment/dates-rates/",
+      "checked": "2026-11-13",
+      "fields": [
         "grade_min",
         "grade_max",
-        "description_short",
-        "swim_waterfront_notes"
+        "price_min",
+        "price_max",
+        "meals_included",
+        "financial_aid",
+        "refund_policy_summary",
+        "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Summer 2027 Dates & Rates"
+    },
+    {
+      "url": "https://wlcamp.org/about/program/",
+      "checked": "2026-11-13",
+      "fields": [
+        "activities",
+        "swim_waterfront_notes"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://wlcamp.org/",
       "kind": "html",
@@ -86,6 +180,24 @@
         "quote": "Dates & Rates for 2027"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://wlcamp.org/",
+        "https://wlcamp.org/enrollment/dates-rates/",
+        "https://wlcamp.org/about/program/",
+        "https://wlcamp.org/enroll/"
+      ],
+      "changes": [
+        "Added the eight 2027 sessions from the Dates & Rates page (June 27 to August 14; $1,905 one-week intro to $7,350 full summer) and set price_min and price_max.",
+        "Grades: the camp now says boys entering grades 3 to 10, with LITs entering grade 11; kept grade_max 11 and fixed the description, which said 3 to 11 for campers.",
+        "Added gender_policy boys, meals_included (tuition covers room and board and shared meals), financial_aid (need-based scholarships) and the deposit and tuition refund policy.",
+        "Replaced the activity list with the one on the Programs & Activities page and expanded the waterfront notes (Lower Beech Pond, Red Cross certified swim instructors).",
+        "registration_url now points to the CampInTouch application the Enroll Now button opens (wlcamp.org/enroll/ redirects to its login).",
+        "The homepage says the camp is ACA accredited; aca_accredited is left empty because the validator needs an ACA source URL and only the camp's own pages were checked."
+      ],
+      "open_questions": []
+    }
   }
 }

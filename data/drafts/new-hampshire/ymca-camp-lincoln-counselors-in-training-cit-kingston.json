@@ -13,7 +13,7 @@
   "camp_type": "specialty",
   "age_min": 14,
   "age_max": 15,
-  "description_short": "A leadership program for teens at YMCA Camp Lincoln. Junior CIT is a paid 4-week session for 14-year-olds. Senior CIT is a free 8-week program for 15-year-olds, by application only. CITs work in cabins and lead activities alongside experienced staff.",
+  "description_short": "A leadership program for teens at YMCA Camp Lincoln, a day camp in Kingston, NH. Junior CIT is a paid 4-week session for 14-year-olds who work in cabins and lead activities with experienced staff; Senior CIT is a free 8-week program for 15-year-olds, by application only.",
   "activities": [
     "Leadership training",
     "Team building",
@@ -26,14 +26,14 @@
   "season_year": 2026,
   "sessions": [
     {
-      "name": "Junior CIT – Session 1 (2026)",
+      "name": "Junior CIT Session 1 (4 weeks, age 14)",
       "start_date": "2026-06-22",
       "end_date": "2026-07-17",
       "price": 1215,
       "availability": "unknown"
     },
     {
-      "name": "Junior CIT – Session 2 (2026)",
+      "name": "Junior CIT Session 2 (4 weeks, age 14)",
       "start_date": "2026-07-20",
       "end_date": "2026-08-14",
       "price": 1215,
@@ -43,7 +43,7 @@
   "sources": [
     {
       "url": "https://www.ymcacamplincoln.org/counselors-in-training",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -56,19 +56,21 @@
         "state",
         "zip",
         "camp_type",
+        "primary_categories",
         "activities",
         "age_min",
         "age_max",
         "description_short",
         "price_min",
         "price_max",
+        "price_per",
         "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Junior CIT must be 14 by June 15; Senior CIT 15 by June 15, no fee, 8 weeks, dates not posted"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.ymcacamplincoln.org/counselors-in-training",
       "kind": "html",
@@ -117,6 +119,28 @@
         "quote": "2027 OPEN NOW - OCTOBER 15TH"
       }
     ],
-    "errors": []
-  }
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.ymcacamplincoln.org/counselors-in-training",
+        "https://www.ymcacamplincoln.org/summer-camp"
+      ],
+      "changes": [
+        "All filled fields match the CIT page; Junior CIT 2026 dates and $1,215 price confirmed",
+        "Added primary category leadership and price_per session",
+        "Description now says Camp Lincoln is a day camp in Kingston (Summer Camp page lists Traditional Day Camp, Explorers, Specialty and CIT)",
+        "Session names no longer carry the year"
+      ],
+      "open_questions": [
+        "This listing is only the CIT program. YMCA Camp Lincoln itself (day camp, grades K-9, Kingston NH) has no draft. Should this become a YMCA Camp Lincoln listing with CIT as sessions, or stay a separate CIT listing?",
+        "camp_type is specialty; the CIT page doesn't say day or overnight, though Camp Lincoln is a day camp. Keep specialty or switch to day?",
+        "Senior CIT note '2027 OPEN NOW - OCTOBER 15TH' is unclear (opened Oct 15, or deadline Oct 15)."
+      ]
+    }
+  },
+  "primary_categories": [
+    "leadership"
+  ],
+  "price_per": "session"
 }

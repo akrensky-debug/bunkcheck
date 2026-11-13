@@ -6,11 +6,12 @@
   "registration_url": "https://campmitena.org/sign-up-for-camp/",
   "email": "stownes@graniteymca.org",
   "phone": "603-232-8642",
-  "city": null,
-  "state": null,
-  "zip": null,
+  "street_address": "65 YMCA Rd.",
+  "city": "Alton",
+  "state": "NH",
+  "zip": "03809",
   "camp_type": "sleepaway",
-  "description_short": "YMCA overnight camp run by the Granite YMCA. You can book one week, two weeks, one month or the full summer, from June 27 to August 21, 2027. Check-in is on Sundays and check-out is on Saturdays.",
+  "description_short": "A Granite YMCA overnight camp for boys ages 8 to 15 in Alton, NH, with campfires, specialty activities, trips and socials with sister Camp Foss. Stays run one week, two weeks, one month or the full summer, June 27 to August 21, 2027.",
   "activities": [
     "Campfires",
     "Specialty activities",
@@ -18,6 +19,9 @@
     "Out-of-camp trips and excursions",
     "Sign-up activity opportunities"
   ],
+  "gender_policy": "boys",
+  "age_min": 8,
+  "age_max": 15,
   "price_min": 1650,
   "price_max": 10450,
   "financial_aid": true,
@@ -95,13 +99,6 @@
       "availability": "unknown"
     },
     {
-      "name": "One Week Session 2A",
-      "start_date": "2027-07-11",
-      "end_date": "2027-07-27",
-      "price": 1650,
-      "availability": "unknown"
-    },
-    {
       "name": "One Week Session 2B",
       "start_date": "2027-07-18",
       "end_date": "2027-07-24",
@@ -149,54 +146,59 @@
       "end_date": "2027-08-21",
       "price": 500,
       "availability": "unknown"
-    },
-    {
-      "name": "Intersession Day (add-on)",
-      "start_date": "2027-07-10",
-      "end_date": "2027-07-11",
-      "price": 200,
-      "availability": "unknown"
-    },
-    {
-      "name": "Intersession Day (add-on)",
-      "start_date": "2027-07-24",
-      "end_date": "2027-07-25",
-      "price": 200,
-      "availability": "unknown"
-    },
-    {
-      "name": "Intersession Day (add-on)",
-      "start_date": "2027-08-07",
-      "end_date": "2027-08-08",
-      "price": 200,
-      "availability": "unknown"
     }
   ],
+  "price_per": "session",
   "sources": [
     {
-      "url": "https://campmitena.org/dates-and-rates/",
-      "checked": "2026-10-13",
+      "url": "https://campmitena.org/",
+      "checked": "2026-11-13",
       "fields": [
         "name",
-        "operator_name",
         "website_url",
+        "camp_type",
+        "age_min",
+        "age_max"
+      ]
+    },
+    {
+      "url": "https://campmitena.org/dates-and-rates/",
+      "checked": "2026-11-13",
+      "fields": [
+        "operator_name",
         "registration_url",
         "email",
         "phone",
-        "camp_type",
         "activities",
         "description_short",
         "price_min",
         "price_max",
+        "price_per",
         "financial_aid",
         "refund_policy_summary",
         "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
+    },
+    {
+      "url": "https://campmitena.org/contact/",
+      "checked": "2026-11-13",
+      "fields": [
+        "street_address",
+        "city",
+        "state",
+        "zip"
+      ]
+    },
+    {
+      "url": "https://campmitena.org/faq/",
+      "checked": "2026-11-13",
+      "fields": [
+        "gender_policy"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://campmitena.org/dates-and-rates/",
       "kind": "html",
@@ -234,6 +236,29 @@
       "missing required city",
       "missing required state",
       "missing required zip"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://campmitena.org/",
+        "https://campmitena.org/dates-and-rates/",
+        "https://campmitena.org/contact/",
+        "https://campmitena.org/faq/",
+        "https://campmitena.org/our-story/",
+        "https://campmitena.org/sign-up-for-camp/",
+        "https://campmitena.org/wp-content/uploads/2026/09/MTN009-Brochure-Sum2027.pdf"
+      ],
+      "changes": [
+        "Added the summer camp address, 65 YMCA Rd., Alton, NH 03809, from the Contact page.",
+        "Added gender_policy boys: the FAQ says 'Camp Mi-Te-Na for boys and Camp Foss for girls'.",
+        "Added ages 8 to 15 from the home page; it also takes 7 year olds in the 4th session only.",
+        "Rewrote the description to say it is a boys camp with ages and town.",
+        "Removed the three $200 Intersession Day add-ons from sessions; they are optional days between sessions for campers staying longer than two weeks, not stays of their own.",
+        "Removed One Week Session 2A: the page prints 'July 11 - July 27', which overlaps Session 2B and is not a week, so the real end date is unknown.",
+        "Added price_per session. Checked all 2027 dates, prices, refund policy and contacts against the Dates & Rates page; they match.",
+        "Brochure PDF is over the fetcher's 8 MB cap, so it was not read."
+      ],
+      "open_questions": []
+    }
   }
 }

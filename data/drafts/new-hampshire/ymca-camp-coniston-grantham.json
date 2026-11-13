@@ -3,7 +3,7 @@
   "name": "YMCA Camp Coniston",
   "operator_name": "YMCA Camp Coniston",
   "website_url": "https://coniston.org/dates-and-fees/",
-  "registration_url": "https://coniston.campintouch.com/ui/forms/application/alumni/App",
+  "registration_url": "https://coniston.campintouch.com/ui/forms/application/camper/App",
   "email": "office@coniston.org",
   "phone": "603-863-1160",
   "street_address": "24 Coniston Road",
@@ -12,17 +12,35 @@
   "zip": "03753",
   "camp_type": "sleepaway",
   "primary_categories": [
-    "nature"
+    "general",
+    "outdoor"
   ],
   "age_min": 8,
   "age_max": 16,
   "description_short": "YMCA overnight camp in New Hampshire offering one- and two-week overnight sessions for ages 8–15, plus 6-day Adventure Camp trips for ages 12–15. It also runs Habitat for Humanity service trips and a 4-week CIT program for older teens.",
   "activities": [
+    "Swimming lessons",
+    "Canoeing",
+    "Kayaking",
+    "Sailing (Sunfish)",
+    "Stand-up paddleboarding",
+    "Snorkeling",
+    "Archery",
+    "Riflery",
     "Horseback riding (extra fee)",
+    "Ropes course and climbing tower",
+    "CampCraft",
+    "Arts and crafts",
+    "Drama",
+    "Dance",
+    "Music",
+    "Basketball",
+    "Lacrosse",
+    "Soccer",
+    "Tennis",
     "Adventure trips",
     "Habitat for Humanity service trips",
-    "American Red Cross Lifeguard Training (CIT)",
-    "CPR (CIT)"
+    "Red Cross Lifeguard Training (CIT)"
   ],
   "price_min": 1100,
   "price_max": 6850,
@@ -153,12 +171,11 @@
   "sources": [
     {
       "url": "https://coniston.org/dates-and-fees/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
         "website_url",
-        "registration_url",
         "email",
         "phone",
         "street_address",
@@ -166,8 +183,6 @@
         "state",
         "zip",
         "camp_type",
-        "primary_categories",
-        "activities",
         "age_min",
         "age_max",
         "description_short",
@@ -176,12 +191,28 @@
         "meals_included",
         "financial_aid",
         "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
+    },
+    {
+      "url": "https://coniston.org/over-night-camp/",
+      "checked": "2026-11-13",
+      "fields": [
+        "registration_url"
+      ]
+    },
+    {
+      "url": "https://coniston.org/program-areas/",
+      "checked": "2026-11-13",
+      "fields": [
+        "primary_categories",
+        "activities",
+        "swim_waterfront_notes"
+      ]
     }
   ],
+  "swim_waterfront_notes": "Camp is on Lake Coniston. Every camper takes swimming lessons in groups by swim level; snorkeling requires passing the swim test. Campers also canoe, kayak, paddleboard and sail Sunfish on the lake.",
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://coniston.org/dates-and-fees/",
       "kind": "html",
@@ -234,6 +265,24 @@
         "quote": "Lobster Safari (Acadia National Park)"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://coniston.org/dates-and-fees/",
+        "https://coniston.org/over-night-camp/",
+        "https://coniston.org/program-areas/"
+      ],
+      "changes": [
+        "Checked all 17 2027 sessions and Tier 1 prices, ages, contact details and address against Dates and Fees; all match.",
+        "registration_url changed from the alumni application to the camper application ('Apply' / 'Campers 2027').",
+        "Rebuilt activities from the Program Areas page (waterfront, archery, riflery, ropes, arts, sports and more).",
+        "primary_categories changed from nature to general and outdoor: the program areas show a traditional overnight camp.",
+        "Added swim_waterfront_notes: lessons by swim level for every camper on Lake Coniston, snorkeling needs the swim test."
+      ],
+      "open_questions": [
+        "The address the camp gives is its Grantham, NH 03753 mailing and shipping address; the page also says campers are 'in Croydon' (Lake Coniston). Listed under Grantham as the camp gives it; change to Croydon if you prefer the physical town."
+      ]
+    }
   }
 }

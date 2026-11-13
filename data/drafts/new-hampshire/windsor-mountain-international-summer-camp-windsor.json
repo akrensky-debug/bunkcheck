@@ -30,11 +30,62 @@
     "ropes courses",
     "wilderness trips"
   ],
-  "swim_waterfront_notes": "Camp is on a private 365-acre lakefront site; sailing is offered as a specialty area. The page gives no swim program details.",
+  "swim_waterfront_notes": "Camp is on a private 365-acre lakefront site with sailing as a specialty area.",
+  "price_min": 4295,
+  "price_max": 8195,
+  "price_per": "session",
+  "financial_aid": true,
+  "aca_accredited": true,
+  "aca_source_url": "https://find.acacamps.org/camp_profile.php?camp_id=1731",
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Two Weeks",
+      "start_date": "2027-06-27",
+      "end_date": "2027-07-11",
+      "price": 5095,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 1 (25 days)",
+      "start_date": "2027-06-27",
+      "end_date": "2027-07-21",
+      "price": 8195,
+      "availability": "unknown"
+    },
+    {
+      "name": "Mini Session (11 days)",
+      "start_date": "2027-07-11",
+      "end_date": "2027-07-21",
+      "price": 4295,
+      "availability": "unknown"
+    },
+    {
+      "name": "Two Weeks",
+      "start_date": "2027-07-25",
+      "end_date": "2027-08-08",
+      "price": 5095,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 2 (25 days)",
+      "start_date": "2027-07-25",
+      "end_date": "2027-08-18",
+      "price": 8195,
+      "availability": "unknown"
+    },
+    {
+      "name": "Mini Session (11 days)",
+      "start_date": "2027-08-08",
+      "end_date": "2027-08-18",
+      "price": 4295,
+      "availability": "unknown"
+    }
+  ],
   "sources": [
     {
       "url": "https://windsormountain.org/new-families/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "website_url",
@@ -50,13 +101,26 @@
         "age_min",
         "age_max",
         "description_short",
-        "swim_waterfront_notes"
+        "swim_waterfront_notes",
+        "financial_aid",
+        "aca_accredited",
+        "aca_source_url"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "ACA status as the camp states it, with the ACA profile link the camp gives"
+    },
+    {
+      "url": "https://windsormountain.org/new-families/dates-and-rates/",
+      "checked": "2026-11-13",
+      "fields": [
+        "sessions",
+        "price_min",
+        "price_max",
+        "price_per"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://windsormountain.org/new-families/",
       "kind": "html",
@@ -85,6 +149,22 @@
     "low_confidence": [],
     "errors": [
       "missing required season_year"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://windsormountain.org/new-families/",
+        "https://windsormountain.org/new-families/dates-and-rates/"
+      ],
+      "changes": [
+        "Added season_year 2027 and six 2027 sessions with prices from the Dates & Rates page: Session 1 and 2 (25 days, $8,195), Two Weeks ($5,095) and Mini Sessions (11 days, $4,295).",
+        "Added price range $4,295 to $8,195 per session.",
+        "Added financial_aid: the camp offers scholarships for households under $100,000.",
+        "Added ACA accredited as the camp states it, with the ACA profile link from the camp's page.",
+        "Trimmed the swim note to what the page says.",
+        "The Dates & Rates page mentions 6-week and full season prices (excluding the Intersession Trip, July 21 to 24) but shows no amounts for them, so they are not listed."
+      ],
+      "open_questions": []
+    }
   }
 }

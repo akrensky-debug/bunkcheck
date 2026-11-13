@@ -105,7 +105,7 @@
   "sources": [
     {
       "url": "https://www.graniteymca.org/camps/day-camp/hooksett/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -127,20 +127,28 @@
         "financial_aid",
         "swim_waterfront_notes",
         "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
     },
     {
-      "url": "https://www.census.gov/geographies/reference-files/time-series/geo/relationship-files.2020.html",
-      "checked": "2026-10-14",
+      "url": "https://www.graniteymca.org/dev/wp-content/uploads/2024/01/Summer-Billing-Schedule.pdf",
+      "checked": "2026-11-13",
+      "fields": [
+        "refund_policy_summary"
+      ],
+      "note": "2026 Summer Day Camp Billing Schedule, linked from the Hooksett page"
+    },
+    {
+      "url": "https://tools.usps.com/zip-code-lookup.htm?citybyzipcode",
+      "checked": "2026-11-13",
       "fields": [
         "zip"
       ],
-      "note": "Hooksett, NH sits inside one ZIP code (2020 Census ZCTA relationship file)"
+      "note": "Hooksett, NH has a single ZIP code, 03106 (USPS ZIP lookup by city); the camp names the town but not the school's street address"
     }
   ],
+  "refund_policy_summary": "A $35 deposit per week is non-refundable. Cancel more than 6 weeks before the camp week for a full refund less the deposit; 3 to 6 weeks before, a $65 admin fee also applies; less than 3 weeks before, no refund.",
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.graniteymca.org/camps/day-camp/hooksett/",
       "kind": "html",
@@ -182,6 +190,21 @@
         "quote": "Week 9 (August 17 – August 21): Mystery"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.graniteymca.org/camps/day-camp/hooksett/",
+        "https://www.graniteymca.org/dev/wp-content/uploads/2024/01/Summer-Billing-Schedule.pdf",
+        "https://graniteymca.flowpaper.com/TGYDayCampBrochure/"
+      ],
+      "changes": [
+        "Checked ages 6-16, grades 1-11, the nine 2026 theme weeks, free before and after care, contacts and financial assistance against the Hooksett page; all match.",
+        "Added the refund policy from the 2026 billing schedule the page links ($35 non-refundable deposit per week; full refund over 6 weeks out, $65 fee at 3-6 weeks, none under 3 weeks).",
+        "Zip 03106 now cites the USPS city lookup (Hooksett has one ZIP) instead of the Census file.",
+        "Season stays 2026: the page still shows 2026 weeks and registration dates; no 2027 dates posted. Prices aren't on the page and the brochure didn't render, so prices stay empty."
+      ],
+      "open_questions": []
+    }
   }
 }

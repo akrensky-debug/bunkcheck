@@ -2,7 +2,7 @@
   "slug": "water-monkey-camp-new-durham",
   "name": "Water Monkey Camp",
   "website_url": "https://www.watermonkeycamp.com",
-  "registration_url": "https://evan-goldner.squarespace.com/enrollment-form",
+  "registration_url": "https://www.watermonkeycamp.com/enrollment-form",
   "email": "evan@watermonkeycamp.com",
   "phone": "(617) 855-9253",
   "street_address": "298 Merrymeeting Road",
@@ -15,7 +15,7 @@
   ],
   "age_min": 9,
   "age_max": 17,
-  "description_short": "Overnight watersports camp on Merrymeeting Lake in New Durham, NH, focused on wakeboarding, waterskiing, wakesurfing and wake skating. Weekly sessions take a maximum of 9 campers ages 9-17, who stay in lakeside cabins with counselors.",
+  "description_short": "Overnight watersports camp on Merrymeeting Lake in New Durham, NH, focused on wakeboarding, waterskiing, wakesurfing and wake skating. Each Sunday-to-Friday week takes at most 9 boys and girls ages 9-17, who live in lakeside cabins with their counselors.",
   "activities": [
     "Wakeboarding",
     "Waterskiing",
@@ -24,7 +24,7 @@
     "Land-based activities",
     "Multi-sport field"
   ],
-  "transportation": true,
+  "transportation": null,
   "meals_included": true,
   "refund_policy_summary": "The $1,750-per-week tuition deposit is fully refundable until April 1. After that date, no refunds are given for any reason.",
   "special_needs_notes": "Food allergies and dietary needs can be fully accommodated if the camp is told in advance. The chef cooks all meals from scratch.",
@@ -33,11 +33,10 @@
   "sources": [
     {
       "url": "https://www.watermonkeycamp.com/faq",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "website_url",
-        "registration_url",
         "email",
         "phone",
         "street_address",
@@ -47,20 +46,32 @@
         "camp_type",
         "primary_categories",
         "activities",
+        "gender_policy",
         "age_min",
         "age_max",
         "description_short",
-        "transportation",
         "meals_included",
         "refund_policy_summary",
         "special_needs_notes",
         "swim_waterfront_notes"
+      ]
+    },
+    {
+      "url": "https://www.watermonkeycamp.com/dates-rates",
+      "checked": "2026-11-13",
+      "fields": [
+        "registration_url",
+        "price_per_week",
+        "price_min",
+        "price_max",
+        "price_per",
+        "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Page says 'Weeks are open unless noted'; none were noted. $250 early enrollment discount before Jan 1, 2027."
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.watermonkeycamp.com/faq",
       "kind": "html",
@@ -95,6 +106,56 @@
         "quote": "When staffing allows we will offer pre-scheduled airport transportation."
       }
     ],
-    "errors": []
-  }
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.watermonkeycamp.com/faq",
+        "https://www.watermonkeycamp.com/dates-rates"
+      ],
+      "changes": [
+        "Added four 2027 weeks (Sunday to Friday, July 11 to August 6) at $3,500 each from the Dates & Rates page, availability open as the page states",
+        "Added price_per_week 3500 and price range",
+        "Registration link changed to the camp's own enrollment form page instead of the squarespace domain",
+        "Set gender_policy coed (FAQ: boys and girls)",
+        "Set transportation to null: airport rides are offered only when staffing allows, at extra cost ($450 Boston, $250 Manchester)"
+      ],
+      "open_questions": []
+    }
+  },
+  "gender_policy": "coed",
+  "price_per_week": 3500,
+  "price_min": 3500,
+  "price_max": 3500,
+  "price_per": "week",
+  "sessions": [
+    {
+      "name": "Week 1",
+      "start_date": "2027-07-11",
+      "end_date": "2027-07-16",
+      "price": 3500,
+      "availability": "open"
+    },
+    {
+      "name": "Week 2",
+      "start_date": "2027-07-18",
+      "end_date": "2027-07-23",
+      "price": 3500,
+      "availability": "open"
+    },
+    {
+      "name": "Week 3",
+      "start_date": "2027-07-25",
+      "end_date": "2027-07-30",
+      "price": 3500,
+      "availability": "open"
+    },
+    {
+      "name": "Week 4",
+      "start_date": "2027-08-01",
+      "end_date": "2027-08-06",
+      "price": 3500,
+      "availability": "open"
+    }
+  ]
 }

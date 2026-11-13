@@ -3,21 +3,29 @@
   "name": "Lantern Light Camps",
   "website_url": "https://lanternlightcamps.org/",
   "registration_url": "https://lanternlightcamps.org/go-to-camp/",
-  "city": null,
+  "email": "info@lanternlightcamps.org",
+  "phone": "(603) 942-5233",
+  "street_address": "292 Blakes Hill Rd.",
+  "city": "Northwood",
   "state": "NH",
-  "zip": null,
+  "zip": "03261",
   "primary_categories": [
-    "nature"
+    "nature",
+    "outdoor"
   ],
   "age_min": 8,
   "age_max": 15,
-  "description_short": "A non-profit New Hampshire camp held at the Wah-Tut-Ca property. It runs one-week day camp sessions for ages 8–14 and overnight sessions for ages 9–15, with campers staying in cabins.",
+  "description_short": "A nonprofit camp on Northwood Lake in Northwood, NH, on 300+ acres of woods and lakefront called Wah-Tut-Ca. It runs six one-week sessions each summer: day camp for ages 8 to 14 and overnight camp in cabins for ages 9 to 15.",
   "activities": [
-    "Outdoor activities",
-    "Games",
-    "Evening programs",
-    "Camp traditions",
-    "Leadership development"
+    "Swimming and water safety",
+    "Canoeing and kayaking",
+    "Boating",
+    "Hiking",
+    "Team challenges",
+    "Field games and team sports",
+    "Crafts and building projects",
+    "Nature walks and wildlife study",
+    "Campfires and all-camp events"
   ],
   "price_per_week": 389,
   "price_min": 389,
@@ -114,29 +122,56 @@
   "sources": [
     {
       "url": "https://lanternlightcamps.org/go-to-camp/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "website_url",
         "registration_url",
         "state",
-        "primary_categories",
-        "activities",
         "age_min",
         "age_max",
-        "description_short",
         "price_min",
         "price_max",
         "price_per_week",
         "price_per",
         "financial_aid",
         "sessions"
+      ]
+    },
+    {
+      "url": "https://lanternlightcamps.org/",
+      "checked": "2026-11-13",
+      "fields": [
+        "camp_type",
+        "description_short",
+        "aca_accredited",
+        "aca_source_url"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Homepage: 'Day and Overnight Camp in Northwood, NH'; 'We're accredited by the American Camp Association' (the camp's own statement)"
+    },
+    {
+      "url": "https://lanternlightcamps.org/contact/",
+      "checked": "2026-11-13",
+      "fields": [
+        "street_address",
+        "city",
+        "zip",
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "url": "https://lanternlightcamps.org/go-to-camp/program/",
+      "checked": "2026-11-13",
+      "fields": [
+        "primary_categories",
+        "activities",
+        "swim_waterfront_notes"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://lanternlightcamps.org/go-to-camp/",
       "kind": "html",
@@ -219,6 +254,32 @@
       "missing required camp_type",
       "camp_type must be one of ['day', 'sleepaway', 'specialty']",
       "city None, NH is not in cities.py"
-    ]
-  }
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://lanternlightcamps.org/go-to-camp/",
+        "https://lanternlightcamps.org/",
+        "https://lanternlightcamps.org/contact/",
+        "https://lanternlightcamps.org/go-to-camp/program/"
+      ],
+      "changes": [
+        "Added the camp's address from the Contact page: 292 Blakes Hill Rd., Northwood, NH 03261 (fixes missing city and ZIP).",
+        "Added phone (603) 942-5233 and email info@lanternlightcamps.org from the Contact page.",
+        "Set camp_type to sleepaway (the camp runs overnight cabin sessions alongside day camp; see question).",
+        "Added aca_accredited true: the homepage says the camp is accredited by the American Camp Association; aca_source_url is that homepage.",
+        "Replaced activities with the Our Program list (waterfront, outdoor adventure, sports and games, arts, nature, camp life); added swim_waterfront_notes for Northwood Lake.",
+        "Added 'outdoor' to primary_categories; rewrote the description from the homepage.",
+        "Sessions, $389 day / $1,139 overnight prices, ages 8-14 day and 9-15 overnight, and scholarships all match the Register for Camp page. Only 2026 is posted; the homepage says registration opens November 25, 2026."
+      ],
+      "open_questions": [
+        "Lantern Light runs both day camp (ages 8-14, $389 a week) and overnight camp (ages 9-15, $1,139 a week) in the same six weeks. I set camp_type sleepaway with both kinds of session listed. Keep one listing, or split it into a day camp and an overnight camp listing?",
+        "aca_accredited is set from the camp's own homepage claim, not checked on acacamps.org. OK to keep?"
+      ]
+    }
+  },
+  "camp_type": "sleepaway",
+  "swim_waterfront_notes": "Waterfront program on Northwood Lake: swimming and water safety, canoeing, kayaking and boating.",
+  "aca_accredited": true,
+  "aca_source_url": "https://lanternlightcamps.org/"
 }
