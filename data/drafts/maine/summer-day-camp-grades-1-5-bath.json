@@ -39,7 +39,7 @@
   "sources": [
     {
       "url": "https://bathymca.org/daycamp/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -63,11 +63,11 @@
         "refund_policy_summary",
         "swim_waterfront_notes"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Camp's own Day Camp (Grades 1-5) page, set up for 2027"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://bathymca.org/daycamp/",
       "kind": "html",
@@ -104,6 +104,21 @@
         "quote": "Session 8Coming early 2027.Coming early 2027."
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://bathymca.org/daycamp/",
+        "https://bathymca.org/2026campguide/",
+        "https://bathymca.org/wordpress/wp-content/uploads/2026/01/2026-Summer-Camp-Guide_web.pdf"
+      ],
+      "changes": [
+        "No changes: every filled field matches the Day Camp page (grades 1-5 in fall 2027, $35 registration fee, $25 weekly deposit, early and late care, swim lessons 8-9am, Bath Y at 303 Centre Street)",
+        "No sessions added: all eight 2027 sessions say 'Coming early 2027', and the 2026 Summer Camp Guide PDF couldn't be fetched (over the fetcher's 8 MB limit)"
+      ],
+      "open_questions": [
+        "Recheck in early 2027 for session dates and weekly prices."
+      ]
+    }
   }
 }

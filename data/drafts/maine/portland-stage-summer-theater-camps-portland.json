@@ -28,7 +28,7 @@
   "price_min": 315,
   "price_max": 390,
   "financial_aid": true,
-  "refund_policy_summary": "You get a full refund if you cancel more than two months before the first day, a 50% refund between two months and one month before, and no refund less than one month before. If Portland Stage cancels a program for low enrollment, it tells families two weeks ahead and gives a full refund. Signing up for more than one week gets a 10% discount.",
+  "refund_policy_summary": "Full refund if you cancel more than two months before the first day, 50% refund between two months and one month before, and no refund less than one month before. If Portland Stage cancels a program for low enrollment, it tells families two weeks ahead and gives a full refund.",
   "season_year": 2026,
   "price_per": "week",
   "sessions": [
@@ -141,7 +141,7 @@
   "sources": [
     {
       "url": "https://www.portlandstage.org/education/summer-camps/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -165,12 +165,11 @@
         "financial_aid",
         "refund_policy_summary",
         "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.portlandstage.org/education/summer-camps/",
       "kind": "html",
@@ -226,6 +225,19 @@
         "quote": "FULL, fill out the form to be added to the waitlist"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.portlandstage.org/education/summer-camps/"
+      ],
+      "changes": [
+        "Checked all 15 sessions, grades, prices ($390, $315 for the 4-day week), hours, address, box office phone and cancellation policy against the camp page: all match",
+        "Took the 10% multi-week discount out of refund_policy_summary, since it is not part of the refund policy",
+        "Kept season_year 2026: the page shows no year, but the dates fall on 2026 weekdays and it mentions Thursday, July 9th; it says Summer Camp 2027 will be announced at the end of January",
+        "Sources re-checked 2026-11-13"
+      ],
+      "open_questions": []
+    }
   }
 }

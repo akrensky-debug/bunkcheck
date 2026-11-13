@@ -10,21 +10,15 @@
   "state": "ME",
   "zip": "04469",
   "primary_categories": [
-    "STEM",
-    "technology"
+    "STEM"
   ],
-  "age_min": 7,
+  "age_min": 13,
   "age_max": 18,
-  "description_short": "A set of STEM summer programs at the University of Maine for students aged about 7 to 18, covering robotics, electronics, 3D printing, coding and building computers. Some are day camps, some are residential (overnight), and several are free.",
+  "description_short": "STEM summer programs on the University of Maine campus in Orono for teens about 13 to 18: a residential robotics camp at the Advanced Manufacturing Center, a free semiconductor day camp, and two free residential engineering programs for high school students.",
   "activities": [
     "Robotics",
     "Industrial robot credential (Universal Robots ERT-C)",
     "Electronics and semiconductors",
-    "3D design and printing",
-    "LEGO robotics with block coding",
-    "LEGO building and simple machines",
-    "Building a personal computer",
-    "Programming in Minecraft (Lua)",
     "Engineering career exploration",
     "Field trips"
   ],
@@ -82,66 +76,17 @@
       "availability": "unknown"
     },
     {
-      "name": "3D Design and Printing Camp (day camp)",
-      "start_date": "2026-07-27",
-      "end_date": "2026-07-31",
-      "price": 795,
-      "availability": "unknown"
-    },
-    {
-      "name": "Lego Robotics Camp - Week 1 (day camp)",
-      "start_date": "2026-07-13",
-      "end_date": "2026-07-17",
-      "price": 495,
-      "availability": "unknown"
-    },
-    {
-      "name": "Lego Robotics Camp - Week 2 (day camp)",
-      "start_date": "2026-07-20",
-      "end_date": "2026-07-24",
-      "price": 495,
-      "availability": "unknown"
-    },
-    {
-      "name": "Lego Robotics Camp - Week 3 (day camp)",
-      "start_date": "2026-08-03",
-      "end_date": "2026-08-07",
-      "price": 495,
-      "availability": "unknown"
-    },
-    {
       "name": "SELF Residential Summer Institute (rising 10th-12th graders)",
       "start_date": "2026-06-21",
       "end_date": "2026-06-27",
       "price": 0,
-      "availability": "unknown"
-    },
-    {
-      "name": "Build Your Own Computer Camp (commuter)",
-      "start_date": "2026-07-20",
-      "end_date": "2026-07-24",
-      "price": 1065,
-      "availability": "unknown"
-    },
-    {
-      "name": "LEGO Builders Camp (commuter)",
-      "start_date": "2026-07-13",
-      "end_date": "2026-07-17",
-      "price": 495,
-      "availability": "unknown"
-    },
-    {
-      "name": "Programming in Minecraft Camp (commuter)",
-      "start_date": "2026-07-27",
-      "end_date": "2026-07-31",
-      "price": 495,
       "availability": "unknown"
     }
   ],
   "sources": [
     {
       "url": "https://umaine.edu/mcec/outreach/summer-camps/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -152,6 +97,7 @@
         "city",
         "state",
         "zip",
+        "camp_type",
         "primary_categories",
         "activities",
         "age_min",
@@ -160,12 +106,11 @@
         "price_min",
         "price_max",
         "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://umaine.edu/mcec/outreach/summer-camps/",
       "kind": "html",
@@ -249,6 +194,30 @@
     "errors": [
       "missing required camp_type",
       "camp_type must be one of ['day', 'sleepaway', 'specialty']"
-    ]
-  }
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://umaine.edu/mcec/outreach/summer-camps/",
+        "https://umaine.edu/amc/k-12-events/",
+        "https://mcec.umaine.edu/semiconductorcamp/",
+        "https://www.ultracamp.com/info/sessionDetail.aspx?idCamp=1262&idSession=499141&campCode=UNM",
+        "https://usm.maine.edu/stem-outreach/stem-camps/"
+      ],
+      "changes": [
+        "Removed five camps (3D Design and Printing, Lego Robotics x3, Build Your Own Computer, LEGO Builders, Programming in Minecraft): their links go to USM STEM Outreach, whose registration site lists them at University of Southern Maine in Portland and Gorham, not Orono",
+        "camp_type set to specialty (all remaining programs are single-focus STEM programs, some day, some residential); the validator needed a camp_type",
+        "Ages changed from 7-18 to 13-18 after the removal (AMC Robotics 13-17 on the hub page, Semiconductor 15-18); price range stays $0 to $1,950",
+        "Rewrote description, activities and categories to match the four Orono programs only",
+        "Kept season_year 2026: the AMC page labels the robotics camp 'Summer Camps 2026' and the hub's dates fall on 2026 weekdays; no 2027 dates are posted",
+        "Sources re-checked 2026-11-13"
+      ],
+      "open_questions": [
+        "I removed the USM STEM Outreach camps from this Orono listing. Should USM STEM Outreach (Portland/Gorham) get its own draft? Its registration site already shows a 2027 season (December break sessions).",
+        "This is a hub of separately run programs with different contacts (AMC, MCEC, the Chip Moody program's foundation, SELF). Keep as one listing?",
+        "AMC Robotics ages: the hub says 13-17, the AMC page says 13-18. The AMC page also lists a two-week Automation Camp ($2,900) with no dates, so it is not a session."
+      ]
+    }
+  },
+  "camp_type": "specialty"
 }

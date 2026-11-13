@@ -37,54 +37,51 @@
     "Cooking"
   ],
   "financial_aid": true,
-  "special_needs_notes": "The camp is for children and adults with developmental and physical disabilities. The 285-acre campus is fully accessible, the camper-to-counselor ratio is 3:1, and the camp says it adjusts to each camper's needs. Programs include Camp Communicate (ages 8-16) and Sign Tree Camp (ages 18+).",
+  "special_needs_notes": "Every camper must have a developmental or physical disability. The camp says it accommodates individual campers' needs so they can try any activity, keeps a 3:1 camper-to-counselor ratio, and has nurses on site 24 hours a day during overnight sessions to give medication and medical care.",
   "swim_waterfront_notes": "There is an accessible waterfront on North Pond with an aquatics program that teaches swimming techniques suited to each camper. Boating, paddling and fishing from pontoon boats and a fishing dock are also offered.",
   "season_year": 2026,
-  "sessions": [
-    {
-      "name": "Family Camp, October '26",
-      "start_date": "2026-10-30",
-      "end_date": "2026-11-01",
-      "price": null,
-      "availability": "unknown"
-    },
-    {
-      "name": "Adventure Day Pass, October '26",
-      "start_date": "2026-10-31",
-      "end_date": "2026-10-31",
-      "price": null,
-      "availability": "unknown"
-    }
-  ],
   "sources": [
     {
       "url": "https://pinetreesociety.org/camp-home/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
         "website_url",
         "email",
         "phone",
-        "street_address",
-        "city",
-        "state",
-        "zip",
         "camp_type",
         "primary_categories",
         "activities",
         "age_min",
         "description_short",
         "financial_aid",
-        "special_needs_notes",
-        "swim_waterfront_notes",
-        "sessions"
+        "swim_waterfront_notes"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Camp home page (header, About, activities, program table)"
+    },
+    {
+      "url": "https://pinetreesociety.org/camp-home/program-options/",
+      "checked": "2026-11-13",
+      "fields": [
+        "street_address",
+        "city",
+        "state",
+        "zip"
+      ],
+      "note": "Program Options page; camp address in the footer (Pine Tree Camp, 114 Pine Tree Camp Road, Rome, Maine 04963)"
+    },
+    {
+      "url": "https://pinetreesociety.org/camp-home/childrens-overnight-camp/",
+      "checked": "2026-11-13",
+      "fields": [
+        "special_needs_notes"
+      ],
+      "note": "Children's Overnight page: week-long sessions for ages 8-18, nurses on site 24 hours, eligibility"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://pinetreesociety.org/camp-home/",
       "kind": "html",
@@ -121,6 +118,29 @@
         "quote": "Family Camp, October '26 October 30 - November 1"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://pinetreesociety.org/camp-home/",
+        "https://pinetreesociety.org/camp-home/program-options/",
+        "https://pinetreesociety.org/camp-home/childrens-overnight-camp/",
+        "https://pinetreesociety.org/camp-home/day-camp/",
+        "https://pinetreesociety.org/camp-home/frequently-asked-questions/",
+        "https://pinetreesociety.org/camp-home/tuition-assistance/",
+        "https://pinetreesociety.org/events/list/"
+      ],
+      "changes": [
+        "Removed the two sessions (Family Camp Oct 30-Nov 1, 2026 and Adventure Day Pass Oct 31, 2026): they are past fall family events, not summer sessions for kids, and no summer dates are posted anywhere on the site",
+        "Moved the address, city, state and zip source to the Program Options page, whose footer shows 114 Pine Tree Camp Road, Rome, Maine 04963 (the home page text we read does not)",
+        "Rewrote special_needs_notes from the Children's Overnight page (disability required, 3:1 ratio, nurses on site 24 hours)",
+        "Kept season_year 2026: the site's own events are labeled 2026 and nothing for 2027 is posted",
+        "Left aca_accredited empty: the camp says it is ACA accredited, but the validator needs an ACA source URL and we checked only the camp's own pages"
+      ],
+      "open_questions": [
+        "No summer dates or tuition are posted for any program; recheck in spring for 2027 children's overnight and Camp Pine Cone weeks.",
+        "Camp Pine Cone's page gives its age range as both 5 to 13 and 5 to 12; the program table says 5-12. age_min 5 is safe either way."
+      ]
+    }
   }
 }

@@ -17,11 +17,11 @@
   "description_short": "Maine Audubon runs nature day camps at Gilsland Farm Audubon Center in Falmouth (Greater Portland) and Fields Pond Audubon Center in Holden (Greater Bangor). There are summer programs for preschoolers through rising 6th graders, plus February and April vacation camps.",
   "financial_aid": true,
   "refund_policy_summary": "Summer camp: full refund if Maine Audubon cancels. If the family cancels after June 1, there is no refund. Cancellations before June 1 are refunded minus a $30 processing fee per registration. COVID-related cancellations are refunded minus $30. Vacation camp: no refund within 14 days of the start. Earlier cancellations are refunded minus a $30 fee.",
-  "season_year": 2027,
+  "season_year": 2026,
   "sources": [
     {
       "url": "https://maineaudubon.org/education/day-camps/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -38,12 +38,22 @@
         "description_short",
         "financial_aid",
         "refund_policy_summary"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
+    },
+    {
+      "url": "https://maineaudubon.org/wp-content/uploads/2026-Gilsland-Farm-Summer-Camp-one-pager.pdf",
+      "checked": "2026-11-13",
+      "fields": [
+        "price_min",
+        "price_max",
+        "price_per_week",
+        "price_per",
+        "sessions"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://maineaudubon.org/education/day-camps/",
       "kind": "html",
@@ -94,6 +104,88 @@
         "quote": "no refunds will be issued for cancellations made after June 1, 2027. For cancellations made by the attendee before June 1, 2026, refunds will be issued minus a $30 processing fee per registration."
       }
     ],
-    "errors": []
-  }
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://maineaudubon.org/education/day-camps/",
+        "https://maineaudubon.org/wp-content/uploads/2026-Gilsland-Farm-Summer-Camp-one-pager.pdf",
+        "https://maineaudubon.org/wp-content/uploads/Summer-Preschool-Camps-FAQ.pdf"
+      ],
+      "changes": [
+        "season_year 2027 changed to 2026: every 2027 program says 'More information coming January 2027'; the only posted schedule is the Summer 2026 Gilsland Farm PDF",
+        "Added the eight 2026 Gilsland Farm camp weeks (June 29 to August 28, no camp July 27-31) from the PDF; price left null per week because it varies by program",
+        "Added prices from the PDF: Sprouts half day $300 member / $340 nonmember, Saplings and Discovery Kids $370 member / $415 nonmember per week; price_per_week 415 (nonmember full day)",
+        "Confirmed address, phone, ages 3 and up, Raptors up to rising 6th grade, scholarships and both cancellation policies on the day camps page",
+        "Moved sources to checked 2026-11-13 with a separate entry for the schedule PDF"
+      ],
+      "open_questions": [
+        "Exact duplicate of draft maine-audubon-day-camps-falmouth (same URL, same fields). Keep one and drop this '-2' copy?",
+        "Fields Pond sessions in Holden are not in the PDF (Gilsland Farm only); Fields Pond is a second site under the same listing. The PDF also says Discovery Kids is for grades 1-4 while the page says K-3; grade_max 6 comes from Fields Pond Raptors on the camp's page.",
+        "Summer refund policy mixes years ('after June 1, 2027' vs 'before June 1, 2026'); the summary leaves the year out."
+      ]
+    }
+  },
+  "price_min": 300,
+  "price_max": 415,
+  "price_per_week": 415,
+  "sessions": [
+    {
+      "name": "Gilsland Farm summer camp week 1 (Sprouts, Saplings or Discovery Kids; themes vary)",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-03",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Gilsland Farm summer camp week 2 (Sprouts, Saplings or Discovery Kids; themes vary)",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Gilsland Farm summer camp week 3 (Sprouts, Saplings or Discovery Kids; themes vary)",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Gilsland Farm summer camp week 4 (Sprouts, Saplings or Discovery Kids; themes vary)",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Gilsland Farm summer camp week 5 (Sprouts, Saplings or Discovery Kids; themes vary)",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Gilsland Farm summer camp week 6 (Sprouts, Saplings or Discovery Kids; themes vary)",
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-14",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Gilsland Farm summer camp week 7 (Sprouts, Saplings or Discovery Kids; themes vary)",
+      "start_date": "2026-08-17",
+      "end_date": "2026-08-21",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Gilsland Farm summer camp week 8 (Sprouts, Saplings or Discovery Kids; themes vary)",
+      "start_date": "2026-08-24",
+      "end_date": "2026-08-28",
+      "price": null,
+      "availability": "unknown"
+    }
+  ],
+  "price_per": "week"
 }

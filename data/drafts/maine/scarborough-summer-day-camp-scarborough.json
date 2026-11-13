@@ -3,6 +3,7 @@
   "name": "Scarborough Summer Day Camp",
   "operator_name": "Scarborough Community Services (Town of Scarborough)",
   "website_url": "https://www.scarboroughmaine.org/departments/community-services/child-care/summer-day-camp",
+  "registration_url": "https://mescarboroughweb.myvscloud.com/webtrac/web/search.html?display=detail&module=AR&primarycode=K58W5D",
   "email": "comserv@scarboroughmaine.org",
   "phone": "(207) 730-4150",
   "city": "Scarborough",
@@ -25,7 +26,7 @@
   "price_min": 1650,
   "price_max": 1750,
   "extended_care": true,
-  "refund_policy_summary": "You enroll for all 7 weeks as one program. You can't drop single weeks; withdrawing means dropping all seven. The page doesn't say whether money is refunded.",
+  "refund_policy_summary": "The 7-week program is sold as one unit. Single weeks can't be dropped; withdrawing means dropping all seven weeks. The page gives no refund terms.",
   "season_year": 2026,
   "sessions": [
     {
@@ -46,11 +47,12 @@
   "sources": [
     {
       "url": "https://www.scarboroughmaine.org/departments/community-services/child-care/summer-day-camp",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
         "website_url",
+        "registration_url",
         "email",
         "phone",
         "city",
@@ -67,12 +69,11 @@
         "extended_care",
         "refund_policy_summary",
         "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.scarboroughmaine.org/departments/community-services/child-care/summer-day-camp",
       "kind": "html",
@@ -128,6 +129,19 @@
         "quote": "Indicate whether you want Week 8 (not guaranteed)."
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.scarboroughmaine.org/departments/community-services/child-care/summer-day-camp"
+      ],
+      "changes": [
+        "Confirmed on the town page: Summer Day Camp 2026 for resident children entering grades K-6 at Wentworth School, 6/29-8/13 (no camp 7/3), Week 8 8/17-8/20, 7:30 am to 5:30 pm at no extra charge, $1,650 pay in full or $1,750 payment plan, Week 8 $275",
+        "Added registration_url (the WebTrac 'Summer Day Camp 2026 Registration' link on the page)",
+        "Tightened refund_policy_summary to what the page says",
+        "Sources re-checked 2026-11-13"
+      ],
+      "open_questions": []
+    }
   }
 }

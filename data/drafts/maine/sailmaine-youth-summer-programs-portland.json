@@ -3,6 +3,7 @@
   "name": "SailMaine Youth Summer Programs",
   "operator_name": "SailMaine",
   "website_url": "https://www.sailmaine.org/youth-summer-camp",
+  "registration_url": "https://sailmaine.campmanagement.com/p/request_for_info_m.php?action=enroll",
   "phone": "(207) 772-7245",
   "street_address": "Amethyst Lot Park (end of Commercial St/Thames St)",
   "city": "Portland",
@@ -32,28 +33,28 @@
   "season_year": 2026,
   "sessions": [
     {
-      "name": "Portland Session 1 (2-week; closed Fri July 3)",
+      "name": "Portland Session 1 (2-week, full-day price; half day $445; closed Fri July 3)",
       "start_date": "2026-06-22",
       "end_date": "2026-07-02",
       "price": 890,
       "availability": "unknown"
     },
     {
-      "name": "Portland Session 2 (2-week)",
+      "name": "Portland Session 2 (2-week, full-day price; half day $445)",
       "start_date": "2026-07-06",
       "end_date": "2026-07-17",
       "price": 890,
       "availability": "unknown"
     },
     {
-      "name": "Portland Session 3 (2-week)",
+      "name": "Portland Session 3 (2-week, full-day price; half day $445)",
       "start_date": "2026-07-20",
       "end_date": "2026-07-31",
       "price": 890,
       "availability": "unknown"
     },
     {
-      "name": "Portland Session 4 (2-week)",
+      "name": "Portland Session 4 (2-week, full-day price; half day $445)",
       "start_date": "2026-08-03",
       "end_date": "2026-08-14",
       "price": 890,
@@ -121,37 +122,17 @@
       "end_date": "2026-08-21",
       "price": 289,
       "availability": "unknown"
-    },
-    {
-      "name": "Apprentice Program Sessions 1&2 (4 weeks)",
-      "start_date": "2026-06-26",
-      "end_date": "2026-07-21",
-      "price": 300,
-      "availability": "unknown"
-    },
-    {
-      "name": "Apprentice Program Sessions 3&4 (4 weeks)",
-      "start_date": "2026-07-24",
-      "end_date": "2026-08-18",
-      "price": 300,
-      "availability": "unknown"
-    },
-    {
-      "name": "Apprentice Program Full Summer (8 weeks)",
-      "start_date": "2026-06-26",
-      "end_date": "2026-08-18",
-      "price": 500,
-      "availability": "unknown"
     }
   ],
   "sources": [
     {
       "url": "https://www.sailmaine.org/youth-summer-camp",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
         "website_url",
+        "registration_url",
         "phone",
         "street_address",
         "city",
@@ -169,11 +150,11 @@
         "swim_waterfront_notes",
         "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Camp's own Youth Summer Programs page, 'Session Dates 2026'"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.sailmaine.org/youth-summer-camp",
       "kind": "html",
@@ -214,6 +195,21 @@
         "quote": "Sessions 1&2 (6/26-7/21)"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.sailmaine.org/youth-summer-camp"
+      ],
+      "changes": [
+        "Removed the three Apprentice Program sessions: the page lists them as 6/26-7/21, 7/24-8/18 and 6/26-8/18 with no year, and those dates do not fit the 2026 session calendar on the same page (6/26/2026 is a Friday), so the year can't be trusted",
+        "Added registration_url (the page's New Registration link)",
+        "Noted in the Portland session names that $890 is the full-day price and half day is $445",
+        "All other filled fields match the page"
+      ],
+      "open_questions": [
+        "Centerboard Yacht Club (South Portland) sessions are listed only as eight 1-week sessions 'starting June 23' (a Tuesday in 2026), so no CYC sessions were added."
+      ]
+    }
   }
 }

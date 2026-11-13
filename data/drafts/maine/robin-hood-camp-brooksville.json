@@ -15,6 +15,8 @@
     "arts",
     "performing_arts"
   ],
+  "gender_policy": "coed",
+  "age_max": 17,
   "description_short": "Overnight summer camp in Brooksville, Maine, between a freshwater lake and the ocean, with more than 35 daily activities. Sessions run from two to seven weeks between June 27 and August 15, 2027.",
   "activities": [
     "Individual sports",
@@ -34,6 +36,7 @@
   ],
   "price_min": 6615,
   "price_max": 17515,
+  "transportation": true,
   "refund_policy_summary": "The $1,000 registration fee is fully refundable until January 1, 2027. Tuition is fully refundable until April 1, 2027. After that there are no refunds for withdrawals or shortened stays (illness, homesickness, behavior dismissal), and no refunds for travel restrictions. The camp recommends tuition protection insurance (TravMark, 1-833-297-2258).",
   "season_year": 2027,
   "sessions": [
@@ -62,7 +65,7 @@
   "sources": [
     {
       "url": "https://www.robinhoodcamp.com/maine-summer-camp-dates-rates/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "website_url",
@@ -82,11 +85,28 @@
         "refund_policy_summary",
         "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Dates and rates page: 2027 weekly dates, tuition chart, refund policies; address, phone and email in the footer"
+    },
+    {
+      "url": "https://www.robinhoodcamp.com/maine-summer-camp-programs/summer-camp-programs-all-ages/",
+      "checked": "2026-11-13",
+      "fields": [
+        "gender_policy",
+        "age_max"
+      ],
+      "note": "All camper programs: 'Boys and Girls', co-ed teen evenings; Super Camper and Junior Counselor programs for ages 16-17"
+    },
+    {
+      "url": "https://www.robinhoodcamp.com/summer-camp-faqs/",
+      "checked": "2026-11-13",
+      "fields": [
+        "transportation"
+      ],
+      "note": "Travel FAQ: camp van from New York City, Greenwich CT and Boston Logan, and an airport shuttle from BOS, PWM, BGR and BHB"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.robinhoodcamp.com/maine-summer-camp-dates-rates/",
       "kind": "html",
@@ -166,6 +186,24 @@
         "quote": "Last Two Weeks (August 1-August 15) $6,615"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.robinhoodcamp.com/maine-summer-camp-dates-rates/",
+        "https://www.robinhoodcamp.com/maine-summer-camp-programs/summer-camp-programs-all-ages/",
+        "https://www.robinhoodcamp.com/summer-camp-faqs/"
+      ],
+      "changes": [
+        "Checked dates, the three fully dated sessions, prices, refund policy, address, phone and email against the dates and rates page; all match",
+        "Added gender_policy coed (programs page: 'Boys and Girls', co-ed evenings for teens)",
+        "Added age_max 17 (Super Camper and Junior Counselor programs, ages 16-17); no minimum age is stated, so age_min stays blank",
+        "Added transportation true (FAQ: camp van and airport shuttle)",
+        "The early-rate offer in the old warnings has changed: it is now a 'November-January Rate' for applications by January 30, 2027 (e.g. $16,215 for seven weeks); listed prices remain the standard rates"
+      ],
+      "open_questions": [
+        "The rate table is still headed 'Tuition Rate Chart 2026' but every due date in it is 2027; treated as the 2027 rates."
+      ]
+    }
   }
 }

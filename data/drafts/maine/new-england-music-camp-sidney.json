@@ -26,6 +26,7 @@
   ],
   "price_min": 3900,
   "price_max": 9600,
+  "price_per": "session",
   "financial_aid": true,
   "season_year": 2027,
   "sessions": [
@@ -54,7 +55,7 @@
   "sources": [
     {
       "url": "https://nemc.org/tuition-dates/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -74,14 +75,15 @@
         "description_short",
         "price_min",
         "price_max",
+        "price_per",
         "financial_aid",
         "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Tuition and dates page: 2027 dates, ages per session, $3900 one session, $7200 two, $9600 three; address, phone and email in the footer"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://nemc.org/tuition-dates/",
       "kind": "html",
@@ -116,6 +118,20 @@
         "quote": "World-class musical training and personal/social growth for students ages 11 - 18"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://nemc.org/tuition-dates/",
+        "https://nemc.org/nemc-core-camp/",
+        "https://nemc.org/register/"
+      ],
+      "changes": [
+        "Checked every field against the tuition and dates page; dates, ages, prices, address, phone and email all match",
+        "Added price_per session (each two-week session is $3900; price_max 9600 is the three-session combo)",
+        "Source date updated to 2026-11-13"
+      ],
+      "open_questions": []
+    }
   }
 }

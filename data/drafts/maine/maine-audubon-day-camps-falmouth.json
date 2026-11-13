@@ -13,15 +13,77 @@
     "nature"
   ],
   "age_min": 3,
-  "grade_max": 6,
+  "grade_max": 4,
   "description_short": "Maine Audubon runs nature day camps at Gilsland Farm Audubon Center in Falmouth (Greater Portland) and Fields Pond Audubon Center in Holden (Greater Bangor). It offers summer camps and February/April vacation camps for preschool and elementary-age children.",
+  "price_min": 300,
+  "price_max": 415,
+  "price_per_week": 415,
+  "price_per": "week",
   "financial_aid": true,
   "refund_policy_summary": "Summer camp: full refund if Maine Audubon cancels the session. If you cancel before June 1, you get a refund minus a $30 processing fee per registration. No refunds for cancellations after June 1. Vacation camp: no refunds within 14 days of the start date. Cancellations more than 14 days ahead are refunded minus a $30 fee. COVID-related cancellations are refunded minus a $30 fee.",
-  "season_year": 2027,
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Gilsland Farm week of June 29, 2026",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-03",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Gilsland Farm week of July 6, 2026",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Gilsland Farm week of July 13, 2026",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Gilsland Farm week of July 20, 2026",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Gilsland Farm week of August 3, 2026",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Gilsland Farm week of August 10, 2026",
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-14",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Gilsland Farm week of August 17, 2026",
+      "start_date": "2026-08-17",
+      "end_date": "2026-08-21",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Gilsland Farm week of August 24, 2026",
+      "start_date": "2026-08-24",
+      "end_date": "2026-08-28",
+      "price": null,
+      "availability": "unknown"
+    }
+  ],
   "sources": [
     {
       "url": "https://maineaudubon.org/education/day-camps/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -33,17 +95,29 @@
         "zip",
         "camp_type",
         "primary_categories",
-        "age_min",
-        "grade_max",
         "description_short",
         "financial_aid",
         "refund_policy_summary"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Day camps page; address, ZIP and phone are in the page footer"
+    },
+    {
+      "url": "https://maineaudubon.org/wp-content/uploads/2026-Gilsland-Farm-Summer-Camp-one-pager.pdf",
+      "checked": "2026-11-13",
+      "fields": [
+        "age_min",
+        "grade_max",
+        "price_min",
+        "price_max",
+        "price_per_week",
+        "price_per",
+        "sessions"
+      ],
+      "note": "Summer 2026 Gilsland Farm schedule: Sprouts ages 3-5 $300 member/$340 nonmember; Saplings ages 4-5 and Discovery Kids (entering grades 1-4) $370/$415 per week"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://maineaudubon.org/education/day-camps/",
       "kind": "html",
@@ -89,6 +163,27 @@
         "quote": "no refunds will be issued for cancellations made after June 1, 2027."
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://maineaudubon.org/education/day-camps/",
+        "https://maineaudubon.org/wp-content/uploads/2026-Gilsland-Farm-Summer-Camp-one-pager.pdf",
+        "https://maineaudubon.org/wp-content/uploads/Summer-Preschool-Camps-FAQ.pdf"
+      ],
+      "changes": [
+        "season_year 2027 to 2026: no 2027 dates or prices are posted (the page says January 2027); the only schedule is the summer 2026 Gilsland Farm PDF",
+        "Added 8 weekly 2026 sessions at Gilsland Farm from the schedule PDF (June 29 to August 28, no camp July 27-31); session prices left blank because the rate depends on the program",
+        "Added price_min 300 (Sprouts half day, member) and price_max 415 (full day, nonmember), price_per_week 415 (nonmember full day), price_per week",
+        "grade_max 6 to 4: the oldest Gilsland Farm group is entering grade 4 (PDF); grade 6 was the Raptors group at Fields Pond in Holden",
+        "Sources re-dated and split between the day camps page and the 2026 PDF"
+      ],
+      "open_questions": [
+        "Probable duplicate: maine-audubon-day-camps-falmouth-2 drafts the same page (same name and URL). Keep one; the validator would also reject a second listing with the same website and name.",
+        "Two sites: Gilsland Farm (Falmouth) and Fields Pond (Holden, Songbirds rising 1st-3rd and Raptors rising 4th-6th). This listing now describes Gilsland Farm only for ages, grades and sessions; should Fields Pond be its own listing?",
+        "Only past (2026) sessions are posted; publish now with 2026 or wait for the January 2027 update?",
+        "The summer refund policy on the page mixes years ('after June 1, 2027' and 'before June 1, 2026'); the summary assumes June 1 of the camp year."
+      ]
+    }
   }
 }
