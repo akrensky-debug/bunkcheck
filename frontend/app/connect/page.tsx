@@ -40,8 +40,10 @@ const STEPS: Array<{ title: string; body: React.ReactNode }> = [
 ]
 
 const PROMPTS = [
-  'Find day camps near Providence for my 8-year-old who loves science.',
-  'Which Boston day camps have extended care for under $400 a week?',
+  // The same three as the directory listing (docs/directory-submissions.md), checked against
+  // production. Boston under $400 returned camps with no price on file.
+  'Find summer day camps near Providence, RI for my 8-year-old.',
+  'Day camps near Providence with extended care for under $350 a week.',
   'What camps still have openings the week of July 5 near Cranston, RI?',
 ]
 
@@ -59,6 +61,10 @@ export default function ConnectPage() {
           <Text variant="lead" tone="muted">
             Ask Claude about summer camps and get Bunkcheck&apos;s camp cards right in the chat: dates,
             weekly prices, extended care and open weeks.
+          </Text>
+          <Text variant="small" tone="muted">
+            Covers camps in the Northeast: CT, MA, ME, NH, NJ, NY, PA, RI and VT, with the most around
+            Providence and Boston.
           </Text>
         </Stack>
 
@@ -88,9 +94,10 @@ export default function ConnectPage() {
             })}
           </ol>
           <Text variant="small" tone="muted" className="mt-8">
-            Works on every Claude plan, on the web, desktop and phone. The Free plan allows one custom
-            connector. On a Team or Enterprise plan, an owner adds Bunkcheck for the organization first,
-            under Organization settings, then Connectors.
+            Add it once on claude.ai or in the Claude desktop app; the phone app can&apos;t add connectors,
+            but it uses Bunkcheck once you have. Works on every Claude plan. The Free plan allows one
+            custom connector. On a Team or Enterprise plan, an owner adds Bunkcheck for the organization
+            first, under Organization settings, then Connectors.
           </Text>
         </Section>
 
@@ -103,6 +110,14 @@ export default function ConnectPage() {
               </ListRow>
             ))}
           </List>
+        </Section>
+
+        <Section title="If Claude doesn't use it" divided>
+          <Text>
+            Check Bunkcheck is on for the chat: the <strong>+</strong> button, then <strong>Connectors</strong>.
+            Then say &ldquo;Use Bunkcheck&rdquo; in your message. To remove it, open Customize, then Connectors,
+            and choose Remove.
+          </Text>
         </Section>
 
         <Section title="ChatGPT" divided>
