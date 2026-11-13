@@ -48,6 +48,15 @@
         "primary_categories",
         "description_short"
       ]
+    },
+    {
+      "url": "https://www.aimhighacademy.com/docs/2026-SummerDayCamp-RisingStarFlyer.pdf",
+      "checked": "2026-11-13",
+      "fields": [
+        "price_per_week",
+        "price_per"
+      ],
+      "note": "Price from the camp's own page"
     }
   ],
   "age_min": 3,
@@ -104,11 +113,15 @@
         "season_year 2026 from the '2026 ... Summer Camp Flyer' links on that page",
         "Activities are stated for the summer camp on that page, so kept; moved contact, address, activities and description to that source",
         "primary_categories sports -> general: it is a general day camp, gymnastics is one activity among several",
-        "Rewrote description_short to describe the summer camp only (dropped the separate training and vacation camps)"
+        "Rewrote description_short to describe the summer camp only (dropped the separate training and vacation camps)",
+        "Added $375/week (5 full days) from the 2026 Camp Rising Star and Camp Little Star flyers (2026-11-13 price pass)"
       ],
       "for_andrew": [
-        "2026 dates and prices are in two PDF flyers linked from camps-summer.aspx (Little Star preschool, Rising Star school age); not captured as sessions"
+        "2026 dates and prices are in two PDF flyers linked from camps-summer.aspx (Little Star preschool, Rising Star school age); not captured as sessions",
+        "Price: $375/week is the 5-day full-day rate for both age groups. Preschool (3-5) also has half days and 2 or 3 days a week ($100 to $250); non-members pay a $25 registration fee; $150 deposit per session."
       ]
     }
-  }
+  },
+  "price_per_week": 375,
+  "price_per": "week"
 }

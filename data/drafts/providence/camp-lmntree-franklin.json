@@ -48,6 +48,15 @@
       "fields": [
         "sessions"
       ]
+    },
+    {
+      "url": "https://www.elementreehouse.com/contact-and-tuition",
+      "checked": "2026-11-13",
+      "fields": [
+        "price_per_week",
+        "price_per"
+      ],
+      "note": "Price from the camp's own page"
     }
   ],
   "season_year": 2026,
@@ -169,11 +178,15 @@
       "changes": [
         "season_year 2026 and 10 weekly sessions from the 'SUMMER 2026 Schedule' on the Camp Schedule page (new source); week of June 29 - July 3 skipped because the center is closed",
         "primary_categories arts -> general: a general day camp with games, swim, crafts and field trips",
-        "Checked contact, address, hours and lifeguard note against the summer camp page"
+        "Checked contact, address, hours and lifeguard note against the summer camp page",
+        "Added $349/week (4 or 5 days, one child) from the Contact and Tuition page (2026-11-13 price pass)"
       ],
       "for_andrew": [
-        "No ages or prices on the summer camp or schedule pages (Contact and Tuition page not checked)"
+        "No ages or prices on the summer camp or schedule pages (Contact and Tuition page not checked)",
+        "Price: the 'Summer Camp/School Vacation' tuition table gives no year. 4/5 days $349, 3 days $261, 2 days $174, 1 day $87 a week for one child; two children $663 for 4/5 days."
       ]
     }
-  }
+  },
+  "price_per_week": 349,
+  "price_per": "week"
 }

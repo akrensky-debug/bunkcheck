@@ -71,6 +71,15 @@
         "sessions"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://theautismproject.org/parents-families/programs-resources/summer-camp/camp-faqs",
+      "checked": "2026-11-13",
+      "fields": [
+        "price_per_week",
+        "price_per"
+      ],
+      "note": "Price from the camp's own page"
     }
   ],
   "review": {
@@ -115,13 +124,17 @@
       "page_checked": "https://theautismproject.org/parents-families/programs-resources/summer-camp",
       "changes": [
         "No field changes: location (Buck Hill Scout Reservation, Pascoag), 2026 Sessions I-III, supports, activities and contact all match the page",
-        "Renamed from \"Camp WANNAGOAGAIN!\" (2026-11-13): organization plus camp, short, as parents say it"
+        "Renamed from \"Camp WANNAGOAGAIN!\" (2026-11-13): organization plus camp, short, as parents say it",
+        "Added $550/week from the Camp Details page (2026-11-13 price pass)"
       ],
       "for_andrew": [
         "ZIP missing: the page names Buck Hill Scout Reservation in Pascoag but gives no street address, so it could not be geocoded",
         "Session III (Aug 3-7) is probably the new adult-only (18+) week but the page does not say which week; consider whether to keep it",
-        "No ages or prices on the page"
+        "No ages or prices on the page",
+        "Price: 'The cost to attend our summer camp is $550.00 for the week, which includes a $75.00 non-refundable deposit.' The page gives no year. Extra: 1:1 support $750 (or $1,000 with bus) if not covered by Medicaid; transportation $100 a week; sliding-scale camperships."
       ]
     }
-  }
+  },
+  "price_per_week": 550,
+  "price_per": "week"
 }

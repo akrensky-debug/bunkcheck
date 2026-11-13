@@ -40,7 +40,9 @@
         "special_needs_notes",
         "aca_accredited",
         "aca_source_url",
-        "swim_waterfront_notes"
+        "swim_waterfront_notes",
+        "price_per_week",
+        "price_per"
       ]
     },
     {
@@ -116,13 +118,16 @@
         "Read the camp brochure PDF linked from the page (new source): location is the Camp Welch site, 127 North Main Street, Assonet, MA; ages 5-14; T1D focus; ACA accredited; financial assistance; activities; director email",
         "camp_type day, primary_categories special_needs from the brochure",
         "zip 02702 from the US Census geocoder for 127 N Main St, Assonet (own source)",
-        "Wrote description_short, special_needs_notes and swim_waterfront_notes from the brochure"
+        "Wrote description_short, special_needs_notes and swim_waterfront_notes from the brochure",
+        "Added $230/week from the camp brochure (2025 season; 2026-11-13 price pass)"
       ],
       "for_andrew": [
         "The brochure is the 2025 edition (its theme weeks are dated 2025); confirm ages, location and ACA status still hold. The page itself only says 'First Day of Camp: Monday, July 6th, 2026'",
-        "Brochure price is $230 per week per camper (2025 edition); left out of price fields because it may not be the 2026 rate",
-        "Same site as the Camp Welch draft (Fall River Boys & Girls Club); they are separate programs"
+        "Same site as the Camp Welch draft (Fall River Boys & Girls Club); they are separate programs",
+        "Price is from the 2025 brochure ($230 per week per camper, with 2025 theme weeks); no 2026 price is posted (the 2026 handbook has none). season_year stays 2026. CIT program $100 a week."
       ]
     }
-  }
+  },
+  "price_per_week": 230,
+  "price_per": "week"
 }

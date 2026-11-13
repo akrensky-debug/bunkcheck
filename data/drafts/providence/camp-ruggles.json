@@ -31,6 +31,16 @@
       "fields": [
         "activities"
       ]
+    },
+    {
+      "url": "https://www.campruggles.org/families-apply",
+      "checked": "2026-11-13",
+      "fields": [
+        "price_min",
+        "price_max",
+        "price_per"
+      ],
+      "note": "Price from the camp's own page"
     }
   ],
   "activities": [
@@ -89,11 +99,16 @@
       "page_checked": "https://www.campruggles.org/",
       "changes": [
         "Added activities (swimming, boating, fishing, creative activities, movement) from the Our Program page (new source)",
-        "Checked name, therapeutic focus and 50+ years against the home page"
+        "Checked name, therapeutic focus and 50+ years against the home page",
+        "Added $4,750 for the five-week session (2026 cost) from the Families & Apply page (2026-11-13 price pass)"
       ],
       "for_andrew": [
-        "The site looks like an unfinished redesign: the Families & Apply page is placeholder text ('The redesign keeps that operational value...'). No location, ages, dates, prices or day/overnight info anywhere, so city/state/zip, camp_type and season_year stay empty; ask the camp directly"
+        "The site looks like an unfinished redesign: the Families & Apply page is placeholder text ('The redesign keeps that operational value...'). No location, ages, dates, prices or day/overnight info anywhere, so city/state/zip, camp_type and season_year stay empty; ask the camp directly",
+        "Price is the 2026 figure: the FAQ says 'The live site lists the 2026 full five-week cost at $4,750 ($950 per week)' and that financial aid was available. The page reads like redesign copy and says 2027 tuition is not yet posted; confirm with the camp."
       ]
     }
-  }
+  },
+  "price_min": 4750,
+  "price_max": 4750,
+  "price_per": "session"
 }

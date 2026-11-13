@@ -63,6 +63,15 @@
         "swim_waterfront_notes"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.oldcolonyymca.org/sites/default/files/2025-02/Taunton_Brochure_SummerCamp__2025_WEB_1.pdf",
+      "checked": "2026-11-13",
+      "fields": [
+        "price_per_week",
+        "price_per"
+      ],
+      "note": "Price from the camp's own page"
     }
   ],
   "review": {
@@ -115,11 +124,15 @@
       "date": "2026-10-27",
       "page_checked": "https://www.oldcolonyymca.org/child-care-camps/camps/camp-taunton",
       "changes": [
-        "No field changes: address, phone, activities, no transportation ('Transportation is currently not available') and daily bag lunch all match the page"
+        "No field changes: address, phone, activities, no transportation ('Transportation is currently not available') and daily bag lunch all match the page",
+        "Added $300/week (non-member full day) from the 2025 summer camp brochure (2026-11-13 price pass)"
       ],
       "for_andrew": [
-        "season_year cannot be set: the newest material on the page is the 2025 brochure and 2025 family handbook (theme calendar is 2023); nothing for 2026 or 2027. Confirm the camp still runs and which season to list"
+        "season_year cannot be set: the newest material on the page is the 2025 brochure and 2025 family handbook (theme calendar is 2023); nothing for 2026 or 2027. Confirm the camp still runs and which season to list",
+        "Price is from the 2025 brochure (latest posted): full day camp $275/week members, $300 non-members; price_per_week uses the non-member rate. season_year left unset (no sessions on file)."
       ]
     }
-  }
+  },
+  "price_per_week": 300,
+  "price_per": "week"
 }

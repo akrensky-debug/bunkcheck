@@ -47,6 +47,15 @@
         "email"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.attleboroymca.org/sites/default/files/2026-04/YCampGuide.2026.FINAL_.v2.pdf%20%28Booklet%20%28US%20Letter%29%29%20%281%29.pdf",
+      "checked": "2026-11-13",
+      "fields": [
+        "price_per_week",
+        "price_per"
+      ],
+      "note": "Price from the camp's own page"
     }
   ],
   "email": "campadmin@attleboroymca.org",
@@ -97,11 +106,15 @@
       "page_checked": "https://www.attleboroymca.org/camps/camp-finberg",
       "changes": [
         "Added email campadmin@attleboroymca.org (now shown on the page)",
-        "Checked the rest: June 1 - Aug 28 2026 season, 2/3/5-day registration, hours with before/after care, financial aid form, bus schedule link and change-fee policy all match"
+        "Checked the rest: June 1 - Aug 28 2026 season, 2/3/5-day registration, hours with before/after care, financial aid form, bus schedule link and change-fee policy all match",
+        "Added $345/week (non-member full week) from the 2026 Y Camp Guide (2026-11-13 price pass)"
       ],
       "for_andrew": [
-        "Ages and prices are only in the linked 2026 Camp Guide PDF; not captured"
+        "Ages and prices are only in the linked 2026 Camp Guide PDF; not captured",
+        "Price: traditional camp is $285/week for Y members and $345 for non-members; price_per_week uses the non-member rate. Daily rate $66 members / $76 non-members (2, 3 or 5 days a week). Specialty camps are $300/$360 a week."
       ]
     }
-  }
+  },
+  "price_per_week": 345,
+  "price_per": "week"
 }

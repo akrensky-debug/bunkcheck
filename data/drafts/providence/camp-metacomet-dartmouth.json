@@ -56,6 +56,17 @@
         "secondary_categories"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://ymcasouthcoast.org/wp-content/uploads/2026/04/2026_CampRegistration_Fill.pdf",
+      "checked": "2026-11-13",
+      "fields": [
+        "price_per_week",
+        "price_min",
+        "price_max",
+        "price_per"
+      ],
+      "note": "Price from the camp's own page"
     }
   ],
   "secondary_categories": [
@@ -114,11 +125,17 @@
       "page_checked": "https://ymcasouthcoast.org/location/camp-metacomet/",
       "changes": [
         "primary_categories -> general (traditional YMCA day camp); moved sports, arts, nature, performing_arts to secondary_categories",
-        "Checked the rest: address, director contact, hours 9-4 with 7-9 / 4-5 extended care, 2026 bus schedule, outdoor pool, specialty camps for ages 9-14"
+        "Checked the rest: address, director contact, hours 9-4 with 7-9 / 4-5 extended care, 2026 bus schedule, outdoor pool, specialty camps for ages 9-14",
+        "Added $365 to $390/week (Program Participant rate) from the 2026 YMCA Southcoast camp registration form (2026-11-13 price pass)"
       ],
       "for_andrew": [
-        "No dates, ages or prices on the page (in the 2026 parent guide PDF); Dartmouth is about 30 miles from Providence"
+        "No dates, ages or prices on the page (in the 2026 parent guide PDF); Dartmouth is about 30 miles from Providence",
+        "Price: traditional camp in 2026 is $315/week for YMCASC members and $365 for Program Participants (non-members) for ages 7-14, and $340/$390 for ages 4-6. price_per_week shows the non-member 7-14 rate; price_min/max span the non-member rates. Specialty camps are $340 to $405 a week (non-member)."
       ]
     }
-  }
+  },
+  "price_per_week": 365,
+  "price_min": 365,
+  "price_max": 390,
+  "price_per": "week"
 }

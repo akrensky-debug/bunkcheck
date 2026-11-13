@@ -52,6 +52,17 @@
       "fields": [
         "financial_aid"
       ]
+    },
+    {
+      "url": "https://ymcasouthcoast.org/wp-content/uploads/2026/04/2026_CampRegistration_Fill.pdf",
+      "checked": "2026-11-13",
+      "fields": [
+        "price_per_week",
+        "price_min",
+        "price_max",
+        "price_per"
+      ],
+      "note": "Price from the camp's own page"
     }
   ],
   "season_year": 2026,
@@ -98,12 +109,18 @@
         "season_year 2026: the YMCA Southcoast Summer Day Camp page that lists this camp links the '2026 Camp Registration Form' and '2026 Rates'",
         "financial_aid true: same page's FAQ answers 'YES' to financial aid for qualifying families (new source)",
         "primary_categories sports/performing_arts/academic -> general: it is a traditional YMCA day camp with mixed activities",
-        "Checked contact, address, hours and activities against the camp page"
+        "Checked contact, address, hours and activities against the camp page",
+        "Added $365 to $390/week (Program Participant rate) from the 2026 YMCA Southcoast camp registration form (2026-11-13 price pass)"
       ],
       "for_andrew": [
         "New Bedford is about 30-33 miles from Providence, at the edge of the range",
-        "No ages or prices on the camp page (rates are in a PDF)"
+        "No ages or prices on the camp page (rates are in a PDF)",
+        "Price: traditional camp in 2026 is $315/week for YMCASC members and $365 for Program Participants (non-members) for ages 7-14, and $340/$390 for ages 4-6. price_per_week shows the non-member 7-14 rate; price_min/max span the non-member rates. Specialty camps are $340 to $405 a week (non-member)."
       ]
     }
-  }
+  },
+  "price_per_week": 365,
+  "price_min": 365,
+  "price_max": 390,
+  "price_per": "week"
 }
