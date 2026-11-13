@@ -1,7 +1,17 @@
 import type { Metadata, Viewport } from 'next'
+import localFont from 'next/font/local'
 import './fonts.css'
 import './globals.css'
 import AccountLink from '@/components/AccountLink'
+
+// Figtree's Latin subset, served from the repo so the build never downloads fonts.
+// One variable file (weights 300 to 900, from Google Fonts v9); licence in app/fonts/OFL.txt.
+const figtree = localFont({
+  src: './fonts/figtree-latin.woff2',
+  weight: '700 800',
+  variable: '--font-display',
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
   title: 'Bunkcheck: Summer, sorted.',
@@ -24,11 +34,12 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" className={figtree.variable}>
       <head>
-        {/* Every page uses these two first: body text, and the page title. fonts.css has the rest. */}
+        {/* Atkinson Hyperlegible Next (body) is served from public/fonts; rules in fonts.css.
+            next/font/local can't split a font by character, so it isn't used for this one.
+            Preload the face every page needs first. Figtree preloads through next/font. */}
         <link rel="preload" href="/fonts/atkinson-hyperlegible-next-latin-400-normal.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
-        <link rel="preload" href="/fonts/figtree-latin-800-normal.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
       </head>
       <body className="min-h-screen flex flex-col">
         <header className="sticky top-0 z-50 border-b border-line bg-bg/90 backdrop-blur">

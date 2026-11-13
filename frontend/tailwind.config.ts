@@ -76,7 +76,7 @@ const config: Config = {
     extend: {
       fontFamily: {
         sans: ['"Atkinson Hyperlegible Next"', '"Atkinson Hyperlegible"', 'system-ui', 'sans-serif'],
-        display: ['Figtree', 'system-ui', 'sans-serif'],
+        display: ['var(--font-display)', 'Figtree', 'system-ui', 'sans-serif'],
       },
       maxWidth: {
         narrow: '45rem',   // 720px: home column, forms, reading pages
