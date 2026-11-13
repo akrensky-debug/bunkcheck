@@ -102,7 +102,7 @@
   "sources": [
     {
       "url": "https://www.thecommunitycampus.org/summer-camp/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -124,15 +124,22 @@
         "price_per",
         "extended_care",
         "meals_included",
-        "financial_aid",
         "refund_policy_summary",
         "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Summer Camp page: 'Overview 2026', ages 5y-12y, Weeks 1-9 (June 22 to August 28, closed June 29-July 3), 2026 themes, hours 8-4 with late care 4-5 ($10/day), full week $285, individual day $65, packed lunch, cancellation policy; header 281 Barnard Rd, Woodstock, VT 05091, 603-322-1317"
+    },
+    {
+      "url": "https://www.thecommunitycampus.org/tuition-assistance/",
+      "checked": "2026-11-13",
+      "fields": [
+        "financial_aid"
+      ],
+      "note": "Tuition Assistance: licensed program that accepts Vermont State Subsidy; scholarship assistance process"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.thecommunitycampus.org/summer-camp/",
       "kind": "html",
@@ -178,6 +185,20 @@
         "quote": "Tuition Assistance"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.thecommunitycampus.org/summer-camp/",
+        "https://www.thecommunitycampus.org/tuition-assistance/"
+      ],
+      "changes": [
+        "Checked the nine 2026 weeks and themes, ages 5 to 12, $285 week and $65 day rates, hours, late care, lunch and cancellation policy against the Summer Camp page; they match.",
+        "Moved financial_aid's source to the Tuition Assistance page (state subsidy and scholarship assistance)."
+      ],
+      "open_questions": [
+        "Online enrollment for 2026 is closed and no 2027 dates are posted; the email address is hidden on the page, so none is listed."
+      ]
+    }
   }
 }

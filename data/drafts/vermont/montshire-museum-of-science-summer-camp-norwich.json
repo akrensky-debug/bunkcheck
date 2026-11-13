@@ -29,7 +29,7 @@
   "sources": [
     {
       "url": "https://montshire.org/programs/for-children-families/summer-camps/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -46,13 +46,14 @@
         "description_short",
         "extended_care",
         "financial_aid",
-        "refund_policy_summary"
+        "refund_policy_summary",
+        "registration_url"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "2026 season page ('Thank you for a wonderful Summer Camp season!')"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://montshire.org/programs/for-children-families/summer-camps/",
       "kind": "html",
@@ -99,6 +100,23 @@
         "quote": "hands-on exploration, experiments, careful observation"
       }
     ],
-    "errors": []
-  }
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://montshire.org/programs/for-children-families/summer-camps/",
+        "https://montshire.org/programs/faqs-summer-camp/"
+      ],
+      "changes": [
+        "Added registration_url: the Campsite enrollment link on the camp page.",
+        "Checked name, contact, address, ZIP, day camp, 9am to 3:30pm hours, no early drop-off or late pick-up (extended_care false), financial aid and the 2026 refund policy against the camp page; all match.",
+        "The FAQ page still shows an older 2025 refund policy ($25 fee, May 23 deadline); kept the 2026 policy from the main camp page, which is newer.",
+        "No dates, prices or ages are published on either page (enrollment details sit inside Campsite), so those stay empty."
+      ],
+      "open_questions": [
+        "The listing has no ages, prices or dates because the Montshire keeps them inside its Campsite portal. Publish this thin listing now, or wait for the 2027 camp page?"
+      ]
+    }
+  },
+  "registration_url": "https://montshire.campmanagement.com/p/request_for_info_m.php?action=enroll"
 }

@@ -15,7 +15,7 @@
   "age_max": 15,
   "grade_min": 3,
   "grade_max": 9,
-  "description_short": "Overnight camp in Craftsbury Common, Vermont, offering four 13-day sleepaway sessions for campers in grades 3-9. Tuition uses an honor-system sliding scale.",
+  "description_short": "Overnight camp in Craftsbury Common, Vermont, with four 13-day sleepaway sessions for campers of all genders in grades 3-9 (ages 9-15 for homeschoolers or campers from outside the US). Tuition uses an honor-system sliding scale, and scholarship funds are available with no application.",
   "financial_aid": true,
   "season_year": 2027,
   "sessions": [
@@ -51,7 +51,7 @@
   "sources": [
     {
       "url": "https://www.hosmerpoint.com/dates",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -64,19 +64,39 @@
         "state",
         "zip",
         "camp_type",
+        "gender_policy",
         "age_min",
         "age_max",
         "grade_min",
         "grade_max",
-        "description_short",
         "financial_aid",
-        "sessions"
+        "sessions",
+        "description_short"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "2027 dates and availability"
+    },
+    {
+      "url": "https://www.hosmerpoint.com/rates",
+      "checked": "2026-11-13",
+      "fields": [
+        "price_min",
+        "price_per"
+      ],
+      "note": "Sliding scale: $700 to $2600 and up per 13-day session; true cost of camp $2500"
+    },
+    {
+      "url": "https://www.hosmerpoint.com/faq",
+      "checked": "2026-11-13",
+      "fields": [
+        "meals_included",
+        "transportation",
+        "special_needs_notes"
+      ],
+      "note": "New Camper FAQs"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.hosmerpoint.com/dates",
       "kind": "html",
@@ -116,6 +136,31 @@
         "quote": "Camp scholarship funds are available for 2026."
       }
     ],
-    "errors": []
-  }
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.hosmerpoint.com/dates",
+        "https://www.hosmerpoint.com/rates",
+        "https://www.hosmerpoint.com/general-2",
+        "https://www.hosmerpoint.com/faq"
+      ],
+      "changes": [
+        "Added price_min $700 and price_per session from the sliding scale page ($700 to '$2600 and up'; true cost $2500). price_max left empty because the top bracket is open-ended.",
+        "Added gender_policy coed: the dates page says sessions are for 'campers of all genders'.",
+        "Added meals_included true (FAQ describes three meals and a daily snack) and transportation true (FAQ: pick-up and drop-off service from Burlington International Airport).",
+        "Added special_needs_notes from the FAQ.",
+        "financial_aid now rests on the current text 'Camp scholarship funds are available for 2027' (the draft quoted 2026).",
+        "Checked the four 2027 sessions and dates (Wild Branch, Holiday Hill, Black River, Bayley Hazen); they match and the page says all have space, so availability stays open."
+      ],
+      "open_questions": []
+    }
+  },
+  "gender_policy": "coed",
+  "price_min": 700,
+  "price_max": null,
+  "price_per": "session",
+  "meals_included": true,
+  "transportation": true,
+  "special_needs_notes": "The camp aims to accommodate campers with medical, behavioral, mental health or developmental conditions when it can keep everyone safe, and asks families to get in touch before registering. Staff are not specifically trained for these needs, and campers are not under direct adult supervision at all times. A registered nurse lives on site."
 }
