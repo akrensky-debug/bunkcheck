@@ -14,7 +14,7 @@
   ],
   "age_min": 6,
   "age_max": 12,
-  "description_short": "A seven-week summer day camp for ages 6-12, held at five Boys & Girls Club sites in Hartford. Kids do arts, science and sports activities, and field trips and meals are included. Camp runs weekdays from 9am to 5pm.",
+  "description_short": "A seven-week summer day camp for ages 6 to 12 at five Boys & Girls Club sites in Hartford. Kids do arts, science and sports, and field trips and meals are included in the $700 fee. Camp runs weekdays from 9am to 5pm, with early care from 8am for $100 more.",
   "activities": [
     "arts",
     "sciences",
@@ -39,7 +39,7 @@
   "sources": [
     {
       "url": "https://www.bgchartford.org/summers-at-the-club",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -57,13 +57,14 @@
         "extended_care",
         "meals_included",
         "financial_aid",
-        "sessions"
+        "sessions",
+        "price_per"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "2026 application; June 29 to August 14; $700 per camper; early care $100"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.bgchartford.org/summers-at-the-club",
       "kind": "html",
@@ -114,6 +115,22 @@
     ],
     "errors": [
       "missing required zip"
-    ]
-  }
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.bgchartford.org/summers-at-the-club"
+      ],
+      "changes": [
+        "Checked every field against the club's summer page; all match.",
+        "Added price_per = session: the $700 covers the whole seven weeks.",
+        "Description now names the $700 fee and the $100 early care from 8am."
+      ],
+      "open_questions": [
+        "Camp runs at five club sites, each with its own address and contact (Asylum Hill 170 Sigourney St; JDL Northwest 1 Nahum Dr; South End 129 Ledyard St; Southwest 1 Chandler St; Trinity College 1500 Broad St, 06106). ZIP is required: list one camp with one site's address, or five listings?",
+        "\"$400 early bird special (ends April 6th)\" is unclear: a $400 price or $400 off. Left out of the prices."
+      ]
+    }
+  },
+  "price_per": "session"
 }

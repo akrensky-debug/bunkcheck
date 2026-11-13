@@ -14,8 +14,6 @@
     "arts",
     "nature"
   ],
-  "grade_max": 8,
-  "description_short": "Summer programs run by Ridgefield Academy and Landmark Preschool for children from preschool age through Grade 8, mixing academic projects, arts and outdoor play. The Ridgefield campus offers Camp Landmark (ages 2–4), Camp RA (K–Grade 3) and Explorer Programs (Grades 4–8).",
   "activities": [
     "art",
     "science",
@@ -23,11 +21,14 @@
     "outdoor play",
     "academic exploration"
   ],
-  "season_year": 2026,
+  "grade_max": 8,
+  "description_short": "Summer programs at Ridgefield Academy and Landmark Preschool in Ridgefield that mix hands-on academics, creative arts and outdoor play. Camp Landmark serves ages 2 to 4, Camp RA serves children entering kindergarten to Grade 3, and Explorer Programs serve Grades 4 to 8. 2027 dates are not posted yet.",
+  "extended_care": true,
+  "season_year": 2027,
   "sources": [
     {
       "url": "https://www.ridgefieldacademy.org/program/ra-summer-programs/camp-registration",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -43,11 +44,19 @@
         "grade_max",
         "description_short"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Summer Program Details page, now planning 2027"
+    },
+    {
+      "url": "https://www.ridgefieldacademy.org/program/ra-summer-programs",
+      "checked": "2026-11-13",
+      "fields": [
+        "extended_care"
+      ],
+      "note": "Extended day 8am to 5pm for Camp RA"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.ridgefieldacademy.org/program/ra-summer-programs/camp-registration",
       "kind": "html",
@@ -93,6 +102,24 @@
         "quote": "hands-on academic exploration, creative arts, and active outdoor fun"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.ridgefieldacademy.org/program/ra-summer-programs/camp-registration",
+        "https://www.ridgefieldacademy.org/program/ra-summer-programs"
+      ],
+      "changes": [
+        "season_year changed from 2026 to 2027: the page now says planning is underway for the 2027 Summer Program.",
+        "Added extended_care true: Camp RA offers extended day from 8am to 5pm (Summers at the Academy page).",
+        "Rewrote the description to name the three programs and note that 2027 dates aren't posted.",
+        "No dates, prices or registration link are posted; the page is a notify-me form."
+      ],
+      "open_questions": [
+        "This listing bundles three programs (Camp Landmark for ages 2-4, Camp RA for K-3, Explorer Programs for Grades 4-8), and Camp Landmark also runs in Bedford, NY and Westport, CT. Keep one Ridgefield listing, or split it?",
+        "Minimum age conflicts: the intro says ages 3 through Grade 8, but Camp Landmark Ridgefield is listed for ages 2 to 4. I left age_min empty.",
+        "Nothing for 2027 is posted beyond a notify-me form. Publish now, or wait until enrollment opens?"
+      ]
+    }
   }
 }

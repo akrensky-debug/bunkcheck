@@ -11,7 +11,7 @@
   "zip": "06385",
   "primary_categories": [
     "special_needs",
-    "nature"
+    "outdoor"
   ],
   "description_short": "A summer camp on the Connecticut shore in Waterford, run by Sunrise Community for people with disabilities. It offers recreation, field trips and beach activities, and staff provide personal care and assistance as needed.",
   "activities": [
@@ -25,7 +25,7 @@
   "sources": [
     {
       "url": "https://sunrisegroup.org/locations/connecticut/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -41,11 +41,11 @@
         "description_short",
         "special_needs_notes"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Says registration for Sunrise at Camp Harkness 2027 is open"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://sunrisegroup.org/locations/connecticut/",
       "kind": "html",
@@ -81,6 +81,21 @@
     "errors": [
       "missing required camp_type",
       "camp_type must be one of ['day', 'sleepaway', 'specialty']"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://sunrisegroup.org/locations/connecticut/",
+        "https://sunrisegroup.org/services/"
+      ],
+      "changes": [
+        "Changed category nature to outdoor: the page describes beach and outdoor activities, not nature study.",
+        "Other fields match the page; no ages, dates, prices or registration link are given on the Connecticut page or the services page."
+      ],
+      "open_questions": [
+        "Sunrise Community serves people with intellectual and developmental disabilities, and neither page says the camp takes children or gives any ages. Is this a kids camp at all? If not, drop.",
+        "camp_type (required) is unknown: the general text says some locations offer overnight stays, but not whether Camp Harkness does."
+      ]
+    }
   }
 }

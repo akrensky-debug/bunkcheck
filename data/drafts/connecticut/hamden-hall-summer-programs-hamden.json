@@ -17,7 +17,7 @@
     "nature"
   ],
   "grade_max": 10,
-  "description_short": "Summer day programs at a Hamden, CT private school. They include sports camps for rising grades 2-10, an Early Childhood Discovery Program for preschool through kindergarten, an Intersession Adventure Program, and Academics & Adventures, a full-day program with a morning class and afternoon activities such as swimming, field trips and crafts.",
+  "description_short": "Summer day programs at a Hamden private school: sports camps for rising grades 2-10 at the Skiff Street campus (9am-3pm), an Early Childhood Discovery Program for children entering preschool through kindergarten (8am-4pm), an Intersession Adventure Program, and Academics & Adventures, a full day (9am-4pm) with a morning class and afternoon swimming, field trips, hikes and crafts.",
   "activities": [
     "sports instruction",
     "swimming",
@@ -38,7 +38,7 @@
   "extended_care": true,
   "meals_included": false,
   "special_needs_notes": "The facility is nut-free. Children with special health care needs or disabilities must have an Individual Plan of Care on file, written by the child's healthcare provider and parents. Early Childhood participants must be potty-trained. Medication is held by the nurse.",
-  "swim_waterfront_notes": "Swimming is in the school's heated indoor pool at the Beckerman Athletic Center. Campers bring a bathing suit and towel each day.",
+  "swim_waterfront_notes": "Swimming is in the school's heated pool at the Beckerman Athletic Center. Campers bring a bathing suit and towel each day.",
   "season_year": 2026,
   "price_per": "week",
   "sessions": [
@@ -81,7 +81,7 @@
   "sources": [
     {
       "url": "https://www.hamdenhall.org/summer/summer-programs",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -111,7 +111,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.hamdenhall.org/summer/summer-programs",
       "kind": "html",
@@ -197,6 +197,22 @@
         "quote": "Week 8: July 27- July 31:  $400"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.hamdenhall.org/summer/summer-programs",
+        "https://www.hamdenhall.org/summer"
+      ],
+      "changes": [
+        "Confirmed address, main phone, Academics & Adventures weeks 4 to 8 (June 29 to July 31) at $400 a week, before and after care at $50 a week, nut-free rule, bring-your-own lunch and the health plan rules on the summer programs page.",
+        "Swim note: removed 'indoor'; the page says only 'heated pool at the Beckerman Athletic Center'.",
+        "Description now gives each program's hours and the Skiff Street location of the sports camps.",
+        "Kept season_year 2026: the page links 'Week by Week Program Offerings 2026' and nothing for 2027 yet. The registration and week-by-week links did not come through in the page text, so registration_url stays empty."
+      ],
+      "open_questions": [
+        "This page bundles four programs (sports camps at Skiff Street, Early Childhood Discovery, Intersession Adventure, Academics & Adventures). Only Academics & Adventures shows dates and a price ($400 a week), so the sessions and prices describe that one program. List it as one umbrella listing as drafted, split it, or narrow it to Academics & Adventures?"
+      ]
+    }
   }
 }
