@@ -1,6 +1,4866 @@
 {
   "metro": "New Hampshire",
-  "checked": "2026-10-13",
+  "checked": "2026-11-13",
   "notes": "Real listings from each camp's own website. Unverified until a camp confirms. Edit here and re-run: python -m campfinder.seed.import_real --check",
-  "camps": []
+  "camps": [
+    {
+      "slug": "adventure-camp-summer-camp-nashua",
+      "name": "Adventure Camp (Summer Camp)",
+      "operator_name": "Nashua Adult Learning Center",
+      "website_url": "https://nashuaalc.org/for-children/adventure-camp/",
+      "phone": "(603) 882-9080 x2220",
+      "street_address": "40 Arlington St.",
+      "city": "Nashua",
+      "state": "NH",
+      "zip": "03060",
+      "camp_type": "day",
+      "primary_categories": [
+        "sports",
+        "arts",
+        "STEM"
+      ],
+      "age_min": 5,
+      "grade_min": 1,
+      "grade_max": 7,
+      "description_short": "A state-licensed full-day summer camp in Nashua for children entering grades 1 through 7. Activities include swimming, field trips, trips to NH state parks, sports, arts and crafts, and STEM. The Learning Center also runs vacation camps during the February and April school breaks.",
+      "activities": [
+        "Swimming",
+        "Field trips",
+        "Trips to NH State parks",
+        "Special theme days",
+        "Bicycling",
+        "Roller blading",
+        "Community service projects",
+        "Arts and crafts",
+        "Cooperative sports",
+        "STEM enrichment"
+      ],
+      "price_per_week": 295,
+      "swim_waterfront_notes": "Campers walk to Crown Hill Pool on Mondays and Wednesdays, where trained lifeguards are on duty along with camp staff. Children must pass a swim test (swim the length of the pool and tread water for one minute) to go past belly-button depth; retests are each Monday. Lake days at Pawtuckaway State Park are lifeguarded by the State Park.",
+      "season_year": 2026,
+      "price_per": "week",
+      "email": "ccharron@nashuaalc.org",
+      "sessions": [
+        {
+          "name": "Week 1",
+          "start_date": "2026-06-29",
+          "end_date": "2026-07-02",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 2",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "price": 295,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 3",
+          "start_date": "2026-07-13",
+          "end_date": "2026-07-17",
+          "price": 295,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 4",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "price": 295,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 5",
+          "start_date": "2026-07-27",
+          "end_date": "2026-07-31",
+          "price": 295,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 6",
+          "start_date": "2026-08-03",
+          "end_date": "2026-08-07",
+          "price": 295,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 7",
+          "start_date": "2026-08-10",
+          "end_date": "2026-08-14",
+          "price": 295,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://nashuaalc.org/for-children/adventure-camp/",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "camp_type",
+            "primary_categories",
+            "activities",
+            "age_min",
+            "grade_min",
+            "grade_max",
+            "description_short",
+            "price_per_week",
+            "price_per"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://nashuaalc.org/wp-content/uploads/2026/06/Parent-Handbook-revised-2026.pdf",
+          "checked": "2026-11-13",
+          "fields": [
+            "email",
+            "swim_waterfront_notes"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://nashuaalc.org/wp-content/uploads/2026/06/2026-camp-at-a-glance.pdf",
+          "checked": "2026-11-13",
+          "fields": [
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=40+Arlington+St.&city=Nashua&state=NH&benchmark=Public_AR_Current&format=json",
+          "checked": "2026-11-13",
+          "fields": [
+            "zip"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ]
+    },
+    {
+      "slug": "ascend-at-camp-monadnock-jaffrey",
+      "name": "Ascend at Camp Monadnock",
+      "operator_name": "Berea - Camp Monadnock",
+      "website_url": "https://www.monadnock.camp/summercamp/",
+      "registration_url": "https://monadnock.campbrainregistration.com/",
+      "email": "campmonadnock@berea.org",
+      "phone": "603-744-6344",
+      "street_address": "257 Dublin Road",
+      "city": "Jaffrey",
+      "state": "NH",
+      "zip": "03452",
+      "camp_type": "sleepaway",
+      "primary_categories": [
+        "faith",
+        "nature",
+        "sports"
+      ],
+      "grade_min": 2,
+      "grade_max": 12,
+      "description_short": "A Christian overnight summer camp week in Jaffrey, NH. There are separate weeks for kids (finishing grades 2-5) and teens (finishing grades 6-12). Campers stay in dorms from Sunday to Thursday and do outdoor activities, worship, Bible teaching and small groups.",
+      "activities": [
+        "Swimming",
+        "Archery",
+        "Climbing Tower",
+        "Ropes Course",
+        "Game Room & Lawn Games",
+        "Sports",
+        "Arts & Crafts",
+        "Mini Golf",
+        "Paintball",
+        "Chapel",
+        "Wagon rides",
+        "Campfire"
+      ],
+      "price_min": 635,
+      "price_max": 685,
+      "price_per": "session",
+      "financial_aid": true,
+      "meals_included": true,
+      "special_needs_notes": "You can share allergies and dietary restrictions during registration, and the camp says it works hard to accommodate them. Nurses are on site.",
+      "swim_waterfront_notes": "Afternoon free time includes swimming and time at the beach by the pond. The page does not describe lifeguarding or swim tests.",
+      "season_year": 2027,
+      "sessions": [
+        {
+          "name": "Ascend Kids Camp (finishing grades 2-5)",
+          "start_date": "2027-07-11",
+          "end_date": "2027-07-15",
+          "price": 685,
+          "availability": "unknown"
+        },
+        {
+          "name": "Ascend Jr/Sr High Camp (finishing grades 6-12)",
+          "start_date": "2027-07-18",
+          "end_date": "2027-07-22",
+          "price": 685,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.monadnock.camp/summercamp/",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "registration_url",
+            "email",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "primary_categories",
+            "activities",
+            "grade_min",
+            "grade_max",
+            "description_short",
+            "meals_included",
+            "financial_aid",
+            "special_needs_notes",
+            "swim_waterfront_notes",
+            "sessions",
+            "price_min",
+            "price_max",
+            "price_per"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ]
+    },
+    {
+      "slug": "bch-camp-barbara-c-harris-camp-greenfield",
+      "name": "BCH Camp (Barbara C. Harris Camp)",
+      "operator_name": "Barbara C. Harris Camp & Conference Center (Episcopal Diocese of Massachusetts)",
+      "website_url": "https://bchcenter.org/summer-camp/",
+      "registration_url": "http://bchcamp.campbrainregistration.com/",
+      "email": "info@bchcenter.org",
+      "phone": "(603) 547-3400",
+      "street_address": "108 Wally Stone Lane",
+      "city": "Greenfield",
+      "state": "NH",
+      "zip": "03047",
+      "camp_type": "sleepaway",
+      "primary_categories": [
+        "faith",
+        "nature"
+      ],
+      "grade_min": 0,
+      "grade_max": 12,
+      "description_short": "Episcopal overnight camp on Otter Lake in Greenfield, NH, with a Mini Camp for kids who have completed K to 3rd grade, three youth weeks and a High School Camp for 9th to 12th graders. Campers boat, swim in the lake, do archery, basketball, arts and crafts and the challenge course, with chapel and worship each day.",
+      "activities": [
+        "boating",
+        "swimming in the lake",
+        "archery",
+        "basketball",
+        "arts and crafts",
+        "challenge course",
+        "games in the gym",
+        "chapel and evening worship",
+        "Rock Out Sesh talent show and dance party"
+      ],
+      "financial_aid": true,
+      "meals_included": true,
+      "refund_policy_summary": "Every registration needs a $250 deposit that is not refunded. Cancel 30 or more days ahead and all other fees are refunded or moved to another week; cancel within 30 days and nothing is refunded, except for illness or a family emergency requested in writing.",
+      "special_needs_notes": "The page has an inclusion statement saying people of all abilities are welcome. It does not describe any specific accommodations.",
+      "swim_waterfront_notes": "Campers swim in Otter Lake and go boating from the camp waterfront. The camp's pages don't describe swim tests or lifeguarding.",
+      "season_year": 2027,
+      "sessions": [
+        {
+          "name": "Mini Camp (completed K to 3rd grade)",
+          "start_date": "2027-06-28",
+          "end_date": "2027-06-30",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "High School Camp",
+          "start_date": "2027-07-04",
+          "end_date": "2027-07-09",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Youth Overnight Session 1",
+          "start_date": "2027-07-18",
+          "end_date": "2027-07-23",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Youth Overnight Session 2",
+          "start_date": "2027-07-25",
+          "end_date": "2027-07-30",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Youth Overnight Session 3",
+          "start_date": "2027-08-01",
+          "end_date": "2027-08-06",
+          "price": null,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://bchcenter.org/summer-camp/",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "website_url",
+            "primary_categories",
+            "activities",
+            "grade_min",
+            "grade_max",
+            "description_short",
+            "special_needs_notes",
+            "swim_waterfront_notes",
+            "sessions",
+            "camp_type"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://bchcenter.org/",
+          "checked": "2026-11-13",
+          "fields": [
+            "operator_name",
+            "email",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://bchcenter.org/wp-content/uploads/2026/09/26OCParentGuide-1.pdf",
+          "checked": "2026-11-13",
+          "fields": [
+            "registration_url",
+            "financial_aid",
+            "meals_included",
+            "refund_policy_summary"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ]
+    },
+    {
+      "slug": "boys-and-girls-club-of-greater-salem-summer-camp-salem",
+      "name": "Boys & Girls Club of Greater Salem Summer Camp",
+      "operator_name": "Boys & Girls Club of Greater Salem",
+      "website_url": "https://www.salembgc.org/summercamp",
+      "registration_url": "https://www.salembgc.org/registration",
+      "email": "info@salembgc.org",
+      "phone": "(603) 898-7709",
+      "street_address": "3 Geremonty Drive",
+      "city": "Salem",
+      "state": "NH",
+      "zip": "03079",
+      "camp_type": "day",
+      "primary_categories": [
+        "sports"
+      ],
+      "grade_min": 0,
+      "description_short": "Day camp at the Boys & Girls Club in Salem, NH, for kids from kindergarten up, grouped by the grade they are entering, with a separate teen group. Campers rotate through the Club's program areas, outdoor courts and pool, and go on a field trip each week.",
+      "activities": [
+        "Swimming (pool)",
+        "Outdoor court games",
+        "Weekly field trips"
+      ],
+      "price_per_week": 275,
+      "extended_care": true,
+      "meals_included": false,
+      "swim_waterfront_notes": "Campers use the Club's pool. Send a swimsuit and towel every day.",
+      "season_year": 2026,
+      "price_per": "week",
+      "sources": [
+        {
+          "url": "https://www.salembgc.org/summercamp",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "registration_url",
+            "email",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "primary_categories",
+            "activities",
+            "description_short",
+            "price_per_week",
+            "price_per",
+            "extended_care",
+            "meals_included",
+            "swim_waterfront_notes"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://irp.cdn-website.com/f6502fd9/files/uploaded/Copy+of+Fieldtrip+Times+and+Destinations+2026.pdf",
+          "checked": "2026-11-13",
+          "fields": [
+            "grade_min"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ]
+    },
+    {
+      "slug": "c-a-k-e-summer-camp-creative-arts-at-keene-keene",
+      "name": "C.A.K.E. Summer Camp (Creative Arts at Keene)",
+      "operator_name": "MoCo Arts",
+      "website_url": "https://www.moco.org/camps/cake/",
+      "email": "info@moco.org",
+      "phone": "(603) 357-2100",
+      "street_address": "40 Roxbury St.",
+      "city": "Keene",
+      "state": "NH",
+      "zip": "03431",
+      "camp_type": "day",
+      "primary_categories": [
+        "arts",
+        "performing_arts"
+      ],
+      "grade_min": 3,
+      "grade_max": 12,
+      "description_short": "A four-week multi-arts day camp in July for students in grades 3–12. Campers choose their own full-day or half-day schedule of performing and visual arts classes, and the camp ends with a Festival Week of performances and exhibits.",
+      "activities": [
+        "dance",
+        "theatre",
+        "visual art",
+        "creative writing",
+        "music",
+        "tech theatre",
+        "film",
+        "podcasting",
+        "chainmail jewelry design",
+        "cooking",
+        "tabletop games (Dungeons and Dragons)",
+        "musicals",
+        "one-act plays",
+        "art exhibits"
+      ],
+      "price_per_week": 255,
+      "price_min": 135,
+      "price_max": 990,
+      "financial_aid": true,
+      "extended_care": true,
+      "season_year": 2026,
+      "price_per": "week",
+      "sessions": [
+        {
+          "name": "Week 1 (full day)",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "price": 255,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 2 (full day)",
+          "start_date": "2026-07-13",
+          "end_date": "2026-07-17",
+          "price": 255,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 3 (full day)",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "price": 255,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 4: Festival Week (needs Week 1, 2 or 3 too) (full day)",
+          "start_date": "2026-07-27",
+          "end_date": "2026-07-31",
+          "price": 255,
+          "availability": "unknown"
+        },
+        {
+          "name": "All four weeks (full day)",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-31",
+          "price": 990,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.moco.org/camps/cake/",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "email",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "primary_categories",
+            "activities",
+            "grade_min",
+            "grade_max",
+            "description_short",
+            "price_min",
+            "price_max",
+            "price_per_week",
+            "price_per",
+            "extended_care",
+            "financial_aid"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://www.moco.org/wp-content/uploads/2026/05/C.A.K.E.-Class-Schedule-2026-UPDATED-V.2.pdf",
+          "checked": "2026-11-13",
+          "fields": [
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ]
+    },
+    {
+      "slug": "camp-deerwood-holderness",
+      "name": "Camp Deerwood",
+      "website_url": "https://campdeerwood.com/",
+      "email": "info@campdeerwood.com",
+      "phone": "(603) 279-4237",
+      "city": "Holderness",
+      "state": "NH",
+      "zip": "03245",
+      "camp_type": "sleepaway",
+      "gender_policy": "boys",
+      "primary_categories": [
+        "sports",
+        "nature"
+      ],
+      "age_min": 8,
+      "age_max": 15,
+      "description_short": "Deerwood is an overnight camp for boys aged 8-15 on Squam Lake in Holderness, New Hampshire. Along with traditional camp activities, campers can try blacksmithing, waterskiing, rock climbing, kayaking, mountain biking and windsurfing.",
+      "activities": [
+        "blacksmithing",
+        "waterskiing",
+        "rock-climbing",
+        "kayaking",
+        "mountain-biking",
+        "windsurfing",
+        "trips"
+      ],
+      "price_min": 7100,
+      "price_max": 12100,
+      "price_per": "session",
+      "financial_aid": true,
+      "swim_waterfront_notes": "Camp is on Squam Lake; waterfront activities include waterskiing, kayaking and windsurfing.",
+      "season_year": 2027,
+      "sessions": [
+        {
+          "name": "1st Session",
+          "start_date": "2027-06-26",
+          "end_date": "2027-07-18",
+          "price": 7100,
+          "availability": "unknown"
+        },
+        {
+          "name": "2nd Session",
+          "start_date": "2027-07-23",
+          "end_date": "2027-08-14",
+          "price": 7100,
+          "availability": "unknown"
+        },
+        {
+          "name": "Full Session",
+          "start_date": "2027-06-26",
+          "end_date": "2027-08-14",
+          "price": 12100,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://campdeerwood.com/current-schedule/",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "website_url",
+            "phone",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "primary_categories",
+            "activities",
+            "age_min",
+            "age_max",
+            "description_short",
+            "swim_waterfront_notes",
+            "sessions",
+            "email",
+            "gender_policy"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://campdeerwood.com/faqs/",
+          "checked": "2026-11-13",
+          "fields": [
+            "price_min",
+            "price_max",
+            "price_per"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://campdeerwood.com/quick-facts/",
+          "checked": "2026-11-13",
+          "fields": [
+            "financial_aid"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ]
+    },
+    {
+      "slug": "camp-hadar-salem",
+      "name": "Camp Hadar",
+      "website_url": "https://www.camphadar.org/",
+      "registration_url": "https://hadar.campintouch.com/ui/forms/application/camper/App",
+      "email": "info@camphadar.org",
+      "phone": "(603) 898-6883",
+      "street_address": "92 Hooker Farm Road",
+      "city": "Salem",
+      "state": "NH",
+      "zip": "03079",
+      "camp_type": "day",
+      "primary_categories": [
+        "general",
+        "swimming",
+        "sports",
+        "arts"
+      ],
+      "activities": [
+        "Red Cross swim lessons",
+        "free swim",
+        "canoeing",
+        "kayaking",
+        "paddleboats",
+        "waterbikes",
+        "paddle boards",
+        "softball",
+        "archery",
+        "basketball",
+        "tennis",
+        "street hockey",
+        "beach volleyball",
+        "soccer",
+        "gaga",
+        "music",
+        "crafts",
+        "dance",
+        "drama",
+        "Jewish songs and Israeli dance",
+        "electives (chugim)"
+      ],
+      "gender_policy": "coed",
+      "age_min": 5,
+      "age_max": 15,
+      "grade_min": 0,
+      "grade_max": 10,
+      "description_short": "Co-ed day camp for ages 5-15 (entering kindergarten through 10th grade CITs) on 17 acres of woods and sandy beach on Captain's Pond in Salem, NH. Weekly sessions run 9:00 am to 4:00 pm, with Red Cross swim lessons, boating, sports and arts, and optional busing from Chelmsford, Andover and Peabody, MA for $50 a week.",
+      "religious_affiliation": "Jewish",
+      "price_per_week": 419,
+      "price_min": 419,
+      "price_max": 419,
+      "price_per": "week",
+      "financial_aid": true,
+      "extended_care": false,
+      "transportation": true,
+      "meals_included": false,
+      "refund_policy_summary": "A $100 deposit per week, per child, is due with the application. After May 1, 2026 the camp keeps the deposit; from June 1, 2026 there are no refunds or credits. Balances were due in full by May 30, 2026.",
+      "swim_waterfront_notes": "Sandy beach on Captain's Pond. The camp runs a Red Cross swim instruction program plus free swim, and boating in canoes, kayaks, paddleboats, waterbikes and paddle boards.",
+      "season_year": 2026,
+      "sessions": [
+        {
+          "name": "Week 1",
+          "start_date": "2026-06-22",
+          "end_date": "2026-06-26",
+          "price": 419,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 2",
+          "start_date": "2026-06-29",
+          "end_date": "2026-07-03",
+          "price": 419,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 3",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "price": 419,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 4",
+          "start_date": "2026-07-13",
+          "end_date": "2026-07-17",
+          "price": 419,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 5",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "price": 419,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 6",
+          "start_date": "2026-07-27",
+          "end_date": "2026-07-31",
+          "price": 419,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 7",
+          "start_date": "2026-08-03",
+          "end_date": "2026-08-07",
+          "price": 419,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 8",
+          "start_date": "2026-08-10",
+          "end_date": "2026-08-14",
+          "price": 419,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.camphadar.org/",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "website_url",
+            "registration_url",
+            "email",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "age_min",
+            "age_max",
+            "gender_policy",
+            "description_short"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://www.camphadar.org/programs/registration-information-and-fees/",
+          "checked": "2026-11-13",
+          "fields": [
+            "price_per_week",
+            "price_min",
+            "price_max",
+            "price_per",
+            "financial_aid",
+            "refund_policy_summary"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://www.camphadar.org/programs/dates/",
+          "checked": "2026-11-13",
+          "fields": [
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://www.camphadar.org/programs/daily-programming/",
+          "checked": "2026-11-13",
+          "fields": [
+            "grade_min",
+            "grade_max",
+            "primary_categories",
+            "activities",
+            "swim_waterfront_notes"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://www.camphadar.org/current-families/information-for-parents/",
+          "checked": "2026-11-13",
+          "fields": [
+            "religious_affiliation",
+            "extended_care",
+            "meals_included"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://www.camphadar.org/current-families/transportation-information/",
+          "checked": "2026-11-13",
+          "fields": [
+            "transportation"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ]
+    },
+    {
+      "slug": "camp-hale-sandwich",
+      "name": "Camp Hale",
+      "operator_name": "United South End Settlements (USES)",
+      "website_url": "https://www.uses.org/programs/camphale/",
+      "registration_url": "https://camphale.campmanagement.com/p/campers/login_m.php",
+      "email": "rpoulin@uses.org",
+      "street_address": "92 Millbridge Rd.",
+      "city": "Sandwich",
+      "state": "NH",
+      "zip": "03227",
+      "camp_type": "sleepaway",
+      "primary_categories": [
+        "nature",
+        "sports",
+        "arts"
+      ],
+      "activities": [
+        "swimming",
+        "canoeing",
+        "kayaking",
+        "paddle boarding",
+        "arts & crafts",
+        "nature education",
+        "archery",
+        "biking",
+        "soccer",
+        "basketball",
+        "tennis",
+        "football",
+        "wrestling",
+        "gardening",
+        "hiking",
+        "camping"
+      ],
+      "age_min": 5,
+      "age_max": 17,
+      "description_short": "Overnight camp on Squam Lake in Sandwich, NH, run by Boston's United South End Settlements for Boston youth ages 5-17. It offers 2-week boys and girls sessions, a 7-day all-gender session, 4-week leadership programs for teens and a 4-day Family Camp, with bus pickup in Boston and fees on a sliding scale by household income.",
+      "price_min": 100.82,
+      "price_max": 2625,
+      "price_per": "session",
+      "financial_aid": true,
+      "transportation": true,
+      "meals_included": true,
+      "refund_policy_summary": "All payments are final and non-refundable. Payment plans are available if you contact the camp.",
+      "swim_waterfront_notes": "On Squam Lake. The camp aims for 2–4 swim sessions a day and to teach every child to swim and be water-safe. Canoeing, kayaking and paddle boarding are also offered.",
+      "season_year": 2026,
+      "sessions": [
+        {
+          "name": "Boys Camp | Session 1",
+          "start_date": "2026-06-21",
+          "end_date": "2026-07-05",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Boys Camp | Session 2",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-19",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Family Camp",
+          "start_date": "2026-07-23",
+          "end_date": "2026-07-26",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Girls Camp | Session 3",
+          "start_date": "2026-07-26",
+          "end_date": "2026-08-08",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Girls Camp | Session 4",
+          "start_date": "2026-08-09",
+          "end_date": "2026-08-23",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "All Gender Camp | Session 5",
+          "start_date": "2026-08-26",
+          "end_date": "2026-09-02",
+          "price": null,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.uses.org/programs/camphale/",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "registration_url",
+            "email",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "primary_categories",
+            "activities",
+            "age_min",
+            "age_max",
+            "description_short",
+            "price_min",
+            "price_max",
+            "transportation",
+            "meals_included",
+            "financial_aid",
+            "refund_policy_summary",
+            "swim_waterfront_notes",
+            "sessions",
+            "price_per"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ]
+    },
+    {
+      "slug": "camp-hawkeye-charlestown",
+      "name": "Camp Hawkeye",
+      "website_url": "https://www.camphawkeye.com",
+      "registration_url": "https://hawkeye.campintouch.com/ui/forms/application/camper/App",
+      "email": "Jess@camphawkeye.com",
+      "phone": "781-315-1297",
+      "street_address": "165 Camp Good News Rd.",
+      "city": "Charlestown",
+      "state": "NH",
+      "zip": "03603",
+      "camp_type": "sleepaway",
+      "primary_categories": [
+        "outdoor",
+        "sports",
+        "arts"
+      ],
+      "activities": [
+        "archery",
+        "adventure course",
+        "swimming",
+        "climbing tower",
+        "zip line",
+        "arts & crafts",
+        "bugs & dirt (nature)",
+        "gaga",
+        "multimedia",
+        "athletics",
+        "ceramics",
+        "drama",
+        "outdoor skills",
+        "Iron Chef (cooking)",
+        "weekly hiking or boating trip",
+        "cabin sleep outs"
+      ],
+      "gender_policy": "coed",
+      "age_min": 7,
+      "age_max": 17,
+      "description_short": "Small, gender-inclusive overnight camp for ages 7-17 in Charlestown, NH, with sessions of 2, 4, 6 or 8 weeks. Tuition covers everything: program materials, out-of-camp hikes and trips, overnights, laundry, food and housing.",
+      "price_min": 3000,
+      "price_max": 11400,
+      "financial_aid": true,
+      "transportation": true,
+      "meals_included": true,
+      "refund_policy_summary": "You must cancel in writing to Jess@camphawkeye.com. Before January 1, all tuition is refunded, including the deposit. After January 1, the deposit is not refunded. After April 1, half of the tuition is not refunded. After June 1, none of the tuition is refunded.",
+      "swim_waterfront_notes": "A 2,600 square foot pool and the stream-fed Lily Pond, with a rope swing. Daily recreational and instructional swim periods; certified lifeguards oversee all waterfront activities.",
+      "season_year": 2027,
+      "sessions": [
+        {
+          "name": "2-Week Session I",
+          "start_date": "2027-06-27",
+          "end_date": "2027-07-10",
+          "price": 3000,
+          "availability": "unknown"
+        },
+        {
+          "name": "2-Week Session II",
+          "start_date": "2027-07-11",
+          "end_date": "2027-07-24",
+          "price": 3000,
+          "availability": "unknown"
+        },
+        {
+          "name": "2-Week Session III",
+          "start_date": "2027-07-25",
+          "end_date": "2027-08-07",
+          "price": 3000,
+          "availability": "unknown"
+        },
+        {
+          "name": "2-Week Session IV",
+          "start_date": "2027-08-08",
+          "end_date": "2027-08-21",
+          "price": 3000,
+          "availability": "unknown"
+        },
+        {
+          "name": "4-Week Session A",
+          "start_date": "2027-06-27",
+          "end_date": "2027-07-24",
+          "price": 5800,
+          "availability": "unknown"
+        },
+        {
+          "name": "4-Week Session B",
+          "start_date": "2027-07-25",
+          "end_date": "2027-08-21",
+          "price": 5800,
+          "availability": "unknown"
+        },
+        {
+          "name": "6-Week Session 6A",
+          "start_date": "2027-06-27",
+          "end_date": "2027-08-07",
+          "price": 8600,
+          "availability": "unknown"
+        },
+        {
+          "name": "6-Week Session 6B",
+          "start_date": "2027-07-11",
+          "end_date": "2027-08-21",
+          "price": 8600,
+          "availability": "unknown"
+        },
+        {
+          "name": "Full 8 Weeks",
+          "start_date": "2027-06-27",
+          "end_date": "2027-08-21",
+          "price": 11400,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.camphawkeye.com",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "website_url",
+            "age_min",
+            "age_max",
+            "gender_policy"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://www.camphawkeye.com/datesandrates",
+          "checked": "2026-11-13",
+          "fields": [
+            "registration_url",
+            "email",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "description_short",
+            "price_min",
+            "price_max",
+            "financial_aid",
+            "refund_policy_summary",
+            "sessions",
+            "meals_included"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://www.camphawkeye.com/activities",
+          "checked": "2026-11-13",
+          "fields": [
+            "primary_categories",
+            "activities",
+            "swim_waterfront_notes"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://www.camphawkeye.com/familyfaq",
+          "checked": "2026-11-13",
+          "fields": [
+            "transportation"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ]
+    },
+    {
+      "slug": "camp-k-summer-day-camp-lebanon",
+      "name": "Camp K - Summer Day Camp",
+      "operator_name": "City of Lebanon Recreation, Arts, and Parks",
+      "website_url": "https://lebanonnh.gov/255/Camp-K---Summer-Day-Camp",
+      "registration_url": "https://secure.rec1.com/NH/city-of-lebanon/catalog",
+      "email": "Recreation@LebanonNH.gov",
+      "phone": "603-448-5121",
+      "street_address": "Lebanon Middle School, 3 Moulton Avenue",
+      "city": "Lebanon",
+      "state": "NH",
+      "zip": "03766",
+      "camp_type": "day",
+      "primary_categories": [
+        "sports",
+        "arts"
+      ],
+      "activities": [
+        "Swim lessons",
+        "Contracted performances",
+        "Arts and crafts",
+        "Sports and games",
+        "Quiet activity time",
+        "Optional day trips (Camp K Hits the Road)"
+      ],
+      "age_min": 5,
+      "age_max": 11,
+      "description_short": "City-run summer day camp for children ages 5-11, held Monday-Friday 7:30 AM-5:00 PM at Lebanon Middle School. Campers are grouped by age (5-6, 7-8, 9-11) and do swim lessons, arts and crafts, sports and games, and performances. An optional trip week, Camp K Hits the Road, follows for ages 7-12.",
+      "price_per_week": 185,
+      "price_min": 185,
+      "price_max": 225,
+      "price_per": "week",
+      "financial_aid": true,
+      "refund_policy_summary": "A $20 deposit per week is non-refundable. The page gives no other refund terms.",
+      "special_needs_notes": "Parents must disclose any physical, mental, emotional, social, developmental, or psychological conditions, plus medications and allergies, by June 8. The page does not describe any specific accommodations.",
+      "swim_waterfront_notes": "Swim lessons at the Lebanon Veterans Outdoor Memorial Pool. Parents must give the camper's swim level.",
+      "season_year": 2026,
+      "sessions": [
+        {
+          "name": "Week 1",
+          "start_date": "2026-06-29",
+          "end_date": "2026-07-03",
+          "price": 185,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 2",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "price": 185,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 3",
+          "start_date": "2026-07-13",
+          "end_date": "2026-07-17",
+          "price": 185,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 4",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "price": 185,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 5",
+          "start_date": "2026-07-27",
+          "end_date": "2026-07-31",
+          "price": 185,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 6",
+          "start_date": "2026-08-03",
+          "end_date": "2026-08-07",
+          "price": 185,
+          "availability": "unknown"
+        },
+        {
+          "name": "Camp K Hits the Road: Whale's Tale Waterpark",
+          "start_date": "2026-08-10",
+          "end_date": "2026-08-10",
+          "price": 65,
+          "availability": "unknown"
+        },
+        {
+          "name": "Camp K Hits the Road: Lake Sunapee",
+          "start_date": "2026-08-11",
+          "end_date": "2026-08-11",
+          "price": 65,
+          "availability": "unknown"
+        },
+        {
+          "name": "Camp K Hits the Road: Altitude Trampoline Park",
+          "start_date": "2026-08-12",
+          "end_date": "2026-08-12",
+          "price": 65,
+          "availability": "unknown"
+        },
+        {
+          "name": "Camp K Hits the Road: Clough State Park & Beech Hill",
+          "start_date": "2026-08-13",
+          "end_date": "2026-08-13",
+          "price": 65,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://lebanonnh.gov/255/Camp-K---Summer-Day-Camp",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "registration_url",
+            "email",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "camp_type",
+            "primary_categories",
+            "activities",
+            "age_min",
+            "age_max",
+            "description_short",
+            "price_min",
+            "price_max",
+            "price_per_week",
+            "price_per",
+            "financial_aid",
+            "refund_policy_summary",
+            "special_needs_notes",
+            "swim_waterfront_notes",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=Lebanon+Middle+School%2C+3+Moulton+Avenue&city=Lebanon&state=NH&benchmark=Public_AR_Current&format=json",
+          "checked": "2026-11-13",
+          "fields": [
+            "zip"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ]
+    },
+    {
+      "slug": "camp-lawrence-laconia",
+      "name": "Camp Lawrence",
+      "operator_name": "Merrimack Valley YMCA",
+      "website_url": "https://camp.mvymca.org/camp/camp-lawrence/",
+      "registration_url": "https://mvymca.campbrainregistration.com/",
+      "email": "camplawrence@mvymca.org",
+      "phone": "603-279-6488",
+      "street_address": "187 Bear Island",
+      "city": "Laconia",
+      "state": "NH",
+      "zip": "03246",
+      "camp_type": "sleepaway",
+      "primary_categories": [
+        "sports",
+        "nature",
+        "arts",
+        "performing_arts"
+      ],
+      "activities": [
+        "Archery",
+        "Arts & Crafts",
+        "Basketball",
+        "Campcraft",
+        "Canoeing",
+        "Fishing",
+        "Fitness",
+        "Floor Hockey",
+        "Frisbee",
+        "Improv/Theater",
+        "Kayaking",
+        "Lacrosse",
+        "Music",
+        "Outdoor Education",
+        "Paddle Boarding",
+        "Photography",
+        "Ping Pong/Table Tennis",
+        "Radio/Broadcasting",
+        "Riflery",
+        "Ropes Course",
+        "Rugby",
+        "Sailing",
+        "Snorkeling",
+        "Soccer",
+        "Swimming",
+        "Video",
+        "Volleyball",
+        "Waterskiing",
+        "Tennis"
+      ],
+      "gender_policy": "boys",
+      "age_min": 8,
+      "age_max": 16,
+      "description_short": "Overnight YMCA camp for boys ages 8-16 on Bear Island in Lake Winnipesaukee, NH, with two-week sessions (one-week sessions only for first-time junior campers). Boys choose their own schedule from sports, waterfront, arts and outdoor-skills activities.",
+      "price_min": 1600,
+      "price_max": 2675,
+      "financial_aid": true,
+      "transportation": true,
+      "meals_included": true,
+      "refund_policy_summary": "Deposit ($300 per two-week session, $200 per one-week session) is due at registration and is non-refundable. Full balance is due April 1, 2027, with a $150 late fee after that. After April 1, tuition is non-refundable and non-transferable, except for a documented camper illness or death of an immediate family member. Cancellations must be emailed to campinfo@mvymca.org.",
+      "special_needs_notes": "The camp can handle most dietary preferences (vegetarian, gluten-free, etc.), and staff are told about known food allergies. There are two full-time nurses. Parents of first-time campers fill out a 'Let's Get Acquainted' form that the director reviews.",
+      "swim_waterfront_notes": "Lakefront camp on Lake Winnipesaukee with two natural beaches. Every camper takes swim lessons, and there is open swim. Many staff are certified lifeguards. Waterfront activities include canoeing, kayaking, sailing, paddle boarding, snorkeling, waterskiing and fishing.",
+      "season_year": 2027,
+      "sessions": [
+        {
+          "name": "Session 1 (two weeks)",
+          "start_date": "2027-06-27",
+          "end_date": "2027-07-10",
+          "price": 2675,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 2 (two weeks)",
+          "start_date": "2027-07-11",
+          "end_date": "2027-07-24",
+          "price": 2675,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 3 (two weeks)",
+          "start_date": "2027-07-25",
+          "end_date": "2027-08-07",
+          "price": 2675,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 4 (two weeks)",
+          "start_date": "2027-08-08",
+          "end_date": "2027-08-21",
+          "price": 2675,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 1A (one week, first-time junior campers entering grades 3-6 only)",
+          "start_date": "2027-06-27",
+          "end_date": "2027-07-03",
+          "price": 1600,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 1B (one week, first-time junior campers entering grades 3-6 only)",
+          "start_date": "2027-07-04",
+          "end_date": "2027-07-10",
+          "price": 1600,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 4A (one week, first-time junior campers entering grades 3-6 only)",
+          "start_date": "2027-08-08",
+          "end_date": "2027-08-14",
+          "price": 1600,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 4B (one week, first-time junior campers entering grades 3-6 only)",
+          "start_date": "2027-08-15",
+          "end_date": "2027-08-21",
+          "price": 1600,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://camp.mvymca.org/camp/camp-lawrence/",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "registration_url",
+            "email",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "primary_categories",
+            "activities",
+            "age_min",
+            "age_max",
+            "description_short",
+            "price_min",
+            "price_max",
+            "meals_included",
+            "refund_policy_summary",
+            "special_needs_notes",
+            "swim_waterfront_notes",
+            "sessions",
+            "gender_policy"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://camp.mvymca.org/prepare-for-camp/overnight-camp/",
+          "checked": "2026-11-13",
+          "fields": [
+            "financial_aid",
+            "transportation"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ]
+    },
+    {
+      "slug": "camp-merriwood-orford",
+      "name": "Camp Merriwood",
+      "website_url": "https://www.merriwood.com/",
+      "registration_url": "https://merriwood.campintouch.com/ui/forms/application/camper/App",
+      "email": "info@merriwood.com",
+      "phone": "(603) 353-9882",
+      "street_address": "11 Camp Road",
+      "city": "Orford",
+      "state": "NH",
+      "zip": "03777",
+      "camp_type": "sleepaway",
+      "primary_categories": [
+        "sports",
+        "arts",
+        "general"
+      ],
+      "activities": [
+        "tennis",
+        "soccer",
+        "volleyball",
+        "basketball",
+        "softball",
+        "archery",
+        "golf",
+        "field hockey",
+        "lacrosse",
+        "gymnastics",
+        "rock wall and zip line",
+        "swimming (Red Cross levels)",
+        "boating",
+        "canoeing",
+        "sailing",
+        "crew",
+        "waterskiing, tubing, kneeboarding and wakeboarding",
+        "horseback riding (extra fee)",
+        "arts and crafts",
+        "dance",
+        "drama",
+        "trips"
+      ],
+      "gender_policy": "girls",
+      "age_min": null,
+      "age_max": 15,
+      "description_short": "Traditional overnight camp for girls ages 8-15 on Upper Baker Pond in Orford, NH, founded in 1949. It offers a 7-week full session, 4-week and 3-week half sessions, and 2-week \"Splash of Magic\" sessions for new campers in current grades 1-4, with land sports, tennis, waterskiing, gymnastics, riding and the arts.",
+      "price_min": 5525,
+      "price_max": 14600,
+      "price_per": "session",
+      "transportation": true,
+      "swim_waterfront_notes": "On Upper Baker Pond. All girls take daily swim classes in American Red Cross levels taught by Water Safety Instructors; swimming only at set times in designated areas with lifeguards and a buddy system. Boating, canoeing, sailing, crew and waterskiing are offered.",
+      "season_year": 2027,
+      "sessions": [
+        {
+          "name": "Full Session (7 weeks)",
+          "start_date": "2027-06-27",
+          "end_date": "2027-08-14",
+          "price": 14600,
+          "availability": "unknown"
+        },
+        {
+          "name": "First Session (4 weeks)",
+          "start_date": "2027-06-27",
+          "end_date": "2027-07-24",
+          "price": 9725,
+          "availability": "unknown"
+        },
+        {
+          "name": "Second Session (3 weeks)",
+          "start_date": "2027-07-25",
+          "end_date": "2027-08-14",
+          "price": 8050,
+          "availability": "unknown"
+        },
+        {
+          "name": "Splash of Magic Session (2 weeks) - new current 1st-4th graders only",
+          "start_date": "2027-06-27",
+          "end_date": "2027-07-10",
+          "price": 5525,
+          "availability": "unknown"
+        },
+        {
+          "name": "2nd Splash of Magic Session (2 weeks) - new current 1st-4th graders only",
+          "start_date": "2027-07-25",
+          "end_date": "2027-08-07",
+          "price": 5525,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.merriwood.com/",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "website_url",
+            "age_max",
+            "gender_policy",
+            "description_short",
+            "primary_categories"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://www.merriwood.com/dates",
+          "checked": "2026-11-13",
+          "fields": [
+            "registration_url",
+            "camp_type",
+            "price_min",
+            "price_max",
+            "price_per",
+            "transportation",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://www.merriwood.com/contact-us",
+          "checked": "2026-11-13",
+          "fields": [
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "phone",
+            "email"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://www.merriwood.com/activities",
+          "checked": "2026-11-13",
+          "fields": [
+            "activities",
+            "swim_waterfront_notes"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ]
+    },
+    {
+      "slug": "camp-moosilauke-orford",
+      "name": "Camp Moosilauke",
+      "website_url": "https://moosilauke.com/",
+      "registration_url": "https://moosilauke.campintouch.com/ui/forms/application/camper/App",
+      "email": "cmoosilauke@gmail.com",
+      "phone": "1-800-353-4546",
+      "street_address": "55 Moosilauke Way",
+      "city": "Orford",
+      "state": "NH",
+      "zip": "03777",
+      "camp_type": "sleepaway",
+      "primary_categories": [
+        "sports",
+        "nature"
+      ],
+      "activities": [
+        "baseball",
+        "basketball",
+        "lacrosse",
+        "soccer",
+        "tennis",
+        "archery",
+        "ultimate frisbee",
+        "flag football",
+        "canoeing",
+        "kayaking",
+        "sailing",
+        "swimming",
+        "waterskiing/wakeboarding/wake surfing",
+        "rowing",
+        "stand-up paddle boarding",
+        "fishing",
+        "Backcountry Leadership Program",
+        "hiking",
+        "whitewater canoeing and kayaking",
+        "rock climbing",
+        "mountain biking",
+        "woodworking",
+        "arts and crafts"
+      ],
+      "gender_policy": "boys",
+      "age_min": 7,
+      "age_max": 15,
+      "description_short": "A traditional overnight camp for boys ages 7-15 on a New Hampshire lake, founded in 1904. Campers do land sports, waterfront and outdoor adventure activities, with set periods in the morning and activities they pick each afternoon.",
+      "price_min": 5200,
+      "price_max": 10200,
+      "price_per": "session",
+      "financial_aid": true,
+      "refund_policy_summary": "A $1,000 registration deposit is due at enrollment and becomes non-refundable after December 1, 2026. The page gives no other refund terms.",
+      "swim_waterfront_notes": "The camp has a private waterfront and swimming area and about a mile of shoreline. Water activities include swimming, canoeing, kayaking, sailing, waterskiing/wakeboarding/wake surfing, rowing, stand-up paddle boarding and fishing.",
+      "season_year": 2027,
+      "sessions": [
+        {
+          "name": "First Session: 4 weeks (all ages)",
+          "start_date": "2027-06-26",
+          "end_date": "2027-07-25",
+          "price": 10200,
+          "availability": "unknown"
+        },
+        {
+          "name": "First Session: 2 weeks (limited availability)",
+          "start_date": "2027-06-26",
+          "end_date": "2027-07-10",
+          "price": 5200,
+          "availability": "unknown"
+        },
+        {
+          "name": "First Session: 2 weeks (rising 2nd to 6th graders)",
+          "start_date": "2027-07-11",
+          "end_date": "2027-07-25",
+          "price": 5200,
+          "availability": "unknown"
+        },
+        {
+          "name": "Second Session: 2 1/2 weeks (all ages)",
+          "start_date": "2027-07-28",
+          "end_date": "2027-08-14",
+          "price": 5950,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://moosilauke.com/about-us/moose-at-a-glance/",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "website_url",
+            "camp_type",
+            "primary_categories",
+            "activities",
+            "age_min",
+            "age_max",
+            "gender_policy",
+            "description_short",
+            "swim_waterfront_notes"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://moosilauke.com/about-us/sessions-dates-tuition/",
+          "checked": "2026-11-13",
+          "fields": [
+            "registration_url",
+            "email",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "price_min",
+            "price_max",
+            "price_per",
+            "financial_aid",
+            "refund_policy_summary",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ]
+    },
+    {
+      "slug": "camp-mowglis-hebron",
+      "name": "Camp Mowglis",
+      "website_url": "https://www.mowglis.org",
+      "registration_url": "https://mowglis.campintouch.com/ui/forms/application/camper/App",
+      "phone": "603-744-8095",
+      "street_address": "4 Mowglis Drive",
+      "city": "Hebron",
+      "state": "NH",
+      "zip": "03241",
+      "camp_type": "sleepaway",
+      "primary_categories": [
+        "nature",
+        "sports",
+        "arts"
+      ],
+      "activities": [
+        "swimming",
+        "hiking",
+        "rock climbing",
+        "crew",
+        "archery",
+        "nature studies",
+        "woodworking",
+        "cooking",
+        "arts and crafts",
+        "hiking trips",
+        "evening campfires"
+      ],
+      "gender_policy": "boys",
+      "age_min": 7,
+      "age_max": 15,
+      "description_short": "Overnight summer camp for boys on Newfound Lake in Hebron, NH, with traditional outdoor activities such as swimming, hiking, climbing, crew and archery. About 100 campers, one counselor for every three campers, and campers sleep in screened open-air dormitories grouped by age.",
+      "price_min": 6370,
+      "price_max": 11300,
+      "price_per": "session",
+      "financial_aid": true,
+      "refund_policy_summary": "A $500 registration deposit, applied to tuition, is due at enrollment and is non-refundable. Tuition payments are non-refundable after January 31; 50% is due March 15 and the rest by May 15. The camp recommends tuition insurance.",
+      "swim_waterfront_notes": "Camp is beside Newfound Lake. Swimming and crew are listed as activities. The page gives no details on swim instruction or waterfront supervision.",
+      "season_year": 2027,
+      "sessions": [
+        {
+          "name": "7-Week Full Season (ages 7-15)",
+          "start_date": "2027-06-26",
+          "end_date": "2027-08-15",
+          "price": 11300,
+          "availability": "unknown"
+        },
+        {
+          "name": "4-Week Cub Program (ages 7-9)",
+          "start_date": "2027-06-26",
+          "end_date": "2027-07-24",
+          "price": 7560,
+          "availability": "unknown"
+        },
+        {
+          "name": "4-Week Intro Pack (ages 10-15)",
+          "start_date": "2027-06-26",
+          "end_date": "2027-07-24",
+          "price": 8980,
+          "availability": "unknown"
+        },
+        {
+          "name": "3-Week Cub Program (ages 7-9)",
+          "start_date": "2027-07-25",
+          "end_date": "2027-08-15",
+          "price": 6370,
+          "availability": "unknown"
+        },
+        {
+          "name": "Yearling/Junior Staff",
+          "start_date": "2027-06-26",
+          "end_date": "2027-08-15",
+          "price": 6370,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.mowglis.org/best-boys-summer-camp-in-new-hampshire/",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "website_url",
+            "camp_type",
+            "primary_categories",
+            "activities",
+            "description_short",
+            "swim_waterfront_notes"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://www.mowglis.org/future-families/dates-rates/",
+          "checked": "2026-11-13",
+          "fields": [
+            "registration_url",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "gender_policy",
+            "age_min",
+            "age_max",
+            "price_min",
+            "price_max",
+            "price_per",
+            "financial_aid",
+            "refund_policy_summary",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ]
+    },
+    {
+      "slug": "camp-naticook-merrimack",
+      "name": "Camp Naticook",
+      "operator_name": "Merrimack Parks & Recreation Department",
+      "website_url": "https://merrimackparksandrec.org/camp-naticook",
+      "registration_url": "https://merrimack.recdesk.com/Community/Program?category=48",
+      "phone": "603-420-1662",
+      "street_address": "116 Naticook Road",
+      "city": "Merrimack",
+      "state": "NH",
+      "zip": "03054",
+      "camp_type": "day",
+      "primary_categories": [
+        "sports",
+        "arts",
+        "nature",
+        "performing_arts"
+      ],
+      "activities": [
+        "sports & games",
+        "arts & crafts",
+        "nature exploration & hiking",
+        "swimming",
+        "American Red Cross swim lessons",
+        "canoeing/boating",
+        "archery",
+        "theater/drama",
+        "Friday special events"
+      ],
+      "grade_min": 0,
+      "grade_max": 5,
+      "description_short": "A town-run traditional day camp at Wasserman Park on Naticook Lake in Merrimack, NH, for children entering Kindergarten through 5th grade. Campers do sports, games, arts and crafts, nature activities, swimming, boating, archery and theater, and a daily hot lunch is included.",
+      "price_per_week": 325,
+      "price_min": 325,
+      "price_max": 375,
+      "price_per": "week",
+      "financial_aid": true,
+      "extended_care": true,
+      "meals_included": true,
+      "refund_policy_summary": "Each session requires a $50 non-refundable deposit, and the full balance is due 45 days before the session starts. If you cancel at least 30 days ahead, you lose only the deposit. Cancelling 15–30 days ahead gets a 50% refund of what you paid, minus the deposit, and there are no refunds within 15 days of the start. Transfers to another session have no penalty if made at least 30 days ahead. Medical cancellations within 14 days of the start need a doctor's letter and get a 50% refund of the remaining amount, minus the deposit.",
+      "special_needs_notes": "The camp no longer provides one-to-one aides. Campers must be able to take part in their assigned group and tell staff what they need. Families are encouraged to call the camp to discuss fit. For one-to-one support, the camp suggests Camp Allen (Bedford), Recreational Education Center (Londonderry) or Camp Starfish (Rindge).",
+      "swim_waterfront_notes": "The camp is on Naticook Lake. Campers go on canoe trips and have free swim time at the waterfront and beach. American Red Cross swim lessons are offered at no extra cost (the page's text says 'Returning for 2025').",
+      "season_year": 2026,
+      "sessions": [
+        {
+          "name": "Week 1: Spirit Week",
+          "start_date": "2026-06-22",
+          "end_date": "2026-06-26",
+          "price": 325,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 2: Wild West",
+          "start_date": "2026-06-29",
+          "end_date": "2026-07-03",
+          "price": 325,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 3: Color Wars",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "price": 325,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 4: Myth Busters",
+          "start_date": "2026-07-13",
+          "end_date": "2026-07-17",
+          "price": 325,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 5: Wizard Week",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "price": 325,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 6: Carnival Chaos",
+          "start_date": "2026-07-27",
+          "end_date": "2026-07-31",
+          "price": 325,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 7: Wilderness Explorers",
+          "start_date": "2026-08-03",
+          "end_date": "2026-08-07",
+          "price": 325,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 8: Holiday Palooza",
+          "start_date": "2026-08-10",
+          "end_date": "2026-08-14",
+          "price": 325,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 9: Summer Showcase",
+          "start_date": "2026-08-17",
+          "end_date": "2026-08-21",
+          "price": 325,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://merrimackparksandrec.org/camp-naticook",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "primary_categories",
+            "activities",
+            "grade_min",
+            "grade_max",
+            "description_short",
+            "price_min",
+            "price_max",
+            "price_per_week",
+            "price_per",
+            "extended_care",
+            "meals_included",
+            "financial_aid",
+            "refund_policy_summary",
+            "special_needs_notes",
+            "swim_waterfront_notes",
+            "sessions",
+            "registration_url"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ]
+    },
+    {
+      "slug": "camp-nokomis-laconia",
+      "name": "Camp Nokomis",
+      "operator_name": "Merrimack Valley YMCA",
+      "website_url": "https://camp.mvymca.org/camp/camp-nokomis/",
+      "registration_url": "https://mvymca.campbrainregistration.com/",
+      "email": "campnokomis@mvymca.org",
+      "phone": "603-279-4918",
+      "street_address": "80 Bear Island",
+      "city": "Laconia",
+      "state": "NH",
+      "zip": "03246",
+      "camp_type": "sleepaway",
+      "primary_categories": [
+        "sports",
+        "arts",
+        "nature",
+        "performing_arts"
+      ],
+      "activities": [
+        "Archery",
+        "Basketball",
+        "Campcraft",
+        "Canoeing",
+        "Ceramics",
+        "Copper Enameling",
+        "Dance",
+        "Dramatics",
+        "General Crafts",
+        "Improv/Theater",
+        "Kayaking",
+        "Leathercraft",
+        "Nature",
+        "Photography",
+        "Ropes",
+        "Rowing",
+        "Sailing",
+        "Silvercraft",
+        "Soccer",
+        "Swimming",
+        "Tennis",
+        "Volleyball",
+        "Waterskiing",
+        "Windsurfing",
+        "Woodworking"
+      ],
+      "gender_policy": "girls",
+      "age_min": 8,
+      "age_max": 16,
+      "description_short": "Overnight YMCA camp for girls ages 8-16 on Bear Island in Lake Winnipesaukee, NH, with two-week sessions. Campers choose from sports, waterfront and craft activities and live in cabins of 8-12 campers with two staff.",
+      "price_min": 2675,
+      "price_max": 2675,
+      "financial_aid": true,
+      "transportation": true,
+      "meals_included": true,
+      "refund_policy_summary": "A $300 deposit per two-week session is due at registration. It is non-refundable and can't be moved to another session, season or sibling. The full balance is due by April 1, 2027, with a $150 late fee after that date. After April 1, 2027, tuition is non-refundable and non-transferable. Refunds are only given for a documented illness of the camper or the death of an immediate family member. Cancellations must be emailed to campinfo@mvymca.org.",
+      "special_needs_notes": "The camp can accommodate most dietary preferences (vegetarian, gluten-free, etc.), and staff are told about identified food allergies. No information on support for disabilities or other special needs.",
+      "swim_waterfront_notes": "Island camp on Lake Winnipesaukee with two beaches. Swim instruction for all levels, plus canoeing, kayaking, rowing, sailing, waterskiing and windsurfing. Many staff are certified lifeguards.",
+      "season_year": 2027,
+      "sessions": [
+        {
+          "name": "Session 1",
+          "start_date": "2027-06-27",
+          "end_date": "2027-07-10",
+          "price": 2675,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 2",
+          "start_date": "2027-07-11",
+          "end_date": "2027-07-24",
+          "price": 2675,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 3",
+          "start_date": "2027-07-25",
+          "end_date": "2027-08-07",
+          "price": 2675,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 4",
+          "start_date": "2027-08-08",
+          "end_date": "2027-08-21",
+          "price": 2675,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://camp.mvymca.org/camp/camp-nokomis/",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "registration_url",
+            "email",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "primary_categories",
+            "activities",
+            "age_min",
+            "age_max",
+            "description_short",
+            "price_min",
+            "price_max",
+            "meals_included",
+            "refund_policy_summary",
+            "special_needs_notes",
+            "swim_waterfront_notes",
+            "sessions",
+            "gender_policy"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://camp.mvymca.org/prepare-for-camp/overnight-camp/",
+          "checked": "2026-11-13",
+          "fields": [
+            "financial_aid",
+            "transportation"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ]
+    },
+    {
+      "slug": "camp-onaway-hebron",
+      "name": "Camp Onaway",
+      "operator_name": "Camp Onaway",
+      "website_url": "https://www.camponaway.org/",
+      "registration_url": "https://www.camponaway.org/enroll-here",
+      "email": "bbeckman@camponaway.org",
+      "phone": "610-525-0676",
+      "street_address": "27 Camp Onaway Drive",
+      "city": "Hebron",
+      "state": "NH",
+      "zip": "03241",
+      "camp_type": "sleepaway",
+      "age_min": 9,
+      "age_max": 15,
+      "grade_min": 4,
+      "grade_max": 11,
+      "description_short": "A traditional residential summer camp for girls ages 9 to 15 on Newfound Lake in Hebron, NH, since 1911. The main program is a 7-week session for rising 5th to 10th graders, with 3-week Wendies sessions for rising 4th graders.",
+      "activities": [
+        "Swimming",
+        "Boating",
+        "Canoeing",
+        "Crew",
+        "Sailing",
+        "Tennis",
+        "Woodworking",
+        "Dance",
+        "Theatre",
+        "Music",
+        "Arts",
+        "Nature / Hiking",
+        "Wilderness trips",
+        "Leadership programs"
+      ],
+      "price_min": 7600,
+      "price_max": 12200,
+      "financial_aid": true,
+      "swim_waterfront_notes": "Camp is on Newfound Lake. Every camper has daily swimming instruction; campers progress through boating, then canoeing, and add crew in their final two years. Sailing is scheduled for all campers.",
+      "season_year": 2027,
+      "sessions": [
+        {
+          "name": "7 Week Camp Session (rising 5th–10th graders)",
+          "start_date": "2027-06-26",
+          "end_date": "2027-08-15",
+          "price": 12200,
+          "availability": "unknown"
+        },
+        {
+          "name": "3 Week Wendies Session 1 (rising 4th graders)",
+          "start_date": "2027-06-26",
+          "end_date": "2027-07-18",
+          "price": 7600,
+          "availability": "unknown"
+        },
+        {
+          "name": "3 Week Wendies Session 2 (rising 4th graders)",
+          "start_date": "2027-07-24",
+          "end_date": "2027-08-15",
+          "price": 7600,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.camponaway.org/",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "email",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "age_min",
+            "age_max",
+            "grade_min",
+            "grade_max",
+            "gender_policy",
+            "description_short"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://www.camponaway.org/enroll-here",
+          "checked": "2026-11-13",
+          "fields": [
+            "registration_url",
+            "price_min",
+            "price_max",
+            "price_per",
+            "financial_aid",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://www.camponaway.org/activities",
+          "checked": "2026-11-13",
+          "fields": [
+            "activities",
+            "swim_waterfront_notes"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ],
+      "gender_policy": "girls",
+      "price_per": "session"
+    },
+    {
+      "slug": "camp-otter-salem",
+      "name": "Camp Otter",
+      "operator_name": "Merrimack Valley YMCA",
+      "website_url": "https://camp.mvymca.org/camp/camp-otter/",
+      "registration_url": "https://mvymca.campbrainregistration.com/",
+      "email": "campotter@mvymca.org",
+      "phone": "603-893-4911",
+      "street_address": "66 Hooker Farm Road",
+      "city": "Salem",
+      "state": "NH",
+      "zip": "03079",
+      "camp_type": "day",
+      "primary_categories": [
+        "sports",
+        "nature",
+        "arts"
+      ],
+      "age_min": 6,
+      "age_max": 13,
+      "description_short": "YMCA day camp for ages 6-13 on Captain's Pond in Salem, NH, with weekly themes, daily swimming, boating, archery, ropes courses, sports and arts & crafts. Bus transportation from Merrimack Valley and Southern NH towns is included in the weekly rate.",
+      "activities": [
+        "Swimming",
+        "Boating (rowing, canoeing, paddleboarding, kayaking)",
+        "Archery",
+        "Air rifle",
+        "High and low ropes course",
+        "Zip line",
+        "Arts & crafts",
+        "Fishing",
+        "Gaga",
+        "Basketball",
+        "Volleyball",
+        "Hockey",
+        "Softball/baseball",
+        "Kickball",
+        "Soccer",
+        "Flag football",
+        "Game center (ping pong, carpet ball)",
+        "Weekly themes"
+      ],
+      "price_per_week": 405,
+      "price_min": 405,
+      "price_max": 405,
+      "financial_aid": true,
+      "transportation": true,
+      "meals_included": false,
+      "refund_policy_summary": "$50 per-week deposit is non-refundable and non-transferable. Full balance due by June 1; after June 1 balances are non-refundable and non-transferable. Refunds only for a documented camper illness or death of an immediate family member; none for absences or bad weather. Cancellations must be emailed to campinfo@mvymca.org.",
+      "special_needs_notes": "The page does not describe a formal special needs program. Families with a specific need or circumstance are asked to email campotter@mvymca.org. A featured story describes a camper with leukemia who attended with planning by the director, nursing and counseling staff, including rest in a quiet space.",
+      "swim_waterfront_notes": "Camp is on Captain's Pond. Instructional and/or free swim every day; lessons follow YMCA of USA guidelines. Boating taught by lifeguards and small-craft-certified instructors; campers must pass a swim test to use kayaks.",
+      "season_year": 2027,
+      "price_per": "week",
+      "sessions": [
+        {
+          "name": "Week 1: Wild West",
+          "start_date": "2027-06-21",
+          "end_date": "2027-06-25",
+          "price": 405,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 2: Otter Through The Decades",
+          "start_date": "2027-06-28",
+          "end_date": "2027-07-02",
+          "price": 405,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 3: Amazing Animal Week",
+          "start_date": "2027-07-05",
+          "end_date": "2027-07-09",
+          "price": 405,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 4: Otter's Got Talent",
+          "start_date": "2027-07-12",
+          "end_date": "2027-07-16",
+          "price": 405,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 5: Otterlympics",
+          "start_date": "2027-07-19",
+          "end_date": "2027-07-23",
+          "price": 405,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 6: H2Otter",
+          "start_date": "2027-07-26",
+          "end_date": "2027-07-30",
+          "price": 405,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 7: Counselor in Training Theme Week",
+          "start_date": "2027-08-02",
+          "end_date": "2027-08-06",
+          "price": 405,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 8: All Around the World",
+          "start_date": "2027-08-09",
+          "end_date": "2027-08-13",
+          "price": 405,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 9: Carnival",
+          "start_date": "2027-08-16",
+          "end_date": "2027-08-20",
+          "price": 405,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 10: Disney",
+          "start_date": "2027-08-23",
+          "end_date": "2027-08-27",
+          "price": 405,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://camp.mvymca.org/camp/camp-otter/",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "registration_url",
+            "email",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "primary_categories",
+            "activities",
+            "age_min",
+            "age_max",
+            "description_short",
+            "price_min",
+            "price_max",
+            "price_per_week",
+            "price_per",
+            "transportation",
+            "meals_included",
+            "financial_aid",
+            "refund_policy_summary",
+            "special_needs_notes",
+            "swim_waterfront_notes",
+            "sessions",
+            "gender_policy"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ],
+      "gender_policy": "coed"
+    },
+    {
+      "slug": "camp-pasquaney-hebron",
+      "name": "Camp Pasquaney",
+      "operator_name": "Camp Pasquaney",
+      "website_url": "https://pasquaney.org/",
+      "registration_url": "https://pasquaney.org/future-families/how-to-enroll",
+      "email": "office@pasquaney.org",
+      "phone": "603-744-8043",
+      "street_address": "19 Pasquaney Lane",
+      "city": "Hebron",
+      "state": "NH",
+      "zip": "03241",
+      "camp_type": "sleepaway",
+      "primary_categories": [
+        "nature",
+        "sports",
+        "performing_arts"
+      ],
+      "description_short": "A seven-week overnight summer camp for boys ages 11 to 16 on Newfound Lake in Hebron, NH, founded in 1895. The 2027 season runs June 26 to August 15 and includes camping expeditions, a long hike, a theater play, crew races and a water sports weekend.",
+      "activities": [
+        "Baseball",
+        "Canoeing",
+        "Crew",
+        "Diving",
+        "Nature",
+        "Sailing",
+        "Woodshop",
+        "Swimming",
+        "Tennis",
+        "Water sports",
+        "Camping expeditions",
+        "Hiking",
+        "Theater"
+      ],
+      "price_min": 11725,
+      "price_max": 11725,
+      "financial_aid": true,
+      "season_year": 2027,
+      "sessions": [
+        {
+          "name": "2027 Season",
+          "start_date": "2027-06-26",
+          "end_date": "2027-08-15",
+          "price": 11725,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://pasquaney.org/",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "camp_type",
+            "gender_policy",
+            "age_min",
+            "age_max",
+            "description_short"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://pasquaney.org/future-families/dates-rates",
+          "checked": "2026-11-13",
+          "fields": [
+            "email",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "price_min",
+            "price_max",
+            "price_per",
+            "financial_aid",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://pasquaney.org/future-families/how-to-enroll",
+          "checked": "2026-11-13",
+          "fields": [
+            "registration_url"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://pasquaney.org/camp-life/activities",
+          "checked": "2026-11-13",
+          "fields": [
+            "primary_categories",
+            "activities",
+            "swim_waterfront_notes"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ],
+      "gender_policy": "boys",
+      "age_min": 11,
+      "age_max": 16,
+      "price_per": "session",
+      "swim_waterfront_notes": "Camp is on a half mile of Newfound Lake shoreline. Each boy takes a series of swim tests; counsellors teach swimmers of all levels, and the diving raft has a springboard and a high dive."
+    },
+    {
+      "slug": "camp-robin-hood-freedom",
+      "name": "Camp Robin Hood",
+      "website_url": "https://www.camprobinhood.com/",
+      "registration_url": "https://robinhood.campintouch.com/ui/forms/application/camper/App",
+      "email": "info@camprobinhood.com",
+      "phone": "603-539-4500",
+      "street_address": "65 Robin Hood Lane",
+      "city": "Freedom",
+      "state": "NH",
+      "zip": "03836",
+      "camp_type": "sleepaway",
+      "primary_categories": [
+        "sports",
+        "arts",
+        "nature"
+      ],
+      "description_short": "Overnight brother/sister summer camp on Lake Ossipee in Freedom, NH, for boys and girls ages 6 to 16, with separate Boys Camp and Girls Camp that share meals and assemblies. Summer 2027 offers a four-week First Session and a seven-week Full Session.",
+      "activities": [
+        "Team sports",
+        "Individual sports",
+        "Waterfront",
+        "Hiking & trips",
+        "Fitness",
+        "The arts",
+        "Private instruction",
+        "Horseback riding",
+        "Tennis",
+        "Inter-camp competition"
+      ],
+      "price_min": 11675,
+      "price_max": 17000,
+      "transportation": true,
+      "meals_included": true,
+      "refund_policy_summary": "Tuition is refundable minus a $500 processing fee until January 1, 2027. After that date tuition is non-refundable.",
+      "swim_waterfront_notes": "Nearly a mile of waterfront on the Broad Bay section of Lake Ossipee. Certified instructors teach swimming at all levels, followed by free swim; also sailing, canoeing, kayaking, paddle boarding, waterskiing, wakeboarding, tubing, fishing and an inflatable water park. Older campers can take a lifeguarding course.",
+      "season_year": 2027,
+      "sessions": [
+        {
+          "name": "First Session",
+          "start_date": "2027-06-22",
+          "end_date": "2027-07-18",
+          "price": 11675,
+          "availability": "unknown"
+        },
+        {
+          "name": "Full Session",
+          "start_date": "2027-06-22",
+          "end_date": "2027-08-07",
+          "price": 17000,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.camprobinhood.com/about-camp-robin-hood/dates-fees-faqs.php",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "website_url",
+            "registration_url",
+            "email",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "price_min",
+            "price_max",
+            "price_per",
+            "transportation",
+            "meals_included",
+            "refund_policy_summary",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://www.camprobinhood.com/about-camp-robin-hood/boys-girls-camp-experience.php",
+          "checked": "2026-11-13",
+          "fields": [
+            "gender_policy",
+            "description_short"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://www.camprobinhood.com/about-camp-robin-hood/new-hampshire-camp-activities.php",
+          "checked": "2026-11-13",
+          "fields": [
+            "age_min",
+            "age_max",
+            "primary_categories",
+            "activities"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://www.camprobinhood.com/about-camp-robin-hood/activities-waterfront.php",
+          "checked": "2026-11-13",
+          "fields": [
+            "swim_waterfront_notes"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ],
+      "gender_policy": "coed",
+      "age_min": 6,
+      "age_max": 16,
+      "price_per": "session"
+    },
+    {
+      "slug": "camp-robindel",
+      "name": "Camp Robindel",
+      "website_url": "https://robindel.com/",
+      "registration_url": "https://robindel.campintouch.com/ui/forms/application/camper/App",
+      "phone": "215-518-6021",
+      "city": "Moultonborough",
+      "state": "NH",
+      "zip": "03254",
+      "camp_type": "sleepaway",
+      "primary_categories": [
+        "sports",
+        "nature"
+      ],
+      "description_short": "An all-girls overnight summer camp on Lake Winnipesaukee in Moultonboro, NH, running since 1951, for girls entering 1st through 10th grade. The main program is the seven-week CR Full Experience, with a two-week introductory session, 2 Weeks on Winni, for girls entering 2nd grade.",
+      "activities": [
+        "Archery",
+        "Arts & crafts",
+        "Culinary",
+        "Basketball",
+        "Fitness",
+        "Gymnastics",
+        "Horseback riding (optional, extra fee)",
+        "Lacrosse",
+        "Mountain biking",
+        "Performing arts",
+        "Photography",
+        "Pickleball",
+        "Ropes",
+        "Ski",
+        "Soccer",
+        "Softball",
+        "Swim",
+        "Outdoor adventure",
+        "Tennis",
+        "Water crafts",
+        "Volleyball",
+        "Senior trips: Maine coast camping, white water rafting, rock climbing, Canada trip"
+      ],
+      "price_min": 5500,
+      "price_max": 17300,
+      "transportation": true,
+      "season_year": 2027,
+      "sessions": [
+        {
+          "name": "CR Full Experience (full session)",
+          "start_date": "2027-06-22",
+          "end_date": "2027-08-07",
+          "price": 17300,
+          "availability": "unknown"
+        },
+        {
+          "name": "2 Weeks on Winni (introductory, girls entering 2nd grade)",
+          "start_date": "2027-06-22",
+          "end_date": "2027-07-06",
+          "price": 5500,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://robindel.com/dates-rates",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "website_url",
+            "registration_url",
+            "camp_type",
+            "description_short",
+            "price_min",
+            "price_max",
+            "price_per",
+            "transportation",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://robindel.com/contact-us",
+          "checked": "2026-11-13",
+          "fields": [
+            "email",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://robindel.com/girls-camp/our-camp-program",
+          "checked": "2026-11-13",
+          "fields": [
+            "gender_policy",
+            "grade_min",
+            "grade_max"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://robindel.com/girls-camp/activities",
+          "checked": "2026-11-13",
+          "fields": [
+            "primary_categories",
+            "activities"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ],
+      "email": "jolly@robindel.com",
+      "street_address": "81 Geneva Point Road",
+      "gender_policy": "girls",
+      "grade_min": 1,
+      "grade_max": 10,
+      "price_per": "session"
+    },
+    {
+      "slug": "camp-starfish-rindge",
+      "name": "Camp Starfish",
+      "operator_name": "Camp Starfish",
+      "website_url": "https://campstarfish.org",
+      "phone": "603-899-9590",
+      "street_address": "12 Camp Monomonac Rd.",
+      "city": "Rindge",
+      "state": "NH",
+      "zip": "03461",
+      "camp_type": "sleepaway",
+      "primary_categories": [
+        "special_needs"
+      ],
+      "age_min": 6,
+      "age_max": 17,
+      "description_short": "An overnight camp on Lake Monomonac in Rindge, NH for children ages 6 to 17 with emotional, behavioral and learning challenges. Its core programs (two-week Navigators and OCP sessions, five-day Lite and Havvago) have one staff member for every camper; shorter specialty weeks serve siblings and teens.",
+      "activities": [
+        "Soccer",
+        "Kayaking",
+        "Raft building",
+        "Campfire",
+        "Talent show"
+      ],
+      "financial_aid": true,
+      "meals_included": true,
+      "special_needs_notes": "Serves children with emotional, behavioral and learning challenges. Core programs keep one staff member for every camper, but no child is assigned a single dedicated adult. A nurse lives on site; there is no doctor on site. Campers should feed themselves, use the toilet on their own, and be able to get around hilly ground. Not suitable for children with feeding tubes, IV medications or daily injections, or with frequent violent behavior. Accessibility is still being improved, so families of campers with mobility limits should call before applying. Vegetarian meals are available; gluten-free is partly available; kosher is not.",
+      "swim_waterfront_notes": "More than 1/2 mile of shoreline on Lake Monomonac, with access from several private beaches.",
+      "season_year": 2026,
+      "sources": [
+        {
+          "url": "https://campstarfish.org/programs/parent-guardian-faq/",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "email",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "primary_categories",
+            "age_min",
+            "age_max",
+            "meals_included",
+            "financial_aid",
+            "special_needs_notes",
+            "swim_waterfront_notes"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://campstarfish.org/programs/1-to-1/",
+          "checked": "2026-11-13",
+          "fields": [
+            "description_short"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://campstarfish.org/programs/1-to-1/navigators/",
+          "checked": "2026-11-13",
+          "fields": [
+            "activities"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://campstarfish.org/programs/first-time-camper-application/",
+          "checked": "2026-11-13",
+          "fields": [
+            "registration_url"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://campstarfish.org/wp-content/uploads/2025/10/2026-Dates-and-Rates.pdf",
+          "checked": "2026-11-13",
+          "fields": [
+            "price_min",
+            "price_max",
+            "price_per",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ],
+      "email": "info@campstarfish.org",
+      "registration_url": "https://campstarfish.org/programs/first-time-camper-application/",
+      "price_min": 1000,
+      "price_max": 5350,
+      "price_per": "session",
+      "sessions": [
+        {
+          "name": "LITE 1 / Havvago (5 days, 1:1)",
+          "start_date": "2026-06-22",
+          "end_date": "2026-06-26",
+          "price": 2100,
+          "availability": "unknown"
+        },
+        {
+          "name": "LITE 2 / Havvago (5 days, 1:1)",
+          "start_date": "2026-06-29",
+          "end_date": "2026-07-03",
+          "price": 2100,
+          "availability": "unknown"
+        },
+        {
+          "name": "LITE 3 / Havvago (5 days, 1:1)",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "price": 2100,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 1: Navigators ages 7-13 and OCP teens (14 days, 1:1)",
+          "start_date": "2026-07-14",
+          "end_date": "2026-07-27",
+          "price": 5350,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 2: Navigators ages 7-13 and OCP teens (14 days, 1:1)",
+          "start_date": "2026-07-30",
+          "end_date": "2026-08-12",
+          "price": 5350,
+          "availability": "unknown"
+        },
+        {
+          "name": "Sibling Camp (ages 6-14, 5 days)",
+          "start_date": "2026-06-29",
+          "end_date": "2026-07-03",
+          "price": 1000,
+          "availability": "unknown"
+        },
+        {
+          "name": "Teen Adventure Week (teens 13-17)",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "price": 2100,
+          "availability": "unknown"
+        },
+        {
+          "name": "Teen Creative Week (teens 13-17)",
+          "start_date": "2026-07-14",
+          "end_date": "2026-07-18",
+          "price": 2100,
+          "availability": "unknown"
+        },
+        {
+          "name": "LARP Week (teens 13-17)",
+          "start_date": "2026-07-21",
+          "end_date": "2026-07-25",
+          "price": 2100,
+          "availability": "unknown"
+        },
+        {
+          "name": "Counselor-in-Training (teens 15-17, 14 days)",
+          "start_date": "2026-07-30",
+          "end_date": "2026-08-12",
+          "price": 4900,
+          "availability": "unknown"
+        },
+        {
+          "name": "August Bonus Week (returning campers up to 15)",
+          "start_date": "2026-08-14",
+          "end_date": "2026-08-18",
+          "price": 2050,
+          "availability": "unknown"
+        }
+      ]
+    },
+    {
+      "slug": "camp-tel-noar-hampstead",
+      "name": "Camp Tel Noar",
+      "operator_name": "The Cohen Camps",
+      "website_url": "https://www.cohencamps.org/tel-noar/",
+      "registration_url": "https://telnoar.campintouch.com/ui/forms/application/camper/App",
+      "email": "info@camptelnoar.org",
+      "phone": "603.329.6931",
+      "street_address": "167 Main Street",
+      "city": "Hampstead",
+      "state": "NH",
+      "zip": "03841",
+      "camp_type": "sleepaway",
+      "primary_categories": [
+        "faith",
+        "sports",
+        "arts",
+        "nature"
+      ],
+      "description_short": "A small, co-ed Jewish overnight camp in Hampstead, New Hampshire, founded in 1945. Sessions are 2, 3.5, or 7 weeks long, and campers choose their own activities and electives.",
+      "activities": [
+        "Swimming (pool)",
+        "Lake paddling",
+        "Basketball",
+        "Tennis",
+        "Arts",
+        "Dance",
+        "Photography",
+        "Campfire singing",
+        "Trip days",
+        "Electives"
+      ],
+      "financial_aid": true,
+      "swim_waterfront_notes": "The page mentions a pool for swimming and a lake for paddling. It gives no details on swim instruction or lifeguard staffing.",
+      "season_year": 2027,
+      "sources": [
+        {
+          "url": "https://www.cohencamps.org/tel-noar/",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "registration_url",
+            "email",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "gender_policy",
+            "primary_categories",
+            "activities",
+            "description_short",
+            "swim_waterfront_notes"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://www.cohencamps.org/tel-noar/summer/dates-tuition/",
+          "checked": "2026-11-13",
+          "fields": [
+            "price_min",
+            "price_max",
+            "price_per",
+            "financial_aid",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ],
+      "gender_policy": "coed",
+      "price_min": 4650,
+      "price_max": 14490,
+      "price_per": "session",
+      "sessions": [
+        {
+          "name": "Full Season (7 weeks)",
+          "start_date": "2027-06-23",
+          "end_date": "2027-08-11",
+          "price": 14490,
+          "availability": "unknown"
+        },
+        {
+          "name": "First Session (3.5 weeks)",
+          "start_date": "2027-06-23",
+          "end_date": "2027-07-18",
+          "price": 8825,
+          "availability": "unknown"
+        },
+        {
+          "name": "Second Session (3.5 weeks)",
+          "start_date": "2027-07-19",
+          "end_date": "2027-08-11",
+          "price": 8525,
+          "availability": "unknown"
+        },
+        {
+          "name": "2-Week Ta'am (Taste) of Tel Noar 1 (first-timers, entering grades 2-8)",
+          "start_date": "2027-06-23",
+          "end_date": "2027-07-06",
+          "price": 4650,
+          "availability": "unknown"
+        },
+        {
+          "name": "2-Week Ta'am (Taste) of Tel Noar 2 (first-timers, entering grades 2-8)",
+          "start_date": "2027-07-19",
+          "end_date": "2027-08-01",
+          "price": 4650,
+          "availability": "unknown"
+        }
+      ]
+    },
+    {
+      "slug": "camp-tevya-brookline",
+      "name": "Camp Tevya",
+      "operator_name": "The Cohen Camps",
+      "website_url": "https://www.cohencamps.org/tevya/",
+      "registration_url": "https://tevya.campintouch.com/ui/forms/application/camper/App",
+      "email": "info@camptevya.org",
+      "phone": "603.673.4010",
+      "street_address": "1 Mason Road",
+      "city": "Brookline",
+      "state": "NH",
+      "zip": "03033",
+      "camp_type": "sleepaway",
+      "primary_categories": [
+        "faith",
+        "sports",
+        "arts",
+        "nature"
+      ],
+      "description_short": "A co-ed Jewish overnight camp on Lake Potanipo in Brookline, New Hampshire, running since 1940. It offers 3.5-week and 7-week sessions, plus short first-timer sessions of 1 and 2 weeks, with Jewish life, waterfront, sports and arts activities.",
+      "activities": [
+        "Swimming",
+        "Paddling",
+        "Basketball",
+        "Tennis",
+        "Arts",
+        "Dance",
+        "Photography",
+        "Jewish life and traditions",
+        "Electives"
+      ],
+      "financial_aid": true,
+      "swim_waterfront_notes": "The camp is on Lake Potanipo, and campers swim and paddle there. The page gives no details on swim instruction, testing or lifeguarding.",
+      "season_year": 2027,
+      "sources": [
+        {
+          "url": "https://www.cohencamps.org/tevya/",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "registration_url",
+            "email",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "gender_policy",
+            "primary_categories",
+            "activities",
+            "financial_aid",
+            "swim_waterfront_notes"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://www.cohencamps.org/tevya/summer/dates-tuition/",
+          "checked": "2026-11-13",
+          "fields": [
+            "description_short",
+            "price_min",
+            "price_max",
+            "price_per",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ],
+      "gender_policy": "coed",
+      "price_min": 2325,
+      "price_max": 14490,
+      "price_per": "session",
+      "sessions": [
+        {
+          "name": "Full Season (7 weeks)",
+          "start_date": "2027-06-23",
+          "end_date": "2027-08-11",
+          "price": 14490,
+          "availability": "unknown"
+        },
+        {
+          "name": "First Session (3.5 weeks)",
+          "start_date": "2027-06-23",
+          "end_date": "2027-07-18",
+          "price": 8825,
+          "availability": "unknown"
+        },
+        {
+          "name": "Second Session (3.5 weeks)",
+          "start_date": "2027-07-19",
+          "end_date": "2027-08-11",
+          "price": 8525,
+          "availability": "unknown"
+        },
+        {
+          "name": "2-Week Taste of Tevya (first-timers, entering grades 3-6)",
+          "start_date": "2027-06-23",
+          "end_date": "2027-07-06",
+          "price": 4650,
+          "availability": "unknown"
+        },
+        {
+          "name": "1-Week Yalla! Tevya (first-timers, entering 2nd grade)",
+          "start_date": "2027-07-19",
+          "end_date": "2027-07-25",
+          "price": 2325,
+          "availability": "unknown"
+        }
+      ]
+    },
+    {
+      "slug": "camp-wa-klo-dublin",
+      "name": "Camp Wa-Klo",
+      "operator_name": "Camp Wa-Klo",
+      "website_url": "https://www.campwaklo.com/",
+      "registration_url": "https://campwaklo.campfront.com/",
+      "phone": "603-563-8531",
+      "street_address": "435 Page Rd.",
+      "city": "Dublin",
+      "state": "NH",
+      "zip": "03444",
+      "camp_type": "sleepaway",
+      "primary_categories": [
+        "sports",
+        "nature"
+      ],
+      "grade_min": 2,
+      "grade_max": 11,
+      "description_short": "Overnight summer camp for girls in Dublin, NH, with 2-, 3-, 4- and 7-week stays for rising grades 2-10 and a Leadership Training Group for girls entering grade 11. Horseback riding is available at extra cost.",
+      "activities": [
+        "Land sports",
+        "Water sports",
+        "Creative arts",
+        "Equestrian (horseback riding at extra cost)",
+        "Trips",
+        "Community service",
+        "Environmental stewardship",
+        "Evening programs"
+      ],
+      "price_min": 7250,
+      "price_max": 14300,
+      "transportation": true,
+      "season_year": 2027,
+      "sessions": [
+        {
+          "name": "Full Summer (7 Weeks)",
+          "start_date": "2027-06-27",
+          "end_date": "2027-08-14",
+          "price": 14300,
+          "availability": "unknown"
+        },
+        {
+          "name": "First Session (4 Weeks)",
+          "start_date": "2027-06-27",
+          "end_date": "2027-07-24",
+          "price": 9600,
+          "availability": "unknown"
+        },
+        {
+          "name": "First Session (3 Weeks) - space limited",
+          "start_date": "2027-06-27",
+          "end_date": "2027-07-17",
+          "price": 7850,
+          "availability": "unknown"
+        },
+        {
+          "name": "Second Session (3 Weeks)",
+          "start_date": "2027-07-25",
+          "end_date": "2027-08-14",
+          "price": 7850,
+          "availability": "unknown"
+        },
+        {
+          "name": "Second Session (2 Weeks) - Nouveau 2-Week Program, space limited",
+          "start_date": "2027-07-25",
+          "end_date": "2027-08-08",
+          "price": 7250,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.campwaklo.com/dates-rates/",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "registration_url",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "grade_min",
+            "grade_max",
+            "description_short",
+            "price_min",
+            "price_max",
+            "price_per",
+            "transportation",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://www.campwaklo.com/",
+          "checked": "2026-11-13",
+          "fields": [
+            "gender_policy"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://www.campwaklo.com/about/activities/",
+          "checked": "2026-11-13",
+          "fields": [
+            "primary_categories",
+            "activities"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ],
+      "gender_policy": "girls",
+      "price_per": "session"
+    },
+    {
+      "slug": "camp-walt-whitman-piermont",
+      "name": "Camp Walt Whitman",
+      "website_url": "https://www.campwalt.com/",
+      "registration_url": "https://waltwhitman.campintouch.com/ui/forms/application/camper/App",
+      "phone": "1-800-657-8282",
+      "street_address": "1000 Cape Moonshine Road",
+      "city": "Piermont",
+      "state": "NH",
+      "zip": "03779",
+      "camp_type": "sleepaway",
+      "primary_categories": [
+        "sports",
+        "arts",
+        "adventure"
+      ],
+      "grade_min": 2,
+      "description_short": "A coed overnight summer camp in Piermont, New Hampshire, built mainly around a seven-week full summer, with shorter first and second sessions for some age groups. The program mixes athletics, arts, adventure and water sports.",
+      "activities": [
+        "Athletics",
+        "Arts",
+        "Adventure",
+        "Water Sports",
+        "Ceramics",
+        "Woodworking",
+        "Crafts",
+        "Drama",
+        "Music",
+        "Ropes courses",
+        "Hiking",
+        "Whitewater rafting",
+        "Overnight camping trips"
+      ],
+      "price_min": 9400,
+      "price_max": 17600,
+      "season_year": 2027,
+      "sessions": [
+        {
+          "name": "Full Summer",
+          "start_date": "2027-06-27",
+          "end_date": "2027-08-12",
+          "price": 17600,
+          "availability": "unknown"
+        },
+        {
+          "name": "First Session",
+          "start_date": "2027-06-27",
+          "end_date": "2027-07-24",
+          "price": 12150,
+          "availability": "unknown"
+        },
+        {
+          "name": "Second Session",
+          "start_date": "2027-07-25",
+          "end_date": "2027-08-12",
+          "price": 9400,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.campwalt.com/about/sessions-enrollment/",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "website_url",
+            "registration_url",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "grade_min",
+            "description_short",
+            "price_min",
+            "price_max",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://www.campwalt.com/about/program-activities/",
+          "checked": "2026-11-13",
+          "fields": [
+            "primary_categories",
+            "activities"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://www.campwalt.com/about/faqs/",
+          "checked": "2026-11-13",
+          "fields": [
+            "gender_policy"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ],
+      "gender_policy": "coed"
+    },
+    {
+      "slug": "camp-waukeela-eaton-center",
+      "name": "Camp Waukeela",
+      "website_url": "https://www.waukeela.com",
+      "registration_url": "https://waukeela.campbrainregistration.com/",
+      "email": "gillian@waukeela.com",
+      "phone": "(603) 447-2260",
+      "city": "Eaton Center",
+      "state": "NH",
+      "zip": "03832",
+      "camp_type": "sleepaway",
+      "primary_categories": [
+        "sports",
+        "arts",
+        "outdoor"
+      ],
+      "description_short": "Overnight summer camp for girls on Crystal Lake near Eaton Center, New Hampshire, running since 1922. It offers two sessions of about 3½ weeks, a 7-week full summer, and 2-week sessions for first-time campers entering grades 3 to 5.",
+      "activities": [
+        "Kayaking",
+        "Canoeing",
+        "Paddleboarding",
+        "Sailing",
+        "Swimming",
+        "Synchronized swimming",
+        "Archery",
+        "Field sports",
+        "Tennis",
+        "Golf",
+        "Outdoor living skills",
+        "Arts and crafts",
+        "Pottery",
+        "Textiles",
+        "Drama",
+        "Dance",
+        "Film",
+        "Music",
+        "Hiking",
+        "Outdoor camping",
+        "Whitewater canoeing",
+        "Horseback riding (extra cost)",
+        "Rock climbing (extra cost)",
+        "Junior lifeguard training"
+      ],
+      "price_min": 6000,
+      "price_max": 12500,
+      "financial_aid": true,
+      "transportation": true,
+      "refund_policy_summary": "You pay a $1,000 registration fee to sign up. It is fully refundable until January 31. Siblings (2nd, 3rd or 4th child) get 10% off the registration fee.",
+      "season_year": 2027,
+      "sessions": [
+        {
+          "name": "1st Session",
+          "start_date": "2027-06-24",
+          "end_date": "2027-07-18",
+          "price": 9000,
+          "availability": "unknown"
+        },
+        {
+          "name": "2nd Session",
+          "start_date": "2027-07-21",
+          "end_date": "2027-08-14",
+          "price": 9000,
+          "availability": "unknown"
+        },
+        {
+          "name": "Full Summer",
+          "start_date": "2027-06-24",
+          "end_date": "2027-08-14",
+          "price": 12500,
+          "availability": "unknown"
+        },
+        {
+          "name": "2 Week Session A (first-time campers only)",
+          "start_date": "2027-06-24",
+          "end_date": "2027-07-07",
+          "price": 6000,
+          "availability": "unknown"
+        },
+        {
+          "name": "2 Week Session B (first-time campers only)",
+          "start_date": "2027-07-05",
+          "end_date": "2027-07-18",
+          "price": 6000,
+          "availability": "unknown"
+        },
+        {
+          "name": "2 Week Session C (first-time campers only)",
+          "start_date": "2027-07-21",
+          "end_date": "2027-08-03",
+          "price": 6000,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.waukeela.com/camp-families-dates-rates",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "website_url",
+            "registration_url",
+            "email",
+            "phone",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "gender_policy",
+            "price_min",
+            "price_max",
+            "transportation",
+            "financial_aid",
+            "refund_policy_summary",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://www.waukeela.com/experience-activities-trips",
+          "checked": "2026-11-13",
+          "fields": [
+            "primary_categories",
+            "activities"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://www.waukeela.com/summer-programs",
+          "checked": "2026-11-13",
+          "fields": [
+            "description_short"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ],
+      "gender_policy": "girls"
+    },
+    {
+      "slug": "camp-wicosuta-hebron",
+      "name": "Camp Wicosuta",
+      "operator_name": "Camp Wicosuta",
+      "website_url": "https://www.campwicosuta.com/",
+      "registration_url": "https://www.campwicosuta.com/story/enroll/",
+      "email": "info@campwicosuta.com",
+      "phone": "914-946-0927",
+      "street_address": "21 Wicosuta Drive",
+      "city": "Hebron",
+      "state": "NH",
+      "zip": "03241",
+      "camp_type": "sleepaway",
+      "primary_categories": [
+        "sports",
+        "arts",
+        "performing_arts",
+        "outdoor"
+      ],
+      "grade_min": 1,
+      "grade_max": 9,
+      "description_short": "Overnight summer camp for girls in Hebron, NH, running since 1920, with campers grouped by grade from 1st through 9th grade. It offers two 3½-week sessions and a 2-week Explorers session for younger first-time campers.",
+      "activities": [
+        "Athletics & Sports",
+        "Culinary Arts",
+        "Dance & Fitness",
+        "Outdoor Adventures",
+        "Theatre",
+        "Visual Arts",
+        "Water Sports",
+        "Off-site trips",
+        "Horseback riding (optional, extra cost)",
+        "Ice skating (optional, extra cost)",
+        "Golf (optional, extra cost)",
+        "Private lessons in tennis, soccer and gymnastics (optional, extra cost)"
+      ],
+      "price_min": 7125,
+      "price_max": 10350,
+      "transportation": true,
+      "refund_policy_summary": "$1,500 deposit with enrollment, which includes a $200 non-refundable application fee. $3,000 is due Jan 31, 2027, and the rest is due Apr 1, 2027. Without CAP: everything except the $200 fee is refundable until Jan 31, 2027. After that the cancellation fee is $1,500 (Feb 1–Mar 16), $2,000 (Mar 17–Apr 30), or $3,500 (May 1–31), and nothing is refunded after June 1. With the optional Camper Assurance Program (CAP), you can cancel for any reason before camp starts and get money back as a refund or a credit, depending on the date. CAP must be bought at enrollment, by Mar 16, 2027 at the latest. Cancellations must be in writing.",
+      "season_year": 2027,
+      "sessions": [
+        {
+          "name": "Session 1",
+          "start_date": "2027-06-23",
+          "end_date": "2027-07-17",
+          "price": 10350,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 2",
+          "start_date": "2027-07-20",
+          "end_date": "2027-08-13",
+          "price": 10350,
+          "availability": "unknown"
+        },
+        {
+          "name": "Explorers Two-Week Session 1 (campers completing grades 1-3)",
+          "start_date": "2027-06-23",
+          "end_date": "2027-07-06",
+          "price": 7125,
+          "availability": "unknown"
+        },
+        {
+          "name": "Explorers Two-Week Session 2 (campers completing grades 1-4)",
+          "start_date": "2027-07-20",
+          "end_date": "2027-08-02",
+          "price": 7125,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.campwicosuta.com/dates-rates/",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "registration_url",
+            "email",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "gender_policy",
+            "primary_categories",
+            "activities",
+            "description_short",
+            "price_min",
+            "price_max",
+            "transportation",
+            "refund_policy_summary",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://www.campwicosuta.com/progressive-program/",
+          "checked": "2026-11-13",
+          "fields": [
+            "grade_min",
+            "grade_max"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ],
+      "gender_policy": "girls"
+    },
+    {
+      "slug": "camp-winaukee",
+      "name": "Camp Winaukee",
+      "website_url": "https://winaukee.com",
+      "registration_url": "https://winaukee.campintouch.com/ui/forms/application/camper/App",
+      "email": "matt@winaukee.com",
+      "phone": "(800) 487-9157",
+      "street_address": "432 Winaukee Road",
+      "city": "Moultonborough",
+      "state": "NH",
+      "zip": "03254",
+      "primary_categories": [
+        "sports",
+        "nature",
+        "arts"
+      ],
+      "age_min": 7,
+      "age_max": 15,
+      "description_short": "An overnight camp for boys ages 7-15 on Lake Winnipesaukee in Moultonborough, NH, with a strong focus on sports. It has two campuses, the Mainland for boys 7-12 and the Island for boys 13-15. Activities include waterskiing, sailing, paddling, swim lessons and fishing, plus team sports, arts and outdoor adventure.",
+      "activities": [
+        "Waterskiing",
+        "Wakeboarding",
+        "Kneeboarding",
+        "Wakesurfing",
+        "Sailing",
+        "Canoeing",
+        "Kayaking",
+        "Paddleboarding",
+        "Swimming instruction",
+        "Recreational swim",
+        "Inflatables",
+        "Beach volleyball",
+        "Fishing",
+        "Team sports",
+        "Individual sports",
+        "Arts & making",
+        "Outdoor adventure"
+      ],
+      "swim_waterfront_notes": "Waterfront on Lake Winnipesaukee. Swimming is supervised by Red Cross Certified Lifeguards and Water Safety Instructors. Mainland boys take part in a Learn to Swim Program, with lessons as often as their swim level requires. Lifeguards with waterski experience drive the ski boats. PFDs are required on motor boats and during all towed watersports. Sailing (Sunfish) and paddleboarding start in shallow water under lifeguard supervision.",
+      "camp_type": "sleepaway",
+      "gender_policy": "boys",
+      "price_min": 5500,
+      "price_max": 16400,
+      "season_year": 2027,
+      "sessions": [
+        {
+          "name": "First Session",
+          "start_date": "2027-06-23",
+          "end_date": "2027-07-17",
+          "price": 10150,
+          "availability": "unknown"
+        },
+        {
+          "name": "Second Session",
+          "start_date": "2027-07-18",
+          "end_date": "2027-08-07",
+          "price": 8050,
+          "availability": "unknown"
+        },
+        {
+          "name": "Full Summer",
+          "start_date": "2027-06-23",
+          "end_date": "2027-08-07",
+          "price": 16400,
+          "availability": "unknown"
+        },
+        {
+          "name": "Rookie Experience - Winaukee in 2 (1st-4th graders, first summer only)",
+          "start_date": "2027-06-23",
+          "end_date": "2027-07-06",
+          "price": 5500,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://winaukee.com/activities/water-sports",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "website_url",
+            "registration_url",
+            "email",
+            "phone",
+            "primary_categories",
+            "activities",
+            "swim_waterfront_notes"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://winaukee.com/",
+          "checked": "2026-11-13",
+          "fields": [
+            "camp_type",
+            "gender_policy",
+            "age_min",
+            "age_max",
+            "description_short"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://winaukee.com/contact-us",
+          "checked": "2026-11-13",
+          "fields": [
+            "street_address",
+            "city",
+            "state",
+            "zip"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://winaukee.com/dates-rates",
+          "checked": "2026-11-13",
+          "fields": [
+            "price_min",
+            "price_max",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ]
+    },
+    {
+      "slug": "camp-young-judaea-camp-yj-amherst",
+      "name": "Camp Young Judaea (Camp YJ)",
+      "operator_name": "Camp Young Judaea",
+      "website_url": "https://campyj.org",
+      "registration_url": "https://campyj.org/register",
+      "email": "info@campyj.org",
+      "phone": "(781) 237-9410",
+      "street_address": "9 Camp Road",
+      "city": "Amherst",
+      "state": "NH",
+      "zip": "03031",
+      "camp_type": "sleepaway",
+      "primary_categories": [
+        "faith",
+        "sports",
+        "arts"
+      ],
+      "activities": [
+        "Basketball",
+        "Soccer",
+        "Softball",
+        "Flag football",
+        "Volleyball",
+        "Lacrosse",
+        "Tennis",
+        "Archery",
+        "Swimming",
+        "Waterskiing",
+        "Canoeing",
+        "Kayaking",
+        "Fishing",
+        "Stand-up paddleboarding",
+        "Sailing",
+        "Arts and crafts",
+        "Ceramics",
+        "Woodworking",
+        "Drama",
+        "Dance",
+        "Music",
+        "Videography and photography",
+        "Low ropes course",
+        "Climbing tower",
+        "Campcraft and overnight camping",
+        "Horseback riding (extra fee)",
+        "Jewish life"
+      ],
+      "age_min": 8,
+      "age_max": 15,
+      "description_short": "An independent, non-profit Jewish overnight camp on Baboosic Lake in Amherst, NH, for kids ages 8-15 from a range of Jewish backgrounds. For 2027 it offers a seven-week full season, a four-week first session, a three-week second session, and two-week sessions for first-time campers.",
+      "price_min": 4600,
+      "price_max": 13900,
+      "financial_aid": true,
+      "season_year": 2027,
+      "religious_affiliation": "Jewish",
+      "swim_waterfront_notes": "Waterfront on Baboosic Lake plus a pool, both staffed by First Aid, CPR and AED trained Red Cross instructors. Waterfront electives include waterskiing, canoeing, kayaking, fishing, paddleboarding and sailing.",
+      "sessions": [
+        {
+          "name": "Full Season (seven weeks)",
+          "start_date": "2027-06-27",
+          "end_date": "2027-08-15",
+          "price": 13900,
+          "availability": "unknown"
+        },
+        {
+          "name": "1st Session (four weeks)",
+          "start_date": "2027-06-27",
+          "end_date": "2027-07-25",
+          "price": 8600,
+          "availability": "unknown"
+        },
+        {
+          "name": "2nd Session (three weeks)",
+          "start_date": "2027-07-26",
+          "end_date": "2027-08-15",
+          "price": 6800,
+          "availability": "unknown"
+        },
+        {
+          "name": "Two-Week, 1st session (first-time campers only)",
+          "start_date": "2027-06-27",
+          "end_date": "2027-07-11",
+          "price": 4600,
+          "availability": "unknown"
+        },
+        {
+          "name": "Two-Week, 2nd session (first-time campers only)",
+          "start_date": "2027-07-26",
+          "end_date": "2027-08-08",
+          "price": 4600,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://campyj.org/2027dates",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "price_min",
+            "price_max",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://campyj.org/",
+          "checked": "2026-11-13",
+          "fields": [
+            "registration_url",
+            "age_min",
+            "age_max",
+            "description_short",
+            "religious_affiliation"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://campyj.org/activities",
+          "checked": "2026-11-13",
+          "fields": [
+            "primary_categories",
+            "activities",
+            "swim_waterfront_notes"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://campyj.org/scholarships",
+          "checked": "2026-11-13",
+          "fields": [
+            "email",
+            "financial_aid"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ]
+    },
+    {
+      "slug": "eagle-camp-summer-eagle-camp-dover",
+      "name": "Summer Eagle Camp",
+      "operator_name": "Portsmouth Christian Academy",
+      "website_url": "https://pcaschool.org/summer-eagle-camp/",
+      "phone": "(603) 742-3617",
+      "street_address": "20 Seaborne Drive",
+      "city": "Dover",
+      "state": "NH",
+      "zip": "03820",
+      "camp_type": "day",
+      "primary_categories": [
+        "faith"
+      ],
+      "age_min": 3,
+      "grade_max": 7,
+      "description_short": "A Christian day camp at Portsmouth Christian Academy in Dover, NH. In 2026 it ran eight weeks, June 15 to August 7, each week with its own theme, games, crafts, outdoor time and field trips to local attractions. Campers are grouped as Eaglets (age 3 through incoming kindergarten) and Eagles (incoming grades 1-7).",
+      "activities": [
+        "outdoor activities",
+        "field trips to local attractions and community partners",
+        "crafts",
+        "games",
+        "weekly themed activities",
+        "leadership opportunities",
+        "spiritual development"
+      ],
+      "season_year": 2026,
+      "religious_affiliation": "Christian",
+      "sources": [
+        {
+          "url": "https://pcaschool.org/summer-eagle-camp/",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "primary_categories",
+            "religious_affiliation",
+            "activities",
+            "age_min",
+            "grade_max",
+            "description_short"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ]
+    },
+    {
+      "slug": "fleur-de-lis-camp-fitzwilliam",
+      "name": "Fleur de Lis Camp",
+      "operator_name": "Fleur de Lis Camp",
+      "website_url": "https://www.fleurdeliscamp.org",
+      "registration_url": "https://fleurdelis.campintouch.com/ui/forms/application/camper/App",
+      "email": "executivedirector@fleurdeliscamp.org",
+      "phone": "603-585-7751",
+      "street_address": "120 Howeville Road",
+      "city": "Fitzwilliam",
+      "state": "NH",
+      "zip": "03447",
+      "camp_type": "sleepaway",
+      "grade_min": 3,
+      "grade_max": 10,
+      "description_short": "A non-profit classic sleepaway camp for girls, founded in 1929, on Laurel Lake in Fitzwilliam, NH. Sessions run from 2 to 7 weeks for rising 3rd–10th graders. Rising 11th and 12th graders can apply to a Counselor in Training program.",
+      "price_min": 3150,
+      "price_max": 9950,
+      "financial_aid": true,
+      "refund_policy_summary": "You pay a $500 deposit when you register. If you applied for tuition assistance and can't enroll after reviewing the aid offer, the deposit is refunded. The page gives no other refund terms.",
+      "swim_waterfront_notes": "The camp is on the shores of Laurel Lake. Swimming, sailing, waterskiing, canoeing, kayaking and paddleboarding are among the activities campers choose from. The pages give no details on swim tests or lifeguarding.",
+      "season_year": 2027,
+      "sessions": [
+        {
+          "name": "Full Summer (7 weeks)",
+          "start_date": "2027-06-26",
+          "end_date": "2027-08-15",
+          "price": 9950,
+          "availability": "open"
+        },
+        {
+          "name": "5 Weeks",
+          "start_date": "2027-06-26",
+          "end_date": "2027-07-31",
+          "price": 8550,
+          "availability": "open"
+        },
+        {
+          "name": "3 Weeks",
+          "start_date": "2027-06-26",
+          "end_date": "2027-07-17",
+          "price": 6075,
+          "availability": "open"
+        },
+        {
+          "name": "2-Week Starter I (First-time campers)",
+          "start_date": "2027-06-26",
+          "end_date": "2027-07-10",
+          "price": 4550,
+          "availability": "open"
+        },
+        {
+          "name": "4 Weeks",
+          "start_date": "2027-07-18",
+          "end_date": "2027-08-15",
+          "price": 7400,
+          "availability": "open"
+        },
+        {
+          "name": "2-Week Starter II (First-time campers)",
+          "start_date": "2027-07-18",
+          "end_date": "2027-07-31",
+          "price": 4550,
+          "availability": "open"
+        },
+        {
+          "name": "2-Week Starter III (First-time campers)",
+          "start_date": "2027-08-01",
+          "end_date": "2027-08-15",
+          "price": 4550,
+          "availability": "open"
+        },
+        {
+          "name": "Counselor in Training Program (CT) – rising 11th & 12th graders, by application",
+          "start_date": "2027-06-24",
+          "end_date": "2027-08-16",
+          "price": 3150,
+          "availability": "open"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.fleurdeliscamp.org/dates-and-rates",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "registration_url",
+            "email",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "grade_min",
+            "grade_max",
+            "description_short",
+            "price_min",
+            "price_max",
+            "financial_aid",
+            "refund_policy_summary",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://www.fleurdeliscamp.org/activities",
+          "checked": "2026-11-13",
+          "fields": [
+            "gender_policy",
+            "activities",
+            "swim_waterfront_notes"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ],
+      "gender_policy": "girls",
+      "activities": [
+        "Swimming",
+        "Tennis",
+        "Ceramics",
+        "Crafts",
+        "Theater arts",
+        "Surfing",
+        "Sailing",
+        "Knitting",
+        "Archery",
+        "Waterskiing",
+        "Riflery",
+        "Canoeing",
+        "Field sports",
+        "Kayaking",
+        "Horseback riding",
+        "Dance",
+        "Stained glass",
+        "Paddleboarding"
+      ]
+    },
+    {
+      "slug": "fort-friendship-day-camp-manchester",
+      "name": "Fort Friendship Day Camp",
+      "operator_name": "Daniel Webster Council d/b/a Scouting America New Hampshire",
+      "website_url": "https://fortfriendshipdaycamp.com/",
+      "registration_url": "https://scoutingevent.com/330-108273",
+      "phone": "(603) 623-5962",
+      "street_address": "300 Blondin Road",
+      "city": "Manchester",
+      "state": "NH",
+      "zip": "03109",
+      "camp_type": "day",
+      "primary_categories": [
+        "nature",
+        "sports",
+        "arts"
+      ],
+      "age_min": 5,
+      "age_max": 11,
+      "grade_min": 1,
+      "grade_max": 5,
+      "description_short": "A weekday day camp for children entering grades 1–5 at Camp Carpenter in Manchester, NH. It is open to Scouts and non-Scouts, and activities include daily swimming and boating on a private lake, archery and BB, nature hikes, and crafts.",
+      "activities": [
+        "Swimming and waterfront games",
+        "Boating",
+        "Archery",
+        "BB range",
+        "Nature hikes",
+        "Team challenges and obstacle play",
+        "Arts and crafts",
+        "Camp-wide games and themed events"
+      ],
+      "price_min": 330,
+      "extended_care": true,
+      "meals_included": true,
+      "swim_waterfront_notes": "Private lake with daily swimming, boating and waterfront games. Staff are trained in waterfront supervision and swim classification.",
+      "season_year": 2026,
+      "sessions": [
+        {
+          "name": "Week 1",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 2",
+          "start_date": "2026-07-13",
+          "end_date": "2026-07-17",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 3",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 4",
+          "start_date": "2026-07-27",
+          "end_date": "2026-07-31",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 5",
+          "start_date": "2026-08-03",
+          "end_date": "2026-08-07",
+          "price": null,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://fortfriendshipdaycamp.com/",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "registration_url",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "primary_categories",
+            "activities",
+            "age_min",
+            "age_max",
+            "grade_min",
+            "grade_max",
+            "description_short",
+            "price_min",
+            "extended_care",
+            "meals_included",
+            "swim_waterfront_notes",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ]
+    },
+    {
+      "slug": "greenland-day-camp-ymca-camp-gundalow-greenland",
+      "name": "Greenland Day Camp (YMCA Camp Gundalow)",
+      "operator_name": "The Granite YMCA (YMCA of the Seacoast)",
+      "website_url": "https://www.graniteymca.org/camps/day-camp/greenland-day-camp/",
+      "registration_url": "https://ymcagranite.sgasoftware.com/Sales/Product?ProductID=62001-68999&ProductTypeID=610,650&DT=GroupedList&DL=100",
+      "email": "zbrikiatis@graniteymca.org",
+      "phone": "603.994.4155",
+      "city": "Greenland",
+      "state": "NH",
+      "zip": "03840",
+      "camp_type": "day",
+      "primary_categories": [
+        "sports",
+        "arts",
+        "STEM",
+        "performing_arts"
+      ],
+      "grade_min": 1,
+      "grade_max": 9,
+      "description_short": "YMCA day camp at Camp Gundalow in Greenland, NH, for children entering grades 1–9, grouped by grade, with swimming, archery, sports, arts and STEM; there are also specialty camps and a trip-based camp for grades 7–9. The camp also runs teen leadership programs: LIT for grades 8–9 and CIT for grades 10–11.",
+      "activities": [
+        "swimming",
+        "STEM",
+        "creative arts",
+        "sports",
+        "archery",
+        "arts & crafts",
+        "team building",
+        "field trips (Voyagers)",
+        "football",
+        "all-star sports",
+        "theater",
+        "Lego",
+        "fort building",
+        "DIY art",
+        "leadership programs (LIT/CIT)"
+      ],
+      "financial_aid": true,
+      "extended_care": true,
+      "swim_waterfront_notes": "The page lists swimming as a regular activity. It does not say whether this is a pool or open water, or how swim tests are done.",
+      "season_year": 2026,
+      "sessions": [
+        {
+          "name": "Week 1: Survivor",
+          "start_date": "2026-06-22",
+          "end_date": "2026-06-26",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 2: Holidays",
+          "start_date": "2026-06-29",
+          "end_date": "2026-07-03",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 3: Carnival",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 4: Wild West",
+          "start_date": "2026-07-13",
+          "end_date": "2026-07-17",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 5: Olympics",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 6: Under the Sea",
+          "start_date": "2026-07-27",
+          "end_date": "2026-07-31",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 7: Color Blast",
+          "start_date": "2026-08-03",
+          "end_date": "2026-08-07",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 8: Superheroes",
+          "start_date": "2026-08-10",
+          "end_date": "2026-08-14",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 9: Camp Gundalow's Got Talent",
+          "start_date": "2026-08-17",
+          "end_date": "2026-08-21",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Camp Remix Week 10: Blast from the Past",
+          "start_date": "2026-08-24",
+          "end_date": "2026-08-27",
+          "price": null,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.graniteymca.org/camps/day-camp/greenland-day-camp/",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "registration_url",
+            "email",
+            "phone",
+            "city",
+            "state",
+            "camp_type",
+            "primary_categories",
+            "activities",
+            "grade_min",
+            "grade_max",
+            "description_short",
+            "extended_care",
+            "financial_aid",
+            "swim_waterfront_notes",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://tools.usps.com/zip-code-lookup.htm?citybyzipcode",
+          "checked": "2026-11-13",
+          "fields": [
+            "zip"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://www.graniteymca.org/dev/wp-content/uploads/2024/01/Summer-Billing-Schedule.pdf",
+          "checked": "2026-11-13",
+          "fields": [
+            "refund_policy_summary"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ],
+      "refund_policy_summary": "Each week needs a $35 nonrefundable deposit. Cancel more than 6 weeks before the camp week: full refund less the deposit. Cancel 3 to 6 weeks before: refund less a $65 admin fee and the deposit. Cancel less than 3 weeks before: no refund. Payment is due in full at registration."
+    },
+    {
+      "slug": "guided-discoveries-summer-camp-holderness",
+      "name": "Guided Discoveries Summer Camp",
+      "operator_name": "Squam Lakes Natural Science Center",
+      "website_url": "https://nhnature.org/learn/camp/",
+      "email": "info@nhnature.org",
+      "phone": "603-968-7194",
+      "street_address": "23 Science Center Road",
+      "city": "Holderness",
+      "state": "NH",
+      "zip": "03245",
+      "primary_categories": [
+        "nature"
+      ],
+      "description_short": "A nature day camp at Squam Lakes Natural Science Center in Holderness, NH, for ages 5 to 13. Week-long half-day and full-day sessions mix outdoor exploration, games, crafts and up-close meetings with the center's live animals. The center also runs February and April break camps.",
+      "activities": [
+        "Up-close animal encounters",
+        "Live Animal Exhibit Trail walks",
+        "Outdoor exploration",
+        "Games",
+        "Crafts and nature art",
+        "Animal care (Junior Animal Keepers)",
+        "Ceramics (Nature of Clay)",
+        "Nature journaling",
+        "Orienteering",
+        "Fort building",
+        "Conservation projects (Earth Camp)"
+      ],
+      "financial_aid": true,
+      "refund_policy_summary": "A $25 administration fee applies to all cancellations. Cancel more than 30 days before a session: full refund minus $25. Cancel 14–30 days before: 50% refund minus $25. Cancel less than 14 days before: no refund. If enrollment is low, the center cancels week-long programs on the Wednesday before the start date and gives a full refund. Families may also transfer to another session at no extra cost if space allows.",
+      "season_year": 2026,
+      "sources": [
+        {
+          "url": "https://nhnature.org/learn/camp/",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "registration_url",
+            "email",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "primary_categories",
+            "description_short",
+            "financial_aid",
+            "refund_policy_summary"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://nhnature.org/wp-content/uploads/2026/05/2026_20Guided_Discoveries_Schedule_Sessions.pdf",
+          "checked": "2026-11-13",
+          "fields": [
+            "camp_type",
+            "age_min",
+            "age_max",
+            "price_min",
+            "price_max",
+            "activities",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ],
+      "sessions": [
+        {
+          "name": "Week 1: Animal Senses, morning (ages 5-6)",
+          "start_date": "2026-06-22",
+          "end_date": "2026-06-26",
+          "price": 260,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 1: Forest Safari, full day (ages 7-9)",
+          "start_date": "2026-06-22",
+          "end_date": "2026-06-26",
+          "price": 420,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 1: Animal Senses, afternoon (ages 5-6)",
+          "start_date": "2026-06-22",
+          "end_date": "2026-06-26",
+          "price": 260,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 2: Fur, Feathers & Scales, morning (ages 5-6)",
+          "start_date": "2026-06-29",
+          "end_date": "2026-07-03",
+          "price": 260,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 2: Worlds in our Backyard, morning (ages 7-9)",
+          "start_date": "2026-06-29",
+          "end_date": "2026-07-03",
+          "price": 260,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 2: Predator Survival, afternoon (ages 10-13)",
+          "start_date": "2026-06-29",
+          "end_date": "2026-07-03",
+          "price": 260,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 2: Earth Camp Jr., afternoon (ages 7-9)",
+          "start_date": "2026-06-29",
+          "end_date": "2026-07-03",
+          "price": 260,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 3: Insect Adventure, morning (ages 5-6)",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "price": 260,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 3: Junior Animal Keepers I, full day (ages 10-13)",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "price": 420,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 3: World of Birds, afternoon (ages 7-9)",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "price": 260,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 4: Turtle Time!, morning (ages 5-6)",
+          "start_date": "2026-07-13",
+          "end_date": "2026-07-17",
+          "price": 260,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 4: Earth Camp, full day (ages 10-13)",
+          "start_date": "2026-07-13",
+          "end_date": "2026-07-17",
+          "price": 420,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 4: Discovering Reptiles & Amphibians, afternoon (ages 7-9)",
+          "start_date": "2026-07-13",
+          "end_date": "2026-07-17",
+          "price": 260,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 5: Animal Superheroes, morning (ages 5-6)",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "price": 260,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 5: Nature of Clay I, morning (ages 10-13)",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "price": 300,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 5: Animal Superheroes, afternoon (ages 5-6)",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "price": 260,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 5: Powerful Pollinators, afternoon (ages 7-9)",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "price": 260,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 6: Have to Have a Habitat, morning (ages 5-6)",
+          "start_date": "2026-07-27",
+          "end_date": "2026-07-31",
+          "price": 260,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 6: Nature of Clay II, morning (ages 7-9)",
+          "start_date": "2026-07-27",
+          "end_date": "2026-07-31",
+          "price": 300,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 6: Have to Have a Habitat, afternoon (ages 5-6)",
+          "start_date": "2026-07-27",
+          "end_date": "2026-07-31",
+          "price": 260,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 6: Nature Guides, afternoon (ages 10-13)",
+          "start_date": "2026-07-27",
+          "end_date": "2026-07-31",
+          "price": 260,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 7: Sky Hunters, morning (ages 5-6)",
+          "start_date": "2026-08-03",
+          "end_date": "2026-08-07",
+          "price": 260,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 7: Junior Animal Keepers II, full day (ages 10-13)",
+          "start_date": "2026-08-03",
+          "end_date": "2026-08-07",
+          "price": 420,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 7: Sky Hunters, afternoon (ages 5-6)",
+          "start_date": "2026-08-03",
+          "end_date": "2026-08-07",
+          "price": 260,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 8: Marvelous Mammals, morning (ages 5-6)",
+          "start_date": "2026-08-10",
+          "end_date": "2026-08-14",
+          "price": 260,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 8: Art in Nature I, morning (ages 7-9)",
+          "start_date": "2026-08-10",
+          "end_date": "2026-08-14",
+          "price": 290,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 8: Marvelous Mammals, afternoon (ages 5-6)",
+          "start_date": "2026-08-10",
+          "end_date": "2026-08-14",
+          "price": 260,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 8: Art in Nature II, afternoon (ages 10-13)",
+          "start_date": "2026-08-10",
+          "end_date": "2026-08-14",
+          "price": 290,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 9: Nature Explorers, morning (ages 5-6)",
+          "start_date": "2026-08-17",
+          "end_date": "2026-08-21",
+          "price": 260,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 9: Junior Naturalists, full day (ages 7-9)",
+          "start_date": "2026-08-17",
+          "end_date": "2026-08-21",
+          "price": 420,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 9: Nature Explorers, afternoon (ages 5-6)",
+          "start_date": "2026-08-17",
+          "end_date": "2026-08-21",
+          "price": 260,
+          "availability": "unknown"
+        }
+      ],
+      "camp_type": "day",
+      "age_min": 5,
+      "age_max": 13,
+      "price_min": 260,
+      "price_max": 420,
+      "registration_url": "https://nhnature.campbrainregistration.com/"
+    },
+    {
+      "slug": "hanover-parks-and-recreation-camps-hanover",
+      "name": "Hanover Parks & Recreation Camps",
+      "operator_name": "Hanover Parks & Recreation",
+      "website_url": "https://www.hanovernh.org/716/Camps",
+      "registration_url": "https://hanovernh.perfectmind.com/SocialSite/MemberRegistration/MemberSignIn",
+      "phone": "603-643-2411",
+      "city": "Hanover",
+      "state": "NH",
+      "zip": "03755",
+      "camp_type": "day",
+      "age_min": 2,
+      "grade_max": 5,
+      "description_short": "Town-run day camps for preschoolers (ages 2-4) and children entering kindergarten through grade 5: 6 themed summer weeks at Richmond Middle School, 2 August minicamps, and weeklong camps during the February and April school vacations.",
+      "activities": [
+        "Themed indoor and outdoor activities",
+        "Time at Storrs Pond",
+        "Special events",
+        "Field trips",
+        "Arts and crafts",
+        "Free play",
+        "Gym time",
+        "Walks to a local park",
+        "Library trips",
+        "Outdoor games",
+        "Water activities",
+        "Mink Brook outdoor adventures"
+      ],
+      "price_per_week": 250,
+      "price_min": 55,
+      "price_max": 325,
+      "swim_waterfront_notes": "Each summer week includes time at Storrs Pond. The Outdoor Adventure minicamp visits Mink Brook every day and includes water activities. The page gives no details on swim instruction, swim tests or lifeguarding.",
+      "season_year": 2026,
+      "price_per": "week",
+      "sessions": [
+        {
+          "name": "Week 1: Color Burst Bash (3 days)",
+          "start_date": "2026-06-24",
+          "end_date": "2026-06-26",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 2: Celebrate Hanover (4 days)",
+          "start_date": "2026-06-29",
+          "end_date": "2026-07-02",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 3: Keepin' It Cozy",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 4: Fantasy Land Adventures",
+          "start_date": "2026-07-13",
+          "end_date": "2026-07-17",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 5: Sports Spectacular Showdown",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 6: Happy Campers",
+          "start_date": "2026-07-27",
+          "end_date": "2026-07-31",
+          "price": null,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.hanovernh.org/716/Camps",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "registration_url",
+            "phone",
+            "city",
+            "state",
+            "camp_type",
+            "activities",
+            "age_min",
+            "grade_max",
+            "description_short",
+            "price_min",
+            "price_max",
+            "price_per_week",
+            "price_per",
+            "swim_waterfront_notes"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://www.hanovernh.org/DocumentCenter/View/8966/Summer-Camp-Themes-2026",
+          "checked": "2026-11-13",
+          "fields": [
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://nh-hanover.civicplus.com/DocumentCenter/View/1277/Camp-Location-Maps",
+          "checked": "2026-11-13",
+          "fields": [
+            "street_address",
+            "zip"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://www.hanovernh.org/DocumentCenter/View/1145",
+          "checked": "2026-11-13",
+          "fields": [
+            "email",
+            "refund_policy_summary"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ],
+      "street_address": "63 Lyme Road",
+      "email": "parksandrec@hanovernh.org",
+      "refund_policy_summary": "Summer camps: full refund if you cancel before March 1; from March 1 on, a refund only if the spot is filled from the waiting list. Minicamps: refund only if the spot is filled from the waiting list. Card refunds lose a 5% processing fee. Camp membership fees are not refundable, and there is no refund if a child is removed for behavior. Requests go in writing to parksandrec@hanovernh.org."
+    },
+    {
+      "slug": "joppa-hill-educational-farm-summer-camp-farm-and-forest-camp-bedford",
+      "name": "Joppa Hill Educational Farm Summer Camp (Farm and Forest Camp)",
+      "operator_name": "Joppa Hill Educational Farm",
+      "website_url": "https://jhef.org/summer-camp/",
+      "phone": "(603) 472-4724",
+      "street_address": "174 Joppa Hill Road",
+      "city": "Bedford",
+      "state": "NH",
+      "zip": "03110",
+      "camp_type": "day",
+      "primary_categories": [
+        "nature"
+      ],
+      "age_min": 5,
+      "age_max": 12,
+      "description_short": "An all-outdoor farm day camp for ages 5–12 in Bedford, NH. Each week has its own theme, and campers do daily farm chores and animal care, gardening, and time in the woods, 9 AM–3 PM.",
+      "activities": [
+        "Farm chores and animal care",
+        "Gardening",
+        "Nature hikes",
+        "Woods play / fort building",
+        "Crafts",
+        "Cooking",
+        "Water play",
+        "Active games",
+        "Orienteering",
+        "Hayrides",
+        "Campfire",
+        "Felting, weaving and dyeing (Animal Arts week)",
+        "Engineering design (Animal Engineers week)",
+        "Wetland exploration"
+      ],
+      "price_per_week": 375,
+      "price_min": 375,
+      "price_max": 375,
+      "extended_care": true,
+      "meals_included": false,
+      "refund_policy_summary": "Cancel more than 6 weeks before the camp week: 95% refund. Cancel 3–6 weeks before: 50% refund. Cancel within 2 weeks: no refund. No refund if a camper is removed for not meeting the independence expectations. Card and ACH processing fees apply.",
+      "special_needs_notes": "The program is entirely outdoors, with hiking on uneven trails and time outside in all weather. The camp says it \"cannot change activities or make significant adjustments for individual campers.\" Campers must handle basic self-care on their own (port-a-potty, sunscreen, changing clothes). Families who can't meet these expectations should contact the camp first. The site has an Accessibility page.",
+      "swim_waterfront_notes": "Afternoon Club Time includes \"Water Play,\" and campers change into water play clothes. The page says nothing about swimming. Wetlands, streams and ponds are explored during Wonderful Wetlands week.",
+      "season_year": 2026,
+      "price_per": "week",
+      "sessions": [
+        {
+          "name": "Farmer for a Day",
+          "start_date": "2026-06-22",
+          "end_date": "2026-06-26",
+          "price": 375,
+          "availability": "full"
+        },
+        {
+          "name": "Farming Camp",
+          "start_date": "2026-06-29",
+          "end_date": "2026-07-03",
+          "price": 375,
+          "availability": "full"
+        },
+        {
+          "name": "Wonderful Wetlands",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "price": 375,
+          "availability": "unknown"
+        },
+        {
+          "name": "Nature Designs",
+          "start_date": "2026-07-13",
+          "end_date": "2026-07-17",
+          "price": 375,
+          "availability": "unknown"
+        },
+        {
+          "name": "Animal Engineers",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "price": 375,
+          "availability": "unknown"
+        },
+        {
+          "name": "Animal Arts",
+          "start_date": "2026-07-27",
+          "end_date": "2026-07-31",
+          "price": 375,
+          "availability": "unknown"
+        },
+        {
+          "name": "Forest Explorers",
+          "start_date": "2026-08-03",
+          "end_date": "2026-08-07",
+          "price": 375,
+          "availability": "full"
+        },
+        {
+          "name": "Farm Favorites",
+          "start_date": "2026-08-10",
+          "end_date": "2026-08-14",
+          "price": 375,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://jhef.org/summer-camp/",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "primary_categories",
+            "activities",
+            "age_min",
+            "age_max",
+            "description_short",
+            "price_min",
+            "price_max",
+            "price_per_week",
+            "price_per",
+            "extended_care",
+            "meals_included",
+            "refund_policy_summary",
+            "special_needs_notes",
+            "swim_waterfront_notes",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ]
+    }
+  ]
 }
