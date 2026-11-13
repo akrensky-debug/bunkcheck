@@ -11,8 +11,7 @@
   "primary_categories": [
     "special_needs"
   ],
-  "age_min": 8,
-  "description_short": "A small overnight camp in Dedham, Maine. Campers arrive Sunday afternoon and stay until Friday, and each week is set aside for one age group. Campers of all abilities are welcome, and the day campers join them for traditional camp activities.",
+  "description_short": "A small lakefront camp in Dedham, Maine for people with disabilities. In the weekly overnight program campers arrive Sunday afternoon and stay until Friday, each week is for one age group, and overnight campers join the day campers for traditional camp activities.",
   "price_per_week": 2000,
   "financial_aid": true,
   "meals_included": true,
@@ -22,7 +21,7 @@
   "sources": [
     {
       "url": "https://campcapella.org/weekly-overnight-camp",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "website_url",
@@ -33,19 +32,25 @@
         "zip",
         "camp_type",
         "primary_categories",
-        "age_min",
-        "description_short",
         "price_per_week",
         "price_per",
         "meals_included",
         "financial_aid",
         "special_needs_notes"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Weekly Overnight Camp page: Sunday to Friday stay, $2000 full weekly cost with camperships, meals, eligibility, contact block"
+    },
+    {
+      "url": "https://campcapella.org/",
+      "checked": "2026-11-13",
+      "fields": [
+        "description_short"
+      ],
+      "note": "Home page: lakefront summer camp in Dedham for individuals with disabilities"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://campcapella.org/weekly-overnight-camp",
       "kind": "html",
@@ -93,6 +98,24 @@
         "quote": "we welcome campers of all abilities within each week"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://campcapella.org/weekly-overnight-camp",
+        "https://campcapella.org/",
+        "https://campcapella.org/camp-programs/",
+        "https://campcapella.org/2026-summer-camp/",
+        "https://campcapella.org/about-us/"
+      ],
+      "changes": [
+        "Checked name, contact, $2000 weekly cost, camperships, meals and eligibility text against the Weekly Overnight Camp page; all match.",
+        "Removed age_min 8: the page says overnight camp is 'most ideal' for campers 8 and older who have done a week of day camp, which is a recommendation, not a minimum age.",
+        "Rewrote description_short to say the camp serves people with disabilities (home page and mission), which the first draft left out.",
+        "No session dates are posted anywhere on the site (the 2026 Summer Camp page is empty), so sessions stay empty; season_year stays 2026 from the site's own '2026 Summer Camp' menu.",
+        "The weekly day camp is a separate program on the same site and is not in this listing."
+      ],
+      "open_questions": []
+    }
   }
 }
