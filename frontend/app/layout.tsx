@@ -1,14 +1,7 @@
 import type { Metadata, Viewport } from 'next'
-import { Figtree } from 'next/font/google'
+import './fonts.css'
 import './globals.css'
 import AccountLink from '@/components/AccountLink'
-
-const figtree = Figtree({
-  subsets: ['latin'],
-  weight: ['700', '800'],
-  variable: '--font-display',
-  display: 'swap',
-})
 
 export const metadata: Metadata = {
   title: 'Bunkcheck: Summer, sorted.',
@@ -31,16 +24,11 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={figtree.variable}>
+    <html lang="en">
       <head>
-        {/* Atkinson Hyperlegible Next is not in next/font for Next 14.2, so it loads from Google Fonts. */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        {/* eslint-disable-next-line @next/next/no-page-custom-font */}
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;600;700&display=swap"
-        />
+        {/* Every page uses these two first: body text, and the page title. fonts.css has the rest. */}
+        <link rel="preload" href="/fonts/atkinson-hyperlegible-next-latin-400-normal.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+        <link rel="preload" href="/fonts/figtree-latin-800-normal.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
       </head>
       <body className="min-h-screen flex flex-col">
         <header className="sticky top-0 z-50 border-b border-line bg-bg/90 backdrop-blur">

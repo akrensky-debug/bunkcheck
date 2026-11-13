@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Bunkcheck: Figtree for headings (next/font, --font-display), Atkinson Hyperlegible Next
-   for body and UI (Google Fonts <link> in layout.tsx).
+/* Bunkcheck: Figtree for headings, Atkinson Hyperlegible Next for body and UI. Both are
+   served from public/fonts; the @font-face rules are in fonts.css.
 
    Design tokens. Space-separated RGB channels so Tailwind opacity modifiers work
    (bg-ink/5). tailwind.config.ts maps role names onto these; nothing else should hold a
