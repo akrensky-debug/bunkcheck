@@ -101,7 +101,7 @@
   "sources": [
     {
       "url": "https://darien-ymca.org/child-care/summer-camp/school-age-camp/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -121,13 +121,14 @@
         "price_max",
         "extended_care",
         "swim_waterfront_notes",
-        "sessions"
+        "sessions",
+        "price_per"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "2026 season. Weekly fees by group: members $444-$485, non-members $538-$585 (Week 9 $444/$538). Grades are the grade the camper has just completed (0 = kindergarten). Extended care 3:30-6:00 PM, $120/week, at the Darien YMCA."
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://darien-ymca.org/child-care/summer-camp/school-age-camp/",
       "kind": "html",
@@ -164,6 +165,19 @@
         "quote": "January 20th at 10:00 am Registration open for Members who are Darien Residents or Members who are returning 2025 campers."
       }
     ],
-    "errors": []
-  }
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://darien-ymca.org/child-care/summer-camp/school-age-camp/"
+      ],
+      "changes": [
+        "Checked all 9 sessions, fees, grades, hours, location (Middlesex Middle School, 204 Hollow Tree Ridge Rd) and activities against the page; all match.",
+        "Added price_per week: price_min $444 and price_max $585 are weekly fees.",
+        "Grade range is 'just completed K through 7th', not entering grade; noted in the source."
+      ],
+      "open_questions": []
+    }
+  },
+  "price_per": "week"
 }

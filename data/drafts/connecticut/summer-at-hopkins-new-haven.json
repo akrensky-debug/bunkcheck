@@ -9,27 +9,38 @@
   "state": "CT",
   "zip": "06515",
   "primary_categories": [
-    "academic",
-    "sports"
+    "academic"
   ],
   "grade_min": 5,
   "grade_max": 12,
-  "description_short": "Hopkins School in New Haven runs a summer academic school for students in grades 5–12, from Hopkins and other schools. Its campus also hosts Pathfinder, a summer program for New Haven public and parochial school students in grades 5–8, and sports camps run by partner organizations.",
+  "description_short": "Hopkins School's summer school in New Haven offers small academic and enrichment classes for students entering grades 5 to 12, from Hopkins and other schools. Classes run in two-hour blocks in the morning and early afternoon, and families pay per course.",
   "activities": [
-    "Academic summer courses",
-    "Football",
-    "Lacrosse",
-    "Field hockey",
-    "Tennis",
-    "Squash",
-    "Soccer"
+    "Academic courses for credit and enrichment",
+    "Language arts",
+    "Math",
+    "Robotics",
+    "Dungeons & Dragons"
   ],
   "season_year": 2026,
   "sessions": [
     {
-      "name": "Hopkins Summer School 2026",
+      "name": "Lower School (entering grades 5-6), five weeks",
       "start_date": "2026-06-22",
       "end_date": "2026-07-24",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Middle School (entering grades 7-8), five weeks",
+      "start_date": "2026-06-22",
+      "end_date": "2026-07-24",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Upper School (entering grades 9-12), six weeks",
+      "start_date": "2026-06-22",
+      "end_date": "2026-07-31",
       "price": null,
       "availability": "unknown"
     }
@@ -37,7 +48,7 @@
   "sources": [
     {
       "url": "https://www.hopkins.edu/academics/summer-at-hopkins",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -47,18 +58,49 @@
         "city",
         "state",
         "zip",
-        "primary_categories",
-        "activities",
         "grade_min",
-        "grade_max",
-        "description_short",
+        "grade_max"
+      ]
+    },
+    {
+      "url": "https://www.hopkins.edu/academics/summer-at-hopkins/summer-school-2026",
+      "checked": "2026-11-13",
+      "fields": [
+        "email",
+        "camp_type",
+        "description_short"
+      ]
+    },
+    {
+      "url": "https://www.hopkins.edu/academics/summer-at-hopkins/summer-school-2026/lower-school",
+      "checked": "2026-11-13",
+      "fields": [
         "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Lower School dates; Middle School page gives the same June 22 to July 24 dates and Upper School June 22 to July 31"
+    },
+    {
+      "url": "https://www.hopkins.edu/academics/summer-at-hopkins/summer-school-2026/middle-school",
+      "checked": "2026-11-13",
+      "fields": [
+        "price_min",
+        "primary_categories",
+        "activities"
+      ],
+      "note": "Course prices from $800 (D&D) to $1,250, $2,000 for two courses"
+    },
+    {
+      "url": "https://www.hopkins.edu/academics/summer-at-hopkins/summer-school-2026/upper-school",
+      "checked": "2026-11-13",
+      "fields": [
+        "price_max",
+        "price_per"
+      ],
+      "note": "Credit courses $3,700 per course"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.hopkins.edu/academics/summer-at-hopkins",
       "kind": "html",
@@ -87,6 +129,32 @@
     "errors": [
       "missing required camp_type",
       "camp_type must be one of ['day', 'sleepaway', 'specialty']"
-    ]
-  }
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.hopkins.edu/academics/summer-at-hopkins",
+        "https://www.hopkins.edu/academics/summer-at-hopkins/summer-school-2026",
+        "https://www.hopkins.edu/academics/summer-at-hopkins/summer-school-2026/lower-school",
+        "https://www.hopkins.edu/academics/summer-at-hopkins/summer-school-2026/middle-school",
+        "https://www.hopkins.edu/academics/summer-at-hopkins/summer-school-2026/upper-school",
+        "https://www.hopkins.edu/academics/summer-at-hopkins/summer-school-2026/register-and-info"
+      ],
+      "changes": [
+        "Set camp_type to day: classes run 9:00 am to 1:15 pm.",
+        "Replaced the single June 22 to July 24 session with three: Lower and Middle School June 22 to July 24, Upper School June 22 to July 31 (the overview page's July 24 end date is only true for grades 5 to 8).",
+        "Added price range $800 to $3,700 per course from the division pages; session prices left empty because families pay per course.",
+        "Added email summerschool@hopkins.edu from the Summer School page.",
+        "Removed sports and the football, lacrosse and other sports activities: those camps are run by outside partner organizations, not Hopkins.",
+        "Rewrote the description to cover Summer School only, not Pathfinder (closed to outside applicants) or the partner sports camps.",
+        "Registration link not added: the Register Today link returns 404."
+      ],
+      "open_questions": []
+    }
+  },
+  "camp_type": "day",
+  "email": "summerschool@hopkins.edu",
+  "price_min": 800,
+  "price_max": 3700,
+  "price_per": "course"
 }

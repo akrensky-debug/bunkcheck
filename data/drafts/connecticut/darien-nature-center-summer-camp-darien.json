@@ -16,7 +16,7 @@
   ],
   "age_min": 3,
   "age_max": 10,
-  "description_short": "Half-day nature day camp at Darien Nature Center and Cherry Lawn Park, Monday to Friday from 9:30 AM to 2:00 PM, with a different theme each week. Campers ages 3–6 are in \"Our Living Planet\" and ages 7–10 are in \"Eco Explorers.\"",
+  "description_short": "Nature day camp at Darien Nature Center and Cherry Lawn Park, Monday to Friday from 9:30 AM to 2:00 PM, with a different theme each week. Campers ages 3–6 are in \"Our Living Planet\" and ages 7–10 are in \"Eco Explorers.\"",
   "activities": [
     "animal care and animal ambassadors",
     "gardening",
@@ -91,7 +91,7 @@
   "sources": [
     {
       "url": "https://www.dariennaturecenter.org/summer-camp-2026",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -116,11 +116,11 @@
         "refund_policy_summary",
         "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "2026 season page. price_per_week is the full weekly price; price_min is the early-bird price for the 4-day Week 2. Scholarship is need-based, one qualifying family, subject to funds."
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.dariennaturecenter.org/summer-camp-2026",
       "kind": "html",
@@ -148,6 +148,18 @@
       "Camper-to-staff ratio and group sizes"
     ],
     "low_confidence": [],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.dariennaturecenter.org/summer-camp-2026"
+      ],
+      "changes": [
+        "Checked all 7 sessions, prices ($710 full, $660 early bird, Week 2 $568/$528), ages, hours, contacts, refund policy and scholarship against the 2026 page; all match.",
+        "Removed 'Half-day' from description_short: the page gives 9:30 AM-2:00 PM and never calls it half-day.",
+        "No 2027 dates are posted yet; the page still shows the 2026 season."
+      ],
+      "open_questions": []
+    }
   }
 }

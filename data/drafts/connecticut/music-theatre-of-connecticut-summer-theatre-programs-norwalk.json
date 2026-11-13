@@ -2,7 +2,7 @@
   "slug": "music-theatre-of-connecticut-summer-theatre-programs-norwalk",
   "name": "Music Theatre of Connecticut Summer Theatre Programs",
   "operator_name": "Music Theatre of Connecticut",
-  "website_url": "https://www.musictheatreofct.com",
+  "website_url": "https://www.musictheatreofct.com/school-summer",
   "registration_url": "https://www.musictheatreofct.com/register",
   "email": "admin@musictheatreofct.com",
   "phone": "(203) 454-3883",
@@ -14,27 +14,44 @@
   "primary_categories": [
     "performing_arts"
   ],
-  "description_short": "Musical theatre summer programs in Norwalk, CT. One-week half-day or full-day workshops for elementary and middle school students end in a short \"show of the week,\" and a two-week intensive for older students puts on a 1.5-hour musical.",
   "activities": [
     "Musical theatre",
-    "Acting games",
-    "Singing exercises",
-    "Movement",
+    "Acting",
+    "Singing",
+    "Dancing",
     "Improvisation",
-    "Audition prep",
-    "Vocal performance",
-    "Character work"
+    "Puppetry",
+    "Master classes",
+    "Performances"
   ],
+  "grade_min": 2,
+  "grade_max": 12,
+  "description_short": "Musical theatre summer programs at Music Theatre of Connecticut in Norwalk. One-week half-day or full-day workshops for grades 2 to 8 rehearse a Broadway \"show of the week\" and perform it in the evening after the last rehearsal. A two-week production for grades 6 to 12 puts on an abridged 1.5-hour musical.",
+  "price_min": 625,
+  "price_max": 1225,
+  "price_per_week": 925,
+  "price_per": "week",
+  "meals_included": false,
+  "financial_aid": true,
+  "refund_policy_summary": "$200 of tuition is non-refundable, and there are no refunds from April 1. Full policies are on the MTC Policies page.",
   "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Two-Week Summer Student Production (grades 6-12)",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-25",
+      "price": 1225,
+      "availability": "full"
+    }
+  ],
   "sources": [
     {
-      "url": "https://www.musictheatreofct.com/blog/2026/3/10/experience-our-summer-theatre-programs-at-music-theatre-of-connecticut",
-      "checked": "2026-10-13",
+      "url": "https://www.musictheatreofct.com/school-summer",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
         "website_url",
-        "registration_url",
         "email",
         "phone",
         "street_address",
@@ -44,13 +61,30 @@
         "camp_type",
         "primary_categories",
         "activities",
-        "description_short"
+        "description_short",
+        "grade_min",
+        "grade_max",
+        "price_min",
+        "price_max",
+        "price_per_week",
+        "price_per",
+        "financial_aid",
+        "meals_included",
+        "refund_policy_summary",
+        "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "MTC School Summer 2026 page"
+    },
+    {
+      "url": "https://www.musictheatreofct.com/register",
+      "checked": "2026-11-13",
+      "fields": [
+        "registration_url"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.musictheatreofct.com/blog/2026/3/10/experience-our-summer-theatre-programs-at-music-theatre-of-connecticut",
       "kind": "html",
@@ -88,6 +122,26 @@
         "quote": "Register for classes online"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.musictheatreofct.com/blog/2026/3/10/experience-our-summer-theatre-programs-at-music-theatre-of-connecticut",
+        "https://www.musictheatreofct.com/school-summer",
+        "https://www.musictheatreofct.com/register",
+        "https://www.musictheatreofct.com/calendar"
+      ],
+      "changes": [
+        "Moved the source from the March 2026 blog post to the camp's Summer 2026 page, which has grades, tuition and dates.",
+        "website_url now points to the summer page instead of the home page.",
+        "Added grades 2 to 12 (workshops grades 2-8, production grades 6-12).",
+        "Added prices: half-day workshop $625, full-day $925 a week, two-week production $1,225; price_per_week is the full-day workshop rate.",
+        "Added financial_aid true (scholarships and payment plans), meals_included false (lunch not provided) and the refund rule ($200 non-refundable, no refunds from April 1).",
+        "Added the two-week production session, July 13-25, 2026, $1,225, marked full as the page says.",
+        "Rewrote the description and activities to match the summer page (acting, singing, dancing, improvisation, puppetry, master classes).",
+        "Dates for the one-week workshops (Wizard of Oz, Descendants, Cinderella) are not in the page text, so no workshop sessions were added."
+      ],
+      "open_questions": []
+    }
   }
 }

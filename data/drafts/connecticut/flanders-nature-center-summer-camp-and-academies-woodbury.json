@@ -3,7 +3,7 @@
   "name": "Flanders Nature Center Summer Camp & Academies",
   "operator_name": "Flanders Nature Center & Land Trust",
   "website_url": "https://flandersnaturecenter.org/summer-camp-academies/",
-  "email": "julia@flandersnaturecenter.org",
+  "email": null,
   "phone": "(203) 263-3711",
   "street_address": "596 Flanders Rd",
   "city": "Woodbury",
@@ -18,7 +18,7 @@
   "age_min": 3,
   "age_max": 13,
   "grade_max": 8,
-  "description_short": "Half-day and full-day nature camps for ages 3 to 13 at Flanders Nature Center in Woodbury, CT. Programs include nature exploration, farming with barn animals, art, cooking, youth environmental leadership, and science academies.",
+  "description_short": "Nature camps for ages 3 to 13 at Flanders Nature Center in Woodbury, run as half days (9am-1pm or 1-5pm) or all day (9am-5pm), with before care from 8am. Programs include nature exploration, farm animal care, art, cooking, youth environmental leadership and science academies.",
   "activities": [
     "Nature exploration and hiking",
     "Farm animal care",
@@ -36,12 +36,11 @@
   "sources": [
     {
       "url": "https://flandersnaturecenter.org/summer-camp-academies/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
         "website_url",
-        "email",
         "phone",
         "street_address",
         "city",
@@ -58,11 +57,19 @@
         "financial_aid",
         "refund_policy_summary"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "2026 season; groups follow the grade entered in fall 2026. Before care 'Rooster Roll Call' 8-9 AM. Camperships available. No base prices on the site; all-day discount $38/week, member family membership $75."
+    },
+    {
+      "url": "https://flandersnaturecenter.org/wp-content/uploads/2026/02/2026-Summer-Camp-At-a-Glance.pdf",
+      "checked": "2026-11-13",
+      "fields": [
+        "sessions"
+      ],
+      "note": "2026 Summer Camp at a Glance: twelve weeks, June 8 to August 28, 2026, with a theme per program each week."
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://flandersnaturecenter.org/summer-camp-academies/",
       "kind": "html",
@@ -96,6 +103,115 @@
         "quote": "camp director to Julia Meurice at  julia@flandersnaturecenter.org"
       }
     ],
-    "errors": []
-  }
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://flandersnaturecenter.org/summer-camp-academies/",
+        "https://flandersnaturecenter.org/wp-content/uploads/2026/02/2026-Summer-Camp-At-a-Glance.pdf"
+      ],
+      "changes": [
+        "Added the twelve 2026 weekly sessions (June 8 to August 28) from the camp's 'Summer Camp at a Glance' PDF.",
+        "Moved julia@flandersnaturecenter.org from email to contacts (Julia Meurice, Camp Director): the page gives it for counselor and CIT applications, not as the family address.",
+        "Added half-day and all-day hours and before care to description_short.",
+        "No prices added: the site lists discounts but no base fees."
+      ],
+      "open_questions": []
+    }
+  },
+  "contacts": [
+    {
+      "email": "julia@flandersnaturecenter.org",
+      "name": "Julia Meurice",
+      "role": "Camp Director",
+      "url": "https://flandersnaturecenter.org/summer-camp-academies/",
+      "checked": "2026-11-13"
+    }
+  ],
+  "sessions": [
+    {
+      "name": "Week 1",
+      "start_date": "2026-06-08",
+      "end_date": "2026-06-12",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 2",
+      "start_date": "2026-06-15",
+      "end_date": "2026-06-19",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 3",
+      "start_date": "2026-06-22",
+      "end_date": "2026-06-26",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 4",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-03",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 5",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 6",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 7",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 8",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 9",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 10",
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-14",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 11",
+      "start_date": "2026-08-17",
+      "end_date": "2026-08-21",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 12",
+      "start_date": "2026-08-24",
+      "end_date": "2026-08-28",
+      "price": null,
+      "availability": "unknown"
+    }
+  ]
 }

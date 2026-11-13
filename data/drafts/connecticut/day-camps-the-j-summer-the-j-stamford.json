@@ -2,7 +2,7 @@
   "slug": "day-camps-the-j-summer-the-j-stamford",
   "name": "Day Camps@The J (Summer@The J)",
   "operator_name": "The Stamford JCC",
-  "website_url": "https://www.stamfordjcc.org/summeratthej/",
+  "website_url": "https://www.stamfordjcc.org/daycampsatthej/",
   "phone": "(203) 487-0973",
   "street_address": "1035 Newfield Avenue",
   "city": "Stamford",
@@ -11,42 +11,78 @@
   "camp_type": "day",
   "primary_categories": [
     "sports",
-    "arts"
+    "arts",
+    "swimming",
+    "adventure"
   ],
   "age_min": 3,
   "grade_max": 8,
-  "description_short": "A day camp run by the Stamford JCC on a 15-acre campus for children aged 3 through grade 8. It offers athletic and creative arts instruction, Shabbat activities, and programming that changes as campers get older.",
+  "description_short": "Day camp on the Stamford JCC's 15-acre campus for children age 3 through grade 8, grouped as Chaverim (ages 3-4), Bonim (K-2), Tzofim (3-5) and Na'arim (6-8). Campers swim twice a day in a heated indoor pool and do sports, STEAM, zip-lining, rock climbing, archery, boating and fishing on the camp lake, with Jewish values and Shabbat woven in. Enrollment is a 2-week minimum.",
   "activities": [
-    "Athletic instruction",
-    "Creative arts",
+    "swimming",
+    "sports",
+    "STEAM",
+    "zip-lining",
+    "rock climbing",
+    "archery",
+    "boating",
+    "fishing",
+    "woodshop",
+    "cooking",
+    "gardening",
+    "music",
+    "field hockey",
+    "soccer",
+    "field trips",
     "Shabbat programming"
   ],
   "season_year": 2027,
   "sources": [
     {
-      "url": "https://www.stamfordjcc.org/summeratthej/",
-      "checked": "2026-10-13",
+      "url": "https://www.stamfordjcc.org/daycampsatthej/",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
         "website_url",
         "phone",
-        "street_address",
         "city",
         "state",
-        "zip",
         "camp_type",
-        "primary_categories",
-        "activities",
         "age_min",
         "grade_max",
+        "primary_categories",
+        "religious_affiliation",
         "description_short"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Day Camps@The J page: age groups Chaverim 3-4, Bonim K-2, Tzofim 3-5, Na'arim 6-8; Jewish values woven into every day; twice-daily swim."
+    },
+    {
+      "url": "https://www.stamfordjcc.org/thedaycampexperience",
+      "checked": "2026-11-13",
+      "fields": [
+        "activities"
+      ],
+      "note": "Day camp experience page: electives, facilities (lake with boating and fishing, zip-lines, archery range, 25-meter indoor pool)."
+    },
+    {
+      "url": "https://www.stamfordjcc.org/clientuploads/DayCamps/DayCamps2027_EarlyBirdRates.pdf",
+      "checked": "2026-11-13",
+      "fields": [
+        "email",
+        "street_address",
+        "zip",
+        "price_min",
+        "price_max",
+        "price_per",
+        "refund_policy_summary",
+        "sessions"
+      ],
+      "note": "2027 early-bird rates, valid through 12/15/26. Prices are totals for 2 to 8 weeks (2-week minimum, no 1-week option): lowest $1,425 (2 weeks, member), highest $7,445 (8 weeks, community rate). Weeks start 6/21, 6/28, 7/6, 7/12, 7/19, 7/26, 8/2, 8/9; season June 21-August 13, so each week ends Friday. Deposit $300 members / $400 community."
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.stamfordjcc.org/summeratthej/",
       "kind": "html",
@@ -80,6 +116,88 @@
         "quote": "premier athletic and creative arts instruction"
       }
     ],
-    "errors": []
-  }
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.stamfordjcc.org/summeratthej/",
+        "https://www.stamfordjcc.org/daycampsatthej/",
+        "https://www.stamfordjcc.org/thedaycampexperience",
+        "https://www.stamfordjcc.org/clientuploads/DayCamps/DayCamps2027_EarlyBirdRates.pdf"
+      ],
+      "changes": [
+        "Changed website_url to the Day Camps@The J page; the old URL is the JCC's umbrella summer page for four programs.",
+        "Added the 2027 season from the early-bird rates PDF: eight weeks June 21 to August 13, 2027 (Week 3 starts Tuesday July 6). End dates are the Friday of each week, from the season end of Friday August 13.",
+        "Added price_min $1,425 and price_max $7,445 as totals for 2 to 8 weeks (price_per session); there is no single-week price because of the 2-week minimum.",
+        "Added email daycamps@stamfordjcc.org, the refund policy and religious_affiliation Jewish.",
+        "Rewrote activities and description from the day camp pages (twice-daily swim, zip-lines, archery, lake boating and fishing, woodshop, cooking).",
+        "Added swimming and adventure to primary_categories."
+      ],
+      "open_questions": []
+    }
+  },
+  "email": "daycamps@stamfordjcc.org",
+  "religious_affiliation": "Jewish",
+  "price_min": 1425,
+  "price_max": 7445,
+  "price_per": "session",
+  "refund_policy_summary": "Full refund of tuition and deposit through January 31, and 50% through April 30, each minus a $50 processing fee. No refunds from May 1. A $100 security fee per camper is non-refundable.",
+  "sessions": [
+    {
+      "name": "Week 1",
+      "start_date": "2027-06-21",
+      "end_date": "2027-06-25",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 2",
+      "start_date": "2027-06-28",
+      "end_date": "2027-07-02",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 3",
+      "start_date": "2027-07-06",
+      "end_date": "2027-07-09",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 4",
+      "start_date": "2027-07-12",
+      "end_date": "2027-07-16",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 5",
+      "start_date": "2027-07-19",
+      "end_date": "2027-07-23",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 6",
+      "start_date": "2027-07-26",
+      "end_date": "2027-07-30",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 7",
+      "start_date": "2027-08-02",
+      "end_date": "2027-08-06",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 8",
+      "start_date": "2027-08-09",
+      "end_date": "2027-08-13",
+      "price": null,
+      "availability": "unknown"
+    }
+  ]
 }

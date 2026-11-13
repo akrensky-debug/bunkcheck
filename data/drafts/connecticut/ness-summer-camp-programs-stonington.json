@@ -2,32 +2,43 @@
   "slug": "ness-summer-camp-programs-stonington",
   "name": "NESS Summer Camp Programs",
   "operator_name": "New England Science & Sailing (NESS)",
-  "website_url": "https://nessf.org",
+  "website_url": "https://nessf.org/experiential-learning/youth-programs/summer/",
+  "registration_url": "https://campscui.active.com/orgs/NESS?season=3768746",
   "email": "adventure@nessf.org",
   "phone": "860.535.9362",
-  "street_address": "72 Water Street, PO Box 733",
+  "street_address": "72 Water Street",
   "city": "Stonington",
   "state": "CT",
   "zip": "06378",
+  "camp_type": "day",
   "primary_categories": [
-    "sports",
+    "sailing",
     "nature",
-    "STEM"
+    "STEM",
+    "sports"
   ],
-  "description_short": "Weekly summer programs in sailing, marine science, fishing and adventure sports (kayaking, paddleboarding, snorkeling) on Stonington Harbor and Long Island Sound, Connecticut. The page mentions morning and afternoon program groups.",
   "activities": [
     "Sailing",
-    "Kayaking",
-    "Paddleboarding",
-    "Fishing",
     "Marine science",
+    "Fishing",
+    "Surfing",
+    "Stand-up paddleboarding",
+    "Kayaking",
     "Snorkeling",
-    "Tidepooling",
-    "Junior lifeguard training",
-    "Mixed adventure sports"
+    "Powerboating",
+    "Windsurfing",
+    "Boater's education"
   ],
+  "age_min": 4,
+  "age_max": 17,
+  "description_short": "Weekly half-day summer programs for ages 4 to 17 at New England Science & Sailing on Stonington Harbor: sailing from first Optimist lessons to 420 and Laser racing, marine science, fishing, surfing and mixed adventure sports. Children can take a morning and an afternoon program with a supervised lunch in between.",
+  "price_min": 260,
+  "price_max": 385,
+  "price_per_week": null,
+  "price_per": "week",
+  "meals_included": false,
   "financial_aid": true,
-  "swim_waterfront_notes": "Programs take place on the water on Stonington Harbor and Long Island Sound (sailing, kayaking, paddleboarding, snorkeling). Swim requirements and safety rules are not stated.",
+  "swim_waterfront_notes": "Programs run on Stonington Harbor and Long Island Sound. Campers don't need to be skilled swimmers but must be comfortable on and around the water. Everyone wears a life jacket on the water; for some activities older campers can take a swim check with a certified lifeguard to go without one.",
   "season_year": 2026,
   "sessions": [
     {
@@ -110,30 +121,45 @@
   ],
   "sources": [
     {
-      "url": "https://nessf.org/ness-summer-camp-programs-2026/",
-      "checked": "2026-10-13",
+      "url": "https://nessf.org/experiential-learning/youth-programs/summer/",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
         "website_url",
+        "registration_url",
         "email",
         "phone",
         "street_address",
         "city",
         "state",
         "zip",
+        "camp_type",
         "primary_categories",
         "activities",
+        "age_min",
+        "age_max",
         "description_short",
+        "price_min",
+        "price_max",
+        "price_per",
         "financial_aid",
-        "swim_waterfront_notes",
+        "meals_included",
+        "swim_waterfront_notes"
+      ],
+      "note": "Summer Camp Programs page, 2026 season"
+    },
+    {
+      "url": "https://nessf.org/ness-summer-camp-programs-2026/",
+      "checked": "2026-11-13",
+      "fields": [
         "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Weekly dates from the camp's 2026 summer blog"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://nessf.org/ness-summer-camp-programs-2026/",
       "kind": "html",
@@ -172,6 +198,25 @@
     "errors": [
       "missing required camp_type",
       "camp_type must be one of ['day', 'sleepaway', 'specialty']"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://nessf.org/ness-summer-camp-programs-2026/",
+        "https://nessf.org/experiential-learning/youth-programs/summer/",
+        "https://nessf.org/wp-content/uploads/2026/05/su26-program-grids_051826.pdf (no text, couldn't read)"
+      ],
+      "changes": [
+        "Added the camp's Summer Camp Programs page as the main source; the blog recap now backs only the weekly dates.",
+        "website_url now points to the summer programs page; added the online registration link.",
+        "Set camp_type to day (half-day and full-day programs), which fixes the validator error.",
+        "Added ages 4 to 17 and the 2026 price range of $260 to $385 per half-day program per week.",
+        "Set meals_included false (NESS does not provide lunch) and kept financial_aid true (the page says scholarships are available).",
+        "Rewrote the swim note from the FAQ: life jackets on the water, optional swim check for older campers.",
+        "street_address is now 72 Water Street without the PO box; added sailing to the categories and surfing, powerboating, windsurfing and boater's education to activities.",
+        "The 2026 schedule PDF has no text, so no per-program dates or prices were taken from it."
+      ],
+      "open_questions": []
+    }
   }
 }

@@ -1,22 +1,33 @@
 {
   "slug": "incarnation-camp-ivoryton",
   "name": "Incarnation Camp",
-  "website_url": "https://incarnationcamp.org/dates-rates",
+  "website_url": "https://incarnationcamp.org/",
   "registration_url": "https://incarnationcamp.campbrainregistration.com/",
+  "email": "info@incarnationcamp.org",
+  "phone": "(860) 767-0848",
+  "street_address": "253 Bushy Hill Road",
   "city": "Ivoryton",
   "state": "CT",
   "zip": "06442",
   "camp_type": "sleepaway",
   "age_min": 7,
   "age_max": 15,
-  "description_short": "Nonprofit overnight camp in Ivoryton, CT for ages 7–15, with sessions of 2 to 6 weeks. Campers aged 14–15 join Pioneer Village, the teen leadership program.",
+  "description_short": "Nonprofit overnight camp for ages 7-15 on a 740-acre wooded property with a private, spring-fed lake in Ivoryton, CT. Campers live in platform tents and come for 2, 4 or 6 weeks. Campers 14-15 join Pioneer Village, the teen program, with cooking over a fire and 5-day hike, bike or canoe trips.",
   "activities": [
-    "Waterfront activities",
+    "Swim instruction",
+    "Canoeing",
+    "Sailing",
+    "Water trampoline and iceberg",
+    "Rope swing",
+    "Corcl boats",
+    "Water slide",
     "Land activities",
     "Evening programming",
     "Special events",
+    "Camp-outs",
     "Horseback riding (extra cost)",
-    "Teen leadership program (Pioneer Village)"
+    "Pioneer Village 5-day hike, bike and canoe trips (ages 14-15)",
+    "Open-fire cooking (Pioneer Village)"
   ],
   "price_min": 2999,
   "price_max": 7799,
@@ -81,28 +92,28 @@
       "availability": "unknown"
     },
     {
-      "name": "4-week Session 1 (Pioneer Village, age group inferred)",
+      "name": "Pioneer Village (ages 14-15) 4-week Session 1",
       "start_date": "2027-06-20",
       "end_date": "2027-07-17",
       "price": 5399,
       "availability": "unknown"
     },
     {
-      "name": "4-week Session 3 (Pioneer Village, age group inferred)",
+      "name": "Pioneer Village (ages 14-15) 4-week Session 3",
       "start_date": "2027-07-18",
       "end_date": "2027-08-14",
       "price": 5399,
       "availability": "unknown"
     },
     {
-      "name": "Pioneer Village 6 Weeker",
+      "name": "Pioneer Village (ages 14-15) 6 Weeker",
       "start_date": "2027-06-20",
       "end_date": "2027-07-31",
       "price": 7799,
       "availability": "unknown"
     },
     {
-      "name": "Pioneer Village Session 4",
+      "name": "Pioneer Village (ages 14-15) Session 4",
       "start_date": "2027-08-01",
       "end_date": "2027-08-14",
       "price": 3199,
@@ -112,30 +123,60 @@
   "sources": [
     {
       "url": "https://incarnationcamp.org/dates-rates",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
-        "website_url",
         "registration_url",
-        "city",
-        "state",
-        "zip",
         "camp_type",
-        "activities",
         "age_min",
         "age_max",
-        "description_short",
         "price_min",
         "price_max",
         "meals_included",
         "financial_aid",
         "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
+    },
+    {
+      "url": "https://incarnationcamp.org/contact-us",
+      "checked": "2026-11-13",
+      "fields": [
+        "website_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip"
+      ]
+    },
+    {
+      "url": "https://incarnationcamp.org/pv",
+      "checked": "2026-11-13",
+      "fields": [
+        "description_short"
+      ]
+    },
+    {
+      "url": "https://incarnationcamp.org/faq",
+      "checked": "2026-11-13",
+      "fields": [
+        "transportation",
+        "refund_policy_summary"
+      ]
+    },
+    {
+      "url": "https://incarnationcamp.org/waterfront",
+      "checked": "2026-11-13",
+      "fields": [
+        "primary_categories",
+        "activities",
+        "swim_waterfront_notes"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://incarnationcamp.org/dates-rates",
       "kind": "html",
@@ -179,6 +220,33 @@
         "quote": "Session 1 June 20 – July 17 Session 3 July 18 – Aug 14 ... $5399 Per 4-week session"
       }
     ],
-    "errors": []
-  }
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://incarnationcamp.org/dates-rates",
+        "https://incarnationcamp.org/contact-us",
+        "https://incarnationcamp.org/pv",
+        "https://incarnationcamp.org/faq",
+        "https://incarnationcamp.org/waterfront",
+        "https://incarnationcamp.org/map-property"
+      ],
+      "changes": [
+        "Confirmed all 12 sessions for 2027 and their prices ($2,999 ages 7-9, $3,199 ages 10-13, $5,399 four weeks, $7,799 six weeks) on the dates and rates page.",
+        "The 4-week sessions are Pioneer Village (ages 14-15): on the page they sit inside the 14-15 block, just before 'Register for ages 14-15', the same order as the other age blocks. Removed '(age group inferred)' from those names.",
+        "Added street address (253 Bushy Hill Road, Ivoryton), phone and email from the contact page; the ZIP 06442 matches it.",
+        "website_url now the homepage instead of the dates page.",
+        "Added transportation (round-trip bus from New York City each session) and the refund policy from the FAQ.",
+        "Added waterfront details, categories and a fuller activity list from the waterfront page; description now covers the lake, tents and Pioneer Village trips."
+      ],
+      "open_questions": []
+    }
+  },
+  "primary_categories": [
+    "general",
+    "outdoor"
+  ],
+  "transportation": true,
+  "refund_policy_summary": "No refund if a camper is sent home for behavior or withdrawn early. If a camper is too ill or contagious to stay, a pro-rated fee is negotiated, and a doctor's note may be required.",
+  "swim_waterfront_notes": "Swimming and boating on the camp's own 1.3-mile spring-fed lake, with no motorboats. Waterfront staff and counselors are American Red Cross lifeguard trained; swim classes for all abilities."
 }

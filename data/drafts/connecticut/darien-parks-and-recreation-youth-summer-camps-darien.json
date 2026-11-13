@@ -10,12 +10,12 @@
   "zip": "06820",
   "grade_min": 1,
   "grade_max": 9,
-  "description_short": "The Town of Darien runs four youth summer camps grouped by grade: Stony Brook Camp (Grade 1), Settlers Camp (Grades 2–3) and Mather Camp (Grades 4–6) at Tokeneke Elementary School, and Middle School Camp (Grades 7–9) at The Depot, Darien's youth center. Campers are placed by the grade they will enter in the fall.",
+  "description_short": "The Town of Darien runs four youth day camps grouped by the grade a child enters in the fall: Stony Brook Camp (Grade 1), Settlers Camp (Grades 2-3) and Mather Camp (Grades 4-6) at Tokeneke Elementary School, and Middle School Camp (Grades 7-9) at The Depot. Camp runs 8:30am-3:00pm, June 21 to July 30, 2027, booked by the week; Middle School Camp meets Monday to Thursday.",
   "season_year": 2027,
   "sources": [
     {
       "url": "https://www.darienct.gov/1649/Youth-Summer-Camps",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -24,23 +24,25 @@
         "phone",
         "city",
         "state",
+        "zip",
+        "camp_type",
         "grade_min",
         "grade_max",
         "description_short"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Grades are the grade entered in fall 2027. Phone and ZIP are Darien Town Hall's (2 Renshaw Road, Darien, CT 06820), shown on this page. Registration opens Feb 10, 2027 after a required prerequisite form."
     },
     {
-      "url": "https://www.census.gov/geographies/reference-files/time-series/geo/relationship-files.2020.html",
-      "checked": "2026-10-14",
+      "url": "https://www.darienct.gov/DocumentCenter/View/8639/Registration-Procedure-for-Summer-2027",
+      "checked": "2026-11-13",
       "fields": [
-        "zip"
+        "sessions"
       ],
-      "note": "Darien, CT sits inside one ZIP code (2020 Census ZCTA relationship file)"
+      "note": "Six weekly sessions June 21-July 30, 2027; no camp Monday July 5. Middle School Camp runs Monday-Thursday each week. 2027 fees not posted."
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.darienct.gov/1649/Youth-Summer-Camps",
       "kind": "html",
@@ -91,6 +93,67 @@
     "errors": [
       "missing required camp_type",
       "camp_type must be one of ['day', 'sleepaway', 'specialty']"
-    ]
-  }
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.darienct.gov/1649/Youth-Summer-Camps",
+        "https://www.darienct.gov/DocumentCenter/View/8639/Registration-Procedure-for-Summer-2027",
+        "https://www.darienct.gov/DocumentCenter/View/6161/Summer-Camp-Registration-Cancellation"
+      ],
+      "changes": [
+        "The town has now posted summer 2027: June 21 to July 30, 2027, 8:30am-3:00pm, six weeks booked weekly, registration February 10, 2027. Added the six 2027 weekly sessions (Week 3 starts Tuesday July 6 because there is no camp July 5).",
+        "Added camp_type day (missing, required).",
+        "Moved the zip source from the Census relationship file to the camp page itself, which shows Darien, CT 06820 for Town Hall.",
+        "Rewrote description_short to add hours, dates and the Monday-Thursday Middle School week.",
+        "Did not add a refund policy or prices: the cancellation policy PDF is dated for 2026 and 2027 fees are not posted."
+      ],
+      "open_questions": []
+    }
+  },
+  "camp_type": "day",
+  "sessions": [
+    {
+      "name": "Week 1",
+      "start_date": "2027-06-21",
+      "end_date": "2027-06-25",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 2",
+      "start_date": "2027-06-28",
+      "end_date": "2027-07-02",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 3 (no camp Monday, July 5)",
+      "start_date": "2027-07-06",
+      "end_date": "2027-07-09",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 4",
+      "start_date": "2027-07-12",
+      "end_date": "2027-07-16",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 5",
+      "start_date": "2027-07-19",
+      "end_date": "2027-07-23",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 6",
+      "start_date": "2027-07-26",
+      "end_date": "2027-07-30",
+      "price": null,
+      "availability": "unknown"
+    }
+  ]
 }

@@ -39,48 +39,48 @@
       "start_date": "2026-06-29",
       "end_date": "2026-07-02",
       "price": 368,
-      "availability": "full"
+      "availability": "unknown"
     },
     {
       "name": "Session 2: Planet Plant",
       "start_date": "2026-07-06",
       "end_date": "2026-07-10",
       "price": 460,
-      "availability": "full"
+      "availability": "unknown"
     },
     {
       "name": "Session 3: Adaptation Odyssey",
       "start_date": "2026-07-13",
       "end_date": "2026-07-17",
       "price": 460,
-      "availability": "full"
+      "availability": "unknown"
     },
     {
       "name": "Session 4: Lab Masters",
       "start_date": "2026-07-20",
       "end_date": "2026-07-24",
       "price": 460,
-      "availability": "full"
+      "availability": "unknown"
     },
     {
       "name": "Session 5: Mythical Menagerie",
       "start_date": "2026-07-27",
       "end_date": "2026-07-31",
       "price": 460,
-      "availability": "full"
+      "availability": "unknown"
     },
     {
       "name": "Session 6: Vet School 101",
       "start_date": "2026-08-03",
       "end_date": "2026-08-07",
       "price": 460,
-      "availability": "full"
+      "availability": "unknown"
     }
   ],
   "sources": [
     {
       "url": "https://www.stamfordmuseum.org/child-youth/camp-programs/explorers-full-day-camp/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -103,11 +103,11 @@
         "price_per",
         "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "2026 season. The page lists only member prices ($368 for the 4-day Session 1, $460 for Sessions 2-6). Camp meets at the Knobloch Family Farmhouse; the address is SM&NC Visitor Services on the same grounds."
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.stamfordmuseum.org/child-youth/camp-programs/explorers-full-day-camp/",
       "kind": "html",
@@ -156,6 +156,17 @@
         "quote": "Session 2 – 6 $460/Member Child"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.stamfordmuseum.org/child-youth/camp-programs/explorers-full-day-camp/"
+      ],
+      "changes": [
+        "Checked all six 2026 sessions, dates, grades 3-7, hours, 14-camper cap, contacts and member prices against the page; all match.",
+        "Set session availability from full to unknown: every session was full in 2026, a past season."
+      ],
+      "open_questions": []
+    }
   }
 }

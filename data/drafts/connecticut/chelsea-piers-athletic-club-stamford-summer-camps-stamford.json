@@ -5,14 +5,14 @@
   "website_url": "https://www.chelseapiers.com/athleticclub-stamford/summer-camps",
   "city": "Stamford",
   "state": "CT",
-  "zip": null,
+  "zip": "06902",
   "camp_type": "day",
   "primary_categories": [
     "sports"
   ],
   "age_min": 3,
   "age_max": 18,
-  "description_short": "Weekly sports day camps at Chelsea Piers' Athletic Club in Stamford, including a general multi-sport camp (Camp Chelsea) and single-sport camps such as hockey, gymnastics, tennis, basketball and ninja/parkour. Full-day camps for ages 5-13 run 8:45am-3:45pm, preschool camps for ages 3-5 run half or most of the day, and you can enroll for one week or the whole summer.",
+  "description_short": "Weekly sports day camps at Chelsea Piers' Athletic Club in Stamford: a general multi-sport camp (Camp Chelsea) and single-sport camps such as hockey, gymnastics, tennis, squash, soccer and ninja/parkour. Full-day camps for ages 5-13 run 8:45am-3:45pm with lunch included; preschool camps for ages 3-5 run 9am-12pm or 9am-2pm. You can enroll one week at a time.",
   "activities": [
     "soccer",
     "basketball",
@@ -35,11 +35,11 @@
   ],
   "extended_care": true,
   "swim_waterfront_notes": "Indoor pool. Preschool Gymnastics + Swimming and Preschool Tennis + Swimming camps (ages 3-5) spend the afternoon in a \"warm water pool\" working on basic swim technique and pool safety.",
-  "season_year": 2027,
+  "season_year": 2026,
   "sources": [
     {
       "url": "https://www.chelseapiers.com/athleticclub-stamford/summer-camps",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -53,13 +53,40 @@
         "age_max",
         "description_short",
         "extended_care",
-        "swim_waterfront_notes"
+        "swim_waterfront_notes",
+        "price_per_week",
+        "price_per"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Camp list page 1. Prices are per camp week as listed (members get a discount). Typical full-day camp $810.40. Aftercare $25/day or $125/week."
+    },
+    {
+      "url": "https://www.chelseapiers.com/athleticclub-stamford/summer-camps?page=2",
+      "checked": "2026-11-13",
+      "fields": [
+        "price_min"
+      ],
+      "note": "Camp list page 2: Squash Camp-Half Day $449.65, the lowest listed camp price."
+    },
+    {
+      "url": "https://www.chelseapiers.com/athleticclub-stamford/summer-camps?page=3",
+      "checked": "2026-11-13",
+      "fields": [
+        "price_max"
+      ],
+      "note": "Camp list page 3: Total Skills Hockey Camp-Full Day $849.40, the highest listed camp price."
+    },
+    {
+      "url": "https://www.chelseapiers.com/athleticclub-stamford",
+      "checked": "2026-11-13",
+      "fields": [
+        "street_address",
+        "zip"
+      ],
+      "note": "Athletic Club address: 1 Blachley Rd, Stamford, CT 06902"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.chelseapiers.com/athleticclub-stamford/summer-camps",
       "kind": "html",
@@ -120,6 +147,30 @@
     ],
     "errors": [
       "missing required zip"
-    ]
-  }
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.chelseapiers.com/athleticclub-stamford/summer-camps",
+        "https://www.chelseapiers.com/athleticclub-stamford/summer-camps?page=2",
+        "https://www.chelseapiers.com/athleticclub-stamford/summer-camps?page=3",
+        "https://www.chelseapiers.com/athleticclub-stamford/summer-camps/ice-hockey",
+        "https://www.chelseapiers.com/athleticclub-stamford"
+      ],
+      "changes": [
+        "The between-seasons notice is gone: the camp pages now list each camp with hours and a price, so added price_per_week $810.40 (typical full-day camp), price_min $449.65 and price_max $849.40, price_per week.",
+        "Changed season_year from 2027 to 2026: the only dates on the site are 2026 ('Summer camps start June 15', a Monday in 2026, and a partner hockey camp June 22-26 whose sign-up link is for 2026). No 2027 dates are posted.",
+        "Added street_address 1 Blachley Rd and zip 06902 from the Athletic Club overview page.",
+        "Rewrote description_short: added squash and soccer, lunch included for full-day camps, and the actual preschool hours (9-12 or 9-2).",
+        "No sessions added: the site says weekly enrollment but lists no week dates.",
+        "Left out the Max Ivanov IH Pro camp from ages and prices: it is a partner camp for players born 2000-2018."
+      ],
+      "open_questions": []
+    }
+  },
+  "street_address": "1 Blachley Rd",
+  "price_per_week": 810.4,
+  "price_min": 449.65,
+  "price_max": 849.4,
+  "price_per": "week"
 }

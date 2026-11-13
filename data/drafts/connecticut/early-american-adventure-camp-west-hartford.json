@@ -39,7 +39,7 @@
       "start_date": "2026-07-06",
       "end_date": "2026-07-10",
       "price": 325,
-      "availability": "full"
+      "availability": "unknown"
     },
     {
       "name": "Week Two: Early America Through The Seasons",
@@ -52,7 +52,8 @@
   "sources": [
     {
       "url": "https://noahwebsterhouse.org/summercamp/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
+      "note": "2026 season. Non-member rate $325/week; members $290/week. Extended hour to 5 pm is $50/week. Mon/Wed/Fri at the Noah Webster House, Tue/Thu at Westmoor Park, 119 Flagg Road. Registration link is the 2026 Week One form.",
       "fields": [
         "name",
         "operator_name",
@@ -76,12 +77,11 @@
         "price_per",
         "extended_care",
         "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://noahwebsterhouse.org/summercamp/",
       "kind": "html",
@@ -131,6 +131,17 @@
         "quote": "$325/per child per week for non-members"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://noahwebsterhouse.org/summercamp/"
+      ],
+      "changes": [
+        "Checked every field against the camp page: ages 8-12, both 2026 weeks and dates, $325/$290 pricing, extended hour, address, phone and email all match.",
+        "Set Week One availability from full to unknown: it was sold out in 2026, a past season."
+      ],
+      "open_questions": []
+    }
   }
 }
