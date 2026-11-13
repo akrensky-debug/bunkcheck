@@ -163,9 +163,21 @@ def _batch(args: argparse.Namespace) -> int:
 def _show(m: dict) -> None:
     print(f"{m['id']}  {str(m.get('received_at') or '')[:16]}  {m['status']:<12} from {m['from_email']}"
           + (f"  ({m['reason']})" if m.get("reason") else ""))
-    for c in (m.get("proposal") or {}).get("changes", []):
+    proposal = m.get("proposal") or {}
+    for c in proposal.get("changes", []):
         left = f" {c['spots_left']}" if c.get("spots_left") is not None else ""
         print(f"    {c['change']}{left} for session {c['session_id']}: \"{c['quote']}\"")
+    facts, quotes = proposal.get("season_facts") or {}, proposal.get("quotes") or {}
+    for s in facts.get("sessions") or []:
+        print(f"    {facts['season_year']} session: {s.get('name') or ''} {s['start_date']} to {s['end_date']}"
+              + (f", ${s['price']}" if s.get("price") is not None else ""))
+    if facts.get("price_per_week") is not None:
+        print(f"    {facts['season_year']} price per week: ${facts['price_per_week']}  \"{quotes.get('price', '')}\"")
+    if facts.get("registration_opens"):
+        print(f"    registration opens {facts['registration_opens']} {facts.get('registration_time') or ''}"
+              f"  \"{quotes.get('registration', '')}\"")
+    if proposal.get("ask"):
+        print(f"    will ask the owner to check {len(proposal['ask']['sessions'])} dates: {proposal['ask']['why']}")
 
 
 def _updates(args: argparse.Namespace) -> int:
