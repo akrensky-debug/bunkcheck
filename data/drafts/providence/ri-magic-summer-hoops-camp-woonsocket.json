@@ -71,7 +71,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.rhodeislandmagic.com/copy-of-summer-camp-2026",
       "kind": "html",
@@ -113,6 +113,30 @@
         "Cleared low-confidence items: season 2026 holds (June 29 and July 2 fall on Monday and Thursday in 2026); $275 is the cost of the 4-day camp."
       ],
       "open_questions": [
+        "The page is no longer linked from the club's home page and its URL starts with 'copy-of'; it is still live and is the only camp page.",
+        "No 2027 dates or registration date posted."
+      ]
+    },
+    "earlier_pass": {
+      "status": "ready",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.rhodeislandmagic.com/copy-of-summer-camp-2026",
+      "changes": [],
+      "for_andrew": [
+        "Page gives 'Monday, June 29th - Thursday, July 2nd' with no year; these weekdays fit 2026 (URL also says 2026). No 2027 dates posted."
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.rhodeislandmagic.com/copy-of-summer-camp-2026",
+      "changes": [
+        "Every filled field matches the page as of 2026-11-12.",
+        "Added gender_policy coed ('Boys and Girls').",
+        "Cleared low-confidence items: season 2026 holds (June 29 and July 2 fall on Monday and Thursday in 2026); $275 is the cost of the 4-day camp."
+      ],
+      "for_andrew": [
         "The page is no longer linked from the club's home page and its URL starts with 'copy-of'; it is still live and is the only camp page.",
         "No 2027 dates or registration date posted."
       ]

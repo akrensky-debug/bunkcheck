@@ -153,7 +153,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.teamworkswarwick.com/summercamphome.aspx",
       "kind": "html",
@@ -203,6 +203,33 @@
         "Checked the rest against the camp page: ages 4-14 TW Camp and 4-15 specialty camps, 9am-3:30pm with extended day to 5pm, address and phone."
       ],
       "open_questions": [
+        "No weekly prices on the camp page, registration page or brochure; only a '$50 deposit per week' and a $15 annual Teamworks membership.",
+        "The registration page shows no programs now (season over). No 2027 dates or registration opening date.",
+        "The page footer cites Massachusetts Department of Public Health rules though this site is in Rhode Island (shared Teamworks template)."
+      ]
+    },
+    "earlier_pass": {
+      "status": "ready",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.teamworkswarwick.com/summercamphome.aspx",
+      "changes": [
+        "No changes: every filled field and the season-long session (June 15 to September 4, 2026) match the page."
+      ],
+      "for_andrew": [
+        "No prices on the page (only a $50/week deposit and a required Teamworks Membership); 2027 dates not posted yet."
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.teamworkswarwick.com/summercamphome.aspx",
+      "changes": [
+        "Replaced the one season-long session with the twelve 2026 TW Camp weeks from the 2026 camp brochure (June 15 - September 4; Week 3 June 29 - July 2 is a 4-day week).",
+        "Added email info@teamworkswarwick.com and meals_included false ('Snack & lunch options are also available for purchase') from the brochure.",
+        "Checked the rest against the camp page: ages 4-14 TW Camp and 4-15 specialty camps, 9am-3:30pm with extended day to 5pm, address and phone."
+      ],
+      "for_andrew": [
         "No weekly prices on the camp page, registration page or brochure; only a '$50 deposit per week' and a $15 annual Teamworks membership.",
         "The registration page shows no programs now (season over). No 2027 dates or registration opening date.",
         "The page footer cites Massachusetts Department of Public Health rules though this site is in Rhode Island (shared Teamworks template)."

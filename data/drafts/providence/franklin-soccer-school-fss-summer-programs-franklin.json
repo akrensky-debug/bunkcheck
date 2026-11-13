@@ -53,7 +53,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.franklinsoccerschool.com/programs/summerprograms",
       "kind": "html",
@@ -100,6 +100,32 @@
         "Set season_year 2026 as a placeholder: the page is undated ('again this year', copyright 2001 - 2026); no sessions or prices added."
       ],
       "open_questions": [
+        "Ages conflict: the FSS home page says summer camps are 'Ages 5-14'; Downtown Sports' soccer page says 'In July and August, FSS offers several 4-day summer training ages 4-13'. age_min/age_max left null.",
+        "No summer dates or prices anywhere: the registration system lists only Nov 2026 to Mar 2027 Smart Soccer and Creating Skills courses. Andrew should decide whether to publish an undated listing.",
+        "No 2027 registration date posted."
+      ]
+    },
+    "earlier_pass": {
+      "status": "needs_andrew",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.franklinsoccerschool.com/programs/summerprograms",
+      "changes": [],
+      "for_andrew": [
+        "Page gives no year, dates, prices or ages (\"again this year\", copyright 2001-2026); cannot tell whether it is current, so season_year is unset. Ask FSS for the 2027 schedule",
+        "Venue Downtown Sports, Franklin has no street address on the page; zip comes from the one-ZIP town rule"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.franklinsoccerschool.com/programs/summerprograms",
+      "changes": [
+        "Replaced the Census ZCTA zip source with the facility's own address: Downtown Sports, 240 Cottage Street, Franklin, MA 02038.",
+        "Added registration URL (Downtown Sports Event Registration, where FSS courses are sold), indoor setting, and mention of Club/Advanced sessions and ball and t-shirt in the description.",
+        "Set season_year 2026 as a placeholder: the page is undated ('again this year', copyright 2001 - 2026); no sessions or prices added."
+      ],
+      "for_andrew": [
         "Ages conflict: the FSS home page says summer camps are 'Ages 5-14'; Downtown Sports' soccer page says 'In July and August, FSS offers several 4-day summer training ages 4-13'. age_min/age_max left null.",
         "No summer dates or prices anywhere: the registration system lists only Nov 2026 to Mar 2027 Smart Soccer and Creating Skills courses. Andrew should decide whether to publish an undated listing.",
         "No 2027 registration date posted."

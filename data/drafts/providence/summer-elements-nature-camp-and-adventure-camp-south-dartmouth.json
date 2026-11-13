@@ -165,7 +165,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.elementslearning.org/summer",
       "kind": "html",
@@ -204,6 +204,32 @@
         "Re-checked all 12 sessions, sliding-scale prices, scholarships, deposit/refund terms and description against the page: they match (resolves low-confidence items). Added indoor_outdoor 'outdoor'."
       ],
       "open_questions": [
+        "Only Summer 2026 is posted; 'Keep an eye out for Summer 2027 information in early January.'",
+        "Each session is 3 days (Tue-Thu); session price uses the Tier 2 (full cost) $250 rate."
+      ]
+    },
+    "earlier_pass": {
+      "status": "ready",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.elementslearning.org/summer",
+      "changes": [
+        "Filled street_address 92 Allen’s Neck Rd. and zip 02748 from the \"Where to Find Us\" address on elementslearning.org/contact (replaces the place name \"Round The Bend Farm\")"
+      ],
+      "for_andrew": [
+        "Page says Summer 2027 information comes in early January; refresh then",
+        "Session prices use the Tier 2 rate ($250); sliding scale is $215-$270"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.elementslearning.org/summer",
+      "changes": [
+        "Added street address 92 Allen's Neck Rd. and ZIP 02748 from the Contact page ('Where to Find Us'); validator now passes.",
+        "Re-checked all 12 sessions, sliding-scale prices, scholarships, deposit/refund terms and description against the page: they match (resolves low-confidence items). Added indoor_outdoor 'outdoor'."
+      ],
+      "for_andrew": [
         "Only Summer 2026 is posted; 'Keep an eye out for Summer 2027 information in early January.'",
         "Each session is 3 days (Tue-Thu); session price uses the Tier 2 (full cost) $250 rate."
       ]

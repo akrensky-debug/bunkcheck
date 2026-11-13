@@ -82,7 +82,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.artpopclub.com/summerartcamp",
       "kind": "html",
@@ -146,6 +146,37 @@
         "Description rewritten from the camp and product pages"
       ],
       "open_questions": [
+        "No 2026 or 2027 week dates on the pages (the date picker is a dropdown we cannot read); no sessions recorded",
+        "Open Create add-on: camp page says 'till 3:00pm', product pages say 'until 1pm or 2pm'",
+        "Product pages say 'children 6 years old and up (No exceptions)' with no upper limit; camp page says 'Best for Ages 6-11'. Kept 6-11"
+      ]
+    },
+    "earlier_pass": {
+      "status": "needs_andrew",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.artpopclub.com/summerartcamp",
+      "changes": [
+        "Rewrote description_short without the add-on end time: main page says till 3:00pm, product page says until 1pm or 2pm",
+        "Added price_per_week/price_min/price_max 200 and price_per week from the 2026 Whole Week product page"
+      ],
+      "for_andrew": [
+        "ZIP missing: US Census geocoder has no match for 1115 GAR Highway, Somerset, MA; needs a person to confirm the ZIP",
+        "Open Create add-on end time conflicts (3:00pm on camp page vs 1pm or 2pm on product page)",
+        "Ages: camp page says 6-11, product page says 6 and up (no upper limit)"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.artpopclub.com/summerartcamp",
+      "changes": [
+        "Added ZIP 02726 and email hello@artpopclub.com from the contact page (fixes missing required zip)",
+        "Added prices: $200 for a whole week, $45 per single day (Adventure Makers Expedition); price_per week",
+        "Added meals_included false (bring snack and lunch), indoor, registration URL (whole-week product page)",
+        "Description rewritten from the camp and product pages"
+      ],
+      "for_andrew": [
         "No 2026 or 2027 week dates on the pages (the date picker is a dropdown we cannot read); no sessions recorded",
         "Open Create add-on: camp page says 'till 3:00pm', product pages say 'until 1pm or 2pm'",
         "Product pages say 'children 6 years old and up (No exceptions)' with no upper limit; camp page says 'Best for Ages 6-11'. Kept 6-11"

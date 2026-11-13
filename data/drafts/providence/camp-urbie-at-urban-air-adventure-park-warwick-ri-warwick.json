@@ -42,7 +42,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "drop",
     "source": {
       "url": "https://www.urbanair.com/rhode-island-warwick/camps/",
       "kind": "html",
@@ -87,6 +87,32 @@
         "No changes to the record: the page now lists only single school-break days (Nov 25, Nov 27, Dec 23, Dec 24, 2026) at $75 per day, no summer camp."
       ],
       "open_questions": [
+        "Not a summer camp as posted: Camp Urbie is sold as single-day tickets on school breaks/days off ('Time at home during a school break...'). No summer dates, season or ages on the page.",
+        "Page conflicts with itself: tickets are labelled 'Full Day' but say 'Program runs M-F 9A-12P' and 'A whole week'."
+      ]
+    },
+    "earlier_pass": {
+      "status": "needs_andrew",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.urbanair.com/rhode-island-warwick/camps/",
+      "changes": [
+        "Removed registration_url: it only jumps to a section of the same page that says 'Coming Soon! No camps available at the moment.'",
+        "Checked description, activities and no-refund policy against the page"
+      ],
+      "for_andrew": [
+        "No camps are posted ('Coming Soon! No camps available at the moment'), so no dates, prices or season year; decide whether to list it now or wait for dates",
+        "Address and phone are not on the camps page as read (they come from the drafted source); confirm 300 Quaker Ln, Warwick 02886 and 401-227-0103 from the park page"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.urbanair.com/rhode-island-warwick/camps/",
+      "changes": [
+        "No changes to the record: the page now lists only single school-break days (Nov 25, Nov 27, Dec 23, Dec 24, 2026) at $75 per day, no summer camp."
+      ],
+      "for_andrew": [
         "Not a summer camp as posted: Camp Urbie is sold as single-day tickets on school breaks/days off ('Time at home during a school break...'). No summer dates, season or ages on the page.",
         "Page conflicts with itself: tickets are labelled 'Full Day' but say 'Program runs M-F 9A-12P' and 'A whole week'."
       ]

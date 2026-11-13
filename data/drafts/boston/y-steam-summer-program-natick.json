@@ -79,7 +79,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.metrowestymca.org/camp/y-steam-camp",
       "kind": "html",
@@ -150,6 +150,24 @@
         "Refund policy summary matches the cancellation policy FAQ"
       ],
       "open_questions": [
+        "2027 dates, themes and prices not posted; unclear if listed prices hold for 2027",
+        "AM/PM care member price shows '75' without a $ sign",
+        "Members get priority registration; no 2027 registration date posted"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.metrowestymca.org/camp/y-steam-camp",
+      "changes": [
+        "season_year changed from 2027 to 2026: page says '2027 Dates Coming Soon! (9 weeks)' with no 2027 sessions; weekly prices carry no year and sit next to a '2026 Y STEAM Summer Program' sticker",
+        "Confirmed name, East School address (90 Oak Street, Natick 01760), phone, director email, grades 1-6, 9:00 AM-4:00 PM hours, prices $415/$482/$519 and the sample-day activities",
+        "camp_type specialty kept: page calls it 'a boutique specialty program' (resolves low-confidence item)",
+        "extended_care true: AM care 7-9 AM and PM care 4:15-6 PM listed as add-ons on this camp's own page ($75 member / $94 community)",
+        "meals_included false confirmed: lunch is an add-on at $30/week",
+        "Refund policy summary matches the cancellation policy FAQ"
+      ],
+      "for_andrew": [
         "2027 dates, themes and prices not posted; unclear if listed prices hold for 2027",
         "AM/PM care member price shows '75' without a $ sign",
         "Members get priority registration; no 2027 registration date posted"

@@ -69,7 +69,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.franklincountrydaycamp.com/",
       "kind": "html",
@@ -130,6 +130,33 @@
         "Updated description_short to add the pools, ages and 9-4 hours."
       ],
       "open_questions": [
+        "2027 prices not posted yet (2026 was $1,250 per camper per two-week session).",
+        "No registration URL beyond the Regpack account login.",
+        "Extended care, transportation, financial aid not mentioned."
+      ]
+    },
+    "earlier_pass": {
+      "status": "ready",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.franklincountrydaycamp.com/",
+      "changes": [],
+      "for_andrew": [
+        "No ages, dates or prices on the homepage; they are in the linked 2026 brochure PDF (not read). season_year 2027 follows \"See you in 2027!\" with no 2027 details yet"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.franklincountrydaycamp.com/",
+      "changes": [
+        "Added the three 2027 two-week sessions (Jul 5-16, Jul 19-30, Aug 2-13, 2027) from the About page; season_year stays 2027. No 2027 price is posted (2026 brochure: $1,250 per session), so prices stay blank.",
+        "Added ages 4-12 and grade_max 6 from the About page table (Jr. Camp I 4-5, Jr. Camp II 5-6, Regular Camp 6-12, grades 1-6).",
+        "Set meals_included=false: \"Children bring their own lunch.\"",
+        "Rewrote swim_waterfront_notes: two inground pools for the Red Cross swim program (the old note said the site did not say where swimming happens).",
+        "Updated description_short to add the pools, ages and 9-4 hours."
+      ],
+      "for_andrew": [
         "2027 prices not posted yet (2026 was $1,250 per camper per two-week session).",
         "No registration URL beyond the Regpack account login.",
         "Extended care, transportation, financial aid not mentioned."

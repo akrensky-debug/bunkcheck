@@ -150,7 +150,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.pingree.org/pingree-day-camp",
       "kind": "html",
@@ -222,6 +222,24 @@
         "Other fields checked and match: ages 4+ through grade 8, 9:00-3:30 day, extended care 7:30-8:30 and 4:00-5:30, lunch and snack provided, pool and kayaking pond"
       ],
       "open_questions": [
+        "Tuition table still carries 2026 notes ('No camp on July 3', 'No camp on July 4') next to the 2027 dates; confirm the prices are 2027 rates",
+        "Week 1 and Week 2 dates on the page are 2026 dates; the 2027 Week 1-2 dates need confirming",
+        "Cancellation policy on the page is still the summer 2026 policy",
+        "Adventurers (grade 8, $750/week, $1,350/session, weeks 3-8) and CIT ($475/week) prices are not stored as separate sessions"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.pingree.org/pingree-day-camp",
+      "changes": [
+        "Moved to the 2027 season: the page now groups campers by the grade they enter in fall 2027 and lists 2027 session dates (Session 1 June 21-July 1, Session 2 July 5-16, Session 3 July 19-30, Session 4 Aug 2-13; Weeks 3-8 Mon-Fri July 5 to Aug 13)",
+        "Weeks 1 and 2 left out: the page gives 'June 22-26' and 'June 29-July 1', which are 2026 weekdays and conflict with Session 1 starting Monday June 21, 2027",
+        "Session and week prices kept at the posted Little Wonders & Rainbows rates ($1,075 / $1,200 per session, $675 per week); price_min 400 (CIT week 2) and price_max 1,350 (Adventurers session) unchanged",
+        "Added registration_url (CampBrain portal linked from 'Register Today')",
+        "Other fields checked and match: ages 4+ through grade 8, 9:00-3:30 day, extended care 7:30-8:30 and 4:00-5:30, lunch and snack provided, pool and kayaking pond"
+      ],
+      "for_andrew": [
         "Tuition table still carries 2026 notes ('No camp on July 3', 'No camp on July 4') next to the 2027 dates; confirm the prices are 2027 rates",
         "Week 1 and Week 2 dates on the page are 2026 dates; the 2027 Week 1-2 dates need confirming",
         "Cancellation policy on the page is still the summer 2026 policy",

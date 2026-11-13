@@ -55,7 +55,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://tastebudskitchen.com/east-greenwich/kids-cooking-camps/",
       "kind": "html",
@@ -95,6 +95,32 @@
         "season_year 2027 kept: the page is for the 2027 season, but its week dates and prices are only in the booking calendar, not the page text, so no sessions or prices are listed."
       ],
       "open_questions": [
+        "2027 week dates and prices not in the page text (booking calendar opens with registration Jan 13, 2027).",
+        "Advanced Teen Camp (13-17) is 'available at select locations'; unclear if East Greenwich offers it, so age_max 17 may be high.",
+        "No primary category fits cooking; none set."
+      ]
+    },
+    "earlier_pass": {
+      "status": "ready",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://tastebudskitchen.com/east-greenwich/kids-cooking-camps/",
+      "changes": [],
+      "for_andrew": [
+        "2027 registration opens January 13, 2027; dates and prices are only in the booking calendar, so there are no sessions or prices yet",
+        "Advanced Teen Camp (13-17) is \"available at select locations\"; age_max 17 may not apply to East Greenwich"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://tastebudskitchen.com/east-greenwich/kids-cooking-camps/",
+      "changes": [
+        "All filled fields re-checked and match the page (ages, hours, extended care, refund/reschedule rules, allergy notes, address, phone).",
+        "Added indoor_outdoor 'indoor' ('fun indoor activities cooking camp'). meals_included false kept: the FAQ says breakfast and lunch are recommended before/after camp (resolves low-confidence item).",
+        "season_year 2027 kept: the page is for the 2027 season, but its week dates and prices are only in the booking calendar, not the page text, so no sessions or prices are listed."
+      ],
+      "for_andrew": [
         "2027 week dates and prices not in the page text (booking calendar opens with registration Jan 13, 2027).",
         "Advanced Teen Camp (13-17) is 'available at select locations'; unclear if East Greenwich offers it, so age_max 17 may be high.",
         "No primary category fits cooking; none set."

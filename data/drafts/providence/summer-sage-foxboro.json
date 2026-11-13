@@ -44,7 +44,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://sageschool.org/program/summer-sage/",
       "kind": "html",
@@ -115,6 +115,34 @@
         "Added one 2027 session for the overall season dates the page gives (June 21 - August 13, 2027); weekly themes and prices are not posted."
       ],
       "open_questions": [
+        "Weekly 2027 themes, prices and age groups are 'coming soon'; ages 3-4 through Grade 5 come from the 2026 groups.",
+        "Registration is through Homeroom; no 2027 opening date is given."
+      ]
+    },
+    "earlier_pass": {
+      "status": "ready",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://sageschool.org/program/summer-sage/",
+      "changes": [
+        "Removed primary_categories \"arts\": a guess from 2026 theme names (themes range from spy school to games), not stated on the page",
+        "Added the 2027 season session June 21 - August 13, 2027 stated on the page"
+      ],
+      "for_andrew": [
+        "Age groups (3-4 through Grade 5) are from the 2026 section; page says more 2027 info is coming soon",
+        "No prices or daily hours on the page"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://sageschool.org/program/summer-sage/",
+      "changes": [
+        "email ksollie@sageschool.org -> cgorea@sageschool.org (the page now says to contact Constantin Gorea).",
+        "primary_categories ['arts'] -> ['general']: the 2026 weekly themes are mixed (stage and studio, real-world skills, secret agent, games, fantasy), and the page does not call it an arts camp.",
+        "Added one 2027 session for the overall season dates the page gives (June 21 - August 13, 2027); weekly themes and prices are not posted."
+      ],
+      "for_andrew": [
         "Weekly 2027 themes, prices and age groups are 'coming soon'; ages 3-4 through Grade 5 come from the 2026 groups.",
         "Registration is through Homeroom; no 2027 opening date is given."
       ]

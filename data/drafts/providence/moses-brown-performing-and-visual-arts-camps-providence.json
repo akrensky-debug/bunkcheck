@@ -175,7 +175,7 @@
   ],
   "meals_included": false,
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.camps.mosesbrown.org/arts",
       "kind": "html",
@@ -292,6 +292,34 @@
         "Confirmed every session, price and age/grade range on the arts page; season 2026 confirmed by the home page ('Thank you for a great summer!')."
       ],
       "open_questions": [
+        "Cancellation and Fees page is empty; refund policy left blank.",
+        "Art Odyssey June 15 prorated price not stated."
+      ]
+    },
+    "earlier_pass": {
+      "status": "ready",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.camps.mosesbrown.org/arts",
+      "changes": [
+        "Removed the Moses Brown Summer String Orchestras session (Tuesday evenings 5:30-7:30, June 23 - Aug 11, $250): it is a weekly evening ensemble, not a camp week.",
+        "price_min changed from 250 (the MBSSO fee) to 380 (Project FashionWorks ages 8-12, the lowest full-week camp price).",
+        "season_year 2026 kept: the page shows no year, but 'no camp June 19' (Juneteenth, a Friday) and 'no camp July 3' match the 2026 calendar."
+      ],
+      "for_andrew": []
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.camps.mosesbrown.org/arts",
+      "changes": [
+        "financial_aid: true -> false. The aid page says 'Financial Aid is only available for RISE Camp' and discounts are RISE-only; these are arts camps.",
+        "extended_care: kept true, now sourced to the Early Arrival and Extended Day page ('early arrival (7:30 a.m.) and Extended Day (until 5:30 p.m.) during all camp weeks', $50/$100 weekly).",
+        "meals_included: added false. Lunch page: lunch is included only for RISE; other full-day campers bring lunch or buy a $40/week lunch option.",
+        "Contact, address and operator re-sourced to the camps home page footer, which states them.",
+        "Confirmed every session, price and age/grade range on the arts page; season 2026 confirmed by the home page ('Thank you for a great summer!')."
+      ],
+      "for_andrew": [
         "Cancellation and Fees page is empty; refund policy left blank.",
         "Art Odyssey June 15 prorated price not stated."
       ]

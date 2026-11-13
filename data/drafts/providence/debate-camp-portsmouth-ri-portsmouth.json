@@ -107,7 +107,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.debatecamp.com/portsmouth",
       "kind": "html",
@@ -162,6 +162,35 @@
         "Description now gives day-camp hours (8:30am-3:30pm)."
       ],
       "open_questions": [
+        "Overnight price conflict on the camp's own site: the Portsmouth page says '$1990.00 REGULAR RATE' for 2027, the Rhode Island overnight page says '$1930.00 USD - REGULAR RATE' (the 2026 figure); both say $1925 early bird. Draft uses $1990. Andrew to confirm.",
+        "The Portsmouth page says '40 participant limit / week'; the overnight page says '30 participant limit / week'.",
+        "Day-camp transport for Portsmouth is not listed on the day transport page.",
+        "Day camp lunch is an extra option; meals_included left blank because day and overnight differ."
+      ]
+    },
+    "earlier_pass": {
+      "status": "needs_andrew",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.debatecamp.com/portsmouth",
+      "changes": [],
+      "for_andrew": [
+        "refused: ask the owner for the brochure (site returned 429 with a bot-check page; no fields could be verified, zip still missing)"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.debatecamp.com/portsmouth",
+      "changes": [
+        "Updated to the 2027 season: Day Camp August 2-6, 2027 at $645 (regular rate); Overnight Camp August 1-7, 2027 at $1990 (regular rate, Portsmouth page). Early bird rates to Jan 31 are $630 and $1925.",
+        "price_min/price_per_week 635 -> 645, price_max 1930 -> 1990; season_year 2026 -> 2027.",
+        "Added ZIP 02871 from the US Census geocoder for 285 Cory's Lane, Portsmouth.",
+        "Added refund policy from the camp's refund policy PDF.",
+        "Transportation now sourced to the overnight transport page (escorted Amtrak trips from New York, Stamford and Boston to Providence, $80-$210 round trip). The day-camp transport page no longer lists a Providence bus for Portsmouth.",
+        "Description now gives day-camp hours (8:30am-3:30pm)."
+      ],
+      "for_andrew": [
         "Overnight price conflict on the camp's own site: the Portsmouth page says '$1990.00 REGULAR RATE' for 2027, the Rhode Island overnight page says '$1930.00 USD - REGULAR RATE' (the 2026 figure); both say $1925 early bird. Draft uses $1990. Andrew to confirm.",
         "The Portsmouth page says '40 participant limit / week'; the overnight page says '30 participant limit / week'.",
         "Day-camp transport for Portsmouth is not listed on the day transport page.",

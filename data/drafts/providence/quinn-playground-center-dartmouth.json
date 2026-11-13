@@ -110,7 +110,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.dartmouthma.gov/m/newsflash/Home/Detail/693",
       "kind": "html",
@@ -167,6 +167,36 @@
         "Checked the rest against the March 25, 2026 release: ages 6-12, 8:30am-4:15pm, June 29 - August 21, 2026, $125/week, 55 children per week, before/after care 8:00-8:30am and 4:15-5:30pm, phone 508-910-1812."
       ],
       "open_questions": [
+        "ZIP (required) is missing: no page says where Quinn Playground Center meets (the release, the town contact block and the ActivityReg portal give only Town Hall / the Parks office at 400 Slocum Rd), and Dartmouth has more than one ZIP.",
+        "Weekly sessions are split from the range 'June 29-August 21, 2026'; the release does not list weeks or say whether Friday July 3 is a holiday.",
+        "Before and after care 'is $40 per child' without saying per week, day or summer.",
+        "No 2027 information yet."
+      ]
+    },
+    "earlier_pass": {
+      "status": "needs_andrew",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.dartmouthma.gov/m/newsflash/Home/Detail/693",
+      "changes": [
+        "primary_categories [arts] -> [general], with arts/outdoor as secondary: it is an open-play playground program."
+      ],
+      "for_andrew": [
+        "ZIP still missing: the news release gives no address for the Quinn Playground Center (only Town Hall, 400 Slocum Rd). Need the program's street address/ZIP (Dartmouth has more than one ZIP).",
+        "Sessions are 8 weeks split from the range 'June 29-August 21, 2026'; the page does not list weeks or holiday closures.",
+        "Before/after care is '$40 per child' with no unit (week/day/summer).",
+        "Dartmouth, MA is about 30 miles from Providence; at the edge of the area."
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.dartmouthma.gov/m/newsflash/Home/Detail/693",
+      "changes": [
+        "primary_categories arts -> general: the release describes open play, arts and crafts, group games, outdoor recreation and supervised free play, a general playground program.",
+        "Checked the rest against the March 25, 2026 release: ages 6-12, 8:30am-4:15pm, June 29 - August 21, 2026, $125/week, 55 children per week, before/after care 8:00-8:30am and 4:15-5:30pm, phone 508-910-1812."
+      ],
+      "for_andrew": [
         "ZIP (required) is missing: no page says where Quinn Playground Center meets (the release, the town contact block and the ActivityReg portal give only Town Hall / the Parks office at 400 Slocum Rd), and Dartmouth has more than one ZIP.",
         "Weekly sessions are split from the range 'June 29-August 21, 2026'; the release does not list weeks or say whether Friday July 3 is a holiday.",
         "Before and after care 'is $40 per child' without saying per week, day or summer.",

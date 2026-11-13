@@ -112,7 +112,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://bauercrest.org/about/dates-rates/",
       "kind": "html",
@@ -161,6 +161,24 @@
         "Activities kept: they are the site's own program pages (Athletics, Water Sports, Creative Arts & Digital Media)"
       ],
       "open_questions": [
+        "The page's final tuition deadline reads 'May 20, 2007' (typo for 2027?)",
+        "The Training Camp banner says 'Boys 1st-5th Grade' while the dates table says 'up to 6th grade'",
+        "Footer shows an ACA logo but it links to aijcamps.org, so aca_accredited is left empty"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://bauercrest.org/about/dates-rates/",
+      "changes": [
+        "Re-checked 2027 dates and prices against the page (updated 2026-11-06): all sessions, prices and Training Camp dates match",
+        "Refund/payment summary corrected: the plan is 'half in January and half in May' (draft said 'half now and half in January'); added the May 1 full-payment rule; dropped the year from the May 20 deadline because the page prints 'May 20, 2007'",
+        "Added age_min 7, age_max 17 and gender_policy boys from the homepage ('Overnight summer camp for boys 7-17')",
+        "Description now names the 7-17 age range from the homepage",
+        "registration_url changed to the page's 'Enroll for Summer 2027' link (CampInTouch); the draft's /ui/forms/application/camper/App link is not on the page",
+        "Activities kept: they are the site's own program pages (Athletics, Water Sports, Creative Arts & Digital Media)"
+      ],
+      "for_andrew": [
         "The page's final tuition deadline reads 'May 20, 2007' (typo for 2027?)",
         "The Training Camp banner says 'Boys 1st-5th Grade' while the dates table says 'up to 6th grade'",
         "Footer shows an ACA logo but it links to aijcamps.org, so aca_accredited is left empty"

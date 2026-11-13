@@ -154,7 +154,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.csw.org/community/summer-and-enrichment",
       "kind": "html",
@@ -218,6 +218,24 @@
         "Phone 781-642-8605 confirmed as the camp's number on cswsummer.org (resolves low-confidence phone); errors resolved (season_year set)"
       ],
       "open_questions": [
+        "Which sessions the Specialty Camps (grades 5-8, $1,700) run in is not on the Dates & Rates page; only Traditional Camp sessions are listed",
+        "Early-bird prices ($100 off before December 31) are not stored as session prices"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.csw.org/community/summer-and-enrichment",
+      "changes": [
+        "website_url: csw.org overview page -> the camp's own site https://cswsummer.org/ (resolves the low-confidence website item)",
+        "Moved to the 2027 season (season_year 2027): four two-week sessions June 21 to Aug 13, 2027, Mon-Fri 9-4; Traditional Camp $1,520 (PreK-1) / $1,500 (grades 2-8) per session; Specialty Camp (grades 5-8) $1,700; price_min 1500, price_max 1700 per session",
+        "Added registration_url (Homeroom portal), email summercamp@csw.org",
+        "Added extended_care true (AM 7:30-9 $175/session, PM 4-5:30 $225/session), meals_included true (CulinArt prepares lunch and snacks for all campers)",
+        "Added refund policy ($250 non-refundable deposit per session; refunds less deposit until May 1, 2027)",
+        "Added swim notes (pool, twice-daily swim, lifeguards, deep-end test); description updated to mention two-week sessions, hours and meals",
+        "Phone 781-642-8605 confirmed as the camp's number on cswsummer.org (resolves low-confidence phone); errors resolved (season_year set)"
+      ],
+      "for_andrew": [
         "Which sessions the Specialty Camps (grades 5-8, $1,700) run in is not on the Dates & Rates page; only Traditional Camp sessions are listed",
         "Early-bird prices ($100 off before December 31) are not stored as session prices"
       ]

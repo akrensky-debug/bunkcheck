@@ -135,7 +135,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "drop",
     "source": {
       "url": "https://www.campjabberwocky.org/camp/summer",
       "kind": "html",
@@ -175,6 +175,21 @@
         "Confirmed city (camp is 'about a mile from downtown Vineyard Haven'; contact page physical address is Vineyard Haven) and meals (main cabin 'where we eat meals together'); 2026 dates match the page"
       ],
       "open_questions": [
+        "Camp is on Martha's Vineyard (ferry from Woods Hole), well over an hour from Boston: out of area.",
+        "Serves children and adults with no age limits; pre-application only, limited openings for new campers.",
+        "No 2027 dates or application timing posted."
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.campjabberwocky.org/camp/summer",
+      "changes": [
+        "Added physical address 200 Greenwood Ave. Ext., ZIP 02568, phone 508-693-2339 and email info@campjabberwocky.org from the Contact page (clears missing zip)",
+        "registration_url set to the Summer Camp pre-application form linked from 'Apply now'",
+        "Confirmed city (camp is 'about a mile from downtown Vineyard Haven'; contact page physical address is Vineyard Haven) and meals (main cabin 'where we eat meals together'); 2026 dates match the page"
+      ],
+      "for_andrew": [
         "Camp is on Martha's Vineyard (ferry from Woods Hole), well over an hour from Boston: out of area.",
         "Serves children and adults with no age limits; pre-application only, limited openings for new campers.",
         "No 2027 dates or application timing posted."

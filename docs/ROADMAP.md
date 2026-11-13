@@ -122,8 +122,9 @@ social profile assets.
 
 Decisions Andrew makes:
 
-1. Who pays the fee: camps, parents, or both, and the percentage. Default if undecided:
-   camps pay 10% of each booking; parents pay nothing.
+1. Who pays the fee: camps, parents, or both, and the percentage. *Decided 5 November 2026:
+   no booking fee in 2027. Camps pay for verification and delivered inquiries; see the pricing
+   workstream below.*
 2. Launch with "request a spot" (recommended) or full payment from day one.
 3. Whether the whole-summer cart and fill-the-forms-once are both in the first version.
    Default: forms-once yes, cart in Phase 4.
@@ -205,8 +206,8 @@ Done when: a real parent has requested a spot at a real camp and the camp has co
 
 - Public launch to parents in early January.
 - The whole-summer cart.
-- Stripe Connect checkout once 20 or more camps are live and willing: we collect from
-  parents, keep the fee, pay the camp.
+- ~~Stripe Connect checkout: we collect from parents, keep the fee, pay the camp.~~ Dropped
+  for 2027 (5 November 2026): no booking fee. Parents pay camps directly.
 - Watch the numbers weekly: alert sign-ups, spot requests, confirmations, camps updating
   their own listings.
 
@@ -216,6 +217,49 @@ Done when: a real parent has requested a spot at a real camp and the camp has co
 - Tips shown on listings, in aggregate.
 - First "parents like you" recommendations built from the summer's data, ready for 2028
   planning.
+
+## Pricing workstream
+
+*Added 5 November 2026, after Andrew's decisions that day: no booking fee in 2027, and the paid
+check never counts in ranking. The model is in `PRODUCT.md`; the prices, the market figures and
+the unit economics are in the [pricing doc](https://claude.ai/code/artifact/f99a2de8-7b5e-4b36-ae72-5e971fe58c83); the steps before billing come from
+["Bunkcheck: before we bill anyone"](https://claude.ai/artifact/HiVgJiRY7qbFEUoaqTcdmz). Every price below is a proposal under test.*
+
+### Before we bill anyone
+
+No camp or parent is charged until steps 1 to 6 are done. Owners as in the "before we bill
+anyone" doc.
+
+| # | Step | Owner | Done when |
+|---|---|---|---|
+| 1 | Counsel reviews the new wording for paid inquiries: trust rules 2, 5 and 6, the privacy policy, the terms, the Activity API terms, and the three questions for counsel | Andrew approves the drafts, then chooses counsel; counsel reviews | Counsel has signed off, and the new wording is merged |
+| 2 | Payments design doc: provider, monthly invoices to camps, card on file, refunds, failed payments, sales tax | A session drafts; Andrew approves; an accountant answers the tax question | One page in `docs/` a session could build from without guessing |
+| 3 | The camp's paying journey and its screens: opt in, the verified check, the badge, the monthly cap, the inquiry list, disputing an inquiry, cancelling | A session | Every step has a screen, a failure path and an email |
+| 4 | A one-page camp agreement: what counts as a delivered inquiry, a dispute window, cancel any time, no long contract | Counsel, from a session's draft | Camps accept it when they opt in |
+| 5 | Billing tables in a new migration, after 2 and 3. The paid check is stored in its own table, never in `camps.verification_status`, so ranking can't read it | A session | Migration and tests in, family export updated, and `tests/test_ranking_rules.py` still passes untouched |
+| 6 | A rotation plan for `KIT_ENCRYPTION_KEY` | A session | Kits can be re-encrypted under a new key without loss, tested |
+
+Done already: the ranking rules are public at `/ranking`, with a test that a camp's rank
+doesn't change when it pays (5 November 2026).
+
+### The six price tests
+
+From the pricing doc, November 2026 to April 2027, in this order. Providence has too few camps
+for clean statistics, so read each one for direction and confirm in Boston. Two rules for every
+test: tell camps the price ranges we are testing, and never test anything that touches rank or
+family data.
+
+| # | Test | When | Waits on |
+|---|---|---|---|
+| 1 | Verified profile at $99, $199 or $299, each camp assigned a price at random | November to December 2026 | Phase 2's 150 camps, live and hand-checked. Taking the money waits on steps 1 to 6 above |
+| 2 | The pitch: "here is what families near you asked for" against "get verified" | November to December 2026, alongside test 1 | The same camps as test 1, and a demand count per camp from the `/demand` reports |
+| 3 | Inquiries at $10 each against a flat $149 a season | February to April 2027 | The inquiry tool merged (`claude/inquiry-tool`), camps opted in, and steps 1 to 6 |
+| 4 | Registration Day Pass for parents at $19 or $39, a real charge on our site | January to February 2027 | Families with a saved summer plan, the payments design (step 2), and counsel on fee disclosures to parents (step 1) |
+| 5 | A priced Activity API proposal to one family-assistant company: free up to a monthly limit, then a monthly fee | By March 2027 | Andrew picks the company; a session writes the proposal and the plan terms. No billing code needed until it is signed |
+| 6 | Inquiries counted by channel: our site, ChatGPT, Claude, partner apps | February to April 2027 | The inquiry tool live in the MCP server and the Activity API, logging the channel; counsel's review of the inquiry flow (step 1) |
+
+Done when: by May 2027 we know the verified price for Boston, whether camps prefer per-inquiry or
+flat, whether parents pay for the pass, and whether one assistant company will pay for the API.
 
 ## Budget
 

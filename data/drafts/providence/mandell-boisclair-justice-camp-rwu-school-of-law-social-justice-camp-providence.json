@@ -65,7 +65,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.rwu.edu/summer-camps/rwu-school-law-social-justice-camp",
       "kind": "html",
@@ -146,6 +146,33 @@
         "No field changes. Season year 2026 confirmed: the RWU Summer Camps page lists the camp as 'Weekly Sessions July 13-24, 2026'. Dates, hours (8:45am-4:00pm), grades 6-9, weekly topics and the Providence campus all match. Source checked date updated."
       ],
       "open_questions": [
+        "The camp page shows 'Registration $49' then 'Registration Coming Soon'; it is not clear whether $49 is the full weekly cost or a registration fee. Kept as the session price.",
+        "Address (1 Empire Street, Providence RI 02903) and phone (1-800-458-7144) are the university footer contact; the camp page itself says only 'Downtown Providence Campus'.",
+        "No 2027 dates yet for this camp, though other RWU camps on the hub page already show 2027 dates. No registration opening date."
+      ]
+    },
+    "earlier_pass": {
+      "status": "needs_andrew",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.rwu.edu/summer-camps/rwu-school-law-social-justice-camp",
+      "changes": [
+        "Session prices set to null: the page lists 'Registration $49', which may be a registration fee rather than the week's cost.",
+        "Checked grades 6-9, day hours 8:45-4:00, address and phone (university footer) against the page."
+      ],
+      "for_andrew": [
+        "The page gives no year for the dates (July 13-17 and July 20-24); season_year 2026 is inferred only because those dates are Monday-Friday in 2026. Confirm the year, or wait for 2027 dates ('Registration Coming Soon').",
+        "Confirm whether $49 is the full price of a week or only a registration fee."
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.rwu.edu/summer-camps/rwu-school-law-social-justice-camp",
+      "changes": [
+        "No field changes. Season year 2026 confirmed: the RWU Summer Camps page lists the camp as 'Weekly Sessions July 13-24, 2026'. Dates, hours (8:45am-4:00pm), grades 6-9, weekly topics and the Providence campus all match. Source checked date updated."
+      ],
+      "for_andrew": [
         "The camp page shows 'Registration $49' then 'Registration Coming Soon'; it is not clear whether $49 is the full weekly cost or a registration fee. Kept as the session price.",
         "Address (1 Empire Street, Providence RI 02903) and phone (1-800-458-7144) are the university footer contact; the camp page itself says only 'Downtown Providence Campus'.",
         "No 2027 dates yet for this camp, though other RWU camps on the hub page already show 2027 dates. No registration opening date."

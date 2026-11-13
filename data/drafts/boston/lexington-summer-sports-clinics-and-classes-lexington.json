@@ -52,7 +52,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.lexingtonma.gov/2504/Summer-Sports-Clinics-and-Classes",
       "kind": "html",
@@ -101,6 +101,21 @@
         "Re-fetched as BunkcheckBot on 2026-11-12: confirmed"
       ],
       "open_questions": [
+        "Andrew to decide: this is an umbrella page for four separate town programs (Minuteman Sports Clinics, Blue Sox Baseball Camp, Youth Summer Tennis Clinic ages 7-13, USTA Tennis in the Parks weekly lessons), not one camp. Suggest dropping it, or splitting the Blue Sox Baseball Camp and Youth Tennis Clinic into their own listings once 2027 details are posted",
+        "Validator still fails: no season year or dates on any page (the MyRec program pages say 'This program is unavailable' or show the general catalog), and ZIP is unknown because Lexington has two ZIPs and no program site address is given (only the 39 Marrett Road office and tennis at the Center Recreation Complex on Worthen Road)",
+        "No prices, ages (except tennis 7-13) or hours"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.lexingtonma.gov/2504/Summer-Sports-Clinics-and-Classes",
+      "changes": [
+        "Added floor hockey to activities (listed on the Minuteman Sports Clinics registration page)",
+        "Checked the rest against the page: operator, phone 781-698-4800, the four programs and 'all ability levels' match",
+        "Re-fetched as BunkcheckBot on 2026-11-12: confirmed"
+      ],
+      "for_andrew": [
         "Andrew to decide: this is an umbrella page for four separate town programs (Minuteman Sports Clinics, Blue Sox Baseball Camp, Youth Summer Tennis Clinic ages 7-13, USTA Tennis in the Parks weekly lessons), not one camp. Suggest dropping it, or splitting the Blue Sox Baseball Camp and Youth Tennis Clinic into their own listings once 2027 details are posted",
         "Validator still fails: no season year or dates on any page (the MyRec program pages say 'This program is unavailable' or show the general catalog), and ZIP is unknown because Lexington has two ZIPs and no program site address is given (only the 39 Marrett Road office and tennis at the Center Recreation Complex on Worthen Road)",
         "No prices, ages (except tennis 7-13) or hours"

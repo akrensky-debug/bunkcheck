@@ -41,6 +41,8 @@ class CampComparison(BaseModel):
     refund_policy_summary: str | None
     primary_categories: list[str]
     distance_miles: float | None = None
+    season_year: int | None = None
+    last_season: bool = False
 
 
 class CompareResponse(BaseModel):

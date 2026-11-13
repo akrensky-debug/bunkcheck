@@ -69,7 +69,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.teamworksseekonk.com/summercamphome.aspx",
       "kind": "html",
@@ -116,6 +116,33 @@
         "Removed a low-confidence note on 'deposit_required', which is not a listing field ($50 per week deposit is in the source note)."
       ],
       "open_questions": [
+        "No camp prices on the site (registration needs an account); membership $10 online.",
+        "Page and brochure differ on Learn To Play ages (page: specialty camps ages 6-14; brochure table: Learn To Play ages 4-6).",
+        "No 2027 dates or registration date posted."
+      ]
+    },
+    "earlier_pass": {
+      "status": "ready",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.teamworksseekonk.com/summercamphome.aspx",
+      "changes": [
+        "No changes: every filled field matches the page (address, phone and operator from the page footer)."
+      ],
+      "for_andrew": [
+        "No prices on the page (only a $50/week deposit and a required Teamworks Membership); 2027 dates not posted yet."
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.teamworksseekonk.com/summercamphome.aspx",
+      "changes": [
+        "Added the twelve 2026 weeks (June 15 to September 4) from the 2026 brochure, with each week's specialty sport; prices left blank because none are published.",
+        "Added email info@teamworksseekonk.com, indoor facility, volleyball and other activities from the brochure; rewrote description.",
+        "Removed a low-confidence note on 'deposit_required', which is not a listing field ($50 per week deposit is in the source note)."
+      ],
+      "for_andrew": [
         "No camp prices on the site (registration needs an account); membership $10 online.",
         "Page and brochure differ on Learn To Play ages (page: specialty camps ages 6-14; brochure table: Learn To Play ages 4-6).",
         "No 2027 dates or registration date posted."

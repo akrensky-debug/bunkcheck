@@ -41,7 +41,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.talentfactoryri.com/summer-camps",
       "kind": "html",
@@ -91,6 +91,34 @@
         "Other fields verified against the page (contact, address, registration portal, sponsored spots as financial aid)"
       ],
       "open_questions": [
+        "Is this a camp? The main summer offer is 8 weeks of weekly studio classes picked from a schedule, not a camp day. The only 'camp' is 'Every Kid on Stage', a sponsored musical theater camp ($395 sponsors 1 child for 1 week per the sponsor page) with no dates, ages or public price on the site. Keep as a listing, or mark not_a_camp?",
+        "Tuition page: '(Summer session runs for 8 weeks starting June, 2027)' but no 2027 dates, prices or ages are posted",
+        "Also on site: Summer Dance Intensive, August 10-13, 2026 (a one-week dance intensive), not in this listing"
+      ]
+    },
+    "earlier_pass": {
+      "status": "needs_andrew",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.talentfactoryri.com/summer-camps",
+      "changes": [
+        "Trimmed street_address to \"46 Frenchtown Rd\" (dropped \"(Marshalls Plaza)\")"
+      ],
+      "for_andrew": [
+        "Judgement call: page sells 8 weeks of a-la-carte studio classes (\"Choose 1 of our 30+ classes\"), not clearly a camp; the camp-products section is empty",
+        "Page shows \"SUMMER 2026\" but no dates, ages or prices",
+        "performing_arts category is inferred from the dance/theatre studio menu, not from the summer page"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.talentfactoryri.com/summer-camps",
+      "changes": [
+        "Description now names both parts of the summer page: the 8-week à la carte class session and the sponsored 'Every Kid on Stage' summer camp",
+        "Other fields verified against the page (contact, address, registration portal, sponsored spots as financial aid)"
+      ],
+      "for_andrew": [
         "Is this a camp? The main summer offer is 8 weeks of weekly studio classes picked from a schedule, not a camp day. The only 'camp' is 'Every Kid on Stage', a sponsored musical theater camp ($395 sponsors 1 child for 1 week per the sponsor page) with no dates, ages or public price on the site. Keep as a listing, or mark not_a_camp?",
         "Tuition page: '(Summer session runs for 8 weeks starting June, 2027)' but no 2027 dates, prices or ages are posted",
         "Also on site: Summer Dance Intensive, August 10-13, 2026 (a one-week dance intensive), not in this listing"

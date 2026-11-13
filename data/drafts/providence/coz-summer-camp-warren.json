@@ -59,7 +59,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.bwrsd.org/families1/family-resource-center/coz-summer-camp",
       "kind": "html",
@@ -99,6 +99,31 @@
         "Set price_per day: the $58 full day and $47 mini day are day options ('One day, one week, the whole summer')."
       ],
       "open_questions": [
+        "No dates, weekly rate or registration link posted; 2027 information expected March 2027."
+      ]
+    },
+    "earlier_pass": {
+      "status": "ready",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.bwrsd.org/families1/family-resource-center/coz-summer-camp",
+      "changes": [
+        "Set season_year 2026: page thanks families for the summer just ended and says 2027 info comes in March 2027; prices $47/$58 are from that season"
+      ],
+      "for_andrew": [
+        "$58 Full Day / $47 Mini Day are shown without a unit (likely per day); price_per left unset. 2027 info due March 2027"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.bwrsd.org/families1/family-resource-center/coz-summer-camp",
+      "changes": [
+        "Every filled field matches the page as of 2026-11-12.",
+        "Set season_year 2026: the page thanks families for the summer just ended and says 2027 information comes in March 2027.",
+        "Set price_per day: the $58 full day and $47 mini day are day options ('One day, one week, the whole summer')."
+      ],
+      "for_andrew": [
         "No dates, weekly rate or registration link posted; 2027 information expected March 2027."
       ]
     }

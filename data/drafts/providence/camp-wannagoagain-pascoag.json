@@ -104,7 +104,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://theautismproject.org/parents-families/programs-resources/summer-camp",
       "kind": "html",
@@ -147,6 +147,37 @@
         "Registration URL confirmed as the Camper Application page."
       ],
       "open_questions": [
+        "age_max left null: the FAQ says ages 5 to 21+ and the adult week is 18+.",
+        "Optional 1:1 support costs $750 (or $1,000 with bus) extra; not in price_max.",
+        "No 2027 dates or registration opening posted; the summer camp page says 'Camp Applications Closed'."
+      ]
+    },
+    "earlier_pass": {
+      "status": "needs_andrew",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://theautismproject.org/parents-families/programs-resources/summer-camp",
+      "changes": [
+        "No field changes: location (Buck Hill Scout Reservation, Pascoag), 2026 Sessions I-III, supports, activities and contact all match the page"
+      ],
+      "for_andrew": [
+        "ZIP missing: the page names Buck Hill Scout Reservation in Pascoag but gives no street address, so it could not be geocoded",
+        "Session III (Aug 3-7) is probably the new adult-only (18+) week but the page does not say which week; consider whether to keep it",
+        "No ages or prices on the page"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://theautismproject.org/parents-families/programs-resources/summer-camp",
+      "changes": [
+        "Added camp address Buck Hill Scout Reservation, 422 Croff Rd, Pascoag, RI 02859 (fixes missing zip).",
+        "Added price $550 per week (includes $75 non-refundable registration fee) to every session and price_min/max.",
+        "Session III marked as adults 18+ only (Camp FAQs: 'The third week will be for adults over 18 only!').",
+        "Added age_min 5, transportation true ($100 bus from Johnston High School), financial aid true (camperships), refund summary.",
+        "Registration URL confirmed as the Camper Application page."
+      ],
+      "for_andrew": [
         "age_max left null: the FAQ says ages 5 to 21+ and the adult week is 18+.",
         "Optional 1:1 support costs $750 (or $1,000 with bus) extra; not in price_max.",
         "No 2027 dates or registration opening posted; the summer camp page says 'Camp Applications Closed'."

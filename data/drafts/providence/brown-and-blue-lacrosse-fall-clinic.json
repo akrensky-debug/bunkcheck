@@ -65,7 +65,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "drop",
     "source": {
       "url": "https://www.brownandbluelacrosse.com/",
       "kind": "html",
@@ -107,6 +107,29 @@
         "Description now gives the time (12:00-3:00pm) and place; moved date, grade, price and address fields to the Fall Clinic page source."
       ],
       "open_questions": [
+        "Not a summer camp: a one-day November clinic for high school athletes. The event date (2026-11-01) has passed and the homepage says 'Currently there are no upcoming events.'",
+        "Medford, MA is in the Boston area, about an hour from Providence, so it is filed under the wrong metro as well."
+      ]
+    },
+    "earlier_pass": {
+      "status": "drop",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.brownandbluelacrosse.com/",
+      "changes": [],
+      "for_andrew": [],
+      "drop_reason": "Not a summer camp: a one-day fall clinic (Nov 1, 2026) for high schoolers run by Tufts University Women's Lacrosse; no location near Providence and no summer sessions"
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.brownandbluelacrosse.com/",
+      "changes": [
+        "Added location from the Fall Clinic page: Bello Field, 161 College Ave., Medford, MA 02155.",
+        "Added price $255 per session ($240 + $15 fees) to the session and price fields.",
+        "Description now gives the time (12:00-3:00pm) and place; moved date, grade, price and address fields to the Fall Clinic page source."
+      ],
+      "for_andrew": [
         "Not a summer camp: a one-day November clinic for high school athletes. The event date (2026-11-01) has passed and the homepage says 'Currently there are no upcoming events.'",
         "Medford, MA is in the Boston area, about an hour from Providence, so it is filed under the wrong metro as well."
       ]

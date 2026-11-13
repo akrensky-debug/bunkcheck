@@ -84,7 +84,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "drop",
     "source": {
       "url": "https://www.bgcmarshfield.org/camp-warsofsky",
       "kind": "html",
@@ -207,6 +207,25 @@
         "Re-fetched as BunkcheckBot on 2026-11-12: camp page confirmed (ages 5-11 in three groups, Junior Leadership grades 6-9, $425/week, 9am-4pm, 37 Proprietors Drive, 781-834-2582, Membership@bgcmarshfield.com, portal link, complimentary bus); the 2026 Camper Handbook PDF was refused by the fetcher (over its 8 MB limit), so sessions, refund_policy_summary, swim_waterfront_notes and special_needs_notes are unverified; outcome blocked"
       ],
       "open_questions": [
+        "Handbook lists Week 2 as 'June 28-July 2 2026', but June 28, 2026 is a Sunday; recorded as written. Likely June 29",
+        "Email conflict: the page shows Membership@bgcmarshfield.com, the handbook membership@bgcmarshfield.org; kept the page's",
+        "Lunch is from home except a camp-provided Friday lunch; meals_included left null",
+        "Free transportation was tied to 2026 Teen Center construction and may not continue in 2027; the page doesn't name a year",
+        "Blocked 2026-11-12: the fetcher refused the 2026 Camper Handbook PDF (over its 8 MB limit). The fields sourced only to it, the ten 2026 week dates and themes (sessions), refund_policy_summary, swim_waterfront_notes and special_needs_notes, are unverified. Ask the club for a smaller copy or the 2027 handbook"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.bgcmarshfield.org/camp-warsofsky",
+      "changes": [
+        "Set season_year 2026 and added the ten 2026 weeks (June 22-August 28) with themes from the linked 2026 Camper Handbook (PDF), $425/week each",
+        "Added refund policy (non-refundable deposits, $30 change fee with 3 weeks' notice, fees due May 1, 2026), swim notes (swim or splash twice daily) and special-needs note from the handbook",
+        "Confirmed on the page: ages 5-11 in three groups, Junior Leadership grades 6-9, 9am-4pm, early drop-off and late pick-up, $425/week, 10% sibling and 25% military discounts, financial assistance, complimentary bus 'this summer'",
+        "Validator error (missing season_year) resolved",
+        "Re-fetched as BunkcheckBot on 2026-11-12: camp page confirmed (ages 5-11 in three groups, Junior Leadership grades 6-9, $425/week, 9am-4pm, 37 Proprietors Drive, 781-834-2582, Membership@bgcmarshfield.com, portal link, complimentary bus); the 2026 Camper Handbook PDF was refused by the fetcher (over its 8 MB limit), so sessions, refund_policy_summary, swim_waterfront_notes and special_needs_notes are unverified; outcome blocked"
+      ],
+      "for_andrew": [
         "Handbook lists Week 2 as 'June 28-July 2 2026', but June 28, 2026 is a Sunday; recorded as written. Likely June 29",
         "Email conflict: the page shows Membership@bgcmarshfield.com, the handbook membership@bgcmarshfield.org; kept the page's",
         "Lunch is from home except a camp-provided Friday lunch; meals_included left null",

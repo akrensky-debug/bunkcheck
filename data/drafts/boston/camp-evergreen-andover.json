@@ -137,7 +137,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.campevergreen.com/",
       "kind": "html",
@@ -195,6 +195,26 @@
         "Resolved errors: camp_type and season_year now set; low-confidence primary_categories kept (nature, sports fit the page)"
       ],
       "open_questions": [
+        "2027 tuition, calendar and registration dates not posted yet; the Registration page still lists the 2026 dates",
+        "The 2026 calendar PDF shows the last Friday as '11'; read as Aug 21 (week 9 runs Aug 17-21)",
+        "Late Nights carry an extra fee (amount not stated)"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.campevergreen.com/",
+      "changes": [
+        "Set camp_type day (FAQ: Monday to Friday, 9 am to 3:55 pm) and season_year 2026 (only 2026 tuition and calendar are posted)",
+        "Added ages 5 to 14 (FAQ: 'Camp serves children age 5 to 14')",
+        "Added 2026 sessions from the 2026 calendar PDF: four two-week sessions June 22 to Aug 14 and Extended Summer week 9 Aug 17-21; prices from the 2026 tuition page ($1,398 per two weeks, $1,298 for session 1 after the $100 July 3 deduction, $713 week 9)",
+        "Added price_min 649 / price_max 713 per week (per-week rate falls from $713 to $649 with more weeks)",
+        "Added extended_care true ($60 AM / $100 PM per week), transportation true ($150/week to Stoneham, Winchester, Wakefield, Reading stops), meals_included false (campers bring lunch)",
+        "Added refund policy and operator (Loscutoff family, About Us)",
+        "Description now says day camp and ages 5 to 14; swim notes now name the two pools and the boating pond (Facilities page)",
+        "Resolved errors: camp_type and season_year now set; low-confidence primary_categories kept (nature, sports fit the page)"
+      ],
+      "for_andrew": [
         "2027 tuition, calendar and registration dates not posted yet; the Registration page still lists the 2026 dates",
         "The 2026 calendar PDF shows the last Friday as '11'; read as Aug 21 (week 9 runs Aug 17-21)",
         "Late Nights carry an extra fee (amount not stated)"

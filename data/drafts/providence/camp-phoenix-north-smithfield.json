@@ -123,7 +123,7 @@
     "outdoor"
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.campphoenixonline.com/",
       "kind": "html",
@@ -189,6 +189,29 @@
         "Confirmed 2026 dates (Year 21), $220 weekly rate, phone, address and grades K-7 on the live page; resolved low-confidence items."
       ],
       "open_questions": [
+        "No 2027 dates, rates or registration date posted; the site still shows the 2026 season."
+      ]
+    },
+    "earlier_pass": {
+      "status": "ready",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.campphoenixonline.com/",
+      "changes": [
+        "No changes: grades K-7, 2026 'Year 21' weekly themes and dates, $220/week rate, phone and address all match; zip already from the Census geocoder"
+      ],
+      "for_andrew": []
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.campphoenixonline.com/",
+      "changes": [
+        "extended_care: true. The registration page offers 'Late Night' tiers: Extended Camp (a 5th activity period past dismissal, $20) and Full Late Night until 9:30 PM with dinner ($35).",
+        "primary_categories: added general, outdoor ('unplugged outdoor activities ... freedom to choose their adventures').",
+        "Confirmed 2026 dates (Year 21), $220 weekly rate, phone, address and grades K-7 on the live page; resolved low-confidence items."
+      ],
+      "for_andrew": [
         "No 2027 dates, rates or registration date posted; the site still shows the 2026 season."
       ]
     }

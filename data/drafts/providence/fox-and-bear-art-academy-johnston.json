@@ -46,7 +46,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.foxandbearartacademy.com/",
       "kind": "html",
@@ -88,6 +88,28 @@
         "Removed grade_min 0 / grade_max 12, which described the after-school program, not the camp."
       ],
       "open_questions": [
+        "No summer camp dates, weeks, prices or year anywhere on the site, so season_year cannot be set and the validator fails. Hold and recheck in spring, or ask the studio.",
+        "The FAQ also says birthday parties are booking for 'Summer 2026', so the camp text may be from 2026."
+      ]
+    },
+    "earlier_pass": {
+      "status": "drop",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.foxandbearartacademy.com/",
+      "changes": [],
+      "for_andrew": [],
+      "drop_reason": "Not a summer camp: the site describes a Fall 2026-Spring 2027 after-school art class program and birthday parties; no summer camp is mentioned"
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.foxandbearartacademy.com/",
+      "changes": [
+        "Found the studio's summer camp on the FAQ page ('Summer Camp runs Monday–Friday ... ages 4–12'); set camp_type day, ages 4-12, and rewrote the description around it.",
+        "Removed grade_min 0 / grade_max 12, which described the after-school program, not the camp."
+      ],
+      "for_andrew": [
         "No summer camp dates, weeks, prices or year anywhere on the site, so season_year cannot be set and the validator fails. Hold and recheck in spring, or ask the studio.",
         "The FAQ also says birthday parties are booking for 'Summer 2026', so the camp text may be from 2026."
       ]

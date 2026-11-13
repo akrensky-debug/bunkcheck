@@ -69,7 +69,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://actonma.gov/332/NARA-Summer-Camp",
       "kind": "html",
@@ -134,6 +134,21 @@
         "Low-confidence items: camp_type day kept (packed lunches, town recreation camp); zip 01720 is right for NARA Park; phone is the Town Hall / Recreation main line"
       ],
       "open_questions": [
+        "Prices, weekly structure and hours not on the page; 2027 not posted ('We will see you again next year!')"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://actonma.gov/332/NARA-Summer-Camp",
+      "changes": [
+        "Added street address 25 Ledge Rock Way (NARA Park), from the town's NARA Park page; the camp is held there",
+        "Swim notes now say NARA Park has a swimming pond (NARA Beach)",
+        "Other fields match the page: grades K-6, June 29 to Aug 28, 2026, operated by Athena, nut-free, CampDoc physicals, Doli Atamian camperships (Acton and Boxborough residents)",
+        "primary_categories nature -> general (page describes a classic recreation camp: swimming, games, field trips, creativity), resolving the low-confidence item",
+        "Low-confidence items: camp_type day kept (packed lunches, town recreation camp); zip 01720 is right for NARA Park; phone is the Town Hall / Recreation main line"
+      ],
+      "for_andrew": [
         "Prices, weekly structure and hours not on the page; 2027 not posted ('We will see you again next year!')"
       ]
     }

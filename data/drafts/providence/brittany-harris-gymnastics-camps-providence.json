@@ -81,7 +81,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.brittanyharrisgymnasticscamps.com/",
       "kind": "html",
@@ -124,6 +124,39 @@
         "Resolved missing zip error and the low-confidence price/season items."
       ],
       "open_questions": [
+        "The site's camps list says 'Currently there are no upcoming events'; 2027 dates not posted.",
+        "Slug says providence but the camp is held in Lincoln, RI; slug left unchanged."
+      ]
+    },
+    "earlier_pass": {
+      "status": "ready",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.brittanyharrisgymnasticscamps.com/july-bears-gymnastics-summer.cfm",
+      "changes": [
+        "Removed the Nov 1 2026 High Performance Clinic session, its $244 price and its registration_url: it is a fall clinic, not summer camp",
+        "Read the July and August summer camp pages: added July 11-12 2026 ($323) and Aug 1-2 2026 ($419) sessions, price_min 323 / price_max 419",
+        "Location: camps are held at Ocean State School of Gymnastics, 3 New England Way, Lincoln, RI 02865, not in Providence; set street_address, city Lincoln, zip",
+        "Added ages 7-18, gender_policy girls, email and refund policy from the summer camp pages",
+        "Rewrote description_short for the summer camps"
+      ],
+      "for_andrew": [
+        "Slug still says 'providence' though the camp is in Lincoln, RI",
+        "Each camp is only 1.5-2 days long (commuter clinic style); confirm it should be listed as a camp"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.brittanyharrisgymnasticscamps.com/",
+      "changes": [
+        "Replaced the one session (November 1 high performance clinic, not a summer camp) with the two 2026 summer camps: July 11 to 12 ($323) and August 1 to 2 ($419); prices include Ryzer fees as the page states them.",
+        "Set location to the camp site the page names: Ocean State School of Gymnastics, 3 New England Way, Lincoln, RI 02865 (was Providence, no ZIP).",
+        "Registration URL now the July summer camp's Ryzer link (was the fall clinic's).",
+        "Added email, girls only, ages 7 to 18, indoor, sack lunch (meals_included false), refund policy; rewrote description from the camp pages.",
+        "Resolved missing zip error and the low-confidence price/season items."
+      ],
+      "for_andrew": [
         "The site's camps list says 'Currently there are no upcoming events'; 2027 dates not posted.",
         "Slug says providence but the camp is held in Lincoln, RI; slug left unchanged."
       ]

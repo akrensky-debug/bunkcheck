@@ -76,7 +76,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://projectfashionworks.com/collections/frontpage",
       "kind": "html",
@@ -122,6 +122,36 @@
         "Added refund policy, financial aid (PPAC scholarship for ages 11-14), indoor, price per session; expanded description and activities."
       ],
       "open_questions": [
+        "Class pages give no year; 2026 inferred from weekdays and copyright. Supplies extra (about $30 to $50).",
+        "No 2027 dates or registration date posted."
+      ]
+    },
+    "earlier_pass": {
+      "status": "needs_andrew",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://projectfashionworks.com/collections/frontpage",
+      "changes": [
+        "Added street_address/city/state/zip (Temple Emanu-El, 99 Taft Ave, Providence, RI 02906) from the class product pages.",
+        "Added financial_aid=true: FAQ says they take part in the PPAC Summer Camp Arts Scholarship Program for ages 11-14.",
+        "Set season_year 2026: product pages give Mon-Fri dates without a year that match 2026 weekdays; (c) 2026."
+      ],
+      "for_andrew": [
+        "Product pages list Tweens July 13-17 and Teens July 20-24, Mon-Fri 10-3, $425, both 'Sold out', with no year. They fit 2026 weekdays; sessions were not added because the year is not stated. Confirm year and add sessions, or wait for 2027.",
+        "price_min/price_max $425 is per one-week class; price_per not set."
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://projectfashionworks.com/collections/frontpage",
+      "changes": [
+        "Added location from the class pages: Temple Emanu-El, 99 Taft Ave., Providence, RI 02906 (fixes missing city, state, zip).",
+        "Added the two sessions: Tween July 13-17 and Teen July 20-24, $425 each, Mon-Fri 10-3, both shown Sold out (availability full).",
+        "Set season_year 2026: the pages give no year, but July 13 and July 20 are Mondays in 2026 and the footer is (c) 2026.",
+        "Added refund policy, financial aid (PPAC scholarship for ages 11-14), indoor, price per session; expanded description and activities."
+      ],
+      "for_andrew": [
         "Class pages give no year; 2026 inferred from weekdays and copyright. Supplies extra (about $30 to $50).",
         "No 2027 dates or registration date posted."
       ]

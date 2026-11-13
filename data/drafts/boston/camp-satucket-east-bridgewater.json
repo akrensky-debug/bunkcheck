@@ -142,7 +142,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.oldcolonyymca.org/child-care-camps/camps/camp-satucket",
       "kind": "html",
@@ -218,6 +218,22 @@
         "meals_included false confirmed ('Non-perishable bag lunch' in the packing list); camp_type day confirmed (weekly day schedule, bus routes)"
       ],
       "open_questions": [
+        "Camper age range not stated (only archery 'Ages 5 & up')",
+        "Before and after care are mentioned only as occasional extra-cost services; extended_care left empty",
+        "2027 weeks, prices and registration opening not posted"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.oldcolonyymca.org/child-care-camps/camps/camp-satucket",
+      "changes": [
+        "registration_url now the page's camp-specific Register Online link (?program=Camp%20Satucket)",
+        "Removed price_max 415: it is the non-member 'as low as' weekly rate, not a ceiling. Set price_per_week 345 and price_per week (member 'as low as' rate), matching Camp Christina",
+        "Season year 2026 confirmed: the page embeds the 'CAMP SATUCKET FAMILY HANDBOOK SUMMER 2026' and 'Camp 2026 Theme Calendar'",
+        "meals_included false confirmed ('Non-perishable bag lunch' in the packing list); camp_type day confirmed (weekly day schedule, bus routes)"
+      ],
+      "for_andrew": [
         "Camper age range not stated (only archery 'Ages 5 & up')",
         "Before and after care are mentioned only as occasional extra-cost services; extended_care left empty",
         "2027 weeks, prices and registration opening not posted"

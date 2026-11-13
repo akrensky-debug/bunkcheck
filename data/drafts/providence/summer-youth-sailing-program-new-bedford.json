@@ -69,7 +69,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.communityboating.org/project/summer-youth-sailing-program/",
       "kind": "html",
@@ -115,6 +115,37 @@
         "Set season_year 2026; primary category sailing (secondary swimming); price per session; rewrote description."
       ],
       "open_questions": [
+        "Intermediate Windsurf (noon-3, pre-approval) not added as a session.",
+        "Page shows 'Registration Open' buttons next to 'sold out for the season'; they are leftover 2026 links. No 2027 information or registration date posted.",
+        "Financial aid share given as about 85% in one place and 80% in another (not used)."
+      ]
+    },
+    "earlier_pass": {
+      "status": "needs_andrew",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.communityboating.org/project/summer-youth-sailing-program/",
+      "changes": [
+        "primary_categories sports -> sailing (the category list has sailing; the page is a sailing/windsurfing program)",
+        "Added street_address 1641 Padanaram Avenue, zip 02740, phone and email from the Clark's Cove Site/Headquarters block on communityboating.org/contact-cbc"
+      ],
+      "for_andrew": [
+        "Page gives no year or session dates, so season_year cannot be set without guessing; check the ActiveNetwork registration site or ask CBC",
+        "Page conflicts: Summer Youth Sailing \"sold out for the season\" but also \"Registration Open\"",
+        "CBC has a second site (Fort Taber, 1000 South Rodney French Blvd, 02744); page does not say which site the program uses",
+        "Not a duplicate of Providence's Community Boating Center (communityboating.com): this is New Bedford's (communityboating.org)"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.communityboating.org/project/summer-youth-sailing-program/",
+      "changes": [
+        "Added 2026 sessions from the 2026 application PDF: 8 one-week Summer Youth Sailing weeks ($500, marked full: page says sold out for the season), 8 Sea Squirts weeks ($250), 4 two-week Learn to Windsurf sessions ($500).",
+        "Added address 1641 Padanaram Avenue, New Bedford, MA 02740, phone, email, refund policy; city and state now sourced from the PDF.",
+        "Set season_year 2026; primary category sailing (secondary swimming); price per session; rewrote description."
+      ],
+      "for_andrew": [
         "Intermediate Windsurf (noon-3, pre-approval) not added as a session.",
         "Page shows 'Registration Open' buttons next to 'sold out for the season'; they are leftover 2026 links. No 2027 information or registration date posted.",
         "Financial aid share given as about 85% in one place and 80% in another (not used)."

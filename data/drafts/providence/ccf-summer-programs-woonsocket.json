@@ -52,7 +52,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.ccfcenter.org/summer-camps",
       "kind": "html",
@@ -92,6 +92,36 @@
         "Rewrote description from the grade pages; dropped 'six weeks July through mid-August' because the 6-8 page calls Get Connected a 4-week camp."
       ],
       "open_questions": [
+        "No session dates or prices on the pages; they may be in the 2026 registration forms, which are Word files the fetcher cannot read.",
+        "Overview page says camps run six weeks July through mid-August; Grades 6-8 page says Get Connected is 4 weeks.",
+        "No registration_url set: registration is by three downloadable Word forms, one per camp.",
+        "No 2027 information posted."
+      ]
+    },
+    "earlier_pass": {
+      "status": "ready",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.ccfcenter.org/summer-camps",
+      "changes": [
+        "Set camp_type day: local summer learning programs in Woonsocket, no overnight stay mentioned (also read /summer-camps/grades-k-5 and /grades-6-thru-8)",
+        "Set season_year 2026: grade pages link 2026 registration forms",
+        "Description: dropped \"six weeks\" for all camps since Get Connected is a 4-week camp per the grades 6-8 page"
+      ],
+      "for_andrew": [
+        "camp_type day is inferred, not stated in those words; no dates or prices on the pages (registration is by 2026 .docx forms)"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.ccfcenter.org/summer-camps",
+      "changes": [
+        "Set camp_type day and season_year 2026 (the grade pages link 2026 registration forms).",
+        "Added categories (academic; STEM, arts) and activities from the grade K-5 and 6-8 pages.",
+        "Rewrote description from the grade pages; dropped 'six weeks July through mid-August' because the 6-8 page calls Get Connected a 4-week camp."
+      ],
+      "for_andrew": [
         "No session dates or prices on the pages; they may be in the 2026 registration forms, which are Word files the fetcher cannot read.",
         "Overview page says camps run six weeks July through mid-August; Grades 6-8 page says Get Connected is 4 weeks.",
         "No registration_url set: registration is by three downloadable Word forms, one per camp.",

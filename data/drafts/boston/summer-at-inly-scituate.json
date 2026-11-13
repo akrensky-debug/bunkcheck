@@ -95,7 +95,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://summeratinly.com/",
       "kind": "html",
@@ -144,6 +144,24 @@
         "Kept performing_arts category: Specialty Camps include 'Songs & Scenes from Seussical the Musical'"
       ],
       "open_questions": [
+        "Week 10 is listed as 'August 18–22, 2026' (Tue-Sat) on the dates page while the home page says the season ends August 21; kept the single June 15-Aug 21 span rather than guess the weekly dates.",
+        "Ages: home page says 3 to 14, dates page says 3 to 15.",
+        "Weekly prices are only in the image-based Dates & Rates PDF (no readable text), so no prices recorded.",
+        "Register page still says accounts must be paid by 'May 15, 2025'. No 2027 dates or registration date posted."
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://summeratinly.com/",
+      "changes": [
+        "Replaced testimonial-based activities with the Inly Day Camp page's list (art, science, sports, nature, archery and water games, climbing tower)",
+        "street_address now '46 Watch Hill Drive' (2026 Dates & Rates PDF; site footer only says 'Watch Hill Dr')",
+        "Added refund_policy_summary from the Register page ($100 non-refundable deposit per camper per week)",
+        "extended_care sourced to the Extended Day page (AM 7:30-8:30 $70/week, PM 3:30-5:30 $150/week)",
+        "Kept performing_arts category: Specialty Camps include 'Songs & Scenes from Seussical the Musical'"
+      ],
+      "for_andrew": [
         "Week 10 is listed as 'August 18–22, 2026' (Tue-Sat) on the dates page while the home page says the season ends August 21; kept the single June 15-Aug 21 span rather than guess the weekly dates.",
         "Ages: home page says 3 to 14, dates page says 3 to 15.",
         "Weekly prices are only in the image-based Dates & Rates PDF (no readable text), so no prices recorded.",

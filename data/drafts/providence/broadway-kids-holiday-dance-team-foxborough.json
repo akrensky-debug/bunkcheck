@@ -62,7 +62,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://mrpac.art/broadway-kids",
       "kind": "html",
@@ -101,6 +101,35 @@
         "Session replaced: 3-Week Summer 2027 Session 2027-08-02 to 2027-08-20."
       ],
       "open_questions": [
+        "Slug and filename still say 'holiday-dance-team-foxborough'; should be renamed (e.g. broadway-kids-summer-foxborough) before promote.",
+        "Summer 2027 tuition and daily hours are not posted; the page only gives February vacation week details ($350, 9am-3pm, after care 3-5pm).",
+        "The page's 'Program Schedule' says February 15-19, 2026, but the heading and register link say February 2027 (Feb 15, 2026 was a Sunday): a typo on the page.",
+        "Summer registration opens March 2027 (no exact date); no registration link for summer yet."
+      ]
+    },
+    "earlier_pass": {
+      "status": "drop",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://mrpac.art/broadway-kids",
+      "changes": [],
+      "for_andrew": [],
+      "drop_reason": "Not a summer camp: a fall/holiday dance team with five Monday after-school rehearsals (Oct 5 - Nov 23, 2026) and two holiday shows"
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://mrpac.art/broadway-kids",
+      "changes": [
+        "The Holiday Dance Team (fall 2026 after-school program) is gone from the page; rewrote the draft to the Broadway Kids 3-Week Summer 2027 Session (August 2-20, 2027), season_year 2027.",
+        "name: 'Broadway Kids Holiday Dance Team' -> 'Broadway Kids'.",
+        "ages 6-12 -> 5-10, added grades K-5 ('Age Range: 5-10 years old (K to 5th Grade)').",
+        "email JenniferR@mrpac.art -> AnnieB@mrpac.art (program manager named on the page).",
+        "activities -> Acting, Singing, Dancing, Stage performance; description rewritten from the page.",
+        "Removed $175 price (holiday program); summer price is not posted.",
+        "Session replaced: 3-Week Summer 2027 Session 2027-08-02 to 2027-08-20."
+      ],
+      "for_andrew": [
         "Slug and filename still say 'holiday-dance-team-foxborough'; should be renamed (e.g. broadway-kids-summer-foxborough) before promote.",
         "Summer 2027 tuition and daily hours are not posted; the page only gives February vacation week details ($350, 9am-3pm, after care 3-5pm).",
         "The page's 'Program Schedule' says February 15-19, 2026, but the heading and register link say February 2027 (Feb 15, 2026 was a Sunday): a typo on the page.",

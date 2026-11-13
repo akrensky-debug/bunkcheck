@@ -103,7 +103,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://cmcb.org/programs/summerarts-music/",
       "kind": "html",
@@ -140,6 +140,20 @@
         "Confirmed ages 5-11, Mon-Fri 9-5, four themed weeks, $650/week with sliding scale down to $162.50, $50 non-refundable registration fee"
       ],
       "open_questions": [
+        "The summer page doesn't say where the program meets; address is CMCB's main location from the Contact page.",
+        "Weeks 2-4 dates are derived: page says 'four week-long sessions starting July 6th' and 'four weeks in July', so July 6-31 back to back.",
+        "No 2027 dates, prices or registration date posted (page still shows Summer 2026)."
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://cmcb.org/programs/summerarts-music/",
+      "changes": [
+        "Added street_address 34 Warren Ave. and ZIP 02116 from CMCB's Contact Us page (clears missing zip)",
+        "Confirmed ages 5-11, Mon-Fri 9-5, four themed weeks, $650/week with sliding scale down to $162.50, $50 non-refundable registration fee"
+      ],
+      "for_andrew": [
         "The summer page doesn't say where the program meets; address is CMCB's main location from the Contact page.",
         "Weeks 2-4 dates are derived: page says 'four week-long sessions starting July 6th' and 'four weeks in July', so July 6-31 back to back.",
         "No 2027 dates, prices or registration date posted (page still shows Summer 2026)."

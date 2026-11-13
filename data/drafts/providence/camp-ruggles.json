@@ -41,7 +41,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.campruggles.org/",
       "kind": "html",
@@ -99,6 +99,33 @@
         "Added activities (swimming, boating, fishing, creative activities, movement) from the Our Program page and widened the description to match it."
       ],
       "open_questions": [
+        "The whole site reads like a redesign draft, not a live family site: the Families & Apply page says 'The current website contains useful application, eligibility, transportation and FAQ information. The redesign keeps that operational value...' but gives no details and links nowhere.",
+        "No location anywhere on the site, so city, state and ZIP (all required) stay empty. The site says the Board approved a $1.5 million capital campaign 'to help establish a permanent home', so the camp may not have a fixed site.",
+        "No camp type, ages, dates, prices, contact details or season year on any page.",
+        "No 2027 or 2026 registration dates."
+      ]
+    },
+    "earlier_pass": {
+      "status": "needs_andrew",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.campruggles.org/",
+      "changes": [
+        "Added activities (swimming, boating, fishing, creative activities, movement) from the Our Program page (new source)",
+        "Checked name, therapeutic focus and 50+ years against the home page"
+      ],
+      "for_andrew": [
+        "The site looks like an unfinished redesign: the Families & Apply page is placeholder text ('The redesign keeps that operational value...'). No location, ages, dates, prices or day/overnight info anywhere, so city/state/zip, camp_type and season_year stay empty; ask the camp directly"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.campruggles.org/",
+      "changes": [
+        "Added activities (swimming, boating, fishing, creative activities, movement) from the Our Program page and widened the description to match it."
+      ],
+      "for_andrew": [
         "The whole site reads like a redesign draft, not a live family site: the Families & Apply page says 'The current website contains useful application, eligibility, transportation and FAQ information. The redesign keeps that operational value...' but gives no details and links nowhere.",
         "No location anywhere on the site, so city, state and ZIP (all required) stay empty. The site says the Board approved a $1.5 million capital campaign 'to help establish a permanent home', so the camp may not have a fixed site.",
         "No camp type, ages, dates, prices, contact details or season year on any page.",

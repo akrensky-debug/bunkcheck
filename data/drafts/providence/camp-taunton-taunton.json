@@ -168,7 +168,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.oldcolonyymca.org/child-care-camps/camps/camp-taunton",
       "kind": "html",
@@ -227,6 +227,37 @@
         "Description rewritten to what the page and brochure say"
       ],
       "open_questions": [
+        "The camp's own site still shows only the 2025 brochure. Should a 2025-season listing be promoted, or held until the 2026/2027 brochure is posted?",
+        "Address: the camp page header says 176 Somerset Ave, Taunton, but the 2025 brochure gives 71 Cohannet St, Taunton. Kept the page header; confirm where camp meets",
+        "Meals: bag lunch (camp page) vs. free breakfast and lunch program weeks 3-9 (2025 brochure)",
+        "The registration portal lists a 'Summer 2027' session filter, but the camp listing loads only by interaction, so 2027 dates and registration opening could not be read"
+      ]
+    },
+    "earlier_pass": {
+      "status": "needs_andrew",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.oldcolonyymca.org/child-care-camps/camps/camp-taunton",
+      "changes": [
+        "No field changes: address, phone, activities, no transportation ('Transportation is currently not available') and daily bag lunch all match the page"
+      ],
+      "for_andrew": [
+        "season_year cannot be set: the newest material on the page is the 2025 brochure and 2025 family handbook (theme calendar is 2023); nothing for 2026 or 2027. Confirm the camp still runs and which season to list"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.oldcolonyymca.org/child-care-camps/camps/camp-taunton",
+      "changes": [
+        "Set season_year 2025 (fixes missing required season_year): the newest brochure on the camp's site is the 2025 one; nothing for 2026 or 2027 is posted on the camp page",
+        "Added the ten 2025 weeks (6/16-8/22, $275 member rate), ages 5-13, $275-$300 weekly, extended care, financial aid and the camp email from the 2025 brochure",
+        "registration_url now the Camp Taunton filter of the registration portal (as linked from the camp page)",
+        "meals_included set to null: the camp page says bring a bag lunch, but the 2025 brochure advertises a free breakfast and lunch program for weeks 3-9",
+        "Categories: primary general, with sports, arts and outdoor as secondary ('nature' was a guess)",
+        "Description rewritten to what the page and brochure say"
+      ],
+      "for_andrew": [
         "The camp's own site still shows only the 2025 brochure. Should a 2025-season listing be promoted, or held until the 2026/2027 brochure is posted?",
         "Address: the camp page header says 176 Somerset Ave, Taunton, but the 2025 brochure gives 71 Cohannet St, Taunton. Kept the page header; confirm where camp meets",
         "Meals: bag lunch (camp page) vs. free breakfast and lunch program weeks 3-9 (2025 brochure)",

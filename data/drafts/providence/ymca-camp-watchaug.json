@@ -202,7 +202,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://oceancommunityymca.org/camp-watchaug/",
       "kind": "html",
@@ -288,6 +288,36 @@
         "Description now gives hours, place and age range. The 2026 session dates match the handbook."
       ],
       "open_questions": [
+        "Charlestown, RI is not in campfinder/seed/cities.py, so the validator fails ('city Charlestown, RI is not in cities.py'). Andrew: add Charlestown (about 45 minutes from Providence) to cities.py, then this draft should pass.",
+        "No prices: the 2026 brochure PDF is over the fetcher's 8 MB limit and the page and handbook give only the $30 registration fee and $50 deposit.",
+        "No 2027 dates or registration opening date posted yet."
+      ]
+    },
+    "earlier_pass": {
+      "status": "needs_andrew",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://oceancommunityymca.org/camp-watchaug/",
+      "changes": [
+        "No field changes: description, activities, Toni's Kids notes, financial aid (YCares), bus routes and the 2026 themed and specialty sessions match the page."
+      ],
+      "for_andrew": [
+        "City/state/ZIP missing: the page gives no street address, only 'Watchaug Pond'. Watchaug Pond is in Charlestown, RI, which is not in cities.py and is roughly 35-40 miles from Providence, so it may be outside the metro. Decide keep or drop.",
+        "No ages or prices on the page (they are in the 2026 brochure)."
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://oceancommunityymca.org/camp-watchaug/",
+      "changes": [
+        "Added location from the 2026 Camp Parent Handbook: 160 Prosser Trail, Charlestown, RI 02813 (camp site; mailing address is 95 High Street, Westerly), phone (401) 364-6535.",
+        "Added ages: Itty Bitty Camp ages 3-4 entering Pre-K through Explorers entering grade 9 (age_min 3, grade_max 9).",
+        "Added extended care (7-9am and 4-6pm, separate registration), meals_included false (send snack and lunch), and the camp refund policy from the handbook; transportation now sourced to the handbook's bus section.",
+        "Added registration URL (the page's 'Register Online' link to Daxko).",
+        "Description now gives hours, place and age range. The 2026 session dates match the handbook."
+      ],
+      "for_andrew": [
         "Charlestown, RI is not in campfinder/seed/cities.py, so the validator fails ('city Charlestown, RI is not in cities.py'). Andrew: add Charlestown (about 45 minutes from Providence) to cities.py, then this draft should pass.",
         "No prices: the 2026 brochure PDF is over the fetcher's 8 MB limit and the page and handbook give only the $30 registration fee and $50 deposit.",
         "No 2027 dates or registration opening date posted yet."

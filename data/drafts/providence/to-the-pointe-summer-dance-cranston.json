@@ -66,7 +66,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://tothepointedancestudios.com/summerdance",
       "kind": "html",
@@ -116,6 +116,39 @@
         "Rewrote description and activities around the camps; dropped the 6-week classes and intensive, which are not camps."
       ],
       "open_questions": [
+        "Page still shows 2026 camps; nothing for 2027 yet.",
+        "No upper age stated (camps say '3 & up', '4 and UP', 'ages 3-10', '7 & up'); age_max left null.",
+        "Cart adds a $15 registration fee to listed prices."
+      ]
+    },
+    "earlier_pass": {
+      "status": "ready",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://tothepointedancestudios.com/summerdance (and /summer-camps)",
+      "changes": [
+        "Added street_address 800 Oaklawn Ave from the summer-camps page ('Address: 800 Oaklawn Ave Cranston').",
+        "Filled zip 02920 from the US Census geocoder for that address.",
+        "Replaced registration_url (/locations is a location picker) with the /summer-camps page that has the SIGN UP buttons.",
+        "Added age_min 3, price range $214-$299 and the four 2026 themed camp weeks from the /summer-camps page."
+      ],
+      "for_andrew": [
+        "The /directions page gives the Cranston studio as 999 Oaklawn Ave, the camps page says 800 Oaklawn Ave; kept 800.",
+        "Session prices are the full-week (5 full days) price; the cart adds a $15 registration fee, and half-day / single-day options exist."
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://tothepointedancestudios.com/summerdance",
+      "changes": [
+        "Filled zip 02920 and street_address 800 Oaklawn Ave from the Locations page (camp page also gives '800 Oaklawn Ave Cranston').",
+        "Added the four 2026 camps from the Summer Camps page as sessions (K-Pop, Fairy Princess, Wicked!, Zombies) with prices.",
+        "Added age_min 3, prices $229 (5 half days) to $299 (5 full days) per week, meals_included false (pack lunch).",
+        "registration_url /locations (dance class registration) -> /summer-camps (where the camp 'SIGN UP' buttons are).",
+        "Rewrote description and activities around the camps; dropped the 6-week classes and intensive, which are not camps."
+      ],
+      "for_andrew": [
         "Page still shows 2026 camps; nothing for 2027 yet.",
         "No upper age stated (camps say '3 & up', '4 and UP', 'ages 3-10', '7 & up'); age_max left null.",
         "Cart adds a $15 registration fee to listed prices."

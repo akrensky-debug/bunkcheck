@@ -79,7 +79,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.metrowestymca.org/camp/camp-clearbrook",
       "kind": "html",
@@ -143,6 +143,23 @@
         "Refund policy, inclusion notes and swim evaluation text match the FAQ"
       ],
       "open_questions": [
+        "2027 dates, weekly themes and prices not posted ('2027 Dates Coming Soon! (10 weeks)'); unclear if the listed prices will hold for 2027",
+        "extended_care: shared FAQ gives AM care 7:00-9:00 AM and PM care 4:15-6:00 PM, but Clearbrook ends at 2:00 PM; whether PM care exists at this site is unclear",
+        "Members get priority registration; no 2027 registration date posted"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.metrowestymca.org/camp/camp-clearbrook",
+      "changes": [
+        "season_year changed from 2027 to 2026: the page says '2027 Dates Coming Soon!' and posts no 2027 sessions; the weekly prices carry no year and sit next to a '2026 Camp Clearbrook' sticker",
+        "Confirmed name, operator, address (Clearbrook Swim Club, 120 Parker Road, Framingham 01702), phone (508) 879-4420, email, grades 1-6, 9:00 AM-2:00 PM hours, 2/3/5-day options and all nine weekly prices ($144-$357)",
+        "meals_included true confirmed: breakfast and lunch included (free meals at Framingham-based camps)",
+        "financial_aid true confirmed: Y-Assist partial financial assistance",
+        "Refund policy, inclusion notes and swim evaluation text match the FAQ"
+      ],
+      "for_andrew": [
         "2027 dates, weekly themes and prices not posted ('2027 Dates Coming Soon! (10 weeks)'); unclear if the listed prices will hold for 2027",
         "extended_care: shared FAQ gives AM care 7:00-9:00 AM and PM care 4:15-6:00 PM, but Clearbrook ends at 2:00 PM; whether PM care exists at this site is unclear",
         "Members get priority registration; no 2027 registration date posted"

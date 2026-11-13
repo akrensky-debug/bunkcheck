@@ -83,7 +83,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://kidstocktheater.com/summer-tuition-policies/",
       "kind": "html",
@@ -124,6 +124,23 @@
         "Description and activities rewritten from the 2027 page (drama, music and movement, dance, art, JingleVision movie-making, outdoor recreation)"
       ],
       "open_questions": [
+        "Ages are by grade completed; the page says 'the grade your child will have completed by June 2026', likely a typo for 2027. grade fields left blank.",
+        "Individual-day weeks are priced per day ($150; early bird $600 for five days / $480 for four), so no single session price recorded."
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://kidstocktheater.com/summer-2027/",
+      "changes": [
+        "Updated to 2027 (season_year 2027): 11 sessions from the SUMMERSTAGE 2027 page, June 21 to Sept 2, 2027; seven full show weeks at $650 (early bird $520), four individual-day weeks at $150/day (session price left blank)",
+        "website_url now https://kidstocktheater.com/summer-2027/ (where /summer/ redirects)",
+        "price_min 520 (2027 early bird full week, was 2026's $595); price_max/price_per_week 650 unchanged",
+        "Added age_min 4 (Pre-K age 4+ through Grade 6)",
+        "Rewrote refund policy for 2027: 30+ days = 100% minus $35 registration fee and $50 cancellation fee; within 29 days = 50%; registration fee now $35 (was $25)",
+        "Description and activities rewritten from the 2027 page (drama, music and movement, dance, art, JingleVision movie-making, outdoor recreation)"
+      ],
+      "for_andrew": [
         "Ages are by grade completed; the page says 'the grade your child will have completed by June 2026', likely a typo for 2027. grade fields left blank.",
         "Individual-day weeks are priced per day ($150; early bird $600 for five days / $480 for four), so no single session price recorded."
       ]

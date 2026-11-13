@@ -81,7 +81,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.metrowestymca.org/camp/camp-ocp",
       "kind": "html",
@@ -144,6 +144,20 @@
         "Low-confidence items resolved: prices are the page's current weekly rates (5 days: $415/$482/$519; 2 days from $208); season 2027 matches the page's '2027 Dates Coming Soon! (9 weeks)' framing; academic category matches 'focus on preventing summer learning loss'"
       ],
       "open_questions": [
+        "2027 session dates not posted ('2027 Dates Coming Soon!'), so the draft has no sessions; the page doesn't label the prices with a year",
+        "PM care hours differ on the page: 4:00-6:00 PM in Add-ons, 4:15-6:00 PM in the FAQ",
+        "Family members get 'priority registration' but no 2027 date is given"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.metrowestymca.org/camp/camp-ocp",
+      "changes": [
+        "No field changes: every filled field matches the page (grades 1-8, 9:00-4:00, address, phone, director email, prices $208-$519/week, breakfast and lunch included, AM/PM care, Y-Assist aid, swim and refund policies)",
+        "Low-confidence items resolved: prices are the page's current weekly rates (5 days: $415/$482/$519; 2 days from $208); season 2027 matches the page's '2027 Dates Coming Soon! (9 weeks)' framing; academic category matches 'focus on preventing summer learning loss'"
+      ],
+      "for_andrew": [
         "2027 session dates not posted ('2027 Dates Coming Soon!'), so the draft has no sessions; the page doesn't label the prices with a year",
         "PM care hours differ on the page: 4:00-6:00 PM in Add-ons, 4:15-6:00 PM in the FAQ",
         "Family members get 'priority registration' but no 2027 date is given"

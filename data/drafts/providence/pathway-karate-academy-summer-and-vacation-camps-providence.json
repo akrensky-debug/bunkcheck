@@ -78,7 +78,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.pathwaykarateacademy.com/summer-vacation-camps",
       "kind": "html",
@@ -157,6 +157,36 @@
         "Checked the rest against the page: ages 5-13 / grades PK-6, the three weekly options ($235 Before & Day 6:30am-5pm, $220 Full Day 9am-5pm, $265 Before & Extended 6:30am-6pm; sibling rates $225/$200/$225), meals, field trips, DHS/CCAP, address, phone and email all match."
       ],
       "open_questions": [
+        "No season year or dates anywhere on the page ('This year, our theme will be around Nature & Our Environment'; footer © 2026). season_year (required) stays empty; Andrew to decide whether to list it as 2026 or wait for 2027 details.",
+        "financial_aid true rests on 'We accept DHS/CCAP' (state child care subsidy), not the camp's own aid.",
+        "meals_included true: two of the three options include breakfast, lunch and snacks; the Before & Day option lists snacks only.",
+        "No weekly session dates and no registration opening date."
+      ]
+    },
+    "earlier_pass": {
+      "status": "needs_andrew",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.pathwaykarateacademy.com/summer-vacation-camps",
+      "changes": [
+        "Set season_year 2026: page has no dates, only 'This year' and (c) 2026.",
+        "primary_categories -> [general], moved sports/arts/STEM/academic/nature to secondary_categories: it is a general day camp with many activities."
+      ],
+      "for_andrew": [
+        "Page shows no session dates or year; prices ('From $220/$235/$265 weekly') may be for 2026 only. Confirm season and prices.",
+        "financial_aid=true rests only on 'We accept DHS/CCAP' (state child care subsidy), not camp scholarships. Keep or set null?",
+        "Before & Day Camp tier ($235) lists snacks only, while the other two tiers include breakfast and lunch; meals_included=true is for those tiers."
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.pathwaykarateacademy.com/summer-vacation-camps",
+      "changes": [
+        "Added registration URL (the page's 'Sign Up' link to the Procare enrollment form).",
+        "Checked the rest against the page: ages 5-13 / grades PK-6, the three weekly options ($235 Before & Day 6:30am-5pm, $220 Full Day 9am-5pm, $265 Before & Extended 6:30am-6pm; sibling rates $225/$200/$225), meals, field trips, DHS/CCAP, address, phone and email all match."
+      ],
+      "for_andrew": [
         "No season year or dates anywhere on the page ('This year, our theme will be around Nature & Our Environment'; footer © 2026). season_year (required) stays empty; Andrew to decide whether to list it as 2026 or wait for 2027 details.",
         "financial_aid true rests on 'We accept DHS/CCAP' (state child care subsidy), not the camp's own aid.",
         "meals_included true: two of the three options include breakfast, lunch and snacks; the Before & Day option lists snacks only.",

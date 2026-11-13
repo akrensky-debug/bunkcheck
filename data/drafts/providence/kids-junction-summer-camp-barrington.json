@@ -144,7 +144,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "http://kidsjunctionri.com/summer-camp/",
       "kind": "html",
@@ -200,6 +200,32 @@
         "Dropped null session prices; description tightened (program starts 8:45, field trips grade 1+ at extra fee)"
       ],
       "open_questions": [
+        "The page header now says the 2027 season runs 'June 21 – August 20, 2027', but the weekly themes are still labelled 2026 and the field trip list is titled 'Summer 2027' with 2026 dates (e.g. 'Week 2: Tues- June 30th'). Kept the 2026 weeks; switch to 2027 once 2027 weeks are posted, or now as a single 6/21-8/20/2027 season?",
+        "No prices posted for either season",
+        "The registration page still lists only '2026 Summer Camp Registration Links'"
+      ]
+    },
+    "earlier_pass": {
+      "status": "ready",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "http://kidsjunctionri.com/summer-camp/",
+      "changes": [
+        "Checked every field against the page; no changes. Only the 2026 season (June 22 - Aug 28, 2026) is posted."
+      ],
+      "for_andrew": []
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "http://kidsjunctionri.com/summer-camp/",
+      "changes": [
+        "Removed 'Week 1' (6/22-6/26/2026): its dates were inferred, and the page no longer shows the 2026 start date (header now reads June 21 - August 20, 2027)",
+        "Added street address 406 Maple Ave, phone 401-245-3928 and the general questions email from the contact page",
+        "Categories: primary general, the five activity areas plus swimming as secondary",
+        "Dropped null session prices; description tightened (program starts 8:45, field trips grade 1+ at extra fee)"
+      ],
+      "for_andrew": [
         "The page header now says the 2027 season runs 'June 21 – August 20, 2027', but the weekly themes are still labelled 2026 and the field trip list is titled 'Summer 2027' with 2026 dates (e.g. 'Week 2: Tues- June 30th'). Kept the 2026 weeks; switch to 2027 once 2027 weeks are posted, or now as a single 6/21-8/20/2027 season?",
         "No prices posted for either season",
         "The registration page still lists only '2026 Summer Camp Registration Links'"

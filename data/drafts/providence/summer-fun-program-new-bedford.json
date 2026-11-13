@@ -134,7 +134,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://bgcnewbedford.org/programs/summer-fun-program/",
       "kind": "html",
@@ -225,6 +225,36 @@
         "Ages 7-13 now sourced to the 2023 page, the only page that states them."
       ],
       "open_questions": [
+        "Ages 7-13 come only from the 2023 page; the 2026 page gives no age range.",
+        "Extra costs: $50 annual Club membership (expires 12/31/26), $10/day extended care to 5pm, $5 club T-shirt for field trips.",
+        "The 2026 page says 'Registration Opens Jan 1' with no year; nothing posted for 2027 yet."
+      ]
+    },
+    "earlier_pass": {
+      "status": "needs_andrew",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://bgcnewbedford.org/programs/summer-fun-program/",
+      "changes": [],
+      "for_andrew": [
+        "refused: ask the owner for the brochure (bgcnewbedford.org returned 429 Too Many Requests)",
+        "Draft data is from the 2023 season (season_year 2023, $50/week); needs current dates and prices"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://bgcnewbedford.org/programs/summer-fun-program/",
+      "changes": [
+        "Found the club's 2026 Summer Fun page (/programs/summer-fun-program-2/); the drafted page is the old 2023 one. Moved the listing to 2026: website_url now the 2026 page, season_year 2023 -> 2026.",
+        "Sessions replaced with the 2026 weekly table: Weeks 1-8, June 29 - August 21, 2026, $50 each (closed Friday, July 3).",
+        "Added registration URL (the 'Registration Opens Jan 1' link to the VisionCPS form).",
+        "Activities and description rewritten from the 2026 page (outdoor games, gym, games room, makerspace, arts, gardening, cooking, field trips); added primary category general.",
+        "Refund summary trimmed to the 2026 page (no refunds, full-week rate, payment due the Thursday before each week).",
+        "Removed meals_included: free state lunch was mentioned only for 2023; the 2026 page says nothing about lunch.",
+        "Ages 7-13 now sourced to the 2023 page, the only page that states them."
+      ],
+      "for_andrew": [
         "Ages 7-13 come only from the 2023 page; the 2026 page gives no age range.",
         "Extra costs: $50 annual Club membership (expires 12/31/26), $10/day extended care to 5pm, $5 club T-shirt for field trips.",
         "The 2026 page says 'Registration Opens Jan 1' with no year; nothing posted for 2027 yet."

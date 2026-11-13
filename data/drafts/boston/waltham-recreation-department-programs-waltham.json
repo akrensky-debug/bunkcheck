@@ -33,7 +33,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "drop",
     "source": {
       "url": "https://www.city.waltham.ma.us/1938/Program-Information",
       "kind": "html",
@@ -77,6 +77,18 @@
         "No field changes. Confirmed the Spring/Summer 2027 registration date, address, phone and the summer-only Usseglio/Fournier Family Scholarship link."
       ],
       "open_questions": [
+        "Not a camp listing: this is the Recreation Department's general program-information page (registration dates and brochures). No summer camp is named; only Fall 2026 and Winter 2026-27 brochures are posted. Re-check when the Spring/Summer 2027 brochure is published and draft the actual camp(s) then.",
+        "Validator fails on camp_type, left empty because the page describes no camp."
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.city.waltham.ma.us/1938/Program-Information",
+      "changes": [
+        "No field changes. Confirmed the Spring/Summer 2027 registration date, address, phone and the summer-only Usseglio/Fournier Family Scholarship link."
+      ],
+      "for_andrew": [
         "Not a camp listing: this is the Recreation Department's general program-information page (registration dates and brochures). No summer camp is named; only Fall 2026 and Winter 2026-27 brochures are posted. Re-check when the Spring/Summer 2027 brochure is published and draft the actual camp(s) then.",
         "Validator fails on camp_type, left empty because the page describes no camp."
       ]

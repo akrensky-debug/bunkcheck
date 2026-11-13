@@ -137,10 +137,40 @@ async def test_promote_moves_a_checked_draft_into_the_dataset(fake_tool, tmp_pat
     assert bad.exists() and len(json.loads((data / "providence.json").read_text())["camps"]) == before + 1
 
 
+async def test_promote_ready_takes_first_pass_drafts_only(fake_tool, tmp_path):
+    data = tmp_path / "camps"
+    shutil.copytree(DATA_DIR, data)
+    drafts = tmp_path / "drafts" / "providence"
+    await batch.run(CANDIDATES[:2], metro="Providence, RI", drafts=drafts, limit=None, concurrency=1, today=TODAY)
+    ready = drafts / "riverside-soccer-camp-cranston.json"
+    d = json.loads(ready.read_text())
+    d["review"]["status"] = "ready"
+    d["review"]["first_pass"] = {"by": "Claude", "date": "2026-10-27", "page_checked": "https://riverside.example/camp",
+                                 "changes": ["Set camp_type specialty"], "for_andrew": []}
+    ready.write_text(json.dumps(d))
+    held = drafts / "lakeside-arts-warwick.json"
+    d = json.loads(held.read_text())
+    d["review"]["status"] = "needs_andrew"
+    d["review"]["first_pass"] = {"by": "Claude", "date": "2026-10-27", "changes": [], "for_andrew": ["No year on the page"]}
+    held.write_text(json.dumps(d))
+
+    assert promote.ready_drafts(drafts) == [ready]
+    rec = promote.promote(ready, by="Andrew", today=date(2026, 10, 28), data_dir=data)
+    note = rec["sources"][0]["note"]
+    assert "by Claude on 2026-10-27, approved by Andrew" in note
+    assert held.exists()
+
+    batch.write_summary(drafts, [])
+    sheet = (drafts / "REVIEW.md").read_text()
+    assert "## Needs a person (1)" in sheet and "No year on the page" in sheet
+
+
 def test_promote_cli_reports_failures(tmp_path: Path, capsys) -> None:
     missing = tmp_path / "nowhere" / "x.json"
     assert promote.main([str(missing), "--by", "Andrew"]) == 1
     assert "x.json" in capsys.readouterr().err
+    with pytest.raises(SystemExit):
+        promote.main(["--by", "Andrew"])
 
 
 async def test_one_bad_camp_does_not_stop_the_run(fake_tool, tmp_path, monkeypatch):

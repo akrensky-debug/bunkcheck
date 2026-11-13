@@ -105,7 +105,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.cambridgema.gov/services/summercampsandprograms",
       "kind": "html",
@@ -150,6 +150,20 @@
         "All other fields checked against the page and match (sessions 2-4, no transportation, snacks and cold lunch provided, IEP/504 support, Red Cross lifeguards); primary_categories (STEM, arts, sports) kept as a fair reading of 'math, science, and art ... physical activity'"
       ],
       "open_questions": [
+        "Eligibility is limited to Cambridge residents and City of Cambridge employees, by lottery; Andrew may want that shown on the listing",
+        "2027 lottery details will be announced in February 2027"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.cambridgema.gov/services/summercampsandprograms",
+      "changes": [
+        "Added 2026 sliding-scale tuition from the 2026 tuition chart: $60 to $600 per two-week session (Sessions 2-4) by household size and income; price_min 60, price_max 600, per session",
+        "Description now gives the hours (8:30 a.m. to 5:30 p.m.) and that only Cambridge residents and City employees can apply",
+        "All other fields checked against the page and match (sessions 2-4, no transportation, snacks and cold lunch provided, IEP/504 support, Red Cross lifeguards); primary_categories (STEM, arts, sports) kept as a fair reading of 'math, science, and art ... physical activity'"
+      ],
+      "for_andrew": [
         "Eligibility is limited to Cambridge residents and City of Cambridge employees, by lottery; Andrew may want that shown on the listing",
         "2027 lottery details will be announced in February 2027"
       ]

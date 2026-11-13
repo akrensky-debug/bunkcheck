@@ -32,7 +32,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "drop",
     "source": {
       "url": "https://wrenthamma.myrec.com/info/default.aspx",
       "kind": "html",
@@ -79,6 +79,24 @@
         "No field changes: the portal lists no camp"
       ],
       "open_questions": []
+    },
+    "earlier_pass": {
+      "status": "drop",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://wrenthamma.myrec.com/info/default.aspx",
+      "changes": [],
+      "for_andrew": [],
+      "drop_reason": "Not a summer camp page: it is the Wrentham Recreation Department's generic MyRec registration home (5K race, youth basketball, adult pickup basketball) and names no summer camp, dates, ages or prices."
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://wrenthamma.myrec.com/info/default.aspx",
+      "changes": [
+        "No field changes: the portal lists no camp"
+      ],
+      "for_andrew": []
     }
   }
 }

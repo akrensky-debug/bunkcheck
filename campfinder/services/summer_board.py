@@ -17,6 +17,7 @@ from campfinder.database import get_supabase
 from campfinder.models.board import MAX_IDEAS, Board, Cell, KidRow, Pick, PickCreate, PickUpdate, Week
 from campfinder.services.coverage import check_coverage
 from campfinder.services.errors import NotFound, ServiceError
+from campfinder.services.season import is_last_season
 
 PLANNED = {"chosen", "registered", "covered", "away"}
 
@@ -49,7 +50,7 @@ def _by_id(table: str, columns: str, ids: set[str]) -> dict[str, dict[str, Any]]
 
 def _picks(family_id: str) -> list[Pick | Any]:
     rows = get_supabase().table("plan_picks").select("*").eq("family_id", family_id).order("created_at").execute().data or []
-    camps = _by_id("camps", "id,name,city,price_per_week,camp_type,extended_care", {str(r["camp_id"]) for r in rows})
+    camps = _by_id("camps", "id,name,city,price_per_week,camp_type,extended_care,season_year", {str(r["camp_id"]) for r in rows})
     sessions = _by_id("sessions", "id,start_date,end_date,price", {str(r["session_id"]) for r in rows if r.get("session_id")})
     out = []
     for r in rows:
@@ -58,10 +59,12 @@ def _picks(family_id: str) -> list[Pick | Any]:
             continue  # taken off the site
         s = sessions.get(str(r.get("session_id"))) if r.get("session_id") else None
         price = (s or {}).get("price") or camp.get("price_per_week")
+        start = _d((s or {}).get("start_date"))
         out.append((r, Pick(
             id=r["id"], camp_id=r["camp_id"], session_id=r.get("session_id"), name=camp["name"], city=camp.get("city"),
             price_per_week=float(price) if price is not None else None,
-            start_date=_d((s or {}).get("start_date")), end_date=_d((s or {}).get("end_date")),
+            start_date=start, end_date=_d((s or {}).get("end_date")),
+            last_season=is_last_season(start.year if start else camp.get("season_year")),
             state=r["state"], note=r.get("note"),
         )))
     return out
@@ -100,14 +103,16 @@ async def build_board(family_id: str) -> Board:
         if p.state != "chosen":
             continue
         week = _d(row["week_of"])
+        dated = p.start_date and p.end_date and not p.last_season  # last season's dates stand in for the week
         extra.append({
             "title": p.name, "child_name": row["child_name"], "camp_id": str(p.camp_id),
-            "start_date": (p.start_date or week).isoformat(),
-            "end_date": (p.end_date or week + timedelta(days=4)).isoformat(),
+            "start_date": (p.start_date if dated else week).isoformat(),
+            "end_date": (p.end_date if dated else week + timedelta(days=4)).isoformat(),
         })
     coverage = await check_coverage(family_id, with_options=True, extra_events=extra)
 
     rows: list[KidRow] = []
+    old_prices = False
     for kc in coverage.kids:
         cells: list[Cell] = []
         costed: set[str] = set()
@@ -133,6 +138,7 @@ async def build_board(family_id: str) -> Board:
                 if chosen.price_per_week and key not in costed:
                     costed.add(key)
                     cost += chosen.price_per_week
+                    old_prices = old_prices or chosen.last_season
             elif w.status in ("covered", "check_hours", "partial"):
                 state, label = "covered", ", ".join(w.covered_by) or None
             elif w.status == "away":
@@ -156,7 +162,7 @@ async def build_board(family_id: str) -> Board:
         weeks=[Week(week_of=w.week_of, week_end=w.week_end) for w in first_kid.weeks],
         kids=rows, planned=sum(r.planned for r in rows), weeks_needed=sum(r.weeks_needed for r in rows),
         cost=round(sum(r.cost for r in rows), 2), start_with=open_weeks[0] if open_weeks else None,
-        notes=coverage.notes,
+        notes=coverage.notes + (["The cost so far uses last season's price for some camps."] if old_prices else []),
     )
 
 

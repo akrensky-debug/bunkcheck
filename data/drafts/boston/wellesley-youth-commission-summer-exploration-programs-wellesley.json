@@ -89,7 +89,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://wellesleyma.gov/525/Summer-Programs",
       "kind": "html",
@@ -127,6 +127,21 @@
         "Confirmed 2026 programs, dates (July 13-17, July 27-31, Aug 3-7), hours, grades 6-8 and swim-test note"
       ],
       "open_questions": [
+        "Address/ZIP is Town Hall; programs are 'held at various locations throughout Wellesley'.",
+        "Eligibility: free for Wellesley residents and WPS students; the page doesn't say whether others can attend.",
+        "No 2027 programs or application dates yet. 2026 applications opened March 1, lottery April 1."
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://wellesleyma.gov/525/Summer-Programs",
+      "changes": [
+        "Added street_address 525 Washington Street, ZIP 02482 and phone 781-431-1019 (Wellesley Town Hall, the contact block on the page); clears missing zip",
+        "Description now says the programs are free only for Wellesley residents and Wellesley Public Schools students, names the host departments and the 13-spot lottery",
+        "Confirmed 2026 programs, dates (July 13-17, July 27-31, Aug 3-7), hours, grades 6-8 and swim-test note"
+      ],
+      "for_andrew": [
         "Address/ZIP is Town Hall; programs are 'held at various locations throughout Wellesley'.",
         "Eligibility: free for Wellesley residents and WPS students; the page doesn't say whether others can attend.",
         "No 2027 programs or application dates yet. 2026 applications opened March 1, lottery April 1."

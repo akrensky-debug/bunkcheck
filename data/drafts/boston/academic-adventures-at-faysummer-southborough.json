@@ -102,7 +102,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.faysummer.org/academic-adventures",
       "kind": "html",
@@ -167,6 +167,23 @@
         "Low-confidence items checked against the page: meals (family-style meals in the dining room), transportation false (families book their own airport transport from a concierge list), refund policy (page still states the June 1, 2026 deadline), registration_url (rates page; overnight programs need an application)"
       ],
       "open_questions": [
+        "2027 application not open yet ('Stay Tuned for the 2027 Application'); no opening date posted",
+        "Refund and medical-form deadline still shown as June 1, 2026; 2027 deadline not posted",
+        "Deposit amount not stated",
+        "Rates page says need-based aid is limited to one session of summer camp per season; unclear if it covers the overnight program"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.faysummer.org/academic-adventures",
+      "changes": [
+        "Added 2027 prices now on the page: 4-Week Program $9,400; each 2-Week Session $4,950 (sessions, price_min 4950, price_max 9400, price_per session)",
+        "Courses changed: page now lists Global Science, Vox Inventum and Creators Class, not forensic science; fixed description_short and activities",
+        "financial_aid stays true; now sourced to the rates page, which says FaySummer offers limited need-based financial assistance (plus the $2,000 merit scholarship on the program page)",
+        "Low-confidence items checked against the page: meals (family-style meals in the dining room), transportation false (families book their own airport transport from a concierge list), refund policy (page still states the June 1, 2026 deadline), registration_url (rates page; overnight programs need an application)"
+      ],
+      "for_andrew": [
         "2027 application not open yet ('Stay Tuned for the 2027 Application'); no opening date posted",
         "Refund and medical-form deadline still shown as June 1, 2026; 2027 deadline not posted",
         "Deposit amount not stated",

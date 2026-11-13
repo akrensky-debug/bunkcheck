@@ -99,7 +99,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.danahall.org/community-programs/equestrian-summer-program",
       "kind": "html",
@@ -141,6 +141,19 @@
         "No field changes: every filled field matches the page (ages 7-15, 8:30-1, $800/week, $200 deposit Feb 1 and balance April 15 nonrefundable, sessions 1-4 and 6 for 2026, bring lunch)"
       ],
       "open_questions": [
+        "Page still shows 'Dates and Rates 2026'; no 2027 dates, prices or enrollment dates.",
+        "Session 5 listed as 'July 27-July 27' (typo) and left out; Session 3 (July 6-10) is one week although the page calls Sessions 2-4 two-week sessions.",
+        "Session prices are $800 x weeks (page gives only the weekly rate)."
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.danahall.org/community-programs/equestrian-summer-program",
+      "changes": [
+        "No field changes: every filled field matches the page (ages 7-15, 8:30-1, $800/week, $200 deposit Feb 1 and balance April 15 nonrefundable, sessions 1-4 and 6 for 2026, bring lunch)"
+      ],
+      "for_andrew": [
         "Page still shows 'Dates and Rates 2026'; no 2027 dates, prices or enrollment dates.",
         "Session 5 listed as 'July 27-July 27' (typo) and left out; Session 3 (July 6-10) is one week although the page calls Sessions 2-4 two-week sessions.",
         "Session prices are $800 x weeks (page gives only the weekly rate)."

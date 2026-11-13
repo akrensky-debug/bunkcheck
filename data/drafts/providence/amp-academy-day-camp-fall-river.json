@@ -45,7 +45,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://ampacademygym.com/day-camp/",
       "kind": "html",
@@ -85,6 +85,30 @@
         "Other fields re-checked: name, address, phone, activities and the 'no screentime' description match the page."
       ],
       "open_questions": [
+        "The page never mentions summer: it is a 'School Breaks' day camp. Dates, ages and prices are only shown after submitting a contact form, which we do not do, and the page says it is static and not updated. season_year cannot be set from the page, so the validator still fails (missing season_year). Andrew: keep as a summer listing only if the owner confirms summer weeks; otherwise drop or treat as a vacation-week program."
+      ]
+    },
+    "earlier_pass": {
+      "status": "needs_andrew",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://ampacademygym.com/day-camp/",
+      "changes": [
+        "No field changes: contact, address and activities match the page"
+      ],
+      "for_andrew": [
+        "Page only says the camp runs over 'School Breaks' and that it is static and never updated; it never mentions summer, dates, ages, prices or a year, so season_year cannot be set. Confirm it runs a summer camp (dates/prices are behind a contact form) or drop it"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://ampacademygym.com/day-camp/",
+      "changes": [
+        "Removed email info@ampacademygym.com: it does not appear on the page (no mailto or address in the page text).",
+        "Other fields re-checked: name, address, phone, activities and the 'no screentime' description match the page."
+      ],
+      "for_andrew": [
         "The page never mentions summer: it is a 'School Breaks' day camp. Dates, ages and prices are only shown after submitting a contact form, which we do not do, and the page says it is static and not updated. season_year cannot be set from the page, so the validator still fails (missing season_year). Andrew: keep as a summer listing only if the owner confirms summer weeks; otherwise drop or treat as a vacation-week program."
       ]
     }

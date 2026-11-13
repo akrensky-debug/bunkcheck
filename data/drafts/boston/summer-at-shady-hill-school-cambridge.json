@@ -87,7 +87,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.shs.org/shs-life/auxiliary-and-summer-programs/summer-programs",
       "kind": "html",
@@ -154,6 +154,26 @@
         "Re-fetched as BunkcheckBot on 2026-11-12: confirmed"
       ],
       "open_questions": [
+        "Tuition is not on the public pages (only 'Detailed rates and schedule options in CampBrain'); iCode add-ons are $100-$120",
+        "Meals unclear: FAQ says lunch delivery is offered 'at no additional cost' but also asks campers to bring lunch; meals_included left null",
+        "Financial aid only for Shady Hill school families; financial_aid left null",
+        "Registration page shows 2026 timing ('Thursday, January 15 at 12:00 PM', no year); no 2027 date yet"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.shs.org/shs-life/auxiliary-and-summer-programs/summer-programs",
+      "changes": [
+        "registration_url changed to the CampBrain portal the Registration page links to ('Register for Summer Programs')",
+        "grade_max 9 -> 7: regular camper groups end at Explorers 'Rising Grades III-VII'; Leaders-in-Training are helpers, and the site gives their grades three ways (VI-IX, VII-IX, VIII-IX)",
+        "Added the 2026 season span from the Schedule '26 page (June 22-July 31, no camp July 3); tuition is only inside CampBrain",
+        "Added email alida.salins@shs.org (FAQ contact), transportation false ('We do not offer busing'), refund policy and special-needs note from the FAQ",
+        "extended_care now sourced to Schedule '26 (aftercare 3:30-6:00 PM, $200/week or $50/day)",
+        "swim_waterfront_notes: FAQ confirms no swimming facilities, daily water play on inflatable slide",
+        "Re-fetched as BunkcheckBot on 2026-11-12: confirmed"
+      ],
+      "for_andrew": [
         "Tuition is not on the public pages (only 'Detailed rates and schedule options in CampBrain'); iCode add-ons are $100-$120",
         "Meals unclear: FAQ says lunch delivery is offered 'at no additional cost' but also asks campers to bring lunch; meals_included left null",
         "Financial aid only for Shady Hill school families; financial_aid left null",

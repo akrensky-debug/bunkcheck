@@ -70,7 +70,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.whitincommunitycenter.com/our-community/camp-whitin/",
       "kind": "html",
@@ -126,6 +126,35 @@
         "registration_url confirmed: the Daxko 'Programs' link is the site's online registration link in the page header; the brochure says 'Please Register Online'."
       ],
       "open_questions": [
+        "2027 dates and fees are not posted; 2026 season stays.",
+        "Scholarship application on the page is still the 2025 form.",
+        "Session price left blank because each week has member/guest and early-bird/regular rates."
+      ]
+    },
+    "earlier_pass": {
+      "status": "ready",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.whitincommunitycenter.com/our-community/camp-whitin/",
+      "changes": [],
+      "for_andrew": [
+        "2026 dates and prices are only in linked PDF brochures, not captured; registration_url is the center-wide Daxko programs page"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.whitincommunitycenter.com/our-community/camp-whitin/",
+      "changes": [
+        "Added the 9 weekly 2026 sessions (June 22-Aug 21) from the 2026 brochure, with the sport/activity and Mini themes per week.",
+        "Added price_min 231, price_max 335, price_per week (member early-bird to guest regular rate).",
+        "Added meals_included false (brochure: campers bring a snack and a bag lunch every day; pizza is free on Fridays).",
+        "Added refund_policy_summary from the brochure.",
+        "description_short: said ages 4-13 explicitly and added Whitin Park; activities: replaced 'Educational activities' with 'Activity camps' (the page's camp category name).",
+        "Ages 4-13 kept: the intro says 4-13, Mini camps are 4-6 and Sport/Activity 7-13 (the 'Goals' line about 7-13 refers to Sport/Activity).",
+        "registration_url confirmed: the Daxko 'Programs' link is the site's online registration link in the page header; the brochure says 'Please Register Online'."
+      ],
+      "for_andrew": [
         "2027 dates and fees are not posted; 2026 season stays.",
         "Scholarship application on the page is still the 2025 form.",
         "Session price left blank because each week has member/guest and early-bird/regular rates."

@@ -83,7 +83,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "http://mach1fc.com/camps",
       "kind": "html",
@@ -125,6 +125,35 @@
         "Confirmed $279 full day / $179 half day per week, $40/week early drop-off (7:30) and late pickup (5 PM), address and email on 2026-11-12."
       ],
       "open_questions": [
+        "Ages are only given as birth-date ranges (U6-U8 Aug 2018-Jul 2021, U7-U11 Aug 2015-Jul 2020, U12-U14 Aug 2012-Jul 2015); age_min/age_max left blank.",
+        "Page says Summer 2027 \"early bird and registrations opening soon\", yet each session button says REGISTRATION OPEN; availability left unknown.",
+        "No phone number on the page.",
+        "Montville, CT camp could be its own listing if Andrew wants CT coverage (out of the Providence area at ~1h15)."
+      ]
+    },
+    "earlier_pass": {
+      "status": "ready",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "http://mach1fc.com/camps",
+      "changes": [
+        "Removed the three Montville, CT sessions: Montville is about 55 miles from Providence, outside the area, and is a different location from this listing's North Smithfield address.",
+        "Description no longer mentions Montville. Kept the four 2027 North Smithfield weeks, $179-$279/week and extended care ($40/week early drop-off or late pickup)."
+      ],
+      "for_andrew": [
+        "Ages are given only as birth-date ranges (U6-U14) that look unchanged from 2026, so age_min/age_max were left empty."
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "http://mach1fc.com/camps",
+      "changes": [
+        "Removed the three Montville, CT sessions (Jul 12-16, Jul 26-30, Aug 9-13, 2027): they run at a different site about 70 miles from Providence, and this listing is the North Smithfield camp. Kept the four North Smithfield 2027 weeks.",
+        "Rewrote description_short to drop Montville and name the North Smithfield venue.",
+        "Confirmed $279 full day / $179 half day per week, $40/week early drop-off (7:30) and late pickup (5 PM), address and email on 2026-11-12."
+      ],
+      "for_andrew": [
         "Ages are only given as birth-date ranges (U6-U8 Aug 2018-Jul 2021, U7-U11 Aug 2015-Jul 2020, U12-U14 Aug 2012-Jul 2015); age_min/age_max left blank.",
         "Page says Summer 2027 \"early bird and registrations opening soon\", yet each session button says REGISTRATION OPEN; availability left unknown.",
         "No phone number on the page.",

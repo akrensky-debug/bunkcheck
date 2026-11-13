@@ -73,7 +73,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.shoreschool.org/summer-shore/isteam-robotics",
       "kind": "html",
@@ -111,6 +111,20 @@
         "Re-fetched as BunkcheckBot on 2026-11-12: confirmed (July 27-31, 2026; $565 ages 5-7 and $585 ages 7-11; Enrollsy 'REGISTER TODAY!' link; contact and refund terms)"
       ],
       "open_questions": [
+        "Half-day only; no extended care, meals or camp-specific financial aid stated"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.shoreschool.org/summer-shore/isteam-robotics",
+      "changes": [
+        "Added registration_url (the page's 'REGISTER TODAY!' Enrollsy link)",
+        "Checked all other fields against the page: both 2026 sessions (July 27-31; 9:00-11:30 ages 5-7 $565; 12:30-3:00 ages 7-11 $585), contact, address, $100 cancellation fee and May 31 refund cutoff all match",
+        "Kept 2026 season: page still shows Summer 2026",
+        "Re-fetched as BunkcheckBot on 2026-11-12: confirmed (July 27-31, 2026; $565 ages 5-7 and $585 ages 7-11; Enrollsy 'REGISTER TODAY!' link; contact and refund terms)"
+      ],
+      "for_andrew": [
         "Half-day only; no extended care, meals or camp-specific financial aid stated"
       ]
     }

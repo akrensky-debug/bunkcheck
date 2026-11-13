@@ -165,7 +165,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.bpzoo.org/education-and-conservation/for-families/zoocrew/",
       "kind": "html",
@@ -228,6 +228,33 @@
         "Description rewritten to the summer program (age groups, hours, lunch option)"
       ],
       "open_questions": [
+        "Session end dates are the Friday of each 'week of' Monday (the portal sells week-long registrations; Friday is not printed)",
+        "2027 not posted; the page still shows 2026 dates"
+      ]
+    },
+    "earlier_pass": {
+      "status": "ready",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.bpzoo.org/education-and-conservation/for-families/zoocrew/",
+      "changes": [
+        "Replaced the two school-vacation sessions (Feb 17-20 and Apr 21-24, 2026) with the twelve 2026 Summer ZooCrew weeks listed on the page (July 6-August 14, by age group), each at the $350 full-day weekly price."
+      ],
+      "for_andrew": [
+        "Session price is the full-day rate; half day is $175/week (ages 4-5 only), members get 15% off. New Bedford is about 30 miles from Providence, at the edge of the area."
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.bpzoo.org/education-and-conservation/for-families/zoocrew/",
+      "changes": [
+        "Replaced the winter (Feb) and spring (Apr) vacation sessions, whose $240 prices were computed, with the 12 summer 2026 weeks from the registration portal (Mon-Fri, $350 full day; 7 marked Sold Out = full)",
+        "Added registration_url (Summer ZooCrew registration portal)",
+        "Categories: nature primary, STEM secondary; indoor_outdoor outdoor",
+        "Description rewritten to the summer program (age groups, hours, lunch option)"
+      ],
+      "for_andrew": [
         "Session end dates are the Friday of each 'week of' Monday (the portal sells week-long registrations; Friday is not printed)",
         "2027 not posted; the page still shows 2026 dates"
       ]

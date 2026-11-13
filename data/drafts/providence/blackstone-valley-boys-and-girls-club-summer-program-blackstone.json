@@ -60,7 +60,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.bvbgc.com/summer-program.html",
       "kind": "html",
@@ -120,6 +120,38 @@
         "No session dates on the page; 2027 information promised 'after the New Year'.",
         "An ACA logo image appears on the page but no text says the camp is accredited; aca_accredited left empty."
       ]
-    }
+    },
+    "earlier_pass": {
+      "status": "needs_andrew",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.bvbgc.com/summer-program.html",
+      "changes": [
+        "primary_categories sports, nature -> general: it is a general recreational and educational program with swimming, sports and fishing",
+        "Checked the rest against the page: ages 6-13, entering 1st grade, hours, no refunds after start, pool and river all match"
+      ],
+      "for_andrew": [
+        "Prices on the page are placeholders ($000 per child, $20 membership); the club says 2027 information comes 'after the New Year'. Ask the owner, or re-check in January.",
+        "Page shows an ACA logo image but never says the program is accredited; aca_accredited left null"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.bvbgc.com/summer-program.html",
+      "changes": [
+        "primary_categories: replaced 'nature' with 'general' and 'swimming' (page describes a recreational program with an outdoor pool and sports fields; fishing alone does not make it a nature camp)",
+        "Re-checked all other fields against the page; they match. Source row date updated."
+      ],
+      "for_andrew": [
+        "Prices on the page are placeholders ($000 per child, $20 membership); the club says 2027 information comes 'after the New Year'. Ask the owner, or re-check in January.",
+        "Prices are placeholders on the page ('$000', '$0000'); no tuition recorded.",
+        "No session dates on the page; 2027 information promised 'after the New Year'.",
+        "An ACA logo image appears on the page but no text says the camp is accredited; aca_accredited left empty."
+      ]
+    },
+    "ask_owner": [
+      "price"
+    ]
   }
 }

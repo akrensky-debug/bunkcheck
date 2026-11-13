@@ -34,6 +34,7 @@
   .price small { color: var(--muted); font-weight: 400; }
   .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
   .chip { font-size: 12px; padding: 2px 8px; border-radius: 999px; background: var(--warn-soft); color: var(--muted); }
+  .season { color: var(--muted); font-size: 12.5px; margin-top: 4px; }
   .chip.ok { background: var(--ok-soft); color: var(--ok); font-weight: 600; }
   .why { color: var(--ink); font-size: 12.5px; margin-top: 8px; display: flex; gap: 6px; align-items: baseline; }
   .why::before { content: ""; flex: none; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 2px var(--brand-soft); transform: translateY(-1px); }
@@ -89,12 +90,17 @@
     if (c.financial_aid) chips.push(`<span class="chip">Financial aid</span>`);
     const where = [c.city && c.state ? `${c.city}, ${c.state}` : "", c.distance_miles != null ? `${c.distance_miles} mi` : ""].filter(Boolean).join(" · ");
     const price = session && session.price != null ? session.price : c.price_per_week;
+    // Last season's dates and prices are still useful, but never shown as this season's.
+    const oldYear = session ? (session.last_season ? session.start_date.slice(0, 4) : null)
+                            : (c.last_season ? c.season_year : null);
+    const season = oldYear ? `<div class="season">${esc(oldYear)} ${session ? "dates and price" : "price"}. New season not posted yet.</div>` : "";
     return `<div class="card">
       <div class="row">
         <div><div class="name">${esc(c.name)}</div><div class="meta">${esc(where)}</div></div>
         ${price != null ? `<div class="price">$${Math.round(price)}<small>${session ? "" : "/wk"}</small></div>` : ""}
       </div>
       ${session ? `<div class="dates">${day(session.start_date)} – ${day(session.end_date)}${session.availability === "limited" || session.availability === "waitlist" ? " · " + esc(session.availability) : ""}</div>` : ""}
+      ${season}
       <div class="chips">${chips.join("")}</div>
       ${c.match_reasons && c.match_reasons.length ? `<div class="why">${esc(c.match_reasons.slice(0, 2).join(" · "))}</div>` : ""}
       <button class="btn" data-url="${esc(c.url)}">Details and request info →</button>
@@ -126,11 +132,24 @@
     </div>`;
   }
 
+  // A question to a camp (send_inquiry): the preview, and the parent's yes on Bunkcheck.
+  function inquiryCard(q) {
+    const p = q.preview || {};
+    return `<div class="card">
+      <div class="meta">Your question for</div><div class="name">${esc(p.to)}</div>
+      <pre class="why" style="white-space:pre-wrap;font:inherit">${esc(p.text)}</pre>
+      <div class="meta">Nothing has been sent. It goes to the camp only after you confirm on Bunkcheck, where you can also choose whether to share your contact details.</div>
+      <button class="btn" data-url="${esc(q.confirm_url)}">Review and send on Bunkcheck →</button>
+    </div>`;
+  }
+
   function render(data) {
     const root = document.getElementById("root");
     if (!data) return;
     const parts = [];
-    if (data.activities) {
+    if (data.inquiry) {
+      parts.push(inquiryCard(data.inquiry));
+    } else if (data.activities) {
       if (data.activities.length) data.activities.forEach(a => parts.push(activityCard(a)));
       else parts.push(`<div class="empty">${esc(data.note || "No classes matched. Try other days or a wider area.")}</div>`);
     } else if (data.sessions && data.sessions.length) {
@@ -174,7 +193,7 @@
   });
 
   request("ui/initialize", {
-    appInfo: { name: "Bunkcheck", version: "1.2.0" },
+    appInfo: { name: "Bunkcheck", version: "1.4.0" },
     appCapabilities: { availableDisplayModes: ["inline"] },
     protocolVersion: "2026-01-26",
   }).then(result => {

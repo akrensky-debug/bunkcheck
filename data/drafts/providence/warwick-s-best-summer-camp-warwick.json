@@ -55,7 +55,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://warwicksbestsummercamp.com/",
       "kind": "html",
@@ -106,6 +106,31 @@
         "Verified contact, address, activities, before/after care and description against the page; season_year still missing"
       ],
       "open_questions": [
+        "The page says it is 'static (not updated) year round' and puts dates, prices and registration behind a contact form ('Entering your information will forward you to a page with up-to-date scheduling and registration details'). We may not submit forms, so season_year (required), ages, dates and prices cannot be filled. Ask the camp, or drop the listing?",
+        "Parts of the page are template text about martial-arts 'classes' and 'ninja moves' that do not describe the camp; they were not used"
+      ]
+    },
+    "earlier_pass": {
+      "status": "needs_andrew",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://warwicksbestsummercamp.com/",
+      "changes": [
+        "primary_categories sports -> general: the page describes a general day camp (games, arts and crafts, park, pool, field trips, guests)."
+      ],
+      "for_andrew": [
+        "season_year still missing: the page is a static marketing page with no year, dates, ages or prices; those sit behind a contact-info form ('See Camp Info and Registration Options'). Ask the owner for 2027 dates and prices."
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://warwicksbestsummercamp.com/",
+      "changes": [
+        "Categories: primary general (traditional day camp: games, crafts, park, pool, field trips), sports and arts as secondary; 'sports' alone was a guess",
+        "Verified contact, address, activities, before/after care and description against the page; season_year still missing"
+      ],
+      "for_andrew": [
         "The page says it is 'static (not updated) year round' and puts dates, prices and registration behind a contact form ('Entering your information will forward you to a page with up-to-date scheduling and registration details'). We may not submit forms, so season_year (required), ages, dates and prices cannot be filled. Ask the camp, or drop the listing?",
         "Parts of the page are template text about martial-arts 'classes' and 'ninja moves' that do not describe the camp; they were not used"
       ]

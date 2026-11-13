@@ -117,7 +117,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://everwooddaycamp.com/dates-enrollment/",
       "kind": "html",
@@ -176,6 +176,29 @@
         "Re-fetched as BunkcheckBot on 2026-11-12: confirmed"
       ],
       "open_questions": [
+        "Financial aid is limited to Sharon residents (income-based scholarships, apply before April 1)",
+        "ACA accreditation is the camp's own claim on its FAQ; not checked against ACA's site",
+        "Post Week price on its own and bus fees are not on the pages checked; daily core camp hours not stated",
+        "Session note says 4, 6 or 8 weeks; summary also mentions 9-week summers (Full Summer price $7,640 includes Post Week)"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://everwooddaycamp.com/dates-enrollment/",
+      "changes": [
+        "Added ages 4-15 (FAQ: 'serves children approximately ages 4 through 15'; homepage title 'A Day Camp for Ages 4-15')",
+        "Added email info@everwooddaycamp.com (Cloudflare-protected address on the Dates page)",
+        "Categories: primary general (FAQ: 'traditional coed day camp offering a wide range of activities'); swimming, sports, arts, outdoor, adventure, nature moved to secondary",
+        "meals_included false: FAQ says pack a peanut/tree-nut free lunch; the camp provides morning and afternoon snacks",
+        "swim_waterfront_notes rewritten from the FAQ (required daily Red Cross instruction Pre-K-4th, elective 5th-10th, daily free swim, Lake Massapoag)",
+        "Added aca_accredited true with the FAQ as source (camp's own statement)",
+        "financial_aid now sourced to the Financial Assistance page (limited scholarships for Sharon residents only)",
+        "Description: added the lake setting, ages and activity list from the FAQ",
+        "Kept the 2027 pricing-table rates ($1,995-$7,640); the Early Bird $1,890-$7,350 rates ended September 30, 2026",
+        "Re-fetched as BunkcheckBot on 2026-11-12: confirmed"
+      ],
+      "for_andrew": [
         "Financial aid is limited to Sharon residents (income-based scholarships, apply before April 1)",
         "ACA accreditation is the camp's own claim on its FAQ; not checked against ACA's site",
         "Post Week price on its own and bus fees are not on the pages checked; daily core camp hours not stated",

@@ -59,7 +59,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://westwarwickri.gov/civic-center",
       "kind": "html",
@@ -101,6 +101,32 @@
         "street_address trimmed to '100 Factory Street'; primary category general; description adds the week-to-week payment and early-bird discounts."
       ],
       "open_questions": [
+        "No ages/grades and no weekly price on either page.",
+        "No 2027 information yet; 2026 registration opened in winter ('It may be chilly outside ... registration ... is now open') with no exact date."
+      ]
+    },
+    "earlier_pass": {
+      "status": "ready",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://westwarwickri.gov/civic-center",
+      "changes": [
+        "No changes: name, dates (June 16-August 14, 2026), hours, location, extended care and 'FULL' availability match the page."
+      ],
+      "for_andrew": [
+        "Phone 401-822-9200 is the town hall number from the page footer, not a camp-specific line. No ages or prices on the page."
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://westwarwickri.gov/civic-center",
+      "changes": [
+        "Added the program email Westwarwickprograms@gmail.com from the 2026 Summer Program announcement page.",
+        "Phone 401-822-9200 kept: it is the only phone on the page (Town Hall footer line), resolving the low-confidence item.",
+        "street_address trimmed to '100 Factory Street'; primary category general; description adds the week-to-week payment and early-bird discounts."
+      ],
+      "for_andrew": [
         "No ages/grades and no weekly price on either page.",
         "No 2027 information yet; 2026 registration opened in winter ('It may be chilly outside ... registration ... is now open') with no exact date."
       ]

@@ -83,7 +83,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://braecrestschool.com/summer/childrens-summer-camp",
       "kind": "html",
@@ -150,6 +150,36 @@
         "Everything else (ages 5-12 with one year of ballet, activities, bring your own lunch) matches the page."
       ],
       "open_questions": [
+        "Prices are not on the camp page or the announcement.",
+        "Daily hours are not stated.",
+        "The contact address is the school's; the camp page does not name a different site, so the camp is assumed to run there ('a beautiful country setting').",
+        "No 2027 dates or registration date posted. The camp page says 'Enrollment is open year-round' and registration is by phone or email."
+      ]
+    },
+    "earlier_pass": {
+      "status": "ready",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://braecrestschool.com/summer/childrens-summer-camp",
+      "changes": [
+        "Filled street_address, city Lincoln, state, zip 02865 and phone from the school contact page (braecrestschool.com/contact); state moved to that source"
+      ],
+      "for_andrew": [
+        "Session dates (July 6-10, July 13-17) show no year; 2026 inferred (both Mon-Fri in 2026, page (c) 2026). 2027 dates not posted",
+        "No prices on the page; both weeks marked fully booked; slug lacks a town suffix (children-s-summer-ballet-camp)"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://braecrestschool.com/summer/childrens-summer-camp",
+      "changes": [
+        "Added the school's address, phone and email from the Contact page: 52 Sherman Ave., Lincoln, RI 02865, (401) 334-2560, braecrest@stateballet.com. State now sourced from that page instead of the 'State Ballet of Rhode Island' line.",
+        "Season year 2026 confirmed: the 'Children's Summer Camp' announcement was published June 4th, 2026 with the same two weeks (July 6-10 and July 13-17).",
+        "Kept both sessions as full: the camp page says 'This session is fully booked' for both weeks.",
+        "Everything else (ages 5-12 with one year of ballet, activities, bring your own lunch) matches the page."
+      ],
+      "for_andrew": [
         "Prices are not on the camp page or the announcement.",
         "Daily hours are not stated.",
         "The contact address is the school's; the camp page does not name a different site, so the camp is assumed to run there ('a beautiful country setting').",

@@ -114,7 +114,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.weymouthclub.com/camps/tfa-camp-traditional-track-ages-6-13/",
       "kind": "html",
@@ -192,6 +192,21 @@
         "Prices confirmed as posted (member $469 / non-member $569 per week; July 4th week $375 / $455); zip 02188 is the club's street address in the footer (02189 is only the forms mailing address)"
       ],
       "open_questions": [
+        "Weekly prices are still headed 'Summer Camp Pricing 2026'; 2027 rates may differ",
+        "Individual summer weeks are not listed (one June 14 - Sept 3 block); dates 'subject to change'",
+        "Sessions include school-vacation days (MLK Day, February and April vacation weeks, Good Friday) with no prices"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.weymouthclub.com/camps/tfa-camp-traditional-track-ages-6-13/",
+      "changes": [
+        "No changes needed: every filled field matches the page",
+        "season_year 2027 confirmed: the date list is now headed '2026 / 2027 dates' and June 14 - Sept 3 fall Monday to Friday in 2027 (resolves the season_year and session-date low-confidence items)",
+        "Prices confirmed as posted (member $469 / non-member $569 per week; July 4th week $375 / $455); zip 02188 is the club's street address in the footer (02189 is only the forms mailing address)"
+      ],
+      "for_andrew": [
         "Weekly prices are still headed 'Summer Camp Pricing 2026'; 2027 rates may differ",
         "Individual summer weeks are not listed (one June 14 - Sept 3 block); dates 'subject to change'",
         "Sessions include school-vacation days (MLK Day, February and April vacation weeks, Good Friday) with no prices"

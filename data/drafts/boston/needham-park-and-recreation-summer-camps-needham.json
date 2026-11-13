@@ -43,7 +43,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.needhamma.gov/5541/Summer-Camp-Guide",
       "kind": "html",
@@ -87,6 +87,22 @@
         "Added meals_included=false, refund policy (no refunds, credits; cancel by noon Thursday before) and email parkandrecreation@needhamma.gov"
       ],
       "open_questions": [
+        "Umbrella listing for nine different town camps with no ages, grades or prices on the site (the Summer Brochure is not posted; only Fall/Winter 2026-2027 is). Andrew to decide: keep as one listing, split into per-camp listings once the 2027 brochure is out, or drop.",
+        "Parent Guide gives the office ZIP as 02494; the web page says 02492. Draft keeps 02492.",
+        "No 2027 dates or registration date posted. 2026 registration began February 11 (non-residents one week later)."
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.needhamma.gov/5541/Summer-Camp-Guide",
+      "changes": [
+        "camp_type set to day (Parent Guide: daily drop-off from 9:00am, campers bring lunch); clears the camp_type error",
+        "Added the seven 2026 weeks (June 29-July 2 through Aug 10-14) from the 2026 Parent Guide PDF",
+        "Description rewritten to name the nine camps offered (it was about JotForm and discipline)",
+        "Added meals_included=false, refund policy (no refunds, credits; cancel by noon Thursday before) and email parkandrecreation@needhamma.gov"
+      ],
+      "for_andrew": [
         "Umbrella listing for nine different town camps with no ages, grades or prices on the site (the Summer Brochure is not posted; only Fall/Winter 2026-2027 is). Andrew to decide: keep as one listing, split into per-camp listings once the 2027 brochure is out, or drop.",
         "Parent Guide gives the office ZIP as 02494; the web page says 02492. Draft keeps 02492.",
         "No 2027 dates or registration date posted. 2026 registration began February 11 (non-residents one week later)."

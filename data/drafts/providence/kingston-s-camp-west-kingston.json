@@ -94,7 +94,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.kingstonscamp.com/kingstons-camp-home",
       "kind": "html",
@@ -138,6 +138,35 @@
         "Categories changed to general and outdoor (secondary swimming, leadership); activities expanded; description rewritten from the pages."
       ],
       "open_questions": [
+        "The 2026 Middle School Gopher Program weeks had 'limited availability' at $205 to $265/week; sessions show the Main Program only.",
+        "No 2027 dates or prices posted; 2026 waitlisted families get the returning-camper window for 2027 but no date is given."
+      ]
+    },
+    "earlier_pass": {
+      "status": "ready",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.kingstonscamp.com/kc-camp-registration-pricing",
+      "changes": [
+        "Set camp_type day: Monday-Friday 9:00am-3:00pm weekly sessions (pricing page).",
+        "Added ages 4-14 / grades K-9 (Main Program K-6 ages 4-11; Middle School Gopher Program grades 7-9 ages 12-14).",
+        "Added price_min 205 / price_max 350 per week (three-tier pricing for both programs), extended_care true (early drop-off/late pickup), financial_aid true (tiered pricing plus extra assistance on request), refund policy.",
+        "Added the 10 weekly 2026 sessions (June 22 - Aug 28); availability left unknown because the Elementary program was waitlisted but Middle School still had space.",
+        "email moved to the pricing page source, where it appears."
+      ],
+      "for_andrew": []
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.kingstonscamp.com/kingstons-camp-home",
+      "changes": [
+        "Set camp_type day ('an all outdoor day camp') and outdoor setting.",
+        "Added the ten 2026 weeks (6/22 to 8/28) at the $350 Tier 1 Main Program rate, all shown as Waitlist; week 10 is the bonus week at Larkin's Pond.",
+        "Added ages 4-14, grades K-9, prices $205 to $350 per week (tiered), extended care, no meals, financial aid (tiered pricing), ACA accredited (stated on the FAQ page), refund, special needs and waterfront notes.",
+        "Categories changed to general and outdoor (secondary swimming, leadership); activities expanded; description rewritten from the pages."
+      ],
+      "for_andrew": [
         "The 2026 Middle School Gopher Program weeks had 'limited availability' at $205 to $265/week; sessions show the Main Program only.",
         "No 2027 dates or prices posted; 2026 waitlisted families get the returning-camper window for 2027 but no date is given."
       ]

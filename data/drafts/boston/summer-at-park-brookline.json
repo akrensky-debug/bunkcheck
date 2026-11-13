@@ -105,7 +105,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.parkschool.org/community/summer-programs",
       "kind": "html",
@@ -180,6 +180,25 @@
         "Description updated: over 35 programs (camp site), grade range, shuttle; resolves missing season_year error"
       ],
       "open_questions": [
+        "No prices on the camp site text (the Camp Calendar page renders nothing readable)",
+        "The director phone shows as 617-274-6025 but its tel: link dials 617-209-9784",
+        "Extended Day and Transportation pages still describe Summer 2026 (AM 7:30-8:30, PM 3:30-6:00); 2027 details not posted",
+        "Camp site says 'No Camp: Friday, 7/5/2027', but July 5, 2027 is a Monday",
+        "Creative Arts at Park (CAAP, ages 7-15) is a separate camp on the same overview page and could get its own listing"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.parkschool.org/community/summer-programs",
+      "changes": [
+        "website_url: Park School overview -> the camp's own site https://www.summeratpark.org/ (resolves low-confidence website item); added CampBrain registration_url",
+        "Phone 617-277-2456 (school main line) -> 617-274-6025 (Summer at Park Director, camp site); added email summerprograms@parkschool.org",
+        "Set season_year 2027: camp site gives First Day Monday 6/14/2027, no camp 7/5/2027, last day Friday 8/13/2027 (noon close); added one season-long session for those dates",
+        "Added grades PreK-10 (camp site: 'kids PreK through 10th grade'), aca_accredited true (camp site says ACA-accredited), transportation true (weekly shuttle bus from Brookline Village T stop), financial_aid true (Financial Aid page)",
+        "Description updated: over 35 programs (camp site), grade range, shuttle; resolves missing season_year error"
+      ],
+      "for_andrew": [
         "No prices on the camp site text (the Camp Calendar page renders nothing readable)",
         "The director phone shows as 617-274-6025 but its tel: link dials 617-209-9784",
         "Extended Day and Transportation pages still describe Summer 2026 (AM 7:30-8:30, PM 3:30-6:00); 2027 details not posted",

@@ -45,7 +45,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://pawtucketri.gov/2026-slater-park-summer-camp-info-packet/",
       "kind": "html",
@@ -97,6 +97,35 @@
         "operator_name -> City of Pawtucket Parks & Recreation Division; description rewritten from the packet; category general."
       ],
       "open_questions": [
+        "ZIP still missing: the packet gives no street address for Slater Memorial Park or its office, and Pawtucket has more than one ZIP, so the validator fails on zip. Andrew: supply the park's address (then the Census geocoder can give the ZIP).",
+        "Camp is for Pawtucket residents only (proof of residency required).",
+        "Pages 10-11 of the packet were not read; field trip prices are blank in the packet.",
+        "Nothing posted for 2027 yet."
+      ]
+    },
+    "earlier_pass": {
+      "status": "ready",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://pawtucketri.gov/2026-slater-park-summer-camp-info-packet/",
+      "changes": [
+        "Read the linked 2026 registration packet PDF (same city site) and filled camp_type=day, ages 6-13, address (Slater Park Office, 825 Armistice Blvd, 02861), phone, activities, $40/session ($80 both), lunch included, and the two 2026 sessions; description rewritten from the packet."
+      ],
+      "for_andrew": [
+        "Camp is for Pawtucket residents only (proof of residency required).",
+        "Only the 2026 packet is posted; no 2027 dates yet. Optional field trips cost extra."
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://pawtucketri.gov/2026-slater-park-summer-camp-info-packet/",
+      "changes": [
+        "Read the linked 2026 registration packet (a scanned PDF, read page images) and filled: camp_type day, ages 6-13, two 2026 sessions at $40 each ($80 both), price_per session, free lunch (meals_included true), activities, refund policy, Recreation Office phone (401) 728-0500 ext. 253.",
+        "registration_url: the packet PDF -> the RecDesk online registration link the packet gives.",
+        "operator_name -> City of Pawtucket Parks & Recreation Division; description rewritten from the packet; category general."
+      ],
+      "for_andrew": [
         "ZIP still missing: the packet gives no street address for Slater Memorial Park or its office, and Pawtucket has more than one ZIP, so the validator fails on zip. Andrew: supply the park's address (then the Census geocoder can give the ZIP).",
         "Camp is for Pawtucket residents only (proof of residency required).",
         "Pages 10-11 of the packet were not read; field trip prices are blank in the packet.",

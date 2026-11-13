@@ -134,7 +134,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://sailnewport.org/youth-sailing-programs/youth-instruction/",
       "kind": "html",
@@ -192,6 +192,38 @@
         "refund_policy_summary reworded so the 2026 cutoff date is labeled as such."
       ],
       "open_questions": [
+        "2027 rates are TBD.",
+        "The refund policy on the page still carries 2026 dates (April 12/13, 2026).",
+        "Handbooks for 2027 come Feb. 1; Little Guppies and Keelboat handbooks linked are 2025."
+      ]
+    },
+    "earlier_pass": {
+      "status": "ready",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://sailnewport.org/youth-sailing-programs/youth-instruction/",
+      "changes": [
+        "Page now shows the 2027 schedule: replaced the 2026 sessions with 2027 dates and set season_year 2027.",
+        "Removed price_min/price_max and session prices: page says '2027 Rates - TBD'.",
+        "Removed refund_policy_summary: its cutoffs are still dated April 12/13, 2026.",
+        "Updated description_short with the 2027 page's age ranges (dinghy 7-17, keelboat 12-17, Little Guppies 5-6)."
+      ],
+      "for_andrew": [
+        "2027 rates are TBD; 2027 application window runs Dec 28, 2026 - Jan 31, 2027. Add prices and the refund policy when posted."
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://sailnewport.org/youth-sailing-programs/youth-instruction/",
+      "changes": [
+        "Moved to the 2027 season: the page now posts the 2027 schedule. Replaced all sessions with 2027 dates: 4 dinghy, 2 Little Guppies, 5 keelboat sessions.",
+        "Removed price_min/price_max ($230-$825 were 2026 rates); page says '2027 Rates – TBD', so session prices are null.",
+        "primary_categories ['sports','nature'] -> ['sailing'].",
+        "description_short rewritten: Little Guppies now has two sessions; added the application/placement process.",
+        "refund_policy_summary reworded so the 2026 cutoff date is labeled as such."
+      ],
+      "for_andrew": [
         "2027 rates are TBD.",
         "The refund policy on the page still carries 2026 dates (April 12/13, 2026).",
         "Handbooks for 2027 come Feb. 1; Little Guppies and Keelboat handbooks linked are 2025."

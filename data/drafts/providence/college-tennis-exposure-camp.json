@@ -46,7 +46,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "drop",
     "source": {
       "url": "https://collegetennis.com/locations/",
       "kind": "html",
@@ -95,6 +95,29 @@
         "No changes to the record: the only posted camp is Nov 14-15, 2026 at the USTA National Campus in Lake Nona, FL (ages 14-18, $975); it is not in our area and not a summer session."
       ],
       "open_questions": [
+        "The Brown University (Providence) and MIT location pages now return 404; Summer 2027 dates and locations are 'coming soon' (waitlist only). Re-draft from the Brown page if a 2027 Providence session is announced.",
+        "Location hub still lists Brown, MIT and Lehigh with no dates."
+      ]
+    },
+    "earlier_pass": {
+      "status": "drop",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://collegetennis.com/locations/",
+      "changes": [],
+      "for_andrew": [
+        "If a 2027 Brown University (Providence) session is announced, it could be re-drafted from that location page"
+      ],
+      "drop_reason": "Not a Providence-area summer camp as drafted: the only dated session is Nov 14-15, 2026 at USTA National Campus, Lake Nona FL; the Brown University location page (collegetennis.com/brown-university/) returns 404 and the hub lists Brown with no dates"
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://collegetennis.com/locations/",
+      "changes": [
+        "No changes to the record: the only posted camp is Nov 14-15, 2026 at the USTA National Campus in Lake Nona, FL (ages 14-18, $975); it is not in our area and not a summer session."
+      ],
+      "for_andrew": [
         "The Brown University (Providence) and MIT location pages now return 404; Summer 2027 dates and locations are 'coming soon' (waitlist only). Re-draft from the Brown page if a 2027 Providence session is announced.",
         "Location hub still lists Brown, MIT and Lehigh with no dates."
       ]

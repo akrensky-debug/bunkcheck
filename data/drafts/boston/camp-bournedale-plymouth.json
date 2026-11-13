@@ -190,7 +190,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://campbournedale.com/camp_dates_rates/",
       "kind": "html",
@@ -293,6 +293,24 @@
         "extended_care true confirmed: early drop off at 8 AM and late pick up by 6 PM, $75 per week each"
       ],
       "open_questions": [
+        "Only 2026 dates and prices posted; no 2027 information yet",
+        "Page states two payment deadlines (10 days and 1 week before arrival)",
+        "No refund policy, deposit or financial aid information"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://campbournedale.com/camp_dates_rates/",
+      "changes": [
+        "Added email bournedale@comcast.net (shown in the site header)",
+        "Added ages: Co-ed Day Camp ages 7 to 14 (age_max 14), Little Guppies ages 4 to 6 (age_min 4)",
+        "description_short now gives ages and hours (9 AM-5 PM day camp, 9 AM-3 PM Little Guppies)",
+        "swim_waterfront_notes now names Great Herring Pond, the 15-foot iceberg and the indoor heated pool",
+        "Re-sourced activities and primary_categories to the day camp page, which lists them; confirmed all 2026 session dates and prices on Dates & Rates (resolves low-confidence items)",
+        "extended_care true confirmed: early drop off at 8 AM and late pick up by 6 PM, $75 per week each"
+      ],
+      "for_andrew": [
         "Only 2026 dates and prices posted; no 2027 information yet",
         "Page states two payment deadlines (10 days and 1 week before arrival)",
         "No refund policy, deposit or financial aid information"

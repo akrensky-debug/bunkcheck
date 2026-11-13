@@ -73,7 +73,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://levitatecamps.com/watermans-camp/",
       "kind": "html",
@@ -119,6 +119,21 @@
         "Other fields match: ages 13-15, Rexhame Beach 325 Standish St, refund policy (also on the Registration and FAQ pages)"
       ],
       "open_questions": [
+        "The page says sessions run Monday through Thursday but lists each 2027 week as Monday to Friday",
+        "No price on the camp, Registration or FAQ pages (prices only in UltraCamp)",
+        "Swim ability requirement not stated on the Waterman's page"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://levitatecamps.com/watermans-camp/",
+      "changes": [
+        "Moved to the 2027 season: the page banner now reads '2027 Camp Registration January 22 9AM' and lists three weeks, Monday 7/5 - Friday 7/9 (3:30-7:30pm), Monday 7/19 - Friday 7/23 (3:30-7:30pm) and Monday 8/2 - Friday 8/6 (7:00-11:00am), which fall Monday to Friday in 2027",
+        "Description: 'Monday through Thursday' removed, since the 2027 weeks are listed Monday to Friday (the page still says 'Monday through Thursday, 4 hours per day')",
+        "Other fields match: ages 13-15, Rexhame Beach 325 Standish St, refund policy (also on the Registration and FAQ pages)"
+      ],
+      "for_andrew": [
         "The page says sessions run Monday through Thursday but lists each 2027 week as Monday to Friday",
         "No price on the camp, Registration or FAQ pages (prices only in UltraCamp)",
         "Swim ability requirement not stated on the Waterman's page"

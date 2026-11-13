@@ -95,7 +95,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.carrollschool.org/learn/summer",
       "kind": "html",
@@ -138,6 +138,22 @@
         "Description now mentions the Orton-Gillingham tutoring, afternoon enrichment and the two campuses"
       ],
       "open_questions": [
+        "Classification: the FAQ says 'Summer@Carroll is not a licensed recreational day camp' and payments are 'school tuition'. Andrew to decide whether to list it (as an academic/special-needs summer program) or drop it.",
+        "2027 tuition is 'TBA'.",
+        "Grades 5-9 meet at 25 Baker Bridge Road, Lincoln 01773; listing address is the Waltham campus."
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.carrollschool.org/learn/summer",
+      "changes": [
+        "Confirmed the 2027 dates already in the draft: 'Wednesday, June 30 through Tuesday, August 3 (no programs on Monday, July 5th)' and the four grade programs, sites and hours",
+        "Added financial_aid=true and meals_included=false from the Summer FAQs (financial assistance available; families pack lunch)",
+        "registration_url set to the Summer@Carroll Apply page",
+        "Description now mentions the Orton-Gillingham tutoring, afternoon enrichment and the two campuses"
+      ],
+      "for_andrew": [
         "Classification: the FAQ says 'Summer@Carroll is not a licensed recreational day camp' and payments are 'school tuition'. Andrew to decide whether to list it (as an academic/special-needs summer program) or drop it.",
         "2027 tuition is 'TBA'.",
         "Grades 5-9 meet at 25 Baker Bridge Road, Lincoln 01773; listing address is the Waltham campus."

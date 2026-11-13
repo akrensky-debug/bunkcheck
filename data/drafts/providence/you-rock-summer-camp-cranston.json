@@ -65,7 +65,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.yourockschoolofmusic.com/summer-camp2026",
       "kind": "html",
@@ -105,6 +105,32 @@
         "Description now includes hours and price; other fields re-checked and match."
       ],
       "open_questions": [
+        "No week dates or ages on either page ('all ages'); the booking page shows no availability now.",
+        "No 2027 information yet."
+      ]
+    },
+    "earlier_pass": {
+      "status": "needs_andrew",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.yourockschoolofmusic.com/summer-camp2026",
+      "changes": [
+        "Added registration_url: the page's 'Book Your Camp!' button target."
+      ],
+      "for_andrew": [
+        "season_year missing: the page text gives no year, dates, ages or prices; only the URLs say 'summer-camp2026'/'summercamp2026' and the booking page is a JS app. Confirm the season and weeks with the school."
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.yourockschoolofmusic.com/summer-camp2026",
+      "changes": [
+        "Set season_year 2026 from the linked booking page ('Summer Camp 2026!') and the page URL; validator now passes.",
+        "Added registration_url (Opus1 booking page) and price $489 per week (6 hours a day).",
+        "Description now includes hours and price; other fields re-checked and match."
+      ],
+      "for_andrew": [
         "No week dates or ages on either page ('all ages'); the booking page shows no availability now.",
         "No 2027 information yet."
       ]

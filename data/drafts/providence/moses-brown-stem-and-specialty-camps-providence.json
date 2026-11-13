@@ -307,7 +307,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.camps.mosesbrown.org/stemandspecialty",
       "kind": "html",
@@ -368,6 +368,30 @@
         "No changes: all 11 programs, grades/ages, prices, weeks, waitlist notes, address, email, phone and registration link match the STEM and Specialty page on 2026-11-12. Page still shows the 2026 season with no year; no 2027 dates posted."
       ],
       "open_questions": [
+        "Session years are inferred as 2026 (\"June 15 (no camp June 19)\" fits 2026); the page itself shows no year.",
+        "Culinary Camp price is not shown.",
+        "Lunch, extended-day cost and cancellation policy are on separate pages that could not be fetched (Firecrawl credits ran out mid-check).",
+        "Page footer shows an ACA accreditation logo image only; aca_accredited left blank."
+      ]
+    },
+    "earlier_pass": {
+      "status": "ready",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.camps.mosesbrown.org/stemandspecialty",
+      "changes": [
+        "Checked every field and session against the page; no changes. Year is not printed but 'no camp June 19' matches 2026."
+      ],
+      "for_andrew": []
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.camps.mosesbrown.org/stemandspecialty",
+      "changes": [
+        "No changes: all 11 programs, grades/ages, prices, weeks, waitlist notes, address, email, phone and registration link match the STEM and Specialty page on 2026-11-12. Page still shows the 2026 season with no year; no 2027 dates posted."
+      ],
+      "for_andrew": [
         "Session years are inferred as 2026 (\"June 15 (no camp June 19)\" fits 2026); the page itself shows no year.",
         "Culinary Camp price is not shown.",
         "Lunch, extended-day cost and cancellation policy are on separate pages that could not be fetched (Firecrawl credits ran out mid-check).",

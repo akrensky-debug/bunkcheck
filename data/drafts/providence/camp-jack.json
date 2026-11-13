@@ -68,7 +68,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://peopleincfr.org/services/diabetes-association-inc/camp-jack/",
       "kind": "html",
@@ -115,6 +115,39 @@
         "Added 6 weekly 2026 sessions starting Monday July 6, 2026 (page) for the brochure's six-week season; dropped tracking parameters from the registration URL."
       ],
       "open_questions": [
+        "The brochure's theme weeks are for 2025, so $230/week may be the 2025 price; 2026 price not stated elsewhere.",
+        "2026 end date is inferred from 'six weeks' + first day July 6 (=> Aug 14); the page gives only the first day.",
+        "Campers must have type 1 diabetes or be a sibling/relative/close friend of a camper with T1D."
+      ]
+    },
+    "earlier_pass": {
+      "status": "needs_andrew",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://peopleincfr.org/services/diabetes-association-inc/camp-jack/",
+      "changes": [
+        "Read the camp brochure PDF linked from the page (new source): location is the Camp Welch site, 127 North Main Street, Assonet, MA; ages 5-14; T1D focus; ACA accredited; financial assistance; activities; director email",
+        "camp_type day, primary_categories special_needs from the brochure",
+        "zip 02702 from the US Census geocoder for 127 N Main St, Assonet (own source)",
+        "Wrote description_short, special_needs_notes and swim_waterfront_notes from the brochure"
+      ],
+      "for_andrew": [
+        "The brochure is the 2025 edition (its theme weeks are dated 2025); confirm ages, location and ACA status still hold. The page itself only says 'First Day of Camp: Monday, July 6th, 2026'",
+        "Brochure price is $230 per week per camper (2025 edition); left out of price fields because it may not be the 2026 rate",
+        "Same site as the Camp Welch draft (Fall River Boys & Girls Club); they are separate programs"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://peopleincfr.org/services/diabetes-association-inc/camp-jack/",
+      "changes": [
+        "Filled location from the brochure and handbook: Camp Welch, 127 North Main Street, Assonet, MA; ZIP 02702 from the Census geocoder (~35 min from Providence).",
+        "camp_type day, ages 5-14, categories special_needs/general, activities, description from the brochure.",
+        "Added $230/week, financial aid, ACA accreditation (brochure), bus transportation and bring-your-own-lunch (handbook).",
+        "Added 6 weekly 2026 sessions starting Monday July 6, 2026 (page) for the brochure's six-week season; dropped tracking parameters from the registration URL."
+      ],
+      "for_andrew": [
         "The brochure's theme weeks are for 2025, so $230/week may be the 2025 price; 2026 price not stated elsewhere.",
         "2026 end date is inferred from 'six weeks' + first day July 6 (=> Aug 14); the page gives only the first day.",
         "Campers must have type 1 diabetes or be a sibling/relative/close friend of a camper with T1D."

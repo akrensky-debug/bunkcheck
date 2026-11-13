@@ -45,7 +45,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.pennfield.org/summer-program/",
       "kind": "html",
@@ -107,6 +107,29 @@
         "No changes: every filled field matches the page (6 weeks June 22-July 31; 2026 by weekday and the © 2026 footer; contact, address, description)"
       ],
       "open_questions": [
+        "No ages, prices, weekly themes or hours on the page; the Homeroom registration link now loads Homeroom's general marketing page in our fetcher, so the camp catalog could not be read",
+        "camp_type 'day' rests on the host being a day school; the page does not mention overnight stays",
+        "2027 dates not posted; the page says to email summer@pennfield.org 'to be notified when registration begins'"
+      ]
+    },
+    "earlier_pass": {
+      "status": "ready",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.pennfield.org/summer-program/",
+      "changes": [],
+      "for_andrew": [
+        "Page gives 'June 22 to July 31' with no year; taken as 2026 (Mon/Fri in 2026, page last modified March 2026). No 2027 dates or prices posted; no ages or prices on the page."
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.pennfield.org/summer-program/",
+      "changes": [
+        "No changes: every filled field matches the page (6 weeks June 22-July 31; 2026 by weekday and the © 2026 footer; contact, address, description)"
+      ],
+      "for_andrew": [
         "No ages, prices, weekly themes or hours on the page; the Homeroom registration link now loads Homeroom's general marketing page in our fetcher, so the camp catalog could not be read",
         "camp_type 'day' rests on the host being a day school; the page does not mention overnight stays",
         "2027 dates not posted; the page says to email summer@pennfield.org 'to be notified when registration begins'"

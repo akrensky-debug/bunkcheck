@@ -19,6 +19,7 @@ from campfinder.models.search import SearchRequest, SearchResponse
 from campfinder.services.camps import camp_url
 from campfinder.services.geo import geocode_location, haversine_miles
 from campfinder.services.ranking import score_camp
+from campfinder.services.season import is_last_season
 
 
 async def search_camps(
@@ -182,6 +183,8 @@ def to_search_result(camp: dict[str, Any]) -> CampSearchResult:
         aca_accredited=camp.get("aca_accredited"),
         verification_status=camp.get("verification_status", "unverified"),
         last_updated_date=camp.get("last_updated_date"),
+        season_year=camp.get("season_year"),
+        last_season=is_last_season(camp.get("season_year")),
         description_short=camp.get("description_short"),
         hero_image_url=camp.get("hero_image_url"),
         distance_miles=camp.get("distance_miles"),

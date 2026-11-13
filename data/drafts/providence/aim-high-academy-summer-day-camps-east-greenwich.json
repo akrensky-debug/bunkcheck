@@ -158,7 +158,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.aimhighacademy.com/camps.aspx",
       "kind": "html",
@@ -217,6 +217,38 @@
         "Activities confirmed on the summer page (same list as the vacation camp) plus water play"
       ],
       "open_questions": [
+        "2027 summer dates, prices and registration opening not posted yet",
+        "The girls' Gymnastics Training Camp (ages 7-13) is a separate program and is not in this listing"
+      ]
+    },
+    "earlier_pass": {
+      "status": "ready",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.aimhighacademy.com/camps-summer.aspx",
+      "changes": [
+        "Read the Summer Day Camps page (camps-summer.aspx); added age_min 3 / age_max 10 from 'Ages 3-10'",
+        "season_year 2026 from the '2026 ... Summer Camp Flyer' links on that page",
+        "Activities are stated for the summer camp on that page, so kept; moved contact, address, activities and description to that source",
+        "primary_categories sports -> general: it is a general day camp, gymnastics is one activity among several",
+        "Rewrote description_short to describe the summer camp only (dropped the separate training and vacation camps)"
+      ],
+      "for_andrew": [
+        "2026 dates and prices are in two PDF flyers linked from camps-summer.aspx (Little Star preschool, Rising Star school age); not captured as sessions"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.aimhighacademy.com/camps.aspx",
+      "changes": [
+        "Set season_year 2026 (fixes missing required season_year); no 2027 camp dates posted",
+        "website_url now the Summer Day Camps page instead of the camps overview",
+        "Added ages 3-10 and grades 1-5 (school-age option), 9 weekly 2026 sessions at $375, price range $100-$375, extended care (8-9am, 3-5pm), meals_included false (bring lunch; pizza on Fridays), refund policy, water-play note, indoor_outdoor both",
+        "Description rewritten to the summer day camp only (dropped the separate girls' Gymnastics Training Camp and School's Out vacation camp)",
+        "Activities confirmed on the summer page (same list as the vacation camp) plus water play"
+      ],
+      "for_andrew": [
         "2027 summer dates, prices and registration opening not posted yet",
         "The girls' Gymnastics Training Camp (ages 7-13) is a separate program and is not in this listing"
       ]

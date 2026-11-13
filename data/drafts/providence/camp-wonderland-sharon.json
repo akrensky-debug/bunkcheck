@@ -71,7 +71,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "drop",
     "source": {
       "url": "https://easternusa.salvationarmy.org/massachusetts/fall-river/camp-summerprograms/",
       "kind": "html",
@@ -127,6 +127,33 @@
         "primary_categories ['faith','nature','sports','arts'] -> ['faith','outdoor']; description rewritten from the camp site. Validator now passes."
       ],
       "open_questions": [
+        "DUPLICATE: Camp Wonderland is already published in data/camps/boston.json as 'salvation-army-camp-wonderland' (same site, address, sessions). The validator fails with 'same website and name'. Recommend dropping this draft rather than promoting it.",
+        "Fees are set by each Salvation Army sender location; no price on the site.",
+        "Camp site says it is ACA accredited; aca_accredited left null until checked on acacamps.org.",
+        "FAQ open house date (June 18) and ZIP typo '20267' look carried over; the homepage gives 02067.",
+        "Nothing for 2027 yet."
+      ]
+    },
+    "earlier_pass": {
+      "status": "drop",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://easternusa.salvationarmy.org/massachusetts/fall-river/camp-summerprograms/",
+      "changes": [],
+      "for_andrew": [],
+      "drop_reason": "Duplicate of salvation-army-camp-wonderland in data/camps/boston.json (same camp, same campintouch registration URL); this source is a Salvation Army Fall River Corps page, not the camp site"
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://easternusa.salvationarmy.org/massachusetts/fall-river/camp-summerprograms/",
+      "changes": [
+        "Followed 'Learn About Camp Wonderland' to the camp's own site (campwonderland.org) and moved website_url there.",
+        "Filled street_address 186 Massapoag Avenue, ZIP 02067 and phone (781) 784-5934 (summer address) from the camp site; operator -> The Salvation Army Massachusetts Division.",
+        "Added camp_type sleepaway (5-night cabin sessions), ages 6-16, meals_included true, season 2026 with its 7 sessions.",
+        "primary_categories ['faith','nature','sports','arts'] -> ['faith','outdoor']; description rewritten from the camp site. Validator now passes."
+      ],
+      "for_andrew": [
         "DUPLICATE: Camp Wonderland is already published in data/camps/boston.json as 'salvation-army-camp-wonderland' (same site, address, sessions). The validator fails with 'same website and name'. Recommend dropping this draft rather than promoting it.",
         "Fees are set by each Salvation Army sender location; no price on the site.",
         "Camp site says it is ACA accredited; aca_accredited left null until checked on acacamps.org.",

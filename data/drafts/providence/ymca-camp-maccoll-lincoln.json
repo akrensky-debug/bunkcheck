@@ -73,7 +73,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://ymcapawtucket.org/camps/camp-maccoll",
       "kind": "html",
@@ -116,6 +116,32 @@
         "season_year 2026 confirmed ('Register for Summer 2026!'); registration_url kept as the activity finder (resolves low-confidence items)."
       ],
       "open_questions": [
+        "No 2027 dates, prices or registration opening posted. 2026 early-bird rates ran through 1/31/26, so 2027 registration may open around December-January, but the page does not say."
+      ]
+    },
+    "earlier_pass": {
+      "status": "ready",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://ymcapawtucket.org/camps/camp-maccoll",
+      "changes": [
+        "registration_url: replaced the generic activity-finder link with the page's 'Register for Summer 2026!' button target (Daxko program link)."
+      ],
+      "for_andrew": [
+        "Page shows no ages, dates or prices; only 'Register for Summer 2026!'. 2027 not posted."
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://ymcapawtucket.org/camps/camp-maccoll",
+      "changes": [
+        "Added the nine 2026 weeks (June 22 - Aug 21; no camp July 3 or Aug 10) at the $285 regular traditional rate from the Day Camp page.",
+        "Added ages 5-15, prices $275-$295/week, extended care (before 7-8 am, after 5-6 pm, $25/week each), $25 non-refundable registration fee.",
+        "Added specialty/immersive/LIT/Voyagers activities, secondary categories swimming and adventure; description rewritten.",
+        "season_year 2026 confirmed ('Register for Summer 2026!'); registration_url kept as the activity finder (resolves low-confidence items)."
+      ],
+      "for_andrew": [
         "No 2027 dates, prices or registration opening posted. 2026 early-bird rates ran through 1/31/26, so 2027 registration may open around December-January, but the page does not say."
       ]
     }

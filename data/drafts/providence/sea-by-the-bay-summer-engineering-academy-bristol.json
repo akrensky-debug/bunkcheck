@@ -74,7 +74,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.rwu.edu/summer-camps/sea-bay",
       "kind": "html",
@@ -113,6 +113,33 @@
         "Added grade_max 12 (index page: 'High school juniors and seniors') and price per session; description adjusted to the page."
       ],
       "open_questions": [
+        "Phone 1-800-458-7144 and 1 Old Ferry Road are RWU's general contact and campus address, not a camp contact.",
+        "Registration date not stated; the Register Now link was already live on 2026-11-12."
+      ]
+    },
+    "earlier_pass": {
+      "status": "needs_andrew",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.rwu.edu/summer-camps/sea-bay",
+      "changes": [],
+      "for_andrew": [
+        "Page says 'July 11-16' with no year and 'Registration Coming Soon'; recorded as 2027 (RWU's Forensic Science camp page lists Session 1 as July 11-16, 2027). Confirm.",
+        "Cost $1995 is not dated; the sister Forensic camp page pairs the same $1,995 with 2026 payment deadlines, so it may be the 2026 price.",
+        "Registration link is the same shared RWU summer-camp form used by the Forensic Science camp; phone/address are RWU general contacts."
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.rwu.edu/summer-camps/sea-bay",
+      "changes": [
+        "Page now states 'July 11-16, 2027' and $1995 including tuition and room/board, so the 2027 session and price are confirmed; availability set to open (Register Now is live).",
+        "Registration URL updated to the new 2027 link (id=9d947566-...); the old id is no longer on the page.",
+        "camp_type changed from specialty to sleepaway: the week is residential (room/board included); STEM stays the category.",
+        "Added grade_max 12 (index page: 'High school juniors and seniors') and price per session; description adjusted to the page."
+      ],
+      "for_andrew": [
         "Phone 1-800-458-7144 and 1 Old Ferry Road are RWU's general contact and campus address, not a camp contact.",
         "Registration date not stated; the Register Now link was already live on 2026-11-12."
       ]

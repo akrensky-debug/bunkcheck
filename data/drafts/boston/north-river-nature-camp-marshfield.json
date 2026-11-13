@@ -86,7 +86,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/north-river/camp",
       "kind": "html",
@@ -142,6 +142,26 @@
         "Re-fetched as BunkcheckBot on 2026-11-12: confirmed"
       ],
       "open_questions": [
+        "age_min left null: the page says 4.5",
+        "Registration dates on the pricing page look stale: 'Online registration opens January 27, 2026, at 6:00 am' sits under 2027 pricing; the main camp page says '2027 Camp Registration is Coming Soon'. Returning-family Early Bird 'December 10 ... December 21' gives no year",
+        "Specialty-week prices on the page look copy-pasted (Solar Sparks $87-$463 is below the nature-camp range; Wild Art Lab text repeats Into the Deep)",
+        "Tiers 4-5 require a Mass Audubon family membership"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.massaudubon.org/places-to-explore/wildlife-sanctuaries/north-river/camp",
+      "changes": [
+        "Added 2027 sessions from the camp's '2027 Program Themes' PDF: 8 weekly sessions June 21-August 13 for ages 4.5-11 (Session 3 July 6-9, prorated) and 6 specialty weeks for ages 12-14; session prices left null (sliding scale)",
+        "Added 2027 sliding-scale price range $87-$579 per week (programs & pricing page; nature groups $109-$545, specialty weeks $87-$463 or $115-$579)",
+        "Added street address 2000 Main Street (sanctuary page), camp phone 781-355-6109 and email northrivercamp@massaudubon.org (About Camp page)",
+        "camp_type day confirmed ('North River Nature Day Camp', drop-off/pick-up schedule); ACA accreditation added from About Camp page",
+        "Description and activities expanded from the programs & pricing page (9:00-3:00, weekly themes, hikes, crafts, games, specialty weeks)",
+        "financial_aid now sourced to the sliding-scale pricing text",
+        "Re-fetched as BunkcheckBot on 2026-11-12: confirmed"
+      ],
+      "for_andrew": [
         "age_min left null: the page says 4.5",
         "Registration dates on the pricing page look stale: 'Online registration opens January 27, 2026, at 6:00 am' sits under 2027 pricing; the main camp page says '2027 Camp Registration is Coming Soon'. Returning-family Early Bird 'December 10 ... December 21' gives no year",
         "Specialty-week prices on the page look copy-pasted (Solar Sparks $87-$463 is below the nature-camp range; Wild Art Lab text repeats Into the Deep)",

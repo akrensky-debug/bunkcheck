@@ -90,7 +90,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://kingstonhill.org/chief-administrator-update-july-2026/",
       "kind": "html",
@@ -149,6 +149,33 @@
         "Address and phone match the site footer."
       ],
       "open_questions": [
+        "The only source is one line-list in a school newsletter ('Summer Camps Offered at KHA! ... Please call the office for availability'). No ages, prices, camp descriptions, registration link, or who runs the camps (the school or outside providers). operator_name 'Kingston Hill Academy' is an assumption from 'Offered at KHA'.",
+        "Wizard Camp second week is printed '713-17'; read as July 13-17.",
+        "Andrew to decide whether this is enough to list, or whether to wait for the school to post a camp page for 2027.",
+        "No 2027 information and no registration date."
+      ]
+    },
+    "earlier_pass": {
+      "status": "needs_andrew",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://kingstonhill.org/chief-administrator-update-july-2026/",
+      "changes": [],
+      "for_andrew": [
+        "Only source is a July 2026 school newsletter with a four-line camp mention; no ages, prices, registration or camp page",
+        "Unclear if Kingston Hill Academy runs the camps or outside providers use its site (operator_name is a guess from \"Summer Camps Offered at KHA\")",
+        "Wizard Camp week 2 is written \"713-17\" on the page; read as July 13-17"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://kingstonhill.org/chief-administrator-update-july-2026/",
+      "changes": [
+        "Description reworded to say only what the newsletter says (camps 'held at' KHA, listed in the July 2026 update); kept all six 2026 sessions, which match the newsletter.",
+        "Address and phone match the site footer."
+      ],
+      "for_andrew": [
         "The only source is one line-list in a school newsletter ('Summer Camps Offered at KHA! ... Please call the office for availability'). No ages, prices, camp descriptions, registration link, or who runs the camps (the school or outside providers). operator_name 'Kingston Hill Academy' is an assumption from 'Offered at KHA'.",
         "Wizard Camp second week is printed '713-17'; read as July 13-17.",
         "Andrew to decide whether this is enough to list, or whether to wait for the school to post a camp page for 2027.",

@@ -119,3 +119,18 @@ async def test_assistant_adds_to_the_board(client, db, family):
     assert out.content["planned"] == "1 of 3 weeks planned"
     assert out.content["start_with"] == "2027-07-05"
     assert tools.ALL_TOOLS["add_to_summer_board"].family
+
+
+def test_a_camp_chosen_from_last_seasons_dates_still_covers_the_week(client, db, family):
+    """Most camps post next summer in winter. A choice made from last season's session covers the
+    week it was chosen for, and its price is marked as last season's."""
+    fid = family["id"]
+    seed(db, fid)
+    old_w2 = "aaaaaaaa-1111-1111-1111-111111111111"
+    db.table("sessions").insert([{"id": old_w2, "camp_id": KENT, "name": "Week 2", "start_date": "2026-07-13",
+                                  "end_date": "2026-07-17", "availability": "unknown", "price": 295}]).execute()
+    b = pick(client, fid, week_of="2027-07-12", camp_id=KENT, session_id=old_w2, state="chosen").json()
+    w2 = cell(b, "2027-07-12")
+    assert (w2["state"], w2["hours"]) == ("chosen", "check")  # counted for the week: only its hours are unknown
+    assert w2["picks"][0]["last_season"] is True
+    assert "last season's price" in " ".join(b["notes"])

@@ -61,7 +61,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.aquidneckislanddaycamp.com/",
       "kind": "html",
@@ -107,6 +107,38 @@
         "Census geocoder found no match for 'Forest Ave, Middletown RI' and Middletown has more than one ZIP, so zip is still empty."
       ],
       "open_questions": [
+        "ZIP: the page gives only 'Forrest Ave Elementary School' (no street number); Middletown RI is not a single-ZIP town in our list. Andrew needs to set zip (school's street address) before promote.",
+        "Weekly sessions assume Mon-Fri weeks across June 29 - Aug 21; the page does not say whether July 3 is a holiday.",
+        "No 2027 dates or registration opening posted yet; 'Scholarships – information coming soon'."
+      ]
+    },
+    "earlier_pass": {
+      "status": "needs_andrew",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.aquidneckislanddaycamp.com/registration.html",
+      "changes": [
+        "Added from the 2026 registration page: ages 5-13, season_year 2026, dates June 29 - Aug 21 2026 as one session",
+        "Prices: full week $300 regular / $380 extended; 2-day option $140; price_min 140, price_max 380, price_per_week 300",
+        "extended_care true: 'Extended Day 8:00am - 5:00pm' option",
+        "email and phone from the 'For more information' line"
+      ],
+      "for_andrew": [
+        "ZIP still missing: page gives the location only as 'Forrest Ave Elementary School' in Middletown with no street address, so it could not be geocoded; street_address/zip need a person",
+        "Middletown is about 25-30 miles from Providence; confirm it is in range"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.aquidneckislanddaycamp.com/",
+      "changes": [
+        "Added 2026 season: June 29 - Aug 21, 2026 as 8 weekly sessions at $300 (registration page); season_year 2026.",
+        "Added ages 5-13, phone 401-864-3183, email, prices ($300/week regular, $380/week extended day), extended_care true, $25 non-refundable fee and discounts.",
+        "Activities and categories rewritten from the Activities page; description now names ages, location, hours.",
+        "Census geocoder found no match for 'Forest Ave, Middletown RI' and Middletown has more than one ZIP, so zip is still empty."
+      ],
+      "for_andrew": [
         "ZIP: the page gives only 'Forrest Ave Elementary School' (no street number); Middletown RI is not a single-ZIP town in our list. Andrew needs to set zip (school's street address) before promote.",
         "Weekly sessions assume Mon-Fri weeks across June 29 - Aug 21; the page does not say whether July 3 is a holiday.",
         "No 2027 dates or registration opening posted yet; 'Scholarships – information coming soon'."

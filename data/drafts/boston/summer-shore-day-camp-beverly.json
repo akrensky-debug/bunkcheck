@@ -182,7 +182,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.shoreschool.org/summer-shore/day-camp",
       "kind": "html",
@@ -260,6 +260,21 @@
         "Re-fetched as BunkcheckBot on 2026-11-12: confirmed (all 2026 week dates, $550/$275/$585, $40 before/after care, $100 cancellation fee, May 31 cutoff, Enrollsy link)"
       ],
       "open_questions": [
+        "No camp financial aid, transportation or registration opening date stated"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.shoreschool.org/summer-shore/day-camp",
+      "changes": [
+        "Added registration_url (the page's 'REGISTER TODAY!' Enrollsy link, shared by all Summer Shore programs)",
+        "Categories: primary general (multi-activity day camp); STEM, arts, sports, performing_arts moved to secondary",
+        "Low-confidence items confirmed on the page: all 2026 week dates for both age groups, $550 full day / $275 half day (5-12), $585 (3-4), $40/week before and after care, $100 cancellation fee and May 31, 2026 refund cutoff",
+        "Kept 2026 season: page still shows Summer 2026",
+        "Re-fetched as BunkcheckBot on 2026-11-12: confirmed (all 2026 week dates, $550/$275/$585, $40 before/after care, $100 cancellation fee, May 31 cutoff, Enrollsy link)"
+      ],
+      "for_andrew": [
         "No camp financial aid, transportation or registration opening date stated"
       ]
     }

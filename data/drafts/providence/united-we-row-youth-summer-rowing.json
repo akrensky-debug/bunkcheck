@@ -97,7 +97,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.watupparowingcenter.org/summer-rowing",
       "kind": "html",
@@ -149,6 +149,32 @@
         "2027 sessions confirmed on the page under 'United We Row 2027' (June 28 - July 2, July 5-16, July 19-30, August 2-13), free, 8am-12 noon."
       ],
       "open_questions": [
+        "The Census geocoder matched '994 JEFFERSON ST' (it drops 'Extension'); Andrew may want to confirm ZIP 02721.",
+        "Session 1 is one week although sessions are called '2-week'; the page also says Session 1 'may begin 1 week earlier on June 1st', which does not fit June 28.",
+        "The page does not say whether the program is on the water at the center's own site; the Contact address is assumed to be where it runs."
+      ]
+    },
+    "earlier_pass": {
+      "status": "needs_andrew",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.watupparowingcenter.org/summer-rowing (HTTP 429 bot check; not read)",
+      "changes": [],
+      "for_andrew": [
+        "refused: ask the owner for the brochure (site answered HTTP 429 'Checking Your Request')",
+        "City, state and ZIP are still missing (Watuppa Rowing Center is presumably Fall River, MA, but nothing read confirms it); 2027 sessions and free price are unchecked."
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.watupparowingcenter.org/summer-rowing",
+      "changes": [
+        "Added address from the Contact page: 994 Jefferson Street Extension, Fall River, MA; ZIP 02721 from the US Census geocoder.",
+        "Description now names the place and the United Way sponsorship.",
+        "2027 sessions confirmed on the page under 'United We Row 2027' (June 28 - July 2, July 5-16, July 19-30, August 2-13), free, 8am-12 noon."
+      ],
+      "for_andrew": [
         "The Census geocoder matched '994 JEFFERSON ST' (it drops 'Extension'); Andrew may want to confirm ZIP 02721.",
         "Session 1 is one week although sessions are called '2-week'; the page also says Session 1 'may begin 1 week earlier on June 1st', which does not fit June 28.",
         "The page does not say whether the program is on the water at the center's own site; the Contact address is assumed to be where it runs."

@@ -58,7 +58,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.mfa.org/programs/studio-art-classes/kids",
       "kind": "html",
@@ -99,6 +99,20 @@
         "Confirmed ages 5-11 (groups 5-7, 6-8, 8-10, 9-11), full-day weekly themes, address and phone"
       ],
       "open_questions": [
+        "Summer 2027 dates, hours and prices not posted until the December 8 sale.",
+        "Lunch: policies say to pack lunch for full-day vacation-week classes; summer not stated, so meals_included left blank."
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.mfa.org/programs/studio-art-classes/kids",
+      "changes": [
+        "season_year set to 2027: the page's ticket table lists 'Summer 2027 On sale December 8' (no summer dates or prices yet); clears missing season_year",
+        "Added financial_aid=true and refund_policy_summary from the Information and Policies page ('All ticket sales are final' except MFA low-enrollment cancellations; limited Studio Art financial aid)",
+        "Confirmed ages 5-11 (groups 5-7, 6-8, 8-10, 9-11), full-day weekly themes, address and phone"
+      ],
+      "for_andrew": [
         "Summer 2027 dates, hours and prices not posted until the December 8 sale.",
         "Lunch: policies say to pack lunch for full-day vacation-week classes; summer not stated, so meals_included left blank."
       ]

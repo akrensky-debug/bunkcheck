@@ -140,7 +140,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://ymcasouthcoast.org/location/camp-frederick-douglass/",
       "kind": "html",
@@ -190,6 +190,39 @@
         "Verified name, operator, address, phone, director email, activities and description against the location page"
       ],
       "open_questions": [
+        "Weekly tuition and age range for the Frederick Douglass traditional camp are not readable on the 2026 form (the price grid in the PDF does not line up by location), so prices and ages stay null",
+        "Transportation: the form says bussing is available at Massasoit, Metacomet and Quequechan, which suggests none at Frederick Douglass, but it does not say so directly; left null",
+        "2027 dates, prices and registration opening not posted"
+      ]
+    },
+    "earlier_pass": {
+      "status": "ready",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://ymcasouthcoast.org/location/camp-frederick-douglass/",
+      "changes": [
+        "season_year 2026: the YMCA Southcoast Summer Day Camp page that lists this camp links the '2026 Camp Registration Form' and '2026 Rates'",
+        "financial_aid true: same page's FAQ answers 'YES' to financial aid for qualifying families (new source)",
+        "primary_categories sports/performing_arts/academic -> general: it is a traditional YMCA day camp with mixed activities",
+        "Checked contact, address, hours and activities against the camp page"
+      ],
+      "for_andrew": [
+        "New Bedford is about 30-33 miles from Providence, at the edge of the range",
+        "No ages or prices on the camp page (rates are in a PDF)"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://ymcasouthcoast.org/location/camp-frederick-douglass/",
+      "changes": [
+        "Set season_year 2026 (fixes missing required season_year); no 2027 information posted",
+        "Added 10 weekly 2026 sessions (A-J, 6/22-8/28) from the YMCA Southcoast 2026 registration form",
+        "Added extended care (true), financial aid (true, Camp For All), refund/payment policy and the online registration URL",
+        "Categories: primary now general (traditional YMCA day camp), sports/performing_arts/swimming moved to secondary; 'academic' dropped (page describes history projects, not academics)",
+        "Verified name, operator, address, phone, director email, activities and description against the location page"
+      ],
+      "for_andrew": [
         "Weekly tuition and age range for the Frederick Douglass traditional camp are not readable on the 2026 form (the price grid in the PDF does not line up by location), so prices and ages stay null",
         "Transportation: the form says bussing is available at Massasoit, Metacomet and Quequechan, which suggests none at Frederick Douglass, but it does not say so directly; left null",
         "2027 dates, prices and registration opening not posted"

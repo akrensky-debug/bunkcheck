@@ -64,7 +64,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.elementreehouse.com/summer-camp",
       "kind": "html",
@@ -107,6 +107,36 @@
         "Moved phone and address sources to the Contact and Tuition page."
       ],
       "open_questions": [
+        "Ages are not stated (the center serves preschool and school-age children); age_min/age_max left null.",
+        "Week of July 10 closes at noon on Friday; Aug 10 to 14 field trip TBD. No 2027 schedule or registration date posted."
+      ]
+    },
+    "earlier_pass": {
+      "status": "ready",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.elementreehouse.com/summer-camp",
+      "changes": [
+        "season_year 2026 and 10 weekly sessions from the 'SUMMER 2026 Schedule' on the Camp Schedule page (new source); week of June 29 - July 3 skipped because the center is closed",
+        "primary_categories arts -> general: a general day camp with games, swim, crafts and field trips",
+        "Checked contact, address, hours and lifeguard note against the summer camp page"
+      ],
+      "for_andrew": [
+        "No ages or prices on the summer camp or schedule pages (Contact and Tuition page not checked)"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.elementreehouse.com/summer-camp",
+      "changes": [
+        "Added season_year 2026 and the ten 2026 weekly sessions (June 22 to Sept 4, closed June 29 to July 3) from the Camp Schedule page.",
+        "Added weekly tuition from the Contact and Tuition page: $87 (1 day) to $349 (4/5 days) per week for one child; $349 per week.",
+        "Operator corrected to The Elemen-Tree House; added email lmntree@verizon.net.",
+        "Primary category changed from arts to general (a general day camp with weekly themes, swim and field trips).",
+        "Moved phone and address sources to the Contact and Tuition page."
+      ],
+      "for_andrew": [
         "Ages are not stated (the center serves preschool and school-age children); age_min/age_max left null.",
         "Week of July 10 closes at noon on Friday; Aug 10 to 14 field trip TBD. No 2027 schedule or registration date posted."
       ]

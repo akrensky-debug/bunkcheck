@@ -74,7 +74,8 @@
         "swim_waterfront_notes",
         "sessions",
         "registration_url",
-        "refund_policy_summary"
+        "refund_policy_summary",
+        "price_per"
       ],
       "note": "Drafted by the listing tool from this page"
     },
@@ -88,7 +89,7 @@
   ],
   "email": "summer@rwu.edu",
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.rwu.edu/summer-camps/forensic-science-summer-camp",
       "kind": "html",
@@ -157,6 +158,36 @@
         "Phone 1-800-458-7144 is not on the camp page itself; it is the university's general line (kept from the draft, low confidence).",
         "The page prints 2026 payment deadlines next to 2027 dates; the $1,995 price is shown with the 2027 dates and was kept."
       ]
+    },
+    "earlier_pass": {
+      "status": "ready",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.rwu.edu/summer-camps/forensic-science-summer-camp",
+      "changes": [
+        "Removed price_min/price_max and session prices ($1,995) and refund_policy_summary: they sit next to deposit/payment deadlines dated April-May 2026, so they look carried over from 2026 while sessions are July 2027.",
+        "Added $1,995 per session (tuition, room and board) at Andrew's request, 2026-11-13: the page states 'Cost: $1,995' beside the July 2027 sessions"
+      ],
+      "for_andrew": [
+        "The deposit and payment deadlines on the page are still dated April and May 2026, so confirm with RWU that $1,995 is the 2027 price."
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.rwu.edu/summer-camps/forensic-science-summer-camp",
+      "changes": [
+        "registration_url: replaced the old link with the live Session 1 registration form (https://connect.rwu.edu/register/?id=791809ee-3c91-47f7-b9cd-7f3b24141bb4). Session 2 has its own form: https://connect.rwu.edu/register/?id=65f6e93d-ad9d-4fcc-a0f6-66e0838d0d5e. Registration is now open (the page no longer says 'Registration Coming Soon').",
+        "email: added summer@rwu.edu ('Questions about your registration? Contact us at summer@rwu.edu' on the registration form).",
+        "refund_policy_summary rewritten to match the page and the 2027 form wording.",
+        "Confirmed 2027 sessions (July 11-16 and July 18-23, 2027), grades 10-12, $1,995 including tuition, room and board, and the activities and waterfront access on the live page."
+      ],
+      "for_andrew": [
+        "The deposit and payment deadlines on the page are still dated April and May 2026, so confirm with RWU that $1,995 is the 2027 price.",
+        "Phone 1-800-458-7144 is not on the camp page itself; it is the university's general line (kept from the draft, low confidence).",
+        "The page prints 2026 payment deadlines next to 2027 dates; the $1,995 price is shown with the 2027 dates and was kept."
+      ]
     }
-  }
+  },
+  "price_per": "session"
 }

@@ -73,7 +73,7 @@
   ],
   "email": "treh@premierlacrosseleague.com",
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://premierlacrosseleague.com/rhode-island-overnight-camp-2026",
       "kind": "html",
@@ -109,6 +109,32 @@
         "All other fields (July 27-30, 2026; ages 8-17; $695 overnight / $549 day; meals; refund policy; allergy contact) match the live page."
       ],
       "open_questions": [
+        "The page states only 2026 dates; no 2027 Rhode Island camp is posted yet.",
+        "Day campers are picked up at 5pm before dinner; the page says 'All meals are included' without separating day campers."
+      ]
+    },
+    "earlier_pass": {
+      "status": "ready",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://premierlacrosseleague.com/rhode-island-overnight-camp-2026",
+      "changes": [
+        "Added email treh@premierlacrosseleague.com: the page now shows it under 'Questions?'."
+      ],
+      "for_andrew": [
+        "Only the 2026 camp (July 27-30, 2026) is posted; no 2027 date yet.",
+        "Overnight option is ages 10-17, day option 8-17; listed as specialty (lacrosse) rather than sleepaway."
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://premierlacrosseleague.com/rhode-island-overnight-camp-2026",
+      "changes": [
+        "email: added treh@premierlacrosseleague.com ('Questions? Please reach out to ...'); the address is no longer hidden on the page.",
+        "All other fields (July 27-30, 2026; ages 8-17; $695 overnight / $549 day; meals; refund policy; allergy contact) match the live page."
+      ],
+      "for_andrew": [
         "The page states only 2026 dates; no 2027 Rhode Island camp is posted yet.",
         "Day campers are picked up at 5pm before dinner; the page says 'All meals are included' without separating day campers."
       ]

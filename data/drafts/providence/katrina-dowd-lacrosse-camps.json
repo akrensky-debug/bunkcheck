@@ -78,7 +78,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.bearswlaxcamps.com/camps.cfm",
       "kind": "html",
@@ -134,6 +134,38 @@
         "Description rewritten from the Elite Summer Camp page."
       ],
       "open_questions": [
+        "ZIP (required) is not on any camp page: the location is given only as 'Stevenson-Pincince Field, Providence RI' with no street address, and Providence has several ZIP codes. The brownbears.com page timed out.",
+        "These are one-day clinics for high school players (grades 8-12), run by a college coach; Andrew to decide if they belong in Bunkcheck.",
+        "The page does not say girls only, though it is the women's program.",
+        "All 2026 dates have passed; the camps page says 'Currently there are no upcoming events.' No 2027 dates or registration date."
+      ]
+    },
+    "earlier_pass": {
+      "status": "needs_andrew",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.bearswlaxcamps.com/elite-summer-camp.cfm",
+      "changes": [
+        "Read the Elite Summer Camp page (the listing page itself only says 'no upcoming events'); website_url now points there.",
+        "Added city Providence / state RI (location: Stevenson-Pincince Field, Providence RI), email, grades 8-12, and the three 2026 one-day sessions (June 29, July 13, Aug 23) at $296.50 ($275 + $21.50 fees).",
+        "Set season_year 2026, price_min/price_max 296.5 per session; rewrote description_short from the camp page."
+      ],
+      "for_andrew": [
+        "ZIP is still missing: the site names Stevenson-Pincince Field, Providence RI but gives no street address, so the geocoder cannot be used; a person needs to supply the field's address/ZIP.",
+        "These are single-day camps for grades 8-12; confirm they count as a summer camp listing.",
+        "gender_policy left null: the camp is run by Brown Women's Lacrosse coaches but the page says camps are open to all entrants."
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.bearswlaxcamps.com/camps.cfm",
+      "changes": [
+        "Added the three 2026 Elite Summer Camp days from the Elite Summer Camp page (June 29, July 13, August 23, 2026; 10:00am-4:00pm; $296.50 = $275 + $21.50 fees), grades 8-12, email, and location Stevenson-Pincince Field, Providence RI. season_year set to 2026.",
+        "Registration URL set to the Elite Summer Camp page (its REGISTER buttons go to Ryzer).",
+        "Description rewritten from the Elite Summer Camp page."
+      ],
+      "for_andrew": [
         "ZIP (required) is not on any camp page: the location is given only as 'Stevenson-Pincince Field, Providence RI' with no street address, and Providence has several ZIP codes. The brownbears.com page timed out.",
         "These are one-day clinics for high school players (grades 8-12), run by a college coach; Andrew to decide if they belong in Bunkcheck.",
         "The page does not say girls only, though it is the women's program.",

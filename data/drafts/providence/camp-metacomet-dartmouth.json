@@ -93,7 +93,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://ymcasouthcoast.org/location/camp-metacomet/",
       "kind": "html",
@@ -154,6 +154,39 @@
         "Season 2026 confirmed by the 2026 registration form and handbook; no session dates are published, so no sessions"
       ],
       "open_questions": [
+        "2027 dates, prices and registration not posted",
+        "Session letters A-J have no dates anywhere on the site",
+        "The location page says Craft Lovers runs Sessions C and E and Drama Sessions D and F, but the 2026 form lists Craft Lovers only in C and Drama only in D at Metacomet",
+        "The 'Behind the Name' text on the Metacomet page is about Frederick Douglass (copied from the New Bedford camp page)"
+      ]
+    },
+    "earlier_pass": {
+      "status": "ready",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://ymcasouthcoast.org/location/camp-metacomet/",
+      "changes": [
+        "primary_categories -> general (traditional YMCA day camp); moved sports, arts, nature, performing_arts to secondary_categories",
+        "Checked the rest: address, director contact, hours 9-4 with 7-9 / 4-5 extended care, 2026 bus schedule, outdoor pool, specialty camps for ages 9-14"
+      ],
+      "for_andrew": [
+        "No dates, ages or prices on the page (in the 2026 parent guide PDF); Dartmouth is about 30 miles from Providence"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://ymcasouthcoast.org/location/camp-metacomet/",
+      "changes": [
+        "Added registration_url (Daxko online registration linked from the page)",
+        "Added ages 4-14 from the 2026 Camp Handbook's Camp Metacomet group list",
+        "Added prices 315-405 per session from the 2026 registration form (traditional and Metacomet specialty camps; CIT excluded)",
+        "Added financial_aid true (Camp For All Financial Assistance on the form)",
+        "Added meals_included false (handbook: campers bring lunch and snacks)",
+        "Added refund_policy_summary from the 2026 registration form",
+        "Season 2026 confirmed by the 2026 registration form and handbook; no session dates are published, so no sessions"
+      ],
+      "for_andrew": [
         "2027 dates, prices and registration not posted",
         "Session letters A-J have no dates anywhere on the site",
         "The location page says Craft Lovers runs Sessions C and E and Drama Sessions D and F, but the 2026 form lists Craft Lovers only in C and Drama only in D at Metacomet",

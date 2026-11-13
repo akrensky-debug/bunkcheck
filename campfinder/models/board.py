@@ -24,6 +24,7 @@ class Pick(BaseModel):
     price_per_week: float | None = None
     start_date: date | None = None
     end_date: date | None = None
+    last_season: bool = Field(default=False, description="Its dates and price are last season's; new ones not posted.")
     state: PickState
     note: str | None = None
 

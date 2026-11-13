@@ -119,7 +119,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://levitatecamps.com/warrior-surf-camp/",
       "kind": "html",
@@ -161,6 +161,21 @@
         "Re-fetched as BunkcheckBot on 2026-11-12: confirmed"
       ],
       "open_questions": [
+        "No price is posted on any Levitate page (shop product link redirects back to the camp page)",
+        "Some sessions are Monday-Thursday (4 days) but the page doesn't say which"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://levitatecamps.com/warrior-surf-camp/",
+      "changes": [
+        "Updated to the 2027 season: the page now lists 9 weeks, Monday 6/21 to Friday 8/20, under a '2027 Camp Registration January 22 9AM' banner (the weekdays match 2027), replacing the 8 weeks of 2026",
+        "Categories: nature replaced by outdoor and swimming as secondary (surfing and beach activities at Rexhame Beach); sports stays primary",
+        "Confirmed ages 7-12, 4-hour tide-dependent sessions, Rexhame Beach address, UltraCamp registration link, info@ email and refund policy on the camp, registration and FAQ pages",
+        "Re-fetched as BunkcheckBot on 2026-11-12: confirmed"
+      ],
+      "for_andrew": [
         "No price is posted on any Levitate page (shop product link redirects back to the camp page)",
         "Some sessions are Monday-Thursday (4 days) but the page doesn't say which"
       ]

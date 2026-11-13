@@ -81,7 +81,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "drop",
     "source": {
       "url": "https://www.gammtheatre.org/camps",
       "kind": "html",
@@ -121,6 +121,28 @@
         "No field changes. All filled fields match the live page (Feb 15-19, 2027 and April 19-23 intensives, grades 2-8, $350/$250 tuition, financial aid via education@gammtheatre.org)."
       ],
       "open_questions": [
+        "Both sessions are February and April school-vacation intensives, not summer camp. The page mentions summer theatre workshops but lists no summer 2027 sessions yet."
+      ]
+    },
+    "earlier_pass": {
+      "status": "drop",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.gammtheatre.org/camps",
+      "changes": [],
+      "for_andrew": [
+        "The Gamm camps page currently lists summer camps only in general terms (improv, Shakespeare, workshops of 1-4 weeks); recheck it in spring for 2027 summer sessions and add those as a new listing."
+      ],
+      "drop_reason": "Not a summer camp: this listing is the February and April 2027 school-vacation intensives (one week each); the page shows no summer sessions."
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.gammtheatre.org/camps",
+      "changes": [
+        "No field changes. All filled fields match the live page (Feb 15-19, 2027 and April 19-23 intensives, grades 2-8, $350/$250 tuition, financial aid via education@gammtheatre.org)."
+      ],
+      "for_andrew": [
         "Both sessions are February and April school-vacation intensives, not summer camp. The page mentions summer theatre workshops but lists no summer 2027 sessions yet."
       ]
     }

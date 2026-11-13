@@ -92,7 +92,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.cityofattleboro.us/266/Summer-All-Day-Program",
       "kind": "html",
@@ -154,6 +154,33 @@
         "Checked the rest: Bartek Recreation Center, 81 Pine Street; entering grade 1 through age 12; 8:00am-5:00pm; June 29 - August 14, 2026; $200/week first child, $170 additional, $55 daily; minimum six weeks and three days a week."
       ],
       "open_questions": [
+        "No 2027 dates or prices yet.",
+        "Attleboro residents register first; the page gives no registration opening date."
+      ]
+    },
+    "earlier_pass": {
+      "status": "ready",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.cityofattleboro.us/266/Summer-All-Day-Program",
+      "changes": [],
+      "for_andrew": [
+        "phone 508-223-2222 is the Attleboro City Hall number in the page footer, not a Recreation Department line",
+        "primary_categories sports+arts is a judgement call for a general rec day program; \"general\" may fit better"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.cityofattleboro.us/266/Summer-All-Day-Program",
+      "changes": [
+        "Phone 508-223-2222 (City Hall) -> 774-203-1889, the Recreation Department line on the cancellation policy (also on the department page); added email recreation@cityofattleboro.us.",
+        "Added refund policy from the All Day Program cancellation policy PDF.",
+        "Added registration URL: the 2026 application form PDF (registration is on paper; no online sign-up).",
+        "primary_categories sports+arts -> general: a full-day working-parent program with crafts, computer lab, swim, playground, indoor sports and field trips.",
+        "Checked the rest: Bartek Recreation Center, 81 Pine Street; entering grade 1 through age 12; 8:00am-5:00pm; June 29 - August 14, 2026; $200/week first child, $170 additional, $55 daily; minimum six weeks and three days a week."
+      ],
+      "for_andrew": [
         "No 2027 dates or prices yet.",
         "Attleboro residents register first; the page gives no registration opening date."
       ]

@@ -60,7 +60,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.trinityrep.com/education/yasi/",
       "kind": "html",
@@ -102,6 +102,33 @@
         "Description tightened to the page's wording; season_year 2027 kept ('See you in 2027!') with no sessions."
       ],
       "open_questions": [
+        "No 2027 dates, prices, camp list or registration date posted yet.",
+        "Camp location not stated; the address is Trinity Rep's theater at 201 Washington Street.",
+        "grade_max 12 stands for 'recent high school graduates'."
+      ]
+    },
+    "earlier_pass": {
+      "status": "ready",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.trinityrep.com/education/yasi/",
+      "changes": [
+        "No changes: grades 1-12 (first grade through recent graduates), activities, financial aid, $50 deposit, address and phone match the page; season_year 2027 matches 'See you in 2027!'."
+      ],
+      "for_andrew": [
+        "The page shows no dates, ages per camp or prices yet ('See you in 2027!'); add 2027 sessions when Trinity Rep posts them."
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.trinityrep.com/education/yasi/",
+      "changes": [
+        "Confirmed name, operator, contact, grades, activities, financial aid against the page.",
+        "Refund summary now uses the linked Cancellation Policy (full refund less deposit and fees one week out, 50% after, none once camp begins).",
+        "Description tightened to the page's wording; season_year 2027 kept ('See you in 2027!') with no sessions."
+      ],
+      "for_andrew": [
         "No 2027 dates, prices, camp list or registration date posted yet.",
         "Camp location not stated; the address is Trinity Rep's theater at 201 Washington Street.",
         "grade_max 12 stands for 'recent high school graduates'."

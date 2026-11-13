@@ -91,7 +91,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://wrwc.org/camp-woonasquatucket/",
       "kind": "html",
@@ -136,6 +136,34 @@
         "Financial aid kept true (need-based scholarships), resolving the low-confidence item."
       ],
       "open_questions": [
+        "Page says 'Scholarships are no longer available for 2026.'",
+        "No 2027 dates or registration opening posted."
+      ]
+    },
+    "earlier_pass": {
+      "status": "needs_andrew",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://wrwc.org/camp-woonasquatucket/",
+      "changes": [],
+      "for_andrew": [
+        "Page is a March 2025 blog post: only 2025 sessions/price shown, nothing for 2026 or 2027; confirm the camp still runs (season_year 2025 is outside 2026/2027)",
+        "zip missing: page gives no street address for the Leo Bouchard Conservation Center, Smithfield (only WRWC office at 45 Eagle St, Providence)",
+        "Phone 401.861.9046 is the WRWC main office; registration is via Smithfield Parks & Rec (link not captured)",
+        "financial_aid true rests on a Smithfield Parks & Rec donation page to cover tuition, not a stated aid program"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://wrwc.org/camp-woonasquatucket/",
+      "changes": [
+        "Moved from the 2025 blog post to the camp's own page, which posts the 2026 season: 3 weeks (July 6-24, 2026), $400/week, 9 AM-3 PM (was 2025: 6 half-day weeks at $250).",
+        "season_year 2025 -> 2026; ages 8-13 -> 7-13 ('NOW ACCEPTING AGES 7'); the sessions no longer alternate age groups.",
+        "Added street address and ZIP 02917 from the page, Eventbrite registration link, refund policy, outdoor category; website_url now the camp page.",
+        "Financial aid kept true (need-based scholarships), resolving the low-confidence item."
+      ],
+      "for_andrew": [
         "Page says 'Scholarships are no longer available for 2026.'",
         "No 2027 dates or registration opening posted."
       ]

@@ -123,7 +123,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.earthltd.org/wild-adventure-programs/summer/",
       "kind": "html",
@@ -165,6 +165,32 @@
         "meals_included false kept: families send lunch; only snacks and water are provided (resolves low-confidence item). Address kept as EARTH Nature Center, Millville (the only address on the page; resolves low-confidence items)."
       ],
       "open_questions": [
+        "Programs take place at Southwick's Zoo (Mendon, MA), but the page gives no street address for the drop-off spot ('will be updated in early June').",
+        "No 2027 sessions posted yet."
+      ]
+    },
+    "earlier_pass": {
+      "status": "ready",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.earthltd.org/wild-adventure-programs/summer/",
+      "changes": [],
+      "for_andrew": [
+        "Address is the EARTH Nature Center office in Millville; programs run at Southwick's Zoo (Mendon, MA) and the page does not give its address",
+        "meals_included false: campers bring lunch, but the program provides snacks and water",
+        "Session prices are non-member rates incl. Eventbrite fees; members get 10% off"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.earthltd.org/wild-adventure-programs/summer/",
+      "changes": [
+        "Re-checked all nine 2026 sessions (dates, grades, hours, non-member prices), activities, grades K-11 and contact: all match the page.",
+        "Added price_per 'session' (prices vary by session length) and indoor_outdoor 'outdoor' ('We spend most of the day outdoors').",
+        "meals_included false kept: families send lunch; only snacks and water are provided (resolves low-confidence item). Address kept as EARTH Nature Center, Millville (the only address on the page; resolves low-confidence items)."
+      ],
+      "for_andrew": [
         "Programs take place at Southwick's Zoo (Mendon, MA), but the page gives no street address for the drop-off spot ('will be updated in early June').",
         "No 2027 sessions posted yet."
       ]

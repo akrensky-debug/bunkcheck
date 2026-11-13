@@ -59,7 +59,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.eccri.org/",
       "kind": "html",
@@ -120,6 +120,34 @@
         "Other fields re-checked against the homepage: they match."
       ],
       "open_questions": [
+        "Homepage: 'Stay tuned for more information about Summer 2027!' No dates, ages, prices or registration date yet.",
+        "The ACA Accreditation page says 'ECC is accredited by the American Camp Association'; aca_accredited left null until checked on acacamps.org.",
+        "The About page still says 'Registration for summer camp is officially open!' (stale)."
+      ]
+    },
+    "earlier_pass": {
+      "status": "ready",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.eccri.org/",
+      "changes": [
+        "Set camp_type sleepaway: /aboutecc says \"ECC is an overnight summer camp and year-round conference center\" (new source entry)"
+      ],
+      "for_andrew": [
+        "season_year 2027 has no dates/prices yet (\"Stay tuned for more information about Summer 2027\"); ages not stated",
+        "ACA page explains accreditation but does not state outright that ECC is accredited; aca_accredited left null pending an acacamps.org check"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.eccri.org/",
+      "changes": [
+        "Added camp_type sleepaway: the About page says 'ECC is an overnight summer camp'. Validator now passes.",
+        "financial_aid true now sourced to the Pricing and Scholarship page (need-based scholarships).",
+        "Other fields re-checked against the homepage: they match."
+      ],
+      "for_andrew": [
         "Homepage: 'Stay tuned for more information about Summer 2027!' No dates, ages, prices or registration date yet.",
         "The ACA Accreditation page says 'ECC is accredited by the American Camp Association'; aca_accredited left null until checked on acacamps.org.",
         "The About page still says 'Registration for summer camp is officially open!' (stale)."

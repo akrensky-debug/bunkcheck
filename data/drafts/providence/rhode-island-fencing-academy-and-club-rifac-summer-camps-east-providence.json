@@ -121,7 +121,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://rifac.com/",
       "kind": "html",
@@ -164,6 +164,32 @@
         "Description rewritten from the camp page (full-day, half-day, Fencing + Russian Math and High Performance camps)"
       ],
       "open_questions": [
+        "2027 camps not posted yet",
+        "Page offers a 10% family/multi-camp discount and early drop-off at 8:45; not modelled as extended care"
+      ]
+    },
+    "earlier_pass": {
+      "status": "needs_andrew",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://rifac.com/",
+      "changes": [],
+      "for_andrew": [
+        "refused: ask the owner for the brochure. The Summer Camps page (https://rifac.com/summer-camps/) returns a bot challenge (SiteGround captcha); the homepage has no camp dates, prices, ages or year, so season_year stays missing.",
+        "Homepage fields (name, address, phone, fencing, registration link) were checked and match."
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://rifac.com/",
+      "changes": [
+        "Set season_year 2026 (fixes missing required season_year) and added the eight 2026 camp weeks with prices from the Summer Camps page",
+        "website_url now the Summer Camps page instead of the homepage",
+        "Added ages 8-18, prices $295-$470 per week, meals_included false (bring lunch), indoor",
+        "Description rewritten from the camp page (full-day, half-day, Fencing + Russian Math and High Performance camps)"
+      ],
+      "for_andrew": [
         "2027 camps not posted yet",
         "Page offers a 10% family/multi-camp discount and early drop-off at 8:45; not modelled as extended care"
       ]

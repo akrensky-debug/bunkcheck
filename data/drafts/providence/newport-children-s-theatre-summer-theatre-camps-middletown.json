@@ -105,7 +105,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.newportchildrenstheatre.org/summer-camps",
       "kind": "html",
@@ -146,6 +146,30 @@
         "Added financial aid, refund policy (Financial Policy page) and bring-your-own-lunch; activities and description rewritten from the camp pages."
       ],
       "open_questions": [
+        "The Newsies camp met at St. Mary's Church, Portsmouth, not the Middletown studio; listing keeps the studio address.",
+        "No 2027 camps or registration dates posted yet."
+      ]
+    },
+    "earlier_pass": {
+      "status": "needs_andrew",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.newportchildrenstheatre.org/summer-camps",
+      "changes": [],
+      "for_andrew": [
+        "refused: ask the owner for the brochure (the site returned HTTP 429 Too Many Requests on the check fetch)."
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.newportchildrenstheatre.org/summer-camps",
+      "changes": [
+        "Confirmed season 2026 ('Summer Theatre Camp 2026', 'Summer Musical 2026', 'Early Bird through 4/15/26') and matched each age group to its camp page, resolving the low-confidence items.",
+        "Named the three sessions (Performance Potpourri; Newsies Jr.; The Three Musketeers) and added prices ($275 / $650 / $550 early bird; $300 / $700 / $575 after 4/15); price_min 275, price_max 700, per session.",
+        "Added financial aid, refund policy (Financial Policy page) and bring-your-own-lunch; activities and description rewritten from the camp pages."
+      ],
+      "for_andrew": [
         "The Newsies camp met at St. Mary's Church, Portsmouth, not the Middletown studio; listing keeps the studio address.",
         "No 2027 camps or registration dates posted yet."
       ]

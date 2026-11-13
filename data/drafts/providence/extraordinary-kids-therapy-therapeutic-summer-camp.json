@@ -126,7 +126,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.extraordinarykidstherapy.net/camps-and-groups",
       "kind": "html",
@@ -166,6 +166,36 @@
         "camp_type 'day' kept: full-day and half-day options are stated ('These groups apply to both full and half day')."
       ],
       "open_questions": [
+        "The page no longer shows the 2026 week dates (now '2027 dates coming soon'); the 2026 sessions in the draft come from the Oct 13 copy of the page.",
+        "The page does not say the camp is held at the clinic, but that is the only address the practice gives.",
+        "No ages or prices on the page."
+      ]
+    },
+    "earlier_pass": {
+      "status": "needs_andrew",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.extraordinarykidstherapy.net/camps-and-groups",
+      "changes": [
+        "Removed the 11 2026 sessions: the page now shows \"2027 ENROLLMENT COMING SOON\" with \"2027 dates coming soon\" for every week",
+        "Set season_year 2027 to match the page (registration opens Jan/Feb 2027)",
+        "Filled phone, street_address, city Chepachet, state, zip 02814 from the clinic address on /contact (new source entry)"
+      ],
+      "for_andrew": [
+        "Address is the clinic (389 Putnam Pike, Chepachet); the camp page does not say camp is held there. Confirm location",
+        "No ages, dates or prices for 2027 yet; registration is by email only"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.extraordinarykidstherapy.net/camps-and-groups",
+      "changes": [
+        "Added the clinic address from the Contact page: 389 Putnam Pike, Chepachet, RI 02814 (city Glocester, since Chepachet is a Glocester village not in our town list); phone 401-203-5444.",
+        "Description now names the place, weekly themes and the 20-child full-day cap; refund line notes the email application.",
+        "camp_type 'day' kept: full-day and half-day options are stated ('These groups apply to both full and half day')."
+      ],
+      "for_andrew": [
         "The page no longer shows the 2026 week dates (now '2027 dates coming soon'); the 2026 sessions in the draft come from the Oct 13 copy of the page.",
         "The page does not say the camp is held at the clinic, but that is the only address the practice gives.",
         "No ages or prices on the page."

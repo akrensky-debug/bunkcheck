@@ -175,7 +175,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.summerfenn.org",
       "kind": "html",
@@ -239,6 +239,24 @@
         "2027 Base Camp sessions and single weeks checked against the home page and match"
       ],
       "open_questions": [
+        "2027 prices are all '$TBD' on the Camp Rates page",
+        "Exact 2027 registration dates TBD (early January)",
+        "SF Junior and specialty camp dates by grade/week are 'Coming soon'"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.summerfenn.org",
+      "changes": [
+        "Added meals_included true (Camp Rates: 'tuition includes lunch and snack'), transportation true (optional bus routes, Transportation page), email CampOffice@fenn.org",
+        "Added refund policy (the page labels it the 2026 refund policy)",
+        "Swim notes now mention the 30' x 75' heated pool (Facilities page)",
+        "primary_categories nature -> general, outdoor, adventure (Base Camp is a 'classic, well rounded day camp' plus Expedition outdoor adventure camps), resolving the low-confidence item",
+        "financial_aid confirmed on the Camp Rates page ('Summer Fenn offers Financial Aid as we are able'); operator confirmed (Fenn School campus, CampOffice@fenn.org)",
+        "2027 Base Camp sessions and single weeks checked against the home page and match"
+      ],
+      "for_andrew": [
         "2027 prices are all '$TBD' on the Camp Rates page",
         "Exact 2027 registration dates TBD (early January)",
         "SF Junior and specialty camp dates by grade/week are 'Coming soon'"

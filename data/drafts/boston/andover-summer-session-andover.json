@@ -109,7 +109,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.andover.edu/summer/on-campus-programs",
       "kind": "html",
@@ -167,6 +167,24 @@
         "Application opening resolved: the page now says 'The application for summer 2027 is now open'"
       ],
       "open_questions": [
+        "Prices exclude mandatory fees: $400 student activities fee (boarders, LSI day), $100 health & safety (day), $400 international insurance",
+        "Meals for boarders not stated on the pages checked"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.andover.edu/summer/on-campus-programs",
+      "changes": [
+        "Description: 'more than 50 courses' -> 'more than 70 courses' (page now says over 70 options)",
+        "Added email summer@andover.edu (stated on the Summer Session page)",
+        "Added 2027 tuition from the Tuition & Dates page: split sessions into LSI boarding $11,700, LSI day $7,950, Upper boarding $11,500, Upper day $6,500 (2 courses) / $3,250 (1 course); price_min 3250, price_max 11700, per session",
+        "Added refund policy (20% non-refundable deposit; 50%/25%/0 refund schedule)",
+        "Added 'Music lessons' to activities (optional add-on on the Tuition page)",
+        "Ages ~12-14 / ~14-17 confirmed as written on the page (approximate; eligibility is by grade); activities low-confidence item confirmed on the Tuition page",
+        "Application opening resolved: the page now says 'The application for summer 2027 is now open'"
+      ],
+      "for_andrew": [
         "Prices exclude mandatory fees: $400 student activities fee (boarders, LSI day), $100 health & safety (day), $400 international insurance",
         "Meals for boarders not stated on the pages checked"
       ]

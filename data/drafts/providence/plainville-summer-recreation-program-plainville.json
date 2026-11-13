@@ -131,7 +131,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.plainvillema.gov/281/Summer-Recreation-Program",
       "kind": "html",
@@ -168,6 +168,29 @@
         "Added secondary category swimming (daily town pool); kept primary sports/arts (resolves low-confidence item). Description now gives hours, extended care and daily/half-day options."
       ],
       "open_questions": [
+        "Page now says 'Summer Rec 2026 Registration is CLOSED until April 2027'; no 2027 dates or rates yet.",
+        "Payment due dates on the page ('Monday July 14th', 'Monday August 17th') look carried over from an earlier year; not used in the listing."
+      ]
+    },
+    "earlier_pass": {
+      "status": "ready",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.plainvillema.gov/281/Summer-Recreation-Program",
+      "changes": [],
+      "for_andrew": [
+        "Only the 2026 season is posted; no 2027 dates or rates yet."
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.plainvillema.gov/281/Summer-Recreation-Program",
+      "changes": [
+        "All filled fields re-checked against the page: grades, 2026 weeks and field trips, $280/week, extended care, scholarships, cancellation policy and address match.",
+        "Added secondary category swimming (daily town pool); kept primary sports/arts (resolves low-confidence item). Description now gives hours, extended care and daily/half-day options."
+      ],
+      "for_andrew": [
         "Page now says 'Summer Rec 2026 Registration is CLOSED until April 2027'; no 2027 dates or rates yet.",
         "Payment due dates on the page ('Monday July 14th', 'Monday August 17th') look carried over from an earlier year; not used in the listing."
       ]

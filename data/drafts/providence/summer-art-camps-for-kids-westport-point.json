@@ -64,7 +64,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.westportartgroup.com/summer-art-camps",
       "kind": "html",
@@ -100,6 +100,30 @@
         "camp_type specialty kept (art-only week-long camp). All other fields re-checked and match."
       ],
       "open_questions": [
+        "No price on the page ('All materials are included in the cost'); no daily hours.",
+        "'Stay tuned in February for news of 2027 camps.'"
+      ]
+    },
+    "earlier_pass": {
+      "status": "ready",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.westportartgroup.com/summer-art-camps",
+      "changes": [],
+      "for_andrew": [
+        "Page says 2027 camp news comes in February; refresh sessions then",
+        "ZIP 02791 is taken from the P.O. Box mailing address on the page (same village as 1740 Main Road)"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.westportartgroup.com/summer-art-camps",
+      "changes": [
+        "Removed grade_min 2: the page's 'ages 7-11, entering grade 2' does not give a clear grade range, and ages 7-11 already cover it.",
+        "camp_type specialty kept (art-only week-long camp). All other fields re-checked and match."
+      ],
+      "for_andrew": [
         "No price on the page ('All materials are included in the cost'); no daily hours.",
         "'Stay tuned in February for news of 2027 camps.'"
       ]

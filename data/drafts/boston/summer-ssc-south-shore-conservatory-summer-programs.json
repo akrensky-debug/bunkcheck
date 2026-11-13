@@ -183,7 +183,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://summer.sscmusic.org/",
       "kind": "html",
@@ -250,6 +250,23 @@
         "financial_aid confirmed on SSC's Tuition Assistance page (lists Summer@SSC)"
       ],
       "open_questions": [
+        "Umbrella listing for several separate programs at two campuses; Andrew may prefer to list only the Hingham child camps or split them",
+        "Summer Music Festival page (grades 4-college) returned no readable text; not included",
+        "2027 programs not posted"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://summer.sscmusic.org/",
+      "changes": [
+        "Address set to the Hingham campus (One Conservatory Drive, Hingham 02043, 781-749-7565), where all child camps but Summer Dance run; resolves missing city/zip errors",
+        "Sessions rebuilt from each program page: Conservatory Kids is five separate weeks (not one June 8-July 31 block); Outdoor Explorers Week 1 is Mon 6/8-Fri 6/12 (the landing page's '6/13' and 'ages 4-6 pm' were garbled); added Dance Discovery, Summer Dance (Duxbury), Summer Piano, Summer of Song and Rock Band Jam with 2026 prices",
+        "Added price_min 350 / price_max 625 per session, extended_care true (Lunch & Learn add-on hour; Summer Piano 8 am drop-off and 4 pm pick-up)",
+        "Ages now 3-18 (camp programs only; Music Together for ages 0-5 and the Flute Symphony and Duxbury Music Festival are classes or teen/adult programs, not kids' camps); activities and description rewritten to the camp programs",
+        "financial_aid confirmed on SSC's Tuition Assistance page (lists Summer@SSC)"
+      ],
+      "for_andrew": [
         "Umbrella listing for several separate programs at two campuses; Andrew may prefer to list only the Hingham child camps or split them",
         "Summer Music Festival page (grades 4-college) returned no readable text; not included",
         "2027 programs not posted"

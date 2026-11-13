@@ -127,7 +127,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.faysummer.org/day-programs/classic-day-camp-age-3-grade-6",
       "kind": "html",
@@ -230,6 +230,22 @@
         "All low-confidence items (operator, prices, session dates, activities) confirmed on the page; 2026 season kept since 2027 is not posted"
       ],
       "open_questions": [
+        "2027 dates and rates not posted; home page says FaySummer 'will reach out in the fall regarding registration for next summer'",
+        "Deposit amount not stated on the pages checked"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.faysummer.org/day-programs/classic-day-camp-age-3-grade-6",
+      "changes": [
+        "price_per: week -> session ($395 is the half-day Launch Week, $1,220 a full-day two-week session); price_per_week 610 kept (Launch Week is one week)",
+        "Session 1 name notes no camp Friday July 3 (prorated), from the Rates & Registration page",
+        "Added financial_aid true (limited need-based aid), meals_included false (lunch $5/day extra or bring from home), refund policy",
+        "Description now gives hours, session pattern and the half-day option",
+        "All low-confidence items (operator, prices, session dates, activities) confirmed on the page; 2026 season kept since 2027 is not posted"
+      ],
+      "for_andrew": [
         "2027 dates and rates not posted; home page says FaySummer 'will reach out in the fall regarding registration for next summer'",
         "Deposit amount not stated on the pages checked"
       ]

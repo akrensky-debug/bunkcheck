@@ -333,7 +333,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://hollyhillfarm.org/summer-programs-2026",
       "kind": "html",
@@ -396,6 +396,21 @@
         "Low-confidence items confirmed: price_per_week 511 (Tier B full day), session prices, swim notes (no swimming mentioned; Ice Pond is a habitat)"
       ],
       "open_questions": [
+        "2027 summer programs, prices and registration dates not posted yet",
+        "Prices are tiered (A/B/C); sessions use Tier B, the cost-to-run price",
+        "Environmental Leadership 3-day program (ages 11-14) has no dates on the page and is left out"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://hollyhillfarm.org/summer-programs-2026",
+      "changes": [
+        "price_min 166 -> 212: with price_per 'week', the lowest weekly price is the CIT half-day Tier C $212 ($166 is the 2-day Stepping Back in Time program, not a week)",
+        "All other fields checked against the 2026 Summer Programs page and match: 12 weeks June 8 to Aug 28, Tier B session prices, $85 membership, early drop-off 8-9 am, cancellation terms, Garden Goats potty-training rule",
+        "Low-confidence items confirmed: price_per_week 511 (Tier B full day), session prices, swim notes (no swimming mentioned; Ice Pond is a habitat)"
+      ],
+      "for_andrew": [
         "2027 summer programs, prices and registration dates not posted yet",
         "Prices are tiered (A/B/C); sessions use Tier B, the cost-to-run price",
         "Environmental Leadership 3-day program (ages 11-14) has no dates on the page and is left out"

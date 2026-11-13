@@ -53,7 +53,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.creativecornerartstudiofranklin.com/",
       "kind": "html",
@@ -112,6 +112,34 @@
         "Sources split: homepage for contact/address/refund policy, Summer Art Club page for the rest."
       ],
       "open_questions": [
+        "Page says 'Summer 2027 Programming Coming in January'; no 2027 dates or registration date yet.",
+        "Children must have attended school or kindergarten; minimum 5 / maximum 18 per week.",
+        "No phone number on the site."
+      ]
+    },
+    "earlier_pass": {
+      "status": "needs_andrew",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.creativecornerartstudiofranklin.com/",
+      "changes": [],
+      "for_andrew": [
+        "refused: ask the owner for the brochure (Summer Art Club page /services-4 returned 429; homepage has no summer details, no ages, dates or prices)",
+        "season_year missing until the summer program page can be read"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.creativecornerartstudiofranklin.com/",
+      "changes": [
+        "Found the Summer Art Club page (services-4) linked from the homepage menu; website_url now points to it.",
+        "Added season_year 2026 with 6 sessions (June 29-Aug 28, 2026) and their booking prices.",
+        "Added ages 5-11, camp_type specialty -> day (half-day and full-day weekly art day camp), prices $300 half day / $400 full day per week, extended_care true ($50/week), meals_included false (lunch from home).",
+        "Rewrote description_short and activities from the Summer Art Club page.",
+        "Sources split: homepage for contact/address/refund policy, Summer Art Club page for the rest."
+      ],
+      "for_andrew": [
         "Page says 'Summer 2027 Programming Coming in January'; no 2027 dates or registration date yet.",
         "Children must have attended school or kindergarten; minimum 5 / maximum 18 per week.",
         "No phone number on the site."

@@ -42,6 +42,7 @@ export interface Pick {
   price_per_week: number | null
   start_date: string | null
   end_date: string | null
+  last_season?: boolean
   state: PickState
   note: string | null
 }

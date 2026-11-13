@@ -156,7 +156,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://watertownbgc.org/wbgc-programs/summer/",
       "kind": "html",
@@ -269,6 +269,22 @@
         "Kept 2026 season: nothing posted for 2027"
       ],
       "open_questions": [
+        "Balance due dates differ: the page says Weeks 1-5 by June 1 and Weeks 6-11 by July 1; the brochure says Weeks 1-6 and 7-11 (and 'June/July' vs 'August' weeks elsewhere)",
+        "The brochure's financial-aid deadline reads 'May 1, 2025' (likely a stale year)"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://watertownbgc.org/wbgc-programs/summer/",
+      "changes": [
+        "Added registration_url (the page's TRAX 'Camper Registration' link)",
+        "Read the linked 2026 brochure PDF: added activities (gym and outdoor games, swim lessons 3x/week, free swim, STEM, arts & crafts, team building, sports), primary_categories general, meals_included false ('Campers should bring bagged lunch'), swim and special-needs notes, and the one-week cancellation rule to the refund summary",
+        "Description now names the daily activities from the brochure",
+        "Confirmed every 2026 week date and price, ages 7-12, hours, extended-day rates, $25 membership and $75 deposit on the page; low-confidence items resolved",
+        "Kept 2026 season: nothing posted for 2027"
+      ],
+      "for_andrew": [
         "Balance due dates differ: the page says Weeks 1-5 by June 1 and Weeks 6-11 by July 1; the brochure says Weeks 1-6 and 7-11 (and 'June/July' vs 'August' weeks elsewhere)",
         "The brochure's financial-aid deadline reads 'May 1, 2025' (likely a stale year)"
       ]

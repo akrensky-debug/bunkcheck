@@ -88,7 +88,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.derbyacademy.org/summer2026/programs-and-tuition",
       "kind": "html",
@@ -137,6 +137,23 @@
         "Description now gives the 4-15 age range and what Extended Day includes"
       ],
       "open_questions": [
+        "Only '2026 Tuition' is posted (e.g. Camp Derby $400/week, Extended Day $300/week); 2027 prices not posted, so session prices left blank.",
+        "Tuition assistance deadline shown both as 'April 1, 2027' and '04/01/26' on the same page.",
+        "One listing covers four tracks with different ages and lengths (1-3 week sessions); Andrew may want separate listings."
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.derbyacademy.org/summer2026/programs-and-tuition",
+      "changes": [
+        "Added the seven 2027 weeks from the site banner (6/28-7/2 through 8/9-8/13, 2027); season_year 2027 (clears missing season_year)",
+        "Added ages 4-15 (Camp Derby ages 4-11; Arts/STEM/Sports groups up to 12-15)",
+        "Added email summer@derbyacademy.org from the Tuition and Financial Aid page; financial_aid now sourced there",
+        "registration_url switched to https (CampBrain Register link)",
+        "Description now gives the 4-15 age range and what Extended Day includes"
+      ],
+      "for_andrew": [
         "Only '2026 Tuition' is posted (e.g. Camp Derby $400/week, Extended Day $300/week); 2027 prices not posted, so session prices left blank.",
         "Tuition assistance deadline shown both as 'April 1, 2027' and '04/01/26' on the same page.",
         "One listing covers four tracks with different ages and lengths (1-3 week sessions); Andrew may want separate listings."

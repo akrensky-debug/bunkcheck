@@ -45,7 +45,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.keranna.org/",
       "kind": "html",
@@ -100,6 +100,34 @@
         "Rewrote description from the About Us and Events pages."
       ],
       "open_questions": [
+        "The site looks stale: the Events page schedule (Day Camp Week 1 'Monday, June 28th'; overnight weeks from 'Sunday, July 4th') fits 2021, and nothing newer is posted. Is the camp still running? season_year cannot be set, so the validator fails.",
+        "Camp runs both day weeks and overnight weeks; camp_type left null until a current season is posted.",
+        "No ages, prices or phone on the site."
+      ]
+    },
+    "earlier_pass": {
+      "status": "needs_andrew",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.keranna.org/",
+      "changes": [
+        "Contact page gives camp@keranna.org and the address 500 Reservoir Road, Cumberland, RI (new source); set street_address, city, email",
+        "Updated description_short with Cumberland and the 1937 founding from the About Us page"
+      ],
+      "for_andrew": [
+        "ZIP conflict: contact page says 'Cumberland, RI 02816' but the US Census geocoder returns 02864 for 500 Reservoir Rd, Cumberland (02816 is Coventry); zip left null",
+        "No season year, dates, ages, prices or day/overnight info anywhere on the site, so season_year and camp_type stay empty; ask camp@keranna.org"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.keranna.org/",
+      "changes": [
+        "Filled city Cumberland, street_address 500 Reservoir Road and email camp@keranna.org from the Contact page; ZIP 02864 from the Census geocoder (the page prints 02816, which is Coventry's ZIP).",
+        "Rewrote description from the About Us and Events pages."
+      ],
+      "for_andrew": [
         "The site looks stale: the Events page schedule (Day Camp Week 1 'Monday, June 28th'; overnight weeks from 'Sunday, July 4th') fits 2021, and nothing newer is posted. Is the camp still running? season_year cannot be set, so the validator fails.",
         "Camp runs both day weeks and overnight weeks; camp_type left null until a current season is posted.",
         "No ages, prices or phone on the site."

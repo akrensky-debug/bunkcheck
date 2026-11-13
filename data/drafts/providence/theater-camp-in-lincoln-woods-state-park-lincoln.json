@@ -66,7 +66,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.studioplayground.org/summercamp",
       "kind": "html",
@@ -106,6 +106,34 @@
         "Description updated for the 2027 two-week season."
       ],
       "open_questions": [
+        "The page labels both prices 'Early Summer Session' ($395 4 days; $475 5 days); the 5-day $475 price is taken to be the Late Summer Session (Aug 16-20).",
+        "No registration_url set: registration opens January 2 via the same page."
+      ]
+    },
+    "earlier_pass": {
+      "status": "ready",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.studioplayground.org/summercamp",
+      "changes": [
+        "Removed 'Nature walks' from activities: the page does not mention them.",
+        "Dropped 'Monday to Friday' from description_short: the 2027 early session runs June 28 to July 1 (Mon-Thu).",
+        "Added the two 2027 sessions (June 28-July 1 and August 16-20, 2027) stated on the page."
+      ],
+      "for_andrew": [
+        "Price is '$475 per week'; session prices left null because the early session is only 4 days. Registration opens January 2."
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.studioplayground.org/summercamp",
+      "changes": [
+        "Page now posts Summer 2027: added two sessions, June 28 - July 1, 2027 (4 days, $395) and August 16-20, 2027 (5 days, $475); season_year 2027.",
+        "Added price_min 395 / price_max 475 (price_per_week 475 confirmed), indoor_outdoor 'outdoor' ('Camp is 100% outdoors'). Ages 5-12 now consistent on the page (resolves low-confidence items).",
+        "Description updated for the 2027 two-week season."
+      ],
+      "for_andrew": [
         "The page labels both prices 'Early Summer Session' ($395 4 days; $475 5 days); the 5-day $475 price is taken to be the Late Summer Session (Aug 16-20).",
         "No registration_url set: registration opens January 2 via the same page."
       ]

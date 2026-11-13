@@ -140,7 +140,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://newtoncommunityed.org",
       "kind": "html",
@@ -183,6 +183,26 @@
         "Resolved errors: camp_type and season_year set"
       ],
       "open_questions": [
+        "Longer programs are outside the weekly range: 5-week Willy Wonka Jr. theater camp $3,000 (CIT version $2,250), 2-week CIT $900, high school U.S. History $795",
+        "Extended Day prices and hours not listed in the class list text",
+        "Some full-day camps need more signups to run ('3 more signups needed')"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://newtoncommunityed.org",
+      "changes": [
+        "Rebuilt the listing around NCE's 2027 summer camp page (the draft was the organization's home page): name -> 'Newton Community Education Summer Camp', website_url and registration_url -> /summercamp/",
+        "Set camp_type day and season_year 2027 (home page: 'Summer Camp 2027 is LIVE!'; 2027 camps June 28 to August 20)",
+        "Added the eight 2027 weeks (Week 2 is 4 days, July 6-9) as sessions, open for enrollment",
+        "Added grades K-12 (classes run from K-1 to 11-12), categories STEM/arts/sports/performing_arts and activities from the 2027 class list",
+        "Added prices: most one-week camps are $350 half-day or $650 full-day, 4-day Week 2 camps $280 to $535; price_min 280, price_max 650 per week",
+        "Added extended_care true (the camp page has an 'Extended Day' category; home page says Monday-Friday 8:30 AM-5 PM)",
+        "Added refund policy from the Policies page; description rewritten to describe the summer camps instead of the organization",
+        "Resolved errors: camp_type and season_year set"
+      ],
+      "for_andrew": [
         "Longer programs are outside the weekly range: 5-week Willy Wonka Jr. theater camp $3,000 (CIT version $2,250), 2-week CIT $900, high school U.S. History $795",
         "Extended Day prices and hours not listed in the class list text",
         "Some full-day camps need more signups to run ('3 more signups needed')"

@@ -90,7 +90,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://wickfordsailing.org/",
       "kind": "html",
@@ -139,6 +139,40 @@
         "Rewrote description from the home and class pages."
       ],
       "open_questions": [
+        "City recorded as North Kingstown (the camp says Wickford); Andrew may want Wickford added to cities.py instead.",
+        "420 racing class (ages 13-17, $1,600 8-week / $1,450 flex, sold out) and the adult class are not added as sessions: the 420 page gives no dates.",
+        "Opti pages list June 24 to August 15 in one place and June 22 to August 14 in another; sessions use the Dates & Times section (June 22 to August 14).",
+        "Cancellation policy on the site is still labelled 2025; not used.",
+        "No 2027 dates or registration date posted; 2026 registration opened February 6 (4-week Opti options February 15)."
+      ]
+    },
+    "earlier_pass": {
+      "status": "needs_andrew",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://wickfordsailing.org/ (and /contact/, /classes/)",
+      "changes": [
+        "primary_categories sports -> sailing (sailing is its own category).",
+        "Added address 165 Pleasant Street, Wickford, RI 02852 and phone from the contact page.",
+        "Added ages 5-17 from the youth class list on /classes/ (Minnows 5-7 up to 420/Opti Racers 13-17; the adult class is not counted).",
+        "Added the program dates June 22-August 14, 2026 from the home page."
+      ],
+      "for_andrew": [
+        "City 'Wickford' (as the contact page gives it) is not in cities.py; Wickford is a village of North Kingstown (which is in cities.py). Decide whether to use North Kingstown or add Wickford.",
+        "Class prices are on the individual class pages, not checked here."
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://wickfordsailing.org/",
+      "changes": [
+        "Added address 165 Pleasant Street, Wickford, RI 02852 and phone from the Contact page; city set to North Kingstown because Wickford (a village of North Kingstown) is not in cities.py.",
+        "Added 31 sessions for 2026 from the class pages: 16 Minnows half-day weeks ($275, three sold out), Beginner ($725), Beginner Plus ($750), Intermediate (sold out, no price shown), Opti Green and Opti Racers 8-week ($1,600), Adventure ($320, sold out).",
+        "Added ages 5 to 17, prices $275 to $1,600 per session, meals not included, swim test and PFD notes; primary category sailing; registration URL the classes page.",
+        "Rewrote description from the home and class pages."
+      ],
+      "for_andrew": [
         "City recorded as North Kingstown (the camp says Wickford); Andrew may want Wickford added to cities.py instead.",
         "420 racing class (ages 13-17, $1,600 8-week / $1,450 flex, sold out) and the adult class are not added as sessions: the 420 page gives no dates.",
         "Opti pages list June 24 to August 15 in one place and June 22 to August 14 in another; sessions use the Dates & Times section (June 22 to August 14).",

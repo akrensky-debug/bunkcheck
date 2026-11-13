@@ -54,7 +54,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.mounthopefarm.org/camp-wetu",
       "kind": "html",
@@ -118,6 +118,36 @@
         "Verified name, operator, phone (Mount Hope Farm footer number), address, activities and description against the page"
       ],
       "open_questions": [
+        "The listing has no ages, dates or prices: the page says 2027 dates and registration 'will be posted here as they become available'. Promote a bare listing now, or wait?",
+        "The Camp Director job post says next summer's camp 'runs for seven weeks, from the week of July 5 through the week of August 16' (2027), but no camper sessions or prices are posted yet",
+        "Phone is the general Mount Hope Farm number"
+      ]
+    },
+    "earlier_pass": {
+      "status": "needs_andrew",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.mounthopefarm.org/camp-wetu",
+      "changes": [
+        "Removed primary_categories [nature]: the page names no category (draft guessed it from the farm setting)"
+      ],
+      "for_andrew": [
+        "camp_type is missing: the page does not say day or overnight (likely day camp, but not stated); set it or ask Mount Hope Farm",
+        "Page is a 2026 wrap-up only: no ages, prices or sessions; 2027 details not posted yet",
+        "Phone 401-254-1745 is the general Mount Hope Farm number from the footer"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.mounthopefarm.org/camp-wetu",
+      "changes": [
+        "Set camp_type day (fixes missing required camp_type): the camp director posting describes a Monday-Friday daytime program",
+        "Set season_year 2026 explicitly (only season described)",
+        "Categories: 'nature' was a guess; now primary general with outdoor as secondary, indoor_outdoor outdoor",
+        "Verified name, operator, phone (Mount Hope Farm footer number), address, activities and description against the page"
+      ],
+      "for_andrew": [
         "The listing has no ages, dates or prices: the page says 2027 dates and registration 'will be posted here as they become available'. Promote a bare listing now, or wait?",
         "The Camp Director job post says next summer's camp 'runs for seven weeks, from the week of July 5 through the week of August 16' (2027), but no camper sessions or prices are posted yet",
         "Phone is the general Mount Hope Farm number"

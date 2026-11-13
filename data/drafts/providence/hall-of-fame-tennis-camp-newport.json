@@ -54,7 +54,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.tennisfame.com/club/junior",
       "kind": "html",
@@ -128,6 +128,33 @@
         "Phone kept as the Pro-Shop number the page gives for lessons (401-849-4777); the footer's general number is 401-849-3990."
       ],
       "open_questions": [
+        "No end date or list of weeks, so no sessions recorded.",
+        "Nothing posted for 2027 yet, including registration."
+      ]
+    },
+    "earlier_pass": {
+      "status": "ready",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.tennisfame.com/club/junior",
+      "changes": [
+        "Added registration_url: the page's 'Register & Pay' link (2026 Hall of Fame Summer Tennis Camp form).",
+        "Phone changed from the Pro Shop line (given for court bookings and lessons) to the main ITHF number 401-849-3990 in the page footer.",
+        "Confirmed season_year 2026: the registration form is the 2026 one and the page shows no 2027 dates."
+      ],
+      "for_andrew": []
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.tennisfame.com/club/junior",
+      "changes": [
+        "Added registration_url: the page's 'REGISTER & PAY FOR SUMMER PROGRAMMING SESSIONS' link (a Wufoo form named 2026-hall-of-fame-summer-tennis-camp).",
+        "season_year 2026 confirmed: the registration form is labeled 2026, and June 15 was a Monday in 2026.",
+        "All other fields match: ages 8-16, Mon-Fri 8:30-11:30 am, max 4 per court, $450 member / $600 non-member per week, 194 Bellevue Avenue, newport@tennisfame.com.",
+        "Phone kept as the Pro-Shop number the page gives for lessons (401-849-4777); the footer's general number is 401-849-3990."
+      ],
+      "for_andrew": [
         "No end date or list of weeks, so no sessions recorded.",
         "Nothing posted for 2027 yet, including registration."
       ]

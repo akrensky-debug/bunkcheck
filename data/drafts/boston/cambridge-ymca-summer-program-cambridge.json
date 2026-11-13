@@ -129,7 +129,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.cambridgeymca.org/child-care/summer-program/",
       "kind": "html",
@@ -189,6 +189,25 @@
         "Kept 2026 season: page shows 2027 cost ($300/week, unchanged) but dates 'TBD'"
       ],
       "open_questions": [
+        "The 2026 week dates are no longer on the page (it now shows 'Dates TBD' for 2027), so the 2026 sessions can't be re-checked; they stand from the October draft",
+        "2027 dates and waitlist opening not posted yet; the page still carries the 2026 line 'The waitlist ... will open on February 9, 2026 at 9am'",
+        "Lunch, extended hours and transportation not stated"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.cambridgeymca.org/child-care/summer-program/",
+      "changes": [
+        "Description and activities updated to the page's current 2027 enrichment list (swim lessons, gross motor and outdoor play, THINK-GIVE, STEM, cooking); 'gym time' no longer on the page",
+        "Primary category set to general (YMCA child-care day program); sports/arts/STEM low-confidence item resolved by moving swimming, arts, STEM to secondary_categories",
+        "Added email mrothermel@cambymca.org (registration and billing contact on the page)",
+        "swim_waterfront_notes now says swim lessons",
+        "Kept financial_aid true: page says EEC vouchers are accepted",
+        "Age typo resolved: page now reads 'must be 5 by August 31, 2026' under Program Information 2027",
+        "Kept 2026 season: page shows 2027 cost ($300/week, unchanged) but dates 'TBD'"
+      ],
+      "for_andrew": [
         "The 2026 week dates are no longer on the page (it now shows 'Dates TBD' for 2027), so the 2026 sessions can't be re-checked; they stand from the October draft",
         "2027 dates and waitlist opening not posted yet; the page still carries the 2026 line 'The waitlist ... will open on February 9, 2026 at 9am'",
         "Lunch, extended hours and transportation not stated"

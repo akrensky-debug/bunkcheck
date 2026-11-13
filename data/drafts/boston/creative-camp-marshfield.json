@@ -130,7 +130,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://levitatecamps.com/creative-camp/",
       "kind": "html",
@@ -172,6 +172,21 @@
         "Confirmed ages 5-10, 8:30-11:30am hours, address 1871 Ocean St. Marshfield 02050, refund policy and UltraCamp registration link"
       ],
       "open_questions": [
+        "Session dates on the page have no year; 2027 inferred from the banner and weekdays.",
+        "No price posted for Creative Camp.",
+        "Page text still says 'We have revamped our curriculum for 2026'."
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://levitatecamps.com/creative-camp/",
+      "changes": [
+        "Updated to the 2027 season: the page now shows nine Monday-Thursday weeks, 6/21-6/24 through 8/16-8/19, under the '2027 Camp Registration January 22 9AM' banner (6/21 is a Monday only in 2027); season_year 2027",
+        "Added meals_included=false: FAQ says Creative Camp kids bring a 'Healthy Snack (no peanut/nut products please!)' and water",
+        "Confirmed ages 5-10, 8:30-11:30am hours, address 1871 Ocean St. Marshfield 02050, refund policy and UltraCamp registration link"
+      ],
+      "for_andrew": [
         "Session dates on the page have no year; 2027 inferred from the banner and weekdays.",
         "No price posted for Creative Camp.",
         "Page text still says 'We have revamped our curriculum for 2026'."

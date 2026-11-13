@@ -100,7 +100,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.runningbrook.org/day-camp/day-camp",
       "kind": "html",
@@ -157,6 +157,25 @@
         "Re-fetched as BunkcheckBot on 2026-11-12: confirmed (old /day-camp/day-camp URL still 404; 2027 sessions June 28-August 20, $1,845 / $1,795 Session 4, $50 fee and $300 deposit, address, phone, email, CampInTouch link all match)"
       ],
       "open_questions": [
+        "age_min left null: page says 3.5 years old",
+        "Multi-session discounts (5% for three, 10% for four sessions) and sibling discount not reflected in prices",
+        "Session 4 early pick-up is '1:30pm - 2:00pm' on the dates pages but '1:30pm - 2:30pm' on the tuition page"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.runningbrook.org/day-camp/day-camp (404)",
+      "changes": [
+        "The draft's page (/day-camp/day-camp) now returns 404; the same content moved to /day-camp/day-camp-ps-grade-6. Updated website_url and the source row",
+        "Updated to the 2027 season: four two-week sessions June 28-August 20, 2027 (Important Dates page) at $1,845 ($1,795 for prorated Session 4) from the 2027 Tuition page; price_min/max and price_per session",
+        "Added refund/payment policy from How to Register ($50 registration fee, $300 deposit per session, March 17 Commitment Day, March 31 balance)",
+        "financial_aid confirmed on the Financial Aid page (tuition assistance, apply by January 31) - low-confidence item resolved",
+        "Added ACA accreditation (Accreditation page)",
+        "Description now gives the 2027 session span; validator error (missing season_year) resolved",
+        "Re-fetched as BunkcheckBot on 2026-11-12: confirmed (old /day-camp/day-camp URL still 404; 2027 sessions June 28-August 20, $1,845 / $1,795 Session 4, $50 fee and $300 deposit, address, phone, email, CampInTouch link all match)"
+      ],
+      "for_andrew": [
         "age_min left null: page says 3.5 years old",
         "Multi-session discounts (5% for three, 10% for four sessions) and sibling discount not reflected in prices",
         "Session 4 early pick-up is '1:30pm - 2:00pm' on the dates pages but '1:30pm - 2:30pm' on the tuition page"

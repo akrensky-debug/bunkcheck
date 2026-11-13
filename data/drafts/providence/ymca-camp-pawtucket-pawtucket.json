@@ -68,7 +68,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://ymcapawtucket.org/camps/camp-pawtucket",
       "kind": "html",
@@ -106,6 +106,35 @@
         "age_max raised from 13 to 16: the Day Camp page groups campers up to Leaders in Training (15-16) and lists specialty camps for ages 5-16."
       ],
       "open_questions": [
+        "Ages conflict: the Camp Pawtucket home page says 'ages 5-13'; the Day Camp page lists groups up to 16. Which should the listing show?",
+        "Day Camp page says 'Registration is Open!' but its dates match 2026 (June 22 to August 28 on Monday to Friday). Unclear whether this is stale or 2027 registration opened with old dates.",
+        "Day hours 6:30 AM to 6 PM; extended care not separately described.",
+        "No 2027 dates posted."
+      ]
+    },
+    "earlier_pass": {
+      "status": "needs_andrew",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://ymcapawtucket.org/camps/camp-pawtucket (and /camps/camp-pawtucket-day-camp)",
+      "changes": [
+        "Added primary_categories general, 'Starting at $285 per week' (price_min) and meals_included true ('Includes daily lunch') from the Day Camp page."
+      ],
+      "for_andrew": [
+        "season_year missing: the Day Camp page gives 'June 22 - August 28' (6:30am-6pm) with no year (Mon/Fri in 2026); no session added until the year is confirmed.",
+        "Ages conflict: main page says ages 5-13; Day Camp page has groups up to 15-16 (LIT) and specialty camps for 5-16. Kept 5-13."
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://ymcapawtucket.org/camps/camp-pawtucket",
+      "changes": [
+        "Added season 2026 and ten weekly sessions June 22 to August 28 from the Day Camp page (no year given; June 22 and August 28 fall on Monday and Friday in 2026). Session prices left blank ('starting at $285 per week').",
+        "Added prices $285 to $295 per week, daily lunch included, categories (general; arts, sports, swimming), specialty camps in activities, new description from the Day Camp page.",
+        "age_max raised from 13 to 16: the Day Camp page groups campers up to Leaders in Training (15-16) and lists specialty camps for ages 5-16."
+      ],
+      "for_andrew": [
         "Ages conflict: the Camp Pawtucket home page says 'ages 5-13'; the Day Camp page lists groups up to 16. Which should the listing show?",
         "Day Camp page says 'Registration is Open!' but its dates match 2026 (June 22 to August 28 on Monday to Friday). Unclear whether this is stale or 2027 registration opened with old dates.",
         "Day hours 6:30 AM to 6 PM; extended care not separately described.",

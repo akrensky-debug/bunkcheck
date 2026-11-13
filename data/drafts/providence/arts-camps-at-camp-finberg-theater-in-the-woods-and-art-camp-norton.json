@@ -123,7 +123,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.attleboroymca.org/art-camp",
       "kind": "html",
@@ -211,6 +211,35 @@
         "Rewrote refund_policy_summary from the 2026 payment policies PDF: the $100 deposit is applied to the camp balance, or forfeited; two weeks' notice; $25 change fee after May 31"
       ],
       "open_questions": [
+        "2027 dates and prices not posted yet",
+        "Whether the $300/$360 weekly fee includes the $100 deposit; the policy says the deposit is applied toward the balance, which suggests yes",
+        "Registration links on the page (Daxko search) return no programs now"
+      ]
+    },
+    "earlier_pass": {
+      "status": "ready",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.attleboroymca.org/art-camp",
+      "changes": [
+        "Added email campadmin@attleboroymca.org (shown on the page)",
+        "price_per week: the $300 member / $360 non-member prices sit under the heading 'Specialty Camp Weekly Fee'",
+        "Dates have no year; kept season_year 2026 since every listed week runs Mon-Fri in 2026 (July 6 2026 is a Monday)"
+      ],
+      "for_andrew": []
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.attleboroymca.org/art-camp",
+      "changes": [
+        "Added email campadmin@attleboroymca.org (now shown on the page)",
+        "Set price_per to week: the page heads the $300 member / $360 non-member fee 'Specialty Camp Weekly Fee'",
+        "Season 2026 confirmed: the 2026 Camp Guide lists the same weeks and Camp Finberg runs June 1-August 28, 2026; sessions now sourced to the guide",
+        "Added financial_aid true (2026 Financial Aid Form on the Camp Finberg page)",
+        "Rewrote refund_policy_summary from the 2026 payment policies PDF: the $100 deposit is applied to the camp balance, or forfeited; two weeks' notice; $25 change fee after May 31"
+      ],
+      "for_andrew": [
         "2027 dates and prices not posted yet",
         "Whether the $300/$360 weekly fee includes the $100 deposit; the policy says the deposit is applied toward the balance, which suggests yes",
         "Registration links on the page (Daxko search) return no programs now"

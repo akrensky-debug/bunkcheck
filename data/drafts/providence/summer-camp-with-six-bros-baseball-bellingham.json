@@ -84,7 +84,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.bellinghamyouthbaseball.com/bellinghamyouthbaseball/CampsandClinics",
       "kind": "html",
@@ -126,6 +126,31 @@
         "Confirmed 2026 weeks (June 29 to July 2, July 6 to 9, Mon-Thu), ages 6-12, 9 to 2, $215 early bird / $250 regular per week; added coach to description."
       ],
       "open_questions": [
+        "Six Bros site lists only its own Milford winter and vacation clinics; no 2027 summer camp dates yet. Bellingham page: 'Stay tuned for 2027 Registration...'"
+      ]
+    },
+    "earlier_pass": {
+      "status": "ready",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.bellinghamyouthbaseball.com/bellinghamyouthbaseball/CampsandClinics",
+      "changes": [
+        "Filled zip 02019: Bellingham, MA has one ZIP code (2020 Census, same rule as campfinder/ingest/fill.py); Harpin St. Fields has no street number to geocode"
+      ],
+      "for_andrew": [
+        "Page says \"Stay tuned for 2027 Registration\"; refresh dates and prices when posted"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.bellinghamyouthbaseball.com/bellinghamyouthbaseball/CampsandClinics",
+      "changes": [
+        "Added zip 02019 (Bellingham, MA has one ZIP code, 2020 Census town table).",
+        "Added operator contact from the Six Bros site: sixbrosbaseball@gmail.com, 774-291-1414; registration URL now the site it redirects to (sixbrossports.com); operator name Six Bros. Sports LLC.",
+        "Confirmed 2026 weeks (June 29 to July 2, July 6 to 9, Mon-Thu), ages 6-12, 9 to 2, $215 early bird / $250 regular per week; added coach to description."
+      ],
+      "for_andrew": [
         "Six Bros site lists only its own Milford winter and vacation clinics; no 2027 summer camp dates yet. Bellingham page: 'Stay tuned for 2027 Registration...'"
       ]
     }

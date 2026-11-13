@@ -62,7 +62,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.hinghammaritime.org/little-mariners",
       "kind": "html",
@@ -116,6 +116,21 @@
         "Description now says one-week sessions and names the Hingham Maritime Center"
       ],
       "open_questions": [
+        "No dates, hours or prices on the site: the four '1 Week Sessions' Register buttons go to the Bookeo booking portal, which the fetcher cannot read, and the Parent Handbook (a Google Doc) timed out",
+        "camp_type 'specialty' kept (marine science program); the page does not say day or half-day hours",
+        "Scholarship page speaks of 'sailors and rowers'; not explicit that it covers Little Mariners"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.hinghammaritime.org/little-mariners",
+      "changes": [
+        "Set season_year 2026 (the site's Scholarships page names the 2026 season; the program page has no year) to clear the required-field error",
+        "financial_aid source moved to the Scholarships page (need-based scholarships for the 2026 season)",
+        "Description now says one-week sessions and names the Hingham Maritime Center"
+      ],
+      "for_andrew": [
         "No dates, hours or prices on the site: the four '1 Week Sessions' Register buttons go to the Bookeo booking portal, which the fetcher cannot read, and the Parent Handbook (a Google Doc) timed out",
         "camp_type 'specialty' kept (marine science program); the page does not say day or half-day hours",
         "Scholarship page speaks of 'sailors and rowers'; not explicit that it covers Little Mariners"

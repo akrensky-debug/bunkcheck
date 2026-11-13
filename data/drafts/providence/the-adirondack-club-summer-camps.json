@@ -81,7 +81,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.adirondackclub.com/camps",
       "kind": "html",
@@ -135,6 +135,33 @@
         "Categories: primary general; sports, arts, adventure, swimming as secondary. Description rewritten"
       ],
       "open_questions": [
+        "2026 brochures (dates, weeks, prices) are over the fetcher's 8 MB limit, so no sessions or prices were recorded",
+        "Ages 5-14 come from the Adventure Camp groups; Arts and Sports camp ages are not stated outside the brochures",
+        "Is this one listing for three camps, or should Adventure/Arts/Sports be separate listings?"
+      ]
+    },
+    "earlier_pass": {
+      "status": "needs_andrew",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.adirondackclub.com/camps (HTTP 429 bot check; not read)",
+      "changes": [],
+      "for_andrew": [
+        "refused: ask the owner for the brochure (site answered HTTP 429 'Checking Your Request')",
+        "City, state, ZIP and camp_type are still missing; dates, prices and ages are only in the brochures. Also check the club is within ~30 miles of Providence."
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.adirondackclub.com/camps",
+      "changes": [
+        "Added the address from the contact page: 800 Chestnut Street, Franklin, MA 02038 (fixes missing city, state, zip; Franklin is about 30 miles from Providence)",
+        "Set camp_type day (fixes missing camp_type): daily drop-off 8:45 and pick-up 3:45",
+        "Added ages 5-14 (Adventure Camp groups), extended care (pre-camp 7:30, post-camp to 6pm), pool note, indoor_outdoor both",
+        "Categories: primary general; sports, arts, adventure, swimming as secondary. Description rewritten"
+      ],
+      "for_andrew": [
         "2026 brochures (dates, weeks, prices) are over the fetcher's 8 MB limit, so no sessions or prices were recorded",
         "Ages 5-14 come from the Adventure Camp groups; Arts and Sports camp ages are not stated outside the brochures",
         "Is this one listing for three camps, or should Adventure/Arts/Sports be separate listings?"

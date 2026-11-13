@@ -110,7 +110,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.rwu.edu/academics/marine-biology-camp",
       "kind": "html",
@@ -148,6 +148,32 @@
         "Added price_per 'session'; description now mentions the 18-camper cap and Cape Cod whale watch."
       ],
       "open_questions": [
+        "camp_type kept as 'specialty' (a one-subject program), though campers stay overnight in a residence hall; Andrew may prefer 'sleepaway'.",
+        "The page does not label $2,195 as the 2027 price, though it sits beside the 2027 dates."
+      ]
+    },
+    "earlier_pass": {
+      "status": "ready",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.rwu.edu/academics/marine-biology-camp",
+      "changes": [
+        "Checked every field against the page; no changes. 2027 dates (4 one-week overnight sessions, July 7 - Aug 3) and $2,195 cost confirmed."
+      ],
+      "for_andrew": [
+        "The $2,195 cost is not labelled with a year; it sits beside the 2027 dates. Registration is 'Coming Soon'."
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.rwu.edu/academics/marine-biology-camp",
+      "changes": [
+        "2027 dates changed on the page: now 5 sessions (Jun 27-Jul 3, Jul 11-17, Jul 18-24, Jul 25-31, Aug 1-7, 2027), Sunday to Saturday; replaced the draft's 4 sessions (Jul 7-Aug 3).",
+        "Registration is now open: each session has its own live form on connect.rwu.edu (Session 1 form shows 'Sunday, June 27, 2027 until Saturday, July 3, 2027'); sessions marked open and registration_url set to the camp page that links all five.",
+        "Added price_per 'session'; description now mentions the 18-camper cap and Cape Cod whale watch."
+      ],
+      "for_andrew": [
         "camp_type kept as 'specialty' (a one-subject program), though campers stay overnight in a residence hall; Andrew may prefer 'sleepaway'.",
         "The page does not label $2,195 as the 2027 price, though it sits beside the 2027 dates."
       ]

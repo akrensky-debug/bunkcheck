@@ -59,7 +59,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.northattleborough.gov/252/Programs-by-Season",
       "kind": "html",
@@ -106,6 +106,31 @@
         "Set season_year 2026 as a placeholder: the town page is undated and gives no dates or prices."
       ],
       "open_questions": [
+        "No dates, prices or ages beyond grades; MyRec lists no summer 2027 programs yet.",
+        "Program is for North Attleboro residents only; Andrew may want that shown.",
+        "SPP2 (grades 7-8) is not listed separately."
+      ]
+    },
+    "earlier_pass": {
+      "status": "drop",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.northattleborough.gov/252/Programs-by-Season",
+      "changes": [],
+      "for_andrew": [],
+      "drop_reason": "Duplicate draft of summer-playground-program-spp-north-attleborough.json (same program, same page); keep that one"
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.northattleborough.gov/252/Programs-by-Season",
+      "changes": [
+        "Added the program site address from the town's MyRec facility page: Community Field and Playground, 45 South Washington Street, North Attleboro, MA 02760 (fixes missing zip).",
+        "Added Park & Rec email and financial aid (Tony Calcia SPP scholarship fund).",
+        "Primary category changed from sports to general; description adds the 250-participant limit and drop-in option.",
+        "Set season_year 2026 as a placeholder: the town page is undated and gives no dates or prices."
+      ],
+      "for_andrew": [
         "No dates, prices or ages beyond grades; MyRec lists no summer 2027 programs yet.",
         "Program is for North Attleboro residents only; Andrew may want that shown.",
         "SPP2 (grades 7-8) is not listed separately."

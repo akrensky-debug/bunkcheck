@@ -66,7 +66,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.weymouthclub.com/camps/energy-center-camp-ages-4-6/",
       "kind": "html",
@@ -104,6 +104,22 @@
         "Confirmed ages 4-6, 9:00-2:00 full days, 2-week minimum, no-refund policy, own nut-free lunch (meals_included false), free swim, contact Lianne Mankus"
       ],
       "open_questions": [
+        "Summer 2027 week dates and prices not posted ('Summer 2027 pricing TBA').",
+        "The page still says 'Summer 2026 Camp Registration is now open!' and its Register link points to a JotForm builder URL (jotform.com/build/...), so no registration_url recorded.",
+        "The page lists 2026-2027 school-vacation camp days (e.g. February Vacation Camp Feb 15-19, April Vacation Camp Apr 19-23, 2027); Andrew may want them as a separate non-summer listing."
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.weymouthclub.com/camps/energy-center-camp-ages-4-6/",
+      "changes": [
+        "Removed price_per_week/price_min/price_max/price_per: the page no longer shows $425/$525; it now says 'Summer 2027 pricing TBA'",
+        "Removed the two April 2026 vacation-day sessions: they are gone from the page and were school-vacation days, not summer weeks",
+        "season_year set to 2027 to match the page heading 'Summer 2027 Schedule & Tuition' (no summer week dates posted yet)",
+        "Confirmed ages 4-6, 9:00-2:00 full days, 2-week minimum, no-refund policy, own nut-free lunch (meals_included false), free swim, contact Lianne Mankus"
+      ],
+      "for_andrew": [
         "Summer 2027 week dates and prices not posted ('Summer 2027 pricing TBA').",
         "The page still says 'Summer 2026 Camp Registration is now open!' and its Register link points to a JotForm builder URL (jotform.com/build/...), so no registration_url recorded.",
         "The page lists 2026-2027 school-vacation camp days (e.g. February Vacation Camp Feb 15-19, April Vacation Camp Apr 19-23, 2027); Andrew may want them as a separate non-summer listing."

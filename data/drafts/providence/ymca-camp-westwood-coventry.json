@@ -79,7 +79,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://ymcapawtucket.org/camps/camp-westwood",
       "kind": "html",
@@ -137,6 +137,33 @@
         "Existing fields re-checked against the main camp page: they match. Day Camp page added as a second source."
       ],
       "open_questions": [
+        "Page shows '2026 Dates and Rates' and 'Register for Summer 2026!'; no week dates in the page text and nothing for 2027 yet.",
+        "Ages: the text says 5-16 but the youngest groups and half-day camp start at 4; 4-16 used."
+      ]
+    },
+    "earlier_pass": {
+      "status": "ready",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://ymcapawtucket.org/camps/camp-westwood",
+      "changes": [
+        "No changes: contact details, address, registration link, activities and description match the page."
+      ],
+      "for_andrew": [
+        "Camp Westwood also runs an Overnight Camp (separate menu item); this listing covers the day camp. Ages, dates and prices are on the '2026 Dates and Rates' link, not on this page."
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://ymcapawtucket.org/camps/camp-westwood",
+      "changes": [
+        "Added ages 4-16 from the Day Camp page (age groups start at 4-5; the page says 'For children 5-16').",
+        "Added prices: price_min 260 (half day), price_max 375 (immersive/specialty), price_per_week 355 (traditional), per week.",
+        "Added extended_care true (before care 7:00 and after care to 6:00, $30/week each), transportation true (two bus routes, $60/week), meals_included true ('Lunch is provided by Camp!').",
+        "Existing fields re-checked against the main camp page: they match. Day Camp page added as a second source."
+      ],
+      "for_andrew": [
         "Page shows '2026 Dates and Rates' and 'Register for Summer 2026!'; no week dates in the page text and nothing for 2027 yet.",
         "Ages: the text says 5-16 but the youngest groups and half-day camp start at 4; 4-16 used."
       ]

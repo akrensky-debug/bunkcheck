@@ -54,7 +54,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.dreambiggym.com/camps",
       "kind": "html",
@@ -97,6 +97,32 @@
         "season_year NOT set: the page gives no dates or year, so the missing season_year error stays"
       ],
       "open_questions": [
+        "Is this a summer camp at all? The page says 'Come spend vacation at Dream Big Gymnastics' and its CAMP DATES table is empty; the events page shows nothing. It may be school-vacation days only",
+        "No season year, dates or ages on the site, so season_year (required) cannot be filled"
+      ]
+    },
+    "earlier_pass": {
+      "status": "needs_andrew",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.dreambiggym.com/camps",
+      "changes": [],
+      "for_andrew": [
+        "Page describes school-vacation day camps ($75/day, 8:30-4) and never mentions summer; CAMP DATES table is empty (also empty when rendered). Confirm summer camps exist before listing; season_year cannot be set",
+        "primary_categories includes arts only because of one craft project per day; sports alone may fit better"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.dreambiggym.com/camps",
+      "changes": [
+        "Added the $75/day price (price_min/max 75, price_per day)",
+        "Moved 'arts' to secondary categories (gym camp with one craft project)",
+        "Description tightened to the page's wording",
+        "season_year NOT set: the page gives no dates or year, so the missing season_year error stays"
+      ],
+      "for_andrew": [
         "Is this a summer camp at all? The page says 'Come spend vacation at Dream Big Gymnastics' and its CAMP DATES table is empty; the events page shows nothing. It may be school-vacation days only",
         "No season year, dates or ages on the site, so season_year (required) cannot be filled"
       ]

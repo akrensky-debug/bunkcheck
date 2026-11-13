@@ -45,7 +45,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.mobilequestadventures.com/camp",
       "kind": "html",
@@ -111,6 +111,32 @@
         "Address, phone, camp email and registration link match the camp page."
       ],
       "open_questions": [
+        "No camp description, camp type, ages, dates, hours or prices on any page the fetcher can read; the Register page loads its program list by script and shows nothing. camp_type (required) stays empty.",
+        "The camp page still says 'Camp 2026' and 'Save $25.00 if you register before 12/31/25'. Nothing posted for 2027.",
+        "season_year 2026 rests only on the 'Camp 2026' heading."
+      ]
+    },
+    "earlier_pass": {
+      "status": "needs_andrew",
+      "by": "Claude",
+      "date": "2026-10-27",
+      "page_checked": "https://www.mobilequestadventures.com/camp",
+      "changes": [
+        "Checked fields against the page; no changes. The page says 'Camp 2026' with contact and register link only."
+      ],
+      "for_andrew": [
+        "camp_type cannot be set from the page: neither the camp page nor the Register page (programs load in a widget) describes the program, hours, ages or prices. A person should check the program guide or ask the center."
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.mobilequestadventures.com/camp",
+      "changes": [
+        "Added refund policy from the Refund page (no refunds, credits or make-ups, including for weather).",
+        "Address, phone, camp email and registration link match the camp page."
+      ],
+      "for_andrew": [
         "No camp description, camp type, ages, dates, hours or prices on any page the fetcher can read; the Register page loads its program list by script and shows nothing. camp_type (required) stays empty.",
         "The camp page still says 'Camp 2026' and 'Save $25.00 if you register before 12/31/25'. Nothing posted for 2027.",
         "season_year 2026 rests only on the 'Camp 2026' heading."

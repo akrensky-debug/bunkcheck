@@ -85,7 +85,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://cathleenstoneisland.org/programs/connections/expeditions",
       "kind": "html",
@@ -133,6 +133,23 @@
         "Sessions, grades (rising 7th and 8th graders) and activities match the page"
       ],
       "open_questions": [
+        "The page still reads 'Registration for the 2026 expeditions is currently open!'; no 2027 dates posted",
+        "Q&A lists a different program contact (Noel Regalado, 617-830-5175) than the page (617.830.5131)",
+        "Open only to Boston Public Schools students"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://cathleenstoneisland.org/programs/connections/expeditions",
+      "changes": [
+        "Removed street_address: 'P.O. Box 127' is a mailing box, not where the program runs (the island; ferry from the EDIC dock, South Boston). City/ZIP kept from the mailing address 'P.O. Box 127, Boston, MA 02127'",
+        "Added email JCorcione@cathleenstoneisland.org (the page's program contact)",
+        "Added meals_included true and price 0 from the 2026 Q&A PDF ('Our program is free to participants'; 'We provide breakfast, lunch, dinner, and snacks')",
+        "Description now says the program is free and runs 5 or 7 days (Q&A), sourced to the Q&A PDF",
+        "Sessions, grades (rising 7th and 8th graders) and activities match the page"
+      ],
+      "for_andrew": [
         "The page still reads 'Registration for the 2026 expeditions is currently open!'; no 2027 dates posted",
         "Q&A lists a different program contact (Noel Regalado, 617-830-5175) than the page (617.830.5131)",
         "Open only to Boston Public Schools students"
