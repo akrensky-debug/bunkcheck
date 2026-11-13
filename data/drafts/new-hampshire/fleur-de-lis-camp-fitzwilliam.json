@@ -13,12 +13,12 @@
   "camp_type": "sleepaway",
   "grade_min": 3,
   "grade_max": 10,
-  "description_short": "A non-profit traditional sleepaway camp for girls, founded in 1929, on Laurel Lake in Fitzwilliam, NH. Sessions run from 2 to 7 weeks for rising 3rd–10th graders. Rising 11th and 12th graders can apply to a Counselor in Training program.",
+  "description_short": "A non-profit classic sleepaway camp for girls, founded in 1929, on Laurel Lake in Fitzwilliam, NH. Sessions run from 2 to 7 weeks for rising 3rd–10th graders. Rising 11th and 12th graders can apply to a Counselor in Training program.",
   "price_min": 3150,
   "price_max": 9950,
   "financial_aid": true,
   "refund_policy_summary": "You pay a $500 deposit when you register. If you applied for tuition assistance and can't enroll after reviewing the aid offer, the deposit is refunded. The page gives no other refund terms.",
-  "swim_waterfront_notes": "The camp is on the shores of Laurel Lake. The page gives no details about swimming or the waterfront program.",
+  "swim_waterfront_notes": "The camp is on the shores of Laurel Lake. Swimming, sailing, waterskiing, canoeing, kayaking and paddleboarding are among the activities campers choose from. The pages give no details on swim tests or lifeguarding.",
   "season_year": 2027,
   "sessions": [
     {
@@ -81,7 +81,7 @@
   "sources": [
     {
       "url": "https://www.fleurdeliscamp.org/dates-and-rates",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -101,14 +101,22 @@
         "price_max",
         "financial_aid",
         "refund_policy_summary",
-        "swim_waterfront_notes",
         "sessions"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.fleurdeliscamp.org/activities",
+      "checked": "2026-11-13",
+      "fields": [
+        "gender_policy",
+        "activities",
+        "swim_waterfront_notes"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.fleurdeliscamp.org/dates-and-rates",
       "kind": "html",
@@ -141,6 +149,42 @@
         "quote": "Registration for Summer 2027 is open!"
       }
     ],
-    "errors": []
-  }
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.fleurdeliscamp.org/dates-and-rates",
+        "https://www.fleurdeliscamp.org/activities"
+      ],
+      "changes": [
+        "Checked all 8 sessions, dates, tuition, deposit, contact details and address against the Dates & Rates page; all match (weekdays match 2027).",
+        "Added gender_policy girls: every page says the camp is for girls.",
+        "Added the 18 activities listed on the Activities page.",
+        "Rewrote swim_waterfront_notes from the Activities page (swimming, sailing, waterskiing, canoeing, kayaking, paddleboarding) and moved its source there.",
+        "Description now says 'classic' as the camp does, instead of 'traditional'."
+      ],
+      "open_questions": []
+    }
+  },
+  "gender_policy": "girls",
+  "activities": [
+    "Swimming",
+    "Tennis",
+    "Ceramics",
+    "Crafts",
+    "Theater arts",
+    "Surfing",
+    "Sailing",
+    "Knitting",
+    "Archery",
+    "Waterskiing",
+    "Riflery",
+    "Canoeing",
+    "Field sports",
+    "Kayaking",
+    "Horseback riding",
+    "Dance",
+    "Stained glass",
+    "Paddleboarding"
+  ]
 }

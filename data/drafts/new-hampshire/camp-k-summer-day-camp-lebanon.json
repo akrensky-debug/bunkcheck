@@ -15,9 +15,6 @@
     "sports",
     "arts"
   ],
-  "age_min": 5,
-  "age_max": 11,
-  "description_short": "City-run summer day camp for children ages 5-11, held Monday-Friday 7:30 AM-5:00 PM at Lebanon Middle School. Campers are grouped by age and do swim lessons, arts and crafts, sports and games, and performances.",
   "activities": [
     "Swim lessons",
     "Contracted performances",
@@ -26,15 +23,18 @@
     "Quiet activity time",
     "Optional day trips (Camp K Hits the Road)"
   ],
+  "age_min": 5,
+  "age_max": 11,
+  "description_short": "City-run summer day camp for children ages 5-11, held Monday-Friday 7:30 AM-5:00 PM at Lebanon Middle School. Campers are grouped by age (5-6, 7-8, 9-11) and do swim lessons, arts and crafts, sports and games, and performances. An optional trip week, Camp K Hits the Road, follows for ages 7-12.",
   "price_per_week": 185,
   "price_min": 185,
   "price_max": 225,
+  "price_per": "week",
   "financial_aid": true,
   "refund_policy_summary": "A $20 deposit per week is non-refundable. The page gives no other refund terms.",
   "special_needs_notes": "Parents must disclose any physical, mental, emotional, social, developmental, or psychological conditions, plus medications and allergies, by June 8. The page does not describe any specific accommodations.",
   "swim_waterfront_notes": "Swim lessons at the Lebanon Veterans Outdoor Memorial Pool. Parents must give the camper's swim level.",
   "season_year": 2026,
-  "price_per": "week",
   "sessions": [
     {
       "name": "Week 1",
@@ -110,7 +110,7 @@
   "sources": [
     {
       "url": "https://lebanonnh.gov/255/Camp-K---Summer-Day-Camp",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -136,8 +136,7 @@
         "special_needs_notes",
         "swim_waterfront_notes",
         "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
     },
     {
       "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=Lebanon+Middle+School%2C+3+Moulton+Avenue&city=Lebanon&state=NH&benchmark=Public_AR_Current&format=json",
@@ -145,11 +144,11 @@
       "fields": [
         "zip"
       ],
-      "note": "ZIP from the US Census geocoder for 3 MOULTON AVE, LEBANON, NH, 03766"
+      "note": "ZIP from the US Census geocoder for 3 MOULTON AVE, LEBANON, NH, 03766 (geocoder looked up 2026-10-13; the camp page gives no ZIP)"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://lebanonnh.gov/255/Camp-K---Summer-Day-Camp",
       "kind": "html",
@@ -234,6 +233,23 @@
         "quote": "Registration opens March 2, 2026 (residents)"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://lebanonnh.gov/255/Camp-K---Summer-Day-Camp",
+        "https://geocoding.geo.census.gov/geocoder/locations/address?street=3+Moulton+Avenue&city=Lebanon&state=NH&benchmark=Public_AR_Current&format=json (fetcher can't read JSON; ZIP kept from the 2026-10-13 lookup)"
+      ],
+      "changes": [
+        "Re-checked every field on the city's Camp K page: ages 5-11, June 29 to August 7, 2026, Monday to Friday 7:30-5:00, Lebanon Middle School, $185 resident / $225 non-resident a week, $20 non-refundable weekly deposit, swim lessons at Veterans Memorial Pool, financial assistance, LebanonNH.gov/Register (rec1 catalog)",
+        "Description now names the three age groups and the Hits the Road trip week for ages 7-12",
+        "ZIP 03766 stays from the US Census geocoder lookup of 3 Moulton Avenue (the camp page gives no ZIP); census source keeps its 2026-10-13 date"
+      ],
+      "open_questions": [
+        "The page gives only the June 29 to August 7, 2026 range and a weekly rate; the six Monday-Friday weeks are split from that range. It doesn't say whether camp runs on Friday July 3, 2026 (observed holiday)",
+        "The four Hits the Road trip days (August 10-13, 2026, $65 resident) are for ages 7-12, a different range from Camp K's 5-11; kept as sessions",
+        "The page's Quick Facts show registration on March 1 and 15, 2027 next to 2026 camp dates, so the page is part-updated for 2027"
+      ]
+    }
   }
 }

@@ -4,6 +4,7 @@
   "operator_name": "Camp Young Judaea",
   "website_url": "https://campyj.org",
   "registration_url": "https://campyj.org/register",
+  "email": "info@campyj.org",
   "phone": "(781) 237-9410",
   "street_address": "9 Camp Road",
   "city": "Amherst",
@@ -11,13 +12,48 @@
   "zip": "03031",
   "camp_type": "sleepaway",
   "primary_categories": [
-    "faith"
+    "faith",
+    "sports",
+    "arts"
   ],
-  "description_short": "Overnight summer camp in Amherst, NH with Jewish culture programming. For 2027 it offers a seven-week full season, a four-week first session, a three-week second session, and two-week sessions for first-time campers.",
+  "activities": [
+    "Basketball",
+    "Soccer",
+    "Softball",
+    "Flag football",
+    "Volleyball",
+    "Lacrosse",
+    "Tennis",
+    "Archery",
+    "Swimming",
+    "Waterskiing",
+    "Canoeing",
+    "Kayaking",
+    "Fishing",
+    "Stand-up paddleboarding",
+    "Sailing",
+    "Arts and crafts",
+    "Ceramics",
+    "Woodworking",
+    "Drama",
+    "Dance",
+    "Music",
+    "Videography and photography",
+    "Low ropes course",
+    "Climbing tower",
+    "Campcraft and overnight camping",
+    "Horseback riding (extra fee)",
+    "Jewish life"
+  ],
+  "age_min": 8,
+  "age_max": 15,
+  "description_short": "An independent, non-profit Jewish overnight camp on Baboosic Lake in Amherst, NH, for kids ages 8-15 from a range of Jewish backgrounds. For 2027 it offers a seven-week full season, a four-week first session, a three-week second session, and two-week sessions for first-time campers.",
   "price_min": 4600,
   "price_max": 13900,
   "financial_aid": true,
   "season_year": 2027,
+  "religious_affiliation": "Jewish",
+  "swim_waterfront_notes": "Waterfront on Baboosic Lake plus a pool, both staffed by First Aid, CPR and AED trained Red Cross instructors. Waterfront electives include waterskiing, canoeing, kayaking, fishing, paddleboarding and sailing.",
   "sessions": [
     {
       "name": "Full Season (seven weeks)",
@@ -58,30 +94,53 @@
   "sources": [
     {
       "url": "https://campyj.org/2027dates",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
         "website_url",
-        "registration_url",
         "phone",
         "street_address",
         "city",
         "state",
         "zip",
         "camp_type",
-        "primary_categories",
-        "description_short",
         "price_min",
         "price_max",
-        "financial_aid",
         "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
+    },
+    {
+      "url": "https://campyj.org/",
+      "checked": "2026-11-13",
+      "fields": [
+        "registration_url",
+        "age_min",
+        "age_max",
+        "description_short",
+        "religious_affiliation"
+      ]
+    },
+    {
+      "url": "https://campyj.org/activities",
+      "checked": "2026-11-13",
+      "fields": [
+        "primary_categories",
+        "activities",
+        "swim_waterfront_notes"
+      ]
+    },
+    {
+      "url": "https://campyj.org/scholarships",
+      "checked": "2026-11-13",
+      "fields": [
+        "email",
+        "financial_aid"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://campyj.org/2027dates",
       "kind": "html",
@@ -119,6 +178,24 @@
         "quote": "Jewish Culture"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://campyj.org/2027dates",
+        "https://campyj.org/",
+        "https://campyj.org/scholarships",
+        "https://campyj.org/activities",
+        "https://campyj.org/rookiecamp"
+      ],
+      "changes": [
+        "Confirmed all five 2027 sessions, dates and prices on the dates and rates page.",
+        "Merged in the homepage facts from the duplicate draft camp-yj-amherst: ages 8-15, independent non-profit Jewish overnight camp.",
+        "Added email info@campyj.org and confirmed financial aid: the scholarships page describes Camp YJ's own financial aid program, sibling and first-timer grants, and One Happy Camper.",
+        "Added activities, waterfront notes (Baboosic Lake and pool, Red Cross staffed) and categories faith/sports/arts from the activities page; set religious_affiliation Jewish.",
+        "Not added: YJ Rookie Camp (July 18-19 and Aug 5-6, 2027) is a one-night visit for prospective campers entering grades 2-7, with no price posted; it is not a camp session."
+      ],
+      "open_questions": []
+    }
   }
 }

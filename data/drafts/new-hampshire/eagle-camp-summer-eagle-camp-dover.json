@@ -1,6 +1,6 @@
 {
   "slug": "eagle-camp-summer-eagle-camp-dover",
-  "name": "Eagle Camp (Summer Eagle Camp)",
+  "name": "Summer Eagle Camp",
   "operator_name": "Portsmouth Christian Academy",
   "website_url": "https://pcaschool.org/summer-eagle-camp/",
   "phone": "(603) 742-3617",
@@ -14,7 +14,7 @@
   ],
   "age_min": 3,
   "grade_max": 7,
-  "description_short": "A Christian day camp at Portsmouth Christian Academy in Dover, NH, running for eight weeks in summer. Each week has a theme, with games, crafts, outdoor time and field trips to local attractions. Campers are grouped as Eaglets (age 3 through incoming kindergarten) and Eagles (incoming grades 1–7).",
+  "description_short": "A Christian day camp at Portsmouth Christian Academy in Dover, NH. In 2026 it ran eight weeks, June 15 to August 7, each week with its own theme, games, crafts, outdoor time and field trips to local attractions. Campers are grouped as Eaglets (age 3 through incoming kindergarten) and Eagles (incoming grades 1-7).",
   "activities": [
     "outdoor activities",
     "field trips to local attractions and community partners",
@@ -25,19 +25,11 @@
     "spiritual development"
   ],
   "season_year": 2026,
-  "sessions": [
-    {
-      "name": "Eagle Camp 2026 (eight weekly themed weeks)",
-      "start_date": "2026-06-15",
-      "end_date": "2026-08-07",
-      "price": null,
-      "availability": "unknown"
-    }
-  ],
+  "religious_affiliation": "Christian",
   "sources": [
     {
       "url": "https://pcaschool.org/summer-eagle-camp/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -49,17 +41,16 @@
         "zip",
         "camp_type",
         "primary_categories",
+        "religious_affiliation",
         "activities",
         "age_min",
         "grade_max",
-        "description_short",
-        "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+        "description_short"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://pcaschool.org/summer-eagle-camp/",
       "kind": "html",
@@ -96,6 +87,20 @@
         "quote": "Open Registration begins on February 20th."
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://pcaschool.org/summer-eagle-camp/",
+        "https://pcaschool.org/wp-content/uploads/2025/02/Summer-Program-Look-Book-compressed-1.pdf"
+      ],
+      "changes": [
+        "Confirmed groups, 2026 dates (June 15 to August 7), activities and address on the camp page; the 2026 program guidebook PDF agrees and gives no prices.",
+        "Removed the single June 15 to August 7 session: the camp sells eight themed weeks but does not post each week's dates or a price, so a season-long session would mislead. The 2026 dates are in the description instead.",
+        "Set religious_affiliation Christian (the page says 'Christ-centered community').",
+        "Name shortened to Summer Eagle Camp, the page's own heading."
+      ],
+      "open_questions": []
+    }
   }
 }

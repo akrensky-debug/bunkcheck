@@ -75,7 +75,7 @@
   "sources": [
     {
       "url": "https://fortfriendshipdaycamp.com/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -99,12 +99,11 @@
         "meals_included",
         "swim_waterfront_notes",
         "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://fortfriendshipdaycamp.com/",
       "kind": "html",
@@ -134,6 +133,20 @@
         "quote": "Starting at $330 Per Camper"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://fortfriendshipdaycamp.com/",
+        "https://scoutingevent.com/330-108273"
+      ],
+      "changes": [
+        "Checked every field against the camp homepage: name, operator, address, phone, ages 5-11, grades 1-5, hours, hot lunch, aftercare to 5 PM, 'starting at $330 per camper' and the five 2026 weeks all match.",
+        "Confirmed the five week dates on the camp's registration page (Scouting America NH event page); it also says kindergarteners must come with an adult.",
+        "No 2027 dates are posted, so the listing stays on the 2026 season. No changes to field values.",
+        "Left aca_accredited empty: the camp says it is ACA accredited, but I did not check acacamps.org."
+      ],
+      "open_questions": []
+    }
   }
 }

@@ -14,7 +14,8 @@
   "primary_categories": [
     "sports"
   ],
-  "description_short": "Day camp at the Boys & Girls Club in Salem, NH. Campers rotate through the Club's program areas, outdoor courts and pool, and go on weekly field trips.",
+  "grade_min": 0,
+  "description_short": "Day camp at the Boys & Girls Club in Salem, NH, for kids from kindergarten up, grouped by the grade they are entering, with a separate teen group. Campers rotate through the Club's program areas, outdoor courts and pool, and go on a field trip each week.",
   "activities": [
     "Swimming (pool)",
     "Outdoor court games",
@@ -29,7 +30,7 @@
   "sources": [
     {
       "url": "https://www.salembgc.org/summercamp",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -50,12 +51,18 @@
         "extended_care",
         "meals_included",
         "swim_waterfront_notes"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
+    },
+    {
+      "url": "https://irp.cdn-website.com/f6502fd9/files/uploaded/Copy+of+Fieldtrip+Times+and+Destinations+2026.pdf",
+      "checked": "2026-11-13",
+      "fields": [
+        "grade_min"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.salembgc.org/summercamp",
       "kind": "html",
@@ -86,6 +93,21 @@
         "quote": "outside courts, and pool"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.salembgc.org/summercamp",
+        "https://irp.cdn-website.com/f6502fd9/files/uploaded/Copy+of+Fieldtrip+Times+and+Destinations+2026.pdf",
+        "https://www.salembgc.org/registration"
+      ],
+      "changes": [
+        "Checked name, address, phone, email, hours, free extended care, the $275 weekly rate plus $50 membership, pool use and bring-your-own lunch against the 2026 Summer Camp page; all match.",
+        "Added grade_min 0 (kindergarten) from the camp's 2026 field trip schedule, which groups campers K and 1st, 2nd and 3rd, 4th and 5th, and Teens. The site gives no top grade, so grade_max stays empty.",
+        "Description now says who it is for (K up, by the grade entering in September, plus a teen group).",
+        "Left sessions empty: the page gives only the first day (17 June 2026), and the end of camp and the week boundaries would have to be guessed from the field trip list (10 weeks of trips, 17 June to 20 August)."
+      ],
+      "open_questions": []
+    }
   }
 }

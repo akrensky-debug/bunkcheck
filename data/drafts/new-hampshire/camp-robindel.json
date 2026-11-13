@@ -1,25 +1,41 @@
 {
   "slug": "camp-robindel",
   "name": "Camp Robindel",
-  "website_url": "https://robindel.com",
+  "website_url": "https://robindel.com/",
   "registration_url": "https://robindel.campintouch.com/ui/forms/application/camper/App",
   "phone": "215-518-6021",
-  "city": null,
-  "state": null,
-  "zip": null,
+  "city": "Moultonborough",
+  "state": "NH",
+  "zip": "03254",
   "camp_type": "sleepaway",
   "primary_categories": [
     "sports",
     "nature"
   ],
-  "description_short": "An all-girls overnight summer camp, running since 1951, with a full seven-week summer session. There is also a two-week introductory session for girls entering 2nd grade.",
+  "description_short": "An all-girls overnight summer camp on Lake Winnipesaukee in Moultonboro, NH, running since 1951, for girls entering 1st through 10th grade. The main program is the seven-week CR Full Experience, with a two-week introductory session, 2 Weeks on Winni, for girls entering 2nd grade.",
   "activities": [
-    "horseback riding (optional, extra fee)",
-    "campfires",
-    "camp songs",
-    "canteen",
-    "Blue & White color war",
-    "senior trips: Maine coast camping, white water rafting, rock climbing, Canada trip"
+    "Archery",
+    "Arts & crafts",
+    "Culinary",
+    "Basketball",
+    "Fitness",
+    "Gymnastics",
+    "Horseback riding (optional, extra fee)",
+    "Lacrosse",
+    "Mountain biking",
+    "Performing arts",
+    "Photography",
+    "Pickleball",
+    "Ropes",
+    "Ski",
+    "Soccer",
+    "Softball",
+    "Swim",
+    "Outdoor adventure",
+    "Tennis",
+    "Water crafts",
+    "Volleyball",
+    "Senior trips: Maine coast camping, white water rafting, rock climbing, Canada trip"
   ],
   "price_min": 5500,
   "price_max": 17300,
@@ -44,26 +60,58 @@
   "sources": [
     {
       "url": "https://robindel.com/dates-rates",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "website_url",
         "registration_url",
-        "phone",
         "camp_type",
-        "primary_categories",
-        "activities",
         "description_short",
         "price_min",
         "price_max",
+        "price_per",
         "transportation",
         "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
+    },
+    {
+      "url": "https://robindel.com/contact-us",
+      "checked": "2026-11-13",
+      "fields": [
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip"
+      ]
+    },
+    {
+      "url": "https://robindel.com/girls-camp/our-camp-program",
+      "checked": "2026-11-13",
+      "fields": [
+        "gender_policy",
+        "grade_min",
+        "grade_max"
+      ]
+    },
+    {
+      "url": "https://robindel.com/girls-camp/activities",
+      "checked": "2026-11-13",
+      "fields": [
+        "primary_categories",
+        "activities"
+      ]
     }
   ],
+  "email": "jolly@robindel.com",
+  "street_address": "81 Geneva Point Road",
+  "gender_policy": "girls",
+  "grade_min": 1,
+  "grade_max": 10,
+  "price_per": "session",
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://robindel.com/dates-rates",
       "kind": "html",
@@ -100,6 +148,30 @@
       "missing required city",
       "missing required state",
       "missing required zip"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://robindel.com/dates-rates",
+        "https://robindel.com/contact-us",
+        "https://robindel.com/families/directions-to-camp",
+        "https://robindel.com/girls-camp",
+        "https://robindel.com/girls-camp/our-camp-program",
+        "https://robindel.com/girls-camp/activities",
+        "https://robindel.com/families/camper-faqs"
+      ],
+      "changes": [
+        "Filled the missing location from the contact page: 81 Geneva Point Road, Moultonboro, NH 03254 (summer address on Lake Winnipesaukee). City is spelled Moultonborough, the town's official name, because the validator only knows that spelling.",
+        "Added email jolly@robindel.com (the Email Jolly link beside the phone number already listed).",
+        "Added gender_policy girls and grades 1 to 10 from the camp program page (divisions run from entering 1st grade through entering 10th grade).",
+        "Activities now follow the activities page list instead of evening traditions; kept the senior trips from the dates page.",
+        "Description now names Moultonboro, Lake Winnipesaukee and the grade range.",
+        "Checked 2027 dates and tuition: full session June 22 to August 7, $17,300; 2 Weeks on Winni June 22 to July 6, $5,500. Transportation is offered as an added fee.",
+        "Did not add aca_accredited: the site says ACA accredited, but confirming needs the ACA's own site, which is outside this check."
+      ],
+      "open_questions": [
+        "The slug camp-robindel has no town; the camp is in Moultonborough (the camp writes Moultonboro). Rename to camp-robindel-moultonborough? Camp Winaukee, its brother camp, is a separate draft (camp-winaukee) in the same town; not a duplicate."
+      ]
+    }
   }
 }

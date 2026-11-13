@@ -17,9 +17,6 @@
     "arts",
     "performing_arts"
   ],
-  "age_min": 8,
-  "age_max": 16,
-  "description_short": "Overnight YMCA camp for boys ages 8-16 on Bear Island in Lake Winnipesaukee, NH, with two-week sessions (one-week sessions only for first-time junior campers). Boys choose their own schedule from sports, waterfront, arts and outdoor-skills activities.",
   "activities": [
     "Archery",
     "Arts & Crafts",
@@ -51,6 +48,10 @@
     "Waterskiing",
     "Tennis"
   ],
+  "gender_policy": "boys",
+  "age_min": 8,
+  "age_max": 16,
+  "description_short": "Overnight YMCA camp for boys ages 8-16 on Bear Island in Lake Winnipesaukee, NH, with two-week sessions (one-week sessions only for first-time junior campers). Boys choose their own schedule from sports, waterfront, arts and outdoor-skills activities.",
   "price_min": 1600,
   "price_max": 2675,
   "financial_aid": true,
@@ -121,7 +122,7 @@
   "sources": [
     {
       "url": "https://camp.mvymca.org/camp/camp-lawrence/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -141,19 +142,25 @@
         "description_short",
         "price_min",
         "price_max",
-        "transportation",
         "meals_included",
-        "financial_aid",
         "refund_policy_summary",
         "special_needs_notes",
         "swim_waterfront_notes",
-        "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+        "sessions",
+        "gender_policy"
+      ]
+    },
+    {
+      "url": "https://camp.mvymca.org/prepare-for-camp/overnight-camp/",
+      "checked": "2026-11-13",
+      "fields": [
+        "financial_aid",
+        "transportation"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://camp.mvymca.org/camp/camp-lawrence/",
       "kind": "html",
@@ -190,6 +197,19 @@
         "quote": "7:45am Breakfast ... 12:45pm Lunch ... 5:45pm Dinner"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://camp.mvymca.org/camp/camp-lawrence/",
+        "https://camp.mvymca.org/prepare-for-camp/overnight-camp/"
+      ],
+      "changes": [
+        "Re-checked every field on the camp page: Summer 2027 dates and rates, deposits and cancellation terms, address, phone, email, ages 8-16, activities, swim and dietary notes",
+        "Added gender_policy boys (page title: 'Overnight Camp for Boys Ages 8-16')",
+        "Moved financial_aid and transportation to the shared Overnight Camp page, which shows the Financial Assistance Program (applications November 1 to February 28) and the bus from the Methuen YMCA"
+      ],
+      "open_questions": []
+    }
   }
 }

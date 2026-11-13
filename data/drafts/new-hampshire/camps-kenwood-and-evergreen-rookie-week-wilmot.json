@@ -1,6 +1,6 @@
 {
   "slug": "camps-kenwood-and-evergreen-rookie-week-wilmot",
-  "name": "Camps Kenwood & Evergreen — Rookie Week",
+  "name": "Camps Kenwood & Evergreen Rookie Week",
   "operator_name": "Camps Kenwood & Evergreen",
   "website_url": "https://kenwood-evergreen.com/rookie-week/",
   "registration_url": "https://kenwoodevergreen.campintouch.com/ui/forms/application/camper/App",
@@ -12,15 +12,16 @@
   "camp_type": "sleepaway",
   "grade_min": 2,
   "grade_max": 3,
-  "description_short": "A one-week overnight introduction to camp for rising 2nd and 3rd graders at Camps Kenwood (boys) and Evergreen (girls). Campers try activities in every department. The program is limited to seven campers per side.",
+  "description_short": "A one-week overnight introduction to camp for rising 2nd and 3rd graders at Camps Kenwood (boys) and Evergreen (girls) in Wilmot, NH. Campers sample activities in every department. The program is limited to eight campers per side.",
   "price_min": 1999,
   "price_max": 1999,
-  "season_year": 2026,
+  "season_year": 2027,
+  "refund_policy_summary": "Full refund if you cancel before January 1, 2027. A deposit is required at enrollment.",
   "sessions": [
     {
       "name": "Rookie Week",
-      "start_date": "2026-07-11",
-      "end_date": "2026-07-17",
+      "start_date": "2027-07-11",
+      "end_date": "2027-07-16",
       "price": 1999,
       "availability": "unknown"
     }
@@ -28,7 +29,7 @@
   "sources": [
     {
       "url": "https://kenwood-evergreen.com/rookie-week/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -42,16 +43,22 @@
         "camp_type",
         "grade_min",
         "grade_max",
-        "description_short",
+        "description_short"
+      ]
+    },
+    {
+      "url": "https://kenwood-evergreen.com/dates-and-rates/",
+      "checked": "2026-11-13",
+      "fields": [
         "price_min",
         "price_max",
+        "refund_policy_summary",
         "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://kenwood-evergreen.com/rookie-week/",
       "kind": "html",
@@ -78,6 +85,22 @@
       "Specific activities offered"
     ],
     "low_confidence": [],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://kenwood-evergreen.com/rookie-week/",
+        "https://kenwood-evergreen.com/dates-and-rates/"
+      ],
+      "changes": [
+        "Updated to 2027: Rookie Week is July 11-16, 2027 (Sunday drop-off, Friday pick-up), $1,999 credited toward next summer. The draft had the past 2026 week.",
+        "Fixed the group size: the camp now says eight campers per side, not seven.",
+        "Added the cancellation rule from the dates and rates page: full refund before January 1, 2027.",
+        "Removed the dash from the name."
+      ],
+      "open_questions": [
+        "This listing is only Rookie Week, a one-week taster inside Camps Kenwood & Evergreen. The main camp (2027 Full Summer $17,399 June 26 to Aug 10, half sessions $11,299 each) has no draft or listing. Should we list the main camp instead, with Rookie Week as one of its sessions? Kenwood is for boys and Evergreen for girls on one site, so it may also need a call on one listing or two."
+      ]
+    }
   }
 }

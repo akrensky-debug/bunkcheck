@@ -115,7 +115,7 @@
   "sources": [
     {
       "url": "https://www.graniteymca.org/camps/day-camp/greenland-day-camp/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -135,20 +135,27 @@
         "financial_aid",
         "swim_waterfront_notes",
         "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
     },
     {
-      "url": "https://www.census.gov/geographies/reference-files/time-series/geo/relationship-files.2020.html",
-      "checked": "2026-10-14",
+      "url": "https://tools.usps.com/zip-code-lookup.htm?citybyzipcode",
+      "checked": "2026-11-13",
       "fields": [
         "zip"
       ],
-      "note": "Greenland, NH sits inside one ZIP code (2020 Census ZCTA relationship file)"
+      "note": "Greenland, NH has a single ZIP code, 03840"
+    },
+    {
+      "url": "https://www.graniteymca.org/dev/wp-content/uploads/2024/01/Summer-Billing-Schedule.pdf",
+      "checked": "2026-11-13",
+      "fields": [
+        "refund_policy_summary"
+      ],
+      "note": "2026 Summer Day Camp Billing Schedule, linked from the camp page"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.graniteymca.org/camps/day-camp/greenland-day-camp/",
       "kind": "html",
@@ -176,6 +183,23 @@
       "Swim facility type (pool or open water)"
     ],
     "low_confidence": [],
-    "errors": []
-  }
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.graniteymca.org/camps/day-camp/greenland-day-camp/",
+        "https://www.graniteymca.org/camps/day-camp/",
+        "https://graniteymca.flowpaper.com/TGYDayCampBrochure/",
+        "https://www.graniteymca.org/dev/wp-content/uploads/2024/01/Summer-Billing-Schedule.pdf"
+      ],
+      "changes": [
+        "Checked units, grades 1-9, LIT/CIT, contacts, extended care (no extra charge), financial assistance and all ten 2026 theme weeks against the camp page; all match.",
+        "Replaced the ZIP source (a generic Census file page) with USPS: Greenland has one ZIP, 03840.",
+        "Added refund_policy_summary from the 2026 billing schedule PDF linked on the camp page.",
+        "The brochure is a flipbook the fetcher can't read, so weekly prices are still empty. No 2027 dates are posted; the listing stays on 2026."
+      ],
+      "open_questions": []
+    }
+  },
+  "refund_policy_summary": "Each week needs a $35 nonrefundable deposit. Cancel more than 6 weeks before the camp week: full refund less the deposit. Cancel 3 to 6 weeks before: refund less a $65 admin fee and the deposit. Cancel less than 3 weeks before: no refund. Payment is due in full at registration."
 }

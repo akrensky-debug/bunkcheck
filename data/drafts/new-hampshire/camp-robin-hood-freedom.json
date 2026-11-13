@@ -15,7 +15,7 @@
     "arts",
     "nature"
   ],
-  "description_short": "Overnight summer camp in Freedom, New Hampshire, with separate boys' and girls' camps. Campers can attend a four-week First Session or a seven-week Full Session, with team and individual sports, waterfront, hiking and trips, fitness and the arts.",
+  "description_short": "Overnight brother/sister summer camp on Lake Ossipee in Freedom, NH, for boys and girls ages 6 to 16, with separate Boys Camp and Girls Camp that share meals and assemblies. Summer 2027 offers a four-week First Session and a seven-week Full Session.",
   "activities": [
     "Team sports",
     "Individual sports",
@@ -33,7 +33,7 @@
   "transportation": true,
   "meals_included": true,
   "refund_policy_summary": "Tuition is refundable minus a $500 processing fee until January 1, 2027. After that date tuition is non-refundable.",
-  "swim_waterfront_notes": "The camp lists a waterfront program among its activities. This page gives no details about it.",
+  "swim_waterfront_notes": "Nearly a mile of waterfront on the Broad Bay section of Lake Ossipee. Certified instructors teach swimming at all levels, followed by free swim; also sailing, canoeing, kayaking, paddle boarding, waterskiing, wakeboarding, tubing, fishing and an inflatable water park. Older campers can take a lifeguarding course.",
   "season_year": 2027,
   "sessions": [
     {
@@ -54,7 +54,7 @@
   "sources": [
     {
       "url": "https://www.camprobinhood.com/about-camp-robin-hood/dates-fees-faqs.php",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "website_url",
@@ -66,22 +66,47 @@
         "state",
         "zip",
         "camp_type",
-        "primary_categories",
-        "activities",
-        "description_short",
         "price_min",
         "price_max",
+        "price_per",
         "transportation",
         "meals_included",
         "refund_policy_summary",
-        "swim_waterfront_notes",
         "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
+    },
+    {
+      "url": "https://www.camprobinhood.com/about-camp-robin-hood/boys-girls-camp-experience.php",
+      "checked": "2026-11-13",
+      "fields": [
+        "gender_policy",
+        "description_short"
+      ]
+    },
+    {
+      "url": "https://www.camprobinhood.com/about-camp-robin-hood/new-hampshire-camp-activities.php",
+      "checked": "2026-11-13",
+      "fields": [
+        "age_min",
+        "age_max",
+        "primary_categories",
+        "activities"
+      ]
+    },
+    {
+      "url": "https://www.camprobinhood.com/about-camp-robin-hood/activities-waterfront.php",
+      "checked": "2026-11-13",
+      "fields": [
+        "swim_waterfront_notes"
+      ]
     }
   ],
+  "gender_policy": "coed",
+  "age_min": 6,
+  "age_max": 16,
+  "price_per": "session",
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.camprobinhood.com/about-camp-robin-hood/dates-fees-faqs.php",
       "kind": "html",
@@ -119,6 +144,26 @@
         "quote": "Tuition does not include transportation to and from camp, linens and horseback riding which are billed separately."
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.camprobinhood.com/about-camp-robin-hood/dates-fees-faqs.php",
+        "https://www.camprobinhood.com/about-camp-robin-hood/boys-girls-camp-experience.php",
+        "https://www.camprobinhood.com/about-camp-robin-hood/new-hampshire-camp-activities.php",
+        "https://www.camprobinhood.com/about-camp-robin-hood/activities-waterfront.php",
+        "https://www.camprobinhood.com/summer-camp-families/travel-options.php"
+      ],
+      "changes": [
+        "Added ages 6 to 16 from the activities page and gender_policy coed (the camp calls itself a brother/sister camp living as a co-ed community).",
+        "Rewrote the description to say Lake Ossipee, ages 6 to 16 and the brother/sister setup; sessions and prices unchanged.",
+        "Swim notes now describe the waterfront page: swim instruction at all levels, sailing, canoeing, kayaking, waterskiing and more.",
+        "Confirmed 2027 dates and tuition: First Session June 22 to July 18, $11,675; Full Session June 22 to August 7, $17,000. The top summary's old June 23 to August 8 conflict is gone (it now says June 22 to August 7).",
+        "Kept transportation true: the dates page says transportation to and from camp is offered and billed separately (2027 travel details are 'coming soon').",
+        "Added price_per session and split provenance across four camp pages.",
+        "Did not add aca_accredited: the dates page says ACA accredited, but confirming needs the ACA's own site, which is outside this check."
+      ],
+      "open_questions": []
+    }
   }
 }

@@ -61,28 +61,28 @@
       "start_date": "2026-07-06",
       "end_date": "2026-07-10",
       "price": 375,
-      "availability": "open"
+      "availability": "unknown"
     },
     {
       "name": "Nature Designs",
       "start_date": "2026-07-13",
       "end_date": "2026-07-17",
       "price": 375,
-      "availability": "open"
+      "availability": "unknown"
     },
     {
       "name": "Animal Engineers",
       "start_date": "2026-07-20",
       "end_date": "2026-07-24",
       "price": 375,
-      "availability": "open"
+      "availability": "unknown"
     },
     {
       "name": "Animal Arts",
       "start_date": "2026-07-27",
       "end_date": "2026-07-31",
       "price": 375,
-      "availability": "open"
+      "availability": "unknown"
     },
     {
       "name": "Forest Explorers",
@@ -96,13 +96,13 @@
       "start_date": "2026-08-10",
       "end_date": "2026-08-14",
       "price": 375,
-      "availability": "open"
+      "availability": "unknown"
     }
   ],
   "sources": [
     {
       "url": "https://jhef.org/summer-camp/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -128,12 +128,11 @@
         "special_needs_notes",
         "swim_waterfront_notes",
         "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://jhef.org/summer-camp/",
       "kind": "html",
@@ -165,6 +164,18 @@
         "quote": "Water Play"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://jhef.org/summer-camp/"
+      ],
+      "changes": [
+        "Checked every field against the camp page: ages 5-12, 9-3 hours, $375 weeks, extended day, bring-your-own lunch, refund terms, independence expectations, address and the eight 2026 weeks all match.",
+        "Set the five weeks marked 'open' to 'unknown': the page says registration for 2026 has closed, so they were not open to book. The three FULL weeks stay full.",
+        "No 2027 dates are posted; the listing stays on 2026."
+      ],
+      "open_questions": []
+    }
   }
 }

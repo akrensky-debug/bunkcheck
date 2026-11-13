@@ -42,6 +42,34 @@
   "price_per": "week",
   "sessions": [
     {
+      "name": "Week 1 (full day)",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": 255,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 2 (full day)",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": 255,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 3 (full day)",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": 255,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 4: Festival Week (needs Week 1, 2 or 3 too) (full day)",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": 255,
+      "availability": "unknown"
+    },
+    {
       "name": "All four weeks (full day)",
       "start_date": "2026-07-06",
       "end_date": "2026-07-31",
@@ -52,7 +80,7 @@
   "sources": [
     {
       "url": "https://www.moco.org/camps/cake/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -74,14 +102,20 @@
         "price_per_week",
         "price_per",
         "extended_care",
-        "financial_aid",
+        "financial_aid"
+      ]
+    },
+    {
+      "url": "https://www.moco.org/wp-content/uploads/2026/05/C.A.K.E.-Class-Schedule-2026-UPDATED-V.2.pdf",
+      "checked": "2026-11-13",
+      "fields": [
         "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Week dates from the camp's 2026 class schedule; prices from the C.A.K.E. page"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.moco.org/camps/cake/",
       "kind": "html",
@@ -139,6 +173,20 @@
         "quote": "$990/4 weeks"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.moco.org/camps/cake/",
+        "https://www.moco.org/wp-content/uploads/2026/05/C.A.K.E.-Class-Schedule-2026-UPDATED-V.2.pdf",
+        "https://www.moco.org/wp-content/uploads/2026/02/CAKE-2026-Registration-Form.pdf"
+      ],
+      "changes": [
+        "Added the four 2026 weeks (6 to 10, 13 to 17, 20 to 24 and 27 to 31 July) at $255 full day from the camp's 2026 class schedule, which settles the date conflict: the 'July 5-9' list on the web page is an old year, and the page's own summary says 6 to 31 July.",
+        "Checked grades 3 to 12, prices ($990 for four weeks, $255 a week full day, $135 half day, aftercare $20 a day), tuition assistance, address, phone and email against the C.A.K.E. page; all match.",
+        "The 2026 registration form link on the page now returns 404; the page says 'We can't wait for C.A.K.E. 2027!' with no 2027 details yet."
+      ],
+      "open_questions": []
+    }
   }
 }

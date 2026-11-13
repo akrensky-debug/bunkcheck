@@ -2,7 +2,8 @@
   "slug": "camp-moosilauke-orford",
   "name": "Camp Moosilauke",
   "website_url": "https://moosilauke.com/",
-  "registration_url": "https://moosilauke.com/about-us/sessions-dates-tuition/",
+  "registration_url": "https://moosilauke.campintouch.com/ui/forms/application/camper/App",
+  "email": "cmoosilauke@gmail.com",
   "phone": "1-800-353-4546",
   "street_address": "55 Moosilauke Way",
   "city": "Orford",
@@ -13,9 +14,6 @@
     "sports",
     "nature"
   ],
-  "age_min": 7,
-  "age_max": 15,
-  "description_short": "A traditional overnight camp for boys ages 7-15 on a New Hampshire lake, founded in 1904. Campers do land sports, waterfront and outdoor adventure activities, with set periods in the morning and activities they pick each afternoon.",
   "activities": [
     "baseball",
     "basketball",
@@ -41,76 +39,86 @@
     "woodworking",
     "arts and crafts"
   ],
-  "price_min": 1580,
-  "price_max": 7700,
+  "gender_policy": "boys",
+  "age_min": 7,
+  "age_max": 15,
+  "description_short": "A traditional overnight camp for boys ages 7-15 on a New Hampshire lake, founded in 1904. Campers do land sports, waterfront and outdoor adventure activities, with set periods in the morning and activities they pick each afternoon.",
+  "price_min": 5200,
+  "price_max": 10200,
+  "price_per": "session",
+  "financial_aid": true,
+  "refund_policy_summary": "A $1,000 registration deposit is due at enrollment and becomes non-refundable after December 1, 2026. The page gives no other refund terms.",
   "swim_waterfront_notes": "The camp has a private waterfront and swimming area and about a mile of shoreline. Water activities include swimming, canoeing, kayaking, sailing, waterskiing/wakeboarding/wake surfing, rowing, stand-up paddle boarding and fishing.",
-  "season_year": 2023,
+  "season_year": 2027,
   "sessions": [
     {
-      "name": "4-1/2 week",
-      "start_date": "2023-06-22",
-      "end_date": "2023-07-22",
-      "price": 7700,
+      "name": "First Session: 4 weeks (all ages)",
+      "start_date": "2027-06-26",
+      "end_date": "2027-07-25",
+      "price": 10200,
       "availability": "unknown"
     },
     {
-      "name": "2-1/2 week (first)",
-      "start_date": "2023-06-22",
-      "end_date": "2023-07-08",
-      "price": 4550,
+      "name": "First Session: 2 weeks (limited availability)",
+      "start_date": "2027-06-26",
+      "end_date": "2027-07-10",
+      "price": 5200,
       "availability": "unknown"
     },
     {
-      "name": "2-week (ages 7-10 only)",
-      "start_date": "2023-07-09",
-      "end_date": "2023-07-22",
-      "price": 3720,
+      "name": "First Session: 2 weeks (rising 2nd to 6th graders)",
+      "start_date": "2027-07-11",
+      "end_date": "2027-07-25",
+      "price": 5200,
       "availability": "unknown"
     },
     {
-      "name": "2-1/2 week (second)",
-      "start_date": "2023-07-24",
-      "end_date": "2023-08-09",
-      "price": 4550,
-      "availability": "unknown"
-    },
-    {
-      "name": "1 week (ages 7-10 only)",
-      "start_date": "2023-07-24",
-      "end_date": "2023-07-30",
-      "price": 1580,
+      "name": "Second Session: 2 1/2 weeks (all ages)",
+      "start_date": "2027-07-28",
+      "end_date": "2027-08-14",
+      "price": 5950,
       "availability": "unknown"
     }
   ],
   "sources": [
     {
       "url": "https://moosilauke.com/about-us/moose-at-a-glance/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "website_url",
-        "registration_url",
-        "phone",
-        "street_address",
-        "city",
-        "state",
-        "zip",
         "camp_type",
         "primary_categories",
         "activities",
         "age_min",
         "age_max",
+        "gender_policy",
         "description_short",
+        "swim_waterfront_notes"
+      ]
+    },
+    {
+      "url": "https://moosilauke.com/about-us/sessions-dates-tuition/",
+      "checked": "2026-11-13",
+      "fields": [
+        "registration_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
         "price_min",
         "price_max",
-        "swim_waterfront_notes",
+        "price_per",
+        "financial_aid",
+        "refund_policy_summary",
         "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://moosilauke.com/about-us/moose-at-a-glance/",
       "kind": "html",
@@ -197,6 +205,24 @@
         "quote": "1 week $1,580 tuition"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://moosilauke.com/about-us/moose-at-a-glance/",
+        "https://moosilauke.com/about-us/sessions-dates-tuition/"
+      ],
+      "changes": [
+        "Replaced the 2023 sessions with the four 2027 sessions from the Sessions, Dates & Tuition page (June 26 to August 14, 2027; $5,200 to $10,200); season_year 2023 to 2027",
+        "price_min/price_max changed from 1,580/7,700 (2023) to 5,200/10,200 (2027); added price_per session",
+        "registration_url changed from the tuition page to the online application (moosilauke.campintouch.com)",
+        "Added email cmoosilauke@gmail.com, financial_aid true ($350,000 a summer in need-based aid) and the $1,000 deposit terms",
+        "Added gender_policy boys ('boy's residential, traditional')"
+      ],
+      "open_questions": [
+        "Ages 7-15 come from the At a Glance page, which still shows 2023 session data; the 2027 page names one session for rising 2nd to 6th graders but gives no overall age range",
+        "The At a Glance page says accredited by the American Camping Association; aca_accredited left null since we only check the camp's own pages"
+      ]
+    }
   }
 }
