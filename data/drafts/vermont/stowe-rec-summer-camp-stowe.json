@@ -3,7 +3,7 @@
   "name": "Stowe Rec Summer Camp",
   "operator_name": "Town of Stowe Parks & Recreation",
   "website_url": "https://www.stowevt.gov/Departments/Parks-Recreation/Summer-Camp",
-  "registration_url": "https://www.stowevt.gov/Services/Recreation-Program-Registration",
+  "registration_url": "https://secure.rec1.com/VT/stowe-vt/catalog/index/9bbeaf522d0c1fa9119d450692c86a3b?filter=c2VhcmNoPSZjYXRlZ29yeSU1QjMzMjk0JTVEPTE=",
   "email": "recreation@stowevt.gov",
   "phone": "(802) 253-7350",
   "city": "Stowe",
@@ -27,9 +27,7 @@
     "arts and expression",
     "science",
     "theme weeks",
-    "Friday field trips",
-    "skating",
-    "crafts"
+    "Friday field trips"
   ],
   "price_per_week": 255,
   "price_min": 255,
@@ -120,7 +118,7 @@
   "sources": [
     {
       "url": "https://www.stowevt.gov/Departments/Parks-Recreation/Summer-Camp",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -145,11 +143,11 @@
         "refund_policy_summary",
         "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "2026 season page"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.stowevt.gov/Departments/Parks-Recreation/Summer-Camp",
       "kind": "html",
@@ -213,6 +211,22 @@
         "quote": "P.O. Box 730 Stowe, VT 05672"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.stowevt.gov/Departments/Parks-Recreation/Summer-Camp"
+      ],
+      "changes": [
+        "Removed 'skating' and 'crafts' from activities: they appear only in parent testimonials, not in the camp's own description.",
+        "registration_url now the Rec1 catalog linked as 'Registration' on the camp page (was the town's general registration page).",
+        "Checked 2026 dates (June 29 to August 14, Monday to Friday, 7:45am to 4:15pm), specialty camp weeks June 22-26 and August 17-21, the fee table ($255 to $1,550), grades (completed K through 9th grade, 2025-26 grades), cancellation policy and scholarships; all match.",
+        "Kept the seven Monday-to-Friday weeks as sessions because the page sells weekly registration; their dates are worked out from the June 29 to August 14 span, and their price is empty because the weekly rate depends on age group and residency ($255 to $275).",
+        "Phone (802) 253-7350 is the town hall number in the page footer; the camp page gives no direct recreation line."
+      ],
+      "open_questions": [
+        "Week 1 (June 29 to July 3) includes the July 3 federal holiday; the page doesn't say whether camp runs that day."
+      ]
+    }
   }
 }
