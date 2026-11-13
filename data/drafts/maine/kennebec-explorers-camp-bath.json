@@ -18,7 +18,7 @@
   ],
   "grade_min": 2,
   "grade_max": 5,
-  "description_short": "A five-day, mostly outdoor day camp at Maine Maritime Museum, with a different theme each week. Campers explore the Kennebec Estuary through field trips, boat cruises on the Kennebec River, games, science experiments and crafts.",
+  "description_short": "Five-day, mostly outdoor day camp at Maine Maritime Museum in Bath for rising grades 2 to 5, with a different theme each week. Campers explore the Kennebec Estuary through field trips, river boat cruises, games, science experiments and crafts; 9 am to 4 pm, with early drop-off and late pick-up for $40.",
   "activities": [
     "Nature hikes",
     "Beach trips",
@@ -45,48 +45,48 @@
       "start_date": "2026-06-22",
       "end_date": "2026-06-26",
       "price": 310,
-      "availability": "waitlist"
+      "availability": "unknown"
     },
     {
       "name": "Session 2 | Going Green",
       "start_date": "2026-06-29",
       "end_date": "2026-07-03",
       "price": 310,
-      "availability": "waitlist"
+      "availability": "unknown"
     },
     {
       "name": "Session 3 | Paws and Claws",
       "start_date": "2026-07-13",
       "end_date": "2026-07-17",
       "price": 310,
-      "availability": "waitlist"
+      "availability": "unknown"
     },
     {
       "name": "Session 4 | Under the River and Through the Sea",
       "start_date": "2026-07-20",
       "end_date": "2026-07-24",
       "price": 310,
-      "availability": "waitlist"
+      "availability": "unknown"
     },
     {
       "name": "Session 5 | Maine Time Travelers",
       "start_date": "2026-07-27",
       "end_date": "2026-07-31",
       "price": 310,
-      "availability": "waitlist"
+      "availability": "unknown"
     },
     {
       "name": "Session 6 | Crafty Critters",
       "start_date": "2026-08-03",
       "end_date": "2026-08-07",
       "price": 310,
-      "availability": "waitlist"
+      "availability": "unknown"
     }
   ],
   "sources": [
     {
       "url": "https://www.mainemaritimemuseum.org/kennebec-explorers/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -118,7 +118,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.mainemaritimemuseum.org/kennebec-explorers/",
       "kind": "html",
@@ -208,6 +208,19 @@
         "quote": "Kennebec Explorers Camp (Wait List Only)"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.mainemaritimemuseum.org/kennebec-explorers/"
+      ],
+      "changes": [
+        "Checked all six dated 2026 sessions, the $310 price, grades, hours, extended care, lunch, scholarship and cancellation policy against the camp page; all match. 2027 is not posted yet.",
+        "Set session availability to unknown: the 'Wait List Only' label was for the 2026 season, which is over.",
+        "Session 7 is still left out: the page dates it August 11 to 15, 2025, a leftover from last year.",
+        "Added the 9 am to 4 pm hours and the $40 early and late care to the description."
+      ],
+      "open_questions": []
+    }
   }
 }
