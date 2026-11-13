@@ -1,11 +1,13 @@
 import type { Metadata, Viewport } from 'next'
-import { Figtree } from 'next/font/google'
+import localFont from 'next/font/local'
 import './globals.css'
 import AccountLink from '@/components/AccountLink'
 
-const figtree = Figtree({
-  subsets: ['latin'],
-  weight: ['700', '800'],
+// Figtree's Latin subset, served from the repo so the build never downloads fonts.
+// One variable file (weights 300 to 900, from Google Fonts v9); licence in app/fonts/OFL.txt.
+const figtree = localFont({
+  src: './fonts/figtree-latin.woff2',
+  weight: '700 800',
   variable: '--font-display',
   display: 'swap',
 })
