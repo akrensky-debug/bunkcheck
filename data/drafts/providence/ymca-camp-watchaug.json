@@ -180,10 +180,9 @@
       "checked": "2026-11-13",
       "fields": [
         "price_per_week",
-        "price_per",
-        "sessions"
+        "price_per"
       ],
-      "note": "Price from the camp's own page"
+      "note": "Price from the camp's own page (also the session prices)"
     }
   ],
   "review": {
@@ -256,8 +255,7 @@
     "errors": [
       "missing required city",
       "missing required state",
-      "missing required zip",
-      "field sessions listed under two sources"
+      "missing required zip"
     ],
     "first_pass": {
       "by": "Claude",

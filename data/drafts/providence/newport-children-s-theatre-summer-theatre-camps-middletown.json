@@ -79,20 +79,17 @@
       "checked": "2026-11-13",
       "fields": [
         "price_max",
-        "price_per",
-        "sessions"
+        "price_per"
       ],
-      "note": "Price from the camp's own page"
+      "note": "Price from the camp's own page (also the Newsies session price)"
     },
     {
       "url": "https://www.newportchildrenstheatre.org/three-musketeers",
       "checked": "2026-11-13",
       "fields": [
-        "price_min",
-        "price_per",
-        "sessions"
+        "price_min"
       ],
-      "note": "Price from the camp's own page"
+      "note": "Price from the camp's own page (also the Three Musketeers session price)"
     }
   ],
   "review": {
@@ -142,11 +139,7 @@
         "quote": "for ages 8-18 July 27-August 8th"
       }
     ],
-    "errors": [
-      "field sessions listed under two sources",
-      "field price_per listed under two sources",
-      "field sessions listed under two sources"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-10-27",
