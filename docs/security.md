@@ -12,8 +12,8 @@ repeat them.
 ## The short version
 
 - **The biggest risk was our Anthropic bill.** Anyone could make a guest family without signing
-  in and script the assistant without limit, up to ten Opus calls per message. Branch
-  `claude/agent-spend-limits` caps it: per address, per family, per day, and for everyone.
+  in and script the assistant without limit, up to ten Opus calls per message. PR #78
+  caps it: per address, per family, per day, and for everyone.
 - **Every per-IP limit could be skipped** by sending a new `X-Forwarded-For` header each time.
   PR #77 reads only the header Railway sets.
 - **Anyone can mark any camp "Claimed by the camp"** with their own email address, and the same
