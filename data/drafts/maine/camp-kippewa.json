@@ -6,14 +6,14 @@
   "registration_url": "https://www.kippewa.com/enroll",
   "email": "info@kippewa.com",
   "phone": "1-800-KIPPEWA",
-  "city": null,
+  "city": "Monmouth",
   "state": "ME",
   "zip": null,
   "camp_type": "sleepaway",
   "primary_categories": [
     "sports"
   ],
-  "description_short": "An all-girls overnight camp in Maine with a 3½-week traditional camp, a 2-week traditional camp and a 2-week riding camp. Tuition covers bus or shuttle service from Newton MA, Rye NY and Portland ME, plus trips, linens and laundry.",
+  "description_short": "An all-girls overnight camp on Lake Cobbosseecontee in Monmouth, Maine, with a 3½-week traditional camp, a 2-week traditional camp and a 2-week riding camp. Tuition covers ground transport from Newton MA, Rye NY and Portland ME, plus trips, linens and laundry.",
   "activities": [
     "Tennis (private lesson add-on)",
     "Horseback riding (equestrian add-on and riding camp)",
@@ -88,10 +88,11 @@
       "availability": "unknown"
     }
   ],
+  "gender_policy": "girls",
   "sources": [
     {
       "url": "https://www.kippewa.com/datesrates",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -103,17 +104,33 @@
         "camp_type",
         "primary_categories",
         "activities",
-        "description_short",
         "price_min",
         "price_max",
         "transportation",
         "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "2027 Dates and Rates for the three programs, tuition inclusions, contact"
+    },
+    {
+      "url": "https://www.kippewa.com/facility-rentals",
+      "checked": "2026-11-13",
+      "fields": [
+        "city"
+      ],
+      "note": "Facility Rentals: 'in Monmouth, Maine, nestled on 60 acres along Lake Cobbosseecontee'"
+    },
+    {
+      "url": "https://www.kippewa.com/",
+      "checked": "2026-11-13",
+      "fields": [
+        "gender_policy",
+        "description_short"
+      ],
+      "note": "Home page: overnight camp for girls on Lake Cobbosseecontee since 1957"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.kippewa.com/datesrates",
       "kind": "html",
@@ -149,6 +166,30 @@
       "missing required city",
       "missing required zip",
       "city None, ME is not in cities.py"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.kippewa.com/datesrates",
+        "https://www.kippewa.com/",
+        "https://www.kippewa.com/campkippewa",
+        "https://www.kippewa.com/kippewa-point",
+        "https://www.kippewa.com/contact",
+        "https://www.kippewa.com/our-camps",
+        "https://www.kippewa.com/kippewa/dates",
+        "https://www.kippewa.com/facility-rentals"
+      ],
+      "changes": [
+        "Checked all 9 sessions and the $10,150, $5,550 and $6,650 tuitions against the 2027 Dates and Rates page; all match.",
+        "Filled city Monmouth from the camp's Facility Rentals page.",
+        "Added gender_policy girls from the home page.",
+        "Left ages null: Camp Kippewa Point says ages 6 to 15 and the third riding session says ages 7 to 14, but no page gives a range for the whole listing.",
+        "No street address or ZIP appears on any Kippewa page I opened, so zip stays empty and check_draft fails on 'missing required zip'."
+      ],
+      "open_questions": [
+        "Kippewa's own pages give no street address or ZIP (only 'Monmouth, Maine'), so the draft can't validate. Ask the camp, or accept a ZIP from another source?",
+        "The listing covers three programs (Camp Kippewa, Camp Kippewa Point, Kippewa Equestrian Academy). The Dates and Rates page labels the blocks only by format, so which sessions belong to which camp is inferred. Keep as one listing or split into three?"
+      ]
+    }
   }
 }

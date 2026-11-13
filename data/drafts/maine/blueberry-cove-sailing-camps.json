@@ -1,12 +1,12 @@
 {
   "slug": "blueberry-cove-sailing-camps",
   "name": "Blueberry Cove Sailing Camps",
-  "operator_name": "University of Maine Cooperative Extension 4-H (4-H Camp & Learning Centers at Tanglewood & Blueberry Cove)",
+  "operator_name": "University of Maine Cooperative Extension 4-H Camp & Learning Centers at Tanglewood & Blueberry Cove",
   "website_url": "https://extension.umaine.edu/tanglewood/blueberry-cove-tenants-harbor/sailing-camps/",
   "registration_url": "https://extension.umaine.edu/tanglewood/registration/",
-  "city": null,
+  "city": "Tenants Harbor",
   "state": "ME",
-  "zip": null,
+  "zip": "04860",
   "camp_type": "specialty",
   "primary_categories": [
     "sports",
@@ -55,13 +55,11 @@
   "sources": [
     {
       "url": "https://extension.umaine.edu/tanglewood/blueberry-cove-tenants-harbor/sailing-camps/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
-        "operator_name",
         "website_url",
         "registration_url",
-        "state",
         "camp_type",
         "primary_categories",
         "activities",
@@ -72,12 +70,24 @@
         "price_max",
         "swim_waterfront_notes",
         "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
+    },
+    {
+      "url": "https://extension.umaine.edu/tanglewood/about/contact-us/",
+      "checked": "2026-11-13",
+      "fields": [
+        "operator_name",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "phone",
+        "email"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://extension.umaine.edu/tanglewood/blueberry-cove-tenants-harbor/sailing-camps/",
       "kind": "html",
@@ -114,6 +124,25 @@
       "missing required city",
       "missing required zip",
       "city None, ME is not in cities.py"
-    ]
-  }
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://extension.umaine.edu/tanglewood/blueberry-cove-tenants-harbor/sailing-camps/",
+        "https://extension.umaine.edu/tanglewood/about/contact-us/"
+      ],
+      "changes": [
+        "Confirmed 2027 sessions on the sailing page: Overnight Sailors (ages 10-14, $1,950) July 4-15 and August 1-12, Day Sailors (ages 9-12, $900) July 19-30",
+        "Added the camp's physical address 22 Blueberry Cove Road, Tenants Harbor, ME 04860, phone 207-789-5868 and email from the contact page",
+        "Validator rejects city 'Tenants Harbor' (not in cities.py), so the draft is not valid yet"
+      ],
+      "open_questions": [
+        "Tenants Harbor is a village in the town of St. George, which cities.py does have. Use city 'St. George' (the camp's pages say Tenants Harbor) or add Tenants Harbor to cities.py?",
+        "Overlaps the draft umaine-4-h-camps-blueberry-cove-bryant-pond-greenland-point-tanglewood. Keep this sailing program as its own listing, or list Blueberry Cove once with sailing as sessions?"
+      ]
+    }
+  },
+  "street_address": "22 Blueberry Cove Road",
+  "phone": "207-789-5868",
+  "email": "extension.tanglewood4h@maine.edu"
 }

@@ -33,7 +33,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "drop",
     "source": {
       "url": "https://www.bgcmaine.org/summer-camp",
       "kind": "html",
@@ -91,6 +91,20 @@
     "errors": [
       "missing required camp_type",
       "camp_type must be one of ['day', 'sleepaway', 'specialty']"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.bgcmaine.org/summer-camp (404, page removed)",
+        "https://bgcmaine.org/",
+        "https://bgcmaine.org/portland"
+      ],
+      "changes": [
+        "Source page https://www.bgcmaine.org/summer-camp now returns 404",
+        "The club site only mentions 'after-school and summer programs' for members ages 6-18; no summer camp page, dates, prices or camp type, and the only season shown was 2025",
+        "No fields changed; recommend drop"
+      ],
+      "open_questions": []
+    }
   }
 }
