@@ -10,6 +10,11 @@ A camp record uses the column names of the `camps` table (see schema.sql), plus:
     "slug":     stable id for the listing, unique across files (kebab-case)
     "sessions": [{"name", "start_date", "end_date", "price", "availability"}]
     "sources":  [{"url": "...", "checked": "YYYY-MM-DD", "fields": ["name", "age_min", ...]}]
+    "contacts": [{"email", "name", "role", "url", "checked"}]   (optional)
+
+"email" is the address the camp publishes for families. "contacts" are the named people who
+run the camp (director, registrar), each with the page that shows the address. They go to
+camp_contacts, where owner emails look first, and never to a parent.
 
 Rules the validator enforces:
   - every filled field (and "sessions", if any) is listed under exactly one source;
@@ -18,6 +23,7 @@ Rules the validator enforces:
   - booleans (extended_care, transportation, meals_included, financial_aid,
     aca_accredited) are true, false or null; false means the site says no.
   - listings are imported as verification_status 'unverified' with public_web sources.
+  - each contact has an email, the URL of the camp's own page that shows it, and a checked date.
 
 Camp and session ids are derived from the slug (uuid5), so re-running the import
 updates rows in place instead of duplicating them, and a camp's sessions and
@@ -111,7 +117,7 @@ def validate(records: list[tuple[str, dict[str, Any]]]) -> list[str]:
             err("duplicate slug")
         seen_slugs.add(slug)
 
-        unknown = set(c) - set(CAMP_FIELDS) - {"slug", "sessions", "sources", "notes"}
+        unknown = set(c) - set(CAMP_FIELDS) - {"slug", "sessions", "sources", "notes", "contacts"}
         if unknown:
             err(f"unknown keys {sorted(unknown)}")
         for f in REQUIRED:
@@ -153,6 +159,24 @@ def validate(records: list[tuple[str, dict[str, Any]]]) -> list[str]:
                 err(f"session {i} is not in season_year {c['season_year']}")
             if s.get("availability", "unknown") not in AVAILABILITY:
                 err(f"session {i} availability must be one of {sorted(AVAILABILITY)}")
+
+        seen_contacts: set[str] = set()
+        for i, p in enumerate(c.get("contacts") or []):
+            email = str(p.get("email") or "").strip().lower()
+            if not re.fullmatch(r"[^@\s]+@[^@\s]+\.[a-z]{2,}", email):
+                err(f"contact {i} needs a valid email")
+            if email in seen_contacts:
+                err(f"contact {email} listed twice")
+            seen_contacts.add(email)
+            if not str(p.get("url", "")).startswith("http"):
+                err(f"contact {i} needs the url of the page that shows it")
+            try:
+                date.fromisoformat(p.get("checked", ""))
+            except (TypeError, ValueError):
+                err(f"contact {i} needs checked: YYYY-MM-DD")
+            unknown_keys = set(p) - {"email", "name", "role", "url", "checked", "note"}
+            if unknown_keys:
+                err(f"contact {i} has unknown keys {sorted(unknown_keys)}")
 
         # Provenance: every filled field has exactly one source and vice versa.
         sourced: dict[str, str] = {}
@@ -253,6 +277,14 @@ def summarise(records: list[tuple[str, dict[str, Any]]]) -> str:
 
 # ── SQL output (for running through the Supabase SQL editor or MCP) ─────────
 
+def build_contacts(records: list[tuple[str, dict[str, Any]]]) -> list[dict]:
+    """Named camp contacts for camp_contacts. Unverified until they answer a confirmation link."""
+    return [
+        {"camp_id": camp_id(c["slug"]), "email": p["email"].strip(), "name": p.get("name"), "role": p.get("role")}
+        for _, c in records for p in c.get("contacts") or []
+    ]
+
+
 def _lit(v: Any) -> str:
     if v is None:
         return "NULL"
@@ -285,7 +317,22 @@ def _insert(table: str, rows: list[dict], conflict: str, chunk: int = 50) -> lis
     return stmts
 
 
-def to_sql(camps: list[dict], sessions: list[dict], sources: list[dict]) -> list[str]:
+def _contacts_sql(contacts: list[dict]) -> list[str]:
+    # Add only: a contact may already be verified or marked primary, and the dataset never
+    # overrides that or removes a row.
+    if not contacts:
+        return []
+    values = ",\n".join(
+        f"({_lit(p['camp_id'])}, {_lit(p['email'])}, {_lit(p['name'])}, {_lit(p['role'])})" for p in contacts
+    )
+    return [
+        f"INSERT INTO camp_contacts (camp_id, email, name, role) VALUES\n{values}\n"
+        "ON CONFLICT (camp_id, lower(email)) DO NOTHING;"
+    ]
+
+
+def to_sql(camps: list[dict], sessions: list[dict], sources: list[dict],
+           contacts: list[dict] | None = None) -> list[str]:
     ids = ", ".join(_lit(c["id"]) for c in camps)
     return [
         *_insert("camps", camps, "id"),
@@ -293,10 +340,12 @@ def to_sql(camps: list[dict], sessions: list[dict], sources: list[dict]) -> list
         f"DELETE FROM field_sources WHERE camp_id IN ({ids});",
         *_insert("sessions", sessions, "id"),
         *_insert("field_sources", sources, "camp_id, field_name"),
+        *_contacts_sql(contacts or []),
     ]
 
 
-def load(camps: list[dict], sessions: list[dict], sources: list[dict]) -> None:
+def load(camps: list[dict], sessions: list[dict], sources: list[dict],
+         contacts: list[dict] | None = None) -> None:
     from supabase import create_client
 
     url, key = os.environ.get("SUPABASE_URL", ""), os.environ.get("SUPABASE_SERVICE_KEY", "")
@@ -313,7 +362,17 @@ def load(camps: list[dict], sessions: list[dict], sources: list[dict]) -> None:
         client.table("sessions").insert(sessions[i:i + 100]).execute()
     for i in range(0, len(sources), 200):
         client.table("field_sources").insert(sources[i:i + 200]).execute()
-    print(f"Loaded {len(camps)} camps, {len(sessions)} sessions, {len(sources)} field sources")
+    added = 0
+    for i in range(0, len(ids), 50):
+        have = {(r["camp_id"], r["email"].lower()) for r in
+                client.table("camp_contacts").select("camp_id, email").in_("camp_id", ids[i:i + 50]).execute().data or []}
+        batch = set(ids[i:i + 50])
+        new = [p for p in contacts or [] if p["camp_id"] in batch and (p["camp_id"], p["email"].lower()) not in have]
+        if new:
+            client.table("camp_contacts").insert(new).execute()
+            added += len(new)
+    print(f"Loaded {len(camps)} camps, {len(sessions)} sessions, {len(sources)} field sources, "
+          f"{added} new contacts")
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -331,11 +390,12 @@ def main(argv: list[str] | None = None) -> int:
         return 1
     print(summarise(records))
     camps, sessions, sources = build_rows(records)
+    contacts = build_contacts(records)
     if args.sql:
-        args.sql.write_text("\n\n".join(to_sql(camps, sessions, sources)) + "\n")
+        args.sql.write_text("\n\n".join(to_sql(camps, sessions, sources, contacts)) + "\n")
         print(f"Wrote {args.sql}")
     if args.load:
-        load(camps, sessions, sources)
+        load(camps, sessions, sources, contacts)
     return 0
 
 
