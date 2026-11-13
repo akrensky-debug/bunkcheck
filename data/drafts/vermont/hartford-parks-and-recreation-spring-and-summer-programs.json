@@ -5,15 +5,13 @@
   "website_url": "https://www.hartfordvt.gov/2487/Spring-Summer-Programs",
   "registration_url": "https://hartfordvt.myrec.com/info/default.aspx",
   "phone": "802-295-9353",
-  "city": null,
   "state": "VT",
-  "zip": null,
   "description_short": "Spring and summer recreation programs run by the Town of Hartford, Vermont Parks & Recreation Department. Program details are in a separate PDF guide that this page links to.",
   "season_year": 2026,
   "sources": [
     {
       "url": "https://www.hartfordvt.gov/2487/Spring-Summer-Programs",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -27,7 +25,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.hartfordvt.gov/2487/Spring-Summer-Programs",
       "kind": "html",
@@ -74,6 +72,22 @@
       "missing required camp_type",
       "camp_type must be one of ['day', 'sleepaway', 'specialty']",
       "city None, VT is not in cities.py"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.hartfordvt.gov/2487/Spring-Summer-Programs",
+        "https://www.hartfordvt.gov/DocumentCenter/View/13224/Spring-and-Summer-Brochure-2026-",
+        "https://hartfordvt.myrec.com/info/default.aspx"
+      ],
+      "changes": [
+        "No field changes: the town page only says 'Program Guide Spring/Summer 2026 is Here!' and links a PDF; it names no camp, dates, ages or prices.",
+        "Couldn't fetch the 2026 program guide PDF: it is over the fetcher's 8 MB limit. The MyRec registration site shows only fall and winter programs now.",
+        "City, ZIP and camp_type stay empty, so the draft doesn't validate."
+      ],
+      "open_questions": [
+        "The only camp details would be in the 2026 Spring/Summer guide PDF, which is over the 8 MB fetch cap (the house rules allow Firecrawl for that; this check's brief didn't). Read it that way, or drop the listing as a general rec landing page with no named summer camp?"
+      ]
+    }
   }
 }

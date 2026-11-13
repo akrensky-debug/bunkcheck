@@ -13,13 +13,13 @@
     "arts"
   ],
   "grade_max": 12,
-  "description_short": "Summer camps for children and teens run by the Southern Vermont Arts Center in Manchester, VT. Camps are split into age groups: PreK–Kindergarten, Grades 1–3, Grades 4–6 and Grades 7–12.",
+  "description_short": "Summer art camps for children and teens at the Southern Vermont Arts Center in Manchester, VT, split into age groups: PreK to Kindergarten, Grades 1 to 3, Grades 4 to 6 and Grades 7 to 12. Camps often fill quickly.",
   "refund_policy_summary": "Refund requests are charged a 50% fee.",
   "season_year": 2026,
   "sources": [
     {
       "url": "https://www.svac.org/summer-camps-2/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -39,7 +39,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.svac.org/summer-camps-2/",
       "kind": "html",
@@ -76,6 +76,23 @@
     "errors": [
       "missing required camp_type",
       "camp_type must be one of ['day', 'sleepaway', 'specialty']"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.svac.org/summer-camps-2/",
+        "https://www.svac.org/grades-1-3/",
+        "https://www.svac.org/grades-4-6/",
+        "https://www.svac.org/grades-7-12/"
+      ],
+      "changes": [
+        "Checked the name, email, phone, address, age groups and the 50% refund fee on the Summer Camps page; they match.",
+        "Opened the Grades 1 to 3, 4 to 6 and 7 to 12 pages. They repeat the 2026 registration dates and refund rule but show no camp names, dates, hours or prices; the camp list seems to load from a script the fetcher can't read.",
+        "camp_type is still empty, so the validator fails. No page I could read says day camp or gives hours."
+      ],
+      "open_questions": [
+        "The camp listings on svac.org don't render for our fetcher, so camp type, dates and prices are unknown. Hold until the 2027 camps preview opens (last year it opened in early February), or try a browser render of the age-group pages?"
+      ]
+    }
   }
 }

@@ -14,7 +14,7 @@
     "sports"
   ],
   "age_min": 4,
-  "description_short": "Half-day (9am–12pm) single-sport summer camps run through Montpelier Recreation: tennis, Ultimate Frisbee, Vermont Mountaineers baseball and Capital Soccer. Most are held at the Montpelier Recreation Field or the Elm St. tennis courts.",
+  "description_short": "Half-day (9am to noon) single-sport summer camps listed by Montpelier Recreation: tennis (ages 6 to 14), Ultimate Frisbee (ages 10 to 15), Vermont Mountaineers baseball and Capital Soccer (ages 4 and up). Most run at the Montpelier Recreation Field or the Elm St. tennis courts. Residents pay less for tennis and Ultimate.",
   "activities": [
     "Tennis",
     "Ultimate Frisbee",
@@ -91,13 +91,6 @@
       "availability": "unknown"
     },
     {
-      "name": "Spring Youth Tennis Clinic (Tue & Thu, grades 1-8, 10 classes; resident price; non-resident $450)",
-      "start_date": "2026-05-12",
-      "end_date": "2026-06-11",
-      "price": 300,
-      "availability": "unknown"
-    },
-    {
       "name": "Ultimate Frisbee Camp Week 1 (resident price; non-resident $250)",
       "start_date": "2026-07-06",
       "end_date": "2026-07-10",
@@ -171,7 +164,7 @@
   "sources": [
     {
       "url": "https://www.montpelier-vt.org/1472/Summer-Sport-Camps---for-2026-plus-Sprin",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -197,7 +190,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.montpelier-vt.org/1472/Summer-Sport-Camps---for-2026-plus-Sprin",
       "kind": "html",
@@ -256,6 +249,22 @@
         "quote": "$260.00 per week (Non-Residents)"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.montpelier-vt.org/1472/Summer-Sport-Camps---for-2026-plus-Sprin"
+      ],
+      "changes": [
+        "Checked every camp's 2026 dates, hours, fees, address, phone and registration link on the page; they match.",
+        "Removed the Spring Youth Tennis Clinic (Tuesdays and Thursdays, May 12 to June 11): it is an after-school clinic, not a summer camp.",
+        "Rewrote the description to give each camp's ages as the page states them (tennis 6 to 14, Ultimate 10 to 15, soccer 4 and up; baseball gives none).",
+        "Kept season_year 2026; no 2027 camps are posted yet."
+      ],
+      "open_questions": [
+        "This page bundles four camps run by four different groups (Vermont Tennis Academy, Vermont Ultimate, Vermont Mountaineers, Capital Soccer), each with its own ages, fees and registration. Keep one Montpelier Recreation listing, split into four, or keep only the city-run ones?",
+        "Capital Soccer posts no price, times or age cap on this page, and its own site is a separate registration system. Leave its weeks without prices, or drop them?"
+      ]
+    }
   }
 }

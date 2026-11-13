@@ -34,7 +34,7 @@
   "price_max": 6900,
   "financial_aid": true,
   "refund_policy_summary": "Cancel more than 3 months before camp starts and you get the deposit and tuition back in full. Cancel between 3 months and 2 months before, and you lose the deposit but get back the tuition you paid, minus any credit card fees. Cancel within 2 months of the start, and nothing is refunded. The deposit is 25% of total cost, due when you register ($100 for Pay What You Can families, refundable on request).",
-  "swim_waterfront_notes": "The page says every camper can swim each day. It also lists Long Distance Swimming as a past Domain. It doesn't describe the waterfront or how swimming is supervised.",
+  "swim_waterfront_notes": "Every camper can swim each day, and Long Distance Swimming has been a Domain. The 106-acre camp includes Big and Little Willey Ponds. The camp's pages don't describe swim tests or lifeguarding.",
   "season_year": 2027,
   "sessions": [
     {
@@ -55,7 +55,7 @@
   "sources": [
     {
       "url": "https://www.beamcenter.org/beam-camp",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -74,10 +74,15 @@
         "price_max",
         "financial_aid",
         "refund_policy_summary",
-        "swim_waterfront_notes",
         "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
+    },
+    {
+      "url": "https://www.beamcenter.org/our-locations",
+      "checked": "2026-11-13",
+      "fields": [
+        "swim_waterfront_notes"
+      ]
     },
     {
       "url": "https://www.census.gov/geographies/reference-files/time-series/geo/relationship-files.2020.html",
@@ -89,7 +94,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.beamcenter.org/beam-camp",
       "kind": "html",
@@ -116,6 +121,23 @@
       "Exact grade ranges"
     ],
     "low_confidence": [],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.beamcenter.org/beam-camp",
+        "https://www.beamcenter.org/our-locations",
+        "https://www.beamcenter.org/contact",
+        "https://tools.usps.com/zip-code-lookup.htm?citybyzipcode"
+      ],
+      "changes": [
+        "Checked 2027 dates, ages, prices ($6,900 for 4 weeks, $3,450 for 2 weeks), tiered tuition, refund policy and activities against the Beam Camp page; all match.",
+        "Swim note now names Big and Little Willey Ponds on the 106-acre site, from the Our Locations page.",
+        "Phone, email and address on the site are Beam Center's Brooklyn office; no camp street address in NH is given anywhere on the site."
+      ],
+      "open_questions": [
+        "ZIP 03884 is not backed by the camp: the site names only 'Strafford, New Hampshire', no street address. The draft says Strafford has one ZIP, but Center Strafford (03815) also lies in the town, and the USPS lookup page is a form the fetcher can't use. Keep 03884, or hold until the camp gives its address?"
+      ]
+    }
   }
 }

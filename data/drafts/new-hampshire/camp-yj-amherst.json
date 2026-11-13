@@ -43,7 +43,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "drop",
     "source": {
       "url": "https://campyj.org/",
       "kind": "html",
@@ -79,6 +79,17 @@
         "quote": "Grants and Scholarships"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://campyj.org/",
+        "https://campyj.org/2027dates"
+      ],
+      "changes": [
+        "Marked drop: duplicate of camp-young-judaea-camp-yj-amherst (same camp, same website campyj.org, same address). Its ages 8-15 were merged into that draft, which also has the 2027 sessions."
+      ],
+      "open_questions": []
+    }
   }
 }

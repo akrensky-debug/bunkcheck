@@ -5,7 +5,7 @@
   "website_url": "https://www.manchesternh.gov/Departments/Parks-and-Recreation/Programs-and-Activities",
   "city": "Manchester",
   "state": "NH",
-  "zip": null,
+  "zip": "03103",
   "camp_type": "day",
   "primary_categories": [
     "arts",
@@ -23,7 +23,7 @@
   "sources": [
     {
       "url": "https://www.manchesternh.gov/Departments/Parks-and-Recreation/Programs-and-Activities",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -37,11 +37,21 @@
         "grade_max",
         "description_short"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Short blurb under DAY CAMPS: 'Manchester residents, grades 1 to 8', 'FULL FOR 2026'"
+    },
+    {
+      "url": "https://www.manchesternh.gov/Departments/Parks-and-Recreation/Contact-Parks",
+      "checked": "2026-11-13",
+      "fields": [
+        "street_address",
+        "zip",
+        "phone"
+      ],
+      "note": "Parks and Recreation Division office address and phone, not necessarily where the camp meets"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.manchesternh.gov/Departments/Parks-and-Recreation/Programs-and-Activities",
       "kind": "html",
@@ -96,6 +106,24 @@
     ],
     "errors": [
       "missing required zip"
-    ]
-  }
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.manchesternh.gov/Departments/Parks-and-Recreation/Programs-and-Activities",
+        "https://www.manchesternh.gov/Departments/Parks-and-Recreation/Contact-Parks",
+        "https://manchesternh.recdesk.com/Community/Program?keyword=fun%20in%20the%20sun"
+      ],
+      "changes": [
+        "Confirmed the blurb: games, arts & crafts, swim lessons, Manchester residents, grades 1 to 8, FULL FOR 2026.",
+        "Added the Parks and Recreation office address (475 Valley Street, 03103) and phone (603) 624-6444 from the Contact Parks page, so the required ZIP is filled.",
+        "The city's registration site lists no Fun In The Sun program right now."
+      ],
+      "open_questions": [
+        "The city's only description is a three-line blurb: no dates, prices, hours or camp location. The address is the Parks office, not the camp site. Publish this thin a listing, or hold it until the city posts 2027 details?"
+      ]
+    }
+  },
+  "street_address": "475 Valley Street",
+  "phone": "(603) 624-6444"
 }
