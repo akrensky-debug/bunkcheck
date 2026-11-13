@@ -4,10 +4,10 @@
   "website_url": "http://lotuslakecamp.com/",
   "registration_url": "http://lotuslakecamp.com/registration/",
   "email": "LotusLakecamp@gmail.com",
-  "phone": "802-249-3814",
-  "city": null,
-  "state": null,
-  "zip": null,
+  "phone": "802-433-5451",
+  "city": "Williamstown",
+  "state": "VT",
+  "zip": "05679",
   "camp_type": "day",
   "primary_categories": [
     "sports",
@@ -18,7 +18,7 @@
   "age_max": 14,
   "grade_min": 0,
   "grade_max": 9,
-  "description_short": "Full-day camp, 9:00-4:00 Monday to Friday, for children entering grades K-9. Campers are grouped by grade and do Red Cross swim lessons, boats or archery, crafts or tennis, and woodshop or outdoor adventure, plus a daily lunch hike into the woods.",
+  "description_short": "Family-run day camp since 1952 on a 16-acre lake in Williamstown, Vermont, for ages 5 to 14 (entering grades K to 9), 9:00 to 4:00 Monday to Friday. Campers are grouped by grade and do Red Cross swim lessons, boats or archery, crafts or tennis, and woodshop or outdoor adventure, plus a daily lunch hike into the woods. Buses from Montpelier, Barre, Williamstown and Northfield.",
   "activities": [
     "Red Cross swim lessons",
     "Games",
@@ -63,7 +63,7 @@
     {
       "name": "Session 3",
       "start_date": "2026-07-20",
-      "end_date": "2026-07-30",
+      "end_date": "2026-07-31",
       "price": 970,
       "availability": "unknown"
     },
@@ -75,7 +75,7 @@
       "availability": "unknown"
     },
     {
-      "name": "All summer rate",
+      "name": "All summer (Sessions 1 to 4)",
       "start_date": "2026-06-29",
       "end_date": "2026-08-14",
       "price": 3095,
@@ -85,13 +85,10 @@
   "sources": [
     {
       "url": "http://lotuslakecamp.com/programsfees/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "website_url",
-        "registration_url",
-        "email",
-        "phone",
         "camp_type",
         "primary_categories",
         "activities",
@@ -106,15 +103,44 @@
         "price_per",
         "transportation",
         "meals_included",
-        "financial_aid",
         "swim_waterfront_notes",
         "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Programs/Fees: 'Full Day Program: 2026 (5-14: entering grades K-9) 9:00-4:00', session fees $485/$970/$970/$970, all summer $3095, color groups, activities, swim test, bring own lunch, 2025 bus schedule. Lists the third session as 'July 20th - July 30th'."
+    },
+    {
+      "url": "http://lotuslakecamp.com/contact-us/",
+      "checked": "2026-11-13",
+      "fields": [
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip"
+      ],
+      "note": "Contact Us: 4785 Vermont Route 14, Williamstown, VT 05679; office (802) 433-5451; lotuslakecamp@gmail.com"
+    },
+    {
+      "url": "http://lotuslakecamp.com/registration/",
+      "checked": "2026-11-13",
+      "fields": [
+        "registration_url"
+      ],
+      "note": "Registration/Brochure: 2026 registration opened February 14 via CampDoc"
+    },
+    {
+      "url": "http://lotuslakecamp.com/jonathangilbertcampership/",
+      "checked": "2026-11-13",
+      "fields": [
+        "financial_aid"
+      ],
+      "note": "Jonathan Gilbert Campership, one session for ages 11-14"
     }
   ],
+  "street_address": "4785 Vermont Route 14",
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "http://lotuslakecamp.com/programsfees/",
       "kind": "html",
@@ -167,6 +193,29 @@
       "missing required city",
       "missing required state",
       "missing required zip"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "http://lotuslakecamp.com/",
+        "http://lotuslakecamp.com/programsfees/",
+        "http://lotuslakecamp.com/contact-us/",
+        "http://lotuslakecamp.com/registration/",
+        "http://lotuslakecamp.com/jonathangilbertcampership/",
+        "http://lotuslakecamp.com/transportation-policy/",
+        "http://lotuslakecamp.com/about-us/",
+        "http://lotuslakecamp.com/location/"
+      ],
+      "changes": [
+        "Added the street address, city, state and ZIP from the Contact page: 4785 Vermont Route 14, Williamstown, VT 05679.",
+        "Phone changed to the camp office (802) 433-5451 from the Contact page; the draft had co-director Abbey Allen's number.",
+        "Session 3 now ends July 31, 2026 (Friday), as the home page lists it; the Programs/Fees page says July 30.",
+        "Renamed the 'All summer rate' session to 'All summer (Sessions 1 to 4)'; kept its $3,095 price.",
+        "Moved email, registration and financial aid to the pages that show them; rewrote the description with the lake, founding year and bus towns."
+      ],
+      "open_questions": [
+        "Home page says Session 3 is July 20 to 31, the Programs/Fees page says July 20 to 30. Used July 31; confirm with the camp if it matters."
+      ]
+    }
   }
 }
