@@ -3,17 +3,52 @@
   "name": "Camp Akeela",
   "website_url": "https://campakeela.com/",
   "phone": "802-333-4843",
-  "street_address": "One Thoreau Way",
+  "street_address": "1 Thoreau Way",
   "city": "Thetford Center",
   "state": "VT",
   "zip": "05075",
   "camp_type": "sleepaway",
-  "description_short": "Overnight summer camp in Thetford Center, Vermont, offering two three-week sessions in 2027. Tuition is all-inclusive, apart from baggage shipping and optional return transportation, and includes a one-way bus ride to camp.",
+  "primary_categories": [
+    "special_needs",
+    "general"
+  ],
+  "activities": [
+    "Art",
+    "Ceramics",
+    "Cooking",
+    "Dance",
+    "Drama",
+    "Music",
+    "Rocketry",
+    "Woodshop",
+    "Canoeing",
+    "Kayaking",
+    "Sailing",
+    "Stand-up paddleboarding",
+    "Swim instruction",
+    "Archery",
+    "Basketball",
+    "Frisbee golf",
+    "Martial arts",
+    "Soccer",
+    "Softball",
+    "Tennis",
+    "Ropes courses and climbing wall",
+    "Farm and garden",
+    "Animal care",
+    "Day hikes",
+    "Overnight camping trips",
+    "Dungeons & Dragons",
+    "Campfires"
+  ],
+  "age_min": 9,
+  "age_max": 17,
+  "description_short": "Overnight camp for neurodivergent kids who have finished grades 3 to 10 (ages 9 to 17), on Miller Pond near Thetford Center, Vermont. Campers do a traditional camp program while staff coach social skills. Two three-week sessions in 2027; tuition is all-inclusive apart from baggage shipping and the optional ride home, and includes a one-way bus to camp.",
   "price_min": 9900,
   "price_max": 9900,
   "financial_aid": true,
   "transportation": true,
-  "special_needs_notes": "The page points families to CampLauncher, which provides needs-based camperships to neurodivergent youth. The site menu includes \"How We Approach Social Skills.\" This page does not say whether the camp serves a specific population.",
+  "special_needs_notes": "Built for neurodivergent campers, many with autism (Level 1), ADHD or NLD; no diagnosis is required. Campers must manage daily living with some prompting and live in a cabin of up to 9 campers with 4 counselors. The camp says it is not the right fit for kids who need one-to-one behavioral support or have a history of aggression, running away or recent psychiatric hospitalization. Families and directors decide fit together during the application.",
   "season_year": 2027,
   "sessions": [
     {
@@ -34,7 +69,7 @@
   "sources": [
     {
       "url": "https://campakeela.com/dates-and-rates/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "website_url",
@@ -44,19 +79,47 @@
         "state",
         "zip",
         "camp_type",
-        "description_short",
         "price_min",
         "price_max",
         "transportation",
         "financial_aid",
-        "special_needs_notes",
         "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
+    },
+    {
+      "url": "https://campakeela.com/about-us/",
+      "checked": "2026-11-13",
+      "fields": [
+        "primary_categories",
+        "description_short",
+        "special_needs_notes"
+      ]
+    },
+    {
+      "url": "https://campakeela.com/about-us/faqs/",
+      "checked": "2026-11-13",
+      "fields": [
+        "age_min",
+        "age_max"
+      ]
+    },
+    {
+      "url": "https://campakeela.com/about-us/activities-typical-day/",
+      "checked": "2026-11-13",
+      "fields": [
+        "activities"
+      ]
+    },
+    {
+      "url": "https://campakeela.com/about-us/payment-terms/",
+      "checked": "2026-11-13",
+      "fields": [
+        "refund_policy_summary"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://campakeela.com/dates-and-rates/",
       "kind": "html",
@@ -95,6 +158,28 @@
         "quote": "CampLauncher, which helps provide needs-based camperships to neurodivergent youth"
       }
     ],
-    "errors": []
-  }
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://campakeela.com/dates-and-rates/",
+        "https://campakeela.com/about-us/",
+        "https://campakeela.com/about-us/faqs/",
+        "https://campakeela.com/about-us/activities-typical-day/",
+        "https://campakeela.com/about-us/payment-terms/"
+      ],
+      "changes": [
+        "Checked the two 2027 sessions (June 25 to July 16, July 19 to August 9, $9,900 each), phone, bus and aid wording on Dates and Rates; they match.",
+        "Fixed the street address to '1 Thoreau Way', as the site writes it.",
+        "Added ages 9 to 17 from the FAQ (campers who have finished grades 3 to 10).",
+        "Added categories special_needs and general and the activity list from the About and Activities pages.",
+        "Rewrote the description and special needs notes to say plainly that the camp serves neurodivergent kids, with the fit rules from the About page.",
+        "Added the 2027 payment and cancellation terms from the Payment Terms page.",
+        "Left out Family Camp and Beyond Akeela (a separate program for 10th to 12th graders, now posted for 2027 at $8,950).",
+        "Kept Thetford Center as the town: it is the camp's own summer mailing address, though the FAQ says the grounds are in neighboring Strafford, VT."
+      ],
+      "open_questions": []
+    }
+  },
+  "refund_policy_summary": "$1,000 deposit with the application, refunded if camp or family decides the child won't attend. Half the balance is due January 31, 2027 and the rest April 30. Without the optional $500 assurance plan, everything is refundable less a $250 fee until January 31; after that cancellation fees rise from $2,500 to $6,000, and nothing is refunded from June 1. The assurance plan gives a fuller refund up to May 1 and partial credit after."
 }

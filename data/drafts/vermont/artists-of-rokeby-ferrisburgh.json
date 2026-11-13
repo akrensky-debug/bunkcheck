@@ -1,8 +1,8 @@
 {
   "slug": "artists-of-rokeby-ferrisburgh",
-  "name": "Artists of Rokeby",
+  "name": "Artists of Rokeby Summer Camp",
   "operator_name": "Rokeby Museum",
-  "website_url": "https://rokeby.org/series/artists-of-rokeby-2026/",
+  "website_url": "https://rokeby.org/event/rokeby-summer-camp-artists-of-rokeby-2026-session-1/",
   "phone": "802.877.3406",
   "street_address": "4334 Route 7",
   "city": "Ferrisburgh",
@@ -11,23 +11,81 @@
   "season_year": 2026,
   "sources": [
     {
-      "url": "https://rokeby.org/series/artists-of-rokeby-2026/",
-      "checked": "2026-10-13",
+      "url": "https://rokeby.org/event/rokeby-summer-camp-artists-of-rokeby-2026-session-1/",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
         "website_url",
+        "registration_url",
+        "email",
         "phone",
         "street_address",
         "city",
         "state",
-        "zip"
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "price_min",
+        "price_max",
+        "price_per_week",
+        "price_per",
+        "financial_aid",
+        "meals_included",
+        "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Session 1 event page: both sessions (July 13-17 and July 20-24, 2026, 9-3), Ages 9-13, 'Tuition: $350/camper or pay what you can', bring lunch, snacks included; contact jahl@rokeby.org, 802.877.3406; footer 4334 Route 7, Ferrisburgh, VT 05456"
+    }
+  ],
+  "registration_url": "https://rokeby.org/event/rokeby-summer-camp-artists-of-rokeby-2026-session-1/",
+  "email": "jahl@rokeby.org",
+  "camp_type": "day",
+  "primary_categories": [
+    "arts"
+  ],
+  "secondary_categories": [
+    "nature"
+  ],
+  "activities": [
+    "Sketching, scrapbooks and painting",
+    "Nature walks",
+    "Birdwatching",
+    "Animal tracking",
+    "History games",
+    "Final-day exhibition and pizza party"
+  ],
+  "age_min": 9,
+  "age_max": 13,
+  "description_short": "A 5-day art, nature and history day camp at Rokeby Museum, a historic farm site in Ferrisburgh, for ages 9 to 13. Campers study the Robinson family's sketches and paintings, take nature walks, birdwatch and track animals, then show their work on the last day. 9:00 am to 3:00 pm; bring lunch, snacks provided.",
+  "price_min": 350,
+  "price_max": 350,
+  "price_per_week": 350,
+  "price_per": "week",
+  "financial_aid": true,
+  "meals_included": false,
+  "sessions": [
+    {
+      "name": "Session 1",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": 350,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 2",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": 350,
+      "availability": "unknown"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://rokeby.org/series/artists-of-rokeby-2026/",
       "kind": "html",
@@ -66,6 +124,26 @@
     "errors": [
       "missing required camp_type",
       "camp_type must be one of ['day', 'sleepaway', 'specialty']"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://rokeby.org/series/artists-of-rokeby-2026/",
+        "https://rokeby.org/education/education-programs/",
+        "https://rokeby.org/education/",
+        "https://rokeby.org/?s=camp",
+        "https://rokeby.org/event/rokeby-summer-camp-artists-of-rokeby-2026-session-1/"
+      ],
+      "changes": [
+        "The draft's page is an empty event-series list; found the real camp pages through the site's own search ('Rokeby Summer Camp, Artists of Rokeby 2026: Session 1/2') and moved website_url and the source there.",
+        "Renamed to 'Artists of Rokeby Summer Camp' and set camp_type to day (9:00 am to 3:00 pm, Mon to Fri).",
+        "Added the two 2026 sessions (July 13 to 17, July 20 to 24) at $350 each, ages 9 to 13, the education manager's email, activities and a description.",
+        "Set financial_aid true for 'pay what you can' tuition, and meals_included false (bring your own lunch; snacks included).",
+        "Registration is the form on the session page itself."
+      ],
+      "open_questions": [
+        "The museum also ran a 2-week version in 2025 (July 14 to 25, pay what you can, $450 suggested). No 2027 dates are posted yet."
+      ]
+    }
   }
 }

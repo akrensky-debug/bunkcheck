@@ -4,16 +4,18 @@
   "operator_name": "Bethany Birches Camp",
   "website_url": "https://bethanybirches.org/summer-camps-summit/",
   "registration_url": "https://bethanybirches.org/register-now/",
-  "city": null,
-  "state": null,
-  "zip": null,
+  "phone": "802-672-5220",
+  "street_address": "2610 Lynds Hill Road",
+  "city": "Plymouth",
+  "state": "VT",
+  "zip": "05056",
   "camp_type": "sleepaway",
   "primary_categories": [
-    "nature"
+    "outdoor"
   ],
   "age_min": 11,
   "age_max": 16,
-  "description_short": "Summit is a set of overnight camp weeks (Sunday to Friday) for older campers: Summit Mid for ages 11-14 and Summit High for ages 13-16. Campers get more free time, spend time outdoors, and cook meals over the fire. Prices use a five-tier system.",
+  "description_short": "Summit is Bethany Birches Camp's overnight program for older campers in Plymouth, Vermont, with Sunday to Friday weeks: Summit Mid for ages 11-14 and Summit High for ages 13-16. Campers get more free time, spend time outdoors and cook meals over the fire. Families pick one of five price tiers; the two lowest are for households that qualify by income.",
   "activities": [
     "Creek hike",
     "Cardboard boat race",
@@ -30,14 +32,14 @@
   "season_year": 2026,
   "sessions": [
     {
-      "name": "Summit Mid",
+      "name": "Summit Mid (ages 11-14)",
       "start_date": "2026-07-12",
       "end_date": "2026-07-17",
       "price": null,
       "availability": "unknown"
     },
     {
-      "name": "Summit High",
+      "name": "Summit High (ages 13-16)",
       "start_date": "2026-07-19",
       "end_date": "2026-07-24",
       "price": null,
@@ -47,12 +49,11 @@
   "sources": [
     {
       "url": "https://bethanybirches.org/summer-camps-summit/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
         "website_url",
-        "registration_url",
         "camp_type",
         "primary_categories",
         "activities",
@@ -61,14 +62,44 @@
         "description_short",
         "price_min",
         "price_max",
-        "financial_aid",
         "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
+    },
+    {
+      "url": "https://bethanybirches.org/contact-us/",
+      "checked": "2026-11-13",
+      "fields": [
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip"
+      ]
+    },
+    {
+      "url": "https://bethanybirches.org/register-now/",
+      "checked": "2026-11-13",
+      "fields": [
+        "registration_url"
+      ]
+    },
+    {
+      "url": "https://bethanybirches.org/kids-to-camp/",
+      "checked": "2026-11-13",
+      "fields": [
+        "financial_aid"
+      ]
+    },
+    {
+      "url": "https://bethanybirches.org/summer-camps/",
+      "checked": "2026-11-13",
+      "fields": [
+        "refund_policy_summary"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://bethanybirches.org/summer-camps-summit/",
       "kind": "html",
@@ -111,6 +142,28 @@
       "missing required city",
       "missing required state",
       "missing required zip"
-    ]
-  }
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://bethanybirches.org/summer-camps-summit/",
+        "https://bethanybirches.org/contact-us/",
+        "https://bethanybirches.org/summer-camps-dates/",
+        "https://bethanybirches.org/kids-to-camp/",
+        "https://bethanybirches.org/summer-camps/",
+        "https://bethanybirches.org/register-now/"
+      ],
+      "changes": [
+        "Added the address, city, state, ZIP and phone from the camp's Contact page (2610 Lynds Hill Road, Plymouth, VT 05056; 802-672-5220).",
+        "Checked the 2026 dates, ages and tier prices ($175 to $865) on the Summit page; they match. Kept season_year 2026; no 2027 summer dates are posted yet.",
+        "Put each week's age range in its session name.",
+        "Changed the category from nature to outdoor; the page sells free time, outdoor time and fire cooking, not nature study.",
+        "Added the deposit and cancellation policy from the Summer Camps page.",
+        "Sourced financial aid to the Financial Assistance page, which explains the five tiers and the income test for Tiers 1 and 2.",
+        "Left the old 2021 Expedition trip out; its dates are stale."
+      ],
+      "open_questions": []
+    }
+  },
+  "refund_policy_summary": "A $50 nonrefundable deposit holds a spot and counts toward the total. Full payment is due 3 weeks before the session. Cancel in writing 3 or more weeks ahead and the payment, less the deposit, stays on account for another program within a year. Later cancellations and no-shows get nothing back or forwarded."
 }

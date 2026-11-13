@@ -17,7 +17,6 @@
     "performing_arts"
   ],
   "grade_min": 0,
-  "grade_max": 12,
   "description_short": "Girl Scout overnight camp in Thetford, Vermont, with themed programs from three days to two weeks for Girl Scouts who have finished kindergarten through grade 11. Campers sleep in cabins, tentalows, Adirondacks or platform tents, swim in a pool, canoe on a lake, and choose a focus such as archery, arts, cooking, climbing or leadership (Camp Aide, CIT).",
   "activities": [
     "swimming",
@@ -358,7 +357,7 @@
   "sources": [
     {
       "url": "https://www.girlscoutsgwm.org/en/activities/camp-and-outdoors/farnsworth.html",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -373,7 +372,6 @@
         "primary_categories",
         "activities",
         "grade_min",
-        "grade_max",
         "description_short",
         "price_min",
         "price_max",
@@ -382,13 +380,15 @@
         "refund_policy_summary",
         "special_needs_notes",
         "swim_waterfront_notes",
-        "sessions"
+        "sessions",
+        "gender_policy"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Camp Farnsworth page: 'Camp Farnsworth Sessions Summer 2026' tables (dates, programs, grades, costs), $100 non-refundable deposit, campership for qualifying girls, food service, facilities, 94 Camp Farnsworth Rd, Thetford Center, VT 05075; 'Registration for Summer 2027 is coming soon!'"
     }
   ],
+  "gender_policy": "girls",
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.girlscoutsgwm.org/en/activities/camp-and-outdoors/farnsworth.html",
       "kind": "html",
@@ -443,6 +443,23 @@
         "quote": "CIT - Service Hours 10-12 ... $200"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.girlscoutsgwm.org/en/activities/camp-and-outdoors/farnsworth.html",
+        "https://www.girlscoutsgwm.org/en/activities/camp-and-outdoors/camp-transportation.html",
+        "https://www.girlscoutsgwm.org/en/activities/camp-and-outdoors/camp-faqs.html"
+      ],
+      "changes": [
+        "Checked all 44 sessions (dates, programs, grades, prices) against the Summer 2026 tables; they match.",
+        "Cleared grade_max: the intro says 'completed grades K-11' but the tables list programs up to grade 12 (Grab Your Boots 9-12, CIT Service Hours 10-12), so the camp's own page disagrees with itself.",
+        "Added gender_policy girls: a Girl Scout camp for Girl Scouts; campership is for 'qualifying girls who are members'.",
+        "Kept the council Customer Care phone and email; the page gives no camp-specific contact."
+      ],
+      "open_questions": [
+        "The page says 'Registration for Summer 2027 is coming soon!'; listing still shows 2026 sessions."
+      ]
+    }
   }
 }

@@ -2,6 +2,7 @@
   "slug": "camp-sangamon-for-boys-pittsford",
   "name": "Camp Sangamon For Boys",
   "website_url": "https://campsangamon.com/",
+  "registration_url": "https://campsangamon.com/wp-content/uploads/2026/08/Application-2027.pdf",
   "email": "darcey@campsangamon.com",
   "phone": "(802) 665-7505",
   "street_address": "382 Camp Lane",
@@ -14,9 +15,9 @@
     "arts",
     "nature"
   ],
-  "age_min": 9,
-  "age_max": 16,
-  "description_short": "Boys' summer camp for ages 9-16 on a lake in central Vermont, near Rutland and Killington. Campers can book two-, three-, four- or five-week sessions, and activities include outdoor pursuits, aquatics, farming, creative arts and sports.",
+  "age_min": null,
+  "age_max": null,
+  "description_short": "Overnight camp for boys on a 200-acre hill farm with a spring-fed lake in Pittsford, Vermont, near Rutland and Killington. Campers live in cabins and do outdoor pursuits, aquatics, farming, creative arts and sports. In 2027 families book two-, three-, four- or five-week stays between June 27 and August 14.",
   "activities": [
     "Outdoor pursuits",
     "Aquatics",
@@ -24,10 +25,11 @@
     "Creative arts",
     "Sports"
   ],
+  "gender_policy": "boys",
   "price_min": 3595,
   "price_max": 8413,
   "financial_aid": true,
-  "refund_policy_summary": "For 2027: if camp can't safely open, all deposits and tuition are fully refunded. If your family withdraws after March 15 and before May 1, everything paid beyond the deposit is returned. Cancellations after May 1 get no refund. Deposit is $350 with the application, or $500 for early enrollment by December 31. Early enrollment gets 3% off, with the balance due March 1. Regular enrollment: half the balance is due June 1 and the rest on arrival. Siblings get 3% off each child's tuition.",
+  "refund_policy_summary": "Deposit is $350 with the application, or $500 for early enrollment by December 31, which takes 3% off with the balance due March 1. Otherwise half the balance is due June 1 and the rest on arrival. Siblings get 3% off each child. If camp can't safely open, everything is refunded. Withdraw after March 15 and before May 1 and all payments beyond the deposit come back; no refunds after May 1.",
   "season_year": 2027,
   "sessions": [
     {
@@ -45,15 +47,15 @@
       "availability": "unknown"
     },
     {
-      "name": "Session 3 (2 weeks)",
+      "name": "Session 3A (2 weeks)",
       "start_date": "2027-08-01",
       "end_date": "2027-08-14",
       "price": 3595,
       "availability": "unknown"
     },
     {
-      "name": "Sessions 2 & 3 (4 weeks)",
-      "start_date": "2027-07-08",
+      "name": "Sessions 2 & 3A (4 weeks)",
+      "start_date": "2027-07-18",
       "end_date": "2027-08-14",
       "price": 6728,
       "availability": "unknown"
@@ -69,7 +71,7 @@
   "sources": [
     {
       "url": "https://campsangamon.com/dates-rates/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "website_url",
@@ -79,23 +81,41 @@
         "city",
         "state",
         "zip",
-        "camp_type",
         "primary_categories",
         "activities",
-        "age_min",
-        "age_max",
-        "description_short",
+        "financial_aid"
+      ]
+    },
+    {
+      "url": "https://campsangamon.com/wp-content/uploads/2026/08/Dates-and-Rates-27.pdf",
+      "checked": "2026-11-13",
+      "fields": [
         "price_min",
         "price_max",
-        "financial_aid",
         "refund_policy_summary",
         "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
+    },
+    {
+      "url": "https://campsangamon.com/about-camp-sangamon/",
+      "checked": "2026-11-13",
+      "fields": [
+        "camp_type",
+        "gender_policy",
+        "meals_included",
+        "description_short"
+      ]
+    },
+    {
+      "url": "https://campsangamon.com/wp-content/uploads/2026/08/Application-2027.pdf",
+      "checked": "2026-11-13",
+      "fields": [
+        "registration_url"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://campsangamon.com/dates-rates/",
       "kind": "html",
@@ -136,6 +156,26 @@
         "quote": "Sessions 2 & 3: July 8 - August 14 -  $6728"
       }
     ],
-    "errors": []
-  }
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://campsangamon.com/dates-rates/",
+        "https://campsangamon.com/wp-content/uploads/2026/08/Dates-and-Rates-27.pdf",
+        "https://campsangamon.com/about-camp-sangamon/",
+        "https://campsangamon.com/wp-content/uploads/2026/08/Application-2027.pdf"
+      ],
+      "changes": [
+        "Fixed the four-week session to start July 18, not July 8: the 2027 rate card PDF says 'Sessions 2 & 3A: July 18 to August 14'. The web page has the typo.",
+        "Renamed Session 3 to Session 3A, as the rate card does. Prices and other dates match.",
+        "Cleared ages: the Dates page says boys 9 to 16 but the About page says campers are 8 to 14. The camp's own pages disagree, so ages stay empty.",
+        "Added boys only, and sourced overnight camp type and meals to the About page (cabins, meals cooked from scratch).",
+        "Added the 2027 application PDF as the registration link.",
+        "Rewrote the refund summary from the 2027 rate card and dropped the leftover 'roll forward' line.",
+        "Left ACA accreditation empty: the page claims it, but it needs checking on acacamps.org first."
+      ],
+      "open_questions": []
+    }
+  },
+  "meals_included": true
 }
