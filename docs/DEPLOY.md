@@ -13,7 +13,7 @@ The database and sign-in are the Supabase project `cdzzmyambonhkhsoltfw` (us-eas
 |---|---|---|
 | `SUPABASE_URL` | `https://cdzzmyambonhkhsoltfw.supabase.co` | All reads and writes, sign-in |
 | `SUPABASE_SERVICE_KEY` | Supabase → Project Settings → API keys → `service_role` key (Legacy API keys tab) | All reads and writes, sign-in |
-| `DATABASE_URL` | Supabase → Connect → Session pooler URI, with the password filled in | Migrations |
+| `DATABASE_URL` | Supabase → Connect → Session pooler URI (port 5432), with the password in place of `[YOUR-PASSWORD]` and no brackets. Use a password of letters and digits only (see below) | Migrations |
 | `FRONTEND_URL` | The Vercel address, no trailing slash | Share links, MCP links, CORS |
 | `PUBLIC_API_URL` | `https://api-production-4a03.up.railway.app` | Icons in MCP metadata |
 | `ANTHROPIC_API_KEY` | From the Anthropic console | The family agent |
@@ -28,6 +28,14 @@ The database and sign-in are the Supabase project `cdzzmyambonhkhsoltfw` (us-eas
 | `OPENAI_APPS_CHALLENGE`, `CHATGPT_WIDGET_DOMAIN` | From the OpenAI dashboard, when submitting the ChatGPT app | ChatGPT app review |
 
 Never paste a key or password into a chat. Put it straight into Railway.
+
+Give the database a password of letters and digits only. In a URL, `@ # / ? %` change
+what the address means, so a password with them must be written as `%40 %23 %2F %3F %25`.
+Left as they are, the address can't be read and every deploy stops at the migrate step with
+`Could not connect to the database (ValueError)`. A wrong password fails with a different
+error. To change it: Supabase → Project Settings → Database → Reset database password, then
+paste the new Session pooler URI into Railway. Nothing else uses this password: the API reads
+and writes through `SUPABASE_SERVICE_KEY`.
 
 `KIT_ENCRYPTION_KEY` cannot be changed once families have saved an info kit: the old kits
 would no longer decrypt. Keep a copy in the password manager.
@@ -56,6 +64,12 @@ Try it by hand with `?dry_run=true`, or `python -m campfinder.jobs.tick --dry-ru
 
 ## Check a deploy
 
+A failed deploy leaves the previous version running, so `/health` stays green while `main`
+never ships. From 27 October to 13 November 2026 every deploy failed this way and nothing
+looked wrong. After merging anything under `campfinder/` or `migrations/`, check that it
+shipped:
+
+- Railway → `api` → Deployments: the newest one is `SUCCESS` on the commit you merged.
 - `https://api-production-4a03.up.railway.app/health` returns OK.
 - The Railway deploy log shows `applied 0001_base.sql` … on the first deploy and
   `nothing to apply` after.
