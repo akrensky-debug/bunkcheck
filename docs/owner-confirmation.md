@@ -57,13 +57,22 @@ Email goes out only when `EMAIL_MODE=resend` and `RESEND_API_KEY` are set. Other
 `send` records the email, notes in the change log that it wasn't emailed, and prints the link for
 you to send by hand.
 
-Emails are signed as CampFinder, never as a person (`docs/decisions/agents.md`, rule 1), and say
+Emails are signed as Bunkcheck, never as a person (`docs/decisions/agents.md`, rule 1), and say
 that a reply reaches a person.
 
 | Variable | Default | Use |
 |---|---|---|
 | `OWNER_EMAIL_SIGNATURE` | `Bunkcheck` | Sign-off line |
-| `OWNER_REPLY_TO` | none | Where owners' replies go (a person reads them) |
+| `OWNER_REPLY_TO` | none | Where owners' replies go: `owners@mail.bunkcheck.ai`, never a personal address |
+| `RESEND_WEBHOOK_SECRET` | none (endpoint off) | Signing secret of the Resend webhook for `email.received` |
+| `OWNER_FORWARD_TO` | none | The inbox a person reads; replies are forwarded there |
+| `OWNER_UPDATES_FROM_MAIL` | off | `1` also sends each reply to listing updates by email (below) |
+
+Replies reach a person this way: Resend receives mail for `mail.bunkcheck.ai` (an MX record on
+that subdomain), calls `POST /api/v1/internal/resend-inbound` (Svix-signed, 404 otherwise), and
+`campfinder/owners/inbound.py` forwards the message to `OWNER_FORWARD_TO`. Attachments stay in
+Resend. Replying from the forward shows the reader's own address, so answer camps from a
+Bunkcheck address.
 
 The copy in `campfinder/owners/emails.py` is a starting point for Andrew to edit.
 

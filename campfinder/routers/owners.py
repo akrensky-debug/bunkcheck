@@ -3,13 +3,14 @@
 from __future__ import annotations
 
 import hmac
+import json
 import os
 from typing import Any, Literal
 
 from fastapi import APIRouter, Header, HTTPException, Request
 from pydantic import BaseModel, Field, ValidationError
 
-from campfinder.owners import service, updates
+from campfinder.owners import inbound, service, updates
 
 router = APIRouter()
 
@@ -78,3 +79,19 @@ async def owner_mail(request: Request, x_inbound_secret: str | None = Header(def
     row = await updates.receive(body.from_email, body.text, subject=body.subject, message_id=body.message_id,
                                 sender_verified=body.sender_verified)
     return Received(id=str(row["id"]), status=row["status"])
+
+
+@router.post("/internal/resend-inbound", include_in_schema=False)
+async def resend_inbound(request: Request) -> dict[str, Any]:
+    """Owners' replies, from Resend's email.received webhook: forwarded to OWNER_FORWARD_TO.
+    404 unless RESEND_WEBHOOK_SECRET is set and the Svix signature matches."""
+    body = await request.body()
+    h = request.headers
+    if not inbound.verify(os.environ.get("RESEND_WEBHOOK_SECRET", ""), h.get("svix-id"), h.get("svix-timestamp"),
+                          h.get("svix-signature"), body):
+        raise HTTPException(status_code=404, detail="Not found")
+    try:
+        event = json.loads(body)
+    except ValueError as e:
+        raise HTTPException(status_code=422, detail="Expected a JSON event") from e
+    return await inbound.handle(event)
