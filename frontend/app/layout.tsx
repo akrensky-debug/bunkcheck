@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next'
 import localFont from 'next/font/local'
+import './fonts.css'
 import './globals.css'
 import AccountLink from '@/components/AccountLink'
 
@@ -35,14 +36,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={figtree.variable}>
       <head>
-        {/* Atkinson Hyperlegible Next is not in next/font for Next 14.2, so it loads from Google Fonts. */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        {/* eslint-disable-next-line @next/next/no-page-custom-font */}
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;600;700&display=swap"
-        />
+        {/* Atkinson Hyperlegible Next (body) is served from public/fonts; rules in fonts.css.
+            next/font/local can't split a font by character, so it isn't used for this one.
+            Preload the face every page needs first. Figtree preloads through next/font. */}
+        <link rel="preload" href="/fonts/atkinson-hyperlegible-next-latin-400-normal.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
       </head>
       <body className="min-h-screen flex flex-col">
         <header className="sticky top-0 z-50 border-b border-line bg-bg/90 backdrop-blur">
