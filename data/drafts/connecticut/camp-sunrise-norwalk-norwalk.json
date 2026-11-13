@@ -43,7 +43,6 @@
         "operator_name",
         "website_url",
         "registration_url",
-        "email",
         "phone",
         "city",
         "state",
@@ -76,9 +75,10 @@
       "url": "https://wiltonymca.org/wp-content/uploads/2026/10/2027-Camp-Themes-1.pdf",
       "checked": "2026-11-13",
       "fields": [
+        "email",
         "sessions"
       ],
-      "note": "2027 weeks June 21-Aug 20; the 2027 calendar marks week 8 as the last day of Camp Sunrise. Session price is the regular $395"
+      "note": "2027 theme weeks June 21-Aug 20 and the Camp Director contact (mkazlauskas@riverbrookymca.org); the 2027 calendar marks week 8 as the last day of Camp Sunrise. Session price is the regular $395"
     }
   ],
   "review": {
@@ -132,7 +132,8 @@
         "Added prices from the 2027 pricing sheet: price_per_week 395 (regular), price_min 385 (early bird to Jan 15, 2027), price_max 395.",
         "Added the refund, drop and switch policy and the $75 per week deposit from the pricing sheet.",
         "Added special_needs_notes: Special Needs Care is $580 a week early bird, $645 regular.",
-        "Other fields (K-8th grade in fall 2027, Jefferson Elementary, 8:00-3:00 with extended care to 6:00, Wilton YMCA trips M/W/F, financial aid deadline May 4, 2027) match the page."
+        "Other fields (K-8th grade in fall 2027, Jefferson Elementary, 8:00-3:00 with extended care to 6:00, Wilton YMCA trips M/W/F, financial aid deadline May 4, 2027) match the page.",
+        "Email checked: mkazlauskas@riverbrookymca.org is not on the camp page itself; it is the Camp Director address on the 2027 theme-weeks PDF, now cited as its source."
       ],
       "open_questions": [
         "zip is still missing, so check_draft fails ('missing required zip'). The camp meets at Jefferson Elementary School in Norwalk, but none of the pages I could read gives its address. The 2027 parent handbook might, but it is over the fetcher's 8 MB limit. Should I add the school's zip from the camp handbook by another route, or use a Norwalk zip from somewhere else?",
