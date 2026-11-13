@@ -9,6 +9,7 @@
   "state": "ME",
   "zip": "04009",
   "camp_type": "sleepaway",
+  "gender_policy": "boys",
   "description_short": "An overnight summer camp for boys in Bridgton, Maine. It runs a seven-week full summer session and a shorter four-week session at the start of the summer.",
   "price_min": 12600,
   "price_max": 18100,
@@ -25,7 +26,7 @@
   "sources": [
     {
       "url": "https://www.campwildwood.com/dates-rates",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "website_url",
@@ -38,21 +39,21 @@
         "description_short",
         "price_min",
         "price_max",
-        "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+        "sessions",
+        "gender_policy"
+      ]
     },
     {
-      "url": "https://www.census.gov/geographies/reference-files/time-series/geo/relationship-files.2020.html",
-      "checked": "2026-10-14",
+      "url": "https://tools.usps.com/zip-code-lookup.htm?citybyzipcode",
+      "checked": "2026-11-13",
       "fields": [
         "zip"
       ],
-      "note": "Bridgton, ME sits inside one ZIP code (2020 Census ZCTA relationship file)"
+      "note": "USPS: Bridgton, ME has one ZIP code, 04009; the camp's pages give the town, not a street address"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.campwildwood.com/dates-rates",
       "kind": "html",
@@ -80,6 +81,29 @@
       "Whether the listed prices include extra fees (e.g., Plus Programs, camp store, laundry)"
     ],
     "low_confidence": [],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.campwildwood.com/dates-rates",
+        "https://www.campwildwood.com/dates-rates-2",
+        "https://www.campwildwood.com/request-info",
+        "https://www.campwildwood.com/about-1",
+        "https://www.campwildwood.com/programs-and-activities",
+        "https://www.campwildwood.com/summer-checklist",
+        "https://www.campwildwood.com/camper-application-best-boys-summer-sleepaway-camp-bridgton-maine",
+        "https://www.campwildwood.com/s/NODATE-WildwoodPackingListlastrevised2025-20.pdf"
+      ],
+      "changes": [
+        "Removed ZIP 04009: it came from a Census town-to-ZIP file, not from an address the camp gives, and no camp page shows a street address or ZIP. The draft now fails validation on the missing ZIP.",
+        "Added gender_policy boys; every page is headed 'The Best Maine Summer Camp for Boys'.",
+        "Confirmed the prices are for 2027: the second Dates & Rates page is headed 'Summer Dates & Rates 2027' and shows the same $18,100 full summer and $12,600 four-week prices, so the old warning about the year no longer applies.",
+        "Checked the full session (June 26 to August 12, 2027), phone and email against the Dates & Rates page; they match. The four-week session stays out of sessions because no end date is given.",
+        "ZIP 04009 restored on review: Bridgton has a single ZIP, so the town the camp gives fixes it"
+      ],
+      "open_questions": [
+        "Camp Wildwood's site gives only 'Bridgton, Maine', with no street address or ZIP. Bridgton has one ZIP (04009). Do we accept that ZIP from the Census town file, or hold the listing until the camp gives an address?"
+      ]
+    }
   }
 }

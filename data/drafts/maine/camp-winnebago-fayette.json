@@ -9,9 +9,13 @@
   "state": "ME",
   "zip": "04349",
   "camp_type": "sleepaway",
-  "description_short": "Camp Winnebago is a summer camp in Fayette, Maine. For 2027 it offers a full 7-week summer or one of two shorter sessions.",
+  "gender_policy": "boys",
+  "age_min": 8,
+  "age_max": 15,
+  "description_short": "A classic Maine sleepaway camp for boys ages 8 to 15 that has stayed small on purpose, with athletics, activities and wilderness trips.",
   "price_min": 11900,
   "price_max": 17950,
+  "transportation": true,
   "season_year": 2027,
   "sessions": [
     {
@@ -39,7 +43,7 @@
   "sources": [
     {
       "url": "https://www.campwinnebago.com/dates-rates",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "website_url",
@@ -49,17 +53,32 @@
         "city",
         "state",
         "zip",
-        "camp_type",
-        "description_short",
         "price_min",
         "price_max",
         "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
+    },
+    {
+      "url": "https://www.campwinnebago.com/welcome-to-winnebago",
+      "checked": "2026-11-13",
+      "fields": [
+        "camp_type",
+        "gender_policy",
+        "age_min",
+        "age_max",
+        "description_short"
+      ]
+    },
+    {
+      "url": "https://www.campwinnebago.com/faqs",
+      "checked": "2026-11-13",
+      "fields": [
+        "transportation"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.campwinnebago.com/dates-rates",
       "kind": "html",
@@ -90,6 +109,24 @@
         "quote": "The 7-Week Advantage ... Full Summer June 26-August 14"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.campwinnebago.com/dates-rates",
+        "https://www.campwinnebago.com/welcome-to-winnebago",
+        "https://www.campwinnebago.com/faqs",
+        "https://www.campwinnebago.com/athletics-activities"
+      ],
+      "changes": [
+        "Added gender_policy boys and ages 8 to 15 from the Welcome page ('a classic Maine summer sleepaway camp for boys... Boys ages 8-15').",
+        "camp_type sleepaway is now stated outright on the Welcome page, so the old inference warning no longer applies.",
+        "Added transportation true from the FAQ: chartered buses from New York City, Westchester and Boston, and pickup at the Boston and Portland airports.",
+        "Rewrote the description from the Welcome page.",
+        "Checked the 2027 sessions (Full June 26 to August 14, $17,950; halves split July 20/21, $11,900 each) and the summer address against the Dates & Rates page; they match.",
+        "Phone 1-207-767-1019 is the off-season office (Labor Day to June 1); the summer number at camp is 207-685-4918. Kept the off-season one because the listing goes live in the off-season."
+      ],
+      "open_questions": []
+    }
   }
 }

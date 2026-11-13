@@ -18,26 +18,26 @@
   "age_max": 17,
   "description_short": "An overnight camp for boys on a lake in Weld, Maine. Boys live in lodges of 8 to 10 campers with two counselors, and stays run from 2 weeks up to a 7-week full season. Boys aged 16 and 17 can join a Leadership Training program.",
   "activities": [
-    "Swimming (lake)",
-    "Hiking",
+    "Swimming and lifeguard training",
+    "Water skiing",
+    "Sailing",
     "Canoeing",
-    "Overnight camping trips",
-    "Wilderness living",
+    "Kayaking",
     "Tennis",
-    "Baseball",
+    "Archery",
+    "Riflery",
+    "Woodworking",
+    "Hiking and mountain trips",
+    "River trips",
     "Fishing",
-    "Gaga ball",
-    "Capture the flag",
-    "Swim meets",
-    "Woodsman's day",
-    "Campfires"
+    "Saturday team competitions"
   ],
   "price_min": 5500,
   "price_max": 11500,
   "transportation": true,
   "meals_included": true,
   "special_needs_notes": "The kitchen works with families to provide gluten-free and allergy-friendly meals, and vegetarian options are always available. A Maine-licensed RN works full-time on site and lives in the infirmary. All medications, including over-the-counter ones, are kept in the infirmary and given at mealtimes unless a prescription requires a different time. Counselors handle bedwetting privately.",
-  "swim_waterfront_notes": "Camp is on a lake with a swimming dock and lifeguards on duty. Campers can join an optional 7 AM \"Polar Bear\" morning swim. Waterfront staff get extra training before the season.",
+  "swim_waterfront_notes": "Camp is on Webb Lake. The swimming area in the camp cove has a sandy beach, docks, a floating safety line and several lifeguard stations. Campers can join an optional 7 AM 'Polar Bear' swim. Waterfront staff get extra training before the season.",
   "season_year": 2027,
   "sessions": [
     {
@@ -90,10 +90,11 @@
       "availability": "unknown"
     }
   ],
+  "gender_policy": "boys",
   "sources": [
     {
       "url": "https://www.kawanhee.com/parents/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "website_url",
@@ -105,8 +106,8 @@
         "state",
         "zip",
         "camp_type",
+        "gender_policy",
         "primary_categories",
-        "activities",
         "age_min",
         "age_max",
         "description_short",
@@ -115,14 +116,22 @@
         "transportation",
         "meals_included",
         "special_needs_notes",
-        "swim_waterfront_notes",
         "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Parents page: 2027 sessions and rates, ages, airport pickup, meals, health, contact block"
+    },
+    {
+      "url": "https://www.kawanhee.com/the-experience/",
+      "checked": "2026-11-13",
+      "fields": [
+        "activities",
+        "swim_waterfront_notes"
+      ],
+      "note": "The Experience: activity descriptions, Webb Lake swimming area with docks, safety line and lifeguard stations"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.kawanhee.com/parents/",
       "kind": "html",
@@ -152,6 +161,21 @@
         "quote": "wilderness living, trips and waterfront"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.kawanhee.com/parents/",
+        "https://www.kawanhee.com/the-experience/"
+      ],
+      "changes": [
+        "Checked all seven 2027 sessions, prices, ages 7 to 17 and contact details against the Parents page; all match.",
+        "Added gender_policy boys (the camp's name is Camp Kawanhee for Boys and the page speaks of sons throughout).",
+        "Replaced activities inferred from the packing list with the camp's own activity list on The Experience page.",
+        "Updated swim_waterfront_notes with the Webb Lake swimming area details from The Experience page.",
+        "Kept transportation true: the camp arranges airport pickup from Boston Logan or Portland for campers who fly, for a fee set in the parent handbook."
+      ],
+      "open_questions": []
+    }
   }
 }

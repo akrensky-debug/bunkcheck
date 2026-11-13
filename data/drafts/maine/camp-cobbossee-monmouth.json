@@ -30,34 +30,35 @@
       "start_date": "2027-06-22",
       "end_date": "2027-07-15",
       "price": 10150,
-      "availability": "open"
+      "availability": "unknown"
     },
     {
       "name": "Two Week \"Stay and Play\" - First Session (first-time campers leaving grades 2-4 only)",
       "start_date": "2027-06-22",
       "end_date": "2027-07-06",
       "price": 6975,
-      "availability": "open"
+      "availability": "unknown"
     },
     {
       "name": "Two Week \"Stay and Play\" - Second Session (first-time campers leaving grades 2-4 only)",
       "start_date": "2027-07-18",
       "end_date": "2027-08-01",
       "price": 6975,
-      "availability": "open"
+      "availability": "unknown"
     },
     {
       "name": "Session 2",
       "start_date": "2027-07-18",
       "end_date": "2027-08-10",
       "price": 10150,
-      "availability": "open"
+      "availability": "unknown"
     }
   ],
+  "gender_policy": "boys",
   "sources": [
     {
       "url": "https://www.campcobbossee.com/need-know/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "website_url",
@@ -68,6 +69,7 @@
         "state",
         "zip",
         "camp_type",
+        "gender_policy",
         "primary_categories",
         "activities",
         "description_short",
@@ -75,11 +77,11 @@
         "price_max",
         "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Need to Know: 2027 dates and all-inclusive rates, 'A Maine Camp for Boys, Sports and Adventure Since 1902', contact block"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.campcobbossee.com/need-know/",
       "kind": "html",
@@ -111,6 +113,18 @@
         "quote": "Enrollment for the 2027 season is now open for returning families! New family enrollment is also open depending on space available in new camper bunks."
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.campcobbossee.com/need-know/"
+      ],
+      "changes": [
+        "Checked the four 2027 sessions, $10,150 and $6,975 all-inclusive rates, the Stay and Play limits and the contact details against the Need to Know page; all match.",
+        "Changed session availability from open to unknown: the page says enrollment is open for returning families and for new families only if new camper bunks have space.",
+        "Added gender_policy boys ('A Maine Camp for Boys' on the same page)."
+      ],
+      "open_questions": []
+    }
   }
 }

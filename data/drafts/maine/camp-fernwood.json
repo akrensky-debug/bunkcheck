@@ -3,11 +3,11 @@
   "name": "Camp Fernwood",
   "website_url": "https://www.campfernwood.com/",
   "registration_url": "https://fernwood.campintouch.com/ui/forms/application/camper/App",
-  "city": null,
+  "city": "Poland",
   "state": "ME",
-  "zip": null,
+  "zip": "04274",
   "camp_type": "sleepaway",
-  "description_short": "An overnight summer camp for girls in Maine, running since 1921. It runs one full session of about seven weeks.",
+  "description_short": "An overnight summer camp for girls ages 8 to 15 on Lake Thompson in Poland, Maine, running since 1921. It runs one full session of about seven weeks.",
   "activities": [
     "Horseback riding (optional, extra cost)",
     "Tennis (private lessons optional, extra cost)",
@@ -25,27 +25,59 @@
       "availability": "unknown"
     }
   ],
+  "street_address": "48 Camp Fernwood Lane",
+  "email": "fernwood@campfernwood.com",
+  "phone": "207-998-4346",
+  "gender_policy": "girls",
+  "age_min": 8,
+  "age_max": 15,
+  "transportation": true,
+  "meals_included": true,
   "sources": [
     {
       "url": "https://www.campfernwood.com/dates-and-pricing/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "website_url",
         "registration_url",
-        "state",
-        "camp_type",
         "activities",
-        "description_short",
         "price_min",
         "price_max",
         "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "2027 dates (June 26 to August 11) and $17,300 full-session tuition, riding and private tennis extra"
+    },
+    {
+      "url": "https://www.campfernwood.com/contact-us/",
+      "checked": "2026-11-13",
+      "fields": [
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "email",
+        "phone"
+      ],
+      "note": "Contact Us: camp address 48 Camp Fernwood Lane, Poland, ME 04274, email and phone"
+    },
+    {
+      "url": "https://www.campfernwood.com/general-information/",
+      "checked": "2026-11-13",
+      "fields": [
+        "camp_type",
+        "gender_policy",
+        "age_min",
+        "age_max",
+        "transportation",
+        "meals_included",
+        "description_short"
+      ],
+      "note": "General Information: girls ages 8-15, on Lake Thompson in Poland, live-in nurses, bed linens, bus transportation from Mid-Atlantic and New England, family-style meals"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.campfernwood.com/dates-and-pricing/",
       "kind": "html",
@@ -76,6 +108,21 @@
       "missing required city",
       "missing required zip",
       "city None, ME is not in cities.py"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.campfernwood.com/dates-and-pricing/",
+        "https://www.campfernwood.com/contact-us/",
+        "https://www.campfernwood.com/general-information/"
+      ],
+      "changes": [
+        "Filled the missing city, ZIP and street address (48 Camp Fernwood Lane, Poland, ME 04274), email and phone from the Contact Us page.",
+        "Checked the 2027 dates and $17,300 tuition against Dates and Pricing; they match.",
+        "Confirmed overnight camp and added girls, ages 8 to 15, bus transportation and meals from the General Information page.",
+        "Description now names Poland and the age range. The slug has no town in it; left as is."
+      ],
+      "open_questions": []
+    }
   }
 }

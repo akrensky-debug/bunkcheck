@@ -2,7 +2,7 @@
   "slug": "camp-med-o-lark-washington",
   "name": "Camp Med-O-Lark",
   "website_url": "https://www.medolark.com",
-  "registration_url": "https://www.medolark.com/2027",
+  "registration_url": "https://medolark.campintouch.com/ui/forms/application/camper/App",
   "email": "welcome@medolark.com",
   "phone": "207-220-3530",
   "street_address": "82 Medolark Rd",
@@ -14,19 +14,30 @@
     "arts",
     "performing_arts"
   ],
-  "description_short": "Overnight summer camp in Washington, Maine, with 2-, 4-, 6- and 8-week sessions from late June to late August. Tuition covers housing, three meals a day, snacks and all activities, including the waterfront. Theater options include a musical for 4-week campers and a one-act and cabaret for 2-week campers.",
   "activities": [
-    "Musical theater",
-    "One-act play",
-    "Cabaret",
-    "Waterfront",
-    "Creative projects"
+    "ceramics",
+    "hot glass",
+    "stained glass",
+    "blacksmithing",
+    "fashion design",
+    "candle making",
+    "woodworking",
+    "painting",
+    "drama and plays",
+    "ballet",
+    "hip hop",
+    "guitar and drum lessons",
+    "cabaret",
+    "waterfront"
   ],
+  "age_min": 7,
+  "description_short": "Overnight creative arts camp in Washington, Maine, where campers pick their own activities, from hot glass and fashion design to theater, dance and music. Sessions run 2, 4, 6 or 8 weeks from June 27 to August 21, 2027; 4-week campers can join the musical.",
   "price_min": 5200,
   "price_max": 14800,
+  "price_per": "session",
   "meals_included": true,
-  "refund_policy_summary": "The $1,000 deposit is fully refundable if you change or cancel by March 1, 2027. Tuition paid in full is also refundable until March 1. Half of the remaining tuition is due March 1 and the rest by May 1. Credit card payments have a 3% fee.",
-  "swim_waterfront_notes": "Tuition includes \"Access to All Activities & Waterfront\". The page gives no details about swimming or the waterfront.",
+  "refund_policy_summary": "Deposits are fully refundable if you change or cancel by March 1, 2027, and tuition paid in full is refundable until then. Half the remaining tuition is due March 1 and the rest May 1. Credit cards carry a 3% fee.",
+  "swim_waterfront_notes": "Camp is on a lake in Washington, Maine, and tuition includes the waterfront. The pages give no details about swim tests or supervision.",
   "season_year": 2027,
   "sessions": [
     {
@@ -103,7 +114,7 @@
   "sources": [
     {
       "url": "https://www.medolark.com/2027",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "website_url",
@@ -114,22 +125,42 @@
         "city",
         "state",
         "zip",
-        "camp_type",
-        "primary_categories",
-        "activities",
         "description_short",
         "price_min",
         "price_max",
+        "price_per",
         "meals_included",
         "refund_policy_summary",
-        "swim_waterfront_notes",
         "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Session prices are the regular 2027 rates, multi-session discount included; Winter Savings (deposit by Jan 5, 2027) takes off another $250 per 2 weeks"
+    },
+    {
+      "url": "https://www.medolark.com/",
+      "checked": "2026-11-13",
+      "fields": [
+        "camp_type",
+        "primary_categories",
+        "age_min"
+      ]
+    },
+    {
+      "url": "https://www.medolark.com/activities",
+      "checked": "2026-11-13",
+      "fields": [
+        "activities"
+      ]
+    },
+    {
+      "url": "https://www.medolark.com/camp-life",
+      "checked": "2026-11-13",
+      "fields": [
+        "swim_waterfront_notes"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.medolark.com/2027",
       "kind": "html",
@@ -163,6 +194,25 @@
         "quote": "Enroll Now"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.medolark.com/2027",
+        "https://www.medolark.com/",
+        "https://www.medolark.com/camp-life",
+        "https://www.medolark.com/activities",
+        "https://www.medolark.com/typical-day",
+        "https://www.medolark.com/learn-more"
+      ],
+      "changes": [
+        "Confirmed all ten 2027 sessions and regular prices ($5,200 for 2 weeks to $14,800 for 8 weeks).",
+        "The early discount in the old warning (by Nov 1, 2026) is gone; the page now offers Winter Savings of $250 per 2 weeks for a deposit by January 5, 2027.",
+        "Refund summary no longer names a deposit amount: the page says $750 per 2 weeks in one place and $1,000 in the FAQ. Both say full refund by March 1, 2027.",
+        "Added age_min 7. Left age_max blank: the homepage says ages 7-17 in one line and 7-16 in another.",
+        "Registration link now goes to the camper application, and the activity list comes from the activities page."
+      ],
+      "open_questions": []
+    }
   }
 }

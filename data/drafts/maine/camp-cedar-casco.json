@@ -10,35 +10,62 @@
   "state": "ME",
   "zip": "04015",
   "camp_type": "sleepaway",
-  "description_short": "Overnight summer camp in Casco, Maine. For 2027 it offers a full session (June 27–August 13) and shorter 4- and 5-week sessions.",
+  "description_short": "Overnight summer camp for boys ages 8 to 15 on Coffee Pond in Casco, Maine. For 2027 it offers a seven-week full session (June 27 to August 13); a limited number of first-time campers can come for 4 or 5 weeks.",
   "season_year": 2027,
   "sessions": [
     {
       "name": "Full Session",
       "start_date": "2027-06-27",
       "end_date": "2027-08-13",
-      "price": null,
+      "price": 18100,
       "availability": "unknown"
     },
     {
       "name": "4 Week Session",
       "start_date": "2027-06-27",
       "end_date": "2027-07-25",
-      "price": null,
+      "price": 12700,
       "availability": "unknown"
     },
     {
       "name": "5 Week Session",
       "start_date": "2027-06-27",
       "end_date": "2027-08-01",
-      "price": null,
+      "price": 15000,
       "availability": "unknown"
     }
+  ],
+  "gender_policy": "boys",
+  "age_min": 8,
+  "age_max": 15,
+  "price_min": 12700,
+  "price_max": 18100,
+  "transportation": true,
+  "meals_included": true,
+  "activities": [
+    "Basketball",
+    "Baseball",
+    "Soccer",
+    "Hockey",
+    "Lacrosse",
+    "Tennis",
+    "Volleyball",
+    "Swimming",
+    "Biking",
+    "Sailing",
+    "Water skiing",
+    "Golf",
+    "Hiking",
+    "Nature",
+    "Trips",
+    "Zip line",
+    "Ropes course",
+    "Creative arts"
   ],
   "sources": [
     {
       "url": "https://campcedar.com/dates-rates-41/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "website_url",
@@ -50,14 +77,29 @@
         "state",
         "zip",
         "camp_type",
-        "description_short",
+        "price_min",
+        "price_max",
         "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "2027 Dates and Rates: session dates and rates (7 weeks $18,100, 5 weeks $15,000, 4 weeks $12,700), summer address"
+    },
+    {
+      "url": "https://campcedar.com/faq/",
+      "checked": "2026-11-13",
+      "fields": [
+        "gender_policy",
+        "age_min",
+        "age_max",
+        "activities",
+        "transportation",
+        "meals_included",
+        "description_short"
+      ],
+      "note": "FAQ: 270 boys ages 8-15 on Coffee Pond; program list; buses from Port Chester, Boston and Connecticut; family-style meals; shortened sessions limited to first-time campers"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://campcedar.com/dates-rates-41/",
       "kind": "html",
@@ -82,6 +124,20 @@
       "Special needs accommodations"
     ],
     "low_confidence": [],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://campcedar.com/dates-rates-41/",
+        "https://campcedar.com/faq/"
+      ],
+      "changes": [
+        "The Dates and Rates page now lists 2027 rates: added session prices $18,100 (7 weeks), $15,000 (5 weeks) and $12,700 (4 weeks) and set price_min and price_max.",
+        "Added gender_policy boys and ages 8 to 15 from the FAQ.",
+        "Added activities, transportation true (camp buses from Port Chester, Boston and Connecticut) and meals_included true from the FAQ.",
+        "Description now says boys 8 to 15 and that 4 and 5 week spots are limited to first-time campers."
+      ],
+      "open_questions": []
+    }
   }
 }
