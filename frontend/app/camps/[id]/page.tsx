@@ -6,6 +6,7 @@ import { getCamp, spotsLine, type CampDetail } from '@/lib/api'
 import { Events, captureAssistantArrival } from '@/lib/analytics'
 import TrustBadge from '@/components/TrustBadge'
 import RegistrationAlert from '@/components/booking/RegistrationAlert'
+import AskCamp from '@/components/inquiries/AskCamp'
 import { CAMP_TYPE_LABEL } from '@/components/CampCard'
 import { Button, Container, EmptyState, Heading, Icon, Meta, Notice, Section, Skeleton, TRUST, TextLink } from '@/components/ui'
 
@@ -148,6 +149,7 @@ export default function CampDetailPage() {
           )}
 
           <RegistrationAlert campId={camp.id} campName={camp.name} />
+          <AskCamp campId={camp.id} campName={camp.name} />
         </div>
 
         {/* Side column */}

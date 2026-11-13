@@ -24,7 +24,8 @@ The default limit is 120 requests per minute; over it you get `429` with `Retry-
 
 Show the `attribution` text and link wherever you display CampFinder data. Tell families
 when a record is `unverified`. Send families to `url` or `registration_url` to register.
-Don't resell the data. Don't send us anything that identifies a family.
+Don't resell the data. Don't send us anything that identifies a family. Contact details reach a
+camp only when the parent adds them on CampFinder.
 
 ## Endpoints
 
@@ -37,6 +38,9 @@ Don't resell the data. Don't send us anything that identifies a family.
 | `GET` | `/sessions/{id}.ics` | Calendar file for one session. No key needed, so families can add it directly. A recurring class is one repeating event (`RRULE`) that skips no-class dates (`EXDATE`) |
 | `POST` | `/demand` | Report what a family looked for, especially when nothing fit. Anonymous; contact details are rejected |
 | `GET` | `/schema` | JSON Schema for programs, sessions and demand signals. No key needed |
+| `POST` | `/inquiries` | Prepare a parent's question to a camp. Returns a preview, a `confirm_url` for the parent and a read token. Nothing is sent until the parent confirms. See [Inquiries](#inquiries) |
+| `GET` | `/inquiries/{id}` | Status and the camp's answers. Header `X-Inquiry-Token` |
+| `POST` | `/inquiries/{id}/confirm` | Confirm for the parent. Only for keys CampFinder has approved; everyone else sends the parent to `confirm_url` |
 
 ## Example
 
@@ -104,11 +108,50 @@ so an assistant can say "price confirmed by the camp; refund policy not listed".
 Demand signals (`POST /demand`) also accept `days_of_week`, `earliest_start` and
 `latest_end`, so "nothing on Saturday mornings" is counted.
 
+## Inquiries
+
+A parent's question to a camp, sent with their yes. The camp answers through CampFinder and you
+read the answer. Full rules: `docs/inquiries.md`.
+
+```
+POST /api/activity/v1/inquiries
+{
+  "program_id": "…",                      # a camp's program id
+  "session_id": "…",                      # optional, one of its sessions
+  "question": "Does week 3 still have spots for a 9 year old?",   # 10 to 1,000 characters
+  "kit_share_token": "…",                 # optional: a package the parent made on CampFinder
+  "user_ref": "your-opaque-parent-id"     # optional: hashed, only for per-family limits
+}
+→ 201 {"id": "…", "token": "…", "status": "pending",
+       "preview": {"to": "Riverside Soccer", "subject": "…", "text": "…", "kit_included": false, "contact_included": false},
+       "confirm_url": "https://…/inquiries/…", "expires_at": "…"}
+```
+
+- **Show the parent the preview and send them to `confirm_url`.** It goes to the camp only when
+  they press Send there, where they also choose whether to share their name, email or phone with
+  the camp. Unconfirmed inquiries expire after 72 hours.
+- **No names or contact details in the question.** A question with an email address or phone
+  number is rejected (`422`). The info kit goes only as a package token, never its contents.
+- **Read the answer** with `GET /inquiries/{id}` and `X-Inquiry-Token: <token>`. `status` is
+  `pending`, `confirmed`, `delivered`, `expired` or `cancelled`; `replies` holds the camp's
+  answers. You never get the parent's contact details or family back, and only the key that
+  created an inquiry can read it.
+- **Attribution.** Inquiries from your key are shown to the camp as "Partner app: <your key's
+  name>". The channel comes from the key; you can't set it.
+- **Limits.** Your key's rate limit applies; a family can send 5 a day; the same question to the
+  same camp is refused for a day (`409`); a camp that hasn't set up questions through CampFinder
+  returns `409` with its own contact details.
+- **Confirming in your own app** (`POST /inquiries/{id}/confirm` with `{"parent_agreed": true}`)
+  is for contracted partners whose key CampFinder has approved (`403` otherwise), and only for an
+  anonymous question. An inquiry with a `kit_share_token` is always confirmed by the parent at
+  `confirm_url` (`403` if you try). We record which key confirmed and when.
+
 ## Also available over MCP
 
 The same search, sessions, details, compare and planning tools are served to MCP clients
 (Claude, ChatGPT apps, other agents) at `/mcp`, plus `find_activities`,
-`get_activity_details` and `check_schedule_fit` for weekly classes.
+`get_activity_details` and `check_schedule_fit` for weekly classes, and `send_inquiry` and
+`check_inquiry` for questions to camps.
 
 ## Versions
 
