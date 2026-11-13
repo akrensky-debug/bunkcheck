@@ -14,7 +14,7 @@
     "performing_arts",
     "STEM"
   ],
-  "description_short": "A summer camp and before/after-school program in Hooksett, NH. Activities include sports and games, martial arts, dance, arts and crafts, STEM activities and field trips.",
+  "description_short": "A licensed summer camp and before/after-school program in Hooksett, NH, for ages 4.9 to 12. Summer camp runs 6:30 AM to 6 PM on weekdays, with themed weeks, martial arts, dance, sports, arts and crafts, STEM activities and weekly field trips.",
   "activities": [
     "Arts & crafts",
     "Dance",
@@ -22,12 +22,13 @@
     "Games",
     "Indoor/outdoor sports",
     "STEM activities",
-    "Field trips"
+    "Weekly field trips",
+    "Pizza parties"
   ],
   "sources": [
     {
       "url": "https://www.hooksettsbest.com/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "website_url",
@@ -37,15 +38,24 @@
         "state",
         "zip",
         "camp_type",
-        "primary_categories",
-        "activities",
-        "description_short"
-      ],
-      "note": "Drafted by the listing tool from this page"
+        "primary_categories"
+      ]
+    },
+    {
+      "url": "https://www.hooksettsbest.com/summer-camp",
+      "checked": "2026-11-13",
+      "fields": [
+        "age_max",
+        "price_per_week",
+        "price_per",
+        "financial_aid",
+        "description_short",
+        "activities"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.hooksettsbest.com/",
       "kind": "html",
@@ -80,6 +90,26 @@
     ],
     "errors": [
       "missing required season_year"
-    ]
-  }
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.hooksettsbest.com/",
+        "https://www.hooksettsbest.com/summer-camp"
+      ],
+      "changes": [
+        "Added the Summer Camp page the draft missed: ages 4.9 to 12, $227 a week (a 'pick your weeks' option costs more), hours 6:30 AM to 6 PM, weekly field trips and pizza parties, state scholarships accepted.",
+        "Set age_max 12 and left age_min empty: the camp says 4.9 years, which is not a whole age.",
+        "Set financial_aid true because the camp accepts state child care scholarships.",
+        "No year or session dates appear on either page, so season_year stays empty and check_draft fails on it."
+      ],
+      "open_questions": [
+        "The camp posts no year or dates, only a weekly price and asks families to fill in a contact form. Hold until it posts summer 2027 dates, or publish with a season year we can't source?"
+      ]
+    }
+  },
+  "age_max": 12,
+  "price_per_week": 227,
+  "price_per": "week",
+  "financial_aid": true
 }

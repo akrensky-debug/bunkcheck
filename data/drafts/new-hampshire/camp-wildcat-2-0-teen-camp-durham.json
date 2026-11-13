@@ -111,7 +111,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.unh.edu/youthprograms/course/camp-wildcat-20",
       "kind": "html",
@@ -155,6 +155,19 @@
         "quote": "Review the Online Registration Instructions before enrolling for the best outcome."
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.unh.edu/youthprograms/course/camp-wildcat-20",
+        "https://www.unh.edu/youthprograms/"
+      ],
+      "changes": [
+        "No changes: couldn't fetch. unh.edu could not be reached (connection error) on three tries, so no field was checked against the camp's page."
+      ],
+      "open_questions": [
+        "The UNH site couldn't be reached, so nothing in this draft is verified. The draft also holds only summer 2026 weeks, and in October the page said 'This course is currently unavailable.' Recheck when UNH posts 2027, or hold?"
+      ]
+    }
   }
 }
