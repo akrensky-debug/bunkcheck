@@ -8,8 +8,22 @@ Scoring factors (all additive on top of base 1.0):
   +0.20  distance fit     — <15 mi: +0.20 | <30 mi: +0.10
   +0.15  price fit        — price_per_week ≤ max_price_per_week
   +0.10  data completeness — has sessions, price, and description
-  +0.10  verification     — camp_verified or team_verified
-  +0.05  freshness        — updated within last 30 days
+  +0.10  owner confirmed  — camp_verified: the owner confirmed the listing, for free
+  +0.05  freshness        — the listing's facts changed within the last 30 days
+
+The rule (decided 5 November 2026): payment never counts. A camp's rank is the same whether
+or not it pays. The rules in plain words are public at /ranking (frontend/app/ranking).
+
+Two things hold that rule in code, and tests/test_ranking_rules.py checks both:
+
+1. score_camp reads only the fields in CAMP_FIELDS and SESSION_FIELDS. Anything else on the
+   row (a billing column added to `camps`, say) never reaches the score.
+2. Our own check of a listing (team_verified) does not count. That check is what the paid
+   verified profile sells, so counting it would let a camp buy rank. Only the owner's free
+   confirmation counts. Freshness reads last_updated_date, never updated_at, which moves on
+   any write to the row, billing included.
+
+Before adding a field here, ask whether a camp could ever pay to change it. If yes, it stays out.
 """
 
 from __future__ import annotations
@@ -31,6 +45,18 @@ def _weeks_from_dates(start_iso: str, end_iso: str) -> list[date]:
     return weeks
 
 
+# Every camp field ranking may read. Nothing about payment, billing, plans or inquiries.
+CAMP_FIELDS = frozenset({
+    "age_min", "age_max", "primary_categories", "price_per_week", "price_min",
+    "description_short", "description_full", "verification_status", "aca_accredited",
+    "last_updated_date",
+})
+SESSION_FIELDS = frozenset({"start_date", "end_date"})
+
+# Verification statuses that add to the score. team_verified is left out on purpose (see above).
+SCORED_STATUSES = frozenset({"camp_verified"})
+
+
 def score_camp(
     camp: dict[str, Any],
     sessions: list[dict[str, Any]],
@@ -46,6 +72,8 @@ def score_camp(
 
     Returns (score, reasons).
     """
+    camp = {k: camp.get(k) for k in CAMP_FIELDS}
+    sessions = [{k: s.get(k) for k in SESSION_FIELDS} for s in sessions]
     score = 1.0
     reasons: list[str] = []
 
@@ -109,18 +137,17 @@ def score_camp(
     if has_sessions and has_price and has_description:
         score += 0.10
 
-    # --- Verification quality ---
-    vstatus = camp.get("verification_status", "")
-    if vstatus in ("camp_verified", "team_verified"):
+    # --- Owner confirmation (free) ---
+    if camp.get("verification_status") in SCORED_STATUSES:
         score += 0.10
-        reasons.append("Verified listing")
+        reasons.append("Confirmed by the camp")
 
-    # --- ACA accreditation (bonus reason, no score impact beyond verification) ---
+    # --- ACA accreditation (a reason only, no score) ---
     if camp.get("aca_accredited"):
         reasons.append("ACA accredited")
 
     # --- Freshness ---
-    last_updated = camp.get("last_updated_date") or camp.get("updated_at")
+    last_updated = camp.get("last_updated_date")
     if last_updated is not None:
         if isinstance(last_updated, str):
             try:
