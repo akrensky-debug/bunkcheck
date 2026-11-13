@@ -3,6 +3,7 @@
   "name": "WildQuest Day Camps",
   "operator_name": "Prescott Farm Environmental Education Center",
   "website_url": "https://prescottfarm.org/service/wildquest-day-camps/",
+  "registration_url": "http://prescottfarm.campbrainregistration.com",
   "email": "camp@prescottfarm.org",
   "phone": "(603) 366-5695",
   "street_address": "928 White Oaks Road",
@@ -13,9 +14,6 @@
   "primary_categories": [
     "nature"
   ],
-  "age_min": 5,
-  "age_max": 14,
-  "description_short": "A nature-focused day camp at Prescott Farm in Laconia, NH, for ages 5-14, running 9am-4pm. Campers spend most of the day outdoors doing nature activities, animal and plant identification, arts and crafts, cooking, games and hands-on learning.",
   "activities": [
     "nature activities",
     "animal and plant identification",
@@ -25,87 +23,77 @@
     "games",
     "hands-on learning"
   ],
+  "age_min": 5,
+  "age_max": 14,
+  "description_short": "A nature day camp at Prescott Farm in Laconia, NH, running nine themed summer weeks for ages 5 to 14, 9am to 4pm, plus February and April vacation weeks. Campers spend most of the day outdoors with nature activities, animal and plant identification, arts and crafts, cooking, games and hands-on learning.",
   "price_per_week": 320,
   "price_min": 270,
   "price_max": 320,
-  "financial_aid": true,
-  "extended_care": true,
-  "refund_policy_summary": "A $100 non-refundable deposit per session, per child, holds each spot. The page gives no other refund terms.",
-  "season_year": 2026,
   "price_per": "week",
+  "extended_care": true,
+  "meals_included": false,
+  "financial_aid": true,
+  "refund_policy_summary": "A $100 non-refundable deposit per session, per child, holds each spot. Cancel more than four weeks before the session for a refund of everything else paid; within four weeks, refunds only if the spot is filled. No refunds for no-shows, missed days or weather.",
+  "season_year": 2026,
   "sessions": [
     {
-      "name": "Winter Camp",
-      "start_date": "2026-02-23",
-      "end_date": "2026-02-27",
-      "price": 320,
-      "availability": "unknown"
-    },
-    {
-      "name": "Spring Camp",
-      "start_date": "2026-04-27",
-      "end_date": "2026-05-01",
-      "price": 320,
-      "availability": "unknown"
-    },
-    {
-      "name": "Summer Week 1",
+      "name": "Session 1: Wildlife Exploration",
       "start_date": "2026-06-29",
       "end_date": "2026-07-03",
       "price": 320,
       "availability": "unknown"
     },
     {
-      "name": "Summer Week 2",
+      "name": "Session 2: Water & Wetlands",
       "start_date": "2026-07-06",
       "end_date": "2026-07-10",
       "price": 320,
       "availability": "unknown"
     },
     {
-      "name": "Summer Week 3",
+      "name": "Session 3: Survival Skills",
       "start_date": "2026-07-13",
       "end_date": "2026-07-17",
       "price": 320,
       "availability": "unknown"
     },
     {
-      "name": "Summer Week 4",
+      "name": "Session 4: STEAM Week",
       "start_date": "2026-07-20",
       "end_date": "2026-07-24",
       "price": 320,
       "availability": "unknown"
     },
     {
-      "name": "Summer Week 5",
+      "name": "Session 5: Nature Artists",
       "start_date": "2026-07-27",
       "end_date": "2026-07-31",
       "price": 320,
       "availability": "unknown"
     },
     {
-      "name": "Summer Week 6",
+      "name": "Session 6: Earth Week",
       "start_date": "2026-08-03",
       "end_date": "2026-08-07",
       "price": 320,
       "availability": "unknown"
     },
     {
-      "name": "Summer Week 7",
+      "name": "Session 7: Animal Adventures",
       "start_date": "2026-08-10",
       "end_date": "2026-08-14",
       "price": 320,
       "availability": "unknown"
     },
     {
-      "name": "Summer Week 8",
+      "name": "Session 8: Garden-to-Table Cooking",
       "start_date": "2026-08-17",
       "end_date": "2026-08-21",
       "price": 320,
       "availability": "unknown"
     },
     {
-      "name": "Summer Week 9",
+      "name": "Session 9: A Little Bit of Everything",
       "start_date": "2026-08-24",
       "end_date": "2026-08-28",
       "price": 320,
@@ -115,7 +103,7 @@
   "sources": [
     {
       "url": "https://prescottfarm.org/service/wildquest-day-camps/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -129,23 +117,36 @@
         "camp_type",
         "primary_categories",
         "activities",
+        "description_short"
+      ]
+    },
+    {
+      "url": "https://prescottfarm.org/service/wildquest-day-camps/wildquest-summer-camp/",
+      "checked": "2026-11-13",
+      "fields": [
+        "registration_url",
         "age_min",
         "age_max",
-        "description_short",
+        "price_per_week",
         "price_min",
         "price_max",
-        "price_per_week",
         "price_per",
         "extended_care",
         "financial_aid",
-        "refund_policy_summary",
         "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
+    },
+    {
+      "url": "https://prescottfarm.org/wp-content/uploads/2025/12/2026-Final-Camp-Family-Handbook.pdf",
+      "checked": "2026-11-13",
+      "fields": [
+        "meals_included",
+        "refund_policy_summary"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://prescottfarm.org/service/wildquest-day-camps/",
       "kind": "html",
@@ -193,6 +194,23 @@
         "quote": "Summer Camp (9 weekly session): June 29 – August 28"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://prescottfarm.org/service/wildquest-day-camps/",
+        "https://prescottfarm.org/service/wildquest-day-camps/wildquest-summer-camp/",
+        "https://prescottfarm.org/wp-content/uploads/2025/12/2026-Final-Camp-Family-Handbook.pdf"
+      ],
+      "changes": [
+        "Sessions now come from the Summer Camp page's 2026 dates and themes (Session 1 June 29-July 3 to Session 9 August 24-28), not worked out from the overall range.",
+        "Removed the February and April 2026 vacation-week sessions: they are not summer sessions and the overview now shows 2027 dates for them.",
+        "Added registration_url (the CampBrain registration link on the Summer Camp page).",
+        "Added meals_included false (campers bring lunch and snacks) and the full cancellation terms from the 2026 Family Handbook.",
+        "Description now mentions the nine summer weeks and the vacation weeks. Ages 5-14, $320 non-member / $270 member weekly, extended care $45 a week, scholarships, address and contact match.",
+        "Kept season 2026: the overview now posts 2027 ranges only (Summer June 28 - August 27, 2027, nine weekly sessions; Winter February 22-26; Spring April 26-30) with no week-by-week dates or 2027 prices. Winter and Spring 2027 registration opens December 9, 2026."
+      ],
+      "open_questions": []
+    }
   }
 }

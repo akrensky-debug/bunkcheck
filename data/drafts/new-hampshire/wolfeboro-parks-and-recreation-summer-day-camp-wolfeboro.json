@@ -4,22 +4,92 @@
   "operator_name": "Wolfeboro Parks & Recreation (Town of Wolfeboro)",
   "website_url": "https://www.wolfeboronh.us/300/2026-Day-Camp",
   "registration_url": "https://wolfeboro.recdesk.com/Community/Home",
+  "email": "programmer@wolfeboronh.us",
+  "phone": "603-569-5639",
+  "street_address": "Foss Field Pavilion, 88 Lehner St.",
   "city": "Wolfeboro",
   "state": "NH",
   "zip": "03894",
   "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "activities": [
+    "Swimming",
+    "Beach days",
+    "Group games",
+    "Team building",
+    "Sports",
+    "Arts and crafts",
+    "Weekly field trips",
+    "Special events"
+  ],
   "age_min": 6,
   "age_max": 12,
-  "description_short": "A town-run summer day camp for ages 6-12, held Monday to Friday from 9 am to 3:30 pm. Campers sign in and out at the Foss Field Pavilion and are split into two age groups (6-8 and 9-12).",
+  "description_short": "A town-run summer day camp for ages 6 to 12, Monday to Friday from 9am to 3:30pm at the Foss Field Pavilion. Campers are split into two age groups (6 to 8 and 9 to 12), with beach days on Wednesdays and a weekly field trip.",
   "price_per_week": 95,
   "price_min": 95,
   "price_max": 143,
-  "season_year": 2026,
   "price_per": "week",
+  "meals_included": false,
+  "financial_aid": true,
+  "swim_waterfront_notes": "Beach days are Wednesdays at Carry Beach (201 Forest Rd.); campers bring a swimsuit and towel.",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Week 1 (no camp July 3)",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-02",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 2",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": 95,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 3",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": 95,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 4",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": 95,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 5",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": 95,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 6",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": 95,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 7",
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-14",
+      "price": 95,
+      "availability": "unknown"
+    }
+  ],
   "sources": [
     {
       "url": "https://www.wolfeboronh.us/300/2026-Day-Camp",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -27,21 +97,35 @@
         "registration_url",
         "city",
         "state",
-        "zip",
         "camp_type",
         "age_min",
         "age_max",
-        "description_short",
+        "price_per_week",
         "price_min",
         "price_max",
-        "price_per_week",
         "price_per"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
+    },
+    {
+      "url": "https://www.wolfeboronh.us/DocumentCenter/View/1468/Day-Camp-2026-Parent-Handbook",
+      "checked": "2026-11-13",
+      "fields": [
+        "email",
+        "phone",
+        "street_address",
+        "zip",
+        "primary_categories",
+        "activities",
+        "description_short",
+        "meals_included",
+        "financial_aid",
+        "swim_waterfront_notes",
+        "sessions"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.wolfeboronh.us/300/2026-Day-Camp",
       "kind": "html",
@@ -93,6 +177,20 @@
         "quote": "Non-Resident Fee: $143 per week."
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.wolfeboronh.us/300/2026-Day-Camp",
+        "https://www.wolfeboronh.us/DocumentCenter/View/1468/Day-Camp-2026-Parent-Handbook"
+      ],
+      "changes": [
+        "Added the seven 2026 weeks from the 2026 Parent Handbook (June 29 to August 14, no camp July 3), $95 resident rate per week; Week 1 is four days and its price is not stated, so it is blank. The handbook also says once 'beginning on June 30th', but its week list and office hours both say June 29.",
+        "Added the camp location Foss Field Pavilion, 88 Lehner St., plus phone 603-569-5639 and email programmer@wolfeboronh.us from the handbook.",
+        "Added activities (swimming, group games, team building, sports, arts and crafts, field trips), primary category general, beach-day swim notes, meals_included false (packed lunch) and financial_aid true (the handbook points families to the town Welfare Director for camp assistance).",
+        "ZIP 03894 is now sourced to the handbook (Parks & Recreation office, 390 Pine Hill Rd., Wolfeboro, NH 03894). Ages 6-12, hours and $95/$143 prices match the 2026 Day Camp page."
+      ],
+      "open_questions": []
+    }
   }
 }

@@ -6,11 +6,15 @@
   "registration_url": "https://campfoss.org/sign-up-for-camp/",
   "email": "stownes@graniteymca.org",
   "phone": "603-232-8642",
-  "city": null,
-  "state": null,
-  "zip": null,
+  "street_address": "242 Willey Pond Rd",
+  "city": "Strafford",
+  "state": "NH",
+  "zip": "03884",
   "camp_type": "sleepaway",
-  "description_short": "A YMCA overnight camp with stays of one week, two weeks, one month or the full summer, from June 27 to August 21, 2027. Campers check in on Sunday and check out on Saturday. A Counselor In Training (CIT) program is also offered.",
+  "gender_policy": "girls",
+  "age_min": 7,
+  "age_max": 15,
+  "description_short": "A YMCA overnight summer camp for girls ages 8 to 15, with 7-year-olds welcome in the fourth session. Stays run one week, two weeks, one month or the full summer, from June 27 to August 21, 2027, with Sunday check-in and Saturday check-out. Older teens can apply to the Counselor in Training program.",
   "activities": [
     "Campfires",
     "Specialty activities",
@@ -20,6 +24,7 @@
   ],
   "price_min": 1650,
   "price_max": 10450,
+  "meals_included": true,
   "financial_aid": true,
   "refund_policy_summary": "To cancel for a non-medical reason, you must tell the Enrollment Coordinator at least four weeks before the session starts. Deposits paid at registration are non-refundable. Medical cancellations need a doctor's note. The final payment is due May 15, 2027. Discounts: 10% off for Granite YMCA members, 10% off per new friend referred, and 5% off per sibling.",
   "season_year": 2027,
@@ -147,7 +152,7 @@
   "sources": [
     {
       "url": "https://campfoss.org/dates-and-rates/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -157,18 +162,54 @@
         "phone",
         "camp_type",
         "activities",
-        "description_short",
         "price_min",
         "price_max",
         "financial_aid",
         "refund_policy_summary",
         "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Drafted by the listing tool from this page; rechecked 2026-11-13"
+    },
+    {
+      "url": "https://campfoss.org/",
+      "checked": "2026-11-13",
+      "fields": [
+        "age_min",
+        "age_max",
+        "description_short"
+      ],
+      "note": "Homepage: Girls Overnight Summer Camp, Ages 8-15, 7-year-olds welcome during the 4th session"
+    },
+    {
+      "url": "https://campfoss.org/our-story/",
+      "checked": "2026-11-13",
+      "fields": [
+        "gender_policy"
+      ],
+      "note": "Our Story: a resident camp for girls since 1965"
+    },
+    {
+      "url": "https://campfoss.org/contact/",
+      "checked": "2026-11-13",
+      "fields": [
+        "street_address",
+        "city",
+        "state",
+        "zip"
+      ],
+      "note": "Camp Address (Summer): 242 Willey Pond Rd., Strafford, NH 03884"
+    },
+    {
+      "url": "https://campfoss.org/food-and-nutrition/",
+      "checked": "2026-11-13",
+      "fields": [
+        "meals_included"
+      ],
+      "note": "Three meals a day, family style"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://campfoss.org/dates-and-rates/",
       "kind": "html",
@@ -206,6 +247,30 @@
       "missing required city",
       "missing required state",
       "missing required zip"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://campfoss.org/dates-and-rates/",
+        "https://campfoss.org/",
+        "https://campfoss.org/contact/",
+        "https://campfoss.org/our-story/",
+        "https://campfoss.org/food-and-nutrition/",
+        "https://campfoss.org/faq/",
+        "https://campfoss.org/cit/",
+        "https://campfoss.org/financial-assistance/",
+        "https://campfoss.org/sign-up-for-camp/",
+        "https://campfoss.org/wp-content/uploads/2026/09/FOSS014-Brochure-Sum2027.pdf"
+      ],
+      "changes": [
+        "Filled the summer camp address from the Contact page: 242 Willey Pond Rd, Strafford, NH 03884.",
+        "Added gender_policy girls (Our Story: a resident camp for girls since 1965; homepage: Girls Overnight) and ages 7 to 15 (homepage: ages 8 to 15, 7-year-olds welcome in the fourth session).",
+        "Added meals_included from the Food and Nutrition page (three meals a day).",
+        "Rewrote the description to say it is a girls camp and give the ages.",
+        "Checked all 17 sessions and prices against the 2027 Dates & Rates page; they match. One Week Session 2A stays out because the page lists it as July 11 to July 27, which overlaps 2B.",
+        "The 2027 brochure PDF is over the fetcher's 8 MB limit, so it was not read."
+      ],
+      "open_questions": []
+    }
   }
 }
