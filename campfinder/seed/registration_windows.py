@@ -5,7 +5,8 @@ data/registration/windows.json holds one row per camp and season:
     {"slug": "...", "season": 2027, "opens": "2026-12-01", "time": "10:00" | null,
      "opens_for": "everyone" | "new families" | ..., "early_window": "..." | null,
      "closes": "2027-01-31" | null, "url": "...", "quote": "...", "checked": "2026-11-13",
-     "verified_by": null | "Andrew Krensky", "verified_on": null | "2026-11-14"}
+     "verified_by": null | "Andrew Krensky", "verified_on": null | "2026-11-14",
+     "note": null | "anything a person should know"}
 
 "url" is the camp's own page and "quote" its exact words. Every row loads, but only rows a
 person verified (verified_by and verified_on set) load as verified, and only a verified row
@@ -110,6 +111,8 @@ def notes(r: dict[str, Any]) -> str:
         parts.append(f"earlier: {r['early_window']}")
     if not r.get("time"):
         parts.append("day only, no time given")
+    if r.get("note"):
+        parts.append(r["note"].strip().rstrip("."))
     if r.get("verified_by"):
         parts.append(f"verified by {r['verified_by']} on {r['verified_on']}")
     return "; ".join(parts)

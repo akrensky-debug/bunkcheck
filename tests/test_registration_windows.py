@@ -72,6 +72,7 @@ async def test_loads_again_in_place_and_leaves_owner_dates_alone(migrated: async
     tx = migrated.transaction()
     await tx.start()
     try:
+        await migrated.execute("DELETE FROM registration_windows")   # the migrations load the real dates
         await _load_camps(migrated, {SLUG, OTHER})
         first = build_rows([_row(), _row(slug=OTHER)])
         for s in to_sql(first):
@@ -100,6 +101,8 @@ async def test_skips_camps_with_their_own_window_or_not_in_the_database(migrated
     tx = migrated.transaction()
     await tx.start()
     try:
+        await migrated.execute("DELETE FROM registration_windows")
+        await migrated.execute("DELETE FROM camps WHERE id = $1", build_rows([_row(slug=OTHER)])[0]["camp_id"])
         await _load_camps(migrated, {SLUG})
         own = build_rows([_row()])[0]["camp_id"]
         await migrated.execute("INSERT INTO registration_windows (camp_id, opens_at, verified, notes) "
