@@ -14,14 +14,30 @@
   "grade_max": 8,
   "description_short": "Private day camp in Manchester, NH for children entering grades K–8, with separate girls' and boys' groups by grade. Tuition covers a full day from 7:30am to 5:00pm and includes swimming lessons; only full weeks can be booked.",
   "activities": [
-    "Swimming lessons"
+    "Swimming lessons",
+    "Boating (canoes, rowboats, kayaks)",
+    "Stand-up paddleboarding",
+    "Water-skiing",
+    "Arts and crafts",
+    "Skits",
+    "Soccer",
+    "Hockey",
+    "Basketball",
+    "Volleyball",
+    "Lacrosse",
+    "Pickleball",
+    "Archery",
+    "BB-gun shooting",
+    "Rock wall climbing",
+    "Gaga",
+    "Pond life"
   ],
   "price_per_week": 425,
   "price_min": 425,
   "price_max": 425,
   "financial_aid": false,
   "refund_policy_summary": "You must pay a non-refundable, non-transferable deposit for each week at registration. If you cancel before May 1, you get a refund minus the deposit. After May 1, you owe for all reserved weeks. The remaining balance is due by May 15; if it isn't paid by then, your weeks are cancelled and you lose the deposit. Credit card payments carry a 3% surcharge, and returned checks cost $30.",
-  "swim_waterfront_notes": "Swimming lessons are included in tuition. The camp mentions docks, which it removes in the off-season.",
+  "swim_waterfront_notes": "Three swimming areas bounded by docks and ropes, each with a raft for advanced swimmers. Over 30 Red Cross certified lifeguards. Every camper takes a swim check on day one and a mandatory daily lesson by level; those who pass the Rafter's Test can take out their own boats and learn to water-ski. Motorboat drivers are licensed by NH Marine Patrol.",
   "season_year": 2027,
   "price_per": "week",
   "sessions": [
@@ -99,7 +115,7 @@
   "sources": [
     {
       "url": "https://melodypines.com/registration/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "website_url",
@@ -110,7 +126,6 @@
         "state",
         "zip",
         "camp_type",
-        "activities",
         "age_min",
         "grade_min",
         "grade_max",
@@ -121,14 +136,20 @@
         "price_per",
         "financial_aid",
         "refund_policy_summary",
-        "swim_waterfront_notes",
         "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
+    },
+    {
+      "url": "https://melodypines.com/the-camp-day/",
+      "checked": "2026-11-13",
+      "fields": [
+        "activities",
+        "swim_waterfront_notes"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://melodypines.com/registration/",
       "kind": "html",
@@ -155,6 +176,21 @@
       "Correct deposit amount ($65 vs $50)"
     ],
     "low_confidence": [],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://melodypines.com/registration/",
+        "https://melodypines.com/the-camp-day/"
+      ],
+      "changes": [
+        "Checked the ten 2027 weeks, $425 weekly tuition, grades K-8 (age 5+), address, phone, no financial aid and the May 1 cancellation rule against the registration page; all match.",
+        "Filled out activities from The Camp Day page (boating, paddleboarding, water-skiing, sports, archery, climbing and more) instead of swimming lessons alone.",
+        "Rewrote swim_waterfront_notes from The Camp Day page: three roped swim areas, 30+ Red Cross lifeguards, daily lessons by level, Rafter's Test."
+      ],
+      "open_questions": [
+        "The registration page gives the deposit as $65 per week, but its own FAQ says $50 per week; the listing doesn't quote either, so nothing to fix, but the camp may want to know."
+      ]
+    }
   }
 }

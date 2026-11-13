@@ -4,15 +4,16 @@
   "operator_name": "Greek Orthodox Metropolis of Boston",
   "website_url": "https://www.metropolisofbostoncamp.org/",
   "registration_url": "https://gomb.campintouch.com/ui/forms/application/camper/App",
-  "street_address": "162 Goddard Avenue",
-  "city": "Brookline",
-  "state": "MA",
-  "zip": "02445",
+  "phone": "(617) 651-1369",
+  "street_address": "329 Camp Merrimac Road",
+  "city": "Contoocook",
+  "state": "NH",
+  "zip": "03229",
   "camp_type": "sleepaway",
   "primary_categories": [
     "faith"
   ],
-  "description_short": "A Greek Orthodox overnight camp run by the Metropolis of Boston. It offers week-long summer sessions plus weekend fall and winter camps.",
+  "description_short": "An overnight Orthodox Christian camp run by the Greek Orthodox Metropolis of Boston on over 300 acres in Contoocook, NH. Campers entering grades 3-12 come for one 6-day summer session (Monday to Sunday), living in cabins grouped by age; weekend fall and winter camps serve grades 6-12.",
   "price_min": 550,
   "price_max": 650,
   "financial_aid": true,
@@ -54,21 +55,21 @@
       "availability": "unknown"
     },
     {
-      "name": "Fall Camp 2026",
+      "name": "Fall Camp (grades 6-12)",
       "start_date": "2026-10-10",
       "end_date": "2026-10-12",
       "price": 300,
       "availability": "unknown"
     },
     {
-      "name": "Winter Camp 2026 Session 1",
+      "name": "Winter Camp Session 1 (grades 6-12)",
       "start_date": "2026-01-17",
       "end_date": "2026-01-19",
       "price": null,
       "availability": "unknown"
     },
     {
-      "name": "Winter Camp 2026 Session 2",
+      "name": "Winter Camp Session 2 (grades 6-12)",
       "start_date": "2026-02-14",
       "end_date": "2026-02-16",
       "price": null,
@@ -78,29 +79,65 @@
   "sources": [
     {
       "url": "https://www.metropolisofbostoncamp.org/dates--rates.html",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
         "website_url",
         "registration_url",
-        "street_address",
-        "city",
-        "state",
-        "zip",
         "camp_type",
         "primary_categories",
-        "description_short",
+        "price_per_week",
         "price_min",
         "price_max",
+        "price_per",
         "financial_aid",
         "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Session prices are the 1st-camper rate; 2nd camper $600, 3rd+ $550. Winter price depends on field trip ($325 or $375)."
+    },
+    {
+      "url": "https://www.metropolisofbostoncamp.org/summer-camp.html",
+      "checked": "2026-11-13",
+      "fields": [
+        "age_min",
+        "age_max",
+        "grade_min",
+        "grade_max",
+        "description_short",
+        "religious_affiliation"
+      ]
+    },
+    {
+      "url": "https://www.metropolisofbostoncamp.org/contact-us.html",
+      "checked": "2026-11-13",
+      "fields": [
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip"
+      ]
+    },
+    {
+      "url": "https://www.metropolisofbostoncamp.org/campgrounds--facilities.html",
+      "checked": "2026-11-13",
+      "fields": [
+        "activities",
+        "meals_included"
+      ]
+    },
+    {
+      "url": "https://www.metropolisofbostoncamp.org/frequently-asked-questions.html",
+      "checked": "2026-11-13",
+      "fields": [
+        "special_needs_notes",
+        "swim_waterfront_notes"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.metropolisofbostoncamp.org/dates--rates.html",
       "kind": "html",
@@ -160,6 +197,50 @@
         "quote": "WINTER 2026 REGISTRATION OPENS AT 7PM ON MONDAY, DECEMBER 1st"
       }
     ],
-    "errors": []
-  }
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.metropolisofbostoncamp.org/dates--rates.html",
+        "https://www.metropolisofbostoncamp.org/",
+        "https://www.metropolisofbostoncamp.org/summer-camp.html",
+        "https://www.metropolisofbostoncamp.org/contact-us.html",
+        "https://www.metropolisofbostoncamp.org/campgrounds--facilities.html",
+        "https://www.metropolisofbostoncamp.org/frequently-asked-questions.html",
+        "https://www.metropolisofbostoncamp.org/registration--financial-aid.html"
+      ],
+      "changes": [
+        "Moved the location from the Brookline office to the campground: 329 Camp Merrimac Road, Contoocook, NH 03229 (Contact Us page)",
+        "Added phone (617) 651-1369, the MBC office",
+        "Added ages 8-18 and grades 3-12 for summer camp from the Summer Camp page",
+        "Added activities, meals included, allergy notes and swim test notes from the Campgrounds and FAQ pages",
+        "Added price_per_week 650 and price_per week; religious_affiliation Greek Orthodox",
+        "Marked fall and winter sessions as grades 6-12; rewrote description around the Contoocook campground",
+        "Slug still ends in 'brookline'; left unchanged"
+      ],
+      "open_questions": []
+    }
+  },
+  "age_min": 8,
+  "age_max": 18,
+  "grade_min": 3,
+  "grade_max": 12,
+  "religious_affiliation": "Greek Orthodox",
+  "activities": [
+    "swimming",
+    "canoeing",
+    "tubing",
+    "water trampoline",
+    "basketball",
+    "soccer",
+    "arts and crafts",
+    "hiking trails",
+    "chapel services",
+    "campfires"
+  ],
+  "price_per_week": 650,
+  "price_per": "week",
+  "meals_included": true,
+  "special_needs_notes": "Nut-free facility; the kitchen can handle most nut, gluten and dairy allergies, and sets up a separate storage area for more serious allergies. Families should contact the office early about medical needs; a Camper Support page covers accommodations.",
+  "swim_waterfront_notes": "Campers must pass a swim test before waterfront activities. Lifeguards watch the waterfront at better than Red Cross ratios, no one swims without a lifeguard, and campers use a buddy system."
 }

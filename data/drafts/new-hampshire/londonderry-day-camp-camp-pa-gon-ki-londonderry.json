@@ -3,7 +3,7 @@
   "name": "Londonderry Day Camp (Camp Pa-Gon-Ki)",
   "operator_name": "The Granite YMCA (YMCA of Greater Londonderry)",
   "website_url": "https://www.graniteymca.org/camps/day-camp/londonderry/",
-  "registration_url": "https://ymcagranite.sgasoftware.com/Sales/Product?ProductID=62001-68999&ProductTypeID=610,650&DT=GroupedList&DL=100",
+  "registration_url": "https://ymcagranite.sgasoftware.com/Sales/Product?DL=50&BranchID=40&ProductTypeID=650",
   "email": "jbuck@graniteymca.org",
   "phone": "603.437.9622",
   "city": "Londonderry",
@@ -17,7 +17,7 @@
   ],
   "grade_min": 1,
   "grade_max": 11,
-  "description_short": "A traditional outdoor day camp run by the YMCA in Londonderry for children entering grades 1–9, with weekly themes and add-on specialty camps. Teens entering grades 8–11 can join Leader in Training and Counselor in Training programs.",
+  "description_short": "A traditional outdoor day camp run by the YMCA of Greater Londonderry for children entering grades 1-9, with weekly themes, camp songs and add-on specialty camps. Camp runs 8:30 am to 4:00 pm with free before and after care, and teens entering grades 8-11 can join Leader in Training and Counselor in Training programs.",
   "activities": [
     "Swimming",
     "Structured games",
@@ -32,7 +32,7 @@
   ],
   "financial_aid": true,
   "extended_care": true,
-  "swim_waterfront_notes": "Swimming is mentioned as an afternoon activity in specialty camps. The page does not say where swimming happens (pool or open water) or how swim tests work.",
+  "swim_waterfront_notes": "Swimming is listed as an afternoon activity. The Londonderry Y campus, which hosts day camp, has an outdoor pool. Swim tests and supervision are not described.",
   "season_year": 2026,
   "sessions": [
     {
@@ -116,7 +116,7 @@
   "sources": [
     {
       "url": "https://www.graniteymca.org/camps/day-camp/londonderry/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -125,6 +125,7 @@
         "email",
         "phone",
         "city",
+        "state",
         "camp_type",
         "primary_categories",
         "activities",
@@ -133,23 +134,30 @@
         "description_short",
         "extended_care",
         "financial_aid",
-        "swim_waterfront_notes",
-        "sessions",
-        "state"
-      ],
-      "note": "Drafted by the listing tool from this page"
+        "sessions"
+      ]
     },
     {
-      "url": "https://www.census.gov/geographies/reference-files/time-series/geo/relationship-files.2020.html",
-      "checked": "2026-10-14",
+      "url": "https://www.graniteymca.org/location/londonderry/",
+      "checked": "2026-11-13",
       "fields": [
-        "zip"
+        "street_address",
+        "zip",
+        "swim_waterfront_notes"
       ],
-      "note": "Londonderry, NH sits inside one ZIP code (2020 Census ZCTA relationship file)"
+      "note": "Branch address; the page says this campus hosts summer day camp and has an outdoor pool"
+    },
+    {
+      "url": "https://www.graniteymca.org/dev/wp-content/uploads/2024/01/Summer-Billing-Schedule.pdf",
+      "checked": "2026-11-13",
+      "fields": [
+        "refund_policy_summary"
+      ],
+      "note": "2026 Summer Day Camp Billing Schedule, linked from the Londonderry camp page"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.graniteymca.org/camps/day-camp/londonderry/",
       "kind": "html",
@@ -192,6 +200,27 @@
         "quote": "followed by lunch and additional activities like swimming, structured games, and more"
       }
     ],
-    "errors": []
-  }
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.graniteymca.org/camps/day-camp/londonderry/",
+        "https://www.graniteymca.org/location/londonderry/",
+        "https://www.graniteymca.org/dev/wp-content/uploads/2024/01/Summer-Billing-Schedule.pdf",
+        "https://graniteymca.flowpaper.com/TGYDayCampBrochure/",
+        "https://www.graniteymca.org/camps/teen-camps/"
+      ],
+      "changes": [
+        "Added street address 206 Rockingham Rd from the Londonderry branch page, which says the campus hosts summer day camp; ZIP 03053 now sourced to that page instead of a Census file",
+        "Registration link changed to the Londonderry day camp link on the camp page (BranchID 40)",
+        "Added refund_policy_summary from the 2026 Summer Day Camp Billing Schedule PDF",
+        "Swim note now says the campus has an outdoor pool",
+        "Description now gives camp hours and free before and after care",
+        "Prices left empty: the brochure is a FlowPaper flipbook the fetcher can't read as text"
+      ],
+      "open_questions": []
+    }
+  },
+  "street_address": "206 Rockingham Rd",
+  "refund_policy_summary": "A $35 nonrefundable deposit is due per camper per week. Cancel more than 6 weeks before a camp week for a full refund less the deposit; 3 to 6 weeks before, a $65 admin fee also applies; under 3 weeks, no refund. Balances are drafted about 6 weeks before each week."
 }

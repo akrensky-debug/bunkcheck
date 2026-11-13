@@ -9,7 +9,7 @@
   "street_address": "24 Stadium Drive",
   "city": "Nashua",
   "state": "NH",
-  "zip": null,
+  "zip": "03062",
   "camp_type": "day",
   "primary_categories": [
     "nature",
@@ -39,10 +39,75 @@
   "swim_waterfront_notes": "Children swim once per week in the Nashua Y pool. Week 2 includes water play such as sprinklers and bubbles.",
   "season_year": 2026,
   "price_per": "week",
+  "sessions": [
+    {
+      "name": "Week 1: Nature Week",
+      "start_date": "2026-06-22",
+      "end_date": "2026-06-26",
+      "price": 180,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 2: Water Wonderland",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-03",
+      "price": 180,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 3: Magical Science",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": 180,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 4: Tool Time",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": 180,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 5: Books & Buffet",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": 180,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 6: Community Helpers Week",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": 180,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 7: Bug Bonanza",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": 180,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 8: Dinosaur Week",
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-14",
+      "price": 180,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 9: Green Thumbs Week",
+      "start_date": "2026-08-17",
+      "end_date": "2026-08-21",
+      "price": 180,
+      "availability": "unknown"
+    }
+  ],
   "sources": [
     {
       "url": "https://nmymca.org/camps/nashua-day-camps/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -68,11 +133,20 @@
         "special_needs_notes",
         "swim_waterfront_notes"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Drafted by the listing tool from this page; rechecked 2026-11-13"
+    },
+    {
+      "url": "https://nmymca.org/wp-content/uploads/2026/01/YMCAofGN_SummerCampGuide_2026_Final.1.pdf",
+      "checked": "2026-11-13",
+      "fields": [
+        "zip",
+        "sessions"
+      ],
+      "note": "2026 Summer Camp Guide: back cover gives Nashua YMCA, 24 Stadium Drive, Nashua, NH 03062; the Camp Weeks calendar gives Week 1 June 22-26 through Week 9 August 17-21, matching the nine Little Investigators weekly themes."
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://nmymca.org/camps/nashua-day-camps/",
       "kind": "html",
@@ -131,6 +205,20 @@
     ],
     "errors": [
       "missing required zip"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://nmymca.org/camps/nashua-day-camps/",
+        "https://nmymca.org/wp-content/uploads/2026/01/YMCAofGN_SummerCampGuide_2026_Final.1.pdf"
+      ],
+      "changes": [
+        "Filled zip 03062 from the back cover of the camp's 2026 Summer Camp Guide (Nashua YMCA, 24 Stadium Drive).",
+        "Added the nine 2026 weeks (June 22 to August 21) by matching the Little Investigators weekly themes to the guide's Camp Weeks calendar; session price is the $180 member rate (community rate $195).",
+        "Checked all other fields against the camp page and guide: ages 3 to 5, 9 AM to 1 PM, $180/$195 a week, no before or after care, swim once a week, potty trained, financial aid. They match.",
+        "season_year stays 2026; no 2027 information is posted yet. Updated checked dates to 2026-11-13."
+      ],
+      "open_questions": []
+    }
   }
 }

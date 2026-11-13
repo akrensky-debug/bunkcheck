@@ -10,11 +10,20 @@
   "state": "NH",
   "zip": "03810",
   "camp_type": "sleepaway",
+  "gender_policy": "boys",
   "age_min": 8,
   "age_max": 17,
   "description_short": "Overnight summer camp for boys ages 8 to 16 in Alton Bay, New Hampshire. Most campers attend one of two half-summer sessions. There is also a full-summer option, shorter introductory sessions for first-time campers ages 8 to 11, and a counseling internship for returning campers ages 16 and 17.",
   "activities": [
-    "Adventure trips"
+    "Individual challenge sports",
+    "Creative arts",
+    "Adventure trips",
+    "Sailing",
+    "Tennis",
+    "Pottery",
+    "Archery",
+    "Fishing",
+    "Waterskiing"
   ],
   "price_min": 5550,
   "price_max": 12840,
@@ -74,7 +83,7 @@
   "sources": [
     {
       "url": "https://kabeyun.org/for-parents/sessions-tuition-and-dates/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -86,20 +95,27 @@
         "state",
         "zip",
         "camp_type",
-        "activities",
         "age_min",
         "age_max",
         "description_short",
         "price_min",
         "price_max",
         "financial_aid",
-        "sessions"
+        "sessions",
+        "gender_policy"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Drafted by the listing tool from this page; rechecked 2026-11-13"
+    },
+    {
+      "url": "https://kabeyun.org/about-camp/activities/",
+      "checked": "2026-11-13",
+      "fields": [
+        "activities"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://kabeyun.org/for-parents/sessions-tuition-and-dates/",
       "kind": "html",
@@ -131,6 +147,21 @@
         "quote": "Adventure Trips"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://kabeyun.org/for-parents/sessions-tuition-and-dates/",
+        "https://kabeyun.org/about-camp/activities/",
+        "https://kabeyun.org/contact/"
+      ],
+      "changes": [
+        "Checked all 2027 session dates and tuition against the sessions page; they match.",
+        "Added gender_policy boys (the camp calls itself a boys summer camp and serves boys).",
+        "Filled activities from the Activities page (three emphases plus the named daily offerings) and gave them their own source.",
+        "Updated source checked dates to 2026-11-13."
+      ],
+      "open_questions": []
+    }
   }
 }

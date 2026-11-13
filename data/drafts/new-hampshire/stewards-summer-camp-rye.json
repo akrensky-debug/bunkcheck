@@ -91,7 +91,7 @@
   "sources": [
     {
       "url": "https://www.seacoastsciencecenter.org/camps/stewards-summer-camp/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -119,12 +119,11 @@
         "refund_policy_summary",
         "swim_waterfront_notes",
         "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.seacoastsciencecenter.org/camps/stewards-summer-camp/",
       "kind": "html",
@@ -150,6 +149,18 @@
       "Daily drop-off location for regular days"
     ],
     "low_confidence": [],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.seacoastsciencecenter.org/camps/stewards-summer-camp/",
+        "https://www.seacoastsciencecenter.org/camps/"
+      ],
+      "changes": [
+        "No field changes: grades 6-8, $475/$525 weekly rates, six 2026 sessions, no extended care, transportation for most trips, packed lunch, 50% refund rule, scholarship fund, address and contacts all match the camp page.",
+        "Kept season 2026: the camps page says 2027 dates will be posted later and Stewards registration opens January 10, 2027."
+      ],
+      "open_questions": []
+    }
   }
 }

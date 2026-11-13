@@ -6,9 +6,10 @@
   "registration_url": "https://ymcagranite.sgasoftware.com/Sales/Product?ProductID=62001-68999&ProductTypeID=610,650&DT=GroupedList&DL=100",
   "email": "ttorres@graniteymca.org",
   "phone": "603.232.8656",
+  "street_address": "30 Mechanic St",
   "city": "Manchester",
   "state": "NH",
-  "zip": null,
+  "zip": "03101",
   "camp_type": "day",
   "primary_categories": [
     "sports",
@@ -36,63 +37,63 @@
   "season_year": 2026,
   "sessions": [
     {
-      "name": "Week 1: Vacationland",
+      "name": "Downtown Summer Program Week 1: Vacationland",
       "start_date": "2026-06-22",
       "end_date": "2026-06-26",
       "price": null,
       "availability": "unknown"
     },
     {
-      "name": "Week 2: Movie Magic",
+      "name": "Downtown Summer Program Week 2: Movie Magic",
       "start_date": "2026-06-29",
       "end_date": "2026-07-03",
       "price": null,
       "availability": "unknown"
     },
     {
-      "name": "Week 3: Creature Feature",
+      "name": "Downtown Summer Program Week 3: Creature Feature",
       "start_date": "2026-07-06",
       "end_date": "2026-07-10",
       "price": null,
       "availability": "unknown"
     },
     {
-      "name": "Week 4: Out of This World",
+      "name": "Downtown Summer Program Week 4: Out of This World",
       "start_date": "2026-07-13",
       "end_date": "2026-07-17",
       "price": null,
       "availability": "unknown"
     },
     {
-      "name": "Week 5: Camp's Got Talent",
+      "name": "Downtown Summer Program Week 5: Camp's Got Talent",
       "start_date": "2026-07-20",
       "end_date": "2026-07-24",
       "price": null,
       "availability": "unknown"
     },
     {
-      "name": "Week 6: Heroes vs. Chaos",
+      "name": "Downtown Summer Program Week 6: Heroes vs. Chaos",
       "start_date": "2026-07-27",
       "end_date": "2026-07-31",
       "price": null,
       "availability": "unknown"
     },
     {
-      "name": "Week 7: Spirit Week",
+      "name": "Downtown Summer Program Week 7: Spirit Week",
       "start_date": "2026-08-03",
       "end_date": "2026-08-07",
       "price": null,
       "availability": "unknown"
     },
     {
-      "name": "Week 8: Under the Sea",
+      "name": "Downtown Summer Program Week 8: Under the Sea",
       "start_date": "2026-08-10",
       "end_date": "2026-08-14",
       "price": null,
       "availability": "unknown"
     },
     {
-      "name": "Week 9: Camp-lympics",
+      "name": "Downtown Summer Program Week 9: Camp-lympics",
       "start_date": "2026-08-17",
       "end_date": "2026-08-21",
       "price": null,
@@ -102,7 +103,7 @@
   "sources": [
     {
       "url": "https://www.graniteymca.org/camps/day-camp/manchester/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -123,12 +124,27 @@
         "extended_care",
         "financial_aid",
         "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
+    },
+    {
+      "url": "https://www.graniteymca.org/locations/manchester/",
+      "checked": "2026-11-13",
+      "fields": [
+        "street_address",
+        "zip"
+      ]
+    },
+    {
+      "url": "https://www.graniteymca.org/dev/wp-content/uploads/2024/01/Summer-Billing-Schedule.pdf",
+      "checked": "2026-11-13",
+      "fields": [
+        "refund_policy_summary"
+      ]
     }
   ],
+  "refund_policy_summary": "A $35 deposit per camper per week is nonrefundable. Cancel more than 6 weeks before the camp week for a full refund less the deposit; 3 to 6 weeks before, a $65 admin fee is also charged; less than 3 weeks before, no refund. Payment is due in full at registration.",
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.graniteymca.org/camps/day-camp/manchester/",
       "kind": "html",
@@ -156,6 +172,23 @@
     "low_confidence": [],
     "errors": [
       "missing required zip"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.graniteymca.org/camps/day-camp/manchester/",
+        "https://www.graniteymca.org/locations/manchester/",
+        "https://www.graniteymca.org/dev/wp-content/uploads/2024/01/Summer-Billing-Schedule.pdf",
+        "https://graniteymca.flowpaper.com/TGYDayCampBrochure/",
+        "https://www.graniteymca.org/contact-us/"
+      ],
+      "changes": [
+        "Added street address 30 Mechanic St and ZIP 03101 from the Granite YMCA of Manchester location page (the camp is at the Downtown Y).",
+        "Added the refund policy from the 2026 Summer Day Camp Billing Schedule PDF.",
+        "Renamed the nine weeks as Downtown Summer Program weeks; the camp page lists them under that program and 'Catch the Wave Into Summer! 2026 day camp registration', and the billing schedule confirms the 2026 dates.",
+        "Checked every other field against the camp page; all match. Prices stay empty: they are only in the flipbook brochure, which the fetcher can't read."
+      ],
+      "open_questions": []
+    }
   }
 }
