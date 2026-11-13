@@ -135,7 +135,7 @@ requests. Before a chat starts, and again after every model call:
   for today and will be back tomorrow. Search, your plan and your calendar still work." It logs
   an error once a day.
 - Days are US Eastern days.
-- Family and everyone totals live in Postgres (`ai_spend_daily`, migration 0019), added to
+- Family and everyone totals live in Postgres (`ai_spend_daily`, migration 0029), added to
   atomically, so they hold across deploys and replicas. The per-IP spend tally is in memory and
   backed by the everyone cap.
 
