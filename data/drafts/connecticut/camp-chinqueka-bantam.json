@@ -10,9 +10,35 @@
   "state": "CT",
   "zip": "06750",
   "camp_type": "sleepaway",
-  "description_short": "Overnight summer camp for girls in Bantam, Connecticut, with sessions from one week (Rookie) to a full eight-week season. Tuition includes meals, snacks, laundry, towel service, gratuities, canteen shop and all on-camp activities.",
+  "description_short": "Camp Chinqueka is an overnight summer camp for girls ages 7 to 16 in Bantam, Connecticut, with sessions from one week (Rookie) to a full eight-week season between June 27 and August 21, 2027. Activities range from waterskiing, sailing and climbing to dance, ceramics and horseback riding. Tuition includes meals, snacks, laundry, towel service, gratuities, the canteen shop and all on-camp activities.",
   "activities": [
-    "Horseback riding"
+    "Horseback riding (extra fee)",
+    "Climbing and zip line",
+    "High ropes",
+    "Archery",
+    "Go-karts",
+    "Waterskiing",
+    "Sailing",
+    "Canoeing",
+    "Kayaking and rowing",
+    "Paddleboarding",
+    "Swimming",
+    "Synchronized swimming",
+    "Soccer",
+    "Field hockey",
+    "Tennis",
+    "Gymnastics",
+    "Cheerleading",
+    "Dance",
+    "Drama",
+    "Music",
+    "Ceramics",
+    "Arts and crafts",
+    "Jewelry making",
+    "Photography",
+    "Culinary arts",
+    "STEM",
+    "Overnight camping"
   ],
   "price_min": 2675,
   "price_max": 13230,
@@ -20,6 +46,15 @@
   "meals_included": true,
   "refund_policy_summary": "Half of the deposit cannot be refunded under any circumstances, and the whole deposit becomes non-refundable after 12/31/26. Balances are due May 1. Unused canteen money is not refunded.",
   "season_year": 2027,
+  "gender_policy": "girls",
+  "age_min": 7,
+  "age_max": 16,
+  "primary_categories": [
+    "sports",
+    "arts",
+    "adventure"
+  ],
+  "swim_waterfront_notes": "Campers get swim instruction from American Red Cross certified counselors, from Level 1 to Lifeguard Training, plus free swim in the camp's lake. Waterskiing, shared with Camp Awosting, is on Bantam Lake, 7 miles away.",
   "sessions": [
     {
       "name": "1 Week Rookie Session 1",
@@ -130,7 +165,7 @@
   "sources": [
     {
       "url": "https://chinqueka.com/dates-rates/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -142,7 +177,6 @@
         "state",
         "zip",
         "camp_type",
-        "activities",
         "description_short",
         "price_min",
         "price_max",
@@ -150,12 +184,35 @@
         "meals_included",
         "refund_policy_summary",
         "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
+    },
+    {
+      "url": "https://chinqueka.com/",
+      "checked": "2026-11-13",
+      "fields": [
+        "gender_policy"
+      ]
+    },
+    {
+      "url": "https://chinqueka.com/future-families/faqs/",
+      "checked": "2026-11-13",
+      "fields": [
+        "age_min",
+        "age_max"
+      ]
+    },
+    {
+      "url": "https://chinqueka.com/activities/",
+      "checked": "2026-11-13",
+      "fields": [
+        "activities",
+        "primary_categories",
+        "swim_waterfront_notes"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://chinqueka.com/dates-rates/",
       "kind": "html",
@@ -180,6 +237,23 @@
       "How full each session currently is"
     ],
     "low_confidence": [],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://chinqueka.com/dates-rates/",
+        "https://chinqueka.com/",
+        "https://chinqueka.com/future-families/faqs/",
+        "https://chinqueka.com/activities/"
+      ],
+      "changes": [
+        "Checked all 15 sessions, Early Bird and regular rates, deposits and refund terms against the dates and rates page: all match.",
+        "Added ages 7 to 16 (FAQ and the home page banner; one home page paragraph says 6-16) and gender_policy girls.",
+        "Replaced the one-item activity list with 27 activities from the activities page, marking horseback riding as an extra fee ($80 an hour).",
+        "Added primary categories (sports, arts, adventure) and a swim note (Red Cross swim instruction in the camp lake, waterskiing on Bantam Lake).",
+        "Added ages, dates and activities to the description."
+      ],
+      "open_questions": []
+    }
   }
 }

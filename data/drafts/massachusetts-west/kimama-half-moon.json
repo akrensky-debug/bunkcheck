@@ -2,13 +2,15 @@
   "slug": "kimama-half-moon",
   "name": "Kimama Half Moon",
   "operator_name": "Camp Kimama",
-  "website_url": "https://www.eng.campkimama.org/copy-of-half-moon-night-camp",
+  "website_url": "https://www.kimamahalfmoon.org/",
   "registration_url": "https://kimamahalfmoon.campmanagement.com/p/campers/login_m.php",
   "email": "usa@campkimama.org",
   "phone": "+1-646-779-5579",
-  "city": null,
+  "street_address": "18 Camp Half-Moon Rd",
+  "city": "Monterey",
   "state": "MA",
-  "zip": null,
+  "zip": "01245",
+  "camp_type": "sleepaway",
   "primary_categories": [
     "sports"
   ],
@@ -22,30 +24,101 @@
   ],
   "swim_waterfront_notes": "Camp is set on a lake on the property; waterskiing and wakeboarding are offered. Swim instruction and lifeguard details are not stated.",
   "season_year": 2026,
+  "price_min": 1800,
+  "price_max": 7950,
+  "transportation": true,
+  "sessions": [
+    {
+      "name": "Sleepaway First Session (24 days)",
+      "start_date": "2026-06-22",
+      "end_date": "2026-07-15",
+      "price": 7950,
+      "availability": "unknown"
+    },
+    {
+      "name": "Sleepaway Second Session (24 days)",
+      "start_date": "2026-07-20",
+      "end_date": "2026-08-12",
+      "price": 7950,
+      "availability": "unknown"
+    },
+    {
+      "name": "Sleepaway Third Session (10 days)",
+      "start_date": "2026-08-16",
+      "end_date": "2026-08-25",
+      "price": 3500,
+      "availability": "unknown"
+    },
+    {
+      "name": "Minimoon A, 6-day sleepaway (entering grades 1-4)",
+      "start_date": "2026-06-22",
+      "end_date": "2026-06-27",
+      "price": 1800,
+      "availability": "unknown"
+    },
+    {
+      "name": "Minimoon B, 6-day sleepaway (entering grades 1-4)",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-04",
+      "price": 1800,
+      "availability": "unknown"
+    }
+  ],
   "sources": [
     {
       "url": "https://www.eng.campkimama.org/copy-of-half-moon-night-camp",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
-        "website_url",
         "registration_url",
         "email",
         "phone",
         "state",
         "primary_categories",
         "activities",
-        "age_min",
-        "age_max",
         "description_short",
         "swim_waterfront_notes"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
+    },
+    {
+      "url": "https://www.kimamahalfmoon.org/",
+      "checked": "2026-11-13",
+      "fields": [
+        "website_url"
+      ]
+    },
+    {
+      "url": "https://www.kimamahalfmoon.org/contact",
+      "checked": "2026-11-13",
+      "fields": [
+        "street_address",
+        "city",
+        "zip"
+      ]
+    },
+    {
+      "url": "https://www.kimamahalfmoon.org/sleepawaycamp",
+      "checked": "2026-11-13",
+      "fields": [
+        "camp_type",
+        "age_min",
+        "age_max"
+      ]
+    },
+    {
+      "url": "https://www.kimamahalfmoon.org/datesrates2026",
+      "checked": "2026-11-13",
+      "fields": [
+        "price_min",
+        "price_max",
+        "transportation",
+        "sessions"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.eng.campkimama.org/copy-of-half-moon-night-camp",
       "kind": "html",
@@ -97,6 +170,32 @@
       "missing required camp_type",
       "camp_type must be one of ['day', 'sleepaway', 'specialty']",
       "city None, MA is not in cities.py"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.eng.campkimama.org/copy-of-half-moon-night-camp",
+        "https://www.kimamahalfmoon.org/",
+        "https://www.kimamahalfmoon.org/datesrates2026",
+        "https://www.kimamahalfmoon.org/contact",
+        "https://www.kimamahalfmoon.org/sleepawaycamp",
+        "https://www.kimamahalfmoon.org/daycamp",
+        "https://www.kimamahalfmoon.org/about",
+        "https://www.kimamahalfmoon.org/campinfo"
+      ],
+      "changes": [
+        "website_url changed from the Israeli parent site's 'copy-of-half-moon-night-camp' page to the camp's own site, kimamahalfmoon.org.",
+        "Address filled from the Contact page summer address: 18 Camp Half-Moon Rd, Monterey, MA 01245 (on Lake Buel in the Berkshires).",
+        "camp_type set to sleepaway: the main program is a sleepaway camp for ages 6-17 (Sleep Away Camp page); a separate day camp for ages 3-14 also runs on site.",
+        "Added the five 2026 sleepaway sessions from the Dates & Rates page: two 24-day sessions at $7,950, a 10-day session at $3,500, and two 6-day Minimoon sessions at $1,800 (entering grades 1-4). price_min 1800, price_max 7950.",
+        "transportation true: bus from Great Barrington, South Egremont, Lenox and Hillsdale at $150 per child per week, plus airport and NY/NJ/Boston transfers.",
+        "season_year stays 2026, the season the dated sessions belong to."
+      ],
+      "open_questions": [
+        "Monterey, MA is not in cities.py, so this can't pass check_draft until Monterey is added there (it is not Great Barrington, and I did not touch cities.py).",
+        "The camp's pages disagree on dates: Dates & Rates says sleepaway runs June 22 to July 15 / July 20 to Aug 12 / Aug 16 to 25, while the Sleep Away Camp page says June 23 to July 14 / July 21 to Aug 11 / Aug 18 to 25, and the Day Camp page shows weeks from an older season. I used Dates & Rates. Its '2027' block lists day camp weeks starting Saturday June 26 (and 'Aug 7 to Aug 1'), which fit the 2023 calendar (Monday June 26, 2023), not 2027, so I did not use them. Publish with 2026 sessions, or wait for clean 2027 dates?",
+        "Two contacts: the Israeli parent site gives +1-646-779-5579 and usa@campkimama.org (kept, as drafted); the camp's own Contact page gives +1 (413) 528-0940 and halfmoon@campkimama.org. Switch to the camp's own?"
+      ]
+    }
   }
 }

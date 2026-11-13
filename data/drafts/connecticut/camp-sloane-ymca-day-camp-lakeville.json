@@ -3,7 +3,7 @@
   "name": "Camp Sloane YMCA Day Camp",
   "operator_name": "Camp Sloane YMCA",
   "website_url": "https://campsloane.org/day-camp",
-  "registration_url": "https://campsloane.org/dates-and-rates",
+  "registration_url": "https://campsloane.campintouch.com/ui/forms/application/camper/App",
   "email": "info@campsloane.org",
   "phone": "(860) 435-2557",
   "street_address": "124 Indian Mountain Rd",
@@ -18,7 +18,7 @@
   ],
   "grade_min": 0,
   "grade_max": 6,
-  "description_short": "A day camp for children entering grades K-6, run 8:45am-4:45pm at Camp Sloane YMCA in Lakeville, CT. Campers are grouped by rising grade and do sports, arts and crafts, boating, adventure activities and daily swim lessons.",
+  "description_short": "A day camp for children entering grades K-6, run 8:45am-4:45pm at Camp Sloane YMCA in Lakeville, CT. Campers are grouped by rising grade and do sports, arts and crafts, boating, adventure activities and daily swim lessons. Lunch and an afternoon snack are included.",
   "activities": [
     "Sports",
     "Arts and crafts",
@@ -27,13 +27,13 @@
     "Instructional swimming",
     "Horseback riding lessons (extra fee)"
   ],
-  "price_per_week": 545,
-  "price_min": 465,
-  "price_max": 1085,
+  "price_per_week": 560,
+  "price_min": 480,
+  "price_max": 1115,
   "financial_aid": true,
   "extended_care": true,
   "meals_included": true,
-  "swim_waterfront_notes": "Swim lessons every day. Boating is one of the activities.",
+  "swim_waterfront_notes": "Instructional swim lessons every day. Boating is one of the day camp activities.",
   "season_year": 2027,
   "price_per": "week",
   "sessions": [
@@ -41,47 +41,46 @@
       "name": "Session A",
       "start_date": "2027-06-28",
       "end_date": "2027-07-09",
-      "price": 1085,
+      "price": 1115,
       "availability": "unknown"
     },
     {
       "name": "Session B",
       "start_date": "2027-07-12",
       "end_date": "2027-07-23",
-      "price": 1085,
+      "price": 1115,
       "availability": "unknown"
     },
     {
       "name": "Session C",
       "start_date": "2027-07-26",
       "end_date": "2027-08-06",
-      "price": 1085,
+      "price": 1115,
       "availability": "unknown"
     },
     {
       "name": "Session D",
       "start_date": "2027-08-09",
       "end_date": "2027-08-20",
-      "price": 1085,
+      "price": 1115,
       "availability": "unknown"
     },
     {
-      "name": "Session E",
+      "name": "Session E (1 week)",
       "start_date": "2027-08-23",
       "end_date": "2027-08-27",
-      "price": 545,
+      "price": 560,
       "availability": "unknown"
     }
   ],
   "sources": [
     {
       "url": "https://campsloane.org/day-camp",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
         "website_url",
-        "registration_url",
         "email",
         "phone",
         "street_address",
@@ -104,11 +103,19 @@
         "swim_waterfront_notes",
         "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Rechecked 2026-11-13; prices are Tier 1 (full cost) per session"
+    },
+    {
+      "url": "https://campsloane.org/dates-and-rates",
+      "checked": "2026-11-13",
+      "fields": [
+        "registration_url"
+      ],
+      "note": "'Register a New Camper' link"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://campsloane.org/day-camp",
       "kind": "html",
@@ -136,6 +143,22 @@
         "quote": "From sports to arts and crafts, boating to adventure"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://campsloane.org/day-camp",
+        "https://campsloane.org/dates-and-rates",
+        "https://campsloane.org/overnight-camp"
+      ],
+      "changes": [
+        "Session prices raised to the posted 2027 Tier 1 rates: $1,115 for 2 weeks (was $1,085) and $560 for Session E (was $545).",
+        "price_per_week 545 to 560 (the 1-week Tier 1 rate), price_min 465 to 480 (1-week Tier 3), price_max 1085 to 1115.",
+        "registration_url changed from the Dates & Rates page to the camp's registration form (campsloane.campintouch.com), linked as 'Register a New Camper'.",
+        "Description now says lunch and an afternoon snack are included, as the page states.",
+        "Other fields (grades K-6, hours, address, phone, email, before care $150 and after care $125 per session, $250 deposit, horseback riding extra) match the page."
+      ],
+      "open_questions": []
+    }
   }
 }

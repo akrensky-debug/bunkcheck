@@ -2,9 +2,9 @@
   "slug": "camp-sloane-ymca-lakeville",
   "name": "Camp Sloane YMCA",
   "website_url": "https://campsloane.org",
-  "registration_url": "https://campsloane.org/dates-and-rates",
+  "registration_url": "https://campsloane.campintouch.com/ui/forms/application/camper/App",
   "email": "info@campsloane.org",
-  "phone": "860-435-2557",
+  "phone": "(860) 435-2557",
   "street_address": "124 Indian Mountain Rd",
   "city": "Lakeville",
   "state": "CT",
@@ -12,50 +12,64 @@
   "camp_type": "sleepaway",
   "primary_categories": [
     "sports",
-    "nature"
+    "nature",
+    "outdoor"
   ],
-  "grade_min": 0,
+  "grade_min": 4,
   "grade_max": 11,
-  "description_short": "A YMCA camp in Lakeville, CT. It runs overnight camp in 1- and 2-week sessions for rising 4th–11th graders, with campers living in tents, plus a day camp for rising K–6th graders.",
+  "description_short": "Overnight YMCA camp in Lakeville, CT, for rising 4th-10th graders, with a LEAD teen leadership program for rising 11th graders. Campers live in platform tents in villages grouped by grade and choose their own activities, with riding and waterski lessons on offer. Four 2-week sessions, one 1-week session and a 2-week Riding Camp. The day camp is listed separately.",
   "activities": [
-    "Horse riding",
+    "Horseback riding",
     "Waterskiing",
-    "American Red Cross Lifeguard course",
+    "Swimming",
+    "High ropes and zip line",
+    "Gaga",
+    "Tennis",
+    "Basketball",
+    "Soccer",
+    "American Red Cross Lifeguard course (LEAD)",
     "Teen leadership (LEAD)"
   ],
-  "price_per_week": 560,
-  "price_min": 480,
+  "price_per_week": 1625,
+  "price_min": 1325,
   "price_max": 3495,
   "financial_aid": true,
   "season_year": 2027,
-  "price_per": "week",
+  "price_per": "session",
   "sessions": [
     {
-      "name": "Sleep-Away Session 1 (2 weeks, rising 4th-10th)",
+      "name": "Session 1 (2 weeks, rising 4th-10th)",
       "start_date": "2027-06-27",
       "end_date": "2027-07-10",
       "price": 3045,
       "availability": "unknown"
     },
     {
-      "name": "Sleep-Away Session 2 (2 weeks, rising 4th-10th)",
+      "name": "Session 2 (2 weeks, rising 4th-10th)",
       "start_date": "2027-07-11",
       "end_date": "2027-07-24",
       "price": 3045,
       "availability": "unknown"
     },
     {
-      "name": "Sleep-Away Session 3 (2 weeks, rising 4th-10th)",
+      "name": "Session 3 (2 weeks, rising 4th-10th)",
       "start_date": "2027-07-25",
       "end_date": "2027-08-07",
       "price": 3045,
       "availability": "unknown"
     },
     {
-      "name": "Sleep-Away Session 4 (2 weeks, rising 4th-10th)",
+      "name": "Session 4 (2 weeks, rising 4th-10th)",
       "start_date": "2027-08-08",
       "end_date": "2027-08-21",
       "price": 3045,
+      "availability": "unknown"
+    },
+    {
+      "name": "One Week Session (rising 4th-10th)",
+      "start_date": "2027-07-04",
+      "end_date": "2027-07-10",
+      "price": 1625,
       "availability": "unknown"
     },
     {
@@ -94,59 +108,24 @@
       "availability": "unknown"
     },
     {
-      "name": "Lifeguard A (for LEAD registrants)",
+      "name": "Lifeguard A (free, LEAD campers only)",
       "start_date": "2027-06-27",
       "end_date": "2027-07-03",
       "price": 0,
       "availability": "unknown"
     },
     {
-      "name": "Lifeguard B (for LEAD registrants)",
+      "name": "Lifeguard B (free, LEAD campers only)",
       "start_date": "2027-07-04",
       "end_date": "2027-07-10",
       "price": 0,
-      "availability": "unknown"
-    },
-    {
-      "name": "Day Camp Session A (rising K-6th)",
-      "start_date": "2027-06-28",
-      "end_date": "2027-07-09",
-      "price": 1115,
-      "availability": "unknown"
-    },
-    {
-      "name": "Day Camp Session B (rising K-6th)",
-      "start_date": "2027-07-12",
-      "end_date": "2027-07-23",
-      "price": 1115,
-      "availability": "unknown"
-    },
-    {
-      "name": "Day Camp Session C (rising K-6th)",
-      "start_date": "2027-07-26",
-      "end_date": "2027-08-06",
-      "price": 1115,
-      "availability": "unknown"
-    },
-    {
-      "name": "Day Camp Session D (rising K-6th)",
-      "start_date": "2027-08-09",
-      "end_date": "2027-08-20",
-      "price": 1115,
-      "availability": "unknown"
-    },
-    {
-      "name": "Day Camp Session E (1 week, rising K-6th)",
-      "start_date": "2027-08-23",
-      "end_date": "2027-08-27",
-      "price": 560,
       "availability": "unknown"
     }
   ],
   "sources": [
     {
       "url": "https://campsloane.org/dates-and-rates",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "website_url",
@@ -158,11 +137,8 @@
         "state",
         "zip",
         "camp_type",
-        "primary_categories",
-        "activities",
         "grade_min",
         "grade_max",
-        "description_short",
         "price_min",
         "price_max",
         "price_per_week",
@@ -170,11 +146,22 @@
         "financial_aid",
         "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Rechecked 2026-11-13; prices are Tier 1 (full cost) per session, price_min is the 1-week Tier 3 rate"
+    },
+    {
+      "url": "https://campsloane.org/overnight-camp",
+      "checked": "2026-11-13",
+      "fields": [
+        "primary_categories",
+        "activities",
+        "description_short",
+        "meals_included"
+      ],
+      "note": "Overnight camp page: tents, villages, daily schedule with breakfast, lunch and activities"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://campsloane.org/dates-and-rates",
       "kind": "html",
@@ -231,6 +218,27 @@
         "quote": "One Week Session June 4 - July 10 $1,635"
       }
     ],
-    "errors": []
-  }
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://campsloane.org/dates-and-rates",
+        "https://campsloane.org/overnight-camp",
+        "https://campsloane.org/day-camp"
+      ],
+      "changes": [
+        "Removed the five day camp sessions: the day camp has its own draft (camp-sloane-ymca-day-camp-lakeville), so this listing is now the overnight camp only.",
+        "Added the One Week Session, July 4-10, 2027, $1,625 (the draft had left it out because of a typo that is now fixed on the page).",
+        "grade_min 0 to 4 (overnight is rising 4th-11th; K-6 was the day camp).",
+        "price_per_week 560 to 1625 (the 1-week overnight Tier 1 rate), price_min 480 to 1325 (1-week Tier 3), price_per week to session.",
+        "meals_included set to true: the overnight daily schedule includes breakfast and lunch in camp.",
+        "registration_url changed to the camp's registration form (campsloane.campintouch.com).",
+        "Description rewritten for the overnight camp; activities filled out from the overnight page (riding, waterski, ropes, zip line and field sports).",
+        "Added 'outdoor' to primary_categories.",
+        "Phone written as on the page footer, (860) 435-2557."
+      ],
+      "open_questions": []
+    }
+  },
+  "meals_included": true
 }

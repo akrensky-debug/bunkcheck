@@ -16,30 +16,93 @@
     "arts",
     "nature"
   ],
+  "activities": [
+    "Swimming",
+    "Canoeing and kayaking",
+    "Archery",
+    "Arts and crafts",
+    "Nature",
+    "Sports and games",
+    "Music",
+    "Theater",
+    "Fishing",
+    "Barnyard animals"
+  ],
   "age_min": 4,
   "age_max": 15,
-  "description_short": "Weekday day camp (9 AM–5 PM) in Mashpee on Cape Cod for ages 6–15, with swimming, boating, archery, arts & crafts, nature and sports. A separate Sprouts program for ages 4–5 runs full or half days.",
-  "activities": [
-    "swimming",
-    "boating",
-    "archery",
-    "arts & crafts",
-    "nature",
-    "sports",
-    "games",
-    "singing songs (Sprouts)"
-  ],
-  "price_per_week": 590,
-  "price_min": 295,
-  "price_max": 590,
+  "description_short": "Weekday day camp in Mashpee on Cape Cod for ages 6 to 15, with swimming, boating, archery, arts and crafts, nature and sports. Sprouts, for ages 4 and 5, runs full or half days. Eight weekly sessions in summer 2027.",
+  "price_min": 305,
+  "price_max": 610,
+  "price_per_week": 610,
+  "price_per": "week",
   "transportation": false,
   "meals_included": false,
+  "refund_policy_summary": "$100 deposit per camper is non-refundable and non-transferable. Cancel by March 31, 2027: full refund minus the deposit and a $25 admin fee. April 1 to May 31, 2027: camp keeps the deposit plus 25% of tuition. June 1, 2027 or later: no refund. Prorated refunds for acute medical illness or injury with a doctor's note, at the camp's discretion. No refunds for early departures or late arrivals. Any balance is charged automatically on June 1, 2027.",
+  "aca_accredited": true,
+  "aca_source_url": "https://campfarley.com/about-us/general-information",
   "season_year": 2027,
-  "price_per": "week",
+  "sessions": [
+    {
+      "name": "Day Camp Week 1",
+      "start_date": "2027-06-28",
+      "end_date": "2027-07-02",
+      "price": 610,
+      "availability": "unknown"
+    },
+    {
+      "name": "Day Camp Week 2 (4 day week)",
+      "start_date": "2027-07-06",
+      "end_date": "2027-07-09",
+      "price": 485,
+      "availability": "unknown"
+    },
+    {
+      "name": "Day Camp Week 3",
+      "start_date": "2027-07-12",
+      "end_date": "2027-07-16",
+      "price": 610,
+      "availability": "unknown"
+    },
+    {
+      "name": "Day Camp Week 4",
+      "start_date": "2027-07-19",
+      "end_date": "2027-07-23",
+      "price": 610,
+      "availability": "unknown"
+    },
+    {
+      "name": "Day Camp Week 5",
+      "start_date": "2027-07-26",
+      "end_date": "2027-07-30",
+      "price": 610,
+      "availability": "unknown"
+    },
+    {
+      "name": "Day Camp Week 6",
+      "start_date": "2027-08-02",
+      "end_date": "2027-08-06",
+      "price": 610,
+      "availability": "unknown"
+    },
+    {
+      "name": "Day Camp Week 7",
+      "start_date": "2027-08-09",
+      "end_date": "2027-08-13",
+      "price": 610,
+      "availability": "unknown"
+    },
+    {
+      "name": "Day Camp Week 8",
+      "start_date": "2027-08-16",
+      "end_date": "2027-08-20",
+      "price": 610,
+      "availability": "unknown"
+    }
+  ],
   "sources": [
     {
       "url": "https://campfarley.com/camp-options/day-camp",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -52,30 +115,51 @@
         "state",
         "camp_type",
         "primary_categories",
-        "activities",
         "age_min",
         "age_max",
         "description_short",
+        "price_per_week",
         "price_min",
         "price_max",
-        "price_per_week",
         "price_per",
         "transportation",
         "meals_included"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
+    },
+    {
+      "url": "https://campfarley.com/rates-and-dates",
+      "checked": "2026-11-13",
+      "fields": [
+        "refund_policy_summary",
+        "sessions"
+      ]
+    },
+    {
+      "url": "https://campfarley.com/about-us/programs-and-activities",
+      "checked": "2026-11-13",
+      "fields": [
+        "activities"
+      ]
+    },
+    {
+      "url": "https://campfarley.com/about-us/general-information",
+      "checked": "2026-11-13",
+      "fields": [
+        "aca_accredited",
+        "aca_source_url"
+      ]
     },
     {
       "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=615+Route+130&city=Mashpee&state=MA&benchmark=Public_AR_Current&format=json",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "zip"
       ],
-      "note": "ZIP from the US Census geocoder for 615 STATE RTE 130, MASHPEE, MA, 02649"
+      "note": "ZIP from the US Census geocoder for 615 STATE RTE 130, MASHPEE, MA, 02649; the camp's pages give the street and town only"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://campfarley.com/camp-options/day-camp",
       "kind": "html",
@@ -121,6 +205,24 @@
         "quote": "Full Day Sprouts\n9:00 AM - 5:00 PM ($590/week)"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://campfarley.com/camp-options/day-camp",
+        "https://campfarley.com/rates-and-dates",
+        "https://campfarley.com/about-us/programs-and-activities",
+        "https://campfarley.com/about-us/general-information",
+        "https://campfarley.com"
+      ],
+      "changes": [
+        "Weekly rate $590 to $610 and Sprouts half day $295 to $305 (the camp raised its 2027 rates)",
+        "Added the eight 2027 day camp weeks, June 28 to Aug 20; week 2 is 4 days at $485",
+        "Added the 2027 refund policy and ACA accreditation",
+        "Activities now from the Programs page (canoeing, kayaking, fishing, music, theater, barnyard)",
+        "Kept hours out of the description: the day camp page says 9 am to 5 pm, the rates page says 8:30 to 5:30"
+      ],
+      "open_questions": []
+    }
   }
 }

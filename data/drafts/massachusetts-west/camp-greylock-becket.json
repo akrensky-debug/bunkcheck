@@ -3,6 +3,8 @@
   "name": "Camp Greylock",
   "website_url": "https://campgreylock.com/",
   "registration_url": "https://greylock.campintouch.com/ui/forms/application/camper/App",
+  "phone": "(413) 623-8921",
+  "street_address": "1525 Main Street",
   "city": "Becket",
   "state": "MA",
   "zip": "01223",
@@ -12,21 +14,60 @@
     "arts",
     "nature"
   ],
+  "activities": [
+    "Baseball",
+    "Basketball",
+    "Soccer",
+    "Lacrosse",
+    "Tennis",
+    "Golf",
+    "Flag football",
+    "Volleyball",
+    "Roller hockey",
+    "Swimming",
+    "Sailing",
+    "Boating and canoeing",
+    "Waterskiing",
+    "Wakeboarding",
+    "Tubing",
+    "Fishing",
+    "Archery",
+    "Fencing",
+    "Climbing wall",
+    "Ropes course",
+    "Zip line",
+    "Mountain biking",
+    "Hiking and overnights",
+    "Art",
+    "Drama",
+    "Radio and electronics",
+    "Nature",
+    "Trips"
+  ],
+  "gender_policy": "boys",
   "age_min": 6,
   "age_max": 16,
   "description_short": "A traditional overnight camp for boys ages 6 to 16 on Center Lake in Becket, Massachusetts. The program covers land sports, watersports, arts and adventure, and campers are split evenly between junior and senior groups.",
-  "activities": [
-    "Land sports",
-    "Watersports",
-    "Arts",
-    "Adventure",
-    "Outdoor activities"
+  "price_min": 11600,
+  "price_max": 17100,
+  "price_per": "session",
+  "swim_waterfront_notes": "Lakefront campus on Center Lake. Activities include swimming, sailing, boating, canoeing, waterskiing, wakeboarding and tubing.",
+  "aca_accredited": true,
+  "aca_source_url": "https://campgreylock.com/",
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Full season (7 weeks)",
+      "start_date": "2027-06-25",
+      "end_date": "2027-08-13",
+      "price": 17100,
+      "availability": "unknown"
+    }
   ],
-  "swim_waterfront_notes": "The camp is on Center Lake (lakefront campus of nearly 300 acres) and offers watersports. The page gives no details on swim instruction or waterfront supervision.",
   "sources": [
     {
       "url": "https://campgreylock.com/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "website_url",
@@ -35,25 +76,44 @@
         "state",
         "camp_type",
         "primary_categories",
-        "activities",
+        "gender_policy",
         "age_min",
         "age_max",
         "description_short",
-        "swim_waterfront_notes"
-      ],
-      "note": "Drafted by the listing tool from this page"
+        "aca_accredited",
+        "aca_source_url"
+      ]
     },
     {
-      "url": "https://www.census.gov/geographies/reference-files/time-series/geo/relationship-files.2020.html",
-      "checked": "2026-10-14",
+      "url": "https://campgreylock.com/about-greylock/activities",
+      "checked": "2026-11-13",
       "fields": [
+        "activities",
+        "swim_waterfront_notes"
+      ]
+    },
+    {
+      "url": "https://campgreylock.com/dates-fees",
+      "checked": "2026-11-13",
+      "fields": [
+        "price_min",
+        "price_max",
+        "price_per",
+        "sessions"
+      ]
+    },
+    {
+      "url": "https://campgreylock.com/contact-us",
+      "checked": "2026-11-13",
+      "fields": [
+        "phone",
+        "street_address",
         "zip"
-      ],
-      "note": "Becket, MA sits inside one ZIP code (2020 Census ZCTA relationship file)"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://campgreylock.com/",
       "kind": "html",
@@ -81,6 +141,23 @@
     "low_confidence": [],
     "errors": [
       "missing required season_year"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://campgreylock.com/",
+        "https://campgreylock.com/dates-fees",
+        "https://campgreylock.com/contact-us",
+        "https://campgreylock.com/about-greylock/activities"
+      ],
+      "changes": [
+        "Added season 2027 and the full season session, June 25 to Aug 13, 2027, $17,100",
+        "Added tuition range $11,600 (4 weeks) to $17,100 (7 weeks); the page gives no dates for the 4 and 5 week terms, so they are not listed as sessions",
+        "Added street address 1525 Main Street and summer phone (413) 623-8921; zip 01223 now sourced to the camp's contact page instead of the Census file",
+        "Added boys only and ACA accreditation, both stated on the homepage",
+        "Activities now taken from the camp's Activities page; swim note rewritten from it"
+      ],
+      "open_questions": []
+    }
   }
 }
