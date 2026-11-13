@@ -167,7 +167,7 @@ def apply_skip(profile: dict[str, Any], field: BriefField, today: date, *, not_s
     profile = copy.deepcopy(profile)
     meta = _meta(profile)
     keep, drop = ("not_sure", "skipped") if not_sure else ("skipped", "not_sure")
-    meta[keep][field] = _now()
+    meta[keep][field] = today.isoformat()  # the caller's day, so "not the same sitting" is testable
     meta[drop].pop(field, None)
     _guess(profile, field, today)
     return profile
