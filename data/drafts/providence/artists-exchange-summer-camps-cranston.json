@@ -9,7 +9,7 @@
   "city": "Cranston",
   "state": "RI",
   "zip": "02910",
-  "camp_type": "specialty",
+  "camp_type": "day",
   "primary_categories": [
     "arts",
     "performing_arts",
@@ -43,7 +43,7 @@
   "sources": [
     {
       "url": "https://www.artists-exchange.org/summer-camps",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -126,7 +126,22 @@
       }
     ],
     "errors": [],
-    "first_pass": {
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.artists-exchange.org/summer-camps"
+      ],
+      "changes": [
+        "No field changes: name, contacts, address (footer), ages 6-14, prices $365/$292, extended care, scholarships and cancellation policy all match the page."
+      ],
+      "open_questions": [
+        "Page header says 'Registration Opens February 2, 12pm' with no year; unclear whether this is the 2026 or the 2027 opening.",
+        "No 2027 session dates or prices posted; draft stays on 2026 (page says 'For the 2026 season').",
+        "Registration is through care.com but the page gives no registration link, so registration_url stays empty."
+      ]
+    },
+    "earlier_pass": {
+      "status": "ready",
       "by": "Claude",
       "date": "2026-10-27",
       "page_checked": "https://www.artists-exchange.org/summer-camps",
@@ -136,6 +151,19 @@
       ],
       "for_andrew": [
         "Page has no session dates for 2026, only 'Registration Opens February 2'"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.artists-exchange.org/summer-camps",
+      "changes": [
+        "No field changes: name, contacts, address (footer), ages 6-14, prices $365/$292, extended care, scholarships and cancellation policy all match the page."
+      ],
+      "for_andrew": [
+        "Page header says 'Registration Opens February 2, 12pm' with no year; unclear whether this is the 2026 or the 2027 opening.",
+        "No 2027 session dates or prices posted; draft stays on 2026 (page says 'For the 2026 season').",
+        "Registration is through care.com but the page gives no registration link, so registration_url stays empty."
       ]
     }
   }

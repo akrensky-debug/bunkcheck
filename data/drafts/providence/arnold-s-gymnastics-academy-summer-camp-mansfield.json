@@ -80,7 +80,7 @@
   "sources": [
     {
       "url": "https://www.arnoldsgymnastics.com/camps",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -105,7 +105,7 @@
     }
   ],
   "review": {
-    "status": "needs_andrew",
+    "status": "ready",
     "source": {
       "url": "https://www.arnoldsgymnastics.com/camps",
       "kind": "html",
@@ -176,7 +176,24 @@
       }
     ],
     "errors": [],
-    "first_pass": {
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.arnoldsgymnastics.com/camps",
+        "https://www.arnoldsgymnastics.com/portal/summer-camp"
+      ],
+      "changes": [
+        "Removed the two Move Up Skills Clinic sessions: they are 1-hour Wednesday skill classes for team-track gymnasts, not camp, and the page says Wednesdays July 16/23/30 and Aug 6/13/20, which fall on Thursdays in 2026 (Wednesdays in 2025), so those dates are likely stale.",
+        "Confirmed all other fields (name, contact, address, ages 3+/4+, 15/95, seven weekly themes and dates) against the camps page on 2026-11-12."
+      ],
+      "open_questions": [
+        "Page does not say whether $215 half day / $395 full day are per-week rates; price_per_week left blank.",
+        "Header says JULY 13 - AUGUST 27 but Week 7 is listed Aug 24 - Aug 28; Week 7 end date kept as Aug 28.",
+        "No 2027 dates or registration opening posted."
+      ]
+    },
+    "earlier_pass": {
+      "status": "needs_andrew",
       "by": "Claude",
       "date": "2026-10-27",
       "page_checked": "https://www.arnoldsgymnastics.com/camps",
@@ -188,6 +205,20 @@
         "Dates conflict: header says '7 WEEKS - JULY 13- AUGUST 27' but Week 7 is listed as 'August 24 - August 28' (weeks 1-6 run Mon-Thu); confirm Week 7 end date",
         "$215 half day / $395 full day: page does not say if these are per week or for all 7 weeks, so price_per / price_per_week left null",
         "camp_type kept as day; it is gymnastics/ninja focused, so specialty is also defensible"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.arnoldsgymnastics.com/camps",
+      "changes": [
+        "Removed the two Move Up Skills Clinic sessions: they are 1-hour Wednesday skill classes for team-track gymnasts, not camp, and the page says Wednesdays July 16/23/30 and Aug 6/13/20, which fall on Thursdays in 2026 (Wednesdays in 2025), so those dates are likely stale.",
+        "Confirmed all other fields (name, contact, address, ages 3+/4+, 15/95, seven weekly themes and dates) against the camps page on 2026-11-12."
+      ],
+      "for_andrew": [
+        "Page does not say whether $215 half day / $395 full day are per-week rates; price_per_week left blank.",
+        "Header says JULY 13 - AUGUST 27 but Week 7 is listed Aug 24 - Aug 28; Week 7 end date kept as Aug 28.",
+        "No 2027 dates or registration opening posted."
       ]
     }
   }

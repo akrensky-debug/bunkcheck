@@ -11,8 +11,7 @@
   "zip": "02050",
   "camp_type": "specialty",
   "primary_categories": [
-    "sports",
-    "nature"
+    "sports"
   ],
   "age_min": 7,
   "age_max": 12,
@@ -25,61 +24,68 @@
   ],
   "refund_policy_summary": "The 10% deposit is non-refundable. Cancel 60 or more days before the session starts for a 90% refund, or 30–59 days before for a 50% refund. There are no refunds within 30 days of the session, during it, or for missed days. Everything is refunded if the camp cancels for public health reasons. You can switch sessions free of charge if space allows.",
   "swim_waterfront_notes": "Campers surf daily in the ocean at Rexhame Beach, staying out as long as conditions allow. Session times are set by the tide.",
-  "season_year": 2026,
+  "season_year": 2027,
   "sessions": [
     {
-      "name": "Week of 6/29 (7am-11am)",
-      "start_date": "2026-06-29",
-      "end_date": "2026-07-03",
+      "name": "Week 1 (7:30am-11:30am)",
+      "start_date": "2027-06-21",
+      "end_date": "2027-06-25",
       "price": null,
       "availability": "unknown"
     },
     {
-      "name": "Week of 7/6 (10am-2pm)",
-      "start_date": "2026-07-06",
-      "end_date": "2026-07-10",
+      "name": "Week 2 (12:30pm-4:30pm)",
+      "start_date": "2027-06-28",
+      "end_date": "2027-07-02",
       "price": null,
       "availability": "unknown"
     },
     {
-      "name": "Week of 7/13 (3:30pm-7:30pm)",
-      "start_date": "2026-07-13",
-      "end_date": "2026-07-17",
+      "name": "Week 3 (7:00am-11:00am)",
+      "start_date": "2027-07-05",
+      "end_date": "2027-07-09",
       "price": null,
       "availability": "unknown"
     },
     {
-      "name": "Week of 7/20 (10am-2pm)",
-      "start_date": "2026-07-20",
-      "end_date": "2026-07-24",
+      "name": "Week 4 (1:00pm-5:00pm)",
+      "start_date": "2027-07-12",
+      "end_date": "2027-07-16",
       "price": null,
       "availability": "unknown"
     },
     {
-      "name": "Week of 7/27 (3:30pm-7:30pm)",
-      "start_date": "2026-07-27",
-      "end_date": "2026-07-31",
+      "name": "Week 5 (7:00am-11:00am)",
+      "start_date": "2027-07-19",
+      "end_date": "2027-07-23",
       "price": null,
       "availability": "unknown"
     },
     {
-      "name": "Week of 8/3 (9am-1pm)",
-      "start_date": "2026-08-03",
-      "end_date": "2026-08-07",
+      "name": "Week 6 (11:00am-3:00pm)",
+      "start_date": "2027-07-26",
+      "end_date": "2027-07-30",
       "price": null,
       "availability": "unknown"
     },
     {
-      "name": "Week of 8/10 (3pm-7pm)",
-      "start_date": "2026-08-10",
-      "end_date": "2026-08-14",
+      "name": "Week 7 (3:30pm-7:30pm)",
+      "start_date": "2027-08-02",
+      "end_date": "2027-08-06",
       "price": null,
       "availability": "unknown"
     },
     {
-      "name": "Week of 8/17 (9am-1pm)",
-      "start_date": "2026-08-17",
-      "end_date": "2026-08-21",
+      "name": "Week 8 (11:30am-3:30pm)",
+      "start_date": "2027-08-09",
+      "end_date": "2027-08-13",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 9 (3:30pm-7:30pm)",
+      "start_date": "2027-08-16",
+      "end_date": "2027-08-20",
       "price": null,
       "availability": "unknown"
     }
@@ -87,7 +93,7 @@
   "sources": [
     {
       "url": "https://levitatecamps.com/warrior-surf-camp/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -106,13 +112,14 @@
         "description_short",
         "refund_policy_summary",
         "swim_waterfront_notes",
-        "sessions"
+        "sessions",
+        "secondary_categories"
       ],
       "note": "Drafted by the listing tool from this page"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://levitatecamps.com/warrior-surf-camp/",
       "kind": "html",
@@ -139,6 +146,43 @@
       "Support for children with special needs"
     ],
     "low_confidence": [],
-    "errors": []
-  }
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://levitatecamps.com/warrior-surf-camp/",
+        "https://levitatecamps.com/registration/",
+        "https://levitatecamps.com/faq/"
+      ],
+      "changes": [
+        "Updated to the 2027 season: the page now lists 9 weeks, Monday 6/21 to Friday 8/20, under a '2027 Camp Registration January 22 9AM' banner (the weekdays match 2027), replacing the 8 weeks of 2026",
+        "Categories: nature replaced by outdoor and swimming as secondary (surfing and beach activities at Rexhame Beach); sports stays primary",
+        "Confirmed ages 7-12, 4-hour tide-dependent sessions, Rexhame Beach address, UltraCamp registration link, info@ email and refund policy on the camp, registration and FAQ pages",
+        "Re-fetched as BunkcheckBot on 2026-11-12: confirmed"
+      ],
+      "open_questions": [
+        "No price is posted on any Levitate page (shop product link redirects back to the camp page)",
+        "Some sessions are Monday-Thursday (4 days) but the page doesn't say which"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://levitatecamps.com/warrior-surf-camp/",
+      "changes": [
+        "Updated to the 2027 season: the page now lists 9 weeks, Monday 6/21 to Friday 8/20, under a '2027 Camp Registration January 22 9AM' banner (the weekdays match 2027), replacing the 8 weeks of 2026",
+        "Categories: nature replaced by outdoor and swimming as secondary (surfing and beach activities at Rexhame Beach); sports stays primary",
+        "Confirmed ages 7-12, 4-hour tide-dependent sessions, Rexhame Beach address, UltraCamp registration link, info@ email and refund policy on the camp, registration and FAQ pages",
+        "Re-fetched as BunkcheckBot on 2026-11-12: confirmed"
+      ],
+      "for_andrew": [
+        "No price is posted on any Levitate page (shop product link redirects back to the camp page)",
+        "Some sessions are Monday-Thursday (4 days) but the page doesn't say which"
+      ]
+    }
+  },
+  "secondary_categories": [
+    "outdoor",
+    "swimming"
+  ]
 }

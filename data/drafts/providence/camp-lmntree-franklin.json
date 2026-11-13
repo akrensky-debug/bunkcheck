@@ -1,7 +1,7 @@
 {
   "slug": "camp-lmntree-franklin",
   "name": "Camp LMNTREE",
-  "operator_name": "elementreehouse",
+  "operator_name": "The Elemen-Tree House",
   "website_url": "https://www.elementreehouse.com/summer-camp",
   "phone": "(508) 541-3998",
   "street_address": "838 Upper Union Street",
@@ -12,7 +12,7 @@
   "primary_categories": [
     "general"
   ],
-  "description_short": "A full-summer day camp in Franklin, MA with weekly themes, field trips, group games, free swim, and arts and crafts. It runs from the last day of the school year to the day before the next school year begins, 7:00 am to 6:00 pm on weekdays.",
+  "description_short": "Full-summer day camp at The Elemen-Tree House in Franklin, MA, with weekly themes, field trips, group games, free swim with a certified lifeguard on duty, and arts and crafts. Weekly sessions from the last day of school; full and part time campers welcome. Summer hours 7:00 am to 6:00 pm.",
   "activities": [
     "group games",
     "free swim",
@@ -24,103 +24,43 @@
   "sources": [
     {
       "url": "https://www.elementreehouse.com/summer-camp",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
-        "operator_name",
         "website_url",
-        "phone",
-        "street_address",
-        "city",
-        "state",
-        "zip",
         "camp_type",
         "primary_categories",
         "activities",
         "description_short",
         "swim_waterfront_notes"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Summer camp page"
+    },
+    {
+      "url": "https://www.elementreehouse.com/contact-and-tuition",
+      "checked": "2026-11-12",
+      "fields": [
+        "operator_name",
+        "phone",
+        "email",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "price_min",
+        "price_max",
+        "price_per_week",
+        "price_per"
+      ],
+      "note": "Contact and Tuition page: Summer Camp weekly tuition, one child, 4/5 days $349.00 ... 1 day $87.00"
     },
     {
       "url": "https://www.elementreehouse.com/camp-schedule",
-      "checked": "2026-10-27",
+      "checked": "2026-11-12",
       "fields": [
         "sessions"
-      ]
-    }
-  ],
-  "season_year": 2026,
-  "sessions": [
-    {
-      "name": "Week 1: School's Out!",
-      "start_date": "2026-06-22",
-      "end_date": "2026-06-26",
-      "price": null,
-      "availability": "unknown"
-    },
-    {
-      "name": "Summer Kick Off",
-      "start_date": "2026-07-06",
-      "end_date": "2026-07-10",
-      "price": null,
-      "availability": "unknown"
-    },
-    {
-      "name": "Fun & Fitness",
-      "start_date": "2026-07-13",
-      "end_date": "2026-07-17",
-      "price": null,
-      "availability": "unknown"
-    },
-    {
-      "name": "Carnival Week",
-      "start_date": "2026-07-20",
-      "end_date": "2026-07-24",
-      "price": null,
-      "availability": "unknown"
-    },
-    {
-      "name": "Down on the Farm",
-      "start_date": "2026-07-27",
-      "end_date": "2026-07-31",
-      "price": null,
-      "availability": "unknown"
-    },
-    {
-      "name": "Welcome To The Jungle",
-      "start_date": "2026-08-03",
-      "end_date": "2026-08-07",
-      "price": null,
-      "availability": "unknown"
-    },
-    {
-      "name": "Super Soaked",
-      "start_date": "2026-08-10",
-      "end_date": "2026-08-14",
-      "price": null,
-      "availability": "unknown"
-    },
-    {
-      "name": "Up in the Air",
-      "start_date": "2026-08-17",
-      "end_date": "2026-08-21",
-      "price": null,
-      "availability": "unknown"
-    },
-    {
-      "name": "Express Yourself",
-      "start_date": "2026-08-24",
-      "end_date": "2026-08-28",
-      "price": null,
-      "availability": "unknown"
-    },
-    {
-      "name": "Recharge and Relax",
-      "start_date": "2026-08-31",
-      "end_date": "2026-09-04",
-      "price": null,
-      "availability": "unknown"
+      ],
+      "note": "Camp Schedule page: SUMMER 2026 Schedule, weekly themes June 22 to Sept 4, closed June 29 to July 3; session price is the 4/5-day one-child weekly rate"
     }
   ],
   "review": {
@@ -149,20 +89,30 @@
       "ACA accreditation",
       "Support for children with special needs"
     ],
-    "low_confidence": [
-      {
-        "field": "operator_name",
-        "confidence": 0.6,
-        "quote": "SUMMER CAMP | elementreehouse"
-      },
-      {
-        "field": "primary_categories",
-        "confidence": 0.5,
-        "quote": "arts and crafts"
-      }
-    ],
+    "low_confidence": [],
     "errors": [],
-    "first_pass": {
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.elementreehouse.com/summer-camp",
+        "https://www.elementreehouse.com/camp-schedule",
+        "https://www.elementreehouse.com/contact-and-tuition",
+        "https://www.elementreehouse.com/summer-camp-blog"
+      ],
+      "changes": [
+        "Added season_year 2026 and the ten 2026 weekly sessions (June 22 to Sept 4, closed June 29 to July 3) from the Camp Schedule page.",
+        "Added weekly tuition from the Contact and Tuition page: $87 (1 day) to $349 (4/5 days) per week for one child; $349 per week.",
+        "Operator corrected to The Elemen-Tree House; added email lmntree@verizon.net.",
+        "Primary category changed from arts to general (a general day camp with weekly themes, swim and field trips).",
+        "Moved phone and address sources to the Contact and Tuition page."
+      ],
+      "open_questions": [
+        "Ages are not stated (the center serves preschool and school-age children); age_min/age_max left null.",
+        "Week of July 10 closes at noon on Friday; Aug 10 to 14 field trip TBD. No 2027 schedule or registration date posted."
+      ]
+    },
+    "earlier_pass": {
+      "status": "ready",
       "by": "Claude",
       "date": "2026-10-27",
       "page_checked": "https://www.elementreehouse.com/summer-camp",
@@ -174,6 +124,100 @@
       "for_andrew": [
         "No ages or prices on the summer camp or schedule pages (Contact and Tuition page not checked)"
       ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.elementreehouse.com/summer-camp",
+      "changes": [
+        "Added season_year 2026 and the ten 2026 weekly sessions (June 22 to Sept 4, closed June 29 to July 3) from the Camp Schedule page.",
+        "Added weekly tuition from the Contact and Tuition page: $87 (1 day) to $349 (4/5 days) per week for one child; $349 per week.",
+        "Operator corrected to The Elemen-Tree House; added email lmntree@verizon.net.",
+        "Primary category changed from arts to general (a general day camp with weekly themes, swim and field trips).",
+        "Moved phone and address sources to the Contact and Tuition page."
+      ],
+      "for_andrew": [
+        "Ages are not stated (the center serves preschool and school-age children); age_min/age_max left null.",
+        "Week of July 10 closes at noon on Friday; Aug 10 to 14 field trip TBD. No 2027 schedule or registration date posted."
+      ]
     }
-  }
+  },
+  "email": "lmntree@verizon.net",
+  "price_min": 87,
+  "price_max": 349,
+  "price_per_week": 349,
+  "price_per": "week",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "School's Out! (first week of camp)",
+      "start_date": "2026-06-22",
+      "end_date": "2026-06-26",
+      "price": 349,
+      "availability": "unknown"
+    },
+    {
+      "name": "Summer Kick Off",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": 349,
+      "availability": "unknown"
+    },
+    {
+      "name": "Fun & Fitness",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": 349,
+      "availability": "unknown"
+    },
+    {
+      "name": "Carnival Week",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": 349,
+      "availability": "unknown"
+    },
+    {
+      "name": "Down on the Farm",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": 349,
+      "availability": "unknown"
+    },
+    {
+      "name": "Welcome To The Jungle",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": 349,
+      "availability": "unknown"
+    },
+    {
+      "name": "Super Soaked",
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-14",
+      "price": 349,
+      "availability": "unknown"
+    },
+    {
+      "name": "Up in the Air",
+      "start_date": "2026-08-17",
+      "end_date": "2026-08-21",
+      "price": 349,
+      "availability": "unknown"
+    },
+    {
+      "name": "Express Yourself",
+      "start_date": "2026-08-24",
+      "end_date": "2026-08-28",
+      "price": 349,
+      "availability": "unknown"
+    },
+    {
+      "name": "Recharge and Relax",
+      "start_date": "2026-08-31",
+      "end_date": "2026-09-04",
+      "price": 349,
+      "availability": "unknown"
+    }
+  ]
 }

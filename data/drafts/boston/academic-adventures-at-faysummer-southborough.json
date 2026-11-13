@@ -18,18 +18,18 @@
   ],
   "age_min": 10,
   "age_max": 15,
-  "description_short": "A boarding enrichment program for students ages 10-15 on the Fay School campus in Southborough, MA. Students take three hands-on classes each weekday (forensic science, writing, and design/making), do camp activities in the afternoon, and go on off-campus trips on weekends.",
+  "description_short": "A boarding enrichment program for students ages 10-15 on Fay School's campus in Southborough, MA. Students take three hands-on classes (Global Science, the Vox Inventum writing class and the Creators Class in design and making), join traditional camp activities each afternoon, and take off-campus trips on weekends.",
   "activities": [
-    "Forensic science course",
-    "Creative writing course",
-    "Creativity and design (3D printing, laser cutting, CNC)",
+    "Global Science (science and math)",
+    "Vox Inventum (writing)",
+    "Creators Class (design and making with 3D printers, laser cutters and CNC routers)",
     "Swimming",
     "Ropes/adventure course",
     "Sports and games",
     "Arts and crafts",
     "Drama",
     "Music",
-    "Weekend day trips (Boston, beach)"
+    "Weekend trips (Boston, beach, local attractions)"
   ],
   "financial_aid": true,
   "transportation": false,
@@ -42,28 +42,28 @@
       "name": "4-Week Program",
       "start_date": "2027-07-11",
       "end_date": "2027-08-06",
-      "price": null,
+      "price": 9400,
       "availability": "unknown"
     },
     {
       "name": "2-Week Session 1",
       "start_date": "2027-07-11",
       "end_date": "2027-07-23",
-      "price": null,
+      "price": 4950,
       "availability": "unknown"
     },
     {
       "name": "2-Week Session 2",
       "start_date": "2027-07-25",
       "end_date": "2027-08-06",
-      "price": null,
+      "price": 4950,
       "availability": "unknown"
     }
   ],
   "sources": [
     {
       "url": "https://www.faysummer.org/academic-adventures",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -77,22 +77,32 @@
         "zip",
         "camp_type",
         "primary_categories",
-        "activities",
         "age_min",
         "age_max",
-        "description_short",
         "transportation",
         "meals_included",
-        "financial_aid",
         "refund_policy_summary",
         "swim_waterfront_notes",
-        "sessions"
+        "sessions",
+        "price_min",
+        "price_max",
+        "price_per",
+        "description_short",
+        "activities"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.faysummer.org/rates-and-registration",
+      "checked": "2026-11-12",
+      "fields": [
+        "financial_aid"
+      ],
+      "note": "Need-based financial assistance (FaySummer-wide)"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.faysummer.org/academic-adventures",
       "kind": "html",
@@ -143,6 +153,45 @@
         "quote": "Any families deciding to cancel their registration prior to June 1, 2026 will receive a full refund minus the non-refundable deposit. There are no refunds for families that decide to cancel after the June 1, 2026 deadline."
       }
     ],
-    "errors": []
-  }
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.faysummer.org/academic-adventures",
+        "https://www.faysummer.org/rates-and-registration"
+      ],
+      "changes": [
+        "Added 2027 prices now on the page: 4-Week Program $9,400; each 2-Week Session $4,950 (sessions, price_min 4950, price_max 9400, price_per session)",
+        "Courses changed: page now lists Global Science, Vox Inventum and Creators Class, not forensic science; fixed description_short and activities",
+        "financial_aid stays true; now sourced to the rates page, which says FaySummer offers limited need-based financial assistance (plus the $2,000 merit scholarship on the program page)",
+        "Low-confidence items checked against the page: meals (family-style meals in the dining room), transportation false (families book their own airport transport from a concierge list), refund policy (page still states the June 1, 2026 deadline), registration_url (rates page; overnight programs need an application)"
+      ],
+      "open_questions": [
+        "2027 application not open yet ('Stay Tuned for the 2027 Application'); no opening date posted",
+        "Refund and medical-form deadline still shown as June 1, 2026; 2027 deadline not posted",
+        "Deposit amount not stated",
+        "Rates page says need-based aid is limited to one session of summer camp per season; unclear if it covers the overnight program"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.faysummer.org/academic-adventures",
+      "changes": [
+        "Added 2027 prices now on the page: 4-Week Program $9,400; each 2-Week Session $4,950 (sessions, price_min 4950, price_max 9400, price_per session)",
+        "Courses changed: page now lists Global Science, Vox Inventum and Creators Class, not forensic science; fixed description_short and activities",
+        "financial_aid stays true; now sourced to the rates page, which says FaySummer offers limited need-based financial assistance (plus the $2,000 merit scholarship on the program page)",
+        "Low-confidence items checked against the page: meals (family-style meals in the dining room), transportation false (families book their own airport transport from a concierge list), refund policy (page still states the June 1, 2026 deadline), registration_url (rates page; overnight programs need an application)"
+      ],
+      "for_andrew": [
+        "2027 application not open yet ('Stay Tuned for the 2027 Application'); no opening date posted",
+        "Refund and medical-form deadline still shown as June 1, 2026; 2027 deadline not posted",
+        "Deposit amount not stated",
+        "Rates page says need-based aid is limited to one session of summer camp per season; unclear if it covers the overnight program"
+      ]
+    }
+  },
+  "price_min": 4950,
+  "price_max": 9400,
+  "price_per": "session"
 }

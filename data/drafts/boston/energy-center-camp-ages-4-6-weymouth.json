@@ -27,35 +27,20 @@
     "Free play",
     "Private Energy Center time"
   ],
-  "price_per_week": 525,
-  "price_min": 425,
-  "price_max": 525,
+  "price_per_week": null,
+  "price_min": null,
+  "price_max": null,
   "extended_care": true,
   "meals_included": false,
   "refund_policy_summary": "No refunds or transfers once the club accepts a registration, for any reason (withdrawal, dismissal, missed days). Payment is due in full when you register.",
   "swim_waterfront_notes": "The daily schedule includes free swim. Children should wear a bathing suit to camp every day and bring a towel. Swim supervision and swim testing are not described.",
-  "season_year": 2026,
-  "price_per": "week",
-  "sessions": [
-    {
-      "name": "Good Friday vacation camp day",
-      "start_date": "2026-04-03",
-      "end_date": "2026-04-03",
-      "price": null,
-      "availability": "unknown"
-    },
-    {
-      "name": "April vacation week",
-      "start_date": "2026-04-20",
-      "end_date": "2026-04-24",
-      "price": null,
-      "availability": "unknown"
-    }
-  ],
+  "season_year": 2027,
+  "price_per": null,
+  "sessions": [],
   "sources": [
     {
       "url": "https://www.weymouthclub.com/camps/energy-center-camp-ages-4-6/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -72,21 +57,16 @@
         "age_min",
         "age_max",
         "description_short",
-        "price_min",
-        "price_max",
-        "price_per_week",
-        "price_per",
         "extended_care",
         "meals_included",
         "refund_policy_summary",
-        "swim_waterfront_notes",
-        "sessions"
+        "swim_waterfront_notes"
       ],
       "note": "Drafted by the listing tool from this page"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.weymouthclub.com/camps/energy-center-camp-ages-4-6/",
       "kind": "html",
@@ -110,43 +90,40 @@
       "Swim supervision and swim testing",
       "How many spots are open"
     ],
-    "low_confidence": [
-      {
-        "field": "price_per_week",
-        "confidence": 0.6,
-        "quote": "$525/week for non-members full days"
-      },
-      {
-        "field": "price_min",
-        "confidence": 0.6,
-        "quote": "$425/week for members full day"
-      },
-      {
-        "field": "price_max",
-        "confidence": 0.6,
-        "quote": "$525/week for non-members full days"
-      },
-      {
-        "field": "meals_included",
-        "confidence": 0.7,
-        "quote": "Nut-Free Lunch"
-      },
-      {
-        "field": "primary_categories",
-        "confidence": 0.75,
-        "quote": "programs and physical activities for children"
-      },
-      {
-        "field": "sessions[0].start_date",
-        "confidence": 0.6,
-        "quote": "4/3/26 Good Friday"
-      },
-      {
-        "field": "sessions[1].start_date",
-        "confidence": 0.6,
-        "quote": "4/20-4/24/26 April vacation Week"
-      }
-    ],
-    "errors": []
+    "low_confidence": [],
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.weymouthclub.com/camps/energy-center-camp-ages-4-6/"
+      ],
+      "changes": [
+        "Removed price_per_week/price_min/price_max/price_per: the page no longer shows $425/$525; it now says 'Summer 2027 pricing TBA'",
+        "Removed the two April 2026 vacation-day sessions: they are gone from the page and were school-vacation days, not summer weeks",
+        "season_year set to 2027 to match the page heading 'Summer 2027 Schedule & Tuition' (no summer week dates posted yet)",
+        "Confirmed ages 4-6, 9:00-2:00 full days, 2-week minimum, no-refund policy, own nut-free lunch (meals_included false), free swim, contact Lianne Mankus"
+      ],
+      "open_questions": [
+        "Summer 2027 week dates and prices not posted ('Summer 2027 pricing TBA').",
+        "The page still says 'Summer 2026 Camp Registration is now open!' and its Register link points to a JotForm builder URL (jotform.com/build/...), so no registration_url recorded.",
+        "The page lists 2026-2027 school-vacation camp days (e.g. February Vacation Camp Feb 15-19, April Vacation Camp Apr 19-23, 2027); Andrew may want them as a separate non-summer listing."
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.weymouthclub.com/camps/energy-center-camp-ages-4-6/",
+      "changes": [
+        "Removed price_per_week/price_min/price_max/price_per: the page no longer shows $425/$525; it now says 'Summer 2027 pricing TBA'",
+        "Removed the two April 2026 vacation-day sessions: they are gone from the page and were school-vacation days, not summer weeks",
+        "season_year set to 2027 to match the page heading 'Summer 2027 Schedule & Tuition' (no summer week dates posted yet)",
+        "Confirmed ages 4-6, 9:00-2:00 full days, 2-week minimum, no-refund policy, own nut-free lunch (meals_included false), free swim, contact Lianne Mankus"
+      ],
+      "for_andrew": [
+        "Summer 2027 week dates and prices not posted ('Summer 2027 pricing TBA').",
+        "The page still says 'Summer 2026 Camp Registration is now open!' and its Register link points to a JotForm builder URL (jotform.com/build/...), so no registration_url recorded.",
+        "The page lists 2026-2027 school-vacation camp days (e.g. February Vacation Camp Feb 15-19, April Vacation Camp Apr 19-23, 2027); Andrew may want them as a separate non-summer listing."
+      ]
+    }
   }
 }

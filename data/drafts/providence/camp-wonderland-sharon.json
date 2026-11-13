@@ -1,19 +1,17 @@
 {
   "slug": "camp-wonderland-sharon",
   "name": "Camp Wonderland",
-  "operator_name": "The Salvation Army",
-  "website_url": "https://easternusa.salvationarmy.org/massachusetts/fall-river/camp-summerprograms/",
+  "operator_name": "The Salvation Army Massachusetts Division",
+  "website_url": "https://www.campwonderland.org/",
   "registration_url": "https://wonderland.campintouch.com/ui/forms/application/camper/App",
   "city": "Sharon",
   "state": "MA",
-  "zip": null,
+  "zip": "02067",
   "primary_categories": [
     "faith",
-    "nature",
-    "sports",
-    "arts"
+    "outdoor"
   ],
-  "description_short": "The Salvation Army's Massachusetts summer camp, on 110 acres on Lake Massapoag in Sharon, running since 1924. Activities include swimming lessons, scouting, arts and crafts, music and sports, in a Christian setting.",
+  "description_short": "The Salvation Army's overnight summer camp on Lake Massapoag in Sharon, MA, running since 1924. Campers ages 6-16 stay five nights in cabins and swim, do arts and crafts, music, sports and campfires, with daily Christian devotions. Families apply through their local Salvation Army sender location, which sets the fee.",
   "activities": [
     "swimming",
     "scouting",
@@ -26,21 +24,50 @@
   "swim_waterfront_notes": "Camp is on Lake Massapoag; activities include learning to swim.",
   "sources": [
     {
-      "url": "https://easternusa.salvationarmy.org/massachusetts/fall-river/camp-summerprograms/",
-      "checked": "2026-10-13",
+      "url": "https://www.campwonderland.org/",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
         "website_url",
-        "registration_url",
+        "phone",
+        "street_address",
         "city",
         "state",
+        "zip",
         "primary_categories",
+        "description_short"
+      ],
+      "note": "Camp's own site: summer address 186 Massapoag Avenue, Sharon, MA 02067, (781) 784-5934; 'The Salvation Army's Camp Wonderland is an ACA accredited camp.'"
+    },
+    {
+      "url": "https://www.campwonderland.org/2026-camp-schedule/",
+      "checked": "2026-11-12",
+      "fields": [
+        "sessions"
+      ],
+      "note": "2026 camper sessions 1-7."
+    },
+    {
+      "url": "https://www.campwonderland.org/faq-2026/",
+      "checked": "2026-11-12",
+      "fields": [
+        "camp_type",
+        "age_min",
+        "age_max",
+        "meals_included"
+      ],
+      "note": "Sessions are 5 nights in cabins; ages 6-12 Community Camp, 6-14 Program Camps, 13-16 Teen Camp; nutritionally balanced meals; fees set by sender unit."
+    },
+    {
+      "url": "https://easternusa.salvationarmy.org/massachusetts/fall-river/camp-summerprograms/",
+      "checked": "2026-11-12",
+      "fields": [
+        "registration_url",
         "activities",
-        "description_short",
         "swim_waterfront_notes"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Salvation Army Fall River Corps page: 'Enroll in Camp Now' link; activities include learning to swim, adventure and scouting, arts and crafts, music; 110 acres on Lake Massapoag."
     }
   ],
   "review": {
@@ -84,13 +111,113 @@
       "missing required season_year",
       "camp_type must be one of ['day', 'sleepaway', 'specialty']"
     ],
-    "first_pass": {
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://easternusa.salvationarmy.org/massachusetts/fall-river/camp-summerprograms/",
+        "https://www.campwonderland.org/",
+        "https://www.campwonderland.org/2026-camp-schedule/",
+        "https://www.campwonderland.org/faq-2026/",
+        "https://www.campwonderland.org/sender-locations-2026/"
+      ],
+      "changes": [
+        "Followed 'Learn About Camp Wonderland' to the camp's own site (campwonderland.org) and moved website_url there.",
+        "Filled street_address 186 Massapoag Avenue, ZIP 02067 and phone (781) 784-5934 (summer address) from the camp site; operator -> The Salvation Army Massachusetts Division.",
+        "Added camp_type sleepaway (5-night cabin sessions), ages 6-16, meals_included true, season 2026 with its 7 sessions.",
+        "primary_categories ['faith','nature','sports','arts'] -> ['faith','outdoor']; description rewritten from the camp site. Validator now passes."
+      ],
+      "open_questions": [
+        "DUPLICATE: Camp Wonderland is already published in data/camps/boston.json as 'salvation-army-camp-wonderland' (same site, address, sessions). The validator fails with 'same website and name'. Recommend dropping this draft rather than promoting it.",
+        "Fees are set by each Salvation Army sender location; no price on the site.",
+        "Camp site says it is ACA accredited; aca_accredited left null until checked on acacamps.org.",
+        "FAQ open house date (June 18) and ZIP typo '20267' look carried over; the homepage gives 02067.",
+        "Nothing for 2027 yet."
+      ]
+    },
+    "earlier_pass": {
+      "status": "drop",
       "by": "Claude",
       "date": "2026-10-27",
       "page_checked": "https://easternusa.salvationarmy.org/massachusetts/fall-river/camp-summerprograms/",
       "changes": [],
       "for_andrew": [],
       "drop_reason": "Duplicate of salvation-army-camp-wonderland in data/camps/boston.json (same camp, same campintouch registration URL); this source is a Salvation Army Fall River Corps page, not the camp site"
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://easternusa.salvationarmy.org/massachusetts/fall-river/camp-summerprograms/",
+      "changes": [
+        "Followed 'Learn About Camp Wonderland' to the camp's own site (campwonderland.org) and moved website_url there.",
+        "Filled street_address 186 Massapoag Avenue, ZIP 02067 and phone (781) 784-5934 (summer address) from the camp site; operator -> The Salvation Army Massachusetts Division.",
+        "Added camp_type sleepaway (5-night cabin sessions), ages 6-16, meals_included true, season 2026 with its 7 sessions.",
+        "primary_categories ['faith','nature','sports','arts'] -> ['faith','outdoor']; description rewritten from the camp site. Validator now passes."
+      ],
+      "for_andrew": [
+        "DUPLICATE: Camp Wonderland is already published in data/camps/boston.json as 'salvation-army-camp-wonderland' (same site, address, sessions). The validator fails with 'same website and name'. Recommend dropping this draft rather than promoting it.",
+        "Fees are set by each Salvation Army sender location; no price on the site.",
+        "Camp site says it is ACA accredited; aca_accredited left null until checked on acacamps.org.",
+        "FAQ open house date (June 18) and ZIP typo '20267' look carried over; the homepage gives 02067.",
+        "Nothing for 2027 yet."
+      ]
     }
-  }
+  },
+  "phone": "(781) 784-5934",
+  "street_address": "186 Massapoag Avenue",
+  "camp_type": "sleepaway",
+  "age_min": 6,
+  "age_max": 16,
+  "season_year": 2026,
+  "meals_included": true,
+  "sessions": [
+    {
+      "name": "Session 1: Community Camp (ages 6-12)",
+      "start_date": "2026-06-22",
+      "end_date": "2026-06-27",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 2: Program Camp (ages 6-14)",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-03",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 3: Program Camp (ages 6-14)",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-11",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 4: Community Camp (ages 6-12)",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-18",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 5: Teen Camp (ages 13-16)",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-25",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 6: Community Camp (ages 6-12)",
+      "start_date": "2026-07-30",
+      "end_date": "2026-08-04",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 7: Community Camp (ages 6-12)",
+      "start_date": "2026-08-06",
+      "end_date": "2026-08-11",
+      "price": null,
+      "availability": "unknown"
+    }
+  ]
 }

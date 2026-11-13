@@ -14,40 +14,42 @@
   ],
   "age_min": 8,
   "age_max": 18,
-  "description_short": "Newport Children's Theatre runs summer theatre camps for ages 8-18 at its studio in Middletown, RI. Past camps have put on musicals and plays such as Something Rotten and Anne of Green Gables.",
+  "description_short": "Newport Children's Theatre runs summer theatre camps for ages 8-18 at its studio in Middletown, RI: a one-week Performance Potpourri camp for ages 8-12 (acting, improv, writing scenes) and two-week camps that put on a musical and a play with public performances. 2026 shows were Newsies Jr. and The Three Musketeers.",
   "activities": [
-    "Musical theatre",
-    "Plays",
-    "Auditions"
+    "Musical theatre production",
+    "Play production",
+    "Acting and improvisation games",
+    "Writing monologues, scenes and sketches",
+    "Auditions and performances"
   ],
   "season_year": 2026,
   "sessions": [
     {
-      "name": "Summer Theatre Camp (ages 8-12)",
+      "name": "Performance Potpourri Camp (ages 8-12)",
       "start_date": "2026-06-29",
       "end_date": "2026-07-02",
-      "price": null,
+      "price": 275,
       "availability": "unknown"
     },
     {
-      "name": "Summer Theatre Camp (ages 8-18, auditions July 11)",
+      "name": "Summer Musical: Newsies Jr. (ages 8-18; auditions July 11; performances July 25)",
       "start_date": "2026-07-13",
       "end_date": "2026-07-25",
-      "price": null,
+      "price": 650,
       "availability": "unknown"
     },
     {
-      "name": "Summer Theatre Camp (ages 8-18)",
+      "name": "Summer Theatre Camp: The Three Musketeers (ages 8-18; performance Aug 8)",
       "start_date": "2026-07-27",
       "end_date": "2026-08-08",
-      "price": null,
+      "price": 550,
       "availability": "unknown"
     }
   ],
   "sources": [
     {
       "url": "https://www.newportchildrenstheatre.org/summer-camps",
-      "checked": "2026-10-27",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -58,17 +60,44 @@
         "state",
         "camp_type",
         "primary_categories",
-        "activities",
         "age_min",
-        "age_max",
-        "description_short",
-        "sessions"
+        "age_max"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Summer Camps page: ages 8-12 June 29-July 2nd; ages 8-18 July 13-25th; ages 8-18 July 27-August 8th; 'NCT Studio: 1341 West Main St. • Middletown, RI'."
+    },
+    {
+      "url": "https://www.newportchildrenstheatre.org/potpourri",
+      "checked": "2026-11-12",
+      "fields": [
+        "activities",
+        "meals_included",
+        "description_short"
+      ],
+      "note": "'Performance Potpourri Camp: June 29-July 2 • 9:30-2:30pm'; acting and improv, write monologues/scenes/sketches; 'Typically, we require you bring lunch'. Description also uses the Newsies and Three Musketeers pages."
+    },
+    {
+      "url": "https://www.newportchildrenstheatre.org/newsies",
+      "checked": "2026-11-12",
+      "fields": [
+        "sessions",
+        "price_min",
+        "price_max",
+        "price_per"
+      ],
+      "note": "Session details from the three camp pages: Potpourri $275 through 4/15/26 ($300 after); Newsies 'Camp: July 13th-24th at St. Mary's Church • Portsmouth', performances July 25, $650 through 4/15 ($700 after); Three Musketeers ('Summer Theatre Camp 2026') July 27-Aug 7, performance Aug 8, $550 through 4/15 ($575 after). Session prices are the early-bird prices."
+    },
+    {
+      "url": "https://www.newportchildrenstheatre.org/financial-policy",
+      "checked": "2026-11-12",
+      "fields": [
+        "financial_aid",
+        "refund_policy_summary"
+      ],
+      "note": "'Families needing support may contact us ... financial aid opportunities'; refund policy with $50 fee and 30/14-day tiers."
     },
     {
       "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=1341+West+Main+St.&city=Middletown&state=RI&benchmark=Public_AR_Current&format=json",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "zip"
       ],
@@ -76,7 +105,7 @@
     }
   ],
   "review": {
-    "status": "needs_andrew",
+    "status": "ready",
     "source": {
       "url": "https://www.newportchildrenstheatre.org/summer-camps",
       "kind": "html",
@@ -100,30 +129,29 @@
       "Studio zip code",
       "Whether the 2-week sessions require auditions for casting only or for admission"
     ],
-    "low_confidence": [
-      {
-        "field": "season_year",
-        "confidence": 0.5,
-        "quote": "Teen Rep 2026"
-      },
-      {
-        "field": "sessions[0].start_date",
-        "confidence": 0.5,
-        "quote": "for ages 8-12 June 29-July 2nd"
-      },
-      {
-        "field": "sessions[1].start_date",
-        "confidence": 0.5,
-        "quote": "for ages 8-18 auditions July 11th July 13-25th"
-      },
-      {
-        "field": "sessions[2].start_date",
-        "confidence": 0.5,
-        "quote": "for ages 8-18 July 27-August 8th"
-      }
-    ],
+    "low_confidence": [],
     "errors": [],
-    "first_pass": {
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.newportchildrenstheatre.org/summer-camps",
+        "https://www.newportchildrenstheatre.org/potpourri",
+        "https://www.newportchildrenstheatre.org/newsies",
+        "https://www.newportchildrenstheatre.org/three-musketeers",
+        "https://www.newportchildrenstheatre.org/financial-policy"
+      ],
+      "changes": [
+        "Confirmed season 2026 ('Summer Theatre Camp 2026', 'Summer Musical 2026', 'Early Bird through 4/15/26') and matched each age group to its camp page, resolving the low-confidence items.",
+        "Named the three sessions (Performance Potpourri; Newsies Jr.; The Three Musketeers) and added prices ($275 / $650 / $550 early bird; $300 / $700 / $575 after 4/15); price_min 275, price_max 700, per session.",
+        "Added financial aid, refund policy (Financial Policy page) and bring-your-own-lunch; activities and description rewritten from the camp pages."
+      ],
+      "open_questions": [
+        "The Newsies camp met at St. Mary's Church, Portsmouth, not the Middletown studio; listing keeps the studio address.",
+        "No 2027 camps or registration dates posted yet."
+      ]
+    },
+    "earlier_pass": {
+      "status": "needs_andrew",
       "by": "Claude",
       "date": "2026-10-27",
       "page_checked": "https://www.newportchildrenstheatre.org/summer-camps",
@@ -131,6 +159,26 @@
       "for_andrew": [
         "refused: ask the owner for the brochure (the site returned HTTP 429 Too Many Requests on the check fetch)."
       ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.newportchildrenstheatre.org/summer-camps",
+      "changes": [
+        "Confirmed season 2026 ('Summer Theatre Camp 2026', 'Summer Musical 2026', 'Early Bird through 4/15/26') and matched each age group to its camp page, resolving the low-confidence items.",
+        "Named the three sessions (Performance Potpourri; Newsies Jr.; The Three Musketeers) and added prices ($275 / $650 / $550 early bird; $300 / $700 / $575 after 4/15); price_min 275, price_max 700, per session.",
+        "Added financial aid, refund policy (Financial Policy page) and bring-your-own-lunch; activities and description rewritten from the camp pages."
+      ],
+      "for_andrew": [
+        "The Newsies camp met at St. Mary's Church, Portsmouth, not the Middletown studio; listing keeps the studio address.",
+        "No 2027 camps or registration dates posted yet."
+      ]
     }
-  }
+  },
+  "price_min": 275,
+  "price_max": 700,
+  "price_per": "session",
+  "financial_aid": true,
+  "meals_included": false,
+  "refund_policy_summary": "Full payment (or a third-party payment plan) at registration; early-bird prices through April 15. Refunds carry a $50 fee: full refund more than 30 days before start, 50% at 14-30 days, none under 14 days. No refund for missed days or dismissal."
 }

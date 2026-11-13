@@ -4,6 +4,7 @@
   "operator_name": "Providence Performing Arts Center",
   "website_url": "https://www.ppacri.org/outreach/next-stop-broadway",
   "email": "nsb@ppacri.org",
+  "phone": "(401) 421-2787",
   "street_address": "220 Weybosset St",
   "city": "Providence",
   "state": "RI",
@@ -55,12 +56,13 @@
   "sources": [
     {
       "url": "https://www.ppacri.org/outreach/next-stop-broadway",
-      "checked": "2026-10-27",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
         "website_url",
         "email",
+        "phone",
         "street_address",
         "city",
         "state",
@@ -83,7 +85,7 @@
     }
   ],
   "review": {
-    "status": "needs_andrew",
+    "status": "ready",
     "source": {
       "url": "https://www.ppacri.org/outreach/next-stop-broadway",
       "kind": "html",
@@ -158,7 +160,22 @@
       }
     ],
     "errors": [],
-    "first_pass": {
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.ppacri.org/outreach/next-stop-broadway"
+      ],
+      "changes": [
+        "No field changes: the three 2027 weeks, fees ($565/$525, $590/$550), ages 10-17, hours, snacks/Friday lunch, financial aid, email, phone and address all match the page. Source checked date updated."
+      ],
+      "open_questions": [
+        "Eligibility text still says 'first day of the program (July 20 and/or July 27)', the 2026 dates; the 2027 weeks at the top are July 12-16 and July 19-23.",
+        "Fees are not labeled with a year; they may be the 2026 fees.",
+        "ENCORE! is for high school or early college performers, so some campers may be older than age_max 17."
+      ]
+    },
+    "earlier_pass": {
+      "status": "needs_andrew",
       "by": "Claude",
       "date": "2026-10-27",
       "page_checked": "https://www.ppacri.org/outreach/next-stop-broadway",
@@ -169,6 +186,19 @@
         "Session dates (July 12-16, July 19-23, Aug 2-6) carry no year; recorded as 2027 since the page says Summer 2027 registration opens Jan 15 and they fall Mon-Fri in 2027. Confirm.",
         "Age rule still names 'July 20 and/or July 27' (2026 start dates), so the fees ($565/$525 Next Stop, $590/$550 ENCORE!) may be 2026 carry-overs. Confirm 2027 fees before publishing.",
         "ENCORE! is for high school / early college performers, so some campers may be over age_max 17."
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.ppacri.org/outreach/next-stop-broadway",
+      "changes": [
+        "No field changes: the three 2027 weeks, fees ($565/$525, $590/$550), ages 10-17, hours, snacks/Friday lunch, financial aid, email, phone and address all match the page. Source checked date updated."
+      ],
+      "for_andrew": [
+        "Eligibility text still says 'first day of the program (July 20 and/or July 27)', the 2026 dates; the 2027 weeks at the top are July 12-16 and July 19-23.",
+        "Fees are not labeled with a year; they may be the 2026 fees.",
+        "ENCORE! is for high school or early college performers, so some campers may be older than age_max 17."
       ]
     }
   }

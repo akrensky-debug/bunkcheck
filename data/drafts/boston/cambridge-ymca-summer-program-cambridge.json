@@ -11,19 +11,20 @@
   "zip": "02139",
   "camp_type": "day",
   "primary_categories": [
-    "sports",
-    "arts",
-    "STEM"
+    "general"
   ],
   "age_min": 5,
   "age_max": 13,
-  "description_short": "A full-day summer program (8:00 a.m.–5:00 p.m.) for ages 5–13 at the Cambridge YMCA. Children are grouped in age-based classrooms. Days include swimming, gym time, teacher-led activities such as arts and crafts, games and STEM, and weekly field trips.",
+  "description_short": "A full-day summer program (8:00 a.m.–5:00 p.m., Monday–Friday) for ages 5–13 at the Cambridge YMCA, licensed by the Massachusetts Department of Early Education and Care. Children are grouped in three age-based classrooms. Enrichment includes swim lessons, outdoor and gross motor play, STEM programs for ages 7–13, teacher-led activities such as arts and crafts, games and cooking, and weekly field trips or special events.",
   "activities": [
-    "Swimming",
-    "Gym time",
+    "Swim lessons",
+    "Gross motor play",
+    "Outdoor play",
+    "THINK-GIVE curriculum (ages 5–7)",
+    "STEM programs (ages 7–13)",
     "Arts and crafts",
-    "Games",
-    "STEM",
+    "Group games",
+    "Cooking",
     "Team building",
     "Weekly field trips/special events"
   ],
@@ -31,8 +32,8 @@
   "price_min": 300,
   "price_max": 300,
   "financial_aid": true,
-  "refund_policy_summary": "You pay a $150 non-refundable deposit for each enrolled week once your child is accepted. The page does not give any other refund terms.",
-  "swim_waterfront_notes": "Swimming is listed as one of the program's activities. The page does not say whether it is a pool or lessons, or how swimmers are supervised or tested.",
+  "refund_policy_summary": "A $150 non-refundable deposit is due for each enrolled week once your child is accepted. The page gives no other refund terms.",
+  "swim_waterfront_notes": "Swim lessons are listed as part of the program's enrichment. The page does not say where they take place or how swimmers are supervised or tested.",
   "season_year": 2026,
   "price_per": "week",
   "sessions": [
@@ -96,7 +97,7 @@
   "sources": [
     {
       "url": "https://www.cambridgeymca.org/child-care/summer-program/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -120,13 +121,15 @@
         "financial_aid",
         "refund_policy_summary",
         "swim_waterfront_notes",
-        "sessions"
+        "sessions",
+        "secondary_categories",
+        "email"
       ],
       "note": "Drafted by the listing tool from this page"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.cambridgeymca.org/child-care/summer-program/",
       "kind": "html",
@@ -170,6 +173,51 @@
         "quote": "The waitlist for the Summer Program will open on February 9, 2026 at 9am."
       }
     ],
-    "errors": []
-  }
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.cambridgeymca.org/child-care/summer-program/"
+      ],
+      "changes": [
+        "Description and activities updated to the page's current 2027 enrichment list (swim lessons, gross motor and outdoor play, THINK-GIVE, STEM, cooking); 'gym time' no longer on the page",
+        "Primary category set to general (YMCA child-care day program); sports/arts/STEM low-confidence item resolved by moving swimming, arts, STEM to secondary_categories",
+        "Added email mrothermel@cambymca.org (registration and billing contact on the page)",
+        "swim_waterfront_notes now says swim lessons",
+        "Kept financial_aid true: page says EEC vouchers are accepted",
+        "Age typo resolved: page now reads 'must be 5 by August 31, 2026' under Program Information 2027",
+        "Kept 2026 season: page shows 2027 cost ($300/week, unchanged) but dates 'TBD'"
+      ],
+      "open_questions": [
+        "The 2026 week dates are no longer on the page (it now shows 'Dates TBD' for 2027), so the 2026 sessions can't be re-checked; they stand from the October draft",
+        "2027 dates and waitlist opening not posted yet; the page still carries the 2026 line 'The waitlist ... will open on February 9, 2026 at 9am'",
+        "Lunch, extended hours and transportation not stated"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.cambridgeymca.org/child-care/summer-program/",
+      "changes": [
+        "Description and activities updated to the page's current 2027 enrichment list (swim lessons, gross motor and outdoor play, THINK-GIVE, STEM, cooking); 'gym time' no longer on the page",
+        "Primary category set to general (YMCA child-care day program); sports/arts/STEM low-confidence item resolved by moving swimming, arts, STEM to secondary_categories",
+        "Added email mrothermel@cambymca.org (registration and billing contact on the page)",
+        "swim_waterfront_notes now says swim lessons",
+        "Kept financial_aid true: page says EEC vouchers are accepted",
+        "Age typo resolved: page now reads 'must be 5 by August 31, 2026' under Program Information 2027",
+        "Kept 2026 season: page shows 2027 cost ($300/week, unchanged) but dates 'TBD'"
+      ],
+      "for_andrew": [
+        "The 2026 week dates are no longer on the page (it now shows 'Dates TBD' for 2027), so the 2026 sessions can't be re-checked; they stand from the October draft",
+        "2027 dates and waitlist opening not posted yet; the page still carries the 2026 line 'The waitlist ... will open on February 9, 2026 at 9am'",
+        "Lunch, extended hours and transportation not stated"
+      ]
+    }
+  },
+  "secondary_categories": [
+    "swimming",
+    "arts",
+    "STEM"
+  ],
+  "email": "mrothermel@cambymca.org"
 }

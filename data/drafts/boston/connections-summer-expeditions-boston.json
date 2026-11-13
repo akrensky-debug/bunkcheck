@@ -4,7 +4,7 @@
   "operator_name": "Cathleen Stone Island Outward Bound",
   "website_url": "https://cathleenstoneisland.org/programs/connections/expeditions",
   "phone": "617-830-5131",
-  "street_address": "P.O. Box 127",
+  "street_address": null,
   "city": "Boston",
   "state": "MA",
   "zip": "02127",
@@ -14,7 +14,7 @@
   ],
   "grade_min": 7,
   "grade_max": 8,
-  "description_short": "Overnight backpacking/climbing and sea kayaking/camping expeditions on Cathleen Stone Island and in Boston Harbor for rising 7th and 8th graders enrolled in Boston Public Schools. Students cook, set up shelters, and learn wilderness skills, teamwork and environmental stewardship.",
+  "description_short": "Free 5- or 7-day overnight expeditions (backpacking/climbing or sea kayaking/camping) on Cathleen Stone Island and in Boston Harbor for rising 7th and 8th graders enrolled in Boston Public Schools. Students cook, set up shelters, and learn wilderness skills, teamwork and environmental stewardship.",
   "activities": [
     "Backpacking",
     "Sea kayaking",
@@ -53,13 +53,12 @@
   "sources": [
     {
       "url": "https://cathleenstoneisland.org/programs/connections/expeditions",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
         "website_url",
         "phone",
-        "street_address",
         "city",
         "state",
         "zip",
@@ -68,15 +67,25 @@
         "activities",
         "grade_min",
         "grade_max",
-        "description_short",
         "swim_waterfront_notes",
-        "sessions"
+        "sessions",
+        "email"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://cathleenstoneisland.org/lib/file/manager/Programs/2026%20CSIOBS%20Cnx%20Exp%20Q&A.pdf",
+      "checked": "2026-11-12",
+      "fields": [
+        "meals_included",
+        "price_min",
+        "price_max",
+        "description_short"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://cathleenstoneisland.org/programs/connections/expeditions",
       "kind": "html",
@@ -109,6 +118,46 @@
         "quote": "P.O. Box 127, Boston, MA 02127"
       }
     ],
-    "errors": []
-  }
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://cathleenstoneisland.org/programs/connections/expeditions",
+        "https://cathleenstoneisland.org/lib/file/manager/Programs/2026%20CSIOBS%20Cnx%20Exp%20Q&A.pdf"
+      ],
+      "changes": [
+        "Removed street_address: 'P.O. Box 127' is a mailing box, not where the program runs (the island; ferry from the EDIC dock, South Boston). City/ZIP kept from the mailing address 'P.O. Box 127, Boston, MA 02127'",
+        "Added email JCorcione@cathleenstoneisland.org (the page's program contact)",
+        "Added meals_included true and price 0 from the 2026 Q&A PDF ('Our program is free to participants'; 'We provide breakfast, lunch, dinner, and snacks')",
+        "Description now says the program is free and runs 5 or 7 days (Q&A), sourced to the Q&A PDF",
+        "Sessions, grades (rising 7th and 8th graders) and activities match the page"
+      ],
+      "open_questions": [
+        "The page still reads 'Registration for the 2026 expeditions is currently open!'; no 2027 dates posted",
+        "Q&A lists a different program contact (Noel Regalado, 617-830-5175) than the page (617.830.5131)",
+        "Open only to Boston Public Schools students"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://cathleenstoneisland.org/programs/connections/expeditions",
+      "changes": [
+        "Removed street_address: 'P.O. Box 127' is a mailing box, not where the program runs (the island; ferry from the EDIC dock, South Boston). City/ZIP kept from the mailing address 'P.O. Box 127, Boston, MA 02127'",
+        "Added email JCorcione@cathleenstoneisland.org (the page's program contact)",
+        "Added meals_included true and price 0 from the 2026 Q&A PDF ('Our program is free to participants'; 'We provide breakfast, lunch, dinner, and snacks')",
+        "Description now says the program is free and runs 5 or 7 days (Q&A), sourced to the Q&A PDF",
+        "Sessions, grades (rising 7th and 8th graders) and activities match the page"
+      ],
+      "for_andrew": [
+        "The page still reads 'Registration for the 2026 expeditions is currently open!'; no 2027 dates posted",
+        "Q&A lists a different program contact (Noel Regalado, 617-830-5175) than the page (617.830.5131)",
+        "Open only to Boston Public Schools students"
+      ]
+    }
+  },
+  "email": "JCorcione@cathleenstoneisland.org",
+  "meals_included": true,
+  "price_min": 0,
+  "price_max": 0
 }

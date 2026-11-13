@@ -75,7 +75,7 @@
   "sources": [
     {
       "url": "https://www.bgcmetrosouth.org/campbrookside",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -90,13 +90,14 @@
         "age_max",
         "description_short",
         "extended_care",
-        "sessions"
+        "sessions",
+        "registration_url"
       ],
       "note": "Drafted by the listing tool from this page"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.bgcmetrosouth.org/campbrookside",
       "kind": "html",
@@ -133,6 +134,42 @@
         "quote": "Session I: August 17 - August 21 | Best of: Camp Brookside"
       }
     ],
-    "errors": []
-  }
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.bgcmetrosouth.org/campbrookside",
+        "https://operations.daxko.com/Online/5285/ProgramsV2/Search.mvc?keywords=&program_id=&expanded=categories%2Clocations&coming_soon=False&category_ids=CAT347&all_categories=false&location_ids=B240&all_locations=false&date_ranges%5B0%5D.start=&date_ranges%5B0%5D.end=&birth_dates=",
+        "https://www.canva.com/design/DAG-nJjq7xY/tu1ijDtPK5PtqF4uKk4nug/view"
+      ],
+      "changes": [
+        "Added registration_url: the page's 'Register for Camp Brookside' link (Daxko program search for the Brockton Clubhouse)",
+        "Checked all other fields against the page: name, operator, phone, address, ages 5-12, 9:00-4:00 hours, membership rule, extended hours 7:30-9:00 and 4:00-5:30 all match",
+        "Low-confidence session dates B (June 29-July 3) and I (Aug 17-21) confirmed on the page; Session A still marked cancelled",
+        "Kept 2026 season: nothing posted for 2027"
+      ],
+      "open_questions": [
+        "Weekly price and membership fee are not on the page; the linked 2026 brochure is a Canva design whose text could not be read and whose image returned 403",
+        "Daxko registration search currently shows 0 programs",
+        "No primary category or activities stated beyond weekly themes; left empty"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.bgcmetrosouth.org/campbrookside",
+      "changes": [
+        "Added registration_url: the page's 'Register for Camp Brookside' link (Daxko program search for the Brockton Clubhouse)",
+        "Checked all other fields against the page: name, operator, phone, address, ages 5-12, 9:00-4:00 hours, membership rule, extended hours 7:30-9:00 and 4:00-5:30 all match",
+        "Low-confidence session dates B (June 29-July 3) and I (Aug 17-21) confirmed on the page; Session A still marked cancelled",
+        "Kept 2026 season: nothing posted for 2027"
+      ],
+      "for_andrew": [
+        "Weekly price and membership fee are not on the page; the linked 2026 brochure is a Canva design whose text could not be read and whose image returned 403",
+        "Daxko registration search currently shows 0 programs",
+        "No primary category or activities stated beyond weekly themes; left empty"
+      ]
+    }
+  },
+  "registration_url": "https://operations.daxko.com/Online/5285/ProgramsV2/Search.mvc?keywords=&program_id=&expanded=categories%2Clocations&coming_soon=False&category_ids=CAT347&all_categories=false&location_ids=B240&all_locations=false&date_ranges%5B0%5D.start=&date_ranges%5B0%5D.end=&birth_dates="
 }

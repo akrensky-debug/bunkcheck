@@ -15,7 +15,7 @@
   ],
   "grade_min": 1,
   "grade_max": 12,
-  "description_short": "Trinity Rep runs one-week summer theater camps, and each week covers a different theater topic. They are for students from first grade through recent high school graduates. Families can sign up for one week or combine several.",
+  "description_short": "Trinity Rep's Young Actors Summer Institute: one-week summer theater camps, each on a different topic (musical theater, improv and comedy, fight and make-up, one acts and more), for students from first grade through recent high school graduates, led by local artists and educators. Take one week or mix and match several.",
   "activities": [
     "Musical theater",
     "Improv & comedy",
@@ -24,12 +24,12 @@
     "Acting scene work"
   ],
   "financial_aid": true,
-  "refund_policy_summary": "A $50 non-refundable deposit is required to hold a spot. The full Cancellation Policy is on a separate page that this page links to. If you register without your financial aid discount code, the registration is cancelled and credit card fees are not refunded.",
+  "refund_policy_summary": "$50 non-refundable deposit to hold a spot. Full refund (less deposit and registration fees) if cancelled at least one week before the first day; 50% of tuition for later cancellations before the first session; no refund once the camp begins.",
   "season_year": 2027,
   "sources": [
     {
       "url": "https://www.trinityrep.com/education/yasi/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -46,10 +46,17 @@
         "grade_min",
         "grade_max",
         "description_short",
-        "financial_aid",
+        "financial_aid"
+      ],
+      "note": "YASI page: 'See you in 2027!'; no 2027 dates, prices or camp list posted; address and phone are Trinity Rep's theater and offices"
+    },
+    {
+      "url": "https://www.trinityrep.com/class-cancellation-policy/",
+      "checked": "2026-11-12",
+      "fields": [
         "refund_policy_summary"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Class Cancellation Policy (as of August 29, 2024), linked from the YASI page; $50 deposit from the YASI page"
     }
   ],
   "review": {
@@ -81,50 +88,27 @@
       "Whether the camp is ACA accredited",
       "What the video submission or pre-meeting involves for the casted camps"
     ],
-    "low_confidence": [
-      {
-        "field": "grade_max",
-        "confidence": 0.7,
-        "quote": "students from first grade through recent high school graduates"
-      },
-      {
-        "field": "season_year",
-        "confidence": 0.7,
-        "quote": "See you in 2027!"
-      },
-      {
-        "field": "street_address",
-        "confidence": 0.6,
-        "quote": "201 Washington Street Providence, RI 02903"
-      },
-      {
-        "field": "city",
-        "confidence": 0.6,
-        "quote": "Providence, RI 02903"
-      },
-      {
-        "field": "state",
-        "confidence": 0.6,
-        "quote": "Providence, RI 02903"
-      },
-      {
-        "field": "zip",
-        "confidence": 0.6,
-        "quote": "Providence, RI 02903"
-      },
-      {
-        "field": "phone",
-        "confidence": 0.6,
-        "quote": "Administrative Offices (401) 521-1100"
-      },
-      {
-        "field": "refund_policy_summary",
-        "confidence": 0.75,
-        "quote": "$50 non-refundable deposit"
-      }
-    ],
+    "low_confidence": [],
     "errors": [],
-    "first_pass": {
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.trinityrep.com/education/yasi/",
+        "https://www.trinityrep.com/class-cancellation-policy/"
+      ],
+      "changes": [
+        "Confirmed name, operator, contact, grades, activities, financial aid against the page.",
+        "Refund summary now uses the linked Cancellation Policy (full refund less deposit and fees one week out, 50% after, none once camp begins).",
+        "Description tightened to the page's wording; season_year 2027 kept ('See you in 2027!') with no sessions."
+      ],
+      "open_questions": [
+        "No 2027 dates, prices, camp list or registration date posted yet.",
+        "Camp location not stated; the address is Trinity Rep's theater at 201 Washington Street.",
+        "grade_max 12 stands for 'recent high school graduates'."
+      ]
+    },
+    "earlier_pass": {
+      "status": "ready",
       "by": "Claude",
       "date": "2026-10-27",
       "page_checked": "https://www.trinityrep.com/education/yasi/",
@@ -133,6 +117,21 @@
       ],
       "for_andrew": [
         "The page shows no dates, ages per camp or prices yet ('See you in 2027!'); add 2027 sessions when Trinity Rep posts them."
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.trinityrep.com/education/yasi/",
+      "changes": [
+        "Confirmed name, operator, contact, grades, activities, financial aid against the page.",
+        "Refund summary now uses the linked Cancellation Policy (full refund less deposit and fees one week out, 50% after, none once camp begins).",
+        "Description tightened to the page's wording; season_year 2027 kept ('See you in 2027!') with no sessions."
+      ],
+      "for_andrew": [
+        "No 2027 dates, prices, camp list or registration date posted yet.",
+        "Camp location not stated; the address is Trinity Rep's theater at 201 Washington Street.",
+        "grade_max 12 stands for 'recent high school graduates'."
       ]
     }
   }

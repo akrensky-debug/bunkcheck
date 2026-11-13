@@ -13,6 +13,7 @@
   "camp_type": "day",
   "primary_categories": [
     "nature",
+    "outdoor",
     "arts"
   ],
   "age_min": 6,
@@ -111,20 +112,14 @@
   "sources": [
     {
       "url": "https://www.faithhillfarmri.com/fhf-summer-camp",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
         "website_url",
         "registration_url",
         "email",
-        "phone",
-        "street_address",
-        "city",
-        "state",
-        "zip",
         "camp_type",
-        "primary_categories",
         "activities",
         "age_min",
         "age_max",
@@ -135,9 +130,21 @@
         "price_per",
         "refund_policy_summary",
         "swim_waterfront_notes",
-        "sessions"
+        "sessions",
+        "primary_categories"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.faithhillfarmri.com/",
+      "checked": "2026-11-12",
+      "fields": [
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip"
+      ]
     }
   ],
   "review": {
@@ -181,12 +188,41 @@
       }
     ],
     "errors": [],
-    "first_pass": {
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.faithhillfarmri.com/fhf-summer-camp",
+        "https://www.faithhillfarmri.com/"
+      ],
+      "changes": [
+        "Address and phone now sourced to the farm's home page, which states '2056 Division Rd, East Greenwich, RI 02818 (401) 524-1788'.",
+        "primary_categories: added outdoor ('an outdoor camp focused on farm and nature experiences').",
+        "Confirmed 2026 weeks, prices ($350 client / $375 non-client), ages 6-12, cancellation policy and email on the live page; resolved low-confidence price items."
+      ],
+      "open_questions": [
+        "No 2027 dates or prices posted yet; page still shows 6/15/26 - 8/21/26."
+      ]
+    },
+    "earlier_pass": {
+      "status": "ready",
       "by": "Claude",
       "date": "2026-10-27",
       "page_checked": "https://www.faithhillfarmri.com/fhf-summer-camp",
       "changes": [],
       "for_andrew": []
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.faithhillfarmri.com/fhf-summer-camp",
+      "changes": [
+        "Address and phone now sourced to the farm's home page, which states '2056 Division Rd, East Greenwich, RI 02818 (401) 524-1788'.",
+        "primary_categories: added outdoor ('an outdoor camp focused on farm and nature experiences').",
+        "Confirmed 2026 weeks, prices ($350 client / $375 non-client), ages 6-12, cancellation policy and email on the live page; resolved low-confidence price items."
+      ],
+      "for_andrew": [
+        "No 2027 dates or prices posted yet; page still shows 6/15/26 - 8/21/26."
+      ]
     }
   }
 }

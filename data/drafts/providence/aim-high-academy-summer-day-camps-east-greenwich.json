@@ -2,7 +2,7 @@
   "slug": "aim-high-academy-summer-day-camps-east-greenwich",
   "name": "Aim High Academy Summer Day Camps",
   "operator_name": "Aim High Academy",
-  "website_url": "https://www.aimhighacademy.com/camps.aspx",
+  "website_url": "https://www.aimhighacademy.com/camps-summer.aspx",
   "email": "info@aimhighacademy.com",
   "phone": "(401) 886-7827",
   "street_address": "3355 South County Trail",
@@ -11,48 +11,152 @@
   "zip": "02818",
   "camp_type": "day",
   "primary_categories": [
-    "general"
+    "sports"
   ],
-  "description_short": "Summer day camps for ages 3-10 at Aim High Academy, a gymnastics and education center in East Greenwich, RI. Campers do a mix of indoor and outdoor activities (arts & crafts, games, gymnastics, adventure play) with theme-based sessions and themed Fun Fridays.",
   "activities": [
-    "gymnastics",
     "arts & crafts",
     "games",
-    "adventure play"
+    "gymnastics",
+    "adventure play",
+    "water play"
+  ],
+  "age_min": 3,
+  "age_max": 10,
+  "grade_min": 1,
+  "grade_max": 5,
+  "description_short": "Summer day camps at Aim High Academy in East Greenwich for ages 3 to 10: Camp Little Star for preschoolers (3 to 5) and Camp Rising Star for rising 1st to 5th graders. Weekly themes mix indoor and outdoor activities, including arts & crafts, games, gymnastics, adventure play and water play, with a theme-based Fun Friday and pizza lunch each Friday.",
+  "indoor_outdoor": "both",
+  "price_min": 100,
+  "price_max": 375,
+  "price_per_week": 375,
+  "price_per": "week",
+  "extended_care": true,
+  "meals_included": false,
+  "refund_policy_summary": "$150 non-refundable deposit per session at registration; balances due May 1 (June camps), June 1 (July camps) and July 1 (August camps). No refunds or credits without a medical note; $25 fee to change the schedule. $25 registration fee for non-members.",
+  "swim_waterfront_notes": "Water play only: preschoolers wear bathing suits daily; school-age campers bring a bathing suit for water play (water slides on Fun Fridays).",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Week 1: Enchanted Kingdom",
+      "start_date": "2026-06-15",
+      "end_date": "2026-06-19",
+      "price": 375,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 2: Party In the USA",
+      "start_date": "2026-06-22",
+      "end_date": "2026-06-26",
+      "price": 375,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 3: Barnyard Palooza",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": 375,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 4: Mystery Explorers",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": 375,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 5: Scales & Tails",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": 375,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 6: Space is the Place",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": 375,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 7: Let the Games Begin!",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": 375,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 8: Splish Splash",
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-14",
+      "price": 375,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 9: Wonder Emporium",
+      "start_date": "2026-08-17",
+      "end_date": "2026-08-21",
+      "price": 375,
+      "availability": "unknown"
+    }
   ],
   "sources": [
     {
       "url": "https://www.aimhighacademy.com/camps.aspx",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
-        "name",
         "operator_name",
-        "website_url",
-        "camp_type"
-      ],
-      "note": "Drafted by the listing tool from this page"
-    },
-    {
-      "url": "https://www.aimhighacademy.com/camps-summer.aspx",
-      "checked": "2026-10-27",
-      "fields": [
         "email",
         "phone",
         "street_address",
         "city",
         "state",
-        "zip",
-        "activities",
+        "zip"
+      ],
+      "note": "Camp overview page; contact block in footer"
+    },
+    {
+      "url": "https://www.aimhighacademy.com/camps-summer.aspx",
+      "checked": "2026-11-12",
+      "fields": [
+        "name",
+        "website_url",
+        "camp_type",
+        "primary_categories",
         "age_min",
         "age_max",
-        "primary_categories",
-        "description_short"
-      ]
+        "activities",
+        "indoor_outdoor",
+        "description_short",
+        "swim_waterfront_notes"
+      ],
+      "note": "Summer Day Camps page: 'Ages 3-10'; balance of indoor and outdoor activities; water play"
+    },
+    {
+      "url": "https://www.aimhighacademy.com/docs/2026-SummerDayCamp-RisingStarFlyer.pdf",
+      "checked": "2026-11-12",
+      "fields": [
+        "grade_min",
+        "grade_max",
+        "price_per_week",
+        "price_per",
+        "price_max",
+        "extended_care",
+        "meals_included",
+        "refund_policy_summary",
+        "sessions"
+      ],
+      "note": "2026 Rising Star (school-age) flyer: 9 weeks, $375 weekly full day, extended day 8-9am and 3-5pm, campers bring lunch (pizza on Fridays), deposit and refund terms"
+    },
+    {
+      "url": "https://www.aimhighacademy.com/docs/2026-SummerDayCamp-LittleStarFlyer.pdf",
+      "checked": "2026-11-12",
+      "fields": [
+        "price_min"
+      ],
+      "note": "2026 Little Star (preschool) flyer: from $100/week for 2 half days to $375 for 5 full days"
     }
   ],
-  "age_min": 3,
-  "age_max": 10,
-  "season_year": 2026,
   "review": {
     "status": "ready",
     "source": {
@@ -95,7 +199,30 @@
       }
     ],
     "errors": [],
-    "first_pass": {
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.aimhighacademy.com/camps.aspx",
+        "https://www.aimhighacademy.com/camps-summer.aspx",
+        "https://www.aimhighacademy.com/docs/2026-SummerDayCamp-RisingStarFlyer.pdf",
+        "https://www.aimhighacademy.com/docs/2026-SummerDayCamp-LittleStarFlyer.pdf",
+        "https://www.aimhighacademy.com/camps-gymnastics.aspx",
+        "https://www.aimhighacademy.com/default.aspx"
+      ],
+      "changes": [
+        "Set season_year 2026 (fixes missing required season_year); no 2027 camp dates posted",
+        "website_url now the Summer Day Camps page instead of the camps overview",
+        "Added ages 3-10 and grades 1-5 (school-age option), 9 weekly 2026 sessions at $375, price range $100-$375, extended care (8-9am, 3-5pm), meals_included false (bring lunch; pizza on Fridays), refund policy, water-play note, indoor_outdoor both",
+        "Description rewritten to the summer day camp only (dropped the separate girls' Gymnastics Training Camp and School's Out vacation camp)",
+        "Activities confirmed on the summer page (same list as the vacation camp) plus water play"
+      ],
+      "open_questions": [
+        "2027 summer dates, prices and registration opening not posted yet",
+        "The girls' Gymnastics Training Camp (ages 7-13) is a separate program and is not in this listing"
+      ]
+    },
+    "earlier_pass": {
+      "status": "ready",
       "by": "Claude",
       "date": "2026-10-27",
       "page_checked": "https://www.aimhighacademy.com/camps-summer.aspx",
@@ -108,6 +235,22 @@
       ],
       "for_andrew": [
         "2026 dates and prices are in two PDF flyers linked from camps-summer.aspx (Little Star preschool, Rising Star school age); not captured as sessions"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.aimhighacademy.com/camps.aspx",
+      "changes": [
+        "Set season_year 2026 (fixes missing required season_year); no 2027 camp dates posted",
+        "website_url now the Summer Day Camps page instead of the camps overview",
+        "Added ages 3-10 and grades 1-5 (school-age option), 9 weekly 2026 sessions at $375, price range $100-$375, extended care (8-9am, 3-5pm), meals_included false (bring lunch; pizza on Fridays), refund policy, water-play note, indoor_outdoor both",
+        "Description rewritten to the summer day camp only (dropped the separate girls' Gymnastics Training Camp and School's Out vacation camp)",
+        "Activities confirmed on the summer page (same list as the vacation camp) plus water play"
+      ],
+      "for_andrew": [
+        "2027 summer dates, prices and registration opening not posted yet",
+        "The girls' Gymnastics Training Camp (ages 7-13) is a separate program and is not in this listing"
       ]
     }
   }

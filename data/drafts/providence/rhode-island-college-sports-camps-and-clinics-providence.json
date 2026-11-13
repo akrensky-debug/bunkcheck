@@ -19,7 +19,7 @@
   "sources": [
     {
       "url": "https://www.goanchormen.com/sports/2020/10/22/Inside-Athletics-SummerSportsCamps.aspx",
-      "checked": "2026-10-27",
+      "checked": "2026-10-13",
       "fields": [
         "name",
         "operator_name",
@@ -95,13 +95,37 @@
       }
     ],
     "errors": [],
-    "first_pass": {
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.goanchormen.com/sports/2020/10/22/Inside-Athletics-SummerSportsCamps.aspx"
+      ],
+      "changes": [
+        "No field changes. On 2026-11-12 the '2026-27 Sports Camps & Clinics' page lists no programs at all; the Baseball College Prospect Clinic the draft was built from is gone."
+      ],
+      "open_questions": [
+        "Not a camp listing: an empty index page on the college athletics site. The only program it ever showed was a fall 2026 college prospect clinic for recruits, not a kids' summer camp. Recommend dropping the draft; recheck in spring if RIC posts summer youth camps."
+      ]
+    },
+    "earlier_pass": {
+      "status": "drop",
       "by": "Claude",
       "date": "2026-10-27",
       "page_checked": "https://www.goanchormen.com/sports/2020/10/22/Inside-Athletics-SummerSportsCamps.aspx",
       "changes": [],
       "for_andrew": [],
       "drop_reason": "Not a kids' summer camp: the page lists only a fall 2026 Baseball College Prospect Clinic (flyer BaseballProspectFall2026.pdf); no summer camps are posted."
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.goanchormen.com/sports/2020/10/22/Inside-Athletics-SummerSportsCamps.aspx",
+      "changes": [
+        "No field changes. On 2026-11-12 the '2026-27 Sports Camps & Clinics' page lists no programs at all; the Baseball College Prospect Clinic the draft was built from is gone."
+      ],
+      "for_andrew": [
+        "Not a camp listing: an empty index page on the college athletics site. The only program it ever showed was a fall 2026 college prospect clinic for recruits, not a kids' summer camp. Recommend dropping the draft; recheck in spring if RIC posts summer youth camps."
+      ]
     }
   }
 }

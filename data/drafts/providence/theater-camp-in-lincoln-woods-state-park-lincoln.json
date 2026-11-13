@@ -15,13 +15,14 @@
   ],
   "age_min": 5,
   "age_max": 12,
-  "description_short": "An outdoor theater day camp for ages 5-12 in Lincoln Woods State Park, running 8:30am to 3:30pm. Campers play theater games, do arts and crafts and make props and costumes, and each week ends with an outdoor performance.",
+  "description_short": "An outdoor theater day camp for ages 5-12 in Lincoln Woods State Park, 8:30am-3:30pm. Campers play theater games, rehearse, design props and costume pieces in the Craft & Create program, and each week ends with an outdoor performance. Two separate weeks in summer 2027.",
   "activities": [
     "Theater games",
     "Acting and improvisation",
     "Arts and crafts",
     "Prop and costume making (Craft & Create)",
     "Outdoor performance",
+    "Nature walks",
     "Theme days (water day, costume day, camp olympics)"
   ],
   "price_per_week": 475,
@@ -31,26 +32,10 @@
   "swim_waterfront_notes": "No swimming during camp. The park has a beach with lifeguards, and families can swim there after pickup (lifeguards are on duty until 6pm).",
   "season_year": 2027,
   "price_per": "week",
-  "sessions": [
-    {
-      "name": "Early Summer Session",
-      "start_date": "2027-06-28",
-      "end_date": "2027-07-01",
-      "price": null,
-      "availability": "unknown"
-    },
-    {
-      "name": "Late Summer Session",
-      "start_date": "2027-08-16",
-      "end_date": "2027-08-20",
-      "price": null,
-      "availability": "unknown"
-    }
-  ],
   "sources": [
     {
       "url": "https://www.studioplayground.org/summercamp",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -72,9 +57,12 @@
         "meals_included",
         "financial_aid",
         "swim_waterfront_notes",
-        "sessions"
+        "sessions",
+        "price_min",
+        "price_max",
+        "indoor_outdoor"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Re-checked 2026-11-12: 'Summer 2027 Outdoor Theater Camp Lincoln Woods State Park Ages 5-12'; 'Session 1: June 28 — July 1, 2027 / Session 2: August 16—20, 2027'; 'Pricing $395 — Early Summer Session (4 Days) / $475 — Early Summer Session (5 Days)'; 8:30 drop-off, 3:30 pick-up; students bring lunch; 'Camp is 100% outdoors'; 'Apply for Financial Aid'; no swimming during camp."
     }
   ],
   "review": {
@@ -105,20 +93,25 @@
       "ACA accreditation",
       "Special needs support"
     ],
-    "low_confidence": [
-      {
-        "field": "age_max",
-        "confidence": 0.75,
-        "quote": "Students ages 5-12"
-      },
-      {
-        "field": "price_per_week",
-        "confidence": 0.5,
-        "quote": "$475 per week"
-      }
-    ],
+    "low_confidence": [],
     "errors": [],
-    "first_pass": {
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.studioplayground.org/summercamp"
+      ],
+      "changes": [
+        "Page now posts Summer 2027: added two sessions, June 28 - July 1, 2027 (4 days, $395) and August 16-20, 2027 (5 days, $475); season_year 2027.",
+        "Added price_min 395 / price_max 475 (price_per_week 475 confirmed), indoor_outdoor 'outdoor' ('Camp is 100% outdoors'). Ages 5-12 now consistent on the page (resolves low-confidence items).",
+        "Description updated for the 2027 two-week season."
+      ],
+      "open_questions": [
+        "The page labels both prices 'Early Summer Session' ($395 4 days; $475 5 days); the 5-day $475 price is taken to be the Late Summer Session (Aug 16-20).",
+        "No registration_url set: registration opens January 2 via the same page."
+      ]
+    },
+    "earlier_pass": {
+      "status": "ready",
       "by": "Claude",
       "date": "2026-10-27",
       "page_checked": "https://www.studioplayground.org/summercamp",
@@ -130,6 +123,39 @@
       "for_andrew": [
         "Price is '$475 per week'; session prices left null because the early session is only 4 days. Registration opens January 2."
       ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.studioplayground.org/summercamp",
+      "changes": [
+        "Page now posts Summer 2027: added two sessions, June 28 - July 1, 2027 (4 days, $395) and August 16-20, 2027 (5 days, $475); season_year 2027.",
+        "Added price_min 395 / price_max 475 (price_per_week 475 confirmed), indoor_outdoor 'outdoor' ('Camp is 100% outdoors'). Ages 5-12 now consistent on the page (resolves low-confidence items).",
+        "Description updated for the 2027 two-week season."
+      ],
+      "for_andrew": [
+        "The page labels both prices 'Early Summer Session' ($395 4 days; $475 5 days); the 5-day $475 price is taken to be the Late Summer Session (Aug 16-20).",
+        "No registration_url set: registration opens January 2 via the same page."
+      ]
     }
-  }
+  },
+  "sessions": [
+    {
+      "name": "Early Summer Session (4 days)",
+      "start_date": "2027-06-28",
+      "end_date": "2027-07-01",
+      "price": 395,
+      "availability": "unknown"
+    },
+    {
+      "name": "Late Summer Session (5 days)",
+      "start_date": "2027-08-16",
+      "end_date": "2027-08-20",
+      "price": 475,
+      "availability": "unknown"
+    }
+  ],
+  "price_min": 395,
+  "price_max": 475,
+  "indoor_outdoor": "outdoor"
 }

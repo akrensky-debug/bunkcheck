@@ -6,64 +6,24 @@
   "city": "Warren",
   "state": "RI",
   "zip": "02885",
-  "registration_url": "http://warrenri.myrec.com",
-  "camp_type": "day",
-  "season_year": 2026,
-  "primary_categories": [
-    "general"
-  ],
-  "age_min": 5,
-  "age_max": 14,
-  "activities": [
-    "Arts & crafts",
-    "Games",
-    "Bowling",
-    "Weekly contests",
-    "Swimming",
-    "Field trips",
-    "Camp performances"
-  ],
-  "description_short": "Town-run, electronics-free traditional day camp for ages 5-14 at Burr's Hill Park, 9am-3pm with extended hours 7-9am and 3-5pm. Activities include arts and crafts, games, bowling, weekly contests, swimming and field trips, and campers get a free summer lunch.",
-  "price_min": 350,
-  "price_max": 600,
-  "price_per": "session",
-  "extended_care": true,
-  "meals_included": true,
-  "financial_aid": true,
-  "sessions": [
-    {
-      "name": "Summer Camp 2026 (Warren resident $350, non-resident $600)",
-      "start_date": "2026-06-24",
-      "end_date": "2026-08-14",
-      "price": null,
-      "availability": "unknown"
-    }
-  ],
   "sources": [
     {
-      "url": "https://www.census.gov/geographies/reference-files/time-series/geo/relationship-files.2020.html",
-      "checked": "2026-10-14",
-      "fields": [
-        "zip"
-      ],
-      "note": "Warren, RI sits inside one ZIP code (2020 Census ZCTA relationship file)"
-    },
-    {
       "url": "https://www.townofwarren-ri.gov/departments/parks_recreation/summer_camp.php",
-      "checked": "2026-10-27",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
         "website_url",
+        "registration_url",
+        "street_address",
         "city",
         "state",
-        "registration_url",
         "camp_type",
         "primary_categories",
         "age_min",
         "age_max",
-        "activities",
         "description_short",
+        "activities",
         "price_min",
         "price_max",
         "price_per",
@@ -71,7 +31,16 @@
         "meals_included",
         "financial_aid",
         "sessions"
-      ]
+      ],
+      "note": "Summer Camp page: 'Wednesday June 24 - Friday August 14, 2026'; Traditional Camp (ages 5-14) at Burr's Hill Park, 9 am-3 pm; extended hours 7-9 am and 3-5 pm at MVQ ($50/week resident, $100 non-resident); cost $350 Warren resident, $200 each sibling, $600 non-resident; financial assistance for Warren families; free summer lunch program; register at warrenri.myrec.com."
+    },
+    {
+      "url": "https://www.census.gov/geographies/reference-files/time-series/geo/relationship-files.2020.html",
+      "checked": "2026-10-14",
+      "fields": [
+        "zip"
+      ],
+      "note": "Warren, RI sits inside one ZIP code (2020 Census ZCTA relationship file)"
     }
   ],
   "review": {
@@ -123,8 +92,28 @@
         "quote": "Welcome to the Town of Warren, Rhode Island"
       }
     ],
-    "errors": [],
-    "first_pass": {
+    "errors": [
+      "missing required camp_type",
+      "missing required season_year",
+      "camp_type must be one of ['day', 'sleepaway', 'specialty']"
+    ],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.townofwarren-ri.gov/town_government/departments/parks_and_recreation/visit_our_summer_camp_page_here.php",
+        "https://www.townofwarren-ri.gov/departments/parks_recreation/summer_camp.php"
+      ],
+      "changes": [
+        "The draft's URL was the Town homepage text; followed its 'Summer Camp' menu link to the actual Summer Camp page and moved website_url there.",
+        "Filled from that page: camp_type day, ages 5-14, location Burr's Hill Park, registration link (warrenri.myrec.com), 2026 season June 24 - August 14 as one session at $350 (Warren resident), price range $200 (sibling) - $600 (non-resident) per summer, extended hours, free lunch, financial assistance for Warren families, activities and description. Validator now passes."
+      ],
+      "open_questions": [
+        "Nothing posted for 2027 yet.",
+        "Prices are for the whole summer (not stated per week explicitly; the page lists one fee per camper); extended hours are per week."
+      ]
+    },
+    "earlier_pass": {
+      "status": "ready",
       "by": "Claude",
       "date": "2026-10-27",
       "page_checked": "https://www.townofwarren-ri.gov/departments/parks_recreation/summer_camp.php",
@@ -136,6 +125,53 @@
       "for_andrew": [
         "Price is for the whole summer: $350 Warren resident ($200 each sibling), $600 non-resident; extended hours cost extra ($50/$100 per week). Session price left null."
       ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.townofwarren-ri.gov/town_government/departments/parks_and_recreation/visit_our_summer_camp_page_here.php",
+      "changes": [
+        "The draft's URL was the Town homepage text; followed its 'Summer Camp' menu link to the actual Summer Camp page and moved website_url there.",
+        "Filled from that page: camp_type day, ages 5-14, location Burr's Hill Park, registration link (warrenri.myrec.com), 2026 season June 24 - August 14 as one session at $350 (Warren resident), price range $200 (sibling) - $600 (non-resident) per summer, extended hours, free lunch, financial assistance for Warren families, activities and description. Validator now passes."
+      ],
+      "for_andrew": [
+        "Nothing posted for 2027 yet.",
+        "Prices are for the whole summer (not stated per week explicitly; the page lists one fee per camper); extended hours are per week."
+      ]
     }
-  }
+  },
+  "registration_url": "http://warrenri.myrec.com",
+  "street_address": "Burr's Hill Park",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "age_min": 5,
+  "age_max": 14,
+  "description_short": "The Town of Warren's summer day camp at Burr's Hill Park for ages 5-14, 9 am to 3 pm on weekdays from late June to mid-August, with extended hours from 7 am to 5 pm. An electronics-free camp with arts and crafts, games, bowling, weekly contests, swimming at the town beach, performances and field trips, and a free summer lunch program.",
+  "activities": [
+    "Arts & crafts",
+    "Games",
+    "Bowling",
+    "Weekly contests",
+    "Swimming",
+    "Camp performances",
+    "Field trips"
+  ],
+  "price_min": 200,
+  "price_max": 600,
+  "price_per": "summer",
+  "extended_care": true,
+  "meals_included": true,
+  "financial_aid": true,
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Warren Summer Camp 2026 (no camp July 6)",
+      "start_date": "2026-06-24",
+      "end_date": "2026-08-14",
+      "price": 350,
+      "availability": "unknown"
+    }
+  ]
 }

@@ -74,7 +74,7 @@
   "sources": [
     {
       "url": "https://summer.brooksschool.org/program/brooks-day-camp-8-10/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -91,17 +91,25 @@
         "age_min",
         "age_max",
         "description_short",
-        "extended_care",
-        "transportation",
         "meals_included",
         "swim_waterfront_notes",
         "sessions"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://summer.brooksschool.org/dates-rates/",
+      "checked": "2026-11-12",
+      "fields": [
+        "extended_care",
+        "transportation",
+        "financial_aid"
+      ],
+      "note": "Dates & Rates page (2027 season)"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://summer.brooksschool.org/program/brooks-day-camp-8-10/",
       "kind": "html",
@@ -136,6 +144,45 @@
         "quote": "Transportation ... Bus Routes"
       }
     ],
-    "errors": []
-  }
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://summer.brooksschool.org/program/brooks-day-camp-8-10/",
+        "https://summer.brooksschool.org/dates-rates/"
+      ],
+      "changes": [
+        "Checked all fields against the program page; name, contact, ages, activities, schedule and lunch/snacks match",
+        "2027 session dates confirmed on Dates & Rates page (June 28-July 9, July 12-23, July 26-Aug 6, Aug 9-20, 2027); prices say '2027 Pricing Coming Soon!' so session prices stay null",
+        "extended_care true now sourced to Dates & Rates: Bright Start 8:00-9:00 AM and Stay & Play 4:00-6:00 PM (resolves low-confidence item)",
+        "transportation true now sourced to Dates & Rates: weekly one-way AM and PM bus (resolves low-confidence item)",
+        "Added financial_aid true: page offers camperships and limited case-by-case financial assistance"
+      ],
+      "open_questions": [
+        "2027 tuition not posted ('2027 Pricing Coming Soon!')",
+        "Deposit is $100 per week; no refund policy on these pages",
+        "Dates & Rates shows 'Register by 10:00 AM on February 2, 2026, to receive early-bird pricing' next to 2027 sessions; likely a leftover 2026 date, 2027 early-bird deadline not confirmed",
+        "No camp July 2 and July 5 in Session 1; half day August 20"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://summer.brooksschool.org/program/brooks-day-camp-8-10/",
+      "changes": [
+        "Checked all fields against the program page; name, contact, ages, activities, schedule and lunch/snacks match",
+        "2027 session dates confirmed on Dates & Rates page (June 28-July 9, July 12-23, July 26-Aug 6, Aug 9-20, 2027); prices say '2027 Pricing Coming Soon!' so session prices stay null",
+        "extended_care true now sourced to Dates & Rates: Bright Start 8:00-9:00 AM and Stay & Play 4:00-6:00 PM (resolves low-confidence item)",
+        "transportation true now sourced to Dates & Rates: weekly one-way AM and PM bus (resolves low-confidence item)",
+        "Added financial_aid true: page offers camperships and limited case-by-case financial assistance"
+      ],
+      "for_andrew": [
+        "2027 tuition not posted ('2027 Pricing Coming Soon!')",
+        "Deposit is $100 per week; no refund policy on these pages",
+        "Dates & Rates shows 'Register by 10:00 AM on February 2, 2026, to receive early-bird pricing' next to 2027 sessions; likely a leftover 2026 date, 2027 early-bird deadline not confirmed",
+        "No camp July 2 and July 5 in Session 1; half day August 20"
+      ]
+    }
+  },
+  "financial_aid": true
 }

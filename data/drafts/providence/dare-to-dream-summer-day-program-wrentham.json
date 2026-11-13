@@ -40,7 +40,7 @@
   "sources": [
     {
       "url": "https://www.daretodreamsummer.com/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -59,6 +59,14 @@
         "sessions"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.daretodreamsummer.com/grades-56",
+      "checked": "2026-11-12",
+      "fields": [
+        "street_address"
+      ],
+      "note": "Grades 5&6 schedule page on the camp's site"
     }
   ],
   "review": {
@@ -106,7 +114,24 @@
       }
     ],
     "errors": [],
-    "first_pass": {
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.daretodreamsummer.com/",
+        "https://www.daretodreamsummer.com/grades-56"
+      ],
+      "changes": [
+        "Added street_address 'Sweatt Recreational Complex, Randall Road' (where the program begins, per the Grades 5&6 page); the PO Box 247, Wrentham MA 02093 is only the mailing address.",
+        "Confirmed name, email, Jumbula registration link, grades 3-6, 2026 dates (grades 5&6 June 22-26, grades 3&4 July 13-17), 9am-2pm days and field trips against the home page."
+      ],
+      "open_questions": [
+        "Price is not on the camp's pages; the Jumbula registration page could not be opened because the Firecrawl credits ran out mid-batch.",
+        "No 2027 dates posted; home page still describes summer 2026 and says registration is open.",
+        "Late fee after May 31 is mentioned but the amount is not stated."
+      ]
+    },
+    "earlier_pass": {
+      "status": "ready",
       "by": "Claude",
       "date": "2026-10-27",
       "page_checked": "https://www.daretodreamsummer.com/",
@@ -114,6 +139,21 @@
       "for_andrew": [
         "City/ZIP come from the mailing address PO Box 247, Wrentham MA 02093; the page does not say where the program meets. No prices on the page (on Jumbula)"
       ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.daretodreamsummer.com/",
+      "changes": [
+        "Added street_address 'Sweatt Recreational Complex, Randall Road' (where the program begins, per the Grades 5&6 page); the PO Box 247, Wrentham MA 02093 is only the mailing address.",
+        "Confirmed name, email, Jumbula registration link, grades 3-6, 2026 dates (grades 5&6 June 22-26, grades 3&4 July 13-17), 9am-2pm days and field trips against the home page."
+      ],
+      "for_andrew": [
+        "Price is not on the camp's pages; the Jumbula registration page could not be opened because the Firecrawl credits ran out mid-batch.",
+        "No 2027 dates posted; home page still describes summer 2026 and says registration is open.",
+        "Late fee after May 31 is mentioned but the amount is not stated."
+      ]
     }
-  }
+  },
+  "street_address": "Sweatt Recreational Complex, Randall Road"
 }

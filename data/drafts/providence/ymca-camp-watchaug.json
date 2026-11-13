@@ -4,16 +4,16 @@
   "operator_name": "Ocean Community YMCA",
   "website_url": "https://oceancommunityymca.org/camp-watchaug/",
   "email": "dmcgovern@oceancommunityymca.org",
-  "city": null,
-  "state": null,
-  "zip": null,
+  "city": "Charlestown",
+  "state": "RI",
+  "zip": "02813",
   "camp_type": "day",
   "primary_categories": [
     "nature",
     "sports",
     "arts"
   ],
-  "description_short": "A YMCA summer day camp on a 30-acre waterfront property on Watchaug Pond, serving over 300 campers a day. It runs ten weekly themed sessions, and some weeks also offer Watersports or Rope Adventures specialty sessions.",
+  "description_short": "A YMCA summer day camp (9am-4pm) on a 30-acre waterfront property on Watchaug Pond in Charlestown, RI, for campers from age 3 (Itty Bitty half-day camp, entering Pre-K) through entering grade 9. Ten weekly themed sessions, with Watersports and Rope Adventures specialty weeks, bus routes and extended day.",
   "activities": [
     "Swimming",
     "Watersports",
@@ -154,10 +154,18 @@
       "availability": "unknown"
     }
   ],
+  "street_address": "160 Prosser Trail",
+  "phone": "(401) 364-6535",
+  "age_min": 3,
+  "grade_max": 9,
+  "extended_care": true,
+  "meals_included": false,
+  "registration_url": "https://ops1.operations.daxko.com/Online/2024/ProgramsV2/Home.mvc",
+  "refund_policy_summary": "Cancel at least one full week before a session for a full refund minus the $30 registration fee and $50 deposit; no refunds once a session begins or for weather or waterfront closures. Full refund if the YMCA cancels a session. Transfers between sessions are free if space allows.",
   "sources": [
     {
       "url": "https://oceancommunityymca.org/camp-watchaug/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -166,14 +174,31 @@
         "camp_type",
         "primary_categories",
         "activities",
-        "description_short",
-        "transportation",
         "financial_aid",
         "special_needs_notes",
         "swim_waterfront_notes",
-        "sessions"
+        "sessions",
+        "registration_url"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://oceancommunityymca.org/wp-content/uploads/2025/11/2026-CAMP-Parent-Handbook-.pdf",
+      "checked": "2026-11-12",
+      "fields": [
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "phone",
+        "age_min",
+        "grade_max",
+        "extended_care",
+        "meals_included",
+        "refund_policy_summary",
+        "transportation",
+        "description_short"
+      ]
     }
   ],
   "review": {
@@ -248,7 +273,28 @@
       "missing required state",
       "missing required zip"
     ],
-    "first_pass": {
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://oceancommunityymca.org/camp-watchaug/",
+        "https://oceancommunityymca.org/wp-content/uploads/2025/11/2026-CAMP-Parent-Handbook-.pdf",
+        "https://oceancommunityymca.org/wp-content/uploads/2025/11/2026-Camp-Brochure-1.pdf (over the fetcher's 8 MB limit, not read)"
+      ],
+      "changes": [
+        "Added location from the 2026 Camp Parent Handbook: 160 Prosser Trail, Charlestown, RI 02813 (camp site; mailing address is 95 High Street, Westerly), phone (401) 364-6535.",
+        "Added ages: Itty Bitty Camp ages 3-4 entering Pre-K through Explorers entering grade 9 (age_min 3, grade_max 9).",
+        "Added extended care (7-9am and 4-6pm, separate registration), meals_included false (send snack and lunch), and the camp refund policy from the handbook; transportation now sourced to the handbook's bus section.",
+        "Added registration URL (the page's 'Register Online' link to Daxko).",
+        "Description now gives hours, place and age range. The 2026 session dates match the handbook."
+      ],
+      "open_questions": [
+        "Charlestown, RI is not in campfinder/seed/cities.py, so the validator fails ('city Charlestown, RI is not in cities.py'). Andrew: add Charlestown (about 45 minutes from Providence) to cities.py, then this draft should pass.",
+        "No prices: the 2026 brochure PDF is over the fetcher's 8 MB limit and the page and handbook give only the $30 registration fee and $50 deposit.",
+        "No 2027 dates or registration opening date posted yet."
+      ]
+    },
+    "earlier_pass": {
+      "status": "needs_andrew",
       "by": "Claude",
       "date": "2026-10-27",
       "page_checked": "https://oceancommunityymca.org/camp-watchaug/",
@@ -258,6 +304,23 @@
       "for_andrew": [
         "City/state/ZIP missing: the page gives no street address, only 'Watchaug Pond'. Watchaug Pond is in Charlestown, RI, which is not in cities.py and is roughly 35-40 miles from Providence, so it may be outside the metro. Decide keep or drop.",
         "No ages or prices on the page (they are in the 2026 brochure)."
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://oceancommunityymca.org/camp-watchaug/",
+      "changes": [
+        "Added location from the 2026 Camp Parent Handbook: 160 Prosser Trail, Charlestown, RI 02813 (camp site; mailing address is 95 High Street, Westerly), phone (401) 364-6535.",
+        "Added ages: Itty Bitty Camp ages 3-4 entering Pre-K through Explorers entering grade 9 (age_min 3, grade_max 9).",
+        "Added extended care (7-9am and 4-6pm, separate registration), meals_included false (send snack and lunch), and the camp refund policy from the handbook; transportation now sourced to the handbook's bus section.",
+        "Added registration URL (the page's 'Register Online' link to Daxko).",
+        "Description now gives hours, place and age range. The 2026 session dates match the handbook."
+      ],
+      "for_andrew": [
+        "Charlestown, RI is not in campfinder/seed/cities.py, so the validator fails ('city Charlestown, RI is not in cities.py'). Andrew: add Charlestown (about 45 minutes from Providence) to cities.py, then this draft should pass.",
+        "No prices: the 2026 brochure PDF is over the fetcher's 8 MB limit and the page and handbook give only the $30 registration fee and $50 deposit.",
+        "No 2027 dates or registration opening date posted yet."
       ]
     }
   }

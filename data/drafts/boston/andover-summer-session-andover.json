@@ -17,7 +17,7 @@
   "age_max": 17,
   "grade_min": 7,
   "grade_max": 12,
-  "description_short": "A five-week academic summer program at Phillips Academy in Andover, Massachusetts, for students entering grades 7–12. Students can board or attend as day students. The Lower School Institute (grades 7–8) studies several subjects under one theme, and Upper School students (grades 9–12) choose from more than 50 courses.",
+  "description_short": "A five-week academic summer program at Phillips Academy in Andover, Massachusetts, for students entering grades 7–12. Students can board or attend as day students. The Lower School Institute (grades 7–8) studies several subjects under one theme, and Upper School students (grades 9–12) choose from more than 70 courses.",
   "activities": [
     "Academic courses",
     "Afternoon activities",
@@ -25,31 +25,53 @@
     "Off-site field trips",
     "College visits in New England",
     "College counseling",
-    "SAT & SSAT prep (Princeton Review)"
+    "SAT & SSAT prep (Princeton Review)",
+    "Music lessons"
   ],
   "financial_aid": true,
   "transportation": false,
   "season_year": 2027,
   "sessions": [
     {
-      "name": "Lower School Institute (5 weeks, boarding & day)",
+      "name": "Lower School Institute, boarding (5 weeks)",
       "start_date": "2027-06-29",
       "end_date": "2027-08-01",
-      "price": null,
+      "price": 11700,
       "availability": "unknown"
     },
     {
-      "name": "Upper School (5 weeks, boarding & day)",
+      "name": "Lower School Institute, day (5 weeks)",
       "start_date": "2027-06-29",
       "end_date": "2027-08-01",
-      "price": null,
+      "price": 7950,
+      "availability": "unknown"
+    },
+    {
+      "name": "Upper School, boarding (5 weeks)",
+      "start_date": "2027-06-29",
+      "end_date": "2027-08-01",
+      "price": 11500,
+      "availability": "unknown"
+    },
+    {
+      "name": "Upper School, day, 2 courses (5 weeks)",
+      "start_date": "2027-06-29",
+      "end_date": "2027-08-01",
+      "price": 6500,
+      "availability": "unknown"
+    },
+    {
+      "name": "Upper School, day, 1 course (5 weeks)",
+      "start_date": "2027-06-29",
+      "end_date": "2027-08-01",
+      "price": 3250,
       "availability": "unknown"
     }
   ],
   "sources": [
     {
       "url": "https://www.andover.edu/summer/on-campus-programs",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -62,7 +84,6 @@
         "zip",
         "camp_type",
         "primary_categories",
-        "activities",
         "age_min",
         "age_max",
         "grade_min",
@@ -70,13 +91,25 @@
         "description_short",
         "transportation",
         "financial_aid",
-        "sessions"
+        "email"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.andover.edu/summer/on-campus-programs/tuition",
+      "checked": "2026-11-12",
+      "fields": [
+        "activities",
+        "price_min",
+        "price_max",
+        "price_per",
+        "refund_policy_summary",
+        "sessions"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.andover.edu/summer/on-campus-programs",
       "kind": "html",
@@ -116,6 +149,50 @@
         "quote": "Comprehensive College Counseling Program; Princeton Review Program (SAT & SSAT Prep)"
       }
     ],
-    "errors": []
-  }
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.andover.edu/summer/on-campus-programs",
+        "https://www.andover.edu/summer/on-campus-programs/tuition",
+        "https://www.andover.edu/summer/on-campus-programs/summer-admission"
+      ],
+      "changes": [
+        "Description: 'more than 50 courses' -> 'more than 70 courses' (page now says over 70 options)",
+        "Added email summer@andover.edu (stated on the Summer Session page)",
+        "Added 2027 tuition from the Tuition & Dates page: split sessions into LSI boarding $11,700, LSI day $7,950, Upper boarding $11,500, Upper day $6,500 (2 courses) / $3,250 (1 course); price_min 3250, price_max 11700, per session",
+        "Added refund policy (20% non-refundable deposit; 50%/25%/0 refund schedule)",
+        "Added 'Music lessons' to activities (optional add-on on the Tuition page)",
+        "Ages ~12-14 / ~14-17 confirmed as written on the page (approximate; eligibility is by grade); activities low-confidence item confirmed on the Tuition page",
+        "Application opening resolved: the page now says 'The application for summer 2027 is now open'"
+      ],
+      "open_questions": [
+        "Prices exclude mandatory fees: $400 student activities fee (boarders, LSI day), $100 health & safety (day), $400 international insurance",
+        "Meals for boarders not stated on the pages checked"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.andover.edu/summer/on-campus-programs",
+      "changes": [
+        "Description: 'more than 50 courses' -> 'more than 70 courses' (page now says over 70 options)",
+        "Added email summer@andover.edu (stated on the Summer Session page)",
+        "Added 2027 tuition from the Tuition & Dates page: split sessions into LSI boarding $11,700, LSI day $7,950, Upper boarding $11,500, Upper day $6,500 (2 courses) / $3,250 (1 course); price_min 3250, price_max 11700, per session",
+        "Added refund policy (20% non-refundable deposit; 50%/25%/0 refund schedule)",
+        "Added 'Music lessons' to activities (optional add-on on the Tuition page)",
+        "Ages ~12-14 / ~14-17 confirmed as written on the page (approximate; eligibility is by grade); activities low-confidence item confirmed on the Tuition page",
+        "Application opening resolved: the page now says 'The application for summer 2027 is now open'"
+      ],
+      "for_andrew": [
+        "Prices exclude mandatory fees: $400 student activities fee (boarders, LSI day), $100 health & safety (day), $400 international insurance",
+        "Meals for boarders not stated on the pages checked"
+      ]
+    }
+  },
+  "email": "summer@andover.edu",
+  "price_min": 3250,
+  "price_max": 11700,
+  "price_per": "session",
+  "refund_policy_summary": "A non-refundable deposit of 20% of tuition is due within two weeks of acceptance; the balance is due by May 1, 2027. 50% of paid tuition is refunded for withdrawal on or before June 15, 2027, 25% between June 16 and June 30, 2027, and none after that or on dismissal."
 }

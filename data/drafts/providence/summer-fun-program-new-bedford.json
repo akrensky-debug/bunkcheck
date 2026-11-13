@@ -2,7 +2,7 @@
   "slug": "summer-fun-program-new-bedford",
   "name": "Summer Fun Program",
   "operator_name": "Boys & Girls Club of Greater New Bedford",
-  "website_url": "https://bgcnewbedford.org/programs/summer-fun-program/",
+  "website_url": "https://bgcnewbedford.org/programs/summer-fun-program-2/",
   "phone": "(508) 992-8011",
   "street_address": "166 Jenney St.",
   "city": "New Bedford",
@@ -11,111 +11,130 @@
   "camp_type": "day",
   "age_min": 7,
   "age_max": 13,
-  "description_short": "A weekday summer day program at the Boys & Girls Club of Greater New Bedford for ages 7–13, with physical, recreational and educational activities and field trips. Children must be Club members.",
+  "description_short": "A weekday summer program (9am-4pm) at the Boys & Girls Club of Greater New Bedford, with outdoor games, gym sports, a games room, a makerspace (coding, digital art, 3D printing), arts and crafts, gardening, cooking and planned field trips. Children must be Club members.",
   "activities": [
-    "Physical activities",
-    "Recreational activities",
-    "Educational activities",
-    "Field trips"
+    "Softball, flag football, relay races and water games",
+    "Basketball, volleyball, soccer, kickball and gym games",
+    "Billiards, table tennis and board games",
+    "Makerspace: coding, Scratch, digital art and music, 3D modeling and printing",
+    "Arts & crafts",
+    "Music",
+    "Gardening",
+    "Yoga",
+    "Cooking",
+    "Book club",
+    "Outdoor exploration",
+    "Financial literacy / Torch Club",
+    "Field trips (hikes, library, art tours, farm tours)"
   ],
   "price_per_week": 50,
   "price_min": 50,
   "price_max": 50,
   "extended_care": true,
-  "meals_included": true,
-  "refund_policy_summary": "No refunds. Weekly fees are charged at the full week's rate no matter how many days the child attends. Full payment is due by the Thursday before the chosen session, and applications are only accepted with full payment. No refunds or exchanges for field trips the child does not attend.",
-  "season_year": 2023,
+  "refund_policy_summary": "No refunds. Weekly fees are charged at the full week's rate regardless of how many days the child attends. Each week's payment is due the Thursday before it starts.",
+  "season_year": 2026,
   "price_per": "week",
   "sessions": [
     {
-      "name": "Week 1",
-      "start_date": "2023-07-03",
-      "end_date": "2023-07-07",
+      "name": "Week 1 (closed Friday, July 3)",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-03",
       "price": 50,
       "availability": "unknown"
     },
     {
       "name": "Week 2",
-      "start_date": "2023-07-10",
-      "end_date": "2023-07-14",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
       "price": 50,
       "availability": "unknown"
     },
     {
       "name": "Week 3",
-      "start_date": "2023-07-17",
-      "end_date": "2023-07-21",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
       "price": 50,
       "availability": "unknown"
     },
     {
       "name": "Week 4",
-      "start_date": "2023-07-24",
-      "end_date": "2023-07-28",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
       "price": 50,
       "availability": "unknown"
     },
     {
       "name": "Week 5",
-      "start_date": "2023-07-31",
-      "end_date": "2023-08-04",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
       "price": 50,
       "availability": "unknown"
     },
     {
       "name": "Week 6",
-      "start_date": "2023-08-07",
-      "end_date": "2023-08-11",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
       "price": 50,
       "availability": "unknown"
     },
     {
       "name": "Week 7",
-      "start_date": "2023-08-14",
-      "end_date": "2023-08-18",
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-14",
       "price": 50,
       "availability": "unknown"
     },
     {
       "name": "Week 8",
-      "start_date": "2023-08-21",
-      "end_date": "2023-08-25",
+      "start_date": "2026-08-17",
+      "end_date": "2026-08-21",
       "price": 50,
       "availability": "unknown"
     }
   ],
+  "registration_url": "https://visioncps.net/form/WRForm.asp?OrgUnit=1431/6",
+  "primary_categories": [
+    "general"
+  ],
   "sources": [
     {
       "url": "https://bgcnewbedford.org/programs/summer-fun-program/",
-      "checked": "2026-10-27",
+      "checked": "2026-11-12",
+      "fields": [
+        "age_min",
+        "age_max"
+      ],
+      "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://bgcnewbedford.org/programs/summer-fun-program-2/",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
         "website_url",
+        "registration_url",
         "phone",
         "street_address",
         "city",
         "state",
         "zip",
         "camp_type",
+        "primary_categories",
         "activities",
-        "age_min",
-        "age_max",
         "description_short",
         "price_min",
         "price_max",
         "price_per_week",
         "price_per",
         "extended_care",
-        "meals_included",
         "refund_policy_summary",
         "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
     }
   ],
   "review": {
-    "status": "needs_andrew",
+    "status": "ready",
     "source": {
       "url": "https://bgcnewbedford.org/programs/summer-fun-program/",
       "kind": "html",
@@ -189,7 +208,30 @@
       }
     ],
     "errors": [],
-    "first_pass": {
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://bgcnewbedford.org/programs/summer-fun-program/",
+        "https://bgcnewbedford.org/programs/summer-fun-program-2/",
+        "https://bgcnewbedford.org/latest-news/"
+      ],
+      "changes": [
+        "Found the club's 2026 Summer Fun page (/programs/summer-fun-program-2/); the drafted page is the old 2023 one. Moved the listing to 2026: website_url now the 2026 page, season_year 2023 -> 2026.",
+        "Sessions replaced with the 2026 weekly table: Weeks 1-8, June 29 - August 21, 2026, $50 each (closed Friday, July 3).",
+        "Added registration URL (the 'Registration Opens Jan 1' link to the VisionCPS form).",
+        "Activities and description rewritten from the 2026 page (outdoor games, gym, games room, makerspace, arts, gardening, cooking, field trips); added primary category general.",
+        "Refund summary trimmed to the 2026 page (no refunds, full-week rate, payment due the Thursday before each week).",
+        "Removed meals_included: free state lunch was mentioned only for 2023; the 2026 page says nothing about lunch.",
+        "Ages 7-13 now sourced to the 2023 page, the only page that states them."
+      ],
+      "open_questions": [
+        "Ages 7-13 come only from the 2023 page; the 2026 page gives no age range.",
+        "Extra costs: $50 annual Club membership (expires 12/31/26), $10/day extended care to 5pm, $5 club T-shirt for field trips.",
+        "The 2026 page says 'Registration Opens Jan 1' with no year; nothing posted for 2027 yet."
+      ]
+    },
+    "earlier_pass": {
+      "status": "needs_andrew",
       "by": "Claude",
       "date": "2026-10-27",
       "page_checked": "https://bgcnewbedford.org/programs/summer-fun-program/",
@@ -197,6 +239,25 @@
       "for_andrew": [
         "refused: ask the owner for the brochure (bgcnewbedford.org returned 429 Too Many Requests)",
         "Draft data is from the 2023 season (season_year 2023, $50/week); needs current dates and prices"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://bgcnewbedford.org/programs/summer-fun-program/",
+      "changes": [
+        "Found the club's 2026 Summer Fun page (/programs/summer-fun-program-2/); the drafted page is the old 2023 one. Moved the listing to 2026: website_url now the 2026 page, season_year 2023 -> 2026.",
+        "Sessions replaced with the 2026 weekly table: Weeks 1-8, June 29 - August 21, 2026, $50 each (closed Friday, July 3).",
+        "Added registration URL (the 'Registration Opens Jan 1' link to the VisionCPS form).",
+        "Activities and description rewritten from the 2026 page (outdoor games, gym, games room, makerspace, arts, gardening, cooking, field trips); added primary category general.",
+        "Refund summary trimmed to the 2026 page (no refunds, full-week rate, payment due the Thursday before each week).",
+        "Removed meals_included: free state lunch was mentioned only for 2023; the 2026 page says nothing about lunch.",
+        "Ages 7-13 now sourced to the 2023 page, the only page that states them."
+      ],
+      "for_andrew": [
+        "Ages 7-13 come only from the 2023 page; the 2026 page gives no age range.",
+        "Extra costs: $50 annual Club membership (expires 12/31/26), $10/day extended care to 5pm, $5 club T-shirt for field trips.",
+        "The 2026 page says 'Registration Opens Jan 1' with no year; nothing posted for 2027 yet."
       ]
     }
   }

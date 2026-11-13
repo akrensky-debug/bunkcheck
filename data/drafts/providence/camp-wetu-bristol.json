@@ -8,17 +8,25 @@
   "city": "Bristol",
   "state": "RI",
   "zip": "02809",
-  "description_short": "Camp Wetu is a summer camp at Mount Hope Farm in Bristol, RI. The 2026 season ran six weeks and included outdoor adventures, water days and creative activities.",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "outdoor"
+  ],
   "activities": [
     "Outdoor adventures",
     "Water days",
     "Creative activities"
   ],
+  "description_short": "Camp Wetu is a summer camp at Mount Hope Farm in Bristol, RI. The 2026 season ran six weeks and included outdoor adventures, water days and creative activities.",
+  "indoor_outdoor": "outdoor",
   "season_year": 2026,
   "sources": [
     {
       "url": "https://www.mounthopefarm.org/camp-wetu",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -28,10 +36,21 @@
         "city",
         "state",
         "zip",
+        "primary_categories",
+        "secondary_categories",
+        "indoor_outdoor",
         "activities",
         "description_short"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Camp page: Summer 2026 recap ('six wonderful weeks at Mount Hope Farm filled with outdoor adventures, new discoveries, water days, creative activities'); footer address and phone"
+    },
+    {
+      "url": "https://www.mounthopefarm.org/campdirector",
+      "checked": "2026-11-12",
+      "fields": [
+        "camp_type"
+      ],
+      "note": "Camp Director job post: camp runs Monday-Friday, 8:00 AM-3:00 PM program days, seven weeks from the week of July 5 through the week of August 16"
     }
   ],
   "review": {
@@ -85,11 +104,27 @@
         "quote": "We spent six wonderful weeks at Mount Hope Farm filled with outdoor adventures, new discoveries, water days, creative activities"
       }
     ],
-    "errors": [
-      "missing required camp_type",
-      "camp_type must be one of ['day', 'sleepaway', 'specialty']"
-    ],
-    "first_pass": {
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.mounthopefarm.org/camp-wetu",
+        "https://www.mounthopefarm.org/campdirector"
+      ],
+      "changes": [
+        "Set camp_type day (fixes missing required camp_type): the camp director posting describes a Monday-Friday daytime program",
+        "Set season_year 2026 explicitly (only season described)",
+        "Categories: 'nature' was a guess; now primary general with outdoor as secondary, indoor_outdoor outdoor",
+        "Verified name, operator, phone (Mount Hope Farm footer number), address, activities and description against the page"
+      ],
+      "open_questions": [
+        "The listing has no ages, dates or prices: the page says 2027 dates and registration 'will be posted here as they become available'. Promote a bare listing now, or wait?",
+        "The Camp Director job post says next summer's camp 'runs for seven weeks, from the week of July 5 through the week of August 16' (2027), but no camper sessions or prices are posted yet",
+        "Phone is the general Mount Hope Farm number"
+      ]
+    },
+    "earlier_pass": {
+      "status": "needs_andrew",
       "by": "Claude",
       "date": "2026-10-27",
       "page_checked": "https://www.mounthopefarm.org/camp-wetu",
@@ -100,6 +135,22 @@
         "camp_type is missing: the page does not say day or overnight (likely day camp, but not stated); set it or ask Mount Hope Farm",
         "Page is a 2026 wrap-up only: no ages, prices or sessions; 2027 details not posted yet",
         "Phone 401-254-1745 is the general Mount Hope Farm number from the footer"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.mounthopefarm.org/camp-wetu",
+      "changes": [
+        "Set camp_type day (fixes missing required camp_type): the camp director posting describes a Monday-Friday daytime program",
+        "Set season_year 2026 explicitly (only season described)",
+        "Categories: 'nature' was a guess; now primary general with outdoor as secondary, indoor_outdoor outdoor",
+        "Verified name, operator, phone (Mount Hope Farm footer number), address, activities and description against the page"
+      ],
+      "for_andrew": [
+        "The listing has no ages, dates or prices: the page says 2027 dates and registration 'will be posted here as they become available'. Promote a bare listing now, or wait?",
+        "The Camp Director job post says next summer's camp 'runs for seven weeks, from the week of July 5 through the week of August 16' (2027), but no camper sessions or prices are posted yet",
+        "Phone is the general Mount Hope Farm number"
       ]
     }
   }

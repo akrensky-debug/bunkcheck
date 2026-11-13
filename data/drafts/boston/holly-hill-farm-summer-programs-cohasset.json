@@ -15,9 +15,6 @@
     "nature",
     "arts"
   ],
-  "age_min": 3,
-  "age_max": 15,
-  "description_short": "Half-day and full-day summer programs on a working certified organic farm in Cohasset, MA, for children ages 3.5-14 plus a Counselor-in-Training program for ages 12-15. Children care for farm animals, garden, explore woods, marsh and pond habitats, and do art, cooking and outdoor skills, in groups by age.",
   "activities": [
     "Farm animal care",
     "Organic gardening and harvesting",
@@ -31,17 +28,20 @@
     "Living history",
     "Counselor-in-Training leadership"
   ],
-  "price_per_week": 511,
-  "price_min": 166,
+  "age_min": 3,
+  "age_max": 15,
+  "description_short": "Half-day and full-day summer programs on a working certified organic farm in Cohasset, MA, for children ages 3.5-14 plus a Counselor-in-Training program for ages 12-15. Children care for farm animals, garden, explore woods, marsh and pond habitats, and do art, cooking and outdoor skills, in groups by age.",
+  "price_min": 212,
   "price_max": 603,
-  "financial_aid": true,
+  "price_per_week": 511,
+  "price_per": "week",
   "extended_care": true,
   "meals_included": false,
+  "financial_aid": true,
   "refund_policy_summary": "Cancellations must be in writing. More than 3 weeks before the session start: refund minus a $100 fee per child per week ($15 for CIT). Less than 3 weeks before: no refund, unless the spot is refilled (then refund minus $100). Session changes count as cancellations, except swaps made within 72 hours of registering and by Feb 15, which cost $50. Switching between half and full day is free.",
   "special_needs_notes": "Garden Goats (ages 3.5-5) campers must be reliably potty-trained (no pull-ups). Staff can give only EpiPens and inhalers, no other medication. Requests to place a child outside their age group go to the Education Director, Wendy Prentiss (wendy@hollyhillfarm.org).",
   "swim_waterfront_notes": "No swimming is mentioned. Campers explore the farm's Ice Pond, ponds and marsh habitats.",
   "season_year": 2026,
-  "price_per": "week",
   "sessions": [
     {
       "name": "Garden Goats (3.5-5) Week 1",
@@ -299,7 +299,7 @@
   "sources": [
     {
       "url": "https://hollyhillfarm.org/summer-programs-2026",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -333,7 +333,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://hollyhillfarm.org/summer-programs-2026",
       "kind": "html",
@@ -383,6 +383,38 @@
         "quote": "Full Day 9 am-3 pm*: Tier-A $566 Tier-B $511 Tier-C $435"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://hollyhillfarm.org/summer-programs-2026",
+        "https://hollyhillfarm.org/"
+      ],
+      "changes": [
+        "price_min 166 -> 212: with price_per 'week', the lowest weekly price is the CIT half-day Tier C $212 ($166 is the 2-day Stepping Back in Time program, not a week)",
+        "All other fields checked against the 2026 Summer Programs page and match: 12 weeks June 8 to Aug 28, Tier B session prices, $85 membership, early drop-off 8-9 am, cancellation terms, Garden Goats potty-training rule",
+        "Low-confidence items confirmed: price_per_week 511 (Tier B full day), session prices, swim notes (no swimming mentioned; Ice Pond is a habitat)"
+      ],
+      "open_questions": [
+        "2027 summer programs, prices and registration dates not posted yet",
+        "Prices are tiered (A/B/C); sessions use Tier B, the cost-to-run price",
+        "Environmental Leadership 3-day program (ages 11-14) has no dates on the page and is left out"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://hollyhillfarm.org/summer-programs-2026",
+      "changes": [
+        "price_min 166 -> 212: with price_per 'week', the lowest weekly price is the CIT half-day Tier C $212 ($166 is the 2-day Stepping Back in Time program, not a week)",
+        "All other fields checked against the 2026 Summer Programs page and match: 12 weeks June 8 to Aug 28, Tier B session prices, $85 membership, early drop-off 8-9 am, cancellation terms, Garden Goats potty-training rule",
+        "Low-confidence items confirmed: price_per_week 511 (Tier B full day), session prices, swim notes (no swimming mentioned; Ice Pond is a habitat)"
+      ],
+      "for_andrew": [
+        "2027 summer programs, prices and registration dates not posted yet",
+        "Prices are tiered (A/B/C); sessions use Tier B, the cost-to-run price",
+        "Environmental Leadership 3-day program (ages 11-14) has no dates on the page and is left out"
+      ]
+    }
   }
 }

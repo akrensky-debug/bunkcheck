@@ -15,7 +15,7 @@
   ],
   "age_min": 11,
   "age_max": 18,
-  "description_short": "A tennis day camp for ages 11-18 at the Weymouth Club, run by USPTR/USPTA pros. Each day includes drills, match play, a weekly ladder, fitness, and an elective that can be free swim, from 9:00 a.m. to 3:00 p.m.",
+  "description_short": "A tennis day camp for ages 11-18 at the Weymouth Club, run by USPTR/USPTA pros, from 9:00 a.m. to 3:00 p.m. Each day includes live-ball hitting, drills, match play with a weekly ladder, fitness, and an elective such as tennis games or free swim.",
   "activities": [
     "Tennis live ball hitting",
     "Stroke and game drills",
@@ -31,12 +31,12 @@
   "extended_care": true,
   "meals_included": false,
   "swim_waterfront_notes": "Free swim is offered as one of the 2:15-3:00 electives. The page does not say anything about swim testing or lifeguards.",
-  "season_year": 2026,
+  "season_year": 2027,
   "sessions": [
     {
-      "name": "Summer 2026 camp season (seasonal camp days)",
-      "start_date": "2026-06-15",
-      "end_date": "2026-09-04",
+      "name": "Summer 2027 camp season",
+      "start_date": "2027-06-14",
+      "end_date": "2027-09-03",
       "price": null,
       "availability": "unknown"
     }
@@ -44,7 +44,7 @@
   "sources": [
     {
       "url": "https://www.weymouthclub.com/camps/tennis-academy-ages-11-18/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -63,14 +63,21 @@
         "description_short",
         "extended_care",
         "meals_included",
-        "swim_waterfront_notes",
-        "sessions"
+        "swim_waterfront_notes"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.weymouthclub.com/camps/tfa-camp-traditional-track-ages-6-13/",
+      "checked": "2026-11-12",
+      "fields": [
+        "sessions"
+      ],
+      "note": "TFA Traditional Track page: '2026 / 2027 dates' table covering TFA and Tennis Academy"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.weymouthclub.com/camps/tennis-academy-ages-11-18/",
       "kind": "html",
@@ -96,6 +103,38 @@
       "Availability"
     ],
     "low_confidence": [],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.weymouthclub.com/camps/tennis-academy-ages-11-18/",
+        "https://www.weymouthclub.com/camps/tfa-camp-traditional-track-ages-6-13/"
+      ],
+      "changes": [
+        "Updated to 2027: the TFA page's '2026 / 2027 dates' table (covers TFA and Tennis Academy) lists 'June 14 – Sept. 3rd Summer Camp' (Mon June 14 to Fri Sept 3, 2027); season_year 2027",
+        "Description reworded to match the page's daily schedule",
+        "Confirmed contact (TFACamp@weymouthclub.com, 781-337-4600), extended care 8-9am and 3-5pm, own nut-free lunch, free swim elective"
+      ],
+      "open_questions": [
+        "Ages: own page says 11-18; the TFA dates table says 'Tennis Academy (10-18)* Must be approved by Camp Director'.",
+        "No Tennis Academy price; TFA page shows only 'Summer Camp Pricing 2026' ($469 member / $569 non-member per week) without saying it applies to Tennis Academy.",
+        "No summer registration link; the page sends families to the TFA page, which currently has only a Thanksgiving camp JotForm. Dates marked 'subject to change'."
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.weymouthclub.com/camps/tennis-academy-ages-11-18/",
+      "changes": [
+        "Updated to 2027: the TFA page's '2026 / 2027 dates' table (covers TFA and Tennis Academy) lists 'June 14 – Sept. 3rd Summer Camp' (Mon June 14 to Fri Sept 3, 2027); season_year 2027",
+        "Description reworded to match the page's daily schedule",
+        "Confirmed contact (TFACamp@weymouthclub.com, 781-337-4600), extended care 8-9am and 3-5pm, own nut-free lunch, free swim elective"
+      ],
+      "for_andrew": [
+        "Ages: own page says 11-18; the TFA dates table says 'Tennis Academy (10-18)* Must be approved by Camp Director'.",
+        "No Tennis Academy price; TFA page shows only 'Summer Camp Pricing 2026' ($469 member / $569 non-member per week) without saying it applies to Tennis Academy.",
+        "No summer registration link; the page sends families to the TFA page, which currently has only a Thanksgiving camp JotForm. Dates marked 'subject to change'."
+      ]
+    }
   }
 }

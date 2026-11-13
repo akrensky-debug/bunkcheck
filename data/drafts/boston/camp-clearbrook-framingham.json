@@ -41,12 +41,12 @@
   "refund_policy_summary": "You pay a non-refundable $50 deposit per week, per child. Deposits can be moved to other camps before April 1 but not after. The deadline to cancel or transfer is May 31. After that there are no refunds, credits or transfers. Changes must be requested in writing by email. A credit or refund (minus the deposit) may be given for an illness or injury lasting 3 or more days if you send a doctor's note before the session ends.",
   "special_needs_notes": "The YMCA aims to include all children and asks families to share any needs ahead of time so staff can plan. It says it is not a therapeutic or special needs organization and cannot provide specialized levels of support. Contact the Director of Inclusion, Laina Abolfazli: (508) 876-6094, labolfazli@metrowestymca.org.",
   "swim_waterfront_notes": "The site has a large outdoor pool and a splash pad. Campers get daily swim lessons and a recreational swim. They take a swim evaluation on the first day (\"Test. Evaluate. Protect.\"; new campers are tested on Mondays, with retests on Fridays or on request) and get a necklace showing which parts of the pool they may use. Red-neckband swimmers must wear a Coast Guard-approved flotation device during open swim.",
-  "season_year": 2027,
+  "season_year": 2026,
   "price_per": "week",
   "sources": [
     {
       "url": "https://www.metrowestymca.org/camp/camp-clearbrook",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -79,7 +79,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.metrowestymca.org/camp/camp-clearbrook",
       "kind": "html",
@@ -129,6 +129,41 @@
         "quote": "We offer AM and PM care from 7:00 AM - 9:00 AM and 4:15 PM - 6:00 PM (snack included)"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.metrowestymca.org/camp/camp-clearbrook"
+      ],
+      "changes": [
+        "season_year changed from 2027 to 2026: the page says '2027 Dates Coming Soon!' and posts no 2027 sessions; the weekly prices carry no year and sit next to a '2026 Camp Clearbrook' sticker",
+        "Confirmed name, operator, address (Clearbrook Swim Club, 120 Parker Road, Framingham 01702), phone (508) 879-4420, email, grades 1-6, 9:00 AM-2:00 PM hours, 2/3/5-day options and all nine weekly prices ($144-$357)",
+        "meals_included true confirmed: breakfast and lunch included (free meals at Framingham-based camps)",
+        "financial_aid true confirmed: Y-Assist partial financial assistance",
+        "Refund policy, inclusion notes and swim evaluation text match the FAQ"
+      ],
+      "open_questions": [
+        "2027 dates, weekly themes and prices not posted ('2027 Dates Coming Soon! (10 weeks)'); unclear if the listed prices will hold for 2027",
+        "extended_care: shared FAQ gives AM care 7:00-9:00 AM and PM care 4:15-6:00 PM, but Clearbrook ends at 2:00 PM; whether PM care exists at this site is unclear",
+        "Members get priority registration; no 2027 registration date posted"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.metrowestymca.org/camp/camp-clearbrook",
+      "changes": [
+        "season_year changed from 2027 to 2026: the page says '2027 Dates Coming Soon!' and posts no 2027 sessions; the weekly prices carry no year and sit next to a '2026 Camp Clearbrook' sticker",
+        "Confirmed name, operator, address (Clearbrook Swim Club, 120 Parker Road, Framingham 01702), phone (508) 879-4420, email, grades 1-6, 9:00 AM-2:00 PM hours, 2/3/5-day options and all nine weekly prices ($144-$357)",
+        "meals_included true confirmed: breakfast and lunch included (free meals at Framingham-based camps)",
+        "financial_aid true confirmed: Y-Assist partial financial assistance",
+        "Refund policy, inclusion notes and swim evaluation text match the FAQ"
+      ],
+      "for_andrew": [
+        "2027 dates, weekly themes and prices not posted ('2027 Dates Coming Soon! (10 weeks)'); unclear if the listed prices will hold for 2027",
+        "extended_care: shared FAQ gives AM care 7:00-9:00 AM and PM care 4:15-6:00 PM, but Clearbrook ends at 2:00 PM; whether PM care exists at this site is unclear",
+        "Members get priority registration; no 2027 registration date posted"
+      ]
+    }
   }
 }

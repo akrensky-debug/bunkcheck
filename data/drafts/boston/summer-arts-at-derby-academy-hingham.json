@@ -4,6 +4,7 @@
   "operator_name": "Derby Academy",
   "website_url": "https://www.derbyacademy.org/summer2026/programs-and-tuition/summer-arts",
   "registration_url": "http://derbyacademysummer.campbrainregistration.com/",
+  "email": "summer@derbyacademy.org",
   "phone": "781-749-0746",
   "street_address": "56 Burditt Avenue",
   "city": "Hingham",
@@ -14,9 +15,6 @@
     "arts",
     "performing_arts"
   ],
-  "age_min": 8,
-  "age_max": 15,
-  "description_short": "Half-day (9:00 AM–12:00 PM) arts programs for ages 8–15 at Derby Academy in Hingham, covering theater, tech theater, visual arts, culinary arts and dance. Each session ends with a showcase or gallery.",
   "activities": [
     "Acting/drama",
     "Musical theater",
@@ -26,34 +24,38 @@
     "Culinary arts/baking",
     "Float building"
   ],
+  "age_min": 8,
+  "age_max": 15,
+  "description_short": "Half-day (9:00 AM–12:00 PM) arts camps for ages 8–15 at Derby Academy in Hingham, covering theater, tech theater, visual arts, culinary arts and dance, in one- to three-week sessions. Each session ends with a showcase or gallery. An Extended Day option runs to 4:00 PM and includes lunch.",
   "extended_care": true,
-  "season_year": 2026,
+  "financial_aid": true,
+  "season_year": 2027,
   "sessions": [
     {
       "name": "Theater Pathway: Performance/Drama – Session 1",
-      "start_date": "2026-06-28",
-      "end_date": "2026-07-16",
+      "start_date": "2027-06-28",
+      "end_date": "2027-07-16",
       "price": null,
       "availability": "unknown"
     },
     {
       "name": "Theater Pathway: Performance/Drama – Session 2",
-      "start_date": "2026-07-26",
-      "end_date": "2026-08-13",
+      "start_date": "2027-07-26",
+      "end_date": "2027-08-13",
       "price": null,
       "availability": "unknown"
     },
     {
       "name": "Theater Pathway: Tech Theater – Session 1",
-      "start_date": "2026-06-28",
-      "end_date": "2026-07-16",
+      "start_date": "2027-06-28",
+      "end_date": "2027-07-16",
       "price": null,
       "availability": "unknown"
     },
     {
       "name": "Theater Pathway: Tech Theater – Session 2",
-      "start_date": "2026-07-26",
-      "end_date": "2026-08-13",
+      "start_date": "2027-07-26",
+      "end_date": "2027-08-13",
       "price": null,
       "availability": "unknown"
     }
@@ -61,7 +63,7 @@
   "sources": [
     {
       "url": "https://www.derbyacademy.org/summer2026/programs-and-tuition/summer-arts",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -77,15 +79,23 @@
         "activities",
         "age_min",
         "age_max",
-        "description_short",
-        "extended_care",
         "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Drafted by the listing tool from this page; header gives Summer 2027 dates"
+    },
+    {
+      "url": "https://www.derbyacademy.org/summer2026/tuition-and-financial-aid",
+      "checked": "2026-11-12",
+      "fields": [
+        "email",
+        "financial_aid",
+        "extended_care",
+        "description_short"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.derbyacademy.org/summer2026/programs-and-tuition/summer-arts",
       "kind": "html",
@@ -145,6 +155,40 @@
         "quote": "Tech Theater (3-week sessions: June 28–July 16 & July 26–August 13)"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.derbyacademy.org/summer2026/programs-and-tuition/summer-arts",
+        "https://www.derbyacademy.org/summer2026/tuition-and-financial-aid"
+      ],
+      "changes": [
+        "Moved to season 2027: the site header now reads 'Summer 2027 Dates: Week 1 - 6/28 - 7/2 ... Week 7 - 8/9 - 8/13', so the theater sessions June 28-July 16 and July 26-Aug 13 are 2027 dates (Mon to Fri in 2027); resolves the season_year and session-date low-confidence items",
+        "Added email summer@derbyacademy.org and financial_aid true (Tuition Assistance, from the Tuition and Financial Aid page)",
+        "extended_care confirmed: Extended Day add-on to 4:00 PM ($300/week in 2026) with lunch; description now mentions it and the session lengths",
+        "registration_url confirmed (CampBrain 'Register' link)"
+      ],
+      "open_questions": [
+        "Only 2026 tuition is posted (1-week arts camps $550-$650, Derby Dance 2 weeks $1,150, Theater 3 weeks $1,700, Extended Day $300/week); 2027 prices not posted, so no prices recorded",
+        "1- and 2-week arts camps (Bake Shop, Dance, Float, Visual Art, etc.) have no week assignments on the page",
+        "Tuition Assistance deadline shown both as April 1, 2027 and 04/01/26"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.derbyacademy.org/summer2026/programs-and-tuition/summer-arts",
+      "changes": [
+        "Moved to season 2027: the site header now reads 'Summer 2027 Dates: Week 1 - 6/28 - 7/2 ... Week 7 - 8/9 - 8/13', so the theater sessions June 28-July 16 and July 26-Aug 13 are 2027 dates (Mon to Fri in 2027); resolves the season_year and session-date low-confidence items",
+        "Added email summer@derbyacademy.org and financial_aid true (Tuition Assistance, from the Tuition and Financial Aid page)",
+        "extended_care confirmed: Extended Day add-on to 4:00 PM ($300/week in 2026) with lunch; description now mentions it and the session lengths",
+        "registration_url confirmed (CampBrain 'Register' link)"
+      ],
+      "for_andrew": [
+        "Only 2026 tuition is posted (1-week arts camps $550-$650, Derby Dance 2 weeks $1,150, Theater 3 weeks $1,700, Extended Day $300/week); 2027 prices not posted, so no prices recorded",
+        "1- and 2-week arts camps (Bake Shop, Dance, Float, Visual Art, etc.) have no week assignments on the page",
+        "Tuition Assistance deadline shown both as April 1, 2027 and 04/01/26"
+      ]
+    }
   }
 }

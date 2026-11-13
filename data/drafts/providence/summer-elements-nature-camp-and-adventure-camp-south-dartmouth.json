@@ -5,7 +5,7 @@
   "website_url": "https://www.elementslearning.org/summer",
   "email": "info@elementslearning.org",
   "phone": "508-441-4660",
-  "street_address": "92 Allen’s Neck Rd.",
+  "street_address": "92 Allen's Neck Rd.",
   "city": "South Dartmouth",
   "state": "MA",
   "zip": "02748",
@@ -128,7 +128,7 @@
   "sources": [
     {
       "url": "https://www.elementslearning.org/summer",
-      "checked": "2026-10-27",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -149,17 +149,19 @@
         "price_per",
         "financial_aid",
         "refund_policy_summary",
-        "sessions"
+        "sessions",
+        "indoor_outdoor"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Re-checked 2026-11-12: '2026 Dates: July 7 - August 13. Tues, Wed, & Thurs only | Time: 9am-3pm'; Nature Camp ages 5-9, Adventure Camp 9-13, six themed weeks each; 'COST PER WEEK: Tier 1 - $270 | Tier 2 - $250 | Tier 3 - $215' (sessions use Tier 2, full cost); 'Scholarships are available'; $50 non-refundable deposit, balance by June 12, refund rules; campers are outdoors."
     },
     {
       "url": "https://www.elementslearning.org/contact",
-      "checked": "2026-10-27",
+      "checked": "2026-11-12",
       "fields": [
         "street_address",
         "zip"
-      ]
+      ],
+      "note": "Contact page 'Where to Find Us: Street Address: 92 Allen’s Neck Rd. Dartmouth, MA 02748' (Round The Bend Farm, South Dartmouth, where camp is held)."
     }
   ],
   "review": {
@@ -188,55 +190,26 @@
       "Support for children with special needs",
       "Swimming or waterfront activities"
     ],
-    "low_confidence": [
-      {
-        "field": "price_per_week",
-        "confidence": 0.6,
-        "quote": "COST PER WEEK: Tier 1 - $270  |  Tier 2 - $250  |  Tier 3 - $215"
-      },
-      {
-        "field": "price_min",
-        "confidence": 0.6,
-        "quote": "Tier 3 - $215"
-      },
-      {
-        "field": "price_max",
-        "confidence": 0.6,
-        "quote": "Tier 1 - $270"
-      },
-      {
-        "field": "financial_aid",
-        "confidence": 0.75,
-        "quote": "Scholarships are available for both Nature Camp & Adventure Camp"
-      },
-      {
-        "field": "refund_policy_summary",
-        "confidence": 0.7,
-        "quote": "Cancellations made prior to 4 weeks will be reimbursed, minus the $50 deposit."
-      },
-      {
-        "field": "sessions[0].start_date",
-        "confidence": 0.4,
-        "quote": "Week 1: MiniBeasts (July 7-9)"
-      },
-      {
-        "field": "sessions[6].start_date",
-        "confidence": 0.4,
-        "quote": "Week 1: Day Hiking & Survival (July 7-9)"
-      },
-      {
-        "field": "sessions[0].price",
-        "confidence": 0.4,
-        "quote": "Tier 2 - Covers the full cost of your program."
-      },
-      {
-        "field": "description_short",
-        "confidence": 0.6,
-        "quote": "2026 Dates: July 7 - August 13. Tues, Wed, & Thurs only | Time: 9am-3pm"
-      }
-    ],
+    "low_confidence": [],
     "errors": [],
-    "first_pass": {
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.elementslearning.org/summer",
+        "https://www.elementslearning.org/contact",
+        "https://www.elementslearning.org/rtbfarm"
+      ],
+      "changes": [
+        "Added street address 92 Allen's Neck Rd. and ZIP 02748 from the Contact page ('Where to Find Us'); validator now passes.",
+        "Re-checked all 12 sessions, sliding-scale prices, scholarships, deposit/refund terms and description against the page: they match (resolves low-confidence items). Added indoor_outdoor 'outdoor'."
+      ],
+      "open_questions": [
+        "Only Summer 2026 is posted; 'Keep an eye out for Summer 2027 information in early January.'",
+        "Each session is 3 days (Tue-Thu); session price uses the Tier 2 (full cost) $250 rate."
+      ]
+    },
+    "earlier_pass": {
+      "status": "ready",
       "by": "Claude",
       "date": "2026-10-27",
       "page_checked": "https://www.elementslearning.org/summer",
@@ -247,6 +220,20 @@
         "Page says Summer 2027 information comes in early January; refresh then",
         "Session prices use the Tier 2 rate ($250); sliding scale is $215-$270"
       ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.elementslearning.org/summer",
+      "changes": [
+        "Added street address 92 Allen's Neck Rd. and ZIP 02748 from the Contact page ('Where to Find Us'); validator now passes.",
+        "Re-checked all 12 sessions, sliding-scale prices, scholarships, deposit/refund terms and description against the page: they match (resolves low-confidence items). Added indoor_outdoor 'outdoor'."
+      ],
+      "for_andrew": [
+        "Only Summer 2026 is posted; 'Keep an eye out for Summer 2027 information in early January.'",
+        "Each session is 3 days (Tue-Thu); session price uses the Tier 2 (full cost) $250 rate."
+      ]
     }
-  }
+  },
+  "indoor_outdoor": "outdoor"
 }

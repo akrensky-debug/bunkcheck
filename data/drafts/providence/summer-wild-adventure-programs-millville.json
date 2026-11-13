@@ -96,7 +96,7 @@
   "sources": [
     {
       "url": "https://www.earthltd.org/wild-adventure-programs/summer/",
-      "checked": "2026-10-27",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -115,9 +115,11 @@
         "price_min",
         "price_max",
         "meals_included",
-        "sessions"
+        "sessions",
+        "price_per",
+        "indoor_outdoor"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Re-checked 2026-11-12: '2026 Summer Program Sessions', nine sessions with dates, grades, hours and non-member prices (incl. Eventbrite fees) match; 'We spend most of the day outdoors'; lunch is brought from home, snacks provided; EARTH Nature Center, 67 Vineyard Street, Millville, MA 01529."
     }
   ],
   "review": {
@@ -150,35 +152,25 @@
       "Whether a deposit is required or full payment is due at registration",
       "Transportation"
     ],
-    "low_confidence": [
-      {
-        "field": "street_address",
-        "confidence": 0.5,
-        "quote": "EARTH Nature Center 67 Vineyard Street Millville, MA 01529"
-      },
-      {
-        "field": "city",
-        "confidence": 0.5,
-        "quote": "Millville, MA 01529"
-      },
-      {
-        "field": "state",
-        "confidence": 0.6,
-        "quote": "Millville, MA 01529"
-      },
-      {
-        "field": "zip",
-        "confidence": 0.5,
-        "quote": "Millville, MA 01529"
-      },
-      {
-        "field": "meals_included",
-        "confidence": 0.75,
-        "quote": "Lunch & snacks – We provide snacks and water during morning and afternoon snack time."
-      }
-    ],
+    "low_confidence": [],
     "errors": [],
-    "first_pass": {
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.earthltd.org/wild-adventure-programs/summer/"
+      ],
+      "changes": [
+        "Re-checked all nine 2026 sessions (dates, grades, hours, non-member prices), activities, grades K-11 and contact: all match the page.",
+        "Added price_per 'session' (prices vary by session length) and indoor_outdoor 'outdoor' ('We spend most of the day outdoors').",
+        "meals_included false kept: families send lunch; only snacks and water are provided (resolves low-confidence item). Address kept as EARTH Nature Center, Millville (the only address on the page; resolves low-confidence items)."
+      ],
+      "open_questions": [
+        "Programs take place at Southwick's Zoo (Mendon, MA), but the page gives no street address for the drop-off spot ('will be updated in early June').",
+        "No 2027 sessions posted yet."
+      ]
+    },
+    "earlier_pass": {
+      "status": "ready",
       "by": "Claude",
       "date": "2026-10-27",
       "page_checked": "https://www.earthltd.org/wild-adventure-programs/summer/",
@@ -188,6 +180,22 @@
         "meals_included false: campers bring lunch, but the program provides snacks and water",
         "Session prices are non-member rates incl. Eventbrite fees; members get 10% off"
       ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.earthltd.org/wild-adventure-programs/summer/",
+      "changes": [
+        "Re-checked all nine 2026 sessions (dates, grades, hours, non-member prices), activities, grades K-11 and contact: all match the page.",
+        "Added price_per 'session' (prices vary by session length) and indoor_outdoor 'outdoor' ('We spend most of the day outdoors').",
+        "meals_included false kept: families send lunch; only snacks and water are provided (resolves low-confidence item). Address kept as EARTH Nature Center, Millville (the only address on the page; resolves low-confidence items)."
+      ],
+      "for_andrew": [
+        "Programs take place at Southwick's Zoo (Mendon, MA), but the page gives no street address for the drop-off spot ('will be updated in early June').",
+        "No 2027 sessions posted yet."
+      ]
     }
-  }
+  },
+  "price_per": "session",
+  "indoor_outdoor": "outdoor"
 }

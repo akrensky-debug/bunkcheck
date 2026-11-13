@@ -4,12 +4,12 @@
   "operator_name": "West Warwick Civic Center (Town of West Warwick)",
   "website_url": "https://westwarwickri.gov/civic-center",
   "phone": "401-822-9200",
-  "street_address": "100 Factory Street (Thomas A. Lamb Field House)",
+  "street_address": "100 Factory Street",
   "city": "West Warwick",
   "state": "RI",
   "zip": "02893",
   "camp_type": "day",
-  "description_short": "A town-run summer day program at the Thomas A. Lamb Field House in West Warwick, running 8:00 AM to 3:00 PM on weekdays. Early drop-off and late pick-up are available for an extra fee.",
+  "description_short": "A town-run summer day program at the Thomas A. Lamb Field House in West Warwick, June 16 - August 14, 2026, weekdays 8:00 AM to 3:00 PM. Early drop-off from 7:30 AM and late pick-up to 3:30 PM are available for an extra fee. Paid by the week, with early-bird discounts for paying in full.",
   "extended_care": true,
   "season_year": 2026,
   "sessions": [
@@ -24,7 +24,7 @@
   "sources": [
     {
       "url": "https://westwarwickri.gov/civic-center",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -34,11 +34,20 @@
         "city",
         "state",
         "camp_type",
-        "description_short",
         "extended_care",
         "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Re-checked 2026-11-12: 'WEST WARWICK SUMMER PROGRAM is FULL - 2026 REGISTRATION IS CLOSED'; 'Dates: June 16, 2026 – August 14, 2026'; 'Hours: 8:00 AM – 3:00 PM'; Thomas A. Lamb Field House (100 Factory Street); early drop-off 7:30 and late pick-up to 3:30 (additional fee). Phone is the Town Hall line in the page footer."
+    },
+    {
+      "url": "https://westwarwickri.gov/index.asp?SEC=5B604F5C-E48E-468C-ADF2-33A87C0D434E&DE=BA73515B-6EFA-4AA4-9F89-5AE8468F9EAB",
+      "checked": "2026-11-12",
+      "fields": [
+        "email",
+        "description_short",
+        "primary_categories"
+      ],
+      "note": "2026 Summer Program announcement: same dates/hours/location; early-bird tiers (2 free weeks if paid in full by March 1, 2026; 1 free week by May 1); 'Valid for week-to-week payments only'; 'email Westwarwickprograms@gmail.com'. General town day program."
     },
     {
       "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=100+Factory+Street+%28Thomas+A.+Lamb+Field+House%29&city=West+Warwick&state=RI&benchmark=Public_AR_Current&format=json",
@@ -78,15 +87,26 @@
       "Special needs accommodations",
       "ZIP code for 100 Factory Street"
     ],
-    "low_confidence": [
-      {
-        "field": "phone",
-        "confidence": 0.5,
-        "quote": "Phone: 401-822-9200 | Fax: 401-822-9266"
-      }
-    ],
+    "low_confidence": [],
     "errors": [],
-    "first_pass": {
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://westwarwickri.gov/civic-center",
+        "https://westwarwickri.gov/index.asp?SEC=5B604F5C-E48E-468C-ADF2-33A87C0D434E&DE=BA73515B-6EFA-4AA4-9F89-5AE8468F9EAB"
+      ],
+      "changes": [
+        "Added the program email Westwarwickprograms@gmail.com from the 2026 Summer Program announcement page.",
+        "Phone 401-822-9200 kept: it is the only phone on the page (Town Hall footer line), resolving the low-confidence item.",
+        "street_address trimmed to '100 Factory Street'; primary category general; description adds the week-to-week payment and early-bird discounts."
+      ],
+      "open_questions": [
+        "No ages/grades and no weekly price on either page.",
+        "No 2027 information yet; 2026 registration opened in winter ('It may be chilly outside ... registration ... is now open') with no exact date."
+      ]
+    },
+    "earlier_pass": {
+      "status": "ready",
       "by": "Claude",
       "date": "2026-10-27",
       "page_checked": "https://westwarwickri.gov/civic-center",
@@ -96,6 +116,24 @@
       "for_andrew": [
         "Phone 401-822-9200 is the town hall number from the page footer, not a camp-specific line. No ages or prices on the page."
       ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://westwarwickri.gov/civic-center",
+      "changes": [
+        "Added the program email Westwarwickprograms@gmail.com from the 2026 Summer Program announcement page.",
+        "Phone 401-822-9200 kept: it is the only phone on the page (Town Hall footer line), resolving the low-confidence item.",
+        "street_address trimmed to '100 Factory Street'; primary category general; description adds the week-to-week payment and early-bird discounts."
+      ],
+      "for_andrew": [
+        "No ages/grades and no weekly price on either page.",
+        "No 2027 information yet; 2026 registration opened in winter ('It may be chilly outside ... registration ... is now open') with no exact date."
+      ]
     }
-  }
+  },
+  "email": "Westwarwickprograms@gmail.com",
+  "primary_categories": [
+    "general"
+  ]
 }

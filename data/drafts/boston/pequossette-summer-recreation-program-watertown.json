@@ -94,7 +94,7 @@
   "sources": [
     {
       "url": "https://www.watertown-ma.gov/pequossette-summer-recreation-program",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -114,7 +114,8 @@
         "price_per",
         "extended_care",
         "refund_policy_summary",
-        "sessions"
+        "sessions",
+        "email"
       ],
       "note": "Drafted by the listing tool from this page"
     },
@@ -125,10 +126,18 @@
         "zip"
       ],
       "note": "Watertown, MA sits inside one ZIP code (2020 Census ZCTA relationship file)"
+    },
+    {
+      "url": "https://www.watertown-ma.gov/asset/efaac5a5-0d20-4235-85bc-79db6ddf0fc5",
+      "checked": "2026-11-12",
+      "fields": [
+        "street_address"
+      ],
+      "note": "Summer 2026 Recreation Program General Information PDF: J.R. Lowell Elementary School, 123 Lowell Avenue"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.watertown-ma.gov/pequossette-summer-recreation-program",
       "kind": "html",
@@ -157,13 +166,41 @@
       "ZIP code",
       "ACA accreditation"
     ],
-    "low_confidence": [
-      {
-        "field": "deposit_required",
-        "confidence": 0.6,
-        "quote": "For registrants choosing to use the deposit option"
-      }
-    ],
-    "errors": []
-  }
+    "low_confidence": [],
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.watertown-ma.gov/pequossette-summer-recreation-program",
+        "https://www.watertown-ma.gov/asset/efaac5a5-0d20-4235-85bc-79db6ddf0fc5"
+      ],
+      "changes": [
+        "Added email Recreation@watertown-ma.gov (page's 'Email Recreation' link)",
+        "Added street_address 123 Lowell Avenue (J.R. Lowell Elementary School) from the 2026 General Information PDF",
+        "Confirmed all 2026 weeks, prices, hours, grades K-8 and cancellation policy against the page"
+      ],
+      "open_questions": [
+        "Week 2 resident price: web page says $200, the General Information PDF says $205. Draft keeps the web page's $200.",
+        "No 2027 dates, prices or registration dates posted. 2026: residents January 1, non-residents February 1.",
+        "Page shows Extended Day as '3:30 AM – 5:30 PM' (typo for PM)."
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.watertown-ma.gov/pequossette-summer-recreation-program",
+      "changes": [
+        "Added email Recreation@watertown-ma.gov (page's 'Email Recreation' link)",
+        "Added street_address 123 Lowell Avenue (J.R. Lowell Elementary School) from the 2026 General Information PDF",
+        "Confirmed all 2026 weeks, prices, hours, grades K-8 and cancellation policy against the page"
+      ],
+      "for_andrew": [
+        "Week 2 resident price: web page says $200, the General Information PDF says $205. Draft keeps the web page's $200.",
+        "No 2027 dates, prices or registration dates posted. 2026: residents January 1, non-residents February 1.",
+        "Page shows Extended Day as '3:30 AM – 5:30 PM' (typo for PM)."
+      ]
+    }
+  },
+  "email": "Recreation@watertown-ma.gov",
+  "street_address": "123 Lowell Avenue"
 }

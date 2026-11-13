@@ -29,61 +29,68 @@
     "Growing and preparing healthy snacks"
   ],
   "refund_policy_summary": "The 10% deposit is non-refundable. Cancel 60+ days before the start for a 90% refund, or 30–59 days before for a 50% refund. No refund within 30 days of the start, during a session, or for missed days. All fees are refunded if camp is cancelled for public health reasons. You can switch sessions for free if space allows.",
-  "season_year": 2026,
+  "season_year": 2027,
   "sessions": [
     {
       "name": "Week 1",
-      "start_date": "2026-06-29",
-      "end_date": "2026-07-02",
+      "start_date": "2027-06-21",
+      "end_date": "2027-06-24",
       "price": null,
       "availability": "unknown"
     },
     {
       "name": "Week 2",
-      "start_date": "2026-07-06",
-      "end_date": "2026-07-09",
+      "start_date": "2027-06-28",
+      "end_date": "2027-07-01",
       "price": null,
       "availability": "unknown"
     },
     {
       "name": "Week 3",
-      "start_date": "2026-07-13",
-      "end_date": "2026-07-16",
+      "start_date": "2027-07-05",
+      "end_date": "2027-07-08",
       "price": null,
       "availability": "unknown"
     },
     {
       "name": "Week 4",
-      "start_date": "2026-07-20",
-      "end_date": "2026-07-23",
+      "start_date": "2027-07-12",
+      "end_date": "2027-07-15",
       "price": null,
       "availability": "unknown"
     },
     {
       "name": "Week 5",
-      "start_date": "2026-07-27",
-      "end_date": "2026-07-30",
+      "start_date": "2027-07-19",
+      "end_date": "2027-07-22",
       "price": null,
       "availability": "unknown"
     },
     {
       "name": "Week 6",
-      "start_date": "2026-08-03",
-      "end_date": "2026-08-06",
+      "start_date": "2027-07-26",
+      "end_date": "2027-07-29",
       "price": null,
       "availability": "unknown"
     },
     {
       "name": "Week 7",
-      "start_date": "2026-08-10",
-      "end_date": "2026-08-13",
+      "start_date": "2027-08-02",
+      "end_date": "2027-08-05",
       "price": null,
       "availability": "unknown"
     },
     {
       "name": "Week 8",
-      "start_date": "2026-08-17",
-      "end_date": "2026-08-20",
+      "start_date": "2027-08-09",
+      "end_date": "2027-08-12",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 9",
+      "start_date": "2027-08-16",
+      "end_date": "2027-08-19",
       "price": null,
       "availability": "unknown"
     }
@@ -91,7 +98,7 @@
   "sources": [
     {
       "url": "https://levitatecamps.com/creative-camp/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -112,10 +119,18 @@
         "sessions"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://levitatecamps.com/faq/",
+      "checked": "2026-11-12",
+      "fields": [
+        "meals_included"
+      ],
+      "note": "FAQ: what to bring (own healthy snack), camp locations"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://levitatecamps.com/creative-camp/",
       "kind": "html",
@@ -140,13 +155,43 @@
       "Transportation",
       "Spots left in each session"
     ],
-    "low_confidence": [
-      {
-        "field": "sessions[0].registration_opens_at",
-        "confidence": 0.7,
-        "quote": "2026 Camp Registration February 27 9AM"
-      }
-    ],
-    "errors": []
-  }
+    "low_confidence": [],
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://levitatecamps.com/creative-camp/",
+        "https://levitatecamps.com/registration/",
+        "https://levitatecamps.com/info/",
+        "https://levitatecamps.com/faq/",
+        "https://www.levitatecamps.com/products/creative-camp"
+      ],
+      "changes": [
+        "Updated to the 2027 season: the page now shows nine Monday-Thursday weeks, 6/21-6/24 through 8/16-8/19, under the '2027 Camp Registration January 22 9AM' banner (6/21 is a Monday only in 2027); season_year 2027",
+        "Added meals_included=false: FAQ says Creative Camp kids bring a 'Healthy Snack (no peanut/nut products please!)' and water",
+        "Confirmed ages 5-10, 8:30-11:30am hours, address 1871 Ocean St. Marshfield 02050, refund policy and UltraCamp registration link"
+      ],
+      "open_questions": [
+        "Session dates on the page have no year; 2027 inferred from the banner and weekdays.",
+        "No price posted for Creative Camp.",
+        "Page text still says 'We have revamped our curriculum for 2026'."
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://levitatecamps.com/creative-camp/",
+      "changes": [
+        "Updated to the 2027 season: the page now shows nine Monday-Thursday weeks, 6/21-6/24 through 8/16-8/19, under the '2027 Camp Registration January 22 9AM' banner (6/21 is a Monday only in 2027); season_year 2027",
+        "Added meals_included=false: FAQ says Creative Camp kids bring a 'Healthy Snack (no peanut/nut products please!)' and water",
+        "Confirmed ages 5-10, 8:30-11:30am hours, address 1871 Ocean St. Marshfield 02050, refund policy and UltraCamp registration link"
+      ],
+      "for_andrew": [
+        "Session dates on the page have no year; 2027 inferred from the banner and weekdays.",
+        "No price posted for Creative Camp.",
+        "Page text still says 'We have revamped our curriculum for 2026'."
+      ]
+    }
+  },
+  "meals_included": false
 }

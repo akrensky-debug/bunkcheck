@@ -14,7 +14,7 @@
   "primary_categories": [
     "sports"
   ],
-  "description_short": "Weeklong basketball day camps run by One on One Basketball at Moses Brown School in Providence and at the South Kingstown Recreational Center. You can choose full-day or half-day (morning or afternoon) options.",
+  "description_short": "Weeklong basketball day camps run by One on One Basketball (camp director Coach Frank Luca) at Moses Brown School in Providence, plus an August week at the South Kingstown Recreational Center. Ages 5-15, full day or half day (morning or afternoon), shooting, defense and court-awareness stations, scrimmages and skills competitions, 9 to 1 camper-to-coach ratio. No prior experience needed.",
   "activities": [
     "Basketball"
   ],
@@ -22,6 +22,27 @@
   "price_max": 345,
   "season_year": 2026,
   "sessions": [
+    {
+      "name": "Moses Brown Summer Hoops - June - Full Day (8:30AM-3:00PM), no camp June 19",
+      "start_date": "2026-06-15",
+      "end_date": "2026-06-18",
+      "price": 276,
+      "availability": "unknown"
+    },
+    {
+      "name": "Moses Brown Summer Hoops - June - 1/2 Day AM (8:30AM-12:00PM), no camp June 19",
+      "start_date": "2026-06-15",
+      "end_date": "2026-06-18",
+      "price": 156,
+      "availability": "unknown"
+    },
+    {
+      "name": "Moses Brown Summer Hoops - June - 1/2 Day PM (12:00PM-3:00PM), no camp June 19",
+      "start_date": "2026-06-15",
+      "end_date": "2026-06-18",
+      "price": 156,
+      "availability": "unknown"
+    },
     {
       "name": "8a. Moses Brown Summer Hoops - August - Full Day (8:30AM-3:00PM)",
       "start_date": "2026-08-10",
@@ -68,14 +89,21 @@
   "sources": [
     {
       "url": "https://providence.1on1basketball.com/programs?type=1",
-      "checked": "2026-10-27",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
         "website_url",
-        "registration_url",
         "email",
-        "phone",
+        "phone"
+      ],
+      "note": "One on One Basketball Providence camps page; on 2026-11-12 it lists no camps (the South Kingstown August sessions were read from it on 2026-10-13)"
+    },
+    {
+      "url": "https://www.camps.mosesbrown.org/items-2/one-on-one-basketball",
+      "checked": "2026-11-12",
+      "fields": [
+        "registration_url",
         "street_address",
         "city",
         "state",
@@ -84,11 +112,13 @@
         "primary_categories",
         "activities",
         "description_short",
+        "age_min",
+        "age_max",
         "price_min",
         "price_max",
         "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Moses Brown camps portal, One on One Basketball page: Ages 5-15; $276 (June), $345 (August) full day; $156/$195 half day; weeks June 15 (no camp June 19) and August 10. South Kingstown sessions ($200 full, $115 half, Aug 24-28) from the One on One page as of 2026-10-13"
     }
   ],
   "review": {
@@ -115,15 +145,29 @@
       "Session availability",
       "When registration opens"
     ],
-    "low_confidence": [
-      {
-        "field": "name",
-        "confidence": 0.7,
-        "quote": "Moses Brown Summer Hoops"
-      }
-    ],
+    "low_confidence": [],
     "errors": [],
-    "first_pass": {
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://providence.1on1basketball.com/programs?type=1",
+        "https://providence.1on1basketball.com/programs?type=All",
+        "https://www.camps.mosesbrown.org/",
+        "https://www.camps.mosesbrown.org/sportscamps",
+        "https://www.camps.mosesbrown.org/items-2/one-on-one-basketball"
+      ],
+      "changes": [
+        "Added the June 15 to 18, 2026 Moses Brown week (no camp June 19): $276 full day, $156 half day, from the Moses Brown camp portal the camp registers through.",
+        "Added ages 5 to 15 and rewrote the description from the Moses Brown camp page.",
+        "Moved address, prices and sessions to the Moses Brown camp page as source; confirmed registration URL camps.mosesbrown.org."
+      ],
+      "open_questions": [
+        "The One on One camps page now lists no camps, so the South Kingstown Aug 24 to 28 sessions ($200/$115) could not be re-checked on 2026-11-12; kept from the 2026-10-13 read.",
+        "2027: the Moses Brown portal says registration for Summer 2027 opens mid-January; One on One has posted no 2027 camp dates."
+      ]
+    },
+    "earlier_pass": {
+      "status": "ready",
       "by": "Claude",
       "date": "2026-10-27",
       "page_checked": "https://providence.1on1basketball.com/programs?type=1",
@@ -132,6 +176,22 @@
         "Only 2026 sessions (Aug 10-14 Moses Brown, Aug 24-28 South Kingstown) are posted; no 2027 dates yet.",
         "No ages or grades are given on the camps list page."
       ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://providence.1on1basketball.com/programs?type=1",
+      "changes": [
+        "Added the June 15 to 18, 2026 Moses Brown week (no camp June 19): $276 full day, $156 half day, from the Moses Brown camp portal the camp registers through.",
+        "Added ages 5 to 15 and rewrote the description from the Moses Brown camp page.",
+        "Moved address, prices and sessions to the Moses Brown camp page as source; confirmed registration URL camps.mosesbrown.org."
+      ],
+      "for_andrew": [
+        "The One on One camps page now lists no camps, so the South Kingstown Aug 24 to 28 sessions ($200/$115) could not be re-checked on 2026-11-12; kept from the 2026-10-13 read.",
+        "2027: the Moses Brown portal says registration for Summer 2027 opens mid-January; One on One has posted no 2027 camp dates."
+      ]
     }
-  }
+  },
+  "age_min": 5,
+  "age_max": 15
 }

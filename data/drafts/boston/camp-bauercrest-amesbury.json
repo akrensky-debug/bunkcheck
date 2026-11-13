@@ -2,7 +2,7 @@
   "slug": "camp-bauercrest-amesbury",
   "name": "Camp Bauercrest",
   "website_url": "https://bauercrest.org",
-  "registration_url": "https://bauercrest.campintouch.com/ui/forms/application/camper/App",
+  "registration_url": "https://bauercrest.campintouch.com/ui/login/Login?t=HfTBfW0tWRuT9x6cYx0-NgiUzfyuRQ3w1FiVPMZR94UJMeR82BJJD_4EC-B3CirLZLl-up7KQjdWcMPO05Eb2flldwFOZHvlQXKzi8hDYXUMGYjS51va33Z2oFC16r6aMG1PfkjeAUWzDRXx8FjXUu55OEOPw_otQh5Q0mDeIR_nN5j8tSAkwsZBqJWfBMCIH3XEG5JnDGHj03pW5mr2ttEZAoH-u1TrYOwke8nsQkNEMyqI15L-reitYpoiesb5C2uHeKIH6TSKt3HFWuk-LLdrmHMa3itpkv8Pvxf4jiDDMIXaTFWOfyo_sKGnbQt9X00VNlGqFDfzOyLBdkWbPPPEg356Sb51EAWkVTdxkh4JCR4d",
   "phone": "(978) 388-4732",
   "street_address": "17 Old County Road",
   "city": "Amesbury",
@@ -14,7 +14,7 @@
     "faith",
     "arts"
   ],
-  "description_short": "Overnight camp for boys in Amesbury, MA, focused on sports in a Jewish setting. Families can choose a 7-week full summer, one of two 3.5-week sessions, or a 2-week Mini Camp for first-time campers up to 6th grade.",
+  "description_short": "Overnight summer camp for boys 7–17 in Amesbury, MA, built around sports and Jewish values. Families choose a 7-week full summer, one of two 3.5-week sessions, or a 2-week Mini Camp for first-time campers up to 6th grade.",
   "activities": [
     "Athletics",
     "Water sports",
@@ -23,7 +23,7 @@
   "price_min": 4200,
   "price_max": 13200,
   "financial_aid": true,
-  "refund_policy_summary": "Deposits cannot be refunded once a spot is reserved. Cancellations must be sent in writing by email. Full tuition is due by May 20, 2027 to keep the spot. Payment plans: pay in full, half now and half in January, or 4-, 6- or 8-month plans charged on the 20th of each month.",
+  "refund_policy_summary": "Deposits are nonrefundable once a spot is reserved. Cancellations must be sent in writing by email. Pay in full, half in January and half in May, or a 4-, 6- or 8-month plan charged on the 20th. Tuition is due in full by May 20; enrollments on or after May 1 pay in full at enrollment.",
   "season_year": 2027,
   "sessions": [
     {
@@ -79,11 +79,10 @@
   "sources": [
     {
       "url": "https://bauercrest.org/about/dates-rates/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "website_url",
-        "registration_url",
         "phone",
         "street_address",
         "city",
@@ -92,18 +91,28 @@
         "camp_type",
         "primary_categories",
         "activities",
-        "description_short",
         "price_min",
         "price_max",
         "financial_aid",
-        "refund_policy_summary",
-        "sessions"
+        "sessions",
+        "registration_url",
+        "refund_policy_summary"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://bauercrest.org/",
+      "checked": "2026-11-12",
+      "fields": [
+        "age_min",
+        "age_max",
+        "gender_policy",
+        "description_short"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://bauercrest.org/about/dates-rates/",
       "kind": "html",
@@ -136,6 +145,47 @@
         "quote": "Athletics Water Sports Creative Arts & Digital Media"
       }
     ],
-    "errors": []
-  }
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://bauercrest.org/about/dates-rates/",
+        "https://bauercrest.org/"
+      ],
+      "changes": [
+        "Re-checked 2027 dates and prices against the page (updated 2026-11-06): all sessions, prices and Training Camp dates match",
+        "Refund/payment summary corrected: the plan is 'half in January and half in May' (draft said 'half now and half in January'); added the May 1 full-payment rule; dropped the year from the May 20 deadline because the page prints 'May 20, 2007'",
+        "Added age_min 7, age_max 17 and gender_policy boys from the homepage ('Overnight summer camp for boys 7-17')",
+        "Description now names the 7-17 age range from the homepage",
+        "registration_url changed to the page's 'Enroll for Summer 2027' link (CampInTouch); the draft's /ui/forms/application/camper/App link is not on the page",
+        "Activities kept: they are the site's own program pages (Athletics, Water Sports, Creative Arts & Digital Media)"
+      ],
+      "open_questions": [
+        "The page's final tuition deadline reads 'May 20, 2007' (typo for 2027?)",
+        "The Training Camp banner says 'Boys 1st-5th Grade' while the dates table says 'up to 6th grade'",
+        "Footer shows an ACA logo but it links to aijcamps.org, so aca_accredited is left empty"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://bauercrest.org/about/dates-rates/",
+      "changes": [
+        "Re-checked 2027 dates and prices against the page (updated 2026-11-06): all sessions, prices and Training Camp dates match",
+        "Refund/payment summary corrected: the plan is 'half in January and half in May' (draft said 'half now and half in January'); added the May 1 full-payment rule; dropped the year from the May 20 deadline because the page prints 'May 20, 2007'",
+        "Added age_min 7, age_max 17 and gender_policy boys from the homepage ('Overnight summer camp for boys 7-17')",
+        "Description now names the 7-17 age range from the homepage",
+        "registration_url changed to the page's 'Enroll for Summer 2027' link (CampInTouch); the draft's /ui/forms/application/camper/App link is not on the page",
+        "Activities kept: they are the site's own program pages (Athletics, Water Sports, Creative Arts & Digital Media)"
+      ],
+      "for_andrew": [
+        "The page's final tuition deadline reads 'May 20, 2007' (typo for 2027?)",
+        "The Training Camp banner says 'Boys 1st-5th Grade' while the dates table says 'up to 6th grade'",
+        "Footer shows an ACA logo but it links to aijcamps.org, so aca_accredited is left empty"
+      ]
+    }
+  },
+  "age_min": 7,
+  "age_max": 17,
+  "gender_policy": "boys"
 }

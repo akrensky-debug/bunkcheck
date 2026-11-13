@@ -1,6 +1,7 @@
 {
   "slug": "camp-evergreen-andover",
   "name": "Camp Evergreen",
+  "operator_name": "Loscutoff family",
   "website_url": "https://www.campevergreen.com/",
   "registration_url": "https://www.campevergreen.com/registration.html",
   "email": "office@campevergreen.com",
@@ -9,11 +10,11 @@
   "city": "Andover",
   "state": "MA",
   "zip": "01810",
+  "camp_type": "day",
   "primary_categories": [
     "nature",
     "sports"
   ],
-  "description_short": "A summer camp in Harold Parker State Forest in Andover, MA, with lakes, ponds and hiking trails. Activities include swimming, canoeing, football and woodshop, and the camp also runs a spring vacation week.",
   "activities": [
     "swimming",
     "canoeing",
@@ -21,11 +22,59 @@
     "football",
     "woodshop"
   ],
-  "swim_waterfront_notes": "The camp is in Harold Parker State Forest, with lakes and ponds on site. Swimming and canoeing are offered. The page does not say whether lifeguards are on duty or how swim levels are tested.",
+  "age_min": 5,
+  "age_max": 14,
+  "description_short": "A day camp in Harold Parker State Forest in Andover, MA, for ages 5 to 14, with lakes, ponds and hiking trails. Activities include swimming, canoeing, football and woodshop, and the camp also runs a spring vacation week.",
+  "price_min": 649,
+  "price_max": 713,
+  "price_per": "week",
+  "extended_care": true,
+  "transportation": true,
+  "meals_included": false,
+  "refund_policy_summary": "A 25% per-week registration fee is included in tuition and is non-refundable. Tuition is due in full by May 1 and is non-refundable once paid. Cancellations must be in writing before May 1 for any refund; camp credit only for documented medical withdrawals. 5% early-bird discount before January 31.",
+  "swim_waterfront_notes": "The camp has an in-ground pool with a diving board, an above-ground pool and a boating pond. Only deep-end swimmers may go on canoe trips. The pages checked do not say how swim levels are tested or about lifeguards.",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Session 1 (weeks 1-2; no camp July 3)",
+      "start_date": "2026-06-22",
+      "end_date": "2026-07-02",
+      "price": 1298,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 2 (weeks 3-4)",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-17",
+      "price": 1398,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 3 (weeks 5-6)",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-31",
+      "price": 1398,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 4 (weeks 7-8)",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-14",
+      "price": 1398,
+      "availability": "unknown"
+    },
+    {
+      "name": "Extended Summer (week 9, one-week session)",
+      "start_date": "2026-08-17",
+      "end_date": "2026-08-21",
+      "price": 713,
+      "availability": "unknown"
+    }
+  ],
   "sources": [
     {
       "url": "https://www.campevergreen.com/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "website_url",
@@ -38,14 +87,57 @@
         "zip",
         "primary_categories",
         "activities",
-        "description_short",
-        "swim_waterfront_notes"
+        "description_short"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.campevergreen.com/about_us.html",
+      "checked": "2026-11-12",
+      "fields": [
+        "operator_name"
+      ]
+    },
+    {
+      "url": "https://www.campevergreen.com/faqandofficialpolicies.html",
+      "checked": "2026-11-12",
+      "fields": [
+        "camp_type",
+        "age_min",
+        "age_max",
+        "meals_included"
+      ]
+    },
+    {
+      "url": "https://www.campevergreen.com/tuition.html",
+      "checked": "2026-11-12",
+      "fields": [
+        "price_min",
+        "price_max",
+        "price_per",
+        "extended_care",
+        "transportation",
+        "refund_policy_summary"
+      ]
+    },
+    {
+      "url": "https://irp.cdn-website.com/ed7bd1aa/DESKTOP/pdf/calendar%202026_1_.pdf",
+      "checked": "2026-11-12",
+      "fields": [
+        "sessions"
+      ],
+      "note": "2026 calendar PDF; prices per session from the 2026 Summer Tuition page"
+    },
+    {
+      "url": "https://www.campevergreen.com/facilities.html",
+      "checked": "2026-11-12",
+      "fields": [
+        "swim_waterfront_notes"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.campevergreen.com/",
       "kind": "html",
@@ -79,10 +171,54 @@
         "quote": "explore lakes, ponds, and hiking trails in a beautiful natural setting"
       }
     ],
-    "errors": [
-      "missing required camp_type",
-      "missing required season_year",
-      "camp_type must be one of ['day', 'sleepaway', 'specialty']"
-    ]
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.campevergreen.com/",
+        "https://www.campevergreen.com/tuition.html",
+        "https://www.campevergreen.com/calendar.html",
+        "https://irp.cdn-website.com/ed7bd1aa/DESKTOP/pdf/calendar%202026_1_.pdf",
+        "https://www.campevergreen.com/faqandofficialpolicies.html",
+        "https://www.campevergreen.com/registration.html",
+        "https://www.campevergreen.com/facilities.html",
+        "https://www.campevergreen.com/about_us.html"
+      ],
+      "changes": [
+        "Set camp_type day (FAQ: Monday to Friday, 9 am to 3:55 pm) and season_year 2026 (only 2026 tuition and calendar are posted)",
+        "Added ages 5 to 14 (FAQ: 'Camp serves children age 5 to 14')",
+        "Added 2026 sessions from the 2026 calendar PDF: four two-week sessions June 22 to Aug 14 and Extended Summer week 9 Aug 17-21; prices from the 2026 tuition page ($1,398 per two weeks, $1,298 for session 1 after the $100 July 3 deduction, $713 week 9)",
+        "Added price_min 649 / price_max 713 per week (per-week rate falls from $713 to $649 with more weeks)",
+        "Added extended_care true ($60 AM / $100 PM per week), transportation true ($150/week to Stoneham, Winchester, Wakefield, Reading stops), meals_included false (campers bring lunch)",
+        "Added refund policy and operator (Loscutoff family, About Us)",
+        "Description now says day camp and ages 5 to 14; swim notes now name the two pools and the boating pond (Facilities page)",
+        "Resolved errors: camp_type and season_year now set; low-confidence primary_categories kept (nature, sports fit the page)"
+      ],
+      "open_questions": [
+        "2027 tuition, calendar and registration dates not posted yet; the Registration page still lists the 2026 dates",
+        "The 2026 calendar PDF shows the last Friday as '11'; read as Aug 21 (week 9 runs Aug 17-21)",
+        "Late Nights carry an extra fee (amount not stated)"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.campevergreen.com/",
+      "changes": [
+        "Set camp_type day (FAQ: Monday to Friday, 9 am to 3:55 pm) and season_year 2026 (only 2026 tuition and calendar are posted)",
+        "Added ages 5 to 14 (FAQ: 'Camp serves children age 5 to 14')",
+        "Added 2026 sessions from the 2026 calendar PDF: four two-week sessions June 22 to Aug 14 and Extended Summer week 9 Aug 17-21; prices from the 2026 tuition page ($1,398 per two weeks, $1,298 for session 1 after the $100 July 3 deduction, $713 week 9)",
+        "Added price_min 649 / price_max 713 per week (per-week rate falls from $713 to $649 with more weeks)",
+        "Added extended_care true ($60 AM / $100 PM per week), transportation true ($150/week to Stoneham, Winchester, Wakefield, Reading stops), meals_included false (campers bring lunch)",
+        "Added refund policy and operator (Loscutoff family, About Us)",
+        "Description now says day camp and ages 5 to 14; swim notes now name the two pools and the boating pond (Facilities page)",
+        "Resolved errors: camp_type and season_year now set; low-confidence primary_categories kept (nature, sports fit the page)"
+      ],
+      "for_andrew": [
+        "2027 tuition, calendar and registration dates not posted yet; the Registration page still lists the 2026 dates",
+        "The 2026 calendar PDF shows the last Friday as '11'; read as Aug 21 (week 9 runs Aug 17-21)",
+        "Late Nights carry an extra fee (amount not stated)"
+      ]
+    }
   }
 }

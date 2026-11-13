@@ -4,8 +4,9 @@
   "operator_name": "Concord Recreation Department",
   "website_url": "http://summercamp.concordma.gov/251/Camp-Three-Rivers",
   "registration_url": "https://concordrec.myrec.com/info/activities/default.aspx?CategoryID=1547&type=",
+  "email": "concordrec@concordma.gov",
   "phone": "978-287-1050",
-  "street_address": "90 Stow Street (Hunt Recreation Center)",
+  "street_address": "90 Stow Street (Emerson Field, Hunt Recreation Center)",
   "city": "Concord",
   "state": "MA",
   "zip": "01742",
@@ -16,9 +17,6 @@
     "nature",
     "performing_arts"
   ],
-  "grade_min": 0,
-  "grade_max": 10,
-  "description_short": "A town-run summer day camp in Concord, MA, for children entering kindergarten through 8th grade, with a counselor-in-training (CIT) program for grades 9–10. Activities include swimming, art, sports, nature/science, music/drama and archery, plus weekly field trips. Older groups go on more trips each week.",
   "activities": [
     "swimming",
     "art",
@@ -31,19 +29,81 @@
     "themed weeks",
     "CIT leadership workshops"
   ],
-  "swim_waterfront_notes": "Swimming is listed as an activity for all age groups. The page does not say where swimming takes place or how it is supervised.",
+  "grade_min": 0,
+  "grade_max": 10,
+  "description_short": "A town-run summer day camp in Concord, MA, at Emerson Field, for children entering kindergarten through 8th grade, with a counselor-in-training (CIT) program for grades 9–10. Activities include swimming, art, sports, nature/science, music/drama and archery, plus weekly field trips. Older groups go on more trips each week.",
+  "extended_care": true,
+  "transportation": false,
+  "meals_included": false,
+  "refund_policy_summary": "A 50% deposit is due at registration in February and is non-refundable; the other 50% is due May 1. Cancelling before May 1 costs a $35 fee. After May 1, a 50% refund of the final payment (less $35) is possible if June weeks are cancelled by May 8, July weeks by June 1 and August weeks by July 1. Transfers cost $35.",
+  "swim_waterfront_notes": "Campers swim at the outdoor Emerson Pool, closed to the public during camp and staffed by certified water safety instructors and lifeguards. Free swim only, no lessons. Campers take a swim test to use the deep end.",
   "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Week 1 (no camp June 19)",
+      "start_date": "2026-06-15",
+      "end_date": "2026-06-18",
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 2",
+      "start_date": "2026-06-22",
+      "end_date": "2026-06-26",
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 3 (no camp July 3)",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-02",
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 4",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 5",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 6",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-23",
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 7",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 8",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 9",
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-14",
+      "availability": "unknown"
+    }
+  ],
   "sources": [
     {
       "url": "http://summercamp.concordma.gov/251/Camp-Three-Rivers",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
         "website_url",
         "registration_url",
         "phone",
-        "street_address",
         "city",
         "state",
         "zip",
@@ -52,14 +112,34 @@
         "activities",
         "grade_min",
         "grade_max",
-        "description_short",
-        "swim_waterfront_notes"
+        "description_short"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "http://summercamp.concordma.gov/DocumentCenter/View/4479/Camp-Three-Rivers-Parent-Packet-2026",
+      "checked": "2026-11-12",
+      "fields": [
+        "email",
+        "street_address",
+        "extended_care",
+        "transportation",
+        "meals_included",
+        "swim_waterfront_notes",
+        "sessions"
+      ],
+      "note": "Camp Three Rivers 2026 Parent Packet (updated January 2026)"
+    },
+    {
+      "url": "http://summercamp.concordma.gov/DocumentCenter/View/4460/Summer-Camp-and-Kaleidoscope-Cancellation-Policy",
+      "checked": "2026-11-12",
+      "fields": [
+        "refund_policy_summary"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "http://summercamp.concordma.gov/251/Camp-Three-Rivers",
       "kind": "html",
@@ -105,6 +185,45 @@
         "quote": "they will enjoy swimming, sports, archery, and all-camp activities"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "http://summercamp.concordma.gov/251/Camp-Three-Rivers",
+        "http://summercamp.concordma.gov/DocumentCenter/View/4479/Camp-Three-Rivers-Parent-Packet-2026",
+        "http://summercamp.concordma.gov/DocumentCenter/View/4460/Summer-Camp-and-Kaleidoscope-Cancellation-Policy",
+        "https://concordrec.myrec.com/info/activities/default.aspx?CategoryID=1547&type=",
+        "http://summercamp.concordma.gov/164/Summer-Camps-Programs"
+      ],
+      "changes": [
+        "Street address: camp runs at Emerson Field, 90 Stow Street (Parent Packet), so the low-confidence address is confirmed and labelled",
+        "Added the nine 2026 camp weeks (June 15 to Aug 14) from the 2026 Parent Packet; prices not given there",
+        "Added email concordrec@concordma.gov, extended_care true (AM 7:30-8:45, PM 4:00-6:00), transportation false (parents transport), meals_included false (lunch from home)",
+        "Swim notes now say Emerson Pool, lifeguards and WSIs, free swim only, deep-end swim test",
+        "Added cancellation and deposit policy from the Cancellation & Transfer Policy (effective Jan 9, 2026)",
+        "Description now names Emerson Field; season_year 2026 confirmed by the 2026 Parent Packet"
+      ],
+      "open_questions": [
+        "Weekly prices are not on the camp page or packet, and the registration portal has no summer camp listings now",
+        "2027 dates and prices not posted"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "http://summercamp.concordma.gov/251/Camp-Three-Rivers",
+      "changes": [
+        "Street address: camp runs at Emerson Field, 90 Stow Street (Parent Packet), so the low-confidence address is confirmed and labelled",
+        "Added the nine 2026 camp weeks (June 15 to Aug 14) from the 2026 Parent Packet; prices not given there",
+        "Added email concordrec@concordma.gov, extended_care true (AM 7:30-8:45, PM 4:00-6:00), transportation false (parents transport), meals_included false (lunch from home)",
+        "Swim notes now say Emerson Pool, lifeguards and WSIs, free swim only, deep-end swim test",
+        "Added cancellation and deposit policy from the Cancellation & Transfer Policy (effective Jan 9, 2026)",
+        "Description now names Emerson Field; season_year 2026 confirmed by the 2026 Parent Packet"
+      ],
+      "for_andrew": [
+        "Weekly prices are not on the camp page or packet, and the registration portal has no summer camp listings now",
+        "2027 dates and prices not posted"
+      ]
+    }
   }
 }
