@@ -1,7 +1,7 @@
 {
   "slug": "kingsley-pines-camp-raymond",
   "name": "Kingsley Pines Camp",
-  "website_url": "https://kingsleypines.com/rates-dates/",
+  "website_url": "https://kingsleypines.com",
   "registration_url": "https://kingsleypines.campintouch.com/ui/forms/application/camper/App",
   "email": "info@kingsleypines.com",
   "phone": "207-894-9030",
@@ -10,11 +10,48 @@
   "state": "ME",
   "zip": "04071",
   "camp_type": "sleepaway",
-  "description_short": "Traditional overnight camp in the Sebago Lakes Region of Maine. Sessions run one, two, three or five weeks, and there is a 1-week Explorer program for rising 3rd to 5th graders.",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "sailing",
+    "arts",
+    "adventure"
+  ],
+  "activities": [
+    "sailing",
+    "canoeing",
+    "swimming",
+    "wakeboarding",
+    "water trampoline",
+    "floating climbing tower",
+    "ceramics",
+    "photography",
+    "dance",
+    "ukulele",
+    "stained glass",
+    "zip-lining",
+    "ropes course",
+    "rock climbing",
+    "white-water rafting",
+    "fencing",
+    "Ultimate Frisbee",
+    "golf",
+    "yoga",
+    "traditional sports"
+  ],
+  "gender_policy": "coed",
+  "age_min": 8,
+  "age_max": 16,
+  "description_short": "Family-owned coed overnight camp on Panther Lake in Raymond, Maine, for ages 8 to 16. Two-, three- and five-week sessions plus a one-week Explorer program for rising 3rd to 5th graders, with campers choosing their own activities: waterfront, arts, ropes and zip-lines, rafting and sports.",
   "price_min": 2600,
   "price_max": 11275,
   "financial_aid": true,
+  "transportation": true,
   "refund_policy_summary": "If you cancel before April 1, 2027, you get a full refund minus a $500 cancellation fee per child. No refunds after April 1, 2027. A $1,000 deposit is required to enroll. Installment plans are available. Siblings get 5% off for each additional child.",
+  "swim_waterfront_notes": "Waterfront on Panther Lake: sailing, canoeing, swimming, wakeboarding, a water trampoline and a 14-foot floating climbing tower.",
+  "aca_accredited": true,
+  "aca_source_url": "https://kingsleypines.com/frequently-asked-questions/",
   "season_year": 2027,
   "sessions": [
     {
@@ -22,58 +59,57 @@
       "start_date": "2027-06-27",
       "end_date": "2027-07-10",
       "price": 5725,
-      "availability": "open"
+      "availability": "unknown"
     },
     {
       "name": "Session 2 (3 weeks)",
       "start_date": "2027-07-11",
       "end_date": "2027-07-31",
       "price": 7450,
-      "availability": "open"
+      "availability": "unknown"
     },
     {
       "name": "Session 3 (2 weeks)",
       "start_date": "2027-08-01",
       "end_date": "2027-08-14",
       "price": 5725,
-      "availability": "open"
+      "availability": "unknown"
     },
     {
       "name": "1 Week Explorer Program – Week 1 (rising 3rd to 5th graders only)",
       "start_date": "2027-07-11",
       "end_date": "2027-07-17",
       "price": 2600,
-      "availability": "open"
+      "availability": "unknown"
     },
     {
       "name": "Session 1 & Session 2 (5 weeks)",
       "start_date": "2027-06-27",
       "end_date": "2027-07-31",
       "price": 11275,
-      "availability": "open"
+      "availability": "unknown"
     },
     {
       "name": "Session 2 & Session 3 (5 weeks)",
       "start_date": "2027-07-11",
       "end_date": "2027-08-14",
       "price": 11275,
-      "availability": "open"
+      "availability": "unknown"
     },
     {
       "name": "Teen Leadership Program (3 weeks, returning campers only, 18 spaces)",
       "start_date": "2027-07-11",
       "end_date": "2027-07-31",
       "price": 7950,
-      "availability": "open"
+      "availability": "unknown"
     }
   ],
   "sources": [
     {
       "url": "https://kingsleypines.com/rates-dates/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
-        "website_url",
         "registration_url",
         "email",
         "phone",
@@ -81,19 +117,47 @@
         "city",
         "state",
         "zip",
-        "camp_type",
-        "description_short",
         "price_min",
         "price_max",
-        "financial_aid",
         "refund_policy_summary",
         "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
+    },
+    {
+      "url": "https://kingsleypines.com/",
+      "checked": "2026-11-13",
+      "fields": [
+        "website_url",
+        "camp_type",
+        "primary_categories",
+        "gender_policy",
+        "age_min",
+        "age_max",
+        "description_short",
+        "financial_aid"
+      ]
+    },
+    {
+      "url": "https://kingsleypines.com/activities/",
+      "checked": "2026-11-13",
+      "fields": [
+        "secondary_categories",
+        "activities",
+        "swim_waterfront_notes"
+      ]
+    },
+    {
+      "url": "https://kingsleypines.com/frequently-asked-questions/",
+      "checked": "2026-11-13",
+      "fields": [
+        "transportation",
+        "aca_accredited",
+        "aca_source_url"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://kingsleypines.com/rates-dates/",
       "kind": "html",
@@ -128,6 +192,25 @@
         "quote": "Registration is now open!"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://kingsleypines.com/rates-dates/",
+        "https://kingsleypines.com/",
+        "https://kingsleypines.com/activities/",
+        "https://kingsleypines.com/frequently-asked-questions/"
+      ],
+      "changes": [
+        "Checked all seven 2027 sessions and prices, the $1,000 deposit and the April 1, 2027 refund rule on the Rates & Dates page; all match.",
+        "Set availability to unknown on every session; 'Registration is now open' says nothing about space left.",
+        "Changed website_url from the rates page to the home page.",
+        "Added coed, ages 8 to 16 and Panther Lake from the home page, and rewrote the description.",
+        "Added activities, categories and waterfront notes from the Activities page.",
+        "Added ACA accreditation and airport transportation (Portland Jetport and Logan) from the FAQ.",
+        "Financial aid stays true: the camp's own menu links a Financial Aid Application."
+      ],
+      "open_questions": []
+    }
   }
 }

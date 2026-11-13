@@ -2,6 +2,7 @@
   "slug": "laurel-south-casco",
   "name": "Laurel South",
   "website_url": "https://www.camplaurelsouth.com",
+  "registration_url": "https://www.camplaurelsouth.com/apply/",
   "email": "fun@camplaurelsouth.com",
   "phone": "800-327-3506",
   "street_address": "48 Laurel Road",
@@ -10,22 +11,38 @@
   "zip": "04015",
   "camp_type": "sleepaway",
   "primary_categories": [
-    "sports",
+    "general",
+    "sports"
+  ],
+  "secondary_categories": [
     "arts",
-    "nature"
+    "adventure",
+    "swimming"
   ],
-  "description_short": "Laurel South is an overnight summer camp in Casco, Maine. It runs two sessions of about three and a half weeks each, with athletics, waterfront, tennis, adventure and arts programs.",
   "activities": [
-    "Athletics",
-    "Waterfront",
-    "Tennis",
-    "Adventure",
+    "athletics",
+    "waterfront",
+    "tennis",
+    "adventure",
     "Inter-Arts",
-    "Equestrian (optional)"
+    "special areas",
+    "soccer",
+    "basketball",
+    "baseball",
+    "softball",
+    "archery",
+    "swimming",
+    "sailing",
+    "equestrian (optional, extra fee)"
   ],
+  "gender_policy": "coed",
+  "grade_min": 3,
+  "grade_max": 10,
+  "description_short": "Coed overnight camp on Crescent Lake in Casco, Maine, for campers who have completed grades 2 to 9, with about 200 boys and 200 girls each 3.5-week session. Individually scheduled programs in athletics, waterfront, tennis, adventure and Inter-Arts, with in-camp leagues and intercamp teams.",
   "price_min": 10800,
   "price_max": 10800,
   "transportation": true,
+  "swim_waterfront_notes": "On 3-mile-long Crescent Lake; the camp says the lake is naturally warmed and reaches about 80 degrees during the day.",
   "season_year": 2027,
   "sessions": [
     {
@@ -46,7 +63,7 @@
   "sources": [
     {
       "url": "https://www.camplaurelsouth.com/summer-camp-families/dates-fees/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "website_url",
@@ -56,20 +73,37 @@
         "city",
         "state",
         "zip",
-        "camp_type",
-        "primary_categories",
-        "activities",
-        "description_short",
         "price_min",
         "price_max",
-        "transportation",
         "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
+    },
+    {
+      "url": "https://www.camplaurelsouth.com/",
+      "checked": "2026-11-13",
+      "fields": [
+        "registration_url",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories"
+      ]
+    },
+    {
+      "url": "https://www.camplaurelsouth.com/about-camp-laurel-south/frequently-asked-questions/",
+      "checked": "2026-11-13",
+      "fields": [
+        "activities",
+        "gender_policy",
+        "grade_min",
+        "grade_max",
+        "description_short",
+        "transportation",
+        "swim_waterfront_notes"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.camplaurelsouth.com/summer-camp-families/dates-fees/",
       "kind": "html",
@@ -121,6 +155,23 @@
         "quote": "48 Laurel Road Casco, ME"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.camplaurelsouth.com/summer-camp-families/dates-fees/",
+        "https://www.camplaurelsouth.com/",
+        "https://www.camplaurelsouth.com/about-camp-laurel-south/frequently-asked-questions/",
+        "https://www.camplaurelsouth.com/about-camp-laurel-south/"
+      ],
+      "changes": [
+        "Checked the 2027 session dates (June 24 to July 18, July 22 to August 15), the $10,800 tuition and the extra charges on the Dates & Fees page; they match. Session prices stay blank because the page doesn't say whether $10,800 is per session.",
+        "Added coed and grades from the FAQ: groups run from 'completed grades 2-4' to 'completed grades 7-9', recorded as rising grades 3 to 10.",
+        "Confirmed overnight from the home page ('3.5-week coed session') and the FAQ (chartered buses from Boston and Portland, chaperoned trips for an extra charge).",
+        "Added registration_url (the Apply Online page), more activities and waterfront notes from the FAQ, and changed categories from sports+arts+nature to general+sports with arts, adventure and swimming as secondary.",
+        "Rewrote the description with the lake, size and grades."
+      ],
+      "open_questions": []
+    }
   }
 }
