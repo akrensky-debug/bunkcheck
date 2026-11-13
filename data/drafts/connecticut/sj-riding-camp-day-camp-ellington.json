@@ -2,7 +2,7 @@
   "slug": "sj-riding-camp-day-camp-ellington",
   "name": "SJ Riding Camp – Day Camp",
   "operator_name": "SJ Riding Camp",
-  "website_url": "https://sjridingcamp.com/day-camp-dates-rates/",
+  "website_url": "https://sjridingcamp.com/day-camp/",
   "registration_url": "https://sjriding.campintouch.com/ui/forms/application/camper/App",
   "email": "camp@sjridingcamp.com",
   "phone": "860-872-4742",
@@ -14,16 +14,22 @@
   "primary_categories": [
     "sports"
   ],
-  "description_short": "A horseback riding day camp for girls in Ellington, CT. It runs Monday to Friday, 8:30am to 6pm, with hot lunch and two rides per day.",
   "activities": [
-    "Horseback riding"
+    "Horseback riding",
+    "Learning about animals",
+    "Residential camp daytime activities"
   ],
-  "price_per_week": 975,
+  "gender_policy": null,
+  "age_min": 8,
+  "age_max": 13,
+  "description_short": "Horseback riding day camp in Ellington for ages 8 to 13 who are ready for the residential camp's activities but not for staying overnight. Day campers join the overnight campers' daytime schedule, Monday to Friday 8:30am to 6pm, with two rides a day.",
   "price_min": 975,
   "price_max": 975,
-  "meals_included": true,
-  "season_year": 2026,
+  "price_per_week": 975,
   "price_per": "week",
+  "meals_included": true,
+  "refund_policy_summary": "The balance, less the deposit, is refunded only if you cancel by May 1, 2027. No refunds for leaving camp early for any reason. Session changes depend on space.",
+  "season_year": 2026,
   "sessions": [
     {
       "name": "Session 1",
@@ -43,11 +49,10 @@
   "sources": [
     {
       "url": "https://sjridingcamp.com/day-camp-dates-rates/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
-        "website_url",
         "registration_url",
         "email",
         "phone",
@@ -57,8 +62,6 @@
         "zip",
         "camp_type",
         "primary_categories",
-        "activities",
-        "description_short",
         "price_min",
         "price_max",
         "price_per_week",
@@ -66,11 +69,31 @@
         "meals_included",
         "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Day Camp Dates & Rates; dates have no year, 2026 from 'Registration for Day Camp 2026'"
+    },
+    {
+      "url": "https://sjridingcamp.com/day-camp/",
+      "checked": "2026-11-13",
+      "fields": [
+        "website_url",
+        "age_min",
+        "age_max",
+        "activities",
+        "description_short"
+      ],
+      "note": "Day Camp page"
+    },
+    {
+      "url": "https://sjridingcamp.com/frequently-asked-questions/",
+      "checked": "2026-11-13",
+      "fields": [
+        "refund_policy_summary"
+      ],
+      "note": "FAQ refund policy, camp-wide"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://sjridingcamp.com/day-camp-dates-rates/",
       "kind": "html",
@@ -154,6 +177,25 @@
         "quote": "Day camp sessions are currently waitlisted."
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://sjridingcamp.com/day-camp-dates-rates/",
+        "https://sjridingcamp.com/day-camp/",
+        "https://sjridingcamp.com/",
+        "https://sjridingcamp.com/frequently-asked-questions/"
+      ],
+      "changes": [
+        "Added ages 8 to 13 from the Day Camp page.",
+        "Added gender_policy girls: the home page says the camp serves girls ages 8 to 16.",
+        "website_url now points to the Day Camp page; prices and dates stay sourced to Dates & Rates.",
+        "Added the refund policy from the FAQ (balance less deposit refundable until May 1, 2027).",
+        "Rewrote the description and activities: day campers join the residential campers' daytime schedule.",
+        "Checked the 2026 sessions (June 22-26 and July 27-31, $975 each, waitlisted) against the page.",
+        "gender_policy cleared on review: the home page says girls 8 to 16, but the Day Camp page says children; left unknown rather than turn boys away"
+      ],
+      "open_questions": []
+    }
   }
 }

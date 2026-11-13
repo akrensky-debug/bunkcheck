@@ -1,8 +1,8 @@
 {
   "slug": "longshore-sailing-school-junior-programs-westport",
-  "name": "Longshore Sailing School – Junior Programs",
+  "name": "Longshore Sailing School Junior Programs",
   "operator_name": "Longshore Sailing School",
-  "website_url": "https://www.longshoresailing.com/junior-programs",
+  "website_url": "https://www.longshoresailing.com/core",
   "registration_url": "https://app.amilia.com/store/en/longshore-sailing-school/shop/programs",
   "email": "info@longshoresailingschool.com",
   "phone": "203-226-4646",
@@ -12,29 +12,27 @@
   "zip": "06880",
   "camp_type": "specialty",
   "primary_categories": [
-    "sports"
+    "sailing"
   ],
   "age_min": 8,
   "age_max": 16,
-  "description_short": "Sailing school in Westport, CT offering junior sailing classes for ages 8-16. Options are a step-by-step Core Curriculum from beginner to advanced and one-week \"camp style\" specialty courses (kayaking, paddleboarding, racing, catamarans). No experience is needed.",
+  "description_short": "Community sailing school at the mouth of the Saugatuck River in Westport, open to the public. Half-day junior programs for ages 8-16: a learn-to-sail curriculum (Sailing 1 to 4, one or two weeks), catamaran and racing courses, and one-week kayaking, paddleboarding and catamaran adventure weeks. Swimming ability required.",
   "activities": [
     "Sailing",
-    "Kayaking",
-    "Paddleboarding",
+    "Catamaran sailing",
     "Sailboat racing",
-    "Catamaran sailing"
+    "Kayaking",
+    "Stand-up paddleboarding",
+    "Swimming breaks"
   ],
-  "refund_policy_summary": "Full refund minus a 4% fee if you cancel 21 or more days before the course starts. No refunds or transfers within 21 days of the start date. No make-up days for missed classes. No refunds if LSS closes at the request of the Town of Westport.",
+  "refund_policy_summary": "Full refund minus a 4% fee if you cancel 21 or more days before the course starts. No refunds or transfers within 21 days of the start date, and no refunds or credits for missed classes, illness included. No refunds if LSS closes at the request of the Town of Westport.",
   "swim_waterfront_notes": "Swim test on the first day of class, held in the pool next to the facility. Junior students must bring their own Type III lifejacket. Classes go on the water in the rain. If lightning, thunder or heavy wind keeps them off the water, the school stays open to look after students.",
   "sources": [
     {
-      "url": "https://www.longshoresailing.com/junior-programs",
-      "checked": "2026-10-13",
+      "url": "https://www.longshoresailing.com/",
+      "checked": "2026-11-13",
       "fields": [
-        "name",
         "operator_name",
-        "website_url",
-        "registration_url",
         "email",
         "phone",
         "street_address",
@@ -42,19 +40,51 @@
         "state",
         "zip",
         "camp_type",
-        "primary_categories",
-        "activities",
-        "age_min",
-        "age_max",
-        "description_short",
+        "description_short"
+      ]
+    },
+    {
+      "url": "https://www.longshoresailing.com/core",
+      "checked": "2026-11-13",
+      "fields": [
+        "name",
+        "website_url",
+        "primary_categories"
+      ]
+    },
+    {
+      "url": "https://www.longshoresailing.com/junior-adventure-programs",
+      "checked": "2026-11-13",
+      "fields": [
+        "activities"
+      ]
+    },
+    {
+      "url": "https://www.longshoresailing.com/program-faqs",
+      "checked": "2026-11-13",
+      "fields": [
         "refund_policy_summary",
         "swim_waterfront_notes"
+      ]
+    },
+    {
+      "url": "https://app.amilia.com/store/en/longshore-sailing-school/shop/programs",
+      "checked": "2026-11-13",
+      "fields": [
+        "registration_url",
+        "age_min",
+        "age_max",
+        "price_per_week",
+        "price_min",
+        "price_max",
+        "price_per",
+        "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "The school's own Amilia registration store; dates and prices read from each course's sub-page."
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.longshoresailing.com/junior-programs",
       "kind": "html",
@@ -89,6 +119,610 @@
     ],
     "errors": [
       "missing required season_year"
-    ]
-  }
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.longshoresailing.com/junior-programs",
+        "https://www.longshoresailing.com/",
+        "https://www.longshoresailing.com/core",
+        "https://www.longshoresailing.com/junior-adventure-programs",
+        "https://www.longshoresailing.com/program-faqs",
+        "https://app.amilia.com/store/en/longshore-sailing-school/shop/programs",
+        "https://app.amilia.com/store/en/longshore-sailing-school/shop/programs/140471?subCategoryIds=7441812",
+        "https://app.amilia.com/store/en/longshore-sailing-school/shop/programs/140471?subCategoryIds=7441813",
+        "https://app.amilia.com/store/en/longshore-sailing-school/shop/programs/140471?subCategoryIds=7441814",
+        "https://app.amilia.com/store/en/longshore-sailing-school/shop/programs/140471?subCategoryIds=7441815",
+        "https://app.amilia.com/store/en/longshore-sailing-school/shop/programs/140471?subCategoryIds=7441876",
+        "https://app.amilia.com/store/en/longshore-sailing-school/shop/programs/140471?subCategoryIds=7441878",
+        "https://app.amilia.com/store/en/longshore-sailing-school/shop/programs/140473?subCategoryIds=7466695",
+        "https://app.amilia.com/store/en/longshore-sailing-school/shop/programs/140473?subCategoryIds=7441740",
+        "https://app.amilia.com/store/en/longshore-sailing-school/shop/programs/140473?subCategoryIds=7441741",
+        "https://app.amilia.com/store/en/longshore-sailing-school/shop/programs/140473?subCategoryIds=7441733"
+      ],
+      "changes": [
+        "The drafted page (/junior-programs) now returns 404; the junior programs moved to /core (Junior Sailing School) and /junior-adventure-programs. website_url now points to /core.",
+        "2027 registration is open. Added all 81 2027 half-day sessions (June 21 to August 20, 2027) with times and prices from the school's Amilia registration store; season_year 2027.",
+        "Prices: $450 to $1,100 per course ($500 for most one-week courses, $1,000 to $1,100 for two-week Sailing 2 to 4). Used the store prices: the website lists Catamaran Sailing at $500 but the store charges $450.",
+        "Category changed from sports to sailing; added stand-up paddleboarding and swim breaks; description rewritten for 2027 courses.",
+        "Refund policy updated to the current wording (no refunds or credits for missed classes, illness included).",
+        "Confirmed address, phone, email, the swim test and lifejacket rule."
+      ],
+      "open_questions": []
+    }
+  },
+  "price_per_week": 500,
+  "price_min": 450,
+  "price_max": 1100,
+  "price_per": "session",
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Sailing 1, 9:00 AM - 12:00 PM",
+      "start_date": "2027-06-21",
+      "end_date": "2027-06-25",
+      "price": 500,
+      "availability": "unknown"
+    },
+    {
+      "name": "Sailing 1, 1:00 PM - 4:00 PM",
+      "start_date": "2027-06-21",
+      "end_date": "2027-06-25",
+      "price": 500,
+      "availability": "unknown"
+    },
+    {
+      "name": "Sailing 1, 9:00 AM - 12:00 PM",
+      "start_date": "2027-06-28",
+      "end_date": "2027-07-02",
+      "price": 500,
+      "availability": "unknown"
+    },
+    {
+      "name": "Sailing 1, 1:00 PM - 4:00 PM",
+      "start_date": "2027-06-28",
+      "end_date": "2027-07-02",
+      "price": 500,
+      "availability": "unknown"
+    },
+    {
+      "name": "Sailing 1, 9:00 AM - 12:00 PM",
+      "start_date": "2027-07-05",
+      "end_date": "2027-07-09",
+      "price": 500,
+      "availability": "unknown"
+    },
+    {
+      "name": "Sailing 1, 1:00 PM - 4:00 PM",
+      "start_date": "2027-07-05",
+      "end_date": "2027-07-09",
+      "price": 500,
+      "availability": "unknown"
+    },
+    {
+      "name": "Sailing 1, 9:00 AM - 12:00 PM",
+      "start_date": "2027-07-12",
+      "end_date": "2027-07-16",
+      "price": 500,
+      "availability": "unknown"
+    },
+    {
+      "name": "Sailing 1, 1:00 PM - 4:00 PM",
+      "start_date": "2027-07-12",
+      "end_date": "2027-07-16",
+      "price": 500,
+      "availability": "unknown"
+    },
+    {
+      "name": "Sailing 1, 9:00 AM - 12:00 PM",
+      "start_date": "2027-07-19",
+      "end_date": "2027-07-23",
+      "price": 500,
+      "availability": "unknown"
+    },
+    {
+      "name": "Sailing 1, 1:00 PM - 4:00 PM",
+      "start_date": "2027-07-19",
+      "end_date": "2027-07-23",
+      "price": 500,
+      "availability": "unknown"
+    },
+    {
+      "name": "Sailing 1, 9:00 AM - 12:00 PM",
+      "start_date": "2027-07-26",
+      "end_date": "2027-07-30",
+      "price": 500,
+      "availability": "unknown"
+    },
+    {
+      "name": "Sailing 1, 1:00 PM - 4:00 PM",
+      "start_date": "2027-07-26",
+      "end_date": "2027-07-30",
+      "price": 500,
+      "availability": "unknown"
+    },
+    {
+      "name": "Sailing 1, 9:00 AM - 12:00 PM",
+      "start_date": "2027-08-02",
+      "end_date": "2027-08-06",
+      "price": 500,
+      "availability": "unknown"
+    },
+    {
+      "name": "Sailing 1, 1:00 PM - 4:00 PM",
+      "start_date": "2027-08-02",
+      "end_date": "2027-08-06",
+      "price": 500,
+      "availability": "unknown"
+    },
+    {
+      "name": "Sailing 1, 9:00 AM - 12:00 PM",
+      "start_date": "2027-08-09",
+      "end_date": "2027-08-13",
+      "price": 500,
+      "availability": "unknown"
+    },
+    {
+      "name": "Sailing 1, 1:00 PM - 4:00 PM",
+      "start_date": "2027-08-09",
+      "end_date": "2027-08-13",
+      "price": 500,
+      "availability": "unknown"
+    },
+    {
+      "name": "Sailing 2, 9:00 AM - 12:00 PM",
+      "start_date": "2027-06-21",
+      "end_date": "2027-07-02",
+      "price": 1000,
+      "availability": "unknown"
+    },
+    {
+      "name": "Sailing 2, 1:00 PM - 4:00 PM",
+      "start_date": "2027-06-21",
+      "end_date": "2027-07-02",
+      "price": 1000,
+      "availability": "unknown"
+    },
+    {
+      "name": "Sailing 2, 9:00 AM - 12:00 PM",
+      "start_date": "2027-07-05",
+      "end_date": "2027-07-16",
+      "price": 1000,
+      "availability": "unknown"
+    },
+    {
+      "name": "Sailing 2, 1:00 PM - 4:00 PM",
+      "start_date": "2027-07-05",
+      "end_date": "2027-07-16",
+      "price": 1000,
+      "availability": "unknown"
+    },
+    {
+      "name": "Sailing 2, 9:00 AM - 12:00 PM",
+      "start_date": "2027-07-19",
+      "end_date": "2027-07-30",
+      "price": 1000,
+      "availability": "unknown"
+    },
+    {
+      "name": "Sailing 2, 1:00 PM - 4:00 PM",
+      "start_date": "2027-07-19",
+      "end_date": "2027-07-30",
+      "price": 1000,
+      "availability": "unknown"
+    },
+    {
+      "name": "Sailing 2, 9:00 AM - 12:00 PM",
+      "start_date": "2027-08-02",
+      "end_date": "2027-08-13",
+      "price": 1000,
+      "availability": "unknown"
+    },
+    {
+      "name": "Sailing 2, 1:00 PM - 4:00 PM",
+      "start_date": "2027-08-02",
+      "end_date": "2027-08-13",
+      "price": 1000,
+      "availability": "unknown"
+    },
+    {
+      "name": "Sailing 3, 9:00 AM - 12:00 PM",
+      "start_date": "2027-06-21",
+      "end_date": "2027-07-02",
+      "price": 1000,
+      "availability": "unknown"
+    },
+    {
+      "name": "Sailing 3, 1:00 PM - 4:00 PM",
+      "start_date": "2027-07-05",
+      "end_date": "2027-07-16",
+      "price": 1000,
+      "availability": "unknown"
+    },
+    {
+      "name": "Sailing 3, 9:00 AM - 12:00 PM",
+      "start_date": "2027-07-19",
+      "end_date": "2027-07-30",
+      "price": 1000,
+      "availability": "unknown"
+    },
+    {
+      "name": "Sailing 3, 1:00 PM - 4:00 PM",
+      "start_date": "2027-08-02",
+      "end_date": "2027-08-13",
+      "price": 1000,
+      "availability": "unknown"
+    },
+    {
+      "name": "Sailing 4, 1:00 PM - 4:00 PM",
+      "start_date": "2027-06-21",
+      "end_date": "2027-07-02",
+      "price": 1100,
+      "availability": "unknown"
+    },
+    {
+      "name": "Sailing 4, 9:00 AM - 12:00 PM",
+      "start_date": "2027-07-05",
+      "end_date": "2027-07-16",
+      "price": 1100,
+      "availability": "unknown"
+    },
+    {
+      "name": "Sailing 4, 1:00 PM - 4:00 PM",
+      "start_date": "2027-07-19",
+      "end_date": "2027-07-30",
+      "price": 1100,
+      "availability": "unknown"
+    },
+    {
+      "name": "Sailing 4, 9:00 AM - 12:00 PM",
+      "start_date": "2027-08-02",
+      "end_date": "2027-08-13",
+      "price": 1100,
+      "availability": "unknown"
+    },
+    {
+      "name": "Catamaran Sailing: Skills & Thrills, 9:00 AM - 11:30 AM",
+      "start_date": "2027-06-21",
+      "end_date": "2027-06-25",
+      "price": 450,
+      "availability": "unknown"
+    },
+    {
+      "name": "Catamaran Sailing: Skills & Thrills, 1:00 PM - 3:30 PM",
+      "start_date": "2027-06-28",
+      "end_date": "2027-07-02",
+      "price": 450,
+      "availability": "unknown"
+    },
+    {
+      "name": "Catamaran Sailing: Skills & Thrills, 9:00 AM - 11:30 AM",
+      "start_date": "2027-07-05",
+      "end_date": "2027-07-09",
+      "price": 450,
+      "availability": "unknown"
+    },
+    {
+      "name": "Catamaran Sailing: Skills & Thrills, 1:00 PM - 3:30 PM",
+      "start_date": "2027-07-12",
+      "end_date": "2027-07-16",
+      "price": 450,
+      "availability": "unknown"
+    },
+    {
+      "name": "Catamaran Sailing: Skills & Thrills, 9:00 AM - 11:30 AM",
+      "start_date": "2027-07-19",
+      "end_date": "2027-07-23",
+      "price": 450,
+      "availability": "unknown"
+    },
+    {
+      "name": "Catamaran Sailing: Skills & Thrills, 1:00 PM - 3:30 PM",
+      "start_date": "2027-07-26",
+      "end_date": "2027-07-30",
+      "price": 450,
+      "availability": "unknown"
+    },
+    {
+      "name": "Catamaran Sailing: Skills & Thrills, 9:00 AM - 11:30 AM",
+      "start_date": "2027-08-02",
+      "end_date": "2027-08-06",
+      "price": 450,
+      "availability": "unknown"
+    },
+    {
+      "name": "Catamaran Sailing: Skills & Thrills, 1:00 PM - 3:30 PM",
+      "start_date": "2027-08-09",
+      "end_date": "2027-08-13",
+      "price": 450,
+      "availability": "unknown"
+    },
+    {
+      "name": "Learn To Race, 1:00 PM - 3:30 PM",
+      "start_date": "2027-08-16",
+      "end_date": "2027-08-20",
+      "price": 500,
+      "availability": "unknown"
+    },
+    {
+      "name": "WaterBugs (ages 8-9), 2:00 PM - 4:00 PM",
+      "start_date": "2027-06-21",
+      "end_date": "2027-06-25",
+      "price": 450,
+      "availability": "unknown"
+    },
+    {
+      "name": "WaterBugs (ages 8-9), 9:00 AM - 11:00 AM",
+      "start_date": "2027-06-28",
+      "end_date": "2027-07-02",
+      "price": 450,
+      "availability": "unknown"
+    },
+    {
+      "name": "WaterBugs (ages 8-9), 2:00 PM - 4:00 PM",
+      "start_date": "2027-07-05",
+      "end_date": "2027-07-09",
+      "price": 450,
+      "availability": "unknown"
+    },
+    {
+      "name": "WaterBugs (ages 8-9), 9:00 AM - 11:00 AM",
+      "start_date": "2027-07-12",
+      "end_date": "2027-07-16",
+      "price": 450,
+      "availability": "unknown"
+    },
+    {
+      "name": "WaterBugs (ages 8-9), 1:00 PM - 3:00 PM",
+      "start_date": "2027-07-19",
+      "end_date": "2027-07-23",
+      "price": 450,
+      "availability": "unknown"
+    },
+    {
+      "name": "WaterBugs (ages 8-9), 9:00 AM - 11:00 AM",
+      "start_date": "2027-07-26",
+      "end_date": "2027-07-30",
+      "price": 450,
+      "availability": "unknown"
+    },
+    {
+      "name": "WaterBugs (ages 8-9), 1:00 PM - 3:00 PM",
+      "start_date": "2027-08-02",
+      "end_date": "2027-08-06",
+      "price": 450,
+      "availability": "unknown"
+    },
+    {
+      "name": "WaterBugs (ages 8-9), 9:00 AM - 11:00 AM",
+      "start_date": "2027-08-09",
+      "end_date": "2027-08-13",
+      "price": 450,
+      "availability": "unknown"
+    },
+    {
+      "name": "Kayaking Adventures (ages 8-11), 9:00 AM - 11:30 AM",
+      "start_date": "2027-06-21",
+      "end_date": "2027-06-25",
+      "price": 500,
+      "availability": "unknown"
+    },
+    {
+      "name": "Kayaking Adventures (ages 8-11), 9:00 AM - 11:30 AM",
+      "start_date": "2027-06-28",
+      "end_date": "2027-07-02",
+      "price": 500,
+      "availability": "unknown"
+    },
+    {
+      "name": "Kayaking Adventures (ages 8-11), 9:00 AM - 11:30 AM",
+      "start_date": "2027-07-05",
+      "end_date": "2027-07-09",
+      "price": 500,
+      "availability": "unknown"
+    },
+    {
+      "name": "Kayaking Adventures (ages 8-11), 9:00 AM - 11:30 AM",
+      "start_date": "2027-07-12",
+      "end_date": "2027-07-16",
+      "price": 500,
+      "availability": "unknown"
+    },
+    {
+      "name": "Kayaking Adventures (ages 8-11), 9:00 AM - 11:30 AM",
+      "start_date": "2027-07-19",
+      "end_date": "2027-07-23",
+      "price": 500,
+      "availability": "unknown"
+    },
+    {
+      "name": "Kayaking Adventures (ages 8-11), 9:00 AM - 11:30 AM",
+      "start_date": "2027-07-26",
+      "end_date": "2027-07-30",
+      "price": 500,
+      "availability": "unknown"
+    },
+    {
+      "name": "Kayaking Adventures (ages 8-11), 9:00 AM - 11:30 AM",
+      "start_date": "2027-08-02",
+      "end_date": "2027-08-06",
+      "price": 500,
+      "availability": "unknown"
+    },
+    {
+      "name": "Kayaking Adventures (ages 8-11), 9:00 AM - 11:30 AM",
+      "start_date": "2027-08-09",
+      "end_date": "2027-08-13",
+      "price": 500,
+      "availability": "unknown"
+    },
+    {
+      "name": "Yak and Paddle (ages 12-15), 1:00 PM - 3:30 PM",
+      "start_date": "2027-06-21",
+      "end_date": "2027-06-25",
+      "price": 500,
+      "availability": "unknown"
+    },
+    {
+      "name": "Yak and Paddle (ages 12-15), 1:00 PM - 3:30 PM",
+      "start_date": "2027-06-28",
+      "end_date": "2027-07-02",
+      "price": 500,
+      "availability": "unknown"
+    },
+    {
+      "name": "Yak and Paddle (ages 12-15), 1:00 PM - 3:30 PM",
+      "start_date": "2027-07-05",
+      "end_date": "2027-07-09",
+      "price": 500,
+      "availability": "unknown"
+    },
+    {
+      "name": "Yak and Paddle (ages 12-15), 1:00 PM - 3:30 PM",
+      "start_date": "2027-07-12",
+      "end_date": "2027-07-16",
+      "price": 500,
+      "availability": "unknown"
+    },
+    {
+      "name": "Yak and Paddle (ages 12-15), 1:00 PM - 3:30 PM",
+      "start_date": "2027-07-19",
+      "end_date": "2027-07-23",
+      "price": 500,
+      "availability": "unknown"
+    },
+    {
+      "name": "Yak and Paddle (ages 12-15), 1:00 PM - 3:30 PM",
+      "start_date": "2027-07-26",
+      "end_date": "2027-07-30",
+      "price": 500,
+      "availability": "unknown"
+    },
+    {
+      "name": "Yak and Paddle (ages 12-15), 1:00 PM - 3:30 PM",
+      "start_date": "2027-08-02",
+      "end_date": "2027-08-06",
+      "price": 500,
+      "availability": "unknown"
+    },
+    {
+      "name": "Yak and Paddle (ages 12-15), 1:00 PM - 3:30 PM",
+      "start_date": "2027-08-09",
+      "end_date": "2027-08-13",
+      "price": 500,
+      "availability": "unknown"
+    },
+    {
+      "name": "WaterCats (ages 10-15), 9:00 AM - 11:30 AM",
+      "start_date": "2027-06-21",
+      "end_date": "2027-06-25",
+      "price": 500,
+      "availability": "unknown"
+    },
+    {
+      "name": "WaterCats (ages 10-15), 1:00 PM - 3:30 PM",
+      "start_date": "2027-06-21",
+      "end_date": "2027-06-25",
+      "price": 500,
+      "availability": "unknown"
+    },
+    {
+      "name": "WaterCats (ages 10-15), 9:00 AM - 11:30 AM",
+      "start_date": "2027-06-28",
+      "end_date": "2027-07-02",
+      "price": 500,
+      "availability": "unknown"
+    },
+    {
+      "name": "WaterCats (ages 10-15), 1:00 PM - 3:30 PM",
+      "start_date": "2027-06-28",
+      "end_date": "2027-07-02",
+      "price": 500,
+      "availability": "unknown"
+    },
+    {
+      "name": "WaterCats (ages 10-15), 9:00 AM - 11:30 AM",
+      "start_date": "2027-07-05",
+      "end_date": "2027-07-09",
+      "price": 500,
+      "availability": "unknown"
+    },
+    {
+      "name": "WaterCats (ages 10-15), 1:00 PM - 3:30 PM",
+      "start_date": "2027-07-05",
+      "end_date": "2027-07-09",
+      "price": 500,
+      "availability": "unknown"
+    },
+    {
+      "name": "WaterCats (ages 10-15), 9:00 AM - 11:30 AM",
+      "start_date": "2027-07-12",
+      "end_date": "2027-07-16",
+      "price": 500,
+      "availability": "unknown"
+    },
+    {
+      "name": "WaterCats (ages 10-15), 1:00 PM - 3:30 PM",
+      "start_date": "2027-07-12",
+      "end_date": "2027-07-16",
+      "price": 500,
+      "availability": "unknown"
+    },
+    {
+      "name": "WaterCats (ages 10-15), 9:00 AM - 11:30 AM",
+      "start_date": "2027-07-19",
+      "end_date": "2027-07-23",
+      "price": 500,
+      "availability": "unknown"
+    },
+    {
+      "name": "WaterCats (ages 10-15), 1:00 PM - 3:30 PM",
+      "start_date": "2027-07-19",
+      "end_date": "2027-07-23",
+      "price": 500,
+      "availability": "unknown"
+    },
+    {
+      "name": "WaterCats (ages 10-15), 9:00 AM - 11:30 AM",
+      "start_date": "2027-07-26",
+      "end_date": "2027-07-30",
+      "price": 500,
+      "availability": "unknown"
+    },
+    {
+      "name": "WaterCats (ages 10-15), 1:00 PM - 3:30 PM",
+      "start_date": "2027-07-26",
+      "end_date": "2027-07-30",
+      "price": 500,
+      "availability": "unknown"
+    },
+    {
+      "name": "WaterCats (ages 10-15), 9:00 AM - 11:30 AM",
+      "start_date": "2027-08-02",
+      "end_date": "2027-08-06",
+      "price": 500,
+      "availability": "unknown"
+    },
+    {
+      "name": "WaterCats (ages 10-15), 1:00 PM - 3:30 PM",
+      "start_date": "2027-08-02",
+      "end_date": "2027-08-06",
+      "price": 500,
+      "availability": "unknown"
+    },
+    {
+      "name": "WaterCats (ages 10-15), 9:00 AM - 11:30 AM",
+      "start_date": "2027-08-09",
+      "end_date": "2027-08-13",
+      "price": 500,
+      "availability": "unknown"
+    },
+    {
+      "name": "WaterCats (ages 10-15), 1:00 PM - 3:30 PM",
+      "start_date": "2027-08-09",
+      "end_date": "2027-08-13",
+      "price": 500,
+      "availability": "unknown"
+    }
+  ]
 }

@@ -14,9 +14,6 @@
   "primary_categories": [
     "arts"
   ],
-  "age_min": 3,
-  "age_max": 17,
-  "description_short": "Week-long art classes for ages 3-17 at Silvermine Arts Center, with morning and afternoon sessions that can be combined for a full day. Media include ceramics, printmaking, drawing, painting, glass flame working, comics, photography, jewelry, digital arts and Pre-K process art.",
   "activities": [
     "Ceramics",
     "Printmaking",
@@ -31,6 +28,10 @@
     "Digital Arts",
     "Pre-K Process Art"
   ],
+  "age_min": 3,
+  "age_max": 17,
+  "description_short": "Week-long art classes for ages 3-17 at Silvermine Arts Center, with morning and afternoon sessions that can be combined for a full day. Media include ceramics, printmaking, drawing, painting, glass flame working, comics, photography, jewelry, digital arts and Pre-K process art.",
+  "refund_policy_summary": "Full refund less the $35 registration fee for withdrawals by May 1, 2026; credit only from May 2 until 14 days before camp; no refund or credit within 14 days of the start. Withdrawals by phone only.",
   "season_year": 2026,
   "sessions": [
     {
@@ -107,7 +108,7 @@
   "sources": [
     {
       "url": "https://www.silvermineart.org/wp-content/uploads/2026/01/Summer-Art-Studios-Catalog-2026-Final-sm.pdf",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -126,19 +127,27 @@
         "description_short",
         "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "2026 Summer Art Studios catalog"
     },
     {
-      "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=1028+Silvermine+Rd&city=New+Canaan&state=CT&benchmark=Public_AR_Current&format=json",
-      "checked": "2026-10-13",
+      "url": "https://www.silvermineart.org",
+      "checked": "2026-11-13",
       "fields": [
         "zip"
       ],
-      "note": "ZIP from the US Census geocoder for 1028 SILVERMINE RD, NEW CANAAN, CT, 06840"
+      "note": "Home page footer: Silvermine Arts Center, New Canaan, CT 06840"
+    },
+    {
+      "url": "https://www.silvermineart.org/wp-content/uploads/2026/01/Summer-Art-Policies-PDF-1-7-26.pdf",
+      "checked": "2026-11-13",
+      "fields": [
+        "refund_policy_summary"
+      ],
+      "note": "2026 Summer Art Studios policies"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.silvermineart.org/wp-content/uploads/2026/01/Summer-Art-Studios-Catalog-2026-Final-sm.pdf",
       "kind": "pdf",
@@ -173,6 +182,23 @@
         "quote": "Week long art classes for ages 3-17"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.silvermineart.org/wp-content/uploads/2026/01/Summer-Art-Studios-Catalog-2026-Final-sm.pdf",
+        "https://www.silvermineart.org",
+        "https://www.silvermineart.org/school/",
+        "https://www.silvermineart.org/school/policies/",
+        "https://www.silvermineart.org/wp-content/uploads/2026/01/Summer-Art-Policies-PDF-1-7-26.pdf"
+      ],
+      "changes": [
+        "Checked the catalog: name, contact, address, ages 3-17, media and the ten 2026 weeks (June 15 to August 21, four-day week 3) match.",
+        "ZIP 06840 now comes from Silvermine's own home page instead of the Census geocoder.",
+        "Added the 2026 refund policy from the Summer Art Studios policies PDF.",
+        "No tuition is posted in the catalog text or on the site pages I could open, so prices stay empty."
+      ],
+      "open_questions": []
+    }
   }
 }
