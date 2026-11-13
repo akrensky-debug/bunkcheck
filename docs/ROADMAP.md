@@ -244,15 +244,15 @@ doesn't change when it pays (5 November 2026).
 
 ### The six price tests
 
-From the pricing doc, November 2026 to April 2027, in this order. Providence has too few camps
+From the pricing doc, January to April 2027, in this order. Nothing is charged during the beta (16 November 2026 to 4 January 2027, decided 13 November). Providence has too few camps
 for clean statistics, so read each one for direction and confirm in Boston. Two rules for every
 test: tell camps the price ranges we are testing, and never test anything that touches rank or
 family data.
 
 | # | Test | When | Waits on |
 |---|---|---|---|
-| 1 | Verified profile at $99, $199 or $299, each camp assigned a price at random | November to December 2026 | Phase 2's 150 camps, live and hand-checked. Taking the money waits on steps 1 to 6 above |
-| 2 | The pitch: "here is what families near you asked for" against "get verified" | November to December 2026, alongside test 1 | The same camps as test 1, and a demand count per camp from the `/demand` reports |
+| 1 | Verified profile at $99, $199 or $299, each camp assigned a price at random | From 5 January 2027, after the beta | Phase 2's 150 camps, live and hand-checked. Taking the money waits on steps 1 to 6 above |
+| 2 | The pitch: "here is what families near you asked for" against "get verified" | January to February 2027, alongside test 1 | The same camps as test 1, and a demand count per camp from the `/demand` reports |
 | 3 | Inquiries at $10 each against a flat $149 a season | February to April 2027 | The inquiry tool merged (`claude/inquiry-tool`), camps opted in, and steps 1 to 6 |
 | 4 | Registration Day Pass for parents at $19 or $39, a real charge on our site | January to February 2027 | Families with a saved summer plan, the payments design (step 2), and counsel on fee disclosures to parents (step 1) |
 | 5 | A priced Activity API proposal to one family-assistant company: free up to a monthly limit, then a monthly fee | By March 2027 | Andrew picks the company; a session writes the proposal and the plan terms. No billing code needed until it is signed |

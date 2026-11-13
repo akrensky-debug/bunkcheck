@@ -56,6 +56,12 @@ money. In the 2027 season we take no booking fee.
 
 **Where the money comes from in 2027**
 
+**Free during the beta (decided 13 November 2026).** Nobody pays anything from the soft launch
+on 16 November 2026 through 4 January 2027: no verified profile, no inquiry charges, no
+Registration Day Pass. Camps that confirm their listing during the beta are the founding camps
+and get the founding price when charging starts. The prices below start no earlier than the
+public launch on 5 January 2027, and only once the steps in "before we bill anyone" are done.
+
 | Who pays | What for | Proposed price |
 |---|---|---|
 | Camp | **Verified profile.** We check the camp's facts (sessions, prices, ages, aftercare, policies) against the camp's own records, and the badge shows the date we checked. | $199 a season; $99 for the first 25 founding camps in each metro |
