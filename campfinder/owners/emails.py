@@ -255,9 +255,11 @@ def season_update_request(to: str, first_name: str | None, camp: dict[str, Any],
                  html=html, text=text, reply_to=_reply_to())
 
 
-def season_updated(to: str, camp: dict[str, Any], season: int, applied: dict[str, Any]) -> Email:
+def season_updated(to: str, camp: dict[str, Any], season: int, applied: dict[str, Any],
+                   question: dict[str, Any] | None = None, availability: list[dict[str, Any]] | None = None) -> Email:
     """'Here is what changed, reply if wrong.' Every change in full, before and after, and the
-    listing as it now stands, because some owners will read this with their own AI."""
+    listing as it now stands, because some owners will read this with their own AI. With a
+    question: the dates "same weeks as last year" would mean, for the owner to check."""
     camp_url = f"{_site()}/camps/{camp.get('slug') or camp['id']}"
 
     def lines(v: Any) -> list[str]:
@@ -291,10 +293,22 @@ def season_updated(to: str, camp: dict[str, Any], season: int, applied: dict[str
     if applied.get("camp_verified"):
         tail.append("Your page now shows \"confirmed by the camp\" with today's date.")
 
-    intro = (f"We updated {camp['name']}'s listing from what you sent:" if applied["changes"]
-             else f"Thanks. Nothing on {camp['name']}'s listing changed from what you sent.")
+    for c in availability or []:
+        said = f"   (you wrote: \"{c['quote']}\")" if c.get("quote") else ""
+        text_parts.append(f"{c['session']}: {_state(c['before'])} -> {_state(c['after'])}{said}")
+        html_parts.append(f"<p><strong>{_e(c['session'])}</strong>: {_e(_state(c['before']))} &rarr; "
+                          f"<strong>{_e(_state(c['after']))}</strong></p>")
+    changed = applied["changes"] or availability
+    if question:
+        ask_text = [f"One question about your {season} dates. You wrote: \"{question.get('quote') or 'same as last year'}\". "
+                    f"{question['why']} Here is what last year's weeks moved to the same weekdays in {season} would be:",
+                    *[f"  {x}" for x in question["lines"]], *[f"  Note: {n}" for n in question.get("notes") or []],
+                    "Reply \"yes\" if these are right, or send the right dates. We haven't put them on your listing yet."]
+    intro = (f"We updated {camp['name']}'s listing from what you sent:" if changed
+             else f"Thanks for your reply about {camp['name']}.")
     text = "\n".join([
         "Hi,", "", intro, "", *(["\n\n".join(text_parts), ""] if text_parts else []),
+        *([*ask_text, ""] if question else []),
         "Your listing now shows:", *[f"  {x}" for x in now], "",
         *([*tail, ""] if tail else []),
         f"See the page: {camp_url}", "",
@@ -303,6 +317,13 @@ def season_updated(to: str, camp: dict[str, Any], season: int, applied: dict[str
     ])
     html = (
         f"<p>Hi,</p><p>{_e(intro)}</p>" + "".join(html_parts)
+        + ((f"<p><strong>One question about your {season} dates.</strong> You wrote: &ldquo;"
+            f"{_e(question.get('quote') or 'same as last year')}&rdquo;. {_e(question['why'])} Here is what last "
+            f"year's weeks moved to the same weekdays in {season} would be:</p><ul>"
+            + "".join(f"<li>{_e(x)}</li>" for x in question["lines"]) + "</ul>"
+            + "".join(f"<p style='color:#8a5a00'>{_e(n)}</p>" for n in question.get("notes") or [])
+            + "<p>Reply &ldquo;yes&rdquo; if these are right, or send the right dates. We haven't put them on "
+              "your listing yet.</p>") if question else "")
         + "<p style='margin-bottom:4px'><strong>Your listing now shows</strong></p><ul style='margin-top:0'>"
         + "".join(f"<li>{_e(x.strip())}</li>" for x in now if x.strip()) + "</ul>"
         + "".join(f"<p>{_e(t)}</p>" for t in tail)
@@ -310,7 +331,9 @@ def season_updated(to: str, camp: dict[str, Any], season: int, applied: dict[str
         "<p><strong>Is anything wrong?</strong> Reply to this email and a person will fix it.</p>"
         f"<p>Thanks,<br>{_e(_signature())}</p>"
     )
-    return Email(to=to, subject=f"Updated for {season}: {camp['name']}", html=html, text=text, reply_to=_reply_to())
+    subject = (f"One question about your {season} dates: {camp['name']}" if question
+               else f"Updated for {season}: {camp['name']}")
+    return Email(to=to, subject=subject, html=html, text=text, reply_to=_reply_to())
 
 
 def _and(items: list[str]) -> str:

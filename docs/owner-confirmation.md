@@ -137,20 +137,30 @@ changed, reply if wrong" (ROADMAP Phase 2, item 2). Code: `campfinder/owners/upd
    unless set; JSON `{from_email, text, subject?, message_id?, sender_verified?}`), or pasted by a
    person: `python -m campfinder.owners receive --from owner@camp.org < email.txt`. Each one is
    stored in `owner_messages`; a redelivery with the same Message-ID is handled once.
-2. **Who sent it.** Only a camp contact who has already confirmed a listing (their
-   `camp_contacts.verified_at` is set), for exactly one camp. Anyone else goes to a person.
-3. **Claude reads it** against the camp's sessions (`INGEST_MODEL`), and may report only:
-   a session is full, open again, or has N spots left, each with the owner's own words. Anything
-   else (prices, dates, new sessions, refunds, a complaint, a question, an upset tone, anything
-   unclear) marks it for a person. The email is treated as data: the reader can only name the
-   camp's own session ids, and the code checks every change (spots within the total).
+2. **Who sent it.** A camp contact who has already confirmed a listing (their
+   `camp_contacts.verified_at` is set), or the address a season update email went to in the last
+   60 days, for exactly one camp. Anyone else goes to a person.
+3. **Claude reads it** against the camp's sessions (`INGEST_MODEL`), through one tool
+   (`record_reply`) with the system prompt cached, the listing tool's pattern. It may report
+   only: a session is full, open again, or has N spots left; and next season's dates, price per
+   week and registration day (the three facts the season update asks for). Each comes with the
+   owner's own words. Anything else (refunds, payments, a complaint, a question, a change to
+   ages or location, an upset tone, anything unclear) marks it for a person. The email is
+   treated as data: the reader can only name the camp's own session ids, and the code checks
+   every change (spots within the total, dates inside the season, a sane price).
+   **"Same weeks as last year"** becomes dates in code: last season's sessions moved to the same
+   weekdays. If that's ambiguous (a holiday moves into or out of a week, we have no sessions
+   to copy, or the listing already shows the new season), the dates are not proposed. Instead
+   the owner is asked: the reply lists the dates it would mean and says "reply yes if these are
+   right". The message waits as `asked`, and their next reply is read against that question.
 4. **A person applies it**: `python -m campfinder.owners inbox` lists what's waiting,
    `apply <id> --by NAME` makes the changes, `reject <id> --by NAME --reason "..."` closes it.
    Each change goes in `listing_changes` as `owner_email`, with the owner's address and the
    whole email.
 5. **The owner gets back what changed**: each change before and after with their words, every
    session as it now stands, and "reply and a person will fix it". It shows the change in full
-   because some owners will read it with their own AI.
+   because some owners will read it with their own AI. Season facts go through the same code
+   as the form (`season.apply_facts`), logged as `owner_email`.
 
 Turning on `OWNER_UPDATES_AUTO_APPLY=1` lets routine updates apply without a person, but only
 when the provider reports the sender passed SPF/DKIM (`sender_verified`): a From address alone
@@ -164,6 +174,4 @@ have been right.
 
 ## Not yet
 
-- The inbound mail provider: pick one (Resend inbound, Postmark, SendGrid Inbound Parse) and map
-  its webhook to the JSON above, with `sender_verified` from its SPF/DKIM result.
 - Text messages.
