@@ -2,7 +2,9 @@
   "slug": "tripp-lake-camp-poland",
   "name": "Tripp Lake Camp",
   "website_url": "https://www.tripplakecamp.com/",
+  "email": "info@tripplakecamp.com",
   "phone": "207-998-4347",
+  "street_address": "132 Tripp Lake Camp Rd.",
   "city": "Poland",
   "state": "ME",
   "zip": "04274",
@@ -25,9 +27,10 @@
     "Theatre",
     "Special events"
   ],
+  "gender_policy": "girls",
   "price_min": 18200,
   "price_max": 18200,
-  "swim_waterfront_notes": "The camp sits on a lake with a mile-long waterfront and offers a waterfront program. The page does not describe swim instruction or safety details.",
+  "swim_waterfront_notes": "The camp has a mile-long waterfront on Tripp Lake. Campers swim nearly every day, with a scheduled swim period for each age group plus free swim, and move up through colored swim caps as they learn skills. Canoeing, kayaking, sailing, waterskiing and wakeboarding are taught, starting with safety and technique.",
   "season_year": 2027,
   "sessions": [
     {
@@ -41,37 +44,47 @@
   "sources": [
     {
       "url": "https://www.tripplakecamp.com/dates-tuition/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "website_url",
         "phone",
-        "city",
-        "state",
         "camp_type",
         "primary_categories",
         "activities",
+        "gender_policy",
         "age_min",
         "age_max",
         "description_short",
         "price_min",
         "price_max",
-        "swim_waterfront_notes",
         "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Camp's own Dates & Tuition page: 'Summer 2027 Dates', girls ages 7-16, tuition $18,200"
     },
     {
-      "url": "https://www.census.gov/geographies/reference-files/time-series/geo/relationship-files.2020.html",
-      "checked": "2026-10-14",
+      "url": "https://www.tripplakecamp.com/contact/",
+      "checked": "2026-11-13",
       "fields": [
+        "email",
+        "street_address",
+        "city",
+        "state",
         "zip"
       ],
-      "note": "Poland, ME sits inside one ZIP code (2020 Census ZCTA relationship file)"
+      "note": "Contact page: 132 Tripp Lake Camp Rd., Poland, ME 04274"
+    },
+    {
+      "url": "https://www.tripplakecamp.com/activities/waterfront/",
+      "checked": "2026-11-13",
+      "fields": [
+        "swim_waterfront_notes"
+      ],
+      "note": "Waterfront activities page"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.tripplakecamp.com/dates-tuition/",
       "kind": "html",
@@ -98,6 +111,24 @@
       "Operator name"
     ],
     "low_confidence": [],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.tripplakecamp.com/dates-tuition/",
+        "https://www.tripplakecamp.com/",
+        "https://www.tripplakecamp.com/contact/",
+        "https://www.tripplakecamp.com/parents/directions/",
+        "https://www.tripplakecamp.com/activities/waterfront/"
+      ],
+      "changes": [
+        "ZIP 04274 now comes from the camp's own Contact page instead of the Census relationship file; city and state moved to that source too",
+        "Added street_address (132 Tripp Lake Camp Rd.) and email (info@tripplakecamp.com) from the Contact page",
+        "Set gender_policy to girls: the camp's Dates & Tuition page says it serves 'girls ages 7-16'",
+        "Rewrote swim_waterfront_notes from the Waterfront page (near-daily swim, colored swim caps, canoe, kayak, sail, waterski)",
+        "Dates (June 26 to August 12, 2027) and tuition ($18,200) match the page"
+      ],
+      "open_questions": []
+    }
   }
 }

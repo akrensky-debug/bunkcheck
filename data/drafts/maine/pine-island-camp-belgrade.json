@@ -31,11 +31,12 @@
     "Dustball",
     "Campfire skits, music and storytelling"
   ],
+  "gender_policy": "boys",
   "price_min": 12500,
   "price_max": 15600,
   "financial_aid": true,
   "meals_included": true,
-  "swim_waterfront_notes": "The camp is on an island in Great Pond, a lake. Campers swim, row, sail and take out boats during free time. Waterfront staff have WSI and Lifeguard certification and also go through the camp's own in-camp training.",
+  "swim_waterfront_notes": "The camp is on an island in Great Pond. Swimming follows Red Cross standards, from beginner to life-saving; every boy must reach at least beginner rank. There are two general swim periods a day with three lifeguards on duty, life jackets are required for all boating, and waterfront staff arrive with WSI and Lifeguard certification before in-camp training.",
   "season_year": 2027,
   "sessions": [
     {
@@ -49,7 +50,7 @@
   "sources": [
     {
       "url": "https://pineisland.org/about/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -71,14 +72,22 @@
         "price_max",
         "meals_included",
         "financial_aid",
-        "swim_waterfront_notes",
-        "sessions"
+        "sessions",
+        "gender_policy"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Camp's About page: dates, tuition, FAQ and contact sections."
+    },
+    {
+      "url": "https://pineisland.org/camp-life/",
+      "checked": "2026-11-13",
+      "fields": [
+        "swim_waterfront_notes"
+      ],
+      "note": "Camp Life page: swimming, rowing and sailing sections."
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://pineisland.org/about/",
       "kind": "html",
@@ -103,6 +112,20 @@
       "Grade range"
     ],
     "low_confidence": [],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://pineisland.org/about/",
+        "https://pineisland.org/camp-life/"
+      ],
+      "changes": [
+        "Added gender_policy 'boys': the camp's own About page says it serves boys ages 9 to 15.",
+        "Rewrote swim_waterfront_notes from the Camp Life page (Red Cross swim program, two general swims a day with three lifeguards, life jackets for all boating) and the FAQ (WSI and Lifeguard certification).",
+        "Confirmed the 2027 dates (Friday June 25 to Sunday August 8, 2027), the two tuition options ($12,500 and $15,600), camperships, ages 9 to 15, contact and the 234 Pine Island Road courier address.",
+        "Left the session price null: tuition is family-chosen ($12,500 or $15,600, no year printed but shown beside the 2027 dates)."
+      ],
+      "open_questions": []
+    }
   }
 }

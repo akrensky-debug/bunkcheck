@@ -10,8 +10,8 @@
   "zip": "04841",
   "camp_type": "specialty",
   "primary_categories": [
-    "sports",
-    "nature"
+    "sailing",
+    "sports"
   ],
   "age_min": 8,
   "age_max": 14,
@@ -106,7 +106,7 @@
   "sources": [
     {
       "url": "https://www.sailpowersteammuseum.org/sail-kids-for-free-skff",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -128,19 +128,19 @@
         "swim_waterfront_notes",
         "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Camp page; the 2027 schedule is labelled 'Proposed'."
     },
     {
-      "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=75+Mechanic+St.&city=Rockland&state=ME&benchmark=Public_AR_Current&format=json",
-      "checked": "2026-10-13",
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=75+Mechanic+St.&city=Rockland&state=ME&benchmark=Public_AR_Current&format=html",
+      "checked": "2026-11-13",
       "fields": [
         "zip"
       ],
-      "note": "ZIP from the US Census geocoder for 75 MECHANIC ST, ROCKLAND, ME, 04841"
+      "note": "ZIP from the US Census geocoder for the street address the camp gives (75 Mechanic St., Rockland): matched 75 MECHANIC ST, ROCKLAND, ME, 04841. The camp's pages show no ZIP."
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.sailpowersteammuseum.org/sail-kids-for-free-skff",
       "kind": "html",
@@ -174,6 +174,20 @@
         "quote": "Registration for the upcoming SKFF season will open on April 1."
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.sailpowersteammuseum.org/sail-kids-for-free-skff",
+        "https://geocoding.geo.census.gov/geocoder/locations/address?street=75+Mechanic+St.&city=Rockland&state=ME&benchmark=Public_AR_Current&format=html"
+      ],
+      "changes": [
+        "Changed primary_categories from sports and nature to sailing and sports: it is a beginner sailing program.",
+        "Confirmed all ten 2027 sessions (June 21 to August 27, Monday to Friday), free cost, ages 8 to 14, 9 AM to 12 PM, phone and address.",
+        "Re-ran the Census geocoder for 75 Mechanic St., Rockland: ZIP 04841 confirmed; the camp's pages show no ZIP.",
+        "Note: the camp labels the 2027 schedule 'Proposed' and says registration opens April 1."
+      ],
+      "open_questions": []
+    }
   }
 }

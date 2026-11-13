@@ -102,14 +102,14 @@
       "name": "Off-site: Art & Ecology: Outside The Classroom (Caribou Bog Outdoor Center, Orono)",
       "start_date": "2026-07-13",
       "end_date": "2026-07-16",
-      "price": 350,
+      "price": null,
       "availability": "unknown"
     }
   ],
   "sources": [
     {
       "url": "https://www.mainediscoverymuseum.org/summer-camp-2026",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -132,11 +132,11 @@
         "price_per",
         "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Rechecked 2026-11-13: page still shows only the 2026 season ('Thanks for a great 2026 summer camp season!')."
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.mainediscoverymuseum.org/summer-camp-2026",
       "kind": "html",
@@ -168,6 +168,18 @@
         "quote": "Fee: $350 per week"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.mainediscoverymuseum.org/summer-camp-2026"
+      ],
+      "changes": [
+        "Rechecked every field against the camp page; name, contact, address, grades 1 to 6, the $350 weekly fee and all ten 2026 session dates match.",
+        "Set the off-site Art & Ecology week (Caribou Bog, Orono) price to null: the $350 fee is printed under the museum camps heading, and the page doesn't say the off-site week costs the same.",
+        "Kept season_year 2026: no 2027 camp dates are posted yet."
+      ],
+      "open_questions": []
+    }
   }
 }
