@@ -11,16 +11,22 @@
   "zip": "04088",
   "camp_type": "sleepaway",
   "primary_categories": [
-    "nature"
+    "sports",
+    "arts",
+    "outdoor"
   ],
-  "description_short": "Overnight summer camp on Bear Lake in Waterford, Maine, running since 1910. It offers a full-summer session, two half-summer sessions with trips, and shorter Rookie sessions for first-time campers age 11 and under.",
+  "gender_policy": "boys",
+  "description_short": "Overnight summer camp on Bear Lake in Waterford, Maine, running since 1910. For 2027 it offers a full-summer session, two half-summer sessions (the second open to campers 13 and under) and two shorter Rookie sessions for first-time campers age 11 and under.",
   "activities": [
-    "Trips"
+    "Tennis",
+    "Golf",
+    "Arts",
+    "Rustic camping and trips in the White Mountain National Forest"
   ],
   "price_min": 5200,
   "price_max": 15800,
   "refund_policy_summary": "A $750 deposit is due at registration. Enrollment can be cancelled without obligation before February 1. If camp is not the right fit, the camp will work with the family on a prorated tuition refund.",
-  "swim_waterfront_notes": "The camp is on Bear Lake (40 acres). The page gives no details on swimming or the waterfront.",
+  "swim_waterfront_notes": "The camp sits on 40 acres on Bear Lake. The site gives no details on swimming or the waterfront.",
   "season_year": 2027,
   "sessions": [
     {
@@ -62,7 +68,7 @@
   "sources": [
     {
       "url": "https://www.campwigwam.com/dates-rates",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "website_url",
@@ -74,20 +80,26 @@
         "state",
         "zip",
         "camp_type",
-        "primary_categories",
-        "activities",
         "description_short",
         "price_min",
         "price_max",
         "refund_policy_summary",
         "swim_waterfront_notes",
         "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
+    },
+    {
+      "url": "https://www.campwigwam.com/about",
+      "checked": "2026-11-13",
+      "fields": [
+        "gender_policy",
+        "primary_categories",
+        "activities"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.campwigwam.com/dates-rates",
       "kind": "html",
@@ -125,6 +137,25 @@
         "quote": "Trips still happen"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.campwigwam.com/dates-rates",
+        "https://www.campwigwam.com/about",
+        "https://www.campwigwam.com/prospective-families",
+        "https://www.campwigwam.com/programs",
+        "https://www.campwigwam.com/faqs"
+      ],
+      "changes": [
+        "Fixed swim_waterfront_notes: 40 acres is the camp's land on Bear Lake, not the size of the lake.",
+        "Set gender_policy to boys from the About page ('every boy', 'Boys' summer camp for Boston families').",
+        "Replaced the one-word activity list and the lone 'nature' category with what the About page names: tennis, golf, the arts and rustic camping in the White Mountain National Forest (categories sports, arts, outdoor).",
+        "Added to the description that Second Session (Trailblazer) is open to campers 13 and under.",
+        "Checked all five 2027 sessions and prices, the $750 deposit, the February 1 cancellation terms and contact details against the Dates & Rates page; they match.",
+        "registration_url is the camp's UltraCamp login, the only registration link the page text exposes; the per-session Register buttons don't show a URL. Ages left null: the FAQ answer on ages is hidden behind a script. ACA left unset: claimed in the footer but not checked on acacamps.org."
+      ],
+      "open_questions": []
+    }
   }
 }

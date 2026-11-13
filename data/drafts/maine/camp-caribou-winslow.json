@@ -13,13 +13,29 @@
     "sports",
     "arts"
   ],
-  "description_short": "Overnight summer camp in Winslow, Maine, where campers live in cabins. You can book the full 2027 season or one of two sessions of about three and a half weeks each, with land and water sports, a ropes course, creative arts and trips.",
+  "description_short": "Overnight summer camp for boys on a lake in Winslow, Maine. For 2027 families can book the full season or one of two sessions of about three and a half weeks, with land and water sports, creative arts and outdoor adventure.",
   "activities": [
-    "Land sports",
-    "Water sports",
-    "Ropes course",
-    "Creative arts",
-    "Trips"
+    "Basketball",
+    "Soccer",
+    "Baseball",
+    "Tennis",
+    "Football",
+    "Hockey",
+    "Volleyball",
+    "Swimming",
+    "Sailing",
+    "Water skiing",
+    "Kayaking",
+    "Canoeing",
+    "Woodworking",
+    "Culinary arts",
+    "Painting",
+    "Drawing",
+    "Photography",
+    "Hiking",
+    "Camping",
+    "Fishing",
+    "Archery"
   ],
   "price_min": 10950,
   "price_max": 17700,
@@ -47,10 +63,11 @@
       "availability": "unknown"
     }
   ],
+  "gender_policy": "boys",
   "sources": [
     {
       "url": "https://www.campcaribou.com/future-families/dates-rates/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "website_url",
@@ -62,17 +79,32 @@
         "zip",
         "camp_type",
         "primary_categories",
-        "activities",
         "description_short",
         "price_min",
         "price_max",
         "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "2027 Dates and Rates: full season and two sessions with prices, summer address and phone"
+    },
+    {
+      "url": "https://www.campcaribou.com/future-families/faqs/",
+      "checked": "2026-11-13",
+      "fields": [
+        "gender_policy"
+      ],
+      "note": "FAQs: directors 'create an environment where boys can realize their dreams'; 'What type of food will my son eat?'"
+    },
+    {
+      "url": "https://www.campcaribou.com/future-families/our-program/",
+      "checked": "2026-11-13",
+      "fields": [
+        "activities"
+      ],
+      "note": "Our Program: land sports, water sports, creative arts and outdoor adventure lists"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.campcaribou.com/future-families/dates-rates/",
       "kind": "html",
@@ -102,6 +134,22 @@
         "quote": "Land Sports Water Sports Ropes Course Creative Arts"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.campcaribou.com/future-families/dates-rates/",
+        "https://www.campcaribou.com/future-families/faqs/",
+        "https://www.campcaribou.com/future-families/our-program/",
+        "https://www.campcaribou.com/"
+      ],
+      "changes": [
+        "Checked the three 2027 sessions and prices ($17,700 full season, $10,950 each half) and the Winslow address against the Dates and Rates page; all match. The page shows prices with a '~'.",
+        "Added gender_policy boys from the FAQs and Our Program pages.",
+        "Replaced the five activity category names with the specific activities listed on Our Program.",
+        "Description now says it is a boys camp."
+      ],
+      "open_questions": []
+    }
   }
 }
