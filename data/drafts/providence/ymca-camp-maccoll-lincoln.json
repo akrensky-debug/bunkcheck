@@ -49,6 +49,15 @@
         "description_short"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://ymcapawtucket.org/camps/camp-maccoll-day-camp",
+      "checked": "2026-11-13",
+      "fields": [
+        "price_per_week",
+        "price_per"
+      ],
+      "note": "Price from the camp's own page"
     }
   ],
   "review": {
@@ -97,11 +106,14 @@
       "date": "2026-10-27",
       "page_checked": "https://ymcapawtucket.org/camps/camp-maccoll",
       "changes": [
-        "registration_url: replaced the generic activity-finder link with the page's 'Register for Summer 2026!' button target (Daxko program link)."
+        "registration_url: replaced the generic activity-finder link with the page's 'Register for Summer 2026!' button target (Daxko program link).",
+        "Added $285/week (Traditional Camp regular 2026 rate; early bird was $275 through 1/31/26) from the 2026 day camp page (2026-11-13 price pass)"
       ],
       "for_andrew": [
         "Page shows no ages, dates or prices; only 'Register for Summer 2026!'. 2027 not posted."
       ]
     }
-  }
+  },
+  "price_per_week": 285,
+  "price_per": "week"
 }

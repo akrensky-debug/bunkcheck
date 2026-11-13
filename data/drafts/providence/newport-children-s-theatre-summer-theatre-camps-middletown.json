@@ -33,14 +33,14 @@
       "name": "Summer Theatre Camp (ages 8-18, auditions July 11)",
       "start_date": "2026-07-13",
       "end_date": "2026-07-25",
-      "price": null,
+      "price": 700,
       "availability": "unknown"
     },
     {
       "name": "Summer Theatre Camp (ages 8-18)",
       "start_date": "2026-07-27",
       "end_date": "2026-08-08",
-      "price": null,
+      "price": 575,
       "availability": "unknown"
     }
   ],
@@ -73,6 +73,26 @@
         "zip"
       ],
       "note": "ZIP from the US Census geocoder for 1341 W MAIN RD, MIDDLETOWN, RI, 02842"
+    },
+    {
+      "url": "https://www.newportchildrenstheatre.org/newsies",
+      "checked": "2026-11-13",
+      "fields": [
+        "price_max",
+        "price_per",
+        "sessions"
+      ],
+      "note": "Price from the camp's own page"
+    },
+    {
+      "url": "https://www.newportchildrenstheatre.org/three-musketeers",
+      "checked": "2026-11-13",
+      "fields": [
+        "price_min",
+        "price_per",
+        "sessions"
+      ],
+      "note": "Price from the camp's own page"
     }
   ],
   "review": {
@@ -122,17 +142,26 @@
         "quote": "for ages 8-18 July 27-August 8th"
       }
     ],
-    "errors": [],
+    "errors": [
+      "field sessions listed under two sources",
+      "field price_per listed under two sources",
+      "field sessions listed under two sources"
+    ],
     "first_pass": {
       "by": "Claude",
       "date": "2026-10-27",
       "page_checked": "https://www.newportchildrenstheatre.org/summer-camps",
       "changes": [
-        "Renamed from \"Newport Children's Theatre Summer Theatre Camps\" (2026-11-13): organization plus camp, short, as parents say it"
+        "Renamed from \"Newport Children's Theatre Summer Theatre Camps\" (2026-11-13): organization plus camp, short, as parents say it",
+        "Added $575 to $700 per session from the 2026 Newsies and Three Musketeers camp pages (2026-11-13 price pass)"
       ],
       "for_andrew": [
-        "refused: ask the owner for the brochure (the site returned HTTP 429 Too Many Requests on the check fetch)."
+        "refused: ask the owner for the brochure (the site returned HTTP 429 Too Many Requests on the check fetch).",
+        "Prices are the regular 2026 rates; registering by April 15 was $650 (Newsies) and $550 (Three Musketeers). The ages 8 to 12 Performance Potpourri week has no price checked."
       ]
     }
-  }
+  },
+  "price_min": 575,
+  "price_max": 700,
+  "price_per": "session"
 }

@@ -52,6 +52,16 @@
         "registration_url"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://yourockschoolofmusic.opus1.io/w/summercamp2026",
+      "checked": "2026-11-13",
+      "fields": [
+        "price_min",
+        "price_max",
+        "price_per"
+      ],
+      "note": "Price from the camp's own page"
     }
   ],
   "review": {
@@ -89,11 +99,16 @@
       "date": "2026-10-27",
       "page_checked": "https://www.yourockschoolofmusic.com/summer-camp2026",
       "changes": [
-        "Added registration_url: the page's 'Book Your Camp!' button target."
+        "Added registration_url: the page's 'Book Your Camp!' button target.",
+        "Added $489/session from the 2026 booking page (2026-11-13 price pass)"
       ],
       "for_andrew": [
-        "season_year missing: the page text gives no year, dates, ages or prices; only the URLs say 'summer-camp2026'/'summercamp2026' and the booking page is a JS app. Confirm the season and weeks with the school."
+        "season_year missing: the page text gives no year, dates, ages or prices; only the URLs say 'summer-camp2026'/'summercamp2026' and the booking page is a JS app. Confirm the season and weeks with the school.",
+        "Price $489 is for 'Summer Camp 2026!' on the booking page (2026); the camp page describes each camp as one week, but the booking page does not say 'per week', so it is recorded per session. season_year left empty because no session dates are posted."
       ]
     }
-  }
+  },
+  "price_min": 489,
+  "price_max": 489,
+  "price_per": "session"
 }

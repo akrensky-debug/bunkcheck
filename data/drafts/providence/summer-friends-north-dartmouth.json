@@ -40,7 +40,7 @@
       "name": "Week 1: Building Community",
       "start_date": "2026-06-22",
       "end_date": "2026-06-26",
-      "price": null,
+      "price": 450,
       "availability": "unknown"
     },
     {
@@ -54,49 +54,49 @@
       "name": "Week 3: Animal Adventures",
       "start_date": "2026-07-06",
       "end_date": "2026-07-10",
-      "price": null,
+      "price": 450,
       "availability": "unknown"
     },
     {
       "name": "Week 4: Under the Sea",
       "start_date": "2026-07-13",
       "end_date": "2026-07-17",
-      "price": null,
+      "price": 450,
       "availability": "unknown"
     },
     {
       "name": "Week 5: Music and More",
       "start_date": "2026-07-20",
       "end_date": "2026-07-24",
-      "price": null,
+      "price": 450,
       "availability": "unknown"
     },
     {
       "name": "Week 6: Nature Explorers",
       "start_date": "2026-07-27",
       "end_date": "2026-07-31",
-      "price": null,
+      "price": 450,
       "availability": "unknown"
     },
     {
       "name": "Week 7: Mad About Science",
       "start_date": "2026-08-03",
       "end_date": "2026-08-07",
-      "price": null,
+      "price": 450,
       "availability": "unknown"
     },
     {
       "name": "Week 8: Camp Olympics",
       "start_date": "2026-08-10",
       "end_date": "2026-08-14",
-      "price": null,
+      "price": 450,
       "availability": "unknown"
     },
     {
       "name": "Counselor in Training (3-week session)",
       "start_date": "2026-07-06",
       "end_date": "2026-07-24",
-      "price": null,
+      "price": 1215,
       "availability": "unknown"
     }
   ],
@@ -127,6 +127,16 @@
         "sessions"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.friendsacademy1810.org/summer/",
+      "checked": "2026-11-13",
+      "fields": [
+        "price_per_week",
+        "price_per",
+        "sessions"
+      ],
+      "note": "Price from the camp's own page"
     }
   ],
   "review": {
@@ -206,17 +216,22 @@
         "quote": "3-Week CIT Session: July 6-24"
       }
     ],
-    "errors": [],
+    "errors": [
+      "field sessions listed under two sources"
+    ],
     "first_pass": {
       "by": "Claude",
       "date": "2026-10-27",
       "page_checked": "https://www.friendsacademy1810.org/summer/summer-friends-day-camp-dartmouth-ma/",
       "changes": [
-        "Renamed from \"Summer Friends\" (2026-11-13): organization plus camp, short, as parents say it"
+        "Renamed from \"Summer Friends\" (2026-11-13): organization plus camp, short, as parents say it",
+        "Added $450/week (Summer Friends full day) and $1,215 for the 3-week CIT from the 2026 camp rates on the Summer Programs page (2026-11-13 price pass)"
       ],
       "for_andrew": [
-        "No prices on the page; price fields are empty"
+        "Week 2 (4 days, no camp July 3) has no price set; the rates table gives only the weekly rate. 12% off for 4+ full-day weeks; Little Friends half day is $300/week."
       ]
     }
-  }
+  },
+  "price_per_week": 450,
+  "price_per": "week"
 }

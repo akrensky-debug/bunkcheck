@@ -26,14 +26,14 @@
       "name": "Grades 5 & 6",
       "start_date": "2026-06-22",
       "end_date": "2026-06-26",
-      "price": null,
+      "price": 370,
       "availability": "unknown"
     },
     {
       "name": "Grades 3 & 4",
       "start_date": "2026-07-13",
       "end_date": "2026-07-17",
-      "price": null,
+      "price": 370,
       "availability": "unknown"
     }
   ],
@@ -59,6 +59,16 @@
         "sessions"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://dare-to-dream-summer-camp.jumbula.com/",
+      "checked": "2026-11-13",
+      "fields": [
+        "price_min",
+        "price_max",
+        "price_per"
+      ],
+      "note": "Price from the camp's own registration page (Jumbula); it also gives $370 for each of the two sessions"
     }
   ],
   "review": {
@@ -110,10 +120,15 @@
       "by": "Claude",
       "date": "2026-10-27",
       "page_checked": "https://www.daretodreamsummer.com/",
-      "changes": [],
+      "changes": [
+        "Added $370 per one-week session (2026 tuition, includes field trips and supplies; rises $50 after May 31) from the camp's Jumbula registration page (2026-11-13 price pass)"
+      ],
       "for_andrew": [
         "City/ZIP come from the mailing address PO Box 247, Wrentham MA 02093; the page does not say where the program meets. No prices on the page (on Jumbula)"
       ]
     }
-  }
+  },
+  "price_min": 370,
+  "price_max": 370,
+  "price_per": "session"
 }

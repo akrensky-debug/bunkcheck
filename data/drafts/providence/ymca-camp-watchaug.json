@@ -38,119 +38,119 @@
       "name": "Session 1 – Mystical Magical",
       "start_date": "2026-06-22",
       "end_date": "2026-06-26",
-      "price": null,
+      "price": 425,
       "availability": "unknown"
     },
     {
       "name": "Session 2 – Color Wars",
       "start_date": "2026-06-29",
       "end_date": "2026-07-03",
-      "price": null,
+      "price": 425,
       "availability": "unknown"
     },
     {
       "name": "Session 3 – Penny Carnival",
       "start_date": "2026-07-06",
       "end_date": "2026-07-10",
-      "price": null,
+      "price": 425,
       "availability": "unknown"
     },
     {
       "name": "Session 4 – Survivor",
       "start_date": "2026-07-13",
       "end_date": "2026-07-17",
-      "price": null,
+      "price": 425,
       "availability": "unknown"
     },
     {
       "name": "Session 5 – Gold Rush",
       "start_date": "2026-07-20",
       "end_date": "2026-07-24",
-      "price": null,
+      "price": 425,
       "availability": "unknown"
     },
     {
       "name": "Session 6 – Lights, Camera, Action",
       "start_date": "2026-07-27",
       "end_date": "2026-07-31",
-      "price": null,
+      "price": 425,
       "availability": "unknown"
     },
     {
       "name": "Session 7 – Olympics",
       "start_date": "2026-08-03",
       "end_date": "2026-08-07",
-      "price": null,
+      "price": 425,
       "availability": "unknown"
     },
     {
       "name": "Session 8 – Jurassic Journey",
       "start_date": "2026-08-10",
       "end_date": "2026-08-14",
-      "price": null,
+      "price": 425,
       "availability": "unknown"
     },
     {
       "name": "Session 9 – Galaxy Quest",
       "start_date": "2026-08-17",
       "end_date": "2026-08-21",
-      "price": null,
+      "price": 425,
       "availability": "unknown"
     },
     {
       "name": "Session 10 – The Best Summer Ever",
       "start_date": "2026-08-24",
       "end_date": "2026-08-28",
-      "price": null,
+      "price": 425,
       "availability": "unknown"
     },
     {
       "name": "Session 2 – Watersports (specialty)",
       "start_date": "2026-06-29",
       "end_date": "2026-07-03",
-      "price": null,
+      "price": 525,
       "availability": "unknown"
     },
     {
       "name": "Session 3 – Watersports & Rope Adventures (specialty)",
       "start_date": "2026-07-06",
       "end_date": "2026-07-10",
-      "price": null,
+      "price": 525,
       "availability": "unknown"
     },
     {
       "name": "Session 4 – Watersports (specialty)",
       "start_date": "2026-07-13",
       "end_date": "2026-07-17",
-      "price": null,
+      "price": 525,
       "availability": "unknown"
     },
     {
       "name": "Session 5 – Watersports & Rope Adventures (specialty)",
       "start_date": "2026-07-20",
       "end_date": "2026-07-24",
-      "price": null,
+      "price": 525,
       "availability": "unknown"
     },
     {
       "name": "Session 6 – Watersports (specialty)",
       "start_date": "2026-07-27",
       "end_date": "2026-07-31",
-      "price": null,
+      "price": 525,
       "availability": "unknown"
     },
     {
       "name": "Session 7 – Watersports & Rope Adventures (specialty)",
       "start_date": "2026-08-03",
       "end_date": "2026-08-07",
-      "price": null,
+      "price": 525,
       "availability": "unknown"
     },
     {
       "name": "Session 8 – Watersports (specialty)",
       "start_date": "2026-08-10",
       "end_date": "2026-08-14",
-      "price": null,
+      "price": 525,
       "availability": "unknown"
     }
   ],
@@ -174,6 +174,16 @@
         "sessions"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://oceancommunityymca.org/wp-content/uploads/2025/11/2026-Camp-Brochure-1.pdf",
+      "checked": "2026-11-13",
+      "fields": [
+        "price_per_week",
+        "price_per",
+        "sessions"
+      ],
+      "note": "Price from the camp's own page"
     }
   ],
   "review": {
@@ -246,19 +256,24 @@
     "errors": [
       "missing required city",
       "missing required state",
-      "missing required zip"
+      "missing required zip",
+      "field sessions listed under two sources"
     ],
     "first_pass": {
       "by": "Claude",
       "date": "2026-10-27",
       "page_checked": "https://oceancommunityymca.org/camp-watchaug/",
       "changes": [
-        "No field changes: description, activities, Toni's Kids notes, financial aid (YCares), bus routes and the 2026 themed and specialty sessions match the page."
+        "No field changes: description, activities, Toni's Kids notes, financial aid (YCares), bus routes and the 2026 themed and specialty sessions match the page.",
+        "Added $425/week (Traditional Camp participant rate) and session prices ($425 traditional, $525 Water Sports / Ropes Adventure) from the 2026 camp brochure (2026-11-13 price pass)"
       ],
       "for_andrew": [
         "City/state/ZIP missing: the page gives no street address, only 'Watchaug Pond'. Watchaug Pond is in Charlestown, RI, which is not in cities.py and is roughly 35-40 miles from Providence, so it may be outside the metro. Decide keep or drop.",
-        "No ages or prices on the page (they are in the 2026 brochure)."
+        "No ages or prices on the page (they are in the 2026 brochure).",
+        "Price is the non-member (participant) rate; YMCA members pay $325/week traditional and $425 for specialty weeks (2026 brochure)."
       ]
     }
-  }
+  },
+  "price_per_week": 425,
+  "price_per": "week"
 }

@@ -30,6 +30,15 @@
         "description_short"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.liddletots2teen.com/tuition-rates",
+      "checked": "2026-11-13",
+      "fields": [
+        "price_per_week",
+        "price_per"
+      ],
+      "note": "Price from the camp's own Tuition Rates page; the Summer Camp 2026 registration form on the same page also says $260 per child per week"
     }
   ],
   "review": {
@@ -71,11 +80,14 @@
       "date": "2026-10-27",
       "page_checked": "https://www.liddletots2teen.com/",
       "changes": [
-        "Checked fields against the page; no changes. Page says 'Now enrolling for Summer Camp 2026', summer hours Mon-Fri 7AM-5:30PM."
+        "Checked fields against the page; no changes. Page says 'Now enrolling for Summer Camp 2026', summer hours Mon-Fri 7AM-5:30PM.",
+        "Added $260/week from the Tuition Rates page and the 2026 summer registration form (2026-11-13 price pass)"
       ],
       "for_andrew": [
         "Listing is thin: the homepage gives no ages, prices or dates for camp; the Tuition Rates & Forms page may have more."
       ]
     }
-  }
+  },
+  "price_per_week": 260,
+  "price_per": "week"
 }

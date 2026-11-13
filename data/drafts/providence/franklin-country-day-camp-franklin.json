@@ -54,6 +54,16 @@
         "swim_waterfront_notes"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.franklincountrydaycamp.com/wp-content/uploads/2026/01/Franklin-Country-Day-Camp-2026-Brochure.pdf",
+      "checked": "2026-11-13",
+      "fields": [
+        "price_min",
+        "price_max",
+        "price_per"
+      ],
+      "note": "Price from the camp's own 2026 brochure"
     }
   ],
   "review": {
@@ -106,10 +116,16 @@
       "by": "Claude",
       "date": "2026-10-27",
       "page_checked": "https://www.franklincountrydaycamp.com/",
-      "changes": [],
+      "changes": [
+        "Added $1,250 per camper per two-week session from the 2026 brochure (2026-11-13 price pass)"
+      ],
       "for_andrew": [
-        "No ages, dates or prices on the homepage; they are in the linked 2026 brochure PDF (not read). season_year 2027 follows \"See you in 2027!\" with no 2027 details yet"
+        "No ages, dates or prices on the homepage; they are in the linked 2026 brochure PDF (not read). season_year 2027 follows \"See you in 2027!\" with no 2027 details yet",
+        "Price is the 2026 rate ($1,250 per two-week session, 2026 brochure); season_year stays 2027 because no sessions are listed. 2027 price not posted yet."
       ]
     }
-  }
+  },
+  "price_min": 1250,
+  "price_max": 1250,
+  "price_per": "session"
 }
