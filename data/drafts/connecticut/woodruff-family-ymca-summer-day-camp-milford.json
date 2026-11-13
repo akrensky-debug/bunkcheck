@@ -36,8 +36,8 @@
   "extended_care": true,
   "financial_aid": true,
   "refund_policy_summary": "A $50 deposit per camper per week is due at registration and cannot be refunded or transferred.",
-  "special_needs_notes": "The Y works with children of all abilities. Families of a child who needs social, behavioral or medical accommodations are asked to contact the Camp Director. A child who needs special assistance or medicine at camp may also need an Individual Care Plan and Medicine Authorization form.",
-  "swim_waterfront_notes": "Campers swim every day. The branch has a 25-yard indoor pool; the brochure does not say which pool camp uses or give swim test details.",
+  "special_needs_notes": "The Y works with children of all abilities. Families of a child who needs social, behavioral or medical accommodations are asked to contact the Camp Director.",
+  "swim_waterfront_notes": "Campers swim every day. The brochure gives no swim test or pool details.",
   "aca_accredited": true,
   "aca_source_url": "https://cccymca.org/wp-content/uploads/WDF-2026-Summer-Camp-Brochure-Compressed-2.pdf",
   "season_year": 2026,
@@ -125,8 +125,7 @@
         "street_address",
         "city",
         "state",
-        "zip",
-        "special_needs_notes"
+        "zip"
       ]
     },
     {
@@ -151,7 +150,8 @@
         "swim_waterfront_notes",
         "aca_accredited",
         "aca_source_url",
-        "sessions"
+        "sessions",
+        "special_needs_notes"
       ]
     }
   ],
