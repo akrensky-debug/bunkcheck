@@ -120,6 +120,19 @@ shared test fake, `leads` and the Pro columns dropped (migration 0013).
   Check the key is set without printing it. The fetcher takes a refusal (401, 403, 429) as the
   answer: ask the owner for the brochure, never work around a camp's bot filter.
 
+## Firecrawl only when it adds something (added 13 November 2026)
+
+Firecrawl costs credits, and the daily allowance runs out mid-task. The free tools come first:
+
+- **A camp's page or PDF:** the repo fetcher, `campfinder/ingest/fetch.py`. It says it's a bot,
+  takes a refusal as final, reads PDFs, and falls back to a browser for pages built by script.
+- **Web search:** the built-in web search.
+
+Use Firecrawl only for what those can't do: an Alexandria data source (Google Trends by metro
+was the first), a page the repo fetcher can't render, a PDF over its 8 MB cap. Say what it's
+for and roughly what it costs before you start. Never use its stealth proxy or any other way
+past a site's bot filter.
+
 ## Never without Andrew
 
 Merging to `main`, deploying, anything destructive on Supabase or Railway, sending email to a
