@@ -10,7 +10,7 @@ from typing import Any, Literal
 from fastapi import APIRouter, Header, HTTPException, Request
 from pydantic import BaseModel, Field, ValidationError
 
-from campfinder.owners import inbound, service, updates
+from campfinder.owners import inbound, season, service, updates
 
 router = APIRouter()
 
@@ -49,6 +49,66 @@ async def answer_confirmation(token: str, body: Answer) -> AnswerResult:
     if outcome == "invalid" or name is None:
         raise HTTPException(status_code=404, detail=GONE)
     return AnswerResult(outcome=outcome, camp_name=name)
+
+
+class SuggestedSession(BaseModel):
+    name: str | None = None
+    start_date: str
+    end_date: str
+    was_start: str
+    was_end: str
+    note: str | None = None
+
+
+class UpdateView(BaseModel):
+    camp_name: str
+    city: str | None = None
+    season_year: int = Field(description="The season the owner is asked about")
+    shown_season: int | None = Field(default=None, description="The season the facts shown are from")
+    snapshot: dict[str, Any]
+    suggested: list[SuggestedSession] = Field(description="Last season's sessions moved to this season, same weekdays")
+    price_per_week: float | None = None
+    registration: str | None = Field(default=None, description="The registration day parents see now, if checked")
+
+
+class UpdateResult(BaseModel):
+    camp_name: str
+    changes: list[dict[str, Any]]
+    sessions_now: list[str]
+    price_now: str | None = None
+    registration_now: str | None = None
+    camp_verified: bool
+    not_set: list[str]
+    skipped: list[str]
+
+
+@router.get("/owners/update/{token}", response_model=UpdateView, summary="What a season update link shows")
+async def view_update(token: str) -> UpdateView:
+    """Opening the link changes nothing (mail scanners open links on their own)."""
+    v = season.look_up(token)
+    if v is None:
+        raise HTTPException(status_code=404, detail=GONE)
+    return UpdateView(
+        camp_name=v.camp_name, city=v.city, season_year=v.season_year, shown_season=v.shown_season,
+        snapshot=v.snapshot, price_per_week=float(v.price_per_week) if v.price_per_week is not None else None,
+        registration=v.registration,
+        suggested=[SuggestedSession(name=s.name, start_date=s.start_date.isoformat(), end_date=s.end_date.isoformat(),
+                                    was_start=s.was_start.isoformat(), was_end=s.was_end.isoformat(), note=s.note)
+                   for s in v.suggested])
+
+
+@router.post("/owners/update/{token}", response_model=UpdateResult, summary="The owner's season facts")
+async def answer_update(token: str, body: season.SeasonFacts) -> UpdateResult:
+    """The season is the link's, whatever the body says. 422 with the reason if a fact doesn't
+    check out (nothing is changed); 404 if the link expired or was used."""
+    try:
+        done = await season.answer(token, body)
+    except service.ConfirmationError as e:
+        raise HTTPException(status_code=422, detail=str(e)) from e
+    if done is None:
+        raise HTTPException(status_code=404, detail=GONE)
+    name, applied = done
+    return UpdateResult(camp_name=name, **applied.as_dict())
 
 
 class InboundEmail(BaseModel):

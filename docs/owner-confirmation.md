@@ -37,6 +37,57 @@ A camp is ready when a person has checked it, it's on the site, the camp hasn't 
 there's an email for it (primary contact first, then the camp's own email), and no earlier link
 is still waiting for an answer. `preview <camp>` shows any one email first.
 
+## The season update ("your 2027 update")
+
+Parents plan summer 2027 from January to March, and most camps haven't posted 2027 by then. This
+email asks each owner for three facts: next season's session dates, its price per week, and the
+day registration opens. Code: `campfinder/owners/season.py`.
+
+**Decided by Andrew, 13 November 2026: the owner is the checker for this email.** A camp doesn't
+need a person's hand check before it gets it. The listing email keeps that requirement.
+
+    python -m campfinder.owners preview <camp> --update [--to owner@camp.org]   # records and sends nothing
+    python -m campfinder.owners send <camp> --update --by <name>
+    python -m campfinder.owners queue --update [--region "Providence, RI"]     # starts with the January 1 number
+    python -m campfinder.owners send-ready --update --by <name> --limit 10 [--yes]
+
+1. **The email** shows what we have, labeled with the season it's from ("from your 2026
+   season"), and asks for the three facts. It mentions how many parents asked to hear when
+   registration opens. It reuses the listing email's machinery: one link per camp, a snapshot
+   of the facts shown, 30 days, every step in the change log. `listing_confirmations.kind` is
+   `season_update`, so its link works only on `/owners/update/<token>` and the listing
+   email's only on `/owners/confirm/<token>`.
+2. **The owner answers on the form**, or by replying in plain words. The form starts from last
+   season's weeks moved to the same weekdays next year (whole weeks, so Monday stays Monday) and
+   flags any week where that changes which holiday falls in it: in 2027 the Fourth of July is
+   observed on Monday 5 July, so the week that starts that day isn't last year's week. The
+   owner picks "Enter 2027 dates" before any of those dates are sent; nothing is assumed.
+3. **What the owner sends goes on the listing** at once, each fact `camp_verified` with today's
+   date, and in the change log as `owner_web` with the whole answer:
+   - Dates replace last season's sessions. Rows are kept and moved (matched by name, else in
+     order), so a family's saved pick of Week 1 still points at Week 1. Last season's
+     availability and spots are cleared. `season_year` becomes the new season.
+   - A weekly price carries to a session only when that session was priced at exactly last
+     year's weekly rate and is as many days long. A new session or a short holiday week is left
+     blank, not guessed.
+   - The registration day becomes a verified `registration_windows` row for that season (the
+     owner's date replaces an unchecked one we had), so parents with alerts on are told
+     (`docs/registration-alerts.md`). A day without a time is stored as midnight local time and
+     shown as the day alone.
+   - "The name, town, ages and website are right" confirms those fields too, unless the listing
+     changed after the email went out. The camp as a whole becomes `camp_verified` only when
+     the owner sent the new dates and ticked that box.
+   - A note on the form goes to `owners inbox` for a person.
+4. **The owner gets back exactly what changed**, each fact before and after, and the listing as
+   it now stands, with "reply and a person will fix it".
+5. **Not set yet** is an answer. The camp keeps last season's dates and shows as answered; the
+   queue asks again three weeks later.
+
+**The January 1 number** is the first line of `queue`: live camps in the Providence area
+(`camps.region = 'Providence, RI'`) whose next-season dates came from the owner, either through
+this email or a reply, or a listing confirmation of a listing that already showed that season.
+A camp our team moved to 2027 from its website doesn't count until the owner confirms it.
+
 ## Spots left
 
 When an owner tells us how many spots a session has left (by reply, phone or text), record it:
