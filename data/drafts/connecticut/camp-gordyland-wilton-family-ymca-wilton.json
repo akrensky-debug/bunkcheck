@@ -2,39 +2,54 @@
   "slug": "camp-gordyland-wilton-family-ymca-wilton",
   "name": "Camp Gordyland (Wilton Family YMCA)",
   "operator_name": "Riverbrook Regional YMCA",
-  "website_url": "https://wiltonymca.org/special-needs/",
+  "website_url": "https://wiltonymca.org/summer-camps/",
   "registration_url": "https://operations.daxko.com/Online/3093/ProgramsV2/Home.mvc",
-  "email": "cfoley@riverbrookymca.org",
+  "email": "mkazlauskas@riverbrookymca.org",
   "phone": "203-762-8384",
   "street_address": "404 Danbury Road",
   "city": "Wilton",
   "state": "CT",
   "zip": "06897",
-  "description_short": "Camp Gordyland is the summer camp at the Wilton branch of the Riverbrook Regional YMCA. Campers with special needs join a regular camp group, and the Special Needs Director may assign them shared paraprofessional support.",
+  "description_short": "Camp Gordyland is the summer camp at the Wilton branch of the Riverbrook Regional YMCA, 404 Danbury Road. The 2027 season runs nine weeks, June 21 to August 20. Campers with special needs join a regular camp group, and the Special Needs Director may assign them shared paraprofessional support.",
   "special_needs_notes": "Campers with special needs take part fully in their camp group and in all camp-day activities. At the Special Needs Director's discretion, a camper may be assigned shared (not one-to-one) paraprofessional support. Support staff help with engagement and make modifications when needed. Students in summer school can attend, and the Y will work around school district schedules. CIT program can extend beyond age 16 up to age 21 if space allows. Campers registered as an extension of a school-supported program must attend with district support. The Y may require families to provide outside support, and the Special Needs Director or Camp Director will contact the family to agree on a plan. Families must contact Christina Foley (cfoley@riverbrookymca.org, 203-762-8384 ext. 207) to discuss needs or arrange support staff. Full sessions go to a waitlist.",
   "sources": [
     {
-      "url": "https://wiltonymca.org/special-needs/",
-      "checked": "2026-10-13",
+      "url": "https://wiltonymca.org/summer-camps/",
+      "checked": "2026-11-13",
       "fields": [
         "name",
-        "operator_name",
         "website_url",
-        "registration_url",
-        "email",
-        "phone",
         "street_address",
         "city",
         "state",
-        "zip",
-        "description_short",
-        "special_needs_notes"
+        "zip"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Summer Camps page: 'Camp Gordyland and Camp Sunrise Early Bird Registration is now OPEN!'; footer gives the Wilton branch address"
+    },
+    {
+      "url": "https://wiltonymca.org/special-needs/",
+      "checked": "2026-11-13",
+      "fields": [
+        "operator_name",
+        "registration_url",
+        "special_needs_notes",
+        "description_short"
+      ],
+      "note": "Special needs and inclusion policy for Camp Gordyland; 'Register Now' link"
+    },
+    {
+      "url": "https://wiltonymca.org/wp-content/uploads/2026/10/2027-Camp-Themes-1.pdf",
+      "checked": "2026-11-13",
+      "fields": [
+        "email",
+        "phone",
+        "sessions"
+      ],
+      "note": "2027 theme weeks for Riverbrook YMCA camps: June 21-Aug 20, '*only Camp Gordyland will be running week 9'; Camp Director contact"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://wiltonymca.org/special-needs/",
       "kind": "html",
@@ -70,6 +85,94 @@
       "missing required camp_type",
       "missing required season_year",
       "camp_type must be one of ['day', 'sleepaway', 'specialty']"
-    ]
-  }
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://wiltonymca.org/special-needs/",
+        "https://wiltonymca.org/summer-camps/",
+        "https://wiltonymca.org/camp-gordyland-prices/",
+        "https://wiltonymca.org/child-care/",
+        "https://wiltonymca.org/camp-forms-2/",
+        "https://wiltonymca.org/wp-content/uploads/2026/10/2027-Camp-Themes-1.pdf",
+        "https://wiltonymca.org/wp-content/uploads/2026/10/2027-Camp-Calendar-for-Wilton-and-Norwalk.pdf"
+      ],
+      "changes": [
+        "Added season_year 2027 and nine weeks, June 21 to August 20, 2027, from the camp's 2027 theme-weeks PDF (week 9 is Gordyland only).",
+        "website_url changed from the special-needs policy page to the Summer Camps page.",
+        "email changed from the Special Needs contact (Christina Foley) to the Camp Director address on the 2027 PDF, mkazlauskas@riverbrookymca.org; Christina Foley stays in special_needs_notes.",
+        "Description now gives the season; the special-needs details stay."
+      ],
+      "open_questions": [
+        "I could not find Camp Gordyland's own page. /camp-gordyland/ redirects to /camp-gordyland-prices/, which renders with no text, and the Summer Camps page shows only a banner. So camp_type, ages, grades, hours, activities and prices are unknown, and check_draft fails on missing camp_type. Can you open wiltonymca.org/camp-gordyland-prices/ in a browser, or ask the Y for the 2027 Gordyland pricing sheet and handbook? The calendar mentions a 'Teen Camp Sleepover', so I did not assume it is a day camp.",
+        "The 2027 themes PDF lists seven theme names for nine weeks, so the weeks are left unnamed."
+      ]
+    }
+  },
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Week 1",
+      "start_date": "2027-06-21",
+      "end_date": "2027-06-25",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 2",
+      "start_date": "2027-06-28",
+      "end_date": "2027-07-02",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 3",
+      "start_date": "2027-07-05",
+      "end_date": "2027-07-09",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 4",
+      "start_date": "2027-07-12",
+      "end_date": "2027-07-16",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 5",
+      "start_date": "2027-07-19",
+      "end_date": "2027-07-23",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 6",
+      "start_date": "2027-07-26",
+      "end_date": "2027-07-30",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 7",
+      "start_date": "2027-08-02",
+      "end_date": "2027-08-06",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 8",
+      "start_date": "2027-08-09",
+      "end_date": "2027-08-13",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 9",
+      "start_date": "2027-08-16",
+      "end_date": "2027-08-20",
+      "price": null,
+      "availability": "unknown"
+    }
+  ]
 }
