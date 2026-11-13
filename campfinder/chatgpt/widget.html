@@ -3,54 +3,81 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
 <style>
+  /* Bunkcheck's own palette. Claude passes its style variables (--color-*, --font-*,
+     --border-radius-*) and those win; ChatGPT and a bare browser fall back to these. */
   :root {
-    /* Bunkcheck: night navy brand, checked green for verified, warm neutrals. */
-    --bg: #ffffff; --card: #ffffff; --line: #e2ded4; --ink: #14213d; --muted: #565e70;
-    --brand: #14213d; --brand-soft: #eef0f5; --ok: #2e6b3f; --ok-soft: #e3efe5; --warn-soft: #f3f1eb;
-    --accent: #f5d96b; --cta-ink: #14213d;
+    --bc-card: #ffffff; --bc-line: #e2ded4; --bc-ink: #14213d; --bc-muted: #565e70;
+    --bc-soft: #f3f1eb; --bc-ok: #2e6b3f; --bc-ok-soft: #e3efe5;
+    --bc-warn: #7a5a12; --accent: #f5d96b;
   }
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
-      --bg: #0b0f17; --card: #121a2b; --line: #24304a; --ink: #eef0f5; --muted: #a9b1c3;
-      --brand: #f5d96b; --brand-soft: #1b2b52; --ok: #8ccb98; --ok-soft: #1e3524; --warn-soft: #1c2638;
-      --accent: #f5d96b; --cta-ink: #eef0f5;
+      --bc-card: #121a2b; --bc-line: #24304a; --bc-ink: #eef0f5; --bc-muted: #a9b1c3;
+      --bc-soft: #1c2638; --bc-ok: #8ccb98; --bc-ok-soft: #1e3524; --bc-warn: #e0b85a;
     }
   }
   :root[data-theme="dark"] {
-    --bg: #0b0f17; --card: #121a2b; --line: #24304a; --ink: #eef0f5; --muted: #a9b1c3;
-    --brand: #f5d96b; --brand-soft: #1b2b52; --ok: #8ccb98; --ok-soft: #1e3524; --warn-soft: #1c2638;
-    --accent: #f5d96b; --cta-ink: #eef0f5;
+    --bc-card: #121a2b; --bc-line: #24304a; --bc-ink: #eef0f5; --bc-muted: #a9b1c3;
+    --bc-soft: #1c2638; --bc-ok: #8ccb98; --bc-ok-soft: #1e3524; --bc-warn: #e0b85a;
+  }
+  :root {
+    --card: var(--color-background-primary, var(--bc-card));
+    --line: var(--color-border-tertiary, var(--bc-line));
+    --ink: var(--color-text-primary, var(--bc-ink));
+    --muted: var(--color-text-secondary, var(--bc-muted));
+    --soft: var(--color-background-secondary, var(--bc-soft));
+    --ok: var(--color-text-success, var(--bc-ok));
+    --ok-soft: var(--color-background-success, var(--bc-ok-soft));
+    --warn: var(--color-text-warning, var(--bc-warn));
+    --radius: var(--border-radius-xl, 12px);
+    --pad-l: 0px; --pad-r: 0px;
   }
   * { box-sizing: border-box; }
-  body { margin: 0; font: 14px/1.4 system-ui, -apple-system, "Segoe UI", sans-serif; color: var(--ink); background: var(--bg); }
-  .wrap { padding: 12px; display: grid; gap: 10px; }
-  .card { border: 1px solid var(--line); background: var(--card); border-radius: 14px; padding: 12px 14px; transition: border-color .18s ease, transform .2s ease; }
-  .card:hover { border-color: var(--brand); }
+  /* Transparent, so the conversation shows through (Claude's theming guide). */
+  html, body { margin: 0; background: transparent; }
+  body { font: 14px/1.4 var(--font-sans, system-ui, -apple-system, "Segoe UI", sans-serif); color: var(--ink); }
+  .wrap { padding: 4px calc(2px + var(--pad-r)) 4px calc(2px + var(--pad-l)); display: grid; gap: 10px; }
+  .card { border: 1px solid var(--line); background: var(--card); border-radius: var(--radius); padding: 12px 14px; transition: border-color .15s ease; }
+  .card:hover { border-color: var(--muted); }
   .row { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; }
-  .name { font-weight: 700; font-size: 15px; letter-spacing: -0.01em; }
+  .name { font-weight: 700; font-size: 15px; }
   .meta { color: var(--muted); font-size: 13px; margin-top: 2px; }
   .price { font-weight: 700; white-space: nowrap; }
   .price small { color: var(--muted); font-weight: 400; }
   .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
-  .chip { font-size: 12px; padding: 2px 8px; border-radius: 999px; background: var(--warn-soft); color: var(--muted); }
-  .season { color: var(--muted); font-size: 12.5px; margin-top: 4px; }
+  .chip { font-size: 12px; padding: 2px 8px; border-radius: 999px; background: var(--soft); color: var(--muted); }
   .chip.ok { background: var(--ok-soft); color: var(--ok); font-weight: 600; }
-  .why { color: var(--ink); font-size: 12.5px; margin-top: 8px; display: flex; gap: 6px; align-items: baseline; }
-  .why::before { content: ""; flex: none; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 2px var(--brand-soft); transform: translateY(-1px); }
+  .season { color: var(--muted); font-size: 12px; margin-top: 4px; }
+  .why { color: var(--ink); font-size: 13px; margin-top: 8px; display: flex; gap: 6px; align-items: baseline; }
+  .why::before { content: ""; flex: none; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); transform: translateY(-1px); }
   .dates { font-size: 13px; margin-top: 6px; }
-  a.btn, button.btn { display: inline-block; margin-top: 10px; font: inherit; font-size: 13px; font-weight: 600; color: var(--brand); background: none; border: 0; padding: 0; cursor: pointer; text-decoration: underline; text-decoration-color: var(--accent); text-decoration-thickness: 2px; text-underline-offset: 3px; }
+  .spots { color: var(--warn); font-weight: 600; }
+  a.btn, button.btn { display: inline-flex; align-items: center; min-height: 32px; margin-top: 6px; font: inherit; font-size: 13px; font-weight: 600; color: var(--ink); background: none; border: 0; padding: 0; cursor: pointer; text-decoration: underline; text-decoration-color: var(--accent); text-decoration-thickness: 2px; text-underline-offset: 3px; }
   a.btn:hover, button.btn:hover { text-decoration-color: currentColor; }
-  .cta { background: var(--brand-soft); border-color: transparent; color: var(--cta-ink); }
-  .cta .btn { color: var(--cta-ink); }
+  button.btn:focus-visible { outline: 2px solid var(--color-ring-primary, var(--ink)); outline-offset: 2px; border-radius: 4px; }
+  button.more { color: var(--muted); text-decoration-color: var(--line); justify-self: start; margin: 0 2px; }
+  /* Fingers need 44pt (Claude's mobile guidelines); a mouse doesn't. */
+  @media (pointer: coarse) { a.btn, button.btn { min-height: 44px; } }
+  /* Claude's chat surface can match its secondary background, so the handoff is a card with a
+     Bunkcheck yellow edge rather than a tinted block that could disappear into the chat. */
+  .cta { background: var(--card); border-color: var(--accent); }
   .cta .name { font-size: 14px; }
   .empty { color: var(--muted); padding: 8px 2px; }
   .foot { color: var(--muted); font-size: 11.5px; text-align: right; }
-  @media (prefers-reduced-motion: reduce) { .card { transition: none; } }
+  .skel { height: 12px; border-radius: 6px; background: var(--soft); margin-top: 8px; animation: pulse 1.2s ease-in-out infinite; }
+  .skel.title { height: 16px; width: 55%; margin-top: 0; }
+  @keyframes pulse { 50% { opacity: .5; } }
+  [hidden] { display: none !important; }
+  @media (prefers-reduced-motion: reduce) { .card { transition: none; } .skel { animation: none; } }
 </style>
 </head>
 <body>
-<div class="wrap" id="root"><div class="empty">Finding camps…</div></div>
+<div class="wrap" id="root" aria-busy="true" aria-label="Loading results">
+  <div class="card"><div class="skel title"></div><div class="skel" style="width:35%"></div><div class="skel" style="width:70%"></div></div>
+  <div class="card"><div class="skel title"></div><div class="skel" style="width:40%"></div><div class="skel" style="width:60%"></div></div>
+</div>
 <script>
   // MCP Apps bridge (protocol 2026-01-26), shared by ChatGPT and Claude, with the
   // window.openai fallback ChatGPT also offers.
@@ -78,6 +105,8 @@
 
   const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   const day = d => new Date(d + "T00:00:00").toLocaleDateString(undefined, { month: "short", day: "numeric" });
+  const miles = d => d == null ? "" : (d < 10 ? (Math.round(d * 10) / 10) : Math.round(d)) + " mi";
+  const SPOTS = { limited: "Few spots left", waitlist: "Waitlist only", full: "Full" };
   const TRUST = { team_verified: "Checked by Bunkcheck", camp_verified: "Verified by the camp", claimed: "Claimed by the camp" };
 
   function campCard(c, session) {
@@ -88,7 +117,7 @@
     if (c.extended_care) chips.push(`<span class="chip">Extended care</span>`);
     if (c.transportation) chips.push(`<span class="chip">Transportation</span>`);
     if (c.financial_aid) chips.push(`<span class="chip">Financial aid</span>`);
-    const where = [c.city && c.state ? `${c.city}, ${c.state}` : "", c.distance_miles != null ? `${c.distance_miles} mi` : ""].filter(Boolean).join(" · ");
+    const where = [c.city && c.state ? `${c.city}, ${c.state}` : "", miles(c.distance_miles)].filter(Boolean).join(" · ");
     const price = session && session.price != null ? session.price : c.price_per_week;
     // Last season's dates and prices are still useful, but never shown as this season's.
     const oldYear = session ? (session.last_season ? session.start_date.slice(0, 4) : null)
@@ -97,9 +126,10 @@
     return `<div class="card">
       <div class="row">
         <div><div class="name">${esc(c.name)}</div><div class="meta">${esc(where)}</div></div>
-        ${price != null ? `<div class="price">$${Math.round(price)}<small>${session ? "" : "/wk"}</small></div>` : ""}
+        ${price != null ? `<div class="price">$${Math.round(price)}<small>${session ? "/session" : "/wk"}</small></div>` : ""}
       </div>
-      ${session ? `<div class="dates">${day(session.start_date)} – ${day(session.end_date)}${session.availability === "limited" || session.availability === "waitlist" ? " · " + esc(session.availability) : ""}</div>` : ""}
+      ${session ? `<div class="dates">${day(session.start_date)} – ${day(session.end_date)}${SPOTS[session.availability] ? ` · <span class="spots">${SPOTS[session.availability]}</span>` : ""}</div>` : ""}
+      ${session && session.name && session.name !== c.name ? `<div class="meta">${esc(session.name)}</div>` : ""}
       ${season}
       <div class="chips">${chips.join("")}</div>
       ${c.match_reasons && c.match_reasons.length ? `<div class="why">${esc(c.match_reasons.slice(0, 2).join(" · "))}</div>` : ""}
@@ -116,7 +146,7 @@
     else chips.push(`<span class="chip">Not yet verified</span>`);
     if (a.age_min != null && a.age_max != null) chips.push(`<span class="chip">Ages ${a.age_min}–${a.age_max}</span>`);
     if (a.trial_available) chips.push(`<span class="chip">Trial class</span>`);
-    const where = [a.provider_name, a.city && a.state ? `${a.city}, ${a.state}` : "", a.distance_miles != null ? `${a.distance_miles} mi` : ""].filter(Boolean).join(" · ");
+    const where = [a.provider_name, a.city && a.state ? `${a.city}, ${a.state}` : "", miles(a.distance_miles)].filter(Boolean).join(" · ");
     const price = a.per_class != null ? `${money(a.per_class)}<small>/class</small>` : a.term_price != null ? `${money(a.term_price)}<small>/term</small>` : "";
     const times = (a.offerings || []).slice(0, 3).map(o =>
       `<div class="dates">${esc(o.schedule || "Time not published")}${o.skill_level ? " · " + esc(o.skill_level) : ""}${o.start_date ? " · from " + day(o.start_date) : ""}${o.enrollment_status === "upcoming" && o.enrollment_opens ? " · registration opens " + day(o.enrollment_opens) : ""}</div>`).join("");
@@ -143,9 +173,20 @@
     </div>`;
   }
 
+  // Claude caps an inline app's height and clips the rest, so three cards show and the
+  // others wait behind a button; the handoff card stays in view either way.
+  const SHOWN = 3;
+  function message(text) {
+    const root = document.getElementById("root");
+    root.removeAttribute("aria-busy");
+    root.innerHTML = `<div class="empty">${esc(text)}</div>`;
+    reportSize();
+  }
+
   function render(data) {
     const root = document.getElementById("root");
     if (!data) return;
+    root.removeAttribute("aria-busy");
     const parts = [];
     if (data.inquiry) {
       parts.push(inquiryCard(data.inquiry));
@@ -153,11 +194,16 @@
       if (data.activities.length) data.activities.forEach(a => parts.push(activityCard(a)));
       else parts.push(`<div class="empty">${esc(data.note || "No classes matched. Try other days or a wider area.")}</div>`);
     } else if (data.sessions && data.sessions.length) {
-      data.sessions.forEach(s => parts.push(campCard(s.camp, s)));
+      parts.push(...data.sessions.map(s => campCard(s.camp, s)));
     } else if (data.camps && data.camps.length) {
-      data.camps.forEach(c => parts.push(campCard(c)));
+      parts.push(...data.camps.map(c => campCard(c)));
     } else {
       parts.push(`<div class="empty">${esc(data.note || "No camps matched. Try a nearby town or fewer filters.")}</div>`);
+    }
+    if (parts.length > SHOWN + 1) {
+      const rest = parts.splice(SHOWN).map(p => p.replace('<div class="card"', '<div class="card" data-more hidden'));
+      const what = data.sessions ? "sessions" : data.activities ? "classes" : "camps";
+      parts.push(...rest, `<button class="btn more" id="more">Show ${rest.length} more ${what}</button>`);
     }
     if (data.plan_url) {
       parts.push(`<div class="card cta">
@@ -169,7 +215,38 @@
     parts.push(`<div class="foot">Program data from Bunkcheck</div>`);
     root.innerHTML = parts.join("");
     root.querySelectorAll("[data-url]").forEach(el => el.addEventListener("click", () => openLink(el.dataset.url)));
+    const more = document.getElementById("more");
+    if (more) more.addEventListener("click", () => {
+      root.querySelectorAll("[data-more]").forEach(el => { el.hidden = false; });
+      more.hidden = true;
+      reportSize();
+    });
     reportSize();
+  }
+
+  // Theme, Claude's style variables and fonts, and safe-area insets from the host context.
+  // Updates carry only the fields that changed.
+  let fontsApplied = false;
+  function applyHost(ctx) {
+    if (!ctx) return;
+    const root = document.documentElement;
+    if (ctx.theme) { root.dataset.theme = ctx.theme; root.style.colorScheme = ctx.theme; }
+    const vars = ctx.styles && ctx.styles.variables;
+    if (vars) for (const [k, v] of Object.entries(vars)) {
+      if (v != null) root.style.setProperty(k.startsWith("--") ? k : "--" + k, v);
+    }
+    const fonts = ctx.styles && ctx.styles.css && ctx.styles.css.fonts;
+    if (fonts && !fontsApplied) {
+      const el = document.createElement("style");
+      el.textContent = fonts;
+      document.head.appendChild(el);
+      fontsApplied = true;
+    }
+    const inset = ctx.safeAreaInsets;
+    if (inset) {
+      root.style.setProperty("--pad-l", (inset.left || 0) + "px");
+      root.style.setProperty("--pad-r", (inset.right || 0) + "px");
+    }
   }
 
   window.addEventListener("message", event => {
@@ -186,20 +263,23 @@
       window.parent.postMessage({ jsonrpc: "2.0", id: msg.id, result: {} }, "*");
       return;
     }
-    if (msg.method === "ui/notifications/tool-result") render(msg.params && msg.params.structuredContent);
-    if (msg.method === "ui/notifications/host-context-changed" && msg.params && msg.params.theme) {
-      document.documentElement.dataset.theme = msg.params.theme;
+    if (msg.method === "ui/notifications/tool-result") {
+      const r = msg.params || {};
+      // A failed call has no structured content; without this the skeleton never ended.
+      if (r.isError || !r.structuredContent) message("Bunkcheck couldn't get results this time. Ask again, or try a nearby town.");
+      else render(r.structuredContent);
     }
+    if (msg.method === "ui/notifications/tool-cancelled") message("Search stopped.");
+    if (msg.method === "ui/notifications/host-context-changed") applyHost(msg.params);
   });
 
   request("ui/initialize", {
-    appInfo: { name: "Bunkcheck", version: "1.4.0" },
+    appInfo: { name: "Bunkcheck", version: "1.5.0" },
     appCapabilities: { availableDisplayModes: ["inline"] },
     protocolVersion: "2026-01-26",
   }).then(result => {
     hostReady = true;
-    const theme = result && result.hostContext && result.hostContext.theme;
-    if (theme) document.documentElement.dataset.theme = theme;
+    applyHost(result && result.hostContext);
     notify("ui/notifications/initialized", {});
   }).catch(() => {});
 

@@ -58,7 +58,7 @@ agent is not counted.
 | Surface | Where |
 | --- | --- |
 | MCP tools `send_inquiry`, `check_inquiry` | `campfinder/agent/inquiry_tools.py`, served at `/mcp`, `/chatgpt/mcp`, `/claude/mcp` and to our agent. `send_inquiry` is annotated not read-only, open-world |
-| ChatGPT and Claude card | `campfinder/chatgpt/widget.html` (`ui://campfinder/camps-v5.html`): the preview and a "Review and send on CampFinder" button that opens the confirm page |
+| ChatGPT and Claude card | `campfinder/chatgpt/widget.html` (`ui://campfinder/camps-v6.html`): the preview and a "Review and send on CampFinder" button that opens the confirm page |
 | Partner API | `POST /inquiries`, `GET /inquiries/{id}`, `POST /inquiries/{id}/confirm` in `docs/activity-api.md` |
 | Site API | `campfinder/routers/inquiries.py` |
 | Pages | `frontend/app/inquiries/[token]` (parent), `frontend/app/owners/inquiries/[token]` (camp), `components/inquiries/AskCamp.tsx` on camp pages, the agent's `inquiry` card |
