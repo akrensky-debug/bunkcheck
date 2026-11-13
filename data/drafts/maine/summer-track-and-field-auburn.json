@@ -29,7 +29,7 @@
   "sources": [
     {
       "url": "https://auburnmaine.gov/Documents/Departments/Recreation/Program%20Book/Summer%20Brochure%202026%20UPDATED.pdf",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -63,7 +63,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "drop",
     "source": {
       "url": "https://auburnmaine.gov/Documents/Departments/Recreation/Program%20Book/Summer%20Brochure%202026%20UPDATED.pdf",
       "kind": "pdf",
@@ -99,6 +99,17 @@
         "quote": "For programs $41 - $100, a minimum of 50% payment at the time of registration is required along with a signed payment plan."
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://auburnmaine.gov/Documents/Departments/Recreation/Program%20Book/Summer%20Brochure%202026%20UPDATED.pdf"
+      ],
+      "changes": [
+        "Status set to drop: the brochure lists Summer Track & Field under Youth Leagues (two practices and one Thursday meet a week at the ELHS track, ages 6-14 as of Dec 31, 2026, $85 plus USTFA membership). It is a sports league, not a camp, and no dates are given",
+        "No other edits; the fields match the brochure, but website_url and registration_url are bare 'www.auburnmaine.gov' rather than a page that shows the program"
+      ],
+      "open_questions": []
+    }
   }
 }

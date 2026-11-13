@@ -51,7 +51,7 @@
   "sources": [
     {
       "url": "https://marinesciencecamp.com/camp/york-m-f-9am-2pm-k-8th/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -71,11 +71,11 @@
         "description_short",
         "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "York camp page: Long Sands Beach, York, ME 03909; three weeks listed without a year; tag K-8th Grade"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://marinesciencecamp.com/camp/york-m-f-9am-2pm-k-8th/",
       "kind": "html",
@@ -139,6 +139,25 @@
         "quote": "REGISTER"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://marinesciencecamp.com/camp/york-m-f-9am-2pm-k-8th/",
+        "https://marinesciencecamp.com/state/maine/",
+        "https://marinesciencecamp.com/faq",
+        "https://marinesciencecamp.com/contact"
+      ],
+      "changes": [
+        "Checked every filled field against the York camp page; they match. Source date updated to 2026-11-13",
+        "No prices, phone or email appear on the camp, Maine, FAQ or contact pages, so they stay blank"
+      ],
+      "open_questions": [
+        "The York page lists 'June 22-26', 'July 13-17' and 'August 3-7' with no year. They fall Monday to Friday only in 2026, so season_year 2026 and the session years are inferred from the weekdays, not stated. Keep them, or hold until 2027 weeks are posted?",
+        "The listing name is the operator's product label 'York M-F 9AM-2PM (Ages: 5-14)'. Rename to something like 'New Logic Marine Science Camp, York' for parents?",
+        "New Logic runs camps in seven states; its Maine page also lists a Kennebunkport camp. Check that Kennebunkport is not drafted as a duplicate under another slug.",
+        "No price is shown anywhere without logging in to register."
+      ]
+    }
   }
 }

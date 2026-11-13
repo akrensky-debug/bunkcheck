@@ -2,50 +2,48 @@
   "slug": "umaine-4-h-camps-blueberry-cove-bryant-pond-greenland-point-tanglewood",
   "name": "UMaine 4-H Camps (Blueberry Cove, Bryant Pond, Greenland Point, Tanglewood)",
   "operator_name": "University of Maine Cooperative Extension 4-H",
-  "website_url": "https://extension.umaine.edu/4h/2026/03/02/its-time-to-think-about-summer-camp/",
-  "phone": "207.665.2068 (Bryant Pond & Greenland Point, Bethany); 207.789.5868 (Tanglewood & Blueberry Cove, Emma)",
+  "website_url": "https://extension.umaine.edu/4h/camps/",
+  "phone": null,
   "city": null,
   "state": "ME",
   "zip": null,
   "primary_categories": [
     "nature",
-    "STEM",
-    "arts",
-    "sports"
+    "arts"
   ],
-  "description_short": "Four UMaine 4-H camps in Maine offer summer programs of one to three weeks, in both day and overnight formats. Programs include outdoor skills, shooting sports, STEM, creative arts, ecology, gardening and teen leadership.",
+  "description_short": "UMaine Cooperative Extension runs four 4-H camps and learning centers in Maine: Bryant Pond on Lake Christopher, Greenland Point in Princeton, Tanglewood on the Ducktrap River in Camden Hills State Park, and Blueberry Cove in Tenants Harbor. Programs mix outdoor skills, arts, sciences and leadership.",
   "activities": [
     "outdoor skills",
-    "shooting sports",
-    "STEM",
-    "creative arts",
-    "ecology",
-    "gardening",
-    "teamwork",
-    "teen leadership"
+    "archery, rifle and sporting clays",
+    "ropes course",
+    "hiking",
+    "swimming",
+    "canoeing",
+    "sailing",
+    "drama",
+    "art",
+    "local ecology",
+    "gardening"
   ],
-  "financial_aid": true,
-  "season_year": 2026,
+  "financial_aid": null,
+  "season_year": null,
   "sources": [
     {
-      "url": "https://extension.umaine.edu/4h/2026/03/02/its-time-to-think-about-summer-camp/",
-      "checked": "2026-10-13",
+      "url": "https://extension.umaine.edu/4h/camps/",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
         "website_url",
-        "phone",
         "state",
         "primary_categories",
         "activities",
-        "description_short",
-        "financial_aid"
-      ],
-      "note": "Drafted by the listing tool from this page"
+        "description_short"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://extension.umaine.edu/4h/2026/03/02/its-time-to-think-about-summer-camp/",
       "kind": "html",
@@ -79,6 +77,24 @@
       "missing required camp_type",
       "camp_type must be one of ['day', 'sleepaway', 'specialty']",
       "city None, ME is not in cities.py"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://extension.umaine.edu/4h/2026/03/02/its-time-to-think-about-summer-camp/ (404 Not Found)",
+        "https://extension.umaine.edu/4h/",
+        "https://extension.umaine.edu/4h/camps/"
+      ],
+      "changes": [
+        "The source news post now returns 404, so nothing from it could be confirmed",
+        "website_url moved to the live 4-H Camps and Learning Centers page; description, activities and categories rewritten from that page",
+        "Removed the two phone numbers, financial_aid and season_year 2026: they came only from the deleted post and no live 4-H page I opened confirms them",
+        "Still not valid: no single city, ZIP, camp_type or season year for a listing that covers four sites"
+      ],
+      "open_questions": [
+        "This listing is four camps at four sites. Separate drafts already exist for Bryant Pond (university-of-maine-4-h-camp-and-learning-center-at-bryant-pond-summer-camp), Greenland Point (university-of-maine-4-h-camp-and-learning-center-at-greenland-point) and Blueberry Cove sailing (blueberry-cove-sailing-camps, needs_andrew). Drop this umbrella draft and add one for Tanglewood (Lincolnville) instead?",
+        "Overlaps blueberry-cove-sailing-camps: flagged, not resolved."
+      ]
+    }
   }
 }
