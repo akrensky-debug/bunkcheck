@@ -17,7 +17,7 @@
     "arts",
     "nature"
   ],
-  "description_short": "A co-ed Jewish overnight camp on Lake Potanipo in Brookline, New Hampshire, running since 1940. It offers 3.5-week and 7-week sessions with Jewish life, waterfront, sports and arts activities.",
+  "description_short": "A co-ed Jewish overnight camp on Lake Potanipo in Brookline, New Hampshire, running since 1940. It offers 3.5-week and 7-week sessions, plus short first-timer sessions of 1 and 2 weeks, with Jewish life, waterfront, sports and arts activities.",
   "activities": [
     "Swimming",
     "Paddling",
@@ -35,7 +35,7 @@
   "sources": [
     {
       "url": "https://www.cohencamps.org/tevya/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -48,17 +48,68 @@
         "state",
         "zip",
         "camp_type",
+        "gender_policy",
         "primary_categories",
         "activities",
-        "description_short",
         "financial_aid",
         "swim_waterfront_notes"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
+    },
+    {
+      "url": "https://www.cohencamps.org/tevya/summer/dates-tuition/",
+      "checked": "2026-11-13",
+      "fields": [
+        "description_short",
+        "price_min",
+        "price_max",
+        "price_per",
+        "sessions"
+      ]
+    }
+  ],
+  "gender_policy": "coed",
+  "price_min": 2325,
+  "price_max": 14490,
+  "price_per": "session",
+  "sessions": [
+    {
+      "name": "Full Season (7 weeks)",
+      "start_date": "2027-06-23",
+      "end_date": "2027-08-11",
+      "price": 14490,
+      "availability": "unknown"
+    },
+    {
+      "name": "First Session (3.5 weeks)",
+      "start_date": "2027-06-23",
+      "end_date": "2027-07-18",
+      "price": 8825,
+      "availability": "unknown"
+    },
+    {
+      "name": "Second Session (3.5 weeks)",
+      "start_date": "2027-07-19",
+      "end_date": "2027-08-11",
+      "price": 8525,
+      "availability": "unknown"
+    },
+    {
+      "name": "2-Week Taste of Tevya (first-timers, entering grades 3-6)",
+      "start_date": "2027-06-23",
+      "end_date": "2027-07-06",
+      "price": 4650,
+      "availability": "unknown"
+    },
+    {
+      "name": "1-Week Yalla! Tevya (first-timers, entering 2nd grade)",
+      "start_date": "2027-07-19",
+      "end_date": "2027-07-25",
+      "price": 2325,
+      "availability": "unknown"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.cohencamps.org/tevya/",
       "kind": "html",
@@ -83,6 +134,20 @@
       "Details of the 'Try Camp for a Day' option"
     ],
     "low_confidence": [],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.cohencamps.org/tevya/",
+        "https://www.cohencamps.org/tevya/summer/dates-tuition/"
+      ],
+      "changes": [
+        "Added the five 2027 sessions from the Dates + Tuition page: Full Season June 23 to August 11 ($14,490), First Session June 23 to July 18 ($8,825), Second Session July 19 to August 11 ($8,525), 2-Week Taste of Tevya June 23 to July 6 ($4,650, entering grades 3-6) and the new 1-Week Yalla! Tevya July 19 to 25 ($2,325, entering 2nd grade).",
+        "Session prices are the returning-camper rates; first-time campers pay $500 less for the full season and $200 less for a session.",
+        "Added price range $2,325 to $14,490, price_per session and gender_policy coed (homepage: co-ed Jewish overnight camp).",
+        "Description now mentions the 1- and 2-week first-timer sessions; moved its source to the Dates + Tuition page."
+      ],
+      "open_questions": []
+    }
   }
 }

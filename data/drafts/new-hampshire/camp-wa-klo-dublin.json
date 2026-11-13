@@ -18,9 +18,14 @@
   "grade_max": 11,
   "description_short": "Overnight summer camp for girls in Dublin, NH, with 2-, 3-, 4- and 7-week stays for rising grades 2-10 and a Leadership Training Group for girls entering grade 11. Horseback riding is available at extra cost.",
   "activities": [
-    "Horseback riding (extra fee)",
-    "Trail riding",
-    "Jumping"
+    "Land sports",
+    "Water sports",
+    "Creative arts",
+    "Equestrian (horseback riding at extra cost)",
+    "Trips",
+    "Community service",
+    "Environmental stewardship",
+    "Evening programs"
   ],
   "price_min": 7250,
   "price_max": 14300,
@@ -66,7 +71,7 @@
   "sources": [
     {
       "url": "https://www.campwaklo.com/dates-rates/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -78,21 +83,36 @@
         "state",
         "zip",
         "camp_type",
-        "primary_categories",
-        "activities",
         "grade_min",
         "grade_max",
         "description_short",
         "price_min",
         "price_max",
+        "price_per",
         "transportation",
         "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
+    },
+    {
+      "url": "https://www.campwaklo.com/",
+      "checked": "2026-11-13",
+      "fields": [
+        "gender_policy"
+      ]
+    },
+    {
+      "url": "https://www.campwaklo.com/about/activities/",
+      "checked": "2026-11-13",
+      "fields": [
+        "primary_categories",
+        "activities"
+      ]
     }
   ],
+  "gender_policy": "girls",
+  "price_per": "session",
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.campwaklo.com/dates-rates/",
       "kind": "html",
@@ -125,6 +145,21 @@
         "quote": "There are rustic trails all around the camp property for a trot through the woods."
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.campwaklo.com/dates-rates/",
+        "https://www.campwaklo.com/",
+        "https://www.campwaklo.com/about/activities/"
+      ],
+      "changes": [
+        "Added gender_policy girls: the homepage title is 'An Overnight Summer Camp for Girls'.",
+        "Activities now use the activities page's program areas (land sports, water sports, creative arts, equestrian, trips, community service, environmental stewardship, evening programs) instead of riding details only.",
+        "Checked the five 2027 sessions and rates on the Dates & Rates page: Full Summer June 27 to August 14 $14,300; First Session 4 weeks $9,600; 3-week options $7,850; Nouveau 2-week July 25 to August 8 $7,250. Grades 2 to 11 match (LTG for girls entering grade 11).",
+        "Added price_per session. Transportation stays true: camp vans from the New York area and Boston Logan transfers, $175 one way."
+      ],
+      "open_questions": []
+    }
   }
 }
