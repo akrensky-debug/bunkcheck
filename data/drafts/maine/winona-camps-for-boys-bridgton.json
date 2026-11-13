@@ -14,19 +14,33 @@
     "nature",
     "sports"
   ],
-  "description_short": "A traditional boys' summer camp in western Maine, founded in 1908. Campers live in canvas tents on Moose Pond and learn outdoor living skills along with activities like rock climbing, kayaking and lacrosse.",
+  "gender_policy": "boys",
+  "description_short": "A traditional boys' sleepaway camp on Moose Pond in Bridgton, founded in 1908, for boys 7 to 15. Campers live in canvas tents, learn outdoor living skills and go on canoe and mountain trips, plus activities like sailing, rock climbing, kayaking and lacrosse. Full season or either half.",
   "activities": [
     "Outdoor living skills",
-    "Rock climbing",
+    "Canoe and mountain trips",
+    "Swimming",
+    "Sailing",
     "Kayaking",
-    "Lacrosse"
+    "Rock climbing",
+    "Archery",
+    "Riflery",
+    "Lacrosse",
+    "Tennis",
+    "Arts and crafts",
+    "Farm and garden"
   ],
-  "swim_waterfront_notes": "Camp is on the shores of Moose Pond. The page does not describe swim instruction or waterfront rules.",
+  "age_min": 7,
+  "age_max": 15,
+  "price_min": 8200,
+  "price_max": 11800,
+  "price_per": "session",
+  "financial_aid": true,
   "season_year": 2027,
   "sources": [
     {
       "url": "https://winonacamps.com/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "website_url",
@@ -39,15 +53,39 @@
         "zip",
         "camp_type",
         "primary_categories",
-        "activities",
-        "description_short",
-        "swim_waterfront_notes"
-      ],
-      "note": "Drafted by the listing tool from this page"
+        "gender_policy",
+        "description_short"
+      ]
+    },
+    {
+      "url": "https://winonacamps.com/welcome-parents/dates-fees-forms/",
+      "checked": "2026-11-13",
+      "fields": [
+        "price_min",
+        "price_max",
+        "price_per",
+        "financial_aid",
+        "sessions"
+      ]
+    },
+    {
+      "url": "https://winonacamps.com/welcome-campers/units-age-groups/",
+      "checked": "2026-11-13",
+      "fields": [
+        "age_min",
+        "age_max"
+      ]
+    },
+    {
+      "url": "https://winonacamps.com/welcome-campers/activities-trips/",
+      "checked": "2026-11-13",
+      "fields": [
+        "activities"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://winonacamps.com/",
       "kind": "html",
@@ -83,6 +121,47 @@
         "quote": "Learning outdoor living skills in western Maine"
       }
     ],
-    "errors": []
-  }
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://winonacamps.com/",
+        "https://winonacamps.com/welcome-parents/dates-fees-forms/",
+        "https://winonacamps.com/welcome-campers/units-age-groups/",
+        "https://winonacamps.com/welcome-campers/activities-trips/"
+      ],
+      "changes": [
+        "Added the three 2027 sessions from the Dates, Fees page: full season June 26 to August 8 ($11,800), first half June 26 to July 17 and second half July 18 to August 8 ($8,200 each)",
+        "Added price_min 8,200, price_max 11,800, price_per session, and financial_aid (camperships available)",
+        "Added ages 7 to 15 from the Units page (Junior 7-11, Intermediate 11-13, Senior 13-15) and gender_policy boys (the camp's own pages: 'Four Woodland Camps for Boys', units for boys)",
+        "Widened activities from the Activities & Trips page and rewrote the description to include ages and session lengths",
+        "Removed swim_waterfront_notes: it only said the page doesn't describe swimming",
+        "Split sources by the page that shows each field, checked 2026-11-13"
+      ],
+      "open_questions": []
+    }
+  },
+  "sessions": [
+    {
+      "name": "Full season",
+      "start_date": "2027-06-26",
+      "end_date": "2027-08-08",
+      "price": 11800,
+      "availability": "unknown"
+    },
+    {
+      "name": "First half season",
+      "start_date": "2027-06-26",
+      "end_date": "2027-07-17",
+      "price": 8200,
+      "availability": "unknown"
+    },
+    {
+      "name": "Second half season",
+      "start_date": "2027-07-18",
+      "end_date": "2027-08-08",
+      "price": 8200,
+      "availability": "unknown"
+    }
+  ]
 }

@@ -1,6 +1,6 @@
 {
   "slug": "white-pine-camps-white-pine-programs-summer-camp-york",
-  "name": "White Pine Camps (White Pine Programs Summer Camp)",
+  "name": "White Pine Camps",
   "operator_name": "White Pine Programs",
   "website_url": "https://whitepineprograms.org/summercamp-outdoorcamp-nature-camp/",
   "email": "info@whitepineprograms.org",
@@ -34,13 +34,13 @@
   ],
   "financial_aid": true,
   "extended_care": true,
-  "refund_policy_summary": "$50 deposit ($100 for expeditions) is non-refundable and non-transferable. A $50 administrative fee applies to any cancellation. Cancelling 60–31 days before the start date may get a refund of 50% of tuition, minus the fee. Cancelling 2 weeks or less before the start gets no refund. Week transfers are not possible within 2 weeks of the start date. Families get a full refund if financial aid can't be granted or if the camp decides it is not the right fit for a child with special needs.",
+  "refund_policy_summary": "Every session has a non-refundable, non-transferable $50 deposit ($100 for expeditions); families who are not approved for financial aid get the deposit back in full. A $50 administrative fee applies to any cancellation. Cancelling 60 to 31 days before the start may get 50% of tuition back, minus the fee; cancelling 2 weeks or less before gets no refund. Week transfers are not possible within 2 weeks of the start. If the camp and family agree White Pine is not the right fit for a child with special needs, the camp honors a full cancellation.",
   "special_needs_notes": "Many campers have IEPs or 504 plans. Families should call 207-361-1911 or email samm@whitepineprograms.org as soon as they register to talk about fit. The camp cannot provide one-on-one support, but outside aides (for example, a school-provided ed-tech) may come with the child. Behavior that puts others at risk may mean a child cannot continue in the program.",
   "season_year": 2027,
   "sources": [
     {
       "url": "https://whitepineprograms.org/summercamp-outdoorcamp-nature-camp/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -61,11 +61,11 @@
         "refund_policy_summary",
         "special_needs_notes"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Summer Programs 2027 page; ZIP is from the camp's PO Box 802, York, Maine 03909. Camps meet at Coastal Ridge Elementary School, York."
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://whitepineprograms.org/summercamp-outdoorcamp-nature-camp/",
       "kind": "html",
@@ -106,6 +106,23 @@
         "quote": "Coastal Forest Camp: ages 5 – 10  |  Weekly"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://whitepineprograms.org/summercamp-outdoorcamp-nature-camp/",
+        "https://whitepineprograms.org/programs/crickets-half-day-camp/",
+        "https://whitepineprograms.org/programs/white-pine-summer-camp-5-11-years-old/",
+        "https://whitepineprograms.org/programs/white-pine-summer-camp-10-14-year-olds/",
+        "https://whitepineprograms.org/programs/traveling-adventure-camp/"
+      ],
+      "changes": [
+        "Name shortened to 'White Pine Camps', as the page titles it.",
+        "Corrected the refund summary: only the deposit (not tuition) is refunded in full when financial aid isn't approved; a full cancellation is honored when the camp and family agree it isn't the right fit.",
+        "Confirmed ages 4 to 17, before and after care, financial aid, special needs notes, contact and activities against the Summer Programs 2027 page.",
+        "No 2027 dates or tuition are posted: the per-program register links now open a general program finder that lists only fall, winter and spring programs. Sessions and prices stay empty."
+      ],
+      "open_questions": []
+    }
   }
 }

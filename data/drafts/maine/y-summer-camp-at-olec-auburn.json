@@ -36,7 +36,8 @@
   "price_min": 215,
   "price_max": 235,
   "financial_aid": true,
-  "swim_waterfront_notes": "The OLEC site has a pool. The page gives no details on swim instruction, swim tests or supervision.",
+  "extended_care": true,
+  "swim_waterfront_notes": "OLEC has a pool. Every camper is swim tested, swim instruction, lessons and water safety are offered every session, and certified lifeguards are on staff.",
   "season_year": 2026,
   "sessions": [
     {
@@ -106,7 +107,7 @@
   "sources": [
     {
       "url": "https://alymca.org/programs/summer-camp/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -126,22 +127,30 @@
         "price_min",
         "price_max",
         "financial_aid",
-        "swim_waterfront_notes",
         "sessions"
       ],
       "note": "Drafted by the listing tool from this page"
     },
     {
-      "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=151+Stetson+Road&city=Auburn&state=ME&benchmark=Public_AR_Current&format=json",
-      "checked": "2026-10-13",
+      "url": "https://alymca.org/wp-content/uploads/2026/02/Y-Summer-Camp-2026-Family-Info-Packet-01.pdf",
+      "checked": "2026-11-13",
+      "fields": [
+        "extended_care",
+        "swim_waterfront_notes"
+      ],
+      "note": "2026 Family Info Packet (linked from the camp page): free pre-camp care 7:30-9:00 am and post-camp care 4:30-5:30 pm; swim tests, lessons and lifeguards."
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=151+Stetson+Road&city=Auburn&state=ME&benchmark=Public_AR_Current&format=html",
+      "checked": "2026-11-13",
       "fields": [
         "zip"
       ],
-      "note": "ZIP from the US Census geocoder for 151 STETSON RD, AUBURN, ME, 04210"
+      "note": "ZIP from the US Census geocoder for the street address the camp gives (151 Stetson Road, Auburn): matched 151 STETSON RD, AUBURN, ME, 04210. The camp's pages show no ZIP."
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://alymca.org/programs/summer-camp/",
       "kind": "html",
@@ -195,6 +204,22 @@
         "quote": "emotional, physical, and spiritual benefits that come from interacting with nature"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://alymca.org/programs/summer-camp/",
+        "https://alymca.org/camp-info-packet-2026/",
+        "https://geocoding.geo.census.gov/geocoder/locations/address?street=151+Stetson+Road&city=Auburn&state=ME&benchmark=Public_AR_Current&format=html"
+      ],
+      "changes": [
+        "Added extended_care true: the family packet offers free pre-camp (7:30-9:00 am) and post-camp (4:30-5:30 pm) care.",
+        "Rewrote swim_waterfront_notes from the packet: swim tests for every camper, swim lessons each session, certified lifeguards.",
+        "Confirmed the nine 2026 weekly sessions, ages 5 to grade 8, $215 member and $235 non-member rates, contact and address; the packet calls it a YMCA day camp.",
+        "Re-ran the Census geocoder for 151 Stetson Road, Auburn: ZIP 04210 confirmed.",
+        "Kept season_year 2026: the page shows only 2026 (registration closed) and nothing for 2027 yet."
+      ],
+      "open_questions": []
+    }
   }
 }

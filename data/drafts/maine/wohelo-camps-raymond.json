@@ -10,18 +10,20 @@
   "state": "ME",
   "zip": "04071",
   "camp_type": "sleepaway",
+  "gender_policy": "girls",
   "age_min": 6,
   "age_max": 15,
   "description_short": "Wohelo is an overnight camp for girls in Raymond, Maine, run as two camps: Little Wohelo (ages 6-12) and Sebago Wohelo (ages 12-15). The camp prefers the full seven-week season. It also offers half sessions for first-time campers and a one-week Peep Week.",
   "price_min": 2500,
   "price_max": 13200,
+  "price_per": "session",
   "financial_aid": true,
   "season_year": 2027,
   "sessions": [
     {
       "name": "Full Session",
       "start_date": "2027-06-24",
-      "end_date": "2027-08-12",
+      "end_date": "2027-08-11",
       "price": 13200,
       "availability": "unknown"
     },
@@ -35,19 +37,19 @@
     {
       "name": "Second Half-Session",
       "start_date": "2027-07-19",
-      "end_date": "2027-08-12",
+      "end_date": "2027-08-11",
       "price": 8800,
       "availability": "unknown"
     },
     {
-      "name": "Peep Week 1",
+      "name": "Peep Week 1 (ages 7-8)",
       "start_date": "2027-07-19",
       "end_date": "2027-07-25",
       "price": 2500,
       "availability": "unknown"
     },
     {
-      "name": "Peep Week 2",
+      "name": "Peep Week 2 (ages 7-8)",
       "start_date": "2027-07-26",
       "end_date": "2027-08-01",
       "price": 2500,
@@ -57,7 +59,7 @@
   "sources": [
     {
       "url": "https://wohelo.com/dates-tuition/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -69,19 +71,28 @@
         "state",
         "zip",
         "camp_type",
+        "gender_policy",
         "age_min",
         "age_max",
         "description_short",
         "price_min",
         "price_max",
-        "financial_aid",
+        "price_per",
         "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Dates and tuition page: 2027 dates and tuition, Little Wohelo 6-12 and Sebago Wohelo 12-15, year-round office address; half sessions introduce girls to camping"
+    },
+    {
+      "url": "https://wohelo.com/apply-for-a-wohelo-campership/",
+      "checked": "2026-11-13",
+      "fields": [
+        "financial_aid"
+      ],
+      "note": "Campership page: apply with the Wohelo Scholarship Application and a tax statement"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://wohelo.com/dates-tuition/",
       "kind": "html",
@@ -115,6 +126,25 @@
         "quote": "Scholarship Information"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://wohelo.com/dates-tuition/",
+        "https://wohelo.com/apply-for-a-wohelo-campership/",
+        "https://wohelo.com/peep-week/",
+        "https://wohelo.com/contact-us/"
+      ],
+      "changes": [
+        "Full Session and Second Half-Session now end August 11, 2027, not August 12 (dates page: 'Wednesday, August 11')",
+        "Peep Week sessions named as ages 7-8 (Peep Week page: 'for 7 and 8-year-olds')",
+        "Added gender_policy girls (dates page: half sessions 'introduce girls to camping'; the Peep Week page also says girls)",
+        "Added price_per session",
+        "financial_aid now sourced to the campership page, which describes the scholarship application"
+      ],
+      "open_questions": [
+        "The address is the camp's 'Year-round office' at 25 Gulick Road, Raymond; the site does not say whether camp itself is at that address (it is in Raymond either way)."
+      ]
+    }
   }
 }
