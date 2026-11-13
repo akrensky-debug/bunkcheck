@@ -181,10 +181,14 @@ insurance, health care, refunds and everything you promise families.
 or the price you set does not move your camp up or down in any search, list, recommendation
 or AI answer.
 
-11.2 The verified mark is shown as a fact about the listing. It does not count as a ranking
-signal. [Not true in code today: see Part 3, row 11.2.]
+11.2 The verified check is recorded apart from everything ranking reads. Buying it, holding
+it or letting it lapse never changes where your camp appears.
 
-11.3 Our ranking rules are public at [link to the ranking rules page, item 7].
+11.3 Separately, our team checks listings against their sources at no charge. That free check
+is open to every camp, and it may count in ranking as a measure of how current a listing is.
+Our ranking rules say how.
+
+11.4 Our ranking rules are public at [link to the ranking rules page, item 7].
 
 #### 12. Everything else
 
@@ -219,6 +223,11 @@ assignment, notices, entire agreement, electronic acceptance.]
    about a camp that ended the agreement? This overlaps the camp data sourcing memo (item 16).
 10. **Section 11, ranking.** Does a paid verified mark shown in results need a disclosure
     under FTC endorsement or advertising guidance, even though it does not change rank?
+    Andrew decided on 13 November 2026 that the paid check lives in its own field, which
+    ranking never reads; the free team check keeps its ranking weight. That leaves two
+    checks a parent could confuse: a free one that counts in ranking and a paid one that
+    doesn't. Do they need different names on the site, and must the paid mark say it was paid
+    for?
 11. **Minors.** Inquiries are about children. Is any extra term needed for a camp that receives
     a child's details through an info kit package?
 12. **Tax.** Section 6.3 assumes the accountant's answer on item 20.
@@ -248,4 +257,5 @@ Checked against `main` at `0a418ce` and `claude/inquiry-tool` (not merged) on 13
 | 8.1 Parent decides what the camp gets | Yes, on the branch | Contact details only if she adds them on Bunkcheck; kit only as a package link |
 | 9.3 Change log | Yes | `listing_changes` (migration 0009) |
 | 11.1 Payment never changes ranking | Yes, today, because nothing is paid yet | `services/ranking.py` reads no billing field |
-| 11.2 The verified mark is not a ranking signal | **No. This term is untrue against today's code** | `services/ranking.py` lines 112 to 116 add +0.10 for `camp_verified` or `team_verified`; `activity/programs.py` line 387 adds +0.02 for programs. The free team check (`owners/service.py` `mark_checked`) sets `team_verified` today. If the paid check sets the same status, payment moves rank. Fix before billing: keep the paid check in its own field that ranking never reads, or drop the verification boost for everyone. A test that fails if ranking reads that field would hold the line. Andrew's call which |
+| 11.2 The paid check never counts in ranking | **Not built yet. Decided 13 November 2026: its own field** | Ranking adds +0.10 for `camp_verified` or `team_verified` (`services/ranking.py` lines 112 to 116) and +0.02 for verified programs (`activity/programs.py` line 387). The paid check must not set `verification_status`. Build requirements: (a) the paid check is its own record (paid date, season, status) that `services/ranking.py`, `activity/programs.py` and `services/search.py` never read; (b) a test fails if ranking's output changes when a camp's paid check is added or removed; (c) the paid check never sets `verification_status` or `field_sources.source_type` |
+| 11.3 The free team check may count | Yes | `owners/service.py` `mark_checked` sets `team_verified`, open to every camp at no charge |

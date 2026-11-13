@@ -66,7 +66,10 @@ names Invisible Industries (`frontend/lib/site.ts`); the trademark checklist on
 
 - No booking fee in 2027.
 - Revenue: the verified check ($199 a season, proposed) and $10 per delivered inquiry.
-- The paid check never counts in ranking.
+- The paid check never counts in ranking. Decided 13 November 2026: the paid check lives in
+  its own field, which ranking never reads. The free team check (`team_verified`) keeps its
+  ranking weight. Build requirements are in [camp-agreement.md](camp-agreement.md), Part 3,
+  row 11.2.
 - Inquiry wording drafts: "Bunkcheck: before we bill anyone" (https://claude.ai/artifact/HiVgJiRY7qbFEUoaqTcdmz).
 - Payments design: https://claude.ai/artifact/QTUXBbMsEdGJbVUagX1sBD.
 - How inquiries work in code: `docs/inquiries.md` on `claude/inquiry-tool` (not merged yet).
