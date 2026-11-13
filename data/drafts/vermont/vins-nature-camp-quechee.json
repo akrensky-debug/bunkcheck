@@ -11,18 +11,16 @@
   "zip": "05059",
   "camp_type": "day",
   "primary_categories": [
-    "nature",
-    "STEM"
+    "nature"
   ],
   "age_min": 4,
   "grade_max": 8,
-  "description_short": "A nature camp run by the Vermont Institute of Natural Science, with most of the day spent outdoors hiking, looking at wildlife and habitats, doing crafts and playing group games, plus programs with VINS's resident raptors. It offers half-day camps for ages 4-5, day camps for grades 1-8, and overnight camps for grades 4-8.",
+  "description_short": "Week-long nature camps run by the Vermont Institute of Natural Science, with most of the day spent outdoors exploring creatures and habitats. Half-day Peeps camps for ages 4 and 5, day camps for children entering grades 1 to 8, and overnight camps for older campers. Day camps run at the VINS Nature Center in Quechee and at Storrs Pond in Hanover, NH. 2027 registration opens in January.",
   "activities": [
-    "Hiking",
-    "Insect and wildlife observation",
-    "Crafts",
-    "Group games",
-    "Raptor programs"
+    "Nature exploration",
+    "Nature-themed games",
+    "Art projects",
+    "Live animal encounters"
   ],
   "financial_aid": true,
   "extended_care": true,
@@ -31,7 +29,7 @@
   "sources": [
     {
       "url": "https://vinsweb.org/nature-camp/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -42,21 +40,45 @@
         "city",
         "state",
         "zip",
-        "camp_type",
-        "primary_categories",
-        "activities",
         "age_min",
         "grade_max",
         "description_short",
-        "extended_care",
-        "financial_aid",
-        "special_needs_notes"
-      ],
-      "note": "Drafted by the listing tool from this page"
+        "special_needs_notes",
+        "sessions"
+      ]
+    },
+    {
+      "url": "https://vinsweb.org/nature-camp/peeps/",
+      "checked": "2026-11-13",
+      "fields": [
+        "primary_categories",
+        "activities"
+      ]
+    },
+    {
+      "url": "https://vinsweb.org/nature-camp/eagles/",
+      "checked": "2026-11-13",
+      "fields": [
+        "extended_care"
+      ]
+    },
+    {
+      "url": "https://vinsweb.org/nature-camp/scholarships/",
+      "checked": "2026-11-13",
+      "fields": [
+        "financial_aid"
+      ]
+    },
+    {
+      "url": "https://vinsweb.org/nature-camp/frequently-asked-questions/",
+      "checked": "2026-11-13",
+      "fields": [
+        "camp_type"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://vinsweb.org/nature-camp/",
       "kind": "html",
@@ -101,6 +123,94 @@
         "quote": "Scholarships"
       }
     ],
-    "errors": []
-  }
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://vinsweb.org/nature-camp/",
+        "https://vinsweb.org/nature-camp/peeps/",
+        "https://vinsweb.org/nature-camp/fledglings/",
+        "https://vinsweb.org/nature-camp/falcons/",
+        "https://vinsweb.org/nature-camp/eagles/",
+        "https://vinsweb.org/nature-camp/frequently-asked-questions/",
+        "https://vinsweb.org/nature-camp/scholarships/"
+      ],
+      "changes": [
+        "Added the nine 2027 camp weeks the site now posts (June 21 to August 25; July 6 to 9 is four days, August 23 to 25 is three). No themes or prices per week yet, so prices stay empty.",
+        "Checked name, phone, address, registration link, age groups and the special needs wording on the Nature Camp page; they match.",
+        "Dropped the STEM category and replaced the activity list with what the Peeps page says (nature exploration, games, art projects, live animals). I couldn't find the old 'raptor programs' wording.",
+        "Sourced After-Camp to the Eagles page (select weeks at the Nature Center) and scholarships to the Scholarships page (aid, partial and full scholarships; 2027 applications open in December).",
+        "Rewrote the description to name both day camp sites.",
+        "Left prices empty: the Eagles page shows only 2026 prices ($370 day, $695 overnight week)."
+      ],
+      "open_questions": [
+        "VINS runs camps at three sites: the Nature Center in Quechee, Storrs Pond in Hanover, NH, and overnight camps at Old Pepper Place in Washington, VT. Keep one Quechee listing, or split out Hanover and the overnight camps?"
+      ]
+    }
+  },
+  "sessions": [
+    {
+      "name": "Week of June 21",
+      "start_date": "2027-06-21",
+      "end_date": "2027-06-25",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week of June 28",
+      "start_date": "2027-06-28",
+      "end_date": "2027-07-02",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week of July 6 (4 days)",
+      "start_date": "2027-07-06",
+      "end_date": "2027-07-09",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week of July 19",
+      "start_date": "2027-07-19",
+      "end_date": "2027-07-23",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week of July 26",
+      "start_date": "2027-07-26",
+      "end_date": "2027-07-30",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week of August 2",
+      "start_date": "2027-08-02",
+      "end_date": "2027-08-06",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week of August 9",
+      "start_date": "2027-08-09",
+      "end_date": "2027-08-13",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week of August 16",
+      "start_date": "2027-08-16",
+      "end_date": "2027-08-20",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week of August 23 (3 days)",
+      "start_date": "2027-08-23",
+      "end_date": "2027-08-25",
+      "price": null,
+      "availability": "unknown"
+    }
+  ]
 }

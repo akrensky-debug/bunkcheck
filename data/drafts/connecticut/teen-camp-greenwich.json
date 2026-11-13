@@ -11,7 +11,7 @@
   "camp_type": "day",
   "age_min": 13,
   "age_max": 15,
-  "description_short": "A weekly summer program for teens ages 13–15 run by the Boys & Girls Club of Greenwich. It includes field trips and local travel, service learning, leadership training, and activities such as cooking classes and yoga.",
+  "description_short": "A weekly summer program for teens ages 13 to 15, based at the Boys & Girls Club of Greenwich clubhouse on Horseneck Lane. Teens go on field trips and local travel, do service learning and leadership training, and take part in cooking classes, yoga, sports and beach days. Club membership is required.",
   "activities": [
     "Field trips",
     "Local travel",
@@ -24,38 +24,117 @@
   "season_year": 2026,
   "sessions": [
     {
-      "name": "Teen Camp 2026 (booked by the week)",
+      "name": "Week 1",
       "start_date": "2026-06-22",
-      "end_date": "2026-08-14",
+      "end_date": "2026-06-26",
+      "price": 275,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 2",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-02",
       "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 3",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": 275,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 4",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": 275,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 5",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": 275,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 6",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": 275,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 7",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": 275,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 8",
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-14",
+      "price": 275,
       "availability": "unknown"
     }
   ],
   "sources": [
     {
       "url": "https://bgcg.org/what-we-do/summer-camps/teen-camp.html",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
-        "operator_name",
         "website_url",
         "phone",
-        "street_address",
         "city",
         "state",
-        "zip",
-        "camp_type",
-        "activities",
         "age_min",
         "age_max",
-        "description_short",
+        "activities"
+      ]
+    },
+    {
+      "url": "https://bgcg.org/file_download/inline/aaf015c5-0555-4c51-b0fb-3afa65cc99f0",
+      "checked": "2026-11-13",
+      "fields": [
+        "street_address",
+        "zip",
+        "camp_type",
+        "meals_included",
+        "swim_waterfront_notes"
+      ],
+      "note": "2026 Teen Camp handbook: home base 4 Horseneck Lane; 9:00 to 4:00, drop-off from 8, pick-up by 5; bring lunch or lunch money, bathing suit daily"
+    },
+    {
+      "url": "https://bgcg.org/file_download/inline/6c68c0d8-041e-47e5-8f95-f976f87fe0b2",
+      "checked": "2026-11-13",
+      "fields": [
         "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "2026 Teen Camp schedule: eight weeks, Week 2 is June 29 to July 2"
+    },
+    {
+      "url": "https://bgcg.org/file_download/inline/f4f3c8f9-740c-486a-bf2b-10a20f167d5e",
+      "checked": "2026-11-13",
+      "fields": [
+        "operator_name",
+        "email",
+        "primary_categories",
+        "price_min",
+        "price_max",
+        "price_per_week",
+        "price_per",
+        "financial_aid",
+        "refund_policy_summary",
+        "description_short"
+      ],
+      "note": "2026 brochure: Teen Camp $275 weekly plus annual membership; discounted fees and Care 4 Kids accepted"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://bgcg.org/what-we-do/summer-camps/teen-camp.html",
       "kind": "html",
@@ -99,6 +178,39 @@
         "quote": "4 Horseneck Ln Greenwich, Connecticut 06830"
       }
     ],
-    "errors": []
-  }
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://bgcg.org/what-we-do/summer-camps/teen-camp.html",
+        "https://bgcg.org/file_download/inline/aaf015c5-0555-4c51-b0fb-3afa65cc99f0",
+        "https://bgcg.org/file_download/inline/6c68c0d8-041e-47e5-8f95-f976f87fe0b2",
+        "https://bgcg.org/file_download/inline/f4f3c8f9-740c-486a-bf2b-10a20f167d5e",
+        "https://bgcg.org/what-we-do/summer-camps/"
+      ],
+      "changes": [
+        "Replaced the single June 22 to August 14 block with the eight weeks from the 2026 schedule PDF (Week 2 is June 29 to July 2; the club is closed July 3).",
+        "Added the price, $275 a week plus annual membership ($25 high school, $75 through grade 8), from the 2026 brochure. Week 2 price left empty because it is a four-day week and the brochure doesn't say if it costs less.",
+        "Confirmed Teen Camp meets at the clubhouse, 4 Horseneck Lane (handbook), so the address is the camp's own, not just the club footer.",
+        "Added the Teen Camp director's email, financial aid (discounted fees, Care 4 Kids), refund policy, swim note and meals not included.",
+        "Added categories general and leadership."
+      ],
+      "open_questions": [
+        "Overlap: boys-and-girls-club-of-greenwich-summer-camps-greenwich (already needs_andrew) is the overview of Clubhouse Camp, Camp Simmons and Teen Camp. This listing is Teen Camp alone and is otherwise ready. Suggest publishing this one and Clubhouse Camp, adding Camp Simmons, and dropping the overview. Agree?"
+      ]
+    }
+  },
+  "email": "raccurso@bgcg.org",
+  "primary_categories": [
+    "general",
+    "leadership"
+  ],
+  "price_min": 275,
+  "price_max": 275,
+  "price_per_week": 275,
+  "price_per": "week",
+  "financial_aid": true,
+  "meals_included": false,
+  "refund_policy_summary": "Refund requests before May 8 at 5pm carry a $70 non-refundable fee; no refunds after that. Membership is not refundable, and membership and registration can't be transferred.",
+  "swim_waterfront_notes": "Teens bring a bathing suit and towel every day; the schedule includes beach days at Tod's Point and swimming."
 }

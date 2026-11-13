@@ -10,55 +10,46 @@
   "state": "VT",
   "zip": "05748",
   "camp_type": "sleepaway",
-  "description_short": "A small overnight camp in Hancock, Vermont that runs one program for the full season, from late June to mid-August. First-time campers can choose to come for July only.",
+  "description_short": "A small overnight camp on 300 acres with a private lake in Hancock, Vermont. It runs one full-summer session of about seven weeks, and first-time campers can commit to July only.",
   "price_min": 9800,
-  "price_max": 14300,
+  "price_max": 14500,
   "financial_aid": true,
   "transportation": true,
   "season_year": 2026,
-  "sessions": [
-    {
-      "name": "Full Season 2026",
-      "start_date": "2026-06-28",
-      "end_date": "2026-08-16",
-      "price": 13800,
-      "availability": "unknown"
-    },
-    {
-      "name": "July Only (first-time campers) 2026",
-      "start_date": "2026-06-28",
-      "end_date": "2026-07-26",
-      "price": 9800,
-      "availability": "unknown"
-    }
-  ],
   "sources": [
     {
       "url": "https://www.killooleet.com/register",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
-        "website_url",
         "registration_url",
         "email",
         "phone",
-        "city",
-        "state",
         "zip",
-        "camp_type",
-        "description_short",
         "price_min",
         "price_max",
-        "transportation",
         "financial_aid",
-        "sessions"
+        "transportation"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "ZIP from the camp's mailing address, PO Box 70, Hancock VT 05748. Tuition on this page is labeled 2026 ($14,500 full, $14,100 charged; $9,800 July only)"
+    },
+    {
+      "url": "https://www.killooleet.com/about",
+      "checked": "2026-11-13",
+      "fields": [
+        "website_url",
+        "city",
+        "state",
+        "camp_type",
+        "activities",
+        "meals_included",
+        "description_short"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.killooleet.com/register",
       "kind": "html",
@@ -135,6 +126,49 @@
         "quote": "Transportation to and from New  York City in chaperoned Buses is available on June 28 and August 16."
       }
     ],
-    "errors": []
-  }
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.killooleet.com/register",
+        "https://www.killooleet.com/about",
+        "https://www.killooleet.com/contact-us",
+        "https://www.killooleet.com/parents",
+        "https://www.killooleet.com/campers"
+      ],
+      "changes": [
+        "Removed both sessions: the camp's pages disagree on the season dates (see question).",
+        "price_max 14300 -> 14500: the register page now says full tuition is $14,500 (charged rate $14,100).",
+        "Added activities and meals_included (tuition covers all food) from the About page.",
+        "Rewrote the description from the About page."
+      ],
+      "open_questions": [
+        "The register page is half updated: it says 'The 2026 season will run from Sunday June 27 – Sunday August 15' and 'Tuition for 2026 is $14,500', but June 27 and August 15 are Sundays only in 2027, the parents page lists 2027-style bus dates (June 27, August 15), and the contact page says 'Camp runs June 28th - August 16th 2026'. Publish 2027 dates (June 27 to August 15) and this tuition as 2027, or wait for the camp to fix the page?",
+        "No camper ages are stated anywhere on the site."
+      ]
+    }
+  },
+  "meals_included": true,
+  "activities": [
+    "horseback riding",
+    "swimming",
+    "boating",
+    "archery",
+    "nature",
+    "hiking",
+    "ceramics",
+    "woodworking",
+    "silver",
+    "stained glass",
+    "fabric arts",
+    "music",
+    "drama",
+    "video",
+    "softball",
+    "soccer",
+    "basketball",
+    "ultimate frisbee",
+    "tennis",
+    "fencing"
+  ]
 }

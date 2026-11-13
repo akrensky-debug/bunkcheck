@@ -4,15 +4,17 @@
   "operator_name": "University of Maine Cooperative Extension (Maine 4-H)",
   "website_url": "https://extension.umaine.edu/bryantpond/summer-camp-at-bryant-pond/",
   "registration_url": "https://extension.umaine.edu/bryantpond/register/",
-  "city": null,
+  "email": "extension.bryantpond@maine.edu",
+  "phone": "207.665.2068",
+  "street_address": "17 Conservation Lane",
+  "city": "Bryant Pond",
   "state": "ME",
-  "zip": null,
+  "zip": "04219",
   "camp_type": "sleepaway",
   "primary_categories": [
     "nature",
     "sports"
   ],
-  "description_short": "A 4-H summer camp run by the University of Maine in the mountains of Western Maine. Most programs run Sunday to Friday and cover topics such as wilderness survival, shooting sports, conservation, outdoor adventure and teen leadership. Day camp weeks are also offered.",
   "activities": [
     "canoeing",
     "swimming",
@@ -26,28 +28,130 @@
     "recreational safety",
     "campfire"
   ],
+  "age_min": 6,
+  "age_max": 18,
+  "description_short": "A 4-H summer camp run by the University of Maine in the mountains of Western Maine. Most programs run Sunday to Friday and cover topics such as wilderness survival, shooting sports, conservation, outdoor adventure and teen leadership. Day camp weeks are also offered.",
+  "price_per_week": 795,
+  "price_per": "week",
   "swim_waterfront_notes": "The page mentions canoeing and swimming at the camp waterfront, depending on the program. It gives no details on swim tests or lifeguards.",
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Week 1, Sunday to Friday",
+      "start_date": "2027-06-27",
+      "end_date": "2027-07-02",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 2, Sunday to Friday",
+      "start_date": "2027-07-04",
+      "end_date": "2027-07-09",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 3, Sunday to Friday",
+      "start_date": "2027-07-11",
+      "end_date": "2027-07-16",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 4, Sunday to Friday",
+      "start_date": "2027-07-18",
+      "end_date": "2027-07-23",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 5, Sunday to Friday",
+      "start_date": "2027-07-25",
+      "end_date": "2027-07-30",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 6 (Camp North Woods only), Sunday to Friday",
+      "start_date": "2027-08-01",
+      "end_date": "2027-08-06",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 7, Sunday to Friday",
+      "start_date": "2027-08-08",
+      "end_date": "2027-08-13",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 8, Sunday to Friday",
+      "start_date": "2027-08-15",
+      "end_date": "2027-08-20",
+      "price": null,
+      "availability": "unknown"
+    }
+  ],
   "sources": [
     {
       "url": "https://extension.umaine.edu/bryantpond/summer-camp-at-bryant-pond/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
         "website_url",
         "registration_url",
-        "state",
         "camp_type",
         "primary_categories",
         "activities",
         "description_short",
         "swim_waterfront_notes"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Summer camp overview: most programs run Sunday through Friday; day camp weeks also offered"
+    },
+    {
+      "url": "https://extension.umaine.edu/bryantpond/about/contact-us/",
+      "checked": "2026-11-13",
+      "fields": [
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip"
+      ],
+      "note": "Contact page: physical address 17 Conservation Lane, Bryant Pond, ME 04219; phone 207.665.2068"
+    },
+    {
+      "url": "https://extension.umaine.edu/bryantpond/summer-camp/search-camp-programs-by-age/",
+      "checked": "2026-11-13",
+      "fields": [
+        "age_min",
+        "age_max"
+      ],
+      "note": "Programs by age: campers ages 6-18"
+    },
+    {
+      "url": "https://extension.umaine.edu/bryantpond/summer-camp/maine-woods-adventure-path/outdoor-explorer/",
+      "checked": "2026-11-13",
+      "fields": [
+        "price_per_week",
+        "price_per"
+      ],
+      "note": "One-week overnight programs cost $795 (same on Junior Explorer, Aqua Adventures, Hunter Safety and Wilderness Survival pages); Camp North Woods $825; day camp $325 a week"
+    },
+    {
+      "url": "https://extension.umaine.edu/bryantpond/summer-camp/search-by-week/",
+      "checked": "2026-11-13",
+      "fields": [
+        "sessions"
+      ],
+      "note": "2027 Summer Camp Schedule by week"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://extension.umaine.edu/bryantpond/summer-camp-at-bryant-pond/",
       "kind": "html",
@@ -91,6 +195,30 @@
       "missing required zip",
       "missing required season_year",
       "city None, ME is not in cities.py"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://extension.umaine.edu/bryantpond/summer-camp-at-bryant-pond/",
+        "https://extension.umaine.edu/bryantpond/about/contact-us/",
+        "https://extension.umaine.edu/bryantpond/summer-camp/search-by-week/",
+        "https://extension.umaine.edu/bryantpond/summer-camp/search-camp-programs-by-age/",
+        "https://extension.umaine.edu/bryantpond/summer-camp/maine-woods-adventure-path/outdoor-explorer/",
+        "https://extension.umaine.edu/bryantpond/summer-camp/day-camp/",
+        "https://extension.umaine.edu/bryantpond/summer-camp/register/",
+        "https://extension.umaine.edu/bryantpond/about/"
+      ],
+      "changes": [
+        "Filled street address, city, ZIP, phone and email from the camp's contact page (17 Conservation Lane, Bryant Pond, ME 04219; 207.665.2068; extension.bryantpond@maine.edu)",
+        "Added ages 6-18 from the programs-by-age page",
+        "season_year 2027 and 8 weekly 2027 sessions (Sunday to Friday, June 27 to August 20) from the 2027 schedule by week; session prices left blank because they vary by program",
+        "Added price_per_week 795 (most one-week overnight programs); price_min and price_max left blank because multi-week program prices (2- and 4-week) are not shown",
+        "Kept camp_type sleepaway; the five-day day camp ($325 a week, ages 6-9, weeks 1-5) runs Monday to Friday on slightly different dates"
+      ],
+      "open_questions": [
+        "The validator rejects the town: the camp gives 'Bryant Pond, ME 04219', a village not in cities.py. Bryant Pond is in the town of Woodstock, which cities.py has, but the camp's pages never say Woodstock. Add Bryant Pond to cities.py, or list it as Woodstock?",
+        "The site also covers Greenland Point (Princeton) as a sister camp; this listing covers Bryant Pond only."
+      ]
+    }
   }
 }

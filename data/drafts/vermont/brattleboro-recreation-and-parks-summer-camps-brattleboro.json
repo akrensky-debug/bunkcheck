@@ -12,7 +12,7 @@
   "sources": [
     {
       "url": "https://brattleboro.gov/blog/summer-camp-registration-2026",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -34,7 +34,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://brattleboro.gov/blog/summer-camp-registration-2026",
       "kind": "html",
@@ -70,6 +70,23 @@
     "errors": [
       "missing required camp_type",
       "camp_type must be one of ['day', 'sleepaway', 'specialty']"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://brattleboro.gov/blog/summer-camp-registration-2026",
+        "https://brattleboro.gov/recreation-and-parks",
+        "https://brattleboro.gov/seasonal-brochures",
+        "https://vtbrattleboroweb.myvscloud.com/webtrac/web/search.html?Action=Start&SubAction=&keyword=camp&display=detail"
+      ],
+      "changes": [
+        "No field changes. The town's pages name no camp, dates, ages, prices or camp type: the post only says registration opened March 16, 2026, the Rec & Parks page has no camp details, and the Seasonal Brochures page showed no brochure link.",
+        "The town's registration system (myvscloud WebTrac) refused our request (403), so the camp list there couldn't be read.",
+        "camp_type is still missing, so check_draft does not pass."
+      ],
+      "open_questions": [
+        "The only place the camps are listed is the WebTrac registration system, which refused us. Ask Rec & Parks (802-254-5808) for the summer brochure, or drop until the 2027 brochure is posted?"
+      ]
+    }
   }
 }

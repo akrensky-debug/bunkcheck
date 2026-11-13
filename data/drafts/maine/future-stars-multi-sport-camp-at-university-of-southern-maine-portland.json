@@ -5,7 +5,7 @@
   "website_url": "https://www.fscamps.com/portland/multi-sport-camp",
   "registration_url": "https://futurestars.campintouch.com/ui/forms/application/camper/App",
   "email": "portland@fscamps.com",
-  "phone": "(207) 378-1000",
+  "phone": null,
   "street_address": "66 Falmouth Street",
   "city": "Portland",
   "state": "ME",
@@ -16,7 +16,7 @@
   ],
   "age_min": 6,
   "age_max": 16,
-  "description_short": "A multi-sport day camp for ages 6-16 at the University of Southern Maine. Campers are grouped by age and skill level and rotate through sports, recreational games and swimming, 9:00 am to 3:00 pm.",
+  "description_short": "Multi-sport day camp for ages 6 to 16 at the University of Southern Maine in Portland, run by Future Stars. Weekly sessions, 9 am to 4 pm; campers are grouped by age and skill and rotate through tennis, soccer, lacrosse, flag football, basketball, softball, volleyball, recreational games and swim.",
   "activities": [
     "tennis",
     "soccer",
@@ -31,19 +31,18 @@
     "floor hockey",
     "handball"
   ],
-  "swim_waterfront_notes": "The page lists \"Recreational Games & Swim\" with swimming activities. It gives no details on the pool, swim instruction or swim testing.",
+  "swim_waterfront_notes": "Swimming is part of the daily recreational games rotation; the page gives no pool or swim-lesson details.",
   "season_year": 2027,
   "sources": [
     {
       "url": "https://www.fscamps.com/portland/multi-sport-camp",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
         "website_url",
         "registration_url",
         "email",
-        "phone",
         "street_address",
         "city",
         "state",
@@ -54,13 +53,17 @@
         "age_min",
         "age_max",
         "description_short",
-        "swim_waterfront_notes"
-      ],
-      "note": "Drafted by the listing tool from this page"
+        "swim_waterfront_notes",
+        "price_per_week",
+        "price_min",
+        "price_max",
+        "price_per",
+        "sessions"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.fscamps.com/portland/multi-sport-camp",
       "kind": "html",
@@ -100,6 +103,85 @@
         "quote": "Recreational Games & Swim – Participate in fun, age-appropriate games and swimming activities"
       }
     ],
-    "errors": []
-  }
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.fscamps.com/portland/multi-sport-camp",
+        "https://www.fscamps.com/portland"
+      ],
+      "changes": [
+        "Added eight weekly sessions, June 21 to August 13, at $495 a week ($445 a week booked early for 1 or 2 weeks, $395 a week for 3 or more weeks). The dates are Mondays to Fridays only in 2027, and the Portland hub page labels the same table 2027.",
+        "Fixed the hours in the description: the page says 9 am to 4 pm, not 9 to 3.",
+        "Removed the phone number: the multi-sport page says (207) 378-1000 and the Portland hub page says (207) 387-1000.",
+        "Rewrote swim_waterfront_notes as a plain fact instead of a note about the page."
+      ],
+      "open_questions": [
+        "The multi-sport page heads the rate table '2026 Dates & Rates' under '2027 Dates & Rates Coming Soon', while the Portland hub page labels the same table '2027 Dates & Rates'. The dates (Mon Jun 21 to Fri Aug 13) only fit 2027. Publish these as 2027 sessions and prices, or wait until Future Stars says the 2027 rates are final?",
+        "Phone: (207) 378-1000 on the multi-sport page versus (207) 387-1000 on the Portland page. Which one, or leave it off?"
+      ]
+    }
+  },
+  "price_per_week": 495,
+  "price_min": 395,
+  "price_max": 495,
+  "price_per": "week",
+  "sessions": [
+    {
+      "name": "Week 1",
+      "start_date": "2027-06-21",
+      "end_date": "2027-06-25",
+      "price": 495,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 2",
+      "start_date": "2027-06-28",
+      "end_date": "2027-07-02",
+      "price": 495,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 3",
+      "start_date": "2027-07-05",
+      "end_date": "2027-07-09",
+      "price": 495,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 4",
+      "start_date": "2027-07-12",
+      "end_date": "2027-07-16",
+      "price": 495,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 5",
+      "start_date": "2027-07-19",
+      "end_date": "2027-07-23",
+      "price": 495,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 6",
+      "start_date": "2027-07-26",
+      "end_date": "2027-07-30",
+      "price": 495,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 7",
+      "start_date": "2027-08-02",
+      "end_date": "2027-08-06",
+      "price": 495,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 8",
+      "start_date": "2027-08-09",
+      "end_date": "2027-08-13",
+      "price": 495,
+      "availability": "unknown"
+    }
+  ]
 }

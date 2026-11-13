@@ -61,7 +61,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "drop",
     "source": {
       "url": "https://discoverymuseum.net/summer-camps/",
       "kind": "html",
@@ -113,6 +113,16 @@
     "errors": [
       "missing required season_year",
       "city 'Winchester', VA is not in cities.py"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://discoverymuseum.net/summer-camps/"
+      ],
+      "changes": [
+        "Marked drop: the camp is at the Shenandoah Valley Discovery Museum, 19 West Cork Street, Winchester, Virginia, outside New England. It was filed under Connecticut by mistake."
+      ],
+      "open_questions": []
+    }
   }
 }

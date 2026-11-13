@@ -16,7 +16,7 @@
   ],
   "age_min": 6,
   "age_max": 15,
-  "description_short": "The Boys & Girls Club of Greenwich runs three summer camps: Clubhouse Camp (ages 6-12) at its Horseneck Lane clubhouse, Camp Simmons (ages 6-12) on 77 wooded acres on Lake Avenue, and Teen Camp (ages 13-15), plus a Counselor-in-Training program. You must be a current BGCG member to register.",
+  "description_short": "The Boys & Girls Club of Greenwich runs weekly day camps from June 22 to August 14, 2026: Clubhouse Camp (ages 6-12) at its Horseneck Lane clubhouse, Camp Simmons (ages 6-12) on 77 wooded acres at 744 Lake Avenue, and Teen Camp (ages 13-15), plus a Counselor-in-Training program. Camp is $275 a week ($200 for CITs) plus the annual club membership, which you need before you can register.",
   "activities": [
     "swim lessons",
     "swimming",
@@ -36,10 +36,78 @@
   ],
   "swim_waterfront_notes": "Clubhouse Camp has a 25-meter pool and offers swim lessons. Camp Simmons has an outdoor swimming pool and a pond used for fishing and canoeing. Teen campers can use the swimming pool.",
   "season_year": 2026,
+  "camp_type": "day",
+  "email": "info@bgcg.org",
+  "price_per_week": 275,
+  "price_per": "week",
+  "price_min": 200,
+  "price_max": 275,
+  "extended_care": true,
+  "financial_aid": true,
+  "refund_policy_summary": "Refund requests made before May 8 at 5:00 pm carry a $70 non-refundable fee. No refunds after May 8. Membership is non-refundable, and membership and registration are not transferable.",
+  "special_needs_notes": "A child with special health care needs must have an individual plan of care form before camp starts. If your child has an aide at school, you must arrange a similar aide for camp.",
+  "sessions": [
+    {
+      "name": "Week 1",
+      "start_date": "2026-06-22",
+      "end_date": "2026-06-26",
+      "price": 275,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 2 (closed Friday, July 3)",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-02",
+      "price": 275,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 3",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": 275,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 4",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": 275,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 5",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": 275,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 6",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": 275,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 7",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": 275,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 8",
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-14",
+      "price": 275,
+      "availability": "unknown"
+    }
+  ],
   "sources": [
     {
       "url": "https://bgcg.org/what-we-do/summer-camps/overview.html",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -53,14 +121,30 @@
         "activities",
         "age_min",
         "age_max",
-        "description_short",
         "swim_waterfront_notes"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
+    },
+    {
+      "url": "https://bgcg.org/file_download/inline/f4f3c8f9-740c-486a-bf2b-10a20f167d5e",
+      "checked": "2026-11-13",
+      "fields": [
+        "camp_type",
+        "email",
+        "description_short",
+        "price_per_week",
+        "price_per",
+        "price_min",
+        "price_max",
+        "extended_care",
+        "financial_aid",
+        "refund_policy_summary",
+        "special_needs_notes",
+        "sessions"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://bgcg.org/what-we-do/summer-camps/overview.html",
       "kind": "html",
@@ -125,6 +209,25 @@
     "errors": [
       "missing required camp_type",
       "camp_type must be one of ['day', 'sleepaway', 'specialty']"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://bgcg.org/what-we-do/summer-camps/overview.html",
+        "https://bgcg.org/file_download/inline/f4f3c8f9-740c-486a-bf2b-10a20f167d5e"
+      ],
+      "changes": [
+        "Set camp_type to day: the 2026 brochure calls them full day camps, 9:00 to 4:00.",
+        "Added the eight 2026 weeks (June 22 to August 14, closed Friday July 3) at $275 a week from the 2026 brochure.",
+        "Added price_per_week $275, price_min $200 (CIT) and price_max $275; membership ($75 a year for most kids) is extra.",
+        "Added extended_care (before care 8 to 9, after care 4 to 5) and financial_aid (discounted fees, Care 4 Kids accepted).",
+        "Added the refund policy, special needs note and email info@bgcg.org from the brochure.",
+        "Rewrote the description with dates, price and the membership requirement."
+      ],
+      "open_questions": [
+        "This overview covers three camps at two Greenwich sites, and separate drafts already exist for Clubhouse Camp (clubhouse-camp-greenwich) and Teen Camp (teen-camp-greenwich), but none for Camp Simmons. Keep this overview listing, or drop it and list Clubhouse, Teen Camp and Camp Simmons (744 Lake Avenue) separately?",
+        "Only the 2026 season is posted and it is over. Publish with 2026 dates and prices, or wait for the 2027 brochure?"
+      ]
+    }
   }
 }

@@ -11,43 +11,13 @@
   "primary_categories": [
     "special_needs"
   ],
-  "description_short": "Camp Thorpe is a summer camp in Goshen, Vermont, for teens and adults with developmental disabilities. Activities are adapted to each camper's abilities and needs.",
-  "special_needs_notes": "Serves teens and adults with developmental disabilities; activities tailored to each camper's abilities and needs. Site has medication packing guidelines.",
+  "description_short": "A residential camp in Goshen, Vermont, for teens and adults with developmental disabilities, with 12-day and 6-day sessions and a one-week day camp. Activities are adapted to each camper.",
+  "special_needs_notes": "Serves campers from age 12 through older adults with developmental, intellectual and physical disabilities, at a ratio of three campers to one counselor. Camp does not provide 1:1 aides; a few campers per session may bring an outside aide for an extra fee. Medications must arrive in dose packing. A nurse is on site at all times.",
   "season_year": 2026,
-  "sessions": [
-    {
-      "name": "Session 1",
-      "start_date": "2026-06-21",
-      "end_date": "2026-07-03",
-      "price": null,
-      "availability": "waitlist"
-    },
-    {
-      "name": "Session 2",
-      "start_date": "2026-07-05",
-      "end_date": "2026-07-17",
-      "price": null,
-      "availability": "waitlist"
-    },
-    {
-      "name": "Session 3",
-      "start_date": "2026-07-19",
-      "end_date": "2026-07-31",
-      "price": null,
-      "availability": "waitlist"
-    },
-    {
-      "name": "Session 4",
-      "start_date": "2026-08-02",
-      "end_date": "2026-08-08",
-      "price": null,
-      "availability": "waitlist"
-    }
-  ],
   "sources": [
     {
       "url": "https://www.campthorpe.org/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "website_url",
@@ -56,17 +26,45 @@
         "city",
         "state",
         "zip",
-        "camp_type",
         "primary_categories",
-        "description_short",
-        "special_needs_notes",
-        "sessions"
+        "email"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Email is Cloudflare-obscured on the page; decoded from the page's own mailto link"
+    },
+    {
+      "url": "https://www.campthorpe.org/attend-camp-thorpe/",
+      "checked": "2026-11-13",
+      "fields": [
+        "registration_url"
+      ]
+    },
+    {
+      "url": "https://www.campthorpe.org/attend-camp-thorpe/tuition/",
+      "checked": "2026-11-13",
+      "fields": [
+        "price_min",
+        "price_max",
+        "price_per",
+        "financial_aid",
+        "refund_policy_summary"
+      ]
+    },
+    {
+      "url": "https://www.campthorpe.org/attend-camp-thorpe/most-asked-questions/",
+      "checked": "2026-11-13",
+      "fields": [
+        "camp_type",
+        "age_min",
+        "meals_included",
+        "activities",
+        "swim_waterfront_notes",
+        "special_needs_notes",
+        "description_short"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.campthorpe.org/",
       "kind": "html",
@@ -99,6 +97,42 @@
         "quote": "the security of a loving and supportive home away from home"
       }
     ],
-    "errors": []
-  }
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.campthorpe.org/",
+        "https://www.campthorpe.org/attend-camp-thorpe/tuition/",
+        "https://www.campthorpe.org/attend-camp-thorpe/",
+        "https://www.campthorpe.org/attend-camp-thorpe/most-asked-questions/"
+      ],
+      "changes": [
+        "Removed the four 2026 sessions (see question).",
+        "Added email, application link, minimum age 12, prices $800 to $1,800 per session, camperships, refund policy, meals, activities and waterfront notes from the camp's tuition and FAQ pages.",
+        "camp_type sleepaway now rests on the FAQ (tuition includes lodging; cabins of three campers and one staff member)."
+      ],
+      "open_questions": [
+        "The site now lists Session 1 June 20 to July 2, Session 2 July 4 to 16, Day Camp July 6 to 10, Session 3 July 18 to 30, Session 4 August 1 to 7 ($1,800 / $1,800 / $800 / $1,800 / $900). The FAQ labels these 'the 2026 season', but last month the site showed 2026 as June 21 to July 3 etc., and June 20 is a Sunday only in 2027. Treat them as 2027, or wait?",
+        "Campers range from age 12 through older adults, so most campers may be adults. Do we list it as a kids camp?"
+      ]
+    }
+  },
+  "email": "info@campthorpe.org",
+  "registration_url": "https://www.ultracamp.com/info/sessiondetail.aspx?idCamp=1235&campCode=CTH&idSession=446299",
+  "age_min": 12,
+  "price_min": 800,
+  "price_max": 1800,
+  "price_per": "session",
+  "financial_aid": true,
+  "meals_included": true,
+  "refund_policy_summary": "Cancel in writing at least 30 days before the session for a full refund minus the $50 deposit; after that and before the start, 50% back; under 14 days or after the start, no refund except for medical reasons. Refunds are processed at the end of August.",
+  "activities": [
+    "cookouts",
+    "campfire singing",
+    "hiking",
+    "boating",
+    "swimming",
+    "fishing"
+  ],
+  "swim_waterfront_notes": "Camp has a pool and a pond used for fishing and boating."
 }

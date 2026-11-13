@@ -3,7 +3,7 @@
   "name": "Bridgeport YMCA Summer Day Camp",
   "operator_name": "Central Connecticut Coast YMCA",
   "website_url": "https://cccymca.org/locations/bridgeport/camp/",
-  "registration_url": "https://cccymca.org/wp-content/uploads/2026-BPT-Camp-Registration-Packet-Fillable.pdf",
+  "registration_url": null,
   "phone": "203-334-5551",
   "street_address": "850 Park Avenue",
   "city": "Bridgeport",
@@ -14,24 +14,102 @@
     "nature",
     "sports"
   ],
-  "description_short": "A traditional summer day camp run by the Bridgeport YMCA for children and teens. Activities include exploring nature, swimming, games and making friends.",
+  "description_short": "A traditional YMCA day camp at the Bridgeport YMCA for children entering kindergarten through 9th grade, grouped by grade. In 2026 it ran in 9 weekly sessions, June 22 to August 21, from 8:00 am to 4:00 pm, with breakfast, lunch and snack provided and paid after care until 5:30 pm. Activities include arts and crafts, sports, swimming and STEM projects.",
   "activities": [
-    "Nature exploration",
+    "Arts and crafts",
+    "Sports and games",
     "Swimming",
-    "Games"
+    "STEM projects",
+    "Nature exploration",
+    "Special events",
+    "Weekly specialists"
   ],
   "financial_aid": true,
-  "special_needs_notes": "If a child needs special assistance or medicine at camp, the camp may also require an Individual Care Plan and a Medicine Authorization form.",
+  "special_needs_notes": "The Y works with children of all abilities. If your child needs social, behavioral or medical accommodations, contact the Camp Director. An Individual Care Plan and Medicine Authorization form may be required.",
   "season_year": 2026,
+  "email": "bridgeportinfo@cccymca.org",
+  "grade_min": 0,
+  "grade_max": 9,
+  "price_per_week": 285,
+  "price_per": "week",
+  "price_min": 192,
+  "price_max": 285,
+  "extended_care": true,
+  "meals_included": true,
+  "refund_policy_summary": "The $50 registration fee per camper and the $50 deposit per camper per week are non-refundable and non-transferable.",
+  "sessions": [
+    {
+      "name": "Week 1: Aloha Summer",
+      "start_date": "2026-06-22",
+      "end_date": "2026-06-26",
+      "price": 285,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 2: Space Expedition",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-03",
+      "price": 285,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 3: Pirates & Mermaids",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": 285,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 4: Sports Mania",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": 285,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 5: Super Heroes",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": 285,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 6: Camp Carnival",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": 285,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 7: Family Feud",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": 285,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 8: Color Wars",
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-14",
+      "price": 285,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 9: Mystery Week",
+      "start_date": "2026-08-17",
+      "end_date": "2026-08-21",
+      "price": 285,
+      "availability": "unknown"
+    }
+  ],
   "sources": [
     {
       "url": "https://cccymca.org/locations/bridgeport/camp/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
         "website_url",
-        "registration_url",
         "phone",
         "street_address",
         "city",
@@ -39,16 +117,38 @@
         "zip",
         "camp_type",
         "primary_categories",
+        "financial_aid"
+      ]
+    },
+    {
+      "url": "https://cccymca.org/wp-content/uploads/BPT-SUMMER-DAY-CAMP-GUIDE-2026.pdf",
+      "checked": "2026-11-13",
+      "fields": [
+        "grade_min",
+        "grade_max",
+        "price_per_week",
+        "price_per",
+        "price_min",
+        "price_max",
+        "extended_care",
         "activities",
+        "refund_policy_summary",
+        "special_needs_notes",
         "description_short",
-        "financial_aid",
-        "special_needs_notes"
-      ],
-      "note": "Drafted by the listing tool from this page"
+        "sessions"
+      ]
+    },
+    {
+      "url": "https://cccymca.org/wp-content/uploads/BPT-SUMMER-DAY-CAMP-Information-Sheet-2026-4.pdf",
+      "checked": "2026-11-13",
+      "fields": [
+        "email",
+        "meals_included"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://cccymca.org/locations/bridgeport/camp/",
       "kind": "html",
@@ -116,6 +216,27 @@
         "quote": "If your child will require special assistance or medicine while at camp, these forms may also be required: Individual Care Plan Medicine Authorization."
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://cccymca.org/locations/bridgeport/camp/",
+        "https://cccymca.org/wp-content/uploads/BPT-SUMMER-DAY-CAMP-GUIDE-2026.pdf",
+        "https://cccymca.org/wp-content/uploads/BPT-SUMMER-DAY-CAMP-Information-Sheet-2026-4.pdf"
+      ],
+      "changes": [
+        "Added the nine 2026 weekly sessions (June 22 to August 21) from the 2026 brochure and information sheet.",
+        "Added grades K to 9 (Greenhorns K-1 through Adventurers 7-9).",
+        "Added prices: $285 a week for non-members, $192 for Y members; price_per_week set to $285.",
+        "Set extended_care true (after care to 5:30 pm, $75 a week) and meals_included true (breakfast, lunch and snack through CACFP).",
+        "Added email bridgeportinfo@cccymca.org from the information sheet.",
+        "Removed registration_url: it is the 2026 paper registration packet, and that season is over.",
+        "Added the fee policy (non-refundable $50 registration fee and $50 weekly deposit), widened the activity list and special needs note from the brochure, and rewrote the description."
+      ],
+      "open_questions": [
+        "Only the 2026 season is posted and it is over. Publish with 2026 dates and prices, or wait for 2027?",
+        "The brochure's back page lists association-wide 'Summer camp dates: June 15 to August 28' and an extra Bridgeport site (Ralphola Taylor Community Center, 790 Central Ave). I used the Bridgeport info sheet's June 22 to August 21 and the 850 Park Avenue address. Fine?"
+      ]
+    }
   }
 }

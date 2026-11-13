@@ -5,9 +5,11 @@
   "website_url": "https://www.thecenteratorchardhill.org/child-youth-programs",
   "registration_url": "https://linseed.works/forms/activities?background=true&department=DAC&header=true&key=XM2151u5gARl&view=card",
   "email": "eleanor@theorchardschool.org",
-  "city": null,
+  "phone": "603-835-2495",
+  "street_address": "114 Old Settlers Rd",
+  "city": "Alstead",
   "state": "NH",
-  "zip": null,
+  "zip": "03602",
   "camp_type": "day",
   "primary_categories": [
     "nature",
@@ -35,14 +37,13 @@
   "sources": [
     {
       "url": "https://www.thecenteratorchardhill.org/child-youth-programs",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
         "website_url",
         "registration_url",
         "email",
-        "state",
         "camp_type",
         "primary_categories",
         "activities",
@@ -55,11 +56,23 @@
         "special_needs_notes",
         "swim_waterfront_notes"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Drafted by the listing tool from this page; rechecked 2026-11-13"
+    },
+    {
+      "url": "https://www.thecenteratorchardhill.org/contact-us",
+      "checked": "2026-11-13",
+      "fields": [
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip"
+      ],
+      "note": "Get In Touch: 114 Old Settlers Rd, Alstead, NH 03602, 603-835-2495"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.thecenteratorchardhill.org/child-youth-programs",
       "kind": "html",
@@ -122,6 +135,26 @@
       "missing required zip",
       "missing required season_year",
       "city None, NH is not in cities.py"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.thecenteratorchardhill.org/child-youth-programs",
+        "https://www.thecenteratorchardhill.org/contact-us",
+        "https://www.thecenteratorchardhill.org/scholarships",
+        "https://www.thecenteratorchardhill.org/summer-camps-staff",
+        "https://linseed.works/forms/activities?background=true&department=DAC&header=true&key=XM2151u5gARl&view=card"
+      ],
+      "changes": [
+        "Filled street_address, city (Alstead), zip 03602 and phone 603-835-2495 from the Contact page, and moved state to that source.",
+        "Checked the $300 a week summer camp tuition, the $300 to $600 teen programs, scholarships, the inclusion note and the activities against the programs page. They match.",
+        "Kept Eleanor's email: the staff page says she leads and directs the Day Camps, though the address is on theorchardschool.org.",
+        "season_year left empty: no page names a year or gives any dates (footer says 2025), and the registration form is built by script so it could not be read. check_draft fails only on the missing season_year."
+      ],
+      "open_questions": [
+        "No season year or dates anywhere on the camp's site, and the linseed.works registration form could not be read without a browser. Publish with season_year 2026 on the strength of 'Registration is open!', ask the camp for 2027 dates, or hold?",
+        "There are no ages or grades for the day camp or teen programs. Is 'school-age' plus teen enough to list?"
+      ]
+    }
   }
 }

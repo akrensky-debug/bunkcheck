@@ -7,30 +7,95 @@
   "city": "Winthrop",
   "state": "ME",
   "zip": "04364",
+  "camp_type": "sleepaway",
   "primary_categories": [
     "faith",
-    "sports",
     "performing_arts",
     "arts",
-    "special_needs",
     "nature"
   ],
-  "description_short": "A Christian camp affiliated with the New England Conference of the United Methodist Church, on more than 200 acres of forest on Lower Narrows Pond and Lake Annabessacook. It runs weekly summer programs from mid-June to mid-August, including sports, swimming, musical theatre, creative arts, special needs camps and day camps.",
   "activities": [
-    "sports",
     "swimming",
-    "musical theatre",
+    "boating",
+    "arts and crafts",
+    "music theatre",
     "creative arts",
-    "nature trails",
-    "basketball"
+    "campfires",
+    "nature walks",
+    "outpost camping",
+    "worship and singing"
   ],
+  "religious_affiliation": "United Methodist",
+  "description_short": "United Methodist camp on Lower Narrows Pond in Winthrop, Maine, with short overnight camps for kids grouped by grade: first-timer, middle school, senior high, music theatre, creative arts and outpost weeks. It also runs a day camp for ages 5 to 12.",
+  "price_min": 475,
+  "price_max": 585,
+  "price_per": "session",
   "financial_aid": true,
-  "special_needs_notes": "Special needs camps are listed among the weekly summer offerings. Details are not given on this page.",
-  "swim_waterfront_notes": "Property borders Lower Narrows Pond and Lake Annabessacook and has a boat dock and a swimming area.",
+  "refund_policy_summary": "Each camp needs a $50 nonrefundable registration fee; the rest is due three weeks before camp. Fees other than the registration fee are refunded if you notify the registrar at least three weeks before camp starts.",
+  "swim_waterfront_notes": "Property borders Lower Narrows Pond and Lake Annabessacook, with a boat dock and a swimming area. Swimming and boating are part of every camp week.",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "First Timers (finishing grades 2-4)",
+      "start_date": "2026-06-21",
+      "end_date": "2026-06-24",
+      "price": 475,
+      "availability": "unknown"
+    },
+    {
+      "name": "Senior High Night Camp (finishing grades 9-12)",
+      "start_date": "2026-06-28",
+      "end_date": "2026-07-02",
+      "price": 550,
+      "availability": "unknown"
+    },
+    {
+      "name": "Middle School Rally Camp (finishing grades 6-8)",
+      "start_date": "2026-06-28",
+      "end_date": "2026-07-02",
+      "price": 550,
+      "availability": "unknown"
+    },
+    {
+      "name": "Elementary/Middle School Music Theatre (finishing grades 3-8)",
+      "start_date": "2026-07-12",
+      "end_date": "2026-07-17",
+      "price": 575,
+      "availability": "unknown"
+    },
+    {
+      "name": "Elementary Creative Arts (finishing grades 4-6)",
+      "start_date": "2026-07-19",
+      "end_date": "2026-07-23",
+      "price": 550,
+      "availability": "unknown"
+    },
+    {
+      "name": "Middle School/Senior High Music Theatre (finishing grades 6-12)",
+      "start_date": "2026-07-26",
+      "end_date": "2026-08-01",
+      "price": 585,
+      "availability": "unknown"
+    },
+    {
+      "name": "Elementary Outpost (finishing grades 4-6)",
+      "start_date": "2026-08-02",
+      "end_date": "2026-08-06",
+      "price": 550,
+      "availability": "unknown"
+    },
+    {
+      "name": "Middle School/Senior High Creative Arts (finishing grades 6-12)",
+      "start_date": "2026-08-02",
+      "end_date": "2026-08-06",
+      "price": 550,
+      "availability": "unknown"
+    }
+  ],
   "sources": [
     {
-      "url": "https://www.mechuwana.org/about-us",
-      "checked": "2026-10-13",
+      "url": "https://www.mechuwana.org",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "website_url",
@@ -39,18 +104,43 @@
         "city",
         "state",
         "zip",
+        "religious_affiliation"
+      ],
+      "note": "Mailing address PO Box 277, Winthrop ME 04364; no street address shown"
+    },
+    {
+      "url": "https://www.mechuwana.org/about-us",
+      "checked": "2026-11-13",
+      "fields": [
+        "swim_waterfront_notes"
+      ]
+    },
+    {
+      "url": "https://www.mechuwana.org/summer-camps",
+      "checked": "2026-11-13",
+      "fields": [
+        "financial_aid"
+      ]
+    },
+    {
+      "url": "https://www.mechuwana.org/_files/ugd/6a3c55_8db984badc87447498d401aa557842cd.pdf",
+      "checked": "2026-11-13",
+      "fields": [
+        "camp_type",
         "primary_categories",
         "activities",
         "description_short",
-        "financial_aid",
-        "special_needs_notes",
-        "swim_waterfront_notes"
+        "price_min",
+        "price_max",
+        "price_per",
+        "refund_policy_summary",
+        "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Summer Camps 2026 brochure. Youth overnight camps only; family, adult special needs camps and the day camp left out of sessions."
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.mechuwana.org/about-us",
       "kind": "html",
@@ -77,10 +167,25 @@
       "Swim supervision / lifeguard details"
     ],
     "low_confidence": [],
-    "errors": [
-      "missing required camp_type",
-      "missing required season_year",
-      "camp_type must be one of ['day', 'sleepaway', 'specialty']"
-    ]
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.mechuwana.org",
+        "https://www.mechuwana.org/about-us",
+        "https://www.mechuwana.org/summer-camps",
+        "https://www.mechuwana.org/_files/ugd/6a3c55_8db984badc87447498d401aa557842cd.pdf"
+      ],
+      "changes": [
+        "Set camp_type sleepaway and season 2026 from the Summer Camps 2026 brochure; no 2027 dates are posted (the summer page thanks families for summer 2026).",
+        "Added the eight 2026 youth overnight camps with dates and fees ($475 to $585). Left out Mom/Child, Grandcamp and Adult Special Needs (not kids' camps on their own) and the day camp weeks.",
+        "Removed special_needs from categories and special_needs_notes: the only special needs camp is for adults.",
+        "Added religious_affiliation United Methodist, the $50 registration fee and the three-week refund rule.",
+        "Left ages and grades blank: overnight camps are by grade finished in June 2026 (2 to 12), which doesn't map cleanly to entering grades, and the day camp is ages 5 to 12."
+      ],
+      "open_questions": [
+        "Mechuwana is really two programs: grade-based overnight camps (listed here as sleepaway) and a day camp for ages 5-12 (seven weeks June 24 to August 5, 2026, $230 a week, 8:30 to 3:30, lunch from home). Keep one sleepaway listing, or add a separate day camp listing?"
+      ]
+    }
   }
 }

@@ -32,91 +32,79 @@
       "name": "Recreation & Parks: Outdoor Adventurers Camp",
       "start_date": "2026-06-15",
       "end_date": "2026-06-18",
-      "price": null,
       "availability": "unknown"
     },
     {
       "name": "Thrive: Artistry Adventure Week",
       "start_date": "2026-06-22",
       "end_date": "2026-06-26",
-      "price": null,
       "availability": "unknown"
     },
     {
       "name": "Recreation & Parks: Chess Wizards Camp",
       "start_date": "2026-06-22",
       "end_date": "2026-06-26",
-      "price": null,
       "availability": "unknown"
     },
     {
       "name": "Thrive: 'Cheffing' Up Week (3-day week)",
       "start_date": "2026-06-29",
       "end_date": "2026-07-01",
-      "price": null,
       "availability": "unknown"
     },
     {
       "name": "Thrive: Olympians Week",
       "start_date": "2026-07-06",
       "end_date": "2026-07-10",
-      "price": null,
       "availability": "unknown"
     },
     {
       "name": "Thrive: Thrive's Got Talent Week",
       "start_date": "2026-07-13",
       "end_date": "2026-07-17",
-      "price": null,
       "availability": "unknown"
     },
     {
       "name": "Recreation & Parks: Very Merry Theatre Camp",
       "start_date": "2026-07-13",
       "end_date": "2026-07-17",
-      "price": null,
       "availability": "unknown"
     },
     {
       "name": "Thrive: Splish Splash Week",
       "start_date": "2026-07-20",
       "end_date": "2026-07-24",
-      "price": null,
       "availability": "unknown"
     },
     {
       "name": "Thrive: Storytelling Spellbinders Week",
       "start_date": "2026-07-27",
       "end_date": "2026-07-31",
-      "price": null,
       "availability": "unknown"
     },
     {
       "name": "Thrive: Legendary Week",
       "start_date": "2026-08-03",
       "end_date": "2026-08-07",
-      "price": null,
       "availability": "unknown"
     },
     {
       "name": "Recreation & Parks: Dream Team Sports Camp",
       "start_date": "2026-08-10",
       "end_date": "2026-08-14",
-      "price": null,
       "availability": "unknown"
     },
     {
       "name": "Recreation & Parks: Creative Spark Camp",
       "start_date": "2026-08-17",
       "end_date": "2026-08-21",
-      "price": null,
       "availability": "unknown"
     }
   ],
   "sources": [
     {
       "url": "https://www.winooskivt.gov/m/newsflash/Archive/Item/1960?arcId=3607",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -130,21 +118,14 @@
         "grade_max",
         "description_short",
         "financial_aid",
-        "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
-    },
-    {
-      "url": "https://www.census.gov/geographies/reference-files/time-series/geo/relationship-files.2020.html",
-      "checked": "2026-10-14",
-      "fields": [
+        "sessions",
         "zip"
       ],
-      "note": "Winooski, VT sits inside one ZIP code (2020 Census ZCTA relationship file)"
+      "note": "City news post '2026 Pool Passes and Summer Programs' (archived 6/30/2026): Thrive weeks June 22-Aug 7 (completed grades K-5, state subsidy, 802 540 1533, thrive@winooskivt.gov) and Recreation & Parks camps June 15-Aug 21 (current K-5th 2025-26, scholarship at checkout, 802 540 1476, recreation@winooskivt.gov); footer: Winooski City Hall, 27 West Allen Street, Winooski, Vermont 05404"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.winooskivt.gov/m/newsflash/Archive/Item/1960?arcId=3607",
       "kind": "html",
@@ -181,6 +162,23 @@
     "errors": [
       "missing required camp_type",
       "camp_type must be one of ['day', 'sleepaway', 'specialty']"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.winooskivt.gov/m/newsflash/Archive/Item/1960?arcId=3607",
+        "http://winooskivt.gov/summer"
+      ],
+      "changes": [
+        "Checked all 12 sessions, grades K to 5 and the financial help against the city's 2026 news post; they match.",
+        "ZIP 05404 now cites the city's own page (City Hall footer, Winooski, Vermont 05404) instead of a Census file.",
+        "Removed empty session prices. The registration link goes to a Rec1 catalog that loads by script and showed no programs.",
+        "Left camp_type empty: the post never says day camp, and it has no hours, prices or site."
+      ],
+      "open_questions": [
+        "This listing joins two separate city programs with their own contacts: Thrive Summer Camps (state subsidy) and Recreation & Parks Summer Camps. Split into two listings, keep one, or drop? Neither has a camp page of its own; the only source is an archived news post.",
+        "camp_type is required and the post doesn't say; set day once a city page shows hours?"
+      ]
+    }
   }
 }

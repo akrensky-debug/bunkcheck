@@ -15,9 +15,6 @@
     "STEM",
     "arts"
   ],
-  "age_min": 5,
-  "age_max": 7,
-  "description_short": "A mostly land-based marine science program for ages 5–7 at Hingham Harbor. Children learn about local marine life through beach exploration and arts and crafts, and on some days take a powerboat ride to a harbor island.",
   "activities": [
     "Marine science",
     "Beach exploration",
@@ -25,12 +22,16 @@
     "Marine-themed arts and crafts",
     "Powerboat ride to harbor islands (select days)"
   ],
+  "age_min": 5,
+  "age_max": 7,
+  "description_short": "A mostly land-based marine science program in one-week sessions for ages 5–7 at the Hingham Maritime Center on Hingham Harbor. Children learn about local marine life through beach exploration and arts and crafts, and on some days take a powerboat ride to a harbor island.",
   "financial_aid": true,
   "swim_waterfront_notes": "Primarily land-based; select days may include a powerboat ride to one of Hingham's harbor islands. Swim requirements and life jacket policy not stated.",
+  "season_year": 2026,
   "sources": [
     {
       "url": "https://www.hinghammaritime.org/little-mariners",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -47,14 +48,21 @@
         "age_min",
         "age_max",
         "description_short",
-        "financial_aid",
         "swim_waterfront_notes"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.hinghammaritime.org/scholarship",
+      "checked": "2026-11-12",
+      "fields": [
+        "financial_aid"
+      ],
+      "note": "Scholarships page: 'Scholarships available for the 2026 season!'"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.hinghammaritime.org/little-mariners",
       "kind": "html",
@@ -90,8 +98,43 @@
         "quote": "Scholarship"
       }
     ],
-    "errors": [
-      "missing required season_year"
-    ]
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.hinghammaritime.org/little-mariners",
+        "https://www.hinghammaritime.org/programs",
+        "https://www.hinghammaritime.org/faq",
+        "https://www.hinghammaritime.org/scholarship",
+        "https://www.hinghammaritime.org/",
+        "https://docs.google.com/document/d/1Apo-hD3KQfoCh_2KxmOZarHGo0Z9XQBCdsAZJfsJ0fU/edit?tab=t.0",
+        "https://bookeo.com/hinghammaritimecenter"
+      ],
+      "changes": [
+        "Set season_year 2026 (the site's Scholarships page names the 2026 season; the program page has no year) to clear the required-field error",
+        "financial_aid source moved to the Scholarships page (need-based scholarships for the 2026 season)",
+        "Description now says one-week sessions and names the Hingham Maritime Center"
+      ],
+      "open_questions": [
+        "No dates, hours or prices on the site: the four '1 Week Sessions' Register buttons go to the Bookeo booking portal, which the fetcher cannot read, and the Parent Handbook (a Google Doc) timed out",
+        "camp_type 'specialty' kept (marine science program); the page does not say day or half-day hours",
+        "Scholarship page speaks of 'sailors and rowers'; not explicit that it covers Little Mariners"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.hinghammaritime.org/little-mariners",
+      "changes": [
+        "Set season_year 2026 (the site's Scholarships page names the 2026 season; the program page has no year) to clear the required-field error",
+        "financial_aid source moved to the Scholarships page (need-based scholarships for the 2026 season)",
+        "Description now says one-week sessions and names the Hingham Maritime Center"
+      ],
+      "for_andrew": [
+        "No dates, hours or prices on the site: the four '1 Week Sessions' Register buttons go to the Bookeo booking portal, which the fetcher cannot read, and the Parent Handbook (a Google Doc) timed out",
+        "camp_type 'specialty' kept (marine science program); the page does not say day or half-day hours",
+        "Scholarship page speaks of 'sailors and rowers'; not explicit that it covers Little Mariners"
+      ]
+    }
   }
 }

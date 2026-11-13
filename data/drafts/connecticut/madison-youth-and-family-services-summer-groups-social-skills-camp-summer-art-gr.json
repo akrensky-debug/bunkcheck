@@ -78,7 +78,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "drop",
     "source": {
       "url": "https://www.madisonct.org/1374/Summer-Camp",
       "kind": "html",
@@ -135,6 +135,20 @@
         "quote": "Do they enjoy painting, drawing, listening to music, acting"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.madisonct.org/1374/Summer-Camp",
+        "https://www.madisonct.org/833/Clinical-Fee-Schedule"
+      ],
+      "changes": [
+        "No field changes. Recommend drop: these are short clinical groups run by the town's Youth & Family Services clinical department (a 90-minute social skills group four afternoons over two weeks, a 90-minute art therapy group once a week, a one-hour walk-and-talk), not a summer camp program.",
+        "The page shows no year and the dates don't hold together: 'Thursdays' July 9 to 30 fit 2026 but also 2020, and August 8 is a Saturday in both, so season_year 2026 can't be confirmed from the page. No prices are posted; registration is by phone or a form that did not come through."
+      ],
+      "open_questions": [
+        "If you want therapeutic social skills groups listed, this could come back once the town posts dated 2027 groups; otherwise drop."
+      ]
+    }
   }
 }

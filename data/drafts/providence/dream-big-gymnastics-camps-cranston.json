@@ -12,19 +12,24 @@
   "zip": "02921",
   "camp_type": "day",
   "primary_categories": [
-    "sports",
+    "sports"
+  ],
+  "secondary_categories": [
     "arts"
   ],
-  "description_short": "School-vacation day camp at a gymnastics gym in Cranston, RI. Campers learn gymnastics skills, do a ninja warrior obstacle course, and make an arts and crafts project, 8:30am–4pm, $75 per day.",
   "activities": [
     "Gymnastics",
     "Ninja warrior obstacle course",
     "Arts and crafts"
   ],
+  "description_short": "School-vacation day camp at Dream Big Gymnastics in Cranston, RI. Campers learn gymnastics skills, do a ninja warrior obstacle course and make an arts and crafts project. Camps run 8:30am to 4pm and cost $75 per day.",
+  "price_min": 75,
+  "price_max": 75,
+  "price_per": "day",
   "sources": [
     {
       "url": "https://www.dreambiggym.com/camps",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -38,10 +43,14 @@
         "zip",
         "camp_type",
         "primary_categories",
+        "secondary_categories",
         "activities",
-        "description_short"
+        "description_short",
+        "price_min",
+        "price_max",
+        "price_per"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Camps page: 'Come spend vacation at Dream Big Gymnastics'; 'All Camps run 8:30am - 4pm'; 'Cost: $75/day'; CAMP DATES table is empty"
     }
   ],
   "review": {
@@ -75,7 +84,25 @@
     "errors": [
       "missing required season_year"
     ],
-    "first_pass": {
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.dreambiggym.com/camps",
+        "https://www.dreambiggym.com/events"
+      ],
+      "changes": [
+        "Added the $75/day price (price_min/max 75, price_per day)",
+        "Moved 'arts' to secondary categories (gym camp with one craft project)",
+        "Description tightened to the page's wording",
+        "season_year NOT set: the page gives no dates or year, so the missing season_year error stays"
+      ],
+      "open_questions": [
+        "Is this a summer camp at all? The page says 'Come spend vacation at Dream Big Gymnastics' and its CAMP DATES table is empty; the events page shows nothing. It may be school-vacation days only",
+        "No season year, dates or ages on the site, so season_year (required) cannot be filled"
+      ]
+    },
+    "earlier_pass": {
+      "status": "needs_andrew",
       "by": "Claude",
       "date": "2026-10-27",
       "page_checked": "https://www.dreambiggym.com/camps",
@@ -83,6 +110,21 @@
       "for_andrew": [
         "Page describes school-vacation day camps ($75/day, 8:30-4) and never mentions summer; CAMP DATES table is empty (also empty when rendered). Confirm summer camps exist before listing; season_year cannot be set",
         "primary_categories includes arts only because of one craft project per day; sports alone may fit better"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.dreambiggym.com/camps",
+      "changes": [
+        "Added the $75/day price (price_min/max 75, price_per day)",
+        "Moved 'arts' to secondary categories (gym camp with one craft project)",
+        "Description tightened to the page's wording",
+        "season_year NOT set: the page gives no dates or year, so the missing season_year error stays"
+      ],
+      "for_andrew": [
+        "Is this a summer camp at all? The page says 'Come spend vacation at Dream Big Gymnastics' and its CAMP DATES table is empty; the events page shows nothing. It may be school-vacation days only",
+        "No season year, dates or ages on the site, so season_year (required) cannot be filled"
       ]
     }
   }

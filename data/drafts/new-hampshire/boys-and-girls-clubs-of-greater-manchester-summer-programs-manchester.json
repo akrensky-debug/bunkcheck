@@ -4,6 +4,7 @@
   "operator_name": "Boys & Girls Clubs of Greater Manchester",
   "website_url": "https://www.bgcgm.org/programs/summer_programs/",
   "registration_url": "https://bgcgm.org/summer-program-day-camp/",
+  "email": "frontdesk@bgcgm.org",
   "phone": "(603) 625-5982",
   "street_address": "555 Union Street",
   "city": "Manchester",
@@ -45,43 +46,121 @@
   "extended_care": true,
   "transportation": true,
   "meals_included": true,
-  "swim_waterfront_notes": "Camp Foster schedule lists swimming, open swim, boating and canoeing. Kidz Kamp goes to Camp Foster once a week for \"swimming sessions and pool activities.\" The page does not describe swim tests or lifeguard staffing.",
+  "refund_policy_summary": "The membership fee is not refundable. To cancel a week, email the Front Desk at least two weeks before it starts; a $10 per week per child fee applies. Later requests get no refund or transfer. A $25 deposit holds each week not paid in full.",
+  "swim_waterfront_notes": "Camp Foster's day includes swimming, open swim, boating and canoeing. Kidz Kamp visits Camp Foster once a week for swimming and pool activities. The camp's pages don't describe swim tests or lifeguarding.",
   "season_year": 2026,
   "price_per": "week",
   "sessions": [
     {
-      "name": "Kidz Kamp (Grades K-1), 10 weeks, $225/week",
+      "name": "Summer Program Week 1 (Kidz Kamp, Camp Foster or Tween/Teen Full Day)",
       "start_date": "2026-06-22",
-      "end_date": "2026-08-28",
-      "price": null,
+      "end_date": "2026-06-26",
+      "price": 225,
       "availability": "unknown"
     },
     {
-      "name": "Camp Foster (Grades 2-7), 10 weeks, $225/week",
-      "start_date": "2026-06-22",
-      "end_date": "2026-08-28",
-      "price": null,
+      "name": "Summer Program Week 2 (Kidz Kamp, Camp Foster or Tween/Teen Full Day)",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-02",
+      "price": 180,
       "availability": "unknown"
     },
     {
-      "name": "Tween & Teen Summer Program - Full Day (Grades 6-12), 10 weeks, $225/week",
-      "start_date": "2026-06-22",
-      "end_date": "2026-08-28",
-      "price": null,
-      "availability": "unknown"
-    },
-    {
-      "name": "STEM Launch Lab (Grades 5-8), 5 weeks, $325/week",
+      "name": "Summer Program Week 3 (Kidz Kamp, Camp Foster or Tween/Teen Full Day)",
       "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": 225,
+      "availability": "unknown"
+    },
+    {
+      "name": "Summer Program Week 4 (Kidz Kamp, Camp Foster or Tween/Teen Full Day)",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": 225,
+      "availability": "unknown"
+    },
+    {
+      "name": "Summer Program Week 5 (Kidz Kamp, Camp Foster or Tween/Teen Full Day)",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": 225,
+      "availability": "unknown"
+    },
+    {
+      "name": "Summer Program Week 6 (Kidz Kamp, Camp Foster or Tween/Teen Full Day)",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": 225,
+      "availability": "unknown"
+    },
+    {
+      "name": "Summer Program Week 7 (Kidz Kamp, Camp Foster or Tween/Teen Full Day)",
+      "start_date": "2026-08-03",
       "end_date": "2026-08-07",
-      "price": null,
+      "price": 225,
+      "availability": "unknown"
+    },
+    {
+      "name": "Summer Program Week 8 (Kidz Kamp, Camp Foster or Tween/Teen Full Day)",
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-14",
+      "price": 225,
+      "availability": "unknown"
+    },
+    {
+      "name": "Summer Program Week 9 (Kidz Kamp, Camp Foster or Tween/Teen Full Day)",
+      "start_date": "2026-08-17",
+      "end_date": "2026-08-21",
+      "price": 225,
+      "availability": "unknown"
+    },
+    {
+      "name": "Summer Program Week 10 (Kidz Kamp, Camp Foster or Tween/Teen Full Day)",
+      "start_date": "2026-08-24",
+      "end_date": "2026-08-28",
+      "price": 225,
+      "availability": "unknown"
+    },
+    {
+      "name": "STEM Launch Lab Week 1 (grades 5-8)",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": 325,
+      "availability": "unknown"
+    },
+    {
+      "name": "STEM Launch Lab Week 2 (grades 5-8)",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": 325,
+      "availability": "unknown"
+    },
+    {
+      "name": "STEM Launch Lab Week 3 (grades 5-8)",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": 325,
+      "availability": "unknown"
+    },
+    {
+      "name": "STEM Launch Lab Week 4 (grades 5-8)",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": 325,
+      "availability": "unknown"
+    },
+    {
+      "name": "STEM Launch Lab Week 5 (grades 5-8)",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": 325,
       "availability": "unknown"
     }
   ],
   "sources": [
     {
       "url": "https://www.bgcgm.org/programs/summer_programs/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -106,14 +185,22 @@
         "transportation",
         "meals_included",
         "financial_aid",
-        "swim_waterfront_notes",
+        "swim_waterfront_notes"
+      ]
+    },
+    {
+      "url": "https://bgcgm.org/wp-content/uploads/2026/02/2026-Summer-Program-Packet_General_Rev.-2.13.26.pdf",
+      "checked": "2026-11-13",
+      "fields": [
+        "email",
+        "refund_policy_summary",
         "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "STEM Launch Lab weeks and the $325 rate come from the camp's 2026 STEM Launch Lab packet: https://bgcgm.org/wp-content/uploads/2026/02/2026-Summer-Program-Packet_STEM-Launch-Lab_Rev.-3.3.26.pdf"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.bgcgm.org/programs/summer_programs/",
       "kind": "html",
@@ -161,6 +248,24 @@
         "quote": "5 weeks beginning July 6, 2026"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.bgcgm.org/programs/summer_programs/",
+        "https://bgcgm.org/wp-content/uploads/2026/02/2026-Summer-Program-Packet_General_Rev.-2.13.26.pdf",
+        "https://bgcgm.org/wp-content/uploads/2026/02/2026-Summer-Program-Packet_STEM-Launch-Lab_Rev.-3.3.26.pdf"
+      ],
+      "changes": [
+        "Replaced the four made-up session spans (end dates had been calculated) with the real weeks from the camp's 2026 registration packets: ten weeks 22 June to 28 August at $225 (week 2, 29 June to 2 July, is 4 days at $180), and STEM Launch Lab weeks 6 July to 7 August at $325.",
+        "Added the Front Desk email frontdesk@bgcgm.org and the cancellation policy from the 2026 Summer Program packet.",
+        "Checked grades (entering K to 12), hours, $225 and $325 weekly rates, extended care, buses, breakfast and dinner included, and the financial assistance form against the Summer Programs page; they match.",
+        "Swim note now names the Camp Foster pool and Kidz Kamp's weekly visit."
+      ],
+      "open_questions": [
+        "One listing covers several programs on three sites: Kidz Kamp and the teen program at the Union Street Clubhouse in Manchester, Camp Foster on 20 acres at 36 Camp Allen Road in Bedford (buses from Union Street), and STEM Launch Lab partly at SNHU. Keep it as one Manchester listing, or split Camp Foster into its own Bedford listing?",
+        "meals_included is true because breakfast and dinner are included; the page does not say whether lunch is."
+      ]
+    }
   }
 }

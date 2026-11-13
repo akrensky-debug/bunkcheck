@@ -13,7 +13,7 @@
   "sources": [
     {
       "url": "https://www.campdudley.org/apply/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "website_url",
@@ -29,7 +29,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "drop",
     "source": {
       "url": "https://www.campdudley.org/apply/",
       "kind": "html",
@@ -61,6 +61,18 @@
       "missing required camp_type",
       "camp_type must be one of ['day', 'sleepaway', 'specialty']",
       "city 'Westport', NY is not in cities.py"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.campdudley.org/apply/"
+      ],
+      "changes": [
+        "Dropped: the camp's own page gives its address as 126 Dudley Road, Westport, NY 12993, which is outside New England (and Westport, NY is not in cities.py)."
+      ],
+      "open_questions": [
+        "Its sister camp, Camp Kiniya for girls (1317 Camp Kiniya Road, Colchester, VT 05446, 802-893-7850, same application), is in Vermont and has no draft here. Add it as its own draft?"
+      ]
+    }
   }
 }

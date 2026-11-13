@@ -45,9 +45,9 @@
             },
             {
               "description": "Filter by logistics and budget",
-              "prompt": "Day camps in Boston with extended care for under $400 a week.",
+              "prompt": "Day camps near Providence with extended care for under $350 a week.",
               "tools_triggered": "search_camps",
-              "expected_behavior": "Calls search_camps with location 'Boston, MA', requires_extended_care true and max_price_per_week 400. Every card shown has extended care and a weekly price at or below $400, or the reply says none matched."
+              "expected_behavior": "Calls search_camps with location 'Providence, RI', requires_extended_care true and max_price_per_week 350. Every card shown has extended care and a weekly price at or below $350, or the reply says none matched."
             },
             {
               "description": "Fill a specific week",

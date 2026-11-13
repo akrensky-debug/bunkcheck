@@ -160,7 +160,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.unh.edu/youthprograms/course/tech-camp-week-1",
       "kind": "html",
@@ -205,6 +205,20 @@
         "quote": "All campers will have meals in a University dining hall."
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.unh.edu/youthprograms/course/tech-camp-week-1",
+        "https://www.unh.edu/youthprograms",
+        "https://www.unh.edu/"
+      ],
+      "changes": [
+        "No changes: www.unh.edu could not be reached (connection error on three tries), so no field was checked."
+      ],
+      "open_questions": [
+        "Couldn't fetch www.unh.edu, so nothing in this draft is checked against the camp's site. Recheck in a later wave? Also, the draft is one week of UNH Tech Camp (July 13-17, 2026, page then said 'currently unavailable'); should Tech Camp be one listing covering all weeks rather than 'Week 1'?"
+      ]
+    }
   }
 }

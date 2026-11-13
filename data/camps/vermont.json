@@ -1,6 +1,4448 @@
 {
   "metro": "Vermont",
-  "checked": "2026-10-13",
+  "checked": "2026-11-13",
   "notes": "Real listings from each camp's own website. Unverified until a camp confirms. Edit here and re-run: python -m campfinder.seed.import_real --check",
-  "camps": []
+  "camps": [
+    {
+      "slug": "artists-of-rokeby-ferrisburgh",
+      "name": "Artists of Rokeby Summer Camp",
+      "operator_name": "Rokeby Museum",
+      "website_url": "https://rokeby.org/event/rokeby-summer-camp-artists-of-rokeby-2026-session-1/",
+      "phone": "802.877.3406",
+      "street_address": "4334 Route 7",
+      "city": "Ferrisburgh",
+      "state": "VT",
+      "zip": "05456",
+      "season_year": 2026,
+      "sources": [
+        {
+          "url": "https://rokeby.org/event/rokeby-summer-camp-artists-of-rokeby-2026-session-1/",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "registration_url",
+            "email",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "primary_categories",
+            "secondary_categories",
+            "activities",
+            "age_min",
+            "age_max",
+            "description_short",
+            "price_min",
+            "price_max",
+            "price_per_week",
+            "price_per",
+            "financial_aid",
+            "meals_included",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ],
+      "registration_url": "https://rokeby.org/event/rokeby-summer-camp-artists-of-rokeby-2026-session-1/",
+      "email": "jahl@rokeby.org",
+      "camp_type": "day",
+      "primary_categories": [
+        "arts"
+      ],
+      "secondary_categories": [
+        "nature"
+      ],
+      "activities": [
+        "Sketching, scrapbooks and painting",
+        "Nature walks",
+        "Birdwatching",
+        "Animal tracking",
+        "History games",
+        "Final-day exhibition and pizza party"
+      ],
+      "age_min": 9,
+      "age_max": 13,
+      "description_short": "A 5-day art, nature and history day camp at Rokeby Museum, a historic farm site in Ferrisburgh, for ages 9 to 13. Campers study the Robinson family's sketches and paintings, take nature walks, birdwatch and track animals, then show their work on the last day. 9:00 am to 3:00 pm; bring lunch, snacks provided.",
+      "price_min": 350,
+      "price_max": 350,
+      "price_per_week": 350,
+      "price_per": "week",
+      "financial_aid": true,
+      "meals_included": false,
+      "sessions": [
+        {
+          "name": "Session 1",
+          "start_date": "2026-07-13",
+          "end_date": "2026-07-17",
+          "price": 350,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 2",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "price": 350,
+          "availability": "unknown"
+        }
+      ]
+    },
+    {
+      "slug": "camp-farnsworth-thetford-center",
+      "name": "Camp Farnsworth",
+      "operator_name": "Girl Scouts of the Green and White Mountains",
+      "website_url": "https://www.girlscoutsgwm.org/en/activities/camp-and-outdoors/farnsworth.html",
+      "email": "customercare@girlscoutsgwm.org",
+      "phone": "888-474-9686",
+      "street_address": "94 Camp Farnsworth Rd",
+      "city": "Thetford Center",
+      "state": "VT",
+      "zip": "05075",
+      "camp_type": "sleepaway",
+      "primary_categories": [
+        "nature",
+        "arts",
+        "sports",
+        "performing_arts"
+      ],
+      "grade_min": 0,
+      "description_short": "Girl Scout overnight camp in Thetford, Vermont, with themed programs from three days to two weeks for Girl Scouts who have finished kindergarten through grade 11. Campers sleep in cabins, tentalows, Adirondacks or platform tents, swim in a pool, canoe on a lake, and choose a focus such as archery, arts, cooking, climbing or leadership (Camp Aide, CIT).",
+      "activities": [
+        "swimming",
+        "canoeing",
+        "kayaking",
+        "paddleboarding",
+        "archery",
+        "slingshots",
+        "campfire cooking",
+        "arts and crafts",
+        "climbing tower",
+        "low ropes/challenge course",
+        "hiking",
+        "backpacking",
+        "horseback riding (off-site)",
+        "theater/performance",
+        "cooking",
+        "leadership (Camp Aide, CIT)"
+      ],
+      "price_min": 200,
+      "price_max": 2000,
+      "financial_aid": true,
+      "meals_included": true,
+      "refund_policy_summary": "A $100 deposit is due at registration and cannot be refunded. It is included in the listed session price. The page does not say whether the rest of the fee can be refunded.",
+      "special_needs_notes": "With advance notice, the kitchen can handle food allergies and other dietary needs. It serves gluten-free and vegetarian options and runs as a nut-aware kitchen. The page does not cover other disability accommodations.",
+      "swim_waterfront_notes": "Has a pool and a 50-acre lake (Lake Abenaki) with a waterfront. Activities include pool swimming, canoeing, kayaking and paddleboarding. The page does not give swim test or lifeguard details.",
+      "season_year": 2026,
+      "sessions": [
+        {
+          "name": "Daisy Sampler (grades K-1)",
+          "start_date": "2026-06-28",
+          "end_date": "2026-06-30",
+          "price": 375,
+          "availability": "unknown"
+        },
+        {
+          "name": "Brownie Sampler (grades 2-3)",
+          "start_date": "2026-06-28",
+          "end_date": "2026-06-30",
+          "price": 375,
+          "availability": "unknown"
+        },
+        {
+          "name": "Junior Sampler (grades 4-5)",
+          "start_date": "2026-06-28",
+          "end_date": "2026-06-30",
+          "price": 375,
+          "availability": "unknown"
+        },
+        {
+          "name": "Cadette Sampler (grades 6-8)",
+          "start_date": "2026-06-28",
+          "end_date": "2026-06-30",
+          "price": 375,
+          "availability": "unknown"
+        },
+        {
+          "name": "Daisy Sampler (grades K-1)",
+          "start_date": "2026-07-01",
+          "end_date": "2026-07-03",
+          "price": 375,
+          "availability": "unknown"
+        },
+        {
+          "name": "Brownie Sampler (grades 2-3)",
+          "start_date": "2026-07-01",
+          "end_date": "2026-07-03",
+          "price": 375,
+          "availability": "unknown"
+        },
+        {
+          "name": "Junior Sampler (grades 4-5)",
+          "start_date": "2026-07-01",
+          "end_date": "2026-07-03",
+          "price": 375,
+          "availability": "unknown"
+        },
+        {
+          "name": "Cadette Sampler (grades 6-8)",
+          "start_date": "2026-07-01",
+          "end_date": "2026-07-03",
+          "price": 375,
+          "availability": "unknown"
+        },
+        {
+          "name": "Stage Crew (grades 6-8)",
+          "start_date": "2026-06-28",
+          "end_date": "2026-07-03",
+          "price": 800,
+          "availability": "unknown"
+        },
+        {
+          "name": "Target Challenge (grades 6-8)",
+          "start_date": "2026-06-28",
+          "end_date": "2026-07-03",
+          "price": 800,
+          "availability": "unknown"
+        },
+        {
+          "name": "Grab Your Boots (grades 9-12)",
+          "start_date": "2026-06-28",
+          "end_date": "2026-07-03",
+          "price": 950,
+          "availability": "unknown"
+        },
+        {
+          "name": "A Bite of Adventure (grades 6-8)",
+          "start_date": "2026-07-05",
+          "end_date": "2026-07-17",
+          "price": 1800,
+          "availability": "unknown"
+        },
+        {
+          "name": "New Heights (grades 7-10)",
+          "start_date": "2026-07-05",
+          "end_date": "2026-07-17",
+          "price": 2000,
+          "availability": "unknown"
+        },
+        {
+          "name": "Counselor-in-Training (CIT) (grades 9-11)",
+          "start_date": "2026-07-05",
+          "end_date": "2026-07-17",
+          "price": 1500,
+          "availability": "unknown"
+        },
+        {
+          "name": "Fairy Explorers (grades 2-3)",
+          "start_date": "2026-07-05",
+          "end_date": "2026-07-10",
+          "price": 800,
+          "availability": "unknown"
+        },
+        {
+          "name": "Psyched to Swim (grades 4-5)",
+          "start_date": "2026-07-05",
+          "end_date": "2026-07-10",
+          "price": 800,
+          "availability": "unknown"
+        },
+        {
+          "name": "Spa Party (grades 4-5)",
+          "start_date": "2026-07-05",
+          "end_date": "2026-07-10",
+          "price": 800,
+          "availability": "unknown"
+        },
+        {
+          "name": "Cooking with Science (grades 6-8)",
+          "start_date": "2026-07-05",
+          "end_date": "2026-07-10",
+          "price": 800,
+          "availability": "unknown"
+        },
+        {
+          "name": "Bridge Weekend add-on (grades 2-12; must be registered for programs before and after)",
+          "start_date": "2026-07-10",
+          "end_date": "2026-07-12",
+          "price": 200,
+          "availability": "unknown"
+        },
+        {
+          "name": "Artistic Acrobats (grades 2-3)",
+          "start_date": "2026-07-12",
+          "end_date": "2026-07-17",
+          "price": 800,
+          "availability": "unknown"
+        },
+        {
+          "name": "In Motion (grades 4-5)",
+          "start_date": "2026-07-12",
+          "end_date": "2026-07-17",
+          "price": 890,
+          "availability": "unknown"
+        },
+        {
+          "name": "Cooking Adventure (grades 4-5)",
+          "start_date": "2026-07-12",
+          "end_date": "2026-07-17",
+          "price": 800,
+          "availability": "unknown"
+        },
+        {
+          "name": "Get on Board (grades 6-8)",
+          "start_date": "2026-07-12",
+          "end_date": "2026-07-17",
+          "price": 840,
+          "availability": "unknown"
+        },
+        {
+          "name": "Campfire Chef (grades 2-3)",
+          "start_date": "2026-07-19",
+          "end_date": "2026-07-24",
+          "price": 800,
+          "availability": "unknown"
+        },
+        {
+          "name": "In Motion (grades 4-5)",
+          "start_date": "2026-07-19",
+          "end_date": "2026-07-24",
+          "price": 890,
+          "availability": "unknown"
+        },
+        {
+          "name": "Midnight Mischief (grades 4-5)",
+          "start_date": "2026-07-19",
+          "end_date": "2026-07-24",
+          "price": 800,
+          "availability": "unknown"
+        },
+        {
+          "name": "Color Mania (grades 6-8)",
+          "start_date": "2026-07-19",
+          "end_date": "2026-07-24",
+          "price": 800,
+          "availability": "unknown"
+        },
+        {
+          "name": "Moonlight Mashup (grades 6-8)",
+          "start_date": "2026-07-19",
+          "end_date": "2026-07-24",
+          "price": 800,
+          "availability": "unknown"
+        },
+        {
+          "name": "Camp Aide (grades 9-10)",
+          "start_date": "2026-07-19",
+          "end_date": "2026-07-24",
+          "price": 800,
+          "availability": "unknown"
+        },
+        {
+          "name": "Summer Escapades (grades 9-12)",
+          "start_date": "2026-07-19",
+          "end_date": "2026-07-24",
+          "price": 1000,
+          "availability": "unknown"
+        },
+        {
+          "name": "CIT - Service Hours (grades 10-12)",
+          "start_date": "2026-07-19",
+          "end_date": "2026-07-24",
+          "price": 300,
+          "availability": "unknown"
+        },
+        {
+          "name": "Camp Out Loud! (grades 4-5)",
+          "start_date": "2026-07-26",
+          "end_date": "2026-08-05",
+          "price": 1525,
+          "availability": "unknown"
+        },
+        {
+          "name": "Artist Retreat (grades 6-8)",
+          "start_date": "2026-07-26",
+          "end_date": "2026-08-05",
+          "price": 1500,
+          "availability": "unknown"
+        },
+        {
+          "name": "H20 Is the Way to Go (grades 7-10)",
+          "start_date": "2026-07-26",
+          "end_date": "2026-08-05",
+          "price": 1575,
+          "availability": "unknown"
+        },
+        {
+          "name": "Craft Party (grades 4-5)",
+          "start_date": "2026-07-26",
+          "end_date": "2026-07-31",
+          "price": 800,
+          "availability": "unknown"
+        },
+        {
+          "name": "Midnight Mischief (grades 4-5)",
+          "start_date": "2026-07-26",
+          "end_date": "2026-07-31",
+          "price": 800,
+          "availability": "unknown"
+        },
+        {
+          "name": "Moonlight Mashup (grades 6-8)",
+          "start_date": "2026-07-26",
+          "end_date": "2026-07-31",
+          "price": 800,
+          "availability": "unknown"
+        },
+        {
+          "name": "CIT - Service Hours (grades 10-12)",
+          "start_date": "2026-07-26",
+          "end_date": "2026-07-31",
+          "price": 300,
+          "availability": "unknown"
+        },
+        {
+          "name": "Bridge Weekend add-on (grades 2-12; must be registered for programs before and after)",
+          "start_date": "2026-07-31",
+          "end_date": "2026-08-02",
+          "price": 200,
+          "availability": "unknown"
+        },
+        {
+          "name": "Splastastic (grades 2-3)",
+          "start_date": "2026-08-02",
+          "end_date": "2026-08-05",
+          "price": 525,
+          "availability": "unknown"
+        },
+        {
+          "name": "Glamping (grades 2-5)",
+          "start_date": "2026-08-02",
+          "end_date": "2026-08-05",
+          "price": 525,
+          "availability": "unknown"
+        },
+        {
+          "name": "In the Saddle (grades 4-5)",
+          "start_date": "2026-08-02",
+          "end_date": "2026-08-05",
+          "price": 615,
+          "availability": "unknown"
+        },
+        {
+          "name": "Climb On! (grades 6-8)",
+          "start_date": "2026-08-02",
+          "end_date": "2026-08-05",
+          "price": 565,
+          "availability": "unknown"
+        },
+        {
+          "name": "CIT - Service Hours (grades 10-12)",
+          "start_date": "2026-08-02",
+          "end_date": "2026-08-05",
+          "price": 200,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.girlscoutsgwm.org/en/activities/camp-and-outdoors/farnsworth.html",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "email",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "primary_categories",
+            "activities",
+            "grade_min",
+            "description_short",
+            "price_min",
+            "price_max",
+            "meals_included",
+            "financial_aid",
+            "refund_policy_summary",
+            "special_needs_notes",
+            "swim_waterfront_notes",
+            "sessions",
+            "gender_policy"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ],
+      "gender_policy": "girls"
+    },
+    {
+      "slug": "petra-cliffs-day-camps-classic-multi-sport-camp-and-climb-on-day-camp-burlington",
+      "name": "Petra Cliffs Day Camps (Classic Multi-Sport Camp & Climb On! Day Camp)",
+      "operator_name": "Petra Cliffs",
+      "website_url": "https://www.petracliffs.com/summat-day-camps",
+      "phone": "(802) 657-3872",
+      "street_address": "105 Briggs St.",
+      "city": "Burlington",
+      "state": "VT",
+      "zip": "05401",
+      "camp_type": "day",
+      "primary_categories": [
+        "sports",
+        "nature"
+      ],
+      "age_min": 6,
+      "age_max": 14,
+      "description_short": "Adventure day camps from a Burlington climbing gym and mountaineering school, 9 AM to 4 PM with extended care 8 to 9 and 4 to 5. The Classic Multi-Sport Camp (ages 6 to 14, ten weeks) mixes rock climbing, kayaking, caving and challenge courses; Climb On! (ages 10 to 14, two weeks) is small-group outdoor rock climbing with professional guides. $575 per week; scholarships available.",
+      "activities": [
+        "Indoor rock climbing",
+        "Outdoor rock climbing",
+        "Challenge course at Bolton Adventure Center",
+        "Kayaking",
+        "Caving"
+      ],
+      "price_per_week": 575,
+      "financial_aid": true,
+      "season_year": 2027,
+      "price_per": "week",
+      "sessions": [
+        {
+          "name": "Classic Multi-Sport Camp, Week 1",
+          "start_date": "2027-06-21",
+          "end_date": "2027-06-25",
+          "price": 575,
+          "availability": "unknown"
+        },
+        {
+          "name": "Classic Multi-Sport Camp, Week 2",
+          "start_date": "2027-06-28",
+          "end_date": "2027-07-02",
+          "price": 575,
+          "availability": "unknown"
+        },
+        {
+          "name": "Classic Multi-Sport Camp, Week 3",
+          "start_date": "2027-07-05",
+          "end_date": "2027-07-09",
+          "price": 575,
+          "availability": "unknown"
+        },
+        {
+          "name": "Classic Multi-Sport Camp, Week 4",
+          "start_date": "2027-07-12",
+          "end_date": "2027-07-16",
+          "price": 575,
+          "availability": "unknown"
+        },
+        {
+          "name": "Classic Multi-Sport Camp, Week 5",
+          "start_date": "2027-07-19",
+          "end_date": "2027-07-23",
+          "price": 575,
+          "availability": "unknown"
+        },
+        {
+          "name": "Classic Multi-Sport Camp, Week 6",
+          "start_date": "2027-07-26",
+          "end_date": "2027-07-30",
+          "price": 575,
+          "availability": "unknown"
+        },
+        {
+          "name": "Classic Multi-Sport Camp, Week 7",
+          "start_date": "2027-08-02",
+          "end_date": "2027-08-06",
+          "price": 575,
+          "availability": "unknown"
+        },
+        {
+          "name": "Classic Multi-Sport Camp, Week 8",
+          "start_date": "2027-08-09",
+          "end_date": "2027-08-13",
+          "price": 575,
+          "availability": "unknown"
+        },
+        {
+          "name": "Classic Multi-Sport Camp, Week 9",
+          "start_date": "2027-08-16",
+          "end_date": "2027-08-20",
+          "price": 575,
+          "availability": "unknown"
+        },
+        {
+          "name": "Classic Multi-Sport Camp, Week 10",
+          "start_date": "2027-08-23",
+          "end_date": "2027-08-27",
+          "price": 575,
+          "availability": "unknown"
+        },
+        {
+          "name": "Climb On! Day Camp (ages 10 to 14)",
+          "start_date": "2027-07-26",
+          "end_date": "2027-07-30",
+          "availability": "unknown"
+        },
+        {
+          "name": "Climb On! Day Camp (ages 10 to 14)",
+          "start_date": "2027-08-09",
+          "end_date": "2027-08-13",
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.petracliffs.com/summat-day-camps",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "registration_url",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "primary_categories",
+            "activities",
+            "age_min",
+            "age_max",
+            "price_per_week",
+            "price_per",
+            "price_min",
+            "price_max",
+            "financial_aid",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://www.petracliffs.com/day-camp-faqs",
+          "checked": "2026-11-13",
+          "fields": [
+            "extended_care",
+            "refund_policy_summary",
+            "description_short"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://www.petracliffs.com/s/2027-Registration-Scholarship-Guide.pdf",
+          "checked": "2026-11-13",
+          "fields": [
+            "email"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ],
+      "registration_url": "https://campscui.active.com/orgs/PetraCliffs4?orglink=camps-registration",
+      "email": "camps@petracliffs.com",
+      "extended_care": true,
+      "price_min": 575,
+      "price_max": 575,
+      "refund_policy_summary": "21 days or more before camp: full refund minus a $25 fee. 8 to 20 days: half refund minus $25. 7 days or fewer: no refund."
+    },
+    {
+      "slug": "smirkus-camp-greensboro",
+      "name": "Smirkus Camp",
+      "operator_name": "Circus Smirkus",
+      "website_url": "https://www.smirkus.org/smirkus-camp/camp-sessions/",
+      "registration_url": "http://app.campdoc.com/register/circussmirkus/",
+      "email": "camp@smirkus.org",
+      "phone": "802-533-2423",
+      "street_address": "409 Breezy Ave",
+      "city": "Greensboro",
+      "state": "VT",
+      "zip": "05841",
+      "camp_type": "specialty",
+      "primary_categories": [
+        "performing_arts"
+      ],
+      "age_min": 5,
+      "age_max": 18,
+      "description_short": "Circus arts camp in Greensboro, Vermont, offering a one-day program, overnight sessions and multi-week sleepaway sessions for ages 5-18. Training covers aerials, acrobatics, juggling and clowning, and some advanced sessions require a placement video.",
+      "activities": [
+        "trapeze",
+        "aerials",
+        "acrobatics",
+        "juggling",
+        "clowning",
+        "plate spinning",
+        "globe walking",
+        "act creation and performance",
+        "campfires",
+        "camp games"
+      ],
+      "price_min": 250,
+      "price_max": 5500,
+      "financial_aid": true,
+      "season_year": 2027,
+      "sessions": [
+        {
+          "name": "Smirkling for a Day",
+          "start_date": "2027-06-19",
+          "end_date": "2027-06-19",
+          "price": 250,
+          "availability": "unknown"
+        },
+        {
+          "name": "Smirkling Overnight",
+          "start_date": "2027-06-19",
+          "end_date": "2027-06-20",
+          "price": 495,
+          "availability": "unknown"
+        },
+        {
+          "name": "All Levels Circus Camp (1 week)",
+          "start_date": "2027-06-20",
+          "end_date": "2027-06-25",
+          "price": 1825,
+          "availability": "unknown"
+        },
+        {
+          "name": "All Levels Circus Camp (2 week)",
+          "start_date": "2027-06-27",
+          "end_date": "2027-07-09",
+          "price": 3650,
+          "availability": "unknown"
+        },
+        {
+          "name": "Intermediate Camp (2 weeks)",
+          "start_date": "2027-07-11",
+          "end_date": "2027-07-23",
+          "price": 3650,
+          "availability": "unknown"
+        },
+        {
+          "name": "Intermediate Skills Intensive (2 weeks, placement video)",
+          "start_date": "2027-07-11",
+          "end_date": "2027-07-23",
+          "price": 3850,
+          "availability": "unknown"
+        },
+        {
+          "name": "Advanced Ensemble (3 weeks, placement video)",
+          "start_date": "2027-07-25",
+          "end_date": "2027-08-13",
+          "price": 5225,
+          "availability": "unknown"
+        },
+        {
+          "name": "Advanced Individual Acts (3 weeks, placement video)",
+          "start_date": "2027-07-25",
+          "end_date": "2027-08-13",
+          "price": 5225,
+          "availability": "unknown"
+        },
+        {
+          "name": "Road Show (3 weeks, placement video)",
+          "start_date": "2027-07-25",
+          "end_date": "2027-08-14",
+          "price": 5500,
+          "availability": "unknown"
+        },
+        {
+          "name": "CIT Program (1 week)",
+          "start_date": "2027-06-20",
+          "end_date": "2027-06-25",
+          "price": 1825,
+          "availability": "unknown"
+        },
+        {
+          "name": "CIT Program (2 week)",
+          "start_date": "2027-07-11",
+          "end_date": "2027-07-23",
+          "price": 3650,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.smirkus.org/smirkus-camp/camp-sessions/",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "registration_url",
+            "email",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "primary_categories",
+            "activities",
+            "age_min",
+            "age_max",
+            "description_short",
+            "price_min",
+            "price_max",
+            "financial_aid",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ]
+    },
+    {
+      "slug": "tcc-summer-camp-woodstock",
+      "name": "TCC Summer Camp",
+      "operator_name": "The Community Campus",
+      "website_url": "https://www.thecommunitycampus.org/summer-camp/",
+      "phone": "603-322-1317",
+      "street_address": "281 Barnard Rd",
+      "city": "Woodstock",
+      "state": "VT",
+      "zip": "05091",
+      "camp_type": "day",
+      "primary_categories": [
+        "nature",
+        "sports"
+      ],
+      "age_min": 5,
+      "age_max": 12,
+      "description_short": "A weekly day camp in Woodstock, VT for ages 5–12. It runs 8am–4pm with optional late care until 5pm. Each week has a theme, such as hiking, plants, birding or unusual sports, and most weeks include field trips.",
+      "activities": [
+        "Hiking",
+        "Gardening",
+        "Birding",
+        "Rock climbing",
+        "Themed games",
+        "Field trips",
+        "Nature exploration"
+      ],
+      "price_per_week": 285,
+      "price_min": 65,
+      "price_max": 285,
+      "financial_aid": true,
+      "extended_care": true,
+      "meals_included": false,
+      "refund_policy_summary": "You must give 30 days' notice to withdraw. If you cancel within 30 days, you still pay in full for the registered days. Cancellations made earlier than that get at most a 50% refund. From May 15, absences are still charged under the 30-day policy. If enrollment is forfeited for unpaid late fees, no refund is given.",
+      "season_year": 2026,
+      "price_per": "week",
+      "sessions": [
+        {
+          "name": "Week 1: Cactuses & Cowpoke",
+          "start_date": "2026-06-22",
+          "end_date": "2026-06-26",
+          "price": 285,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 2: Snaggletooth Dragonfish",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "price": 285,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 3: Summit Seekers 3.0",
+          "start_date": "2026-07-13",
+          "end_date": "2026-07-17",
+          "price": 285,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 4: Plantastic",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "price": 285,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 5: Wings & Things",
+          "start_date": "2026-07-27",
+          "end_date": "2026-07-31",
+          "price": 285,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 6: Intergalactic Road trip",
+          "start_date": "2026-08-03",
+          "end_date": "2026-08-07",
+          "price": 285,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 7: Unusual Sports",
+          "start_date": "2026-08-10",
+          "end_date": "2026-08-14",
+          "price": 285,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 8: On a Roll",
+          "start_date": "2026-08-17",
+          "end_date": "2026-08-21",
+          "price": 285,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 9: Moonstruck",
+          "start_date": "2026-08-24",
+          "end_date": "2026-08-28",
+          "price": 285,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.thecommunitycampus.org/summer-camp/",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "primary_categories",
+            "activities",
+            "age_min",
+            "age_max",
+            "description_short",
+            "price_min",
+            "price_max",
+            "price_per_week",
+            "price_per",
+            "extended_care",
+            "meals_included",
+            "refund_policy_summary",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://www.thecommunitycampus.org/tuition-assistance/",
+          "checked": "2026-11-13",
+          "fields": [
+            "financial_aid"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ]
+    },
+    {
+      "slug": "bethany-birches-camp-summit-summit-mid-and-summit-high",
+      "name": "Bethany Birches Camp – Summit (Summit Mid & Summit High)",
+      "operator_name": "Bethany Birches Camp",
+      "website_url": "https://bethanybirches.org/summer-camps-summit/",
+      "registration_url": "https://bethanybirches.org/register-now/",
+      "phone": "802-672-5220",
+      "street_address": "2610 Lynds Hill Road",
+      "city": "Plymouth",
+      "state": "VT",
+      "zip": "05056",
+      "camp_type": "sleepaway",
+      "primary_categories": [
+        "outdoor"
+      ],
+      "age_min": 11,
+      "age_max": 16,
+      "description_short": "Summit is Bethany Birches Camp's overnight program for older campers in Plymouth, Vermont, with Sunday to Friday weeks: Summit Mid for ages 11-14 and Summit High for ages 13-16. Campers get more free time, spend time outdoors and cook meals over the fire. Families pick one of five price tiers; the two lowest are for households that qualify by income.",
+      "activities": [
+        "Creek hike",
+        "Cardboard boat race",
+        "Cooking over the fire",
+        "Iron Chef",
+        "Coffee House",
+        "Barn Party",
+        "Capture the flag",
+        "Free time"
+      ],
+      "price_min": 175,
+      "price_max": 865,
+      "financial_aid": true,
+      "season_year": 2026,
+      "sessions": [
+        {
+          "name": "Summit Mid (ages 11-14)",
+          "start_date": "2026-07-12",
+          "end_date": "2026-07-17",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Summit High (ages 13-16)",
+          "start_date": "2026-07-19",
+          "end_date": "2026-07-24",
+          "price": null,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://bethanybirches.org/summer-camps-summit/",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "camp_type",
+            "primary_categories",
+            "activities",
+            "age_min",
+            "age_max",
+            "description_short",
+            "price_min",
+            "price_max",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://bethanybirches.org/contact-us/",
+          "checked": "2026-11-13",
+          "fields": [
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://bethanybirches.org/register-now/",
+          "checked": "2026-11-13",
+          "fields": [
+            "registration_url"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://bethanybirches.org/kids-to-camp/",
+          "checked": "2026-11-13",
+          "fields": [
+            "financial_aid"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://bethanybirches.org/summer-camps/",
+          "checked": "2026-11-13",
+          "fields": [
+            "refund_policy_summary"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ],
+      "refund_policy_summary": "A $50 nonrefundable deposit holds a spot and counts toward the total. Full payment is due 3 weeks before the session. Cancel in writing 3 or more weeks ahead and the payment, less the deposit, stays on account for another program within a year. Later cancellations and no-shows get nothing back or forwarded."
+    },
+    {
+      "slug": "camp-akeela-thetford-center",
+      "name": "Camp Akeela",
+      "website_url": "https://campakeela.com/",
+      "phone": "802-333-4843",
+      "street_address": "1 Thoreau Way",
+      "city": "Thetford Center",
+      "state": "VT",
+      "zip": "05075",
+      "camp_type": "sleepaway",
+      "primary_categories": [
+        "special_needs",
+        "general"
+      ],
+      "activities": [
+        "Art",
+        "Ceramics",
+        "Cooking",
+        "Dance",
+        "Drama",
+        "Music",
+        "Rocketry",
+        "Woodshop",
+        "Canoeing",
+        "Kayaking",
+        "Sailing",
+        "Stand-up paddleboarding",
+        "Swim instruction",
+        "Archery",
+        "Basketball",
+        "Frisbee golf",
+        "Martial arts",
+        "Soccer",
+        "Softball",
+        "Tennis",
+        "Ropes courses and climbing wall",
+        "Farm and garden",
+        "Animal care",
+        "Day hikes",
+        "Overnight camping trips",
+        "Dungeons & Dragons",
+        "Campfires"
+      ],
+      "age_min": 9,
+      "age_max": 17,
+      "description_short": "Overnight camp for neurodivergent kids who have finished grades 3 to 10 (ages 9 to 17), on Miller Pond near Thetford Center, Vermont. Campers do a traditional camp program while staff coach social skills. Two three-week sessions in 2027; tuition is all-inclusive apart from baggage shipping and the optional ride home, and includes a one-way bus to camp.",
+      "price_min": 9900,
+      "price_max": 9900,
+      "financial_aid": true,
+      "transportation": true,
+      "special_needs_notes": "Built for neurodivergent campers, many with autism (Level 1), ADHD or NLD; no diagnosis is required. Campers must manage daily living with some prompting and live in a cabin of up to 9 campers with 4 counselors. The camp says it is not the right fit for kids who need one-to-one behavioral support or have a history of aggression, running away or recent psychiatric hospitalization. Families and directors decide fit together during the application.",
+      "season_year": 2027,
+      "sessions": [
+        {
+          "name": "Session 1",
+          "start_date": "2027-06-25",
+          "end_date": "2027-07-16",
+          "price": 9900,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 2",
+          "start_date": "2027-07-19",
+          "end_date": "2027-08-09",
+          "price": 9900,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://campakeela.com/dates-and-rates/",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "website_url",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "price_min",
+            "price_max",
+            "transportation",
+            "financial_aid",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://campakeela.com/about-us/",
+          "checked": "2026-11-13",
+          "fields": [
+            "primary_categories",
+            "description_short",
+            "special_needs_notes"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://campakeela.com/about-us/faqs/",
+          "checked": "2026-11-13",
+          "fields": [
+            "age_min",
+            "age_max"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://campakeela.com/about-us/activities-typical-day/",
+          "checked": "2026-11-13",
+          "fields": [
+            "activities"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://campakeela.com/about-us/payment-terms/",
+          "checked": "2026-11-13",
+          "fields": [
+            "refund_policy_summary"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ],
+      "refund_policy_summary": "$1,000 deposit with the application, refunded if camp or family decides the child won't attend. Half the balance is due January 31, 2027 and the rest April 30. Without the optional $500 assurance plan, everything is refundable less a $250 fee until January 31; after that cancellation fees rise from $2,500 to $6,000, and nothing is refunded from June 1. The assurance plan gives a fuller refund up to May 1 and partial credit after."
+    },
+    {
+      "slug": "camp-sangamon-for-boys-pittsford",
+      "name": "Camp Sangamon For Boys",
+      "website_url": "https://campsangamon.com/",
+      "registration_url": "https://campsangamon.com/wp-content/uploads/2026/08/Application-2027.pdf",
+      "email": "darcey@campsangamon.com",
+      "phone": "(802) 665-7505",
+      "street_address": "382 Camp Lane",
+      "city": "Pittsford",
+      "state": "VT",
+      "zip": "05763",
+      "camp_type": "sleepaway",
+      "primary_categories": [
+        "sports",
+        "arts",
+        "nature"
+      ],
+      "age_min": null,
+      "age_max": null,
+      "description_short": "Overnight camp for boys on a 200-acre hill farm with a spring-fed lake in Pittsford, Vermont, near Rutland and Killington. Campers live in cabins and do outdoor pursuits, aquatics, farming, creative arts and sports. In 2027 families book two-, three-, four- or five-week stays between June 27 and August 14.",
+      "activities": [
+        "Outdoor pursuits",
+        "Aquatics",
+        "Farming",
+        "Creative arts",
+        "Sports"
+      ],
+      "gender_policy": "boys",
+      "price_min": 3595,
+      "price_max": 8413,
+      "financial_aid": true,
+      "refund_policy_summary": "Deposit is $350 with the application, or $500 for early enrollment by December 31, which takes 3% off with the balance due March 1. Otherwise half the balance is due June 1 and the rest on arrival. Siblings get 3% off each child. If camp can't safely open, everything is refunded. Withdraw after March 15 and before May 1 and all payments beyond the deposit come back; no refunds after May 1.",
+      "season_year": 2027,
+      "sessions": [
+        {
+          "name": "Session 1 (3 weeks)",
+          "start_date": "2027-06-27",
+          "end_date": "2027-07-17",
+          "price": 5047,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 2 (2 weeks)",
+          "start_date": "2027-07-18",
+          "end_date": "2027-07-31",
+          "price": 3595,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 3A (2 weeks)",
+          "start_date": "2027-08-01",
+          "end_date": "2027-08-14",
+          "price": 3595,
+          "availability": "unknown"
+        },
+        {
+          "name": "Sessions 2 & 3A (4 weeks)",
+          "start_date": "2027-07-18",
+          "end_date": "2027-08-14",
+          "price": 6728,
+          "availability": "unknown"
+        },
+        {
+          "name": "Sessions 1 & 2 (5 weeks)",
+          "start_date": "2027-06-27",
+          "end_date": "2027-07-31",
+          "price": 8413,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://campsangamon.com/dates-rates/",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "website_url",
+            "email",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "primary_categories",
+            "activities",
+            "financial_aid"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://campsangamon.com/wp-content/uploads/2026/08/Dates-and-Rates-27.pdf",
+          "checked": "2026-11-13",
+          "fields": [
+            "price_min",
+            "price_max",
+            "refund_policy_summary",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://campsangamon.com/about-camp-sangamon/",
+          "checked": "2026-11-13",
+          "fields": [
+            "camp_type",
+            "gender_policy",
+            "meals_included",
+            "description_short"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://campsangamon.com/wp-content/uploads/2026/08/Application-2027.pdf",
+          "checked": "2026-11-13",
+          "fields": [
+            "registration_url"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ],
+      "meals_included": true
+    },
+    {
+      "slug": "hildene-summer-day-camps-manchester",
+      "name": "Hildene Summer Day Camps",
+      "operator_name": "Hildene, The Lincoln Family Home",
+      "website_url": "https://hildene.org/pages/day-camps",
+      "email": "lisa@hildene.org",
+      "phone": "802-362-1788",
+      "street_address": "1005 Hildene Road",
+      "city": "Manchester",
+      "state": "VT",
+      "zip": "05254",
+      "camp_type": "day",
+      "primary_categories": [
+        "nature",
+        "arts"
+      ],
+      "grade_min": 2,
+      "grade_max": 8,
+      "description_short": "Week-long nature, farm and art day camps (9am to 3pm) on the Hildene estate in Manchester, Vermont, for children entering grades 2 to 6, plus a two-week Youth Corps carpentry and farm program for youth entering grades 7 and 8. Members pay less; scholarships are available.",
+      "activities": [
+        "aquatic insect study",
+        "farm animal care",
+        "gardening and harvesting",
+        "goat dairy and cheese making",
+        "plant identification and foraging",
+        "forest ecology",
+        "art (drawing, painting, sculpture, weaving, felting)",
+        "carpentry",
+        "hikes",
+        "crafts",
+        "games",
+        "stories"
+      ],
+      "price_per_week": 375,
+      "price_min": 325,
+      "price_max": 525,
+      "financial_aid": true,
+      "season_year": 2026,
+      "price_per": "week",
+      "sessions": [
+        {
+          "name": "Nets, Buckets, and Boots",
+          "start_date": "2026-06-22",
+          "end_date": "2026-06-26",
+          "price": 375,
+          "availability": "full"
+        },
+        {
+          "name": "Farm Camp (Session 1)",
+          "start_date": "2026-06-29",
+          "end_date": "2026-07-03",
+          "price": 375,
+          "availability": "full"
+        },
+        {
+          "name": "Hildene Youth Corps: Creating Animal Enrichment (2 weeks)",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-17",
+          "price": 525,
+          "availability": "full"
+        },
+        {
+          "name": "The Wild and Wonderful World of Plants!",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "price": 375,
+          "availability": "full"
+        },
+        {
+          "name": "Art in Bloom: Garden & Art Explorers",
+          "start_date": "2026-07-13",
+          "end_date": "2026-07-17",
+          "price": 375,
+          "availability": "full"
+        },
+        {
+          "name": "Fabulous Forests",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "price": 375,
+          "availability": "unknown"
+        },
+        {
+          "name": "Eco-Explorer Camp",
+          "start_date": "2026-07-27",
+          "end_date": "2026-07-31",
+          "price": 375,
+          "availability": "full"
+        },
+        {
+          "name": "Farm Camp (Session 2)",
+          "start_date": "2026-08-03",
+          "end_date": "2026-08-07",
+          "price": 375,
+          "availability": "full"
+        },
+        {
+          "name": "Bug Bonanza",
+          "start_date": "2026-08-10",
+          "end_date": "2026-08-14",
+          "price": 375,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://hildene.org/pages/day-camps",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "email",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "primary_categories",
+            "activities",
+            "grade_min",
+            "grade_max",
+            "description_short",
+            "price_min",
+            "price_max",
+            "price_per_week",
+            "price_per",
+            "financial_aid",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ]
+    },
+    {
+      "slug": "point-counterpoint-youth-sessions-leicester",
+      "name": "Point CounterPoint Youth Sessions",
+      "operator_name": "Point CounterPoint",
+      "website_url": "https://pointcp.com/youth-sessions/",
+      "registration_url": "https://pointcp.com/youth-sessions/#apply",
+      "phone": "(267) 886-5359",
+      "street_address": "1361 Hooker Road",
+      "city": "Leicester",
+      "state": "VT",
+      "zip": "05733",
+      "camp_type": "sleepaway",
+      "primary_categories": [
+        "performing_arts"
+      ],
+      "age_min": 8,
+      "age_max": 19,
+      "description_short": "Overnight chamber music camp on Lake Dunmore in Leicester, Vermont, running since 1963. Five 2027 youth sessions, each with its own ages and music director: four two-week sessions for ages 11 to 19 and a one-week Prelude for ages 8 to 13. Days mix coachings, lessons, rehearsals and concerts with swimming, games and weekly trips.",
+      "activities": [
+        "Chamber music coachings",
+        "Private lessons",
+        "Masterclasses",
+        "Uncoached rehearsals",
+        "Music electives (audition techniques, sight-reading, fiddling)",
+        "Music theory and composition workshops",
+        "Camp choir",
+        "Concerts",
+        "Swimming",
+        "Soccer",
+        "Arts and crafts",
+        "Weekly field trips",
+        "Canoeing on Lake Dunmore (Fourth of July)"
+      ],
+      "swim_waterfront_notes": "The camp sits on the shore of Lake Dunmore. The daily schedule includes an optional early morning swim and afternoon swimming, and on the Fourth of July campers watch fireworks from canoes on the lake. The site doesn't describe waterfront supervision.",
+      "price_min": 2200,
+      "price_max": 4400,
+      "financial_aid": true,
+      "refund_policy_summary": "Once a camper is accepted, a $1,000 enrollment deposit counts toward tuition, and tuition is due in full by June 1. Withdraw by April 30 and half of what you've paid comes back; from May 1 all payments are forfeited.",
+      "season_year": 2027,
+      "sessions": [
+        {
+          "name": "Session 1 (ages 11-17)",
+          "start_date": "2027-06-27",
+          "end_date": "2027-07-10",
+          "price": 4400,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 2 (ages 13-18)",
+          "start_date": "2027-07-11",
+          "end_date": "2027-07-24",
+          "price": 4400,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 3 (ages 14-19)",
+          "start_date": "2027-07-25",
+          "end_date": "2027-08-07",
+          "price": 4400,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 4 (ages 11-16)",
+          "start_date": "2027-08-08",
+          "end_date": "2027-08-21",
+          "price": 4400,
+          "availability": "unknown"
+        },
+        {
+          "name": "Prelude (ages 8-13)",
+          "start_date": "2027-08-22",
+          "end_date": "2027-08-28",
+          "price": 2200,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://pointcp.com/youth-sessions/",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "registration_url",
+            "primary_categories",
+            "age_min",
+            "age_max",
+            "description_short",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://pointcp.com/tuition-and-financial-aid/",
+          "checked": "2026-11-13",
+          "fields": [
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "price_min",
+            "price_max",
+            "financial_aid",
+            "refund_policy_summary"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://pointcp.com/coming-to-camp/",
+          "checked": "2026-11-13",
+          "fields": [
+            "camp_type",
+            "activities",
+            "swim_waterfront_notes"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ]
+    },
+    {
+      "slug": "boys-and-girls-club-of-burlington-summer-camp-burlington",
+      "name": "Boys & Girls Club of Burlington Summer Camp",
+      "operator_name": "Boys & Girls Club of Burlington",
+      "website_url": "https://www.bandgclub.org/summercamp",
+      "email": "greatfutures@bandgclub.org",
+      "phone": "802-864-5263",
+      "street_address": "62 Oak Street",
+      "city": "Burlington",
+      "state": "VT",
+      "zip": "05401",
+      "camp_type": "day",
+      "primary_categories": [
+        "sports",
+        "academic",
+        "nature"
+      ],
+      "description_short": "An eight-week, full-day summer camp from the last week of June through late August, offered as two four-week sessions. Campers get meals and snacks, swimming lessons in the Club pool, tennis, outdoor exploration and help with summer learning plans. The Club says 90% of campers receive full scholarships.",
+      "activities": [
+        "swimming lessons",
+        "tennis",
+        "outdoor exploration",
+        "hands-on learning",
+        "summer learning / academic support"
+      ],
+      "financial_aid": true,
+      "meals_included": true,
+      "swim_waterfront_notes": "Swimming lessons and water safety in the Club pool. The handbook says each group swims up to twice a day, split between lessons, pool games and free swim, with at least four certified lifeguards on duty.",
+      "season_year": 2026,
+      "sources": [
+        {
+          "url": "https://www.bandgclub.org/summercamp",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "email",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "primary_categories",
+            "activities",
+            "description_short",
+            "meals_included",
+            "financial_aid"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://www.bandgclub.org/_files/ugd/7af1b2_1551361a54884b60b2875e44415299d7.pdf",
+          "checked": "2026-11-13",
+          "fields": [
+            "price_per_week",
+            "price_per",
+            "swim_waterfront_notes"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ],
+      "price_per_week": 50,
+      "price_per": "week"
+    },
+    {
+      "slug": "camp-hochelaga-south-hero",
+      "name": "Camp Hochelaga",
+      "operator_name": "YWCA Vermont",
+      "website_url": "https://ywcavt.org/camp-hochelaga-about",
+      "registration_url": "https://ywcavt.org/dates-rates-registration",
+      "email": "contactus@ywcavt.org",
+      "phone": "(802) 372-4510",
+      "street_address": "34 Hochelaga Rd",
+      "city": "South Hero",
+      "state": "VT",
+      "zip": "05486",
+      "camp_type": "sleepaway",
+      "grade_min": null,
+      "grade_max": null,
+      "description_short": "YWCA Vermont's inclusive girls+ camp in South Hero. It offers one-week overnight sessions (Sunday to Friday) plus a two-week session, weekly day camp with a free bus from Burlington and Milton, a one-week Mini-Camp that mixes day and overnight, and a 5-week Counselor in Training program. Tuition has three tiers, and the lower two are open to everyone.",
+      "activities": [
+        "Block classes (overnight campers)",
+        "Daily activity choices for day campers, such as basketball and paper puppets",
+        "Day camp sleepovers (one night per session)",
+        "Evening program",
+        "Changeover weekend trips: state park hikes, museums, indoor rock climbing, drive-in movies"
+      ],
+      "financial_aid": true,
+      "transportation": true,
+      "special_needs_notes": "Not a specialized medical or therapeutic camp, but the team includes a camper mental health specialist, and leaders are trained to work with youth with mental health needs, disabilities and learning disabilities. Families of campers with specific needs are asked to reach out first.",
+      "season_year": 2027,
+      "sessions": [
+        {
+          "name": "Day Camp DC0 (day camp only week)",
+          "start_date": "2027-06-21",
+          "end_date": "2027-06-25",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Day Camp DC1",
+          "start_date": "2027-06-28",
+          "end_date": "2027-07-02",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Day Camp DC2",
+          "start_date": "2027-07-05",
+          "end_date": "2027-07-09",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Day Camp DC3",
+          "start_date": "2027-07-12",
+          "end_date": "2027-07-16",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Day Camp DC4",
+          "start_date": "2027-07-19",
+          "end_date": "2027-07-23",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Day Camp DC5",
+          "start_date": "2027-07-26",
+          "end_date": "2027-07-30",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Day Camp DC6",
+          "start_date": "2027-08-02",
+          "end_date": "2027-08-06",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Day Camp DC7",
+          "start_date": "2027-08-09",
+          "end_date": "2027-08-13",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Day Camp DC8",
+          "start_date": "2027-08-16",
+          "end_date": "2027-08-20",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Overnight OC1",
+          "start_date": "2027-06-27",
+          "end_date": "2027-07-02",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Overnight OC2",
+          "start_date": "2027-07-04",
+          "end_date": "2027-07-09",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Overnight OC3",
+          "start_date": "2027-07-11",
+          "end_date": "2027-07-16",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Overnight OC4",
+          "start_date": "2027-07-18",
+          "end_date": "2027-07-23",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Overnight OC5",
+          "start_date": "2027-07-25",
+          "end_date": "2027-07-30",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Overnight OC6",
+          "start_date": "2027-08-01",
+          "end_date": "2027-08-06",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Overnight OC7 & OC8 (two weeks)",
+          "start_date": "2027-08-08",
+          "end_date": "2027-08-20",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Mini-Camp Session 1",
+          "start_date": "2027-06-21",
+          "end_date": "2027-06-25",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Mini-Camp Session 2",
+          "start_date": "2027-06-28",
+          "end_date": "2027-07-02",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Counselors in Training (5 weeks, rising 12th graders)",
+          "start_date": "2027-07-18",
+          "end_date": "2027-08-20",
+          "price": null,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://ywcavt.org/dates-rates-registration",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "operator_name",
+            "registration_url",
+            "email",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "price_min",
+            "price_max",
+            "price_per",
+            "transportation",
+            "financial_aid",
+            "refund_policy_summary",
+            "sessions",
+            "description_short"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://ywcavt.org/camp-hochelaga-about",
+          "checked": "2026-11-13",
+          "fields": [
+            "website_url",
+            "gender_policy",
+            "aca_accredited",
+            "aca_source_url"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://ywcavt.org/day-camp-1",
+          "checked": "2026-11-13",
+          "fields": [
+            "activities"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://ywcavt.org/who-we-serve",
+          "checked": "2026-11-13",
+          "fields": [
+            "special_needs_notes"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ],
+      "gender_policy": "girls",
+      "aca_accredited": true,
+      "aca_source_url": "https://ywcavt.org/camp-hochelaga-about",
+      "price_min": 450,
+      "price_max": 2850,
+      "price_per": "session",
+      "price_per_week": null,
+      "refund_policy_summary": "Cancel in writing or by phone at least two weeks before the camper arrives for a refund; less than two weeks before, no refund. The deposit is non-refundable (a Circle of Girls+ scholarship applicant who can no longer accept may get it back). Homesickness is not a reason for a refund."
+    },
+    {
+      "slug": "camp-ta-kum-ta",
+      "name": "Camp Ta-Kum-Ta",
+      "operator_name": "Camp Ta-Kum-Ta",
+      "website_url": "https://www.takumta.org/",
+      "registration_url": "https://takumta.campintouch.com/ui/forms/application/camper/App",
+      "email": "dina@takumta.org",
+      "phone": "802-372-5863",
+      "city": "South Hero",
+      "state": "VT",
+      "zip": "05486",
+      "camp_type": "sleepaway",
+      "primary_categories": [
+        "special_needs"
+      ],
+      "age_min": 7,
+      "age_max": 17,
+      "description_short": "A year-round camp in South Hero for children ages 7 to 17 who have or have had cancer and live in or are treated in Vermont (some programs also serve Northern New York). The main program is a one-week overnight summer camp (Sunday to Saturday); there are also winter weekends by age group, a siblings weekend and a camper exchange.",
+      "special_needs_notes": "For children ages 7-17 who have or have had cancer. Medical staff, many of them the same people who treat campers at the hospital, are at camp 24/7, and camp is about 15 minutes from UVM Medical Center. The FAQ says camp is free for children treated at UVM Medical Center and their families, including transportation from the hospital to summer camp, food, medical care and activities.",
+      "season_year": 2026,
+      "sessions": [
+        {
+          "name": "Winter Weekend – Middle (Ages 11-14)",
+          "start_date": "2026-01-16",
+          "end_date": "2026-01-18",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Winter Weekend – Youngest (Ages 7-10)",
+          "start_date": "2026-02-06",
+          "end_date": "2026-02-08",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Camper Exchange with Rapahope in Mobile, AL (age 17+, recent graduates)",
+          "start_date": "2026-02-20",
+          "end_date": "2026-02-22",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Winter Weekend – Oldest (Ages 15-17)",
+          "start_date": "2026-03-13",
+          "end_date": "2026-03-15",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Summer Camp",
+          "start_date": "2026-07-18",
+          "end_date": "2026-07-25",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Siblings Weekend",
+          "start_date": "2026-09-18",
+          "end_date": "2026-09-20",
+          "price": null,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.takumta.org/programs/tkt-programs/",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "operator_name",
+            "email",
+            "phone",
+            "camp_type",
+            "primary_categories",
+            "age_min",
+            "age_max",
+            "description_short",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://www.takumta.org/parents/register-a-camper/",
+          "checked": "2026-11-13",
+          "fields": [
+            "registration_url"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://www.takumta.org/",
+          "checked": "2026-11-13",
+          "fields": [
+            "website_url"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://www.takumta.org/about-us/directions-to-camp/",
+          "checked": "2026-11-13",
+          "fields": [
+            "street_address",
+            "city",
+            "state",
+            "zip"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://www.takumta.org/programs/camp-ta-kum-tas-summer-program/",
+          "checked": "2026-11-13",
+          "fields": [
+            "activities"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://www.takumta.org/parents/camper-faq/",
+          "checked": "2026-11-13",
+          "fields": [
+            "transportation",
+            "meals_included",
+            "special_needs_notes"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ],
+      "street_address": "77 Sunset View Road",
+      "activities": [
+        "Swimming",
+        "Athletics",
+        "Ropes course",
+        "Arts & crafts",
+        "Rock climbing",
+        "Hot-air balloon rides",
+        "Formal dances",
+        "Cruises on Lake Champlain"
+      ],
+      "transportation": true,
+      "meals_included": true
+    },
+    {
+      "slug": "community-sailing-center-youth-camps-burlington",
+      "name": "Community Sailing Center Youth Camps",
+      "operator_name": "Lake Champlain Community Sailing Center",
+      "website_url": "https://communitysailingcenter.org/youth-camps/",
+      "email": "info@communitysailingcenter.org",
+      "phone": "(802) 864-2499",
+      "street_address": "505 Lake Street",
+      "city": "Burlington",
+      "state": "VT",
+      "zip": "05401",
+      "camp_type": "day",
+      "primary_categories": [
+        "sports",
+        "nature",
+        "STEM"
+      ],
+      "age_min": 6,
+      "age_max": 16,
+      "description_short": "Week-long and two-week sailing day camps on Lake Champlain in Burlington, grouped by age and skill level. Some camps combine half a day of sailing with another activity such as yoga, swimming, art, tennis or paddleboarding.",
+      "activities": [
+        "Sailing (dinghies and keelboats)",
+        "Racing skills",
+        "Foiling (Waszp)",
+        "Kayaking",
+        "Canoeing",
+        "Paddleboarding",
+        "Yoga",
+        "Painting/art",
+        "Swimming",
+        "Tennis",
+        "Lake science/STEM",
+        "Pirates of the Champlain camp"
+      ],
+      "price_per_week": 565,
+      "price_min": 450,
+      "price_max": 1070,
+      "financial_aid": true,
+      "extended_care": true,
+      "swim_waterfront_notes": "Camps run on Lake Champlain. Campers and staff wear life jackets on docks and boats, and every camper does a short swim assessment on day one; knowing how to swim is not required to sail, but Level II and III need basic swimming proficiency. Water time depends on cyanobacteria; in a bloom campers stay out of the water and sail farther offshore. Swim & Sail campers take swim lessons in the Burlington Tennis Club pool.",
+      "season_year": 2026,
+      "price_per": "week",
+      "sessions": [
+        {
+          "name": "Little Guppies (Ages 6-7)",
+          "start_date": "2026-06-22",
+          "end_date": "2026-06-26",
+          "price": 595,
+          "availability": "unknown"
+        },
+        {
+          "name": "Little Guppies (Ages 6-7)",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "price": 595,
+          "availability": "unknown"
+        },
+        {
+          "name": "Little Guppies (Ages 6-7)",
+          "start_date": "2026-07-13",
+          "end_date": "2026-07-17",
+          "price": 595,
+          "availability": "unknown"
+        },
+        {
+          "name": "Little Guppies (Ages 6-7)",
+          "start_date": "2026-08-10",
+          "end_date": "2026-08-14",
+          "price": 595,
+          "availability": "unknown"
+        },
+        {
+          "name": "Little Guppies (Ages 6-7)",
+          "start_date": "2026-08-17",
+          "end_date": "2026-08-21",
+          "price": 595,
+          "availability": "unknown"
+        },
+        {
+          "name": "Little Guppies (Ages 6-7)",
+          "start_date": "2026-08-24",
+          "end_date": "2026-08-28",
+          "price": 595,
+          "availability": "unknown"
+        },
+        {
+          "name": "Artful Guppies (Ages 6-7)",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "price": 580,
+          "availability": "unknown"
+        },
+        {
+          "name": "Gumby Guppies (Ages 6-7)",
+          "start_date": "2026-07-27",
+          "end_date": "2026-07-31",
+          "price": 580,
+          "availability": "unknown"
+        },
+        {
+          "name": "Gumby Guppies (Ages 6-7)",
+          "start_date": "2026-08-03",
+          "end_date": "2026-08-07",
+          "price": 580,
+          "availability": "unknown"
+        },
+        {
+          "name": "Level I (Ages 8-10)",
+          "start_date": "2026-06-22",
+          "end_date": "2026-06-26",
+          "price": 565,
+          "availability": "unknown"
+        },
+        {
+          "name": "Level I (Ages 8-10)",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "price": 565,
+          "availability": "unknown"
+        },
+        {
+          "name": "Level I (Ages 8-10)",
+          "start_date": "2026-07-13",
+          "end_date": "2026-07-17",
+          "price": 565,
+          "availability": "unknown"
+        },
+        {
+          "name": "Level I (Ages 8-10)",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "price": 565,
+          "availability": "unknown"
+        },
+        {
+          "name": "Level I (Ages 8-10)",
+          "start_date": "2026-07-27",
+          "end_date": "2026-07-31",
+          "price": 565,
+          "availability": "unknown"
+        },
+        {
+          "name": "Level I (Ages 8-10)",
+          "start_date": "2026-08-03",
+          "end_date": "2026-08-07",
+          "price": 565,
+          "availability": "unknown"
+        },
+        {
+          "name": "Level I (Ages 8-10)",
+          "start_date": "2026-08-10",
+          "end_date": "2026-08-14",
+          "price": 565,
+          "availability": "unknown"
+        },
+        {
+          "name": "Level I (Ages 8-10)",
+          "start_date": "2026-08-17",
+          "end_date": "2026-08-21",
+          "price": 565,
+          "availability": "unknown"
+        },
+        {
+          "name": "Level I (Ages 11-15)",
+          "start_date": "2026-06-22",
+          "end_date": "2026-06-26",
+          "price": 595,
+          "availability": "unknown"
+        },
+        {
+          "name": "Level I (Ages 11-15)",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "price": 595,
+          "availability": "unknown"
+        },
+        {
+          "name": "Level I (Ages 11-15)",
+          "start_date": "2026-07-13",
+          "end_date": "2026-07-17",
+          "price": 595,
+          "availability": "unknown"
+        },
+        {
+          "name": "Level I (Ages 11-15)",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "price": 595,
+          "availability": "unknown"
+        },
+        {
+          "name": "Level I (Ages 11-15)",
+          "start_date": "2026-07-27",
+          "end_date": "2026-07-31",
+          "price": 595,
+          "availability": "unknown"
+        },
+        {
+          "name": "Level I (Ages 11-15)",
+          "start_date": "2026-08-03",
+          "end_date": "2026-08-07",
+          "price": 595,
+          "availability": "unknown"
+        },
+        {
+          "name": "Level I (Ages 11-15)",
+          "start_date": "2026-08-10",
+          "end_date": "2026-08-14",
+          "price": 595,
+          "availability": "unknown"
+        },
+        {
+          "name": "Level I (Ages 11-15)",
+          "start_date": "2026-08-17",
+          "end_date": "2026-08-21",
+          "price": 595,
+          "availability": "unknown"
+        },
+        {
+          "name": "Level II (Ages 9-11)",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-17",
+          "price": 1070,
+          "availability": "unknown"
+        },
+        {
+          "name": "Level II (Ages 9-11)",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-31",
+          "price": 1070,
+          "availability": "unknown"
+        },
+        {
+          "name": "Level II (Ages 9-11)",
+          "start_date": "2026-08-03",
+          "end_date": "2026-08-14",
+          "price": 1070,
+          "availability": "unknown"
+        },
+        {
+          "name": "Level II (Ages 12-16)",
+          "start_date": "2026-06-22",
+          "end_date": "2026-07-02",
+          "price": 1070,
+          "availability": "unknown"
+        },
+        {
+          "name": "Level II (Ages 12-16)",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-17",
+          "price": 1070,
+          "availability": "unknown"
+        },
+        {
+          "name": "Level II (Ages 12-16)",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-31",
+          "price": 1070,
+          "availability": "unknown"
+        },
+        {
+          "name": "Level II (Ages 12-16)",
+          "start_date": "2026-08-03",
+          "end_date": "2026-08-14",
+          "price": 1070,
+          "availability": "unknown"
+        },
+        {
+          "name": "Level III (Ages 12-16)",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-17",
+          "price": 1070,
+          "availability": "unknown"
+        },
+        {
+          "name": "Level III (Ages 12-16)",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-31",
+          "price": 1070,
+          "availability": "unknown"
+        },
+        {
+          "name": "Level III (Ages 12-16)",
+          "start_date": "2026-08-03",
+          "end_date": "2026-08-14",
+          "price": 1070,
+          "availability": "unknown"
+        },
+        {
+          "name": "Jr Big Boat (Ages 12-16)",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "price": 565,
+          "availability": "unknown"
+        },
+        {
+          "name": "Jr Big Boat (Ages 12-16)",
+          "start_date": "2026-08-03",
+          "end_date": "2026-08-07",
+          "price": 565,
+          "availability": "unknown"
+        },
+        {
+          "name": "Advanced Laser (Ages 12-16)",
+          "start_date": "2026-08-03",
+          "end_date": "2026-08-07",
+          "price": 565,
+          "availability": "unknown"
+        },
+        {
+          "name": "Waszp Foiling Camp (Ages 13-16)",
+          "start_date": "2026-08-17",
+          "end_date": "2026-08-21",
+          "price": 585,
+          "availability": "unknown"
+        },
+        {
+          "name": "Lake Adventure (Ages 8-10)",
+          "start_date": "2026-06-22",
+          "end_date": "2026-06-26",
+          "price": 565,
+          "availability": "unknown"
+        },
+        {
+          "name": "Lake Adventure (Ages 8-10)",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "price": 565,
+          "availability": "unknown"
+        },
+        {
+          "name": "Lake Adventure (Ages 8-10)",
+          "start_date": "2026-08-17",
+          "end_date": "2026-08-21",
+          "price": 565,
+          "availability": "unknown"
+        },
+        {
+          "name": "Lake Adventure (Ages 8-10)",
+          "start_date": "2026-08-24",
+          "end_date": "2026-08-28",
+          "price": 565,
+          "availability": "unknown"
+        },
+        {
+          "name": "Lake Adventure (Ages 11-15)",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "price": 565,
+          "availability": "unknown"
+        },
+        {
+          "name": "Lake Adventure (Ages 11-15)",
+          "start_date": "2026-07-27",
+          "end_date": "2026-07-31",
+          "price": 565,
+          "availability": "unknown"
+        },
+        {
+          "name": "Lake Adventure (Ages 11-15)",
+          "start_date": "2026-08-10",
+          "end_date": "2026-08-14",
+          "price": 565,
+          "availability": "unknown"
+        },
+        {
+          "name": "Lake Adventure (Ages 11-15)",
+          "start_date": "2026-08-24",
+          "end_date": "2026-08-28",
+          "price": 565,
+          "availability": "unknown"
+        },
+        {
+          "name": "Stars & Stripes | Little Guppies (Ages 6-7), 4 days",
+          "start_date": "2026-06-29",
+          "end_date": "2026-07-02",
+          "price": 475,
+          "availability": "unknown"
+        },
+        {
+          "name": "Stars & Stripes | Lake Adventure (Ages 8-10), 4 days",
+          "start_date": "2026-06-29",
+          "end_date": "2026-07-02",
+          "price": 450,
+          "availability": "unknown"
+        },
+        {
+          "name": "Stars & Stripes | Lake Adventure (Ages 11-15), 4 days",
+          "start_date": "2026-06-29",
+          "end_date": "2026-07-02",
+          "price": 450,
+          "availability": "unknown"
+        },
+        {
+          "name": "YoGirls (Ages 8-10)",
+          "start_date": "2026-07-27",
+          "end_date": "2026-07-31",
+          "price": 545,
+          "availability": "unknown"
+        },
+        {
+          "name": "YoGirls (Ages 8-10)",
+          "start_date": "2026-08-03",
+          "end_date": "2026-08-07",
+          "price": 545,
+          "availability": "unknown"
+        },
+        {
+          "name": "Sail & Paint (Ages 8-10)",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "price": 545,
+          "availability": "unknown"
+        },
+        {
+          "name": "Swim & Sail (Ages 8-10)",
+          "start_date": "2026-08-10",
+          "end_date": "2026-08-14",
+          "price": 555,
+          "availability": "unknown"
+        },
+        {
+          "name": "Racquets & Rudders (Ages 11-15)",
+          "start_date": "2026-08-10",
+          "end_date": "2026-08-14",
+          "price": 555,
+          "availability": "unknown"
+        },
+        {
+          "name": "Pirates of the Champlain (Ages 8-10)",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "price": 545,
+          "availability": "unknown"
+        },
+        {
+          "name": "Women in Science and Sailing (Ages 11-15)",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "price": 545,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://communitysailingcenter.org/youth-camps/",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "email",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "camp_type",
+            "primary_categories",
+            "activities",
+            "age_min",
+            "age_max",
+            "description_short",
+            "price_min",
+            "price_max",
+            "price_per_week",
+            "price_per",
+            "extended_care",
+            "financial_aid",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://communitysailingcenter.org/hours-location/",
+          "checked": "2026-11-13",
+          "fields": [
+            "zip"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://communitysailingcenter.org/youth-camp-guide/",
+          "checked": "2026-11-13",
+          "fields": [
+            "swim_waterfront_notes",
+            "meals_included"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ],
+      "meals_included": false
+    },
+    {
+      "slug": "hosmer-point-camp-craftsbury-common",
+      "name": "Hosmer Point Camp",
+      "operator_name": "Craftsbury Outdoor Center",
+      "website_url": "https://www.hosmerpoint.com",
+      "registration_url": "https://www.hosmerpoint.com/register",
+      "email": "office@hosmerpointcamp.org",
+      "phone": "802-586-2090",
+      "street_address": "76 Hosmer Point Lane",
+      "city": "Craftsbury Common",
+      "state": "VT",
+      "zip": "05827",
+      "camp_type": "sleepaway",
+      "age_min": 9,
+      "age_max": 15,
+      "grade_min": 3,
+      "grade_max": 9,
+      "description_short": "Overnight camp in Craftsbury Common, Vermont, with four 13-day sleepaway sessions for campers of all genders in grades 3-9 (ages 9-15 for homeschoolers or campers from outside the US). Tuition uses an honor-system sliding scale, and scholarship funds are available with no application.",
+      "financial_aid": true,
+      "season_year": 2027,
+      "sessions": [
+        {
+          "name": "Wild Branch",
+          "start_date": "2027-06-20",
+          "end_date": "2027-07-02",
+          "price": null,
+          "availability": "open"
+        },
+        {
+          "name": "Holiday Hill",
+          "start_date": "2027-07-04",
+          "end_date": "2027-07-16",
+          "price": null,
+          "availability": "open"
+        },
+        {
+          "name": "Black River",
+          "start_date": "2027-07-18",
+          "end_date": "2027-07-30",
+          "price": null,
+          "availability": "open"
+        },
+        {
+          "name": "Bayley Hazen",
+          "start_date": "2027-08-01",
+          "end_date": "2027-08-13",
+          "price": null,
+          "availability": "open"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.hosmerpoint.com/dates",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "registration_url",
+            "email",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "gender_policy",
+            "age_min",
+            "age_max",
+            "grade_min",
+            "grade_max",
+            "financial_aid",
+            "sessions",
+            "description_short"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://www.hosmerpoint.com/rates",
+          "checked": "2026-11-13",
+          "fields": [
+            "price_min",
+            "price_per"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://www.hosmerpoint.com/faq",
+          "checked": "2026-11-13",
+          "fields": [
+            "meals_included",
+            "transportation",
+            "special_needs_notes"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ],
+      "gender_policy": "coed",
+      "price_min": 700,
+      "price_max": null,
+      "price_per": "session",
+      "meals_included": true,
+      "transportation": true,
+      "special_needs_notes": "The camp aims to accommodate campers with medical, behavioral, mental health or developmental conditions when it can keep everyone safe, and asks families to get in touch before registering. Staff are not specifically trained for these needs, and campers are not under direct adult supervision at all times. A registered nurse lives on site."
+    },
+    {
+      "slug": "montshire-museum-of-science-summer-camp-norwich",
+      "name": "Montshire Museum of Science Summer Camp",
+      "operator_name": "Montshire Museum of Science",
+      "website_url": "https://montshire.org/programs/for-children-families/summer-camps/",
+      "email": "montshire@montshire.org",
+      "phone": "(802) 649-2200",
+      "street_address": "1 Montshire Road",
+      "city": "Norwich",
+      "state": "VT",
+      "zip": "05055",
+      "camp_type": "day",
+      "primary_categories": [
+        "STEM",
+        "nature"
+      ],
+      "description_short": "A science museum day camp running weekly sessions from 9am to 3:30pm. Each week has its own theme and includes hands-on exploration, experiments, observation, games and water play.",
+      "activities": [
+        "hands-on exploration",
+        "experiments",
+        "observation",
+        "games",
+        "water play"
+      ],
+      "financial_aid": true,
+      "extended_care": false,
+      "refund_policy_summary": "For 2026: cancel on or before June 1 for a full refund minus a $40 administrative fee. Cancel from June 2 up to 3 weeks before the session starts for a 50% refund minus the $40 fee. No refund less than 3 weeks before the session starts. Late pick-up costs $10 per 10 minutes, starting at 3:40.",
+      "season_year": 2026,
+      "sources": [
+        {
+          "url": "https://montshire.org/programs/for-children-families/summer-camps/",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "email",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "primary_categories",
+            "activities",
+            "description_short",
+            "extended_care",
+            "financial_aid",
+            "refund_policy_summary",
+            "registration_url"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ],
+      "registration_url": "https://montshire.campmanagement.com/p/request_for_info_m.php?action=enroll"
+    },
+    {
+      "slug": "stowe-rec-summer-camp-stowe",
+      "name": "Stowe Rec Summer Camp",
+      "operator_name": "Town of Stowe Parks & Recreation",
+      "website_url": "https://www.stowevt.gov/Departments/Parks-Recreation/Summer-Camp",
+      "registration_url": "https://secure.rec1.com/VT/stowe-vt/catalog/index/9bbeaf522d0c1fa9119d450692c86a3b?filter=c2VhcmNoPSZjYXRlZ29yeSU1QjMzMjk0JTVEPTE=",
+      "email": "recreation@stowevt.gov",
+      "phone": "(802) 253-7350",
+      "city": "Stowe",
+      "state": "VT",
+      "zip": "05672",
+      "camp_type": "day",
+      "primary_categories": [
+        "sports",
+        "arts",
+        "nature",
+        "STEM"
+      ],
+      "grade_min": 0,
+      "grade_max": 9,
+      "description_short": "A town-run day camp in Stowe, Vermont, for children who have finished kindergarten through 9th grade. It runs Monday to Friday, 7:45am to 4:15pm, with hiking, biking, water activities, camper-choice sports, arts and science, weekly themes and Friday field trips.",
+      "activities": [
+        "hiking",
+        "biking",
+        "water activities",
+        "sports",
+        "arts and expression",
+        "science",
+        "theme weeks",
+        "Friday field trips"
+      ],
+      "price_per_week": 255,
+      "price_min": 255,
+      "price_max": 1550,
+      "financial_aid": true,
+      "refund_policy_summary": "Cancel more than 30 days ahead: full refund minus a non-refundable $50 registration fee. Cancel 7–30 days ahead: 75% refund. Cancel with less than a week's notice: no refund.",
+      "season_year": 2026,
+      "price_per": "week",
+      "sessions": [
+        {
+          "name": "Full Camp (Kinders, Explorers, Innovators) – resident rate",
+          "start_date": "2026-06-29",
+          "end_date": "2026-08-14",
+          "price": 1450,
+          "availability": "unknown"
+        },
+        {
+          "name": "Full Camp (TREC, grades 6–9) – resident rate",
+          "start_date": "2026-06-29",
+          "end_date": "2026-08-14",
+          "price": 1500,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 1",
+          "start_date": "2026-06-29",
+          "end_date": "2026-07-03",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 2",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 3",
+          "start_date": "2026-07-13",
+          "end_date": "2026-07-17",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 4",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 5",
+          "start_date": "2026-07-27",
+          "end_date": "2026-07-31",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 6",
+          "start_date": "2026-08-03",
+          "end_date": "2026-08-07",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 7",
+          "start_date": "2026-08-10",
+          "end_date": "2026-08-14",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Specialty Camps (June)",
+          "start_date": "2026-06-22",
+          "end_date": "2026-06-26",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Specialty Camps (August)",
+          "start_date": "2026-08-17",
+          "end_date": "2026-08-21",
+          "price": null,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.stowevt.gov/Departments/Parks-Recreation/Summer-Camp",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "registration_url",
+            "email",
+            "phone",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "primary_categories",
+            "activities",
+            "grade_min",
+            "grade_max",
+            "description_short",
+            "price_min",
+            "price_max",
+            "price_per_week",
+            "price_per",
+            "financial_aid",
+            "refund_policy_summary",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ]
+    },
+    {
+      "slug": "brattleboro-music-center-summer-programs-brattleboro",
+      "name": "Brattleboro Music Center Summer Programs",
+      "operator_name": "Brattleboro Music Center",
+      "website_url": "https://bmcvt.org/summer-programs/",
+      "registration_url": null,
+      "email": "info@bmcvt.org",
+      "phone": "(802) 257-4523",
+      "street_address": "72 Blanche Moyse Way",
+      "city": "Brattleboro",
+      "state": "VT",
+      "zip": "05301",
+      "camp_type": "specialty",
+      "primary_categories": [
+        "performing_arts"
+      ],
+      "age_min": 6,
+      "age_max": 12,
+      "description_short": "A community music school in Brattleboro, VT, that runs Step it Down, a one-week morning camp of songs, dances, folktales and singing games for children ages 6 to 12. 2027 dates are not posted yet.",
+      "activities": [
+        "singing",
+        "dancing",
+        "storytelling",
+        "singing games"
+      ],
+      "season_year": 2027,
+      "sources": [
+        {
+          "url": "https://bmcvt.org/summer-programs/",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "email",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "primary_categories",
+            "activities",
+            "age_min",
+            "age_max",
+            "description_short"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ]
+    },
+    {
+      "slug": "camp-downer-sharon",
+      "name": "Camp Downer",
+      "website_url": "https://campdowner.com",
+      "registration_url": "https://campdowner.campbrainregistration.com",
+      "email": "registrar@campdowner.com",
+      "phone": "802-763-7007",
+      "street_address": "1535 Downer Road",
+      "city": "Sharon",
+      "state": "VT",
+      "zip": "05065",
+      "camp_type": "sleepaway",
+      "age_min": 8,
+      "age_max": 16,
+      "description_short": "Overnight summer camp in Sharon, Vermont for campers ages 8 to 16, with one-week sessions running Sunday to Friday and a two-week CIT II session for ages 11 to 16. Families pick one of three voluntary price tiers, and partial or full scholarships are available.",
+      "price_min": 560,
+      "price_max": 1540,
+      "financial_aid": true,
+      "season_year": 2026,
+      "sessions": [
+        {
+          "name": "Session 1",
+          "start_date": "2026-06-21",
+          "end_date": "2026-06-26",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 2",
+          "start_date": "2026-06-28",
+          "end_date": "2026-07-03",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 3 (two-week, CIT II)",
+          "start_date": "2026-07-05",
+          "end_date": "2026-07-17",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 4",
+          "start_date": "2026-07-19",
+          "end_date": "2026-07-24",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 5",
+          "start_date": "2026-07-26",
+          "end_date": "2026-07-31",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 6",
+          "start_date": "2026-08-02",
+          "end_date": "2026-08-07",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 7",
+          "start_date": "2026-08-09",
+          "end_date": "2026-08-14",
+          "price": null,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://campdowner.com/registration/",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "website_url",
+            "registration_url",
+            "email",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "age_min",
+            "age_max",
+            "description_short",
+            "price_min",
+            "price_max",
+            "financial_aid",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ]
+    },
+    {
+      "slug": "lake-champlain-maritime-museum-day-camps-vergennes",
+      "name": "Lake Champlain Maritime Museum Day Camps",
+      "operator_name": "Lake Champlain Maritime Museum",
+      "website_url": "https://www.lcmm.org/camps/day-camps/",
+      "email": "camps@lcmm.org",
+      "phone": "802-475-2022",
+      "street_address": "4472 Basin Harbor Road",
+      "city": "Vergennes",
+      "state": "VT",
+      "zip": "05491",
+      "camp_type": "day",
+      "primary_categories": [
+        "nature",
+        "STEM",
+        "arts"
+      ],
+      "age_min": 6,
+      "age_max": 16,
+      "description_short": "Week-long summer day camps for ages 6–16 run by a museum on Lake Champlain. Each camp is grouped by age and has one theme, such as fishing, watershed ecology, snorkeling, metalsmithing, boating, or building a kayak over three weeks. All tuition is pay-what-you-can.",
+      "activities": [
+        "fishing",
+        "hiking",
+        "canoeing",
+        "snorkeling",
+        "metalsmithing",
+        "swimming",
+        "sailing",
+        "rowing",
+        "kayaking",
+        "woodworking",
+        "boat building",
+        "nautical archaeology"
+      ],
+      "price_per_week": 400,
+      "price_min": 400,
+      "price_max": 2950,
+      "financial_aid": true,
+      "refund_policy_summary": "Cancel 14 or more days before the first day of the session for a full refund of the amount paid. After that, you may not get a full refund. Full Camp Participation Policies are on a separate page.",
+      "swim_waterfront_notes": "Camps take place on and around Lake Champlain. They include snorkeling (Watershed Ecology and Underwater Exploration), swimming in the lake, and canoeing, kayaking, sailing and rowing in the Museum's fleet of boats. The page says staff are trained in CPR/First Aid but does not mention lifeguard certification or swim tests.",
+      "season_year": 2026,
+      "price_per": "week",
+      "sessions": [
+        {
+          "name": "The Fish Camp – Session A",
+          "start_date": "2026-06-22",
+          "end_date": "2026-06-26",
+          "price": 400,
+          "availability": "unknown"
+        },
+        {
+          "name": "Kayak Building Camp",
+          "start_date": "2026-06-22",
+          "end_date": "2026-07-10",
+          "price": 2950,
+          "availability": "unknown"
+        },
+        {
+          "name": "The Fish Camp – Session B",
+          "start_date": "2026-06-29",
+          "end_date": "2026-07-03",
+          "price": 400,
+          "availability": "unknown"
+        },
+        {
+          "name": "Watershed Ecology Camp",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "price": 400,
+          "availability": "unknown"
+        },
+        {
+          "name": "Underwater Exploration Camp",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "price": 400,
+          "availability": "unknown"
+        },
+        {
+          "name": "Heavy Metal Mania Camp",
+          "start_date": "2026-07-27",
+          "end_date": "2026-07-31",
+          "price": 400,
+          "availability": "unknown"
+        },
+        {
+          "name": "Boats, Boats, Boats Camp",
+          "start_date": "2026-08-10",
+          "end_date": "2026-08-14",
+          "price": 400,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.lcmm.org/camps/day-camps/",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "email",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "primary_categories",
+            "activities",
+            "age_min",
+            "age_max",
+            "description_short",
+            "price_min",
+            "price_max",
+            "price_per_week",
+            "price_per",
+            "financial_aid",
+            "refund_policy_summary",
+            "swim_waterfront_notes",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ]
+    },
+    {
+      "slug": "night-eagle-wilderness-adventures-wallingford",
+      "name": "Night Eagle Wilderness Adventures",
+      "website_url": "https://www.nighteaglewilderness.com",
+      "registration_url": "https://www.nighteaglewilderness.com/dates-and-rates",
+      "email": "Bruce@nighteaglewilderness.com",
+      "phone": "(802) 353-4071",
+      "street_address": null,
+      "city": "Wallingford",
+      "state": "VT",
+      "zip": "05773",
+      "camp_type": "sleepaway",
+      "primary_categories": [
+        "outdoor",
+        "adventure"
+      ],
+      "description_short": "A small, primitive overnight camp for no more than 36 boys ages 10 to 14 near Wallingford, Vermont, where campers live in tipis without electronics. It is built around 3- to 6-week sessions, with 1- and 2-week options for young or new campers.",
+      "activities": [
+        "survival skills",
+        "target sports",
+        "waterfront",
+        "wilderness trips"
+      ],
+      "price_min": 1335,
+      "price_max": 5145,
+      "financial_aid": true,
+      "refund_policy_summary": "If notice of withdrawal reaches the camp office by May 1, tuition is refunded minus a $100 processing fee. After May 1 there are no refunds for withdrawals, session changes, late arrivals or no-shows. The one exception is documented physical illness of the camper, which gets back 50% of unused tuition. If illness or accident cuts a stay short, tuition is refunded pro rata. There is no refund if a camper is sent home for breaking camp rules or is withdrawn voluntarily. If the camp cancels a session, all money is refunded.",
+      "season_year": 2027,
+      "age_min": 10,
+      "age_max": 14,
+      "gender_policy": "boys",
+      "price_per": "session",
+      "sessions": [
+        {
+          "name": "1 Week Session",
+          "start_date": "2027-07-04",
+          "end_date": "2027-07-10",
+          "price": 1335,
+          "availability": "unknown"
+        },
+        {
+          "name": "1 Week Session",
+          "start_date": "2027-07-25",
+          "end_date": "2027-07-31",
+          "price": 1335,
+          "availability": "unknown"
+        },
+        {
+          "name": "2 Week Session",
+          "start_date": "2027-07-04",
+          "end_date": "2027-07-17",
+          "price": 2465,
+          "availability": "unknown"
+        },
+        {
+          "name": "2 Week Session",
+          "start_date": "2027-07-25",
+          "end_date": "2027-08-07",
+          "price": 2465,
+          "availability": "unknown"
+        },
+        {
+          "name": "3 Week Session",
+          "start_date": "2027-07-04",
+          "end_date": "2027-07-24",
+          "price": 3290,
+          "availability": "unknown"
+        },
+        {
+          "name": "3 Week Session",
+          "start_date": "2027-07-25",
+          "end_date": "2027-08-14",
+          "price": 3290,
+          "availability": "unknown"
+        },
+        {
+          "name": "4 Week Session",
+          "start_date": "2027-07-18",
+          "end_date": "2027-08-14",
+          "price": 3910,
+          "availability": "unknown"
+        },
+        {
+          "name": "6 Week Session",
+          "start_date": "2027-07-04",
+          "end_date": "2027-08-14",
+          "price": 5145,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.nighteaglewilderness.com/dates-and-rates",
+          "checked": "2026-11-13",
+          "fields": [
+            "registration_url",
+            "price_min",
+            "price_max",
+            "price_per",
+            "financial_aid",
+            "refund_policy_summary",
+            "activities",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://www.nighteaglewilderness.com/",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "website_url",
+            "camp_type",
+            "primary_categories",
+            "age_min",
+            "age_max",
+            "gender_policy",
+            "description_short"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://www.nighteaglewilderness.com/contact-us",
+          "checked": "2026-11-13",
+          "fields": [
+            "email",
+            "phone",
+            "city",
+            "state",
+            "zip"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ]
+    },
+    {
+      "slug": "shelburne-farms-summer-camps-shelburne",
+      "name": "Shelburne Farms Summer Camps",
+      "operator_name": "Shelburne Farms",
+      "website_url": "https://shelburnefarms.org/visit-and-learn/family-youth-programs",
+      "phone": "802-985-8686",
+      "street_address": "1611 Harbor Road",
+      "city": "Shelburne",
+      "state": "VT",
+      "zip": "05482",
+      "primary_categories": [
+        "nature"
+      ],
+      "age_min": 5,
+      "age_max": 17,
+      "description_short": "Week-long day camps, 9 am to 3 pm, for ages 5 to 14 on Shelburne Farms, a 1,400-acre working farm and education nonprofit in Shelburne, Vermont, plus a Sunday-to-Wednesday overnight for ages 14 to 17. Campers care for animals, harvest and cook from the gardens, and play in the forest, grouped by age.",
+      "activities": [
+        "goat hikes",
+        "bread and butter making",
+        "wool crafting",
+        "fort building",
+        "forest games",
+        "harvesting",
+        "visiting the dairy herd and sheep",
+        "cooking over the fire",
+        "nature crafts",
+        "lake shore exploring",
+        "pond exploration"
+      ],
+      "season_year": 2026,
+      "camp_type": "day",
+      "registration_url": "https://shelburnefarmssummercamp.campbrainregistration.com/Home/Landing",
+      "email": "registration@shelburnefarms.org",
+      "price_per_week": 325,
+      "price_min": 325,
+      "price_max": 800,
+      "price_per": "week",
+      "financial_aid": true,
+      "extended_care": true,
+      "sessions": [
+        {
+          "name": "Ages 5–6, Adventures Classroom at Farm Barn",
+          "start_date": "2026-06-22",
+          "end_date": "2026-06-26",
+          "price": 325,
+          "availability": "unknown"
+        },
+        {
+          "name": "Ages 7–8, Outdoor Classroom at Farm Barn",
+          "start_date": "2026-06-22",
+          "end_date": "2026-06-26",
+          "price": 325,
+          "availability": "unknown"
+        },
+        {
+          "name": "Ages 9–11, Coach Barn Forest",
+          "start_date": "2026-06-22",
+          "end_date": "2026-06-26",
+          "price": 325,
+          "availability": "unknown"
+        },
+        {
+          "name": "Ages 5–6, Adventures Classroom at Farm Barn",
+          "start_date": "2026-06-29",
+          "end_date": "2026-07-03",
+          "price": 325,
+          "availability": "unknown"
+        },
+        {
+          "name": "Ages 7–8, Outdoor Classroom at Farm Barn",
+          "start_date": "2026-06-29",
+          "end_date": "2026-07-03",
+          "price": 325,
+          "availability": "unknown"
+        },
+        {
+          "name": "Ages 9–11, Coach Barn Forest",
+          "start_date": "2026-06-29",
+          "end_date": "2026-07-03",
+          "price": 325,
+          "availability": "unknown"
+        },
+        {
+          "name": "Ages 5–6, Adventures Classroom at Farm Barn",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "price": 325,
+          "availability": "unknown"
+        },
+        {
+          "name": "Ages 7–8, Outdoor Classroom at Farm Barn",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "price": 325,
+          "availability": "unknown"
+        },
+        {
+          "name": "Ages 9–11, Coach Barn Forest",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "price": 325,
+          "availability": "unknown"
+        },
+        {
+          "name": "Ages 14–17, overnight at Coach Barn Forest",
+          "start_date": "2026-07-12",
+          "end_date": "2026-07-15",
+          "price": 800,
+          "availability": "unknown"
+        },
+        {
+          "name": "Ages 5–6, Adventures Classroom at Farm Barn",
+          "start_date": "2026-07-13",
+          "end_date": "2026-07-17",
+          "price": 325,
+          "availability": "unknown"
+        },
+        {
+          "name": "Ages 7–8, Outdoor Classroom at Farm Barn",
+          "start_date": "2026-07-13",
+          "end_date": "2026-07-17",
+          "price": 325,
+          "availability": "unknown"
+        },
+        {
+          "name": "Ages 12–14, Market Garden",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "price": 325,
+          "availability": "unknown"
+        },
+        {
+          "name": "Ages 6–8, Outdoor Classroom at Farm Barn",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "price": 325,
+          "availability": "unknown"
+        },
+        {
+          "name": "Ages 9–11, Coach Barn Forest",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "price": 325,
+          "availability": "unknown"
+        },
+        {
+          "name": "Ages 12–14, Market Garden",
+          "start_date": "2026-07-27",
+          "end_date": "2026-07-31",
+          "price": 325,
+          "availability": "unknown"
+        },
+        {
+          "name": "Ages 6–8, Outdoor Classroom at Farm Barn",
+          "start_date": "2026-07-27",
+          "end_date": "2026-07-31",
+          "price": 325,
+          "availability": "unknown"
+        },
+        {
+          "name": "Ages 9–11, Coach Barn Forest",
+          "start_date": "2026-07-27",
+          "end_date": "2026-07-31",
+          "price": 325,
+          "availability": "unknown"
+        },
+        {
+          "name": "Ages 12–14, Market Garden",
+          "start_date": "2026-08-03",
+          "end_date": "2026-08-07",
+          "price": 325,
+          "availability": "unknown"
+        },
+        {
+          "name": "Ages 6–8, Outdoor Classroom at Farm Barn",
+          "start_date": "2026-08-03",
+          "end_date": "2026-08-07",
+          "price": 325,
+          "availability": "unknown"
+        },
+        {
+          "name": "Ages 9–11, Coach Barn Forest",
+          "start_date": "2026-08-03",
+          "end_date": "2026-08-07",
+          "price": 325,
+          "availability": "unknown"
+        },
+        {
+          "name": "Ages 5–6, Adventures Classroom at Farm Barn",
+          "start_date": "2026-08-10",
+          "end_date": "2026-08-14",
+          "price": 325,
+          "availability": "unknown"
+        },
+        {
+          "name": "Ages 7–8, Outdoor Classroom at Farm Barn",
+          "start_date": "2026-08-10",
+          "end_date": "2026-08-14",
+          "price": 325,
+          "availability": "unknown"
+        },
+        {
+          "name": "Ages 9–11, Coach Barn Forest",
+          "start_date": "2026-08-10",
+          "end_date": "2026-08-14",
+          "price": 325,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://shelburnefarms.org/visit-and-learn/family-youth-programs",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "primary_categories",
+            "age_min",
+            "age_max"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://shelburnefarms.org/node/3376/2026-summer-camp-information",
+          "checked": "2026-11-13",
+          "fields": [
+            "registration_url",
+            "email",
+            "activities",
+            "financial_aid",
+            "description_short"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://shelburnefarms.org/node/3376/2026-summer-camp-information/camp-logistics",
+          "checked": "2026-11-13",
+          "fields": [
+            "camp_type",
+            "extended_care"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://shelburnefarms.org/sites/default/files/2026-02/2026%20Camps%20by%20Ages%20%285%20-%2017%29%20-%20Flyer%20%281%29%20%281%29.pdf",
+          "checked": "2026-11-13",
+          "fields": [
+            "sessions",
+            "price_per_week",
+            "price_min",
+            "price_max",
+            "price_per"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ]
+    },
+    {
+      "slug": "summer-camp-at-the-y-in-btv-burlington",
+      "name": "Summer Camp at the Y in BTV",
+      "operator_name": "Greater Burlington YMCA",
+      "website_url": "https://www.gbymca.org/programs/child-care-camps/summer-camps/gbymca-summer-camps/",
+      "registration_url": "https://operations.daxko.com/Online/3078/ProgramsV2/Search.mvc?keywords=&program_id=CMP21398333&expanded=categories%2Clocations&coming_soon=False&category_ids=CAT2576475&all_categories=false&location_ids=B400&all_locations=false&date_ranges%5B0%5D.start=&date_ranges%5B0%5D.end=&birth_dates=",
+      "phone": "802-862-9622",
+      "street_address": "298 College Street",
+      "city": "Burlington",
+      "state": "VT",
+      "zip": "05401",
+      "camp_type": "day",
+      "primary_categories": [
+        "arts",
+        "STEM",
+        "sports"
+      ],
+      "age_max": 10,
+      "description_short": "Weekday day camp at the Greater Burlington YMCA for kids who have finished kindergarten, up to age 10. Campers swim in the Y pool, do arts and crafts and STEAM activities, play games in the gym, and go on walking field trips around Burlington.",
+      "activities": [
+        "swimming",
+        "arts and crafts",
+        "STEAM activities",
+        "gym games",
+        "walking field trips",
+        "weekly field trips"
+      ],
+      "price_min": 375,
+      "price_max": 430,
+      "financial_aid": true,
+      "meals_included": false,
+      "refund_policy_summary": "The $30 registration fee and $25 weekly deposits are non-refundable. Cancellations and schedule changes must be made two weeks before camp starts, and full tuition is due May 1. If the Y cancels a whole week, the amount is credited to a later week or refunded; if a scholarship still leaves camp unaffordable and the family cancels, the fee and deposit are refunded.",
+      "swim_waterfront_notes": "Campers swim in the YMCA's indoor pool during the week. The page gives no details on swim testing or supervision.",
+      "season_year": 2026,
+      "price_per_week": 430,
+      "price_per": "week",
+      "email": "aisrael@gbymca.org",
+      "sessions": [
+        {
+          "name": "Week 1",
+          "start_date": "2026-06-22",
+          "end_date": "2026-06-26",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 2",
+          "start_date": "2026-06-29",
+          "end_date": "2026-07-03",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 3",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 4",
+          "start_date": "2026-07-13",
+          "end_date": "2026-07-17",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 5",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 6",
+          "start_date": "2026-07-27",
+          "end_date": "2026-07-31",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 7",
+          "start_date": "2026-08-03",
+          "end_date": "2026-08-07",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 8",
+          "start_date": "2026-08-10",
+          "end_date": "2026-08-14",
+          "price": null,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.gbymca.org/programs/child-care-camps/summer-camps/gbymca-summer-camps/",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "registration_url",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "camp_type",
+            "primary_categories",
+            "activities",
+            "age_max",
+            "description_short",
+            "price_min",
+            "price_max",
+            "meals_included",
+            "financial_aid",
+            "swim_waterfront_notes",
+            "sessions",
+            "price_per_week",
+            "price_per"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=298+College+Street&city=Burlington&state=VT&benchmark=Public_AR_Current&format=json",
+          "checked": "2026-11-13",
+          "fields": [
+            "zip"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://www.gbymca.org/wp-content/uploads/2026/01/2026-Camp-Financial-Policy.pdf",
+          "checked": "2026-11-13",
+          "fields": [
+            "email",
+            "refund_policy_summary"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ]
+    },
+    {
+      "slug": "ymca-camp-abnaki-day-camp-north-hero",
+      "name": "YMCA Camp Abnaki Day Camp",
+      "operator_name": "Greater Burlington YMCA",
+      "website_url": "https://campabnaki.org/summer-camp-options/day-camp/",
+      "registration_url": "https://www.ultracamp.com/clientlogin.aspx?idCamp=798&campCode=9rm",
+      "phone": "802-652-8180",
+      "street_address": "1252 Abnaki Road",
+      "city": "North Hero",
+      "state": "VT",
+      "zip": "05474",
+      "camp_type": "day",
+      "primary_categories": [
+        "sports",
+        "arts",
+        "nature"
+      ],
+      "grade_min": 0,
+      "grade_max": 4,
+      "description_short": "A weekday day camp for boys who have completed kindergarten through grade 4, held at YMCA Camp Abnaki in North Hero, VT. Boys swim, play group games and try activities like archery and arts and crafts, then go home each evening. Lunch, an afternoon snack and a bus from South Burlington are included.",
+      "activities": [
+        "swimming",
+        "archery",
+        "arts + crafts",
+        "small and large group games",
+        "volleyball",
+        "Gaga Ball",
+        "skills classes"
+      ],
+      "price_per_week": 525,
+      "price_min": 525,
+      "price_max": 525,
+      "financial_aid": true,
+      "transportation": true,
+      "meals_included": true,
+      "refund_policy_summary": "The $100 deposit for each session is non-refundable. Fees paid before the May 1 deadline are refunded, minus the deposit. After May 1, all payments are non-refundable, though the Camp Director may approve a pro-rated refund for a long illness or an accident. Cancellations must be made in writing. Homesickness, head lice and dismissal for behavior do not qualify for a refund.",
+      "swim_waterfront_notes": "There is daily waterfront time (free swim or volleyball). Certified lifeguards supervise all aquatic activities. The shore is rocky and has zebra mussels, so sandals or water shoes are strongly recommended.",
+      "season_year": 2027,
+      "price_per": "week",
+      "gender_policy": "boys",
+      "email": "info@campabnaki.org",
+      "sessions": [
+        {
+          "name": "Day Camp Session 1",
+          "start_date": "2027-06-28",
+          "end_date": "2027-07-02",
+          "price": 525,
+          "availability": "unknown"
+        },
+        {
+          "name": "Day Camp Session 2",
+          "start_date": "2027-07-05",
+          "end_date": "2027-07-09",
+          "price": 525,
+          "availability": "unknown"
+        },
+        {
+          "name": "Day Camp Session 3",
+          "start_date": "2027-07-12",
+          "end_date": "2027-07-16",
+          "price": 525,
+          "availability": "unknown"
+        },
+        {
+          "name": "Day Camp Session 4",
+          "start_date": "2027-07-19",
+          "end_date": "2027-07-23",
+          "price": 525,
+          "availability": "unknown"
+        },
+        {
+          "name": "Day Camp Session 5",
+          "start_date": "2027-07-26",
+          "end_date": "2027-07-30",
+          "price": 525,
+          "availability": "unknown"
+        },
+        {
+          "name": "Day Camp Session 6",
+          "start_date": "2027-08-02",
+          "end_date": "2027-08-06",
+          "price": 525,
+          "availability": "unknown"
+        },
+        {
+          "name": "Day Camp Session 7",
+          "start_date": "2027-08-09",
+          "end_date": "2027-08-13",
+          "price": 525,
+          "availability": "unknown"
+        },
+        {
+          "name": "Day Camp Session 8",
+          "start_date": "2027-08-16",
+          "end_date": "2027-08-20",
+          "price": 525,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://campabnaki.org/summer-camp-options/day-camp/",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "registration_url",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "camp_type",
+            "primary_categories",
+            "activities",
+            "grade_min",
+            "grade_max",
+            "description_short",
+            "price_min",
+            "price_max",
+            "price_per_week",
+            "price_per",
+            "transportation",
+            "meals_included",
+            "financial_aid",
+            "refund_policy_summary",
+            "swim_waterfront_notes",
+            "sessions",
+            "gender_policy",
+            "email"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=1252+Abnaki+Road&city=North+Hero&state=VT&benchmark=Public_AR_Current&format=json",
+          "checked": "2026-11-13",
+          "fields": [
+            "zip"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ]
+    },
+    {
+      "slug": "camp-lochearn-for-girls-post-mills",
+      "name": "Camp Lochearn for Girls",
+      "website_url": "https://www.camplochearn.com",
+      "email": "fun@camplochearn.com",
+      "phone": "802-333-4211",
+      "street_address": "1061 Robinson Hill Road, PO Box 44",
+      "city": "Post Mills",
+      "state": "VT",
+      "zip": "05058",
+      "camp_type": "sleepaway",
+      "description_short": "An overnight summer camp for girls ages 7 to 15 on Lake Fairlee in Post Mills, Vermont, founded in 1916. It offers two full sessions of about three and a half weeks, plus shorter \"Middler\" sessions of about two weeks for girls who have finished 4th grade or younger.",
+      "activities": [
+        "Horseback riding (English, optional add-on)",
+        "Swimming",
+        "Sailing",
+        "Canoeing",
+        "Kayaking",
+        "Paddleboarding",
+        "Waterskiing",
+        "Wakeboarding",
+        "Archery",
+        "Tennis",
+        "Soccer",
+        "Lacrosse",
+        "Field hockey",
+        "Gymnastics",
+        "Arts and crafts",
+        "Ceramics",
+        "Drama",
+        "Dance",
+        "Musical theatre",
+        "Climbing",
+        "Outdoor adventure",
+        "Culinary arts",
+        "Leadership training (ages 15-16)"
+      ],
+      "price_min": 6225,
+      "price_max": 10200,
+      "transportation": true,
+      "refund_policy_summary": "Payment terms: $2,500 deposit with application, $2,500 due by February 1, balance due by April 1. The page states no refund policy.",
+      "season_year": 2027,
+      "sessions": [
+        {
+          "name": "First Session",
+          "start_date": "2027-06-26",
+          "end_date": "2027-07-20",
+          "price": 10200,
+          "availability": "unknown"
+        },
+        {
+          "name": "Second Session",
+          "start_date": "2027-07-22",
+          "end_date": "2027-08-15",
+          "price": 10200,
+          "availability": "unknown"
+        },
+        {
+          "name": "Middler Session A",
+          "start_date": "2027-06-26",
+          "end_date": "2027-07-08",
+          "price": 6225,
+          "availability": "unknown"
+        },
+        {
+          "name": "Middler Session B",
+          "start_date": "2027-07-08",
+          "end_date": "2027-07-20",
+          "price": 6225,
+          "availability": "unknown"
+        },
+        {
+          "name": "Middler Session C",
+          "start_date": "2027-07-22",
+          "end_date": "2027-08-03",
+          "price": 6225,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.camplochearn.com/about-lochearn/dates-fees.php",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "website_url",
+            "email",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "price_min",
+            "price_max",
+            "transportation",
+            "refund_policy_summary",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://www.camplochearn.com/about-lochearn/camp-activities.php",
+          "checked": "2026-11-13",
+          "fields": [
+            "activities",
+            "age_min",
+            "age_max",
+            "gender_policy"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://www.camplochearn.com/about-lochearn/faqs.php",
+          "checked": "2026-11-13",
+          "fields": [
+            "description_short",
+            "meals_included",
+            "aca_accredited",
+            "aca_source_url"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://www.camplochearn.com/apply.php",
+          "checked": "2026-11-13",
+          "fields": [
+            "registration_url"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ],
+      "registration_url": "https://www.camplochearn.com/apply.php",
+      "gender_policy": "girls",
+      "age_min": 7,
+      "age_max": 15,
+      "meals_included": true,
+      "aca_accredited": true,
+      "aca_source_url": "https://www.camplochearn.com/about-lochearn/faqs.php"
+    },
+    {
+      "slug": "capital-kids-summer-day-camp-montpelier",
+      "name": "Capital Kids Summer Day Camp",
+      "operator_name": "Montpelier Recreation (City of Montpelier Community Services Department)",
+      "website_url": "https://montpelier-vt.org/843/Capital-Kids-Day-Camp",
+      "registration_url": "https://vtmontpelierweb.myvscloud.com/webtrac/web/",
+      "phone": "(802) 225-8699",
+      "street_address": "Montpelier Recreation Area, Elm St.",
+      "city": "Montpelier",
+      "state": "VT",
+      "zip": "05602",
+      "camp_type": "day",
+      "primary_categories": [
+        "arts",
+        "sports",
+        "nature",
+        "STEM"
+      ],
+      "age_min": 6,
+      "age_max": 12,
+      "grade_min": 1,
+      "grade_max": 6,
+      "description_short": "City-run licensed day camp for grades 1-6 (ages 6-12) at the Montpelier Recreation Area, running eight one-week themed sessions, 7:45am to 4:45pm, with arts and crafts, games and sports, STEAM projects and daily pool trips. Thursdays have a field trip or a specialty workshop.",
+      "activities": [
+        "arts & crafts",
+        "games & sports",
+        "STEAM projects",
+        "team building",
+        "swimming (daily pool trips)",
+        "nature hikes",
+        "field trips",
+        "specialty workshops",
+        "circus skills"
+      ],
+      "price_per_week": 175,
+      "price_min": 100,
+      "price_max": 225,
+      "financial_aid": true,
+      "refund_policy_summary": "You must submit the Cancellation Form to the Rec Center before June 12 to get a refund, minus a $50 administrative fee. Cancellations after June 12 get a 50% refund. If you book more than two weeks, you pay two weeks up front, half the balance by April 17 and the rest by June 12. Campers whose balance isn't paid by June 12 are taken off the roster.",
+      "swim_waterfront_notes": "Daily trips to the Montpelier city pool are included in the registration fee.",
+      "season_year": 2026,
+      "price_per": "week",
+      "sessions": [
+        {
+          "name": "Session 1 (#1301)",
+          "start_date": "2026-06-22",
+          "end_date": "2026-06-26",
+          "price": 175,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 2 (#1302)",
+          "start_date": "2026-06-29",
+          "end_date": "2026-07-03",
+          "price": 175,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 3 (#1303)",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "price": 175,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 5 (#1305)",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "price": 175,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 6 (#1306)",
+          "start_date": "2026-07-27",
+          "end_date": "2026-07-31",
+          "price": 175,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 7 (#1307)",
+          "start_date": "2026-08-03",
+          "end_date": "2026-08-07",
+          "price": 175,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 8 (#1308)",
+          "start_date": "2026-08-10",
+          "end_date": "2026-08-14",
+          "price": 175,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://montpelier-vt.org/843/Capital-Kids-Day-Camp",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "registration_url",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "camp_type",
+            "primary_categories",
+            "activities",
+            "age_min",
+            "age_max",
+            "grade_min",
+            "grade_max",
+            "description_short",
+            "price_min",
+            "price_max",
+            "price_per_week",
+            "price_per",
+            "financial_aid",
+            "refund_policy_summary",
+            "swim_waterfront_notes",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://montpelier-vt.org/Directory.aspx?DID=29",
+          "checked": "2026-11-13",
+          "fields": [
+            "zip"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ]
+    },
+    {
+      "slug": "lost-nation-theater-intermediate-camps-montpelier",
+      "name": "Lost Nation Theater Intermediate Camps",
+      "operator_name": "Lost Nation Theater",
+      "website_url": "https://lostnationtheater.org/intermediate-camps/",
+      "phone": "(802) 229-0492",
+      "street_address": "39 Main Street",
+      "city": "Montpelier",
+      "state": "VT",
+      "zip": "05602",
+      "camp_type": "specialty",
+      "primary_categories": [
+        "performing_arts"
+      ],
+      "age_min": 9,
+      "description_short": "One-week, full-day theater camps for ages 9 and up with some prior experience, run by Lost Nation Theater at Montpelier City Hall. Summer 2027 is a musical theater production intensive, Annie (kids), ending in four public performances.",
+      "activities": [
+        "Musical theater",
+        "Theater",
+        "Comedy",
+        "Stage combat",
+        "Storytelling",
+        "Dance-theater",
+        "Public performances"
+      ],
+      "price_min": 625,
+      "price_max": 625,
+      "financial_aid": true,
+      "refund_policy_summary": "All sales final. A 50% non-refundable deposit is required, and the balance is due two weeks before the first day. No refunds once classes begin. Before the start date, partial refunds may be available on a time-based sliding scale.",
+      "season_year": 2027,
+      "sources": [
+        {
+          "url": "https://lostnationtheater.org/intermediate-camps/",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "primary_categories",
+            "activities",
+            "age_min",
+            "price_min",
+            "price_max",
+            "financial_aid",
+            "refund_policy_summary",
+            "registration_url"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://lostnationtheater.org/intermediate-camps/2027-summer-musical-theater-production-intensive-annie-kids/",
+          "checked": "2026-11-13",
+          "fields": [
+            "age_max",
+            "description_short",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ],
+      "age_max": 18,
+      "registration_url": "https://lostnationtheater.org/intermediate-camps/education-program-registration-form/",
+      "sessions": [
+        {
+          "name": "Summer Musical Theater Production Intensive: Annie (kids)",
+          "start_date": "2027-06-19",
+          "end_date": "2027-06-27",
+          "price": 625,
+          "availability": "unknown"
+        }
+      ]
+    },
+    {
+      "slug": "north-branch-nature-center-summer-camps-montpelier",
+      "name": "North Branch Nature Center Summer Camps",
+      "operator_name": "North Branch Nature Center",
+      "website_url": "https://northbranchnaturecenter.org/youth-programs/camps",
+      "phone": "802-229-6206",
+      "street_address": "713 Elm Street",
+      "city": "Montpelier",
+      "state": "VT",
+      "zip": "05602",
+      "camp_type": "day",
+      "primary_categories": [
+        "nature"
+      ],
+      "grade_max": 7,
+      "description_short": "Nature-based outdoor day camps run by Teacher-Naturalists for children in PreK through 7th grade, held at North Branch Nature Center in Montpelier. Campers spend their days outside exploring, playing games, hearing stories and doing crafts.",
+      "activities": [
+        "Nature exploration",
+        "Loose parts play",
+        "Nature Museum",
+        "Arts and crafts",
+        "Tag games",
+        "Stories",
+        "Sit spots",
+        "Songs and circles"
+      ],
+      "financial_aid": true,
+      "extended_care": true,
+      "transportation": true,
+      "refund_policy_summary": "2026 policy: cancel by March 31 for a refund minus a $20 fee. Cancel April 1–May 31 for a refund minus a $50 fee. No refunds on or after June 1, though emergency exceptions may be granted. No partial refunds for missed days. Full refund if NBNC cancels the camp.",
+      "season_year": 2026,
+      "sessions": [
+        {
+          "name": "Hillside History (Grades 4-7)",
+          "start_date": "2026-06-29",
+          "end_date": "2026-07-02",
+          "price": 370,
+          "availability": "unknown"
+        },
+        {
+          "name": "The Legend of the Loon (Grades 4-7)",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "price": 460,
+          "availability": "unknown"
+        },
+        {
+          "name": "North Branch Naturalists (Grades 4-7)",
+          "start_date": "2026-07-27",
+          "end_date": "2026-07-31",
+          "price": 460,
+          "availability": "unknown"
+        },
+        {
+          "name": "Animal Engineers (Grades 1-3)",
+          "start_date": "2026-06-29",
+          "end_date": "2026-07-02",
+          "price": 310,
+          "availability": "unknown"
+        },
+        {
+          "name": "On the Wing (Grades 1-3)",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "price": 385,
+          "availability": "unknown"
+        },
+        {
+          "name": "Camp BranchOUT (with Outright Vermont, ages 10-12)",
+          "start_date": "2026-08-10",
+          "end_date": "2026-08-14",
+          "price": 485,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://northbranchnaturecenter.org/youth-programs/camps",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "primary_categories",
+            "activities",
+            "grade_max",
+            "description_short",
+            "extended_care",
+            "transportation",
+            "financial_aid",
+            "refund_policy_summary",
+            "sessions",
+            "price_per"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://north-branch-nature-center.jumbula.com/SummerCamp2026/AnimalEngineers",
+          "checked": "2026-11-13",
+          "fields": [
+            "price_min"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://north-branch-nature-center.jumbula.com/CampBranchOUT2026/CampBranchOUT2026",
+          "checked": "2026-11-13",
+          "fields": [
+            "price_max"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ],
+      "price_min": 310,
+      "price_max": 485,
+      "price_per": "session"
+    },
+    {
+      "slug": "shelburne-parks-and-recreation-summer-camps-shelburne",
+      "name": "Shelburne Parks and Recreation Summer Camps",
+      "operator_name": "Shelburne Parks and Recreation",
+      "website_url": "https://www.shelburnevt.org/160/Parks-Recreation",
+      "city": "Shelburne",
+      "state": "VT",
+      "zip": "05482",
+      "camp_type": "day",
+      "primary_categories": [
+        "sports",
+        "STEM"
+      ],
+      "age_min": 4,
+      "grade_min": 0,
+      "grade_max": 12,
+      "description_short": "A town recreation program of week-long, half-day camps, each focused on one activity, such as tennis, baseball, soccer, rocketry or STEAM. Ages and grades depend on the camp, from age 4 up to entering 12th grade.",
+      "activities": [
+        "Tennis",
+        "Baseball",
+        "Rocketry",
+        "Soccer",
+        "Field hockey",
+        "Basketball",
+        "Ultimate frisbee",
+        "Dinosaur science",
+        "STEAM"
+      ],
+      "price_min": 175,
+      "price_max": 340,
+      "season_year": 2026,
+      "sessions": [
+        {
+          "name": "High Performance Tennis Camp (2:30-5pm)",
+          "start_date": "2026-06-22",
+          "end_date": "2026-06-26",
+          "price": 230,
+          "availability": "unknown"
+        },
+        {
+          "name": "Baseball Camp (9am-12pm)",
+          "start_date": "2026-06-22",
+          "end_date": "2026-06-26",
+          "price": 225,
+          "availability": "unknown"
+        },
+        {
+          "name": "Rocketry Camp (8-11:30am)",
+          "start_date": "2026-06-29",
+          "end_date": "2026-07-03",
+          "price": 310,
+          "availability": "unknown"
+        },
+        {
+          "name": "Redhawk Soccer Camp (9am-12pm)",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "price": 230,
+          "availability": "unknown"
+        },
+        {
+          "name": "Field Hockey Camp (8:30-11:30am)",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "price": 175,
+          "availability": "unknown"
+        },
+        {
+          "name": "Basketball Camp (9am-12pm)",
+          "start_date": "2026-07-13",
+          "end_date": "2026-07-17",
+          "price": 205,
+          "availability": "unknown"
+        },
+        {
+          "name": "Tennis Camp (9-11:30am)",
+          "start_date": "2026-07-13",
+          "end_date": "2026-07-17",
+          "price": 230,
+          "availability": "unknown"
+        },
+        {
+          "name": "Ultimate Frisbee Camp (9am-12pm)",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "price": 180,
+          "availability": "unknown"
+        },
+        {
+          "name": "Tennis Camp (9-11:30am)",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "price": 230,
+          "availability": "unknown"
+        },
+        {
+          "name": "Dinosaur Adventure Camp (9am-12pm)",
+          "start_date": "2026-07-27",
+          "end_date": "2026-07-31",
+          "price": 340,
+          "availability": "unknown"
+        },
+        {
+          "name": "Hogwarts STEAM Express (9am-12pm)",
+          "start_date": "2026-08-03",
+          "end_date": "2026-08-07",
+          "price": 340,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.shelburnevt.org/DocumentCenter/View/7592/2026-summer-camp-overview",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "operator_name",
+            "camp_type",
+            "primary_categories",
+            "activities",
+            "age_min",
+            "grade_min",
+            "grade_max",
+            "description_short",
+            "price_min",
+            "price_max",
+            "price_per",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://www.shelburnevt.org/160/Parks-Recreation",
+          "checked": "2026-11-13",
+          "fields": [
+            "website_url",
+            "phone",
+            "city",
+            "state",
+            "zip",
+            "financial_aid"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ],
+      "phone": "802-985-9551",
+      "financial_aid": true,
+      "price_per": "week"
+    },
+    {
+      "slug": "summer-day-camps-at-vermont-commons-south-burlington",
+      "name": "Summer Day Camps at Vermont Commons",
+      "operator_name": "Vermont Commons School",
+      "website_url": "https://www.vermontcommons.org/summer-day-camps",
+      "phone": "1-802-865-8084",
+      "street_address": "75 Green Mountain Drive",
+      "city": "South Burlington",
+      "state": "VT",
+      "zip": "05403",
+      "camp_type": "day",
+      "primary_categories": [
+        "arts",
+        "STEM",
+        "nature"
+      ],
+      "age_min": 8,
+      "age_max": 11,
+      "description_short": "One-week themed day camp sessions for ages 8-11 at Vermont Commons School, built around hands-on projects like cardboard building, cooking and nature study, plus summer games.",
+      "activities": [
+        "Clay sculpture",
+        "Chain reaction machines",
+        "Cardboard arcade games",
+        "Cardboard car races",
+        "Cooking",
+        "Food-related art projects",
+        "Creative writing",
+        "Nature exploration in the woods",
+        "Games"
+      ],
+      "price_per_week": 375,
+      "price_min": 300,
+      "price_max": 375,
+      "season_year": 2026,
+      "price_per": "week",
+      "sessions": [
+        {
+          "name": "Cardboard Contraptions",
+          "start_date": "2026-06-22",
+          "end_date": "2026-06-26",
+          "price": 375,
+          "availability": "unknown"
+        },
+        {
+          "name": "Kitchen Creations",
+          "start_date": "2026-06-29",
+          "end_date": "2026-07-02",
+          "price": 300,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.vermontcommons.org/summer-day-camps",
+          "checked": "2026-11-13",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "primary_categories",
+            "activities",
+            "age_min",
+            "age_max",
+            "description_short",
+            "price_min",
+            "price_max",
+            "price_per_week",
+            "price_per",
+            "sessions",
+            "registration_url"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ],
+      "registration_url": "https://www.homeroom.com/sites/vermont-commons-school-south-burlington/summer-2026/summer-day-camps/"
+    }
+  ]
 }

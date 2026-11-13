@@ -13,14 +13,27 @@
   "camp_type": "sleepaway",
   "primary_categories": [
     "faith",
-    "nature"
+    "general"
   ],
-  "description_short": "Overnight summer camps (Newfound and Owatonna) on Long Lake in Harrison, Maine, with 2- to 7-week sessions, trips, a CIT program, and a Christian Science program. The same organization also runs Family Camp and an adult Creative Arts week.",
+  "description_short": "Christian Science overnight camps on Long Lake in Harrison, Maine: Camp Newfound for girls and Camp Owatonna for boys, ages about 6 to 16, with 2-week to 7-week sessions, trips and a CIT program. The same organization also runs Family Camp and an adult Creative Arts week.",
   "activities": [
-    "Trips",
-    "Counselor-in-Training (CIT)",
-    "Character Education",
-    "Christian Science at Camp"
+    "sailing",
+    "kayaking",
+    "canoeing",
+    "waterskiing",
+    "wakeboarding",
+    "fishing",
+    "ropes course",
+    "rock wall",
+    "archery",
+    "drama",
+    "dance",
+    "arts and crafts",
+    "tennis",
+    "swimming",
+    "team sports",
+    "trips",
+    "Counselor-in-Training (CIT)"
   ],
   "price_min": 3200,
   "price_max": 7950,
@@ -66,7 +79,7 @@
   "sources": [
     {
       "url": "https://www.newfound-owatonna.com/info/dates-tuition/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -78,20 +91,41 @@
         "city",
         "state",
         "zip",
-        "camp_type",
-        "primary_categories",
-        "activities",
-        "description_short",
         "price_min",
         "price_max",
-        "financial_aid",
         "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
+    },
+    {
+      "url": "https://www.newfound-owatonna.com/newfound/faqs/",
+      "checked": "2026-11-13",
+      "fields": [
+        "activities",
+        "age_min",
+        "age_max",
+        "transportation"
+      ]
+    },
+    {
+      "url": "https://www.newfound-owatonna.com/newfound/",
+      "checked": "2026-11-13",
+      "fields": [
+        "camp_type",
+        "primary_categories",
+        "religious_affiliation",
+        "description_short"
+      ]
+    },
+    {
+      "url": "https://www.newfound-owatonna.com/info/financial-assistance/",
+      "checked": "2026-11-13",
+      "fields": [
+        "financial_aid"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.newfound-owatonna.com/info/dates-tuition/",
       "kind": "html",
@@ -129,6 +163,33 @@
         "quote": "Trips Christian Science at Camp CIT Character Education"
       }
     ],
-    "errors": []
-  }
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.newfound-owatonna.com/info/dates-tuition/",
+        "https://www.newfound-owatonna.com/newfound/faqs/",
+        "https://www.newfound-owatonna.com/owatonna/faqs/",
+        "https://www.newfound-owatonna.com/newfound/",
+        "https://www.newfound-owatonna.com/owatonna/",
+        "https://www.newfound-owatonna.com/info/financial-assistance/"
+      ],
+      "changes": [
+        "Checked all 2027 youth sessions and prices against the Dates & Tuition page; all five match.",
+        "Added ages 6 to 16 from the Newfound and Owatonna parent FAQs (both say campers usually start at six, regular camp runs to sixteen; under-7s try a 2-week session first).",
+        "Added religious_affiliation Christian Science and transportation true (camp picks up and drops off at PWM, MHT and BOS airports, per the FAQs).",
+        "Replaced activities with the list in the Newfound FAQ (sailing, waterskiing, ropes course, archery and so on) and changed categories from faith+nature to faith+general.",
+        "Rewrote the description to say Newfound is for girls and Owatonna for boys.",
+        "Left gender_policy null: the listing covers a girls camp and a boys camp, so neither coed nor single-sex fits.",
+        "The warning names 'Mary or Reid'; the page actually says 'Amy or Reid' (Amy Henn directs Newfound, Reid Charlston directs Owatonna)."
+      ],
+      "open_questions": [
+        "This listing is really two single-sex camps (Newfound for girls, Owatonna for boys) sharing a site, dates and registration. Keep one listing with gender_policy null, or split into two listings (girls / boys)?"
+      ]
+    }
+  },
+  "age_min": 6,
+  "age_max": 16,
+  "religious_affiliation": "Christian Science",
+  "transportation": true
 }
