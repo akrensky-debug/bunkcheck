@@ -36,7 +36,7 @@
   "sources": [
     {
       "url": "https://bgcg.org/what-we-do/summer-camps/clubhouse-camp.html",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -53,12 +53,11 @@
         "age_max",
         "description_short",
         "swim_waterfront_notes"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://bgcg.org/what-we-do/summer-camps/clubhouse-camp.html",
       "kind": "html",
@@ -97,6 +96,19 @@
         "quote": "Week 1 – Animal Adventures ... Week 8 – Game Show"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://bgcg.org/what-we-do/summer-camps/clubhouse-camp.html"
+      ],
+      "changes": [
+        "Checked every field against the Clubhouse Camp page; all match (ages 6-12, 4 Horseneck Ln, 06830, phone, 25-meter pool, swim lessons, sports list, STEM 'Brain Gain').",
+        "No sessions or prices added: the page shows 2026 theme weeks without dates or prices."
+      ],
+      "open_questions": [
+        "This duplicates boys-and-girls-club-of-greenwich-summer-camps-greenwich, which already covers Clubhouse Camp (with its 2026 weeks, $275/week and membership rule) alongside Camp Simmons and Teen Camp; teen-camp-greenwich is a third listing from the same club. Keep one umbrella listing for the club, or split into one listing per camp (Clubhouse, Camp Simmons, Teen Camp) and drop the umbrella?"
+      ]
+    }
   }
 }

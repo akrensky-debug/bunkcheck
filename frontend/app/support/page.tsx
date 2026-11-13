@@ -17,14 +17,14 @@ export default function SupportPage() {
 
       <h2>Using Bunkcheck in ChatGPT</h2>
       <ul>
-        <li>Ask about summer camps in plain words, for example &quot;Find STEM day camps near Providence for my 8-year-old.&quot; ChatGPT may suggest Bunkcheck, or you can type <strong>@Bunkcheck</strong>.</li>
+        <li>Bunkcheck is waiting for OpenAI&apos;s review and isn&apos;t in ChatGPT yet. Once it is, ask about summer camps in plain words, for example &quot;Find STEM day camps near Providence for my 8-year-old.&quot; ChatGPT may suggest Bunkcheck, or you can type <strong>@Bunkcheck</strong>.</li>
         <li>Results appear as camp cards. Open a card for details, or continue on Bunkcheck to plan every week and save a family calendar.</li>
         <li>To disconnect, open ChatGPT settings, find Bunkcheck in your apps, and remove it.</li>
       </ul>
 
       <h2>Using Bunkcheck in Claude</h2>
       <ul>
-        <li>Add Bunkcheck from the connectors directory (Customize &gt; Connectors), then ask about camps. No sign-in is needed.</li>
+        <li>Add Bunkcheck as a custom connector: the address and three steps are on <a href="/connect">Use Bunkcheck in Claude</a>. No sign-in is needed.</li>
         <li>Claude may ask before opening a Bunkcheck link; that is expected.</li>
         <li>To remove it, open Customize &gt; Connectors and disconnect Bunkcheck.</li>
       </ul>

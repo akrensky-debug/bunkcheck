@@ -17,7 +17,7 @@
   ],
   "grade_min": 1,
   "grade_max": 8,
-  "description_short": "City-run summer day camps for kids entering grades 1–8. Stay & Play (grades 1–5) is an 8-week camp at the City Wide Community Center and Keach Park, while Adventure (grades 3–5) and Teen Adventure (grades 6–8) take out-of-town trips Monday–Thursday and spend Fridays in town.",
+  "description_short": "City-run summer day camps for kids in grades 1-8, 8:30am to 4:30pm. Stay & Play (grades 1-5) is an 8-week camp at the City Wide Community Center and Keach Park with swimming, cooking, crafts and field games. The two Adventure camps for older kids take out-of-town trips Monday to Thursday and spend Fridays in town.",
   "activities": [
     "swimming",
     "cooking",
@@ -34,10 +34,12 @@
   "financial_aid": true,
   "swim_waterfront_notes": "Stay & Play includes swimming. Adventure camp trips include beach trips, kayaking and surfing. The page gives no details on supervision or swim testing.",
   "season_year": 2026,
+  "meals_included": false,
+  "refund_policy_summary": "Refund requests must be in writing. Cancel three weeks or more before camp starts for a full refund minus the $20 per camp deposit. Later cancellations get no refund without a doctor's note.",
   "sources": [
     {
       "url": "https://concordnh.gov/1974/Traditional-Summer-Camps",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -53,15 +55,22 @@
         "activities",
         "grade_min",
         "grade_max",
-        "description_short",
         "financial_aid",
         "swim_waterfront_notes"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
+    },
+    {
+      "url": "https://concordnh.gov/DocumentCenter/View/26111",
+      "checked": "2026-11-13",
+      "fields": [
+        "description_short",
+        "meals_included",
+        "refund_policy_summary"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://concordnh.gov/1974/Traditional-Summer-Camps",
       "kind": "html",
@@ -103,6 +112,24 @@
         "quote": "a mix of adventures including beach trips, hikes, theme parks, kayaking, surfing"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://concordnh.gov/1974/Traditional-Summer-Camps",
+        "https://concordnh.gov/DocumentCenter/View/26111",
+        "https://concordnh.gov/1498/Brochure-Links",
+        "https://concordnh.gov/DocumentCenter/View/26139/Camp-trip-calendar"
+      ],
+      "changes": [
+        "Added daily hours (8:30am to 4:30pm), meals_included false (campers bring lunch and two snacks) and the refund rule from the 2026 Parent/Camper Handbook.",
+        "Rewrote the description so it no longer names which Adventure camp takes which grades, because the camp page and the handbook disagree on that (page: Adventure 3-5, Teen Adventure 6-8; handbook: Rec Adventure 3-5, Adventure 6-8). The overall range of grades 1-8 agrees on both.",
+        "No dates or prices found: the camp page points to the Spring brochure, the brochure page lists no brochure, and the trip calendar PDF couldn't be fetched."
+      ],
+      "open_questions": [
+        "This one listing covers three city day camps with different grades and formats (Stay & Play, Rec Adventure, Adventure). Keep it as one listing or split it?",
+        "Only the 2026 season is described and no dates or prices are posted on the city's pages. Publish now with season 2026 and no sessions, or wait for the 2027 Spring brochure?"
+      ]
+    }
   }
 }

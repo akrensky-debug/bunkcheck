@@ -11,6 +11,7 @@
   "state": "NH",
   "zip": "03853",
   "camp_type": "sleepaway",
+  "gender_policy": "boys",
   "age_min": 8,
   "age_max": 16,
   "description_short": "Camp Belknap is a non-profit overnight camp for boys ages 8-16 on Lake Winnipesaukee in New Hampshire. It runs four two-week sessions, plus a one-week fifth session for ages 8-12.",
@@ -60,7 +61,7 @@
   "sources": [
     {
       "url": "https://campbelknap.org/campers/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -73,6 +74,7 @@
         "state",
         "zip",
         "camp_type",
+        "gender_policy",
         "age_min",
         "age_max",
         "description_short",
@@ -82,12 +84,11 @@
         "financial_aid",
         "refund_policy_summary",
         "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://campbelknap.org/campers/",
       "kind": "html",
@@ -127,6 +128,20 @@
     ],
     "errors": [
       "city 'Mirror Lake', NH is not in cities.py"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://campbelknap.org/campers/"
+      ],
+      "changes": [
+        "Checked the 2027 session dates, ages 8 to 16 (Session 5 ages 8 to 12), tiered totals ($3,375 or $2,475 for two weeks, $1,675 or $1,275 for one week), scholarships, the $300 non-refundable registration fee, address, phone and email against the Campers page; all match.",
+        "Added gender_policy boys: the page calls Belknap 'a traditional residential camp for boys ages 8-16'.",
+        "Registration for 2027 opens 5 November 2026 through an inquiry form; the registration link stays on the Campers page."
+      ],
+      "open_questions": [
+        "The validator rejects the city 'Mirror Lake' (not in cities.py). The camp gives its physical address as 11 Chase Point Road, Mirror Lake, NH 03853; Mirror Lake is a village in Tuftonboro, which cities.py has. Set city to Tuftonboro, or add Mirror Lake to cities.py? Everything else checks out."
+      ]
+    }
   }
 }

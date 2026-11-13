@@ -27,7 +27,7 @@
   "sources": [
     {
       "url": "https://wellsreserve.org/visit/for-kids-families",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -44,12 +44,11 @@
         "age_max",
         "description_short",
         "financial_aid"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://wellsreserve.org/visit/for-kids-families",
       "kind": "html",
@@ -84,6 +83,23 @@
     ],
     "errors": [
       "missing required season_year"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://wellsreserve.org/visit/for-kids-families",
+        "https://wellsreserve.org/camps (redirects to the same page)",
+        "https://wellsreserve.org/day-camps (404)",
+        "https://wellsreserve.org/events (404)"
+      ],
+      "changes": [
+        "Confirmed on the page: three-day and week-long science day camps for ages 6 to 15, field, forest, salt marsh and beach, barn classroom and teaching lab, scholarships, and the address and phone 342 Laudholm Farm Rd, Wells ME 04090, 207-646-1555",
+        "No changes to field values; sources re-checked 2026-11-13",
+        "Still not valid: 'Upcoming Day Camps' says there are no upcoming events, so there is no season year, dates or prices"
+      ],
+      "open_questions": [
+        "Can't be valid until the Reserve posts its next camp season (no year, dates or prices on its site now). Hold until then, or drop?"
+      ]
+    }
   }
 }

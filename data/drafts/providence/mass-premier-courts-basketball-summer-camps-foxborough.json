@@ -13,7 +13,7 @@
   "primary_categories": [
     "sports"
   ],
-  "description_short": "Youth basketball camps and clinics at an indoor facility in Foxborough, MA, teaching fundamentals through skill development, drills and game play. Details for the summer camps have not been posted yet.",
+  "description_short": "Youth basketball camps and clinics at Mass Premier Courts, an indoor facility in Foxborough, MA, teaching fundamentals through skill development, drills and exercises, game play, coaching and character development. Summer camp dates and prices are not posted.",
   "activities": [
     "Basketball skill development",
     "Drills & exercises",
@@ -24,7 +24,7 @@
   "sources": [
     {
       "url": "https://masspremiercourts.com/basketball/camps/",
-      "checked": "2026-10-27",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -38,9 +38,10 @@
         "camp_type",
         "primary_categories",
         "activities",
-        "description_short"
+        "description_short",
+        "indoor_outdoor"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Summer Camps page (copyright 2023 footer; camp policy PDF uploaded 2026/07)"
     }
   ],
   "review": {
@@ -68,17 +69,28 @@
       "Whether it is a day camp (likely, since it runs at an indoor facility, but the page does not say)",
       "Special needs accommodations"
     ],
-    "low_confidence": [
-      {
-        "field": "camp_type",
-        "confidence": 0.75,
-        "quote": "Basketball youth camps and clinics are typically organized to teach young players the fundamentals of basketball"
-      }
-    ],
-    "errors": [
-      "missing required season_year"
-    ],
-    "first_pass": {
+    "low_confidence": [],
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://masspremiercourts.com/basketball/camps/",
+        "https://masspremiercourts.com/all-current-programs/",
+        "https://masspremiercourts.com/wp-content/uploads/2026/07/Camp-Policy-CMR-430.157-cd.pdf"
+      ],
+      "changes": [
+        "Confirmed name, operator, contact, address 97 Green St, Foxborough, MA 02035, activities against the page.",
+        "Set season_year 2026 as a placeholder (camp policy PDF on the page was uploaded July 2026); no sessions added.",
+        "Added indoor setting; description now says dates and prices are not posted."
+      ],
+      "open_questions": [
+        "Page contradicts itself: 'Summer programs are now on our schedule!' and 'Check back soon for details on our summer camps'. The All Current Programs list (LeagueApps) shows no summer camp in the fetched text.",
+        "No ages, dates, prices or registration link. Andrew to decide whether a listing with no sessions is worth publishing.",
+        "No 2027 registration information."
+      ]
+    },
+    "earlier_pass": {
+      "status": "needs_andrew",
       "by": "Claude",
       "date": "2026-10-27",
       "page_checked": "https://masspremiercourts.com/basketball/camps/",
@@ -88,6 +100,23 @@
       "for_andrew": [
         "No season_year can be set: the page says 'Check back soon for details on our summer camps' and shows no dates, ages or prices (footer is (c) 2023). Recheck in spring 2027 or drop."
       ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://masspremiercourts.com/basketball/camps/",
+      "changes": [
+        "Confirmed name, operator, contact, address 97 Green St, Foxborough, MA 02035, activities against the page.",
+        "Set season_year 2026 as a placeholder (camp policy PDF on the page was uploaded July 2026); no sessions added.",
+        "Added indoor setting; description now says dates and prices are not posted."
+      ],
+      "for_andrew": [
+        "Page contradicts itself: 'Summer programs are now on our schedule!' and 'Check back soon for details on our summer camps'. The All Current Programs list (LeagueApps) shows no summer camp in the fetched text.",
+        "No ages, dates, prices or registration link. Andrew to decide whether a listing with no sessions is worth publishing.",
+        "No 2027 registration information."
+      ]
     }
-  }
+  },
+  "season_year": 2026,
+  "indoor_outdoor": "indoor"
 }

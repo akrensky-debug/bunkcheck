@@ -97,7 +97,7 @@
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://campbillings.org/about/registration-rates-dates/",
       "kind": "html",
@@ -135,6 +135,19 @@
         "quote": "Athletics ... Outdoor Adventure & Education ... Crafts & Performing Arts"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://campbillings.org/about/registration-rates-dates/",
+        "https://campbillings.org/"
+      ],
+      "changes": [
+        "No changes. campbillings.org refused our fetcher (403) on both the rates page and the home page, so nothing in the draft could be checked against the camp's own site."
+      ],
+      "open_questions": [
+        "campbillings.org refuses automated requests (403). Ask the camp for its 2027 dates and rates sheet or a page we may read, or check the draft by hand in a browser before publishing?"
+      ]
+    }
   }
 }

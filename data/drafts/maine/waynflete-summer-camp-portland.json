@@ -38,11 +38,10 @@
     "Counselor in Training program"
   ],
   "extended_care": true,
-  "transportation": true,
   "sources": [
     {
       "url": "https://summer.waynflete.org/camps",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -61,15 +60,38 @@
         "age_max",
         "grade_min",
         "grade_max",
-        "description_short",
-        "extended_care",
-        "transportation"
+        "description_short"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Camp's own Camps page (says 'Stay tuned for 2027 camp information')"
+    },
+    {
+      "url": "https://summer.waynflete.org/about/before-aftercare-bus",
+      "checked": "2026-11-13",
+      "fields": [
+        "extended_care"
+      ],
+      "note": "Before/Aftercare & Bus page: beforecare 8:00-8:30am, aftercare 3:15-4:30pm, Summer 2026"
+    },
+    {
+      "url": "https://summer.waynflete.org/about/tuition",
+      "checked": "2026-11-13",
+      "fields": [
+        "financial_aid",
+        "refund_policy_summary"
+      ],
+      "note": "Tuition page (2026 payment, withdrawal and tuition assistance rules)"
+    },
+    {
+      "url": "https://summer.waynflete.org/summer-camps/flyers-camps",
+      "checked": "2026-11-13",
+      "fields": [
+        "sessions"
+      ],
+      "note": "Flyers Camp page: 2026 weekly sessions with dates and cost"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://summer.waynflete.org/camps",
       "kind": "html",
@@ -123,6 +145,75 @@
     ],
     "errors": [
       "missing required season_year"
-    ]
-  }
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://summer.waynflete.org/camps",
+        "https://summer.waynflete.org/about/tuition",
+        "https://summer.waynflete.org/about/before-aftercare-bus",
+        "https://summer.waynflete.org/about/faq",
+        "https://summer.waynflete.org/summer-camps/flyers-camps",
+        "https://docs.google.com/spreadsheets/u/1/d/142UAJcFo6-OsXHnHP3746eo2UjN_Js9BakXJPYA_E5s/preview"
+      ],
+      "changes": [
+        "Set season_year to 2026: program pages show 2026 dates, and 2027 is not posted yet",
+        "Added the six 2026 Flyers Camp weeks (grades K-2, $445 a week, $375 for the short July 3 week) from the Flyers Camp page",
+        "Added financial_aid true and refund_policy_summary from the Tuition page (partial scholarships; $50 non-refundable deposit per week; 14-day no-refund window)",
+        "Removed transportation: the only bus is a paid shuttle between the Spring Street campus and the Fore River Fields, not a ride to or from home",
+        "Sourced extended_care to the Before/Aftercare page (8:00-8:30am and 3:15-4:30pm in 2026)",
+        "The Camps by Week Google Sheet couldn't be fetched (needs a browser)"
+      ],
+      "open_questions": [
+        "Waynflete Summer is about ten separate camp lines (Mini Flyers, Flyers, Performing Arts, Eco Explorers, Sports, STEM, D&D, Arts, Bonus, CIT), each with its own weekly sessions and prices. Only the Flyers weeks are listed as sessions. Keep it as one listing with Flyers as the sample, add every line's weeks, or split it?"
+      ]
+    }
+  },
+  "financial_aid": true,
+  "refund_policy_summary": "You pay in full or a $50 deposit per camp week at registration. The deposit is non-refundable. For 2026, withdrawals in writing before May 1 got a full refund less the deposit; from May 1 until 14 days before the session, a credit (less the deposit) toward a later Waynflete program. Withdrawals within 14 days of the start are not refunded, though serious illness or family emergencies are reviewed case by case.",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Flyers: Treasure Hunt (Flyers Camp, grades K-2, Spring Street Campus)",
+      "start_date": "2026-06-22",
+      "end_date": "2026-06-26",
+      "price": 445,
+      "availability": "unknown"
+    },
+    {
+      "name": "Flyers: Dinosaur Discoveries (no camp July 3) (Flyers Camp, grades K-2, Spring Street Campus)",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-02",
+      "price": 375,
+      "availability": "unknown"
+    },
+    {
+      "name": "Flyers: Barnyard Bonanza (Flyers Camp, grades K-2, Spring Street Campus)",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": 445,
+      "availability": "unknown"
+    },
+    {
+      "name": "Flyers: Inventors & Makers (Flyers Camp, grades K-2, Spring Street Campus)",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": 445,
+      "availability": "unknown"
+    },
+    {
+      "name": "Flyers: Ocean Adventures (Flyers Camp, grades K-2, Spring Street Campus)",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": 445,
+      "availability": "unknown"
+    },
+    {
+      "name": "Flyers: Wizard Wonders (Flyers Camp, grades K-2, Spring Street Campus)",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": 445,
+      "availability": "unknown"
+    }
+  ]
 }

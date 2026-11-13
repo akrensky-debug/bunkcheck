@@ -1,7 +1,7 @@
 {
   "slug": "camp-bishopswood-hope",
   "name": "Camp Bishopswood",
-  "website_url": "https://campbishopswood.org/tuition/",
+  "website_url": "https://campbishopswood.org/",
   "registration_url": "https://bishopswood.campintouch.com/ui/forms/application/camper/App",
   "email": "registrar@campbishopswood.org",
   "phone": "(207) 763-3148",
@@ -16,22 +16,20 @@
   ],
   "age_min": 6,
   "age_max": 16,
-  "description_short": "Overnight lakeside camp in Hope, Maine with Episcopal roots. It offers one-week Youth Camps or multi-week sessions for ages 8–16, short Mini Camps for ages 6–8, a Counselor-in-Training program, and one week of day camp for ages 6–12.",
+  "description_short": "Episcopal coed overnight camp on Lake Megunticook in Hope, Maine. It offers one-week Youth Camps or multi-week sessions for ages 8 to 16, short Mini Camps for ages 6 to 8, a Counselor-in-Training program, and one week of day camp for ages 6 to 12. Families choose one of three price tiers.",
   "activities": [
-    "Performing arts",
-    "Arts and crafts (Art Barn)",
+    "Swimming and water safety instruction",
+    "Arts and crafts",
     "Camp Craft",
+    "Performing arts",
+    "Adventure",
     "Sports and games",
-    "Waterfront / lake swimming",
-    "Hiking",
-    "Campouts",
-    "Chapel and campfire",
-    "Color Clash team competition week"
+    "Chapel and campfire"
   ],
   "price_min": 475,
   "price_max": 13139,
   "financial_aid": true,
-  "swim_waterfront_notes": "The camp is on a lake. Staff stories mention a Waterfront program, \"hot days in the lake\", and Rock Swims. The page gives no details on swim instruction or supervision.",
+  "swim_waterfront_notes": "The camp is on Lake Megunticook. Each cabin group goes to the waterfront every morning for an hour of swimming and water safety instruction.",
   "season_year": 2027,
   "sessions": [
     {
@@ -147,13 +145,15 @@
       "availability": "unknown"
     }
   ],
+  "gender_policy": "coed",
+  "religious_affiliation": "Episcopal",
+  "meals_included": true,
   "sources": [
     {
       "url": "https://campbishopswood.org/tuition/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
-        "website_url",
         "registration_url",
         "email",
         "phone",
@@ -163,21 +163,39 @@
         "zip",
         "camp_type",
         "primary_categories",
-        "activities",
-        "age_min",
-        "age_max",
-        "description_short",
         "price_min",
         "price_max",
         "financial_aid",
-        "swim_waterfront_notes",
         "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Dates and Rates: Youth Camp, multi-week, Mini Camp, CIT and Day Camp dates with three price tiers; scholarships; contact block. The page does not state the year."
+    },
+    {
+      "url": "https://campbishopswood.org/",
+      "checked": "2026-11-13",
+      "fields": [
+        "website_url",
+        "gender_policy",
+        "religious_affiliation",
+        "age_min",
+        "age_max",
+        "description_short"
+      ],
+      "note": "Home page: Episcopal coed overnight camp for ages 6 to 16 on Lake Megunticook"
+    },
+    {
+      "url": "https://bishopswood.org/a-day-at-camp-bishopswood/",
+      "checked": "2026-11-13",
+      "fields": [
+        "activities",
+        "meals_included",
+        "swim_waterfront_notes"
+      ],
+      "note": "A Day at Camp: activity periods, daily waterfront swim and water safety instruction, breakfast, lunch and dinner in the dining hall, chapel and campfire"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://campbishopswood.org/tuition/",
       "kind": "html",
@@ -276,6 +294,27 @@
         "quote": "August 23 – August 27"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://campbishopswood.org/tuition/",
+        "https://campbishopswood.org/",
+        "https://bishopswood.org/a-day-at-camp-bishopswood/",
+        "https://bishopswood.org/day-camp/",
+        "https://bishopswood.org/mini-camp/",
+        "https://bishopswood.org/camp-news-2/"
+      ],
+      "changes": [
+        "Checked all 16 sessions and their three-tier prices against the Dates and Rates page; all match. The 'Fri, July 3' wording the first draft flagged is no longer on the page.",
+        "Changed website_url from the tuition page to the home page.",
+        "Added gender_policy coed, religious_affiliation Episcopal and ages 6 to 16 from the home page.",
+        "Replaced the activities taken from staff stories with the official activity list on A Day at Camp, and rewrote swim_waterfront_notes from that page (daily hour of swimming and water safety instruction on Lake Megunticook).",
+        "Added meals_included true (breakfast, lunch and dinner in the dining hall, per A Day at Camp)."
+      ],
+      "open_questions": [
+        "The camp's pages never state the season year. Every weekday the pages give fits 2027 (Sun June 27 opening, Sat July 24 pickup, Sun July 25 return, Mon to Fri Aug 23 to 27 day camp), but 2021 has the same calendar, the footer says 2025 and the newest news post is about Summer 2025. Publish as 2027, or hold until the camp confirms?"
+      ]
+    }
   }
 }

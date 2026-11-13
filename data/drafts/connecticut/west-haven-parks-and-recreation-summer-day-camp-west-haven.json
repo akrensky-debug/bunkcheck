@@ -15,7 +15,7 @@
   "sources": [
     {
       "url": "https://www.cityofwesthaven.com/172/Parks-and-Recreation",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -29,12 +29,11 @@
         "camp_type",
         "description_short",
         "special_needs_notes"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "drop",
     "source": {
       "url": "https://www.cityofwesthaven.com/172/Parks-and-Recreation",
       "kind": "html",
@@ -88,6 +87,20 @@
     ],
     "errors": [
       "missing required season_year"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.cityofwesthaven.com/172/Parks-and-Recreation",
+        "https://www.rec.us/organizations/city-of-west-haven"
+      ],
+      "changes": [
+        "Fields still match the city page, but the only camp detail is a phone number (203-937-3657).",
+        "The department's RecUS site lists no summer camp right now, so there is no year, age, date or price to list."
+      ],
+      "open_questions": [
+        "Nothing usable today. Rebuild from rec.us/west-haven when the 2027 Summer Day Camp is posted."
+      ]
+    }
   }
 }

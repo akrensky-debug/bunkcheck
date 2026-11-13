@@ -5,7 +5,7 @@
   "website_url": "https://www.gbymca.org/programs/child-care-camps/summer-camps/adventure-camp/",
   "registration_url": "https://operations.daxko.com/Programs/Redirector.aspx?cc_category_id=2576199&cid=3078",
   "phone": "802-652-8190",
-  "city": null,
+  "city": "Burlington",
   "state": "VT",
   "zip": null,
   "camp_type": "day",
@@ -35,7 +35,7 @@
   "financial_aid": true,
   "meals_included": false,
   "refund_policy_summary": "If you cancel 2 or more weeks before the start date, you get back any tuition paid but not the deposit. If you cancel within 2 weeks of the start, you get nothing back. The $30 registration fee and the $25 per-week deposit are non-refundable. The exception: if a family cancels because camp is still too expensive after a Y scholarship, the registration fee and deposit are refunded.",
-  "swim_waterfront_notes": "Campers swim and kayak in Lake Champlain. Water activities depend on safe cyanobacteria levels, which are checked every day before campers go in.",
+  "swim_waterfront_notes": "Campers swim and kayak in Lake Champlain. Water activities depend on safe cyanobacteria levels, which are checked every day before campers go in. Week 4 is Kayaking Week, with kayaking every day.",
   "season_year": 2026,
   "price_per": "week",
   "sessions": [
@@ -99,7 +99,7 @@
   "sources": [
     {
       "url": "https://www.gbymca.org/programs/child-care-camps/summer-camps/adventure-camp/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -120,13 +120,22 @@
         "financial_aid",
         "refund_policy_summary",
         "swim_waterfront_notes",
-        "sessions"
+        "sessions",
+        "gender_policy"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "2026 season page"
+    },
+    {
+      "url": "https://www.gbymca.org/programs/child-care-camps/summer-camps/",
+      "checked": "2026-11-13",
+      "fields": [
+        "city"
+      ],
+      "note": "Summer Camps overview: 'Co-ed day camp based at Rock Point, on the shores of Lake Champlain in Burlington'"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.gbymca.org/programs/child-care-camps/summer-camps/adventure-camp/",
       "kind": "html",
@@ -156,6 +165,25 @@
       "missing required city",
       "missing required zip",
       "city None, VT is not in cities.py"
-    ]
-  }
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.gbymca.org/programs/child-care-camps/summer-camps/adventure-camp/",
+        "https://www.gbymca.org/programs/child-care-camps/summer-camps/",
+        "https://www.gbymca.org/wp-content/uploads/2026/01/2026-Camp-Financial-Policy.pdf"
+      ],
+      "changes": [
+        "Filled city Burlington from the Y's Summer Camps overview page ('Rock Point, Burlington').",
+        "Added gender_policy coed ('our co-ed summer day camp').",
+        "Checked the eight 2026 weeks against the themes table (each theme is paired with its dates on the page), the $425 5-day and $315 3-day rates, the $30 registration fee and $25 weekly deposit, the refund policy, financial aid and 'campers bring lunch'; all match.",
+        "Added to swim notes that week 4 is Kayaking Week.",
+        "ZIP still empty: the camp's pages give no street address for Rock Point, and Burlington has more than one ZIP, so neither the Census geocoder nor the USPS single-ZIP rule applies."
+      ],
+      "open_questions": [
+        "Rock Point has no street address or ZIP on the Y's pages, and Burlington has several ZIPs. Use the Y's own address (298 College Street, 05401) for the ZIP, ask the Y, or take the address from Rock Point's own site?"
+      ]
+    }
+  },
+  "gender_policy": "coed"
 }

@@ -4,10 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "node scripts/check-public-env.mjs",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "check:ui": "node scripts/check-ui.mjs"
+    "check:ui": "node scripts/check-ui.mjs",
+    "check:env": "node scripts/check-public-env.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.117.2",

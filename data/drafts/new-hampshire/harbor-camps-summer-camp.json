@@ -80,7 +80,7 @@
   "sources": [
     {
       "url": "https://harborcamps.org/our-programs/summer-program/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -104,12 +104,11 @@
         "special_needs_notes",
         "swim_waterfront_notes",
         "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://harborcamps.org/our-programs/summer-program/",
       "kind": "html",
@@ -143,6 +142,19 @@
       "missing required city",
       "missing required zip",
       "city None, NH is not in cities.py"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://harborcamps.org/our-programs/summer-program/"
+      ],
+      "changes": [
+        "Checked every filled field against the Summer Camp page: 2027 dates (2 two-week and 2 one-week sessions), $1,725 full and $1,170 subsidized weekly rates, financial aid, Logan bus ($125 each way), meals, ages 8-14 new and through 15 returning, activities, nurses and lake details all match. No value changes.",
+        "City and ZIP stay empty: the camp says 'exact locations of our camps are given to enrolled families only', so check_draft fails on city and ZIP."
+      ],
+      "open_questions": [
+        "Harbor Camps keeps its town private for camper safety (it serves trans and non-binary youth) and gives only 'New Hampshire'. List it without a town, which the validator does not allow, list it under a nearby region, or leave it out?"
+      ]
+    }
   }
 }

@@ -5,7 +5,7 @@
   "website_url": "https://www.campjabberwocky.org/camp/summer",
   "city": "Vineyard Haven",
   "state": "MA",
-  "zip": null,
+  "zip": "02568",
   "camp_type": "sleepaway",
   "primary_categories": [
     "special_needs",
@@ -101,7 +101,7 @@
   "sources": [
     {
       "url": "https://www.campjabberwocky.org/camp/summer",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -117,13 +117,25 @@
         "meals_included",
         "special_needs_notes",
         "swim_waterfront_notes",
-        "sessions"
+        "sessions",
+        "registration_url"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.campjabberwocky.org/contact",
+      "checked": "2026-11-12",
+      "fields": [
+        "street_address",
+        "zip",
+        "phone",
+        "email"
+      ],
+      "note": "Contact page: physical address, phone (June to September), email"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "drop",
     "source": {
       "url": "https://www.campjabberwocky.org/camp/summer",
       "kind": "html",
@@ -149,20 +161,43 @@
       "Swim supervision and waterfront safety",
       "Whether there are any fees beyond tuition"
     ],
-    "low_confidence": [
-      {
-        "field": "city",
-        "confidence": 0.7,
-        "quote": "located on the island of Martha’s Vineyard, in Massachusetts. It is about a mile from downtown Vineyard Haven."
-      },
-      {
-        "field": "meals_included",
-        "confidence": 0.75,
-        "quote": "the main cabin (where we eat meals together)"
-      }
-    ],
-    "errors": [
-      "missing required zip"
-    ]
-  }
+    "low_confidence": [],
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.campjabberwocky.org/camp/summer",
+        "https://www.campjabberwocky.org/contact"
+      ],
+      "changes": [
+        "Added physical address 200 Greenwood Ave. Ext., ZIP 02568, phone 508-693-2339 and email info@campjabberwocky.org from the Contact page (clears missing zip)",
+        "registration_url set to the Summer Camp pre-application form linked from 'Apply now'",
+        "Confirmed city (camp is 'about a mile from downtown Vineyard Haven'; contact page physical address is Vineyard Haven) and meals (main cabin 'where we eat meals together'); 2026 dates match the page"
+      ],
+      "open_questions": [
+        "Camp is on Martha's Vineyard (ferry from Woods Hole), well over an hour from Boston: out of area.",
+        "Serves children and adults with no age limits; pre-application only, limited openings for new campers.",
+        "No 2027 dates or application timing posted."
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.campjabberwocky.org/camp/summer",
+      "changes": [
+        "Added physical address 200 Greenwood Ave. Ext., ZIP 02568, phone 508-693-2339 and email info@campjabberwocky.org from the Contact page (clears missing zip)",
+        "registration_url set to the Summer Camp pre-application form linked from 'Apply now'",
+        "Confirmed city (camp is 'about a mile from downtown Vineyard Haven'; contact page physical address is Vineyard Haven) and meals (main cabin 'where we eat meals together'); 2026 dates match the page"
+      ],
+      "for_andrew": [
+        "Camp is on Martha's Vineyard (ferry from Woods Hole), well over an hour from Boston: out of area.",
+        "Serves children and adults with no age limits; pre-application only, limited openings for new campers.",
+        "No 2027 dates or application timing posted."
+      ]
+    }
+  },
+  "street_address": "200 Greenwood Ave. Ext.",
+  "phone": "508-693-2339",
+  "email": "info@campjabberwocky.org",
+  "registration_url": "https://docs.google.com/forms/d/e/1FAIpQLSf4i_ZcCTe3_kYZvy2CzGBy8uXGEabc_VNR0J-sZb9NrHp-Iw/viewform"
 }

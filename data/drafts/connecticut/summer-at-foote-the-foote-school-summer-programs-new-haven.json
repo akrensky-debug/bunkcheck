@@ -30,7 +30,7 @@
   "sources": [
     {
       "url": "https://www.footeschool.org/community/summer-programs",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -47,11 +47,11 @@
         "grade_max",
         "description_short"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Re-read 2026-11-13; the page still shows no year, dates or registration link"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.footeschool.org/community/summer-programs",
       "kind": "html",
@@ -111,6 +111,20 @@
     ],
     "errors": [
       "missing required season_year"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.footeschool.org/community/summer-programs"
+      ],
+      "changes": [
+        "No field changes: every filled field still matches the school's summer page.",
+        "Source date moved to 2026-11-13 after re-reading the page."
+      ],
+      "open_questions": [
+        "The page gives no year, no dates and no registration link for either program, so season_year (required) can't be filled without guessing. Hold until Foote posts dated 2027 information, or ask the school?",
+        "Grades 1 to 9 and the $1,000 price are stated only for FooteSteps to Broadway; nothing is stated for Falco's Explorers. Keep one listing for both programs?"
+      ]
+    }
   }
 }

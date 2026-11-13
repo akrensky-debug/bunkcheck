@@ -1,7 +1,7 @@
 {
   "slug": "katrina-dowd-lacrosse-camps",
   "name": "Katrina Dowd Lacrosse Camps",
-  "website_url": "https://www.bearswlaxcamps.com/elite-summer-camp.cfm",
+  "website_url": "https://www.bearswlaxcamps.com/camps.cfm",
   "city": "Providence",
   "state": "RI",
   "zip": null,
@@ -9,16 +9,49 @@
   "primary_categories": [
     "sports"
   ],
-  "description_short": "One-day Elite Summer Camps for lacrosse players in grades 8-12 at Brown University's Stevenson-Pincince Field in Providence, coached by current Brown women's lacrosse staff and players through skill stations and live game play. Camp runs 10:00 am to 4:00 pm.",
+  "description_short": "One-day Elite Summer Camps (10:00am-4:00pm) for grades 8-12 run by Brown women's lacrosse head coach Katrina Dowd at Stevenson-Pincince Field in Providence, with coaching from current Brown staff and players through skill stations and live game play.",
   "activities": [
     "Lacrosse"
+  ],
+  "email": "Katrinadowdlaxcamps@gmail.com",
+  "grade_min": 8,
+  "grade_max": 12,
+  "price_min": 296.5,
+  "price_max": 296.5,
+  "price_per": "session",
+  "season_year": 2026,
+  "registration_url": "https://www.bearswlaxcamps.com/elite-summer-camp.cfm",
+  "street_address": "Stevenson-Pincince Field",
+  "sessions": [
+    {
+      "name": "Elite Summer Camp",
+      "start_date": "2026-06-29",
+      "end_date": "2026-06-29",
+      "price": 296.5,
+      "availability": "unknown"
+    },
+    {
+      "name": "Elite Summer Camp",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-13",
+      "price": 296.5,
+      "availability": "unknown"
+    },
+    {
+      "name": "Elite Summer Camp",
+      "start_date": "2026-08-23",
+      "end_date": "2026-08-23",
+      "price": 296.5,
+      "availability": "unknown"
+    }
   ],
   "sources": [
     {
       "url": "https://www.bearswlaxcamps.com/camps.cfm",
-      "checked": "2026-10-27",
+      "checked": "2026-11-12",
       "fields": [
         "name",
+        "website_url",
         "camp_type",
         "primary_categories",
         "activities"
@@ -27,9 +60,9 @@
     },
     {
       "url": "https://www.bearswlaxcamps.com/elite-summer-camp.cfm",
-      "checked": "2026-10-27",
+      "checked": "2026-11-12",
       "fields": [
-        "website_url",
+        "street_address",
         "city",
         "state",
         "email",
@@ -38,8 +71,9 @@
         "price_min",
         "price_max",
         "price_per",
+        "sessions",
         "description_short",
-        "sessions"
+        "registration_url"
       ]
     }
   ],
@@ -79,9 +113,35 @@
       }
     ],
     "errors": [
-      "missing required zip"
+      "missing required city",
+      "missing required state",
+      "missing required zip",
+      "missing required season_year"
     ],
-    "first_pass": {
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.bearswlaxcamps.com/camps.cfm",
+        "https://www.bearswlaxcamps.com/elite-summer-camp.cfm",
+        "https://www.bearswlaxcamps.com/about-us.cfm",
+        "https://www.bearswlaxcamps.com/facilities-and-directions.cfm",
+        "https://www.bearswlaxcamps.com/contact-us.cfm",
+        "https://brownbears.com/sports/womens-lacrosse (fetch timed out)"
+      ],
+      "changes": [
+        "Added the three 2026 Elite Summer Camp days from the Elite Summer Camp page (June 29, July 13, August 23, 2026; 10:00am-4:00pm; $296.50 = $275 + $21.50 fees), grades 8-12, email, and location Stevenson-Pincince Field, Providence RI. season_year set to 2026.",
+        "Registration URL set to the Elite Summer Camp page (its REGISTER buttons go to Ryzer).",
+        "Description rewritten from the Elite Summer Camp page."
+      ],
+      "open_questions": [
+        "ZIP (required) is not on any camp page: the location is given only as 'Stevenson-Pincince Field, Providence RI' with no street address, and Providence has several ZIP codes. The brownbears.com page timed out.",
+        "These are one-day clinics for high school players (grades 8-12), run by a college coach; Andrew to decide if they belong in Bunkcheck.",
+        "The page does not say girls only, though it is the women's program.",
+        "All 2026 dates have passed; the camps page says 'Currently there are no upcoming events.' No 2027 dates or registration date."
+      ]
+    },
+    "earlier_pass": {
+      "status": "needs_andrew",
       "by": "Claude",
       "date": "2026-10-27",
       "page_checked": "https://www.bearswlaxcamps.com/elite-summer-camp.cfm",
@@ -95,36 +155,22 @@
         "These are single-day camps for grades 8-12; confirm they count as a summer camp listing.",
         "gender_policy left null: the camp is run by Brown Women's Lacrosse coaches but the page says camps are open to all entrants."
       ]
-    }
-  },
-  "email": "Katrinadowdlaxcamps@gmail.com",
-  "grade_min": 8,
-  "grade_max": 12,
-  "price_min": 296.5,
-  "price_max": 296.5,
-  "price_per": "session",
-  "season_year": 2026,
-  "sessions": [
-    {
-      "name": "Elite Summer Camp",
-      "start_date": "2026-06-29",
-      "end_date": "2026-06-29",
-      "price": 296.5,
-      "availability": "unknown"
     },
-    {
-      "name": "Elite Summer Camp",
-      "start_date": "2026-07-13",
-      "end_date": "2026-07-13",
-      "price": 296.5,
-      "availability": "unknown"
-    },
-    {
-      "name": "Elite Summer Camp",
-      "start_date": "2026-08-23",
-      "end_date": "2026-08-23",
-      "price": 296.5,
-      "availability": "unknown"
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.bearswlaxcamps.com/camps.cfm",
+      "changes": [
+        "Added the three 2026 Elite Summer Camp days from the Elite Summer Camp page (June 29, July 13, August 23, 2026; 10:00am-4:00pm; $296.50 = $275 + $21.50 fees), grades 8-12, email, and location Stevenson-Pincince Field, Providence RI. season_year set to 2026.",
+        "Registration URL set to the Elite Summer Camp page (its REGISTER buttons go to Ryzer).",
+        "Description rewritten from the Elite Summer Camp page."
+      ],
+      "for_andrew": [
+        "ZIP (required) is not on any camp page: the location is given only as 'Stevenson-Pincince Field, Providence RI' with no street address, and Providence has several ZIP codes. The brownbears.com page timed out.",
+        "These are one-day clinics for high school players (grades 8-12), run by a college coach; Andrew to decide if they belong in Bunkcheck.",
+        "The page does not say girls only, though it is the women's program.",
+        "All 2026 dates have passed; the camps page says 'Currently there are no upcoming events.' No 2027 dates or registration date."
+      ]
     }
-  ]
+  }
 }

@@ -3,7 +3,7 @@
   "name": "Kids Summer Learning Center (KSLC)",
   "website_url": "https://kslc89.webnode.page/",
   "registration_url": "https://kslc89.webnode.page/registration-forms/",
-  "email": "william.aguair@ns.sbregional.org",
+  "email": "william.aguiar@ns.sbregional.org",
   "phone": "508-324-3146",
   "street_address": "625 County Street",
   "city": "Somerset",
@@ -18,7 +18,7 @@
     "academic",
     "sports"
   ],
-  "description_short": "One-week summer enrichment classes held at Somerset Berkley Regional High School and taught by area teachers. Subjects include STEM, music, art, writing, cooking and flag football, and children can sign up for one week or several.",
+  "description_short": "One-week summer enrichment classes for grades 3-8 at Somerset Berkley Regional High School, taught by area teachers. Most classes run 9:00-11:00 AM (Kids Kitchen to 11:30). Subjects include robotics, LEGO, Minecraft, cooking, music, art, writing, dance and flag football; sign up for one week or several. Open to all area students.",
   "activities": [
     "Flag football",
     "Cooking (Kids Kitchen)",
@@ -45,24 +45,33 @@
   "sources": [
     {
       "url": "https://kslc89.webnode.page/",
-      "checked": "2026-10-27",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "website_url",
         "registration_url",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "financial_aid"
+      ],
+      "note": "Home page: 'Classes for Summer 2024'; 'one-week long summer classes'; scholarship program introduced in 2015."
+    },
+    {
+      "url": "https://kslc89.webnode.page/faqs/",
+      "checked": "2026-11-12",
+      "fields": [
         "email",
         "phone",
         "street_address",
         "city",
         "state",
         "zip",
-        "camp_type",
-        "primary_categories",
-        "activities",
-        "description_short",
-        "financial_aid"
+        "grade_min",
+        "grade_max",
+        "description_short"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "FAQs: held at 625 County Street, Somerset, MA 02726; 'Most classes are from 9:00AM to 11:00AM'; 'grades 3 through 8'; (508) 324-3146; william.aguiar@ns.sbregional.org (also on the Contact page)."
     }
   ],
   "review": {
@@ -94,30 +103,31 @@
       "Details of the scholarship program and how to apply",
       "Whether there are any swimming or waterfront activities"
     ],
-    "low_confidence": [
-      {
-        "field": "registration_url",
-        "confidence": 0.7,
-        "quote": "Registration Forms"
-      },
-      {
-        "field": "camp_type",
-        "confidence": 0.6,
-        "quote": "Our one-week long summer classes are designed to provide students with a balance of fun and learning."
-      },
-      {
-        "field": "financial_aid",
-        "confidence": 0.65,
-        "quote": "Introduction of a scholarship program in 2015 to provide financial assistance to students from low-income families"
-      },
-      {
-        "field": "sessions[0].start_date",
-        "confidence": 0.6,
-        "quote": "New class for the week of July 22 for students in grades 4 thru 8."
-      }
-    ],
+    "low_confidence": [],
     "errors": [],
-    "first_pass": {
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://kslc89.webnode.page/",
+        "https://kslc89.webnode.page/weeks/",
+        "https://kslc89.webnode.page/registration-forms/",
+        "https://kslc89.webnode.page/faqs/",
+        "https://kslc89.webnode.page/contact/",
+        "https://kslc89.webnode.page/daily-schedule/",
+        "https://d2970ee491.cbaul-cdnwnd.com/b60caf11aca7d5aaeb2f01bec7dd03a3/200000008-636d3636d4/KSLC%20Brochure%202024.pdf?ph=d2970ee491"
+      ],
+      "changes": [
+        "Fixed email spelling to william.aguiar@ns.sbregional.org (FAQs and Contact page).",
+        "Added grades 3-8 (FAQs); description now gives the 2-hour class times and grades.",
+        "Sources split between the home page and the FAQs page."
+      ],
+      "open_questions": [
+        "The whole site still shows only Summer 2024 (2024 schedule, 2024 brochure, in-person registration dates from spring 2024); nothing for 2025, 2026 or 2027. The program may have stopped or moved. Andrew: keep as a 2024 listing, hold, or drop?",
+        "Classes are 2-hour morning enrichment classes ($100-$180 per class in 2024), not a full-day camp; decide whether that counts as a camp for Bunkcheck."
+      ]
+    },
+    "earlier_pass": {
+      "status": "needs_andrew",
       "by": "Claude",
       "date": "2026-10-27",
       "page_checked": "https://kslc89.webnode.page/",
@@ -128,6 +138,22 @@
         "The site shows only Summer 2024 ('Classes for Summer 2024', 'Register now for summer 2024!'); season_year is left as 2024 because no 2026 or 2027 dates exist. Someone should confirm KSLC still runs before listing it (drop if not).",
         "The contact email on the site reads william.aguair@ns.sbregional.org (possibly a misspelling of 'aguiar'); confirm before use."
       ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://kslc89.webnode.page/",
+      "changes": [
+        "Fixed email spelling to william.aguiar@ns.sbregional.org (FAQs and Contact page).",
+        "Added grades 3-8 (FAQs); description now gives the 2-hour class times and grades.",
+        "Sources split between the home page and the FAQs page."
+      ],
+      "for_andrew": [
+        "The whole site still shows only Summer 2024 (2024 schedule, 2024 brochure, in-person registration dates from spring 2024); nothing for 2025, 2026 or 2027. The program may have stopped or moved. Andrew: keep as a 2024 listing, hold, or drop?",
+        "Classes are 2-hour morning enrichment classes ($100-$180 per class in 2024), not a full-day camp; decide whether that counts as a camp for Bunkcheck."
+      ]
     }
-  }
+  },
+  "grade_min": 3,
+  "grade_max": 8
 }

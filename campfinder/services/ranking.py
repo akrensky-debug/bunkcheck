@@ -32,6 +32,10 @@ from datetime import date, datetime, timedelta, timezone
 from typing import Any
 
 
+
+# Categories are matched lowercase; these read wrong that way in a reason line.
+_CATEGORY_LABELS = {"stem": "STEM", "steam": "STEAM"}
+
 def _weeks_from_dates(start_iso: str, end_iso: str) -> list[date]:
     """Return all Monday dates that fall within [start, end]."""
     start = date.fromisoformat(start_iso)
@@ -112,7 +116,7 @@ def score_camp(
         if matched_cats:
             bump = min(len(matched_cats), 3) * 0.10
             score += bump
-            reasons.append(f"Offers {_oxford_join(matched_cats)} programs")
+            reasons.append(f"Offers {_oxford_join([_CATEGORY_LABELS.get(c, c) for c in matched_cats])} programs")
 
     # --- Distance fit ---
     if distance_miles is not None:

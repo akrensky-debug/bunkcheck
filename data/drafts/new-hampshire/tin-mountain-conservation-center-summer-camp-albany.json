@@ -10,21 +10,26 @@
   "city": "Albany",
   "state": "NH",
   "zip": "03818",
+  "camp_type": "day",
   "primary_categories": [
     "nature"
   ],
   "age_min": 4,
   "age_max": 16,
-  "description_short": "Nature-based summer camp programs for ages 4-16 in Albany, Jackson, Tamworth (NH) and Fryeburg (ME). Day campers explore fields and forests. Older \"Explorer\" programs include canoe trips (Canoe Voyageur) and climbing 4,000 ft peaks (Paths and Peaks).",
+  "description_short": "Weekly nature day camps run by Tin Mountain Conservation Center at its Nature Learning Center in Albany, NH, where kids explore woods, ponds and fields. Older kids join Explorer camps that leave from Albany to hike, canoe, climb and camp out overnight. Tin Mountain also runs camps in Jackson, Tamworth and Fryeburg, ME.",
   "activities": [
     "nature games",
-    "exploring fields and forests",
-    "frog catching",
     "nature crafts",
-    "canoeing (Canoe Voyageur)",
-    "hiking 4,000 ft peaks (Paths and Peaks)",
-    "campfires",
-    "cookouts"
+    "catching frogs and insects",
+    "pond and stream exploring",
+    "hiking",
+    "swimming",
+    "canoeing",
+    "rock climbing",
+    "mountain biking",
+    "wilderness survival skills",
+    "overnight campouts",
+    "campfires and cookouts"
   ],
   "financial_aid": true,
   "refund_policy_summary": "A $75 non-refundable deposit is due at registration. Full payment is due 4 weeks before camp starts. Cancellations or changes must be made at least 4 weeks before the session. No refunds after that.",
@@ -32,7 +37,7 @@
   "sources": [
     {
       "url": "https://tinmountain.org/what-we-do/camp/summer-camp.html",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -45,18 +50,32 @@
         "state",
         "zip",
         "primary_categories",
+        "secondary_categories",
+        "financial_aid",
+        "refund_policy_summary"
+      ]
+    },
+    {
+      "url": "https://tinmountain.org/file_download/f0da2eab-c457-43e0-b23f-9364759868a7",
+      "checked": "2026-11-13",
+      "fields": [
+        "camp_type",
         "activities",
         "age_min",
         "age_max",
         "description_short",
-        "financial_aid",
-        "refund_policy_summary"
+        "price_per_week",
+        "price_min",
+        "price_max",
+        "price_per",
+        "swim_waterfront_notes",
+        "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "2026 Summer Camp brochure. Prices are non-member rates. Only sessions held at or leaving from Albany are listed; Jackson, Tamworth and Fryeburg (ME) sessions are left out."
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://tinmountain.org/what-we-do/camp/summer-camp.html",
       "kind": "html",
@@ -127,6 +146,119 @@
     "errors": [
       "missing required camp_type",
       "camp_type must be one of ['day', 'sleepaway', 'specialty']"
-    ]
-  }
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://tinmountain.org/what-we-do/camp/summer-camp.html",
+        "https://tinmountain.org/file_download/f0da2eab-c457-43e0-b23f-9364759868a7"
+      ],
+      "changes": [
+        "Set camp_type day (fixes the validator error); Explorer camps add one or two overnights",
+        "Added the 12 Albany 2026 sessions (including Explorer camps that leave from Albany) with dates, ages and non-member prices from the 2026 brochure",
+        "Added price_per_week 300, price_min 230, price_max 560, price_per session",
+        "Activities now include canoeing, rock climbing, mountain biking, swimming and campouts from the brochure",
+        "Added swim note (Albany swims at a nearby lake) and secondary categories outdoor, adventure",
+        "Description now centers on Albany and names the other sites"
+      ],
+      "open_questions": [
+        "Tin Mountain runs camps at four sites: Albany NH, Jackson NH, South Tamworth NH and Fryeburg ME, each with its own sessions in the brochure. I kept this listing to Albany sessions only. Should Jackson, Tamworth and Fryeburg get their own listings?"
+      ]
+    }
+  },
+  "secondary_categories": [
+    "outdoor",
+    "adventure"
+  ],
+  "price_per_week": 300,
+  "price_min": 230,
+  "price_max": 560,
+  "price_per": "session",
+  "swim_waterfront_notes": "Albany campers swim at a nearby lake. Swim supervision and swim tests are not described.",
+  "sessions": [
+    {
+      "name": "Wild Child (ages 5-7)",
+      "start_date": "2026-06-22",
+      "end_date": "2026-06-26",
+      "price": 300,
+      "availability": "unknown"
+    },
+    {
+      "name": "Peaks and Paddles, Explorer (ages 9-12, overnight Thursday)",
+      "start_date": "2026-06-22",
+      "end_date": "2026-06-26",
+      "price": 430,
+      "availability": "unknown"
+    },
+    {
+      "name": "Peaks and Paddles 2.0, Explorer (ages 11-14, overnight Thursday)",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-03",
+      "price": 430,
+      "availability": "unknown"
+    },
+    {
+      "name": "Two-Week Nature Nuts Day Camp (ages 6-9)",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-10",
+      "price": 560,
+      "availability": "unknown"
+    },
+    {
+      "name": "Crags and Canoes, Explorer (ages 11-14, overnight Thursday)",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": 535,
+      "availability": "unknown"
+    },
+    {
+      "name": "Intro to Camp, half day (born before 11/20/2021 to age 6)",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": 230,
+      "availability": "unknown"
+    },
+    {
+      "name": "Ultimate Adventures, Explorer (ages 13-16)",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": 535,
+      "availability": "unknown"
+    },
+    {
+      "name": "What's Eating You? (ages 8-11, overnight Thursday)",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": 350,
+      "availability": "unknown"
+    },
+    {
+      "name": "Nature's Superheroes (ages 5-7)",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": 300,
+      "availability": "unknown"
+    },
+    {
+      "name": "Girl Power, Explorer (girls 11-14, overnight Thursday)",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": 430,
+      "availability": "unknown"
+    },
+    {
+      "name": "It's in Our Nature (ages 6-10)",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": 300,
+      "availability": "unknown"
+    },
+    {
+      "name": "Canoe Voyageurs, Explorer (ages 12-16, two overnights)",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": 535,
+      "availability": "unknown"
+    }
+  ]
 }

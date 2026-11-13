@@ -15,9 +15,9 @@
     "nature",
     "arts"
   ],
-  "grade_min": 3,
+  "grade_min": 2,
   "grade_max": 10,
-  "description_short": "Overnight YMCA camp on Cedar Lake in Chester, CT, for campers entering grades 3 to 10. It offers one-week Sampler sessions and traditional two-week sessions. Campers live in cabins grouped into five age-based villages and choose four daily skill classes from water sports, land sports, outdoor pursuits and creative arts.",
+  "description_short": "Overnight YMCA camp on Cedar Lake in Chester, CT. Traditional two-week sessions for campers entering grades 3-10 and one-week Sampler sessions for grades 2-8. Campers live in cabins grouped into five villages and take skill classes in water sports, land sports, outdoor pursuits and creative arts.",
   "activities": [
     "Water sports",
     "Swimming",
@@ -41,7 +41,7 @@
   "sources": [
     {
       "url": "https://www.camphazenymca.org/_files/ugd/e31791_0a41e16cf1c54dc8b58cabff162394e7.pdf",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -55,20 +55,28 @@
         "camp_type",
         "primary_categories",
         "activities",
-        "grade_min",
-        "grade_max",
-        "description_short",
         "meals_included",
         "financial_aid",
         "refund_policy_summary",
         "special_needs_notes",
         "swim_waterfront_notes"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Summer 2026 parent handbook; rechecked 2026-11-13"
+    },
+    {
+      "url": "https://www.camphazenymca.org/overnight-camp",
+      "checked": "2026-11-13",
+      "fields": [
+        "grade_min",
+        "grade_max",
+        "description_short",
+        "registration_url"
+      ],
+      "note": "Traditional 2-week: entering grades 3-10; Sampler 1-week: entering grades 2-8"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.camphazenymca.org/_files/ugd/e31791_0a41e16cf1c54dc8b58cabff162394e7.pdf",
       "kind": "pdf",
@@ -97,6 +105,32 @@
         "quote": "Water Sports, Land Sports, Outdoor Pursuits and Creative Arts"
       }
     ],
-    "errors": []
-  }
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.camphazenymca.org/_files/ugd/e31791_0a41e16cf1c54dc8b58cabff162394e7.pdf",
+        "https://www.camphazenymca.org/",
+        "https://www.camphazenymca.org/overnight-camp",
+        "https://www.camphazenymca.org/dates-and-rates",
+        "https://www.camphazenymca.org/summer",
+        "https://www.camphazenymca.org/faq-overnight-camp",
+        "https://www.camphazenymca.org/food-and-dining",
+        "https://www.camphazenymca.org/financial-aid-1",
+        "https://www.camphazenymca.org/accreditations-licensing"
+      ],
+      "changes": [
+        "grade_min 3 to 2: the one-week Sampler sessions take campers entering grades 2-8.",
+        "Description corrected to grades 2-10 and to say Sampler is grades 2-8.",
+        "Added registration_url (the camp's 'Register' link on campintouch).",
+        "Other fields (address, phone, email, Cedar Lake swim notes, Flying Fish rule, refund policy, nut-free kitchen, RNs on site, financial aid) match the 2026 handbook. The site footer gives 204 West Main St.; the handbook's directions say 205."
+      ],
+      "open_questions": [
+        "The Dates & Rates page posts the next summer with no year: Traditional A June 27-July 9, B July 11-23, C July 25-Aug 6, D Aug 8-20 (Tier 1 $3,195, Tier 2 $2,945, Tier 3 $2,695); Sampler 1 June 27-July 2, 2 July 4-9, 3 Aug 22-27 (Tier 1 $1,695). The weekdays fit 2027 (June 27, 2027 is a Sunday; it was a Saturday in 2026), and the footer says (c) 2026. Can I record these as the 2027 season with sessions and prices, or wait until the camp writes the year?",
+        "The homepage says Camp Hazen is ACA accredited. Do you want aca_accredited set? It needs an aca_source_url, and confirming on acacamps.org is outside the camp's own site.",
+        "The camp also runs a Day Camp (entering grades 1-9, two-week sessions, Tier 1 $975) that has no draft. Add one?"
+      ]
+    }
+  },
+  "registration_url": "https://camphazenymca.campintouch.com/ui/forms/application/camper/App"
 }

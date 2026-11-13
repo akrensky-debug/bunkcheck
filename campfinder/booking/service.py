@@ -107,7 +107,11 @@ def _fmt_day(d: date) -> str:
 
 
 def _fmt_when(ts: datetime) -> str:
+    """'Fri Jan 15 at 9:00 am'. Midnight shows as the day alone: it's how we store a day an
+    owner gave without a time, and "at 12:00 am" would send parents there at the wrong hour."""
     local = ts.astimezone(local_tz())
+    if (local.hour, local.minute) == (0, 0):
+        return _fmt_day(local.date())
     t = local.strftime("%I:%M %p").lstrip("0").lower()
     return f"{_fmt_day(local.date())} at {t}"
 

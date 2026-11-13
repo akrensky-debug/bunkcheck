@@ -4,17 +4,18 @@
   "operator_name": "NH Audubon",
   "website_url": "https://nhaudubon.org/education/nature-day-camp-2/summer-camp/",
   "phone": "603-224-9909 x404",
+  "street_address": "McLane Center, 84 Silk Farm Road",
   "city": "Concord",
   "state": "NH",
-  "zip": null,
+  "zip": "03301",
   "camp_type": "day",
   "primary_categories": [
     "nature",
     "STEM"
   ],
   "grade_min": 0,
-  "grade_max": 7,
-  "description_short": "Weekly nature day camp, 9am–4pm, at NH Audubon's McLane Center in Concord and Massabesic Center in Auburn. Campers are grouped by grade, and each week has a theme such as birds, watersheds, invertebrates or mammals.",
+  "grade_max": null,
+  "description_short": "Weekly nature day camp, 9am to 4pm, at NH Audubon's McLane Center in Concord and Massabesic Center in Auburn. Campers are grouped by grade starting at kindergarten, and each week has a theme such as birds, watersheds, invertebrates or mammals.",
   "activities": [
     "hikes",
     "crafts",
@@ -32,8 +33,12 @@
   "price_per_week": 345,
   "price_min": 311,
   "price_max": 345,
-  "season_year": 2026,
   "price_per": "week",
+  "extended_care": true,
+  "meals_included": false,
+  "financial_aid": true,
+  "refund_policy_summary": "A $100 administrative fee applies to every cancellation. Cancel more than 14 days before the session for a full refund minus the fee; 7 to 14 days before, 50% back only if the spot is filled; under 7 days, no refund. Full refunds if NH Audubon cancels.",
+  "season_year": 2026,
   "sessions": [
     {
       "name": "Session 1: Have to Have a Habitat (4 days)",
@@ -46,21 +51,21 @@
       "name": "Session 2: Feathered Friends",
       "start_date": "2026-07-06",
       "end_date": "2026-07-10",
-      "price": null,
+      "price": 345,
       "availability": "unknown"
     },
     {
       "name": "Session 3: Wet and Wild Watersheds",
       "start_date": "2026-07-13",
       "end_date": "2026-07-17",
-      "price": null,
+      "price": 345,
       "availability": "unknown"
     },
     {
       "name": "Session 4: Invertebrate Investigation",
       "start_date": "2026-07-20",
       "end_date": "2026-07-24",
-      "price": null,
+      "price": 345,
       "availability": "unknown"
     },
     {
@@ -74,28 +79,28 @@
       "name": "Session 6: Becoming Nature Stewards",
       "start_date": "2026-08-03",
       "end_date": "2026-08-07",
-      "price": null,
+      "price": 345,
       "availability": "unknown"
     },
     {
       "name": "Session 7: Scales, Scutes, and Skins",
       "start_date": "2026-08-10",
       "end_date": "2026-08-14",
-      "price": null,
+      "price": 345,
       "availability": "unknown"
     },
     {
       "name": "Session 8: Moose to Mice",
       "start_date": "2026-08-17",
       "end_date": "2026-08-21",
-      "price": null,
+      "price": 345,
       "availability": "unknown"
     }
   ],
   "sources": [
     {
       "url": "https://nhaudubon.org/education/nature-day-camp-2/summer-camp/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -107,19 +112,42 @@
         "primary_categories",
         "activities",
         "grade_min",
-        "grade_max",
         "description_short",
         "price_min",
         "price_max",
         "price_per_week",
         "price_per",
         "sessions"
+      ]
+    },
+    {
+      "url": "https://nhaudubon.org/event/nature-day-camp-open-house-reunion-1-2026/",
+      "checked": "2026-11-13",
+      "fields": [
+        "street_address",
+        "zip"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Event page gives the McLane Center address: 84 Silk Farm Road, Concord, NH 03301"
+    },
+    {
+      "url": "https://nhaudubon.org/education/nature-day-camp-2/",
+      "checked": "2026-11-13",
+      "fields": [
+        "extended_care",
+        "financial_aid"
+      ]
+    },
+    {
+      "url": "https://nhaudubon.org/wp-content/uploads/NH-Audubon-Nature-Day-Camp-Parent-Handbook-and-Forms-Packet.pdf",
+      "checked": "2026-11-13",
+      "fields": [
+        "meals_included",
+        "refund_policy_summary"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://nhaudubon.org/education/nature-day-camp-2/summer-camp/",
       "kind": "html",
@@ -163,6 +191,26 @@
     ],
     "errors": [
       "missing required zip"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://nhaudubon.org/education/nature-day-camp-2/summer-camp/",
+        "https://nhaudubon.org/education/nature-day-camp-2/",
+        "https://nhaudubon.org/wp-content/uploads/NH-Audubon-Nature-Day-Camp-Parent-Handbook-and-Forms-Packet.pdf",
+        "https://nhaudubon.org/event/nature-day-camp-open-house-reunion-1-2026/"
+      ],
+      "changes": [
+        "Removed grade_max 7: the summer page says 'grades K-6' but lists Explorers as 6th-7th, and the overview says summer serves K-9 (with Leaders-in-Training). The camp's pages disagree, so it is blank.",
+        "Added street address McLane Center, 84 Silk Farm Road and ZIP 03301 from the camp's McLane Center event page (fixes missing ZIP).",
+        "Added extended care (before care 8am, after care to 5pm, $10/$15 a day) and financial aid from the Nature Day Camp overview.",
+        "Added meals_included false (campers bring lunch and two snacks) and the cancellation policy from the 2026 Parent Handbook.",
+        "Set $345 on the six five-day sessions; the two four-day sessions are prorated with no stated price, so they stay blank.",
+        "Description no longer states a grade range. Dates, themes, $311/$345 rates and phone match the summer page. Only 2026 is posted."
+      ],
+      "open_questions": [
+        "Camp runs at two sites, McLane Center in Concord and Massabesic Center in Auburn, with the same weeks and prices. The listing is placed at Concord only. Keep one Concord listing, or add an Auburn listing?"
+      ]
+    }
   }
 }

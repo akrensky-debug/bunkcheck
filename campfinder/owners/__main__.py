@@ -9,6 +9,17 @@ Owner confirmation, run by a person on the team.
     python -m campfinder.owners queue                         # who to ask next, and why the rest aren't ready
     python -m campfinder.owners send-ready --by NAME [--limit N] [--yes]   # without --yes, only lists them
 
+The season update ("your 2027 update"): add --update. No hand check needed first; the owner
+is the checker for this email.
+
+    python -m campfinder.owners preview <camp> --update [--to EMAIL]
+    python -m campfinder.owners send    <camp> --update --by NAME [--to EMAIL]
+    python -m campfinder.owners queue --update [--region "Providence, RI"]
+    python -m campfinder.owners send-ready --update --by NAME [--limit N] [--yes]
+
+`queue` starts with the January 1 number: Providence-area camps whose next-season facts the
+owner confirmed.
+
 Listing updates by email ("Week 3 is full"):
 
     python -m campfinder.owners receive --from EMAIL [--subject S] < email.txt   # read a pasted email
@@ -31,7 +42,7 @@ import json
 import sys
 
 from campfinder.config import get_settings
-from campfinder.owners import service, updates
+from campfinder.owners import season, service, updates
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -45,6 +56,7 @@ def main(argv: list[str] | None = None) -> int:
             s.add_argument("--by", required=True, help="your name, for the change log")
         if name in ("preview", "send"):
             s.add_argument("--to", help="owner's email, if not the camp's contact")
+            s.add_argument("--update", action="store_true", help="the season update email, not the listing one")
     s = sub.add_parser("spots")
     s.add_argument("camp")
     s.add_argument("session")
@@ -52,8 +64,11 @@ def main(argv: list[str] | None = None) -> int:
     s.add_argument("--total", type=int, help="total spots, if known")
     s.add_argument("--by", required=True, help="your name, for the change log")
     s.add_argument("--from-owner", action="store_true", help="the camp owner gave this number")
-    sub.add_parser("queue")
+    s = sub.add_parser("queue")
+    s.add_argument("--update", action="store_true", help="who to send the season update to")
+    s.add_argument("--region", default=season.PROVIDENCE, help="the area the January 1 number counts")
     s = sub.add_parser("send-ready")
+    s.add_argument("--update", action="store_true", help="send the season update email")
     s.add_argument("--by", required=True, help="your name, for the change log")
     s.add_argument("--limit", type=int, default=10)
     s.add_argument("--yes", action="store_true", help="send; without it, only list who would be asked")
@@ -82,7 +97,7 @@ def main(argv: list[str] | None = None) -> int:
             return 0
         camp = service.find_camp(args.camp)
         if args.cmd == "preview":
-            prepared = service.prepare(camp, to=args.to)
+            prepared = season.prepare(camp, to=args.to) if args.update else service.prepare(camp, to=args.to)
             print(f"To: {prepared.email.to}\nSubject: {prepared.email.subject}\n\n{prepared.email.text}")
             print("\n(preview only: nothing recorded or sent; the link above will not work)")
         elif args.cmd == "spots":
@@ -92,13 +107,15 @@ def main(argv: list[str] | None = None) -> int:
             total = f" of {row['spots_total']}" if row.get("spots_total") is not None else ""
             print(f"{camp['name']}, {session.get('name') or session['start_date']}: {args.left}{total} left ({row['availability']})")
         elif args.cmd == "send":
-            prepared = asyncio.run(service.send(camp, sent_by=args.by, to=args.to))
-            link = f"{get_settings().frontend_url.rstrip('/')}/owners/confirm/{prepared.token}"
+            send = season.send if args.update else service.send
+            prepared = asyncio.run(send(camp, sent_by=args.by, to=args.to))
+            link = f"{get_settings().frontend_url.rstrip('/')}/owners/{'update' if args.update else 'confirm'}/{prepared.token}"
             print(f"Sent to {prepared.email.to}. If email isn't set up, send them this link yourself:\n{link}")
         else:
             print(f"{camp['name']} ({camp['verification_status']}, {'on' if camp.get('is_active', True) else 'off'} the site)")
             for c in service.confirmations_for(camp["id"]):
-                print(f"  {str(c['sent_at'])[:16]}  {c['status']:<10} to {c['email']} by {c['sent_by']}")
+                what = f"{c.get('season_year')} update" if c.get("kind") == season.KIND else "listing"
+                print(f"  {str(c['sent_at'])[:16]}  {what:<12} {c['status']:<10} to {c['email']} by {c['sent_by']}")
             for ch in service.changes_for(camp["id"], 20):
                 print(f"  {str(ch['created_at'])[:16]}  {ch['field_name']}: {ch.get('old_value')} -> "
                       f"{ch.get('new_value')} ({ch['changed_by']}, {ch.get('actor') or '-'})")
@@ -108,10 +125,20 @@ def main(argv: list[str] | None = None) -> int:
     return 0
 
 
+def january_number(region: str) -> str:
+    c = season.count(region)
+    return (f"{region}: {c.owner_confirmed} of {c.live} live camps have {c.season} facts confirmed by the owner. "
+            f"{c.shows_season} show {c.season} at all; {c.asked} asked and waiting; "
+            f"{c.answered_without_dates} answered without dates.")
+
+
 def _batch(args: argparse.Namespace) -> int:
-    q = service.queue()
+    update = getattr(args, "update", False)
+    q = season.queue() if update else service.queue()
+    what = "the season update" if update else "the listing email"
     if args.cmd == "queue":
-        print(f"Ready to ask ({len(q.ready)}):")
+        print(january_number(args.region) + "\n")
+        print(f"Ready to ask, {what} ({len(q.ready)}):")
         for camp, email in q.ready:
             print(f"  {camp['name']}  ->  {email}")
         print(f"Not ready ({len(q.waiting)}):")
@@ -122,21 +149,35 @@ def _batch(args: argparse.Namespace) -> int:
     if not args.yes:
         for camp, email in batch:
             print(f"would ask {camp['name']}  ->  {email}")
-        print(f"\n{len(batch)} of {len(q.ready)} ready. Preview any one with `preview <camp>`; add --yes to send.")
+        flag = " --update" if update else ""
+        print(f"\n{len(batch)} of {len(q.ready)} ready. Preview any one with `preview <camp>{flag}`; add --yes to send.")
         return 0
     site = get_settings().frontend_url.rstrip("/")
+    send, path = (season.send, "update") if update else (service.send, "confirm")
     for camp, _ in batch:
-        prepared = asyncio.run(service.send(camp, sent_by=args.by))
-        print(f"asked {camp['name']}  ->  {prepared.email.to}  ({site}/owners/confirm/{prepared.token})")
+        prepared = asyncio.run(send(camp, sent_by=args.by))
+        print(f"asked {camp['name']}  ->  {prepared.email.to}  ({site}/owners/{path}/{prepared.token})")
     return 0
 
 
 def _show(m: dict) -> None:
     print(f"{m['id']}  {str(m.get('received_at') or '')[:16]}  {m['status']:<12} from {m['from_email']}"
           + (f"  ({m['reason']})" if m.get("reason") else ""))
-    for c in (m.get("proposal") or {}).get("changes", []):
+    proposal = m.get("proposal") or {}
+    for c in proposal.get("changes", []):
         left = f" {c['spots_left']}" if c.get("spots_left") is not None else ""
         print(f"    {c['change']}{left} for session {c['session_id']}: \"{c['quote']}\"")
+    facts, quotes = proposal.get("season_facts") or {}, proposal.get("quotes") or {}
+    for s in facts.get("sessions") or []:
+        print(f"    {facts['season_year']} session: {s.get('name') or ''} {s['start_date']} to {s['end_date']}"
+              + (f", ${s['price']}" if s.get("price") is not None else ""))
+    if facts.get("price_per_week") is not None:
+        print(f"    {facts['season_year']} price per week: ${facts['price_per_week']}  \"{quotes.get('price', '')}\"")
+    if facts.get("registration_opens"):
+        print(f"    registration opens {facts['registration_opens']} {facts.get('registration_time') or ''}"
+              f"  \"{quotes.get('registration', '')}\"")
+    if proposal.get("ask"):
+        print(f"    will ask the owner to check {len(proposal['ask']['sessions'])} dates: {proposal['ask']['why']}")
 
 
 def _updates(args: argparse.Namespace) -> int:

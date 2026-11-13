@@ -10,16 +10,15 @@
   "state": "ME",
   "zip": "04011",
   "primary_categories": [
-    "special_needs",
-    "nature"
+    "special_needs"
   ],
-  "description_short": "A summer camp at AOEC's Brunswick, Maine location for school-aged youth with autism. Each camper is paired with a 1:1 volunteer support person.",
-  "special_needs_notes": "Designed for school-aged youth with autism. Each camper gets a 1:1 volunteer support person. Number of spots depends on how many volunteers sign up. A camp social story is offered.",
+  "description_short": "Summer camp at the Adaptive Outdoor Education Center's Brunswick, Maine campus for school-aged youth with autism, with a 1:1 volunteer support person for every camper. 2027 dates are not set; families join a waitlist by email.",
+  "special_needs_notes": "For school-aged youth with autism. Each camper gets a 1:1 volunteer support person. Spots depend on how many volunteers sign up; families email to learn more or join the waitlist. The camp publishes a social story for campers.",
   "season_year": 2027,
   "sources": [
     {
       "url": "https://www.adaptiveoutdooreducationcenter.org/camps",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -33,12 +32,11 @@
         "primary_categories",
         "description_short",
         "special_needs_notes"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.adaptiveoutdooreducationcenter.org/camps",
       "kind": "html",
@@ -68,6 +66,25 @@
     "errors": [
       "missing required camp_type",
       "camp_type must be one of ['day', 'sleepaway', 'specialty']"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.adaptiveoutdooreducationcenter.org/camps",
+        "https://www.adaptiveoutdooreducationcenter.org/brunswick",
+        "https://www.adaptiveoutdooreducationcenter.org/_files/ugd/508e8c_bc1ae6e755294dad83731baee2a39efa.pdf (couldn't fetch: over the 8 MB limit)"
+      ],
+      "changes": [
+        "Checked name, operator, email, phone and the Brunswick address against the Camps page; they match.",
+        "Dropped the nature category: the page doesn't describe camp activities. Kept special_needs.",
+        "Rewrote the description and special needs notes to say spots are waitlist-only and 2027 dates are TBD.",
+        "camp_type is still empty, so the validator fails. The Camps page doesn't say day or overnight; the Brunswick campus page says the campus hosts 'day programs', which is not a statement about this camp.",
+        "Could not read the camp social story PDF (over the fetcher's 8 MB limit), which might say day or overnight and the daily schedule."
+      ],
+      "open_questions": [
+        "Camp type isn't stated on the camp's page. Set it to day on the strength of the Brunswick campus 'day programs' wording, ask AOEC, or hold the listing?",
+        "No dates, ages, price or activities are posted, and enrollment is by email waitlist only. Publish a thin listing now or wait for 2027 dates?"
+      ]
+    }
   }
 }

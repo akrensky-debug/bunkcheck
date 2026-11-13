@@ -5,9 +5,7 @@
   "website_url": "https://outrightvt.org/camp-outright",
   "email": "jennifer@outrightvt.org",
   "phone": "802-865-9677",
-  "city": null,
   "state": "VT",
-  "zip": null,
   "camp_type": "sleepaway",
   "primary_categories": [
     "nature",
@@ -40,7 +38,6 @@
   "price_min": 1400,
   "price_max": 1400,
   "financial_aid": true,
-  "transportation": true,
   "meals_included": true,
   "special_needs_notes": "An onsite Wellness Team from UVM Medical Center (two medical residents and a nurse, supervised by a pediatric specialist) is at camp. Three licensed mental health providers are also there, but this is not a therapeutic camp. Medications are kept locked and handed out by medical staff. Allergens are labeled at meals, with vegetarian, vegan and gluten-free options.",
   "swim_waterfront_notes": "Swimming is in a pond and is optional. Two certified lifeguards plus other staff always supervise. Campers must pass a swim test before going past the roped-off shallow end. Swimwear must cover the chest.",
@@ -64,13 +61,12 @@
   "sources": [
     {
       "url": "https://outrightvt.org/camp-outright",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
         "website_url",
         "email",
-        "phone",
         "state",
         "camp_type",
         "primary_categories",
@@ -80,18 +76,29 @@
         "description_short",
         "price_min",
         "price_max",
-        "transportation",
         "meals_included",
         "financial_aid",
         "special_needs_notes",
         "swim_waterfront_notes",
-        "sessions"
+        "sessions",
+        "registration_url",
+        "price_per"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Camp Outright page: 2026 Session 1 July 3-9, Session 2 July 11-17; ages 13-17; full tuition $1,400, no camper turned away for cost; FAQ on meals, wellness team, pond swimming; CampBrain application link. Campsite town not named; only Outright's PO Box 5235, Burlington, VT 05402."
+    },
+    {
+      "url": "https://outrightvt.org/contact",
+      "checked": "2026-11-13",
+      "fields": [
+        "phone"
+      ],
+      "note": "Contact page: 802-865-9677"
     }
   ],
+  "registration_url": "https://outrightvt.campbrainregistration.com/",
+  "price_per": "session",
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://outrightvt.org/camp-outright",
       "kind": "html",
@@ -130,6 +137,24 @@
       "missing required city",
       "missing required zip",
       "city None, VT is not in cities.py"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://outrightvt.org/camp-outright",
+        "https://outrightvt.org/contact",
+        "https://outrightvt.org/camp-outright-transportation-guide"
+      ],
+      "changes": [
+        "Checked the 2026 sessions (July 3 to 9, July 11 to 17), ages 13 to 17, $1,400 tuition and the FAQ details; they match.",
+        "Moved the phone number's source to the Contact page (the camp page doesn't show it).",
+        "Added the CampBrain application link as registration_url and price_per session.",
+        "Cleared transportation: the camp only helps connect carpools and finds volunteer drivers from the Burlington airport; it doesn't run transport. (The airport transportation guide page returned 404.)",
+        "Left city and ZIP empty, so the draft can't validate: the site never says where the campsite is."
+      ],
+      "open_questions": [
+        "The camp's pages never name the campsite's town, only Outright Vermont's PO Box in Burlington (05402). List it under Burlington as the operator's town, or hold until the camp says where it is?"
+      ]
+    }
   }
 }

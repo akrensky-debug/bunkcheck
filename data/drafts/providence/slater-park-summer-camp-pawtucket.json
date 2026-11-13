@@ -1,94 +1,59 @@
 {
   "slug": "slater-park-summer-camp-pawtucket",
   "name": "Slater Park Summer Camp",
-  "operator_name": "City of Pawtucket",
+  "operator_name": "City of Pawtucket Parks & Recreation Division",
   "website_url": "https://pawtucketri.gov/2026-slater-park-summer-camp-info-packet/",
-  "registration_url": "https://pawtucketri.gov/wp-content/uploads/2026/04/2026-REGISTRATION-PACKET-2026.pdf",
+  "registration_url": "https://pawtucketri.recdesk.com/Community/Home",
   "city": "Pawtucket",
   "state": "RI",
-  "zip": "02861",
-  "description_short": "A City of Pawtucket day camp at Slater Memorial Park for Pawtucket residents ages 6-13, weekdays 9am-2pm, in two 3-week sessions. Campers do sports, arts and crafts, games and nature walks, with lunch, pool trips and a camp T-shirt included and optional paid field trips.",
+  "zip": null,
+  "description_short": "The City of Pawtucket's summer day camp in Slater Memorial Park for Pawtucket residents ages 6-13, 9:00am-2:00pm on weekdays in two 3-week sessions. Campers do sports, arts and crafts, field games, nature walks and water games, with free lunch, pool days and paid field trips.",
   "season_year": 2026,
   "sources": [
     {
       "url": "https://pawtucketri.gov/2026-slater-park-summer-camp-info-packet/",
-      "checked": "2026-10-27",
+      "checked": "2026-11-12",
       "fields": [
         "name",
-        "operator_name",
         "website_url",
-        "registration_url",
         "city",
         "state"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "City announcement page for the 2026 packet; 'Registration opens this Friday, May 1st'."
     },
     {
       "url": "https://pawtucketri.gov/wp-content/uploads/2026/04/2026-REGISTRATION-PACKET-2026.pdf",
-      "checked": "2026-10-27",
+      "checked": "2026-11-12",
       "fields": [
-        "camp_type",
-        "street_address",
-        "zip",
+        "operator_name",
+        "registration_url",
         "phone",
+        "camp_type",
         "primary_categories",
         "age_min",
         "age_max",
+        "description_short",
         "activities",
         "price_min",
         "price_max",
         "price_per",
         "meals_included",
-        "description_short",
+        "refund_policy_summary",
         "sessions"
-      ]
-    }
-  ],
-  "camp_type": "day",
-  "street_address": "Slater Memorial Park, 825 Armistice Boulevard",
-  "phone": "401-728-0500 x253",
-  "primary_categories": [
-    "general"
-  ],
-  "age_min": 6,
-  "age_max": 13,
-  "activities": [
-    "Arts & crafts",
-    "Field games",
-    "Street hockey",
-    "Basketball",
-    "Baseball",
-    "Kickball",
-    "Soccer",
-    "Water games",
-    "Nature walks",
-    "Scavenger hunts",
-    "Pool trips",
-    "Field trips",
-    "Talent show"
-  ],
-  "price_min": 40,
-  "price_max": 80,
-  "price_per": "session",
-  "meals_included": true,
-  "sessions": [
-    {
-      "name": "Session 1",
-      "start_date": "2026-06-29",
-      "end_date": "2026-07-17",
-      "price": 40,
-      "availability": "unknown"
+      ],
+      "note": "Scanned 2026 registration packet (read as images, pages 1-9 and 12): ages 6-13; June 29 - August 7, 2026, 9:00AM-2:00PM; Session 1 June 29 - July 17, Session 2 July 20 - August 7; $40 per session / $80 both; lunch free; Pawtucket residents only; online registration May 1 via RecDesk, in person May 16, 2026."
     },
     {
-      "name": "Session 2",
-      "start_date": "2026-07-20",
-      "end_date": "2026-08-07",
-      "price": 40,
-      "availability": "unknown"
+      "url": "https://pawtucketri.gov/parks-and-recreation/",
+      "checked": "2026-11-13",
+      "fields": [
+        "email"
+      ],
+      "note": "Contact pass: address as shown on this page."
     }
   ],
   "review": {
-    "status": "ready",
+    "status": "needs_andrew",
     "source": {
       "url": "https://pawtucketri.gov/2026-slater-park-summer-camp-info-packet/",
       "kind": "html",
@@ -123,8 +88,31 @@
         "quote": "2026 REGISTRATION PACKET 2026"
       }
     ],
-    "errors": [],
-    "first_pass": {
+    "errors": [
+      "missing required zip",
+      "missing required camp_type",
+      "camp_type must be one of ['day', 'sleepaway', 'specialty']"
+    ],
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://pawtucketri.gov/2026-slater-park-summer-camp-info-packet/",
+        "https://pawtucketri.gov/wp-content/uploads/2026/04/2026-REGISTRATION-PACKET-2026.pdf"
+      ],
+      "changes": [
+        "Read the linked 2026 registration packet (a scanned PDF, read page images) and filled: camp_type day, ages 6-13, two 2026 sessions at $40 each ($80 both), price_per session, free lunch (meals_included true), activities, refund policy, Recreation Office phone (401) 728-0500 ext. 253.",
+        "registration_url: the packet PDF -> the RecDesk online registration link the packet gives.",
+        "operator_name -> City of Pawtucket Parks & Recreation Division; description rewritten from the packet; category general."
+      ],
+      "open_questions": [
+        "ZIP still missing: the packet gives no street address for Slater Memorial Park or its office, and Pawtucket has more than one ZIP, so the validator fails on zip. Andrew: supply the park's address (then the Census geocoder can give the ZIP).",
+        "Camp is for Pawtucket residents only (proof of residency required).",
+        "Pages 10-11 of the packet were not read; field trip prices are blank in the packet.",
+        "Nothing posted for 2027 yet."
+      ]
+    },
+    "earlier_pass": {
+      "status": "ready",
       "by": "Claude",
       "date": "2026-10-27",
       "page_checked": "https://pawtucketri.gov/2026-slater-park-summer-camp-info-packet/",
@@ -135,6 +123,79 @@
         "Camp is for Pawtucket residents only (proof of residency required).",
         "Only the 2026 packet is posted; no 2027 dates yet. Optional field trips cost extra."
       ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://pawtucketri.gov/2026-slater-park-summer-camp-info-packet/",
+      "changes": [
+        "Read the linked 2026 registration packet (a scanned PDF, read page images) and filled: camp_type day, ages 6-13, two 2026 sessions at $40 each ($80 both), price_per session, free lunch (meals_included true), activities, refund policy, Recreation Office phone (401) 728-0500 ext. 253.",
+        "registration_url: the packet PDF -> the RecDesk online registration link the packet gives.",
+        "operator_name -> City of Pawtucket Parks & Recreation Division; description rewritten from the packet; category general."
+      ],
+      "for_andrew": [
+        "ZIP still missing: the packet gives no street address for Slater Memorial Park or its office, and Pawtucket has more than one ZIP, so the validator fails on zip. Andrew: supply the park's address (then the Census geocoder can give the ZIP).",
+        "Camp is for Pawtucket residents only (proof of residency required).",
+        "Pages 10-11 of the packet were not read; field trip prices are blank in the packet.",
+        "Nothing posted for 2027 yet."
+      ]
     }
-  }
+  },
+  "phone": "(401) 728-0500 ext. 253",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "age_min": 6,
+  "age_max": 13,
+  "activities": [
+    "Arts & crafts",
+    "Basketball",
+    "Baseball",
+    "Soccer",
+    "Street hockey",
+    "Kickball",
+    "Field games",
+    "Board games",
+    "Drawing",
+    "Face painting",
+    "Nature walks",
+    "Scavenger hunts",
+    "Playground",
+    "Water games",
+    "Pool days",
+    "Field trips",
+    "Talent show"
+  ],
+  "price_min": 40,
+  "price_max": 80,
+  "price_per": "session",
+  "meals_included": true,
+  "refund_policy_summary": "Camp fees are non-refundable (all sales final). Field trip money is not refunded unless the trip is cancelled. A camper with more than 4 absences in a session can lose the spot to the waiting list, with no refund.",
+  "sessions": [
+    {
+      "name": "Session 1",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-17",
+      "price": 40,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 2",
+      "start_date": "2026-07-20",
+      "end_date": "2026-08-07",
+      "price": 40,
+      "availability": "unknown"
+    }
+  ],
+  "email": "jblais@pawtucketri.gov",
+  "contacts": [
+    {
+      "email": "jblais@pawtucketri.gov",
+      "name": "John Blais",
+      "role": "Recreation Director",
+      "url": "https://pawtucketri.gov/parks-and-recreation/",
+      "checked": "2026-11-13"
+    }
+  ]
 }

@@ -29,10 +29,11 @@
   "financial_aid": true,
   "swim_waterfront_notes": "Two swimming pools on site; swimming lessons and pool recreation offered.",
   "season_year": 2026,
+  "phone": "508-672-6340",
   "sources": [
     {
       "url": "https://www.fallriverbgc.org/camp-welch",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -47,9 +48,19 @@
         "age_max",
         "description_short",
         "financial_aid",
-        "swim_waterfront_notes"
+        "swim_waterfront_notes",
+        "phone"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.fallriverbgc.org/contact-us",
+      "checked": "2026-11-13",
+      "fields": [
+        "email",
+        "phone"
+      ],
+      "note": "Contact pass: email and phone as shown on this page."
     }
   ],
   "review": {
@@ -116,7 +127,30 @@
       "missing required camp_type",
       "camp_type must be one of ['day', 'sleepaway', 'specialty']"
     ],
-    "first_pass": {
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.fallriverbgc.org/camp-welch",
+        "https://www.fallriverbgc.org/adopt-a-cabin---camp-welch",
+        "https://www.fallriverbgc.org/all-programs",
+        "https://www.fallriverbgc.org/contact-us",
+        "https://www.fallriverbgc.org/great-summers-event",
+        "https://www.fallriverbgc.org/memberships",
+        "https://www.fallriverbgc.org/3rd---7th-grade"
+      ],
+      "changes": [
+        "Added phone 508-672-6340 (the 'Call Us' link on the Camp Welch page).",
+        "Address check: 127 North Main Street, Assonet, MA 02702 shows in the header of the Camp Welch page only; other pages of the site do not show it and the club's own office is 803 Bedford Street, Fall River (Contact Us). Kept as the camp's address.",
+        "Kept everything else: 165 acres, 20 camp buildings, ball fields, two pools, ages 5-12, the activity list and camperships (financial_aid) all match the page."
+      ],
+      "open_questions": [
+        "Camp type (required) is not on any page: nothing says whether campers go home each day or stay overnight, so camp_type stays empty and the draft cannot pass.",
+        "No dates, prices, hours, registration link or season details for 2026 or 2027 anywhere on the site.",
+        "Camperships are described only as donations; the site does not say how a family applies."
+      ]
+    },
+    "earlier_pass": {
+      "status": "needs_andrew",
       "by": "Claude",
       "date": "2026-10-27",
       "page_checked": "https://www.fallriverbgc.org/camp-welch",
@@ -129,6 +163,23 @@
         "financial_aid true rests on donor-funded 'camperships'; page does not say how families apply",
         "Camp Jack (People Inc. diabetes camp) uses the same Camp Welch site; separate program"
       ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.fallriverbgc.org/camp-welch",
+      "changes": [
+        "Added phone 508-672-6340 (the 'Call Us' link on the Camp Welch page).",
+        "Address check: 127 North Main Street, Assonet, MA 02702 shows in the header of the Camp Welch page only; other pages of the site do not show it and the club's own office is 803 Bedford Street, Fall River (Contact Us). Kept as the camp's address.",
+        "Kept everything else: 165 acres, 20 camp buildings, ball fields, two pools, ages 5-12, the activity list and camperships (financial_aid) all match the page."
+      ],
+      "for_andrew": [
+        "Camp type (required) is not on any page: nothing says whether campers go home each day or stay overnight, so camp_type stays empty and the draft cannot pass.",
+        "No dates, prices, hours, registration link or season details for 2026 or 2027 anywhere on the site.",
+        "Camperships are described only as donations; the site does not say how a family applies."
+      ]
     }
-  }
+  },
+  "email": "reception@fallriverbgc.org",
+  "phone": "1-508-672-6340"
 }

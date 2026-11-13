@@ -9,24 +9,24 @@
   "state": "RI",
   "zip": null,
   "camp_type": "day",
-  "age_min": 6,
-  "age_max": 12,
-  "description_short": "A free day camp run by ECC for children ages 6-12 who live in the Olneyville and Manton neighborhoods of Providence. Each day starts and ends at Joslin Park, runs 10am-3pm, and includes field trips to places like ECC, the zoo and bowling.",
   "activities": [
     "Daily field trips",
     "Trips to ECC",
     "Zoo trips",
     "Bowling"
   ],
-  "price_per_week": 0,
+  "age_min": 6,
+  "age_max": 12,
+  "description_short": "A free day camp run by ECC for children ages 6-12 who live in the Olneyville and Manton neighborhoods of Providence. Each day starts and ends at Joslin Park, runs 10am-3pm, and includes field trips to places like ECC, the zoo and bowling.",
   "price_min": 0,
   "price_max": 0,
+  "price_per_week": 0,
   "price_per": "week",
   "season_year": 2026,
   "sources": [
     {
       "url": "https://www.eccri.org/citycamp",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -45,7 +45,15 @@
         "price_per_week",
         "price_per"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "City Camp page: free day camp for campers living in Olneyville and Manton, Joslin Park on Florence Street, 10am-3pm, ages 6-12; page thanks families for 'another amazing summer' (2026)"
+    },
+    {
+      "url": "https://www.eccri.org/staff",
+      "checked": "2026-11-13",
+      "fields": [
+        "email"
+      ],
+      "note": "Contact pass: address as shown on this page."
     }
   ],
   "review": {
@@ -78,7 +86,25 @@
     "errors": [
       "missing required zip"
     ],
-    "first_pass": {
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.eccri.org/citycamp",
+        "https://www.eccri.org/acaaccreditation"
+      ],
+      "changes": [
+        "Set season_year 2026 (fixes missing required season_year): the page thanks families for the summer just ended",
+        "Verified name, ages 6-12, 10am-3pm, free, Joslin Park meeting place, phone and field trips against the page; no other changes"
+      ],
+      "open_questions": [
+        "ZIP is still missing (required): the page gives only 'Joslin Park (behind William D'abate School) on Florence Street', no house number, and the Census geocoder cannot be read through the repo fetcher (it refuses JSON). Needs a ZIP from a person",
+        "City Camp is only for children who live in the Olneyville and Manton sections of Providence. Decide whether a residency-restricted free camp belongs in the public listing",
+        "No 2027 dates or registration information posted; registration is by phone (401-568-4055)",
+        "ECC is ACA accredited, but the page does not say City Camp is covered, so aca_accredited stays null"
+      ]
+    },
+    "earlier_pass": {
+      "status": "needs_andrew",
       "by": "Claude",
       "date": "2026-10-27",
       "page_checked": "https://www.eccri.org/citycamp",
@@ -89,6 +115,38 @@
         "zip missing: site is Joslin Park, Florence Street, Providence with no street number, so the Census geocoder cannot place it (Olneyville is likely 02909, not confirmed)",
         "Open only to children living in Olneyville and Manton; no 2027 dates posted"
       ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.eccri.org/citycamp",
+      "changes": [
+        "Set season_year 2026 (fixes missing required season_year): the page thanks families for the summer just ended",
+        "Verified name, ages 6-12, 10am-3pm, free, Joslin Park meeting place, phone and field trips against the page; no other changes"
+      ],
+      "for_andrew": [
+        "ZIP is still missing (required): the page gives only 'Joslin Park (behind William D'abate School) on Florence Street', no house number, and the Census geocoder cannot be read through the repo fetcher (it refuses JSON). Needs a ZIP from a person",
+        "City Camp is only for children who live in the Olneyville and Manton sections of Providence. Decide whether a residency-restricted free camp belongs in the public listing",
+        "No 2027 dates or registration information posted; registration is by phone (401-568-4055)",
+        "ECC is ACA accredited, but the page does not say City Camp is covered, so aca_accredited stays null"
+      ]
     }
-  }
+  },
+  "email": "ally@eccri.org",
+  "contacts": [
+    {
+      "email": "ally@eccri.org",
+      "name": "Ally Reardon",
+      "role": "Camp & Program Director",
+      "url": "https://www.eccri.org/staff",
+      "checked": "2026-11-13"
+    },
+    {
+      "email": "sara@eccri.org",
+      "name": "Sara Clarke",
+      "role": "Executive Director",
+      "url": "https://www.eccri.org/staff",
+      "checked": "2026-11-13"
+    }
+  ]
 }

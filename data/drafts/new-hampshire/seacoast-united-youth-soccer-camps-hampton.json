@@ -26,7 +26,7 @@
   "sources": [
     {
       "url": "https://www.seacoastunited.com/page/youth-camps",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -43,12 +43,11 @@
         "age_max",
         "description_short",
         "refund_policy_summary"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.seacoastunited.com/page/youth-camps",
       "kind": "html",
@@ -99,6 +98,24 @@
     ],
     "errors": [
       "missing required season_year"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.seacoastunited.com/page/youth-camps",
+        "https://www.seacoastunited.com/page/camps",
+        "https://www.seacoastunited.com/page/residential-camps",
+        "https://www.seacoastunited.com/page/advanced-training-camps",
+        "https://register.seacoastunited.com/page/youth-camps"
+      ],
+      "changes": [
+        "No field changes: the filled fields match the youth camps page. No season, dates or prices on any camp page, so season_year stays blank and check_draft fails on it."
+      ],
+      "open_questions": [
+        "This is the NH twin of the Maine draft (maine/seacoast-united-youth-soccer-camps), the same club-wide overview of soccer camps at many sites in MA, ME and NH, placed at the club's P.O. Box in Hampton. No NH camp site, date or price is posted; the residential page says '2027 Residential Camps will be available in January'. The NH sites named are Phillips Exeter (Advanced Training) and Brewster Academy (Residential). Drop both twins, or wait and list specific NH sites once 2027 camps are posted?",
+        "Mixed formats: Residential Camps are overnight (5 days, 4 nights, meals included) with a commuter option; the others are day clinics. camp_type is specialty.",
+        "Age labels conflict on the camp's pages: Residential says '9-18 YEARS' and 'U7 to U18'; Goalkeeper says 'all ages' and 'U9 to U19'."
+      ]
+    }
   }
 }

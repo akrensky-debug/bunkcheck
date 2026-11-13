@@ -24,7 +24,7 @@
   "sources": [
     {
       "url": "https://sailtoprevail.org/",
-      "checked": "2026-10-27",
+      "checked": "2026-10-13",
       "fields": [
         "name",
         "operator_name",
@@ -45,16 +45,16 @@
       "note": "Drafted by the listing tool from this page"
     },
     {
-      "url": "https://sailtoprevail.org/newport/",
-      "checked": "2026-10-27",
+      "url": "https://sailtoprevail.org/about-us/contact-us/",
+      "checked": "2026-11-13",
       "fields": [
-        "financial_aid"
-      ]
+        "email"
+      ],
+      "note": "Contact pass: address as shown on this page."
     }
   ],
-  "financial_aid": true,
   "review": {
-    "status": "needs_andrew",
+    "status": "drop",
     "source": {
       "url": "https://sailtoprevail.org/",
       "kind": "html",
@@ -96,7 +96,23 @@
     "errors": [
       "missing required season_year"
     ],
-    "first_pass": {
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://sailtoprevail.org/",
+        "https://sailtoprevail.org/newport/",
+        "https://sailtoprevail.org/registration/"
+      ],
+      "changes": [
+        "No field changes made."
+      ],
+      "open_questions": [
+        "Not a camp: Sail To Prevail runs two-hour adaptive sailing outings for children and adults with disabilities (and veterans), booked by the boat ($70 per boat, weekdays 10:00 or 1:00, mid-June to mid-August) by emailing the sailing director. There are no camp sessions, ages or season year, so the validator cannot pass.",
+        "Homepage says 'Registration opens in April!' with no year (copyright 2016)."
+      ]
+    },
+    "earlier_pass": {
+      "status": "needs_andrew",
       "by": "Claude",
       "date": "2026-10-27",
       "page_checked": "https://sailtoprevail.org/",
@@ -108,6 +124,28 @@
         "No season year on the site: the Newport page still says 'Our 2020 Newport programming will run from June 29-August 14, 2020' and the homepage says only 'Registration opens in April!'. season_year stays missing.",
         "ZIP 02840 comes from the P.O. Box mailing address; docks are at Fort Adams State Park, Newport."
       ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://sailtoprevail.org/",
+      "changes": [
+        "No field changes made."
+      ],
+      "for_andrew": [
+        "Not a camp: Sail To Prevail runs two-hour adaptive sailing outings for children and adults with disabilities (and veterans), booked by the boat ($70 per boat, weekdays 10:00 or 1:00, mid-June to mid-August) by emailing the sailing director. There are no camp sessions, ages or season year, so the validator cannot pass.",
+        "Homepage says 'Registration opens in April!' with no year (copyright 2016)."
+      ]
     }
-  }
+  },
+  "email": "sailingdirector@sailtoprevail.org",
+  "contacts": [
+    {
+      "email": "paulcallahan@sailtoprevail.org",
+      "name": "Paul Callahan",
+      "role": "Chief Executive Officer",
+      "url": "https://sailtoprevail.org/about-us/contact-us/",
+      "checked": "2026-11-13"
+    }
+  ]
 }

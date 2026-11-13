@@ -27,7 +27,7 @@
   "sources": [
     {
       "url": "https://www.lincolnri.gov/180/Youth-Programs",
-      "checked": "2026-10-27",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -44,6 +44,14 @@
         "description_short"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://www.lincolnri.gov/180/Youth-Programs",
+      "checked": "2026-11-13",
+      "fields": [
+        "email"
+      ],
+      "note": "Contact pass: address as shown on this page."
     }
   ],
   "review": {
@@ -86,7 +94,22 @@
       "missing required zip",
       "missing required season_year"
     ],
-    "first_pass": {
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.lincolnri.gov/180/Youth-Programs"
+      ],
+      "changes": [
+        "No field changes: grades 2-8, 5 major parks, 9 am-4 pm, activities and the 'free to enter and leave' note match the page. Source checked date updated."
+      ],
+      "open_questions": [
+        "Is a drop-in town playground program (children 'free to enter and leave the parks at their own volition', sign-up at the park) a camp for Bunkcheck? It is not a drop-off day camp.",
+        "No year anywhere on the page ('first day of camp is July 1st' is a standing description), so season_year cannot be set; the validator fails on season_year and zip.",
+        "No park addresses are given (it runs at '5 major parks'), so no street address or ZIP; Lincoln has more than one ZIP."
+      ]
+    },
+    "earlier_pass": {
+      "status": "needs_andrew",
       "by": "Claude",
       "date": "2026-10-27",
       "page_checked": "https://www.lincolnri.gov/180/Youth-Programs",
@@ -97,6 +120,36 @@
         "No ZIP: program runs at 5 unnamed parks and Lincoln, RI has several ZIP codes",
         "No price stated; registration is described both as RecDesk and in person at the park"
       ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.lincolnri.gov/180/Youth-Programs",
+      "changes": [
+        "No field changes: grades 2-8, 5 major parks, 9 am-4 pm, activities and the 'free to enter and leave' note match the page. Source checked date updated."
+      ],
+      "for_andrew": [
+        "Is a drop-in town playground program (children 'free to enter and leave the parks at their own volition', sign-up at the park) a camp for Bunkcheck? It is not a drop-off day camp.",
+        "No year anywhere on the page ('first day of camp is July 1st' is a standing description), so season_year cannot be set; the validator fails on season_year and zip.",
+        "No park addresses are given (it runs at '5 major parks'), so no street address or ZIP; Lincoln has more than one ZIP."
+      ]
     }
-  }
+  },
+  "email": "parksrec@lincolnri.org",
+  "contacts": [
+    {
+      "email": "swinslow@lincolnri.org",
+      "name": "Scott Winslow",
+      "role": "Parks and Recreation Director",
+      "url": "https://www.lincolnri.gov/180/Youth-Programs",
+      "checked": "2026-11-13"
+    },
+    {
+      "email": "ggervais@lincolnri.org",
+      "name": "Grace Gervais",
+      "role": "Assistant Director",
+      "url": "https://www.lincolnri.gov/180/Youth-Programs",
+      "checked": "2026-11-13"
+    }
+  ]
 }

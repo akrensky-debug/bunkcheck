@@ -17,11 +17,6 @@
     "nature",
     "faith"
   ],
-  "age_min": 7,
-  "age_max": 16,
-  "grade_min": 3,
-  "grade_max": 11,
-  "description_short": "A co-ed Jewish overnight camp on Salmon Lake in Maine's Belgrade Lakes region, for ages 7-16. It offers 3.5-week and 7-week sessions covering land and water sports, arts, performing arts and wilderness trips, with Shabbat observance and a kosher kitchen.",
   "activities": [
     "Sailing",
     "Climbing wall",
@@ -42,12 +37,20 @@
     "Color war",
     "Shabbat programming"
   ],
+  "gender_policy": "coed",
+  "religious_affiliation": "Jewish",
+  "age_min": 7,
+  "age_max": 16,
+  "grade_min": 3,
+  "grade_max": 11,
+  "description_short": "Co-ed Jewish overnight camp on Salmon Lake in Belgrade, Maine, for ages 7 to 16, running since 1922. Campers choose from land and water sports, arts, theater and wilderness trips in 3.5-week or 7-week sessions, with Shabbat each week and a kosher kitchen.",
   "price_min": 10800,
   "price_max": 17700,
+  "price_per": "session",
   "transportation": true,
   "meals_included": true,
   "special_needs_notes": "Diet only: kosher kitchen, with vegetarian and gluten-free options. The camp says it is nut and sesame aware and can handle certain food allergies, with details on request. The page does not mention support for other special needs.",
-  "swim_waterfront_notes": "On Salmon Lake, which the camp describes as a clear, sand-bottom, spring-fed lake with water around 75-80°F. Activities include swim lessons, general swim, sailing, canoeing and water-skiing with four tournament ski boats.",
+  "swim_waterfront_notes": "On Salmon Lake, described by the camp as clear, sand-bottomed and spring-fed, around 75 to 80°F. Swim instruction, general swim, sailing, canoeing, kayaking, paddleboarding, an aqua park, and water-skiing with four tournament ski boats.",
   "season_year": 2027,
   "sessions": [
     {
@@ -75,12 +78,11 @@
   "sources": [
     {
       "url": "https://www.modin.com/parents/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
         "website_url",
-        "registration_url",
         "email",
         "phone",
         "city",
@@ -88,6 +90,8 @@
         "camp_type",
         "primary_categories",
         "activities",
+        "gender_policy",
+        "religious_affiliation",
         "age_min",
         "age_max",
         "grade_min",
@@ -95,17 +99,25 @@
         "description_short",
         "price_min",
         "price_max",
+        "price_per",
         "transportation",
         "meals_included",
         "special_needs_notes",
         "swim_waterfront_notes",
         "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Grades are entering grades 3-11 (grade finished 2nd-10th). Prices are the cash/ACH rate; cards are 3% more."
+    },
+    {
+      "url": "https://www.modin.com/enrollment",
+      "checked": "2026-11-13",
+      "fields": [
+        "registration_url"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.modin.com/parents/",
       "kind": "html",
@@ -150,6 +162,28 @@
     ],
     "errors": [
       "missing required zip"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.modin.com/parents/",
+        "https://www.modin.com/contact/",
+        "https://www.modin.com/enrollment",
+        "https://www.modin.com/programs/",
+        "https://www.modin.com/",
+        "https://www.modin.com/heritage/",
+        "https://www.modin.com/facilities/"
+      ],
+      "changes": [
+        "Confirmed 2027 sessions: Full June 23 to August 8 ($17,700), First June 23 to July 18 and Second July 18 to August 8 ($10,800 each). The table is still headed 'Summer 2026' but every date says 2027, and the enrollment form is titled 2027 Enrollment.",
+        "Added gender_policy coed and religious_affiliation Jewish from the parents FAQ.",
+        "Ages 7 to 16 and grades 3 to 11 (entering) confirmed from the unit table, which lists grade finished 2nd to 10th.",
+        "Added price_per session; rewrote the description and waterfront notes from the parents and programs pages.",
+        "ZIP still blank: no page on modin.com gives the camp's street address or a Maine ZIP; the only address is the Scarsdale, NY office."
+      ],
+      "open_questions": [
+        "No ZIP: the camp's site gives only its Scarsdale, NY office address and says the camp is in Belgrade on Salmon Lake. Belgrade has more than one ZIP (Belgrade and Belgrade Lakes), so I didn't pick one. Ask the camp, or accept a ZIP from another source?"
+      ]
+    }
   }
 }

@@ -9,7 +9,7 @@
   "street_address": "Portsmouth Abbey School, 285 Cory's Lane",
   "city": "Portsmouth",
   "state": "RI",
-  "zip": null,
+  "zip": "02871",
   "camp_type": "specialty",
   "primary_categories": [
     "academic"
@@ -18,7 +18,7 @@
   "age_max": 16,
   "grade_min": 5,
   "grade_max": 11,
-  "description_short": "Debate, public speaking and Model UN camp at Portsmouth Abbey School, offered as a 5-day day camp for rising 5th–10th graders and a 6-day/6-night overnight camp for rising 8th–11th graders. All ability levels are welcome.",
+  "description_short": "Debate, public speaking and Model UN camp at Portsmouth Abbey School: a 5-day day camp (8:30am-3:30pm) for rising 5th-10th graders and a 6-day/6-night overnight camp for rising 8th-11th graders. All ability levels are welcome.",
   "activities": [
     "Parliamentary debate",
     "Public speaking",
@@ -28,33 +28,34 @@
     "Optional swim (overnight)",
     "Rec program & outings (overnight)"
   ],
-  "price_per_week": 635,
-  "price_min": 635,
-  "price_max": 1930,
+  "price_per_week": 645,
+  "price_min": 645,
+  "price_max": 1990,
   "transportation": true,
   "swim_waterfront_notes": "The overnight program includes an optional daily swim. The page gives no details about the pool or waterfront.",
-  "season_year": 2026,
+  "season_year": 2027,
   "price_per": "week",
   "sessions": [
     {
       "name": "Day Camp (5 day traditional program)",
-      "start_date": "2026-07-27",
-      "end_date": "2026-07-31",
-      "price": 635,
+      "start_date": "2027-08-02",
+      "end_date": "2027-08-06",
+      "price": 645,
       "availability": "unknown"
     },
     {
       "name": "Overnight Camp (6 day / 6 night enriched program)",
-      "start_date": "2026-07-26",
-      "end_date": "2026-08-01",
-      "price": 1930,
+      "start_date": "2027-08-01",
+      "end_date": "2027-08-07",
+      "price": 1990,
       "availability": "unknown"
     }
   ],
+  "refund_policy_summary": "Full refund minus a $10 processing fee for cancellations 28 days or more before camp starts; a 50% cancellation fee within 28 days; no refunds once camp has started. Full refund if Debate Camp cancels.",
   "sources": [
     {
       "url": "https://www.debatecamp.com/portsmouth",
-      "checked": "2026-10-13",
+      "checked": "2026-11-12",
       "fields": [
         "name",
         "operator_name",
@@ -77,11 +78,32 @@
         "price_max",
         "price_per_week",
         "price_per",
-        "transportation",
         "swim_waterfront_notes",
         "sessions"
       ],
       "note": "Drafted by the listing tool from this page"
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=285+Corys+Lane&city=Portsmouth&state=RI&benchmark=Public_AR_Current&format=html",
+      "checked": "2026-11-12",
+      "fields": [
+        "zip"
+      ],
+      "note": "ZIP from the US Census geocoder for 285 CORYS LN, PORTSMOUTH, RI, 02871"
+    },
+    {
+      "url": "https://www.debatecamp.com/transport-overnight",
+      "checked": "2026-11-12",
+      "fields": [
+        "transportation"
+      ]
+    },
+    {
+      "url": "https://www.debatecamp.com/_files/ugd/0520c6_02b5ec74861b4fadbe086acd1ed25c92.pdf",
+      "checked": "2026-11-12",
+      "fields": [
+        "refund_policy_summary"
+      ]
     }
   ],
   "review": {
@@ -120,13 +142,59 @@
     "errors": [
       "missing required zip"
     ],
-    "first_pass": {
+    "claude_check": {
+      "date": "2026-11-12",
+      "pages": [
+        "https://www.debatecamp.com/portsmouth",
+        "https://www.debatecamp.com/overnight-ri",
+        "https://www.debatecamp.com/transportation-day",
+        "https://www.debatecamp.com/transport-overnight",
+        "https://www.debatecamp.com/register",
+        "https://www.debatecamp.com/_files/ugd/0520c6_02b5ec74861b4fadbe086acd1ed25c92.pdf",
+        "https://geocoding.geo.census.gov/geocoder/locations/address?street=285+Corys+Lane&city=Portsmouth&state=RI&benchmark=Public_AR_Current&format=html"
+      ],
+      "changes": [
+        "Updated to the 2027 season: Day Camp August 2-6, 2027 at $645 (regular rate); Overnight Camp August 1-7, 2027 at $1990 (regular rate, Portsmouth page). Early bird rates to Jan 31 are $630 and $1925.",
+        "price_min/price_per_week 635 -> 645, price_max 1930 -> 1990; season_year 2026 -> 2027.",
+        "Added ZIP 02871 from the US Census geocoder for 285 Cory's Lane, Portsmouth.",
+        "Added refund policy from the camp's refund policy PDF.",
+        "Transportation now sourced to the overnight transport page (escorted Amtrak trips from New York, Stamford and Boston to Providence, $80-$210 round trip). The day-camp transport page no longer lists a Providence bus for Portsmouth.",
+        "Description now gives day-camp hours (8:30am-3:30pm)."
+      ],
+      "open_questions": [
+        "Overnight price conflict on the camp's own site: the Portsmouth page says '$1990.00 REGULAR RATE' for 2027, the Rhode Island overnight page says '$1930.00 USD - REGULAR RATE' (the 2026 figure); both say $1925 early bird. Draft uses $1990. Andrew to confirm.",
+        "The Portsmouth page says '40 participant limit / week'; the overnight page says '30 participant limit / week'.",
+        "Day-camp transport for Portsmouth is not listed on the day transport page.",
+        "Day camp lunch is an extra option; meals_included left blank because day and overnight differ."
+      ]
+    },
+    "earlier_pass": {
+      "status": "needs_andrew",
       "by": "Claude",
       "date": "2026-10-27",
       "page_checked": "https://www.debatecamp.com/portsmouth",
       "changes": [],
       "for_andrew": [
         "refused: ask the owner for the brochure (site returned 429 with a bot-check page; no fields could be verified, zip still missing)"
+      ]
+    },
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-12",
+      "page_checked": "https://www.debatecamp.com/portsmouth",
+      "changes": [
+        "Updated to the 2027 season: Day Camp August 2-6, 2027 at $645 (regular rate); Overnight Camp August 1-7, 2027 at $1990 (regular rate, Portsmouth page). Early bird rates to Jan 31 are $630 and $1925.",
+        "price_min/price_per_week 635 -> 645, price_max 1930 -> 1990; season_year 2026 -> 2027.",
+        "Added ZIP 02871 from the US Census geocoder for 285 Cory's Lane, Portsmouth.",
+        "Added refund policy from the camp's refund policy PDF.",
+        "Transportation now sourced to the overnight transport page (escorted Amtrak trips from New York, Stamford and Boston to Providence, $80-$210 round trip). The day-camp transport page no longer lists a Providence bus for Portsmouth.",
+        "Description now gives day-camp hours (8:30am-3:30pm)."
+      ],
+      "for_andrew": [
+        "Overnight price conflict on the camp's own site: the Portsmouth page says '$1990.00 REGULAR RATE' for 2027, the Rhode Island overnight page says '$1930.00 USD - REGULAR RATE' (the 2026 figure); both say $1925 early bird. Draft uses $1990. Andrew to confirm.",
+        "The Portsmouth page says '40 participant limit / week'; the overnight page says '30 participant limit / week'.",
+        "Day-camp transport for Portsmouth is not listed on the day transport page.",
+        "Day camp lunch is an extra option; meals_included left blank because day and overnight differ."
       ]
     }
   }
