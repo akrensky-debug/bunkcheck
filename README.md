@@ -188,6 +188,15 @@ to from Google, Apple or Outlook Calendar.
 - Smoke-test any endpoint: `python -m campfinder.scripts.check_mcp https://<api>/claude/mcp`.
 - Assistant env: `PUBLIC_API_URL` (server icons), `OPENAI_APPS_CHALLENGE`, optional
   `CHATGPT_WIDGET_DOMAIN` (defaults to `FRONTEND_URL`) and `MCP_RATE_PER_MINUTE` (default 600).
+- Every per-IP limit reads the caller's address from `CLIENT_IP_HEADER` (default `x-real-ip`,
+  which Railway's edge sets). A caller's own `X-Forwarded-For` is never trusted. Behind
+  Cloudflare, set it to `cf-connecting-ip`. See `campfinder/client_ip.py`.
+- Family assistant limits (`campfinder/agent/budget.py`, `docs/security.md`): chats per
+  minute per IP (`AGENT_CHATS_PER_MINUTE_IP`, 20) and per family (`AGENT_CHATS_PER_MINUTE_FAMILY`,
+  6); new guest families per IP (`GUEST_FAMILIES_PER_HOUR_IP`, 10; `GUEST_FAMILIES_PER_DAY_IP`, 30);
+  daily spend in US dollars per guest family (`AGENT_GUEST_DAILY_USD`, 1), per signed-in family
+  (`AGENT_FAMILY_DAILY_USD`, 5), per IP across guest families (`AGENT_GUEST_IP_DAILY_USD`, 3) and
+  for everyone (`AGENT_GLOBAL_DAILY_USD`, 50). Requires `migrations/0029_ai_spend.sql`.
 
 ### Year-round activities
 

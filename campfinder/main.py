@@ -14,6 +14,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse, PlainTextResponse
 from fastapi.staticfiles import StaticFiles
 
+from campfinder.client_ip import client_ip_from_scope, rate_key
 from campfinder.config import get_settings
 from campfinder.database import check_connection, close_pool, init_pool
 from campfinder.services.errors import NotFound
@@ -129,9 +130,7 @@ def _rate_limited(asgi_app, per_minute: int):
     async def wrapped(scope, receive, send):
         if scope["type"] != "http" or not any(scope["path"].startswith(p) for p in mcp_servers):
             return await asgi_app(scope, receive, send)
-        headers = dict(scope.get("headers") or [])
-        forwarded = headers.get(b"x-forwarded-for", b"").decode().split(",")[0].strip()
-        ip = forwarded or (scope.get("client") or ("unknown",))[0]
+        ip = rate_key(client_ip_from_scope(scope)) or "unknown"
         now = time.monotonic()
         window = windows.setdefault(ip, deque())
         while window and now - window[0] > 60:
