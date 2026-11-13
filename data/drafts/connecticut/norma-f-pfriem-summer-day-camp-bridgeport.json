@@ -16,7 +16,6 @@
     "performing_arts",
     "academic"
   ],
-  "description_short": "A weekly summer day camp at the Shehan Center in Bridgeport that mixes sports, swimming, arts and performing arts with math, STEM and literacy classes, plus special events and field trips.",
   "activities": [
     "swimming",
     "arts and crafts",
@@ -34,7 +33,8 @@
     "literacy",
     "field trips"
   ],
-  "swim_waterfront_notes": "Swimming is listed among camp activities using the center's facilities. A separate Summer Swim Camp ran August 17–21, 2026. Pool details and swim supervision are not described.",
+  "description_short": "A weekly summer day camp at the Shehan Center in Bridgeport that mixes sports, swimming, arts and performing arts with math, STEM and literacy classes, plus special events and field trips.",
+  "swim_waterfront_notes": "Swimming is one of the camp activities, using the Shehan Center's own facilities. The page gives no pool or supervision details.",
   "season_year": 2026,
   "sessions": [
     {
@@ -92,26 +92,12 @@
       "end_date": "2026-08-14",
       "price": null,
       "availability": "unknown"
-    },
-    {
-      "name": "Basketball Camp",
-      "start_date": "2026-08-17",
-      "end_date": "2026-08-21",
-      "price": null,
-      "availability": "unknown"
-    },
-    {
-      "name": "Swim Camp",
-      "start_date": "2026-08-17",
-      "end_date": "2026-08-21",
-      "price": null,
-      "availability": "unknown"
     }
   ],
   "sources": [
     {
       "url": "https://www.shehancenter.org/programs/summer-day-camp/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -127,12 +113,11 @@
         "description_short",
         "swim_waterfront_notes",
         "sessions"
-      ],
-      "note": "Drafted by the listing tool from this page"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.shehancenter.org/programs/summer-day-camp/",
       "kind": "html",
@@ -168,6 +153,19 @@
         "quote": "Summer Swim Camp Flyer 2026"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.shehancenter.org/programs/summer-day-camp/"
+      ],
+      "changes": [
+        "Checked every field against the Summer Day Camp page; name, contact, address, activities and the eight weekly 2026 sessions (June 22 to August 14) match.",
+        "Removed the Basketball Camp and Swim Camp sessions (August 17-21): they are separate programs with their own flyers, not day camp weeks.",
+        "Shortened the swim note and dropped the separate Swim Camp from it.",
+        "Ages, prices and hours are only in the Registration and Information Packet, which the page text doesn't link in a way I could open, so they stay empty."
+      ],
+      "open_questions": []
+    }
   }
 }

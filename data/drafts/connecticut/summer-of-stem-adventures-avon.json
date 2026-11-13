@@ -93,7 +93,7 @@
   "sources": [
     {
       "url": "https://talcottscience.org/summer/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -114,14 +114,34 @@
         "description_short",
         "price_min",
         "price_max",
-        "transportation",
-        "sessions"
+        "sessions",
+        "price_per_week",
+        "price_per"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "2026 season; each one-week class costs $515 to $605 early bird, $575 to $675 regular, plus a $6.50 registration fee"
+    },
+    {
+      "url": "https://talcottscience.org/summer/summer-policies",
+      "checked": "2026-11-13",
+      "fields": [
+        "extended_care",
+        "meals_included",
+        "refund_policy_summary",
+        "special_needs_notes"
+      ],
+      "note": "Hours 9:00 to 4:00, no before or after care; bring lunch and snack"
+    },
+    {
+      "url": "https://talcottscience.org/summer/transportation/",
+      "checked": "2026-11-13",
+      "fields": [
+        "transportation"
+      ],
+      "note": "Bus is provided and required, from stops in West Hartford and Avon"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://talcottscience.org/summer/",
       "kind": "html",
@@ -169,6 +189,28 @@
         "quote": "the bus experience was fantastic"
       }
     ],
-    "errors": []
-  }
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://talcottscience.org/summer/",
+        "https://talcottscience.org/summer/summer-policies",
+        "https://talcottscience.org/summer/transportation/"
+      ],
+      "changes": [
+        "Added price_per_week $625, the regular price of most one-week classes in 2026 (range stays $515 to $675).",
+        "Added extended_care false and meals_included false: hours are 9 to 4 with no before or after care, and children bring lunch.",
+        "Added refund policy and special needs notes from the policies page.",
+        "Moved the transportation source to the transportation page, which says the bus from West Hartford or Avon is provided and required.",
+        "Note for the listing: the center calls this a classroom-based summer program, not a day camp; camp_type stays day."
+      ],
+      "open_questions": []
+    }
+  },
+  "price_per_week": 625,
+  "price_per": "week",
+  "extended_care": false,
+  "meals_included": false,
+  "refund_policy_summary": "More than two weeks before the start: full credit or a 90% refund. Between two weeks and two business days before: 50% refund or credit. Less than two business days before: no refund. No refunds for days missed through illness.",
+  "special_needs_notes": "Children with special needs are welcome if they can follow the behavior policy, are toilet trained and can follow spoken instructions. Families may bring their own paraprofessional; the center cannot provide aides. A nut-free table is set up at snack and lunch."
 }
