@@ -90,11 +90,13 @@ async def test_ambiguous_same_weeks_asks_back_then_takes_yes(camp, db, outbox):
     done = await updates.apply(first["id"], handled_by="Andrew")
     assert done["status"] == "asked"
     camp_row = rows(db, "camps", id=CAMP)[0]
-    assert camp_row["season_year"] == 2026 and camp_row["price_per_week"] == 295   # the clear parts are in
+    assert camp_row["season_year"] == 2026 and camp_row["price_per_week"] == 310   # $295 waits for the dates
+    assert season.held_price(CAMP, 2027) == 295
     question = outbox[-1]
     assert question.subject == "One question about your 2027 dates: Lakeside Arts"
     assert "Week 2: Mon Jul 5 to Fri Jul 9, 2027" in question.text
-    assert "Mon Jul 5 is the Fourth of July holiday" in question.text
+    assert "Week 2: Mon Jul 5 is the Fourth of July holiday" in question.text
+    assert "once your 2027 dates are on the listing" in question.text
     assert 'Reply "yes" if these are right' in question.text and "We haven't put them on your listing yet" in question.text
 
     # Their next reply is read against the question.
@@ -102,7 +104,8 @@ async def test_ambiguous_same_weeks_asks_back_then_takes_yes(camp, db, outbox):
                                                                                          dates_quote="Yes")))
     assert yes["status"] == "proposed" and yes["proposal"]["answers"] == str(first["id"])
     await updates.apply(yes["id"], handled_by="Andrew")
-    assert rows(db, "camps", id=CAMP)[0]["season_year"] == 2027
+    camp_row = rows(db, "camps", id=CAMP)[0]
+    assert camp_row["season_year"] == 2027 and camp_row["price_per_week"] == 295     # the dates bring the price
     assert sorted(s["start_date"] for s in rows(db, "sessions", camp_id=CAMP)) == ["2027-06-28", "2027-07-05"]
     assert updates.get_message(first["id"])["status"] == "applied"
     assert updates.pending_question(CAMP) is None

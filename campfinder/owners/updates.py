@@ -266,7 +266,8 @@ def plan_season(camp: dict[str, Any], sessions: list[dict[str, Any]], read: Seas
         new = [season.NewSession(name=m.name, start_date=m.start_date, end_date=m.end_date) for m in moved]
         if why:
             ask = {"why": why, "quote": read.dates_quote, "sessions": [s.model_dump(mode="json") for s in new],
-                   "lines": [season.session_line(s) for s in new], "notes": [m.note for m in moved if m.note]}
+                   "lines": [season.session_line(s) for s in new],
+                   "notes": [f"{m.name or season.day(m.start_date)}: {m.note}" for m in moved if m.note]}
         else:
             facts.sessions = new
             quotes["sessions"] = read.dates_quote or ""
