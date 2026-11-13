@@ -211,7 +211,7 @@ def test_a_fallback_or_unknown_model_errs_high():
 
 
 # ---------------------------------------------------------------------------
-# The Postgres functions (migrations/0019_ai_spend.sql)
+# The Postgres functions (migrations/0029_ai_spend.sql)
 # ---------------------------------------------------------------------------
 
 

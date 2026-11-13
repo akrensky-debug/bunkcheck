@@ -11,7 +11,7 @@ on requests. Four caps, checked before a chat and again after every model call:
   address    AGENT_GUEST_IP_DAILY_USD    all guest families from one IP, so making a new guest
                                          family doesn't buy a new allowance
 
-The family and everyone totals are kept in Postgres (ai_spend_daily, migration 0019) so they
+The family and everyone totals are kept in Postgres (ai_spend_daily, migration 0029) so they
 hold across deploys and replicas. The per-address total is in memory: it resets on deploy,
 and the everyone cap backs it up. A day is a US Eastern day, so "tomorrow" means tomorrow
 for the parents we serve.
