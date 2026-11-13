@@ -3,12 +3,13 @@
   "name": "Westwood Park Day Camps (Sports Camps at Westwood Park)",
   "operator_name": "YMCA of Greater Nashua",
   "website_url": "https://nmymca.org/camps/westwood-park-day-camps/",
-  "registration_url": "https://nmymca.org/programregistration",
+  "registration_url": "https://operations.daxko.com/Online/5286/ProgramsV2/Search.mvc?category_ids=CAT352&location_ids=B249",
   "email": "camp@nmymca.org",
   "phone": "603.598.1533",
-  "city": null,
-  "state": null,
-  "zip": null,
+  "street_address": "90 Northwest Boulevard",
+  "city": "Nashua",
+  "state": "NH",
+  "zip": "03063",
   "camp_type": "day",
   "primary_categories": [
     "sports"
@@ -28,9 +29,10 @@
     "Arts and crafts (Girls on the Go!)"
   ],
   "price_per_week": 440,
-  "price_min": 220,
+  "price_min": 340,
   "price_max": 525,
   "financial_aid": true,
+  "extended_care": true,
   "season_year": 2026,
   "price_per": "week",
   "sessions": [
@@ -87,7 +89,7 @@
   "sources": [
     {
       "url": "https://nmymca.org/camps/westwood-park-day-camps/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
@@ -105,14 +107,25 @@
         "price_max",
         "price_per_week",
         "price_per",
-        "financial_aid",
+        "financial_aid"
+      ]
+    },
+    {
+      "url": "https://nmymca.org/wp-content/uploads/2026/01/YMCAofGN_SummerCampGuide_2026_Final.1.pdf",
+      "checked": "2026-11-13",
+      "fields": [
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "extended_care",
         "sessions"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "2026 YMCA of Greater Nashua Summer Camp Guide, Westwood Park pages 20-23 and 27"
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://nmymca.org/camps/westwood-park-day-camps/",
       "kind": "html",
@@ -193,6 +206,22 @@
       "missing required city",
       "missing required state",
       "missing required zip"
-    ]
+    ],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://nmymca.org/camps/westwood-park-day-camps/",
+        "https://nmymca.org/wp-content/uploads/2026/01/YMCAofGN_SummerCampGuide_2026_Final.1.pdf"
+      ],
+      "changes": [
+        "Added street address 90 Northwest Boulevard, Nashua, NH 03063 from the 2026 Summer Camp Guide; city, state and ZIP were missing.",
+        "Changed registration_url to the Westwood Park camp registration link on the camp page; the old link was the Y's general registration info page.",
+        "Added extended_care: the guide offers Pre and Post Camp for all sports camps at $65 per child per week.",
+        "Changed price_min from $220 (Family member rate) to $340 so the range uses the Community rate like price_per_week and the sessions.",
+        "Sourced the volleyball sessions to the 2026 Summer Camp Guide, which confirms the year the camp page leaves out.",
+        "All-Star and Semi-Pro weeks are marked with check marks in the guide's schedule table, which don't survive text extraction, so those weeks are not listed as sessions."
+      ],
+      "open_questions": []
+    }
   }
 }

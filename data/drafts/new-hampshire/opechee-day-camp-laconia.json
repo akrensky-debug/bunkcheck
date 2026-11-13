@@ -4,7 +4,7 @@
   "operator_name": "Laconia Parks & Recreation",
   "website_url": "https://www.laconianh.gov/927/Opechee-Day-Camp",
   "phone": "603-524-5046",
-  "street_address": "306 Union Avenue",
+  "street_address": null,
   "city": "Laconia",
   "state": "NH",
   "zip": "03246",
@@ -21,13 +21,12 @@
   "sources": [
     {
       "url": "https://www.laconianh.gov/927/Opechee-Day-Camp",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
         "website_url",
         "phone",
-        "street_address",
         "city",
         "state",
         "zip",
@@ -37,11 +36,11 @@
         "grade_max",
         "description_short"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Drafted by the listing tool from this page; rechecked 2026-11-13. Phone and ZIP are the Laconia Parks & Recreation office in the page footer."
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.laconianh.gov/927/Opechee-Day-Camp",
       "kind": "html",
@@ -79,6 +78,18 @@
         "quote": "Laconia, NH 03246"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.laconianh.gov/927/Opechee-Day-Camp"
+      ],
+      "changes": [
+        "Cleared street_address: 306 Union Avenue is the Parks & Recreation office in the page footer, and the page does not say the camp meets there. Kept the Laconia ZIP 03246 and the office phone, which are the department's own contact details.",
+        "Checked name, operator, grades K to 5 and activities (games, arts and crafts, beach trips) against the page. They match.",
+        "The page says the 2026 season is over and 2027 information comes this winter; no dates or prices are posted, so there are no sessions and season_year stays 2026."
+      ],
+      "open_questions": []
+    }
   }
 }

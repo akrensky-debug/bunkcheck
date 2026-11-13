@@ -2,8 +2,8 @@
   "slug": "meredith-parks-and-recreation-summer-camp-meredith",
   "name": "Meredith Parks and Recreation Summer Camp",
   "operator_name": "Meredith Parks and Recreation Department",
-  "website_url": "www.meredithnh.gov",
-  "registration_url": "www.meredithnh.gov",
+  "website_url": "https://www.meredithnh.gov",
+  "registration_url": "https://meredithnh.recdesk.com/Community/Home",
   "email": "parksnrec@meredithnh.gov",
   "phone": "603-279-8197",
   "street_address": "One Circle Drive",
@@ -12,7 +12,7 @@
   "zip": "03253",
   "camp_type": "day",
   "primary_categories": [
-    "arts"
+    "general"
   ],
   "age_min": 5,
   "grade_min": 0,
@@ -38,12 +38,11 @@
   "sources": [
     {
       "url": "https://meredithnh.gov/DocumentCenter/View/1653/Summer-Camp-2026-NOTICE---Price-Increase-PDF?bidId=",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "operator_name",
         "website_url",
-        "registration_url",
         "email",
         "phone",
         "street_address",
@@ -65,11 +64,19 @@
         "refund_policy_summary",
         "special_needs_notes"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Drafted by the listing tool from this page; rechecked 2026-11-13"
+    },
+    {
+      "url": "https://www.meredithnh.gov/424/Registration",
+      "checked": "2026-11-13",
+      "fields": [
+        "registration_url"
+      ],
+      "note": "The department's Registration page: all registrations are now completed online through its Register Now site."
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://meredithnh.gov/DocumentCenter/View/1653/Summer-Camp-2026-NOTICE---Price-Increase-PDF?bidId=",
       "kind": "pdf",
@@ -115,6 +122,25 @@
         "quote": "arts and crafts projects"
       }
     ],
-    "errors": []
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://meredithnh.gov/DocumentCenter/View/1653/Summer-Camp-2026-NOTICE---Price-Increase-PDF?bidId=",
+        "https://www.meredithnh.gov/",
+        "https://www.meredithnh.gov/sitemap",
+        "https://www.meredithnh.gov/380/After-School-Program-Camps",
+        "https://www.meredithnh.gov/424/Registration",
+        "https://www.meredithnh.gov/DocumentCenter/View/2033",
+        "https://meredithnh.recdesk.com/Community/Program"
+      ],
+      "changes": [
+        "website_url and registration_url were bare text (www.meredithnh.gov); set website_url to https://www.meredithnh.gov and registration_url to the department's online registration site (meredithnh.recdesk.com), sourced to its Registration page, which says all registrations are now online.",
+        "Changed primary_categories from arts to general: this is a general town day camp (games, crafts, outside time, cooking, field trips), and arts and crafts is one activity among many.",
+        "Checked grades K to 8, minimum age 5, hours, extended care, weekly rates ($63 to $175 for one child), refund terms and contacts against the 2026 notice. They match.",
+        "No sessions: the 2026 notice gives dates only as TBD (8 weeks), the summer camp packet is no longer on the town site, and the registration site lists no summer camp now. season_year stays 2026."
+      ],
+      "open_questions": []
+    }
   }
 }

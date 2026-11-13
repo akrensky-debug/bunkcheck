@@ -11,24 +11,48 @@
   "zip": "03894",
   "camp_type": "sleepaway",
   "primary_categories": [
-    "sports",
-    "arts",
-    "nature"
+    "general",
+    "sports"
   ],
   "age_min": 7,
   "age_max": 15,
-  "description_short": "A traditional co-ed overnight camp for boys and girls aged 7 to 15 on a 300-acre campus in Wolfeboro, New Hampshire. It offers 7-, 4- and 3-week sessions with over 30 activities in aquatics, athletics, arts and adventure.",
+  "description_short": "A family-owned co-ed overnight camp for ages 7 to 15 on Lake Wentworth in Wolfeboro, NH, with 30-plus activities across aquatics, athletics, arts and adventure. Families choose a 7-week full season, a 4- or 3-week session, or a 2-week introductory session for first-timers or campers in grades 1-3.",
   "activities": [
-    "Aquatics",
-    "Athletics",
-    "Arts",
-    "Adventure"
+    "archery",
+    "arts and crafts",
+    "badminton",
+    "baseball/softball",
+    "basketball",
+    "boating",
+    "challenge course",
+    "dance and yoga",
+    "fishing",
+    "flag football",
+    "swimming",
+    "ga-ga",
+    "golf",
+    "gymnastics",
+    "hockey",
+    "horseback riding",
+    "lacrosse",
+    "mountain biking",
+    "nature and orienteering",
+    "ninja warrior",
+    "overnight camping",
+    "paddle sports",
+    "performing arts",
+    "pottery",
+    "sailing",
+    "soccer",
+    "tennis",
+    "volleyball",
+    "woodworking"
   ],
   "season_year": 2027,
   "sources": [
     {
       "url": "https://www.campbirchmont.com/",
-      "checked": "2026-10-13",
+      "checked": "2026-11-13",
       "fields": [
         "name",
         "website_url",
@@ -41,16 +65,44 @@
         "zip",
         "camp_type",
         "primary_categories",
-        "activities",
+        "secondary_categories"
+      ]
+    },
+    {
+      "url": "https://www.campbirchmont.com/the-birchmont-experience/dates-rates-faqs/",
+      "checked": "2026-11-13",
+      "fields": [
+        "gender_policy",
         "age_min",
         "age_max",
-        "description_short"
+        "description_short",
+        "price_min",
+        "price_max",
+        "price_per",
+        "transportation",
+        "sessions",
+        "swim_waterfront_notes"
       ],
-      "note": "Drafted by the listing tool from this page"
+      "note": "Tuition is all-inclusive, with round-trip transport from the NY metro area and Logan Airport; sibling discounts 5% and 10%"
+    },
+    {
+      "url": "https://www.campbirchmont.com/the-birchmont-experience/our-activities/",
+      "checked": "2026-11-13",
+      "fields": [
+        "activities"
+      ]
+    },
+    {
+      "url": "https://www.campbirchmont.com/the-birchmont-experience/lets-eat/",
+      "checked": "2026-11-13",
+      "fields": [
+        "meals_included",
+        "special_needs_notes"
+      ]
     }
   ],
   "review": {
-    "status": "unchecked",
+    "status": "ready",
     "source": {
       "url": "https://www.campbirchmont.com/",
       "kind": "html",
@@ -93,6 +145,76 @@
         "quote": "Aquatics, Athletics, Arts, and Adventure"
       }
     ],
-    "errors": []
-  }
+    "errors": [],
+    "claude_check": {
+      "date": "2026-11-13",
+      "pages": [
+        "https://www.campbirchmont.com/",
+        "https://www.campbirchmont.com/the-birchmont-experience/dates-rates-faqs/",
+        "https://www.campbirchmont.com/the-birchmont-experience/our-activities/",
+        "https://www.campbirchmont.com/the-birchmont-experience/lets-eat/"
+      ],
+      "changes": [
+        "Added five 2027 sessions with dates and tuition from the 2027 Dates, Rates, FAQs page ($6,950 to $17,450)",
+        "Added price_min, price_max and price_per session",
+        "Added gender_policy coed, transportation (included bus from NY metro and Logan), meals included",
+        "Replaced the four program areas with the 29 named activities from the Activities page",
+        "Added swim/waterfront and dietary notes; rewrote description to cover the session options",
+        "Categories: general and sports primary; arts, adventure, sailing, swimming, nature secondary"
+      ],
+      "open_questions": []
+    }
+  },
+  "secondary_categories": [
+    "arts",
+    "adventure",
+    "sailing",
+    "swimming",
+    "nature"
+  ],
+  "gender_policy": "coed",
+  "price_min": 6950,
+  "price_max": 17450,
+  "price_per": "session",
+  "transportation": true,
+  "meals_included": true,
+  "special_needs_notes": "Nut-safe kitchen with no nut products or oils; vegetarian options at every meal, and gluten-free and kosher-style menus can be accommodated.",
+  "swim_waterfront_notes": "Waterfront on Lake Wentworth (state Class A water, sandy bottom, little boat traffic) with nearly half a mile of private sandy beach. Campers can join swim meets and sailing regattas.",
+  "sessions": [
+    {
+      "name": "Full Season (7 weeks)",
+      "start_date": "2027-06-26",
+      "end_date": "2027-08-13",
+      "price": 17450,
+      "availability": "unknown"
+    },
+    {
+      "name": "First Session (4 weeks)",
+      "start_date": "2027-06-26",
+      "end_date": "2027-07-23",
+      "price": 10950,
+      "availability": "unknown"
+    },
+    {
+      "name": "Second Session (3 weeks)",
+      "start_date": "2027-07-25",
+      "end_date": "2027-08-13",
+      "price": 9450,
+      "availability": "unknown"
+    },
+    {
+      "name": "Trailblazer Session (2 weeks, grades 1-3 only)",
+      "start_date": "2027-07-11",
+      "end_date": "2027-07-23",
+      "price": 6950,
+      "availability": "unknown"
+    },
+    {
+      "name": "Rookie Camp (2 weeks, first-time campers only)",
+      "start_date": "2027-07-25",
+      "end_date": "2027-08-07",
+      "price": 6950,
+      "availability": "unknown"
+    }
+  ]
 }
