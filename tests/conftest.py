@@ -178,3 +178,23 @@ def join(client: TestClient, created: dict[str, Any], user: str) -> dict[str, An
     res = client.post(f"/api/v1/invites/{token}/accept", headers=h(user))
     assert res.status_code == 200, res.text
     return res.json()
+
+
+@pytest.fixture(autouse=True)
+def fresh_limits() -> Iterator[None]:
+    """Rate limits and spend tallies live in module state; start every test with none used."""
+    from campfinder.agent import budget
+    from campfinder.inquiries import service as inquiries
+    from campfinder.routers import agent
+
+    def clear() -> None:
+        for window in (agent.guest_families_hourly, agent.guest_families_daily, agent.chats_per_ip,
+                       agent.chats_per_family):
+            window.clear()
+        budget._guest_ip_spend.clear()
+        budget._global_logged.clear()
+        inquiries._ip_windows.clear()
+
+    clear()
+    yield
+    clear()

@@ -15,6 +15,7 @@ from typing import Any, AsyncIterator
 
 import anthropic
 
+from campfinder.agent.budget import ChatBudget
 from campfinder.agent.booking_tools import BOOKING_PROMPT, registrations_context
 from campfinder.agent.inquiry_tools import INQUIRY_PROMPT
 from campfinder.activity.family_week import compact_event
@@ -180,9 +181,12 @@ def _block_to_dict(block: Any) -> dict[str, Any]:
 
 
 async def run_agent(
-    family_id: str, conversation_id: str | None, user_message: str
+    family_id: str, conversation_id: str | None, user_message: str, budget: ChatBudget | None = None,
 ) -> AsyncIterator[dict[str, Any]]:
-    """Run one user turn. Yields UI events; persists the conversation as it goes."""
+    """Run one user turn. Yields UI events; persists the conversation as it goes.
+
+    With a budget, every model call is charged to it, and the turn stops after the call that
+    crosses a cap. Tool calls left unanswered are closed on the next turn."""
     if conversation_id:
         messages = load_conversation(conversation_id, family_id)
         if messages is None:
@@ -236,6 +240,11 @@ async def run_agent(
                 continue
 
             messages.append({"role": "assistant", "content": [_block_to_dict(b) for b in response.content]})
+            if budget is not None:
+                budget.charge(getattr(response, "usage", None), getattr(response, "model", None), MODEL)
+                if budget.stop_reason and response.stop_reason in ("tool_use", "pause_turn", "max_tokens"):
+                    yield {"type": "error", "message": budget.stop_reason}
+                    break
 
             if response.stop_reason == "refusal":
                 yield {"type": "text", "text": "Sorry, I can't help with that one."}

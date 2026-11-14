@@ -44,6 +44,18 @@ class Settings:
     # edge sets X-Real-IP; a caller's own X-Forwarded-For is never trusted. See client_ip.py.
     client_ip_header: str = os.environ.get("CLIENT_IP_HEADER", "x-real-ip")
 
+    # The family assistant's limits (campfinder/agent/budget.py, docs/security.md). Spend caps
+    # are US dollars per US Eastern day, estimated from token counts at list prices.
+    agent_chats_per_minute_ip: int = int(os.environ.get("AGENT_CHATS_PER_MINUTE_IP", "20"))
+    agent_chats_per_minute_family: int = int(os.environ.get("AGENT_CHATS_PER_MINUTE_FAMILY", "6"))
+    agent_guest_daily_usd: float = float(os.environ.get("AGENT_GUEST_DAILY_USD", "1.00"))
+    agent_family_daily_usd: float = float(os.environ.get("AGENT_FAMILY_DAILY_USD", "5.00"))
+    agent_guest_ip_daily_usd: float = float(os.environ.get("AGENT_GUEST_IP_DAILY_USD", "3.00"))
+    agent_global_daily_usd: float = float(os.environ.get("AGENT_GLOBAL_DAILY_USD", "50.00"))
+    # New guest families (no sign-in) per IP address.
+    guest_families_per_hour_ip: int = int(os.environ.get("GUEST_FAMILIES_PER_HOUR_IP", "10"))
+    guest_families_per_day_ip: int = int(os.environ.get("GUEST_FAMILIES_PER_DAY_IP", "30"))
+
     # Browser origins allowed to call the API, comma-separated. Defaults to the frontend
     # and local development. Sign-in uses a bearer token, never cookies.
     cors_origins_env: str = os.environ.get("CORS_ORIGINS", "")

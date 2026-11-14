@@ -52,6 +52,7 @@ DEFAULTS: dict[str, dict[str, Any]] = {
                   "delivered_at": None, "delivery_attempts": 0, "billable": False, "bill_reason": None,
                   "price_cents": None, "replies": [], "last_reply_at": None, "redacted_at": None},
     "camp_inquiry_settings": {"billing_opted_in": False, "monthly_cap": None, "opted_in_at": None, "changed_by": None},
+    "ai_spend_daily": {"family_id": None, "cost_micros": 0, "calls": 0},
     "booking_attempts": {"registration_id": None, "consent": None, "provider_ref": None, "error": None,
                          "status": "quoted", "environment": "sandbox"},
 }
@@ -222,6 +223,36 @@ class FakeSupabase:
     def table(self, name: str) -> Query:
         return Query(self, name)
 
+    def rpc(self, name: str, params: dict[str, Any]) -> Any:
+        """The Postgres functions the backend calls, with the same results (migrations/)."""
+        result = getattr(self, f"_rpc_{name}")(**params)
+        return SimpleNamespace(execute=lambda: Result(result))
+
+    def _spend_row(self, day: str, family_id: str | None) -> dict[str, Any] | None:
+        rows = self.tables.setdefault("ai_spend_daily", [])
+        return next((r for r in rows if r["day"] == day and r.get("family_id") == family_id), None)
+
+    def _rpc_ai_spend_today(self, p_day: str, p_family_id: str | None) -> list[dict[str, Any]]:
+        fam, total = self._spend_row(p_day, p_family_id), self._spend_row(p_day, None)
+        return [{"family_micros": fam["cost_micros"] if fam and p_family_id else 0,
+                 "total_micros": total["cost_micros"] if total else 0}]
+
+    def _rpc_record_ai_spend(self, p_day: str, p_family_id: str | None, p_cost_micros: int) -> list[dict[str, Any]]:
+        families = {str(f["id"]) for f in self.tables.get("families", [])}
+        out = {}
+        for key, fid in (("total_micros", None), ("family_micros", p_family_id)):
+            if fid is not None and str(fid) not in families:
+                out[key] = 0
+                continue
+            row = self._spend_row(p_day, fid)
+            if row is None:
+                self.table("ai_spend_daily").insert({"day": p_day, "family_id": fid}).execute()
+                row = self._spend_row(p_day, fid)
+            row["cost_micros"] += p_cost_micros
+            row["calls"] += 1
+            out[key] = row["cost_micros"]
+        return [out]
+
     def cascade(self, table: str, row: dict[str, Any]) -> None:
         if table == "families":
             for t, rows in self.tables.items():
@@ -293,12 +324,20 @@ def tool_use_block(name: str, inp: dict[str, Any]) -> Block:
     return Block("tool_use", id=f"toolu_{uuid.uuid4().hex[:8]}", name=name, input=inp)
 
 
+def usage(input_tokens: int = 1000, output_tokens: int = 500, cache_write: int = 0, cache_read: int = 0) -> Any:
+    return SimpleNamespace(input_tokens=input_tokens, output_tokens=output_tokens,
+                           cache_creation_input_tokens=cache_write, cache_read_input_tokens=cache_read)
+
+
 class FakeAnthropic:
     """Replays scripted turns. A turn is a list of Blocks (tool_use turns stop with
     'tool_use') or a (blocks, stop_reason) pair. Every request is recorded in `calls`
-    (also available as `requests`)."""
+    (also available as `requests`). Each response reports `usage` (default: 1,000 tokens in,
+    500 out, about $0.014 on Opus 5.5) and the model that served it."""
 
-    def __init__(self, turns: list[Any]):
+    def __init__(self, turns: list[Any], usage: Any = None, model: str = "claude-opus-5-5"):
+        self.usage = usage if usage is not None else globals()["usage"]()
+        self.model = model
         self.turns = list(turns)
         self.calls: list[dict[str, Any]] = []
         self.requests = self.calls
@@ -312,4 +351,4 @@ class FakeAnthropic:
         else:
             content = turn
             stop = "tool_use" if any(b.type == "tool_use" for b in content) else "end_turn"
-        return FakeStream(SimpleNamespace(content=content, stop_reason=stop))
+        return FakeStream(SimpleNamespace(content=content, stop_reason=stop, usage=self.usage, model=self.model))
