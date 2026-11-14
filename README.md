@@ -188,6 +188,9 @@ to from Google, Apple or Outlook Calendar.
 - Smoke-test any endpoint: `python -m campfinder.scripts.check_mcp https://<api>/claude/mcp`.
 - Assistant env: `PUBLIC_API_URL` (server icons), `OPENAI_APPS_CHALLENGE`, optional
   `CHATGPT_WIDGET_DOMAIN` (defaults to `FRONTEND_URL`) and `MCP_RATE_PER_MINUTE` (default 600).
+- Every per-IP limit reads the caller's address from `CLIENT_IP_HEADER` (default `x-real-ip`,
+  which Railway's edge sets). A caller's own `X-Forwarded-For` is never trusted. Behind
+  Cloudflare, set it to `cf-connecting-ip`. See `campfinder/client_ip.py`.
 
 ### Year-round activities
 
