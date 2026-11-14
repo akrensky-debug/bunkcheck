@@ -24,14 +24,15 @@ from fastapi import APIRouter, Depends, Header, HTTPException, Request
 from pydantic import BaseModel, Field
 
 from campfinder.auth import authorize_family, optional_user
+from campfinder.client_ip import client_ip, rate_key
 from campfinder.inquiries import service
 
 router = APIRouter()
 
 
-def _ip(request: Request) -> str | None:
-    forwarded = request.headers.get("x-forwarded-for", "").split(",")[0].strip()
-    return forwarded or (request.client.host if request.client else None)
+def _ip(request: Request) -> str:
+    """Callers with no readable address share one bucket: the limit fails closed, not open."""
+    return rate_key(client_ip(request)) or "unknown"
 
 
 class AskCamp(BaseModel):
