@@ -55,6 +55,30 @@ Email goes through the shared mailer: nothing is sent unless `EMAIL_MODE=resend`
 `RESEND_API_KEY` are set. In `log` mode nothing is recorded as sent, so the first run after
 email is switched on sends what's due.
 
+## Where the dates come from
+
+Two places write `registration_windows`:
+
+1. **The owner**, in a confirmation reply (`campfinder/owners/season.py`). Those rows are
+   verified, and their notes start "From the owner".
+2. **Us, from the camp's own site.** `data/registration/windows.json` has one row per camp and
+   season, with the page URL, the page's exact words, and the date it was read. A row is
+   verified only when a person has checked it against the page and set `verified_by` and
+   `verified_on`.
+
+To load a change, regenerate it as a new migration. Railway applies it on the next deploy:
+
+```bash
+python -m campfinder.seed.registration_windows --check
+python -m campfinder.seed.registration_windows --sql migrations/NNNN_registration_windows.sql
+```
+
+The migration loads every row. Unverified dates stay off the camp page and send no alerts,
+but the owner sees them in the confirmation email as "(not checked)" and can confirm or
+correct them. Loading again updates the same rows (ids are uuid5 of slug and season). It
+never overwrites an owner's date, and it skips a camp that already has another camp-wide
+window for the season.
+
 ## Endpoints
 
 | | |
