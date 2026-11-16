@@ -90,7 +90,7 @@ def forwarded(msg: dict[str, Any], to: str, update: dict[str, Any] | None = None
     original_html = msg.get("html")
     link = (update or {}).get("link")
     button = (f"<p><a href='{html.escape(link, quote=True)}' style='display:inline-block;padding:10px 16px;"
-              f"background:#002637;color:#ffffff;border-radius:8px;text-decoration:none;font-weight:600'>"
+              f"background:#14213d;color:#ffffff;border-radius:8px;text-decoration:none;font-weight:600'>"
               f"Review the update</a></p>") if link else ""
     page = (f"<pre style='white-space:pre-wrap'>{html.escape(head + review)}</pre>" + button
             + (original_html if original_html else f"<pre style='white-space:pre-wrap'>{html.escape(body)}</pre>")

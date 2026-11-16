@@ -20,7 +20,7 @@ const config: Config = {
       inherit: 'inherit',
       bg: role('bg'),                       // page background (paper)
       surface: role('surface'),             // white surfaces: inputs, the few containers
-      ink: role('ink'),                     // text and icons (lake navy)
+      ink: role('ink'),                     // text and icons (night navy)
       muted: role('muted'),                 // secondary text, AA on bg and surface
       line: 'rgb(var(--line) / var(--line-alpha))', // hairlines and borders, translucent
       tint: role('tint'),                   // hover wash on rows and ghost buttons
