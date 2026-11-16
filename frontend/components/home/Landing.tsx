@@ -37,20 +37,20 @@ export function Starters({ onPick, disabled }: { onPick: (text: string) => void;
   )
 }
 
-// What a parent does by hand today, and the part of it Bunkcheck takes.
+// Written as one parent to another: the jobs we were tired of, and what we built for each.
 const LOAD: Array<[string, string]> = [
-  ['Twenty open tabs', 'Every camp in one format: dates, hours, ages, price.'],
+  ['Twenty open tabs', 'Now every camp reads the same: dates, hours, ages, price.'],
   ['Registration mornings', 'We check the date and email you before it opens.'],
-  ['The week nobody covered', 'Gaps and overlaps flagged before you pay a deposit.'],
-  ['The same form, again', 'Your details saved once. Shared only when you say.'],
+  ['The week nobody covered', 'We flag gaps and overlaps before you pay a deposit.'],
+  ['The same form, again', 'Enter your details once. Share them only when you say.'],
   ['Keeping everyone posted', 'One calendar for your partner, the grandparents, the sitter.'],
 ]
 
 const PROMISES: React.ReactNode[] = [
-  'Free for parents. No ads.',
+  'It’s free for parents. No ads.',
   <>Camps can&rsquo;t pay to rank. <TextLink href="/ranking">How we rank</TextLink></>,
-  'We say what’s checked, and what isn’t.',
-  'Your data stays yours. We never sell it.',
+  'We tell you what we’ve checked, and what we haven’t.',
+  'Your family’s data is yours. We never sell it.',
 ]
 
 /** Everything under the hero for a parent who is new here. */
@@ -59,7 +59,7 @@ export function Landing({ className }: { className?: string }) {
     <div className={cx('space-y-16', className)}>
       <OpeningSoon />
 
-      <Section title="Off your plate" divided>
+      <Section title="What we were tired of doing" divided>
         <dl className="divide-y divide-line">
           {LOAD.map(([hers, ours]) => (
             <div key={hers} className="grid gap-1 py-4 sm:grid-cols-3 sm:gap-6">
@@ -70,7 +70,7 @@ export function Landing({ className }: { className?: string }) {
         </dl>
       </Section>
 
-      <Section title="On your side" divided>
+      <Section title="Parent to parent" divided>
         <ul className="grid gap-x-12 gap-y-3 sm:grid-cols-2">
           {PROMISES.map((line, i) => <li key={i} className="text-ink">{line}</li>)}
         </ul>
@@ -78,7 +78,7 @@ export function Landing({ className }: { className?: string }) {
 
       <div className="space-y-2 border-t border-line pt-8">
         <Text variant="small" tone="muted">
-          Camps across the Northeast, most around Providence and Boston.
+          We cover the Northeast so far, mostly around Providence and Boston.
         </Text>
         <Text variant="small" tone="muted">
           Run a camp? <TextLink href="/operators">Listing is free</TextLink>
@@ -101,7 +101,7 @@ function OpeningSoon() {
     <section className="border-t border-line pt-8">
       <Heading level="h2">Registration opening soon</Heading>
       <Text tone="muted" variant="small" className="mt-2">
-        Checked against each camp&rsquo;s own site. Tap one to get an email first.
+        We check each date against the camp&rsquo;s own site. Tap one and we&rsquo;ll email you first.
       </Text>
       <List className="mt-4">
         {openings.map(o => (
