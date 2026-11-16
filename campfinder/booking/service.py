@@ -87,6 +87,27 @@ def camp_window(camp_id: str, session_id: str | None) -> dict[str, Any] | None:
     return (upcoming or past)[0]
 
 
+def upcoming_openings(limit: int = 6) -> list[dict[str, Any]]:
+    """Registration openings still ahead, soonest first, one per camp. Only dates a person
+    has checked against the camp's own site: the same rule the alerts follow."""
+    db = get_supabase()
+    windows = (db.table("registration_windows").select("camp_id,opens_at,source_url")
+               .eq("verified", True).gte("opens_at", _now()).order("opens_at").limit(limit * 4).execute().data or [])
+    first: dict[str, dict[str, Any]] = {}
+    for w in windows:
+        first.setdefault(str(w["camp_id"]), w)  # a camp with several sessions shows its first opening
+    if not first:
+        return []
+    camps = (db.table("camps").select("id,slug,name,city,state,is_active")
+             .in_("id", list(first)).execute().data or [])
+    by_id = {str(c["id"]): c for c in camps if c.get("is_active")}
+    return [
+        {"camp_id": cid, "slug": by_id[cid].get("slug"), "name": by_id[cid]["name"], "city": by_id[cid].get("city"),
+         "state": by_id[cid].get("state"), "opens_at": w["opens_at"], "source_url": w.get("source_url")}
+        for cid, w in first.items() if cid in by_id
+    ][:limit]
+
+
 def resolve_opens(row: dict[str, Any]) -> tuple[datetime | None, str | None, datetime | None]:
     """(opens_at, source, closes_at). The family's own date wins: she may know better."""
     window = camp_window(str(row["camp_id"]), row.get("session_id"))

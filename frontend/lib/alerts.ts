@@ -49,3 +49,17 @@ export const confirmAlert = (token: string) =>
   call<AlertView>(`/registration-alerts/${encodeURIComponent(token)}/confirm`, { method: 'POST' })
 export const stopAlert = (token: string) =>
   call<AlertView>(`/registration-alerts/${encodeURIComponent(token)}/stop`, { method: 'POST' })
+
+/** A registration opening a person has checked against the camp's own site. */
+export interface Opening {
+  camp_id: string
+  slug: string | null
+  name: string
+  city: string | null
+  state: string | null
+  opens_at: string
+  source_url: string | null
+}
+
+export const getUpcomingOpenings = (limit = 5) =>
+  call<{ openings: Opening[] }>(`/registration/upcoming?limit=${limit}`).then(r => r.openings)

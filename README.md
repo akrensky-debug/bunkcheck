@@ -159,6 +159,7 @@ Tests: `pip install pytest pytest-asyncio && python -m pytest`.
 | `POST` | `/api/v1/families/{id}/registration-package` | Share the package the parent approved (`confirm: true`) |
 | `GET/PUT` | `/api/v1/families/{id}/registration-reminders` | Reminder settings; `/preview` shows what would send |
 | `GET`  | `/api/v1/camps/{id}/registration` | When registration opens and what the form asks |
+| `GET`  | `/api/v1/registration/upcoming` | Checked registration openings still ahead, soonest first (the home page list) |
 | `POST` | `/api/v1/families/{id}/bookings/quote` | Sandbox prototype, behind `BOOKING_PROVIDERS` |
 | `GET`  | `/api/activity/v1/...` | Activity API for partners (API key); see `docs/activity-api.md` |
 | `POST` | `/mcp` | MCP server (streamable HTTP) exposing the camp tools to any client |

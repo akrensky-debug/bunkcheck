@@ -48,6 +48,11 @@ async def camp_registration(camp_id: UUID, session_id: UUID | None = None) -> di
     }
 
 
+@router.get("/registration/upcoming", summary="Checked registration openings still ahead, soonest first")
+async def upcoming_registration(limit: int = Query(default=6, ge=1, le=20)) -> dict:
+    return {"openings": service.upcoming_openings(limit)}
+
+
 # ---------------------------------------------------------------------------
 # Tracked registrations (guest families too: the calendar works for them)
 # ---------------------------------------------------------------------------
