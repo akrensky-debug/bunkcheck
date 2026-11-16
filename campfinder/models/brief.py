@@ -10,8 +10,8 @@ from pydantic import BaseModel, Field
 from campfinder.models.coverage import AwayRange, WorkBlock
 
 BriefField = Literal[
-    "kids", "home", "school", "sorted_weeks", "care_hours", "interests",
-    "weekly_budget", "max_drive_minutes", "sleepaway", "booked_elsewhere",
+    "kids", "home", "school", "camp_weeks", "sleepaway", "care_hours", "interests",
+    "weekly_budget", "max_drive_minutes", "booked_elsewhere",
 ]
 Source = Literal["said", "looked_up", "guessed"]
 
@@ -41,7 +41,17 @@ class BriefUpdate(BaseModel):
     summer_end: date | None = None
     weekly_budget: float | None = Field(default=None, ge=0, description="Per child, per week, in USD.")
     max_drive_minutes: int | None = Field(default=None, ge=0, le=180, description="Longest drive to camp, one way.")
-    sleepaway: bool | None = Field(default=None, description="True if sleepaway camp is an option, false for day camp only.")
+    camp_weeks: list[date] | None = Field(
+        default=None,
+        description="The weeks the family wants camp, as the Monday of each week. Weeks left out need no camp "
+        "(vacation, family, already sorted). Replaces the stored list, so include every week. Leave unset "
+        "until the parent says which weeks; unset means every week of the summer.",
+    )
+    sleepaway: bool | None = Field(
+        default=None,
+        description="True if overnight (sleepaway) camp is an option, false for day camp only. Overnight camp "
+        "means nights away from home, usually a week or more; day camp means home every night.",
+    )
     booked_elsewhere: bool | None = Field(
         default=None, description="True if some weeks are already booked outside Bunkcheck."
     )

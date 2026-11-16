@@ -51,10 +51,11 @@ One question at a time, above the board. Each answer changes the board at once.
 |---|---|---|---|---|
 | 1 | Who's going to camp? | First name and age per kid, "add another" | One line per kid | Needs at least one age to suggest camps; the line reads "Your kid" |
 | 2 | Which school? | Chips for the schools we know, "Other", "Not sure" | Weeks appear between the last and first day of school | Guessed: about June 18 to September 1, marked as a guess |
-| 3 | Any weeks already sorted? | Tap weeks: Away, Family, Booked camp | Those weeks turn done; "3 of 11 weeks sorted" | All weeks open |
-| 4 | Roughly when do you need care? | "Both work about 8 to 6" yes / change; per-parent hours | Weeks where a camp leaves hours uncovered get flagged | 8:00 to 6:00 weekdays, marked as a guess |
-| 5 | What's Maya into? | Interest chips per kid | First suggestions in the first open week: three options with price per week | No interest filter |
-| 6 | Save your summer | Email sign-in link; then "Send to [partner] to look over" | Board saved; co-parent invited | Board kept for the guest session |
+| 3 | Which weeks do you need camp? | Tap the weeks to plan, or "The whole summer" | Weeks left off show "No camp needed" and drop out of the count | Every week needs camp |
+| 4 | Are you open to overnight camp? (asked when a kid is 7 or older) | "Yes, overnight is an option" / "Day camp only" | Day camp only: overnight camps are left out of the assistant's searches | Overnight not suggested until asked |
+| 5 | Roughly when do you need care? | "Both work about 8 to 6" yes / change; per-parent hours | Weeks where a camp leaves hours uncovered get flagged | 8:00 to 6:00 weekdays, marked as a guess |
+| 6 | What's Maya into? | Interest chips per kid | First suggestions in the first open week: three options with price per week | No interest filter |
+| 7 | Save your summer | Email sign-in link; then "Send to [partner] to look over" | Board saved; co-parent invited | Board kept for the guest session |
 
 Later questions, asked only when they matter:
 
@@ -62,8 +63,26 @@ Later questions, asked only when they matter:
 |---|---|
 | Weekly budget ceiling | Suggestions first show prices, or the summer total jumps |
 | How far will you drive / need transport? | Suggestions span more than about 15 minutes |
-| Day camp or sleepaway too? | A kid is 9 or older |
 | Anything already booked elsewhere? | January, at the start of registration season |
+
+### Day camp and overnight camp
+
+Not every week needs camp, and not every camp week is the same kind of week.
+
+- `camp_weeks` holds the Monday of each week the family wants camp. Unset means every week of
+  the summer, which is how profiles saved before November 2026 read. Coverage and the board
+  treat any other week as "No camp needed": not a gap, never filled. Trips still go in `away`,
+  so a trip week shows its label.
+- Day camp runs during the day and the kid sleeps at home, so it has to fit the care hours.
+  Overnight (sleepaway) camp means nights away, usually a week or more, so it covers the whole
+  week and the hours don't apply. Overnight weeks are anchors: booked first, day camps around
+  them.
+- The overnight question comes right after the weeks, and only when a kid is 7 or older. In our
+  listings the median youngest age an overnight camp takes is 7 (113 camps, November 2026).
+- `sleepaway: false` makes the assistant's camp search leave overnight camps out, unless the
+  parent asks for one by name. The board's week suggestions are day camps either way.
+- Families who answered the older "Any weeks already sorted?" question aren't asked about camp
+  weeks again; their chip reads "Camp all summer" until they edit it.
 
 ### Moving around
 
@@ -119,7 +138,7 @@ next_question(profile, today, context) -> Question | None
 ```
 
 - The brief is `families.profile` (kids, `summer_start`/`summer_end`, `work_schedule`,
-  `away`, `weekly_budget`, `needs`) plus `school`, `max_drive_minutes`, `sleepaway`,
+  `away`, `weekly_budget`, `needs`) plus `school`, `camp_weeks`, `max_drive_minutes`, `sleepaway`,
   `booked_elsewhere` and one `brief` key: `facts` (field → `{source, at}`), `skipped` and
   `not_sure` (field → when). No new table. Profiles saved before the brief count what they
   already hold as said.

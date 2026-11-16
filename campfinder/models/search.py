@@ -12,6 +12,7 @@ class SearchRequest(BaseModel):
     radius_miles: float = 30.0
     age: int | None = None
     camp_type: str | None = None
+    day_only: bool = Field(default=False, description="Leave out overnight (sleepaway) camps.")
     categories: list[str] | None = None
     weeks: list[str] | None = None
     max_price_per_week: float | None = None
