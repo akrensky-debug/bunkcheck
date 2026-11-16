@@ -7,17 +7,17 @@ import { Heading, Icon, List, ListRow, Meta, Section, Text, TextLink, cx } from 
 
 /** Starters name no town: the assistant asks, or already knows it from the family profile. */
 export const STARTERS = [
-  'Help me plan our whole summer',
-  'I need full-day coverage for two kids for all of July',
-  'Find a STEM day camp for my 8-year-old',
-  'When does registration open for camps near me?',
+  'Plan our whole summer',
+  'Cover two kids for all of July',
+  'A STEM day camp for my 8-year-old',
+  'When does registration open near me?',
 ]
 
 /** Suggested first messages, as full-width rows a thumb can hit. */
 export function Starters({ onPick, disabled }: { onPick: (text: string) => void; disabled: boolean }) {
   return (
     <div>
-      <Text variant="small" tone="muted" id="starters-label">Or start with one of these</Text>
+      <Text variant="small" tone="muted" id="starters-label">Or try one</Text>
       <ul aria-labelledby="starters-label" className="-mx-3 mt-1 divide-y divide-line">
         {STARTERS.map(s => (
           <li key={s}>
@@ -37,20 +37,20 @@ export function Starters({ onPick, disabled }: { onPick: (text: string) => void;
   )
 }
 
-// What a parent does by hand today, and the part of it Bunkcheck takes.
+// Written as one parent to another: the jobs we were tired of, and what we built for each.
 const LOAD: Array<[string, string]> = [
-  ['Twenty open tabs', 'Every camp in one format: dates, hours, ages, weekly price and extended care. Compare them without building a spreadsheet.'],
-  ['Registration mornings', 'We check each opening date against the camp’s own site and email you before it opens. No account needed.'],
-  ['The week nobody covered', 'Your weeks laid out for each kid, with gaps and overlaps flagged before you pay a deposit.'],
-  ['The same form, again', 'Your family’s details saved once and encrypted. A camp sees them only when you approve it.'],
-  ['Keeping everyone posted', 'One calendar your partner, the grandparents and the sitter can all see.'],
+  ['Twenty open tabs', 'Now every camp reads the same: dates, hours, ages, price.'],
+  ['Registration mornings', 'We check the date and email you before it opens.'],
+  ['The week nobody covered', 'We flag gaps and overlaps before you pay a deposit.'],
+  ['The same form, again', 'Enter your details once. Share them only when you say.'],
+  ['Keeping everyone posted', 'One calendar for your partner, the grandparents, the sitter.'],
 ]
 
-const PROMISES: Array<[string, React.ReactNode]> = [
-  ['Free for parents, and no ads', 'Planning, comparing, the calendar and registration emails cost you nothing.'],
-  ['No camp can pay to move up', <>The order of results follows your kids, your weeks and your budget. <TextLink href="/ranking">How we rank</TextLink></>],
-  ['We say what’s checked', 'Most listings are built from each camp’s own site and haven’t been confirmed by the camp yet. Each one says so.'],
-  ['Your family’s data stays yours', 'We never sell it. You can download it or delete it at any time.'],
+const PROMISES: React.ReactNode[] = [
+  'It’s free for parents. No ads.',
+  <>Camps can&rsquo;t pay to rank. <TextLink href="/ranking">How we rank</TextLink></>,
+  'We tell you what we’ve checked, and what we haven’t.',
+  'Your family’s data is yours. We never sell it.',
 ]
 
 /** Everything under the hero for a parent who is new here. */
@@ -59,7 +59,7 @@ export function Landing({ className }: { className?: string }) {
     <div className={cx('space-y-16', className)}>
       <OpeningSoon />
 
-      <Section title="What it takes off your plate" divided>
+      <Section title="What we were tired of doing" divided>
         <dl className="divide-y divide-line">
           {LOAD.map(([hers, ours]) => (
             <div key={hers} className="grid gap-1 py-4 sm:grid-cols-3 sm:gap-6">
@@ -70,23 +70,18 @@ export function Landing({ className }: { className?: string }) {
         </dl>
       </Section>
 
-      <Section title="On your side" divided>
-        <dl className="grid gap-x-12 gap-y-6 sm:grid-cols-2">
-          {PROMISES.map(([title, body]) => (
-            <div key={title}>
-              <dt className="font-semibold text-ink">{title}</dt>
-              <dd className="mt-1 text-small text-muted">{body}</dd>
-            </div>
-          ))}
-        </dl>
+      <Section title="Parent to parent" divided>
+        <ul className="grid gap-x-12 gap-y-3 sm:grid-cols-2">
+          {PROMISES.map((line, i) => <li key={i} className="text-ink">{line}</li>)}
+        </ul>
       </Section>
 
       <div className="space-y-2 border-t border-line pt-8">
         <Text variant="small" tone="muted">
-          Camps in CT, MA, ME, NH, NJ, NY, PA, RI and VT, with the most around Providence and Boston.
+          We cover the Northeast so far, mostly around Providence and Boston.
         </Text>
         <Text variant="small" tone="muted">
-          Run a camp? <TextLink href="/operators">Listing it is free</TextLink>
+          Run a camp? <TextLink href="/operators">Listing is free</TextLink>
         </Text>
       </div>
     </div>
@@ -106,7 +101,7 @@ function OpeningSoon() {
     <section className="border-t border-line pt-8">
       <Heading level="h2">Registration opening soon</Heading>
       <Text tone="muted" variant="small" className="mt-2">
-        Checked against each camp&rsquo;s own site. Open a camp to get an email before its date.
+        We check each date against the camp&rsquo;s own site. Tap one and we&rsquo;ll email you first.
       </Text>
       <List className="mt-4">
         {openings.map(o => (
