@@ -152,7 +152,7 @@ export default function AgentHome() {
             <h1 className="font-display text-display text-ink text-balance lg:-mr-48">Planning summer takes all winter.</h1>
             <p className="mt-5 max-w-measure text-lead text-muted">
               Not anymore. Bunkcheck finds the camps, lines up your weeks and watches the registration dates. Built
-              with parents who wanted a better way to get their kids a great summer.
+              by parents who got tired of doing it by hand.
             </p>
             <p className="mt-8 font-semibold text-ink">
               Tell us about your kids. One sentence will do.
