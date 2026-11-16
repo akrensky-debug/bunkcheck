@@ -45,7 +45,9 @@ export function Composer({ value, onChange, onSubmit, placeholder, disabled = fa
       onSubmit={submit}
       className={cx(
         'flex w-full items-end gap-2 border border-line bg-surface shadow-soft transition-colors duration-150 focus-within:border-ink',
-        hero ? 'rounded-lg p-2 pl-5' : 'rounded-lg p-1.5 pl-4',
+        // Concentric corners: outer radius = send button radius + padding + 1px border, so the
+        // round button sits in the corner instead of being rounder than it (24+8+1, 20+6+1).
+        hero ? 'rounded-[33px] p-2 pl-5' : 'rounded-[27px] p-1.5 pl-4',
       )}
     >
       <textarea

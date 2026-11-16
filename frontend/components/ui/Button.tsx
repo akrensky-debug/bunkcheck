@@ -29,6 +29,15 @@ const SIZES: Record<ButtonSize, string> = {
 }
 const TEXT_SIZES: Record<ButtonSize, string> = { sm: 'text-caption', md: 'text-small', lg: 'text-body' }
 
+// Icon stroke matched to the semibold label beside it. Atkinson Hyperlegible Next 600 has a
+// stem of about 1.95px at 16px; scaled to each label size that is the stroke below. Icons
+// outside buttons keep 1.5px, which matches the 400 body text (1.34px at 16px).
+const STROKE: Record<'caption' | 'small' | 'body', number> = { caption: 1.6, small: 1.75, body: 2 }
+function iconStroke(variant: ButtonVariant, size: ButtonSize) {
+  const text = TEXT_ONLY.includes(variant) ? TEXT_SIZES[size] : SIZES[size].split(' ').pop()!
+  return STROKE[text.replace('text-', '') as keyof typeof STROKE]
+}
+
 export function buttonClass({ variant = 'primary', size = 'md', block = false }: {
   variant?: ButtonVariant; size?: ButtonSize; block?: boolean
 } = {}) {
@@ -56,11 +65,12 @@ export type ButtonProps = AsButton | AsLink
 export function Button(props: ButtonProps) {
   const { variant, size, block, icon, leadingIcon, children, className, ...rest } = props
   const cls = cx(buttonClass({ variant, size, block }), className)
+  const stroke = iconStroke(variant ?? 'primary', size ?? 'md')
   const inner = (
     <>
-      {leadingIcon && <Icon name={leadingIcon} />}
+      {leadingIcon && <Icon name={leadingIcon} strokeWidth={stroke} />}
       {children}
-      {icon && <Icon name={icon} />}
+      {icon && <Icon name={icon} strokeWidth={stroke} />}
     </>
   )
   if ('href' in rest && rest.href !== undefined) {
