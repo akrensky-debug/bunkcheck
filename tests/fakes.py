@@ -42,6 +42,7 @@ DEFAULTS: dict[str, dict[str, Any]] = {
     "listing_confirmations": {"kind": "listing", "season_year": None, "answer": None, "responded_at": None},
     "registration_windows": {"session_id": None, "closes_at": None, "source_url": None, "verified": False, "notes": None},
     "registration_alerts": {"session_id": None, "confirm_sent_at": None, "confirmed_at": None, "unsubscribed_at": None},
+    "email_suppressions": {"note": None, "created_at": lambda: datetime.now(timezone.utc).isoformat()},
     "owner_messages": {"message_id": None, "sender_verified": False, "subject": None, "camp_id": None,
                        "status": "received", "reason": None, "proposal": None, "applied": None, "handled_by": None,
                        "received_at": lambda: datetime.now(timezone.utc).isoformat(), "handled_at": None,

@@ -29,7 +29,7 @@ export default function AccountLink() {
 
   if (!supabase() || session === undefined) return null
   if (!session) {
-    return <a href="/signin" className="text-small font-semibold text-ink hover:text-muted transition-colors whitespace-nowrap">Sign in</a>
+    return <a href="/signin" className="py-3 text-small font-semibold text-ink hover:text-muted transition-colors whitespace-nowrap">Sign in</a>
   }
   return (
     <details ref={menu} className="relative">

@@ -82,7 +82,7 @@ Limits marked *new* come from #77 and #78. Everything else is on `main` today.
 | --- | --- | --- | --- |
 | Registrations, checklist (5 routes under `/families/{id}/`) | Guest or member | None | None beyond the id |
 | Package preview and share, reminder settings, booking quote and confirm (7 routes) | Owner, signed in | None | None |
-| `GET /camps/{id}/registration`, `GET /booking/status` | None | None | Public data |
+| `GET /camps/{id}/registration`, `GET /registration/upcoming`, `GET /booking/status` | None | None | Public data |
 | `POST /camps/{id}/registration/alerts` | None | 10 unconfirmed sign-ups per address a day | Mail-bombing an address; capped |
 | `GET, POST /registration-alerts/{token}`, `/confirm`, `/stop` | Link, 192 bits | None | Guessing is infeasible |
 | `POST /api/v1/inquiries`, `/inquiries/link/{token}/confirm` | None, or the family | 20 an hour per IP; 5 a day per family; 40 a day per camp | Flooding a camp's inbox; capped |

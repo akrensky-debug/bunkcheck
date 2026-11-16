@@ -10,6 +10,7 @@ import {
 import { AgentBlock, AgentText, CalendarList } from '@/components/agent/AgentBlocks'
 import { WeekView } from '@/components/agent/ActivityBlocks'
 import { getFamilyWeek, type FamilyWeek } from '@/lib/activities'
+import { Landing, Starters } from '@/components/home/Landing'
 import { Button, Composer, IconButton, cx } from '@/components/ui'
 
 type Part =
@@ -22,13 +23,6 @@ interface Message {
   status?: string   // current tool label while the turn is running
   error?: string
 }
-
-const STARTERS = [
-  'Find a STEM day camp near Providence for my 8-year-old',
-  'I need full-day coverage for two kids for all of July',
-  'Swim lessons after 3:30 on weekdays for my 5-year-old near Providence',
-  'Help me plan our whole summer',
-]
 
 /** What the side column has to show. Empty sections are not rendered at all. */
 function hasProfile(f: Family | null) {
@@ -154,13 +148,19 @@ export default function AgentHome() {
         )}
 
         {empty ? (
-          <div className="mx-auto flex w-full max-w-narrow flex-1 flex-col pb-16 pt-16 sm:pt-24 lg:pt-32">
-            <h1 className="font-display text-display text-ink text-balance">Summer, sorted.</h1>
+          <div className="mx-auto flex w-full max-w-narrow flex-1 flex-col pb-16 pt-8 sm:pt-20 lg:pt-24">
+            <h1 className="font-display text-display text-ink text-balance lg:-mr-48">
+              Planning summer takes{' '}
+              <span className="marker">all winter.</span>
+            </h1>
             <p className="mt-5 max-w-measure text-lead text-muted">
-              Tell me about your kids and your summer. I&rsquo;ll find the best camps, fit them into your weeks,
-              and help you sign up.
+              Not anymore. Bunkcheck finds the camps, lines up your weeks and watches the registration dates. Built
+              by parents who got tired of doing it by hand.
             </p>
-            <div className="mt-10">
+            <p className="mt-8 font-semibold text-ink">
+              Tell us about your kids. One sentence will do.
+            </p>
+            <div className="mt-3">
               <Composer
                 size="hero"
                 value={input}
@@ -169,26 +169,16 @@ export default function AgentHome() {
                 canSend={!!family}
                 busy={busy}
                 placeholder="Ages, town, and the weeks you need"
-                label="Tell Bunkcheck about your summer"
+                label="Tell Bunkcheck about your kids and your summer"
               />
             </div>
-            <ul className="mt-5 flex flex-wrap gap-x-5 gap-y-2" aria-label="Try asking">
-              {STARTERS.map(s => (
-                <li key={s}>
-                  <button
-                    onClick={() => send(s)}
-                    disabled={!family}
-                    className="text-left text-small text-muted underline-offset-4 transition-colors hover:text-ink hover:underline disabled:opacity-50"
-                  >
-                    {s}
-                  </button>
-                </li>
-              ))}
-            </ul>
+            <div className="mt-5">
+              <Starters onPick={send} disabled={!family} />
+            </div>
             {familyError && (
               <p className="mt-6 text-small text-error">We couldn&rsquo;t connect right now. Please refresh to try again.</p>
             )}
-            {family && !side && <QuickLinks family={family} className="mt-16 lg:mt-24" />}
+            {!side && <Landing onAsk={send} disabled={!family} className="mt-16 sm:mt-24" />}
           </div>
         ) : (
           <>

@@ -13,6 +13,7 @@ from typing import Any
 
 from campfinder.config import get_settings
 from campfinder.mailer import Email
+from campfinder.owners import outreach
 
 LABELS = {
     "name": "Name", "city": "Town", "state": "State", "camp_type": "Type", "age_min": "Youngest age",
@@ -89,7 +90,7 @@ def listing_confirmation(to: str, first_name: str | None, camp: dict[str, Any], 
         "No login, no fee to be listed, nothing to install. If you'd rather not be listed, "
         f"take it down here: {page}", "",
         f"Thanks,\n{_signature()}",
-    ])
+    ]) + outreach.footer_text()
     table = "".join(f"<tr><td style='padding:2px 12px 2px 0;color:#666'>{_e(k)}</td><td>{_e(v)}</td></tr>"
                     for k, v in rows)
     sess = ("<p><strong>Sessions</strong></p><ul>" + "".join(f"<li>{_e(_session_line(s))}</li>" for s in sessions)
@@ -108,7 +109,7 @@ def listing_confirmation(to: str, first_name: str | None, camp: dict[str, Any], 
         f"know.{_e(asked)}</p>"
         f"<p style='color:#666'>No login, no fee to be listed, nothing to install. If you'd rather not be "
         f"listed, <a href='{_e(page)}'>take it down here</a>.</p>"
-        f"<p>Thanks,<br>{_e(_signature())}</p>"
+        f"<p>Thanks,<br>{_e(_signature())}</p>" + outreach.footer_html()
     )
     return Email(to=to, subject=f"Your camp's {season} listing on Bunkcheck: is it right?",
                  html=html, text=text, reply_to=_reply_to())
@@ -229,7 +230,7 @@ def season_update_request(to: str, first_name: str | None, camp: dict[str, Any],
         "exactly what changed, and a person reads every reply.", "",
         "No login, no fee to be listed. If you'd rather not be listed, reply and say so.", "",
         f"Thanks,\n{_signature()}",
-    ])
+    ]) + outreach.footer_text()
     table = "".join(f"<tr><td style='padding:2px 12px 2px 0;color:#666'>{_e(k)}</td><td>{_e(v)}</td></tr>"
                     for k, v in rows)
     sess = ("<p style='margin-bottom:4px'><strong>Sessions</strong></p><ul style='margin-top:0'>"
@@ -249,7 +250,7 @@ def season_update_request(to: str, first_name: str | None, camp: dict[str, Any],
         "<p>What you send goes on your page as confirmed by the camp, with the date. We'll email you back "
         "exactly what changed, and a person reads every reply.</p>"
         "<p style='color:#666'>No login, no fee to be listed. If you'd rather not be listed, reply and say so.</p>"
-        f"<p>Thanks,<br>{_e(_signature())}</p>"
+        f"<p>Thanks,<br>{_e(_signature())}</p>" + outreach.footer_html()
     )
     return Email(to=to, subject=f"{camp['name']}: your {season} dates, price and registration day",
                  html=html, text=text, reply_to=_reply_to())
