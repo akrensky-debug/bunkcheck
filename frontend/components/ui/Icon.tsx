@@ -15,6 +15,11 @@ const PATHS = {
   user: <><circle cx="8" cy="5.5" r="2.5" /><path d="M3 13.5c.8-2.3 2.7-3.5 5-3.5s4.2 1.2 5 3.5" /></>,
   plus: <path d="M8 3v10M3 8h10" />,
   external: <path d="M9.5 2.5h4v4M13.5 2.5 8 8M11.5 9.5v4h-9v-9h4" />,
+  bell: <path d="M4 11V7.5a4 4 0 0 1 8 0V11l1 1.5H3L4 11ZM6.75 14h2.5" />,
+  lock: <><rect x="3.5" y="7" width="9" height="6.5" rx="1.5" /><path d="M5.5 7V5.25a2.5 2.5 0 0 1 5 0V7" /></>,
+  users: <><circle cx="6" cy="5.5" r="2.25" /><path d="M1.75 13c.6-2 2.2-3 4.25-3s3.65 1 4.25 3M10.5 3.5a2.25 2.25 0 0 1 0 4.25M12 10.2c1.2.4 2 1.4 2.4 2.8" /></>,
+  board: <><rect x="2.5" y="2.5" width="11" height="11" rx="1.5" /><path d="M2.5 6.5h11M2.5 10h11M6.5 6.5v7" /></>,
+  chat: <path d="M2.5 4.5a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2H7l-3 2.75V10.5a2 2 0 0 1-1.5-2v-4Z" />,
 } as const
 
 export type IconName = keyof typeof PATHS

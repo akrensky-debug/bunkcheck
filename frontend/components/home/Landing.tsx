@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react'
 import { getUpcomingOpenings, type Opening } from '@/lib/alerts'
 import { countdown, fmtWhen } from '@/lib/booking'
-import { Heading, Icon, List, ListRow, Meta, Section, Text, TextLink, cx } from '@/components/ui'
+import { ActionTile, Button, Heading, Icon, List, ListRow, Meta, Section, Text, TextLink, cx, type IconName } from '@/components/ui'
 
 /** Starters name no town: the assistant asks, or already knows it from the family profile. */
 export const STARTERS = [
@@ -13,37 +13,29 @@ export const STARTERS = [
   'When does registration open near me?',
 ]
 
-/** Suggested first messages, as full-width rows a thumb can hit. */
+/** Suggested first messages, as buttons. */
 export function Starters({ onPick, disabled }: { onPick: (text: string) => void; disabled: boolean }) {
   return (
-    <div>
-      <Text variant="small" tone="muted" id="starters-label">Or try one</Text>
-      <ul aria-labelledby="starters-label" className="-mx-3 mt-1 divide-y divide-line">
-        {STARTERS.map(s => (
-          <li key={s}>
-            <button
-              type="button"
-              onClick={() => onPick(s)}
-              disabled={disabled}
-              className="flex w-full items-center justify-between gap-4 rounded-md px-3 py-3 text-left text-body text-ink transition-colors duration-150 hover:bg-tint disabled:opacity-50"
-            >
-              {s}
-              <Icon name="arrow-right" size={16} className="shrink-0 text-muted" />
-            </button>
-          </li>
-        ))}
-      </ul>
-    </div>
+    <ul aria-label="Or start with one of these" className="flex flex-wrap gap-2">
+      {STARTERS.map(s => (
+        <li key={s}>
+          <Button variant="secondary" size="lg" onClick={() => onPick(s)} disabled={disabled}>{s}</Button>
+        </li>
+      ))}
+    </ul>
   )
 }
 
-// Written as one parent to another: the jobs we were tired of, and what we built for each.
-const LOAD: Array<[string, string]> = [
-  ['Twenty open tabs', 'Now every camp reads the same: dates, hours, ages, price.'],
-  ['Registration mornings', 'We check the date and email you before it opens.'],
-  ['The week nobody covered', 'We flag gaps and overlaps before you pay a deposit.'],
-  ['The same form, again', 'Enter your details once. Share them only when you say.'],
-  ['Keeping everyone posted', 'One calendar for your partner, the grandparents, the sitter.'],
+// What we built, as things to do. The hint names the chore each one replaces. A tile either
+// opens a page or, with `ask`, sends that message to the assistant.
+type Action = { icon: IconName; title: string; hint: string; href?: string; ask?: string }
+const ACTIONS: Action[] = [
+  { icon: 'search', title: 'Compare camps', hint: 'Instead of twenty open tabs', href: '/search' },
+  { icon: 'bell', title: 'Get registration emails', hint: 'Instead of setting alarms', ask: 'When does registration open for camps near me?' },
+  { icon: 'board', title: 'See every week', hint: 'Before a gap surprises you', href: '/summer' },
+  { icon: 'lock', title: 'Save your forms once', hint: 'Instead of typing them again', href: '/kit' },
+  { icon: 'users', title: 'Share one calendar', hint: 'Instead of texting everyone', href: '/household' },
+  { icon: 'chat', title: 'Use it in Claude', hint: 'Camp cards in your own chat', href: '/connect' },
 ]
 
 const PROMISES: React.ReactNode[] = [
@@ -54,28 +46,36 @@ const PROMISES: React.ReactNode[] = [
 ]
 
 /** Everything under the hero for a parent who is new here. */
-export function Landing({ className }: { className?: string }) {
+export function Landing({ onAsk, disabled, className }: { onAsk: (text: string) => void; disabled: boolean; className?: string }) {
   return (
     <div className={cx('space-y-16', className)}>
       <ExampleSummer />
 
       <OpeningSoon />
 
-      <Section title="What we were tired of doing" divided>
-        <dl className="divide-y divide-line">
-          {LOAD.map(([hers, ours]) => (
-            <div key={hers} className="grid gap-1 py-4 sm:grid-cols-3 sm:gap-6">
-              <dt className="font-semibold text-ink">{hers}</dt>
-              <dd className="text-muted sm:col-span-2">{ours}</dd>
-            </div>
+      <Section title="What we built instead" divided>
+        <ul className="grid gap-3 sm:grid-cols-2">
+          {ACTIONS.map(a => (
+            <li key={a.title}>
+              {a.ask
+                ? <ActionTile icon={a.icon} title={a.title} hint={a.hint} onClick={() => onAsk(a.ask!)} disabled={disabled} />
+                : <ActionTile icon={a.icon} title={a.title} hint={a.hint} href={a.href} />}
+            </li>
           ))}
-        </dl>
+        </ul>
       </Section>
 
       <section className="rounded-lg bg-ink p-6 text-accent-ink sm:p-8">
         <h2 className="font-display text-h2">Parent to parent</h2>
         <ul className="mt-4 grid gap-x-12 gap-y-3 sm:grid-cols-2">
-          {PROMISES.map((line, i) => <li key={i}>{line}</li>)}
+          {PROMISES.map((line, i) => (
+            <li key={i} className="flex items-start gap-3">
+              <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-pill bg-highlight text-ink">
+                <Icon name="check" size={12} />
+              </span>
+              <span>{line}</span>
+            </li>
+          ))}
         </ul>
       </section>
 

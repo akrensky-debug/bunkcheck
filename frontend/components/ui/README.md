@@ -55,7 +55,7 @@ top space).
 | --- | --- |
 | `Button` | Every button. `primary` (one per view), `secondary`, `ghost`, `link` (inline action), `quiet` (cancel, housekeeping), `danger` (remove, delete). Sizes `sm`/`md`/`lg`. `href` renders a link; `external` opens a new tab. `icon`/`leadingIcon` add an Icon. |
 | `IconButton` | A round button with one icon. `label` is required. |
-| `Icon` | Inline SVG line icons: arrow-right, arrow-left, arrow-up, check, search, x, chevron-*, calendar, user, plus, external. Stroke is 1.5px to match body text; `Button` raises it to match its semibold label. |
+| `Icon` | Inline SVG line icons: arrow-right, arrow-left, arrow-up, check, search, x, chevron-*, calendar, user, plus, external, bell, lock, users, board, chat. Stroke is 1.5px to match body text; `Button` raises it to match its semibold label. |
 | `Heading` | `display`, `h1`, `h2`, `h3`; `as` overrides the element. |
 | `Text` | `lead`, `body`, `small`, `caption`; tones `ink`, `muted`, `checked`, `warn`, `error`. Capped at 65ch unless `wide`. |
 | `Container` | Page width (`narrow`, `default`, `wide`) and gutters. |
@@ -67,6 +67,7 @@ top space).
 | `Checkbox`, `ChoiceChip` | A single yes/no; pick several (or one, `type="radio"`) from a short list. |
 | `SearchBar`, `SearchField` | The unified pill search bar. |
 | `Composer` | The chat input (`hero` or `dock`). |
+| `ActionTile` | A large button for one thing a person can do: icon on a yellow square, a verb-first title, an optional hint, an arrow. `href` makes it a link, `onClick` a button. Use a grid of them where a page would otherwise describe its features. Hover darkens the border; disabled fades to 40%. |
 | `List`, `ListRow` | Hairline-separated rows. `href` makes the whole row a link with a hover wash. |
 | `Meta` | A muted line of facts joined with " · ", skipping empty parts. |
 | `Price` | Bold amount plus muted unit ("$385/wk"). |

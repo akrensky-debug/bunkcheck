@@ -172,13 +172,13 @@ export default function AgentHome() {
                 label="Tell Bunkcheck about your kids and your summer"
               />
             </div>
-            <div className="mt-8">
+            <div className="mt-5">
               <Starters onPick={send} disabled={!family} />
             </div>
             {familyError && (
               <p className="mt-6 text-small text-error">We couldn&rsquo;t connect right now. Please refresh to try again.</p>
             )}
-            {!side && <Landing className="mt-16 sm:mt-24" />}
+            {!side && <Landing onAsk={send} disabled={!family} className="mt-16 sm:mt-24" />}
           </div>
         ) : (
           <>
