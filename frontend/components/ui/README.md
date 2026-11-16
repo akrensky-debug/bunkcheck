@@ -27,7 +27,7 @@ comes, show depth with lighter surfaces, not shadows, which barely read on a dar
 | --- | --- |
 | `bg` | page background (paper) |
 | `surface` | inputs, menus, the rare container (white) |
-| `ink` | text and icons (night navy) |
+| `ink` | text and icons (lake navy, 137.5 degrees round the wheel from the flashlight yellow) |
 | `muted` | secondary text, AA on `bg` and `surface` |
 | `line` | hairlines and borders. Translucent (`--line-alpha`), so it shows on any fill |
 | `tint` | hover wash on rows and ghost buttons, info notices |
