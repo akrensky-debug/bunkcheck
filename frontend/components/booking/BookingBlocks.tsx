@@ -1,5 +1,5 @@
-import { STATUS_LABEL, STATUS_TONE, countdown, type PackagePreview, type RegisterChecklist, type Registration } from '@/lib/booking'
-import { Button, List, ListRow, Meta, Notice, cx } from '@/components/ui'
+import { STATUS_LABEL, STATUS_TONE, countdown, isSoon, type PackagePreview, type RegisterChecklist, type Registration } from '@/lib/booking'
+import { Button, List, ListRow, Meta, Notice, StatusMark } from '@/components/ui'
 
 export type BookingUIData =
   | { type: 'registrations'; registrations: Registration[] }
@@ -16,9 +16,11 @@ function RegistrationList({ registrations }: { registrations: Registration[] }) 
           <div className="flex justify-between gap-4 text-small">
             <div className="min-w-0">
               <p className="truncate font-semibold text-ink">{r.camp_name}{r.child_name ? ` · ${r.child_name}` : ''}</p>
-              <p className="text-muted">{r.status === 'watching' && r.opens_at ? countdown(r.opens_at) : r.next_step}</p>
+              {r.status === 'watching' && r.opens_at && isSoon(r.opens_at)
+                ? <StatusMark tone="caution" weight="regular" size="md">{countdown(r.opens_at)}</StatusMark>
+                : <p className="text-muted">{r.status === 'watching' && r.opens_at ? countdown(r.opens_at) : r.next_step}</p>}
             </div>
-            <span className={cx('shrink-0 font-semibold', STATUS_TONE[r.status])}>{STATUS_LABEL[r.status]}</span>
+            <StatusMark tone={STATUS_TONE[r.status]} size="md" className="shrink-0">{STATUS_LABEL[r.status]}</StatusMark>
           </div>
         </ListRow>
       ))}

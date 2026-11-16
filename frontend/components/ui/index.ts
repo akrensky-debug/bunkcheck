@@ -12,3 +12,7 @@ export { Meta, Price } from './Meta'
 export { TrustMark, TRUST } from './TrustMark'
 export { TextLink } from './TextLink'
 export { EmptyState, Skeleton, Notice } from './Feedback'
+export {
+  StatusDot, StatusMark, StatusStrip, StatusCounts, StatusLegend, statusEdge, STATUS_TONES, SHAPE_NAME,
+  type StatusTone,
+} from './Status'

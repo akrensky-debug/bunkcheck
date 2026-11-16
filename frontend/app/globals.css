@@ -26,8 +26,18 @@
     --accent-ink: 255 255 255;
     --highlight: 245 217 107;     /* #F5D96B flashlight */
     --highlight-soft: 251 240 196;/* #FBF0C4 */
-    --checked: 46 107 63;         /* #2E6B3F */
-    --checked-soft: 227 239 229;  /* #E3EFE5 */
+    /* Status, a stoplight. Every status also shows a shape and a word (StatusMark, StatusDot),
+       so color is never the only signal. Text tones reach 4.5:1 on bg, surface, tint and their
+       own soft fill; scripts/check-contrast.mjs checks them in check:ui. */
+    --go: 46 107 63;              /* #2E6B3F done, confirmed, has a place */
+    --go-soft: 227 239 229;       /* #E3EFE5 */
+    --caution: 138 83 0;          /* #8A5300 in progress or at risk. Not the flashlight yellow,
+                                     which means checked in the logo */
+    --caution-soft: 253 238 214;  /* #FDEED6 */
+    --stop: 180 35 24;            /* #B42318 a gap or a blocker */
+    --stop-soft: 254 243 242;     /* #FEF3F2 */
+    --checked: var(--go);         /* trust: verified, confirmed by the camp */
+    --checked-soft: var(--go-soft);
     --warn: 122 90 0;             /* #7A5A00, AA on highlight-soft */
     --error: 180 35 24;           /* #B42318 */
     --error-soft: 254 243 242;    /* #FEF3F2 */

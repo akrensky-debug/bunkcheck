@@ -34,9 +34,13 @@ const config: Config = {
         soft: role('highlight-soft'),
       },
       checked: {
-        DEFAULT: role('checked'),           // verified, done, open
+        DEFAULT: role('checked'),           // trust: verified (same green as go)
         soft: role('checked-soft'),
       },
+      // Status, a stoplight. Pages use StatusMark and StatusDot, not these classes.
+      go: { DEFAULT: role('go'), soft: role('go-soft') },             // done, confirmed, has a place
+      caution: { DEFAULT: role('caution'), soft: role('caution-soft') }, // in progress or at risk
+      stop: { DEFAULT: role('stop'), soft: role('stop-soft') },       // a gap or a blocker
       warn: role('warn'),                   // waitlist and "check this" text
       error: {
         DEFAULT: role('error'),

@@ -2,8 +2,15 @@
 
 import { useEffect, useState } from 'react'
 import { useParams } from 'next/navigation'
-import { Button, Container, Heading, Meta, Notice, Text, TextLink } from '@/components/ui'
-import { confirmAlert, getAlert, stopAlert, type AlertView } from '@/lib/alerts'
+import { Button, Container, Heading, Meta, StatusMark, Text, TextLink, type StatusTone } from '@/components/ui'
+import { confirmAlert, getAlert, stopAlert, type AlertStatus, type AlertView } from '@/lib/alerts'
+
+const STATE: Record<AlertStatus, { tone: StatusTone; label: string }> = {
+  pending: { tone: 'caution', label: 'Not confirmed yet' },
+  on: { tone: 'go', label: 'Alerts on' },
+  stopped: { tone: 'neutral', label: 'Alerts stopped' },
+  expired: { tone: 'stop', label: 'Link expired' },
+}
 import { fmtWhen } from '@/lib/booking'
 
 /** The page behind every registration alert email: confirm, see the date, or stop. Opening it changes nothing. */
@@ -47,6 +54,7 @@ export default function AlertPage() {
       <header className="space-y-3">
         <Meta parts={['Registration alerts', view.email_hint]} />
         <Heading level="h1">{what}</Heading>
+        <StatusMark tone={STATE[view.status].tone} size="md">{STATE[view.status].label}</StatusMark>
       </header>
 
       {view.status === 'pending' && (
@@ -62,11 +70,11 @@ export default function AlertPage() {
 
       {view.status === 'on' && (
         <div className="space-y-3">
-          <Notice tone="success">
-            Alerts are on. {opensFuture
+          <p className="text-ink">
+            {opensFuture
               ? <>Registration opens <strong>{fmtWhen(view.opens_at!)}</strong>.</>
               : view.opens_at ? <>Registration has opened.</> : <>We&rsquo;ll email you as soon as the camp announces the date.</>}
-          </Notice>
+          </p>
           <div className="flex flex-wrap gap-x-6 gap-y-2 text-small">
             {view.registration_url && (
               <TextLink href={view.registration_url} external>Camp&rsquo;s registration page</TextLink>

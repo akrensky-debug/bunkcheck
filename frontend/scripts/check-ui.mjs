@@ -23,6 +23,13 @@ const RULES = [
   { name: 'uppercase or tracked label (use sentence case)', re: /\b(?:uppercase|tracking-(?:wide|wider|widest))\b/g },
   { name: 'emoji or symbol glyph (use <Icon> or words)', re: /[\p{Extended_Pictographic}✓✔✗✘←-↙›‹]/gu },
   { name: 'retired motion class', re: /\b(?:btn-lift|card-interactive|data-reveal|animate-rise-in|check-draw|nav-link)\b/g },
+  // Status is a stoplight with a shape and a word, never a bare color. /ui shows the swatches.
+  // Form errors keep text-error; success and warning messages use Notice.
+  {
+    name: 'status color (use StatusMark, StatusDot, statusEdge or Notice)',
+    re: /\b(?:text|bg|border|fill|stroke|ring|divide|outline|decoration)-(?:go|caution|stop|checked|warn)(?:-soft)?\b|<Text\b[^>]*\btone="(?:checked|warn)"/g,
+    skip: [join('app', 'ui') + sep],
+  },
 ]
 
 function walk(dir, out = []) {
@@ -42,6 +49,7 @@ for (const d of DIRS) {
     readFileSync(file, 'utf8').split('\n').forEach((line, i) => {
       if (line.includes('ui-check-ignore')) return
       for (const rule of RULES) {
+        if (rule.skip?.some(s => rel.startsWith(s))) continue
         for (const m of line.matchAll(rule.re)) {
           problems.push(`${rel}:${i + 1}  ${rule.name}: ${m[0]}`)
         }

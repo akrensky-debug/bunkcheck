@@ -15,6 +15,13 @@ const PATHS = {
   user: <><circle cx="8" cy="5.5" r="2.5" /><path d="M3 13.5c.8-2.3 2.7-3.5 5-3.5s4.2 1.2 5 3.5" /></>,
   plus: <path d="M8 3v10M3 8h10" />,
   external: <path d="M9.5 2.5h4v4M13.5 2.5 8 8M11.5 9.5v4h-9v-9h4" />,
+  clock: <><circle cx="8" cy="8" r="5.75" /><path d="M8 5v3.25l2 1.25" /></>,
+  // Status shapes (StatusDot, StatusMark). Each tone has its own silhouette, so status reads
+  // without color: a filled disc with a check, a half-filled disc, an open ring, a dash.
+  'status-go': <><circle cx="8" cy="8" r="6.25" fill="currentColor" /><path d="M5.25 8.25l1.9 1.9 3.6-4.15" className="stroke-surface" strokeWidth={1.75} /></>,
+  'status-caution': <><circle cx="8" cy="8" r="5.75" /><path d="M8 2.25a5.75 5.75 0 0 1 0 11.5z" fill="currentColor" /></>,
+  'status-stop': <circle cx="8" cy="8" r="5.5" strokeWidth={2.5} />,
+  'status-neutral': <path d="M5 8h6" strokeWidth={2.5} />,
 } as const
 
 export type IconName = keyof typeof PATHS

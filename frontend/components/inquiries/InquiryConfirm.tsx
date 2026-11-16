@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { cancelInquiry, fmtWhen, sendInquiry, type InquiryView } from '@/lib/inquiries'
-import { Button } from '@/components/ui'
+import { Button, Notice } from '@/components/ui'
 
 /**
  * The parent's yes. Shows exactly what the camp will read, lets them add contact details if
@@ -37,10 +37,9 @@ export default function InquiryConfirm({ token, initial, compact = false }: {
   if (view.status !== 'pending') {
     return (
       <div className={`${compact ? '' : 'space-y-4'}`}>
-        <p className={`text-small rounded-md px-4 py-3 border ${view.status === 'delivered' || view.status === 'confirmed'
-          ? 'bg-checked-soft border-checked text-checked' : 'bg-tint border-line text-ink'}`}>
+        <Notice tone={view.status === 'delivered' || view.status === 'confirmed' ? 'success' : 'info'}>
           {view.status === 'delivered' ? `Sent to ${camp}. Their answer will show here.` : view.status_text}
-        </p>
+        </Notice>
         {view.status === 'delivered' && (
           <p className="text-caption text-muted mt-2">
             {view.contact_included

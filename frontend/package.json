@@ -8,7 +8,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "check:ui": "node scripts/check-ui.mjs",
+    "check:ui": "node scripts/check-ui.mjs && node scripts/check-contrast.mjs",
+    "check:contrast": "node scripts/check-contrast.mjs",
     "check:env": "node scripts/check-public-env.mjs"
   },
   "dependencies": {

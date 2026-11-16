@@ -2,8 +2,11 @@
 
 import { useState } from 'react'
 import type { Board, Cell, KidRow, Option, Pick } from '@/lib/summer'
-import { fmtDay, money } from '@/lib/summer'
-import { Button, ChoiceChip, Heading, Meta, Text, TextLink } from '@/components/ui'
+import { TONE_WORD, cellTone, fmtDay, money, toneCounts } from '@/lib/summer'
+import {
+  Button, ChoiceChip, Heading, Meta, StatusCounts, StatusDot, StatusLegend, StatusMark, StatusStrip, Text, TextLink, cx,
+  statusEdge,
+} from '@/components/ui'
 import { miles } from '@/lib/format'
 
 /** Before we know the dates: one line per kid, nothing to fill in yet. */
@@ -41,6 +44,12 @@ export function SummerBoard({ board, busy, onAdd, onChoose, onRemove }: {
       {board.start_with && (
         <Text tone="muted">Start with the week of {fmtDay(board.start_with)}.</Text>
       )}
+      <StatusLegend items={[
+        { tone: 'go', label: 'Set: registered, on your calendar or away' },
+        { tone: 'caution', label: 'In progress: ideas, picked, waitlisted or hours to check' },
+        { tone: 'stop', label: 'Open: nothing yet' },
+        { tone: 'neutral', label: 'No care needed' },
+      ]} />
 
       {/* Phones: one kid at a time, weeks down the page. */}
       <div className="space-y-4 lg:hidden">
@@ -53,9 +62,10 @@ export function SummerBoard({ board, busy, onAdd, onChoose, onRemove }: {
             ))}
           </div>
         )}
+        <KidStatus kid={kid} anchor={c => c.state === 'not_needed' ? undefined : `#${kidAnchor(kid, c)}`} />
         <ul className="divide-y divide-line border-y border-line">
           {kid.cells.filter(c => c.state !== 'not_needed').map(c => (
-            <li key={c.week_of} className="py-4">
+            <li key={c.week_of} id={kidAnchor(kid, c)} className="scroll-mt-20 py-4">
               <WeekCell kid={kid} cell={c} showWeek {...props} />
             </li>
           ))}
@@ -63,7 +73,12 @@ export function SummerBoard({ board, busy, onAdd, onChoose, onRemove }: {
       </div>
 
       {/* Wide screens: a row per week, a column per kid, like the spreadsheet. */}
-      <div className="hidden lg:block">
+      <div className="hidden space-y-8 lg:block">
+        <div className="max-w-narrow space-y-5">
+          {board.kids.map(k => (
+            <KidStatus key={k.name} kid={k} named={board.kids.length > 1} anchor={c => `#week-${c.week_of}`} />
+          ))}
+        </div>
         <table className="w-full table-fixed border-collapse">
           <thead>
             <tr className="border-b border-line">
@@ -77,7 +92,7 @@ export function SummerBoard({ board, busy, onAdd, onChoose, onRemove }: {
           </thead>
           <tbody>
             {board.weeks.map((w, wi) => (
-              <tr key={w.week_of} className="border-b border-line align-top">
+              <tr key={w.week_of} id={`week-${w.week_of}`} className="scroll-mt-20 border-b border-line align-top">
                 <th scope="row" className="py-4 pr-4 text-left text-small font-semibold text-ink">{fmtDay(w.week_of)}</th>
                 {board.kids.map(k => (
                   <td key={k.name} className="py-4 pr-4">
@@ -99,6 +114,41 @@ const STATE_LINE: Partial<Record<Cell['state'], string>> = {
   registered: 'Registered', waitlisted: 'Waitlisted', chosen: 'Picked', covered: 'On your calendar', away: 'Away',
 }
 
+const kidAnchor = (kid: KidRow, c: Cell) => `week-${kid.name.toLowerCase().replace(/[^a-z0-9]+/g, '-')}-${c.week_of}`
+
+/** How a week reads to a screen reader on the strip: "Week of Jun 29: open, nothing yet". */
+function weekWord(c: Cell) {
+  const state = {
+    registered: 'registered', covered: 'on your calendar', away: 'away', chosen: 'picked', waitlisted: 'waitlisted',
+    ideas: `${c.picks.length} idea${c.picks.length === 1 ? '' : 's'}`, open: 'open, nothing yet', not_needed: 'no care needed',
+  }[c.state]
+  const hours = c.hours === 'short' ? ', hours short' : c.hours === 'check' ? ', confirm hours' : ''
+  return `Week of ${fmtDay(c.week_of)}: ${state}${c.label && c.state !== 'away' ? ` (${c.label})` : ''}${hours}`
+}
+
+/** One kid's summer at a glance: counts by tone and a strip with a segment per week. */
+function KidStatus({ kid, named, anchor }: { kid: KidRow; named?: boolean; anchor: (c: Cell) => string | undefined }) {
+  const n = toneCounts(kid)
+  const weeks = (k: number) => `${k} week${k === 1 ? '' : 's'}`
+  return (
+    <div className="space-y-2">
+      <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1">
+        {named && <Text as="span" className="w-24 font-semibold">{kid.name}</Text>}
+        <StatusCounts items={[
+          { tone: 'go', count: n.go, label: `${n.go === 1 ? 'week' : 'weeks'} ${TONE_WORD.go}` },
+          { tone: 'caution', count: n.caution, label: TONE_WORD.caution },
+          { tone: 'stop', count: n.stop, label: TONE_WORD.stop },
+        ]} />
+        {n.go + n.caution + n.stop === 0 && <Text as="span" variant="small" tone="muted">No care needed yet</Text>}
+      </div>
+      <StatusStrip
+        label={`${kid.name}'s summer, ${weeks(kid.cells.length)}`}
+        segments={kid.cells.map(c => ({ key: c.week_of, tone: cellTone(c), label: weekWord(c), href: anchor(c) }))}
+      />
+    </div>
+  )
+}
+
 function WeekCell({ kid, cell, showWeek, busy, openCell, setOpenCell, onAdd, onChoose, onRemove }: {
   kid: KidRow
   cell: Cell
@@ -112,25 +162,36 @@ function WeekCell({ kid, cell, showWeek, busy, openCell, setOpenCell, onAdd, onC
 }) {
   const key = `${kid.name}|${cell.week_of}`
   const open = openCell === key
-  if (cell.state === 'not_needed') return <Text variant="small" tone="muted">No care needed</Text>
+  const tone = cellTone(cell)
+  if (cell.state === 'not_needed') return (
+    <div className={cx('pl-3', statusEdge(tone))}>
+      {showWeek && <Text variant="small" tone="muted">Week of {fmtDay(cell.week_of)}</Text>}
+      <Text variant="small" tone="muted" className="inline-flex items-center gap-2"><StatusDot tone={tone} />No care needed</Text>
+    </div>
+  )
 
   const planned = ['registered', 'chosen', 'covered', 'away'].includes(cell.state)
   const ideas = cell.picks.filter(p => p.state !== 'chosen')
   return (
-    <div className="space-y-2">
+    <div className={cx('space-y-2 pl-3', statusEdge(tone))}>
       <div className="flex flex-wrap items-baseline justify-between gap-x-3">
-        <div>
+        <div className="min-w-0">
           {showWeek && <Text variant="small" tone="muted">Week of {fmtDay(cell.week_of)}</Text>}
-          {planned ? (
-            <Text className="font-semibold">
-              {cell.label ?? STATE_LINE[cell.state]}
-              <span className="font-normal text-muted"> · {STATE_LINE[cell.state]}</span>
-            </Text>
-          ) : cell.state === 'waitlisted' ? (
-            <Text tone="warn">{cell.label}: waitlisted</Text>
-          ) : (
-            <Text tone="muted">{ideas.length ? `${ideas.length} idea${ideas.length === 1 ? '' : 's'}` : 'Nothing yet'}</Text>
-          )}
+          <div className="flex items-start gap-2">
+            <StatusDot tone={tone} className="mt-1.5" />
+            {planned ? (
+              <Text className="font-semibold">
+                {cell.label ?? STATE_LINE[cell.state]}
+                <span className="font-normal text-muted"> · {STATE_LINE[cell.state]}</span>
+              </Text>
+            ) : cell.state === 'waitlisted' ? (
+              <Text className="font-semibold">
+                {cell.label}<span className="font-normal text-muted"> · Waitlisted</span>
+              </Text>
+            ) : (
+              <Text tone={ideas.length ? 'ink' : 'muted'}>{ideas.length ? `${ideas.length} idea${ideas.length === 1 ? '' : 's'}` : 'Nothing yet'}</Text>
+            )}
+          </div>
         </div>
         {cell.state !== 'away' && cell.state !== 'registered' && (
           <Button variant="link" size="sm" onClick={() => setOpenCell(open ? null : key)} aria-expanded={open}>
@@ -138,8 +199,8 @@ function WeekCell({ kid, cell, showWeek, busy, openCell, setOpenCell, onAdd, onC
           </Button>
         )}
       </div>
-      {cell.hours === 'short' && <Text variant="small" tone="warn">{cell.hours_note ?? 'Doesn’t cover your hours'}</Text>}
-      {cell.hours === 'check' && <Text variant="small" tone="muted">{cell.hours_note ?? 'Confirm the hours with the camp'}</Text>}
+      {cell.hours === 'short' && <p><StatusMark tone="caution" weight="regular">{cell.hours_note ?? 'Doesn’t cover your hours'}</StatusMark></p>}
+      {cell.hours === 'check' && <p><StatusMark tone="caution" weight="regular">{cell.hours_note ?? 'Confirm the hours with the camp'}</StatusMark></p>}
 
       {open && (
         <div className="space-y-4 pt-2">

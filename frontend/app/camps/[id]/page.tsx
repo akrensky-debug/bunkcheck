@@ -9,13 +9,16 @@ import TrustBadge from '@/components/TrustBadge'
 import RegistrationAlert from '@/components/booking/RegistrationAlert'
 import AskCamp from '@/components/inquiries/AskCamp'
 import { CAMP_TYPE_LABEL } from '@/components/CampCard'
-import { Button, Container, EmptyState, Heading, Icon, Meta, Notice, Section, Skeleton, TRUST, TextLink } from '@/components/ui'
+import {
+  Button, Container, EmptyState, Heading, Icon, Meta, Notice, Section, Skeleton, StatusMark, TRUST, TextLink,
+  type StatusTone,
+} from '@/components/ui'
 
-const AVAILABILITY: Record<string, { label: string; cls: string }> = {
-  open: { label: 'Open', cls: 'text-checked' },
-  waitlist: { label: 'Waitlist', cls: 'text-warn' },
-  full: { label: 'Full', cls: 'text-error' },
-  unknown: { label: 'Ask the camp', cls: 'text-muted' },
+const AVAILABILITY: Record<string, { label: string; tone: StatusTone }> = {
+  open: { label: 'Open', tone: 'go' },
+  waitlist: { label: 'Waitlist', tone: 'caution' },
+  full: { label: 'Full', tone: 'stop' },
+  unknown: { label: 'Ask the camp', tone: 'neutral' },
 }
 
 function Fact({ label, children }: { label: string; children: React.ReactNode }) {
@@ -80,7 +83,6 @@ export default function CampDetailPage() {
   const sharedAvail = shared(sessions.map(s => (AVAILABILITY[s.availability] ? s.availability : 'unknown')))
   const sessionsLine = [
     sharedPrice != null && `Every session is $${sharedPrice.toLocaleString()}.`,
-    sharedAvail && ALL_SAME[sharedAvail],
   ].filter(Boolean).join(' ')
 
   return (
@@ -96,7 +98,7 @@ export default function CampDetailPage() {
           <Heading level="h1" className="mb-4">{camp.name}</Heading>
           <TrustBadge status={camp.verification_status} aca={camp.aca_accredited} />
           {camp.trust_summary?.confirmed_by_camp_at && (
-            <p className="mt-2 flex items-center gap-1.5 text-small font-semibold text-checked">
+            <p className="mt-2 flex items-center gap-1.5 text-small font-semibold text-checked">{/* ui-check-ignore: trust, drawn like TrustMark */}
               <Icon name="check" size={14} />
               Confirmed by the camp on {new Date(camp.trust_summary.confirmed_by_camp_at).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
             </p>
@@ -140,7 +142,14 @@ export default function CampDetailPage() {
           {camp.sessions && camp.sessions.length > 0 && (
             <Section title={camp.season_year ? `${camp.season_year} sessions` : 'Sessions'}>
               {camp.season_note && <Notice className="mb-4">{camp.season_note}</Notice>}
-              {sessionsLine && <p className="mb-3 text-body text-ink">{sessionsLine}</p>}
+              {(sessionsLine || sharedAvail) && (
+                <p className="mb-3 flex flex-wrap items-baseline gap-x-2 text-body text-ink">
+                  {sessionsLine && <span>{sessionsLine}</span>}
+                  {sharedAvail && (
+                    <StatusMark tone={AVAILABILITY[sharedAvail].tone} size="md" weight="regular">{ALL_SAME[sharedAvail]}</StatusMark>
+                  )}
+                </p>
+              )}
               <ul className="divide-y divide-line border-y border-line">
                 {camp.sessions.map(s => {
                   const avail = AVAILABILITY[s.availability] ?? AVAILABILITY.unknown
@@ -154,13 +163,13 @@ export default function CampDetailPage() {
                           {new Date(s.end_date + 'T00:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
                         </p>
                         {spotsLine(s) && (
-                          <p className={`text-caption ${s.spots_available === 0 ? 'text-error' : 'text-checked'}`}>{spotsLine(s)}</p>
+                          <p className="text-caption text-muted">{spotsLine(s)}</p>
                         )}
                       </div>
                       {(sharedPrice == null || sharedAvail == null) && (
                         <div className="shrink-0 text-right">
                           {s.price && sharedPrice == null && <p className="text-body font-semibold text-ink">${Math.round(s.price).toLocaleString()}</p>}
-                          {sharedAvail == null && <p className={`text-small font-semibold ${avail.cls}`}>{avail.label}</p>}
+                          {sharedAvail == null && <StatusMark tone={avail.tone} size="md">{avail.label}</StatusMark>}
                         </div>
                       )}
                     </li>
@@ -220,10 +229,10 @@ export default function CampDetailPage() {
                   <p>{camp.trust_summary.fields_verified.length} details verified</p>
                 )}
                 {camp.trust_summary.fields_missing.length > 0 && (
-                  <p className="text-warn">Not in this listing yet: {listJoin(camp.trust_summary.fields_missing.map(fieldLabel))}.</p>
+                  <p className="text-warn">{/* ui-check-ignore: trust summary note, not a status */}Not in this listing yet: {listJoin(camp.trust_summary.fields_missing.map(fieldLabel))}.</p>
                 )}
                 {camp.trust_summary.accreditation.status === 'confirmed' && (
-                  <p className="inline-flex items-center gap-1.5 font-semibold text-checked"><Icon name="check" size={14} />ACA accredited</p>
+                  <p className="inline-flex items-center gap-1.5 font-semibold text-checked">{/* ui-check-ignore: trust, drawn like TrustMark */}<Icon name="check" size={14} />ACA accredited</p>
                 )}
               </div>
               {camp.verification_status === 'unverified' && (
