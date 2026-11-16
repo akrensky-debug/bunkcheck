@@ -158,10 +158,18 @@ changed, reply if wrong" (ROADMAP Phase 2, item 2). Code: `campfinder/owners/upd
    to copy, or the listing already shows the new season), the dates are not proposed. Instead
    the owner is asked: the reply lists the dates it would mean and says "reply yes if these are
    right". The message waits as `asked`, and their next reply is read against that question.
-4. **A person applies it**: `python -m campfinder.owners inbox` lists what's waiting,
+4. **A person applies it, from the forwarded copy.** With `OWNER_UPDATES_FROM_MAIL=1` the
+   email is read first, so the copy forwarded to `OWNER_FORWARD_TO` starts with what applying
+   would change, each line with the owner's own words, and a review link
+   (`/owners/review/<token>`). The page shows the email and the proposal; opening it changes
+   nothing. **Apply and tell the owner** makes the changes and emails the owner; **Close without
+   changes** records why. A message is handled once, and the link works for 14 days (only its
+   hash is stored, migration 0031). An email that needs a person gets the same link, to close it
+   once handled. If reading fails, the email is still forwarded, marked for a person.
+   From the command line instead: `python -m campfinder.owners inbox` lists what's waiting,
    `apply <id> --by NAME` makes the changes, `reject <id> --by NAME --reason "..."` closes it.
-   Each change goes in `listing_changes` as `owner_email`, with the owner's address and the
-   whole email.
+   Either way each change goes in `listing_changes` as `owner_email`, with the owner's address
+   and the whole email; `handled_by` says `review link` or the name given.
 5. **The owner gets back what changed**: each change before and after with their words, every
    session as it now stands, and "reply and a person will fix it". It shows the change in full
    because some owners will read it with their own AI. Season facts go through the same code

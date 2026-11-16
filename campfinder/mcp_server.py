@@ -42,7 +42,7 @@ from campfinder.inquiries.service import record_appearances
 log = logging.getLogger(__name__)
 
 # Bump the version when widget.html changes: hosts cache templates by URI.
-WIDGET_URI = "ui://campfinder/camps-v6.html"
+WIDGET_URI = "ui://campfinder/camps-v7.html"
 WIDGET_MIME = "text/html;profile=mcp-app"
 MAX_CARDS = 8
 

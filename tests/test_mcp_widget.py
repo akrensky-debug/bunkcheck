@@ -18,7 +18,7 @@ def test_claude_may_load_its_font_and_chatgpt_keeps_an_empty_allowlist() -> None
 
 
 def test_widget_lets_the_chat_show_through_and_ends_its_loader_on_errors() -> None:
-    assert WIDGET_URI == "ui://campfinder/camps-v6.html"  # hosts cache by URI: bump it with the file
+    assert WIDGET_URI == "ui://campfinder/camps-v7.html"  # hosts cache by URI: bump it with the file
     assert '<meta name="color-scheme" content="light dark">' in WIDGET
     assert "html, body { margin: 0; background: transparent; }" in WIDGET
     assert "r.isError || !r.structuredContent" in WIDGET

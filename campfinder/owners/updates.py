@@ -30,7 +30,9 @@ the camp's own session ids, and the code checks each one.
 
 from __future__ import annotations
 
+import hashlib
 import os
+import secrets
 from datetime import date, datetime, time, timedelta, timezone
 from typing import Any, Awaitable, Callable, Literal
 
@@ -44,6 +46,8 @@ from campfinder.owners import emails, season
 from campfinder.owners.service import ConfirmationError, record_change, set_spots
 
 MAX_BODY_CHARS = 20_000
+REVIEW_TTL = timedelta(days=14)            # how long the review link in the forwarded copy works
+REVIEWABLE = ("proposed", "needs_person")  # what a person can still act on
 SEASON_REPLY_WINDOW = timedelta(days=60)   # a reply to a season update email is recognised this long
 
 
@@ -449,3 +453,91 @@ def reject(message_id: str, *, handled_by: str, reason: str) -> dict[str, Any]:
     if msg["status"] in ("applied", "rejected"):
         raise ConfirmationError(f"This message is already {msg['status']}")
     return _set(msg, "rejected", handled_by=handled_by, reason=reason)
+
+
+# ---------------------------------------------------------------------------
+# Reviewing from the forwarded copy (no command line, no keys on a laptop)
+# ---------------------------------------------------------------------------
+# The person who reads owners' replies gets each one forwarded with what the reader proposes
+# and a link. Opening the link changes nothing (mail scanners open links on their own); the
+# page's buttons call apply() or reject(). The token is stored only as its hash, works for
+# REVIEW_TTL, and a message can be handled once.
+
+def _hash(token: str) -> str:
+    return hashlib.sha256(token.encode()).hexdigest()
+
+
+def issue_review_link(row: dict[str, Any]) -> str | None:
+    """A link to review this message, or None if there's nothing left to decide."""
+    if row.get("status") not in REVIEWABLE:
+        return None
+    token = secrets.token_urlsafe(24)
+    get_supabase().table("owner_messages").update({
+        "review_token_hash": _hash(token), "review_expires_at": (_now() + REVIEW_TTL).isoformat(),
+    }).eq("id", row["id"]).execute()
+    return f"{get_settings().frontend_url.rstrip('/')}/owners/review/{token}"
+
+
+def by_review_token(token: str) -> dict[str, Any] | None:
+    """The message a review link points at, or None if the link is unknown or has expired.
+    A handled message still opens, so the page can say who handled it."""
+    if not token:
+        return None
+    rows = get_supabase().table("owner_messages").select("*").eq("review_token_hash", _hash(token)).execute().data
+    if not rows:
+        return None
+    expires = rows[0].get("review_expires_at")
+    if expires and datetime.fromisoformat(str(expires).replace("Z", "+00:00")) <= _now():
+        return None
+    return rows[0]
+
+
+_WHAT = {"full": "full", "open": "open again"}
+
+
+def _availability(s: dict[str, Any]) -> str:
+    if s.get("availability") == "full":
+        return "full"
+    n = s.get("spots_available")
+    return f"open, {n} spots left" if n is not None else (s.get("availability") or "open")
+
+
+def proposal_lines(msg: dict[str, Any]) -> list[str]:
+    """What applying this message would change, in plain words, each with the owner's own words."""
+    proposal = msg.get("proposal") or {}
+    by_id = {str(s["id"]): s for s in (_sessions(msg["camp_id"]) if msg.get("camp_id") else [])}
+    lines = []
+    for c in proposal.get("changes") or []:
+        s = by_id.get(str(c.get("session_id")))
+        label = (s.get("name") or str(s["start_date"])) if s else "A session no longer on the listing"
+        after = _WHAT.get(c.get("change"), f"{c.get('spots_left')} spots left")
+        before = _availability(s) if s else "unknown"
+        lines.append(f'{label}: {before} -> {after}   (they wrote: "{c.get("quote", "")}")')
+    quotes = proposal.get("quotes") or {}
+
+    def said(key: str) -> str:
+        return f'   (they wrote: "{quotes[key]}")' if quotes.get(key) else ""
+
+    if proposal.get("season_facts"):
+        f = season.SeasonFacts.model_validate(proposal["season_facts"])
+        y = f.season_year or season.target_season()
+        if f.sessions:
+            lines.append(f"{y} sessions, replacing what the listing shows{said('sessions')}:")
+            lines += [f"  {season.session_line(n)}" for n in f.sessions]
+        elif f.dates_not_set:
+            lines.append(f"{y} dates: not set yet{said('sessions')}")
+        if f.price_per_week is not None:
+            lines.append(f"{y} price per week: ${f.price_per_week:,.0f}{said('price')}")
+        elif f.price_not_set:
+            lines.append(f"{y} price: not set yet{said('price')}")
+        if f.registration_opens:
+            when = season.registration_line(season.opens_at(f.registration_opens, f.registration_time))
+            lines.append(f"{y} registration opens {when}{said('registration')}")
+        elif f.registration_not_set:
+            lines.append(f"{y} registration day: not set yet{said('registration')}")
+        if f.rest_is_right:
+            lines.append("They say the rest of the listing is right")
+    ask = proposal.get("ask")
+    if ask:
+        lines.append(f"Then we email them to check {len(ask.get('sessions') or [])} dates, because {ask.get('why', 'the dates are unclear')}")
+    return lines
