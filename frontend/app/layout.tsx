@@ -58,13 +58,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               />
             </a>
             <nav aria-label="Main" className="flex items-center gap-4 text-small font-semibold sm:gap-7">
-              <a href="/summer" className="text-muted transition-colors hover:text-ink whitespace-nowrap">Your summer</a>
-              <a href="/search" className="text-muted transition-colors hover:text-ink whitespace-nowrap">
+              <a href="/summer" className="py-3 text-muted transition-colors hover:text-ink whitespace-nowrap">Your summer</a>
+              <a href="/search" className="py-3 text-muted transition-colors hover:text-ink whitespace-nowrap">
                 <span className="sm:hidden">Camps</span>
                 <span className="hidden sm:inline">Browse camps</span>
               </a>
-              <a href="/connect" className="hidden text-muted transition-colors hover:text-ink whitespace-nowrap md:inline">Use in Claude</a>
-              <a href="/operators" className="hidden text-muted transition-colors hover:text-ink whitespace-nowrap sm:inline">For camps</a>
+              <a href="/connect" className="hidden py-3 text-muted transition-colors hover:text-ink whitespace-nowrap md:inline">Use in Claude</a>
+              <a href="/operators" className="hidden py-3 text-muted transition-colors hover:text-ink whitespace-nowrap sm:inline">For camps</a>
               <AccountLink />
             </nav>
           </div>
