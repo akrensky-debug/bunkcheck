@@ -13,7 +13,7 @@ Strategy: `docs/assistant-apps-strategy.md`. Founder steps: `docs/assistant-apps
 | --- | --- |
 | Claude endpoint | `https://www.bunkcheck.ai/mcp`, which proxies to `https://<api>/claude/mcp` (stateless streamable HTTP, JSON responses, no auth) |
 | Tools | the same ten tools as ChatGPT (`campfinder/mcp_server.py`): nine read-only, plus `send_inquiry`, which drafts a question the parent sends from our site |
-| Camp cards | the same MCP App (`ui://campfinder/camps-v5.html`) **without** `ui.domain` |
+| Camp cards | the same MCP App (`ui://campfinder/camps-v6.html`) **without** `ui.domain` |
 | Links | `ui/open-link` to our own site; tagged `utm_source=claude` |
 | Server metadata | `title`, `websiteUrl` and light and dark `icons` served from `/static/` |
 | Smoke test | `python -m campfinder.scripts.check_mcp https://www.bunkcheck.ai/mcp` |
