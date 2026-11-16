@@ -16,6 +16,13 @@ is the checker for this email.
     python -m campfinder.owners send    <camp> --update --by NAME [--to EMAIL]
     python -m campfinder.owners queue --update [--region "Providence, RI"]
     python -m campfinder.owners send-ready --update --by NAME [--limit N] [--yes]
+    python -m campfinder.owners suppress EMAIL --by NAME [--note "..."]   # never send outreach here
+    python -m campfinder.owners unsuppress EMAIL --by NAME
+    python -m campfinder.owners suppressed                    # the do-not-contact list
+
+Every listing and season email is checked first (campfinder/owners/outreach.py): not to an
+address on the do-not-contact list, not more than OWNER_OUTREACH_DAILY_CAP in 24 hours, and not
+until OWNER_POSTAL_ADDRESS is set for the footer.
 
 `queue` starts with the January 1 number: Providence-area camps whose next-season facts the
 owner confirmed.
@@ -42,7 +49,7 @@ import json
 import sys
 
 from campfinder.config import get_settings
-from campfinder.owners import season, service, updates
+from campfinder.owners import outreach, season, service, updates
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -67,6 +74,14 @@ def main(argv: list[str] | None = None) -> int:
     s = sub.add_parser("queue")
     s.add_argument("--update", action="store_true", help="who to send the season update to")
     s.add_argument("--region", default=season.PROVIDENCE, help="the area the January 1 number counts")
+    s = sub.add_parser("suppress", help="never send the listing or season email to this address")
+    s.add_argument("email")
+    s.add_argument("--by", required=True, help="your name, for the record")
+    s.add_argument("--note", help="why, in a few words")
+    s = sub.add_parser("unsuppress", help="take an address off the do-not-contact list")
+    s.add_argument("email")
+    s.add_argument("--by", required=True, help="your name, for the record")
+    sub.add_parser("suppressed", help="list the do-not-contact list")
     s = sub.add_parser("send-ready")
     s.add_argument("--update", action="store_true", help="send the season update email")
     s.add_argument("--by", required=True, help="your name, for the change log")
@@ -90,6 +105,8 @@ def main(argv: list[str] | None = None) -> int:
             return _updates(args)
         if args.cmd in ("queue", "send-ready"):
             return _batch(args)
+        if args.cmd in ("suppress", "unsuppress", "suppressed"):
+            return _suppressions(args)
         if args.cmd == "checked":
             for ref in args.camp:
                 camp = service.find_camp(ref)
@@ -154,9 +171,32 @@ def _batch(args: argparse.Namespace) -> int:
         return 0
     site = get_settings().frontend_url.rstrip("/")
     send, path = (season.send, "update") if update else (service.send, "confirm")
+    sent = 0
     for camp, _ in batch:
-        prepared = asyncio.run(send(camp, sent_by=args.by))
+        try:
+            prepared = asyncio.run(send(camp, sent_by=args.by))
+        except service.ConfirmationError as e:   # today's limit, the do-not-contact list, no postal address
+            print(f"stopped after {sent} of {len(batch)}: {e}", file=sys.stderr)
+            return 1
+        sent += 1
         print(f"asked {camp['name']}  ->  {prepared.email.to}  ({site}/owners/{path}/{prepared.token})")
+    print(f"\n{sent} sent. {outreach.sent_in_window()} of {outreach.daily_cap()} allowed in the last 24 hours.")
+    return 0
+
+
+def _suppressions(args: argparse.Namespace) -> int:
+    if args.cmd == "suppress":
+        row = outreach.suppress(args.email, "manual", source=f"person: {args.by}", note=args.note)
+        print(f"{row['email']} is on the do-not-contact list ({row['reason']}, {row['source']})")
+    elif args.cmd == "unsuppress":
+        print(f"{args.email}: taken off the list by {args.by}" if outreach.unsuppress(args.email)
+              else f"{args.email} wasn't on the list")
+    else:
+        rows = outreach.suppression_list()
+        for r in rows:
+            print(f"{str(r['created_at'])[:10]}  {r['email']:<40} {r['reason']:<10} {r['source']}"
+                  + (f"  ({r['note']})" if r.get("note") else ""))
+        print(f"{len(rows)} addresses")
     return 0
 
 

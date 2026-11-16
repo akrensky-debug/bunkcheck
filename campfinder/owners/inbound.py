@@ -67,6 +67,9 @@ def review_block(update: dict[str, Any] | None) -> str:
         top = "Bunkcheck read this as a listing update. Nothing changes until you apply it:"
     elif status == "needs_person":
         top = f"Bunkcheck didn't change anything. A person should read it: {update.get('reason') or 'see the email'}"
+    elif status == "stopped":
+        top = ("They asked us to stop emailing. The address is on the do-not-contact list, so no listing or "
+               "season email goes to it again. Nothing else changed.")
     elif status == "applied":
         top = "Bunkcheck applied this update (the sender is verified and auto-apply is on):"
     else:
@@ -115,8 +118,31 @@ async def _listing_update(msg: dict[str, Any], sender: str) -> dict[str, Any] | 
     return {"id": str(row["id"]), "status": row["status"], "reason": row.get("reason"), "lines": lines, "link": link}
 
 
+def delivery_problem(event: dict[str, Any]) -> dict[str, Any]:
+    """A hard bounce or a spam complaint: never send outreach to that address again. A soft
+    (transient) bounce may deliver next time, so it changes nothing."""
+    from campfinder.owners import outreach
+
+    data = event.get("data") or {}
+    if event["type"] == "email.bounced":
+        bounce = data.get("bounce") or {}
+        if bounce.get("type") != "Permanent":
+            return {"status": f"ignored: {bounce.get('type') or 'unknown'} bounce"}
+        reason, note = "bounced", f"{bounce.get('subType') or ''}: {bounce.get('message') or ''}".strip(": ")
+    else:
+        reason, note = "complained", "marked our email as spam"
+    to = [parseaddr(a)[1].lower() for a in data.get("to") or [] if parseaddr(a)[1]]
+    for address in to:
+        outreach.suppress(address, reason, source="resend webhook",
+                          note=f"{note}; subject: {data.get('subject') or ''}"[:500])
+    return {"status": f"do not contact: {reason}", "emails": to}
+
+
 async def handle(event: dict[str, Any], fetch: Fetch | None = None) -> dict[str, Any]:
-    """Forward one received email. Returns what happened, for the webhook's response."""
+    """Forward one received email, or record a bounce or complaint. Returns what happened, for
+    the webhook's response."""
+    if event.get("type") in ("email.bounced", "email.complained"):
+        return delivery_problem(event)
     if event.get("type") != "email.received":
         return {"status": "ignored"}
     email_id = (event.get("data") or {}).get("email_id")
@@ -130,8 +156,17 @@ async def handle(event: dict[str, Any], fetch: Fetch | None = None) -> dict[str,
         return {"status": "not forwarded: OWNER_FORWARD_TO is not set"}
     if sender in (forward_to.lower(), parseaddr(own)[1].lower()):
         return {"status": "skipped: our own address"}   # never loop
-    # Read first, so the forwarded copy carries the proposal and the review link.
-    update = await _listing_update(msg, sender) if os.environ.get("OWNER_UPDATES_FROM_MAIL") == "1" and sender else None
+    from campfinder.owners import outreach
+
+    if sender and outreach.is_stop_reply(msg.get("text") or ""):
+        # "Stop": no more outreach to this address. Still forwarded, so a person sees it.
+        outreach.suppress(sender, "asked", source="reply", note=(msg.get("subject") or "")[:500])
+        update: dict[str, Any] | None = {"id": None, "status": "stopped"}
+    elif os.environ.get("OWNER_UPDATES_FROM_MAIL") == "1" and sender:
+        # Read first, so the forwarded copy carries the proposal and the review link.
+        update = await _listing_update(msg, sender)
+    else:
+        update = None
     result: dict[str, Any] = {"status": "forwarded" if await get_mailer().send(forwarded(msg, forward_to, update))
                               else "not forwarded: mailer is off"}
     if update:
