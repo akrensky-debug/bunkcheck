@@ -88,7 +88,7 @@ export default function Reference() {
 
       <Demo title="Type scale" note="Heading levels display, h1, h2, h3 (Figtree); lead, body, small, caption (Atkinson Hyperlegible Next). Body text stops at 65ch.">
         <Stack gap={4}>
-          <Heading level="display">Summer, sorted.</Heading>
+          <Heading level="display">Your secret weapon for summer.</Heading>
           <Heading level="h1" as="p">h1: page titles</Heading>
           <Heading level="h2" as="p">h2: section headings</Heading>
           <Heading level="h3" as="p">h3: row titles, card titles</Heading>

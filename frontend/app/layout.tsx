@@ -14,7 +14,7 @@ const figtree = localFont({
 })
 
 export const metadata: Metadata = {
-  title: 'Bunkcheck: Summer, sorted.',
+  title: 'Bunkcheck',
   description: 'Find and schedule the best summer camps for your kids with AI, and get an email when registration opens.',
   applicationName: 'Bunkcheck',
   // favicon.ico, icon.svg and apple-icon.png in app/ are wired automatically by Next;
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   icons: { icon: '/icon.png', apple: '/icon.png' },
   openGraph: {
     title: 'Bunkcheck',
-    description: 'Summer, sorted.',
+    description: 'Find and schedule the best summer camps for your kids with AI, and get an email when registration opens.',
     siteName: 'Bunkcheck',
     type: 'website',
   },
@@ -81,7 +81,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 height={28}
                 className="mb-3 h-6 w-auto"
               />
-              <p className="text-muted">Summer, sorted.</p>
             </div>
             <div className="grid grid-cols-2 gap-x-12 gap-y-8 sm:grid-cols-3">
               <FooterColumn title="Parents" links={[['/', 'Plan your summer'], ['/summer', 'Your summer board'], ['/search', 'Browse camps'], ['/connect', 'Use Bunkcheck in Claude']]} />
