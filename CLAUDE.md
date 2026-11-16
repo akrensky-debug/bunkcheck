@@ -1,6 +1,6 @@
 # Working on CampFinder
 
-Read this first, every session. Updated 15 October 2026 (how to work); 4 October (order of work); 3 October: `main` is the trunk. This replaces the
+Read this first, every session. Updated 14 November 2026 (preview links); 15 October 2026 (how to work); 4 October (order of work); 3 October: `main` is the trunk. This replaces the
 1 October rule (on `claude/product-plan`) that made `product-plan` the only line of work.
 
 ## How to work (added 15 October 2026)
@@ -22,6 +22,15 @@ Deeper means more rigor on the same task. It does not mean more scope.
 link that opens it: the Google Doc or Drive file link, the artifact URL, the PR or the file on
 GitHub, the preview deploy. A folder path or "it's in docs/" is a fallback, never the answer.
 If something only exists locally, say so and offer to publish it.
+
+**Every review gets a preview link (added 14 November 2026).** Each PR you hand Andrew comes
+with a link he can open to see the change working, in the PR description and in your message.
+- A change to the site: the Vercel preview from the PR's Vercel comment, opened at the page that
+  changed. Load it first and check it shows the change; a preview of an older commit doesn't count.
+- A change the site doesn't serve (the API, the MCP tools, the camp cards): Vercel has no preview
+  for it, so publish the closest thing you can, such as a private page running the new code on
+  real data, and say plainly that it isn't a deploy.
+- Docs only: the file on GitHub, on the PR's branch.
 
 **Always-on skill: `anthropic-skills:writing`.** Load it before writing anything a person will
 read: docs, PR descriptions, commit messages, emails, UI copy, and the closing summary of a
