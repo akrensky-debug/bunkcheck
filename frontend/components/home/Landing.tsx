@@ -57,7 +57,7 @@ const ACTIONS: Action[] = [
     cta: 'Set up your household', href: '/household',
   },
   {
-    icon: 'chat', title: 'Use it in Claude', hint: 'Camp cards in your own chat',
+    icon: 'chat', title: 'Ask from Claude', hint: 'Instead of one more app',
     more: 'Add Bunkcheck to Claude and ask about camps there. You get the same camp cards: dates, weekly prices, extended care and open weeks.',
     cta: 'See how to add it', href: '/connect',
   },
@@ -117,9 +117,17 @@ export function Landing({ onAsk, disabled, className }: { onAsk: (text: string) 
         </ul>
       </section>
 
+      <section className="border-t border-line pt-8">
+        <Heading level="h2">Ten weeks. Start with one sentence.</Heading>
+        <div className="mt-4">
+          <Button size="lg" icon="arrow-up" href="#start">Tell us about your kids</Button>
+        </div>
+      </section>
+
       <div className="space-y-2 border-t border-line pt-8">
+        {/* Counted in the live database on 16 November 2026: 457 camps in CT, MA, ME, NH, RI and VT. */}
         <Text variant="small" tone="muted">
-          We cover the Northeast so far, mostly around Providence and Boston.
+          More than 450 camps in six New England states so far, most around Boston and Providence.
         </Text>
         <Text variant="small" tone="muted">
           Run a camp? <TextLink href="/operators">Listing is free</TextLink>

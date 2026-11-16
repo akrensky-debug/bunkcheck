@@ -154,13 +154,13 @@ export default function AgentHome() {
               <span className="marker whitespace-nowrap">all winter.</span>
             </h1>
             <p className="mt-5 max-w-measure text-lead text-muted">
-              Bunkcheck finds the camps, lines up your weeks and watches the registration dates. Built by parents
-              who got tired of doing it by hand.
+              Bunkcheck is built by parents who got tired of doing it by hand. We find the camps, line up your
+              weeks and watch the registration dates.
             </p>
             <p className="mt-8 font-semibold text-ink">
               Tell us about your kids. One sentence will do.
             </p>
-            <div className="mt-3">
+            <div id="start" className="mt-3 scroll-mt-24">
               <Composer
                 size="hero"
                 value={input}
