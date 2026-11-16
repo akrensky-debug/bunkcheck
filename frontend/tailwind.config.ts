@@ -22,7 +22,7 @@ const config: Config = {
       surface: role('surface'),             // white surfaces: inputs, the few containers
       ink: role('ink'),                     // text and icons (night navy)
       muted: role('muted'),                 // secondary text, AA on bg and surface
-      line: role('line'),                   // hairlines and borders
+      line: 'rgb(var(--line) / var(--line-alpha))', // hairlines and borders, translucent
       tint: role('tint'),                   // hover wash on rows and ghost buttons
       accent: {
         DEFAULT: role('accent'),            // primary buttons, user chat pill
@@ -85,7 +85,9 @@ const config: Config = {
         measure: '65ch',   // longest comfortable line of body text
       },
       minHeight: {
-        page: 'calc(100vh - 4rem)', // viewport minus the 64px header
+        // Visible viewport minus the 64px header. dvh, not vh: in iOS Safari 100vh is the height
+        // with the toolbar hidden, so a short chat scrolled and the docked composer sat under it.
+        page: 'calc(100dvh - 4rem)',
       },
       keyframes: {
         fade: { from: { opacity: '0' }, to: { opacity: '1' } },

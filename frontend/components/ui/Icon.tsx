@@ -1,6 +1,6 @@
 import type { SVGProps } from 'react'
 
-/** Line icons on a 16px grid, 1.5px stroke, currentColor. Decorative unless `label` is set. */
+/** Line icons on a 16px grid, 1.5px stroke (Button thickens it to match its label), currentColor. Decorative unless `label` is set. */
 const PATHS = {
   'arrow-right': <path d="M3 8h10M9 4l4 4-4 4" />,
   'arrow-left': <path d="M13 8H3M7 4 3 8l4 4" />,

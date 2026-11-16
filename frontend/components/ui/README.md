@@ -20,7 +20,8 @@ all rendered at `/ui` (not linked from the site, `noindex`).
 ## Tokens
 
 Defined once as CSS variables in `app/globals.css` (`:root`), mapped to role names in
-`tailwind.config.ts`. A dark theme redefines the variables; nothing else changes.
+`tailwind.config.ts`. A dark theme redefines the variables; nothing else changes. When it
+comes, show depth with lighter surfaces, not shadows, which barely read on a dark page.
 
 | Role | Use |
 | --- | --- |
@@ -28,7 +29,7 @@ Defined once as CSS variables in `app/globals.css` (`:root`), mapped to role nam
 | `surface` | inputs, menus, the rare container (white) |
 | `ink` | text and icons (night navy) |
 | `muted` | secondary text, AA on `bg` and `surface` |
-| `line` | hairlines and borders |
+| `line` | hairlines and borders. Translucent (`--line-alpha`), so it shows on any fill |
 | `tint` | hover wash on rows and ghost buttons, info notices |
 | `accent`, `accent-hover`, `accent-ink` | primary buttons and the user's chat bubble; text on them |
 | `highlight`, `highlight-soft` | flashlight yellow: fills only, sparingly, never text |
@@ -40,7 +41,9 @@ Defined once as CSS variables in `app/globals.css` (`:root`), mapped to role nam
 
 Type: `text-display` (home hero only), `text-h1` (page title), `text-h2` (section),
 `text-h3` (row and card titles), `text-lead`, `text-body`, `text-small`, `text-caption`.
-Radius: `rounded-sm` 8, `rounded-md` 12, `rounded-lg` 16, `rounded-pill`. Shadow:
+Radius: `rounded-sm` 8, `rounded-md` 12, `rounded-lg` 16, `rounded-pill`. A rounded thing
+inside another one gets the outer radius minus the padding between them, so the corners
+stay concentric (`Composer` is the worked example). Shadow:
 `shadow-soft`, only for floating things (composer, search bar, menus). Widths:
 `max-w-narrow` 720, `max-w-default` 1024, `max-w-wide` 1152, `max-w-measure` 65ch.
 Spacing follows Tailwind's 4px scale; stick to 1, 2, 3, 4, 6, 8, 12, 16 (and 24 for page
@@ -52,7 +55,7 @@ top space).
 | --- | --- |
 | `Button` | Every button. `primary` (one per view), `secondary`, `ghost`, `link` (inline action), `quiet` (cancel, housekeeping), `danger` (remove, delete). Sizes `sm`/`md`/`lg`. `href` renders a link; `external` opens a new tab. `icon`/`leadingIcon` add an Icon. |
 | `IconButton` | A round button with one icon. `label` is required. |
-| `Icon` | Inline SVG line icons: arrow-right, arrow-left, arrow-up, check, search, x, chevron-*, calendar, user, plus, external. |
+| `Icon` | Inline SVG line icons: arrow-right, arrow-left, arrow-up, check, search, x, chevron-*, calendar, user, plus, external. Stroke is 1.5px to match body text; `Button` raises it to match its semibold label. |
 | `Heading` | `display`, `h1`, `h2`, `h3`; `as` overrides the element. |
 | `Text` | `lead`, `body`, `small`, `caption`; tones `ink`, `muted`, `checked`, `warn`, `error`. Capped at 65ch unless `wide`. |
 | `Container` | Page width (`narrow`, `default`, `wide`) and gutters. |
