@@ -154,7 +154,7 @@ function CoverageView({ data }: { data: Coverage }) {
   }
   const label: Record<CoverageStatus, string> = {
     covered: 'Covered', check_hours: 'Confirm hours', partial: 'Partly covered',
-    open: 'Open', away: 'Away', not_needed: 'No care needed',
+    open: 'Open', away: 'Away', not_needed: 'No camp needed',
   }
   const hours = Object.entries(data.care_hours)
   return (

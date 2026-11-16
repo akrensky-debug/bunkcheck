@@ -26,6 +26,8 @@ export interface FamilyProfile {
   notes?: string | null
   work_schedule?: Array<{ parent: string; days: string[]; start: string; end: string }>
   away?: Array<{ start_date: string; end_date: string; label: string; child_name?: string | null }>
+  camp_weeks?: string[]  // Mondays of the weeks the family wants camp; unset means every week
+  sleepaway?: boolean | null
 }
 
 export interface FamilyEvent {

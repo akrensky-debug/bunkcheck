@@ -179,11 +179,11 @@ const PROMPTS: Record<BriefField, string> = {
   kids: 'Who’s going to camp?',
   home: 'What town are you in?',
   school: 'Which school do they go to?',
-  sorted_weeks: 'Any weeks already sorted?',
+  camp_weeks: 'Which weeks do you need camp?',
+  sleepaway: 'Are you open to overnight camp?',
   care_hours: 'Roughly when do you need care?',
   interests: 'What are they into?',
   weekly_budget: 'About how much a week, per kid?',
   max_drive_minutes: 'How far are you happy to drive?',
-  sleepaway: 'Is sleepaway camp an option?',
   booked_elsewhere: 'Anything already booked outside Bunkcheck?',
 }

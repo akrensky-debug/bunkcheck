@@ -29,22 +29,28 @@ from campfinder.services.season import planning_year
 
 Context = Literal["suggestions", "prices"]
 
-# Asked in this order, one at a time. Constraints come before content.
-CORE: tuple[BriefField, ...] = ("kids", "home", "school", "sorted_weeks", "care_hours", "interests")
+# Asked in this order, one at a time. Constraints come before content: which weeks need camp, then
+# whether those weeks can be overnight camp, which changes everything after it (care hours don't
+# apply to a week away, and overnight weeks are booked first).
+CORE: tuple[BriefField, ...] = ("kids", "home", "school", "camp_weeks", "sleepaway", "care_hours", "interests")
 # Asked only once the core is done, and only when they matter.
-LATER: tuple[BriefField, ...] = ("weekly_budget", "max_drive_minutes", "sleepaway", "booked_elsewhere")
+LATER: tuple[BriefField, ...] = ("weekly_budget", "max_drive_minutes", "booked_elsewhere")
+
+# Overnight camp is worth asking about from this age. In our listings the median youngest age an
+# overnight camp takes is 7 (113 camps, November 2026; the youngest takes 5).
+OVERNIGHT_MIN_AGE = 7
 
 # A "not sure yet" comes back only when this holds: the season (registration, January to March)
 # or something on screen (suggestions or prices).
 RETURNS_WHEN: dict[BriefField, str] = {
-    "kids": "suggestions", "home": "suggestions", "school": "season", "sorted_weeks": "season", "care_hours": "suggestions",
+    "kids": "suggestions", "home": "suggestions", "school": "season", "camp_weeks": "season", "care_hours": "suggestions",
     "interests": "suggestions", "weekly_budget": "prices", "max_drive_minutes": "suggestions",
     "sleepaway": "season", "booked_elsewhere": "season",
 }
 
 # Profile keys and the brief field they answer.
 KEY_FIELD: dict[str, BriefField] = {
-    "home_location": "home", "school": "school", "summer_start": "school", "summer_end": "school", "away": "sorted_weeks",
+    "home_location": "home", "school": "school", "summer_start": "school", "summer_end": "school", "camp_weeks": "camp_weeks",
     "work_schedule": "care_hours", "weekly_budget": "weekly_budget", "max_drive_minutes": "max_drive_minutes",
     "sleepaway": "sleepaway", "booked_elsewhere": "booked_elsewhere",
 }
@@ -92,8 +98,10 @@ def answered(profile: dict[str, Any], field: BriefField) -> bool:
         return bool(profile.get("summer_start") and profile.get("summer_end"))
     if field == "home":
         return bool(profile.get("home_location"))
-    if field == "sorted_weeks":
-        return "away" in profile
+    if field == "camp_weeks":
+        # Families who answered the older "Any weeks already sorted?" question told us their weeks off.
+        legacy = (profile.get("brief") or {}).get("facts", {}).get("sorted_weeks", {})
+        return "camp_weeks" in profile or legacy.get("source") in ("said", "looked_up")
     if field == "care_hours":
         return bool(profile.get("work_schedule"))
     if field == "interests":
@@ -126,10 +134,21 @@ def _guess(profile: dict[str, Any], field: BriefField, today: date) -> None:
 # Changing it
 # ---------------------------------------------------------------------------
 
+def _mondays(weeks: Iterable[Any]) -> list[str]:
+    """Any day in a week -> that week's Monday, sorted, once each."""
+    days = {d if isinstance(d, date) else date.fromisoformat(str(d)[:10]) for d in weeks}
+    return sorted({(d - timedelta(days=d.weekday())).isoformat() for d in days})
+
+
 def apply_update(profile: dict[str, Any], data: dict[str, Any], source: Source, today: date) -> dict[str, Any]:
     """Merge facts into the profile and note where each came from. Only keys in `data` change."""
     profile = copy.deepcopy(profile)
     profile.update(data)
+    if "camp_weeks" in data:
+        if data["camp_weeks"] is None:
+            profile.pop("camp_weeks")  # back to "every week"
+        else:
+            profile["camp_weeks"] = _mondays(data["camp_weeks"])
     fields: set[BriefField] = {KEY_FIELD[k] for k in data if k in KEY_FIELD}
     kids = data.get("kids")
     if kids is not None:
@@ -188,17 +207,18 @@ def _names(kids: list[dict[str, Any]]) -> str:
 def _question(profile: dict[str, Any], field: BriefField, returning: bool = False) -> Question:
     kids = _kids(profile)
     names = _names(kids)
-    older = [k for k in kids if (k.get("age") or 0) >= 9]
+    older = [k for k in kids if (k.get("age") or 0) >= OVERNIGHT_MIN_AGE]
     text: dict[BriefField, tuple[str, str | None]] = {
         "kids": ("Who’s going to camp?", "First names and ages."),
         "home": ("What town are you in?", "So we suggest camps near you."),
         "school": ("Which school do they go to?", "We'll use it to find the last day of school."),
-        "sorted_weeks": ("Any weeks already sorted?", "Vacations, time with family, or a camp you've already booked."),
+        "camp_weeks": ("Which weeks do you need camp?", "Leave off vacations, family time and weeks that are already sorted."),
         "care_hours": ("Roughly when do you need care?", "For example: both of us work about 8 to 6."),
         "interests": (f"What {'is' if len(kids) == 1 else 'are'} {names} into?", None),
         "weekly_budget": ("About how much a week, per kid?", "So the camps we suggest fit. Change it any time."),
         "max_drive_minutes": ("How far are you happy to drive?", "One way, most days."),
-        "sleepaway": (f"Is sleepaway camp an option for {_names(older)}?", None),
+        "sleepaway": (f"Are you open to overnight camp for {_names(older)}?",
+                      "Overnight (sleepaway) camp means nights away, usually a week or more. Day camp is home every night."),
         "booked_elsewhere": ("Anything already booked outside Bunkcheck?", "So we don't suggest camps for those weeks."),
     }
     prompt, help_ = text[field]
@@ -209,13 +229,18 @@ def _holds(when: str, today: date, context: set[str]) -> bool:
     return today.month in (1, 2, 3) if when == "season" else when in context
 
 
+def _applies(profile: dict[str, Any], field: BriefField) -> bool:
+    """Some questions only make sense for some families: overnight camp needs a kid old enough."""
+    if field == "sleepaway":
+        return any((k.get("age") or 0) >= OVERNIGHT_MIN_AGE for k in _kids(profile))
+    return True
+
+
 def _later_matters(profile: dict[str, Any], field: BriefField, today: date, context: set[str]) -> bool:
     if field == "weekly_budget":
         return "prices" in context
     if field == "max_drive_minutes":
         return "suggestions" in context
-    if field == "sleepaway":
-        return any((k.get("age") or 0) >= 9 for k in _kids(profile))
     return today.month in (1, 2, 3)  # booked_elsewhere: registration season
 
 
@@ -225,12 +250,12 @@ def next_question(profile: dict[str, Any], today: date, context: Iterable[Contex
     skipped, not_sure = meta.get("skipped", {}), meta.get("not_sure", {})
 
     def fresh(f: BriefField) -> bool:
-        return not answered(profile, f) and f not in skipped and f not in not_sure
+        return not answered(profile, f) and f not in skipped and f not in not_sure and _applies(profile, f)
 
     def back(f: BriefField) -> bool:
         # Never in the same sitting: "not sure" on Monday can come back Tuesday at the earliest.
         rested = f in not_sure and date.fromisoformat(str(not_sure[f])[:10]) < today
-        return not answered(profile, f) and rested and _holds(RETURNS_WHEN[f], today, ctx)
+        return not answered(profile, f) and rested and _holds(RETURNS_WHEN[f], today, ctx) and _applies(profile, f)
 
     for f in CORE:
         if fresh(f):
@@ -293,10 +318,17 @@ def chips(profile: dict[str, Any]) -> list[Chip]:
         dates = f"{_day(profile['summer_start'])} to {_day(profile['summer_end'])}"
         label = f"{profile['school']} · {dates}" if profile.get("school") else f"Summer {dates}"
         out.append(Chip(field="school", label=label, source=source("school")))
-    if known("sorted_weeks"):
+    if known("camp_weeks"):
+        weeks = profile.get("camp_weeks")
+        parts = ["Camp all summer" if weeks is None else
+                 f"Camp {len(weeks)} week{'' if len(weeks) == 1 else 's'}" if weeks else "No camp weeks"]
         away = list(dict.fromkeys(a.get("label") or "Away" for a in profile.get("away") or []))
-        label = "Nothing sorted yet" if not away else "Away: " + ", ".join(away[:2]) + (" +" if len(away) > 2 else "")
-        out.append(Chip(field="sorted_weeks", label=label, source=source("sorted_weeks")))
+        if away:
+            parts.append("Away: " + ", ".join(away[:2]) + (" +" if len(away) > 2 else ""))
+        out.append(Chip(field="camp_weeks", label=" · ".join(parts), source=source("camp_weeks")))
+    if known("sleepaway") and profile.get("sleepaway") is not None:
+        out.append(Chip(field="sleepaway", label="Overnight OK" if profile["sleepaway"] else "Day camp only",
+                        source=source("sleepaway")))
     if known("care_hours") and profile.get("work_schedule"):
         out.append(Chip(field="care_hours", label=_care_label(profile["work_schedule"]), source=source("care_hours")))
     if known("interests"):
@@ -309,9 +341,6 @@ def chips(profile: dict[str, Any]) -> list[Chip]:
     if known("max_drive_minutes") and profile.get("max_drive_minutes") is not None:
         out.append(Chip(field="max_drive_minutes", label=f"Up to {profile['max_drive_minutes']} min drive",
                         source=source("max_drive_minutes")))
-    if known("sleepaway") and profile.get("sleepaway") is not None:
-        out.append(Chip(field="sleepaway", label="Sleepaway OK" if profile["sleepaway"] else "Day camp only",
-                        source=source("sleepaway")))
     if known("booked_elsewhere") and profile.get("booked_elsewhere") is not None:
         out.append(Chip(field="booked_elsewhere",
                         label="Some weeks booked elsewhere" if profile["booked_elsewhere"] else "Nothing booked elsewhere",

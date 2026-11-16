@@ -3,8 +3,8 @@ import { authHeaders } from '@/lib/auth'
 const API = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'
 
 export type BriefField =
-  | 'kids' | 'home' | 'school' | 'sorted_weeks' | 'care_hours' | 'interests'
-  | 'weekly_budget' | 'max_drive_minutes' | 'sleepaway' | 'booked_elsewhere'
+  | 'kids' | 'home' | 'school' | 'camp_weeks' | 'sleepaway' | 'care_hours' | 'interests'
+  | 'weekly_budget' | 'max_drive_minutes' | 'booked_elsewhere'
 export type Source = 'said' | 'looked_up' | 'guessed'
 export type Context = 'suggestions' | 'prices'
 
@@ -22,6 +22,7 @@ export interface BriefUpdate {
   school?: string
   summer_start?: string
   summer_end?: string
+  camp_weeks?: string[]
   weekly_budget?: number
   max_drive_minutes?: number
   sleepaway?: boolean

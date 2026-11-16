@@ -81,7 +81,12 @@ class SearchCampsInput(BaseModel):
     location: str = Field(description=LOCATION_HELP)
     radius_miles: float = Field(default=30.0, ge=1, le=150)
     age: int | None = Field(default=None, ge=2, le=19, description="Child's age in years.")
-    camp_type: Literal["day", "sleepaway", "specialty"] | None = None
+    camp_type: Literal["day", "sleepaway", "specialty"] | None = Field(
+        default=None,
+        description="'day' is home every night; 'sleepaway' is overnight camp, nights away for a week or more; "
+        "'specialty' is a focused program, usually by day. Leave unset for all. For a family that said day "
+        "camp only, overnight camps are left out unless you ask for 'sleepaway'.",
+    )
     categories: list[str] | None = Field(
         default=None,
         description="Interest categories to match, e.g. sports, arts, STEM, nature, outdoor.",
@@ -192,10 +197,22 @@ def _compact_camp(c: dict[str, Any]) -> dict[str, Any]:
     return out
 
 
-async def search_camps_tool(inp: SearchCampsInput) -> ToolOutput:
+def _day_camp_only(family_id: str | None) -> bool:
+    """The family said overnight camp isn't an option."""
+    if not family_id:
+        return False
+    try:
+        return load_family_profile(family_id).get("sleepaway") is False
+    except Exception:
+        return False  # a missing profile never blocks a search
+
+
+async def search_camps_tool(inp: SearchCampsInput, family_id: str | None = None) -> ToolOutput:
+    day_only = inp.camp_type is None and _day_camp_only(family_id)
     req = SearchRequest(
         **inp.model_dump(exclude={"weeks"}),
         weeks=[w.isoformat() for w in inp.weeks] if inp.weeks else None,
+        day_only=day_only,
     )
     res = await run_search(req)
     camps = [r.model_dump(mode="json") for r in res.results]
@@ -210,6 +227,7 @@ async def search_camps_tool(inp: SearchCampsInput) -> ToolOutput:
             if not camps else (f"{old} of these show last season's prices (last_season); "
                                f"{planning_year()} details aren't posted yet. Say so when you mention a price."
                                if old else None),
+            **({"day_camp_only": "Overnight camps were left out: this family said day camp only."} if day_only else {}),
         },
         ui={"type": "camps", "camps": camps, "query": inp.model_dump(mode="json", exclude_none=True)},
     )
@@ -452,7 +470,7 @@ CAMP_TOOLS: list[ToolSpec] = [
         "Search verified summer camps near a location, filtered by the child's age, camp type, "
         "interests, budget, weeks and logistics. Returns ranked camps with match reasons. "
         "Results are also shown to the parent as cards, so do not repeat every field back.",
-        SearchCampsInput, search_camps_tool, status="Searching camps",
+        SearchCampsInput, search_camps_tool, family_optional=True, status="Searching camps",
     ),
     ToolSpec(
         "find_sessions",
@@ -483,7 +501,8 @@ FAMILY_TOOLS: list[ToolSpec] = [
     ToolSpec(
         "update_family_profile",
         "Save durable facts about this family so they carry over to future conversations: home "
-        "location, kids (first name, age, interests, needs), summer dates, budget, logistics. "
+        "location, kids (first name, age, interests, needs), summer dates, the weeks they want camp "
+        "(camp_weeks), whether overnight camp is an option (sleepaway), budget, logistics. "
         "Save as soon as the parent shares something durable. Only fields you pass are changed.",
         UpdateFamilyProfileInput, update_family_profile_tool, family=True, status="Saving to your family profile",
     ),
@@ -496,8 +515,8 @@ FAMILY_TOOLS: list[ToolSpec] = [
     ),
     ToolSpec(
         "not_sure_yet",
-        "The parent doesn't know an answer yet, or wants to skip a question (kids, school, sorted_weeks, "
-        "care_hours, interests, weekly_budget, max_drive_minutes, sleepaway, booked_elsewhere). Saves a "
+        "The parent doesn't know an answer yet, or wants to skip a question (kids, home, school, camp_weeks, "
+        "sleepaway, care_hours, interests, weekly_budget, max_drive_minutes, booked_elsewhere). Saves a "
         "default marked as a guess where one helps, and moves on. 'Not sure' comes back when it matters; "
         "'skip' waits in the Finish later list.",
         NotSureInput, not_sure_tool, family=True, status="Noting that for later",
@@ -512,7 +531,8 @@ FAMILY_TOOLS: list[ToolSpec] = [
     ToolSpec(
         "check_summer_coverage",
         "Check, week by week and for each kid, whether the summer is covered: the hours when every "
-        "parent is at work (from the saved work schedule), minus vacations and travel, against the "
+        "parent is at work (from the saved work schedule), only in the weeks the family wants camp "
+        "(camp_weeks; other weeks come back not_needed), minus vacations and travel, against the "
         "camps and commitments on the family calendar. Reports covered, open and partly covered "
         "weeks, camps whose hours need confirming, and nearby camps for the open weeks. Save work "
         "hours and trips with update_family_profile first.",

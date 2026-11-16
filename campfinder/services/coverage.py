@@ -148,6 +148,8 @@ def compute_coverage(
     start, end = _as_date(profile["summer_start"]), _as_date(profile["summer_end"])
     work = [WorkBlock.model_validate(w) for w in profile.get("work_schedule") or []]
     away = [AwayRange.model_validate(a) for a in profile.get("away") or []]
+    # The weeks the family wants camp. Not set means every week; a week left out needs nothing.
+    camp_weeks = None if profile.get("camp_weeks") is None else {_as_date(w) for w in profile["camp_weeks"]}
     windows = care_windows(work)
     hours_known = bool(work)
     kids = [k for k in profile.get("kids") or [] if k.get("name")]
@@ -181,6 +183,8 @@ def compute_coverage(
                 if trip:
                     if trip.label not in away_labels:
                         away_labels.append(trip.label)
+                    continue
+                if camp_weeks is not None and ws not in camp_weeks:
                     continue
                 needed += 1
                 outcome, title, detail = _day_cover(day, window, cover_events, camps, hours_known)

@@ -2,7 +2,7 @@
 
 import { useState, type ReactNode } from 'react'
 import type { FamilyProfile } from '@/lib/agent'
-import type { AwayRange, BriefField, BriefKid, BriefUpdate, Chip, Question } from '@/lib/summer'
+import type { BriefField, BriefKid, BriefUpdate, Chip, Question } from '@/lib/summer'
 import { fmtDay } from '@/lib/summer'
 import { Button, ChoiceChip, Field, Heading, Input, Stack, Text, cx } from '@/components/ui'
 
@@ -80,7 +80,7 @@ function Editor({ field, profile, weeks, schools, busy, onAnswer }: {
     case 'kids': return <KidsEditor kids={profile.kids ?? []} busy={busy} onAnswer={onAnswer} />
     case 'home': return <HomeEditor value={profile.home_location ?? ''} busy={busy} onAnswer={onAnswer} />
     case 'school': return <SchoolEditor value={(profile.school as string) ?? ''} schools={schools} busy={busy} onAnswer={onAnswer} />
-    case 'sorted_weeks': return <WeeksEditor profile={profile} weeks={weeks} busy={busy} onAnswer={onAnswer} />
+    case 'camp_weeks': return <CampWeeksEditor profile={profile} weeks={weeks} busy={busy} onAnswer={onAnswer} />
     case 'care_hours': return <HoursEditor profile={profile} busy={busy} onAnswer={onAnswer} />
     case 'interests': return <InterestsEditor kids={profile.kids ?? []} busy={busy} onAnswer={onAnswer} />
     case 'weekly_budget':
@@ -90,7 +90,7 @@ function Editor({ field, profile, weeks, schools, busy, onAnswer }: {
       return <NumberChoice options={[10, 15, 20, 30, 45]} format={n => `${n} min`} unit="minutes" label="Longest drive, one way"
         value={(profile.max_drive_minutes as number) ?? null} busy={busy} onPick={n => onAnswer({ max_drive_minutes: n })} />
     case 'sleepaway':
-      return <YesNo yes="Yes, it's an option" no="Day camp only" busy={busy} onPick={v => onAnswer({ sleepaway: v })} />
+      return <YesNo yes="Yes, overnight is an option" no="Day camp only" busy={busy} onPick={v => onAnswer({ sleepaway: v })} />
     case 'booked_elsewhere':
       return <YesNo yes="Yes, some weeks" no="Nothing yet" busy={busy} onPick={v => onAnswer({ booked_elsewhere: v })} />
   }
@@ -190,26 +190,27 @@ function SchoolEditor({ value, schools, busy, onAnswer }: {
   )
 }
 
-function inRange(week: string, a: { start_date: string; end_date: string }) {
-  return a.start_date <= week && a.end_date >= week
-}
-
 function addDays(day: string, n: number) {
   const d = new Date(day + 'T00:00:00Z')  // UTC, so the date never shifts with the time zone
   d.setUTCDate(d.getUTCDate() + n)
   return d.toISOString().slice(0, 10)
 }
 
-const friday = (week: string) => addDays(week, 4)
+/** Weeks a family trip covers, Monday to Friday, so they start unticked. */
+function awayWeeks(profile: FamilyProfile, weeks: string[]) {
+  const trips = (profile.away ?? []).filter(a => !a.child_name)
+  return new Set(weeks.filter(w => trips.some(a => a.start_date <= addDays(w, 4) && a.end_date >= w)))
+}
 
-function WeeksEditor({ profile, weeks, busy, onAnswer }: {
-  profile: FamilyProfile; weeks: string[]; busy: boolean; onAnswer: (u: BriefUpdate) => void
+function CampWeeksEditor({ profile, weeks, busy, onAnswer }: {
+  profile: FamilyProfile & Record<string, unknown>; weeks: string[]; busy: boolean; onAnswer: (u: BriefUpdate) => void
 }) {
-  const away = profile.away ?? []
-  const [picked, setPicked] = useState<Set<string>>(
-    new Set(weeks.filter(w => away.some(a => !a.child_name && (inRange(w, a) || inRange(friday(w), a))))),
-  )
-  const [label, setLabel] = useState(away[0]?.label ?? 'Away')
+  const saved = profile.camp_weeks
+  const [picked, setPicked] = useState<Set<string>>(() => {
+    if (saved) return new Set(saved)
+    const away = awayWeeks(profile, weeks)
+    return away.size ? new Set(weeks.filter(w => !away.has(w))) : new Set()
+  })
   if (!weeks.length) {
     return <Text tone="muted">Once we know your summer dates, tap the weeks here.</Text>
   }
@@ -219,32 +220,24 @@ function WeeksEditor({ profile, weeks, busy, onAnswer }: {
     else n.add(w)
     return n
   })
+  const all = picked.size === weeks.length
   return (
     <form className="space-y-4" onSubmit={e => {
       e.preventDefault()
-      const keepOthers = away.filter(a => a.child_name)  // trips for one kid stay as they were
-      // Back-to-back weeks become one trip.
-      const ranges: AwayRange[] = []
-      for (const w of Array.from(picked).sort()) {
-        const last = ranges[ranges.length - 1]
-        if (last && friday(addDays(w, -7)) === last.end_date) last.end_date = friday(w)
-        else ranges.push({ start_date: w, end_date: friday(w), label: label.trim() || 'Away' })
-      }
-      onAnswer({ away: [...keepOthers, ...ranges] })
+      onAnswer({ camp_weeks: weeks.filter(w => picked.has(w)) })
     }}>
-      <Text variant="small" tone="muted">Tap the weeks you won&rsquo;t need camp: vacation, family, a camp already booked.</Text>
       <div className="flex flex-wrap gap-2">
         {weeks.map(w => (
-          <ChoiceChip key={w} checked={picked.has(w)} onChange={() => toggle(w)}>{fmtDay(w)}</ChoiceChip>
+          <ChoiceChip key={w} checked={picked.has(w)} onChange={() => toggle(w)}>Week of {fmtDay(w)}</ChoiceChip>
         ))}
       </div>
-      {picked.size > 0 && (
-        <Field label="What is it?" className="max-w-xs">
-          {id => <Input id={id} value={label} onChange={e => setLabel(e.target.value)} placeholder="Cape Cod, Grandma's" />}
-        </Field>
-      )}
       <Stack row gap={4} align="center" wrap>
-        <Save busy={busy}>{picked.size ? `Save ${picked.size} week${picked.size === 1 ? '' : 's'}` : 'None yet'}</Save>
+        <Save busy={busy} disabled={!picked.size}>
+          {picked.size ? `Plan ${picked.size} week${picked.size === 1 ? '' : 's'}` : 'Tap a week'}
+        </Save>
+        <Button variant="link" onClick={() => setPicked(all ? new Set() : new Set(weeks))}>
+          {all ? 'Clear' : 'The whole summer'}
+        </Button>
       </Stack>
     </form>
   )

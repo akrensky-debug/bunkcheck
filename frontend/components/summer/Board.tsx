@@ -112,7 +112,7 @@ function WeekCell({ kid, cell, showWeek, busy, openCell, setOpenCell, onAdd, onC
 }) {
   const key = `${kid.name}|${cell.week_of}`
   const open = openCell === key
-  if (cell.state === 'not_needed') return <Text variant="small" tone="muted">No care needed</Text>
+  if (cell.state === 'not_needed') return <Text variant="small" tone="muted">No camp needed</Text>
 
   const planned = ['registered', 'chosen', 'covered', 'away'].includes(cell.state)
   const ideas = cell.picks.filter(p => p.state !== 'chosen')
