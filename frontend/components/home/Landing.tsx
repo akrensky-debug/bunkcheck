@@ -125,45 +125,76 @@ function OpeningSoon() {
   )
 }
 
-// An example family, not real bookings: activity types, not camp names. Ten weeks, late June to
-// late August. `span` is weeks; `kind` picks the fill.
-type Block = { label: string; kind?: 'away' | 'open' }
-const EXAMPLE: Array<{ kid: string; fill: string; blocks: Block[] }> = [
-  { kid: 'Maya, 8', fill: 'bg-series-3', blocks: [
-    { label: 'Soccer' }, { label: 'STEM' }, { label: 'Away', kind: 'away' }, { label: 'Sailing' }, { label: 'Art' },
+// An example family, not real bookings: activity types, not camp names, and round example prices.
+// Ten weeks from 21 June. Every block is two weeks, so its label fits on a phone.
+type Block = { label: string; perWeek?: number; kind?: 'away' | 'open' }
+const EXAMPLE: Array<{ kid: string; blocks: Block[] }> = [
+  { kid: 'Maya, 8', blocks: [
+    { label: 'Soccer', perWeek: 310 }, { label: 'STEM', perWeek: 395 }, { label: 'Away', kind: 'away' },
+    { label: 'Sailing', perWeek: 420 }, { label: 'Art', perWeek: 285 },
   ] },
-  { kid: 'Leo, 5', fill: 'bg-series-2', blocks: [
-    { label: 'Nature' }, { label: 'Swim' }, { label: 'Away', kind: 'away' }, { label: 'Open', kind: 'open' }, { label: 'Farm' },
+  { kid: 'Leo, 5', blocks: [
+    { label: 'Nature', perWeek: 290 }, { label: 'Swim', perWeek: 240 }, { label: 'Away', kind: 'away' },
+    { label: 'Open', kind: 'open' }, { label: 'Farm', perWeek: 330 },
   ] },
 ]
-const MONTHS: Array<[string, string]> = [['June', 'col-span-2'], ['July', 'col-span-4'], ['August', 'col-span-4']]
+const WEEKS_PER_BLOCK = 2
+// The day each week begins, by month.
+const AXIS: Array<[string, number[]]> = [['June', [21, 28]], ['July', [5, 12, 19, 26]], ['August', [2, 9, 16, 23]]]
+const MONTH_SPAN: Record<number, string> = { 2: 'col-span-2', 4: 'col-span-4' }
 
-/** The picture of where she's headed: ten weeks, one row per kid, every block two weeks wide so
- *  its label fits on a phone. The explanation sits above the board, at reading size. */
+const dollars = (n: number) => '$' + n.toLocaleString('en-US')
+
+/** What the row adds up to, in words and numbers, so the chart needs no legend. */
+function rowSummary(blocks: Block[]) {
+  const camp = blocks.filter(b => b.perWeek != null)
+  const open = blocks.filter(b => b.kind === 'open').length * WEEKS_PER_BLOCK
+  const cost = camp.reduce((sum, b) => sum + b.perWeek! * WEEKS_PER_BLOCK, 0)
+  const weeks = camp.length * WEEKS_PER_BLOCK + ' weeks of camp' + (open ? ', ' + open + ' still open' : '')
+  return weeks + ' · ' + dollars(cost) + (open ? ' so far' : '')
+}
+
+/**
+ * The picture of where she's headed, drawn the way Tufte would: a real time axis, every label
+ * on the thing it names, no box and no legend, and one saturated color, spent on the one week
+ * that needs her attention. Each row carries its own total.
+ */
 function ExampleSummer() {
   return (
     <section>
       <Heading level="h2">A whole summer on one page</Heading>
-      <Text className="mt-2">
-        Here&rsquo;s an example: two kids, ten weeks. Every week has a plan except one, and we flag it in yellow.
-      </Text>
-      <div className="mt-4 rounded-lg border border-line bg-surface p-4 sm:p-6">
-        <div className="grid grid-cols-10 gap-1" aria-hidden="true">
-          {MONTHS.map(([m, span]) => <p key={m} className={cx('text-caption text-muted', span)}>{m}</p>)}
+      <Text className="mt-2">Here&rsquo;s an example: two kids, ten weeks, one gap. Prices are per week.</Text>
+
+      <div className="mt-6">
+        <div className="grid grid-cols-10 gap-1 border-b border-line pb-1 text-caption text-muted" aria-hidden="true">
+          {AXIS.map(([month, days]) => (
+            <div key={month} className={MONTH_SPAN[days.length]}>
+              <p className="font-semibold text-ink">{month}</p>
+              <div className={cx('grid tabular-nums', days.length === 2 ? 'grid-cols-2' : 'grid-cols-4')}>
+                {days.map(d => <span key={d}>{d}</span>)}
+              </div>
+            </div>
+          ))}
         </div>
+
         {EXAMPLE.map(row => (
-          <div key={row.kid} className="mt-3">
-            <p className="text-small font-semibold text-ink">{row.kid}</p>
+          <div key={row.kid} className="mt-4">
+            <p className="text-small">
+              <span className="font-semibold text-ink">{row.kid}</span>{' '}
+              <span className="text-muted">{rowSummary(row.blocks)}</span>
+            </p>
             <ul className="mt-1 grid grid-cols-5 gap-1">
               {row.blocks.map((b, i) => (
                 <li
                   key={i}
                   className={cx(
-                    'flex h-10 items-center overflow-hidden rounded-sm px-2 text-caption font-semibold',
-                    b.kind === 'open' ? 'bg-highlight text-ink' : b.kind === 'away' ? 'bg-tint text-muted' : cx(row.fill, 'text-accent-ink'),
+                    'flex h-12 flex-col justify-center overflow-hidden rounded-sm px-2 text-caption',
+                    b.kind === 'open' ? 'bg-highlight text-ink' : b.kind === 'away' ? 'text-muted' : 'bg-tint text-ink',
                   )}
                 >
-                  <span className="truncate">{b.label}</span>
+                  <span className="truncate font-semibold">{b.label}</span>
+                  {b.perWeek != null && <span className="truncate text-muted tabular-nums">{dollars(b.perWeek)}</span>}
+                  {b.kind === 'open' && <span className="truncate">2 weeks</span>}
                 </li>
               ))}
             </ul>
