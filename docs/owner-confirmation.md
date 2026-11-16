@@ -122,6 +122,8 @@ that a reply reaches a person.
 | `OWNER_REPLY_TO` | none | Where owners' replies go: `owners@mail.bunkcheck.ai`, never a personal address |
 | `RESEND_WEBHOOK_SECRET` | none (endpoint off) | Signing secret of the Resend webhook for `email.received` |
 | `OWNER_FORWARD_TO` | none | The inbox a person reads; replies are forwarded there |
+| `OWNER_POSTAL_ADDRESS` | none (no outreach) | Our postal address, in the footer of every listing and season email. Neither is sent until it's set |
+| `OWNER_OUTREACH_DAILY_CAP` | `20` | Most listing and season emails in any 24 hours |
 | `OWNER_UPDATES_FROM_MAIL` | off | `1` also sends each reply to listing updates by email (below) |
 
 Replies reach a person this way: Resend receives mail for `mail.bunkcheck.ai` (an MX record on
@@ -131,6 +133,24 @@ Resend. Replying from the forward shows the reader's own address, so answer camp
 Bunkcheck address.
 
 The copy in `campfinder/owners/emails.py` is a starting point for Andrew to edit.
+
+## Before any email we start
+
+The listing email and the season update are the emails we start, so each is checked right before
+it goes (`campfinder/owners/outreach.py`); `send` and `send-ready` stop and say why:
+
+- **Do-not-contact list** (`email_suppressions`, migration 0033). Never to an address that hard
+  bounced or marked us as spam (both from the Resend webhook: subscribe it to `email.bounced` and
+  `email.complained` as well as `email.received`), that replied only "stop" (it's still forwarded
+  to a person), or that a person added: `suppress EMAIL --by NAME`, `unsuppress`, `suppressed`.
+  A soft bounce changes nothing. The queue lists these camps as "do not contact".
+- **Daily cap**: at most `OWNER_OUTREACH_DAILY_CAP` (20) in any 24 hours, so a new sending domain
+  warms up slowly and a mistake can't reach every camp at once. A batch stops at the cap.
+- **Footer**: our postal address and "reply stop", as CAN-SPAM expects. Nothing goes out until
+  `OWNER_POSTAL_ADDRESS` is set; there's no default.
+
+Emails answering something the owner did ("Confirmed", "Updated") aren't outreach and aren't
+checked here.
 
 ## Listing updates by email
 
