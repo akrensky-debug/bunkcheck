@@ -53,6 +53,7 @@ function Demo({ title, note, children }: { title: string; note: ReactNode; child
 export default function Reference() {
   const [values, setValues] = useState<Record<string, string>>({})
   const [msg, setMsg] = useState('')
+  const [tile, setTile] = useState(true)
   const [chips, setChips] = useState<string[]>(['Allergies'])
   const [checked, setChecked] = useState(true)
 
@@ -187,10 +188,14 @@ export default function Reference() {
         </Stack>
       </Demo>
 
-      <Demo title="ActionTile" note="One thing a person can do, as a large button. Verb-first title, optional hint. A link with href, a button with onClick. Show actions this way instead of describing features.">
+      <Demo title="ActionTile" note="One thing a person can do, as a large button. Verb-first title, optional hint. A link with href, a button with onClick, or a preview that opens in place with children. Show actions this way instead of describing features.">
         <div className="grid gap-3 sm:grid-cols-2">
           <ActionTile icon="search" title="Compare camps" hint="Instead of twenty open tabs" href="#" />
           <ActionTile icon="bell" title="Get registration emails" onClick={() => {}} />
+          <ActionTile icon="board" title="A preview tile" hint="Opens in place" expanded={tile} onToggle={() => setTile(t => !t)}>
+            <p className="text-small text-ink">A short explanation, then the button that goes on.</p>
+            <div className="mt-4"><Button size="md" icon="arrow-right" href="#">Go there</Button></div>
+          </ActionTile>
           <ActionTile icon="lock" title="A disabled tile" hint="Fades to 40%" onClick={() => {}} disabled />
         </div>
       </Demo>

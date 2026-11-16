@@ -26,16 +26,41 @@ export function Starters({ onPick, disabled }: { onPick: (text: string) => void;
   )
 }
 
-// What we built, as things to do. The hint names the chore each one replaces. A tile either
-// opens a page or, with `ask`, sends that message to the assistant.
-type Action = { icon: IconName; title: string; hint: string; href?: string; ask?: string }
+// What we built, as things to do. The hint names the chore each one replaces. A tile opens a
+// short preview first; the button inside it either opens a page or, with `ask`, sends that
+// message to the assistant.
+type Action = { icon: IconName; title: string; hint: string; more: string; cta: string; href?: string; ask?: string }
 const ACTIONS: Action[] = [
-  { icon: 'search', title: 'Compare camps', hint: 'Instead of twenty open tabs', href: '/search' },
-  { icon: 'bell', title: 'Get registration emails', hint: 'Instead of setting alarms', ask: 'When does registration open for camps near me?' },
-  { icon: 'board', title: 'See every week', hint: 'Before a gap surprises you', href: '/summer' },
-  { icon: 'lock', title: 'Save your forms once', hint: 'Instead of typing them again', href: '/kit' },
-  { icon: 'users', title: 'Share one calendar', hint: 'Instead of texting everyone', href: '/household' },
-  { icon: 'chat', title: 'Use it in Claude', hint: 'Camp cards in your own chat', href: '/connect' },
+  {
+    icon: 'search', title: 'Compare camps', hint: 'Instead of twenty open tabs',
+    more: 'Every camp is laid out the same way: dates, hours, ages, weekly price and extended care. Search by town and age, then ask us to put two or three side by side.',
+    cta: 'Browse camps', href: '/search',
+  },
+  {
+    icon: 'bell', title: 'Get registration emails', hint: 'Instead of setting alarms',
+    more: 'We check each camp’s opening date against its own site. Leave your email on a camp’s page and we write when the date is announced, the day before, and when it opens. No account.',
+    cta: 'Ask when camps near me open', ask: 'When does registration open for camps near me?',
+  },
+  {
+    icon: 'board', title: 'See every week', hint: 'Before a gap surprises you',
+    more: 'Your summer as one board: a row for each kid, a column for each week. Gaps and overlaps show up before you pay a deposit.',
+    cta: 'Open your summer board', href: '/summer',
+  },
+  {
+    icon: 'lock', title: 'Save your forms once', hint: 'Instead of typing them again',
+    more: 'Allergies, pickup people, insurance: enter them once in your info kit. It is encrypted and never shown to the AI. A camp sees it only when you approve.',
+    cta: 'Open your info kit', href: '/kit',
+  },
+  {
+    icon: 'users', title: 'Share one calendar', hint: 'Instead of texting everyone',
+    more: 'One family calendar your partner, the grandparents and the sitter can see. It also shows up in Google, Apple or Outlook.',
+    cta: 'Set up your household', href: '/household',
+  },
+  {
+    icon: 'chat', title: 'Use it in Claude', hint: 'Camp cards in your own chat',
+    more: 'Add Bunkcheck to Claude and ask about camps there. You get the same camp cards: dates, weekly prices, extended care and open weeks.',
+    cta: 'See how to add it', href: '/connect',
+  },
 ]
 
 const PROMISES: React.ReactNode[] = [
@@ -47,6 +72,8 @@ const PROMISES: React.ReactNode[] = [
 
 /** Everything under the hero for a parent who is new here. */
 export function Landing({ onAsk, disabled, className }: { onAsk: (text: string) => void; disabled: boolean; className?: string }) {
+  // One preview open at a time.
+  const [open, setOpen] = useState<string | null>(null)
   return (
     <div className={cx('space-y-16', className)}>
       <ExampleSummer />
@@ -54,12 +81,23 @@ export function Landing({ onAsk, disabled, className }: { onAsk: (text: string) 
       <OpeningSoon />
 
       <Section title="What we built instead" divided>
-        <ul className="grid gap-3 sm:grid-cols-2">
+        <ul className="grid items-start gap-3 sm:grid-cols-2">
           {ACTIONS.map(a => (
             <li key={a.title}>
-              {a.ask
-                ? <ActionTile icon={a.icon} title={a.title} hint={a.hint} onClick={() => onAsk(a.ask!)} disabled={disabled} />
-                : <ActionTile icon={a.icon} title={a.title} hint={a.hint} href={a.href} />}
+              <ActionTile
+                icon={a.icon}
+                title={a.title}
+                hint={a.hint}
+                expanded={open === a.title}
+                onToggle={() => setOpen(o => (o === a.title ? null : a.title))}
+              >
+                <p className="text-small text-ink">{a.more}</p>
+                <div className="mt-4">
+                  {a.ask
+                    ? <Button size="md" icon="arrow-right" onClick={() => onAsk(a.ask!)} disabled={disabled}>{a.cta}</Button>
+                    : <Button size="md" icon="arrow-right" href={a.href}>{a.cta}</Button>}
+                </div>
+              </ActionTile>
             </li>
           ))}
         </ul>

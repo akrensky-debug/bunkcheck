@@ -67,7 +67,7 @@ top space).
 | `Checkbox`, `ChoiceChip` | A single yes/no; pick several (or one, `type="radio"`) from a short list. |
 | `SearchBar`, `SearchField` | The unified pill search bar. |
 | `Composer` | The chat input (`hero` or `dock`). |
-| `ActionTile` | A large button for one thing a person can do: icon on a yellow square, a verb-first title, an optional hint, an arrow. `href` makes it a link, `onClick` a button. Use a grid of them where a page would otherwise describe its features. Hover darkens the border; disabled fades to 40%. |
+| `ActionTile` | A large button for one thing a person can do: icon on a yellow square, a verb-first title, an optional hint. `href` makes it a link, `onClick` a button. With `children`, `expanded` and `onToggle` it is a preview: the tile opens in place to show a short explanation and the button that goes on, so nobody lands on a new page before knowing what it is. Keep one preview open at a time. Use a grid of tiles where a page would otherwise describe its features. Hover darkens the border; disabled fades to 40%. |
 | `List`, `ListRow` | Hairline-separated rows. `href` makes the whole row a link with a hover wash. |
 | `Meta` | A muted line of facts joined with " · ", skipping empty parts. |
 | `Price` | Bold amount plus muted unit ("$385/wk"). |
