@@ -155,7 +155,7 @@ def test_a_bad_address_or_unknown_camp_is_refused(client, camp, outbox):
 
 
 # ---------------------------------------------------------------------------
-# The migration (migrations/0032_claim_verification.sql)
+# The migration (migrations/0034_claim_verification.sql)
 # ---------------------------------------------------------------------------
 
 
