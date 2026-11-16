@@ -1,8 +1,8 @@
 'use client'
 
-import { useState, Suspense } from 'react'
+import { useEffect, useState, Suspense } from 'react'
 import { useSearchParams } from 'next/navigation'
-import { searchCamps, type CampSearchResult } from '@/lib/api'
+import { getCamp, searchCamps, type CampSearchResult } from '@/lib/api'
 import { Events } from '@/lib/analytics'
 import { Button, Container, Field, Heading, Icon, Input, List, SearchBar, SearchField, Text, TextLink } from '@/components/ui'
 
@@ -11,13 +11,16 @@ const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'
 function ClaimFlow() {
   const params = useSearchParams()
   const prefillId = params.get('camp_id')
+  // The code email links here with ?step=code; a camp page's "Claim" link passes ?camp_id=.
+  const fromEmail = params.get('step') === 'code'
 
-  const [step, setStep] = useState<'search' | 'confirm' | 'verify' | 'done'>(prefillId ? 'confirm' : 'search')
+  const [step, setStep] = useState<'search' | 'confirm' | 'verify' | 'done'>(fromEmail ? 'verify' : prefillId ? 'confirm' : 'search')
   const [query, setQuery] = useState('')
   const [results, setResults] = useState<CampSearchResult[]>([])
   const [searching, setSearching] = useState(false)
   const [selected, setSelected] = useState<CampSearchResult | null>(null)
   const [email, setEmail] = useState('')
+  const [claimMessage, setClaimMessage] = useState('')
   const [contactName, setContactName] = useState('')
   const [role, setRole] = useState('')
   const [loading, setLoading] = useState(false)
@@ -25,6 +28,14 @@ function ClaimFlow() {
   const [token, setToken] = useState('')
   const [verifying, setVerifying] = useState(false)
   const [verifyError, setVerifyError] = useState('')
+
+  // A camp page's "Claim" link: load that camp, or fall back to search if it isn't found.
+  useEffect(() => {
+    if (fromEmail || !prefillId) return
+    getCamp(prefillId)
+      .then(c => setSelected({ id: c.id, name: c.name, city: c.city, state: c.state } as CampSearchResult))
+      .catch(() => setStep('search'))
+  }, [fromEmail, prefillId])
 
   async function handleSearch(e: React.FormEvent) {
     e.preventDefault()
@@ -68,6 +79,8 @@ function ClaimFlow() {
         const body = await res.json().catch(() => ({}))
         throw new Error(body.detail || 'Claim failed')
       }
+      const body = await res.json().catch(() => ({}))
+      setClaimMessage(typeof body.message === 'string' ? body.message : '')
       setStep('verify')
     } catch (err: unknown) {
       setError(err instanceof Error ? err.message : 'Something went wrong.')
@@ -150,7 +163,7 @@ function ClaimFlow() {
           </div>
 
           <form onSubmit={handleClaim} className="space-y-5">
-            <Field label="Your email" hint="We'll send a verification link to this address.">
+            <Field label="Your email" hint="Use the address on your listing or one on your camp’s own website domain. The code goes only there.">
               {id => <Input id={id} type="email" required value={email} onChange={e => setEmail(e.target.value)} placeholder="director@yourcamp.com" />}
             </Field>
             <Field label="Your name" optional>
@@ -179,7 +192,7 @@ function ClaimFlow() {
         <>
           <Heading level="h1" className="mb-3">Check your email</Heading>
           <Text tone="muted" className="mb-8">
-            We&rsquo;ve sent a verification code to <strong className="text-ink">{email}</strong>. Enter it below to complete your claim.
+            {claimMessage || (fromEmail ? 'Paste the code from your email.' : 'If that address is one your camp publishes, a code is on its way.')} Enter it below to complete your claim.
           </Text>
 
           <form onSubmit={handleVerify} className="space-y-5">

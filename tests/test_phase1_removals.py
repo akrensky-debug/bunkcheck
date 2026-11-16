@@ -21,13 +21,13 @@ def test_lead_and_payment_endpoints_are_gone(client) -> None:
 
 def test_claim_email_goes_through_the_shared_mailer(client, db, outbox) -> None:
     db.table("camps").insert({"id": CAMP_ID, "name": "Riverside Soccer", "city": "Providence", "state": "RI",
-                              "zip": "02906", "camp_type": "day"}).execute()
+                              "zip": "02906", "camp_type": "day", "email": "owner@example.com"}).execute()
     res = client.post("/api/v1/claims", json={"camp_id": CAMP_ID, "email": "owner@example.com"})
     assert res.status_code == 200
     email = outbox[-1]
-    token = db.tables["claim_requests"][0]["verification_token"]
-    assert email.to == "owner@example.com" and token in email.text
-    assert f"/operators/claim?camp_id={CAMP_ID}" in email.text
+    # The address is the one on the listing, so the code goes there (tests/test_claims.py has the rules).
+    assert email.to == "owner@example.com" and "Your verification code: " in email.text
+    assert "/operators/claim?step=code" in email.text
 
     # In log mode (the default) nothing leaves, even with a Resend key set.
     mailer.set_mailer(mailer.LogMailer())

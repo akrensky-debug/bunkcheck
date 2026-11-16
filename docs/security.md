@@ -16,9 +16,10 @@ repeat them.
   caps it: per address, per family, per day, and for everyone.
 - **Every per-IP limit could be skipped** by sending a new `X-Forwarded-For` header each time.
   PR #77 reads only the header Railway sets.
-- **Anyone can mark any camp "Claimed by the camp"** with their own email address, and the same
-  request removes a "Verified by our team" mark. That is now the top open gap. It isn't a
-  money risk; it breaks the trust promise parents rely on.
+- **Anyone could mark any camp "Claimed by the camp"** with their own email address, and the
+  same request removed a "Verified by our team" mark. Fixed: a claim's code now goes only to an
+  address the camp published (`campfinder/services/claims.py`). Nobody had used the hole; the
+  live project had no claims on 16 November 2026.
 - Family data holds up. Guest family ids are random 122-bit UUIDs. Every family route checks
   access. Every link token carries at least 128 random bits, and share and invite tokens are
   stored only as hashes. Row-level security is on for every table, and the public roles reach
@@ -94,8 +95,8 @@ Limits marked *new* come from #77 and #78. Everything else is on `main` today.
 
 | Route | Auth | Limit | Abuse case |
 | --- | --- | --- | --- |
-| `POST /api/v1/claims` | **None** | **None** | Claim any camp with your own email; send our email to any address |
-| `GET /api/v1/claims/verify` | Link, 256 bits | None | Completes the claim above |
+| `POST /api/v1/claims` | None; the code goes only to an address the camp published | 5 an hour per IP, 3 a day per address, 10 a day per camp | Held for a person when the address isn't the camp's |
+| `GET /api/v1/claims/verify` | Code, 256 bits, hashed, once, 72 hours | None | Raises "unverified" to "claimed"; never lowers a verified listing |
 | `POST /api/v1/submissions` | None | **None** | Fill the review queue with junk |
 | `POST /api/v1/events` | None | **None** | Write any JSON, any size, into `analytics_events` |
 
@@ -171,35 +172,30 @@ through `family_access` or `authorize_family`.
 
 ## Open gaps, ranked
 
-1. **Camp claims are self-verified.** `POST /claims` emails the verification link to the address
-   the caller typed. Anyone can claim any camp, flip it to "Claimed by the camp", and overwrite
-   "Verified by our team". Fix: send the link only to a contact already on file for that camp
-   (`camp_contacts`, which owner confirmation already uses) or to an address on the camp's own
-   website domain, hold everything else for review, and never lower a team-verified status.
-2. **`POST /claims` sends our email to any address, without limit.** A script can use our sending
-   domain to spam strangers and burn its reputation with Resend. Fix: the same per-IP and
-   per-address limits registration alerts use. Ship it with gap 1.
-3. **No security headers on the site beyond HSTS.** The live site sends
+Fixed since this doc was written: camp claims were self-verified and could send our email to any
+address without limit. See "Claims" in [`docs/owner-confirmation.md`](owner-confirmation.md).
+
+1. **No security headers on the site beyond HSTS.** The live site sends
    `strict-transport-security: max-age=63072000` (Vercel's default) and nothing else. Missing:
    `Content-Security-Policy` with `frame-ancestors 'none'` (the share, join and confirm pages can
    be framed for clickjacking), `Referrer-Policy: no-referrer` on the pages whose URL holds a token
    (`/share/[token]`, `/join/[token]`, `/inquiries/[token]`, `/alerts/[token]`), and
    `X-Content-Type-Options: nosniff`. Fix: a `headers()` block in `frontend/next.config.js`,
    tested in a browser before it ships, because a strict CSP can break Supabase sign-in.
-4. **Open forms with no limit.** `/submissions` and `/events` take anonymous writes without a cap,
+2. **Open forms with no limit.** `/submissions` and `/events` take anonymous writes without a cap,
    and `/events` stores any JSON at any size. Fix: per-IP limits and a size cap on `properties`.
-5. **Sign-up farms.** A signed-in family gets five times a guest's allowance, so scripted sign-ups
+3. **Sign-up farms.** A signed-in family gets five times a guest's allowance, so scripted sign-ups
    are worth something. The everyone cap bounds the damage. Supabase's sign-up rate limits and
    CAPTCHA are dashboard settings.
-6. **No dependency scanning in CI.** `.github/workflows/test.yml` runs tests only. Fix: `pip-audit`
+4. **No dependency scanning in CI.** `.github/workflows/test.yml` runs tests only. Fix: `pip-audit`
    and `npm audit --omit=dev` in CI, and Dependabot for both.
-7. **`KIT_ENCRYPTION_KEY` can't be rotated.** Covered, with a proposed fix, in the legal doc's
+5. **`KIT_ENCRYPTION_KEY` can't be rotated.** Covered, with a proposed fix, in the legal doc's
    Part 3.
-8. **No edge layer in front of the API.** Railway's edge allows about 11,000 requests a second per
+6. **No edge layer in front of the API.** Railway's edge allows about 11,000 requests a second per
    domain and filters nothing. A flood reaches our process. Cloudflare in front of the API domain
    would add a WAF and bot filtering; then set `CLIENT_IP_HEADER=cf-connecting-ip` and accept only
    Cloudflare's addresses at the origin. Worth it once traffic is real, not before launch.
-9. **Link tokens in HTTP logs.** Calendar, share and invite tokens sit in URL paths, so they are
+7. **Link tokens in HTTP logs.** Calendar, share and invite tokens sit in URL paths, so they are
    in Railway's request logs. Low: only we read those logs, and shares expire and can be revoked.
 
 ## Supabase
