@@ -152,11 +152,10 @@ export default function AgentHome() {
             {/* Working headline: the position is "mom's secret weapon for summer"; the final line is still to be chosen. */}
             <h1 className="font-display text-display text-ink text-balance lg:-mr-48">Your secret weapon for summer.</h1>
             <p className="mt-5 max-w-measure text-lead text-muted">
-              Planning a summer is a second job, and it usually lands on you. Bunkcheck does the legwork: it finds
-              camps that fit your kids, lines them up with your weeks, and watches the registration dates.
+              Planning summer is a second job. Bunkcheck does the legwork.
             </p>
             <p className="mt-8 font-semibold text-ink">
-              Tell Bunkcheck about your kids and your summer. One sentence is enough to start.
+              Tell us about your kids. One sentence will do.
             </p>
             <div className="mt-3">
               <Composer
