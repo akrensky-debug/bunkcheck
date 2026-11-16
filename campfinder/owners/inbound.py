@@ -57,21 +57,62 @@ async def fetch_received(email_id: str) -> dict[str, Any]:
     return res.json()
 
 
-def forwarded(msg: dict[str, Any], to: str) -> Email:
+def review_block(update: dict[str, Any] | None) -> str:
+    """What the listing reader made of the email, and the link to apply or close it. Empty when
+    the email didn't go to listing updates."""
+    if not update:
+        return ""
+    status, link = update.get("status"), update.get("link")
+    if status == "proposed":
+        top = "Bunkcheck read this as a listing update. Nothing changes until you apply it:"
+    elif status == "needs_person":
+        top = f"Bunkcheck didn't change anything. A person should read it: {update.get('reason') or 'see the email'}"
+    elif status == "applied":
+        top = "Bunkcheck applied this update (the sender is verified and auto-apply is on):"
+    else:
+        top = f"Listing updates: {status}"
+    lines = "".join(f"  {line}\n" for line in update.get("lines") or [])
+    act = (f"\nReview it, then apply or close it (the link works for 14 days):\n{link}\n" if link else "")
+    return f"{top}\n{lines}{act}\n----- The owner's email -----\n\n"
+
+
+def forwarded(msg: dict[str, Any], to: str, update: dict[str, Any] | None = None) -> Email:
     sender = msg.get("from") or "unknown sender"
     subject = msg.get("subject") or "(no subject)"
     body = msg.get("text") or ""
     head = (f"From: {sender}\nTo: {', '.join(msg.get('to') or [])}\nDate: {msg.get('created_at', '')}\n"
             f"Subject: {subject}\n\n"
             f"Replying to this goes to {parseaddr(sender)[1] or sender} from your own address.\n\n")
+    review = review_block(update)
     attachments = msg.get("attachments") or []
     note = f"\n\n[{len(attachments)} attachment(s) not forwarded; see Resend > Emails > Receiving]" if attachments else ""
-    text = head + body + note
+    text = head + review + body + note
     original_html = msg.get("html")
-    page = (f"<pre style='white-space:pre-wrap'>{html.escape(head)}</pre>"
+    link = (update or {}).get("link")
+    button = (f"<p><a href='{html.escape(link, quote=True)}' style='display:inline-block;padding:10px 16px;"
+              f"background:#14213d;color:#ffffff;border-radius:8px;text-decoration:none;font-weight:600'>"
+              f"Review the update</a></p>") if link else ""
+    page = (f"<pre style='white-space:pre-wrap'>{html.escape(head + review)}</pre>" + button
             + (original_html if original_html else f"<pre style='white-space:pre-wrap'>{html.escape(body)}</pre>")
             + (f"<p>{html.escape(note.strip())}</p>" if note else ""))
-    return Email(to=to, subject=f"Owner reply: {subject}", html=page, text=text, reply_to=parseaddr(sender)[1] or None)
+    label = "Owner update" if (update or {}).get("status") == "proposed" else "Owner reply"
+    return Email(to=to, subject=f"{label}: {subject}", html=page, text=text, reply_to=parseaddr(sender)[1] or None)
+
+
+async def _listing_update(msg: dict[str, Any], sender: str) -> dict[str, Any] | None:
+    """Hand the email to listing updates. Never stops the forward: an owner's email reaching a
+    person matters more than the proposal."""
+    from campfinder.owners import updates
+
+    auth = msg.get("authentication") or {}
+    try:
+        row = await updates.receive(sender, msg.get("text") or "", subject=msg.get("subject"),
+                                    message_id=msg.get("message_id"), sender_verified=auth.get("dmarc") == "pass")
+        lines = updates.proposal_lines(row) if row.get("proposal") else []
+        link = updates.issue_review_link(row)
+    except Exception as e:  # noqa: BLE001: the forward goes out whatever happens here
+        return {"id": None, "status": "error", "reason": f"Listing updates failed ({type(e).__name__}); read it by hand"}
+    return {"id": str(row["id"]), "status": row["status"], "reason": row.get("reason"), "lines": lines, "link": link}
 
 
 async def handle(event: dict[str, Any], fetch: Fetch | None = None) -> dict[str, Any]:
@@ -89,13 +130,10 @@ async def handle(event: dict[str, Any], fetch: Fetch | None = None) -> dict[str,
         return {"status": "not forwarded: OWNER_FORWARD_TO is not set"}
     if sender in (forward_to.lower(), parseaddr(own)[1].lower()):
         return {"status": "skipped: our own address"}   # never loop
-    result: dict[str, Any] = {"status": "forwarded" if await get_mailer().send(forwarded(msg, forward_to))
+    # Read first, so the forwarded copy carries the proposal and the review link.
+    update = await _listing_update(msg, sender) if os.environ.get("OWNER_UPDATES_FROM_MAIL") == "1" and sender else None
+    result: dict[str, Any] = {"status": "forwarded" if await get_mailer().send(forwarded(msg, forward_to, update))
                               else "not forwarded: mailer is off"}
-    if os.environ.get("OWNER_UPDATES_FROM_MAIL") == "1" and sender:
-        from campfinder.owners import updates
-
-        auth = msg.get("authentication") or {}
-        row = await updates.receive(sender, msg.get("text") or "", subject=msg.get("subject"),
-                                    message_id=msg.get("message_id"), sender_verified=auth.get("dmarc") == "pass")
-        result["update"] = {"id": str(row["id"]), "status": row["status"]}
+    if update:
+        result["update"] = {"id": update["id"], "status": update["status"]}
     return result

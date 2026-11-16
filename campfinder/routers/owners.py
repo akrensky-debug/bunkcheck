@@ -10,6 +10,7 @@ from typing import Any, Literal
 from fastapi import APIRouter, Header, HTTPException, Request
 from pydantic import BaseModel, Field, ValidationError
 
+from campfinder.database import get_supabase
 from campfinder.owners import inbound, season, service, updates
 
 router = APIRouter()
@@ -156,3 +157,69 @@ async def resend_inbound(request: Request) -> dict[str, Any]:
     except ValueError as e:
         raise HTTPException(status_code=422, detail="Expected a JSON event") from e
     return await inbound.handle(event)
+
+
+# ---------------------------------------------------------------------------
+# Reviewing an owner's email from the link in the forwarded copy
+# ---------------------------------------------------------------------------
+
+REVIEW_GONE = "This review link has expired. Use `python -m campfinder.owners inbox` to find the email."
+
+
+class ReviewView(BaseModel):
+    camp_name: str | None = None
+    from_email: str
+    subject: str | None = None
+    received_at: str | None = None
+    body: str
+    status: str
+    reason: str | None = Field(default=None, description="Why a person should read it, if the reader said so")
+    lines: list[str] = Field(description="What applying would change, in plain words")
+    can_apply: bool
+    handled_by: str | None = None
+    handled_at: str | None = None
+
+
+class ReviewAction(BaseModel):
+    action: Literal["apply", "reject"]
+    reason: str | None = Field(default=None, max_length=2000, description="Why it was closed, for reject")
+
+
+def _review_view(msg: dict[str, Any]) -> ReviewView:
+    camp = None
+    if msg.get("camp_id"):
+        rows = get_supabase().table("camps").select("name").eq("id", msg["camp_id"]).execute().data
+        camp = rows[0]["name"] if rows else None
+    return ReviewView(camp_name=camp, from_email=msg["from_email"], subject=msg.get("subject"),
+                      received_at=str(msg["received_at"]) if msg.get("received_at") else None, body=msg.get("body") or "",
+                      status=msg["status"], reason=msg.get("reason"),
+                      lines=updates.proposal_lines(msg) if msg.get("proposal") else [],
+                      can_apply=msg["status"] == "proposed", handled_by=msg.get("handled_by"),
+                      handled_at=str(msg["handled_at"]) if msg.get("handled_at") else None)
+
+
+@router.get("/owners/review/{token}", response_model=ReviewView, include_in_schema=False)
+async def view_review(token: str) -> ReviewView:
+    """An owner's email and what the reader proposes. Opening it changes nothing (mail scanners
+    open links on their own)."""
+    msg = updates.by_review_token(token)
+    if msg is None:
+        raise HTTPException(status_code=404, detail=REVIEW_GONE)
+    return _review_view(msg)
+
+
+@router.post("/owners/review/{token}", response_model=ReviewView, include_in_schema=False)
+async def act_on_review(token: str, body: ReviewAction) -> ReviewView:
+    """Apply the proposal (the owner is told what changed) or close the email without changes.
+    Once only: 409 if it was already handled or the listing moved since it was read."""
+    msg = updates.by_review_token(token)
+    if msg is None:
+        raise HTTPException(status_code=404, detail=REVIEW_GONE)
+    try:
+        if body.action == "apply":
+            await updates.apply(msg["id"], handled_by="review link")
+        else:
+            updates.reject(msg["id"], handled_by="review link", reason=(body.reason or "").strip() or "Closed from the review link")
+    except service.ConfirmationError as e:
+        raise HTTPException(status_code=409, detail=str(e)) from e
+    return _review_view(updates.get_message(msg["id"]))

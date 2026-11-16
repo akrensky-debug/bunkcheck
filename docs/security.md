@@ -88,6 +88,7 @@ Limits marked *new* come from #77 and #78. Everything else is on `main` today.
 | `GET /inquiries/link/{token}`, `/cancel` | Link, 192 bits | None | Guessing is infeasible |
 | `GET /owners/inquiries/{token}`, `/reply` | Link, 192 bits | None | Guessing is infeasible |
 | `GET, POST /owners/confirm/{token}` | Link, 192 bits | None | Guessing is infeasible |
+| `GET, POST /owners/review/{token}` | Link, 192 bits, 14 days, hash stored | None | Only in the copy forwarded to `OWNER_FORWARD_TO`; whoever holds it can apply an owner's update, once |
 
 ### Camp operators and analytics
 
