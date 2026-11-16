@@ -31,17 +31,21 @@ def test_core_questions_come_in_order_constraints_first() -> None:
     p = said(p, home_location="Providence, RI")
     assert ask(p) == "school"
     p = said(p, summer_start="2027-06-18", summer_end="2027-08-31")
-    assert ask(p) == "sorted_weeks"
-    p = said(p, away=[])  # "nothing sorted yet" is an answer
+    # Which weeks need camp, then whether those weeks can be overnight, before anything about hours.
+    assert ask(p) == "camp_weeks"
+    p = said(p, camp_weeks=["2027-06-21", "2027-06-28", "2027-07-14", "2027-07-12"])  # any day of the week counts
+    assert p["camp_weeks"] == ["2027-06-21", "2027-06-28", "2027-07-12"]
+    assert ask(p) == "sleepaway"
+    assert sb.next_question(p, OCT).prompt == "Are you open to overnight camp for Maya and Leo?"
+    p = said(p, sleepaway=False)
     assert ask(p) == "care_hours"
     p = said(p, work_schedule=[{"parent": "Mom", "days": ["Mon", "Tue", "Wed", "Thu", "Fri"], "start": "8", "end": "6pm"}])
     assert ask(p) == "interests"
     assert sb.next_question(p, OCT).prompt == "What are Maya and Leo into?"
     p = said(p, kids=[{"name": "Maya", "age": 7, "interests": ["soccer"]}, {"name": "Leo", "age": 10, "interests": ["lego"]}])
-    # Core done. Leo is 10, so sleepaway matters; budget waits until prices are on screen.
-    assert ask(p) == "sleepaway"
-    p = said(p, sleepaway=False)
+    # Core done; budget waits until prices are on screen.
     assert ask(p) is None
+    assert [c.label for c in sb.chips(p)][4:6] == ["Camp 3 weeks", "Day camp only"]
     assert ask(p, context=("prices",)) == "weekly_budget"
     assert ask(p, context=("suggestions",)) == "max_drive_minutes"
     assert ask(p, today=JAN) == "booked_elsewhere"  # registration season
@@ -50,7 +54,7 @@ def test_core_questions_come_in_order_constraints_first() -> None:
 def test_skip_moves_on_and_waits_in_finish_later() -> None:
     p = said({}, kids=[{"name": "Maya", "age": 7}], home_location="Cranston, RI")
     p = sb.apply_skip(p, "school", OCT)
-    assert ask(p) == "sorted_weeks"
+    assert ask(p) == "camp_weeks"
     # The board still gets dates to work with, marked as a guess.
     assert (p["summer_start"], p["summer_end"]) == ("2027-06-18", "2027-08-31")
     assert p["brief"]["facts"]["school"]["source"] == "guessed"
@@ -59,13 +63,14 @@ def test_skip_moves_on_and_waits_in_finish_later() -> None:
     chip = next(c for c in brief.chips if c.field == "school")
     assert chip.label == "Summer Jun 18 to Aug 31" and chip.source == "guessed"
     # A skipped question never comes back on its own, even in registration season.
-    p = said(p, away=[], work_schedule=sb.GUESS_WORK, kids=[{"name": "Maya", "age": 7, "interests": ["art"]}])
+    p = said(p, camp_weeks=["2027-06-21"], sleepaway=True, work_schedule=sb.GUESS_WORK,
+             kids=[{"name": "Maya", "age": 7, "interests": ["art"]}])
     assert ask(p, today=JAN) == "booked_elsewhere"
 
 
 def test_not_sure_comes_back_when_it_matters() -> None:
-    p = said({}, kids=[{"name": "Maya", "age": 7, "interests": ["art"]}], home_location="Providence, RI",
-             summer_start="2027-06-21", summer_end="2027-08-27", away=[])
+    p = said({}, kids=[{"name": "Maya", "age": 6, "interests": ["art"]}], home_location="Providence, RI",
+             summer_start="2027-06-21", summer_end="2027-08-27", camp_weeks=["2027-06-21"])
     p = sb.apply_skip(p, "care_hours", OCT, not_sure=True)
     assert p["work_schedule"] == sb.GUESS_WORK  # 8 to 6, marked as a guess
     assert ask(p) is None
@@ -87,7 +92,9 @@ def test_editing_a_chip_keeps_later_answers() -> None:
              summer_end="2027-08-27", away=[{"start_date": "2027-07-26", "end_date": "2027-07-30", "label": "Cape Cod"}])
     p = said(p, kids=[{"name": "Maya", "age": 7}, {"name": "Leo", "age": 9}])  # "actually Leo is 9"
     assert p["away"][0]["label"] == "Cape Cod" and p["summer_start"] == "2027-06-21"
-    assert [c.label for c in sb.chips(p)] == ["Maya, 7", "Leo, 9", "Summer Jun 21 to Aug 27", "Away: Cape Cod"]
+    assert [c.label for c in sb.chips(p)] == ["Maya, 7", "Leo, 9", "Summer Jun 21 to Aug 27"]
+    p = said(p, camp_weeks=["2027-06-21"])
+    assert sb.chips(p)[-1].label == "Camp 1 week · Away: Cape Cod"
 
 
 def test_school_dates_are_looked_up_or_guessed(monkeypatch) -> None:
@@ -108,7 +115,22 @@ def test_school_dates_are_looked_up_or_guessed(monkeypatch) -> None:
 
 def test_profiles_from_before_the_brief_count_as_answered() -> None:
     legacy = {"kids": [{"name": "Maya", "age": 8}], "home_location": "Providence, RI", "summer_start": "2027-06-21", "summer_end": "2027-08-13"}
-    assert ask(legacy) == "sorted_weeks"
+    assert ask(legacy) == "camp_weeks"
+    # Answering the older "Any weeks already sorted?" question counts: we never ask twice.
+    sorted_before = {**legacy, "away": [], "brief": {"facts": {"sorted_weeks": {"source": "said", "at": "2026-11-01"}}}}
+    assert ask(sorted_before) == "sleepaway"
+    assert sb.chips(sorted_before)[-1].label == "Camp all summer"
+
+
+def test_overnight_is_asked_only_when_a_kid_is_old_enough() -> None:
+    p = said({}, kids=[{"name": "Ada", "age": 5}, {"name": "Ben", "age": 6}], home_location="Providence, RI",
+             summer_start="2027-06-21", summer_end="2027-08-27", camp_weeks=["2027-06-21"])
+    assert ask(p) == "care_hours"  # nobody is 7 yet
+    p = said(p, kids=[{"name": "Ada", "age": 5}, {"name": "Ben", "age": 7}])
+    q = sb.next_question(p, OCT)
+    assert q and q.field == "sleepaway" and q.prompt == "Are you open to overnight camp for Ben?"
+    p = said(p, sleepaway=True)
+    assert next(c for c in sb.chips(p) if c.field == "sleepaway").label == "Overnight OK"
 
 
 def test_api_answer_skip_and_not_sure(client, family) -> None:
@@ -116,9 +138,11 @@ def test_api_answer_skip_and_not_sure(client, family) -> None:
     brief = client.get(f"/api/v1/families/{fid}/brief", headers=h(OWNER)).json()
     assert brief["next_question"]["field"] == "school"  # the fixture family has Maya, 8
     brief = client.post(f"/api/v1/families/{fid}/brief/school/not-sure", headers=h(OWNER)).json()
-    assert brief["next_question"]["field"] == "sorted_weeks"
+    assert brief["next_question"]["field"] == "camp_weeks"
     assert brief["finish_later"] == [{"field": "school", "prompt": "Which school do they go to?", "why": "not_sure"}]
-    brief = client.patch(f"/api/v1/families/{fid}/brief", headers=h(OWNER), json={"away": []}).json()
+    brief = client.patch(f"/api/v1/families/{fid}/brief", headers=h(OWNER), json={"camp_weeks": ["2027-07-05"]}).json()
+    assert brief["next_question"]["field"] == "sleepaway"  # Maya is 8
+    brief = client.patch(f"/api/v1/families/{fid}/brief", headers=h(OWNER), json={"sleepaway": False}).json()
     assert brief["next_question"]["field"] == "care_hours"
     brief = client.post(f"/api/v1/families/{fid}/brief/care_hours/skip", headers=h(OWNER)).json()
     assert brief["next_question"]["field"] == "interests"

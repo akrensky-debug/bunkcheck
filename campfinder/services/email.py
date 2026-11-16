@@ -11,7 +11,7 @@ from campfinder.mailer import Email, get_mailer
 async def send_claim_verification_email(to_email: str, camp_id: str, camp_name: str, token: str) -> bool:
     """Email the code that proves the operator reads this address. Goes through the shared mailer,
     so nothing is sent unless EMAIL_MODE=resend."""
-    page = f"{get_settings().frontend_url.rstrip('/')}/operators/claim?camp_id={camp_id}"
+    page = f"{get_settings().frontend_url.rstrip('/')}/operators/claim?step=code"
     text = (f"Hi,\n\nYou asked to claim the listing for {camp_name} on Bunkcheck.\n\n"
             f"Your verification code: {token}\n\nEnter it here: {page}\n\n"
             "If you didn't ask for this, ignore this email.\n\nBunkcheck")

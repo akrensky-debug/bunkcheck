@@ -73,6 +73,18 @@
   }
 }
 
+/* A highlighter stroke across the lower part of a word, so it never covers the descenders of
+   the line above. Used once, on the home headline. */
+@layer components {
+  .marker {
+    background-image: linear-gradient(transparent 42%, rgb(var(--highlight)) 42%, rgb(var(--highlight)) 94%, transparent 94%);
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    padding-inline: 0.12em;
+    margin-inline: -0.12em;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

@@ -33,7 +33,7 @@ from campfinder.alerts import service as alerts
 from campfinder.booking.service import local_tz
 from campfinder.database import get_supabase
 from campfinder.mailer import get_mailer
-from campfinder.owners import emails
+from campfinder.owners import emails, outreach
 from campfinder.owners.service import (
     CONFIRMATION_TTL, CONFIRMED_FIELDS, ConfirmationError, Prepared, Queue, _hash, _now, _sessions,
     _verify_contact, current_snapshot, primary_contact, record_change,
@@ -473,6 +473,10 @@ async def send(camp: dict[str, Any], *, sent_by: str, to: str | None = None, sea
     checker for this one. An unanswered earlier season link for the camp stops working."""
     season = season or target_season()
     p = prepare(camp, to=to, season=season)
+    try:
+        outreach.check(p.email.to)
+    except outreach.OutreachBlocked as e:
+        raise ConfirmationError(f"Not sent to {camp['name']}: {e}") from e
     sb = get_supabase()
     sb.table("listing_confirmations").update({"status": "superseded"}) \
         .eq("camp_id", camp["id"]).eq("kind", KIND).eq("status", "sent").execute()
@@ -653,6 +657,8 @@ def queue(season: int | None = None, now: datetime | None = None, region: str | 
                                   f"{answered[cid] + ASK_AGAIN_AFTER:%Y-%m-%d}"))
         elif "@" not in email:
             waiting.append((camp, "no email: add a contact or pass --to with send"))
+        elif (dnc := outreach.suppressed(email)):
+            waiting.append((camp, f"do not contact {email}: {dnc['reason']}"))
         else:
             ready.append((camp, email))
     return Queue(ready, waiting)

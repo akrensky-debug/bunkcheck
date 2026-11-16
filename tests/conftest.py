@@ -186,10 +186,11 @@ def fresh_limits() -> Iterator[None]:
     from campfinder.agent import budget
     from campfinder.inquiries import service as inquiries
     from campfinder.routers import agent
+    from campfinder.services import claims
 
     def clear() -> None:
         for window in (agent.guest_families_hourly, agent.guest_families_daily, agent.chats_per_ip,
-                       agent.chats_per_family):
+                       agent.chats_per_family, claims.ip_hourly, claims.email_daily, claims.camp_daily):
             window.clear()
         budget._guest_ip_spend.clear()
         budget._global_logged.clear()
@@ -198,3 +199,10 @@ def fresh_limits() -> Iterator[None]:
     clear()
     yield
     clear()
+
+
+@pytest.fixture(autouse=True)
+def _postal_address(monkeypatch: pytest.MonkeyPatch) -> None:
+    """Outreach to camps is refused without a postal address for the footer (owners/outreach.py).
+    Tests that check the refusal unset it."""
+    monkeypatch.setenv("OWNER_POSTAL_ADDRESS", "Bunkcheck, 1 Test Street, Providence, RI 02906")

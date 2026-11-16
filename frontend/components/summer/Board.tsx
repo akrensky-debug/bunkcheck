@@ -166,7 +166,7 @@ function WeekCell({ kid, cell, showWeek, busy, openCell, setOpenCell, onAdd, onC
   if (cell.state === 'not_needed') return (
     <div className={cx('pl-3', statusEdge(tone))}>
       {showWeek && <Text variant="small" tone="muted">Week of {fmtDay(cell.week_of)}</Text>}
-      <Text variant="small" tone="muted" className="inline-flex items-center gap-2"><StatusDot tone={tone} />No care needed</Text>
+      <Text variant="small" tone="muted" className="inline-flex items-center gap-2"><StatusDot tone={tone} />No camp needed</Text>
     </div>
   )
 

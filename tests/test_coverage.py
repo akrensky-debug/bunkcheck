@@ -102,6 +102,37 @@ def test_without_work_hours_every_weekday_needs_care_but_hours_are_not_checked()
     assert result.care_hours == {} and result.notes
 
 
+def test_weeks_outside_the_camp_weeks_need_nothing() -> None:
+    # Camp only the first two weeks and the Cape Cod week; everything else is not needed.
+    result = compute_coverage(profile(camp_weeks=["2027-06-21", "2027-06-28", "2027-07-26"]), EVENTS, CAMPS)
+    maya = weeks_by_start(result, "Maya")
+    assert maya["2027-06-21"].status == "check_hours" and maya["2027-06-21"].days_needed == 4
+    assert maya["2027-07-19"].status == "not_needed" and maya["2027-07-19"].days_needed == 0
+    assert maya["2027-07-26"].status == "away"  # a trip still shows as the trip
+    leo = weeks_by_start(result, "Leo")
+    assert leo["2027-06-21"].status == "open"
+    assert next(k for k in result.kids if k.name == "Leo").weeks_open == 2
+
+
+async def test_search_leaves_out_overnight_camps_when_the_family_said_day_camp_only(db: Any) -> None:
+    fam = "99999999-9999-9999-9999-999999999999"
+    db.table("families").insert({"id": fam, "profile": profile(sleepaway=False)}).execute()
+    db.table("camps").insert([
+        {"id": DAY_CAMP_EXT, "name": "Bayside Y", "city": "Providence", "state": "RI", "camp_type": "day",
+         "is_active": True, "age_min": 5, "age_max": 14},
+        {"id": SLEEPAWAY, "name": "Camp JORI", "city": "Providence", "state": "RI", "camp_type": "sleepaway",
+         "is_active": True, "age_min": 7, "age_max": 14},
+    ]).execute()
+    names = lambda out: {c["name"] for c in out.content["camps"]}  # noqa: E731
+    query = {"location": "Providence, RI", "age": 8}
+
+    out = await tools.run_tool("search_camps", query, family_id=fam)
+    assert names(out) == {"Bayside Y"} and out.content["day_camp_only"]
+    # Asking for overnight on purpose still works, and searches without a family see everything.
+    assert names(await tools.run_tool("search_camps", {**query, "camp_type": "sleepaway"}, family_id=fam)) == {"Camp JORI"}
+    assert names(await tools.run_tool("search_camps", query)) == {"Bayside Y", "Camp JORI"}
+
+
 def test_options_use_real_camps_and_fall_back_to_last_season() -> None:
     camps, sessions, _ = build_rows(load_dataset())
     by_camp: dict[str, list[dict[str, Any]]] = {}

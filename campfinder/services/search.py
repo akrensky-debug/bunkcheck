@@ -29,6 +29,7 @@ async def search_camps(
     radius_miles: float = 30.0,
     age: int | None = None,
     camp_type: str | None = None,
+    day_only: bool = False,
     categories: list[str] | None = None,
     weeks: list[str] | None = None,
     max_price_per_week: float | None = None,
@@ -55,6 +56,8 @@ async def search_camps(
     # Push simple equality filters to the server to reduce payload
     if camp_type:
         query = query.eq("camp_type", camp_type)
+    elif day_only:
+        query = query.neq("camp_type", "sleepaway")
     if requires_transport:
         query = query.eq("transportation", True)
     if requires_extended_care:
@@ -144,6 +147,7 @@ async def run_search(req: SearchRequest) -> SearchResponse:
         radius_miles=req.radius_miles,
         age=req.age,
         camp_type=req.camp_type,
+        day_only=req.day_only,
         categories=req.categories,
         weeks=req.weeks,
         max_price_per_week=req.max_price_per_week,

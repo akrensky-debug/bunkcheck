@@ -26,7 +26,7 @@ from typing import Any, Literal
 from campfinder.alerts import service as alerts
 from campfinder.database import get_supabase
 from campfinder.mailer import Email, get_mailer
-from campfinder.owners import emails
+from campfinder.owners import emails, outreach
 
 CONFIRMATION_TTL = timedelta(days=30)
 
@@ -222,6 +222,10 @@ async def send(camp: dict[str, Any], *, sent_by: str, to: str | None = None) -> 
             f"`python -m campfinder.owners checked {camp['id']} --by <your name>`"
         )
     p = prepare(camp, to=to)
+    try:
+        outreach.check(p.email.to)
+    except outreach.OutreachBlocked as e:
+        raise ConfirmationError(f"Not sent to {camp['name']}: {e}") from e
     sb = get_supabase()
     sb.table("listing_confirmations").update({"status": "superseded"}) \
         .eq("camp_id", camp["id"]).eq("kind", "listing").eq("status", "sent").execute()
@@ -271,6 +275,8 @@ def queue(now: datetime | None = None) -> Queue:
             waiting.append((camp, f"asked; link works until {open_links[cid]:%Y-%m-%d}"))
         elif "@" not in email:
             waiting.append((camp, "no email: add a contact or pass --to with send"))
+        elif (dnc := outreach.suppressed(email)):
+            waiting.append((camp, f"do not contact {email}: {dnc['reason']}"))
         else:
             ready.append((camp, email))
     return Queue(ready, waiting)

@@ -149,10 +149,13 @@ export default function AgentHome() {
 
         {empty ? (
           <div className="mx-auto flex w-full max-w-narrow flex-1 flex-col pb-16 pt-8 sm:pt-20 lg:pt-24">
-            {/* Working headline: the position is "mom's secret weapon for summer"; the final line is still to be chosen. */}
-            <h1 className="font-display text-display text-ink text-balance lg:-mr-48">Your secret weapon for summer.</h1>
+            <h1 className="font-display text-display text-ink text-balance lg:-mr-48">
+              Planning summer takes{' '}
+              <span className="marker">all winter.</span>
+            </h1>
             <p className="mt-5 max-w-measure text-lead text-muted">
-              Planning summer is a second job. We know, because it was ours. So we built the help we wanted.
+              Not anymore. Bunkcheck finds the camps, lines up your weeks and watches the registration dates. Built
+              by parents who got tired of doing it by hand.
             </p>
             <p className="mt-8 font-semibold text-ink">
               Tell us about your kids. One sentence will do.
@@ -169,13 +172,13 @@ export default function AgentHome() {
                 label="Tell Bunkcheck about your kids and your summer"
               />
             </div>
-            <div className="mt-8">
+            <div className="mt-5">
               <Starters onPick={send} disabled={!family} />
             </div>
             {familyError && (
               <p className="mt-6 text-small text-error">We couldn&rsquo;t connect right now. Please refresh to try again.</p>
             )}
-            {!side && <Landing className="mt-16 sm:mt-24" />}
+            {!side && <Landing onAsk={send} disabled={!family} className="mt-16 sm:mt-24" />}
           </div>
         ) : (
           <>

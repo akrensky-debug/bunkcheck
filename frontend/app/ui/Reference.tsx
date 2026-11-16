@@ -4,7 +4,7 @@ import { useEffect, useState, type ReactNode } from 'react'
 import CampCard from '@/components/CampCard'
 import type { CampSearchResult } from '@/lib/api'
 import {
-  Button, Checkbox, ChoiceChip, Composer, Container, Divider, EmptyState, Field, Heading, ICON_NAMES, Icon,
+  ActionTile, Button, Checkbox, ChoiceChip, Composer, Container, Divider, EmptyState, Field, Heading, ICON_NAMES, Icon,
   IconButton, Input, List, ListRow, Meta, Notice, Price, SearchBar, SearchField, Section, Select, Skeleton,
   Stack, StatusCounts, StatusDot, StatusLegend, StatusMark, StatusStrip, STATUS_TONES, SHAPE_NAME, Surface, Text,
   TextLink, Textarea, TrustMark, TRUST, cx, statusEdge,
@@ -192,6 +192,14 @@ export default function Reference() {
           <Composer size="hero" value={msg} onChange={setMsg} onSubmit={() => setMsg('')} placeholder="Ages, town, and the weeks you need" />
           <Composer value="" onChange={() => {}} onSubmit={() => {}} placeholder="Reply" />
         </Stack>
+      </Demo>
+
+      <Demo title="ActionTile" note="One thing a person can do, as a large button. Verb-first title, optional hint. A link with href, a button with onClick. Show actions this way instead of describing features.">
+        <div className="grid gap-3 sm:grid-cols-2">
+          <ActionTile icon="search" title="Compare camps" hint="Instead of twenty open tabs" href="#" />
+          <ActionTile icon="bell" title="Get registration emails" onClick={() => {}} />
+          <ActionTile icon="lock" title="A disabled tile" hint="Fades to 40%" onClick={() => {}} disabled />
+        </div>
       </Demo>
 
       <Demo title="List and ListRow" note="Hairline rows for results and lists. With href the whole row links and gets a light hover wash. CampCard is a ListRow.">
