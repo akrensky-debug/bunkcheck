@@ -1,6 +1,7 @@
 import type { CampSearchResult } from '@/lib/api'
 import { Events } from '@/lib/analytics'
 import { ListRow, Meta, Price, TrustMark } from '@/components/ui'
+import { miles } from '@/lib/format'
 
 interface Props {
   camp: CampSearchResult
@@ -19,9 +20,12 @@ function cap(s: string) {
 /** One camp as a row in a List: name and price, a meta line, description, why it matched, trust. */
 export default function CampCard({ camp }: Props) {
   const ages = camp.age_min != null && camp.age_max != null ? `Ages ${camp.age_min}–${camp.age_max}` : null
-  const place = [camp.city && `${camp.city}, ${camp.state}`, camp.distance_miles != null && `${camp.distance_miles} mi`]
+  const place = [camp.city && `${camp.city}, ${camp.state}`, miles(camp.distance_miles)]
     .filter(Boolean).join(' · ')
   const interests = camp.primary_categories?.slice(0, 2).map(cap).join(', ')
+  // The meta line already carries distance and accreditation, so drop the ranking reasons
+  // that repeat them (formats from campfinder/services/ranking.py).
+  const reasons = (camp.match_reasons ?? []).filter(r => !/^Within \d+ miles$/.test(r) && r !== 'ACA accredited')
 
   return (
     <ListRow href={`/camps/${camp.slug || camp.id}`} onClick={() => Events.campDetailViewed(camp.id)}>
@@ -49,8 +53,8 @@ export default function CampCard({ camp }: Props) {
         <p className="mt-2 max-w-measure text-small text-muted line-clamp-2">{camp.description_short}</p>
       )}
       <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-1">
-        {camp.match_reasons?.length > 0 && (
-          <span className="text-small font-semibold text-ink">{camp.match_reasons.slice(0, 2).join(' · ')}</span>
+        {reasons.length > 0 && (
+          <span className="text-small font-semibold text-ink">{reasons.slice(0, 2).join(' · ')}</span>
         )}
         <TrustMark status={camp.verification_status} />
       </div>

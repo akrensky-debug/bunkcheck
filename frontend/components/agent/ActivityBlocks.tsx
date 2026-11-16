@@ -1,5 +1,6 @@
 import TrustBadge from '@/components/TrustBadge'
 import { List, ListRow, Meta, Price, cx } from '@/components/ui'
+import { miles } from '@/lib/format'
 import {
   KIND_LABEL, money,
   type ActivityCard, type ActivityOffering, type ActivityProgram, type FamilyWeek, type ScheduleFitResult,
@@ -74,7 +75,7 @@ export function ActivityResultCard({ a }: { a: ActivityCard; rank?: number }) {
             KIND_LABEL[a.kind] ?? a.kind,
             a.provider_name,
             a.city && a.state ? `${a.city}, ${a.state}` : null,
-            a.distance_miles != null && a.distance_miles >= 1 ? `~${Math.round(a.distance_miles)} mi` : null,
+            miles(a.distance_miles),
             a.age_min != null && a.age_max != null ? `Ages ${a.age_min}–${a.age_max}` : null,
             a.trial_available && 'Trial class',
           ]}

@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react'
 import { useParams } from 'next/navigation'
 import TrustBadge from '@/components/TrustBadge'
+import { fieldLabel, listJoin } from '@/lib/format'
 import { Button, Container, EmptyState, Heading, Icon, Meta, Notice, Section, Skeleton, Text, TextLink } from '@/components/ui'
 import {
   getActivity, getActivitySources, KIND_LABEL, money, PRICE_LABEL,
@@ -133,7 +134,7 @@ export default function ActivityPage() {
             We gathered these details from the provider&rsquo;s own website and haven&rsquo;t confirmed them with the
             provider yet. Schedules and prices change by term, so check with them before you register.
             {a.verification.fields_missing.length > 0 && (
-              <> Not published: {a.verification.fields_missing.map(f => f.replace('schedule.', '').replace(/_/g, ' ')).join(', ')}.</>
+              <> Not published: {listJoin(a.verification.fields_missing.map(fieldLabel))}.</>
             )}
           </Notice>
         )}
