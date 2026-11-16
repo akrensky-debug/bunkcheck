@@ -4,6 +4,7 @@ import { useState } from 'react'
 import type { Board, Cell, KidRow, Option, Pick } from '@/lib/summer'
 import { fmtDay, money } from '@/lib/summer'
 import { Button, ChoiceChip, Heading, Meta, Text, TextLink } from '@/components/ui'
+import { miles } from '@/lib/format'
 
 /** Before we know the dates: one line per kid, nothing to fill in yet. */
 export function KidLines({ kids, year }: { kids: Array<{ name: string; age: number | null }>; year: number }) {
@@ -174,7 +175,7 @@ function WeekCell({ kid, cell, showWeek, busy, openCell, setOpenCell, onAdd, onC
                     <Text variant="small" className="font-semibold"><TextLink href={`/camps/${o.camp_id}`}>{o.name}</TextLink></Text>
                     <Meta parts={[
                       o.city,
-                      o.distance_miles != null ? `${o.distance_miles.toFixed(1)} mi` : null,
+                      miles(o.distance_miles),
                       o.price_per_week != null ? `${money(o.price_per_week)}/wk` : null,
                       o.extended_care ? 'extended care' : null,
                       o.last_season ? 'dates from last summer' : null,

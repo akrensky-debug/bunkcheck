@@ -1,6 +1,7 @@
 import CampCard from '@/components/CampCard'
 import TrustBadge from '@/components/TrustBadge'
 import { List, ListRow, Meta } from '@/components/ui'
+import { miles } from '@/lib/format'
 import { BookingBlock } from '@/components/booking/BookingBlocks'
 import { AssignProposal, HouseholdCard, InviteProposal, MessageDraft, TasksCard } from '@/components/household/HouseholdBlocks'
 import type { Comparison, Coverage, CoverageStatus, FamilyEvent, Plan, UIData } from '@/lib/agent'
@@ -78,7 +79,7 @@ function CampDetailCard({ camp }: { camp: Extract<UIData, { type: 'camp_detail' 
 
 function ComparisonView({ data }: { data: Comparison }) {
   const rows: Array<[string, (c: Comparison['camps'][number]) => string]> = [
-    ['Location', c => `${c.city}, ${c.state}${c.distance_miles != null ? ` · ${c.distance_miles} mi` : ''}`],
+    ['Location', c => `${c.city}, ${c.state}${c.distance_miles != null ? ` · ${miles(c.distance_miles)}` : ''}`],
     ['Ages', c => (c.age_min != null && c.age_max != null ? `${c.age_min}–${c.age_max}` : '—')],
     ['Per week', c => (c.price_per_week ? `$${Math.round(c.price_per_week)}${c.last_season && c.season_year ? ` (${c.season_year})` : ''}` : '—')],
     ['Sessions', c => String(c.session_count)],

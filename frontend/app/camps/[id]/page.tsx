@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react'
 import { useParams } from 'next/navigation'
 import { getCamp, spotsLine, type CampDetail } from '@/lib/api'
+import { fieldLabel, listJoin } from '@/lib/format'
 import { Events, captureAssistantArrival } from '@/lib/analytics'
 import TrustBadge from '@/components/TrustBadge'
 import RegistrationAlert from '@/components/booking/RegistrationAlert'
@@ -24,6 +25,18 @@ function Fact({ label, children }: { label: string; children: React.ReactNode })
       <dd className="text-right text-ink">{children}</dd>
     </div>
   )
+}
+
+// What every session has in common, said once above the list instead of on each row.
+const ALL_SAME: Record<string, string> = {
+  open: 'All are open.',
+  waitlist: 'All have a waitlist.',
+  full: 'All are full.',
+  unknown: 'Ask the camp which have spots.',
+}
+
+function shared<T>(values: T[]): T | undefined {
+  return values.length > 1 && values.every(v => v != null && v === values[0]) ? values[0] : undefined
 }
 
 function sentence(s: string) {
@@ -57,6 +70,18 @@ export default function CampDetailPage() {
   if (!camp) return (
     <Container><EmptyState title="Camp not found." action={<Button href="/search" variant="secondary">Browse camps</Button>} /></Container>
   )
+
+  const unknown = new Set(camp.trust_summary?.fields_missing ?? [])
+  const yesNo = (field: string, value: boolean, yes: string) =>
+    unknown.has(field) ? <span className="text-muted">Ask the camp</span> : value ? yes : 'No'
+
+  const sessions = camp.sessions ?? []
+  const sharedPrice = shared(sessions.map(s => (s.price ? Math.round(s.price) : null)))
+  const sharedAvail = shared(sessions.map(s => (AVAILABILITY[s.availability] ? s.availability : 'unknown')))
+  const sessionsLine = [
+    sharedPrice != null && `Every session is $${sharedPrice.toLocaleString()}.`,
+    sharedAvail && ALL_SAME[sharedAvail],
+  ].filter(Boolean).join(' ')
 
   return (
     <Container className="py-10 sm:py-14">
@@ -115,6 +140,7 @@ export default function CampDetailPage() {
           {camp.sessions && camp.sessions.length > 0 && (
             <Section title={camp.season_year ? `${camp.season_year} sessions` : 'Sessions'}>
               {camp.season_note && <Notice className="mb-4">{camp.season_note}</Notice>}
+              {sessionsLine && <p className="mb-3 text-body text-ink">{sessionsLine}</p>}
               <ul className="divide-y divide-line border-y border-line">
                 {camp.sessions.map(s => {
                   const avail = AVAILABILITY[s.availability] ?? AVAILABILITY.unknown
@@ -131,10 +157,12 @@ export default function CampDetailPage() {
                           <p className={`text-caption ${s.spots_available === 0 ? 'text-error' : 'text-checked'}`}>{spotsLine(s)}</p>
                         )}
                       </div>
-                      <div className="shrink-0 text-right">
-                        {s.price && <p className="text-body font-semibold text-ink">${Math.round(s.price).toLocaleString()}</p>}
-                        <p className={`text-small font-semibold ${avail.cls}`}>{avail.label}</p>
-                      </div>
+                      {(sharedPrice == null || sharedAvail == null) && (
+                        <div className="shrink-0 text-right">
+                          {s.price && sharedPrice == null && <p className="text-body font-semibold text-ink">${Math.round(s.price).toLocaleString()}</p>}
+                          {sharedAvail == null && <p className={`text-small font-semibold ${avail.cls}`}>{avail.label}</p>}
+                        </div>
+                      )}
                     </li>
                   )
                 })}
@@ -165,9 +193,10 @@ export default function CampDetailPage() {
               )}
               {camp.indoor_outdoor && <Fact label="Setting">{sentence(camp.indoor_outdoor)}</Fact>}
               {camp.gender_policy && <Fact label="Gender">{sentence(camp.gender_policy)}</Fact>}
-              <Fact label="Transport">{camp.transportation ? 'Yes' : 'No'}</Fact>
-              <Fact label="Extended care">{camp.extended_care ? 'Yes' : 'No'}</Fact>
-              <Fact label="Meals">{camp.meals_included ? 'Included' : 'No'}</Fact>
+              {/* The API sends false for unknown; the trust summary says which are unknown. */}
+              <Fact label="Transport">{yesNo('transportation', camp.transportation, 'Yes')}</Fact>
+              <Fact label="Extended care">{yesNo('extended_care', camp.extended_care, 'Yes')}</Fact>
+              <Fact label="Meals">{yesNo('meals_included', camp.meals_included, 'Included')}</Fact>
               <Fact label="Financial aid">{camp.financial_aid ? 'Available' : 'No'}</Fact>
             </dl>
           </section>
@@ -191,7 +220,7 @@ export default function CampDetailPage() {
                   <p>{camp.trust_summary.fields_verified.length} details verified</p>
                 )}
                 {camp.trust_summary.fields_missing.length > 0 && (
-                  <p className="text-warn">Missing: {camp.trust_summary.fields_missing.join(', ')}</p>
+                  <p className="text-warn">Not in this listing yet: {listJoin(camp.trust_summary.fields_missing.map(fieldLabel))}.</p>
                 )}
                 {camp.trust_summary.accreditation.status === 'confirmed' && (
                   <p className="inline-flex items-center gap-1.5 font-semibold text-checked"><Icon name="check" size={14} />ACA accredited</p>
