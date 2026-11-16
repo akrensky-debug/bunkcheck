@@ -132,3 +132,12 @@ def test_reason_line_keeps_acronym_categories_uppercase():
     """Categories are matched lowercase; the reason a parent reads says STEM, not stem."""
     _, reasons = score_camp(CAMPS[3], [], age=8, categories=["STEM"])
     assert "Offers STEM programs" in reasons
+
+
+@pytest.mark.parametrize("miles, reason", [
+    (0.0, "Less than a mile away"), (0.6, "Less than a mile away"),
+    (7.1, "Within 8 miles"), (12.62, "Within 13 miles"), (20.0, "Within 20 miles"),
+])
+def test_distance_reason_is_never_smaller_than_the_distance(miles: float, reason: str) -> None:
+    _, reasons = score_camp(CAMPS[0], [], distance_miles=miles)
+    assert reason in reasons

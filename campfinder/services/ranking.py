@@ -28,6 +28,7 @@ Before adding a field here, ask whether a camp could ever pay to change it. If y
 
 from __future__ import annotations
 
+import math
 from datetime import date, datetime, timedelta, timezone
 from typing import Any
 
@@ -122,10 +123,10 @@ def score_camp(
     if distance_miles is not None:
         if distance_miles < 15:
             score += 0.20
-            reasons.append(f"Within {distance_miles:.0f} miles")
+            reasons.append(_distance_reason(distance_miles))
         elif distance_miles < 30:
             score += 0.10
-            reasons.append(f"Within {distance_miles:.0f} miles")
+            reasons.append(_distance_reason(distance_miles))
 
     # --- Price fit ---
     ppw = camp.get("price_per_week")
@@ -172,6 +173,13 @@ def _format_months(month_numbers: list[int]) -> str:
     names = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
              "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
     return _oxford_join([names[m - 1] for m in sorted(set(month_numbers))])
+
+
+def _distance_reason(miles: float) -> str:
+    """Round up, so "Within 8 miles" is true of a camp 7.4 miles away; "Within 0 miles" read as broken."""
+    if miles < 1:
+        return "Less than a mile away"
+    return f"Within {math.ceil(miles)} miles"
 
 
 def _oxford_join(items: list[str]) -> str:

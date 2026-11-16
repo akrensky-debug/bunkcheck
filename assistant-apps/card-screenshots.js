@@ -1,6 +1,6 @@
 // Screenshots of the camp cards for the Claude directory listing (docs/directory-submissions.md).
 //
-//   node assistant-apps/card-screenshots.js [MCP endpoint] [output folder]
+//   node assistant-apps/card-screenshots.js [MCP endpoint] [output folder] [local widget.html]
 //
 // Fetches the live widget (resources/read) and real tool results (tools/call) from the endpoint,
 // plays the MCP Apps host in a page (ui/initialize, tool-result, theme), and screenshots the
@@ -9,6 +9,20 @@ const { chromium } = require('playwright');
 const fs = require('fs');
 const API = process.argv[2] || 'https://api-production-4a03.up.railway.app/claude/mcp';
 const OUT = process.argv[3] || 'assistant-apps/screenshots';
+// Optional: a local widget.html to render instead of the deployed one, to preview a change.
+const WIDGET_FILE = process.argv[4];
+
+// Claude passes these style variables to the cards (MCP Apps design guidelines, read
+// 13 November 2026). Without them the cards fall back to our own palette, which isn't what
+// a parent sees in Claude.
+const CLAUDE_VARS = {
+  light: { '--color-background-primary': '#FFFFFF', '--color-background-secondary': '#F5F4ED', '--color-text-primary': '#141413',
+    '--color-text-secondary': '#3D3D3A', '--color-border-tertiary': 'rgba(31,30,29,.15)', '--color-text-success': '#265B19',
+    '--color-background-success': '#E9F1DC', '--color-text-warning': '#5A4815', '--border-radius-xl': '12px' },
+  dark: { '--color-background-primary': '#30302E', '--color-background-secondary': '#262624', '--color-text-primary': '#FAF9F5',
+    '--color-text-secondary': '#C2C0B6', '--color-border-tertiary': 'rgba(222,220,209,.15)', '--color-text-success': '#7AB948',
+    '--color-background-success': '#1B4614', '--color-text-warning': '#D1A041', '--border-radius-xl': '12px' },
+};
 
 async function rpc(method, params) {
   const r = await fetch(API, { method: 'POST', headers: { 'content-type': 'application/json', accept: 'application/json, text/event-stream', 'mcp-protocol-version': '2025-11-25' },
@@ -35,7 +49,7 @@ const SHOTS = [
 (async () => {
   const tools = (await rpc('tools/list', {})).tools;
   const uri = tools.find(t => t.name === 'search_camps')._meta.ui.resourceUri;
-  const html = (await rpc('resources/read', { uri })).contents[0].text;
+  const html = WIDGET_FILE ? fs.readFileSync(WIDGET_FILE, 'utf8') : (await rpc('resources/read', { uri })).contents[0].text;
   const browser = await chromium.launch();
   const meta = [];
   for (const s of SHOTS) {
@@ -44,19 +58,19 @@ const SHOTS = [
     const n = (sc.camps || sc.sessions || []).length;
     const page = await browser.newPage({ viewport: { width: 720, height: 900 }, deviceScaleFactor: 2, colorScheme: s.theme });
     const bg = s.theme === 'dark' ? '#262624' : '#FAF9F5';
-    await page.setContent(`<html><body style="margin:0;background:${bg}"><iframe id="w" style="border:0;width:720px;height:200px;display:block"></iframe></body></html>`);
-    await page.evaluate(({ html, sc, theme }) => new Promise(done => {
+    await page.setContent(`<html style="color-scheme:${s.theme}"><body style="margin:0;background:${bg}"><iframe id="w" style="border:0;width:720px;height:200px;display:block"></iframe></body></html>`);
+    await page.evaluate(({ html, sc, theme, vars }) => new Promise(done => {
       const f = document.getElementById('w');
       window.addEventListener('message', e => {
         const m = e.data || {};
         if (m.method === 'ui/initialize') f.contentWindow.postMessage({ jsonrpc: '2.0', id: m.id, result: {
-          protocolVersion: '2026-01-26', hostInfo: { name: 'harness', version: '1' }, hostCapabilities: {}, hostContext: { theme } } }, '*');
+          protocolVersion: '2026-01-26', hostInfo: { name: 'harness', version: '1' }, hostCapabilities: {}, hostContext: { theme, styles: { variables: vars } } } }, '*');
         else if (m.method === 'ui/notifications/initialized') { f.contentWindow.postMessage({ jsonrpc: '2.0', method: 'ui/notifications/tool-result', params: { structuredContent: sc } }, '*'); setTimeout(done, 1500); }
         else if (m.method === 'ui/notifications/size-changed') f.style.height = m.params.height + 'px';
         else if (m.id !== undefined) f.contentWindow.postMessage({ jsonrpc: '2.0', id: m.id, result: {} }, '*');
       });
       f.srcdoc = html;
-    }), { html, sc, theme: s.theme });
+    }), { html, sc, theme: s.theme, vars: CLAUDE_VARS[s.theme] });
     await page.waitForTimeout(800);
     const el = await page.$('#w');
     await el.screenshot({ path: `${OUT}/${s.file}` });
