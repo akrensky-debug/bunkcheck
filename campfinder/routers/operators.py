@@ -7,21 +7,21 @@ inquiries (routers/inquiries.py, docs/inquiries.md), where contact details reach
 only if the parent chooses to share them.
 
 POST /api/v1/submissions        — operator self-submits new camp
-POST /api/v1/claims             — operator initiates claim
-GET  /api/v1/claims/verify      — operator verifies email token
+POST /api/v1/claims             — operator starts a claim (services/claims.py)
+GET  /api/v1/claims/verify      — operator completes it with the code
 POST /api/v1/events             — client-side analytics event
 """
 
 from __future__ import annotations
 
-import secrets
 from typing import Any
 
-from fastapi import APIRouter, HTTPException, Query
+from fastapi import APIRouter, HTTPException, Query, Request
 
+from campfinder.client_ip import client_ip, rate_key
 from campfinder.database import get_supabase
 from campfinder.models.operator import ClaimInitiate, CampSubmissionCreate, CampSubmissionResponse
-from campfinder.services.email import send_claim_verification_email
+from campfinder.services import claims
 
 router = APIRouter()
 
@@ -62,82 +62,23 @@ async def submit_camp(body: CampSubmissionCreate) -> CampSubmissionResponse:
 
 # ── Operator: claim flow ───────────────────────────────────────────────────
 
-@router.post("/claims", summary="Initiate camp claim")
-async def initiate_claim(body: ClaimInitiate) -> dict[str, str]:
-    """
-    Operator initiates a claim on an existing listing.
-    Sends a verification email with a token.
-    """
-    client = get_supabase()
-
-    # Verify camp exists
-    camp_rows = client.table("camps").select("id,name").eq("id", body.camp_id).execute().data
-    if not camp_rows:
-        raise HTTPException(status_code=404, detail="Camp not found")
-    camp = camp_rows[0]
-
-    # Create or update claim request with a fresh token
-    token = secrets.token_urlsafe(32)
-    existing = client.table("claim_requests").select("id").eq("camp_id", body.camp_id).eq("email", body.email).limit(1).execute().data
-    if existing:
-        client.table("claim_requests").update({
-            "verification_token": token, "status": "pending"
-        }).eq("id", existing[0]["id"]).execute()
-    else:
-        client.table("claim_requests").insert({
-            "camp_id":            body.camp_id,
-            "email":              body.email,
-            "name":               body.contact_name,
-            "role":               body.role,
-            "verification_token": token,
-            "status":             "pending",
-        }).execute()
-
+@router.post("/claims", summary="Start a camp claim")
+async def initiate_claim(body: ClaimInitiate, request: Request) -> dict[str, str]:
+    """Sends a code only to an address the camp published; any other claim waits for a person.
+    The answer is the same either way (services/claims.py)."""
     try:
-        await send_claim_verification_email(
-            to_email=body.email, camp_id=str(body.camp_id), camp_name=camp["name"], token=token,
-        )
-    except Exception:
-        pass  # the operator can ask again
-
-    return {"message": "Verification email sent. Please check your inbox.", "camp_name": camp["name"]}
+        return await claims.start_claim(body.camp_id, body.email, body.contact_name, body.role,
+                                        rate_key(client_ip(request)) or "unknown")
+    except claims.ClaimError as e:
+        raise HTTPException(status_code=e.status, detail=e.detail)
 
 
-@router.get("/claims/verify", summary="Verify camp claim token")
-async def verify_claim(token: str = Query(...)) -> dict[str, str]:
-    """
-    Operator clicks verification link from email.
-    Marks claim as verified and creates/updates camp_ownership record.
-    """
-    client = get_supabase()
-    rows = client.table("claim_requests").select("*").eq("verification_token", token).eq("status", "pending").execute().data
-    if not rows:
-        raise HTTPException(status_code=404, detail="Invalid or expired token")
-
-    claim = rows[0]
-
-    # Mark claim verified
-    client.table("claim_requests").update({"status": "verified"}).eq("id", claim["id"]).execute()
-
-    # Create ownership record
-    existing_ownership = client.table("camp_ownership").select("id").eq("camp_id", claim["camp_id"]).execute().data
-    if not existing_ownership:
-        client.table("camp_ownership").insert({
-            "camp_id":      claim["camp_id"],
-            "email":        claim["email"],
-            "contact_name": claim.get("name"),
-            "role":         claim.get("role"),
-            "verified":     True,
-            "plan":         "claimed",
-        }).execute()
-    else:
-        client.table("camp_ownership").update({"verified": True, "plan": "claimed"}).eq("camp_id", claim["camp_id"]).execute()
-
-    # Update camp verification status
-    client.table("camps").update({"verification_status": "claimed"}).eq("id", claim["camp_id"]).execute()
-
-    camp = client.table("camps").select("name").eq("id", claim["camp_id"]).execute().data[0]
-    return {"message": "Claim verified. Welcome to Bunkcheck.", "camp_name": camp["name"]}
+@router.get("/claims/verify", summary="Complete a camp claim with its code")
+async def verify_claim(token: str = Query(..., max_length=200)) -> dict[str, str]:
+    try:
+        return claims.verify_claim(token)
+    except claims.ClaimError as e:
+        raise HTTPException(status_code=e.status, detail=e.detail)
 
 
 # ── Analytics events ───────────────────────────────────────────────────────

@@ -18,6 +18,7 @@ function ClaimFlow() {
   const [searching, setSearching] = useState(false)
   const [selected, setSelected] = useState<CampSearchResult | null>(null)
   const [email, setEmail] = useState('')
+  const [claimMessage, setClaimMessage] = useState('')
   const [contactName, setContactName] = useState('')
   const [role, setRole] = useState('')
   const [loading, setLoading] = useState(false)
@@ -68,6 +69,8 @@ function ClaimFlow() {
         const body = await res.json().catch(() => ({}))
         throw new Error(body.detail || 'Claim failed')
       }
+      const body = await res.json().catch(() => ({}))
+      setClaimMessage(typeof body.message === 'string' ? body.message : '')
       setStep('verify')
     } catch (err: unknown) {
       setError(err instanceof Error ? err.message : 'Something went wrong.')
@@ -150,7 +153,7 @@ function ClaimFlow() {
           </div>
 
           <form onSubmit={handleClaim} className="space-y-5">
-            <Field label="Your email" hint="We'll send a verification link to this address.">
+            <Field label="Your email" hint="Use the address on your listing or one on your camp’s own website domain. The code goes only there.">
               {id => <Input id={id} type="email" required value={email} onChange={e => setEmail(e.target.value)} placeholder="director@yourcamp.com" />}
             </Field>
             <Field label="Your name" optional>
@@ -179,7 +182,7 @@ function ClaimFlow() {
         <>
           <Heading level="h1" className="mb-3">Check your email</Heading>
           <Text tone="muted" className="mb-8">
-            We&rsquo;ve sent a verification code to <strong className="text-ink">{email}</strong>. Enter it below to complete your claim.
+            {claimMessage || 'If that address is one your camp publishes, a code is on its way.'} Enter it below to complete your claim.
           </Text>
 
           <form onSubmit={handleVerify} className="space-y-5">

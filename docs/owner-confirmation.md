@@ -178,6 +178,34 @@ have been right.
 | `OWNER_INBOUND_SECRET` | none (endpoint off) | Shared secret the inbound hook sends |
 | `OWNER_UPDATES_AUTO_APPLY` | off | Apply routine updates from verified senders without a person |
 
+## Claims
+
+A camp can claim its listing at `/operators/claim` (`campfinder/services/claims.py`). The code goes
+only to an address the camp already published:
+
+- a contact we hold for the camp (`camp_contacts`), or the email on its listing, which came from
+  the camp's own website;
+- an address on the camp's website domain, like `director@riversidesoccer.org` for
+  `riversidesoccer.org`. Shared hosts (Wix, Facebook, Google Sites, registration platforms) and
+  free mail don't count.
+
+Any other address is held: the row in `claim_requests` gets `status = 'needs_review'` and no email
+goes out. The claimant sees the same answer either way. To work the queue:
+
+```sql
+SELECT c.created_at, c.email, c.name, c.role, k.name AS camp, k.email AS camp_email, k.website_url
+FROM claim_requests c JOIN camps k ON k.id = c.camp_id
+WHERE c.status = 'needs_review' ORDER BY c.created_at;
+```
+
+Write to the camp at the address on its listing, not the claimant's. If the camp says the person
+speaks for it, add them to `camp_contacts` and ask them to claim again: the code then goes to them.
+Otherwise set the row to `rejected`.
+
+A verified claim raises the listing from "unverified" to "claimed" and never lowers "Verified by
+our team" or "Confirmed by the camp". Both the claim and any status change are in
+`listing_changes`. Codes are stored as a hash, work once, and expire after 72 hours.
+
 ## Not yet
 
 - Text messages.
