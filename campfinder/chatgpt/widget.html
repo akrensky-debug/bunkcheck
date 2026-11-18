@@ -126,7 +126,8 @@
     return `<div class="card">
       <div class="row">
         <div><div class="name">${esc(c.name)}</div><div class="meta">${esc(where)}</div></div>
-        ${price != null ? `<div class="price">$${Math.round(price)}<small>${session ? "/session" : "/wk"}</small></div>` : ""}
+        ${price != null ? `<div class="price">$${Math.round(price)}<small>${session ? "/session" : "/wk"}</small></div>`
+          : c.price_label ? `<div class="price"><small>${esc(c.price_label)}</small></div>` : ""}
       </div>
       ${session ? `<div class="dates">${day(session.start_date)} – ${day(session.end_date)}${SPOTS[session.availability] ? ` · <span class="spots">${SPOTS[session.availability]}</span>` : ""}</div>` : ""}
       ${session && session.name && session.name !== c.name ? `<div class="meta">${esc(session.name)}</div>` : ""}

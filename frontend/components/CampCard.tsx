@@ -34,6 +34,8 @@ export default function CampCard({ camp }: Props) {
         {camp.price_per_week ? (
           <Price amount={camp.price_per_week} unit="/wk" prefix={camp.last_season && camp.season_year ? String(camp.season_year) : undefined}
             className="shrink-0" />
+        ) : camp.price_label ? (
+          <span className="shrink-0 whitespace-nowrap text-small text-muted">{camp.price_label}</span>
         ) : null}
       </div>
       <Meta

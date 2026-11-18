@@ -13,6 +13,10 @@ export interface CampSearchResult {
   price_per_week: number | null
   price_min: number | null
   price_max: number | null
+  /** Lowest weekly price on file; null when the camp hasn't posted one per week. */
+  weekly_price?: number | null
+  /** The price as a parent reads it: '$350/week', '$900 to $1,200 per session', 'Price not posted'. */
+  price_label?: string
   transportation: boolean
   extended_care: boolean
   meals_included: boolean

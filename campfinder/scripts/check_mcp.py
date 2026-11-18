@@ -99,6 +99,16 @@ def main() -> None:
 
         r = call(client, url, "search_camps", {"location": "Boston, MA", "requires_extended_care": True, "max_price_per_week": 400})
         check(not r.get("isError"), "search_camps Boston, extended care, under $400")
+        # Budget rule (docs/chatgpt-app.md): a card shows a price, and camps with no weekly price
+        # come after every priced one, labelled, and the note says how many.
+        boston = (r.get("structuredContent") or {}).get("camps") or []
+        unpriced = [c.get("price_per_week") is None and not (c.get("price_label") or "").endswith("/week")
+                    for c in boston]
+        check(all(c.get("price_label") for c in boston), f"every Boston card carries a price label ({len(boston)} cards)")
+        check(unpriced == sorted(unpriced), f"camps with no weekly price come last ({sum(unpriced)} of {len(boston)})")
+        if any(unpriced):
+            note = (r.get("structuredContent") or {}).get("note") or ""
+            check(f"{sum(unpriced)} of these have no weekly price posted" in note, "note counts camps with no weekly price")
 
         r = call(client, url, "find_sessions", {"location": "Cranston, RI", "starts_on_or_after": "2027-07-05", "ends_on_or_before": "2027-07-11"})
         check(not r.get("isError") and "sessions" in (r.get("structuredContent") or {}), "find_sessions week of July 6 near Cranston")

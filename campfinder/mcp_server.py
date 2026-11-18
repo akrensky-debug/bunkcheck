@@ -42,7 +42,7 @@ from campfinder.inquiries.service import record_appearances
 log = logging.getLogger(__name__)
 
 # Bump the version when widget.html changes: hosts cache templates by URI.
-WIDGET_URI = "ui://campfinder/camps-v8.html"
+WIDGET_URI = "ui://campfinder/camps-v9.html"
 WIDGET_MIME = "text/html;profile=mcp-app"
 MAX_CARDS = 8
 
@@ -177,7 +177,7 @@ def _utm(url: str, source: str, campaign: str) -> str:
 
 def _card(c: dict[str, Any], source: str) -> dict[str, Any]:
     keys = (
-        "id", "name", "city", "state", "distance_miles", "price_per_week", "age_min", "age_max",
+        "id", "name", "city", "state", "distance_miles", "price_per_week", "price_label", "age_min", "age_max",
         "verification_status", "extended_care", "transportation", "financial_aid", "match_reasons",
         "season_year", "last_season",
     )
