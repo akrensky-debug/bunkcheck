@@ -27,7 +27,7 @@ Paste these as they are. Limits are the portal's.
 | Categories (1 to 5) | Lifestyle, plus Family or Education if the list has them |
 | Documentation URL | `https://www.bunkcheck.ai/connect` |
 | Privacy policy URL | `https://www.bunkcheck.ai/privacy` |
-| Support contact | hello@bunkcheck.ai |
+| Support contact | hello@mail.bunkcheck.ai |
 | Icon | `campfinder/static/icon.png` (512 px) |
 | Slug | `bunkcheck` (permanent once published) |
 | Allowed link URIs | `https://www.bunkcheck.ai` |

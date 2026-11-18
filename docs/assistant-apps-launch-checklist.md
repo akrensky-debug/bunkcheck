@@ -30,8 +30,10 @@ Addresses (13 November 2026):
 - [ ] **Smoke test production:** `python -m campfinder.scripts.check_mcp https://www.bunkcheck.ai/mcp`,
       then the API's `/chatgpt/mcp`. All checks must pass. (13 November: all three API
       endpoints pass directly.)
-- [ ] **Support inbox.** `hello@bunkcheck.ai` receives mail and someone answers within one
-      business day (the support page promises this).
+- [ ] **Support inbox.** `hello@mail.bunkcheck.ai` receives mail through Resend, which forwards
+      it to `OWNER_FORWARD_TO` (18 November 2026). Someone answers within one business day (the
+      support page promises this). `hello@bunkcheck.ai` has no MX record at GoDaddy yet, so the
+      site and listings use the `mail.` address until it does.
 - [ ] **Uptime alert** on the API's `/health` and on `https://www.bunkcheck.ai/mcp` (for example Better Stack or UptimeRobot).
 
 ## 2. Legal review (flagged, not decided)
