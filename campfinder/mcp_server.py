@@ -34,7 +34,7 @@ from mcp_types import CallToolResult, Icon, TextContent
 
 from campfinder.agent.activity_tools import ACTIVITY_DISCOVERY_DESCRIPTIONS, ACTIVITY_STATUS_TEXT
 from campfinder.agent.inquiry_tools import INQUIRY_DISCOVERY_DESCRIPTIONS, INQUIRY_STATUS_TEXT
-from campfinder.agent.tools import CAMP_TOOLS, ToolError, ToolOutput, ToolSpec, run_tool
+from campfinder.agent.tools import CAMP_TOOLS, ToolError, ToolOutput, ToolSpec, run_tool, search_note
 from campfinder.config import get_settings
 from campfinder.database import get_supabase
 from campfinder.inquiries.service import record_appearances
@@ -206,6 +206,7 @@ def _widget_payload(name: str, args: dict[str, Any], out: ToolOutput, source: st
     if name == "send_inquiry":
         return {"inquiry": {"preview": ui.get("preview"), "confirm_url": _utm(ui["confirm_url"], source, "inquiry_confirm")}}
     content = out.content if isinstance(out.content, dict) else {}
+    cards: list[dict[str, Any]] = []
     if name == "search_camps":
         cards = [_card(c, source) for c in ui.get("camps", [])[:MAX_CARDS]]
         names = [c["name"] for c in cards]
@@ -215,6 +216,9 @@ def _widget_payload(name: str, args: dict[str, Any], out: ToolOutput, source: st
         names = list(dict.fromkeys(s["camp"]["name"] for s in sessions))
         payload = {"sessions": sessions}
     payload["note"] = content.get("note")
+    if name == "search_camps" and cards:
+        # Count what the parent sees: the widget shows at most MAX_CARDS of the results.
+        payload["note"] = search_note(cards, args.get("max_price_per_week"))
     # Only offer the handoff when Bunkcheck has something for this family.
     payload["plan_url"] = _plan_url(args, names, source) if names else None
     return payload
