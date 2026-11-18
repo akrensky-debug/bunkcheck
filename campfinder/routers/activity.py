@@ -33,7 +33,7 @@ PREFIX = "/api/activity/v1"
 router = APIRouter(prefix=PREFIX, tags=["Activity API v1"])
 
 NEAR_HELP = (
-    "Location as 'City, ST'. Coverage today: camps in CT, MA, ME, NH, NJ, NY, PA, RI, VT; "
+    "Location as 'City, ST'. Coverage today: camps in CT, MA, ME, NH, RI, VT; "
     "year-round classes in a Providence, RI pilot."
 )
 _PII = re.compile(r"[\w.+-]+@[\w-]+\.[\w.]+|\+?\d[\d\s().-]{7,}\d")

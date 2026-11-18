@@ -31,7 +31,7 @@ export default function SupportPage() {
 
       <h2>Common questions</h2>
       <ul>
-        <li><strong>Where does Bunkcheck work?</strong> The Northeast US today: CT, MA, ME, NH, NJ, NY, PA, RI and VT, starting with Providence and Boston.</li>
+        <li><strong>Where does Bunkcheck work?</strong> Six New England states today: CT, MA, ME, NH, RI and VT, with the most camps around Boston and Providence.</li>
         <li><strong>Are the details right?</strong> Each camp shows whether it is verified by Bunkcheck or the camp. Always confirm dates and prices with the camp before you pay.</li>
         <li><strong>Does Bunkcheck see my ChatGPT or Claude conversation?</strong> No. It receives only the search details, such as town and age. See our <a href="/privacy">Privacy Policy</a>.</li>
         <li><strong>A camp&apos;s information is wrong.</strong> Email us with the camp name. Camp owners can <a href="/operators/claim">claim their listing</a> and correct it.</li>

@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react'
 import { useParams } from 'next/navigation'
 import {
-  Button, Checkbox, ChoiceChip, Container, Field, Heading, Input, Notice, Section, Text, Textarea,
+  Button, Checkbox, ChoiceChip, Container, Field, Heading, Input, Notice, Section, StatusMark, Text, Textarea,
 } from '@/components/ui'
 
 const API = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'
@@ -223,7 +223,7 @@ export default function SeasonUpdatePage() {
                     </Field>
                   </div>
                   {r.was && <Text tone="muted" variant="caption">{r.was}</Text>}
-                  {r.note && <Text tone="warn" variant="small">{r.note} Is that right?</Text>}
+                  {r.note && <p><StatusMark tone="caution" size="md" weight="regular">{r.note} Is that right?</StatusMark></p>}
                   <Button variant="quiet" size="sm" onClick={() => setRows(rs => rs.filter(x => x.key !== r.key))}>
                     Remove this session
                   </Button>

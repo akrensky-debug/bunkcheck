@@ -63,7 +63,7 @@ parent confirms outside ChatGPT). Nothing moves money. Full rules: `docs/inquiri
 - **Subtitle:** Find and plan kids' camps
 - **Category:** Lifestyle (confirm against the dashboard's list)
 - **Description:** Bunkcheck helps parents find the right summer camps for each child in the
-  Northeast US (CT, MA, ME, NH, NJ, NY, PA, RI and VT), starting with Providence and Boston. Tell
+  Northeast US (CT, MA, ME, NH, RI and VT), starting with Providence and Boston. Tell
   ChatGPT your town, your kids' ages and interests, and the weeks you need covered. Bunkcheck
   returns day camps, sleepaway camps and specialty programs ranked for your child, with weekly
   prices, session dates, extended care, transportation and financial aid, and shows which details

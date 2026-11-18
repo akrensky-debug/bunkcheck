@@ -1,5 +1,6 @@
 import { authHeaders } from '@/lib/auth'
 import type { ShareSummary } from '@/lib/kit'
+import type { StatusTone } from '@/components/ui'
 
 const API = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'
 
@@ -184,12 +185,25 @@ export const confirmBooking = (familyId: string, attemptId: string, priceShownCe
 export const STATUS_LABEL: Record<RegStatus, string> = {
   watching: 'Watching', registered: 'Registered', waitlisted: 'Waitlist', cancelled: 'Cancelled',
 }
-/** Text color for each status (shown as plain colored text, not a pill). */
-export const STATUS_TONE: Record<RegStatus, string> = {
-  watching: 'text-ink',
-  registered: 'text-checked',
-  waitlisted: 'text-warn',
-  cancelled: 'text-muted',
+/** Each status on the stoplight; render with <StatusMark tone={STATUS_TONE[s]}>. */
+export const STATUS_TONE: Record<RegStatus, StatusTone> = {
+  watching: 'neutral',
+  registered: 'go',
+  waitlisted: 'caution',
+  cancelled: 'neutral',
+}
+/** Paid is done; a deposit is part way; nothing paid yet, or refunded, carries no signal. */
+export const PAY_TONE: Record<PaymentStatus, StatusTone> = {
+  paid: 'go', deposit: 'caution', unpaid: 'neutral', refunded: 'neutral',
+}
+
+/** Registration opening (or closing) within this window counts as soon, and shows at caution. */
+export const SOON_MS = 7 * 86_400_000
+
+export function isSoon(ts: string | null | undefined, now = Date.now()) {
+  if (!ts) return false
+  const ms = new Date(ts).getTime() - now
+  return ms > 0 && ms <= SOON_MS
 }
 export const PAY_LABEL: Record<PaymentStatus, string> = {
   unpaid: 'Not paid', deposit: 'Deposit paid', paid: 'Paid', refunded: 'Refunded',

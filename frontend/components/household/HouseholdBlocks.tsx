@@ -5,7 +5,7 @@ import type { UIData } from '@/lib/agent'
 import {
   KIND_LABELS, ROLE_HELP, ROLE_LABELS, assignTasks, fmtDay, fmtTime, inviteMember, type Role, type Task,
 } from '@/lib/household'
-import { Button, Icon, Input, Meta, Notice, Select, TextLink } from '@/components/ui'
+import { Button, Input, Meta, Notice, Select, StatusMark, TextLink } from '@/components/ui'
 
 type Of<T extends UIData['type']> = Extract<UIData, { type: T }>
 
@@ -82,9 +82,9 @@ export function AssignProposal({ data, familyId }: { data: Of<'assign_proposal'>
       )}
       <div className="mt-4 flex flex-wrap items-center gap-4">
         {state === 'done' ? (
-          <p className="inline-flex items-center gap-1.5 text-small font-semibold text-checked">
-            <Icon name="check" size={14} />Done. {data.member ? `${data.member.name} will get a reminder before each one.` : ''}
-          </p>
+          <StatusMark tone="go" size="md">
+            Done. {data.member ? `${data.member.name} will get a reminder before each one.` : ''}
+          </StatusMark>
         ) : (
           <>
             <Button onClick={confirm} disabled={state === 'busy' || !familyId} size="sm">
@@ -123,10 +123,10 @@ export function InviteProposal({ data, familyId }: { data: Of<'invite_proposal'>
   if (state === 'dismissed') return <p className="text-small text-muted">No invite sent.</p>
   if (state === 'done') {
     return sent?.emailed ? (
-      <p className="inline-flex items-center gap-1.5 text-small font-semibold text-checked"><Icon name="check" size={14} />Invite emailed to {name} ({email}).</p>
+      <p><StatusMark tone="go" size="md">Invite emailed to {name} ({email}).</StatusMark></p>
     ) : (
       <div className="space-y-2 text-small">
-        <p className="inline-flex items-center gap-1.5 font-semibold text-checked"><Icon name="check" size={14} />{name} is invited. Email isn&rsquo;t set up yet, so send them this link:</p>
+        <p><StatusMark tone="go" size="md">{name} is invited. Email isn&rsquo;t set up yet, so send them this link:</StatusMark></p>
         <Input readOnly value={sent?.url ?? ''} onFocus={e => e.target.select()} fieldSize="sm" />
       </div>
     )

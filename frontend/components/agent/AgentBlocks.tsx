@@ -1,6 +1,6 @@
 import CampCard from '@/components/CampCard'
 import TrustBadge from '@/components/TrustBadge'
-import { List, ListRow, Meta } from '@/components/ui'
+import { List, ListRow, Meta, StatusCounts, StatusMark, type StatusTone } from '@/components/ui'
 import { miles } from '@/lib/format'
 import { BookingBlock } from '@/components/booking/BookingBlocks'
 import { AssignProposal, HouseholdCard, InviteProposal, MessageDraft, TasksCard } from '@/components/household/HouseholdBlocks'
@@ -120,7 +120,9 @@ function ComparisonView({ data }: { data: Comparison }) {
   )
 }
 
-const WEEK_TONE = { covered: 'text-checked', gap: 'text-warn', overlap: 'text-error' }
+// A gap is a week with nothing (stop, like an open week on the summer board); an overlap is
+// two camps in one week, a problem to sort out but not a hole (caution).
+const WEEK_TONE: Record<'covered' | 'gap' | 'overlap', StatusTone> = { covered: 'go', gap: 'stop', overlap: 'caution' }
 
 function PlanView({ plan }: { plan: Plan }) {
   const label = { covered: 'Covered', gap: 'Gap', overlap: 'Overlap' }
@@ -135,7 +137,7 @@ function PlanView({ plan }: { plan: Plan }) {
           <li key={w.week_of} className="flex items-baseline gap-4 py-2.5 text-small">
             <span className="w-28 shrink-0 text-muted">{fmtRange(w.week_of, w.week_end)}</span>
             <span className="min-w-0 flex-1 truncate text-ink">{w.camps.map(c => c.name).join(' + ')}</span>
-            <span className={`shrink-0 font-semibold ${WEEK_TONE[w.status]}`}>{label[w.status]}</span>
+            <StatusMark tone={WEEK_TONE[w.status]} size="md" className="shrink-0">{label[w.status]}</StatusMark>
           </li>
         ))}
       </ul>
@@ -144,13 +146,13 @@ function PlanView({ plan }: { plan: Plan }) {
 }
 
 function CoverageView({ data }: { data: Coverage }) {
-  const tone: Record<CoverageStatus, string> = {
-    covered: 'text-checked',
-    check_hours: 'text-ink',
-    partial: 'text-warn',
-    open: 'text-error',
-    away: 'text-muted',
-    not_needed: 'text-muted',
+  const tone: Record<CoverageStatus, StatusTone> = {
+    covered: 'go',
+    check_hours: 'caution',
+    partial: 'caution',
+    open: 'stop',
+    away: 'go',
+    not_needed: 'neutral',
   }
   const label: Record<CoverageStatus, string> = {
     covered: 'Covered', check_hours: 'Confirm hours', partial: 'Partly covered',
@@ -168,9 +170,11 @@ function CoverageView({ data }: { data: Coverage }) {
         <div key={kid.name}>
           <div className="mb-2 flex flex-wrap items-baseline justify-between gap-2">
             <h3 className="font-display text-h3 text-ink">{kid.name}</h3>
-            <span className="text-small text-muted">
-              {kid.weeks_covered} covered · {kid.weeks_partial} partly · {kid.weeks_open} open
-            </span>
+            <StatusCounts size="sm" items={[
+              { tone: 'go', count: kid.weeks_covered, label: 'covered' },
+              { tone: 'caution', count: kid.weeks_partial, label: 'partly' },
+              { tone: 'stop', count: kid.weeks_open, label: 'open' },
+            ]} />
           </div>
           <ul className="divide-y divide-line border-y border-line">
             {kid.weeks.filter(w => w.status !== 'not_needed').map(w => (
@@ -180,7 +184,7 @@ function CoverageView({ data }: { data: Coverage }) {
                   <span className="min-w-0 flex-1 truncate text-ink">
                     {w.status === 'away' ? w.away.join(', ') : w.covered_by.join(' + ')}
                   </span>
-                  <span className={`shrink-0 font-semibold ${tone[w.status]}`}>{label[w.status]}</span>
+                  <StatusMark tone={tone[w.status]} size="md" className="shrink-0">{label[w.status]}</StatusMark>
                 </div>
                 {w.status !== 'covered' && w.status !== 'away' && (w.check_hours.length > 0 || w.gaps.length > 0 || w.options.length > 0) && (
                   <div className="mt-1 space-y-0.5 pl-32 text-caption text-muted">

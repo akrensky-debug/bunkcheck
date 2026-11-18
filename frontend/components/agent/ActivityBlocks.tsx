@@ -1,5 +1,5 @@
 import TrustBadge from '@/components/TrustBadge'
-import { List, ListRow, Meta, Price, cx } from '@/components/ui'
+import { List, ListRow, Meta, Price, StatusMark, cx, type StatusTone } from '@/components/ui'
 import { miles } from '@/lib/format'
 import {
   KIND_LABEL, money,
@@ -29,13 +29,15 @@ function fmtDay(d: string) {
 }
 
 function EnrollmentChip({ o }: { o: ActivityOffering }) {
-  if (o.availability === 'full') return <span className="text-caption font-semibold text-error">Full</span>
-  if (o.availability === 'waitlist') return <span className="text-caption font-semibold text-warn">Waitlist</span>
+  if (o.availability === 'full') return <StatusMark tone="stop">Full</StatusMark>
+  if (o.availability === 'waitlist') return <StatusMark tone="caution">Waitlist</StatusMark>
   if (o.enrollment_status === 'open')
-    return <span className="text-caption font-semibold text-checked">Open{o.enrollment_closes ? ` until ${fmtDay(o.enrollment_closes)}` : ''}</span>
+    return o.availability === 'limited'
+      ? <StatusMark tone="caution">Few spots{o.enrollment_closes ? `, until ${fmtDay(o.enrollment_closes)}` : ''}</StatusMark>
+      : <StatusMark tone="go">Open{o.enrollment_closes ? ` until ${fmtDay(o.enrollment_closes)}` : ''}</StatusMark>
   if (o.enrollment_status === 'upcoming' && o.enrollment_opens)
     return <span className="text-caption text-ink">Opens {fmtDay(o.enrollment_opens)}</span>
-  if (o.enrollment_status === 'closed') return <span className="text-caption text-muted">Registration closed</span>
+  if (o.enrollment_status === 'closed') return <StatusMark tone="stop">Registration closed</StatusMark>
   return null
 }
 
@@ -134,10 +136,10 @@ export function ActivityDetailCard({ activity }: { activity: ActivityProgram }) 
   )
 }
 
-const SEVERITY = {
-  clash: { label: 'Clash', cls: 'text-error' },
-  all_day: { label: 'Busy all day', cls: 'text-error' },
-  logistics: { label: 'Pickup overlap', cls: 'text-warn' },
+const SEVERITY: Record<string, { label: string; tone: StatusTone }> = {
+  clash: { label: 'Clash', tone: 'stop' },
+  all_day: { label: 'Busy all day', tone: 'stop' },
+  logistics: { label: 'Pickup overlap', tone: 'caution' },
 }
 
 export function ScheduleFitView({ results }: { results: ScheduleFitResult[] }) {
@@ -147,9 +149,13 @@ export function ScheduleFitView({ results }: { results: ScheduleFitResult[] }) {
         <li key={r.offering_id} className="py-4">
           <div className="flex justify-between gap-4">
             <p className="text-small font-semibold text-ink">{r.name}</p>
-            <span className={cx('shrink-0 text-small font-semibold', r.fits === false ? 'text-error' : r.fits ? 'text-checked' : 'text-muted')}>
+            <StatusMark
+              size="md"
+              className="shrink-0"
+              tone={r.fits === false ? 'stop' : r.fits ? (r.conflicts.length ? 'caution' : 'go') : 'neutral'}
+            >
               {r.fits === false ? 'Conflicts' : r.fits ? (r.conflicts.length ? 'Fits, with a catch' : 'Fits') : 'Can’t check'}
-            </span>
+            </StatusMark>
           </div>
           <p className="text-caption text-muted">
             {r.schedule}{r.meetings_left != null ? ` · ${r.no_class_dates?.length ? '' : 'up to '}${r.meetings_left} classes left` : ''}
@@ -160,7 +166,7 @@ export function ScheduleFitView({ results }: { results: ScheduleFitResult[] }) {
             <ul className="mt-2 space-y-1">
               {r.conflicts.map((c, i) => (
                 <li key={i} className="text-small text-ink">
-                  <span className={cx('font-semibold', SEVERITY[c.severity].cls)}>{SEVERITY[c.severity].label}:</span>{' '}
+                  <StatusMark tone={SEVERITY[c.severity].tone} size="md">{SEVERITY[c.severity].label}:</StatusMark>{' '}
                   {c.detail} ({c.date_count} {c.date_count === 1 ? 'date' : 'dates'}, from {fmtDay(c.dates[0])})
                 </li>
               ))}

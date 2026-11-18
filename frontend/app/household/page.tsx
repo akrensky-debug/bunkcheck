@@ -261,7 +261,7 @@ function TaskRow({ task: t, members, fullPlan, selected, onSelect, onToggle, onC
         <button
           onClick={onToggle}
           aria-label={done ? 'Mark not done' : 'Mark done'}
-          className={cx('flex h-5 w-5 shrink-0 items-center justify-center rounded-pill border transition-colors', done ? 'border-checked bg-checked text-accent-ink' : 'border-muted hover:border-checked')}
+          className={cx('flex h-5 w-5 shrink-0 items-center justify-center rounded-pill border transition-colors', done ? 'border-checked bg-checked text-accent-ink' : 'border-muted hover:border-checked')} // ui-check-ignore: a checkbox control, not a status
         >
           {done && <Icon name="check" size={12} />}
         </button>

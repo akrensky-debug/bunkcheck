@@ -21,6 +21,7 @@ The place New England parents plan and book the whole summer, and the place camp
 Not a directory. Directories go stale the day they launch.
 Not an ad network. Nobody buys their way to the top of a parent's list.
 Not camp software. Owners never log in unless they want to.
+Not every activity. ActivityHero covers kids' activities in general; we lead with summer camp. Page titles, headlines and descriptions say "summer camp" (decided 18 November 2026).
 
 ## Why us
 
@@ -50,7 +51,7 @@ Like a parent who has done this before. Plain and direct. Specific numbers over 
 
 ## Lines we can test
 
-- **Planning summer shouldn't take all winter.** The home page headline, chosen 16 November 2026.
+- **Planning summer takes all winter.** The headline, chosen 18 November 2026. It states her reality and lets her finish the thought. ("Shouldn't take" ran from 16 to 18 November.) Tone: honest and specific, never pushy; no commands at the parent.
 - Summer, sorted. Retired 16 November 2026: it tells the parent the work is done, when she is the one doing it.
 - The camp app that works for parents, not advertisers.
 - Every parent in Rhode Island, in your corner.

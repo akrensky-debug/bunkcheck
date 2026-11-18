@@ -2,8 +2,8 @@
 
 import { useEffect, useState } from 'react'
 import { getCampRegistration, signUpForAlerts, type CampRegistration } from '@/lib/alerts'
-import { fmtWhen } from '@/lib/booking'
-import { Button, Input, Notice, Section } from '@/components/ui'
+import { fmtWhen, isSoon } from '@/lib/booking'
+import { Button, Input, Notice, Section, StatusMark } from '@/components/ui'
 
 /** "Email me when registration opens", on a camp's page. No account needed. */
 export default function RegistrationAlert({ campId, campName }: { campId: string; campName: string }) {
@@ -21,6 +21,7 @@ export default function RegistrationAlert({ campId, campName }: { campId: string
   const opens = reg?.verified && reg.opens_at ? new Date(reg.opens_at).getTime() : null
   const closes = reg?.closes_at ? new Date(reg.closes_at).getTime() : null
   const isOpen = opens !== null && opens <= now && (closes === null || closes > now)
+  const closed = opens !== null && opens <= now && closes !== null && closes <= now
 
   async function submit(e: React.FormEvent) {
     e.preventDefault()
@@ -38,13 +39,24 @@ export default function RegistrationAlert({ campId, campName }: { campId: string
 
   return (
     <Section title="Registration" divided>
-      <p className="max-w-measure text-body text-ink">
-        {isOpen
-          ? <>Registration is open now.{closes ? ` It closes ${fmtWhen(reg!.closes_at!)}.` : ''}</>
-          : opens && opens > now
-            ? <>Registration opens <strong>{fmtWhen(reg!.opens_at!)}</strong>. Checked against the camp&rsquo;s own site.</>
-            : <>We don&rsquo;t have {campName}&rsquo;s next registration date yet.</>}
-      </p>
+      {isOpen ? (
+        <div className="max-w-measure space-y-1">
+          <StatusMark tone={isSoon(reg!.closes_at, now) ? 'caution' : 'go'} size="md">
+            {isSoon(reg!.closes_at, now) ? 'Open, closing soon' : 'Open now'}
+          </StatusMark>
+          <p className="text-body text-ink">Registration is open now.{closes ? ` It closes ${fmtWhen(reg!.closes_at!)}.` : ''}</p>
+        </div>
+      ) : opens && opens > now ? (
+        <div className="max-w-measure space-y-1">
+          {isSoon(reg!.opens_at, now) && <StatusMark tone="caution" size="md">Opens soon</StatusMark>}
+          <p className="text-body text-ink">Registration opens <strong>{fmtWhen(reg!.opens_at!)}</strong>. Checked against the camp&rsquo;s own site.</p>
+        </div>
+      ) : (
+        <div className="max-w-measure space-y-1">
+          {closed && <StatusMark tone="stop" size="md">Registration closed</StatusMark>}
+          <p className="text-body text-ink">We don&rsquo;t have {campName}&rsquo;s next registration date yet.</p>
+        </div>
+      )}
 
       {!isOpen && (sent ? (
         <Notice tone="success" className="mt-4 max-w-measure">

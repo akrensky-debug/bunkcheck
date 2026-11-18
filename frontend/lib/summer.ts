@@ -1,4 +1,5 @@
 import { authHeaders } from '@/lib/auth'
+import type { StatusTone } from '@/components/ui'
 
 const API = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'
 
@@ -131,4 +132,29 @@ export function fmtDay(d: string) {
 
 export function money(n: number) {
   return `$${Math.round(n).toLocaleString('en-US')}`
+}
+
+/** Each week's place on the stoplight. Hours that don't cover the family, or need checking, hold a week at caution. */
+export const CELL_TONE: Record<CellState, StatusTone> = {
+  registered: 'go', covered: 'go', away: 'go',
+  chosen: 'caution', waitlisted: 'caution', ideas: 'caution',
+  open: 'stop',
+  not_needed: 'neutral',
+}
+
+export function cellTone(c: Cell): StatusTone {
+  const t = CELL_TONE[c.state] ?? 'neutral'
+  return t === 'go' && (c.hours === 'short' || c.hours === 'check') ? 'caution' : t
+}
+
+/** The words for each tone on the summer board: "6 set · 2 in progress · 2 open". */
+export const TONE_WORD: Record<StatusTone, string> = {
+  go: 'set', caution: 'in progress', stop: 'open', neutral: 'no care needed',
+}
+
+/** One kid's weeks counted by tone, care-needed weeks only. */
+export function toneCounts(kid: KidRow) {
+  const n = { go: 0, caution: 0, stop: 0, neutral: 0 } as Record<StatusTone, number>
+  for (const c of kid.cells) n[cellTone(c)]++
+  return n
 }
