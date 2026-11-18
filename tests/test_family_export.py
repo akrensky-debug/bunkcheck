@@ -51,7 +51,7 @@ def test_owner_downloads_everything(client, db, family):
 
     res = client.get(f"/api/v1/families/{fid}/export", headers=h(OWNER))
     assert res.status_code == 200
-    assert res.headers["content-disposition"].startswith('attachment; filename="campfinder-family-')
+    assert res.headers["content-disposition"].startswith('attachment; filename="bunkcheck-family-')
     assert res.headers["cache-control"] == "private, no-store"
     data = res.json()
 

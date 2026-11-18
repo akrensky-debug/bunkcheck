@@ -170,7 +170,7 @@ async def export_family(family_id: UUID, user_id: str | None = Depends(optional_
     return Response(
         content=json.dumps(data, indent=2, default=str),
         media_type="application/json",
-        headers={"Content-Disposition": f'attachment; filename="campfinder-family-{day}.json"',
+        headers={"Content-Disposition": f'attachment; filename="bunkcheck-family-{day}.json"',
                  "Cache-Control": "private, no-store"},
     )
 
