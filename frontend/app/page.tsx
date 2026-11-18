@@ -37,7 +37,7 @@ export default function AgentHome() {
   const [input, setInput] = useState('')
   const [busy, setBusy] = useState(false)
   const [panelOpen, setPanelOpen] = useState(false)
-  const bottomRef = useRef<HTMLDivElement>(null)
+  const lastAskRef = useRef<HTMLDivElement>(null)
   const router = useRouter()
 
   useEffect(() => {
@@ -55,10 +55,15 @@ export default function AgentHome() {
     captureAssistantArrival(params, !!q)
   }, [])
 
+  // When the parent sends a message, bring it to the top of the view, once. The answer then grows
+  // below it and the page stays put, so she reads from her question down. It used to follow the
+  // answer to the bottom, which left the camp cards scrolled out of sight above.
+  // The count changes only when a message is sent (or the chat is cleared), never while one streams.
   useEffect(() => {
+    if (!messages.length) return
     const reduce = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches
-    bottomRef.current?.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'end' })
-  }, [messages])
+    lastAskRef.current?.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' })
+  }, [messages.length])
 
   function updateLast(fn: (m: Message) => Message) {
     setMessages(prev => [...prev.slice(0, -1), fn(prev[prev.length - 1])])
@@ -182,8 +187,17 @@ export default function AgentHome() {
         ) : (
           <>
             <div className="mx-auto w-full max-w-narrow flex-1 space-y-10 py-8">
-              {messages.map((m, i) => <MessageView key={i} message={m} familyId={family?.id} />)}
-              <div ref={bottomRef} className="scroll-mb-28" />
+              {messages.map((m, i) => {
+                // The newest question stops just under the sticky header. The answer under it is
+                // at least a screen tall, so there is always room to scroll the question up there.
+                const isLastAsk = i === messages.length - 2 && m.role === 'user'
+                const isLastAnswer = i === messages.length - 1 && m.role === 'assistant'
+                return (
+                  <div key={i} ref={isLastAsk ? lastAskRef : undefined} className={cx(isLastAsk && 'scroll-mt-20', isLastAnswer && 'min-h-page')}>
+                    <MessageView message={m} familyId={family?.id} />
+                  </div>
+                )
+              })}
             </div>
             <div className="sticky bottom-0 bg-bg pb-4 pt-2">
               <div className="mx-auto w-full max-w-narrow">
