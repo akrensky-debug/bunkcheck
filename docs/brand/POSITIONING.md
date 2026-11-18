@@ -50,7 +50,8 @@ Like a parent who has done this before. Plain and direct. Specific numbers over 
 
 ## Lines we can test
 
-- Summer, sorted.
+- **Planning summer shouldn't take all winter.** The home page headline, chosen 16 November 2026.
+- Summer, sorted. Retired 16 November 2026: it tells the parent the work is done, when she is the one doing it.
 - The camp app that works for parents, not advertisers.
 - Every parent in Rhode Island, in your corner.
 - Ten weeks. Two kids. One plan.
