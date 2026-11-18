@@ -55,7 +55,12 @@ export function Composer({ value, onChange, onSubmit, placeholder, disabled = fa
         value={value}
         onChange={e => onChange(e.target.value)}
         onKeyDown={e => {
-          if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); if (ready) onSubmit() }
+          if (e.key !== 'Enter' || e.shiftKey) return
+          e.preventDefault()
+          // Enter that confirms an IME candidate (Japanese, Chinese, Korean) must not send.
+          // Safari clears isComposing before this keydown arrives, so check keyCode 229 too.
+          if (e.nativeEvent.isComposing || e.keyCode === 229) return
+          if (ready) onSubmit()
         }}
         rows={1}
         aria-label={label}

@@ -89,7 +89,7 @@ export default function SummerPage() {
     })
   }
   const back = () => {
-    const prev = [...history].reverse().find(f => f !== current)
+    const prev = history.findLast(f => f !== current)
     if (prev) setEditing(prev)
   }
 
