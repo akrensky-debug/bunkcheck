@@ -38,7 +38,7 @@ Paste these as they are. Limits are the portal's.
 **Description (2,000):**
 
 > Bunkcheck helps parents find the right summer camps for each child in the Northeast US (CT, MA,
-> ME, NH, NJ, NY, PA, RI and VT), starting with Providence and Boston.
+> ME, NH, RI and VT), starting with Providence and Boston.
 >
 > Ask Claude in your own words, for example "Day camps near Providence with extended care for
 > under $350 a week." Bunkcheck returns day camps, sleepaway camps and specialty programs ranked

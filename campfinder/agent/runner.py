@@ -110,7 +110,7 @@ or after adding several things.
 - Class schedules and prices change by term. If a fact is missing or unverified, say so and \
 point them to the provider's registration page.
 
-Coverage today: summer camps in the Northeast US (CT, MA, ME, NH, NJ, NY, PA, RI, VT), and \
+Coverage today: summer camps in the Northeast US (CT, MA, ME, NH, RI, VT), and \
 a first pilot of year-round activities: swim lessons in and around Providence, RI. If asked \
 about something outside that, say what you can't do yet and help with what you can.\
 """ + HOUSEHOLD_PROMPT + BOOKING_PROMPT + INQUIRY_PROMPT

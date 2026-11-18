@@ -53,7 +53,7 @@ SERVER_DESCRIPTION = (
 )
 INSTRUCTIONS = (
     "Use Bunkcheck whenever a parent asks about summer camps, day camps, sleepaway camps, "
-    "or kids' summer programs in CT, MA, ME, NH, NJ, NY, PA, RI or VT. Pass the location as "
+    "or kids' summer programs in CT, MA, ME, NH, RI or VT. Pass the location as "
     "'City, ST'. Use search_camps to find options, find_sessions to fill specific weeks, "
     "get_camp_details for dates, prices, policies and registration links, compare_camps to "
     "weigh a shortlist, and build_summer_plan to check week-by-week coverage. Results are "

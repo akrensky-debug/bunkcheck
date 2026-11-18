@@ -58,13 +58,15 @@ class ToolOutput:
 
 LOCATION_HELP = (
     "Location as 'City, ST' (e.g. 'Providence, RI'). Coverage is the Northeast US: "
-    "CT, MA, ME, NH, NJ, NY, PA, RI, VT. Unknown cities return no results, so try "
+    "CT, MA, ME, NH, RI, VT. Unknown cities return no results, so try "
     "the nearest larger city."
 )
 
-COVERED_STATES = {"CT", "MA", "ME", "NH", "NJ", "NY", "PA", "RI", "VT"}
+# The states we have camps in. Counted in the live database on 18 November 2026: 457 camps,
+# none in NJ, NY or PA, which this list used to include.
+COVERED_STATES = {"CT", "MA", "ME", "NH", "RI", "VT"}
 OUTSIDE_COVERAGE = (
-    "Bunkcheck covers the Northeast US today (CT, MA, ME, NH, NJ, NY, PA, RI, VT), "
+    "Bunkcheck covers the Northeast US today (CT, MA, ME, NH, RI, VT), "
     "so there is nothing for {location} yet."
 )
 
