@@ -95,7 +95,7 @@ calls `send_inquiry`, shows a preview card with a confirm button, and ChatGPT sa
 yet. Whether `send_inquiry` replaces one of the five positive cases is Andrew's call before the next
 submission.
 
-**Budget rule (decided 18 November 2026):** with `max_price_per_week` set, `search_camps` drops camps whose weekly price (or the low end of a weekly range) is over budget, and keeps camps with no weekly price after every priced match, with their `price_label` ("Price not posted", "$1,500 to $1,700 per session") on the card and a count in the `note`.
+**Budget rule (decided 18 November 2026):** with `max_price_per_week` set, `search_camps` drops camps whose weekly price (or the low end of a weekly range) is over budget, and keeps camps with no weekly price after every priced match, with their `price_label` ("Price not posted", "$1,500 to $1,700 per session") on the card and a count in the `note`. A camp listed at $0 is free and fits any budget. Bad price data (text, negatives, a swapped range) reads as "not posted" and never breaks a search.
 
 The budget case used Boston under $400 until 13 November 2026. Camps with no price on file
 passed every budget and outranked priced ones, so a reviewer saw eight priceless cards for

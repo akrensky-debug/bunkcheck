@@ -18,7 +18,7 @@ from campfinder.models.camp import CampSearchResult
 from campfinder.models.search import SearchRequest, SearchResponse
 from campfinder.services.camps import camp_url
 from campfinder.services.geo import geocode_location, haversine_miles
-from campfinder.services.price import price_label, weekly_price
+from campfinder.services.price import as_price, price_label, weekly_price
 from campfinder.services.ranking import score_camp
 from campfinder.services.season import is_last_season
 
@@ -182,9 +182,9 @@ def to_search_result(camp: dict[str, Any]) -> CampSearchResult:
         primary_categories=list(camp.get("primary_categories") or []),
         age_min=camp.get("age_min"),
         age_max=camp.get("age_max"),
-        price_per_week=float(camp["price_per_week"]) if camp.get("price_per_week") else None,
-        price_min=float(camp["price_min"]) if camp.get("price_min") else None,
-        price_max=float(camp["price_max"]) if camp.get("price_max") else None,
+        price_per_week=as_price(camp.get("price_per_week")),
+        price_min=as_price(camp.get("price_min")),
+        price_max=as_price(camp.get("price_max")),
         weekly_price=weekly_price(camp),
         price_label=price_label(camp),
         transportation=camp.get("transportation") or False,

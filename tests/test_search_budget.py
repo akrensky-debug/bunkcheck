@@ -77,3 +77,81 @@ async def test_last_season_without_a_price_is_not_counted_as_showing_one(db) -> 
 ])
 def test_weekly_price_and_label(camp: dict[str, Any], weekly: float | None, label: str) -> None:
     assert weekly_price(camp) == weekly and price_label(camp) == label
+
+
+# --- Hardening: prices come from scraped listings, so the rule must hold whatever the row says ---
+
+@pytest.mark.parametrize("camp,weekly,label", [
+    ({"price_per_week": "450.00"}, 450, "$450/week"),  # Supabase sends numeric as text
+    ({"price_per_week": "$1,200"}, 1200, "$1,200/week"),
+    ({"price_per_week": "call us"}, None, NOT_POSTED),
+    ({"price_per_week": -5}, None, NOT_POSTED),
+    ({"price_per_week": float("nan")}, None, NOT_POSTED),
+    ({"price_per_week": float("inf")}, None, NOT_POSTED),
+    ({"price_per_week": True}, None, NOT_POSTED),
+    ({"price_min": 450, "price_max": 300, "price_per": "week"}, 300, "$300 to $450/week"),  # swapped
+    ({"price_min": 300, "price_per": " Weekly "}, 300, "$300/week"),
+    ({"price_max": 450, "price_per": "week"}, 450, "up to $450/week"),
+    ({"price_max": 450, "price_per": "session"}, None, "up to $450 per session"),
+    ({"price_per_week": 0}, 0, "Free"),
+    ({"price_min": "0.00", "price_max": "0.00"}, 0, "Free"),  # free with no unit is still free
+    ({"price_min": 0, "price_max": 500, "price_per": "session"}, None, "$0 to $500 per session"),
+])
+def test_untrusted_price_rows(camp: dict[str, Any], weekly: float | None, label: str) -> None:
+    assert weekly_price(camp) == weekly and price_label(camp) == label
+
+
+async def test_free_camp_fits_any_budget_and_says_free(db) -> None:
+    free = "cccccccc-0000-0000-0000-000000000001"
+    db.table("camps").insert([
+        {**BASE, "id": free, "name": "Harbor Free", "price_per_week": "0.00", "price_per": "session"},
+        {**BASE, "id": "cccccccc-0000-0000-0000-000000000002", "name": "Unpriced", "verification_status": "camp_verified"},
+    ]).execute()
+    out = await tools.run_tool("search_camps", {"location": "Providence, RI", "max_price_per_week": 100})
+    cards = out.content["camps"]
+    assert [c["name"] for c in cards] == ["Harbor Free", "Unpriced"]
+    assert cards[0]["price_label"] == "Free" and cards[0]["price_per_week"] == 0
+
+
+async def test_bad_price_data_never_breaks_search(db) -> None:
+    rows = [{"price_per_week": "TBD"}, {"price_min": "n/a", "price_per": "week"}, {"price_per": 7},
+            {"price_min": float("nan"), "price_max": "", "price_per": None}]
+    db.table("camps").insert([{**BASE, "id": f"dddddddd-0000-0000-0000-00000000000{i}", "name": f"Bad {i}", **r}
+                              for i, r in enumerate(rows)]).execute()
+    out = await tools.run_tool("search_camps", {"location": "Providence, RI", "max_price_per_week": 400})
+    assert {c["price_label"] for c in out.content["camps"]} == {NOT_POSTED}
+    assert out.content["note"].startswith("4 of these have no weekly price posted")
+
+
+@pytest.mark.parametrize("seed", range(20))
+async def test_rule_holds_for_any_mix_of_camps(db, seed: int) -> None:
+    """Random prices, units and trust: whatever the sort, nothing over budget, priced before unpriced,
+    and nothing that fits is lost."""
+    import random
+
+    rnd = random.Random(seed)
+    prices = [None, 0, 99, 250, 399.99, 400, 400.01, 650, "380.00", "junk", -1]
+    camps = []
+    for i in range(30):
+        c = {**BASE, "id": f"eeeeeeee-0000-0000-0000-{i:012d}", "name": f"Camp {i}",
+             "city": rnd.choice(["Providence", "Cranston", "Warwick", "Pawtucket"]),
+             "verification_status": rnd.choice(["camp_verified", "team_verified", "unverified"]),
+             "description_short": rnd.choice([None, "x"])}
+        shape = rnd.randrange(3)
+        if shape == 0:
+            c["price_per_week"] = rnd.choice(prices)
+        elif shape == 1:
+            c |= {"price_min": rnd.choice(prices), "price_max": rnd.choice(prices),
+                  "price_per": rnd.choice(["week", "Week", "session", None, "summer"])}
+        camps.append(c)
+    db.table("camps").insert(camps).execute()
+    budget = rnd.choice([0, 100, 400, 1000])
+    fits = {c["name"] for c in camps if weekly_price(c) is None or weekly_price(c) <= budget}
+    for sort in ("best_match", "distance", "price"):
+        rows = await search_camps(db, location="Providence, RI", max_price_per_week=budget, sort=sort, limit=100)
+        names = [r["name"] for r in rows]
+        assert set(names) == fits, sort
+        weekly = [weekly_price(r) for r in rows]
+        assert all(w is None or w <= budget for w in weekly), sort
+        unpriced = [w is None for w in weekly]
+        assert unpriced == sorted(unpriced), sort

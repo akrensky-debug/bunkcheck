@@ -102,9 +102,10 @@ def main() -> None:
         # Budget rule (docs/chatgpt-app.md): a card shows a price, and camps with no weekly price
         # come after every priced one, labelled, and the note says how many.
         boston = (r.get("structuredContent") or {}).get("camps") or []
-        unpriced = [c.get("price_per_week") is None and not (c.get("price_label") or "").endswith("/week")
-                    for c in boston]
+        unpriced = [c.get("weekly_price") is None for c in boston]
         check(all(c.get("price_label") for c in boston), f"every Boston card carries a price label ({len(boston)} cards)")
+        over = [c["name"] for c in boston if (c.get("weekly_price") or 0) > 400]
+        check(not over, f"no Boston card is over $400 a week {over or ''}")
         check(unpriced == sorted(unpriced), f"camps with no weekly price come last ({sum(unpriced)} of {len(boston)})")
         if any(unpriced):
             note = (r.get("structuredContent") or {}).get("note") or ""

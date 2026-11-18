@@ -189,7 +189,7 @@ class RemoveFromCalendarInput(BaseModel):
 def _compact_camp(c: dict[str, Any]) -> dict[str, Any]:
     keys = (
         "id", "name", "city", "state", "camp_type", "primary_categories", "age_min", "age_max",
-        "price_per_week", "price_label", "distance_miles", "transportation", "extended_care", "meals_included",
+        "price_per_week", "weekly_price", "price_label", "distance_miles", "transportation", "extended_care", "meals_included",
         "financial_aid", "aca_accredited", "verification_status", "match_reasons", "season_year",
     )
     out = {k: c.get(k) for k in keys if c.get(k) not in (None, [], "")}
