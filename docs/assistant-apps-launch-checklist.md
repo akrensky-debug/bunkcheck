@@ -6,8 +6,10 @@ screenshots and portal steps are in `docs/directory-submissions.md`.
 Addresses (13 November 2026):
 - Site: `https://www.bunkcheck.ai` (the bare `bunkcheck.ai` redirects to www).
 - Claude connector: `https://www.bunkcheck.ai/mcp`, proxied by the site to the API's `/claude/mcp`.
-- API today: `https://api-production-4a03.up.railway.app`. Planned: `https://api.bunkcheck.ai`,
-  which ChatGPT needs (step 3). `assistant-apps/chatgpt/mcp.json` already points there.
+- ChatGPT connector: `https://www.bunkcheck.ai/chatgpt/mcp`, proxied by the site to the API's
+  `/chatgpt/mcp`; OpenAI's domain check at `https://www.bunkcheck.ai/.well-known/openai-apps-challenge`
+  is proxied the same way (18 November 2026). `assistant-apps/chatgpt/mcp.json` points there.
+- API: `https://api-production-4a03.up.railway.app`. No `api.bunkcheck.ai` is needed.
 
 ## 1. Before anything is submitted
 
@@ -15,11 +17,8 @@ Addresses (13 November 2026):
       in the Supabase project "campfinder", and the synthetic seed is **not**.
 - [x] **API and site deployed.** The API answers at `api-production-4a03.up.railway.app/health`
       and the site at `www.bunkcheck.ai`.
-- [ ] **Custom API domain.** Add `api.bunkcheck.ai` to the Railway service `api` and the CNAME it
-      gives you at the DNS host. Needed before the ChatGPT submission, not before Claude's.
 - [ ] **Railway env vars** (service `api`):
       - `FRONTEND_URL=https://www.bunkcheck.ai` (set; the card links already use it);
-      - `PUBLIC_API_URL=https://api.bunkcheck.ai` once that domain answers;
       - `DATABASE_URL` (set; `/health` reports the database connected), `ANTHROPIC_API_KEY`
         and `KIT_ENCRYPTION_KEY` (the site chat and info kit need them);
       - `OPENAI_APPS_CHALLENGE` (step 3);
@@ -53,8 +52,8 @@ Addresses (13 November 2026):
       platform.openai.com. Org owners can submit; others need *Apps Management Write*.
 - [ ] Open the Plugins dashboard. Copy the domain challenge token into Railway as
       `OPENAI_APPS_CHALLENGE`, redeploy, then confirm that
-      `https://api.bunkcheck.ai/.well-known/openai-apps-challenge` shows it.
-- [ ] Turn on developer mode in ChatGPT, add `https://api.bunkcheck.ai/chatgpt/mcp`, and run all
+      `https://www.bunkcheck.ai/.well-known/openai-apps-challenge` shows it.
+- [ ] Turn on developer mode in ChatGPT, add `https://www.bunkcheck.ai/chatgpt/mcp`, and run all
       8 test cases in `docs/chatgpt-app.md` on web **and** mobile. Check that cards and links work
       and that the Ohio prompt shows no continue link.
 - [ ] Record a 2-3 minute demo video of those cases. Upload it unlisted (YouTube or Loom) and put

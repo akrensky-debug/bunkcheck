@@ -131,13 +131,13 @@ replacing the custom-connector steps.
 
 ## ChatGPT: not yet
 
-The page says "coming soon". Three things have to happen first:
+The page says "coming soon". The first step below is done; two are left.
 
-1. **An API address on our own domain.** OpenAI verifies a token on the MCP server's host, and
-   we can't verify `railway.app`. Add `api.bunkcheck.ai` as a custom domain on the Railway
-   service `api` (Railway gives you a CNAME to add at the DNS host), then set
-   `PUBLIC_API_URL=https://api.bunkcheck.ai`. The package already points at
-   `https://api.bunkcheck.ai/chatgpt/mcp`.
+1. **Done: the endpoint is on our own domain.** OpenAI checks a token on the MCP server's host, and
+   `railway.app` isn't ours. The site now passes `https://www.bunkcheck.ai/chatgpt/mcp` and
+   `/.well-known/openai-apps-challenge` through to the API, the same way `/mcp` serves Claude, so
+   the ChatGPT app lives on `www.bunkcheck.ai` and no `api.` subdomain is needed. When OpenAI gives
+   you the challenge token, put it in Railway as `OPENAI_APPS_CHALLENGE` and redeploy.
 2. **Developer-mode testing** of the eight cases in `docs/chatgpt-app.md`, on web and phone.
 3. **A 2 to 3 minute demo video**, unlisted.
 
