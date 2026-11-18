@@ -16,6 +16,19 @@ organizes it, and makes it useful to every parent.
 teaches us something real. Over time the same trust and the same family profile can extend to
 after-school activities, lessons and sports. That comes later. For now we do only camps.
 
+## Positioning
+
+**The summer camp planner for busy parents.** *Decided by Andrew on 18 November 2026.*
+
+- **What it is:** a summer camp planner. Parents search for that, and it says what we do that a
+  camp directory doesn't: plan the whole summer, not just list camps.
+- **Who it's for:** busy parents covering the whole summer around work, often more than one kid.
+- **What makes it different** (the supporting copy, never the line): an AI planner you talk to
+  in plain words, facts checked with the camp and dated, week-by-week gaps across kids, and help
+  on registration day.
+- Use the line in the page title, link previews, the footer and directory listings. AI is how it
+  works, so it goes in the supporting copy, not the line.
+
 ## Where we start
 
 New England parents, beginning with Providence and nearby Rhode Island and Massachusetts. A
