@@ -90,6 +90,56 @@ html[data-handraiser] [data-public-nav] { display: inline; }
   }
 }
 
+/* --- Feel, after Apple's design guidance (.claude/skills/apple-design) ---------------------- */
+
+/* Press feedback. A control answers the instant it is touched, not when the finger lifts:
+   it shrinks to 97% on press and eases back on release. Phones have no hover, so without
+   this a tap showed nothing until the next page loaded. Buttons, round buttons, chips and
+   tiles use it (components/ui); rows and inline links tint or dim instead. */
+.press {
+  transition-property: color, background-color, border-color, opacity, transform;
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0.2, 0, 0, 1);
+  -webkit-tap-highlight-color: transparent; /* it has its own feedback; drop the gray box */
+}
+.press:active:not(:disabled) {
+  transform: scale(0.97);
+  transition-duration: 0ms;
+}
+
+/* Elsewhere, iOS's tap flash is a soft ink wash, not the default gray box. */
+html {
+  -webkit-tap-highlight-color: rgb(var(--ink) / 0.08);
+}
+
+/* The header is a translucent material. Its hairline appears only once content scrolls
+   under it, over the first 24px of scroll; at the top of the page there is nothing to
+   separate. Browsers without scroll-driven animations keep the hairline throughout. */
+.chrome {
+  border-bottom-color: rgb(var(--line) / var(--line-alpha));
+}
+@supports (animation-timeline: scroll()) {
+  .chrome {
+    animation: chrome-edge linear both;
+    animation-timeline: scroll(root);
+    animation-range: 0 24px;
+  }
+  @keyframes chrome-edge {
+    from { border-bottom-color: transparent; }
+    to { border-bottom-color: rgb(var(--line) / var(--line-alpha)); }
+  }
+}
+
+/* People who ask for less transparency or more contrast get a solid header, and hairlines
+   strong enough to see. */
+@media (prefers-reduced-transparency: reduce) {
+  .chrome { background-color: rgb(var(--bg)); backdrop-filter: none; }
+}
+@media (prefers-contrast: more) {
+  :root { --line-alpha: 0.5; }
+  .chrome { background-color: rgb(var(--bg)); backdrop-filter: none; }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -99,4 +149,6 @@ html[data-handraiser] [data-public-nav] { display: inline; }
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+  /* No shrink; the color change on press still shows it. */
+  .press:active:not(:disabled) { transform: none; }
 }

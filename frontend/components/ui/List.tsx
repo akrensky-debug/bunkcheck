@@ -29,7 +29,7 @@ export function ListRow({ href, onClick, external = false, density = 'comfortabl
           href={href}
           onClick={onClick}
           {...(external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
-          className={cx('block rounded-md transition-colors duration-150 hover:bg-tint', pad)}
+          className={cx('block rounded-md transition-colors duration-150 hover:bg-tint active:bg-tint', pad)}
         >
           {children}
         </a>

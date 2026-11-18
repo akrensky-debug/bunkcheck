@@ -17,8 +17,14 @@ all rendered at `/ui` (not linked from the site, `noindex`).
   `text-checked`, `text-warn` and their kin outside this folder. Form errors keep `text-error`.
   `scripts/check-contrast.mjs` (also in check:ui) checks every status text pair at 4.5:1 and
   every shape at 3:1 on bg, surface, tint and the tone's soft fill.
-- **Motion:** color and background transitions (150 ms) and the page fade. Nothing lifts,
-  slides or staggers. `prefers-reduced-motion` turns it all off (globals.css).
+- **Motion:** color and background transitions (150 ms), the page fade, and press feedback.
+  Nothing lifts, slides or staggers. `prefers-reduced-motion` turns it all off (globals.css).
+- **Press feedback:** a control answers on press, not on release. Buttons, round buttons, chips
+  and tiles carry `press` and shrink to 97% while held; rows tint and text links dim. Under
+  reduced motion only the color change stays. From the `apple-design` skill.
+- **The header** is a translucent material whose hairline fades in once content scrolls under
+  it (`.chrome`). Reduced transparency and increased contrast make it solid; increased contrast
+  also strengthens every hairline.
 - `npm run check:ui` enforces the mechanical parts in CI. A line that must break a rule (for
   example a literal color in Next metadata) ends with a `ui-check-ignore` comment saying why.
 
