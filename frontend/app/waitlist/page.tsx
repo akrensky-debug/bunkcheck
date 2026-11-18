@@ -7,7 +7,7 @@ import { Text, TextLink } from '@/components/ui'
 // (lib/site-mode.ts) the middleware serves this page at "/".
 export const metadata: Metadata = {
   title: 'Bunkcheck: AI summer camp planner for New England families',
-  description: 'Find summer camps in New England, line up your weeks and get an email before registration opens. An AI planner built by parents. Raise your hand and we’ll write when it opens near you.',
+  description: 'Find summer camps in New England, line up your weeks and get an email before registration opens. An AI planner built by parents. We’re opening one state at a time, and we’d love to save you a spot.',
   alternates: { canonical: '/' },
 }
 
@@ -16,22 +16,26 @@ export default function HandRaiserPage() {
     <div className="mx-auto max-w-wide px-4 sm:px-6">
       <div className="mx-auto w-full max-w-narrow pb-16 pt-8 sm:pt-20 lg:pt-24">
         <h1 className="font-display text-display text-ink text-balance lg:-mr-48">
-          Planning summer shouldn&rsquo;t take{' '}
+          Planning summer takes{' '}
           <span className="marker whitespace-nowrap">all winter.</span>
         </h1>
         <p className="mt-5 max-w-measure text-lead text-muted">
-          Built by parents. Bunkcheck is an AI planner that finds the summer camps, lines up your weeks and
-          watches registration day.
+          We&rsquo;ve read more than 450 camp websites so you don&rsquo;t have to. Bunkcheck is built by parents,
+          with AI to do the legwork.
+        </p>
+        <p className="mt-4 max-w-measure text-lead text-muted">
+          Registration opens at 10 a.m. on a Thursday, when you&rsquo;re in a meeting. We&rsquo;ll be watching
+          for you.
         </p>
         <p className="mt-8 font-semibold text-ink">
-          Raise your hand and we&rsquo;ll write when Bunkcheck opens near you. We&rsquo;re not open to everyone yet.
+          We&rsquo;re opening one state at a time, so there&rsquo;s a line. We&rsquo;d love to save you a spot.
         </p>
         <div className="mt-4">
           <HandRaiserForm />
         </div>
 
         <div className="mt-16 space-y-16 sm:mt-24">
-          <ExampleSummer />
+          <ExampleSummer title="What you&rsquo;re in line for" />
           <Promises />
           <div className="border-t border-line pt-8">
             <Text variant="small" tone="muted">

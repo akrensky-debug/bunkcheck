@@ -1,12 +1,12 @@
-// The hand-raiser list: "tell me when Bunkcheck opens near me". No account, and no email is sent.
+// The hand-raiser list: "tell me when Bunkcheck opens in my state". No account, and no email is sent.
 
 const API = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'
 
-export async function raiseHand(email: string, town: string, kidsAges: number[]): Promise<void> {
+export async function raiseHand(email: string, state: string, town: string, kidsAges: number[]): Promise<void> {
   const res = await fetch(`${API}/api/v1/hand-raisers`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ email, town: town.trim() || null, kids_ages: kidsAges }),
+    body: JSON.stringify({ email, state: state || null, town: town.trim() || null, kids_ages: kidsAges }),
   })
   if (res.ok) return
   const body = await res.json().catch(() => ({}))

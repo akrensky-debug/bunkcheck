@@ -88,7 +88,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 height={28}
                 className="mb-3 h-6 w-auto"
               />
-              <p className="text-muted">Summer shouldn&rsquo;t take all winter.</p>
+              <p className="text-muted">Summer takes all winter.</p>
             </div>
             <div className="grid grid-cols-2 gap-x-12 gap-y-8 sm:grid-cols-3">
               <FooterColumn appOnly title="Parents" links={[['/', 'Plan your summer'], ['/summer', 'Your summer board'], ['/search', 'Browse camps'], ['/connect', 'Use Bunkcheck in Claude']]} />

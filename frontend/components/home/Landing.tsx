@@ -212,10 +212,10 @@ function rowSummary(blocks: Block[]) {
  * on the thing it names, no box and no legend, and one saturated color, spent on the one week
  * that needs her attention. Each row carries its own total.
  */
-export function ExampleSummer() {
+export function ExampleSummer({ title = 'A whole summer on one page' }: { title?: string }) {
   return (
     <section>
-      <Heading level="h2">A whole summer on one page</Heading>
+      <Heading level="h2">{title}</Heading>
       <Text className="mt-2">Here&rsquo;s an example: two kids, ten weeks, one gap. Prices are per week.</Text>
 
       <div className="mt-6">

@@ -150,7 +150,7 @@ export default function AgentHome() {
         {empty ? (
           <div className="mx-auto flex w-full max-w-narrow flex-1 flex-col pb-16 pt-8 sm:pt-20 lg:pt-24">
             <h1 className="font-display text-display text-ink text-balance lg:-mr-48">
-              Planning summer shouldn&rsquo;t take{' '}
+              Planning summer takes{' '}
               <span className="marker whitespace-nowrap">all winter.</span>
             </h1>
             <p className="mt-5 max-w-measure text-lead text-muted">

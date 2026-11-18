@@ -51,7 +51,7 @@ Like a parent who has done this before. Plain and direct. Specific numbers over 
 
 ## Lines we can test
 
-- **Planning summer shouldn't take all winter.** The home page headline, chosen 16 November 2026.
+- **Planning summer takes all winter.** The headline, chosen 18 November 2026. It states her reality and lets her finish the thought. ("Shouldn't take" ran from 16 to 18 November.) Tone: honest and specific, never pushy; no commands at the parent.
 - Summer, sorted. Retired 16 November 2026: it tells the parent the work is done, when she is the one doing it.
 - The camp app that works for parents, not advertisers.
 - Every parent in Rhode Island, in your corner.
