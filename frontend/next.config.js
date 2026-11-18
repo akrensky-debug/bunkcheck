@@ -12,9 +12,13 @@ const nextConfig = {
   },
   // www.bunkcheck.ai/mcp is the short connector address on /connect. It proxies to the API's
   // Claude endpoint, which leaves out ui.domain so Claude renders the camp cards.
+  // The ChatGPT endpoint and OpenAI's domain check are served the same way, so the ChatGPT app
+  // lives on www.bunkcheck.ai (a domain we already prove we own) and needs no api. subdomain.
   async rewrites() {
     return [
       { source: '/mcp', destination: `${MCP_UPSTREAM}/claude/mcp` },
+      { source: '/chatgpt/mcp', destination: `${MCP_UPSTREAM}/chatgpt/mcp` },
+      { source: '/.well-known/openai-apps-challenge', destination: `${MCP_UPSTREAM}/.well-known/openai-apps-challenge` },
     ]
   },
 }
