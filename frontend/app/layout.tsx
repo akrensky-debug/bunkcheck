@@ -15,14 +15,14 @@ const figtree = localFont({
 })
 
 export const metadata: Metadata = {
-  title: 'Bunkcheck: AI summer camp planner for New England families',
+  title: 'Bunkcheck: the summer camp planner for busy parents',
   description: 'Find summer camps in New England, line up your weeks and get an email before registration opens. An AI planner built by parents.',
   applicationName: 'Bunkcheck',
   // favicon.ico, icon.svg and apple-icon.png in app/ are wired automatically by Next;
   // /icon.png is the 512 px app icon the assistant apps also point at.
   icons: { icon: '/icon.png', apple: '/icon.png' },
   openGraph: {
-    title: 'Bunkcheck: AI summer camp planner for New England families',
+    title: 'Bunkcheck: the summer camp planner for busy parents',
     description: 'Find summer camps in New England, line up your weeks and get an email before registration opens. An AI planner built by parents.',
     siteName: 'Bunkcheck',
     type: 'website',
@@ -88,7 +88,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 height={28}
                 className="mb-3 h-6 w-auto"
               />
-              <p className="text-muted">Summer takes all winter.</p>
+              <p className="text-muted">The summer camp planner for busy parents.</p>
             </div>
             <div className="grid grid-cols-2 gap-x-12 gap-y-8 sm:grid-cols-3">
               <FooterColumn appOnly title="Parents" links={[['/', 'Plan your summer'], ['/summer', 'Your summer board'], ['/search', 'Browse camps'], ['/connect', 'Use Bunkcheck in Claude']]} />
