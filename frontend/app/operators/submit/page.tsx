@@ -78,7 +78,7 @@ export default function SubmitCampPage() {
   if (step === 'done') {
     return (
       <Container size="narrow" className="py-24">
-        <p className="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-pill bg-checked-soft text-checked">
+        <p className="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-pill bg-checked-soft text-checked">{/* ui-check-ignore: a success illustration, not a status */}
           <Icon name="check" size={24} label="Submitted" />
         </p>
         <Heading level="h1" className="mb-3">Camp submitted</Heading>

@@ -6,7 +6,8 @@ import type { CampSearchResult } from '@/lib/api'
 import {
   ActionTile, Button, Checkbox, ChoiceChip, Composer, Container, Divider, EmptyState, Field, Heading, ICON_NAMES, Icon,
   IconButton, Input, List, ListRow, Meta, Notice, Price, SearchBar, SearchField, Section, Select, Skeleton,
-  Stack, Surface, Text, TextLink, Textarea, TrustMark, TRUST,
+  Stack, StatusCounts, StatusDot, StatusLegend, StatusMark, StatusStrip, STATUS_TONES, SHAPE_NAME, Surface, Text,
+  TextLink, Textarea, TrustMark, TRUST, cx, statusEdge,
 } from '@/components/ui'
 
 const COLORS: Array<[string, string, string]> = [
@@ -20,9 +21,15 @@ const COLORS: Array<[string, string, string]> = [
   ['accent-hover', 'bg-accent-hover', 'Primary hover'],
   ['highlight', 'bg-highlight', 'Flashlight yellow: fills only, sparingly'],
   ['highlight-soft', 'bg-highlight-soft', 'Warn notices'],
-  ['checked', 'bg-checked', 'Verified, done, open'],
+  ['go', 'bg-go', 'Status go: done, confirmed, has a place'],
+  ['go-soft', 'bg-go-soft', 'Go fill: strip segments, success notices'],
+  ['caution', 'bg-caution', 'Status caution: in progress or at risk'],
+  ['caution-soft', 'bg-caution-soft', 'Caution fill: strip segments'],
+  ['stop', 'bg-stop', 'Status stop: a gap or a blocker'],
+  ['stop-soft', 'bg-stop-soft', 'Stop fill: strip segments'],
+  ['checked', 'bg-checked', 'Trust: verified. Alias of go'],
   ['checked-soft', 'bg-checked-soft', 'Success notices'],
-  ['warn', 'bg-warn', 'Waitlist, missing, check this'],
+  ['warn', 'bg-warn', 'Warn notices; status uses caution'],
   ['error', 'bg-error', 'Errors, remove, delete'],
   ['error-soft', 'bg-error-soft', 'Error notices'],
 ]
@@ -235,6 +242,40 @@ export default function Reference() {
           <Surface className="max-w-narrow">
             <p className="text-small">A Surface: white, radius 16, no border, no shadow.</p>
           </Surface>
+        </Stack>
+      </Demo>
+
+      <Demo title="Status" note="A stoplight: go is done or confirmed, caution is in progress or at risk, stop is a gap or a blocker, neutral is not needed or unknown. Every tone has its own shape and a word, so it reads without color. TrustMark keeps its own look.">
+        <Stack gap={6}>
+          <div className="grid gap-x-8 gap-y-3 sm:grid-cols-2">
+            {STATUS_TONES.map(t => (
+              <div key={t} className="flex flex-wrap items-center gap-x-4 gap-y-2">
+                <StatusDot tone={t} label={t} />
+                <StatusDot tone={t} size="md" />
+                <StatusDot tone={t} size="lg" />
+                <StatusMark tone={t}>{t} sm</StatusMark>
+                <StatusMark tone={t} size="md">{t} md</StatusMark>
+                <Text as="span" variant="caption" tone="muted">{SHAPE_NAME[t]}</Text>
+              </div>
+            ))}
+          </div>
+          <StatusMark tone="caution" size="md" weight="regular">
+            weight regular, for a sentence: camp ends at 3pm, care is needed until 5:30pm.
+          </StatusMark>
+          <StatusCounts items={[
+            { tone: 'go', count: 6, label: 'weeks set' },
+            { tone: 'caution', count: 2, label: 'in progress' },
+            { tone: 'stop', count: 2, label: 'open' },
+          ]} />
+          <StatusStrip label="Sample summer" segments={['go', 'go', 'caution', 'stop', 'go', 'caution', 'neutral', 'stop', 'go', 'go'].map((t, i) => (
+            { key: String(i), tone: t as typeof STATUS_TONES[number], label: `Week ${i + 1}: ${t}` }
+          ))} className="max-w-narrow" />
+          <StatusLegend items={STATUS_TONES.map(t => ({ tone: t, label: t }))} />
+          <div className="max-w-narrow space-y-3">
+            {STATUS_TONES.map(t => (
+              <div key={t} className={cx('pl-3', statusEdge(t))}><Text variant="small">statusEdge(&apos;{t}&apos;): a quiet left edge on a row</Text></div>
+            ))}
+          </div>
         </Stack>
       </Demo>
 

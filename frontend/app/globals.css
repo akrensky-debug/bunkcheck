@@ -13,31 +13,36 @@
   :root {
     --bg: 247 245 240;            /* #F7F5F0 paper */
     --surface: 255 255 255;       /* #FFFFFF */
-    /* Palette by the golden angle (360 / 1.618 = 222.5; 360 - 222.5 = 137.5 degrees).
-       Flashlight yellow is the given color. Ink sits 137.5 degrees round from it in OKLCH,
-       at the old navy's lightness and chroma: lake navy, oklch(0.253 0.052 232.9).
-       Muted is the support color: ink with 55% less chroma, lifted to L 0.48 for AA.
-       Rerun: voice-dna/skills/unslop-design/scripts/golden-palette.cjs. */
-    --ink: 0 38 55;               /* #002637 lake navy */
-    --muted: 81 97 106;           /* #51616A */
+    --ink: 20 33 61;              /* #14213D night navy */
+    --muted: 86 94 112;           /* #565E70 */
     /* Hairlines are a warm brown at 16% opacity, so they blend into whatever they sit on
        (paper, white, tint, the soft notices) instead of vanishing on tinted fills. On paper
        they render exactly as the old solid #E2DED4; on white, slightly lighter. */
     --line: 116 101 65;
     --line-alpha: 0.16;
     --tint: 239 236 228;          /* #EFECE4 hover wash */
-    --accent: 0 38 55;            /* #002637 */
-    --accent-hover: 0 26 39;      /* #001A27 */
+    --accent: 20 33 61;           /* #14213D */
+    --accent-hover: 15 26 48;     /* #0F1A30 */
     --accent-ink: 255 255 255;
     --highlight: 245 217 107;     /* #F5D96B flashlight */
     --highlight-soft: 251 240 196;/* #FBF0C4 */
-    --checked: 46 107 63;         /* #2E6B3F */
-    --checked-soft: 227 239 229;  /* #E3EFE5 */
+    /* Status, a stoplight. Every status also shows a shape and a word (StatusMark, StatusDot),
+       so color is never the only signal. Text tones reach 4.5:1 on bg, surface, tint and their
+       own soft fill; scripts/check-contrast.mjs checks them in check:ui. */
+    --go: 46 107 63;              /* #2E6B3F done, confirmed, has a place */
+    --go-soft: 227 239 229;       /* #E3EFE5 */
+    --caution: 138 83 0;          /* #8A5300 in progress or at risk. Not the flashlight yellow,
+                                     which means checked in the logo */
+    --caution-soft: 253 238 214;  /* #FDEED6 */
+    --stop: 180 35 24;            /* #B42318 a gap or a blocker */
+    --stop-soft: 254 243 242;     /* #FEF3F2 */
+    --checked: var(--go);         /* trust: verified, confirmed by the camp */
+    --checked-soft: var(--go-soft);
     --warn: 122 90 0;             /* #7A5A00, AA on highlight-soft */
     --error: 180 35 24;           /* #B42318 */
     --error-soft: 254 243 242;    /* #FEF3F2 */
-    --focus: 0 38 55;
-    --series-1: 0 38 55;          /* kid colors on the family week */
+    --focus: 20 33 61;
+    --series-1: 20 33 61;         /* kid colors on the family week */
     --series-2: 46 107 63;
     --series-3: 159 58 85;
     --series-4: 122 90 0;

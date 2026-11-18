@@ -12,6 +12,11 @@ all rendered at `/ui` (not linked from the site, `noindex`).
 - **Sentence case everywhere.** No uppercase, tracked eyebrow labels.
 - **Whitespace and hairlines before boxes.** Separate sections with `Section divided` or a
   `border-line` rule. Use `Surface` only when a container is truly needed.
+- **Status is a stoplight with a shape and a word.** Use `StatusMark`, `StatusDot`,
+  `statusEdge` or `Notice`, never a bare status color: check:ui flags `text-go`, `bg-caution-soft`,
+  `text-checked`, `text-warn` and their kin outside this folder. Form errors keep `text-error`.
+  `scripts/check-contrast.mjs` (also in check:ui) checks every status text pair at 4.5:1 and
+  every shape at 3:1 on bg, surface, tint and the tone's soft fill.
 - **Motion:** color and background transitions (150 ms) and the page fade. Nothing lifts,
   slides or staggers. `prefers-reduced-motion` turns it all off (globals.css).
 - `npm run check:ui` enforces the mechanical parts in CI. A line that must break a rule (for
@@ -27,14 +32,17 @@ comes, show depth with lighter surfaces, not shadows, which barely read on a dar
 | --- | --- |
 | `bg` | page background (paper) |
 | `surface` | inputs, menus, the rare container (white) |
-| `ink` | text and icons (lake navy, 137.5 degrees round the wheel from the flashlight yellow) |
+| `ink` | text and icons (night navy) |
 | `muted` | secondary text, AA on `bg` and `surface` |
 | `line` | hairlines and borders. Translucent (`--line-alpha`), so it shows on any fill |
 | `tint` | hover wash on rows and ghost buttons, info notices |
 | `accent`, `accent-hover`, `accent-ink` | primary buttons and the user's chat bubble; text on them |
 | `highlight`, `highlight-soft` | flashlight yellow: fills only, sparingly, never text |
-| `checked`, `checked-soft` | verified, done, open |
-| `warn` | waitlist, missing, "check this" text |
+| `go`, `go-soft` | status go: done, confirmed, has a place (#2E6B3F on #E3EFE5) |
+| `caution`, `caution-soft` | status caution: in progress or at risk (#8A5300 on #FDEED6). Not the flashlight yellow, which means checked |
+| `stop`, `stop-soft` | status stop: a gap or a blocker (#B42318 on #FEF3F2) |
+| `checked`, `checked-soft` | trust: verified. An alias of `go` |
+| `warn` | warn notices and the odd test label; status uses `caution` |
 | `error`, `error-soft` | errors, remove, delete |
 | `focus` | focus outline |
 | `series-1…5` | one color per kid on the family week (identity only) |
@@ -55,9 +63,9 @@ top space).
 | --- | --- |
 | `Button` | Every button. `primary` (one per view), `secondary`, `ghost`, `link` (inline action), `quiet` (cancel, housekeeping), `danger` (remove, delete). Sizes `sm`/`md`/`lg`. `href` renders a link; `external` opens a new tab. `icon`/`leadingIcon` add an Icon. |
 | `IconButton` | A round button with one icon. `label` is required. |
-| `Icon` | Inline SVG line icons: arrow-right, arrow-left, arrow-up, check, search, x, chevron-*, calendar, user, plus, external, bell, lock, users, board, chat. Stroke is 1.5px to match body text; `Button` raises it to match its semibold label. |
+| `Icon` | Inline SVG line icons: arrow-right, arrow-left, arrow-up, check, search, x, chevron-*, calendar, user, plus, external, bell, lock, users, board, chat, clock, and the four status shapes (status-go, status-caution, status-stop, status-neutral). Stroke is 1.5px to match body text; `Button` raises it to match its semibold label. |
 | `Heading` | `display`, `h1`, `h2`, `h3`; `as` overrides the element. |
-| `Text` | `lead`, `body`, `small`, `caption`; tones `ink`, `muted`, `checked`, `warn`, `error`. Capped at 65ch unless `wide`. |
+| `Text` | `lead`, `body`, `small`, `caption`; tones `ink`, `muted`, `error` (`checked` and `warn` remain for trust and notices; a status uses `StatusMark`). Capped at 65ch unless `wide`. |
 | `Container` | Page width (`narrow`, `default`, `wide`) and gutters. |
 | `Stack` | Flex column or row with a gap from the rhythm. |
 | `Section` | Heading, optional description and action, content. `divided` adds the top hairline. |
@@ -72,6 +80,11 @@ top space).
 | `Meta` | A muted line of facts joined with " · ", skipping empty parts. |
 | `Price` | Bold amount plus muted unit ("$385/wk"). |
 | `TrustMark` | A listing's verification status (`TRUST` holds the labels). `components/TrustBadge` wraps it and adds "ACA accredited". |
+| `StatusMark` | A status as shape plus word: `tone` go, caution, stop or neutral; `size` sm (caption) or md (small); `weight="regular"` for a sentence. |
+| `StatusDot` | The shape alone, for dense places: go a filled circle with a check, caution a half-filled circle, stop an open ring, neutral a dash. Sizes sm 12, md 14, lg 20. Pass `label` when it stands without a word. |
+| `StatusCounts`, `StatusLegend` | "6 weeks set · 2 in progress · 2 open" from counts by tone; a key of shapes and what they mean on this page. |
+| `StatusStrip` | One segment per item (a week), tinted and shaped by tone. Each segment has its own accessible name and can link to its row. |
+| `statusEdge(tone)` | Classes for a quiet 2px left edge in the tone's color on a row or cell. |
 | `TextLink` | Inline link; `arrow`, `external`, tone `muted`. |
 | `Notice` | A message that must stand out: `info`, `warn`, `success`, `error`. |
 | `EmptyState`, `Skeleton` | Nothing to show; loading. |

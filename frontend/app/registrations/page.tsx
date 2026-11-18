@@ -4,11 +4,11 @@ import { useEffect, useState } from 'react'
 import { useSession } from '@/lib/auth'
 import { loadFamily, type Family } from '@/lib/agent'
 import {
-  PAY_LABEL, STATUS_LABEL, STATUS_TONE, countdown, deleteRegistration, fmtDay, fmtWhen, getReminderPrefs,
+  PAY_LABEL, PAY_TONE, STATUS_LABEL, STATUS_TONE, countdown, isSoon, deleteRegistration, fmtDay, fmtWhen, getReminderPrefs,
   listRegistrations, previewReminders, saveReminderPrefs, updateRegistration,
   type Registration, type RegistrationUpdate, type ReminderPreview, type ReminderPrefs,
 } from '@/lib/booking'
-import { Button, Checkbox, ChoiceChip, Container, EmptyState, Field, Heading, Input, Meta, Section, Select, Text, TextLink, cx } from '@/components/ui'
+import { Button, Checkbox, ChoiceChip, Container, EmptyState, Field, Heading, Input, Meta, Section, Select, StatusMark, Text, TextLink, cx } from '@/components/ui'
 
 
 export default function RegistrationsPage() {
@@ -96,19 +96,21 @@ function RegistrationCard({ familyId, reg, onChange, onRemove }: {
             reg.start_date && reg.end_date ? `${fmtDay(reg.start_date)} – ${fmtDay(reg.end_date)}` : null]} />
           {!reg.child_name && !reg.session_name && !reg.start_date && <p className="text-small text-muted">Any session</p>}
         </div>
-        <div className="flex flex-wrap items-start gap-x-3 text-small font-semibold">
-          <span className={STATUS_TONE[reg.status]}>{STATUS_LABEL[reg.status]}</span>
+        <div className="flex flex-wrap items-start gap-x-4 gap-y-1">
+          <StatusMark tone={STATUS_TONE[reg.status]} size="md">{STATUS_LABEL[reg.status]}</StatusMark>
           {reg.status !== 'watching' && (
-            <span className={reg.payment_status === 'paid' ? 'text-checked' : 'text-muted'}>
+            <StatusMark tone={PAY_TONE[reg.payment_status]} size="md">
               {PAY_LABEL[reg.payment_status]}{reg.amount_paid ? ` · $${reg.amount_paid.toLocaleString()}` : ''}
-            </span>
+            </StatusMark>
           )}
         </div>
       </div>
 
       {opens && (
         <div className="flex flex-wrap items-baseline gap-x-3 text-small">
-          <span className="font-semibold text-ink">{countdown(reg.opens_at!)}</span>
+          {isSoon(reg.opens_at)
+            ? <StatusMark tone="caution" size="md">{countdown(reg.opens_at!)}</StatusMark>
+            : <span className="font-semibold text-ink">{countdown(reg.opens_at!)}</span>}
           <span className="text-muted">
             {fmtWhen(reg.opens_at!)}{reg.opens_at_source === 'family' ? ' (your date)' : ''}
           </span>

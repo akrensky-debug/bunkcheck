@@ -6,10 +6,12 @@ import { useSession } from '@/lib/auth'
 import { loadFamily, type Family } from '@/lib/agent'
 import { getKit, type Contact, type InfoKit } from '@/lib/kit'
 import {
-  bookingStatus, confirmBooking, countdown, fmtWhen, getChecklist, getQuote, openingCalendarLink, previewPackage,
+  STATUS_TONE, bookingStatus, confirmBooking, countdown, fmtWhen, isSoon, getChecklist, getQuote, openingCalendarLink, previewPackage,
   sharePackage, watchRegistration, type BookingQuote, type PackagePreview, type RegisterChecklist,
 } from '@/lib/booking'
-import { Button, ChoiceChip, Container, Heading, Icon, Input, Meta, Notice, Section, Text, TextLink } from '@/components/ui'
+import {
+  Button, ChoiceChip, Container, Heading, Icon, Input, Meta, Notice, Section, StatusDot, StatusMark, Text, TextLink,
+} from '@/components/ui'
 
 export default function RegisterPage() {
   return (
@@ -50,6 +52,11 @@ function Register() {
 
   const reg = list.registration
   const opensLater = list.opens_at && new Date(list.opens_at).getTime() > now
+  const closed = !!list.closes_at && new Date(list.closes_at).getTime() <= now
+  // Open now is go; opening or closing within a week is caution; closed is stop.
+  const openTone = closed ? 'stop' as const
+    : opensLater ? (isSoon(list.opens_at, now) ? 'caution' as const : 'neutral' as const)
+    : isSoon(list.closes_at, now) ? 'caution' as const : 'go' as const
   const kidName = reg?.child_name || child || ''
 
   async function watch() {
@@ -70,15 +77,18 @@ function Register() {
       <section className="space-y-5">
         {reg && (reg.status === 'registered' || reg.status === 'waitlisted') ? (
           <div className="space-y-1">
-            <p className={`inline-flex items-center gap-2 font-display text-h2 ${reg.status === 'registered' ? 'text-checked' : 'text-warn'}`}>
-              {reg.status === 'registered' && <Icon name="check" size={20} />}
+            <p className="inline-flex items-center gap-2 font-display text-h2 text-ink">
+              <StatusDot tone={STATUS_TONE[reg.status]} size="lg" />
               {reg.status === 'registered' ? 'Registered' : 'On the waitlist'}
             </p>
             <Text variant="small" tone="muted">{reg.next_step}{reg.confirmation_number ? ` Confirmation ${reg.confirmation_number}.` : ''}</Text>
           </div>
         ) : list.opens_at ? (
           <div className="space-y-1">
-            <p className="font-display text-h2 text-ink">{countdown(list.opens_at, now)}</p>
+            <p className="inline-flex items-center gap-2 font-display text-h2 text-ink">
+              {openTone !== 'neutral' && <StatusDot tone={openTone} size="lg" />}
+              {closed ? 'Registration closed' : countdown(list.opens_at, now)}
+            </p>
             <Text variant="small" tone="muted">
               {opensLater ? 'Registration opens' : 'Registration opened'} {fmtWhen(list.opens_at)}
               {list.opens_at_source === 'family' ? ' (the date you entered)' : ' (from the camp)'}
@@ -112,9 +122,7 @@ function Register() {
         <ol className="space-y-3">
           {list.steps.map(s => (
             <li key={s.key} className="flex gap-3 text-small">
-              <span className={`mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-pill border ${s.done ? 'border-checked bg-checked text-accent-ink' : 'border-muted'}`}>
-                {s.done && <Icon name="check" size={12} label="Done" />}
-              </span>
+              <StatusDot tone={s.done ? 'go' : 'neutral'} size="lg" label={s.done ? 'Done' : 'To do'} />
               <span className="text-ink">
                 {s.text}{' '}
                 {s.href && <TextLink href={s.href} target={s.href.startsWith('http') ? '_blank' : undefined} rel="noopener noreferrer">Open</TextLink>}
@@ -202,9 +210,9 @@ function FormAnswers({ familyId, list, signedIn, kidName }: {
                 ) : f.kit_field === null ? (
                   <span className="text-muted">On the camp's site</span>
                 ) : f.ready === true ? (
-                  <span className="text-checked">In your kit</span>
+                  <StatusMark tone="go" size="md" weight="regular">In your kit</StatusMark>
                 ) : f.ready === false ? (
-                  <a href="/kit" className="font-semibold text-warn underline underline-offset-4">Missing{f.missing_for.length ? ` for ${f.missing_for.join(', ')}` : ''}: add it</a>
+                  <a href="/kit" className="underline underline-offset-4"><StatusMark tone="caution" size="md">Missing{f.missing_for.length ? ` for ${f.missing_for.join(', ')}` : ''}: add it</StatusMark></a>
                 ) : null}
               </span>
             </li>
@@ -336,7 +344,7 @@ function SandboxBooking({ familyId, registrationId, onBooked }: { familyId: stri
 
   return (
     <section className="space-y-4 rounded-lg border border-dashed border-highlight p-5">
-      <p className="text-small font-semibold text-warn">Sandbox prototype: test bookings only</p>
+      <p className="text-small font-semibold text-warn">Sandbox prototype: test bookings only</p>{/* ui-check-ignore: a label for a test feature, not a status */}
       {!quote && !result && (
         <Button variant="secondary" onClick={ask}>Get a quote through Bunkcheck</Button>
       )}
@@ -360,7 +368,7 @@ function SandboxBooking({ familyId, registrationId, onBooked }: { familyId: stri
           </Button>
         </div>
       )}
-      {result && <p className="text-small text-checked">{result}</p>}
+      {result && <p><StatusMark tone="go" size="md" weight="regular">{result}</StatusMark></p>}
       {error && <p className="text-small text-error">{error}</p>}
     </section>
   )
