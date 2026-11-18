@@ -1,7 +1,8 @@
 // Which hosts show the hand-raiser page in place of the parent app.
 //
-// Today www.bunkcheck.ai shows the hand-raiser and dev.bunkcheck.ai (and every Vercel preview)
-// runs the whole app. To open the app on www, set NEXT_PUBLIC_HANDRAISER_HOSTS=none in Vercel
+// Today www.bunkcheck.ai shows the hand-raiser. The whole app runs at the project's own Vercel
+// address, frontend-camp-finder.vercel.app, and on every Vercel preview. dev.bunkcheck.ai will do
+// the same once that domain is added. To open the app on www, set NEXT_PUBLIC_HANDRAISER_HOSTS=none in Vercel
 // and redeploy. Nothing else changes. See docs/DEPLOY.md.
 //
 // "Keep the plumbing": on a hand-raiser host, only the parent app's own pages are replaced.
@@ -15,7 +16,7 @@ const list = (value: string | undefined, fallback: string) =>
 export const HANDRAISER_HOSTS = list(process.env.NEXT_PUBLIC_HANDRAISER_HOSTS, 'www.bunkcheck.ai,bunkcheck.ai')
 
 // Hosts search engines should leave alone.
-export const NOINDEX_HOSTS = list(process.env.NEXT_PUBLIC_NOINDEX_HOSTS, 'dev.bunkcheck.ai')
+export const NOINDEX_HOSTS = list(process.env.NEXT_PUBLIC_NOINDEX_HOSTS, 'frontend-camp-finder.vercel.app,dev.bunkcheck.ai')
 
 // The parent app. Each entry covers the path itself and anything under it.
 const GATED = ['/search', '/summer', '/household', '/kit', '/registrations', '/signin', '/activities']
