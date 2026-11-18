@@ -103,19 +103,7 @@ export function Landing({ onAsk, disabled, className }: { onAsk: (text: string) 
         </ul>
       </Section>
 
-      <section className="rounded-lg bg-ink p-6 text-accent-ink sm:p-8">
-        <h2 className="font-display text-h2">Parent to parent</h2>
-        <ul className="mt-4 grid gap-x-12 gap-y-3 sm:grid-cols-2">
-          {PROMISES.map((line, i) => (
-            <li key={i} className="flex items-start gap-3">
-              <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-pill bg-highlight text-ink">
-                <Icon name="check" size={12} />
-              </span>
-              <span>{line}</span>
-            </li>
-          ))}
-        </ul>
-      </section>
+      <Promises />
 
       <section className="border-t border-line pt-8">
         <Heading level="h2">Ten weeks. Start with one sentence.</Heading>
@@ -134,6 +122,25 @@ export function Landing({ onAsk, disabled, className }: { onAsk: (text: string) 
         </Text>
       </div>
     </div>
+  )
+}
+
+/** What we promise a parent, on the navy panel. */
+export function Promises() {
+  return (
+      <section className="rounded-lg bg-ink p-6 text-accent-ink sm:p-8">
+        <h2 className="font-display text-h2">Parent to parent</h2>
+        <ul className="mt-4 grid gap-x-12 gap-y-3 sm:grid-cols-2">
+          {PROMISES.map((line, i) => (
+            <li key={i} className="flex items-start gap-3">
+              <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-pill bg-highlight text-ink">
+                <Icon name="check" size={12} />
+              </span>
+              <span>{line}</span>
+            </li>
+          ))}
+        </ul>
+      </section>
   )
 }
 
@@ -205,7 +212,7 @@ function rowSummary(blocks: Block[]) {
  * on the thing it names, no box and no legend, and one saturated color, spent on the one week
  * that needs her attention. Each row carries its own total.
  */
-function ExampleSummer() {
+export function ExampleSummer() {
   return (
     <section>
       <Heading level="h2">A whole summer on one page</Heading>
