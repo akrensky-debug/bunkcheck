@@ -16,6 +16,7 @@ router = APIRouter()
 
 class HandRaise(BaseModel):
     email: str = Field(max_length=254)
+    state: str | None = Field(default=None, max_length=20)
     town: str | None = Field(default=None, max_length=200)
     kids_ages: list[int] | None = Field(default=None, max_length=20)
 
@@ -25,7 +26,7 @@ async def raise_hand(req: HandRaise, request: Request) -> dict:
     try:
         # Callers with no readable address share one bucket: the limit fails closed, not open.
         service.check_ip(rate_key(client_ip(request)) or "unknown")
-        service.raise_hand(req.email, req.town, req.kids_ages)
+        service.raise_hand(req.email, req.town, req.kids_ages, req.state)
     except service.HandRaiserError as e:
         raise HTTPException(status_code=e.status, detail=e.detail)
     # The same answer whether the address is new or already on the list.

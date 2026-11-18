@@ -58,7 +58,7 @@ DEFAULTS: dict[str, dict[str, Any]] = {
                        "token_hash": None, "token_sent_at": None, "verified_at": None},
     "camp_ownership": {"contact_name": None, "role": None, "verified": False, "plan": "free"},
     "ai_spend_daily": {"family_id": None, "cost_micros": 0, "calls": 0},
-    "hand_raisers": {"town": None, "kids_ages": []},
+    "hand_raisers": {"state": None, "town": None, "kids_ages": []},
     "booking_attempts": {"registration_id": None, "consent": None, "provider_ref": None, "error": None,
                          "status": "quoted", "environment": "sandbox"},
 }

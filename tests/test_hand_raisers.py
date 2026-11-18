@@ -20,10 +20,10 @@ def rows(db: Any) -> list[dict[str, Any]]:
 
 
 def test_a_parent_raises_her_hand(client: TestClient, db: Any, outbox: Any) -> None:
-    res = client.post("/api/v1/hand-raisers", json={"email": " Mom@Example.com ", "town": "  East  Greenwich, RI ", "kids_ages": [8, 5, 40]})
+    res = client.post("/api/v1/hand-raisers", json={"email": " Mom@Example.com ", "state": " ri ", "town": "  East  Greenwich ", "kids_ages": [8, 5, 40]})
     assert res.status_code == 202 and res.json() == {"status": "ok"}
     (row,) = rows(db)
-    assert row["email"] == "mom@example.com" and row["town"] == "East Greenwich, RI"
+    assert row["email"] == "mom@example.com" and row["state"] == "RI" and row["town"] == "East Greenwich"
     assert row["kids_ages"] == [5, 8]  # sorted, and 40 is not a kid's age
     assert outbox == []  # no confirmation, no welcome: sending is a separate decision
 
@@ -31,7 +31,7 @@ def test_a_parent_raises_her_hand(client: TestClient, db: Any, outbox: Any) -> N
 def test_email_alone_is_enough(client: TestClient, db: Any) -> None:
     assert client.post("/api/v1/hand-raisers", json={"email": "dad@example.com"}).status_code == 202
     (row,) = rows(db)
-    assert row["town"] is None and row["kids_ages"] == []
+    assert row["state"] is None and row["town"] is None and row["kids_ages"] == []
 
 
 def test_a_second_signup_updates_and_never_duplicates(client: TestClient, db: Any) -> None:
@@ -43,6 +43,16 @@ def test_a_second_signup_updates_and_never_duplicates(client: TestClient, db: An
     assert row["town"] == "Providence, RI" and row["kids_ages"] == [8]  # a bare repeat keeps what she said
     client.post("/api/v1/hand-raisers", json={"email": "mom@example.com", "town": "Cranston, RI"})
     assert rows(db)[0]["town"] == "Cranston, RI" and len(rows(db)) == 1
+
+
+def test_a_state_we_do_not_know_is_refused(client: TestClient, db: Any) -> None:
+    res = client.post("/api/v1/hand-raisers", json={"email": "mom@example.com", "state": "Narnia"})
+    assert res.status_code == 422 and "state" in res.json()["detail"]
+    assert rows(db) == []
+    # A repeat without a state keeps the one she gave.
+    client.post("/api/v1/hand-raisers", json={"email": "mom@example.com", "state": "MA"})
+    client.post("/api/v1/hand-raisers", json={"email": "mom@example.com"})
+    assert rows(db)[0]["state"] == "MA"
 
 
 def test_a_bad_address_is_refused(client: TestClient, db: Any) -> None:
