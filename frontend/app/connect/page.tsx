@@ -63,8 +63,8 @@ export default function ConnectPage() {
             weekly prices, extended care and open weeks.
           </Text>
           <Text variant="small" tone="muted">
-            Covers camps in the Northeast: CT, MA, ME, NH, NJ, NY, PA, RI and VT, with the most around
-            Providence and Boston.
+            Covers camps in six New England states: CT, MA, ME, NH, RI and VT, with the most around
+            Boston and Providence.
           </Text>
         </Stack>
 
