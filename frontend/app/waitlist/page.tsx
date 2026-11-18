@@ -20,8 +20,7 @@ export default function HandRaiserPage() {
           <span className="marker whitespace-nowrap">all winter.</span>
         </h1>
         <p className="mt-5 max-w-measure text-lead text-muted">
-          Bunkcheck is an AI-powered tool, built by parents, that makes it easier to plan and book your
-          kids&rsquo; summer.
+          Bunkcheck was built by parents to make it easier to plan and book your kids&rsquo; summer.
         </p>
         <p className="mt-8 font-semibold text-ink">
           We&rsquo;re not open to everyone yet. Raise your hand and we&rsquo;ll tell you when Bunkcheck opens near you.
