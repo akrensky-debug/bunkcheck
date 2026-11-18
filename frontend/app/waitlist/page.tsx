@@ -6,8 +6,8 @@ import { Text, TextLink } from '@/components/ui'
 // The public front door while the app itself lives on dev.bunkcheck.ai. On a hand-raiser host
 // (lib/site-mode.ts) the middleware serves this page at "/".
 export const metadata: Metadata = {
-  title: 'Bunkcheck: planning summer shouldn’t take all winter',
-  description: 'An AI-powered tool, built by parents, that makes it easier to plan and book your kids’ summer. Raise your hand and we’ll tell you when it opens near you.',
+  title: 'Bunkcheck: AI summer camp planner for New England families',
+  description: 'Find summer camps in New England, line up your weeks and get an email before registration opens. An AI planner built by parents. Raise your hand and we’ll write when it opens near you.',
   alternates: { canonical: '/' },
 }
 
@@ -20,10 +20,11 @@ export default function HandRaiserPage() {
           <span className="marker whitespace-nowrap">all winter.</span>
         </h1>
         <p className="mt-5 max-w-measure text-lead text-muted">
-          Bunkcheck was built by parents to make it easier to plan and book your kids&rsquo; summer.
+          Built by parents. Bunkcheck is an AI planner that finds the summer camps, lines up your weeks and
+          watches registration day.
         </p>
         <p className="mt-8 font-semibold text-ink">
-          We&rsquo;re not open to everyone yet. Raise your hand and we&rsquo;ll tell you when Bunkcheck opens near you.
+          Raise your hand and we&rsquo;ll write when Bunkcheck opens near you. We&rsquo;re not open to everyone yet.
         </p>
         <div className="mt-4">
           <HandRaiserForm />

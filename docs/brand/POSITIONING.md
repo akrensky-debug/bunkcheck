@@ -21,6 +21,7 @@ The place New England parents plan and book the whole summer, and the place camp
 Not a directory. Directories go stale the day they launch.
 Not an ad network. Nobody buys their way to the top of a parent's list.
 Not camp software. Owners never log in unless they want to.
+Not every activity. ActivityHero covers kids' activities in general; we lead with summer camp. Page titles, headlines and descriptions say "summer camp" (decided 18 November 2026).
 
 ## Why us
 

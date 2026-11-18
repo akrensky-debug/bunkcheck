@@ -108,7 +108,7 @@ export function Landing({ onAsk, disabled, className }: { onAsk: (text: string) 
       <section className="border-t border-line pt-8">
         <Heading level="h2">Ten weeks. Start with one sentence.</Heading>
         <div className="mt-4">
-          <Button size="lg" icon="arrow-up" href="#start">Tell us about your kids</Button>
+          <Button size="lg" icon="arrow-up" href="#start">Tell us about your summer</Button>
         </div>
       </section>
 

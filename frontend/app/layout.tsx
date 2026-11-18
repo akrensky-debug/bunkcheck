@@ -15,15 +15,15 @@ const figtree = localFont({
 })
 
 export const metadata: Metadata = {
-  title: 'Bunkcheck',
-  description: 'Find and schedule the best summer camps for your kids with AI, and get an email when registration opens.',
+  title: 'Bunkcheck: AI summer camp planner for New England families',
+  description: 'Find summer camps in New England, line up your weeks and get an email before registration opens. An AI planner built by parents.',
   applicationName: 'Bunkcheck',
   // favicon.ico, icon.svg and apple-icon.png in app/ are wired automatically by Next;
   // /icon.png is the 512 px app icon the assistant apps also point at.
   icons: { icon: '/icon.png', apple: '/icon.png' },
   openGraph: {
-    title: 'Bunkcheck',
-    description: 'Find and schedule the best summer camps for your kids with AI, and get an email when registration opens.',
+    title: 'Bunkcheck: AI summer camp planner for New England families',
+    description: 'Find summer camps in New England, line up your weeks and get an email before registration opens. An AI planner built by parents.',
     siteName: 'Bunkcheck',
     type: 'website',
   },
