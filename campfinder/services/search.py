@@ -18,6 +18,7 @@ from campfinder.models.camp import CampSearchResult
 from campfinder.models.search import SearchRequest, SearchResponse
 from campfinder.services.camps import camp_url
 from campfinder.services.geo import geocode_location, haversine_miles
+from campfinder.services.price import as_price, price_label, weekly_price
 from campfinder.services.ranking import score_camp
 from campfinder.services.season import is_last_season
 
@@ -98,10 +99,11 @@ async def search_camps(
                 continue
 
         # --- Price filter ---
-        if max_price_per_week is not None:
-            ppw = camp.get("price_per_week")
-            if ppw is not None and float(ppw) > max_price_per_week:
-                continue
+        # Over budget is out. No weekly price posted stays in, ranked after every priced match
+        # and labelled on the card, so a parent never reads it as "under budget".
+        weekly = weekly_price(camp)
+        if max_price_per_week is not None and weekly is not None and weekly > max_price_per_week:
+            continue
 
         # --- Category filter ---
         if categories:
@@ -128,13 +130,16 @@ async def search_camps(
         camp["detail_url"] = camp_url(camp)
         results.append(camp)
 
-    # Sort
+    # Sort. With a budget, camps with no weekly price come after every camp known to fit it.
+    def unpriced(c: dict[str, Any]) -> bool:
+        return max_price_per_week is not None and weekly_price(c) is None
+
     if sort == "best_match":
-        results.sort(key=lambda c: c["match_score"], reverse=True)
+        results.sort(key=lambda c: (unpriced(c), -c["match_score"]))
     elif sort == "distance":
-        results.sort(key=lambda c: c.get("distance_miles") or 9999)
+        results.sort(key=lambda c: (unpriced(c), c.get("distance_miles") or 9999))
     elif sort == "price":
-        results.sort(key=lambda c: float(c.get("price_per_week") or 9999))
+        results.sort(key=lambda c: (weekly_price(c) is None, weekly_price(c) or 0))
 
     return results[:limit]
 
@@ -177,9 +182,11 @@ def to_search_result(camp: dict[str, Any]) -> CampSearchResult:
         primary_categories=list(camp.get("primary_categories") or []),
         age_min=camp.get("age_min"),
         age_max=camp.get("age_max"),
-        price_per_week=float(camp["price_per_week"]) if camp.get("price_per_week") else None,
-        price_min=float(camp["price_min"]) if camp.get("price_min") else None,
-        price_max=float(camp["price_max"]) if camp.get("price_max") else None,
+        price_per_week=as_price(camp.get("price_per_week")),
+        price_min=as_price(camp.get("price_min")),
+        price_max=as_price(camp.get("price_max")),
+        weekly_price=weekly_price(camp),
+        price_label=price_label(camp),
         transportation=camp.get("transportation") or False,
         extended_care=camp.get("extended_care") or False,
         meals_included=camp.get("meals_included") or False,

@@ -32,7 +32,7 @@ import math
 from datetime import date, datetime, timedelta, timezone
 from typing import Any
 
-
+from campfinder.services.price import weekly_price
 
 # Categories are matched lowercase; these read wrong that way in a reason line.
 _CATEGORY_LABELS = {"stem": "STEM", "steam": "STEAM"}
@@ -52,7 +52,7 @@ def _weeks_from_dates(start_iso: str, end_iso: str) -> list[date]:
 
 # Every camp field ranking may read. Nothing about payment, billing, plans or inquiries.
 CAMP_FIELDS = frozenset({
-    "age_min", "age_max", "primary_categories", "price_per_week", "price_min",
+    "age_min", "age_max", "primary_categories", "price_per_week", "price_min", "price_per",
     "description_short", "description_full", "verification_status", "aca_accredited",
     "last_updated_date",
 })
@@ -129,9 +129,9 @@ def score_camp(
             reasons.append(_distance_reason(distance_miles))
 
     # --- Price fit ---
-    ppw = camp.get("price_per_week")
+    ppw = weekly_price(camp)
     if max_price_per_week is not None and ppw is not None:
-        if float(ppw) <= max_price_per_week:
+        if ppw <= max_price_per_week:
             score += 0.15
             reasons.append(f"Under ${max_price_per_week:.0f}/week")
 

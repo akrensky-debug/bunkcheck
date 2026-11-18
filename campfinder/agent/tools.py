@@ -33,6 +33,7 @@ from campfinder.services.compare import compare_camps
 from campfinder.services.coverage import check_coverage
 from campfinder.services.errors import ServiceError
 from campfinder.services.plan import build_summer_plan
+from campfinder.services.price import NOT_POSTED
 from campfinder.services.search import run_search
 from campfinder.services.season import is_last_season, planning_year
 from campfinder.models.board import PickCreate
@@ -190,7 +191,7 @@ class RemoveFromCalendarInput(BaseModel):
 def _compact_camp(c: dict[str, Any]) -> dict[str, Any]:
     keys = (
         "id", "name", "city", "state", "camp_type", "primary_categories", "age_min", "age_max",
-        "price_per_week", "distance_miles", "transportation", "extended_care", "meals_included",
+        "price_per_week", "weekly_price", "price_label", "distance_miles", "transportation", "extended_care", "meals_included",
         "financial_aid", "aca_accredited", "verification_status", "match_reasons", "season_year",
     )
     out = {k: c.get(k) for k in keys if c.get(k) not in (None, [], "")}
@@ -220,19 +221,33 @@ async def search_camps_tool(inp: SearchCampsInput, family_id: str | None = None)
     camps = [r.model_dump(mode="json") for r in res.results]
     if not camps:
         _record_unmet_demand(inp)
-    old = sum(1 for c in camps if c.get("last_season"))
     return ToolOutput(
         content={
             "total": res.total,
             "camps": [_compact_camp(c) for c in camps],
             "note": _empty_note(inp.location, "No camps matched. Widen the radius, drop a filter, or try a nearby city.")
-            if not camps else (f"{old} of these show last season's prices (last_season); "
-                               f"{planning_year()} details aren't posted yet. Say so when you mention a price."
-                               if old else None),
+            if not camps else _search_note(camps, inp.max_price_per_week),
             **({"day_camp_only": "Overnight camps were left out: this family said day camp only."} if day_only else {}),
         },
         ui={"type": "camps", "camps": camps, "query": inp.model_dump(mode="json", exclude_none=True)},
     )
+
+
+def _search_note(camps: list[dict[str, Any]], budget: float | None) -> str | None:
+    """What the assistant must say about prices, counted from what the cards actually show."""
+    notes = []
+    if budget is not None:
+        unpriced = sum(1 for c in camps if c.get("weekly_price") is None)
+        if unpriced:
+            notes.append(
+                f"{unpriced} of these have no weekly price posted (price_label), so they are listed after the "
+                f"camps at or under ${budget:,.0f}/week. Don't call them within budget: say the price isn't "
+                "posted, or give the price they do list with its unit.")
+    old = sum(1 for c in camps if c.get("last_season") and c.get("price_label") != NOT_POSTED)
+    if old:
+        notes.append(f"{old} of these show last season's prices (last_season); {planning_year()} prices "
+                     "aren't posted yet. Say so when you mention a price.")
+    return " ".join(notes) or None
 
 
 def _record_unmet_demand(inp: SearchCampsInput) -> None:

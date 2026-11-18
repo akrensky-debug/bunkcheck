@@ -118,7 +118,8 @@
     if (c.transportation) chips.push(`<span class="chip">Transportation</span>`);
     if (c.financial_aid) chips.push(`<span class="chip">Financial aid</span>`);
     const where = [c.city && c.state ? `${c.city}, ${c.state}` : "", miles(c.distance_miles)].filter(Boolean).join(" · ");
-    const price = session && session.price != null ? session.price : c.price_per_week;
+    // A free camp (0) and a camp with no single weekly price show price_label instead.
+    const price = session && session.price != null ? session.price : (c.price_per_week || null);
     // Last season's dates and prices are still useful, but never shown as this season's.
     const oldYear = session ? (session.last_season ? session.start_date.slice(0, 4) : null)
                             : (c.last_season ? c.season_year : null);
@@ -126,7 +127,8 @@
     return `<div class="card">
       <div class="row">
         <div><div class="name">${esc(c.name)}</div><div class="meta">${esc(where)}</div></div>
-        ${price != null ? `<div class="price">$${Math.round(price)}<small>${session ? "/session" : "/wk"}</small></div>` : ""}
+        ${price != null ? `<div class="price">$${Math.round(price)}<small>${session ? "/session" : "/wk"}</small></div>`
+          : c.price_label ? `<div class="price"><small>${esc(c.price_label)}</small></div>` : ""}
       </div>
       ${session ? `<div class="dates">${day(session.start_date)} – ${day(session.end_date)}${SPOTS[session.availability] ? ` · <span class="spots">${SPOTS[session.availability]}</span>` : ""}</div>` : ""}
       ${session && session.name && session.name !== c.name ? `<div class="meta">${esc(session.name)}</div>` : ""}

@@ -42,7 +42,7 @@ from campfinder.inquiries.service import record_appearances
 log = logging.getLogger(__name__)
 
 # Bump the version when widget.html changes: hosts cache templates by URI.
-WIDGET_URI = "ui://campfinder/camps-v8.html"
+WIDGET_URI = "ui://campfinder/camps-v9.html"
 WIDGET_MIME = "text/html;profile=mcp-app"
 MAX_CARDS = 8
 
@@ -61,7 +61,9 @@ INSTRUCTIONS = (
     "repeating every field. Only state facts these tools return, and say when a camp's "
     "details are not yet verified. Many camps haven't posted next summer yet: results marked "
     "last_season show last season's dates and prices, so say which season a date or price is "
-    "from whenever you give one. For weekly classes, lessons, leagues and after-school "
+    "from whenever you give one. With a budget, camps with no weekly price come last: never call "
+    "one within budget; say its price isn't posted, or give the price_label it shows. "
+    "For weekly classes, lessons, leagues and after-school "
     "programs, use find_activities (days and times like 'after 3:30 on weekdays' or 'Saturday "
     "mornings' go in days/earliest_start/latest_end), get_activity_details, and "
     "check_schedule_fit to test a class against the family's other commitments. Outside the "
@@ -177,7 +179,7 @@ def _utm(url: str, source: str, campaign: str) -> str:
 
 def _card(c: dict[str, Any], source: str) -> dict[str, Any]:
     keys = (
-        "id", "name", "city", "state", "distance_miles", "price_per_week", "age_min", "age_max",
+        "id", "name", "city", "state", "distance_miles", "price_per_week", "weekly_price", "price_label", "age_min", "age_max",
         "verification_status", "extended_care", "transportation", "financial_aid", "match_reasons",
         "season_year", "last_season",
     )

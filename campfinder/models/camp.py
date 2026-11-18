@@ -133,6 +133,9 @@ class CampSearchResult(BaseModel):
     price_per_week: float | None = None
     price_min: float | None = None
     price_max: float | None = None
+    weekly_price: float | None = Field(default=None, description="Lowest weekly price on file; None when the camp "
+                                       "hasn't posted one per week. This is what a budget is checked against.")
+    price_label: str = Field(default="Price not posted", description="The price as the card shows it, with its unit.")
     transportation: bool = False
     extended_care: bool = False
     meals_included: bool = False

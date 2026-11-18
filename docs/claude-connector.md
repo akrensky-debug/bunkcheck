@@ -13,10 +13,11 @@ Strategy: `docs/assistant-apps-strategy.md`. Founder steps: `docs/assistant-apps
 | --- | --- |
 | Claude endpoint | `https://www.bunkcheck.ai/mcp`, which proxies to `https://<api>/claude/mcp` (stateless streamable HTTP, JSON responses, no auth) |
 | Tools | the same ten tools as ChatGPT (`campfinder/mcp_server.py`): nine read-only, plus `send_inquiry`, which drafts a question the parent sends from our site |
-| Camp cards | the same MCP App (`ui://campfinder/camps-v8.html`) **without** `ui.domain` |
+| Camp cards | the same MCP App (`ui://campfinder/camps-v9.html`) **without** `ui.domain` |
 | Links | `ui/open-link` to our own site; tagged `utm_source=claude` |
 | Server metadata | `title`, `websiteUrl` and light and dark `icons` served from `/static/` |
 | Smoke test | `python -m campfinder.scripts.check_mcp https://www.bunkcheck.ai/mcp` |
+| Budget rule | with `max_price_per_week` set, over-budget camps are dropped and camps with no weekly price come last, labelled on the card and counted in the `note` (same rule as ChatGPT, `services/search.py`) |
 
 **Why a separate endpoint:** Claude checks `_meta.ui.domain` against a hash of the connector URL
 and refuses to render the app if it doesn't match, while ChatGPT requires `ui.domain` to be our

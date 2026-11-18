@@ -11,7 +11,7 @@ Strategy: `docs/assistant-apps-strategy.md`. Founder steps: `docs/assistant-apps
 | --- | --- |
 | ChatGPT endpoint | `https://<api>/chatgpt/mcp` (stateless streamable HTTP, no auth); `<api>` will be `api.bunkcheck.ai` |
 | Tools and their discovery descriptions | `campfinder/mcp_server.py` |
-| Camp cards (MCP Apps UI, protocol 2026-01-26) | `campfinder/chatgpt/widget.html`, served as `ui://campfinder/camps-v8.html` |
+| Camp cards (MCP Apps UI, protocol 2026-01-26) | `campfinder/chatgpt/widget.html`, served as `ui://campfinder/camps-v9.html` |
 | Widget origin (`_meta.ui.domain`) | `CHATGPT_WIDGET_DOMAIN`, default `FRONTEND_URL`. Required by OpenAI, unique per app |
 | Link allowlist | `openai/widgetCSP.redirect_domains` = `FRONTEND_URL`, so links open without a warning |
 | Domain verification | `OPENAI_APPS_CHALLENGE` is served at `/.well-known/openai-apps-challenge` |
@@ -82,7 +82,7 @@ parent confirms outside ChatGPT). Nothing moves money. Full rules: `docs/inquiri
 | # | Prompt | Tools | Expected |
 | --- | --- | --- | --- |
 | + | Find summer day camps near Providence, RI for my 8 year old who loves science. | search_camps | Cards with price, distance, ages, verification, reasons; continue link |
-| + | Day camps near Providence with extended care for under $350 a week. | search_camps | Only camps with extended care at or under $350, or "none matched" |
+| + | Day camps near Providence with extended care for under $350 a week. | search_camps | Camps with extended care at or under $350 first; any with no weekly price after them, labelled; or "none matched" |
 | + | What camps still have openings the week of July 5 near Cranston, RI? | find_sessions | Dated session cards, soonest first |
 | + | Compare the top two camps for my 8 year old near Providence and tell me their refund policies. | search_camps, compare_camps, get_camp_details | Plain-language comparison; refund policy or "not listed" |
 | + | Find summer camps in Columbus, Ohio for my 9 year old. | search_camps | No camps; explains Northeast coverage; no continue link |
@@ -95,9 +95,11 @@ calls `send_inquiry`, shows a preview card with a confirm button, and ChatGPT sa
 yet. Whether `send_inquiry` replaces one of the five positive cases is Andrew's call before the next
 submission.
 
-The budget case used Boston under $400 until 13 November 2026. Every Boston camp that matched had
-no price on file, and search keeps camps with no price when a budget is set, so a reviewer saw
-eight priceless cards for "under $400". Providence has prices.
+**Budget rule (decided 18 November 2026):** with `max_price_per_week` set, `search_camps` drops camps whose weekly price (or the low end of a weekly range) is over budget, and keeps camps with no weekly price after every priced match, with their `price_label` ("Price not posted", "$1,500 to $1,700 per session") on the card and a count in the `note`. A camp listed at $0 is free and fits any budget. Bad price data (text, negatives, a swapped range) reads as "not posted" and never breaks a search.
+
+The budget case used Boston under $400 until 13 November 2026. Camps with no price on file
+passed every budget and outranked priced ones, so a reviewer saw eight priceless cards for
+"under $400". The rule above fixed that; Providence stays the review case because it has more prices.
 
 Run each case in developer mode on web and mobile before submitting. Positive cases depend on
 real listings: rerun them once the Providence and Boston data is live.

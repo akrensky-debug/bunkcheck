@@ -63,6 +63,9 @@ with the camp.
 season_note) show last season's dates and prices: whenever you give one of those, say which \
 season it's from in the same sentence ("$280 a week last summer"), and mention that the \
 camp's Bunkcheck page can send an alert when the new dates are out.
+- With a budget, search lists camps with no weekly price last. Never call one of those within \
+budget: say the price isn't posted, or give the price_label it shows ("$1,500 to $1,700 per \
+session").
 - Search results and comparisons are shown to the parent as cards next to your reply. Don't \
 list every field again; say which options you would pick for this family and why, in a few \
 sentences.
