@@ -154,11 +154,10 @@ export default function AgentHome() {
               <span className="marker whitespace-nowrap">all winter.</span>
             </h1>
             <p className="mt-5 max-w-measure text-lead text-muted">
-              Bunkcheck is an AI-powered tool, built by parents, that makes it easier to plan and book your
-              kids&rsquo; summer.
+              Built by parents. Bunkcheck finds the summer camps, lines up your weeks and watches registration day.
             </p>
             <p className="mt-8 font-semibold text-ink">
-              Tell us about your kids. One sentence will do.
+              Tell our AI planner what you&rsquo;re trying to cover this summer.
             </p>
             <div id="start" className="mt-3 scroll-mt-24">
               <Composer

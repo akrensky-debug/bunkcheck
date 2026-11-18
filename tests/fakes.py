@@ -58,6 +58,7 @@ DEFAULTS: dict[str, dict[str, Any]] = {
                        "token_hash": None, "token_sent_at": None, "verified_at": None},
     "camp_ownership": {"contact_name": None, "role": None, "verified": False, "plan": "free"},
     "ai_spend_daily": {"family_id": None, "cost_micros": 0, "calls": 0},
+    "hand_raisers": {"town": None, "kids_ages": []},
     "booking_attempts": {"registration_id": None, "consent": None, "provider_ref": None, "error": None,
                          "status": "quoted", "environment": "sandbox"},
 }
@@ -65,6 +66,7 @@ UNIQUE = {
     "registration_reminder_sends": [("registration_id", "kind", "due_on", "days_before")],
     "registration_alerts": [("camp_id", "session_id", "email"), ("token",)],
     "registration_alert_sends": [("alert_id", "kind", "opens_at")],
+    "hand_raisers": [("email",)],
     "family_members": [("family_id", "email")],
     "plan_picks": [("family_id", "child_name", "week_of", "camp_id")],
     "reminder_sends": [("member_id", "kind", "period")],

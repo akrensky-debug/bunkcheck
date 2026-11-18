@@ -79,3 +79,39 @@ shipped:
   migration as applied.
 
 Do not run `python -m campfinder.seed.generate` against this database: it inserts fake camps.
+
+## The hand-raiser on www, the app at its Vercel address (added 18 November 2026)
+
+One codebase and one Vercel project serve two addresses. The host decides what a visitor sees.
+
+| Address | What it shows |
+| --- | --- |
+| `www.bunkcheck.ai` | The hand-raiser page at `/`. The parent app's own pages (`/search`, `/summer`, `/household`, `/kit`, `/registrations`, `/signin`, `/activities`) send people back to `/`. |
+| `frontend-camp-finder.vercel.app`, every Vercel preview, localhost | The whole app. Search engines are told not to index it. |
+
+`frontend-camp-finder.vercel.app` is the project's own free Vercel address. It is where the app
+lives while www is the hand-raiser. The API already accepts it (`CORS_ORIGINS` on Railway).
+
+What keeps working on www: camp pages, the links already emailed to camps and parents (`/owners`,
+`/alerts`, `/share`, `/inquiries`, `/join`), the for-camps pages, `/connect`, `/mcp` and the legal
+pages. The rules are in `frontend/lib/site-mode.ts` and `frontend/middleware.ts`.
+
+The hand-raiser saves an email, an optional town and the kids' ages to `hand_raisers`
+(`POST /api/v1/hand-raisers`, `campfinder/services/hand_raisers.py`). It sends no email.
+
+### A nicer address later: dev.bunkcheck.ai (optional)
+
+Adding the domain in Vercel asked for a paid plan on 18 November 2026, so it is not set up.
+The code already treats `dev.bunkcheck.ai` as an app host, and the API already accepts it. To
+turn it on:
+
+1. **Vercel**, project `frontend`, Settings, Domains: add `dev.bunkcheck.ai`.
+2. **DNS** for bunkcheck.ai: add the record Vercel shows, normally `CNAME dev cname.vercel-dns.com`.
+3. **Supabase**, Authentication, URL Configuration: add `https://dev.bunkcheck.ai/signin` to the
+   redirect URLs, or sign-in links from dev bounce back to www.
+
+### Opening the app on www
+
+Set `NEXT_PUBLIC_HANDRAISER_HOSTS=none` in Vercel (Production) and redeploy. www then runs the
+whole app. To put the hand-raiser back, remove the variable. `NEXT_PUBLIC_NOINDEX_HOSTS` lists
+the hosts search engines should skip.

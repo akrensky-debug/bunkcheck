@@ -73,6 +73,11 @@
   }
 }
 
+/* Hand-raiser hosts (lib/site-mode.ts): hide links into the parent app, which isn't open there,
+   and keep "For camps" on phones, where it is the only link left. */
+html[data-handraiser] [data-app-only] { display: none; }
+html[data-handraiser] [data-public-nav] { display: inline; }
+
 /* A highlighter stroke across the lower part of a word, so it never covers the descenders of
    the line above. Used once, on the home headline. */
 @layer components {

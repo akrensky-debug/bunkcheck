@@ -85,6 +85,7 @@ Limits marked *new* come from #77 and #78. Everything else is on `main` today.
 | `GET /camps/{id}/registration`, `GET /registration/upcoming`, `GET /booking/status` | None | None | Public data |
 | `POST /camps/{id}/registration/alerts` | None | 10 unconfirmed sign-ups per address a day | Mail-bombing an address; capped |
 | `GET, POST /registration-alerts/{token}`, `/confirm`, `/stop` | Link, 192 bits | None | Guessing is infeasible |
+| `POST /hand-raisers` | None | 10 an hour per IP | Filling the list by script; capped. The answer is the same for a new and a known address, and no email is sent |
 | `POST /api/v1/inquiries`, `/inquiries/link/{token}/confirm` | None, or the family | 20 an hour per IP; 5 a day per family; 40 a day per camp | Flooding a camp's inbox; capped |
 | `GET /inquiries/link/{token}`, `/cancel` | Link, 192 bits | None | Guessing is infeasible |
 | `GET /owners/inquiries/{token}`, `/reply` | Link, 192 bits | None | Guessing is infeasible |
