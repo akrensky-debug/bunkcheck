@@ -38,7 +38,8 @@ export function HandRaiserForm() {
   if (done) {
     return (
       <Notice tone="success" className="max-w-measure">
-        You&rsquo;re on the list. We&rsquo;ll write when Bunkcheck opens near {town.trim() || 'you'}.
+        You&rsquo;re in line{town.trim() ? ` for ${town.trim()}` : ''}. We&rsquo;ll write when your state opens. Tell the
+        parents at pickup.
       </Notice>
     )
   }
@@ -52,17 +53,17 @@ export function HandRaiserForm() {
         )}
       </Field>
       <div className="grid gap-4 sm:grid-cols-2">
-        <Field label="Your town" optional>
+        <Field label="Your town and state" optional hint="So we know which line you&rsquo;re in.">
           {id => <Input id={id} value={town} onChange={e => setTown(e.target.value)} placeholder="Barrington, RI" autoComplete="address-level2" />}
         </Field>
         <Field label="Kids&rsquo; ages" optional>
           {id => <Input id={id} value={ages} onChange={e => setAges(e.target.value)} placeholder="5 and 8" inputMode="text" />}
         </Field>
       </div>
-      <Button type="submit" size="lg" disabled={busy}>{busy ? 'Saving…' : 'Raise my hand'}</Button>
+      <Button type="submit" size="lg" disabled={busy}>{busy ? 'Saving…' : 'Grab my spot'}</Button>
       {error && <p className="text-small text-error" role="alert">{error}</p>}
       <p className="text-caption text-muted">
-        One email, when Bunkcheck opens near you. No ads, and we never sell your details.{' '}
+        One email, when your state opens. No ads, and we never sell your details.{' '}
         <TextLink href="/privacy" tone="muted" className="underline underline-offset-4">Privacy</TextLink>
       </p>
     </form>

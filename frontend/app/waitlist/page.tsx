@@ -7,7 +7,7 @@ import { Text, TextLink } from '@/components/ui'
 // (lib/site-mode.ts) the middleware serves this page at "/".
 export const metadata: Metadata = {
   title: 'Bunkcheck: AI summer camp planner for New England families',
-  description: 'Find summer camps in New England, line up your weeks and get an email before registration opens. An AI planner built by parents. Raise your hand and we’ll write when it opens near you.',
+  description: 'Find summer camps in New England, line up your weeks and get an email before registration opens. An AI planner built by parents. Grab your spot in line for when your state opens.',
   alternates: { canonical: '/' },
 }
 
@@ -24,14 +24,14 @@ export default function HandRaiserPage() {
           watches registration day.
         </p>
         <p className="mt-8 font-semibold text-ink">
-          Raise your hand and we&rsquo;ll write when Bunkcheck opens near you. We&rsquo;re not open to everyone yet.
+          We&rsquo;re opening state by state, as we have room. Grab your spot in line for yours.
         </p>
         <div className="mt-4">
           <HandRaiserForm />
         </div>
 
         <div className="mt-16 space-y-16 sm:mt-24">
-          <ExampleSummer />
+          <ExampleSummer title="What you&rsquo;re in line for" />
           <Promises />
           <div className="border-t border-line pt-8">
             <Text variant="small" tone="muted">
