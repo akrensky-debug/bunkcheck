@@ -165,7 +165,7 @@ export default function AgentHome() {
             <div className={cx(!side && 'lg:grid lg:grid-cols-2 lg:items-start lg:gap-12')}>
             <div>
             <p className="mt-5 max-w-measure text-lead text-muted">
-              Bunkcheck does the legwork for you. Hundreds of summer camps, with their schedules, costs and details, in one place. We&rsquo;ve made it easy to plan, book and schedule your kids&rsquo; whole summer in a fraction of the time.
+              Hundreds of summer camps, with dates, hours and prices, in one place. Tell us who you&rsquo;re planning for and we&rsquo;ll lay out the summer week by week, gaps and all.
             </p>
             {/* Where we have camps, said before anyone types. Counted in the live database on
                 16 November 2026: 457 camps in CT, MA, ME, NH, RI and VT. */}
