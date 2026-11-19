@@ -55,6 +55,10 @@ KEY_FIELD: dict[str, BriefField] = {
     "sleepaway": "sleepaway", "booked_elsewhere": "booked_elsewhere",
 }
 
+# A kid's usual age during a school year is their grade plus 5: kindergarten 5, 3rd grade 8. Ages
+# here mean age now, as parents say them, so a grade-only kid gets this, marked as an estimate.
+GRADE_TO_AGE = 5
+
 GUESS_SUMMER = ((6, 18), (8, 31))  # month, day: a typical Rhode Island summer break
 GUESS_WORK = [{"parent": "Parents", "days": ["Mon", "Tue", "Wed", "Thu", "Fri"], "start": "8:00", "end": "18:00"}]
 
@@ -152,6 +156,7 @@ def apply_update(profile: dict[str, Any], data: dict[str, Any], source: Source, 
     fields: set[BriefField] = {KEY_FIELD[k] for k in data if k in KEY_FIELD}
     kids = data.get("kids")
     if kids is not None:
+        kids = profile["kids"] = [_with_age(k) for k in kids]
         if any(k.get("age") is not None for k in kids):
             fields.add("kids")
         if any(k.get("interests") for k in kids):
@@ -182,6 +187,27 @@ def apply_update(profile: dict[str, Any], data: dict[str, Any], source: Source, 
     return profile
 
 
+def _with_age(kid: dict[str, Any]) -> dict[str, Any]:
+    """A kid with a grade and no age gets an estimated age, so camp ages still filter."""
+    kid = dict(kid)
+    if kid.get("age") is None and kid.get("grade") is not None:
+        kid["age"] = max(kid["grade"] + GRADE_TO_AGE, 3)
+        kid["age_estimated"] = True
+    elif kid.get("age") is None:
+        kid.pop("age_estimated", None)
+    return kid
+
+
+def grade_label(grade: int) -> str:
+    """-1 -> 'pre-K', 0 -> 'kindergarten', 3 -> '3rd grade'."""
+    if grade < 0:
+        return "pre-K"
+    if grade == 0:
+        return "kindergarten"
+    suffix = "th" if 11 <= grade <= 13 else {1: "st", 2: "nd", 3: "rd"}.get(grade % 10, "th")
+    return f"{grade}{suffix} grade"
+
+
 def apply_skip(profile: dict[str, Any], field: BriefField, today: date, *, not_sure: bool = False) -> dict[str, Any]:
     """"Skip for now" or "Not sure yet": move on, and give the board a default to work with."""
     profile = copy.deepcopy(profile)
@@ -209,7 +235,7 @@ def _question(profile: dict[str, Any], field: BriefField, returning: bool = Fals
     names = _names(kids)
     older = [k for k in kids if (k.get("age") or 0) >= OVERNIGHT_MIN_AGE]
     text: dict[BriefField, tuple[str, str | None]] = {
-        "kids": ("Who’s going to camp?", "First names and ages."),
+        "kids": ("Who’s going to camp?", "First names, and ages or grades."),
         "home": ("What town are you in?", "So we suggest camps near you."),
         "school": ("Which school do they go to?", "We'll use it to find the last day of school."),
         "camp_weeks": ("Which weeks do you need camp?", "Leave off vacations, family time and weeks that are already sorted."),

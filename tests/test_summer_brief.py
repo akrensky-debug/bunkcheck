@@ -174,3 +174,33 @@ def test_real_calendars_set_the_start_of_summer(client) -> None:
     p = said({}, school="providence")
     assert p["summer_start"] == "2027-06-18" and p["summer_end"] == "2027-08-31"
     assert "Providence Public Schools" in client.get("/api/v1/schools").json()
+
+
+def test_a_grade_alone_gives_an_estimated_age() -> None:
+    p = said({}, kids=[{"name": "Maya", "grade": 3}, {"name": "Leo", "grade": 0}, {"name": "Ada", "grade": -1}])
+    assert [(k["age"], k["age_estimated"]) for k in p["kids"]] == [(8, True), (5, True), (4, True)]
+    # Counts as an answer: the parent told us something, and camps can filter on it.
+    assert ask(p) == "home"
+    assert sb.next_question({}, OCT).help == "First names, and ages or grades."
+
+
+def test_an_age_the_parent_gives_wins_over_the_grade() -> None:
+    p = said({}, kids=[{"name": "Maya", "age": 9, "grade": 3}])
+    assert p["kids"][0]["age"] == 9 and not p["kids"][0].get("age_estimated")
+    # Telling us the age later replaces the estimate.
+    p = said(p, kids=[{"name": "Leo", "grade": 0}])
+    p = said(p, kids=[{"name": "Leo", "grade": 0, "age": 6, "age_estimated": False}])
+    assert p["kids"][0]["age"] == 6 and p["kids"][0]["age_estimated"] is False
+
+
+def test_grade_labels() -> None:
+    assert [sb.grade_label(g) for g in (-1, 0, 1, 2, 3, 4, 11, 12)] == [
+        "pre-K", "kindergarten", "1st grade", "2nd grade", "3rd grade", "4th grade", "11th grade", "12th grade",
+    ]
+
+
+def test_the_assistant_tool_accepts_a_grade() -> None:
+    from campfinder.models.brief import BriefUpdate
+
+    update = BriefUpdate.model_validate({"kids": [{"name": "Maya", "grade": 3}]})
+    assert update.kids and update.kids[0].grade == 3 and update.kids[0].age is None
