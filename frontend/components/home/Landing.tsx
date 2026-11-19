@@ -333,7 +333,8 @@ function SummerBoard({ className }: { className?: string }) {
                 >
                   <span className="truncate font-semibold">{b.label}</span>
                   {b.perWeek != null && <span className="truncate text-muted tabular-nums">{dollars(b.perWeek)}</span>}
-                  {b.kind === 'open' && <span className="truncate">2 weeks</span>}
+                  {/* Phones have no room for it, and the axis already shows the two weeks. */}
+                  {b.kind === 'open' && <span className="hidden truncate sm:block">2 weeks</span>}
                 </li>
               ))}
             </ul>
