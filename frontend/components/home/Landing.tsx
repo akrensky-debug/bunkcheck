@@ -105,16 +105,13 @@ const PROMISES: React.ReactNode[] = [
   'Your family’s data is yours. We never sell it.',
 ]
 
-/**
- * Everything under the hero for a parent who is new here. The example summer opens it on phones
- * and tablets; on wide screens it already sits beside the headline (HeroSummer), so it is hidden here.
- */
+/** Everything under the hero for a parent who is new here. */
 export function Landing({ onAsk, disabled, className }: { onAsk: (text: string) => void; disabled: boolean; className?: string }) {
   // One preview open at a time.
   const [open, setOpen] = useState<string | null>(null)
   return (
     <div className={cx('space-y-16', className)}>
-      <div className="lg:hidden"><ExampleSummer /></div>
+      <ExampleSummer />
 
       <OpeningSoon />
 
@@ -280,23 +277,9 @@ export function ExampleSummer({ title = 'A whole summer on one page' }: { title?
     <section>
       <Heading level="h2">{title}</Heading>
       <Text className="mt-2">Here&rsquo;s what that looks like for two kids: ten weeks, one gap still to fill. Prices are per week.</Text>
-      <SummerBoard className="mt-6" />
+      {/* Wider than the text column on desktop, so it reads as a screen from the app. */}
+      <SummerBoard className="mt-6 lg:-mx-16 lg:p-8" />
     </section>
-  )
-}
-
-/**
- * The example summer beside the headline, on wide screens only: the product before any more
- * words. Below lg it is hidden and Landing (or the waitlist page) shows ExampleSummer instead.
- */
-export function HeroSummer({ className }: { className?: string }) {
-  return (
-    <figure className={cx('hidden lg:block', className)}>
-      <SummerBoard />
-      <figcaption className="mt-3 text-small text-muted">
-        An example: two kids, ten weeks, one gap still to fill. Prices are per week.
-      </figcaption>
-    </figure>
   )
 }
 
