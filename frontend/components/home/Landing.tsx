@@ -70,13 +70,16 @@ const PROMISES: React.ReactNode[] = [
   'Your family’s data is yours. We never sell it.',
 ]
 
-/** Everything under the hero for a parent who is new here. */
+/**
+ * Everything under the hero for a parent who is new here. The example summer opens it on phones
+ * and tablets; on wide screens it already sits beside the headline (HeroSummer), so it is hidden here.
+ */
 export function Landing({ onAsk, disabled, className }: { onAsk: (text: string) => void; disabled: boolean; className?: string }) {
   // One preview open at a time.
   const [open, setOpen] = useState<string | null>(null)
   return (
     <div className={cx('space-y-16', className)}>
-      <ExampleSummer />
+      <div className="lg:hidden"><ExampleSummer /></div>
 
       <OpeningSoon />
 
@@ -242,13 +245,34 @@ function rowSummary(blocks: Block[]) {
  * that needs her attention. Each row carries its own total.
  */
 export function ExampleSummer({ title = 'A whole summer on one page' }: { title?: string }) {
-  const board = useFillIn()
   return (
     <section>
       <Heading level="h2">{title}</Heading>
       <Text className="mt-2">Here&rsquo;s what that looks like for two kids: ten weeks, one gap still to fill. Prices are per week.</Text>
+      <SummerBoard className="mt-6" />
+    </section>
+  )
+}
 
-      <div ref={board} className="summer-board mt-6 rounded-lg border border-line bg-surface p-4 shadow-soft sm:p-6 lg:-mx-16 lg:p-8">
+/**
+ * The example summer beside the headline, on wide screens only: the product before any more
+ * words. Below lg it is hidden and Landing (or the waitlist page) shows ExampleSummer instead.
+ */
+export function HeroSummer({ className }: { className?: string }) {
+  return (
+    <figure className={cx('hidden lg:block', className)}>
+      <SummerBoard />
+      <figcaption className="mt-3 text-small text-muted">
+        An example: two kids, ten weeks, one gap still to fill. Prices are per week.
+      </figcaption>
+    </figure>
+  )
+}
+
+function SummerBoard({ className }: { className?: string }) {
+  const board = useFillIn()
+  return (
+      <div ref={board} className={cx('summer-board rounded-lg border border-line bg-surface p-4 shadow-soft sm:p-6', className)}>
         <div className="grid grid-cols-10 gap-1 border-b border-line pb-1 text-caption text-muted" aria-hidden="true">
           {AXIS.map(([month, days]) => (
             <div key={month} className={MONTH_SPAN[days.length]}>
@@ -285,6 +309,5 @@ export function ExampleSummer({ title = 'A whole summer on one page' }: { title?
           </div>
         ))}
       </div>
-    </section>
   )
 }
