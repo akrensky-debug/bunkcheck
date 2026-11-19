@@ -13,6 +13,40 @@ export const STARTERS = [
   'When does registration open near me?',
 ]
 
+/**
+ * Example answers to "So, who do you need to plan for?", shown one at a time in the chat bar.
+ * Different family shapes, in the words parents use, at schools we have dates for, so copying
+ * one works. Each fits two lines on a 360px phone; a third line is cut off, so check before adding.
+ */
+export const EXAMPLES = [
+  'Maya, 8, in 3rd grade, and Leo, 5, in kindergarten. Both at Wheeler.',
+  'Sam, 10, 5th grade at Gordon. Loves coding, not swimming.',
+  'Ella and Max, 7, twins at Providence Public. We work till 6.',
+  'Ava, 12, in 7th grade at Lincoln. Open to two weeks of sleepaway.',
+  'Noah, 6, 1st grade in Barrington. Away the last week of July.',
+  'Three kids, 4, 9 and 13, in Cranston. Full days, all summer.',
+]
+
+const EXAMPLE_MS = 4000
+
+/**
+ * The example to show now. It changes every few seconds, and holds still while `paused` (the
+ * parent is in the box) and for anyone who asked for reduced motion.
+ */
+export function useRotatingExample(paused: boolean): string {
+  const [i, setI] = useState(0)
+  const [still, setStill] = useState(true)  // still until we know reduced motion is off
+  useEffect(() => {
+    setStill(!!window.matchMedia?.('(prefers-reduced-motion: reduce)').matches)
+  }, [])
+  useEffect(() => {
+    if (paused || still) return
+    const t = window.setInterval(() => setI(n => (n + 1) % EXAMPLES.length), EXAMPLE_MS)
+    return () => window.clearInterval(t)
+  }, [paused, still])
+  return EXAMPLES[i]
+}
+
 /** Suggested first messages, as buttons. */
 export function Starters({ onPick, disabled }: { onPick: (text: string) => void; disabled: boolean }) {
   return (
