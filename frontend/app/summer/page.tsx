@@ -125,7 +125,17 @@ export default function SummerPage() {
       {error && <Notice tone="error" className="max-w-narrow">{error}</Notice>}
 
       <div className="max-w-narrow">
-        {question ? (
+        {/* Once the board is up it's the main thing on the page, so the next question waits on
+            one line above it and opens when tapped. Before that, the question leads. */}
+        {question && board.ready && !editing ? (
+          <div className="flex flex-wrap items-center gap-x-4 gap-y-2 border-y border-line py-4">
+            <Text>
+              <span className="text-muted">Next question: </span>
+              <span className="font-semibold">{question.prompt}</span>
+            </Text>
+            <Button variant="secondary" size="sm" onClick={() => setEditing(question.field)}>Answer</Button>
+          </div>
+        ) : question ? (
           <QuestionCard
             question={question}
             profile={family.profile as Family['profile'] & Record<string, unknown>}

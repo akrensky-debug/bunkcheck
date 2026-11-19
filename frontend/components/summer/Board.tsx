@@ -4,7 +4,7 @@ import { useState } from 'react'
 import type { Board, Cell, KidRow, Option, Pick } from '@/lib/summer'
 import { TONE_WORD, cellTone, fmtDay, money, toneCounts } from '@/lib/summer'
 import {
-  Button, ChoiceChip, Heading, Meta, StatusCounts, StatusDot, StatusLegend, StatusMark, StatusStrip, Text, TextLink, cx,
+  Button, ChoiceChip, Heading, Meta, StatusCounts, StatusDot, StatusMark, StatusStrip, Text, TextLink, cx,
   statusEdge,
 } from '@/components/ui'
 import { miles } from '@/lib/format'
@@ -41,15 +41,19 @@ export function SummerBoard({ board, busy, onAdd, onChoose, onRemove }: {
         <Heading level="h2">{board.planned} of {board.weeks_needed} weeks planned</Heading>
         {board.cost > 0 && <Text tone="muted">{money(board.cost)} so far, at listed prices</Text>}
       </div>
+      {/* The next step is a place to go, not a sentence to read. No legend: every count and
+          every week already says set, in progress or open in words. */}
       {board.start_with && (
-        <Text tone="muted">Start with the week of {fmtDay(board.start_with)}.</Text>
+        <Text tone="muted">
+          Start with{' '}
+          <TextLink href={`#${kidAnchor(kid, { week_of: board.start_with } as Cell)}`} arrow className="lg:hidden">
+            the week of {fmtDay(board.start_with)}
+          </TextLink>
+          <TextLink href={`#week-${board.start_with}`} arrow className="hidden lg:inline-flex">
+            the week of {fmtDay(board.start_with)}
+          </TextLink>
+        </Text>
       )}
-      <StatusLegend items={[
-        { tone: 'go', label: 'Set: registered, on your calendar or away' },
-        { tone: 'caution', label: 'In progress: ideas, picked, waitlisted or hours to check' },
-        { tone: 'stop', label: 'Open: nothing yet' },
-        { tone: 'neutral', label: 'No care needed' },
-      ]} />
 
       {/* Phones: one kid at a time, weeks down the page. */}
       <div className="space-y-4 lg:hidden">
