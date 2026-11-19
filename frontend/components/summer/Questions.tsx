@@ -20,7 +20,7 @@ export function AnswerChips({ chips, onEdit }: { chips: Chip[]; onEdit: (f: Brie
             type="button"
             onClick={() => onEdit(c.field)}
             className={cx(
-              'inline-flex items-center gap-2 rounded-pill border border-line bg-surface px-3 py-1 text-small text-ink',
+              'press inline-flex items-center gap-2 rounded-pill border border-line bg-surface px-3 py-1 text-small text-ink',
               'transition-colors duration-150 hover:border-ink',
             )}
           >
