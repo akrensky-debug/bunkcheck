@@ -22,11 +22,11 @@ export default function HandRaiserPage() {
         <div className="lg:grid lg:grid-cols-2 lg:items-start lg:gap-12">
         <div>
         <p className="mt-5 max-w-measure text-lead text-muted">
-          We&rsquo;re parents too. Bunkcheck does the legwork: more than 450 summer camps, with their schedules,
+          We&rsquo;re parents too. Bunkcheck does the legwork: hundreds of summer camps, with their schedules,
           costs and details, in one place. You plan, book and schedule the whole summer in a fraction of the time.
         </p>
         <p className="mt-4 max-w-measure text-small text-muted">
-          <span className="font-semibold text-ink">Now in New England:</span> CT, MA, ME, NH, RI and VT, with the most camps around Boston and Providence.
+          <span className="font-semibold text-ink">Now in New England:</span> more than 450 camps across CT, MA, ME, NH, RI and VT, with more added every day. Most are around Boston and Providence.
         </p>
         <p className="mt-4 max-w-measure text-lead text-muted">
           And registration seems to open at 10 a.m. on a Thursday, right when you&rsquo;re in a meeting. We&rsquo;ll

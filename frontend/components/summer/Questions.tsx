@@ -28,7 +28,7 @@ export function AnswerChips({ chips, onEdit }: { chips: Chip[]; onEdit: (f: Brie
             {!settled(c) && <StatusDot tone="caution" label="Not settled yet:" />}
             <span>
               {c.label}
-              {!settled(c) && <span className="text-muted"> ({c.source === 'last_year' ? 'based on last year' : 'our guess'})</span>}
+              {c.source === 'last_year' && <span className="text-muted"> (based on last year)</span>}
             </span>
           </button>
         </li>
