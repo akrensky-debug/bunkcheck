@@ -17,6 +17,9 @@ from campfinder.services.search import search_camps
 
 BASE = {"city": "Providence", "state": "RI", "camp_type": "day", "is_active": True,
         "verification_status": "team_verified"}
+# Listing facts stated, so the only notes these tests see are about price (test_listing_facts
+# covers the note for facts a listing leaves out).
+FACTS_LISTED = {"extended_care": False, "transportation": False, "meals_included": False, "financial_aid": False}
 CAMPS: list[dict[str, Any]] = [
     # Confirmed and complete, so it outscores the priced camps unless the budget rule holds.
     {"id": "aaaaaaaa-0000-0000-0000-000000000001", "name": "No Price Posted", "description_short": "Fun.", "verification_status": "camp_verified"},
@@ -62,7 +65,8 @@ async def test_tool_labels_unpriced_cards_and_counts_only_prices_shown(listed) -
 
 
 async def test_last_season_without_a_price_is_not_counted_as_showing_one(db) -> None:
-    db.table("camps").insert({**BASE, "id": "bbbbbbbb-0000-0000-0000-000000000001", "name": "Old And Unpriced", "season_year": 2020}).execute()
+    db.table("camps").insert({**BASE, **FACTS_LISTED, "id": "bbbbbbbb-0000-0000-0000-000000000001", "name": "Old And Unpriced",
+                              "season_year": 2020}).execute()
     out = await tools.run_tool("search_camps", {"location": "Providence, RI"})
     assert out.content["note"] is None
 
@@ -162,9 +166,9 @@ async def test_mcp_cards_carry_a_note_that_counts_only_the_cards_shown(db) -> No
     3 unpriced and 17 last-season camps above 8 cards that were all priced and current."""
     from campfinder.mcp_server import MAX_CARDS, _widget_payload
 
-    priced = [{**BASE, "id": f"ffffffff-0000-0000-0000-{i:012d}", "name": f"Priced {i}", "price_per_week": 300,
+    priced = [{**BASE, **FACTS_LISTED, "id": f"ffffffff-0000-0000-0000-{i:012d}", "name": f"Priced {i}", "price_per_week": 300,
                "verification_status": "camp_verified", "description_short": "x"} for i in range(MAX_CARDS + 2)]
-    old_unpriced = [{**BASE, "id": f"ffffffff-1111-0000-0000-{i:012d}", "name": f"Unpriced {i}",
+    old_unpriced = [{**BASE, **FACTS_LISTED, "id": f"ffffffff-1111-0000-0000-{i:012d}", "name": f"Unpriced {i}",
                      "season_year": 2020, "price_min": 900, "price_per": "session"} for i in range(3)]
     db.table("camps").insert(priced + old_unpriced).execute()
     args = {"location": "Providence, RI", "max_price_per_week": 400, "limit": 20}

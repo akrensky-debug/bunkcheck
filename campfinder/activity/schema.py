@@ -12,6 +12,9 @@ Versions (all additive; nothing is renamed or removed within v1):
   (full term, per class, drop-in, trial...), and an `enrollment` window. Programs gain
   `skill_levels`, `trial_available` and `membership_required`. Session dates may be null
   for an ongoing program with no published term. Verification adds `provider_verified`.
+- 2026-11-19: `logistics.extended_care`, `logistics.transportation`, `logistics.meals_included`
+  and `price.financial_aid` are null when the listing doesn't say. Before, a missing fact came
+  back as false, which read as "no". false now always means the listing says no.
 """
 
 from __future__ import annotations
@@ -22,7 +25,7 @@ from uuid import UUID
 
 from pydantic import BaseModel, Field
 
-SCHEMA_VERSION = "2026-10-02"
+SCHEMA_VERSION = "2026-11-19"
 
 ProgramKind = Literal["camp", "class", "lesson", "league", "after_school", "event"]
 Availability = Literal["open", "limited", "waitlist", "full", "unknown"]
@@ -62,7 +65,7 @@ class Price(BaseModel):
     max: float | None = None
     unit: str | None = Field(default=None, description="What a listed price covers, e.g. 'week', 'session'.")
     deposit_required: bool | None = None
-    financial_aid: bool = False
+    financial_aid: bool | None = Field(default=None, description="null: the listing doesn't say. Not a no; ask the provider.")
     per_class: float | None = Field(
         default=None, description="Lowest price of a single class or lesson, stated or full-term price divided by class count.",
     )
@@ -99,9 +102,9 @@ class EnrollmentWindow(BaseModel):
 
 
 class Logistics(BaseModel):
-    extended_care: bool = False
-    transportation: bool = False
-    meals_included: bool = False
+    extended_care: bool | None = Field(default=None, description="null: the listing doesn't say. Not a no; ask the provider.")
+    transportation: bool | None = Field(default=None, description="null: the listing doesn't say. Not a no; ask the provider.")
+    meals_included: bool | None = Field(default=None, description="null: the listing doesn't say. Not a no; ask the provider.")
     indoor_outdoor: str | None = None
     gender_policy: str | None = None
 

@@ -4,7 +4,7 @@ Verified, structured data on kids' programs for family assistants, apps and part
 Camps in the Northeast US, and year-round classes, lessons, leagues and after-school
 programs (a first pilot: swim lessons around Providence, RI) in the same schema.
 
-Schema version: `2026-10-02` (returned as `schema_version` on every response). See
+Schema version: `2026-11-19` (returned as `schema_version` on every response). See
 [Versions](#versions) for what changed.
 
 Base URL: `https://<api-host>/api/activity/v1`  ·  Interactive docs: `/docs#/Activity API v1`
@@ -105,6 +105,11 @@ fact that wasn't published is listed in `fields_missing` (e.g. `schedule.start_t
 `fields_verified`, `fields_unverified` and `fields_missing` say which facts are confirmed,
 so an assistant can say "price confirmed by the camp; refund policy not listed".
 
+`logistics.extended_care`, `logistics.transportation`, `logistics.meals_included` and
+`price.financial_aid` are `true`, `false` or `null`. `null` means the listing doesn't say,
+which is not a no: tell the parent it isn't listed and to ask the camp. The matching
+`/programs` filters (`extended_care=true` and so on) only return programs whose listing says yes.
+
 Demand signals (`POST /demand`) also accept `days_of_week`, `earliest_start` and
 `latest_end`, so "nothing on Saturday mornings" is counted.
 
@@ -161,3 +166,4 @@ All changes within v1 are additive; nothing is renamed or removed.
 | --- | --- |
 | `2026-10-01` | Camps and their dated sessions. |
 | `2026-10-02` | Year-round programs (`class`, `lesson`, `league`, `after_school`, `event`). Session: `term`, `skill_level`, `ages`, `location`, `schedule`, `prices`, `enrollment`, `drop_in_allowed`; `start_date`/`end_date` nullable for non-camp kinds. Program: `skill_levels`, `trial_available`, `trial_notes`, `membership_required`; `price.per_class`, `price.options`. Verification status `provider_verified`. `/programs` filters `day`, `earliest_start`, `latest_end`, `max_price_per_class`; `/sessions` filter `kind`. Demand: `days_of_week`, `earliest_start`, `latest_end`. |
+| `2026-11-19` | `logistics.extended_care`, `logistics.transportation`, `logistics.meals_included` and `price.financial_aid` are `null` when the listing doesn't say (they were `false`). `false` now always means the listing says no. |

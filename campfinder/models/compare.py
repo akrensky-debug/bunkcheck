@@ -33,9 +33,9 @@ class CampComparison(BaseModel):
     price_per_week: float | None
     session_count: int
     sessions: list[SessionRange]
-    transportation: bool
-    extended_care: bool
-    meals_included: bool
+    transportation: bool | None  # None: the listing doesn't say
+    extended_care: bool | None
+    meals_included: bool | None
     aca_accredited: bool | None
     verification_status: str
     refund_policy_summary: str | None

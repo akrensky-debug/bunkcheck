@@ -6,6 +6,7 @@ from typing import Any
 
 from campfinder.database import get_supabase
 from campfinder.models.compare import CampComparison, CompareRequest, CompareResponse, SessionRange
+from campfinder.services.camps import listing_fact
 from campfinder.services.differences import generate_differences
 from campfinder.services.errors import NotFound
 from campfinder.services.geo import geocode_location, haversine_miles
@@ -66,9 +67,9 @@ def compare_camps(req: CompareRequest) -> CompareResponse:
                 )
                 for s in camp_sessions
             ],
-            transportation=camp.get("transportation") or False,
-            extended_care=camp.get("extended_care") or False,
-            meals_included=camp.get("meals_included") or False,
+            transportation=listing_fact(camp.get("transportation")),
+            extended_care=listing_fact(camp.get("extended_care")),
+            meals_included=listing_fact(camp.get("meals_included")),
             aca_accredited=camp.get("aca_accredited"),
             verification_status=camp.get("verification_status", "unverified"),
             refund_policy_summary=camp.get("refund_policy_summary"),

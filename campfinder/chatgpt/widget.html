@@ -114,9 +114,11 @@
     if (TRUST[c.verification_status]) chips.push(`<span class="chip ok">✓ ${esc(TRUST[c.verification_status])}</span>`);
     else chips.push(`<span class="chip">Not yet verified</span>`);
     if (c.age_min != null && c.age_max != null) chips.push(`<span class="chip">Ages ${c.age_min}–${c.age_max}</span>`);
-    if (c.extended_care) chips.push(`<span class="chip">Extended care</span>`);
-    if (c.transportation) chips.push(`<span class="chip">Transportation</span>`);
-    if (c.financial_aid) chips.push(`<span class="chip">Financial aid</span>`);
+    // A chip only for a listed yes. null means the listing doesn't say, which is not a no,
+    // so the card shows no chip and says nothing either way; the note tells the assistant.
+    if (c.extended_care === true) chips.push(`<span class="chip">Extended care</span>`);
+    if (c.transportation === true) chips.push(`<span class="chip">Transportation</span>`);
+    if (c.financial_aid === true) chips.push(`<span class="chip">Financial aid</span>`);
     const where = [c.city && c.state ? `${c.city}, ${c.state}` : "", miles(c.distance_miles)].filter(Boolean).join(" · ");
     // A free camp (0) and a camp with no single weekly price show price_label instead.
     const price = session && session.price != null ? session.price : (c.price_per_week || null);

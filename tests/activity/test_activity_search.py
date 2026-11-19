@@ -66,7 +66,7 @@ def test_activity_api_programs_merge_and_kind(seeded):
                                                           "include_sessions": True}, headers=AUTH)
     assert res.status_code == 200, res.text
     body = res.json()
-    assert body["schema_version"] == "2026-10-02" and body["total"] == 2
+    assert body["schema_version"] == "2026-11-19" and body["total"] == 2
     y = next(p for p in body["data"] if p["name"] == "Youth Swim Lessons")
     assert y["kind"] == "lesson" and y["trial_available"] is True and y["price"]["per_class"] == 15
     s = next(s for s in y["sessions"] if s["skill_level"] == "Stage 2")

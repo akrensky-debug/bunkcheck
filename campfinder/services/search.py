@@ -16,7 +16,7 @@ from supabase import Client
 from campfinder.database import get_supabase
 from campfinder.models.camp import CampSearchResult
 from campfinder.models.search import SearchRequest, SearchResponse
-from campfinder.services.camps import camp_url
+from campfinder.services.camps import camp_url, listing_fact
 from campfinder.services.geo import geocode_location, haversine_miles
 from campfinder.services.price import as_price, price_label, weekly_price
 from campfinder.services.ranking import score_camp
@@ -187,10 +187,10 @@ def to_search_result(camp: dict[str, Any]) -> CampSearchResult:
         price_max=as_price(camp.get("price_max")),
         weekly_price=weekly_price(camp),
         price_label=price_label(camp),
-        transportation=camp.get("transportation") or False,
-        extended_care=camp.get("extended_care") or False,
-        meals_included=camp.get("meals_included") or False,
-        financial_aid=camp.get("financial_aid") or False,
+        transportation=listing_fact(camp.get("transportation")),
+        extended_care=listing_fact(camp.get("extended_care")),
+        meals_included=listing_fact(camp.get("meals_included")),
+        financial_aid=listing_fact(camp.get("financial_aid")),
         aca_accredited=camp.get("aca_accredited"),
         verification_status=camp.get("verification_status", "unverified"),
         last_updated_date=camp.get("last_updated_date"),

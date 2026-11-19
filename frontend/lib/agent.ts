@@ -89,9 +89,10 @@ export interface Comparison {
     season_year?: number | null
     last_season?: boolean
     session_count: number
-    transportation: boolean
-    extended_care: boolean
-    meals_included: boolean
+    /** null: the listing doesn't say. Not a no. */
+    transportation: boolean | null
+    extended_care: boolean | null
+    meals_included: boolean | null
     verification_status: string
     distance_miles: number | null
   }>
