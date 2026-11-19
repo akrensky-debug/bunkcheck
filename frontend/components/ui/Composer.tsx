@@ -77,7 +77,7 @@ export function Composer({ value, onChange, onSubmit, placeholder, disabled = fa
         disabled={!ready}
         aria-label={busy ? 'Working' : 'Send'}
         className={cx(
-          'inline-flex shrink-0 items-center justify-center rounded-pill bg-accent text-accent-ink transition-colors duration-150 hover:bg-accent-hover disabled:opacity-30',
+          'press inline-flex shrink-0 items-center justify-center rounded-pill bg-accent text-accent-ink transition-colors duration-150 hover:bg-accent-hover active:bg-accent-hover disabled:opacity-30',
           hero ? 'h-12 w-12' : 'h-10 w-10',
         )}
       >

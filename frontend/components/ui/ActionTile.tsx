@@ -49,7 +49,7 @@ export function ActionTile({ icon, title, hint, href, onClick, disabled = false,
   if (preview) {
     return (
       <div className={cx(box, expanded ? 'border-ink' : 'border-line hover:border-ink', className)}>
-        <button type="button" onClick={onToggle} aria-expanded={!!expanded} aria-controls={panelId} className={cx(row, 'rounded-lg')}>
+        <button type="button" onClick={onToggle} aria-expanded={!!expanded} aria-controls={panelId} className={cx(row, 'press rounded-lg')}>
           {body}
         </button>
         {expanded && <div id={panelId} className="border-t border-line p-4">{children}</div>}
@@ -57,7 +57,7 @@ export function ActionTile({ icon, title, hint, href, onClick, disabled = false,
     )
   }
 
-  const cls = cx(box, row, 'border-line hover:border-ink disabled:pointer-events-none disabled:opacity-40', className)
+  const cls = cx(box, row, 'press border-line hover:border-ink active:border-ink disabled:pointer-events-none disabled:opacity-40', className)
   return href
     ? <a href={href} className={cls}>{body}</a>
     : <button type="button" onClick={onClick} disabled={disabled} className={cls}>{body}</button>

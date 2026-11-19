@@ -85,7 +85,7 @@ export function ChoiceChip({ checked, onChange, children, type = 'checkbox', nam
   return (
     <label
       className={cx(
-        'inline-flex cursor-pointer items-center gap-1.5 rounded-pill border px-3.5 py-1.5 text-small transition-colors duration-150',
+        'press inline-flex cursor-pointer items-center gap-1.5 rounded-pill border px-3.5 py-1.5 text-small transition-colors duration-150',
         'has-[:focus-visible]:outline has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-focus',
         checked ? 'border-ink bg-surface text-ink' : cx('border-line text-muted hover:text-ink', strikeWhenOff && 'line-through'),
       )}

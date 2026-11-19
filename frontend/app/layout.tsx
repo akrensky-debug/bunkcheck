@@ -49,7 +49,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script dangerouslySetInnerHTML={{ __html: HANDRAISER_SCRIPT }} />
       </head>
       <body className="min-h-dvh flex flex-col">
-        <header className="sticky top-0 z-50 border-b border-line bg-bg/90 backdrop-blur">
+        <header className="chrome sticky top-0 z-50 border-b bg-bg/90 backdrop-blur">
           <div className="mx-auto flex h-16 max-w-wide items-center justify-between gap-4 px-4 sm:px-6">
             <a href="/" className="flex shrink-0 items-center" aria-label="Bunkcheck home">
               {/* Phones get the mark alone: the full lockup and three links need about 423px. */}

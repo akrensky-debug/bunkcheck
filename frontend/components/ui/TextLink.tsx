@@ -17,7 +17,7 @@ export function TextLink({ tone = 'ink', external = false, arrow = false, classN
 } & AnchorHTMLAttributes<HTMLAnchorElement>) {
   return (
     <a
-      className={cx('inline-flex items-center gap-1 transition-colors duration-150', TONE[tone], className)}
+      className={cx('inline-flex items-center gap-1 transition-colors duration-150 active:opacity-60', TONE[tone], className)}
       {...(external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
       {...rest}
     >
