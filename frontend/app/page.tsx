@@ -164,6 +164,9 @@ export default function AgentHome() {
             <p className="mt-8 font-semibold text-ink">
               So, who do you need to plan for?
             </p>
+            <p className="mt-1 text-small text-muted">
+              Add their school and grade, and we&rsquo;ll work out when school lets out.
+            </p>
             <div id="start" className="mt-3 scroll-mt-24">
               <Composer
                 size="hero"
@@ -172,7 +175,7 @@ export default function AgentHome() {
                 onSubmit={() => send(input)}
                 canSend={!!family}
                 busy={busy}
-                placeholder="Two kids, 6 and 9, near Providence. July is the hard part."
+                placeholder="Maya, 3rd grade, and Leo, kindergarten, both at Wheeler."
                 label="So, who do you need to plan for?"
               />
             </div>
