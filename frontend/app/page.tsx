@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { Events, captureAssistantArrival, track } from '@/lib/analytics'
 import {
-  ChatRefused, loadFamily, resetCalendarLink, streamChat,
+  ChatRefused, kidDetail, loadFamily, resetCalendarLink, streamChat,
   type AgentEvent, type Family, type UIData,
 } from '@/lib/agent'
 import { AgentBlock, AgentText, CalendarList } from '@/components/agent/AgentBlocks'
@@ -313,7 +313,7 @@ function FamilyPanel({ family, onChange }: { family: Family; onChange: (f: Famil
             {profile.home_location && <p>{profile.home_location}</p>}
             {profile.kids?.map((k, i) => (
               <p key={i}>
-                {k.name || 'Child'}{k.age != null ? `, ${k.age}` : ''}
+                {k.name || 'Child'}{kidDetail(k) ? `, ${kidDetail(k)}` : ''}
                 {k.interests?.length ? <span className="text-muted"> · {k.interests.join(', ')}</span> : null}
               </p>
             ))}

@@ -14,7 +14,7 @@ export interface Chip { field: BriefField; label: string; source: Source }
 export interface LaterItem { field: BriefField; prompt: string; why: 'skipped' | 'not_sure' }
 export interface Brief { chips: Chip[]; next_question: Question | null; finish_later: LaterItem[] }
 
-export interface BriefKid { name?: string | null; age?: number | null; interests?: string[]; notes?: string | null }
+export interface BriefKid { name?: string | null; age?: number | null; grade?: number | null; age_estimated?: boolean; interests?: string[]; notes?: string | null }
 export interface WorkBlock { parent: string; days: string[]; start: string; end: string }
 export interface AwayRange { start_date: string; end_date: string; label: string; child_name?: string | null }
 export interface BriefUpdate {
