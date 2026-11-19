@@ -21,18 +21,21 @@ export function AnswerChips({ chips, onEdit }: { chips: Chip[]; onEdit: (f: Brie
             onClick={() => onEdit(c.field)}
             className={cx(
               'rounded-pill border px-3 py-1 text-small transition-colors duration-150 hover:border-ink',
-              c.source === 'guessed' ? 'border-dashed border-line text-muted' : 'border-line bg-surface text-ink',
+              // Two looks only: settled is solid, not settled yet is dashed. The words say why.
+              settled(c) ? 'border-line bg-surface text-ink' : 'border-dashed border-line text-muted',
             )}
           >
             {c.label}
-            {c.source === 'guessed' && <span className="text-muted"> (guess, fix)</span>}
-            {c.source === 'last_year' && <span className="text-muted"> (last year&rsquo;s date)</span>}
+            {!settled(c) && <span className="text-muted"> ({c.source === 'last_year' ? 'based on last year' : 'our guess'})</span>}
           </button>
         </li>
       ))}
     </ul>
   )
 }
+
+/** Told to us or published for this year. Last year's dates and our guesses aren't settled yet. */
+const settled = (c: Chip) => c.source === 'said' || c.source === 'looked_up'
 
 /** One question with Back, Skip for now and Not sure yet. Nothing here is required. */
 export function QuestionCard({ question, profile, weeks, schools, busy, canGoBack, onAnswer, onSkip, onBack, onDone }: {
