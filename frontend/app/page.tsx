@@ -163,10 +163,13 @@ export default function AgentHome() {
             <div className={cx(!side && 'lg:grid lg:grid-cols-2 lg:items-start lg:gap-12')}>
             <div>
             <p className="mt-5 max-w-measure text-lead text-muted">
-              We&rsquo;re parents too. Bunkcheck does the legwork: hundreds of summer camps, with their schedules, costs and details, in one place. You plan, book and schedule the whole summer in a fraction of the time.
+              Bunkcheck does the legwork for you. Hundreds of summer camps, with their schedules, costs and details, in one place. We&rsquo;ve made it easy to plan, book and schedule your kids&rsquo; whole summer in a fraction of the time.
             </p>
             <p className="mt-8 font-semibold text-ink">
-              So, what are you trying to cover this summer?
+              So, who do you need to plan for?
+            </p>
+            <p className="mt-1 text-small text-muted">
+              Add their school and grade, and we&rsquo;ll work out when school lets out.
             </p>
             <div id="start" className="mt-3 scroll-mt-24">
               <Composer
@@ -176,8 +179,8 @@ export default function AgentHome() {
                 onSubmit={() => send(input)}
                 canSend={!!family}
                 busy={busy}
-                placeholder="Two kids, 6 and 9, near Providence. July is the hard part."
-                label="What are you trying to cover this summer?"
+                placeholder="Maya, 8, in 3rd grade, and Leo, 5, in kindergarten. Both at Wheeler."
+                label="So, who do you need to plan for?"
               />
             </div>
             <div className="mt-5">
