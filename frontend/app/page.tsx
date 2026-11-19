@@ -10,7 +10,7 @@ import {
 import { AgentBlock, AgentText, CalendarList } from '@/components/agent/AgentBlocks'
 import { WeekView } from '@/components/agent/ActivityBlocks'
 import { getFamilyWeek, type FamilyWeek } from '@/lib/activities'
-import { HeroSummer, Landing, Starters } from '@/components/home/Landing'
+import { HeroSummer, Landing, Starters, useRotatingExample } from '@/components/home/Landing'
 import { Button, Composer, IconButton, cx } from '@/components/ui'
 
 type Part =
@@ -37,6 +37,8 @@ export default function AgentHome() {
   const [input, setInput] = useState('')
   const [busy, setBusy] = useState(false)
   const [panelOpen, setPanelOpen] = useState(false)
+  const [inBox, setInBox] = useState(false)
+  const example = useRotatingExample(inBox)
   const lastAskRef = useRef<HTMLDivElement>(null)
   const router = useRouter()
 
@@ -176,7 +178,8 @@ export default function AgentHome() {
             <p className="mt-1 text-small text-muted">
               Add their school and grade, and we&rsquo;ll work out when school lets out.
             </p>
-            <div id="start" className="mt-3 scroll-mt-24">
+            {/* The example changes every few seconds until the parent clicks into the box. */}
+            <div id="start" className="mt-3 scroll-mt-24" onFocus={() => setInBox(true)} onBlur={() => setInBox(false)}>
               <Composer
                 size="hero"
                 value={input}
@@ -184,7 +187,7 @@ export default function AgentHome() {
                 onSubmit={() => send(input)}
                 canSend={!!family}
                 busy={busy}
-                placeholder="Maya, 8, in 3rd grade, and Leo, 5, in kindergarten. Both at Wheeler."
+                placeholder={example}
                 label="So, who do you need to plan for?"
               />
             </div>
