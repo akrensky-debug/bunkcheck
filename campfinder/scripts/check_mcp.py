@@ -12,6 +12,7 @@ Exits non-zero if anything fails. Defaults to http://localhost:8000/mcp.
 from __future__ import annotations
 
 import json
+import re
 import sys
 from typing import Any
 
@@ -97,19 +98,32 @@ def main() -> None:
         check(not first.get("isError") and bool(camps), f"search_camps Providence age 8: {len(camps)} cards")
         check("utm_source=" in (sc.get("plan_url") or ""), f"handoff link is tagged: {(sc.get('plan_url') or '')[-60:]}")
 
-        r = call(client, url, "search_camps", {"location": "Boston, MA", "requires_extended_care": True, "max_price_per_week": 400})
-        check(not r.get("isError"), "search_camps Boston, extended care, under $400")
-        # Budget rule (docs/chatgpt-app.md): a card shows a price, and camps with no weekly price
-        # come after every priced one, labelled, and the note says how many.
-        boston = (r.get("structuredContent") or {}).get("camps") or []
-        unpriced = [c.get("weekly_price") is None for c in boston]
-        check(all(c.get("price_label") for c in boston), f"every Boston card carries a price label ({len(boston)} cards)")
-        over = [c["name"] for c in boston if (c.get("weekly_price") or 0) > 400]
-        check(not over, f"no Boston card is over $400 a week {over or ''}")
-        check(unpriced == sorted(unpriced), f"camps with no weekly price come last ({sum(unpriced)} of {len(boston)})")
-        if any(unpriced):
-            note = (r.get("structuredContent") or {}).get("note") or ""
-            check(f"{sum(unpriced)} of these have no weekly price posted" in note, "note counts camps with no weekly price")
+        # Budget rule (docs/chatgpt-app.md): every card shows a price label, nothing is over budget,
+        # camps with no weekly price come after every priced one, and the note counts only the cards
+        # shown. Boston under $100 is the case with unpriced cards; limit 20 is more than the widget shows.
+        for args, label in (
+            ({"requires_extended_care": True, "max_price_per_week": 400}, "Boston, extended care, under $400"),
+            ({"requires_extended_care": True, "max_price_per_week": 400, "limit": 20}, "same, limit 20"),
+            ({"max_price_per_week": 100, "limit": 20}, "Boston under $100"),
+        ):
+            budget = args["max_price_per_week"]
+            r = call(client, url, "search_camps", {"location": "Boston, MA", **args})
+            check(not r.get("isError"), f"search_camps {label}")
+            sc = r.get("structuredContent") or {}
+            cards, note = sc.get("camps") or [], sc.get("note") or ""
+            unpriced = [c.get("weekly_price") is None for c in cards]
+            old = sum(1 for c in cards if c.get("last_season") and c.get("price_label") != "Price not posted")
+            check(all(c.get("price_label") for c in cards), f"  every card carries a price label ({len(cards)} cards)")
+            over = [c["name"] for c in cards if (c.get("weekly_price") or 0) > budget]
+            check(not over, f"  no card is over ${budget} a week {over or ''}")
+            check(unpriced == sorted(unpriced), f"  no-weekly-price cards come last ({sum(unpriced)} of {len(cards)})")
+            def says(n: int, text: str) -> bool:  # whole number: "17 of these" must not pass for 7
+                return re.search(rf"(?<!\d){n} of these {text}", note) is not None
+
+            check(says(sum(unpriced), "have no weekly price posted") if any(unpriced)
+                  else "no weekly price posted" not in note, "  note's no-weekly-price count matches the cards")
+            check(says(old, "show last season's prices") if old
+                  else "last season's prices" not in note, "  note's last-season count matches the cards")
 
         r = call(client, url, "find_sessions", {"location": "Cranston, RI", "starts_on_or_after": "2027-07-05", "ends_on_or_before": "2027-07-11"})
         check(not r.get("isError") and "sessions" in (r.get("structuredContent") or {}), "find_sessions week of July 6 near Cranston")

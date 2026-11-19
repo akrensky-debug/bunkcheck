@@ -226,15 +226,16 @@ async def search_camps_tool(inp: SearchCampsInput, family_id: str | None = None)
             "total": res.total,
             "camps": [_compact_camp(c) for c in camps],
             "note": _empty_note(inp.location, "No camps matched. Widen the radius, drop a filter, or try a nearby city.")
-            if not camps else _search_note(camps, inp.max_price_per_week),
+            if not camps else search_note(camps, inp.max_price_per_week),
             **({"day_camp_only": "Overnight camps were left out: this family said day camp only."} if day_only else {}),
         },
         ui={"type": "camps", "camps": camps, "query": inp.model_dump(mode="json", exclude_none=True)},
     )
 
 
-def _search_note(camps: list[dict[str, Any]], budget: float | None) -> str | None:
-    """What the assistant must say about prices, counted from what the cards actually show."""
+def search_note(camps: list[dict[str, Any]], budget: float | None) -> str | None:
+    """What the assistant must say about prices, counted from the cards it is given. A caller that
+    shows fewer cards (the MCP widget shows MAX_CARDS) calls this again with the cards it shows."""
     notes = []
     if budget is not None:
         unpriced = sum(1 for c in camps if c.get("weekly_price") is None)

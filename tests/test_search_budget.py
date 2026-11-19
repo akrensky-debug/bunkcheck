@@ -155,3 +155,25 @@ async def test_rule_holds_for_any_mix_of_camps(db, seed: int) -> None:
         assert all(w is None or w <= budget for w in weekly), sort
         unpriced = [w is None for w in weekly]
         assert unpriced == sorted(unpriced), sort
+
+
+async def test_mcp_cards_carry_a_note_that_counts_only_the_cards_shown(db) -> None:
+    """The widget shows MAX_CARDS. Found live on 18 November 2026: with limit 20 the note counted
+    3 unpriced and 17 last-season camps above 8 cards that were all priced and current."""
+    from campfinder.mcp_server import MAX_CARDS, _widget_payload
+
+    priced = [{**BASE, "id": f"ffffffff-0000-0000-0000-{i:012d}", "name": f"Priced {i}", "price_per_week": 300,
+               "verification_status": "camp_verified", "description_short": "x"} for i in range(MAX_CARDS + 2)]
+    old_unpriced = [{**BASE, "id": f"ffffffff-1111-0000-0000-{i:012d}", "name": f"Unpriced {i}",
+                     "season_year": 2020, "price_min": 900, "price_per": "session"} for i in range(3)]
+    db.table("camps").insert(priced + old_unpriced).execute()
+    args = {"location": "Providence, RI", "max_price_per_week": 400, "limit": 20}
+    out = await tools.run_tool("search_camps", args)
+    assert out.content["note"].startswith("3 of these have no weekly price posted")  # the model's full list
+
+    payload = _widget_payload("search_camps", args, out, "claude")
+    assert len(payload["camps"]) == MAX_CARDS and all(c["weekly_price"] == 300 for c in payload["camps"])
+    assert payload["note"] is None  # nothing on the cards needs a caveat
+
+    few = await tools.run_tool("search_camps", {**args, "limit": 3})
+    assert _widget_payload("search_camps", args, few, "claude")["note"] is None
