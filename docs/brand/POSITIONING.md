@@ -6,6 +6,10 @@
 
 Unlock the collective intelligence of parents to make summer camps easier.
 
+## The vision
+
+Bunkcheck does the legwork so a family can plan, book and schedule the whole summer in a fraction of the time and effort it takes today, and have the best summer possible. (Andrew, 19 November 2026.) Copy that only says we gather camps is half the story: say we help her plan, book and schedule too.
+
 ## What we are
 
 The place New England parents plan and book the whole summer, and the place camps get found and booked without learning new software.
