@@ -103,6 +103,10 @@ html[data-handraiser] [data-public-nav] { display: inline; }
 .summer-board[data-armed] .summer-block {
   opacity: 0;
 }
+/* Printed, the page never scrolls the board into view: show it whole. */
+@media print {
+  .summer-board .summer-block { opacity: 1; animation: none; }
+}
 .summer-board[data-play] .summer-block {
   transform-origin: left center;
   animation: block-in 420ms cubic-bezier(0.2, 0, 0, 1) both;
