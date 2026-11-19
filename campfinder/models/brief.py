@@ -13,7 +13,9 @@ BriefField = Literal[
     "kids", "home", "school", "camp_weeks", "sleepaway", "care_hours", "interests",
     "weekly_budget", "max_drive_minutes", "booked_elsewhere",
 ]
-Source = Literal["said", "looked_up", "guessed"]
+# How sure a fact is, most to least: the parent said it; we looked it up and it's published;
+# it's last year's published date carried forward until the new one is out; our default guess.
+Source = Literal["said", "looked_up", "last_year", "guessed"]
 
 
 class Kid(BaseModel):

@@ -24,7 +24,9 @@ export function AnswerChips({ chips, onEdit }: { chips: Chip[]; onEdit: (f: Brie
               c.source === 'guessed' ? 'border-dashed border-line text-muted' : 'border-line bg-surface text-ink',
             )}
           >
-            {c.label}{c.source === 'guessed' && <span className="text-muted"> (guess, fix)</span>}
+            {c.label}
+            {c.source === 'guessed' && <span className="text-muted"> (guess, fix)</span>}
+            {c.source === 'last_year' && <span className="text-muted"> (last year&rsquo;s date)</span>}
           </button>
         </li>
       ))}

@@ -113,6 +113,24 @@ def test_school_dates_are_looked_up_or_guessed(monkeypatch) -> None:
     assert p["summer_start"] == "2027-06-15" and p["brief"]["facts"]["school"]["source"] == "said"
 
 
+def test_last_years_first_day_stands_in_until_the_new_one_is_out(monkeypatch) -> None:
+    # Thursday 27 August 2026 moves to Thursday 26 August 2027, so summer ends the day before.
+    cal = SchoolCalendar("Cranston Public Schools", ("Cranston",), date(2027, 6, 15), None,
+                         "https://example.org/cranston", date(2026, 11, 19), prior_first_day=date(2026, 8, 27))
+    monkeypatch.setattr("campfinder.services.school_calendars.SCHOOLS", [cal])
+    p = said({}, school="Cranston")
+    assert (p["summer_start"], p["summer_end"]) == ("2027-06-16", "2027-08-25")
+    assert p["brief"]["facts"]["school"]["source"] == "last_year"
+    assert sb.answered(p, "school")
+    assert [c.source for c in sb.chips(p) if c.field == "school"] == ["last_year"]
+    # Once next year's calendar is out, it wins and the date is confirmed.
+    monkeypatch.setattr("campfinder.services.school_calendars.SCHOOLS",
+                        [SchoolCalendar(*[getattr(cal, f) for f in ("name", "aliases", "last_day")], date(2027, 8, 31),
+                                        cal.source_url, cal.checked_on, prior_first_day=cal.prior_first_day)])
+    p = said({}, school="Cranston")
+    assert p["summer_end"] == "2027-08-30" and p["brief"]["facts"]["school"]["source"] == "looked_up"
+
+
 def test_profiles_from_before_the_brief_count_as_answered() -> None:
     legacy = {"kids": [{"name": "Maya", "age": 8}], "home_location": "Providence, RI", "summer_start": "2027-06-21", "summer_end": "2027-08-13"}
     assert ask(legacy) == "camp_weeks"
@@ -172,5 +190,7 @@ async def test_assistant_saves_through_the_brief_and_hears_the_next_question(db)
 
 def test_real_calendars_set_the_start_of_summer(client) -> None:
     p = said({}, school="providence")
-    assert p["summer_start"] == "2027-06-18" and p["summer_end"] == "2027-08-31"
+    # Providence started Tuesday 25 August 2026; a year on, same weekday, is Tuesday 24 August 2027.
+    assert p["summer_start"] == "2027-06-18" and p["summer_end"] == "2027-08-23"
+    assert p["brief"]["facts"]["school"]["source"] == "last_year"
     assert "Providence Public Schools" in client.get("/api/v1/schools").json()
