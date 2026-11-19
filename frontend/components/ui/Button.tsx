@@ -10,14 +10,16 @@ const BASE =
   'disabled:opacity-40 disabled:pointer-events-none aria-disabled:opacity-40 aria-disabled:pointer-events-none'
 
 const VARIANTS: Record<ButtonVariant, string> = {
-  primary: 'rounded-pill bg-accent text-accent-ink hover:bg-accent-hover',
-  secondary: 'rounded-pill border border-line bg-surface text-ink hover:border-ink',
-  ghost: 'rounded-pill text-ink hover:bg-tint',
+  // `press`: shrinks a little the moment it is pressed (globals.css).
+  primary: 'press rounded-pill bg-accent text-accent-ink hover:bg-accent-hover active:bg-accent-hover',
+  secondary: 'press rounded-pill border border-line bg-surface text-ink hover:border-ink active:border-ink',
+  ghost: 'press rounded-pill text-ink hover:bg-tint active:bg-tint',
   // Text buttons: no box, no padding. `link` for actions you want seen, `quiet` for
   // housekeeping (cancel, not now), `danger` for remove and delete.
-  link: 'rounded-sm text-ink underline decoration-line underline-offset-4 hover:decoration-ink',
-  quiet: 'rounded-sm text-muted hover:text-ink',
-  danger: 'rounded-sm text-error hover:underline underline-offset-4',
+  // Text buttons answer a press by dimming, since a box-less word has nothing to shrink.
+  link: 'rounded-sm text-ink underline decoration-line underline-offset-4 hover:decoration-ink active:opacity-60',
+  quiet: 'rounded-sm text-muted hover:text-ink active:text-ink',
+  danger: 'rounded-sm text-error hover:underline underline-offset-4 active:opacity-60',
 }
 
 const TEXT_ONLY: ButtonVariant[] = ['link', 'quiet', 'danger']
@@ -87,9 +89,9 @@ export function Button(props: ButtonProps) {
 
 const ICON_SIZES: Record<ButtonSize, string> = { sm: 'h-8 w-8', md: 'h-10 w-10', lg: 'h-12 w-12' }
 const ICON_VARIANTS = {
-  primary: 'bg-accent text-accent-ink hover:bg-accent-hover',
-  ghost: 'text-ink hover:bg-tint',
-  secondary: 'border border-line bg-surface text-ink hover:border-ink',
+  primary: 'bg-accent text-accent-ink hover:bg-accent-hover active:bg-accent-hover',
+  ghost: 'text-ink hover:bg-tint active:bg-tint',
+  secondary: 'border border-line bg-surface text-ink hover:border-ink active:border-ink',
 }
 
 /** A round button holding one icon. `label` is required: it is the accessible name. */
@@ -105,7 +107,7 @@ export function IconButton({ icon, label, variant = 'ghost', size = 'md', classN
       aria-label={label}
       title={label}
       className={cx(
-        'inline-flex shrink-0 items-center justify-center rounded-pill transition-colors duration-150 disabled:opacity-40 disabled:pointer-events-none',
+        'press inline-flex shrink-0 items-center justify-center rounded-pill transition-colors duration-150 disabled:opacity-40 disabled:pointer-events-none',
         ICON_SIZES[size], ICON_VARIANTS[variant], className,
       )}
       {...rest}

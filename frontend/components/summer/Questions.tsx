@@ -65,7 +65,7 @@ export function QuestionCard({ question, profile, weeks, schools, busy, canGoBac
 }
 
 function Save({ busy, disabled, children = 'Save' }: { busy: boolean; disabled?: boolean; children?: ReactNode }) {
-  return <Button type="submit" disabled={busy || disabled}>{busy ? 'Saving' : children}</Button>
+  return <Button type="submit" disabled={busy || disabled}>{busy ? 'Saving…' : children}</Button>
 }
 
 function Editor({ field, profile, weeks, schools, busy, onAnswer }: {

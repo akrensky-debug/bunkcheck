@@ -235,7 +235,7 @@ export async function resetCalendarLink(familyId: string): Promise<Family> {
 export async function downloadFamilyData(familyId: string): Promise<void> {
   const res = await fetch(`${API}/api/v1/families/${familyId}/export`, { headers: await authHeaders(), cache: 'no-store' })
   if (!res.ok) throw new Error('Could not prepare your download')
-  const name = /filename="([^"]+)"/.exec(res.headers.get('Content-Disposition') || '')?.[1] || 'campfinder-family.json'
+  const name = /filename="([^"]+)"/.exec(res.headers.get('Content-Disposition') || '')?.[1] || 'bunkcheck-family.json'
   const url = URL.createObjectURL(await res.blob())
   const a = Object.assign(document.createElement('a'), { href: url, download: name })
   document.body.appendChild(a)
