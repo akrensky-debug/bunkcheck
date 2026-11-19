@@ -63,6 +63,17 @@ async def not_sure(
     return _brief(summer_brief.skip(str(family_id), field, not_sure=True), context)
 
 
+@router.post("/families/{family_id}/brief/{field}/confirm", response_model=Brief, summary="That works")
+async def confirm(
+    family_id: UUID, field: BriefField,
+    context: list[Context] = Query(default=[]),
+    user_id: str | None = Depends(optional_user),
+) -> Brief:
+    """The parent accepts an answer we worked out (last year's date, a typical workday): it becomes theirs."""
+    authorize_family(family_id, user_id)
+    return _brief(summer_brief.confirm(str(family_id), field), context)
+
+
 @router.get("/schools", response_model=list[str], summary="Schools whose summer dates we know")
 async def schools() -> list[str]:
     """For the "Which school?" chips. Any other school still works; its dates are guessed."""

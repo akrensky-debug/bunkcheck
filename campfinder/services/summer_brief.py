@@ -312,16 +312,30 @@ def _day(d: str) -> str:
     return date.fromisoformat(d).strftime("%b %-d")
 
 
-def _school_basis(profile: dict[str, Any], source: Source) -> str | None:
+def _school_why(profile: dict[str, Any], source: Source) -> str | None:
     """What unsettled summer dates are worked out from, specific enough to check."""
     if source == "last_year":
         cal = find_school(profile.get("school") or "", date.fromisoformat(profile["summer_start"]).year)
         if cal and cal.prior_first_day:
-            return f"school started {_day(cal.prior_first_day.isoformat())} last fall"
-        return "last fall's first day of school"
+            return (f"We used last fall's first day. {cal.name} started {_day(cal.prior_first_day.isoformat())} "
+                    "last year and hasn't posted next year's date yet. We'll update it when they do.")
+        return "We used last fall's first day of school. We'll update it when the school posts next year's."
     if source == "guessed":
-        return "typical Rhode Island school dates"
+        if profile.get("school"):
+            return "We used typical Rhode Island school dates. We don't have this school's calendar yet."
+        return "We used typical Rhode Island school dates. Tell us the school and we'll look up its calendar."
     return None
+
+
+CARE_WHY = ("We assumed 8 to 6, Monday to Friday. Tell us your real hours and we'll find camps with the right "
+            "extended care.")
+
+
+def apply_confirm(profile: dict[str, Any], field: BriefField) -> dict[str, Any]:
+    """"That works": the parent accepts an answer we worked out, so it's theirs now."""
+    profile = copy.deepcopy(profile)
+    _set_fact(profile, field, "said")
+    return profile
 
 
 def _care_label(work: list[dict[str, Any]]) -> str:
@@ -356,7 +370,7 @@ def chips(profile: dict[str, Any]) -> list[Chip]:
     if known("school") and profile.get("summer_start") and profile.get("summer_end"):
         dates = f"{_day(profile['summer_start'])} to {_day(profile['summer_end'])}"
         label = f"{profile['school']} · {dates}" if profile.get("school") else f"Summer {dates}"
-        out.append(Chip(field="school", label=label, source=source("school"), basis=_school_basis(profile, source("school"))))
+        out.append(Chip(field="school", label=label, source=source("school"), why=_school_why(profile, source("school"))))
     if known("camp_weeks"):
         weeks = profile.get("camp_weeks")
         parts = ["Camp all summer" if weeks is None else
@@ -370,7 +384,7 @@ def chips(profile: dict[str, Any]) -> list[Chip]:
                         source=source("sleepaway")))
     if known("care_hours") and profile.get("work_schedule"):
         out.append(Chip(field="care_hours", label=_care_label(profile["work_schedule"]), source=source("care_hours"),
-                        basis="a typical workday" if source("care_hours") == "guessed" else None))
+                        why=CARE_WHY if source("care_hours") == "guessed" else None))
     if known("interests"):
         parts = [f"{k.get('name') or 'Kid'}: {', '.join(k['interests'][:3])}" for k in _kids(profile) if k.get("interests")]
         if parts:
@@ -425,6 +439,12 @@ def update_brief(
     """Save facts and return the new profile."""
     data = update.model_dump(mode="json", exclude_unset=True) if isinstance(update, BriefUpdate) else update
     profile = apply_update(load_profile(family_id), data, source, today or date.today())
+    _save(family_id, profile)
+    return profile
+
+
+def confirm(family_id: str, field: BriefField) -> dict[str, Any]:
+    profile = apply_confirm(load_profile(family_id), field)
     _save(family_id, profile)
     return profile
 

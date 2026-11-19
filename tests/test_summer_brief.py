@@ -123,7 +123,7 @@ def test_last_years_first_day_stands_in_until_the_new_one_is_out(monkeypatch) ->
     assert p["brief"]["facts"]["school"]["source"] == "last_year"
     assert sb.answered(p, "school")
     [chip] = [c for c in sb.chips(p) if c.field == "school"]
-    assert (chip.source, chip.basis) == ("last_year", "school started Aug 27 last fall")
+    assert chip.source == "last_year" and chip.why is not None and "Cranston Public Schools started Aug 27 last year" in chip.why
     # Once next year's calendar is out, it wins and the date is confirmed.
     monkeypatch.setattr("campfinder.services.school_calendars.SCHOOLS",
                         [SchoolCalendar(*[getattr(cal, f) for f in ("name", "aliases", "last_day")], date(2027, 8, 31),
@@ -230,8 +230,28 @@ def test_the_assistant_tool_accepts_a_grade() -> None:
 def test_unsettled_answers_say_what_they_are_worked_out_from() -> None:
     p = sb.apply_skip({}, "care_hours", OCT)
     p = said(p, school="Somewhere Else Academy")
-    basis = {c.field: c.basis for c in sb.chips(p)}
-    assert basis["care_hours"] == "a typical workday"
-    assert basis["school"] == "typical Rhode Island school dates"
+    why = {c.field: c.why for c in sb.chips(p)}
+    assert why["care_hours"] is not None and why["care_hours"].startswith("We assumed 8 to 6, Monday to Friday.")
+    assert why["school"] == "We used typical Rhode Island school dates. We don't have this school's calendar yet."
     p = said(p, work_schedule=[{"parent": "Me", "days": ["Mon"], "start": "9:00", "end": "17:00"}])
-    assert {c.field: c.basis for c in sb.chips(p)}["care_hours"] is None
+    assert {c.field: c.why for c in sb.chips(p)}["care_hours"] is None
+
+
+def test_that_works_settles_an_answer_without_changing_it() -> None:
+    p = sb.apply_skip({}, "care_hours", OCT)
+    hours = p["work_schedule"]
+    p = sb.apply_confirm(p, "care_hours")
+    assert p["work_schedule"] == hours
+    [chip] = [c for c in sb.chips(p) if c.field == "care_hours"]
+    assert (chip.source, chip.why) == ("said", None)
+    assert "care_hours" not in p["brief"]["skipped"]
+
+
+def test_api_that_works(client, family) -> None:
+    fid = family["id"]
+    client.post(f"/api/v1/families/{fid}/brief/care_hours/skip", headers=h(OWNER))
+    r = client.post(f"/api/v1/families/{fid}/brief/care_hours/confirm", headers=h(OWNER))
+    assert r.status_code == 200
+    assert [c["source"] for c in r.json()["chips"] if c["field"] == "care_hours"] == ["said"]
+    # Caregivers can't settle the family's answers.
+    assert client.post(f"/api/v1/families/{fid}/brief/care_hours/confirm", headers=h(GRANDMA)).status_code in (403, 404)
