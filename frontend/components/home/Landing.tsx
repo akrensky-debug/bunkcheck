@@ -116,10 +116,6 @@ export function Landing({ onAsk, disabled, className }: { onAsk: (text: string) 
       </section>
 
       <div className="space-y-2 border-t border-line pt-8">
-        {/* Counted in the live database on 16 November 2026: 457 camps in CT, MA, ME, NH, RI and VT. */}
-        <Text variant="small" tone="muted">
-          More than 450 camps in six New England states so far, most around Boston and Providence.
-        </Text>
         <Text variant="small" tone="muted">
           Run a camp? <TextLink href="/operators">Listing is free</TextLink>
         </Text>

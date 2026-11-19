@@ -165,6 +165,11 @@ export default function AgentHome() {
             <p className="mt-5 max-w-measure text-lead text-muted">
               Bunkcheck does the legwork for you. Hundreds of summer camps, with their schedules, costs and details, in one place. We&rsquo;ve made it easy to plan, book and schedule your kids&rsquo; whole summer in a fraction of the time.
             </p>
+            {/* Where we have camps, said before anyone types. Counted in the live database on
+                16 November 2026: 457 camps in CT, MA, ME, NH, RI and VT. */}
+            <p className="mt-4 max-w-measure text-small text-muted">
+              <span className="font-semibold text-ink">Now in New England:</span> CT, MA, ME, NH, RI and VT, with the most camps around Boston and Providence.
+            </p>
             <p className="mt-8 font-semibold text-ink">
               So, who do you need to plan for?
             </p>
