@@ -6,6 +6,10 @@
 
 Unlock the collective intelligence of parents to make summer camps easier.
 
+## The vision
+
+Bunkcheck does the legwork so a family can plan, book and schedule the whole summer in a fraction of the time and effort it takes today, and have the best summer possible. (Andrew, 19 November 2026.) Copy that only says we gather camps is half the story: say we help her plan, book and schedule too.
+
 ## What we are
 
 The place New England parents plan and book the whole summer, and the place camps get found and booked without learning new software.
@@ -51,7 +55,7 @@ Like a parent who has done this before. Plain and direct. Specific numbers over 
 
 ## Lines we can test
 
-- **Planning summer takes all winter.** The headline, chosen 18 November 2026. It states her reality and lets her finish the thought. ("Shouldn't take" ran from 16 to 18 November.) Tone: honest and specific, never pushy; no commands at the parent.
+- **Planning summer shouldn't take all winter.** The headline again from 19 November 2026, with a warmer, chattier voice under it ("We're parents too"). It names her reality and says we're on her side. ("Takes all winter" ran on 18 November.) Tone: friendly and specific, like a parent at pickup; never pushy, no commands at the parent.
 - Summer, sorted. Retired 16 November 2026: it tells the parent the work is done, when she is the one doing it.
 - The camp app that works for parents, not advertisers.
 - Every parent in Rhode Island, in your corner.

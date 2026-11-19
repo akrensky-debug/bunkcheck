@@ -33,32 +33,32 @@ type Action = { icon: IconName; title: string; hint: string; more: string; cta: 
 const ACTIONS: Action[] = [
   {
     icon: 'search', title: 'Compare camps', hint: 'Instead of twenty open tabs',
-    more: 'Every camp is laid out the same way: dates, hours, ages, weekly price and extended care. Search by town and age, then ask us to put two or three side by side.',
+    more: 'Every camp laid out the same way: dates, hours, ages, weekly price and extended care. Search by town and age, then ask us to line up two or three side by side.',
     cta: 'Browse camps', href: '/search',
   },
   {
-    icon: 'bell', title: 'Get registration emails', hint: 'Instead of setting alarms',
-    more: 'We check each camp’s opening date against its own site. Leave your email on a camp’s page and we write when the date is announced, the day before, and when it opens. No account.',
+    icon: 'bell', title: 'Get registration emails', hint: 'So you can stop setting alarms',
+    more: 'We check each opening date on the camp’s own site. Leave your email on a camp’s page and we’ll write when the date is announced, the day before, and the minute it opens. No account needed.',
     cta: 'Ask when camps near me open', ask: 'When does registration open for camps near me?',
   },
   {
-    icon: 'board', title: 'See every week', hint: 'Before a gap surprises you',
-    more: 'Your summer as one board: a row for each kid, a column for each week. Gaps and overlaps show up before you pay a deposit.',
+    icon: 'board', title: 'See every week', hint: 'So no week sneaks up on you',
+    more: 'Your whole summer on one board: a row for each kid, a column for each week. You’ll spot gaps and overlaps before you pay a deposit.',
     cta: 'Open your summer board', href: '/summer',
   },
   {
-    icon: 'lock', title: 'Save your forms once', hint: 'Instead of typing them again',
-    more: 'Allergies, pickup people, insurance: enter them once in your info kit. It is encrypted and never shown to the AI. A camp sees it only when you approve.',
+    icon: 'lock', title: 'Save your forms once', hint: 'Not once per camp',
+    more: 'Allergies, pickup people, insurance: put them in your info kit once. It’s encrypted and never shown to the AI, and a camp only sees it when you say so.',
     cta: 'Open your info kit', href: '/kit',
   },
   {
-    icon: 'users', title: 'Share one calendar', hint: 'Instead of texting everyone',
-    more: 'One family calendar your partner, the grandparents and the sitter can see. It also shows up in Google, Apple or Outlook.',
+    icon: 'users', title: 'Share one calendar', hint: 'So nobody has to text you',
+    more: 'One family calendar your partner, the grandparents and the sitter can all see. It shows up in Google, Apple or Outlook too.',
     cta: 'Set up your household', href: '/household',
   },
   {
-    icon: 'chat', title: 'Ask from Claude', hint: 'Instead of one more app',
-    more: 'Add Bunkcheck to Claude and ask about camps there. You get the same camp cards: dates, weekly prices, extended care and open weeks.',
+    icon: 'chat', title: 'Ask from Claude', hint: 'If you already use Claude',
+    more: 'Add Bunkcheck to Claude and ask about camps right there. You’ll get the same camp cards: dates, weekly prices, extended care and open weeks.',
     cta: 'See how to add it', href: '/connect',
   },
 ]
@@ -80,7 +80,7 @@ export function Landing({ onAsk, disabled, className }: { onAsk: (text: string) 
 
       <OpeningSoon />
 
-      <Section title="What we built instead" divided>
+      <Section title="What we wish we’d had last summer" divided>
         <ul className="grid items-start gap-3 sm:grid-cols-2">
           {ACTIONS.map(a => (
             <li key={a.title}>
@@ -106,7 +106,7 @@ export function Landing({ onAsk, disabled, className }: { onAsk: (text: string) 
       <Promises />
 
       <section className="border-t border-line pt-8">
-        <Heading level="h2">Ten weeks. Start with one sentence.</Heading>
+        <Heading level="h2">Ten weeks to fill. Let&rsquo;s start with one sentence.</Heading>
         <div className="mt-4">
           <Button size="lg" icon="arrow-up" href="#start">Tell us about your summer</Button>
         </div>
@@ -157,7 +157,7 @@ function OpeningSoon() {
     <section className="border-t border-line pt-8">
       <Heading level="h2">Registration opening soon</Heading>
       <Text tone="muted" variant="small" className="mt-2">
-        We check each date against the camp&rsquo;s own site. Tap one and we&rsquo;ll email you first.
+        We check every date on the camp&rsquo;s own site. Pick one and we&rsquo;ll give you a heads-up before it opens.
       </Text>
       <List className="mt-4">
         {openings.map(o => (
@@ -216,7 +216,7 @@ export function ExampleSummer({ title = 'A whole summer on one page' }: { title?
   return (
     <section>
       <Heading level="h2">{title}</Heading>
-      <Text className="mt-2">Here&rsquo;s an example: two kids, ten weeks, one gap. Prices are per week.</Text>
+      <Text className="mt-2">Here&rsquo;s what that looks like for two kids: ten weeks, one gap still to fill. Prices are per week.</Text>
 
       <div className="mt-6">
         <div className="grid grid-cols-10 gap-1 border-b border-line pb-1 text-caption text-muted" aria-hidden="true">

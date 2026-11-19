@@ -119,7 +119,7 @@ export default function AgentHome() {
     try {
       await streamChat({ family_id: family.id, conversation_id: conversationId, message }, handleEvent)
     } catch (e) {
-      const error = e instanceof ChatRefused && [429, 503].includes(e.status) ? e.message : 'Connection lost. Please try again.'
+      const error = e instanceof ChatRefused && [429, 503].includes(e.status) ? e.message : 'We lost the connection. Try sending that again.'
       updateLast(m => ({ ...m, error, status: undefined }))
     } finally {
       setBusy(false)
@@ -155,14 +155,14 @@ export default function AgentHome() {
         {empty ? (
           <div className="mx-auto flex w-full max-w-narrow flex-1 flex-col pb-16 pt-8 sm:pt-20 lg:pt-24">
             <h1 className="font-display text-display text-ink text-balance lg:-mr-48">
-              Planning summer takes{' '}
+              Planning summer shouldn&rsquo;t take{' '}
               <span className="marker whitespace-nowrap">all winter.</span>
             </h1>
             <p className="mt-5 max-w-measure text-lead text-muted">
-              Built by parents. Bunkcheck finds the summer camps, lines up your weeks and watches registration day.
+              We&rsquo;re parents too. Bunkcheck does the legwork: hundreds of summer camps, with their schedules, costs and details, in one place. You plan, book and schedule the whole summer in a fraction of the time.
             </p>
             <p className="mt-8 font-semibold text-ink">
-              Tell our AI planner what you&rsquo;re trying to cover this summer.
+              So, what are you trying to cover this summer?
             </p>
             <div id="start" className="mt-3 scroll-mt-24">
               <Composer
@@ -172,15 +172,15 @@ export default function AgentHome() {
                 onSubmit={() => send(input)}
                 canSend={!!family}
                 busy={busy}
-                placeholder="Ages, town, and the weeks you need"
-                label="Tell Bunkcheck about your kids and your summer"
+                placeholder="Two kids, 6 and 9, near Providence. July is the hard part."
+                label="What are you trying to cover this summer?"
               />
             </div>
             <div className="mt-5">
               <Starters onPick={send} disabled={!family} />
             </div>
             {familyError && (
-              <p className="mt-6 text-small text-error">We couldn&rsquo;t connect right now. Please refresh to try again.</p>
+              <p className="mt-6 text-small text-error">We couldn&rsquo;t connect. A refresh usually fixes it.</p>
             )}
             {!side && <Landing onAsk={send} disabled={!family} className="mt-16 sm:mt-24" />}
           </div>
