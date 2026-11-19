@@ -159,7 +159,7 @@ export default function AgentHome() {
               <span className="marker whitespace-nowrap">all winter.</span>
             </h1>
             <p className="mt-5 max-w-measure text-lead text-muted">
-              We&rsquo;re parents too, so we built an AI planner that finds the summer camps, lines up your weeks and keeps an eye on registration day for you.
+              We&rsquo;re parents too. Bunkcheck gathers up hundreds of summer camps, with their schedules, costs and details, so you don&rsquo;t have to.
             </p>
             <p className="mt-8 font-semibold text-ink">
               So, what are you trying to cover this summer?
