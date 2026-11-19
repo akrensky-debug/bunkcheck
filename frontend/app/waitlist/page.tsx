@@ -7,7 +7,7 @@ import { Text, TextLink } from '@/components/ui'
 // (lib/site-mode.ts) the middleware serves this page at "/".
 export const metadata: Metadata = {
   title: 'Bunkcheck: AI summer camp planner for New England families',
-  description: 'Find summer camps in New England, line up your weeks and get an email before registration opens. An AI planner built by parents. We’re opening one state at a time, and we’d love to save you a spot.',
+  description: 'An AI summer camp planner built by parents. Plan, book and schedule your family’s summer in a fraction of the time. Opening in New England one state at a time.',
   alternates: { canonical: '/' },
 }
 
@@ -20,15 +20,15 @@ export default function HandRaiserPage() {
           <span className="marker whitespace-nowrap">all winter.</span>
         </h1>
         <p className="mt-5 max-w-measure text-lead text-muted">
-          We&rsquo;ve read more than 450 camp websites so you don&rsquo;t have to. Bunkcheck is built by parents,
-          with AI to do the legwork.
+          We&rsquo;re parents too. Bunkcheck does the legwork: more than 450 summer camps, with their schedules,
+          costs and details, in one place. You plan, book and schedule the whole summer in a fraction of the time.
         </p>
         <p className="mt-4 max-w-measure text-lead text-muted">
-          Registration opens at 10 a.m. on a Thursday, when you&rsquo;re in a meeting. We&rsquo;ll be watching
-          for you.
+          And registration seems to open at 10 a.m. on a Thursday, right when you&rsquo;re in a meeting. We&rsquo;ll
+          keep an eye on it for you.
         </p>
         <p className="mt-8 font-semibold text-ink">
-          We&rsquo;re opening one state at a time, so there&rsquo;s a line. We&rsquo;d love to save you a spot.
+          We&rsquo;re opening one state at a time, so there&rsquo;s a line. Want us to save you a spot?
         </p>
         <div className="mt-4">
           <HandRaiserForm />
