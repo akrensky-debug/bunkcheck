@@ -4,7 +4,7 @@ import { useState, type ReactNode } from 'react'
 import type { FamilyProfile } from '@/lib/agent'
 import type { BriefField, BriefKid, BriefUpdate, Chip, Question } from '@/lib/summer'
 import { fmtDay } from '@/lib/summer'
-import { Button, ChoiceChip, Field, Heading, Input, Stack, Text, cx } from '@/components/ui'
+import { Button, ChoiceChip, Field, Heading, Input, Stack, StatusDot, Text, cx } from '@/components/ui'
 
 const INTERESTS = ['Sports', 'Swimming', 'Arts', 'Music', 'Theater', 'Science', 'Coding', 'Nature', 'Cooking', 'Dance']
 const WEEKDAYS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri']
@@ -20,13 +20,16 @@ export function AnswerChips({ chips, onEdit }: { chips: Chip[]; onEdit: (f: Brie
             type="button"
             onClick={() => onEdit(c.field)}
             className={cx(
-              'rounded-pill border px-3 py-1 text-small transition-colors duration-150 hover:border-ink',
-              // Two looks only: settled is solid, not settled yet is dashed. The words say why.
-              settled(c) ? 'border-line bg-surface text-ink' : 'border-dashed border-line text-muted',
+              'inline-flex items-center gap-2 rounded-pill border border-line bg-surface px-3 py-1 text-small text-ink',
+              'transition-colors duration-150 hover:border-ink',
             )}
           >
-            {c.label}
-            {!settled(c) && <span className="text-muted"> ({c.source === 'last_year' ? 'based on last year' : 'our guess'})</span>}
+            {/* Not settled yet wears the board's "in progress" mark, so it means one thing everywhere. */}
+            {!settled(c) && <StatusDot tone="caution" label="Not settled yet:" />}
+            <span>
+              {c.label}
+              {!settled(c) && c.basis && <span className="text-muted"> ({c.basis})</span>}
+            </span>
           </button>
         </li>
       ))}

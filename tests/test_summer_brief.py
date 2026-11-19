@@ -122,7 +122,8 @@ def test_last_years_first_day_stands_in_until_the_new_one_is_out(monkeypatch) ->
     assert (p["summer_start"], p["summer_end"]) == ("2027-06-16", "2027-08-25")
     assert p["brief"]["facts"]["school"]["source"] == "last_year"
     assert sb.answered(p, "school")
-    assert [c.source for c in sb.chips(p) if c.field == "school"] == ["last_year"]
+    [chip] = [c for c in sb.chips(p) if c.field == "school"]
+    assert (chip.source, chip.basis) == ("last_year", "school started Aug 27 last fall")
     # Once next year's calendar is out, it wins and the date is confirmed.
     monkeypatch.setattr("campfinder.services.school_calendars.SCHOOLS",
                         [SchoolCalendar(*[getattr(cal, f) for f in ("name", "aliases", "last_day")], date(2027, 8, 31),
@@ -224,3 +225,13 @@ def test_the_assistant_tool_accepts_a_grade() -> None:
 
     update = BriefUpdate.model_validate({"kids": [{"name": "Maya", "grade": 3}]})
     assert update.kids and update.kids[0].grade == 3 and update.kids[0].age is None
+
+
+def test_unsettled_answers_say_what_they_are_worked_out_from() -> None:
+    p = sb.apply_skip({}, "care_hours", OCT)
+    p = said(p, school="Somewhere Else Academy")
+    basis = {c.field: c.basis for c in sb.chips(p)}
+    assert basis["care_hours"] == "a typical workday"
+    assert basis["school"] == "typical Rhode Island school dates"
+    p = said(p, work_schedule=[{"parent": "Me", "days": ["Mon"], "start": "9:00", "end": "17:00"}])
+    assert {c.field: c.basis for c in sb.chips(p)}["care_hours"] is None

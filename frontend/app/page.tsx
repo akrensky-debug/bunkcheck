@@ -170,7 +170,7 @@ export default function AgentHome() {
             {/* "More than 450" above and where we have camps below, said before anyone types. Counted
                 in the live database on 16 and 19 November 2026: 457 camps in CT, MA, ME, NH, RI and VT. */}
             <p className="mt-4 max-w-measure text-small text-muted">
-              <span className="font-semibold text-ink">Now in New England:</span> CT, MA, ME, NH, RI and VT, with the most camps around Boston and Providence.
+              <span className="font-semibold text-ink">Now in New England:</span> CT, MA, ME, NH, RI and VT, with more added every day. Most are around Boston and Providence.
             </p>
             <p className="mt-8 font-semibold text-ink">
               So, who do you need to plan for?

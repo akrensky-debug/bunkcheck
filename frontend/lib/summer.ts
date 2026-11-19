@@ -10,7 +10,7 @@ export type Source = 'said' | 'looked_up' | 'last_year' | 'guessed'
 export type Context = 'suggestions' | 'prices'
 
 export interface Question { field: BriefField; prompt: string; help?: string | null; returning: boolean }
-export interface Chip { field: BriefField; label: string; source: Source }
+export interface Chip { field: BriefField; label: string; source: Source; basis?: string | null }
 export interface LaterItem { field: BriefField; prompt: string; why: 'skipped' | 'not_sure' }
 export interface Brief { chips: Chip[]; next_question: Question | null; finish_later: LaterItem[] }
 
