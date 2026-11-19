@@ -16,7 +16,7 @@ export default function HandRaiserPage() {
     <div className="mx-auto max-w-wide px-4 sm:px-6">
       <div className="mx-auto w-full max-w-narrow pb-16 pt-8 sm:pt-20 lg:pt-24">
         <h1 className="font-display text-display text-ink text-balance lg:-mr-48">
-          Planning summer takes{' '}
+          Planning summer shouldn&rsquo;t take{' '}
           <span className="marker whitespace-nowrap">all winter.</span>
         </h1>
         <p className="mt-5 max-w-measure text-lead text-muted">
