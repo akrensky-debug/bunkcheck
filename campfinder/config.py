@@ -65,6 +65,14 @@ class Settings:
         if self.cors_origins_env.strip():
             return [o.strip().rstrip("/") for o in self.cors_origins_env.split(",") if o.strip()]
         return sorted({self.frontend_url.rstrip("/"), "http://localhost:3000"})
+
+    # Vercel previews of our frontend: frontend-<hash or git-branch>-camp-finder.vercel.app. The
+    # pattern can't prove an address is ours (anyone can name a project to match), which is fine
+    # only because the API takes a bearer token, never cookies (docs/security.md). Set
+    # CORS_ORIGIN_REGEX to an empty string to turn previews off.
+    cors_origin_regex: str | None = os.environ.get(
+        "CORS_ORIGIN_REGEX", r"https://frontend-[a-z0-9-]+-camp-finder\.vercel\.app"
+    ) or None
     api_prefix: str = "/api/v1"
 
 

@@ -41,7 +41,8 @@ our spend on Anthropic, Railway and Supabase.
    forwarded link. They hold at most a link or an invite, never the database.
 4. **Bots.** Credential stuffing on sign-in, junk in open forms, scraping the camp data.
 
-**What they can reach:** the API on Railway (public, CORS limited to our site, no cookies), the
+**What they can reach:** the API on Railway (public, CORS limited to our site and addresses shaped like our Vercel
+previews, no cookies), the
 site on Vercel, the three MCP endpoints, and the Activity API with a partner key. Supabase is
 reached only by the backend with the service key; the browser's anon key is used for sign-in and
 reaches no table.
@@ -207,3 +208,13 @@ the service key, and migration 0015 also took the public roles' table privileges
 `tests/test_migrations.py` fails if a new table ships without row-level security or with grants to
 `anon` or `authenticated`. The new spend functions are closed to both roles, and
 `tests/test_agent_limits.py` checks it.
+
+### CORS and Vercel previews (19 November 2026)
+
+The API accepts browser calls from `https://frontend-<anything>-camp-finder.vercel.app`
+(`CORS_ORIGIN_REGEX`), so previews can load real data. The pattern can't prove a preview is ours:
+anyone can name a Vercel project so that its address matches. That is acceptable because CORS
+here guards nothing secret. The API takes a bearer token, never cookies, so a look-alike site
+can't act as a visitor; it can only do what any script calling the API directly can. If the API
+ever starts using cookies, remove the pattern (set `CORS_ORIGIN_REGEX` to empty) first.
+

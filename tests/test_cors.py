@@ -1,4 +1,4 @@
-"""Only our own frontend (and local development) may call the API from a browser."""
+"""Only our own frontend, its Vercel previews, and local development may call the API from a browser."""
 
 from __future__ import annotations
 
@@ -30,3 +30,19 @@ async def test_other_sites_are_not_allowed() -> None:
 async def test_no_credentialed_cross_site_requests() -> None:
     r = await _preflight(get_settings().frontend_url.rstrip("/"))
     assert r.headers.get("access-control-allow-credentials") != "true"
+
+
+async def test_our_vercel_previews_are_allowed() -> None:
+    for origin in ("https://frontend-git-claude-summer-page-polish-camp-finder.vercel.app",
+                   "https://frontend-hsnzx2tsh-camp-finder.vercel.app"):
+        r = await _preflight(origin)
+        assert r.headers.get("access-control-allow-origin") == origin
+
+
+async def test_lookalike_previews_are_not_allowed() -> None:
+    for origin in ("https://frontend-git-x-camp-finder.vercel.app.evil.example",
+                   "https://frontend-git-x-other-team.vercel.app",
+                   "https://evil-frontend-git-x-camp-finder.vercel.app",
+                   "http://frontend-git-x-camp-finder.vercel.app"):
+        r = await _preflight(origin)
+        assert "access-control-allow-origin" not in r.headers, origin
