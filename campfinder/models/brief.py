@@ -18,7 +18,20 @@ Source = Literal["said", "looked_up", "guessed"]
 
 class Kid(BaseModel):
     name: str | None = Field(default=None, description="First name or nickname only.")
-    age: int | None = Field(default=None, ge=0, le=19)
+    age: int | None = Field(
+        default=None, ge=0, le=19,
+        description="Age in years. If the parent gave only a grade, leave it unset: it's worked out from the grade.",
+    )
+    grade: int | None = Field(
+        default=None, ge=-1, le=12,
+        description="School grade this school year: -1 pre-K, 0 kindergarten, 1 to 12. A 'rising 4th grader' "
+        "or a kid 'going into 4th' is in 3rd grade now, so 3.",
+    )
+    age_estimated: bool = Field(
+        default=False,
+        description="True when the age was worked out from the grade. Keep it as it is in the profile; set it "
+        "false when the parent tells you the age.",
+    )
     interests: list[str] = Field(default_factory=list)
     notes: str | None = Field(
         default=None,

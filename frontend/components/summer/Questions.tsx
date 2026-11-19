@@ -107,7 +107,11 @@ function KidsEditor({ kids, busy, onAnswer }: { kids: BriefKid[]; busy: boolean;
   return (
     <form className="space-y-4" onSubmit={e => {
       e.preventDefault()
-      onAnswer({ kids: valid.map(r => ({ ...r.rest, name: r.name.trim(), age: r.age === '' ? null : Number(r.age) })) })
+      // An age typed or changed here was told to us; an untouched estimate stays an estimate.
+      onAnswer({ kids: valid.map(r => {
+        const age = r.age === '' ? null : Number(r.age)
+        return { ...r.rest, name: r.name.trim(), age, age_estimated: !!r.rest.age_estimated && age === r.rest.age }
+      }) })
     }}>
       {rows.map((r, i) => (
         <div key={i} className="flex items-end gap-3">

@@ -12,8 +12,27 @@ const FAMILY_KEY = 'cf_family_id'
 export interface Kid {
   name?: string | null
   age?: number | null
+  /** This school year's grade: -1 pre-K, 0 kindergarten, 1 to 12. */
+  grade?: number | null
+  /** The age was worked out from the grade, not told to us. */
+  age_estimated?: boolean
   interests?: string[]
   notes?: string | null
+}
+
+/** -1 -> 'pre-K', 0 -> 'kindergarten', 3 -> '3rd grade'. Matches summer_brief.grade_label. */
+export function gradeLabel(grade: number): string {
+  if (grade < 0) return 'pre-K'
+  if (grade === 0) return 'kindergarten'
+  const suffix = grade >= 11 && grade <= 13 ? 'th' : ({ 1: 'st', 2: 'nd', 3: 'rd' } as Record<number, string>)[grade % 10] ?? 'th'
+  return `${grade}${suffix} grade`
+}
+
+/** "8", "3rd grade" or "8, 3rd grade": the age only when someone told us it. */
+export function kidDetail(k: Kid): string {
+  const age = k.age != null && !k.age_estimated ? String(k.age) : null
+  const grade = k.grade != null ? gradeLabel(k.grade) : null
+  return [age, grade].filter(Boolean).join(', ') || (k.age != null ? `about ${k.age}` : '')
 }
 
 export interface FamilyProfile {
