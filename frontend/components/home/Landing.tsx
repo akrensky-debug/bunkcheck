@@ -16,15 +16,16 @@ export const STARTERS = [
 /**
  * Example answers to "So, who do you need to plan for?", shown one at a time in the chat bar.
  * Different family shapes, in the words parents use, at schools we have dates for, so copying
- * one works. Each fits two lines on a 360px phone; a third line is cut off, so check before adding.
+ * one works. Each follows the helper above the box (name, age, grade, school), then one need.
+ * Each fits two lines on a 360px phone; a third line is cut off, so check before adding.
  */
 export const EXAMPLES = [
   'Maya, 8, in 3rd grade, and Leo, 5, in kindergarten. Both at Wheeler.',
-  'Sam, 10, 5th grade at Gordon. Loves coding, not swimming.',
-  'Ella and Max, 7, twins at Providence Public. We work till 6.',
+  'Sam, 10, in 5th grade at Gordon. Loves coding. No swim camps.',
+  'Ella and Max, 7, in 2nd grade in Providence. We work till 6.',
   'Ava, 12, in 7th grade at Lincoln. Open to two weeks of sleepaway.',
-  'Noah, 6, 1st grade in Barrington. Away the last week of July.',
-  'Three kids, 4, 9 and 13, in Cranston. Full days, all summer.',
+  'Noah, 6, in 1st grade in Barrington. Away one week in July.',
+  'Three kids, 5, 9 and 13, in Cranston schools. Full days.',
 ]
 
 const EXAMPLE_MS = 4000
