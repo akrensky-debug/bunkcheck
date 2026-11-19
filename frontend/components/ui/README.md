@@ -18,7 +18,10 @@ all rendered at `/ui` (not linked from the site, `noindex`).
   `scripts/check-contrast.mjs` (also in check:ui) checks every status text pair at 4.5:1 and
   every shape at 3:1 on bg, surface, tint and the tone's soft fill.
 - **Motion:** color and background transitions (150 ms), the page fade, and press feedback.
-  Nothing lifts, slides or staggers. `prefers-reduced-motion` turns it all off (globals.css).
+  Nothing lifts, slides or staggers, with two exceptions that each tell part of the story and
+  play once: the home headline's highlighter draws across, and the example summer's weeks fill
+  in left to right when it scrolls into view, open weeks last. `prefers-reduced-motion` turns
+  it all off (globals.css).
 - **Press feedback:** a control answers on press, not on release. Buttons, round buttons, chips
   and tiles carry `press` and shrink to 97% while held; rows tint and text links dim. Under
   reduced motion only the color change stays. From the `apple-design` skill.
@@ -58,7 +61,8 @@ Type: `text-display` (home hero only), `text-h1` (page title), `text-h2` (sectio
 Radius: `rounded-sm` 8, `rounded-md` 12, `rounded-lg` 16, `rounded-pill`. A rounded thing
 inside another one gets the outer radius minus the padding between them, so the corners
 stay concentric (`Composer` is the worked example). Shadow:
-`shadow-soft`, only for floating things (composer, search bar, menus). Widths:
+`shadow-soft`, only for floating things (composer, search bar, menus, and the example summer,
+which sits on the page like a screen from the app). Widths:
 `max-w-narrow` 720, `max-w-default` 1024, `max-w-wide` 1152, `max-w-measure` 65ch.
 Spacing follows Tailwind's 4px scale; stick to 1, 2, 3, 4, 6, 8, 12, 16 (and 24 for page
 top space).
