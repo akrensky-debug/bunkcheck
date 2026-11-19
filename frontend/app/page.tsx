@@ -165,10 +165,10 @@ export default function AgentHome() {
             <div className={cx(!side && 'lg:grid lg:grid-cols-2 lg:items-start lg:gap-12')}>
             <div>
             <p className="mt-5 max-w-measure text-lead text-muted">
-              Hundreds of summer camps, with dates, hours and prices, in one place. Tell us who you&rsquo;re planning for and we&rsquo;ll lay out the summer week by week, gaps and all.
+              More than 450 summer camps, with dates, hours and prices, in one place. Tell us who you&rsquo;re planning for and we&rsquo;ll lay out the summer week by week, gaps and all.
             </p>
-            {/* Where we have camps, said before anyone types. Counted in the live database on
-                16 November 2026: 457 camps in CT, MA, ME, NH, RI and VT. */}
+            {/* "More than 450" above and where we have camps below, said before anyone types. Counted
+                in the live database on 16 and 19 November 2026: 457 camps in CT, MA, ME, NH, RI and VT. */}
             <p className="mt-4 max-w-measure text-small text-muted">
               <span className="font-semibold text-ink">Now in New England:</span> CT, MA, ME, NH, RI and VT, with the most camps around Boston and Providence.
             </p>
