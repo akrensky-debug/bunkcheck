@@ -100,6 +100,9 @@ class Chip(BaseModel):
     field: BriefField
     label: str
     source: Source
+    basis: str | None = Field(
+        default=None, description="For an answer that isn't settled: what it's worked out from, in a few words."
+    )
 
 
 class LaterItem(BaseModel):

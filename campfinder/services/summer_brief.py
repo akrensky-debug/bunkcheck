@@ -312,6 +312,18 @@ def _day(d: str) -> str:
     return date.fromisoformat(d).strftime("%b %-d")
 
 
+def _school_basis(profile: dict[str, Any], source: Source) -> str | None:
+    """What unsettled summer dates are worked out from, specific enough to check."""
+    if source == "last_year":
+        cal = find_school(profile.get("school") or "", date.fromisoformat(profile["summer_start"]).year)
+        if cal and cal.prior_first_day:
+            return f"school started {_day(cal.prior_first_day.isoformat())} last fall"
+        return "last fall's first day of school"
+    if source == "guessed":
+        return "typical Rhode Island school dates"
+    return None
+
+
 def _care_label(work: list[dict[str, Any]]) -> str:
     try:
         windows = care_windows([WorkBlock.model_validate(b) for b in work])
@@ -344,7 +356,7 @@ def chips(profile: dict[str, Any]) -> list[Chip]:
     if known("school") and profile.get("summer_start") and profile.get("summer_end"):
         dates = f"{_day(profile['summer_start'])} to {_day(profile['summer_end'])}"
         label = f"{profile['school']} · {dates}" if profile.get("school") else f"Summer {dates}"
-        out.append(Chip(field="school", label=label, source=source("school")))
+        out.append(Chip(field="school", label=label, source=source("school"), basis=_school_basis(profile, source("school"))))
     if known("camp_weeks"):
         weeks = profile.get("camp_weeks")
         parts = ["Camp all summer" if weeks is None else
@@ -357,7 +369,8 @@ def chips(profile: dict[str, Any]) -> list[Chip]:
         out.append(Chip(field="sleepaway", label="Overnight OK" if profile["sleepaway"] else "Day camp only",
                         source=source("sleepaway")))
     if known("care_hours") and profile.get("work_schedule"):
-        out.append(Chip(field="care_hours", label=_care_label(profile["work_schedule"]), source=source("care_hours")))
+        out.append(Chip(field="care_hours", label=_care_label(profile["work_schedule"]), source=source("care_hours"),
+                        basis="a typical workday" if source("care_hours") == "guessed" else None))
     if known("interests"):
         parts = [f"{k.get('name') or 'Kid'}: {', '.join(k['interests'][:3])}" for k in _kids(profile) if k.get("interests")]
         if parts:
