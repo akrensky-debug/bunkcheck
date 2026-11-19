@@ -10,7 +10,7 @@ import {
 import { AgentBlock, AgentText, CalendarList } from '@/components/agent/AgentBlocks'
 import { WeekView } from '@/components/agent/ActivityBlocks'
 import { getFamilyWeek, type FamilyWeek } from '@/lib/activities'
-import { Landing, Starters } from '@/components/home/Landing'
+import { HeroSummer, Landing, Starters } from '@/components/home/Landing'
 import { Button, Composer, IconButton, cx } from '@/components/ui'
 
 type Part =
@@ -153,11 +153,15 @@ export default function AgentHome() {
         )}
 
         {empty ? (
-          <div className="mx-auto flex w-full max-w-narrow flex-1 flex-col pb-16 pt-8 sm:pt-20 lg:pt-24">
-            <h1 className="font-display text-display text-ink text-balance lg:-mr-48">
+          // On wide screens, with no family column beside it, the hero spreads to two columns so
+          // the example summer sits next to the headline.
+          <div className={cx('mx-auto flex w-full max-w-narrow flex-1 flex-col pb-16 pt-8 sm:pt-20 lg:pt-24', !side && 'lg:max-w-none')}>
+            <h1 className={cx('font-display text-display text-ink text-balance', side && 'lg:-mr-48')}>
               Planning summer shouldn&rsquo;t take{' '}
               <span className="marker whitespace-nowrap">all winter.</span>
             </h1>
+            <div className={cx(!side && 'lg:grid lg:grid-cols-2 lg:items-start lg:gap-12')}>
+            <div>
             <p className="mt-5 max-w-measure text-lead text-muted">
               We&rsquo;re parents too. Bunkcheck does the legwork: hundreds of summer camps, with their schedules, costs and details, in one place. You plan, book and schedule the whole summer in a fraction of the time.
             </p>
@@ -182,6 +186,9 @@ export default function AgentHome() {
             {familyError && (
               <p className="mt-6 text-small text-error">We couldn&rsquo;t connect. A refresh usually fixes it.</p>
             )}
+            </div>
+            {!side && <HeroSummer className="mt-6" />}
+            </div>
             {!side && <Landing onAsk={send} disabled={!family} className="mt-16 sm:mt-24" />}
           </div>
         ) : (
