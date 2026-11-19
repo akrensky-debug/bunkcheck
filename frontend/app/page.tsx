@@ -175,7 +175,7 @@ export default function AgentHome() {
                 onSubmit={() => send(input)}
                 canSend={!!family}
                 busy={busy}
-                placeholder="Maya, 3rd grade, and Leo, kindergarten, both at Wheeler."
+                placeholder="Maya, 8, in 3rd grade, and Leo, 5, in kindergarten. Both at Wheeler."
                 label="So, who do you need to plan for?"
               />
             </div>
