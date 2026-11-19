@@ -100,8 +100,9 @@ class Chip(BaseModel):
     field: BriefField
     label: str
     source: Source
-    basis: str | None = Field(
-        default=None, description="For an answer that isn't settled: what it's worked out from, in a few words."
+    why: str | None = Field(
+        default=None,
+        description="For an answer that isn't settled: what it's worked out from, shown when the parent taps it.",
     )
 
 
