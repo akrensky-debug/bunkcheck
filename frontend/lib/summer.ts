@@ -10,7 +10,7 @@ export type Source = 'said' | 'looked_up' | 'last_year' | 'guessed'
 export type Context = 'suggestions' | 'prices'
 
 export interface Question { field: BriefField; prompt: string; help?: string | null; returning: boolean }
-export interface Chip { field: BriefField; label: string; source: Source; basis?: string | null }
+export interface Chip { field: BriefField; label: string; source: Source; why?: string | null }
 export interface LaterItem { field: BriefField; prompt: string; why: 'skipped' | 'not_sure' }
 export interface Brief { chips: Chip[]; next_question: Question | null; finish_later: LaterItem[] }
 
@@ -113,6 +113,10 @@ export const answerBrief = (familyId: string, update: BriefUpdate, c: Context[] 
 
 export const skipQuestion = (familyId: string, field: BriefField, notSure: boolean, c: Context[] = []) =>
   call<Brief>(`/families/${familyId}/brief/${field}/${notSure ? 'not-sure' : 'skip'}${ctx(c)}`, { method: 'POST' })
+
+/** "That works": accept an answer we worked out, so it counts as the parent's own. */
+export const confirmAnswer = (familyId: string, field: BriefField, c: Context[] = []) =>
+  call<Brief>(`/families/${familyId}/brief/${field}/confirm${ctx(c)}`, { method: 'POST' })
 
 export const getBoard = (familyId: string) => call<Board>(`/families/${familyId}/board`)
 

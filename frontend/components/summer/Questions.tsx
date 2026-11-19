@@ -26,10 +26,7 @@ export function AnswerChips({ chips, onEdit }: { chips: Chip[]; onEdit: (f: Brie
           >
             {/* Not settled yet wears the board's "in progress" mark, so it means one thing everywhere. */}
             {!settled(c) && <StatusDot tone="caution" label="Not settled yet:" />}
-            <span>
-              {c.label}
-              {!settled(c) && c.basis && <span className="text-muted"> ({c.basis})</span>}
-            </span>
+            <span>{c.label}</span>
           </button>
         </li>
       ))}
@@ -38,10 +35,10 @@ export function AnswerChips({ chips, onEdit }: { chips: Chip[]; onEdit: (f: Brie
 }
 
 /** Told to us or published for this year. Last year's dates and our guesses aren't settled yet. */
-const settled = (c: Chip) => c.source === 'said' || c.source === 'looked_up'
+export const settled = (c: Chip) => c.source === 'said' || c.source === 'looked_up'
 
 /** One question with Back, Skip for now and Not sure yet. Nothing here is required. */
-export function QuestionCard({ question, profile, weeks, schools, busy, canGoBack, onAnswer, onSkip, onBack, onDone }: {
+export function QuestionCard({ question, profile, weeks, schools, busy, canGoBack, onAnswer, onSkip, onBack, onDone, unsettled, onConfirm }: {
   question: Question
   profile: FamilyProfile & Record<string, unknown>
   weeks: string[]
@@ -52,14 +49,28 @@ export function QuestionCard({ question, profile, weeks, schools, busy, canGoBac
   onSkip: (notSure: boolean) => void
   onBack: () => void
   onDone?: () => void
+  /** The answer on file that isn't settled yet: why we have it, and a way to accept it as is. */
+  unsettled?: Chip
+  onConfirm?: () => void
 }) {
   return (
     <section aria-live="polite" className="space-y-5 border-y border-line py-6">
       <div className="space-y-1">
         {question.returning && <Text variant="small" tone="muted">Back to this one, now that it matters:</Text>}
         <Heading level="h2">{question.prompt}</Heading>
-        {question.help && <Text tone="muted">{question.help}</Text>}
+        {question.help && !unsettled?.why && <Text tone="muted">{question.help}</Text>}
       </div>
+      {unsettled?.why && (
+        // Reason first, then the two choices: keep it, or change it below.
+        <div className="space-y-3">
+          <Text className="inline-flex items-start gap-2">
+            <StatusDot tone="caution" className="mt-1.5 shrink-0" />
+            <span>{unsettled.why}</span>
+          </Text>
+          {onConfirm && <Button variant="secondary" icon="check" onClick={onConfirm} disabled={busy}>That works</Button>}
+          <Text variant="small" tone="muted">Or change it:</Text>
+        </div>
+      )}
       <Editor key={question.field} field={question.field} profile={profile} weeks={weeks} schools={schools}
         busy={busy} onAnswer={onAnswer} />
       <div className="flex flex-wrap items-center gap-x-5 gap-y-2">

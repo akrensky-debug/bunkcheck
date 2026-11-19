@@ -4,10 +4,10 @@ import { useEffect, useMemo, useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { loadFamily, type Family } from '@/lib/agent'
 import {
-  addPick, answerBrief, getBoard, getBrief, removePick, skipQuestion, updatePick,
+  addPick, confirmAnswer, answerBrief, getBoard, getBrief, removePick, skipQuestion, updatePick,
   type Board, type Brief, type BriefField, type BriefUpdate, type Context, type Option, type Pick,
 } from '@/lib/summer'
-import { AnswerChips, QuestionCard } from '@/components/summer/Questions'
+import { AnswerChips, QuestionCard, settled } from '@/components/summer/Questions'
 import { KidLines, SummerBoard } from '@/components/summer/Board'
 import { Button, Container, Heading, Notice, Text, TextLink } from '@/components/ui'
 
@@ -88,6 +88,11 @@ export default function SummerPage() {
       setEditing(null)
     })
   }
+  const confirm = () => {
+    const field = current
+    if (!field) return
+    run(id => confirmAnswer(id, field, context)).then(() => setEditing(null))
+  }
   const back = () => {
     const prev = history.findLast(f => f !== current)
     if (prev) setEditing(prev)
@@ -132,6 +137,8 @@ export default function SummerPage() {
             onSkip={skip}
             onBack={back}
             onDone={editing ? () => setEditing(null) : undefined}
+            unsettled={brief.chips.find(c => c.field === current && !settled(c))}
+            onConfirm={confirm}
           />
         ) : (
           <div className="flex flex-wrap items-center gap-x-6 gap-y-2 border-y border-line py-4">
