@@ -87,7 +87,30 @@ html[data-handraiser] [data-public-nav] { display: inline; }
     box-decoration-break: clone;
     padding-inline: 0.12em;
     margin-inline: -0.12em;
+    background-repeat: no-repeat;
+    animation: marker-draw 700ms cubic-bezier(0.2, 0, 0, 1) 300ms both;
   }
+}
+/* The stroke draws across once, left to right, the way a pen would. */
+@keyframes marker-draw {
+  from { background-size: 0% 100%; }
+  to { background-size: 100% 100%; }
+}
+
+/* The example summer on the home and waitlist pages: its weeks fill in once, column by column,
+   when it first scrolls into view (useFillIn in components/home/Landing.tsx). Blocks are only
+   hidden after the script arms the board, so without it they simply show. */
+.summer-board[data-armed] .summer-block {
+  opacity: 0;
+}
+.summer-board[data-play] .summer-block {
+  transform-origin: left center;
+  animation: block-in 420ms cubic-bezier(0.2, 0, 0, 1) both;
+  animation-delay: calc(var(--step) * 55ms);
+}
+@keyframes block-in {
+  from { opacity: 0; transform: scale(0.92); }
+  to { opacity: 1; transform: none; }
 }
 
 /* --- Feel, after Apple's design guidance (.claude/skills/apple-design) ---------------------- */

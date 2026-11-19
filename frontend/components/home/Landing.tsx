@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState, type CSSProperties } from 'react'
 import { getUpcomingOpenings, type Opening } from '@/lib/alerts'
 import { countdown, fmtWhen } from '@/lib/booking'
 import { ActionTile, Button, Heading, Icon, List, ListRow, Meta, Section, Text, TextLink, cx, type IconName } from '@/components/ui'
@@ -196,6 +196,35 @@ const WEEKS_PER_BLOCK = 2
 const AXIS: Array<[string, number[]]> = [['June', [21, 28]], ['July', [5, 12, 19, 26]], ['August', [2, 9, 16, 23]]]
 const MONTH_SPAN: Record<number, string> = { 2: 'col-span-2', 4: 'col-span-4' }
 
+/**
+ * The weeks fill in once, left to right, the first time the board scrolls into view: time moves
+ * the way the eye reads, and the open weeks land last so the gap is what she notices. Nothing is
+ * hidden until the script has run, and nothing moves for people who ask for reduced motion.
+ */
+function useFillIn() {
+  const ref = useRef<HTMLDivElement>(null)
+  useEffect(() => {
+    const el = ref.current
+    if (!el || !('IntersectionObserver' in window)) return
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
+    el.dataset.armed = ''
+    const io = new IntersectionObserver(([entry]) => {
+      if (!entry.isIntersecting) return
+      el.dataset.play = ''
+      io.disconnect()
+    }, { threshold: 0.35 })
+    io.observe(el)
+    return () => io.disconnect()
+  }, [])
+  return ref
+}
+
+/** Column by column across both kids, with the open weeks held back to land last. */
+function fillOrder(col: number, row: number, b: Block): CSSProperties {
+  const step = col * EXAMPLE.length + row + (b.kind === 'open' ? 4 : 0)
+  return { '--step': step } as CSSProperties
+}
+
 const dollars = (n: number) => '$' + n.toLocaleString('en-US')
 
 /** What the row adds up to, in words and numbers, so the chart needs no legend. */
@@ -213,12 +242,13 @@ function rowSummary(blocks: Block[]) {
  * that needs her attention. Each row carries its own total.
  */
 export function ExampleSummer({ title = 'A whole summer on one page' }: { title?: string }) {
+  const board = useFillIn()
   return (
     <section>
       <Heading level="h2">{title}</Heading>
       <Text className="mt-2">Here&rsquo;s what that looks like for two kids: ten weeks, one gap still to fill. Prices are per week.</Text>
 
-      <div className="mt-6">
+      <div ref={board} className="summer-board mt-6 rounded-lg border border-line bg-surface p-4 shadow-soft sm:p-6 lg:-mx-16 lg:p-8">
         <div className="grid grid-cols-10 gap-1 border-b border-line pb-1 text-caption text-muted" aria-hidden="true">
           {AXIS.map(([month, days]) => (
             <div key={month} className={MONTH_SPAN[days.length]}>
@@ -230,7 +260,7 @@ export function ExampleSummer({ title = 'A whole summer on one page' }: { title?
           ))}
         </div>
 
-        {EXAMPLE.map(row => (
+        {EXAMPLE.map((row, r) => (
           <div key={row.kid} className="mt-4">
             <p className="text-small">
               <span className="font-semibold text-ink">{row.kid}</span>{' '}
@@ -240,8 +270,9 @@ export function ExampleSummer({ title = 'A whole summer on one page' }: { title?
               {row.blocks.map((b, i) => (
                 <li
                   key={i}
+                  style={fillOrder(i, r, b)}
                   className={cx(
-                    'flex h-12 flex-col justify-center overflow-hidden rounded-sm px-2 text-caption',
+                    'summer-block flex h-12 flex-col sm:h-14 justify-center overflow-hidden rounded-sm px-2 text-caption',
                     b.kind === 'open' ? 'bg-highlight text-ink' : b.kind === 'away' ? 'text-muted' : 'bg-tint text-ink',
                   )}
                 >
