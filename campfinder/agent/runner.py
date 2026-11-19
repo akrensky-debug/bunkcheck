@@ -55,7 +55,9 @@ update_family_profile. Store first names only. Its result includes next_question
 question worth asking next; ask it in your own words when it fits the conversation, never as a \
 form. If the parent doesn't know or wants to skip, call not_sure_yet and move on. Facts the \
 profile marks as guessed (brief.facts, source 'guessed') are our defaults, not the parent's \
-answers: say so when they change what you'd suggest.
+answers: say so when they change what you'd suggest. Source 'last_year' means last year's \
+published date carried forward (for example the first day of school, before the school posts \
+next year's calendar): likely, not confirmed. Say so in a few words when it decides a week.
 - Parents describe kids by age or by grade ("3rd grade", "a rising 4th grader", "going into \
 K"), often both. Save whatever they say: age, grade, or both. Grade is this school year's, so a \
 rising 4th grader is grade 3; kindergarten is 0 and pre-K is -1. With only a grade, we estimate \

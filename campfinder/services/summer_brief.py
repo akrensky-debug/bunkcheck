@@ -4,7 +4,7 @@ question worth asking next (docs/summer-board.md).
 
 The brief is the family profile (`families.profile`) plus a `brief` key:
 
-    {"facts":    {field: {"source": "said" | "looked_up" | "guessed", "at": iso}},
+    {"facts":    {field: {"source": "said" | "looked_up" | "last_year" | "guessed", "at": iso}},
      "skipped":  {field: iso},    # "Skip for now": waits in the Finish later list
      "not_sure": {field: iso}}    # "Not sure yet": comes back when it matters
 
@@ -166,11 +166,12 @@ def apply_update(profile: dict[str, Any], data: dict[str, Any], source: Source, 
         cal = find_school(data["school"], summer_year(today))
         if cal:
             profile["summer_start"] = (cal.last_day + timedelta(days=1)).isoformat()
+            first_day, carried = cal.next_first_day()
             profile["summer_end"] = (
-                (cal.first_day - timedelta(days=1)).isoformat() if cal.first_day
+                (first_day - timedelta(days=1)).isoformat() if first_day
                 else date(cal.last_day.year, *GUESS_SUMMER[1]).isoformat()
             )
-            _set_fact(profile, "school", "looked_up" if cal.first_day else "guessed")
+            _set_fact(profile, "school", "last_year" if carried else "looked_up" if first_day else "guessed")
         elif not (profile.get("summer_start") and profile.get("summer_end")) or (
             (profile.get("brief") or {}).get("facts", {}).get("school", {}).get("source") == "guessed"
         ):

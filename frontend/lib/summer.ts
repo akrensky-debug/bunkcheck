@@ -6,7 +6,7 @@ const API = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'
 export type BriefField =
   | 'kids' | 'home' | 'school' | 'camp_weeks' | 'sleepaway' | 'care_hours' | 'interests'
   | 'weekly_budget' | 'max_drive_minutes' | 'booked_elsewhere'
-export type Source = 'said' | 'looked_up' | 'guessed'
+export type Source = 'said' | 'looked_up' | 'last_year' | 'guessed'
 export type Context = 'suggestions' | 'prices'
 
 export interface Question { field: BriefField; prompt: string; help?: string | null; returning: boolean }
