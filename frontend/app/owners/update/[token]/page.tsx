@@ -166,7 +166,7 @@ export default function SeasonUpdatePage() {
   if (!view) {
     return (
       <Container size="narrow" className="space-y-3 py-16 sm:py-24">
-        <Heading level="h1">{loadError ? 'This link no longer works' : 'Loading'}</Heading>
+        <Heading level="h1">{loadError ? 'This link no longer works' : 'Loading…'}</Heading>
         {loadError && <Text tone="muted">{loadError}</Text>}
       </Container>
     )
@@ -292,7 +292,7 @@ export default function SeasonUpdatePage() {
       <div className="space-y-3">
         {error && <Notice tone="error">{error}</Notice>}
         <Button onClick={send} disabled={busy || !canSend} size="lg" block>
-          {busy ? 'Sending' : `Send ${y} to Bunkcheck`}
+          {busy ? 'Sending…' : `Send ${y} to Bunkcheck`}
         </Button>
         <p className="text-center text-small text-muted">
           We&rsquo;ll email you back exactly what changed. Rather reply in your own words? Reply to the email.
