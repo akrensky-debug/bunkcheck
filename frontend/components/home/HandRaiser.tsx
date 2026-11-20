@@ -43,7 +43,7 @@ export function HandRaiserForm() {
   if (done) {
     return (
       <Notice tone="success" className="max-w-measure">
-        Got it, you&rsquo;re in line. Thanks for raising your hand. We&rsquo;ll email you as soon as {stateName(state)} opens.
+        Got it, you&rsquo;re in line. We&rsquo;ll email you as soon as Bunkcheck opens in {stateName(state)}.
       </Notice>
     )
   }
@@ -75,7 +75,7 @@ export function HandRaiserForm() {
       <Button type="submit" size="lg" disabled={busy}>{busy ? 'Saving…' : 'Save my spot'}</Button>
       {error && <p className="text-small text-error" role="alert">{error}</p>}
       <p className="text-caption text-muted">
-        One email when your state opens. That&rsquo;s it. No ads, and we&rsquo;ll never sell your details.{' '}
+        We&rsquo;ll email you when we open in your state. No ads, and we&rsquo;ll never sell your details.{' '}
         <TextLink href="/privacy" tone="muted" className="underline underline-offset-4">Privacy</TextLink>
       </p>
     </form>
