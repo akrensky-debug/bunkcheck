@@ -57,7 +57,8 @@ const config: Config = {
       },
     },
     fontSize: {
-      display: ['clamp(3.5rem, 2.3rem + 4.6vw, 5.5rem)', { lineHeight: '1', letterSpacing: '-0.035em', fontWeight: '800' }],
+      // Smallest is 2.75rem so the home headline's longest line, "Planning summer", fits a 390px phone.
+      display: ['clamp(2.75rem, 1.6rem + 5.2vw, 5.5rem)', { lineHeight: '1', letterSpacing: '-0.035em', fontWeight: '800' }],
       h1: ['clamp(2rem, 1.7rem + 1.2vw, 2.5rem)', { lineHeight: '1.1', letterSpacing: '-0.025em', fontWeight: '800' }],
       h2: ['1.5rem', { lineHeight: '1.25', letterSpacing: '-0.015em', fontWeight: '700' }],
       h3: ['1.25rem', { lineHeight: '1.3', letterSpacing: '-0.01em', fontWeight: '700' }],
