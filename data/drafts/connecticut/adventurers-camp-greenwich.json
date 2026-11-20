@@ -1,0 +1,144 @@
+{
+  "slug": "adventurers-camp-greenwich",
+  "name": "Adventurers Camp",
+  "operator_name": "Town of Greenwich Parks and Recreation",
+  "website_url": "https://www.greenwichct.gov/485/Adventurers-Camp",
+  "registration_url": "https://ctgreenwichweb.myvscloud.com/webtrac/web/splash.html",
+  "email": "recreation@greenwichct.gov",
+  "phone": "203-618-7649",
+  "street_address": "Bendheim Western Greenwich Civic Center, 449 Pemberwick Road",
+  "city": "Greenwich",
+  "state": "CT",
+  "zip": "06831",
+  "camp_type": "day",
+  "primary_categories": [
+    "general",
+    "adventure"
+  ],
+  "secondary_categories": [
+    "swimming"
+  ],
+  "activities": [
+    "field trips",
+    "theme weeks",
+    "beach days",
+    "pool days"
+  ],
+  "age_min": 8,
+  "age_max": 15,
+  "grade_min": 3,
+  "grade_max": 10,
+  "description_short": "A town run day camp for ages 8 to 15, 9 am to 4 pm, based at the Bendheim Western Greenwich Civic Center. Campers are grouped by age, have theme weeks at the center, take one field trip a week and spend days at Byram Shore, Greenwich Point and Island Beach, with transport to trips and beaches included.",
+  "indoor_outdoor": "both",
+  "price_min": 565,
+  "price_max": 670,
+  "price_per": "session",
+  "financial_aid": true,
+  "refund_policy_summary": "No refunds and no prorating. Requests for full credit are considered before June 1, half credit on or after June 1, and credit is prorated once camp begins. Credits carry a $20 administrative fee.",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Session I",
+      "start_date": "2026-06-30",
+      "end_date": "2026-07-24",
+      "price": 670,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session II",
+      "start_date": "2026-07-27",
+      "end_date": "2026-08-14",
+      "price": 565,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.greenwichct.gov/DocumentCenter/View/1450/Adventurers-Camp-PDF?bidId=",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "operator_name",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "grade_min",
+        "grade_max",
+        "description_short",
+        "indoor_outdoor",
+        "price_min",
+        "price_max",
+        "price_per",
+        "refund_policy_summary",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. 2026 Adventurers Camp registration form. Prices are the non-resident rates (Session I $670, Session II $565); residents pay $560 and $475 early bird, $615 and $520 from June 1. Grades are the grade entering in fall 2026. No camp July 3."
+    },
+    {
+      "url": "https://www.greenwichct.gov/485/Adventurers-Camp",
+      "checked": "2026-11-20",
+      "fields": [
+        "website_url",
+        "registration_url"
+      ],
+      "note": "Researched by Claude from this page. Town camp page; links the registration form and the WebTrac online registration."
+    },
+    {
+      "url": "https://www.greenwichct.gov/2150/Bendheim-Western-Greenwich-Civic-Center",
+      "checked": "2026-11-20",
+      "fields": [
+        "zip"
+      ],
+      "note": "Researched by Claude from this page. Civic center page gives 449 Pemberwick Road, Greenwich, CT 06831."
+    },
+    {
+      "url": "https://www.greenwichct.gov/2026/Youth-Scholarships",
+      "checked": "2026-11-20",
+      "fields": [
+        "financial_aid"
+      ],
+      "note": "Researched by Claude from this page. Youth Scholarship Program gives financial help to qualifying Greenwich residents."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.greenwichct.gov/485/Adventurers-Camp",
+      "kind": "html",
+      "title": null
+    },
+    "warnings": [],
+    "unknowns": [
+      "Whether lunch is provided",
+      "Extended care",
+      "ACA accreditation",
+      "Home bus service (only trip and beach transport is stated)",
+      "2027 dates and fees"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://www.greenwichct.gov/485/Adventurers-Camp",
+      "changes": [
+        "Found the current page at https://www.greenwichct.gov/485/Adventurers-Camp after https://www.greenwichct.gov/DocumentCenter/View/11510/Summer-Brochure-PDF failed (the listing tool said the town's 2026 summer brochure names no camp). The brochure lists several distinct town camps; this one has its own page, dates, ages and place, so it gets its own draft.",
+        "Dates, ages, place and fees come from the 2026 registration form at https://www.greenwichct.gov/DocumentCenter/View/1450/Adventurers-Camp-PDF?bidId=, which is linked from the camp page.",
+        "Used the 2026 season: the town has posted proposed 2027 fees in a news item but no 2027 camp dates or registration forms."
+      ],
+      "for_andrew": [
+        "Only 2026 dates and fees are posted (2027 registration opens in April). Keep the 2026 season, or hold until the 2027 forms are up?",
+        "Prices recorded are the non-resident rates, which only open June 1. Greenwich residents pay less (early bird from April 1). Is the non-resident rate the right one to show?",
+        "The camp page says field trip and beach transport is included but there is no home pickup bus, so I left transportation empty. Count trip transport as transportation?"
+      ]
+    }
+  }
+}

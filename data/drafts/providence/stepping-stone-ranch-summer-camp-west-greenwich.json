@@ -1,0 +1,98 @@
+{
+  "slug": "stepping-stone-ranch-summer-camp-west-greenwich",
+  "name": "Stepping Stone Ranch Summer Camp",
+  "operator_name": "Stepping Stone Ranch",
+  "website_url": "https://www.steppingstoneranch.com/lessons-riding-program",
+  "phone": "401-397-3725",
+  "street_address": "201 Escoheag Hill Rd",
+  "city": "West Greenwich",
+  "state": "RI",
+  "zip": "02817",
+  "camp_type": "day",
+  "primary_categories": [
+    "outdoor"
+  ],
+  "secondary_categories": [
+    "nature",
+    "arts"
+  ],
+  "activities": [
+    "hiking",
+    "horse care",
+    "arts and crafts",
+    "water play"
+  ],
+  "description_short": "A small week long day camp at a horse ranch in West Greenwich: campers hike in Arcadia Management Area, learn to handle and care for horses without riding, do arts and crafts and cool off with water play.",
+  "indoor_outdoor": "outdoor",
+  "price_per_week": 399,
+  "price_min": 399,
+  "price_max": 399,
+  "price_per": "week",
+  "season_year": 2025,
+  "sources": [
+    {
+      "url": "https://www.steppingstoneranch.com/lessons-riding-program",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "website_url",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "description_short",
+        "indoor_outdoor",
+        "price_per_week",
+        "price_min",
+        "price_max",
+        "price_per"
+      ],
+      "note": "Researched by Claude from this page. 'Camp Program for Children and Adults': hiking in Arcadia Management Area, horse time (no riding), arts and crafts, swim and splash; dates 'July 28 to August 1' and 'August 11 to 15' with no year, 8:00 AM to 4:00 PM Monday to Friday, limited to 15 campers per week, $399 per week. Those dates fall Monday to Friday only in 2025, so season_year is 2025 and no sessions are recorded. Lower on the page is an older 'Summer camps 2024' section ($395, 9:30 to 3)."
+    },
+    {
+      "url": "https://www.steppingstoneranch.com/",
+      "checked": "2026-11-20",
+      "fields": [
+        "operator_name",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip"
+      ],
+      "note": "Researched by Claude from this page. Home page footer: 201 Escoheag Hill Rd., West Greenwich RI 02817, 1-(401) 397-3725."
+    }
+  ],
+  "review": {
+    "status": "drop",
+    "source": {
+      "url": "https://www.steppingstoneranch.com/lessons-riding-program",
+      "kind": "html",
+      "title": "Lesson Program/Summer Camps | Steppingstoneranch"
+    },
+    "warnings": [
+      "The camp section shows no year; its dates match the 2025 calendar. No 2026 or 2027 camp is posted."
+    ],
+    "unknowns": [
+      "ages",
+      "2026 or 2027 dates",
+      "extended care",
+      "lunch",
+      "email"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://www.steppingstoneranch.com/lessons-riding-program",
+      "changes": [
+        "Read https://www.steppingstoneranch.com/lessons-riding-program again: it does describe a kids camp ('Camp Program for Children and Adults'), so the earlier 'page names no camp' result was wrong.",
+        "Dropped for now: the only dated camp weeks (July 28 to August 1, August 11 to 15, no year) fall on Mondays to Fridays in 2025, so the most recent posted season is 2025, not 2026 or 2027."
+      ],
+      "for_andrew": [
+        "Re-draft from this page when the ranch posts 2027 camp weeks. The page states no camper ages; ask the owner. West Greenwich is about 30 minutes from Providence."
+      ]
+    }
+  }
+}
