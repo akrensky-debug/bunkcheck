@@ -4,6 +4,7 @@ import './fonts.css'
 import './globals.css'
 import AccountLink from '@/components/AccountLink'
 import { HANDRAISER_HOSTS } from '@/lib/site-mode'
+import { SITE_URL } from '@/lib/site'
 
 // Figtree's Latin subset, served from the repo so the build never downloads fonts.
 // One variable file (weights 300 to 900, from Google Fonts v9); licence in app/fonts/OFL.txt.
@@ -15,6 +16,8 @@ const figtree = localFont({
 })
 
 export const metadata: Metadata = {
+  // Makes canonical and Open Graph links absolute. Without it they render as bare paths.
+  metadataBase: new URL(SITE_URL),
   title: 'Bunkcheck: the summer camp planner for busy parents',
   description: 'Find summer camps in New England, line up your weeks and get an email before registration opens. An AI planner built by parents.',
   applicationName: 'Bunkcheck',

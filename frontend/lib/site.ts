@@ -3,6 +3,9 @@ export const COMPANY = 'PromptBridge LLC'
 export const SUPPORT_EMAIL = process.env.NEXT_PUBLIC_SUPPORT_EMAIL || 'hello@mail.bunkcheck.ai'
 export const POLICY_UPDATED = 'November 20, 2026'
 
+// The public address. Canonical links, the sitemap and robots.txt point here whichever host served the page.
+export const SITE_URL = 'https://www.bunkcheck.ai'
+
 // The address parents paste into Claude (or any assistant that takes a remote MCP connector).
 // next.config.js proxies /mcp to the API's /claude/mcp. Keep the www: the bare domain answers
 // with a redirect, and a connector should not have to follow one.
