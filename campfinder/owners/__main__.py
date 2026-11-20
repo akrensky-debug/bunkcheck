@@ -50,6 +50,7 @@ import sys
 
 from campfinder.config import get_settings
 from campfinder.owners import outreach, season, service, updates
+from campfinder.services import checks
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -155,6 +156,11 @@ def _batch(args: argparse.Namespace) -> int:
     what = "the season update" if update else "the listing email"
     if args.cmd == "queue":
         print(january_number(args.region) + "\n")
+        if asked := checks.asking_camps():   # a person read a parent's report and couldn't tell from the camp's page
+            print(f"A parent reported something we couldn't check ({len(asked)}). Andrew decides whether to write:")
+            for name, facts in sorted(asked.items()):
+                print(f"  {name}: {', '.join(sorted(set(facts)))}")
+            print()
         print(f"Ready to ask, {what} ({len(q.ready)}):")
         for camp, email in q.ready:
             print(f"  {camp['name']}  ->  {email}")

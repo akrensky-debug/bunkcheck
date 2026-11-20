@@ -161,6 +161,9 @@ Tests: `pip install pytest pytest-asyncio && python -m pytest`.
 | `GET`  | `/api/v1/camps/{id}/registration` | When registration opens and what the form asks |
 | `GET`  | `/api/v1/registration/upcoming` | Checked registration openings still ahead, soonest first (the home page list) |
 | `POST` | `/api/v1/hand-raisers` | Tell me when Bunkcheck opens near me: an email, her state, optional town and kids' ages. Sends nothing |
+| `GET` | `/api/v1/camps/{id}/checks` | The facts a parent can check on a camp, with how many parents say each is still right (`docs/parent-checks.md`) |
+| `POST` | `/api/v1/camps/{id}/checks` | "Still right" or "this is wrong" on those facts. A report goes to a person; nothing changes by itself |
+| `GET` `POST` | `/api/v1/checks/{token}`, `/confirm`, `/stop` | The emailed link: see the answers, make them count, or delete the address |
 | `POST` | `/api/v1/families/{id}/bookings/quote` | Sandbox prototype, behind `BOOKING_PROVIDERS` |
 | `GET`  | `/api/activity/v1/...` | Activity API for partners (API key); see `docs/activity-api.md` |
 | `POST` | `/mcp` | MCP server (streamable HTTP) exposing the camp tools to any client |

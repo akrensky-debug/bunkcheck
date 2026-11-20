@@ -87,6 +87,9 @@ Limits marked *new* come from #77 and #78. Everything else is on `main` today.
 | `POST /camps/{id}/registration/alerts` | None | 10 unconfirmed sign-ups per address a day | Mail-bombing an address; capped |
 | `GET, POST /registration-alerts/{token}`, `/confirm`, `/stop` | Link, 192 bits | None | Guessing is infeasible |
 | `POST /hand-raisers` | None | 10 an hour per IP | Filling the list by script; capped. The answer is the same for a new and a known address, and no email is sent |
+| `GET /camps/{id}/checks` | None | None | Public: the facts a parent can check, and counts from two parents up |
+| `POST /camps/{id}/checks` | None, or signed in | 10 an hour per IP; 30 reports a day per camp emailed to the person; one confirm email an hour and three a day per address | Flooding the report queue or mail-bombing an address; capped. A report changes nothing until a person acts. A typed address proves nothing: its answers wait for the emailed link |
+| `GET, POST /checks/{token}`, `/confirm`, `/stop` | Link, 192 bits, hash stored; confirm works for 7 days | None | Guessing is infeasible. Opening changes nothing |
 | `POST /api/v1/inquiries`, `/inquiries/link/{token}/confirm` | None, or the family | 20 an hour per IP; 5 a day per family; 40 a day per camp | Flooding a camp's inbox; capped |
 | `GET /inquiries/link/{token}`, `/cancel` | Link, 192 bits | None | Guessing is infeasible |
 | `GET /owners/inquiries/{token}`, `/reply` | Link, 192 bits | None | Guessing is infeasible |
