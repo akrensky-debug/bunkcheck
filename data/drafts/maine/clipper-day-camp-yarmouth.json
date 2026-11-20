@@ -1,0 +1,120 @@
+{
+  "slug": "clipper-day-camp-yarmouth",
+  "name": "Clipper Day Camp",
+  "operator_name": "Yarmouth Community Services",
+  "website_url": "https://www.yarmouthcommunityservices.org/summer-camps",
+  "registration_url": "https://yarmouthme.myrec.com/info/default.aspx",
+  "phone": "(207) 846-2406",
+  "city": "Yarmouth",
+  "state": "ME",
+  "zip": "04096",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "sports",
+    "arts",
+    "swimming"
+  ],
+  "grade_min": 0,
+  "grade_max": 5,
+  "age_min": 5,
+  "age_max": 11,
+  "description_short": "Town day camp in Yarmouth for kids entering kindergarten to grade 5. Grades K and 1 meet at Rowe School and grades 2 to 5 at Yarmouth Elementary School, with gym and outdoor games, crafts, pool days and weekly field trips.",
+  "activities": [
+    "gym games",
+    "arts and crafts",
+    "outdoor games",
+    "swimming at Greely Pool",
+    "field trips"
+  ],
+  "season_year": 2026,
+  "sources": [
+    {
+      "url": "https://www.yarmouthcommunityservices.org/summer-camps",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "grade_min",
+        "grade_max",
+        "age_min",
+        "age_max",
+        "primary_categories",
+        "secondary_categories"
+      ],
+      "note": "Researched by Claude from this page. Grades K to 5 from the page's group headings; ages 5 to 11 derived from grades."
+    },
+    {
+      "url": "https://www.yarmouthcommunityservices.org/_files/ugd/6ae268_7d4c8bfe04324721af45421a4bf4c87e.pdf",
+      "checked": "2026-11-20",
+      "fields": [
+        "phone",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "extended_care",
+        "description_short",
+        "activities"
+      ],
+      "note": "Researched by Claude from this page. Handbook linked as the 2026 Parent Handbook, though its cover says 2025. Extended day 7:30 am to 5:30 pm for registered campers."
+    },
+    {
+      "url": "https://www.yarmouthcommunityservices.org/_files/ugd/6ae268_2aca70b97f7744e0b0ee231d3defb005.pdf",
+      "checked": "2026-11-20",
+      "fields": [
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Grades 2 to 5 calendar. No year is printed; the weekdays match 2026 (June 22 is a Monday) and it is linked under 2026 Clipper Day Camp."
+    }
+  ],
+  "extended_care": true,
+  "sessions": [
+    {
+      "name": "Summer 2026, weekly (no camp July 3; half day July 17)",
+      "start_date": "2026-06-22",
+      "end_date": "2026-08-14",
+      "price": null,
+      "availability": "unknown"
+    }
+  ],
+  "review": {
+    "status": "ready",
+    "source": {
+      "url": "https://www.yarmouthcommunityservices.org/summer-camps",
+      "kind": "html",
+      "title": "Summer Camps | Yarmouth Community Services"
+    },
+    "warnings": [
+      "The handbook linked as the 2026 Parent Handbook is headed 2025.",
+      "No fees are posted on the site now; the summer fees were in the spring and summer guide, which is no longer linked.",
+      "Campers bring lunch unless signed up for the separate Lunch Crunch program."
+    ],
+    "unknowns": [
+      "price",
+      "street addresses of the two schools",
+      "whether registration is by the week",
+      "lunch",
+      "financial aid",
+      "2027 dates"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://www.yarmouthcommunityservices.org/summer-camps",
+      "changes": [
+        "Read https://www.yarmouthcommunityservices.org/summer-camps again; it loads now and links the 2026 camp handbooks and calendars (the listing tool saw no camp on the page itself, since the details are in linked PDFs).",
+        "The page has two distinct camps with their own grades, places and calendars: Clipper Day Camp (K to 5) and Get Out and Go (grades 6 to 8). Wrote one draft for each.",
+        "Clipper Day Camp is one camp at two schools split by grade, so it is one listing.",
+        "Recorded the 2026 season, June 22 to August 14, as one line; the calendar is laid out by week."
+      ],
+      "for_andrew": []
+    }
+  }
+}

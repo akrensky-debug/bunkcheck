@@ -1,0 +1,108 @@
+{
+  "slug": "centerboard-yacht-club-junior-sailing-south-portland",
+  "name": "SailMaine Junior Sailing at Centerboard Yacht Club",
+  "operator_name": "SailMaine",
+  "website_url": "https://www.centerboardyachtclub.org/sailschool",
+  "registration_url": "https://sailmaine.campmanagement.com/p/request_for_info_m.php?action=enroll",
+  "street_address": "271 Front Street",
+  "city": "South Portland",
+  "state": "ME",
+  "zip": "04116",
+  "camp_type": "specialty",
+  "primary_categories": [
+    "sailing"
+  ],
+  "activities": [
+    "sailing",
+    "rigging",
+    "boat handling",
+    "water safety"
+  ],
+  "age_min": 8,
+  "age_max": 12,
+  "price_min": 289,
+  "price_max": 578,
+  "price_per": "week",
+  "financial_aid": true,
+  "description_short": "One-week sailing classes for ages 8 to 12 run by SailMaine at Centerboard Yacht Club on the South Portland waterfront. Beginner and intermediate sailors learn rigging, steering and boat handling in small boats, mornings, afternoons or all day.",
+  "swim_waterfront_notes": "Sailing in the sheltered inner harbor in JY Trainers and Optimist dinghies. Sailors must be under 125 lbs and pass a swim test on the first day: swim 25 yards and tread water 2 to 3 minutes in a life jacket.",
+  "refund_policy_summary": "Full refund more than 3 weeks before the start, 50% between 3 weeks and 1 week before, no refund within 1 week.",
+  "season_year": 2027,
+  "sources": [
+    {
+      "url": "https://www.sailmaine.org/youth-summer-camp",
+      "checked": "2026-11-20",
+      "fields": [
+        "operator_name",
+        "registration_url",
+        "age_min",
+        "age_max",
+        "price_min",
+        "price_max",
+        "price_per",
+        "financial_aid"
+      ],
+      "note": "Researched by Claude from this page. Centerboard section: ages 8 to 12, full day $578, half day $289 per one-week session. Scholarships from $25 to full cost."
+    },
+    {
+      "url": "https://www.centerboardyachtclub.org/sailschool",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "website_url",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "description_short",
+        "swim_waterfront_notes",
+        "refund_policy_summary"
+      ],
+      "note": "Researched by Claude from this page"
+    },
+    {
+      "url": "https://www.centerboardyachtclub.org/contact_info",
+      "checked": "2026-11-20",
+      "fields": [
+        "street_address",
+        "city",
+        "state",
+        "zip"
+      ],
+      "note": "Researched by Claude from this page. Street address is 271 Front Street; the ZIP 04116 is from the club's mailing address on the same page."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.centerboardyachtclub.org/sailschool",
+      "kind": "html",
+      "title": "Centerboard Yacht Club Sail School"
+    },
+    "warnings": [
+      "The club's own page shows session dates that fit 2025 (June 23 is a Monday in 2025) under a 2026 heading, and says the cost is both $289/$578 and $TBA.",
+      "ZIP 04116 is the club's PO Box ZIP; the street address may use a different ZIP."
+    ],
+    "unknowns": [
+      "individual 2027 week dates",
+      "extended care",
+      "lunch",
+      "street ZIP"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://www.centerboardyachtclub.org/sailschool",
+      "changes": [
+        "Read https://www.centerboardyachtclub.org/sailschool again; it now loads and describes the SailMaine junior sailing program at the club (the listing tool saw no camp on it earlier).",
+        "Took ages, prices and aid from SailMaine's own page https://www.sailmaine.org/youth-summer-camp, which runs the program and lists 2027 session dates.",
+        "Left sessions out: SailMaine says only that the 2027 Centerboard sessions are 8 one-week sessions starting June 21, without listing each week, and the club's own page shows dates that fall on 2025 weekdays under a 2026 heading."
+      ],
+      "for_andrew": [
+        "The published SailMaine Youth Summer Programs listing (Portland) already mentions this Centerboard program in its description. Should Centerboard be its own listing, as a separate site with its own address and ages, or stay folded into the SailMaine listing?",
+        "SailMaine's page shows 2027 dates but does not label the year of the $289 and $578 prices. They match the 2026 prices in the published listing. OK to show them with season 2027?"
+      ]
+    }
+  }
+}

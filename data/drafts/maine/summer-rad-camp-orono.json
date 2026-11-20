@@ -1,0 +1,165 @@
+{
+  "slug": "summer-rad-camp-orono",
+  "name": "Summer RAD Camp",
+  "operator_name": "UMaine Campus Recreation and the Town of Orono",
+  "website_url": "https://umaine.edu/campusrecreation/summer-camps/",
+  "registration_url": "https://secure.rec1.com/ME/orono-me/catalog",
+  "email": "erin.wool@maine.edu",
+  "city": "Orono",
+  "state": "ME",
+  "zip": "04469",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "sports",
+    "arts",
+    "swimming",
+    "nature"
+  ],
+  "activities": [
+    "swimming",
+    "rock climbing",
+    "sports",
+    "arts and crafts",
+    "canoeing",
+    "field games",
+    "library time",
+    "field trips"
+  ],
+  "age_min": 5,
+  "age_max": 11,
+  "grade_min": 0,
+  "grade_max": 5,
+  "extended_care": true,
+  "description_short": "Weekly day camp for kids in kindergarten to grade 5, based on the University of Maine campus in Orono. Each week has a theme, with swimming, climbing, sports, crafts, canoeing and trips around Orono and Bangor.",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Aloha Summer",
+      "start_date": "2026-06-22",
+      "end_date": "2026-06-26",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Space Expedition (no camp July 3)",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-02",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Animal Adventure",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Adventure Land",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Under the Sea",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Sports Spectacular",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Heros",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Into the Woods",
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-14",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Fairytale Fun",
+      "start_date": "2026-08-17",
+      "end_date": "2026-08-21",
+      "price": null,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://umaine.edu/campusrecreation/summer-camps/",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "email",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "grade_min",
+        "grade_max",
+        "extended_care",
+        "description_short",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Ages 5 to 11 and grades K to 5 are stated. Extended care: drop off and pick up up to 1.5 hours before or after 9 to 4 at no extra charge. ZIP is the university's, from the page footer; camp uses three campus sites so no street is given."
+    }
+  ],
+  "review": {
+    "status": "ready",
+    "source": {
+      "url": "https://umaine.edu/campusrecreation/summer-camps/",
+      "kind": "html",
+      "title": "Summer RAD Camps - Campus Recreation - University of Maine"
+    },
+    "warnings": [
+      "The page states $210 per week for members and non-members, but the registration tab says registration this summer is $195 a week. Price left blank.",
+      "The page says ages 5 to 11, but its staff ratio note mentions ages 8 to 12.",
+      "Extended field trips for the oldest group are an add-on with an 8 am drop off and 5:30 pm pick up."
+    ],
+    "unknowns": [
+      "price (two figures given)",
+      "street address of the home base sites",
+      "lunch",
+      "financial aid",
+      "2027 dates"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://umaine.edu/campusrecreation/summer-camps/",
+      "changes": [
+        "Found the camp's own page at https://umaine.edu/campusrecreation/summer-camps/ (linked from https://umaine.edu/summercamps/sports-and-recreation/, which the listing tool read as naming no camp; it is an index of several programs).",
+        "Drafted only Summer RAD Camp. The index also lists Maine Summer Sports Camps (run by UMaine Athletics on another site) and 4-H shooting sports camps at Bryant Pond and Greenland Point, which are separate programs and already have their own drafts or listings.",
+        "Recorded the 2026 weeks; no 2027 dates are posted. The week list has no year, but it sits under a Summer 2026 dates tab and the weekdays match 2026.",
+        "Left price out because the page gives two weekly rates."
+      ],
+      "for_andrew": []
+    }
+  }
+}

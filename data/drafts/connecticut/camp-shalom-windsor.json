@@ -1,0 +1,181 @@
+{
+  "slug": "camp-shalom-windsor",
+  "name": "Camp Shalom",
+  "operator_name": "Mandell JCC of Greater Hartford",
+  "website_url": "https://www.campshalomct.com/",
+  "registration_url": "https://www.campshalomct.com/register",
+  "email": "cwyckoff@mandelljcc.org",
+  "phone": "860-688-2267",
+  "city": "Windsor",
+  "state": "CT",
+  "camp_type": "day",
+  "primary_categories": [
+    "general",
+    "outdoor",
+    "swimming"
+  ],
+  "secondary_categories": [
+    "sports",
+    "arts"
+  ],
+  "activities": [
+    "swimming",
+    "motor boating",
+    "fishing",
+    "kayaking",
+    "canoeing",
+    "paddle boarding",
+    "water skiing",
+    "knee boarding",
+    "tubing",
+    "archery",
+    "climbing wall",
+    "ropes course",
+    "tennis",
+    "basketball",
+    "volleyball",
+    "gaga",
+    "soccer",
+    "mini golf",
+    "ceramics",
+    "painting",
+    "woodworking",
+    "jewelry making",
+    "music",
+    "hip-hop",
+    "gardening"
+  ],
+  "grade_min": 0,
+  "grade_max": 10,
+  "religious_affiliation": "Jewish",
+  "description_short": "A traditional day camp run by the Mandell JCC on 75 wooded acres along the Farmington River in Windsor, open to everyone. Campers swim in a pool and the river, boat, water ski and fish, and also do sports, archery, a climbing wall and ropes course, and arts such as ceramics and woodworking.",
+  "indoor_outdoor": "outdoor",
+  "extended_care": true,
+  "transportation": true,
+  "meals_included": true,
+  "financial_aid": true,
+  "special_needs_notes": "An Inclusion Program with an Inclusion Specialist helps campers with disabilities or specific needs take part. Campers with a current IEP may join the Learning Hut tutoring program. Families should talk with the camp director before registering.",
+  "swim_waterfront_notes": "Camp has a pool and a riverfront on the Farmington River, with Red Cross certified instructional swim and free swim, plus boating, water skiing and tubing.",
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Session 1",
+      "start_date": "2027-06-21",
+      "end_date": "2027-07-02",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 2",
+      "start_date": "2027-07-05",
+      "end_date": "2027-07-16",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 3",
+      "start_date": "2027-07-19",
+      "end_date": "2027-07-30",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 4",
+      "start_date": "2027-08-02",
+      "end_date": "2027-08-13",
+      "price": null,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.campshalomct.com/sessions-rates",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "grade_min",
+        "grade_max",
+        "extended_care",
+        "transportation",
+        "meals_included",
+        "special_needs_notes",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Sessions and rates page: summer 2027 runs June 21 to August 13 in four two week sessions; registration opens in January and no 2027 rates are posted yet. Units by grade entering in fall 2027 from kindergarten to grade 9, CIT for grade 10. Camp day 9:30 am to 3:30 pm (the FAQ says 9:00). Buses from the Mandell JCC in West Hartford and other central spots, kosher nut free lunch and snacks, and after care are included or offered."
+    },
+    {
+      "url": "https://www.campshalomct.com/",
+      "checked": "2026-11-20",
+      "fields": [
+        "website_url",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "religious_affiliation",
+        "description_short",
+        "indoor_outdoor",
+        "swim_waterfront_notes"
+      ],
+      "note": "Researched by Claude from this page. Camp home page: 75 acres along the Farmington River in Windsor, pool and riverfront, activity list, open to everyone. Religious affiliation: run by the Jewish Community Center, kosher meals and Jewish values; the site says it is open to everyone."
+    },
+    {
+      "url": "https://www.campshalomct.com/contactus",
+      "checked": "2026-11-20",
+      "fields": [
+        "operator_name",
+        "registration_url",
+        "email",
+        "phone"
+      ],
+      "note": "Researched by Claude from this page. Contact page: Director Colby Wyckoff, camp main number 860-688-2267 (off season 860-231-6376), affiliated with the Mandell JCC of Greater Hartford."
+    },
+    {
+      "url": "https://www.campshalomct.com/payment-plans-financial-assistance",
+      "checked": "2026-11-20",
+      "fields": [
+        "financial_aid"
+      ],
+      "note": "Researched by Claude from this page. Need based financial assistance and flexible payment plans."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.campshalomct.com/sessions-rates",
+      "kind": "html",
+      "title": "Camp Shalom | Windsor, CT"
+    },
+    "warnings": [
+      "Validator fails: zip is required, and no page I could read on the camp's or the JCC's site gives Camp Shalom's street address or zip (only 'Windsor, CT')."
+    ],
+    "unknowns": [
+      "Street address and zip",
+      "2027 rates (not posted until registration opens in January)",
+      "Refund policy",
+      "ACA accreditation",
+      "Exact daily start time (9:30 am on the sessions page, 9:00 am in the FAQ)"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "missing required zip"
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://www.campshalomct.com/sessions-rates",
+      "changes": [
+        "Found the current page at https://www.campshalomct.com/sessions-rates after https://www.mandelljcc.org/clientuploads/Brochures/2026/Summer_2026_program_guide.pdf failed (over the 8 MB cap). The Mandell JCC Camp Shalom page points to the camp's own site, campshalomct.com, which has the same facts as HTML.",
+        "Used the 2027 season: 2027 session dates are posted. No 2027 prices are posted, so sessions have no price, and I did not use 2026 prices with 2027 dates.",
+        "Ages recorded as grades K to 10 (units K to 9, CIT for grade 10)."
+      ],
+      "for_andrew": [
+        "The camp's site and the JCC site give only 'Windsor, CT', not a street address or zip, so the draft fails validation on zip. Ask the camp for the address (or the 2026 program guide, which is over the fetch cap), or is there a page you want me to use?",
+        "religious_affiliation set to Jewish because the camp is run by the JCC with kosher meals and Jewish values, though it says it is open to everyone. Keep that?",
+        "2027 dates are up but prices are not. List now without prices, or wait for January?"
+      ]
+    }
+  }
+}

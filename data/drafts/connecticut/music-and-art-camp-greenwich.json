@@ -1,0 +1,125 @@
+{
+  "slug": "music-and-art-camp-greenwich",
+  "name": "Music & Art Camp",
+  "operator_name": "Town of Greenwich Parks and Recreation",
+  "website_url": "https://www.greenwichct.gov/491/Music-Art-Camp",
+  "registration_url": "https://ctgreenwichweb.myvscloud.com/webtrac/web/splash.html",
+  "email": "recreation@greenwichct.gov",
+  "phone": "203-618-7649",
+  "street_address": "Greenwich High School, 10 Hillside Road",
+  "city": "Greenwich",
+  "state": "CT",
+  "zip": "06830",
+  "camp_type": "specialty",
+  "primary_categories": [
+    "performing_arts",
+    "arts"
+  ],
+  "activities": [
+    "orchestra",
+    "band",
+    "beginning band",
+    "drawing",
+    "painting",
+    "collage",
+    "crafts",
+    "clay",
+    "wall ball"
+  ],
+  "grade_min": 1,
+  "grade_max": 9,
+  "description_short": "A five week town music and art program at Greenwich High School. Mornings from 9 am to noon offer band and orchestra rehearsals, a beginning band, or art classes, and an afternoon art class from 12:30 to 3:30 pm is open to music students, for children entering grades 1 to 9 depending on the section.",
+  "indoor_outdoor": "indoor",
+  "price_min": 420,
+  "price_max": 420,
+  "price_per": "session",
+  "financial_aid": true,
+  "refund_policy_summary": "No refunds and no prorating. Requests for full credit are considered before June 1, half credit on or after June 1, and credit is prorated once camp begins. Credits carry a $20 administrative fee.",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Summer 2026 (each section)",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-31",
+      "price": 420,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.greenwichct.gov/DocumentCenter/View/1452/Music---Art-PDF?bidId=",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "operator_name",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "description_short",
+        "indoor_outdoor",
+        "price_min",
+        "price_max",
+        "price_per",
+        "refund_policy_summary",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. 2026 Music and Art registration form. $420 is the non-resident fee per section (residents $335 early bird, $370 from June 1). Grades: Young Artist is for children who completed K to 3, music and afternoon art for completed grades 3 to 8, morning art for completed grades 4 to 8, so entering grades 1 to 9. No camp July 3. Harp and piano are not accepted; junior and senior band and strings need prior study."
+    },
+    {
+      "url": "https://www.greenwichct.gov/491/Music-Art-Camp",
+      "checked": "2026-11-20",
+      "fields": [
+        "website_url",
+        "registration_url"
+      ],
+      "note": "Researched by Claude from this page. Town camp page; links the registration form and the WebTrac online registration."
+    },
+    {
+      "url": "https://www.greenwichct.gov/2026/Youth-Scholarships",
+      "checked": "2026-11-20",
+      "fields": [
+        "financial_aid"
+      ],
+      "note": "Researched by Claude from this page. Youth Scholarship Program gives financial help to qualifying Greenwich residents."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.greenwichct.gov/491/Music-Art-Camp",
+      "kind": "html",
+      "title": null
+    },
+    "warnings": [],
+    "unknowns": [
+      "Ages (only grades are stated)",
+      "Lunch, extended care, transportation",
+      "ACA accreditation",
+      "2027 dates and fees"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://www.greenwichct.gov/491/Music-Art-Camp",
+      "changes": [
+        "Found the current page at https://www.greenwichct.gov/491/Music-Art-Camp after https://www.greenwichct.gov/DocumentCenter/View/11510/Summer-Brochure-PDF failed (the listing tool said the town's 2026 summer brochure names no camp). The brochure lists several distinct town camps; this one has its own page, dates, ages and place, so it gets its own draft.",
+        "Dates, ages, place and fees come from the 2026 registration form at https://www.greenwichct.gov/DocumentCenter/View/1452/Music---Art-PDF?bidId=, which is linked from the camp page.",
+        "Used the 2026 season: the town has posted proposed 2027 fees in a news item but no 2027 camp dates or registration forms."
+      ],
+      "for_andrew": [
+        "Only 2026 dates and fees are posted (2027 registration opens in April). Keep the 2026 season, or hold until the 2027 forms are up?",
+        "Prices recorded are the non-resident rates, which only open June 1. Greenwich residents pay less (early bird from April 1). Is the non-resident rate the right one to show?"
+      ]
+    }
+  }
+}
