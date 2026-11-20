@@ -25,3 +25,27 @@ def test_api_near_me(client) -> None:
     far = client.post("/api/v1/places/nearest", json={"lat": 37.77, "lng": -122.42})
     assert far.status_code == 404 and "New England" in far.json()["detail"]
     assert client.post("/api/v1/places/nearest", json={"lat": 120, "lng": 0}).status_code == 422
+
+
+def test_api_takes_only_two_finite_numbers(client) -> None:
+    url = "/api/v1/places/nearest"
+    for bad in ({"lat": "41.8", "lng": "-71.4"},          # strings
+                {"lat": 41.8},                             # missing
+                {"lat": 41.8, "lng": -71.4, "name": "x"},  # extra field
+                {"lat": True, "lng": -71.4}):              # not a number
+        assert client.post(url, json=bad).status_code == 422, bad
+    for raw in ('{"lat": NaN, "lng": -71.4}', '{"lat": 41.8, "lng": Infinity}'):
+        r = client.post(url, content=raw, headers={"Content-Type": "application/json"})
+        assert r.status_code == 422, raw
+
+
+def test_api_rounds_and_answers_the_same_for_a_precise_position(client) -> None:
+    a = client.post("/api/v1/places/nearest", json={"lat": 41.823989, "lng": -71.412834}).json()
+    b = client.post("/api/v1/places/nearest", json={"lat": 41.82, "lng": -71.41}).json()
+    assert a == b == {"location": "Providence, RI"}
+
+
+def test_api_limits_lookups_per_address(client) -> None:
+    url = "/api/v1/places/nearest"
+    codes = [client.post(url, json={"lat": 41.82, "lng": -71.41}).status_code for _ in range(31)]
+    assert codes[:30] == [200] * 30 and codes[30] == 429

@@ -14,6 +14,14 @@ const nextConfig = {
   // Claude endpoint, which leaves out ui.domain so Claude renders the camp cards.
   // The ChatGPT endpoint and OpenAI's domain check are served the same way, so the ChatGPT app
   // lives on www.bunkcheck.ai (a domain we already prove we own) and needs no api. subdomain.
+  // Only our own pages may ask for location (camp search's "Use my location"); nothing on the
+  // site uses the camera, microphone or payments, so nothing embedded can ask for them either.
+  async headers() {
+    return [{
+      source: '/:path*',
+      headers: [{ key: 'Permissions-Policy', value: 'geolocation=(self), camera=(), microphone=(), payment=()' }],
+    }]
+  },
   async rewrites() {
     return [
       { source: '/mcp', destination: `${MCP_UPSTREAM}/claude/mcp` },
