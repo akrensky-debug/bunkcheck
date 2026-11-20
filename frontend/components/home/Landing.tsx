@@ -53,8 +53,9 @@ export function Starters({ onPick, disabled }: { onPick: (text: string) => void;
   return (
     <ul aria-label="Or start with one of these" className="flex flex-wrap gap-2">
       {STARTERS.map(s => (
-        <li key={s}>
-          <Button variant="secondary" size="lg" onClick={() => onPick(s)} disabled={disabled}>{s}</Button>
+        <li key={s} className="max-w-full">
+          {/* On the narrowest phones the longest starter wraps instead of pushing the page sideways. */}
+          <Button variant="secondary" size="lg" onClick={() => onPick(s)} disabled={disabled} className="h-auto max-w-full whitespace-normal py-3 text-left">{s}</Button>
         </li>
       ))}
     </ul>

@@ -15,8 +15,10 @@ export default function HandRaiserPage() {
   return (
     <div className="mx-auto max-w-wide px-4 sm:px-6">
       <div className="mx-auto w-full max-w-narrow pb-16 pt-8 sm:pt-20 lg:pt-24">
-        <h1 className="font-display text-display text-ink text-balance lg:-mr-48">
-          Planning summer shouldn&rsquo;t take{' '}
+        <h1 className="font-display text-display text-ink">
+          {/* Three lines, broken where the sentence turns. Only a phone narrower than 360px wraps one. */}
+          <span className="block">Planning summer</span>
+          <span className="block">shouldn&rsquo;t take</span>
           <span className="marker whitespace-nowrap">all winter.</span>
         </h1>
         {/* Andrew's copy, 19 November 2026. 457 active camps in the live database that day. */}
