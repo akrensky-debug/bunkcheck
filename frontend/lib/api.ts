@@ -17,10 +17,11 @@ export interface CampSearchResult {
   weekly_price?: number | null
   /** The price as a parent reads it: '$350/week', '$900 to $1,200 per session', 'Price not posted'. */
   price_label?: string
-  transportation: boolean
-  extended_care: boolean
-  meals_included: boolean
-  financial_aid: boolean
+  /** null: the listing doesn't say. Not a no. */
+  transportation: boolean | null
+  extended_care: boolean | null
+  meals_included: boolean | null
+  financial_aid: boolean | null
   aca_accredited: boolean | null
   verification_status: string
   season_year?: number | null

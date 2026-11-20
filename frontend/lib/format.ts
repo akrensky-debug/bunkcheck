@@ -18,10 +18,18 @@ const FIELD_LABEL: Record<string, string> = {
   transportation: 'transportation',
   extended_care: 'extended care',
   meals_included: 'meals',
+  financial_aid: 'financial aid',
   refund_policy_summary: 'refund policy',
   special_needs_notes: 'support for special needs',
   medical_support_notes: 'medical support',
   registration_url: 'registration link',
+}
+
+/** What the listing says about a yes/no fact. null means the listing doesn't say, which is not a no. */
+export const NOT_LISTED = 'Ask the camp'
+
+export function listingFact(value: boolean | null | undefined, yes = 'Yes'): string {
+  return value == null ? NOT_LISTED : value ? yes : 'No'
 }
 
 /** A field name for people: "refund_policy_summary" becomes "refund policy". */

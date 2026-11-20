@@ -1,7 +1,7 @@
 import CampCard from '@/components/CampCard'
 import TrustBadge from '@/components/TrustBadge'
 import { List, ListRow, Meta, StatusCounts, StatusMark, type StatusTone } from '@/components/ui'
-import { miles } from '@/lib/format'
+import { listingFact, miles } from '@/lib/format'
 import { BookingBlock } from '@/components/booking/BookingBlocks'
 import { AssignProposal, HouseholdCard, InviteProposal, MessageDraft, TasksCard } from '@/components/household/HouseholdBlocks'
 import type { Comparison, Coverage, CoverageStatus, FamilyEvent, Plan, UIData } from '@/lib/agent'
@@ -83,9 +83,9 @@ function ComparisonView({ data }: { data: Comparison }) {
     ['Ages', c => (c.age_min != null && c.age_max != null ? `${c.age_min}–${c.age_max}` : '—')],
     ['Per week', c => (c.price_per_week ? `$${Math.round(c.price_per_week)}${c.last_season && c.season_year ? ` (${c.season_year})` : ''}` : '—')],
     ['Sessions', c => String(c.session_count)],
-    ['Extended care', c => (c.extended_care ? 'Yes' : 'No')],
-    ['Transport', c => (c.transportation ? 'Yes' : 'No')],
-    ['Meals', c => (c.meals_included ? 'Yes' : 'No')],
+    ['Extended care', c => listingFact(c.extended_care)],
+    ['Transport', c => listingFact(c.transportation)],
+    ['Meals', c => listingFact(c.meals_included, 'Included')],
   ]
   return (
     <div>

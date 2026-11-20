@@ -28,7 +28,7 @@ from campfinder.models.compare import CompareRequest
 from campfinder.models.coverage import AwayRange, WorkBlock
 from campfinder.models.plan import PlanRequest, PlanSessionInput
 from campfinder.models.search import SearchRequest
-from campfinder.services.camps import get_camp_detail
+from campfinder.services.camps import NOT_LISTED_LIST_NOTE, get_camp_detail, not_listed, not_listed_note
 from campfinder.services.compare import compare_camps
 from campfinder.services.coverage import check_coverage
 from campfinder.services.errors import ServiceError
@@ -195,6 +195,8 @@ def _compact_camp(c: dict[str, Any]) -> dict[str, Any]:
         "financial_aid", "aca_accredited", "verification_status", "match_reasons", "season_year",
     )
     out = {k: c.get(k) for k in keys if c.get(k) not in (None, [], "")}
+    if unlisted := not_listed(c):
+        out["not_listed"] = unlisted  # the listing doesn't say; never read as no
     if c.get("last_season"):
         out["last_season"] = True  # price is last season's: say so
     return out
@@ -234,7 +236,7 @@ async def search_camps_tool(inp: SearchCampsInput, family_id: str | None = None)
 
 
 def search_note(camps: list[dict[str, Any]], budget: float | None) -> str | None:
-    """What the assistant must say about prices, counted from the cards it is given. A caller that
+    """What the assistant must say about prices and unlisted facts, counted from the cards it is given. A caller that
     shows fewer cards (the MCP widget shows MAX_CARDS) calls this again with the cards it shows."""
     notes = []
     if budget is not None:
@@ -248,6 +250,8 @@ def search_note(camps: list[dict[str, Any]], budget: float | None) -> str | None
     if old:
         notes.append(f"{old} of these show last season's prices (last_season); {planning_year()} prices "
                      "aren't posted yet. Say so when you mention a price.")
+    if any(not_listed(c) for c in camps):
+        notes.append(NOT_LISTED_LIST_NOTE)
     return " ".join(notes) or None
 
 
@@ -323,7 +327,12 @@ async def find_sessions_tool(inp: FindSessionsInput) -> ToolOutput:
 
 
 async def get_camp_details_tool(inp: GetCampDetailsInput) -> ToolOutput:
-    detail = get_camp_detail(inp.camp_id).model_dump(mode="json", exclude_none=True)
+    camp = get_camp_detail(inp.camp_id)
+    detail = camp.model_dump(mode="json", exclude_none=True)
+    full = camp.model_dump(mode="json")
+    if unlisted := not_listed(full):
+        detail["not_listed"] = unlisted
+        detail["not_listed_note"] = not_listed_note(full)
     for noisy in ("gallery_image_urls", "hero_image_url", "created_at", "updated_at"):
         detail.pop(noisy, None)
     return ToolOutput(content=detail, ui={"type": "camp_detail", "camp": detail})
@@ -332,7 +341,11 @@ async def get_camp_details_tool(inp: GetCampDetailsInput) -> ToolOutput:
 async def compare_camps_tool(inp: CompareCampsInput) -> ToolOutput:
     res = compare_camps(CompareRequest(**inp.model_dump()))
     data = res.model_dump(mode="json")
-    return ToolOutput(content=data, ui={"type": "comparison", **data})
+    content = dict(data)
+    if any(not_listed(c) for c in data["camps"]):
+        content["camps"] = [{**c, "not_listed": not_listed(c)} if not_listed(c) else c for c in data["camps"]]
+        content["note"] = NOT_LISTED_LIST_NOTE
+    return ToolOutput(content=content, ui={"type": "comparison", **data})
 
 
 async def build_summer_plan_tool(inp: BuildSummerPlanInput) -> ToolOutput:

@@ -24,13 +24,13 @@ def generate_differences(camps: list[dict[str, Any]]) -> list[str]:
     _diff_price(camps, diffs)
 
     # --- Transportation ---
-    _diff_boolean_field(camps, "transportation", "offers transportation", "does not offer transportation", diffs)
+    _diff_boolean_field(camps, "transportation", "offers transportation", "does not offer transportation", "transportation", diffs)
 
     # --- Extended care ---
-    _diff_boolean_field(camps, "extended_care", "offers extended care", "does not offer extended care", diffs)
+    _diff_boolean_field(camps, "extended_care", "offers extended care", "does not offer extended care", "extended care", diffs)
 
     # --- Meals ---
-    _diff_boolean_field(camps, "meals_included", "includes meals", "does not include meals", diffs)
+    _diff_boolean_field(camps, "meals_included", "includes meals", "does not include meals", "meals", diffs)
 
     # --- ACA accreditation ---
     _diff_aca(camps, diffs)
@@ -80,15 +80,28 @@ def _diff_boolean_field(
     field: str,
     yes_label: str,
     no_label: str,
+    fact: str,
     diffs: list[str],
 ) -> None:
-    yes = [c["name"] for c in camps if c.get(field)]
-    no = [c["name"] for c in camps if not c.get(field)]
-    if yes and no:
-        if len(yes) == 1:
-            diffs.append(f"{yes[0]} {yes_label}, {_join_names(no)} {no_label}")
-        else:
-            diffs.append(f"{_join_names(yes)} {yes_label}; {_join_names(no)} {no_label}")
+    """Yes, no and not listed are three answers. A camp whose listing doesn't say (None) is never
+    counted as a no."""
+    yes = [c["name"] for c in camps if c.get(field) is True]
+    no = [c["name"] for c in camps if c.get(field) is False]
+    unknown = [c["name"] for c in camps if c.get(field) is None]
+    if sum(1 for group in (yes, no, unknown) if group) < 2:
+        return
+    parts = []
+    if yes:
+        parts.append(f"{_join_names(yes)} {yes_label}")
+    if no:
+        parts.append(f"{_join_names(no)} {no_label}")
+    if unknown:
+        parts.append(f"{unknown[0]}'s listing doesn't mention {fact} (ask the camp)" if len(unknown) == 1
+                     else f"the listings for {_join_names(unknown)} don't mention {fact} (ask the camps)")
+    if len(yes) == 1 and len(parts) == 2 and no:
+        diffs.append(f"{parts[0]}, {parts[1]}")
+    else:
+        diffs.append("; ".join(parts))
 
 
 def _diff_aca(camps: list[dict[str, Any]], diffs: list[str]) -> None:

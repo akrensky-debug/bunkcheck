@@ -19,9 +19,46 @@ from campfinder.services.season import is_last_season, season_note
 TRUST_IMPORTANT_FIELDS = [
     "price_min", "price_per_week", "sessions",
     "description_short", "transportation", "extended_care",
-    "meals_included", "refund_policy_summary",
+    "meals_included", "financial_aid", "refund_policy_summary",
     "special_needs_notes", "medical_support_notes",
 ]
+
+# Yes/no facts a listing often leaves out, with the words a parent would use. The camps table
+# holds NULL when the listing doesn't say; that stays None all the way out, because "not listed"
+# is not "no".
+LISTING_FACTS = {
+    "extended_care": "extended care",
+    "transportation": "transportation",
+    "meals_included": "meals",
+    "financial_aid": "financial aid",
+}
+NOT_LISTED_NOTE = ("The listing doesn't say whether this camp has {facts}. That is not a no: "
+                   "say the listing doesn't say and suggest asking the camp.")
+
+
+# For a list of camps: what an assistant must do with each camp's not_listed.
+NOT_LISTED_LIST_NOTE = ("Facts named in a camp's not_listed aren't in its listing. That is not a no: never say the "
+                        "camp doesn't offer them; say the listing doesn't say and suggest asking the camp.")
+
+
+def listing_fact(value: Any) -> bool | None:
+    """A yes/no listing fact as stored: True, False, or None when the listing doesn't say."""
+    return None if value is None else bool(value)
+
+
+def not_listed(camp: dict[str, Any]) -> list[str]:
+    """The listing facts this camp record carries as None, in a parent's words. A fact the record
+    doesn't carry at all (a compare row has no financial_aid) is left out, not called unlisted."""
+    return [label for field, label in LISTING_FACTS.items() if field in camp and camp[field] is None]
+
+
+def not_listed_note(camp: dict[str, Any]) -> str | None:
+    """What an assistant must say about the facts this camp's listing leaves out, or None."""
+    labels = not_listed(camp)
+    if not labels:
+        return None
+    facts = labels[0] if len(labels) == 1 else ", ".join(labels[:-1]) + " or " + labels[-1]
+    return NOT_LISTED_NOTE.format(facts=facts)
 
 
 def camp_url(camp: dict[str, Any]) -> str:
@@ -115,10 +152,10 @@ def get_camp_detail(ref: UUID | str) -> CampDetail:
         price_per_week=float(camp["price_per_week"]) if camp.get("price_per_week") else None,
         price_per=camp.get("price_per"),
         deposit_required=camp.get("deposit_required"),
-        financial_aid=camp.get("financial_aid") or False,
-        extended_care=camp.get("extended_care") or False,
-        transportation=camp.get("transportation") or False,
-        meals_included=camp.get("meals_included") or False,
+        financial_aid=listing_fact(camp.get("financial_aid")),
+        extended_care=listing_fact(camp.get("extended_care")),
+        transportation=listing_fact(camp.get("transportation")),
+        meals_included=listing_fact(camp.get("meals_included")),
         refund_policy_summary=camp.get("refund_policy_summary"),
         special_needs_notes=camp.get("special_needs_notes"),
         medical_support_notes=camp.get("medical_support_notes"),

@@ -84,10 +84,11 @@ class CampDetail(BaseModel):
     price_per_week: float | None = None
     price_per: str | None = None
     deposit_required: bool | None = None
-    financial_aid: bool = False
-    extended_care: bool = False
-    transportation: bool = False
-    meals_included: bool = False
+    # Yes/no facts a listing often leaves out: None means the listing doesn't say, which is not a no.
+    financial_aid: bool | None = None
+    extended_care: bool | None = None
+    transportation: bool | None = None
+    meals_included: bool | None = None
     refund_policy_summary: str | None = None
     special_needs_notes: str | None = None
     medical_support_notes: str | None = None
@@ -136,10 +137,11 @@ class CampSearchResult(BaseModel):
     weekly_price: float | None = Field(default=None, description="Lowest weekly price on file; None when the camp "
                                        "hasn't posted one per week. This is what a budget is checked against.")
     price_label: str = Field(default="Price not posted", description="The price as the card shows it, with its unit.")
-    transportation: bool = False
-    extended_care: bool = False
-    meals_included: bool = False
-    financial_aid: bool = False
+    # None means the listing doesn't say, which is not a no.
+    transportation: bool | None = None
+    extended_care: bool | None = None
+    meals_included: bool | None = None
+    financial_aid: bool | None = None
     aca_accredited: bool | None = None
     verification_status: str
     last_updated_date: datetime | None = None

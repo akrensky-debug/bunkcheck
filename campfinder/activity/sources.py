@@ -19,7 +19,7 @@ from campfinder.activity.schema import (
 )
 from campfinder.config import get_settings
 from campfinder.database import get_supabase
-from campfinder.services.camps import build_trust_summary
+from campfinder.services.camps import build_trust_summary, listing_fact
 from campfinder.services.geo import geocode_location
 from campfinder.services.search import search_camps
 
@@ -85,11 +85,11 @@ def program_from_camp(
         price=Price(
             per_week=_num(camp.get("price_per_week")), min=_num(camp.get("price_min")),
             max=_num(camp.get("price_max")), unit=camp.get("price_per"),
-            deposit_required=camp.get("deposit_required"), financial_aid=bool(camp.get("financial_aid")),
+            deposit_required=camp.get("deposit_required"), financial_aid=listing_fact(camp.get("financial_aid")),
         ),
         logistics=Logistics(
-            extended_care=bool(camp.get("extended_care")), transportation=bool(camp.get("transportation")),
-            meals_included=bool(camp.get("meals_included")), indoor_outdoor=camp.get("indoor_outdoor"),
+            extended_care=listing_fact(camp.get("extended_care")), transportation=listing_fact(camp.get("transportation")),
+            meals_included=listing_fact(camp.get("meals_included")), indoor_outdoor=camp.get("indoor_outdoor"),
             gender_policy=camp.get("gender_policy"),
         ),
         policies=Policies(
@@ -403,7 +403,7 @@ def program_from_activity(
         price=Price(
             min=min(terms) if terms else None, max=max(terms) if terms else None,
             unit="term" if terms else None, per_class=min(per_class) if per_class else None,
-            financial_aid=bool(p.get("financial_aid")), options=_price_options(p.get("prices") or []),
+            financial_aid=listing_fact(p.get("financial_aid")), options=_price_options(p.get("prices") or []),
         ),
         logistics=Logistics(),
         policies=Policies() if include_policies else None,

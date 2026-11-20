@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react'
 import { useParams } from 'next/navigation'
 import { getCamp, spotsLine, type CampDetail } from '@/lib/api'
-import { fieldLabel, listJoin } from '@/lib/format'
+import { NOT_LISTED, fieldLabel, listJoin } from '@/lib/format'
 import { Events, captureAssistantArrival } from '@/lib/analytics'
 import TrustBadge from '@/components/TrustBadge'
 import RegistrationAlert from '@/components/booking/RegistrationAlert'
@@ -74,9 +74,9 @@ export default function CampDetailPage() {
     <Container><EmptyState title="Camp not found." action={<Button href="/search" variant="secondary">Browse camps</Button>} /></Container>
   )
 
-  const unknown = new Set(camp.trust_summary?.fields_missing ?? [])
-  const yesNo = (field: string, value: boolean, yes: string) =>
-    unknown.has(field) ? <span className="text-muted">Ask the camp</span> : value ? yes : 'No'
+  // null means the listing doesn't say: show "Ask the camp", never "No".
+  const yesNo = (value: boolean | null, yes: string) =>
+    value == null ? <span className="text-muted">{NOT_LISTED}</span> : value ? yes : 'No'
 
   const sessions = camp.sessions ?? []
   const sharedPrice = shared(sessions.map(s => (s.price ? Math.round(s.price) : null)))
@@ -203,10 +203,10 @@ export default function CampDetailPage() {
               {camp.indoor_outdoor && <Fact label="Setting">{sentence(camp.indoor_outdoor)}</Fact>}
               {camp.gender_policy && <Fact label="Gender">{sentence(camp.gender_policy)}</Fact>}
               {/* The API sends false for unknown; the trust summary says which are unknown. */}
-              <Fact label="Transport">{yesNo('transportation', camp.transportation, 'Yes')}</Fact>
-              <Fact label="Extended care">{yesNo('extended_care', camp.extended_care, 'Yes')}</Fact>
-              <Fact label="Meals">{yesNo('meals_included', camp.meals_included, 'Included')}</Fact>
-              <Fact label="Financial aid">{camp.financial_aid ? 'Available' : 'No'}</Fact>
+              <Fact label="Transport">{yesNo(camp.transportation, 'Yes')}</Fact>
+              <Fact label="Extended care">{yesNo(camp.extended_care, 'Yes')}</Fact>
+              <Fact label="Meals">{yesNo(camp.meals_included, 'Included')}</Fact>
+              <Fact label="Financial aid">{yesNo(camp.financial_aid, 'Available')}</Fact>
             </dl>
           </section>
 
