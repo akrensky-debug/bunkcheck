@@ -92,6 +92,11 @@ One codebase and one Vercel project serve two addresses. The host decides what a
 `frontend-camp-finder.vercel.app` is the project's own free Vercel address. It is where the app
 lives while www is the hand-raiser. The API already accepts it (`CORS_ORIGINS` on Railway).
 
+Vercel previews (`frontend-git-<branch>-camp-finder.vercel.app`) talk to the production API: a
+Vercel build with no `NEXT_PUBLIC_API_URL` uses it (`frontend/next.config.js`), and the API accepts
+preview addresses (`CORS_ORIGIN_REGEX`). So a preview shows real camps, and anything done on it
+(a guest family, a chat, a sign-up) is real data. Delete test families from the account page.
+
 What keeps working on www: camp pages, the links already emailed to camps and parents (`/owners`,
 `/alerts`, `/share`, `/inquiries`, `/join`), the for-camps pages, `/connect`, `/mcp` and the legal
 pages. The rules are in `frontend/lib/site-mode.ts` and `frontend/middleware.ts`.

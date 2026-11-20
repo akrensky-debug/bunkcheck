@@ -1,9 +1,11 @@
 /** @type {import('next').NextConfig} */
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'
-// Vercel previews have no NEXT_PUBLIC_API_URL, and Vercel won't proxy to localhost, so on a
-// Vercel build without one, /mcp goes to the production API. Its tools are public camp data.
-const MCP_UPSTREAM = process.env.NEXT_PUBLIC_API_URL
+// Vercel previews may have no NEXT_PUBLIC_API_URL, and a browser can't reach localhost on
+// Vercel, so a Vercel build without one uses the production API, for the pages and for /mcp.
+// That means a preview reads and writes real data (decided 20 November 2026): families made
+// while trying a preview are real families. Local builds still default to localhost.
+const API_URL = process.env.NEXT_PUBLIC_API_URL
   || (process.env.VERCEL ? 'https://api-production-4a03.up.railway.app' : 'http://localhost:8000')
+const MCP_UPSTREAM = API_URL
 
 const nextConfig = {
   output: 'standalone',
