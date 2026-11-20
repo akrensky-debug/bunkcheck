@@ -1,0 +1,147 @@
+{
+  "slug": "stratham-summer-rec-camp-stratham",
+  "name": "Stratham Summer Rec Camp",
+  "operator_name": "Town of Stratham Parks & Recreation",
+  "website_url": "https://www.strathamnh.gov/business_detail_T5_R35.php",
+  "registration_url": "https://stratham.recdesk.com/Community/Program?category=5",
+  "phone": "603-772-4741",
+  "city": "Stratham",
+  "state": "NH",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "outdoor",
+    "swimming"
+  ],
+  "activities": [
+    "recess games",
+    "activity rotations",
+    "beach trips",
+    "hiking at Stratham Hill Park",
+    "circle games"
+  ],
+  "grade_min": 1,
+  "grade_max": 6,
+  "age_min": 6,
+  "age_max": 12,
+  "description_short": "Town run day camp at Stratham Memorial School for Stratham children entering grades 1 to 6, weekdays 8:30 to 3:00 for five weeks. Campers rotate through activities at the school, take a Thursday bus trip to Wallis Sands Beach and walk to Stratham Hill Park on most Fridays.",
+  "indoor_outdoor": "both",
+  "meals_included": false,
+  "transportation": true,
+  "refund_policy_summary": "A $25 fee per camper applies to changes or cancellations made by May 15; no refunds after May 15.",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Week 1",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 2",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 3",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 4",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 5",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": null,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.strathamnh.gov/business_detail_T5_R35.php",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "city",
+        "state",
+        "grade_min",
+        "grade_max",
+        "refund_policy_summary",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page; 2026 camp for Stratham residents only, July 6 to August 7, 8:30 to 3:00, registration by grade entered in fall 2026 (rising 1st to 6th), 20 campers per grade a week; weekly dates are the Monday to Friday weeks in that range"
+    },
+    {
+      "url": "https://www.strathamnh.gov/Documents/Departments/Parks%20and%20Recreation/Programs%20and%20Sports/Youth%20Programs/2026%20Family%20Handbook_Contract.docx.pdf",
+      "checked": "2026-11-20",
+      "fields": [
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "indoor_outdoor",
+        "meals_included",
+        "transportation"
+      ],
+      "note": "Researched by Claude from this page; 2026 Family Handbook: held at Stratham Memorial School; Thursday bus to Wallis Sands Beach; Friday walking trips to Stratham Hill Park; lunch from home; ages derived from grades 1 to 6 (age_min = grade_min + 5, age_max = grade_max + 6)"
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.strathamnh.gov/business_detail_T5_R35.php",
+      "kind": "html",
+      "title": "Stratham, NH (Parks & Recreation youth programs)"
+    },
+    "warnings": [
+      "Open to Stratham residents only.",
+      "No 2026 price is on the town page or in the family handbook.",
+      "The town page gives the season (July 6 to August 7) but not a list of weeks; the five Monday to Friday weeks are read from that range.",
+      "The same page lists separate mountain bike, Lego robotics and basketball camps, which are not part of this listing."
+    ],
+    "unknowns": [
+      "price",
+      "street address and zip of Stratham Memorial School (not given on the pages read)",
+      "extended care",
+      "financial aid (the town supports the #areuin? card)",
+      "email (the handbook gives campdirector@StrathamNH.gov but it was in broken PDF text)"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "missing required zip",
+      "city 'Stratham', NH is not in cities.py"
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://www.strathamnh.gov/business_detail_T5_R35.php",
+      "changes": [
+        "New camp, researched from https://www.strathamnh.gov/business_detail_T5_R35.php"
+      ],
+      "for_andrew": [
+        "Stratham, NH is not in campfinder/seed/cities.py and the pages read give no zip, so this draft fails validation twice. Add Stratham to cities.py and the school's zip?",
+        "Residents only camp with no posted price. List it, or skip residents only town camps?"
+      ]
+    }
+  }
+}
