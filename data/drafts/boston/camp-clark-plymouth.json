@@ -1,0 +1,72 @@
+{
+  "slug": "camp-clark-plymouth",
+  "name": "Camp Clark",
+  "operator_name": "Old Colony YMCA",
+  "website_url": "https://www.oldcolonyymca.org/child-care-camps/camps/camp-clark",
+  "registration_url": "https://oldcolonyymca.my.site.com/s/registration?program=Camp%20Clark",
+  "phone": "508-888-2290",
+  "street_address": "200 Hedges Pond Rd",
+  "city": "Plymouth",
+  "state": "MA",
+  "zip": "02360",
+  "camp_type": "day",
+  "primary_categories": ["general"],
+  "secondary_categories": ["swimming", "outdoor", "nature", "sports"],
+  "activities": ["swimming", "boating", "water obstacle course", "archery", "arts and crafts", "basketball", "soccer", "t-ball", "four square", "hiking", "fort building", "survival skills", "environmental awareness", "fishing", "ropes course"],
+  "description_short": "YMCA day camp on Hyles Pond in Plymouth, run in weekly themed sessions. Campers swim twice a day, go boating, try archery, crafts, sports and a ropes course, and explore the woods and pond.",
+  "indoor_outdoor": "outdoor",
+  "price_per_week": 415,
+  "price_min": 415,
+  "price_per": "week",
+  "transportation": true,
+  "meals_included": true,
+  "financial_aid": true,
+  "swim_waterfront_notes": "Campers swim in Hyles Pond during two free swim periods a day, watched by certified lifeguards. The waterfront also has boating and a Wibit water obstacle course.",
+  "season_year": 2026,
+  "sessions": [
+    {"name": "Week 2 (pay by day, no bus)", "start_date": "2026-06-22", "end_date": "2026-06-26", "availability": "unknown"},
+    {"name": "Week 3 (no camp July 3)", "start_date": "2026-06-29", "end_date": "2026-07-02", "availability": "unknown"},
+    {"name": "Week 4", "start_date": "2026-07-06", "end_date": "2026-07-10", "availability": "unknown"},
+    {"name": "Week 5", "start_date": "2026-07-13", "end_date": "2026-07-17", "availability": "unknown"},
+    {"name": "Week 6", "start_date": "2026-07-20", "end_date": "2026-07-24", "availability": "unknown"},
+    {"name": "Week 7", "start_date": "2026-07-27", "end_date": "2026-07-31", "availability": "unknown"},
+    {"name": "Week 8", "start_date": "2026-08-03", "end_date": "2026-08-07", "availability": "unknown"},
+    {"name": "Week 9", "start_date": "2026-08-10", "end_date": "2026-08-14", "availability": "unknown"},
+    {"name": "Week 10", "start_date": "2026-08-17", "end_date": "2026-08-21", "availability": "unknown"},
+    {"name": "Week 11 (no bus)", "start_date": "2026-08-24", "end_date": "2026-08-28", "availability": "unknown"}
+  ],
+  "sources": [
+    {
+      "url": "https://www.oldcolonyymca.org/child-care-camps/camps/camp-clark",
+      "checked": "2026-11-20",
+      "fields": ["name", "operator_name", "website_url", "registration_url", "phone", "street_address", "city", "state", "zip", "camp_type", "primary_categories", "secondary_categories", "activities", "description_short", "indoor_outdoor", "price_per_week", "price_min", "price_per", "transportation", "meals_included", "financial_aid", "swim_waterfront_notes", "sessions"],
+      "note": "Researched by Claude from this page. Weeks are listed without a year; they match the 2026 calendar (Monday starts, no camp Friday July 3) and the page links the 2026 camp brochure. Week 1 (June 15 to 19) was canceled and Week 11 added. No bus in weeks 2 and 11. Price is the FAQ figure: a traditional week costs as low as $345 for members and $415 for non members, with extra charges for specialty camps, before or after care and transportation. Bus routes run for a fee. Lunch is free of charge for campers this summer. Income based two week camperships for Basic Day Camp. Basic Day Camp wording gives camp_type day."
+    }
+  ],
+  "review": {
+    "status": "ready",
+    "source": {"url": "https://www.oldcolonyymca.org/child-care-camps/camps/camp-clark", "kind": "html", "title": "Camp Clark | Old Colony YMCA"},
+    "warnings": [
+      "The page lists weeks without a year. They fit 2026 only, and the linked brochure is the 2026 brochure, so season_year is 2026. No 2027 dates are posted.",
+      "The price is an 'as low as' figure from the FAQ, which says pricing is updated yearly; per session prices are not given.",
+      "Plymouth is about 40 miles from Boston, on the South Shore."
+    ],
+    "unknowns": ["age_min", "age_max", "grade_min", "grade_max", "email", "extended_care", "price_max", "refund_policy_summary", "special_needs_notes", "aca_accredited", "gender_policy"],
+    "low_confidence": [
+      {"field": "price_per_week", "confidence": 0.7, "quote": "a traditional week at camp costs as low as $345 for members and $415 for non-members per week"}
+    ],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://www.oldcolonyymca.org/child-care-camps/camps/camp-clark",
+      "changes": [
+        "Found the current page at https://www.oldcolonyymca.org/child-care-camps/camps/camp-clark after the listing tool reported no camp on that same page (it now loads for the honest fetcher and describes Camp Clark in full)",
+        "Used the 2026 season: ten weeks June 22 to August 28, 2026 (Week 1 canceled); no 2027 dates posted",
+        "Could not read the 2026 brochure (a Dropbox PDF over the fetcher's 8 MB limit), so ages, before and after care, and per week prices are left out",
+        "Left extended_care empty: the FAQ only says before and after care are sometimes offered at extra cost"
+      ],
+      "for_andrew": []
+    }
+  }
+}

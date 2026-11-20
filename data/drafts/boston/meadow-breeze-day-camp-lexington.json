@@ -1,0 +1,78 @@
+{
+  "slug": "meadow-breeze-day-camp-lexington",
+  "name": "Meadow Breeze Day Camp",
+  "operator_name": "Lexington Christian Academy",
+  "website_url": "https://lca.edu/mbdc-day/",
+  "registration_url": "https://lcasummer.campbrainregistration.com/",
+  "email": "summer@lca.edu",
+  "phone": "781-766-2162 ext. 351",
+  "street_address": "48 Bartlett Avenue",
+  "city": "Lexington",
+  "state": "MA",
+  "zip": "02420",
+  "camp_type": "day",
+  "primary_categories": ["general"],
+  "secondary_categories": ["swimming", "sports", "arts"],
+  "activities": ["archery", "music", "swimming", "drama", "tennis", "arts and crafts", "indoor and outdoor sports", "rock wall climbing"],
+  "grade_min": 0,
+  "grade_max": 8,
+  "description_short": "Weekly day camp on the Lexington Christian Academy campus for children entering kindergarten through grade 8. Days run 8 to 3 and include a swim class and free swim, plus archery, tennis, drama, music, crafts, sports and the climbing wall.",
+  "indoor_outdoor": "both",
+  "price_per_week": 630,
+  "price_min": 504,
+  "price_max": 630,
+  "price_per": "week",
+  "extended_care": true,
+  "meals_included": false,
+  "refund_policy_summary": "A $35 registration fee and a $200 deposit per session apply. Cancel by February 1 for a full refund less the registration fee; cancel February 2 to April 1 for a refund less the registration fee and deposit. After April 1 there are no refunds, but a session can be transferred.",
+  "swim_waterfront_notes": "Daily extended swim period with a skill based swim class and free swim. Each camper gets a swim assessment based on American Red Cross standards on arrival.",
+  "season_year": 2027,
+  "sessions": [
+    {"name": "Week 1", "start_date": "2027-06-28", "end_date": "2027-07-02", "price": 630, "availability": "unknown"},
+    {"name": "Week 2 (four days, no camp July 5)", "start_date": "2027-07-06", "end_date": "2027-07-09", "price": 504, "availability": "unknown"},
+    {"name": "Week 3", "start_date": "2027-07-12", "end_date": "2027-07-16", "price": 630, "availability": "unknown"},
+    {"name": "Week 4", "start_date": "2027-07-19", "end_date": "2027-07-23", "price": 630, "availability": "unknown"},
+    {"name": "Week 5", "start_date": "2027-07-26", "end_date": "2027-07-30", "price": 630, "availability": "unknown"},
+    {"name": "Week 6", "start_date": "2027-08-02", "end_date": "2027-08-06", "price": 630, "availability": "unknown"},
+    {"name": "Week 7", "start_date": "2027-08-09", "end_date": "2027-08-13", "price": 630, "availability": "unknown"},
+    {"name": "Week 8", "start_date": "2027-08-16", "end_date": "2027-08-20", "price": 630, "availability": "unknown"}
+  ],
+  "sources": [
+    {
+      "url": "https://lca.edu/mbdc-day/",
+      "checked": "2026-11-20",
+      "fields": ["name", "operator_name", "website_url", "registration_url", "email", "phone", "street_address", "city", "state", "zip", "camp_type", "primary_categories", "secondary_categories", "activities", "grade_min", "grade_max", "description_short", "indoor_outdoor", "extended_care", "meals_included", "swim_waterfront_notes"],
+      "note": "Researched by Claude from this page. Day Camp for campers entering K through grade 8, Monday to Friday 8:00 AM to 3:00 PM. AfterCamp 3:30 to 5:30 PM costs extra ($100 or $150 a week). Lunch is an optional paid add-on ($45 a week if added by April 1, $50 after); families may pack a nut free lunch. Registration for 2027 opens December 7, 2026 (returning) and December 8 (new)."
+    },
+    {
+      "url": "https://lca.edu/dates-rates/",
+      "checked": "2026-11-20",
+      "fields": ["price_per_week", "price_min", "price_max", "price_per", "refund_policy_summary", "sessions"],
+      "note": "Researched by Claude from this page. Summer 2027: eight one week sessions June 28 to August 20, $630 a week, $504 for the four day week of July 5 (no camp Monday July 5). Day Camp families save $50 per camper per week if they register by December 14, 2026. A $35 registration fee and $200 deposit per session apply. Registration not yet open, so availability is unknown."
+    }
+  ],
+  "review": {
+    "status": "ready",
+    "source": {"url": "https://lca.edu/mbdc-day/", "kind": "html", "title": "Day Camp | Lexington Christian Academy"},
+    "warnings": [
+      "Ages are not stated; the camp gives grades only (entering K through 8).",
+      "Operated by Lexington Christian Academy, a Christian school. The camp pages do not describe any religious program, so religious_affiliation is left empty.",
+      "Price is before the $50 per week early registration discount and excludes the $35 registration fee."
+    ],
+    "unknowns": ["age_min", "age_max", "transportation", "financial_aid", "special_needs_notes", "aca_accredited", "gender_policy"],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://lca.edu/mbdc-day/",
+      "changes": [
+        "Found the current page at https://lca.edu/mbdc-day/ after the listing tool reported no camp on that same page (it now loads for the honest fetcher and names Meadow Breeze Day Camp, Summer 2027)",
+        "Used the 2027 season from https://lca.edu/dates-rates/ (eight weeks June 28 to August 20, 2027, $630 a week, $504 for the week of July 5)",
+        "Contact details, address and the general camp FAQ checked against https://lca.edu/mbdc-faqs/",
+        "Listed the Day Camp only. Launch Trips (grades 6 to 10, $795), Leaders in Training (grades 9 to 12, $710) and Sports Camps ($495) are separate programs on the same site and are not in this listing"
+      ],
+      "for_andrew": []
+    }
+  }
+}
