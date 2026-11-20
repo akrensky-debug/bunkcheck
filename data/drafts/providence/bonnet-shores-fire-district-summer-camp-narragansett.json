@@ -1,0 +1,124 @@
+{
+  "slug": "bonnet-shores-fire-district-summer-camp-narragansett",
+  "name": "Bonnet Shores Fire District Summer Camp",
+  "operator_name": "Bonnet Shores Fire District",
+  "website_url": "https://bonnetshores.org/district-services/camp",
+  "phone": "(401) 895-0099",
+  "street_address": "Bonnet Shores Community Center, 130 Bonnet Shores Road",
+  "city": "Narragansett",
+  "state": "RI",
+  "zip": "02882",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "activities": [
+    "arts & crafts",
+    "sports",
+    "games",
+    "special guests"
+  ],
+  "age_min": 5,
+  "age_max": 12,
+  "description_short": "A half day morning camp at the Bonnet Shores Community Center for children of the Bonnet Shores community, with crafts, sports, games and visiting guests.",
+  "price_per_week": 90,
+  "price_min": 175,
+  "price_max": 425,
+  "price_per": "session",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Session 1",
+      "start_date": "2026-06-22",
+      "end_date": "2026-07-03",
+      "price": 175,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 2",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-17",
+      "price": 175,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 3",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-31",
+      "price": 175,
+      "availability": "unknown"
+    },
+    {
+      "name": "Full summer",
+      "start_date": "2026-06-22",
+      "end_date": "2026-07-31",
+      "price": 425,
+      "availability": "unknown"
+    }
+  ],
+  "notes": "Bonnet Shores residents only. Half day, 9:00 to 11:30 am. 2026 fees: full summer $425 ($400 each additional child), two week session $175 ($165 each additional child), one week $90, single day $25 when space allows. Fee includes a daily snack and Del's Lemonade on Fridays.",
+  "sources": [
+    {
+      "url": "https://bonnetshores.org/district-services/camp",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short"
+      ],
+      "note": "Researched by Claude from this page. Camp page: 2026 season recap, 2027 schedule to be announced in spring 2027; community members ages 5 to 12; Monday to Friday 9:00 to 11:30 am"
+    },
+    {
+      "url": "https://stdidbonnetshoresprod.blob.core.windows.net/bonnetshores/documents/Camp/BSFD-Summer-Camp-2026.pdf",
+      "checked": "2026-11-20",
+      "fields": [
+        "price_per_week",
+        "price_min",
+        "price_max",
+        "price_per",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. 2026 flyer: full summer $425, two week session $175, weekly $90, daily $25 if space; second child discounts"
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://bonnetshores.org/district-services/camp",
+      "kind": "html",
+      "title": "Bonnet Shores Fire District | Camp"
+    },
+    "warnings": [],
+    "unknowns": [
+      "2027 dates and fees",
+      "Extended care",
+      "Financial aid",
+      "Refund policy"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://bonnetshores.org/district-services/camp",
+      "changes": [
+        "New camp, researched from https://bonnetshores.org/district-services/camp"
+      ],
+      "for_andrew": [
+        "Open to the Bonnet Shores community (the flyer says Bonnet Shores residents). List a camp most families cannot join, or leave it out?",
+        "It runs 9:00 to 11:30 am only, and the 2026 season is over; 2027 will be announced in spring 2027."
+      ]
+    }
+  }
+}

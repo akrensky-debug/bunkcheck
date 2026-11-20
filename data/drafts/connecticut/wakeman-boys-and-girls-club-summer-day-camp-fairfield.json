@@ -1,0 +1,110 @@
+{
+  "slug": "wakeman-boys-and-girls-club-summer-day-camp-fairfield",
+  "name": "Wakeman Boys & Girls Club Summer Day Camp",
+  "operator_name": "Wakeman Boys & Girls Club",
+  "website_url": "https://www.wakemanclub.org/summer-camp",
+  "registration_url": "https://operations.daxko.com/Online/5298/ProgramsV2/Search.mvc?category_ids=CAT368&location_ids%5B0%5D=B269",
+  "email": "jwest@wakemanclub.org",
+  "phone": "203-259-4805",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "sports",
+    "arts",
+    "STEM"
+  ],
+  "activities": [
+    "indoor sports",
+    "outdoor sports",
+    "art",
+    "STEM",
+    "games",
+    "themed weeks"
+  ],
+  "grade_min": 0,
+  "grade_max": 8,
+  "description_short": "A Boys & Girls Club day camp for children who finished kindergarten through 8th grade, run in themed weeks from 9 am to 3:30 pm at the club's Southport clubhouse in Fairfield and its two Bridgeport clubhouses. Days mix indoor and outdoor sports with daily art, STEM and game time; a club membership is required.",
+  "indoor_outdoor": "both",
+  "extended_care": true,
+  "financial_aid": true,
+  "refund_policy_summary": "Full refund, less the $25 a week nonrefundable deposit, if written notice of withdrawal arrives before the final balance is due three weeks before the camp week. No partial refunds after that except for illness or injury with a doctor's note. Memberships are not refundable.",
+  "season_year": 2026,
+  "street_address": "Southport Clubhouse, 385 Center Street",
+  "city": "Fairfield",
+  "state": "CT",
+  "sources": [
+    {
+      "url": "https://www.wakemanclub.org/summer-camp",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "description_short",
+        "indoor_outdoor",
+        "extended_care",
+        "financial_aid",
+        "refund_policy_summary"
+      ],
+      "note": "Researched by Claude from this page. 2026 summer camp page: 9 weeks of day camp for campers finishing grades K to 8 in June 2026 (must be at least a rising first grader in fall 2026), 9:00 am to 3:30 pm, at the Southport, Smilow-Burroughs and Madison Avenue clubhouses. Day camp uses tiered pricing, but the tier prices do not appear in the page text. Before care $28 a week (7:30 to 9 am) and after care $40 a week (3:30 to 5:30 pm). Care 4 Kids accepted and financial assistance available. Annual membership $60 per youth is required. Lunch: bring your own at Southport; free lunch at the Bridgeport clubhouses. Email and phone are for the Southport Clubhouse contact."
+    },
+    {
+      "url": "https://www.wakemanclub.org/southport-clubhouse",
+      "checked": "2026-11-20",
+      "fields": [
+        "street_address",
+        "city",
+        "state"
+      ],
+      "note": "Researched by Claude from this page. Southport Clubhouse page: 385 Center Street, Southport, CT. Southport is a village of Fairfield, so the city is Fairfield. No zip is given."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.wakemanclub.org/summer-camp",
+      "kind": "html",
+      "title": "Wakeman Boys & Girls Club Summer Camp"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Zip code",
+      "Day camp weekly prices (tiered; not in the page text)",
+      "2026 week dates",
+      "2027 dates and prices",
+      "Transportation",
+      "ACA accreditation"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "missing required zip"
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://www.wakemanclub.org/summer-camp",
+      "changes": [
+        "New camp, researched from https://www.wakemanclub.org/summer-camp",
+        "Used the 2026 season: no 2027 camp information is posted. Specialty camps (basketball, triathlon, Week of Fun, Field Trip Week) and teen CIT and LIT roles are left out."
+      ],
+      "for_andrew": [
+        "The camp runs at three clubhouses with the same dates and grades: Southport (Fairfield) and Smilow-Burroughs and Madison Avenue (both Bridgeport). Under the house rule that is one listing, placed at the Southport clubhouse. Split it into a Fairfield and a Bridgeport listing instead?",
+        "Southport is a village of Fairfield and is not in cities.py, so I used Fairfield.",
+        "The club's pages give 385 Center Street, Southport without a zip, so the draft fails validation on zip.",
+        "No week dates or day camp prices are in the page text (the 9 weeks are not dated and the tier prices are likely in an image). Publish without sessions or prices?",
+        "Grades are the grades campers finished in June 2026 (K to 8), not the grade they enter in fall."
+      ]
+    }
+  }
+}

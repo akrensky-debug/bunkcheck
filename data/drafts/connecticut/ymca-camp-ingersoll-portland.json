@@ -1,0 +1,186 @@
+{
+  "slug": "ymca-camp-ingersoll-portland",
+  "name": "YMCA Camp Ingersoll",
+  "operator_name": "Northern Middlesex YMCA",
+  "website_url": "https://www.campingersoll.org/",
+  "registration_url": "https://campingersoll.campbrainregistration.com/Landing",
+  "phone": "860-342-2267",
+  "street_address": "94 Camp Ingersoll Road",
+  "city": "Portland",
+  "state": "CT",
+  "camp_type": "day",
+  "primary_categories": [
+    "general",
+    "outdoor"
+  ],
+  "secondary_categories": [
+    "swimming"
+  ],
+  "activities": [
+    "swimming",
+    "boating",
+    "high ropes",
+    "archery",
+    "fishing",
+    "skill clinics"
+  ],
+  "age_min": 4,
+  "grade_max": 9,
+  "description_short": "A YMCA day camp on Jobs Pond in Portland for ages 4 through 9th grade, run mostly in two week sessions. The day has swim lessons and free swim, a daily specialty area such as boating, high ropes or archery, and counselor led games, with specialty camps for some ages.",
+  "indoor_outdoor": "outdoor",
+  "extended_care": true,
+  "transportation": true,
+  "financial_aid": true,
+  "swim_waterfront_notes": "Traditional campers have two swim periods a day, a lesson in the morning and free swim after lunch, on Jobs Pond.",
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Preview Week",
+      "start_date": "2027-06-14",
+      "end_date": "2027-06-18",
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 1",
+      "start_date": "2027-06-21",
+      "end_date": "2027-07-02",
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 2",
+      "start_date": "2027-07-05",
+      "end_date": "2027-07-16",
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 3",
+      "start_date": "2027-07-19",
+      "end_date": "2027-07-30",
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 4",
+      "start_date": "2027-08-02",
+      "end_date": "2027-08-13",
+      "availability": "unknown"
+    },
+    {
+      "name": "Finale Week",
+      "start_date": "2027-08-16",
+      "end_date": "2027-08-20",
+      "availability": "unknown"
+    },
+    {
+      "name": "Extension Week",
+      "start_date": "2027-08-23",
+      "end_date": "2027-08-27",
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.campingersoll.org/",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "street_address",
+        "city",
+        "state"
+      ],
+      "note": "Researched by Claude from this page. Home page: location 94 Camp Ingersoll Road, Portland, CT; mailing address 99 Union Street, Middletown, CT 06457 (no zip given for the camp itself). Says summer 2027 dates are posted."
+    },
+    {
+      "url": "https://www.campingersoll.org/day-camp",
+      "checked": "2026-11-20",
+      "fields": [
+        "camp_type",
+        "sessions",
+        "extended_care",
+        "activities",
+        "description_short"
+      ],
+      "note": "Researched by Claude from this page. Summer 2027 session dates, camp hours 9 am to 4 pm with AM care from 7 am and PM care to 6 pm. 2027 pricing is TBD; 2026 tiered prices are shown but not recorded. FLASH half sessions (June 21 to 25 and August 2 to 6) are part of Session 1 and Session 4 weeks and are not listed separately."
+    },
+    {
+      "url": "https://www.campingersoll.org/traditional-camp",
+      "checked": "2026-11-20",
+      "fields": [
+        "age_min",
+        "grade_max",
+        "primary_categories",
+        "secondary_categories"
+      ],
+      "note": "Researched by Claude from this page. Traditional camp groups from Wee Wonders (age 4 to 5) to CIO 2 (entering 8th and 9th grade)."
+    },
+    {
+      "url": "https://www.campingersoll.org/sample-schedules",
+      "checked": "2026-11-20",
+      "fields": [
+        "financial_aid",
+        "operator_name"
+      ],
+      "note": "Researched by Claude from this page. Tiered pricing plus Open Doors and Mid Fund financial assistance."
+    },
+    {
+      "url": "https://www.campingersoll.org/bus",
+      "checked": "2026-11-20",
+      "fields": [
+        "transportation"
+      ],
+      "note": "Researched by Claude from this page. 2026 bussing page: eight daily buses, fee per camper per session."
+    },
+    {
+      "url": "https://www.campingersoll.org/about-us",
+      "checked": "2026-11-20",
+      "fields": [
+        "indoor_outdoor"
+      ],
+      "note": "Researched by Claude from this page. 77 acre outdoor center on Jobs Pond in Portland."
+    },
+    {
+      "url": "https://www.campingersoll.org/_files/ugd/6cf583_67fecf30c98446ca8d58a779b34724b6.pdf",
+      "checked": "2026-11-20",
+      "fields": [
+        "swim_waterfront_notes"
+      ],
+      "note": "Researched by Claude from this page. Camp FAQ PDF: two swim periods a day for traditional campers. Lunch is from home or an optional paid Subway bagged lunch."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.campingersoll.org/",
+      "kind": "html",
+      "title": "Day Camp | YMCA Camp Ingersoll | Portland"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Zip code of the camp site",
+      "2027 prices",
+      "ACA accreditation",
+      "Refund policy"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "missing required zip",
+      "city 'Portland', CT is not in cities.py"
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://www.campingersoll.org/",
+      "changes": [
+        "New camp, researched from https://www.campingersoll.org/",
+        "Used the 2027 season: dates are posted. Left prices out because only 2026 prices are posted."
+      ],
+      "for_andrew": [
+        "Portland is not in cities.py, so this draft fails validation until it is added. Portland is its own town.",
+        "The site gives no zip for the camp at 94 Camp Ingersoll Road, Portland, only the Middletown mailing zip (06457). Zip is required, so the draft also fails on that. Use the Portland zip from a postal lookup?",
+        "2027 dates are posted but 2027 prices are TBD, so the listing has dates and no prices. Publish now or wait for prices?"
+      ]
+    }
+  }
+}

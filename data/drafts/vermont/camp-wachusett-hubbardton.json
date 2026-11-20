@@ -1,0 +1,180 @@
+{
+  "slug": "camp-wachusett-hubbardton",
+  "name": "Camp Wachusett",
+  "operator_name": "Camp Wachusett",
+  "website_url": "https://www.campwachusett.com/dates-rates",
+  "registration_url": "https://www.campwachusett.com/register",
+  "email": "director@campwachusett.com",
+  "phone": "202-744-7130",
+  "street_address": "1430 Camp Road",
+  "city": "Hubbardton",
+  "state": "VT",
+  "zip": "05733",
+  "camp_type": "sleepaway",
+  "primary_categories": [
+    "general",
+    "outdoor"
+  ],
+  "secondary_categories": [
+    "sports",
+    "swimming"
+  ],
+  "activities": [
+    "archery",
+    "campcraft",
+    "camping trips",
+    "fire building",
+    "hiking",
+    "riflery",
+    "survival skills",
+    "woodworking",
+    "animal care",
+    "canoeing",
+    "fishing",
+    "kayaking",
+    "rowboats",
+    "sailing",
+    "swimming",
+    "waterskiing",
+    "basketball",
+    "gaga",
+    "frisbee",
+    "pickleball",
+    "soccer",
+    "softball",
+    "tennis"
+  ],
+  "gender_policy": "boys",
+  "age_min": 8,
+  "age_max": 15,
+  "description_short": "A traditional overnight camp for boys aged 8 to 15 on Lake Hortonia in Hubbardton, Vermont. Boys live in cabins, eat family style meals, and every camper goes on an overnight hiking or canoe trip. The camp is screen free.",
+  "meals_included": true,
+  "price_min": 4600,
+  "price_max": 7200,
+  "price_per": "session",
+  "financial_aid": true,
+  "refund_policy_summary": "Full refunds up to one month before the session. No refunds for early departure or disciplinary dismissal.",
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "2-Week A",
+      "start_date": "2027-07-11",
+      "end_date": "2027-07-25",
+      "price": 4600,
+      "availability": "unknown"
+    },
+    {
+      "name": "2-Week B",
+      "start_date": "2027-07-18",
+      "end_date": "2027-08-01",
+      "price": 4600,
+      "availability": "unknown"
+    },
+    {
+      "name": "2-Week C",
+      "start_date": "2027-07-25",
+      "end_date": "2027-08-07",
+      "price": 4600,
+      "availability": "unknown"
+    },
+    {
+      "name": "3-Week A",
+      "start_date": "2027-07-11",
+      "end_date": "2027-08-01",
+      "price": 6300,
+      "availability": "unknown"
+    },
+    {
+      "name": "3-Week B",
+      "start_date": "2027-07-18",
+      "end_date": "2027-08-07",
+      "price": 6300,
+      "availability": "unknown"
+    },
+    {
+      "name": "4 Weeks",
+      "start_date": "2027-07-11",
+      "end_date": "2027-08-07",
+      "price": 7200,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.campwachusett.com/dates-rates",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "street_address",
+        "zip",
+        "price_min",
+        "price_max",
+        "price_per",
+        "financial_aid",
+        "refund_policy_summary",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. 2027 Dates and Rates page. Tuition assistance through the Camp Spirit Fund. ZIP and street are the camp's mailing address, 1430 Camp Road, Brandon, VT 05733"
+    },
+    {
+      "url": "https://www.campwachusett.com/faq",
+      "checked": "2026-11-20",
+      "fields": [
+        "city",
+        "state",
+        "camp_type",
+        "gender_policy",
+        "age_min",
+        "age_max",
+        "description_short",
+        "meals_included"
+      ],
+      "note": "Researched by Claude from this page. Parent FAQ: located on Lake Hortonia in Hubbardton; boys ages 8 to 15; meals served family style"
+    },
+    {
+      "url": "https://www.campwachusett.com/activities-program",
+      "checked": "2026-11-20",
+      "fields": [
+        "primary_categories",
+        "secondary_categories",
+        "activities"
+      ],
+      "note": "Researched by Claude from this page. Activities and Program page"
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.campwachusett.com/dates-rates",
+      "kind": "html",
+      "title": "2027 Session Dates & Tuition | Camp Wachusett"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Transportation",
+      "ACA accreditation",
+      "Whether single week sessions exist (the page has Week 1 to 4 tabs but the table lists only 2, 3 and 4 week sessions)"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "city 'Hubbardton' is not in campfinder/seed/cities.py"
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://www.campwachusett.com/dates-rates",
+      "changes": [
+        "New camp, researched from https://www.campwachusett.com/dates-rates"
+      ],
+      "for_andrew": [
+        "Neither Hubbardton (where the FAQ says camp is) nor Brandon (the mailing address) is in campfinder/seed/cities.py, so the draft fails validation. Add one?",
+        "The page shows Week 1 to Week 4 tabs but no single week prices. Recorded only the 2, 3 and 4 week sessions."
+      ]
+    }
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "slug": "camp-tecumseh-moultonborough",
+  "name": "Camp Tecumseh",
+  "operator_name": "Camp Tecumseh",
+  "website_url": "https://www.camptecumseh.net",
+  "registration_url": "https://tecumseh.campbrainregistration.com/",
+  "phone": "610-513-8564",
+  "street_address": "975 Moultonborough Neck Rd.",
+  "city": "Moultonborough",
+  "state": "NH",
+  "zip": "03254",
+  "camp_type": "sleepaway",
+  "primary_categories": [
+    "sports"
+  ],
+  "secondary_categories": [
+    "performing_arts",
+    "adventure",
+    "outdoor"
+  ],
+  "activities": [
+    "athletics",
+    "drama",
+    "gilbert and sullivan operetta",
+    "canoe trips",
+    "kayak trips",
+    "mountain hiking trips"
+  ],
+  "gender_policy": "boys",
+  "age_min": 8,
+  "age_max": 16,
+  "description_short": "Boys overnight camp on Lake Winnipesaukee in Moultonborough, with about two miles of shoreline and 300 acres. The program centers on coached team and individual sports, plus a yearly Gilbert and Sullivan show and canoe, kayak and White Mountains hiking trips.",
+  "indoor_outdoor": "outdoor",
+  "price_min": 6100,
+  "price_max": 9300,
+  "price_per": "session",
+  "financial_aid": true,
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Full Summer (7 weeks)",
+      "start_date": "2027-06-28",
+      "end_date": "2027-08-15",
+      "price": 9300,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 1 (3.5 weeks)",
+      "start_date": "2027-06-28",
+      "end_date": "2027-07-20",
+      "price": 7700,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 2",
+      "start_date": "2027-07-22",
+      "end_date": "2027-08-15",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 3 (2 weeks)",
+      "start_date": "2027-06-28",
+      "end_date": "2027-07-11",
+      "price": 6100,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.camptecumseh.net/register-now/dates-and-rates/",
+      "checked": "2026-11-20",
+      "fields": [
+        "registration_url",
+        "price_min",
+        "price_max",
+        "price_per",
+        "financial_aid",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page; 2027 dates and rates; Session 2 is listed without a price; the Blue-Gray Fund gives financial assistance to over 20% of campers"
+    },
+    {
+      "url": "https://www.camptecumseh.net",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "gender_policy",
+        "age_min",
+        "age_max",
+        "description_short"
+      ],
+      "note": "Researched by Claude from this page; residential camp for boys ages 8 to 16 on Lake Winnipesaukee; camp address 975 Moultonborough Neck Rd., Moultonborough, NH 03254"
+    },
+    {
+      "url": "https://www.camptecumseh.net/about/the-program-today/",
+      "checked": "2026-11-20",
+      "fields": [
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "indoor_outdoor"
+      ],
+      "note": "Researched by Claude from this page"
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.camptecumseh.net/register-now/dates-and-rates/",
+      "kind": "html",
+      "title": "Dates and Rates | Camp Tecumseh"
+    },
+    "warnings": [
+      "The home page says camp opens Sunday June 27, 2027 and gives the season as June 27 to August 15, but the Dates and Rates page lists every session as starting June 28. The draft uses the Dates and Rates page.",
+      "Session 2 (July 22 to August 15) has no price on the page.",
+      "The home page carries an unrelated French casino advertisement in its footer, which looks like injected spam; nothing from it was used."
+    ],
+    "unknowns": [
+      "email (hidden behind Cloudflare email protection)",
+      "ACA accreditation",
+      "meals",
+      "transportation",
+      "refund policy",
+      "swim and waterfront details"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://www.camptecumseh.net/register-now/dates-and-rates/",
+      "changes": [
+        "New camp, researched from https://www.camptecumseh.net/register-now/dates-and-rates/"
+      ],
+      "for_andrew": [
+        "Opening day conflict: home page says June 27, 2027, the Dates and Rates page says June 28. Which should the listing show, or should we ask the camp?",
+        "Session 2 has no posted price. Publish it without a price, or ask the camp?"
+      ]
+    }
+  }
+}

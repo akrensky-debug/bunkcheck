@@ -1,0 +1,110 @@
+{
+  "slug": "worcester-jcc-summer-camps-worcester",
+  "name": "Worcester JCC Summer Camps",
+  "operator_name": "Worcester JCC",
+  "website_url": "https://www.worcesterjcc.org/summer-camps/",
+  "registration_url": "https://worcesterjcc.my.site.com/s/registration",
+  "phone": "508-756-7109",
+  "street_address": "633 Salisbury Street",
+  "city": "Worcester",
+  "state": "MA",
+  "zip": "01609",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "sports",
+    "swimming",
+    "arts",
+    "nature"
+  ],
+  "activities": [
+    "swimming",
+    "swim lessons",
+    "sports",
+    "nature",
+    "arts and crafts",
+    "gaga",
+    "gymnastics"
+  ],
+  "grade_min": 1,
+  "grade_max": 9,
+  "description_short": "Summer day camps at the Worcester JCC building and grounds on Salisbury Street: a preschool program, a general day camp and a sports camp for grades 1 to 9. Campers swim daily in indoor and outdoor pools, take Red Cross swim lessons, and play sports, do crafts and explore nature.",
+  "financial_aid": true,
+  "season_year": 2026,
+  "sources": [
+    {
+      "url": "https://www.worcesterjcc.org/summer-camps/",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "financial_aid"
+      ],
+      "note": "Researched by Claude from this page. Summer Camps and Programs page: Summer Camp 2027 dates and details still to come; links the 2026 Summer Camps and Program Guide and a 2026 financial aid application; preschool summer program, day camp and sports camp; 80,000 square foot facility with indoor and outdoor pools, gym, fields, tennis courts. The 2026 guide link would not open for the fetcher, so no dates or prices are recorded."
+    },
+    {
+      "url": "https://www.worcesterjcc.org/day-camp/",
+      "checked": "2026-11-20",
+      "fields": [
+        "activities",
+        "grade_min",
+        "grade_max",
+        "description_short"
+      ],
+      "note": "Researched by Claude from this page. Day Camp grades 1 to 9: sports, swimming, nature, arts and crafts, Red Cross swim lessons, daily free swim. The Sports Camp page (https://www.worcesterjcc.org/sports-camp/) also says grades 1 to 9; the Preschool Summer Program has 3, 4 and 5 year old classrooms."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.worcesterjcc.org/summer-camps/",
+      "kind": "html",
+      "title": "Summer Camps and Programs - Worcester JCC"
+    },
+    "warnings": [
+      "No session dates or prices are readable: the 2026 guide link goes through a click tracker the fetcher could not follow, and 2027 details are not posted.",
+      "Preschool, day camp and sports camp share one site, so this is one listing; grades 1 to 9 refer to the day and sports camps."
+    ],
+    "unknowns": [
+      "sessions",
+      "age_min",
+      "age_max",
+      "price_per_week",
+      "price_min",
+      "price_max",
+      "price_per",
+      "email",
+      "extended_care",
+      "transportation",
+      "meals_included",
+      "aca_accredited",
+      "gender_policy",
+      "religious_affiliation"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://www.worcesterjcc.org/summer-camps/",
+      "changes": [
+        "New camp, researched from https://www.worcesterjcc.org/summer-camps/"
+      ],
+      "for_andrew": [
+        "The pages say 2026 but give no dates or prices, and the 2026 guide could not be read. List it now with no sessions, or wait for the 2027 guide?"
+      ]
+    }
+  }
+}

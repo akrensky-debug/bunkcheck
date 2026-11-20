@@ -1,0 +1,136 @@
+{
+  "slug": "eaglebrook-summer-semester-deerfield",
+  "name": "Eaglebrook Summer Semester",
+  "operator_name": "Eaglebrook School",
+  "website_url": "https://www.eaglebrook.org/summer/summer-semester",
+  "email": "summeradmissions@eaglebrook.org",
+  "phone": "413-774-7411",
+  "street_address": "271 Pine Nook Road",
+  "city": "Deerfield",
+  "state": "MA",
+  "zip": "01342",
+  "camp_type": "sleepaway",
+  "primary_categories": [
+    "academic"
+  ],
+  "secondary_categories": [
+    "sports",
+    "arts",
+    "outdoor"
+  ],
+  "activities": [
+    "english",
+    "mathematics",
+    "esl",
+    "spanish",
+    "french",
+    "chinese",
+    "computer science",
+    "history",
+    "drawing",
+    "painting",
+    "woodworking",
+    "photography",
+    "drama",
+    "stone carving",
+    "public speaking",
+    "soccer",
+    "ultimate disc",
+    "basketball",
+    "swimming",
+    "weekend trips"
+  ],
+  "gender_policy": "coed",
+  "age_min": 10,
+  "age_max": 13,
+  "description_short": "Four week boarding program for boys and girls aged 10 to 13 at Eaglebrook School in Deerfield. Mornings are small academic and arts classes, afternoons include sports, and weekends bring trips around New England, with students living in faculty supervised dorms.",
+  "price_min": 11000,
+  "price_per": "session",
+  "meals_included": true,
+  "financial_aid": true,
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Summer Semester 2027",
+      "start_date": "2027-07-04",
+      "end_date": "2027-07-31",
+      "price": 11000,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.eaglebrook.org/summer/summer-semester",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "gender_policy",
+        "age_min",
+        "age_max",
+        "description_short",
+        "meals_included",
+        "financial_aid"
+      ],
+      "note": "Researched by Claude from this page. Four week boarding program for boys and girls aged 10 to 13, July 4 to 31, 2027; admission requires a transcript, test results when available and teacher recommendations; separate dorms for girls and boys; family style meals in the dining hall; financial aid for domestic students."
+    },
+    {
+      "url": "https://www.eaglebrook.org/summer/summer-semester/summer-semester-frequently-asked-questions",
+      "checked": "2026-11-20",
+      "fields": [
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "activities",
+        "price_min",
+        "price_per",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. FAQ: accepting inquiries for 2027; tuition for Summer Semester 2027 is $11,000; runs July 4 to 31, 2027; course options and afternoon athletics (soccer, ultimate disc, basketball, swimming) and Saturday trips. Address 271 Pine Nook Road, Deerfield, MA 01342, 413-774-7411."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.eaglebrook.org/summer/summer-semester",
+      "kind": "html",
+      "title": "Summer Semester"
+    },
+    "warnings": [
+      "Deerfield, MA is not in cities.py, so this draft fails validation.",
+      "Admission is selective (transcript, test scores, recommendations); it is a summer school as much as a camp."
+    ],
+    "unknowns": [
+      "price_per_week",
+      "price_max",
+      "grade_min",
+      "grade_max",
+      "registration_url",
+      "extended_care",
+      "transportation",
+      "aca_accredited",
+      "refund_policy_summary"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://www.eaglebrook.org/summer/summer-semester",
+      "changes": [
+        "New camp, researched from https://www.eaglebrook.org/summer/summer-semester"
+      ],
+      "for_andrew": [
+        "Deerfield, MA is missing from cities.py; no table town fits.",
+        "This is a selective four week academic boarding program at $11,000. Does it belong in the listings as a sleepaway camp?"
+      ]
+    }
+  }
+}

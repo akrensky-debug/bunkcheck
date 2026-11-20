@@ -1,0 +1,129 @@
+{
+  "slug": "berwick-boys-foundation-summer-program-milbridge",
+  "name": "Berwick Boys Foundation Summer Program",
+  "operator_name": "Berwick Boys Foundation",
+  "website_url": "https://berwick.org/wp1/programs/summer-program/",
+  "phone": "508-586-0059",
+  "city": "Milbridge",
+  "state": "ME",
+  "camp_type": "sleepaway",
+  "gender_policy": "boys",
+  "primary_categories": [
+    "leadership"
+  ],
+  "secondary_categories": [
+    "outdoor",
+    "sailing",
+    "adventure"
+  ],
+  "description_short": "Boys spend the summer on Dyer Island, a 750 acre island off Milbridge, Maine, running their own camp in work crews. They build cabins, run boats, cook and keep the island going, and also sail, swim, fish and take trips; older boys lead the crews.",
+  "activities": [
+    "sailing",
+    "swimming",
+    "boating",
+    "fishing",
+    "carpentry",
+    "construction",
+    "cooking",
+    "educational trips"
+  ],
+  "age_min": 12,
+  "age_max": 21,
+  "price_min": 900,
+  "price_per": "summer",
+  "transportation": true,
+  "meals_included": true,
+  "financial_aid": true,
+  "refund_policy_summary": "No refunds. The $100 deposit is non refundable, and nothing is refunded if a boy leaves camp early for any reason.",
+  "season_year": 2026,
+  "sources": [
+    {
+      "url": "https://berwick.org/wp1/programs/summer-program/",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "city",
+        "state",
+        "camp_type",
+        "gender_policy",
+        "primary_categories",
+        "secondary_categories",
+        "description_short",
+        "activities"
+      ],
+      "note": "Researched by Claude from this page. Boys from age 12, six to eight week season on Dyer Island off the coast of Milbridge; time split between community work crews, personal projects and recreation."
+    },
+    {
+      "url": "https://berwick.org/wp1/wp-content/uploads/2026/06/2026-Parent-Handbook_Final.pdf",
+      "checked": "2026-11-20",
+      "fields": [
+        "age_min",
+        "age_max",
+        "price_min",
+        "price_per",
+        "transportation",
+        "meals_included",
+        "financial_aid",
+        "refund_policy_summary"
+      ],
+      "note": "Researched by Claude from this page. Summer 2026 handbook. Boys aged 12 through 21, camp from early July to about mid August. Families are asked to pay $900 per boy or as much as they can afford; fee covers lodging, transport from the West Bridgewater MA headquarters, boat trips, food and laundry. New boys go through an interview, and local boys attend the winter program first."
+    },
+    {
+      "url": "https://berwick.org/wp1/contact-us/",
+      "checked": "2026-11-20",
+      "fields": [
+        "phone"
+      ],
+      "note": "Researched by Claude from this page. Headquarters at 335 West Street, West Bridgewater, MA 02379."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://berwick.org/wp1/programs/summer-program/",
+      "kind": "html",
+      "title": "Summer Program | Berwick Boys Foundation"
+    },
+    "warnings": [
+      "No exact dates: the 2026 handbook says early July to about mid August.",
+      "The summer page says Dyer Island is off Milbridge; the Facilities page says the island is in Harrington, ME. The shore base is in Milbridge.",
+      "No street address or ZIP is given for the island or the Milbridge shore base."
+    ],
+    "unknowns": [
+      "sessions",
+      "zip",
+      "street_address",
+      "email",
+      "registration_url",
+      "grade_min",
+      "grade_max",
+      "price_max",
+      "price_per_week",
+      "extended_care",
+      "special_needs_notes",
+      "swim_waterfront_notes",
+      "aca_accredited",
+      "indoor_outdoor"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "missing required zip",
+      "city 'Milbridge', ME is not in cities.py"
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://berwick.org/wp1/programs/summer-program/",
+      "changes": [
+        "New camp, researched from https://berwick.org/wp1/programs/summer-program/",
+        "Used the 2026 handbook (latest posted); no 2027 information yet"
+      ],
+      "for_andrew": [
+        "The validator rejects this draft: Milbridge (and Harrington) are not in cities.py, and no page gives a ZIP for the camp. Add a town and supply a ZIP from the owner, or drop?",
+        "Admission is selective (interview, winter program first for local boys) and the age range runs to 21. Keep as a listing?"
+      ]
+    }
+  }
+}

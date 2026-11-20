@@ -1,0 +1,117 @@
+{
+  "slug": "barre-opera-house-theatre-camps-barre",
+  "name": "Barre Opera House Summer Theatre Camps",
+  "operator_name": "Barre Opera House",
+  "website_url": "https://barreoperahouse.org/theatre-camps.html",
+  "phone": "(802) 476-8188",
+  "city": "Barre",
+  "state": "VT",
+  "zip": "05641",
+  "camp_type": "day",
+  "primary_categories": [
+    "performing_arts"
+  ],
+  "activities": [
+    "musical theatre",
+    "acting",
+    "cabaret",
+    "theatre tech"
+  ],
+  "grade_min": 0,
+  "grade_max": 12,
+  "description_short": "Theatre day camps run by the Barre Opera House in Barre, Vermont, for students in grades K to 12. Each camp is grouped by grade and works toward a show, from a picture book adaptation for the youngest to Legally Blonde Jr. and a theatre tech camp for teens.",
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "From the Page to the Stage (grades K to 3)",
+      "start_date": "2027-06-28",
+      "end_date": "2027-07-02",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Miss Nelson is Missing (grades 3 to 8)",
+      "start_date": "2027-07-12",
+      "end_date": "2027-07-16",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Ensemble Cabaret Camp: New York, New York (grades 3 to 8)",
+      "start_date": "2027-07-19",
+      "end_date": "2027-07-23",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Legally Blonde, Jr. (grades 8 to 12)",
+      "start_date": "2027-07-26",
+      "end_date": "2027-08-06",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Intro to Theatre Tech (grades 8 to 12)",
+      "start_date": "2027-08-02",
+      "end_date": "2027-08-06",
+      "price": null,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://barreoperahouse.org/theatre-camps.html",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "phone",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "description_short",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. 2027 Vacation and Summer Theatre Camps page. Summer camps only; February and April vacation camps left out. City and ZIP from the footer, City Hall, 6 N. Main St., Barre, VT 05641"
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://barreoperahouse.org/theatre-camps.html",
+      "kind": "html",
+      "title": "2027 Theatre Camps - Barre Opera House"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Prices",
+      "Daily hours",
+      "Where camps meet",
+      "Registration link (coming soon)",
+      "Financial aid",
+      "ACA accreditation"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "city 'Barre' is not in campfinder/seed/cities.py"
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://barreoperahouse.org/theatre-camps.html",
+      "changes": [
+        "New camp, researched from https://barreoperahouse.org/theatre-camps.html"
+      ],
+      "for_andrew": [
+        "Barre is not in campfinder/seed/cities.py, so the draft fails validation. Add Barre?",
+        "2027 dates are posted but no prices or registration yet. List now, or wait for prices?"
+      ]
+    }
+  }
+}

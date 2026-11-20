@@ -1,0 +1,105 @@
+{
+  "slug": "epilepsy-foundation-new-england-sailing-camp-newport",
+  "name": "Epilepsy Foundation New England Sailing Camp",
+  "operator_name": "Epilepsy Foundation New England",
+  "website_url": "https://epilepsynewengland.org/programs/camps/ri/sailing-camp-2026",
+  "registration_url": "http://app.campdoc.com/register/epne",
+  "street_address": "Sail to Prevail docks, Fort Adams State Park",
+  "city": "Newport",
+  "state": "RI",
+  "camp_type": "specialty",
+  "primary_categories": [
+    "sailing"
+  ],
+  "secondary_categories": [
+    "special_needs"
+  ],
+  "activities": [
+    "sailing"
+  ],
+  "age_min": 7,
+  "description_short": "A short day sailing camp run by Epilepsy Foundation New England with Sail To Prevail, whose adapted 20 foot boats let sailors with disabilities steer and trim on Narragansett Bay.",
+  "price_min": 25,
+  "price_max": 25,
+  "price_per": "session",
+  "financial_aid": true,
+  "special_needs_notes": "Part of Epilepsy Foundation New England's Purple Camp programs, hosted by Sail To Prevail, which sails specially adapted boats with people with disabilities. Parents or guardians give any medications.",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Sailing Camp 2026",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": 25,
+      "availability": "unknown"
+    }
+  ],
+  "notes": "Runs 11:00 am to 3:00 pm. Application deadline was July 1, 2026. Limited spots.",
+  "sources": [
+    {
+      "url": "https://epilepsynewengland.org/programs/camps/ri/sailing-camp-2026",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "street_address",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "age_min",
+        "description_short",
+        "price_min",
+        "price_max",
+        "price_per",
+        "financial_aid",
+        "special_needs_notes",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Sailing Camp 2026 page: Sail to Prevail (Fort Adams), Newport; August 3 to 7, 2026, 11:00 am to 3:00 pm; ages 7 and up; cost $25; scholarship available; application deadline July 1, 2026"
+    },
+    {
+      "url": "https://sailtoprevail.org/newport/",
+      "checked": "2026-11-20",
+      "fields": [
+        "zip"
+      ],
+      "note": "Researched by Claude from this page. The host's Newport page, linked from the camp page: docks at Fort Adams State Park, mailing address Newport, RI 02840"
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://epilepsynewengland.org/programs/camps/ri/sailing-camp-2026",
+      "kind": "html",
+      "title": "Sailing Camp 2026 | Epilepsy Foundation New England"
+    },
+    "warnings": [],
+    "unknowns": [
+      "2027 dates",
+      "Upper age limit",
+      "Who is eligible (the page does not say campers must have epilepsy)",
+      "Contact email (shown as a placeholder on the page)"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://epilepsynewengland.org/programs/camps/ri/sailing-camp-2026",
+      "changes": [
+        "New camp, researched from https://epilepsynewengland.org/programs/camps/ri/sailing-camp-2026"
+      ],
+      "for_andrew": [
+        "The page calls it a weekend long day camp but lists August 3 to 7, 2026 (Monday to Friday), 11 am to 3 pm. I used the listed dates.",
+        "zip 02840 comes from Sail To Prevail's Newport page (the host), not the Epilepsy Foundation page.",
+        "Sail To Prevail itself is a separate draft (sail-to-prevail-newport, marked drop). This is a different program (a camp week run by Epilepsy Foundation New England), so I kept it separate.",
+        "The 2026 camp is over; no 2027 page yet."
+      ]
+    }
+  }
+}

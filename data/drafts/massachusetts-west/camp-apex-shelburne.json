@@ -1,0 +1,187 @@
+{
+  "slug": "camp-apex-shelburne",
+  "name": "Camp Apex",
+  "operator_name": "Franklin County's YMCA",
+  "website_url": "https://your-y.org/camps",
+  "registration_url": "https://your-y.org/programs/10085/camp-apex/?locations=13",
+  "phone": "413-625-2493",
+  "street_address": "45 Peckville Road",
+  "city": "Shelburne",
+  "state": "MA",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "outdoor",
+    "nature",
+    "swimming",
+    "arts"
+  ],
+  "activities": [
+    "swimming",
+    "tube slide",
+    "obstacle course",
+    "gaga ball",
+    "arts and crafts",
+    "hiking",
+    "stream exploring",
+    "nature",
+    "sports",
+    "camp songs"
+  ],
+  "age_min": 5,
+  "age_max": 14,
+  "description_short": "YMCA day camp on more than 30 acres in Shelburne for ages 5 to 14. Campers swim, ride a 160 foot tube slide, run obstacle courses, hike and explore streams, and make crafts, with a different theme each week.",
+  "indoor_outdoor": "outdoor",
+  "price_per_week": 305,
+  "price_min": 305,
+  "price_per": "week",
+  "extended_care": true,
+  "transportation": false,
+  "meals_included": true,
+  "financial_aid": true,
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Week 1",
+      "start_date": "2026-06-22",
+      "end_date": "2026-06-26",
+      "price": 305,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 2",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-03",
+      "price": 305,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 3",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": 305,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 4",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": 305,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 5",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": 305,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 6",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": 305,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 7",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": 305,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 8",
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-14",
+      "price": 305,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 9",
+      "start_date": "2026-08-17",
+      "end_date": "2026-08-21",
+      "price": 305,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://your-y.org/camps",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "camp_type",
+        "primary_categories",
+        "age_min",
+        "age_max",
+        "price_per_week",
+        "price_min",
+        "price_per",
+        "extended_care",
+        "transportation",
+        "meals_included",
+        "financial_aid"
+      ],
+      "note": "Researched by Claude from this page. Camp Apex: children 5 to 14 (must be entering first grade), camp 8:45 am to 3:30 pm with complimentary extended care 7:00 am to 6:00 pm, free breakfast and lunch through the Greenfield Summer Eats Program except the weeks of June 22 and August 17, transportation not available. Weekly fee $305 non member ($260 member), $40 non refundable deposit per week. Scholarship application linked."
+    },
+    {
+      "url": "https://reclique-core-greenfield.s3.amazonaws.com/wp-content/uploads/2026/01/30091910/Camp-Brochure_2026.pdf",
+      "checked": "2026-11-20",
+      "fields": [
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "secondary_categories",
+        "activities",
+        "description_short",
+        "indoor_outdoor",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. 2026 brochure: Camp Apex, 45 Peckville Road, Shelburne, 413-625-2493, over 30 acres, campers who have completed kindergarten through 8th grade; nine weekly themes June 22 to August 21, 2026; 160 foot tube slide, obstacle courses, hiking, stream exploring, swimming. No ZIP code is given. Session price is the non member weekly fee from the camps page."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://your-y.org/camps",
+      "kind": "html",
+      "title": "Camps – Franklin County's YMCA"
+    },
+    "warnings": [
+      "Shelburne, MA is not in cities.py and no ZIP code is published, so this draft fails validation.",
+      "No 2027 information is posted, so this is the 2026 season.",
+      "The YMCA scholarship is for active YMCA members."
+    ],
+    "unknowns": [
+      "zip",
+      "grade_min",
+      "grade_max",
+      "price_max",
+      "email",
+      "aca_accredited",
+      "gender_policy",
+      "swim_waterfront_notes"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://your-y.org/camps",
+      "changes": [
+        "New camp, researched from https://your-y.org/camps"
+      ],
+      "for_andrew": [
+        "Shelburne and Greenfield, MA are both missing from cities.py, so the two Franklin County YMCA drafts fail validation. No town in the table fits either.",
+        "Camp Apex has no published ZIP code; ZIP is required. Add it from a camp source, or hold the listing."
+      ]
+    }
+  }
+}

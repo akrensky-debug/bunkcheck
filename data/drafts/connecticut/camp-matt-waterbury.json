@@ -1,0 +1,141 @@
+{
+  "slug": "camp-matt-waterbury",
+  "name": "Camp MATT",
+  "operator_name": "Mattatuck Museum",
+  "website_url": "https://www.mattmuseum.org/camp-matt/",
+  "registration_url": "https://mattmuseum.doubleknot.com/event/space-available/camp-matt-summer-2026/82438",
+  "email": "jason@mattmuseum.org",
+  "phone": "203-753-0381",
+  "street_address": "144 West Main Street",
+  "city": "Waterbury",
+  "state": "CT",
+  "zip": "06702",
+  "camp_type": "specialty",
+  "primary_categories": [
+    "arts"
+  ],
+  "activities": [
+    "art making",
+    "gallery visits",
+    "history",
+    "puppetry"
+  ],
+  "description_short": "A week long art and history day camp at the Mattatuck Museum in Waterbury, 9:30 am to 3:30 pm, with a new theme each week. Campers work in the museum galleries, learn about history and try different art materials and techniques.",
+  "indoor_outdoor": "indoor",
+  "extended_care": true,
+  "financial_aid": true,
+  "refund_policy_summary": "No refunds after May 21.",
+  "price_per_week": 210,
+  "price_min": 210,
+  "price_max": 210,
+  "price_per": "week",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Backstage Pass",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-02",
+      "price": 210,
+      "availability": "unknown"
+    },
+    {
+      "name": "Archiving America: 250 Years of Stories",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": 210,
+      "availability": "unknown"
+    },
+    {
+      "name": "Passport to Paint",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": 210,
+      "availability": "unknown"
+    },
+    {
+      "name": "Art Safari",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": 210,
+      "availability": "unknown"
+    },
+    {
+      "name": "The Art of the Experiment",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": 210,
+      "availability": "unknown"
+    },
+    {
+      "name": "Art Unbound",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": 210,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.mattmuseum.org/camp-matt/",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "description_short",
+        "indoor_outdoor",
+        "extended_care",
+        "financial_aid",
+        "refund_policy_summary",
+        "price_per_week",
+        "price_min",
+        "price_max",
+        "price_per",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Price is the general rate ($210 a week); members pay $205 and Kids Adventure Passholders $105. Free before care 8 to 9 am and after care 3:30 to 5 pm. Camperships through the United Way Greater Waterbury Campership Fund for residents of listed towns. The page says 2026 is sold out and to check back for 2027. Email and phone are for Jason Foberg, Senior Director of Education and Community Impact; the phone is the museum line (extension 114)."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.mattmuseum.org/camp-matt/",
+      "kind": "html",
+      "title": "Camp MATT - Mattatuck Museum"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Ages or grades served",
+      "2027 dates and prices",
+      "Whether lunch is provided",
+      "ACA accreditation"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "city 'Waterbury', CT is not in cities.py"
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://www.mattmuseum.org/camp-matt/",
+      "changes": [
+        "New camp, researched from https://www.mattmuseum.org/camp-matt/",
+        "Used the 2026 season: the page says to check back for 2027. Week 1 runs Monday to Thursday (June 29 to July 2) but the page gives only one weekly price."
+      ],
+      "for_andrew": [
+        "Waterbury is not in cities.py, so this draft fails validation until it is added. Waterbury is its own city, so there is no parent town to use instead.",
+        "The page never says what ages the camp serves (the campership note only says a child must turn 5 by June 1). Publish without ages, or hold until the camp is asked?"
+      ]
+    }
+  }
+}

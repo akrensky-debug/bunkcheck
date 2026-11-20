@@ -1,0 +1,136 @@
+{
+  "slug": "manchester-summer-day-camp-manchester",
+  "name": "Manchester Summer Day Camp",
+  "operator_name": "Town of Manchester Leisure, Family and Recreation Department",
+  "website_url": "https://www.manchesterct.gov/Government/Departments/Leisure-Family-and-Recreation-Department/Recreation-Divison/Recreation-Programs/Summer-Camp",
+  "phone": "860-647-3084",
+  "email": "campwaivers@manchesterct.gov",
+  "street_address": "Center Springs Park, 39 Lodge Drive",
+  "city": "Manchester",
+  "state": "CT",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "swimming"
+  ],
+  "activities": [
+    "swimming",
+    "swim lessons",
+    "field trips",
+    "special events"
+  ],
+  "age_min": 5,
+  "age_max": 13,
+  "description_short": "A town run day camp for Manchester residents ages 5 to 13 who have finished kindergarten, 9 am to 3 pm in two week sessions. Campers are placed by age at Center Springs Park, the Leisure Labs at Mahoney, Buckley and Martin schools, or a teen site at Manchester Middle Academy, with daily pool time, field trips and lunch provided.",
+  "indoor_outdoor": "both",
+  "extended_care": true,
+  "meals_included": true,
+  "financial_aid": true,
+  "refund_policy_summary": "Full refunds may be requested until June 8. No refunds after June 8.",
+  "swim_waterfront_notes": "Campers swim at town pools: Marcy McDonald Pool, Swanson Pool, Salters Pool and Globe Hollow. Swim lessons during camp at Mahoney and Martin School cost extra.",
+  "price_min": 150,
+  "price_max": 150,
+  "price_per": "session",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Session 1",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-10",
+      "price": 150,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 2",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-24",
+      "price": 150,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 3",
+      "start_date": "2026-07-27",
+      "end_date": "2026-08-07",
+      "price": 150,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.manchesterct.gov/Government/Departments/Leisure-Family-and-Recreation-Department/Recreation-Divison/Recreation-Programs/Summer-Camp",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "activities",
+        "meals_included"
+      ],
+      "note": "Researched by Claude from this page. Town summer camp page: six weeks, 9 am to 3 pm, $150 per two week session, lunch provided by Board of Education Food Services, field trip and special events schedule linked."
+    },
+    {
+      "url": "https://www.manchesterct.gov/files/content/public/v/59/government/departments/leisure-family-and-recreation-department/recreation-divison/recreation-programs/summer-camp/summer-day-camp-flyer-2026.pdf",
+      "checked": "2026-11-20",
+      "fields": [
+        "phone",
+        "email",
+        "street_address",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "age_min",
+        "age_max",
+        "description_short",
+        "indoor_outdoor",
+        "extended_care",
+        "financial_aid",
+        "refund_policy_summary",
+        "swim_waterfront_notes",
+        "price_min",
+        "price_max",
+        "price_per",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. 2026 pre-season flyer and FAQ. Open to children ages 5 to 15 who live in Manchester and have finished kindergarten; camp sites for ages 5 to 13 and a Recreation Leader in Training program for 14 and 15 year olds. Session 1 has no camp July 3. Before care 7:30 to 9 am and after care 3 to 5:30 pm, $60 a session each. The flyer gives one price ($150 a session), with no separate non-resident rate because camp is for residents only. No zip is given for the sites."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.manchesterct.gov/Government/Departments/Leisure-Family-and-Recreation-Department/Recreation-Divison/Recreation-Programs/Summer-Camp",
+      "kind": "html",
+      "title": "Summer Camp Information Town of Manchester"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Zip code",
+      "2027 dates and prices",
+      "Transportation between home and camp",
+      "ACA accreditation"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "missing required zip",
+      "city 'Manchester', CT is not in cities.py"
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://www.manchesterct.gov/Government/Departments/Leisure-Family-and-Recreation-Department/Recreation-Divison/Recreation-Programs/Summer-Camp",
+      "changes": [
+        "New camp, researched from https://www.manchesterct.gov/Government/Departments/Leisure-Family-and-Recreation-Department/Recreation-Divison/Recreation-Programs/Summer-Camp",
+        "Used the 2026 season: no 2027 information is posted."
+      ],
+      "for_andrew": [
+        "Manchester is not in cities.py, so this draft fails validation until it is added. Manchester is its own town.",
+        "The town's pages give no zip for the camp sites (only 06045 for Town Hall), so the draft also fails on zip.",
+        "Camp is open only to Manchester residents. There is no non-resident rate to record. List it anyway, with the residency rule in the description?",
+        "Camp runs at five sites with the same dates; kept as one listing, placed at the Center Springs office at 39 Lodge Drive."
+      ]
+    }
+  }
+}

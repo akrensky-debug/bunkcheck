@@ -1,0 +1,173 @@
+{
+  "slug": "alltogethernow-summer-camps-east-montpelier",
+  "name": "AllTogetherNow! Summer Camps",
+  "operator_name": "AllTogetherNow!",
+  "website_url": "https://www.alltogethernowvt.org/summer_camps.html",
+  "registration_url": "https://www.activityhero.com/biz/alltogethernow?aht_cam=schedule-widget&aht_src=84621&brand=1",
+  "phone": "802-223-1242",
+  "street_address": "20 Wyvern Way",
+  "city": "East Montpelier",
+  "state": "VT",
+  "zip": "05651",
+  "camp_type": "day",
+  "primary_categories": [
+    "arts",
+    "nature"
+  ],
+  "secondary_categories": [
+    "swimming"
+  ],
+  "activities": [
+    "swimming",
+    "art",
+    "stilt walking",
+    "singing",
+    "storytelling",
+    "cooperative games",
+    "herbal crafts",
+    "music",
+    "fiber arts",
+    "hiking"
+  ],
+  "age_min": 3,
+  "age_max": 12,
+  "description_short": "Weekly themed day camps in central Vermont, Monday to Friday 9am to 3pm, mostly outdoors. Campers make art, sing, play cooperative games, learn stilt walking and swim daily in a saltwater pool, with weeks on herbs, rock music, fiber crafts and making.",
+  "indoor_outdoor": "both",
+  "price_per_week": 365,
+  "price_min": 365,
+  "price_max": 400,
+  "price_per": "week",
+  "extended_care": true,
+  "financial_aid": true,
+  "swim_waterfront_notes": "Daily swim time in an in-ground saltwater pool (3 feet shallow, 8 feet deep, separated by a rope) with a licensed lifeguard on duty. Parents choose no pool, shallow end only, or full pool after a swim test.",
+  "season_year": 2026,
+  "notes": "Ages 6 to 12, except Tinker Tales and Steeped in Nature for ages 3 to 6 ($400). Before care 8 to 9am $10 a day, after care 3 to 4:30pm $15 a day. $50 non-refundable deposit.",
+  "sessions": [
+    {
+      "name": "Play, Play, Play All Day and Go to the Parades",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-03",
+      "price": 365,
+      "availability": "unknown"
+    },
+    {
+      "name": "Mandala of Herbs",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": 365,
+      "availability": "unknown"
+    },
+    {
+      "name": "Rock 'n Roll",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": 365,
+      "availability": "unknown"
+    },
+    {
+      "name": "Tinker Tales (ages 3 to 6)",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": 400,
+      "availability": "unknown"
+    },
+    {
+      "name": "Steeped in Nature (ages 3 to 6)",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": 400,
+      "availability": "unknown"
+    },
+    {
+      "name": "Folkcraft Kids",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": 365,
+      "availability": "unknown"
+    },
+    {
+      "name": "Magic Makers",
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-14",
+      "price": 365,
+      "availability": "unknown"
+    },
+    {
+      "name": "Water World Swim Camp",
+      "start_date": "2026-08-17",
+      "end_date": "2026-08-21",
+      "price": 365,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.alltogethernowvt.org/summer_camps.html",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "indoor_outdoor",
+        "price_per_week",
+        "price_min",
+        "price_max",
+        "price_per",
+        "extended_care",
+        "financial_aid",
+        "swim_waterfront_notes",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Summer Camp 2026 details (registration closed)"
+    },
+    {
+      "url": "https://www.alltogethernowvt.org/contact_us.html",
+      "checked": "2026-11-20",
+      "fields": [
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip"
+      ],
+      "note": "Researched by Claude from this page. Contact page: 20 Wyvern Way, East Montpelier, VT 05651"
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.alltogethernowvt.org/summer_camps.html",
+      "kind": "html",
+      "title": "ATN! Summer Camps - AllTogetherNow!"
+    },
+    "warnings": [],
+    "unknowns": [
+      "2027 dates and prices",
+      "Refund policy beyond the $50 non-refundable deposit",
+      "ACA accreditation"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "city 'East Montpelier' is not in campfinder/seed/cities.py"
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://www.alltogethernowvt.org/summer_camps.html",
+      "changes": [
+        "New camp, researched from https://www.alltogethernowvt.org/summer_camps.html"
+      ],
+      "for_andrew": [
+        "East Montpelier is not in campfinder/seed/cities.py, so the draft fails validation. Add it? (Montpelier is in the table but is a separate town.)"
+      ]
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "slug": "biddeford-recreation-summer-camp-biddeford",
+  "name": "Biddeford Recreation Summer Camp",
+  "operator_name": "Biddeford Recreation Department",
+  "website_url": "https://biddefordme.myrec.com/documents/camp_enrollment_packet_2026.pdf",
+  "email": "summercamp@biddefordmaine.org",
+  "phone": "(207) 283-0841",
+  "city": "Biddeford",
+  "state": "ME",
+  "zip": "04005",
+  "camp_type": "day",
+  "description_short": "A city run summer camp in Biddeford with groups by school grade, including Safari Camp and Tiger Adventure Camp. Families enroll online, then choose a full summer or weekly payment option.",
+  "financial_aid": true,
+  "season_year": 2026,
+  "sources": [
+    {
+      "url": "https://biddefordme.myrec.com/documents/camp_enrollment_packet_2026.pdf",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "phone",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "description_short",
+        "financial_aid"
+      ],
+      "note": "Researched by Claude from this page. 2026 enrollment packet. ZIP is the department's mailing address (189 Alfred Street, P.O. Box 586). Financial aid: the packet mentions financial assistance awards."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://biddefordme.myrec.com/documents/camp_enrollment_packet_2026.pdf",
+      "kind": "pdf",
+      "title": "Biddeford Recreation Summer Camp 2026 enrollment guide"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Session dates",
+      "Weekly and full summer prices (only deposits of $500 resident and $600 non-resident are given)",
+      "Grades served by each group",
+      "Where each group meets",
+      "Hours",
+      "Meals",
+      "Refund policy",
+      "ACA accreditation"
+    ],
+    "low_confidence": [
+      {
+        "field": "camp_type",
+        "confidence": 0.7,
+        "quote": "Biddeford Recreation Summer Camp Enrollment Guide for Families"
+      }
+    ],
+    "errors": [
+      "city 'Biddeford' is not in campfinder/seed/cities.py"
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://biddefordme.myrec.com/documents/camp_enrollment_packet_2026.pdf",
+      "changes": [
+        "New camp, researched from https://biddefordme.myrec.com/documents/camp_enrollment_packet_2026.pdf"
+      ],
+      "for_andrew": [
+        "Biddeford is not in campfinder/seed/cities.py, so the draft fails validation.",
+        "The 2026 packet has no dates, grades or prices. The camp pages on biddefordme.myrec.com show only December Vacation Camp now. A city job posting gives dates (June 29 to August 21, 2026), but that is not a camp page, so it is not used. Keep this thin listing, or drop until the 2027 packet is out?",
+        "camp_type 'day' is inferred from a town recreation camp with weekly payments; the packet does not say 'day camp'."
+      ]
+    }
+  }
+}

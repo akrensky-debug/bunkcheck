@@ -1,0 +1,170 @@
+{
+  "slug": "franklin-countys-ymca-gymnastics-ninja-and-adventure-camps-greenfield",
+  "name": "Franklin County's YMCA Gymnastics, Ninja and Adventure Camps",
+  "operator_name": "Franklin County's YMCA",
+  "website_url": "https://your-y.org/camps",
+  "registration_url": "https://your-y.org/programs/10122/gymnastics-camp/?locations=13",
+  "phone": "413-773-3646",
+  "street_address": "451 Main Street",
+  "city": "Greenfield",
+  "state": "MA",
+  "zip": "01301",
+  "camp_type": "specialty",
+  "primary_categories": [
+    "sports"
+  ],
+  "secondary_categories": [
+    "swimming"
+  ],
+  "activities": [
+    "gymnastics",
+    "vault",
+    "bars",
+    "beam",
+    "floor",
+    "tumble track",
+    "ninja obstacle courses",
+    "soccer",
+    "kickball",
+    "relay races",
+    "swimming"
+  ],
+  "age_min": 5,
+  "age_max": 14,
+  "description_short": "Indoor gymnastics, ninja and multi sport day camps at Franklin County's YMCA on Main Street in Greenfield, plus a shorter Lil' Flippers camp for preschoolers. Campers rotate through gymnastics stations and obstacle courses, play team games and swim, with a skills showcase each Friday.",
+  "indoor_outdoor": "indoor",
+  "price_per_week": 305,
+  "price_min": 245,
+  "price_max": 305,
+  "price_per": "week",
+  "extended_care": true,
+  "meals_included": true,
+  "financial_aid": true,
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Week 1",
+      "start_date": "2026-06-22",
+      "end_date": "2026-06-26",
+      "price": 305,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 2",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-03",
+      "price": 305,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 3",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": 305,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 4",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": 305,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 5",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": 305,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 6",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": 305,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 7",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": 305,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://your-y.org/camps",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "age_min",
+        "age_max",
+        "price_per_week",
+        "price_min",
+        "price_max",
+        "price_per",
+        "extended_care",
+        "meals_included",
+        "financial_aid"
+      ],
+      "note": "Researched by Claude from this page. Gymnastics, Ninja and Adventure camps: ages 5 to 14 (must be entering first grade), indoors at the Main Street facility, 8:30 am to 3:30 pm with complimentary extended care 7:00 am to 6:00 pm. Weekly fee $305 non member ($260 member); Lil' Flippers Mini Camp (ends 2 pm, potty trained) $245 non member ($200 member). Free breakfast and lunch through the Greenfield Summer Eats Program except the weeks of June 22 and August 17. Address and phone from the page footer."
+    },
+    {
+      "url": "https://reclique-core-greenfield.s3.amazonaws.com/wp-content/uploads/2026/01/30091910/Camp-Brochure_2026.pdf",
+      "checked": "2026-11-20",
+      "fields": [
+        "secondary_categories",
+        "activities",
+        "description_short",
+        "indoor_outdoor",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. 2026 brochure: Gymnastics, Ninja and Adventure camps ages 5 to 14, Minis 3.5 to 5; seven weekly themes June 22 to August 7, 2026 (Week 7 optional for Tumbling Tigers team); Friday skills showcase; swimming daily at 1 pm. Session price is the non member weekly fee."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://your-y.org/camps",
+      "kind": "html",
+      "title": "Camps – Franklin County's YMCA"
+    },
+    "warnings": [
+      "Greenfield, MA is not in cities.py, so this draft fails validation.",
+      "No 2027 information is posted, so this is the 2026 season.",
+      "The Lil' Flippers Mini Camp takes children 3.5 to 5; age_min reflects the main camps."
+    ],
+    "unknowns": [
+      "grade_min",
+      "grade_max",
+      "email",
+      "transportation",
+      "aca_accredited",
+      "gender_policy"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://your-y.org/camps",
+      "changes": [
+        "New camp, researched from https://your-y.org/camps"
+      ],
+      "for_andrew": [
+        "Shelburne and Greenfield, MA are both missing from cities.py, so the two Franklin County YMCA drafts fail validation. No town in the table fits either."
+      ]
+    }
+  }
+}

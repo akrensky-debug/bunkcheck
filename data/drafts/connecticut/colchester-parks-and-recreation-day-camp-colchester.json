@@ -1,0 +1,168 @@
+{
+  "slug": "colchester-parks-and-recreation-day-camp-colchester",
+  "name": "Colchester Parks and Recreation Day Camp",
+  "operator_name": "Colchester Parks and Recreation",
+  "website_url": "https://www.colchesterct.gov/summer-camps",
+  "registration_url": "https://colchesterctrec.recdesk.com/Community/Home",
+  "phone": "860-537-7297",
+  "street_address": "Colchester Recreation Complex (RecPlex), 215 Old Hebron Road",
+  "city": "Colchester",
+  "state": "CT",
+  "zip": "06415",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "sports",
+    "arts"
+  ],
+  "activities": [
+    "drama",
+    "nature",
+    "sports and games",
+    "arts and crafts",
+    "music",
+    "STEAM",
+    "splash pad",
+    "field trips",
+    "camp newspaper"
+  ],
+  "grade_min": 0,
+  "grade_max": 5,
+  "description_short": "A town run day camp for children entering kindergarten through 5th grade, held weekly from 8 am to 3 pm at the Colchester RecPlex. Campers have weekly themes, a daily elective, sports, arts, music and nature activities, the splash pad, and a field trip or visiting entertainer each week.",
+  "indoor_outdoor": "outdoor",
+  "extended_care": true,
+  "meals_included": false,
+  "financial_aid": true,
+  "refund_policy_summary": "Requests in writing to the Recreation Director. Full refund before May 15. From May 15 to June 1, a refund only if the spot is filled from the wait list, otherwise an account credit. After June 1, no refunds or credits unless the spot is filled. A $15 cancellation fee applies.",
+  "price_per_week": 175,
+  "price_min": 175,
+  "price_max": 175,
+  "price_per": "week",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Week 1",
+      "start_date": "2026-06-22",
+      "end_date": "2026-06-26",
+      "price": 175,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 2",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-03",
+      "price": 175,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 3",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": 175,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 4",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": 175,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 5",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": 175,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 6",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": 175,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 7",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": 175,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 8",
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-14",
+      "price": 175,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.colchesterct.gov/summer-camps",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "description_short",
+        "indoor_outdoor",
+        "extended_care",
+        "meals_included",
+        "financial_aid",
+        "refund_policy_summary",
+        "price_per_week",
+        "price_min",
+        "price_max",
+        "price_per",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. 2026 Summer Day Camp: Monday to Friday June 22 to August 14, 8 am to 3 pm, no camp Friday July 3. Price is the non-resident rate ($175 a week, the $170 resident rate plus the $5 non-resident fee); it includes a camp t-shirt and field trips. Extended care 3 to 5 pm for $40 a week. Scholarships for campers with financial need. Campers bring lunch. Grades are the grade entering in fall 2026. Phone is the Recreation office. The camp address has no zip on the page; 06415 is the Town of Colchester zip given in the page footer."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.colchesterct.gov/summer-camps",
+      "kind": "html",
+      "title": "SUMMER CAMPS | colchesterct"
+    },
+    "warnings": [],
+    "unknowns": [
+      "2027 dates and prices",
+      "Transportation",
+      "ACA accreditation"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "city 'Colchester', CT is not in cities.py"
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://www.colchesterct.gov/summer-camps",
+      "changes": [
+        "New camp, researched from https://www.colchesterct.gov/summer-camps",
+        "Used the 2026 season: no 2027 information is posted."
+      ],
+      "for_andrew": [
+        "Colchester is not in cities.py, so this draft fails validation until it is added. Colchester is its own town.",
+        "Zip 06415 is the Town Hall zip from the page footer, not stated for the RecPlex itself. Colchester has a single zip, so I used it. OK?"
+      ]
+    }
+  }
+}

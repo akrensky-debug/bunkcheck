@@ -1,0 +1,185 @@
+{
+  "slug": "ymca-camp-sloper-southington",
+  "name": "YMCA Camp Sloper",
+  "operator_name": "Southington-Cheshire Community YMCAs",
+  "website_url": "https://www.ymcacampsloper.org/",
+  "registration_url": "https://ymcacampsloper.campbrainregistration.com/",
+  "phone": "860-621-8194",
+  "street_address": "1000 East Street",
+  "city": "Southington",
+  "state": "CT",
+  "zip": "06489",
+  "camp_type": "day",
+  "primary_categories": [
+    "general",
+    "outdoor"
+  ],
+  "secondary_categories": [
+    "swimming"
+  ],
+  "activities": [
+    "swimming",
+    "specialty camps",
+    "farm camp",
+    "golf camp"
+  ],
+  "grade_min": 0,
+  "grade_max": 9,
+  "description_short": "A large YMCA day camp in Southington for kindergarten through 9th grade, run in two week sessions with themes. Days include swim instruction and free swim, unit games and rotating activities, with specialty camps for older campers and a preschool program called Wanderers.",
+  "indoor_outdoor": "outdoor",
+  "extended_care": true,
+  "transportation": true,
+  "meals_included": false,
+  "financial_aid": true,
+  "aca_accredited": true,
+  "aca_source_url": "https://www.ymcacampsloper.org/day-camp-home-0",
+  "price_min": 365,
+  "price_max": 635,
+  "price_per": "session",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Preview Week",
+      "start_date": "2026-06-15",
+      "end_date": "2026-06-19",
+      "price": 365,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 1",
+      "start_date": "2026-06-22",
+      "end_date": "2026-07-03",
+      "price": 635,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 2",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-17",
+      "price": 635,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 3",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-31",
+      "price": 635,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 4",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-14",
+      "price": 635,
+      "availability": "unknown"
+    },
+    {
+      "name": "Finale Week",
+      "start_date": "2026-08-17",
+      "end_date": "2026-08-21",
+      "price": 365,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.ymcacampsloper.org/",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url"
+      ],
+      "note": "Researched by Claude from this page. Home page: says the 2027 brochure comes out in December 2026 and 2027 registration opens February 6."
+    },
+    {
+      "url": "https://www.ymcacampsloper.org/day-camp-home-0",
+      "checked": "2026-11-20",
+      "fields": [
+        "camp_type",
+        "grade_min",
+        "grade_max",
+        "aca_accredited",
+        "aca_source_url",
+        "primary_categories"
+      ],
+      "note": "Researched by Claude from this page. Day camp home page states YMCA Camp Sloper is ACA accredited; traditional camps run K to 9th grade (see dates and rates)."
+    },
+    {
+      "url": "https://www.ymcacampsloper.org/dates-rates",
+      "checked": "2026-11-20",
+      "fields": [
+        "sessions",
+        "price_min",
+        "price_max",
+        "price_per",
+        "extended_care",
+        "financial_aid"
+      ],
+      "note": "Researched by Claude from this page. 2026 dates and rates. Prices are non-member Traditional Camp (K to 9th) rates: $635 per two week session, $365 for Preview Week and Finale Week; members pay $585 and $340. Specialty camps $655 non-member, Farm and Golf camps $715 and $725. Before care from 7 or 8 am and after care to 4, 5 or 6 pm for an added fee. Financial assistance for Southington and Cheshire residents only. Wanderers (Pre-K) is $310 a week non-member."
+    },
+    {
+      "url": "https://www.ymcacampsloper.org/contact-us",
+      "checked": "2026-11-20",
+      "fields": [
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip"
+      ],
+      "note": "Researched by Claude from this page. Contact page: 1000 East Street, Southington, CT 06489."
+    },
+    {
+      "url": "https://www.ymcacampsloper.org/busing-information",
+      "checked": "2026-11-20",
+      "fields": [
+        "transportation"
+      ],
+      "note": "Researched by Claude from this page. Busing to Southington, Cheshire and a few stops in Berlin at no extra cost."
+    },
+    {
+      "url": "https://www.ymcacampsloper.org/parent-info-faq",
+      "checked": "2026-11-20",
+      "fields": [
+        "description_short",
+        "indoor_outdoor",
+        "meals_included",
+        "secondary_categories",
+        "activities"
+      ],
+      "note": "Researched by Claude from this page. Parent FAQ: daily schedule with swim period, unit period and rotating periods; campers bring a lunch with a drink. Activities: swim periods; specialty, Farm and Golf camps are named on the dates and rates page."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.ymcacampsloper.org/",
+      "kind": "html",
+      "title": "YMCA Camp Sloper Outdoor Center | YMCA Camp Sloper"
+    },
+    "warnings": [],
+    "unknowns": [
+      "2027 dates and prices",
+      "Refund policy"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "city 'Southington', CT is not in cities.py"
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://www.ymcacampsloper.org/",
+      "changes": [
+        "New camp, researched from https://www.ymcacampsloper.org/",
+        "Used the 2026 season: the 2027 brochure is due in December 2026."
+      ],
+      "for_andrew": [
+        "Southington is not in cities.py, so this draft fails validation until it is added. Southington is its own town.",
+        "Grades recorded are the Traditional Camp range (K to 9th). The camp also runs Wanderers for Pre-K and a 4 week CIT program for 10th graders. Widen the range?"
+      ]
+    }
+  }
+}

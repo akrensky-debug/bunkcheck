@@ -1,0 +1,149 @@
+{
+  "slug": "nature-day-camp-harpswell",
+  "name": "Nature Day Camp",
+  "operator_name": "Harpswell Heritage Land Trust",
+  "website_url": "https://hhltmaine.org/nature-day-camp/",
+  "registration_url": "https://portal.campnetwork.com/Register/Register.php?camp_id=399045",
+  "email": "info@hhltmaine.org",
+  "phone": "207-721-1121",
+  "city": "Harpswell",
+  "state": "ME",
+  "zip": "04079",
+  "camp_type": "day",
+  "age_min": 6,
+  "age_max": 12,
+  "primary_categories": [
+    "nature"
+  ],
+  "secondary_categories": [
+    "outdoor"
+  ],
+  "description_short": "Outdoor nature day camp run by the Harpswell Heritage Land Trust, using its preserves as the classroom. Two age groups, 6 to 8 and 9 to 12, spend weekly themed sessions exploring tide pools, salt marshes, shores and forests through games, crafts and hands on science.",
+  "activities": [
+    "tide pools",
+    "salt marsh exploration",
+    "hiking",
+    "nature crafts",
+    "science discovery",
+    "outdoor games"
+  ],
+  "indoor_outdoor": "outdoor",
+  "price_min": 275,
+  "price_max": 300,
+  "price_per": "week",
+  "extended_care": true,
+  "financial_aid": true,
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Week 1: Nature Detectives",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-03",
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 2: Sea-to-Forest Fun",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 3: Forest Friends",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 4: Sea Coast Explorers",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 5: Harpswell Hikers",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 6: Water World Adventures",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://hhltmaine.org/nature-day-camp/",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "age_min",
+        "age_max",
+        "primary_categories",
+        "secondary_categories",
+        "description_short",
+        "activities",
+        "indoor_outdoor",
+        "price_min",
+        "price_max",
+        "price_per",
+        "extended_care",
+        "financial_aid",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Nature Day Camp 2026. Ages 6 to 8: 9 am to 2 pm, $275 a week, optional aftercare 2 to 3 pm for $75 a week. Ages 9 to 12: 9 am to 3 pm, $300 a week. Land trust members get $15 off; prices shown are the non member rates. Drop off at Harpswell Community School (weeks 1, 3, 5, 6) or Bowdoin's Schiller Coastal Studies Center (weeks 2 and 4). Lottery with priority for year round Harpswell residents, then open registration. Scholarships case by case. ZIP is the land trust office at 153 Harpswell Neck Road."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://hhltmaine.org/nature-day-camp/",
+      "kind": "html",
+      "title": "Nature Day Camp - Harpswell Heritage Land Trust"
+    },
+    "warnings": [
+      "Drop off site changes by week, so no single street address is given; the ZIP is the land trust office's.",
+      "Registration starts with a lottery that favors year round Harpswell residents."
+    ],
+    "unknowns": [
+      "street_address",
+      "price_per_week",
+      "grade_min",
+      "grade_max",
+      "gender_policy",
+      "transportation",
+      "meals_included",
+      "refund_policy_summary",
+      "special_needs_notes",
+      "swim_waterfront_notes",
+      "aca_accredited"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "city 'Harpswell', ME is not in cities.py"
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://hhltmaine.org/nature-day-camp/",
+      "changes": [
+        "New camp, researched from https://hhltmaine.org/nature-day-camp/",
+        "Used the 2026 season: six weeks June 29 to August 7, 2026; no 2027 page yet",
+        "Named it Nature Day Camp as the page does; slug uses that name and Harpswell"
+      ],
+      "for_andrew": [
+        "Harpswell, ME is not in cities.py, so the validator rejects the listing. Add Harpswell, or list it under Brunswick?"
+      ]
+    }
+  }
+}
