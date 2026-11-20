@@ -185,12 +185,13 @@ def fresh_limits() -> Iterator[None]:
     """Rate limits and spend tallies live in module state; start every test with none used."""
     from campfinder.agent import budget
     from campfinder.inquiries import service as inquiries
-    from campfinder.routers import agent
+    from campfinder.routers import agent, search
     from campfinder.services import claims
 
     def clear() -> None:
         for window in (agent.guest_families_hourly, agent.guest_families_daily, agent.chats_per_ip,
-                       agent.chats_per_family, claims.ip_hourly, claims.email_daily, claims.camp_daily):
+                       agent.chats_per_family, claims.ip_hourly, claims.email_daily, claims.camp_daily,
+                       search.nearest_per_ip):
             window.clear()
         budget._guest_ip_spend.clear()
         budget._global_logged.clear()

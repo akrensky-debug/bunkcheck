@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useState, Suspense } from 'react'
+import { useEffect, useRef, useState, Suspense } from 'react'
 import { useSearchParams, useRouter } from 'next/navigation'
 import { nearestPlace, searchCamps, type CampSearchResult } from '@/lib/api'
 import { Events } from '@/lib/analytics'
@@ -26,6 +26,9 @@ function SearchResults() {
   // Search form state (for inline re-search)
   const [loc, setLoc]       = useState(location)
   const [ageVal, setAgeVal] = useState(age?.toString() ?? '')
+  // What's in the Where box right now, so a slow lookup never replaces a town typed meanwhile.
+  const typed = useRef(location)
+  useEffect(() => { typed.current = loc }, [loc])
 
   useEffect(() => {
     if (!location) { setLoading(false); return }
@@ -62,6 +65,8 @@ function SearchResults() {
   // Near me: the browser asks permission, we turn the position into the nearest town we know and
   // search that. The position itself goes no further than that one lookup.
   function nearMe() {
+    if (locating) return
+    const before = typed.current
     setLocError('')
     if (!('geolocation' in navigator)) { setLocError('This browser can\u2019t share your location. Type your town instead.'); return }
     setLocating(true)
@@ -69,6 +74,7 @@ function SearchResults() {
       async pos => {
         try {
           const town = await nearestPlace(pos.coords.latitude, pos.coords.longitude)
+          if (typed.current !== before) return  // they typed a town while we looked: theirs wins
           setLoc(town)
           go(town)
         } catch (e) {
