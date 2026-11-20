@@ -28,6 +28,15 @@ all rendered at `/ui` (not linked from the site, `noindex`).
 - **The header** is a translucent material whose hairline fades in once content scrolls under
   it (`.chrome`). Reduced transparency and increased contrast make it solid; increased contrast
   also strengthens every hairline.
+- **Full height is `dvh`.** `min-h-dvh` or `h-dvh`, never `h-screen` or `100vh`, which run under
+  a phone's browser bar and hide the bottom of the page. check:ui flags both.
+- **Never block paste.** Parents paste policy numbers, phone numbers and sign-in codes.
+  check:ui flags `onPaste`; a handler that only reads what was pasted carries a
+  `ui-check-ignore` comment saying so.
+- **Ask before anything a parent can't take back.** Deleting, leaving a family, removing a
+  person, resetting a link: the question says what is lost, then the action runs. A removal
+  that one tap puts back doesn't need the question.
+- **Numbers in a column take `tabular-nums`**, so prices, dates and counts line up row to row.
 - `npm run check:ui` enforces the mechanical parts in CI. A line that must break a rule (for
   example a literal color in Next metadata) ends with a `ui-check-ignore` comment saying why.
 

@@ -96,6 +96,9 @@ shared test fake, `leads` and the Pro columns dropped (migration 0013).
 - `npm run check:ui` (also in CI) fails on hex colors, arbitrary values, emoji and uppercase
   labels outside `components/ui`. Every primitive renders at `/ui`; rules in
   `components/ui/README.md`. `/kit` is the family info kit, not the UI kit.
+- Repo skills in `.claude/skills`: `apple-design`; `improve-ui`, a read-only audit of one page
+  against the kit's own rules; `fixing-metadata`, for titles, descriptions and share previews
+  on a new page. The last two are pinned copies from `ui-skills` 0.2.4, with our notes on top.
 
 ## Schema
 

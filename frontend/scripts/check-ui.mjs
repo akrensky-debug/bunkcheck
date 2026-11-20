@@ -23,6 +23,8 @@ const RULES = [
   { name: 'uppercase or tracked label (use sentence case)', re: /\b(?:uppercase|tracking-(?:wide|wider|widest))\b/g },
   { name: 'emoji or symbol glyph (use <Icon> or words)', re: /[\p{Extended_Pictographic}✓✔✗✘←-↙›‹]/gu },
   { name: 'retired motion class', re: /\b(?:btn-lift|card-interactive|data-reveal|animate-rise-in|check-draw|nav-link)\b/g },
+  { name: 'viewport height that runs under a phone browser bar (use h-dvh or min-h-dvh)', re: /\b(?:min-|max-)?h-screen\b|\b100vh\b/g },
+  { name: 'paste handler (never block paste; if it only reads the paste, add ui-check-ignore and say so)', re: /\bonPaste\b/g },
   // Status is a stoplight with a shape and a word, never a bare color. /ui shows the swatches.
   // Form errors keep text-error; success and warning messages use Notice.
   {
