@@ -177,13 +177,13 @@ through `family_access` or `authorize_family`.
 Fixed since this doc was written: camp claims were self-verified and could send our email to any
 address without limit. See "Claims" in [`docs/owner-confirmation.md`](owner-confirmation.md).
 
-1. **No security headers on the site beyond HSTS.** The live site sends
-   `strict-transport-security: max-age=63072000` (Vercel's default) and nothing else. Missing:
-   `Content-Security-Policy` with `frame-ancestors 'none'` (the share, join and confirm pages can
-   be framed for clickjacking), `Referrer-Policy: no-referrer` on the pages whose URL holds a token
-   (`/share/[token]`, `/join/[token]`, `/inquiries/[token]`, `/alerts/[token]`), and
-   `X-Content-Type-Options: nosniff`. Fix: a `headers()` block in `frontend/next.config.js`,
-   tested in a browser before it ships, because a strict CSP can break Supabase sign-in.
+1. **The site has no script policy.** Since 20 November 2026 `frontend/next.config.js` sends
+   `Content-Security-Policy: frame-ancestors 'none'` and `X-Frame-Options: DENY` (no other site
+   can frame our pages), `X-Content-Type-Options: nosniff`, and `Referrer-Policy`:
+   `strict-origin-when-cross-origin` everywhere and `no-referrer` plus `X-Robots-Tag: noindex` on
+   the pages whose address holds a token (`/share`, `/join`, `/inquiries`, `/alerts`, `/owners`).
+   Still missing: the rest of a Content-Security-Policy (`script-src`, `connect-src` and so on).
+   That part can break Supabase sign-in, so it needs its own change, tested in a browser.
 2. **Open forms with no limit.** `/submissions` and `/events` take anonymous writes without a cap,
    and `/events` stores any JSON at any size. Fix: per-IP limits and a size cap on `properties`.
 3. **Sign-up farms.** A signed-in family gets five times a guest's allowance, so scripted sign-ups
