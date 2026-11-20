@@ -65,3 +65,20 @@ export function Divider({ className }: { className?: string }) {
 export function Surface({ padded = true, className, children, ...rest }: { padded?: boolean } & HTMLAttributes<HTMLDivElement>) {
   return <div className={cx('rounded-lg bg-surface', padded && 'p-5', className)} {...rest}>{children}</div>
 }
+
+/**
+ * A full-width band of color behind one section of a long page, so the background changes only
+ * when the page's job changes. Three tones, darkest for the most weight:
+ * - `tint`: show the product (the example summer).
+ * - `ink`: the promises, the one place for real weight. Text on it is light.
+ * Paper (no band) is everything else. Two bands never sit side by side with the same tone.
+ * It breaks out of the narrow column it's placed in and puts its content back on that column,
+ * so text still lines up with the sections above and below. Page sides are clipped (globals.css).
+ */
+export function Band({ tone, children, className }: { tone: 'tint' | 'ink'; children: ReactNode; className?: string }) {
+  return (
+    <div className={cx('mx-[calc(50%-50vw)] px-4 py-14 sm:px-6 sm:py-20', tone === 'tint' ? 'bg-tint' : 'bg-ink text-accent-ink', className)}>
+      <div className="mx-auto max-w-narrow">{children}</div>
+    </div>
+  )
+}
