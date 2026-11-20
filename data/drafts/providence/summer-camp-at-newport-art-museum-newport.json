@@ -1,0 +1,119 @@
+{
+  "slug": "summer-camp-at-newport-art-museum-newport",
+  "name": "Summer Camp at Newport Art Museum",
+  "operator_name": "Newport Art Museum",
+  "website_url": "https://newportartmuseum.org/classes/summer-camp-at-newport-art-museum/",
+  "email": "mhickey@newportartmuseum.org",
+  "phone": "401-619-7983",
+  "street_address": "26 Liberty Street (Coleman Center for Creative Studies)",
+  "city": "Newport",
+  "state": "RI",
+  "zip": "02840",
+  "camp_type": "specialty",
+  "primary_categories": [
+    "arts"
+  ],
+  "activities": [
+    "artmaking",
+    "gallery visits",
+    "creative games",
+    "guided discussions",
+    "weekly camper art show"
+  ],
+  "description_short": "Weekly art camps at the Newport Art Museum's school on Liberty Street. Each week has a theme drawn from the museum's exhibitions and collection, with hands-on projects, gallery visits and games, and ends with a small Friday show of camper work.",
+  "financial_aid": true,
+  "indoor_outdoor": "both",
+  "extended_care": false,
+  "meals_included": false,
+  "special_needs_notes": "Families needing accommodations should contact the Director of Museum Education at registration, ideally two weeks ahead. Campers must be fully potty trained. Staff cannot give medication.",
+  "refund_policy_summary": "Refund up to two weeks before the camp starts, less a $25 processing fee. No refunds for missed days or for children removed for behavior.",
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Summer 2027 (10 weekly camps, Monday to Friday 9am to 2pm)",
+      "start_date": "2027-06-14",
+      "end_date": "2027-08-20",
+      "price": null,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://newportartmuseum.org/classes/summer-camp-at-newport-art-museum/",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "description_short",
+        "financial_aid",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Camp page: June 14 to August 20, 2027, 10 weeks, Monday to Friday 9am to 2pm; registration opens January 13, 2027 at 5:30pm; held at the Museum School, Coleman Center, 26 Liberty Street; need-based scholarships; Museum School phone and contact. No ages or tuition posted yet for 2027"
+    },
+    {
+      "url": "https://pub-f2d8c5d7792541cd93b46421e64ec523.r2.dev/wp-content/uploads/2025/05/Summer-Camp-FAQ.pdf",
+      "checked": "2026-11-20",
+      "fields": [
+        "indoor_outdoor",
+        "extended_care",
+        "meals_included",
+        "special_needs_notes"
+      ],
+      "note": "Researched by Claude from this page. Camp FAQ linked from the 2027 camp page (file dated 2025): no before or after care, bring lunch and two snacks, some outdoor time and plein air painting, members get 10% off"
+    },
+    {
+      "url": "https://pub-f2d8c5d7792541cd93b46421e64ec523.r2.dev/wp-content/uploads/2025/05/Summer-Camp-Policies-and-Procedures.pdf",
+      "checked": "2026-11-20",
+      "fields": [
+        "refund_policy_summary"
+      ],
+      "note": "Researched by Claude from this page. Summer camp policies linked from the 2027 camp page (file dated 2025)"
+    }
+  ],
+  "review": {
+    "status": "ready",
+    "source": {
+      "url": "https://newportartmuseum.org/classes/summer-camp-at-newport-art-museum/",
+      "kind": "html",
+      "title": "Summer Camp at Newport Art Museum - Newport Art Museum"
+    },
+    "warnings": [
+      "2027 ages and tuition are not posted yet. The 2026 camps were split by age (4 to 6, 7 to 9, 10 to 12); left out rather than carried over",
+      "FAQ and policies PDFs are dated 2025 but are the ones linked from the 2027 page"
+    ],
+    "unknowns": [
+      "age_min",
+      "age_max",
+      "price_per_week",
+      "price_min",
+      "price_max",
+      "price_per",
+      "registration_url",
+      "transportation",
+      "weekly themes and dates for 2027"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://newportartmuseum.org/classes/summer-camp-at-newport-art-museum/",
+      "changes": [
+        "Found the current page at https://newportartmuseum.org/classes/summer-camp-at-newport-art-museum/ after https://newportartmuseum.org/education/classes/?category=camps/ failed (it is a list page and names no single camp)",
+        "Used 2027: the page posts June 14 to August 20, 2027 and says registration opens January 13, 2027",
+        "Recorded the 2027 summer as one session span because the page gives the 10 week span but not the weekly themes or dates"
+      ],
+      "for_andrew": []
+    }
+  }
+}
