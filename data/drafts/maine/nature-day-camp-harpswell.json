@@ -105,7 +105,7 @@
     }
   ],
   "review": {
-    "status": "needs_andrew",
+    "status": "ready",
     "source": {
       "url": "https://hhltmaine.org/nature-day-camp/",
       "kind": "html",
@@ -129,9 +129,7 @@
       "aca_accredited"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Harpswell', ME is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-20",
@@ -139,11 +137,10 @@
       "changes": [
         "New camp, researched from https://hhltmaine.org/nature-day-camp/",
         "Used the 2026 season: six weeks June 29 to August 7, 2026; no 2027 page yet",
-        "Named it Nature Day Camp as the page does; slug uses that name and Harpswell"
+        "Named it Nature Day Camp as the page does; slug uses that name and Harpswell",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
-      "for_andrew": [
-        "Harpswell, ME is not in cities.py, so the validator rejects the listing. Add Harpswell, or list it under Brunswick?"
-      ]
+      "for_andrew": []
     }
   }
 }

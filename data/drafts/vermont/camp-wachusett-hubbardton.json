@@ -161,18 +161,16 @@
       "Whether single week sessions exist (the page has Week 1 to 4 tabs but the table lists only 2, 3 and 4 week sessions)"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Hubbardton' is not in campfinder/seed/cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-20",
       "page_checked": "https://www.campwachusett.com/dates-rates",
       "changes": [
-        "New camp, researched from https://www.campwachusett.com/dates-rates"
+        "New camp, researched from https://www.campwachusett.com/dates-rates",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
-        "Neither Hubbardton (where the FAQ says camp is) nor Brandon (the mailing address) is in campfinder/seed/cities.py, so the draft fails validation. Add one?",
         "The page shows Week 1 to Week 4 tabs but no single week prices. Recorded only the 2, 3 and 4 week sessions."
       ]
     }

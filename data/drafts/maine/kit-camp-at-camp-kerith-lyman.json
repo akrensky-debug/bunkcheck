@@ -151,7 +151,7 @@
     }
   ],
   "review": {
-    "status": "needs_andrew",
+    "status": "ready",
     "source": {
       "url": "https://www.kerith.camp/daycamp",
       "kind": "html",
@@ -172,9 +172,7 @@
       "indoor_outdoor"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Lyman', ME is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-20",
@@ -182,11 +180,10 @@
       "changes": [
         "New camp, researched from https://www.kerith.camp/daycamp",
         "Used the 2027 season: ten weeks June 14 to August 20, 2027",
-        "Named it Kit Camp at Camp Kerith, as the page does; the overnight camp at the same site is a separate program not drafted here"
+        "Named it Kit Camp at Camp Kerith, as the page does; the overnight camp at the same site is a separate program not drafted here",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
-      "for_andrew": [
-        "Lyman, ME is not in cities.py, so the validator rejects the listing. Add Lyman (camp at 67 Cedarbrook Way, Lyman 04002), or list it under a nearby town?"
-      ]
+      "for_andrew": []
     }
   }
 }

@@ -162,7 +162,7 @@
     }
   ],
   "review": {
-    "status": "needs_andrew",
+    "status": "ready",
     "source": {
       "url": "https://www.campkinderland.org/sessions",
       "kind": "html",
@@ -178,19 +178,16 @@
       "registration_url"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Tolland', MA is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-20",
       "page_checked": "https://www.campkinderland.org/sessions",
       "changes": [
-        "New camp, researched from https://www.campkinderland.org/sessions"
+        "New camp, researched from https://www.campkinderland.org/sessions",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
-      "for_andrew": [
-        "Tolland, MA is not in campfinder/seed/cities.py, so this draft fails validation. Tolland is its own town (not a village of another town), and the camp's mailing address is in Easthampton, about 40 miles away. Add Tolland to cities.py, or list the camp under a nearby town that is in the table (Otis, a neighboring town, is in the table)?"
-      ]
+      "for_andrew": []
     }
   }
 }

@@ -121,19 +121,17 @@
       "ACA accreditation"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Waterbury', CT is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-20",
       "page_checked": "https://www.mattmuseum.org/camp-matt/",
       "changes": [
         "New camp, researched from https://www.mattmuseum.org/camp-matt/",
-        "Used the 2026 season: the page says to check back for 2027. Week 1 runs Monday to Thursday (June 29 to July 2) but the page gives only one weekly price."
+        "Used the 2026 season: the page says to check back for 2027. Week 1 runs Monday to Thursday (June 29 to July 2) but the page gives only one weekly price.",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
-        "Waterbury is not in cities.py, so this draft fails validation until it is added. Waterbury is its own city, so there is no parent town to use instead.",
         "The page never says what ages the camp serves (the campership note only says a child must turn 5 by June 1). Publish without ages, or hold until the camp is asked?"
       ]
     }

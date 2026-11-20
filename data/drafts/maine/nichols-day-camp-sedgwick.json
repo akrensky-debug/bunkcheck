@@ -108,19 +108,17 @@
       "indoor_outdoor"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Sedgwick', ME is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-20",
       "page_checked": "https://www.nicholsdaycamps.org/",
       "changes": [
         "New camp, researched from https://www.nicholsdaycamps.org/",
-        "Used the 2026 season; no session dates or prices could be read"
+        "Used the 2026 season; no session dates or prices could be read",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
-        "Sedgwick, ME is not in cities.py (the off season office is in Blue Hill, also missing), so the validator rejects the listing. Add Sedgwick, or list it under Brooksville or Brooklin nearby?",
         "There are no dates or prices to show. Keep it as a thin listing, or wait for the 2027 page?"
       ]
     }

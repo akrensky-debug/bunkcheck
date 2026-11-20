@@ -128,18 +128,17 @@
     ],
     "low_confidence": [],
     "errors": [
-      "missing required zip",
-      "city 'Stratham', NH is not in cities.py"
+      "missing required zip"
     ],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-20",
       "page_checked": "https://www.strathamnh.gov/business_detail_T5_R35.php",
       "changes": [
-        "New camp, researched from https://www.strathamnh.gov/business_detail_T5_R35.php"
+        "New camp, researched from https://www.strathamnh.gov/business_detail_T5_R35.php",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
-        "Stratham, NH is not in campfinder/seed/cities.py and the pages read give no zip, so this draft fails validation twice. Add Stratham to cities.py and the school's zip?",
         "Residents only camp with no posted price. List it, or skip residents only town camps?"
       ]
     }

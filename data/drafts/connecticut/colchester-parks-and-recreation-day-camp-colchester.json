@@ -148,19 +148,17 @@
       "ACA accreditation"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Colchester', CT is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-20",
       "page_checked": "https://www.colchesterct.gov/summer-camps",
       "changes": [
         "New camp, researched from https://www.colchesterct.gov/summer-camps",
-        "Used the 2026 season: no 2027 information is posted."
+        "Used the 2026 season: no 2027 information is posted.",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
-        "Colchester is not in cities.py, so this draft fails validation until it is added. Colchester is its own town.",
         "Zip 06415 is the Town Hall zip from the page footer, not stated for the RecPlex itself. Colchester has a single zip, so I used it. OK?"
       ]
     }

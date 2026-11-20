@@ -152,7 +152,7 @@
     }
   ],
   "review": {
-    "status": "needs_andrew",
+    "status": "ready",
     "source": {
       "url": "https://www.coventry-ct.gov/616/Camp-Wangumbaug",
       "kind": "html",
@@ -165,20 +165,17 @@
       "ACA accreditation"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Coventry', CT is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-20",
       "page_checked": "https://www.coventry-ct.gov/616/Camp-Wangumbaug",
       "changes": [
         "New camp, researched from https://www.coventry-ct.gov/616/Camp-Wangumbaug",
-        "Used the 2026 season: no 2027 information is posted."
+        "Used the 2026 season: no 2027 information is posted.",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
-      "for_andrew": [
-        "Coventry is not in cities.py, so this draft fails validation until it is added. Coventry is its own town."
-      ]
+      "for_andrew": []
     }
   }
 }

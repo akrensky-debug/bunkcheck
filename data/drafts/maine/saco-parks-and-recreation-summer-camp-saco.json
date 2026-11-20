@@ -151,18 +151,16 @@
       "ACA accreditation"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Saco' is not in campfinder/seed/cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-20",
       "page_checked": "https://sacome.myrec.com/documents/camp_guide__summer_2026.pdf",
       "changes": [
-        "New camp, researched from https://sacome.myrec.com/documents/camp_guide__summer_2026.pdf"
+        "New camp, researched from https://sacome.myrec.com/documents/camp_guide__summer_2026.pdf",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
-        "Saco is not in campfinder/seed/cities.py, so the draft fails validation. Add Saco to cities.py?",
         "House rule pending: weekly price is the non-resident $275; resident $250 is in notes.",
         "Meals: the guide says the school department's free summer breakfast and lunch program is open to campers. Recorded as meals_included true; is that right for an optional free program?"
       ]

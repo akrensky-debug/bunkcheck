@@ -134,18 +134,16 @@
       "ACA accreditation"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Waterbury' is not in campfinder/seed/cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-20",
       "page_checked": "https://waterburyvt.myrec.com/forms/6021_summer_camp_parent_handbook_2026.pdf",
       "changes": [
-        "New camp, researched from https://waterburyvt.myrec.com/forms/6021_summer_camp_parent_handbook_2026.pdf"
+        "New camp, researched from https://waterburyvt.myrec.com/forms/6021_summer_camp_parent_handbook_2026.pdf",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
-        "Waterbury, VT is not in campfinder/seed/cities.py, so the draft fails validation. Add Waterbury?",
         "The handbook has no ages, grades or prices, and no other 2026 camp page on waterburyvt.myrec.com gives them. Keep this thin listing?"
       ]
     }

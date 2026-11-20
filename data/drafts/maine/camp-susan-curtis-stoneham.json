@@ -104,19 +104,17 @@
       "indoor_outdoor"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Stoneham', ME is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-20",
       "page_checked": "https://susancurtis.org/campers-registration/",
       "changes": [
         "New camp, researched from https://susancurtis.org/campers-registration/",
-        "Used the 2026 brochure; no 2027 information is posted and no session dates are public"
+        "Used the 2026 brochure; no 2027 information is posted and no session dates are public",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
-        "Stoneham, ME is not in cities.py, so the validator rejects the listing. Add Stoneham (the camp is at 236 Allen Road, Stoneham 04231), or list it under a nearby town?",
         "This camp is free and takes new campers only by school referral, and its 10 day session dates are not public. List it anyway?"
       ]
     }

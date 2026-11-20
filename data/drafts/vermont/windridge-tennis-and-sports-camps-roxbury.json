@@ -121,18 +121,16 @@
       "Gender policy"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Roxbury' is not in campfinder/seed/cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-20",
       "page_checked": "https://windridgecamps.com/dates-and-rates",
       "changes": [
-        "New camp, researched from https://windridgecamps.com/dates-and-rates"
+        "New camp, researched from https://windridgecamps.com/dates-and-rates",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
-        "Roxbury, VT is not in campfinder/seed/cities.py, so the draft fails validation. Add Roxbury?",
         "Checks go to a Stowe PO box, but the camp address in the footer is 1215 Roxbury Road, Roxbury. Used Roxbury.",
         "Discounts listed: returning families who enrolled by October 31, 2026 pay 2026 rates; $1,000 off two sessions; $500 sibling; $500 new Vermont families. Not recorded as financial aid."
       ]

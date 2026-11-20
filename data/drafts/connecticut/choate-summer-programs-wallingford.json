@@ -119,19 +119,17 @@
       "Refund policy"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Wallingford', CT is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-20",
       "page_checked": "https://www.choate.edu/summer",
       "changes": [
         "New camp, researched from https://www.choate.edu/summer",
-        "Used the 2027 season: dates and fees are posted. Session prices are left blank because each session length has several programs at different prices."
+        "Used the 2027 season: dates and fees are posted. Session prices are left blank because each session length has several programs at different prices.",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
-        "Wallingford is not in cities.py, so this draft fails validation until it is added. Wallingford is its own town.",
         "This is an academic summer school with boarding and day options rather than a traditional camp. I set camp_type to specialty. List it, and if so as specialty or sleepaway?",
         "It is one listing for all Choate summer programs on the one campus; ages and prices vary widely by program (grades 1 to 12, $1,200 to $12,820)."
       ]

@@ -377,18 +377,16 @@
       "ACA accreditation (Kroka states AEE accreditation instead)"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Marlow', NH is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-20",
       "page_checked": "https://kroka.org/programs/summer/",
       "changes": [
-        "New camp, researched from https://kroka.org/programs/summer/"
+        "New camp, researched from https://kroka.org/programs/summer/",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
-        "Marlow, NH is not in campfinder/seed/cities.py, so this draft fails validation. Marlow is its own town. Add it to cities.py?",
         "Kroka runs 38 overnight programs, each with its own dates, ages and often its own expedition area. The draft is one listing with every program as a session. OK, or split some out?",
         "Tuition is income based ($790 to $7,850). Is a price range with no per session price acceptable for publishing?",
         "Session data comes from Kroka's linseed.works registration page, which the camp links to as its schedule. OK to cite?"

@@ -98,18 +98,16 @@
       "ACA accreditation"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Barre' is not in campfinder/seed/cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-20",
       "page_checked": "https://barreoperahouse.org/theatre-camps.html",
       "changes": [
-        "New camp, researched from https://barreoperahouse.org/theatre-camps.html"
+        "New camp, researched from https://barreoperahouse.org/theatre-camps.html",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
-        "Barre is not in campfinder/seed/cities.py, so the draft fails validation. Add Barre?",
         "2027 dates are posted but no prices or registration yet. List now, or wait for prices?"
       ]
     }

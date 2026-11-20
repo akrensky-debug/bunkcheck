@@ -151,8 +151,7 @@
     ],
     "low_confidence": [],
     "errors": [
-      "missing required zip",
-      "city 'Mansfield', CT is not in cities.py"
+      "missing required zip"
     ],
     "first_pass": {
       "by": "Claude",
@@ -160,10 +159,10 @@
       "page_checked": "https://www.mansfieldct.gov/2424/Camp-Mansfield",
       "changes": [
         "New camp, researched from https://www.mansfieldct.gov/2424/Camp-Mansfield",
-        "Used the 2026 season: no 2027 information is posted. The page says the start date depends on the last day of Mansfield schools."
+        "Used the 2026 season: no 2027 information is posted. The page says the start date depends on the last day of Mansfield schools.",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
-        "Mansfield is not in cities.py, so this draft fails validation until it is added (the camp is in Mansfield; its post office name is Storrs, also not in cities.py).",
         "The town's page names Mansfield Middle School but gives no street address or zip, so the draft also fails on zip.",
         "The page says ages 4 and a half to 15, and grades K to 9 elsewhere (with CITs above that). I recorded grades K to 9 only."
       ]

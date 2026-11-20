@@ -133,18 +133,16 @@
       "registration_url"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'New London', NH is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-20",
       "page_checked": "https://www.nlbarn.org/camps",
       "changes": [
-        "New camp, researched from https://www.nlbarn.org/camps"
+        "New camp, researched from https://www.nlbarn.org/camps",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
-        "New London, NH is not in campfinder/seed/cities.py, so this draft fails validation. New London is its own town. Add it to cities.py?",
         "No prices on the camp's page (only on OvationTix ticket pages). Publish without prices, or read the OvationTix pages?"
       ]
     }

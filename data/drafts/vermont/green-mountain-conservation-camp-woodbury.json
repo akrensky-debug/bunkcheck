@@ -206,18 +206,16 @@
       "ACA accreditation"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Woodbury' is not in campfinder/seed/cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-20",
       "page_checked": "https://www.vtfishandwildlife.com/learn-more/gmcc",
       "changes": [
-        "New camp, researched from https://www.vtfishandwildlife.com/learn-more/gmcc"
+        "New camp, researched from https://www.vtfishandwildlife.com/learn-more/gmcc",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
-        "Two camps (Buck Lake in Woodbury, Kehoe in Castleton) with their own dates and places but the same ages, so per the brief one listing. Neither Woodbury nor Castleton is in campfinder/seed/cities.py, so the draft fails validation. Add them, or split into two listings once they are?",
         "Weeks are single sex (boys weeks and girls weeks); gender_policy left blank."
       ]
     }

@@ -127,19 +127,17 @@
       "Golf program dates and price"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Watertown', CT is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-20",
       "page_checked": "https://www.taftschool.org/summer",
       "changes": [
         "New camp, researched from https://www.taftschool.org/summer",
-        "Used the 2027 season: dates and tuition are posted. The golf program is named but its dates and price were not checked, so it is not in sessions."
+        "Used the 2027 season: dates and tuition are posted. The golf program is named but its dates and price were not checked, so it is not in sessions.",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
-        "Watertown is not in cities.py, so this draft fails validation until it is added. Watertown is its own town.",
         "This is an academic summer school, mostly boarding with a day option for the four week programs. I set camp_type to specialty with an academic category. List it, and as specialty or sleepaway?"
       ]
     }

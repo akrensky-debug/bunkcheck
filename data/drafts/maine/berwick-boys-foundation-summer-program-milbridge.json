@@ -109,8 +109,7 @@
     ],
     "low_confidence": [],
     "errors": [
-      "missing required zip",
-      "city 'Milbridge', ME is not in cities.py"
+      "missing required zip"
     ],
     "first_pass": {
       "by": "Claude",
@@ -118,10 +117,10 @@
       "page_checked": "https://berwick.org/wp1/programs/summer-program/",
       "changes": [
         "New camp, researched from https://berwick.org/wp1/programs/summer-program/",
-        "Used the 2026 handbook (latest posted); no 2027 information yet"
+        "Used the 2026 handbook (latest posted); no 2027 information yet",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
-        "The validator rejects this draft: Milbridge (and Harrington) are not in cities.py, and no page gives a ZIP for the camp. Add a town and supply a ZIP from the owner, or drop?",
         "Admission is selective (interview, winter program first for local boys) and the age range runs to 21. Keep as a listing?"
       ]
     }

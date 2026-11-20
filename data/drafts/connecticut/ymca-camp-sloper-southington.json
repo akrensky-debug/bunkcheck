@@ -165,19 +165,17 @@
       "Refund policy"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Southington', CT is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-20",
       "page_checked": "https://www.ymcacampsloper.org/",
       "changes": [
         "New camp, researched from https://www.ymcacampsloper.org/",
-        "Used the 2026 season: the 2027 brochure is due in December 2026."
+        "Used the 2026 season: the 2027 brochure is due in December 2026.",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
-        "Southington is not in cities.py, so this draft fails validation until it is added. Southington is its own town.",
         "Grades recorded are the Traditional Camp range (K to 9th). The camp also runs Wanderers for Pre-K and a 4 week CIT program for 10th graders. Widen the range?"
       ]
     }

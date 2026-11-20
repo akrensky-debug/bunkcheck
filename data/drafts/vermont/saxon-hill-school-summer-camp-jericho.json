@@ -139,18 +139,16 @@
       "ACA accreditation"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Jericho' is not in campfinder/seed/cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-20",
       "page_checked": "https://saxonhillschool.org/summer-camp/",
       "changes": [
-        "New camp, researched from https://saxonhillschool.org/summer-camp/"
+        "New camp, researched from https://saxonhillschool.org/summer-camp/",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
-        "Jericho is not in campfinder/seed/cities.py, so the draft fails validation. Add Jericho?",
         "There is no camp the week of July 13 in the 2026 calendar (Week 4 is July 6 to 10, Week 5 is July 20 to 24)."
       ]
     }

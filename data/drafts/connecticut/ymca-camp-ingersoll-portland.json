@@ -165,8 +165,7 @@
     ],
     "low_confidence": [],
     "errors": [
-      "missing required zip",
-      "city 'Portland', CT is not in cities.py"
+      "missing required zip"
     ],
     "first_pass": {
       "by": "Claude",
@@ -174,10 +173,10 @@
       "page_checked": "https://www.campingersoll.org/",
       "changes": [
         "New camp, researched from https://www.campingersoll.org/",
-        "Used the 2027 season: dates are posted. Left prices out because only 2026 prices are posted."
+        "Used the 2027 season: dates are posted. Left prices out because only 2026 prices are posted.",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
-        "Portland is not in cities.py, so this draft fails validation until it is added. Portland is its own town.",
         "The site gives no zip for the camp at 94 Camp Ingersoll Road, Portland, only the Middletown mailing zip (06457). Zip is required, so the draft also fails on that. Use the Portland zip from a postal lookup?",
         "2027 dates are posted but 2027 prices are TBD, so the listing has dates and no prices. Publish now or wait for prices?"
       ]

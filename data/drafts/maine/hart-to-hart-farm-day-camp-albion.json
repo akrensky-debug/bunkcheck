@@ -140,7 +140,7 @@
     }
   ],
   "review": {
-    "status": "needs_andrew",
+    "status": "ready",
     "source": {
       "url": "https://hart2hartfarm.org/seasonal-farm-camps/",
       "kind": "html",
@@ -164,20 +164,17 @@
       "indoor_outdoor"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Albion', ME is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-20",
       "page_checked": "https://hart2hartfarm.org/seasonal-farm-camps/",
       "changes": [
         "New camp, researched from https://hart2hartfarm.org/seasonal-farm-camps/",
-        "Used the 2027 season: nine weeks June 14 to August 13, 2027"
+        "Used the 2027 season: nine weeks June 14 to August 13, 2027",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
-      "for_andrew": [
-        "Albion, ME is not in cities.py, so the validator rejects the listing. Add Albion (16 Duck Pond Lane, Albion 04910), or list it under a nearby town?"
-      ]
+      "for_andrew": []
     }
   }
 }

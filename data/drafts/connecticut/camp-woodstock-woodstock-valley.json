@@ -6,7 +6,7 @@
   "registration_url": "https://campwoodstock.campbrainregistration.com/",
   "phone": "860-974-1336",
   "street_address": "42 Camp Road",
-  "city": "Woodstock Valley",
+  "city": "Woodstock",
   "state": "CT",
   "zip": "06282",
   "camp_type": "sleepaway",
@@ -199,16 +199,15 @@
       "Transportation"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Woodstock Valley', CT is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-20",
       "page_checked": "https://www.campwoodstock.org/",
       "changes": [
         "New camp, researched from https://www.campwoodstock.org/",
-        "Used the 2027 season: dates and prices are posted."
+        "Used the 2027 season: dates and prices are posted.",
+        "City set to Woodstock, the town that contains the village of Woodstock Valley named on the page."
       ],
       "for_andrew": [
         "Woodstock Valley is a village of Woodstock, and neither is in cities.py, so this draft fails validation until one is added.",

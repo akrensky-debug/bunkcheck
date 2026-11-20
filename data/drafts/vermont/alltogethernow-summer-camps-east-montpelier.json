@@ -142,7 +142,7 @@
     }
   ],
   "review": {
-    "status": "needs_andrew",
+    "status": "ready",
     "source": {
       "url": "https://www.alltogethernowvt.org/summer_camps.html",
       "kind": "html",
@@ -155,19 +155,16 @@
       "ACA accreditation"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'East Montpelier' is not in campfinder/seed/cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-20",
       "page_checked": "https://www.alltogethernowvt.org/summer_camps.html",
       "changes": [
-        "New camp, researched from https://www.alltogethernowvt.org/summer_camps.html"
+        "New camp, researched from https://www.alltogethernowvt.org/summer_camps.html",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
-      "for_andrew": [
-        "East Montpelier is not in campfinder/seed/cities.py, so the draft fails validation. Add it? (Montpelier is in the table but is a separate town.)"
-      ]
+      "for_andrew": []
     }
   }
 }

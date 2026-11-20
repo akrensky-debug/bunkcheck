@@ -81,18 +81,16 @@
         "quote": "children ages 7-13 to spend a week on the farm"
       }
     ],
-    "errors": [
-      "city 'St. Albans' is not in campfinder/seed/cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-20",
       "page_checked": "https://www.phloemflowers.com/CampsandClasses",
       "changes": [
-        "New camp, researched from https://www.phloemflowers.com/CampsandClasses"
+        "New camp, researched from https://www.phloemflowers.com/CampsandClasses",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
-        "St. Albans is not in campfinder/seed/cities.py, so the draft fails validation.",
         "Location conflict: the farm address is St. Albans, but the farm's December 2025 blog post calls it an outdoor camp in Swanton. Which is right?",
         "2026 was the first season and it was full. No dates or prices are posted. Keep this thin listing or wait for 2027?",
         "camp_type 'day' is inferred ('spend a week on the farm'); the site does not say day camp."

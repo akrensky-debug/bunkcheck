@@ -192,9 +192,7 @@
         "quote": "$825, $675, $580"
       }
     ],
-    "errors": [
-      "city 'West Gardiner', ME is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-20",
@@ -202,10 +200,10 @@
       "changes": [
         "New camp, researched from https://www.pilgrimlodge.org/",
         "Used the 2027 schedule; listed only youth sessions",
-        "Left operator_name empty: the pages show United Church of Christ and Maine Conference scholarships but do not name the operator outright"
+        "Left operator_name empty: the pages show United Church of Christ and Maine Conference scholarships but do not name the operator outright",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
-        "West Gardiner, ME is not in cities.py, so the validator rejects the listing. Add West Gardiner, or list it under a nearby town?",
         "Operator: the batch says Maine Conference UCC, and the scholarship page mentions 'the Maine Conference/Pilgrim Lodge', but no page names the operator outright. Fill it in?"
       ]
     }

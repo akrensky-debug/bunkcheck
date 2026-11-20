@@ -83,7 +83,7 @@
     }
   ],
   "review": {
-    "status": "needs_andrew",
+    "status": "ready",
     "source": {
       "url": "https://penobscotmarinemuseum.org/kids-camps/",
       "kind": "html",
@@ -106,9 +106,7 @@
       "indoor_outdoor"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Searsport', ME is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-20",
@@ -116,11 +114,10 @@
       "changes": [
         "New camp, researched from https://penobscotmarinemuseum.org/kids-camps/",
         "Used the 2027 season: two weeks July 5 to 16, 2027",
-        "Left registration_url empty: the page has two different Register forms and doesn't say which is for summer"
+        "Left registration_url empty: the page has two different Register forms and doesn't say which is for summer",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
-      "for_andrew": [
-        "Searsport, ME is not in cities.py, so the validator rejects the listing. Add Searsport, or list it under a nearby town?"
-      ]
+      "for_andrew": []
     }
   }
 }

@@ -164,7 +164,7 @@
     }
   ],
   "review": {
-    "status": "needs_andrew",
+    "status": "ready",
     "source": {
       "url": "https://bownh.gov/813/Bow-Rec-Day-Camp",
       "kind": "html",
@@ -183,19 +183,16 @@
       "swim details"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Bow', NH is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-20",
       "page_checked": "https://bownh.gov/813/Bow-Rec-Day-Camp",
       "changes": [
-        "New camp, researched from https://bownh.gov/813/Bow-Rec-Day-Camp"
+        "New camp, researched from https://bownh.gov/813/Bow-Rec-Day-Camp",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
-      "for_andrew": [
-        "Bow, NH is not in campfinder/seed/cities.py, so this draft fails validation. Bow is its own town (next to Concord, which is in the table). Add Bow to cities.py, or list it under Concord?"
-      ]
+      "for_andrew": []
     }
   }
 }

@@ -159,18 +159,16 @@
       "registration_url"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Canaan', NH is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-20",
       "page_checked": "https://www.cardigan.org/summer/tuition-financial-aid",
       "changes": [
-        "New camp, researched from https://www.cardigan.org/summer/tuition-financial-aid"
+        "New camp, researched from https://www.cardigan.org/summer/tuition-financial-aid",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
-        "Canaan, NH is not in campfinder/seed/cities.py, so this draft fails validation. Canaan is its own town. Add it to cities.py?",
         "This is an academic boarding summer session (classes in the morning, camp activities after). It is listed as a sleepaway camp with academic as the primary category. OK?"
       ]
     }

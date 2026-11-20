@@ -114,8 +114,7 @@
     ],
     "low_confidence": [],
     "errors": [
-      "missing required zip",
-      "city 'Manchester', CT is not in cities.py"
+      "missing required zip"
     ],
     "first_pass": {
       "by": "Claude",
@@ -123,10 +122,10 @@
       "page_checked": "https://www.manchesterct.gov/Government/Departments/Leisure-Family-and-Recreation-Department/Recreation-Divison/Recreation-Programs/Summer-Camp",
       "changes": [
         "New camp, researched from https://www.manchesterct.gov/Government/Departments/Leisure-Family-and-Recreation-Department/Recreation-Divison/Recreation-Programs/Summer-Camp",
-        "Used the 2026 season: no 2027 information is posted."
+        "Used the 2026 season: no 2027 information is posted.",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
-        "Manchester is not in cities.py, so this draft fails validation until it is added. Manchester is its own town.",
         "The town's pages give no zip for the camp sites (only 06045 for Town Hall), so the draft also fails on zip.",
         "Camp is open only to Manchester residents. There is no non-resident rate to record. List it anyway, with the residency rule in the description?",
         "Camp runs at five sites with the same dates; kept as one listing, placed at the Center Springs office at 39 Lodge Drive."

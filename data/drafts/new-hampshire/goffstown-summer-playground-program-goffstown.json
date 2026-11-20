@@ -143,18 +143,16 @@
       "phone"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Goffstown', NH is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-20",
       "page_checked": "https://goffstownnh.gov/449/Summer-Playground-Program",
       "changes": [
-        "New camp, researched from https://goffstownnh.gov/449/Summer-Playground-Program"
+        "New camp, researched from https://goffstownnh.gov/449/Summer-Playground-Program",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
-        "Goffstown, NH is not in campfinder/seed/cities.py, so this draft fails validation. Goffstown is its own town (next to Manchester). Add it to cities.py, or list it under Manchester?",
         "The only fee on the page is the 2025 rate ($95 a week). Leave price blank, or show the 2025 fee with a note?",
         "Residents only town camp. List it?"
       ]
