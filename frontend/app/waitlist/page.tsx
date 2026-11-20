@@ -19,19 +19,21 @@ export default function HandRaiserPage() {
           Planning summer shouldn&rsquo;t take{' '}
           <span className="marker whitespace-nowrap">all winter.</span>
         </h1>
+        {/* Andrew's copy, 19 November 2026. 457 active camps in the live database that day. */}
         <p className="mt-5 max-w-measure text-lead text-muted">
-          We&rsquo;re parents too. Bunkcheck does the legwork: more than 450 summer camps, with their schedules,
-          costs and details, in one place. You plan, book and schedule the whole summer in a fraction of the time.
-        </p>
-        <p className="mt-4 max-w-measure text-small text-muted">
-          <span className="font-semibold text-ink">Now in New England:</span> CT, MA, ME, NH, RI and VT, with more added every day. Most are around Boston and Providence.
+          Bunkcheck was created to take the legwork out of summer camp wrangling. More than 450 summer camps, with
+          their latest dates, costs and details, all in one place. Now you can plan, book and schedule the whole
+          summer in a fraction of the time.
         </p>
         <p className="mt-4 max-w-measure text-lead text-muted">
-          And registration seems to open at 10 a.m. on a Thursday, right when you&rsquo;re in a meeting. We&rsquo;ll
-          keep an eye on it for you.
+          And when registration opens at 10 a.m. on a Tuesday, we&rsquo;ll make sure to remind you.
+        </p>
+        <p className="mt-4 max-w-measure text-small text-muted">
+          <span className="font-semibold text-ink">Currently available in New England</span> (CT, MA, ME, NH, RI and VT)
+          and rolling out to other states soon.
         </p>
         <p className="mt-8 font-semibold text-ink">
-          We&rsquo;re opening one state at a time, so there&rsquo;s a line. Want us to save you a spot?
+          Want us to save you a spot for when your state opens?
         </p>
         <div className="mt-4">
           <HandRaiserForm />
