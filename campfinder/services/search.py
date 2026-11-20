@@ -137,7 +137,8 @@ async def search_camps(
     if sort == "best_match":
         results.sort(key=lambda c: (unpriced(c), -c["match_score"]))
     elif sort == "distance":
-        results.sort(key=lambda c: (unpriced(c), c.get("distance_miles") or 9999))
+        # A camp in the searched town is 0 miles away: test for None, not falsy, or it sorts last.
+        results.sort(key=lambda c: (unpriced(c), 9999 if c.get("distance_miles") is None else c["distance_miles"]))
     elif sort == "price":
         results.sort(key=lambda c: (weekly_price(c) is None, weekly_price(c) or 0))
 
