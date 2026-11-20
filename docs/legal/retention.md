@@ -55,6 +55,7 @@ that holds a copy.
 | **Assistant conversations** | `agent_conversations.messages` | Every turn the parent typed and every tool result, including camp details and calendar items | **Forever while the family exists** | On request | Delete [12 months] after the last message. Let a parent delete one conversation |
 | Registration alerts | `registration_alerts` | Email, camp, session, confirm and unsubscribe times | Forever, including after unsubscribe | **None**. Not deleted with the family | Unconfirmed: delete after [30 days]. Unsubscribed: keep only the email and date as a do-not-send list. Active: until unsubscribed or [2 seasons] |
 | Alert sends | `registration_alert_sends` | Which alert emails went out | Forever | **None** | [12 months] |
+| Parent checks | `parent_reporters`, `parent_checks` (migration 0038, added 20 November 2026) | An email address; per answer: camp, fact, "right" or "wrong", up to 280 characters and a link | Forever. "Stop" deletes the address and keeps proven answers without it | **None** on a schedule. Not deleted with the family | Unconfirmed addresses and their answers: delete after [30 days]. A report's free text: clear [12 months] after it's handled. The answer itself: keep, without the address |
 
 ### Inquiries (branch `claude/inquiry-tool`, not merged)
 

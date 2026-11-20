@@ -9,7 +9,8 @@ decrypted, because the export only goes to the owner, who can already open it.
 Other people's data stays out too:
 - Conversations are the owner's own. Co-parents' chats are private to them in the app
   (agent/runner.load_conversation), so they are private here.
-- Registration alerts are matched on the account email only, which sign-in has verified.
+- Registration alerts and parent checks ("still right", "this is wrong" on a camp's facts) are
+  matched on the account email only, which sign-in has verified.
   The reminder email is whatever the owner typed and could be anyone's address.
 """
 
@@ -21,6 +22,7 @@ from typing import Any
 from campfinder.booking.reminders import account_email
 from campfinder.database import get_supabase
 from campfinder.kit.service import load_kit
+from campfinder.services import checks
 
 VERSION = 1
 
@@ -94,6 +96,7 @@ def export_family(family: dict[str, Any]) -> dict[str, Any]:
             "booking_attempts": by_family("booking_attempts", "created_at"),
         },
         "registration_alerts": alerts,
+        "parent_checks": _clean(checks.export_for(owner_email)) if owner_email else [],
         "inquiries": by_family("inquiries", "created_at"),
         "assistant_usage": by_family("ai_spend_daily", "day"),
         "not_included": NOT_INCLUDED,
