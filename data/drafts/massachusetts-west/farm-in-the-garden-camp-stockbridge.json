@@ -1,0 +1,166 @@
+{
+  "slug": "farm-in-the-garden-camp-stockbridge",
+  "name": "Farm in the Garden Camp",
+  "operator_name": "Berkshire Botanical Garden",
+  "website_url": "https://www.berkshirebotanical.org/farm-garden-camp",
+  "email": "campinfo@berkshirebotanical.org",
+  "phone": "413-298-4505",
+  "street_address": "5 West Stockbridge Road",
+  "city": "Stockbridge",
+  "state": "MA",
+  "zip": "01262",
+  "camp_type": "day",
+  "primary_categories": [
+    "nature"
+  ],
+  "secondary_categories": [
+    "outdoor"
+  ],
+  "activities": [
+    "planting",
+    "harvesting vegetables",
+    "collecting eggs",
+    "caring for garden animals",
+    "nature walks",
+    "botanical crafts",
+    "cooking",
+    "building",
+    "storytelling",
+    "free play"
+  ],
+  "age_min": 4,
+  "age_max": 12,
+  "description_short": "Garden and farm day camp at Berkshire Botanical Garden in Stockbridge for ages 4 to 12, in small groups with two educators. Campers plant and harvest vegetables, collect eggs, care for animals, cook, make botanical crafts and explore the garden.",
+  "indoor_outdoor": "outdoor",
+  "price_min": 225,
+  "price_max": 525,
+  "price_per": "week",
+  "financial_aid": true,
+  "season_year": 2027,
+  "refund_policy_summary": "A $100 deposit holds a spot; full refunds minus the deposit up to seven days before camp begins.",
+  "sessions": [
+    {
+      "name": "2027 week",
+      "start_date": "2027-06-21",
+      "end_date": "2027-06-25",
+      "availability": "unknown"
+    },
+    {
+      "name": "2027 week",
+      "start_date": "2027-06-28",
+      "end_date": "2027-07-02",
+      "availability": "unknown"
+    },
+    {
+      "name": "2027 week (4 days)",
+      "start_date": "2027-07-06",
+      "end_date": "2027-07-09",
+      "availability": "unknown"
+    },
+    {
+      "name": "2027 week",
+      "start_date": "2027-07-12",
+      "end_date": "2027-07-16",
+      "availability": "unknown"
+    },
+    {
+      "name": "2027 week",
+      "start_date": "2027-07-19",
+      "end_date": "2027-07-23",
+      "availability": "unknown"
+    },
+    {
+      "name": "2027 week",
+      "start_date": "2027-07-26",
+      "end_date": "2027-07-30",
+      "availability": "unknown"
+    },
+    {
+      "name": "2027 week",
+      "start_date": "2027-08-02",
+      "end_date": "2027-08-06",
+      "availability": "unknown"
+    },
+    {
+      "name": "2027 week",
+      "start_date": "2027-08-09",
+      "end_date": "2027-08-13",
+      "availability": "unknown"
+    },
+    {
+      "name": "2027 week",
+      "start_date": "2027-08-16",
+      "end_date": "2027-08-20",
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.berkshirebotanical.org/farm-garden-camp",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "indoor_outdoor",
+        "price_min",
+        "price_max",
+        "price_per",
+        "financial_aid",
+        "refund_policy_summary",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. 2027 Summer: ages 4 to 12, Monday to Friday 9 am to 3 pm, groups of 10 to 12 with two educators; nine weeks June 21 to August 20, 2027 (July 6 to 9 is four days). 2027 tiered weekly tuition by household income, non member $225 / $325 / $425 / $525 (members $200 / $300 / $400 / $500); price_min and price_max are the non member tiers. Camperships for families with demonstrated need. Phone is the camp director's line (ext 21); address from the page footer. The page also lists February and April vacation camps (ages 5 to 10), not recorded here."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.berkshirebotanical.org/farm-garden-camp",
+      "kind": "html",
+      "title": "Farm in the Garden Camp | Berkshire Botanical Garden"
+    },
+    "warnings": [
+      "Stockbridge, MA is not in cities.py (West Stockbridge is, but it is a different town), so this draft fails validation.",
+      "Tuition is tiered by household income, so no single weekly price is recorded."
+    ],
+    "unknowns": [
+      "price_per_week",
+      "grade_min",
+      "grade_max",
+      "registration_url",
+      "extended_care",
+      "transportation",
+      "meals_included",
+      "aca_accredited",
+      "gender_policy"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://www.berkshirebotanical.org/farm-garden-camp",
+      "changes": [
+        "New camp, researched from https://www.berkshirebotanical.org/farm-garden-camp"
+      ],
+      "for_andrew": [
+        "Stockbridge, MA is missing from cities.py; West Stockbridge is a separate town, so it was not substituted.",
+        "Tuition is tiered by household income ($225 to $525 non member). Is a price range the right way to show that?"
+      ]
+    }
+  }
+}

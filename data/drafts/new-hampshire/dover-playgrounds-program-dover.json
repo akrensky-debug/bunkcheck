@@ -1,0 +1,105 @@
+{
+  "slug": "dover-playgrounds-program-dover",
+  "name": "Dover Playgrounds Program",
+  "operator_name": "City of Dover Recreation",
+  "website_url": "https://www.dover.nh.gov/government/city-operations/recreation/parks-and-playgrounds/playgrounds-program/",
+  "registration_url": "https://getactive.dover.nh.gov/",
+  "city": "Dover",
+  "state": "NH",
+  "zip": "03820",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "sports",
+    "swimming",
+    "arts"
+  ],
+  "activities": [
+    "swimming",
+    "games",
+    "sports",
+    "arts and crafts",
+    "state park trips"
+  ],
+  "age_min": 6,
+  "age_max": 12,
+  "description_short": "City run summer playground program at Horne Street Park for Dover children aged 6 to 12, weekdays 8:30 to 3:30 for seven weeks. Counselors lead games, sports, swimming and arts and crafts, with a trip to a New Hampshire state park each Friday.",
+  "indoor_outdoor": "outdoor",
+  "price_min": 400,
+  "price_max": 450,
+  "price_per": "summer",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Full program, 7 weeks (tentative dates; no camp July 3)",
+      "start_date": "2026-06-22",
+      "end_date": "2026-08-07",
+      "price": 400,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.dover.nh.gov/government/city-operations/recreation/parks-and-playgrounds/playgrounds-program/",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "indoor_outdoor",
+        "price_min",
+        "price_max",
+        "price_per",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page; 2026 program for Dover residents ages 6 to 12 at Horne Street Park, 50 children; June 22 to August 7 marked tentative; $400 for the whole summer if paid by May 31, $450 after June 1; zip is from the City Hall address in the page footer"
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.dover.nh.gov/government/city-operations/recreation/parks-and-playgrounds/playgrounds-program/",
+      "kind": "html",
+      "title": "Playgrounds Program"
+    },
+    "warnings": [
+      "Open to Dover residents only, so there is no non-resident rate to list.",
+      "The 2026 dates (June 22 to August 7) are marked tentative on the page.",
+      "The program is weather dependent and is cancelled in bad weather.",
+      "One price covers all seven weeks: $400 by May 31, $450 after June 1."
+    ],
+    "unknowns": [
+      "street address of Horne Street Park",
+      "phone (the page gives 516-6401 without an area code)",
+      "extended care",
+      "meals",
+      "financial aid"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://www.dover.nh.gov/government/city-operations/recreation/parks-and-playgrounds/playgrounds-program/",
+      "changes": [
+        "New camp, researched from https://www.dover.nh.gov/government/city-operations/recreation/parks-and-playgrounds/playgrounds-program/"
+      ],
+      "for_andrew": [
+        "Residents only program with a single summer fee and tentative dates. List it, given non-residents cannot enroll?"
+      ]
+    }
+  }
+}

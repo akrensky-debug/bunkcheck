@@ -1,0 +1,128 @@
+{
+  "slug": "center-at-pomfret-bike-camp-pomfret",
+  "name": "Center at Pomfret Bike Camp",
+  "operator_name": "Connecticut Audubon Society Center at Pomfret",
+  "website_url": "https://ctaudubon.org/locations/the-center-at-pomfret-and-bafflin-sanctuary/summer-camp/",
+  "email": "sheminway@ctaudubon.org",
+  "phone": "860-928-4948",
+  "street_address": "218 Day Road",
+  "city": "Pomfret",
+  "state": "CT",
+  "zip": "06259",
+  "camp_type": "specialty",
+  "primary_categories": [
+    "outdoor",
+    "nature"
+  ],
+  "secondary_categories": [
+    "adventure"
+  ],
+  "activities": [
+    "biking",
+    "bike maintenance",
+    "birding",
+    "trail riding",
+    "local history"
+  ],
+  "age_min": 9,
+  "age_max": 13,
+  "description_short": "Small group bike camp for ages 9 to 13 run by the Connecticut Audubon Society Center at Pomfret. Campers ride local back roads and trails such as the Airline Trail while learning about birds, wildlife, habitats and local history.",
+  "indoor_outdoor": "outdoor",
+  "price_per_week": 300,
+  "price_min": 242,
+  "price_max": 300,
+  "price_per": "week",
+  "extended_care": true,
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Hitting the Trail",
+      "start_date": "2026-06-22",
+      "end_date": "2026-06-26",
+      "price": 300,
+      "availability": "unknown"
+    },
+    {
+      "name": "Birding on Bikes",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": 300,
+      "availability": "unknown"
+    },
+    {
+      "name": "History on Wheels (more experienced riders)",
+      "start_date": "2026-08-17",
+      "end_date": "2026-08-21",
+      "price": 300,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://ctaudubon.org/locations/the-center-at-pomfret-and-bafflin-sanctuary/summer-camp/",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "age_min",
+        "age_max",
+        "description_short",
+        "indoor_outdoor",
+        "price_per_week",
+        "price_min",
+        "price_max",
+        "price_per"
+      ],
+      "note": "Researched by Claude from this page. Ages 9 to 13, $242 for CAS members and $300 for non-members, 10 campers per session, 9 am to 4 pm. Address and phone are the Center at Pomfret's (218 Day Road, Pomfret Center 06259). Drop off and pick up places vary through the week."
+    },
+    {
+      "url": "https://ctaudubon.org/wp-content/uploads/2026/02/POMFRET-SUMMER-CAMP-BROCHURE-2026-1.pdf",
+      "checked": "2026-11-20",
+      "fields": [
+        "activities",
+        "extended_care",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. 2026 brochure: three weeks; early drop off and late pick up for an added fee; campers bring their own fitted bike, helmet and spare tube."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://ctaudubon.org/locations/the-center-at-pomfret-and-bafflin-sanctuary/summer-camp/",
+      "kind": "html",
+      "title": "Summer Camp at Pomfret | The Connecticut Audubon Society"
+    },
+    "warnings": [],
+    "unknowns": [
+      "2027 weeks and price",
+      "Financial aid",
+      "ACA accreditation",
+      "Registration link (registration is by email or phone)"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://ctaudubon.org/locations/the-center-at-pomfret-and-bafflin-sanctuary/summer-camp/",
+      "changes": [
+        "New camp, researched from https://ctaudubon.org/locations/the-center-at-pomfret-and-bafflin-sanctuary/summer-camp/"
+      ],
+      "for_andrew": [
+        "Pomfret (village of Pomfret Center) is not in cities.py and no town it belongs to is either, so the draft fails the city check. Needs a cities.py entry for Pomfret, CT, or drop the listing.",
+        "Drop off and pick up places change during the week, so 218 Day Road is the center's address, not necessarily where riders meet each day."
+      ]
+    }
+  }
+}

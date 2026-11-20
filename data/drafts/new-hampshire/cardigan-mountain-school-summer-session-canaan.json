@@ -1,0 +1,176 @@
+{
+  "slug": "cardigan-mountain-school-summer-session-canaan",
+  "name": "Cardigan Mountain School Summer Session",
+  "operator_name": "Cardigan Mountain School",
+  "website_url": "https://www.cardigan.org/summer",
+  "email": "admissions@cardigan.org",
+  "street_address": "62 Alumni Drive",
+  "city": "Canaan",
+  "state": "NH",
+  "zip": "03741",
+  "camp_type": "sleepaway",
+  "primary_categories": [
+    "academic"
+  ],
+  "secondary_categories": [
+    "outdoor",
+    "arts",
+    "sports",
+    "STEM"
+  ],
+  "activities": [
+    "math",
+    "reading and writing",
+    "science",
+    "world languages",
+    "ESL",
+    "ceramics",
+    "drama",
+    "coding",
+    "mountain biking",
+    "hiking",
+    "paddle boarding",
+    "canoeing",
+    "tennis",
+    "soccer",
+    "model rocketry"
+  ],
+  "gender_policy": "coed",
+  "age_min": 8,
+  "age_max": 15,
+  "description_short": "Coed summer school and camp on a 525 acre lakeside boarding school campus in Canaan, for boarding and day students aged 8 to 15. Mornings are small academic and enrichment classes; afternoons, evenings and weekends bring hiking, mountain biking, paddling, tennis, drama and camping trips.",
+  "indoor_outdoor": "both",
+  "price_min": 2450,
+  "price_max": 9100,
+  "price_per": "session",
+  "financial_aid": true,
+  "transportation": true,
+  "meals_included": true,
+  "swim_waterfront_notes": "Students swim in the lake beside campus with an adult lifeguard. Everyone takes a swim test, and those who do not pass join the school's swim program until they have basic water safety skills. Boating, canoeing and kayaking are supervised by faculty.",
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Boarding, full 4 weeks",
+      "start_date": "2027-07-03",
+      "end_date": "2027-07-31",
+      "price": 9100,
+      "availability": "unknown"
+    },
+    {
+      "name": "Boarding, Session 1 (2 weeks)",
+      "start_date": "2027-07-03",
+      "end_date": "2027-07-17",
+      "price": 4850,
+      "availability": "unknown"
+    },
+    {
+      "name": "Boarding, Session 2 (2 weeks)",
+      "start_date": "2027-07-17",
+      "end_date": "2027-07-31",
+      "price": 4850,
+      "availability": "unknown"
+    },
+    {
+      "name": "Day student, full 4 weeks",
+      "start_date": "2027-07-03",
+      "end_date": "2027-07-31",
+      "price": 4650,
+      "availability": "unknown"
+    },
+    {
+      "name": "Day student, Session 1 (2 weeks)",
+      "start_date": "2027-07-03",
+      "end_date": "2027-07-17",
+      "price": 2450,
+      "availability": "unknown"
+    },
+    {
+      "name": "Day student, Session 2 (2 weeks)",
+      "start_date": "2027-07-17",
+      "end_date": "2027-07-31",
+      "price": 2450,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.cardigan.org/summer/tuition-financial-aid",
+      "checked": "2026-11-20",
+      "fields": [
+        "email",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "price_min",
+        "price_max",
+        "price_per",
+        "financial_aid",
+        "transportation",
+        "meals_included",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page; 2027 tuition for domestic boarding and day students; tuition includes dorm, classes, meals, activities and weekend trips; airport shuttle from Logan ($125) and JFK ($235) each way; about 30% of students get aid"
+    },
+    {
+      "url": "https://www.cardigan.org/summer",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "camp_type",
+        "gender_policy",
+        "age_min",
+        "age_max",
+        "description_short",
+        "primary_categories"
+      ],
+      "note": "Researched by Claude from this page; coeducational boarding and day summer program and camp for girls and boys ages 8 to 15"
+    },
+    {
+      "url": "https://www.cardigan.org/summer/summer-activities",
+      "checked": "2026-11-20",
+      "fields": [
+        "secondary_categories",
+        "activities",
+        "indoor_outdoor",
+        "swim_waterfront_notes"
+      ],
+      "note": "Researched by Claude from this page"
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.cardigan.org/summer/tuition-financial-aid",
+      "kind": "html",
+      "title": "Dates, Rates, and Financial Aid - Cardigan Mountain School"
+    },
+    "warnings": [
+      "International boarding students pay more: $9,900 for four weeks and $5,150 for two weeks, plus a $125 application fee. Domestic first time students pay a $50 application fee.",
+      "An expense deposit ($500 boarding, $250 day) is charged on top of tuition and returned if unused.",
+      "This is an academic summer session with camp activities. Students apply and are admitted."
+    ],
+    "unknowns": [
+      "phone for the summer session",
+      "refund policy",
+      "ACA accreditation",
+      "registration_url"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://www.cardigan.org/summer/tuition-financial-aid",
+      "changes": [
+        "New camp, researched from https://www.cardigan.org/summer/tuition-financial-aid",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
+      ],
+      "for_andrew": [
+        "This is an academic boarding summer session (classes in the morning, camp activities after). It is listed as a sleepaway camp with academic as the primary category. OK?"
+      ]
+    }
+  }
+}

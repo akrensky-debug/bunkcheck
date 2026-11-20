@@ -1,0 +1,168 @@
+{
+  "slug": "camp-nonesuch-natick",
+  "name": "Camp Nonesuch",
+  "operator_name": "The Rivers School",
+  "website_url": "https://www.rivers.org/camp-nonesuch-home",
+  "registration_url": "https://rivers.campintouch.com/v2/camper/application/app0.aspx",
+  "phone": "339-686-2293",
+  "street_address": "10 Mary Day Camp",
+  "city": "Natick",
+  "state": "MA",
+  "zip": "01760",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "arts",
+    "sailing",
+    "swimming",
+    "sports"
+  ],
+  "activities": [
+    "archery",
+    "canoeing",
+    "kayaking",
+    "sailing",
+    "swimming",
+    "fishing",
+    "woodworking",
+    "ceramics",
+    "drama",
+    "music",
+    "painting",
+    "photography",
+    "soccer",
+    "lacrosse",
+    "volleyball",
+    "nature study",
+    "board games"
+  ],
+  "age_min": 7,
+  "age_max": 15,
+  "description_short": "Day camp run by The Rivers School on 13 wooded acres beside Nonesuch Pond, on the Natick and Weston line. Campers pick their own activities for each two week session, from boating and swimming to crafts, woodworking, drama and team sports.",
+  "indoor_outdoor": "both",
+  "price_min": 1720,
+  "price_max": 1720,
+  "price_per": "session",
+  "extended_care": true,
+  "meals_included": true,
+  "swim_waterfront_notes": "American Red Cross swim instruction on Nonesuch Pond. Kayaking is limited to campers age 10 and up who pass the camp swim test.",
+  "refund_policy_summary": "A deposit of $50 per camper per week is due at registration and is credited to tuition; it is non-refundable. Reducing enrollment after May 15 costs a $50 change fee.",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Session 1",
+      "start_date": "2026-06-22",
+      "end_date": "2026-07-03",
+      "price": 1720,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 2",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-17",
+      "price": 1720,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 3",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-31",
+      "price": 1720,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 4",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-14",
+      "price": 1720,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.rivers.org/camp-nonesuch-home",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "website_url",
+        "camp_type",
+        "age_min",
+        "age_max"
+      ],
+      "note": "Researched by Claude from this page. Day camp for ages 7 to 15; two week sessions; CIT program for ages 14 and 15."
+    },
+    {
+      "url": "https://www.rivers.org/about",
+      "checked": "2026-11-20",
+      "fields": [
+        "operator_name",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "description_short",
+        "indoor_outdoor"
+      ],
+      "note": "Researched by Claude from this page. Physical address 10 Mary Day Camp, Natick, on the Natick and Weston town line; mailing address is The Rivers School, 333 Winter Street, Weston 02493. The page gives no ZIP for the Natick address; 01760 is Natick's ZIP."
+    },
+    {
+      "url": "https://www.rivers.org/program",
+      "checked": "2026-11-20",
+      "fields": [
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "meals_included",
+        "swim_waterfront_notes"
+      ],
+      "note": "Researched by Claude from this page. Lunch and two snacks daily. Hours 9:00 to 4:00."
+    },
+    {
+      "url": "https://www.rivers.org/enrollment",
+      "checked": "2026-11-20",
+      "fields": [
+        "registration_url",
+        "phone",
+        "price_min",
+        "price_max",
+        "price_per",
+        "extended_care",
+        "refund_policy_summary",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. 2026 tuition $1,720 per two week session, lunch and supplies included. Early drop-off 7:45 to 8:45 ($150 per session) and late pick-up 4:00 to 6:00 ($300 per session). CIT tuition $1,720 for four weeks. Phone 339-686-2293 September to June, 508-655-8118 June to August. No 2027 dates or prices posted yet."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.rivers.org/camp-nonesuch-home",
+      "kind": "html",
+      "title": "Camp Nonesuch"
+    },
+    "warnings": [],
+    "unknowns": [
+      "2027 dates and tuition",
+      "Financial aid",
+      "Transportation",
+      "ACA accreditation",
+      "Email"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://www.rivers.org/camp-nonesuch-home",
+      "changes": [
+        "New camp, researched from https://www.rivers.org/camp-nonesuch-home"
+      ],
+      "for_andrew": [
+        "ZIP 01760 is not printed on the camp pages; it is Natick's ZIP for the physical address 10 Mary Day Camp. Keep it or use the Weston mailing address (333 Winter Street, 02493)?",
+        "Only the 2026 season is posted; 2027 dates and tuition not out yet."
+      ]
+    }
+  }
+}

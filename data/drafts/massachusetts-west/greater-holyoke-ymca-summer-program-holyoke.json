@@ -1,0 +1,101 @@
+{
+  "slug": "greater-holyoke-ymca-summer-program-holyoke",
+  "name": "Greater Holyoke YMCA Summer Program",
+  "operator_name": "Greater Holyoke YMCA",
+  "website_url": "https://www.holyokeymca.org/child-care-camps/summer-camp-programs/",
+  "registration_url": "https://www.holyokeymca.org/online-program-registration/",
+  "phone": "413-534-5631",
+  "street_address": "171 Pine Street",
+  "city": "Holyoke",
+  "state": "MA",
+  "zip": "01040",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "swimming",
+    "sports",
+    "arts"
+  ],
+  "activities": [
+    "swimming",
+    "sports",
+    "arts",
+    "crafts",
+    "field trips",
+    "weekly themes"
+  ],
+  "age_min": 5,
+  "age_max": 13,
+  "description_short": "Seven week YMCA day camp for ages 5 to 13 at the Holyoke YMCA, with a second site at Plains School in South Hadley. Each week has a theme, with swimming, sports, arts and crafts and field trips.",
+  "meals_included": true,
+  "financial_aid": true,
+  "season_year": 2026,
+  "sources": [
+    {
+      "url": "https://www.holyokeymca.org/child-care-camps/summer-camp-programs/",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "meals_included",
+        "financial_aid"
+      ],
+      "note": "Researched by Claude from this page. Summer 2026, seven themed weeks, full week enrollment only, 8:00 am to 5:30 pm. Two locations: Greater Holyoke YMCA (free lunch through the Holyoke Food Program) and Plains School in South Hadley (bring lunch, runs through Week 5 only). meals_included refers to the Holyoke site. Financial assistance by scholarship form. Week dates and prices are not on the page."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.holyokeymca.org/child-care-camps/summer-camp-programs/",
+      "kind": "html",
+      "title": "Summer Camp 2026 | Greater Holyoke YMCA & South Hadley"
+    },
+    "warnings": [
+      "Holyoke, MA is not in cities.py, so this draft fails validation.",
+      "The page names seven weeks but gives no dates or prices.",
+      "The South Hadley site at Plains School has the same ages and themes but ends after Week 5; it is mentioned in the description, not listed separately."
+    ],
+    "unknowns": [
+      "sessions",
+      "price_per_week",
+      "price_min",
+      "price_max",
+      "price_per",
+      "extended_care",
+      "transportation",
+      "email",
+      "aca_accredited",
+      "gender_policy",
+      "refund_policy_summary"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://www.holyokeymca.org/child-care-camps/summer-camp-programs/",
+      "changes": [
+        "New camp, researched from https://www.holyokeymca.org/child-care-camps/summer-camp-programs/"
+      ],
+      "for_andrew": [
+        "Holyoke, MA is missing from cities.py. It is its own city, so no other town fits."
+      ]
+    }
+  }
+}

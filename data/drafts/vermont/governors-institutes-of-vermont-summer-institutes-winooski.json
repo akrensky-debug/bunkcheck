@@ -1,0 +1,160 @@
+{
+  "slug": "governors-institutes-of-vermont-summer-institutes-winooski",
+  "name": "Governor's Institutes of Vermont Summer Institutes",
+  "operator_name": "Governor's Institutes of Vermont",
+  "website_url": "https://giv.org/summer-institutes/",
+  "city": "Winooski",
+  "state": "VT",
+  "zip": "05404",
+  "camp_type": "sleepaway",
+  "primary_categories": [
+    "academic",
+    "STEM"
+  ],
+  "secondary_categories": [
+    "arts",
+    "leadership"
+  ],
+  "activities": [
+    "arts",
+    "engineering",
+    "entrepreneurship",
+    "global issues and youth action",
+    "health and medicine",
+    "mathematical sciences",
+    "technology and design",
+    "weather and climate science"
+  ],
+  "grade_min": 9,
+  "grade_max": 11,
+  "description_short": "Residential summer programs for Vermont high school students, each on a college campus around the state and each on one subject, such as arts, engineering, math, health and medicine, or weather and climate. Students live in campus dorms for one to two weeks.",
+  "financial_aid": true,
+  "refund_policy_summary": "Full refund with written notice by June 1. No refund if a student leaves early by choice or for a conduct breach. Prorated refunds if GIV sends a student home under its illness policy or cancels an Institute after it starts.",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Arts Institute, Vermont State University Castleton",
+      "start_date": "2026-06-28",
+      "end_date": "2026-07-12",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Engineering Institute, Norwich University, Northfield",
+      "start_date": "2026-06-21",
+      "end_date": "2026-06-27",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Entrepreneurship Institute, Champlain College, Burlington",
+      "start_date": "2026-06-21",
+      "end_date": "2026-06-27",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Global Issues and Youth Action Institute, Champlain College, Burlington",
+      "start_date": "2026-07-09",
+      "end_date": "2026-07-19",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Health and Medicine Institute, University of Vermont, Burlington",
+      "start_date": "2026-07-12",
+      "end_date": "2026-07-18",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Mathematical Sciences Institute, University of Vermont, Burlington",
+      "start_date": "2026-06-21",
+      "end_date": "2026-06-28",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Technology and Design Institute, Champlain College, Burlington",
+      "start_date": "2026-06-20",
+      "end_date": "2026-06-28",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Weather and Climate Science Institute, Vermont State University Lyndon",
+      "start_date": "2026-07-05",
+      "end_date": "2026-07-11",
+      "price": null,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://giv.org/summer-institutes/",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "description_short",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Summer Institutes page with 2026 dates and campuses (2027 coming soon). FAQ: students currently in grades 9, 10 and 11. City and ZIP are GIV's office, 20 West Canal St., Winooski, VT 05404; the Institutes run on campuses elsewhere"
+    },
+    {
+      "url": "https://giv.org/summer-institute-tuition/",
+      "checked": "2026-11-20",
+      "fields": [
+        "financial_aid",
+        "refund_policy_summary"
+      ],
+      "note": "Researched by Claude from this page. Summer Institute Tuition page: sliding scale tuition and refund policy"
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://giv.org/summer-institutes/",
+      "kind": "html",
+      "title": "Summer Programs for High School Students | GIV"
+    },
+    "warnings": [],
+    "unknowns": [
+      "2026 tuition (the tuition page now shows only the 2027 sliding scale)",
+      "2027 dates",
+      "Meals",
+      "ACA accreditation"
+    ],
+    "low_confidence": [
+      {
+        "field": "camp_type",
+        "confidence": 0.8,
+        "quote": "residential summer learning programs hosted at college campuses"
+      }
+    ],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://giv.org/summer-institutes/",
+      "changes": [
+        "New camp, researched from https://giv.org/summer-institutes/"
+      ],
+      "for_andrew": [
+        "Eight Institutes, each with its own dates and campus but the same grades, so per the brief this is one listing. City is GIV's Winooski office; the Institutes run in Burlington (5), Castleton, Northfield and Lyndon. Split per campus instead?",
+        "Prices left out: the tuition page shows the 2027 sliding scale ($10 to $3,410 short course, $20 to $3,740 long course) and 2026 prices are no longer posted. Not mixed with 2026 dates.",
+        "Grades: GIV takes students who are in grades 9 to 11 during the school year when they apply; they attend the summer after."
+      ]
+    }
+  }
+}

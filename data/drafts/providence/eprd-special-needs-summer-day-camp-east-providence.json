@@ -1,0 +1,111 @@
+{
+  "slug": "eprd-special-needs-summer-day-camp-east-providence",
+  "name": "EPRD Special Needs Summer Day Camp",
+  "operator_name": "East Providence Recreation Department",
+  "website_url": "https://eastprovidence.recdesk.com/RecDeskPortal/Portals/442/Special%20Needs%20%20Camp%20Guidelines2.pdf",
+  "registration_url": "https://eastprovidence.recdesk.com",
+  "phone": "(401) 435-7511",
+  "street_address": "Pierce Field, 201 Mercer St",
+  "city": "East Providence",
+  "state": "RI",
+  "camp_type": "day",
+  "primary_categories": [
+    "special_needs"
+  ],
+  "secondary_categories": [
+    "general"
+  ],
+  "activities": [
+    "special events",
+    "arts and crafts",
+    "sports",
+    "games",
+    "field trips",
+    "bowling",
+    "swimming"
+  ],
+  "age_min": 6,
+  "age_max": 21,
+  "description_short": "A six week city day camp at Pierce Field for young people ages 6 to 21 who need extra support, with sports, games, crafts and weekly bowling and swimming trips.",
+  "price_min": 480,
+  "price_max": 480,
+  "price_per": "session",
+  "extended_care": true,
+  "transportation": true,
+  "meals_included": true,
+  "special_needs_notes": "For youth ages 6 to 21 who may need extra support. A medical form with diagnosis, signed by the physician, is required. Campers who cannot manage their own hygiene and toileting, or who need equipment such as oxygen or a feeding tube, attend with an aide.",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Summer 2026 (no camp July 6)",
+      "start_date": "2026-06-22",
+      "end_date": "2026-07-31",
+      "price": 480,
+      "availability": "unknown"
+    }
+  ],
+  "notes": "Camp day 9:30 am to 2:30 pm; extended day 8:30 am to 3:30 pm for $120 for the six weeks. $240 deposit at registration; balance due July 7, 2026. Round trip transportation provided. Weekly bowling and swimming trips; trip fees extra, paid in cash. Rain site: Recreation Center, 610 Waterman Ave.",
+  "sources": [
+    {
+      "url": "https://eastprovidence.recdesk.com/RecDeskPortal/Portals/442/Special%20Needs%20%20Camp%20Guidelines2.pdf",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "price_min",
+        "price_max",
+        "price_per",
+        "extended_care",
+        "transportation",
+        "meals_included",
+        "special_needs_notes",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. 2026 special needs camp guidelines PDF: 9:30 am to 2:30 pm, June 22 to July 31, ages 6 to 21, $480 for six weeks, extended day $120, round trip transportation, free lunch"
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://eastprovidence.recdesk.com/RecDeskPortal/Portals/442/Special%20Needs%20%20Camp%20Guidelines2.pdf",
+      "kind": "pdf",
+      "title": "2026 EPRD Special Needs Camp Guidelines"
+    },
+    "warnings": [],
+    "unknowns": [
+      "zip",
+      "2027 dates and fee",
+      "Financial aid",
+      "Refund policy"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "missing required zip"
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://eastprovidence.recdesk.com/RecDeskPortal/Portals/442/Special%20Needs%20%20Camp%20Guidelines2.pdf",
+      "changes": [
+        "New camp, researched from https://eastprovidence.recdesk.com/RecDeskPortal/Portals/442/Special%20Needs%20%20Camp%20Guidelines2.pdf"
+      ],
+      "for_andrew": [
+        "zip is missing, so the draft fails validation. The PDF gives no ZIP code and the city site refuses our fetcher; search results quote the city as 201 Mercer Street, East Providence, RI 02914. Confirm 02914 and add it.",
+        "Only the 2026 season is posted; 2027 details are not up yet."
+      ]
+    }
+  }
+}

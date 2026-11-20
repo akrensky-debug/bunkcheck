@@ -1,0 +1,94 @@
+{
+  "slug": "bristol-parks-and-recreation-summer-camp-bristol",
+  "name": "Bristol Parks and Recreation Summer Camp",
+  "operator_name": "Bristol Parks and Recreation Department",
+  "website_url": "https://bristolri.gov/279/Summer-Camp",
+  "registration_url": "https://secure.rec1.com/RI/bristol-ri/catalog",
+  "phone": "401-253-1611",
+  "street_address": "Bristol Town Beach & Sports Complex, 50 Asylum Rd.",
+  "city": "Bristol",
+  "state": "RI",
+  "zip": "02809",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "age_min": 6,
+  "age_max": 14,
+  "description_short": "A six week town day camp for Bristol children at the Town Beach and Sports Complex, with lunch and bus pickup from neighborhood parks included in the fee.",
+  "price_min": 300,
+  "price_max": 300,
+  "price_per": "summer",
+  "meals_included": true,
+  "transportation": true,
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Summer 2026 (no camp July 3)",
+      "start_date": "2026-06-29",
+      "end_date": "2026-08-07",
+      "price": 300,
+      "availability": "unknown"
+    }
+  ],
+  "notes": "Bristol residents only. Fee is $300 per camper for the whole summer, $250 per sibling, and includes lunch and busing if needed. Hours 9 am to 3 pm; no camp July 3. Bus stops: Town Common, Vets Park, Coelho Park, Sowams Park, Cedarcrest Park and Rockwell School. Rain location: Quinta-Gamelin Community Center, 101 Asylum Road. Photos on the page call it Camp Poppasquaw.",
+  "sources": [
+    {
+      "url": "https://bristolri.gov/279/Summer-Camp",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "age_min",
+        "age_max",
+        "description_short",
+        "price_min",
+        "price_max",
+        "price_per",
+        "meals_included",
+        "transportation",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Summer Camp 2026 section: dates, 9 am to 3 pm, Bristol residents only ages 6 to 14 (age 6 by June 29), $300 per camper or $250 per sibling including lunch and busing; zip from the town hall address in the page footer"
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://bristolri.gov/279/Summer-Camp",
+      "kind": "html",
+      "title": "Summer Camp | Bristol, RI"
+    },
+    "warnings": [],
+    "unknowns": [
+      "2027 dates and fee",
+      "Activities offered",
+      "Extended care",
+      "Financial aid",
+      "Refund policy"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://bristolri.gov/279/Summer-Camp",
+      "changes": [
+        "New camp, researched from https://bristolri.gov/279/Summer-Camp"
+      ],
+      "for_andrew": [
+        "Open to Bristol residents only and the page posts no non-resident rate, so the house rule (list the non-resident rate) cannot apply. List a residents only camp, or leave it out?",
+        "Only the 2026 season is posted (it ended August 7); 2027 dates and fee are not up yet."
+      ]
+    }
+  }
+}

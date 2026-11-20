@@ -1,0 +1,82 @@
+{
+  "slug": "malt-summer-camps-middlebury",
+  "name": "MALT Summer Camps",
+  "operator_name": "Middlebury Area Land Trust",
+  "website_url": "https://www.maltvt.org/camps",
+  "city": "Middlebury",
+  "state": "VT",
+  "zip": "05753",
+  "camp_type": "day",
+  "primary_categories": [
+    "nature",
+    "outdoor"
+  ],
+  "description_short": "Summer nature camps run by the Middlebury Area Land Trust on protected land around Addison County, with weekly themes. Campers play, create and explore forests, meadows and rivers.",
+  "indoor_outdoor": "outdoor",
+  "season_year": 2026,
+  "sources": [
+    {
+      "url": "https://www.maltvt.org/camps",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "camp_type",
+        "primary_categories",
+        "description_short",
+        "indoor_outdoor"
+      ],
+      "note": "Researched by Claude from this page. Camps page: Summer Camps 2026, season over; weekly themes and details are in a brochure hosted on Canva"
+    },
+    {
+      "url": "https://www.maltvt.org/contact",
+      "checked": "2026-11-20",
+      "fields": [
+        "city",
+        "state",
+        "zip"
+      ],
+      "note": "Researched by Claude from this page. Contact page: MALT office, 298 Maple Street #1B, Middlebury, VT 05753"
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.maltvt.org/camps",
+      "kind": "html",
+      "title": "Camps | Middlebury Area Land Trust"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Session dates",
+      "Ages",
+      "Prices",
+      "Where each camp meets",
+      "Hours",
+      "Financial aid (a Camp Scholarship Fund page exists but shows no details)",
+      "Refund policy",
+      "ACA accreditation"
+    ],
+    "low_confidence": [
+      {
+        "field": "camp_type",
+        "confidence": 0.7,
+        "quote": "MALT Summer Camps ... connecting local youth with the protected lands of their back yards"
+      }
+    ],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://www.maltvt.org/camps",
+      "changes": [
+        "New camp, researched from https://www.maltvt.org/camps"
+      ],
+      "for_andrew": [
+        "All 2026 details are in a Canva brochure that the fetcher cannot read (Canva serves an 'unsupported browser' page). Ask MALT for the brochure as a PDF, or keep this thin listing?",
+        "camp_type 'day' is inferred; the page does not say day camp."
+      ]
+    }
+  }
+}

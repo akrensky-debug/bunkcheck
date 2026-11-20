@@ -1,0 +1,106 @@
+{
+  "slug": "strawbery-banke-museum-summer-camps-portsmouth",
+  "name": "Strawbery Banke Museum Summer Camps",
+  "operator_name": "Strawbery Banke Museum",
+  "website_url": "https://www.strawberybanke.org/camps",
+  "street_address": "14 Hancock Street",
+  "city": "Portsmouth",
+  "state": "NH",
+  "zip": "03801",
+  "camp_type": "specialty",
+  "primary_categories": [
+    "academic"
+  ],
+  "secondary_categories": [
+    "arts",
+    "nature"
+  ],
+  "activities": [
+    "history roleplay",
+    "hearth cooking",
+    "historical crafts",
+    "games",
+    "gardening",
+    "storytelling"
+  ],
+  "age_min": 6,
+  "age_max": 17,
+  "description_short": "Weeklong history day camps at Strawbery Banke Museum in Portsmouth. Each week has a theme, from pirates and seafaring to Victorian crafts and World War II home front life, and campers cook, play, build and roleplay in the museum's historic houses and gardens.",
+  "indoor_outdoor": "both",
+  "extended_care": true,
+  "financial_aid": true,
+  "season_year": 2026,
+  "sources": [
+    {
+      "url": "https://www.strawberybanke.org/camps",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "description_short",
+        "indoor_outdoor",
+        "extended_care",
+        "financial_aid"
+      ],
+      "note": "Researched by Claude from this page; before and after care and financial aid offered for all camps; History Within Reach need based aid; #areuin? card members pay $100 a week; 2027 offerings coming soon"
+    },
+    {
+      "url": "https://www.strawberybanke.org/events-collection/bright-ideas-camp",
+      "checked": "2026-11-20",
+      "fields": [
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "age_min"
+      ],
+      "note": "Researched by Claude from this page; 2026 Bright Ideas camp, July 6 to 10, 9 to 3, designed for ages 6 to 8; held at Strawbery Banke Museum, 14 Hancock Street, Portsmouth, NH 03801"
+    },
+    {
+      "url": "https://www.strawberybanke.org/events-collection/myth-busters-camp",
+      "checked": "2026-11-20",
+      "fields": [
+        "age_max"
+      ],
+      "note": "Researched by Claude from this page; 2026 Myth Busters camp, July 20 to 24, designed for ages 12 to 17"
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.strawberybanke.org/camps",
+      "kind": "html",
+      "title": "Summer and Vacation Camps | Join Summer Camps Today — Strawbery Banke Museum"
+    },
+    "warnings": [
+      "The main camps page now says only '2027 Summer Camp Offerings Coming Soon'. The 2026 camps are still on the museum's own event pages, one page per camp, all 9 AM to 3 PM at the museum: Stories Alive: Challengers and Changemakers (June 29 to July 3, ages 6 to 8), Historical Fiction Writing (June 29 to July 3, ages 12 to 17), History in Play: Growing Up Colonial (June 29 to July 3, ages 9 to 11), Bright Ideas (July 6 to 10, ages 6 to 8), Making Waves (July 13 to 17, ages 9 to 11), Myth Busters (July 20 to 24, ages 12 to 17), House Hunters (July 27 to 31, ages 7 to 9), Building Detectives (July 27 to 31, ages 10 to 12), American Adventures (August 10 to 14, two pages, one for ages 6 to 8 and one for ages 9 to 11), History in Play: Growing Up Victorian (August 17 to 21, ages 9 to 11). The event pages also mention Jr. Roleplayers and Time Travelers camps, which were not read.",
+      "No 2026 prices were found on the camps page or the event pages read. #areuin? card members pay $100 a week, a 75% discount, which implies about $400 a week but is not stated.",
+      "Sessions are not filled because each session is on a different page and a field can cite only one source."
+    ],
+    "unknowns": [
+      "prices",
+      "sessions (see warnings)",
+      "registration_url",
+      "phone and email for camps",
+      "meals"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://www.strawberybanke.org/camps",
+      "changes": [
+        "New camp, researched from https://www.strawberybanke.org/camps"
+      ],
+      "for_andrew": [
+        "2026 camp dates and ages are on separate event pages and no 2026 price was found. Publish without sessions and prices, let sessions cite several pages, or wait for the 2027 offerings?"
+      ]
+    }
+  }
+}

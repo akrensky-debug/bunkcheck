@@ -1,0 +1,139 @@
+{
+  "slug": "windridge-tennis-and-sports-camps-roxbury",
+  "name": "Windridge Tennis & Sports Camps",
+  "operator_name": "Windridge Tennis & Sports Camps",
+  "website_url": "https://windridgecamps.com/dates-and-rates",
+  "registration_url": "https://windridgecamps.com/camper-application",
+  "email": "info@windridgecamps.com",
+  "phone": "(802) 860-2005",
+  "street_address": "1215 Roxbury Road",
+  "city": "Roxbury",
+  "state": "VT",
+  "zip": "05669",
+  "camp_type": "sleepaway",
+  "primary_categories": [
+    "sports"
+  ],
+  "activities": [
+    "tennis",
+    "soccer",
+    "golf",
+    "horseback riding",
+    "electives",
+    "Teela Games"
+  ],
+  "age_min": 7,
+  "age_max": 15,
+  "description_short": "An overnight sports camp in Roxbury, Vermont, for ages 7 to 15. Campers major in tennis, soccer, golf or horseback riding over 17 day sessions, and first year campers aged 7 to 10 can choose a 10 day rookie session.",
+  "price_min": 3450,
+  "price_max": 5780,
+  "price_per": "session",
+  "refund_policy_summary": "The $1,000 deposit is not refundable, except for a wait listed camper who never gets a space. The tuition balance is refunded only if the spot is filled from the wait list. No refunds for late arrival, early departure or dismissal.",
+  "season_year": 2027,
+  "notes": "Golf major costs $150 extra and horseback riding major $1,450 extra. CIT sessions for 16 year olds cost $2,990 on the same three session dates.",
+  "sessions": [
+    {
+      "name": "Session 1 (17 days, ages 7 to 15)",
+      "start_date": "2027-06-23",
+      "end_date": "2027-07-09",
+      "price": 5780,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 2 (17 days, ages 7 to 15)",
+      "start_date": "2027-07-12",
+      "end_date": "2027-07-28",
+      "price": 5780,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 3 (17 days, ages 7 to 15)",
+      "start_date": "2027-07-30",
+      "end_date": "2027-08-15",
+      "price": 5780,
+      "availability": "unknown"
+    },
+    {
+      "name": "Rookie 1 (10 days, ages 7 to 10)",
+      "start_date": "2027-06-23",
+      "end_date": "2027-07-02",
+      "price": 3450,
+      "availability": "unknown"
+    },
+    {
+      "name": "Rookie 2 (10 days, ages 7 to 10)",
+      "start_date": "2027-07-12",
+      "end_date": "2027-07-21",
+      "price": 3450,
+      "availability": "unknown"
+    },
+    {
+      "name": "Rookie 3 (10 days, ages 7 to 10)",
+      "start_date": "2027-07-30",
+      "end_date": "2027-08-08",
+      "price": 3450,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://windridgecamps.com/dates-and-rates",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "price_min",
+        "price_max",
+        "price_per",
+        "refund_policy_summary",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. 2027 Dates, Rates and Discounts page"
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://windridgecamps.com/dates-and-rates",
+      "kind": "html",
+      "title": "2027 Dates, Rates & Discounts | Windridge Tennis & Sports Camps"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Financial aid (discounts are listed, no need based aid)",
+      "Meals",
+      "Transportation",
+      "ACA accreditation",
+      "Gender policy"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://windridgecamps.com/dates-and-rates",
+      "changes": [
+        "New camp, researched from https://windridgecamps.com/dates-and-rates",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
+      ],
+      "for_andrew": [
+        "Checks go to a Stowe PO box, but the camp address in the footer is 1215 Roxbury Road, Roxbury. Used Roxbury.",
+        "Discounts listed: returning families who enrolled by October 31, 2026 pay 2026 rates; $1,000 off two sessions; $500 sibling; $500 new Vermont families. Not recorded as financial aid."
+      ]
+    }
+  }
+}

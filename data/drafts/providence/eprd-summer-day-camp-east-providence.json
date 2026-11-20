@@ -1,0 +1,104 @@
+{
+  "slug": "eprd-summer-day-camp-east-providence",
+  "name": "EPRD Summer Day Camp",
+  "operator_name": "East Providence Recreation Department",
+  "website_url": "https://eastprovidence.recdesk.com/RecDeskPortal/Portals/442/2026%20EPRD%20%20Camp%20Guidelines.pdf",
+  "registration_url": "https://eastprovidence.recdesk.com",
+  "phone": "(401) 435-7511",
+  "street_address": "Pierce Field, 201 Mercer St",
+  "city": "East Providence",
+  "state": "RI",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "activities": [
+    "special events",
+    "arts and crafts",
+    "sports",
+    "games",
+    "field trips",
+    "water days"
+  ],
+  "age_min": 6,
+  "age_max": 12,
+  "description_short": "A six week city day camp at Pierce Field where children ages 6 to 12 play sports and games, do arts and crafts, and go on field trips, with a free lunch each weekday.",
+  "price_min": 600,
+  "price_max": 600,
+  "price_per": "session",
+  "transportation": false,
+  "meals_included": true,
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Summer 2026 (no camp July 6)",
+      "start_date": "2026-06-29",
+      "end_date": "2026-08-07",
+      "price": 600,
+      "availability": "unknown"
+    }
+  ],
+  "notes": "Runs Monday to Friday 8:30 am to 3:30 pm. $300 deposit at registration; balance due July 13, 2026. Field trip and special activity fees are extra and paid in cash. Rain site: Agnes B. Hennessey Elementary School cafeteria, 75 Fort St. The camp says it is not a licensed day care.",
+  "sources": [
+    {
+      "url": "https://eastprovidence.recdesk.com/RecDeskPortal/Portals/442/2026%20EPRD%20%20Camp%20Guidelines.pdf",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "price_min",
+        "price_max",
+        "price_per",
+        "transportation",
+        "meals_included",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. 2026 camp guidelines PDF on the department's RecDesk portal: Pierce Field, 8:30 am to 3:30 pm, June 29 to August 7, ages 6 to 12 as of September 1, 2026, $600 for the six week session, free lunch, no transportation"
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://eastprovidence.recdesk.com/RecDeskPortal/Portals/442/2026%20EPRD%20%20Camp%20Guidelines.pdf",
+      "kind": "pdf",
+      "title": "2026 EPRD Camp Guidelines"
+    },
+    "warnings": [],
+    "unknowns": [
+      "zip",
+      "2027 dates and fee",
+      "Extended care",
+      "Financial aid",
+      "Refund policy"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "missing required zip"
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://eastprovidence.recdesk.com/RecDeskPortal/Portals/442/2026%20EPRD%20%20Camp%20Guidelines.pdf",
+      "changes": [
+        "New camp, researched from https://eastprovidence.recdesk.com/RecDeskPortal/Portals/442/2026%20EPRD%20%20Camp%20Guidelines.pdf"
+      ],
+      "for_andrew": [
+        "zip is missing, so the draft fails validation. The guidelines PDF gives no ZIP code and the city site (eastprovidenceri.gov) refuses our fetcher. Web search results quote the city's own facilities listing and bid notices as 201 Mercer Street, East Providence, RI 02914. Confirm 02914 and add it, or ask the department.",
+        "Only the 2026 season is posted; 2027 details are not up yet.",
+        "The PDF gives one fee ($600) with no resident or non-resident split."
+      ]
+    }
+  }
+}

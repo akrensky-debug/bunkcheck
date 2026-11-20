@@ -1,0 +1,127 @@
+{
+  "slug": "kimball-jenkins-summer-art-camp-concord",
+  "name": "Kimball Jenkins Summer Art Camp",
+  "operator_name": "Kimball Jenkins School of Art",
+  "website_url": "https://www.kimballjenkins.com/",
+  "email": "lindsay@kimballjenkins.com",
+  "phone": "603-225-3932",
+  "street_address": "266 N. Main St.",
+  "city": "Concord",
+  "state": "NH",
+  "zip": "03301",
+  "camp_type": "specialty",
+  "primary_categories": [
+    "arts"
+  ],
+  "activities": [
+    "painting",
+    "drawing",
+    "mixed media",
+    "character design",
+    "wearable art",
+    "art exhibition"
+  ],
+  "age_min": 6,
+  "age_max": 14,
+  "description_short": "Art day camp at Kimball Jenkins in Concord, run in two week themed sessions. Campers aged 6 to 14 take three art classes a day with Kimball Jenkins faculty, grouped by age, and show their work in the historic mansion on the last Friday.",
+  "indoor_outdoor": "indoor",
+  "price_min": 700,
+  "price_max": 725,
+  "price_per": "session",
+  "extended_care": true,
+  "meals_included": false,
+  "financial_aid": true,
+  "refund_policy_summary": "Cancellations 30 or more days before a session get a full refund less a $50 fee. Later cancellations are refunded only if the spot is filled from the waitlist, with case by case review for serious illness or family emergency. Families can instead donate the tuition or take a credit for another youth program.",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Session A: KPopalooza (2 weeks)",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-17",
+      "price": 725,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session B: Color Explosion (2 weeks)",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-31",
+      "price": 725,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session C: Fantasy Fairytales and Mystical Creatures (2 weeks)",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-14",
+      "price": 725,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.kimballjenkins.com/UploadedFiles/Images/Kimball%20Jenkins%20Camp%20Handbook%202026.docx.pdf",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "operator_name",
+        "email",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "indoor_outdoor",
+        "price_min",
+        "price_max",
+        "price_per",
+        "extended_care",
+        "meals_included",
+        "financial_aid",
+        "refund_policy_summary",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page; 2026 Parent Handbook: camp 9 to 2:30, extended day 8 to 8:30 and 2:30 to 5:30 for $50 a week; two week session $700 early bird (March 2 to April 30) or $725 from May 1, with $25 off each session when booking several; session prices use the regular $725 rate; lunch brought from home; tuition assistance by application; all classes indoors on the Kimball Jenkins campus"
+    },
+    {
+      "url": "https://www.kimballjenkins.com/",
+      "checked": "2026-11-20",
+      "fields": [
+        "website_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip"
+      ],
+      "note": "Researched by Claude from this page; Kimball Jenkins campus address and phone from the site footer"
+    }
+  ],
+  "review": {
+    "status": "ready",
+    "source": {
+      "url": "https://www.kimballjenkins.com/UploadedFiles/Images/Kimball%20Jenkins%20Camp%20Handbook%202026.docx.pdf",
+      "kind": "pdf",
+      "title": "Kimball Jenkins Summer Camp 2026 Parent Handbook"
+    },
+    "warnings": [
+      "These are 2026 sessions and prices; 2027 camp information was not yet posted.",
+      "A one week option at $375 may be offered from June 1 if spots remain.",
+      "The street address is the Kimball Jenkins campus from the site footer; the handbook says all camp classes take place on that campus."
+    ],
+    "unknowns": [
+      "registration_url",
+      "gender policy (not stated)"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://www.kimballjenkins.com/UploadedFiles/Images/Kimball%20Jenkins%20Camp%20Handbook%202026.docx.pdf",
+      "changes": [
+        "New camp, researched from https://www.kimballjenkins.com/UploadedFiles/Images/Kimball%20Jenkins%20Camp%20Handbook%202026.docx.pdf"
+      ],
+      "for_andrew": []
+    }
+  }
+}

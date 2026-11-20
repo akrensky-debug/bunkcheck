@@ -1,0 +1,122 @@
+{
+  "slug": "camp-susan-curtis-stoneham",
+  "name": "Camp Susan Curtis",
+  "operator_name": "Camp Susan Curtis",
+  "website_url": "https://susancurtis.org/campers-registration/",
+  "email": "info@susancurtis.org",
+  "phone": "207-774-1552",
+  "street_address": "236 Allen Road",
+  "city": "Stoneham",
+  "state": "ME",
+  "zip": "04231",
+  "camp_type": "sleepaway",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "leadership",
+    "outdoor",
+    "swimming"
+  ],
+  "grade_min": 5,
+  "grade_max": 12,
+  "description_short": "Free overnight camp in Stoneham, Maine, for Maine children in grades 5 to 12 from families facing economic hardship, referred by their school. Campers come for a 10 day session with swim lessons, crafts, sports and nature, and older campers move into bridge and leadership programs.",
+  "activities": [
+    "swimming",
+    "mountain biking",
+    "pottery",
+    "canoeing",
+    "sports and games",
+    "yoga",
+    "theater"
+  ],
+  "transportation": true,
+  "meals_included": true,
+  "season_year": 2026,
+  "sources": [
+    {
+      "url": "https://susancurtis.org/campers-registration/",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "website_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip"
+      ],
+      "note": "Researched by Claude from this page. Camp address 236 Allen Road, Stoneham; office in Portland. New campers entering grades 5 to 7 are referred by a school counselor or social worker."
+    },
+    {
+      "url": "https://susancurtis.org/program/",
+      "checked": "2026-11-20",
+      "fields": [
+        "operator_name",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "grade_min",
+        "grade_max",
+        "description_short"
+      ],
+      "note": "Researched by Claude from this page. Tuition free program for Maine children grade five through high school whose families face economic hardship; 10 day sessions; traditional camp for grades 5 to 7, bridge camp for 8 and 9, leadership for 10 to 12."
+    },
+    {
+      "url": "https://susancurtis.org/wp-content/uploads/2026/01/2026-Camper-Family-Brochure-FINAL.pdf",
+      "checked": "2026-11-20",
+      "fields": [
+        "activities",
+        "transportation",
+        "meals_included"
+      ],
+      "note": "Researched by Claude from this page. 2026 brochure: one 10 day session per camper each summer at no cost; free bus routes to and from camp; three meals and a snack daily."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://susancurtis.org/campers-registration/",
+      "kind": "html",
+      "title": "Campers & Registration"
+    },
+    "warnings": [
+      "No session dates are published; families get them in a welcome packet.",
+      "Enrollment is by school referral only and camp is free, so no price is listed."
+    ],
+    "unknowns": [
+      "sessions",
+      "age_min",
+      "age_max",
+      "price_min",
+      "price_max",
+      "price_per_week",
+      "price_per",
+      "registration_url",
+      "gender_policy",
+      "financial_aid",
+      "extended_care",
+      "refund_policy_summary",
+      "special_needs_notes",
+      "swim_waterfront_notes",
+      "aca_accredited",
+      "indoor_outdoor"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://susancurtis.org/campers-registration/",
+      "changes": [
+        "New camp, researched from https://susancurtis.org/campers-registration/",
+        "Used the 2026 brochure; no 2027 information is posted and no session dates are public",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
+      ],
+      "for_andrew": [
+        "This camp is free and takes new campers only by school referral, and its 10 day session dates are not public. List it anyway?"
+      ]
+    }
+  }
+}

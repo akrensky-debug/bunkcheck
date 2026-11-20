@@ -1,0 +1,159 @@
+{
+  "slug": "camp-romaca-hinsdale",
+  "name": "Camp Romaca",
+  "operator_name": "Camp Romaca",
+  "website_url": "https://www.romaca.com/",
+  "phone": "413-655-2715",
+  "email": "office@romaca.com",
+  "street_address": "Longview Avenue",
+  "city": "Hinsdale",
+  "state": "MA",
+  "zip": "01235",
+  "camp_type": "sleepaway",
+  "primary_categories": [
+    "general",
+    "sports",
+    "arts"
+  ],
+  "secondary_categories": [
+    "swimming",
+    "performing_arts",
+    "adventure"
+  ],
+  "activities": [
+    "watersports",
+    "land sports",
+    "fitness",
+    "gymnastics",
+    "creative and performing arts",
+    "horseback riding",
+    "outdoor adventure",
+    "special events"
+  ],
+  "gender_policy": "girls",
+  "age_min": 6,
+  "age_max": 16,
+  "description_short": "All girls overnight camp in Hinsdale, in the Berkshires, running a single seven week season. Campers split their days between sports, gymnastics, arts, horseback riding, adventure and the Plunkett Lake waterfront, with younger girls on a set schedule and older girls choosing their own.",
+  "indoor_outdoor": "both",
+  "meals_included": true,
+  "swim_waterfront_notes": "The waterfront is on Plunkett Lake, with two shallow areas, deep water for advanced instruction, racing lanes, a water slide and a Wibit. Campers have Red Cross swim instruction and an afternoon free swim. Water skiing, kneeboarding, wakeboarding, sailing, canoeing and paddleboarding are offered. Lifeguards and Water Safety Instructors run a double check buddy system.",
+  "refund_policy_summary": "All tuition and fees are non-refundable after September 15. Tuition and program cancellation insurance is offered through the application.",
+  "price_min": 17875,
+  "price_max": 17875,
+  "price_per": "session",
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Full season, 7 weeks (returning campers who completed grades 1 to 9)",
+      "start_date": "2027-06-25",
+      "end_date": "2027-08-13",
+      "price": 17875,
+      "availability": "unknown"
+    },
+    {
+      "name": "Trainee and Floater program (completed grades 10 to 11), from $6,275",
+      "start_date": "2027-06-25",
+      "end_date": "2027-08-13",
+      "price": null,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.romaca.com/dates-rates-application",
+      "checked": "2026-11-20",
+      "fields": [
+        "refund_policy_summary",
+        "price_min",
+        "price_max",
+        "price_per",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page; 2027 dates (opening day Friday June 25, closing day Friday August 13) and 2027 tuition; Trainee and Floater tuition is listed as $6,275 and up, so no single price is recorded for it; bus service ($400 and up), a supplement fee ($595 and up), trip fee and spending money are billed on top"
+    },
+    {
+      "url": "https://www.romaca.com/",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "camp_type",
+        "gender_policy",
+        "age_min",
+        "age_max",
+        "description_short"
+      ],
+      "note": "Researched by Claude from this page; all girls sleepaway camp, about 250 girls aged 6 to 16"
+    },
+    {
+      "url": "https://www.romaca.com/contact-us",
+      "checked": "2026-11-20",
+      "fields": [
+        "phone",
+        "email",
+        "zip"
+      ],
+      "note": "Researched by Claude from this page; summer office: P.O. Box 402, Hinsdale, MA 01235-0402, 413-655-2715; office@romaca.com is the office assistants' address"
+    },
+    {
+      "url": "https://www.romaca.com/visit-camp/driving-directions",
+      "checked": "2026-11-20",
+      "fields": [
+        "street_address",
+        "city",
+        "state"
+      ],
+      "note": "Researched by Claude from this page; directions end at the Camp Romaca sign on Longview Avenue in Hinsdale; no street number is given"
+    },
+    {
+      "url": "https://www.romaca.com/all-about-camp",
+      "checked": "2026-11-20",
+      "fields": [
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "indoor_outdoor",
+        "meals_included"
+      ],
+      "note": "Researched by Claude from this page; three meals a day in the dining hall"
+    },
+    {
+      "url": "https://www.romaca.com/all-about-camp/waterfront",
+      "checked": "2026-11-20",
+      "fields": [
+        "swim_waterfront_notes"
+      ],
+      "note": "Researched by Claude from this page"
+    }
+  ],
+  "review": {
+    "status": "ready",
+    "source": {
+      "url": "https://www.romaca.com/dates-rates-application",
+      "kind": "html",
+      "title": "Summer Dates, Tuition, and Online Application"
+    },
+    "warnings": [
+      "The 7 week tuition line is labeled for returning campers who completed grades 1 to 9; the page lists no separate price for new campers.",
+      "Extra fees on top of tuition: bus or airport service from $400, supplement fee from $595, multi-day trip fee from $795 for grades 6 to 11 completed, and spending money from $70.",
+      "Street address has no house number; the camp's directions end at its sign on Longview Avenue."
+    ],
+    "unknowns": [
+      "financial aid",
+      "ACA accreditation",
+      "registration_url (the application is on campintouch, not linked as a plain page)"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://www.romaca.com/dates-rates-application",
+      "changes": [
+        "New camp, researched from https://www.romaca.com/dates-rates-application"
+      ],
+      "for_andrew": []
+    }
+  }
+}

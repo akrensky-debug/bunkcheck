@@ -1,0 +1,161 @@
+{
+  "slug": "fernwood-cove-harrison",
+  "name": "Fernwood Cove",
+  "operator_name": "Fernwood Cove",
+  "website_url": "https://www.fernwoodcove.com/",
+  "email": "cove@fernwoodcove.com",
+  "phone": "207-583-2381",
+  "street_address": "350 Island Pond Road",
+  "city": "Harrison",
+  "state": "ME",
+  "zip": "04040",
+  "camp_type": "sleepaway",
+  "gender_policy": "girls",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "swimming",
+    "arts",
+    "performing_arts",
+    "outdoor",
+    "sports"
+  ],
+  "activities": [
+    "athletics and fitness",
+    "creative arts",
+    "outdoor adventure",
+    "performing arts",
+    "studio arts",
+    "waterfront",
+    "natural horsemanship and agriculture"
+  ],
+  "description_short": "Traditional overnight camp for girls on Island Pond in Harrison, Maine, about an hour from Portland. Each girl attends one half summer session and builds her own schedule from more than 60 activities in sports, arts, outdoor adventure, waterfront and horsemanship.",
+  "price_min": 6750,
+  "price_max": 10400,
+  "price_per": "session",
+  "transportation": true,
+  "meals_included": true,
+  "swim_waterfront_notes": "Camp sits on Island Pond. Campers take one week of instructional swimming each session until they have finished 7th grade and reached Red Cross swim level 6.",
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Session I",
+      "start_date": "2027-06-24",
+      "end_date": "2027-07-18",
+      "price": 10400,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session II",
+      "start_date": "2027-07-22",
+      "end_date": "2027-08-15",
+      "price": 10400,
+      "availability": "unknown"
+    },
+    {
+      "name": "Rookie Camp Session 1 (just finished grades 1 to 3)",
+      "start_date": "2027-06-24",
+      "end_date": "2027-07-09",
+      "price": 6750,
+      "availability": "unknown"
+    },
+    {
+      "name": "Rookie Camp Session 2 (just finished grades 1 to 3)",
+      "start_date": "2027-07-22",
+      "end_date": "2027-08-06",
+      "price": 6750,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.fernwoodcove.com/",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "gender_policy"
+      ],
+      "note": "Researched by Claude from this page. Girls sleepaway camp with 3 and a half week sessions; address and phone in the footer."
+    },
+    {
+      "url": "https://www.fernwoodcove.com/about/dates-and-tuition/",
+      "checked": "2026-11-20",
+      "fields": [
+        "price_min",
+        "price_max",
+        "price_per",
+        "transportation",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. 2027 dates. Full session tuition $10,400; two week Rookie Camp $6,750. Horse program is extra ($725 for 1 week, $2,100 for 3 weeks, $4,050 for Savvy Club). Round trip bus or van from Portland Jetport, Boston Logan, Boston suburbs, Fairfield CT, Port Chester NY and Lincoln Center NYC for a fee ($150 to $425 round trip)."
+    },
+    {
+      "url": "https://www.fernwoodcove.com/about/faqs/",
+      "checked": "2026-11-20",
+      "fields": [
+        "description_short",
+        "meals_included",
+        "swim_waterfront_notes"
+      ],
+      "note": "Researched by Claude from this page. Island Pond, all girls, half summer camp; three meals a day served family style and buffet."
+    },
+    {
+      "url": "https://www.fernwoodcove.com/about/activities/",
+      "checked": "2026-11-20",
+      "fields": [
+        "activities",
+        "primary_categories",
+        "secondary_categories"
+      ],
+      "note": "Researched by Claude from this page. Seven activity areas with over sixty choices."
+    }
+  ],
+  "review": {
+    "status": "ready",
+    "source": {
+      "url": "https://www.fernwoodcove.com/",
+      "kind": "html",
+      "title": "Fernwood Cove | Summer Camp Maine | Girls Sleepaway Camp"
+    },
+    "warnings": [
+      "Horse program and transportation cost extra on top of tuition.",
+      "The site gives grades for Rookie Camp only (girls just finishing grades 1 to 3); no overall age or grade range is stated."
+    ],
+    "unknowns": [
+      "age_min",
+      "age_max",
+      "grade_min",
+      "grade_max",
+      "registration_url",
+      "extended_care",
+      "financial_aid",
+      "refund_policy_summary",
+      "special_needs_notes",
+      "aca_accredited",
+      "indoor_outdoor"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://www.fernwoodcove.com/",
+      "changes": [
+        "New camp, researched from https://www.fernwoodcove.com/",
+        "Used the 2027 season from the Dates and Rates page: two sessions of about three and a half weeks plus two week Rookie Camp sessions",
+        "Fernwood Cove (Harrison) is a different camp from Camp Fernwood (Poland), which is already listed"
+      ],
+      "for_andrew": []
+    }
+  }
+}

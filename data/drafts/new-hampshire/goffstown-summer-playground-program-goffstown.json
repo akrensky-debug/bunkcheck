@@ -1,0 +1,161 @@
+{
+  "slug": "goffstown-summer-playground-program-goffstown",
+  "name": "Goffstown Summer Playground Program",
+  "operator_name": "Town of Goffstown Parks & Recreation",
+  "website_url": "https://goffstownnh.gov/449/Summer-Playground-Program",
+  "registration_url": "https://goffstown.recdesk.com/Community/Home",
+  "email": "Recreation@GoffstownNH.gov",
+  "street_address": "9 Barnard Lane",
+  "city": "Goffstown",
+  "state": "NH",
+  "zip": "03045",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "sports",
+    "swimming",
+    "arts"
+  ],
+  "activities": [
+    "arts and crafts",
+    "card and board games",
+    "outdoor games",
+    "sports",
+    "swimming",
+    "special event fridays"
+  ],
+  "age_min": 7,
+  "age_max": 13,
+  "description_short": "Town run day camp at Barnard Park for Goffstown residents, weekdays 8:30 to 4:00 for eight weeks. Mornings are group sports, games and crafts, afternoons are swim time in the park pool, and Fridays bring special events.",
+  "indoor_outdoor": "outdoor",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Week 1 (tentative)",
+      "start_date": "2026-06-22",
+      "end_date": "2026-06-26",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 2 (no camp July 3) (tentative)",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-02",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 3 (tentative)",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 4 (tentative)",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 5 (tentative)",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 6 (tentative)",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 7 (tentative)",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 8 (tentative)",
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-14",
+      "price": null,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://goffstownnh.gov/449/Summer-Playground-Program",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "email",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "description_short",
+        "indoor_outdoor",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page; page updated January 8, 2026: 8 week program at Barnard Park, 9 Barnard Lane, 80 campers a week, registration March 4, 2026; week dates marked tentative (week 1 is printed 'June 22nd to July 26th', read as June 22 to 26); zip from the Parks & Recreation address"
+    },
+    {
+      "url": "https://goffstownnh.gov/Faq.aspx?QID=185",
+      "checked": "2026-11-20",
+      "fields": [
+        "age_min",
+        "age_max"
+      ],
+      "note": "Researched by Claude from this page; youngest campers at least 7 or finished first grade; oldest 13 and may not turn 14 during camp"
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://goffstownnh.gov/449/Summer-Playground-Program",
+      "kind": "html",
+      "title": "Summer Playground Program | Goffstown, NH"
+    },
+    "warnings": [
+      "Open to Goffstown residents only.",
+      "The only posted fee is $95 a week, which the page says is the 2025 fee and could change in 2026, so no price is recorded.",
+      "Week dates are marked tentative, and week 1 has a typo on the page ('June 22nd to July 26th')."
+    ],
+    "unknowns": [
+      "2026 price",
+      "extended care",
+      "meals (campers bring lunch per the daily schedule, not stated outright)",
+      "financial aid",
+      "phone"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://goffstownnh.gov/449/Summer-Playground-Program",
+      "changes": [
+        "New camp, researched from https://goffstownnh.gov/449/Summer-Playground-Program",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
+      ],
+      "for_andrew": [
+        "The only fee on the page is the 2025 rate ($95 a week). Leave price blank, or show the 2025 fee with a note?",
+        "Residents only town camp. List it?"
+      ]
+    }
+  }
+}
