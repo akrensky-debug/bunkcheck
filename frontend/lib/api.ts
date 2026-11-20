@@ -127,6 +127,7 @@ export async function searchCamps(params: {
   categories?: string[]
   max_price_per_week?: number
   limit?: number
+  sort?: 'best_match' | 'distance'
 }): Promise<SearchResponse> {
   const res = await fetch(`${API}/api/v1/search`, {
     method: 'POST',
