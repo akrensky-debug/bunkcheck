@@ -11,6 +11,6 @@ export async function raiseHand(email: string, state: string, town: string, kids
   if (res.ok) return
   const body = await res.json().catch(() => ({}))
   // A validation error from the API comes back as a list; ours come back as a sentence.
-  const detail = Array.isArray(body.detail) ? "That doesn't look like an email address." : body.detail
+  const detail = Array.isArray(body.detail) ? "Something in the form didn't go through. Check it and try again." : body.detail
   throw new Error(typeof detail === 'string' ? detail : 'We couldn’t save that. Please try again.')
 }

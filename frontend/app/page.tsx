@@ -156,9 +156,11 @@ export default function AgentHome() {
 
         {empty ? (
           <div className="mx-auto flex w-full max-w-narrow flex-1 flex-col pb-16 pt-8 sm:pt-20 lg:pt-24">
-            <h1 className="font-display text-display text-ink text-balance lg:-mr-48">
-              Planning summer shouldn&rsquo;t take{' '}
-              <span className="marker whitespace-nowrap">all winter.</span>
+            <h1 className="font-display text-display text-ink">
+            {/* Three lines, broken where the sentence turns. Only a phone narrower than 360px wraps one. */}
+            <span className="block">Planning summer</span>
+            <span className="block">shouldn&rsquo;t take</span>
+            <span className="marker whitespace-nowrap">all winter.</span>
             </h1>
             <p className="mt-5 max-w-measure text-lead text-muted">
               More than 450 summer camps, with dates, hours and prices, in one place. Tell us who you&rsquo;re planning for and we&rsquo;ll lay out the summer week by week, gaps and all.

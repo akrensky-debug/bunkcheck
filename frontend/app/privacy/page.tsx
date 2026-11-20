@@ -41,6 +41,7 @@ export default function PrivacyPage() {
         <li><strong>Info kit.</strong> Details you add to the info kit (contacts, pickups, insurance, medical notes) are encrypted before storage, are never sent to the AI model, and are shared only through links you create, which you can revoke. Every opening of a shared link is logged so you can see it.</li>
         <li><strong>The waiting list.</strong> If you join the line to hear when Bunkcheck opens in your state, we keep your email address, your state and, if you give them, your town and your kids&apos; ages. We use them to tell you when your state opens and to decide where to open next. Email us to be taken off.</li>
         <li><strong>Registration alerts.</strong> If you ask us to email you when a camp&apos;s registration opens, we keep your email address and which camp, nothing else. Nothing is sent until you confirm, and every email has a link to stop it.</li>
+        <li><strong>Your location.</strong> If you tap &ldquo;Use my location&rdquo; on camp search, your browser asks first, then sends us your position rounded to about a kilometre. We turn it into the nearest town and search there. We don&apos;t store the position.</li>
         <li><strong>Usage.</strong> We record page views and actions with a random session identifier stored in your browser, to improve the site.</li>
       </ul>
 

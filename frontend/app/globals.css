@@ -56,6 +56,9 @@
   body {
     @apply bg-bg text-ink font-sans text-body antialiased;
     font-feature-settings: 'kern';
+    /* Full-width bands (Band) reach 100vw, which includes the scrollbar on desktop. Clip, not
+       hidden: it doesn't make the body a scroll container, so the sticky header still sticks. */
+    overflow-x: clip;
   }
 
   h1, h2, h3, h4 {
