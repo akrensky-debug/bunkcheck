@@ -1,0 +1,147 @@
+{
+  "slug": "summer-at-taft-watertown",
+  "name": "Summer@Taft",
+  "operator_name": "The Taft School",
+  "website_url": "https://www.taftschool.org/summer",
+  "registration_url": "https://www.taftschool.org/summer/apply",
+  "phone": "860-945-7777",
+  "street_address": "110 Woodbury Road",
+  "city": "Watertown",
+  "state": "CT",
+  "zip": "06795",
+  "camp_type": "specialty",
+  "primary_categories": [
+    "academic"
+  ],
+  "secondary_categories": [
+    "arts",
+    "sports"
+  ],
+  "activities": [
+    "academic courses",
+    "writing",
+    "algebra",
+    "test prep",
+    "golf",
+    "arts",
+    "athletics",
+    "off campus trips"
+  ],
+  "description_short": "Academic enrichment programs at The Taft School in Watertown, mostly residential, for middle and high school students. Four week programs (Young Scholars for middle school, Liberal Studies for grades 9 to 11) and two week writing and algebra workshops combine small classes with daily athletics, arts and weekend trips around New England.",
+  "indoor_outdoor": "both",
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Four-week programs (Young Scholars, Liberal Studies)",
+      "start_date": "2027-07-05",
+      "end_date": "2027-07-30",
+      "price": 9000,
+      "availability": "unknown"
+    },
+    {
+      "name": "Two-week workshops, Session I",
+      "start_date": "2027-07-05",
+      "end_date": "2027-07-16",
+      "price": 5750,
+      "availability": "unknown"
+    },
+    {
+      "name": "Two-week workshops, Session II",
+      "start_date": "2027-07-19",
+      "end_date": "2027-07-30",
+      "price": 5750,
+      "availability": "unknown"
+    }
+  ],
+  "price_min": 4500,
+  "price_max": 9000,
+  "price_per": "session",
+  "financial_aid": true,
+  "meals_included": true,
+  "age_min": 12,
+  "grade_max": 11,
+  "sources": [
+    {
+      "url": "https://www.taftschool.org/summer",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "description_short",
+        "indoor_outdoor",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Summer@Taft page: 2027 dates for Young Scholars and Liberal Studies (July 5 to 30) and the two week Young Writer's Lab, Writer's Lab and Algebra I Workshop (July 5 to 16 and July 19 to 30). Address and phone in the page footer. Session prices are the boarding rates."
+    },
+    {
+      "url": "https://www.taftschool.org/summer/apply/tuition-and-fees",
+      "checked": "2026-11-20",
+      "fields": [
+        "price_min",
+        "price_max",
+        "price_per",
+        "financial_aid",
+        "meals_included"
+      ],
+      "note": "Researched by Claude from this page. Tuition and Fees for 2027: four week boarding $9,000 all inclusive; full time day students $4,500 (includes lunch, 8 am to 4:30 pm weekdays); two week programs $5,750 all inclusive. Limited need based aid for U.S. students in Young Scholars or Liberal Studies; none for two week programs."
+    },
+    {
+      "url": "https://www.taftschool.org/summer/programs/young-scholars",
+      "checked": "2026-11-20",
+      "fields": [
+        "age_min"
+      ],
+      "note": "Researched by Claude from this page. Young Scholars: for middle school students; applicants must be 12 by June 1 of the program year."
+    },
+    {
+      "url": "https://www.taftschool.org/summer/programs/liberal-studies",
+      "checked": "2026-11-20",
+      "fields": [
+        "grade_max"
+      ],
+      "note": "Researched by Claude from this page. Liberal Studies: for high school students in grades 9 to 11."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.taftschool.org/summer",
+      "kind": "html",
+      "title": "Summer@Taft - Taft School"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Refund policy",
+      "ACA accreditation",
+      "Golf program dates and price"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "city 'Watertown', CT is not in cities.py"
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://www.taftschool.org/summer",
+      "changes": [
+        "New camp, researched from https://www.taftschool.org/summer",
+        "Used the 2027 season: dates and tuition are posted. The golf program is named but its dates and price were not checked, so it is not in sessions."
+      ],
+      "for_andrew": [
+        "Watertown is not in cities.py, so this draft fails validation until it is added. Watertown is its own town.",
+        "This is an academic summer school, mostly boarding with a day option for the four week programs. I set camp_type to specialty with an academic category. List it, and as specialty or sleepaway?"
+      ]
+    }
+  }
+}
