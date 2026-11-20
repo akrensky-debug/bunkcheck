@@ -16,6 +16,8 @@ const PATHS = {
   plus: <path d="M8 3v10M3 8h10" />,
   external: <path d="M9.5 2.5h4v4M13.5 2.5 8 8M11.5 9.5v4h-9v-9h4" />,
   clock: <><circle cx="8" cy="8" r="5.75" /><path d="M8 5v3.25l2 1.25" /></>,
+  // The arrow phones use for "where I am".
+  'near-me': <path d="M13.5 2.5 2.5 7.25l4.75 1.5 1.5 4.75 4.75-11Z" />,
   // Status shapes (StatusDot, StatusMark). Each tone has its own silhouette, so status reads
   // without color: a filled disc with a check, a half-filled disc, an open ring, a dash.
   'status-go': <><circle cx="8" cy="8" r="6.25" fill="currentColor" /><path d="M5.25 8.25l1.9 1.9 3.6-4.15" className="stroke-surface" strokeWidth={1.75} /></>,

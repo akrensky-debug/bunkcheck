@@ -106,7 +106,7 @@ Limits marked *new* come from #77 and #78. Everything else is on `main` today.
 
 | Route | Auth | Limit | Abuse case |
 | --- | --- | --- | --- |
-| `POST /search`, `/compare`, `/plan`; `GET /camps/...`, `/activities/...`, `/schools`, `/kit/fields` | None | None | Scraping public data; database load |
+| `POST /search`, `/compare`, `/plan`; `GET /camps/...`, `/activities/...`, `/schools`, `/kit/fields`, `POST /places/nearest` | None | None | Scraping public data; database load. `/places/nearest` takes a position (rounded to about 1 km by the page) in the body, so it stays out of request logs, and returns a town; it stores nothing |
 | `/mcp`, `/chatgpt/mcp`, `/claude/mcp` | None | 600 a minute per IP (*fixed:* now the real IP) | Scraping; runaway assistant loops |
 | `/api/activity/v1/*` (10 routes) | Partner key, except the schema and session `.ics` | 120 a minute per key by default | A leaked key; revoke it in `api_clients` |
 | `GET /docs`, `/redoc`, `/openapi.json`, `/health` | None | None | Shows our route list; public by choice for an agent-first API |

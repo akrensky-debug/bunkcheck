@@ -4,7 +4,10 @@ from __future__ import annotations
 
 import math
 
-from campfinder.seed.cities import parse_location_string
+from campfinder.seed.cities import CITY_COORDS, parse_location_string
+
+# How far "near me" reaches for a town we know. Search itself looks 30 miles around that town.
+NEAREST_PLACE_MILES = 25.0
 
 
 def haversine_miles(lat1: float, lng1: float, lat2: float, lng2: float) -> float:
@@ -27,6 +30,22 @@ def geocode_location(location_str: str) -> tuple[float, float] | None:
     Returns None if the location cannot be resolved.
     """
     return parse_location_string(location_str)
+
+
+def nearest_place(lat: float, lng: float, max_miles: float = NEAREST_PLACE_MILES) -> str | None:
+    """The town we know closest to a point, as 'City, ST', or None if none is within max_miles.
+
+    "Near me" on camp search sends the browser's position here once and searches the town that
+    comes back, so the coordinates are never stored and the search link stays shareable.
+    """
+    best: tuple[float, str, str] | None = None
+    for (city, state), (clat, clng) in CITY_COORDS.items():
+        d = haversine_miles(lat, lng, clat, clng)
+        if best is None or d < best[0]:
+            best = (d, city, state)
+    if best is None or best[0] > max_miles:
+        return None
+    return f"{' '.join(w.capitalize() for w in best[1].split())}, {best[2]}"
 
 
 def build_postgis_distance_filter(lat: float, lng: float, radius_miles: float) -> str:

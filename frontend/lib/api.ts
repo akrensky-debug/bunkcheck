@@ -99,6 +99,23 @@ export interface CampDetail extends CampSearchResult {
   trust_summary: TrustSummary
 }
 
+/** The town we know nearest a position, for "Near me". The position is not stored. */
+export async function nearestPlace(lat: number, lng: number): Promise<string> {
+  // About 1 km is plenty to pick a town, and it's all we send. A POST keeps it out of request logs.
+  const res = await fetch(`${API}/api/v1/places/nearest`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ lat: Math.round(lat * 100) / 100, lng: Math.round(lng * 100) / 100 }),
+    cache: 'no-store',
+  })
+  if (res.status === 404) {
+    const body = await res.json().catch(() => ({}))
+    throw new Error(typeof body.detail === 'string' ? body.detail : 'We don\u2019t have camps near you yet.')
+  }
+  if (!res.ok) throw new Error('Couldn\u2019t look up your town. Type it instead.')
+  return (await res.json()).location
+}
+
 export async function searchCamps(params: {
   location: string
   age?: number
