@@ -1,0 +1,115 @@
+{
+  "slug": "mariners-adventure-camp-bath",
+  "name": "Mariners Adventure Camp",
+  "operator_name": "Maine Maritime Museum",
+  "website_url": "https://www.mainemaritimemuseum.org/mariners-adventure",
+  "registration_url": "https://maritimeme.campbrainregistration.com/?returnUrl=%252FLanding",
+  "email": "camp@maritimeme.org",
+  "phone": "(207) 443-1316",
+  "street_address": "243 Washington St",
+  "city": "Bath",
+  "state": "ME",
+  "zip": "04530",
+  "camp_type": "day",
+  "primary_categories": [
+    "academic",
+    "sailing"
+  ],
+  "secondary_categories": [
+    "arts",
+    "leadership"
+  ],
+  "activities": [
+    "carpentry",
+    "blacksmithing",
+    "sailmaking",
+    "navigation",
+    "marlinspike seamanship",
+    "schooner sailing trip"
+  ],
+  "grade_min": 6,
+  "grade_max": 8,
+  "age_min": 11,
+  "age_max": 14,
+  "description_short": "A week-long day camp at the Maine Maritime Museum in Bath for students entering grades 6 to 8. Campers learn traditional ship trades such as carpentry, blacksmithing, sailmaking and navigation, and take a trip to Bailey Island to sail a schooner.",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Session 1: Leading from the Helm (open to campers of underrepresented identities)",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 2: Makers and Mariners (listed as sold out)",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": null,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.mainemaritimemuseum.org/mariners-adventure",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "age_min",
+        "age_max",
+        "description_short",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Grades are rising grades 6 to 8; ages 11 to 14 derived from grades. Address is the museum's address on the page."
+    }
+  ],
+  "review": {
+    "status": "ready",
+    "source": {
+      "url": "https://www.mainemaritimemuseum.org/mariners-adventure",
+      "kind": "html",
+      "title": "Mariners Adventure | Summer Day Camp for Middle School | Maine Maritime Museum"
+    },
+    "warnings": [
+      "Session 1 is described as open to campers of underrepresented identities.",
+      "Session 2 was marked sold out in 2026; availability is set to unknown because the season is past."
+    ],
+    "unknowns": [
+      "price",
+      "daily hours",
+      "extended care",
+      "lunch",
+      "financial aid",
+      "2027 dates"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://www.mainemaritimemuseum.org/mariners-adventure",
+      "changes": [
+        "Read the page at https://www.mainemaritimemuseum.org/mariners-adventure again: it now loads and names the camp (the listing tool saw no camp on it earlier).",
+        "Recorded the 2026 season: two one-week sessions. No 2027 dates are posted yet.",
+        "Ages 11 to 14 are derived from rising grades 6 to 8.",
+        "Checked it is not the published Kennebec Explorers Camp, which is a different Maine Maritime Museum program."
+      ],
+      "for_andrew": []
+    }
+  }
+}
