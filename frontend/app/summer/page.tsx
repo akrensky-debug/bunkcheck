@@ -175,7 +175,7 @@ export default function SummerPage() {
       </div>
 
       {board.ready ? (
-        <SummerBoard board={board} busy={busy} onAdd={onAdd} onChoose={onChoose} onRemove={onRemove} />
+        <SummerBoard board={board} busy={busy} home={family.profile.home_location ?? null} onAdd={onAdd} onChoose={onChoose} onRemove={onRemove} />
       ) : (
         <div className="max-w-narrow">
           <KidLines kids={board.kids} year={summerYear()} />

@@ -23,9 +23,11 @@ export function KidLines({ kids, year }: { kids: Array<{ name: string; age: numb
   )
 }
 
-export function SummerBoard({ board, busy, onAdd, onChoose, onRemove }: {
+export function SummerBoard({ board, busy, home = null, onAdd, onChoose, onRemove }: {
   board: Board
   busy: boolean
+  /** The family's town, so "Browse all camps" searches there instead of an empty search. */
+  home?: string | null
   onAdd: (kid: string, week: string, o: Option, choose: boolean) => void
   onChoose: (p: Pick) => void
   onRemove: (p: Pick) => void
@@ -33,7 +35,7 @@ export function SummerBoard({ board, busy, onAdd, onChoose, onRemove }: {
   const [kidIndex, setKidIndex] = useState(0)
   const [openCell, setOpenCell] = useState<string | null>(null)
   const kid = board.kids[Math.min(kidIndex, board.kids.length - 1)]
-  const props = { busy, openCell, setOpenCell, onAdd, onChoose, onRemove }
+  const props = { busy, home, openCell, setOpenCell, onAdd, onChoose, onRemove }
 
   return (
     <section className="space-y-6" aria-label="Your summer board">
@@ -153,11 +155,15 @@ function KidStatus({ kid, named, anchor }: { kid: KidRow; named?: boolean; ancho
   )
 }
 
-function WeekCell({ kid, cell, showWeek, busy, openCell, setOpenCell, onAdd, onChoose, onRemove }: {
+// A week opens on its three nearest camps; the rest are one tap away, so a week never fills two screens.
+const FIRST_OPTIONS = 3
+
+function WeekCell({ kid, cell, showWeek, busy, home, openCell, setOpenCell, onAdd, onChoose, onRemove }: {
   kid: KidRow
   cell: Cell
   showWeek?: boolean
   busy: boolean
+  home: string | null
   openCell: string | null
   setOpenCell: (k: string | null) => void
   onAdd: (kid: string, week: string, o: Option, choose: boolean) => void
@@ -166,6 +172,14 @@ function WeekCell({ kid, cell, showWeek, busy, openCell, setOpenCell, onAdd, onC
 }) {
   const key = `${kid.name}|${cell.week_of}`
   const open = openCell === key
+  const [allOptions, setAllOptions] = useState(false)
+  // Camps not already on this week's list, nearest first (no distance last), then cheapest.
+  const options = cell.options
+    .filter(o => !cell.picks.some(p => p.camp_id === o.camp_id))
+    .sort((a, b) => (a.distance_miles ?? Infinity) - (b.distance_miles ?? Infinity)
+      || (a.price_per_week ?? Infinity) - (b.price_per_week ?? Infinity))
+  const shown = allOptions ? options : options.slice(0, FIRST_OPTIONS)
+  const browse = `/search?${new URLSearchParams({ ...(home ? { location: home } : {}), ...(kid.age != null ? { age: String(kid.age) } : {}) })}`
   const tone = cellTone(cell)
   if (cell.state === 'not_needed') return (
     <div className={cx('pl-3', statusEdge(tone))}>
@@ -229,13 +243,13 @@ function WeekCell({ kid, cell, showWeek, busy, openCell, setOpenCell, onAdd, onC
               ))}
             </ul>
           )}
-          {cell.options.length > 0 ? (
+          {options.length > 0 ? (
             <div className="space-y-2">
               <Text variant="small" tone="muted">
-                {cell.options.length} camp{cell.options.length === 1 ? '' : 's'} near you this week
+                {cell.picks.length ? 'More' : options.length} camp{options.length === 1 ? '' : 's'} near you this week, nearest first
               </Text>
               <ul className="space-y-3">
-                {cell.options.filter(o => !cell.picks.some(p => p.camp_id === o.camp_id)).map(o => (
+                {shown.map(o => (
                   <li key={o.camp_id} className="space-y-1">
                     <Text variant="small" className="font-semibold"><TextLink href={`/camps/${o.camp_id}`}>{o.name}</TextLink></Text>
                     <Meta parts={[
@@ -252,11 +266,16 @@ function WeekCell({ kid, cell, showWeek, busy, openCell, setOpenCell, onAdd, onC
                   </li>
                 ))}
               </ul>
+              {options.length > shown.length && (
+                <Button variant="link" size="sm" onClick={() => setAllOptions(true)}>
+                  Show {options.length - shown.length} more
+                </Button>
+              )}
             </div>
           ) : !cell.picks.length && (
             <Text variant="small" tone="muted">No camps near you list this week yet.</Text>
           )}
-          <TextLink href={`/search?age=${kid.age ?? ''}`} arrow className="text-small">Browse all camps</TextLink>
+          <TextLink href={browse} arrow className="text-small">Browse all camps{home ? ` near ${home.split(',')[0]}` : ''}</TextLink>
         </div>
       )}
     </div>
