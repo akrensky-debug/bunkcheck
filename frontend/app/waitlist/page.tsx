@@ -7,7 +7,7 @@ import { Text, TextLink } from '@/components/ui'
 // (lib/site-mode.ts) the middleware serves this page at "/".
 export const metadata: Metadata = {
   title: 'Bunkcheck: AI summer camp planner for New England families',
-  description: 'An AI summer camp planner built by parents. Plan, book and schedule your family’s summer in a fraction of the time. Opening in New England one state at a time.',
+  description: 'An AI summer camp planner built by parents. Plan and schedule your family’s summer in a fraction of the time. Opening in New England one state at a time.',
   alternates: { canonical: '/' },
 }
 
@@ -22,7 +22,7 @@ export default function HandRaiserPage() {
         {/* Andrew's copy, 19 November 2026. 457 active camps in the live database that day. */}
         <p className="mt-5 max-w-measure text-lead text-muted">
           Bunkcheck was created to take the legwork out of summer camp wrangling. More than 450 summer camps, with
-          their latest dates, costs and details, all in one place. Now you can plan, book and schedule the whole
+          their latest dates, costs and details, all in one place. Now you can plan and schedule the whole
           summer in a fraction of the time.
         </p>
         <p className="mt-4 max-w-measure text-lead text-muted">
