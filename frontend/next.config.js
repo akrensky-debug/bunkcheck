@@ -7,6 +7,25 @@ const API_URL = process.env.NEXT_PUBLIC_API_URL
   || (process.env.VERCEL ? 'https://api-production-4a03.up.railway.app' : 'http://localhost:8000')
 const MCP_UPSTREAM = API_URL
 
+// docs/security.md, open gap 1. frame-ancestors is the only CSP directive on purpose: it stops
+// another site putting our pages in a frame (clickjacking the share, join and confirm pages) and
+// restricts nothing else, so it can't break Supabase sign-in the way a full policy could.
+// X-Frame-Options says the same to older browsers.
+const SITE_HEADERS = [
+  { key: 'Content-Security-Policy', value: "frame-ancestors 'none'" },
+  { key: 'X-Frame-Options', value: 'DENY' },
+  { key: 'X-Content-Type-Options', value: 'nosniff' },
+  { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
+]
+
+// Pages whose address holds a private token. Keep the token out of the Referer header a link on
+// the page would send, and keep the page out of search.
+const TOKEN_PAGES = ['/share/:path*', '/join/:path*', '/inquiries/:path*', '/alerts/:path*', '/owners/:path*']
+const TOKEN_HEADERS = [
+  { key: 'Referrer-Policy', value: 'no-referrer' },
+  { key: 'X-Robots-Tag', value: 'noindex, nofollow' },
+]
+
 const nextConfig = {
   output: 'standalone',
   env: {
@@ -18,11 +37,18 @@ const nextConfig = {
   // lives on www.bunkcheck.ai (a domain we already prove we own) and needs no api. subdomain.
   // Only our own pages may ask for location (camp search's "Use my location"); nothing on the
   // site uses the camera, microphone or payments, so nothing embedded can ask for them either.
+  // When two entries set the same header for a path, the later one wins.
   async headers() {
-    return [{
-      source: '/:path*',
-      headers: [{ key: 'Permissions-Policy', value: 'geolocation=(self), camera=(), microphone=(), payment=()' }],
-    }]
+    return [
+      {
+        source: '/:path*',
+        headers: [
+          { key: 'Permissions-Policy', value: 'geolocation=(self), camera=(), microphone=(), payment=()' },
+          ...SITE_HEADERS,
+        ],
+      },
+      ...TOKEN_PAGES.map(source => ({ source, headers: TOKEN_HEADERS })),
+    ]
   },
   async rewrites() {
     return [
