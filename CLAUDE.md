@@ -68,6 +68,7 @@ older docs keep the working name CampFinder; don't rename them.
 `docs/DEPLOY.md`, `docs/household.md`, `docs/activity-api.md`, `docs/chatgpt-app.md`,
 `docs/claude-connector.md`, `docs/ingest-test-set.md`, `docs/owner-confirmation.md`,
 `docs/booking-strategy.md`, `docs/registration-alerts.md`, `docs/inquiries.md`,
+`docs/parent-checks.md` (spec, not built: parents confirm or report a fact),
 `docs/security.md` (threat model, every public route with its auth and limits, open gaps).
 
 ## Order of work
