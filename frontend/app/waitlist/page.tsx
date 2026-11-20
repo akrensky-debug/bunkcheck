@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { HandRaiserForm } from '@/components/home/HandRaiser'
 import { ExampleSummer, Promises } from '@/components/home/Landing'
-import { Text, TextLink } from '@/components/ui'
+import { Band, Text, TextLink } from '@/components/ui'
 
 // The public front door while the app itself lives on dev.bunkcheck.ai. On a hand-raiser host
 // (lib/site-mode.ts) the middleware serves this page at "/".
@@ -41,10 +41,11 @@ export default function HandRaiserPage() {
           <HandRaiserForm />
         </div>
 
-        <div className="mt-16 space-y-16 sm:mt-24">
-          <ExampleSummer title="What you&rsquo;re in line for" />
+        {/* Show the product on tint, then the promises on navy, back to back; then paper. */}
+        <div className="mt-16 sm:mt-24">
+          <Band tone="tint"><ExampleSummer title="What you&rsquo;re in line for" /></Band>
           <Promises />
-          <div className="border-t border-line pt-8">
+          <div className="pt-12">
             <Text variant="small" tone="muted">
               Run a camp? <TextLink href="/operators">Listing is free</TextLink>
             </Text>
