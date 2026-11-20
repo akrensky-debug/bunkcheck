@@ -1,0 +1,172 @@
+{
+  "slug": "camp-mansfield-mansfield",
+  "name": "Camp Mansfield",
+  "operator_name": "Mansfield Parks and Recreation",
+  "website_url": "https://www.mansfieldct.gov/2424/Camp-Mansfield",
+  "registration_url": "https://ctmansfieldweb.myvscloud.com/webtrac/web/",
+  "email": "CapobiancoS@mansfieldct.org",
+  "street_address": "Mansfield Middle School",
+  "city": "Mansfield",
+  "state": "CT",
+  "camp_type": "day",
+  "primary_categories": [
+    "general",
+    "outdoor"
+  ],
+  "secondary_categories": [
+    "swimming",
+    "nature"
+  ],
+  "activities": [
+    "archery",
+    "arts and crafts",
+    "canoeing",
+    "kayaking",
+    "nature and science",
+    "sports and games",
+    "free swim",
+    "swim education",
+    "camp songs",
+    "themed weeks",
+    "field trips"
+  ],
+  "grade_min": 0,
+  "grade_max": 9,
+  "description_short": "A town run outdoor day camp for children entering kindergarten through 9th grade, 9 am to 3 pm, at Mansfield Middle School, Schoolhouse Brook Park and Bicentennial Pond. Campers do archery, canoeing and kayaking, swimming, sports, nature and crafts in weekly themes; there is a half day KinderCamp for kindergarten and field trips for the 7th to 9th grade group.",
+  "indoor_outdoor": "both",
+  "extended_care": true,
+  "meals_included": true,
+  "financial_aid": true,
+  "special_needs_notes": "Campers who need extra support or adaptations take part with their own age group; a special assistance form is due at least 15 working days before the session.",
+  "price_per_week": 267,
+  "price_min": 164,
+  "price_max": 267,
+  "price_per": "week",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Session 1: Science and Nature Week",
+      "start_date": "2026-06-24",
+      "end_date": "2026-06-26",
+      "price": 164,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 2: Decades Week",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-02",
+      "price": 216,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 3: Fantasy Week",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": 267,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 4: Mansfield Got Talent",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": 267,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 5: Under the Sea Week",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": 267,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 6: Mystery Week",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": 267,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 7: Super Hero Week",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": 267,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 8: Carnival Week",
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-14",
+      "price": 267,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.mansfieldct.gov/2424/Camp-Mansfield",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "email",
+        "street_address",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "description_short",
+        "indoor_outdoor",
+        "extended_care",
+        "meals_included",
+        "financial_aid",
+        "special_needs_notes",
+        "price_per_week",
+        "price_min",
+        "price_max",
+        "price_per",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Camp Mansfield 2026 page. Prices are the non-resident Explorers (grades K to 6) rates: $164 for 3 day Session 1, $216 for 4 day Session 2, $267 a week after; residents pay $154, $206 and $257. KinderCamp (half day) is $90 to $143 and Adventurers (grades 7 to 9) $201 to $328 non-resident. AM, PM and combined camp care cost extra. Three daily lunch choices are included for full day campers. Camp Mansfield Assistance application available. Grades are the grade entering in fall. The page gives no street address or zip for the middle school; forms go to the Community Center, 10 S. Eagleville Road, Storrs, CT 06268."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.mansfieldct.gov/2424/Camp-Mansfield",
+      "kind": "html",
+      "title": "Camp Mansfield | Mansfield, CT"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Street address and zip of Mansfield Middle School",
+      "2027 dates and prices",
+      "Transportation",
+      "ACA accreditation"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "missing required zip",
+      "city 'Mansfield', CT is not in cities.py"
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://www.mansfieldct.gov/2424/Camp-Mansfield",
+      "changes": [
+        "New camp, researched from https://www.mansfieldct.gov/2424/Camp-Mansfield",
+        "Used the 2026 season: no 2027 information is posted. The page says the start date depends on the last day of Mansfield schools."
+      ],
+      "for_andrew": [
+        "Mansfield is not in cities.py, so this draft fails validation until it is added (the camp is in Mansfield; its post office name is Storrs, also not in cities.py).",
+        "The town's page names Mansfield Middle School but gives no street address or zip, so the draft also fails on zip.",
+        "The page says ages 4 and a half to 15, and grades K to 9 elsewhere (with CITs above that). I recorded grades K to 9 only."
+      ]
+    }
+  }
+}
