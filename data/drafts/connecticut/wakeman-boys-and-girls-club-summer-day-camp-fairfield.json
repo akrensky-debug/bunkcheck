@@ -68,6 +68,14 @@
         "state"
       ],
       "note": "Researched by Claude from this page. Southport Clubhouse page: 385 Center Street, Southport, CT. Southport is a village of Fairfield, so the city is Fairfield. No zip is given."
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=385+Center+Street%2C+Southport%2C+CT&benchmark=Public_AR_Current&format=json",
+      "checked": "2026-11-22",
+      "fields": [
+        "zip"
+      ],
+      "note": "ZIP looked up with the Census Bureau geocoder from the address on the camp's page (385 CENTER ST, SOUTHPORT, CT, 06890)"
     }
   ],
   "review": {
@@ -87,24 +95,23 @@
       "ACA accreditation"
     ],
     "low_confidence": [],
-    "errors": [
-      "missing required zip"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-20",
       "page_checked": "https://www.wakemanclub.org/summer-camp",
       "changes": [
         "New camp, researched from https://www.wakemanclub.org/summer-camp",
-        "Used the 2026 season: no 2027 camp information is posted. Specialty camps (basketball, triathlon, Week of Fun, Field Trip Week) and teen CIT and LIT roles are left out."
+        "Used the 2026 season: no 2027 camp information is posted. Specialty camps (basketball, triathlon, Week of Fun, Field Trip Week) and teen CIT and LIT roles are left out.",
+        "ZIP 06890 looked up from the camp's street address with the Census geocoder (Andrew allowed ZIP lookups, 22 November)."
       ],
       "for_andrew": [
         "The camp runs at three clubhouses with the same dates and grades: Southport (Fairfield) and Smilow-Burroughs and Madison Avenue (both Bridgeport). Under the house rule that is one listing, placed at the Southport clubhouse. Split it into a Fairfield and a Bridgeport listing instead?",
         "Southport is a village of Fairfield and is not in cities.py, so I used Fairfield.",
-        "The club's pages give 385 Center Street, Southport without a zip, so the draft fails validation on zip.",
         "No week dates or day camp prices are in the page text (the 9 weeks are not dated and the tier prices are likely in an image). Publish without sessions or prices?",
         "Grades are the grades campers finished in June 2026 (K to 8), not the grade they enter in fall."
       ]
     }
-  }
+  },
+  "zip": "06890"
 }

@@ -145,6 +145,14 @@
         "sessions"
       ],
       "note": "Researched by Claude from this page. 2026 brochure: Camp Apex, 45 Peckville Road, Shelburne, 413-625-2493, over 30 acres, campers who have completed kindergarten through 8th grade; nine weekly themes June 22 to August 21, 2026; 160 foot tube slide, obstacle courses, hiking, stream exploring, swimming. No ZIP code is given. Session price is the non member weekly fee from the camps page."
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=45+Peckville+Road%2C+Shelburne%2C+MA&benchmark=Public_AR_Current&format=json",
+      "checked": "2026-11-22",
+      "fields": [
+        "zip"
+      ],
+      "note": "ZIP looked up with the Census Bureau geocoder from the address on the camp's page (45 PECKVILLE RD, SHELBURNE FLS, MA, 01370)"
     }
   ],
   "review": {
@@ -176,12 +184,13 @@
       "date": "2026-11-20",
       "page_checked": "https://your-y.org/camps",
       "changes": [
-        "New camp, researched from https://your-y.org/camps"
+        "New camp, researched from https://your-y.org/camps",
+        "ZIP 01370 looked up from the camp's street address with the Census geocoder (Andrew allowed ZIP lookups, 22 November)."
       ],
       "for_andrew": [
-        "Shelburne and Greenfield, MA are both missing from cities.py, so the two Franklin County YMCA drafts fail validation. No town in the table fits either.",
-        "Camp Apex has no published ZIP code; ZIP is required. Add it from a camp source, or hold the listing."
+        "Shelburne and Greenfield, MA are both missing from cities.py, so the two Franklin County YMCA drafts fail validation. No town in the table fits either."
       ]
     }
-  }
+  },
+  "zip": "01370"
 }

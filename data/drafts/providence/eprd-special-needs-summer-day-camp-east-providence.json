@@ -75,6 +75,14 @@
         "sessions"
       ],
       "note": "Researched by Claude from this page. 2026 special needs camp guidelines PDF: 9:30 am to 2:30 pm, June 22 to July 31, ages 6 to 21, $480 for six weeks, extended day $120, round trip transportation, free lunch"
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=201+Mercer+St%2C+East+Providence%2C+RI&benchmark=Public_AR_Current&format=json",
+      "checked": "2026-11-22",
+      "fields": [
+        "zip"
+      ],
+      "note": "ZIP looked up with the Census Bureau geocoder from the address on the camp's page (201 MERCER ST, EAST PROVIDENCE, RI, 02914)"
     }
   ],
   "review": {
@@ -92,20 +100,19 @@
       "Refund policy"
     ],
     "low_confidence": [],
-    "errors": [
-      "missing required zip"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-20",
       "page_checked": "https://eastprovidence.recdesk.com/RecDeskPortal/Portals/442/Special%20Needs%20%20Camp%20Guidelines2.pdf",
       "changes": [
-        "New camp, researched from https://eastprovidence.recdesk.com/RecDeskPortal/Portals/442/Special%20Needs%20%20Camp%20Guidelines2.pdf"
+        "New camp, researched from https://eastprovidence.recdesk.com/RecDeskPortal/Portals/442/Special%20Needs%20%20Camp%20Guidelines2.pdf",
+        "ZIP 02914 looked up from the camp's street address with the Census geocoder (Andrew allowed ZIP lookups, 22 November)."
       ],
       "for_andrew": [
-        "zip is missing, so the draft fails validation. The PDF gives no ZIP code and the city site refuses our fetcher; search results quote the city as 201 Mercer Street, East Providence, RI 02914. Confirm 02914 and add it.",
         "Only the 2026 season is posted; 2027 details are not up yet."
       ]
     }
-  }
+  },
+  "zip": "02914"
 }

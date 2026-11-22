@@ -66,6 +66,14 @@
         "sessions"
       ],
       "note": "Researched by Claude from this page. 2026 camp guidelines PDF on the department's RecDesk portal: Pierce Field, 8:30 am to 3:30 pm, June 29 to August 7, ages 6 to 12 as of September 1, 2026, $600 for the six week session, free lunch, no transportation"
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=201+Mercer+St%2C+East+Providence%2C+RI&benchmark=Public_AR_Current&format=json",
+      "checked": "2026-11-22",
+      "fields": [
+        "zip"
+      ],
+      "note": "ZIP looked up with the Census Bureau geocoder from the address on the camp's page (201 MERCER ST, EAST PROVIDENCE, RI, 02914)"
     }
   ],
   "review": {
@@ -84,21 +92,20 @@
       "Refund policy"
     ],
     "low_confidence": [],
-    "errors": [
-      "missing required zip"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-20",
       "page_checked": "https://eastprovidence.recdesk.com/RecDeskPortal/Portals/442/2026%20EPRD%20%20Camp%20Guidelines.pdf",
       "changes": [
-        "New camp, researched from https://eastprovidence.recdesk.com/RecDeskPortal/Portals/442/2026%20EPRD%20%20Camp%20Guidelines.pdf"
+        "New camp, researched from https://eastprovidence.recdesk.com/RecDeskPortal/Portals/442/2026%20EPRD%20%20Camp%20Guidelines.pdf",
+        "ZIP 02914 looked up from the camp's street address with the Census geocoder (Andrew allowed ZIP lookups, 22 November)."
       ],
       "for_andrew": [
-        "zip is missing, so the draft fails validation. The guidelines PDF gives no ZIP code and the city site (eastprovidenceri.gov) refuses our fetcher. Web search results quote the city's own facilities listing and bid notices as 201 Mercer Street, East Providence, RI 02914. Confirm 02914 and add it, or ask the department.",
         "Only the 2026 season is posted; 2027 details are not up yet.",
         "The PDF gives one fee ($600) with no resident or non-resident split."
       ]
     }
-  }
+  },
+  "zip": "02914"
 }

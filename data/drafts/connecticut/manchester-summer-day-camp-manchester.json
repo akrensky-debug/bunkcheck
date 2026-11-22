@@ -96,6 +96,14 @@
         "sessions"
       ],
       "note": "Researched by Claude from this page. 2026 pre-season flyer and FAQ. Open to children ages 5 to 15 who live in Manchester and have finished kindergarten; camp sites for ages 5 to 13 and a Recreation Leader in Training program for 14 and 15 year olds. Session 1 has no camp July 3. Before care 7:30 to 9 am and after care 3 to 5:30 pm, $60 a session each. The flyer gives one price ($150 a session), with no separate non-resident rate because camp is for residents only. No zip is given for the sites."
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=39+Lodge+Drive%2C+Manchester%2C+CT&benchmark=Public_AR_Current&format=json",
+      "checked": "2026-11-22",
+      "fields": [
+        "zip"
+      ],
+      "note": "ZIP looked up with the Census Bureau geocoder from the address on the camp's page (39 LODGE DR, MANCHESTER, CT, 06040)"
     }
   ],
   "review": {
@@ -113,9 +121,7 @@
       "ACA accreditation"
     ],
     "low_confidence": [],
-    "errors": [
-      "missing required zip"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-20",
@@ -123,13 +129,14 @@
       "changes": [
         "New camp, researched from https://www.manchesterct.gov/Government/Departments/Leisure-Family-and-Recreation-Department/Recreation-Divison/Recreation-Programs/Summer-Camp",
         "Used the 2026 season: no 2027 information is posted.",
-        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates.",
+        "ZIP 06040 looked up from the camp's street address with the Census geocoder (Andrew allowed ZIP lookups, 22 November)."
       ],
       "for_andrew": [
-        "The town's pages give no zip for the camp sites (only 06045 for Town Hall), so the draft also fails on zip.",
         "Camp is open only to Manchester residents. There is no non-resident rate to record. List it anyway, with the residency rule in the description?",
         "Camp runs at five sites with the same dates; kept as one listing, placed at the Center Springs office at 39 Lodge Drive."
       ]
     }
-  }
+  },
+  "zip": "06040"
 }
