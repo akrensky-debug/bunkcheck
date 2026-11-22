@@ -1,0 +1,134 @@
+{
+  "slug": "camp-coolio-new-boston",
+  "name": "Camp Coolio",
+  "operator_name": "New Boston Recreation",
+  "website_url": "https://www.newbostonnh.gov/pages/recreation-kids",
+  "registration_url": "https://newboston.recdesk.com/Community/Program?category=3",
+  "email": "recreation@newbostonnh.gov",
+  "phone": "603-487-2880",
+  "city": "New Boston",
+  "state": "NH",
+  "zip": "03070",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "activities": [
+    "sports",
+    "crafts",
+    "games",
+    "weekly field trips",
+    "in house special events"
+  ],
+  "description_short": "The town recreation department's summer day camp in New Boston, held at the White Buildings beside New Boston Central School, 7:30am to 5:30pm on weekdays. Each week has a theme, with sports, crafts and games and a field trip every Tuesday, to places such as Clough State Park, Lake Sunapee and Canobie Lake Park.",
+  "season_year": 2026,
+  "notes": "2026 dates and themes are posted, but no 2026 weekly rate or age range. The weekly rate includes in house special events and field trips. No camp Friday July 3. Registration opened March 2, 2026 at noon; the page says weeks fill quickly with long waitlists.",
+  "sessions": [
+    {
+      "name": "Week 1",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-02",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 2",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 3",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 4",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 5",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 6",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 7",
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-14",
+      "price": null,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.newbostonnh.gov/pages/recreation-kids",
+      "checked": "2026-11-22",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "description_short",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Summer Camp Coolio section: 2026 dates and weekly themes, field trips on Tuesdays, Monday to Friday 7:30am to 5:30pm at the White Buildings. ZIP is from the department's mailing address on this page (PO Box 382, New Boston, NH 03070); the page gives no street address for the camp. Phone is the Recreation Office number given on this page."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.newbostonnh.gov/pages/recreation-kids",
+      "kind": "html",
+      "title": "Recreation - Youth | Town of New Boston, NH"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Ages or grades",
+      "2026 price",
+      "Street address",
+      "Extended care",
+      "Meals",
+      "Financial aid",
+      "Refund policy",
+      "ACA accreditation"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "city 'New Boston', NH is not in cities.py"
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-22",
+      "page_checked": "https://www.newbostonnh.gov/pages/recreation-kids",
+      "changes": [
+        "New camp, researched from https://www.newbostonnh.gov/pages/recreation-kids"
+      ],
+      "for_andrew": [
+        "The 2026 page has dates, hours and place but no price and no ages. The only rate and age rules on the town's site are in the 2025 signup guide ($275 a week, ages 6 to 13, residents first and non-residents to the waitlist), so I left them out rather than mix years. The discovery note says the camp is residents only, but the 2026 page doesn't say so. Keep this thin listing, or wait for 2027?"
+      ]
+    }
+  }
+}

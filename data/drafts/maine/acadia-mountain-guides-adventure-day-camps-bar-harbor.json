@@ -153,6 +153,14 @@
         "transportation"
       ],
       "note": "Researched by Claude from this page. Locations & Getting To Camp page: daily drop off and pick up for both day camps in Bangor, Ellsworth and at Acadia Mountain Guides, 228 Main Street, Bar Harbor. Phone from the site header."
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=228+Main+Street%2C+Bar+Harbor%2C+ME&benchmark=Public_AR_Current&format=json",
+      "checked": "2026-11-22",
+      "fields": [
+        "zip"
+      ],
+      "note": "ZIP looked up with the Census Bureau geocoder from the address on the camp's page (228 MAIN ST, BAR HARBOR, ME, 04609)"
     }
   ],
   "review": {
@@ -163,7 +171,8 @@
       "title": "Acadia Rock Climbing & Adventure Camp"
     },
     "warnings": [
-      "The older acadiamountainguides.com/youth-camps page still shows 2026 dates and prices; the camp's newer site climbacadia.org has the 2027 schedule and is used."
+      "The older acadiamountainguides.com/youth-camps page still shows 2026 dates and prices; the camp's newer site climbacadia.org has the 2027 schedule and is used.",
+      "Overnight teen camps on the same site (RockPro I to IV, Maine Multisport, Big Maine Adventure, ages 9 to 18, $650 to $1,900, partly in New Hampshire) are not in this listing; they could be a separate sleepaway listing."
     ],
     "unknowns": [
       "Shuttle price for 2027 (the 2026 page said $100)",
@@ -171,17 +180,19 @@
       "Refund policy"
     ],
     "low_confidence": [],
-    "errors": [],
+    "errors": [
+      "maine / acadia-mountain-guides-adventure-day-camps-bar-harbor: city 'Bar Harbor', ME is not in cities.py"
+    ],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-22",
       "page_checked": "https://www.climbacadia.org/",
       "changes": [
-        "New camp, researched from https://www.climbacadia.org/"
+        "New camp, researched from https://www.climbacadia.org/",
+        "ZIP 04609 looked up from the camp's street address with the Census geocoder (Andrew allowed ZIP lookups, 22 November)."
       ],
-      "for_andrew": [
-        "The candidate page also covers overnight teen climbing camps (RockPro I to IV, Maine Multisport, Big Maine Adventure, ages 9 to 18, $650 to $1,900, partly in New Hampshire). Only the two day camps are drafted. Add a separate overnight listing?"
-      ]
+      "for_andrew": []
     }
-  }
+  },
+  "zip": "04609"
 }
