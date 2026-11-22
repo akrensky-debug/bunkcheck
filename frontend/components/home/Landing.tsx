@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState, type CSSProperties } from 'react'
 import { getUpcomingOpenings, type Opening } from '@/lib/alerts'
 import { countdown, fmtWhen } from '@/lib/booking'
-import { ActionTile, Button, Heading, Icon, List, ListRow, Meta, Section, Text, TextLink, cx, type IconName } from '@/components/ui'
+import { ActionTile, Band, Button, Heading, Icon, List, ListRow, Meta, Section, Text, TextLink, cx, type IconName } from '@/components/ui'
 
 /** Starters name no town: the assistant asks, or already knows it from the family profile. */
 export const STARTERS = [
@@ -111,12 +111,14 @@ export function Landing({ onAsk, disabled, className }: { onAsk: (text: string) 
   // One preview open at a time.
   const [open, setOpen] = useState<string | null>(null)
   return (
+    // The background changes only when the page's job does: paper to ask (the hero), tint to show
+    // the product, paper to explain, navy for the promises, paper to invite.
     <div className={cx('space-y-16', className)}>
-      <ExampleSummer />
+      <Band tone="tint"><ExampleSummer /></Band>
 
       <OpeningSoon />
 
-      <Section title="What we wish we’d had last summer" divided>
+      <Section title="What we wish we’d had last summer">
         <ul className="grid items-start gap-3 sm:grid-cols-2">
           {ACTIONS.map(a => (
             <li key={a.title}>
@@ -141,7 +143,7 @@ export function Landing({ onAsk, disabled, className }: { onAsk: (text: string) 
 
       <Promises />
 
-      <section className="border-t border-line pt-8">
+      <section>
         <Heading level="h2">Ten weeks to fill. Let&rsquo;s start with one sentence.</Heading>
         <div className="mt-4">
           <Button size="lg" icon="arrow-up" href="#start">Tell us about your summer</Button>
@@ -157,10 +159,11 @@ export function Landing({ onAsk, disabled, className }: { onAsk: (text: string) 
   )
 }
 
-/** What we promise a parent, on the navy panel. */
+/** What we promise a parent, on a full-width navy band: the page's one place for real weight. */
 export function Promises() {
   return (
-      <section className="rounded-lg bg-ink p-6 text-accent-ink sm:p-8">
+    <Band tone="ink">
+      <section>
         <h2 className="font-display text-h2">Parent to parent</h2>
         <ul className="mt-4 grid gap-x-12 gap-y-3 sm:grid-cols-2">
           {PROMISES.map((line, i) => (
@@ -173,6 +176,7 @@ export function Promises() {
           ))}
         </ul>
       </section>
+    </Band>
   )
 }
 
