@@ -1,0 +1,100 @@
+{
+  "slug": "springfield-boys-and-girls-club-summer-program-springfield",
+  "name": "Springfield Boys & Girls Club Summer Program",
+  "operator_name": "Springfield Boys and Girls Club",
+  "website_url": "https://sbgc.org/after-school-programs-in-springfield-ma-boys-girls-club/",
+  "phone": "413-732-7201",
+  "street_address": "481 Carew Street",
+  "city": "Springfield",
+  "state": "MA",
+  "zip": "01104",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "sports",
+    "STEM",
+    "arts"
+  ],
+  "activities": [
+    "sports",
+    "STEM",
+    "arts",
+    "games"
+  ],
+  "description_short": "A summer day program at the Springfield Boys and Girls Club on Carew Street, with sports, STEM, arts and games built around weekly themes. In 2026 it ran June 29 to August 21, 8:00 am to 5:30 pm.",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Summer Program 2026 (weekly themes)",
+      "start_date": "2026-06-29",
+      "end_date": "2026-08-21",
+      "price": null,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://sbgc.org/after-school-programs-in-springfield-ma-boys-girls-club/",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "primary_categories",
+        "secondary_categories",
+        "activities"
+      ],
+      "note": "Researched by Claude from this page; Summer Camp section says the 2026 Summer Program has ended and 2027 details will be posted"
+    },
+    {
+      "url": "https://sbgc.org/events/summer-program-week-1-red-white-blue/",
+      "checked": "2026-11-20",
+      "fields": [
+        "camp_type",
+        "description_short",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page; event page for Week 1; says the Summer Program runs June 29 to August 21, 8:00 am to 5:30 pm"
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://sbgc.org/after-school-programs-in-springfield-ma-boys-girls-club/",
+      "kind": "html",
+      "title": "Springfield Boys & Girls Club Membership | After-School Programs Ages 6-18"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Ages",
+      "Price and membership fee for summer",
+      "Registration process and dates",
+      "Meals",
+      "Financial aid or vouchers for summer",
+      "Field trips",
+      "Transportation"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://sbgc.org/after-school-programs-in-springfield-ma-boys-girls-club/",
+      "changes": [
+        "Found the current page at https://sbgc.org/after-school-programs-in-springfield-ma-boys-girls-club/ (the Summer Camp section of the membership page). The original event page https://sbgc.org/events/summer-program-week-1-red-white-blue/ now loads and names the Summer Program with its 2026 dates and hours; both are used.",
+        "Recorded one 2026 session, June 29 to August 21, with daily hours 8:00 am to 5:30 pm.",
+        "Ages, price, meals and financial aid for the summer program are not stated. The membership page says the Club serves ages 6 to 18, but that is for the school year, so ages are left out."
+      ],
+      "for_andrew": [
+        "This listing is thin: the site gives no ages, price or registration details for the summer program, only its dates, hours and that it has sports, STEM, arts and games. List it now, or wait for the 2027 Summer Program page?"
+      ]
+    }
+  }
+}

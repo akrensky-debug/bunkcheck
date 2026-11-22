@@ -55,6 +55,16 @@ in the table only if the camp's mailing address uses it; otherwise skip that cam
 Every filled field (except slug, season_year, region) must appear in exactly one source's "fields";
 use "sessions" as the field name for session data. A field sourced from a PDF uses the PDF URL.
 
+Two rules Andrew set on 22 November 2026:
+- **Town and member rates: show the non-resident (non-member) price.** That is the price most families
+  pay. Put the resident or member rate in `notes`. A camp open only to residents has no non-resident
+  rate; record the one rate it posts and say who can enroll.
+- **ZIP lookups are allowed.** When the camp's own page gives a street address but no ZIP, look the
+  ZIP up with the Census Bureau geocoder
+  (`geocoding.geo.census.gov/geocoder/locations/onelineaddress`) and source `zip` to that query URL,
+  with a note naming the matched address. Use it only when the geocoder returns one ZIP. Never take
+  the street address itself from a directory.
+
 ## Method
 - Use the camp's OWN website as the source (fetch pages with WebFetch, the firecrawl scrape/search MCP tools,
   or curl). Directories (ACA Find a Camp, YMCA/city pages, Google) only to discover camps or confirm ACA.

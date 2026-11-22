@@ -1,0 +1,162 @@
+{
+  "slug": "camp-greenside-taunton",
+  "name": "Camp Greenside",
+  "operator_name": "Boys & Girls Clubs of Metro South",
+  "website_url": "https://www.bgcmetrosouth.org/camp-greenside",
+  "phone": "508-824-4341",
+  "street_address": "31 Court Street (Taunton Clubhouse)",
+  "city": "Taunton",
+  "state": "MA",
+  "zip": "02780",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "age_min": 5,
+  "age_max": 12,
+  "description_short": "A building based summer day camp at the Boys and Girls Club's Taunton Clubhouse on Court Street, with weekly themes. Campers must be club members.",
+  "activities": [
+    "sports",
+    "games",
+    "arts and crafts",
+    "drama",
+    "dance",
+    "pool",
+    "playground",
+    "STEM",
+    "educational enrichment",
+    "theme days"
+  ],
+  "secondary_categories": [
+    "sports",
+    "arts",
+    "STEM",
+    "swimming"
+  ],
+  "price_per_week": 215,
+  "price_min": 215,
+  "price_max": 215,
+  "price_per": "week",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Session C: World Cup",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session D: Superheroes",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session E: Disney",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session F: Outer Space",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session G: Animal Kingdom",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session H: Hollywood",
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-14",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session I: Best of Camp Greenside",
+      "start_date": "2026-08-17",
+      "end_date": "2026-08-21",
+      "price": null,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.bgcmetrosouth.org/camp-greenside",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "age_min",
+        "age_max",
+        "description_short",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Camp page: summer 2026, ages 5-12, Monday to Friday 7:30am to 5:30pm, July 6 to August 21; Sessions A and B (June 22 to July 3) were cancelled because of snow day makeups; campers must be or become club members; Taunton Clubhouse 31 Court Street, Taunton MA 02780, (508) 824-4341"
+    },
+    {
+      "url": "https://www.taunton-ma.gov/DocumentCenter/View/7073/2026-Camp-Greenside_Updated-Dates",
+      "checked": "2026-11-20",
+      "fields": [
+        "activities",
+        "secondary_categories",
+        "price_per_week",
+        "price_min",
+        "price_max",
+        "price_per"
+      ],
+      "note": "Researched by Claude from this page. Boys and Girls Clubs of Metro South's own 2026 Camp Greenside flyer, posted on the City of Taunton site: July 6 to August 21, 7:30am to 5:30pm, ages 5-12, $215 per week, multi-child and military discounts"
+    }
+  ],
+  "review": {
+    "status": "ready",
+    "source": {
+      "url": "https://www.bgcmetrosouth.org/camp-greenside",
+      "kind": "html",
+      "title": "Boys & Girls Clubs of Metro South: Camp Greenside"
+    },
+    "warnings": [
+      "Campers must be (or register as) Boys and Girls Club members; the membership fee is not stated"
+    ],
+    "unknowns": [
+      "indoor_outdoor",
+      "registration_url",
+      "email",
+      "extended_care",
+      "transportation",
+      "meals_included",
+      "financial_aid",
+      "club membership fee"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://www.bgcmetrosouth.org/camp-greenside",
+      "changes": [
+        "Found the camp's own page at https://www.bgcmetrosouth.org/camp-greenside after https://www.taunton-ma.gov/993/Summer-CampsPrograms failed (a city directory of several operators' camps, not one camp's page)",
+        "Listed only Sessions C to I; the page says Sessions A and B were cancelled",
+        "Price is from the operator's own flyer, which is hosted on the City of Taunton site; the camp page links a brochure but the fetcher saw no file link"
+      ],
+      "for_andrew": []
+    }
+  }
+}
