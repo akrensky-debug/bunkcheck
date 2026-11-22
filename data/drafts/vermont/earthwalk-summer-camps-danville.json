@@ -137,16 +137,15 @@
       "ACA accreditation"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Danville', VT is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-22",
       "page_checked": "https://www.earthwalktogethervt.org/programs/summercamps",
       "changes": [
         "New camp, researched from https://www.earthwalktogethervt.org/programs/summercamps",
-        "ZIP 05828 looked up from the camp's street address with the Census geocoder (Andrew allowed ZIP lookups, 22 November)."
+        "ZIP 05828 looked up from the camp's street address with the Census geocoder (Andrew allowed ZIP lookups, 22 November).",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": []
     }

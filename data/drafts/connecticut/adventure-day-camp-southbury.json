@@ -129,9 +129,7 @@
       "ACA accreditation"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Southbury', CT is not in cities.py (real town kept; to be added from the Census gazetteer)"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-22",
@@ -140,7 +138,8 @@
         "New camp, researched from https://southburyct.myrec.com/documents/2026_adc_parent_handbook.pdf",
         "Used the 2026 season: no 2027 information is posted. The handbook gives no grades or fee, so none recorded.",
         "TeenScape is a separate program and not included.",
-        "ZIP 06488 looked up from the camp's street address with the Census geocoder (Andrew allowed ZIP lookups, 22 November)."
+        "ZIP 06488 looked up from the camp's street address with the Census geocoder (Andrew allowed ZIP lookups, 22 November).",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": []
     }

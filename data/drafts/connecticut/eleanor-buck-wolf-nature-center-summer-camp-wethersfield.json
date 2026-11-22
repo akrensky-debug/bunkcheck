@@ -136,16 +136,15 @@
       "ACA accreditation"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Wethersfield', CT is not in cities.py (real town kept; to be added from the Census gazetteer)"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-22",
       "page_checked": "https://wethersfieldct.gov/DocumentCenter/View/7048",
       "changes": [
         "New camp, researched from https://wethersfieldct.gov/DocumentCenter/View/7048",
-        "Used the 2026 season: no 2027 information is posted."
+        "Used the 2026 season: no 2027 information is posted.",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
         "The 2026 handbook gives no grade range or fee. The town's Summer Camp page (https://wethersfieldct.gov/283/Summer-Camp) says Nature Camp is pre-K 4 year olds to grade 4 and Bears Camp grades 5 and 6, but its only date is a 2025 open house and the 2026 handbook names the older group Trailblazers instead. Use those grades, or leave ages out?"

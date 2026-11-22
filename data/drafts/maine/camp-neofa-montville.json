@@ -158,16 +158,15 @@
       "ACA accreditation"
     ],
     "low_confidence": [],
-    "errors": [
-      "Montville, ME is not in cities.py yet; to be added from the Census gazetteer."
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-22",
       "page_checked": "https://www.campneofa.me/",
       "changes": [
         "New camp, researched from https://www.campneofa.me/",
-        "ZIP 04941 looked up from the camp's street address with the Census geocoder (Andrew allowed ZIP lookups, 22 November)."
+        "ZIP 04941 looked up from the camp's street address with the Census geocoder (Andrew allowed ZIP lookups, 22 November).",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": []
     }

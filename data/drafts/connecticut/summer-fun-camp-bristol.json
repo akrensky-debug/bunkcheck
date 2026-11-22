@@ -138,9 +138,7 @@
       "ACA accreditation"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Bristol', CT is not in cities.py (real town kept; to be added from the Census gazetteer)"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-22",
@@ -148,7 +146,8 @@
       "changes": [
         "New camp, researched from https://bristolct.myrec.com/documents/2026_summer_fun_camp_gr_13_weekly_calendar.pdf",
         "Used the 2026 season: no 2027 information is posted.",
-        "One listing for the grades 1 to 3 and 4 to 7 camps: same weeks, hours, fees and school. Teen Camp and Little Explorers are not included."
+        "One listing for the grades 1 to 3 and 4 to 7 camps: same weeks, hours, fees and school. Teen Camp and Little Explorers are not included.",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": []
     }

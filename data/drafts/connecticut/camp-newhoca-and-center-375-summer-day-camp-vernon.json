@@ -83,9 +83,7 @@
       "ACA accreditation"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Vernon', CT is not in cities.py (real town kept; to be added from the Census gazetteer)"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-22",
@@ -93,7 +91,8 @@
       "changes": [
         "New camp, researched from https://vernonct.myrec.com/documents/summer_camp_parent_handbook.pdf",
         "Used the 2026 season: no 2027 information is posted. The handbook gives no dates, so no sessions recorded.",
-        "ZIP 06066 looked up from the camp's street address with the Census geocoder (Andrew allowed ZIP lookups, 22 November)."
+        "ZIP 06066 looked up from the camp's street address with the Census geocoder (Andrew allowed ZIP lookups, 22 November).",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
         "Two sites with the same hours: Camp Newhoca (195 Grier Road) and Center 375 (375 Hartford Turnpike). I made one listing at Camp Newhoca. One listing, or one per site?",

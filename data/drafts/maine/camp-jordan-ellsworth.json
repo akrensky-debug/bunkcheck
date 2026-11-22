@@ -114,15 +114,14 @@
       "Transportation"
     ],
     "low_confidence": [],
-    "errors": [
-      "maine / camp-jordan-ellsworth: city 'Ellsworth', ME is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-22",
       "page_checked": "https://www.campjordan.org",
       "changes": [
-        "New camp, researched from https://www.campjordan.org"
+        "New camp, researched from https://www.campjordan.org",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
         "Camp Jordan is also described inside the existing draft bangor-region-ymca-summer-camps-bangor.json, which asks whether to split it out. This is that separate overnight listing; if it goes ahead, drop Camp Jordan from the umbrella draft?",

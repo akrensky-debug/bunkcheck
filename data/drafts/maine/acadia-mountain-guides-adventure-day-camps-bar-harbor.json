@@ -180,16 +180,15 @@
       "Refund policy"
     ],
     "low_confidence": [],
-    "errors": [
-      "maine / acadia-mountain-guides-adventure-day-camps-bar-harbor: city 'Bar Harbor', ME is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-22",
       "page_checked": "https://www.climbacadia.org/",
       "changes": [
         "New camp, researched from https://www.climbacadia.org/",
-        "ZIP 04609 looked up from the camp's street address with the Census geocoder (Andrew allowed ZIP lookups, 22 November)."
+        "ZIP 04609 looked up from the camp's street address with the Census geocoder (Andrew allowed ZIP lookups, 22 November).",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": []
     }

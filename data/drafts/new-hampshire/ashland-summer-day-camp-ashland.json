@@ -181,15 +181,14 @@
     "low_confidence": [
       "Session 1 end date: the flyer says July 2, the manual says July 3"
     ],
-    "errors": [
-      "city 'Ashland', NH is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-22",
       "page_checked": "https://ashland.nh.gov/uploads/asdc-flyer-2026.pdf",
       "changes": [
-        "New camp, researched from https://ashland.nh.gov/uploads/asdc-flyer-2026.pdf"
+        "New camp, researched from https://ashland.nh.gov/uploads/asdc-flyer-2026.pdf",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": []
     }

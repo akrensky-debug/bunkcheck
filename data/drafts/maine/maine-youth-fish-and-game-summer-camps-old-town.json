@@ -114,19 +114,17 @@
       "Refund policy"
     ],
     "low_confidence": [],
-    "errors": [
-      "maine / maine-youth-fish-and-game-summer-camps-old-town: city 'Old Town', ME is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-22",
       "page_checked": "https://www.maineyouthfishandgame.org/summer-camps/",
       "changes": [
-        "New camp, researched from https://www.maineyouthfishandgame.org/summer-camps/"
+        "New camp, researched from https://www.maineyouthfishandgame.org/summer-camps/",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
-        "No price is shown on the camp's pages; the Active registration portal timed out in the fetcher. List without a price?",
-        "The camp is held at Pickerel Pond in Township 32 MD (Hancock County), an unorganized township with no street address; buses leave from Milford. City and ZIP are the association's mailing address in Stillwater, part of Old Town (04489). Old Town is not in cities.py. Keep Old Town, or place it at Milford, where families drop off?"
+        "No price is shown on the camp's pages; the Active registration portal timed out in the fetcher. List without a price?"
       ]
     }
   }

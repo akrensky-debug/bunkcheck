@@ -133,15 +133,15 @@
     ],
     "low_confidence": [],
     "errors": [
-      "missing required zip",
-      "Union, ME is not in cities.py yet; to be added from the Census gazetteer."
+      "missing required zip"
     ],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-22",
       "page_checked": "https://www.growingroutes.org/camp-chloe",
       "changes": [
-        "New camp, researched from https://www.growingroutes.org/camp-chloe"
+        "New camp, researched from https://www.growingroutes.org/camp-chloe",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
         "ZIP is required but no Growing Routes page gives a street address for Twigg Farm, only Union, ME on Seven Tree Pond (the mailing address is a Portland PO box). Please supply the farm address or ZIP so the draft validates."

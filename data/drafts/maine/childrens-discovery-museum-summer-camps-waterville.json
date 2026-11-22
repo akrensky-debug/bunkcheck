@@ -126,15 +126,14 @@
       "Street address of Quarry Road Trails for Kids in the Woods"
     ],
     "low_confidence": [],
-    "errors": [
-      "maine / childrens-discovery-museum-summer-camps-waterville: city 'Waterville', ME is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-22",
       "page_checked": "https://www.childrensdiscoverymuseum.org/summercamps",
       "changes": [
-        "New camp, researched from https://www.childrensdiscoverymuseum.org/summercamps"
+        "New camp, researched from https://www.childrensdiscoverymuseum.org/summercamps",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
         "The camp page gives dates with no year. The year 2026 comes from the museum's own registration forms (Google Forms linked from the page, titled '... 2026 Summer Program'). The brief says a page with no year gets no listing; keep this on the strength of the forms, or drop until the 2027 page is up?",

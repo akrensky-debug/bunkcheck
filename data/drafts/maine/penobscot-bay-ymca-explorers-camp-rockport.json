@@ -148,15 +148,14 @@
       "Swim and waterfront details"
     ],
     "low_confidence": [],
-    "errors": [
-      "maine / penobscot-bay-ymca-explorers-camp-rockport: city 'Rockport', ME is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-22",
       "page_checked": "https://www.penbayymca.org/programs/explorers-camp/",
       "changes": [
-        "New camp, researched from https://www.penbayymca.org/programs/explorers-camp/"
+        "New camp, researched from https://www.penbayymca.org/programs/explorers-camp/",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
         "The page names the camp's home base, Camden-Rockport Middle School, but not its address or town. City and ZIP are the YMCA's own address (Rockport 04856). The 2026 brochure PDF is over the fetcher's 8 MB cap and was not read. Keep Rockport, or does the school's town need confirming?",

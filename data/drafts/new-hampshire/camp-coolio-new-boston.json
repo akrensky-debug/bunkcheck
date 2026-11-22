@@ -116,15 +116,14 @@
       "ACA accreditation"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'New Boston', NH is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-22",
       "page_checked": "https://www.newbostonnh.gov/pages/recreation-kids",
       "changes": [
-        "New camp, researched from https://www.newbostonnh.gov/pages/recreation-kids"
+        "New camp, researched from https://www.newbostonnh.gov/pages/recreation-kids",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
         "The 2026 page has dates, hours and place but no price and no ages. The only rate and age rules on the town's site are in the 2025 signup guide ($275 a week, ages 6 to 13, residents first and non-residents to the waitlist), so I left them out rather than mix years. The discovery note says the camp is residents only, but the 2026 page doesn't say so. Keep this thin listing, or wait for 2027?"

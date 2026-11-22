@@ -85,16 +85,15 @@
       "ACA accreditation"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Bethel', CT is not in cities.py (real town kept; to be added from the Census gazetteer)"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-22",
       "page_checked": "https://regionalymca.org/programs/camps/ymca-summer-club-at-grassy-plain/",
       "changes": [
         "New camp, researched from https://regionalymca.org/programs/camps/ymca-summer-club-at-grassy-plain/",
-        "Season set to 2027 because the page is set for 2027; no dates or prices are posted yet, so no sessions or prices recorded."
+        "Season set to 2027 because the page is set for 2027; no dates or prices are posted yet, so no sessions or prices recorded.",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
         "The page is set for 2027 but posts no dates or fee yet. List it now without them, or wait for the 2027 camp guide?"

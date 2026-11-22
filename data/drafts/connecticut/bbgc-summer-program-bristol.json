@@ -92,16 +92,15 @@
       "ACA accreditation"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Bristol', CT is not in cities.py (real town kept; to be added from the Census gazetteer)"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-22",
       "page_checked": "https://www.bbgc.org/programs/summerprogram",
       "changes": [
         "New camp, researched from https://www.bbgc.org/programs/summerprogram",
-        "Used the 2026 season: no 2027 information is posted. No week by week dates are posted, so no sessions recorded."
+        "Used the 2026 season: no 2027 information is posted. No week by week dates are posted, so no sessions recorded.",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
         "Camp Quest, the club's program for grades 6 to 8 ($150 a week, 7:30 am to 5:30 pm, https://www.bbgc.org/programs/camp-quest), has its own page but no location or dates. I left it out of this listing. Add it here, as its own listing, or leave it?"
