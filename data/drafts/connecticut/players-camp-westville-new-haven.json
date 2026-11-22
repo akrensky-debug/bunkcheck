@@ -1,0 +1,113 @@
+{
+  "operator_name": "Elm Shakespeare Company",
+  "website_url": "https://www.elmshakespeare.org/education/players-camp",
+  "email": "sarah@elmshakespeare.org",
+  "city": "New Haven",
+  "state": "CT",
+  "camp_type": "specialty",
+  "primary_categories": [
+    "performing_arts"
+  ],
+  "activities": [
+    "acting",
+    "stagecraft",
+    "storytelling",
+    "performance"
+  ],
+  "age_min": 7,
+  "age_max": 13,
+  "financial_aid": true,
+  "price_min": 670,
+  "price_max": 670,
+  "price_per": "session",
+  "season_year": 2026,
+  "slug": "players-camp-westville-new-haven",
+  "name": "Players Camp (Westville)",
+  "street_address": "Congregation Beth El-Keser Israel, 85 Harrison Street",
+  "indoor_outdoor": "indoor",
+  "description_short": "A two week indoor theater camp for ages 7 to 13 run by Elm Shakespeare Company at Congregation Beth El-Keser Israel in the Westville part of New Haven. Campers learn acting, stagecraft and storytelling with theater professionals and finish with a performance tied to the company's summer Shakespeare production.",
+  "sessions": [
+    {
+      "name": "Westville 1",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-17",
+      "price": 670,
+      "availability": "unknown"
+    },
+    {
+      "name": "Westville 2",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-31",
+      "price": 670,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.elmshakespeare.org/education/players-camp",
+      "checked": "2026-11-20",
+      "fields": [
+        "operator_name",
+        "website_url",
+        "email",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "financial_aid",
+        "price_min",
+        "price_max",
+        "price_per",
+        "name",
+        "street_address",
+        "indoor_outdoor",
+        "description_short",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. 2026 Players Camp sessions: four two week sessions at two places, $670 tuition each. Scholarships available and no child is turned away; contact is the education team email. The page gives street addresses but no zip codes."
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=85+Harrison+Street%2C+New+Haven%2C+CT&benchmark=Public_AR_Current&format=json",
+      "checked": "2026-11-22",
+      "fields": [
+        "zip"
+      ],
+      "note": "ZIP looked up with the Census Bureau geocoder from the address on the camp's page (85 HARRISON ST, NEW HAVEN, CT, 06515)"
+    }
+  ],
+  "review": {
+    "status": "ready",
+    "source": {
+      "url": "https://www.elmshakespeare.org/education/players-camp",
+      "kind": "html",
+      "title": "Players Camp | Elm Shakespeare Company"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Zip code",
+      "Daily hours",
+      "Price for 2027 and 2027 dates",
+      "Extended care",
+      "Whether lunch is provided",
+      "ACA accreditation"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://www.elmshakespeare.org/education/players-camp",
+      "changes": [
+        "New camp, researched from https://www.elmshakespeare.org/education/players-camp",
+        "The page lists one Players Camp at two places with their own dates and addresses; split into one draft per place (Edgerton Park and Westville). Ages and tuition are the same at both.",
+        "Used the 2026 season: no 2027 sessions are posted.",
+        "ZIP 06515 looked up from the camp's street address with the Census geocoder (Andrew allowed ZIP lookups, 22 November)."
+      ],
+      "for_andrew": []
+    }
+  },
+  "zip": "06515"
+}

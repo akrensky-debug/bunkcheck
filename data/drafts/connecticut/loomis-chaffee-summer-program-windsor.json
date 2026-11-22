@@ -1,0 +1,115 @@
+{
+  "slug": "loomis-chaffee-summer-program-windsor",
+  "name": "Loomis Chaffee Summer Program",
+  "operator_name": "The Loomis Chaffee School",
+  "website_url": "https://www.loomischaffee.org/summer",
+  "registration_url": "https://www.loomischaffee.org/summer/apply",
+  "phone": "860-687-6000",
+  "street_address": "4 Batchelder Road",
+  "city": "Windsor",
+  "state": "CT",
+  "zip": "06095",
+  "camp_type": "specialty",
+  "primary_categories": [
+    "academic"
+  ],
+  "secondary_categories": [
+    "STEM",
+    "arts"
+  ],
+  "activities": [
+    "writing courses",
+    "robotics",
+    "ceramics",
+    "forensic science",
+    "public speaking",
+    "recreational athletics",
+    "excursions",
+    "water parks"
+  ],
+  "grade_min": 7,
+  "grade_max": 10,
+  "description_short": "A four week boarding and day program at Loomis Chaffee in Windsor for students entering grades 7 to 10. Mornings are two ungraded writing courses and afternoons two electives such as robotics, ceramics or forensic science, with no homework, plus athletics, evening events and weekend trips.",
+  "indoor_outdoor": "both",
+  "price_min": 5400,
+  "price_max": 9750,
+  "price_per": "session",
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Summer Program 2027",
+      "start_date": "2027-06-27",
+      "end_date": "2027-07-23",
+      "availability": "unknown"
+    }
+  ],
+  "meals_included": true,
+  "financial_aid": true,
+  "sources": [
+    {
+      "url": "https://www.loomischaffee.org/summer",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "description_short",
+        "indoor_outdoor",
+        "price_min",
+        "price_max",
+        "price_per",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Summer 2027 details: June 27 to July 23, 2027, students entering grades 7 to 10. Boarding $9,750 (two writing courses, two electives, room, three meals a day, athletics and activities); day $5,400. Address and phone in the page footer. The page describes it as 'Not summer school. Not summer camp.'"
+    },
+    {
+      "url": "https://www.loomischaffee.org/summer/faqs",
+      "checked": "2026-11-20",
+      "fields": [
+        "meals_included",
+        "financial_aid"
+      ],
+      "note": "Researched by Claude from this page. FAQ: three meals a day in the dining hall; limited financial aid, priority to current or incoming Loomis Chaffee students, applications due March 1."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.loomischaffee.org/summer",
+      "kind": "html",
+      "title": "Summer Program - Loomis Chaffee"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Refund policy",
+      "Day student hours",
+      "ACA accreditation"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://www.loomischaffee.org/summer",
+      "changes": [
+        "New camp, researched from https://www.loomischaffee.org/summer",
+        "Used the 2027 season: dates and tuition are posted. Session price is left blank because boarding and day tuition differ; both are in price_min and price_max."
+      ],
+      "for_andrew": [
+        "This is a four week academic enrichment program, boarding or day, which the school says is 'not summer school, not summer camp'. I set camp_type to specialty with an academic category. List it, and as specialty or sleepaway?"
+      ]
+    }
+  }
+}

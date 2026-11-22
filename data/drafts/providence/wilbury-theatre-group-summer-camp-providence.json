@@ -1,0 +1,92 @@
+{
+  "slug": "wilbury-theatre-group-summer-camp-providence",
+  "name": "Wilbury Theatre Group Summer Camp: Tall Tales of the Smallest State",
+  "operator_name": "Wilbury Theatre Group",
+  "website_url": "https://www.thewilburygroup.org/camp.html",
+  "email": "info@thewilburygroup.org",
+  "phone": "(401) 400-7100",
+  "street_address": "475 Valley Street",
+  "city": "Providence",
+  "state": "RI",
+  "zip": "02908",
+  "camp_type": "specialty",
+  "primary_categories": [
+    "performing_arts"
+  ],
+  "activities": [
+    "physical comedy",
+    "clown",
+    "improv",
+    "movement games",
+    "ensemble devising",
+    "performance"
+  ],
+  "age_min": 8,
+  "age_max": 10,
+  "description_short": "A one week theater camp for ages 8 to 10 where kids turn true Rhode Island history stories into short comic plays using clowning, improv and movement, ending with a Friday show for families.",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Tall Tales of the Smallest State",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-03",
+      "price": null,
+      "availability": "unknown"
+    }
+  ],
+  "notes": "Led by Mycah Hogan, Wilbury's Director of Education. No auditions or experience needed.",
+  "sources": [
+    {
+      "url": "https://www.thewilburygroup.org/camp.html",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Camp page: summer camp for kids ages 8 to 10, June 29 to July 3, 2026, Friday afternoon performance; address and phone from the page footer"
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.thewilburygroup.org/camp.html",
+      "kind": "html",
+      "title": "Theatre Summer Camp at Wilbury Theatre Group"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Price",
+      "Daily hours",
+      "Registration URL",
+      "2027 plans"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://www.thewilburygroup.org/camp.html",
+      "changes": [
+        "New camp, researched from https://www.thewilburygroup.org/camp.html"
+      ],
+      "for_andrew": [
+        "The page does not say where camp meets; the address is the theater's footer address (475 Valley Street, Providence). Keep it or leave the street out?",
+        "No price, hours or registration link are posted, and the only session (June 29 to July 3, 2026) is over."
+      ]
+    }
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "slug": "dirt-to-design-summer-camp-st-albans",
+  "name": "Dirt to Design Summer Camp",
+  "operator_name": "Phloem Flower Farm",
+  "website_url": "https://www.phloemflowers.com/CampsandClasses",
+  "email": "phloemflowers@gmail.com",
+  "phone": "(802) 355-3746",
+  "street_address": "31 Cook Rd.",
+  "city": "St. Albans",
+  "state": "VT",
+  "zip": "05478",
+  "camp_type": "day",
+  "primary_categories": [
+    "nature"
+  ],
+  "secondary_categories": [
+    "STEM",
+    "arts"
+  ],
+  "age_min": 7,
+  "age_max": 13,
+  "description_short": "A week long camp on a cut flower farm for ages 7 to 13, where children learn about plants, gardening, ecology and microscopy and practice flower design.",
+  "activities": [
+    "gardening",
+    "plant science",
+    "microscopy",
+    "ecology",
+    "flower design"
+  ],
+  "season_year": 2026,
+  "sources": [
+    {
+      "url": "https://www.phloemflowers.com/CampsandClasses",
+      "checked": "2026-11-20",
+      "fields": [
+        "website_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip"
+      ],
+      "note": "Researched by Claude from this page. Camps and Classes page: 'Summer Camp 2026 is Full'; farm address 31 Cook Rd., Saint Albans, VT 05478"
+    },
+    {
+      "url": "https://www.phloemflowers.com/about-the-farm",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "operator_name",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "age_min",
+        "age_max",
+        "description_short",
+        "activities"
+      ],
+      "note": "Researched by Claude from this page. About the farm page: Dirt to Design camp for ages 7 to 13; 2026 was the first year of camps"
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.phloemflowers.com/CampsandClasses",
+      "kind": "html",
+      "title": "Camps & Classes | Phloem Flower Farm - Summer Camp and Classes"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Session dates (a December 2025 blog post says four weeks)",
+      "Prices",
+      "Hours",
+      "ACA accreditation"
+    ],
+    "low_confidence": [
+      {
+        "field": "camp_type",
+        "confidence": 0.7,
+        "quote": "children ages 7-13 to spend a week on the farm"
+      }
+    ],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://www.phloemflowers.com/CampsandClasses",
+      "changes": [
+        "New camp, researched from https://www.phloemflowers.com/CampsandClasses",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
+      ],
+      "for_andrew": [
+        "Location conflict: the farm address is St. Albans, but the farm's December 2025 blog post calls it an outdoor camp in Swanton. Which is right?",
+        "2026 was the first season and it was full. No dates or prices are posted. Keep this thin listing or wait for 2027?",
+        "camp_type 'day' is inferred ('spend a week on the farm'); the site does not say day camp."
+      ]
+    }
+  }
+}

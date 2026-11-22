@@ -1,0 +1,101 @@
+{
+  "slug": "wesleyan-science-summer-camp-middletown",
+  "name": "Wesleyan Science Summer Camp",
+  "operator_name": "Wesleyan University (Jewett Center for Community Partnerships) with Middletown Public Schools",
+  "website_url": "https://www.wesleyan.edu/jccp/girlsinscience.html",
+  "registration_url": "https://forms.gle/WQK6SpiQoNHEUQyZ9",
+  "street_address": "1 Wilderman's Way",
+  "city": "Middletown",
+  "state": "CT",
+  "zip": "06457",
+  "camp_type": "specialty",
+  "primary_categories": [
+    "STEM"
+  ],
+  "activities": [
+    "science experiments",
+    "interactive activities",
+    "trips",
+    "science showcase"
+  ],
+  "grade_min": 4,
+  "grade_max": 6,
+  "description_short": "One week science camp held at Beman Middle School in Middletown, run by Wesleyan University with Middletown Public Schools. Students entering grades 4 to 6 do experiments, hands on activities and trips with Wesleyan faculty and students, ending with a Friday science showcase.",
+  "financial_aid": true,
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "2026 camp week",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.wesleyan.edu/jccp/girlsinscience.html",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "description_short",
+        "financial_aid",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. 2026 camp: August 3 to 7, 8:30 am to 4:00 pm, Science Showcase Friday at 4:00 pm, at Beman Middle School (1 Wilderman's Way, Middletown, CT 06457), for students going into grades 4, 5 and 6, accepted on a rolling basis from March 23, 2026. Need based full and partial scholarships available. Registration is the camper application Google form linked on the page. No price is stated."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.wesleyan.edu/jccp/girlsinscience.html",
+      "kind": "html",
+      "title": "Wesleyan Science Camp - Wesleyan University"
+    },
+    "warnings": [
+      "Middletown, CT is not in cities.py, so this draft fails validation until the town is added.",
+      "No 2027 information yet; this is the 2026 season.",
+      "Admission is by application, and elementary participants continue with school year activities."
+    ],
+    "unknowns": [
+      "age_min",
+      "age_max",
+      "price_per_week",
+      "price_min",
+      "price_max",
+      "price_per",
+      "phone",
+      "email",
+      "extended_care",
+      "transportation",
+      "meals_included",
+      "aca_accredited",
+      "gender_policy",
+      "refund_policy_summary"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://www.wesleyan.edu/jccp/girlsinscience.html",
+      "changes": [
+        "New camp, researched from https://www.wesleyan.edu/jccp/girlsinscience.html"
+      ],
+      "for_andrew": [
+        "Middletown, CT is missing from cities.py. It is its own city, not part of another town in the table, so the city is left as Middletown. Add it, or decide to hold the listing."
+      ]
+    }
+  }
+}

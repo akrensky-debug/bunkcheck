@@ -1,0 +1,126 @@
+{
+  "slug": "nichols-day-camp-sedgwick",
+  "name": "Nichols Day Camp",
+  "operator_name": "Nichols Day Camp",
+  "website_url": "https://www.nicholsdaycamps.org/",
+  "registration_url": "http://app.campdoc.com/register/nicholsdaycamps",
+  "email": "nicholsdaycampsoffice@gmail.com",
+  "phone": "207-359-4900",
+  "street_address": "40 Camp Lane",
+  "city": "Sedgwick",
+  "state": "ME",
+  "zip": "04676",
+  "camp_type": "day",
+  "age_min": 5,
+  "age_max": 14,
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "outdoor",
+    "swimming",
+    "sailing",
+    "nature"
+  ],
+  "description_short": "Nonprofit outdoor day camp in Sedgwick on the Blue Hill peninsula, running since 1963, with programs for ages 5 to 6, 7 to 12 and 13 to 14. The main program offers swim lessons, archery, canoeing, sailing, crafts, field games, nature and theater.",
+  "activities": [
+    "swim lessons",
+    "archery",
+    "canoeing",
+    "sailing",
+    "arts and crafts",
+    "field games",
+    "nature exploration",
+    "theater",
+    "music"
+  ],
+  "financial_aid": true,
+  "refund_policy_summary": "Full refund including the $50 deposit before April 1; refund less the deposit from April 1 to May 15; after May 15 no refunds except for serious illness, and none for absences or dismissal.",
+  "season_year": 2026,
+  "sources": [
+    {
+      "url": "https://www.nicholsdaycamps.org/",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "age_min",
+        "age_max",
+        "primary_categories",
+        "secondary_categories",
+        "description_short"
+      ],
+      "note": "Researched by Claude from this page. Since 1963. Summer camp office 40 Camp Lane, Sedgwick 04676; off season office in Blue Hill. Programs: Scamp ages 5 and 6, Nichols ages 7 to 12, Adventure ages 13 and 14. Home page says registration for summer 2026 is open."
+    },
+    {
+      "url": "https://www.nicholsdaycamps.org/registration/",
+      "checked": "2026-11-20",
+      "fields": [
+        "registration_url",
+        "financial_aid",
+        "refund_policy_summary"
+      ],
+      "note": "Researched by Claude from this page. Camperships of up to two weeks for families with a year round Hancock County parent; in county rates for children who attend school in Hancock County. Payment plans available."
+    },
+    {
+      "url": "https://www.nicholsdaycamps.org/nichols-program/",
+      "checked": "2026-11-20",
+      "fields": [
+        "activities"
+      ],
+      "note": "Researched by Claude from this page. Camp day 8:45 am to 3:45 pm. Program pages still say 2026 dates and rates are coming soon."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.nicholsdaycamps.org/",
+      "kind": "html",
+      "title": "Nichols Day Camp | Instilling a lifelong passion for outdoor recreational and educational experiences"
+    },
+    "warnings": [
+      "No dates or prices: the 2026 Dates and Rates page has no readable text and the program pages say rates are coming soon.",
+      "The bus schedule on the Getting to Camp page is for 2025, so transportation is left empty."
+    ],
+    "unknowns": [
+      "sessions",
+      "price_min",
+      "price_max",
+      "price_per_week",
+      "price_per",
+      "grade_min",
+      "grade_max",
+      "gender_policy",
+      "extended_care",
+      "transportation",
+      "meals_included",
+      "special_needs_notes",
+      "swim_waterfront_notes",
+      "aca_accredited",
+      "indoor_outdoor"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://www.nicholsdaycamps.org/",
+      "changes": [
+        "New camp, researched from https://www.nicholsdaycamps.org/",
+        "Used the 2026 season; no session dates or prices could be read",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
+      ],
+      "for_andrew": [
+        "There are no dates or prices to show. Keep it as a thin listing, or wait for the 2027 page?"
+      ]
+    }
+  }
+}

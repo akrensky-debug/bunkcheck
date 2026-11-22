@@ -1,0 +1,179 @@
+{
+  "slug": "acadia-institute-of-oceanography-mount-desert",
+  "name": "Acadia Institute of Oceanography",
+  "operator_name": "Acadia Institute of Oceanography",
+  "website_url": "https://acadiainstitute.com/",
+  "registration_url": "https://aio.campintouch.com/ui/forms/application/camper/App",
+  "email": "explore@acadiainstitute.com",
+  "phone": "207-669-3561",
+  "street_address": "9 Lower Dunbar Road",
+  "city": "Mount Desert",
+  "state": "ME",
+  "zip": "04675",
+  "camp_type": "specialty",
+  "gender_policy": "coed",
+  "primary_categories": [
+    "STEM",
+    "nature"
+  ],
+  "secondary_categories": [
+    "academic",
+    "outdoor"
+  ],
+  "description_short": "Overnight marine science camp in Seal Harbor on Mount Desert Island. Students study the ocean through classes, lab work, tide pools, salt marshes and boat trips, in a one week session for ages 10 to 12 and two week sessions for middle and high school students.",
+  "age_min": 10,
+  "age_max": 18,
+  "grade_min": 5,
+  "grade_max": 12,
+  "activities": [
+    "saltwater tank",
+    "beach exploration",
+    "tide pools",
+    "salt marshes and bogs",
+    "fishing",
+    "whale watching",
+    "island geology",
+    "water testing"
+  ],
+  "price_min": 1800,
+  "price_max": 3400,
+  "price_per": "session",
+  "meals_included": true,
+  "transportation": true,
+  "refund_policy_summary": "Full refund before March 1. From March 1 to April 30, refund minus the deposit ($400 Introductory, $600 others). In May, refund minus deposit only if the place is filled. No refunds from June 1.",
+  "special_needs_notes": "Many students with ADD, ADHD or mild learning disabilities do well, but the program is not staffed for one on one support or more severe needs. Food allergies and many diets can be handled if arranged with the Director at least four weeks ahead.",
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Introductory (ages 10 to 12)",
+      "start_date": "2027-06-20",
+      "end_date": "2027-06-25",
+      "availability": "unknown"
+    },
+    {
+      "name": "Intermediate 1 (ages 12 to 14)",
+      "start_date": "2027-06-27",
+      "end_date": "2027-07-09",
+      "availability": "unknown"
+    },
+    {
+      "name": "Advanced 1 (ages 15 to 18)",
+      "start_date": "2027-07-11",
+      "end_date": "2027-07-23",
+      "availability": "unknown"
+    },
+    {
+      "name": "Advanced 2 (ages 15 to 18)",
+      "start_date": "2027-07-25",
+      "end_date": "2027-08-06",
+      "availability": "unknown"
+    },
+    {
+      "name": "Intermediate 2 (ages 12 to 14)",
+      "start_date": "2027-08-08",
+      "end_date": "2027-08-20",
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://acadiainstitute.com/",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "description_short",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Program dates for summer 2027; registration open. The home page gives Advanced ages as 15 to 19; the FAQ and Advanced page say 15 to 18, with new graduates welcome."
+    },
+    {
+      "url": "https://acadiainstitute.com/introductory-marine-science-camp-program/",
+      "checked": "2026-11-20",
+      "fields": [
+        "price_min",
+        "price_per"
+      ],
+      "note": "Researched by Claude from this page. Introductory session costs $1,800 for one week ($400 deposit)."
+    },
+    {
+      "url": "https://acadiainstitute.com/intermediate-marine-science-camp-program/",
+      "checked": "2026-11-20",
+      "fields": [
+        "price_max",
+        "activities"
+      ],
+      "note": "Researched by Claude from this page. Intermediate two week session costs $3,400 ($600 deposit). The Advanced page also lists $3,400, with about $600 more for optional UMaine college credit."
+    },
+    {
+      "url": "https://acadiainstitute.com/faqs/",
+      "checked": "2026-11-20",
+      "fields": [
+        "gender_policy",
+        "age_min",
+        "age_max",
+        "grade_min",
+        "grade_max",
+        "meals_included",
+        "transportation",
+        "refund_policy_summary",
+        "special_needs_notes"
+      ],
+      "note": "Researched by Claude from this page. Introductory is for students entering grades 5 and 6, Intermediate grades 7 to 9, Advanced grades 10 to 12 and new graduates. Tuition includes room and board and transportation during the session; free pickup at the Bangor or Bar Harbor airport or bus station. Separate dorms for male and female students. A teacher recommendation is required."
+    },
+    {
+      "url": "https://acadiainstitute.com/contact/",
+      "checked": "2026-11-20",
+      "fields": [
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip"
+      ],
+      "note": "Researched by Claude from this page. Located at 9 Lower Dunbar Road, Seal Harbor, ME 04675. Seal Harbor is a village of the town of Mount Desert."
+    }
+  ],
+  "review": {
+    "status": "ready",
+    "source": {
+      "url": "https://acadiainstitute.com/",
+      "kind": "html",
+      "title": "Marine Science Summer Camps at the Acadia Institute of Oceanography"
+    },
+    "warnings": [
+      "The home page says Advanced is ages 15 to 19; the FAQ and Advanced page say 15 to 18. I used 18.",
+      "Session prices are on separate pages, so sessions carry no price; price_min and price_max hold $1,800 and $3,400.",
+      "New students need a positive teacher recommendation."
+    ],
+    "unknowns": [
+      "price_per_week",
+      "financial_aid",
+      "extended_care",
+      "swim_waterfront_notes",
+      "aca_accredited",
+      "indoor_outdoor"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://acadiainstitute.com/",
+      "changes": [
+        "New camp, researched from https://acadiainstitute.com/",
+        "Used the 2027 season: five sessions June 20 to August 20, 2027",
+        "City set to Mount Desert: the camp's address is Seal Harbor, a village of Mount Desert"
+      ],
+      "for_andrew": [
+        "FYI: the camp's address is Seal Harbor, ME 04675; Seal Harbor is not in cities.py, so the city is Mount Desert, the town it belongs to."
+      ]
+    }
+  }
+}

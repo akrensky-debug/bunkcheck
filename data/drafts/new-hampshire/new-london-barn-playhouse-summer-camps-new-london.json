@@ -1,0 +1,150 @@
+{
+  "slug": "new-london-barn-playhouse-summer-camps-new-london",
+  "name": "New London Barn Playhouse Summer Camps",
+  "operator_name": "New London Barn Playhouse",
+  "website_url": "https://www.nlbarn.org/camps",
+  "email": "camps@nlbarn.org",
+  "phone": "603-526-6710",
+  "city": "New London",
+  "state": "NH",
+  "zip": "03257",
+  "camp_type": "specialty",
+  "primary_categories": [
+    "performing_arts"
+  ],
+  "activities": [
+    "acting",
+    "musical theater",
+    "technical theater",
+    "playwriting",
+    "improv",
+    "dance",
+    "filmmaking"
+  ],
+  "age_min": 6,
+  "age_max": 11,
+  "description_short": "Weekly theater day camps from the New London Barn Playhouse, held at the New London Historical Society. Each week has a theme such as dance, backstage design or filmmaking, with groups for ages 6 to 8 and 9 to 11 and a short showcase on Friday.",
+  "meals_included": false,
+  "financial_aid": true,
+  "transportation": true,
+  "refund_policy_summary": "Refunds must be requested two weeks before the first day of camp. Partial or full refunds may be offered in an emergency.",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Dancing Through Life",
+      "start_date": "2026-06-22",
+      "end_date": "2026-06-26",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Backstage Heroes",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-03",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Halloween in July week (title not shown on the page)",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Destination: Drama!",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Stars of the Silver Screen",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "The Great Outdoors",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Enchanted Forest",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Barn Academy: Jack and the Beanstalk (ages 6 to 11 together)",
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-14",
+      "price": null,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.nlbarn.org/camps",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "phone",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "meals_included",
+        "financial_aid",
+        "transportation",
+        "refund_policy_summary",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page; 2026 summer camps, 9:00 to 4:00, Barnie Buddies ages 6 to 8 and Main Street Players ages 9 to 11, all weeks at the New London Historical Society; campers bring a sack lunch; tuition assistance at any level; staff walk students from KRES-NL or drive them on request; zip is the Playhouse's own (84 Main Street, New London, NH 03257)"
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.nlbarn.org/camps",
+      "kind": "html",
+      "title": "Summer Camps — New London Barn Playhouse"
+    },
+    "warnings": [
+      "These are the 2026 camps; the page also says 'This summer's camps location will be announced at a later date' above a list that gives the New London Historical Society for each 2026 week.",
+      "Prices are not on the camp page; they appear only on the OvationTix registration links, which were not read.",
+      "The July 6 to 10 week is described (a Halloween in July theme) but its title did not come through on the page."
+    ],
+    "unknowns": [
+      "prices",
+      "street address of the New London Historical Society (not given on the page)",
+      "registration_url"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://www.nlbarn.org/camps",
+      "changes": [
+        "New camp, researched from https://www.nlbarn.org/camps",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
+      ],
+      "for_andrew": [
+        "No prices on the camp's page (only on OvationTix ticket pages). Publish without prices, or read the OvationTix pages?"
+      ]
+    }
+  }
+}

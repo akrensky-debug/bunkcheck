@@ -1,0 +1,113 @@
+{
+  "slug": "trinity-college-dream-camp-hartford",
+  "name": "Dream Camp at Trinity College",
+  "operator_name": "Trinity College and ESF Dream Camp Foundation",
+  "website_url": "https://www.trincoll.edu/dreamcamp/",
+  "phone": "860-987-6209",
+  "street_address": "300 Summit Street",
+  "city": "Hartford",
+  "state": "CT",
+  "zip": "06106",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "arts",
+    "performing_arts",
+    "sports",
+    "academic"
+  ],
+  "activities": [
+    "creative arts",
+    "performing arts",
+    "health and nutrition",
+    "fitness",
+    "athletics",
+    "swimming",
+    "soccer",
+    "basketball",
+    "music and video production",
+    "team building"
+  ],
+  "age_min": 6,
+  "age_max": 16,
+  "description_short": "Free five week summer camp on the Trinity College campus for Hartford children, part of a year round mentoring program. Campers take arts, performing arts, health and fitness classes, swim and play sports, and older campers prepare for college and can serve as young leaders.",
+  "meals_included": true,
+  "transportation": true,
+  "season_year": 2026,
+  "sources": [
+    {
+      "url": "https://www.trincoll.edu/dreamcamp/",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "primary_categories",
+        "age_min",
+        "age_max",
+        "activities"
+      ],
+      "note": "Researched by Claude from this page. Trinity's page: founded 1998, now in its 29th season; summer classes in creative and performing arts, health and nutrition, fitness and athletics; each summer 150+ Hartford children ages 6 to 16. Office at 300 Summit Street, Hartford 06106, 860-987-6209. Operator named as Trinity College with the ESF Dream Camp Foundation, which the page links as the camp's own website."
+    },
+    {
+      "url": "https://www.esfdreamcamp.org/trinity-college-dream-camp/trinity-programs/trinity-summer-camp/",
+      "checked": "2026-11-20",
+      "fields": [
+        "camp_type",
+        "secondary_categories",
+        "description_short",
+        "meals_included",
+        "transportation"
+      ],
+      "note": "Researched by Claude from this page. ESF Dream Camp's own page for the Trinity site: enrollment is full for Summer 2026 with a waitlist (sdubois@esfdreamcamp.org) that gets priority notice about Summer 2027; five weeks of summer camp, free of charge including meals and transportation; activities include visual and performing arts, music and video production, swimming, soccer, basketball."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.trincoll.edu/dreamcamp/",
+      "kind": "html",
+      "title": "Dream Camp - Dream Camp"
+    },
+    "warnings": [
+      "No session dates are posted for 2026 or 2027; only that camp runs five weeks.",
+      "Summer 2026 enrollment is full with a waitlist.",
+      "The camp is free and serves children from under resourced Hartford communities; it is not a general enrollment camp."
+    ],
+    "unknowns": [
+      "sessions",
+      "grade_min",
+      "grade_max",
+      "price_per_week",
+      "price_min",
+      "price_max",
+      "price_per",
+      "email",
+      "extended_care",
+      "financial_aid",
+      "aca_accredited",
+      "gender_policy",
+      "registration_url"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://www.trincoll.edu/dreamcamp/",
+      "changes": [
+        "New camp, researched from https://www.trincoll.edu/dreamcamp/"
+      ],
+      "for_andrew": [
+        "Should a free camp aimed at Hartford children from under resourced communities, with 2026 enrollment full, be listed? If so, is 'free of charge' worth adding as a price of 0 once you set a rule for free camps?"
+      ]
+    }
+  }
+}
