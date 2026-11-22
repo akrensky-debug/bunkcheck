@@ -542,6 +542,9 @@ CITY_COORDS: dict[tuple[str, str], tuple[float, float]] = {
     ("waterbury", "VT"): (44.3882, -72.7396),
     ("williston", "VT"): (44.4292, -73.0963),
     ("woodbury", "VT"): (44.4581, -72.3791),
+    # Towns added for camp listings, 22 November 2026. Coordinates are the town's internal point
+    # from the Census Bureau 2024 Gazetteer (county subdivisions).
+    ("hopkinton", "RI"): (41.4791, -71.7579),
 }
 
 

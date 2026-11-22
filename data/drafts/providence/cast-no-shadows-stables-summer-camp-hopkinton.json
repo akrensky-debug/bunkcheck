@@ -137,19 +137,16 @@
       "Lunch"
     ],
     "low_confidence": [],
-    "errors": [
-      "providence / cast-no-shadows-stables-summer-camp-hopkinton: city 'Hopkinton', RI is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-22",
       "page_checked": "https://www.castnoshadows.com/camps.html",
       "changes": [
-        "New camp, researched from https://www.castnoshadows.com/camps.html"
+        "New camp, researched from https://www.castnoshadows.com/camps.html",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
-      "for_andrew": [
-        "The stable is in Rockville, a village of Hopkinton, RI. Neither Rockville nor Hopkinton, RI is in cities.py, so I set city to Hopkinton and the validator fails until Hopkinton is added from the Census gazetteer."
-      ]
+      "for_andrew": []
     }
   }
 }
