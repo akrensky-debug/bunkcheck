@@ -71,7 +71,7 @@ UNIQUE = {
     "plan_picks": [("family_id", "child_name", "week_of", "camp_id")],
     "reminder_sends": [("member_id", "kind", "period")],
 }
-SERIAL = {"family_audit_log", "reminder_sends", "kit_share_events", "activity_demand", "registration_reminder_sends",
+SERIAL = {"csp_reports", "family_audit_log", "reminder_sends", "kit_share_events", "activity_demand", "registration_reminder_sends",
           "registration_alert_sends", "result_appearances"}
 
 
