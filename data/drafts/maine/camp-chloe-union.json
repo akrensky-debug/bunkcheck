@@ -1,0 +1,151 @@
+{
+  "slug": "camp-chloe-union",
+  "name": "Camp Chloë",
+  "operator_name": "Growing Routes",
+  "website_url": "https://www.growingroutes.org/camp-chloe",
+  "registration_url": "https://growingroutes.campintouch.com/ui/forms/application/camper/App",
+  "email": "info@growingroutes.org",
+  "city": "Union",
+  "state": "ME",
+  "camp_type": "sleepaway",
+  "primary_categories": [
+    "general",
+    "nature",
+    "outdoor"
+  ],
+  "secondary_categories": [
+    "arts",
+    "swimming"
+  ],
+  "activities": [
+    "swimming",
+    "hiking",
+    "arts and crafts",
+    "gardening",
+    "cooking",
+    "baking",
+    "yoga",
+    "canoeing",
+    "campfires",
+    "scavenger hunts",
+    "journaling",
+    "ultimate frisbee",
+    "star gazing",
+    "outdoor skills"
+  ],
+  "gender_policy": "girls",
+  "age_min": 8,
+  "age_max": 16,
+  "description_short": "Small overnight camp for girls and gender expansive kids at Twigg Farm on Seven Tree Pond in Union, with 8 to 20 campers per session grouped by grade. Campers swim from the farm's lake beach, hike, garden, cook meals from the gardens, make art and canoe.",
+  "indoor_outdoor": "both",
+  "price_min": 1960,
+  "price_max": 3965,
+  "price_per": "session",
+  "meals_included": true,
+  "financial_aid": true,
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Session 1 (Larkspur), grades 4 to 6 completed",
+      "start_date": "2027-06-25",
+      "end_date": "2027-07-02",
+      "price": 2285,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 2 (Lavender), grades 6 to 8 completed",
+      "start_date": "2027-07-05",
+      "end_date": "2027-07-17",
+      "price": 3965,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 3 (Lily), grades 3 to 5 completed",
+      "start_date": "2027-07-24",
+      "end_date": "2027-07-30",
+      "price": 1960,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 4 (Lupine), grades 7 to 9 completed",
+      "start_date": "2027-08-01",
+      "end_date": "2027-08-13",
+      "price": 3965,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.growingroutes.org/camp-chloe",
+      "checked": "2026-11-22",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "email",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "gender_policy",
+        "description_short",
+        "indoor_outdoor",
+        "price_min",
+        "price_max",
+        "price_per",
+        "meals_included",
+        "financial_aid",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page; 2027 dates and tuition; camp is at Twigg Farm on Seven Tree Pond in Union, ME; grade ranges are grades completed; $400 nonrefundable deposit, full payment due March 1, 2027"
+    },
+    {
+      "url": "https://www.growingroutes.org/faq",
+      "checked": "2026-11-22",
+      "fields": [
+        "age_min",
+        "age_max"
+      ],
+      "note": "Researched by Claude from this page; FAQ says some sessions still have space for ages 8 to 16"
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.growingroutes.org/camp-chloe",
+      "kind": "html",
+      "title": "Camp Chloë | Overnight Summer Camp in Midcoast Maine — Growing Routes"
+    },
+    "warnings": [
+      "Session grade ranges are grades completed (3rd to 9th). Ages 8 to 16 come from the FAQ.",
+      "The page gives the town (Union) but no street address, so there is no ZIP.",
+      "$400 nonrefundable deposit; full payment due March 1, 2027. A cancellation policy is linked but was not read."
+    ],
+    "unknowns": [
+      "street address",
+      "phone",
+      "refund policy",
+      "transportation",
+      "ACA accreditation"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "missing required zip",
+      "Union, ME is not in cities.py yet; to be added from the Census gazetteer."
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-22",
+      "page_checked": "https://www.growingroutes.org/camp-chloe",
+      "changes": [
+        "New camp, researched from https://www.growingroutes.org/camp-chloe"
+      ],
+      "for_andrew": [
+        "ZIP is required but no Growing Routes page gives a street address for Twigg Farm, only Union, ME on Seven Tree Pond (the mailing address is a Portland PO box). Please supply the farm address or ZIP so the draft validates."
+      ]
+    }
+  }
+}

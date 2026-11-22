@@ -1,0 +1,166 @@
+{
+  "slug": "penobscot-bay-ymca-explorers-camp-rockport",
+  "name": "Explorers Camp",
+  "operator_name": "Penobscot Bay YMCA",
+  "website_url": "https://www.penbayymca.org/programs/explorers-camp/",
+  "registration_url": "https://operations.daxko.com/Online/2127/ProgramsV2/Search.mvc?category_ids=CAT1673947",
+  "email": "bblake@penbayymca.org",
+  "phone": "207-236-3375",
+  "street_address": "Camden-Rockport Middle School",
+  "city": "Rockport",
+  "state": "ME",
+  "zip": "04856",
+  "camp_type": "day",
+  "grade_min": 2,
+  "grade_max": 5,
+  "age_min": 7,
+  "age_max": 11,
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "outdoor",
+    "STEM"
+  ],
+  "activities": [
+    "field trips",
+    "field games",
+    "arts and crafts",
+    "nature hikes",
+    "STEM projects",
+    "canoeing",
+    "swimming"
+  ],
+  "description_short": "YMCA day camp for children entering grades 2 to 5, based at Camden-Rockport Middle School, 9 am to 4 pm. Each week has a new theme and three field trips, plus field games, crafts, nature hikes, STEM projects and canoeing.",
+  "price_per_week": 282,
+  "price_min": 282,
+  "price_per": "week",
+  "extended_care": true,
+  "financial_aid": true,
+  "notes": "Non-member rate $282 a week; Penobscot Bay YMCA members pay $232. Before care 7:30 to 9 am and after care 4 to 5:30 pm at the school, $40 a week each.",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Week 1",
+      "start_date": "2026-06-22",
+      "end_date": "2026-06-26",
+      "price": 282,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 2",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-03",
+      "price": 282,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 3",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": 282,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 4",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": 282,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 5",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": 282,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 6",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": 282,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 7",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": 282,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 8",
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-14",
+      "price": 282,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.penbayymca.org/programs/explorers-camp/",
+      "checked": "2026-11-22",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "grade_min",
+        "grade_max",
+        "age_min",
+        "age_max",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "description_short",
+        "price_per_week",
+        "price_min",
+        "price_per",
+        "extended_care",
+        "financial_aid",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. 2026 Explorers Camp page: entering grades 2 to 5, home base Camden-Rockport Middle School, 9 am to 4 pm, eight weeks, members $232 and non-members $282 a week, before and after care $40 a week each, financial assistance. Ages derived from grades 2 to 5. City and ZIP are the YMCA's own address on the page (116 Union Street, PO Box 840, Rockport, ME 04856); the page does not give the school's address."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.penbayymca.org/programs/explorers-camp/",
+      "kind": "html",
+      "title": "Explorers Camp - Penobscot Bay YMCA"
+    },
+    "warnings": [
+      "Field trip bus runs during camp, but there is no bus to or from camp, so transportation is left unset."
+    ],
+    "unknowns": [
+      "Street address and town of Camden-Rockport Middle School",
+      "Lunch",
+      "Refund policy",
+      "Swim and waterfront details"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-22",
+      "page_checked": "https://www.penbayymca.org/programs/explorers-camp/",
+      "changes": [
+        "New camp, researched from https://www.penbayymca.org/programs/explorers-camp/"
+      ],
+      "for_andrew": [
+        "The page names the camp's home base, Camden-Rockport Middle School, but not its address or town. City and ZIP are the YMCA's own address (Rockport 04856). The 2026 brochure PDF is over the fetcher's 8 MB cap and was not read. Keep Rockport, or does the school's town need confirming?",
+        "Rockport is not in cities.py, so the draft fails validation until it is added from the Census gazetteer.",
+        "The same Y runs Camp Wonder (Thomaston), Discovery Camp and Adventure Camp on their own pages; only Explorers Camp is drafted here."
+      ]
+    }
+  }
+}

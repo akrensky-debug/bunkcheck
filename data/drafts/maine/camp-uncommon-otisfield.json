@@ -1,0 +1,170 @@
+{
+  "slug": "camp-uncommon-otisfield",
+  "name": "Camp Uncommon",
+  "operator_name": "Change Summer",
+  "website_url": "https://www.campuncommon.org/",
+  "registration_url": "https://campuncommon.campintouch.com/v2/login/login.aspx",
+  "email": "families@campuncommon.org",
+  "phone": "(646) 634-3277",
+  "street_address": "183 Powhatan Rd",
+  "city": "Otisfield",
+  "state": "ME",
+  "zip": "04270",
+  "camp_type": "sleepaway",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "sports",
+    "arts",
+    "STEM",
+    "swimming",
+    "outdoor"
+  ],
+  "activities": [
+    "soccer",
+    "flag football",
+    "basketball",
+    "volleyball",
+    "kickball",
+    "gaga",
+    "tennis",
+    "frisbee",
+    "swim instruction",
+    "hiking",
+    "nature",
+    "arts and crafts",
+    "pottery",
+    "theater",
+    "dance",
+    "music",
+    "step",
+    "yoga",
+    "improv",
+    "broadcasting",
+    "photography",
+    "chess",
+    "field trips",
+    "campfires"
+  ],
+  "gender_policy": "coed",
+  "grade_min": 4,
+  "grade_max": 9,
+  "age_min": 9,
+  "age_max": 15,
+  "description_short": "Two week sleepaway camp at Camp Powhatan in Otisfield for students of Uncommon Schools in Boston, Camden, Newark, New York City and Rochester entering grades 4 to 9; it is not open to other children. Campers rotate through sports, swimming, arts, STEM and nature, pick two intensives each session and ride a camp bus from their city.",
+  "indoor_outdoor": "both",
+  "transportation": true,
+  "meals_included": true,
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Session I",
+      "start_date": "2027-06-28",
+      "end_date": "2027-07-09",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session II",
+      "start_date": "2027-07-12",
+      "end_date": "2027-07-23",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session III",
+      "start_date": "2027-07-26",
+      "end_date": "2027-08-06",
+      "price": null,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.campuncommon.org/",
+      "checked": "2026-11-22",
+      "fields": [
+        "name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "grade_min",
+        "grade_max",
+        "age_min",
+        "age_max",
+        "description_short"
+      ],
+      "note": "Researched by Claude from this page; Sleepaway camp for campers entering grades 4 to 9; ages derived from grades (age_min = grade_min + 5, age_max = grade_max + 6); summer address 183 Powhatan Rd, Otisfield, ME 04270; part of the Change Summer family"
+    },
+    {
+      "url": "https://www.campuncommon.org/about/dates",
+      "checked": "2026-11-22",
+      "fields": [
+        "operator_name",
+        "transportation",
+        "meals_included",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page; 2027 dates: three two week sessions; hosted at Camp Powhatan; bus from each Uncommon Schools city; meals by WOLFoods. Operator is Change Summer, the parent organization named on the site"
+    },
+    {
+      "url": "https://www.campuncommon.org/about/faq",
+      "checked": "2026-11-22",
+      "fields": [
+        "gender_policy"
+      ],
+      "note": "Researched by Claude from this page; Campers are selected from Uncommon elementary and middle schools in Boston, Camden, Newark, New York City and Rochester; all activities are coed"
+    },
+    {
+      "url": "https://www.campuncommon.org/about/programs-activities",
+      "checked": "2026-11-22",
+      "fields": [
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "indoor_outdoor"
+      ],
+      "note": "Researched by Claude from this page"
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.campuncommon.org/",
+      "kind": "html",
+      "title": "Camp Uncommon - Enriching Summer Camp for Under-Resourced Students"
+    },
+    "warnings": [
+      "Enrollment is limited to Uncommon Schools students; the camp is not open to the public.",
+      "No price is posted.",
+      "The FAQ still says 2026 dates are coming soon; the dates page gives 2027 sessions, used here."
+    ],
+    "unknowns": [
+      "price",
+      "financial aid",
+      "refund policy",
+      "ACA accreditation"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-22",
+      "page_checked": "https://www.campuncommon.org/",
+      "changes": [
+        "New camp, researched from https://www.campuncommon.org/"
+      ],
+      "for_andrew": [
+        "Camp Uncommon only takes students from Uncommon Schools (Boston, Camden, Newark, New York City, Rochester), like a residents only camp. List it, or drop it because most families cannot enroll?",
+        "It runs at Camp Powhatan in Otisfield, a separate camp facility; Camp Powhatan's own program is not in the dataset."
+      ]
+    }
+  }
+}
