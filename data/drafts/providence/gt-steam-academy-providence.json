@@ -1,0 +1,119 @@
+{
+  "slug": "gt-steam-academy-providence",
+  "name": "GT STEAM Academy (Providence)",
+  "operator_name": "Generation Teach",
+  "website_url": "https://www.gtsteam.org/",
+  "email": "providence@genteach.org",
+  "street_address": "Classical High School, 770 Westminster St.",
+  "city": "Providence",
+  "state": "RI",
+  "zip": "02903",
+  "camp_type": "day",
+  "primary_categories": [
+    "academic",
+    "STEM"
+  ],
+  "secondary_categories": [
+    "arts",
+    "sports"
+  ],
+  "activities": [
+    "engineering",
+    "law",
+    "math",
+    "reading",
+    "art",
+    "sports",
+    "games",
+    "fitness",
+    "field trips",
+    "competitions"
+  ],
+  "grade_min": 0,
+  "grade_max": 7,
+  "age_min": 5,
+  "age_max": 13,
+  "description_short": "A free five week summer learning program for Providence Public Schools students, with morning classes in engineering, law, math and reading taught by college and high school student teachers, and afternoons of art, sports, games and field trips. Kindergarten to grade 2 meet at D'Abate Elementary, grades 5 to 7 at Classical High School.",
+  "price_per_week": 0,
+  "price_min": 0,
+  "price_max": 0,
+  "price_per": "session",
+  "meals_included": true,
+  "transportation": true,
+  "special_needs_notes": "Not an Extended School Year program and does not meet IEP mandated ESY requirements; families list allergies and special needs on the enrollment form.",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Summer 2026 (Providence sites)",
+      "start_date": "2026-07-06",
+      "end_date": "2026-08-07",
+      "price": 0,
+      "availability": "unknown"
+    }
+  ],
+  "notes": "Only students who attend Providence Public Schools can enroll. Monday to Friday 8:30 to 4:00, no cost, breakfast, lunch and materials provided, busing on the enrollment form. Two Providence sites: current K to 2nd graders at D'Abate Elementary, 60 Kossuth St. (02909); current 5th to 7th graders at Classical High School. The homepage invites families to sign up to hear when Summer 2027 enrollment opens.",
+  "sources": [
+    {
+      "url": "https://www.gtsteam.org/",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "age_min",
+        "age_max",
+        "description_short",
+        "price_per_week",
+        "price_min",
+        "price_max",
+        "price_per",
+        "meals_included",
+        "transportation",
+        "special_needs_notes",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Homepage, Providence Public Schools section: July 6 to August 7, 2026; current K, 1st and 2nd graders at D'Abate Elementary and current 5th to 7th graders at Classical High School; busing provided; no cost; breakfast and lunch provided. Grades as the page states them (current grade); ages derived from grades K to 7",
+      "checked": "2026-11-22"
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.gtsteam.org/",
+      "kind": "html",
+      "title": "GTSA (Generation Teach GT STEAM Academy)"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Summer 2027 dates",
+      "Whether 'current' grade means the grade just finished or the coming one"
+    ],
+    "low_confidence": [
+      "Grade range: the page says current K to 2 and current 5 to 7, with no program for grades 3 and 4 in Providence"
+    ],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-22",
+      "page_checked": "https://www.gtsteam.org/",
+      "changes": [
+        "New camp, researched from https://www.gtsteam.org/"
+      ],
+      "for_andrew": [
+        "Only Providence Public Schools students can enroll. Listed with that in the notes and description; keep it?",
+        "Two Providence sites with different grades (K to 2 at D'Abate Elementary, 5 to 7 at Classical High School) on the same dates. I made one listing at Classical's address, per the one listing rule. Split into two?",
+        "Generation Teach also runs a Central Falls site (Veterans Memorial Elementary, K to 4, Central Falls students only) and a Boston site for Bridge Boston and Match students. Not drafted; say if you want them."
+      ]
+    }
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "slug": "bcyf-leahy-holloran-summer-fun-boston",
+  "name": "LHCC Summer Fun",
+  "operator_name": "Boston Centers for Youth & Families (BCYF Leahy Holloran Community Center)",
+  "website_url": "https://www.boston.gov/departments/boston-centers-youth-families/summer-programs-and-events-bcyf",
+  "email": "LeahyHolloranCC@boston.gov",
+  "phone": "617-635-5150",
+  "city": "Boston",
+  "state": "MA",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "arts",
+    "STEM",
+    "sports",
+    "performing_arts"
+  ],
+  "activities": [
+    "athletic games",
+    "recreational games",
+    "arts and crafts",
+    "theater arts",
+    "STEM",
+    "water play",
+    "field trips"
+  ],
+  "gender_policy": "coed",
+  "age_min": 5,
+  "age_max": 10,
+  "description_short": "Free weekly city summer program for ages 5 to 10 run by BCYF Leahy Holloran, held at the Perry School in summer 2026 while the center is closed for repairs. Weekdays 9 to 2 with an optional 5pm pickup: games, arts and crafts, theater, STEM, water play and a weekly field trip. Boston residents get preference.",
+  "indoor_outdoor": "both",
+  "price_per_week": 0,
+  "price_min": 0,
+  "price_max": 0,
+  "price_per": "week",
+  "extended_care": true,
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Week 1 (at the Perry School)",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": 0,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 2 (at the Perry School)",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": 0,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 3 (at the Perry School)",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": 0,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 4 (at the Perry School)",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": 0,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 5 (at the Perry School)",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": 0,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 6 (at the Perry School)",
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-14",
+      "price": 0,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.boston.gov/sites/default/files/file/2026/05/BCYFSummerGuide2026_FinalV2.pdf",
+      "checked": "2026-11-22",
+      "fields": [
+        "name",
+        "operator_name",
+        "email",
+        "phone",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "gender_policy",
+        "age_min",
+        "age_max",
+        "description_short",
+        "indoor_outdoor",
+        "price_per_week",
+        "price_min",
+        "price_max",
+        "price_per",
+        "extended_care",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. BCYF Summer Guide 2026, pages 18 to 19 (Leahy Holloran, 1 Worrell Street, Dorchester): the center's school building is closed for repairs in summer 2026, so LHCC Summer Fun runs at The Perry School. Ages 5 to 10, co-ed, fee 0, six weekly sessions July 6 to August 14, 2026, 9 to 2 with optional 5pm dismissal, preference to City of Boston residents. The guide gives no address for the Perry School. Extended care is the optional 5pm dismissal."
+    },
+    {
+      "url": "https://www.boston.gov/departments/boston-centers-youth-families/summer-programs-and-events-bcyf",
+      "checked": "2026-11-22",
+      "fields": [
+        "website_url"
+      ],
+      "note": "Researched by Claude from this page. BCYF summer programs page, updated 5/4/26, links the 2026 Summer Guide."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.boston.gov/departments/boston-centers-youth-families/summer-programs-and-events-bcyf",
+      "kind": "html",
+      "title": "Summer Programs and Events at BCYF | Boston.gov"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Street address and ZIP of the summer site",
+      "2027 dates and site",
+      "Lunch"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-22",
+      "page_checked": "https://www.boston.gov/departments/boston-centers-youth-families/summer-programs-and-events-bcyf",
+      "changes": [
+        "New camp, researched from https://www.boston.gov/departments/boston-centers-youth-families/summer-programs-and-events-bcyf"
+      ],
+      "for_andrew": [
+        "In summer 2026 the program ran at the Perry School, not the center, and BCYF's pages give no address for the Perry School, so the draft has no street address or ZIP and fails the zip check. The center itself is 1 Worrell Street, Dorchester. Use the Perry School's address (from Boston Public Schools), the center's, or wait to see where 2027 runs?",
+        "Preference goes to City of Boston residents; others may enroll if space allows. Fee is $0."
+      ]
+    }
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "slug": "federal-hill-house-summer-camp-providence",
+  "name": "Federal Hill House Summer Camp",
+  "operator_name": "Federal Hill House",
+  "website_url": "https://www.federalhillhouse.org/programs/summer-camp/",
+  "registration_url": "https://www.myprocare.com/Default/Index?aWtuPTgyMjg1MDAwMTUmc2NoSWQ9MQ=",
+  "email": "SummerCamp@federalhillhouse.org",
+  "phone": "(401) 421-4722",
+  "street_address": "35 Swiss Street",
+  "city": "Providence",
+  "state": "RI",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "arts",
+    "sports",
+    "swimming"
+  ],
+  "activities": [
+    "weekly themes",
+    "outdoor play",
+    "arts and crafts",
+    "makerspace",
+    "team sports",
+    "games",
+    "swimming",
+    "field trips"
+  ],
+  "grade_min": 1,
+  "grade_max": 7,
+  "age_min": 6,
+  "age_max": 13,
+  "description_short": "A full day summer camp at Federal Hill House in Providence for kids entering grades 1 to 7, with weekly themes, arts and crafts in the makerspace, team games, outdoor play, swimming and field trips by van.",
+  "indoor_outdoor": "both",
+  "price_per_week": 287.5,
+  "price_per": "week",
+  "extended_care": true,
+  "transportation": null,
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Summer 2026 (weekly enrollment)",
+      "start_date": "2026-06-22",
+      "end_date": "2026-08-21",
+      "price": 287.5,
+      "availability": "unknown"
+    }
+  ],
+  "notes": "Hours 8:00 to 4:30, Monday to Friday. Before care 7:00 to 8:00 and after care 4:30 to 5:30, $25 a week each. Accepts DHS Child Care Assistance Program (CCAP) payment. Closed July 3 and August 10 (the page prints the year as 2025), with no proration. Enter by the left entrance at 35 Swiss Street.",
+  "sources": [
+    {
+      "url": "https://www.federalhillhouse.org/programs/summer-camp/",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "age_min",
+        "age_max",
+        "description_short",
+        "indoor_outdoor",
+        "price_per_week",
+        "price_per",
+        "extended_care",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. 2026 Summer Camp, grades 1 to 7, June 22 to August 21, 8:00 to 4:30, $287.50 per week. Ages derived from grades",
+      "checked": "2026-11-22"
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=35+Swiss+Street%2C+Providence%2C+RI&benchmark=Public_AR_Current&format=json",
+      "checked": "2026-11-22",
+      "fields": [
+        "zip"
+      ],
+      "note": "ZIP looked up with the Census Bureau geocoder from the address on the camp's page (35 SWISS ST, PROVIDENCE, RI, 02909)"
+    }
+  ],
+  "review": {
+    "status": "ready",
+    "source": {
+      "url": "https://www.federalhillhouse.org/programs/summer-camp/",
+      "kind": "html",
+      "title": "Summer Camp - Federal Hill House"
+    },
+    "warnings": [
+      "Closed days on the page are printed as 2025 inside the 2026 camp page; taken as July 3 and August 10, 2026."
+    ],
+    "unknowns": [
+      "Weekly theme dates",
+      "Lunch",
+      "Financial aid beyond CCAP",
+      "2027 season"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-22",
+      "page_checked": "https://www.federalhillhouse.org/programs/summer-camp/",
+      "changes": [
+        "New camp, researched from https://www.federalhillhouse.org/programs/summer-camp/",
+        "ZIP 02909 looked up from the camp's street address with the Census geocoder (Andrew allowed ZIP lookups, 22 November)."
+      ],
+      "for_andrew": []
+    }
+  },
+  "zip": "02909"
+}

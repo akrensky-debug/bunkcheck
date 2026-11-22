@@ -1,0 +1,142 @@
+{
+  "slug": "bryant-university-precollege-summer-programs-smithfield",
+  "name": "Bryant University Precollege Summer Programs",
+  "operator_name": "Bryant University",
+  "website_url": "https://www.bryant.edu/undergraduate/academics/precollege-summer-programs",
+  "street_address": "1150 Douglas Pike",
+  "city": "Smithfield",
+  "state": "RI",
+  "zip": "02917",
+  "camp_type": "specialty",
+  "primary_categories": [
+    "academic"
+  ],
+  "secondary_categories": [
+    "STEM",
+    "technology"
+  ],
+  "activities": [
+    "economics",
+    "statistics",
+    "data analysis",
+    "python programming",
+    "generative ai",
+    "3d printing",
+    "virtual reality",
+    "robotics"
+  ],
+  "grade_min": 9,
+  "grade_max": 12,
+  "age_min": 14,
+  "age_max": 18,
+  "description_short": "Week long day programs on the Bryant campus in Smithfield for high school students, taught by Bryant faculty. Recent offerings were economics of social issues, actuarial science and statistics, and an AI and data science camp with Python, 3D printing and robots.",
+  "price_min": 200,
+  "price_max": 600,
+  "price_per": "session",
+  "financial_aid": true,
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Precollege Summer Economics Program",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": 600,
+      "availability": "unknown"
+    },
+    {
+      "name": "Precollege Actuarial Science and Statistics Summer Program",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": 600,
+      "availability": "unknown"
+    },
+    {
+      "name": "AI and Data Science Camp",
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-14",
+      "price": 200,
+      "availability": "unknown"
+    }
+  ],
+  "notes": "Each program is 9:00 to 3:00 and takes applications. Economics and actuarial tuition ($600) includes all meals and materials; the AI camp's $200 registration fee covers materials. No application fee. Summer 2027 details not yet announced.",
+  "sources": [
+    {
+      "url": "https://www.bryant.edu/undergraduate/academics/precollege-summer-programs",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "camp_type",
+        "primary_categories",
+        "grade_min",
+        "grade_max",
+        "age_min",
+        "age_max"
+      ],
+      "note": "Researched by Claude from this page. Page: programs designed for high school students on the Smithfield campus; Summer 2027 details to be announced. Grades 9 to 12 taken as high school (the AI camp flyer states grades 9 to 12); ages derived from grades",
+      "checked": "2026-11-22"
+    },
+    {
+      "url": "https://www.bryanteconsummerprogram.com/",
+      "fields": [
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "financial_aid",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Economics: August 3 to 7, 2026, 9 to 3, $600 incl. meals and materials, need based scholarships. Address from page footer. Sessions list also uses the actuarial page and AI flyer below",
+      "checked": "2026-11-22"
+    },
+    {
+      "url": "https://akaminag.wixsite.com/actuarialscience",
+      "fields": [
+        "price_max"
+      ],
+      "note": "Researched by Claude from this page. Actuarial: August 3 to 7, 2026, 9 to 3, $600 incl. meals and materials",
+      "checked": "2026-11-22"
+    },
+    {
+      "url": "https://www.bryant.edu/sites/web2024/files/docs/Summer%202026%20AI%20and%20DS%20Camp.pdf",
+      "fields": [
+        "price_min",
+        "price_per",
+        "secondary_categories",
+        "activities",
+        "description_short"
+      ],
+      "note": "Researched by Claude from this page. AI and Data Science Camp: grades 9 to 12, August 10 to 14, 9 to 3, $200 registration fee, need based scholarships",
+      "checked": "2026-11-22"
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.bryant.edu/undergraduate/academics/precollege-summer-programs",
+      "kind": "html",
+      "title": "Precollege Summer Programs | Bryant University"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Summer 2027 programs, dates and prices",
+      "Lunch for the AI camp",
+      "Registration links (each program has its own application)"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-22",
+      "page_checked": "https://www.bryant.edu/undergraduate/academics/precollege-summer-programs",
+      "changes": [
+        "New camp, researched from https://www.bryant.edu/undergraduate/academics/precollege-summer-programs"
+      ],
+      "for_andrew": [
+        "Three separate programs on one campus, each with its own page, price and contact. I made one listing with each program as a session, since they share a place. Split into three if you'd rather.",
+        "Only the 2026 season is posted and it is over; Bryant says 2027 details will be announced.",
+        "Sessions draw on three pages (economics site, actuarial site, AI flyer) but the sessions field can carry only one source; I put it on the economics page."
+      ]
+    }
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "slug": "explore-your-environment-new-bedford",
+  "name": "Explore Your Environment (E.Y.E.)",
+  "operator_name": "Youth Opportunities Unlimited (Y.O.U. Inc.)",
+  "website_url": "https://www.younb.org/explore-your-environment",
+  "registration_url": "https://docs.google.com/forms/d/e/1FAIpQLSf__qeoWm-KUeIzwdFbv3xhGIYJDJGRknZfztBOtkO_IBzStQ/viewform?usp=dialog",
+  "email": "karina@younb.org",
+  "phone": "(508) 204-0024",
+  "street_address": "Victory Park Warming House, 224 Brock Avenue",
+  "city": "New Bedford",
+  "state": "MA",
+  "zip": "02744",
+  "camp_type": "specialty",
+  "primary_categories": [
+    "outdoor",
+    "nature"
+  ],
+  "activities": [
+    "biking",
+    "bike safety",
+    "snorkeling",
+    "gardening",
+    "lawn bowling",
+    "croquet",
+    "adventure trips"
+  ],
+  "age_min": 9,
+  "age_max": 14,
+  "description_short": "A small group bike program in New Bedford's South End for ages 9 to 14: kids learn safe riding, then cycle to parks, beaches, landmarks and the Victory Park children's garden, learning local ecology and history along the way. Kids must already know how to ride.",
+  "indoor_outdoor": "outdoor",
+  "financial_aid": true,
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Afternoon program (open to the Greater New Bedford community)",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "availability": "unknown"
+    }
+  ],
+  "notes": "Afternoon program 1:00 to 3:30, listed as 4 sessions over August 3 to 7, 2026. A morning program (9 to 12, July to August, 8 sessions) serves partnered New Bedford Public Schools youth. The page lists cost as $150 per session for both, with scholarships. Snacks provided. Groups of up to 12, 3 to 1 ratio.",
+  "sources": [
+    {
+      "url": "https://www.younb.org/explore-your-environment",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "indoor_outdoor",
+        "financial_aid",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Program page: ages 9 to 14; afternoon program August 3 to 7, 2026, 1:00 to 3:30, 4 sessions, $150 per session with scholarships; morning program for partnered New Bedford schools. Registration link is the page's interest form. Address from the page footer",
+      "checked": "2026-11-22"
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.younb.org/explore-your-environment",
+      "kind": "html",
+      "title": "Youth Opportunities Unlimited: Explore Your Environment"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Whether $150 covers the whole week or each of the 4 sessions",
+      "Which days of the week the 4 afternoon sessions fall on",
+      "2027 dates"
+    ],
+    "low_confidence": [
+      "Price left out: the page says $150 per session and 4 sessions, which could mean $150 or $600 for the week"
+    ],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-22",
+      "page_checked": "https://www.younb.org/explore-your-environment",
+      "changes": [
+        "New camp, researched from https://www.younb.org/explore-your-environment"
+      ],
+      "for_andrew": [
+        "Price is ambiguous ($150 per session, 4 sessions in the week), so I left it out. Ask Y.O.U. or keep it blank?",
+        "Only the one public afternoon week is listed; the 8 week morning program is for partnered New Bedford Public Schools youth.",
+        "The registration link is an interest form, not a signup."
+      ]
+    }
+  }
+}
