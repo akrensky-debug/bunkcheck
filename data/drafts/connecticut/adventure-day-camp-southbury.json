@@ -1,0 +1,147 @@
+{
+  "slug": "adventure-day-camp-southbury",
+  "name": "Adventure Day Camp",
+  "operator_name": "Southbury Parks and Recreation",
+  "website_url": "https://southburyct.myrec.com/documents/2026_adc_parent_handbook.pdf",
+  "phone": "203-262-0633",
+  "email": "adcdirector@southbury-ct.gov",
+  "street_address": "Ballantine Park Pavilion, 611 Old Field Road",
+  "city": "Southbury",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "sports",
+    "swimming",
+    "arts"
+  ],
+  "activities": [
+    "swim lessons",
+    "swimming",
+    "arts and crafts",
+    "basketball",
+    "pickleball",
+    "gaga",
+    "kickball",
+    "soccer",
+    "capture the flag",
+    "ultimate frisbee",
+    "volleyball",
+    "board games",
+    "field trips"
+  ],
+  "description_short": "A town day camp at the Ballantine Park pavilion in Southbury, weekdays 8:30 am to 4 pm in weekly sessions from July 6 to August 14. Campers are grouped by grade, play sports and games, do art, have a weekly swim lesson and camper only pool time, meet entertainers on Tuesdays and take a field trip most Thursdays.",
+  "indoor_outdoor": "outdoor",
+  "extended_care": true,
+  "meals_included": false,
+  "refund_policy_summary": "Full refund for cancellations before registration closes (the Friday two weeks before the camp week); 25% fee after that; 50% fee within seven days of the week's start. No refunds for dismissals.",
+  "swim_waterfront_notes": "Each week includes a swim lesson and pool time reserved for campers at the Ballantine Park pool, weather permitting; none on field trip days.",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Week 1",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 2",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 3",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 4",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 5",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 6",
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-14",
+      "availability": "unknown"
+    }
+  ],
+  "state": "CT",
+  "sources": [
+    {
+      "url": "https://southburyct.myrec.com/documents/2026_adc_parent_handbook.pdf",
+      "checked": "2026-11-22",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "phone",
+        "email",
+        "street_address",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "description_short",
+        "indoor_outdoor",
+        "extended_care",
+        "meals_included",
+        "refund_policy_summary",
+        "swim_waterfront_notes",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. 2026 handbook (revised 6/10/26): camp runs Monday to Friday 8:30 am to 4 pm, July 6 to August 14, registered by the week. Before camp 7:30 to 8:30 and after camp 4 to 5:30 at extra cost. Bad weather moves camp to the Parks and Recreation office at 561 Main Street South. Campers bring a bagged lunch. Groups by fall 2026 grade; the handbook gives no grade range or fee."
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=611+Old+Field+Road%2C+Southbury%2C+CT&benchmark=Public_AR_Current&format=json",
+      "checked": "2026-11-22",
+      "fields": [
+        "zip"
+      ],
+      "note": "ZIP looked up with the Census Bureau geocoder from the address on the camp's page (611 OLD FIELD RD, SOUTHBURY, CT, 06488)"
+    }
+  ],
+  "review": {
+    "status": "ready",
+    "source": {
+      "url": "https://southburyct.myrec.com/documents/2026_adc_parent_handbook.pdf",
+      "kind": "pdf",
+      "title": "Adventure Day Camp Parent & Camper Handbook 2026"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Grades or ages",
+      "Weekly fee",
+      "2027 dates and prices",
+      "Financial aid",
+      "ACA accreditation"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-22",
+      "page_checked": "https://southburyct.myrec.com/documents/2026_adc_parent_handbook.pdf",
+      "changes": [
+        "New camp, researched from https://southburyct.myrec.com/documents/2026_adc_parent_handbook.pdf",
+        "Used the 2026 season: no 2027 information is posted. The handbook gives no grades or fee, so none recorded.",
+        "TeenScape is a separate program and not included.",
+        "ZIP 06488 looked up from the camp's street address with the Census geocoder (Andrew allowed ZIP lookups, 22 November)."
+      ],
+      "for_andrew": []
+    }
+  },
+  "zip": "06488"
+}

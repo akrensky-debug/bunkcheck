@@ -1,0 +1,103 @@
+{
+  "slug": "camp-newhoca-and-center-375-summer-day-camp-vernon",
+  "name": "Camp Newhoca and Center 375 Summer Day Camp",
+  "operator_name": "Vernon Parks & Recreation",
+  "website_url": "https://vernonct.myrec.com/documents/summer_camp_parent_handbook.pdf",
+  "phone": "860-870-3520",
+  "email": "parksandrec@vernon-ct.gov",
+  "street_address": "Camp Newhoca, 195 Grier Road",
+  "city": "Vernon",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "swimming",
+    "sports",
+    "arts"
+  ],
+  "activities": [
+    "group games",
+    "arts and crafts",
+    "sports",
+    "swimming",
+    "theme activities",
+    "hikes"
+  ],
+  "description_short": "Vernon's town summer day camp, run at two sites: Camp Newhoca on Grier Road, which swims in a roped off area of Middle Bolton Lake, and Center 375 on Hartford Turnpike, which uses the community pool. Camp runs 8 am to 3 pm with an extended program to 6 pm, and is mostly outdoors with games, crafts, sports and swimming.",
+  "indoor_outdoor": "outdoor",
+  "extended_care": true,
+  "meals_included": false,
+  "special_needs_notes": "Campers with special needs are placed in integrated groups when the child can be served safely; request a meeting in writing at least four weeks before the first day.",
+  "swim_waterfront_notes": "Camp Newhoca swims in a roped off area of Middle Bolton Lake; Center 375 uses the municipal community pool. Lifeguards test each camper; no flotation devices.",
+  "season_year": 2026,
+  "state": "CT",
+  "sources": [
+    {
+      "url": "https://vernonct.myrec.com/documents/summer_camp_parent_handbook.pdf",
+      "checked": "2026-11-22",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "phone",
+        "email",
+        "street_address",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "description_short",
+        "indoor_outdoor",
+        "extended_care",
+        "meals_included",
+        "special_needs_notes",
+        "swim_waterfront_notes"
+      ],
+      "note": "Researched by Claude from this page. Summer 2026 handbook (updated February 2026). Camp Newhoca, 195 Grier Road, and Center 375 Camp, 375 Hartford Turnpike, both Monday to Friday 8 am to 3 pm with an Extended PM Program 3 to 6 pm. Teen Camp (Tuesday to Thursday) and CIT are separate. Campers bring a non refrigerated lunch. Municipal camp, exempt from state licensing. The handbook gives no ages, dates or fees."
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=195+Grier+Road%2C+Vernon%2C+CT&benchmark=Public_AR_Current&format=json",
+      "checked": "2026-11-22",
+      "fields": [
+        "zip"
+      ],
+      "note": "ZIP looked up with the Census Bureau geocoder from the address on the camp's page (195 GRIER RD, VERNON, CT, 06066)"
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://vernonct.myrec.com/documents/summer_camp_parent_handbook.pdf",
+      "kind": "pdf",
+      "title": "Vernon Parks & Recreation Summer Day Camp Parent Handbook, Summer 2026"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Ages or grades",
+      "2026 dates",
+      "Weekly fee",
+      "2027 dates and prices",
+      "ACA accreditation"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-22",
+      "page_checked": "https://vernonct.myrec.com/documents/summer_camp_parent_handbook.pdf",
+      "changes": [
+        "New camp, researched from https://vernonct.myrec.com/documents/summer_camp_parent_handbook.pdf",
+        "Used the 2026 season: no 2027 information is posted. The handbook gives no dates, so no sessions recorded.",
+        "ZIP 06066 looked up from the camp's street address with the Census geocoder (Andrew allowed ZIP lookups, 22 November)."
+      ],
+      "for_andrew": [
+        "Two sites with the same hours: Camp Newhoca (195 Grier Road) and Center 375 (375 Hartford Turnpike). I made one listing at Camp Newhoca. One listing, or one per site?",
+        "The 2026 handbook gives no ages, dates or fees, and the program pages are down for the off season. List it like this, or wait for 2027?"
+      ]
+    }
+  },
+  "zip": "06066"
+}
