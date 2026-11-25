@@ -1,0 +1,153 @@
+{
+  "slug": "hopkinton-center-for-the-arts-summer-fun-in-the-arts-hopkinton",
+  "name": "Summer Fun in the Arts",
+  "operator_name": "Hopkinton Center for the Arts",
+  "website_url": "https://www.hopartscenter.org/summerfun2026",
+  "email": "info@hopartscenter.org",
+  "street_address": "98 Hayden Rowe",
+  "city": "Hopkinton",
+  "state": "MA",
+  "camp_type": "specialty",
+  "primary_categories": [
+    "arts",
+    "performing_arts"
+  ],
+  "activities": [
+    "ceramics",
+    "dance",
+    "music",
+    "theater",
+    "visual arts",
+    "filmmaking"
+  ],
+  "grade_min": 0,
+  "grade_max": 12,
+  "age_min": 5,
+  "age_max": 18,
+  "description_short": "An eight week summer arts program at the Hopkinton Center for the Arts for kids and teens in grades K to 12, with weekly half day and full day classes in ceramics, dance, music, theater, visual arts and filmmaking, plus outdoor time and an end of week performance.",
+  "indoor_outdoor": "both",
+  "meals_included": false,
+  "financial_aid": true,
+  "refund_policy_summary": "Refunds less a $50 cancellation fee until May 31; none after. Switching weeks costs $25 when space allows.",
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Week 1",
+      "start_date": "2027-06-28",
+      "end_date": "2027-07-02",
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 2",
+      "start_date": "2027-07-06",
+      "end_date": "2027-07-09",
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 3",
+      "start_date": "2027-07-12",
+      "end_date": "2027-07-16",
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 4",
+      "start_date": "2027-07-19",
+      "end_date": "2027-07-23",
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 5",
+      "start_date": "2027-07-26",
+      "end_date": "2027-07-30",
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 6",
+      "start_date": "2027-08-02",
+      "end_date": "2027-08-06",
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 7",
+      "start_date": "2027-08-09",
+      "end_date": "2027-08-13",
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 8",
+      "start_date": "2027-08-16",
+      "end_date": "2027-08-20",
+      "availability": "unknown"
+    }
+  ],
+  "notes": "2027 registration opens December 28, 2026. Weekly prices are in the class catalog, which refused our fetcher (429), so none recorded. Most programs meet at 98 Hayden Rowe, Hopkinton (pick up 3 pm in the amphitheater); some at 34 Hayden Rowe and at the HCA Community Kiln, 46 Park Street, Framingham. Families send lunch and snacks; the center serves no food. Need based scholarships for Hopkinton and nearby MetroWest residents.",
+  "sources": [
+    {
+      "url": "https://www.hopartscenter.org/summerfun2026",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "street_address",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "age_min",
+        "age_max",
+        "description_short",
+        "indoor_outdoor",
+        "meals_included",
+        "financial_aid",
+        "refund_policy_summary",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Summer Fun page: 2027 registration opens December 28, 2026; 2027 summer refund policy; eight weeks June 28 to August 20 (the page gives no year on the weeks; the weekdays match 2027, with a four day week after July 5); grades K to 12; HCA does not serve food. Ages derived from grades",
+      "checked": "2026-11-22"
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=98+Hayden+Rowe%2C+Hopkinton%2C+MA&benchmark=Public_AR_Current&format=json",
+      "checked": "2026-11-22",
+      "fields": [
+        "zip"
+      ],
+      "note": "ZIP looked up with the Census Bureau geocoder from the address on the camp's page (98 HAYDEN ROWE ST, HOPKINTON, MA, 01748)"
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.hopartscenter.org/summerfun2026",
+      "kind": "html",
+      "title": "School Vacation & Summer Fun in the Arts | HopArtsCenter"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Weekly prices",
+      "Program list by week",
+      "Daily hours for full and half day"
+    ],
+    "low_confidence": [
+      "Season year: weeks carry no year; 2027 inferred from weekdays and the page's 2027 registration and refund notices"
+    ],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-22",
+      "page_checked": "https://www.hopartscenter.org/summerfun2026",
+      "changes": [
+        "New camp, researched from https://www.hopartscenter.org/summerfun2026",
+        "ZIP 01748 looked up from the camp's street address with the Census geocoder (Andrew allowed ZIP lookups, 22 November)."
+      ],
+      "for_andrew": [
+        "The week list has no year; I took it as 2027 because the page announces 2027 registration and a 2027 refund policy and the dates fall Monday to Friday only in 2027. The week links still point to the 2026 catalog. OK?",
+        "No prices: the class catalog (canvas.hopartscenter.org) refused our fetcher with a 429. Ask the center for the 2027 summer brochure?"
+      ]
+    }
+  },
+  "zip": "01748"
+}

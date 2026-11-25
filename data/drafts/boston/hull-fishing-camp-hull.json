@@ -1,0 +1,171 @@
+{
+  "slug": "hull-fishing-camp-hull",
+  "name": "Hull Fishing Camp",
+  "operator_name": "Hull Fishing Camp",
+  "website_url": "https://www.hullfishingcamp.com/details.html",
+  "registration_url": "https://www.hullfishingcamp.com/signup-form.html",
+  "email": "grahamwhelan202@gmail.com",
+  "city": "Hull",
+  "state": "MA",
+  "camp_type": "specialty",
+  "primary_categories": [
+    "nature",
+    "outdoor"
+  ],
+  "activities": [
+    "saltwater fishing",
+    "casting",
+    "knot tying",
+    "marine life",
+    "fish conservation",
+    "saltwater fly fishing"
+  ],
+  "age_min": 7,
+  "age_max": 14,
+  "description_short": "A half day saltwater fishing camp for ages 7 to 14 held from the shore in Hull, Monday to Friday 8:30 to 12:30. Campers learn local fish and marine life, rod setup, knots, casting and catch and release conservation, with all gear provided.",
+  "indoor_outdoor": "outdoor",
+  "price_per_week": 300,
+  "price_min": 300,
+  "price_max": 300,
+  "price_per": "week",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Week of 2026-06-22",
+      "start_date": "2026-06-22",
+      "end_date": "2026-06-26",
+      "price": 300,
+      "availability": "full"
+    },
+    {
+      "name": "Week of 2026-06-29",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-03",
+      "price": 300,
+      "availability": "full"
+    },
+    {
+      "name": "Week of 2026-07-06",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": 300,
+      "availability": "full"
+    },
+    {
+      "name": "Week of 2026-07-13",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": 300,
+      "availability": "full"
+    },
+    {
+      "name": "Week of 2026-07-20",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": 300,
+      "availability": "full"
+    },
+    {
+      "name": "Week of 2026-07-27",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": 300,
+      "availability": "full"
+    },
+    {
+      "name": "Week of 2026-08-03",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": 300,
+      "availability": "full"
+    },
+    {
+      "name": "Week of 2026-08-10",
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-14",
+      "price": 300,
+      "availability": "full"
+    },
+    {
+      "name": "Week of 2026-08-17",
+      "start_date": "2026-08-17",
+      "end_date": "2026-08-21",
+      "price": 300,
+      "availability": "full"
+    },
+    {
+      "name": "Week of 2026-08-24",
+      "start_date": "2026-08-24",
+      "end_date": "2026-08-28",
+      "price": 300,
+      "availability": "full"
+    }
+  ],
+  "notes": "Price includes a camp t-shirt. A separate saltwater fly fishing program (ages 9 to 14, Tuesday to Thursday 1:30 to 3:30, $250, 4 spots a week, weeks to be set by interest) and an August 10, 12 and 13 afternoon session (1 to 4 pm, listed as open) are also offered. Every regular week was listed as full with a waitlist sign up.",
+  "sources": [
+    {
+      "url": "https://www.hullfishingcamp.com/details.html",
+      "checked": "2026-11-22",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "indoor_outdoor",
+        "price_per_week",
+        "price_min",
+        "price_max",
+        "price_per",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. The weeks are listed without a year; the year comes from the contact page, and every listed week falls Monday to Friday in 2026"
+    },
+    {
+      "url": "https://www.hullfishingcamp.com/contact.html",
+      "checked": "2026-11-22",
+      "fields": [
+        "email",
+        "registration_url"
+      ],
+      "note": "Researched by Claude from this page. Contact page says 2026 Signups Opening February 1st"
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.hullfishingcamp.com/details.html",
+      "kind": "html",
+      "title": "Details - HULL FISHING CAMP"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Street address and ZIP (the page only says a shore based location in Hull)",
+      "2027 dates and price",
+      "Phone"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "missing required zip"
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-22",
+      "page_checked": "https://www.hullfishingcamp.com/details.html",
+      "changes": [
+        "New camp, researched from https://www.hullfishingcamp.com/details.html"
+      ],
+      "for_andrew": [
+        "The details page lists its weeks with no year. I set 2026 because the contact page says 2026 signups opened February 1 and each week (June 22 to August 28) runs Monday to Friday on the 2026 calendar. Please confirm that is enough to list it.",
+        "No street address on the site, so there is no ZIP and the validator fails on zip. Hull has one ZIP (02045) but nothing on the camp page states it.",
+        "Run by one person (the contact email is a personal Gmail address); worth a look before listing."
+      ]
+    }
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "slug": "boston-explorers-summer-camp-boston",
+  "name": "Boston Explorers Summer Camp",
+  "operator_name": "Boston Explorers",
+  "website_url": "https://www.bostonexplorers.org/camp-and-explorations",
+  "registration_url": "https://bostonexplorers.campmanagement.com/p/request_for_info_m.php?action=enroll",
+  "email": "info@bostonexplorers.org",
+  "street_address": "594 Columbia Road, Suite 211",
+  "city": "Boston",
+  "state": "MA",
+  "zip": "02125",
+  "camp_type": "day",
+  "primary_categories": [
+    "outdoor",
+    "adventure"
+  ],
+  "secondary_categories": [
+    "nature",
+    "swimming"
+  ],
+  "activities": [
+    "city explorations",
+    "Boston Harbor Islands",
+    "history",
+    "building projects",
+    "free play",
+    "biking",
+    "rowing",
+    "swimming",
+    "beach trips",
+    "hands on electives"
+  ],
+  "age_min": 7,
+  "age_max": 13,
+  "description_short": "Nonprofit day camp for ages 7 to 13 that uses Boston as its campground. From a T accessible base camp, explorers travel on foot and by train to the Harbor Islands, tall buildings, museums, parks and beaches, choose their own activities, and help prepare lunch and two snacks each day.",
+  "indoor_outdoor": "both",
+  "transportation": false,
+  "meals_included": true,
+  "financial_aid": true,
+  "swim_waterfront_notes": "Swimming is supervised by certified lifeguards; rowing by trained, certified instructors.",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Session 1",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-24",
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 2",
+      "start_date": "2026-07-27",
+      "end_date": "2026-08-07",
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.bostonexplorers.org/camp-and-explorations",
+      "checked": "2026-11-22",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "email",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "indoor_outdoor",
+        "transportation",
+        "meals_included",
+        "financial_aid",
+        "swim_waterfront_notes",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Camp and Explorations page: summer camp ages 7 to 13; 2026 Session 1 July 6 to 24, Session 2 July 27 to August 7; '2027 sessions will be posted soon'. Tuition is a sliding scale by income and no child is turned away; tuition covers lunch, two snacks, ferry tickets, admissions, T fares and a t-shirt. Families bring children to and from base camp, which is T accessible. Camper to staff ratio 1:6. The street address is the organization's office in the page footer, not necessarily the base camp."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.bostonexplorers.org/camp-and-explorations",
+      "kind": "html",
+      "title": "Camp and Explorations — Boston Explorers"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Base camp address",
+      "2026 tuition",
+      "2027 sessions",
+      "Daily hours",
+      "ACA accreditation"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-22",
+      "page_checked": "https://www.bostonexplorers.org/camp-and-explorations",
+      "changes": [
+        "New camp, researched from https://www.bostonexplorers.org/camp-and-explorations"
+      ],
+      "for_andrew": [
+        "The page does not say where base camp is. I used the organization's office in the footer (594 Columbia Road, Suite 211, Dorchester, 02125). Keep that, or ask Boston Explorers for the base camp address?",
+        "Tuition is a sliding scale by income. The linked rate sheet has no year and looks older (weekly $20 to $386; Session 1 $76 to $1,467; Session 2 $60 to $1,158), so I left prices out rather than pair it with 2026 dates. Add it as a range, or leave prices blank?"
+      ]
+    }
+  }
+}

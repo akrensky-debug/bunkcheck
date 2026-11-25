@@ -544,6 +544,7 @@ CITY_COORDS: dict[tuple[str, str], tuple[float, float]] = {
     ("woodbury", "VT"): (44.4581, -72.3791),
     # Towns added for camp listings, 22 November 2026. Coordinates are the town's internal point
     # from the Census Bureau 2024 Gazetteer (county subdivisions).
+    ("hopkinton", "RI"): (41.4791, -71.7579),
     ("bethel", "CT"): (41.3698, -73.3895),
     ("bristol", "CT"): (41.6816, -72.9407),
     ("brookfield", "CT"): (41.4704, -73.3948),
