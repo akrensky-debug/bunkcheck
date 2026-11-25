@@ -1,0 +1,123 @@
+{
+  "slug": "esf-summer-camps-at-devon-prep-devon",
+  "name": "ESF Summer Camps at Devon Preparatory School",
+  "operator_name": "ESF Camps",
+  "website_url": "https://www.esfcamps.com/devon/",
+  "phone": "610-688-3298",
+  "street_address": "363 N Valley Forge Rd",
+  "city": "Devon",
+  "state": "PA",
+  "zip": "19333",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "sports",
+    "STEM",
+    "swimming",
+    "arts"
+  ],
+  "activities": [
+    "swimming",
+    "swim lessons",
+    "sports",
+    "arts",
+    "science",
+    "engineering",
+    "technology",
+    "special events"
+  ],
+  "grade_max": 10,
+  "age_max": 16,
+  "description_short": "ESF day camp on the Devon Preparatory School campus in Devon for boys and girls from rising preschool to grade 10. Campers are grouped by grade, swim with Red Cross certified lifeguards and instructors, and pick from more than 60 activities across sports, arts, science, engineering and technology.",
+  "indoor_outdoor": "both",
+  "price_min": 1530,
+  "price_max": 6615,
+  "price_per": "session",
+  "extended_care": true,
+  "meals_included": false,
+  "refund_policy_summary": "Cancel by March 15, 2027 for a refund less the $50 registration fee (a full cancellation also costs $300 per child); from March 16 to June 1, 2027, a credit instead of a refund; no refunds or credits after June 1. An optional protection plan covers injury or illness.",
+  "season_year": 2027,
+  "notes": "Standard 2027 rates for the main day camp (rising PreS to 8th): 2 weeks $1,530 up to 9 weeks $6,615; early bird rates until February 1, 2027 are $100 to $450 less (2 weeks $1,430). 5+ weeks save $30 a week. Specialty STEAM camps (rising K to 4) $765 a week standard. Young Leaders Program (rising 9 and 10) $1,540 for 4 weeks. Weeks need not be consecutive. Standard hours 9:00 to 3:00. Club OT extended day until 5:00 is included in tuition; 5:00 to 5:30 costs extra. Optional lunch program at extra cost. No camp Friday June 18 or Monday July 5, 2027; those weeks are priced lower. Sibling discount $20.",
+  "sessions": [
+    {
+      "name": "Summer 2027 (choose your weeks)",
+      "start_date": "2027-06-14",
+      "end_date": "2027-08-13",
+      "availability": "open"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.esfcamps.com/devon/",
+      "checked": "2026-11-25",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "grade_max",
+        "age_max",
+        "description_short",
+        "indoor_outdoor",
+        "extended_care",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Location page: ESF Summer Camps at Devon Preparatory School, 06-14 to 08-13 2027 (dates as stated), boys and girls rising preschool to grade 10; swim program, 60+ activities, Club OT extended day. age_max derived from grade, not stated; youngest age not stated (rising preschool). Address and phone from the footer."
+    },
+    {
+      "url": "https://www.esfcamps.com/devon/rates/",
+      "checked": "2026-11-25",
+      "fields": [
+        "price_min",
+        "price_max",
+        "price_per",
+        "meals_included"
+      ],
+      "note": "Researched by Claude from this page. 2027 Tuition Rates page: standard (after February 1, 2027) full day rates by number of weeks for the main day camp; lunch is an optional add on. price_min is the smallest package (2 weeks), price_max the full summer."
+    },
+    {
+      "url": "https://www.esfcamps.com/about/policy-information/",
+      "checked": "2026-11-25",
+      "fields": [
+        "refund_policy_summary"
+      ],
+      "note": "Researched by Claude from this page. ESF policy information page: 2027 cancellation policy, which applies across ESF locations."
+    }
+  ],
+  "review": {
+    "status": "ready",
+    "source": {
+      "url": "https://www.esfcamps.com/devon/",
+      "kind": "html",
+      "title": "Devon Summer Camps - ESF Summer Camps in Devon, PA | Devon Preparatory School | Main Line"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Youngest age",
+      "ACA accreditation"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "city 'Devon', PA is not in cities.py (real town kept; to be added from the Census gazetteer)"
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-25",
+      "page_checked": "https://www.esfcamps.com/devon/",
+      "changes": [
+        "New camp, researched from https://www.esfcamps.com/devon/"
+      ],
+      "for_andrew": []
+    }
+  }
+}

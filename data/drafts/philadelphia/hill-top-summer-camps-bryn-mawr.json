@@ -1,0 +1,129 @@
+{
+  "slug": "hill-top-summer-camps-bryn-mawr",
+  "name": "Hill Top Summer Camps",
+  "operator_name": "Hill Top Preparatory School",
+  "website_url": "https://www.hilltopprep.org/summer-camp/",
+  "email": "summeradventures@hilltopprep.org",
+  "phone": "610-527-3230",
+  "street_address": "737 S Ithan Avenue",
+  "city": "Bryn Mawr",
+  "state": "PA",
+  "zip": "19010",
+  "camp_type": "specialty",
+  "primary_categories": [
+    "special_needs"
+  ],
+  "secondary_categories": [
+    "general",
+    "technology",
+    "swimming"
+  ],
+  "activities": [
+    "arts and crafts",
+    "STEM",
+    "cooking",
+    "outdoor sports",
+    "swimming",
+    "swim lessons",
+    "social skills",
+    "weekly trips",
+    "esports",
+    "game design",
+    "independent living skills"
+  ],
+  "grade_min": 2,
+  "grade_max": 12,
+  "age_min": 7,
+  "age_max": 18,
+  "description_short": "Summer programs for neurodiverse kids and teens at Hill Top Preparatory School. Summer Adventures (entering grades 2 to 9) rotates campers through art, STEM, cooking, sports and swimming with social skills practice and Friday trips; teens can choose an esports program or Pathways to Independence for life and work skills.",
+  "indoor_outdoor": "both",
+  "price_per_week": 1000,
+  "price_min": 945,
+  "price_max": 1150,
+  "price_per": "week",
+  "extended_care": true,
+  "meals_included": false,
+  "special_needs_notes": "Built for neurodiverse learners with a 5 to 1 camper to staff ratio. Campers need to communicate verbally and handle their own hygiene and bathroom needs. Non Hill Top families start with an inquiry, a tour and an interview to check fit. Many campers use Extended School Year funding through their district.",
+  "swim_waterfront_notes": "Summer Adventures swims Monday to Thursday: 30 minutes of lessons, then 30 minutes of free swim.",
+  "season_year": 2026,
+  "notes": "2026 tuition: Summer Adventures $1,000 a week or $6,000 for six weeks; Pathways to Independence (entering 10th grade through the summer after senior year) $1,150 a week or $6,900; Esports and Technology (entering grades 6 to 12) $945 a week or $5,670. Camp 9:00 to 3:15; early care from 8:00 for a fee; no after care. Campers bring lunch. A two week PEERS social skills group is offered to middle schoolers for an added fee. Summer 2027 dates are not posted yet.",
+  "sessions": [
+    {
+      "name": "Summer 2026, six weeks (Summer Adventures)",
+      "start_date": "2026-06-22",
+      "end_date": "2026-07-31",
+      "price": 6000,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.hilltopprep.org/summer-camp/",
+      "checked": "2026-11-25",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "description_short",
+        "price_per_week",
+        "price_min",
+        "price_max",
+        "price_per",
+        "swim_waterfront_notes",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Summer camp page: three programs for neurodiverse learners, all June 22 to July 31, 2026, 9 to 3:15, with 2026 tuition for each. Address from the footer (the school gives Bryn Mawr, not Rosemont)."
+    },
+    {
+      "url": "https://www.hilltopprep.org/summer-camp/summer-faq.cfm",
+      "checked": "2026-11-25",
+      "fields": [
+        "email",
+        "phone",
+        "grade_min",
+        "grade_max",
+        "age_min",
+        "age_max",
+        "indoor_outdoor",
+        "extended_care",
+        "meals_included",
+        "special_needs_notes"
+      ],
+      "note": "Researched by Claude from this page. Summer FAQ page: grade ranges per program (entering 2nd grade through the summer after senior year), early care from 8 am, no after care, campers bring lunch, rain plan uses the gym and classrooms, fit and ESY answers. Ages derived from grades 2 to 12, not stated; Pathways also takes the summer after senior year. Phone from the footer."
+    }
+  ],
+  "review": {
+    "status": "ready",
+    "source": {
+      "url": "https://www.hilltopprep.org/summer-camp/",
+      "kind": "html",
+      "title": "Hill Top’s Neurodiverse Summer Camps | Summer Adventures, P2I & Esports"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Summer 2027 dates and rates",
+      "ACA accreditation"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "city 'Bryn Mawr', PA is not in cities.py (real town kept; to be added from the Census gazetteer)"
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-25",
+      "page_checked": "https://www.hilltopprep.org/summer-camp/",
+      "changes": [
+        "New camp, researched from https://www.hilltopprep.org/summer-camp/"
+      ],
+      "for_andrew": []
+    }
+  }
+}

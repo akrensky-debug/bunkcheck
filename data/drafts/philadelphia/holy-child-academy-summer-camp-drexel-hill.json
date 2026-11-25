@@ -1,0 +1,124 @@
+{
+  "slug": "holy-child-academy-summer-camp-drexel-hill",
+  "name": "Holy Child Academy Summer Camp",
+  "operator_name": "Holy Child Academy",
+  "website_url": "https://www.holychildacademy.com/student-life/summer-camp",
+  "email": "camp@holychildacademy.com",
+  "phone": "610-259-2712",
+  "street_address": "475 Shadeland Avenue",
+  "city": "Drexel Hill",
+  "state": "PA",
+  "zip": "19026",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "arts",
+    "STEM",
+    "swimming"
+  ],
+  "activities": [
+    "physical education",
+    "arts and crafts",
+    "culinary arts",
+    "STEM",
+    "world cultures",
+    "music",
+    "dance",
+    "swimming",
+    "water play",
+    "field trips"
+  ],
+  "age_min": 2,
+  "age_max": 12,
+  "description_short": "Day camp at Holy Child Academy in Drexel Hill with half and full days. Little Dragons (ages 2 to 3) stay in the early childhood rooms; traditional campers (rising pre-K to 6th grade) move through PE, crafts, cooking, STEM and world cultures, with water play on campus or bus trips to a swim club twice a week.",
+  "indoor_outdoor": "both",
+  "price_per_week": 395,
+  "price_min": 190,
+  "price_max": 395,
+  "price_per": "week",
+  "extended_care": true,
+  "meals_included": false,
+  "refund_policy_summary": "Refunds are generally not given; the camp refunds a week only if it can fill the spot.",
+  "swim_waterfront_notes": "Little Dragons and rising pre-K to 1st grade have water play on campus twice a week (water slide, sprinkler, water tables). Rising 2nd graders and up ride a bus to Drexel Swim Club on Tuesday and Thursday afternoons, with lifeguards on duty.",
+  "season_year": 2027,
+  "notes": "2027 weekly rates: 3 half days $190, 4 half days $250, 5 half days $315; 3 full days $235, 4 full days $315, 5 full days $395. Half day 8:30 to 12:30, full day 8:30 to 4:30. Before care from 7:30 and after care 4:30 to 6:00 by coupon ($10 each or 10 for $90). Families pack snacks and lunch or buy lunch from the camp's lunch provider. Register week by week; groups go by 2027 to 2028 school year grade. A Junior CIT program serves rising 7th and 8th graders.",
+  "sessions": [
+    {
+      "name": "Summer 2027, nine weeks (register by the week; no camp July 5)",
+      "start_date": "2027-06-14",
+      "end_date": "2027-08-13",
+      "availability": "open"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.holychildacademy.com/student-life/summer-camp",
+      "checked": "2026-11-25",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "price_per_week",
+        "price_min",
+        "price_max",
+        "price_per",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Summer camp page: 9 full weeks June 14 to August 13, 2027 (no camp July 5), half and full day, 2027 rates listed; 5 full days $395 is the one week price. Address from the footer."
+    },
+    {
+      "url": "https://www.holychildacademy.com/student-life/summer-camp/summer-camp-faqs",
+      "checked": "2026-11-25",
+      "fields": [
+        "phone",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "indoor_outdoor",
+        "extended_care",
+        "meals_included",
+        "refund_policy_summary",
+        "swim_waterfront_notes"
+      ],
+      "note": "Researched by Claude from this page. Summer Camp FAQs page: Little Dragons ages 2 to 3, traditional camp rising pre-K to 6th grade (ages 4 to 12); activities, before and after care, lunch packed or purchased, swim and water play, refund answer. Phone from the footer. Campers are outside throughout the day and also use classrooms and the gym, so both."
+    }
+  ],
+  "review": {
+    "status": "ready",
+    "source": {
+      "url": "https://www.holychildacademy.com/student-life/summer-camp",
+      "kind": "html",
+      "title": "Summer Camp Delaware County PA - Holy Child Academy"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Weekly availability",
+      "Registration link",
+      "ACA accreditation"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "city 'Drexel Hill', PA is not in cities.py (real town kept; to be added from the Census gazetteer)"
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-25",
+      "page_checked": "https://www.holychildacademy.com/student-life/summer-camp",
+      "changes": [
+        "New camp, researched from https://www.holychildacademy.com/student-life/summer-camp"
+      ],
+      "for_andrew": []
+    }
+  }
+}
