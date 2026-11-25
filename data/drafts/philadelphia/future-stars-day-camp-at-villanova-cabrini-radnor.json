@@ -73,7 +73,7 @@
     }
   ],
   "review": {
-    "status": "ready",
+    "status": "needs_andrew",
     "source": {
       "url": "https://www.futurestars.com/locations/villanova-cabrini/",
       "kind": "html",
@@ -87,7 +87,9 @@
     "low_confidence": [
       "Season year of the dates (page omits the year)"
     ],
-    "errors": [],
+    "errors": [
+      "city 'Radnor', PA is not in cities.py (real town kept; to be added from the Census gazetteer)"
+    ],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-25",
@@ -95,7 +97,9 @@
       "changes": [
         "New camp, researched from https://www.futurestars.com/locations/villanova-cabrini/"
       ],
-      "for_andrew": []
+      "for_andrew": [
+        "The page gives dates with no year; the draft reads them as 2027 from the refund terms and the weekdays. Confirm, or wait for a dated page?"
+      ]
     }
   }
 }

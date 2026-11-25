@@ -120,7 +120,7 @@
     }
   ],
   "review": {
-    "status": "ready",
+    "status": "needs_andrew",
     "source": {
       "url": "https://campnac.com/village-farm-camp/",
       "kind": "html",
@@ -134,7 +134,9 @@
       "ACA accreditation"
     ],
     "low_confidence": [],
-    "errors": [],
+    "errors": [
+      "city 'Langhorne', PA is not in cities.py (real town kept; to be added from the Census gazetteer)"
+    ],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-25",
@@ -142,7 +144,9 @@
       "changes": [
         "New camp, researched from https://campnac.com/village-farm-camp/"
       ],
-      "for_andrew": []
+      "for_andrew": [
+        "The 2027 week dates were read from a chart image on campnac.com (downloaded once as BunkcheckBot), not from page text. OK to source dates that way?"
+      ]
     }
   }
 }
