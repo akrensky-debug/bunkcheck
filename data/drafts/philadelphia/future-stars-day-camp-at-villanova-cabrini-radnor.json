@@ -87,15 +87,14 @@
     "low_confidence": [
       "Season year of the dates (page omits the year)"
     ],
-    "errors": [
-      "city 'Radnor', PA is not in cities.py (real town kept; to be added from the Census gazetteer)"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-25",
       "page_checked": "https://www.futurestars.com/locations/villanova-cabrini/",
       "changes": [
-        "New camp, researched from https://www.futurestars.com/locations/villanova-cabrini/"
+        "New camp, researched from https://www.futurestars.com/locations/villanova-cabrini/",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
         "The page gives dates with no year; the draft reads them as 2027 from the refund terms and the weekdays. Confirm, or wait for a dated page?"

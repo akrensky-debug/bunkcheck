@@ -179,15 +179,14 @@
     "low_confidence": [
       "sessions prices: standard tier recorded; the page does not say when early bird ends"
     ],
-    "errors": [
-      "city 'Oxford', PA is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-25",
       "page_checked": "https://www.campsaginaw.com/dates-rates",
       "changes": [
-        "New camp, researched from https://www.campsaginaw.com/dates-rates"
+        "New camp, researched from https://www.campsaginaw.com/dates-rates",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": []
     }

@@ -159,15 +159,14 @@
     "low_confidence": [
       "Week 7 end date (page says July 30, a Thursday)"
     ],
-    "errors": [
-      "city 'Media', PA is not in cities.py (real town kept; to be added from the Census gazetteer)"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-25",
       "page_checked": "https://www.mpfs.org/school-life/summer-friends-camp",
       "changes": [
-        "New camp, researched from https://www.mpfs.org/school-life/summer-friends-camp"
+        "New camp, researched from https://www.mpfs.org/school-life/summer-friends-camp",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": []
     }

@@ -93,16 +93,15 @@
       "2027 dates and fee"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Bala Cynwyd', PA is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-25",
       "page_checked": "https://lowermerionpa.myrec.com/forms/6046_summer_2026__final.pdf",
       "changes": [
         "New camp, researched from https://lowermerionpa.myrec.com/forms/6046_summer_2026__final.pdf",
-        "ZIP 19004 looked up from the camp's street address with the Census geocoder (ZIP lookups allowed by Andrew, 22 November)."
+        "ZIP 19004 looked up from the camp's street address with the Census geocoder (ZIP lookups allowed by Andrew, 22 November).",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": []
     }

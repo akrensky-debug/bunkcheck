@@ -148,15 +148,14 @@
       "Phone"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Ambler', PA is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-25",
       "page_checked": "https://ambler.temple.edu/community/middle-school-summer-programs/2026-programming",
       "changes": [
-        "New camp, researched from https://ambler.temple.edu/community/middle-school-summer-programs/2026-programming"
+        "New camp, researched from https://ambler.temple.edu/community/middle-school-summer-programs/2026-programming",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": []
     }

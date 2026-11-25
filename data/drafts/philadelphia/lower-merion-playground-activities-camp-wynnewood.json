@@ -91,15 +91,14 @@
       "Financial aid"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Wynnewood', PA is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-25",
       "page_checked": "https://lowermerionpa.myrec.com/forms/6046_summer_2026__final.pdf",
       "changes": [
-        "New camp, researched from https://lowermerionpa.myrec.com/forms/6046_summer_2026__final.pdf"
+        "New camp, researched from https://lowermerionpa.myrec.com/forms/6046_summer_2026__final.pdf",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": []
     }

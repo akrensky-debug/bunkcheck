@@ -141,15 +141,14 @@
       "Summer 2027 dates"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Yardley', PA is not in cities.py (real town kept; to be added from the Census gazetteer)"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-25",
       "page_checked": "https://kolemet.org/summer-camp/",
       "changes": [
-        "New camp, researched from https://kolemet.org/summer-camp/"
+        "New camp, researched from https://kolemet.org/summer-camp/",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
         "The 2026 weeks and phone come from a scanned PDF flyer on kolemet.org, read as an image. OK to source them that way?"

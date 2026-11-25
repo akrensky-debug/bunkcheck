@@ -117,15 +117,14 @@
     "low_confidence": [
       "price_min, price_max, price_per: the fee table has no unit and the page adds 'Price is per child/ per day'; read as weekly rates"
     ],
-    "errors": [
-      "city 'Swarthmore', PA is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-25",
       "page_checked": "https://sites.google.com/thecreativelivingroom.com/home/camps/summer-2026",
       "changes": [
-        "New camp, researched from https://sites.google.com/thecreativelivingroom.com/home/camps/summer-2026"
+        "New camp, researched from https://sites.google.com/thecreativelivingroom.com/home/camps/summer-2026",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
         "The fee table lists half day $230 and full day $395 with the line 'Price is per child/ per day'. I read $230 and $395 as weekly rates for the week-long themes and the per day line as the after care fee. Keep the price as weekly, or drop it?",
