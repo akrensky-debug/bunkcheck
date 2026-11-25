@@ -103,15 +103,14 @@
       "Lunch"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Rye Brook', NY is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-25",
       "page_checked": "https://ryebrookny.gov/teen-travel-camp",
       "changes": [
-        "New camp, researched from https://ryebrookny.gov/teen-travel-camp"
+        "New camp, researched from https://ryebrookny.gov/teen-travel-camp",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
         "Grades: the 2026 fee schedule says 6th to 10th, the village FAQ says 7th to 10th. Recorded 6th to 10th from the fee schedule. Which is right?"

@@ -117,15 +117,14 @@
       "Pick up times"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Briarcliff Manor', NY is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-25",
       "page_checked": "https://briarcliffmanor.gov/DocumentCenter/View/3807/2026-Camp-Horizon-Information-Sheet",
       "changes": [
-        "New camp, researched from https://briarcliffmanor.gov/DocumentCenter/View/3807/2026-Camp-Horizon-Information-Sheet"
+        "New camp, researched from https://briarcliffmanor.gov/DocumentCenter/View/3807/2026-Camp-Horizon-Information-Sheet",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
         "Only Briarcliff Manor village residents and school district residents (who pay a higher rate, recorded here) can enroll; nobody else. Andrew's rule for residents only camps: record the one rate, say who can enroll, and ask. List it?"

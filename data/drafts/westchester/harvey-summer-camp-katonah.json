@@ -150,15 +150,14 @@
       "Financial aid"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Katonah', NY is not in cities.py (to be added from the Census gazetteer)"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-25",
       "page_checked": "https://www.harveyschool.org/harvey-summer-camp",
       "changes": [
-        "New camp, researched from https://www.harveyschool.org/harvey-summer-camp"
+        "New camp, researched from https://www.harveyschool.org/harvey-summer-camp",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": []
     }

@@ -98,15 +98,14 @@
       "ACA accreditation"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Ossining', NY is not in cities.py (to be added from the Census gazetteer)"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-25",
       "page_checked": "https://www.teatown.org/camp/summer-camp/",
       "changes": [
-        "New camp, researched from https://www.teatown.org/camp/summer-camp/"
+        "New camp, researched from https://www.teatown.org/camp/summer-camp/",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
         "Teatown's 2027 page prints Session I as June 28 to July 19, which overlaps Session II (July 12 to 23). Probably July 9, but I left Session I out rather than guess. Ask Teatown, or add it as June 28 to July 9?",

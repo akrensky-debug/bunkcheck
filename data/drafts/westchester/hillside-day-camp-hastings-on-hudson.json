@@ -100,15 +100,14 @@
       "Street address of Hillside Elementary School"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Hastings-on-Hudson', NY is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-25",
       "page_checked": "https://www.hohny.gov/179/Hillside-Day-Camp-2026",
       "changes": [
-        "New camp, researched from https://www.hohny.gov/179/Hillside-Day-Camp-2026"
+        "New camp, researched from https://www.hohny.gov/179/Hillside-Day-Camp-2026",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": []
     }

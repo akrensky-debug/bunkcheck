@@ -113,15 +113,14 @@
       "Whether students from other schools can enroll"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Dobbs Ferry', NY is not in cities.py (to be added from the Census gazetteer)"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-25",
       "page_checked": "https://www.mastersny.org/academics/middle-school/masters-of-innovation-summer-camp",
       "changes": [
-        "New camp, researched from https://www.mastersny.org/academics/middle-school/masters-of-innovation-summer-camp"
+        "New camp, researched from https://www.mastersny.org/academics/middle-school/masters-of-innovation-summer-camp",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
         "The page says the camp is 'For Masters Students Entering Grades 5 to 8'. If it is only for Masters students it is not open to the public; should it be listed?"

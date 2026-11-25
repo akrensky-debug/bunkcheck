@@ -105,16 +105,15 @@
       "ACA accreditation"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Yorktown Heights', NY is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-25",
       "page_checked": "https://www.yorktownny.gov/town-departments/parks-recreation/summer-camp-registration-information/",
       "changes": [
         "New camp, researched from https://www.yorktownny.gov/town-departments/parks-recreation/summer-camp-registration-information/",
-        "Removed the computed non-resident prices: the brochure only says non-residents add 20%, it does not post the figure."
+        "Removed the computed non-resident prices: the brochure only says non-residents add 20%, it does not post the figure.",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
         "Yorktown posts resident fees and \"non-residents add 20%\". Show the computed non-resident figure, or leave the price blank?"

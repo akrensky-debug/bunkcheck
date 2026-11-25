@@ -93,16 +93,15 @@
       "The 2026 parent handbook is a scanned PDF our fetcher can't read"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Bedford Hills', NY is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-25",
       "page_checked": "https://www.bedfordny.gov/257/Summer-Camps",
       "changes": [
         "New camp, researched from https://www.bedfordny.gov/257/Summer-Camps",
-        "ZIP 10507 looked up from the operator's office address with the Census geocoder (ZIP lookups allowed by Andrew, 22 November)."
+        "ZIP 10507 looked up from the operator's office address with the Census geocoder (ZIP lookups allowed by Andrew, 22 November).",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
         "Only Town of Bedford residents and school district residents (who pay a higher rate, recorded here) can enroll; nobody else. Andrew's rule for residents only camps: record the one rate, say who can enroll, and ask. List it?",

@@ -142,15 +142,14 @@
       "2027 dates and prices (not posted yet)"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Somers', NY is not in cities.py (to be added from the Census gazetteer)"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-25",
       "page_checked": "https://parks.westchestercountyny.gov/children-camps/muscoot-young-farmers-camp",
       "changes": [
-        "New camp, researched from https://parks.westchestercountyny.gov/children-camps/muscoot-young-farmers-camp"
+        "New camp, researched from https://parks.westchestercountyny.gov/children-camps/muscoot-young-farmers-camp",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": []
     }

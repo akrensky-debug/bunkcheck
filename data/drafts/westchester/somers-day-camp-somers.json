@@ -92,15 +92,14 @@
       "ACA accreditation"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Somers', NY is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-25",
       "page_checked": "https://www.somersny.gov/resources/camps-clinics",
       "changes": [
-        "New camp, researched from https://www.somersny.gov/resources/camps-clinics"
+        "New camp, researched from https://www.somersny.gov/resources/camps-clinics",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
         "Only Somers residents can enroll; nobody else. Andrew's rule for residents only camps: record the one rate, say who can enroll, and ask. List it?",
