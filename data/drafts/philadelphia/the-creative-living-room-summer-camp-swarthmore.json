@@ -1,0 +1,136 @@
+{
+  "slug": "the-creative-living-room-summer-camp-swarthmore",
+  "name": "The Creative Living Room Summer Camp",
+  "operator_name": "The Creative Living Room (Park Avenue Community Center)",
+  "website_url": "https://sites.google.com/thecreativelivingroom.com/home/camps/summer-2026",
+  "registration_url": "https://app.amilia.com/store/en/pac-center/shop",
+  "email": "lisa@thecreativelivingroom.com",
+  "phone": "484-443-8224",
+  "street_address": "129 Park Avenue",
+  "city": "Swarthmore",
+  "state": "PA",
+  "zip": "19081",
+  "camp_type": "day",
+  "primary_categories": [
+    "arts"
+  ],
+  "secondary_categories": [
+    "performing_arts",
+    "STEM",
+    "nature"
+  ],
+  "activities": [
+    "crafts",
+    "theater",
+    "musical theater",
+    "filmmaking",
+    "chess",
+    "lego building",
+    "creative writing",
+    "digital art",
+    "animation",
+    "mock trial",
+    "journalism",
+    "nature walks",
+    "gardening",
+    "water play"
+  ],
+  "age_min": 5,
+  "age_max": 15,
+  "description_short": "Week-long themed arts camps run at two sites, Park Avenue Community Center in Swarthmore and Congregation Beth Israel in Media. Each week has its own theme, from theater, filmmaking and crafts to chess, nature and Harry Potter, led by professional teaching artists, with half-day and full-day options for ages 5 to 12 and some teen weeks for ages 11 to 15.",
+  "indoor_outdoor": "both",
+  "price_min": 230,
+  "price_max": 395,
+  "price_per": "week",
+  "extended_care": true,
+  "meals_included": false,
+  "refund_policy_summary": "The $100 deposit per camp spot is non-refundable. Written cancellations before May 1 owe no balance; after May 1, cancelling 4 or more weeks ahead gets full credit, 2 to 4 weeks ahead a 50% credit, and under 2 weeks nothing. Credits go to Park Avenue Community Center programs; a full refund if the camp cancels for low enrollment.",
+  "season_year": 2026,
+  "notes": "2026 fees: half day 9:00 to 1:00 $230, full day 9:00 to 4:00 $395; 15% sibling discount. After care 4:00 to 5:00 at the Media site only, $10 per day. Second site: Congregation Beth Israel of Media, 542 S. New Middletown Road, Media. Themes differ by site. The Creative Living Room merged with Park Avenue Community Center in September 2025. No week by week dates are posted on the camp pages.",
+  "sources": [
+    {
+      "url": "https://sites.google.com/thecreativelivingroom.com/home/camps/summer-2026",
+      "fields": [
+        "name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "extended_care",
+        "meals_included"
+      ],
+      "note": "Researched by Claude from this page. Summer 2026 camp page: two sites (PAC Swarthmore, BI Media), director email, 484-443-8224, footer address 129 Park Avenue, Swarthmore, PA 19081. After care 4 to 5 in Media only. Campers bring their own snacks and lunch. REGISTER links to the PAC Center Amilia store.",
+      "checked": "2026-11-25"
+    },
+    {
+      "url": "https://sites.google.com/thecreativelivingroom.com/home/camps/general-info",
+      "fields": [
+        "price_min",
+        "price_max",
+        "price_per"
+      ],
+      "note": "Researched by Claude from this page. 2026 fees: half day $230, full day $395, after care $10 (Media only). The page also says 'Price is per child/ per day', which reads as the after care line; the week-long themes make $230 and $395 weekly rates.",
+      "checked": "2026-11-25"
+    },
+    {
+      "url": "https://sites.google.com/thecreativelivingroom.com/home/camps/themes",
+      "fields": [
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "indoor_outdoor"
+      ],
+      "note": "Researched by Claude from this page. Theme descriptions by site: ages 5 to 12 for most weeks, teen weeks for ages 11 to 15 at PAC. Mix of indoor studio work and outdoor trails, garden and water play.",
+      "checked": "2026-11-25"
+    },
+    {
+      "url": "https://sites.google.com/thecreativelivingroom.com/home/about/policies",
+      "fields": [
+        "operator_name",
+        "refund_policy_summary"
+      ],
+      "note": "Researched by Claude from this page. Policies page: merged with Park Avenue Community Center as of September 2025; summer camp cancellation terms.",
+      "checked": "2026-11-25"
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://sites.google.com/thecreativelivingroom.com/home/camps/summer-2026",
+      "kind": "html",
+      "title": "The Creative Living Room - Summer 2026"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Week by week dates for 2026 or 2027",
+      "Financial aid",
+      "ACA accreditation"
+    ],
+    "low_confidence": [
+      "price_min, price_max, price_per: the fee table has no unit and the page adds 'Price is per child/ per day'; read as weekly rates"
+    ],
+    "errors": [
+      "city 'Swarthmore', PA is not in cities.py"
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-25",
+      "page_checked": "https://sites.google.com/thecreativelivingroom.com/home/camps/summer-2026",
+      "changes": [
+        "New camp, researched from https://sites.google.com/thecreativelivingroom.com/home/camps/summer-2026"
+      ],
+      "for_andrew": [
+        "The fee table lists half day $230 and full day $395 with the line 'Price is per child/ per day'. I read $230 and $395 as weekly rates for the week-long themes and the per day line as the after care fee. Keep the price as weekly, or drop it?",
+        "The camp runs at two sites (Swarthmore and Media) with different themes but no separate dates or ages, so I made one listing at the Swarthmore address. No 2026 week dates are on the pages and summer 2027 is not posted. List now without sessions, or hold for 2027?"
+      ]
+    }
+  }
+}

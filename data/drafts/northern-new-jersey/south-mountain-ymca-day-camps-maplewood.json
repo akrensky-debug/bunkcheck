@@ -1,0 +1,137 @@
+{
+  "slug": "south-mountain-ymca-day-camps-maplewood",
+  "name": "South Mountain YMCA Day Camps",
+  "operator_name": "South Mountain YMCA (Metropolitan YMCA of the Oranges)",
+  "website_url": "https://maplewoodymcacamp.org",
+  "phone": "973-762-4145",
+  "street_address": "13 Jefferson Avenue",
+  "city": "Maplewood",
+  "state": "NJ",
+  "zip": "07040",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "sports",
+    "STEM",
+    "arts",
+    "swimming"
+  ],
+  "activities": [
+    "team building games",
+    "arts and crafts",
+    "nature and science",
+    "soccer",
+    "karate",
+    "basketball",
+    "swimming",
+    "theme weeks",
+    "field trips"
+  ],
+  "age_min": 3,
+  "grade_max": 10,
+  "description_short": "YMCA day camps around Maplewood for pre-K to grade 10: YKnots for 3 year olds to kindergarten at the Y, SOMAPY traditional camp at Memorial Park with swim days at the Maplewood Country Club, Summer Discovery STEM camp at St. Joseph Church, plus teen, theater and sports options.",
+  "indoor_outdoor": "both",
+  "price_per_week": 650.1,
+  "price_min": 649,
+  "price_max": 651.2,
+  "price_per": "week",
+  "extended_care": true,
+  "financial_aid": true,
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Summer season (weekly enrollment)",
+      "start_date": "2027-06-21",
+      "end_date": "2027-08-20",
+      "price": 650.1,
+      "availability": "unknown"
+    }
+  ],
+  "notes": "Weekly price is the community (non-member) rate for SOMAPY; Summer Discovery is $649 and YKnots $651.20 for community members. Y Member rates are $590 to $592 and Y Family Member rates $531 to $532.80 a week. Camp 7:30 am to 3:30 pm; aftercare 3:30 to 6 pm for a fee ($110 a week community, $100 members, posted on the YKnots page). SOMAPY at Memorial Park, 124 Dunnell Road (grades 1 to 5); Summer Discovery at St. Joseph Church, 240 Franklin Avenue (grades 1 to 5); YKnots at the Y (age 3 to kindergarten). 20 percent down payment; $35 change fee from February 1; April 1 is the last day for a deposit refund. 2027 registration opens December 1, 2026.",
+  "sources": [
+    {
+      "url": "https://maplewoodymcacamp.org",
+      "checked": "2026-11-25",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "camp_type",
+        "grade_max",
+        "financial_aid"
+      ],
+      "note": "Researched by Claude from this page. Camp home page: 2027 registration begins December 1; day camps for grades pre-K to 10; Y for All financial assistance"
+    },
+    {
+      "url": "https://maplewoodymcacamp.org/contact-us-smy",
+      "checked": "2026-11-25",
+      "fields": [
+        "street_address",
+        "city",
+        "state",
+        "zip"
+      ],
+      "note": "Researched by Claude from this page. Contact page: South Mountain YMCA, 13 Jefferson Ave., Maplewood, NJ 07040"
+    },
+    {
+      "url": "https://maplewoodymcacamp.org/somapy",
+      "checked": "2026-11-25",
+      "fields": [
+        "phone",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "description_short",
+        "indoor_outdoor",
+        "price_per_week",
+        "price_min",
+        "price_max",
+        "price_per",
+        "extended_care",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. SOMAPY page: June 21 to August 20, Monday to Friday 7:30 to 3:30, aftercare for a fee, community member rate $650.10 a week; Summer Discovery ($649) and YKnots ($651.20) pages give the other community rates"
+    },
+    {
+      "url": "https://maplewoodymcacamp.org/yknots",
+      "checked": "2026-11-25",
+      "fields": [
+        "age_min"
+      ],
+      "note": "Researched by Claude from this page. YKnots page: ages 3 to kindergarten at the Y"
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://maplewoodymcacamp.org",
+      "kind": "html",
+      "title": "Summer Day Camp in Maplewood, NJ | Maplewood YMCA Camp"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Lunch",
+      "Specific week list (nine theme weeks, no dates per week)"
+    ],
+    "low_confidence": [
+      "Season year is inferred: the camp pages give June 21 to August 20 with no year, which falls Monday to Friday only in 2027, and the home page says 2027 registration begins December 1. The YKnots page says ages 3 by 6/21/26, which looks like a leftover."
+    ],
+    "errors": [
+      "city 'Maplewood', NJ is not in cities.py"
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-25",
+      "page_checked": "https://maplewoodymcacamp.org",
+      "changes": [
+        "New camp, researched from https://maplewoodymcacamp.org"
+      ],
+      "for_andrew": [
+        "The camp pages show June 21 to August 20 and weekly rates with no year. The weekdays fit 2027 and the home page announces 2027 registration, so I recorded them as 2027 with the community rates ($649 to $651.20 a week). Confirm these are 2027 rates before publishing?",
+        "This listing covers the Y's Maplewood camps (YKnots, SOMAPY, Summer Discovery and others) at three sites with the same dates. Keep as one listing, or split by site?"
+      ]
+    }
+  }
+}

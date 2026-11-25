@@ -1,0 +1,115 @@
+{
+  "slug": "verona-summer-playgrounds-verona",
+  "name": "Verona Recreation Summer Playgrounds",
+  "operator_name": "Verona Recreation Department",
+  "website_url": "https://www.veronanj.org/departments/recreation/summercamp",
+  "registration_url": "https://register.communitypass.net/verona",
+  "phone": "973-857-4830",
+  "city": "Verona",
+  "state": "NJ",
+  "zip": "07044",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "sports",
+    "arts"
+  ],
+  "activities": [
+    "arts and crafts",
+    "organized games",
+    "sports",
+    "free play",
+    "pool trips",
+    "field trips"
+  ],
+  "age_min": 4,
+  "grade_max": 8,
+  "description_short": "Five week township playground camps for children turning 4 through grade 8, run at four Verona schools by age group: REC-LOT for pre-K and kindergarten, REC-PARK, Elementary Zone, and Junior and Summer Adventure, with crafts, games, sports and optional pool and field trips for older groups.",
+  "indoor_outdoor": "both",
+  "price_min": 400,
+  "price_max": 400,
+  "price_per": "session",
+  "extended_care": false,
+  "meals_included": false,
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Summer Playgrounds (5 weeks)",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-31",
+      "price": 400,
+      "availability": "unknown"
+    }
+  ],
+  "notes": "Monday to Friday 8 am to 3 pm, closed Friday July 3. REC-LOT at Brookdale School (turning 4 by October 1, 2026, and entering kindergarten); REC-PARK at Laning School (entering grades 1 and 2); Elementary Zone at F.N. Brown School, 125 Grove Avenue (grades 3 and 4); Junior Adventure and Summer Adventure at H.B.W. Middle School, 600 Bloomfield Avenue (grades 5 to 8). Families send a nut free lunch and snack. Optional trips and walks to the Verona Community Pool cost extra for older groups. Registration opened March 30 on CommunityPass. The page does not say whether non-residents may enroll.",
+  "sources": [
+    {
+      "url": "https://www.veronanj.org/departments/recreation/summercamp",
+      "checked": "2026-11-25",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "age_min",
+        "grade_max",
+        "price_min",
+        "price_max",
+        "price_per",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Summer camp page: five programs for children 4 years old through grade 8, June 29 to July 31, $400. ZIP from the Recreation office location on the page (880 Bloomfield Avenue, Verona, NJ 07044); the camps run at four schools"
+    },
+    {
+      "url": "https://www.veronanj.org/media/Recreation%20/Playgrounds/SUMMER%20PLAYGROUND%20GUIDE%202026A-%20ALL%20CAMPS.pdf",
+      "checked": "2026-11-25",
+      "fields": [
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "description_short",
+        "indoor_outdoor",
+        "extended_care",
+        "meals_included"
+      ],
+      "note": "Researched by Claude from this page. 2026 Summer Playgrounds information packet linked from the camp page: sites, daily schedules, families supply lunch, no supervision beyond program hours"
+    }
+  ],
+  "review": {
+    "status": "ready",
+    "source": {
+      "url": "https://www.veronanj.org/departments/recreation/summercamp",
+      "kind": "html",
+      "title": "Township of Verona NJ - Verona Recreation Summer Camp Programing"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Whether non-residents can enroll and at what rate",
+      "Street address for Brookdale and Laning schools",
+      "Refund policy for camp",
+      "Financial aid"
+    ],
+    "low_confidence": [
+      "Listed as one camp because all five programs share dates and fee; each has its own school site and grade band."
+    ],
+    "errors": [
+      "city 'Verona', NJ is not in cities.py"
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-25",
+      "page_checked": "https://www.veronanj.org/departments/recreation/summercamp",
+      "changes": [
+        "New camp, researched from https://www.veronanj.org/departments/recreation/summercamp"
+      ],
+      "for_andrew": []
+    }
+  }
+}
