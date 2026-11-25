@@ -1,0 +1,115 @@
+{
+  "slug": "boys-and-girls-club-of-mount-vernon-summer-program-mount-vernon",
+  "name": "Boys & Girls Club of Mount Vernon Summer Program",
+  "operator_name": "Boys & Girls Club of Mount Vernon",
+  "website_url": "https://www.bgcmvny.org/summer-programs/",
+  "email": "info@bgcmvny.org",
+  "phone": "914-668-9580",
+  "street_address": "350 South Sixth Avenue",
+  "city": "Mount Vernon",
+  "state": "NY",
+  "zip": "10550",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "sports",
+    "STEM",
+    "arts",
+    "academic"
+  ],
+  "activities": [
+    "STEM",
+    "arts",
+    "basketball clinics",
+    "swimming",
+    "dance",
+    "tennis",
+    "health and life skills",
+    "weekly field trips"
+  ],
+  "age_min": 5,
+  "age_max": 13,
+  "description_short": "Seven week summer program at the Boys & Girls Club of Mount Vernon for ages 5 to 13, with STEM and arts activities, life skills, sports including basketball clinics, weekly swimming, dance and tennis, and weekly field trips. Free breakfast and lunch are served.",
+  "meals_included": true,
+  "price_per_week": 130,
+  "price_min": 130,
+  "price_max": 130,
+  "price_per": "week",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Summer Program 2026 (7 weeks)",
+      "start_date": "2026-07-06",
+      "end_date": "2026-08-21",
+      "availability": "unknown"
+    }
+  ],
+  "notes": "Program fee $130 a week per child plus a $100 registration fee (includes one T shirt, required on trips); each additional child $100 a week. Weekdays 8 am to 4 pm; families needing care beyond those hours should call the Club. Registration was closed when checked.",
+  "sources": [
+    {
+      "url": "https://www.bgcmvny.org/summer-programs/",
+      "checked": "2026-11-25",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "meals_included",
+        "price_per_week",
+        "price_min",
+        "price_max",
+        "price_per",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Summer Programs page: 7 weeks, July 6 to August 21, 2026, ages 5 to 13, weekdays 8 to 4, $130 a week plus $100 registration. The page still mentions a July 3, 2025 early payment date, left over from 2025."
+    },
+    {
+      "url": "https://www.bgcmvny.org/contact-us/",
+      "checked": "2026-11-25",
+      "fields": [
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip"
+      ],
+      "note": "Researched by Claude from this page. Contact page: 350 South Sixth Avenue, Mount Vernon, NY 10550; 914-668-9580; info@bgcmvny.org. The summer page names no other site, so the Club's address is used."
+    }
+  ],
+  "review": {
+    "status": "ready",
+    "source": {
+      "url": "https://www.bgcmvny.org/summer-programs/",
+      "kind": "html",
+      "title": "Summer Programs - The Boys & Girls Club of Mount Vernon"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Financial aid",
+      "Refund policy",
+      "2027 dates and prices (not posted yet)"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "city 'Mount Vernon', NY is not in cities.py (to be added from the Census gazetteer)"
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-25",
+      "page_checked": "https://www.bgcmvny.org/summer-programs/",
+      "changes": [
+        "New camp, researched from https://www.bgcmvny.org/summer-programs/"
+      ],
+      "for_andrew": []
+    }
+  }
+}

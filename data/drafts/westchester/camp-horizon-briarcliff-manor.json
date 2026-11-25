@@ -1,0 +1,136 @@
+{
+  "slug": "camp-horizon-briarcliff-manor",
+  "name": "Camp Horizon",
+  "operator_name": "Village of Briarcliff Manor Recreation Department",
+  "website_url": "https://briarcliffmanor.gov/DocumentCenter/View/3807/2026-Camp-Horizon-Information-Sheet",
+  "email": "aherskovitz@briarcliffmanor.gov",
+  "phone": "914-941-6560",
+  "city": "Briarcliff Manor",
+  "zip": "10510",
+  "camp_type": "day",
+  "primary_categories": [
+    "adventure"
+  ],
+  "activities": [
+    "amusement parks",
+    "adventure courses",
+    "arcades"
+  ],
+  "grade_min": 7,
+  "grade_max": 9,
+  "age_min": 12,
+  "age_max": 15,
+  "description_short": "Village trip camp for teens entering 7th to 9th grade who live in Briarcliff Manor or its school district, with a trip every day to amusement parks, adventure courses and arcades. Drop off at the Law Park Pavilion and pick up at the Youth Center.",
+  "indoor_outdoor": "both",
+  "price_min": 525,
+  "price_max": 3150,
+  "price_per": "session",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "5 week bundle (no camp July 3)",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-31",
+      "price": 3150,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 1 add-on (with Session 1 or 2)",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-02",
+      "price": 525,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 1",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-17",
+      "price": 1325,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 2",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-31",
+      "price": 1325,
+      "availability": "unknown"
+    }
+  ],
+  "notes": "Prices shown are the school district resident rate; village residents pay $420 for week 1, $1,060 a session and $2,540 for all five weeks.",
+  "state": "NY",
+  "sources": [
+    {
+      "url": "https://briarcliffmanor.gov/DocumentCenter/View/3807/2026-Camp-Horizon-Information-Sheet",
+      "checked": "2026-11-25",
+      "fields": [
+        "name",
+        "website_url",
+        "email",
+        "phone",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "age_min",
+        "age_max",
+        "description_short",
+        "indoor_outdoor",
+        "price_min",
+        "price_max",
+        "price_per",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. 2026 Camp Horizon sheet: for children of Briarcliff residents and Briarcliff school district residents entering 7th to 9th grade; Monday to Friday from 8:45 with varying pick up times; trips every day. Fees resident / school district: 5 week bundle $2,540 / $3,150, Session 1 or 2 $1,060 / $1,325, Week 1 add-on $420 / $525. Session prices are the school district rate. Ages derived from grades. Indoor and outdoor inferred from the mix of trips."
+    },
+    {
+      "url": "https://www.briarcliffmanor.gov/DocumentCenter/View/3810/Camp-FAQ-26",
+      "checked": "2026-11-25",
+      "fields": [
+        "operator_name",
+        "refund_policy_summary"
+      ],
+      "note": "Researched by Claude from this page. 2026 Day Camp FAQ: Camp Horizon is one of the department's four camps; refund policy."
+    },
+    {
+      "url": "https://www.briarcliffmanor.gov/",
+      "checked": "2026-11-25",
+      "fields": [
+        "zip"
+      ],
+      "note": "Researched by Claude from this page. Village home page footer: Village Office, 1111 Pleasantville Road, Briarcliff Manor, NY 10510. The camp sheet gives no ZIP."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://briarcliffmanor.gov/DocumentCenter/View/3807/2026-Camp-Horizon-Information-Sheet",
+      "kind": "pdf",
+      "title": "2026 Camp Horizon Information Sheet"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Trip list",
+      "Lunch",
+      "Pick up times"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "city 'Briarcliff Manor', NY is not in cities.py"
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-25",
+      "page_checked": "https://briarcliffmanor.gov/DocumentCenter/View/3807/2026-Camp-Horizon-Information-Sheet",
+      "changes": [
+        "New camp, researched from https://briarcliffmanor.gov/DocumentCenter/View/3807/2026-Camp-Horizon-Information-Sheet"
+      ],
+      "for_andrew": [
+        "Only Briarcliff Manor village residents and school district residents (who pay a higher rate, recorded here) can enroll; nobody else. Andrew's rule for residents only camps: record the one rate, say who can enroll, and ask. List it?"
+      ]
+    }
+  },
+  "refund_policy_summary": "If you register, you have about two weeks to cancel for a full refund less a processing fee and about a month for a 50% refund; after early March refunds are only for limited, documented reasons. (The FAQ says this policy was awaiting board approval when printed.)"
+}

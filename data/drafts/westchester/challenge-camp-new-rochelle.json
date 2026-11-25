@@ -1,0 +1,136 @@
+{
+  "slug": "challenge-camp-new-rochelle",
+  "name": "Challenge Camp",
+  "operator_name": "Challenge Camp",
+  "website_url": "https://challengecamps.com/",
+  "registration_url": "https://app.campdoc.com/!/dn/login?r=challengecamp",
+  "email": "info@challengecamps.com",
+  "phone": "914-779-6024",
+  "street_address": "Iona University, 715 North Avenue",
+  "city": "New Rochelle",
+  "state": "NY",
+  "zip": "10801",
+  "camp_type": "day",
+  "primary_categories": [
+    "STEM",
+    "arts"
+  ],
+  "secondary_categories": [
+    "academic",
+    "technology",
+    "sports",
+    "swimming"
+  ],
+  "activities": [
+    "3D printing",
+    "art",
+    "chess",
+    "coding",
+    "cooking",
+    "drones",
+    "Dungeons & Dragons",
+    "esports",
+    "filmmaking",
+    "game design",
+    "Lego",
+    "magic",
+    "Minecraft",
+    "photography",
+    "podcasting",
+    "robotics",
+    "theatre",
+    "swimming",
+    "sports"
+  ],
+  "age_min": 4,
+  "age_max": 15,
+  "description_short": "An enrichment day camp at Iona University in New Rochelle for ages 4 to 15. Campers pick two morning workshops from more than 140 STEM and arts electives, such as coding, robotics, filmmaking and chess, then three afternoon periods of sports, swim or more enrichment; children entering kindergarten have their own program.",
+  "indoor_outdoor": "both",
+  "extended_care": true,
+  "transportation": true,
+  "meals_included": true,
+  "aca_accredited": true,
+  "aca_source_url": "https://challengecamps.com/",
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Session 1 (4 weeks)",
+      "start_date": "2027-06-28",
+      "end_date": "2027-07-23",
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 2 (3 weeks)",
+      "start_date": "2027-07-26",
+      "end_date": "2027-08-13",
+      "availability": "unknown"
+    }
+  ],
+  "notes": "2027 tuition is not posted yet; registration opens January 2027. Full day is 9 to 4 with optional early morning from 8 and extended day to 6, both extra. Door to door buses from Manhattan, Riverdale and southern Westchester, central stops in northern Westchester. Hot lunch and snack included, kosher lunch available. Nut and seed free.",
+  "sources": [
+    {
+      "url": "https://challengecamps.com/",
+      "checked": "2026-11-25",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "age_min",
+        "age_max",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "description_short",
+        "aca_accredited",
+        "aca_source_url",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Homepage: Summer 2027 Session 1 June 28 to July 23, Session 2 July 26 to August 13; ACA accredited camp at Iona University for ages 4 to 15."
+    },
+    {
+      "url": "https://challengecamps.com/faq/",
+      "checked": "2026-11-25",
+      "fields": [
+        "indoor_outdoor",
+        "extended_care",
+        "transportation",
+        "meals_included"
+      ],
+      "note": "Researched by Claude from this page. FAQ: early drop off from 8, extended day to 6, door to door buses, hot lunch and snack included, sports and swim on campus."
+    }
+  ],
+  "review": {
+    "status": "ready",
+    "source": {
+      "url": "https://challengecamps.com/",
+      "kind": "html",
+      "title": "Challenge Camp - Challenge Camp"
+    },
+    "warnings": [
+      "2026 rates were Session 1 $4,400, Session 2 $3,400, full summer $7,800; left out because 2027 dates are posted and prices are not."
+    ],
+    "unknowns": [
+      "2027 tuition",
+      "Financial aid"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-25",
+      "page_checked": "https://challengecamps.com/",
+      "changes": [
+        "New camp, researched from https://challengecamps.com/"
+      ],
+      "for_andrew": []
+    }
+  }
+}

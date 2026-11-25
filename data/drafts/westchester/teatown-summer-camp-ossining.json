@@ -1,0 +1,118 @@
+{
+  "slug": "teatown-summer-camp-ossining",
+  "name": "Teatown Natural Science Summer Day Camp",
+  "operator_name": "Teatown Lake Reservation",
+  "website_url": "https://www.teatown.org/camp/summer-camp/",
+  "email": "camp@teatown.org",
+  "phone": "(914) 762-2912",
+  "street_address": "1600 Spring Valley Rd.",
+  "city": "Ossining",
+  "state": "NY",
+  "zip": "10562",
+  "camp_type": "day",
+  "primary_categories": [
+    "nature"
+  ],
+  "secondary_categories": [
+    "outdoor"
+  ],
+  "activities": [
+    "hiking",
+    "stream and pond exploration",
+    "animal encounters",
+    "citizen science",
+    "stewardship projects",
+    "orienteering"
+  ],
+  "grade_max": 9,
+  "age_min": 4,
+  "age_max": 15,
+  "description_short": "Natural science day camp on Teatown's 1,000 acre preserve in Ossining, in two week sessions for children from Pre-K through grade 9. Groups by grade hike, explore streams and fields and meet the center's animals; older campers do field research and trips to nearby parks and the Hudson River.",
+  "extended_care": true,
+  "financial_aid": true,
+  "refund_policy_summary": "Withdrawals before June 16, 2027 get 75% of the total camp fee back (a 25% administrative charge is kept); no refunds after that date.",
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Session II",
+      "start_date": "2027-07-12",
+      "end_date": "2027-07-23",
+      "availability": "unknown"
+    },
+    {
+      "name": "Session III",
+      "start_date": "2027-07-26",
+      "end_date": "2027-08-06",
+      "availability": "unknown"
+    },
+    {
+      "name": "Session IV",
+      "start_date": "2027-08-09",
+      "end_date": "2027-08-20",
+      "availability": "unknown"
+    }
+  ],
+  "notes": "Starting in 2027, a Teatown family membership ($85 or higher) is required to attend camp, unless the family applies for financial aid. Sign up for summer 2027 begins January 6 at 8 am (returning campers and siblings), January 13 for members with first time campers. 2027 fees are not posted yet; 2026 fees for a two week session were $995 member / $1,055 non-member full day ($1,235 non-member for Explorers, grades 8 to 9). Pre-K is half day 9 to 12; Kindergarten and up 9 to 3. Extended care 7:45 to 8:45 am ($100 a week) and 3 to 5 pm ($250 a week). Campus renovation continues in 2027 and transportation will be provided if needed. Session I is listed as June 28 to July 19, 2027, which overlaps Session II, so it is left out until the camp confirms.",
+  "sources": [
+    {
+      "url": "https://www.teatown.org/camp/summer-camp/",
+      "checked": "2026-11-25",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "grade_max",
+        "age_min",
+        "age_max",
+        "description_short",
+        "extended_care",
+        "financial_aid",
+        "refund_policy_summary",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Summer camp page: Summer Camp 2027 Dates and Themes, four two week sessions. Session I is printed as June 28 to July 19, which overlaps Session II (July 12 to 23); left out. Groups run from Pre-K (must be entering kindergarten in 2027 to 2028; no 3 year olds) to grades 8 to 9. age_min 4 is derived from that rule; age_max derived from grade 9. 2027 prices not posted; the linked fee page is for 2026, so no prices are recorded. Scholarships by application by May 1."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.teatown.org/camp/summer-camp/",
+      "kind": "html",
+      "title": "Teatown Summer Camp"
+    },
+    "warnings": [],
+    "unknowns": [
+      "2027 prices (only 2026 fees posted)",
+      "Session I end date",
+      "Lunch",
+      "ACA accreditation"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "city 'Ossining', NY is not in cities.py (to be added from the Census gazetteer)"
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-25",
+      "page_checked": "https://www.teatown.org/camp/summer-camp/",
+      "changes": [
+        "New camp, researched from https://www.teatown.org/camp/summer-camp/"
+      ],
+      "for_andrew": [
+        "Teatown's 2027 page prints Session I as June 28 to July 19, which overlaps Session II (July 12 to 23). Probably July 9, but I left Session I out rather than guess. Ask Teatown, or add it as June 28 to July 9?",
+        "2027 fees are not posted yet (only 2026: $1,055 non-member for a two week full day session). The draft has 2027 dates and no prices; add prices when Teatown posts them.",
+        "From 2027 a Teatown family membership ($85) is required to attend unless the family applies for aid, so there is no non-member rate. Fine to show the member price plus a note on the membership once prices are out?"
+      ]
+    }
+  }
+}

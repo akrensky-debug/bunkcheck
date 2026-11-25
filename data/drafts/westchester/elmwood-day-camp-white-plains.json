@@ -1,0 +1,155 @@
+{
+  "slug": "elmwood-day-camp-white-plains",
+  "name": "Elmwood Day Camp",
+  "operator_name": "Elmwood Day Camp",
+  "website_url": "https://elmwooddaycamp.com/",
+  "registration_url": "https://elmwood.campintouch.com/ui/forms/application/camper/App",
+  "phone": "914-592-6121",
+  "street_address": "900 Dobbs Ferry Road",
+  "city": "White Plains",
+  "state": "NY",
+  "zip": "10607",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "swimming",
+    "sports",
+    "arts",
+    "performing_arts",
+    "adventure",
+    "STEM"
+  ],
+  "activities": [
+    "swimming",
+    "athletics",
+    "creative arts",
+    "performing arts",
+    "natural play",
+    "adventure park",
+    "zip lines",
+    "climbing wall",
+    "archery",
+    "gymnastics",
+    "tennis",
+    "gaga",
+    "yoga",
+    "ceramics",
+    "woodworking",
+    "cooking",
+    "science and engineering",
+    "gardening",
+    "hiking and trips"
+  ],
+  "gender_policy": "coed",
+  "age_min": 3,
+  "age_max": 14,
+  "grade_max": 8,
+  "description_short": "A coed day camp on a wooded property in White Plains, about a mile from Ardsley, for children from age 3 through grade 8. Campers rotate through swim lessons in three heated pools, sports, arts, an adventure park with zip lines and a climbing wall, woodworking, cooking and science, with programs set by age.",
+  "indoor_outdoor": "both",
+  "transportation": true,
+  "meals_included": true,
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Summer 2027 (enroll for 4, 5, 6, 7 or 8 weeks)",
+      "start_date": "2027-06-28",
+      "end_date": "2027-08-19",
+      "availability": "unknown"
+    }
+  ],
+  "notes": "2027 tuition is not posted on the site; families are asked to call or book a tour. Campers enroll for 4 to 8 weeks. Grades 7 and 8 join EWD Voyagers, a travel program with day trips and overnights that starts and ends each day at the Leffell School, July 5 to August 13, 2027, two week minimum. Three year olds can attend a half day (9 to 12:15) or mini day (9 to 2). The food service is peanut and tree nut free.",
+  "sources": [
+    {
+      "url": "https://elmwooddaycamp.com/",
+      "checked": "2026-11-25",
+      "fields": [
+        "name",
+        "website_url",
+        "description_short"
+      ],
+      "note": "Researched by Claude from this page. Homepage gives 2027 dates June 28 to August 19."
+    },
+    {
+      "url": "https://elmwooddaycamp.com/enrollment",
+      "checked": "2026-11-25",
+      "fields": [
+        "operator_name",
+        "registration_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Enrollment page: 2027 camp dates Monday June 28 to Thursday August 19; campers enroll for a 4, 5, 6, 7 or 8 week session. Address and phone in the page footer."
+    },
+    {
+      "url": "https://elmwooddaycamp.com/about/our-place",
+      "checked": "2026-11-25",
+      "fields": [
+        "camp_type",
+        "gender_policy",
+        "indoor_outdoor",
+        "activities",
+        "primary_categories",
+        "secondary_categories"
+      ],
+      "note": "Researched by Claude from this page. Co-ed day camp in a wooded section of White Plains; lists pools, fields, adventure park, studios, woodshop, kitchen, science areas and gardening center."
+    },
+    {
+      "url": "https://elmwooddaycamp.com/program-activities",
+      "checked": "2026-11-25",
+      "fields": [
+        "age_min",
+        "age_max",
+        "grade_max"
+      ],
+      "note": "Researched by Claude from this page. Program runs from 3 year olds up to grade 8; age_max 14 derived from grade 8."
+    },
+    {
+      "url": "https://elmwooddaycamp.com/about/transportation-westchester",
+      "checked": "2026-11-25",
+      "fields": [
+        "transportation"
+      ],
+      "note": "Researched by Claude from this page. Door to door buses and vans across Westchester; NYC transportation on a sibling page."
+    },
+    {
+      "url": "https://elmwooddaycamp.com/elmwood-families/parent-handbook/lunch-snack-allergies",
+      "checked": "2026-11-25",
+      "fields": [
+        "meals_included"
+      ],
+      "note": "Researched by Claude from this page. Camp serves lunch from its own menu with a daily salad and sandwich bar."
+    }
+  ],
+  "review": {
+    "status": "ready",
+    "source": {
+      "url": "https://elmwooddaycamp.com/",
+      "kind": "html",
+      "title": "Elmwood tuition, dates, and day camp enrollment"
+    },
+    "warnings": [],
+    "unknowns": [
+      "2027 tuition",
+      "Extended care",
+      "Financial aid",
+      "ACA accreditation"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-25",
+      "page_checked": "https://elmwooddaycamp.com/",
+      "changes": [
+        "New camp, researched from https://elmwooddaycamp.com/"
+      ],
+      "for_andrew": []
+    }
+  }
+}

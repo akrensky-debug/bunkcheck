@@ -1,0 +1,174 @@
+{
+  "slug": "j-sports-academy-dobbs-ferry",
+  "name": "J Sports Academy",
+  "operator_name": "Shames JCC on the Hudson",
+  "website_url": "https://www.jsportsacademy.org/",
+  "registration_url": "https://jsportsacademy.campmanagement.com/p/request_for_info_m.php?action=enroll",
+  "email": "info@jsportsacademy.org",
+  "phone": "914-847-9014",
+  "street_address": "The Masters School, 49 Clinton Avenue",
+  "city": "Dobbs Ferry",
+  "state": "NY",
+  "camp_type": "specialty",
+  "primary_categories": [
+    "sports"
+  ],
+  "secondary_categories": [],
+  "activities": [
+    "team sports",
+    "skills coaching"
+  ],
+  "age_min": 6,
+  "age_max": 15,
+  "grade_min": 1,
+  "grade_max": 9,
+  "description_short": "A sports day camp run by the Shames JCC on the athletic fields and courts of The Masters School in Dobbs Ferry, for kids entering grades 1 to 9. Campers build skills and technique with coaches in a low pressure setting and eat a hot lunch in the school dining hall.",
+  "indoor_outdoor": "outdoor",
+  "price_min": 857,
+  "price_max": 1036,
+  "price_per": "week",
+  "extended_care": true,
+  "transportation": true,
+  "meals_included": true,
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Week 1",
+      "start_date": "2027-06-28",
+      "end_date": "2027-07-02",
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 2",
+      "start_date": "2027-07-05",
+      "end_date": "2027-07-09",
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 3",
+      "start_date": "2027-07-12",
+      "end_date": "2027-07-16",
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 4",
+      "start_date": "2027-07-19",
+      "end_date": "2027-07-23",
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 5",
+      "start_date": "2027-07-26",
+      "end_date": "2027-07-30",
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 6",
+      "start_date": "2027-08-02",
+      "end_date": "2027-08-06",
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 7",
+      "start_date": "2027-08-09",
+      "end_date": "2027-08-13",
+      "availability": "unknown"
+    }
+  ],
+  "notes": "Two week minimum; weeks need not be consecutive. Non member weekly rate runs from $1,036 a week for 2 weeks down to $857 a week for all 7 ($5,998). JCC member rate: $964 a week for 2 weeks down to $785 a week for 7 ($5,498). Hours 9 to 4. Extended day to 5:30 at the Shames JCC is $100 a week; central buses from Tarrytown and Scarsdale are $50 a week.",
+  "sources": [
+    {
+      "url": "https://www.jsportsacademy.org/",
+      "checked": "2026-11-25",
+      "fields": [
+        "name",
+        "website_url"
+      ],
+      "note": "Researched by Claude from this page. Homepage: for 1st to 9th graders at The Masters School, June 28 to August 13, 2027, hot lunch included."
+    },
+    {
+      "url": "https://www.jsportsacademy.org/about_us",
+      "checked": "2026-11-25",
+      "fields": [
+        "operator_name",
+        "camp_type",
+        "grade_min",
+        "grade_max",
+        "age_min",
+        "age_max",
+        "primary_categories",
+        "activities",
+        "description_short",
+        "indoor_outdoor"
+      ],
+      "note": "Researched by Claude from this page. Grades 1 to 9, run by the Shames JCC at The Masters School; ages derived from grades."
+    },
+    {
+      "url": "https://www.jsportsacademy.org/contact",
+      "checked": "2026-11-25",
+      "fields": [
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state"
+      ],
+      "note": "Researched by Claude from this page. Summer address The Masters School, 49 Clinton Avenue, Dobbs Ferry."
+    },
+    {
+      "url": "https://www.jsportsacademy.org/dates-and-rates-2027",
+      "checked": "2026-11-25",
+      "fields": [
+        "registration_url",
+        "price_min",
+        "price_max",
+        "price_per",
+        "sessions",
+        "extended_care",
+        "transportation",
+        "meals_included"
+      ],
+      "note": "Researched by Claude from this page. 2027 weeks and rates; prices are the non member weekly rates, member rates in notes."
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=49+Clinton+Avenue%2C+Dobbs+Ferry%2C+NY&benchmark=Public_AR_Current&format=json",
+      "checked": "2026-11-25",
+      "fields": [
+        "zip"
+      ],
+      "note": "ZIP looked up with the Census Bureau geocoder from the address on the camp's page (49 CLINTON AVE, DOBBS FERRY, NY, 10522)"
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.jsportsacademy.org/",
+      "kind": "html",
+      "title": "The Summer Camp for Kids Who Love Sports"
+    },
+    "warnings": [
+      "The camp's contact page gives ZIP 10502 for 49 Clinton Avenue, Dobbs Ferry, but The Masters School's own page gives 10522; ZIP left for the Census lookup."
+    ],
+    "unknowns": [
+      "Specific sports offered",
+      "Financial aid"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "city 'Dobbs Ferry', NY is not in cities.py (to be added from the Census gazetteer)"
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-25",
+      "page_checked": "https://www.jsportsacademy.org/",
+      "changes": [
+        "New camp, researched from https://www.jsportsacademy.org/",
+        "ZIP 10522 looked up from the camp's street address with the Census geocoder (ZIP lookups allowed by Andrew, 22 November)."
+      ],
+      "for_andrew": [
+        "ZIP: the camp's contact page prints Dobbs Ferry 10502, but the Census geocoder places 49 Clinton Avenue (The Masters School) in 10522. The draft uses 10522. Keep it, or ask the camp?"
+      ]
+    }
+  },
+  "zip": "10522"
+}

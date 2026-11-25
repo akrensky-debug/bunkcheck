@@ -1,0 +1,124 @@
+{
+  "slug": "yorktown-summer-day-camp-yorktown-heights",
+  "name": "Yorktown Summer Day Camp",
+  "operator_name": "Town of Yorktown Parks & Recreation",
+  "website_url": "https://www.yorktownny.gov/town-departments/parks-recreation/summer-camp-registration-information/",
+  "registration_url": "http://register.capturepoint.com/Yorktown",
+  "phone": "914-245-4650",
+  "street_address": "Crompond Elementary School, 2901 Manor St",
+  "city": "Yorktown Heights",
+  "zip": "10598",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "sports",
+    "arts",
+    "nature",
+    "swimming"
+  ],
+  "activities": [
+    "sports",
+    "arts and crafts",
+    "nature",
+    "water activities",
+    "free swim",
+    "special events"
+  ],
+  "grade_min": 0,
+  "grade_max": 5,
+  "age_min": 5,
+  "age_max": 11,
+  "description_short": "Town day camp for grades K to 5, June 30 to July 31, 2026. Full day camp (grades 1 to 5, 8:30 to 3) at Crompond Elementary has sports, arts and crafts, nature and free swim at the Shrub Oak or Junior Lake pools, with after care to 6; half day camp (K to 5, 8:30 to noon) meets at St. Elizabeth Ann Seton Church in Shrub Oak. Campers bring lunch.",
+  "extended_care": true,
+  "meals_included": false,
+  "refund_policy_summary": "90% refund on requests by May 29, 50% from June 1 until camp starts, none once camp begins; $20 processing fee.",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Full Day Camp, grades 1 to 5, Crompond Elementary (non-resident)",
+      "start_date": "2026-06-30",
+      "end_date": "2026-07-31",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Half Day Camp, grades K to 5, Shrub Oak (non-resident)",
+      "start_date": "2026-06-30",
+      "end_date": "2026-07-31",
+      "price": null,
+      "availability": "unknown"
+    }
+  ],
+  "notes": "Non-resident prices are the brochure's fees plus its stated 20% non-resident surcharge: full day $1,428, half day $822 for the season. Residents pay $1,190 and $685 (less for siblings). Non-residents can register from April 21 only if room remains. The town also runs a Travel Camp for grades 6 to 9 (not in this listing). The brochure posts resident fees only; non-residents add 20%.",
+  "state": "NY",
+  "sources": [
+    {
+      "url": "https://www.yorktownny.gov/town-departments/parks-recreation/summer-camp-registration-information/",
+      "checked": "2026-11-25",
+      "fields": [
+        "name",
+        "website_url"
+      ],
+      "note": "Researched by Claude from this page. Summer Day Camp Information page: 'Thank you for a fun summer camp season! Check back in January for information on the 2027 summer day camp season.' Links the Spring & Summer 2026 brochure."
+    },
+    {
+      "url": "https://media-002-us.cdn.govstack.com/yorktownny-us/media/yxdkb3tx/yorktown-pr-sprsum26-brochure-march-4.pdf",
+      "checked": "2026-11-25",
+      "fields": [
+        "operator_name",
+        "registration_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "age_min",
+        "age_max",
+        "description_short",
+        "extended_care",
+        "meals_included",
+        "refund_policy_summary",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Spring & Summer 2026 brochure (PDF), pages 2 and 20: registration March 17 for town and school district residents; non-residents from April 21 if room, with a 20% surcharge on listed fees. Half Day Camp K to 5, 8:30 to 12, June 30 to July 31 (no camp July 3), St Elizabeth Ann Seton Church, 1377 E Main St, Shrub Oak, $685 first child. Full Day Camp grades 1 to 5, 8:30 to 3, same dates, Crompond Elementary School, 2901 Manor St, Yorktown Heights, NY 10598 (a second site TBD), $1,190 first child; free swim at Shrub Oak Park or Junior Lake Pool; lunch is the camper's responsibility. Extended Day 3 to 6 pm for full day campers, $555. Refund policy page 2. Session prices are the listed first child fee plus the 20% non-resident surcharge ($1,190 x 1.2 = $1,428; $685 x 1.2 = $822), worked out by Claude, not printed. Ages derived from grades."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.yorktownny.gov/town-departments/parks-recreation/summer-camp-registration-information/",
+      "kind": "html",
+      "title": "Summer Day Camp Information, Town of Yorktown"
+    },
+    "warnings": [],
+    "unknowns": [
+      "2027 dates and fees (posted in January)",
+      "Second full day site (TBD in the brochure)",
+      "ACA accreditation"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "city 'Yorktown Heights', NY is not in cities.py"
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-25",
+      "page_checked": "https://www.yorktownny.gov/town-departments/parks-recreation/summer-camp-registration-information/",
+      "changes": [
+        "New camp, researched from https://www.yorktownny.gov/town-departments/parks-recreation/summer-camp-registration-information/",
+        "Removed the computed non-resident prices: the brochure only says non-residents add 20%, it does not post the figure."
+      ],
+      "for_andrew": [
+        "Yorktown posts resident fees and \"non-residents add 20%\". Show the computed non-resident figure, or leave the price blank?"
+      ]
+    }
+  }
+}
