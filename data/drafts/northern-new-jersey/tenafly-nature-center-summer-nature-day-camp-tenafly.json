@@ -1,0 +1,118 @@
+{
+  "slug": "tenafly-nature-center-summer-nature-day-camp-tenafly",
+  "name": "Tenafly Nature Center Summer Nature Day Camp",
+  "operator_name": "Tenafly Nature Center",
+  "website_url": "https://tenaflynaturecenter.org/summer-nature-day-camp/",
+  "email": "info@tenaflync.org",
+  "phone": "201-568-6093",
+  "street_address": "313 Hudson Avenue",
+  "city": "Tenafly",
+  "state": "NJ",
+  "zip": "07670",
+  "camp_type": "day",
+  "primary_categories": [
+    "nature",
+    "outdoor"
+  ],
+  "secondary_categories": [
+    "STEM",
+    "arts"
+  ],
+  "activities": [
+    "hiking",
+    "wildlife study",
+    "nature crafts",
+    "games",
+    "campfires",
+    "outdoor stories",
+    "STEM activities"
+  ],
+  "age_min": 4,
+  "age_max": 14,
+  "description_short": "Weekly outdoor nature camp on the Tenafly Nature Center's nearly 400 acre preserve for pre-K through grade 8, led by environmental educators: hiking, finding plants and wildlife, nature crafts and games. Half days for pre-K and kindergarten; a TNC membership is required to register.",
+  "indoor_outdoor": "outdoor",
+  "extended_care": true,
+  "meals_included": false,
+  "refund_policy_summary": "Refunds carry a $50 fee: full refund with 6 or more weeks' notice, half with 4 to 6 weeks, none with less than 4 weeks or once camp has begun.",
+  "special_needs_notes": "Welcomes children of all abilities and works with families; staff do not give medication, so campers must be able to take their own.",
+  "swim_waterfront_notes": "No swimming; water games on very hot days.",
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "2027 season (weekly sessions)",
+      "start_date": "2027-06-21",
+      "end_date": "2027-09-02",
+      "price": null,
+      "availability": "unknown"
+    }
+  ],
+  "notes": "A current TNC for Two membership or higher is required for every camper. Full day 9 am to 3 pm; pre-K and kindergarten half days 9 am to noon or noon to 3 pm. 2027 registration opens December 1, 2026 for Sustaining, Patron and Benefactor members and January 1, 2027 for Family and TNC for Two members. Grades 7 and 8 can join as Junior CITs; grades 9 to 12 have a CIT program. State camp ID 2248. Camp scholarships are described on a separate page.",
+  "sources": [
+    {
+      "url": "https://tenaflynaturecenter.org/summer-nature-day-camp/",
+      "checked": "2026-11-25",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "indoor_outdoor",
+        "meals_included",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Summer Nature Day Camp page: 2027 season June 21 to September 2, ages 4 to 14, lunch from home; address in the footer"
+    },
+    {
+      "url": "https://tenaflynaturecenter.org/summer-nature-day-camp-policies-procedures/",
+      "checked": "2026-11-25",
+      "fields": [
+        "extended_care",
+        "refund_policy_summary",
+        "special_needs_notes",
+        "swim_waterfront_notes"
+      ],
+      "note": "Researched by Claude from this page. Policies page (written for the 2026 season): before care 8 to 9 am, after care 3 to 5 pm, membership requirement, refund schedule"
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://tenaflynaturecenter.org/summer-nature-day-camp/",
+      "kind": "html",
+      "title": "Summer Nature Day Camp, Tenafly Nature Center"
+    },
+    "warnings": [],
+    "unknowns": [
+      "2027 weekly prices",
+      "Financial aid details (scholarship page not read)"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "city 'Tenafly', NJ is not in cities.py"
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-25",
+      "page_checked": "https://tenaflynaturecenter.org/summer-nature-day-camp/",
+      "changes": [
+        "New camp, researched from https://tenaflynaturecenter.org/summer-nature-day-camp/"
+      ],
+      "for_andrew": [
+        "The page shows the 2027 season (June 21 to September 2) beside a weekly fee table with no year whose early bird deadline is February 28, 2026, so the fees look like 2026 rates. I left prices out so 2027 dates are not mixed with 2026 prices. The table reads: pre-K and K full day $550 a week, half day $360; grades 1 to 6 full day $550; grades 7 and 8 Junior CIT $440. Add them once TNC confirms they are 2027 rates?",
+        "Members only: a TNC for Two membership or higher is required to register, and there is no non-member rate. List it, saying membership is required?"
+      ]
+    }
+  }
+}

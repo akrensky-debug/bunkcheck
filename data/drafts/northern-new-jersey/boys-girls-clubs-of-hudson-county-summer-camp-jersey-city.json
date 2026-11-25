@@ -1,0 +1,115 @@
+{
+  "slug": "boys-girls-clubs-of-hudson-county-summer-camp-jersey-city",
+  "name": "Boys & Girls Clubs of Hudson County Summer Camp",
+  "operator_name": "Boys & Girls Clubs of Hudson County",
+  "website_url": "https://www.bgchc.org/summer-camp",
+  "registration_url": "https://www.bgchc.org/documents/60679/2047468/Summer+Application+2026+WEBSITE.pdf/890e16c4-43cc-40eb-2599-60c942fcc169",
+  "phone": "201-333-4100",
+  "street_address": "225 Morris Boulevard",
+  "city": "Jersey City",
+  "state": "NJ",
+  "zip": "07302",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "academic",
+    "STEM",
+    "arts",
+    "sports"
+  ],
+  "activities": [
+    "field trips",
+    "literacy",
+    "science and technology",
+    "physical fitness",
+    "arts and culture",
+    "academic enrichment"
+  ],
+  "grade_min": 0,
+  "grade_max": 8,
+  "age_min": 5,
+  "age_max": 14,
+  "description_short": "Full day summer camp at the Boys & Girls Clubs in Jersey City and Hoboken, 7:30 AM to 6 PM with bus service. Rising STARs serves kindergarten to grade 3 with literacy, science, healthy living and play; the grade 4 to 8 camp mixes weekly educational and fun field trips with clubhouse enrichment, fitness and arts.",
+  "indoor_outdoor": "both",
+  "transportation": true,
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Summer Camp",
+      "start_date": "2026-06-22",
+      "end_date": "2026-08-14",
+      "availability": "unknown"
+    }
+  ],
+  "notes": "Two clubhouses: Jersey City Club, 225 Morris Boulevard, and Edward A. Dalton Club, 123 Jefferson Street, Hoboken (201-963-6443). Buses pick up from 8 AM and leave the club at 5 PM. Pricing is by phone only; the club notes membership is no or very low cost thanks to funders, and families in Jersey City Housing Authority developments or with Urban League co-pays are flagged on the form. Children must complete a Boys & Girls Club membership application with proof of income or benefits. A separate Teen Tech Camp serves ages 13 to 18.",
+  "sources": [
+    {
+      "url": "https://www.bgchc.org/summer-camp",
+      "checked": "2026-11-25",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "description_short",
+        "indoor_outdoor",
+        "transportation",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. 'Summer Camp begins June 22nd and culminates on August 14th', 7:30 to 6, bus transportation; Rising STARs (K to 3) and Middle School Summer Camp (grades 4 to 8). The page prints no year; June 22 falls on a Monday in 2026, and the linked application is the 2026 form."
+    },
+    {
+      "url": "https://www.bgchc.org/documents/60679/2047468/Summer+Application+2026+WEBSITE.pdf/890e16c4-43cc-40eb-2599-60c942fcc169",
+      "checked": "2026-11-25",
+      "fields": [
+        "registration_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "grade_min",
+        "grade_max",
+        "age_min",
+        "age_max"
+      ],
+      "note": "Researched by Claude from this page. '2026 Summer Program Registration' form: Rising STARs ages 5 to 9, grades 4 to 8 ages 10 and up; Jersey City and Hoboken units; 'please call to inquire about pricing'. The form's date line reads 'June 22nd to August 14th, 2025', which looks like a leftover typo. Age max derived from grade 8 (14)."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.bgchc.org/summer-camp",
+      "kind": "html",
+      "title": "Summer Camp - Boys & Girls Clubs of Hudson County"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Price (call only)",
+      "Lunch",
+      "2027 season"
+    ],
+    "low_confidence": [
+      "season_year",
+      "sessions"
+    ],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-25",
+      "page_checked": "https://www.bgchc.org/summer-camp",
+      "changes": [
+        "New camp, researched from https://www.bgchc.org/summer-camp"
+      ],
+      "for_andrew": [
+        "The camp page gives June 22 to August 14 with no year. The linked registration form is titled 2026 but its date line says 2025. June 22 is a Monday only in 2026, so I recorded 2026. Keep it, or treat it as no current season?",
+        "Two clubhouses (Jersey City and Hoboken) share the same dates and programs, so this is one listing at the Jersey City address. Want a second listing for Hoboken?"
+      ]
+    }
+  }
+}

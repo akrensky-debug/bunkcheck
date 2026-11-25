@@ -1,0 +1,111 @@
+{
+  "slug": "willow-lake-day-camp-lake-hopatcong",
+  "name": "Willow Lake Day Camp",
+  "operator_name": "Willow Lake Day Camp",
+  "website_url": "https://www.willowlakedaycamp.com/dates-tuition",
+  "email": "fun@willowlakedaycamp.com",
+  "phone": "973-663-2267",
+  "street_address": "200 State Route 181",
+  "city": "Lake Hopatcong",
+  "state": "NJ",
+  "zip": "07849",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "swimming",
+    "sports",
+    "arts",
+    "adventure"
+  ],
+  "activities": [
+    "aquatics",
+    "athletics",
+    "arts",
+    "adventure",
+    "water sports",
+    "special events",
+    "trips"
+  ],
+  "description_short": "Private day camp on 35 acres with a spring fed lake in Lake Hopatcong for pre-K through grade 8 plus CITs in grades 9 and 10, enrolled for four to eight weeks. Tuition includes bus transportation, lunch, snacks, trips and gear.",
+  "indoor_outdoor": "outdoor",
+  "price_min": 7550,
+  "price_max": 9875,
+  "price_per": "session",
+  "transportation": true,
+  "meals_included": true,
+  "refund_policy_summary": "$1,250 deposit and $400 non-refundable fee; deposit refundable or creditable until November 10, 2026, November installment until January 5, 2027, and nothing refundable after February 9, 2027. Weeks can be cut to a minimum of four by February 9 for a refund, or credited until May 1.",
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "All 8 weeks (grades K to 8)",
+      "start_date": "2027-06-21",
+      "end_date": "2027-08-13",
+      "price": 9875,
+      "availability": "unknown"
+    }
+  ],
+  "notes": "Tuition by grade entering after summer: pre-K $7,550 to $9,675; grades K to 8 $7,550 (first or last 4 weeks) to $9,875 (all 8 weeks); CITs grades 9 and 10 $8,100. These are the posted Summer Saver prices, which the page says were valid through August 14, 2026. No camp Monday July 5, 2027. Units: Little Willows (pre-K and K), Middle Camp (grades 1 and 2), Senior Camp (3 to 8), CITs (9 and 10). All programs five days a week.",
+  "sources": [
+    {
+      "url": "https://www.willowlakedaycamp.com/dates-tuition",
+      "checked": "2026-11-25",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "description_short",
+        "indoor_outdoor",
+        "price_min",
+        "price_max",
+        "price_per",
+        "transportation",
+        "meals_included",
+        "refund_policy_summary",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Session Dates and Tuition page: 2027 camp June 21 to August 13, all inclusive tuition with transportation and lunch, payment dates, location"
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.willowlakedaycamp.com/dates-tuition",
+      "kind": "html",
+      "title": "Session Dates, Tuition, & Enrollment Application | Willow Lake Day Camp"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Ages (page gives grades only)",
+      "Extended care",
+      "Financial aid",
+      "ACA accreditation"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "city 'Lake Hopatcong', NJ is not in cities.py"
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-25",
+      "page_checked": "https://www.willowlakedaycamp.com/dates-tuition",
+      "changes": [
+        "New camp, researched from https://www.willowlakedaycamp.com/dates-tuition"
+      ],
+      "for_andrew": [
+        "The 2027 prices posted are Summer Saver prices the page says were valid through August 14, 2026, and the FAQ says listed pricing is the least expensive available. Families enrolling now likely pay more. Show these as the starting price with that caveat, or leave prices out until the camp posts current rates?"
+      ]
+    }
+  }
+}

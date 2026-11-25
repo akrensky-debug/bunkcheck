@@ -1,0 +1,86 @@
+{
+  "slug": "south-orange-recreation-summer-day-camp-south-orange",
+  "name": "South Orange Recreation Summer Day Camp",
+  "operator_name": "South Orange Department of Recreation and Cultural Affairs",
+  "website_url": "https://southorange.org/605/South-Orange-Recreation-Summer-Camp",
+  "email": "ssiegel@southorange.org",
+  "city": "South Orange",
+  "state": "NJ",
+  "zip": "07079",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "sports",
+    "arts",
+    "swimming"
+  ],
+  "activities": [
+    "sports",
+    "arts and crafts",
+    "games",
+    "special events",
+    "swimming"
+  ],
+  "description_short": "Seven week village day camp in Meadowland Park for South Orange residents entering pre-K through grade 8, with sports, crafts, games and two swim times a week. Full day and half day options; only South Orange residents can register.",
+  "indoor_outdoor": "outdoor",
+  "extended_care": true,
+  "season_year": 2026,
+  "notes": "Open to South Orange residents only. Half day 9 am to 1 pm, full day 9 am to 4 pm, extended hours from 8 am and until 5 pm. 2026 registration opened January 11 for Recreation members and January 13 for general registration. Fees are in the village's Rec1 catalog, which needs a login.",
+  "sources": [
+    {
+      "url": "https://southorange.org/605/South-Orange-Recreation-Summer-Camp",
+      "checked": "2026-11-25",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "description_short",
+        "indoor_outdoor",
+        "extended_care"
+      ],
+      "note": "Researched by Claude from this page. 2026 camp page. ZIP is from the village offices address in the page footer (76 South Orange Avenue, South Orange, NJ 07079); the page names Meadowland Park as the camp site but gives no street address"
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://southorange.org/605/South-Orange-Recreation-Summer-Camp",
+      "kind": "html",
+      "title": "South Orange Recreation Summer Day Camp | South Orange Village, NJ"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Weekly or summer fee (in the Rec1 catalog behind a login)",
+      "2026 session dates (page says seven weeks, no dates)",
+      "Street address of Meadowland Park",
+      "Lunch",
+      "Financial aid"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "city 'South Orange', NJ is not in cities.py"
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-25",
+      "page_checked": "https://southorange.org/605/South-Orange-Recreation-Summer-Camp",
+      "changes": [
+        "New camp, researched from https://southorange.org/605/South-Orange-Recreation-Summer-Camp"
+      ],
+      "for_andrew": [
+        "Residents only: the page says campers must be South Orange residents to register. No fee is posted on the public page, so there is no rate to show. List it anyway?",
+        "Grades pre-K to 8 are stated but no ages, so I left ages and grades out rather than guess a pre-K grade number."
+      ]
+    }
+  }
+}

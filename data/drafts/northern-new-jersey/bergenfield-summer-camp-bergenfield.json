@@ -1,0 +1,64 @@
+{
+  "slug": "bergenfield-summer-camp-bergenfield",
+  "name": "Bergenfield Summer Camp",
+  "operator_name": "Bergenfield Recreation Department",
+  "website_url": "https://bergenfieldnj.gov/memorial-park-summer-recreation/",
+  "registration_url": "https://www.govpilot.com/forms/main/1549e0ba-126/Summer-Camp-Application/Borough-of-Bergenfield/NJ/6928/1",
+  "phone": "201-387-4055",
+  "city": "Bergenfield",
+  "state": "NJ",
+  "zip": "07621",
+  "camp_type": "day",
+  "primary_categories": ["general"],
+  "secondary_categories": ["outdoor"],
+  "activities": ["sprinklers", "field trips", "special events"],
+  "age_min": 5,
+  "age_max": 12,
+  "description_short": "Six week outdoor summer recreation program at Memorial Park run by the borough for Bergenfield residents only, ages 5 to 12. Kids are grouped by age with a counselor from 9 to 3 on weekdays, starting the first Monday after school ends; it closes in rain since there is no indoor space.",
+  "indoor_outdoor": "outdoor",
+  "price_min": 300,
+  "price_max": 300,
+  "price_per": "summer",
+  "meals_included": false,
+  "refund_policy_summary": "No refunds. The fee covers the whole six weeks however many days a child attends. Late pickup costs $50 per half hour.",
+  "season_year": 2026,
+  "notes": "Open to Bergenfield residents only, with proof of residence such as a Bergenfield school report card. $300 per child and $250 for each additional sibling, covering the full six weeks. Field trips cost extra and need a permission slip. No camp on July 4.",
+  "sources": [
+    {
+      "url": "https://bergenfieldnj.gov/memorial-park-summer-recreation/",
+      "checked": "2026-11-25",
+      "fields": ["name", "website_url", "phone", "camp_type", "primary_categories", "secondary_categories", "activities", "age_min", "age_max", "description_short", "indoor_outdoor", "price_min", "price_max", "price_per", "meals_included", "refund_policy_summary"],
+      "note": "Researched by Claude from this page. FAQ for the Summer Recreation Program at Memorial Park: six weeks from the first Monday after school closes, 9 to 3, ages 5 to 12, $300 per child and $250 per additional child for residents only, no refunds. Children bring their own lunch. Phone is the Recreation Office line given for emergencies."
+    },
+    {
+      "url": "https://bergenfieldnj.gov/programs-events/",
+      "checked": "2026-11-25",
+      "fields": ["registration_url"],
+      "note": "Researched by Claude from this page. 'Bergenfield Summer Camp 2026 is now open for registration', residents only, $300 per child, $250 for each additional sibling, with the GovPilot application link."
+    },
+    {
+      "url": "https://bergenfieldnj.gov/departments/recreation-department/",
+      "checked": "2026-11-25",
+      "fields": ["operator_name", "city", "state", "zip"],
+      "note": "Researched by Claude from this page. ZIP is from the Recreation Department's own address (198 N. Washington Ave, Bergenfield, NJ 07621); the camp's park is in the same borough. The site gives no street number for Memorial Park."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {"url": "https://bergenfieldnj.gov/memorial-park-summer-recreation/", "kind": "html", "title": "Memorial Park Summer Recreation - Borough of Bergenfield, New Jersey"},
+    "warnings": [],
+    "unknowns": ["2026 start and end dates (only 'first Monday after school closes, six weeks')", "Street address of Memorial Park", "2027 season"],
+    "low_confidence": ["zip"],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-25",
+      "page_checked": "https://bergenfieldnj.gov/memorial-park-summer-recreation/",
+      "changes": ["New camp, researched from https://bergenfieldnj.gov/memorial-park-summer-recreation/"],
+      "for_andrew": [
+        "Residents only camp: recorded its one rate ($300 for the summer) and said who can enroll.",
+        "The site never says which park 'Memorial Park' is. Its parks list has Memorial Field on New Bridge Road and Veterans Memorial Park on Old Bridge Road, so I left the street out and took the ZIP from the Recreation Department's own Bergenfield address."
+      ]
+    }
+  }
+}

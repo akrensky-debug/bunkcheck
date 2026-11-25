@@ -1,0 +1,167 @@
+{
+  "slug": "surf-and-turf-adventure-camp-montclair",
+  "name": "Surf and Turf Adventure Camp",
+  "operator_name": "Surf and Turf Adventure Camp",
+  "website_url": "https://surfandturfcamp.com/",
+  "registration_url": "https://surfandturfcamp.com/sign-up-2026-27",
+  "email": "surfandturfmontclair@gmail.com",
+  "phone": "973-306-9505",
+  "city": "Montclair",
+  "state": "NJ",
+  "camp_type": "day",
+  "primary_categories": [
+    "adventure",
+    "outdoor"
+  ],
+  "secondary_categories": [
+    "swimming"
+  ],
+  "activities": [
+    "day trips",
+    "beaches",
+    "swimming",
+    "hiking",
+    "biking",
+    "boating",
+    "amusement parks",
+    "go karts",
+    "paintball",
+    "museum overnight",
+    "overnight trips"
+  ],
+  "age_min": 9,
+  "age_max": 15,
+  "description_short": "Trip camp for ages 9 to 15 that leaves each morning by bus from Edgemont Park in Montclair for a different outing: beaches, hikes, bike trails, swimming spots, amusement parks and city visits, with some overnights. Campers 9 to 11 travel as a supervised Juniors group.",
+  "indoor_outdoor": "outdoor",
+  "price_per_week": 725,
+  "price_min": 675,
+  "price_max": 950,
+  "price_per": "week",
+  "transportation": true,
+  "meals_included": false,
+  "financial_aid": true,
+  "refund_policy_summary": "With reasonable notice the camp can usually refund or move the camper to another week.",
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Week 1: Science Museum week (Wed to Fri, Liberty Science Center overnight)",
+      "start_date": "2027-06-23",
+      "end_date": "2027-06-25",
+      "price": 675,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 2: Upside Down week",
+      "start_date": "2027-06-28",
+      "end_date": "2027-07-02",
+      "price": 725,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 3A: Beach week",
+      "start_date": "2027-07-05",
+      "end_date": "2027-07-09",
+      "price": 750,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 3B: Beach week",
+      "start_date": "2027-07-05",
+      "end_date": "2027-07-09",
+      "price": 750,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 4: Beach week with Rehoboth overnight",
+      "start_date": "2027-07-12",
+      "end_date": "2027-07-16",
+      "price": 950,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 5: Adventure week",
+      "start_date": "2027-07-19",
+      "end_date": "2027-07-23",
+      "price": 775,
+      "availability": "unknown"
+    }
+  ],
+  "notes": "2027 weeks posted so far: $675 for the three day Week 1, $725 to $950 for full weeks (Week 4 includes a Rehoboth overnight). Weeks 6 to 8 not yet posted. A 25% deposit holds a spot. Bus leaves about 8:45 am and returns around 5:30 pm. Campers pack lunch or bring money to buy it; snacks on the bus. Scholarships (half, full or partial) on request. The site gives no street address for the Edgemont Park departure point.",
+  "sources": [
+    {
+      "url": "https://surfandturfcamp.com/",
+      "checked": "2026-11-25",
+      "fields": [
+        "city",
+        "state",
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "indoor_outdoor",
+        "price_per_week",
+        "price_min",
+        "price_max",
+        "price_per",
+        "transportation",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Home page: Summer 2027 weeks with dates and prices; ages 9 to 15, Juniors 9 to 11; daily bus from Edgemont School in Edgemont Park, Montclair. Weekly price is Week 2, the first full week."
+    },
+    {
+      "url": "https://surfandturfcamp.com/contact-us",
+      "checked": "2026-11-25",
+      "fields": [
+        "phone"
+      ],
+      "note": "Researched by Claude from this page. Contact page: phone numbers for the directors."
+    },
+    {
+      "url": "https://surfandturfcamp.com/faqs-%2F-juniors",
+      "checked": "2026-11-25",
+      "fields": [
+        "email",
+        "meals_included",
+        "financial_aid",
+        "refund_policy_summary"
+      ],
+      "note": "Researched by Claude from this page. FAQ: campers pack lunch or buy it on the trip; scholarships available on request; refunds or rescheduling with reasonable notice. Camp email given here."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://surfandturfcamp.com/",
+      "kind": "html",
+      "title": "Adventure Camp in Montclair - Surf and Turf"
+    },
+    "warnings": [],
+    "unknowns": [
+      "street_address",
+      "zip",
+      "extended_care",
+      "aca_accredited"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-25",
+      "page_checked": "https://surfandturfcamp.com/",
+      "changes": [
+        "New camp, researched from https://surfandturfcamp.com/"
+      ],
+      "for_andrew": [
+        "The camp meets at Edgemont Park in front of Edgemont School, Montclair, but its site gives no street address, so there is no ZIP and the draft fails validation. Its office addresses (Orange and Godfrey Rd, Montclair) are mailing addresses, not where camp meets.",
+        "The site lists three different phone numbers; I used Tim's mobile from the contact page."
+      ]
+    }
+  }
+}

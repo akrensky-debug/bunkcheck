@@ -1,0 +1,125 @@
+{
+  "slug": "jcc-metrowest-exploration-camp-west-orange",
+  "name": "JCC MetroWest Exploration Camp",
+  "operator_name": "JCC MetroWest",
+  "website_url": "https://jccmetrowest.org/programs/camps/exploration-camp/",
+  "phone": "973-530-3993",
+  "street_address": "760 Northfield Avenue",
+  "city": "West Orange",
+  "state": "NJ",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "STEM",
+    "arts",
+    "swimming"
+  ],
+  "activities": [
+    "LEGO architecture",
+    "cooking",
+    "crafts",
+    "science",
+    "swimming",
+    "games",
+    "field trips"
+  ],
+  "grade_min": 0,
+  "grade_max": 3,
+  "age_min": 5,
+  "age_max": 9,
+  "description_short": "Weekly themed day camp at the JCC MetroWest building in West Orange for children entering K to grade 3, with three hours a day of teacher led instruction in topics like LEGO architecture, cooking, crafts and science, plus a daily free swim and games.",
+  "indoor_outdoor": "both",
+  "extended_care": true,
+  "meals_included": false,
+  "special_needs_notes": "Inclusive camp; families of campers who need extra support contact the JCC's inclusion staff.",
+  "swim_waterfront_notes": "Daily free swim in the JCC's indoor heated pools.",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Summer 2026 (two week minimum)",
+      "start_date": "2026-06-22",
+      "end_date": "2026-08-07",
+      "price": null,
+      "availability": "unknown"
+    }
+  ],
+  "notes": "Camp 9 am to 4 pm; aftercare 4 to 5 pm. Two week minimum; savings for all seven weeks. Lunch is included Mondays and Tuesdays; families send lunch Wednesday to Friday. Fees are not posted.",
+  "sources": [
+    {
+      "url": "https://jccmetrowest.org/programs/camps/exploration-camp/",
+      "checked": "2026-11-25",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "phone",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "age_min",
+        "age_max",
+        "description_short",
+        "indoor_outdoor",
+        "extended_care",
+        "meals_included",
+        "special_needs_notes",
+        "swim_waterfront_notes",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Exploration Camp page: summer 2026, June 22 to August 7, entering K to grade 3, 9 am to 4 pm, aftercare 4 to 5 pm. Ages derived from grades K to 3"
+    },
+    {
+      "url": "https://jccmetrowest.org/programs/camps/",
+      "checked": "2026-11-25",
+      "fields": [
+        "street_address",
+        "city",
+        "state"
+      ],
+      "note": "Researched by Claude from this page. JCC MetroWest summer camps page: on-site camps at 760 Northfield Ave, West Orange"
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=760+Northfield+Avenue%2C+West+Orange%2C+NJ&benchmark=Public_AR_Current&format=json",
+      "checked": "2026-11-25",
+      "fields": [
+        "zip"
+      ],
+      "note": "ZIP looked up with the Census Bureau geocoder from the address on the camp's page (760 NORTHFIELD AVE, WEST ORANGE, NJ, 07052)"
+    }
+  ],
+  "review": {
+    "status": "ready",
+    "source": {
+      "url": "https://jccmetrowest.org/programs/camps/exploration-camp/",
+      "kind": "html",
+      "title": "Exploration Camp, JCC Metrowest"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Weekly price",
+      "Financial aid"
+    ],
+    "low_confidence": [
+      "meals_included is false because lunch is provided only two days a week."
+    ],
+    "errors": [
+      "city 'West Orange', NJ is not in cities.py"
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-25",
+      "page_checked": "https://jccmetrowest.org/programs/camps/exploration-camp/",
+      "changes": [
+        "New camp, researched from https://jccmetrowest.org/programs/camps/exploration-camp/",
+        "ZIP 07052 looked up from the camp's street address with the Census geocoder (ZIP lookups allowed by Andrew, 22 November)."
+      ],
+      "for_andrew": []
+    }
+  },
+  "zip": "07052"
+}

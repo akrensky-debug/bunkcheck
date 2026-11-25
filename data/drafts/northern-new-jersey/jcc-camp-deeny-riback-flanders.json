@@ -1,0 +1,136 @@
+{
+  "slug": "jcc-camp-deeny-riback-flanders",
+  "name": "JCC Camp Deeny Riback",
+  "operator_name": "JCC MetroWest",
+  "website_url": "https://jccmetrowest.org/programs/camps/cdr/",
+  "phone": "973-929-2901",
+  "street_address": "208 Flanders-Netcong Road",
+  "city": "Flanders",
+  "state": "NJ",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "swimming",
+    "sports",
+    "arts",
+    "adventure",
+    "faith"
+  ],
+  "activities": [
+    "swimming",
+    "ropes course",
+    "zip line",
+    "archery",
+    "mountain biking",
+    "sports",
+    "ceramics",
+    "dance",
+    "performing arts",
+    "cooking",
+    "boating",
+    "petting zoo"
+  ],
+  "description_short": "JCC MetroWest day camp on 35 wooded acres in Flanders for ages 3 and a half to grade 10, with two heated pools, Budd Lake waterfront, ropes courses and a zip line, sports, arts, cooking and Jewish programming. Bus service from Essex and Morris towns and kosher lunch are included.",
+  "religious_affiliation": "Jewish",
+  "indoor_outdoor": "outdoor",
+  "transportation": true,
+  "meals_included": true,
+  "financial_aid": true,
+  "special_needs_notes": "Camp Friends inclusion program for campers with mild to moderate needs in PreK to grade 7, with a one to one advocate counselor; interview and acceptance required.",
+  "aca_accredited": true,
+  "aca_source_url": "https://jccmetrowest.org/programs/camps/cdr/faq/",
+  "season_year": 2026,
+  "notes": "Divisions: Junior Village (entering PreK to 1), Middle Camp (2 to 5), Upper Camp (6 to 9), Leaders in Training (10). Families choose 2 to 8 weeks, first two consecutive; optional week 9 for younger divisions. Dismissal 4 pm. $750 deposit, refundable through January 1 less $200. Central bus stops in Essex and Morris counties, including Montclair, Maplewood, South Orange, Livingston, West Orange, Millburn, Summit, Morristown and Parsippany. All food is kosher and nut free.",
+  "sources": [
+    {
+      "url": "https://jccmetrowest.org/programs/camps/",
+      "checked": "2026-11-25",
+      "fields": [
+        "name",
+        "operator_name",
+        "street_address",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "description_short",
+        "religious_affiliation",
+        "indoor_outdoor",
+        "transportation",
+        "meals_included"
+      ],
+      "note": "Researched by Claude from this page. JCC MetroWest summer camps page: Camp Deeny Riback at 208 Flanders-Netcong Rd, Flanders, NJ; ages 3 and a half to entering grade 10; transportation and kosher lunch included"
+    },
+    {
+      "url": "https://jccmetrowest.org/programs/camps/cdr/",
+      "checked": "2026-11-25",
+      "fields": [
+        "website_url"
+      ],
+      "note": "Researched by Claude from this page. Camp Deeny Riback home page"
+    },
+    {
+      "url": "https://jccmetrowest.org/programs/camps/cdr/fees/",
+      "checked": "2026-11-25",
+      "fields": [
+        "phone",
+        "financial_aid"
+      ],
+      "note": "Researched by Claude from this page. Registration, fees and calendar page: camp office phone, financial aid after enrollment"
+    },
+    {
+      "url": "https://jccmetrowest.org/programs/camps/cdr/faq/",
+      "checked": "2026-11-25",
+      "fields": [
+        "special_needs_notes",
+        "aca_accredited",
+        "aca_source_url"
+      ],
+      "note": "Researched by Claude from this page. FAQ: Camp Friends inclusion program and ACA accreditation statement"
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=208+Flanders-Netcong+Road%2C+Flanders%2C+NJ&benchmark=Public_AR_Current&format=json",
+      "checked": "2026-11-25",
+      "fields": [
+        "zip"
+      ],
+      "note": "ZIP looked up with the Census Bureau geocoder from the address on the camp's page (208 FLANDERS NETCONG RD, FLANDERS, NJ, 07836)"
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://jccmetrowest.org/programs/camps/cdr/fees/",
+      "kind": "html",
+      "title": "Registration, Fees, and Calendar, JCC Metrowest"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Tuition (no rates on the fees page)",
+      "Extended day (contact the office)",
+      "Refund policy beyond the deposit"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "city 'Flanders', NJ is not in cities.py"
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-25",
+      "page_checked": "https://jccmetrowest.org/programs/camps/cdr/fees/",
+      "changes": [
+        "New camp, researched from https://jccmetrowest.org/programs/camps/cdr/fees/",
+        "ZIP 07836 looked up from the camp's street address with the Census geocoder (ZIP lookups allowed by Andrew, 22 November)."
+      ],
+      "for_andrew": [
+        "The fees page heading says June 21 to August 13, 2026, but its week list (June 21 to 25, Tuesday July 6 to 9 after a Monday holiday) only fits 2027 weekdays. I recorded season 2026 as the page states and left the weeks out. Ask the camp which summer the calendar is for?",
+        "No tuition is posted, so the listing has no price."
+      ]
+    }
+  },
+  "zip": "07836"
+}
