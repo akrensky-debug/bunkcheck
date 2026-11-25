@@ -107,16 +107,15 @@
     "low_confidence": [
       "Year is not printed beside the dates, but the register link names the 2027 program and June 21 to August 20 falls Monday to Friday in 2027."
     ],
-    "errors": [
-      "city 'New Milford', NJ is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-25",
       "page_checked": "https://metroymcas.org/nmy-summer-camp",
       "changes": [
         "New camp, researched from https://metroymcas.org/nmy-summer-camp",
-        "ZIP 07646 looked up from the camp's street address with the Census geocoder (ZIP lookups allowed by Andrew, 22 November)."
+        "ZIP 07646 looked up from the camp's street address with the Census geocoder (ZIP lookups allowed by Andrew, 22 November).",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
         "One rate ($385 a week) is posted and the page says members and non-members pay different rates without saying which this is. Ask the Y which rate it is?"

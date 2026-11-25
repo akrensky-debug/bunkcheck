@@ -102,15 +102,14 @@
       "Financial aid"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Tenafly', NJ is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-25",
       "page_checked": "https://www.tenaflynj.gov/214/Summer-Camp",
       "changes": [
-        "New camp, researched from https://www.tenaflynj.gov/214/Summer-Camp"
+        "New camp, researched from https://www.tenaflynj.gov/214/Summer-Camp",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
         "The batch named Recky's Tiger Camp (grades K to 5). Its 2026 flyer is a scanned image the fetcher cannot read, so there is nothing to list for it or the Tiger Cub preschool camp beyond the names. I drafted the teen camp, whose flyer is readable. Keep the teen camp listing, and ask Tenafly Recreation for the K to 5 flyer as text?"

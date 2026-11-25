@@ -67,15 +67,14 @@
       "Financial aid"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'South Orange', NJ is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-25",
       "page_checked": "https://southorange.org/605/South-Orange-Recreation-Summer-Camp",
       "changes": [
-        "New camp, researched from https://southorange.org/605/South-Orange-Recreation-Summer-Camp"
+        "New camp, researched from https://southorange.org/605/South-Orange-Recreation-Summer-Camp",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
         "Residents only: the page says campers must be South Orange residents to register. No fee is posted on the public page, so there is no rate to show. List it anyway?",

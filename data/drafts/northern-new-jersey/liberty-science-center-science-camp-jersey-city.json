@@ -145,15 +145,14 @@
     "low_confidence": [
       "The tuition on the FAQ page has no year; it is taken as the 2026 rate because it sits beside the 2026 camp."
     ],
-    "errors": [
-      "city 'Jersey City', NJ is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-25",
       "page_checked": "https://lsc.org/camp",
       "changes": [
-        "New camp, researched from https://lsc.org/camp"
+        "New camp, researched from https://lsc.org/camp",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": []
     }

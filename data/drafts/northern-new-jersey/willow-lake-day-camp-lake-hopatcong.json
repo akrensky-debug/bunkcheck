@@ -93,15 +93,14 @@
       "ACA accreditation"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Lake Hopatcong', NJ is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-25",
       "page_checked": "https://www.willowlakedaycamp.com/dates-tuition",
       "changes": [
-        "New camp, researched from https://www.willowlakedaycamp.com/dates-tuition"
+        "New camp, researched from https://www.willowlakedaycamp.com/dates-tuition",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
         "The 2027 prices posted are Summer Saver prices the page says were valid through August 14, 2026, and the FAQ says listed pricing is the least expensive available. Families enrolling now likely pay more. Show these as the starting price with that caveat, or leave prices out until the camp posts current rates?"

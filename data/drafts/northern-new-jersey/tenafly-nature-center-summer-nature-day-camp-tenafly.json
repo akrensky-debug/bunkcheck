@@ -99,15 +99,14 @@
       "Financial aid details (scholarship page not read)"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Tenafly', NJ is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-25",
       "page_checked": "https://tenaflynaturecenter.org/summer-nature-day-camp/",
       "changes": [
-        "New camp, researched from https://tenaflynaturecenter.org/summer-nature-day-camp/"
+        "New camp, researched from https://tenaflynaturecenter.org/summer-nature-day-camp/",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
         "The page shows the 2027 season (June 21 to September 2) beside a weekly fee table with no year whose early bird deadline is February 28, 2026, so the fees look like 2026 rates. I left prices out so 2027 dates are not mixed with 2026 prices. The table reads: pre-K and K full day $550 a week, half day $360; grades 1 to 6 full day $550; grades 7 and 8 Junior CIT $440. Add them once TNC confirms they are 2027 rates?",

@@ -150,15 +150,14 @@
     "low_confidence": [
       "Week 2 is four days (no camp July 3) but the brochure says sessions are not pro-rated, so it carries the full weekly price."
     ],
-    "errors": [
-      "city 'Randolph', NJ is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-25",
       "page_checked": "https://randolphnj.org/277/Summer-Camps-Sports-Clinics",
       "changes": [
-        "New camp, researched from https://randolphnj.org/277/Summer-Camps-Sports-Clinics"
+        "New camp, researched from https://randolphnj.org/277/Summer-Camps-Sports-Clinics",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": []
     }

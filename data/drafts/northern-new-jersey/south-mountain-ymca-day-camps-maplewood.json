@@ -118,15 +118,14 @@
     "low_confidence": [
       "Season year is inferred: the camp pages give June 21 to August 20 with no year, which falls Monday to Friday only in 2027, and the home page says 2027 registration begins December 1. The YKnots page says ages 3 by 6/21/26, which looks like a leftover."
     ],
-    "errors": [
-      "city 'Maplewood', NJ is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-25",
       "page_checked": "https://maplewoodymcacamp.org",
       "changes": [
-        "New camp, researched from https://maplewoodymcacamp.org"
+        "New camp, researched from https://maplewoodymcacamp.org",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
         "The camp pages show June 21 to August 20 and weekly rates with no year. The weekdays fit 2027 and the home page announces 2027 registration, so I recorded them as 2027 with the community rates ($649 to $651.20 a week). Confirm these are 2027 rates before publishing?",

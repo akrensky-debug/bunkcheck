@@ -115,16 +115,15 @@
       "Refund policy beyond the deposit"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Flanders', NJ is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-25",
       "page_checked": "https://jccmetrowest.org/programs/camps/cdr/fees/",
       "changes": [
         "New camp, researched from https://jccmetrowest.org/programs/camps/cdr/fees/",
-        "ZIP 07836 looked up from the camp's street address with the Census geocoder (ZIP lookups allowed by Andrew, 22 November)."
+        "ZIP 07836 looked up from the camp's street address with the Census geocoder (ZIP lookups allowed by Andrew, 22 November).",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
         "The fees page heading says June 21 to August 13, 2026, but its week list (June 21 to 25, Tuesday July 6 to 9 after a Monday holiday) only fits 2027 weekdays. I recorded season 2026 as the page states and left the weeks out. Ask the camp which summer the calendar is for?",

@@ -162,15 +162,14 @@
       "Street address of the Berkeley Heights Community pool (address used is the Berkeley Heights YMCA)"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Berkeley Heights', NJ is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-25",
       "page_checked": "https://www.thesay.org/programs/camp/view-all/",
       "changes": [
-        "New camp, researched from https://www.thesay.org/programs/camp/view-all/"
+        "New camp, researched from https://www.thesay.org/programs/camp/view-all/",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
         "Members only: every camper needs a Summit Area YMCA membership (youth $120 a year) and no non-member rate exists. I recorded the one rate, $415 a week. List it, saying membership is required?"

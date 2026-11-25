@@ -152,16 +152,15 @@
     "low_confidence": [
       "Year is not printed beside the dates, but the register links are for 2027 programs and the dates fall Monday to Friday in 2027."
     ],
-    "errors": [
-      "city 'New Milford', NJ is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-25",
       "page_checked": "https://metroymcas.org/nmy-summer-camp",
       "changes": [
         "New camp, researched from https://metroymcas.org/nmy-summer-camp",
-        "ZIP 07646 looked up from the camp's street address with the Census geocoder (ZIP lookups allowed by Andrew, 22 November)."
+        "ZIP 07646 looked up from the camp's street address with the Census geocoder (ZIP lookups allowed by Andrew, 22 November).",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
         "The camp is on Lake Kanawauke in Harriman State Park, NY, with no street address. I placed the listing at the New Milford, NJ program center where the bus picks up and drops off, and say in the description that camp is in Harriman. Is that how you want lakeside camps with a bus pickup shown?",

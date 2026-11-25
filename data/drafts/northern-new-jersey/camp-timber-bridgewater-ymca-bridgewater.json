@@ -100,15 +100,14 @@
     "low_confidence": [
       "ACA accreditation is the Y's own statement on the camp page; not checked on ACA Find a Camp."
     ],
-    "errors": [
-      "city 'Bridgewater', NJ is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-25",
       "page_checked": "https://www.gscymca.org/child-care-camps/camp-timber/",
       "changes": [
-        "New camp, researched from https://www.gscymca.org/child-care-camps/camp-timber/"
+        "New camp, researched from https://www.gscymca.org/child-care-camps/camp-timber/",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": []
     }

@@ -99,15 +99,14 @@
     "low_confidence": [
       "Listed as one camp because all five programs share dates and fee; each has its own school site and grade band."
     ],
-    "errors": [
-      "city 'Verona', NJ is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-25",
       "page_checked": "https://www.veronanj.org/departments/recreation/summercamp",
       "changes": [
-        "New camp, researched from https://www.veronanj.org/departments/recreation/summercamp"
+        "New camp, researched from https://www.veronanj.org/departments/recreation/summercamp",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": []
     }

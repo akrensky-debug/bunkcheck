@@ -169,15 +169,14 @@
     "low_confidence": [
       "Cannonball starts in week 2, so week 1 applies only to Cannundus and Sports Camp."
     ],
-    "errors": [
-      "city 'Springfield', NJ is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-25",
       "page_checked": "https://www.thesay.org/programs/camp/view-all/",
       "changes": [
-        "New camp, researched from https://www.thesay.org/programs/camp/view-all/"
+        "New camp, researched from https://www.thesay.org/programs/camp/view-all/",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
         "Members only: every camper needs a Summit Area YMCA membership and no non-member rate exists. I recorded the one rate, $395 a week. List it, saying membership is required?",
