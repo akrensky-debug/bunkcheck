@@ -1,6 +1,6 @@
 {
   "metro": "Maine",
-  "checked": "2026-11-13",
+  "checked": "2026-11-25",
   "notes": "Real listings from each camp's own website. Unverified until a camp confirms. Edit here and re-run: python -m campfinder.seed.import_real --check",
   "camps": [
     {
@@ -7116,6 +7116,2787 @@
             "zip"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ]
+    },
+    {
+      "slug": "acadia-institute-of-oceanography-mount-desert",
+      "name": "Acadia Institute of Oceanography",
+      "operator_name": "Acadia Institute of Oceanography",
+      "website_url": "https://acadiainstitute.com/",
+      "registration_url": "https://aio.campintouch.com/ui/forms/application/camper/App",
+      "email": "explore@acadiainstitute.com",
+      "phone": "207-669-3561",
+      "street_address": "9 Lower Dunbar Road",
+      "city": "Mount Desert",
+      "state": "ME",
+      "zip": "04675",
+      "camp_type": "specialty",
+      "gender_policy": "coed",
+      "primary_categories": [
+        "STEM",
+        "nature"
+      ],
+      "secondary_categories": [
+        "academic",
+        "outdoor"
+      ],
+      "description_short": "Overnight marine science camp in Seal Harbor on Mount Desert Island. Students study the ocean through classes, lab work, tide pools, salt marshes and boat trips, in a one week session for ages 10 to 12 and two week sessions for middle and high school students.",
+      "age_min": 10,
+      "age_max": 18,
+      "grade_min": 5,
+      "grade_max": 12,
+      "activities": [
+        "saltwater tank",
+        "beach exploration",
+        "tide pools",
+        "salt marshes and bogs",
+        "fishing",
+        "whale watching",
+        "island geology",
+        "water testing"
+      ],
+      "price_min": 1800,
+      "price_max": 3400,
+      "price_per": "session",
+      "meals_included": true,
+      "transportation": true,
+      "refund_policy_summary": "Full refund before March 1. From March 1 to April 30, refund minus the deposit ($400 Introductory, $600 others). In May, refund minus deposit only if the place is filled. No refunds from June 1.",
+      "special_needs_notes": "Many students with ADD, ADHD or mild learning disabilities do well, but the program is not staffed for one on one support or more severe needs. Food allergies and many diets can be handled if arranged with the Director at least four weeks ahead.",
+      "season_year": 2027,
+      "sessions": [
+        {
+          "name": "Introductory (ages 10 to 12)",
+          "start_date": "2027-06-20",
+          "end_date": "2027-06-25",
+          "availability": "unknown"
+        },
+        {
+          "name": "Intermediate 1 (ages 12 to 14)",
+          "start_date": "2027-06-27",
+          "end_date": "2027-07-09",
+          "availability": "unknown"
+        },
+        {
+          "name": "Advanced 1 (ages 15 to 18)",
+          "start_date": "2027-07-11",
+          "end_date": "2027-07-23",
+          "availability": "unknown"
+        },
+        {
+          "name": "Advanced 2 (ages 15 to 18)",
+          "start_date": "2027-07-25",
+          "end_date": "2027-08-06",
+          "availability": "unknown"
+        },
+        {
+          "name": "Intermediate 2 (ages 12 to 14)",
+          "start_date": "2027-08-08",
+          "end_date": "2027-08-20",
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://acadiainstitute.com/",
+          "checked": "2026-11-25",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "registration_url",
+            "camp_type",
+            "primary_categories",
+            "secondary_categories",
+            "description_short",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        },
+        {
+          "url": "https://acadiainstitute.com/introductory-marine-science-camp-program/",
+          "checked": "2026-11-25",
+          "fields": [
+            "price_min",
+            "price_per"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        },
+        {
+          "url": "https://acadiainstitute.com/intermediate-marine-science-camp-program/",
+          "checked": "2026-11-25",
+          "fields": [
+            "price_max",
+            "activities"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        },
+        {
+          "url": "https://acadiainstitute.com/faqs/",
+          "checked": "2026-11-25",
+          "fields": [
+            "gender_policy",
+            "age_min",
+            "age_max",
+            "grade_min",
+            "grade_max",
+            "meals_included",
+            "transportation",
+            "refund_policy_summary",
+            "special_needs_notes"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        },
+        {
+          "url": "https://acadiainstitute.com/contact/",
+          "checked": "2026-11-25",
+          "fields": [
+            "email",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        }
+      ]
+    },
+    {
+      "slug": "acadia-mountain-guides-adventure-day-camps-bar-harbor",
+      "name": "Acadia Mountain Guides Adventure Day Camps",
+      "operator_name": "Acadia Mountain Guides Climbing School",
+      "website_url": "https://www.climbacadia.org/",
+      "registration_url": "https://www.climbacadia.org/booknow",
+      "email": "climb@acadiamountainguides.com",
+      "phone": "207-288-8186",
+      "street_address": "228 Main Street",
+      "city": "Bar Harbor",
+      "state": "ME",
+      "camp_type": "specialty",
+      "age_min": 6,
+      "age_max": 13,
+      "primary_categories": [
+        "adventure"
+      ],
+      "secondary_categories": [
+        "outdoor",
+        "nature"
+      ],
+      "activities": [
+        "rock climbing",
+        "rappelling",
+        "hiking",
+        "swimming",
+        "canoeing",
+        "rope bridge",
+        "knot tying",
+        "caving",
+        "tide pooling"
+      ],
+      "description_short": "Week long outdoor adventure day camps in Acadia National Park run by a climbing school. Mountain Monkeys (ages 6 to 9) and Young Explorers (ages 9 to 13) climb, rappel, hike Acadia's peaks, swim and canoe in small guided groups, with drop off in Bar Harbor, Ellsworth or Bangor.",
+      "indoor_outdoor": "outdoor",
+      "price_min": 350,
+      "price_per": "session",
+      "transportation": true,
+      "financial_aid": true,
+      "notes": "Small groups of 4 to 10. Drop off and pick up at the Bar Harbor shop (9:30 am to 3:30 pm), Ellsworth (8:45 am to 4:30 pm) or Alpenglow Adventure Sports, 753 Stillwater Ave, Bangor (7:30 am to 5:30 pm). Young Explorers is listed 'from $350'. The same school runs overnight teen climbing camps (RockPro series, multisport), not included here.",
+      "season_year": 2027,
+      "sessions": [
+        {
+          "name": "Mountain Monkeys (ages 6 to 9)",
+          "start_date": "2027-06-21",
+          "end_date": "2027-06-25",
+          "price": 350,
+          "availability": "unknown"
+        },
+        {
+          "name": "Young Explorers (ages 9 to 13)",
+          "start_date": "2027-06-21",
+          "end_date": "2027-06-25",
+          "price": 350,
+          "availability": "unknown"
+        },
+        {
+          "name": "Mountain Monkeys (ages 6 to 9)",
+          "start_date": "2027-06-28",
+          "end_date": "2027-07-02",
+          "price": 350,
+          "availability": "unknown"
+        },
+        {
+          "name": "Young Explorers (ages 9 to 13)",
+          "start_date": "2027-07-05",
+          "end_date": "2027-07-09",
+          "price": 350,
+          "availability": "unknown"
+        },
+        {
+          "name": "Mountain Monkeys (ages 6 to 9)",
+          "start_date": "2027-07-12",
+          "end_date": "2027-07-16",
+          "price": 350,
+          "availability": "unknown"
+        },
+        {
+          "name": "Young Explorers (ages 9 to 13)",
+          "start_date": "2027-07-19",
+          "end_date": "2027-07-23",
+          "price": 350,
+          "availability": "unknown"
+        },
+        {
+          "name": "Mountain Monkeys (ages 6 to 9)",
+          "start_date": "2027-08-02",
+          "end_date": "2027-08-06",
+          "price": 350,
+          "availability": "unknown"
+        },
+        {
+          "name": "Young Explorers (ages 9 to 13)",
+          "start_date": "2027-08-02",
+          "end_date": "2027-08-06",
+          "price": 350,
+          "availability": "unknown"
+        },
+        {
+          "name": "Mountain Monkeys (ages 6 to 9)",
+          "start_date": "2027-08-16",
+          "end_date": "2027-08-20",
+          "price": 350,
+          "availability": "unknown"
+        },
+        {
+          "name": "Young Explorers (ages 9 to 13)",
+          "start_date": "2027-08-16",
+          "end_date": "2027-08-20",
+          "price": 350,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.climbacadia.org/",
+          "checked": "2026-11-25",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "registration_url",
+            "age_min",
+            "age_max",
+            "camp_type",
+            "primary_categories",
+            "secondary_categories",
+            "activities",
+            "description_short",
+            "indoor_outdoor",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-22, approved by Andrew Krensky"
+        },
+        {
+          "url": "https://www.climbacadia.org/rates-financial-aid",
+          "checked": "2026-11-25",
+          "fields": [
+            "price_min",
+            "price_per",
+            "financial_aid",
+            "email"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-22, approved by Andrew Krensky"
+        },
+        {
+          "url": "https://www.climbacadia.org/locations",
+          "checked": "2026-11-25",
+          "fields": [
+            "street_address",
+            "city",
+            "state",
+            "phone",
+            "transportation"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-22, approved by Andrew Krensky"
+        },
+        {
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=228+Main+Street%2C+Bar+Harbor%2C+ME&benchmark=Public_AR_Current&format=json",
+          "checked": "2026-11-25",
+          "fields": [
+            "zip"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-22, approved by Andrew Krensky"
+        }
+      ],
+      "zip": "04609"
+    },
+    {
+      "slug": "bowdoin-summer-art-camp-brunswick",
+      "name": "Bowdoin Summer Art Camp",
+      "operator_name": "Bowdoin College",
+      "website_url": "https://www.bowdoin.edu/events/art-camp/index.html",
+      "email": "artcamp@bowdoin.edu",
+      "street_address": "14 South Street",
+      "city": "Brunswick",
+      "state": "ME",
+      "zip": "04011",
+      "camp_type": "specialty",
+      "age_min": 6,
+      "age_max": 13,
+      "primary_categories": [
+        "arts"
+      ],
+      "secondary_categories": [],
+      "description_short": "Week long art day camp at Bowdoin College in Brunswick for ages 6 to 13, grouped 6 to 7, 8 to 10 and 11 to 13. Each day has a morning and an afternoon studio class led by working artists, in media such as collage, painting, cardboard, fabric, puppets, weaving and wood, ending with a Friday art show.",
+      "activities": [
+        "painting",
+        "collage",
+        "cardboard building",
+        "shadow puppets",
+        "fabric art",
+        "weaving",
+        "sculpture",
+        "woodworking",
+        "string art"
+      ],
+      "price_per_week": 400,
+      "price_min": 400,
+      "price_per": "week",
+      "meals_included": false,
+      "season_year": 2026,
+      "sessions": [
+        {
+          "name": "Week 1",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "price": 400,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 2",
+          "start_date": "2026-07-13",
+          "end_date": "2026-07-17",
+          "price": 400,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 3",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "price": 400,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 4",
+          "start_date": "2026-07-27",
+          "end_date": "2026-07-31",
+          "price": 400,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.bowdoin.edu/events/art-camp/index.html",
+          "checked": "2026-11-25",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "email",
+            "camp_type",
+            "age_min",
+            "age_max",
+            "primary_categories",
+            "description_short",
+            "activities",
+            "price_per_week",
+            "price_min",
+            "price_per",
+            "meals_included",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        },
+        {
+          "url": "https://www.bowdoin.edu/events/art-camp/art-camp-summer-handbook-2026.pdf",
+          "checked": "2026-11-25",
+          "fields": [
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "extended_care",
+            "refund_policy_summary",
+            "indoor_outdoor"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        }
+      ],
+      "refund_policy_summary": "Full refund if Bowdoin cancels or if a family withdraws before camp starts; no partial or prorated refunds and none once camp starts.",
+      "extended_care": false,
+      "indoor_outdoor": "both"
+    },
+    {
+      "slug": "camp-crescent-cove-raymond",
+      "name": "Camp Crescent Cove",
+      "operator_name": "Camp Crescent Cove",
+      "website_url": "https://campcrescentcove.com/dates-tuition/",
+      "registration_url": "https://campcrescentcove.campintouch.com/ui/forms/application/camper/App",
+      "email": "info@campcrescentcove.com",
+      "phone": "207-770-5540",
+      "street_address": "198 Raymond Hill Road",
+      "city": "Raymond",
+      "state": "ME",
+      "zip": "04071",
+      "camp_type": "sleepaway",
+      "gender_policy": "coed",
+      "age_min": 7,
+      "age_max": 16,
+      "primary_categories": [
+        "general"
+      ],
+      "secondary_categories": [
+        "swimming",
+        "sailing",
+        "sports",
+        "arts",
+        "performing_arts",
+        "adventure"
+      ],
+      "activities": [
+        "canoe and kayak",
+        "fishing",
+        "sailing",
+        "stand up paddleboarding",
+        "tubing",
+        "wakeboarding",
+        "waterskiing",
+        "windsurfing",
+        "athletics",
+        "golf",
+        "tennis",
+        "arts and crafts",
+        "pottery",
+        "culinary arts",
+        "photography",
+        "woodworking",
+        "animal care",
+        "climbing",
+        "trips",
+        "horseback riding",
+        "dance",
+        "music",
+        "theater"
+      ],
+      "description_short": "Coed overnight camp in Raymond, Maine, for boys and girls ages 7 to 16, with two week and three and a half week sessions. Campers choose from water sports, land sports, arts, performing arts, climbing, riding and trips, and current 10th graders can join the Summit leadership program.",
+      "price_min": 6200,
+      "price_max": 9300,
+      "price_per": "session",
+      "season_year": 2027,
+      "sessions": [
+        {
+          "name": "1st Session, 2 weeks",
+          "start_date": "2027-06-26",
+          "end_date": "2027-07-10",
+          "price": 6200,
+          "availability": "unknown"
+        },
+        {
+          "name": "1st Session, 3.5 weeks",
+          "start_date": "2027-06-26",
+          "end_date": "2027-07-20",
+          "price": 9300,
+          "availability": "unknown"
+        },
+        {
+          "name": "2nd Session, 2 weeks",
+          "start_date": "2027-07-23",
+          "end_date": "2027-08-06",
+          "price": 6200,
+          "availability": "unknown"
+        },
+        {
+          "name": "2nd Session, 3.5 weeks",
+          "start_date": "2027-07-23",
+          "end_date": "2027-08-15",
+          "price": 9300,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://campcrescentcove.com/dates-tuition/",
+          "checked": "2026-11-25",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "registration_url",
+            "email",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "gender_policy",
+            "age_min",
+            "age_max",
+            "primary_categories",
+            "secondary_categories",
+            "activities",
+            "description_short",
+            "price_min",
+            "price_max",
+            "price_per",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        }
+      ]
+    },
+    {
+      "slug": "camp-neofa-montville",
+      "name": "Camp NEOFA",
+      "operator_name": "Northeast Odd Fellows' Association",
+      "website_url": "https://www.campneofa.me/",
+      "registration_url": "https://www.campneofa.me/apply",
+      "phone": "(207) 589-4133",
+      "street_address": "213 North Trotting Park Road",
+      "city": "Montville",
+      "state": "ME",
+      "camp_type": "sleepaway",
+      "primary_categories": [
+        "general",
+        "outdoor"
+      ],
+      "secondary_categories": [
+        "nature",
+        "swimming",
+        "sports",
+        "arts"
+      ],
+      "activities": [
+        "swimming",
+        "canoeing",
+        "kayaking",
+        "archery",
+        "fishing",
+        "arts and crafts",
+        "volleyball",
+        "field sports",
+        "hiking",
+        "nature",
+        "camp paper",
+        "talent show",
+        "dances",
+        "campfires"
+      ],
+      "gender_policy": "coed",
+      "age_min": 8,
+      "age_max": 14,
+      "description_short": "Coed overnight camp on Trues Pond in Montville, run by the Northeast Odd Fellows' Association for four one week sessions, Sunday noon to Saturday noon. Campers swim, canoe, kayak, fish, try archery, crafts and field sports, with themed evening events; a day camp option is also offered.",
+      "indoor_outdoor": "outdoor",
+      "price_per_week": 450,
+      "price_min": 300,
+      "price_max": 450,
+      "price_per": "week",
+      "refund_policy_summary": "A $75 deposit must come with the application; it is transferable but not refundable.",
+      "season_year": 2026,
+      "sessions": [
+        {
+          "name": "Week 1 (overnight; ages 7 also accepted)",
+          "start_date": "2026-06-28",
+          "end_date": "2026-07-04",
+          "price": 450,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 2 (overnight; ages 7 also accepted)",
+          "start_date": "2026-07-05",
+          "end_date": "2026-07-11",
+          "price": 450,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 3 (overnight)",
+          "start_date": "2026-07-12",
+          "end_date": "2026-07-18",
+          "price": 450,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 4 (overnight)",
+          "start_date": "2026-07-19",
+          "end_date": "2026-07-25",
+          "price": 450,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.campneofa.me/",
+          "checked": "2026-11-25",
+          "fields": [
+            "name",
+            "website_url",
+            "camp_type",
+            "primary_categories",
+            "secondary_categories",
+            "activities",
+            "gender_policy",
+            "indoor_outdoor",
+            "description_short"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-22, approved by Andrew Krensky"
+        },
+        {
+          "url": "https://www.campneofa.me/directions",
+          "checked": "2026-11-25",
+          "fields": [
+            "phone",
+            "street_address",
+            "city",
+            "state"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-22, approved by Andrew Krensky"
+        },
+        {
+          "url": "https://www.campneofa.me/apply",
+          "checked": "2026-11-25",
+          "fields": [
+            "registration_url"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-22, approved by Andrew Krensky"
+        },
+        {
+          "url": "https://www.campneofa.me/s/2026-Camper-Application-2.pdf",
+          "checked": "2026-11-25",
+          "fields": [
+            "operator_name",
+            "age_min",
+            "age_max",
+            "price_per_week",
+            "price_min",
+            "price_max",
+            "price_per",
+            "refund_policy_summary",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-22, approved by Andrew Krensky"
+        },
+        {
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=213+North+Trotting+Park+Road%2C+Montville%2C+ME&benchmark=Public_AR_Current&format=json",
+          "checked": "2026-11-25",
+          "fields": [
+            "zip"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-22, approved by Andrew Krensky"
+        }
+      ],
+      "zip": "04941"
+    },
+    {
+      "slug": "camp-skylemar-naples",
+      "name": "Camp Skylemar",
+      "website_url": "https://campskylemar.com/",
+      "registration_url": "https://campskylemar.com/enroll/",
+      "email": "info@skylemar.com",
+      "phone": "(207) 693-6414",
+      "street_address": "457 Sebago Road",
+      "city": "Naples",
+      "state": "ME",
+      "zip": "04055",
+      "camp_type": "sleepaway",
+      "primary_categories": [
+        "sports"
+      ],
+      "secondary_categories": [
+        "swimming",
+        "sailing",
+        "adventure",
+        "arts"
+      ],
+      "activities": [
+        "swimming",
+        "soccer",
+        "lacrosse",
+        "baseball",
+        "golf",
+        "tennis",
+        "waterskiing",
+        "archery",
+        "football",
+        "sailing",
+        "kayaking",
+        "canoeing",
+        "basketball",
+        "hockey",
+        "challenge course",
+        "outdoor education",
+        "trips",
+        "color war"
+      ],
+      "gender_policy": "boys",
+      "age_min": 7,
+      "age_max": 15,
+      "description_short": "Overnight camp for boys ages 7 to 15 on Trickey Pond in Naples, Maine. Days center on land and water sports with private instruction, plus a ropes course, arts, woodshop and trips.",
+      "swim_waterfront_notes": "On Trickey Pond, about three miles long. The camp lists swimming, waterskiing, wakeboarding, tubing, sailing, canoeing, kayaking, paddleboarding, snorkeling and fishing.",
+      "price_min": 12850,
+      "price_max": 18500,
+      "price_per": "session",
+      "transportation": true,
+      "season_year": 2027,
+      "sessions": [
+        {
+          "name": "Full Season",
+          "start_date": "2027-06-26",
+          "end_date": "2027-08-07",
+          "price": 18500,
+          "availability": "unknown"
+        },
+        {
+          "name": "1st Session",
+          "start_date": "2027-06-26",
+          "end_date": "2027-07-16",
+          "price": 12850,
+          "availability": "unknown"
+        },
+        {
+          "name": "2nd Session",
+          "start_date": "2027-07-18",
+          "end_date": "2027-08-07",
+          "price": 12850,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://campskylemar.com/about-camp/enrollment/",
+          "checked": "2026-11-25",
+          "fields": [
+            "name",
+            "website_url",
+            "registration_url",
+            "email",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "price_min",
+            "price_max",
+            "price_per",
+            "transportation",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        },
+        {
+          "url": "https://campskylemar.com/about-camp/",
+          "checked": "2026-11-25",
+          "fields": [
+            "camp_type",
+            "gender_policy",
+            "age_min",
+            "age_max",
+            "primary_categories",
+            "description_short"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        },
+        {
+          "url": "https://campskylemar.com/about-camp/facilities/",
+          "checked": "2026-11-25",
+          "fields": [
+            "swim_waterfront_notes"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        },
+        {
+          "url": "https://campskylemar.com/about-camp/activities/",
+          "checked": "2026-11-25",
+          "fields": [
+            "activities",
+            "secondary_categories"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        }
+      ]
+    },
+    {
+      "slug": "camp-somerset-for-girls-smithfield",
+      "name": "Camp Somerset for Girls",
+      "operator_name": "Camp Somerset",
+      "website_url": "https://somersetforgirls.com/",
+      "registration_url": "https://somerset.campintouch.com/ui/forms/application/camper/App",
+      "phone": "617-744-3385",
+      "street_address": "11 Somerset Lane",
+      "city": "Smithfield",
+      "state": "ME",
+      "zip": "04978",
+      "camp_type": "sleepaway",
+      "gender_policy": "girls",
+      "primary_categories": [
+        "general"
+      ],
+      "secondary_categories": [
+        "sports",
+        "arts",
+        "swimming"
+      ],
+      "activities": [
+        "swimming",
+        "sailing",
+        "kayaking",
+        "canoeing",
+        "fishing",
+        "waterskiing",
+        "wakeboarding",
+        "gymnastics",
+        "yoga",
+        "martial arts",
+        "cycling"
+      ],
+      "description_short": "Overnight camp for girls on 50 acres along East Pond in Smithfield, in the Belgrade Lakes region. Girls who have finished grades 3 to 9 live in cabins by age, with a large waterfront for sailing, waterskiing and paddling and a gym for gymnastics, in a seven week or three and a half week session.",
+      "meals_included": true,
+      "swim_waterfront_notes": "2,000 feet of waterfront on East Pond with swimming, sailing, kayaking, canoeing, fishing and a waterski and wakeboard program.",
+      "price_min": 10800,
+      "price_max": 17900,
+      "price_per": "session",
+      "notes": "Full Somer $17,900 (deposit $3,500); Half Somer $10,800 (deposit $2,500). Discounts for sisters, Camp Manitou siblings, referrals and alumni families. Brother camp is Camp Manitou; the same team runs Camp Eastwood for younger campers.",
+      "season_year": 2027,
+      "sessions": [
+        {
+          "name": "Full Somer",
+          "start_date": "2027-06-24",
+          "end_date": "2027-08-10",
+          "price": 17900,
+          "availability": "unknown"
+        },
+        {
+          "name": "Half Somer, first half",
+          "start_date": "2027-06-24",
+          "end_date": "2027-07-16",
+          "price": 10800,
+          "availability": "unknown"
+        },
+        {
+          "name": "Half Somer, second half",
+          "start_date": "2027-07-19",
+          "end_date": "2027-08-10",
+          "price": 10800,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://somersetforgirls.com/dates-rates",
+          "checked": "2026-11-25",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "registration_url",
+            "phone",
+            "camp_type",
+            "gender_policy",
+            "primary_categories",
+            "secondary_categories",
+            "price_min",
+            "price_max",
+            "price_per",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-22, approved by Andrew Krensky"
+        },
+        {
+          "url": "https://somersetforgirls.com/about/location-facilities",
+          "checked": "2026-11-25",
+          "fields": [
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "activities",
+            "description_short",
+            "meals_included",
+            "swim_waterfront_notes"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-22, approved by Andrew Krensky"
+        }
+      ]
+    },
+    {
+      "slug": "chop-point-woolwich",
+      "name": "Chop Point",
+      "operator_name": "Chop Point, Inc.",
+      "website_url": "https://choppointcamp.org/",
+      "registration_url": "https://choppointcamp.org/enroll/",
+      "phone": "207-443-5860",
+      "street_address": "420 Chop Point Road",
+      "city": "Woolwich",
+      "state": "ME",
+      "zip": "04579",
+      "camp_type": "sleepaway",
+      "age_min": 12,
+      "age_max": 18,
+      "primary_categories": [
+        "general"
+      ],
+      "secondary_categories": [
+        "adventure",
+        "sailing",
+        "faith"
+      ],
+      "activities": [
+        "tennis",
+        "basketball",
+        "soccer",
+        "kayaking",
+        "sailing",
+        "windsurfing",
+        "surfing",
+        "hiking",
+        "biking",
+        "swimming",
+        "photography",
+        "art",
+        "music",
+        "adventure trips"
+      ],
+      "description_short": "Overnight camp for teenagers ages 12 to 18 in Woolwich, Maine, run by a Christian nonprofit since 1967. Campers set their own daily schedule from sports, sailing, windsurfing, kayaking, art and music, choose one to five day trips each session, and leave devices at home.",
+      "religious_affiliation": "Christian",
+      "price_min": 2800,
+      "price_max": 5000,
+      "price_per": "session",
+      "financial_aid": true,
+      "transportation": true,
+      "refund_policy_summary": "A $500 deposit is required and is not refundable; the balance is due two weeks before arrival. No refund for early withdrawal, cancellation or dismissal.",
+      "notes": "Three week sessions at $2,800, or the full six weeks for $5,000. Staff transport campers to and from the Portland Jetport on opening and closing days at no charge. Rough dry laundry included. Partial scholarships up to $500 per session.",
+      "season_year": 2027,
+      "sessions": [
+        {
+          "name": "1st Session",
+          "start_date": "2027-06-25",
+          "end_date": "2027-07-15",
+          "price": 2800,
+          "availability": "unknown"
+        },
+        {
+          "name": "2nd Session",
+          "start_date": "2027-07-16",
+          "end_date": "2027-08-05",
+          "price": 2800,
+          "availability": "unknown"
+        },
+        {
+          "name": "Full Session",
+          "start_date": "2027-06-25",
+          "end_date": "2027-08-05",
+          "price": 5000,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://choppointcamp.org/",
+          "checked": "2026-11-25",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "primary_categories",
+            "secondary_categories",
+            "activities",
+            "description_short"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-22, approved by Andrew Krensky"
+        },
+        {
+          "url": "https://choppointcamp.org/enroll/",
+          "checked": "2026-11-25",
+          "fields": [
+            "registration_url",
+            "age_min",
+            "age_max",
+            "price_min",
+            "price_max",
+            "price_per",
+            "transportation",
+            "refund_policy_summary",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-22, approved by Andrew Krensky"
+        },
+        {
+          "url": "https://choppointcamp.org/about/",
+          "checked": "2026-11-25",
+          "fields": [
+            "religious_affiliation"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-22, approved by Andrew Krensky"
+        },
+        {
+          "url": "https://choppointcamp.org/enroll/financial-aid/",
+          "checked": "2026-11-25",
+          "fields": [
+            "financial_aid"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-22, approved by Andrew Krensky"
+        }
+      ]
+    },
+    {
+      "slug": "clipper-day-camp-yarmouth",
+      "name": "Clipper Day Camp",
+      "operator_name": "Yarmouth Community Services",
+      "website_url": "https://www.yarmouthcommunityservices.org/summer-camps",
+      "registration_url": "https://yarmouthme.myrec.com/info/default.aspx",
+      "phone": "(207) 846-2406",
+      "city": "Yarmouth",
+      "state": "ME",
+      "zip": "04096",
+      "camp_type": "day",
+      "primary_categories": [
+        "general"
+      ],
+      "secondary_categories": [
+        "sports",
+        "arts",
+        "swimming"
+      ],
+      "grade_min": 0,
+      "grade_max": 5,
+      "age_min": 5,
+      "age_max": 11,
+      "description_short": "Town day camp in Yarmouth for kids entering kindergarten to grade 5. Grades K and 1 meet at Rowe School and grades 2 to 5 at Yarmouth Elementary School, with gym and outdoor games, crafts, pool days and weekly field trips.",
+      "activities": [
+        "gym games",
+        "arts and crafts",
+        "outdoor games",
+        "swimming at Greely Pool",
+        "field trips"
+      ],
+      "season_year": 2026,
+      "sources": [
+        {
+          "url": "https://www.yarmouthcommunityservices.org/summer-camps",
+          "checked": "2026-11-25",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "registration_url",
+            "grade_min",
+            "grade_max",
+            "age_min",
+            "age_max",
+            "primary_categories",
+            "secondary_categories"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        },
+        {
+          "url": "https://www.yarmouthcommunityservices.org/_files/ugd/6ae268_7d4c8bfe04324721af45421a4bf4c87e.pdf",
+          "checked": "2026-11-25",
+          "fields": [
+            "phone",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "extended_care",
+            "description_short",
+            "activities"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        },
+        {
+          "url": "https://www.yarmouthcommunityservices.org/_files/ugd/6ae268_2aca70b97f7744e0b0ee231d3defb005.pdf",
+          "checked": "2026-11-25",
+          "fields": [
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        }
+      ],
+      "extended_care": true,
+      "sessions": [
+        {
+          "name": "Summer 2026, weekly (no camp July 3; half day July 17)",
+          "start_date": "2026-06-22",
+          "end_date": "2026-08-14",
+          "price": null,
+          "availability": "unknown"
+        }
+      ]
+    },
+    {
+      "slug": "fernwood-cove-harrison",
+      "name": "Fernwood Cove",
+      "operator_name": "Fernwood Cove",
+      "website_url": "https://www.fernwoodcove.com/",
+      "email": "cove@fernwoodcove.com",
+      "phone": "207-583-2381",
+      "street_address": "350 Island Pond Road",
+      "city": "Harrison",
+      "state": "ME",
+      "zip": "04040",
+      "camp_type": "sleepaway",
+      "gender_policy": "girls",
+      "primary_categories": [
+        "general"
+      ],
+      "secondary_categories": [
+        "swimming",
+        "arts",
+        "performing_arts",
+        "outdoor",
+        "sports"
+      ],
+      "activities": [
+        "athletics and fitness",
+        "creative arts",
+        "outdoor adventure",
+        "performing arts",
+        "studio arts",
+        "waterfront",
+        "natural horsemanship and agriculture"
+      ],
+      "description_short": "Traditional overnight camp for girls on Island Pond in Harrison, Maine, about an hour from Portland. Each girl attends one half summer session and builds her own schedule from more than 60 activities in sports, arts, outdoor adventure, waterfront and horsemanship.",
+      "price_min": 6750,
+      "price_max": 10400,
+      "price_per": "session",
+      "transportation": true,
+      "meals_included": true,
+      "swim_waterfront_notes": "Camp sits on Island Pond. Campers take one week of instructional swimming each session until they have finished 7th grade and reached Red Cross swim level 6.",
+      "season_year": 2027,
+      "sessions": [
+        {
+          "name": "Session I",
+          "start_date": "2027-06-24",
+          "end_date": "2027-07-18",
+          "price": 10400,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session II",
+          "start_date": "2027-07-22",
+          "end_date": "2027-08-15",
+          "price": 10400,
+          "availability": "unknown"
+        },
+        {
+          "name": "Rookie Camp Session 1 (just finished grades 1 to 3)",
+          "start_date": "2027-06-24",
+          "end_date": "2027-07-09",
+          "price": 6750,
+          "availability": "unknown"
+        },
+        {
+          "name": "Rookie Camp Session 2 (just finished grades 1 to 3)",
+          "start_date": "2027-07-22",
+          "end_date": "2027-08-06",
+          "price": 6750,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.fernwoodcove.com/",
+          "checked": "2026-11-25",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "email",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "gender_policy"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        },
+        {
+          "url": "https://www.fernwoodcove.com/about/dates-and-tuition/",
+          "checked": "2026-11-25",
+          "fields": [
+            "price_min",
+            "price_max",
+            "price_per",
+            "transportation",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        },
+        {
+          "url": "https://www.fernwoodcove.com/about/faqs/",
+          "checked": "2026-11-25",
+          "fields": [
+            "description_short",
+            "meals_included",
+            "swim_waterfront_notes"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        },
+        {
+          "url": "https://www.fernwoodcove.com/about/activities/",
+          "checked": "2026-11-25",
+          "fields": [
+            "activities",
+            "primary_categories",
+            "secondary_categories"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        }
+      ]
+    },
+    {
+      "slug": "gander-brook-christian-camp-raymond",
+      "name": "Gander Brook Christian Camp",
+      "operator_name": "Gander Brook Christian Camp",
+      "website_url": "https://ganderbrook.org/summer-camp/",
+      "registration_url": "https://app.campdoc.com/!/dn/login?r=gander",
+      "email": "info@ganderbrook.org",
+      "phone": "207-998-4369",
+      "street_address": "27 Ganderbrook Lane",
+      "city": "Raymond",
+      "state": "ME",
+      "zip": "04071",
+      "camp_type": "sleepaway",
+      "gender_policy": "coed",
+      "religious_affiliation": "Christian",
+      "age_min": 8,
+      "age_max": 18,
+      "primary_categories": [
+        "general",
+        "faith"
+      ],
+      "secondary_categories": [
+        "outdoor",
+        "sports",
+        "swimming"
+      ],
+      "description_short": "Christian overnight camp in the woods of Raymond, Maine, open to children of all backgrounds, with Saturday to Saturday weeks for ages 8 to 18. Days mix sports, swimming, canoeing, climbing and camping out with Bible classes and devotions, and phones stay at home. A weekday day camp for ages 8 to 13 is also offered.",
+      "activities": [
+        "carpet ball",
+        "cookouts",
+        "flag football",
+        "basketball",
+        "four square",
+        "ping pong",
+        "camping under the stars",
+        "paintball",
+        "skit nights",
+        "softball",
+        "soccer",
+        "ultimate frisbee",
+        "volleyball",
+        "drama",
+        "arts and crafts",
+        "swimming",
+        "canoeing",
+        "hiking",
+        "kayaking",
+        "air rifles",
+        "archery",
+        "bible classes",
+        "ropes course",
+        "climbing wall",
+        "singing",
+        "fishing"
+      ],
+      "price_per_week": 550,
+      "price_min": 550,
+      "price_max": 850,
+      "price_per": "week",
+      "financial_aid": true,
+      "season_year": 2027,
+      "sessions": [
+        {
+          "name": "Week 1",
+          "start_date": "2027-06-26",
+          "end_date": "2027-07-03",
+          "price": 550,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 2",
+          "start_date": "2027-07-03",
+          "end_date": "2027-07-10",
+          "price": 550,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 3",
+          "start_date": "2027-07-10",
+          "end_date": "2027-07-17",
+          "price": 550,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 4",
+          "start_date": "2027-07-17",
+          "end_date": "2027-07-24",
+          "price": 550,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 5",
+          "start_date": "2027-07-24",
+          "end_date": "2027-07-31",
+          "price": 550,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 6",
+          "start_date": "2027-07-31",
+          "end_date": "2027-08-07",
+          "price": 550,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://ganderbrook.org/summer-camp/",
+          "checked": "2026-11-25",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "registration_url",
+            "email",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "gender_policy",
+            "religious_affiliation",
+            "age_min",
+            "age_max",
+            "primary_categories",
+            "secondary_categories",
+            "description_short",
+            "price_per_week",
+            "price_min",
+            "price_max",
+            "price_per",
+            "financial_aid",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        },
+        {
+          "url": "https://ganderbrook.org/activities",
+          "checked": "2026-11-25",
+          "fields": [
+            "activities"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        }
+      ]
+    },
+    {
+      "slug": "get-out-and-go-camp-yarmouth",
+      "name": "Get Out and Go Camp",
+      "operator_name": "Yarmouth Community Services",
+      "website_url": "https://www.yarmouthcommunityservices.org/summer-camps",
+      "registration_url": "https://yarmouthme.myrec.com/info/default.aspx",
+      "phone": "(207) 846-2406",
+      "city": "Yarmouth",
+      "state": "ME",
+      "zip": "04096",
+      "camp_type": "day",
+      "primary_categories": [
+        "outdoor",
+        "adventure"
+      ],
+      "secondary_categories": [
+        "swimming",
+        "nature"
+      ],
+      "grade_min": 6,
+      "grade_max": 8,
+      "age_min": 11,
+      "age_max": 14,
+      "description_short": "Town trip camp in Yarmouth for kids in grades 6 to 8. Each day, Monday to Thursday, the group leaves from Harrison Middle School for a full day out: beaches, lakes, hikes, a canoe trip, a ropes course and water parks.",
+      "activities": [
+        "beach trips",
+        "lake trips",
+        "hiking",
+        "canoeing",
+        "ropes course",
+        "river tubing",
+        "water parks",
+        "amusement park"
+      ],
+      "season_year": 2026,
+      "sessions": [
+        {
+          "name": "Summer 2026, 5 weeks, Monday to Thursday",
+          "start_date": "2026-06-29",
+          "end_date": "2026-07-30",
+          "price": null,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.yarmouthcommunityservices.org/summer-camps",
+          "checked": "2026-11-25",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "registration_url",
+            "grade_min",
+            "grade_max",
+            "age_min",
+            "age_max"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        },
+        {
+          "url": "https://www.yarmouthcommunityservices.org/_files/ugd/6ae268_dcf1c79baf7c4f82ba8ade1d54bc1417.pdf",
+          "checked": "2026-11-25",
+          "fields": [
+            "phone",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "description_short",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        },
+        {
+          "url": "https://www.yarmouthcommunityservices.org/_files/ugd/6ae268_038616acbfd3487ba8bb8d78ef325fa9.pdf",
+          "checked": "2026-11-25",
+          "fields": [
+            "activities",
+            "primary_categories",
+            "secondary_categories"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        }
+      ]
+    },
+    {
+      "slug": "hart-to-hart-farm-day-camp-albion",
+      "name": "Hart-to-Hart Farm Day Camp",
+      "operator_name": "Hart to Hart Farm and Educational Center",
+      "website_url": "https://hart2hartfarm.org/seasonal-farm-camps/",
+      "registration_url": "https://hart2hartfarm.org/register/",
+      "email": "hart2hartfarm@gmail.com",
+      "phone": "207-437-2441",
+      "street_address": "16 Duck Pond Lane",
+      "city": "Albion",
+      "state": "ME",
+      "zip": "04910",
+      "camp_type": "day",
+      "age_min": 5,
+      "age_max": 14,
+      "primary_categories": [
+        "nature"
+      ],
+      "secondary_categories": [
+        "outdoor"
+      ],
+      "description_short": "Farm day camp on a family run organic dairy farm in Albion, Maine. Each week campers care for an adopted animal, do barn chores and farm projects, and follow a theme such as cooking with farm food, 1800s pioneer life or crafts, with a week just for 5 and 6 year olds.",
+      "activities": [
+        "animal care",
+        "barn chores",
+        "gardening",
+        "crafts",
+        "cooking",
+        "games",
+        "pioneer skills"
+      ],
+      "price_per_week": 425,
+      "price_min": 425,
+      "price_per": "week",
+      "financial_aid": true,
+      "refund_policy_summary": "Written notice two weeks before the session gets a full refund minus the $50 deposit; no refunds for missed days.",
+      "season_year": 2027,
+      "sessions": [
+        {
+          "name": "Down on the Farm I (ages 7 to 12)",
+          "start_date": "2027-06-14",
+          "end_date": "2027-06-18",
+          "price": 425,
+          "availability": "unknown"
+        },
+        {
+          "name": "Down on the Farm II (ages 7 to 12)",
+          "start_date": "2027-06-21",
+          "end_date": "2027-06-25",
+          "price": 425,
+          "availability": "unknown"
+        },
+        {
+          "name": "Down on the Farm III (ages 5 and 6 only)",
+          "start_date": "2027-06-28",
+          "end_date": "2027-07-02",
+          "price": 425,
+          "availability": "unknown"
+        },
+        {
+          "name": "Critters and Crafters (ages 7 to 12)",
+          "start_date": "2027-07-05",
+          "end_date": "2027-07-09",
+          "price": 425,
+          "availability": "unknown"
+        },
+        {
+          "name": "Pioneer Week (ages 7 to 12)",
+          "start_date": "2027-07-12",
+          "end_date": "2027-07-16",
+          "price": 425,
+          "availability": "unknown"
+        },
+        {
+          "name": "Farm Camp Junior Chef I (ages 7 to 12)",
+          "start_date": "2027-07-19",
+          "end_date": "2027-07-23",
+          "price": 425,
+          "availability": "unknown"
+        },
+        {
+          "name": "Farm Extravaganza (ages 11 to 14)",
+          "start_date": "2027-07-26",
+          "end_date": "2027-07-30",
+          "price": 425,
+          "availability": "unknown"
+        },
+        {
+          "name": "Down on the Farm IV (ages 7 to 12)",
+          "start_date": "2027-08-02",
+          "end_date": "2027-08-06",
+          "price": 425,
+          "availability": "unknown"
+        },
+        {
+          "name": "Farm Camp Junior Chef II (ages 7 to 12)",
+          "start_date": "2027-08-09",
+          "end_date": "2027-08-13",
+          "price": 425,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://hart2hartfarm.org/seasonal-farm-camps/",
+          "checked": "2026-11-25",
+          "fields": [
+            "operator_name",
+            "website_url",
+            "registration_url",
+            "email",
+            "phone",
+            "camp_type",
+            "primary_categories",
+            "secondary_categories",
+            "description_short",
+            "activities",
+            "price_per_week",
+            "price_min",
+            "price_per",
+            "financial_aid",
+            "refund_policy_summary",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        },
+        {
+          "url": "https://hart2hartfarm.org/wp-content/uploads/2026/10/2027-ColorCampbrochure.pdf",
+          "checked": "2026-11-25",
+          "fields": [
+            "name",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "age_min",
+            "age_max"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        }
+      ]
+    },
+    {
+      "slug": "kit-camp-at-camp-kerith-lyman",
+      "name": "Kit Camp at Camp Kerith",
+      "operator_name": "Berea",
+      "website_url": "https://www.kerith.camp/daycamp",
+      "registration_url": "https://kerith.campbrainregistration.com/",
+      "email": "office@berea.org",
+      "phone": "603-744-6344",
+      "street_address": "67 Cedarbrook Way",
+      "city": "Lyman",
+      "state": "ME",
+      "zip": "04002",
+      "camp_type": "day",
+      "religious_affiliation": "Christian",
+      "age_min": 5,
+      "age_max": 15,
+      "primary_categories": [
+        "general",
+        "faith"
+      ],
+      "secondary_categories": [
+        "outdoor",
+        "swimming"
+      ],
+      "activities": [
+        "arts and crafts",
+        "field games",
+        "tubing",
+        "swimming",
+        "target sports",
+        "canoeing",
+        "kayaking",
+        "riflery",
+        "archery",
+        "campfire worship"
+      ],
+      "description_short": "Christian summer day camp in Lyman, Maine, near I 95, for ages 5 to 15, Monday to Friday 7:45 am to 5:15 pm. Campers swim, canoe, kayak, go tubing, try archery and riflery, play field games and do crafts, with daily Bible teaching and worship.",
+      "price_per_week": 315,
+      "price_min": 300,
+      "price_max": 315,
+      "price_per": "week",
+      "extended_care": true,
+      "meals_included": false,
+      "financial_aid": true,
+      "season_year": 2027,
+      "sessions": [
+        {
+          "name": "Week 1",
+          "start_date": "2027-06-14",
+          "end_date": "2027-06-18",
+          "price": 315,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 2",
+          "start_date": "2027-06-21",
+          "end_date": "2027-06-25",
+          "price": 315,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 3",
+          "start_date": "2027-06-28",
+          "end_date": "2027-07-02",
+          "price": 315,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 4",
+          "start_date": "2027-07-05",
+          "end_date": "2027-07-09",
+          "price": 315,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 5",
+          "start_date": "2027-07-12",
+          "end_date": "2027-07-16",
+          "price": 315,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 6",
+          "start_date": "2027-07-19",
+          "end_date": "2027-07-23",
+          "price": 315,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 7",
+          "start_date": "2027-07-26",
+          "end_date": "2027-07-30",
+          "price": 315,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 8",
+          "start_date": "2027-08-02",
+          "end_date": "2027-08-06",
+          "price": 315,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 9",
+          "start_date": "2027-08-09",
+          "end_date": "2027-08-13",
+          "price": 315,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 10",
+          "start_date": "2027-08-16",
+          "end_date": "2027-08-20",
+          "price": 315,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.kerith.camp/daycamp",
+          "checked": "2026-11-25",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "registration_url",
+            "email",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "religious_affiliation",
+            "age_min",
+            "age_max",
+            "primary_categories",
+            "secondary_categories",
+            "activities",
+            "description_short",
+            "price_per_week",
+            "price_min",
+            "price_max",
+            "price_per",
+            "extended_care",
+            "meals_included",
+            "financial_aid",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        }
+      ]
+    },
+    {
+      "slug": "mariners-adventure-camp-bath",
+      "name": "Mariners Adventure Camp",
+      "operator_name": "Maine Maritime Museum",
+      "website_url": "https://www.mainemaritimemuseum.org/mariners-adventure",
+      "registration_url": "https://maritimeme.campbrainregistration.com/?returnUrl=%252FLanding",
+      "email": "camp@maritimeme.org",
+      "phone": "(207) 443-1316",
+      "street_address": "243 Washington St",
+      "city": "Bath",
+      "state": "ME",
+      "zip": "04530",
+      "camp_type": "day",
+      "primary_categories": [
+        "academic",
+        "sailing"
+      ],
+      "secondary_categories": [
+        "arts",
+        "leadership"
+      ],
+      "activities": [
+        "carpentry",
+        "blacksmithing",
+        "sailmaking",
+        "navigation",
+        "marlinspike seamanship",
+        "schooner sailing trip"
+      ],
+      "grade_min": 6,
+      "grade_max": 8,
+      "age_min": 11,
+      "age_max": 14,
+      "description_short": "A week-long day camp at the Maine Maritime Museum in Bath for students entering grades 6 to 8. Campers learn traditional ship trades such as carpentry, blacksmithing, sailmaking and navigation, and take a trip to Bailey Island to sail a schooner.",
+      "season_year": 2026,
+      "sessions": [
+        {
+          "name": "Session 1: Leading from the Helm (open to campers of underrepresented identities)",
+          "start_date": "2026-07-27",
+          "end_date": "2026-07-31",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 2: Makers and Mariners (listed as sold out)",
+          "start_date": "2026-08-03",
+          "end_date": "2026-08-07",
+          "price": null,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.mainemaritimemuseum.org/mariners-adventure",
+          "checked": "2026-11-25",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "registration_url",
+            "email",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "primary_categories",
+            "secondary_categories",
+            "activities",
+            "grade_min",
+            "grade_max",
+            "age_min",
+            "age_max",
+            "description_short",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        }
+      ]
+    },
+    {
+      "slug": "nature-day-camp-harpswell",
+      "name": "Nature Day Camp",
+      "operator_name": "Harpswell Heritage Land Trust",
+      "website_url": "https://hhltmaine.org/nature-day-camp/",
+      "registration_url": "https://portal.campnetwork.com/Register/Register.php?camp_id=399045",
+      "email": "info@hhltmaine.org",
+      "phone": "207-721-1121",
+      "city": "Harpswell",
+      "state": "ME",
+      "zip": "04079",
+      "camp_type": "day",
+      "age_min": 6,
+      "age_max": 12,
+      "primary_categories": [
+        "nature"
+      ],
+      "secondary_categories": [
+        "outdoor"
+      ],
+      "description_short": "Outdoor nature day camp run by the Harpswell Heritage Land Trust, using its preserves as the classroom. Two age groups, 6 to 8 and 9 to 12, spend weekly themed sessions exploring tide pools, salt marshes, shores and forests through games, crafts and hands on science.",
+      "activities": [
+        "tide pools",
+        "salt marsh exploration",
+        "hiking",
+        "nature crafts",
+        "science discovery",
+        "outdoor games"
+      ],
+      "indoor_outdoor": "outdoor",
+      "price_min": 275,
+      "price_max": 300,
+      "price_per": "week",
+      "extended_care": true,
+      "financial_aid": true,
+      "season_year": 2026,
+      "sessions": [
+        {
+          "name": "Week 1: Nature Detectives",
+          "start_date": "2026-06-29",
+          "end_date": "2026-07-03",
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 2: Sea-to-Forest Fun",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 3: Forest Friends",
+          "start_date": "2026-07-13",
+          "end_date": "2026-07-17",
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 4: Sea Coast Explorers",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 5: Harpswell Hikers",
+          "start_date": "2026-07-27",
+          "end_date": "2026-07-31",
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 6: Water World Adventures",
+          "start_date": "2026-08-03",
+          "end_date": "2026-08-07",
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://hhltmaine.org/nature-day-camp/",
+          "checked": "2026-11-25",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "registration_url",
+            "email",
+            "phone",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "age_min",
+            "age_max",
+            "primary_categories",
+            "secondary_categories",
+            "description_short",
+            "activities",
+            "indoor_outdoor",
+            "price_min",
+            "price_max",
+            "price_per",
+            "extended_care",
+            "financial_aid",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        }
+      ]
+    },
+    {
+      "slug": "nature-explorer-camp-with-kelt-and-brightfield-bath",
+      "name": "Nature Explorer Camp with KELT & Brightfield",
+      "operator_name": "Kennebec Estuary Land Trust",
+      "website_url": "https://www.kennebecestuary.org/upcoming-events/nature-day-camp-2026",
+      "registration_url": "https://brightfieldschool.org/summer-program/",
+      "phone": "207-442-8400",
+      "street_address": "340 Oak Grove Avenue",
+      "city": "Bath",
+      "state": "ME",
+      "zip": "04530",
+      "camp_type": "day",
+      "age_min": 6,
+      "age_max": 10,
+      "primary_categories": [
+        "nature"
+      ],
+      "secondary_categories": [
+        "outdoor",
+        "adventure"
+      ],
+      "description_short": "Nature day camp run by the Kennebec Estuary Land Trust with Brightfield School educators, based at Brightfield School in Bath. Campers ages 6 to 10 ride the school van to hike, paddleboard, dig clams, explore marshes and make nature art, ending the week with a beach day at Fort Popham.",
+      "activities": [
+        "hiking",
+        "paddleboarding",
+        "clamming",
+        "cooking chowder over a fire",
+        "beach day",
+        "nature art"
+      ],
+      "indoor_outdoor": "outdoor",
+      "price_per_week": 325,
+      "price_min": 325,
+      "price_per": "week",
+      "financial_aid": true,
+      "season_year": 2026,
+      "sessions": [
+        {
+          "name": "Week One",
+          "start_date": "2026-06-29",
+          "end_date": "2026-07-03",
+          "price": 325,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week Two",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "price": 325,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.kennebecestuary.org/upcoming-events/nature-day-camp-2026",
+          "checked": "2026-11-25",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "registration_url",
+            "phone",
+            "zip",
+            "camp_type",
+            "age_min",
+            "age_max",
+            "primary_categories",
+            "secondary_categories",
+            "description_short",
+            "activities",
+            "indoor_outdoor",
+            "price_per_week",
+            "price_min",
+            "price_per",
+            "financial_aid",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        },
+        {
+          "url": "https://www.kennebecestuary.org/summer-camp",
+          "checked": "2026-11-25",
+          "fields": [
+            "street_address",
+            "city",
+            "state"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        }
+      ]
+    },
+    {
+      "slug": "north-yarmouth-academy-summer-programs-yarmouth",
+      "name": "North Yarmouth Academy Summer Programs",
+      "operator_name": "North Yarmouth Academy",
+      "website_url": "https://www.nya.org/community-life/summer-programs",
+      "registration_url": "https://campscui.active.com/orgs/NorthYarmouthAcademy?orglink=camps-registration",
+      "phone": "207-846-9051",
+      "street_address": "148 Main St.",
+      "city": "Yarmouth",
+      "state": "ME",
+      "zip": "04096",
+      "camp_type": "day",
+      "age_min": 2,
+      "age_max": 16,
+      "primary_categories": [
+        "general"
+      ],
+      "secondary_categories": [
+        "arts",
+        "sports",
+        "STEM",
+        "nature",
+        "performing_arts"
+      ],
+      "description_short": "Weekly day camps on the North Yarmouth Academy campus in Yarmouth, Maine, for ages 2 to 16. Each week offers many separate programs, from toddler camps and general day camp to sports, arts, Lego, robotics, circus arts, farm and outdoor adventure camps, several run by partner groups.",
+      "refund_policy_summary": "The $50 deposit per session is never refunded. Full refund less deposit for cancellations 21 or more days before the start, 50 percent less deposit after that, and none within seven days. Partner camps are not refunded after June 1.",
+      "special_needs_notes": "Campers of differing abilities are welcome, but staff ratios do not allow constant one on one support; call the Director of Summer Programs to plan. Toddler campers ages 2 to 3 need not be potty trained.",
+      "activities": [
+        "toddler camp",
+        "preschool camp",
+        "primary arts",
+        "general day camp",
+        "lego",
+        "magic",
+        "circus arts",
+        "STEAM",
+        "sports and games",
+        "state parks adventure",
+        "tennis",
+        "soccer",
+        "ice hockey",
+        "dance",
+        "improv and theater",
+        "sewing",
+        "farm camp",
+        "robotics",
+        "ceramics",
+        "biking",
+        "hiking",
+        "sailing",
+        "counselor in training"
+      ],
+      "season_year": 2026,
+      "sessions": [
+        {
+          "name": "Session 1 (no camp June 19)",
+          "start_date": "2026-06-15",
+          "end_date": "2026-06-18",
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 2",
+          "start_date": "2026-06-22",
+          "end_date": "2026-06-26",
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 3 (no camp July 3)",
+          "start_date": "2026-06-29",
+          "end_date": "2026-07-02",
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 4",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 5",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 6",
+          "start_date": "2026-07-27",
+          "end_date": "2026-07-31",
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 7",
+          "start_date": "2026-08-03",
+          "end_date": "2026-08-07",
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.nya.org/community-life/summer-programs",
+          "checked": "2026-11-25",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "registration_url",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "age_min",
+            "age_max",
+            "primary_categories",
+            "secondary_categories",
+            "description_short",
+            "refund_policy_summary",
+            "special_needs_notes"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        },
+        {
+          "url": "https://www.nya.org/userfiles/northyarmouthacademymvc/00-document/Week%20By%20Week%20Camp%20List%20June%203%202026.pdf",
+          "checked": "2026-11-25",
+          "fields": [
+            "activities",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        }
+      ]
+    },
+    {
+      "slug": "penobscot-marine-museum-kids-summer-camp-searsport",
+      "name": "Penobscot Marine Museum Kids Summer Camp",
+      "operator_name": "Penobscot Marine Museum",
+      "website_url": "https://penobscotmarinemuseum.org/kids-camps/",
+      "email": "jganskop@pmm-maine.org",
+      "phone": "207-548-2529",
+      "street_address": "40 E Main Street",
+      "city": "Searsport",
+      "state": "ME",
+      "zip": "04974",
+      "camp_type": "day",
+      "age_min": 5,
+      "age_max": 10,
+      "primary_categories": [
+        "general"
+      ],
+      "secondary_categories": [
+        "arts",
+        "academic"
+      ],
+      "description_short": "Week long themed day camp at the Penobscot Marine Museum in Searsport for ages 5 to 10. Days mix crafts, games, music and exhibit visits on sea and coastal themes, and campers help with the museum's daily Set Sail demonstrations.",
+      "activities": [
+        "crafts",
+        "games",
+        "exhibit visits",
+        "music",
+        "sailing demonstrations"
+      ],
+      "price_per_week": 220,
+      "price_min": 220,
+      "price_per": "week",
+      "extended_care": true,
+      "financial_aid": true,
+      "refund_policy_summary": "Refunds until 9 pm the day before the program, minus a 10 percent fee; none after that.",
+      "season_year": 2027,
+      "sessions": [
+        {
+          "name": "Kids Summer Camp Week 1",
+          "start_date": "2027-07-05",
+          "end_date": "2027-07-09",
+          "price": 220,
+          "availability": "unknown"
+        },
+        {
+          "name": "Kids Summer Camp Week 2",
+          "start_date": "2027-07-12",
+          "end_date": "2027-07-16",
+          "price": 220,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://penobscotmarinemuseum.org/kids-camps/",
+          "checked": "2026-11-25",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "email",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "age_min",
+            "age_max",
+            "primary_categories",
+            "secondary_categories",
+            "description_short",
+            "activities",
+            "price_per_week",
+            "price_min",
+            "price_per",
+            "extended_care",
+            "financial_aid",
+            "refund_policy_summary",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        }
+      ]
+    },
+    {
+      "slug": "summer-daze-camp-farmington",
+      "name": "Summer Daze Camp",
+      "operator_name": "University of Maine at Farmington Fitness & Recreation Center",
+      "website_url": "https://farmington.edu/student-life/athletics-recreation/youth-camps-programs/",
+      "registration_url": "https://farmington.edu/app/uploads/2026/05/Copy-of-2026-SDC-Registration-Form.docx.pdf",
+      "email": "umffrc@maine.edu",
+      "phone": "207-778-7495",
+      "street_address": "152 Quebec Street",
+      "city": "Farmington",
+      "state": "ME",
+      "zip": "04938",
+      "camp_type": "day",
+      "grade_min": 1,
+      "grade_max": 7,
+      "age_min": 6,
+      "age_max": 13,
+      "primary_categories": [
+        "general"
+      ],
+      "secondary_categories": [
+        "outdoor",
+        "STEM"
+      ],
+      "activities": [
+        "themed games",
+        "crafts",
+        "STEM challenges",
+        "field trips",
+        "outdoor games"
+      ],
+      "description_short": "Weekly day camp at the University of Maine at Farmington for children entering grades 1 to 7. Each week has a history or science theme, such as dinosaurs, knights or inventors, with games, building projects and trips around Western Maine.",
+      "price_per_week": 235,
+      "price_min": 235,
+      "price_per": "week",
+      "extended_care": true,
+      "refund_policy_summary": "No refunds once a session has started.",
+      "notes": "$235 a week plus a one time $12 camp shirt fee; 10 percent sibling discount. Drop off 8:30 am and pick up 4 pm, with extended care from 7:30 am to 5:30 pm.",
+      "season_year": 2026,
+      "sessions": [
+        {
+          "name": "Session 1: Prehistoric Pioneers",
+          "start_date": "2026-06-15",
+          "end_date": "2026-06-19",
+          "price": 235,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 2: Ancient Civilizations",
+          "start_date": "2026-06-22",
+          "end_date": "2026-06-26",
+          "price": 235,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 3: Knights, Castles and Dragons",
+          "start_date": "2026-06-29",
+          "end_date": "2026-07-03",
+          "price": 235,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 4: Age of Exploration",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "price": 235,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 5: Wild West & Frontier",
+          "start_date": "2026-07-13",
+          "end_date": "2026-07-17",
+          "price": 235,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 6: Inventors & Industrial Age",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "price": 235,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 7: Modern Day Heroes",
+          "start_date": "2026-07-27",
+          "end_date": "2026-07-31",
+          "price": 235,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 8: Future Explorers",
+          "start_date": "2026-08-03",
+          "end_date": "2026-08-07",
+          "price": 235,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://farmington.edu/student-life/athletics-recreation/youth-camps-programs/",
+          "checked": "2026-11-25",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "registration_url",
+            "email",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "grade_min",
+            "grade_max",
+            "age_min",
+            "age_max",
+            "description_short",
+            "primary_categories",
+            "secondary_categories"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-22, approved by Andrew Krensky"
+        },
+        {
+          "url": "https://farmington.edu/app/uploads/2026/05/Copy-of-2026-SDC-Registration-Form.docx.pdf",
+          "checked": "2026-11-25",
+          "fields": [
+            "camp_type",
+            "activities",
+            "price_per_week",
+            "price_min",
+            "price_per",
+            "extended_care",
+            "refund_policy_summary",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-22, approved by Andrew Krensky"
+        }
+      ]
+    },
+    {
+      "slug": "summer-rad-camp-orono",
+      "name": "Summer RAD Camp",
+      "operator_name": "UMaine Campus Recreation and the Town of Orono",
+      "website_url": "https://umaine.edu/campusrecreation/summer-camps/",
+      "registration_url": "https://secure.rec1.com/ME/orono-me/catalog",
+      "email": "erin.wool@maine.edu",
+      "city": "Orono",
+      "state": "ME",
+      "zip": "04469",
+      "camp_type": "day",
+      "primary_categories": [
+        "general"
+      ],
+      "secondary_categories": [
+        "sports",
+        "arts",
+        "swimming",
+        "nature"
+      ],
+      "activities": [
+        "swimming",
+        "rock climbing",
+        "sports",
+        "arts and crafts",
+        "canoeing",
+        "field games",
+        "library time",
+        "field trips"
+      ],
+      "age_min": 5,
+      "age_max": 11,
+      "grade_min": 0,
+      "grade_max": 5,
+      "extended_care": true,
+      "description_short": "Weekly day camp for kids in kindergarten to grade 5, based on the University of Maine campus in Orono. Each week has a theme, with swimming, climbing, sports, crafts, canoeing and trips around Orono and Bangor.",
+      "season_year": 2026,
+      "sessions": [
+        {
+          "name": "Aloha Summer",
+          "start_date": "2026-06-22",
+          "end_date": "2026-06-26",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Space Expedition (no camp July 3)",
+          "start_date": "2026-06-29",
+          "end_date": "2026-07-02",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Animal Adventure",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Adventure Land",
+          "start_date": "2026-07-13",
+          "end_date": "2026-07-17",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Under the Sea",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Sports Spectacular",
+          "start_date": "2026-07-27",
+          "end_date": "2026-07-31",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Heros",
+          "start_date": "2026-08-03",
+          "end_date": "2026-08-07",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Into the Woods",
+          "start_date": "2026-08-10",
+          "end_date": "2026-08-14",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Fairytale Fun",
+          "start_date": "2026-08-17",
+          "end_date": "2026-08-21",
+          "price": null,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://umaine.edu/campusrecreation/summer-camps/",
+          "checked": "2026-11-25",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "registration_url",
+            "email",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "primary_categories",
+            "secondary_categories",
+            "activities",
+            "age_min",
+            "age_max",
+            "grade_min",
+            "grade_max",
+            "extended_care",
+            "description_short",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        }
+      ]
+    },
+    {
+      "slug": "treworgy-farm-camp-levant",
+      "name": "Farm Camp",
+      "operator_name": "Treworgy Family Orchards",
+      "website_url": "https://treworgyorchards.com/farm-camp",
+      "street_address": "3876 Union Street",
+      "city": "Levant",
+      "state": "ME",
+      "zip": "04456",
+      "camp_type": "day",
+      "age_min": 6,
+      "age_max": 12,
+      "primary_categories": [
+        "nature"
+      ],
+      "secondary_categories": [
+        "outdoor"
+      ],
+      "activities": [
+        "animal care",
+        "horseback riding",
+        "goat milking",
+        "barn chores",
+        "wagon rides",
+        "frog catching",
+        "water games",
+        "cheese making",
+        "jam making",
+        "soap making",
+        "farm journal"
+      ],
+      "description_short": "Week long farm day camp at Treworgy Family Orchards in Levant for ages 6 to 12. Campers care for goats, ride horses, help with barn chores, catch frogs and make cheese, jam and soap, ending each week with a Friday farm parade for families.",
+      "indoor_outdoor": "outdoor",
+      "price_per_week": 545,
+      "price_min": 545,
+      "price_per": "week",
+      "extended_care": true,
+      "meals_included": false,
+      "notes": "Drop off 8:30 am, pick up 4 pm, Monday to Friday; 30 minutes early or late care for $15 per camper per session. Snacks are provided and lunch on pizza day; campers bring a bag lunch other days. The farm also runs Tadpole Farm Camp (ages 4 to 5), Garden 2 Table Camp (ages 8 to 13) and Learn 2 Lead (ages 13 to 15) on separate pages.",
+      "season_year": 2026,
+      "sessions": [
+        {
+          "name": "Week 1",
+          "start_date": "2026-06-22",
+          "end_date": "2026-06-26",
+          "price": 545,
+          "availability": "unknown"
+        },
+        {
+          "name": "3 day week (June 29 to July 1)",
+          "start_date": "2026-06-29",
+          "end_date": "2026-07-01",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 3",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "price": 545,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 4",
+          "start_date": "2026-07-13",
+          "end_date": "2026-07-17",
+          "price": 545,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 5",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "price": 545,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 6",
+          "start_date": "2026-07-27",
+          "end_date": "2026-07-31",
+          "price": 545,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 7",
+          "start_date": "2026-08-03",
+          "end_date": "2026-08-07",
+          "price": 545,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 8",
+          "start_date": "2026-08-10",
+          "end_date": "2026-08-14",
+          "price": 545,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 9",
+          "start_date": "2026-08-17",
+          "end_date": "2026-08-21",
+          "price": 545,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://treworgyorchards.com/farm-camp",
+          "checked": "2026-11-25",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "age_min",
+            "age_max",
+            "primary_categories",
+            "secondary_categories",
+            "activities",
+            "description_short",
+            "indoor_outdoor",
+            "price_per_week",
+            "price_min",
+            "price_per",
+            "extended_care",
+            "meals_included",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-22, approved by Andrew Krensky"
+        }
+      ]
+    },
+    {
+      "slug": "zillman-art-museum-summer-art-camp-bangor",
+      "name": "Zillman Art Museum Summer Art Camp",
+      "operator_name": "Zillman Art Museum, University of Maine",
+      "website_url": "https://zam.umaine.edu/education/art-camp/summer-art-camp/",
+      "email": "um.zillmanmuseum@maine.edu",
+      "phone": "207-581-3300",
+      "street_address": "40 Harlow Street",
+      "city": "Bangor",
+      "state": "ME",
+      "zip": "04401",
+      "camp_type": "specialty",
+      "grade_min": 1,
+      "grade_max": 6,
+      "primary_categories": [
+        "arts"
+      ],
+      "secondary_categories": [],
+      "description_short": "Small half day art camp at the Zillman Art Museum in downtown Bangor, run by the museum educator. Children entering grades 1 to 6 look at and talk about the current exhibitions and make prints, drawings, paintings, textiles and sculpture, with a family show on Friday.",
+      "activities": [
+        "printmaking",
+        "drawing",
+        "painting",
+        "textiles",
+        "sculpture",
+        "crafts",
+        "gallery visits"
+      ],
+      "price_per_week": 200,
+      "price_min": 200,
+      "price_per": "week",
+      "extended_care": false,
+      "refund_policy_summary": "Tuition is not refundable within four weeks of the session start.",
+      "season_year": 2026,
+      "sessions": [
+        {
+          "name": "Session 1 (grades 1 and 2)",
+          "start_date": "2026-06-22",
+          "end_date": "2026-06-26",
+          "price": 200,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 2 (grades 3 and 4)",
+          "start_date": "2026-06-29",
+          "end_date": "2026-07-03",
+          "price": 200,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 3 (grades 5 and 6)",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "price": 200,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 4 (grades 1 and 2)",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "price": 200,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 5 (grades 3 and 4)",
+          "start_date": "2026-07-27",
+          "end_date": "2026-07-31",
+          "price": 200,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 6 (grades 5 and 6)",
+          "start_date": "2026-08-03",
+          "end_date": "2026-08-07",
+          "price": 200,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://zam.umaine.edu/education/art-camp/summer-art-camp/",
+          "checked": "2026-11-25",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "email",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "grade_min",
+            "grade_max",
+            "primary_categories",
+            "description_short",
+            "activities",
+            "price_per_week",
+            "price_min",
+            "price_per",
+            "extended_care",
+            "refund_policy_summary",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
         }
       ]
     }

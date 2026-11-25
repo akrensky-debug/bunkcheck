@@ -1,6 +1,6 @@
 {
   "metro": "New Hampshire",
-  "checked": "2026-11-13",
+  "checked": "2026-11-25",
   "notes": "Real listings from each camp's own website. Unverified until a camp confirms. Edit here and re-run: python -m campfinder.seed.import_real --check",
   "camps": [
     {
@@ -9234,6 +9234,1911 @@
             "zip"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ]
+    },
+    {
+      "slug": "ashland-summer-day-camp-ashland",
+      "name": "Ashland Summer Day Camp",
+      "operator_name": "Ashland Parks & Recreation",
+      "website_url": "https://ashland.nh.gov/uploads/asdc-flyer-2026.pdf",
+      "email": "recreation@ashland.nh.gov",
+      "phone": "(603) 968-9209",
+      "street_address": "99 Main Street",
+      "city": "Ashland",
+      "state": "NH",
+      "zip": "03217",
+      "camp_type": "day",
+      "primary_categories": [
+        "general"
+      ],
+      "secondary_categories": [
+        "swimming"
+      ],
+      "activities": [
+        "park days",
+        "beach days",
+        "field trips",
+        "theme weeks"
+      ],
+      "grade_min": 0,
+      "grade_max": 8,
+      "age_min": 5,
+      "age_max": 14,
+      "description_short": "A town day camp in Ashland for children entering kindergarten through 8th grade, 8am to 4:30pm on weekdays. Mondays and Wednesdays are park days at L.W. Packard Field, Tuesdays and Thursdays are beach days at the town beach on Little Squam Lake, and Fridays are field trips.",
+      "meals_included": false,
+      "price_per_week": 165,
+      "price_min": 165,
+      "price_max": 165,
+      "price_per": "week",
+      "swim_waterfront_notes": "Tuesdays and Thursdays are spent at Ashland Town Beach (Edward N. Doggett Beach) on River Street. The manual gives no swim test details.",
+      "season_year": 2026,
+      "notes": "Non-resident rate shown. Resident rates: $150 a week or $270 a two week session for the first child, $130 and $250 for a second child, $120 and $230 for a third. Non-resident second and third child: $145 and $130 a week, $270 and $250 a session. A $50 deposit is due with the registration form. Children bring lunch, two snacks and water; up to $15 spending money on field trips. Late pickup after 4:30pm is $1 a minute.",
+      "sessions": [
+        {
+          "name": "Week 1",
+          "start_date": "2026-06-22",
+          "end_date": "2026-06-26",
+          "price": 165,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 2",
+          "start_date": "2026-06-29",
+          "end_date": "2026-07-03",
+          "price": 165,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 3",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "price": 165,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 4",
+          "start_date": "2026-07-13",
+          "end_date": "2026-07-17",
+          "price": 165,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 5",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "price": 165,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 6",
+          "start_date": "2026-07-27",
+          "end_date": "2026-07-31",
+          "price": 165,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 7",
+          "start_date": "2026-08-03",
+          "end_date": "2026-08-07",
+          "price": 165,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 8",
+          "start_date": "2026-08-10",
+          "end_date": "2026-08-14",
+          "price": 165,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 1 (weeks 1 and 2)",
+          "start_date": "2026-06-22",
+          "end_date": "2026-07-03",
+          "price": 300,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 2 (weeks 3 and 4)",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-17",
+          "price": 300,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 3 (weeks 5 and 6)",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-31",
+          "price": 300,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 4 (weeks 7 and 8)",
+          "start_date": "2026-08-03",
+          "end_date": "2026-08-14",
+          "price": 300,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://ashland.nh.gov/uploads/asdc-flyer-2026.pdf",
+          "checked": "2026-11-25",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "email",
+            "phone",
+            "grade_min",
+            "grade_max",
+            "age_min",
+            "age_max",
+            "price_per_week",
+            "price_min",
+            "price_max",
+            "price_per"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-22, approved by Andrew Krensky"
+        },
+        {
+          "url": "https://ashland.nh.gov/uploads/complete-manuel-2026.pdf",
+          "checked": "2026-11-25",
+          "fields": [
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "primary_categories",
+            "secondary_categories",
+            "activities",
+            "description_short",
+            "meals_included",
+            "swim_waterfront_notes",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-22, approved by Andrew Krensky"
+        }
+      ]
+    },
+    {
+      "slug": "bow-rec-day-camp-bow",
+      "name": "Bow Rec Day Camp",
+      "operator_name": "Town of Bow Parks & Recreation",
+      "website_url": "https://bownh.gov/813/Bow-Rec-Day-Camp",
+      "registration_url": "https://form.jotform.com/bowrecenter/2026-brc-summer-camp-waitlist-form",
+      "email": "bowreccenter@bownh.gov",
+      "phone": "603-223-3984",
+      "street_address": "21 Bow Center Rd",
+      "city": "Bow",
+      "state": "NH",
+      "zip": "03304",
+      "camp_type": "day",
+      "primary_categories": [
+        "general"
+      ],
+      "secondary_categories": [
+        "sports",
+        "arts",
+        "nature"
+      ],
+      "activities": [
+        "arts and crafts",
+        "STEM",
+        "sports",
+        "team building games",
+        "field games",
+        "water play",
+        "nature walks",
+        "theme days",
+        "field trips"
+      ],
+      "grade_min": 0,
+      "grade_max": 7,
+      "age_min": 5,
+      "age_max": 13,
+      "description_short": "Town run day camp at the Bow Rec Center for children entering kindergarten through grade 7, open 7:00 to 5:45 on weekdays for ten weeks. Days mix arts and crafts, STEM, sports, field games, water play and nature walks, with paid field trips twice a week for older campers.",
+      "indoor_outdoor": "both",
+      "price_per_week": 225,
+      "price_min": 180,
+      "price_max": 265,
+      "price_per": "week",
+      "refund_policy_summary": "No refunds or credits for registration fees, deposits, camp fees or field trip fees. Field trip fees are refunded only if the trip is cancelled.",
+      "season_year": 2026,
+      "sessions": [
+        {
+          "name": "Week 1 (4 days) (non-resident rate, entering grades 1 to 7)",
+          "start_date": "2026-06-16",
+          "end_date": "2026-06-19",
+          "price": 180,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 2 (non-resident rate, entering grades 1 to 7)",
+          "start_date": "2026-06-22",
+          "end_date": "2026-06-26",
+          "price": 225,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 3 (4 days, closed July 3) (non-resident rate, entering grades 1 to 7)",
+          "start_date": "2026-06-29",
+          "end_date": "2026-07-02",
+          "price": 180,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 4 (non-resident rate, entering grades 1 to 7)",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "price": 225,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 5 (non-resident rate, entering grades 1 to 7)",
+          "start_date": "2026-07-13",
+          "end_date": "2026-07-17",
+          "price": 225,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 6 (non-resident rate, entering grades 1 to 7)",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "price": 225,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 7 (non-resident rate, entering grades 1 to 7)",
+          "start_date": "2026-07-27",
+          "end_date": "2026-07-31",
+          "price": 225,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 8 (non-resident rate, entering grades 1 to 7)",
+          "start_date": "2026-08-03",
+          "end_date": "2026-08-07",
+          "price": 225,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 9 (non-resident rate, entering grades 1 to 7)",
+          "start_date": "2026-08-10",
+          "end_date": "2026-08-14",
+          "price": 225,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 10 (non-resident rate, entering grades 1 to 7)",
+          "start_date": "2026-08-17",
+          "end_date": "2026-08-21",
+          "price": 225,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://bownh.gov/813/Bow-Rec-Day-Camp",
+          "checked": "2026-11-25",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "registration_url",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        },
+        {
+          "url": "https://bownh.gov/DocumentCenter/View/8304/Bow-Rec-Day-Camp-Flyer-2026",
+          "checked": "2026-11-25",
+          "fields": [
+            "grade_min",
+            "grade_max",
+            "price_per_week",
+            "price_min",
+            "price_max",
+            "price_per",
+            "refund_policy_summary"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        },
+        {
+          "url": "https://bownh.gov/DocumentCenter/View/8302/Bow-Rec-Day-Camp-Parent-Handbook-2026",
+          "checked": "2026-11-25",
+          "fields": [
+            "email",
+            "phone",
+            "camp_type",
+            "primary_categories",
+            "secondary_categories",
+            "activities",
+            "age_min",
+            "age_max",
+            "description_short",
+            "indoor_outdoor"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        }
+      ]
+    },
+    {
+      "slug": "camp-bernadette-wolfeboro",
+      "name": "Camp Bernadette",
+      "operator_name": "Roman Catholic Diocese of Manchester",
+      "website_url": "https://bfcamp.com/camp-bernadette",
+      "registration_url": "https://berniefatima26.campbrainregistration.com/",
+      "email": "info@bfcamp.com",
+      "phone": "(603) 931-5500",
+      "street_address": "83 Richards Road",
+      "city": "Wolfeboro",
+      "state": "NH",
+      "zip": "03894",
+      "camp_type": "sleepaway",
+      "primary_categories": [
+        "faith",
+        "general"
+      ],
+      "secondary_categories": [
+        "swimming",
+        "performing_arts",
+        "arts",
+        "sports"
+      ],
+      "activities": [
+        "swim lessons",
+        "swimming",
+        "paddleboarding",
+        "water trampoline",
+        "kayaking",
+        "canoeing",
+        "tubing",
+        "sailing",
+        "soccer",
+        "gaga",
+        "tennis",
+        "ultimate",
+        "archery",
+        "BB guns",
+        "high ropes",
+        "low ropes",
+        "climbing wall",
+        "horseback riding",
+        "theatre",
+        "dance",
+        "pottery",
+        "arts and crafts",
+        "Mass and prayer"
+      ],
+      "gender_policy": "girls",
+      "description_short": "Catholic overnight camp for girls on Lake Wentworth in Wolfeboro, run by the Diocese of Manchester since 1953. Campers live in cabins and fill the day with swimming and boating, sports, ropes and climbing, horseback riding, theatre, dance and crafts, along with daily prayer and Mass.",
+      "indoor_outdoor": "outdoor",
+      "religious_affiliation": "Roman Catholic",
+      "price_min": 1300,
+      "price_max": 2500,
+      "price_per_week": 1300,
+      "price_per": "session",
+      "transportation": true,
+      "meals_included": true,
+      "financial_aid": true,
+      "refund_policy_summary": "Registration fees ($250 per two week session, $150 per one week session) and card fees are never refunded. Cancel by February 28 and the rest of the tuition is refunded; from March 1 there are no refunds, and none for late arrival or leaving early. A session can be switched at no cost if there is space. Medical cancellations are reviewed case by case with a doctor's note.",
+      "swim_waterfront_notes": "Swim lessons and free swim in the lake, with staff holding American Red Cross Lifeguard certification.",
+      "aca_accredited": true,
+      "aca_source_url": "https://bfcamp.com/safety",
+      "season_year": 2027,
+      "sessions": [
+        {
+          "name": "Session 1 (2 weeks)",
+          "start_date": "2027-06-27",
+          "end_date": "2027-07-10",
+          "price": 2500,
+          "availability": "unknown"
+        },
+        {
+          "name": "Starter Week (ages 6 to 12)",
+          "start_date": "2027-06-27",
+          "end_date": "2027-07-03",
+          "price": 1300,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 2 (2 weeks)",
+          "start_date": "2027-07-11",
+          "end_date": "2027-07-24",
+          "price": 2500,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 3 (2 weeks)",
+          "start_date": "2027-07-25",
+          "end_date": "2027-08-07",
+          "price": 2500,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 4 (2 week option)",
+          "start_date": "2027-08-08",
+          "end_date": "2027-08-21",
+          "price": 2500,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 4 (1 week option)",
+          "start_date": "2027-08-08",
+          "end_date": "2027-08-14",
+          "price": 1300,
+          "availability": "unknown"
+        }
+      ],
+      "notes": "Two week sessions are $2,500 and one week sessions $1,300, plus a registration fee that counts toward tuition. Sibling discount $100 per session; NH resident and Catholic school or parish discounts by asking the office. Optional laundry ($40) and change weekend trip ($100) for campers staying two or more sessions. Camp is phone free. Ages are not stated except Starter Week (6 to 12) and CIT (16).",
+      "sources": [
+        {
+          "url": "https://bfcamp.com/camp-bernadette",
+          "checked": "2026-11-25",
+          "fields": [
+            "name",
+            "website_url",
+            "camp_type",
+            "primary_categories",
+            "description_short",
+            "indoor_outdoor",
+            "religious_affiliation",
+            "gender_policy"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        },
+        {
+          "url": "https://bfcamp.com/camp-bernadette/activities",
+          "checked": "2026-11-25",
+          "fields": [
+            "activities",
+            "secondary_categories"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        },
+        {
+          "url": "https://bfcamp.com/camp-bernadette/location",
+          "checked": "2026-11-25",
+          "fields": [
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "phone",
+            "email"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        },
+        {
+          "url": "https://bfcamp.com/dates-rates",
+          "checked": "2026-11-25",
+          "fields": [
+            "operator_name",
+            "registration_url",
+            "price_min",
+            "price_max",
+            "price_per_week",
+            "price_per",
+            "financial_aid",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        },
+        {
+          "url": "https://bfcamp.com/__l5e/assets-v1/555724e5-5518-4768-9a2f-1723f42f51fa/parent-handbook-2027.pdf",
+          "checked": "2026-11-25",
+          "fields": [
+            "refund_policy_summary",
+            "meals_included"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        },
+        {
+          "url": "https://bfcamp.com/safety",
+          "checked": "2026-11-25",
+          "fields": [
+            "aca_accredited",
+            "aca_source_url",
+            "swim_waterfront_notes"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        },
+        {
+          "url": "https://bfcamp.com/transportation",
+          "checked": "2026-11-25",
+          "fields": [
+            "transportation"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        }
+      ]
+    },
+    {
+      "slug": "camp-halfmoon-goffstown",
+      "name": "Goffstown Day Camp (Camp Halfmoon)",
+      "operator_name": "The Granite YMCA",
+      "website_url": "https://www.graniteymca.org/camps/day-camp/goffstown/",
+      "email": "lfrazier@graniteymca.org",
+      "phone": "603.232.8699",
+      "street_address": "116 Goffstown Back Rd",
+      "city": "Goffstown",
+      "state": "NH",
+      "zip": "03045",
+      "camp_type": "day",
+      "primary_categories": [
+        "general"
+      ],
+      "secondary_categories": [
+        "outdoor",
+        "nature",
+        "arts",
+        "sports",
+        "swimming"
+      ],
+      "activities": [
+        "drama",
+        "archery",
+        "nature exploration",
+        "sports",
+        "high and low ropes courses",
+        "arts and crafts",
+        "swimming",
+        "field games",
+        "climbing",
+        "weekly bbq"
+      ],
+      "grade_min": 1,
+      "grade_max": 8,
+      "age_min": 6,
+      "age_max": 14,
+      "description_short": "Traditional YMCA day camp on ten wooded acres behind the Allard Center in Goffstown for children entering grades 1 to 8. Days include archery, ropes courses, drama at an outdoor amphitheater, sports, crafts, nature trails and swimming, 8:30 to 4:00 with free before and after care.",
+      "indoor_outdoor": "outdoor",
+      "extended_care": true,
+      "financial_aid": true,
+      "aca_accredited": true,
+      "aca_source_url": "https://www.graniteymca.org/camps/day-camp/goffstown/",
+      "refund_policy_summary": "A $35 deposit per week is not refundable. Cancel more than 6 weeks before the camp week for a full refund less the deposit; 3 to 6 weeks before, a $65 admin fee also applies; less than 3 weeks before, no refund.",
+      "season_year": 2026,
+      "sessions": [
+        {
+          "name": "Week 1: Animation Station",
+          "start_date": "2026-06-22",
+          "end_date": "2026-06-26",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 2: Color Blast",
+          "start_date": "2026-06-29",
+          "end_date": "2026-07-03",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 3: Splashtopia",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 4: Camp Carnival",
+          "start_date": "2026-07-13",
+          "end_date": "2026-07-17",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 5: Wild West",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 6: Messy Week",
+          "start_date": "2026-07-27",
+          "end_date": "2026-07-31",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 7: Camp-lympics",
+          "start_date": "2026-08-03",
+          "end_date": "2026-08-07",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 8: Fantasy Frenzy",
+          "start_date": "2026-08-10",
+          "end_date": "2026-08-14",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 9: Camp's Got Talent",
+          "start_date": "2026-08-17",
+          "end_date": "2026-08-21",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 10: The Final Splash",
+          "start_date": "2026-08-24",
+          "end_date": "2026-08-27",
+          "price": null,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.graniteymca.org/camps/day-camp/goffstown/",
+          "checked": "2026-11-25",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "email",
+            "phone",
+            "camp_type",
+            "primary_categories",
+            "secondary_categories",
+            "activities",
+            "grade_min",
+            "grade_max",
+            "age_min",
+            "age_max",
+            "description_short",
+            "indoor_outdoor",
+            "extended_care",
+            "financial_aid",
+            "aca_accredited",
+            "aca_source_url",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-22, approved by Andrew Krensky"
+        },
+        {
+          "url": "https://www.graniteymca.org/location/goffstown/",
+          "checked": "2026-11-25",
+          "fields": [
+            "street_address",
+            "city",
+            "state",
+            "zip"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-22, approved by Andrew Krensky"
+        },
+        {
+          "url": "https://www.graniteymca.org/dev/wp-content/uploads/2024/01/Summer-Billing-Schedule.pdf",
+          "checked": "2026-11-25",
+          "fields": [
+            "refund_policy_summary"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-22, approved by Andrew Krensky"
+        }
+      ]
+    },
+    {
+      "slug": "camp-kettleford-bedford",
+      "name": "Camp Kettleford",
+      "operator_name": "Girl Scouts of the Green and White Mountains",
+      "website_url": "https://www.girlscoutsgwm.org/en/activities/camp-and-outdoors/kettleford.html",
+      "street_address": "26 Camp Rd",
+      "city": "Bedford",
+      "state": "NH",
+      "zip": "03110",
+      "camp_type": "day",
+      "primary_categories": [
+        "general",
+        "nature"
+      ],
+      "secondary_categories": [
+        "arts",
+        "outdoor",
+        "leadership",
+        "swimming"
+      ],
+      "activities": [
+        "crafts",
+        "target sports",
+        "paddling",
+        "swimming",
+        "campfire cooking",
+        "sing-alongs",
+        "nature hikes",
+        "low challenge course",
+        "theme weeks",
+        "badge work"
+      ],
+      "gender_policy": "girls",
+      "grade_min": 0,
+      "grade_max": 10,
+      "age_min": 5,
+      "age_max": 16,
+      "description_short": "Girl Scout day camp on 30 wooded acres by Sandy and Sebbins Ponds in Bedford for girls entering kindergarten through grade 10, with weekly themed programs by grade. Campers do crafts, target sports, paddling, swimming, campfire cooking and hikes; drop off 8:30 to 8:45, pick up 4:00 to 5:00, buses for most weeks.",
+      "indoor_outdoor": "outdoor",
+      "price_per_week": 375,
+      "price_per": "week",
+      "transportation": true,
+      "financial_aid": true,
+      "refund_policy_summary": "A $100 deposit, included in the session price, is not refundable.",
+      "season_year": 2027,
+      "sessions": [
+        {
+          "name": "Week of July 5 (grades K to 5 programs; no buses)",
+          "start_date": "2027-07-05",
+          "end_date": "2027-07-09",
+          "price": 375,
+          "availability": "unknown"
+        },
+        {
+          "name": "Summer Unlocked, two weeks (grades 6 to 8)",
+          "start_date": "2027-07-12",
+          "end_date": "2027-07-23",
+          "price": 750,
+          "availability": "unknown"
+        },
+        {
+          "name": "Counselor in Training, two weeks (grades 9 to 10)",
+          "start_date": "2027-07-12",
+          "end_date": "2027-07-23",
+          "price": 600,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week of July 12 (grades K to 5 programs)",
+          "start_date": "2027-07-12",
+          "end_date": "2027-07-16",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week of July 19 (grades K to 5 programs)",
+          "start_date": "2027-07-19",
+          "end_date": "2027-07-23",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week of July 26 (grades K to 8 programs)",
+          "start_date": "2027-07-26",
+          "end_date": "2027-07-30",
+          "price": 375,
+          "availability": "unknown"
+        },
+        {
+          "name": "Wild Magic, two weeks",
+          "start_date": "2027-07-26",
+          "end_date": "2027-08-06",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week of August 2 (grades K to 5 programs)",
+          "start_date": "2027-08-02",
+          "end_date": "2027-08-06",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week of August 9",
+          "start_date": "2027-08-09",
+          "end_date": "2027-08-13",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week of August 16",
+          "start_date": "2027-08-16",
+          "end_date": "2027-08-20",
+          "price": null,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.girlscoutsgwm.org/en/activities/camp-and-outdoors/kettleford.html",
+          "checked": "2026-11-25",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "primary_categories",
+            "secondary_categories",
+            "activities",
+            "gender_policy",
+            "grade_min",
+            "grade_max",
+            "age_min",
+            "age_max",
+            "description_short",
+            "indoor_outdoor",
+            "price_per_week",
+            "price_per",
+            "transportation",
+            "financial_aid",
+            "refund_policy_summary",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-22, approved by Andrew Krensky"
+        }
+      ]
+    },
+    {
+      "slug": "camp-seawood-portsmouth",
+      "name": "Camp Seawood",
+      "operator_name": "Girl Scouts of the Green and White Mountains",
+      "website_url": "https://www.girlscoutsgwm.org/en/activities/camp-and-outdoors/seawood.html",
+      "street_address": "350 Banfield Rd",
+      "city": "Portsmouth",
+      "state": "NH",
+      "zip": "03801",
+      "camp_type": "day",
+      "primary_categories": [
+        "general",
+        "nature"
+      ],
+      "secondary_categories": [
+        "arts",
+        "outdoor",
+        "leadership"
+      ],
+      "activities": [
+        "sing-alongs",
+        "crafts",
+        "target sports",
+        "archery",
+        "low ropes course",
+        "nature hikes",
+        "theme weeks"
+      ],
+      "gender_policy": "girls",
+      "grade_min": 0,
+      "grade_max": 10,
+      "description_short": "Girl Scout day camp on 38 acres of woods and wetlands in Portsmouth, with themed weekly programs by grade and a two week Counselor in Training course for older girls. Campers do crafts, archery and target sports, a low ropes course and nature hikes, 9:00 to 5:00.",
+      "indoor_outdoor": "outdoor",
+      "price_per_week": 375,
+      "price_per": "week",
+      "financial_aid": true,
+      "refund_policy_summary": "A $100 deposit, included in the session price, is not refundable.",
+      "season_year": 2027,
+      "sessions": [
+        {
+          "name": "Week of July 5 (grades K to 8 programs)",
+          "start_date": "2027-07-05",
+          "end_date": "2027-07-09",
+          "price": 375,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week of July 12 (grades K to 8 programs)",
+          "start_date": "2027-07-12",
+          "end_date": "2027-07-16",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Counselor in Training, two weeks (grades 9 to 10)",
+          "start_date": "2027-07-05",
+          "end_date": "2027-07-16",
+          "price": 600,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.girlscoutsgwm.org/en/activities/camp-and-outdoors/seawood.html",
+          "checked": "2026-11-25",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "primary_categories",
+            "secondary_categories",
+            "activities",
+            "gender_policy",
+            "grade_min",
+            "grade_max",
+            "description_short",
+            "indoor_outdoor",
+            "price_per_week",
+            "price_per",
+            "financial_aid",
+            "refund_policy_summary",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-22, approved by Andrew Krensky"
+        }
+      ]
+    },
+    {
+      "slug": "camp-souhegan-milford",
+      "name": "Camp Souhegan",
+      "operator_name": "Boys & Girls Club of Souhegan Valley",
+      "website_url": "https://www.svbgc.org/summer-camp",
+      "registration_url": "https://operations.daxko.com/Online/5468/MembershipV2/MyAccountV2.mvc",
+      "email": "acraven@svbgc.org",
+      "phone": "(603) 672-1002",
+      "street_address": "56 Mont Vernon Street",
+      "city": "Milford",
+      "state": "NH",
+      "camp_type": "day",
+      "primary_categories": [
+        "general"
+      ],
+      "secondary_categories": [
+        "outdoor",
+        "nature",
+        "swimming"
+      ],
+      "activities": [
+        "theme weeks",
+        "field trips",
+        "outdoor play",
+        "free swim",
+        "swim lessons"
+      ],
+      "grade_min": 0,
+      "grade_max": 10,
+      "age_min": 5,
+      "age_max": 16,
+      "description_short": "Boys & Girls Club summer day camp at the Club in Milford for youth in kindergarten to grade 10, by the week or the day for ten weeks. Each week has a theme and field trips, with outdoor play and swimming at Keyes Pool; drop off from 7:00, program 9:00 to 3:30, pick up by 6:00.",
+      "indoor_outdoor": "both",
+      "price_per_week": 300,
+      "price_min": 75,
+      "price_max": 300,
+      "price_per": "week",
+      "extended_care": true,
+      "financial_aid": true,
+      "refund_policy_summary": "Cancellations must be made at least 2 weeks in advance; transfers to another week are allowed if there is space.",
+      "swim_waterfront_notes": "Free swim and swim lessons through the Club's partnership with Keyes Pool.",
+      "season_year": 2026,
+      "sessions": [
+        {
+          "name": "Week 1",
+          "start_date": "2026-06-15",
+          "end_date": "2026-06-19",
+          "price": 300,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 2",
+          "start_date": "2026-06-22",
+          "end_date": "2026-06-26",
+          "price": 300,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 3 (closed Friday July 3)",
+          "start_date": "2026-06-29",
+          "end_date": "2026-07-02",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 4",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "price": 300,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 5",
+          "start_date": "2026-07-13",
+          "end_date": "2026-07-17",
+          "price": 300,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 6",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "price": 300,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 7",
+          "start_date": "2026-07-27",
+          "end_date": "2026-07-31",
+          "price": 300,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 8",
+          "start_date": "2026-08-03",
+          "end_date": "2026-08-07",
+          "price": 300,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 9",
+          "start_date": "2026-08-10",
+          "end_date": "2026-08-14",
+          "price": 300,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 10",
+          "start_date": "2026-08-17",
+          "end_date": "2026-08-21",
+          "price": 300,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.svbgc.org/summer-camp",
+          "checked": "2026-11-25",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "registration_url",
+            "email",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "camp_type",
+            "primary_categories",
+            "secondary_categories",
+            "activities",
+            "grade_min",
+            "grade_max",
+            "age_min",
+            "age_max",
+            "description_short",
+            "indoor_outdoor",
+            "price_per_week",
+            "price_min",
+            "price_max",
+            "price_per",
+            "extended_care",
+            "financial_aid",
+            "refund_policy_summary",
+            "swim_waterfront_notes",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-22, approved by Andrew Krensky"
+        },
+        {
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=56+Mont+Vernon+Street%2C+Milford%2C+NH&benchmark=Public_AR_Current&format=json",
+          "checked": "2026-11-25",
+          "fields": [
+            "zip"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-22, approved by Andrew Krensky"
+        }
+      ],
+      "zip": "03055"
+    },
+    {
+      "slug": "camp-trek-merrimack",
+      "name": "Camp Trek Teen Adventure Camp",
+      "operator_name": "Merrimack Parks & Recreation Department",
+      "website_url": "https://merrimackparksandrec.org/camp-trek",
+      "registration_url": "https://merrimack.recdesk.com/Community/Program?category=49",
+      "phone": "603-420-1662",
+      "city": "Merrimack",
+      "state": "NH",
+      "zip": "03054",
+      "camp_type": "day",
+      "primary_categories": [
+        "adventure"
+      ],
+      "secondary_categories": [
+        "outdoor",
+        "sports"
+      ],
+      "activities": [
+        "daily field trips",
+        "state park hikes and beaches",
+        "paddleboarding",
+        "trampoline park",
+        "amusement parks",
+        "ninja gym",
+        "roller skating",
+        "bowling",
+        "minor league baseball game",
+        "museum trips"
+      ],
+      "grade_min": 5,
+      "grade_max": 9,
+      "description_short": "Town run trip camp in Merrimack for kids entering grades 5 to 9, offered as an alternative to the Naticook day camp. Each weekday the group goes on a field trip somewhere in New England, such as state parks and beaches, paddleboarding, trampoline parks, amusement parks and ball games.",
+      "indoor_outdoor": "both",
+      "price_per_week": 405,
+      "price_min": 355,
+      "price_max": 405,
+      "price_per": "week",
+      "extended_care": true,
+      "transportation": true,
+      "financial_aid": true,
+      "refund_policy_summary": "Each session has a $50 nonrefundable deposit and the balance is due 45 days before it starts. Cancel at least 30 days ahead and lose only the deposit; 15 to 30 days ahead, get 50% of what was paid less the deposit; no refunds within 15 days. Medical cancellations with a doctor's letter get 50% of the remainder less the deposit.",
+      "season_year": 2026,
+      "sessions": [
+        {
+          "name": "Session 1",
+          "start_date": "2026-06-22",
+          "end_date": "2026-06-26",
+          "price": 405,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 2",
+          "start_date": "2026-06-29",
+          "end_date": "2026-07-03",
+          "price": 405,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 3",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "price": 405,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 4",
+          "start_date": "2026-07-13",
+          "end_date": "2026-07-17",
+          "price": 405,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 5",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "price": 405,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 6",
+          "start_date": "2026-07-27",
+          "end_date": "2026-07-31",
+          "price": 405,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 7",
+          "start_date": "2026-08-03",
+          "end_date": "2026-08-07",
+          "price": 405,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 8",
+          "start_date": "2026-08-10",
+          "end_date": "2026-08-14",
+          "price": 405,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 9",
+          "start_date": "2026-08-17",
+          "end_date": "2026-08-21",
+          "price": 405,
+          "availability": "unknown"
+        }
+      ],
+      "notes": "Camp runs 8 am to 4 pm; AM care 7 to 8 am ($30 a week) and PM care 4 to 6 pm ($60 a week). Tuition is $355 a week for Merrimack residents and $405 for non residents, with a $25 sibling discount, and covers trip transportation and admissions. Scholarships are for Merrimack residents who meet income rules.",
+      "sources": [
+        {
+          "url": "https://merrimackparksandrec.org/camp-trek",
+          "checked": "2026-11-25",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "registration_url",
+            "phone",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "primary_categories",
+            "secondary_categories",
+            "activities",
+            "grade_min",
+            "grade_max",
+            "description_short",
+            "indoor_outdoor",
+            "price_per_week",
+            "price_min",
+            "price_max",
+            "price_per",
+            "extended_care",
+            "transportation",
+            "financial_aid",
+            "refund_policy_summary",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        }
+      ]
+    },
+    {
+      "slug": "flights-of-discovery-summer-camp-londonderry",
+      "name": "Flights of Discovery Summer Camp",
+      "operator_name": "Aviation Museum of N.H.",
+      "website_url": "https://aviationmuseumofnh.org/education/summer-camp/",
+      "email": "nmacdonald@nhahs.org",
+      "phone": "(603) 669-4820 ext. 405",
+      "street_address": "27 Navigator Road",
+      "city": "Londonderry",
+      "state": "NH",
+      "zip": "03053",
+      "camp_type": "specialty",
+      "primary_categories": [
+        "STEM"
+      ],
+      "secondary_categories": [
+        "academic"
+      ],
+      "activities": [
+        "aviation history",
+        "aerospace engineering",
+        "flight simulation",
+        "weather forecasting",
+        "air traffic control",
+        "field trips"
+      ],
+      "age_min": 10,
+      "age_max": 17,
+      "description_short": "Two week aviation day camp at the Aviation Museum of New Hampshire in Londonderry, with separate sessions for ages 10 to 13 and 14 to 17 and at most 20 campers each. Campers study aviation history, aerospace engineering, flight simulation, weather and air traffic control, with three field trips such as airport and air base visits; 9:00 to 4:00.",
+      "indoor_outdoor": "indoor",
+      "price_min": 1400,
+      "price_max": 1400,
+      "price_per": "session",
+      "financial_aid": true,
+      "season_year": 2026,
+      "sessions": [
+        {
+          "name": "Younger Group 1 (ages 10 to 13)",
+          "start_date": "2026-06-22",
+          "end_date": "2026-07-03",
+          "price": 1400,
+          "availability": "unknown"
+        },
+        {
+          "name": "Older Group (ages 14 to 17)",
+          "start_date": "2026-07-13",
+          "end_date": "2026-07-24",
+          "price": 1400,
+          "availability": "unknown"
+        },
+        {
+          "name": "Younger Group 2 (ages 10 to 13)",
+          "start_date": "2026-08-03",
+          "end_date": "2026-08-14",
+          "price": 1400,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://aviationmuseumofnh.org/education/summer-camp/",
+          "checked": "2026-11-25",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "email",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "primary_categories",
+            "secondary_categories",
+            "activities",
+            "age_min",
+            "age_max",
+            "description_short",
+            "indoor_outdoor",
+            "price_min",
+            "price_max",
+            "price_per",
+            "financial_aid",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-22, approved by Andrew Krensky"
+        }
+      ]
+    },
+    {
+      "slug": "horton-center-gorham",
+      "name": "Horton Center",
+      "operator_name": "New Hampshire Conference, United Church of Christ",
+      "website_url": "https://www.hortoncenter.org/sessions",
+      "registration_url": "https://www.ultracamp.com/clientlogin.aspx?idCamp=463&campCode=hnc",
+      "email": "info@hortoncenter.org",
+      "phone": "(603) 545-9660",
+      "street_address": "Pine Mountain Horton Center Rd",
+      "city": "Gorham",
+      "state": "NH",
+      "zip": "03581",
+      "camp_type": "sleepaway",
+      "primary_categories": [
+        "faith",
+        "outdoor"
+      ],
+      "secondary_categories": [
+        "adventure",
+        "arts"
+      ],
+      "activities": [
+        "hiking",
+        "caving",
+        "rock climbing",
+        "archery",
+        "swimming",
+        "arts and crafts",
+        "music",
+        "games",
+        "chapel"
+      ],
+      "grade_min": 3,
+      "grade_max": 12,
+      "description_short": "Overnight church camp on Pine Mountain near Gorham in the White Mountains, run by the New Hampshire Conference of the United Church of Christ. Kids entering grades 3 to 12 come for week long sessions grouped by grade, with hiking, caving, rock climbing, swimming, archery and crafts alongside daily chapel and open faith discussion.",
+      "indoor_outdoor": "outdoor",
+      "religious_affiliation": "United Church of Christ",
+      "price_min": 240,
+      "price_max": 750,
+      "price_per_week": 750,
+      "price_per": "session",
+      "transportation": false,
+      "meals_included": true,
+      "financial_aid": true,
+      "special_needs_notes": "Families should tell the directors about any physical, emotional or behavioral needs before registering by contacting the executive director. The camp says it cannot serve every need but tries to support as many campers as it can.",
+      "aca_accredited": true,
+      "aca_source_url": "https://www.hortoncenter.org/sessions",
+      "season_year": 2026,
+      "sessions": [
+        {
+          "name": "Week 1: HC Serves (grades 3 to 12 and adults)",
+          "start_date": "2026-06-21",
+          "end_date": "2026-06-25",
+          "price": 330,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 1: Getting Started (grades 3 to 5)",
+          "start_date": "2026-06-24",
+          "end_date": "2026-06-27",
+          "price": 330,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 1: Leaders in Training (grades 10 to 12)",
+          "start_date": "2026-06-24",
+          "end_date": "2026-06-27",
+          "price": 330,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 2: Elementary Eco-Explorers (grades 3 to 5)",
+          "start_date": "2026-06-28",
+          "end_date": "2026-07-04",
+          "price": 750,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 2: Middlers on the Mountain (grades 6 to 8)",
+          "start_date": "2026-06-28",
+          "end_date": "2026-07-04",
+          "price": 750,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 2: Senior High, Choose Your Own Adventure (grades 9 to 12)",
+          "start_date": "2026-06-28",
+          "end_date": "2026-07-04",
+          "price": 750,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 3: Camp M.O.R.E. (grades 4 to 12)",
+          "start_date": "2026-07-05",
+          "end_date": "2026-07-11",
+          "price": 750,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 4: New Things (grades 3 to 5)",
+          "start_date": "2026-07-12",
+          "end_date": "2026-07-18",
+          "price": 750,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 4: Adventure Camp Jr. (grades 6 to 8)",
+          "start_date": "2026-07-12",
+          "end_date": "2026-07-18",
+          "price": 750,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 4: Adventure Camp Sr. (grades 9 to 12)",
+          "start_date": "2026-07-12",
+          "end_date": "2026-07-18",
+          "price": 750,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 5: Hogwarts on the Mountain (grades 4 to 6)",
+          "start_date": "2026-07-19",
+          "end_date": "2026-07-25",
+          "price": 750,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 5: Middler Mix-Up (grades 7 to 9)",
+          "start_date": "2026-07-19",
+          "end_date": "2026-07-25",
+          "price": 750,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 5: Up-Out-On! (grades 10 to 12)",
+          "start_date": "2026-07-19",
+          "end_date": "2026-07-25",
+          "price": 750,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 7: Pride on the Mountain (grades 7 to 12)",
+          "start_date": "2026-08-02",
+          "end_date": "2026-08-06",
+          "price": 330,
+          "availability": "unknown"
+        }
+      ],
+      "notes": "Each session has three voluntary price tiers and families choose one: week long sessions are $750, $620 or $545, and shorter sessions $330, $285 or $240. Session prices shown are the top (whole cost) tier. A $100 deposit holds a spot. Check in is usually Sunday 2 to 4 pm and pickup Saturday 9 am. The off season office is at 140 Sheep Davis Road, Pembroke.",
+      "sources": [
+        {
+          "url": "https://www.hortoncenter.org/sessions",
+          "checked": "2026-11-25",
+          "fields": [
+            "name",
+            "website_url",
+            "email",
+            "phone",
+            "camp_type",
+            "grade_min",
+            "grade_max",
+            "price_min",
+            "price_max",
+            "price_per_week",
+            "price_per",
+            "aca_accredited",
+            "aca_source_url",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        },
+        {
+          "url": "https://www.hortoncenter.org/faq",
+          "checked": "2026-11-25",
+          "fields": [
+            "operator_name",
+            "primary_categories",
+            "secondary_categories",
+            "activities",
+            "description_short",
+            "indoor_outdoor",
+            "religious_affiliation",
+            "transportation",
+            "meals_included",
+            "financial_aid",
+            "special_needs_notes"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        },
+        {
+          "url": "https://www.hortoncenter.org/directions",
+          "checked": "2026-11-25",
+          "fields": [
+            "street_address",
+            "city",
+            "state",
+            "zip"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        },
+        {
+          "url": "https://www.hortoncenter.org/register",
+          "checked": "2026-11-25",
+          "fields": [
+            "registration_url"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        }
+      ]
+    },
+    {
+      "slug": "kimball-jenkins-summer-art-camp-concord",
+      "name": "Kimball Jenkins Summer Art Camp",
+      "operator_name": "Kimball Jenkins School of Art",
+      "website_url": "https://www.kimballjenkins.com/",
+      "email": "lindsay@kimballjenkins.com",
+      "phone": "603-225-3932",
+      "street_address": "266 N. Main St.",
+      "city": "Concord",
+      "state": "NH",
+      "zip": "03301",
+      "camp_type": "specialty",
+      "primary_categories": [
+        "arts"
+      ],
+      "activities": [
+        "painting",
+        "drawing",
+        "mixed media",
+        "character design",
+        "wearable art",
+        "art exhibition"
+      ],
+      "age_min": 6,
+      "age_max": 14,
+      "description_short": "Art day camp at Kimball Jenkins in Concord, run in two week themed sessions. Campers aged 6 to 14 take three art classes a day with Kimball Jenkins faculty, grouped by age, and show their work in the historic mansion on the last Friday.",
+      "indoor_outdoor": "indoor",
+      "price_min": 700,
+      "price_max": 725,
+      "price_per": "session",
+      "extended_care": true,
+      "meals_included": false,
+      "financial_aid": true,
+      "refund_policy_summary": "Cancellations 30 or more days before a session get a full refund less a $50 fee. Later cancellations are refunded only if the spot is filled from the waitlist, with case by case review for serious illness or family emergency. Families can instead donate the tuition or take a credit for another youth program.",
+      "season_year": 2026,
+      "sessions": [
+        {
+          "name": "Session A: KPopalooza (2 weeks)",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-17",
+          "price": 725,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session B: Color Explosion (2 weeks)",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-31",
+          "price": 725,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session C: Fantasy Fairytales and Mystical Creatures (2 weeks)",
+          "start_date": "2026-08-03",
+          "end_date": "2026-08-14",
+          "price": 725,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.kimballjenkins.com/UploadedFiles/Images/Kimball%20Jenkins%20Camp%20Handbook%202026.docx.pdf",
+          "checked": "2026-11-25",
+          "fields": [
+            "name",
+            "operator_name",
+            "email",
+            "camp_type",
+            "primary_categories",
+            "activities",
+            "age_min",
+            "age_max",
+            "description_short",
+            "indoor_outdoor",
+            "price_min",
+            "price_max",
+            "price_per",
+            "extended_care",
+            "meals_included",
+            "financial_aid",
+            "refund_policy_summary",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        },
+        {
+          "url": "https://www.kimballjenkins.com/",
+          "checked": "2026-11-25",
+          "fields": [
+            "website_url",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        }
+      ]
+    },
+    {
+      "slug": "little-river-summer-camp-exeter",
+      "name": "Little River Summer Camp",
+      "operator_name": "Southern District YMCA",
+      "website_url": "https://www.sdymca.org/little-river",
+      "registration_url": "https://operations.daxko.com/Online/5279/ProgramsV2/Search.mvc?category_ids=CAT1095",
+      "email": "SACCinfo@sdymca.org",
+      "phone": "603-319-5937",
+      "street_address": "30 Linden Street",
+      "city": "Exeter",
+      "state": "NH",
+      "camp_type": "day",
+      "primary_categories": [
+        "general"
+      ],
+      "secondary_categories": [
+        "sports",
+        "outdoor"
+      ],
+      "activities": [
+        "theme weeks",
+        "zumba",
+        "pound",
+        "yoga",
+        "field trips",
+        "trips to camp lincoln"
+      ],
+      "grade_min": 0,
+      "grade_max": 5,
+      "age_min": 5,
+      "age_max": 11,
+      "description_short": "YMCA day camp at the Tuck Learning Center in Exeter for children in kindergarten to grade 5, in one week sessions over eight weeks, 8:00 to 4:00. Each week has a theme, a field trip, YMCA fitness classes and a trip to Camp Lincoln in Kingston.",
+      "indoor_outdoor": "both",
+      "price_per_week": 329,
+      "price_per": "week",
+      "extended_care": true,
+      "financial_aid": true,
+      "season_year": 2026,
+      "sessions": [
+        {
+          "name": "Week 1",
+          "start_date": "2026-06-22",
+          "end_date": "2026-06-26",
+          "price": 329,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 2",
+          "start_date": "2026-06-29",
+          "end_date": "2026-07-03",
+          "price": 329,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 3",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "price": 329,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 4",
+          "start_date": "2026-07-13",
+          "end_date": "2026-07-17",
+          "price": 329,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 5",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "price": 329,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 6",
+          "start_date": "2026-07-27",
+          "end_date": "2026-07-31",
+          "price": 329,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 7",
+          "start_date": "2026-08-03",
+          "end_date": "2026-08-07",
+          "price": 329,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 8",
+          "start_date": "2026-08-10",
+          "end_date": "2026-08-14",
+          "price": 329,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.sdymca.org/little-river",
+          "checked": "2026-11-25",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "registration_url",
+            "email",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "camp_type",
+            "primary_categories",
+            "secondary_categories",
+            "activities",
+            "description_short",
+            "indoor_outdoor",
+            "price_per_week",
+            "price_per",
+            "extended_care",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-22, approved by Andrew Krensky"
+        },
+        {
+          "url": "https://www.sdymca.org/summer-camps",
+          "checked": "2026-11-25",
+          "fields": [
+            "grade_min",
+            "grade_max",
+            "age_min",
+            "age_max",
+            "financial_aid"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-22, approved by Andrew Krensky"
+        },
+        {
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=30+Linden+Street%2C+Exeter%2C+NH&benchmark=Public_AR_Current&format=json",
+          "checked": "2026-11-25",
+          "fields": [
+            "zip"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-22, approved by Andrew Krensky"
+        }
+      ],
+      "zip": "03833"
+    },
+    {
+      "slug": "r-e-a-c-h-camp-durham",
+      "name": "R.E.A.C.H. Camp",
+      "operator_name": "Oyster River Cooperative School District and Durham Parks & Recreation",
+      "website_url": "https://durhamrec.recdesk.com/RecDeskPortal/Portals/248/2026%20REACH%20Catalog.pdf",
+      "registration_url": "https://durhamrec.recdesk.com/Community/Home",
+      "email": "recreation@ci.durham.nh.us",
+      "phone": "(603) 817-4074",
+      "city": "Durham",
+      "state": "NH",
+      "zip": "03824",
+      "camp_type": "day",
+      "primary_categories": [
+        "general"
+      ],
+      "secondary_categories": [
+        "arts",
+        "STEM",
+        "sports"
+      ],
+      "activities": [
+        "robotics",
+        "crafts",
+        "science experiments",
+        "cooking",
+        "field hockey",
+        "chess",
+        "musical theater",
+        "swimming",
+        "friday field trips"
+      ],
+      "grade_min": 1,
+      "grade_max": 8,
+      "age_min": 6,
+      "age_max": 14,
+      "description_short": "A Monday to Thursday summer camp at Oyster River Middle School in Durham for children entering 1st to 8th grade. Mornings are school district enrichment camps such as robotics, crafts, cooking and sports, and afternoons with Durham Parks & Recreation bring games, crafts, water play and swimming, with optional Friday field trips.",
+      "price_per_week": 275,
+      "price_min": 130,
+      "price_max": 275,
+      "price_per": "week",
+      "refund_policy_summary": "Cancel by April 30 for a full refund or credit, May 1 to 31 for 50%, and from June 1 with two weeks notice for a 50% account credit only. Later cancellations get nothing back.",
+      "swim_waterfront_notes": "Afternoon camp includes water activities and swimming, and some weeks visit Wellington State Park or Great Island Common. The guide gives no swim test details.",
+      "season_year": 2026,
+      "notes": "Full day means registering for both halves each week: the morning school district camp (8:30 to 11:30am, $130) plus the afternoon Parks & Recreation camp (noon to 5pm, $145), so $275 a week; a supervised lunch runs 11:30 to noon. Optional Friday field trips are 8:30am to 4:30pm for $80, up to 22 campers. The guide shows one rate with no resident or non-resident split. Registration ran February 18 to April 17, 2026.",
+      "sessions": [
+        {
+          "name": "Week 1",
+          "start_date": "2026-06-29",
+          "end_date": "2026-07-02",
+          "price": 275,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 2",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-09",
+          "price": 275,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 3",
+          "start_date": "2026-07-13",
+          "end_date": "2026-07-16",
+          "price": 275,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 4",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-23",
+          "price": 275,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 5",
+          "start_date": "2026-07-27",
+          "end_date": "2026-07-30",
+          "price": 275,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://durhamrec.recdesk.com/RecDeskPortal/Portals/248/2026%20REACH%20Catalog.pdf",
+          "checked": "2026-11-25",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "registration_url",
+            "camp_type",
+            "primary_categories",
+            "secondary_categories",
+            "activities",
+            "grade_min",
+            "grade_max",
+            "age_min",
+            "age_max",
+            "description_short",
+            "price_per_week",
+            "price_min",
+            "price_max",
+            "price_per",
+            "refund_policy_summary",
+            "swim_waterfront_notes",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-22, approved by Andrew Krensky"
+        },
+        {
+          "url": "https://durhamrec.recdesk.com/Community/Page?pageId=9892",
+          "checked": "2026-11-25",
+          "fields": [
+            "email",
+            "phone",
+            "city",
+            "state",
+            "zip"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-22, approved by Andrew Krensky"
         }
       ]
     }
