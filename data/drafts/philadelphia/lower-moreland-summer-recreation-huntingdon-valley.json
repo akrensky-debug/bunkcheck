@@ -1,0 +1,109 @@
+{
+  "slug": "lower-moreland-summer-recreation-huntingdon-valley",
+  "name": "Lower Moreland Summer Recreation",
+  "operator_name": "Lower Moreland Township",
+  "website_url": "https://www.lowermoreland.org/residents/parks__trails___recreation/summer_recreation_2026",
+  "phone": "215-947-3100",
+  "street_address": "Murray Avenue School, 2551 Murray Avenue",
+  "city": "Huntingdon Valley",
+  "state": "PA",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "activities": [
+    "theme weeks",
+    "field trips"
+  ],
+  "grade_min": 2,
+  "grade_max": 7,
+  "age_min": 7,
+  "age_max": 13,
+  "description_short": "Six week morning recreation program for Lower Moreland Township children who have finished grades 1 to 6, run 9:00 to 1:00 at Murray Avenue School. Each week has a theme with planned activities and field trips to local activity centers; only township children can enroll.",
+  "indoor_outdoor": "both",
+  "transportation": false,
+  "price_min": 375,
+  "price_max": 375,
+  "price_per": "summer",
+  "refund_policy_summary": "No refunds or adjustments.",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Summer program, Monday to Friday 9:00 to 1:00",
+      "start_date": "2026-06-22",
+      "end_date": "2026-07-31",
+      "price": 375,
+      "availability": "unknown"
+    }
+  ],
+  "notes": "2026: $375 per child for the summer, trips included; $25 a day guest fee. Open to Lower Moreland Township children only; register by mail or in person at the Municipal Building, 640 Red Lion Road, from April 2, 2026. Parents provide transportation to and from the school. Children bring a snack or light lunch. The page lists no camp on July 4, 2026, a Saturday. 2027 not yet posted.",
+  "sources": [
+    {
+      "url": "https://www.lowermoreland.org/residents/parks__trails___recreation/summer_recreation_2026",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "age_min",
+        "age_max",
+        "description_short",
+        "indoor_outdoor",
+        "transportation",
+        "price_min",
+        "price_max",
+        "price_per",
+        "refund_policy_summary",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Summer Recreation 2026 page: township children who completed grades 1 to 6 in 2025/26 (stored as grades 2 to 7 in the fall; ages derived from grades, not stated); June 22 to July 31, 9 to 1, Murray Avenue School; $375 per child; parents provide transportation; gym floor and outdoor activities; no refunds. Phone is the township office.",
+      "checked": "2026-11-25"
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=2551+Murray+Avenue%2C+Huntingdon+Valley%2C+PA&benchmark=Public_AR_Current&format=json",
+      "checked": "2026-11-25",
+      "fields": [
+        "zip"
+      ],
+      "note": "ZIP looked up with the Census Bureau geocoder from the address on the camp's page (2551 MURRAY AVE, HUNTINGDON VALLEY, PA, 19006)"
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.lowermoreland.org/residents/parks__trails___recreation/summer_recreation_2026",
+      "kind": "html",
+      "title": "Summer Recreation 2026 - Township of Lower Moreland, PA"
+    },
+    "warnings": [],
+    "unknowns": [
+      "2027 dates and fee",
+      "Email for the program"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "city 'Huntingdon Valley', PA is not in cities.py"
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-25",
+      "page_checked": "https://www.lowermoreland.org/residents/parks__trails___recreation/summer_recreation_2026",
+      "changes": [
+        "New camp, researched from https://www.lowermoreland.org/residents/parks__trails___recreation/summer_recreation_2026",
+        "ZIP 19006 looked up from the camp's street address with the Census geocoder (ZIP lookups allowed by Andrew, 22 November)."
+      ],
+      "for_andrew": [
+        "Residents only: the page is for Lower Moreland Township children, with one fee of $375 for the six weeks. I recorded that rate and said who can enroll in the description. It is a 9 to 1 morning program, and Huntingdon Valley is outside the named towns (borders Abington). List it?"
+      ]
+    }
+  },
+  "zip": "19006"
+}
