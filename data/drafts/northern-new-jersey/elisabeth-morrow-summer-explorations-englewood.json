@@ -1,0 +1,123 @@
+{
+  "slug": "elisabeth-morrow-summer-explorations-englewood",
+  "name": "Summer Explorations",
+  "operator_name": "The Elisabeth Morrow School",
+  "website_url": "https://elisabethmorrow.org/summer-explorations/",
+  "registration_url": "https://www.ultracamp.com/clientlogin.aspx?idCamp=523&campCode=ese",
+  "street_address": "435 Lydecker St.",
+  "city": "Englewood",
+  "state": "NJ",
+  "zip": "07631",
+  "camp_type": "day",
+  "gender_policy": "coed",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "STEM",
+    "arts",
+    "technology",
+    "performing_arts",
+    "sports",
+    "leadership"
+  ],
+  "activities": [
+    "science",
+    "art",
+    "technology",
+    "drama",
+    "sports",
+    "theme weeks",
+    "enrichment workshops",
+    "outdoor play"
+  ],
+  "age_min": 2,
+  "age_max": 15,
+  "grade_max": 9,
+  "description_short": "Summer program on the Elisabeth Morrow School's 14 acre wooded campus in Englewood for age 2 through grade 9, half day (8:30 to 12:15) or full day (8:30 to 3:15). Young children have theme weeks in small classes, grades 2 to 6 pick weekly workshops in science, art, technology, drama and sports, and grades 7 to 9 have a three week Leaders in Training course.",
+  "indoor_outdoor": "both",
+  "extended_care": true,
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Specialized week: AI Summer Institute (grades 3 to 9) and enrichment (early childhood to grade 2)",
+      "start_date": "2027-06-21",
+      "end_date": "2027-06-25",
+      "availability": "unknown"
+    },
+    {
+      "name": "Six week summer program (age 2 to grade 9), weekly sessions",
+      "start_date": "2027-06-28",
+      "end_date": "2027-08-06",
+      "availability": "unknown"
+    }
+  ],
+  "meals_included": false,
+  "refund_policy_summary": "No refunds after May 1 for changes in plans; for health reasons the camp tries another session first, and gives a full refund with a medical provider's note.",
+  "sources": [
+    {
+      "url": "https://elisabethmorrow.org/summer-explorations/",
+      "checked": "2026-11-25",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "gender_policy",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "grade_max",
+        "description_short",
+        "indoor_outdoor",
+        "extended_care",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Summer Explorations 2027: June 21 to 25 specialized week (AI Summer Institute for grades 3 to 9 plus enrichment for early childhood to grade 2), then a six week program June 28 to August 6 for age 2 to grade 9 in weekly sessions. Half day 8:30 to 12:15 or full day 8:30 to 3:15; after camp care 3:15 to 5:30. age_max 15 derived from grade 9, not stated. Address from the page footer."
+    },
+    {
+      "url": "https://elisabethmorrow.org/summer-explorations/faq/",
+      "checked": "2026-11-25",
+      "fields": [
+        "meals_included",
+        "refund_policy_summary"
+      ],
+      "note": "Researched by Claude from this page. 2027 prices: 'Full-day and half-day pricing will be shared soon.' Snacks provided; full day campers bring lunch or order paid lunch delivery. Families can contract privately with Rainbow Transportation for busing."
+    }
+  ],
+  "review": {
+    "status": "ready",
+    "source": {
+      "url": "https://elisabethmorrow.org/summer-explorations/",
+      "kind": "html",
+      "title": "Summer Explorations - Elisabeth Morrow School"
+    },
+    "warnings": [],
+    "unknowns": [
+      "2027 half day and full day prices",
+      "Exact weekly session dates",
+      "ACA accreditation",
+      "Phone and email for the summer office"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-25",
+      "page_checked": "https://elisabethmorrow.org/summer-explorations/",
+      "changes": [
+        "New camp, researched from https://elisabethmorrow.org/summer-explorations/"
+      ],
+      "for_andrew": [
+        "Transportation left empty: the camp points families to a private bus company (Rainbow Transportation) they contract with themselves, not a camp bus."
+      ]
+    }
+  }
+}

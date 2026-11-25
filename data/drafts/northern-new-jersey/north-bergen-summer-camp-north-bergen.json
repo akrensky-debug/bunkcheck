@@ -1,0 +1,93 @@
+{
+  "slug": "north-bergen-summer-camp-north-bergen",
+  "name": "North Bergen Summer Camp",
+  "operator_name": "Township of North Bergen Recreation",
+  "website_url": "https://www.northbergen.org/News/View/11697/summer-camp-registration-open-now-for-kids-ages-6-12",
+  "street_address": "6300 Meadowview Ave.",
+  "city": "North Bergen",
+  "state": "NJ",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "age_min": 6,
+  "age_max": 12,
+  "description_short": "Township summer camp for North Bergen residents ages 6 to 12, run at six sites: Horace Mann, Nicholas J. Sacco Jr. High School, Robert Fulton School, Franklin School and the two recreation centers on Meadowview Avenue and Kennedy Boulevard.",
+  "price_min": 50,
+  "price_max": 50,
+  "price_per": "summer",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Summer Camp 2026",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-31",
+      "availability": "unknown"
+    }
+  ],
+  "notes": "North Bergen residents only; registration in person at the Recreation Center, 6300 Meadowview Ave., with a birth certificate, a recent utility bill and $50. Limited to the first 100 children per site. The address shown is the Recreation Center, one of the six sites. Daily hours aren't posted.",
+  "sources": [
+    {
+      "url": "https://www.northbergen.org/News/View/11697/summer-camp-registration-open-now-for-kids-ages-6-12",
+      "checked": "2026-11-25",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "street_address",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "age_min",
+        "age_max",
+        "description_short",
+        "price_min",
+        "price_max",
+        "price_per",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Township news post of June 5, 2026: camp runs June 29 through July 31 at six sites, ages 6 to 12, $50, first 100 children per site, North Bergen residents only."
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=6300+Meadowview+Ave.%2C+North+Bergen%2C+NJ&benchmark=Public_AR_Current&format=json",
+      "checked": "2026-11-22",
+      "fields": [
+        "zip"
+      ],
+      "note": "ZIP looked up with the Census Bureau geocoder from the address on the camp's page (6300 MEADOWVIEW AVE, NORTH BERGEN, NJ, 07047)"
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.northbergen.org/News/View/11697/summer-camp-registration-open-now-for-kids-ages-6-12",
+      "kind": "html",
+      "title": "The Official Website of The Township of North Bergen, NJ - News"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Daily hours",
+      "What activities the camp offers",
+      "Whether lunch is provided",
+      "2027 season"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-25",
+      "page_checked": "https://www.northbergen.org/News/View/11697/summer-camp-registration-open-now-for-kids-ages-6-12",
+      "changes": [
+        "New camp, researched from https://www.northbergen.org/News/View/11697/summer-camp-registration-open-now-for-kids-ages-6-12",
+        "ZIP 07047 looked up from the camp's street address with the Census geocoder (Andrew allowed ZIP lookups, 22 November)."
+      ],
+      "for_andrew": [
+        "Residents only camp: recorded its one fee ($50 for the summer) and said who can enroll.",
+        "The only source is a township news post on the town's own site; there is no standing camp page.",
+        "Six sites share one set of dates and ages, so this is one listing at the Recreation Center address."
+      ]
+    }
+  },
+  "zip": "07047"
+}
