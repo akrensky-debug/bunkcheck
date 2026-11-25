@@ -1,0 +1,180 @@
+{
+  "slug": "camp-curiosity-doylestown",
+  "name": "Camp Curiosity",
+  "operator_name": "Curiosity Academy",
+  "website_url": "https://www.campcuriosity.com/camp",
+  "email": "summer@campcuriosity.com",
+  "phone": "215-348-7221",
+  "street_address": "4425 Landisville Road",
+  "city": "Doylestown",
+  "state": "PA",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "swimming",
+    "nature",
+    "sports",
+    "arts"
+  ],
+  "activities": [
+    "swim lessons",
+    "free swim",
+    "water playground",
+    "nature trails",
+    "pond and creek exploration",
+    "art",
+    "tie dye",
+    "sports",
+    "camp games",
+    "pickleball",
+    "fishing",
+    "archery",
+    "kayaks",
+    "pedal boats",
+    "golf driving range",
+    "mini golf",
+    "gaga"
+  ],
+  "age_min": 2,
+  "age_max": 14,
+  "description_short": "Traditional day camp for ages 2 to 14 on a 50 acre campus in Doylestown with two pools, a stocked pond, creek and woods. Older campers get daily swim lessons and free swim plus art, sports, archery, fishing, boating and golf; preschool groups have water play and rest time.",
+  "indoor_outdoor": "both",
+  "price_per_week": 695,
+  "price_per": "week",
+  "meals_included": false,
+  "refund_policy_summary": "The $100 registration fee is nonrefundable. The deposit is refundable if you withdraw by email before June 1; changes after May 1 cost $50 per week per change.",
+  "season_year": 2027,
+  "notes": "2027 weekly rates: $615 until January 31, $655 until April 30, $695 from May 1 or for a single week, plus a $100 registration fee; two weeks recommended. 5% discounts for siblings, service members, first responders and teachers, and 5+ weeks (stack up to 10%). Camp 9:00 to 4:00 with drop off from 8:00 and pick up until 5:00. Groups: Trekkers (2), Rovers (3), Mavericks (4), Pioneers (entering K), grades 1 to 6; CIT program for grades 7 to 9 at $575 a week, four week minimum. Lunch and snacks packed or bought; soft pretzels Wednesdays and water ice Fridays included.",
+  "sessions": [
+    {
+      "name": "Week 1",
+      "start_date": "2027-06-14",
+      "end_date": "2027-06-18",
+      "price": 695,
+      "availability": "open"
+    },
+    {
+      "name": "Week 2",
+      "start_date": "2027-06-21",
+      "end_date": "2027-06-25",
+      "price": 695,
+      "availability": "open"
+    },
+    {
+      "name": "Week 3",
+      "start_date": "2027-06-28",
+      "end_date": "2027-07-02",
+      "price": 695,
+      "availability": "open"
+    },
+    {
+      "name": "Week 4",
+      "start_date": "2027-07-05",
+      "end_date": "2027-07-09",
+      "price": 695,
+      "availability": "open"
+    },
+    {
+      "name": "Week 5",
+      "start_date": "2027-07-12",
+      "end_date": "2027-07-16",
+      "price": 695,
+      "availability": "open"
+    },
+    {
+      "name": "Week 6",
+      "start_date": "2027-07-19",
+      "end_date": "2027-07-23",
+      "price": 695,
+      "availability": "open"
+    },
+    {
+      "name": "Week 7",
+      "start_date": "2027-07-26",
+      "end_date": "2027-07-30",
+      "price": 695,
+      "availability": "open"
+    },
+    {
+      "name": "Week 8",
+      "start_date": "2027-08-02",
+      "end_date": "2027-08-06",
+      "price": 695,
+      "availability": "open"
+    },
+    {
+      "name": "Week 9",
+      "start_date": "2027-08-09",
+      "end_date": "2027-08-13",
+      "price": 695,
+      "availability": "open"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.campcuriosity.com/camp",
+      "checked": "2026-11-25",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "indoor_outdoor",
+        "price_per_week",
+        "price_per",
+        "meals_included",
+        "refund_policy_summary",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Summer camp page: ages 2 to 14, 2027 dates for weeks 1 to 9 (June 14 to August 13), 2027 weekly rates, activities, campus, FAQs on hours, lunch and refunds; address 4425 Landisville Road, Doylestown, with no ZIP. The page's text sits in data the repo fetcher's renderer did not show, so Claude read it from the same page's HTML, fetched with the BunkcheckBot user agent."
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=4425+Landisville+Road%2C+Doylestown%2C+PA&benchmark=Public_AR_Current&format=json",
+      "checked": "2026-11-25",
+      "fields": [
+        "zip"
+      ],
+      "note": "ZIP looked up with the Census Bureau geocoder from the address on the camp's page (4425 LANDISVILLE RD, DOYLESTOWN, PA, 18902)"
+    }
+  ],
+  "review": {
+    "status": "ready",
+    "source": {
+      "url": "https://www.campcuriosity.com/camp",
+      "kind": "html",
+      "title": "Camp Curiosity Summer Day Camp, Doylestown PA"
+    },
+    "warnings": [],
+    "unknowns": [
+      "ZIP (to look up)",
+      "Extended care",
+      "ACA accreditation"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-25",
+      "page_checked": "https://www.campcuriosity.com/camp",
+      "changes": [
+        "New camp, researched from https://www.campcuriosity.com/camp",
+        "ZIP 18902 looked up from the camp's street address with the Census geocoder (ZIP lookups allowed by Andrew, 22 November)."
+      ],
+      "for_andrew": []
+    }
+  },
+  "zip": "18902"
+}
