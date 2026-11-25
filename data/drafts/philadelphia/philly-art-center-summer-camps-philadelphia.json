@@ -1,0 +1,103 @@
+{
+  "slug": "philly-art-center-summer-camps-philadelphia",
+  "name": "Philly Art Center Summer Camps",
+  "operator_name": "Philly Art Center",
+  "website_url": "https://phillyartcenter.com/camps/summer-camps/",
+  "email": "info@phillyartcenter.com",
+  "phone": "215-765-2787",
+  "street_address": "2333 Fairmount Avenue",
+  "city": "Philadelphia",
+  "state": "PA",
+  "zip": "19130",
+  "camp_type": "specialty",
+  "primary_categories": [
+    "arts"
+  ],
+  "activities": [
+    "2-D and 3-D art",
+    "sewing (tween weeks)",
+    "sketchbooks",
+    "outdoor play"
+  ],
+  "age_min": 4,
+  "age_max": 13,
+  "description_short": "Weekly art camps from June to September at Philly Art Center's studios. Kids Camp (ages 4 to 12) groups children by age to work through a weekly theme in 2-D and 3-D media with outdoor play after lunch; Tween Camp (ages 9 to 13) runs select weeks with deeper studio work in one medium, such as sewing.",
+  "indoor_outdoor": "both",
+  "price_per_week": 485,
+  "price_min": 485,
+  "price_max": 515,
+  "price_per": "week",
+  "extended_care": true,
+  "meals_included": false,
+  "refund_policy_summary": "Early bird registrations are non-refundable. From January 8 to March 31, week switches or credits cost $30 and refunds $60; from April 1 to May 31, switches or credits cost $50 and there are no refunds; no changes after May 31.",
+  "special_needs_notes": "Families of children with specialized supports, a 1:1 aide or therapists are asked to note it in their account and email at least two weeks ahead to plan together.",
+  "season_year": 2026,
+  "notes": "2026 weekly rates (one price for everyone): Kids Camp $485, Tween Camp $495, Tween Sewing $515; early care 8:15 to 9:00 $47 a week, late care 3:00 to 5:30 $105 a week. Camp day 9:00 to 3:00. Campers bring a lunch that needs no refrigeration. 2027 registration opens January 6 at 10 am, with details due December 28. Philly Art Center also has studios in Queen Village (514 Bainbridge Street), Mount Airy (530 Carpenter Lane) and Cherry Hill, NJ; the camp page does not say which studios host summer camp.",
+  "sources": [
+    {
+      "url": "https://phillyartcenter.com/camps/summer-camps/",
+      "checked": "2026-11-25",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "phone",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "indoor_outdoor",
+        "price_per_week",
+        "price_min",
+        "price_max",
+        "price_per",
+        "extended_care",
+        "meals_included",
+        "refund_policy_summary",
+        "special_needs_notes"
+      ],
+      "note": "Researched by Claude from this page. Summer Camps page: by the week, June to September, ages 4 to 13; Kids and Tween camp schedules with outdoor play; 2026 weekly rates; extra care; bring lunch; cancellation terms; 2027 registration January 6. No session dates and no per location list on the page."
+    },
+    {
+      "url": "https://phillyartcenter.com/locations/fairmount/",
+      "checked": "2026-11-25",
+      "fields": [
+        "street_address",
+        "city",
+        "state",
+        "zip"
+      ],
+      "note": "Researched by Claude from this page. Fairmount location page: flagship studio at 2333 Fairmount Avenue. Used as the camp address because it is the flagship; the camp page does not confirm camp runs here."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://phillyartcenter.com/camps/summer-camps/",
+      "kind": "html",
+      "title": "Summer Camps - Philly Art Center"
+    },
+    "warnings": [],
+    "unknowns": [
+      "2026 or 2027 week dates",
+      "Which studios host summer camp",
+      "ACA accreditation"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-25",
+      "page_checked": "https://phillyartcenter.com/camps/summer-camps/",
+      "changes": [
+        "New camp, researched from https://phillyartcenter.com/camps/summer-camps/"
+      ],
+      "for_andrew": [
+        "The camp page gives 2026 weekly rates but no week dates, and does not say which of its studios (Fairmount, Queen Village, Mount Airy in Philadelphia; Cherry Hill, NJ) run summer camp. I placed the listing at the Fairmount flagship. Keep it there, split by studio once the 2027 details come out on December 28, or hold it until then?"
+      ]
+    }
+  }
+}
