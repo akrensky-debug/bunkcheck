@@ -1,0 +1,109 @@
+{
+  "slug": "camp-pgt-white-plains",
+  "name": "Camp PGT",
+  "operator_name": "The Play Group Theatre",
+  "website_url": "https://www.playgroup.org/summer/",
+  "phone": "914-946-4433",
+  "street_address": "One North Broadway",
+  "city": "White Plains",
+  "state": "NY",
+  "zip": "10601",
+  "camp_type": "specialty",
+  "primary_categories": [
+    "performing_arts"
+  ],
+  "secondary_categories": [
+    "arts"
+  ],
+  "activities": [
+    "acting",
+    "musical theatre",
+    "dance",
+    "voice",
+    "improv",
+    "on camera acting",
+    "playwriting",
+    "sketch comedy",
+    "stage combat",
+    "design and tech",
+    "crafts"
+  ],
+  "age_min": 4,
+  "age_max": 18,
+  "description_short": "A theatre day camp at The Play Group Theatre in White Plains for ages 4 to 18, with one and two week programs by age group. Younger campers take acting, dance, voice and improv and end each session with a show they help write; older students can add weeks of improv, playwriting, sketch comedy, on camera work or design and tech.",
+  "indoor_outdoor": "indoor",
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "2 week Session 1 (Little Theatre, PGT Kids, TeenCo)",
+      "start_date": "2027-07-05",
+      "end_date": "2027-07-16",
+      "availability": "unknown"
+    },
+    {
+      "name": "2 week Session 2 (Little Theatre, PGT Kids, TeenCo)",
+      "start_date": "2027-07-19",
+      "end_date": "2027-07-30",
+      "availability": "unknown"
+    }
+  ],
+  "notes": "Summer 2027 runs Monday to Friday, 8:30 to 4. Families can combine one and two week programs into a three or four week summer; a discount applies for both two week sessions. Prices are on the enrollment site, which turned away our fetcher, so tuition is not recorded. One week programs include Improv (July 26 to 30), Playwriting (July 12 to 16), Sketch Comedy (July 5 to 9) and The Pen + The Sword (July 19 to 23).",
+  "sources": [
+    {
+      "url": "https://www.playgroup.org/summer/",
+      "checked": "2026-11-25",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "age_min",
+        "age_max",
+        "primary_categories",
+        "description_short"
+      ],
+      "note": "Researched by Claude from this page. Camp PGT 2027 enrollment open; programs for Littles 4 to 6, Kids 7 to 10, Young Actors 11 to 13, Teens 14 to 18."
+    },
+    {
+      "url": "https://www.playgroup.org/summer/kids.php",
+      "checked": "2026-11-25",
+      "fields": [
+        "secondary_categories",
+        "activities",
+        "indoor_outdoor",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. PGT Kids: classes in acting, dance, voice, improv and on camera, 2027 two week sessions July 5 to 16 and July 19 to 30, 8:30 to 4. Littles and Teens pages show the same session dates."
+    }
+  ],
+  "review": {
+    "status": "ready",
+    "source": {
+      "url": "https://www.playgroup.org/summer/",
+      "kind": "html",
+      "title": "Camp PGT | Musical Theatre & Drama Day Camp | SUMMER THEATRE | The Play Group Theatre"
+    },
+    "warnings": [],
+    "unknowns": [
+      "2027 tuition (the enrollment site playgroup.jumbula.com refused our fetcher with a 403)",
+      "Extended care",
+      "Financial aid"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-25",
+      "page_checked": "https://www.playgroup.org/summer/",
+      "changes": [
+        "New camp, researched from https://www.playgroup.org/summer/"
+      ],
+      "for_andrew": []
+    }
+  }
+}

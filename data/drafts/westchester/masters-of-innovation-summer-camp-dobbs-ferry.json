@@ -1,0 +1,131 @@
+{
+  "slug": "masters-of-innovation-summer-camp-dobbs-ferry",
+  "name": "Masters of Innovation Summer Camp",
+  "operator_name": "The Masters School",
+  "website_url": "https://www.mastersny.org/academics/middle-school/masters-of-innovation-summer-camp",
+  "registration_url": "https://mastersny.myschoolapp.com/page/Masters-of-Innovation-Summer-Camp-Registration?register=%2056581&ssl=1",
+  "email": "innovationcamp@mastersny.org",
+  "phone": "914-479-6400",
+  "street_address": "49 Clinton Avenue",
+  "city": "Dobbs Ferry",
+  "state": "NY",
+  "zip": "10522",
+  "camp_type": "specialty",
+  "primary_categories": [
+    "STEM"
+  ],
+  "secondary_categories": [
+    "technology",
+    "arts"
+  ],
+  "activities": [
+    "robotics",
+    "programming",
+    "video game design",
+    "woodworking",
+    "CO2 car racing",
+    "catapults",
+    "fabrication",
+    "design projects"
+  ],
+  "age_min": 10,
+  "age_max": 14,
+  "grade_min": 5,
+  "grade_max": 8,
+  "description_short": "A week by week maker camp in The Masters School's Innovation and Entrepreneurship Center in Dobbs Ferry for Masters students entering grades 5 to 8. Each week stands alone: robotics and video game design, building and racing CO2 cars, or a design studio for personal projects, ending in a showcase for families.",
+  "indoor_outdoor": "indoor",
+  "price_min": 680,
+  "price_max": 850,
+  "price_per": "session",
+  "extended_care": true,
+  "financial_aid": true,
+  "refund_policy_summary": "Tuition is 50% refundable up to one month before camp.",
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Session 1: Robotics, Programming & Video Game Design",
+      "start_date": "2027-06-14",
+      "end_date": "2027-06-17",
+      "price": 680,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 2: Engineering in Motion",
+      "start_date": "2027-06-21",
+      "end_date": "2027-06-25",
+      "price": 850,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 3: Design Studio",
+      "start_date": "2027-08-16",
+      "end_date": "2027-08-20",
+      "price": 850,
+      "availability": "unknown"
+    }
+  ],
+  "notes": "The page is headed 'For Masters Students Entering Grades 5 to 8' and does not say whether students from other schools may enroll. Hours 9 to 3; early drop off 8:30 and late pick up to 3:30 are $50 each per week ($40 in week 1). 4 to 1 camper to staff ratio.",
+  "sources": [
+    {
+      "url": "https://www.mastersny.org/academics/middle-school/masters-of-innovation-summer-camp",
+      "checked": "2026-11-25",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "grade_min",
+        "grade_max",
+        "description_short",
+        "indoor_outdoor",
+        "price_min",
+        "price_max",
+        "price_per",
+        "extended_care",
+        "financial_aid",
+        "refund_policy_summary",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Summer 2027 sessions and tuition; ages derived from grades 5 to 8."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.mastersny.org/academics/middle-school/masters-of-innovation-summer-camp",
+      "kind": "html",
+      "title": "A Summer Camp at The Masters School | For Students Entering Grades 5–8"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Whether students from other schools can enroll"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "city 'Dobbs Ferry', NY is not in cities.py (to be added from the Census gazetteer)"
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-25",
+      "page_checked": "https://www.mastersny.org/academics/middle-school/masters-of-innovation-summer-camp",
+      "changes": [
+        "New camp, researched from https://www.mastersny.org/academics/middle-school/masters-of-innovation-summer-camp"
+      ],
+      "for_andrew": [
+        "The page says the camp is 'For Masters Students Entering Grades 5 to 8'. If it is only for Masters students it is not open to the public; should it be listed?"
+      ]
+    }
+  }
+}

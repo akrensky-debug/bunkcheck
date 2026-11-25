@@ -1,0 +1,111 @@
+{
+  "slug": "somers-day-camp-somers",
+  "name": "Somers Day Camp",
+  "operator_name": "Town of Somers Parks & Recreation",
+  "website_url": "https://www.somersny.gov/resources/camps-clinics",
+  "email": "daycamp@somersny.gov",
+  "phone": "914-232-8441",
+  "street_address": "Reis Park",
+  "city": "Somers",
+  "zip": "10589",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "arts",
+    "sports"
+  ],
+  "activities": [
+    "arts and crafts",
+    "sports",
+    "games",
+    "performers",
+    "special events",
+    "trips"
+  ],
+  "grade_min": 0,
+  "grade_max": 8,
+  "age_min": 5,
+  "age_max": 14,
+  "description_short": "Town day camp at Reis Park for Somers residents entering kindergarten to 8th grade, six weeks, drop off 8:30 to 9 and pick up 2:30 to 3, with arts and crafts, sports, games, performers and special events. Somers Middle School is the rain site, and an after camp program runs until 6.",
+  "indoor_outdoor": "outdoor",
+  "extended_care": true,
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "2026 season (no camp July 3)",
+      "start_date": "2026-06-29",
+      "end_date": "2026-08-07",
+      "availability": "unknown"
+    }
+  ],
+  "state": "NY",
+  "sources": [
+    {
+      "url": "https://www.somersny.gov/resources/camps-clinics",
+      "checked": "2026-11-25",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "street_address",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "grade_min",
+        "grade_max",
+        "age_min",
+        "age_max",
+        "description_short",
+        "indoor_outdoor"
+      ],
+      "note": "Researched by Claude from this page. Camps/Clinics page: Somers Day Camp for Somers residents entering kindergarten through 8th grade at Reis Park, Monday to Friday, drop off 8:30 to 9 and pick up 2:30 to 3, six weeks June to August; arts and crafts, sports, games, performers and special events; 2026 registration opened April 9. No fee posted. Ages derived from grades. Outdoor inferred from a park camp with a rain site."
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/5a3150007b7a1700017bcf4a/69b8571e66d7eb62d23dc34c_26%20camp%20handbook.pdf",
+      "checked": "2026-11-25",
+      "fields": [
+        "email",
+        "phone",
+        "zip",
+        "activities",
+        "extended_care",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. 2026 Parent Handbook: camp at Reis Park Monday June 29 to Friday August 7, 8:30 to 2:30, no camp July 3; Somers Middle School in bad weather; After Camp 3 to 6 pm, $275 for the six weeks; trips; nut free. ZIP 10589 is from the department's mailing address (P.O. Box 46, Somers, NY 10589); no street number is given for Reis Park."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.somersny.gov/resources/camps-clinics",
+      "kind": "html",
+      "title": "Camps/Clinics, Town of Somers"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Fee",
+      "Lunch",
+      "ACA accreditation"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "city 'Somers', NY is not in cities.py"
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-25",
+      "page_checked": "https://www.somersny.gov/resources/camps-clinics",
+      "changes": [
+        "New camp, researched from https://www.somersny.gov/resources/camps-clinics"
+      ],
+      "for_andrew": [
+        "Only Somers residents can enroll; nobody else. Andrew's rule for residents only camps: record the one rate, say who can enroll, and ask. List it?",
+        "No camp fee is posted for 2026 (only the $275 after camp fee). List it without a price?"
+      ]
+    }
+  }
+}

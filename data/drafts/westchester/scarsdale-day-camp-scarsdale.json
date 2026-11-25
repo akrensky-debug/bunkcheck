@@ -83,6 +83,14 @@
         "sessions"
       ],
       "note": "Researched by Claude from this page. Spring/Summer 2026 brochure (PDF), pages 3 and 6 to 8: season Monday July 6 to Friday August 7; camps by grade (Sagamore entering K or 4 and a half by July 7, Lenape 1st, Wapetuck 2nd, Patthunke 3rd to 8th); 9 am to 3:30 pm. Day camp fee $675 a week or $1,705 full season early bird (by April 15), $875 a week or $2,130 full season after. After Camp at the Pool for K to 5, 3:30 to 5:30, $230 a week or $970 a season (needs pool membership and camp bus). Bus service at extra cost. All programs are for Scarsdale residents only unless noted. Ages derived from grades, not stated. The brochure gives no street addresses for the schools. Indoor and outdoor inferred from school sites plus pool."
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=244+Heathcote+Road%2C+Scarsdale%2C+NY&benchmark=Public_AR_Current&format=json",
+      "checked": "2026-11-25",
+      "fields": [
+        "zip"
+      ],
+      "note": "ZIP looked up with the Census Bureau geocoder from 244 Heathcote Road, Scarsdale, the Recreation Office (Supply Building) the brochure names; the brochure gives no camp addresses."
     }
   ],
   "review": {
@@ -106,14 +114,16 @@
       "date": "2026-11-25",
       "page_checked": "https://www.scarsdale.gov/DocumentCenter/View/11642/-2026-Spring---Summer-Brochure-",
       "changes": [
-        "New camp, researched from https://www.scarsdale.gov/DocumentCenter/View/11642/-2026-Spring---Summer-Brochure-"
+        "New camp, researched from https://www.scarsdale.gov/DocumentCenter/View/11642/-2026-Spring---Summer-Brochure-",
+        "ZIP 10583 looked up from the operator's office address with the Census geocoder (ZIP lookups allowed by Andrew, 22 November)."
       ],
       "for_andrew": [
         "Only Scarsdale village residents (the brochure says all programs are residents only unless noted) can enroll; nobody else. Andrew's rule for residents only camps: record the one rate, say who can enroll, and ask. List it?",
         "One listing covers the four grade camps (Sagamore, Lenape, Wapetuck, Patthunke), since they share dates, fees and one director, though they meet at four schools. Split them?",
-        "ZIP: the brochure names no camp address with a ZIP. If the Census lookup filled it, it is from the Recreation Office at 244 Heathcote Road. Fine?",
-        "The same brochure lists a Teen Travel Camp (entering 6th to 8th, two sessions, $2,835 and $2,040) and morning Soccer and Sports camps; not drafted here."
+        "The same brochure lists a Teen Travel Camp (entering 6th to 8th, two sessions, $2,835 and $2,040) and morning Soccer and Sports camps; not drafted here.",
+        "ZIP 10583 is the Census geocoder's ZIP for 244 Heathcote Road, Scarsdale, the Recreation Office (Supply Building) the brochure names; the brochure gives no camp addresses. Fine to place the listing by that ZIP?"
       ]
     }
-  }
+  },
+  "zip": "10583"
 }

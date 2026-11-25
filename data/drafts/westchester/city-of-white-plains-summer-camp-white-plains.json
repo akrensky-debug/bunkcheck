@@ -91,6 +91,14 @@
         "sessions"
       ],
       "note": "Researched by Claude from this page. 2026 Summer Camp info sheet (PDF): six weeks, Tuesday June 30 to Friday August 7, no camp July 3; White Plains residents only; incoming K to 8th grade in September 2026. Chickadee K to 1, 8:15 to 2:45, $1425; Panawok 2 to 3, 8:30 to 3, $1425; Quarropas 4 to 5, 8:45 to 3:45, $1425; Condor 6 to 8, 8:45 to 3:45, $1990. Early drop off ($210) and extended day ($480) at Panawok, Quarropas and Condor. Scholarships with 2025 tax information. Ages derived from grades, not stated. The sheet gives no street addresses for the schools."
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=85+Gedney+Way%2C+White+Plains%2C+NY&benchmark=Public_AR_Current&format=json",
+      "checked": "2026-11-25",
+      "fields": [
+        "zip"
+      ],
+      "note": "ZIP looked up with the Census Bureau geocoder from 85 Gedney Way, White Plains, the Recreation Office the camp sheet names; the sheet gives no camp address."
     }
   ],
   "review": {
@@ -113,13 +121,15 @@
       "date": "2026-11-25",
       "page_checked": "https://www.cityofwhiteplains.com/DocumentCenter/View/11955",
       "changes": [
-        "New camp, researched from https://www.cityofwhiteplains.com/DocumentCenter/View/11955"
+        "New camp, researched from https://www.cityofwhiteplains.com/DocumentCenter/View/11955",
+        "ZIP 10605 looked up from the operator's office address with the Census geocoder (ZIP lookups allowed by Andrew, 22 November)."
       ],
       "for_andrew": [
         "Only White Plains residents can enroll; nobody else. Andrew's rule for residents only camps: record the one rate, say who can enroll, and ask. List it?",
         "One listing covers the four grade camps, since they share dates and the city runs them as one program, though they meet at three schools. Split them?",
-        "ZIP: the sheet names no camp address with a ZIP. If the Census lookup filled it, it is from the Recreation Office at 85 Gedney Way, which the sheet gives as where to get scholarship forms. Fine?"
+        "ZIP 10605 is the Census geocoder's ZIP for 85 Gedney Way, White Plains, the Recreation Office the camp sheet names; the sheet gives no camp address. Fine to place the listing by that ZIP?"
       ]
     }
-  }
+  },
+  "zip": "10605"
 }

@@ -1,0 +1,144 @@
+{
+  "slug": "summerstage-arc-stages-pleasantville",
+  "name": "SummerStage",
+  "operator_name": "Arc Stages",
+  "website_url": "https://arcstages.org/summerstage/",
+  "registration_url": "https://arcstages.org/reg-summer/",
+  "street_address": "147 Wheeler Avenue",
+  "city": "Pleasantville",
+  "state": "NY",
+  "camp_type": "specialty",
+  "primary_categories": [
+    "performing_arts"
+  ],
+  "secondary_categories": [],
+  "activities": [
+    "acting technique",
+    "Broadway dance",
+    "improv",
+    "stage combat",
+    "songwriting",
+    "costume design",
+    "on camera class",
+    "rehearsals",
+    "performances"
+  ],
+  "age_min": 5,
+  "age_max": 18,
+  "grade_min": 0,
+  "grade_max": 12,
+  "description_short": "A theatre day camp at Arc Stages in Pleasantville for students entering kindergarten through grade 12. Campers take classes such as acting, Broadway dance, improv and stage combat, then rehearse a show they perform for families at the end of each three or four week session.",
+  "indoor_outdoor": "indoor",
+  "refund_policy_summary": "Cancel before April 1 for a 75% refund, before May 1 for 50%, before June 1 for 25%; no refunds after June 1.",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Little Theatre Session I (K to 1, 9 to 1)",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-17",
+      "availability": "unknown"
+    },
+    {
+      "name": "Little Theatre Session II (K to 1, 9 to 1)",
+      "start_date": "2026-07-20",
+      "end_date": "2026-08-07",
+      "availability": "unknown"
+    },
+    {
+      "name": "Young Actors Session I (grades 2 to 4)",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-18",
+      "availability": "unknown"
+    },
+    {
+      "name": "Young Actors Session II (grades 2 to 4)",
+      "start_date": "2026-07-20",
+      "end_date": "2026-08-08",
+      "availability": "unknown"
+    },
+    {
+      "name": "Tween Workshop Session I (grades 5 to 8)",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-18",
+      "availability": "unknown"
+    },
+    {
+      "name": "Teen Intensive (grades 9 to 12)",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-25",
+      "availability": "unknown"
+    },
+    {
+      "name": "Teen Apprentice Program Session I (grades 9 to 12)",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-18",
+      "availability": "unknown"
+    }
+  ],
+  "notes": "Monday to Friday, 9 to 4 (Little Theatre 9 to 1, with the option to stay until 4 at the full day price). Young Actors, Tweens and Teens give two performances at the end of each session, one on a weekday evening and one on Saturday. Prices are on a separate pricing page the fetcher could not read as text. 2027 dates are not posted yet.",
+  "sources": [
+    {
+      "url": "https://arcstages.org/summerstage/",
+      "checked": "2026-11-25",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "street_address",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "grade_min",
+        "grade_max",
+        "description_short",
+        "indoor_outdoor",
+        "refund_policy_summary",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. SummerStage 2026: all groups meet at Arc Stages, 147 Wheeler Avenue, Pleasantville; session dates by group; ages derived from grades K to 12."
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=147+Wheeler+Avenue%2C+Pleasantville%2C+NY&benchmark=Public_AR_Current&format=json",
+      "checked": "2026-11-25",
+      "fields": [
+        "zip"
+      ],
+      "note": "ZIP looked up with the Census Bureau geocoder from the address on the camp's page (147 WHEELER AVE, PLEASANTVILLE, NY, 10570)"
+    }
+  ],
+  "review": {
+    "status": "ready",
+    "source": {
+      "url": "https://arcstages.org/summerstage/",
+      "kind": "html",
+      "title": "SummerStage 2026"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Price (pricing page did not yield text)",
+      "Tween Session II dates",
+      "2027 dates",
+      "Financial aid"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "city 'Pleasantville', NY is not in cities.py (to be added from the Census gazetteer)"
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-25",
+      "page_checked": "https://arcstages.org/summerstage/",
+      "changes": [
+        "New camp, researched from https://arcstages.org/summerstage/",
+        "ZIP 10570 looked up from the camp's street address with the Census geocoder (ZIP lookups allowed by Andrew, 22 November)."
+      ],
+      "for_andrew": []
+    }
+  },
+  "zip": "10570"
+}
