@@ -1,0 +1,131 @@
+{
+  "slug": "maine-youth-fish-and-game-summer-camps-old-town",
+  "name": "Maine Youth Fish & Game Summer Camp",
+  "operator_name": "Maine Youth Fish & Game Association",
+  "website_url": "https://www.maineyouthfishandgame.org/summer-camps/",
+  "registration_url": "https://campscui.active.com/orgs/MaineYouthFishGameAssociation?orglink=camps-registration",
+  "phone": "207-852-0528",
+  "city": "Old Town",
+  "state": "ME",
+  "zip": "04489",
+  "camp_type": "day",
+  "age_min": 8,
+  "age_max": 15,
+  "primary_categories": [
+    "outdoor"
+  ],
+  "secondary_categories": [
+    "nature"
+  ],
+  "activities": [
+    "range safety and marksmanship",
+    "archery",
+    "wilderness survival",
+    "fishing",
+    "canoeing",
+    "kayaking",
+    "team building games",
+    "wildlife conservation",
+    "hunter safety"
+  ],
+  "description_short": "Outdoor day camp at the association's Pickerel Pond lodge for ages 8 to 15, with daily buses from the Dr. Lewis S. Libby School in Milford. Campers learn fishing, archery, marksmanship, wilderness survival and paddling from camp staff and visiting experts; weeks for ages 12 to 15 include one overnight.",
+  "indoor_outdoor": "outdoor",
+  "transportation": true,
+  "financial_aid": true,
+  "notes": "Weeks alternate by age: 12 to 15 in weeks 1 and 4, 8 to 11 in weeks 2 and 3. Camp runs Monday to Friday. The lodge is on Pickerel Pond in Township 32 MD, Hancock County; the association's mailing address is P.O. Box 337, Stillwater (part of Old Town).",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Week 1 (ages 12 to 15)",
+      "start_date": "2026-06-22",
+      "end_date": "2026-06-26",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 2 (ages 8 to 11)",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 3 (ages 8 to 11)",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 4 (ages 12 to 15)",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": null,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.maineyouthfishandgame.org/summer-camps/",
+      "checked": "2026-11-22",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "camp_type",
+        "age_min",
+        "age_max",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "description_short",
+        "indoor_outdoor",
+        "transportation",
+        "financial_aid",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Summer Camps page: 2026 camp dates by age group, ages 8 to 15, Pickerel Pond facility, daily busing to and from the Dr. Lewis S. Libby School in Milford, one overnight for ages 12 to 15, scholarships available. Phone from the page footer."
+    },
+    {
+      "url": "https://www.maineyouthfishandgame.org/contact/",
+      "checked": "2026-11-22",
+      "fields": [
+        "city",
+        "state",
+        "zip"
+      ],
+      "note": "Researched by Claude from this page. Contact page: mailing address P.O. Box 337, Stillwater, ME 04489. Stillwater is a village of Old Town, so the city is Old Town. The camp itself is at Pickerel Pond in Township 32 MD, which has no street address on the site."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.maineyouthfishandgame.org/summer-camps/",
+      "kind": "html",
+      "title": "Summer Camps | Outdoor Youth Activities | Old Town, Maine"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Price",
+      "Hours",
+      "Lunch",
+      "Refund policy"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-22",
+      "page_checked": "https://www.maineyouthfishandgame.org/summer-camps/",
+      "changes": [
+        "New camp, researched from https://www.maineyouthfishandgame.org/summer-camps/",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
+      ],
+      "for_andrew": [
+        "No price is shown on the camp's pages; the Active registration portal timed out in the fetcher. List without a price?"
+      ]
+    }
+  }
+}

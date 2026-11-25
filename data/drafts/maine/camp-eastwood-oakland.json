@@ -1,0 +1,97 @@
+{
+  "slug": "camp-eastwood-oakland",
+  "name": "Camp Eastwood",
+  "operator_name": "Camp Eastwood",
+  "website_url": "https://campeastwood.com/",
+  "registration_url": "https://eastwood.campintouch.com/ui/forms/application/camper/App",
+  "email": "info@campeastwood.com",
+  "phone": "207-573-0193",
+  "street_address": "7 Camp Eastwood Circle",
+  "city": "Oakland",
+  "state": "ME",
+  "zip": "04963",
+  "camp_type": "sleepaway",
+  "gender_policy": "coed",
+  "age_min": 6,
+  "age_max": 10,
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "outdoor"
+  ],
+  "activities": [
+    "swimming",
+    "hiking",
+    "arts and crafts",
+    "team games",
+    "nature exploration"
+  ],
+  "description_short": "Short session overnight camp for boys and girls ages 6 to 10 (finishing kindergarten to 4th grade) in the Belgrade Lakes region, with an address in Oakland. Mini Camp and one and two week sessions offer swimming, hiking, crafts and games as a first step toward longer overnight camp.",
+  "financial_aid": true,
+  "season_year": 2027,
+  "sources": [
+    {
+      "url": "https://campeastwood.com/",
+      "checked": "2026-11-22",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "camp_type",
+        "gender_policy",
+        "age_min",
+        "age_max",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "description_short"
+      ],
+      "note": "Researched by Claude from this page. Home page: overnight camp for boys and girls ages 6 to 10 (finishing K to 4th grade) in the Belgrade Lakes region, Mini Camp and one and two week sessions, from the team behind Camp Manitou and Camp Somerset."
+    },
+    {
+      "url": "https://campeastwood.com/dates-rates",
+      "checked": "2026-11-22",
+      "fields": [
+        "registration_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "financial_aid"
+      ],
+      "note": "Researched by Claude from this page. 2027 Dates & Rates page: scholarship program (contact stacey@campeastwood.com), enroll link, 7 Camp Eastwood Circle, Oakland, ME 04963. The 2027 session dates and rates did not load as text, even in the browser."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://campeastwood.com/dates-rates",
+      "kind": "html",
+      "title": "1 & 2 Week Summer Camp Sessions in Maine"
+    },
+    "warnings": [],
+    "unknowns": [
+      "2027 session dates",
+      "2027 prices",
+      "Meals",
+      "ACA accreditation"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-22",
+      "page_checked": "https://campeastwood.com/dates-rates",
+      "changes": [
+        "New camp, researched from https://campeastwood.com/dates-rates"
+      ],
+      "for_andrew": [
+        "The page is headed '2027 Dates & Rates' but the dates and rates themselves don't load as text, even with the browser fallback. List Camp Eastwood without sessions or prices, or wait until they can be read?",
+        "Camp Eastwood is run by the Camp Somerset and Camp Manitou team (Manitou is published in Oakland). The site does not say whether it shares Manitou's or Somerset's grounds; it has its own address, so it is drafted as its own camp."
+      ]
+    }
+  }
+}

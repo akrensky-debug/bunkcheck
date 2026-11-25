@@ -1,0 +1,119 @@
+{
+  "slug": "common-ground-center-summer-adventure-camp-starksboro",
+  "name": "Summer Adventure Camp",
+  "operator_name": "Common Ground Center",
+  "website_url": "https://cgcvt.org/youth-camps/day-camps/",
+  "registration_url": "https://www.ultracamp.com/clientlogin.aspx?idCamp=935&campcode=nd2&lang=en-Us",
+  "email": "info@cgcvt.org",
+  "phone": "802.453.2592",
+  "street_address": "473 Tatro Road",
+  "city": "Starksboro",
+  "state": "VT",
+  "zip": "05487",
+  "camp_type": "day",
+  "primary_categories": [
+    "nature",
+    "outdoor"
+  ],
+  "secondary_categories": [
+    "arts",
+    "swimming"
+  ],
+  "activities": [
+    "archery",
+    "tennis",
+    "swimming",
+    "pond and creek exploring",
+    "wildlife identification",
+    "hiking",
+    "gardening",
+    "cooking",
+    "music",
+    "arts"
+  ],
+  "grade_min": 0,
+  "grade_max": 6,
+  "age_min": 5,
+  "age_max": 12,
+  "description_short": "A one week summer day camp at Common Ground Center in Starksboro for kids in grades K to 6, 8:30am to 4pm. Outdoors campers do archery, tennis, swimming, hiking and gardening and explore the pond and creek; indoors they cook, play music and make art.",
+  "transportation": true,
+  "financial_aid": true,
+  "price_per_week": 385,
+  "price_min": 385,
+  "price_max": 385,
+  "price_per": "week",
+  "refund_policy_summary": "Cancellations get a credit toward a future Common Ground Center program, good for one year and usable by immediate family only.",
+  "season_year": 2027,
+  "notes": "One summer week only. $385 per child, $27 sibling discount; bus from stops in Bristol and Monkton is $50. Counselor in training spots for ages 13 to 14. The center also runs four day winter and spring vacation camps.",
+  "sessions": [
+    {
+      "name": "Summer Adventure Camp",
+      "start_date": "2027-07-19",
+      "end_date": "2027-07-23",
+      "price": 385,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://cgcvt.org/youth-camps/day-camps/",
+      "checked": "2026-11-22",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "age_min",
+        "age_max",
+        "description_short",
+        "transportation",
+        "financial_aid",
+        "price_per_week",
+        "price_min",
+        "price_max",
+        "price_per",
+        "refund_policy_summary",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Day Camps page: 2027 Summer Adventure Camp July 19 to 23, 8:30am to 4pm, grades K to 6, $385, bus $50, scholarships available. Ages derived from grades K to 6."
+    }
+  ],
+  "review": {
+    "status": "ready",
+    "source": {
+      "url": "https://cgcvt.org/youth-camps/day-camps/",
+      "kind": "html",
+      "title": "Day Camps - Common Ground Center"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Extended care",
+      "Meals",
+      "ACA accreditation"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-22",
+      "page_checked": "https://cgcvt.org/youth-camps/day-camps/",
+      "changes": [
+        "New camp, researched from https://cgcvt.org/youth-camps/day-camps/",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
+      ],
+      "for_andrew": []
+    }
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "slug": "treworgy-farm-camp-levant",
+  "name": "Farm Camp",
+  "operator_name": "Treworgy Family Orchards",
+  "website_url": "https://treworgyorchards.com/farm-camp",
+  "street_address": "3876 Union Street",
+  "city": "Levant",
+  "state": "ME",
+  "zip": "04456",
+  "camp_type": "day",
+  "age_min": 6,
+  "age_max": 12,
+  "primary_categories": [
+    "nature"
+  ],
+  "secondary_categories": [
+    "outdoor"
+  ],
+  "activities": [
+    "animal care",
+    "horseback riding",
+    "goat milking",
+    "barn chores",
+    "wagon rides",
+    "frog catching",
+    "water games",
+    "cheese making",
+    "jam making",
+    "soap making",
+    "farm journal"
+  ],
+  "description_short": "Week long farm day camp at Treworgy Family Orchards in Levant for ages 6 to 12. Campers care for goats, ride horses, help with barn chores, catch frogs and make cheese, jam and soap, ending each week with a Friday farm parade for families.",
+  "indoor_outdoor": "outdoor",
+  "price_per_week": 545,
+  "price_min": 545,
+  "price_per": "week",
+  "extended_care": true,
+  "meals_included": false,
+  "notes": "Drop off 8:30 am, pick up 4 pm, Monday to Friday; 30 minutes early or late care for $15 per camper per session. Snacks are provided and lunch on pizza day; campers bring a bag lunch other days. The farm also runs Tadpole Farm Camp (ages 4 to 5), Garden 2 Table Camp (ages 8 to 13) and Learn 2 Lead (ages 13 to 15) on separate pages.",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Week 1",
+      "start_date": "2026-06-22",
+      "end_date": "2026-06-26",
+      "price": 545,
+      "availability": "unknown"
+    },
+    {
+      "name": "3 day week (June 29 to July 1)",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-01",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 3",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": 545,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 4",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": 545,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 5",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": 545,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 6",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": 545,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 7",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": 545,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 8",
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-14",
+      "price": 545,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 9",
+      "start_date": "2026-08-17",
+      "end_date": "2026-08-21",
+      "price": 545,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://treworgyorchards.com/farm-camp",
+      "checked": "2026-11-22",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "age_min",
+        "age_max",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "description_short",
+        "indoor_outdoor",
+        "price_per_week",
+        "price_min",
+        "price_per",
+        "extended_care",
+        "meals_included",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Farm Camp page: ages 6 to 12, nine weekly sessions (June 29 to July 1 is a three day week), 8:30 am to 4 pm, 2026 cost $545 per camper per week, early and late care $15, snacks provided, bag lunch required except pizza day, farm address 3876 Union Street, Levant, Maine 04456. The page gives no price for the three day week, so that session's price is empty."
+    }
+  ],
+  "review": {
+    "status": "ready",
+    "source": {
+      "url": "https://treworgyorchards.com/farm-camp",
+      "kind": "html",
+      "title": "Farm Camp - Treworgy Family Orchards"
+    },
+    "warnings": [
+      "meals_included is false because campers bring a bag lunch; the farm provides snacks and one pizza lunch a week."
+    ],
+    "unknowns": [
+      "Price of the three day week",
+      "Email and phone for camp",
+      "Financial aid",
+      "Refund policy"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-22",
+      "page_checked": "https://treworgyorchards.com/farm-camp",
+      "changes": [
+        "New camp, researched from https://treworgyorchards.com/farm-camp",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
+      ],
+      "for_andrew": []
+    }
+  }
+}
