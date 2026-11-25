@@ -6,7 +6,7 @@
   "registration_url": "https://sales.westchestergov.com/",
   "phone": "(914) 428-1005",
   "street_address": "1609 Old Orchard Street",
-  "city": "North White Plains",
+  "city": "North Castle",
   "state": "NY",
   "zip": "10604",
   "camp_type": "day",
@@ -148,15 +148,14 @@
       "2027 dates and prices (not posted yet)"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'North White Plains', NY is not in cities.py (to be added from the Census gazetteer)"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-25",
       "page_checked": "https://parks.westchestercountyny.gov/children-camps/nature-camps",
       "changes": [
-        "New camp, researched from https://parks.westchestercountyny.gov/children-camps/nature-camps"
+        "New camp, researched from https://parks.westchestercountyny.gov/children-camps/nature-camps",
+        "City set to North Castle, the town that contains the hamlet of North White Plains named on the page."
       ],
       "for_andrew": []
     }

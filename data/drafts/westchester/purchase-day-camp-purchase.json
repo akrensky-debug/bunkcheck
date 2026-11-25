@@ -7,7 +7,7 @@
   "email": "camp@purchasehouse.com",
   "phone": "914-949-2636",
   "street_address": "3095 Purchase Street",
-  "city": "Purchase",
+  "city": "Harrison",
   "state": "NY",
   "zip": "10577",
   "camp_type": "day",
@@ -182,15 +182,14 @@
       "ACA accreditation"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Purchase', NY is not in cities.py (to be added from the Census gazetteer)"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-25",
       "page_checked": "https://www.purchasedaycamp.com/",
       "changes": [
-        "New camp, researched from https://www.purchasedaycamp.com/"
+        "New camp, researched from https://www.purchasedaycamp.com/",
+        "City set to Harrison, the town that contains the hamlet of Purchase named on the page."
       ],
       "for_andrew": []
     }
