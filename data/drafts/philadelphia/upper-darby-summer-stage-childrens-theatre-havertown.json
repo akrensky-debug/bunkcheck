@@ -1,0 +1,137 @@
+{
+  "slug": "upper-darby-summer-stage-childrens-theatre-havertown",
+  "name": "Upper Darby Summer Stage Children's Theatre",
+  "operator_name": "Upper Darby Arts & Education Foundation",
+  "website_url": "https://www.udsummerstage.org/childrens-theatre",
+  "registration_url": "https://portal.iclasspro.com/udaef/camp-details/59?typeId=5&filters=%7B%22sorting%22:%22time%22%7D&campTypeName=Summer%20Stage&campTypeNamePlural=Summer%20Stage",
+  "email": "admin@udfoundation.org",
+  "phone": "610-814-7270",
+  "city": "Havertown",
+  "state": "PA",
+  "camp_type": "specialty",
+  "primary_categories": [
+    "performing_arts"
+  ],
+  "activities": [
+    "acting",
+    "rehearsal",
+    "live performance"
+  ],
+  "grade_min": 8,
+  "age_min": 13,
+  "description_short": "Teens who have finished 7th grade join one of six Upper Darby Summer Stage Children's Theatre productions, rehearsing with theatre professionals for three to four weeks at Haverford High School, Monday to Friday 9:00 to 4:30, and staging a one hour show for children with five performances for a live audience.",
+  "indoor_outdoor": "indoor",
+  "price_min": 500,
+  "price_max": 500,
+  "price_per": "session",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "CT1 (includes Sunday June 28)",
+      "start_date": "2026-06-17",
+      "end_date": "2026-07-09",
+      "price": 500,
+      "availability": "unknown"
+    },
+    {
+      "name": "CT2 (includes Sunday July 12)",
+      "start_date": "2026-06-23",
+      "end_date": "2026-07-16",
+      "price": 500,
+      "availability": "unknown"
+    },
+    {
+      "name": "CT3 (includes Sunday July 19)",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-23",
+      "price": 500,
+      "availability": "unknown"
+    },
+    {
+      "name": "CT4 (weekend TBA)",
+      "start_date": "2026-07-07",
+      "end_date": "2026-07-31",
+      "price": 500,
+      "availability": "unknown"
+    },
+    {
+      "name": "CT5 (includes Sunday August 2)",
+      "start_date": "2026-07-14",
+      "end_date": "2026-08-06",
+      "price": 500,
+      "availability": "unknown"
+    },
+    {
+      "name": "CT6 (includes Sunday August 9)",
+      "start_date": "2026-07-21",
+      "end_date": "2026-08-13",
+      "price": 500,
+      "availability": "unknown"
+    }
+  ],
+  "notes": "$500 a production, and $500 for a second show. Participants are assigned to a show in spring and must attend every date, including one weekend rehearsal and two evening performances; no conflicts accepted. The site says summer 2027 is coming soon. Summer Stage also runs Summer Stage Junior classes for younger children at another site.",
+  "sources": [
+    {
+      "url": "https://www.udsummerstage.org/childrens-theatre",
+      "checked": "2026-11-25",
+      "fields": [
+        "name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "grade_min",
+        "age_min",
+        "description_short",
+        "indoor_outdoor",
+        "price_min",
+        "price_max",
+        "price_per",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Children's Theatre page: six 2026 productions CT1 to CT6 with dates, $500 registration, participants must have completed 7th grade by summer 2026 (so grade_min 8, age_min derived, not stated), rehearsals Monday to Friday 9:00 to 4:30 at Haverford High School, five performances each. No upper age given. City: the page names Haverford High School but gives no address; Havertown is my reading of where it sits and needs checking. Phone and email from the page footer (main contact)."
+    },
+    {
+      "url": "https://www.udsummerstage.org/about-summer-stage",
+      "checked": "2026-11-25",
+      "fields": [
+        "operator_name"
+      ],
+      "note": "Researched by Claude from this page. About page: Summer Stage runs under the Upper Darby Arts & Education Foundation, in its 51st season in 2026, in partnership with Haverford Township School District."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.udsummerstage.org/childrens-theatre",
+      "kind": "html",
+      "title": "Children's Theatre — Summer Stage"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Street address and ZIP of the rehearsal site",
+      "Upper age limit",
+      "2027 dates",
+      "ACA accreditation"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-25",
+      "page_checked": "https://www.udsummerstage.org/childrens-theatre",
+      "changes": [
+        "New camp, researched from https://www.udsummerstage.org/childrens-theatre"
+      ],
+      "for_andrew": [
+        "The page says rehearsals are at Haverford High School but gives no address, and the only address on the site is the foundation's mailing address in Drexel Hill. I set the town to Havertown and left street and ZIP out, so the draft fails the required zip check. Confirm the school's address from the district (a source beyond the camp's pages), or ask Summer Stage?",
+        "This is a teen production program (finished 7th grade and up, no upper age stated) staging shows for young audiences. Fine to list as a camp?"
+      ]
+    }
+  }
+}
