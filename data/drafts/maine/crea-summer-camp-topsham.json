@@ -1,0 +1,102 @@
+{
+  "slug": "crea-summer-camp-topsham",
+  "name": "CREA Summer Camp",
+  "operator_name": "Brunswick-Topsham Land Trust",
+  "website_url": "https://www.btlt.org/crea-camp/",
+  "email": "camp@btlt.org",
+  "street_address": "Cathance River Nature Preserve",
+  "city": "Topsham",
+  "state": "ME",
+  "camp_type": "day",
+  "grade_min": 1,
+  "grade_max": 8,
+  "age_min": 6,
+  "age_max": 14,
+  "primary_categories": [
+    "nature"
+  ],
+  "secondary_categories": [
+    "outdoor"
+  ],
+  "activities": [
+    "hiking",
+    "river exploration",
+    "pond study",
+    "boat building",
+    "nature art",
+    "community science",
+    "group games"
+  ],
+  "description_short": "Nature day camp from the Brunswick-Topsham Land Trust at the Cathance River Nature Preserve. Nature Explorers (entering grades 1 to 5) and Trailblazers (grades 6 to 8) hike the preserve's trails, search the river and ponds for frogs and newts, build boats and make art from natural materials, Monday to Friday 8:30 to 4.",
+  "indoor_outdoor": "outdoor",
+  "refund_policy_summary": "No refunds once registered. Cancelling before May 1 earns a credit for the next year's camp.",
+  "notes": "Places are given by lottery: the 2027 lottery is open January 25 to February 2, 2027 ($10 per family), slots are allocated February 3 to 9 and registration is due March 1, 2027. Campers may attend one week per summer.",
+  "season_year": 2027,
+  "sources": [
+    {
+      "url": "https://www.btlt.org/crea-camp/",
+      "checked": "2026-11-22",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "camp_type",
+        "grade_min",
+        "grade_max",
+        "age_min",
+        "age_max",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "description_short",
+        "indoor_outdoor",
+        "refund_policy_summary"
+      ],
+      "note": "Researched by Claude from this page. CREA Camp page: Nature Explorers for entering grades 1 to 5 and Trailblazers for grades 6 to 8 at the Cathance River Nature Preserve, Monday to Friday 8:30 am to 4 pm, 2027 lottery timeline, cancellation policy. Ages derived from grades 1 to 8. The page says details for summer 2027 programs come in winter."
+    },
+    {
+      "url": "https://www.btlt.org/ecology_center/",
+      "checked": "2026-11-22",
+      "fields": [
+        "street_address",
+        "city",
+        "state"
+      ],
+      "note": "Researched by Claude from this page. Ecology Center page: 'Address: Cathance River Nature Preserve, Topsham, Maine'."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.btlt.org/crea-camp/",
+      "kind": "html",
+      "title": "CREA Camp - Brunswick-Topsham Land Trust"
+    },
+    "warnings": [],
+    "unknowns": [
+      "ZIP",
+      "2027 session dates",
+      "Prices",
+      "Extended care",
+      "Financial aid"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "maine / crea-summer-camp-topsham: missing required zip"
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-22",
+      "page_checked": "https://www.btlt.org/crea-camp/",
+      "changes": [
+        "New camp, researched from https://www.btlt.org/crea-camp/",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
+      ],
+      "for_andrew": [
+        "The page has the 2027 lottery timeline but no 2027 session dates or prices yet ('Check back in winter'), and no 2026 details remain. Keep a thin 2027 listing now, or wait for the winter update?",
+        "The preserve has no street address on the land trust's pages, so the ZIP is empty and the Census lookup cannot run. The land trust office is 179 Neptune Drive, Brunswick 04011, a different town. Leave ZIP empty until the camp posts an address?"
+      ]
+    }
+  }
+}

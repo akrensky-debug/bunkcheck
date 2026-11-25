@@ -1,0 +1,128 @@
+{
+  "slug": "perry-lane-summer-camp-agawam",
+  "name": "Perry Lane Summer Camp",
+  "operator_name": "Agawam Parks and Recreation",
+  "website_url": "https://unipaygold.unibank.com/transactioninfo.aspx?TID=29549",
+  "street_address": "Perry Lane Park",
+  "city": "Agawam",
+  "state": "MA",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "swimming",
+    "sports"
+  ],
+  "activities": [
+    "swimming",
+    "sports",
+    "playground",
+    "games"
+  ],
+  "grade_min": 1,
+  "grade_max": 9,
+  "age_min": 6,
+  "age_max": 15,
+  "description_short": "Agawam's town day camp at Perry Lane Park, open only to Agawam residents who finished kindergarten through grade 8 this school year. The park has an in ground pool, a pavilion, playgrounds and ball fields.",
+  "indoor_outdoor": "outdoor",
+  "price_min": 156,
+  "price_max": 260,
+  "price_per": "session",
+  "extended_care": true,
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Session I",
+      "start_date": "2026-06-25",
+      "end_date": "2026-07-02",
+      "price": 156,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session II",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-17",
+      "price": 260,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session III",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-31",
+      "price": 260,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session IV",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-14",
+      "price": 260,
+      "availability": "unknown"
+    }
+  ],
+  "notes": "Agawam residents only. Limit 115 campers a session. Extended day AM 7:30 to 9:00 ($36 Session I, $60 Sessions II to IV) and PM 3:30 to 5:30 ($42 and $70), registered in person at 954 Main Street.",
+  "sources": [
+    {
+      "url": "https://unipaygold.unibank.com/transactioninfo.aspx?TID=29549",
+      "checked": "2026-11-22",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "street_address",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "age_min",
+        "age_max",
+        "description_short",
+        "indoor_outdoor",
+        "price_min",
+        "price_max",
+        "price_per",
+        "extended_care",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Agawam Parks and Recreation payment portal page. Agawam residents only, children who completed kindergarten through those in grade 8 during the 2025 to 2026 school year (grades 1 to 9 entering; ages derived). 9:00 am to 3:30 pm, four sessions June 25 to August 14 (no camp Friday July 3); $156 Session I, $260 Sessions II to IV (two weeks each). Limit 115 campers a session. AM extended day 7:30 to 9:00 am ($36 Session I, $60 others) and PM 3:30 to 5:30 pm ($42, $70). Facilities: in ground pool, pavilion, basketball net, two playgrounds, athletic fields."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://unipaygold.unibank.com/transactioninfo.aspx?TID=29549",
+      "kind": "html",
+      "title": "Agawam Parks & Recreation: Perry Lane Summer Camp"
+    },
+    "warnings": [],
+    "unknowns": [
+      "zip",
+      "phone",
+      "email",
+      "registration_url",
+      "meals_included",
+      "financial_aid",
+      "transportation"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-22",
+      "page_checked": "https://unipaygold.unibank.com/transactioninfo.aspx?TID=29549",
+      "changes": [
+        "New camp, researched from https://unipaygold.unibank.com/transactioninfo.aspx?TID=29549"
+      ],
+      "for_andrew": [
+        "Residents only (Agawam). It has one rate per session, recorded as given. List it?",
+        "The source is the town's Unibank payment page; no other camp page from the town was found. It names Perry Lane Park but gives no street number, so there is no ZIP and the draft fails validation.",
+        "The page has no explicit season year. I took 2026 from 'the 2025 to 2026 school year' and the July 3 closure, which falls on a Friday in 2026. The line 'Registration begins Tuesday April 29' matches 2025, so part of the text may be carried over."
+      ]
+    }
+  }
+}

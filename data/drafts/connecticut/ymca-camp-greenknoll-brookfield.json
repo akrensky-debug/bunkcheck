@@ -1,0 +1,110 @@
+{
+  "slug": "ymca-camp-greenknoll-brookfield",
+  "name": "YMCA Camp Greenknoll",
+  "operator_name": "Regional YMCA of Western Connecticut",
+  "website_url": "https://regionalymca.org/programs/camps/ymca-camp-greenknoll/",
+  "phone": "203-775-4444",
+  "email": "campgk@regionalymca.org",
+  "street_address": "2 Huckleberry Hill Road",
+  "city": "Brookfield",
+  "zip": "06804",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "swimming",
+    "STEM",
+    "arts"
+  ],
+  "activities": [
+    "swimming",
+    "swim lessons",
+    "STEAM",
+    "archery",
+    "arts and crafts",
+    "team building",
+    "climbing",
+    "zipline",
+    "field games",
+    "Friday Fun Day"
+  ],
+  "age_min": 3,
+  "age_max": 15,
+  "description_short": "A YMCA day camp in Brookfield for ages 3 to 15, grouped by grade, open 7:30 am to 6 pm. Campers swim twice a day in the outdoor pool, with a lesson in the morning, and do STEAM, archery, arts and crafts and team building; older campers choose their own activities.",
+  "indoor_outdoor": "outdoor",
+  "extended_care": true,
+  "transportation": false,
+  "meals_included": false,
+  "financial_aid": true,
+  "swim_waterfront_notes": "Two swims a day: instructional in the morning, recreational in the afternoon, with Red Cross lifeguards. Swim levels tested each Monday; non-swimmers wear camp life vests.",
+  "season_year": 2027,
+  "state": "CT",
+  "sources": [
+    {
+      "url": "https://regionalymca.org/programs/camps/ymca-camp-greenknoll/",
+      "checked": "2026-11-22",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "phone",
+        "email",
+        "city",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "indoor_outdoor",
+        "extended_care",
+        "transportation",
+        "meals_included",
+        "financial_aid",
+        "swim_waterfront_notes"
+      ],
+      "note": "Researched by Claude from this page. Page is set for 2027: '2027 Registration, info coming soon', fees 'coming soon'. Camp runs Monday to Friday 7:30 am to 6 pm with early drop off and late pick up included. Parents provide transportation; campers bring lunch. A YMCA family membership gives the lower rate. Tuition assistance form 'coming soon'. Phone is the branch line until June 1 (203-775-9363 after). Some text on the page still refers to fall 2025 and fall 2026 grades."
+    },
+    {
+      "url": "https://regionalymca.org/locations/",
+      "checked": "2026-11-22",
+      "fields": [
+        "street_address",
+        "state",
+        "zip"
+      ],
+      "note": "Researched by Claude from this page. YMCA locations page: Camp Greenknoll, 2 Huckleberry Hill Road, Brookfield, CT 06804."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://regionalymca.org/programs/camps/ymca-camp-greenknoll/",
+      "kind": "html",
+      "title": "YMCA Camp Greenknoll | The YMCA"
+    },
+    "warnings": [],
+    "unknowns": [
+      "2027 dates",
+      "2027 prices",
+      "ACA accreditation"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-22",
+      "page_checked": "https://regionalymca.org/programs/camps/ymca-camp-greenknoll/",
+      "changes": [
+        "New camp, researched from https://regionalymca.org/programs/camps/ymca-camp-greenknoll/",
+        "Season set to 2027 because the page is set for 2027; no dates or prices are posted yet, so no sessions or prices recorded.",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
+      ],
+      "for_andrew": [
+        "The page is set for 2027 but posts no dates or prices yet. List it now without them, or wait for the 2027 guide?"
+      ]
+    }
+  }
+}

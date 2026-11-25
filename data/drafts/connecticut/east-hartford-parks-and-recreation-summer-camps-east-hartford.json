@@ -1,0 +1,98 @@
+{
+  "slug": "east-hartford-parks-and-recreation-summer-camps-east-hartford",
+  "name": "East Hartford Parks and Recreation Summer Camps",
+  "operator_name": "East Hartford Parks and Recreation",
+  "website_url": "https://ehparks.myrec.com/forms/5952_camp_handbook__1.pdf",
+  "city": "East Hartford",
+  "state": "CT",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "swimming",
+    "sports",
+    "arts"
+  ],
+  "activities": [
+    "arts and crafts",
+    "sports",
+    "games",
+    "swimming",
+    "library enrichment",
+    "field trips",
+    "special events"
+  ],
+  "grade_min": 1,
+  "grade_max": 9,
+  "description_short": "Town day camps at East Hartford parks, split by grade: entering grades 1 and 2, 3 and 4, 5 and 6, and 7 to 9, plus Camp Sunburst. Campers do crafts, sports, games and daily swimming, with a library program and a weekly trip or special event.",
+  "indoor_outdoor": "outdoor",
+  "extended_care": true,
+  "meals_included": true,
+  "refund_policy_summary": "Refunds only with a doctor's note received a week before the program starts; none once a session has begun except for a medical emergency. A 10% fee applies to every refund or transfer.",
+  "swim_waterfront_notes": "Swim time at every camp with American Red Cross certified lifeguards on duty; campers get swim instruction during the morning swim.",
+  "season_year": 2026,
+  "notes": "Five programs at four parks (Goodwin, Gorman, McAuliffe, Hockanum). Camp day 8:30 am to 3:30 pm, extended care 7:30 am to 4:30 pm. Camp Sunburst is listed with ages 6 to 21.",
+  "sources": [
+    {
+      "url": "https://ehparks.myrec.com/forms/5952_camp_handbook__1.pdf",
+      "checked": "2026-11-22",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "description_short",
+        "indoor_outdoor",
+        "extended_care",
+        "meals_included",
+        "refund_policy_summary",
+        "swim_waterfront_notes"
+      ],
+      "note": "Researched by Claude from this page. 2026 Summer Camp Handbook. Camp day 8:30 am to 3:30 pm; extended care sign in from 7:30 am and pick up by 4:30 pm. Sites listed: Goodwin Park, 1235 Forbes St; Gorman Park, 258 May Rd; McAuliffe Park, 50 Remington Rd; Hockanum Park, 356 High St. Groups for children entering grades 1 and 2, 3 and 4, 5 and 6, and 7 to 9; Camp Sunburst is listed with ages 6 to 21. The PDF's layout does not make clear which program is at which park. Families can join the free summer meals program or pack lunch. Registration by Thursday 4:30 pm for the next week. Trips by DATTCO school bus."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://ehparks.myrec.com/forms/5952_camp_handbook__1.pdf",
+      "kind": "pdf",
+      "title": "East Hartford Parks and Recreation 2026 Summer Camp Handbook"
+    },
+    "warnings": [],
+    "unknowns": [
+      "zip",
+      "street_address",
+      "sessions",
+      "price_per_week",
+      "age_min",
+      "age_max",
+      "phone",
+      "email",
+      "registration_url",
+      "financial_aid",
+      "transportation"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-22",
+      "page_checked": "https://ehparks.myrec.com/forms/5952_camp_handbook__1.pdf",
+      "changes": [
+        "New camp, researched from https://ehparks.myrec.com/forms/5952_camp_handbook__1.pdf"
+      ],
+      "for_andrew": [
+        "The town's camp pages (easthartfordct.gov) refused our fetcher with a 403, as they did in the earlier batch. The only readable source is this 2026 handbook, which has no dates, prices or ZIP, so the draft fails validation on zip and has no sessions. The town's 2024 brochure said camps were for East Hartford residents only except Camp Sunburst; I could not confirm that for 2026.",
+        "The discovery pass filed this under East Haven. The handbook is East Hartford's (ehparks = East Hartford Parks)."
+      ]
+    }
+  }
+}
