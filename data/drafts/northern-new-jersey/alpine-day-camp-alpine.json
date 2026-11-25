@@ -1,0 +1,129 @@
+{
+  "slug": "alpine-day-camp-alpine",
+  "name": "Alpine Day Camp",
+  "operator_name": "Greater New York Councils, Scouting America",
+  "website_url": "https://alpinedaycamp.org/",
+  "email": "kim.merry@scouting.org",
+  "phone": "817-723-0828",
+  "street_address": "441 Route 9W",
+  "city": "Alpine",
+  "state": "NJ",
+  "zip": "07620",
+  "camp_type": "day",
+  "primary_categories": [
+    "outdoor",
+    "general"
+  ],
+  "secondary_categories": [
+    "swimming",
+    "adventure",
+    "sports",
+    "nature",
+    "arts"
+  ],
+  "activities": [
+    "climbing",
+    "indoor climbing",
+    "hiking",
+    "swimming",
+    "nature",
+    "sports",
+    "theater",
+    "arts and crafts",
+    "target sports",
+    "outdoor skills"
+  ],
+  "grade_min": 1,
+  "grade_max": 7,
+  "age_min": 6,
+  "age_max": 13,
+  "description_short": "Scouting run day camp on 500 wooded acres at Alpine Scout Camp along the Palisades, open to all children entering grades 1 to 7, Scouts or not. Groups rotate through climbing, hiking, an Olympic size pool, nature, sports, theater, crafts, target sports and outdoor skills.",
+  "indoor_outdoor": "both",
+  "extended_care": true,
+  "meals_included": true,
+  "transportation": true,
+  "season_year": 2027,
+  "notes": "Pricing posted as 2026 rates, which the camp says it will honor for 2027 if a $70 deposit is placed before new rates come out: one week about $605 including the deposit and a $100 registration fee (waived for Scouts); multiple weeks $500 to $545 a week; full summer $487 a week. Drop off 8 to 9 am and pick up 5 to 6 pm are included. Shuttle routes from New Jersey and New York City cost extra (for example $210 a week from the Palisades Center lot; door to door $300 the first week, $200 after). Inspected under Scouting's National Camp Accreditation Program.",
+  "sources": [
+    {
+      "url": "https://alpinedaycamp.org/rates-and-dates/",
+      "checked": "2026-11-25",
+      "fields": [
+        "name",
+        "website_url",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "email",
+        "phone"
+      ],
+      "note": "Researched by Claude from this page. Rates and dates page. Lists eight weeks headed 2027 (June 22 to August 14) but those dates fall on 2026 weekdays, so no sessions are recorded. Rates are headed 2026. Address and contact from the page footer."
+    },
+    {
+      "url": "https://alpinedaycamp.org/about/",
+      "checked": "2026-11-25",
+      "fields": [
+        "operator_name",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "description_short",
+        "indoor_outdoor",
+        "extended_care",
+        "meals_included"
+      ],
+      "note": "Researched by Claude from this page. Camp overview: 500 acres along Palisades Park, indoor and outdoor climbing, Olympic size pool, open to boys and girls entering grades 1 to 7; drop off 8 to 9, pick up 5 to 6, lunch and snack provided. Owned and operated by the Greater New York Councils, Scouting America."
+    },
+    {
+      "url": "https://alpinedaycamp.org/frequently-asked-questions/",
+      "checked": "2026-11-25",
+      "fields": [
+        "activities",
+        "grade_min",
+        "grade_max",
+        "age_min",
+        "age_max"
+      ],
+      "note": "Researched by Claude from this page. FAQ: open to the public, grades 1 to 7 (ages derived); program areas nature, sports, theater, arts and crafts, target sports, swimming, outdoor skills, climbing and hiking."
+    },
+    {
+      "url": "https://alpinedaycamp.org/transportation/",
+      "checked": "2026-11-25",
+      "fields": [
+        "transportation"
+      ],
+      "note": "Researched by Claude from this page. Transportation page: shuttle stops in New Jersey and New York City and door to door routes, priced per week."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://alpinedaycamp.org/rates-and-dates/",
+      "kind": "html",
+      "title": "Rates and Dates – Alpine Day Camp – New Jersey"
+    },
+    "warnings": [],
+    "unknowns": [
+      "sessions",
+      "price_per_week",
+      "price_min",
+      "price_max",
+      "financial_aid",
+      "refund_policy_summary"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-25",
+      "page_checked": "https://alpinedaycamp.org/rates-and-dates/",
+      "changes": [
+        "New camp, researched from https://alpinedaycamp.org/rates-and-dates/"
+      ],
+      "for_andrew": [
+        "The rates page heads its week list 2027 but the dates (June 22 to 26 and so on) are 2026 weekdays, the overview page still says July 1 to August 23, and the rates are labeled 2026 with an offer to lock them in for 2027. I listed it as 2027 with no sessions and the prices only in notes. List as is, or wait until the camp fixes its 2027 dates and rates?"
+      ]
+    }
+  }
+}

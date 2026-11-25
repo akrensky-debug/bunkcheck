@@ -1,0 +1,117 @@
+{
+  "slug": "morris-plains-recreation-summer-camp-morris-plains",
+  "name": "Morris Plains Recreation Summer Camp",
+  "operator_name": "Morris Plains Recreation Commission",
+  "website_url": "https://morrisplainsboro.org/summer-camp-enhancement-programs/",
+  "email": "recreation@morrisplainsboro.org",
+  "phone": "973-538-3544",
+  "street_address": "51 Jim Fear Drive",
+  "city": "Morris Plains",
+  "state": "NJ",
+  "zip": "07950",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "arts"
+  ],
+  "activities": [
+    "outdoor games",
+    "art projects",
+    "crafts",
+    "scavenger hunts",
+    "tie dye",
+    "relay races",
+    "obstacle courses",
+    "pool days",
+    "talent show"
+  ],
+  "grade_min": 0,
+  "grade_max": 9,
+  "age_min": 5,
+  "age_max": 15,
+  "description_short": "Five week half day borough camp, 9 to noon, open only to Morris Plains resident families. Super Kids Camp (entering K to 5) meets at the Community Center with games, art and crafts, pool days and a talent show; Teen Camp (entering 6 to 9) meets at the Teen Center with optional bus trips.",
+  "indoor_outdoor": "both",
+  "extended_care": true,
+  "price_min": 375,
+  "price_max": 375,
+  "price_per": "session",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Summer Camp (no camp July 3)",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-31",
+      "price": 375,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://morrisplainsboro.org/summer-camp-enhancement-programs/",
+      "checked": "2026-11-25",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "age_min",
+        "age_max",
+        "description_short",
+        "indoor_outdoor",
+        "extended_care"
+      ],
+      "note": "Researched by Claude from this page. Five week camp, 9 to noon, for resident children entering K to 9; residency means the family lives in a home paying Morris Plains property tax. Super Kids Camp (K to 5) and Teen Camp (6 to 9 at the Teen Center). Early drop off from 8 for K to 5. Address and phone are the Morris Plains Community Center, from the Contact Us section. Ages derived from grades, not stated."
+    },
+    {
+      "url": "https://morrisplainsboro.org/wp-content/uploads/2026/04/2026-Recreation-Camp-Enhancement-Flyer-0420.pdf",
+      "checked": "2026-11-25",
+      "fields": [
+        "price_min",
+        "price_max",
+        "price_per",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. 2026 flyer: K to 5 camp and Teen Camp both June 29 to July 31, 9 to 12, closed July 3; fee $375 each ($475 after May 11). Early drop off $150. Teen trips $215 for all eight. Residents only, so there is no non-resident rate. Afternoon enhancement classes ($80 to $260) are separate."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://morrisplainsboro.org/summer-camp-enhancement-programs/",
+      "kind": "html",
+      "title": "Summer Camp & Enhancement Programs | Borough of Morris Plains, NJ"
+    },
+    "warnings": [],
+    "unknowns": [
+      "2027 dates and fees",
+      "Exact address of the Teen Center"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-25",
+      "page_checked": "https://morrisplainsboro.org/summer-camp-enhancement-programs/",
+      "changes": [
+        "New camp, researched from https://morrisplainsboro.org/summer-camp-enhancement-programs/"
+      ],
+      "for_andrew": [
+        "Residents only: the camp is open only to families paying Morris Plains property tax, so the one posted rate ($375 for five weeks) is recorded. Andrew to decide whether a residents-only camp is listed.",
+        "Super Kids Camp (K to 5) and Teen Camp (6 to 9) share dates but meet at different buildings; drafted as one listing. The web page says K to 5 meet at Community Park, the 2026 flyer says the Community Center; the Community Center address is used."
+      ]
+    }
+  }
+}

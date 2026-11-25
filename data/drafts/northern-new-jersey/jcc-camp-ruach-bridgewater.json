@@ -1,0 +1,147 @@
+{
+  "slug": "jcc-camp-ruach-bridgewater",
+  "name": "JCC Camp Ruach",
+  "website_url": "https://jcccampruach.org/",
+  "registration_url": "https://ruach.campintouch.com/ui/forms/application/camper/App",
+  "email": "asteinberg@ssbjcc.org",
+  "phone": "908-443-9026",
+  "street_address": "775 Talamini Road",
+  "city": "Bridgewater",
+  "state": "NJ",
+  "zip": "08807",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "swimming",
+    "sports",
+    "arts",
+    "adventure",
+    "performing_arts"
+  ],
+  "activities": [
+    "swimming",
+    "swim lessons",
+    "athletics",
+    "art",
+    "ropes course",
+    "woodworking",
+    "electives",
+    "sports leagues",
+    "day trips",
+    "theater"
+  ],
+  "age_min": 3,
+  "age_max": 15,
+  "grade_max": 9,
+  "description_short": "JCC day camp in Bridgewater, open to families of any background, for ages 3 through 9th grade. Campers swim twice a day and rotate through sports, art, a ropes course and electives; grades 4 to 9 take day trips twice a week to places like the beach and amusement parks.",
+  "indoor_outdoor": "both",
+  "religious_affiliation": "Jewish",
+  "price_min": 2170,
+  "price_max": 8300,
+  "price_per": "session",
+  "extended_care": true,
+  "transportation": true,
+  "meals_included": true,
+  "financial_aid": true,
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Full summer (8 weeks)",
+      "start_date": "2027-06-21",
+      "end_date": "2027-08-13",
+      "availability": "unknown"
+    },
+    {
+      "name": "Specialty Camp week",
+      "start_date": "2027-08-16",
+      "end_date": "2027-08-20",
+      "price": 700,
+      "availability": "unknown"
+    }
+  ],
+  "notes": "2027 non-member (camp fee) tuition by program, 4 to 8 weeks: K'ton ages 2 to 4 half or full days $2,170 to $5,775; Yeladim K to 1 $3,650 to $6,320; Gadol grades 2 to 3 $4,680 to $6,370; Tzahov grades 4 to 6 $5,150 to $7,000; Sababa grades 7 to 9 $5,220 to $7,065; Road Rulz grades 7 to 9 $6,050 to $8,300; LIT grades 8 to 9 $3,470 to $4,700. JCC members pay $550 less for most programs (for example Gadol 8 weeks $5,820 member, $6,370 non-member); the camp fee covers the first child and siblings get the member rate. $250 off if registered before December 31. Early care and late stay cost extra. Specialty Camp August 16 to 20 is $700 for non-Ruach campers, $650 for Ruach campers. Hours 9:00 to 4:00.",
+  "sources": [
+    {
+      "url": "https://jcccampruach.org/",
+      "checked": "2026-11-25",
+      "fields": [
+        "name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip"
+      ],
+      "note": "Researched by Claude from this page. Home page: opening day June 21, 2027, closing August 13, 2027, specialty camp August 16 to 20; address 775 Talamini Road."
+    },
+    {
+      "url": "https://jcccampruach.org/dates-and-rates/",
+      "checked": "2026-11-25",
+      "fields": [
+        "price_min",
+        "price_max",
+        "price_per",
+        "extended_care",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. 2027 camp rates page: June 21 to August 13; non-member (fee) and JCC member columns for each program. Range uses the non-member column. Early care and late stay priced separately."
+    },
+    {
+      "url": "https://jcccampruach.org/age-groups/",
+      "checked": "2026-11-25",
+      "fields": [
+        "camp_type",
+        "primary_categories",
+        "age_min",
+        "age_max",
+        "grade_max",
+        "description_short",
+        "indoor_outdoor"
+      ],
+      "note": "Researched by Claude from this page. Age groups page: K'ton ages 3 and 4 through Sababa entering grades 7 to 9. Age max derived from grade 9."
+    },
+    {
+      "url": "https://jcccampruach.org/faq/",
+      "checked": "2026-11-25",
+      "fields": [
+        "secondary_categories",
+        "activities",
+        "religious_affiliation",
+        "transportation",
+        "meals_included",
+        "financial_aid"
+      ],
+      "note": "Researched by Claude from this page. FAQ: open to everyone, you do not have to be Jewish; busing for full day campers; snacks and lunch included; twice daily swim, athletics, art, ropes course from 2nd grade, electives; financial assistance available."
+    }
+  ],
+  "review": {
+    "status": "ready",
+    "source": {
+      "url": "https://jcccampruach.org/",
+      "kind": "html",
+      "title": "JCC Camp Ruach"
+    },
+    "warnings": [],
+    "unknowns": [
+      "operator_name",
+      "aca_accredited",
+      "refund_policy_summary"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-25",
+      "page_checked": "https://jcccampruach.org/",
+      "changes": [
+        "New camp, researched from https://jcccampruach.org/"
+      ],
+      "for_andrew": []
+    }
+  }
+}

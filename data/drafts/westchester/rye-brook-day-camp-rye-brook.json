@@ -1,0 +1,102 @@
+{
+  "slug": "rye-brook-day-camp-rye-brook",
+  "name": "Rye Brook Day Camp",
+  "operator_name": "Village of Rye Brook Parks & Recreation",
+  "website_url": "https://ryebrookny.gov/day-camp",
+  "email": "vrbrec@ryebrookny.gov",
+  "phone": "914-939-3235",
+  "city": "Rye Brook",
+  "zip": "10573",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "activities": [
+    "field trips",
+    "end of season performances"
+  ],
+  "grade_min": 0,
+  "grade_max": 6,
+  "age_min": 5,
+  "age_max": 12,
+  "description_short": "Village day camp for children entering kindergarten to 6th grade, six weeks from July 6 to August 14, 2026, sold by the week or for the full season, with weekly trips and end of season performances.",
+  "price_per_week": 545,
+  "price_min": 545,
+  "price_max": 2165,
+  "price_per": "session",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Full season, 6 weeks (non-resident)",
+      "start_date": "2026-07-06",
+      "end_date": "2026-08-14",
+      "price": 2165,
+      "availability": "unknown"
+    }
+  ],
+  "notes": "Non-resident rates shown. Residents pay $415 for one week up to $1,565 for six weeks, or $1,415 for six weeks if registered before May 1. Additional children pay less.",
+  "state": "NY",
+  "sources": [
+    {
+      "url": "https://ryebrookny.gov/day-camp",
+      "checked": "2026-11-25",
+      "fields": [
+        "name",
+        "website_url",
+        "email",
+        "phone",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "description_short",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Day Camp page: 2026 Rye Brook Day Camp July 6 through August 14; forms due June 20; sample schedule and end of season performance video. Phone, email and the Recreation office address (938 King Street, Rye Brook, NY 10573) in the sidebar; ZIP is from that office address, as the page does not say where camp meets. Session price is the non-resident 6 week rate from the fee page."
+    },
+    {
+      "url": "https://ryebrookny.gov/day-camp-fees/",
+      "checked": "2026-11-25",
+      "fields": [
+        "operator_name",
+        "grade_min",
+        "grade_max",
+        "age_min",
+        "age_max",
+        "price_per_week",
+        "price_min",
+        "price_max",
+        "price_per"
+      ],
+      "note": "Researched by Claude from this page. Day Camp Fee Schedule 2026, K to 6th grades. Non-resident first child: 1 week $545, 2 weeks $930, 3 weeks $1,240, 4 weeks $1,445, 5 weeks $1,815, 6 weeks $2,165. Residents after 5/1: $415 a week to $1,565 for 6 weeks; residents before 5/1: $1,415 for 6 weeks. Sibling discounts. Ages derived from grades."
+    }
+  ],
+  "review": {
+    "status": "ready",
+    "source": {
+      "url": "https://ryebrookny.gov/day-camp",
+      "kind": "html",
+      "title": "Day Camp, Village of Rye Brook"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Where camp meets",
+      "Daily hours",
+      "Lunch",
+      "Extended care"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-25",
+      "page_checked": "https://ryebrookny.gov/day-camp",
+      "changes": [
+        "New camp, researched from https://ryebrookny.gov/day-camp"
+      ],
+      "for_andrew": []
+    }
+  }
+}

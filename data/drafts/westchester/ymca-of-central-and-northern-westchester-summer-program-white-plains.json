@@ -112,6 +112,14 @@
         "sessions"
       ],
       "note": "Researched by Claude from this page. Westchester County Summer Programs page, Summer 2026: July 6 to August 14, $440 a week 8 to 4 or $480 a week 8 to 6 (the later pickup is recorded as extended care). Big Kid Summer is for children entering grades 1 to 5 in fall 2026; ages derived from grades. Listing placed at the White Plains YMCA, one of three sites with the same dates and rates."
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=148+Hamilton+Ave%2C+White+Plains%2C+NY&benchmark=Public_AR_Current&format=json",
+      "checked": "2026-11-25",
+      "fields": [
+        "zip"
+      ],
+      "note": "Researched by Claude from this page. ZIP looked up with the Census Bureau geocoder from the address on the camp's page (148 HAMILTON AVE, WHITE PLAINS, NY, 10601)"
     }
   ],
   "review": {
@@ -136,9 +144,11 @@
       "date": "2026-11-25",
       "page_checked": "https://ymca-cnw.org/summer-programs-2/",
       "changes": [
-        "New camp, researched from https://ymca-cnw.org/summer-programs-2/"
+        "New camp, researched from https://ymca-cnw.org/summer-programs-2/",
+        "ZIP 10601 looked up from the camp's street address with the Census geocoder (Andrew allowed ZIP lookups, 22 November)."
       ],
       "for_andrew": []
     }
-  }
+  },
+  "zip": "10601"
 }
