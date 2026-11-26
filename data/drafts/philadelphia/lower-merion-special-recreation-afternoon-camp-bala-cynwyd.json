@@ -1,0 +1,110 @@
+{
+  "operator_name": "Lower Merion Township Parks & Recreation",
+  "website_url": "https://lowermerionpa.myrec.com/forms/6046_summer_2026__final.pdf",
+  "email": "recreation@lowermerion.org",
+  "phone": "610-645-6220",
+  "state": "PA",
+  "camp_type": "day",
+  "season_year": 2026,
+  "slug": "lower-merion-special-recreation-afternoon-camp-bala-cynwyd",
+  "name": "Lower Merion Special Recreation Afternoon Camp",
+  "street_address": "Belmont Hills Pool, 122 Mary Watersford Rd",
+  "city": "Bala Cynwyd",
+  "primary_categories": [
+    "special_needs"
+  ],
+  "secondary_categories": [
+    "swimming"
+  ],
+  "activities": [
+    "swimming"
+  ],
+  "age_min": 7,
+  "age_max": 18,
+  "description_short": "Afternoon camp for children and teens with special needs, ages 7 to 18, who spend the afternoon swimming with township staff at the Belmont Hills public pool. Runs Monday to Thursday, 1:30 to 4:30, for about six weeks with a group limit of six.",
+  "indoor_outdoor": "outdoor",
+  "price_min": 1020,
+  "price_max": 1020,
+  "price_per": "summer",
+  "transportation": false,
+  "special_needs_notes": "Program is for children with special needs; group limit of 6. Families in Lower Merion ESY may have after school transport from the school district.",
+  "swim_waterfront_notes": "Swimming at the Belmont Hills public pool with township staff, weather permitting.",
+  "refund_policy_summary": "No refund or makeup for weather cancellations; an extreme case such as a whole week lost is handled case by case with a credit toward a future program.",
+  "sessions": [
+    {
+      "name": "Summer program, Monday to Thursday 1:30 to 4:30",
+      "start_date": "2026-06-30",
+      "end_date": "2026-08-06",
+      "price": 1020,
+      "availability": "unknown"
+    }
+  ],
+  "notes": "2026 fee: non-residents $1,020, Lower Merion residents $850. Parent pick up only; no transportation home at the end of camp. 2027 not yet posted.",
+  "sources": [
+    {
+      "url": "https://lowermerionpa.myrec.com/forms/6046_summer_2026__final.pdf",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "indoor_outdoor",
+        "price_min",
+        "price_max",
+        "price_per",
+        "transportation",
+        "special_needs_notes",
+        "swim_waterfront_notes",
+        "refund_policy_summary",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Summer 2026 recreation brochure, Special Recreation Afternoon Camp: Belmont Hills Pool, 122 Mary Watersford Rd, Bala Cynwyd; June 30 to August 6; ages 7 to 18; resident $850, non-resident $1,020 (price fields use the non-resident rate); no transportation at the end of camp.",
+      "checked": "2026-11-25"
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=122+Mary+Watersford+Rd%2C+Bala+Cynwyd%2C+PA&benchmark=Public_AR_Current&format=json",
+      "checked": "2026-11-25",
+      "fields": [
+        "zip"
+      ],
+      "note": "ZIP looked up with the Census Bureau geocoder from the address on the camp's page (122 MARYWATERSFORD RD, BALA CYNWYD, PA, 19004)"
+    }
+  ],
+  "review": {
+    "status": "ready",
+    "source": {
+      "url": "https://lowermerionpa.myrec.com/forms/6046_summer_2026__final.pdf",
+      "kind": "pdf",
+      "title": "Township of Lower Merion Parks & Recreation, Summer 2026 Recreation Information"
+    },
+    "warnings": [],
+    "unknowns": [
+      "2027 dates and fee"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-25",
+      "page_checked": "https://lowermerionpa.myrec.com/forms/6046_summer_2026__final.pdf",
+      "changes": [
+        "New camp, researched from https://lowermerionpa.myrec.com/forms/6046_summer_2026__final.pdf",
+        "ZIP 19004 looked up from the camp's street address with the Census geocoder (ZIP lookups allowed by Andrew, 22 November).",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
+      ],
+      "for_andrew": []
+    }
+  },
+  "zip": "19004"
+}

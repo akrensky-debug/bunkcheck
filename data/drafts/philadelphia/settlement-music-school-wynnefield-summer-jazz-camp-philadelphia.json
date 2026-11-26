@@ -1,0 +1,108 @@
+{
+  "slug": "settlement-music-school-wynnefield-summer-jazz-camp-philadelphia",
+  "name": "Settlement Music School Wynnefield Summer Jazz Camp",
+  "operator_name": "Settlement Music School",
+  "website_url": "https://settlementmusic.org/music/kids-teens/summer-programs/",
+  "email": "luke.honer@settlementmusic.org",
+  "street_address": "4910 Wynnefield Avenue",
+  "city": "Philadelphia",
+  "state": "PA",
+  "camp_type": "specialty",
+  "primary_categories": [
+    "performing_arts"
+  ],
+  "secondary_categories": [
+    "arts"
+  ],
+  "activities": [
+    "jazz ensemble",
+    "improvisation",
+    "jazz harmony",
+    "final performance"
+  ],
+  "age_min": 12,
+  "age_max": 18,
+  "description_short": "One week jazz camp for ages 12 to 18 at Settlement Music School's Wynnefield Branch, 9 to 3 daily, where students work on jazz harmony and improvisation with the school's faculty, play in a group and give a final performance on the last day.",
+  "indoor_outdoor": "indoor",
+  "price_per_week": 590,
+  "price_min": 590,
+  "price_max": 590,
+  "price_per": "week",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Summer Jazz Camp",
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-14",
+      "price": 590,
+      "availability": "unknown"
+    }
+  ],
+  "notes": "$590 for the week plus Settlement's $5 registration fee; one price for everyone. Settlement's other summer offerings at its branches are weekly evening classes, not camps, so they are not listed.",
+  "sources": [
+    {
+      "url": "https://settlementmusic.org/music/kids-teens/summer-programs/",
+      "checked": "2026-11-25",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "street_address",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "indoor_outdoor",
+        "price_per_week",
+        "price_min",
+        "price_max",
+        "price_per",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Summer Programs page, summer 2026: Wynnefield Summer Jazz Camp (ages 12 to 18), Monday August 10 to Friday August 14, 9 a.m. to 3 p.m., $590, final performance August 14, at the Wynnefield Branch, 4910 Wynnefield Avenue, Philadelphia; email is the Wynnefield branch director's. $5 registration fee on all courses. No ZIP on the page."
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=4910+Wynnefield+Avenue%2C+Philadelphia%2C+PA&benchmark=Public_AR_Current&format=json",
+      "checked": "2026-11-25",
+      "fields": [
+        "zip"
+      ],
+      "note": "ZIP looked up with the Census Bureau geocoder from the address on the camp's page (4910 WYNNEFIELD AVE, PHILADELPHIA, PA, 19131)"
+    }
+  ],
+  "review": {
+    "status": "ready",
+    "source": {
+      "url": "https://settlementmusic.org/music/kids-teens/summer-programs/",
+      "kind": "html",
+      "title": "Summer Music Programs for Kids & Teens in Philadelphia"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Phone",
+      "Financial aid for summer",
+      "Lunch",
+      "2027 dates",
+      "ACA accreditation"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-25",
+      "page_checked": "https://settlementmusic.org/music/kids-teens/summer-programs/",
+      "changes": [
+        "New camp, researched from https://settlementmusic.org/music/kids-teens/summer-programs/",
+        "ZIP 19131 looked up from the camp's street address with the Census geocoder (ZIP lookups allowed by Andrew, 22 November)."
+      ],
+      "for_andrew": []
+    }
+  },
+  "zip": "19131"
+}

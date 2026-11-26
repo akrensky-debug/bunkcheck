@@ -1,0 +1,194 @@
+{
+  "slug": "camp-saginaw-oxford",
+  "name": "Camp Saginaw",
+  "operator_name": "Camp Saginaw",
+  "website_url": "https://www.campsaginaw.com/",
+  "registration_url": "https://saginaw.campintouch.com/ui/forms/application/camper/App",
+  "phone": "888-477-2267",
+  "street_address": "740 Saginaw Road",
+  "city": "Oxford",
+  "state": "PA",
+  "zip": "19363",
+  "camp_type": "sleepaway",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "sports",
+    "arts",
+    "swimming",
+    "adventure"
+  ],
+  "activities": [
+    "athletics",
+    "ceramics",
+    "arts",
+    "swimming",
+    "lake tubing",
+    "canoeing",
+    "wakeboarding",
+    "high ropes",
+    "low ropes",
+    "aerial course",
+    "zip lines",
+    "dirt bikes",
+    "archery",
+    "trips"
+  ],
+  "gender_policy": "coed",
+  "age_min": 6,
+  "age_max": 16,
+  "grade_min": 1,
+  "grade_max": 11,
+  "description_short": "Family run coed overnight camp for about 400 kids ages 6 to 16 on over 400 wooded acres in southern Chester County, founded in 1927 and marking its 100th summer in 2027. Campers do athletics, arts and ceramics, two pools, a lake and Big Elk Creek, ropes and aerial courses, zip lines, dirt bikes and trips, in full, half and two week sessions.",
+  "indoor_outdoor": "both",
+  "price_min": 50,
+  "price_max": 13500,
+  "price_per": "session",
+  "transportation": true,
+  "meals_included": true,
+  "financial_aid": true,
+  "aca_accredited": true,
+  "aca_source_url": "https://www.campsaginaw.com/why-saginaw",
+  "refund_policy_summary": "A $2,500 deposit at enrollment, $500 of it a non-refundable application fee; no refunds for cancellations after January 1, 2027. A first time camper who leaves early gets the unused days refunded.",
+  "season_year": 2027,
+  "notes": "2027 tuition has three tiers (early bird, standard, late spring); the page does not give the tier dates, so the standard rate is recorded. Early bird / late spring: Full Season $13,000 / $14,000; First Half $8,600 / $9,050; Second Half grades 1 to 5 $5,700 / $6,250; grades 6 to 11 $6,800 / $7,250; Two Weeks $5,000 / $5,450. Two Weeks and Rookie Day are for first time campers only. Cash or check prices; 3% card fee. Tuition includes trips, canteen, laundry and coach bus transportation. Sibling, alumni and referral discounts. Winter office in Cherry Hill, NJ.",
+  "sessions": [
+    {
+      "name": "Full Season",
+      "start_date": "2027-06-27",
+      "end_date": "2027-08-14",
+      "price": 13500,
+      "availability": "open"
+    },
+    {
+      "name": "First Half",
+      "start_date": "2027-06-27",
+      "end_date": "2027-07-24",
+      "price": 8850,
+      "availability": "open"
+    },
+    {
+      "name": "Second Half (grades 1 to 5)",
+      "start_date": "2027-07-25",
+      "end_date": "2027-08-14",
+      "price": 6000,
+      "availability": "open"
+    },
+    {
+      "name": "Second Half (grades 6 to 11)",
+      "start_date": "2027-07-25",
+      "end_date": "2027-08-14",
+      "price": 7000,
+      "availability": "open"
+    },
+    {
+      "name": "Two Weeks (first time campers, grades 1 to 5)",
+      "start_date": "2027-06-27",
+      "end_date": "2027-07-10",
+      "price": 5250,
+      "availability": "open"
+    },
+    {
+      "name": "Rookie Day (grades 1 to 5)",
+      "start_date": "2027-07-31",
+      "end_date": "2027-07-31",
+      "price": 50,
+      "availability": "open"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.campsaginaw.com/dates-rates",
+      "fields": [
+        "name",
+        "registration_url",
+        "price_min",
+        "price_max",
+        "price_per",
+        "transportation",
+        "financial_aid",
+        "refund_policy_summary",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Summer 2027 Dates & Rates: sessions, three tuition tiers (standard recorded), deposit and no refunds after January 1, 2027, first time camper guarantee, tuition includes coach bus transport, alumni fund partial scholarships. Availability 'open' because 2027 enrollment is open.",
+      "checked": "2026-11-25"
+    },
+    {
+      "url": "https://www.campsaginaw.com/contact-us",
+      "fields": [
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip"
+      ],
+      "note": "Researched by Claude from this page. Contact page: summer address 740 Saginaw Road, Oxford, PA 19363; toll free 888-477-CAMP (2267).",
+      "checked": "2026-11-25"
+    },
+    {
+      "url": "https://www.campsaginaw.com/why-saginaw",
+      "fields": [
+        "operator_name",
+        "website_url",
+        "camp_type",
+        "gender_policy",
+        "age_min",
+        "age_max",
+        "description_short",
+        "aca_accredited",
+        "aca_source_url"
+      ],
+      "note": "Researched by Claude from this page. Why Saginaw: since 1927, about 200 boys and 200 girls ages six through sixteen, family owned, accredited by the ACA. 400 acres from the FAQ.",
+      "checked": "2026-11-25"
+    },
+    {
+      "url": "https://www.campsaginaw.com/why-saginaw/activities",
+      "fields": [
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "indoor_outdoor"
+      ],
+      "note": "Researched by Claude from this page. Activities page and its adventure and arts subpages: athletics by grade from 1st to 11th, two pools, lake and creek, ropes and aerial course, zip lines, dirt bikes, archery, ceramics.",
+      "checked": "2026-11-25"
+    },
+    {
+      "url": "https://www.campsaginaw.com/why-saginaw/health-nutrition",
+      "fields": [
+        "meals_included"
+      ],
+      "note": "Researched by Claude from this page. Health & Nutrition: three meals a day plus afternoon snack in the dining hall.",
+      "checked": "2026-11-25"
+    }
+  ],
+  "review": {
+    "status": "ready",
+    "source": {
+      "url": "https://www.campsaginaw.com/dates-rates",
+      "kind": "html",
+      "title": "Dates & RatesCamp Saginaw"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Which tuition tier applies today",
+      "Camp email (blank on the contact page)"
+    ],
+    "low_confidence": [
+      "sessions prices: standard tier recorded; the page does not say when early bird ends"
+    ],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-25",
+      "page_checked": "https://www.campsaginaw.com/dates-rates",
+      "changes": [
+        "New camp, researched from https://www.campsaginaw.com/dates-rates",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
+      ],
+      "for_andrew": []
+    }
+  }
+}

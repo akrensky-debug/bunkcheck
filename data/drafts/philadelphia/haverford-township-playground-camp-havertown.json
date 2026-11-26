@@ -1,0 +1,109 @@
+{
+  "slug": "haverford-township-playground-camp-havertown",
+  "name": "Haverford Township Playground Camp",
+  "operator_name": "Haverford Township Parks & Recreation",
+  "website_url": "https://haverfordtownship.org/Parks_and_Recreation/Summer_Camp_Info.html",
+  "email": "recinfo@havtwp.com",
+  "phone": "484-380-2730",
+  "street_address": "Hilltop Park, 1400 Steel Rd",
+  "city": "Haverford",
+  "state": "PA",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "sports",
+    "arts",
+    "outdoor"
+  ],
+  "activities": [
+    "sports",
+    "arts and crafts",
+    "small group games",
+    "large group games",
+    "dodgeball",
+    "special days"
+  ],
+  "age_min": 6,
+  "age_max": 12,
+  "description_short": "Outdoor township playground camp for Haverford Township residents ages 6 to 12 at seven neighborhood parks (Coopertown, Grange, Hilltop, Merwood, Paddock, Veterans and Westgate). Kids play sports, group games and dodgeball and do crafts and special theme days; only township residents can register.",
+  "indoor_outdoor": "outdoor",
+  "meals_included": false,
+  "refund_policy_summary": "No refunds after June 6.",
+  "season_year": 2026,
+  "notes": "2026: June 22 to July 30, Monday to Thursday 9:00 to 3:00 and Friday 10:00 to 3:00, Life Be In It day July 31. Seven park sites; the address shown is Hilltop Park, one of the seven. Residents only; registration opened March 29, 2026. Fees not posted on the camp page. Campers bring lunch, water and sunscreen.",
+  "sources": [
+    {
+      "url": "https://haverfordtownship.org/Parks_and_Recreation/Summer_Camp_Info.html",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "phone",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "indoor_outdoor",
+        "meals_included",
+        "refund_policy_summary"
+      ],
+      "note": "Researched by Claude from this page. Summer Camp Information page, Playground Program section: 2026 dates, ages 6 to 12 (or finished kindergarten), all outdoors at seven parks, residents only, bring lunch, no refunds after June 6.",
+      "checked": "2026-11-25"
+    },
+    {
+      "url": "https://haverfordtownship.org/Parks_and_Recreation/Township_Parks_&_Trails_Information.html",
+      "fields": [
+        "street_address",
+        "city",
+        "state"
+      ],
+      "note": "Researched by Claude from this page. Township parks page: Hilltop Park, 1400 Steel Rd., Havertown.",
+      "checked": "2026-11-25"
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1400+Steel+Rd%2C+Havertown%2C+PA&benchmark=Public_AR_Current&format=json",
+      "checked": "2026-11-25",
+      "fields": [
+        "zip"
+      ],
+      "note": "ZIP looked up with the Census Bureau geocoder from the address on the camp's page (1400 STEEL RD, HAVERTOWN, PA, 19083)"
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://haverfordtownship.org/Parks_and_Recreation/Summer_Camp_Info.html",
+      "kind": "html",
+      "title": "Summer Camp Information | The Township of Haverford, PA"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Weekly fee",
+      "2027 dates",
+      "Financial aid"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-25",
+      "page_checked": "https://haverfordtownship.org/Parks_and_Recreation/Summer_Camp_Info.html",
+      "changes": [
+        "New camp, researched from https://haverfordtownship.org/Parks_and_Recreation/Summer_Camp_Info.html",
+        "ZIP 19083 looked up from the camp's street address with the Census geocoder (ZIP lookups allowed by Andrew, 22 November).",
+        "City set to Haverford Township, which the Census geocoder gives for this address; Havertown is its postal town."
+      ],
+      "for_andrew": [
+        "Residents only: the page says you must be a Haverford Township resident to register, and no price is posted on the camp page (fees are in the township's Summer HavaGood Times). I recorded no price and said who can enroll in the description. List it as a residents-only camp, or leave it out?",
+        "The camp runs at seven parks with the same dates and ages, so I made one listing at Hilltop Park, one of the seven. OK, or one listing per park?"
+      ]
+    }
+  },
+  "zip": "19083"
+}

@@ -1,0 +1,145 @@
+{
+  "slug": "easttown-township-summer-camp-devon",
+  "name": "Easttown Township Summer Camp",
+  "operator_name": "Easttown Township Parks & Recreation",
+  "website_url": "https://www.easttown.org/347/Summer-Camp",
+  "phone": "610-687-3000",
+  "street_address": "Hilltop Park, 570 Beaumont Road",
+  "city": "Devon",
+  "state": "PA",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "sports",
+    "arts",
+    "outdoor"
+  ],
+  "activities": [
+    "arts and crafts",
+    "games",
+    "sports",
+    "pickleball",
+    "9-square",
+    "water wednesdays",
+    "themed thursdays"
+  ],
+  "grade_min": 1,
+  "grade_max": 8,
+  "age_min": 6,
+  "age_max": 14,
+  "description_short": "Half day township camp, 9:00 to noon on weekdays for five weeks in July, at Hilltop Park in Devon for rising 1st to rising 8th graders. Kids do crafts, games, competitive and cooperative sports, pickleball and 9-square, with Water Wednesdays and Themed Thursdays; you don't need to live in Easttown to join.",
+  "indoor_outdoor": "outdoor",
+  "price_per_week": 75,
+  "price_min": 75,
+  "price_max": 75,
+  "price_per": "week",
+  "financial_aid": true,
+  "season_year": 2026,
+  "notes": "2026 rates, the same for residents and non-residents: $75 a week for the first child, $70 for a second, $65 for each further child. Financial assistance may be available for Easttown residents (610-687-3000 x120). Registration opens each February 1 and closes June 1. 2027 dates not yet posted.",
+  "sessions": [
+    {
+      "name": "Week 1 (4 days, no camp July 3)",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-02",
+      "price": 75,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 2",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": 75,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 3",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": 75,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 4",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": 75,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 5",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": 75,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.easttown.org/347/Summer-Camp",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "age_min",
+        "age_max",
+        "description_short",
+        "indoor_outdoor",
+        "price_per_week",
+        "price_min",
+        "price_max",
+        "price_per",
+        "financial_aid",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Summer Camp page: 2026 rates, Hilltop Park (570 Beaumont Road, Devon, PA), weekdays 9 to noon, weeks June 29 to July 31, rising grades 1 to 8, non-residents welcome. Ages derived from grades, not stated. Park camp, so outdoor. Phone is the township office. Financial assistance for township residents only.",
+      "checked": "2026-11-25"
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=570+Beaumont+Road%2C+Devon%2C+PA&benchmark=Public_AR_Current&format=json",
+      "checked": "2026-11-25",
+      "fields": [
+        "zip"
+      ],
+      "note": "ZIP looked up with the Census Bureau geocoder from the address on the camp's page (570 BEAUMONT RD, DEVON, PA, 19333)"
+    }
+  ],
+  "review": {
+    "status": "ready",
+    "source": {
+      "url": "https://www.easttown.org/347/Summer-Camp",
+      "kind": "html",
+      "title": "Summer Camp | Easttown Township, PA"
+    },
+    "warnings": [],
+    "unknowns": [
+      "2027 dates and rates",
+      "Email"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-25",
+      "page_checked": "https://www.easttown.org/347/Summer-Camp",
+      "changes": [
+        "New camp, researched from https://www.easttown.org/347/Summer-Camp",
+        "ZIP 19333 looked up from the camp's street address with the Census geocoder (ZIP lookups allowed by Andrew, 22 November).",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
+      ],
+      "for_andrew": []
+    }
+  },
+  "zip": "19333"
+}

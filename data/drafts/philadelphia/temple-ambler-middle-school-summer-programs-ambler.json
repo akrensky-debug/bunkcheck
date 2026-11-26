@@ -1,0 +1,163 @@
+{
+  "slug": "temple-ambler-middle-school-summer-programs-ambler",
+  "name": "Temple Ambler Middle School Summer Programs",
+  "operator_name": "Temple University Ambler",
+  "website_url": "https://ambler.temple.edu/community/middle-school-summer-programs/2026-programming",
+  "email": "summer@temple.edu",
+  "street_address": "580 Meetinghouse Road",
+  "city": "Ambler",
+  "state": "PA",
+  "zip": "19002",
+  "camp_type": "specialty",
+  "primary_categories": [
+    "STEM"
+  ],
+  "secondary_categories": [
+    "nature",
+    "performing_arts",
+    "technology",
+    "outdoor"
+  ],
+  "activities": [
+    "engineering",
+    "flight simulator",
+    "underwater robotics",
+    "film and tv acting",
+    "gardening",
+    "horticulture",
+    "botanical illustration",
+    "nature hikes",
+    "low ropes",
+    "ecology"
+  ],
+  "grade_min": 5,
+  "grade_max": 9,
+  "age_min": 10,
+  "age_max": 15,
+  "description_short": "One and two week day programs on Temple University's Ambler campus for middle schoolers, 9:00 to 4:00. Each week has its own topic, such as STEM labs, a flight simulator, underwater robots tested in the campus pool, film and TV acting, gardening at the Ambler Arboretum, and an outdoor ecology camp with low ropes.",
+  "indoor_outdoor": "both",
+  "price_min": 325,
+  "price_max": 755,
+  "price_per": "session",
+  "financial_aid": true,
+  "refund_policy_summary": "Withdraw in writing at least three weeks before the start for a refund less a $50 fee. A 10% deposit holds a place, with the balance due two weeks before the first day.",
+  "season_year": 2026,
+  "notes": "2026 programs for students entering grades 6 to 9 (Wickline Casting also takes rising 5th graders; Philadelphia Youth STEM is rising 6 to 8). Some programs add a $20 or $30 materials fee. Scholarships for eligible low income Philadelphia students through the Southwest Belmont Community Association (email summer@temple.edu). Registration for 2026 is closed; 2027 not yet posted.",
+  "sessions": [
+    {
+      "name": "From Trees to Tech: STEM Explorers",
+      "start_date": "2026-06-22",
+      "end_date": "2026-06-26",
+      "price": 425,
+      "availability": "unknown"
+    },
+    {
+      "name": "From STEAM to SPACE: A Scientific Journey (4 days, plus $20 materials)",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-02",
+      "price": 325,
+      "availability": "unknown"
+    },
+    {
+      "name": "Wickline Casting: Intro to Film and TV (plus $30 materials)",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": 425,
+      "availability": "unknown"
+    },
+    {
+      "name": "Philadelphia Youth STEM (rising grades 6 to 8)",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": 425,
+      "availability": "unknown"
+    },
+    {
+      "name": "Green Thumb Academy (plus $20 materials)",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": 425,
+      "availability": "unknown"
+    },
+    {
+      "name": "SeaPerch Robots (2 weeks)",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-31",
+      "price": 755,
+      "availability": "unknown"
+    },
+    {
+      "name": "Camp Branchout (plus $20 materials)",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": 375,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://ambler.temple.edu/community/middle-school-summer-programs/2026-programming",
+      "fields": [
+        "name",
+        "website_url",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "age_min",
+        "age_max",
+        "description_short",
+        "indoor_outdoor",
+        "price_min",
+        "price_max",
+        "price_per",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. 2026 Programming page: seven programs with dates, 9 to 4 hours and fees; rising grades 6 to 9 (one program from rising 5th). Ages derived from grades, not stated. Campus address in the footer.",
+      "checked": "2026-11-25"
+    },
+    {
+      "url": "https://ambler.temple.edu/community/middle-school-summer-programs",
+      "fields": [
+        "operator_name",
+        "email",
+        "financial_aid",
+        "refund_policy_summary"
+      ],
+      "note": "Researched by Claude from this page. Middle School Summer Programs page: summer 2026, scholarships via SWBCA, deposit and refund terms, contact summer@temple.edu.",
+      "checked": "2026-11-25"
+    }
+  ],
+  "review": {
+    "status": "ready",
+    "source": {
+      "url": "https://ambler.temple.edu/community/middle-school-summer-programs/2026-programming",
+      "kind": "html",
+      "title": "2026 Programming | Ambler Campus | Temple University"
+    },
+    "warnings": [],
+    "unknowns": [
+      "2027 programs",
+      "Lunch",
+      "Phone"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-25",
+      "page_checked": "https://ambler.temple.edu/community/middle-school-summer-programs/2026-programming",
+      "changes": [
+        "New camp, researched from https://ambler.temple.edu/community/middle-school-summer-programs/2026-programming",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
+      ],
+      "for_andrew": []
+    }
+  }
+}

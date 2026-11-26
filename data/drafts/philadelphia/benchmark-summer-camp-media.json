@@ -1,0 +1,130 @@
+{
+  "slug": "benchmark-summer-camp-media",
+  "name": "Benchmark Camp",
+  "operator_name": "Benchmark School",
+  "website_url": "https://www.benchmarkschool.org/summer-camp",
+  "phone": "610-565-3741",
+  "street_address": "2107 North Providence Rd",
+  "city": "Media",
+  "state": "PA",
+  "zip": "19063",
+  "camp_type": "specialty",
+  "primary_categories": [
+    "academic"
+  ],
+  "secondary_categories": [
+    "special_needs",
+    "swimming",
+    "adventure",
+    "arts",
+    "sports"
+  ],
+  "activities": [
+    "reading and writing instruction",
+    "executive function skills",
+    "swimming",
+    "art",
+    "crafts",
+    "robotics",
+    "innovation lab",
+    "sports and games",
+    "ropes course",
+    "zipline"
+  ],
+  "grade_min": 1,
+  "grade_max": 6,
+  "age_min": 6,
+  "age_max": 12,
+  "description_short": "Five week summer program at Benchmark School in Media for rising 1st to 6th graders, built for bright kids with dyslexia, ADHD or other learning differences. Mornings mix small group reading, writing and executive function lessons with recreation; full day campers add afternoons of sports, swimming, art and a ropes course with a zipline.",
+  "indoor_outdoor": "both",
+  "extended_care": true,
+  "meals_included": false,
+  "special_needs_notes": "Designed for children with dyslexia, ADHD, auditory processing or other learning differences. Language arts classes have up to nine students with a head teacher and an assistant; new campers get a reading assessment after registering for class placement.",
+  "season_year": 2027,
+  "notes": "Full day 8:15 to 4:00, half day 8:15 to 12:15, or language arts only (8:15 to 10:00 or 10:30 to 12:15). After camp care 4:00 to 6:00. Full day campers bring lunch unless they buy the hot lunch program. No camp July 5, 2027. The pricing page says to check back in December for 2027 rates.",
+  "sessions": [
+    {
+      "name": "Summer 2027, five weeks (no camp July 5)",
+      "start_date": "2027-06-28",
+      "end_date": "2027-07-30",
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.benchmarkschool.org/summer-camp",
+      "checked": "2026-11-25",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "age_min",
+        "age_max",
+        "description_short",
+        "extended_care",
+        "special_needs_notes"
+      ],
+      "note": "Researched by Claude from this page. Summer camp main page: rising grades 1 to 6, five week program with language arts and recreation (swimming, art, crafts, robotics, Innovation Lab, sports, 35 event Confidence Course with a zipline). After camp care 4 to 6. Ages derived from grades, not stated. Class size from the Language Arts Program page."
+    },
+    {
+      "url": "https://www.benchmarkschool.org/summer-camp/pricing-and-reg",
+      "checked": "2026-11-25",
+      "fields": [
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Pricing and Registration page: camp season June 28 to July 30, 2027; rates not yet posted. Address and phone from the footer (ZIP given as 19063-1898)."
+    },
+    {
+      "url": "https://www.benchmarkschool.org/summer-camp/recreation-program",
+      "checked": "2026-11-25",
+      "fields": [
+        "indoor_outdoor"
+      ],
+      "note": "Researched by Claude from this page. Recreation Program page: 24 acre wooded campus with a heated outdoor pool, fields and ropes course, plus gym and Innovation Lab."
+    },
+    {
+      "url": "https://www.benchmarkschool.org/summer-camp/program-details",
+      "checked": "2026-11-25",
+      "fields": [
+        "meals_included"
+      ],
+      "note": "Researched by Claude from this page. Program Details page: full day campers bring lunch unless they buy the hot lunch program."
+    }
+  ],
+  "review": {
+    "status": "ready",
+    "source": {
+      "url": "https://www.benchmarkschool.org/summer-camp/pricing-and-reg",
+      "kind": "html",
+      "title": "Pricing and Registration - Benchmark School"
+    },
+    "warnings": [],
+    "unknowns": [
+      "2027 price",
+      "ACA accreditation"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-25",
+      "page_checked": "https://www.benchmarkschool.org/summer-camp/pricing-and-reg",
+      "changes": [
+        "New camp, researched from https://www.benchmarkschool.org/summer-camp/pricing-and-reg",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
+      ],
+      "for_andrew": []
+    }
+  }
+}

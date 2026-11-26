@@ -1,0 +1,106 @@
+{
+  "operator_name": "Lower Merion Township Parks & Recreation",
+  "website_url": "https://lowermerionpa.myrec.com/forms/6046_summer_2026__final.pdf",
+  "email": "recreation@lowermerion.org",
+  "phone": "610-645-6220",
+  "state": "PA",
+  "camp_type": "day",
+  "season_year": 2026,
+  "slug": "lower-merion-playground-activities-camp-wynnewood",
+  "name": "Lower Merion Playground Activities Camp",
+  "street_address": "South Ardmore Park, 1420 Sussex Road",
+  "city": "Wynnewood",
+  "zip": "19096",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "arts",
+    "outdoor"
+  ],
+  "activities": [
+    "arts and crafts",
+    "games",
+    "group activities",
+    "special events",
+    "optional day trips"
+  ],
+  "age_min": 6,
+  "description_short": "Six week township playground camp, 9:00 to 3:00 on weekdays, for kids 6 and up who have finished kindergarten, run at four Lower Merion parks. Days are crafts, games, group activities and special events, with some optional paid day trips.",
+  "indoor_outdoor": "outdoor",
+  "price_min": 600,
+  "price_max": 600,
+  "price_per": "summer",
+  "sessions": [
+    {
+      "name": "Six week program (no program July 3, half day July 31)",
+      "start_date": "2026-06-22",
+      "end_date": "2026-07-31",
+      "price": 600,
+      "availability": "unknown"
+    }
+  ],
+  "notes": "2026 six week fee: non-residents $600, Lower Merion residents $500 (Narberth counts as non-resident). Limited to 75 campers. Sites: General Wayne Park (Merion Station), McMoran Park (Bala Cynwyd), South Ardmore Park and Wynnewood Valley Park (Wynnewood); the address shown is South Ardmore Park. Cancelled in bad weather. Registration opened February 2 for residents and February 16 for non-residents. 2027 not yet posted.",
+  "sources": [
+    {
+      "url": "https://lowermerionpa.myrec.com/forms/6046_summer_2026__final.pdf",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "phone",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "age_min",
+        "description_short",
+        "indoor_outdoor",
+        "price_min",
+        "price_max",
+        "price_per",
+        "sessions",
+        "state"
+      ],
+      "note": "Researched by Claude from this page. Summer 2026 recreation brochure (PDF on the township's MyRec site), Playground Activities Camp: ages 6 and over, June 22 to July 31, four park locations, six week fee resident $500, non-resident $600 (price fields use the non-resident rate). No upper age stated. Outdoor at parks; cancelled in bad weather.",
+      "checked": "2026-11-25"
+    },
+    {
+      "url": "https://lowermerionpa.myrec.com/info/facilities/default.aspx",
+      "fields": [
+        "street_address",
+        "city",
+        "zip"
+      ],
+      "note": "Researched by Claude from this page. Township facilities list: South Ardmore Park, 1420 Sussex Road, Wynnewood, PA 19096.",
+      "checked": "2026-11-25"
+    }
+  ],
+  "review": {
+    "status": "ready",
+    "source": {
+      "url": "https://lowermerionpa.myrec.com/forms/6046_summer_2026__final.pdf",
+      "kind": "pdf",
+      "title": "Township of Lower Merion Parks & Recreation, Summer 2026 Recreation Information"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Upper age",
+      "2027 dates and fees",
+      "Financial aid"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-25",
+      "page_checked": "https://lowermerionpa.myrec.com/forms/6046_summer_2026__final.pdf",
+      "changes": [
+        "New camp, researched from https://lowermerionpa.myrec.com/forms/6046_summer_2026__final.pdf",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
+      ],
+      "for_andrew": []
+    }
+  }
+}

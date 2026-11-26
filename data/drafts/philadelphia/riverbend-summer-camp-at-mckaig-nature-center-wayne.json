@@ -1,0 +1,110 @@
+{
+  "slug": "riverbend-summer-camp-at-mckaig-nature-center-wayne",
+  "name": "Riverbend Summer Camp at McKaig Nature Center",
+  "operator_name": "Riverbend Environmental Education Center",
+  "website_url": "https://www.riverbendeec.org/education-programs/nature-camps/mckaig-summer-camp",
+  "email": "camps@riverbendeec.org",
+  "phone": "610-527-5234",
+  "street_address": "889 Croton Road",
+  "city": "Wayne",
+  "state": "PA",
+  "camp_type": "day",
+  "primary_categories": [
+    "nature"
+  ],
+  "secondary_categories": [
+    "outdoor"
+  ],
+  "activities": [
+    "hiking",
+    "stream stomping",
+    "bug catching"
+  ],
+  "age_min": 5,
+  "age_max": 10,
+  "description_short": "Full day nature camp for ages 5 to 10 on McKaig Nature Education Center's 91 wooded acres in Wayne, run by Riverbend educators in a partnership with McKaig. Two groups of 12 campers, each with two counselors, hike, stomp in the stream and catch bugs.",
+  "indoor_outdoor": "outdoor",
+  "price_per_week": 478,
+  "price_min": 478,
+  "price_max": 478,
+  "price_per": "week",
+  "financial_aid": true,
+  "refund_policy_summary": "A $100 a week deposit is due at booking and is a non-refundable administration fee, as are transaction fees. Tuition balances are due in full and become non-refundable on June 1.",
+  "season_year": 2027,
+  "notes": "One weekly rate of $478. Hours 8:45 to 3:15, Monday to Friday; no extended care mentioned. 2027 dates are still to be announced; the hub expects mid June into July. Registration for 2027 opens December 11, 2026.",
+  "sources": [
+    {
+      "url": "https://www.riverbendeec.org/education-programs/nature-camps/mckaig-summer-camp",
+      "checked": "2026-11-25",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "indoor_outdoor",
+        "price_per_week",
+        "price_min",
+        "price_max",
+        "price_per",
+        "financial_aid"
+      ],
+      "note": "Researched by Claude from this page. McKaig camp page: Summer 2027, ages 5 to 10, dates TBD, 8:45 to 3:15, $478 per week, 889 Croton Road, Wayne; two age groups of 12 with two counselors each; 'Ask about financial assistance' link to the camp email. No ZIP on the page."
+    },
+    {
+      "url": "https://www.riverbendeec.org/education-programs/nature-camps/summer-camp-hub",
+      "checked": "2026-11-25",
+      "fields": [
+        "refund_policy_summary"
+      ],
+      "note": "Researched by Claude from this page. Summer camp hub: three locations, each with its own dates, pricing and age groups; registration for 2027 opens 9 AM December 11, 2026; deposit and refund terms; all campers must be potty trained. The hub lists McKaig as 'Dates TBD! Mid-June -> July Expected'."
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=889+Croton+Road%2C+Wayne%2C+PA&benchmark=Public_AR_Current&format=json",
+      "checked": "2026-11-25",
+      "fields": [
+        "zip"
+      ],
+      "note": "ZIP looked up with the Census Bureau geocoder from the address on the camp's page (889 CROTON RD, WAYNE, PA, 19087)"
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.riverbendeec.org/education-programs/nature-camps/mckaig-summer-camp",
+      "kind": "html",
+      "title": "Summer Camp in Wayne, PA for Ages 5 to 10 | Riverbend"
+    },
+    "warnings": [],
+    "unknowns": [
+      "2027 session dates",
+      "Lunch",
+      "ACA accreditation"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-25",
+      "page_checked": "https://www.riverbendeec.org/education-programs/nature-camps/mckaig-summer-camp",
+      "changes": [
+        "New camp, researched from https://www.riverbendeec.org/education-programs/nature-camps/mckaig-summer-camp",
+        "ZIP 19087 looked up from the camp's street address with the Census geocoder (ZIP lookups allowed by Andrew, 22 November)."
+      ],
+      "for_andrew": [
+        "Riverbend has not posted 2027 dates for its McKaig site ('Dates TBD', mid June into July expected), so the draft has no sessions. It is a separate listing from the Gladwyne preserve because it has its own place, ages and price. List it now without dates, or wait for the dates?"
+      ]
+    }
+  },
+  "zip": "19087"
+}
