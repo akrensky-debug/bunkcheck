@@ -1,0 +1,160 @@
+{
+  "slug": "liberty-science-center-science-camp-jersey-city",
+  "name": "LSC Science Camp",
+  "operator_name": "Liberty Science Center",
+  "website_url": "https://lsc.org/camp",
+  "email": "sciencecamp@lsc.org",
+  "phone": "201-200-1000",
+  "street_address": "222 Jersey City Boulevard",
+  "city": "Jersey City",
+  "state": "NJ",
+  "zip": "07305",
+  "camp_type": "specialty",
+  "primary_categories": [
+    "STEM"
+  ],
+  "secondary_categories": [
+    "technology"
+  ],
+  "activities": [
+    "hands-on STEM courses",
+    "game design",
+    "coding",
+    "robotics",
+    "engineering",
+    "museum exploration"
+  ],
+  "grade_min": 1,
+  "grade_max": 8,
+  "age_min": 6,
+  "age_max": 14,
+  "description_short": "Weekly STEM camp inside Liberty Science Center in Liberty State Park for grades 1 to 8, with a new themed course each week by grade band and daily time on the museum floors.",
+  "indoor_outdoor": "indoor",
+  "price_per_week": 1050,
+  "price_min": 1050,
+  "price_max": 1050,
+  "price_per": "week",
+  "extended_care": true,
+  "transportation": false,
+  "meals_included": false,
+  "refund_policy_summary": "The $150 deposit per session is non-refundable; other payments are refundable until May 1 and not after.",
+  "special_needs_notes": "Welcomes campers with diverse needs but is not a specialized program; families contact the camp office to discuss accommodations. The museum is KultureCity sensory certified.",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Week 1: World Cup",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": 1050,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 2: Medical Science",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": 1050,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 3: Pop Culture",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": 1050,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 4: Explorers Week",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": 1050,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 5: Let's Roll",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": 1050,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 6: Renaissance Faire",
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-14",
+      "price": 1050,
+      "availability": "unknown"
+    }
+  ],
+  "notes": "Weekly price is the non-member rate; LSC members pay $1,000. Camp 9 am to 4 pm; before care 8 to 8:45 am ($15 a day) and after care 4 to 5 pm ($20 a day). Families send lunch or buy a weekly lunch plan; snacks provided. Classes up to 20 campers with at least 2 staff. 2026 registration is closed; next year's application not yet posted.",
+  "sources": [
+    {
+      "url": "https://lsc.org/camp",
+      "checked": "2026-11-25",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "age_min",
+        "age_max",
+        "description_short",
+        "indoor_outdoor",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Science Camp page: summer 2026 course schedule, six weeks July 6 to August 14, grades 1 to 8; location block. Ages derived from grades 1 to 8; prices on sessions are from the FAQ"
+    },
+    {
+      "url": "https://lsc.org/camp/science-camp-faqs",
+      "checked": "2026-11-25",
+      "fields": [
+        "price_per_week",
+        "price_min",
+        "price_max",
+        "price_per",
+        "extended_care",
+        "transportation",
+        "meals_included",
+        "refund_policy_summary",
+        "special_needs_notes"
+      ],
+      "note": "Researched by Claude from this page. Science Camp FAQs: members $1,000 a week, nonmembers $1,050; before and after care; no transportation; lunch not included"
+    }
+  ],
+  "review": {
+    "status": "ready",
+    "source": {
+      "url": "https://lsc.org/camp",
+      "kind": "html",
+      "title": "Science Camp | Liberty Science Center"
+    },
+    "warnings": [],
+    "unknowns": [
+      "2027 dates and prices",
+      "Financial aid"
+    ],
+    "low_confidence": [
+      "The tuition on the FAQ page has no year; it is taken as the 2026 rate because it sits beside the 2026 camp."
+    ],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-25",
+      "page_checked": "https://lsc.org/camp",
+      "changes": [
+        "New camp, researched from https://lsc.org/camp",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
+      ],
+      "for_andrew": []
+    }
+  }
+}

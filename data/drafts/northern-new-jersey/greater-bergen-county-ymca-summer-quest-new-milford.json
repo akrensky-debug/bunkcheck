@@ -1,0 +1,126 @@
+{
+  "slug": "greater-bergen-county-ymca-summer-quest-new-milford",
+  "name": "Summer Quest at the Greater Bergen County YMCA",
+  "operator_name": "Greater Bergen County YMCA (Metropolitan YMCA of the Oranges)",
+  "website_url": "https://metroymcas.org/nmy-summer-camp",
+  "phone": "973-758-9039",
+  "street_address": "1092 Carnation Drive",
+  "city": "New Milford",
+  "state": "NJ",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "sports"
+  ],
+  "activities": [
+    "enrichment",
+    "sports",
+    "active play",
+    "team building"
+  ],
+  "age_min": 5,
+  "age_max": 12,
+  "description_short": "New weekly YMCA day camp at the New Milford Program Center for ages 5 to 12, mixing enrichment, sports, active play and teamwork.",
+  "price_per_week": 385,
+  "price_min": 385,
+  "price_max": 385,
+  "price_per": "week",
+  "extended_care": true,
+  "meals_included": false,
+  "financial_aid": true,
+  "aca_accredited": true,
+  "aca_source_url": "https://metroymcas.org/nmy-summer-camp",
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Summer Quest (one week sessions)",
+      "start_date": "2027-06-21",
+      "end_date": "2027-08-20",
+      "price": 385,
+      "availability": "unknown"
+    }
+  ],
+  "notes": "Camp 8:30 am to 4 pm. Before care 7:30 to 8:30 am ($27.50 a week) and after care 4 to 6 pm ($40 a week). 5 percent down payment per week. Families pack lunch and snacks. Any family can register; the page does not say whether $385 is the member or community rate. Registration opens December 1, 2026.",
+  "sources": [
+    {
+      "url": "https://metroymcas.org/nmy-summer-camp",
+      "checked": "2026-11-25",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "price_per_week",
+        "price_min",
+        "price_max",
+        "price_per",
+        "extended_care",
+        "meals_included",
+        "financial_aid",
+        "aca_accredited",
+        "aca_source_url",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Greater Bergen County YMCA summer camp page: Summer Quest, ages 5 to 12, June 21 to August 20 in one week sessions, $385 a week, before and after care fees"
+    },
+    {
+      "url": "https://metroymcas.org/nmy",
+      "checked": "2026-11-25",
+      "fields": [
+        "phone",
+        "street_address",
+        "city",
+        "state"
+      ],
+      "note": "Researched by Claude from this page. New Milford YMCA Program Center page: 1092 Carnation Dr., New Milford"
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1092+Carnation+Drive%2C+New+Milford%2C+NJ&benchmark=Public_AR_Current&format=json",
+      "checked": "2026-11-25",
+      "fields": [
+        "zip"
+      ],
+      "note": "ZIP looked up with the Census Bureau geocoder from the address on the camp's page (1092 CARNATION DR, NEW MILFORD, NJ, 07646)"
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://metroymcas.org/nmy-summer-camp",
+      "kind": "html",
+      "title": "Greater Bergen County YMCA Summer Camp"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Whether $385 is the member or community rate",
+      "Indoor or outdoor",
+      "Refund policy"
+    ],
+    "low_confidence": [
+      "Year is not printed beside the dates, but the register link names the 2027 program and June 21 to August 20 falls Monday to Friday in 2027."
+    ],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-25",
+      "page_checked": "https://metroymcas.org/nmy-summer-camp",
+      "changes": [
+        "New camp, researched from https://metroymcas.org/nmy-summer-camp",
+        "ZIP 07646 looked up from the camp's street address with the Census geocoder (ZIP lookups allowed by Andrew, 22 November).",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
+      ],
+      "for_andrew": [
+        "One rate ($385 a week) is posted and the page says members and non-members pay different rates without saying which this is. Ask the Y which rate it is?"
+      ]
+    }
+  },
+  "zip": "07646"
+}
