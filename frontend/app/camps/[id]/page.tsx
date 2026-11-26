@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import { useParams } from 'next/navigation'
-import { getCamp, spotsLine, type CampDetail } from '@/lib/api'
+import { feeAmount, getCamp, spotsLine, type CampDetail } from '@/lib/api'
 import { fieldLabel, listJoin } from '@/lib/format'
 import { Events, captureAssistantArrival } from '@/lib/analytics'
 import TrustBadge from '@/components/TrustBadge'
@@ -209,6 +209,20 @@ export default function CampDetailPage() {
               <Fact label="Financial aid">{camp.financial_aid ? 'Available' : 'No'}</Fact>
             </dl>
           </section>
+
+          {camp.fees && camp.fees.length > 0 && (
+            <section>
+              <h2 className="mb-2 text-small font-semibold text-ink">Costs beyond tuition</h2>
+              <dl className="divide-y divide-line border-y border-line">
+                {camp.fees.map(fee => (
+                  <Fact key={`${fee.name}-${fee.per}`} label={fee.required ? fee.name : `${fee.name} (optional)`}>
+                    {feeAmount(fee)}
+                    {fee.note && <span className="block text-muted">{fee.note}</span>}
+                  </Fact>
+                ))}
+              </dl>
+            </section>
+          )}
 
           {(camp.email || camp.phone) && (
             <section>

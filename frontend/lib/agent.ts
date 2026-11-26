@@ -106,6 +106,16 @@ export interface Plan {
     camps: Array<{ camp_id: string; name: string; session_dates: string; cost: number | null }>
   }>
   total_estimated_cost: number
+  /** Tuition and each fee, camp by camp. Required lines add up to the total; optional ones don't. */
+  cost_breakdown?: Array<{
+    camp_id: string
+    camp_name: string
+    item: string
+    amount: number
+    count: number
+    required: boolean
+    note?: string | null
+  }>
   weeks_covered: number
   weeks_total: number
 }
