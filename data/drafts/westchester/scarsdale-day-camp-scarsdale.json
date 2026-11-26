@@ -1,0 +1,129 @@
+{
+  "slug": "scarsdale-day-camp-scarsdale",
+  "name": "Scarsdale Day Camp",
+  "operator_name": "Village of Scarsdale Parks, Recreation & Conservation",
+  "website_url": "https://www.scarsdale.gov/DocumentCenter/View/11642/-2026-Spring---Summer-Brochure-",
+  "email": "recreation@scarsdale.gov",
+  "phone": "914-722-1160",
+  "city": "Scarsdale",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "swimming",
+    "sports",
+    "arts",
+    "performing_arts"
+  ],
+  "activities": [
+    "swim lessons",
+    "free swim",
+    "sports",
+    "arts and crafts",
+    "performing arts",
+    "variety show"
+  ],
+  "grade_min": 0,
+  "grade_max": 8,
+  "age_min": 5,
+  "age_max": 14,
+  "description_short": "Village day camp for Scarsdale residents, about 900 campers, with a separate camp for each age: Sagamore (entering K) at Fox Meadow Elementary, Lenape (1st) at Greenacres, Wapetuck (2nd) at Quaker Ridge and Patthunke (3rd to 8th) at Scarsdale Middle School. Days run 9 to 3:30 with swim lessons and free swim at the Scarsdale Pool, sports, arts and crafts and a performing arts variety show.",
+  "indoor_outdoor": "both",
+  "price_per_week": 875,
+  "price_min": 675,
+  "price_max": 875,
+  "price_per": "week",
+  "extended_care": true,
+  "transportation": true,
+  "refund_policy_summary": "Day camp registration is non-refundable. Department policy otherwise refunds only for serious illness or family calamity, less a processing fee.",
+  "swim_waterfront_notes": "Tuesday to Friday each group has a half hour lesson and a half hour of free swim at the Scarsdale Pool, with buddy checks every 15 minutes and lifeguards teaching to American Red Cross guidelines.",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Full season (5 weeks)",
+      "start_date": "2026-07-06",
+      "end_date": "2026-08-07",
+      "price": 2130,
+      "availability": "unknown"
+    }
+  ],
+  "notes": "Scarsdale residents only, so one rate: $875 a week ($2,130 full season); early bird by April 15 is $675 a week ($1,705 full season). Morning soccer or sports camp combined with Patthunke costs more.",
+  "state": "NY",
+  "sources": [
+    {
+      "url": "https://www.scarsdale.gov/DocumentCenter/View/11642/-2026-Spring---Summer-Brochure-",
+      "checked": "2026-11-25",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "phone",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "age_min",
+        "age_max",
+        "description_short",
+        "indoor_outdoor",
+        "price_per_week",
+        "price_min",
+        "price_max",
+        "price_per",
+        "extended_care",
+        "transportation",
+        "refund_policy_summary",
+        "swim_waterfront_notes",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Spring/Summer 2026 brochure (PDF), pages 3 and 6 to 8: season Monday July 6 to Friday August 7; camps by grade (Sagamore entering K or 4 and a half by July 7, Lenape 1st, Wapetuck 2nd, Patthunke 3rd to 8th); 9 am to 3:30 pm. Day camp fee $675 a week or $1,705 full season early bird (by April 15), $875 a week or $2,130 full season after. After Camp at the Pool for K to 5, 3:30 to 5:30, $230 a week or $970 a season (needs pool membership and camp bus). Bus service at extra cost. All programs are for Scarsdale residents only unless noted. Ages derived from grades, not stated. The brochure gives no street addresses for the schools. Indoor and outdoor inferred from school sites plus pool."
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=244+Heathcote+Road%2C+Scarsdale%2C+NY&benchmark=Public_AR_Current&format=json",
+      "checked": "2026-11-25",
+      "fields": [
+        "zip"
+      ],
+      "note": "ZIP looked up with the Census Bureau geocoder from 244 Heathcote Road, Scarsdale, the Recreation Office (Supply Building) the brochure names; the brochure gives no camp addresses."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.scarsdale.gov/DocumentCenter/View/11642/-2026-Spring---Summer-Brochure-",
+      "kind": "pdf",
+      "title": "Scarsdale Parks & Recreation Spring/Summer 2026"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Street addresses of the camp schools",
+      "Lunch",
+      "Financial aid",
+      "ACA accreditation"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-25",
+      "page_checked": "https://www.scarsdale.gov/DocumentCenter/View/11642/-2026-Spring---Summer-Brochure-",
+      "changes": [
+        "New camp, researched from https://www.scarsdale.gov/DocumentCenter/View/11642/-2026-Spring---Summer-Brochure-",
+        "ZIP 10583 looked up from the operator's office address with the Census geocoder (ZIP lookups allowed by Andrew, 22 November)."
+      ],
+      "for_andrew": [
+        "Only Scarsdale village residents (the brochure says all programs are residents only unless noted) can enroll; nobody else. Andrew's rule for residents only camps: record the one rate, say who can enroll, and ask. List it?",
+        "One listing covers the four grade camps (Sagamore, Lenape, Wapetuck, Patthunke), since they share dates, fees and one director, though they meet at four schools. Split them?",
+        "The same brochure lists a Teen Travel Camp (entering 6th to 8th, two sessions, $2,835 and $2,040) and morning Soccer and Sports camps; not drafted here.",
+        "ZIP 10583 is the Census geocoder's ZIP for 244 Heathcote Road, Scarsdale, the Recreation Office (Supply Building) the brochure names; the brochure gives no camp addresses. Fine to place the listing by that ZIP?"
+      ]
+    }
+  },
+  "zip": "10583"
+}

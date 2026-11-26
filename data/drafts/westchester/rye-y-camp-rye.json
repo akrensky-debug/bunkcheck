@@ -1,0 +1,141 @@
+{
+  "slug": "rye-y-camp-rye",
+  "name": "Rye Y Camp",
+  "operator_name": "Rye YMCA",
+  "website_url": "https://ryeymca.org/camps/rye-y-camp",
+  "registration_url": "https://operations.daxko.com/Online/5118/ProgramsV2/Search.mvc?keywords=summer+camp",
+  "email": "camp@ryeymca.org",
+  "phone": "914-967-6363",
+  "street_address": "10 Osborn Rd.",
+  "city": "Rye",
+  "state": "NY",
+  "zip": "10580",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "swimming",
+    "sports",
+    "STEM",
+    "arts"
+  ],
+  "activities": [
+    "swim lessons",
+    "instructional sports",
+    "science",
+    "arts",
+    "music",
+    "dance",
+    "weekly field trips",
+    "team building"
+  ],
+  "age_min": 4,
+  "age_max": 12,
+  "description_short": "Rye YMCA day camp at Osborn School in Rye running Discovery (ages 4 to 11), Sports (ages 5 to 12) and STEAM (ages 6 to 11) programs, with swim lessons most days at the Y, sports, science, arts and weekly field trips for all but the youngest group.",
+  "indoor_outdoor": "both",
+  "extended_care": true,
+  "financial_aid": true,
+  "aca_accredited": true,
+  "aca_source_url": "https://ryeymca-org.storage.googleapis.com/files/s3fs-public/2025-12/Parent%20Handbook%202026.pdf",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Summer 2026 (camp dates)",
+      "start_date": "2026-06-29",
+      "end_date": "2026-08-14",
+      "availability": "unknown"
+    }
+  ],
+  "notes": "Camp 9 am to 4 pm; extended care 7:30 to 9 am and 4 to 6 pm, registered by the week. Campers are bused to the Y for swimming. Lunch can be bought by the week or packed from home. Kinder Camp (ages 2 to 5) runs at the Rye Y (21 Locust Avenue) and in Mamaroneck (122 Fenimore Rd.), and teen programs serve grades 6 to 10; those are not part of this listing. 2026 rates are published only as an image flipbook that could not be read.",
+  "sources": [
+    {
+      "url": "https://ryeymca.org/camps/rye-y-camp",
+      "checked": "2026-11-25",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "primary_categories",
+        "secondary_categories",
+        "age_min",
+        "age_max",
+        "description_short"
+      ],
+      "note": "Researched by Claude from this page. Rye Y Camp page, 2026 (Best Summer Ever 2026): Discovery, Sports and STEAM camps at Osborn School; Discovery ages 4 to 11, Sports 5 to 12, STEAM 6 to 11; Kinder ages 2 to 5 at other sites; Teens grades 6 to 10."
+    },
+    {
+      "url": "https://ryeymca-org.storage.googleapis.com/files/s3fs-public/2026-01/Osborn%202026.pdf",
+      "checked": "2026-11-25",
+      "fields": [
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "indoor_outdoor",
+        "extended_care",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Osborn Camps 2026 Q&A PDF: camp dates June 29 to August 14; Adventure, Discovery and STEAM at 10 Osborn Rd., Rye, NY 10580; 9 to 4 with extended care 7:30 to 9 and 4 to 6; Discovery campers rotate indoors and outdoors; optional paid lunch."
+    },
+    {
+      "url": "https://ryeymca.org/camps/discovery-camp",
+      "checked": "2026-11-25",
+      "fields": [
+        "activities",
+        "camp_type"
+      ],
+      "note": "Researched by Claude from this page. Discovery Camp page: swim lessons, instructional sports, science, arts, music; weekly trips for groups from completed kindergarten up. It calls Discovery a traditional day camp."
+    },
+    {
+      "url": "https://ryeymca.org/camps/resources",
+      "checked": "2026-11-25",
+      "fields": [
+        "financial_aid"
+      ],
+      "note": "Researched by Claude from this page. Camp resources page: Y Cares Financial Assistance Application for camp."
+    },
+    {
+      "url": "https://ryeymca-org.storage.googleapis.com/files/s3fs-public/2025-12/Parent%20Handbook%202026.pdf",
+      "checked": "2026-11-25",
+      "fields": [
+        "aca_accredited",
+        "aca_source_url"
+      ],
+      "note": "Researched by Claude from this page. 2026 Parent Handbook PDF: the camp states it is accredited by the American Camp Association (not checked on ACA's Find a Camp)."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://ryeymca.org/camps/rye-y-camp",
+      "kind": "html",
+      "title": "Rye Y Camp | Rye YMCA"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Weekly price (2026 rates are in an image flipbook)",
+      "Lunch",
+      "Transportation from home",
+      "2027 dates and prices (not posted yet)"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-25",
+      "page_checked": "https://ryeymca.org/camps/rye-y-camp",
+      "changes": [
+        "New camp, researched from https://ryeymca.org/camps/rye-y-camp"
+      ],
+      "for_andrew": [
+        "The 2026 dates and rates are only in a fliphtml5 image flipbook (online.fliphtml5.com/pbltd/gcxg), which our fetcher can't read, so the draft has no price. Ask the Rye Y for the rate sheet?",
+        "One listing for the Osborn School camps (Discovery, Sports, STEAM), which share dates and place. Kinder Camp (ages 2 to 5) runs at the Rye Y building and in Mamaroneck with its own calendar. Add those as separate listings later?",
+        "ACA accreditation is from the camp's own 2026 handbook; not confirmed on ACA's Find a Camp."
+      ]
+    }
+  }
+}

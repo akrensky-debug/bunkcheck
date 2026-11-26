@@ -578,6 +578,23 @@ CITY_COORDS: dict[tuple[str, str], tuple[float, float]] = {
     ("richmond", "VT"): (44.382, -72.9796),
     ("starksboro", "VT"): (44.2103, -72.9934),
     ("old town", "ME"): (44.9542, -68.7397),
+    # Towns added for camp listings, 25 November 2026. Coordinates are the town's internal point
+    # from the Census Bureau 2024 Gazetteer (county subdivisions, then places for New York and New Jersey villages).
+    ("bedford hills", "NY"): (41.2406, -73.6881),
+    ("briarcliff manor", "NY"): (41.1403, -73.8475),
+    ("dobbs ferry", "NY"): (41.01, -73.8686),
+    ("harrison", "NY"): (41.0235, -73.7193),
+    ("hastings-on-hudson", "NY"): (40.988, -73.8812),
+    ("katonah", "NY"): (41.2551, -73.6852),
+    ("lewisboro", "NY"): (41.2661, -73.5883),
+    ("mount vernon", "NY"): (40.9131, -73.8293),
+    ("north castle", "NY"): (41.1363, -73.6905),
+    ("ossining", "NY"): (41.1577, -73.8554),
+    ("pleasantville", "NY"): (41.134, -73.7841),
+    ("port chester", "NY"): (41.0047, -73.6672),
+    ("rye brook", "NY"): (41.03, -73.6864),
+    ("somers", "NY"): (41.3044, -73.7226),
+    ("yorktown heights", "NY"): (41.2706, -73.7747),
 }
 
 

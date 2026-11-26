@@ -1,0 +1,162 @@
+{
+  "slug": "bedford-town-day-camp-bedford-hills",
+  "name": "Town of Bedford Day Camp",
+  "operator_name": "Town of Bedford Recreation & Parks",
+  "website_url": "https://www.bedfordny.gov/257/Summer-Camps",
+  "email": "campforms@bedfordny.gov",
+  "street_address": "Bedford Hills Memorial Park, 60 Haines Road",
+  "city": "Bedford Hills",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "swimming",
+    "sports",
+    "arts"
+  ],
+  "activities": [
+    "swim lessons",
+    "free swim",
+    "arts and crafts",
+    "athletics",
+    "science",
+    "group games",
+    "theme days",
+    "entertainers",
+    "trips"
+  ],
+  "grade_min": 0,
+  "grade_max": 7,
+  "age_min": 5,
+  "age_max": 13,
+  "description_short": "Town day camp for Bedford town and school district residents entering kindergarten to 7th grade, run at three hamlet parks: Bedford Hills Memorial Park, Bedford Village Memorial Park and Katonah Memorial Park. Days run 9 to 3 with Red Cross swim lessons and free swim, arts and crafts, sports, theme days and entertainers, plus at least one trip per group.",
+  "indoor_outdoor": "outdoor",
+  "price_min": 520,
+  "price_max": 1240,
+  "price_per": "session",
+  "meals_included": false,
+  "refund_policy_summary": "80% of camp fees are refunded on written request until May 31; no refunds after that. Medical refund requests need a doctor's note.",
+  "swim_waterfront_notes": "All campers take swim lessons to American Red Cross guidelines after a first week swim test, with wristbands by ability and buddy checks every 15 minutes.",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Full camp (no camp July 3)",
+      "start_date": "2026-06-30",
+      "end_date": "2026-08-07",
+      "price": 1240,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 1",
+      "start_date": "2026-06-30",
+      "end_date": "2026-07-10",
+      "price": 520,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 2",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-24",
+      "price": 635,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 3",
+      "start_date": "2026-07-27",
+      "end_date": "2026-08-07",
+      "price": 635,
+      "availability": "unknown"
+    }
+  ],
+  "notes": "Prices shown are the school district resident rate. Town residents pay $920 full camp, $385 session 1, $470 session 2 or 3 ($745, $295, $370 early, March 25 to April 23). $25 off each extra child for full camp, $10 per session.",
+  "state": "NY",
+  "sources": [
+    {
+      "url": "https://www.bedfordny.gov/257/Summer-Camps",
+      "checked": "2026-11-25",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "camp_type",
+        "primary_categories",
+        "grade_min",
+        "grade_max",
+        "age_min",
+        "age_max",
+        "description_short",
+        "indoor_outdoor",
+        "refund_policy_summary"
+      ],
+      "note": "Researched by Claude from this page. Summer Camps page: Town Day Camp for children entering kindergarten (by lottery) to 7th grade at the Bedford Hills, Bedford Village and Katonah hamlet parks; 2026 registration from March 25; refund policy; 2027 information to be posted. Ages derived from grades. Outdoor inferred from park camps."
+    },
+    {
+      "url": "https://www.bedfordny.gov/DocumentCenter/View/4622/2026-Day-Camps--Tiny-Tots-Fees",
+      "checked": "2026-11-25",
+      "fields": [
+        "price_min",
+        "price_max",
+        "price_per",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. 2026 Tiny Tots & Day Camps fees: full camp June 30 to August 7 (no camp July 3), Session 1 June 30 to July 10, Session 2 July 13 to 24, Session 3 July 27 to August 7. Day camp fees: residents early $745 full, $295 session 1, $370 session 2 or 3; residents regular $920, $385, $470; school district residents $1,240, $520, $635. Session prices are the school district rate."
+    },
+    {
+      "url": "https://www.bedfordny.gov/DocumentCenter/View/4903/2026-Basic-Camp-Information-",
+      "checked": "2026-11-25",
+      "fields": [
+        "street_address",
+        "city",
+        "state",
+        "secondary_categories",
+        "activities",
+        "meals_included",
+        "swim_waterfront_notes"
+      ],
+      "note": "Researched by Claude from this page. 2026 Basic Camp Information: must be a town resident or school district resident to register; locations Bedford Hills Memorial Park, 60 Haines Road, Bedford Hills; Bedford Village Memorial Park, 65 Greenwich Road, Bedford; Katonah Memorial Park, 8 High Street, Katonah; 9 to 3; lunch brought from home or bought at the concession; swim lessons, arts and crafts, athletics, science, special events and trips."
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=425+Cherry+Street%2C+Bedford+Hills%2C+NY&benchmark=Public_AR_Current&format=json",
+      "checked": "2026-11-25",
+      "fields": [
+        "zip"
+      ],
+      "note": "ZIP looked up with the Census Bureau geocoder from 425 Cherry Street, Bedford Hills, the Recreation & Parks office the camp page names, in the same hamlet as Bedford Hills Memorial Park; the geocoder found no match for 60 Haines Road."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.bedfordny.gov/257/Summer-Camps",
+      "kind": "html",
+      "title": "Summer Camps, Town of Bedford"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Extended care",
+      "Trip fees",
+      "ACA accreditation"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-25",
+      "page_checked": "https://www.bedfordny.gov/257/Summer-Camps",
+      "changes": [
+        "New camp, researched from https://www.bedfordny.gov/257/Summer-Camps",
+        "ZIP 10507 looked up from the operator's office address with the Census geocoder (ZIP lookups allowed by Andrew, 22 November).",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
+      ],
+      "for_andrew": [
+        "Only Town of Bedford residents and school district residents (who pay a higher rate, recorded here) can enroll; nobody else. Andrew's rule for residents only camps: record the one rate, say who can enroll, and ask. List it?",
+        "One listing covers the three hamlet camps (Bedford Hills, Bedford Village, Katonah), which share dates, grades and fees; the listing is placed at Bedford Hills Memorial Park. Split into three listings, one per park?",
+        "Tiny Tots (ages 3 to 5, half day) is on the same page and not drafted.",
+        "ZIP 10507 is the Census geocoder's ZIP for 425 Cherry Street, Bedford Hills, the Recreation & Parks office the camp page names, in the same hamlet as Bedford Hills Memorial Park; the geocoder found no match for 60 Haines Road. Fine to place the listing by that ZIP?"
+      ]
+    }
+  },
+  "zip": "10507"
+}
