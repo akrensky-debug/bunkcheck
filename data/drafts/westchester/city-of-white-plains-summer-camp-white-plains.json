@@ -1,0 +1,135 @@
+{
+  "slug": "city-of-white-plains-summer-camp-white-plains",
+  "name": "City of White Plains Summer Camp",
+  "operator_name": "City of White Plains Recreation & Parks",
+  "website_url": "https://www.cityofwhiteplains.com/DocumentCenter/View/11955",
+  "phone": "914-422-1336",
+  "city": "White Plains",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "swimming",
+    "sports"
+  ],
+  "activities": [
+    "swimming",
+    "field trips",
+    "special guests"
+  ],
+  "grade_min": 0,
+  "grade_max": 8,
+  "age_min": 5,
+  "age_max": 14,
+  "description_short": "City day camp for White Plains residents entering kindergarten to 8th grade, run as four grade camps: Chickadee (K to 1) at George Washington Elementary, Panawok (2 to 3) at Eastview Middle School, and Quarropas (4 to 5) and the trip camp Condor (6 to 8) at Highlands Middle School. The younger camps swim twice a week at Kittrell pool and take a few trips; Condor goes on 23 trips.",
+  "price_min": 1425,
+  "price_max": 1990,
+  "price_per": "session",
+  "extended_care": true,
+  "financial_aid": true,
+  "refund_policy_summary": "A $300 deposit is due at registration and is non-refundable; the balance is due by May 1.",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Chickadee (K to 1), 6 weeks",
+      "start_date": "2026-06-30",
+      "end_date": "2026-08-07",
+      "price": 1425,
+      "availability": "unknown"
+    },
+    {
+      "name": "Panawok (grades 2 to 3), 6 weeks",
+      "start_date": "2026-06-30",
+      "end_date": "2026-08-07",
+      "price": 1425,
+      "availability": "unknown"
+    },
+    {
+      "name": "Quarropas (grades 4 to 5), 6 weeks",
+      "start_date": "2026-06-30",
+      "end_date": "2026-08-07",
+      "price": 1425,
+      "availability": "unknown"
+    },
+    {
+      "name": "Condor trip camp (grades 6 to 8), 6 weeks",
+      "start_date": "2026-06-30",
+      "end_date": "2026-08-07",
+      "price": 1990,
+      "availability": "unknown"
+    }
+  ],
+  "notes": "One rate for all: White Plains residents only. Early drop off $210 and extended day $480 for the season.",
+  "state": "NY",
+  "sources": [
+    {
+      "url": "https://www.cityofwhiteplains.com/DocumentCenter/View/11955",
+      "checked": "2026-11-25",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "phone",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "age_min",
+        "age_max",
+        "description_short",
+        "price_min",
+        "price_max",
+        "price_per",
+        "extended_care",
+        "financial_aid",
+        "refund_policy_summary",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. 2026 Summer Camp info sheet (PDF): six weeks, Tuesday June 30 to Friday August 7, no camp July 3; White Plains residents only; incoming K to 8th grade in September 2026. Chickadee K to 1, 8:15 to 2:45, $1425; Panawok 2 to 3, 8:30 to 3, $1425; Quarropas 4 to 5, 8:45 to 3:45, $1425; Condor 6 to 8, 8:45 to 3:45, $1990. Early drop off ($210) and extended day ($480) at Panawok, Quarropas and Condor. Scholarships with 2025 tax information. Ages derived from grades, not stated. The sheet gives no street addresses for the schools."
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=85+Gedney+Way%2C+White+Plains%2C+NY&benchmark=Public_AR_Current&format=json",
+      "checked": "2026-11-25",
+      "fields": [
+        "zip"
+      ],
+      "note": "ZIP looked up with the Census Bureau geocoder from 85 Gedney Way, White Plains, the Recreation Office the camp sheet names; the sheet gives no camp address."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.cityofwhiteplains.com/DocumentCenter/View/11955",
+      "kind": "pdf",
+      "title": "2026 Summer Camp (City of White Plains Recreation & Parks)"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Street addresses of the camp schools",
+      "ACA accreditation",
+      "Lunch"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-25",
+      "page_checked": "https://www.cityofwhiteplains.com/DocumentCenter/View/11955",
+      "changes": [
+        "New camp, researched from https://www.cityofwhiteplains.com/DocumentCenter/View/11955",
+        "ZIP 10605 looked up from the operator's office address with the Census geocoder (ZIP lookups allowed by Andrew, 22 November)."
+      ],
+      "for_andrew": [
+        "Only White Plains residents can enroll; nobody else. Andrew's rule for residents only camps: record the one rate, say who can enroll, and ask. List it?",
+        "One listing covers the four grade camps, since they share dates and the city runs them as one program, though they meet at three schools. Split them?",
+        "ZIP 10605 is the Census geocoder's ZIP for 85 Gedney Way, White Plains, the Recreation Office the camp sheet names; the sheet gives no camp address. Fine to place the listing by that ZIP?"
+      ]
+    }
+  },
+  "zip": "10605"
+}

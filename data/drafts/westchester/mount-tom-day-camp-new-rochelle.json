@@ -1,0 +1,135 @@
+{
+  "slug": "mount-tom-day-camp-new-rochelle",
+  "name": "Mount Tom Day Camp",
+  "operator_name": "Mount Tom Day Camp",
+  "website_url": "https://www.mounttomdaycamp.com/",
+  "registration_url": "https://mounttomdaycamp.campmanagement.com/enroll",
+  "email": "info@mounttomdaycamp.com",
+  "phone": "914-636-8130",
+  "street_address": "48 Mount Tom Road",
+  "city": "New Rochelle",
+  "state": "NY",
+  "zip": "10805",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "swimming",
+    "sports",
+    "arts",
+    "adventure"
+  ],
+  "activities": [
+    "swimming",
+    "athletics",
+    "performing and creative arts",
+    "outdoor adventure",
+    "nature",
+    "horseback riding",
+    "ninja warrior",
+    "circus arts",
+    "STEM",
+    "climbing wall"
+  ],
+  "age_min": 3,
+  "age_max": 15,
+  "description_short": "Day camp on the New Rochelle and Pelham Manor line for ages 3 to 15, with two swims a day including Red Cross lessons, sports, arts, a climbing wall and specialties such as horseback riding, circus arts and STEM. Each group is led by a professional educator, and families pick 2 to 8 weeks.",
+  "transportation": true,
+  "meals_included": true,
+  "extended_care": true,
+  "price_min": 2450,
+  "price_max": 9350,
+  "price_per": "session",
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Full summer (8 weeks, full day)",
+      "start_date": "2027-06-28",
+      "end_date": "2027-08-20",
+      "price": 9350,
+      "availability": "unknown"
+    }
+  ],
+  "notes": "2027 rates for full day (9 to 4, ages 3 to 15): 2 weeks $3,525, 3 weeks $4,875, 4 weeks $6,350, 5 weeks $7,350, 6 weeks $8,250, 7 weeks $8,950, 8 weeks $9,350. Mini day (9 to 2, ages 3 to 5 and a half) $2,950 to $7,100; half day early childhood (8:30 to 12:30, ages 3 to 4 and a half) $2,450 to $5,450. Bus service is included except Manhattan, Brooklyn and Queens ($50 a week extra). Drop off and pick up at camp available 8 am to 6 pm. $800 deposit per child holds a spot. Groups from first grade up are single sex; nursery, kindergarten and Seniors (12 to 14) are co-ed.",
+  "sources": [
+    {
+      "url": "https://www.mounttomdaycamp.com/dates-rates/",
+      "checked": "2026-11-25",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "age_min",
+        "age_max",
+        "price_min",
+        "price_max",
+        "price_per",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Dates and Rates page: Summer 2027, June 28 to August 20; rate table for 2 to 8 weeks by program; ages 3 to 15 for full day; location 48 Mount Tom Road, New Rochelle, NY 10805."
+    },
+    {
+      "url": "https://www.mounttomdaycamp.com/activities/",
+      "checked": "2026-11-25",
+      "fields": [
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "description_short"
+      ],
+      "note": "Researched by Claude from this page. Activities page and Programs menu: swim, athletics, performing and creative arts, outdoor adventure, nature, horseback riding, ninja warrior, circus arts, STEM; two swims and lunch daily. Description also draws on the parent FAQ."
+    },
+    {
+      "url": "https://www.mounttomdaycamp.com/transportation/",
+      "checked": "2026-11-25",
+      "fields": [
+        "transportation",
+        "extended_care"
+      ],
+      "note": "Researched by Claude from this page. Transportation page: door to door buses across Westchester, the Bronx and most of Manhattan, Brooklyn and Queens; pick up and drop off at camp available 8 am to 6 pm (recorded as extended care; fee not stated)."
+    },
+    {
+      "url": "https://www.mounttomdaycamp.com/lunch/",
+      "checked": "2026-11-25",
+      "fields": [
+        "meals_included"
+      ],
+      "note": "Researched by Claude from this page. Lunch page: daily hot lunch or sandwiches, salads, yogurts and bagels, plus two snacks."
+    }
+  ],
+  "review": {
+    "status": "ready",
+    "source": {
+      "url": "https://www.mounttomdaycamp.com/dates-rates/",
+      "kind": "html",
+      "title": "Dates and Rates – Mounttom"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Financial aid",
+      "Refund policy",
+      "ACA accreditation",
+      "Price for a single week (shortest option is 2 weeks)"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-25",
+      "page_checked": "https://www.mounttomdaycamp.com/dates-rates/",
+      "changes": [
+        "New camp, researched from https://www.mounttomdaycamp.com/dates-rates/"
+      ],
+      "for_andrew": []
+    }
+  }
+}
