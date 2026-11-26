@@ -1,0 +1,119 @@
+{
+  "slug": "reckys-tiger-teen-camp-tenafly",
+  "name": "Recky's Tiger Teen Camp",
+  "operator_name": "Tenafly Recreation Department",
+  "website_url": "https://www.tenaflynj.gov/214/Summer-Camp",
+  "registration_url": "https://register.communitypass.net/tenafly",
+  "city": "Tenafly",
+  "state": "NJ",
+  "zip": "07670",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "sports",
+    "swimming",
+    "adventure"
+  ],
+  "activities": [
+    "sports",
+    "games",
+    "field trips",
+    "pool",
+    "special events"
+  ],
+  "grade_min": 6,
+  "grade_max": 10,
+  "age_min": 11,
+  "age_max": 16,
+  "description_short": "Six week borough teen camp at the Tenafly Teen Center for grades 6 to 10, with sports, games, pool time, special events and optional paid field trips.",
+  "price_min": 1125,
+  "price_max": 1125,
+  "price_per": "session",
+  "refund_policy_summary": "Refunds before May 22 carry a $20 processing fee; no refunds after May 22, and trip fees are never refunded.",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Teen Camp (6 weeks)",
+      "start_date": "2026-06-22",
+      "end_date": "2026-07-31",
+      "price": 1125,
+      "availability": "unknown"
+    }
+  ],
+  "notes": "Price is the non-resident fee; residents pay $750. Pool membership plus teen camp bundle saved $150 through March 16. A $75 late fee applied after March 17. 9 am to 3 pm, no camp Friday July 3. 2026 trips cost $55 to $120 each.",
+  "sources": [
+    {
+      "url": "https://www.tenaflynj.gov/214/Summer-Camp",
+      "checked": "2026-11-25",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url"
+      ],
+      "note": "Researched by Claude from this page. Borough summer camp page listing Recky's Tiger Teen Camp 2026, grades 6 to 10"
+    },
+    {
+      "url": "https://www.tenaflynj.gov/DocumentCenter/View/5696/Teen-Camp-Flyer-Summer-2026?bidId=",
+      "checked": "2026-11-25",
+      "fields": [
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "age_min",
+        "age_max",
+        "description_short",
+        "price_min",
+        "price_max",
+        "price_per",
+        "refund_policy_summary",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. 2026 Teen Camp flyer linked from the camp page: held at the Tenafly Teen Center, June 22 to July 31, residents $750, non-residents $1,125. Ages derived from grades 6 to 10"
+    },
+    {
+      "url": "https://www.tenaflynj.gov/193/Recreation",
+      "checked": "2026-11-25",
+      "fields": [
+        "city",
+        "state",
+        "zip"
+      ],
+      "note": "Researched by Claude from this page. Recreation department page on the borough site: 100 Riveredge Road, Tenafly, NJ 07670. The flyer names the Teen Center but gives no street address"
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.tenaflynj.gov/214/Summer-Camp",
+      "kind": "html",
+      "title": "Summer Camp | Tenafly, NJ"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Street address of the Tenafly Teen Center",
+      "Lunch",
+      "Extended care",
+      "Financial aid"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-25",
+      "page_checked": "https://www.tenaflynj.gov/214/Summer-Camp",
+      "changes": [
+        "New camp, researched from https://www.tenaflynj.gov/214/Summer-Camp",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
+      ],
+      "for_andrew": [
+        "The batch named Recky's Tiger Camp (grades K to 5). Its 2026 flyer is a scanned image the fetcher cannot read, so there is nothing to list for it or the Tiger Cub preschool camp beyond the names. I drafted the teen camp, whose flyer is readable. Keep the teen camp listing, and ask Tenafly Recreation for the K to 5 flyer as text?"
+      ]
+    }
+  }
+}

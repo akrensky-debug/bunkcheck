@@ -1,0 +1,165 @@
+{
+  "slug": "harvey-summer-camp-katonah",
+  "name": "Harvey Summer Camp",
+  "operator_name": "The Harvey School",
+  "website_url": "https://www.harveyschool.org/harvey-summer-camp",
+  "registration_url": "https://harveycavaliercamp.campmanagement.com/p/request_for_info_m.php?action=enroll",
+  "phone": "914-232-3161",
+  "street_address": "260 Jay Street",
+  "city": "Katonah",
+  "state": "NY",
+  "zip": "10536",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "arts",
+    "sports",
+    "STEM",
+    "performing_arts",
+    "swimming"
+  ],
+  "activities": [
+    "nature and hiking",
+    "science experiments",
+    "ceramics",
+    "robotics",
+    "drawing and painting",
+    "watercolor",
+    "special effects makeup",
+    "gaga",
+    "gardening",
+    "photography",
+    "Lego",
+    "tennis",
+    "tie dye",
+    "swimming",
+    "arts and crafts",
+    "graphic art",
+    "theater"
+  ],
+  "age_min": 6,
+  "age_max": 15,
+  "grade_min": 1,
+  "grade_max": 9,
+  "description_short": "A day camp on The Harvey School campus in Katonah for children entering grades 1 to 9, with a first grade program, the main day camp for grades 2 to 8, an art camp for grades 5 to 8 and a ninth grade camp with weekly trips. Campers choose classes such as ceramics, robotics, tennis, swim and photography.",
+  "indoor_outdoor": "both",
+  "price_per_week": 995,
+  "price_min": 795,
+  "price_max": 995,
+  "price_per": "week",
+  "meals_included": true,
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Week 1 (closed July 3)",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-02",
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 2",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": 995,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 3",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": 995,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 4",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": 995,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 5",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": 995,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 6",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "availability": "unknown"
+    }
+  ],
+  "notes": "2026 rates paid by check or bank transfer: one week $995 (weeks of July 6, 13, 20 and 27 only), two weeks $1,990, six weeks $4,770 ($795 a week). Credit card prices are about 3% higher. 5% sibling discount. Lunch in the dining hall is included. The rates page gives hours as 9 to 4, the FAQ as 9:30 to 3:30. Harvey also runs separate specialty camps (circus, hockey, girls flag football, baseball, AI, robotics, lacrosse) that are not part of this listing.",
+  "sources": [
+    {
+      "url": "https://www.harveyschool.org/harvey-summer-camp",
+      "checked": "2026-11-25",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "grade_min",
+        "grade_max",
+        "age_min",
+        "age_max",
+        "description_short",
+        "primary_categories"
+      ],
+      "note": "Researched by Claude from this page. Summer programs page: first grade camp, day camp grades 2 to 8, art camp 5 to 8, ninth grade camp; ages derived from grades 1 to 9."
+    },
+    {
+      "url": "https://www.harveyschool.org/harvey-summer-camp/day-camp",
+      "checked": "2026-11-25",
+      "fields": [
+        "secondary_categories",
+        "activities",
+        "indoor_outdoor",
+        "price_per_week",
+        "price_min",
+        "price_max",
+        "price_per",
+        "meals_included",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. 2026 Day Camp: June 29 to August 7, closed July 3, weekly options, cash prices used; same dates and rates on the first grade, ninth grade and art camp pages."
+    }
+  ],
+  "review": {
+    "status": "ready",
+    "source": {
+      "url": "https://www.harveyschool.org/harvey-summer-camp",
+      "kind": "html",
+      "title": "Harvey Summer Camp - The Harvey School"
+    },
+    "warnings": [],
+    "unknowns": [
+      "2027 dates and rates",
+      "Extended care",
+      "Transportation",
+      "Financial aid"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-25",
+      "page_checked": "https://www.harveyschool.org/harvey-summer-camp",
+      "changes": [
+        "New camp, researched from https://www.harveyschool.org/harvey-summer-camp",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
+      ],
+      "for_andrew": []
+    }
+  }
+}

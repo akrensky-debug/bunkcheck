@@ -1,0 +1,113 @@
+{
+  "slug": "teen-get-a-way-bedford-hills",
+  "name": "Teen Get-A-Way",
+  "operator_name": "Town of Bedford Recreation & Parks",
+  "website_url": "https://www.bedfordny.gov/257/Summer-Camps",
+  "city": "Bedford Hills",
+  "camp_type": "day",
+  "primary_categories": [
+    "adventure"
+  ],
+  "activities": [
+    "amusement parks",
+    "water parks",
+    "baseball games",
+    "broadway shows",
+    "fishing trips",
+    "caves"
+  ],
+  "grade_min": 7,
+  "grade_max": 10,
+  "age_min": 12,
+  "age_max": 16,
+  "description_short": "Five week town travel camp, Monday to Thursday, for Bedford town and school district residents entering 7th to 10th grade, with a different trip each day; past trips include Dorney Park, Lake Compounce, Six Flags New England, baseball games, Broadway shows and fishing trips.",
+  "price_min": 2100,
+  "price_max": 2100,
+  "price_per": "session",
+  "refund_policy_summary": "80% of camp fees are refunded on written request until May 31; no refunds after that. Medical refund requests need a doctor's note.",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Full camp (Monday to Thursday)",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-30",
+      "price": 2100,
+      "availability": "unknown"
+    }
+  ],
+  "notes": "Price shown is the school district resident rate; town residents pay $1,900.",
+  "state": "NY",
+  "sources": [
+    {
+      "url": "https://www.bedfordny.gov/257/Summer-Camps",
+      "checked": "2026-11-25",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "age_min",
+        "age_max",
+        "description_short",
+        "refund_policy_summary"
+      ],
+      "note": "Researched by Claude from this page. Summer Camps page: Teen Get-A-Way is a five week travel camp (Monday to Thursday) for children entering grades 7 to 10; past trips listed; registration opened March 3, 2026, first come first served; in person registration at the Recreation & Parks office, 425 Cherry Street, Bedford Hills. Ages derived from grades. City is the office's; the page does not say where trips leave from."
+    },
+    {
+      "url": "https://www.bedfordny.gov/DocumentCenter/View/4623/2026-Tenn-Get-A-Way-Camp-Fees",
+      "checked": "2026-11-25",
+      "fields": [
+        "price_min",
+        "price_max",
+        "price_per",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. 2026 Teen Get-A-Way fees: full camp June 29 to July 30, Monday to Thursday; residents $1,900, school district residents $2,100 (recorded)."
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=425+Cherry+Street%2C+Bedford+Hills%2C+NY&benchmark=Public_AR_Current&format=json",
+      "checked": "2026-11-25",
+      "fields": [
+        "zip"
+      ],
+      "note": "ZIP looked up with the Census Bureau geocoder from 425 Cherry Street, Bedford Hills, the Recreation & Parks office the camp page names; the page gives no meeting place."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.bedfordny.gov/257/Summer-Camps",
+      "kind": "html",
+      "title": "Summer Camps, Town of Bedford"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Where trips leave from",
+      "Daily hours",
+      "The 2026 parent handbook is a scanned PDF our fetcher can't read"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-25",
+      "page_checked": "https://www.bedfordny.gov/257/Summer-Camps",
+      "changes": [
+        "New camp, researched from https://www.bedfordny.gov/257/Summer-Camps",
+        "ZIP 10507 looked up from the operator's office address with the Census geocoder (ZIP lookups allowed by Andrew, 22 November).",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
+      ],
+      "for_andrew": [
+        "Only Town of Bedford residents and school district residents (who pay a higher rate, recorded here) can enroll; nobody else. Andrew's rule for residents only camps: record the one rate, say who can enroll, and ask. List it?",
+        "ZIP 10507 is the Census geocoder's ZIP for 425 Cherry Street, Bedford Hills, the Recreation & Parks office the camp page names; the page gives no meeting place. Fine to place the listing by that ZIP?"
+      ]
+    }
+  },
+  "zip": "10507"
+}
