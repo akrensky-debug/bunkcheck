@@ -51,6 +51,14 @@
         "sessions"
       ],
       "note": "Researched by Claude from this page. Pleasantville STEAM Summer Camp 2026 page: 2 weekly sessions August 17th to 28th, half day 9:30 to 12 or 1 to 3:30, full day 9:30 to 3:30, ages 5 to 15, at Addie-Tude Cultural Arts Center, 42 Memorial Plaza, Pleasantville, NY (no ZIP). Subject descriptions on the page are labeled 2025, so no activities are recorded."
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=42+Memorial+Plaza%2C+Pleasantville%2C+NY&benchmark=Public_AR_Current&format=json",
+      "checked": "2026-11-27",
+      "fields": [
+        "zip"
+      ],
+      "note": "ZIP looked up with the Census Bureau geocoder from the address on the camp's page (42 MEMORIAL PLZ, PLEASANTVILLE, NY, 10570)"
     }
   ],
   "state": "NY",
@@ -75,11 +83,13 @@
       "date": "2026-11-27",
       "page_checked": "https://www.makeinspires.com/summer-pleasantville",
       "changes": [
-        "New camp, researched from https://www.makeinspires.com/summer-pleasantville"
+        "New camp, researched from https://www.makeinspires.com/summer-pleasantville",
+        "ZIP 10570 looked up from the camp's street address with the Census geocoder (ZIP lookups allowed by Andrew, 22 November)."
       ],
       "for_andrew": [
         "No price is printed for the Pleasantville weeks (the Chappaqua and Mamaroneck pages show $540 half day and $925 full day for 2027, but not for this site). List it without a price?"
       ]
     }
-  }
+  },
+  "zip": "10570"
 }
