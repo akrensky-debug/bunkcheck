@@ -1,0 +1,141 @@
+{
+  "slug": "ramapo-country-day-camp-airmont",
+  "name": "Ramapo Country Day Camp",
+  "operator_name": "Ramapo Country Day Camp",
+  "website_url": "https://ramapocamp.com/",
+  "email": "info@ramapocamp.com",
+  "phone": "845-356-6440",
+  "street_address": "600 Saddle River Road",
+  "city": "Airmont",
+  "state": "NY",
+  "zip": "10952",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "swimming",
+    "sports",
+    "arts",
+    "adventure",
+    "STEM"
+  ],
+  "activities": [
+    "swimming",
+    "sports league",
+    "horseback riding",
+    "rock wall",
+    "zip lines",
+    "go carts",
+    "ropes course",
+    "mountain bikes",
+    "ceramics",
+    "woodworking",
+    "cooking",
+    "music",
+    "drama",
+    "dance",
+    "robotics",
+    "magic",
+    "science"
+  ],
+  "grade_max": 8,
+  "age_max": 14,
+  "description_short": "Family owned day camp on 35 acres in Airmont for campers entering Nursery to 8th grade, with four heated pools and Red Cross swim, specialist run sports, arts, science and robotics, an adventure course with zip lines and go carts, and riding lessons from 2nd grade. Busing and a hot lunch cooked on site are included.",
+  "transportation": true,
+  "meals_included": true,
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Full summer (8 weeks, no camp July 5)",
+      "start_date": "2027-06-28",
+      "end_date": "2027-08-20",
+      "availability": "unknown"
+    },
+    {
+      "name": "1st half session",
+      "start_date": "2027-06-28",
+      "end_date": "2027-07-23",
+      "availability": "unknown"
+    },
+    {
+      "name": "2nd half session",
+      "start_date": "2027-07-26",
+      "end_date": "2027-08-20",
+      "availability": "unknown"
+    }
+  ],
+  "notes": "Full day 9 to 4; a Mini Day 9 to 2 is offered for Nursery and Pre-K. Flex 7 and Flex 6 options let families pick any 7 or 6 weeks. All sessions include transportation and lunch. Busing serves most of Manhattan and Bergen County and parts of Brooklyn. Rates are not posted; the camp asks families to request them. Dates may change with school closing dates.",
+  "sources": [
+    {
+      "url": "https://ramapocamp.com/camp-dates-sessions-transportation-lunch/",
+      "checked": "2026-11-27",
+      "fields": [
+        "sessions",
+        "transportation",
+        "meals_included"
+      ],
+      "note": "Researched by Claude from this page. Dates, Sessions, Transportation & Lunch page: 2027 weeks June 28 to August 20, session types, lunch and buses included, 2027 rates by request."
+    },
+    {
+      "url": "https://ramapocamp.com/",
+      "checked": "2026-11-27",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "grade_max",
+        "age_max"
+      ],
+      "note": "Researched by Claude from this page. Home page: address and contact in the footer; for campers entering Nursery to 8th grade. age_max derived from grade 8."
+    },
+    {
+      "url": "https://ramapocamp.com/programs-activities/",
+      "checked": "2026-11-27",
+      "fields": [
+        "secondary_categories",
+        "activities",
+        "description_short"
+      ],
+      "note": "Researched by Claude from this page. Programs & Activities page."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://ramapocamp.com/camp-dates-sessions-transportation-lunch/",
+      "kind": "html",
+      "title": "Ramapo Country Day Camp"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Tuition",
+      "Youngest age (Nursery, age not stated)",
+      "Extended care",
+      "Financial aid",
+      "ACA status"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-27",
+      "page_checked": "https://ramapocamp.com/camp-dates-sessions-transportation-lunch/",
+      "changes": [
+        "New camp, researched from https://ramapocamp.com/camp-dates-sessions-transportation-lunch/",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
+      ],
+      "for_andrew": [
+        "2027 rates are not posted (the camp asks families to request them). List without a price?"
+      ]
+    }
+  }
+}

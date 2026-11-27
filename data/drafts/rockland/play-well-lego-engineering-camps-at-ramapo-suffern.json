@@ -1,0 +1,109 @@
+{
+  "slug": "play-well-lego-engineering-camps-at-ramapo-suffern",
+  "name": "Play-Well LEGO Engineering Camps at Ramapo",
+  "operator_name": "Play-Well TEKnologies with Town of Ramapo Parks & Recreation",
+  "website_url": "https://www.ramapoparks.org/page/play-well-teknologies-203.html",
+  "registration_url": "https://register1.vermontsystems.com/wbwsc/nyramapo.wsc/",
+  "state": "NY",
+  "camp_type": "specialty",
+  "primary_categories": [
+    "STEM"
+  ],
+  "activities": [
+    "LEGO engineering",
+    "building",
+    "problem solving"
+  ],
+  "age_min": 6,
+  "age_max": 10,
+  "description_short": "Half day LEGO engineering weeks for ages 6 to 10 run by Play-Well instructors through Ramapo Parks: a dinosaur habitat building week and a Pokemon building week, 9 am to noon.",
+  "price_per_week": 175,
+  "price_min": 175,
+  "price_max": 175,
+  "price_per": "session",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Dino Design using LEGO",
+      "start_date": "2026-08-17",
+      "end_date": "2026-08-21",
+      "availability": "unknown",
+      "price": 175
+    },
+    {
+      "name": "Pokemon Engineering using LEGO",
+      "start_date": "2026-08-24",
+      "end_date": "2026-08-28",
+      "availability": "unknown",
+      "price": 175
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.ramapoparks.org/page/play-well-teknologies-203.html",
+      "checked": "2026-11-27",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "price_per_week",
+        "price_min",
+        "price_max",
+        "price_per",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Play-Well TEKnologies page: Dino Design August 17 to 21 and Pokemon Engineering August 24 to 28, 9 to 12, ages 6 to 10, $175 each."
+    },
+    {
+      "url": "https://www.ramapoparks.org/uploads/pdfs/1786456257_CAMP%20REG%20FORM%202026.pdf",
+      "checked": "2026-11-27",
+      "fields": [],
+      "note": "Researched by Claude from this page. 2026 Summer Camp Registration Form lists both Play-Well weeks at $175, confirming the 2026 season."
+    },
+    {
+      "url": "https://www.ramapoparks.org/page/contact-us-8.html",
+      "checked": "2026-11-27",
+      "fields": [
+        "state"
+      ],
+      "note": "Researched by Claude from this page. Ramapo Parks Contact Us page: the department's offices are in Pomona, Hillburn and Suffern, NY. State only; no camp site address."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.ramapoparks.org/page/play-well-teknologies-203.html",
+      "kind": "html",
+      "title": "Play-Well TEKnologies, Ramapo Parks & Recreation"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Where it is held",
+      "Resident and non-resident rates"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "missing required city",
+      "missing required zip"
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-27",
+      "page_checked": "https://www.ramapoparks.org/page/play-well-teknologies-203.html",
+      "changes": [
+        "New camp, researched from https://www.ramapoparks.org/page/play-well-teknologies-203.html",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
+      ],
+      "for_andrew": [
+        "Neither the camp page nor the registration form says where the Play-Well weeks meet, so street address, city and ZIP are left out and the draft fails validation. Ask Ramapo Parks for the site?"
+      ]
+    }
+  }
+}

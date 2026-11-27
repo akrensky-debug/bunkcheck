@@ -1,0 +1,150 @@
+{
+  "slug": "deerkill-day-camp-suffern",
+  "name": "Deerkill Day Camp",
+  "operator_name": "Deerkill Day Camp",
+  "website_url": "https://www.deerkilldaycamp.com/",
+  "registration_url": "https://deerkill.campintouch.com/v2/family/InquiryForm.aspx",
+  "phone": "845-354-1466",
+  "street_address": "54 Wilder Rd.",
+  "city": "Suffern",
+  "state": "NY",
+  "zip": "10901",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "swimming",
+    "sports",
+    "arts"
+  ],
+  "activities": [
+    "swimming",
+    "athletics",
+    "specialty activities",
+    "daily club electives",
+    "special events",
+    "field trips"
+  ],
+  "gender_policy": "coed",
+  "grade_max": 10,
+  "age_min": 3,
+  "age_max": 16,
+  "description_short": "Family run day camp in Suffern since 1958 for children from Pre-K 3 to entering 10th grade, with instructional and free swim, athletics, arts and specialty activities, 9 to 4 on weekdays. Tuition covers door to door busing, a hot lunch cooked on site, trips for older campers and a weekend family pool club.",
+  "transportation": true,
+  "meals_included": true,
+  "aca_accredited": true,
+  "aca_source_url": "https://www.deerkilldaycamp.com/all-about-us/faqs",
+  "price_min": 5950,
+  "price_max": 8750,
+  "price_per": "summer",
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Full summer (8 weeks, no camp July 5)",
+      "start_date": "2027-06-28",
+      "end_date": "2027-08-19",
+      "availability": "unknown"
+    },
+    {
+      "name": "First session (4 weeks)",
+      "start_date": "2027-06-28",
+      "end_date": "2027-07-23",
+      "availability": "unknown"
+    },
+    {
+      "name": "Second session (4 weeks)",
+      "start_date": "2027-07-26",
+      "end_date": "2027-08-19",
+      "availability": "unknown"
+    },
+    {
+      "name": "Two week session, weeks 1 and 2",
+      "start_date": "2027-06-28",
+      "end_date": "2027-07-09",
+      "availability": "unknown"
+    },
+    {
+      "name": "Two week session, weeks 7 and 8",
+      "start_date": "2027-08-09",
+      "end_date": "2027-08-19",
+      "availability": "unknown"
+    }
+  ],
+  "notes": "Tuition varies by grade and pick up area and includes transportation, lunch and snack, trips, towels, camp shirt and backpack, and the weekend pool club. Price range shown is the 8 week rate for Rockland and Orange families: $5,950 (Pre-K 3 days a week) to $8,750 (Upper Camp, entering 2nd to 9th). Other 8 week rates run up to $10,350 (Upper Camp from New York City). Campers may also enroll for 2, 4, 5, 6 or 7 weeks; Rockland and Orange Upper Camp 2 weeks is $3,550. Credit card payments after the deposit carry a 3% processing fee. Weekdays 9 to 4. No tipping of staff on camp grounds. Before and after care is not run by the camp; it works with local day care programs for pick up and drop off.",
+  "sources": [
+    {
+      "url": "https://www.deerkilldaycamp.com/dates-rates",
+      "checked": "2026-11-27",
+      "fields": [
+        "name",
+        "operator_name",
+        "transportation",
+        "meals_included",
+        "price_min",
+        "price_max",
+        "price_per",
+        "sessions",
+        "description_short"
+      ],
+      "note": "Researched by Claude from this page. Dates & Rates page: 2027 session June 28 to August 19 (no camp July 5); rate tables by pick up area and grade; all inclusive tuition list. Price range is the Rockland and Orange 8 week column."
+    },
+    {
+      "url": "https://www.deerkilldaycamp.com/",
+      "checked": "2026-11-27",
+      "fields": [
+        "website_url",
+        "registration_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "gender_policy"
+      ],
+      "note": "Researched by Claude from this page. Home page: 2027 dates, address 54 Wilder Rd. Suffern, NY 10901 in the footer, activity menu, Request Info link."
+    },
+    {
+      "url": "https://www.deerkilldaycamp.com/all-about-us/faqs",
+      "checked": "2026-11-27",
+      "fields": [
+        "grade_max",
+        "age_min",
+        "age_max",
+        "aca_accredited",
+        "aca_source_url"
+      ],
+      "note": "Researched by Claude from this page. FAQs page: the camp says it is an ACA accredited camp; hours 9 to 4; day care partners for before and after care. Programs run Pre-K 3 to entering 10th (site menu); age_min 3 from the Pre-K 3 group, age_max derived from grade 10. Coed from 'a day camp for boys and girls' in the site header."
+    }
+  ],
+  "review": {
+    "status": "ready",
+    "source": {
+      "url": "https://www.deerkilldaycamp.com/dates-rates",
+      "kind": "html",
+      "title": "Dates & Rates, Deerkill Day Camp"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Before and after care is through outside day care programs, not the camp",
+      "Financial aid",
+      "Refund policy"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-27",
+      "page_checked": "https://www.deerkilldaycamp.com/dates-rates",
+      "changes": [
+        "New camp, researched from https://www.deerkilldaycamp.com/dates-rates",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
+      ],
+      "for_andrew": []
+    }
+  }
+}

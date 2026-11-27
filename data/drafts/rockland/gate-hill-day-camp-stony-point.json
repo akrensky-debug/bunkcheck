@@ -1,0 +1,137 @@
+{
+  "slug": "gate-hill-day-camp-stony-point",
+  "name": "Gate Hill Day Camp",
+  "operator_name": "Gate Hill Day Camp",
+  "website_url": "https://gatehilldaycamp.com/",
+  "registration_url": "https://gatehilldaycamp.campmanagement.com/p/request_for_info_m.php?action=enroll",
+  "phone": "845-947-3223",
+  "street_address": "750 Gate Hill Road",
+  "city": "Stony Point",
+  "state": "NY",
+  "zip": "10980",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "swimming",
+    "sports",
+    "arts",
+    "adventure",
+    "STEM"
+  ],
+  "activities": [
+    "swimming",
+    "sports",
+    "arts",
+    "go karting",
+    "zip lining",
+    "rock climbing",
+    "STEM workshops",
+    "theatre",
+    "trips"
+  ],
+  "age_min": 3,
+  "age_max": 16,
+  "grade_max": 10,
+  "description_short": "Family run day camp in Stony Point beside Harriman State Park for age 3 to entering 10th grade, with heated pools and swim lessons, sports, arts, go karts, zip lines and rock climbing. Older campers can take morning STEM and arts workshops, and teens can join a leader in training program; door to door busing and lunch are part of tuition.",
+  "transportation": true,
+  "meals_included": true,
+  "extended_care": true,
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Summer 2027 (8 weeks, closed July 5)",
+      "start_date": "2027-06-28",
+      "end_date": "2027-08-19",
+      "availability": "unknown"
+    }
+  ],
+  "notes": "4, 5, 6 or 7 week options by request. Early care from 7:45 am with breakfast, after care until 6 pm, day by day, as part of the all inclusive package. Busing is door to door except in NYC and some meeting points in other counties. Sparks tutoring program available. Tuition is not posted.",
+  "sources": [
+    {
+      "url": "https://gatehilldaycamp.com/current-families/important-dates/",
+      "checked": "2026-11-27",
+      "fields": [
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Important Dates page: 2027 season June 28 to August 19, closed July 5."
+    },
+    {
+      "url": "https://gatehilldaycamp.com/",
+      "checked": "2026-11-27",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "description_short",
+        "transportation"
+      ],
+      "note": "Researched by Claude from this page. Home page: ages 3 to 14 headline, activities, door to door busing, enrolling for 2027."
+    },
+    {
+      "url": "https://gatehilldaycamp.com/programs-activities/optional-services/",
+      "checked": "2026-11-27",
+      "fields": [
+        "meals_included",
+        "extended_care"
+      ],
+      "note": "Researched by Claude from this page. Optional Services page: towel service, transportation and lunch included; early care from 7:45 and after care to 6 pm."
+    },
+    {
+      "url": "https://gatehilldaycamp.com/about-us/location-directions/",
+      "checked": "2026-11-27",
+      "fields": [
+        "street_address",
+        "city",
+        "state",
+        "zip"
+      ],
+      "note": "Researched by Claude from this page. GPS address 750 Gate Hill Road, Stony Point, NY 10980."
+    },
+    {
+      "url": "https://gatehilldaycamp.com/programs-activities/by-age/",
+      "checked": "2026-11-27",
+      "fields": [
+        "age_min",
+        "age_max",
+        "grade_max"
+      ],
+      "note": "Researched by Claude from this page. By Age page: programs for age 3 to entering 10th grade; age_max derived from grade 10."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://gatehilldaycamp.com/",
+      "kind": "html",
+      "title": "Gate Hill Day Camp"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Tuition",
+      "Financial aid",
+      "ACA status"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-27",
+      "page_checked": "https://gatehilldaycamp.com/",
+      "changes": [
+        "New camp, researched from https://gatehilldaycamp.com/",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
+      ],
+      "for_andrew": [
+        "Tuition is not posted. List without a price?"
+      ]
+    }
+  }
+}

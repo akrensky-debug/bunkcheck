@@ -1,0 +1,128 @@
+{
+  "slug": "blue-rock-school-forest-play-summer-program-west-nyack",
+  "name": "Forest Play Summer Program at Blue Rock School",
+  "operator_name": "Blue Rock School",
+  "website_url": "https://www.bluerockschool.org/summer",
+  "email": "forestplay@bluerockschool.org",
+  "phone": "845-627-0234",
+  "street_address": "110 Demarest Mill Road",
+  "city": "West Nyack",
+  "state": "NY",
+  "zip": "10994",
+  "camp_type": "day",
+  "primary_categories": [
+    "nature",
+    "outdoor"
+  ],
+  "secondary_categories": [
+    "arts"
+  ],
+  "activities": [
+    "nature play",
+    "woodland habitat exploration",
+    "shelter building",
+    "forest skills",
+    "gardening",
+    "nature art",
+    "clay"
+  ],
+  "age_min": 5,
+  "age_max": 10,
+  "description_short": "Nature based summer program on Blue Rock School's 5 acre wooded campus in West Nyack for ages 5 to 10, led by Blue Rock teachers, Monday to Thursday 9 to 3. Each week has a theme such as woodland habitats, shelter building or forest skills, with gardening and art from natural materials.",
+  "indoor_outdoor": "outdoor",
+  "extended_care": true,
+  "price_min": 1200,
+  "price_max": 1200,
+  "price_per": "session",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Session 1 (two weeks, Mon to Thu)",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-16",
+      "price": 1200,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 2 (two weeks, Mon to Thu)",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-30",
+      "price": 1200,
+      "availability": "unknown"
+    }
+  ],
+  "fees": [
+    {
+      "name": "Free Play Friday",
+      "amount": 120,
+      "per": "day",
+      "required": false,
+      "note": "Optional Fridays July 10, 17 and 24"
+    },
+    {
+      "name": "Before care or after care",
+      "amount": 15,
+      "per": "hour",
+      "required": false,
+      "note": "Before care 8 to 9 am, after care 3 to 4 pm"
+    }
+  ],
+  "notes": "2026: $1,200 per two week session, Monday to Thursday 9 to 3. A $300 non refundable deposit holds a spot; full payment was due May 1, 2026.",
+  "sources": [
+    {
+      "url": "https://www.bluerockschool.org/summer",
+      "checked": "2026-11-27",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "indoor_outdoor",
+        "extended_care",
+        "price_min",
+        "price_max",
+        "price_per",
+        "sessions",
+        "fees"
+      ],
+      "note": "Researched by Claude from this page. Summer page (2026 Forest Play Summer Program): ages 5 to 10, sessions, costs, Friday option, before and after care, school address."
+    }
+  ],
+  "review": {
+    "status": "ready",
+    "source": {
+      "url": "https://www.bluerockschool.org/summer",
+      "kind": "html",
+      "title": "Summer, Blue Rock School"
+    },
+    "warnings": [],
+    "unknowns": [
+      "2027 dates",
+      "Lunch"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-27",
+      "page_checked": "https://www.bluerockschool.org/summer",
+      "changes": [
+        "New camp, researched from https://www.bluerockschool.org/summer",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
+      ],
+      "for_andrew": []
+    }
+  }
+}

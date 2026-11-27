@@ -1,0 +1,112 @@
+{
+  "slug": "south-orangetown-summer-steam-camp-blauvelt",
+  "name": "South Orangetown Summer STEAM Camp",
+  "operator_name": "South Orangetown Central School District",
+  "website_url": "https://www.socsd.org/curriculum-instruction/summer-steam-camp",
+  "phone": "845-680-1000",
+  "street_address": "Cottage Lane Elementary School, 120 Cottage Lane",
+  "city": "Blauvelt",
+  "state": "NY",
+  "zip": "10913",
+  "camp_type": "specialty",
+  "primary_categories": [
+    "STEM"
+  ],
+  "secondary_categories": [
+    "arts",
+    "academic"
+  ],
+  "activities": [
+    "science",
+    "technology",
+    "engineering",
+    "art",
+    "math",
+    "hands on projects"
+  ],
+  "grade_min": 0,
+  "grade_max": 8,
+  "age_min": 5,
+  "age_max": 14,
+  "description_short": "Free morning STEAM camp run by the South Orangetown school district at Cottage Lane Elementary School for current South Orangetown public school students in grades K to 8. District teachers lead three one hour classes a day on science, technology, engineering, art and math topics, with new topics in week two; seats go by lottery.",
+  "indoor_outdoor": "indoor",
+  "price_min": 0,
+  "price_max": 0,
+  "price_per": "session",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Summer STEAM Camp (7 days, no camp July 3)",
+      "start_date": "2026-07-01",
+      "end_date": "2026-07-10",
+      "price": 0,
+      "availability": "unknown"
+    }
+  ],
+  "notes": "2026: July 1 to 10, 8:50 am to 12:15 pm, no cost. Only current South Orangetown public school students may apply; applications open in PowerSchool in late January and seats are filled by lottery if oversubscribed. Campers must commit to all seven days.",
+  "sources": [
+    {
+      "url": "https://www.socsd.org/curriculum-instruction/summer-steam-camp",
+      "checked": "2026-11-27",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "phone",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "age_min",
+        "age_max",
+        "description_short",
+        "indoor_outdoor",
+        "price_min",
+        "price_max",
+        "price_per",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Summer STEAM Camp page: 2026 dates and hours, location Cottage Lane Elementary School, open to current SOCSD students grades K to 8, no cost, lottery. Ages derived from grades."
+    },
+    {
+      "url": "https://cle.socsd.org",
+      "checked": "2026-11-27",
+      "fields": [
+        "street_address",
+        "zip"
+      ],
+      "note": "Researched by Claude from this page. Cottage Lane Elementary School site footer: 120 Cottage Lane, Blauvelt, NY 10913."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.socsd.org/curriculum-instruction/summer-steam-camp",
+      "kind": "html",
+      "title": "Summer STEAM Camp, South Orangetown Central School District"
+    },
+    "warnings": [],
+    "unknowns": [
+      "2027 dates"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-27",
+      "page_checked": "https://www.socsd.org/curriculum-instruction/summer-steam-camp",
+      "changes": [
+        "New camp, researched from https://www.socsd.org/curriculum-instruction/summer-steam-camp",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
+      ],
+      "for_andrew": [
+        "Only current South Orangetown public school students can enroll (district residents in practice), and it is free. Andrew's rule for residents only camps: record the one rate, say who can enroll, and ask. List it?",
+        "Short program: seven half days (mornings only). List it as a camp?"
+      ]
+    }
+  }
+}

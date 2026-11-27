@@ -1,0 +1,112 @@
+{
+  "slug": "stac-summer-steam-camps-sparkill",
+  "name": "Summer STEAM Camps at St. Thomas Aquinas College",
+  "operator_name": "St. Thomas Aquinas College School of Education",
+  "website_url": "https://stac.edu/academics/school-of-education/summer-steam-camps/",
+  "phone": "845-398-4000",
+  "street_address": "125 Route 340",
+  "city": "Sparkill",
+  "state": "NY",
+  "zip": "10976",
+  "camp_type": "specialty",
+  "primary_categories": [
+    "STEM"
+  ],
+  "secondary_categories": [
+    "academic"
+  ],
+  "activities": [
+    "astronomy",
+    "telescopes",
+    "planetary models",
+    "stargazing",
+    "chemistry experiments",
+    "field experience"
+  ],
+  "grade_min": 5,
+  "grade_max": 9,
+  "age_min": 10,
+  "age_max": 15,
+  "description_short": "Two week long science camps at St. Thomas Aquinas College in Sparkill for students entering grades 5 to 9, 9 to 3. Week 1 is an astronomy camp with a family stargazing night; week 2 is a hands on chemistry camp ending with a family showcase.",
+  "indoor_outdoor": "indoor",
+  "price_per_week": 400,
+  "price_min": 400,
+  "price_max": 400,
+  "price_per": "week",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Space Lab: Astronomer for a Week",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": 400,
+      "availability": "unknown"
+    },
+    {
+      "name": "Ignite Science: Chemistry Quest",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": 400,
+      "availability": "unknown"
+    }
+  ],
+  "notes": "2026: $400 a week, 9 am to 3 pm. $50 off the total for siblings or a child who registers for both camps. Questions to Melissa Collucci (mcollucc@stac.edu). Registration was by Google Forms.",
+  "sources": [
+    {
+      "url": "https://stac.edu/academics/school-of-education/summer-steam-camps/",
+      "checked": "2026-11-27",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "age_min",
+        "age_max",
+        "description_short",
+        "indoor_outdoor",
+        "price_per_week",
+        "price_min",
+        "price_max",
+        "price_per",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Summer STEAM Camps page (2026): grades 5 to 9, July 13 to 17 and July 20 to 24, 9 to 3, $400 a week; college address in the footer. Ages derived from grades. Indoor inferred from lab based camps."
+    }
+  ],
+  "review": {
+    "status": "ready",
+    "source": {
+      "url": "https://stac.edu/academics/school-of-education/summer-steam-camps/",
+      "kind": "html",
+      "title": "Summer STEAM Camps, St. Thomas Aquinas College"
+    },
+    "warnings": [],
+    "unknowns": [
+      "2027 dates",
+      "Extended care",
+      "Lunch"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-27",
+      "page_checked": "https://stac.edu/academics/school-of-education/summer-steam-camps/",
+      "changes": [
+        "New camp, researched from https://stac.edu/academics/school-of-education/summer-steam-camps/",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
+      ],
+      "for_andrew": []
+    }
+  }
+}

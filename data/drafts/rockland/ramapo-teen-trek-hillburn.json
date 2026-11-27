@@ -1,0 +1,155 @@
+{
+  "slug": "ramapo-teen-trek-hillburn",
+  "name": "Ramapo Teen Trek",
+  "operator_name": "Town of Ramapo Parks & Recreation",
+  "website_url": "https://www.ramapoparks.org/page/teen-trek-75.html",
+  "registration_url": "https://www.ramapoparks.org/page/registration-191.html",
+  "phone": "845.357.6100",
+  "street_address": "Joseph T. St. Lawrence Community Health & Sports Center, 115 Torne Valley Road",
+  "city": "Hillburn",
+  "state": "NY",
+  "zip": "10931",
+  "camp_type": "day",
+  "primary_categories": [
+    "adventure"
+  ],
+  "secondary_categories": [
+    "swimming"
+  ],
+  "activities": [
+    "weekly trips",
+    "whitewater rafting",
+    "Broadway show",
+    "Spirit Cruise",
+    "Spook Rock Pool"
+  ],
+  "grade_min": 6,
+  "grade_max": 9,
+  "age_min": 11,
+  "age_max": 15,
+  "description_short": "Ramapo trip camp for teens entering grades 6 to 9, meeting Monday to Thursday at the JTS Community Center in Hillburn, with trips each week such as whitewater rafting, a Broadway show and a Spirit Cruise, and Spook Rock Pool on non trip days.",
+  "price_min": 1650,
+  "price_max": 1650,
+  "price_per": "session",
+  "refund_policy_summary": "Refund requests go in writing to the Parks & Recreation Department; medical refunds need a doctor's note. No refunds once a program has begun, and a $50 per camper surcharge applies to cancellations.",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Summer 2026 (Monday to Thursday, 6 weeks)",
+      "start_date": "2026-07-06",
+      "end_date": "2026-08-13",
+      "availability": "unknown",
+      "price": 1650
+    }
+  ],
+  "fees": [
+    {
+      "name": "Payment plan fee",
+      "amount": 25,
+      "per": "once",
+      "required": false,
+      "note": "Per family, only for families who choose the payment plan (minimum $500 deposit, in person, started by May 15)",
+      "source_url": "https://www.ramapoparks.org/page/registration-191.html"
+    },
+    {
+      "name": "Late enrollment increase",
+      "amount": 75,
+      "per": "summer",
+      "required": false,
+      "note": "Charged on new enrollments after June 12, 2026 ($50 for incomplete payment plans)",
+      "source_url": "https://www.ramapoparks.org/page/registration-191.html"
+    },
+    {
+      "name": "Cancellation surcharge",
+      "amount": 50,
+      "per": "once",
+      "required": false,
+      "note": "Per camper, charged on a refund for a cancelled camp",
+      "source_url": "https://www.ramapoparks.org/page/registration-191.html"
+    }
+  ],
+  "notes": "Price is the non-resident rate ($1,650); Ramapo residents pay $1,525. Non-residents could register from April 13 if space allowed. 9 am to 3 pm, Monday to Thursday. Teen Trek was full for 2026 when checked.",
+  "sources": [
+    {
+      "url": "https://www.ramapoparks.org/page/teen-trek-75.html",
+      "checked": "2026-11-27",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "phone",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "age_min",
+        "age_max",
+        "description_short",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Teen Trek page: full for 2026; July 6 to August 13, Monday to Thursday, 9 to 3, entering grades 6 to 9, JTS Community Center, resident fee $1,525, weekly trips and Spook Rock Pool. Ages derived from grades. Session price is the non-resident rate from the registration form."
+    },
+    {
+      "url": "https://www.ramapoparks.org/page/contact-us-8.html",
+      "checked": "2026-11-27",
+      "fields": [
+        "street_address",
+        "city",
+        "state",
+        "zip"
+      ],
+      "note": "Researched by Claude from this page. Ramapo Parks Contact Us page: Joseph T. St. Lawrence Community Health & Sports Center, 115 Torne Valley Road, Hillburn, NY 10931."
+    },
+    {
+      "url": "https://www.ramapoparks.org/uploads/pdfs/1786456257_CAMP%20REG%20FORM%202026.pdf",
+      "checked": "2026-11-27",
+      "fields": [
+        "price_min",
+        "price_max",
+        "price_per"
+      ],
+      "note": "Researched by Claude from this page. 2026 Summer Camp Registration Form: Teen Trek R $1,525 NR $1,650."
+    },
+    {
+      "url": "https://www.ramapoparks.org/page/registration-191.html",
+      "checked": "2026-11-27",
+      "fields": [
+        "registration_url",
+        "refund_policy_summary",
+        "fees"
+      ],
+      "note": "Researched by Claude from this page. 2026 Registration page: residents register from March 2, non-residents from April 13 if space allows; optional payment plan fee $25 per family; refund surcharge $50 per camper; fee increases after June 12, 2026; full day camps non-resident upcharge $125."
+    }
+  ],
+  "review": {
+    "status": "ready",
+    "source": {
+      "url": "https://www.ramapoparks.org/page/teen-trek-75.html",
+      "kind": "html",
+      "title": "Teen Trek, Ramapo Parks & Recreation"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Transportation",
+      "Lunch",
+      "Extended care",
+      "Financial aid"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-27",
+      "page_checked": "https://www.ramapoparks.org/page/teen-trek-75.html",
+      "changes": [
+        "New camp, researched from https://www.ramapoparks.org/page/teen-trek-75.html",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
+      ],
+      "for_andrew": [
+        "Teen Trek was full for 2026 when checked; session availability is left as unknown because the season has passed."
+      ]
+    }
+  }
+}

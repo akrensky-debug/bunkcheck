@@ -1,0 +1,112 @@
+{
+  "slug": "nyack-boat-club-junior-sailing-nyack",
+  "name": "Nyack Boat Club Junior Sailing",
+  "operator_name": "Nyack Boat Club",
+  "website_url": "https://nyackboatclub.org/page/junior-sailing",
+  "email": "juniorsailing@nyackboatclub.org",
+  "street_address": "59 Gedney Street",
+  "city": "Nyack",
+  "state": "NY",
+  "zip": "10960",
+  "camp_type": "specialty",
+  "primary_categories": [
+    "sailing"
+  ],
+  "activities": [
+    "sailing",
+    "Optimist prams",
+    "Club 420s",
+    "racing"
+  ],
+  "age_min": 8,
+  "age_max": 16,
+  "description_short": "Junior sailing program at the Nyack Boat Club on the Hudson for ages 8 to 16, Monday to Friday 9 am to 4 pm, teaching sailing in Optimist prams and, for older and advanced sailors, Club 420s.",
+  "indoor_outdoor": "outdoor",
+  "price_min": 1650,
+  "price_max": 2300,
+  "price_per": "session",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Session 1 (4 weeks, no sailing July 3)",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-24",
+      "availability": "full",
+      "price": 2300
+    },
+    {
+      "name": "Session 2 (3 weeks)",
+      "start_date": "2026-07-27",
+      "end_date": "2026-08-14",
+      "availability": "full",
+      "price": 1650
+    }
+  ],
+  "fees": [
+    {
+      "name": "Junior Sailing Seasonal Membership",
+      "amount": 900,
+      "per": "year",
+      "required": true,
+      "note": "Plus NY sales tax; one per family, required unless the family holds a general Nyack Boat Club membership"
+    }
+  ],
+  "notes": "Both sessions together cost $3,600. 10% off for a second child. Families who aren't general club members join as Junior Sailing Seasonal members ($900 plus tax per family). General members had priority registration through February 28. Both 2026 sessions were full with a waitlist when checked; apply by emailing the forms on the page.",
+  "sources": [
+    {
+      "url": "https://nyackboatclub.org/page/junior-sailing",
+      "checked": "2026-11-27",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "indoor_outdoor",
+        "price_min",
+        "price_max",
+        "price_per",
+        "sessions",
+        "fees"
+      ],
+      "note": "Researched by Claude from this page. Junior Sailing page: 2026 Session 1 June 29 to July 24 (not July 3) $2,300 and Session 2 July 27 to August 14 $1,650, both full with waitlist; both $3,600; ages 8 to 16; Optimist prams and Club 420s; 9 to 4; $900 seasonal membership plus tax for non members; club address 59 Gedney Street, Nyack, NY 10960. Outdoor inferred from a sailing program."
+    }
+  ],
+  "review": {
+    "status": "ready",
+    "source": {
+      "url": "https://nyackboatclub.org/page/junior-sailing",
+      "kind": "html",
+      "title": "Junior Sailing, Nyack Boat Club"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Swim test requirement",
+      "Lunch",
+      "Financial aid"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-27",
+      "page_checked": "https://nyackboatclub.org/page/junior-sailing",
+      "changes": [
+        "New camp, researched from https://nyackboatclub.org/page/junior-sailing",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
+      ],
+      "for_andrew": [
+        "The application information PDF returned an error (406) to the fetcher, so swim requirements and other details in it are left out."
+      ]
+    }
+  }
+}
