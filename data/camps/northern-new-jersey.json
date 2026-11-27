@@ -1,6 +1,6 @@
 {
   "metro": "Northern New Jersey",
-  "checked": "2026-11-26",
+  "checked": "2026-11-27",
   "notes": "Real listings from each camp's own website. Unverified until a camp confirms. Edit here and re-run: python -m campfinder.seed.import_real --check",
   "camps": [
     {
@@ -274,7 +274,8 @@
             "price_per",
             "meals_included",
             "financial_aid",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-25, approved by Andrew Krensky"
         },
@@ -285,6 +286,22 @@
             "refund_policy_summary"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-25, approved by Andrew Krensky"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Membership",
+          "amount": 40,
+          "per": "year",
+          "required": true,
+          "note": "Club membership, nonrefundable, required for campers. $30 for each additional child in the household. The handbook gives no term, so per year is assumed."
+        },
+        {
+          "name": "Trip shirt",
+          "amount": 10,
+          "per": "once",
+          "required": false,
+          "note": "Required on every field trip; sold at the front desk."
         }
       ]
     },
@@ -708,9 +725,19 @@
             "swim_waterfront_notes",
             "aca_accredited",
             "aca_source_url",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-25, approved by Andrew Krensky"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Registration fee",
+          "amount": 90,
+          "per": "session",
+          "required": true,
+          "note": "Nonrefundable, for every sleepaway session; $60 for each additional trip."
         }
       ]
     },
@@ -893,9 +920,19 @@
           "url": "https://daycampsunshine.org/policies-discounts/",
           "checked": "2026-11-26",
           "fields": [
-            "refund_policy_summary"
+            "refund_policy_summary",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-25, approved by Andrew Krensky"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Registration fee",
+          "amount": 35,
+          "per": "summer",
+          "required": true,
+          "note": "Nonrefundable, per child per summer. A $50 per week deposit goes toward tuition."
         }
       ]
     },
@@ -1784,7 +1821,8 @@
             "price_max",
             "price_per",
             "extended_care",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-25, approved by Andrew Krensky"
         },
@@ -1814,6 +1852,22 @@
             "financial_aid"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-25, approved by Andrew Krensky"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Early care",
+          "amount": 600,
+          "per": "summer",
+          "required": false,
+          "note": "7:30 to 8:45 am. Priced by weeks and days a week: $600 for 8 weeks at 5 days, down to $200 for 4 weeks at 3 days."
+        },
+        {
+          "name": "Late stay",
+          "amount": 800,
+          "per": "summer",
+          "required": false,
+          "note": "4:00 to 6:00 pm. Priced by weeks and days a week: $800 for 8 weeks at 5 days, down to $260 for 4 weeks at 3 days."
         }
       ]
     },
@@ -2040,9 +2094,33 @@
             "transportation",
             "meals_included",
             "refund_policy_summary",
-            "special_needs_notes"
+            "special_needs_notes",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-25, approved by Andrew Krensky"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Before care",
+          "amount": 15,
+          "per": "day",
+          "required": false,
+          "note": "8:00 to 8:45 am, 1 to 5 days a week."
+        },
+        {
+          "name": "After care",
+          "amount": 20,
+          "per": "day",
+          "required": false,
+          "note": "4:00 to 5:00 pm, 1 to 5 days a week."
+        },
+        {
+          "name": "Extra T-shirt",
+          "amount": 10,
+          "per": "once",
+          "required": false,
+          "note": "Each camper gets one shirt; extra shirts can be bought at registration."
         }
       ]
     },
@@ -2390,9 +2468,19 @@
             "price_max",
             "price_per",
             "meals_included",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-25, approved by Andrew Krensky"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Lunch",
+          "amount": 42.5,
+          "per": "week",
+          "required": false,
+          "note": "Optional pizza lunch each day; $40 plus $2.50 in fees."
         }
       ]
     },
@@ -2538,7 +2626,8 @@
             "price_max",
             "price_per",
             "extended_care",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-25, approved by Andrew Krensky"
         },
@@ -2565,6 +2654,15 @@
             "financial_aid"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-25, approved by Andrew Krensky"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Bus",
+          "amount": 125,
+          "per": "week",
+          "required": false,
+          "note": "Central bus pickup locations."
         }
       ]
     },
@@ -2710,9 +2808,40 @@
             "transportation",
             "meals_included",
             "refund_policy_summary",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-25, approved by Andrew Krensky"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Door to door bus",
+          "amount": 1000,
+          "per": "summer",
+          "required": false,
+          "note": "Premier transportation, per child enrolled. Express central bus is included in tuition."
+        },
+        {
+          "name": "Extended care (morning)",
+          "amount": 125,
+          "per": "week",
+          "required": false,
+          "note": "7:15 to 9:00 am; parents drop off at camp."
+        },
+        {
+          "name": "Extended care (afternoon)",
+          "amount": 125,
+          "per": "week",
+          "required": false,
+          "note": "4:00 to 6:00 pm; parents pick up at camp."
+        },
+        {
+          "name": "Extended care (morning and afternoon)",
+          "amount": 220,
+          "per": "week",
+          "required": false,
+          "note": "Both programs together."
         }
       ]
     },
@@ -3057,9 +3186,26 @@
             "extended_care",
             "meals_included",
             "refund_policy_summary",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-25, approved by Andrew Krensky"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Morning care",
+          "amount": 40,
+          "per": "session",
+          "required": false,
+          "note": "7:00 to 8:45 am. Non-resident rate, printed per session; residents pay $25 a week."
+        },
+        {
+          "name": "After care",
+          "amount": 50,
+          "per": "session",
+          "required": false,
+          "note": "3:15 to 6:00 pm. Non-resident rate, printed per session; residents pay $35 a week."
         }
       ]
     },
@@ -3182,7 +3328,8 @@
             "camp_type",
             "primary_categories",
             "indoor_outdoor",
-            "refund_policy_summary"
+            "refund_policy_summary",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-25, approved by Andrew Krensky"
         },
@@ -3208,6 +3355,15 @@
             "sessions"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-25, approved by Andrew Krensky"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Lunch Buddies",
+          "amount": 75,
+          "per": "week",
+          "required": false,
+          "note": "Noon to 1:00 pm after a morning camp; children bring their own lunch."
         }
       ]
     },
@@ -3722,7 +3878,8 @@
             "extended_care",
             "meals_included",
             "refund_policy_summary",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-25, approved by Andrew Krensky"
         },
@@ -3733,6 +3890,22 @@
             "activities"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-25, approved by Andrew Krensky"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Registration fee",
+          "amount": 50,
+          "per": "once",
+          "required": true,
+          "note": "Per camper, nonrefundable."
+        },
+        {
+          "name": "Swim lessons",
+          "amount": 125,
+          "per": "week",
+          "required": false,
+          "note": "Add-on to Day Camp full day for Nursery 4s and up, from June 16. The page prints \"add +$125\" on the weekly price line."
         }
       ]
     },
@@ -4177,7 +4350,8 @@
             "price_per",
             "extended_care",
             "meals_included",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-25, approved by Andrew Krensky"
         },
@@ -4196,6 +4370,29 @@
             "financial_aid"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-25, approved by Andrew Krensky"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Extended care (one end)",
+          "amount": 30,
+          "per": "day",
+          "required": false,
+          "note": "Early drop off from 8 AM or late pick up until 5:30 PM, per day."
+        },
+        {
+          "name": "Extended care (one end, full week)",
+          "amount": 115,
+          "per": "week",
+          "required": false,
+          "note": "Early drop off or late pick up for the whole week."
+        },
+        {
+          "name": "Extended care (both ends, full week)",
+          "amount": 190,
+          "per": "week",
+          "required": false,
+          "note": "Early drop off and late pick up for the whole week."
         }
       ]
     },
@@ -4332,9 +4529,26 @@
             "extended_care",
             "meals_included",
             "swim_waterfront_notes",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-25, approved by Andrew Krensky"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Before care",
+          "amount": 50,
+          "per": "week",
+          "required": false,
+          "note": "7:30 to 9:00 am."
+        },
+        {
+          "name": "After care",
+          "amount": 50,
+          "per": "week",
+          "required": false,
+          "note": "4:30 to 6:00 pm."
         }
       ]
     },
@@ -4455,6 +4669,189 @@
             "indoor_outdoor",
             "refund_policy_summary",
             "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-25, approved by Andrew Krensky"
+        }
+      ]
+    },
+    {
+      "slug": "camp-lagoonland-berkeley-heights",
+      "name": "Camp Lagoonland",
+      "operator_name": "Summit Area YMCA",
+      "website_url": "https://www.thesay.org/programs/camp/view-all/",
+      "street_address": "59 Locust Avenue",
+      "city": "Berkeley Heights",
+      "state": "NJ",
+      "zip": "07922",
+      "camp_type": "day",
+      "primary_categories": [
+        "general"
+      ],
+      "secondary_categories": [
+        "swimming",
+        "arts"
+      ],
+      "activities": [
+        "swimming",
+        "games",
+        "arts and crafts",
+        "field trips"
+      ],
+      "age_min": 5,
+      "age_max": 10,
+      "description_short": "Weekly YMCA day camp for ages 5 to 10 based at the Berkeley Heights YMCA, with a daily swim at the Berkeley Heights Community outdoor pool, games, crafts and field trips. A Summit Area YMCA membership is required.",
+      "indoor_outdoor": "both",
+      "price_per_week": 415,
+      "price_min": 415,
+      "price_max": 415,
+      "price_per": "week",
+      "fees": [
+        {
+          "name": "Membership",
+          "amount": 120,
+          "per": "year",
+          "required": true,
+          "note": "Summit Area YMCA youth membership (ages 0 to 12); a SAY family membership also counts"
+        },
+        {
+          "name": "Extended care (morning)",
+          "amount": 95,
+          "per": "week",
+          "required": false,
+          "note": "Pre-Camp, 7 to 8:30 am; includes the morning bus where it applies"
+        },
+        {
+          "name": "Extended care (afternoon)",
+          "amount": 110,
+          "per": "week",
+          "required": false,
+          "note": "Post Camp, 4 to 6:30 pm; includes the afternoon bus where it applies"
+        },
+        {
+          "name": "Extended day",
+          "amount": 55,
+          "per": "week",
+          "required": false,
+          "note": "8 am drop off and 4:30 pm pick up at the Berkeley Heights and Summit YMCAs"
+        }
+      ],
+      "extended_care": true,
+      "transportation": true,
+      "financial_aid": true,
+      "refund_policy_summary": "Deposits are non-refundable; refunds less the deposit until April 1, 2026, and none after.",
+      "swim_waterfront_notes": "Daily swim at the Berkeley Heights Community outdoor pool except on trip days.",
+      "season_year": 2026,
+      "sessions": [
+        {
+          "name": "Week 1",
+          "start_date": "2026-06-15",
+          "end_date": "2026-06-19",
+          "price": 415,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 2",
+          "start_date": "2026-06-22",
+          "end_date": "2026-06-26",
+          "price": 415,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 3",
+          "start_date": "2026-06-29",
+          "end_date": "2026-07-03",
+          "price": 415,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 4",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "price": 415,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 5",
+          "start_date": "2026-07-13",
+          "end_date": "2026-07-17",
+          "price": 415,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 6",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "price": 415,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 7",
+          "start_date": "2026-07-27",
+          "end_date": "2026-07-31",
+          "price": 415,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 8",
+          "start_date": "2026-08-03",
+          "end_date": "2026-08-07",
+          "price": 415,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 9",
+          "start_date": "2026-08-10",
+          "end_date": "2026-08-14",
+          "price": 415,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 10",
+          "start_date": "2026-08-17",
+          "end_date": "2026-08-21",
+          "price": 415,
+          "availability": "unknown"
+        }
+      ],
+      "notes": "Every camper needs an active Summit Area YMCA membership (youth membership $120 a year, teen $60 a month); there is no non-member rate. Pre-Camp 7 to 8:30 am ($95 a week) and Post Camp 4 to 6:30 pm ($110 a week) include the bus between the Summit or Berkeley Heights YMCA and the pool or reservation camps. Deposit $50 a week; refunds less the deposit before April 1, 2026, none after. Family members saved $10 a week before January 19. Camp 9 am to 4 pm.",
+      "sources": [
+        {
+          "url": "https://www.thesay.org/programs/camp/view-all/",
+          "checked": "2026-11-27",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "primary_categories",
+            "secondary_categories",
+            "activities",
+            "description_short"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-25, approved by Andrew Krensky"
+        },
+        {
+          "url": "https://www.thesay.org/wp-content/uploads/2026/02/2026-SUMMER-CAMP-GUIDE-WEB-0205.pdf",
+          "checked": "2026-11-27",
+          "fields": [
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "age_min",
+            "age_max",
+            "indoor_outdoor",
+            "price_per_week",
+            "price_min",
+            "price_max",
+            "price_per",
+            "extended_care",
+            "transportation",
+            "financial_aid",
+            "refund_policy_summary",
+            "swim_waterfront_notes",
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-25, approved by Andrew Krensky"
         }
