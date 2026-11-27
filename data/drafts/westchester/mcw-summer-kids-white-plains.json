@@ -1,0 +1,174 @@
+{
+  "slug": "mcw-summer-kids-white-plains",
+  "name": "MCW Summer Kids: Music, Art & Play",
+  "operator_name": "Music Conservatory of Westchester",
+  "website_url": "https://musicconservatory.org/programs/summer-programs/",
+  "email": "info@musiced.org",
+  "phone": "914-761-3900",
+  "street_address": "216 Central Avenue",
+  "city": "White Plains",
+  "state": "NY",
+  "zip": "10606",
+  "camp_type": "specialty",
+  "primary_categories": [
+    "performing_arts"
+  ],
+  "secondary_categories": [
+    "arts",
+    "technology"
+  ],
+  "activities": [
+    "chorus",
+    "dance",
+    "maker space art",
+    "guitar",
+    "piano",
+    "violin",
+    "music production",
+    "drumming",
+    "musical theater"
+  ],
+  "grade_min": 1,
+  "grade_max": 6,
+  "age_min": 6,
+  "age_max": 12,
+  "description_short": "Music and arts day camp at the Music Conservatory of Westchester in White Plains for grades 1 to 6. Mornings mix chorus, dance, art projects and a chosen instrument (guitar, piano or violin); afternoons add music basics or music production, drumming and musical theater.",
+  "indoor_outdoor": "indoor",
+  "price_per_week": 650,
+  "price_min": 650,
+  "price_max": 1125,
+  "price_per": "session",
+  "fees": [
+    {
+      "name": "Registration",
+      "amount": 30,
+      "per": "summer",
+      "required": true,
+      "note": "Once per summer for all programs"
+    },
+    {
+      "name": "Early drop off",
+      "amount": 35,
+      "per": "week",
+      "required": false,
+      "note": "From 8:15 am"
+    },
+    {
+      "name": "Extended pick up",
+      "amount": 70,
+      "per": "week",
+      "required": false,
+      "note": "3:30 to 5:30 pm"
+    },
+    {
+      "name": "Early drop off and extended pick up",
+      "amount": 90,
+      "per": "week",
+      "required": false,
+      "note": "Both together"
+    }
+  ],
+  "extended_care": true,
+  "financial_aid": true,
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Session 1 (1 week, full day)",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": 650,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 2 (2 weeks, full day)",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-24",
+      "price": 1125,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 3 (2 weeks, full day)",
+      "start_date": "2026-07-27",
+      "end_date": "2026-08-07",
+      "price": 1125,
+      "availability": "unknown"
+    }
+  ],
+  "notes": "Full day 9 am to 3:30 pm; half day 9 am to 12:30 pm costs $450 for the one week session and $755 for a two week session. Ages derived from grades 1 to 6. The conservatory also runs a Suzuki Beginner Special (ages 4 to 7), Summer Strings Festival (grades 5 to 12), Jazz Workshop and Music Production Workshop (grades 8 to 12).",
+  "sources": [
+    {
+      "url": "https://musicconservatory.org/programs/summer-programs/",
+      "checked": "2026-11-27",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "age_min",
+        "age_max",
+        "description_short",
+        "indoor_outdoor",
+        "price_per_week",
+        "price_min",
+        "price_max",
+        "price_per",
+        "fees",
+        "extended_care",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Summer Programs page: Summer Kids sessions July 6 to August 7, full and half day tuition, add on fees. The page prints no year; the conservatory's 2026 Summer Calendar (below) dates Summer Kids 7/6 through 8/7. Ages derived from grades 1 to 6."
+    },
+    {
+      "url": "https://musicconservatory.org/programs/how-to-register/",
+      "checked": "2026-11-27",
+      "fields": [
+        "financial_aid"
+      ],
+      "note": "Researched by Claude from this page. How To Register page: Scholarship Fund gives tuition help for students age 4 and up; links the 2026 Summer Schedule."
+    },
+    {
+      "url": "https://drive.google.com/file/d/15Xw1_Iej7pKn-D-oIgzxbgWT-e3rnFzR/view",
+      "checked": "2026-11-27",
+      "fields": [],
+      "note": "Researched by Claude from this page. 2026 Summer Calendar PDF linked from the How To Register page: 'Summer Kids 7/6 through 8/7', which sets the season year."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://musicconservatory.org/programs/summer-programs/",
+      "kind": "html",
+      "title": "Summer Programs - Music Conservatory"
+    },
+    "warnings": [],
+    "unknowns": [
+      "transportation",
+      "meals_included",
+      "registration_url"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-27",
+      "page_checked": "https://musicconservatory.org/programs/summer-programs/",
+      "changes": [
+        "New camp, researched from https://musicconservatory.org/programs/summer-programs/"
+      ],
+      "for_andrew": [
+        "The 2026 calendar PDF is on Google Drive, which the repo fetcher can't read; it was downloaded with curl as BunkcheckBot. OK to source it that way?"
+      ]
+    }
+  }
+}

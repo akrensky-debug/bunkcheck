@@ -1,0 +1,168 @@
+{
+  "slug": "camp-nejeda-stillwater",
+  "name": "Camp Nejeda",
+  "operator_name": "Camp Nejeda Foundation",
+  "website_url": "https://www.campnejeda.org/",
+  "registration_url": "https://campnejeda.campbrainregistration.com/",
+  "email": "information@campnejeda.org",
+  "phone": "973-383-2611",
+  "street_address": "910 Saddleback Road",
+  "city": "Stillwater",
+  "state": "NJ",
+  "zip": "07875",
+  "camp_type": "sleepaway",
+  "primary_categories": [
+    "special_needs"
+  ],
+  "secondary_categories": [
+    "general",
+    "outdoor",
+    "swimming"
+  ],
+  "activities": [
+    "zip line",
+    "climbing wall",
+    "low ropes course",
+    "archery",
+    "arts and crafts",
+    "basketball",
+    "baseball",
+    "gaga",
+    "soccer",
+    "volleyball",
+    "swimming",
+    "bonfires",
+    "evening activities"
+  ],
+  "age_min": 7,
+  "age_max": 16,
+  "description_short": "Sleepaway camp for children with type 1 diabetes on a 72 acre property in Stillwater, in one and two week sessions for ages 7 to 16. Campers do a zip line, climbing wall, low ropes, archery, sports and a daily pool swim, with round the clock nurses and an endocrinologist managing their diabetes care.",
+  "indoor_outdoor": "both",
+  "price_per_week": 1775,
+  "price_min": 1775,
+  "price_max": 3500,
+  "price_per": "session",
+  "meals_included": true,
+  "financial_aid": true,
+  "special_needs_notes": "For children with type 1 diabetes. Nurses are on duty around the clock, a pediatric endocrinologist reviews blood sugars daily and adjusts insulin, and tech facilitators help with pump site and CGM changes. Most counselors have type 1 diabetes. Nut free camp with a dedicated gluten free prep space.",
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Session 1 (ages 7 to 12)",
+      "start_date": "2027-06-27",
+      "end_date": "2027-07-02",
+      "price": 1775,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 2, two weeks (ages 9 to 13, LIT A)",
+      "start_date": "2027-07-04",
+      "end_date": "2027-07-16",
+      "price": 3500,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 3, two weeks (ages 13 to 16)",
+      "start_date": "2027-07-18",
+      "end_date": "2027-07-30",
+      "price": 3500,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 4 (ages 10 to 15, LIT B)",
+      "start_date": "2027-08-01",
+      "end_date": "2027-08-06",
+      "price": 1775,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 5 (ages 7 to 15, LIT B)",
+      "start_date": "2027-08-08",
+      "end_date": "2027-08-13",
+      "price": 1775,
+      "availability": "unknown"
+    }
+  ],
+  "notes": "Prices are Tier 1, the full price. Families choose a tier on an honor system: Tier 2 is $1,475 for one week and $2,900 for two; Tier 3 is a $50 registration fee plus a campership. Camp Nejeda also runs a day camp in West Deptford (outside this region), family camps, a BFF mini camp (August 15 to 17, $450) where a camper brings a friend without diabetes, and a leaders in training program for age 16.",
+  "sources": [
+    {
+      "url": "https://www.campnejeda.org/",
+      "checked": "2026-11-27",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type"
+      ],
+      "note": "Researched by Claude from this page. Camp address 910 Saddleback Road, Stillwater, NJ 07875. Sleep-away camp ages 7 to 16; day camp in West Deptford."
+    },
+    {
+      "url": "https://www.campnejeda.org/future-campers/dates-and-rates",
+      "checked": "2026-11-27",
+      "fields": [
+        "price_per_week",
+        "price_min",
+        "price_max",
+        "price_per",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. 2027 sleep-away sessions and tiered pricing. Tier 1 recorded as the standard price."
+    },
+    {
+      "url": "https://www.campnejeda.org/sleep-away-camp",
+      "checked": "2026-11-27",
+      "fields": [
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "indoor_outdoor",
+        "meals_included",
+        "special_needs_notes"
+      ],
+      "note": "Researched by Claude from this page. Three meals and two snacks a day. Diabetes care staffing from the FAQ."
+    },
+    {
+      "url": "https://www.campnejeda.org/future-campers/financial-aid",
+      "checked": "2026-11-27",
+      "fields": [
+        "financial_aid"
+      ],
+      "note": "Researched by Claude from this page. Financial aid page linked from Future Campers; dates and rates page says financial aid is available for campers with type 1 diabetes."
+    }
+  ],
+  "review": {
+    "status": "ready",
+    "source": {
+      "url": "https://www.campnejeda.org/",
+      "kind": "html",
+      "title": "Camp Nejeda"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Transportation to camp",
+      "Refund policy"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-27",
+      "page_checked": "https://www.campnejeda.org/",
+      "changes": [
+        "New camp, researched from https://www.campnejeda.org/",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
+      ],
+      "for_andrew": []
+    }
+  }
+}

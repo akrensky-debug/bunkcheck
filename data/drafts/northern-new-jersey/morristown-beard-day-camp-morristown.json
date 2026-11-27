@@ -1,0 +1,109 @@
+{
+  "slug": "morristown-beard-day-camp-morristown",
+  "name": "Morristown Beard Day Camp",
+  "operator_name": "Morristown Beard School",
+  "website_url": "https://www.mbs.net/day-camp",
+  "email": "summer@mbs.net",
+  "phone": "973-539-3032",
+  "street_address": "Morristown Beard School, 70 Whippany Road",
+  "city": "Morristown",
+  "state": "NJ",
+  "zip": "07960",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "sports",
+    "arts",
+    "swimming",
+    "performing_arts",
+    "STEM"
+  ],
+  "activities": [
+    "sports",
+    "arts and crafts",
+    "drama",
+    "swimming",
+    "science",
+    "special event days"
+  ],
+  "age_min": 4,
+  "age_max": 14,
+  "description_short": "Day camp run by Morristown Beard School for ages 4 to 14, with sports, arts and crafts, drama, swimming and science on a daily schedule. Campers 6 to 14 are grouped by age and gender; 4 and 5 year olds are coed groups.",
+  "extended_care": true,
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Summer 2027",
+      "start_date": "2027-06-21",
+      "end_date": "2027-08-06",
+      "price": null,
+      "availability": "unknown"
+    }
+  ],
+  "notes": "Camp day is 8:30 a.m. to 3:30 p.m., with before care and after care available. Registration for summer 2027 opens in December 2026. Rates are not posted yet; the camp's registration site (summer.mbs.net) could not be reached.",
+  "sources": [
+    {
+      "url": "https://www.mbs.net/day-camp",
+      "checked": "2026-11-27",
+      "fields": [
+        "name",
+        "website_url",
+        "email",
+        "phone",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "extended_care",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Camp dates June 21, 2027 to August 6, 2027, 8:30 to 3:30. Ages as of end of June."
+    },
+    {
+      "url": "https://www.mbs.net/",
+      "checked": "2026-11-27",
+      "fields": [
+        "operator_name",
+        "street_address",
+        "city",
+        "state",
+        "zip"
+      ],
+      "note": "Researched by Claude from this page. School address from the Morristown Beard School home page footer. The camp page does not say where camp meets; the school campus is assumed."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.mbs.net/day-camp",
+      "kind": "html",
+      "title": "summer, camp | Morristown Beard School"
+    },
+    "warnings": [],
+    "unknowns": [
+      "2027 rates",
+      "Week structure",
+      "Lunch",
+      "Where on campus camp meets"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-27",
+      "page_checked": "https://www.mbs.net/day-camp",
+      "changes": [
+        "New camp, researched from https://www.mbs.net/day-camp"
+      ],
+      "for_andrew": [
+        "The 2027 camp page gives dates, ages and hours but no rates, and the camp's own registration site (summer.mbs.net) would not connect. Hold until rates post in December?",
+        "The address is the school's, from the school home page; the camp page itself does not name a location."
+      ]
+    }
+  }
+}

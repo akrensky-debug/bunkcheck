@@ -1,0 +1,95 @@
+{
+  "slug": "makeinspires-steam-summer-camp-pleasantville",
+  "name": "MakeInspires STEAM Summer Camp Pleasantville",
+  "operator_name": "MakeInspires",
+  "website_url": "https://www.makeinspires.com/summer-pleasantville",
+  "street_address": "42 Memorial Plaza",
+  "city": "Pleasantville",
+  "camp_type": "specialty",
+  "primary_categories": [
+    "STEM"
+  ],
+  "secondary_categories": [
+    "technology"
+  ],
+  "age_min": 5,
+  "age_max": 15,
+  "description_short": "Two late summer weeks of MakeInspires STEAM camp for ages 5 to 15, held at the Addie-Tude Cultural Arts Center in Pleasantville, in age groups of up to six with dedicated instructors. Half day morning or afternoon, or full day 9:30 to 3:30, with an engineering challenge every Friday afternoon.",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Week 1",
+      "start_date": "2026-08-17",
+      "end_date": "2026-08-21",
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 2",
+      "start_date": "2026-08-24",
+      "end_date": "2026-08-28",
+      "availability": "unknown"
+    }
+  ],
+  "notes": "Partial weeks allowed if they start on a Monday and run at least 3 days. Registration closes 9:30 am the Sunday before each week. Campers aged 14 get 25% off and 15 get 50% off as CITs; sibling discounts applied automatically. Catered lunch is an add on. No price is printed on this page.",
+  "sources": [
+    {
+      "url": "https://www.makeinspires.com/summer-pleasantville",
+      "checked": "2026-11-27",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "street_address",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "age_min",
+        "age_max",
+        "description_short",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Pleasantville STEAM Summer Camp 2026 page: 2 weekly sessions August 17th to 28th, half day 9:30 to 12 or 1 to 3:30, full day 9:30 to 3:30, ages 5 to 15, at Addie-Tude Cultural Arts Center, 42 Memorial Plaza, Pleasantville, NY (no ZIP). Subject descriptions on the page are labeled 2025, so no activities are recorded."
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=42+Memorial+Plaza%2C+Pleasantville%2C+NY&benchmark=Public_AR_Current&format=json",
+      "checked": "2026-11-27",
+      "fields": [
+        "zip"
+      ],
+      "note": "ZIP looked up with the Census Bureau geocoder from the address on the camp's page (42 MEMORIAL PLZ, PLEASANTVILLE, NY, 10570)"
+    }
+  ],
+  "state": "NY",
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.makeinspires.com/summer-pleasantville",
+      "kind": "html",
+      "title": "STEM SUMMER PLEASANTVILLE | MakeInspires STEAM Makerspaces"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Price",
+      "Contact for this site",
+      "2027 dates",
+      "ACA accreditation"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-27",
+      "page_checked": "https://www.makeinspires.com/summer-pleasantville",
+      "changes": [
+        "New camp, researched from https://www.makeinspires.com/summer-pleasantville",
+        "ZIP 10570 looked up from the camp's street address with the Census geocoder (ZIP lookups allowed by Andrew, 22 November)."
+      ],
+      "for_andrew": [
+        "No price is printed for the Pleasantville weeks (the Chappaqua and Mamaroneck pages show $540 half day and $925 full day for 2027, but not for this site). List it without a price?"
+      ]
+    }
+  },
+  "zip": "10570"
+}

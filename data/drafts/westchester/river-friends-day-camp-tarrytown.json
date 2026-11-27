@@ -1,0 +1,144 @@
+{
+  "slug": "river-friends-day-camp-tarrytown",
+  "name": "River Friends Day Camp",
+  "operator_name": "Shames JCC on the Hudson",
+  "website_url": "https://riverfriendsdaycamp.org/",
+  "email": "Riverfriends@shamesjcc.org",
+  "phone": "914-366-7898",
+  "street_address": "371 South Broadway",
+  "city": "Tarrytown",
+  "zip": "10533",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "swimming",
+    "arts",
+    "sports",
+    "nature"
+  ],
+  "age_min": 2,
+  "age_max": 6,
+  "description_short": "Day camp for children ages 2 to 6 at the Shames JCC on the Hudson in Tarrytown, with swim lessons, sports, gardening and cooking, water play, yoga, music, dance and crafts. Twos come for a morning or afternoon half day; threes have half and full days and 4 to 6 year olds come 9 to 3.",
+  "religious_affiliation": "Jewish",
+  "activities": [
+    "swim",
+    "arts and crafts",
+    "sports",
+    "gardening",
+    "music and dance",
+    "yoga",
+    "karate",
+    "obstacle course",
+    "water play",
+    "shabbat"
+  ],
+  "swim_waterfront_notes": "Upper Camp (4 to 6) has daily free swim and instructional swim lessons by age group.",
+  "extended_care": true,
+  "price_min": 1550,
+  "price_max": 6960,
+  "price_per": "session",
+  "fees": [
+    {
+      "name": "Early arrival",
+      "amount": 80,
+      "per": "week",
+      "required": false,
+      "note": "8:00 to 9:15 am, ages 3 and up"
+    },
+    {
+      "name": "Late stay",
+      "amount": 220,
+      "per": "week",
+      "required": false,
+      "note": "3:00 to 6:00 pm, ages 3 and up"
+    }
+  ],
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "2027 season (choose 2 to 8 weeks)",
+      "start_date": "2027-06-28",
+      "end_date": "2027-08-19",
+      "availability": "open"
+    }
+  ],
+  "notes": "2027 non-member totals for 2 to 8 weeks (minimum 2 weeks; the first two must be consecutive): 2s morning $1,610 to $5,280; 2s afternoon $1,550 to $5,040; 3s half day $1,980 to $6,440; 4s, 5s and 6s full day $2,270 to $6,960. Members with a JCC family membership pay less (for example $1,410 to $4,680 for 2s mornings and $2,070 to $6,360 full day). Deposit $1 if registered by November 30, 2026, then $500, applied to tuition; balance in thirds March 1, April 1 and May 1, 2027. Twos must be 2 by their start date.",
+  "sources": [
+    {
+      "url": "https://riverfriendsdaycamp.org/enroll",
+      "checked": "2026-11-27",
+      "fields": [
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "extended_care",
+        "price_min",
+        "price_max",
+        "price_per",
+        "fees",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Enroll page: '2027 Camp Dates: June 28 to August 19', 2 to 8 weeks, member and non-member tables by number of weeks; price_min and price_max are the non-member 2 week 2s afternoon and 8 week full day totals. Early Arrival 8:00 to 9:15 $80/week and Late Stay 3:00 to 6:00 $220/week for ages 3 and up. 3s full day 9:15 to 3:15 is listed without its own table."
+    },
+    {
+      "url": "https://riverfriendsdaycamp.org/",
+      "checked": "2026-11-27",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "age_min",
+        "age_max",
+        "description_short"
+      ],
+      "note": "Researched by Claude from this page. Home page: River Friends at the Shames JCC on the Hudson for ages 2 to 6; swim lessons, sports and games, playground, cooking and gardening, water play, yoga, dance, music, arts and crafts; water slide and splash pad."
+    },
+    {
+      "url": "https://riverfriendsdaycamp.org/4s/5s/6s",
+      "checked": "2026-11-27",
+      "fields": [
+        "religious_affiliation",
+        "activities",
+        "swim_waterfront_notes"
+      ],
+      "note": "Researched by Claude from this page. Upper Camp page (ages 4 to 6): 9:00 to 3:00, daily free swim and swim lessons, sample activities and Shabbat among camp traditions. Religious affiliation from the JCC and its Shabbat tradition."
+    }
+  ],
+  "state": "NY",
+  "review": {
+    "status": "ready",
+    "source": {
+      "url": "https://riverfriendsdaycamp.org/enroll",
+      "kind": "html",
+      "title": "Summer Camp for Kids 2-6 | Summer Camp | Tarrytown, NY"
+    },
+    "warnings": [
+      "No single week price: the camp sells 2 to 8 week packages, so price_per is session and no price_per_week is set."
+    ],
+    "unknowns": [
+      "Lunch",
+      "Financial aid",
+      "ACA accreditation",
+      "3s full day price"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-27",
+      "page_checked": "https://riverfriendsdaycamp.org/enroll",
+      "changes": [
+        "New camp, researched from https://riverfriendsdaycamp.org/enroll"
+      ],
+      "for_andrew": []
+    }
+  }
+}

@@ -1,0 +1,190 @@
+{
+  "slug": "eagles-day-camp-midland-park",
+  "name": "Eagles Day Camp",
+  "operator_name": "Eastern Christian School",
+  "website_url": "https://www.easternchristian.org/eagles-camps/our-camps/",
+  "registration_url": "https://www.easternchristian.org/eagles-camps/registration/",
+  "email": "office@eaglescamps.org",
+  "phone": "973-310-0421",
+  "street_address": "25 Baldin Drive",
+  "city": "Midland Park",
+  "state": "NJ",
+  "zip": "07432",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "arts"
+  ],
+  "activities": [
+    "tie dye",
+    "outdoor games",
+    "water play",
+    "arts and crafts",
+    "cooking",
+    "music",
+    "nature",
+    "junior sports"
+  ],
+  "grade_max": 2,
+  "description_short": "Eastern Christian School day camp for children entering PK4 or TK and grades K to 2, with a weekly theme such as arts and crafts, cooking, music, nature or junior sports. Activities include tie dye, outdoor games and water play.",
+  "price_per_week": 400,
+  "price_min": 200,
+  "price_max": 400,
+  "price_per": "week",
+  "fees": [
+    {
+      "name": "Aftercare",
+      "amount": 150,
+      "per": "week",
+      "required": false,
+      "note": "3 to 6 pm"
+    }
+  ],
+  "extended_care": true,
+  "meals_included": false,
+  "refund_policy_summary": "A nonrefundable 40% deposit per camper per week holds the spot. Written cancellations before June 1 may get a partial refund; none after June 1 except case by case for medical or family emergencies. Partial weeks are not prorated.",
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Week 1",
+      "start_date": "2027-06-28",
+      "end_date": "2027-07-02",
+      "price": 400,
+      "availability": "open"
+    },
+    {
+      "name": "Week 2",
+      "start_date": "2027-07-05",
+      "end_date": "2027-07-09",
+      "price": 400,
+      "availability": "open"
+    },
+    {
+      "name": "Week 3",
+      "start_date": "2027-07-12",
+      "end_date": "2027-07-16",
+      "price": 400,
+      "availability": "open"
+    },
+    {
+      "name": "Week 4",
+      "start_date": "2027-07-19",
+      "end_date": "2027-07-23",
+      "price": 400,
+      "availability": "open"
+    },
+    {
+      "name": "Week 5",
+      "start_date": "2027-07-26",
+      "end_date": "2027-07-30",
+      "price": 400,
+      "availability": "open"
+    },
+    {
+      "name": "Week 6",
+      "start_date": "2027-08-02",
+      "end_date": "2027-08-06",
+      "price": 400,
+      "availability": "open"
+    },
+    {
+      "name": "Week 7",
+      "start_date": "2027-08-09",
+      "end_date": "2027-08-13",
+      "price": 400,
+      "availability": "open"
+    },
+    {
+      "name": "Week 8",
+      "start_date": "2027-08-16",
+      "end_date": "2027-08-20",
+      "price": 400,
+      "availability": "open"
+    }
+  ],
+  "notes": "Full day $400 a week (drop off 8 to 9 am, pick up 2:45 to 3 pm); half day preschool $200 a week (pick up 11:45 to noon); aftercare 3 to 6 pm $150 a week. The 2027 page still says ages are for fall 2026. The 40% deposit counts toward tuition. Lunch is packed from home or ordered from the school's Eagle Cafe.",
+  "sources": [
+    {
+      "url": "https://www.easternchristian.org/eagles-camps/our-camps/",
+      "checked": "2026-11-27",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "grade_max",
+        "description_short",
+        "price_per_week",
+        "price_min",
+        "price_max",
+        "price_per",
+        "fees",
+        "extended_care",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Our Camps page, 'Eagles Day Camp (2027)': PK4/TK and K to 2 groups, eight weeks June 28 to August 20, full day $400, half day preschool $200, aftercare $150; weekly themes. The street address is the PK to grade 2 campus in the page footer; the day camp section doesn't name its campus."
+    },
+    {
+      "url": "https://www.easternchristian.org/eagles-camps/policies/",
+      "checked": "2026-11-27",
+      "fields": [
+        "meals_included",
+        "refund_policy_summary"
+      ],
+      "note": "Researched by Claude from this page. Policies page: bring lunch or buy from Eagle Cafe; deposit and cancellation rules."
+    },
+    {
+      "url": "https://www.easternchristian.org/eagles-camps/facilities/",
+      "checked": "2026-11-27",
+      "fields": [],
+      "note": "Researched by Claude from this page. Facilities page: camps run on all three campuses; the Midland Park campus has playgrounds and a garden."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.easternchristian.org/eagles-camps/our-camps/",
+      "kind": "html",
+      "title": "Our Camps - Eastern Christian School"
+    },
+    "warnings": [],
+    "unknowns": [
+      "grade_min",
+      "age_min",
+      "age_max",
+      "indoor_outdoor",
+      "transportation",
+      "financial_aid"
+    ],
+    "low_confidence": [
+      "street_address",
+      "city",
+      "zip"
+    ],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-27",
+      "page_checked": "https://www.easternchristian.org/eagles-camps/our-camps/",
+      "changes": [
+        "New camp, researched from https://www.easternchristian.org/eagles-camps/our-camps/",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
+      ],
+      "for_andrew": [
+        "The day camp section doesn't say which campus it uses. I set the Midland Park campus (25 Baldin Drive), which the footer lists as the preschool and K to 2 school; confirm with the camp before publishing. Also, the 2027 section still says children 'entering ... Fall 2026'."
+      ]
+    }
+  }
+}

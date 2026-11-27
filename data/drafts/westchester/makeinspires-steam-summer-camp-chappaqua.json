@@ -1,0 +1,103 @@
+{
+  "slug": "makeinspires-steam-summer-camp-chappaqua",
+  "name": "MakeInspires STEAM Summer Camp Chappaqua",
+  "operator_name": "MakeInspires",
+  "website_url": "https://www.makeinspires.com/summer-chappaqua",
+  "email": "chappaqua@makeinspires.com",
+  "phone": "914-861-2159",
+  "street_address": "75 S Greeley Ave",
+  "city": "Chappaqua",
+  "zip": "10514",
+  "camp_type": "specialty",
+  "primary_categories": [
+    "STEM"
+  ],
+  "secondary_categories": [
+    "technology"
+  ],
+  "activities": [
+    "minecraft",
+    "stop motion animation",
+    "engineering",
+    "rocketry",
+    "3d printing",
+    "robotics",
+    "video game design"
+  ],
+  "age_min": 5,
+  "age_max": 15,
+  "description_short": "Weekly STEAM camp at the MakeInspires makerspace in Chappaqua for ages 5 to 15, in groups of up to seven, with Minecraft, stop motion, engineering, rocketry, 3D printing, robotics and game design. Half day morning or afternoon, or full day 9:30 to 3:30.",
+  "price_per_week": 925,
+  "price_min": 540,
+  "price_max": 925,
+  "price_per": "week",
+  "fees": [
+    {
+      "name": "Catered lunch",
+      "amount": 50,
+      "per": "week",
+      "required": false,
+      "note": "Full day campers only, 12 to 1 pm"
+    }
+  ],
+  "season_year": 2027,
+  "notes": "2027 registration is open: half day morning (9:30 to 12) $540 a week, full day (9:30 to 3:30) $925 a week; an afternoon half day (1 to 3:30) is offered but its price is not printed. 20% off with a promo code until November 30, 2026. Sibling discounts 10% to 30%; campers aged 14 get 25% off and 15 get 50% off as CITs. Early drop off and extended day only on request with at least 2 students. Campers use the Bell Middle School playground at lunch on Monday, Wednesday and Friday.",
+  "sources": [
+    {
+      "url": "https://www.makeinspires.com/summer-chappaqua",
+      "checked": "2026-11-27",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "price_per_week",
+        "price_min",
+        "price_max",
+        "price_per",
+        "fees"
+      ],
+      "note": "Researched by Claude from this page. Chappaqua STEAM Summer Camp page under '2027 Registration': 12 weekly sessions 'Jun 15 to Sep 9', ages 5 to 15, half day AM $540/wk, full day $925/wk, catered lunch +$50/wk. Those dates do not start on a Monday in 2027 (or end on a Friday in either year), so no sessions are recorded."
+    }
+  ],
+  "state": "NY",
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.makeinspires.com/summer-chappaqua",
+      "kind": "html",
+      "title": "STEM SUMMER CHAPPAQUA | MakeInspires STEAM Makerspaces"
+    },
+    "warnings": [],
+    "unknowns": [
+      "2027 week dates",
+      "Afternoon half day price",
+      "ACA accreditation"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-27",
+      "page_checked": "https://www.makeinspires.com/summer-chappaqua",
+      "changes": [
+        "New camp, researched from https://www.makeinspires.com/summer-chappaqua"
+      ],
+      "for_andrew": [
+        "The page heads '2027 Registration' but its date range 'Jun 15 to Sep 9' fits neither 2027 nor 2026 weekdays. Draft keeps the 2027 prices and leaves out the dates. OK, or wait for the weeks?"
+      ]
+    }
+  }
+}

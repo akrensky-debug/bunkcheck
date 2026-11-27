@@ -1,0 +1,109 @@
+{
+  "slug": "plainfield-ymca-camp-rise-plainfield",
+  "name": "Plainfield YMCA Camp RISE",
+  "operator_name": "Greater Somerset County YMCA",
+  "website_url": "https://www.gscymca.org/child-care-camps/plainfield-camp/",
+  "registration_url": "https://operations.daxko.com/Online/5029/ProgramsV2/Search.mvc?category_ids=CAT1436",
+  "street_address": "Cedarbrook School, 1049 Central Avenue",
+  "city": "Plainfield",
+  "state": "NJ",
+  "zip": "07060",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "arts",
+    "sports",
+    "swimming",
+    "academic",
+    "leadership"
+  ],
+  "activities": [
+    "arts and crafts",
+    "sports",
+    "games",
+    "dance",
+    "weekly swim",
+    "theme days",
+    "academic enrichment"
+  ],
+  "grade_min": 0,
+  "grade_max": 11,
+  "age_min": 5,
+  "age_max": 17,
+  "description_short": "YMCA day camp at Cedarbrook School in Plainfield for campers entering kindergarten through grade 8, with arts, sports and games, a daily learning block, weekly swim at the Bridgewater YMCA pool, and a counselor in training program for grades 9 to 11. Lunch and snack are included.",
+  "indoor_outdoor": "both",
+  "meals_included": true,
+  "financial_aid": true,
+  "refund_policy_summary": "Full refund for cancellations before May 1, 2026; after that the Y keeps a $50 cancellation fee per week per child and refunds the rest. Documented medical reasons are the only exception.",
+  "swim_waterfront_notes": "Weekly swim time at the Bridgewater YMCA indoor pool, with transport to the Y on Fridays included; Kindercamp also gets weekly swim lessons and recreational swims at Plainfield outdoor pools.",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "2026 season (weekly enrollment, 8 weeks)",
+      "start_date": "2026-06-29",
+      "end_date": "2026-08-21",
+      "availability": "unknown"
+    }
+  ],
+  "notes": "Camp 8 am to 5 pm. Options: Kindercamp (entering K), All Day multi activity camp (K to 8), Summer Learning Academy wrap around camp (K to 8, June 29 to August 7, alongside the Plainfield district summer program), and a CIT program for grades 9 to 11 in four 2 week sessions. 4Cs subsidy accepted. Fees are charged 14 days before each session. Weekly rates are only in the Y's registration system and showed no 2026 or 2027 offerings when checked.",
+  "sources": [
+    {
+      "url": "https://www.gscymca.org/child-care-camps/plainfield-camp/",
+      "checked": "2026-11-27",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "age_min",
+        "age_max",
+        "description_short",
+        "indoor_outdoor",
+        "meals_included",
+        "financial_aid",
+        "refund_policy_summary",
+        "swim_waterfront_notes",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. 2026 camp page. Grades K to 11 as stated (CIT is grades 9 to 11); ages derived from grades"
+    }
+  ],
+  "review": {
+    "status": "ready",
+    "source": {
+      "url": "https://www.gscymca.org/child-care-camps/plainfield-camp/",
+      "kind": "html",
+      "title": "Plainfield YMCA Summer Day Camp RISE - Greater Somerset County YMCA"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Weekly price (not on the public page)",
+      "Before and after care",
+      "2027 dates"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-27",
+      "page_checked": "https://www.gscymca.org/child-care-camps/plainfield-camp/",
+      "changes": [
+        "New camp, researched from https://www.gscymca.org/child-care-camps/plainfield-camp/",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
+      ],
+      "for_andrew": []
+    }
+  }
+}

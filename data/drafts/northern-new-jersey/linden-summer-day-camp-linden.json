@@ -1,0 +1,98 @@
+{
+  "slug": "linden-summer-day-camp-linden",
+  "name": "Linden Summer Day Camp",
+  "operator_name": "City of Linden Department of Parks & Recreation",
+  "website_url": "https://linden-nj.gov/2026-linden-summer-day-camp-program/",
+  "city": "Linden",
+  "state": "NJ",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "grade_min": 0,
+  "grade_max": 8,
+  "age_min": 5,
+  "age_max": 14,
+  "description_short": "Seven week city day camp for Linden residents entering kindergarten through grade 8, held at city parks and schools by grade group, with a teen camp for grades 7 and 8. Families choose a package with or without five trips.",
+  "price_min": 500,
+  "price_max": 755,
+  "price_per": "summer",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Seven week camp",
+      "start_date": "2026-06-29",
+      "end_date": "2026-08-14",
+      "price": 500,
+      "availability": "unknown"
+    }
+  ],
+  "notes": "Open only to Linden residents. General camp 8 am to 5 pm; teen camp 9 am to 4 pm. Packages for the seven weeks: Standard $500 (no trips; trips can be paid separately), Silver $705 (five trips), Gold $755 (five trips with lunch on trips); payment plans available. Sites: Kiddie Camp (entering K) at School #4; Al Kalla Day Camp at School #10, Highland Ave, and McGillvary Day Camp at McGillvary Park (grades 1 and 2); Tremley Day Camp at Memorial Park, Tremley Point Rd (grades 3 and 4); McManus Day Camp at McManus Park (grades 5 and 6); Wilson Teen Camp at Wilson Park (grades 7 and 8). 2026 registration deadline was May 15. Ages derived from grades.",
+  "sources": [
+    {
+      "url": "https://linden-nj.gov/2026-linden-summer-day-camp-program/",
+      "checked": "2026-11-27",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "grade_min",
+        "grade_max",
+        "age_min",
+        "age_max",
+        "description_short"
+      ],
+      "note": "Researched by Claude from this page. City news post: 2026 camp for Linden residents entering K to 8, June 29 to August 14, 2026, general camp 8 to 5, teen camp 9 to 4. Ages derived from grades."
+    },
+    {
+      "url": "https://drive.google.com/file/d/1g2o7KAovbX31OZ_BC6pz7nXYsq5wtiAr/view?usp=sharing",
+      "checked": "2026-11-27",
+      "fields": [
+        "price_min",
+        "price_max",
+        "price_per",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. 2026 camp flyer linked from the city post: camp sites by grade, Standard $500, Silver $705 and Gold $755 packages for the seven week camp."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://linden-nj.gov/2026-linden-summer-day-camp-program/",
+      "kind": "html",
+      "title": "2026 Linden Summer Day Camp Program – City of Linden"
+    },
+    "warnings": [],
+    "unknowns": [
+      "street_address",
+      "zip",
+      "extended_care",
+      "transportation",
+      "meals_included",
+      "financial_aid"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "missing required zip"
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-27",
+      "page_checked": "https://linden-nj.gov/2026-linden-summer-day-camp-program/",
+      "changes": [
+        "New camp, researched from https://linden-nj.gov/2026-linden-summer-day-camp-program/",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
+      ],
+      "for_andrew": [
+        "Residents only: the city says participants must be Linden residents. I recorded the one posted price ($500 standard package for seven weeks) and said who can enroll. List it, or skip residents only camps?",
+        "No ZIP: the camp runs at six park and school sites and none has a street number, so the validator fails on zip. Pick one site for the listing, or leave it out?",
+        "The 2026 flyer is on Google Drive, which the repo fetcher can't read; it was downloaded with curl as BunkcheckBot. OK to source it that way?"
+      ]
+    }
+  }
+}

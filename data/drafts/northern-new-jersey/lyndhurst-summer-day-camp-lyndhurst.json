@@ -1,0 +1,109 @@
+{
+  "slug": "lyndhurst-summer-day-camp-lyndhurst",
+  "name": "Lyndhurst Summer Day Camp",
+  "operator_name": "Township of Lyndhurst, Lyndhurst Board of Education and AlphaBEST",
+  "website_url": "https://www.lyndhurstnj.org/pages/summer-camp-and-programs",
+  "street_address": "Roosevelt School",
+  "city": "Lyndhurst",
+  "state": "NJ",
+  "zip": "07071",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "sports",
+    "arts",
+    "STEM"
+  ],
+  "activities": [
+    "indoor and outdoor sports",
+    "crafts",
+    "stem projects",
+    "weekly themes",
+    "field trips"
+  ],
+  "grade_min": 0,
+  "grade_max": 5,
+  "age_min": 5,
+  "age_max": 11,
+  "description_short": "Six week day camp at Roosevelt School in Lyndhurst for children entering kindergarten through grade 5, run by the township and Board of Education with AlphaBEST: sports, crafts, STEM projects, weekly themes and field trips at no extra cost.",
+  "indoor_outdoor": "both",
+  "price_per_week": 205,
+  "price_min": 205,
+  "price_max": 205,
+  "price_per": "week",
+  "extended_care": true,
+  "financial_aid": true,
+  "season_year": 2026,
+  "notes": "8 am to 3 pm, extended care to 6 pm. Full six weeks or single weeks at $205 per week; discounts for siblings, active duty military families and families who qualify for free or reduced lunch or other subsidies. The letter gives no 2026 dates for this camp; the township's summer programs ran June 22 to August 21, 2026. The same page lists separate sports, theater and arts programs run by outside providers, not included here.",
+  "sources": [
+    {
+      "url": "https://www.lyndhurstnj.org/pages/summer-camp-and-programs",
+      "checked": "2026-11-27",
+      "fields": [
+        "name",
+        "website_url"
+      ],
+      "note": "Researched by Claude from this page. Township summer camp and programs page for 2026"
+    },
+    {
+      "url": "https://www.lyndhurstnj.org/_Content/pdf/2026-Summer-Camp-Letter.pdf",
+      "checked": "2026-11-27",
+      "fields": [
+        "operator_name",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "age_min",
+        "age_max",
+        "description_short",
+        "indoor_outdoor",
+        "price_per_week",
+        "price_min",
+        "price_max",
+        "price_per",
+        "extended_care",
+        "financial_aid"
+      ],
+      "note": "Researched by Claude from this page. 2026 Summer Camp Letter (PDF) from the township, Board of Education and AlphaBEST. Ages derived from grades K to 5. ZIP is from the letterhead (Parks office, 250 Cleveland Avenue, Lyndhurst, NJ 07071); Roosevelt School has no street address in the letter"
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.lyndhurstnj.org/pages/summer-camp-and-programs",
+      "kind": "html",
+      "title": "The Official Website of The Township of Lyndhurst, NJ - Summer Camp & Programs"
+    },
+    "warnings": [],
+    "unknowns": [
+      "2026 start and end dates",
+      "Street address of Roosevelt School",
+      "Residency rule",
+      "Lunch"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-27",
+      "page_checked": "https://www.lyndhurstnj.org/pages/summer-camp-and-programs",
+      "changes": [
+        "New camp, researched from https://www.lyndhurstnj.org/pages/summer-camp-and-programs",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
+      ],
+      "for_andrew": [
+        "No dates for this camp: the letter says six weeks but not which. List it without sessions?",
+        "The Lyndhurst page also lists about a dozen short programs run by outside providers (baseball, soccer, basketball, cheer, volleyball, theater, Wonder Girls, USA Sports). Each has its own dates, ages and site, but the only source is the township's summary PDF, not each provider's own page, so I did not draft them. Want them researched from the providers' sites?"
+      ]
+    }
+  }
+}

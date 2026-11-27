@@ -1,0 +1,167 @@
+{
+  "slug": "camp-valley-forge-valley-forge",
+  "name": "Camp Valley Forge",
+  "operator_name": "Girl Scouts of Eastern Pennsylvania",
+  "website_url": "https://www.gsep.org/en/members/for-girl-scouts/camp-and-outdoors/our-camp-locations/camp-valley-forge.html",
+  "email": "memberservices@gsep.org",
+  "street_address": "100 Juliette Low Way",
+  "city": "Valley Forge",
+  "state": "PA",
+  "zip": "19482",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "swimming",
+    "STEM",
+    "arts",
+    "outdoor"
+  ],
+  "activities": [
+    "archery",
+    "arts and crafts",
+    "swimming",
+    "low ropes",
+    "hiking",
+    "inflatable planetarium",
+    "gaga",
+    "cooking",
+    "girl scout history museum",
+    "stem activities",
+    "theme weeks"
+  ],
+  "gender_policy": "girls",
+  "grade_min": 1,
+  "grade_max": 12,
+  "age_min": 6,
+  "age_max": 18,
+  "description_short": "Girl Scout day camp at GSEP's Valley Forge program center beside Valley Forge National Park, for girls entering grades 1 to 12. Traditional camp activities like the pool, archery and gaga mix with theme weeks in STEM, art and cooking, weekly visits to the Girl Scout history museum, and optional one night sleepovers.",
+  "indoor_outdoor": "both",
+  "extended_care": true,
+  "financial_aid": true,
+  "fees": [
+    {
+      "name": "Girl Scout membership",
+      "amount": 45,
+      "per": "year",
+      "required": true,
+      "source_url": "https://www.gsep.org/en/members/for-girl-scouts/camp-and-outdoors/camp-fa-application.html",
+      "note": "Campers must be registered GSEP Girl Scouts; unregistered campers pay $45 at drop off. GSEP's financial aid page says the 2027 member year (October 2026 to September 2027) costs $25 per girl."
+    },
+    {
+      "name": "Early care (7:30 to 8:30 AM)",
+      "amount": 60,
+      "per": "session",
+      "required": false,
+      "note": "Early plus extended care together is $130."
+    },
+    {
+      "name": "Extended care (4:30 to 6 PM)",
+      "amount": 70,
+      "per": "session",
+      "required": false
+    },
+    {
+      "name": "Sleepover (July 9 or July 30)",
+      "amount": 60,
+      "per": "session",
+      "required": false
+    },
+    {
+      "name": "Nightlights evening program (July 9 or July 30)",
+      "amount": 40,
+      "per": "session",
+      "required": false
+    }
+  ],
+  "swim_waterfront_notes": "Every camper takes a swim check on the first day; all swim, but some stay in the shallow end.",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Day camp (8 weeks, 9 AM to 4 PM)",
+      "start_date": "2026-06-22",
+      "end_date": "2026-08-14",
+      "availability": "unknown"
+    }
+  ],
+  "notes": "Drop off 8:30 to 9, pick up 4 to 4:30. Care prices are printed per session without saying per week; read as per camp week. Weekly tuition is set per program in the GSEP camp guide and event calendar, which were not posted when checked. Non members buy a membership to register.",
+  "sources": [
+    {
+      "url": "https://www.gsep.org/en/members/for-girl-scouts/camp-and-outdoors/our-camp-locations/camp-valley-forge.html",
+      "checked": "2026-11-27",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "gender_policy",
+        "grade_min",
+        "grade_max",
+        "age_min",
+        "age_max",
+        "description_short",
+        "indoor_outdoor",
+        "extended_care",
+        "fees",
+        "swim_waterfront_notes",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. 8 weeks June 22 to August 14 (2026: the camp director joins in 2026 and the page refers to the 2026 camp guide). Rising grades 1 to 12; ages derived, not stated. Care, sleepover and Nightlights prices from the camp hours section."
+    },
+    {
+      "url": "https://www.gsep.org/en/discover/our-council/contact.html",
+      "checked": "2026-11-27",
+      "fields": [
+        "street_address",
+        "city",
+        "state",
+        "zip"
+      ],
+      "note": "Researched by Claude from this page. GSEP contact page: Service Center, Valley Forge, 100 Juliette Low Way, Valley Forge, PA 19482."
+    },
+    {
+      "url": "https://www.gsep.org/en/members/for-girl-scouts/camp-and-outdoors/camp-fa-application.html",
+      "checked": "2026-11-27",
+      "fields": [
+        "financial_aid"
+      ],
+      "note": "Researched by Claude from this page. Camp Financial Aid Application: aid for GSEP members covers 50% of one camp session; $50 deposit secures a camp space; $45 membership fee for unregistered campers."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.gsep.org/en/members/for-girl-scouts/camp-and-outdoors/our-camp-locations/camp-valley-forge.html",
+      "kind": "html",
+      "title": "Camp Valley Forge"
+    },
+    "warnings": [
+      "Valley Forge, PA is not in cities.py yet; add it from the Census gazetteer."
+    ],
+    "unknowns": [
+      "Weekly tuition",
+      "2027 dates",
+      "Lunch",
+      "Transportation",
+      "ACA accreditation"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-27",
+      "page_checked": "https://www.gsep.org/en/members/for-girl-scouts/camp-and-outdoors/our-camp-locations/camp-valley-forge.html",
+      "changes": [
+        "New camp, researched from https://www.gsep.org/en/members/for-girl-scouts/camp-and-outdoors/our-camp-locations/camp-valley-forge.html"
+      ],
+      "for_andrew": [
+        "Valley Forge is a postal town the Census doesn't list, and its geocoder found no match for 100 Juliette Low Way, so the township is unknown. Which township should it be filed under?"
+      ]
+    }
+  }
+}

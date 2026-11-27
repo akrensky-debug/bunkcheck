@@ -1,0 +1,138 @@
+{
+  "slug": "new-discoveries-day-camp-east-orange",
+  "name": "New Discoveries Day Camp",
+  "operator_name": "Metropolitan YMCA of the Oranges",
+  "website_url": "https://metroymcas.org/eoy-summer-camp",
+  "registration_url": "https://ymcaoranges.sgasoftware.com/Sales/Product?ProductTypeID=100-999&DT=List&SearchText=2027%20East%20Orange%20YMCA%20-%20New%20Discoveries%20Day%20Camp",
+  "phone": "973-758-9039",
+  "street_address": "East Orange YMCA Turrell Gymnasium and Program Center, 159 North Munn Avenue",
+  "city": "East Orange",
+  "state": "NJ",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "swimming",
+    "arts"
+  ],
+  "activities": [
+    "swimming",
+    "team challenges",
+    "theme days",
+    "musical instrument class",
+    "financial literacy",
+    "tumbling club",
+    "field trips"
+  ],
+  "age_min": 6,
+  "age_max": 13,
+  "description_short": "YMCA day camp at the East Orange YMCA Turrell Gymnasium and Program Center for ages 6 to 13, with weekly themes, team challenges, swimming twice a week and included field trips. New for 2027 are a musical instrument class, financial literacy and a tumbling club. Breakfast, lunch and an afternoon snack are served daily.",
+  "indoor_outdoor": "both",
+  "price_min": 262.5,
+  "price_max": 262.5,
+  "price_per": "session",
+  "fees": [
+    {
+      "name": "Extra camp t-shirt",
+      "amount": 10,
+      "per": "once",
+      "required": false,
+      "note": "One shirt is included; extras are $10 each"
+    }
+  ],
+  "meals_included": true,
+  "financial_aid": true,
+  "refund_policy_summary": "Changes are free through January 31, 2027. Full refund for cancellations by April 1, 2027; from April 2 all payments, including deposits, are forfeited, and there are no credits for absence or illness. Changes through the Welcome Center or after April 2 cost $35 per child per request. The East Orange YMCA registration fee is non-refundable.",
+  "swim_waterfront_notes": "Swims twice a week in the East Orange YMCA indoor heated pool.",
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Summer 2027 (sessions sold separately)",
+      "start_date": "2027-06-21",
+      "end_date": "2027-08-20",
+      "price": null,
+      "availability": "unknown"
+    }
+  ],
+  "notes": "Community (non-member) rate is $262.50 per session ($249 early bird, December 1, 2026 to January 31, 2027). Y members pay $250 ($237 early bird); membership must be bought by April 30 and kept through camp. A non-refundable 5% down payment ($12.50 per session) is due at registration and counts toward the fee. Camp runs Monday to Friday 8 a.m. to 6 p.m. Field trips are free unless noted. Program for Parents accepted. Y for All financial assistance available.",
+  "sources": [
+    {
+      "url": "https://metroymcas.org/eoy-summer-camp",
+      "checked": "2026-11-27",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "indoor_outdoor",
+        "price_min",
+        "price_max",
+        "price_per",
+        "fees",
+        "meals_included",
+        "financial_aid",
+        "swim_waterfront_notes",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. 2027 New Discoveries at the Turrell Gymnasium and Program Center, ages 6 to 13, June 21 to August 20, Monday to Friday 8 a.m. to 6 p.m. Community rate $262.50 per session, member $250. Swim 2x per week."
+    },
+    {
+      "url": "https://metroymcas.org/hubfs/Summer%20Camp/2027%20Metro%20Y%20Camp%20Registration%20and%20Payment%20Policy%20updated%2011.26.26.pdf?hsLang=en",
+      "checked": "2026-11-27",
+      "fields": [
+        "refund_policy_summary"
+      ],
+      "note": "Researched by Claude from this page. 2027 Metro YMCA Camp Registration and Payment Policy, updated 11/26/26."
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=159+North+Munn+Avenue%2C+East+Orange%2C+NJ&benchmark=Public_AR_Current&format=json",
+      "checked": "2026-11-27",
+      "fields": [
+        "zip"
+      ],
+      "note": "ZIP looked up with the Census Bureau geocoder from the address on the camp's page (159 N MUNN AVE, EAST ORANGE, NJ, 07017)"
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://metroymcas.org/eoy-summer-camp",
+      "kind": "html",
+      "title": "EOY Summer Camp"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Whether a 'session' is one week (the page prices camp per session; the payment policy lists weekly camp dates)",
+      "Amount of the East Orange YMCA registration fee (named in the payment policy, amount not printed)",
+      "Before and after care"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-27",
+      "page_checked": "https://metroymcas.org/eoy-summer-camp",
+      "changes": [
+        "New camp, researched from https://metroymcas.org/eoy-summer-camp",
+        "ZIP 07017 looked up from the camp's street address with the Census geocoder (ZIP lookups allowed by Andrew, 22 November).",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
+      ],
+      "for_andrew": [
+        "Same 'per session' question as the preschool camp: confirm a session is one week?"
+      ]
+    }
+  },
+  "zip": "07017"
+}

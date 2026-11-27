@@ -1,0 +1,112 @@
+{
+  "slug": "linden-special-needs-day-camp-linden",
+  "name": "Linden Special Needs Day Camp",
+  "operator_name": "City of Linden Department of Parks and Recreation",
+  "website_url": "https://linden-nj.gov/2026-linden-special-needs-day-camp/",
+  "city": "Linden",
+  "state": "NJ",
+  "zip": "07036",
+  "camp_type": "day",
+  "primary_categories": [
+    "special_needs"
+  ],
+  "secondary_categories": [
+    "general",
+    "arts"
+  ],
+  "activities": [
+    "arts and crafts",
+    "field trips",
+    "special guests",
+    "talent show"
+  ],
+  "grade_min": 0,
+  "grade_max": 6,
+  "age_min": 5,
+  "age_max": 12,
+  "description_short": "Seven week city day camp for Linden children with special needs entering kindergarten through grade 6, held at McGillvray Park in the 8th Ward with weekly arts and crafts, visiting guests, optional trips and an end of summer talent show. Only Linden residents can register.",
+  "indoor_outdoor": "both",
+  "price_min": 500,
+  "price_max": 755,
+  "price_per": "summer",
+  "special_needs_notes": "Camp for children with special needs. An IEP must be submitted at registration and campers must be toilet trained; acceptance depends on whether the program can meet the camper's needs and on space.",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "2026 season (7 weeks)",
+      "start_date": "2026-06-29",
+      "end_date": "2026-08-14",
+      "price": 500,
+      "availability": "unknown"
+    }
+  ],
+  "notes": "Linden residents only (proof of residency required). Monday to Friday 8 am to 5 pm. Three packages for the 7 weeks: Standard $500 (no trips; trips can be bought one at a time), Silver $705 (5 trips, no trip lunch), Gold $755 (5 trips with lunch on trips). Trips are optional and camp is closed on trip days for campers not attending. Rain site: 8th Ward Park Recreation Building. Registration deadline May 15, 2026.",
+  "sources": [
+    {
+      "url": "https://linden-nj.gov/2026-linden-special-needs-day-camp/",
+      "checked": "2026-11-27",
+      "fields": [
+        "name",
+        "website_url",
+        "camp_type",
+        "grade_min",
+        "grade_max",
+        "age_min",
+        "age_max",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. City news post for the 2026 camp: K to 6, June 29 to August 14, 2026, 8 am to 5 pm, McGillvray Park. Ages derived from grades K to 6"
+    },
+    {
+      "url": "https://drive.google.com/file/d/16AilpYnUbF3Q72UHto2EQ_pP9dAcqZtk/view?usp=sharing",
+      "checked": "2026-11-27",
+      "fields": [
+        "operator_name",
+        "city",
+        "state",
+        "zip",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "description_short",
+        "indoor_outdoor",
+        "price_min",
+        "price_max",
+        "price_per",
+        "special_needs_notes"
+      ],
+      "note": "Researched by Claude from this page. 2026 flyer image linked from the city page. Package prices and residency rule. ZIP is the one the flyer prints for the John T. Gregorio Center, 330 Helen St, Linden; the camp site at McGillvray Park has no street number"
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://linden-nj.gov/2026-linden-special-needs-day-camp/",
+      "kind": "html",
+      "title": "2026 Linden Special Needs Day Camp – City of Linden"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Street address of McGillvray Park",
+      "Prices of single trips (in two separate trip flyers)",
+      "Lunch on camp days",
+      "Financial aid"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-27",
+      "page_checked": "https://linden-nj.gov/2026-linden-special-needs-day-camp/",
+      "changes": [
+        "New camp, researched from https://linden-nj.gov/2026-linden-special-needs-day-camp/",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
+      ],
+      "for_andrew": [
+        "Residents only: the flyer requires proof of Linden residency, so the $500 Standard package is the only rate and only Linden families can enroll. List it anyway?",
+        "The flyer is a JPG on Google Drive, read as an image; the source URL is the Drive link from the city page.",
+        "Read from the camp's JPG flyer, downloaded with curl as BunkcheckBot because the repo fetcher doesn't read images. OK to source it that way?"
+      ]
+    }
+  }
+}

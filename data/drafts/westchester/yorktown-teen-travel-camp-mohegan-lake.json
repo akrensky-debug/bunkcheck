@@ -1,0 +1,129 @@
+{
+  "slug": "yorktown-teen-travel-camp-mohegan-lake",
+  "name": "Yorktown Teen Travel Camp",
+  "operator_name": "Yorktown Parks & Recreation",
+  "website_url": "https://www.yorktownny.gov/media/dbanymjc/2026-camper-registration-forms.pdf",
+  "registration_url": "https://register.capturepoint.com/Yorktown",
+  "phone": "914-245-4650",
+  "street_address": "3634 Lexington Ave",
+  "city": "Yorktown",
+  "zip": "10547",
+  "camp_type": "day",
+  "primary_categories": [
+    "adventure"
+  ],
+  "secondary_categories": [
+    "swimming"
+  ],
+  "activities": [
+    "amusement park trips",
+    "water trips"
+  ],
+  "grade_min": 6,
+  "grade_max": 9,
+  "age_min": 11,
+  "age_max": 15,
+  "description_short": "Town travel camp for students in grades 6 to 9 that meets Monday to Thursday at George Washington Elementary School in Mohegan Lake and takes daily trips to amusement and entertainment spots such as Lake Compounce, Dorney Park, Six Flags and an adventure park. Admission and transportation are included.",
+  "transportation": true,
+  "swim_waterfront_notes": "Every camper must pass a swim test at Shrub Oak Pool before camp (June 19, 20 or 27, 2026); some trips are water trips.",
+  "price_min": 1055,
+  "price_max": 1945,
+  "price_per": "session",
+  "refund_policy_summary": "Refund requests by June 1 get 90% of the fee; none after June 2. A $20 processing fee applies to approved refunds and $10 to credits.",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Full Session",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-30",
+      "availability": "unknown",
+      "price": 1945
+    },
+    {
+      "name": "Session 1",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-16",
+      "availability": "unknown",
+      "price": 1055
+    },
+    {
+      "name": "Session 2",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-30",
+      "availability": "unknown",
+      "price": 1055
+    }
+  ],
+  "notes": "Listed 2026 fees: full four week session $1,945, each two week session $1,055, including admissions and transportation. Monday to Thursday, 8:45 am to 3:00 pm, trip times vary. Town and school district residents registered from March 17, 2026; non-residents could register from April 21 if room remained, with a 20% surcharge on listed fees (no non-resident amount is printed). The town says 2027 information comes in January 2027. The Yorktown full day camp is a separate listing.",
+  "sources": [
+    {
+      "url": "https://media-002-us.cdn.govstack.com/yorktownny-us/media/yxdkb3tx/yorktown-pr-sprsum26-brochure-march-4.pdf",
+      "checked": "2026-11-27",
+      "fields": [
+        "name",
+        "operator_name",
+        "registration_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "age_min",
+        "age_max",
+        "description_short",
+        "transportation",
+        "swim_waterfront_notes",
+        "price_min",
+        "price_max",
+        "price_per",
+        "refund_policy_summary",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Spring and Summer 2026 brochure, Summer Day Camp Information pages: Travel Camp for grades 6 to 9 at George Washington Elementary School, 3634 Lexington Ave, Mohegan Lake, NY 10547; Monday to Thursday 8:45 to 3:00; full session July 6 to 30 $1,945, Session 1 July 6 to 16 and Session 2 July 20 to 30 at $1,055; fee includes admissions and transportation; swim test dates; travel camp refund policy. Listed (resident) fees used; non-residents pay a 20% surcharge that the brochure does not print as an amount. Ages derived from grades."
+    },
+    {
+      "url": "https://www.yorktownny.gov/media/dbanymjc/2026-camper-registration-forms.pdf",
+      "checked": "2026-11-27",
+      "fields": [
+        "website_url"
+      ],
+      "note": "Researched by Claude from this page. 2026 Day Camp registration form: Travel Camp #805 A to C with the same session dates, times vary by trip, location George Washington School, 3634 Lexington Ave; off site permission slip for Teen Travel trips."
+    }
+  ],
+  "state": "NY",
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.yorktownny.gov/media/dbanymjc/2026-camper-registration-forms.pdf",
+      "kind": "pdf",
+      "title": "Yorktown Parks and Recreation 2026 Day Camp Registration Forms"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Non-resident price as an amount",
+      "Lunch",
+      "2027 dates and fees",
+      "ACA accreditation"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-27",
+      "page_checked": "https://www.yorktownny.gov/media/dbanymjc/2026-camper-registration-forms.pdf",
+      "changes": [
+        "New camp, researched from https://www.yorktownny.gov/media/dbanymjc/2026-camper-registration-forms.pdf",
+        "City set to Yorktown town, the Census county subdivision for this address; Mohegan Lake is its postal town."
+      ],
+      "for_andrew": [
+        "Non-residents can join only if room remains, at listed fees plus 20%; the brochure prints no non-resident amount, so the draft shows the listed (resident) fees. Under the 22 November rule the non-resident rate should show; compute 120% or keep as is?"
+      ]
+    }
+  }
+}

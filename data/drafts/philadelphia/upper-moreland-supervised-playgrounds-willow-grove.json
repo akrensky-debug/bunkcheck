@@ -1,0 +1,154 @@
+{
+  "slug": "upper-moreland-supervised-playgrounds-willow-grove",
+  "name": "Upper Moreland Supervised Playgrounds",
+  "operator_name": "Upper Moreland Township Department of Parks and Recreation",
+  "website_url": "https://uppermorelandpa.myrec.com/documents/26_sup_parent_policy_updated_6_9_26.pdf",
+  "registration_url": "https://www.uppermorelandrec.com",
+  "email": "jhartigan@uppermoreland.org",
+  "phone": "215-659-3100 x1039",
+  "street_address": "Upper Moreland Intermediate and Middle School grounds",
+  "city": "Willow Grove",
+  "state": "PA",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "sports",
+    "arts",
+    "swimming"
+  ],
+  "activities": [
+    "sports",
+    "games",
+    "arts and crafts",
+    "special events",
+    "local trips",
+    "swimming",
+    "magic shows",
+    "inflatables"
+  ],
+  "grade_min": 1,
+  "grade_max": 8,
+  "age_min": 6,
+  "age_max": 14,
+  "description_short": "Township summer playground program for Upper Moreland residents entering grades 1 to 8, held at the Upper Moreland Intermediate School (grades 1 to 3) and Middle School (grades 4 to 8). Days mix sports, games, arts and crafts, on site shows and local trips, with optional swimming at the Middle School pool. Open to township residents only.",
+  "indoor_outdoor": "both",
+  "price_min": 800,
+  "price_max": 1500,
+  "price_per": "session",
+  "fees": [
+    {
+      "name": "Extended supervision",
+      "amount": 150,
+      "per": "summer",
+      "required": false,
+      "note": "Before care 7:30 to 8:30 a.m. or after care 4:30 to 5:30 p.m. for the 8 week session; $75 for either for a 4 week session. Held at the UM Primary School."
+    },
+    {
+      "name": "Extra program t-shirt",
+      "amount": 10,
+      "per": "once",
+      "required": false,
+      "note": "One shirt is included"
+    }
+  ],
+  "extended_care": true,
+  "transportation": false,
+  "meals_included": false,
+  "refund_policy_summary": "Full refund through June 5 on return of the t-shirt and bag; during the first week of enrollment, the amount paid minus a prorated daily rate. Fees are not prorated for attendance. Online and in office card payments carry a 2.99% processing fee.",
+  "swim_waterfront_notes": "Optional swimming at the UM Middle School pool on Monday or Friday mornings; deep end swimmers must pass a lifeguard swim test.",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Full 8 weeks (no program June 19 and July 3; August 7 ends at noon)",
+      "start_date": "2026-06-15",
+      "end_date": "2026-08-07",
+      "price": 1500,
+      "availability": "unknown"
+    },
+    {
+      "name": "First 4 weeks",
+      "start_date": "2026-06-15",
+      "end_date": "2026-07-10",
+      "price": 800,
+      "availability": "unknown"
+    },
+    {
+      "name": "Last 4 weeks",
+      "start_date": "2026-07-13",
+      "end_date": "2026-08-07",
+      "price": 800,
+      "availability": "unknown"
+    }
+  ],
+  "notes": "Open only to Upper Moreland Township residents entering grades 1 to 8; there is no nonresident rate. $1,500 for 8 weeks or $800 for either 4 week half, 8:30 a.m. to 4:30 p.m. Sibling discount $50 (8 weeks) or $20 (4 weeks). A deposit of $500 (8 weeks) or $300 (4 weeks) per child is due at registration and counts toward the fee. All trip admissions and on site activities are included; some trips include lunch. Families drop off and pick up at the site; the township buses campers only to trips.",
+  "sources": [
+    {
+      "url": "https://uppermorelandpa.myrec.com/documents/26_sup_parent_policy_updated_6_9_26.pdf",
+      "checked": "2026-11-27",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "age_min",
+        "age_max",
+        "description_short",
+        "indoor_outdoor",
+        "price_min",
+        "price_max",
+        "price_per",
+        "fees",
+        "extended_care",
+        "transportation",
+        "meals_included",
+        "refund_policy_summary",
+        "swim_waterfront_notes",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. 2026 Supervised Playgrounds parent information packet, updated 6/9/2026, on the township's recreation site. Residents entering grades 1 to 8; ages derived from grades, not stated. Department office 117 Park Avenue, Willow Grove; the school sites' street addresses are not given."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://uppermorelandpa.myrec.com/documents/26_sup_parent_policy_updated_6_9_26.pdf",
+      "kind": "pdf",
+      "title": "2026 Supervised Playgrounds Parent Information Packet"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Street address and ZIP of the playground sites",
+      "2027 dates and fees"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "missing required zip"
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-27",
+      "page_checked": "https://uppermorelandpa.myrec.com/documents/26_sup_parent_policy_updated_6_9_26.pdf",
+      "changes": [
+        "New camp, researched from https://uppermorelandpa.myrec.com/documents/26_sup_parent_policy_updated_6_9_26.pdf",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
+      ],
+      "for_andrew": [
+        "Residents only: open to Upper Moreland Township residents. Recorded the one posted rate. List it?",
+        "The packet names the Intermediate and Middle School grounds but no street address, so there is no ZIP."
+      ]
+    }
+  }
+}
