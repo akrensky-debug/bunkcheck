@@ -73,10 +73,9 @@
         "price_per",
         "fees",
         "meals_included",
-        "sessions",
-        "zip"
+        "sessions"
       ],
-      "note": "Researched by Claude from this page. Camp page; it prints no year. Dates June 29 to August 7 with no camp Friday July 3. ZIP 07452 is not printed on the page; the page gives the Recreation office as 1 Harding Plaza, Glen Rock, and Wilde Memorial Park has no street address"
+      "note": "Researched by Claude from this page. Camp page; it prints no year. Dates June 29 to August 7 with no camp Friday July 3"
     },
     {
       "url": "https://glenrocknj.activityreg.com/selectactivity_t2.wcs",
@@ -85,6 +84,14 @@
         "registration_url"
       ],
       "note": "Researched by Claude from this page. Glen Rock's registration site, linked from the camp page, lists the program as 2026 Shack Summer Camp (weekly and full camp), which sets the season year"
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1+Harding+Plaza%2C+Glen+Rock%2C+NJ&benchmark=Public_AR_Current&format=json",
+      "checked": "2026-11-27",
+      "fields": [
+        "zip"
+      ],
+      "note": "ZIP looked up with the Census Bureau geocoder from the address on the camp's page (1 HARDING PLZ, GLEN ROCK, NJ, 07452). The address is the Glen Rock Recreation office printed on the camp page; the camp site, Wilde Memorial Park, has no street address there"
     }
   ],
   "review": {
@@ -105,7 +112,8 @@
       "date": "2026-11-27",
       "page_checked": "https://recreation.glenrocknj.net/programs/the-shack-summer-camp",
       "changes": [
-        "New camp, researched from https://recreation.glenrocknj.net/programs/the-shack-summer-camp"
+        "New camp, researched from https://recreation.glenrocknj.net/programs/the-shack-summer-camp",
+        "ZIP 07452 looked up from the camp's street address with the Census geocoder (ZIP lookups allowed by Andrew, 22 November)."
       ],
       "for_andrew": [
         "Residents only: the page says camp is open to residents ages 7 to 14, so $75 a week is the one rate. List it anyway?",
