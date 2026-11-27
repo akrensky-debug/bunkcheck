@@ -1,0 +1,91 @@
+{
+  "slug": "camp-meadowbrook-meadowbrook",
+  "name": "Camp Meadowbrook",
+  "operator_name": "The Meadowbrook School",
+  "website_url": "https://themeadowbrookschool.org/camp-meadowbrook",
+  "email": "summercamps@themeadowbrookschool.org",
+  "phone": "215-884-3238",
+  "street_address": "1641 Hampton Rd",
+  "city": "Meadowbrook",
+  "state": "PA",
+  "zip": "19046",
+  "camp_type": "day",
+  "primary_categories": [
+    "academic",
+    "general"
+  ],
+  "age_min": 3,
+  "age_max": 12,
+  "description_short": "Weekly summer programs on The Meadowbrook School campus for children 3 to 12, each built around age appropriate, academically based activities. Little Adventurers serves the youngest campers and specialty camps run by the week.",
+  "price_min": 375,
+  "price_max": 495,
+  "price_per": "week",
+  "extended_care": false,
+  "financial_aid": true,
+  "refund_policy_summary": "90% refund until March 15 and 40% until April 15, each less a 10% processing fee, for accounts paid in full; deposits are non-refundable.",
+  "season_year": 2026,
+  "notes": "2026: programs ran June 8 to August 14. Most programs $375 to $495 a week; Little Adventurers needs at least 2 weeks. Early bird discounts in December and up to 10% sibling discount. Campers must be potty trained. Optional lunch program (price not posted) or bring lunch; bring a snack. No extended care in summer 2026. Financial aid awards up to $1,000, apply by April 15. Registration opens December 1. The FAQ gives ZIP 19001; the school's page and the Census geocoder give 19046.",
+  "sources": [
+    {
+      "url": "https://themeadowbrookschool.org/camp-meadowbrook",
+      "checked": "2026-11-27",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "description_short",
+        "financial_aid"
+      ],
+      "note": "Researched by Claude from this page. Camp Meadowbrook page: Summer Camp 2026, academically based programs, financial aid available, school address."
+    },
+    {
+      "url": "https://themeadowbrookschool.org/__l5e/assets-v1/f907aa06-8b33-4b61-a4b7-1abd807fc158/camp-faqs.pdf",
+      "checked": "2026-11-27",
+      "fields": [
+        "age_min",
+        "age_max",
+        "price_min",
+        "price_max",
+        "price_per",
+        "extended_care",
+        "refund_policy_summary"
+      ],
+      "note": "Researched by Claude from this page. Camp FAQ PDF: 2026 dates June 8 to August 14, ages 3 to 12, most programs $375 to $495 a week, no extended care for summer 2026, lunch program, refund policy."
+    }
+  ],
+  "review": {
+    "status": "ready",
+    "source": {
+      "url": "https://themeadowbrookschool.org/camp-meadowbrook",
+      "kind": "html",
+      "title": "Summer at Meadowbrook | Camp Meadowbrook | The Meadowbrook School"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Program list and weekly dates",
+      "2027 dates and prices",
+      "Lunch program price"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "city 'Meadowbrook', PA is not in cities.py"
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-27",
+      "page_checked": "https://themeadowbrookschool.org/camp-meadowbrook",
+      "changes": [
+        "New camp, researched from https://themeadowbrookschool.org/camp-meadowbrook"
+      ],
+      "for_andrew": []
+    }
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "slug": "steve-and-kates-camp-at-dvfriends-paoli",
+  "name": "Steve & Kate's Camp at DVFriends",
+  "operator_name": "Steve & Kate's Camp",
+  "website_url": "https://www.dvfriends.org/apps/pages/summer",
+  "registration_url": "https://steveandkatescamp.com/paoli/",
+  "street_address": "Delaware Valley Friends School, 19 E Central Avenue",
+  "city": "Paoli",
+  "state": "PA",
+  "zip": "19301",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "arts",
+    "STEM"
+  ],
+  "activities": [
+    "designing",
+    "building",
+    "creating",
+    "playing"
+  ],
+  "age_min": 5,
+  "age_max": 13,
+  "description_short": "Day camp run by Steve & Kate's on the Delaware Valley Friends School campus in Paoli for ages 5 to 13, where campers choose their own activities and plan their days. Families buy day passes, with long hours and lunch and snacks included.",
+  "price_min": 118,
+  "price_max": 118,
+  "price_per": "day",
+  "extended_care": true,
+  "meals_included": true,
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Summer 2026 (day passes)",
+      "start_date": "2026-06-15",
+      "end_date": "2026-08-21",
+      "price": 118,
+      "availability": "unknown"
+    }
+  ],
+  "notes": "2026: June 15 to August 21, no camp June 19 or July 3, 8 am to 6 pm. Day pass $118 per child per day including lunch and snacks; attend by the day, week or summer with no advance reservation. Students in the DVFriends summer academic program get $30 a day off. The source is the school's summer page, which hosts the camp; steveandkatescamp.com refuses the fetcher and was not read.",
+  "sources": [
+    {
+      "url": "https://www.dvfriends.org/apps/pages/summer",
+      "checked": "2026-11-27",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "price_min",
+        "price_max",
+        "price_per",
+        "extended_care",
+        "meals_included",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. DVFriends Summer Programs page, Option 2: Steve & Kate's Camp at DVFriends, ages 5 to 13, June 15 to August 21, 2026, 8 am to 6 pm, $118 a day with lunch and snacks; campus address in the page footer."
+    }
+  ],
+  "review": {
+    "status": "ready",
+    "source": {
+      "url": "https://www.dvfriends.org/apps/pages/summer",
+      "kind": "html",
+      "title": "Summer Program - Delaware Valley Friends School"
+    },
+    "warnings": [],
+    "unknowns": [
+      "2027 dates and price",
+      "Financial aid"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "city 'Paoli', PA is not in cities.py"
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-27",
+      "page_checked": "https://www.dvfriends.org/apps/pages/summer",
+      "changes": [
+        "New camp, researched from https://www.dvfriends.org/apps/pages/summer",
+        "extended_care set true because the 8 am to 6 pm day is offered as extended hours for working parents."
+      ],
+      "for_andrew": []
+    }
+  }
+}
