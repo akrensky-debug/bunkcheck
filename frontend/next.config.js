@@ -6,6 +6,14 @@
 const API_URL = process.env.NEXT_PUBLIC_API_URL
   || (process.env.VERCEL ? 'https://api-production-4a03.up.railway.app' : 'http://localhost:8000')
 const MCP_UPSTREAM = API_URL
+const { scriptPolicy } = require('./csp')
+const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://cdzzmyambonhkhsoltfw.supabase.co'
+const SCRIPT_POLICY = scriptPolicy({
+  apiUrl: API_URL,
+  supabaseUrl: SUPABASE_URL,
+  preview: process.env.VERCEL_ENV === 'preview',
+  dev: process.env.NODE_ENV === 'development',
+})
 
 // docs/security.md, open gap 1. frame-ancestors is the only CSP directive on purpose: it stops
 // another site putting our pages in a frame (clickjacking the share, join and confirm pages) and
@@ -16,6 +24,10 @@ const SITE_HEADERS = [
   { key: 'X-Frame-Options', value: 'DENY' },
   { key: 'X-Content-Type-Options', value: 'nosniff' },
   { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
+  // The script policy, reporting only (csp.js). frame-ancestors stays in the enforced header above,
+  // because browsers ignore it in a report-only policy.
+  { key: 'Content-Security-Policy-Report-Only', value: SCRIPT_POLICY },
+  { key: 'Reporting-Endpoints', value: 'csp="/csp-report"' },
 ]
 
 // Pages whose address holds a private token. Keep the token out of the Referer header a link on
@@ -55,6 +67,8 @@ const nextConfig = {
       { source: '/mcp', destination: `${MCP_UPSTREAM}/claude/mcp` },
       { source: '/chatgpt/mcp', destination: `${MCP_UPSTREAM}/chatgpt/mcp` },
       { source: '/.well-known/openai-apps-challenge', destination: `${MCP_UPSTREAM}/.well-known/openai-apps-challenge` },
+      // Script policy reports, same origin so browsers send them without a CORS preflight.
+      { source: '/csp-report', destination: `${API_URL}/api/v1/csp-report` },
     ]
   },
 }
