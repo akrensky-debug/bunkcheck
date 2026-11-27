@@ -36,6 +36,11 @@ in the table only if the camp's mailing address uses it; otherwise skip that cam
   "religious_affiliation": null,
   "price_per_week": 450,      // standard (non-member) price for one week, only if stated or a 1-week session price
   "price_min": 400, "price_max": 520, "price_per": "week | session | day | summer",
+  "fees": [{"name": "Membership", "amount": 125, "per": "once | year | summer | session | week | day",
+            "required": true, "note": "optional"}],   // every cost beyond tuition the camp posts:
+     // membership, registration fee, deposit, bus, extended care, lunch. required = every camper pays it.
+     // A deposit that goes toward tuition is a note, not a fee. Never compute an amount the camp
+     // doesn't print (no "add 20%" math).
   "extended_care": true|false|null,     // before/after care offered. false ONLY if the site says none
   "transportation": true|false|null,    // bus/van service
   "meals_included": true|false|null,    // lunch (day) or all meals (sleepaway) provided

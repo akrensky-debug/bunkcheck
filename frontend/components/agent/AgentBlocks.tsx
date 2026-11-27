@@ -141,6 +141,18 @@ function PlanView({ plan }: { plan: Plan }) {
           </li>
         ))}
       </ul>
+      {plan.cost_breakdown && plan.cost_breakdown.some(line => line.item !== 'Tuition') && (
+        <dl className="mt-3 space-y-1 text-small">
+          {plan.cost_breakdown.map(line => (
+            <div key={`${line.camp_id}-${line.item}`} className="flex justify-between gap-4">
+              <dt className="min-w-0 truncate text-muted">
+                {line.camp_name}: {line.item}{line.required ? '' : ' (optional, not in the total)'}
+              </dt>
+              <dd className="shrink-0 text-ink">${Math.round(line.amount).toLocaleString()}</dd>
+            </div>
+          ))}
+        </dl>
+      )}
     </div>
   )
 }

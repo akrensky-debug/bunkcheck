@@ -114,6 +114,7 @@ def get_camp_detail(ref: UUID | str) -> CampDetail:
         price_max=float(camp["price_max"]) if camp.get("price_max") else None,
         price_per_week=float(camp["price_per_week"]) if camp.get("price_per_week") else None,
         price_per=camp.get("price_per"),
+        fees=camp.get("fees") or [],
         deposit_required=camp.get("deposit_required"),
         financial_aid=camp.get("financial_aid") or False,
         extended_care=camp.get("extended_care") or False,
