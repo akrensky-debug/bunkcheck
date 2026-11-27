@@ -1,0 +1,144 @@
+{
+  "slug": "penn-rec-camp-philadelphia",
+  "name": "Penn Rec Camp",
+  "operator_name": "University of Pennsylvania Campus Recreation",
+  "website_url": "https://www.pennreccamps.com/",
+  "email": "recsummercamp@upenn.edu",
+  "street_address": "3724 Samson Street",
+  "city": "Philadelphia",
+  "state": "PA",
+  "zip": "19104",
+  "camp_type": "day",
+  "primary_categories": [
+    "sports",
+    "general"
+  ],
+  "secondary_categories": [
+    "swimming",
+    "arts"
+  ],
+  "activities": [
+    "outdoor games",
+    "team sports",
+    "rock climbing",
+    "crafts",
+    "fitness challenges",
+    "swimming",
+    "capture the flag",
+    "kickball",
+    "soccer",
+    "dodgeball",
+    "field day",
+    "talent show"
+  ],
+  "age_min": 6,
+  "age_max": 12,
+  "description_short": "Recreation day camp on the University of Pennsylvania campus for ages 6 to 12, grouped by age. Campers play team sports and games, swim twice a week, rock climb, do crafts and eat lunch in a campus dining hall; Fridays are field day.",
+  "indoor_outdoor": "both",
+  "extended_care": true,
+  "meals_included": true,
+  "fees": [
+    {
+      "name": "Aftercare (3 to 5 PM)",
+      "amount": 120,
+      "per": "week",
+      "required": false
+    }
+  ],
+  "refund_policy_summary": "Requests in writing. Up to one month and a day before camp, refunds less a $125 admin fee; the service fee is never refunded. No refunds within one month of the session.",
+  "swim_waterfront_notes": "Recreational swim, not lessons. Campers take a swim test on the first day (swim the length of the pool and back, tread water 60 seconds); those who don't pass swim in a life jacket. Three lifeguards and four counselors in the pool.",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Session 1",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 2",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 3",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 4 (dates as printed)",
+      "start_date": "2026-07-28",
+      "end_date": "2026-08-01",
+      "availability": "unknown"
+    }
+  ],
+  "notes": "Camp 9 to 3 with check in 8 to 9; aftercare 3 to 5. Open to everyone ages 6 to 12, not only Penn families. Groups: Path Finders 6 to 7, Franklins 8 to 10, Quakers 11 to 12. Drop off behind the Pottruck Health and Fitness Center, 3724 Samson Street; pick up at Shoemaker Green. Run through Teamworks Camps. The site says summer 2027 dates are coming in December 2026. Weekly tuition is not posted on the camp's site.",
+  "sources": [
+    {
+      "url": "https://www.pennreccamps.com/",
+      "checked": "2026-11-27",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "indoor_outdoor"
+      ],
+      "note": "Researched by Claude from this page. Homepage (served at /About%20Us): day camp run through Penn's recreation program, ages 6 to 12, one week sessions, lunch and T shirt included, aftercare add on. Address and email from the page header."
+    },
+    {
+      "url": "https://www.pennreccamps.com/FAQs",
+      "checked": "2026-11-27",
+      "fields": [
+        "extended_care",
+        "meals_included",
+        "fees",
+        "refund_policy_summary",
+        "swim_waterfront_notes",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. FAQ: 2026 session dates are listed with the refund deadlines; Session 4 is printed as July 28 to August 1, 2026. Aftercare $120 per week. Lunch provided in the campus dining hall."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.pennreccamps.com/",
+      "kind": "html",
+      "title": "UPenn Summer Rec Camp"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Weekly tuition (not on the camp's site; the Penn Almanac lists $375 to $400, which is not a camp page)",
+      "2027 dates",
+      "Financial aid"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-27",
+      "page_checked": "https://www.pennreccamps.com/",
+      "changes": [
+        "New camp, researched from https://www.pennreccamps.com/"
+      ],
+      "for_andrew": [
+        "The FAQ prints Session 4 as July 28 to August 1, 2026 (Tuesday to Saturday); it is probably July 27 to 31. I kept the dates as printed. Keep, or fix to July 27 to 31?",
+        "No tuition is posted on the camp's own site; 2027 dates are due in December. List it now as a 2026 listing without price, or hold for the 2027 posting?"
+      ]
+    }
+  }
+}

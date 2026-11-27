@@ -1,0 +1,129 @@
+{
+  "slug": "little-falls-summer-camp-little-falls",
+  "name": "Little Falls Summer Camp",
+  "operator_name": "Township of Little Falls Recreation Department",
+  "website_url": "https://littlefallsnj.gov/index.asp?SEC=43A098E8-F38D-4DBA-9618-2A63EC45F491",
+  "email": "recreation@littlefallsnj.gov",
+  "phone": "973-256-3884",
+  "city": "Little Falls",
+  "state": "NJ",
+  "zip": "07424",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "sports",
+    "arts"
+  ],
+  "activities": [
+    "games",
+    "sports",
+    "arts and crafts",
+    "special events",
+    "field trips"
+  ],
+  "grade_max": 6,
+  "description_short": "Township recreation day camp in Little Falls for children in pre-K through grade 6, open to residents and non-residents, with games, sports, crafts, special events and optional field trips. Families pick and pay for single weeks.",
+  "price_per_week": 175,
+  "price_min": 100,
+  "price_max": 175,
+  "price_per": "week",
+  "fees": [
+    {
+      "name": "After care (2 to 5 pm, grades 1 to 6)",
+      "amount": 60,
+      "per": "week",
+      "required": false,
+      "note": "Limited to 40 campers."
+    },
+    {
+      "name": "Field trip",
+      "amount": 50,
+      "per": "day",
+      "required": false,
+      "note": "Each trip $50 or $60 per child, 40 spots per trip, by grade; registered separately.",
+      "source_url": "https://littlefallsnj.govoffice.com/uploads/dm/80331/LF_SummerCamp_FieldTrip26_2.pdf"
+    }
+  ],
+  "extended_care": true,
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "2026 season (pick your weeks)",
+      "start_date": "2026-06-29",
+      "end_date": "2026-08-07",
+      "price": 175,
+      "availability": "unknown"
+    }
+  ],
+  "notes": "Weekly rate $175 for grades 1 to 6 (9 am to 2 pm) and $100 for pre-K and kindergarten (9 am to noon); the page names no separate resident rate. Up to 150 campers a week. Registration opened March 30, 2026 on Community Pass. Session price is the grades 1 to 6 weekly rate.",
+  "sources": [
+    {
+      "url": "https://littlefallsnj.gov/index.asp?SEC=43A098E8-F38D-4DBA-9618-2A63EC45F491",
+      "checked": "2026-11-27",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "description_short",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. 2026 camp page: June 29 to August 7, 2026, open to residents and non-residents. ZIP is the township's (225 Main Street, Little Falls, NJ 07424, in the page footer); the camp site is not named"
+    },
+    {
+      "url": "https://littlefallsnj.govoffice.com/uploads/dm/80332/LF_SummerCamp_Camper26_2.pdf",
+      "checked": "2026-11-27",
+      "fields": [
+        "email",
+        "phone",
+        "grade_max",
+        "price_per_week",
+        "price_min",
+        "price_max",
+        "price_per",
+        "fees",
+        "extended_care"
+      ],
+      "note": "Researched by Claude from this page. 2026 Camper Information flyer linked from the camp page"
+    },
+    {
+      "url": "https://littlefallsnj.govoffice.com/uploads/dm/80331/LF_SummerCamp_FieldTrip26_2.pdf",
+      "checked": "2026-11-27",
+      "fields": [],
+      "note": "Researched by Claude from this page. 2026 field trip flyer linked from the camp page"
+    }
+  ],
+  "review": {
+    "status": "ready",
+    "source": {
+      "url": "https://littlefallsnj.gov/index.asp?SEC=43A098E8-F38D-4DBA-9618-2A63EC45F491",
+      "kind": "html",
+      "title": "Summer Camp - Township of Little Falls, NJ"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Camp site",
+      "Lunch",
+      "Financial aid"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-27",
+      "page_checked": "https://littlefallsnj.gov/index.asp?SEC=43A098E8-F38D-4DBA-9618-2A63EC45F491",
+      "changes": [
+        "New camp, researched from https://littlefallsnj.gov/index.asp?SEC=43A098E8-F38D-4DBA-9618-2A63EC45F491"
+      ],
+      "for_andrew": []
+    }
+  }
+}

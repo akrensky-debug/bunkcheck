@@ -1,0 +1,104 @@
+{
+  "slug": "riverdale-summer-recreation-camp-riverdale",
+  "name": "Riverdale Summer Recreation Camp",
+  "operator_name": "Borough of Riverdale Recreation",
+  "website_url": "https://www.riverdalenj.gov/pages/summer-camp",
+  "email": "scolella@riverdalenj.gov",
+  "phone": "973-835-4060",
+  "street_address": "Riverdale Senior Community Center",
+  "city": "Riverdale",
+  "state": "NJ",
+  "zip": "07457",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "activities": [
+    "bowling",
+    "movies",
+    "miniature golf",
+    "ice skating",
+    "field games",
+    "playground",
+    "petting zoo",
+    "tie dye"
+  ],
+  "grade_min": 1,
+  "grade_max": 8,
+  "age_min": 6,
+  "age_max": 14,
+  "description_short": "Five week borough recreation camp at the Riverdale Community Center for Riverdale residents, full time for children entering grades 1 to 6 and part time for grades 7 and 8, with bus trips to places like bowling alleys and rec days at the center and school fields.",
+  "indoor_outdoor": "both",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "2026 season (5 weeks)",
+      "start_date": "2026-06-22",
+      "end_date": "2026-07-24",
+      "availability": "unknown"
+    }
+  ],
+  "notes": "Riverdale residents only. 9 am to 3 pm; no camp Friday July 3. The cost is shared among campers and set after registration closes: $250 due April 17, $250 due May 15, and a final amount (announced by May 15) due June 1, 2026. The 5 week program cost $675 per child in 2025. Runs rain or shine. Not a school sponsored program.",
+  "sources": [
+    {
+      "url": "https://www.riverdalenj.gov/pages/summer-camp",
+      "checked": "2026-11-27",
+      "fields": [
+        "name",
+        "website_url",
+        "primary_categories",
+        "grade_min",
+        "grade_max",
+        "age_min",
+        "age_max",
+        "description_short",
+        "indoor_outdoor"
+      ],
+      "note": "Researched by Claude from this page. Borough summer camp page (2026). Ages derived from grades 1 to 8"
+    },
+    {
+      "url": "https://www.riverdalenj.gov/_Content/pdf/2026-Summer-Recreation-Camp-Application.pdf",
+      "checked": "2026-11-27",
+      "fields": [
+        "operator_name",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "activities",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. 2026 application and calendar (PDF) linked from the camp page. ZIP is the Borough Hall address on the form (91 Newark Pompton Turnpike, Riverdale, NJ 07457); the community center has no street address there"
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.riverdalenj.gov/pages/summer-camp",
+      "kind": "html",
+      "title": "The Official Website of The Borough of Riverdale, NJ - Summer Camp"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Final 2026 fee (set after registration)",
+      "Street address of the community center",
+      "Lunch"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-27",
+      "page_checked": "https://www.riverdalenj.gov/pages/summer-camp",
+      "changes": [
+        "New camp, researched from https://www.riverdalenj.gov/pages/summer-camp"
+      ],
+      "for_andrew": [
+        "Residents only, and the 2026 total fee was not set when posted (two $250 payments plus a final amount; 2025 was $675). I left price out. List it anyway?"
+      ]
+    }
+  }
+}

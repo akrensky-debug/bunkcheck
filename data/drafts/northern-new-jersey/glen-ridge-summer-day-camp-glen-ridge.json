@@ -1,0 +1,112 @@
+{
+  "slug": "glen-ridge-summer-day-camp-glen-ridge",
+  "name": "Glen Ridge Summer Day Camp",
+  "operator_name": "Glen Ridge Recreation Department",
+  "website_url": "https://www.glenridgenj.org/summerdaycamp/",
+  "registration_url": "https://register.communitypass.net/BoroughofGlenRidge",
+  "phone": "973-748-2924",
+  "street_address": "Carteret Park, Carteret Street",
+  "city": "Glen Ridge",
+  "state": "NJ",
+  "zip": "07028",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "sports",
+    "arts"
+  ],
+  "activities": [
+    "sports games",
+    "arts and crafts",
+    "board games",
+    "water games",
+    "bus trips"
+  ],
+  "age_min": 5,
+  "age_max": 12,
+  "description_short": "Outdoor borough day camp based at Carteret Park for Glen Ridge residents ages 5 to 12, with sports games, crafts, board games, water games and bus trips. Families sign up by the day, up to 40 campers a day.",
+  "indoor_outdoor": "outdoor",
+  "price_min": 50,
+  "price_max": 50,
+  "price_per": "day",
+  "meals_included": false,
+  "refund_policy_summary": "No refunds for changed plans; the daily fee is refunded only for rained out days or extenuating family circumstances. Days cannot be switched or transferred.",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "2026 season (register by the day)",
+      "start_date": "2026-06-22",
+      "end_date": "2026-07-30",
+      "price": 50,
+      "availability": "unknown"
+    }
+  ],
+  "notes": "Glen Ridge residents only; campers must be 5 before January 1, 2027. Monday to Friday 9 am to 3 pm (times vary on trip days; see the camp calendar). $50 per day, online registration only. 10 counselors, a mix of certified teachers and students 16 and older. Campers bring lunch and a water bottle; refrigeration available.",
+  "sources": [
+    {
+      "url": "https://www.glenridgenj.org/summerdaycamp/",
+      "checked": "2026-11-27",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "indoor_outdoor",
+        "price_min",
+        "price_max",
+        "price_per",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. 2026 camp page. ZIP is printed on the page (Glen Ridge, New Jersey 07028)"
+    },
+    {
+      "url": "https://www.glenridgenj.org/wp-content/uploads/2026/03/2026-Glen-Ridge-Recreation-Summer-Day-Camp-FAQ.pdf",
+      "checked": "2026-11-27",
+      "fields": [
+        "meals_included",
+        "refund_policy_summary"
+      ],
+      "note": "Researched by Claude from this page. 2026 FAQ linked from the camp page"
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.glenridgenj.org/summerdaycamp/",
+      "kind": "html",
+      "title": "Summer Day Camp - Borough of Glen Ridge, NJ - official website"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Financial aid",
+      "2026 trip costs (calendar not read)"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-27",
+      "page_checked": "https://www.glenridgenj.org/summerdaycamp/",
+      "changes": [
+        "New camp, researched from https://www.glenridgenj.org/summerdaycamp/"
+      ],
+      "for_andrew": [
+        "Residents only: the page says Glen Ridge residents ages 5 to 12, so $50 a day is the one rate. List it anyway?"
+      ]
+    }
+  }
+}

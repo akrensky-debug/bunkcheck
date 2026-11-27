@@ -1,0 +1,94 @@
+{
+  "slug": "paper-mill-playhouse-summer-musical-theater-conservatory-millburn",
+  "name": "Paper Mill Playhouse Summer Musical Theater Conservatory",
+  "operator_name": "Paper Mill Playhouse",
+  "website_url": "https://papermill.org/education/summer-training/summer-conservatory/",
+  "phone": "973-376-4343",
+  "street_address": "22 Brookside Drive",
+  "city": "Millburn",
+  "state": "NJ",
+  "zip": "07041",
+  "camp_type": "specialty",
+  "primary_categories": [
+    "performing_arts"
+  ],
+  "secondary_categories": [],
+  "activities": [
+    "acting",
+    "auditioning",
+    "voice",
+    "dance",
+    "musical theater",
+    "showcase performance"
+  ],
+  "age_min": 10,
+  "age_max": 18,
+  "description_short": "Five week audition based musical theater training program at Paper Mill Playhouse in Millburn for ages 10 to 18. Mornings are classes in acting, auditioning, voice and dance with professional artists, and the program ends with the New Voices Concert on the Paper Mill stage.",
+  "indoor_outdoor": "indoor",
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Summer Musical Theater Conservatory",
+      "start_date": "2027-06-28",
+      "end_date": "2027-07-31",
+      "price": null,
+      "availability": "unknown"
+    }
+  ],
+  "notes": "Admission is by audition. Students are placed in a Junior Company (ages 10 to 12), Junior Plus (12 to 14) or Senior Company (15 to 18). Tuition and daily hours sit in page tabs the fetcher could not read. Paper Mill also runs a non audition Summer Studio, not listed here.",
+  "sources": [
+    {
+      "url": "https://papermill.org/education/summer-training/summer-conservatory/",
+      "checked": "2026-11-27",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "indoor_outdoor",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. June 28 to July 31, 2027; ages 10 to 18 in three companies; audition required. Address and phone from the site footer."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://papermill.org/education/summer-training/summer-conservatory/",
+      "kind": "html",
+      "title": "Summer Musical Theater Conservatory - Paper Mill Playhouse"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Tuition",
+      "Daily hours",
+      "Audition dates"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "city 'Millburn', NJ is not in cities.py"
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-27",
+      "page_checked": "https://papermill.org/education/summer-training/summer-conservatory/",
+      "changes": [
+        "New camp, researched from https://papermill.org/education/summer-training/summer-conservatory/"
+      ],
+      "for_andrew": [
+        "Tuition and hours are in tabs on the page that did not come through. Check the page and add tuition, or list without it?",
+        "Admission is by audition. Is an audition only training program in scope as a camp?"
+      ]
+    }
+  }
+}

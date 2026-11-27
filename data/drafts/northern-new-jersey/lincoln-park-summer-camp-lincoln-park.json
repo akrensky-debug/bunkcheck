@@ -1,0 +1,182 @@
+{
+  "slug": "lincoln-park-summer-camp-lincoln-park",
+  "name": "Lincoln Park Summer Camp",
+  "operator_name": "Borough of Lincoln Park Recreation",
+  "website_url": "https://lincolnpark.org/360/Summer-Camps",
+  "registration_url": "https://secure.rec1.com/NJ/lincoln-park-nj/catalog",
+  "email": "lpsummercamp@bolp.org",
+  "phone": "973-525-6646",
+  "street_address": "Lincoln Park Middle School, 92 Ryerson Road",
+  "city": "Lincoln Park",
+  "state": "NJ",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "swimming",
+    "sports",
+    "arts"
+  ],
+  "activities": [
+    "team games",
+    "crafts",
+    "game room",
+    "playground",
+    "beach days",
+    "sports",
+    "field trips",
+    "theme weeks"
+  ],
+  "grade_min": 0,
+  "grade_max": 6,
+  "age_min": 5,
+  "age_max": 12,
+  "description_short": "Borough morning day camp for Lincoln Park children entering kindergarten through grade 6: two days a week at Lincoln Park Middle School, two lake days at the LP Beach Club and one trip day, with games, crafts and theme weeks. Only Lincoln Park residents can register.",
+  "indoor_outdoor": "both",
+  "price_per_week": 180,
+  "price_min": 140,
+  "price_max": 180,
+  "price_per": "week",
+  "extended_care": false,
+  "refund_policy_summary": "No refunds for missed days, weeks or trips; refunds only if the borough cancels camp. Week transfers allowed with notice.",
+  "swim_waterfront_notes": "Lake days Tuesdays and Thursdays at the LP Beach Club with lifeguards; every camper is swim tested and needs a signed swim permission form.",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Week 1",
+      "start_date": "2026-06-22",
+      "end_date": "2026-06-26",
+      "availability": "unknown",
+      "price": 180
+    },
+    {
+      "name": "Week 2 (no camp July 3)",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-03",
+      "availability": "unknown",
+      "price": 140
+    },
+    {
+      "name": "Week 3",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "availability": "unknown",
+      "price": 180
+    },
+    {
+      "name": "Week 4",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "availability": "unknown",
+      "price": 180
+    },
+    {
+      "name": "Week 5",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "availability": "unknown",
+      "price": 180
+    },
+    {
+      "name": "Week 6",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "availability": "unknown",
+      "price": 180
+    },
+    {
+      "name": "Week 7",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "availability": "unknown",
+      "price": 180
+    },
+    {
+      "name": "Week 8",
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-14",
+      "availability": "unknown",
+      "price": 180
+    }
+  ],
+  "notes": "Lincoln Park residents only. Monday to Friday 8:30 am to 12:30 pm; no before or after care. $140 per week if paid by May 3, $180 per week after that and for add-on weeks (week 2, with no camp July 3: $115 early or $140). Trip fees are included. Non-emergency late pick ups cost $5 per half hour.",
+  "sources": [
+    {
+      "url": "https://lincolnpark.org/360/Summer-Camps",
+      "checked": "2026-11-27",
+      "fields": [
+        "name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "extended_care"
+      ],
+      "note": "Researched by Claude from this page. 2026 camp page: K to 6 camp June 22 to August 14 at Lincoln Park Middle School, 92 Ryerson Road; no before or after care"
+    },
+    {
+      "url": "https://lincolnpark.org/DocumentCenter/View/10872/K-6-2026-Camp-Reg",
+      "checked": "2026-11-27",
+      "fields": [
+        "operator_name",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "age_min",
+        "age_max",
+        "description_short",
+        "indoor_outdoor",
+        "price_per_week",
+        "price_min",
+        "price_max",
+        "price_per",
+        "refund_policy_summary",
+        "swim_waterfront_notes",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. 2026 K-6 registration form (PDF). Ages derived from grades K to 6. Weekly price is the regular rate after May 3"
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=92+Ryerson+Road%2C+Lincoln+Park%2C+NJ&benchmark=Public_AR_Current&format=json",
+      "checked": "2026-11-27",
+      "fields": [
+        "zip"
+      ],
+      "note": "ZIP looked up with the Census Bureau geocoder from the address on the camp's page (92 RYERSON RD, LINCOLN PARK, NJ, 07035)"
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://lincolnpark.org/360/Summer-Camps",
+      "kind": "html",
+      "title": "Summer Camps | Lincoln Park, NJ"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Financial aid"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-27",
+      "page_checked": "https://lincolnpark.org/360/Summer-Camps",
+      "changes": [
+        "New camp, researched from https://lincolnpark.org/360/Summer-Camps",
+        "ZIP 07035 looked up from the camp's street address with the Census geocoder (ZIP lookups allowed by Andrew, 22 November)."
+      ],
+      "for_andrew": [
+        "Residents only: the page and form are for Lincoln Park resident children, so there is no non-resident rate. List it anyway?"
+      ]
+    }
+  },
+  "zip": "07035"
+}

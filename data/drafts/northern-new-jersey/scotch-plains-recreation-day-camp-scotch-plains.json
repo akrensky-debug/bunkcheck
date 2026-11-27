@@ -1,0 +1,73 @@
+{
+  "slug": "scotch-plains-recreation-day-camp-scotch-plains",
+  "name": "Scotch Plains Recreation Day Camp",
+  "operator_name": "Scotch Plains Parks and Recreation",
+  "website_url": "https://www.scotchplainsnj.gov/summer-camps",
+  "registration_url": "https://register.capturepoint.com/scotchplains",
+  "phone": "908-322-6700 x 223",
+  "city": "Scotch Plains",
+  "state": "NJ",
+  "zip": "07076",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "grade_max": 6,
+  "age_min": 3,
+  "age_max": 12,
+  "description_short": "Township recreation day camp in Scotch Plains for children entering kindergarten through grade 6, with a separate Small Fry camp in three sessions for ages 3 to 5. Registration runs through Community Pass.",
+  "season_year": 2026,
+  "notes": "The 2026 page lists Day Camp (K to 6) and Small Fry Camp #1, #2 and #3 (ages 3 to 5), all closed for 2026 registration; refund requests were due by April 10, 2026. The page's camp sections are empty, so dates, place, hours and fees are not shown.",
+  "sources": [
+    {
+      "url": "https://www.scotchplainsnj.gov/summer-camps",
+      "checked": "2026-11-27",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "grade_max",
+        "age_min",
+        "age_max",
+        "description_short"
+      ],
+      "note": "Researched by Claude from this page. 2026 summer camps page. ZIP and phone are the Recreation office's (430 Park Avenue, Town Hall Room 113). Age 3 is the Small Fry minimum; age 12 derived from grade 6"
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.scotchplainsnj.gov/summer-camps",
+      "kind": "html",
+      "title": "Township of Scotch Plains, NJ - Scotch Plains Summer Camps"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Dates",
+      "Camp site",
+      "Hours",
+      "Fees",
+      "Residency rule"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-27",
+      "page_checked": "https://www.scotchplainsnj.gov/summer-camps",
+      "changes": [
+        "New camp, researched from https://www.scotchplainsnj.gov/summer-camps"
+      ],
+      "for_andrew": [
+        "The township page names the 2026 Day Camp (K to 6) and Small Fry Camp (ages 3 to 5) but its sections are empty: no dates, site or fees. List it this thin, or wait for the 2027 page?"
+      ]
+    }
+  }
+}

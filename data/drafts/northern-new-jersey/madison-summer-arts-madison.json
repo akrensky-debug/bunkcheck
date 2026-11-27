@@ -1,0 +1,109 @@
+{
+  "slug": "madison-summer-arts-madison",
+  "name": "Madison Summer Arts",
+  "operator_name": "Madison Music & Arts",
+  "website_url": "https://sites.google.com/view/madison-music-arts/summer-arts",
+  "registration_url": "https://docs.google.com/forms/d/e/1FAIpQLScYDYd--MZ2WOzDa_1F0qGiw3KpJCzFhj-dMRJJserF5OkFMw/viewform",
+  "email": "mccormickk@madisonnjps.org",
+  "street_address": "Madison Community House",
+  "city": "Madison",
+  "state": "NJ",
+  "camp_type": "specialty",
+  "primary_categories": [
+    "performing_arts",
+    "arts"
+  ],
+  "secondary_categories": [],
+  "activities": [
+    "band",
+    "orchestra",
+    "beginning instruments",
+    "chamber strings",
+    "jazz ensemble",
+    "music theater",
+    "chorus",
+    "visual art"
+  ],
+  "grade_min": 1,
+  "grade_max": 12,
+  "age_min": 6,
+  "age_max": 18,
+  "description_short": "Four week half day summer arts program at the Madison Community House for students entering grades 1 to 12. Students take 45 minute classes in band, orchestra, chamber strings, jazz ensemble, music theater, chorus and visual art, grouped by grade.",
+  "indoor_outdoor": "indoor",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Summer Arts 2026",
+      "start_date": "2026-06-22",
+      "end_date": "2026-07-17",
+      "price": null,
+      "availability": "unknown"
+    }
+  ],
+  "notes": "Classes run between 9 a.m. and 12:15 p.m., Monday to Friday. Early bird pricing through April 30; all registrations due June 5. The brochure credits the Department of Visual and Performing Arts, and the contact is a Madison public schools address. Prices are on brochure pages that did not load.",
+  "sources": [
+    {
+      "url": "https://sites.google.com/view/madison-music-arts/summer-arts",
+      "checked": "2026-11-27",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "email",
+        "street_address",
+        "city",
+        "state",
+        "camp_type",
+        "grade_min",
+        "grade_max",
+        "age_min",
+        "age_max",
+        "indoor_outdoor"
+      ],
+      "note": "Researched by Claude from this page. 2026 Madison Summer Arts, June 22 to July 17 at the Madison Community House, 9 a.m. to 12:15 p.m., entering grades 1 to 12. Ages derived from grades, not stated."
+    },
+    {
+      "url": "https://drive.google.com/file/d/1s_bX77EhKF-asJA8_JzBFndFSyxIBF_d/view",
+      "checked": "2026-11-27",
+      "fields": [
+        "primary_categories",
+        "activities",
+        "description_short",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. 2026 Summer Arts brochure (Google Drive file linked from the page); pages 1 to 3 read, class list and grades. Pricing pages did not load."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://sites.google.com/view/madison-music-arts/summer-arts",
+      "kind": "html",
+      "title": "Madison Music & Arts - Summer Arts"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Price (on brochure pages that did not load)",
+      "Street address and ZIP of the Madison Community House",
+      "Who runs it: the parent group or the school district's arts department",
+      "2027 dates"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "missing required zip"
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-27",
+      "page_checked": "https://sites.google.com/view/madison-music-arts/summer-arts",
+      "changes": [
+        "New camp, researched from https://sites.google.com/view/madison-music-arts/summer-arts"
+      ],
+      "for_andrew": [
+        "This is a half day class program (45 minute classes, 9 to 12:15) rather than a classic camp. Keep it as a specialty listing?",
+        "The page gives the Madison Community House but no street address or ZIP, and the price is on brochure pages I could not read."
+      ]
+    }
+  }
+}

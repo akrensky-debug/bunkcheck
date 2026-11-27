@@ -1,0 +1,109 @@
+{
+  "slug": "bayonne-recreation-summer-camps-bayonne",
+  "name": "Bayonne Recreation Summer Camps",
+  "operator_name": "City of Bayonne Division of Recreation",
+  "website_url": "https://www.bayonnenj.org/News/View/12253/division-of-recreation-summer-camp-registration-opens-monday-april-6th",
+  "registration_url": "https://register.capturepoint.com/CityofBayonne",
+  "city": "Bayonne",
+  "state": "NJ",
+  "zip": "07002",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "sports",
+    "arts",
+    "swimming"
+  ],
+  "activities": [
+    "sports",
+    "arts and crafts",
+    "field trips",
+    "pool days"
+  ],
+  "grade_min": 1,
+  "grade_max": 8,
+  "age_min": 6,
+  "age_max": 14,
+  "description_short": "Six week city day camps for Bayonne residents entering grades 1 to 8, run at several sites including Washington School, Mary J. Donohoe, Robinson and the 16th Street Park, plus an Ultimate Sports Camp and an Arts and Crafts Camp. Pool days at the 16th Street Pool and optional bus trips. Only Bayonne residents can register.",
+  "indoor_outdoor": "both",
+  "price_min": 275,
+  "price_max": 275,
+  "price_per": "summer",
+  "extended_care": false,
+  "meals_included": false,
+  "refund_policy_summary": "No registration refunds after June 5; fees are not pro-rated.",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "2026 season (6 weeks)",
+      "start_date": "2026-06-29",
+      "end_date": "2026-08-07",
+      "price": 275,
+      "availability": "unknown"
+    }
+  ],
+  "notes": "Bayonne residents only. One-time fee for the six weeks: $275 for the first child, $205 for the second, free for the third and fourth (brothers and sisters only); includes a camp t-shirt. Field trips cost extra, paid on the day; buses provided for trips. Camp 9 am to 3 pm (Ultimate Sports and Arts and Crafts end at 2 pm, their kindergarten division at 11:30 am); June 29 and August 7 are half days. Each camp is capped at 175 campers. Registration opened April 6, 2026.",
+  "sources": [
+    {
+      "url": "https://www.bayonnenj.org/News/View/12253/division-of-recreation-summer-camp-registration-opens-monday-april-6th",
+      "checked": "2026-11-27",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "age_min",
+        "age_max",
+        "description_short",
+        "indoor_outdoor",
+        "price_min",
+        "price_max",
+        "price_per",
+        "extended_care",
+        "meals_included",
+        "refund_policy_summary",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. City Division of Recreation post for 2026 camps. Ages derived from grades 1 to 8. ZIP is the City Hall address in the page footer (630 Avenue C, Bayonne, NJ 07002); the camp sites have no street addresses on the page"
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.bayonnenj.org/News/View/12253/division-of-recreation-summer-camp-registration-opens-monday-april-6th",
+      "kind": "html",
+      "title": "Division of Recreation Summer Camp Registration OPENS Monday, April 6th"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Street addresses of the camp sites",
+      "Field trip prices",
+      "Financial aid"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-27",
+      "page_checked": "https://www.bayonnenj.org/News/View/12253/division-of-recreation-summer-camp-registration-opens-monday-april-6th",
+      "changes": [
+        "New camp, researched from https://www.bayonnenj.org/News/View/12253/division-of-recreation-summer-camp-registration-opens-monday-april-6th"
+      ],
+      "for_andrew": [
+        "Residents only: the city post says Bayonne residents only, so the $275 first child fee is the one rate. List it anyway?",
+        "The only source is the city's own news post (the Recreation division has no standing camp page). Six sites share dates and grades, so this is one listing rather than one per site."
+      ]
+    }
+  }
+}

@@ -1,0 +1,171 @@
+{
+  "slug": "chester-township-summer-recreation-day-camp-chester",
+  "name": "Chester Township Summer Recreation Day Camp",
+  "operator_name": "Chester Township Recreation",
+  "website_url": "https://chestertownship.org/index.php/departments/recreation/summer-rec-camp",
+  "registration_url": "https://register.communitypass.net/chestertwp",
+  "phone": "908-879-5100 x876",
+  "street_address": "Black River Middle School, 133 North Road",
+  "city": "Chester",
+  "state": "NJ",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "swimming",
+    "arts"
+  ],
+  "activities": [
+    "games",
+    "arts and crafts",
+    "swimming",
+    "field trips",
+    "gym",
+    "music",
+    "special entertainment"
+  ],
+  "grade_min": 1,
+  "grade_max": 6,
+  "age_min": 6,
+  "age_max": 12,
+  "description_short": "Township day camp at Black River Middle School in Chester for children entering grades 1 to 6. Groups rotate through gym, art, music and games, swim three days a week at the Chester Area Pool, take a bus field trip every Wednesday and have a visiting show on Mondays.",
+  "indoor_outdoor": "both",
+  "fees": [
+    {
+      "name": "Before care",
+      "amount": 15,
+      "per": "hour",
+      "required": false,
+      "note": "Per child per hour, any time 7:30 to 9 a.m."
+    },
+    {
+      "name": "After care",
+      "amount": 15,
+      "per": "hour",
+      "required": false,
+      "note": "Per child per hour, any time 3 to 6 p.m."
+    }
+  ],
+  "extended_care": true,
+  "meals_included": false,
+  "financial_aid": true,
+  "refund_policy_summary": "A nonrefundable $50 deposit per child per session is due at registration. No refunds for cancellations after registration closes or for days missed; a $50 late fee applies if final payment is late.",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Week 1 (no camp July 2 and 3)",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-01",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 2",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 3",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 4",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 5",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 6",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": null,
+      "availability": "unknown"
+    }
+  ],
+  "notes": "Resident rates (Chester Township and Borough): Week 1 $350, Weeks 2 to 6 $465 a week. Nonresidents pay a nonresident fee that the page does not print, and register two weeks after residents (March 25 versus March 11 in 2026). Camp runs 9 a.m. to 3 p.m. Children bring lunch. The township's financial help is by contact with the Recreation Director.",
+  "sources": [
+    {
+      "url": "https://chestertownship.org/index.php/departments/recreation/summer-rec-camp",
+      "checked": "2026-11-27",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "age_min",
+        "age_max",
+        "description_short",
+        "indoor_outdoor",
+        "fees",
+        "extended_care",
+        "meals_included",
+        "financial_aid",
+        "refund_policy_summary",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. 2026 season, June 29 to August 7. Grades 1 to 6 as of fall 2026; ages derived from grades, not stated. Before and after care $15 per child per hour. Session prices left blank because only resident rates are printed. 'If you need financial help' contact the Recreation Director."
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=133+North+Road%2C+Chester%2C+NJ&benchmark=Public_AR_Current&format=json",
+      "checked": "2026-11-27",
+      "fields": [
+        "zip"
+      ],
+      "note": "ZIP looked up with the Census Bureau geocoder from the address on the camp's page (133 NORTH RD, CHESTER, NJ, 07930)"
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://chestertownship.org/index.php/departments/recreation/summer-rec-camp",
+      "kind": "html",
+      "title": "Summer Rec Camp"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Nonresident weekly rate (page says a nonresident fee applies but gives no amount)",
+      "2027 dates and rates"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "city 'Chester', NJ is not in cities.py"
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-27",
+      "page_checked": "https://chestertownship.org/index.php/departments/recreation/summer-rec-camp",
+      "changes": [
+        "New camp, researched from https://chestertownship.org/index.php/departments/recreation/summer-rec-camp",
+        "ZIP 07930 looked up from the camp's street address with the Census geocoder (ZIP lookups allowed by Andrew, 22 November)."
+      ],
+      "for_andrew": [
+        "The page prints only resident rates ($350 for the short Week 1, $465 a week after) and says a nonresident fee applies without the amount. I left session prices blank. Publish with the resident rate in notes only, or call the township for the nonresident figure?"
+      ]
+    }
+  },
+  "zip": "07930"
+}

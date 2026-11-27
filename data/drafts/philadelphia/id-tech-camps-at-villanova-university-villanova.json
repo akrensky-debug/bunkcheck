@@ -1,0 +1,108 @@
+{
+  "slug": "id-tech-camps-at-villanova-university-villanova",
+  "name": "iD Tech Camps at Villanova University",
+  "operator_name": "iD Tech",
+  "website_url": "https://www.idtech.com/locations/pennsylvania-summer-camps/villanova-university",
+  "registration_url": "https://www.idtech.com/register#/reg-flow/avail-charts-lock?lid=82&rgnad=true",
+  "email": "hello@idtech.com",
+  "phone": "1-888-709-8324",
+  "city": "Villanova",
+  "state": "PA",
+  "zip": "19085",
+  "camp_type": "specialty",
+  "primary_categories": [
+    "STEM",
+    "technology"
+  ],
+  "activities": [
+    "coding",
+    "game development",
+    "robotics",
+    "3d printing",
+    "ai",
+    "minecraft",
+    "roblox",
+    "battlebots",
+    "ultimate frisbee",
+    "capture the flag",
+    "kickball",
+    "board games"
+  ],
+  "age_min": 7,
+  "age_max": 17,
+  "description_short": "Week long tech camps on the Villanova University campus for ages 7 to 17, with day camp for all ages and overnight stays from age 10. Kids pick a course in coding, game design, robotics, 3D printing or AI and work in small groups in campus labs, with outdoor breaks and a Friday family showcase.",
+  "indoor_outdoor": "both",
+  "price_min": 1129,
+  "price_per": "week",
+  "financial_aid": null,
+  "refund_policy_summary": "Unlimited changes with no fee up to 28 days before the session. Full refund for cancellations before March 1; after March 1 and at least 28 days out, refund less a $250 per week cancellation charge and any added fees. No refunds within 28 days of the start date.",
+  "special_needs_notes": "Students of all abilities welcome; families should contact iD Tech at least three weeks before camp to plan accommodations.",
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Day and overnight weeks (course dates vary)",
+      "start_date": "2027-06-14",
+      "end_date": "2027-07-30",
+      "availability": "unknown"
+    }
+  ],
+  "notes": "Day camp 9 to 4:30 Monday to Thursday, check in from 8:30, pick up until 5; Friday ends with a 2 to 3 PM family showcase. Overnight campers check in Sunday at 6 PM and stay in campus residence halls with all meals in the dining hall. Day campers bring lunch or buy a lunch plan (cost not posted). Price is the posted starting price; payment plan available, $50 off for multiple sessions.",
+  "sources": [
+    {
+      "url": "https://www.idtech.com/locations/pennsylvania-summer-camps/villanova-university",
+      "checked": "2026-11-27",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "indoor_outdoor",
+        "price_min",
+        "price_per",
+        "refund_policy_summary",
+        "special_needs_notes",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Location page: day and overnight camps running June 14 to July 30, ages 7 to 17, one week, price starting at $1,129. The run dates carry no year; the page says Summer '27 registration is open and June 14 and July 30 fall on a Monday and Friday in 2027, so they are read as 2027. ZIP from 'Villanova, PA 19085' on the page."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.idtech.com/locations/pennsylvania-summer-camps/villanova-university",
+      "kind": "html",
+      "title": "Villanova Summer STEM Camps | Main Line 2026 | Coding & Tech"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Per course weekly prices and the overnight price",
+      "Exact week dates",
+      "Lunch plan cost"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-27",
+      "page_checked": "https://www.idtech.com/locations/pennsylvania-summer-camps/villanova-university",
+      "changes": [
+        "New camp, researched from https://www.idtech.com/locations/pennsylvania-summer-camps/villanova-university"
+      ],
+      "for_andrew": [
+        "The page gives 'June 14 to July 30' with no year. I read it as 2027 because the page says Summer '27 registration is open and those dates fall Monday and Friday in 2027 (not in 2026), but the page title still says 2026. List as 2027?",
+        "iD Tech offers scholarships for the 2027 season on its national scholarships page; I left financial_aid unset because that page is not specific to Villanova. Set it to true?"
+      ]
+    }
+  }
+}

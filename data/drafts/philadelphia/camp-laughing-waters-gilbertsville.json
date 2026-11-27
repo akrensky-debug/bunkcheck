@@ -1,0 +1,148 @@
+{
+  "slug": "camp-laughing-waters-gilbertsville",
+  "name": "Camp Laughing Waters",
+  "operator_name": "Girl Scouts of Eastern Pennsylvania",
+  "website_url": "https://www.gsep.org/en/members/for-girl-scouts/camp-and-outdoors/our-camp-locations/camp-laughing-waters.html",
+  "email": "memberservices@gsep.org",
+  "street_address": "300 Hildebeidel Road",
+  "city": "Gilbertsville",
+  "state": "PA",
+  "zip": "19525",
+  "camp_type": "sleepaway",
+  "primary_categories": [
+    "general",
+    "outdoor"
+  ],
+  "secondary_categories": [
+    "adventure",
+    "swimming",
+    "nature"
+  ],
+  "activities": [
+    "horseback riding",
+    "hiking",
+    "creek adventures",
+    "outdoor cooking",
+    "swimming",
+    "low ropes",
+    "high ropes",
+    "disc golf",
+    "arts and crafts",
+    "climbing wall",
+    "bouldering",
+    "gaga",
+    "basketball",
+    "archery",
+    "campfires"
+  ],
+  "gender_policy": "girls",
+  "grade_min": 1,
+  "grade_max": 12,
+  "age_min": 6,
+  "age_max": 18,
+  "description_short": "Girl Scouts of Eastern Pennsylvania's largest overnight camp, on more than 400 acres in Gilbertsville, Montgomery County, for girls entering grades 1 to 12. Known for horseback riding, it also has a pool, high and low ropes, a climbing wall, disc golf and Swamp Creek to explore; campers sleep in cabins or platform tents.",
+  "indoor_outdoor": "outdoor",
+  "transportation": true,
+  "financial_aid": true,
+  "fees": [
+    {
+      "name": "Girl Scout membership",
+      "amount": 45,
+      "per": "year",
+      "required": true,
+      "source_url": "https://www.gsep.org/en/members/for-girl-scouts/camp-and-outdoors/camp-fa-application.html",
+      "note": "Campers must be registered GSEP Girl Scouts; unregistered campers pay $45 at drop off. GSEP's financial aid page says the 2027 member year (October 2026 to September 2027) costs $25 per girl."
+    },
+    {
+      "name": "Camp bus from Philadelphia (one way trip)",
+      "amount": 55,
+      "per": "once",
+      "required": false,
+      "note": "Sunday and Friday trips sold separately, each $55; stops at Northeast Towers and 56th and Chestnut."
+    }
+  ],
+  "swim_waterfront_notes": "Campers take a swim test at the start of the week and are grouped by ability; canoeing and off camp water trips need American Red Cross level 2.",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Overnight camp (7 weeks; half week, full week and multi week)",
+      "start_date": "2026-06-21",
+      "end_date": "2026-08-07",
+      "availability": "unknown"
+    }
+  ],
+  "notes": "Check in Sunday 2 to 4 PM; full week check out Friday 4 to 5 PM, half week Tuesday 5 PM. Weekly tuition is set per program in the GSEP camp guide and event calendar, which were not posted when checked. Non members buy a membership to register.",
+  "sources": [
+    {
+      "url": "https://www.gsep.org/en/members/for-girl-scouts/camp-and-outdoors/our-camp-locations/camp-laughing-waters.html",
+      "checked": "2026-11-27",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "gender_policy",
+        "grade_min",
+        "grade_max",
+        "age_min",
+        "age_max",
+        "description_short",
+        "indoor_outdoor",
+        "transportation",
+        "fees",
+        "swim_waterfront_notes",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. 7 weeks June 21 to August 7 (2026: the page refers to the 2026 camp guide). Campers entering grades 1 to 12; ages derived, not stated. Bus prices from the bussing section."
+    },
+    {
+      "url": "https://www.gsep.org/content/dam/gsep-redesign/documents/camp-and-properties/camp-confirmation-packets-/my26/Camp%20Laughing%20Waters%20confirmation%20packet.pdf",
+      "checked": "2026-11-27",
+      "fields": [
+        "street_address",
+        "city",
+        "state",
+        "zip"
+      ],
+      "note": "Researched by Claude from this page. GSEP's own Camp Laughing Waters confirmation packet (2026 member year): 300 Hildebeidel Road, Gilbertsville, PA 19525."
+    },
+    {
+      "url": "https://www.gsep.org/en/members/for-girl-scouts/camp-and-outdoors/camp-fa-application.html",
+      "checked": "2026-11-27",
+      "fields": [
+        "financial_aid"
+      ],
+      "note": "Researched by Claude from this page. Camp Financial Aid Application: aid for GSEP members covers 50% of one camp session; $50 deposit secures a camp space; $45 membership fee for unregistered campers."
+    }
+  ],
+  "review": {
+    "status": "ready",
+    "source": {
+      "url": "https://www.gsep.org/en/members/for-girl-scouts/camp-and-outdoors/our-camp-locations/camp-laughing-waters.html",
+      "kind": "html",
+      "title": "Camp Laughing Waters"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Weekly tuition",
+      "2027 dates",
+      "Meals (dining hall on site; not stated whether all meals included)",
+      "ACA accreditation"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-27",
+      "page_checked": "https://www.gsep.org/en/members/for-girl-scouts/camp-and-outdoors/our-camp-locations/camp-laughing-waters.html",
+      "changes": [
+        "New camp, researched from https://www.gsep.org/en/members/for-girl-scouts/camp-and-outdoors/our-camp-locations/camp-laughing-waters.html"
+      ],
+      "for_andrew": []
+    }
+  }
+}

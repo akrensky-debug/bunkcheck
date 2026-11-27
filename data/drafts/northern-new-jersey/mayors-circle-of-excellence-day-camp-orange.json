@@ -1,0 +1,137 @@
+{
+  "slug": "mayors-circle-of-excellence-day-camp-orange",
+  "name": "Mayor's Circle of Excellence Day Camp",
+  "operator_name": "Metropolitan YMCA of the Oranges",
+  "website_url": "https://metroymcas.org/eoy-summer-camp",
+  "registration_url": "https://ymcaoranges.sgasoftware.com/Sales/Product?ProductTypeID=100-999&DT=List&SearchText=2027%20East%20Orange%20YMCA%20-%20Mayor%27s%20Circle%20of%20Excellence%20Day%20Camp",
+  "phone": "973-609-6082",
+  "street_address": "Lincoln Avenue School, 216 Lincoln Avenue",
+  "city": "Orange",
+  "state": "NJ",
+  "zip": "07050",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "swimming"
+  ],
+  "activities": [
+    "outdoor games",
+    "creative projects",
+    "team activities",
+    "swimming",
+    "field trips",
+    "theme days",
+    "talent show"
+  ],
+  "age_min": 6,
+  "age_max": 13,
+  "description_short": "East Orange YMCA day camp at Lincoln Avenue School in Orange for ages 6 to 13 (6 year olds must be entering grade 1), with outdoor games, creative projects, team activities, weekly trips and swimming at the Central Playground pool. Breakfast, lunch and an afternoon snack are served daily.",
+  "indoor_outdoor": "both",
+  "price_min": 260,
+  "price_max": 260,
+  "price_per": "session",
+  "fees": [
+    {
+      "name": "Extra camp t-shirt",
+      "amount": 10,
+      "per": "once",
+      "required": false,
+      "note": "One shirt is included; extras are $10 each"
+    }
+  ],
+  "meals_included": true,
+  "financial_aid": true,
+  "refund_policy_summary": "Changes are free through January 31, 2027. Full refund for cancellations by April 1, 2027; from April 2 all payments, including deposits, are forfeited, and there are no credits for absence or illness. Changes through the Welcome Center or after April 2 cost $35 per child per request. The East Orange YMCA registration fee is non-refundable.",
+  "swim_waterfront_notes": "Swims at the Central Playground pool, 371 Central Avenue, Orange.",
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Summer 2027 (sessions sold separately; no camp July 5)",
+      "start_date": "2027-06-28",
+      "end_date": "2027-08-13",
+      "price": null,
+      "availability": "unknown"
+    }
+  ],
+  "notes": "Rate is $260 per session ($247 early bird, December 1, 2026 to January 31, 2027); City of Orange residents get a discount the page does not print. A non-refundable 5% down payment ($13 per session) is due at registration and counts toward the fee. Camp runs Monday to Friday 8 a.m. to 5:30 p.m.; Week 7 meets at 650 Nassau Street, Orange. A Counselor in Training camp for ages 13 to 15 runs at the same school June 28 to August 6 at $162 per session. Program for Parents accepted. Y for All financial assistance available.",
+  "sources": [
+    {
+      "url": "https://metroymcas.org/eoy-summer-camp",
+      "checked": "2026-11-27",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "indoor_outdoor",
+        "price_min",
+        "price_max",
+        "price_per",
+        "fees",
+        "meals_included",
+        "financial_aid",
+        "swim_waterfront_notes",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. 2027 MCE at Lincoln Avenue School, 216 Lincoln Avenue, Orange 07050, ages 6 to 13, June 28 to August 13 (no camp July 5), 8 a.m. to 5:30 p.m. $260 per session. Discount for City of Orange residents (amount not printed). Phone is the camp cell. CIT camp ages 13 to 15, $162 per session."
+    },
+    {
+      "url": "https://metroymcas.org/hubfs/Summer%20Camp/2027%20Metro%20Y%20Camp%20Registration%20and%20Payment%20Policy%20updated%2011.26.26.pdf?hsLang=en",
+      "checked": "2026-11-27",
+      "fields": [
+        "refund_policy_summary"
+      ],
+      "note": "Researched by Claude from this page. 2027 Metro YMCA Camp Registration and Payment Policy, updated 11/26/26."
+    },
+    {
+      "url": "https://metroymcas.org/hubfs/Summer%20Camp/MCE%20Master%20Calendar%202027.pdf?hsLang=en",
+      "checked": "2026-11-27",
+      "fields": [],
+      "note": "Researched by Claude from this page. MCE 2027 master calendar: weekly themes, trip days, talent show and last day of camp August 13."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://metroymcas.org/eoy-summer-camp",
+      "kind": "html",
+      "title": "EOY Summer Camp"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Whether a 'session' is one week (the page prices camp per session; the payment policy lists weekly camp dates)",
+      "Amount of the East Orange YMCA registration fee (named in the payment policy, amount not printed)",
+      "Before and after care",
+      "City of Orange resident discount amount"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "city 'Orange', NJ is not in cities.py"
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-27",
+      "page_checked": "https://metroymcas.org/eoy-summer-camp",
+      "changes": [
+        "New camp, researched from https://metroymcas.org/eoy-summer-camp"
+      ],
+      "for_andrew": [
+        "Same 'per session' question: confirm a session is one week?"
+      ]
+    }
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "slug": "lincoln-park-little-kids-camp-lincoln-park",
+  "name": "Lincoln Park Little Kids Camp",
+  "operator_name": "Borough of Lincoln Park Recreation",
+  "website_url": "https://lincolnpark.org/360/Summer-Camps",
+  "registration_url": "https://secure.rec1.com/NJ/lincoln-park-nj/catalog",
+  "email": "lpsummercamp@bolp.org",
+  "street_address": "LP PAL/Community Center, 10 Boonton Turnpike",
+  "city": "Lincoln Park",
+  "state": "NJ",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "arts"
+  ],
+  "activities": [
+    "circle time",
+    "indoor and outdoor play",
+    "theme days",
+    "crafts",
+    "water play",
+    "library visits",
+    "playground"
+  ],
+  "age_min": 3,
+  "age_max": 4,
+  "description_short": "Morning camp for Lincoln Park children ages 3 and 4 at the PAL/Community Center, Monday to Thursday 9 to noon, with circle time, play, crafts, theme weeks, sprinkler days and library and playground visits. Only Lincoln Park residents can register.",
+  "indoor_outdoor": "both",
+  "price_per_week": 90,
+  "price_min": 75,
+  "price_max": 90,
+  "price_per": "week",
+  "meals_included": false,
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Week 1",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-09",
+      "availability": "unknown",
+      "price": 90
+    },
+    {
+      "name": "Week 2",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-16",
+      "availability": "unknown",
+      "price": 90
+    },
+    {
+      "name": "Week 3",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-23",
+      "availability": "unknown",
+      "price": 90
+    },
+    {
+      "name": "Week 4",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-30",
+      "availability": "unknown",
+      "price": 90
+    },
+    {
+      "name": "Week 5",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-06",
+      "availability": "unknown",
+      "price": 90
+    },
+    {
+      "name": "Week 6",
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-13",
+      "availability": "unknown",
+      "price": 90
+    }
+  ],
+  "notes": "Lincoln Park residents only. Campers must be 3 by June 1, 2026 and potty trained; children entering kindergarten in fall 2026 are not eligible. $75 per week if paid by May 3, $90 after that and for add-on weeks. Snacks are not included. One camp shirt per child.",
+  "sources": [
+    {
+      "url": "https://lincolnpark.org/360/Summer-Camps",
+      "checked": "2026-11-27",
+      "fields": [
+        "name",
+        "website_url",
+        "registration_url",
+        "email"
+      ],
+      "note": "Researched by Claude from this page. 2026 camp page: Little Kids Camp July 6 to August 13 for LP resident children ages 3 to 4"
+    },
+    {
+      "url": "https://lincolnpark.org/DocumentCenter/View/10864/LKC-2026-Registration",
+      "checked": "2026-11-27",
+      "fields": [
+        "operator_name",
+        "street_address",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "indoor_outdoor",
+        "price_per_week",
+        "price_min",
+        "price_max",
+        "price_per",
+        "meals_included",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. 2026 LKC registration form (PDF). Weekly price is the regular rate after May 3"
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=10+Boonton+Turnpike%2C+Lincoln+Park%2C+NJ&benchmark=Public_AR_Current&format=json",
+      "checked": "2026-11-27",
+      "fields": [
+        "zip"
+      ],
+      "note": "ZIP looked up with the Census Bureau geocoder from the address on the camp's page (10 BOONTON TPKE, LINCOLN PARK, NJ, 07035)"
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://lincolnpark.org/360/Summer-Camps",
+      "kind": "html",
+      "title": "Summer Camps | Lincoln Park, NJ"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Financial aid",
+      "Refund policy"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-27",
+      "page_checked": "https://lincolnpark.org/360/Summer-Camps",
+      "changes": [
+        "New camp, researched from https://lincolnpark.org/360/Summer-Camps",
+        "ZIP 07035 looked up from the camp's street address with the Census geocoder (ZIP lookups allowed by Andrew, 22 November)."
+      ],
+      "for_andrew": [
+        "Residents only: Little Kids Camp is for Lincoln Park resident children ages 3 to 4, so there is no non-resident rate. List it anyway?"
+      ]
+    }
+  },
+  "zip": "07035"
+}
