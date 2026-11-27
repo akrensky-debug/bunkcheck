@@ -1301,7 +1301,8 @@
             "price_min",
             "price_max",
             "price_per",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
         },
@@ -1316,6 +1317,15 @@
             "refund_policy_summary"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Lunch",
+          "amount": 43,
+          "per": "week",
+          "required": false,
+          "note": "Boxed lunch, added at registration for the whole week only."
         }
       ]
     },
@@ -3388,9 +3398,19 @@
             "meals_included",
             "financial_aid",
             "refund_policy_summary",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-22, approved by Andrew Krensky"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Registration fee",
+          "amount": 50,
+          "per": "once",
+          "required": true,
+          "note": "Not refunded on cancellation. The page names it only in the cancellation policy and doesn't say whether it is per camper or per season."
         }
       ]
     },
@@ -3524,7 +3544,8 @@
             "price_max",
             "price_per",
             "refund_policy_summary",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-22, approved by Andrew Krensky"
         },
@@ -3552,6 +3573,15 @@
             "meals_included"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-22, approved by Andrew Krensky"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Linen rental",
+          "amount": 125,
+          "per": "session",
+          "required": false,
+          "note": "Optional. The page prints the price without a unit, so per session is my reading."
         }
       ]
     },
@@ -3863,7 +3893,8 @@
             "price_per",
             "extended_care",
             "financial_aid",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
         },
@@ -3884,6 +3915,22 @@
             "meals_included"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Look Park camp pass",
+          "amount": 20,
+          "per": "session",
+          "required": true,
+          "note": "Needed to drive into Look Park for drop off and pick up, same price for residents and non residents. A Look Park season pass ($75 on this page) also works."
+        },
+        {
+          "name": "Extended day",
+          "amount": 35,
+          "per": "week",
+          "required": false,
+          "note": "7:45 am to 5:15 pm. $35 for five day weeks, $30 for four day weeks."
         }
       ]
     },
@@ -3999,7 +4046,8 @@
             "price_per",
             "extended_care",
             "financial_aid",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
         },
@@ -4020,6 +4068,22 @@
             "meals_included"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Look Park camp pass",
+          "amount": 20,
+          "per": "session",
+          "required": true,
+          "note": "Needed to drive into Look Park for drop off and pick up, same price for residents and non residents. A Look Park season pass ($80 on this page) also works."
+        },
+        {
+          "name": "Extended day",
+          "amount": 35,
+          "per": "week",
+          "required": false,
+          "note": "7:45 am to 5:15 pm. $35 for five day weeks, $30 for four day weeks."
         }
       ]
     },
@@ -4378,7 +4442,8 @@
             "description_short",
             "aca_accredited",
             "aca_source_url",
-            "refund_policy_summary"
+            "refund_policy_summary",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
         },
@@ -4413,7 +4478,23 @@
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
         }
       ],
-      "zip": "01075"
+      "zip": "01075",
+      "fees": [
+        {
+          "name": "Membership",
+          "amount": 55,
+          "per": "year",
+          "required": true,
+          "note": "Charged to campers who aren't already Girl Scouts. It includes Girl Scout membership through September 2026."
+        },
+        {
+          "name": "Camp Fireflies (Thursday evening)",
+          "amount": 30,
+          "per": "session",
+          "required": false,
+          "note": "Optional Thursday evening with dinner and campfire, pick up at 8 pm."
+        }
+      ]
     },
     {
       "slug": "camp-romaca-hinsdale",
@@ -4684,7 +4765,8 @@
             "price_per",
             "transportation",
             "financial_aid",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-22, approved by Andrew Krensky"
         },
@@ -4707,6 +4789,15 @@
             "zip"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-22, approved by Andrew Krensky"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Bus",
+          "amount": 60,
+          "per": "session",
+          "required": false,
+          "note": "Drop off and pick up at the YWCA, 1 Salem Square, Worcester. Sessions are one week."
         }
       ]
     },
@@ -4936,9 +5027,19 @@
             "meals_included",
             "refund_policy_summary",
             "swim_waterfront_notes",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-22, approved by Andrew Krensky"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Extended care (morning)",
+          "amount": 50,
+          "per": "session",
+          "required": false,
+          "note": "Pre program 7:45 to 8:30 am, booked for the whole week. $40 for session 1. Limited to 10 campers a session."
         }
       ]
     },
@@ -5229,9 +5330,19 @@
             "extended_care",
             "meals_included",
             "refund_policy_summary",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Extended care (afternoon)",
+          "amount": 50,
+          "per": "session",
+          "required": false,
+          "note": "Aftercare 3:30 to 5:30 pm. Sessions are one week."
         }
       ]
     },
@@ -5438,7 +5549,8 @@
             "price_per",
             "extended_care",
             "financial_aid",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
         },
@@ -5452,6 +5564,22 @@
             "aca_source_url"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Extended care (morning)",
+          "amount": 60,
+          "per": "week",
+          "required": false,
+          "note": "8 to 9 am. Sliding scale $12 to $60 a week, $7 to $35 for a 3 day half day session, or $3 to $15 a day. Amount is the top of the scale."
+        },
+        {
+          "name": "Extended care (afternoon)",
+          "amount": 85,
+          "per": "week",
+          "required": false,
+          "note": "3:30 to 5 pm. Sliding scale $17 to $85 a week, or $4 to $20 a day. Amount is the top of the scale."
         }
       ]
     },
@@ -5587,7 +5715,8 @@
             "price_max",
             "price_per",
             "meals_included",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
         },
@@ -5604,6 +5733,22 @@
             "refund_policy_summary"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Field trip",
+          "amount": 50,
+          "per": "day",
+          "required": false,
+          "note": "Optional weekly trips for ages 7 to 12, priced per trip: New England Aquarium, Connecticut Sun, Southwick's Zoo, Basketball Hall of Fame, Patriots Training Camp."
+        },
+        {
+          "name": "Field trip (premium)",
+          "amount": 75,
+          "per": "day",
+          "required": false,
+          "note": "Optional trips for ages 7 to 12, priced per trip: Outdoor Escape Room, Six Flags (two dates), Boston Duck Boat Tours."
         }
       ]
     },
@@ -5904,6 +6049,37 @@
             "aca_source_url"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-22, approved by Andrew Krensky"
+        },
+        {
+          "url": "https://www.ymcaofcm.org/wp-content/uploads/2026/02/YMCA-Camp-Lowe-Parent-Handbook-2026-v1.pdf?x81515",
+          "checked": "2026-11-27",
+          "fields": [
+            "fees"
+          ],
+          "note": "Fees researched by Claude from this page"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Bus",
+          "amount": 90,
+          "per": "week",
+          "required": false,
+          "note": "Morning and afternoon bus from the YMCA in Fitchburg."
+        },
+        {
+          "name": "Extended care (morning)",
+          "amount": 30,
+          "per": "week",
+          "required": false,
+          "note": "From 7 am, at Camp Lowe or the YMCA in Fitchburg."
+        },
+        {
+          "name": "Extended care (afternoon)",
+          "amount": 30,
+          "per": "week",
+          "required": false,
+          "note": "Until 5:30 pm at Camp Lowe."
         }
       ]
     }

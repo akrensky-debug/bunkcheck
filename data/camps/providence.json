@@ -941,9 +941,26 @@
             "refund_policy_summary",
             "aca_accredited",
             "aca_source_url",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "$600 per two-week session plus required club membership ($70/yr for non-Pawtucket residents). Lunch optional for $50/session. Extended care 7:30am-5:30pm, $100 per session. Buses from Pawtucket/RI and Norton, Seekonk and Attleboro stops. Brochure states ACA accredited. Phone is summer number."
+        }
+      ],
+      "fees": [
+        {
+          "name": "Membership",
+          "amount": 70,
+          "per": "year",
+          "required": true,
+          "note": "Boys & Girls Club of Pawtucket membership, required for camp. $50 for Pawtucket and Central Falls residents."
+        },
+        {
+          "name": "Lunch",
+          "amount": 50,
+          "per": "session",
+          "required": false,
+          "note": "Bought in advance at registration, per two week session."
         }
       ]
     },
@@ -1176,7 +1193,8 @@
             "extended_care",
             "meals_included",
             "refund_policy_summary",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Ages derived from grades K-6. Prices are non-member weekly rates (members $356; $286 for 4-day Week 2); registration fee $75 non-member. Early care 8:00-8:45 ($12.50/day), extended care 4:00-5:30 ($25/day). Lunch provided. Address is the Dwares JCC address in the page's structured data; camp arrival is at the Session St. playground. Week 2 has no camp July 3."
         },
@@ -1197,6 +1215,29 @@
           "role": "Assistant Director of Youth and Family Programs",
           "url": "https://www.jewishallianceri.org/explore-programs/for-children/summer-j-camp",
           "checked": "2026-11-13"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Registration fee",
+          "amount": 75,
+          "per": "once",
+          "required": true,
+          "note": "Non member rate; $45 for Dwares JCC members. Not refundable."
+        },
+        {
+          "name": "Early care",
+          "amount": 12.5,
+          "per": "day",
+          "required": false,
+          "note": "8:00 to 8:45 am."
+        },
+        {
+          "name": "Extended care",
+          "amount": 25,
+          "per": "day",
+          "required": false,
+          "note": "4:00 to 5:30 pm."
         }
       ]
     },
@@ -1725,7 +1766,8 @@
             "extended_care",
             "meals_included",
             "refund_policy_summary",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Open to campers entering nursery (age 3) through grade 8 in fall 2026; age_max 14 derived from grade 8. After care to 4:30 pm, $45/week. Campers pack their own lunch. Eight one-week sessions June 22-August 14, 2026; no camp July 6."
         },
@@ -1738,6 +1780,15 @@
             "price_per"
           ],
           "note": "Classic day camp $230 half day / $415 full day (with discount); Quest for the Cup week $335. Specialty camps range about $230-$330 per half day."
+        }
+      ],
+      "fees": [
+        {
+          "name": "After care",
+          "amount": 45,
+          "per": "week",
+          "required": false,
+          "note": "3:45 to 4:30 pm; no drop ins."
         }
       ]
     },
@@ -3860,7 +3911,8 @@
           "url": "https://wheelersummercamp.com/familyinfo/extended-day-program/",
           "checked": "2026-10-02",
           "fields": [
-            "extended_care"
+            "extended_care",
+            "fees"
           ],
           "note": "PM care 4-5:30 PM, $200 per 2-week session (Seekonk campus only)."
         },
@@ -3888,6 +3940,22 @@
             "aca_source_url"
           ],
           "note": "ACA Find a Camp lists Wheeler Summer as ACA accredited."
+        }
+      ],
+      "fees": [
+        {
+          "name": "Extended care (afternoon)",
+          "amount": 200,
+          "per": "session",
+          "required": false,
+          "note": "PM Care 4:00 to 5:30 pm, per two week session, at the Seekonk campus."
+        },
+        {
+          "name": "Extended care and late bus",
+          "amount": 250,
+          "per": "session",
+          "required": false,
+          "note": "PM Care to 5:00 pm plus the late bus to Providence (arrives 5:30 pm), per two week session; includes the morning bus from Providence."
         }
       ]
     },
@@ -4615,9 +4683,42 @@
             "transportation",
             "financial_aid",
             "refund_policy_summary",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Traditional camp non-member (program participant) rates: ages 5-6 $390/week, ages 7-14 $365/week (age 4 only at Metacomet/Weetamoe). Extended care 7-9am and 4-6pm at Fall River ($60 AM/$40 PM per week). Bus service available for Quequechan ($40 one-way/$80 two-way per week). Sessions A-J."
+        }
+      ],
+      "fees": [
+        {
+          "name": "Extended care (morning)",
+          "amount": 60,
+          "per": "week",
+          "required": false
+        },
+        {
+          "name": "Extended care (afternoon)",
+          "amount": 40,
+          "per": "week",
+          "required": false
+        },
+        {
+          "name": "Extended care (morning and afternoon)",
+          "amount": 100,
+          "per": "week",
+          "required": false
+        },
+        {
+          "name": "Bus (one way)",
+          "amount": 40,
+          "per": "week",
+          "required": false
+        },
+        {
+          "name": "Bus (round trip)",
+          "amount": 80,
+          "per": "week",
+          "required": false
         }
       ]
     },
@@ -4761,9 +4862,30 @@
             "price_per",
             "financial_aid",
             "refund_policy_summary",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Non-member (program participant) rates: ages 4-6 $390/week, ages 7-14 $365/week; specialty dance/cheer/acro weeks $390. Sessions A-J. Bus service is listed only for other camps."
+        }
+      ],
+      "fees": [
+        {
+          "name": "Extended care (morning)",
+          "amount": 60,
+          "per": "week",
+          "required": false
+        },
+        {
+          "name": "Extended care (afternoon)",
+          "amount": 40,
+          "per": "week",
+          "required": false
+        },
+        {
+          "name": "Extended care (morning and afternoon)",
+          "amount": 100,
+          "per": "week",
+          "required": false
         }
       ]
     },
@@ -5372,13 +5494,23 @@
           "checked": "2026-11-13",
           "fields": [
             "email",
-            "phone"
+            "phone",
+            "fees"
           ],
           "note": "Contact pass: email and phone as shown on this page."
         }
       ],
       "email": "CustomerCare@gssne.org",
-      "phone": "401-331-4500"
+      "phone": "401-331-4500",
+      "fees": [
+        {
+          "name": "Girl Scout membership",
+          "amount": 55,
+          "per": "year",
+          "required": true,
+          "note": "Required for campers who are not already registered Girl Scouts; valid through September 30, 2026. The $35 non-refundable deposit goes toward the session."
+        }
+      ]
     },
     {
       "slug": "ymca-camp-fuller",
@@ -6138,7 +6270,8 @@
             "meals_included",
             "indoor_outdoor",
             "camp_type",
-            "primary_categories"
+            "primary_categories",
+            "fees"
           ],
           "note": "Campers bring a non-perishable lunch. Optional early drop-off (8:30) / late pick-up (4:00) buffer offered for traffic delays."
         },
@@ -6168,6 +6301,15 @@
             "swim_waterfront_notes"
           ],
           "note": "2026 registration package. A $25 CBC youth membership is required in addition to course fees. 'Sailorships' offer reduced tuition to qualified youth."
+        }
+      ],
+      "fees": [
+        {
+          "name": "Youth membership",
+          "amount": 25,
+          "per": "year",
+          "required": true,
+          "note": "CBC Youth Membership, required before adding classes. Non-refundable."
         }
       ]
     },
@@ -7268,7 +7410,8 @@
             "extended_care",
             "meals_included",
             "refund_policy_summary",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-12, approved by Andrew"
         },
@@ -7279,6 +7422,35 @@
             "price_min"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-12, approved by Andrew"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Registration fee",
+          "amount": 25,
+          "per": "once",
+          "required": true,
+          "note": "Charged to non-members of Aim High Academy; members pay none. The flyer does not say how often it is charged. The $150 non-refundable deposit per session goes toward the balance."
+        },
+        {
+          "name": "Extended care (morning)",
+          "amount": 50,
+          "per": "week",
+          "required": false,
+          "note": "8:00 to 9:00am"
+        },
+        {
+          "name": "Extended care (afternoon)",
+          "amount": 100,
+          "per": "week",
+          "required": false,
+          "note": "3:00 to 5:00pm"
+        },
+        {
+          "name": "Extended care (morning and afternoon)",
+          "amount": 125,
+          "per": "week",
+          "required": false
         }
       ]
     },
@@ -7410,9 +7582,19 @@
             "refund_policy_summary",
             "special_needs_notes",
             "swim_waterfront_notes",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-12, approved by Andrew"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Registration fee",
+          "amount": 50,
+          "per": "once",
+          "required": true,
+          "note": "One-time family registration fee, non-refundable."
         }
       ]
     },
@@ -7591,9 +7773,26 @@
             "price_per",
             "extended_care",
             "financial_aid",
-            "refund_policy_summary"
+            "refund_policy_summary",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-12, approved by Andrew"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Extended care (morning)",
+          "amount": 50,
+          "per": "week",
+          "required": false,
+          "note": "8 to 9am; also $10 per hour."
+        },
+        {
+          "name": "Extended care (afternoon)",
+          "amount": 50,
+          "per": "week",
+          "required": false,
+          "note": "3 to 4pm; also $10 per hour."
         }
       ]
     },
@@ -7693,7 +7892,8 @@
             "extended_care",
             "transportation",
             "email",
-            "price_per"
+            "price_per",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-12, approved by Andrew"
         },
@@ -7720,6 +7920,28 @@
             "refund_policy_summary"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-12, approved by Andrew"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Before care",
+          "amount": 30,
+          "per": "week",
+          "required": false,
+          "note": "Non-member rate; $25 per week for Y members. 7:00 to 8:00am."
+        },
+        {
+          "name": "After care",
+          "amount": 30,
+          "per": "week",
+          "required": false,
+          "note": "Non-member rate; $25 per week for Y members. 4:30 to 5:30pm."
+        },
+        {
+          "name": "Bus",
+          "amount": 25,
+          "per": "week",
+          "required": false
         }
       ]
     },
@@ -7791,7 +8013,8 @@
             "price_per",
             "meals_included",
             "refund_policy_summary",
-            "indoor_outdoor"
+            "indoor_outdoor",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-12, approved by Andrew"
         },
@@ -7813,7 +8036,16 @@
       "indoor_outdoor": "indoor",
       "price_per": "session",
       "meals_included": false,
-      "refund_policy_summary": "No refund unless Registration Protection is bought at registration; $70 administrative fee on all cancellations; no cancellation refunds within 7 days of camp."
+      "refund_policy_summary": "No refund unless Registration Protection is bought at registration; $70 administrative fee on all cancellations; no cancellation refunds within 7 days of camp.",
+      "fees": [
+        {
+          "name": "Registration fees",
+          "amount": 23,
+          "per": "session",
+          "required": true,
+          "note": "July camp. The page prints the cost as $323, which is $300 plus $23 fees. Optional Registration Protection is sold at checkout with no price printed."
+        }
+      ]
     },
     {
       "slug": "camp-agawam-rumford",
@@ -7958,6 +8190,14 @@
             "refund_policy_summary"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-12, approved by Andrew"
+        },
+        {
+          "url": "https://www.attleboroymca.org/sites/default/files/2026-04/Camp%20%26%20Financial%20Assistance%20Form.pdf",
+          "checked": "2026-11-27",
+          "fields": [
+            "fees"
+          ],
+          "note": "Fees researched by Claude from this page"
         }
       ],
       "email": "campadmin@attleboroymca.org",
@@ -7992,7 +8232,36 @@
         "basketball"
       ],
       "swim_waterfront_notes": "Outdoor eight-lane pool with a three-foot entry area and a zero-depth splash pad; recreational swim on most days, supervised by lifeguards and counselors, with a swim check before swimming without flotation or in deeper water. Express Swim Lessons cost extra.",
-      "special_needs_notes": "Children with developmental and behavioral needs are integrated into regular groups of 10. No 1:1 support, but staff check in and give extra support; ABAs may accompany campers after a background check."
+      "special_needs_notes": "Children with developmental and behavioral needs are integrated into regular groups of 10. No 1:1 support, but staff check in and give extra support; ABAs may accompany campers after a background check.",
+      "fees": [
+        {
+          "name": "Camp improvement fee",
+          "amount": 25,
+          "per": "once",
+          "required": true,
+          "note": "Non-refundable, charged per registration for Traditional Camp, CIT and LIT."
+        },
+        {
+          "name": "Before care",
+          "amount": 30,
+          "per": "week",
+          "required": false,
+          "note": "Non-member rate; $25 per week for Y members. 7:00 to 8:00am."
+        },
+        {
+          "name": "After care",
+          "amount": 30,
+          "per": "week",
+          "required": false,
+          "note": "Non-member rate; $25 per week for Y members. 4:30 to 5:30pm."
+        },
+        {
+          "name": "Bus",
+          "amount": 25,
+          "per": "week",
+          "required": false
+        }
+      ]
     },
     {
       "slug": "camp-frederick-douglass-new-bedford",
@@ -8130,9 +8399,30 @@
           "fields": [
             "extended_care",
             "refund_policy_summary",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-12, approved by Andrew"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Extended care (morning)",
+          "amount": 60,
+          "per": "week",
+          "required": false
+        },
+        {
+          "name": "Extended care (afternoon)",
+          "amount": 40,
+          "per": "week",
+          "required": false
+        },
+        {
+          "name": "Extended care (morning and afternoon)",
+          "amount": 100,
+          "per": "week",
+          "required": false
         }
       ]
     },
@@ -8486,9 +8776,42 @@
             "price_max",
             "price_per",
             "financial_aid",
-            "refund_policy_summary"
+            "refund_policy_summary",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-12, approved by Andrew"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Extended care (morning)",
+          "amount": 60,
+          "per": "week",
+          "required": false
+        },
+        {
+          "name": "Extended care (afternoon)",
+          "amount": 40,
+          "per": "week",
+          "required": false
+        },
+        {
+          "name": "Extended care (morning and afternoon)",
+          "amount": 100,
+          "per": "week",
+          "required": false
+        },
+        {
+          "name": "Bus (one way)",
+          "amount": 40,
+          "per": "week",
+          "required": false
+        },
+        {
+          "name": "Bus (round trip)",
+          "amount": 80,
+          "per": "week",
+          "required": false
         }
       ]
     },
@@ -8718,7 +9041,8 @@
           "checked": "2026-11-13",
           "fields": [
             "registration_url",
-            "refund_policy_summary"
+            "refund_policy_summary",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-12, approved by Andrew"
         }
@@ -8730,7 +9054,29 @@
       "price_per": "week",
       "transportation": true,
       "financial_aid": true,
-      "refund_policy_summary": "$550 for the week includes a $75 non-refundable registration fee; the fee is returned if a waitlisted child is not placed."
+      "refund_policy_summary": "$550 for the week includes a $75 non-refundable registration fee; the fee is returned if a waitlisted child is not placed.",
+      "fees": [
+        {
+          "name": "Bus",
+          "amount": 100,
+          "per": "week",
+          "required": false
+        },
+        {
+          "name": "One to one support",
+          "amount": 750,
+          "per": "week",
+          "required": false,
+          "note": "Charged when the camp directors decide a camper needs a 1:1 staff member and the family is not covered by RI Medical Assistance or Katie Beckett. For campers dropped off at camp."
+        },
+        {
+          "name": "One to one support with bus",
+          "amount": 1000,
+          "per": "week",
+          "required": false,
+          "note": "1:1 support at camp and on the bus. The page's payment button for this option reads $1,100 (1:1 staff and transportation)."
+        }
+      ]
     },
     {
       "slug": "camp-whitin-whitinsville",
@@ -9506,7 +9852,8 @@
             "refund_policy_summary",
             "swim_waterfront_notes",
             "sessions",
-            "primary_categories"
+            "primary_categories",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-12, approved by Andrew"
         },
@@ -9521,6 +9868,15 @@
             "zip"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-12, approved by Andrew"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Registration fee",
+          "amount": 15,
+          "per": "once",
+          "required": true,
+          "note": "Printed as \"+ $15 registration fee\" beside both the weekly and daily prices; kept when a family cancels. The page doesn't say whether it is charged once or per week booked."
         }
       ]
     },
@@ -9913,7 +10269,8 @@
             "extended_care",
             "meals_included",
             "refund_policy_summary",
-            "special_needs_notes"
+            "special_needs_notes",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-12, approved by Andrew"
         },
@@ -9924,6 +10281,29 @@
             "sessions"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-12, approved by Andrew"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Early care",
+          "amount": 85,
+          "per": "week",
+          "required": false,
+          "note": "8 to 9am."
+        },
+        {
+          "name": "After care",
+          "amount": 85,
+          "per": "week",
+          "required": false,
+          "note": "3 to 4pm."
+        },
+        {
+          "name": "Surround care drop in",
+          "amount": 20,
+          "per": "day",
+          "required": false,
+          "note": "Morning or afternoon."
         }
       ]
     },
@@ -10042,7 +10422,8 @@
             "activities",
             "description_short",
             "swim_waterfront_notes",
-            "indoor_outdoor"
+            "indoor_outdoor",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-12, approved by Andrew"
         },
@@ -10262,6 +10643,15 @@
           "price": 430,
           "availability": "unknown"
         }
+      ],
+      "fees": [
+        {
+          "name": "T-shirt",
+          "amount": 15,
+          "per": "once",
+          "required": false,
+          "note": "Sea Adventure Camp t-shirt for Thursday tie dye; campers can bring their own shirt instead."
+        }
       ]
     },
     {
@@ -10387,7 +10777,8 @@
             "refund_policy_summary",
             "grade_min",
             "grade_max",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-12, approved by Andrew"
         },
@@ -10509,6 +10900,36 @@
           "end_date": "2026-08-28",
           "price": 350,
           "availability": "waitlist"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Registration fee",
+          "amount": 30,
+          "per": "summer",
+          "required": true,
+          "note": "One time per summer, non-refundable. The $30 per week deposit goes toward the week."
+        },
+        {
+          "name": "Extended care (morning)",
+          "amount": 45,
+          "per": "week",
+          "required": false,
+          "note": "Elementary program, 7:30 to 8:45am. Gopher Program (grades 7 to 9): $30 per week."
+        },
+        {
+          "name": "Extended care (afternoon)",
+          "amount": 55,
+          "per": "week",
+          "required": false,
+          "note": "Elementary program, 3:15 to 5:30pm. Gopher Program: $40 per week."
+        },
+        {
+          "name": "Extended care (morning and afternoon)",
+          "amount": 65,
+          "per": "week",
+          "required": false,
+          "note": "Elementary program, 7:30am to 5:30pm. Gopher Program: $50 per week."
         }
       ]
     },
@@ -14716,7 +15137,8 @@
             "secondary_categories",
             "activities",
             "description_short",
-            "refund_policy_summary"
+            "refund_policy_summary",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-12, approved by Andrew"
         }
@@ -14797,7 +15219,51 @@
         "swimming",
         "adventure"
       ],
-      "refund_policy_summary": "$25 non-refundable registration fee for all camps. Early-bird weekly rates through January 31."
+      "refund_policy_summary": "$25 non-refundable registration fee for all camps. Early-bird weekly rates through January 31.",
+      "fees": [
+        {
+          "name": "Registration fee",
+          "amount": 25,
+          "per": "once",
+          "required": true,
+          "note": "Non-refundable, all camps."
+        },
+        {
+          "name": "Supplies fee",
+          "amount": 25,
+          "per": "week",
+          "required": true,
+          "note": "Art Explosion and Culinary specialty camps only."
+        },
+        {
+          "name": "Trip fee",
+          "amount": 75,
+          "per": "week",
+          "required": true,
+          "note": "Voyagers travel camp only."
+        },
+        {
+          "name": "Before care",
+          "amount": 25,
+          "per": "week",
+          "required": false,
+          "note": "7 to 8am."
+        },
+        {
+          "name": "After care",
+          "amount": 25,
+          "per": "week",
+          "required": false,
+          "note": "5 to 6pm."
+        },
+        {
+          "name": "Swim lessons",
+          "amount": 65,
+          "per": "week",
+          "required": false,
+          "note": "5 to 6pm."
+        }
+      ]
     },
     {
       "slug": "ymca-camp-westwood-coventry",
@@ -15298,7 +15764,8 @@
             "financial_aid",
             "refund_policy_summary",
             "indoor_outdoor",
-            "secondary_categories"
+            "secondary_categories",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-12, approved by Andrew"
         },
@@ -15310,6 +15777,15 @@
             "sessions"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-12, approved by Andrew"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Lunch",
+          "amount": 10,
+          "per": "day",
+          "required": false,
+          "note": "Ordered at morning drop off; includes a drink and morning and afternoon snacks."
         }
       ]
     },
@@ -15719,7 +16195,8 @@
             "refund_policy_summary",
             "swim_waterfront_notes",
             "sessions",
-            "secondary_categories"
+            "secondary_categories",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-12, approved by Andrew"
         },
@@ -15744,7 +16221,23 @@
         "swimming"
       ],
       "email": "Plainvillepark@plainville.ma.us",
-      "phone": "508-695-5451"
+      "phone": "508-695-5451",
+      "fees": [
+        {
+          "name": "Before care",
+          "amount": 20,
+          "per": "day",
+          "required": false,
+          "note": "Flat rate per child per day; register at least one week ahead. Not offered on rainy days at the Wood School."
+        },
+        {
+          "name": "After care",
+          "amount": 25,
+          "per": "day",
+          "required": false,
+          "note": "4 to 6pm, flat rate per child per day; register at least one week ahead. Not offered on rainy days at the Wood School."
+        }
+      ]
     },
     {
       "slug": "sail-newport-summer-youth-sailing-programs-newport",
@@ -16031,7 +16524,8 @@
             "price_per",
             "extended_care",
             "refund_policy_summary",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-12, approved by Andrew"
         },
@@ -16066,6 +16560,29 @@
           "role": "Director of Operations",
           "url": "https://bgcnewbedford.org/contact-us/",
           "checked": "2026-11-13"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Club membership",
+          "amount": 50,
+          "per": "year",
+          "required": true,
+          "note": "All Summer Fun participants must be Club members; expires 12/31/26."
+        },
+        {
+          "name": "Club T-shirt",
+          "amount": 5,
+          "per": "once",
+          "required": true,
+          "note": "Required for field trips; bought at the front desk."
+        },
+        {
+          "name": "Extended care",
+          "amount": 10,
+          "per": "day",
+          "required": false,
+          "note": "Until 5:00pm, per child."
         }
       ]
     },
@@ -18213,7 +18730,8 @@
             "price_per_week",
             "price_per",
             "extended_care",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-22, approved by Andrew Krensky",
           "checked": "2026-11-25"
@@ -18227,7 +18745,23 @@
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-22, approved by Andrew Krensky"
         }
       ],
-      "zip": "02909"
+      "zip": "02909",
+      "fees": [
+        {
+          "name": "Before care",
+          "amount": 25,
+          "per": "week",
+          "required": false,
+          "note": "7:00 to 8:00 am"
+        },
+        {
+          "name": "After care",
+          "amount": 25,
+          "per": "week",
+          "required": false,
+          "note": "4:30 to 5:30 pm"
+        }
+      ]
     },
     {
       "slug": "newport-sings-summer-camp-newport",

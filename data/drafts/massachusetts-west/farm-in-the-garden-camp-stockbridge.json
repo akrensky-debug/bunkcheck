@@ -35,6 +35,7 @@
   "price_min": 225,
   "price_max": 525,
   "price_per": "week",
+  "fees": [],
   "financial_aid": true,
   "season_year": 2027,
   "refund_policy_summary": "A $100 deposit holds a spot; full refunds minus the deposit up to seven days before camp begins.",
@@ -155,7 +156,8 @@
       "date": "2026-11-20",
       "page_checked": "https://www.berkshirebotanical.org/farm-garden-camp",
       "changes": [
-        "New camp, researched from https://www.berkshirebotanical.org/farm-garden-camp"
+        "New camp, researched from https://www.berkshirebotanical.org/farm-garden-camp",
+        "Recorded no fees: the page posts none beyond tuition. Membership only lowers the rate and the $100 deposit goes toward tuition. The empty fees list carries no source entry, because the validator rejects a source for an empty field."
       ],
       "for_andrew": [
         "Stockbridge, MA is missing from cities.py; West Stockbridge is a separate town, so it was not substituted.",

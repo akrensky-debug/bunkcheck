@@ -476,7 +476,8 @@
             "transportation",
             "meals_included",
             "refund_policy_summary",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
         },
@@ -507,6 +508,61 @@
             "swim_waterfront_notes"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Canteen",
+          "amount": 80,
+          "per": "session",
+          "required": true,
+          "note": "Spending money for camp clothing, merch and out of camp trips, not refunded if unused. $80 for 1 week, $125 for 2, $150 for 3, $175 for 4, $200 for 6, $250 for 8"
+        },
+        {
+          "name": "Airport transportation",
+          "amount": 250,
+          "per": "once",
+          "required": false,
+          "note": "Each way"
+        },
+        {
+          "name": "International camper package",
+          "amount": 600,
+          "per": "session",
+          "required": false,
+          "note": "Linen and trunk rental, JFK airport pick up and drop off, toiletries"
+        },
+        {
+          "name": "Linen and trunk rental",
+          "amount": 200,
+          "per": "session",
+          "required": false,
+          "note": "1 to 4 weeks; $250 for 5 to 8 weeks"
+        },
+        {
+          "name": "Birthday party",
+          "amount": 100,
+          "per": "once",
+          "required": false
+        },
+        {
+          "name": "Senior trip",
+          "amount": 650,
+          "per": "once",
+          "required": false,
+          "note": "During Sessions 2 and 4"
+        },
+        {
+          "name": "Changeover day trip",
+          "amount": 100,
+          "per": "once",
+          "required": false
+        },
+        {
+          "name": "Visiting day trip",
+          "amount": 50,
+          "per": "once",
+          "required": false
         }
       ]
     },
@@ -695,7 +751,8 @@
             "transportation",
             "meals_included",
             "refund_policy_summary",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
         },
@@ -725,6 +782,61 @@
             "swim_waterfront_notes"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Canteen",
+          "amount": 80,
+          "per": "session",
+          "required": true,
+          "note": "Spending money for camp clothing, merch and out of camp trips, not refunded if unused. $80 for 1 week, $125 for 2, $150 for 3, $175 for 4, $200 for 6, $250 for 8"
+        },
+        {
+          "name": "Airport transportation",
+          "amount": 250,
+          "per": "once",
+          "required": false,
+          "note": "Each way"
+        },
+        {
+          "name": "International camper package",
+          "amount": 600,
+          "per": "session",
+          "required": false,
+          "note": "Linen and trunk rental, JFK airport pick up and drop off, toiletries"
+        },
+        {
+          "name": "Linen and trunk rental",
+          "amount": 200,
+          "per": "session",
+          "required": false,
+          "note": "1 to 4 weeks; $250 for 5 to 8 weeks"
+        },
+        {
+          "name": "Birthday party",
+          "amount": 100,
+          "per": "once",
+          "required": false
+        },
+        {
+          "name": "Senior trip",
+          "amount": 650,
+          "per": "once",
+          "required": false,
+          "note": "During Sessions 2 and 4"
+        },
+        {
+          "name": "Changeover day trip",
+          "amount": 100,
+          "per": "once",
+          "required": false
+        },
+        {
+          "name": "Visiting day trip",
+          "amount": 50,
+          "per": "once",
+          "required": false
         }
       ]
     },
@@ -1998,7 +2110,8 @@
             "price_max",
             "price_per",
             "refund_policy_summary",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
         }
@@ -2065,6 +2178,15 @@
           "end_date": "2027-08-13",
           "price": null,
           "availability": "unknown"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Security fee",
+          "amount": 100,
+          "per": "once",
+          "required": true,
+          "note": "Per camper, non-refundable, charged on top of tuition before the first day of camp 2027"
         }
       ]
     },
@@ -2317,7 +2439,8 @@
             "description_short",
             "extended_care",
             "financial_aid",
-            "refund_policy_summary"
+            "refund_policy_summary",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
         },
@@ -2423,6 +2546,15 @@
           "end_date": "2026-08-28",
           "price": null,
           "availability": "unknown"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Materials fee (Kids in the Kitchen)",
+          "amount": 10,
+          "per": "session",
+          "required": false,
+          "note": "Charged for the Young Chefs cooking camp only; the page does not say per week or per session (sessions are one week)"
         }
       ]
     },
@@ -2875,9 +3007,26 @@
             "financial_aid",
             "refund_policy_summary",
             "special_needs_notes",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Materials fee",
+          "amount": 10,
+          "per": "session",
+          "required": true,
+          "note": "Set per class and paid with tuition: $10 to $28 a class, most often $15 or $20"
+        },
+        {
+          "name": "Bridge care",
+          "amount": 40,
+          "per": "week",
+          "required": false,
+          "note": "Supervised 12 to 1 pm for campers combining a morning and an afternoon class; $32 for the 4-day week"
         }
       ]
     },
@@ -3009,10 +3158,27 @@
             "financial_aid"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://darien-ymca.org/extended-care/",
+          "checked": "2026-11-27",
+          "fields": [
+            "fees"
+          ],
+          "note": "Fees researched by Claude from this page"
         }
       ],
       "gender_policy": "girls",
-      "refund_policy_summary": "Cancel on or before April 1 for an online credit or refund less a $20 fee per week; after April 1 the fee is 20% per week. Check and credit card refunds carry an extra $20 processing fee."
+      "refund_policy_summary": "Cancel on or before April 1 for an online credit or refund less a $20 fee per week; after April 1 the fee is 20% per week. Check and credit card refunds carry an extra $20 processing fee.",
+      "fees": [
+        {
+          "name": "Extended care (afternoon)",
+          "amount": 120,
+          "per": "week",
+          "required": false,
+          "note": "3:30 to 6 pm at the YMCA, for preschool or school age campers"
+        }
+      ]
     },
     {
       "slug": "hartford-s-camp-courant-farmington",
@@ -3088,7 +3254,8 @@
           "fields": [
             "description_short",
             "financial_aid",
-            "refund_policy_summary"
+            "refund_policy_summary",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
         },
@@ -3117,7 +3284,16 @@
         "general"
       ],
       "financial_aid": true,
-      "refund_policy_summary": "The $125 application fee per camper per session is non-refundable."
+      "refund_policy_summary": "The $125 application fee per camper per session is non-refundable.",
+      "fees": [
+        {
+          "name": "Application fee",
+          "amount": 125,
+          "per": "session",
+          "required": true,
+          "note": "Non-refundable, per camper per session. Hartford campers pay only this; East Hartford campers also pay $200 a week"
+        }
+      ]
     },
     {
       "slug": "hartford-stage-summer-studio-classes",
@@ -3441,7 +3617,8 @@
           "checked": "2026-11-13",
           "fields": [
             "transportation",
-            "refund_policy_summary"
+            "refund_policy_summary",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
         },
@@ -3462,7 +3639,23 @@
       ],
       "transportation": true,
       "refund_policy_summary": "No refund if a camper is sent home for behavior or withdrawn early. If a camper is too ill or contagious to stay, a pro-rated fee is negotiated, and a doctor's note may be required.",
-      "swim_waterfront_notes": "Swimming and boating on the camp's own 1.3-mile spring-fed lake, with no motorboats. Waterfront staff and counselors are American Red Cross lifeguard trained; swim classes for all abilities."
+      "swim_waterfront_notes": "Swimming and boating on the camp's own 1.3-mile spring-fed lake, with no motorboats. Waterfront staff and counselors are American Red Cross lifeguard trained; swim classes for all abilities.",
+      "fees": [
+        {
+          "name": "Linen package",
+          "amount": 60,
+          "per": "session",
+          "required": false,
+          "note": "Pillow, 2 pillow cases, top and fitted sheet, 2 towels; sold only as a package"
+        },
+        {
+          "name": "Mosquito netting",
+          "amount": 15,
+          "per": "once",
+          "required": false,
+          "note": "$15 paid in advance or $20 on opening day; families may bring their own"
+        }
+      ]
     },
     {
       "slug": "jcc-day-camps-woodbridge",
@@ -5448,9 +5641,19 @@
           "url": "https://www.silvermineart.org/wp-content/uploads/2026/01/Summer-Art-Policies-PDF-1-7-26.pdf",
           "checked": "2026-11-13",
           "fields": [
-            "refund_policy_summary"
+            "refund_policy_summary",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Registration fee",
+          "amount": 35,
+          "per": "once",
+          "required": true,
+          "note": "Non-refundable, charged each term (once for the summer term)"
         }
       ]
     },
@@ -5613,12 +5816,22 @@
             "grade_max",
             "description_short",
             "refund_policy_summary",
-            "special_needs_notes"
+            "special_needs_notes",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
         }
       ],
-      "special_needs_notes": "There is an Individual Plan of Care form, and staff are trained in first aid, CPR and EpiPen use."
+      "special_needs_notes": "There is an Individual Plan of Care form, and staff are trained in first aid, CPR and EpiPen use.",
+      "fees": [
+        {
+          "name": "Membership",
+          "amount": 58,
+          "per": "year",
+          "required": true,
+          "note": "Chickadee family membership or higher, required to register and current while your child attends"
+        }
+      ]
     },
     {
       "slug": "summer-camp-at-milford-point-coastal-center-summer-camps-milford",
@@ -5684,9 +5897,19 @@
             "price_per",
             "refund_policy_summary",
             "special_needs_notes",
-            "swim_waterfront_notes"
+            "swim_waterfront_notes",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Membership",
+          "amount": 58,
+          "per": "year",
+          "required": true,
+          "note": "Chickadee family membership or higher, required to register and current while your child attends"
         }
       ]
     },
@@ -5973,7 +6196,8 @@
             "transportation",
             "financial_aid",
             "refund_policy_summary",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
         },
@@ -6007,7 +6231,30 @@
           "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
         }
       ],
-      "price_per": "session"
+      "price_per": "session",
+      "fees": [
+        {
+          "name": "Bus",
+          "amount": 50,
+          "per": "session",
+          "required": false,
+          "note": "$25 for the morning run and $25 for the afternoon run"
+        },
+        {
+          "name": "Early drop off",
+          "amount": 70,
+          "per": "session",
+          "required": false,
+          "note": "7:30 to 8:40 am"
+        },
+        {
+          "name": "Late pick up",
+          "amount": 70,
+          "per": "session",
+          "required": false,
+          "note": "3:30 to 5:30 pm"
+        }
+      ]
     },
     {
       "slug": "woodbridge-recreation-summer-camp-woodbridge",
@@ -6566,9 +6813,26 @@
             "aca_accredited",
             "aca_source_url",
             "sessions",
-            "special_needs_notes"
+            "special_needs_notes",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Extended care (morning)",
+          "amount": 80,
+          "per": "week",
+          "required": false,
+          "note": "Program participant rate; $50 for Y members. 7:00 am until camp starts. Registration also takes a $50 nonrefundable deposit per camper per week"
+        },
+        {
+          "name": "Extended care (afternoon)",
+          "amount": 95,
+          "per": "week",
+          "required": false,
+          "note": "Program participant rate; $60 for Y members. 3:30 to 6:00 pm"
         }
       ]
     },
@@ -6791,7 +7055,8 @@
             "price_per_week",
             "price_per",
             "financial_aid",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
         },
@@ -6835,7 +7100,16 @@
       ],
       "transportation": true,
       "meals_included": true,
-      "swim_waterfront_notes": "Waterfront activities are on Mohawk Pond, which camp has to itself: instructional and free swimming, canoeing, kayaking, rowing, sailing, windsurfing, paddleboarding and log rolling. Day campers have a daily free swim and waterfront period."
+      "swim_waterfront_notes": "Waterfront activities are on Mohawk Pond, which camp has to itself: instructional and free swimming, canoeing, kayaking, rowing, sailing, windsurfing, paddleboarding and log rolling. Day campers have a daily free swim and waterfront period.",
+      "fees": [
+        {
+          "name": "Horseback riding lessons",
+          "amount": 270,
+          "per": "week",
+          "required": false,
+          "note": "Five lessons a week, Monday to Friday; two weeks of lessons are $540"
+        }
+      ]
     },
     {
       "slug": "ymca-camp-mountain-laurel-day-camp-hamden",
@@ -7006,9 +7280,33 @@
             "swim_waterfront_notes",
             "aca_accredited",
             "aca_source_url",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Extended care (morning)",
+          "amount": 85,
+          "per": "week",
+          "required": false,
+          "note": "Program participant rate; $55 for Y members. 7:30 to 9:00 am. Registration also takes a $50 nonrefundable deposit per camper per week"
+        },
+        {
+          "name": "Extended care (afternoon)",
+          "amount": 89,
+          "per": "week",
+          "required": false,
+          "note": "Program participant rate; $59 for Y members. 4:00 to 6:00 pm"
+        },
+        {
+          "name": "Bus",
+          "amount": 60,
+          "per": "week",
+          "required": false,
+          "note": "Program participant rate; $30 for Y members, morning and afternoon combined"
         }
       ]
     },
@@ -7574,7 +7872,8 @@
             "meals_included",
             "refund_policy_summary",
             "swim_waterfront_notes",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-22, approved by Andrew Krensky"
         },
@@ -7588,6 +7887,22 @@
             "price_per"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-22, approved by Andrew Krensky"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Extended care (morning)",
+          "amount": 45,
+          "per": "week",
+          "required": false,
+          "note": "Breakfast Bunch, 8:00 to 9:00 am; non-member rate, $35 for Recreation Center members"
+        },
+        {
+          "name": "Extended care (afternoon)",
+          "amount": 95,
+          "per": "week",
+          "required": false,
+          "note": "After Camp Care, 4:00 to 5:30 pm"
         }
       ]
     },
@@ -8146,9 +8461,19 @@
             "meals_included",
             "financial_aid",
             "refund_policy_summary",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Extended care (afternoon)",
+          "amount": 200,
+          "per": "week",
+          "required": false,
+          "note": "3:00 to 5:00 pm; non-member rate, or $40 a day. Members pay $180 a week or $36 a day"
         }
       ]
     },
@@ -8427,7 +8752,8 @@
             "price_min",
             "price_max",
             "price_per",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
         },
@@ -8456,6 +8782,22 @@
             "swim_waterfront_notes"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Extended care (morning)",
+          "amount": 47,
+          "per": "week",
+          "required": false,
+          "note": "Before Care, 7:00 to 9:00 am"
+        },
+        {
+          "name": "Extended care (afternoon)",
+          "amount": 38,
+          "per": "week",
+          "required": false,
+          "note": "After Care, 4:00 to 5:00 pm"
         }
       ]
     },
@@ -8602,9 +8944,40 @@
             "meals_included",
             "refund_policy_summary",
             "swim_waterfront_notes",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-22, approved by Andrew Krensky"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Extended care (morning)",
+          "amount": 25,
+          "per": "week",
+          "required": false,
+          "note": "Before Care, 7:30 to 9:00 am"
+        },
+        {
+          "name": "Extended care (afternoon)",
+          "amount": 25,
+          "per": "week",
+          "required": false,
+          "note": "After Care, 4:00 to 6:00 pm"
+        },
+        {
+          "name": "Extended day (half day campers)",
+          "amount": 60,
+          "per": "week",
+          "required": false,
+          "note": "Until 6:00 pm, only for campers in morning half day sessions, grades K to 6"
+        },
+        {
+          "name": "Lunch",
+          "amount": 12,
+          "per": "week",
+          "required": false,
+          "note": "Hot dog lunch Wednesday and pizza Friday; extra snacks $1 each"
         }
       ]
     },

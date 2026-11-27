@@ -1,6 +1,6 @@
 {
   "metro": "Westchester County, NY",
-  "checked": "2026-11-26",
+  "checked": "2026-11-27",
   "notes": "Real listings from each camp's own website. Unverified until a camp confirms. Edit here and re-run: python -m campfinder.seed.import_real --check",
   "camps": [
     {
@@ -72,7 +72,8 @@
             "price_min",
             "price_max",
             "price_per",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-25, approved by Andrew Krensky"
         },
@@ -88,6 +89,22 @@
             "zip"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-25, approved by Andrew Krensky"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Registration fee",
+          "amount": 100,
+          "per": "once",
+          "required": true,
+          "note": "Includes one camp T shirt, which must be worn on field trips"
+        },
+        {
+          "name": "Extra T shirt",
+          "amount": 15,
+          "per": "once",
+          "required": false,
+          "note": "Each additional shirt"
         }
       ]
     },
@@ -1198,9 +1215,47 @@
             "price_min",
             "price_max",
             "price_per",
-            "refund_policy_summary"
+            "refund_policy_summary",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-25, approved by Andrew Krensky"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Early session",
+          "amount": 130,
+          "per": "week",
+          "required": false,
+          "note": "From 7:30 am, 5 days a week, all ages. Lower weekly rates for 2 to 4 day schedules ($98 to $124)."
+        },
+        {
+          "name": "Late session I",
+          "amount": 90,
+          "per": "week",
+          "required": false,
+          "note": "5 days a week, ages 2.6 to 12. Toddlers $125."
+        },
+        {
+          "name": "Late session II",
+          "amount": 180,
+          "per": "week",
+          "required": false,
+          "note": "Until 6 pm, 5 days a week, ages 2.6 to 12. Toddlers $214."
+        },
+        {
+          "name": "Supervised lunch",
+          "amount": 65,
+          "per": "week",
+          "required": false,
+          "note": "For half day morning campers, 5 days a week, primary (2.6 to 5). Toddlers $55."
+        },
+        {
+          "name": "Pizza Friday",
+          "amount": 12,
+          "per": "week",
+          "required": false,
+          "note": "Primary; toddlers $11. Included with a 5 day full day schedule."
         }
       ]
     },
@@ -1838,6 +1893,23 @@
             "meals_included"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-25, approved by Andrew Krensky"
+        },
+        {
+          "url": "https://www.mounttomdaycamp.com/faqs-0/",
+          "checked": "2026-11-27",
+          "fields": [
+            "fees"
+          ],
+          "note": "Fees researched by Claude from this page"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Bus (Manhattan, Brooklyn, Queens)",
+          "amount": 50,
+          "per": "week",
+          "required": false,
+          "note": "Bus is included elsewhere; this is the extra charge for stops in Manhattan, Brooklyn and Queens"
         }
       ]
     },
@@ -2100,7 +2172,8 @@
             "price_min",
             "price_max",
             "price_per",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-25, approved by Andrew Krensky"
         },
@@ -2112,6 +2185,28 @@
             "refund_policy_summary"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-25, approved by Andrew Krensky"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Registration fee",
+          "amount": 75,
+          "per": "once",
+          "required": true,
+          "note": "Non refundable. A 25% deposit per week is also due at registration."
+        },
+        {
+          "name": "Extended care (morning or afternoon)",
+          "amount": 75,
+          "per": "week",
+          "required": false,
+          "note": "7:30 to 9:00 am or 5:00 to 6:30 pm"
+        },
+        {
+          "name": "Extended care (morning and afternoon)",
+          "amount": 140,
+          "per": "week",
+          "required": false
         }
       ]
     },
@@ -2471,7 +2566,8 @@
             "price_per",
             "sessions",
             "extended_care",
-            "transportation"
+            "transportation",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-25, approved by Andrew Krensky"
         },
@@ -2498,6 +2594,50 @@
             "special_needs_notes"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-25, approved by Andrew Krensky"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Extended care (morning)",
+          "amount": 55,
+          "per": "week",
+          "required": false,
+          "note": "Drop off from 7:45 am"
+        },
+        {
+          "name": "Extended care (afternoon)",
+          "amount": 55,
+          "per": "week",
+          "required": false,
+          "note": "Pick up until 5:30 pm"
+        },
+        {
+          "name": "Lunch",
+          "amount": 70,
+          "per": "week",
+          "required": false,
+          "note": "Not offered to morning only campers"
+        },
+        {
+          "name": "Bus (morning)",
+          "amount": 115,
+          "per": "week",
+          "required": false,
+          "note": "Select towns only"
+        },
+        {
+          "name": "Bus (afternoon)",
+          "amount": 115,
+          "per": "week",
+          "required": false,
+          "note": "Full day campers, select towns only"
+        },
+        {
+          "name": "Bus (midday)",
+          "amount": 115,
+          "per": "week",
+          "required": false,
+          "note": "2 pm departure, mini day campers, select towns only"
         }
       ]
     },
@@ -3817,7 +3957,322 @@
             "price_min",
             "price_max",
             "price_per",
-            "sessions"
+            "sessions",
+            "fees"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-25, approved by Andrew Krensky"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Application fee",
+          "amount": 50,
+          "per": "once",
+          "required": true
+        }
+      ]
+    },
+    {
+      "slug": "paddle-adventure-camp-rye",
+      "name": "Paddle Adventure Camp",
+      "operator_name": "Friends of Rye Nature Center",
+      "website_url": "https://www.ryenaturecenter.org/paddle-adventure-camp",
+      "registration_url": "https://ryenaturecenter.app.neoncrm.com/event.jsp?event=3871&",
+      "phone": "(914) 967-5150",
+      "street_address": "873 Boston Post Road",
+      "city": "Rye",
+      "state": "NY",
+      "zip": "10580",
+      "camp_type": "specialty",
+      "primary_categories": [
+        "adventure"
+      ],
+      "secondary_categories": [
+        "outdoor",
+        "nature",
+        "leadership"
+      ],
+      "activities": [
+        "kayaking",
+        "hiking",
+        "paddle skills",
+        "orienteering",
+        "geocaching",
+        "bird identification"
+      ],
+      "grade_min": 8,
+      "grade_max": 11,
+      "age_min": 13,
+      "age_max": 17,
+      "description_short": "Week long kayaking and hiking camp for teens entering grades 8 to 11, based at the Rye Nature Center. Each week has about three paddles and two hikes at places such as Lake Sebago, Canopus Lake, Blind Brook and Rockefeller State Park, with the camp driving campers to each site.",
+      "indoor_outdoor": "outdoor",
+      "price_per_week": 610,
+      "price_min": 610,
+      "price_max": 610,
+      "price_per": "week",
+      "fees": [
+        {
+          "name": "Membership",
+          "amount": 125,
+          "per": "year",
+          "required": true,
+          "note": "Friends of Rye Nature Center, Environmentalist level or higher, valid through the camp dates; one per family"
+        }
+      ],
+      "financial_aid": true,
+      "refund_policy_summary": "Changing dates costs a $50 fee if space allows; there are no refunds or credits if you cancel (the fee can be turned into a tax deductible donation). Membership is non-refundable.",
+      "season_year": 2026,
+      "sessions": [
+        {
+          "name": "Week 1",
+          "start_date": "2026-06-29",
+          "end_date": "2026-07-02",
+          "price": 610,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 2",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "price": 610,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 3",
+          "start_date": "2026-07-13",
+          "end_date": "2026-07-17",
+          "price": 610,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 4",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "price": 610,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 5",
+          "start_date": "2026-07-27",
+          "end_date": "2026-07-31",
+          "price": 610,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 6",
+          "start_date": "2026-08-03",
+          "end_date": "2026-08-07",
+          "price": 610,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 7",
+          "start_date": "2026-08-10",
+          "end_date": "2026-08-14",
+          "price": 610,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 8",
+          "start_date": "2026-08-17",
+          "end_date": "2026-08-21",
+          "price": 610,
+          "availability": "unknown"
+        }
+      ],
+      "swim_waterfront_notes": "Each day on the water the group has three trip leaders: two American Red Cross certified lifeguards and one nature center educator. Campers get a touring kayak, paddle, dry bag and life vest.",
+      "notes": "An Environmentalist level membership ($125 or higher) is required to attend, one per family, so there is no non-member rate. Drop off 9 am and dismissal 4 pm at Rye Nature Center; the camp drives campers to trip sites. Week 1 is four days (June 29 to July 2). Need based aid through the Nature Access Fund, apply by May 1.",
+      "sources": [
+        {
+          "url": "https://www.ryenaturecenter.org/paddle-adventure-camp",
+          "checked": "2026-11-27",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "registration_url",
+            "camp_type",
+            "primary_categories",
+            "secondary_categories",
+            "activities",
+            "grade_min",
+            "grade_max",
+            "age_min",
+            "age_max",
+            "description_short",
+            "indoor_outdoor",
+            "price_per_week",
+            "price_min",
+            "price_max",
+            "price_per",
+            "financial_aid",
+            "refund_policy_summary",
+            "sessions",
+            "swim_waterfront_notes",
+            "fees"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-25, approved by Andrew Krensky"
+        },
+        {
+          "url": "https://www.ryenaturecenter.org/visit",
+          "checked": "2026-11-27",
+          "fields": [
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-25, approved by Andrew Krensky"
+        }
+      ]
+    },
+    {
+      "slug": "summer-camp-at-rnc-rye",
+      "name": "Summer Camp at RNC",
+      "operator_name": "Friends of Rye Nature Center",
+      "website_url": "https://www.ryenaturecenter.org/summer-camp-at-rnc",
+      "registration_url": "https://ryenaturecenter.app.neoncrm.com/event.jsp?event=3871&",
+      "phone": "(914) 967-5150",
+      "street_address": "873 Boston Post Road",
+      "city": "Rye",
+      "state": "NY",
+      "zip": "10580",
+      "camp_type": "day",
+      "primary_categories": [
+        "nature"
+      ],
+      "secondary_categories": [
+        "outdoor",
+        "STEM",
+        "arts"
+      ],
+      "activities": [
+        "hiking",
+        "natural history",
+        "art",
+        "STEM projects",
+        "animal visits",
+        "sprinklers",
+        "games",
+        "Friday showcases"
+      ],
+      "age_min": 3,
+      "grade_max": 7,
+      "age_max": 13,
+      "description_short": "Weekly nature day camp in the Rye Nature Center's 47 acre forest for children from age 3 and a half through grade 7. Groups hike, study natural history, do art and STEM projects and visit the center's animals, with a project showcase for families each Friday.",
+      "price_per_week": 510,
+      "price_min": 475,
+      "price_max": 525,
+      "price_per": "week",
+      "fees": [
+        {
+          "name": "Membership",
+          "amount": 125,
+          "per": "year",
+          "required": true,
+          "note": "Friends of Rye Nature Center, Environmentalist level or higher, valid through the camp dates; one per family"
+        }
+      ],
+      "financial_aid": true,
+      "refund_policy_summary": "Changing dates costs a $50 fee if space allows; there are no refunds or credits if you cancel (the fee can be turned into a tax deductible donation). Membership is non-refundable.",
+      "season_year": 2026,
+      "sessions": [
+        {
+          "name": "Week 1 (Discoverers, K to grade 5)",
+          "start_date": "2026-06-29",
+          "end_date": "2026-07-02",
+          "price": 510,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 2 (Discoverers, K to grade 5)",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "price": 510,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 3 (Discoverers, K to grade 5)",
+          "start_date": "2026-07-13",
+          "end_date": "2026-07-17",
+          "price": 510,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 4 (Discoverers, K to grade 5)",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "price": 510,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 5 (Discoverers, K to grade 5)",
+          "start_date": "2026-07-27",
+          "end_date": "2026-07-31",
+          "price": 510,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 6 (Discoverers, K to grade 5)",
+          "start_date": "2026-08-03",
+          "end_date": "2026-08-07",
+          "price": 510,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 7 (Discoverers, K to grade 5)",
+          "start_date": "2026-08-10",
+          "end_date": "2026-08-14",
+          "price": 510,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 8 (Discoverers, K to grade 5)",
+          "start_date": "2026-08-17",
+          "end_date": "2026-08-21",
+          "price": 510,
+          "availability": "unknown"
+        }
+      ],
+      "notes": "An Environmentalist level membership ($125 or higher) is required to attend, one per family, so there is no non-member rate. Groups: Explorers (entering Pre-K or K, at least 3.5 years old and toilet trained) mornings 9 to 12 or afternoons 1 to 4, $475 a week; Discoverers (entering K to grade 5) 9 to 3, $510 a week; Naturalists in Training (entering grades 6 to 7) 9 to 3 with a Thursday cookout until 5:30, $525 a week. Week 1 is four days (no camp July 3). Session prices shown are for Discoverers. Need based aid through the Nature Access Fund, apply by May 1.",
+      "sources": [
+        {
+          "url": "https://www.ryenaturecenter.org/summer-camp-at-rnc",
+          "checked": "2026-11-27",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "registration_url",
+            "camp_type",
+            "primary_categories",
+            "secondary_categories",
+            "activities",
+            "age_min",
+            "grade_max",
+            "age_max",
+            "description_short",
+            "price_per_week",
+            "price_min",
+            "price_max",
+            "price_per",
+            "financial_aid",
+            "refund_policy_summary",
+            "sessions",
+            "fees"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-25, approved by Andrew Krensky"
+        },
+        {
+          "url": "https://www.ryenaturecenter.org/visit",
+          "checked": "2026-11-27",
+          "fields": [
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-25, approved by Andrew Krensky"
         }

@@ -787,7 +787,8 @@
             "price_max",
             "price_per",
             "financial_aid",
-            "refund_policy_summary"
+            "refund_policy_summary",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
         },
@@ -828,6 +829,15 @@
             "transportation"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Bus",
+          "amount": 50,
+          "per": "week",
+          "required": false,
+          "note": "From bus stops in Andover, Chelmsford and Peabody, MA. Charged per child."
         }
       ]
     },
@@ -1954,12 +1964,29 @@
             "special_needs_notes",
             "swim_waterfront_notes",
             "sessions",
-            "registration_url"
+            "registration_url",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
         }
       ],
-      "notes": "Merrimack residents pay $325 a week. Non-residents pay $375 a week, the price shown."
+      "notes": "Merrimack residents pay $325 a week. Non-residents pay $375 a week, the price shown.",
+      "fees": [
+        {
+          "name": "Extended care (morning)",
+          "amount": 30,
+          "per": "week",
+          "required": false,
+          "note": "7 to 8 am. The sibling discount doesn't apply."
+        },
+        {
+          "name": "Extended care (afternoon)",
+          "amount": 60,
+          "per": "week",
+          "required": false,
+          "note": "4 to 6 pm. The sibling discount doesn't apply."
+        }
+      ]
     },
     {
       "slug": "camp-nokomis-laconia",
@@ -2548,7 +2575,8 @@
             "transportation",
             "meals_included",
             "refund_policy_summary",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
         },
@@ -2584,7 +2612,30 @@
       "gender_policy": "coed",
       "age_min": 6,
       "age_max": 16,
-      "price_per": "session"
+      "price_per": "session",
+      "fees": [
+        {
+          "name": "Trip fee (First Session)",
+          "amount": 425,
+          "per": "session",
+          "required": true,
+          "note": "Charged to every First Session camper on top of tuition."
+        },
+        {
+          "name": "Trip fee (Full Session, three oldest groups)",
+          "amount": 1100,
+          "per": "session",
+          "required": true,
+          "note": "Full Session campers in Bards/Friars, Shires/Foresters and Scribes/Saxons."
+        },
+        {
+          "name": "Trip fee (Full Session, other groups)",
+          "amount": 550,
+          "per": "session",
+          "required": true,
+          "note": "Full Session campers in all other groups."
+        }
+      ]
     },
     {
       "slug": "camp-robindel",
@@ -2788,7 +2839,8 @@
             "price_min",
             "price_max",
             "price_per",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
         }
@@ -2875,6 +2927,15 @@
           "end_date": "2026-08-18",
           "price": 2050,
           "availability": "unknown"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Bridge weekend (Creative Week into LARP Week)",
+          "amount": 795,
+          "per": "once",
+          "required": false,
+          "note": "Optional stay over the weekend between Creative Week and LARP Week for teens in both."
         }
       ]
     },
@@ -3436,7 +3497,8 @@
             "transportation",
             "financial_aid",
             "refund_policy_summary",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
         },
@@ -3458,7 +3520,43 @@
           "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
         }
       ],
-      "gender_policy": "girls"
+      "gender_policy": "girls",
+      "fees": [
+        {
+          "name": "Horseback riding (3 1/2 week session)",
+          "amount": 800,
+          "per": "session",
+          "required": false,
+          "note": "Five lessons."
+        },
+        {
+          "name": "Horseback riding (2 week session)",
+          "amount": 500,
+          "per": "session",
+          "required": false,
+          "note": "Three lessons."
+        },
+        {
+          "name": "Rock climbing",
+          "amount": 300,
+          "per": "session",
+          "required": false
+        },
+        {
+          "name": "Bedding package",
+          "amount": 200,
+          "per": "session",
+          "required": false,
+          "note": "Bedding and towels, offered to international campers. The page prints no unit."
+        },
+        {
+          "name": "Airport transfer",
+          "amount": 200,
+          "per": "once",
+          "required": false,
+          "note": "Each way, to or from Boston Logan or Portland, Maine."
+        }
+      ]
     },
     {
       "slug": "camp-wicosuta-hebron",
@@ -4363,7 +4461,8 @@
             "price_min",
             "price_max",
             "activities",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
         }
@@ -4592,7 +4691,16 @@
       "age_max": 13,
       "price_min": 260,
       "price_max": 420,
-      "registration_url": "https://nhnature.campbrainregistration.com/"
+      "registration_url": "https://nhnature.campbrainregistration.com/",
+      "fees": [
+        {
+          "name": "Camp T-shirt",
+          "amount": 10,
+          "per": "once",
+          "required": false,
+          "note": "Optional, $10 per shirt, ordered at registration."
+        }
+      ]
     },
     {
       "slug": "hanover-parks-and-recreation-camps-hanover",
@@ -5480,6 +5588,14 @@
             "sessions"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://www.massaudubon.org/take-action/membership",
+          "checked": "2026-11-27",
+          "fields": [
+            "fees"
+          ],
+          "note": "Fees researched by Claude from this page"
         }
       ],
       "phone": "603-899-5589",
@@ -5488,7 +5604,16 @@
       "price_min": 625,
       "price_max": 3415,
       "price_per": "week",
-      "financial_aid": true
+      "financial_aid": true,
+      "fees": [
+        {
+          "name": "Membership",
+          "amount": 85,
+          "per": "year",
+          "required": true,
+          "note": "Mass Audubon Family membership or higher is required for every Wildwood session. Family is the lowest level that can register for camp."
+        }
+      ]
     },
     {
       "slug": "ymca-camp-coniston-grantham",
@@ -6188,7 +6313,8 @@
             "price_per",
             "extended_care",
             "refund_policy_summary",
-            "special_needs_notes"
+            "special_needs_notes",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
         },
@@ -6199,6 +6325,22 @@
             "registration_url"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Early drop off",
+          "amount": 35,
+          "per": "week",
+          "required": false,
+          "note": "7:30 to 8:45 am, per family. Residents pay $25."
+        },
+        {
+          "name": "Late pick up",
+          "amount": 35,
+          "per": "week",
+          "required": false,
+          "note": "4:00 to 5:30 pm, per family. Residents pay $25."
         }
       ]
     },
@@ -6564,7 +6706,8 @@
             "price_max",
             "financial_aid",
             "refund_policy_summary",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
         },
@@ -6604,6 +6747,15 @@
             "meals_included"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Intersession weekend",
+          "amount": 200,
+          "per": "session",
+          "required": false,
+          "note": "Optional stay over the weekend between two back to back two week sessions; families can pick up instead. Included in the one month and full summer stays. Dates July 10 to 11, July 24 to 25, August 7 to 8."
         }
       ]
     },
@@ -6944,7 +7096,8 @@
             "price_per",
             "extended_care",
             "refund_policy_summary",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
         }
@@ -6958,7 +7111,23 @@
       "price_per_week": 260,
       "price_min": 100,
       "price_max": 335,
-      "price_per": "week"
+      "price_per": "week",
+      "fees": [
+        {
+          "name": "Registration fee",
+          "amount": 20,
+          "per": "once",
+          "required": true,
+          "note": "One per child, on top of the $25 weekly deposit that goes toward tuition."
+        },
+        {
+          "name": "Extended day (afternoon)",
+          "amount": 70,
+          "per": "week",
+          "required": false,
+          "note": "1:00 to 4:00 pm after the half day STEAM and Creative Quest camps. Guest rate; YMCA members $50. The four day week of June 29 is $60 for guests, $40 for members."
+        }
+      ]
     },
     {
       "slug": "londonderry-day-camp-camp-pa-gon-ki-londonderry",
@@ -7501,7 +7670,8 @@
             "meals_included",
             "refund_policy_summary",
             "special_needs_notes",
-            "swim_waterfront_notes"
+            "swim_waterfront_notes",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
         },
@@ -7552,6 +7722,22 @@
           "end_date": "2027-08-06",
           "price": 3500,
           "availability": "open"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Airport transport (Boston)",
+          "amount": 450,
+          "per": "once",
+          "required": false,
+          "note": "Round trip from BOS, offered when staffing allows."
+        },
+        {
+          "name": "Airport transport (Manchester)",
+          "amount": 250,
+          "per": "once",
+          "required": false,
+          "note": "Round trip from MHT, offered when staffing allows."
         }
       ]
     },
@@ -8478,7 +8664,8 @@
             "price_per",
             "financial_aid",
             "refund_policy_summary",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
         },
@@ -8500,6 +8687,15 @@
             "gender_policy"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Intersession weekend",
+          "amount": 200,
+          "per": "session",
+          "required": false,
+          "note": "Optional stay over the weekend between two back to back two week sessions; families can pick up instead. Included in the one month and full summer stays. Dates July 10 to 11, July 24 to 25, August 7 to 8."
         }
       ]
     },
@@ -8891,7 +9087,8 @@
             "price_per",
             "extended_care",
             "financial_aid",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
         },
@@ -8903,6 +9100,22 @@
             "refund_policy_summary"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Before care",
+          "amount": 45,
+          "per": "week",
+          "required": false,
+          "note": "8 to 9 am, pre-register at least 2 weeks before the session."
+        },
+        {
+          "name": "After care",
+          "amount": 45,
+          "per": "week",
+          "required": false,
+          "note": "4 to 5 pm, pre-register at least 2 weeks before the session."
         }
       ]
     },
@@ -9562,9 +9775,26 @@
             "age_min",
             "age_max",
             "description_short",
-            "indoor_outdoor"
+            "indoor_outdoor",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Registration fee",
+          "amount": 30,
+          "per": "once",
+          "required": true,
+          "note": "Per camper, nonrefundable. Paid with a $25 per week deposit that goes toward tuition."
+        },
+        {
+          "name": "Camp T-shirt",
+          "amount": 15,
+          "per": "once",
+          "required": false,
+          "note": "Needed on field trips if the camper has no Bow Rec Camp shirt."
         }
       ]
     },
@@ -10074,6 +10304,23 @@
             "sessions"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-22, approved by Andrew Krensky"
+        },
+        {
+          "url": "https://www.girlscoutsgwm.org/en/get-involved/join.html",
+          "checked": "2026-11-27",
+          "fields": [
+            "fees"
+          ],
+          "note": "Fees researched by Claude from this page"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Membership",
+          "amount": 80,
+          "per": "year",
+          "required": true,
+          "note": "Girl Scout dues for girl members, membership year October 1, 2026 to September 30, 2027. Campers who are not Girl Scouts must buy it to enroll; current members already have it."
         }
       ]
     },
@@ -10166,6 +10413,23 @@
             "sessions"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-22, approved by Andrew Krensky"
+        },
+        {
+          "url": "https://www.girlscoutsgwm.org/en/get-involved/join.html",
+          "checked": "2026-11-27",
+          "fields": [
+            "fees"
+          ],
+          "note": "Fees researched by Claude from this page"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Membership",
+          "amount": 80,
+          "per": "year",
+          "required": true,
+          "note": "Girl Scout dues for girl members, membership year October 1, 2026 to September 30, 2027. Campers who are not Girl Scouts must buy it to enroll; current members already have it."
         }
       ]
     },
@@ -10468,9 +10732,26 @@
             "transportation",
             "financial_aid",
             "refund_policy_summary",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Extended care (morning)",
+          "amount": 30,
+          "per": "week",
+          "required": false,
+          "note": "7:00 to 8:00 am. One rate posted for residents and non-residents."
+        },
+        {
+          "name": "Extended care (afternoon)",
+          "amount": 60,
+          "per": "week",
+          "required": false,
+          "note": "4:00 to 6:00 pm. One rate posted for residents and non-residents."
         }
       ]
     },
@@ -10854,7 +11135,8 @@
             "meals_included",
             "financial_aid",
             "refund_policy_summary",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
         },
@@ -10870,6 +11152,15 @@
             "zip"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Extended day",
+          "amount": 50,
+          "per": "week",
+          "required": false,
+          "note": "Drop off from 8:00 am and after camp care until 5:30 pm."
         }
       ]
     },
@@ -11124,7 +11415,8 @@
             "price_per",
             "refund_policy_summary",
             "swim_waterfront_notes",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-22, approved by Andrew Krensky"
         },
@@ -11139,6 +11431,15 @@
             "zip"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-22, approved by Andrew Krensky"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Friday field trip",
+          "amount": 80,
+          "per": "day",
+          "required": false,
+          "note": "Optional, 8:30 am to 4:30 pm, up to 22 campers."
         }
       ]
     }

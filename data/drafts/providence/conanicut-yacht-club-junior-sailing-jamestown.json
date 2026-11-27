@@ -23,6 +23,29 @@
   "description_short": "Junior sailing classes in Jamestown open to members and non members from age 8, from beginner dinghy sailing up to Optimist, ILCA and 420 racing teams.",
   "refund_policy_summary": "Cancellations before June 1 are refunded minus a $35 fee; none after June 1.",
   "season_year": 2026,
+  "fees": [
+    {
+      "name": "Limited member fee",
+      "amount": 120,
+      "per": "session",
+      "required": true,
+      "note": "Per child for each two week session, for families who are not year round, dues paying CYC members"
+    },
+    {
+      "name": "Optimist charter",
+      "amount": 150,
+      "per": "session",
+      "required": false,
+      "note": "Per two week session, for sailors without their own Optimist"
+    },
+    {
+      "name": "NBYA junior membership",
+      "amount": 25,
+      "per": "year",
+      "required": false,
+      "note": "Race team sailors only; a US Sailing junior membership also counts"
+    }
+  ],
   "notes": "Open to non members, member guests, friends and relatives; non members pay a limited member fee of $120 per child for each two week session. Placement is by skill. First Mates program for ages 5 to 7. Sailors bring their own life jacket; no food is provided. Registration opens February 1 for members, February 15 for members' grandchildren and March 1 for everyone.",
   "sources": [
     {
@@ -42,7 +65,8 @@
         "activities",
         "age_min",
         "description_short",
-        "refund_policy_summary"
+        "refund_policy_summary",
+        "fees"
       ],
       "note": "Researched by Claude from this page. Junior Sailing page: thanks families for the 2026 season, 2027 dates and registration coming soon; classes open to all starting at age 8, First Mates ages 5 to 7; non members pay a limited member fee of $120 per child per two weeks"
     }
@@ -68,11 +92,11 @@
       "date": "2026-11-20",
       "page_checked": "https://conanicutyachtclub.org/web/pages/junior-sailing",
       "changes": [
-        "New camp, researched from https://conanicutyachtclub.org/web/pages/junior-sailing"
+        "New camp, researched from https://conanicutyachtclub.org/web/pages/junior-sailing",
+        "Recorded fees from the junior sailing page: limited member fee $120 a two week session, Optimist charter $150 a session and NBYA junior membership $25 for the race team. These sit with the class prices whose year is in question below. Optimist trailer spots are left out because the page gives two season prices ($150 and $175); the $50 lunch account deposit is refunded, so it is not a fee."
       ],
       "for_andrew": [
-        "The page still lists session dates and class prices but gives no year for them. The dates (June 21 to July 2, July 5 to 16, July 19 to 30, August 2 to 13) fall on Mondays in 2027, not 2026, while the class prices sit next to 'New for 2026' text. I left out all dates and prices so 2027 dates are not mixed with 2026 prices. List it bare now, or wait for the club's 2027 posting?",
-        "Non members pay a $120 per child per two weeks limited member fee on top of class fees."
+        "The page still lists session dates and class prices but gives no year for them. The dates (June 21 to July 2, July 5 to 16, July 19 to 30, August 2 to 13) fall on Mondays in 2027, not 2026, while the class prices sit next to 'New for 2026' text. I left out all dates and prices so 2027 dates are not mixed with 2026 prices. List it bare now, or wait for the club's 2027 posting?"
       ]
     }
   }
