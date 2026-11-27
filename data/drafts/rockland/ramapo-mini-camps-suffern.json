@@ -145,15 +145,15 @@
     "low_confidence": [],
     "errors": [
       "missing required city",
-      "missing required zip",
-      "city None, NY is not in cities.py"
+      "missing required zip"
     ],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-27",
       "page_checked": "https://www.ramapoparks.org/page/mini-camps-77.html",
       "changes": [
-        "New camp, researched from https://www.ramapoparks.org/page/mini-camps-77.html"
+        "New camp, researched from https://www.ramapoparks.org/page/mini-camps-77.html",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
         "Ramapo's site names the two sites (Connor Elementary School and Suffern Middle School) but gives no address for either, so city and ZIP are left out and the draft fails validation. One listing or two (one per school, same dates, ages and fees)? Either way the school addresses need to come from the town or the school district's own site."

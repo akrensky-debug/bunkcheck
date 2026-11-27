@@ -143,15 +143,14 @@
       "Extended care hours"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Pearl River', NY is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-27",
       "page_checked": "https://www.camptwelvetrails.org/dates-rates",
       "changes": [
-        "New camp, researched from https://www.camptwelvetrails.org/dates-rates"
+        "New camp, researched from https://www.camptwelvetrails.org/dates-rates",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": []
     }

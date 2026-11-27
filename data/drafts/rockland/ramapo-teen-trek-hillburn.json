@@ -138,15 +138,14 @@
       "Financial aid"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Hillburn', NY is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-27",
       "page_checked": "https://www.ramapoparks.org/page/teen-trek-75.html",
       "changes": [
-        "New camp, researched from https://www.ramapoparks.org/page/teen-trek-75.html"
+        "New camp, researched from https://www.ramapoparks.org/page/teen-trek-75.html",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
         "Teen Trek was full for 2026 when checked; session availability is left as unknown because the season has passed."

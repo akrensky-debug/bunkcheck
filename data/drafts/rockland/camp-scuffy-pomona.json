@@ -147,15 +147,15 @@
     "low_confidence": [],
     "errors": [
       "missing required city",
-      "missing required zip",
-      "city None, NY is not in cities.py"
+      "missing required zip"
     ],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-27",
       "page_checked": "https://www.ramapoparks.org/page/camp-scuffy-72.html",
       "changes": [
-        "New camp, researched from https://www.ramapoparks.org/page/camp-scuffy-72.html"
+        "New camp, researched from https://www.ramapoparks.org/page/camp-scuffy-72.html",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
         "Ramapo's site gives no address for Camp Scuffy, only a Google Maps link, so street address, city and ZIP are left out and the draft fails validation on city and zip. Can you get the camp's address from the town (845 357 6100)?",

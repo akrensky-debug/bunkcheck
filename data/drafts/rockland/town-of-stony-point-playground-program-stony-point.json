@@ -77,15 +77,14 @@
       "Lunch"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Stony Point', NY is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-27",
       "page_checked": "https://www.stonypointny.gov/town-of-stony-point-playground-program",
       "changes": [
-        "New camp, researched from https://www.stonypointny.gov/town-of-stony-point-playground-program"
+        "New camp, researched from https://www.stonypointny.gov/town-of-stony-point-playground-program",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
         "The program flyer with fees (https://www.stonypointny.gov/userfiles/files/Playground%20Program%20(2).pdf) is a scanned image the fetcher can't read, so price and residency rules are left out.",

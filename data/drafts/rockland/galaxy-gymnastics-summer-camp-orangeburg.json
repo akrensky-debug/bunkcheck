@@ -71,15 +71,14 @@
       "Hours"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Orangeburg', NY is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-27",
       "page_checked": "https://galaxy-gymnastics.com/summer-camp",
       "changes": [
-        "New camp, researched from https://galaxy-gymnastics.com/summer-camp"
+        "New camp, researched from https://galaxy-gymnastics.com/summer-camp",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
         "The page gives only the 2026 season outline (half day, late June to end of August, registration from April 1, 2026), with no dates, ages or prices. The Cirque de Galaxy 2027 link is a gymnastics meet, not a camp.",

@@ -97,15 +97,14 @@
       "Lunch"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Sparkill', NY is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-27",
       "page_checked": "https://stac.edu/academics/school-of-education/summer-steam-camps/",
       "changes": [
-        "New camp, researched from https://stac.edu/academics/school-of-education/summer-steam-camps/"
+        "New camp, researched from https://stac.edu/academics/school-of-education/summer-steam-camps/",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": []
     }

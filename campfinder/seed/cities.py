@@ -715,6 +715,24 @@ CITY_COORDS: dict[tuple[str, str], tuple[float, float]] = {
     ("west norriton", "PA"): (40.1309, -75.3775),
     ("willow grove", "PA"): (40.1472, -75.1169),
     ("orange", "NJ"): (40.768, -74.2357),
+    # Towns added for camp listings, 27 November 2026. Coordinates are the town's internal point
+    # from the Census Bureau 2024 Gazetteer (county subdivisions, then places for New York and New Jersey villages).
+    ("airmont", "NY"): (41.0992, -74.0979),
+    ("blauvelt", "NY"): (41.0682, -73.9549),
+    ("chestnut ridge", "NY"): (41.0849, -74.0481),
+    ("congers", "NY"): (41.1491, -73.9464),
+    ("hillburn", "NY"): (41.1272, -74.1705),
+    ("nanuet", "NY"): (41.0955, -74.0159),
+    ("new city", "NY"): (41.1522, -73.9904),
+    ("nyack", "NY"): (41.093, -73.9152),
+    ("orangeburg", "NY"): (41.0487, -73.9408),
+    ("pearl river", "NY"): (41.0616, -74.0078),
+    ("pomona", "NY"): (41.1892, -74.0542),
+    ("sparkill", "NY"): (41.0289, -73.9333),
+    ("stony point", "NY"): (41.2515, -74.0037),
+    ("suffern", "NY"): (41.112, -74.1414),
+    ("west haverstraw", "NY"): (41.2063, -73.9868),
+    ("west nyack", "NY"): (41.0911, -73.9688),
 }
 
 

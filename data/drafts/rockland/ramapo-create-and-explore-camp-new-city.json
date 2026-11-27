@@ -140,15 +140,14 @@
       "Financial aid"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'New City', NY is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-27",
       "page_checked": "https://www.ramapoparks.org/page/create--explore-73.html",
       "changes": [
-        "New camp, researched from https://www.ramapoparks.org/page/create--explore-73.html"
+        "New camp, researched from https://www.ramapoparks.org/page/create--explore-73.html",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
         "The candidate list placed this camp in Suffern; the camp page puts it at Summit Park Elementary School in New City, which is what the draft uses."

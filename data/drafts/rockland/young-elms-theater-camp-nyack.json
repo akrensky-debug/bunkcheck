@@ -101,15 +101,14 @@
       "Refund policy"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Nyack', NY is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-27",
       "page_checked": "https://www.elmwoodplayhouse.com/events/young-elms-theater-camp/",
       "changes": [
-        "New camp, researched from https://www.elmwoodplayhouse.com/events/young-elms-theater-camp/"
+        "New camp, researched from https://www.elmwoodplayhouse.com/events/young-elms-theater-camp/",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": []
     }

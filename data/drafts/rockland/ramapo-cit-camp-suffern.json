@@ -93,15 +93,15 @@
     "low_confidence": [],
     "errors": [
       "missing required city",
-      "missing required zip",
-      "city None, NY is not in cities.py"
+      "missing required zip"
     ],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-27",
       "page_checked": "https://www.ramapoparks.org/page/cit-camp-76.html",
       "changes": [
-        "New camp, researched from https://www.ramapoparks.org/page/cit-camp-76.html"
+        "New camp, researched from https://www.ramapoparks.org/page/cit-camp-76.html",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
         "Only Ramapo residents can enroll. Andrew's rule for residents only camps: record the one rate, say who can enroll, and ask. List it?",

@@ -95,15 +95,14 @@
       "Financial aid"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Nyack', NY is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-27",
       "page_checked": "https://nyackboatclub.org/page/junior-sailing",
       "changes": [
-        "New camp, researched from https://nyackboatclub.org/page/junior-sailing"
+        "New camp, researched from https://nyackboatclub.org/page/junior-sailing",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
         "The application information PDF returned an error (406) to the fetcher, so swim requirements and other details in it are left out."

@@ -129,15 +129,14 @@
       "Financial aid"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Pomona', NY is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-27",
       "page_checked": "https://www.campramaquois.com/about-ramaquois/dates-sessions",
       "changes": [
-        "New camp, researched from https://www.campramaquois.com/about-ramaquois/dates-sessions"
+        "New camp, researched from https://www.campramaquois.com/about-ramaquois/dates-sessions",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
         "Tuition is not posted (the camp asks families to request rates). List without a price?"

@@ -146,15 +146,14 @@
       "Daily hours"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'West Nyack', NY is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-27",
       "page_checked": "https://rocklandartcenter.org/camps-at-roca/dates-and-times.html",
       "changes": [
-        "New camp, researched from https://rocklandartcenter.org/camps-at-roca/dates-and-times.html"
+        "New camp, researched from https://rocklandartcenter.org/camps-at-roca/dates-and-times.html",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
         "2027 dates are posted but tuition is still the 2026 table ($910 for 3 days, $1,350 for 5 days per two week session). Listed as 2027 with no price, since 2027 dates and 2026 prices can't be mixed. OK, or list it as 2026 from the 2026 brochure instead?"

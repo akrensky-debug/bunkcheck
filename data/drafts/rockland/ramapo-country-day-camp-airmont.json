@@ -124,15 +124,14 @@
       "ACA status"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Airmont', NY is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-27",
       "page_checked": "https://ramapocamp.com/camp-dates-sessions-transportation-lunch/",
       "changes": [
-        "New camp, researched from https://ramapocamp.com/camp-dates-sessions-transportation-lunch/"
+        "New camp, researched from https://ramapocamp.com/camp-dates-sessions-transportation-lunch/",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
         "2027 rates are not posted (the camp asks families to request them). List without a price?"

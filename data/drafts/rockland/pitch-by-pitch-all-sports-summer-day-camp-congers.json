@@ -164,15 +164,15 @@
     ],
     "low_confidence": [],
     "errors": [
-      "missing required zip",
-      "city 'Congers', NY is not in cities.py"
+      "missing required zip"
     ],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-27",
       "page_checked": "https://www.pitchbypitchallsports.com/about-1",
       "changes": [
-        "New camp, researched from https://www.pitchbypitchallsports.com/about-1"
+        "New camp, researched from https://www.pitchbypitchallsports.com/about-1",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
         "The camp's site names Congers Lake Memorial Park and Lake Nanuet Park but gives no street address, so the ZIP is left out and the draft fails validation on zip.",

@@ -137,15 +137,14 @@
       "Financial aid"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Hillburn', NY is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-27",
       "page_checked": "https://www.ramapoparks.org/page/sports-conditioning-74.html",
       "changes": [
-        "New camp, researched from https://www.ramapoparks.org/page/sports-conditioning-74.html"
+        "New camp, researched from https://www.ramapoparks.org/page/sports-conditioning-74.html",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
         "The candidate list placed this camp in Suffern; the camp page puts it at the JTS Community Center, which Ramapo's Contact page lists at 115 Torne Valley Road, Hillburn."

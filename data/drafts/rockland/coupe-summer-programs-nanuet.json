@@ -179,15 +179,15 @@
     ],
     "low_confidence": [],
     "errors": [
-      "missing required zip",
-      "city 'Nanuet', NY is not in cities.py"
+      "missing required zip"
     ],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-27",
       "page_checked": "https://coupedance.com/summer/",
       "changes": [
-        "New camp, researched from https://coupedance.com/summer/"
+        "New camp, researched from https://coupedance.com/summer/",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
         "The site gives no street address or ZIP for the studio anywhere, so zip is missing and the draft fails validation. Need a ZIP from the studio (it says only that it is in Nanuet)."
