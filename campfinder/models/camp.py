@@ -15,9 +15,11 @@ class Fee(BaseModel):
 
     name: str
     amount: float
-    per: Literal["once", "year", "summer", "session", "week", "day"]
+    per: Literal["once", "year", "summer", "session", "week", "day", "hour"]
     required: bool = Field(description="True when every camper pays it; false for an add-on.")
     note: str | None = None
+    source_url: str | None = Field(default=None, description="The camp page that prints this fee, when it "
+                                   "isn't the listing's main fee page.")
 
 
 class SessionSummary(BaseModel):

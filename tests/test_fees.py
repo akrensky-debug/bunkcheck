@@ -96,3 +96,25 @@ def test_plan_without_fees_is_unchanged() -> None:
     plan = build_plan(sessions, date(2027, 7, 5), date(2027, 7, 9))
     assert plan["total_estimated_cost"] == 400
     assert [line["item"] for line in plan["cost_breakdown"]] == ["Tuition"]
+
+
+def test_hourly_fees_validate_and_stay_out_of_the_plan() -> None:
+    fee = {"name": "Aftercare", "amount": 15, "per": "hour", "required": False}
+    assert validate([("Providence, RI", _record(fees=[fee]))]) == []
+    sessions = [_session("a", "2027-07-05", "2027-07-09", 400)]
+    assert fee_lines(sessions, [fee]) == []
+    plan = build_plan(sessions, date(2027, 7, 5), date(2027, 7, 9), {CAMP: [fee]})
+    assert plan["total_estimated_cost"] == 400
+
+
+def test_a_fee_may_cite_a_second_page_the_listing_lists() -> None:
+    second = "https://example.org/camp/transportation"
+    rec = _record(fees=[
+        {"name": "Registration fee", "amount": 50, "per": "once", "required": True},
+        {"name": "Bus", "amount": 35, "per": "session", "required": False, "source_url": second},
+    ])
+    rec["sources"].append({"url": second, "checked": "2026-11-27", "fields": []})
+    assert validate([("Providence, RI", rec)]) == []
+    stray = _record(fees=[{"name": "Bus", "amount": 35, "per": "session", "required": False,
+                           "source_url": "https://elsewhere.example.com/bus"}])
+    assert any("source_url must be one of the listing's sources" in e for e in validate([("Providence, RI", stray)]))
