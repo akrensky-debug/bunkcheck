@@ -1,0 +1,147 @@
+{
+  "slug": "camp-mirage-wayne-wayne",
+  "name": "Camp Mirage Wayne",
+  "operator_name": "Camp Mirage",
+  "website_url": "https://campmiragewayne.com/camp-registration/",
+  "registration_url": "https://www.hisawyer.com/camp-mirage-wayne/auth/sign-up",
+  "phone": "1-973-747-9912",
+  "street_address": "164 Totowa Road",
+  "city": "Wayne",
+  "state": "NJ",
+  "zip": "07470",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "sports",
+    "arts",
+    "STEM"
+  ],
+  "activities": [
+    "gaga",
+    "pickleball",
+    "kickball",
+    "capture the flag",
+    "nerf games",
+    "team building"
+  ],
+  "age_min": 4,
+  "age_max": 14,
+  "description_short": "Morning day camp in Wayne with over 40 weekly theme camps for kids ages 4 to 14, from sports and Lego to movie making and Nerf games. Camp runs 9 to noon, and a pay by the hour before and after camp program covers 8 am to 6 pm.",
+  "price_per_week": 200,
+  "price_min": 200,
+  "price_max": 200,
+  "price_per": "week",
+  "fees": [
+    {
+      "name": "Before and after camp care",
+      "amount": 15,
+      "per": "hour",
+      "required": false,
+      "note": "8 to 9 am and noon to 6 pm, billed in 15 minute steps; $12 an hour for members",
+      "source_url": "https://campmiragewayne.com/before-and-after-camp/"
+    },
+    {
+      "name": "Camp Mirage family membership",
+      "amount": 125,
+      "per": "summer",
+      "required": false,
+      "note": "Per family; gives 10% off morning camps and the $12 hourly care rate",
+      "source_url": "https://campmiragewayne.com/before-and-after-camp/"
+    }
+  ],
+  "extended_care": true,
+  "refund_policy_summary": "Full refund less a $20 processing fee through April 1; 50% back (less $20) through May 15, or 25% if only the 50% deposit was paid; no refunds after May 15. Changes cost $10.",
+  "season_year": 2026,
+  "notes": "Summer Day Camp is for grades 2 to 8 in the fall (ages 7 to 14); Junior Day Camp is PreK to 1st grade (ages 4 to 6, must be 4 by the start of camp). Every theme camp page shows $200 a week. Lunch at noon is packed or bought as pizza with optional Canteen Cash. State licensed youth camp (NJ Department of Health camp ID 7203210). Registration opens January 5.",
+  "sources": [
+    {
+      "url": "https://campmiragewayne.com/camp-registration/",
+      "checked": "2026-11-27",
+      "fields": [
+        "name",
+        "website_url",
+        "registration_url",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "description_short",
+        "extended_care"
+      ],
+      "note": "Researched by Claude from this page. Camp Registration page: 'Summer 2026 dates are now published' in the Campers Guide; over 40 camps for ages 5 to 14, 9 to noon, before and after care 8 to 6; registration opens January 5."
+    },
+    {
+      "url": "https://campmiragewayne.com/contact/",
+      "checked": "2026-11-27",
+      "fields": [
+        "operator_name",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip"
+      ],
+      "note": "Researched by Claude from this page. Contact page: 164 Totowa Road, Wayne, NJ 07470."
+    },
+    {
+      "url": "https://campmiragewayne.com/fine-print/",
+      "checked": "2026-11-27",
+      "fields": [
+        "age_min",
+        "age_max",
+        "refund_policy_summary"
+      ],
+      "note": "Researched by Claude from this page. Fine Print page: Summer Day Camp ages 7 to 14, Junior Day Camp ages 4 to 6; refund and change rules."
+    },
+    {
+      "url": "https://campmiragewayne.com/camp-mirage-faves/",
+      "checked": "2026-11-27",
+      "fields": [
+        "activities",
+        "price_per_week",
+        "price_min",
+        "price_max",
+        "price_per"
+      ],
+      "note": "Researched by Claude from this page. Camp Mirage Faves page: $200 a week for Summer and Junior Day Camp; gaga, pickleball, kickball, capture the flag, Nerf. All 40 theme camp pages checked show $200 a week."
+    },
+    {
+      "url": "https://campmiragewayne.com/before-and-after-camp/",
+      "checked": "2026-11-27",
+      "fields": [
+        "fees"
+      ],
+      "note": "Researched by Claude from this page. Before and After Camp page: $15 an hour per child ($12 for members); $125 family membership."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://campmiragewayne.com/camp-registration/",
+      "kind": "html",
+      "title": "Camp Registration at Camp Mirage - Wayne, New Jersey"
+    },
+    "warnings": [],
+    "unknowns": [
+      "sessions",
+      "indoor_outdoor",
+      "transportation",
+      "meals_included",
+      "financial_aid"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-27",
+      "page_checked": "https://campmiragewayne.com/camp-registration/",
+      "changes": [
+        "New camp, researched from https://campmiragewayne.com/camp-registration/"
+      ],
+      "for_andrew": [
+        "The site says 'Summer 2026 dates are now published' and that registration opens January 5, so it is either the finished 2026 season or 2027 with stale wording. I recorded the posted $200 a week as 2026 and listed no week by week sessions (each of 40 theme camps runs on its own weeks). Also the core camp is 9 to noon only. List it, or wait for 2027 dates?"
+      ]
+    }
+  }
+}

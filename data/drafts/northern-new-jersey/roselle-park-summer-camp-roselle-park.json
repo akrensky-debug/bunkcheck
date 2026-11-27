@@ -204,7 +204,7 @@
     }
   ],
   "review": {
-    "status": "ready",
+    "status": "needs_andrew",
     "source": {
       "url": "https://rpsd.org/summer-camp",
       "kind": "html",
@@ -226,7 +226,9 @@
         "New camp, researched from https://rpsd.org/summer-camp",
         "ZIP 07204 looked up from the camp's street address with the Census geocoder (ZIP lookups allowed by Andrew, 22 November)."
       ],
-      "for_andrew": []
+      "for_andrew": [
+        "Read from the 2027 handbook, a 14.5 MB PDF downloaded with curl as BunkcheckBot; it is over the repo fetcher's 8 MB limit, where CLAUDE.md names Firecrawl. OK to source it that way?"
+      ]
     }
   },
   "zip": "07204"

@@ -1,0 +1,168 @@
+{
+  "slug": "eagles-sports-camp-wyckoff",
+  "name": "Eagles Sports Camp",
+  "operator_name": "Eastern Christian School",
+  "website_url": "https://www.easternchristian.org/eagles-camps/our-camps/",
+  "registration_url": "https://www.easternchristian.org/eagles-camps/registration/",
+  "email": "office@eaglescamps.org",
+  "phone": "973-310-0421",
+  "street_address": "518 Sicomac Avenue",
+  "city": "Wyckoff",
+  "state": "NJ",
+  "zip": "07481",
+  "camp_type": "day",
+  "primary_categories": [
+    "sports"
+  ],
+  "activities": [
+    "kickball",
+    "baseball",
+    "soccer",
+    "basketball",
+    "battle ball",
+    "capture the flag",
+    "kick the can",
+    "water play"
+  ],
+  "grade_min": 1,
+  "grade_max": 8,
+  "age_min": 6,
+  "age_max": 14,
+  "description_short": "Neighborhood style sports day camp run by Eastern Christian School at its Wyckoff campus for children entering grades 1 to 8. Days are filled with kickball, baseball, soccer, basketball, capture the flag and water games.",
+  "indoor_outdoor": "both",
+  "price_per_week": 375,
+  "price_min": 375,
+  "price_max": 375,
+  "price_per": "week",
+  "meals_included": false,
+  "refund_policy_summary": "A nonrefundable 40% deposit per camper per week holds the spot. Written cancellations before June 1 may get a partial refund; none after June 1 except case by case for medical or family emergencies. Partial weeks are not prorated.",
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Week 1",
+      "start_date": "2027-06-28",
+      "end_date": "2027-07-02",
+      "price": 375,
+      "availability": "open"
+    },
+    {
+      "name": "Week 2",
+      "start_date": "2027-07-05",
+      "end_date": "2027-07-09",
+      "price": 375,
+      "availability": "open"
+    },
+    {
+      "name": "Week 3",
+      "start_date": "2027-07-12",
+      "end_date": "2027-07-16",
+      "price": 375,
+      "availability": "open"
+    },
+    {
+      "name": "Week 4",
+      "start_date": "2027-07-19",
+      "end_date": "2027-07-23",
+      "price": 375,
+      "availability": "open"
+    },
+    {
+      "name": "Week 5",
+      "start_date": "2027-07-26",
+      "end_date": "2027-07-30",
+      "price": 375,
+      "availability": "open"
+    },
+    {
+      "name": "Week 6",
+      "start_date": "2027-08-02",
+      "end_date": "2027-08-06",
+      "price": 375,
+      "availability": "open"
+    },
+    {
+      "name": "Week 7",
+      "start_date": "2027-08-09",
+      "end_date": "2027-08-13",
+      "price": 375,
+      "availability": "open"
+    },
+    {
+      "name": "Week 8",
+      "start_date": "2027-08-16",
+      "end_date": "2027-08-20",
+      "price": 375,
+      "availability": "open"
+    }
+  ],
+  "notes": "Drop off 8:30 to 9 am; pick up 2:45 to 3 pm Monday to Thursday and 12:45 to 1 pm on Friday. Grades are for fall 2027; ages derived from grades. Week 3 also runs at the North Haledon campus (50 Oakwood Avenue). Lunch is packed from home or ordered from the school's Eagle Cafe. The 40% deposit counts toward tuition.",
+  "sources": [
+    {
+      "url": "https://www.easternchristian.org/eagles-camps/our-camps/",
+      "checked": "2026-11-27",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "age_min",
+        "age_max",
+        "description_short",
+        "indoor_outdoor",
+        "price_per_week",
+        "price_min",
+        "price_max",
+        "price_per",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Our Camps page, 'Eagles Sports Camp (2027)': grades 1 to 8 for fall 2027, eight weeks June 28 to August 20, Wyckoff weeks 1 to 8 and North Haledon week 3, $375 a week; Wyckoff campus address with ZIP in the page footer. Ages derived from grades."
+    },
+    {
+      "url": "https://www.easternchristian.org/eagles-camps/policies/",
+      "checked": "2026-11-27",
+      "fields": [
+        "meals_included",
+        "refund_policy_summary"
+      ],
+      "note": "Researched by Claude from this page. Policies page: bring lunch or buy from Eagle Cafe; deposit and cancellation rules."
+    }
+  ],
+  "review": {
+    "status": "ready",
+    "source": {
+      "url": "https://www.easternchristian.org/eagles-camps/our-camps/",
+      "kind": "html",
+      "title": "Our Camps - Eastern Christian School"
+    },
+    "warnings": [],
+    "unknowns": [
+      "extended_care",
+      "transportation",
+      "financial_aid"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "city 'Wyckoff', NJ is not in cities.py"
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-27",
+      "page_checked": "https://www.easternchristian.org/eagles-camps/our-camps/",
+      "changes": [
+        "New camp, researched from https://www.easternchristian.org/eagles-camps/our-camps/"
+      ],
+      "for_andrew": []
+    }
+  }
+}

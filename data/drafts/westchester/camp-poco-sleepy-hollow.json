@@ -1,0 +1,89 @@
+{
+  "slug": "camp-poco-sleepy-hollow",
+  "name": "Camp Poco (Pocantico Hills Summer Day Camp)",
+  "operator_name": "Pocantico Hills Central School District",
+  "website_url": "https://pocanticohills.org/summer-day-camp",
+  "registration_url": "https://pocanticohillsdaycamp.campmanagement.com/p/request_for_info_m.php?action=enroll",
+  "email": "summercamp@pocanticohills.org",
+  "phone": "914-631-2440 x717",
+  "street_address": "599 Bedford Road",
+  "city": "Sleepy Hollow",
+  "state": "NY",
+  "zip": "10591",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "description_short": "Six week school district day camp in its 70th year at Pocantico Hills in Sleepy Hollow, open to district residents and to families from outside the district. Camp runs 9 to 3 with early drop off and late pick up, and ends the summer with a color war tradition.",
+  "extended_care": true,
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Summer 2026 (six weeks, closed July 3)",
+      "start_date": "2026-06-29",
+      "end_date": "2026-08-07",
+      "availability": "unknown"
+    }
+  ],
+  "notes": "Camp hours 9 am to 3 pm; early drop off from 8 am and late pick up 3 to 5 pm (no late pick up on the last day). Residents zoned to Pocantico Hills School registered first (from February 2), then returning families, then open registration for residents and non-residents from February 23. Tuition is in a 2026 Tuition Rates document that could not be read (403). The address is the district's, at 599 Bedford Road.",
+  "sources": [
+    {
+      "url": "https://pocanticohills.org/summer-day-camp",
+      "checked": "2026-11-27",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "description_short",
+        "extended_care",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Summer Day Camp page: June 29 to August 7, 2026, closed July 3, 9 to 3 with early and late options, registration for residents and non-residents; district address in the footer."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://pocanticohills.org/summer-day-camp",
+      "kind": "html",
+      "title": "Pocantico Hills CSD - Summer Day Camp"
+    },
+    "warnings": [],
+    "unknowns": [
+      "age_min",
+      "age_max",
+      "grade_min",
+      "grade_max",
+      "price_per_week",
+      "fees",
+      "transportation",
+      "meals_included"
+    ],
+    "low_confidence": [
+      "street_address"
+    ],
+    "errors": [
+      "city 'Sleepy Hollow', NY is not in cities.py"
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-27",
+      "page_checked": "https://pocanticohills.org/summer-day-camp",
+      "changes": [
+        "New camp, researched from https://pocanticohills.org/summer-day-camp"
+      ],
+      "for_andrew": [
+        "No price or ages: the 2026 Tuition Rates and flyer documents on the district's SharePoint returned 403, so I took that as final. The street address is the district office in the page footer; the page doesn't say the camp is held there. List without price, or ask the camp for the rates?"
+      ]
+    }
+  }
+}
