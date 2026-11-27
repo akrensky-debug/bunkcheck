@@ -1,0 +1,98 @@
+{
+  "slug": "town-of-stony-point-playground-program-stony-point",
+  "name": "Town of Stony Point Playground Program",
+  "operator_name": "Town of Stony Point Recreation",
+  "website_url": "https://www.stonypointny.gov/town-of-stony-point-playground-program",
+  "registration_url": "https://register.communitypass.net/StonyPoint",
+  "email": "knigro@townofstonypoint.org",
+  "phone": "(845) 947-5261",
+  "street_address": "Charles S. Eccher (Lowland) Park, Lowland Hill Road",
+  "city": "Stony Point",
+  "state": "NY",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "age_min": 3,
+  "age_max": 8,
+  "description_short": "Half day town playground program for children ages 3 to 8, held 10 am to 1:30 pm at Charles Eccher (Lowland) Park in Stony Point. Families bring and collect their own children; no transportation is provided.",
+  "indoor_outdoor": "outdoor",
+  "transportation": false,
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "2026 Playground Program (6 weeks)",
+      "start_date": "2026-06-30",
+      "end_date": "2026-08-08",
+      "availability": "unknown"
+    }
+  ],
+  "notes": "Half day, 10 am to 1:30 pm. Online registration through CommunityPass opened May 1, 2026 at 8 am. Fees and residency rules are in a program flyer PDF that could not be read (it is a scanned image).",
+  "sources": [
+    {
+      "url": "https://www.stonypointny.gov/town-of-stony-point-playground-program",
+      "checked": "2026-11-27",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "camp_type",
+        "primary_categories",
+        "age_min",
+        "age_max",
+        "description_short",
+        "indoor_outdoor",
+        "transportation",
+        "sessions",
+        "zip"
+      ],
+      "note": "Researched by Claude from this page. 2026 Playground Program page: ages 3 to 8, half day 10 am to 1:30 pm at Charles Eccher (Lowland) Park, no transportation, 6 weeks June 30 to August 8, registration via CommunityPass from May 1. Outdoor inferred from a park program. ZIP 10980 is from the Town Hall address in the page footer (74 East Main Street, Stony Point, NY 10980)."
+    },
+    {
+      "url": "https://www.stonypointny.gov/stony-point-town-parks",
+      "checked": "2026-11-27",
+      "fields": [
+        "street_address",
+        "city",
+        "state"
+      ],
+      "note": "Researched by Claude from this page. Stony Point Town Parks page: Charles S. Eccher (Lowland) Park, Lowland Hill Road, Stony Point."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.stonypointny.gov/town-of-stony-point-playground-program",
+      "kind": "html",
+      "title": "Stony Point Playground Program, Town of Stony Point"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Price",
+      "Residency rules",
+      "Extended care",
+      "Lunch"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "city 'Stony Point', NY is not in cities.py"
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-27",
+      "page_checked": "https://www.stonypointny.gov/town-of-stony-point-playground-program",
+      "changes": [
+        "New camp, researched from https://www.stonypointny.gov/town-of-stony-point-playground-program"
+      ],
+      "for_andrew": [
+        "The program flyer with fees (https://www.stonypointny.gov/userfiles/files/Playground%20Program%20(2).pdf) is a scanned image the fetcher can't read, so price and residency rules are left out.",
+        "The page says the program ends on August 8, 2026, which is a Saturday; recorded as stated.",
+        "The Census geocoder found no match for Lowland Hill Road (the park has no street number on the town's site), so the ZIP 10980 is from the Town Hall address in the camp page footer. Fine to place the listing by that ZIP?"
+      ]
+    }
+  },
+  "zip": "10980"
+}

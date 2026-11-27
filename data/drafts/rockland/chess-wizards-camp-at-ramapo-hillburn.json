@@ -1,0 +1,103 @@
+{
+  "slug": "chess-wizards-camp-at-ramapo-hillburn",
+  "name": "Chess Wizards Camp at Ramapo",
+  "operator_name": "Chess Wizards with Town of Ramapo Parks & Recreation",
+  "website_url": "https://www.ramapoparks.org/page/chess-wizards-camps-211.html",
+  "registration_url": "https://register1.vermontsystems.com/wbwsc/nyramapo.wsc/",
+  "street_address": "JTS Center, 115 Torne Valley Rd.",
+  "city": "Hillburn",
+  "state": "NY",
+  "zip": "10931",
+  "camp_type": "specialty",
+  "primary_categories": [
+    "academic"
+  ],
+  "activities": [
+    "chess"
+  ],
+  "age_min": 5,
+  "age_max": 12,
+  "description_short": "Week long chess camp for ages 5 to 12 of every skill level, from beginners to advanced players, at the JTS Center in Hillburn, with full day and half day options.",
+  "indoor_outdoor": "indoor",
+  "price_per_week": 365,
+  "price_min": 250,
+  "price_max": 365,
+  "price_per": "session",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Session 1",
+      "start_date": "2026-08-17",
+      "end_date": "2026-08-21",
+      "availability": "unknown",
+      "price": 365
+    },
+    {
+      "name": "Session 2",
+      "start_date": "2026-08-24",
+      "end_date": "2026-08-28",
+      "availability": "unknown",
+      "price": 365
+    }
+  ],
+  "notes": "Full day 9 am to 3 pm, $365 a session; half day 9 am to noon or noon to 3 pm, $250 a session. Session prices shown are full day.",
+  "sources": [
+    {
+      "url": "https://www.ramapoparks.org/page/chess-wizards-camps-211.html",
+      "checked": "2026-11-27",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "indoor_outdoor",
+        "price_per_week",
+        "price_min",
+        "price_max",
+        "price_per",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Chess Wizards Camps page: JTS Center, 115 Torne Valley Rd., Hillburn, NY 10931; ages 5 to 12; sessions August 17 to 21 and August 24 to 28; full day $365, half day $250 per session. Indoor inferred from a community center chess program; year from Ramapo's 2026 camp lineup."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.ramapoparks.org/page/chess-wizards-camps-211.html",
+      "kind": "html",
+      "title": "Chess Wizards Camps, Ramapo Parks & Recreation"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Lunch",
+      "Extended care",
+      "Resident and non-resident rates"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "city 'Hillburn', NY is not in cities.py"
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-27",
+      "page_checked": "https://www.ramapoparks.org/page/chess-wizards-camps-211.html",
+      "changes": [
+        "New camp, researched from https://www.ramapoparks.org/page/chess-wizards-camps-211.html"
+      ],
+      "for_andrew": [
+        "The page gives the August dates without a year; 2026 is taken from Ramapo's 2026 camp lineup and registration form (which list Play-Well beside it). Worth a glance before listing.",
+        "The page's dates have no year; 2026 is taken from Ramapo's 2026 camp lineup. Confirm, or wait for a dated page?"
+      ]
+    }
+  }
+}

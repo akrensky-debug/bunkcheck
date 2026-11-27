@@ -1,0 +1,158 @@
+{
+  "slug": "ramapo-create-and-explore-camp-new-city",
+  "name": "Ramapo Create & Explore Camp",
+  "operator_name": "Town of Ramapo Parks & Recreation",
+  "website_url": "https://www.ramapoparks.org/page/create--explore-73.html",
+  "registration_url": "https://www.ramapoparks.org/page/registration-191.html",
+  "phone": "845.357.6100",
+  "street_address": "Summit Park Elementary School, 925 NY-45",
+  "city": "New City",
+  "state": "NY",
+  "zip": "10956",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "arts",
+    "sports",
+    "swimming"
+  ],
+  "activities": [
+    "arts and crafts",
+    "sports and games",
+    "dance",
+    "swimming at Spook Rock Pool",
+    "trips"
+  ],
+  "grade_min": 1,
+  "grade_max": 8,
+  "age_min": 6,
+  "age_max": 14,
+  "description_short": "Ramapo town day camp for children entering grades 1 to 8 at Summit Park Elementary School in New City, mixing arts and crafts, sports, games and dance, with two afternoons a week at Spook Rock Pool and trips such as Lake Compounce and Dave & Buster's.",
+  "price_min": 1075,
+  "price_max": 1075,
+  "price_per": "session",
+  "extended_care": true,
+  "refund_policy_summary": "Refund requests go in writing to the Parks & Recreation Department; medical refunds need a doctor's note. No refunds once a program has begun, and a $50 per camper surcharge applies to cancellations.",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Summer 2026 (6 weeks)",
+      "start_date": "2026-07-06",
+      "end_date": "2026-08-14",
+      "availability": "unknown",
+      "price": 1075
+    }
+  ],
+  "fees": [
+    {
+      "name": "Extended day (3:30 to 5:30 pm)",
+      "amount": 250,
+      "per": "summer",
+      "required": false
+    },
+    {
+      "name": "Payment plan fee",
+      "amount": 25,
+      "per": "once",
+      "required": false,
+      "note": "Per family, only for families who choose the payment plan (minimum $500 deposit, in person, started by May 15)",
+      "source_url": "https://www.ramapoparks.org/page/registration-191.html"
+    },
+    {
+      "name": "Late enrollment increase",
+      "amount": 75,
+      "per": "summer",
+      "required": false,
+      "note": "Charged on new enrollments after June 12, 2026 ($50 for incomplete payment plans)",
+      "source_url": "https://www.ramapoparks.org/page/registration-191.html"
+    },
+    {
+      "name": "Cancellation surcharge",
+      "amount": 50,
+      "per": "once",
+      "required": false,
+      "note": "Per camper, charged on a refund for a cancelled camp",
+      "source_url": "https://www.ramapoparks.org/page/registration-191.html"
+    }
+  ],
+  "notes": "Price is the non-resident rate ($1,075); Ramapo residents pay $950. Non-residents could register from April 13 if space allowed. Camp page gives hours as 8:30 am to 3:30 pm, the registration form 9 am to 3:30 pm; extended day 3:30 to 5:30 pm ($250).",
+  "sources": [
+    {
+      "url": "https://www.ramapoparks.org/page/create--explore-73.html",
+      "checked": "2026-11-27",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "age_min",
+        "age_max",
+        "description_short",
+        "extended_care",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Create & Explore page: July 6 to August 14, 8:30 to 3:30, extended day 3:30 to 5:30, entering grades 1 to 8, Summit Park Elementary School, 925 NY-45, New City, NY 10956, resident fee $950, extended day $250, Spook Rock Pool twice a week. Ages derived from grades. Session price is the non-resident rate from the registration form."
+    },
+    {
+      "url": "https://www.ramapoparks.org/uploads/pdfs/1786456257_CAMP%20REG%20FORM%202026.pdf",
+      "checked": "2026-11-27",
+      "fields": [
+        "price_min",
+        "price_max",
+        "price_per"
+      ],
+      "note": "Researched by Claude from this page. 2026 Summer Camp Registration Form: Create & Explore R $950 NR $1,075; extended day $250."
+    },
+    {
+      "url": "https://www.ramapoparks.org/page/registration-191.html",
+      "checked": "2026-11-27",
+      "fields": [
+        "registration_url",
+        "refund_policy_summary",
+        "fees"
+      ],
+      "note": "Researched by Claude from this page. 2026 Registration page: residents register from March 2, non-residents from April 13 if space allows; optional payment plan fee $25 per family; refund surcharge $50 per camper; fee increases after June 12, 2026; full day camps non-resident upcharge $125."
+    }
+  ],
+  "review": {
+    "status": "ready",
+    "source": {
+      "url": "https://www.ramapoparks.org/page/create--explore-73.html",
+      "kind": "html",
+      "title": "Create & Explore, Ramapo Parks & Recreation"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Transportation",
+      "Lunch",
+      "Financial aid"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "city 'New City', NY is not in cities.py"
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-27",
+      "page_checked": "https://www.ramapoparks.org/page/create--explore-73.html",
+      "changes": [
+        "New camp, researched from https://www.ramapoparks.org/page/create--explore-73.html"
+      ],
+      "for_andrew": [
+        "The candidate list placed this camp in Suffern; the camp page puts it at Summit Park Elementary School in New City, which is what the draft uses."
+      ]
+    }
+  }
+}

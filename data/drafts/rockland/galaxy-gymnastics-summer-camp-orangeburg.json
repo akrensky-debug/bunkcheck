@@ -1,0 +1,90 @@
+{
+  "slug": "galaxy-gymnastics-summer-camp-orangeburg",
+  "name": "Galaxy Gymnastics Summer Camp",
+  "operator_name": "Galaxy Gymnastics",
+  "website_url": "https://galaxy-gymnastics.com/summer-camp",
+  "email": "galaxygym1@aol.com",
+  "phone": "845-398-1000",
+  "street_address": "17a Greenbush Road",
+  "city": "Orangeburg",
+  "state": "NY",
+  "zip": "10962",
+  "camp_type": "specialty",
+  "primary_categories": [
+    "sports"
+  ],
+  "secondary_categories": [
+    "arts"
+  ],
+  "activities": [
+    "non competitive gymnastics",
+    "games",
+    "arts and crafts"
+  ],
+  "description_short": "Half day summer camp at Galaxy Gymnastics in Orangeburg with non competitive gymnastics skills, games and arts and crafts, open from late June through the end of August.",
+  "indoor_outdoor": "indoor",
+  "season_year": 2026,
+  "notes": "Half day programs from late June through the end of August; 2026 registration began April 1, 2026. The page posts no dates, ages or prices.",
+  "sources": [
+    {
+      "url": "https://galaxy-gymnastics.com/summer-camp",
+      "checked": "2026-11-27",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "description_short",
+        "indoor_outdoor"
+      ],
+      "note": "Researched by Claude from this page. Summer Camp page: half day programs of non competitive gymnastics, games and arts and crafts, open late June through the end of August, 2026 registration from April 1, 2026. Indoor inferred from a gym program."
+    },
+    {
+      "url": "https://galaxy-gymnastics.com/contact-us",
+      "checked": "2026-11-27",
+      "fields": [
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip"
+      ],
+      "note": "Researched by Claude from this page. Contact Us page: 17a Greenbush Road, Orangeburg, New York 10962, 845-398-1000, galaxygym1@aol.com."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://galaxy-gymnastics.com/summer-camp",
+      "kind": "html",
+      "title": "Summer Camp, Galaxy Gymnastics"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Session dates",
+      "Ages",
+      "Price",
+      "Hours"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "city 'Orangeburg', NY is not in cities.py"
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-27",
+      "page_checked": "https://galaxy-gymnastics.com/summer-camp",
+      "changes": [
+        "New camp, researched from https://galaxy-gymnastics.com/summer-camp"
+      ],
+      "for_andrew": [
+        "The page gives only the 2026 season outline (half day, late June to end of August, registration from April 1, 2026), with no dates, ages or prices. The Cirque de Galaxy 2027 link is a gymnastics meet, not a camp.",
+        "Thin listing: the 2026 page gives no dates, ages or prices. List it now, or wait for 2027?"
+      ]
+    }
+  }
+}
