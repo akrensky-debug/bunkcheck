@@ -89,7 +89,7 @@ async def test_preview_shows_2026_labeled_and_asks_three_things(camp, db, outbox
     assert "Week 1: Mon Jun 29 to Fri Jul 3, 2026, $325" in out
     assert "/owners/update/" in out and "reply to this email in your own words" in out.lower()
     assert "(preview only: nothing recorded or sent" in out
-    assert "Thanks,\nBunkcheck" in out and "Andrew" not in out
+    assert "Thanks,\nAndrew\nBunkcheck" in out and "Morgan" not in out   # signed by Andrew; never the operator
     assert "—" not in out and "–" not in out                     # house style: no dashes
     assert not db.tables.get("listing_confirmations") and outbox == []
 
@@ -97,24 +97,24 @@ async def test_preview_shows_2026_labeled_and_asks_three_things(camp, db, outbox
 async def test_the_owner_is_the_checker(camp, db, outbox):
     # The old email still needs a person's check first...
     with pytest.raises(service.ConfirmationError, match="checked by a person"):
-        await service.send(camp, sent_by="Andrew")
+        await service.send(camp, sent_by="Morgan")
     assert [c["name"] for c, _ in service.queue().ready] == []
     # ...the season update doesn't.
     assert [c["name"] for c, _ in season.queue().ready] == ["Far Away Camp", "Riverside Soccer Camp"]
     assert [c["name"] for c, _ in season.queue(region="Providence, RI").ready] == ["Riverside Soccer Camp"]
-    await season.send(camp, sent_by="Andrew")
+    await season.send(camp, sent_by="Morgan")
     row = db.tables["listing_confirmations"][0]
     assert row["kind"] == "season_update" and row["season_year"] == 2027 and row["status"] == "sent"
     assert row["snapshot"]["sessions"][0]["start_date"] == "2026-06-29"
-    assert rows(db, "listing_changes", field_name="season_update")[0]["actor"] == "Andrew"
+    assert rows(db, "listing_changes", field_name="season_update")[0]["actor"] == "Morgan"
     waiting = dict((c["name"], why) for c, why in season.queue().waiting)
     assert waiting["Riverside Soccer Camp"].startswith("asked; link works until")
 
 
 def test_send_ready_update_lists_then_sends(camp, db, outbox, capsys):
-    assert cli(["send-ready", "--update", "--by", "Andrew", "--limit", "1"]) == 0
+    assert cli(["send-ready", "--update", "--by", "Morgan", "--limit", "1"]) == 0
     assert "would ask Far Away Camp" in capsys.readouterr().out and outbox == []
-    assert cli(["send-ready", "--update", "--by", "Andrew", "--limit", "5", "--yes"]) == 0
+    assert cli(["send-ready", "--update", "--by", "Morgan", "--limit", "5", "--yes"]) == 0
     assert "/owners/update/" in capsys.readouterr().out and len(outbox) == 2
 
 
@@ -131,7 +131,7 @@ ANSWER = {
 
 
 async def test_form_puts_2027_on_the_listing_and_tells_the_owner(client, camp, db, outbox):
-    await season.send(camp, sent_by="Andrew")
+    await season.send(camp, sent_by="Morgan")
     token = token_from(outbox[-1])
     assert client.get(f"/api/v1/owners/confirm/{token}").status_code == 404     # each link fits one page
 
@@ -178,7 +178,7 @@ async def test_form_puts_2027_on_the_listing_and_tells_the_owner(client, camp, d
     assert "Week 1: Mon Jun 28 to Fri Jul 2, 2027, $295" in back.text      # after
     assert "Price per week (2027)" in back.text and "$325" in back.text and "$295" in back.text
     assert "Registration opens: Friday, January 15, 2027" in back.text
-    assert "reply to this email and a person will fix it" in back.text.lower() and "Andrew" not in back.text
+    assert "reply to this email and a person will fix it" in back.text.lower() and "Morgan" not in back.text
 
     assert client.post(f"/api/v1/owners/update/{token}", json=ANSWER).status_code == 404   # used up
     c = season.count()
@@ -187,7 +187,7 @@ async def test_form_puts_2027_on_the_listing_and_tells_the_owner(client, camp, d
 
 
 async def test_a_bad_answer_changes_nothing(client, camp, db, outbox):
-    await season.send(camp, sent_by="Andrew")
+    await season.send(camp, sent_by="Morgan")
     token = token_from(outbox[-1])
     bad = {**ANSWER, "sessions": [{"name": "Week 1", "start_date": "2026-06-28", "end_date": "2026-07-02"}]}
     res = client.post(f"/api/v1/owners/update/{token}", json=bad)
@@ -201,7 +201,7 @@ async def test_registration_day_only_feeds_alerts_and_keeps_2026(client, camp, d
     db.table("registration_alerts").insert({"camp_id": CAMP, "email": "dad@example.com", "token": "t1",
                                             "confirmed_at": "2026-11-01T00:00:00+00:00"}).execute()
     assert alerts.due(datetime.now(timezone.utc)) == []
-    await season.send(camp, sent_by="Andrew")
+    await season.send(camp, sent_by="Morgan")
     token = token_from(outbox[-1])
     res = client.post(f"/api/v1/owners/update/{token}", json={
         "dates_not_set": True, "price_not_set": True, "registration_opens": "2027-01-15",
@@ -231,7 +231,7 @@ async def test_the_owner_moves_an_existing_registration_date(client, camp, db, o
                                              "verified": False, "source_url": "https://riverside.example"}).execute()
     db.table("registration_windows").insert({"camp_id": CAMP, "opens_at": "2026-01-12T14:00:00+00:00",
                                              "verified": True}).execute()   # last season's stays as it was
-    await season.send(camp, sent_by="Andrew")
+    await season.send(camp, sent_by="Morgan")
     client.post(f"/api/v1/owners/update/{token_from(outbox[-1])}", json={"registration_opens": "2027-01-15"})
     wins = sorted(rows(db, "registration_windows", camp_id=CAMP), key=lambda w: w["opens_at"])
     assert len(wins) == 2 and wins[0]["opens_at"].startswith("2026-01-12")
@@ -240,7 +240,7 @@ async def test_the_owner_moves_an_existing_registration_date(client, camp, db, o
 
 
 async def test_rest_is_right_is_refused_if_we_changed_the_listing(client, camp, db, outbox):
-    await season.send(camp, sent_by="Andrew")
+    await season.send(camp, sent_by="Morgan")
     db.table("camps").update({"age_max": 13}).eq("id", CAMP).execute()
     res = client.post(f"/api/v1/owners/update/{token_from(outbox[-1])}", json=ANSWER).json()
     assert not res["camp_verified"] and "didn't mark the rest" in res["skipped"][0]
@@ -256,7 +256,7 @@ async def test_queue_prints_the_january_number(camp, db, capsys):
 
 
 async def test_a_price_without_dates_waits_for_the_dates(client, camp, db, outbox):
-    await season.send(camp, sent_by="Andrew")
+    await season.send(camp, sent_by="Morgan")
     res = client.post(f"/api/v1/owners/update/{token_from(outbox[-1])}",
                       json={"dates_not_set": True, "price_per_week": 295}).json()
     # $295 next to 2026 dates would read as the 2026 price, so the listing keeps $325 for now.
@@ -265,7 +265,7 @@ async def test_a_price_without_dates_waits_for_the_dates(client, camp, db, outbo
     assert season.held_price(CAMP, 2027) == 295
 
     # The dates arrive later (here, a second email's form): they bring the price with them.
-    await season.send(service.find_camp(CAMP), sent_by="Andrew")
+    await season.send(service.find_camp(CAMP), sent_by="Morgan")
     client.post(f"/api/v1/owners/update/{token_from(outbox[-1])}", json={"sessions": ANSWER["sessions"][:1]})
     camp_row = rows(db, "camps", id=CAMP)[0]
     assert camp_row["season_year"] == 2027 and camp_row["price_per_week"] == 295

@@ -125,12 +125,17 @@ def check(to: str, now: datetime | None = None) -> None:
         raise OutreachBlocked(f"Today's limit is reached ({cap} camp emails in 24 hours, OWNER_OUTREACH_DAILY_CAP)")
 
 
+# The company behind Bunkcheck (docs/decisions/company.md, rule 15). The footer names it, with the
+# postal address, so every email we start says who sent it.
+COMPANY = "Bunkcheck is built by PromptBridge LLC"
+
+
 def footer_text() -> str:
-    return (f"\n\n--\nBunkcheck, {postal_address() or '[postal address not set]'}\n"
+    return (f"\n\n--\n{COMPANY}, {postal_address() or '[postal address not set]'}\n"
             "Don't want emails from us? Reply \"stop\" and we won't email this address again.")
 
 
 def footer_html() -> str:
     address = html.escape(postal_address() or "[postal address not set]")
-    return (f"<p style='color:#888;font-size:12px;margin-top:24px'>Bunkcheck, {address}<br>"
+    return (f"<p style='color:#888;font-size:12px;margin-top:24px'>{html.escape(COMPANY)}, {address}<br>"
             "Don't want emails from us? Reply &ldquo;stop&rdquo; and we won't email this address again.</p>")

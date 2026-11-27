@@ -40,7 +40,7 @@ async def test_no_postal_address_no_outreach(checked, db, outbox, monkeypatch) -
 async def test_the_footer_says_who_we_are_and_how_to_stop(checked, outbox) -> None:
     await service.send(checked, sent_by="Andrew")
     email = outbox[-1]
-    assert "Bunkcheck, 1 Test Street, Providence, RI 02906" in email.text
+    assert "Bunkcheck is built by PromptBridge LLC, 1 Test Street, Providence, RI 02906" in email.text
     assert 'Reply "stop" and we won\'t email this address again.' in email.text
     assert "1 Test Street" in email.html and "stop" in email.html
 
@@ -126,3 +126,16 @@ def test_a_stop_reply_goes_on_the_list_and_still_reaches_a_person(webhook, clien
     assert res["status"] == "forwarded" and res["update"]["status"] == "stopped" and called == []
     assert outreach.suppressed("director@riverside.example")["reason"] == "asked"
     assert "They asked us to stop emailing" in outbox[-1].text and "/owners/review/" not in outbox[-1].text
+
+
+async def test_the_listing_email_introduces_us_as_new_and_says_who_is_behind_it(checked, outbox) -> None:
+    await service.send(checked, sent_by="Andrew")
+    email = outbox[-1]
+    assert email.subject == f"Is our listing for {checked['name']} right?"
+    for part in (email.text, email.html):
+        assert "I'm Andrew, a parent near Providence" in part.replace("&#x27;", "'")
+        assert "PromptBridge, is building Bunkcheck to make camp planning and booking easier for parents" in part
+        assert "We open to families in January, starting in Rhode Island." in part
+        assert "Being listed is free" in part
+    assert "Thanks,\nAndrew\nBunkcheck" in email.text
+    assert "Thanks,<br>Andrew<br>Bunkcheck" in email.html

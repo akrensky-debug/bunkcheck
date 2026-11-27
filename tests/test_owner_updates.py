@@ -60,7 +60,7 @@ async def test_week_3_is_full_is_proposed_then_applied(listed, outbox):
     assert read.seen["camp"]["id"] == CAMP and {s["id"] for s in read.seen["sessions"]} == {WEEK_1, WEEK_3}
     assert row["status"] == "proposed" and session(listed, WEEK_3)["availability"] == "open"   # not applied yet
 
-    done = await updates.apply(row["id"], handled_by="Andrew")
+    done = await updates.apply(row["id"], handled_by="Morgan")
     assert session(listed, WEEK_3)["availability"] == "full" and session(listed, WEEK_3)["spots_available"] == 0
     assert done["applied"][0]["before"]["availability"] == "open"
 
@@ -73,10 +73,10 @@ async def test_week_3_is_full_is_proposed_then_applied(listed, outbox):
     assert email.to == OWNER and email.subject == "Updated: Riverside Soccer"
     assert 'Week 3: open -> full   (you wrote: "Week 3 is full")' in email.text
     assert "Week 1 · 2027-07-05 to 2027-07-09 · $300: open, 6 spots left" in email.text
-    assert "Reply to this email and a person will fix it" in email.text and "Andrew" not in email.text
+    assert "Reply to this email and a person will fix it" in email.text and "Morgan" not in email.text
 
     with pytest.raises(updates.ConfirmationError, match="applied"):
-        await updates.apply(row["id"], handled_by="Andrew")   # once only
+        await updates.apply(row["id"], handled_by="Morgan")   # once only
 
 
 async def test_spots_and_reopen(listed, outbox):
@@ -84,7 +84,7 @@ async def test_spots_and_reopen(listed, outbox):
     read = reader_saying(ProposedChange(session_id=WEEK_1, change="spots", spots_left=2, quote="2 left in week 1"),
                          ProposedChange(session_id=WEEK_3, change="open", quote="a spot opened in week 3"))
     row = await updates.receive(OWNER, "2 left in week 1, and a spot opened in week 3", reader=read)
-    await updates.apply(row["id"], handled_by="Andrew")
+    await updates.apply(row["id"], handled_by="Morgan")
     w1, w3 = session(listed, WEEK_1), session(listed, WEEK_3)
     assert (w1["spots_available"], w1["spots_total"], w1["spots_source"]) == (2, 20, "owner")
     # Open again with no number: the count is unknown, not a stale zero.
@@ -118,7 +118,7 @@ async def test_anything_beyond_a_routine_update_goes_to_a_person(listed, outbox,
     row = await updates.receive(OWNER, "…", reader=read)
     assert row["status"] == "needs_person" and why in row["reason"]
     with pytest.raises(updates.ConfirmationError):
-        await updates.apply(row["id"], handled_by="Andrew")
+        await updates.apply(row["id"], handled_by="Morgan")
     assert outbox == [] and not listed.tables.get("listing_changes")
 
 
@@ -144,7 +144,7 @@ async def test_listing_moved_since_it_was_read(listed):
     row = await updates.receive(OWNER, "10 left in week 1", reader=read)
     listed.table("sessions").update({"spots_total": 8}).eq("id", WEEK_1).execute()
     with pytest.raises(updates.ConfirmationError, match="don't add up"):
-        await updates.apply(row["id"], handled_by="Andrew")
+        await updates.apply(row["id"], handled_by="Morgan")
     assert updates.get_message(row["id"])["status"] == "needs_person"
     assert session(listed, WEEK_1)["spots_available"] == 6
 
@@ -203,14 +203,14 @@ def test_cli_inbox_apply_reject(listed, outbox, capsys, monkeypatch):
     out = capsys.readouterr().out
     assert "proposed" in out and 'full for session ' + WEEK_3 + ': "Week 3 is full"' in out
 
-    assert cli(["apply", msg_id, "--by", "Andrew"]) == 0
+    assert cli(["apply", msg_id, "--by", "Morgan"]) == 0
     assert json.loads(capsys.readouterr().out)[0]["after"]["availability"] == "full"
-    assert cli(["apply", msg_id, "--by", "Andrew"]) == 1
+    assert cli(["apply", msg_id, "--by", "Morgan"]) == 1
 
     monkeypatch.setattr("sys.stdin", io.StringIO("Can we change our price?"))
     monkeypatch.setattr(updates, "read_message", reader_saying(needs_person=True, reason="About price"))
     assert cli(["receive", "--from", OWNER]) == 0
     second = listed.tables["owner_messages"][-1]["id"]
-    assert cli(["reject", second, "--by", "Andrew", "--reason", "Answered by phone"]) == 0
+    assert cli(["reject", second, "--by", "Morgan", "--reason", "Answered by phone"]) == 0
     assert updates.get_message(second)["status"] == "rejected"
     assert cli(["inbox"]) == 0 and "Nothing waiting." in capsys.readouterr().out

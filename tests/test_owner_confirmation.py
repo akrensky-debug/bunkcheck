@@ -38,7 +38,7 @@ def token_from(outbox) -> str:
 
 async def test_send_needs_a_person_to_check_first(camp, outbox):
     with pytest.raises(service.ConfirmationError, match="checked by a person"):
-        await service.send(camp, sent_by="Andrew")
+        await service.send(camp, sent_by="Morgan")
     assert outbox == []
 
 
@@ -50,14 +50,14 @@ async def test_preview_records_and_sends_nothing(camp, db, outbox, capsys):
 
 
 async def test_confirm_flow(client, camp, db, outbox):
-    assert service.mark_checked(camp, "Andrew") == "team_verified"
-    first = await service.send(service.find_camp(CAMP_ID), sent_by="Andrew")
-    await service.send(service.find_camp(CAMP_ID), sent_by="Andrew")   # a resend supersedes the first link
+    assert service.mark_checked(camp, "Morgan") == "team_verified"
+    first = await service.send(service.find_camp(CAMP_ID), sent_by="Morgan")
+    await service.send(service.find_camp(CAMP_ID), sent_by="Morgan")   # a resend supersedes the first link
     assert [c["status"] for c in db.tables["listing_confirmations"]] == ["superseded", "sent"]
     assert client.get(f"/api/v1/owners/confirm/{first.token}").status_code == 404
 
     email = outbox[-1]
-    assert email.to == "info@riverside.example" and "Bunkcheck" in email.text and "Andrew" not in email.text
+    assert email.to == "info@riverside.example" and "Bunkcheck" in email.text and "Morgan" not in email.text
     token = token_from(outbox)
 
     view = client.get(f"/api/v1/owners/confirm/{token}").json()       # looking changes nothing
@@ -85,8 +85,8 @@ async def test_confirm_flow(client, camp, db, outbox):
 
 
 async def test_confirm_refused_if_listing_changed(client, camp, db, outbox):
-    service.mark_checked(camp, "Andrew")
-    await service.send(service.find_camp(CAMP_ID), sent_by="Andrew")
+    service.mark_checked(camp, "Morgan")
+    await service.send(service.find_camp(CAMP_ID), sent_by="Morgan")
     token = token_from(outbox)
     db.table("sessions").update({"availability": "full"}).eq("camp_id", CAMP_ID).execute()
     assert client.get(f"/api/v1/owners/confirm/{token}").json()["changed_since_sent"] is True
@@ -97,8 +97,8 @@ async def test_confirm_refused_if_listing_changed(client, camp, db, outbox):
 
 
 async def test_take_it_down(client, camp, db, outbox):
-    service.mark_checked(camp, "Andrew")
-    await service.send(service.find_camp(CAMP_ID), sent_by="Andrew")
+    service.mark_checked(camp, "Morgan")
+    await service.send(service.find_camp(CAMP_ID), sent_by="Morgan")
     token = token_from(outbox)
     res = client.post(f"/api/v1/owners/confirm/{token}", json={"answer": "remove"})
     assert res.json()["outcome"] == "removed"
@@ -108,8 +108,8 @@ async def test_take_it_down(client, camp, db, outbox):
 
 
 async def test_expired_link(client, camp, db, outbox):
-    service.mark_checked(camp, "Andrew")
-    await service.send(service.find_camp(CAMP_ID), sent_by="Andrew")
+    service.mark_checked(camp, "Morgan")
+    await service.send(service.find_camp(CAMP_ID), sent_by="Morgan")
     token = token_from(outbox)
     past = (datetime.now(timezone.utc) - timedelta(days=1)).isoformat()
     db.table("listing_confirmations").update({"expires_at": past}).eq("camp_id", CAMP_ID).execute()
@@ -131,8 +131,8 @@ async def test_find_camp_by_slug_and_name(camp, db):
 async def test_log_mode_records_that_nothing_was_emailed(camp, db):
     from campfinder import mailer
     mailer.set_mailer(mailer.LogMailer())
-    service.mark_checked(camp, "Andrew")
-    await service.send(service.find_camp(CAMP_ID), sent_by="Andrew")
+    service.mark_checked(camp, "Morgan")
+    await service.send(service.find_camp(CAMP_ID), sent_by="Morgan")
     assert any(isinstance(c.get("new_value"), dict) and c["new_value"].get("not_emailed")
                for c in db.tables["listing_changes"])
 
@@ -167,7 +167,7 @@ def test_queue_and_send_ready(db, outbox, capsys):
                                       "is_primary": True}).execute()
     db.table("listing_confirmations").insert({
         "camp_id": ids["Asked"], "email": "a@x.example", "token_hash": "h", "snapshot": {}, "status": "sent",
-        "sent_by": "Andrew", "sent_at": "2026-10-01T00:00:00+00:00",
+        "sent_by": "Morgan", "sent_at": "2026-10-01T00:00:00+00:00",
         "expires_at": (datetime.now(timezone.utc) + timedelta(days=20)).isoformat(),
     }).execute()
 
@@ -177,11 +177,11 @@ def test_queue_and_send_ready(db, outbox, capsys):
     assert why["Asked"].startswith("asked; link works until") and "not checked" in why["Unchecked"]
     assert "no email" in why["No Email"] and "Confirmed" not in why and "Off Site" not in why
 
-    assert cli(["send-ready", "--by", "Andrew", "--limit", "1"]) == 0     # lists only
+    assert cli(["send-ready", "--by", "Morgan", "--limit", "1"]) == 0     # lists only
     assert "would ask Checked" in capsys.readouterr().out and outbox == []
-    assert cli(["send-ready", "--by", "Andrew", "--limit", "1", "--yes"]) == 0
+    assert cli(["send-ready", "--by", "Morgan", "--limit", "1", "--yes"]) == 0
     assert [e.to for e in outbox] == ["b@x.example"]
     assert [c["name"] for c, _ in service.queue().ready] == ["With Contact"]
 
-    assert cli(["checked", ids["Unchecked"], ids["No Email"], "--by", "Andrew"]) == 0
+    assert cli(["checked", ids["Unchecked"], ids["No Email"], "--by", "Morgan"]) == 0
     assert "Unchecked: team_verified" in capsys.readouterr().out
