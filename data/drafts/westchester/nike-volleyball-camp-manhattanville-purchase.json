@@ -4,7 +4,7 @@
   "operator_name": "US Sports Camps",
   "website_url": "https://www.ussportscamps.com/volleyball/nike/nike-volleyball-camps-manhattanville-university",
   "street_address": "2900 Purchase St",
-  "city": "Purchase",
+  "city": "Harrison",
   "state": "NY",
   "zip": "10577",
   "camp_type": "specialty",
@@ -92,15 +92,14 @@
       "registration fee amount"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Purchase', NY is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-27",
       "page_checked": "https://www.ussportscamps.com/volleyball/nike/nike-volleyball-camps-manhattanville-university",
       "changes": [
-        "New camp, researched from https://www.ussportscamps.com/volleyball/nike/nike-volleyball-camps-manhattanville-university"
+        "New camp, researched from https://www.ussportscamps.com/volleyball/nike/nike-volleyball-camps-manhattanville-university",
+        "City set to Harrison town, the Census county subdivision for this address; Purchase is its postal town."
       ],
       "for_andrew": []
     }

@@ -93,15 +93,14 @@
       "Financial aid"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Linden', NJ is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-27",
       "page_checked": "https://linden-nj.gov/2026-linden-special-needs-day-camp/",
       "changes": [
-        "New camp, researched from https://linden-nj.gov/2026-linden-special-needs-day-camp/"
+        "New camp, researched from https://linden-nj.gov/2026-linden-special-needs-day-camp/",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
         "Residents only: the flyer requires proof of Linden residency, so the $500 Standard package is the only rate and only Linden families can enroll. List it anyway?",

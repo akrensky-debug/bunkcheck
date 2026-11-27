@@ -181,15 +181,14 @@
       "Trip schedules (coming soon)"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Scotch Plains', NJ is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-27",
       "page_checked": "https://fspymca.org/programs/child-care-camp/camp/",
       "changes": [
-        "New camp, researched from https://fspymca.org/programs/child-care-camp/camp/"
+        "New camp, researched from https://fspymca.org/programs/child-care-camp/camp/",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
         "The rate table was read from a copy of the Y's rate sheet downloaded with curl as BunkcheckBot and read as an image. OK to source it that way?"

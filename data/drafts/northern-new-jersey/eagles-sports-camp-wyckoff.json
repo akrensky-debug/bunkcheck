@@ -152,15 +152,14 @@
       "financial_aid"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Wyckoff', NJ is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-27",
       "page_checked": "https://www.easternchristian.org/eagles-camps/our-camps/",
       "changes": [
-        "New camp, researched from https://www.easternchristian.org/eagles-camps/our-camps/"
+        "New camp, researched from https://www.easternchristian.org/eagles-camps/our-camps/",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": []
     }

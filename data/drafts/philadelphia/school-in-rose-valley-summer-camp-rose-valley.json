@@ -159,15 +159,14 @@
       "2027 weekly price"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Rose Valley', PA is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-27",
       "page_checked": "https://srvcamp.org/about-our-camp/",
       "changes": [
-        "New camp, researched from https://srvcamp.org/about-our-camp/"
+        "New camp, researched from https://srvcamp.org/about-our-camp/",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
         "The Pricing page (https://srvcamp.org/pricing/) shows $515 a week, $440 for the two short weeks, and preschool and extended care rates, but it has no year. 2027 dates are posted, so I left the price out rather than risk pairing 2027 dates with 2026 prices. Use these as 2027 prices, or wait for registration on January 22?"

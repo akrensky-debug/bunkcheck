@@ -78,15 +78,15 @@
     ],
     "low_confidence": [],
     "errors": [
-      "missing required zip",
-      "city 'Linden', NJ is not in cities.py"
+      "missing required zip"
     ],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-27",
       "page_checked": "https://linden-nj.gov/2026-linden-summer-day-camp-program/",
       "changes": [
-        "New camp, researched from https://linden-nj.gov/2026-linden-summer-day-camp-program/"
+        "New camp, researched from https://linden-nj.gov/2026-linden-summer-day-camp-program/",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
         "Residents only: the city says participants must be Linden residents. I recorded the one posted price ($500 standard package for seven weeks) and said who can enroll. List it, or skip residents only camps?",

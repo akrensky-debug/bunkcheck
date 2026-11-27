@@ -180,15 +180,14 @@
       "Financial aid"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Southampton', PA is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-27",
       "page_checked": "https://sunnydayssummerfun.weebly.com/program.html",
       "changes": [
-        "New camp, researched from https://sunnydayssummerfun.weebly.com/program.html"
+        "New camp, researched from https://sunnydayssummerfun.weebly.com/program.html",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
         "The dates page has no year. I took it as 2026 because the Registration and CARES pages say 2026 and June 22 and August 7 fall on a Monday and Friday in 2026, but the FAQ still describes a July 4, 2025 short week. OK to list as 2026?"

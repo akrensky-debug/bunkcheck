@@ -92,15 +92,14 @@
       "Financial aid"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Bayonne', NJ is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-27",
       "page_checked": "https://www.bayonnenj.org/News/View/12253/division-of-recreation-summer-camp-registration-opens-monday-april-6th",
       "changes": [
-        "New camp, researched from https://www.bayonnenj.org/News/View/12253/division-of-recreation-summer-camp-registration-opens-monday-april-6th"
+        "New camp, researched from https://www.bayonnenj.org/News/View/12253/division-of-recreation-summer-camp-registration-opens-monday-april-6th",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
         "Residents only: the city post says Bayonne residents only, so the $275 first child fee is the one rate. List it anyway?",

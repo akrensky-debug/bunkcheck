@@ -197,15 +197,15 @@
     ],
     "low_confidence": [],
     "errors": [
-      "missing required zip",
-      "city 'Hardyston', NJ is not in cities.py"
+      "missing required zip"
     ],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-27",
       "page_checked": "https://sussexymcacamp.org/summer-camp-day",
       "changes": [
-        "New camp, researched from https://sussexymcacamp.org/summer-camp-day"
+        "New camp, researched from https://sussexymcacamp.org/summer-camp-day",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
         "The Census geocoder found no match for 15 Wits End Rd., Hardyston (also tried Hamburg), so the ZIP is blank."

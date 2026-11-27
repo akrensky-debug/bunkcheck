@@ -150,15 +150,15 @@
     ],
     "low_confidence": [],
     "errors": [
-      "missing required zip",
-      "city 'Blairstown', NJ is not in cities.py"
+      "missing required zip"
     ],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-27",
       "page_checked": "https://lakeinthewoodsymca.org/sleepaway",
       "changes": [
-        "New camp, researched from https://lakeinthewoodsymca.org/sleepaway"
+        "New camp, researched from https://lakeinthewoodsymca.org/sleepaway",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
         "The camp's pages name the Blair Academy campus but give no street address or ZIP. Look up Blair Academy's address, or leave it?",

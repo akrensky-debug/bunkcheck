@@ -118,15 +118,15 @@
     ],
     "low_confidence": [],
     "errors": [
-      "missing required zip",
-      "city 'Collegeville', PA is not in cities.py"
+      "missing required zip"
     ],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-27",
       "page_checked": "https://www.upperprovmcpa.gov/328/Summer-Camps",
       "changes": [
-        "New camp, researched from https://www.upperprovmcpa.gov/328/Summer-Camps"
+        "New camp, researched from https://www.upperprovmcpa.gov/328/Summer-Camps",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
         "The township page never says where Camp Black Rock meets. I used Collegeville, the Parks and Recreation office's town, and left out the street and ZIP. The department's other address is 1286 Black Rock Road, Phoenixville. Which is it?"

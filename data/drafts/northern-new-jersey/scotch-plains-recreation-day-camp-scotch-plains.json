@@ -57,15 +57,14 @@
       "Residency rule"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Scotch Plains', NJ is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-27",
       "page_checked": "https://www.scotchplainsnj.gov/summer-camps",
       "changes": [
-        "New camp, researched from https://www.scotchplainsnj.gov/summer-camps"
+        "New camp, researched from https://www.scotchplainsnj.gov/summer-camps",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
         "The township page names the 2026 Day Camp (K to 6) and Small Fry Camp (ages 3 to 5) but its sections are empty: no dates, site or fees. List it this thin, or wait for the 2027 page?"

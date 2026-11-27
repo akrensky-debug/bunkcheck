@@ -106,16 +106,15 @@
       "Financial aid"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Glen Rock', NJ is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-27",
       "page_checked": "https://recreation.glenrocknj.net/programs/the-shack-summer-camp",
       "changes": [
         "New camp, researched from https://recreation.glenrocknj.net/programs/the-shack-summer-camp",
-        "ZIP 07452 looked up from the camp's street address with the Census geocoder (ZIP lookups allowed by Andrew, 22 November)."
+        "ZIP 07452 looked up from the camp's street address with the Census geocoder (ZIP lookups allowed by Andrew, 22 November).",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
         "Residents only: the page says camp is open to residents ages 7 to 14, so $75 a week is the one rate. List it anyway?",

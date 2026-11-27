@@ -119,16 +119,15 @@
       "Before and after care"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'East Orange', NJ is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-27",
       "page_checked": "https://metroymcas.org/eoy-summer-camp",
       "changes": [
         "New camp, researched from https://metroymcas.org/eoy-summer-camp",
-        "ZIP 07017 looked up from the camp's street address with the Census geocoder (ZIP lookups allowed by Andrew, 22 November)."
+        "ZIP 07017 looked up from the camp's street address with the Census geocoder (ZIP lookups allowed by Andrew, 22 November).",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
         "Same 'per session' question as the preschool camp: confirm a session is one week?"

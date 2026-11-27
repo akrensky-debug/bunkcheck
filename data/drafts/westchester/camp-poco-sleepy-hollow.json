@@ -71,15 +71,14 @@
     "low_confidence": [
       "street_address"
     ],
-    "errors": [
-      "city 'Sleepy Hollow', NY is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-27",
       "page_checked": "https://pocanticohills.org/summer-day-camp",
       "changes": [
-        "New camp, researched from https://pocanticohills.org/summer-day-camp"
+        "New camp, researched from https://pocanticohills.org/summer-day-camp",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
         "No price or ages: the 2026 Tuition Rates and flyer documents on the district's SharePoint returned 403, so I took that as final. The street address is the district office in the page footer; the page doesn't say the camp is held there. List without price, or ask the camp for the rates?"

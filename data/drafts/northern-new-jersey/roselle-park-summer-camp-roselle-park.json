@@ -215,16 +215,15 @@
       "Age for pre-K entry"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Roselle Park', NJ is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-27",
       "page_checked": "https://rpsd.org/summer-camp",
       "changes": [
         "New camp, researched from https://rpsd.org/summer-camp",
-        "ZIP 07204 looked up from the camp's street address with the Census geocoder (ZIP lookups allowed by Andrew, 22 November)."
+        "ZIP 07204 looked up from the camp's street address with the Census geocoder (ZIP lookups allowed by Andrew, 22 November).",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
         "Read from the 2027 handbook, a 14.5 MB PDF downloaded with curl as BunkcheckBot; it is over the repo fetcher's 8 MB limit, where CLAUDE.md names Firecrawl. OK to source it that way?"

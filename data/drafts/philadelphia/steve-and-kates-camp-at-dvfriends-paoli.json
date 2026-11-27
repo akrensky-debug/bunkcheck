@@ -84,16 +84,15 @@
       "Financial aid"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Paoli', PA is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-27",
       "page_checked": "https://www.dvfriends.org/apps/pages/summer",
       "changes": [
         "New camp, researched from https://www.dvfriends.org/apps/pages/summer",
-        "extended_care set true because the 8 am to 6 pm day is offered as extended hours for working parents."
+        "extended_care set true because the 8 am to 6 pm day is offered as extended hours for working parents.",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": []
     }

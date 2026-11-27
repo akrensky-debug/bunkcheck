@@ -96,15 +96,14 @@
       "2026 trip costs (calendar not read)"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Glen Ridge', NJ is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-27",
       "page_checked": "https://www.glenridgenj.org/summerdaycamp/",
       "changes": [
-        "New camp, researched from https://www.glenridgenj.org/summerdaycamp/"
+        "New camp, researched from https://www.glenridgenj.org/summerdaycamp/",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
         "Residents only: the page says Glen Ridge residents ages 5 to 12, so $50 a day is the one rate. List it anyway?"

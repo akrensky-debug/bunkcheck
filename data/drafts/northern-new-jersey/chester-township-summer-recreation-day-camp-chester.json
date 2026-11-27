@@ -151,16 +151,15 @@
       "2027 dates and rates"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Chester', NJ is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-27",
       "page_checked": "https://chestertownship.org/index.php/departments/recreation/summer-rec-camp",
       "changes": [
         "New camp, researched from https://chestertownship.org/index.php/departments/recreation/summer-rec-camp",
-        "ZIP 07930 looked up from the camp's street address with the Census geocoder (ZIP lookups allowed by Andrew, 22 November)."
+        "ZIP 07930 looked up from the camp's street address with the Census geocoder (ZIP lookups allowed by Andrew, 22 November).",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
         "The page prints only resident rates ($350 for the short Week 1, $465 a week after) and says a nonresident fee applies without the amount. I left session prices blank. Publish with the resident rate in notes only, or call the township for the nonresident figure?"

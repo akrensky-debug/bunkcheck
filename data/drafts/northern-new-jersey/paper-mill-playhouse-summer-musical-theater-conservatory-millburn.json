@@ -75,15 +75,14 @@
       "Audition dates"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Millburn', NJ is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-27",
       "page_checked": "https://papermill.org/education/summer-training/summer-conservatory/",
       "changes": [
-        "New camp, researched from https://papermill.org/education/summer-training/summer-conservatory/"
+        "New camp, researched from https://papermill.org/education/summer-training/summer-conservatory/",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
         "Tuition and hours are in tabs on the page that did not come through. Check the page and add tuition, or list without it?",

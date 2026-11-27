@@ -88,15 +88,14 @@
       "Lunch"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Riverdale', NJ is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-27",
       "page_checked": "https://www.riverdalenj.gov/pages/summer-camp",
       "changes": [
-        "New camp, researched from https://www.riverdalenj.gov/pages/summer-camp"
+        "New camp, researched from https://www.riverdalenj.gov/pages/summer-camp",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
         "Residents only, and the 2026 total fee was not set when posted (two $250 payments plus a final amount; 2025 was $675). I left price out. List it anyway?"

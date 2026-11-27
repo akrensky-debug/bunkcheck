@@ -164,16 +164,15 @@
       "Financial aid"
     ],
     "low_confidence": [],
-    "errors": [
-      "city 'Lincoln Park', NJ is not in cities.py"
-    ],
+    "errors": [],
     "first_pass": {
       "by": "Claude",
       "date": "2026-11-27",
       "page_checked": "https://lincolnpark.org/360/Summer-Camps",
       "changes": [
         "New camp, researched from https://lincolnpark.org/360/Summer-Camps",
-        "ZIP 07035 looked up from the camp's street address with the Census geocoder (ZIP lookups allowed by Andrew, 22 November)."
+        "ZIP 07035 looked up from the camp's street address with the Census geocoder (ZIP lookups allowed by Andrew, 22 November).",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
       ],
       "for_andrew": [
         "Residents only: the page and form are for Lincoln Park resident children, so there is no non-resident rate. List it anyway?"
