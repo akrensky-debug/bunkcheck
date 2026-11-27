@@ -36,22 +36,6 @@
   "price_min": 365,
   "price_max": 699,
   "price_per": "week",
-  "fees": [
-    {
-      "name": "Early drop off",
-      "amount": 20,
-      "per": "day",
-      "required": false,
-      "note": "8 to 9 am; the page lists $20 without saying per day"
-    },
-    {
-      "name": "Extended care",
-      "amount": 35,
-      "per": "day",
-      "required": false,
-      "note": "3 to 5 pm; the page lists $35 without saying per day"
-    }
-  ],
   "extended_care": true,
   "meals_included": true,
   "refund_policy_summary": "No refunds for cancellations, absences, early withdrawal or behavior dismissals; a day canceled for weather earns a credit toward another program.",
@@ -84,7 +68,6 @@
         "price_min",
         "price_max",
         "price_per",
-        "fees",
         "extended_care",
         "meals_included",
         "refund_policy_summary"
@@ -114,7 +97,8 @@
       "date": "2026-11-27",
       "page_checked": "https://www.shakeitoffwestchesterny.com/camps",
       "changes": [
-        "New camp, researched from https://www.shakeitoffwestchesterny.com/camps"
+        "New camp, researched from https://www.shakeitoffwestchesterny.com/camps",
+        "Removed early drop off ($20) and extended care ($35): the page prints no unit for them."
       ],
       "for_andrew": [
         "The page prints early drop off ($20) and extended care ($35) without a unit. I recorded both as per day, which fits a one hour and a two hour add on, but the page doesn't say. Keep, or drop the unit question by asking the camp? The 2027 dates sit on the Sawyer schedule, which refused our fetch (403)."

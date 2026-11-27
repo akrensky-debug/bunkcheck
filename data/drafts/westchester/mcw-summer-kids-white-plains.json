@@ -145,7 +145,7 @@
     }
   ],
   "review": {
-    "status": "ready",
+    "status": "needs_andrew",
     "source": {
       "url": "https://musicconservatory.org/programs/summer-programs/",
       "kind": "html",
@@ -166,7 +166,9 @@
       "changes": [
         "New camp, researched from https://musicconservatory.org/programs/summer-programs/"
       ],
-      "for_andrew": []
+      "for_andrew": [
+        "The 2026 calendar PDF is on Google Drive, which the repo fetcher can't read; it was downloaded with curl as BunkcheckBot. OK to source it that way?"
+      ]
     }
   }
 }
