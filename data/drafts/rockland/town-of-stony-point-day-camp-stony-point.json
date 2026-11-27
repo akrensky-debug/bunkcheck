@@ -1,0 +1,152 @@
+{
+  "slug": "town-of-stony-point-day-camp-stony-point",
+  "name": "Town of Stony Point Day Camp",
+  "operator_name": "Town of Stony Point",
+  "website_url": "https://www.stonypointny.gov/town-of-stony-point-day-camp-program",
+  "registration_url": "https://register.communitypass.net/StonyPoint",
+  "email": "crobinson@townofstonypoint.org",
+  "phone": "845-596-8188",
+  "city": "Stony Point",
+  "state": "NY",
+  "zip": "10980",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "swimming"
+  ],
+  "activities": [
+    "swimming at the town pool",
+    "bowling",
+    "movies",
+    "field trips",
+    "theme days",
+    "end of summer picnic"
+  ],
+  "age_min": 5,
+  "age_max": 13,
+  "description_short": "Town day camp for Stony Point residents from kindergarten graduates (age 5) to age 13, June 29 to August 7. The weekly rhythm includes bowling, days at the Stony Point town pool, a movie and a field trip such as Legoland or a water park.",
+  "price_min": 300,
+  "price_max": 350,
+  "price_per": "summer",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Summer 2026 (no camp July 3)",
+      "start_date": "2026-06-29",
+      "end_date": "2026-08-07",
+      "price": 350,
+      "availability": "unknown"
+    }
+  ],
+  "fees": [
+    {
+      "name": "Bowling day (includes lunch)",
+      "amount": 25,
+      "per": "day",
+      "required": false,
+      "note": "Weekly at Breakpoint Bowl; campers are dropped off and picked up there"
+    },
+    {
+      "name": "Movies in Monroe",
+      "amount": 10,
+      "per": "day",
+      "required": false,
+      "note": "Weekly movie day"
+    },
+    {
+      "name": "Snack pack",
+      "amount": 7,
+      "per": "day",
+      "required": false,
+      "note": "Popcorn and drink"
+    },
+    {
+      "name": "End of summer picnic",
+      "amount": 5,
+      "per": "once",
+      "required": false
+    }
+  ],
+  "notes": "2026 fee for the summer: first child $350, second $325, third and more $300. Open to Stony Point residents only (proof of residency required); 5 and 6 year olds need proof of kindergarten graduation. Registration online only (opened May 2, 2026), card payment. Weekly trip days cost extra and vary: The Castle $35, Legoland NY $35, Splashdown $40 (ages 8 to 13), Sky Zone $30, Boulders game $20, Darlington Beach $10. Lunch or ice cream money at the pool. The page gives no camp site or hours; ZIP is from the Town Hall address in the page footer (74 East Main Street).",
+  "sources": [
+    {
+      "url": "https://www.stonypointny.gov/userfiles/files/Summer%202026.pdf",
+      "checked": "2026-11-27",
+      "fields": [
+        "price_min",
+        "price_max",
+        "price_per",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. 2026 Day Camp Newsletter PDF: per child fees, June 29 to August 7, no camp July 3, online registration."
+    },
+    {
+      "url": "https://www.stonypointny.gov/town-of-stony-point-day-camp-program",
+      "checked": "2026-11-27",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "age_min",
+        "age_max"
+      ],
+      "note": "Researched by Claude from this page. Day Camp Program page: ages 5 (kindergarten graduate) to 13, director contact, 2026 documents. ZIP 10980 from the Town Hall footer."
+    },
+    {
+      "url": "https://www.stonypointny.gov/userfiles/files/calendar%202026%20day%20camp(1).pdf",
+      "checked": "2026-11-27",
+      "fields": [
+        "secondary_categories",
+        "activities",
+        "description_short",
+        "fees"
+      ],
+      "note": "Researched by Claude from this page. 2026 Day Camp Calendar PDF: weekly bowling, town pool, movie and trip days with their costs."
+    },
+    {
+      "url": "https://www.stonypointny.gov/userfiles/files/SPDC%20Registration%20Checklist%2026.pdf",
+      "checked": "2026-11-27",
+      "fields": [],
+      "note": "Researched by Claude from this page. 2026 Registration Checklist PDF: proof of residency and proof of kindergarten graduation required."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.stonypointny.gov/town-of-stony-point-day-camp-program",
+      "kind": "html",
+      "title": "Stony Point Day Camp Program, Town of Stony Point"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Camp site and street address",
+      "Daily hours",
+      "Extended care"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "city 'Stony Point', NY is not in cities.py"
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-27",
+      "page_checked": "https://www.stonypointny.gov/town-of-stony-point-day-camp-program",
+      "changes": [
+        "New camp, researched from https://www.stonypointny.gov/town-of-stony-point-day-camp-program"
+      ],
+      "for_andrew": [
+        "Residents only (proof of Stony Point residency required). Andrew's rule for residents only camps: record the one rate ($350, with sibling rates), say who can enroll, and ask. List it?"
+      ]
+    }
+  }
+}

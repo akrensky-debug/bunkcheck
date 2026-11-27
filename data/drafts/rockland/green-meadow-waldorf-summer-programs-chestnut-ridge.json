@@ -1,0 +1,118 @@
+{
+  "slug": "green-meadow-waldorf-summer-programs-chestnut-ridge",
+  "name": "Green Meadow Waldorf Summer Programs",
+  "operator_name": "Green Meadow Waldorf School",
+  "website_url": "https://www.gmws.org/summer-programs/",
+  "street_address": "307 Hungry Hollow Road",
+  "city": "Chestnut Ridge",
+  "state": "NY",
+  "zip": "10977",
+  "camp_type": "day",
+  "primary_categories": [
+    "nature",
+    "outdoor"
+  ],
+  "secondary_categories": [
+    "arts"
+  ],
+  "activities": [
+    "forest exploration",
+    "farm animal care",
+    "gardening",
+    "natural dyeing",
+    "crafts",
+    "storytelling",
+    "wood carving",
+    "pond swimming",
+    "hiking"
+  ],
+  "age_min": 3,
+  "age_max": 12,
+  "description_short": "Outdoor summer programs led by Waldorf teachers on Green Meadow's 11 acres of farm, forest and streams in Chestnut Ridge, for ages 3 to 12. Marigolds (3 to 5) explore the forest and garden, Summer Farmers (5 to 10) care for the farm animals and gardens, and Art & Adventure (8 to 12) carve wood, hike and swim at the pond.",
+  "indoor_outdoor": "outdoor",
+  "price_per_week": 650,
+  "price_min": 650,
+  "price_max": 650,
+  "price_per": "week",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Marigolds, ages 3 to 5 (Mon to Thu 8:30 to 2:45)",
+      "start_date": "2026-06-15",
+      "end_date": "2026-07-02",
+      "price": 650,
+      "availability": "unknown"
+    },
+    {
+      "name": "Summer Farmers, ages 5 to 10 (9 to 2)",
+      "start_date": "2026-06-15",
+      "end_date": "2026-07-30",
+      "price": 650,
+      "availability": "unknown"
+    },
+    {
+      "name": "Art & Adventure, ages 8 to 12 (Mon to Thu 8:45 to 3)",
+      "start_date": "2026-06-15",
+      "end_date": "2026-06-25",
+      "price": 650,
+      "availability": "unknown"
+    }
+  ],
+  "notes": "2026: $650 a week for each program. Marigolds must be toilet trained. When checked, all 2026 weeks of Summer Farmers and Art & Adventure and the last two Marigolds weeks were full. Separate registration links for GMWS and non GMWS families; no different rate is posted.",
+  "sources": [
+    {
+      "url": "https://www.gmws.org/summer-programs/",
+      "checked": "2026-11-27",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "indoor_outdoor",
+        "price_per_week",
+        "price_min",
+        "price_max",
+        "price_per",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Summer Programs 2026 page: three programs with ages, days, hours, dates and $650 a week; school address in the footer."
+    }
+  ],
+  "review": {
+    "status": "ready",
+    "source": {
+      "url": "https://www.gmws.org/summer-programs/",
+      "kind": "html",
+      "title": "Summer Programs, Green Meadow Waldorf School"
+    },
+    "warnings": [],
+    "unknowns": [
+      "2027 dates",
+      "Lunch",
+      "Extended care"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "city 'Chestnut Ridge', NY is not in cities.py"
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-27",
+      "page_checked": "https://www.gmws.org/summer-programs/",
+      "changes": [
+        "New camp, researched from https://www.gmws.org/summer-programs/"
+      ],
+      "for_andrew": []
+    }
+  }
+}

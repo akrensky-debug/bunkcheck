@@ -1,0 +1,154 @@
+{
+  "slug": "the-nature-place-day-camp-chestnut-ridge",
+  "name": "The Nature Place Day Camp",
+  "operator_name": "The Nature Place",
+  "website_url": "https://thenatureplace.com/programs/summer-camp/",
+  "registration_url": "https://thenatureplace.campintouch.com/ui/forms/application/camper/App",
+  "email": "camp@thenatureplace.com",
+  "phone": "845-356-1234",
+  "street_address": "285 Hungry Hollow Road",
+  "city": "Chestnut Ridge",
+  "state": "NY",
+  "zip": "10977",
+  "camp_type": "day",
+  "primary_categories": [
+    "nature",
+    "outdoor"
+  ],
+  "secondary_categories": [
+    "swimming",
+    "arts",
+    "adventure"
+  ],
+  "activities": [
+    "hiking",
+    "outdoor skills",
+    "swimming",
+    "climbing",
+    "archery",
+    "canoeing",
+    "high ropes",
+    "overnights",
+    "earth art",
+    "woodworking",
+    "music",
+    "drama",
+    "chickens",
+    "cooking",
+    "gardening",
+    "farming",
+    "African drumming and dance"
+  ],
+  "gender_policy": "coed",
+  "age_min": 4,
+  "age_max": 16,
+  "description_short": "Non competitive nature day camp on 200 acres in Chestnut Ridge for ages 4 to 16, running since 1985. Campers hike, swim daily at a sandy pond, climb, canoe, garden, care for chickens and do woodworking and outdoor art, with optional overnights; enrollment is 4, 5 or 6 weeks.",
+  "indoor_outdoor": "outdoor",
+  "transportation": true,
+  "meals_included": false,
+  "financial_aid": true,
+  "price_min": 5845,
+  "price_max": 9875,
+  "price_per": "session",
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "All six weeks",
+      "start_date": "2027-07-06",
+      "end_date": "2027-08-13",
+      "price": 7460,
+      "availability": "unknown"
+    }
+  ],
+  "notes": "2027 tuition for campers who come by car: 6 weeks $7,460, 5 weeks $6,650, 4 weeks $5,845. With bus transportation included: New Jersey $9,100 / $8,125 / $7,075; Westchester $9,450 / $8,375 / $7,275; NYC $9,875 / $8,925 / $7,925. Rates guaranteed until December 21, 2026. Four week enrollment is limited and must start week 1 or 2. Tuition includes programs, trips, overnights and swim towels. 5% sibling discount. $750 deposit goes toward tuition. Campers bring lunch or buy it through the Threefold Cafe program. Arrival 8:45 to 9; bus dismissal from 3:30, car pickup 3:45 to 4. Campership Fund for families who need help.",
+  "sources": [
+    {
+      "url": "https://thenatureplace.com/next-steps/dates-rates/",
+      "checked": "2026-11-27",
+      "fields": [
+        "name",
+        "operator_name",
+        "financial_aid",
+        "price_min",
+        "price_max",
+        "price_per",
+        "sessions",
+        "registration_url"
+      ],
+      "note": "Researched by Claude from this page. Dates & Rates page: Summer 2027 July 6 to August 13, tuition table by car or bus area, deposit, sibling discount, Campership Fund."
+    },
+    {
+      "url": "https://thenatureplace.com/programs/summer-camp/",
+      "checked": "2026-11-27",
+      "fields": [
+        "website_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "indoor_outdoor"
+      ],
+      "note": "Researched by Claude from this page. Summer Camp page and its FAQ: ages 4 to 16, 285 Hungry Hollow Road, activity lists, daily swim."
+    },
+    {
+      "url": "https://thenatureplace.com/current-families/faqs/",
+      "checked": "2026-11-27",
+      "fields": [
+        "gender_policy"
+      ],
+      "note": "Researched by Claude from this page. FAQ page: every group is all gender; hours."
+    },
+    {
+      "url": "https://thenatureplace.com/current-families/transportation/",
+      "checked": "2026-11-27",
+      "fields": [
+        "transportation"
+      ],
+      "note": "Researched by Claude from this page. Bus from Manhattan, Astoria, Hoboken, Montclair, Bergen and Westchester, using central stops."
+    },
+    {
+      "url": "https://thenatureplace.com/current-families/lunch/",
+      "checked": "2026-11-27",
+      "fields": [
+        "meals_included"
+      ],
+      "note": "Researched by Claude from this page. Bring lunch from home or buy through the Threefold Cafe camp lunch program."
+    }
+  ],
+  "review": {
+    "status": "ready",
+    "source": {
+      "url": "https://thenatureplace.com/next-steps/dates-rates/",
+      "kind": "html",
+      "title": "Summer Camp Dates & Rates, The Nature Place Day Camp"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Threefold Cafe lunch price",
+      "Extended care",
+      "ACA status (not stated on the pages read)"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "city 'Chestnut Ridge', NY is not in cities.py"
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-27",
+      "page_checked": "https://thenatureplace.com/next-steps/dates-rates/",
+      "changes": [
+        "New camp, researched from https://thenatureplace.com/next-steps/dates-rates/"
+      ],
+      "for_andrew": []
+    }
+  }
+}

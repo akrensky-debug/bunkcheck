@@ -1,0 +1,147 @@
+{
+  "slug": "camp-ramaquois-pomona",
+  "name": "Camp Ramaquois",
+  "operator_name": "Camp Ramaquois",
+  "website_url": "https://www.campramaquois.com/about-ramaquois/dates-sessions",
+  "phone": "845-354-1600",
+  "street_address": "30 Mountain Road",
+  "city": "Pomona",
+  "state": "NY",
+  "zip": "10970",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "swimming",
+    "sports",
+    "adventure",
+    "arts"
+  ],
+  "activities": [
+    "swimming",
+    "boating",
+    "kayaks",
+    "paddle boards",
+    "zip line",
+    "ropes course",
+    "climbing wall",
+    "archery",
+    "gymnastics",
+    "tennis",
+    "pickleball",
+    "hockey",
+    "crafts",
+    "nature center",
+    "petting zoo",
+    "trips"
+  ],
+  "age_min": 3,
+  "age_max": 16,
+  "grade_max": 10,
+  "description_short": "Day camp on 44 acres in Pomona next to Harriman State Park, with a 5 acre lake for boating and paddling, nine heated pools, sports fields, ropes and zip lines and crafts. Junior Camp takes ages 3 to 6, and separate girls' and boys' sides run from 2nd to 10th grade; door to door busing and a family style hot lunch are included.",
+  "indoor_outdoor": "both",
+  "transportation": true,
+  "meals_included": true,
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Full session (8 weeks, no camp July 5)",
+      "start_date": "2027-06-28",
+      "end_date": "2027-08-19",
+      "availability": "unknown"
+    },
+    {
+      "name": "First session (4 weeks)",
+      "start_date": "2027-06-28",
+      "end_date": "2027-07-23",
+      "availability": "unknown"
+    },
+    {
+      "name": "Second session (4 weeks)",
+      "start_date": "2027-07-26",
+      "end_date": "2027-08-19",
+      "availability": "unknown"
+    }
+  ],
+  "notes": "Families can also choose any 6 or 7 of the 8 weeks. The first session is marked limited availability. The Counselor Apprentice Program (entering 10th grade) is full session only. Tuition is not posted; the camp asks families to request it.",
+  "sources": [
+    {
+      "url": "https://www.campramaquois.com/about-ramaquois/dates-sessions",
+      "checked": "2026-11-27",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "age_min",
+        "age_max",
+        "grade_max",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Dates & Sessions page for Summer 2027; address in the footer; Junior Camp ages 3 to 6, girls' and boys' sides 2nd to 10th grade. age_max derived from grade 10."
+    },
+    {
+      "url": "https://www.campramaquois.com/about-ramaquois/activities",
+      "checked": "2026-11-27",
+      "fields": [
+        "secondary_categories",
+        "activities",
+        "description_short",
+        "indoor_outdoor"
+      ],
+      "note": "Researched by Claude from this page. Activities page: 44 acres, 5 acre lake, 9 heated pools, air conditioned buildings."
+    },
+    {
+      "url": "https://www.campramaquois.com/about-ramaquois/transportation",
+      "checked": "2026-11-27",
+      "fields": [
+        "transportation"
+      ],
+      "note": "Researched by Claude from this page. Door to door bus service from Manhattan, Bergen, Rockland and Westchester."
+    },
+    {
+      "url": "https://www.campramaquois.com/about-ramaquois/food-nutrition",
+      "checked": "2026-11-27",
+      "fields": [
+        "meals_included"
+      ],
+      "note": "Researched by Claude from this page. Family style hot lunch daily, plus morning snack."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.campramaquois.com/about-ramaquois/dates-sessions",
+      "kind": "html",
+      "title": "Dates & Sessions, Camp Ramaquois"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Tuition",
+      "Extended care",
+      "Financial aid"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "city 'Pomona', NY is not in cities.py"
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-27",
+      "page_checked": "https://www.campramaquois.com/about-ramaquois/dates-sessions",
+      "changes": [
+        "New camp, researched from https://www.campramaquois.com/about-ramaquois/dates-sessions"
+      ],
+      "for_andrew": [
+        "Tuition is not posted (the camp asks families to request rates). List without a price?"
+      ]
+    }
+  }
+}

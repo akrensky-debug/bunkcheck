@@ -1,0 +1,164 @@
+{
+  "slug": "arts-camp-roca-west-nyack",
+  "name": "Arts Camp @ RoCA",
+  "operator_name": "Rockland Center for the Arts",
+  "website_url": "https://rocklandartcenter.org/camps-at-roca/about-camp-roca.html",
+  "registration_url": "https://rocklandartcenter.org/camps-at-roca/summer-day-camp.html",
+  "email": "info@rocklandartcenter.org",
+  "phone": "845-358-0877",
+  "street_address": "27 South Greenbush Road",
+  "city": "West Nyack",
+  "state": "NY",
+  "zip": "10994",
+  "camp_type": "specialty",
+  "primary_categories": [
+    "arts",
+    "performing_arts"
+  ],
+  "secondary_categories": [
+    "swimming",
+    "nature"
+  ],
+  "activities": [
+    "ceramics",
+    "sculpture",
+    "painting",
+    "drawing",
+    "theater arts",
+    "musical theater",
+    "dance",
+    "yoga",
+    "music",
+    "nature explorations",
+    "improv",
+    "STEAM",
+    "swimming"
+  ],
+  "age_min": 5,
+  "age_max": 14,
+  "description_short": "Visual and performing arts day camp at the Rockland Center for the Arts in West Nyack, in air conditioned studios and a 5 acre sculpture park, for ages 5 to 14 grouped by grade. Campers do ceramics, painting, theater, dance, music and yoga, swim daily in the pool, and stage a musical at the end of each two week session.",
+  "indoor_outdoor": "both",
+  "extended_care": true,
+  "transportation": false,
+  "meals_included": false,
+  "financial_aid": true,
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Session 1",
+      "start_date": "2027-06-28",
+      "end_date": "2027-07-09",
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 2",
+      "start_date": "2027-07-12",
+      "end_date": "2027-07-23",
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 3",
+      "start_date": "2027-07-26",
+      "end_date": "2027-08-06",
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 4",
+      "start_date": "2027-08-09",
+      "end_date": "2027-08-20",
+      "availability": "unknown"
+    }
+  ],
+  "fees": [
+    {
+      "name": "Early drop off or late pick up",
+      "amount": 10,
+      "per": "hour",
+      "required": false,
+      "note": "Per child; early drop off 8:30 to 9:30 am, late pick up 4 to 5 pm"
+    }
+  ],
+  "notes": "Two week sessions; musical theater is the Monday and Friday program. Children bring lunch; RoCA gives an afternoon ice cream or ice pop. Parents drive campers. 5:1 camper to counselor ratio for ages 5 to 9 and 7:1 for ages 10 to 14. 2027 tuition is not posted yet; the tuition page still shows the 2026 rates ($910 for a 3 day and $1,350 for a 5 day two week session, including a RoCA family membership), so they are left out. 2027 open houses March 6, April 10 and May 8.",
+  "sources": [
+    {
+      "url": "https://rocklandartcenter.org/camps-at-roca/about-camp-roca.html",
+      "checked": "2026-11-27",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "indoor_outdoor",
+        "extended_care",
+        "fees"
+      ],
+      "note": "Researched by Claude from this page. About Arts Camp @ RoCA page: activities, pool, sculpture park, ratios by age (5 to 9 and 10 to 14), early drop off and late pick up at $10 an hour, 2027 open houses, address in the footer."
+    },
+    {
+      "url": "https://rocklandartcenter.org/camps-at-roca/dates-and-times.html",
+      "checked": "2026-11-27",
+      "fields": [
+        "sessions",
+        "registration_url"
+      ],
+      "note": "Researched by Claude from this page. Dates & times page: four two week sessions in 2027."
+    },
+    {
+      "url": "https://rocklandartcenter.org/camps-at-roca/information-you-need-to-know.html",
+      "checked": "2026-11-27",
+      "fields": [
+        "transportation",
+        "meals_included"
+      ],
+      "note": "Researched by Claude from this page. Info You Need To Know page (headed 2026): bring lunch; parents provide transportation."
+    },
+    {
+      "url": "https://rocklandartcenter.org/camps-at-roca/summer-camp-scholarships.html",
+      "checked": "2026-11-27",
+      "fields": [
+        "financial_aid"
+      ],
+      "note": "Researched by Claude from this page. Camp Scholarships page: a limited number of scholarships."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://rocklandartcenter.org/camps-at-roca/dates-and-times.html",
+      "kind": "html",
+      "title": "About Camp RoCA, Rockland Center for the Arts"
+    },
+    "warnings": [],
+    "unknowns": [
+      "2027 tuition",
+      "Daily hours"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "city 'West Nyack', NY is not in cities.py"
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-27",
+      "page_checked": "https://rocklandartcenter.org/camps-at-roca/dates-and-times.html",
+      "changes": [
+        "New camp, researched from https://rocklandartcenter.org/camps-at-roca/dates-and-times.html"
+      ],
+      "for_andrew": [
+        "2027 dates are posted but tuition is still the 2026 table ($910 for 3 days, $1,350 for 5 days per two week session). Listed as 2027 with no price, since 2027 dates and 2026 prices can't be mixed. OK, or list it as 2026 from the 2026 brochure instead?"
+      ]
+    }
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "slug": "camp-twelve-trails-pearl-river",
+  "name": "Camp Twelve Trails",
+  "operator_name": "JCC on the Hudson, Riverdale Y and Washington Heights Y",
+  "website_url": "https://www.camptwelvetrails.org/dates-rates",
+  "registration_url": "https://twelvetrails.campmanagement.com/p/request_for_info_m.php?action=enroll",
+  "email": "info@camptwelvetrails.org",
+  "phone": "646-518-3731",
+  "city": "Pearl River",
+  "state": "NY",
+  "zip": "10965",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "swimming",
+    "sports",
+    "arts",
+    "outdoor",
+    "STEM",
+    "faith"
+  ],
+  "activities": [
+    "swimming",
+    "sports and fitness",
+    "arts and drama",
+    "outdoor adventure",
+    "science and technology",
+    "farm to table",
+    "Shabbat celebration",
+    "teen trips"
+  ],
+  "religious_affiliation": "Jewish",
+  "grade_min": 0,
+  "grade_max": 10,
+  "age_min": 5,
+  "age_max": 16,
+  "description_short": "Jewish day camp at the Henry Kaufmann Campgrounds in Pearl River for campers entering kindergarten to 10th grade, run by three New York City area JCCs and Ys. Kids swim twice a day and, from 3rd grade, pick a weekly focus such as sports, arts and drama, outdoor adventure, science or farm to table; buses come from upper Manhattan, the Bronx and Westchester.",
+  "transportation": true,
+  "meals_included": false,
+  "extended_care": true,
+  "financial_aid": true,
+  "special_needs_notes": "Inclusion program with Level 2 support at a 2:1 camper to staff ratio (no 1:1 support); registration closes April 15.",
+  "price_min": 2850,
+  "price_max": 7800,
+  "price_per": "session",
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Summer 2027 (7 weeks, no camp June 28 or July 5)",
+      "start_date": "2027-06-29",
+      "end_date": "2027-08-13",
+      "availability": "unknown"
+    }
+  ],
+  "fees": [
+    {
+      "name": "Teen Adventures trip, week 4",
+      "amount": 500,
+      "per": "once",
+      "required": false,
+      "note": "Teen Adventures (grades 8 to 10) only, when the registration includes week 4"
+    },
+    {
+      "name": "Teen Adventures trip, week 6",
+      "amount": 300,
+      "per": "once",
+      "required": false,
+      "note": "Teen Adventures (grades 8 to 10) only, when the registration includes week 6"
+    }
+  ],
+  "notes": "2027 non-member tuition, 2 to 7 weeks: entering K to 5, $2,850 to $7,050; grades 6 and 7, $3,025 to $7,275; grades 8 to 10, $3,200 to $7,800; inclusion (Level 2 support) K to 7, $3,575 to $8,400; inclusion grades 8 to 10, $3,675 to $8,800. Members of the affiliated JCCs and Ys save $100 to $350 depending on weeks, and early enrollment through January 31 saves $50 to $300. Busing included. $500 deposit at enrollment goes toward tuition. Campers bring a kosher style lunch; snacks provided. Extended hours are offered by each affiliated agency, hours vary. Bus pickup 8 to 8:30, drop off 4:45 to 5:30.",
+  "sources": [
+    {
+      "url": "https://www.camptwelvetrails.org/dates-rates",
+      "checked": "2026-11-27",
+      "fields": [
+        "name",
+        "website_url",
+        "registration_url",
+        "financial_aid",
+        "special_needs_notes",
+        "price_min",
+        "price_max",
+        "price_per",
+        "sessions",
+        "fees"
+      ],
+      "note": "Researched by Claude from this page. 2027 Dates & Rates page: weekly dates, non-member tuition by division, member and early discounts, teen trip charges, inclusion program."
+    },
+    {
+      "url": "https://www.camptwelvetrails.org/questions",
+      "checked": "2026-11-27",
+      "fields": [
+        "operator_name",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "religious_affiliation",
+        "grade_min",
+        "grade_max",
+        "age_min",
+        "age_max",
+        "description_short",
+        "meals_included",
+        "extended_care",
+        "email"
+      ],
+      "note": "Researched by Claude from this page. FAQs page: Henry Kaufmann Campgrounds, swim twice daily, neighborhoods, bring lunch, extended coverage through affiliated agencies, membership not required. Grades K to 10 from the site menu; ages derived from grades."
+    },
+    {
+      "url": "https://www.camptwelvetrails.org/contact",
+      "checked": "2026-11-27",
+      "fields": [
+        "phone",
+        "city",
+        "state",
+        "zip"
+      ],
+      "note": "Researched by Claude from this page. Contact page: campground Henry Kaufmann Campgrounds, Pearl River, NY 10965 (no street given); office at 54 Nagle Avenue, New York."
+    },
+    {
+      "url": "https://www.camptwelvetrails.org/transportation",
+      "checked": "2026-11-27",
+      "fields": [
+        "transportation"
+      ],
+      "note": "Researched by Claude from this page. Bus service included in tuition."
+    }
+  ],
+  "review": {
+    "status": "ready",
+    "source": {
+      "url": "https://www.camptwelvetrails.org/dates-rates",
+      "kind": "html",
+      "title": "Dates & Rates, Camp Twelve Trails"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Campground street address",
+      "Extended care hours"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "city 'Pearl River', NY is not in cities.py"
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-27",
+      "page_checked": "https://www.camptwelvetrails.org/dates-rates",
+      "changes": [
+        "New camp, researched from https://www.camptwelvetrails.org/dates-rates"
+      ],
+      "for_andrew": []
+    }
+  }
+}
