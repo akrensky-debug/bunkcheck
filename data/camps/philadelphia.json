@@ -2509,6 +2509,12 @@
             "refund_policy_summary"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-25, approved by Andrew Krensky"
+        },
+        {
+          "url": "https://www.esfcamps.com/devon/rates/extended-day/",
+          "checked": "2026-11-27",
+          "fields": [],
+          "note": "Fees researched by Claude from this page"
         }
       ],
       "fees": [
@@ -2518,6 +2524,14 @@
           "per": "week",
           "required": false,
           "note": "Optional lunch program. Club OT extended day to 5:00 pm is included in tuition."
+        },
+        {
+          "name": "Extended care (5:00 to 5:30 pm)",
+          "amount": 65,
+          "per": "week",
+          "required": false,
+          "note": "Club OT extension past the 5:00 pm included in tuition; $55 for the four day holiday weeks. The page also shows an older 2025 table ($225, $70, $190); skipped.",
+          "source_url": "https://www.esfcamps.com/devon/rates/extended-day/"
         }
       ]
     },
@@ -2623,6 +2637,12 @@
             "fees"
           ],
           "note": "Fees researched by Claude from this page"
+        },
+        {
+          "url": "https://www.esfcamps.com/friendsselect/rates/",
+          "checked": "2026-11-27",
+          "fields": [],
+          "note": "Fees researched by Claude from this page"
         }
       ],
       "fees": [
@@ -2646,6 +2666,14 @@
           "per": "week",
           "required": false,
           "note": "Club OT pick up 3:30 to 6:00 pm."
+        },
+        {
+          "name": "Lunch",
+          "amount": 60,
+          "per": "week",
+          "required": false,
+          "note": "Optional lunch program. Campers with documented food allergies bring lunch from home.",
+          "source_url": "https://www.esfcamps.com/friendsselect/rates/"
         }
       ]
     },
@@ -2744,6 +2772,12 @@
             "refund_policy_summary"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-25, approved by Andrew Krensky"
+        },
+        {
+          "url": "https://www.esfcamps.com/montgomery/rates/extended-day/",
+          "checked": "2026-11-27",
+          "fields": [],
+          "note": "Fees researched by Claude from this page"
         }
       ],
       "fees": [
@@ -2753,6 +2787,14 @@
           "per": "week",
           "required": false,
           "note": "Optional lunch program. Club OT extended day to 5:00 pm is included in tuition."
+        },
+        {
+          "name": "Extended care (5:00 to 5:30 pm)",
+          "amount": 65,
+          "per": "week",
+          "required": false,
+          "note": "Club OT extension past the 5:00 pm included in tuition; $55 for the four day holiday weeks. The page also shows an older 2025 table ($225, $70, $190); skipped.",
+          "source_url": "https://www.esfcamps.com/montgomery/rates/extended-day/"
         }
       ]
     },
@@ -2881,6 +2923,14 @@
           "per": "week",
           "required": false,
           "note": "Club OT pick up 3:30 to 6:00 pm."
+        },
+        {
+          "name": "Lunch",
+          "amount": 60,
+          "per": "week",
+          "required": false,
+          "note": "Optional lunch program. Campers with documented food allergies bring lunch from home.",
+          "source_url": "https://www.esfcamps.com/chestnuthill/rates/"
         }
       ]
     },
@@ -3009,6 +3059,14 @@
           "per": "week",
           "required": false,
           "note": "Club OT pick up 3:30 to 6:00 pm."
+        },
+        {
+          "name": "Lunch",
+          "amount": 70,
+          "per": "week",
+          "required": false,
+          "note": "Optional lunch program. Campers with documented food allergies bring lunch from home.",
+          "source_url": "https://www.esfcamps.com/haverford/rates/"
         }
       ]
     },
@@ -4416,6 +4474,22 @@
           "per": "week",
           "required": false,
           "note": "For the first or only camper; $65 a week for each added sibling. No multi week discount."
+        },
+        {
+          "name": "Extended care (afternoon)",
+          "amount": 125,
+          "per": "week",
+          "required": false,
+          "note": "After Camp Care, end of the camp day to 6:00 pm; discounts for four weeks or more. Not for preschool or CIT campers.",
+          "source_url": "https://www.miquon.org/camp/after-camp-care"
+        },
+        {
+          "name": "Extended care (afternoon, drop in)",
+          "amount": 25,
+          "per": "day",
+          "required": false,
+          "note": "After Camp Care by the day; call or email by noon.",
+          "source_url": "https://www.miquon.org/camp/after-camp-care"
         }
       ]
     },
