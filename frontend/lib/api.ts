@@ -45,13 +45,15 @@ export interface SearchResponse {
 export interface Fee {
   name: string
   amount: number
-  per: 'once' | 'year' | 'summer' | 'session' | 'week' | 'day'
+  per: 'once' | 'year' | 'summer' | 'session' | 'week' | 'day' | 'hour'
   required: boolean
   note?: string | null
+  source_url?: string | null
 }
 
 const FEE_UNIT: Record<Fee['per'], string> = {
   once: 'once', year: 'a year', summer: 'for the summer', session: 'a session', week: 'a week', day: 'a day',
+  hour: 'an hour',
 }
 
 /** "$125 a year" */

@@ -11906,6 +11906,14 @@
           "per": "session",
           "required": true,
           "note": "Non-refundable, due once per session"
+        },
+        {
+          "name": "Extended day",
+          "amount": 75,
+          "per": "week",
+          "required": false,
+          "note": "4 to 5 pm, grades K to 5. The four day week of July 6 is $60.",
+          "source_url": "https://newtoncommunityed.org/summercamp/"
         }
       ]
     },
@@ -17976,9 +17984,19 @@
             "meals_included",
             "financial_aid",
             "refund_policy_summary",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Aftercare",
+          "amount": 15,
+          "per": "hour",
+          "required": false,
+          "note": "Until 5:30 pm, per child"
         }
       ]
     },

@@ -3956,6 +3956,22 @@
           "per": "session",
           "required": false,
           "note": "PM Care to 5:00 pm plus the late bus to Providence (arrives 5:30 pm), per two week session; includes the morning bus from Providence."
+        },
+        {
+          "name": "Bus",
+          "amount": 150,
+          "per": "session",
+          "required": false,
+          "note": "Per two week session, Summer 2027 routes from Providence, Attleboro and Pawtucket, East Bay and South County.",
+          "source_url": "https://wheelersummercamp.com/familyinfo/transportation/"
+        },
+        {
+          "name": "Field trips",
+          "amount": 100,
+          "per": "session",
+          "required": true,
+          "note": "Upper Campers only, per two week session.",
+          "source_url": "https://wheelersummercamp.com/familyinfo/tuition/"
         }
       ]
     },
@@ -8013,8 +8029,7 @@
             "price_per",
             "meals_included",
             "refund_policy_summary",
-            "indoor_outdoor",
-            "fees"
+            "indoor_outdoor"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-12, approved by Andrew"
         },
@@ -8036,16 +8051,7 @@
       "indoor_outdoor": "indoor",
       "price_per": "session",
       "meals_included": false,
-      "refund_policy_summary": "No refund unless Registration Protection is bought at registration; $70 administrative fee on all cancellations; no cancellation refunds within 7 days of camp.",
-      "fees": [
-        {
-          "name": "Registration fees",
-          "amount": 23,
-          "per": "session",
-          "required": true,
-          "note": "July camp. The page prints the cost as $323, which is $300 plus $23 fees. Optional Registration Protection is sold at checkout with no price printed."
-        }
-      ]
+      "refund_policy_summary": "No refund unless Registration Protection is bought at registration; $70 administrative fee on all cancellations; no cancellation refunds within 7 days of camp."
     },
     {
       "slug": "camp-agawam-rumford",
@@ -19271,7 +19277,8 @@
             "price_min",
             "price_max",
             "price_per",
-            "extended_care"
+            "extended_care",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-22, approved by Andrew Krensky",
           "checked": "2026-11-25"
@@ -19284,6 +19291,15 @@
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-22, approved by Andrew Krensky",
           "checked": "2026-11-25"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Extended care (before and after)",
+          "amount": 15,
+          "per": "hour",
+          "required": false,
+          "note": "Before and after camp; the page prints no hours for it."
         }
       ]
     },

@@ -3906,6 +3906,20 @@
           "per": "week",
           "required": false,
           "note": "Add-on to Day Camp full day for Nursery 4s and up, from June 16. The page prints \"add +$125\" on the weekly price line."
+        },
+        {
+          "name": "Extended care (morning)",
+          "amount": 20,
+          "per": "hour",
+          "required": false,
+          "note": "Extended Day AM, 8:00 to 9:00 am."
+        },
+        {
+          "name": "Extended care (afternoon)",
+          "amount": 30,
+          "per": "hour",
+          "required": false,
+          "note": "Extended Day PM, 3:30 to 5:30 pm."
         }
       ]
     },

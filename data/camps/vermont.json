@@ -4774,6 +4774,12 @@
             "fees"
           ],
           "note": "Fees researched by Claude from this page"
+        },
+        {
+          "url": "https://www.girlscoutsgwm.org/en/activities/camp-and-outdoors/camp-transportation.html",
+          "checked": "2026-11-27",
+          "fields": [],
+          "note": "Fees researched by Claude from this page"
         }
       ],
       "fees": [
@@ -4783,6 +4789,14 @@
           "per": "year",
           "required": true,
           "note": "Girl Scout membership for girls, October 1, 2026 to September 30, 2027. Campers who are not Girl Scouts buy it when registering."
+        },
+        {
+          "name": "Bus",
+          "amount": 35,
+          "per": "session",
+          "required": false,
+          "note": "To ride the bus each session; Twin Hills bus runs July 26 to 30 and August 2 to 6, 2027.",
+          "source_url": "https://www.girlscoutsgwm.org/en/activities/camp-and-outdoors/camp-transportation.html"
         }
       ]
     },

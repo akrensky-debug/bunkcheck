@@ -50,6 +50,8 @@ def fee_lines(sessions: list[dict[str, Any]], fees: list[dict[str, Any]]) -> lis
         return []
     weeks = sum(max(1, round(_weekdays(_as_date(s["start_date"]), _as_date(s["end_date"])) / 5)) for s in sessions)
     days = sum(_weekdays(_as_date(s["start_date"]), _as_date(s["end_date"])) for s in sessions)
+    # An hourly fee depends on hours the family uses, which the plan can't know, so it stays on
+    # the camp page and out of the breakdown.
     times = {"once": 1, "year": 1, "summer": 1, "session": len(sessions), "week": weeks, "day": days}
     return [{"item": f["name"], "unit_amount": float(f["amount"]), "per": f["per"], "count": times[f["per"]],
              "amount": float(f["amount"]) * times[f["per"]], "required": bool(f.get("required")),
