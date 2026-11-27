@@ -47,6 +47,29 @@
   "price_min": 435,
   "price_max": 835,
   "price_per": "week",
+  "fees": [
+    {
+      "name": "Aftercare",
+      "amount": 90,
+      "per": "session",
+      "required": false,
+      "note": "Per one week session; $72 for the four day Session 1"
+    },
+    {
+      "name": "Twilight Camp Time",
+      "amount": 60,
+      "per": "session",
+      "required": false,
+      "note": "Grades K and up"
+    },
+    {
+      "name": "Starlight Overnight",
+      "amount": 100,
+      "per": "session",
+      "required": false,
+      "note": "Grades 3 and up"
+    }
+  ],
   "extended_care": true,
   "season_year": 2027,
   "sessions": [
@@ -132,7 +155,8 @@
         "price_max",
         "price_per",
         "extended_care",
-        "gender_policy"
+        "gender_policy",
+        "fees"
       ],
       "note": "Researched by Claude from this page. Summer Camp Rates table (cost per session) shown with the 2027 session listings; rising kindergartners must be 5 by the start of the session. The rates table carries no year of its own. Programs are Girl Scout programs for girls (Brownie, Junior and Cadette badges)."
     },
@@ -179,11 +203,13 @@
       "date": "2026-11-25",
       "page_checked": "https://www.gsnnj.org/en/members/for-girl-scouts/camp-and-outdoors/girl-scouts-love-state-parks/lake-rickabear-day-camp.html",
       "changes": [
-        "New camp, researched from https://www.gsnnj.org/en/members/for-girl-scouts/camp-and-outdoors/girl-scouts-love-state-parks/lake-rickabear-day-camp.html"
+        "New camp, researched from https://www.gsnnj.org/en/members/for-girl-scouts/camp-and-outdoors/girl-scouts-love-state-parks/lake-rickabear-day-camp.html",
+        "Recorded fees from the Summer Camp Rates table on the Summer Explorers page: aftercare $90 a session ($72 for Session 1), Twilight Camp Time $60 and Starlight Overnight $100, all optional. The council's general Registration and FAQs page says program activities are for registered Girl Scouts unless noted, but it does not name summer camp or give a membership price, so no membership fee is recorded."
       ],
       "for_andrew": [
         "The rates table sits on the same pages as the 2027 sessions but carries no year itself. I treated it as 2027.",
-        "The pages don't say whether a camper must be a registered Girl Scout or whether non-members pay more. Worth a call before listing."
+        "The pages don't say whether a camper must be a registered Girl Scout or whether non-members pay more. Worth a call before listing.",
+        "The Summer Adventurers page prints the four day Session 1 at $453, while the Summer Explorers page prints $435. The draft uses $435. Which is right?"
       ]
     }
   }

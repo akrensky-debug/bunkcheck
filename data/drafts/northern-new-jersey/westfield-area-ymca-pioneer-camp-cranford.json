@@ -36,6 +36,15 @@
   "price_min": 310,
   "price_max": 515,
   "price_per": "week",
+  "fees": [
+    {
+      "name": "After care",
+      "amount": 67,
+      "per": "week",
+      "required": false,
+      "note": "4:30 to 5:30 pm at the Cranford YMCA; $57 for Family members"
+    }
+  ],
   "extended_care": true,
   "meals_included": false,
   "financial_aid": true,
@@ -155,7 +164,8 @@
         "extended_care",
         "meals_included",
         "financial_aid",
-        "sessions"
+        "sessions",
+        "fees"
       ],
       "note": "Researched by Claude from this page. 2026 camp brochure linked from the camp page: grades, weeks, fees (F family member, P program member) and location Cranford YMCA. Ages derived from grades"
     },
@@ -192,10 +202,11 @@
       "page_checked": "https://www.westfieldynj.org/camp",
       "changes": [
         "New camp, researched from https://www.westfieldynj.org/camp",
-        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates.",
+        "Recorded fees from the 2026 brochure: after care at the Cranford YMCA, $67 a week at the Program member rate ($57 for Family members)."
       ],
       "for_andrew": [
-        "Members only: traditional camps need a Westfield Area YMCA membership (Family or Program) and there is no non-member rate. I recorded the Program member rate, the higher of the two, as the weekly price. List it, saying membership is required?"
+        "Membership is required, but neither the brochure nor the Y's membership pages print a membership price, so the cost breakdown has only the care fees. Ask the Y for the Program membership price, or list it without one?"
       ]
     }
   }

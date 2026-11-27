@@ -37,6 +37,22 @@
   "price_min": 993,
   "price_max": 1056,
   "price_per": "session",
+  "fees": [
+    {
+      "name": "Before care",
+      "amount": 38.5,
+      "per": "week",
+      "required": false,
+      "note": "7 to 8 am, TeenVenture; Kahagon and Oratam offer before care for a fee the page does not print"
+    },
+    {
+      "name": "Extra camp T-shirt",
+      "amount": 10,
+      "per": "once",
+      "required": false,
+      "note": "Each extra shirt; every camper gets one"
+    }
+  ],
   "extended_care": true,
   "transportation": true,
   "meals_included": false,
@@ -113,7 +129,8 @@
         "swim_waterfront_notes",
         "aca_accredited",
         "aca_source_url",
-        "sessions"
+        "sessions",
+        "fees"
       ],
       "note": "Researched by Claude from this page. Greater Bergen County YMCA summer camp page: 2027 registration, Kahagon, Oratam and TeenVenture dates, rates, bus, and the statement that camps are ACA accredited. Ages derived from grades K to 9"
     },
@@ -160,7 +177,8 @@
       "changes": [
         "New camp, researched from https://metroymcas.org/nmy-summer-camp",
         "ZIP 07646 looked up from the camp's street address with the Census geocoder (ZIP lookups allowed by Andrew, 22 November).",
-        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates.",
+        "Recorded fees from the summer camp page: TeenVenture before care $38.50 a week and extra T-shirts $10 each. Membership is optional (it only lowers the rate) and the 5% down payment goes toward tuition."
       ],
       "for_andrew": [
         "The camp is on Lake Kanawauke in Harriman State Park, NY, with no street address. I placed the listing at the New Milford, NJ program center where the bus picks up and drops off, and say in the description that camp is in Harriman. Is that how you want lakeside camps with a bus pickup shown?",

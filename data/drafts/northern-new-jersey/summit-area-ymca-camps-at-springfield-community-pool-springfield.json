@@ -35,6 +35,29 @@
   "price_min": 395,
   "price_max": 395,
   "price_per": "week",
+  "fees": [
+    {
+      "name": "Membership",
+      "amount": 120,
+      "per": "year",
+      "required": true,
+      "note": "Summit Area YMCA youth membership (ages 0 to 12); a SAY family membership also counts. A teen membership (13 to 17) is $60 a month"
+    },
+    {
+      "name": "Extended care (morning)",
+      "amount": 95,
+      "per": "week",
+      "required": false,
+      "note": "Pre-Camp, 7 to 8:30 am; includes the morning bus where it applies"
+    },
+    {
+      "name": "Extended care (afternoon)",
+      "amount": 110,
+      "per": "week",
+      "required": false,
+      "note": "Post Camp, 4 to 6:30 pm; includes the afternoon bus where it applies"
+    }
+  ],
   "extended_care": true,
   "transportation": true,
   "financial_aid": true,
@@ -150,7 +173,8 @@
         "financial_aid",
         "refund_policy_summary",
         "swim_waterfront_notes",
-        "sessions"
+        "sessions",
+        "fees"
       ],
       "note": "Researched by Claude from this page. 2026 Summer Camp guide: Springfield Community Pool, 44 Morrison Road, Springfield, NJ 07081; Cannundus weeks 1 to 10, Cannonball weeks 2 to 10, Sports Camp weeks 1 to 10, $395 a week; membership required"
     }
@@ -176,10 +200,10 @@
       "page_checked": "https://www.thesay.org/programs/camp/view-all/",
       "changes": [
         "New camp, researched from https://www.thesay.org/programs/camp/view-all/",
-        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates.",
+        "Recorded fees from the 2026 camp guide: required youth membership $120 a year, Pre-Camp $95 a week and Post Camp $110 a week."
       ],
       "for_andrew": [
-        "Members only: every camper needs a Summit Area YMCA membership and no non-member rate exists. I recorded the one rate, $395 a week. List it, saying membership is required?",
         "Three camps share the pool site and price, so I made one listing. The Y also runs Busy Bees (ages 3 to 5) and specialty half day camps at Berkeley Heights and Summit, and travel camps from the Watchung Reservation, which I did not draft. Split or add any of them?"
       ]
     }

@@ -1159,12 +1159,22 @@
           "url": "https://campakeela.com/about-us/payment-terms/",
           "checked": "2026-11-13",
           "fields": [
-            "refund_policy_summary"
+            "refund_policy_summary",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
         }
       ],
-      "refund_policy_summary": "$1,000 deposit with the application, refunded if camp or family decides the child won't attend. Half the balance is due January 31, 2027 and the rest April 30. Without the optional $500 assurance plan, everything is refundable less a $250 fee until January 31; after that cancellation fees rise from $2,500 to $6,000, and nothing is refunded from June 1. The assurance plan gives a fuller refund up to May 1 and partial credit after."
+      "refund_policy_summary": "$1,000 deposit with the application, refunded if camp or family decides the child won't attend. Half the balance is due January 31, 2027 and the rest April 30. Without the optional $500 assurance plan, everything is refundable less a $250 fee until January 31; after that cancellation fees rise from $2,500 to $6,000, and nothing is refunded from June 1. The assurance plan gives a fuller refund up to May 1 and partial credit after.",
+      "fees": [
+        {
+          "name": "Camper assurance plan",
+          "amount": 500,
+          "per": "once",
+          "required": false,
+          "note": "Optional ACAP fee, paid with the application. Not refunded."
+        }
+      ]
     },
     {
       "slug": "camp-sangamon-for-boys-pittsford",
@@ -1794,7 +1804,8 @@
             "financial_aid",
             "refund_policy_summary",
             "sessions",
-            "description_short"
+            "description_short",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
         },
@@ -1833,7 +1844,16 @@
       "price_max": 2850,
       "price_per": "session",
       "price_per_week": null,
-      "refund_policy_summary": "Cancel in writing or by phone at least two weeks before the camper arrives for a refund; less than two weeks before, no refund. The deposit is non-refundable (a Circle of Girls+ scholarship applicant who can no longer accept may get it back). Homesickness is not a reason for a refund."
+      "refund_policy_summary": "Cancel in writing or by phone at least two weeks before the camper arrives for a refund; less than two weeks before, no refund. The deposit is non-refundable (a Circle of Girls+ scholarship applicant who can no longer accept may get it back). Homesickness is not a reason for a refund.",
+      "fees": [
+        {
+          "name": "Changeover stay",
+          "amount": 100,
+          "per": "session",
+          "required": false,
+          "note": "For overnight campers staying between two consecutive sessions, $100 each changeover. Included in the two week session."
+        }
+      ]
     },
     {
       "slug": "camp-ta-kum-ta",
@@ -2776,6 +2796,23 @@
             "sessions"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://docs.google.com/document/d/1UmYPPPjoIsjxAoirgAmgmdHNfTggbJnuKpVtJ4VTDvA/edit?usp=sharing",
+          "checked": "2026-11-27",
+          "fields": [
+            "fees"
+          ],
+          "note": "Fees researched by Claude from this page"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Lunch",
+          "amount": 4,
+          "per": "day",
+          "required": false,
+          "note": "Order by noon the day before. Free or reduced for families who qualify."
         }
       ]
     },
@@ -3588,9 +3625,19 @@
           "checked": "2026-11-13",
           "fields": [
             "email",
-            "refund_policy_summary"
+            "refund_policy_summary",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Registration fee",
+          "amount": 30,
+          "per": "once",
+          "required": true,
+          "note": "Non refundable. A $25 deposit per week is also due at registration; the policy does not say whether it counts toward tuition."
         }
       ]
     },
@@ -3834,7 +3881,8 @@
             "price_max",
             "transportation",
             "refund_policy_summary",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
         },
@@ -3875,7 +3923,23 @@
       "age_max": 15,
       "meals_included": true,
       "aca_accredited": true,
-      "aca_source_url": "https://www.camplochearn.com/about-lochearn/faqs.php"
+      "aca_source_url": "https://www.camplochearn.com/about-lochearn/faqs.php",
+      "fees": [
+        {
+          "name": "Riding (every day)",
+          "amount": 1850,
+          "per": "session",
+          "required": false,
+          "note": "Optional riding program, full sessions"
+        },
+        {
+          "name": "Riding (every other day)",
+          "amount": 1200,
+          "per": "session",
+          "required": false,
+          "note": "Optional riding program, full sessions. Middler sessions: $850 for every other day riding."
+        }
+      ]
     },
     {
       "slug": "capital-kids-summer-day-camp-montpelier",
@@ -4570,7 +4634,8 @@
             "extended_care",
             "financial_aid",
             "swim_waterfront_notes",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
         },
@@ -4585,6 +4650,22 @@
             "zip"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Before care",
+          "amount": 10,
+          "per": "day",
+          "required": false,
+          "note": "8:00 to 9:00 am"
+        },
+        {
+          "name": "After care",
+          "amount": 15,
+          "per": "day",
+          "required": false,
+          "note": "3:00 to 4:30 pm"
         }
       ]
     },
@@ -4685,6 +4766,37 @@
             "sessions"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-22, approved by Andrew Krensky"
+        },
+        {
+          "url": "https://www.girlscoutsgwm.org/en/get-involved/join.html",
+          "checked": "2026-11-27",
+          "fields": [
+            "fees"
+          ],
+          "note": "Fees researched by Claude from this page"
+        },
+        {
+          "url": "https://www.girlscoutsgwm.org/en/activities/camp-and-outdoors/camp-transportation.html",
+          "checked": "2026-11-27",
+          "fields": [],
+          "note": "Fees researched by Claude from this page"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Membership",
+          "amount": 80,
+          "per": "year",
+          "required": true,
+          "note": "Girl Scout membership for girls, October 1, 2026 to September 30, 2027. Campers who are not Girl Scouts buy it when registering."
+        },
+        {
+          "name": "Bus",
+          "amount": 35,
+          "per": "session",
+          "required": false,
+          "note": "To ride the bus each session; Twin Hills bus runs July 26 to 30 and August 2 to 6, 2027.",
+          "source_url": "https://www.girlscoutsgwm.org/en/activities/camp-and-outdoors/camp-transportation.html"
         }
       ]
     },
@@ -4821,9 +4933,50 @@
             "price_max",
             "price_per",
             "refund_policy_summary",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Bike storage",
+          "amount": 50,
+          "per": "week",
+          "required": false
+        },
+        {
+          "name": "Bike rental (20 to 24 inch)",
+          "amount": 75,
+          "per": "week",
+          "required": false
+        },
+        {
+          "name": "Bike rental (26 to 29 inch)",
+          "amount": 100,
+          "per": "week",
+          "required": false
+        },
+        {
+          "name": "Helmet rental",
+          "amount": 15,
+          "per": "week",
+          "required": false,
+          "note": "Or $5 a day"
+        },
+        {
+          "name": "Handlebar plugs",
+          "amount": 5,
+          "per": "once",
+          "required": false
+        },
+        {
+          "name": "Bike tune up",
+          "amount": 20,
+          "per": "once",
+          "required": false,
+          "note": "$20 minimum; camp calls before charging more"
         }
       ]
     },
@@ -4914,9 +5067,19 @@
             "price_max",
             "price_per",
             "refund_policy_summary",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-22, approved by Andrew Krensky"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Bus",
+          "amount": 50,
+          "per": "session",
+          "required": false,
+          "note": "From stops in Bristol and Monkton, for the one week summer camp"
         }
       ]
     },
@@ -5283,7 +5446,8 @@
             "price_min",
             "price_max",
             "price_per",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-22, approved by Andrew Krensky"
         },
@@ -5298,6 +5462,15 @@
             "zip"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-22, approved by Andrew Krensky"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Aftercare",
+          "amount": 50,
+          "per": "week",
+          "required": false,
+          "note": "Monday to Thursday until 4 pm. A deposit of $80 a week is also listed; the page does not say whether it counts toward the camp fee."
         }
       ]
     },

@@ -37,6 +37,22 @@
   "price_min": 300,
   "price_max": 375,
   "price_per": "week",
+  "fees": [
+    {
+      "name": "Membership",
+      "amount": 58,
+      "per": "year",
+      "required": true,
+      "note": "Connecticut Audubon Society, Chickadee family level or higher, current at registration and during camp"
+    },
+    {
+      "name": "Aftercare",
+      "amount": 20,
+      "per": "day",
+      "required": false,
+      "note": "4 to 5 pm"
+    }
+  ],
   "extended_care": true,
   "meals_included": false,
   "refund_policy_summary": "Optional Registration Protection gives a full refund for listed reasons. Without it, changes need two weeks' notice by email; cancellations before June 1 are refunded less 20%, none after June 1. Membership fees are not refunded.",
@@ -116,7 +132,8 @@
         "secondary_categories",
         "description_short",
         "indoor_outdoor",
-        "refund_policy_summary"
+        "refund_policy_summary",
+        "fees"
       ],
       "note": "Researched by Claude from this page. RTP Estuary Center Summer Camps 2026: Ecology Camp (ages 5 to 10) and Junior Naturalists (ages 11 to 13), weekly sessions; 2026 season closed. Families must hold a Connecticut Audubon membership at Chickadee level ($58 family) or higher. This page gives the phone as 203-598-4218; the center contact block gives 860-598-4218."
     },
@@ -171,12 +188,12 @@
       "date": "2026-11-20",
       "page_checked": "https://ctaudubon.org/locations/roger-tory-peterson-estuary-center/summer-camp/",
       "changes": [
-        "New camp, researched from https://ctaudubon.org/locations/roger-tory-peterson-estuary-center/summer-camp/"
+        "New camp, researched from https://ctaudubon.org/locations/roger-tory-peterson-estuary-center/summer-camp/",
+        "Recorded fees from the summer camp page: required Connecticut Audubon membership $58 (Chickadee family level) and aftercare $20 a day."
       ],
       "for_andrew": [
         "The holiday four day week is printed as 'June 26 - July 2' (June 26, 2026 is a Friday and is the last day of week 1); probably June 29 to July 2 but left out of sessions rather than guessed.",
-        "Phone differs: 203-598-4218 on the camp page, 860-598-4218 in the center's contact block. Draft uses 860.",
-        "Camp requires a Connecticut Audubon membership ($58 family Chickadee level or higher) on top of the weekly fee."
+        "Phone differs: 203-598-4218 on the camp page, 860-598-4218 in the center's contact block. Draft uses 860."
       ]
     }
   }

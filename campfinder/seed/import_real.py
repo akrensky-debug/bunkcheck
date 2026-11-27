@@ -60,6 +60,8 @@ CATEGORIES = {
     "outdoor", "academic", "sailing", "swimming", "adventure", "leadership", "faith",
     "special_needs",
 }
+FEE_PER = ("once", "year", "summer", "session", "week", "day", "hour")
+FEE_KEYS = {"name", "amount", "per", "required", "note", "source_url"}
 TRI_STATE = ("extended_care", "transportation", "meals_included", "financial_aid", "aca_accredited")
 
 # Fields a record may carry, all mapped 1:1 onto camps columns.
@@ -72,7 +74,7 @@ CAMP_FIELDS = (
     "price_min", "price_max", "price_per_week", "price_per",
     "extended_care", "transportation", "meals_included", "financial_aid",
     "refund_policy_summary", "special_needs_notes", "swim_waterfront_notes",
-    "aca_accredited", "aca_source_url", "season_year",
+    "aca_accredited", "aca_source_url", "season_year", "fees",
 )
 REQUIRED = ("name", "website_url", "city", "state", "zip", "camp_type", "season_year")
 # Derived or bookkeeping fields that don't need their own source row.
@@ -132,6 +134,20 @@ def validate(records: list[tuple[str, dict[str, Any]]]) -> list[str]:
         for f in TRI_STATE:
             if c.get(f) not in (True, False, None):
                 err(f"{f} must be true, false or null")
+        for i, fee in enumerate(c.get("fees") or []):
+            if not isinstance(fee, dict) or set(fee) - FEE_KEYS:
+                err(f"fees[{i}] must be an object with {sorted(FEE_KEYS)}")
+                continue
+            if not fee.get("name"):
+                err(f"fees[{i}] needs a name")
+            if not isinstance(fee.get("amount"), (int, float)) or isinstance(fee.get("amount"), bool) or fee["amount"] < 0:
+                err(f"fees[{i}] amount must be a number of dollars")
+            if fee.get("per") not in FEE_PER:
+                err(f"fees[{i}] per must be one of {list(FEE_PER)}")
+            if not isinstance(fee.get("required"), bool):
+                err(f"fees[{i}] required must be true or false")
+            if fee.get("source_url") and fee["source_url"] not in {x.get("url") for x in c.get("sources") or []}:
+                err(f"fees[{i}] source_url must be one of the listing's sources")
         if c.get("aca_accredited") and not c.get("aca_source_url"):
             err("aca_accredited needs aca_source_url")
         for f in ("primary_categories", "secondary_categories"):
@@ -224,6 +240,7 @@ def build_rows(records: list[tuple[str, dict[str, Any]]]) -> tuple[list[dict], l
             "last_reviewed_date": max((s["checked"] for s in c.get("sources") or []), default=None),
             "last_updated_date": max((s["checked"] for s in c.get("sources") or []), default=None),
             "is_active": True,
+            "fees": c.get("fees") or [],
         })
         camps.append(row)
 
@@ -306,7 +323,9 @@ def _insert(table: str, rows: list[dict], conflict: str, chunk: int = 50) -> lis
     for i in range(0, len(rows), chunk):
         values = ",\n".join(
             "(" + ", ".join(
-                f"ST_GeogFromText({_lit(r[c])})" if c == "location" else _lit(r[c]) for c in cols
+                f"ST_GeogFromText({_lit(r[c])})" if c == "location"
+                else "'" + json.dumps(r[c] or []).replace("'", "''") + "'::jsonb" if c == "fees"
+                else _lit(r[c]) for c in cols
             ) + ")"
             for r in rows[i:i + chunk]
         )

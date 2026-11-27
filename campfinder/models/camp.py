@@ -3,10 +3,23 @@
 from __future__ import annotations
 
 from datetime import datetime
-from typing import Any
+from typing import Any, Literal
 from uuid import UUID
 
 from pydantic import BaseModel, Field
+
+
+class Fee(BaseModel):
+    """A cost beyond tuition, as the camp posts it: a membership, registration fee, deposit, bus,
+    extended care or lunch."""
+
+    name: str
+    amount: float
+    per: Literal["once", "year", "summer", "session", "week", "day", "hour"]
+    required: bool = Field(description="True when every camper pays it; false for an add-on.")
+    note: str | None = None
+    source_url: str | None = Field(default=None, description="The camp page that prints this fee, when it "
+                                   "isn't the listing's main fee page.")
 
 
 class SessionSummary(BaseModel):
@@ -83,6 +96,8 @@ class CampDetail(BaseModel):
     price_max: float | None = None
     price_per_week: float | None = None
     price_per: str | None = None
+    fees: list[Fee] = Field(default_factory=list, description="Costs beyond tuition, each with its unit and "
+                            "whether every camper pays it. Mention required ones when you give a price.")
     deposit_required: bool | None = None
     financial_aid: bool = False
     extended_care: bool = False

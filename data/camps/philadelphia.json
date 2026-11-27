@@ -1,6 +1,6 @@
 {
   "metro": "Philadelphia, PA",
-  "checked": "2026-11-26",
+  "checked": "2026-11-27",
   "notes": "Real listings from each camp's own website. Unverified until a camp confirms. Edit here and re-run: python -m campfinder.seed.import_real --check",
   "camps": [
     {
@@ -128,7 +128,8 @@
             "price_per",
             "extended_care",
             "refund_policy_summary",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-25, approved by Andrew Krensky"
         },
@@ -141,6 +142,15 @@
             "swim_waterfront_notes"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-25, approved by Andrew Krensky"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Horseback riding",
+          "amount": 450,
+          "per": "summer",
+          "required": false,
+          "note": "Twice a week, weather permitting. $450 for 8 or 7 weeks, $400 for 5 or 6 weeks, $350 for 4 weeks."
         }
       ]
     },
@@ -639,9 +649,26 @@
             "financial_aid",
             "refund_policy_summary",
             "special_needs_notes",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-25, approved by Andrew Krensky"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Before care",
+          "amount": 30,
+          "per": "week",
+          "required": false,
+          "note": "8:30 to 9:30 am. Overnight Camp week is $12."
+        },
+        {
+          "name": "After care",
+          "amount": 45,
+          "per": "week",
+          "required": false,
+          "note": "4:00 to 5:30 pm. Overnight Camp week is $18."
         }
       ]
     },
@@ -1262,9 +1289,26 @@
             "meals_included",
             "financial_aid",
             "refund_policy_summary",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-25, approved by Andrew Krensky"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Before care",
+          "amount": 75,
+          "per": "week",
+          "required": false,
+          "note": "8:00 to 9:00 am."
+        },
+        {
+          "name": "Aftercare",
+          "amount": 125,
+          "per": "week",
+          "required": false,
+          "note": "3:30 to 6:00 pm."
         }
       ]
     },
@@ -1410,9 +1454,26 @@
           "fields": [
             "age_min",
             "meals_included",
-            "refund_policy_summary"
+            "refund_policy_summary",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-25, approved by Andrew Krensky"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Pizza lunch (Fridays)",
+          "amount": 5,
+          "per": "day",
+          "required": false,
+          "note": "Three slices and fruit on Fridays; sign up in advance."
+        },
+        {
+          "name": "Late registration fee",
+          "amount": 50,
+          "per": "once",
+          "required": false,
+          "note": "May be charged on new enrollments after April 6."
         }
       ]
     },
@@ -1528,7 +1589,8 @@
             "price_per",
             "extended_care",
             "special_needs_notes",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-25, approved by Andrew Krensky"
         },
@@ -1539,6 +1601,15 @@
             "financial_aid"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-25, approved by Andrew Krensky"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Aftercare",
+          "amount": 25,
+          "per": "day",
+          "required": false,
+          "note": "Until 5:30 pm."
         }
       ]
     },
@@ -2426,7 +2497,8 @@
             "price_min",
             "price_max",
             "price_per",
-            "meals_included"
+            "meals_included",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-25, approved by Andrew Krensky"
         },
@@ -2437,6 +2509,29 @@
             "refund_policy_summary"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-25, approved by Andrew Krensky"
+        },
+        {
+          "url": "https://www.esfcamps.com/devon/rates/extended-day/",
+          "checked": "2026-11-27",
+          "fields": [],
+          "note": "Fees researched by Claude from this page"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Lunch",
+          "amount": 75,
+          "per": "week",
+          "required": false,
+          "note": "Optional lunch program. Club OT extended day to 5:00 pm is included in tuition."
+        },
+        {
+          "name": "Extended care (5:00 to 5:30 pm)",
+          "amount": 65,
+          "per": "week",
+          "required": false,
+          "note": "Club OT extension past the 5:00 pm included in tuition; $55 for the four day holiday weeks. The page also shows an older 2025 table ($225, $70, $190); skipped.",
+          "source_url": "https://www.esfcamps.com/devon/rates/extended-day/"
         }
       ]
     },
@@ -2534,6 +2629,51 @@
             "refund_policy_summary"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-25, approved by Andrew Krensky"
+        },
+        {
+          "url": "https://www.esfcamps.com/friendsselect/rates/extended-day/",
+          "checked": "2026-11-27",
+          "fields": [
+            "fees"
+          ],
+          "note": "Fees researched by Claude from this page"
+        },
+        {
+          "url": "https://www.esfcamps.com/friendsselect/rates/",
+          "checked": "2026-11-27",
+          "fields": [],
+          "note": "Fees researched by Claude from this page"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Extended care (morning and afternoon)",
+          "amount": 235,
+          "per": "week",
+          "required": false,
+          "note": "Club OT 7:30 am to 6:00 pm."
+        },
+        {
+          "name": "Extended care (morning)",
+          "amount": 75,
+          "per": "week",
+          "required": false,
+          "note": "Club OT drop off 7:30 to 8:45 am."
+        },
+        {
+          "name": "Extended care (afternoon)",
+          "amount": 200,
+          "per": "week",
+          "required": false,
+          "note": "Club OT pick up 3:30 to 6:00 pm."
+        },
+        {
+          "name": "Lunch",
+          "amount": 60,
+          "per": "week",
+          "required": false,
+          "note": "Optional lunch program. Campers with documented food allergies bring lunch from home.",
+          "source_url": "https://www.esfcamps.com/friendsselect/rates/"
         }
       ]
     },
@@ -2620,7 +2760,8 @@
             "price_min",
             "price_max",
             "price_per",
-            "meals_included"
+            "meals_included",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-25, approved by Andrew Krensky"
         },
@@ -2631,6 +2772,29 @@
             "refund_policy_summary"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-25, approved by Andrew Krensky"
+        },
+        {
+          "url": "https://www.esfcamps.com/montgomery/rates/extended-day/",
+          "checked": "2026-11-27",
+          "fields": [],
+          "note": "Fees researched by Claude from this page"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Lunch",
+          "amount": 60,
+          "per": "week",
+          "required": false,
+          "note": "Optional lunch program. Club OT extended day to 5:00 pm is included in tuition."
+        },
+        {
+          "name": "Extended care (5:00 to 5:30 pm)",
+          "amount": 65,
+          "per": "week",
+          "required": false,
+          "note": "Club OT extension past the 5:00 pm included in tuition; $55 for the four day holiday weeks. The page also shows an older 2025 table ($225, $70, $190); skipped.",
+          "source_url": "https://www.esfcamps.com/montgomery/rates/extended-day/"
         }
       ]
     },
@@ -2728,6 +2892,45 @@
             "refund_policy_summary"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-25, approved by Andrew Krensky"
+        },
+        {
+          "url": "https://www.esfcamps.com/chestnuthill/rates/extended-day/",
+          "checked": "2026-11-27",
+          "fields": [
+            "fees"
+          ],
+          "note": "Fees researched by Claude from this page"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Extended care (morning and afternoon)",
+          "amount": 235,
+          "per": "week",
+          "required": false,
+          "note": "Club OT 7:30 am to 6:00 pm."
+        },
+        {
+          "name": "Extended care (morning)",
+          "amount": 75,
+          "per": "week",
+          "required": false,
+          "note": "Club OT drop off 7:30 to 8:45 am."
+        },
+        {
+          "name": "Extended care (afternoon)",
+          "amount": 200,
+          "per": "week",
+          "required": false,
+          "note": "Club OT pick up 3:30 to 6:00 pm."
+        },
+        {
+          "name": "Lunch",
+          "amount": 60,
+          "per": "week",
+          "required": false,
+          "note": "Optional lunch program. Campers with documented food allergies bring lunch from home.",
+          "source_url": "https://www.esfcamps.com/chestnuthill/rates/"
         }
       ]
     },
@@ -2825,6 +3028,45 @@
             "refund_policy_summary"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-25, approved by Andrew Krensky"
+        },
+        {
+          "url": "https://www.esfcamps.com/haverford/rates/extended-day/",
+          "checked": "2026-11-27",
+          "fields": [
+            "fees"
+          ],
+          "note": "Fees researched by Claude from this page"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Extended care (morning and afternoon)",
+          "amount": 235,
+          "per": "week",
+          "required": false,
+          "note": "Club OT 7:30 am to 6:00 pm."
+        },
+        {
+          "name": "Extended care (morning)",
+          "amount": 75,
+          "per": "week",
+          "required": false,
+          "note": "Club OT drop off 7:30 to 8:45 am."
+        },
+        {
+          "name": "Extended care (afternoon)",
+          "amount": 200,
+          "per": "week",
+          "required": false,
+          "note": "Club OT pick up 3:30 to 6:00 pm."
+        },
+        {
+          "name": "Lunch",
+          "amount": 70,
+          "per": "week",
+          "required": false,
+          "note": "Optional lunch program. Campers with documented food allergies bring lunch from home.",
+          "source_url": "https://www.esfcamps.com/haverford/rates/"
         }
       ]
     },
@@ -2905,7 +3147,8 @@
             "price_max",
             "price_per",
             "extended_care",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-25, approved by Andrew Krensky"
         },
@@ -2946,6 +3189,29 @@
             "refund_policy_summary"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-25, approved by Andrew Krensky"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Extended care (morning)",
+          "amount": 85,
+          "per": "week",
+          "required": false,
+          "note": "Good Morning Club 7:30 to 8:15 am. Also $60 for a 3 day package or $518 for all 7 weeks."
+        },
+        {
+          "name": "Extended care (afternoon)",
+          "amount": 170,
+          "per": "week",
+          "required": false,
+          "note": "After Camp Experience 3:20 to 5:45 pm. Also $105 for a 3 day package or $1,100 for all 7 weeks."
+        },
+        {
+          "name": "Shuttle to Trailblazer Camp",
+          "amount": 154,
+          "per": "week",
+          "required": false,
+          "note": "Round trip between the two campuses; one way is $77 a week. No home bus."
         }
       ]
     },
@@ -3116,7 +3382,8 @@
           "url": "https://www.gacamp.org/dates-rates",
           "checked": "2026-11-26",
           "fields": [
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-25, approved by Andrew Krensky"
         },
@@ -3135,6 +3402,36 @@
             "refund_policy_summary"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-25, approved by Andrew Krensky"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Extended care (morning)",
+          "amount": 75,
+          "per": "week",
+          "required": false,
+          "note": "8:00 to 9:00 am. Drop in days are $25 a day."
+        },
+        {
+          "name": "Extended care (afternoon to 4:30)",
+          "amount": 75,
+          "per": "week",
+          "required": false,
+          "note": "Drop in days are $25 a day."
+        },
+        {
+          "name": "Extended care (afternoon to 5:30)",
+          "amount": 100,
+          "per": "week",
+          "required": false,
+          "note": "Drop in days are $25 a day."
+        },
+        {
+          "name": "Pizza lunch (Wednesdays)",
+          "amount": 3.75,
+          "per": "day",
+          "required": false,
+          "note": "One slice; two slices are $7.50. Pre order only; not for Explorers."
         }
       ]
     },
@@ -3332,9 +3629,19 @@
             "extended_care",
             "meals_included",
             "refund_policy_summary",
-            "swim_waterfront_notes"
+            "swim_waterfront_notes",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-25, approved by Andrew Krensky"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Before or after care",
+          "amount": 10,
+          "per": "day",
+          "required": false,
+          "note": "One coupon per session (before care from 7:30 am, after care 4:30 to 6:00 pm); 10 coupons for $90."
         }
       ]
     },
@@ -3575,7 +3882,8 @@
             "financial_aid",
             "aca_accredited",
             "aca_source_url",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-25, approved by Andrew Krensky"
         },
@@ -3586,6 +3894,15 @@
             "refund_policy_summary"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-25, approved by Andrew Krensky"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Extended care (morning)",
+          "amount": 25,
+          "per": "week",
+          "required": false,
+          "note": "Morning SPARK 7 to 9 am, same for members and guests. 4 to 6 pm is included."
         }
       ]
     },
@@ -3955,9 +4272,19 @@
             "financial_aid",
             "refund_policy_summary",
             "special_needs_notes",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-25, approved by Andrew Krensky"
+        }
+      ],
+      "fees": [
+        {
+          "name": "After care",
+          "amount": 130,
+          "per": "week",
+          "required": false,
+          "note": "3:30 to 5:00 pm. $104 for the four day Session A, or $35 a day."
         }
       ]
     },
@@ -4126,7 +4453,8 @@
           "url": "https://www.miquon.org/camp/camp-transportation",
           "checked": "2026-11-26",
           "fields": [
-            "transportation"
+            "transportation",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-25, approved by Andrew Krensky"
         },
@@ -4137,6 +4465,31 @@
             "swim_waterfront_notes"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-25, approved by Andrew Krensky"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Bus",
+          "amount": 130,
+          "per": "week",
+          "required": false,
+          "note": "For the first or only camper; $65 a week for each added sibling. No multi week discount."
+        },
+        {
+          "name": "Extended care (afternoon)",
+          "amount": 125,
+          "per": "week",
+          "required": false,
+          "note": "After Camp Care, end of the camp day to 6:00 pm; discounts for four weeks or more. Not for preschool or CIT campers.",
+          "source_url": "https://www.miquon.org/camp/after-camp-care"
+        },
+        {
+          "name": "Extended care (afternoon, drop in)",
+          "amount": 25,
+          "per": "day",
+          "required": false,
+          "note": "After Camp Care by the day; call or email by noon.",
+          "source_url": "https://www.miquon.org/camp/after-camp-care"
         }
       ]
     },
@@ -4289,7 +4642,8 @@
             "special_needs_notes",
             "aca_accredited",
             "aca_source_url",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-25, approved by Andrew Krensky"
         },
@@ -4300,6 +4654,15 @@
             "refund_policy_summary"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-25, approved by Andrew Krensky"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Extended care (morning)",
+          "amount": 25,
+          "per": "week",
+          "required": false,
+          "note": "Morning SPARK 7 to 9 am, same for members and guests. 4 to 6 pm is included. Y Scholarship campers pay $20 a week each for morning and afternoon care."
         }
       ]
     },
@@ -4368,7 +4731,8 @@
             "price_min",
             "price_max",
             "price_per",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-25, approved by Andrew Krensky"
         },
@@ -4381,7 +4745,16 @@
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-25, approved by Andrew Krensky"
         }
       ],
-      "zip": "19131"
+      "zip": "19131",
+      "fees": [
+        {
+          "name": "Registration fee",
+          "amount": 5,
+          "per": "once",
+          "required": true,
+          "note": "Settlement charges it on every summer 2026 course."
+        }
+      ]
     },
     {
       "slug": "silver-lake-nature-center-summer-camp-bristol",
@@ -4455,10 +4828,34 @@
             "price_per",
             "extended_care",
             "meals_included",
-            "refund_policy_summary"
+            "refund_policy_summary",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-25, approved by Andrew Krensky",
           "checked": "2026-11-26"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Before care",
+          "amount": 55,
+          "per": "week",
+          "required": false,
+          "note": "8:00 to 9:00 am."
+        },
+        {
+          "name": "After care",
+          "amount": 60,
+          "per": "week",
+          "required": false,
+          "note": "4:00 to 5:30 pm."
+        },
+        {
+          "name": "Overnight",
+          "amount": 85,
+          "per": "once",
+          "required": false,
+          "note": "Optional overnight July 16 to 17 for ages 9 to 14."
         }
       ]
     },
@@ -5063,7 +5460,8 @@
             "price_min",
             "price_max",
             "price_per",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-25, approved by Andrew Krensky",
           "checked": "2026-11-26"
@@ -5078,6 +5476,22 @@
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-25, approved by Andrew Krensky",
           "checked": "2026-11-26"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Materials fee",
+          "amount": 20,
+          "per": "session",
+          "required": true,
+          "note": "Only for From STEAM to SPACE, Green Thumb Academy and Camp Branchout."
+        },
+        {
+          "name": "Materials fee (Wickline Casting)",
+          "amount": 30,
+          "per": "session",
+          "required": true,
+          "note": "Only for Wickline Casting: Intro to Film and TV."
         }
       ]
     },
@@ -5364,7 +5778,8 @@
             "special_needs_notes",
             "aca_accredited",
             "aca_source_url",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-25, approved by Andrew Krensky"
         },
@@ -5375,6 +5790,22 @@
             "refund_policy_summary"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-25, approved by Andrew Krensky"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Extended care (morning)",
+          "amount": 25,
+          "per": "week",
+          "required": false,
+          "note": "Morning SPARK 7 to 9 am, same for members and guests. 4 to 6 pm is included."
+        },
+        {
+          "name": "Lunch Bunch",
+          "amount": 70,
+          "per": "week",
+          "required": false,
+          "note": "Noon to 1 pm add on for ages 5 to 6 half day camps; $57 for members."
         }
       ]
     },
@@ -5530,7 +5961,8 @@
             "financial_aid",
             "aca_accredited",
             "aca_source_url",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-25, approved by Andrew Krensky"
         },
@@ -5541,6 +5973,190 @@
             "refund_policy_summary"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-25, approved by Andrew Krensky"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Extended care (morning)",
+          "amount": 25,
+          "per": "week",
+          "required": false,
+          "note": "Morning SPARK 7 to 9 am, same for members and guests. 4 to 6 pm is included."
+        }
+      ]
+    },
+    {
+      "slug": "peace-valley-nature-center-summer-camp-doylestown",
+      "name": "Peace Valley Nature Center Summer Camp",
+      "operator_name": "Peace Valley Nature Center",
+      "website_url": "https://www.peacevalleynaturecenter.org/summer-camp",
+      "email": "v-jlbilger@buckscounty.org",
+      "phone": "267-880-5047",
+      "street_address": "170 North Chapman Road",
+      "city": "Doylestown",
+      "state": "PA",
+      "zip": "18901",
+      "camp_type": "day",
+      "primary_categories": [
+        "nature"
+      ],
+      "secondary_categories": [
+        "outdoor",
+        "arts"
+      ],
+      "activities": [
+        "hiking",
+        "habitat exploration",
+        "games",
+        "water play",
+        "arts and crafts",
+        "tie dye",
+        "shelter building",
+        "knot tying"
+      ],
+      "grade_min": 1,
+      "grade_max": 7,
+      "age_min": 6,
+      "age_max": 13,
+      "description_short": "Nature day camp on the 750 acres of meadow, forest and streams at Peace Valley Nature Center in Bucks County. Mornings are guided hikes and habitat exploration with a naturalist, afternoons are choice activities like water play, crafts and shelter building; Explorers (finished K to 2) and Rangers (finished 3 to 6) run in separate groups. Families need a nature center membership to enroll.",
+      "indoor_outdoor": "outdoor",
+      "price_min": 150,
+      "price_max": 235,
+      "price_per_week": 235,
+      "price_per": "week",
+      "fees": [
+        {
+          "name": "Membership",
+          "amount": 50,
+          "per": "year",
+          "required": true,
+          "note": "Peace Valley Nature Center Family membership or higher, needed before registering"
+        }
+      ],
+      "meals_included": false,
+      "refund_policy_summary": "Cancel by May 1 for a full refund less a $50 fee; by June 1 for a 50% refund; no refunds after June 1, for mid-week withdrawals or behavior dismissals.",
+      "season_year": 2026,
+      "notes": "Full day 9:30 to 3:00 for sessions 1 to 7; sessions 8 and 9 are half day Wilderness Survival, 9:30 to 12:00, $150. Enrollment requires a Family membership ($50) or higher; the posted rate is the only rate and there are no discounts. The camp director says to ask about options if cost is a barrier. Separate Fledgling Flock program for ages 3 to 5 with a caregiver, 10:00 to 12:00, $95 a session. 2027 registration opens in mid January; 2027 dates and rates not yet posted.",
+      "sessions": [
+        {
+          "name": "Session 1 (Explorers and Rangers, full day)",
+          "start_date": "2026-06-15",
+          "end_date": "2026-06-19",
+          "price": 235,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 2 (Explorers and Rangers, full day)",
+          "start_date": "2026-06-22",
+          "end_date": "2026-06-26",
+          "price": 235,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 3 (Explorers and Rangers, full day)",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "price": 235,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 4 (Explorers and Rangers, full day)",
+          "start_date": "2026-07-13",
+          "end_date": "2026-07-17",
+          "price": 235,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 5 (Explorers and Rangers, full day)",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "price": 235,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 6 (Explorers and Rangers, full day)",
+          "start_date": "2026-07-27",
+          "end_date": "2026-07-31",
+          "price": 235,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 7 (Explorers and Rangers, full day)",
+          "start_date": "2026-08-03",
+          "end_date": "2026-08-07",
+          "price": 235,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 8 (Wilderness Survival, half day)",
+          "start_date": "2026-08-10",
+          "end_date": "2026-08-14",
+          "price": 150,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 9 (Wilderness Survival, half day)",
+          "start_date": "2026-08-17",
+          "end_date": "2026-08-21",
+          "price": 150,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.peacevalleynaturecenter.org/summer-camp",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "refund_policy_summary"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-25, approved by Andrew Krensky",
+          "checked": "2026-11-27"
+        },
+        {
+          "url": "https://www.peacevalleynaturecenter.org/explorers-and-rangers",
+          "fields": [
+            "email",
+            "phone",
+            "camp_type",
+            "primary_categories",
+            "secondary_categories",
+            "activities",
+            "grade_min",
+            "grade_max",
+            "age_min",
+            "age_max",
+            "price_min",
+            "price_max",
+            "price_per_week",
+            "price_per",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-25, approved by Andrew Krensky",
+          "checked": "2026-11-27"
+        },
+        {
+          "url": "https://www.peacevalleynaturecenter.org/summer-camp-faq",
+          "fields": [
+            "description_short",
+            "indoor_outdoor",
+            "meals_included",
+            "fees"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-25, approved by Andrew Krensky",
+          "checked": "2026-11-27"
+        },
+        {
+          "url": "https://www.peacevalleynaturecenter.org/trail-map",
+          "fields": [
+            "street_address",
+            "city",
+            "state",
+            "zip"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-25, approved by Andrew Krensky",
+          "checked": "2026-11-27"
         }
       ]
     }

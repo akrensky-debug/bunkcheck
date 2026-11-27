@@ -33,6 +33,29 @@
   "price_min": 325,
   "price_max": 325,
   "price_per": "week",
+  "fees": [
+    {
+      "name": "Registration fee",
+      "amount": 50,
+      "per": "once",
+      "required": true,
+      "note": "Non-refundable. A $50 deposit per camper per week, due at registration, goes toward tuition"
+    },
+    {
+      "name": "Before care",
+      "amount": 89,
+      "per": "week",
+      "required": false,
+      "note": "Pre Care, 7:15 to 9 am; $65 for Y members"
+    },
+    {
+      "name": "After care",
+      "amount": 95,
+      "per": "week",
+      "required": false,
+      "note": "Post Care, 4 to 6 pm; $70 for Y members"
+    }
+  ],
   "extended_care": true,
   "financial_aid": true,
   "refund_policy_summary": "Fees are due in full the Monday two weeks before each session. The $50 registration fee and the $50 weekly deposit cannot be refunded or transferred. Refund requests must be made in writing, none are given less than two weeks before a session except for medical emergencies with a doctor's note, and there is a $10 fee on every refund.",
@@ -136,7 +159,8 @@
         "price_per",
         "extended_care",
         "special_needs_notes",
-        "sessions"
+        "sessions",
+        "fees"
       ],
       "note": "Researched by Claude from this page. 2027 Camp Parrot Perch brochure. Price is the non-member (Program Participant) weekly rate; members pay $234. Ages: Discovery group is ages 3 to 5 (Pre K), oldest regular group is entering grades 7 and 8, CIT is ages 14 and 15. Pre care 7:15 to 9:00 am and post care 4:00 to 6:00 pm cost extra."
     },
@@ -182,7 +206,8 @@
       "changes": [
         "Found the current page at https://cccymca.org/locations/stratford/camp/ after https://cccymca.org/dev/wp-content/uploads/STF-2026-SUMMER-DAY-CAMP-Brochure.pdf failed (404). That page links the 2027 brochure and 2027 parent handbook, so this listing uses the 2027 season.",
         "Recorded the ten 2027 weeks June 14 to August 20 with the non-member weekly fee of $325 from the brochure's 2027 fee table.",
-        "Refund policy taken from the 2027 parent handbook."
+        "Refund policy taken from the 2027 parent handbook.",
+        "Recorded fees from the 2027 brochure's fee table: $50 non-refundable registration fee, before care $89 a week and after care $95 a week at the program participant rate. Y membership ($45 a month) is optional and only lowers the rate, so it is not a fee."
       ],
       "for_andrew": [
         "The brochure prints Week 5 as July 12 to 15, which is Monday to Thursday, while every other full week runs Monday to Friday. It may be a typo for July 12 to 16. I recorded it as printed. Keep it, or ask the Y?",

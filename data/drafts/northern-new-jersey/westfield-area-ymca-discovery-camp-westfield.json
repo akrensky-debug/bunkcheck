@@ -36,6 +36,22 @@
   "price_min": 505,
   "price_max": 505,
   "price_per": "week",
+  "fees": [
+    {
+      "name": "Before care",
+      "amount": 100,
+      "per": "week",
+      "required": false,
+      "note": "7 to 8:30 am at the Main Y Facility; $85 for Family members"
+    },
+    {
+      "name": "After care",
+      "amount": 100,
+      "per": "week",
+      "required": false,
+      "note": "4:30 to 6 pm at the Main Y Facility; $85 for Family members"
+    }
+  ],
   "extended_care": true,
   "meals_included": false,
   "financial_aid": true,
@@ -148,7 +164,8 @@
         "extended_care",
         "meals_included",
         "financial_aid",
-        "sessions"
+        "sessions",
+        "fees"
       ],
       "note": "Researched by Claude from this page. 2026 camp brochure linked from the camp page: grades, weeks, fees (F family member, P program member) and location Main Y Facility. Ages derived from grades"
     },
@@ -184,10 +201,11 @@
       "date": "2026-11-25",
       "page_checked": "https://www.westfieldynj.org/camp",
       "changes": [
-        "New camp, researched from https://www.westfieldynj.org/camp"
+        "New camp, researched from https://www.westfieldynj.org/camp",
+        "Recorded fees from the 2026 brochure: before care and after care at the Main Y Facility, $100 a week each at the Program member rate ($85 for Family members)."
       ],
       "for_andrew": [
-        "Members only: traditional camps need a Westfield Area YMCA membership (Family or Program) and there is no non-member rate. I recorded the Program member rate, the higher of the two, as the weekly price. List it, saying membership is required?"
+        "Membership is required, but neither the brochure nor the Y's membership pages print a membership price, so the cost breakdown has only the care fees. Ask the Y for the Program membership price, or list it without one?"
       ]
     }
   }

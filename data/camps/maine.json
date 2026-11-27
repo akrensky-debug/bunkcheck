@@ -472,7 +472,8 @@
             "transportation",
             "meals_included",
             "refund_policy_summary",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
         },
@@ -489,7 +490,44 @@
         }
       ],
       "gender_policy": "boys",
-      "swim_waterfront_notes": "165-acre campus on Crescent Lake in Raymond."
+      "swim_waterfront_notes": "165-acre campus on Crescent Lake in Raymond.",
+      "fees": [
+        {
+          "name": "Personal account",
+          "amount": 300,
+          "per": "summer",
+          "required": true,
+          "note": "Added to tuition for the camp store, book fair, longer trips, postage and luggage shipping; money not spent is refunded"
+        },
+        {
+          "name": "Bus (Union, NJ)",
+          "amount": 240,
+          "per": "once",
+          "required": false,
+          "note": "Chaperoned, each way"
+        },
+        {
+          "name": "Bus (Westport, CT)",
+          "amount": 230,
+          "per": "once",
+          "required": false,
+          "note": "Chaperoned, each way"
+        },
+        {
+          "name": "Bus (Lexington, MA)",
+          "amount": 200,
+          "per": "once",
+          "required": false,
+          "note": "Chaperoned, each way"
+        },
+        {
+          "name": "Airport transfer (Portland Jetport)",
+          "amount": 120,
+          "per": "once",
+          "required": false,
+          "note": "Each way"
+        }
+      ]
     },
     {
       "slug": "camp-androscoggin",
@@ -840,7 +878,8 @@
             "price_per",
             "financial_aid",
             "refund_policy_summary",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
         },
@@ -853,6 +892,15 @@
             "swim_waterfront_notes"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Registration fee",
+          "amount": 30,
+          "per": "once",
+          "required": true,
+          "note": "Nonrefundable, charged once per season per camper; refunded if the camper stays on the waitlist and never gets a spot"
         }
       ]
     },
@@ -1660,7 +1708,8 @@
           "checked": "2026-11-13",
           "fields": [
             "price_per_week",
-            "price_per"
+            "price_per",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
         },
@@ -1695,7 +1744,23 @@
       "transportation": false,
       "meals_included": false,
       "season_year": 2027,
-      "refund_policy_summary": "A $50 non-refundable deposit per week holds the spot, with the balance due May 31, 2027. Cancel at least 10 days before a week for a refund minus the deposit; within 10 days, tuition is not refunded."
+      "refund_policy_summary": "A $50 non-refundable deposit per week holds the spot, with the balance due May 31, 2027. Cancel at least 10 days before a week for a refund minus the deposit; within 10 days, tuition is not refunded.",
+      "fees": [
+        {
+          "name": "Extended care (morning)",
+          "amount": 30,
+          "per": "week",
+          "required": false,
+          "note": "Before Care, 7:30 to 9:00 am"
+        },
+        {
+          "name": "Extended care (afternoon)",
+          "amount": 25,
+          "per": "week",
+          "required": false,
+          "note": "After Care, 4:00 to 5:00 pm"
+        }
+      ]
     },
     {
       "slug": "camp-laurel-readfield",
@@ -2038,7 +2103,8 @@
             "price_per",
             "transportation",
             "refund_policy_summary",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
         },
@@ -2078,6 +2144,22 @@
             "meals_included"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Personal expenses (full session)",
+          "amount": 450,
+          "per": "session",
+          "required": true,
+          "note": "Added to the invoice for College League and Color War apparel, canteen, bunk parties, trip spending and small items"
+        },
+        {
+          "name": "Personal expenses (half session)",
+          "amount": 250,
+          "per": "session",
+          "required": true,
+          "note": "Added to the invoice for College League and Color War apparel, canteen, bunk parties, trip spending and small items"
         }
       ]
     },
@@ -2387,7 +2469,8 @@
             "price_max",
             "price_per",
             "refund_policy_summary",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
         },
@@ -2418,6 +2501,20 @@
             "swim_waterfront_notes"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Equestrian",
+          "amount": 400,
+          "per": "week",
+          "required": false
+        },
+        {
+          "name": "Golf course fees",
+          "amount": 200,
+          "per": "week",
+          "required": false
         }
       ]
     },
@@ -2798,7 +2895,8 @@
             "transportation",
             "refund_policy_summary",
             "swim_waterfront_notes",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
         },
@@ -2812,6 +2910,14 @@
             "age_max"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Personal, trip and outing expense",
+          "amount": 450,
+          "per": "summer",
+          "required": true
         }
       ]
     },
@@ -2990,9 +3096,47 @@
             "refund_policy_summary",
             "swim_waterfront_notes",
             "sessions",
-            "gender_policy"
+            "gender_policy",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Horseback riding, twice a week (full season)",
+          "amount": 575,
+          "per": "session",
+          "required": false,
+          "note": "Three times a week is $775"
+        },
+        {
+          "name": "Horseback riding, twice a week (half season)",
+          "amount": 275,
+          "per": "session",
+          "required": false,
+          "note": "Three times a week is $375; Wayseeker campers pay a prorated rate as space allows"
+        },
+        {
+          "name": "Golf clinic",
+          "amount": 250,
+          "per": "summer",
+          "required": false,
+          "note": "Five weekly sessions at Point Sebago Golf Resort"
+        },
+        {
+          "name": "Red Cross lifeguard training",
+          "amount": 250,
+          "per": "summer",
+          "required": false,
+          "note": "Full season campers 15 and older who pass the prerequisites; space limited"
+        },
+        {
+          "name": "Senior camper Maine experience trips",
+          "amount": 225,
+          "per": "summer",
+          "required": false,
+          "note": "Overnight trips for Senior Unit campers in the full season or first half"
         }
       ]
     },
@@ -4596,9 +4740,33 @@
             "meals_included",
             "financial_aid",
             "refund_policy_summary",
-            "swim_waterfront_notes"
+            "swim_waterfront_notes",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Registration fee",
+          "amount": 35,
+          "per": "once",
+          "required": true,
+          "note": "One time per camper, nonrefundable; separate $25 weekly deposits go toward tuition"
+        },
+        {
+          "name": "Extended care (morning)",
+          "amount": 30,
+          "per": "week",
+          "required": false,
+          "note": "Early drop off, 6:30 to 9:00 am"
+        },
+        {
+          "name": "Extended care (afternoon)",
+          "amount": 25,
+          "per": "week",
+          "required": false,
+          "note": "Late pick up, 4:00 to 5:30 pm"
         }
       ]
     },
@@ -4919,6 +5087,14 @@
             "swim_waterfront_notes"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        },
+        {
+          "url": "https://www.maineycamp.org/programs/dates-fees/transfers-laundry",
+          "checked": "2026-11-27",
+          "fields": [
+            "fees"
+          ],
+          "note": "Fees researched by Claude from this page"
         }
       ],
       "price_min": 534,
@@ -4990,6 +5166,37 @@
           "end_date": "2027-07-03",
           "price": 668,
           "availability": "unknown"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Traveler package",
+          "amount": 470,
+          "per": "session",
+          "required": false,
+          "note": "For campers flying in: laundry, bedding, airport transport and travel extras"
+        },
+        {
+          "name": "Airport transfer (Boston Logan)",
+          "amount": 145,
+          "per": "once",
+          "required": false,
+          "note": "Each way"
+        },
+        {
+          "name": "Airport transfer (Portland Jetport)",
+          "amount": 85,
+          "per": "once",
+          "required": false,
+          "note": "Each way"
+        },
+        {
+          "name": "Stay over between sessions",
+          "amount": 150,
+          "per": "once",
+          "required": false,
+          "note": "Per camper, for the weekend between two sessions",
+          "source_url": "https://www.maineycamp.org/programs/dates-fees"
         }
       ]
     },
@@ -5644,7 +5851,8 @@
             "price_min",
             "price_max",
             "refund_policy_summary",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
         },
@@ -5664,6 +5872,22 @@
             "transportation"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Registration fee",
+          "amount": 1000,
+          "per": "once",
+          "required": true,
+          "note": "Per camper, on top of tuition and sent with the application; fully refundable until January 1, 2027, not after"
+        },
+        {
+          "name": "CIT activities fee",
+          "amount": 200,
+          "per": "week",
+          "required": true,
+          "note": "Charged to Campers in Transition (CIT) only, for out of camp excursions"
         }
       ]
     },
@@ -7780,7 +8004,8 @@
             "price_max",
             "price_per",
             "refund_policy_summary",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-22, approved by Andrew Krensky"
         },
@@ -7793,7 +8018,16 @@
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-22, approved by Andrew Krensky"
         }
       ],
-      "zip": "04941"
+      "zip": "04941",
+      "fees": [
+        {
+          "name": "Early drop off or late pick up",
+          "amount": 10,
+          "per": "day",
+          "required": false,
+          "note": "Also charged for a date change; the camp week runs Sunday noon to Saturday noon"
+        }
+      ]
     },
     {
       "slug": "camp-skylemar-naples",
@@ -8130,7 +8364,8 @@
             "price_per",
             "transportation",
             "refund_policy_summary",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-22, approved by Andrew Krensky"
         },
@@ -8149,6 +8384,22 @@
             "financial_aid"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-22, approved by Andrew Krensky"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Early arrival or late stay",
+          "amount": 100,
+          "per": "day",
+          "required": false,
+          "note": "Accommodation fee for campers whose travel means arriving before or staying past the session dates"
+        },
+        {
+          "name": "Airport transfer (Portland Jetport, other days)",
+          "amount": 50,
+          "per": "once",
+          "required": false,
+          "note": "Free on opening and closing days; $50 on any other day"
         }
       ]
     },
@@ -9518,9 +9769,19 @@
             "price_per",
             "extended_care",
             "refund_policy_summary",
-            "sessions"
+            "sessions",
+            "fees"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-22, approved by Andrew Krensky"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Camp shirt",
+          "amount": 12,
+          "per": "once",
+          "required": true,
+          "note": "One time shirt fee, charged with the first week registered. The office section says it is required unless the camper registered in summer 2024."
         }
       ]
     },
