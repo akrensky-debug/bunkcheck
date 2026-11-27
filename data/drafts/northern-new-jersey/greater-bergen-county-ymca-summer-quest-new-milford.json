@@ -27,6 +27,29 @@
   "price_min": 385,
   "price_max": 385,
   "price_per": "week",
+  "fees": [
+    {
+      "name": "Before care",
+      "amount": 27.5,
+      "per": "week",
+      "required": false,
+      "note": "7:30 to 8:30 am"
+    },
+    {
+      "name": "After care",
+      "amount": 40,
+      "per": "week",
+      "required": false,
+      "note": "4 to 6 pm"
+    },
+    {
+      "name": "Extra camp T-shirt",
+      "amount": 10,
+      "per": "once",
+      "required": false,
+      "note": "Each extra shirt; every camper gets one"
+    }
+  ],
   "extended_care": true,
   "meals_included": false,
   "financial_aid": true,
@@ -67,7 +90,8 @@
         "financial_aid",
         "aca_accredited",
         "aca_source_url",
-        "sessions"
+        "sessions",
+        "fees"
       ],
       "note": "Researched by Claude from this page. Greater Bergen County YMCA summer camp page: Summer Quest, ages 5 to 12, June 21 to August 20 in one week sessions, $385 a week, before and after care fees"
     },
@@ -115,7 +139,8 @@
       "changes": [
         "New camp, researched from https://metroymcas.org/nmy-summer-camp",
         "ZIP 07646 looked up from the camp's street address with the Census geocoder (ZIP lookups allowed by Andrew, 22 November).",
-        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates.",
+        "Recorded fees from the summer camp page: before care $27.50 a week, after care $40 a week and extra T-shirts $10 each. Membership is optional (it only lowers the rate) and the 5% down payment goes toward tuition."
       ],
       "for_andrew": [
         "One rate ($385 a week) is posted and the page says members and non-members pay different rates without saying which this is. Ask the Y which rate it is?"

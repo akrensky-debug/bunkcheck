@@ -36,6 +36,15 @@
   "price_min": 475,
   "price_max": 525,
   "price_per": "week",
+  "fees": [
+    {
+      "name": "Membership",
+      "amount": 125,
+      "per": "year",
+      "required": true,
+      "note": "Friends of Rye Nature Center, Environmentalist level or higher, valid through the camp dates; one per family"
+    }
+  ],
   "financial_aid": true,
   "refund_policy_summary": "Changing dates costs a $50 fee if space allows; there are no refunds or credits if you cancel (the fee can be turned into a tax deductible donation). Membership is non-refundable.",
   "season_year": 2026,
@@ -121,7 +130,8 @@
         "price_per",
         "financial_aid",
         "refund_policy_summary",
-        "sessions"
+        "sessions",
+        "fees"
       ],
       "note": "Researched by Claude from this page. Summer Camp page, 2026 season (registration opened January 28, 2026; 2026 Camp Guide): eight weeks June 29 to August 21. Membership ($125) required. age_min 3 reflects the stated minimum of 3.5 years; age_max derived from grade 7. price_per_week is the Discoverers rate."
     },
@@ -139,7 +149,7 @@
     }
   ],
   "review": {
-    "status": "needs_andrew",
+    "status": "ready",
     "source": {
       "url": "https://www.ryenaturecenter.org/summer-camp-at-rnc",
       "kind": "html",
@@ -159,11 +169,10 @@
       "date": "2026-11-25",
       "page_checked": "https://www.ryenaturecenter.org/summer-camp-at-rnc",
       "changes": [
-        "New camp, researched from https://www.ryenaturecenter.org/summer-camp-at-rnc"
+        "New camp, researched from https://www.ryenaturecenter.org/summer-camp-at-rnc",
+        "Recorded fees from the camp page: required Friends of Rye Nature Center membership $125."
       ],
-      "for_andrew": [
-        "Camp requires a Friends of Rye Nature Center membership ($125 or more a year), so there is no non-member rate. I recorded the camp's own weekly rates ($475 to $525) with the membership in notes. Should the $125 be folded into the price?"
-      ]
+      "for_andrew": []
     }
   }
 }

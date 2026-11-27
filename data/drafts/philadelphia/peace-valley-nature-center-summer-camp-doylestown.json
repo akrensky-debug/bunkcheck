@@ -37,6 +37,15 @@
   "price_max": 235,
   "price_per_week": 235,
   "price_per": "week",
+  "fees": [
+    {
+      "name": "Membership",
+      "amount": 50,
+      "per": "year",
+      "required": true,
+      "note": "Peace Valley Nature Center Family membership or higher, needed before registering"
+    }
+  ],
   "meals_included": false,
   "refund_policy_summary": "Cancel by May 1 for a full refund less a $50 fee; by June 1 for a 50% refund; no refunds after June 1, for mid-week withdrawals or behavior dismissals.",
   "season_year": 2026,
@@ -145,7 +154,8 @@
       "fields": [
         "description_short",
         "indoor_outdoor",
-        "meals_included"
+        "meals_included",
+        "fees"
       ],
       "note": "Researched by Claude from this page. FAQ: daily schedule of morning naturalist hike and afternoon choice activities; mostly outdoors, Visitor Center used in heavy storms; campers bring lunch, snack and water.",
       "checked": "2026-11-25"
@@ -163,7 +173,7 @@
     }
   ],
   "review": {
-    "status": "needs_andrew",
+    "status": "ready",
     "source": {
       "url": "https://www.peacevalleynaturecenter.org/summer-camp",
       "kind": "html",
@@ -183,11 +193,10 @@
       "page_checked": "https://www.peacevalleynaturecenter.org/summer-camp",
       "changes": [
         "New camp, researched from https://www.peacevalleynaturecenter.org/summer-camp",
-        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates.",
+        "Recorded fees from the camp FAQ: required Family membership $50."
       ],
-      "for_andrew": [
-        "Only members can enroll: a Family membership ($50) or higher is required, and $235 a week is the one rate posted, with no non-member price. Under the 22 November rule I recorded that rate and said who can enroll in the description. OK to list?"
-      ]
+      "for_andrew": []
     }
   }
 }

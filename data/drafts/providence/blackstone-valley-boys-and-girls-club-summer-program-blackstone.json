@@ -28,6 +28,22 @@
     "playground",
     "tournaments"
   ],
+  "fees": [
+    {
+      "name": "Membership",
+      "amount": 20,
+      "per": "year",
+      "required": true,
+      "note": "Annual club membership for each child, non-refundable; $10 for a third or fourth child"
+    },
+    {
+      "name": "Locker",
+      "amount": 30,
+      "per": "summer",
+      "required": false,
+      "note": "Optional"
+    }
+  ],
   "extended_care": true,
   "refund_policy_summary": "No refunds after the program starts. The $20 annual membership fee is never refunded.",
   "swim_waterfront_notes": "The park has an outdoor inground swimming pool, and campers can swim. The park sits along the Blackstone River, and fishing is offered.",
@@ -54,7 +70,8 @@
         "extended_care",
         "refund_policy_summary",
         "swim_waterfront_notes",
-        "primary_categories"
+        "primary_categories",
+        "fees"
       ],
       "note": "Drafted by the listing tool from this page"
     },
@@ -149,7 +166,8 @@
       "page_checked": "https://www.bvbgc.com/summer-program.html",
       "changes": [
         "primary_categories: replaced 'nature' with 'general' and 'swimming' (page describes a recreational program with an outdoor pool and sports fields; fishing alone does not make it a nature camp)",
-        "Re-checked all other fields against the page; they match. Source row date updated."
+        "Re-checked all other fields against the page; they match. Source row date updated.",
+        "Recorded fees from the summer program page: required annual membership $20 a child and an optional $30 locker. Tuition is still a placeholder on the page."
       ],
       "for_andrew": [
         "Prices on the page are placeholders ($000 per child, $20 membership); the club says 2027 information comes 'after the New Year'. Ask the owner, or re-check in January.",

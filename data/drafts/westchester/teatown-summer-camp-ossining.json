@@ -28,6 +28,29 @@
   "age_min": 4,
   "age_max": 15,
   "description_short": "Natural science day camp on Teatown's 1,000 acre preserve in Ossining, in two week sessions for children from Pre-K through grade 9. Groups by grade hike, explore streams and fields and meet the center's animals; older campers do field research and trips to nearby parks and the Hudson River.",
+  "fees": [
+    {
+      "name": "Membership",
+      "amount": 85,
+      "per": "year",
+      "required": true,
+      "note": "Teatown family level or higher, valid through the camp dates; one per family; not required for families applying for financial aid"
+    },
+    {
+      "name": "Extended care (morning)",
+      "amount": 100,
+      "per": "week",
+      "required": false,
+      "note": "7:45 to 8:45 am, per child"
+    },
+    {
+      "name": "Extended care (afternoon)",
+      "amount": 250,
+      "per": "week",
+      "required": false,
+      "note": "3 to 5 pm, per child"
+    }
+  ],
   "extended_care": true,
   "financial_aid": true,
   "refund_policy_summary": "Withdrawals before June 16, 2027 get 75% of the total camp fee back (a 25% administrative charge is kept); no refunds after that date.",
@@ -78,7 +101,8 @@
         "extended_care",
         "financial_aid",
         "refund_policy_summary",
-        "sessions"
+        "sessions",
+        "fees"
       ],
       "note": "Researched by Claude from this page. Summer camp page: Summer Camp 2027 Dates and Themes, four two week sessions. Session I is printed as June 28 to July 19, which overlaps Session II (July 12 to 23); left out. Groups run from Pre-K (must be entering kindergarten in 2027 to 2028; no 3 year olds) to grades 8 to 9. age_min 4 is derived from that rule; age_max derived from grade 9. 2027 prices not posted; the linked fee page is for 2026, so no prices are recorded. Scholarships by application by May 1."
     }
@@ -105,12 +129,12 @@
       "page_checked": "https://www.teatown.org/camp/summer-camp/",
       "changes": [
         "New camp, researched from https://www.teatown.org/camp/summer-camp/",
-        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates.",
+        "Recorded fees from the 2027 camp page: required family membership $85 (from 2027), extended care $100 a week mornings and $250 a week afternoons."
       ],
       "for_andrew": [
         "Teatown's 2027 page prints Session I as June 28 to July 19, which overlaps Session II (July 12 to 23). Probably July 9, but I left Session I out rather than guess. Ask Teatown, or add it as June 28 to July 9?",
-        "2027 fees are not posted yet (only 2026: $1,055 non-member for a two week full day session). The draft has 2027 dates and no prices; add prices when Teatown posts them.",
-        "From 2027 a Teatown family membership ($85) is required to attend unless the family applies for aid, so there is no non-member rate. Fine to show the member price plus a note on the membership once prices are out?"
+        "2027 fees are not posted yet (only 2026: $1,055 non-member for a two week full day session). The draft has 2027 dates and no prices; add prices when Teatown posts them."
       ]
     }
   }
