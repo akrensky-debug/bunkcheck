@@ -87,7 +87,8 @@ export default function CampDetailPage() {
 
   return (
     <Container className="py-10 sm:py-14">
-      <TextLink href="/search" tone="muted" className="mb-10 text-small">
+      {/* Search isn't open on the hand-raiser host (lib/site-mode.ts), where this link bounced to the home page. */}
+      <TextLink href="/search" tone="muted" className="mb-10 text-small" data-app-only>
         <Icon name="arrow-left" size={14} />Back to results
       </TextLink>
 
