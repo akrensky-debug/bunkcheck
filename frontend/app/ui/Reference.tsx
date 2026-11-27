@@ -6,7 +6,7 @@ import type { CampSearchResult } from '@/lib/api'
 import {
   ActionTile, Button, Checkbox, ChoiceChip, Composer, Container, Divider, EmptyState, Field, Heading, ICON_NAMES, Icon,
   IconButton, Input, List, ListRow, Meta, Notice, Price, SearchBar, SearchField, Section, Select, Skeleton,
-  Stack, StatusCounts, StatusDot, StatusLegend, StatusMark, StatusStrip, STATUS_TONES, SHAPE_NAME, Surface, Text,
+  Stack, StatusCounts, StatusDot, StatusLegend, StatusMark, StatusStrip, STATUS_TONES, SHAPE_NAME, Surface, Band, Text,
   TextLink, Textarea, TrustMark, TRUST, cx, statusEdge,
 } from '@/components/ui'
 
@@ -236,12 +236,14 @@ export default function Reference() {
         </Stack>
       </Demo>
 
-      <Demo title="Layout" note="Container sets width (narrow 720, default 1024, wide 1152) and gutters. Section is a heading plus content; divided adds the hairline that separates sections. Surface is the white container, used rarely.">
+      <Demo title="Layout" note="Container sets width (narrow 720, default 1024, wide 1152) and gutters. Section is a heading plus content; divided adds the hairline that separates sections. Surface is the white container, used rarely. Band is a full-width background for one section of a long page; tint shows the product, ink holds the promises, and two neighbours never share a tone.">
         <Stack gap={6}>
           <Divider />
           <Surface className="max-w-narrow">
             <p className="text-small">A Surface: white, radius 16, no border, no shadow.</p>
           </Surface>
+          <Band tone="tint"><p className="text-small">A Band, tint: full width, behind the section that shows the product.</p></Band>
+          <Band tone="ink"><p className="text-small">A Band, ink: the promises. The page&rsquo;s one place for real weight.</p></Band>
         </Stack>
       </Demo>
 

@@ -1,0 +1,151 @@
+{
+  "slug": "village-farm-camp-langhorne",
+  "name": "Village Farm Camp",
+  "operator_name": "Newtown Athletic Club",
+  "website_url": "https://campnac.com/village-farm-camp/",
+  "registration_url": "https://campnac.campintouch.com/ui/forms/application/camper/App",
+  "street_address": "2020 Woodbourne Rd",
+  "city": "Langhorne",
+  "state": "PA",
+  "zip": "19047",
+  "camp_type": "day",
+  "primary_categories": [
+    "nature"
+  ],
+  "secondary_categories": [
+    "outdoor",
+    "swimming",
+    "arts"
+  ],
+  "activities": [
+    "animal care",
+    "archery",
+    "nature crafts",
+    "water games",
+    "swimming"
+  ],
+  "age_min": 6,
+  "age_max": 12,
+  "description_short": "Camp NAC's farm day camp for ages 6 to 12 at a separate site in Langhorne, where campers meet animals, try archery, make nature crafts and play water games. Two days a week they swim at the Newtown Athletic Club's outdoor water park.",
+  "indoor_outdoor": "outdoor",
+  "season_year": 2027,
+  "notes": "Runs 9 to 3 and is booked by the week through Camp NAC, mixed with any other Camp NAC weeks. Rates are given only through a request form, so no price is listed. Camp office 215-944-8860, info@campnac.com.",
+  "sessions": [
+    {
+      "name": "Week 1",
+      "start_date": "2027-06-14",
+      "end_date": "2027-06-18",
+      "availability": "open"
+    },
+    {
+      "name": "Week 2",
+      "start_date": "2027-06-21",
+      "end_date": "2027-06-25",
+      "availability": "open"
+    },
+    {
+      "name": "Week 3",
+      "start_date": "2027-06-28",
+      "end_date": "2027-07-02",
+      "availability": "open"
+    },
+    {
+      "name": "Week 4",
+      "start_date": "2027-07-05",
+      "end_date": "2027-07-09",
+      "availability": "open"
+    },
+    {
+      "name": "Week 5",
+      "start_date": "2027-07-12",
+      "end_date": "2027-07-16",
+      "availability": "open"
+    },
+    {
+      "name": "Week 6",
+      "start_date": "2027-07-19",
+      "end_date": "2027-07-23",
+      "availability": "open"
+    },
+    {
+      "name": "Week 7",
+      "start_date": "2027-07-26",
+      "end_date": "2027-07-30",
+      "availability": "open"
+    },
+    {
+      "name": "Week 8",
+      "start_date": "2027-08-02",
+      "end_date": "2027-08-06",
+      "availability": "open"
+    },
+    {
+      "name": "Week 9",
+      "start_date": "2027-08-09",
+      "end_date": "2027-08-13",
+      "availability": "open"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://campnac.com/village-farm-camp/",
+      "checked": "2026-11-25",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "indoor_outdoor"
+      ],
+      "note": "Researched by Claude from this page. Village Farm Camp page: ages 6 to 12, 9 to 3, held at 2020 Woodbourne Rd, Langhorne, separate from the club; animals, archery, nature crafts, water games; two days of swimming a week at the NAC water park. Outdoor setting per the page."
+    },
+    {
+      "url": "https://campnac.com/wp-content/uploads/2026/10/2027-CAMP-BROCHURE.png",
+      "checked": "2026-11-25",
+      "fields": [
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Camps at a Glance chart for Summer 2027, an image the homepage links; read by Claude from the image (the repo fetcher does not read images; downloaded with the same BunkcheckBot user agent). Village Farm Camp runs weeks 3 to 11, June 14 to August 13, 2027, at the different location."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://campnac.com/village-farm-camp/",
+      "kind": "html",
+      "title": "Village Farm Camp | Camp NAC"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Weekly price (rates only through a request form)",
+      "Extended care",
+      "Lunch",
+      "ACA accreditation"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-25",
+      "page_checked": "https://campnac.com/village-farm-camp/",
+      "changes": [
+        "New camp, researched from https://campnac.com/village-farm-camp/",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
+      ],
+      "for_andrew": [
+        "The 2027 week dates were read from a chart image on campnac.com (downloaded once as BunkcheckBot), not from page text. OK to source dates that way?"
+      ]
+    }
+  }
+}

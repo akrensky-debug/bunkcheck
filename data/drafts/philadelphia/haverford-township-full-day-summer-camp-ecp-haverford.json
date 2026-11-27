@@ -1,0 +1,103 @@
+{
+  "slug": "haverford-township-full-day-summer-camp-ecp-haverford",
+  "name": "Haverford Township Full Day Summer Camp (ECP)",
+  "operator_name": "Haverford Township Parks & Recreation",
+  "website_url": "https://haverfordtownship.org/Parks_and_Recreation/Summer_Camp_Info.html",
+  "email": "recinfo@havtwp.com",
+  "phone": "484-380-2730",
+  "street_address": "Community Recreation & Environmental Center (CREC), 9000 Parkview Drive",
+  "city": "Haverford",
+  "state": "PA",
+  "zip": "19041",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "sports",
+    "arts"
+  ],
+  "activities": [
+    "sports",
+    "games",
+    "arts and crafts",
+    "bowling",
+    "swimming trips",
+    "field trips",
+    "creek days"
+  ],
+  "age_min": 6,
+  "age_max": 12,
+  "description_short": "Full day township camp for Haverford Township residents ages 6 to 12, held at Manoa Elementary School with after care at the township's CREC. Days mix sports, games and crafts with bowling every Thursday, field trips every Friday and occasional swim trips; only township residents can register.",
+  "indoor_outdoor": "both",
+  "extended_care": true,
+  "meals_included": false,
+  "season_year": 2026,
+  "notes": "2026: June 22 to August 7, weekly registration, 9:00 to 3:00 at Manoa Elementary School (location subject to change), extended care 8:00 to 9:00 and 3:00 to 6:00, with campers bused to the CREC at 3:00. Residents only; registration opened March 2, 2026. Fees not posted on the camp page. Snack provided, campers bring lunch. 8 to 1 camper to counselor ratio.",
+  "sources": [
+    {
+      "url": "https://haverfordtownship.org/Parks_and_Recreation/Summer_Camp_Info.html",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "phone",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "indoor_outdoor",
+        "extended_care",
+        "meals_included"
+      ],
+      "note": "Researched by Claude from this page. Summer Camp Information page, Full Day Summer Camp (ECP) section: 2026 dates, ages 6 to 12 (or finished kindergarten), residents only, extended care at the CREC, campers bring lunch.",
+      "checked": "2026-11-25"
+    },
+    {
+      "url": "https://haverfordtownship.org/Parks_and_Recreation/CREC_and_Fitness_Information.html",
+      "fields": [
+        "street_address",
+        "city",
+        "state",
+        "zip"
+      ],
+      "note": "Researched by Claude from this page. CREC address, 9000 Parkview Drive, Haverford, PA 19041. The daytime camp is at Manoa Elementary, whose address is not on the township page; the CREC is where after care runs.",
+      "checked": "2026-11-25"
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://haverfordtownship.org/Parks_and_Recreation/Summer_Camp_Info.html",
+      "kind": "html",
+      "title": "Summer Camp Information | The Township of Haverford, PA"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Weekly fee",
+      "2027 dates",
+      "Manoa Elementary street address",
+      "Financial aid"
+    ],
+    "low_confidence": [
+      "street_address: the CREC is the after care site; the camp day is at Manoa Elementary"
+    ],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-25",
+      "page_checked": "https://haverfordtownship.org/Parks_and_Recreation/Summer_Camp_Info.html",
+      "changes": [
+        "New camp, researched from https://haverfordtownship.org/Parks_and_Recreation/Summer_Camp_Info.html"
+      ],
+      "for_andrew": [
+        "Residents only: the page says you must be a Haverford Township resident to register, and no price is posted on the camp page (fees are in the township's Summer HavaGood Times). I recorded no price and said who can enroll in the description. List it as a residents-only camp, or leave it out?",
+        "The address is the CREC (after care and bus pickup), since the page gives no street address for Manoa Elementary where the camp day runs. OK?"
+      ]
+    }
+  }
+}

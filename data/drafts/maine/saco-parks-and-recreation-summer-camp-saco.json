@@ -1,0 +1,169 @@
+{
+  "slug": "saco-parks-and-recreation-summer-camp-saco",
+  "name": "Saco Parks and Recreation Summer Camp",
+  "operator_name": "Saco Parks and Recreation",
+  "website_url": "https://sacome.myrec.com/documents/camp_guide__summer_2026.pdf",
+  "email": "parksandrec@sacomaine.org",
+  "phone": "(207) 283-3139",
+  "street_address": "75 Franklin St.",
+  "city": "Saco",
+  "state": "ME",
+  "zip": "04072",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "activities": [
+    "field trips",
+    "water activities",
+    "splash pad",
+    "theme days"
+  ],
+  "grade_min": 0,
+  "grade_max": 8,
+  "description_short": "A city run day camp in Saco for children in rising grades K to 8, split into four age groups at the Community Center, Fairfield School and CK Burns School. Camp runs Monday to Friday, 7:30am to 5:30pm, with on camp activities, water play and field trips.",
+  "price_per_week": 275,
+  "price_min": 275,
+  "price_max": 1825,
+  "price_per": "week",
+  "meals_included": true,
+  "refund_policy_summary": "Full summer: cancel by June 5, 2026 for a card refund or account credit. Weekly: cancel by 3pm the Thursday before. No credit for unused days or weeks, the enrollment fee is not refundable, and card refunds carry a 5% fee.",
+  "swim_waterfront_notes": "The guide says all camps have water activities often and the Community Center group uses the splash pad. It does not describe swimming in a pool or lake.",
+  "season_year": 2026,
+  "notes": "Prices shown are non-resident rates. Saco residents pay $250 a week or $1,700 for the full summer. Groups: Camp Chickadees (rising K to 1) and Camp Teen Trailblazers (rising 6 to 8) at the Community Center, Camp Pioneers (rising 2 to 3) at Fairfield School, Camp Black Bears (rising 4 to 5) at CK Burns School; from August 3 all groups meet at the Community Center.",
+  "sessions": [
+    {
+      "name": "Week 1",
+      "start_date": "2026-06-22",
+      "end_date": "2026-06-26",
+      "price": 275,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 2",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-03",
+      "price": 275,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 3",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": 275,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 4",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": 275,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 5",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": 275,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 6",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": 275,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 7",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": 275,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 8",
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-14",
+      "price": 275,
+      "availability": "unknown"
+    },
+    {
+      "name": "Full summer (all 8 weeks)",
+      "start_date": "2026-06-22",
+      "end_date": "2026-08-14",
+      "price": 1825,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://sacome.myrec.com/documents/camp_guide__summer_2026.pdf",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "phone",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "description_short",
+        "price_per_week",
+        "price_min",
+        "price_max",
+        "price_per",
+        "meals_included",
+        "refund_policy_summary",
+        "swim_waterfront_notes",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. 2026 camp guide. Prices are non-resident rates; resident rates are in notes. Weekly dates are the 8 Monday to Friday weeks of the stated June 22 to August 14 season; the guide does not list each week. Grades are rising grades."
+    },
+    {
+      "url": "https://sacome.myrec.com/info/contact/default.aspx",
+      "checked": "2026-11-20",
+      "fields": [
+        "street_address",
+        "city",
+        "state",
+        "zip"
+      ],
+      "note": "Researched by Claude from this page. Department contact page: Saco Community Center, 75 Franklin St., Saco, ME 04072"
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://sacome.myrec.com/documents/camp_guide__summer_2026.pdf",
+      "kind": "pdf",
+      "title": "Saco Parks and Recreation camp guide, summer 2026"
+    },
+    "warnings": [],
+    "unknowns": [
+      "2027 dates and prices",
+      "Whether July 3, 2026 was a camp day",
+      "Financial aid",
+      "Registration link (the guide only names sacorec.com)",
+      "ACA accreditation"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://sacome.myrec.com/documents/camp_guide__summer_2026.pdf",
+      "changes": [
+        "New camp, researched from https://sacome.myrec.com/documents/camp_guide__summer_2026.pdf",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates.",
+        "Weekly price is the non-resident rate, per Andrew's rule of 22 November; resident rates are in notes."
+      ],
+      "for_andrew": [
+        "Meals: the guide says the school department's free summer breakfast and lunch program is open to campers. Recorded as meals_included true; is that right for an optional free program?"
+      ]
+    }
+  }
+}

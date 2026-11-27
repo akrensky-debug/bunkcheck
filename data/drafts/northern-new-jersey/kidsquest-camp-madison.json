@@ -1,0 +1,133 @@
+{
+  "slug": "kidsquest-camp-madison",
+  "name": "KidsQuest Camp",
+  "operator_name": "Madison Area YMCA",
+  "website_url": "https://madisonareaymca.org/camp/kidsquest-camps",
+  "registration_url": "https://anc.apm.activecommunities.com/madisonareaymca/activity/search?onlineSiteId=0&activity_select_param=2&activity_category_ids=23&activity_keyword=kidsquest&viewMode=list",
+  "email": "QuestCamps@madisonymca.org",
+  "phone": "973-822-9622",
+  "city": "Madison",
+  "state": "NJ",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "swimming",
+    "STEM",
+    "arts"
+  ],
+  "activities": [
+    "swim lessons",
+    "recreational swim",
+    "STEAM projects",
+    "team building",
+    "arts and crafts",
+    "camp games",
+    "field trips",
+    "theme days"
+  ],
+  "grade_min": 0,
+  "grade_max": 5,
+  "age_min": 5,
+  "age_max": 11,
+  "description_short": "Madison Area YMCA's traditional outdoor day camp at Drew University for children entering kindergarten to grade 5, 8 to 5, with daily swim lessons, STEAM projects, games, Friday theme days and weekly trips.",
+  "indoor_outdoor": "both",
+  "extended_care": true,
+  "financial_aid": true,
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Session 1",
+      "start_date": "2026-06-22",
+      "end_date": "2026-07-02",
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 2",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-17",
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 3",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-31",
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 4",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-14",
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://madisonareaymca.org/camp/kidsquest-camps",
+      "checked": "2026-11-25",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "age_min",
+        "age_max",
+        "description_short",
+        "indoor_outdoor",
+        "extended_care"
+      ],
+      "note": "Researched by Claude from this page. KidsQuest 2026: Sessions 1 to 4 (drop in weeks 1 to 8) at Drew University, 8 to 5, entering kindergarten to grade 5; before care 7 to 8 and after care 5 to 6. No camp Friday July 3. Ages derived from grades, not stated. Phone is the Family Center number in the footer; the camp director is at extension 2265."
+    },
+    {
+      "url": "https://madisonareaymca.org/camp/camp-payment-information",
+      "checked": "2026-11-25",
+      "fields": [
+        "financial_aid",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. 2026 payment schedule: Session 1 June 22 to July 2, Session 2 July 6 to 17, Session 3 July 20 to 31, Session 4 August 3 to 14, Session 5 August 17 to 27; drop in weeks also offered. $100 nonrefundable enrollment fee at registration. Financial assistance may be available through the Y. Weekly or session prices are not posted on the site or the public ActiveNet search."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://madisonareaymca.org/camp/kidsquest-camps",
+      "kind": "html",
+      "title": "KidsQuest Camps | Madison Area YMCA"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Street address and ZIP at Drew University",
+      "Weekly or session price (member and non-member)",
+      "2027 dates and prices",
+      "ACA accreditation",
+      "Whether lunch is provided"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-25",
+      "page_checked": "https://madisonareaymca.org/camp/kidsquest-camps",
+      "changes": [
+        "New camp, researched from https://madisonareaymca.org/camp/kidsquest-camps"
+      ],
+      "for_andrew": [
+        "The camp's pages say KidsQuest meets at Drew University but give no street address, so there is no ZIP and the draft fails the required zip check. Andrew to decide whether to take Drew's address from Drew's own site.",
+        "The Madison Area YMCA runs Quest Camps at three places with different ages, so I drafted three listings: KidsQuest (Drew, K to 5), MiniQuest (Kirby Children's Center, ages 3 to 4) and SpecialtyQuest (Family Center, K to 5). Leader in Training (grades 6 to 9, Drew) and TravelQuest (grades 3 to 8, weeks 9 and 10 only) were not drafted separately.",
+        "No prices are posted on the site or in the public ActiveNet search."
+      ]
+    }
+  }
+}

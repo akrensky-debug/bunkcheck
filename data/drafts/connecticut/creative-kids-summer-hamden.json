@@ -1,0 +1,120 @@
+{
+  "slug": "creative-kids-summer-hamden",
+  "name": "Creative Kids Summer",
+  "operator_name": "Hamden Recreation Department",
+  "website_url": "https://www.hamden.com/DocumentCenter/View/12469/CK-Summer-2026",
+  "street_address": "Spring Glen School, 1908 Whitney Avenue",
+  "city": "Hamden",
+  "state": "CT",
+  "camp_type": "specialty",
+  "primary_categories": [
+    "arts"
+  ],
+  "secondary_categories": [
+    "academic"
+  ],
+  "activities": [
+    "art",
+    "reading",
+    "outdoor play"
+  ],
+  "grade_min": 0,
+  "grade_max": 6,
+  "description_short": "A half-day art camp from 9:00 am to noon at Spring Glen School in Hamden for children in kindergarten through grade 6, sponsored by Hamden Recreation and taught by a retired Hamden teacher and the school's art teacher. Each week children make art on a theme, read fiction and nonfiction books about it, and play outside.",
+  "price_per_week": 275,
+  "price_min": 275,
+  "price_max": 275,
+  "price_per": "week",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Week 1: Art Based on Children's Books",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": 275,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 2: The Solar System",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": 275,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 3: Animals",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": 275,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.hamden.com/DocumentCenter/View/12469/CK-Summer-2026",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "description_short",
+        "price_per_week",
+        "price_min",
+        "price_max",
+        "price_per",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. 2026 Creative Kids flyer posted on the Town of Hamden site. Grades K to 6, including children entering K and children finishing grade 6. $275 per week includes tuition and materials; a $25 deposit per week holds a space."
+    },
+    {
+      "url": "https://springglen.hamden.org",
+      "checked": "2026-11-20",
+      "fields": [
+        "street_address",
+        "zip"
+      ],
+      "note": "Researched by Claude from this page. Spring Glen Elementary School home page (Hamden Public Schools), which gives the school's address. The flyer names Spring Glen School as the camp's place."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.hamden.com/DocumentCenter/View/12469/CK-Summer-2026",
+      "kind": "pdf",
+      "title": null
+    },
+    "warnings": [],
+    "unknowns": [
+      "2027 dates and price (only the 2026 flyer is posted)",
+      "Non-resident rate",
+      "Extended care, lunch, transportation, financial aid",
+      "Refund policy"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://www.hamden.com/DocumentCenter/View/12469/CK-Summer-2026",
+      "changes": [
+        "Found the current page at https://www.hamden.com/DocumentCenter/View/12469/CK-Summer-2026 after https://hamden.com/DocumentCenter/View/12469/CK-Summer-2026?bidId= failed (the listing tool said it named no camp; today the bare hamden.com host could not be reached). The www copy is the 2026 Creative Kids flyer and names the camp, dates, grades, place and price.",
+        "Used the 2026 season because no 2027 flyer is posted.",
+        "Kept this separate from the existing Hamden's Summer Day Camps draft: Creative Kids has its own dates, grades, place (Spring Glen School) and price, and that draft does not include it.",
+        "The flyer names Spring Glen School but no address, so the street address and zip come from the school's own page at https://springglen.hamden.org."
+      ],
+      "for_andrew": [
+        "The flyer is sponsored by Hamden Recreation, but it tells families to pay the deposit by check or Venmo made out to the teacher personally, at a home address in New Haven. Is it fine to list Hamden Recreation as the operator, or should the listing name the teachers? I left out the payment details.",
+        "Only 2026 information is posted. Keep the 2026 season, or wait for a 2027 flyer?"
+      ]
+    }
+  },
+  "zip": "06517"
+}

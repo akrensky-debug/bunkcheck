@@ -32,8 +32,13 @@ export default function CampCard({ camp }: Props) {
       <div className="flex items-baseline justify-between gap-4">
         <h3 className="font-display text-h3 text-ink min-w-0">{camp.name}</h3>
         {camp.price_per_week ? (
-          <Price amount={camp.price_per_week} unit="/wk" prefix={camp.last_season && camp.season_year ? String(camp.season_year) : undefined}
-            className="shrink-0" />
+          // Last summer's price says so in words under it, instead of a bare year in front.
+          <span className="flex shrink-0 flex-col items-end">
+            <Price amount={camp.price_per_week} unit="/wk" />
+            {camp.last_season && camp.season_year && (
+              <span className="text-caption text-muted">{camp.season_year} price</span>
+            )}
+          </span>
         ) : camp.price_label ? (
           <span className="shrink-0 whitespace-nowrap text-small text-muted">{camp.price_label}</span>
         ) : null}
@@ -54,12 +59,16 @@ export default function CampCard({ camp }: Props) {
       {camp.description_short && (
         <p className="mt-2 max-w-measure text-small text-muted line-clamp-2">{camp.description_short}</p>
       )}
-      <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-1">
-        {reasons.length > 0 && (
-          <span className="text-small font-semibold text-ink">{reasons.slice(0, 2).join(' · ')}</span>
-        )}
-        <TrustMark status={camp.verification_status} />
-      </div>
+      {/* "Not yet verified" is the default for almost every camp, so the search page says it
+          once above the list; a card shows its mark only when it has news (claimed, verified). */}
+      {(reasons.length > 0 || camp.verification_status !== 'unverified') && (
+        <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-1">
+          {reasons.length > 0 && (
+            <span className="text-small font-semibold text-ink">{reasons.slice(0, 2).join(' · ')}</span>
+          )}
+          {camp.verification_status !== 'unverified' && <TrustMark status={camp.verification_status} />}
+        </div>
+      )}
     </ListRow>
   )
 }

@@ -1,0 +1,132 @@
+{
+  "slug": "summer-art-immersion-new-london",
+  "name": "Summer Art Immersion",
+  "operator_name": "Lyman Allyn Art Museum",
+  "website_url": "https://www.lymanallyn.org/summer-art-immersion/",
+  "registration_url": "https://forms.gle/XPqf8reM7SPGUN9NA",
+  "phone": "860-443-2545",
+  "street_address": "625 Williams Street",
+  "city": "New London",
+  "state": "CT",
+  "zip": "06320",
+  "camp_type": "specialty",
+  "primary_categories": [
+    "arts"
+  ],
+  "activities": [
+    "art projects",
+    "museum tours",
+    "portraits",
+    "sculpture",
+    "outdoor art",
+    "interactive mystery"
+  ],
+  "age_min": 5,
+  "age_max": 11,
+  "description_short": "Half day summer art weeks at the Lyman Allyn Art Museum in New London for ages 5 to 11, with sessions alternating between ages 5 to 7 and 8 to 11. Children make themed art projects, tour the museum's exhibitions and work outside on the grounds.",
+  "indoor_outdoor": "both",
+  "price_per_week": 225,
+  "price_min": 200,
+  "price_max": 225,
+  "price_per": "week",
+  "financial_aid": true,
+  "refund_policy_summary": "Full refund if requested by email at least two weeks before the first day of the session.",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Art Imagined and Reimagined (ages 5 to 7)",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": 225,
+      "availability": "unknown"
+    },
+    {
+      "name": "Portraits and Personalities (ages 8 to 11)",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": 225,
+      "availability": "unknown"
+    },
+    {
+      "name": "Splish, Splash, and Splat (ages 5 to 7)",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": 225,
+      "availability": "unknown"
+    },
+    {
+      "name": "Shape Up! (ages 8 to 11)",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": 225,
+      "availability": "unknown"
+    },
+    {
+      "name": "The Mystery of the Spanish Sisters (ages 8 to 11)",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": 225,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.lymanallyn.org/summer-art-immersion/",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "indoor_outdoor",
+        "price_per_week",
+        "price_min",
+        "price_max",
+        "price_per",
+        "financial_aid",
+        "refund_policy_summary",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. 2026 dates July 6 to August 7, Monday to Friday 9 am to 12:30 pm. $225 non-members, $200 members, per session. Five year olds must have finished kindergarten. Scholarships for New London residents and families with financial need. Museum provides snacks. No 2027 sessions posted yet."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.lymanallyn.org/summer-art-immersion/",
+      "kind": "html",
+      "title": "Summer Art Immersion - Lyman Allyn Art Museum"
+    },
+    "warnings": [],
+    "unknowns": [
+      "2027 sessions and prices",
+      "Email (shown on the page in protected form)",
+      "ACA accreditation"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://www.lymanallyn.org/summer-art-immersion/",
+      "changes": [
+        "New camp, researched from https://www.lymanallyn.org/summer-art-immersion/"
+      ],
+      "for_andrew": [
+        "New London, CT is not in cities.py (it is its own city, so there is no parent town to use), so the draft fails the city check. Needs a cities.py entry for New London, CT, or drop the listing.",
+        "Half day program (9 to 12:30); camp_type set to specialty for an art program."
+      ]
+    }
+  }
+}

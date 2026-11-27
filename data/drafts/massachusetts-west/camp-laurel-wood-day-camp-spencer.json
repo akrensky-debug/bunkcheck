@@ -1,0 +1,160 @@
+{
+  "slug": "camp-laurel-wood-day-camp-spencer",
+  "name": "Camp Laurel Wood Day Camp",
+  "operator_name": "Girl Scouts of Central & Western Massachusetts",
+  "website_url": "https://www.gscwm.org/en/members/for-girl-scouts/camp-and-outdoors/summer-camp/day-camp/clw.html",
+  "registration_url": "http://app.campdoc.com/register/gscentralwesternmass",
+  "email": "CLWDirector@gscwm.org",
+  "phone": "413-727-5740",
+  "city": "Spencer",
+  "state": "MA",
+  "camp_type": "day",
+  "primary_categories": [
+    "outdoor"
+  ],
+  "secondary_categories": [
+    "swimming",
+    "nature",
+    "adventure"
+  ],
+  "activities": [
+    "waterfront swimming",
+    "canoeing",
+    "paddle boating",
+    "archery",
+    "low elements challenge course",
+    "hiking",
+    "outdoor cooking",
+    "crafts",
+    "songs",
+    "outdoor skills"
+  ],
+  "gender_policy": "girls",
+  "grade_min": 1,
+  "description_short": "Girl Scout day camp in Spencer open to all girls, with or without Girl Scout experience. Campers swim at the waterfront, canoe, paddle boat, try archery and a low challenge course, and learn outdoor skills around a weekly theme.",
+  "transportation": true,
+  "financial_aid": true,
+  "season_year": 2026,
+  "refund_policy_summary": "Cancel in writing four weeks or more before the session for a refund minus the $75 deposit; no refunds within four weeks or for missed days, with partial or full refunds possible for documented medical emergencies.",
+  "sessions": [
+    {
+      "name": "Session 1",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-03",
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 2",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 3",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 4",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 5",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 6",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.gscwm.org/en/members/for-girl-scouts/camp-and-outdoors/summer-camp/day-camp/clw.html",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "gender_policy",
+        "description_short",
+        "transportation",
+        "refund_policy_summary",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Camp Laurel Wood day camp, Spencer: open to all girls, Monday to Friday 9:00 am to 4:30 pm, bring lunch; bus for $100 a week from fixed stops; 2026 sessions 1 to 6 from the bus table; non members pay an extra $55 membership fee. The page says Camp Laurel Wood has not gone through ACA accreditation."
+    },
+    {
+      "url": "https://www.gscwm.org/en/members/for-girl-scouts/camp-and-outdoors/summer-camp.html",
+      "checked": "2026-11-20",
+      "fields": [
+        "city",
+        "state",
+        "grade_min",
+        "financial_aid"
+      ],
+      "note": "Researched by Claude from this page. Summer camp page: day camp is for campers who have finished kindergarten and up; Camp Laurel Wood, Spencer MA; camp financial assistance offered every year."
+    },
+    {
+      "url": "https://www.gscwm.org/content/dam/gscwm-redesign/documents/Camp/2026/2026%20Day%20Camp%20Family%20Handbook%20web.pdf",
+      "checked": "2026-11-20",
+      "fields": [
+        "email",
+        "phone"
+      ],
+      "note": "Researched by Claude from this page. 2026 Day Camp Family Handbook: Camp Laurel Wood camp cell 413-727-5740, CLWDirector@gscwm.org, available June 29 to August 7. The handbook gives the physical address as 63 Buteau Rd in its contact list but 34 Buteau Rd in its directions, so street_address is left out."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.gscwm.org/en/members/for-girl-scouts/camp-and-outdoors/summer-camp/day-camp/clw.html",
+      "kind": "html",
+      "title": "Summer Camp Laurel Wood"
+    },
+    "warnings": [
+      "Spencer, MA is not in cities.py and no ZIP code is published, so this draft fails validation.",
+      "Prices are only in the 2026 Camp Guide PDF, which is over the fetcher's 8 MB limit, so no price is recorded.",
+      "The handbook gives two different street numbers on Buteau Rd (63 and 34)."
+    ],
+    "unknowns": [
+      "street_address",
+      "zip",
+      "age_min",
+      "age_max",
+      "grade_max",
+      "price_per_week",
+      "price_min",
+      "price_max",
+      "price_per",
+      "extended_care",
+      "meals_included",
+      "aca_accredited"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://www.gscwm.org/en/members/for-girl-scouts/camp-and-outdoors/summer-camp/day-camp/clw.html",
+      "changes": [
+        "New camp, researched from https://www.gscwm.org/en/members/for-girl-scouts/camp-and-outdoors/summer-camp/day-camp/clw.html"
+      ],
+      "for_andrew": [
+        "Spencer, MA is missing from cities.py; no table town fits.",
+        "Which Buteau Rd number is right, 63 or 34? And the ZIP is not published."
+      ]
+    }
+  }
+}

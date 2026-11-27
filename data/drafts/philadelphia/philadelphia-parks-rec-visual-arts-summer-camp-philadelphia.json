@@ -1,0 +1,106 @@
+{
+  "slug": "philadelphia-parks-rec-visual-arts-summer-camp-philadelphia",
+  "name": "Philadelphia Parks & Rec Visual Arts Summer Camp",
+  "operator_name": "Philadelphia Parks & Recreation",
+  "website_url": "https://www.phila.gov/2026-05-22-get-creative-this-summer-at-a-philadelphia-parks-rec-art-camp/",
+  "email": "PPRVisualArts@phila.gov",
+  "street_address": "Fisher Park, 571 W Spencer St",
+  "city": "Philadelphia",
+  "state": "PA",
+  "zip": "19120",
+  "camp_type": "specialty",
+  "primary_categories": [
+    "arts"
+  ],
+  "activities": [
+    "painting",
+    "drawing",
+    "sculpture",
+    "photography",
+    "field trips"
+  ],
+  "age_min": 6,
+  "age_max": 12,
+  "description_short": "Six week visual arts day camp for Philadelphia children ages 6 to 12, taught by working artists at three city park and rec sites. Each week campers spend two days painting or drawing and two days on sculpture, try photography, and go on field trips; breakfast and lunch are served. Open to Philadelphia residents only.",
+  "price_min": 350,
+  "price_max": 350,
+  "price_per": "summer",
+  "meals_included": true,
+  "financial_aid": true,
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Summer art camp, Monday to Friday 9:00 to 3:00",
+      "start_date": "2026-07-06",
+      "end_date": "2026-08-14",
+      "price": 350,
+      "availability": "unknown"
+    }
+  ],
+  "notes": "2026: July 6 to August 14, 9:00 to 3:00, $350, limited fee waivers and scholarships. Philadelphia residents only. Three sites with the same dates and ages: Fisher Park, 571 W Spencer St (19120); Rivera Recreation Center, 3201 N 5th St (19140); McCreesh Playground, 6744 Regent St (19142). The address shown is Fisher Park. Register by email to Christine.Rad@Phila.gov or PPRVisualArts@phila.gov. 2027 not yet posted.",
+  "sources": [
+    {
+      "url": "https://www.phila.gov/2026-05-22-get-creative-this-summer-at-a-philadelphia-parks-rec-art-camp/",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "price_min",
+        "price_max",
+        "price_per",
+        "meals_included",
+        "financial_aid",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Parks & Rec's own post for the 2026 Visual Arts Summer Camp: kids living in Philadelphia ages 6 to 12, July 6 to August 14, 2026, 9 to 3, three sites, breakfast and lunch served, field trips, $350, limited fee waivers. The page does not say whether $350 is for the whole summer; read as one fee for the program.",
+      "checked": "2026-11-25"
+    },
+    {
+      "url": "https://www.phila.gov/media/20260603112907/PPR-Art-Camp-Flyer-2026.pdf",
+      "fields": [
+        "street_address",
+        "city",
+        "state",
+        "zip"
+      ],
+      "note": "Researched by Claude from this page. 2026 Art Camp flyer: Fisher Park, 571 W Spencer St, Philadelphia, PA 19120 (first of three sites); scholarships available.",
+      "checked": "2026-11-25"
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.phila.gov/2026-05-22-get-creative-this-summer-at-a-philadelphia-parks-rec-art-camp/",
+      "kind": "html",
+      "title": "Get Creative this Summer at a Philadelphia Parks & Rec Art Camp! | Philadelphia Parks & Recreation | City of Philadelphia"
+    },
+    "warnings": [],
+    "unknowns": [
+      "2027 dates and fee",
+      "Phone"
+    ],
+    "low_confidence": [
+      "price_per: $350 has no unit on the page; read as the fee for the six weeks"
+    ],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-25",
+      "page_checked": "https://www.phila.gov/2026-05-22-get-creative-this-summer-at-a-philadelphia-parks-rec-art-camp/",
+      "changes": [
+        "New camp, researched from https://www.phila.gov/2026-05-22-get-creative-this-summer-at-a-philadelphia-parks-rec-art-camp/"
+      ],
+      "for_andrew": [
+        "Residents only: the camp is for kids living in Philadelphia, with one fee of $350 (no unit given; I read it as the whole six weeks). I recorded it and said who can enroll. List it?",
+        "Three sites share the same dates and ages, so I made one listing at Fisher Park and named the other two in notes. OK?"
+      ]
+    }
+  }
+}

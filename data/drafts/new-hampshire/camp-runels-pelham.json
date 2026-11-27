@@ -1,0 +1,119 @@
+{
+  "slug": "camp-runels-pelham",
+  "name": "Camp Runels",
+  "operator_name": "Girl Scouts of Eastern Massachusetts",
+  "website_url": "https://www.gsema.org/en/activities-and-camp/summer-camp/overnight.html",
+  "street_address": "82 Girl Scout Rd",
+  "city": "Pelham",
+  "state": "NH",
+  "zip": "03076",
+  "camp_type": "sleepaway",
+  "primary_categories": [
+    "outdoor",
+    "adventure"
+  ],
+  "secondary_categories": [
+    "arts",
+    "leadership"
+  ],
+  "activities": [
+    "swimming",
+    "boating",
+    "hiking",
+    "archery",
+    "hatchet throwing",
+    "axe handling",
+    "low ropes course",
+    "high ropes course",
+    "painting",
+    "pottery",
+    "music",
+    "theatre",
+    "cookouts",
+    "field trips"
+  ],
+  "description_short": "Girl Scout overnight camp on 300 wooded acres beside Little Island Pond in Pelham. Campers pick a session focus and also swim, boat, hike, shoot archery, climb ropes courses, do arts and cook out with their unit, sleeping in platform tents, yurts or cabins.",
+  "indoor_outdoor": "outdoor",
+  "meals_included": true,
+  "transportation": false,
+  "financial_aid": true,
+  "aca_accredited": true,
+  "aca_source_url": "https://www.gsema.org/en/activities-and-camp/summer-camp/overnight.html",
+  "refund_policy_summary": "Deposits are not refundable. For 2026, cancelling in writing before May 15 got a full refund less the deposit, and before June 5 a 50% refund less the deposit. No refunds after June 5 except case by case for medical or other emergencies.",
+  "special_needs_notes": "The council says it can handle most special needs and diets. Families email customer care to set up a meeting with the camp team.",
+  "season_year": 2026,
+  "sources": [
+    {
+      "url": "https://www.gsema.org/en/activities-and-camp/summer-camp/overnight.html",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "description_short",
+        "indoor_outdoor",
+        "aca_accredited",
+        "aca_source_url"
+      ],
+      "note": "Researched by Claude from this page; street address and zip come from the page's 'Directions to Camp Runels' map link, which names 82 Girl Scout Rd, Pelham, NH 03076"
+    },
+    {
+      "url": "https://www.gsema.org/en/activities-and-camp/summer-camp/camp-faqs.html",
+      "checked": "2026-11-20",
+      "fields": [
+        "meals_included",
+        "transportation",
+        "financial_aid",
+        "refund_policy_summary",
+        "special_needs_notes"
+      ],
+      "note": "Researched by Claude from this page; 2026 camp FAQ: meals provided at overnight camp, 'We are not currently offering overnight camp busing', financial assistance for campers in GSEMA communities, 2026 refund deadlines"
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.gsema.org/en/activities-and-camp/summer-camp/overnight.html",
+      "kind": "html",
+      "title": "Girl Scout Summer Overnight Camp | Girl Scouts of Eastern Massachusetts (GSEMA)"
+    },
+    "warnings": [
+      "Sessions, prices, grades and ages are only in the council's 2026 Camp Guide, which is published on issuu.com (a flipbook that needs a browser). It was not read, so none of those fields are filled.",
+      "The council's camp page says registration for summer 2027 opens in January.",
+      "Gender policy left blank: the page talks about Girl Scouts but does not state who may enroll, and the FAQ says Girl Scout membership is not required.",
+      "Financial aid is limited to campers living in a Girl Scouts of Eastern Massachusetts community."
+    ],
+    "unknowns": [
+      "sessions and dates",
+      "prices",
+      "ages and grades",
+      "gender policy",
+      "phone and email for this camp",
+      "registration_url (CampInTouch link not on the page)",
+      "swim and waterfront details"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://www.gsema.org/en/activities-and-camp/summer-camp/overnight.html",
+      "changes": [
+        "Found the current page at https://www.gsema.org/en/activities-and-camp/summer-camp/overnight.html (the same URL; the listing tool said it named no camp, but the page has a Camp Runels section for Pelham, NH)",
+        "Drafted from the Camp Runels section (setting, activities, sleeping quarters, ACA statement, address from the directions link) and the 2026 Camp FAQs (meals, no overnight busing, aid, refunds, special needs). Season set to 2026 with no sessions."
+      ],
+      "for_andrew": [
+        "The 2026 sessions, prices and grades are only in the GSEMA Camp Guide hosted on issuu.com (https://issuu.com/gsema/docs/gsema_camp_guide_2026), which needs a browser. Publish this listing without sessions, ask GSEMA for a PDF of the guide, or wait for the 2027 guide in January?",
+        "The street address and zip are taken from the Google Maps directions link on the camp's page, not from page text. OK to keep?"
+      ]
+    }
+  }
+}

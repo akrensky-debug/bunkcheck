@@ -1,0 +1,180 @@
+{
+  "slug": "camp-mah-kee-nac-lenox",
+  "name": "Camp Mah-Kee-Nac",
+  "website_url": "https://www.campmkn.com/",
+  "registration_url": "https://mkn.campintouch.com/ui/forms/application/camper/App",
+  "email": "office@campmkn.com",
+  "phone": "413-274-4092",
+  "street_address": "6 Hawthorne Rd",
+  "city": "Lenox",
+  "state": "MA",
+  "zip": "01240",
+  "camp_type": "sleepaway",
+  "primary_categories": [
+    "general",
+    "sports"
+  ],
+  "secondary_categories": [
+    "outdoor",
+    "adventure",
+    "STEM",
+    "arts"
+  ],
+  "activities": [
+    "aerial ropes course",
+    "archery",
+    "basketball",
+    "baseball",
+    "canoeing",
+    "kayaking",
+    "sailing",
+    "stand up paddle boarding",
+    "rock climbing",
+    "mountain biking",
+    "fishing",
+    "soccer",
+    "lacrosse",
+    "flag football",
+    "roller hockey",
+    "golf",
+    "fencing",
+    "martial arts",
+    "model rocketry",
+    "legos and STEM",
+    "digital photography",
+    "broadcasting and podcasting",
+    "music",
+    "arts",
+    "campouts",
+    "swim instruction"
+  ],
+  "gender_policy": "boys",
+  "grade_min": 2,
+  "grade_max": 11,
+  "description_short": "A traditional overnight camp for boys in Lenox in the Berkshires, for boys entering grades 2 to 11. Campers choose electives from sports, waterfront, outdoor adventure, STEM, media and arts, and live in bunks grouped by grade. Families choose a 7 week full season, a 4 or 3 week session, or a 2 week Mini Mak session for younger boys.",
+  "price_min": 6300,
+  "price_max": 16700,
+  "price_per": "session",
+  "transportation": true,
+  "meals_included": true,
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Full Season",
+      "start_date": "2027-06-26",
+      "end_date": "2027-08-11",
+      "price": 16700,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 1 (4 weeks)",
+      "start_date": "2027-06-26",
+      "end_date": "2027-07-22",
+      "price": 11125,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 2 (3 weeks)",
+      "start_date": "2027-07-22",
+      "end_date": "2027-08-11",
+      "price": 9515,
+      "availability": "unknown"
+    },
+    {
+      "name": "Mini Mak Session 1 (2 weeks, rising grades 2 to 5)",
+      "start_date": "2027-06-26",
+      "end_date": "2027-07-09",
+      "price": 6300,
+      "availability": "unknown"
+    },
+    {
+      "name": "Mini Mak Session 2 (2 weeks, rising grades 2 to 5)",
+      "start_date": "2027-07-22",
+      "end_date": "2027-08-05",
+      "price": 6300,
+      "availability": "unknown"
+    }
+  ],
+  "notes": "2027 rates include tuition, laundry and towel service. A required trip and special event fee is extra and varies by age. Sibling discounts are offered.",
+  "sources": [
+    {
+      "url": "https://www.campmkn.com/",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "gender_policy",
+        "description_short",
+        "price_min",
+        "price_max",
+        "price_per",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page; 2027 dates and rates are on the home page; the street address is the summer address in the footer"
+    },
+    {
+      "url": "https://www.campmkn.com/future-families/faqs/",
+      "checked": "2026-11-20",
+      "fields": [
+        "grade_min",
+        "grade_max",
+        "transportation",
+        "meals_included"
+      ],
+      "note": "Researched by Claude from this page; grades from the bunk groups (boys entering grades 2 to 11); bus from NJ, NY, Philadelphia and Boston; three meals a day"
+    },
+    {
+      "url": "https://www.campmkn.com/ourphilosophy/programs-activities/",
+      "checked": "2026-11-20",
+      "fields": [
+        "primary_categories",
+        "secondary_categories",
+        "activities"
+      ],
+      "note": "Researched by Claude from this page"
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.campmkn.com/",
+      "kind": "html",
+      "title": "Boys Sleepaway Camp in Massachusetts | Camp Mah-Kee-Nac – Berkshires"
+    },
+    "warnings": [
+      "The 2027 Dates & Rates page (https://www.campmkn.com/future-families/session-dates-rates/) did not return the session list to the fetcher, so sessions are sourced to the home page, which shows the same Dates and Rates 2027 block."
+    ],
+    "unknowns": [
+      "Ages in years",
+      "Trip and special event fee amount",
+      "Financial aid",
+      "ACA accreditation",
+      "Refund policy",
+      "Seat availability"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://www.campmkn.com/",
+      "changes": [
+        "Found the current page at https://www.campmkn.com/ after https://campmkn.com/ failed (the tool saw no camp on the page). The www home page names the camp and lists 2027 dates and rates.",
+        "Recorded the 2027 season: full season June 26 to August 11 ($16,700), Session 1 June 26 to July 22 ($11,125), Session 2 July 22 to August 11 ($9,515), and two Mini Mak sessions ($6,300).",
+        "Grades 2 to 11 come from the FAQ's bunk groups (Team Junior Camp entering grades 2 to 5 up to Upper Senior entering grades 9 to 11). No ages in years are stated, so ages are left out.",
+        "Bus transportation and meals are sourced to the FAQ. ACA accreditation is not stated on the pages read, so it is left out."
+      ],
+      "for_andrew": [
+        "data/camps/massachusetts-west.json already has camp-mah-kee-nac-mini-mak-two-week-sleepaway-camp-lenox, which covers only the two week Mini Mak session. This draft is the whole camp and includes the Mini Mak sessions. Keep both, or replace the Mini Mak listing with this one?"
+      ]
+    }
+  }
+}

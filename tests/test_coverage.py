@@ -148,7 +148,11 @@ def test_options_use_real_camps_and_fall_back_to_last_season() -> None:
     flags = [o.last_season for o in opts]
     assert flags == sorted(flags)
     assert all(o.start_date.year == (2026 if o.last_season else 2027) for o in opts)
-    assert any(o.last_season for o in opts)
+    # The top three can all be 2027 once enough camps post; the fallback shows further down.
+    wide = week_options(rows, date(2027, 7, 19), (time(8, 0), time(17, 30)), limit=50)
+    covered = [o.last_season for o in wide if o.extended_care]
+    assert covered == sorted(covered)
+    assert any(o.last_season for o in wide)
 
     # Camps that already posted 2027 dates are offered as this season's sessions.
     posted = week_options(rows, date(2027, 6, 28), None, limit=50)

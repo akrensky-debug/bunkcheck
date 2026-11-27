@@ -1,0 +1,138 @@
+{
+  "slug": "choate-summer-programs-wallingford",
+  "name": "Choate Summer Programs",
+  "operator_name": "Choate Rosemary Hall",
+  "website_url": "https://www.choate.edu/summer",
+  "registration_url": "https://summer.choate.edu/register/summerprograms",
+  "email": "choatesummer@choate.edu",
+  "phone": "203-697-2365",
+  "street_address": "333 Christian Street",
+  "city": "Wallingford",
+  "state": "CT",
+  "zip": "06492",
+  "camp_type": "specialty",
+  "primary_categories": [
+    "academic"
+  ],
+  "secondary_categories": [
+    "arts",
+    "performing_arts"
+  ],
+  "activities": [
+    "academic courses",
+    "creative writing",
+    "model UN",
+    "digital photography",
+    "robotics",
+    "theater",
+    "visual arts",
+    "afternoon activities",
+    "weekend trips"
+  ],
+  "description_short": "Academic summer programs at Choate Rosemary Hall in Wallingford, for boarding or day students, in 2, 4 and 5 week sessions. Middle and high school students take enrichment courses and signature programs such as the Theater Arts Institute and the JFK Institute in Government, with afternoon activities and weekend trips; a day Young Artist Program serves younger children.",
+  "indoor_outdoor": "both",
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "5-week programs",
+      "start_date": "2027-06-26",
+      "end_date": "2027-07-30",
+      "availability": "unknown"
+    },
+    {
+      "name": "4-week programs",
+      "start_date": "2027-06-26",
+      "end_date": "2027-07-23",
+      "availability": "unknown"
+    },
+    {
+      "name": "2-week programs, Session I",
+      "start_date": "2027-06-26",
+      "end_date": "2027-07-09",
+      "availability": "unknown"
+    },
+    {
+      "name": "2-week programs, Session II",
+      "start_date": "2027-07-11",
+      "end_date": "2027-07-23",
+      "availability": "unknown"
+    }
+  ],
+  "grade_min": 1,
+  "grade_max": 12,
+  "meals_included": true,
+  "price_min": 1200,
+  "price_max": 12820,
+  "price_per": "session",
+  "sources": [
+    {
+      "url": "https://www.choate.edu/summer",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "description_short",
+        "indoor_outdoor",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Summer programs page: 2027 dates June 26 to July 30 with 2, 4 and 5 week programs; programs for students who have completed grades 6 to 12, plus the Young Artist Program for elementary and middle school students. Address and zip in the page footer; phone and email are the Summer Programs Office."
+    },
+    {
+      "url": "https://www.choate.edu/summer/program-fees",
+      "checked": "2026-11-20",
+      "fields": [
+        "grade_min",
+        "grade_max",
+        "meals_included",
+        "price_min",
+        "price_max",
+        "price_per"
+      ],
+      "note": "Researched by Claude from this page. 2027 Program Fees. Middle school and high school programs are for students entering grades 7 to 12; Young Artist Program for students entering grades 1 to 6 (day only, $1,200 for 2 weeks). Prices run from $1,200 (Young Artist, day) to $12,820 (5 week English Language Institute or JFK Institute, boarding). Boarding includes room and board; day tuition includes class day meals. Minimum boarding age is 11."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.choate.edu/summer",
+      "kind": "html",
+      "title": "Choate Summer Programs"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Young Artist Program dates",
+      "Summer Music dates",
+      "Financial aid",
+      "ACA accreditation",
+      "Refund policy"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://www.choate.edu/summer",
+      "changes": [
+        "New camp, researched from https://www.choate.edu/summer",
+        "Used the 2027 season: dates and fees are posted. Session prices are left blank because each session length has several programs at different prices.",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
+      ],
+      "for_andrew": [
+        "This is an academic summer school with boarding and day options rather than a traditional camp. I set camp_type to specialty. List it, and if so as specialty or sleepaway?",
+        "It is one listing for all Choate summer programs on the one campus; ages and prices vary widely by program (grades 1 to 12, $1,200 to $12,820)."
+      ]
+    }
+  }
+}

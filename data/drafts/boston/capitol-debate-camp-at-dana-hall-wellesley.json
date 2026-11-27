@@ -1,0 +1,129 @@
+{
+  "slug": "capitol-debate-camp-at-dana-hall-wellesley",
+  "name": "Capitol Debate Summer Camp at Dana Hall School",
+  "operator_name": "Capitol Debate",
+  "website_url": "https://www.capitoldebate.com/camping-detail/dana-hall",
+  "registration_url": "https://campscui.active.com/orgs/CapitolDebate?season=3833642&location=1832432",
+  "phone": "(800) 450-5012",
+  "street_address": "Dana Hall School, 45 Dana Road",
+  "city": "Wellesley",
+  "state": "MA",
+  "zip": "02482",
+  "camp_type": "specialty",
+  "primary_categories": [
+    "academic"
+  ],
+  "secondary_categories": [
+    "leadership"
+  ],
+  "activities": [
+    "public speaking",
+    "debate",
+    "public forum debate",
+    "lincoln douglas debate",
+    "parliamentary debate",
+    "impromptu speaking",
+    "research",
+    "improv"
+  ],
+  "age_min": 8,
+  "age_max": 17,
+  "description_short": "A twelve day public speaking and debate camp on the Dana Hall School campus in Wellesley for ages 10 to 17, with daily instruction, practice rounds, electives and a final day showcase. Campers can live in the dorm or commute 9 to 5; a shorter commuter Rookie Camp serves ages 8 and 9.",
+  "indoor_outdoor": "indoor",
+  "price_min": 3099,
+  "price_max": 4099,
+  "price_per": "session",
+  "meals_included": true,
+  "refund_policy_summary": "Payments are nonrefundable. Written cancellation before May 1 earns full credit toward a Capitol Debate program within one year; later cancellations follow a credit timetable.",
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Regular Camp, residential (ages 10 to 17)",
+      "start_date": "2027-07-25",
+      "end_date": "2027-08-05",
+      "price": 4099,
+      "availability": "open"
+    },
+    {
+      "name": "Regular Camp, commuter (ages 10 to 17)",
+      "start_date": "2027-07-25",
+      "end_date": "2027-08-05",
+      "price": 3099,
+      "availability": "open"
+    },
+    {
+      "name": "Rookie Camp, commuter (ages 8 to 9)",
+      "start_date": "2027-07-26",
+      "end_date": "2027-08-05",
+      "price": 2699,
+      "availability": "open"
+    }
+  ],
+  "notes": "Prices are full tuition. Winter early bird prices through January 31, 2027: residential $3,399, commuter $2,599, Rookie $1,999. A required $100 safety and compliance fee is added to all. Residential tuition includes room and three meals a day; commuters attend 9 to 5 on weekdays and Saturday. Registration deadline May 15. Capitol Debate's only Massachusetts camp for 2027.",
+  "sources": [
+    {
+      "url": "https://www.capitoldebate.com/camping-detail/dana-hall",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "indoor_outdoor",
+        "price_min",
+        "price_max",
+        "price_per",
+        "meals_included",
+        "refund_policy_summary",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Dana Hall camp page: 2027 Regular Camp ages 10 to 17, July 25 to August 5, residential $4,099 (early bird $3,399) and commuter $3,099 (early bird $2,599); Rookie Camp ages 8 to 9, commuter only, July 26 to August 5, $2,699 (early bird $1,999); $100 fee extra; cancellation terms. Meals included applies to residential campers. Availability open because the page takes registrations",
+      "checked": "2026-11-22"
+    },
+    {
+      "url": "https://www.danahall.org/",
+      "fields": [
+        "street_address",
+        "city",
+        "state",
+        "zip"
+      ],
+      "note": "Researched by Claude from this page. Host school's own site footer: Dana Hall School, 45 Dana Road, Wellesley, MA 02482. The camp page names Dana Hall in Wellesley but gives no street address",
+      "checked": "2026-11-22"
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.capitoldebate.com/camping-detail/dana-hall",
+      "kind": "html",
+      "title": "2027 Debate Camp at Dana Hall School, Wellesley, MA | Capitol Debate"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Financial aid",
+      "Commuter lunch"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-22",
+      "page_checked": "https://www.capitoldebate.com/camping-detail/dana-hall",
+      "changes": [
+        "New camp, researched from https://www.capitoldebate.com/camping-detail/dana-hall"
+      ],
+      "for_andrew": [
+        "Mixed day and overnight camp: I set camp_type to specialty. Prices recorded are full tuition, with the early bird prices in notes. Use early bird instead?",
+        "The street address comes from Dana Hall School's own site (the host campus), since Capitol Debate's page names the school but gives no street. OK as a source?"
+      ]
+    }
+  }
+}

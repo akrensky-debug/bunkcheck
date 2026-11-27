@@ -1,0 +1,150 @@
+{
+  "slug": "horizons-summer-camp-south-windham",
+  "name": "Horizons Summer Camp",
+  "operator_name": "Horizons, Inc.",
+  "website_url": "https://horizonsct.org/programs/camp/home",
+  "registration_url": "https://horizonsct.campbrainregistration.com/",
+  "phone": "860-456-1032",
+  "street_address": "127 Babcock Hill Rd",
+  "city": "Windham",
+  "state": "CT",
+  "zip": "06266",
+  "camp_type": "sleepaway",
+  "primary_categories": [
+    "special_needs"
+  ],
+  "secondary_categories": [
+    "general",
+    "swimming",
+    "arts"
+  ],
+  "activities": [
+    "swimming",
+    "arts",
+    "camp crafts",
+    "health and fitness",
+    "performing arts",
+    "pioneering",
+    "science",
+    "music",
+    "language arts",
+    "physical education",
+    "boating",
+    "evening activities"
+  ],
+  "description_short": "Overnight camp in South Windham for people with developmental disabilities, with campers and counselors sharing cabins. Days include swimming, arts, music, science and camp crafts, with staff supporting each camper's individual goals and whole camp evening events.",
+  "indoor_outdoor": "both",
+  "season_year": 2027,
+  "special_needs_notes": "Serves campers with developmental disabilities in a 1 to 5 staff ratio. Campers must be ambulatory, reasonably independent in daily living, sleep through the night and not need physical intervention for behavior. Horizons is not actively approving new campers.",
+  "sessions": [
+    {
+      "name": "Session (two weeks)",
+      "start_date": "2027-06-20",
+      "end_date": "2027-07-03",
+      "availability": "unknown"
+    },
+    {
+      "name": "Session (two weeks)",
+      "start_date": "2027-07-04",
+      "end_date": "2027-07-17",
+      "availability": "unknown"
+    },
+    {
+      "name": "Camp Courage (one week, with the Epilepsy Foundation)",
+      "start_date": "2027-07-18",
+      "end_date": "2027-07-23",
+      "availability": "unknown"
+    },
+    {
+      "name": "Session (two weeks)",
+      "start_date": "2027-07-25",
+      "end_date": "2027-08-07",
+      "availability": "unknown"
+    },
+    {
+      "name": "Session (two weeks)",
+      "start_date": "2027-08-08",
+      "end_date": "2027-08-21",
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://horizonsct.org/programs/camp/dates-registration",
+      "checked": "2026-11-20",
+      "fields": [
+        "registration_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. 2027 dates posted: June 20 to July 3, July 4 to July 17, July 18 to 23 (Camp Courage), July 25 to August 7, August 8 to August 21; 2027 registration to be announced. The page says Horizons is not actively approving new campers. Address 127 Babcock Hill Rd, South Windham, CT 06266; South Windham is a village of the town of Windham, so city is Windham. 2027 fees are not posted (the linked fee sheet is 2026), so no price is recorded."
+    },
+    {
+      "url": "https://horizonsct.org/programs/camp/home",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "description_short",
+        "indoor_outdoor",
+        "special_needs_notes"
+      ],
+      "note": "Researched by Claude from this page. Camp page: since 1979, eight weeks each summer, campers and counselors bunk in cabins, individualized support for each camper's area of need. Eligibility details in special_needs_notes come from the camp's 2026 Registration Policies and Procedures PDF linked on the Forms page (https://cdn.prod.website-files.com/5fc28483a7287d502f47a8db/694ae0fe70d6f9976073025a_Registration_Policies_%26_Proc_2026.pdf), which also lists 2026 fees of $4,808 per two week session; those are not used because they belong to 2026."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://horizonsct.org/programs/camp/home",
+      "kind": "html",
+      "title": "Recreational Summer Camp Developmental Disability | Horizons"
+    },
+    "warnings": [
+      "Neither South Windham nor Windham, CT is in cities.py, so this draft fails validation.",
+      "No age range is published; the eligibility rules (shaving, residential settings, Camp Courage for campers under 26) suggest adults attend too.",
+      "Horizons is not approving new campers at this time.",
+      "2027 dates are posted but 2027 fees are not."
+    ],
+    "unknowns": [
+      "age_min",
+      "age_max",
+      "grade_min",
+      "grade_max",
+      "price_per_week",
+      "price_min",
+      "price_max",
+      "price_per",
+      "email",
+      "extended_care",
+      "transportation",
+      "meals_included",
+      "financial_aid",
+      "aca_accredited",
+      "gender_policy",
+      "refund_policy_summary"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://horizonsct.org/programs/camp/home",
+      "changes": [
+        "New camp, researched from https://horizonsct.org/programs/camp/home"
+      ],
+      "for_andrew": [
+        "Windham, CT (the town South Windham belongs to) is missing from cities.py.",
+        "Horizons publishes no age range and appears to serve adults as well as children, and it is not taking new campers. Should it be listed on a children's camp site?"
+      ]
+    }
+  }
+}

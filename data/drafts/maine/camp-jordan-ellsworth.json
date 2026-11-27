@@ -1,0 +1,132 @@
+{
+  "slug": "camp-jordan-ellsworth",
+  "name": "Camp Jordan",
+  "operator_name": "Bangor Region YMCA",
+  "website_url": "https://www.campjordan.org",
+  "registration_url": "http://BangorYcamps.campbrainregistration.com",
+  "email": "JFournier@BangorY.org",
+  "phone": "207-944-4532",
+  "street_address": "101 Camp Jordan Way",
+  "city": "Ellsworth",
+  "state": "ME",
+  "zip": "04605",
+  "camp_type": "sleepaway",
+  "age_min": 7,
+  "age_max": 15,
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "outdoor",
+    "swimming"
+  ],
+  "activities": [
+    "swimming",
+    "tubing",
+    "kayaking",
+    "canoeing",
+    "archery",
+    "high and low ropes",
+    "zipline",
+    "arts",
+    "performing arts",
+    "nature survival",
+    "shelter building",
+    "ultimate frisbee",
+    "volleyball",
+    "basketball",
+    "gaga"
+  ],
+  "description_short": "Bangor Region YMCA overnight camp on a 200 acre site on Branch Lake near Ellsworth. In Sleep Away Camp, campers 7 to 15 choose activities such as tubing, kayaking, ropes courses, archery, crafts and performing arts; the camp also runs Mini-Camp, Adventure Seekers, Downeast Adventures and Leaders School.",
+  "indoor_outdoor": "outdoor",
+  "financial_aid": true,
+  "refund_policy_summary": "The $200 deposit per session is not refundable. Cancel in writing by May 1, 2027 for a refund of all other payments; no refunds after May 1 except possible exceptions for injury or illness with a doctor's note.",
+  "swim_waterfront_notes": "A quarter mile of lakefront on 2,700 acre Branch Lake.",
+  "aca_accredited": true,
+  "aca_source_url": "https://www.campjordan.org/about",
+  "notes": "Tiered tuition (full cost, partly subsidized, scholarship subsidized); financial assistance applications accepted until May 17. Multi week, sibling, alumni and referral discounts. Weekend stayover $100.",
+  "season_year": 2027,
+  "sources": [
+    {
+      "url": "https://www.campjordan.org",
+      "checked": "2026-11-22",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip"
+      ],
+      "note": "Researched by Claude from this page. Home page: Bangor Region YMCA Camp Jordan, 101 Camp Jordan Way, Ellsworth, ME 04605, 207-944-4532."
+    },
+    {
+      "url": "https://www.campjordan.org/sleep-away-camp",
+      "checked": "2026-11-22",
+      "fields": [
+        "camp_type",
+        "age_min",
+        "age_max",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "description_short",
+        "indoor_outdoor"
+      ],
+      "note": "Researched by Claude from this page. Sleep Away Camp page: ages 7 to 15, activity list, 2027 Sleep Away Camp with session themes still TBD. Ages are for Sleep Away Camp; Leaders School and LIT/CIT serve older teens."
+    },
+    {
+      "url": "https://www.campjordan.org/about",
+      "checked": "2026-11-22",
+      "fields": [
+        "swim_waterfront_notes",
+        "aca_accredited",
+        "aca_source_url"
+      ],
+      "note": "Researched by Claude from this page. About page: 200 acre campus on a quarter mile of Branch Lake; accredited by the American Camp Association."
+    },
+    {
+      "url": "https://www.campjordan.org/dates-rates",
+      "checked": "2026-11-22",
+      "fields": [
+        "registration_url",
+        "financial_aid",
+        "refund_policy_summary"
+      ],
+      "note": "Researched by Claude from this page. 2027 Dates & Rates page: tier pricing, financial assistance, discounts, 2027 payment and cancellation policy, register link. The 2027 session dates and prices on this page are images and could not be read; the camp brochure PDF is over the fetcher's 8 MB cap."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.campjordan.org",
+      "kind": "html",
+      "title": "YMCA Camp, Maine | Bangor YMCA Wilderness Center at Camp Jordan"
+    },
+    "warnings": [],
+    "unknowns": [
+      "2027 session dates",
+      "2027 prices",
+      "Meals",
+      "Transportation"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-22",
+      "page_checked": "https://www.campjordan.org",
+      "changes": [
+        "New camp, researched from https://www.campjordan.org",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
+      ],
+      "for_andrew": [
+        "Camp Jordan is also described inside the existing draft bangor-region-ymca-summer-camps-bangor.json, which asks whether to split it out. This is that separate overnight listing; if it goes ahead, drop Camp Jordan from the umbrella draft?",
+        "The 2027 Dates & Rates page shows dates and prices only as images, and the brochure is over 8 MB, so the listing has no sessions or price. Keep it without them?"
+      ]
+    }
+  }
+}

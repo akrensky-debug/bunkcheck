@@ -1,0 +1,97 @@
+{
+  "slug": "einsteins-workshop-summer-camp-burlington",
+  "name": "Einstein's Workshop Summer Camp",
+  "operator_name": "Einstein's Workshop",
+  "website_url": "https://www.einsteinsworkshop.com/summer/",
+  "registration_url": "https://www.einsteinsworkshop.com/register",
+  "phone": "(781) 202-5645",
+  "street_address": "25 Adams Street",
+  "city": "Burlington",
+  "state": "MA",
+  "zip": "01803",
+  "camp_type": "specialty",
+  "primary_categories": [
+    "STEM",
+    "arts"
+  ],
+  "age_min": 5,
+  "grade_min": 0,
+  "grade_max": 8,
+  "description_short": "Week long STEAM camps at Einstein's Workshop in Burlington for kids entering kindergarten through grade 8, with a morning session (9 to 12) and an afternoon session (1 to 4) that can be combined into a full day with supervised lunch.",
+  "indoor_outdoor": "indoor",
+  "price_per_week": 500,
+  "price_min": 400,
+  "price_max": 500,
+  "price_per": "week",
+  "extended_care": true,
+  "meals_included": false,
+  "special_needs_notes": "Children with ADHD, autism, anxiety, learning differences or physical needs are welcome. Families are asked to disclose needs at registration and call if the child has an IEP or 504; a child with a one on one aide at school may need a parent or aide to attend.",
+  "season_year": 2027,
+  "notes": "Prices are per half day camp: $500 for a five day week, $400 for a four day week; a full day is two half day camps. Lunch and Play for half day campers costs $20. Early drop-off from 8:15 and late pick-up to 5:00 or 5:45 (not Fridays) cost extra. Registration for Summer 2027 opens in November 2026.",
+  "sources": [
+    {
+      "url": "https://www.einsteinsworkshop.com/summer/",
+      "checked": "2026-11-22",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "age_min",
+        "description_short",
+        "indoor_outdoor",
+        "price_per_week",
+        "price_min",
+        "price_max",
+        "price_per",
+        "extended_care",
+        "meals_included",
+        "special_needs_notes"
+      ],
+      "note": "Researched by Claude from this page. Prices sit in the FAQ on a page that announces Summer 2027 registration; the FAQ itself names no year"
+    },
+    {
+      "url": "https://www.einsteinsworkshop.com/camp/",
+      "checked": "2026-11-22",
+      "fields": [
+        "grade_min",
+        "grade_max"
+      ],
+      "note": "Researched by Claude from this page"
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.einsteinsworkshop.com/summer/",
+      "kind": "html",
+      "title": "Summer Camp – Einstein's Workshop"
+    },
+    "warnings": [],
+    "unknowns": [
+      "2027 weekly camp dates and topics",
+      "Upper age limit",
+      "Financial aid"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-22",
+      "page_checked": "https://www.einsteinsworkshop.com/summer/",
+      "changes": [
+        "New camp, researched from https://www.einsteinsworkshop.com/summer/"
+      ],
+      "for_andrew": [
+        "The page says Summer 2027 registration opens in November 2026 and quotes $500 per five day half day camp, but no dated weeks for 2026 or 2027 are posted and the FAQ prices carry no year. I set season_year 2027 with no sessions. List now, or wait for the 2027 schedule?"
+      ]
+    }
+  }
+}

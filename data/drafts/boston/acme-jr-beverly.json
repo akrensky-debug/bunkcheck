@@ -1,0 +1,141 @@
+{
+  "slug": "acme-jr-beverly",
+  "name": "Acme Jr.",
+  "operator_name": "Beverly Recreation Department",
+  "website_url": "https://www.bevrec.com/acme-jr",
+  "registration_url": "https://www.bevrec.com/registration",
+  "phone": "978-921-6067",
+  "city": "Beverly",
+  "state": "MA",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "activities": [
+    "theme days",
+    "special guests",
+    "splash pads",
+    "beach time",
+    "games",
+    "storytelling",
+    "crafts"
+  ],
+  "grade_min": 1,
+  "grade_max": 2,
+  "age_min": 6,
+  "age_max": 8,
+  "description_short": "City run day camp for children entering grades 1 and 2, 9 to 3 on weekdays, with theme days, visiting performers, splash pads, beach time and games, plus some days at Obear Park and Camp Paradise.",
+  "price_min": 550,
+  "price_max": 550,
+  "price_per": "session",
+  "extended_care": true,
+  "meals_included": false,
+  "financial_aid": true,
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Session 1",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-10",
+      "price": 550,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 2",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-24",
+      "price": 550,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 3",
+      "start_date": "2026-07-27",
+      "end_date": "2026-08-07",
+      "price": 550,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 4",
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-21",
+      "price": 550,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.bevrec.com/acme-jr",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "age_min",
+        "age_max",
+        "description_short",
+        "price_min",
+        "price_max",
+        "price_per",
+        "extended_care",
+        "meals_included",
+        "financial_aid"
+      ],
+      "note": "Researched by Claude from this page. Acme Jr. 2026: children entering grades 1 and 2, $550 per two week session, Monday to Friday 9 to 3. Early care $150 and late care $200 per session. Campers bring snack and lunch. Camp scholarship information linked. Beverly residents register from March 2; non-residents from May 1 if space remains, at the same listed price. Ages derived from grades, not stated."
+    },
+    {
+      "url": "https://www.bevrec.com/registration",
+      "checked": "2026-11-20",
+      "fields": [
+        "registration_url",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. 2026 sessions: June 29 to July 10, July 13 to 24, July 27 to August 7, August 10 to 21. Early care 8 to 9am, late care 3 to 6pm."
+    },
+    {
+      "url": "https://www.bevrec.com/",
+      "checked": "2026-11-20",
+      "fields": [
+        "phone"
+      ],
+      "note": "Researched by Claude from this page. Recreation office phone, office at 55 Ober St, Lynch Park."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.bevrec.com/acme-jr",
+      "kind": "html",
+      "title": "Acme Jr. — Beverly Recreation Department"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Where Acme Jr. meets (street address and ZIP)",
+      "2027 dates and prices",
+      "ACA accreditation",
+      "Email"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://www.bevrec.com/acme-jr",
+      "changes": [
+        "New camp, researched from https://www.bevrec.com/acme-jr"
+      ],
+      "for_andrew": [
+        "The Acme Jr. page does not say where the camp meets, so there is no street address or ZIP and the draft fails the required zip check. The Recreation office is at 55 Ober St (Lynch Park), but no ZIP is printed. Andrew to decide whether to use Lynch Park.",
+        "Name recorded as the camp states it, 'Acme Jr.'; the candidate list called it 'Beverly Recreation ACME Jr. Summer Camp'.",
+        "Beverly Rec also runs Tiny Tykes (ages 3 to K), Acme Sr. (entering grades 3 to 5, $575 per session at Lynch Park) and Adventure Camp with the same 2026 sessions. Not drafted here; Acme Sr. has its own page and place and could be its own listing.",
+        "The scholarship application linked is the 2025 PDF and could not be read (no text)."
+      ]
+    }
+  }
+}

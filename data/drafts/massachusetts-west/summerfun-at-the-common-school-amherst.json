@@ -1,0 +1,112 @@
+{
+  "slug": "summerfun-at-the-common-school-amherst",
+  "name": "Summerfun at The Common School",
+  "operator_name": "The Common School",
+  "website_url": "https://www.commonschool.org/summerfun",
+  "registration_url": "https://campscui.active.com/orgs/TheCommonSchool?orglink=camps-registration",
+  "email": "emily@commonschool.org",
+  "phone": "413-256-8989",
+  "street_address": "521 South Pleasant St.",
+  "city": "Amherst",
+  "state": "MA",
+  "zip": "01002",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "nature",
+    "arts",
+    "STEM"
+  ],
+  "activities": [
+    "farm visits",
+    "tractor rides",
+    "gardening",
+    "forest exploration",
+    "ecosystem study",
+    "water play",
+    "steam",
+    "dungeons and dragons",
+    "magic the gathering",
+    "mixed media art",
+    "clay",
+    "games"
+  ],
+  "age_min": 3,
+  "description_short": "Six week summer camp at The Common School in Amherst. Young children explore Bramble Hill Farm and the Larch Hill conservation land, while campers 8 and up choose weekly specialty camps such as STEAM, clay, art and tabletop games.",
+  "price_per_week": 475,
+  "price_min": 315,
+  "price_max": 475,
+  "price_per": "week",
+  "financial_aid": true,
+  "season_year": 2027,
+  "refund_policy_summary": "A $100 non refundable deposit per session holds a place; withdrawals 30 days or more before camp get a refund minus the deposit, and later payments are non refundable except for medical emergencies.",
+  "sources": [
+    {
+      "url": "https://www.commonschool.org/summerfun",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "age_min",
+        "description_short",
+        "price_per_week",
+        "price_min",
+        "price_max",
+        "price_per",
+        "financial_aid",
+        "refund_policy_summary"
+      ],
+      "note": "Researched by Claude from this page. Page header: Ages 3 to 13, June 21st to July 30th, $475 per week, 8:30 to 3:30; registration opens January 15, 2027; '2027 Camps' with half day $315 per week for the youngest. Limited financial aid, applications due 2/15. The subtitle says ages 3 to 14 and the header says 3 to 13, so age_max is left out. The individual camp listings below still show dates such as 6/22 through 7/31 that fit 2026, not 2027, so no sessions are recorded."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.commonschool.org/summerfun",
+      "kind": "html",
+      "title": "Summer Camp in Amherst, MA | Summerfun at The Common School — The Common School"
+    },
+    "warnings": [
+      "The page mixes 2027 header dates (June 21 to July 30) with session dates that fit 2026 (6/22 through 7/31), so no sessions are recorded.",
+      "Ages conflict: 3 to 13 in the header, 3 to 14 in the subtitle."
+    ],
+    "unknowns": [
+      "sessions",
+      "age_max",
+      "grade_min",
+      "grade_max",
+      "extended_care",
+      "transportation",
+      "meals_included",
+      "aca_accredited",
+      "gender_policy"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://www.commonschool.org/summerfun",
+      "changes": [
+        "New camp, researched from https://www.commonschool.org/summerfun"
+      ],
+      "for_andrew": [
+        "The Summerfun page shows 2027 header dates and a $475 weekly price, but its camp by camp dates look like last year's. Use the $475 as the 2027 price, or wait until the school updates the page?"
+      ]
+    }
+  }
+}

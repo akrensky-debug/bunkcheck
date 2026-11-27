@@ -1,0 +1,120 @@
+{
+  "slug": "rye-brook-teen-travel-camp-rye-brook",
+  "name": "Rye Brook Teen Travel Camp",
+  "operator_name": "Village of Rye Brook Parks & Recreation",
+  "website_url": "https://ryebrookny.gov/teen-travel-camp",
+  "email": "bbecker@ryebrookny.gov",
+  "phone": "914-939-3235",
+  "city": "Rye Brook",
+  "zip": "10573",
+  "camp_type": "day",
+  "primary_categories": [
+    "adventure"
+  ],
+  "secondary_categories": [
+    "general"
+  ],
+  "activities": [
+    "amusement parks",
+    "water parks",
+    "trampoline parks",
+    "aquarium",
+    "soccer game",
+    "bowling",
+    "movies"
+  ],
+  "grade_min": 6,
+  "grade_max": 10,
+  "age_min": 11,
+  "age_max": 16,
+  "description_short": "Village trip camp for teens, six weeks from July 6 to August 14, 2026, with a different outing most days, such as Dorney Park, Splashdown, Mountain Creek Waterpark, Quassy, the Maritime Aquarium and bowling.",
+  "price_per_week": 1005,
+  "price_min": 1005,
+  "price_max": 4230,
+  "price_per": "session",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Full season, 6 weeks (non-resident)",
+      "start_date": "2026-07-06",
+      "end_date": "2026-08-14",
+      "price": 4230,
+      "availability": "unknown"
+    }
+  ],
+  "notes": "Non-resident rates shown. Residents pay $855 for one week up to $3,630 for six weeks, or $3,480 for six weeks if registered before May 1.",
+  "state": "NY",
+  "sources": [
+    {
+      "url": "https://ryebrookny.gov/teen-travel-camp",
+      "checked": "2026-11-25",
+      "fields": [
+        "name",
+        "website_url",
+        "email",
+        "phone",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Teen Travel Camp page: 2026 camp July 6 through August 14; forms due June 26; questions to bbecker@ryebrookny.gov. ZIP is from the Recreation office address in the sidebar (938 King Street, Rye Brook, NY 10573); the page does not say where trips leave from. Session price is the non-resident 6 week rate from the fee page."
+    },
+    {
+      "url": "https://ryebrookny.gov/travel-camp-fees/",
+      "checked": "2026-11-25",
+      "fields": [
+        "operator_name",
+        "grade_min",
+        "grade_max",
+        "age_min",
+        "age_max",
+        "price_per_week",
+        "price_min",
+        "price_max",
+        "price_per"
+      ],
+      "note": "Researched by Claude from this page. Travel Camp Fee Schedule 2026, 6th to 10th grades. Non-resident: 1 week $1,005 up to 6 weeks $4,230. Residents after 5/1: $855 a week up to $3,630; before 5/1: $3,480 for six weeks. Ages derived from grades."
+    },
+    {
+      "url": "https://ryebrookny.gov/teen-travel-camp-trips/",
+      "checked": "2026-11-25",
+      "fields": [
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "description_short"
+      ],
+      "note": "Researched by Claude from this page. Teen Travel Camp Trips: 2026 trip calendar from July 6 (swim test and BBQ), including Urban Air, a Westchester Soccer Club game, Dorney Park, Dave & Busters, Splashdown, Mountain Creek, Maritime Aquarium, Quassy, Bowlero and Brownstone."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://ryebrookny.gov/teen-travel-camp",
+      "kind": "html",
+      "title": "Teen Travel Camp, Village of Rye Brook"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Where trips leave from",
+      "Daily hours",
+      "Lunch"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-25",
+      "page_checked": "https://ryebrookny.gov/teen-travel-camp",
+      "changes": [
+        "New camp, researched from https://ryebrookny.gov/teen-travel-camp",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
+      ],
+      "for_andrew": [
+        "Grades: the 2026 fee schedule says 6th to 10th, the village FAQ says 7th to 10th. Recorded 6th to 10th from the fee schedule. Which is right?"
+      ]
+    }
+  }
+}

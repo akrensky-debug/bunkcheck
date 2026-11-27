@@ -1,0 +1,167 @@
+{
+  "slug": "jeff-lake-day-camp-stanhope",
+  "name": "Jeff Lake Day Camp",
+  "operator_name": "Jeff Lake Day Camp",
+  "website_url": "https://www.jefflakecamp.com/",
+  "registration_url": "https://www.jefflakecamp.com/enroll/",
+  "email": "emily@jefflakecamp.com",
+  "phone": "973-347-1230",
+  "street_address": "Waterloo Road",
+  "city": "Stanhope",
+  "state": "NJ",
+  "zip": "07874",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "swimming",
+    "sports",
+    "arts",
+    "adventure"
+  ],
+  "activities": [
+    "swimming",
+    "boating",
+    "fishing",
+    "zip line",
+    "pottery",
+    "archery",
+    "tennis",
+    "basketball",
+    "soccer",
+    "gymnastics",
+    "dance",
+    "science",
+    "project adventure",
+    "inflatable obstacle course"
+  ],
+  "grade_max": 10,
+  "age_max": 16,
+  "description_short": "Private day camp on 50 acre Jefferson Lake for Pre-K through 10th grade, with daily swim instruction, boating, fishing, sports, pottery and other arts, a zip line and adventure activities, plus a CIT program. Campers come by camp bus from towns across northern New Jersey.",
+  "indoor_outdoor": "both",
+  "price_min": 5200,
+  "price_max": 9550,
+  "price_per": "session",
+  "transportation": true,
+  "meals_included": true,
+  "refund_policy_summary": "Cancel before February 1, 2027 for a refund less a $250 administrative fee; February 1 to April 1 the fee is $500; after April 1 deposits are not refundable.",
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Full Season",
+      "start_date": "2027-06-21",
+      "end_date": "2027-08-13",
+      "price": 9550,
+      "availability": "unknown"
+    },
+    {
+      "name": "First Half",
+      "start_date": "2027-06-21",
+      "end_date": "2027-07-16",
+      "price": 6900,
+      "availability": "unknown"
+    },
+    {
+      "name": "Second Half",
+      "start_date": "2027-07-19",
+      "end_date": "2027-08-13",
+      "price": 6900,
+      "availability": "unknown"
+    }
+  ],
+  "notes": "Session prices are for K to 10th grade. Pre-K pays $9,150 full season and $6,900 a half; any six weeks costs $9,150 (K to 10) or $8,750 (Pre-K). CIT (rising 10th grade) pays $7,100 full season, $5,200 a half, $6,700 for six weeks. Each application needs a $995 deposit. A 3% fee applies to credit card payments. The camp is on Waterloo Road about three quarters of a mile from Route 206; its summer mailing address is PO Box 426, Stanhope.",
+  "sources": [
+    {
+      "url": "https://www.jefflakecamp.com/about-jeff-lake/dates-fees-faqs/",
+      "checked": "2026-11-25",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "camp_type",
+        "grade_max",
+        "age_max",
+        "price_min",
+        "price_max",
+        "price_per",
+        "refund_policy_summary",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. 2027 dates and enrollment fees for Pre-K, K to 10th grade and CIT. Age max derived from 10th grade (16). The site gives Pre-K as the youngest group but no age, so age_min is left out. Footer gives the summer address PO Box 426, Stanhope, NJ 07874 and phone 973-347-1230."
+    },
+    {
+      "url": "https://www.jefflakecamp.com/about-jeff-lake/driving-directions/",
+      "checked": "2026-11-25",
+      "fields": [
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "email",
+        "phone",
+        "registration_url"
+      ],
+      "note": "Researched by Claude from this page. Directions: Route 80 exit 25, Route 206 north, left on Waterloo Road; camp is 3/4 mile on the right. No street number is given. City and ZIP are from the footer's summer mailing address (PO Box 426, Stanhope, NJ 07874); email, phone and the Enroll link are in the same footer and header."
+    },
+    {
+      "url": "https://www.jefflakecamp.com/day-camp-activities/",
+      "checked": "2026-11-25",
+      "fields": [
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "description_short",
+        "indoor_outdoor"
+      ],
+      "note": "Researched by Claude from this page. Nine period day of sports, swim instruction, arts and crafts, science and Project Adventure; fishing, pottery, zip line, inflatable obstacle course. Lake size, archery, tennis, gymnastics and dance are from the FAQ on the dates and fees page."
+    },
+    {
+      "url": "https://www.jefflakecamp.com/about-jeff-lake/day-camp-transportation/",
+      "checked": "2026-11-25",
+      "fields": [
+        "transportation"
+      ],
+      "note": "Researched by Claude from this page. Camp buses with CDL drivers and bus counselors."
+    },
+    {
+      "url": "https://www.jefflakecamp.com/about-jeff-lake/food-camp/",
+      "checked": "2026-11-25",
+      "fields": [
+        "meals_included"
+      ],
+      "note": "Researched by Claude from this page. Lunch prepared daily on site; nut aware, kosher and vegetarian options."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.jefflakecamp.com/about-jeff-lake/dates-fees-faqs/",
+      "kind": "html",
+      "title": "Day Camp Dates, Fees & FAQs | Jeff Lake, New Jersey"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Street number",
+      "Youngest age (Pre-K)",
+      "Bus service area by town",
+      "Extended care"
+    ],
+    "low_confidence": [
+      "zip"
+    ],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-25",
+      "page_checked": "https://www.jefflakecamp.com/about-jeff-lake/dates-fees-faqs/",
+      "changes": [
+        "New camp, researched from https://www.jefflakecamp.com/about-jeff-lake/dates-fees-faqs/"
+      ],
+      "for_andrew": [
+        "The camp sits in Sussex County, outside the northern New Jersey region, but buses campers from Essex, Morris and Somerset. Should it be listed in this metro?",
+        "No street number anywhere on the site. City and ZIP come from the camp's summer PO Box in Stanhope; the discovery note placed it in Andover."
+      ]
+    }
+  }
+}

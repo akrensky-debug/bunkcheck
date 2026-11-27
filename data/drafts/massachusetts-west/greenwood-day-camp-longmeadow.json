@@ -1,0 +1,107 @@
+{
+  "slug": "greenwood-day-camp-longmeadow",
+  "name": "Greenwood Day Camp",
+  "operator_name": "Longmeadow Parks & Recreation Department",
+  "website_url": "https://longmeadowma.myrec.com/info/default.aspx/424/Summer-Programs",
+  "registration_url": "https://longmeadowma.myrec.com/info/default.aspx/424/Summer-Programs",
+  "email": "customerservice@lprd.net",
+  "phone": "413-565-4160",
+  "street_address": "231 Maple Road",
+  "city": "Longmeadow",
+  "state": "MA",
+  "zip": "01106",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "swimming",
+    "sports",
+    "arts",
+    "STEM"
+  ],
+  "activities": [
+    "swim lessons",
+    "free swim",
+    "arts and crafts",
+    "sports",
+    "group activities",
+    "STEM"
+  ],
+  "grade_min": 0,
+  "grade_max": 7,
+  "description_short": "The town of Longmeadow's licensed day camp at the Greenwood Center, for children entering kindergarten through grade 7. A typical day has swim lessons and free swim at the Greenwood Pool, arts and crafts, sports, group games and STEM, with campers grouped by grade. Camp runs 9 am to 4 pm, with extended care available.",
+  "extended_care": true,
+  "meals_included": false,
+  "special_needs_notes": "Parents are asked to tell the department about a disability at least two weeks before camp so it can make or discuss accommodations, and to share an IEP with the Camp Coordinator.",
+  "season_year": 2026,
+  "sources": [
+    {
+      "url": "https://longmeadowma.myrec.com/info/default.aspx/424/Summer-Programs",
+      "checked": "2026-11-20",
+      "fields": [
+        "website_url",
+        "registration_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip"
+      ],
+      "note": "Researched by Claude from this page; the department's registration site; it names Greenwood Day Camp as a licensed camp and gives the Greenwood Park Center address"
+    },
+    {
+      "url": "https://longmeadowma.myrec.com/documents/2026_day_camp_parent_handbook.pdf",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "operator_name",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "description_short",
+        "extended_care",
+        "meals_included",
+        "special_needs_notes"
+      ],
+      "note": "Researched by Claude from this page; 2026 Summer Day Camp Parent Handbook; groups run from entering K and 1 to entering 6 and 7; campers bring lunch"
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://longmeadowma.myrec.com/documents/2026_day_camp_parent_handbook.pdf",
+      "kind": "pdf",
+      "title": "Longmeadow Parks & Recreation 2026 Summer Day Camp Parent Handbook"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Session dates",
+      "Prices",
+      "Financial aid",
+      "Refund policy",
+      "Swim test details",
+      "Sports camps offered"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://longmeadowma.myrec.com/documents/2026_day_camp_parent_handbook.pdf",
+      "changes": [
+        "Found the current page at https://longmeadowma.myrec.com/info/default.aspx/424/Summer-Programs after https://lprd.net/424/Summer-Programs failed (no camp on the page). lprd.net now redirects to the department's MyRec registration site, which lists only fall and winter programs right now.",
+        "The department's summer camp is Greenwood Day Camp. Name, grades (entering K to 7), daily program, hours, extended care and lunch from home come from the 2026 Summer Day Camp Parent Handbook PDF on the MyRec site.",
+        "No 2026 or 2027 session dates or prices are posted on the department's pages, so sessions and prices are left out.",
+        "The department also runs summer sports camps; none are posted now, so this draft covers Greenwood Day Camp only."
+      ],
+      "for_andrew": [
+        "Greenwood Day Camp has no dates or prices on the town's site right now (summer programs come down after the season). List it now with grades, hours and location only, or wait for the 2027 summer programs to be posted?"
+      ]
+    }
+  }
+}

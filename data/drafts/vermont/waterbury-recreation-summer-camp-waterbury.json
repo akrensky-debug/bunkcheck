@@ -1,0 +1,151 @@
+{
+  "slug": "waterbury-recreation-summer-camp-waterbury",
+  "name": "Waterbury Recreation Summer Camp",
+  "operator_name": "Waterbury Recreation",
+  "website_url": "https://waterburyvt.myrec.com/forms/6021_summer_camp_parent_handbook_2026.pdf",
+  "email": "elinskey@waterburyvt.com",
+  "phone": "(802) 244-7174",
+  "street_address": "28 North Main Street",
+  "city": "Waterbury",
+  "state": "VT",
+  "zip": "05676",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "swimming"
+  ],
+  "activities": [
+    "swim lessons",
+    "pool time",
+    "park and river outings",
+    "mini field trips"
+  ],
+  "description_short": "A town run day camp in Waterbury, Monday to Friday 8am to 5pm, based in town parks. Groups explore parks and rivers on foot, take van field trips, and swim at the town pool, with swim lessons included.",
+  "refund_policy_summary": "Cancel more than 30 days ahead for a full refund minus the $50 registration fee, 7 to 30 days ahead for 75%, and under a week for nothing. Weather closures are credited to your account.",
+  "swim_waterfront_notes": "Swim lessons for all campers are included in the camp fee, plus regular free time at the pool. Campers get a wristband showing whether they passed the deep water test.",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Week 1",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-02",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 2",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 3",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 4",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 5",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-30",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 6",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 7",
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-14",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Full 7 week session",
+      "start_date": "2026-06-29",
+      "end_date": "2026-08-14",
+      "price": null,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://waterburyvt.myrec.com/forms/6021_summer_camp_parent_handbook_2026.pdf",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "description_short",
+        "refund_policy_summary",
+        "swim_waterfront_notes",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. 2026 Summer Camp Parent Handbook: June 29 to August 14, 2026, no camp Friday July 3 and Friday July 31; families register for single weeks or the full 7 week session. Email is the Director of Recreation"
+    },
+    {
+      "url": "https://waterburyvt.myrec.com/info/contact/default.aspx",
+      "checked": "2026-11-20",
+      "fields": [
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip"
+      ],
+      "note": "Researched by Claude from this page. Recreation contact page: 28 North Main Street, Waterbury, VT 05676"
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://waterburyvt.myrec.com/forms/6021_summer_camp_parent_handbook_2026.pdf",
+      "kind": "pdf",
+      "title": "Waterbury Recreation Summer Camp Parent Handbook 2026"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Ages or grades",
+      "Prices",
+      "Meals (free meals were being arranged)",
+      "Financial aid",
+      "Registration link",
+      "ACA accreditation"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://waterburyvt.myrec.com/forms/6021_summer_camp_parent_handbook_2026.pdf",
+      "changes": [
+        "New camp, researched from https://waterburyvt.myrec.com/forms/6021_summer_camp_parent_handbook_2026.pdf",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
+      ],
+      "for_andrew": [
+        "The handbook has no ages, grades or prices, and no other 2026 camp page on waterburyvt.myrec.com gives them. Keep this thin listing?"
+      ]
+    }
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "slug": "lutz-explore-nature-summer-camp-manchester",
+  "name": "Lutz Explore Nature Summer Camp",
+  "operator_name": "Lutz Children's Museum",
+  "website_url": "https://lutzmuseum.org/summer-camp",
+  "registration_url": "https://forms.office.com/r/uMbtynNFGp",
+  "phone": "860-643-0949",
+  "street_address": "269 Oak Grove Street",
+  "city": "Manchester",
+  "state": "CT",
+  "zip": "06040",
+  "camp_type": "day",
+  "primary_categories": [
+    "nature"
+  ],
+  "secondary_categories": [
+    "STEM",
+    "outdoor"
+  ],
+  "activities": [
+    "nature trails",
+    "ambassador animals",
+    "STEAM activities",
+    "scavenger hunts",
+    "crafts",
+    "games",
+    "crayfishing",
+    "water play"
+  ],
+  "age_min": 5,
+  "age_max": 10,
+  "grade_min": 0,
+  "grade_max": 5,
+  "description_short": "Weekly nature day camp run by the Lutz Children's Museum at the 52 acre Oak Grove Nature Preserve in Manchester for ages 5 to 10, with trail walks, ambassador animals, hands-on STEAM projects, crafts, games and water play.",
+  "indoor_outdoor": "outdoor",
+  "price_per_week": 395,
+  "price_min": 340,
+  "price_max": 395,
+  "price_per": "week",
+  "meals_included": false,
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Week 1",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": 395,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 2",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": 395,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 3",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": 395,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 4",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": 395,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 5",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": 395,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 6",
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-14",
+      "price": 395,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://lutzmuseum.org/summer-camp",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "grade_min",
+        "grade_max",
+        "description_short",
+        "indoor_outdoor",
+        "price_per_week",
+        "price_min",
+        "price_max",
+        "price_per",
+        "meals_included",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Lutz Explore Nature 2026 Summer Camp: ages 5 to 10 by July 1, 2026, entering K to grade 5. Weekly from July 6 to August 14 (six Monday to Friday weeks; the page gives the range, not each week). Drop off 8:30, pick up 3:00. Members $340 per week, non-members $395; partial weeks $79 per day. Camp is at 269 Oak Grove St; the museum is at 247 South Main St. Families pack lunch and snacks."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://lutzmuseum.org/summer-camp",
+      "kind": "html",
+      "title": "Lutz Children's Museum Summer Camp 2026"
+    },
+    "warnings": [],
+    "unknowns": [
+      "2027 dates and prices",
+      "Extended care",
+      "Financial aid",
+      "Email",
+      "ACA accreditation"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://lutzmuseum.org/summer-camp",
+      "changes": [
+        "New camp, researched from https://lutzmuseum.org/summer-camp"
+      ],
+      "for_andrew": [
+        "Manchester, CT is not in cities.py (it is its own town, so there is no parent town to use), so the draft fails the city check. Needs a cities.py entry for Manchester, CT, or drop the listing.",
+        "Weekly sessions are derived from the stated range 'weekly from July 6th - August 14st'; the page does not list each week."
+      ]
+    }
+  }
+}

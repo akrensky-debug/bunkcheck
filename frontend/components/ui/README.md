@@ -80,6 +80,7 @@ top space).
 | `Stack` | Flex column or row with a gap from the rhythm. |
 | `Section` | Heading, optional description and action, content. `divided` adds the top hairline. |
 | `Divider`, `Surface` | A hairline; a white container. |
+| `Band` | A full-width background behind one section of a long page. `tint` shows the product, `ink` holds the promises; paper is everything else. Change the background only when the page's job changes, and never put two bands of the same tone side by side. |
 | `Input`, `Textarea`, `Select` | Form controls (`fieldSize` `sm`/`md`). |
 | `Field` | Label, control, hint, error. Children can be a function of the generated id. |
 | `Checkbox`, `ChoiceChip` | A single yes/no; pick several (or one, `type="radio"`) from a short list. |

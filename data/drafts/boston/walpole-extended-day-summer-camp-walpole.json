@@ -1,0 +1,107 @@
+{
+  "slug": "walpole-extended-day-summer-camp-walpole",
+  "name": "Walpole Extended Day Summer Camp",
+  "operator_name": "Walpole Public Schools Extended Day Program",
+  "website_url": "https://sites.google.com/walpole.k12.ma.us/extended-day/summer-camp",
+  "email": "dsantangelo@walpole.k12.ma.us",
+  "phone": "774-315-5250",
+  "city": "Walpole",
+  "state": "MA",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "grade_min": 1,
+  "grade_max": 6,
+  "age_min": 6,
+  "age_max": 12,
+  "description_short": "Four week summer day camp run by the Walpole Public Schools Extended Day Program at Fisher Elementary School for Walpole students entering grades 1 to 6, booked by the week with optional morning and afternoon care.",
+  "extended_care": true,
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Week One",
+      "start_date": "2026-06-22",
+      "end_date": "2026-06-26",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week Two (closed July 3)",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-02",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week Three",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week Four",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": null,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://sites.google.com/walpole.k12.ma.us/extended-day/summer-camp",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "phone",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "grade_min",
+        "grade_max",
+        "age_min",
+        "age_max",
+        "description_short",
+        "extended_care",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Summer Camp 2026: four weeks at Fisher Elementary School for incoming grade 1 to 6 Walpole students; individual weeks or all four at a discount. AM and PM extended day for registered campers. Ages derived from grades, not stated. Prices are in the embedded 2026 handbook, which the fetcher could not read."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://sites.google.com/walpole.k12.ma.us/extended-day/summer-camp",
+      "kind": "html",
+      "title": "Summer Camp"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Weekly price (in the embedded 2026 handbook)",
+      "Fisher Elementary street address and ZIP",
+      "2027 dates",
+      "Meals",
+      "ACA accreditation"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://sites.google.com/walpole.k12.ma.us/extended-day/summer-camp",
+      "changes": [
+        "New camp, researched from https://sites.google.com/walpole.k12.ma.us/extended-day/summer-camp"
+      ],
+      "for_andrew": [
+        "Registration is open only to Walpole students, so most families cannot enroll. Andrew to decide whether a residents-only school program belongs in the listings.",
+        "The page names Fisher Elementary School but gives no street address or ZIP, so the draft fails the required zip check.",
+        "No prices on the page; they are in an embedded handbook file the fetcher could not open."
+      ]
+    }
+  }
+}

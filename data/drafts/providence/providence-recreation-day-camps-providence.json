@@ -1,0 +1,86 @@
+{
+  "slug": "providence-recreation-day-camps-providence",
+  "name": "Providence Recreation Day Camps",
+  "operator_name": "City of Providence Recreation Department",
+  "website_url": "https://epl.providenceri.gov/recreation-department-camps/",
+  "registration_url": "https://providenceri.recdesk.com/Community/Program",
+  "city": "Providence",
+  "state": "RI",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "description_short": "All day summer camps run by the city at ten neighborhood recreation centers in Providence, including Igliozzi, Rollins and Kennedy. Camp runs 8:30am to 4pm for $5 a week, with free breakfast and lunch.",
+  "price_per_week": 5,
+  "price_min": 5,
+  "price_max": 5,
+  "price_per": "week",
+  "extended_care": true,
+  "meals_included": true,
+  "season_year": 2026,
+  "sources": [
+    {
+      "url": "https://epl.providenceri.gov/recreation-department-camps/",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "description_short",
+        "price_per_week",
+        "price_min",
+        "price_max",
+        "price_per",
+        "extended_care",
+        "meals_included"
+      ],
+      "note": "Researched by Claude from this page. Eat Play Learn PVD 2026 page: day camps $5 a week per child, 8:30am to 4pm, free breakfast and lunch, early drop off 7:30 to 8:30am and late pick up 4 to 5pm for $5 each, no camp July 4 and August 11, registration from April 4 on RecDesk or at any center. Centers listed: Davey Lopes (227 Dudley St, 02907), John H. Rollins (674 Prairie Ave, 02905), Madeline Rogers (60 Camden Ave, 02908), Vincent Igliozzi (675 Plainfield St, 02909), Robert F. Kennedy (195 Nelson St, 02908), Sackett (159 Sackett St, 02907), Vincent Brown (438 Hope St), West End (109 Bucklin St, 02907), Zuccolo (18 Gesler St, 02909), Batastini (50 Obediah Brown Rd, 02909). No ages or start and end dates are given for the day camps"
+    }
+  ],
+  "notes": "One listing for the city's day camps. The page gives the same hours, price and meals for all ten recreation centers and no dates or ages for any of them, so the centers are listed in the source note rather than as separate camps.",
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://epl.providenceri.gov/recreation-department-camps/",
+      "kind": "html",
+      "title": "Recreation Department Camps - Eat, Play, Learn PVD"
+    },
+    "warnings": [
+      "The page says no camp on July 4, which was a Saturday in 2026; it may be carried over from an earlier year"
+    ],
+    "unknowns": [
+      "age_min",
+      "age_max",
+      "sessions",
+      "street_address",
+      "zip",
+      "phone",
+      "email",
+      "transportation"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "missing required zip"
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://epl.providenceri.gov/recreation-department-camps/",
+      "changes": [
+        "Found the current page at https://epl.providenceri.gov/recreation-department-camps/ after https://rec.providenceri.gov/program-details/?i=1594 (Igliozzi), ?i=1595 (Rollins) and ?i=1596 (Kennedy) failed ('Program Not Found'; the city's program list now shows only fall and school year programs)",
+        "Wrote one listing for the three batch camps (Igliozzi, Rollins, Kennedy) because the page gives each center an address but no dates or ages of its own",
+        "RecDesk (https://providenceri.recdesk.com/Community/Program) has no summer camps listed now"
+      ],
+      "for_andrew": [
+        "ZIP is missing (required), so this fails validation: the camp runs at ten centers with different addresses. Decide whether to list one record per center (Igliozzi 675 Plainfield St 02909, Rollins 674 Prairie Ave 02905, Kennedy 195 Nelson St 02908, and seven more), or keep one city wide listing with a chosen address",
+        "Ages and 2026 start and end dates are not on the city's current pages. The removed RecDesk pages reportedly said June 29 to August 11, ages 5 to 12, but that can no longer be read, so it is left out",
+        "Camps are aimed at Providence families (city program, $5 a week); the page does not say whether non-residents may enroll"
+      ]
+    }
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "slug": "camp-carefree-new-durham",
+  "name": "Camp Carefree",
+  "operator_name": "American Diabetes Association",
+  "website_url": "https://diabetes.org/camp/camp-carefree",
+  "city": "New Durham",
+  "state": "NH",
+  "camp_type": "sleepaway",
+  "primary_categories": [
+    "special_needs"
+  ],
+  "secondary_categories": [
+    "outdoor",
+    "swimming"
+  ],
+  "activities": [
+    "swimming",
+    "fishing",
+    "kayaking",
+    "hiking"
+  ],
+  "age_min": 8,
+  "age_max": 16,
+  "description_short": "One week overnight camp for children with diabetes, run by the American Diabetes Association at Lions Camp Pride on Merrymeeting Lake in New Durham. Campers swim, fish, kayak and hike while a medical team helps them learn to manage their diabetes.",
+  "indoor_outdoor": "outdoor",
+  "price_min": 1650,
+  "price_max": 1650,
+  "price_per": "session",
+  "financial_aid": true,
+  "special_needs_notes": "For children living with diabetes. Licensed medical staff provide round the clock care, and campers learn diabetes management skills such as decisions about food, activity and blood glucose. Phones may be used only as medical tools, such as for CGM data. Siblings without diabetes are accepted only at some ADA camps when space allows.",
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Overnight camp (ages 8 to 16)",
+      "start_date": "2027-07-18",
+      "end_date": "2027-07-23",
+      "price": 1650,
+      "availability": "unknown"
+    },
+    {
+      "name": "Counselor-in-Training (age 17)",
+      "start_date": "2027-07-16",
+      "end_date": "2027-07-23",
+      "price": 425,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://diabetes.org/camp/camp-carefree",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "indoor_outdoor",
+        "price_min",
+        "price_max",
+        "price_per",
+        "financial_aid",
+        "special_needs_notes",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page; 2027 dates and rates: full price $1,650, ADA sponsored price $825, more aid for qualifying families; host site Lions Camp Pride on Merrymeeting Lake; registration opens February 17, 2027"
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://diabetes.org/camp/camp-carefree",
+      "kind": "html",
+      "title": "Camp Carefree | American Diabetes Association"
+    },
+    "warnings": [
+      "The page gives two age ranges: 'Ages: 8 to 17' in the summary (which includes the CIT program) and 8 to 16 for the overnight camp. The draft uses 8 to 16 and lists the age 17 CIT week as its own session.",
+      "Prices: full price $1,650; the ADA sponsored price is $825 and is open to any family that selects it; further financial assistance is available. The draft records the full price.",
+      "The page says Lions Camp Pride, the host site, is ACA accredited. That is the site, not the ADA program, so aca_accredited is left blank.",
+      "Registration for summer 2027 opens February 17, 2027."
+    ],
+    "unknowns": [
+      "street address and zip of Lions Camp Pride (not on the ADA page; the host site's own website was not used for this listing)",
+      "gender policy",
+      "meals",
+      "transportation",
+      "camp phone and email"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "missing required zip"
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://diabetes.org/camp/camp-carefree",
+      "changes": [
+        "New camp, researched from https://diabetes.org/camp/camp-carefree"
+      ],
+      "for_andrew": [
+        "The ADA page names the host site (Lions Camp Pride, New Durham) but gives no street address or zip, and zip is required, so this draft fails validation. Take the address and zip from Lions Camp Pride's own website, or ask the ADA?",
+        "Two prices are open to every family ($1,650 full, $825 ADA sponsored). The draft shows $1,650. OK, or show the range $825 to $1,650?"
+      ]
+    }
+  }
+}

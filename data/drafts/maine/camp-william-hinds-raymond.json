@@ -1,0 +1,148 @@
+{
+  "slug": "camp-william-hinds-raymond",
+  "name": "Camp William Hinds",
+  "website_url": "https://camphinds.org/summer-camp/",
+  "registration_url": "https://scoutingevent.com/218-2026_Hinds_Summer_Camp",
+  "street_address": "146 Plains Road",
+  "city": "Raymond",
+  "state": "ME",
+  "zip": "04071",
+  "camp_type": "sleepaway",
+  "primary_categories": [
+    "outdoor"
+  ],
+  "secondary_categories": [
+    "sailing",
+    "STEM",
+    "leadership",
+    "swimming"
+  ],
+  "description_short": "Scout summer camp on Panther Pond in Raymond, Maine, where Scouts come for a week with their troop. Mornings go to merit badges at the waterfront, STEM center, craft shop, shooting ranges and nature area; afternoons bring troop activities, and evenings end with campfires.",
+  "activities": [
+    "merit badges",
+    "sailing",
+    "STEM",
+    "crafts",
+    "shooting sports",
+    "scoutcraft",
+    "nature",
+    "team challenges",
+    "campfires"
+  ],
+  "price_per_week": 585,
+  "price_min": 535,
+  "price_max": 585,
+  "price_per": "week",
+  "financial_aid": true,
+  "swim_waterfront_notes": "Over 300 acres on Panther Pond in the Sebago Lakes region; merit badge work happens at the camp's waterfronts.",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Week 1",
+      "start_date": "2026-06-28",
+      "end_date": "2026-07-03",
+      "price": 585,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 2",
+      "start_date": "2026-07-05",
+      "end_date": "2026-07-10",
+      "price": 585,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 3",
+      "start_date": "2026-07-12",
+      "end_date": "2026-07-17",
+      "price": 585,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 4",
+      "start_date": "2026-07-19",
+      "end_date": "2026-07-24",
+      "price": 585,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://camphinds.org/summer-camp/",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "website_url",
+        "registration_url",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "description_short",
+        "activities",
+        "price_per_week",
+        "price_min",
+        "price_max",
+        "price_per",
+        "financial_aid",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. 2026 dates and fees: early bird $535 until April 30, 2026, regular $585 per Scout. Camperships, sibling and multiple week discounts. Troops bring adult leaders (2 free for 2 to 8 Scouts, $120 for extra leaders)."
+    },
+    {
+      "url": "https://camphinds.org/about-camp-hinds/",
+      "checked": "2026-11-20",
+      "fields": [
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "swim_waterfront_notes"
+      ],
+      "note": "Researched by Claude from this page."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://camphinds.org/summer-camp/",
+      "kind": "html",
+      "title": "Register for Camp - Camp William Hinds"
+    },
+    "warnings": [
+      "This is a Scouting America troop camp. Scouts usually come with their troop; a staff run provisional troop (Troop H) lets a Scout attend alone (program page).",
+      "Only 2026 dates and fees are posted; nothing for 2027 yet."
+    ],
+    "unknowns": [
+      "operator_name",
+      "age_min",
+      "age_max",
+      "grade_min",
+      "grade_max",
+      "phone",
+      "email",
+      "gender_policy",
+      "meals_included",
+      "transportation",
+      "extended_care",
+      "refund_policy_summary",
+      "special_needs_notes",
+      "aca_accredited",
+      "indoor_outdoor"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://camphinds.org/summer-camp/",
+      "changes": [
+        "New camp, researched from https://camphinds.org/summer-camp/",
+        "Used the 2026 season: four weeks June 28 to July 24, 2026; no 2027 dates yet",
+        "Left operator_name empty: the batch names Pine Tree Council, Scouting America, but the pages I read do not say so"
+      ],
+      "for_andrew": [
+        "Camp Hinds is a Scout camp that families join through a troop (or the provisional Troop H for a Scout on their own), and the pages give no age range. Is a troop camp in scope for Bunkcheck?"
+      ]
+    }
+  }
+}

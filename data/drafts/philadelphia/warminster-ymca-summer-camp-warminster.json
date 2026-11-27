@@ -1,0 +1,101 @@
+{
+  "slug": "warminster-ymca-summer-camp-warminster",
+  "name": "Warminster YMCA Summer Camp",
+  "operator_name": "River Crossing YMCA",
+  "website_url": "https://www.ymcarivercrossing.org/camp/warminster-branch",
+  "email": "warminstercamp@ymcarivercrossing.org",
+  "phone": "267-387-9622",
+  "street_address": "624 York Road",
+  "city": "Warminster",
+  "state": "PA",
+  "zip": "18974",
+  "camp_type": "specialty",
+  "primary_categories": [
+    "technology",
+    "sports",
+    "swimming"
+  ],
+  "secondary_categories": [
+    "STEM",
+    "arts"
+  ],
+  "activities": [
+    "esports",
+    "ninjazone",
+    "gymnastics",
+    "obstacle courses",
+    "parkour",
+    "swim instruction",
+    "gym games",
+    "steam",
+    "art",
+    "field trips"
+  ],
+  "grade_min": 0,
+  "grade_max": 7,
+  "age_min": 5,
+  "age_max": 13,
+  "description_short": "Half day and full day specialty camps at the Warminster YMCA: Metro Esports with gym games, swimming and STEAM for grades K to 7, plus NinjaZone and gymnastics mornings and AquaBucks swim afternoons for grades K to 5.",
+  "indoor_outdoor": "indoor",
+  "financial_aid": true,
+  "season_year": 2027,
+  "notes": "Summer 2027 runs June 14 to August 20, 2027; AquaBucks swim camp weekly June 21 to August 20, 12:30 to 3:30 pm; Campers Create art camp July 12 to 16, 9 am to noon. Half day 9 am to noon or 12:30 to 3:30 pm; full day 9 am to 4 pm, with lunch from noon to 1 pm to join an AM and PM camp. Esports runs grades 2 to 7 per the at a glance box and K to 7 per the intro. Free pizza Fridays for full time campers. A 2027 summer membership (youth $86) gives member camp pricing. The YMCA also runs a separate camp at Warminster Park. Weekly 2027 prices not posted yet.",
+  "sources": [
+    {
+      "url": "https://www.ymcarivercrossing.org/camp/warminster-branch",
+      "checked": "2026-11-25",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "age_min",
+        "age_max",
+        "description_short",
+        "indoor_outdoor",
+        "financial_aid"
+      ],
+      "note": "Researched by Claude from this page. Warminster branch camp page: 2027 season, programs by grade, hours, air conditioned indoor spaces, financial assistance. Ages derived from grades K to 7 (age_min = grade_min + 5, age_max = grade_max + 6)."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.ymcarivercrossing.org/camp/warminster-branch",
+      "kind": "html",
+      "title": "Warminster YMCA Branch Summer Camp | Fun for Kids"
+    },
+    "warnings": [],
+    "unknowns": [
+      "2027 weekly prices",
+      "Session weeks",
+      "Extended care",
+      "Lunch"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-25",
+      "page_checked": "https://www.ymcarivercrossing.org/camp/warminster-branch",
+      "changes": [
+        "New camp, researched from https://www.ymcarivercrossing.org/camp/warminster-branch"
+      ],
+      "for_andrew": [
+        "The page is set for summer 2027 and gives the season dates, but no weekly prices yet and the Daxko registration search shows no 2027 programs. List it now without prices, or wait?",
+        "The page gives Esports as grades 2 to 7 in one place and K to 7 in another; I used K to 7."
+      ]
+    }
+  }
+}

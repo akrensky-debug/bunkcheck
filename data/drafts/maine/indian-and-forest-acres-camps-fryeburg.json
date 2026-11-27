@@ -1,0 +1,164 @@
+{
+  "slug": "indian-and-forest-acres-camps-fryeburg",
+  "name": "Indian & Forest Acres Camps",
+  "website_url": "https://indianacres.com/",
+  "registration_url": "https://indianacres.campintouch.com/ui/forms/application/camper/App",
+  "phone": "207.935.2300",
+  "city": "Fryeburg",
+  "state": "ME",
+  "zip": "04037",
+  "camp_type": "sleepaway",
+  "primary_categories": [
+    "general",
+    "sports"
+  ],
+  "secondary_categories": [
+    "swimming",
+    "sailing",
+    "arts",
+    "adventure"
+  ],
+  "age_min": 7,
+  "age_max": 17,
+  "description_short": "Brother and sister overnight camps in Fryeburg, Maine, for ages 7 to 17: Indian Acres for boys and Forest Acres for girls, two miles apart near the Saco River. Campers do water sports, horseback riding, team sports, arts and trips in 4 or 7 week sessions.",
+  "activities": [
+    "basketball",
+    "horseback riding",
+    "baseball",
+    "soccer",
+    "tennis",
+    "pickleball",
+    "lacrosse",
+    "golf",
+    "archery",
+    "instructional swim",
+    "waterskiing",
+    "wakeboarding",
+    "sailing",
+    "kayaking",
+    "river fishing",
+    "high ropes",
+    "climbing wall",
+    "mountain biking",
+    "hiking",
+    "overnight trips",
+    "arts and crafts",
+    "theater",
+    "ceramics",
+    "cooking",
+    "gymnastics",
+    "dance"
+  ],
+  "price_min": 8750,
+  "price_max": 17000,
+  "price_per": "session",
+  "transportation": true,
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "7 Weeks",
+      "start_date": "2027-06-23",
+      "end_date": "2027-08-11",
+      "price": 17000,
+      "availability": "unknown"
+    },
+    {
+      "name": "4 Weeks (also the CIT rate)",
+      "start_date": "2027-06-23",
+      "end_date": "2027-07-25",
+      "price": 12350,
+      "availability": "unknown"
+    },
+    {
+      "name": "3 Weeks (campers entering grade 5 and younger)",
+      "start_date": "2027-06-23",
+      "end_date": "2027-07-14",
+      "price": 8750,
+      "availability": "unknown"
+    },
+    {
+      "name": "Rookie Camp (a free 4-day trial camp)",
+      "start_date": "2027-07-20",
+      "end_date": "2027-07-23",
+      "price": null,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://indianacres.com/dates-rates",
+      "checked": "2026-11-20",
+      "fields": [
+        "name",
+        "phone",
+        "city",
+        "state",
+        "zip",
+        "price_min",
+        "price_max",
+        "price_per",
+        "transportation",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Summer 2027 dates and tuition. Transportation from Boston, Westchester/CT, Newton/Newport and Portland is booked through the office and billed on top of tuition. Rookie Camp is free per the Forest Acres page."
+    },
+    {
+      "url": "https://indianacres.com/",
+      "checked": "2026-11-20",
+      "fields": [
+        "website_url",
+        "registration_url",
+        "camp_type",
+        "age_min",
+        "age_max",
+        "description_short",
+        "primary_categories"
+      ],
+      "note": "Researched by Claude from this page"
+    },
+    {
+      "url": "https://indianacres.com/activities",
+      "checked": "2026-11-20",
+      "fields": [
+        "activities",
+        "secondary_categories"
+      ],
+      "note": "Researched by Claude from this page"
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://indianacres.com/dates-rates",
+      "kind": "html",
+      "title": "Dates + Rates | Indian & Forest Acres"
+    },
+    "warnings": [
+      "The Indian Acres page did not load in the fetcher, so boys' program details are taken from the shared pages only.",
+      "Winter office is in Boca Raton, FL; the phone is the same."
+    ],
+    "unknowns": [
+      "street address for each camp",
+      "ACA accreditation",
+      "financial aid (a separate scholarship foundation is linked, details not on the camp site)",
+      "refund policy",
+      "deposit"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-20",
+      "page_checked": "https://indianacres.com/dates-rates",
+      "changes": [
+        "Found the current page at https://indianacres.com/dates-rates after https://indianacres.com/about/dates-fees failed (page needed a browser; the site was rebuilt and the page moved).",
+        "Recorded the 2027 season: 7 weeks June 23 to August 11 ($17,000), 4 weeks June 23 to July 25 ($12,350), 3 weeks June 23 to July 14 ($8,750), and the free Rookie Camp July 20 to 23.",
+        "Left gender_policy out: boys and girls attend separate camps, so neither coed nor a single gender fits one listing."
+      ],
+      "for_andrew": [
+        "Indian Acres (boys) and Forest Acres (girls) are separate camps two miles apart, each with its own street address in Fryeburg (1712 Main Street and 54 Swans Falls), but the site does not say which address is which. Should this be one listing as drafted, or two (one boys, one girls)? Two would need the camp to confirm each address.",
+        "The Rookie Camp (July 20 to 23) is described on the Forest Acres page as a free 4-day camp for girls ages 6 to 9. I listed it as a session with no price. Keep it in this listing, or drop it?"
+      ]
+    }
+  }
+}

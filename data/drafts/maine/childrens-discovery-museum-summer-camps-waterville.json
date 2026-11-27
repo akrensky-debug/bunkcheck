@@ -1,0 +1,144 @@
+{
+  "slug": "childrens-discovery-museum-summer-camps-waterville",
+  "name": "Children's Discovery Museum Summer Camps",
+  "operator_name": "Children's Discovery Museum of Central Maine",
+  "website_url": "https://www.childrensdiscoverymuseum.org/summercamps",
+  "email": "info@childrensdiscoverymuseum.org",
+  "street_address": "7 Eustis Parkway",
+  "city": "Waterville",
+  "state": "ME",
+  "zip": "04901",
+  "camp_type": "day",
+  "age_min": 3,
+  "age_max": 10,
+  "primary_categories": [
+    "STEM"
+  ],
+  "secondary_categories": [
+    "arts",
+    "nature"
+  ],
+  "activities": [
+    "science experiments",
+    "art",
+    "engineering",
+    "open play",
+    "hiking",
+    "mountain biking",
+    "yoga",
+    "nature exploration"
+  ],
+  "description_short": "Week long camps from the children's museum in Waterville: Camp Lab Coat, a science camp for ages 7 to 10; Kids at the Museum, a half day camp of art, science and play for ages 3 to 5; and Kids in the Woods, an outdoor camp for ages 6 to 9 at Quarry Road Trails with hiking and mountain biking.",
+  "indoor_outdoor": "both",
+  "price_min": 150,
+  "price_max": 300,
+  "price_per": "week",
+  "financial_aid": true,
+  "notes": "Camp Lab Coat and Kids in the Woods run Monday to Thursday 9 to 3 and Friday 9 to 12; Kids at the Museum runs 9 to 12 daily. Kids in the Woods includes an optional free lunch and morning snack.",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Camp Lab Coat (ages 7 to 10)",
+      "start_date": "2026-06-22",
+      "end_date": "2026-06-26",
+      "price": 300,
+      "availability": "full"
+    },
+    {
+      "name": "Kids in the Woods (ages 6 to 9)",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": 275,
+      "availability": "unknown"
+    },
+    {
+      "name": "Kids in the Woods (ages 6 to 9)",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": 275,
+      "availability": "unknown"
+    },
+    {
+      "name": "Kids in the Woods (ages 6 to 9)",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": 275,
+      "availability": "unknown"
+    },
+    {
+      "name": "Kids at the Museum (ages 3 to 5, half day)",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": 150,
+      "availability": "full"
+    },
+    {
+      "name": "Kids at the Museum (ages 3 to 5, half day)",
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-14",
+      "price": 150,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.childrensdiscoverymuseum.org/summercamps",
+      "checked": "2026-11-22",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "street_address",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "age_min",
+        "age_max",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "description_short",
+        "indoor_outdoor",
+        "price_min",
+        "price_max",
+        "price_per",
+        "financial_aid",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Summer camps page: three camps with ages, prices ($300, $150, $275 a week), session dates given without a year, payment address 7 Eustis Parkway, Waterville, ME 04901, scholarships on request. The page shows dates as 6/22 and so on with no year; the museum's own registration forms linked from it are titled 'Kids at the Museum 2026 Summer Program' and 'Kids in the Woods 2026 Summer Program', and the weekdays match 2026. Camp Lab Coat and the first Kids at the Museum week are marked full on the page."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.childrensdiscoverymuseum.org/summercamps",
+      "kind": "html",
+      "title": "Summer Camps | Children's Museum"
+    },
+    "warnings": [
+      "The form for Kids at the Museum also states the 2026 sessions: August 3 to 7 (full) and August 10 to 14."
+    ],
+    "unknowns": [
+      "Extended care",
+      "Refund policy",
+      "Street address of Quarry Road Trails for Kids in the Woods"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-22",
+      "page_checked": "https://www.childrensdiscoverymuseum.org/summercamps",
+      "changes": [
+        "New camp, researched from https://www.childrensdiscoverymuseum.org/summercamps",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
+      ],
+      "for_andrew": [
+        "The camp page gives dates with no year. The year 2026 comes from the museum's own registration forms (Google Forms linked from the page, titled '... 2026 Summer Program'). The brief says a page with no year gets no listing; keep this on the strength of the forms, or drop until the 2027 page is up?",
+        "Kids in the Woods meets outdoors at Quarry Road Trails, not the museum; it is kept in this one listing because the page presents the three camps together. Split it out?"
+      ]
+    }
+  }
+}
