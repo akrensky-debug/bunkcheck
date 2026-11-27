@@ -1,0 +1,121 @@
+{
+  "slug": "downcity-design-summer-design-studios-providence",
+  "name": "Summer Design Studios",
+  "operator_name": "DownCity Design",
+  "website_url": "https://www.downcitydesign.org/summer",
+  "email": "summerdesignstudios@downcitydesign.org",
+  "phone": "(401) 272-8070",
+  "street_address": "Providence Career and Technical Academy, 41 Fricker Street",
+  "city": "Providence",
+  "state": "RI",
+  "camp_type": "specialty",
+  "primary_categories": [
+    "STEM",
+    "arts"
+  ],
+  "secondary_categories": [
+    "leadership"
+  ],
+  "activities": [
+    "design",
+    "architecture",
+    "fabrication",
+    "construction",
+    "graphic design",
+    "client projects"
+  ],
+  "grade_min": 9,
+  "grade_max": 12,
+  "age_min": 14,
+  "age_max": 18,
+  "description_short": "A six week design program for Providence County high school students at Providence Career and Technical Academy. Teens work in Design/Build or Creative Change studios on real projects for nonprofits and city agencies, from research to building structures for public spaces.",
+  "price_per_week": 0,
+  "price_min": 0,
+  "price_max": 0,
+  "price_per": "session",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Summer Design Studios 2026",
+      "start_date": "2026-07-06",
+      "end_date": "2026-08-14",
+      "price": 0,
+      "availability": "unknown"
+    }
+  ],
+  "notes": "Free, and eligible students are paid for taking part. Open to Providence County high school students in grades 8 to 11 during 2025 to 2026 (grades 9 to 12 in 2026 to 2027); 40 places, by application. Monday, Tuesday, Thursday and Friday 9:00 to 3:00 (no Wednesdays), with breakfast from 8:30. Applications for 2026 are closed; the youth page lists Summer 2027 without dates.",
+  "sources": [
+    {
+      "url": "https://www.downcitydesign.org/summer",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "age_min",
+        "age_max",
+        "description_short",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Summer Design Studios page: July 6 to August 14, 2026, 9 to 3 with no Wednesdays, at PCTA, 41 Fricker Street; Providence County high school students in grades 8 to 11 (2025 to 2026), paid participation; applications now closed. Ages derived from grades 9 to 12",
+      "checked": "2026-11-22"
+    },
+    {
+      "url": "https://www.downcitydesign.org/youth",
+      "fields": [
+        "price_per_week",
+        "price_min",
+        "price_max",
+        "price_per"
+      ],
+      "note": "Researched by Claude from this page. Youth programs page: free summer programs for Providence youth; Summer Design Studios, grades 9 to 12, Summer 2027",
+      "checked": "2026-11-22"
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=41+Fricker+Street%2C+Providence%2C+RI&benchmark=Public_AR_Current&format=json",
+      "checked": "2026-11-22",
+      "fields": [
+        "zip"
+      ],
+      "note": "ZIP looked up with the Census Bureau geocoder from the address on the camp's page (41 FRICKER ST, PROVIDENCE, RI, 02903)"
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.downcitydesign.org/summer",
+      "kind": "html",
+      "title": "Summer Design Studios | DownCity Design"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Summer 2027 dates",
+      "Lunch"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-22",
+      "page_checked": "https://www.downcitydesign.org/summer",
+      "changes": [
+        "New camp, researched from https://www.downcitydesign.org/summer",
+        "ZIP 02903 looked up from the camp's street address with the Census geocoder (Andrew allowed ZIP lookups, 22 November)."
+      ],
+      "for_andrew": [
+        "This is closer to a paid youth design internship than a camp: it is free, by application, students are paid, and only Providence County high schoolers can apply. List it?"
+      ]
+    }
+  },
+  "zip": "02903"
+}

@@ -1,0 +1,104 @@
+{
+  "slug": "flint-park-day-camp-larchmont",
+  "name": "Flint Park Day Camp",
+  "operator_name": "Village of Larchmont Recreation",
+  "website_url": "https://larchmontny.gov/departments/recreation/day_camp.php",
+  "registration_url": "https://app.campdoc.com/!/dn/login?r=villageoflarchmont",
+  "email": "recreation@larchmontny.gov",
+  "city": "Larchmont",
+  "zip": "10538",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "swimming",
+    "arts",
+    "nature"
+  ],
+  "activities": [
+    "swimming",
+    "color olympics",
+    "carnival",
+    "crafts",
+    "theater",
+    "nature programming",
+    "magic show"
+  ],
+  "grade_min": 0,
+  "grade_max": 6,
+  "age_min": 5,
+  "age_max": 12,
+  "description_short": "Village day camp at Flint Park for Larchmont residents and Chatsworth Avenue School students entering kindergarten to 6th grade, six weeks, 9 to 3, with daily swimming, crafts, Color Olympics, a carnival, theater by Sandbox Theatre and nature programming. After camp options add sports, STEM and art.",
+  "indoor_outdoor": "outdoor",
+  "extended_care": true,
+  "refund_policy_summary": "No refunds.",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "2026 season (6 weeks, no camp July 3)",
+      "start_date": "2026-06-29",
+      "end_date": "2026-08-07",
+      "availability": "unknown"
+    }
+  ],
+  "state": "NY",
+  "sources": [
+    {
+      "url": "https://larchmontny.gov/departments/recreation/day_camp.php",
+      "checked": "2026-11-25",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "email",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "age_min",
+        "age_max",
+        "description_short",
+        "indoor_outdoor",
+        "extended_care",
+        "refund_policy_summary",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Day Camp page: 2026 season June 29 to August 7 (no camp July 3), Monday to Friday 9 to 3; open to residents of the Village of Larchmont and Chatsworth Avenue School students, rising kindergartners to rising 6th graders; no refunds; expanded after camp options. No fee is posted. ZIP 10538 is from the Village Hall address in the page footer (120 Larchmont Avenue); the page gives no street address for Flint Park. Ages derived from grades. Outdoor inferred from a park camp with daily swimming."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://larchmontny.gov/departments/recreation/day_camp.php",
+      "kind": "html",
+      "title": "Day Camp, Village of Larchmont"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Fee",
+      "Flint Park street address",
+      "Lunch"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-25",
+      "page_checked": "https://larchmontny.gov/departments/recreation/day_camp.php",
+      "changes": [
+        "New camp, researched from https://larchmontny.gov/departments/recreation/day_camp.php"
+      ],
+      "for_andrew": [
+        "Only Larchmont village residents and Chatsworth Avenue School students can enroll; nobody else. Andrew's rule for residents only camps: record the one rate, say who can enroll, and ask. List it?",
+        "No fee is posted for 2026. List it without a price?"
+      ]
+    }
+  }
+}

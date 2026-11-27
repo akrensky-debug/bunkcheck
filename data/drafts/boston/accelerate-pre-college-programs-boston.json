@@ -1,0 +1,148 @@
+{
+  "slug": "accelerate-pre-college-programs-boston",
+  "name": "Accelerate Pre-College Programs (Boston campus)",
+  "operator_name": "Northeastern University",
+  "website_url": "https://precollegeprograms.northeastern.edu/boston-campus-programming/",
+  "email": "precollegeprograms@northeastern.edu",
+  "phone": "617-373-2200",
+  "city": "Boston",
+  "state": "MA",
+  "camp_type": "sleepaway",
+  "primary_categories": [
+    "academic"
+  ],
+  "secondary_categories": [
+    "STEM",
+    "technology",
+    "leadership"
+  ],
+  "activities": [
+    "bioengineering",
+    "biotechnology",
+    "cybersecurity and AI",
+    "engineering design",
+    "game design",
+    "physics",
+    "pharmacy",
+    "health professions",
+    "kinesiology",
+    "journalism",
+    "history",
+    "entrepreneurship",
+    "finance",
+    "ethics",
+    "language"
+  ],
+  "grade_min": 11,
+  "grade_max": 12,
+  "age_min": 16,
+  "age_max": 18,
+  "description_short": "Two week residential pre-college programs on Northeastern's Boston campus for rising high school juniors and seniors, by application. Students pick one of about twenty subjects, from bioengineering and cybersecurity to journalism and entrepreneurship, with classes about 9 to 4:30 on weekdays, live in a campus residence hall and join evening and weekend outings.",
+  "indoor_outdoor": "indoor",
+  "price_min": 6995,
+  "price_max": 6995,
+  "price_per": "session",
+  "meals_included": true,
+  "financial_aid": true,
+  "refund_policy_summary": "Admitted students pay a non-refundable deposit of 20% of tuition (after aid and discounts) to hold a place; full tuition is due May 1.",
+  "season_year": 2027,
+  "sessions": [
+    {
+      "name": "Session 1 (12 day residential, Boston)",
+      "start_date": "2027-07-11",
+      "end_date": "2027-07-23",
+      "price": 6995,
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 2 (12 day residential, Boston)",
+      "start_date": "2027-07-25",
+      "end_date": "2027-08-06",
+      "price": 6995,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://precollegeprograms.northeastern.edu/boston-campus-programming/",
+      "checked": "2026-11-22",
+      "fields": [
+        "name",
+        "website_url",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "description_short",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Boston campus programs page: rising juniors and seniors, 19 programs listed for 2027, each running July 11 to 23 or July 25 to August 6, 2027 (some both). Session names are mine; the price on each is the 2027 residential tuition from the apply page."
+    },
+    {
+      "url": "https://precollegeprograms.northeastern.edu/apply/",
+      "checked": "2026-11-22",
+      "fields": [
+        "operator_name",
+        "grade_min",
+        "grade_max",
+        "age_min",
+        "age_max",
+        "price_min",
+        "price_max",
+        "price_per",
+        "financial_aid",
+        "refund_policy_summary"
+      ],
+      "note": "Researched by Claude from this page. Apply page: 2027 residential tuition in Boston $6,995 including tuition, materials, housing, meals and social activities. Applications open early December 2026; priority deadline January 15 with $500 off for priority admits. Need based aid considered for all admitted students. Grades are entering grades 11 and 12 (rising juniors and seniors); ages derived from grades, not stated."
+    },
+    {
+      "url": "https://precollegeprograms.northeastern.edu/faq-residential/",
+      "checked": "2026-11-22",
+      "fields": [
+        "indoor_outdoor",
+        "meals_included"
+      ],
+      "note": "Researched by Claude from this page. Residential FAQ: twelve day programs, move in Sunday, academics about 9 to 4:30 Monday to Friday. Indoor is inferred from classroom and lab programs."
+    },
+    {
+      "url": "https://precollegeprograms.northeastern.edu/boston-campus-programming/bioengineering-immersion/",
+      "checked": "2026-11-22",
+      "fields": [
+        "email",
+        "phone"
+      ],
+      "note": "Researched by Claude from this page. Program page contact block: 617.373.2200, precollegeprograms@northeastern.edu."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://precollegeprograms.northeastern.edu/",
+      "kind": "html",
+      "title": "Accelerate Pre-College Programs"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Street address and ZIP",
+      "Which residence hall",
+      "ACA accreditation"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-22",
+      "page_checked": "https://precollegeprograms.northeastern.edu/",
+      "changes": [
+        "New camp, researched from https://precollegeprograms.northeastern.edu/"
+      ],
+      "for_andrew": [
+        "The pre-college pages give no street address or ZIP for the Boston campus, so the draft fails the required zip check. Northeastern's graduate site, which a search shows giving 360 Huntington Avenue, 02115, refused our fetcher (403). Use that address if you can confirm it, or ask Northeastern?",
+        "One listing covers all 19 Boston campus programs, since they share place, dates and price. They are selective, by application, and residential (commuting only by exception). Fine as one sleepaway listing?",
+        "Northeastern also runs programs in New York City (some commuter), Oakland and London, and online. Not listed here."
+      ]
+    }
+  }
+}

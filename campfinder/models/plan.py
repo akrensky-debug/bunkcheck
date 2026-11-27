@@ -5,7 +5,7 @@ from __future__ import annotations
 from datetime import date
 from uuid import UUID
 
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 
 class PlanSessionInput(BaseModel):
@@ -34,9 +34,25 @@ class PlanWeek(BaseModel):
     camps: list[PlanWeekCamp] = []
 
 
+class CostLine(BaseModel):
+    """One line of the summer's cost: a camp's tuition, or one of its fees for the sessions chosen."""
+
+    camp_id: UUID
+    camp_name: str
+    item: str
+    amount: float
+    unit_amount: float | None = None
+    per: str | None = None
+    count: int = 1
+    required: bool = True
+    note: str | None = None
+
+
 class PlanResponse(BaseModel):
     weeks: list[PlanWeek]
     total_estimated_cost: float
+    cost_breakdown: list[CostLine] = Field(default_factory=list, description="Tuition and each fee, camp by "
+                                           "camp. Required lines add up to the total; optional ones don't.")
     weeks_covered: int
     weeks_total: int
     gaps: list[date]

@@ -41,6 +41,24 @@ export interface SearchResponse {
   radius_miles: number
 }
 
+/** A cost beyond tuition, as the camp posts it. */
+export interface Fee {
+  name: string
+  amount: number
+  per: 'once' | 'year' | 'summer' | 'session' | 'week' | 'day'
+  required: boolean
+  note?: string | null
+}
+
+const FEE_UNIT: Record<Fee['per'], string> = {
+  once: 'once', year: 'a year', summer: 'for the summer', session: 'a session', week: 'a week', day: 'a day',
+}
+
+/** "$125 a year" */
+export function feeAmount(fee: Pick<Fee, 'amount' | 'per'>): string {
+  return `$${Math.round(fee.amount).toLocaleString()} ${FEE_UNIT[fee.per]}`
+}
+
 export interface SessionSummary {
   id: string
   name: string | null
@@ -90,6 +108,7 @@ export interface CampDetail extends CampSearchResult {
   indoor_outdoor: string | null
   gender_policy: string | null
   refund_policy_summary: string | null
+  fees?: Fee[]
   special_needs_notes: string | null
   swim_waterfront_notes: string | null
   aca_source_url: string | null

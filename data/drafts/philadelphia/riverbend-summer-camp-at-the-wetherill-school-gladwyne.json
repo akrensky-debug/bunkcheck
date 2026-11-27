@@ -1,0 +1,115 @@
+{
+  "slug": "riverbend-summer-camp-at-the-wetherill-school-gladwyne",
+  "name": "Riverbend Summer Camp at The Wetherill School",
+  "operator_name": "Riverbend Environmental Education Center",
+  "website_url": "https://www.riverbendeec.org/education-programs/nature-camps/wetherill-summer-camp",
+  "email": "camps@riverbendeec.org",
+  "phone": "610-527-5234",
+  "street_address": "1321 Beaumont Drive",
+  "city": "Lower Merion",
+  "state": "PA",
+  "camp_type": "day",
+  "primary_categories": [
+    "nature"
+  ],
+  "secondary_categories": [
+    "outdoor"
+  ],
+  "activities": [
+    "forest trails",
+    "songs and stories",
+    "gardens",
+    "water play",
+    "hands-on science",
+    "creative play"
+  ],
+  "age_min": 4,
+  "age_max": 6,
+  "description_short": "A first camp for 4, 5 and 6 year olds who have not started kindergarten, led by Riverbend counselors on The Wetherill School's wooded seven acre campus in Gladwyne. Children walk forest trails, gather for songs and stories, play with water and in the gardens, and have child sized indoor classrooms.",
+  "indoor_outdoor": "both",
+  "price_per_week": 625,
+  "price_min": 625,
+  "price_max": 625,
+  "price_per": "week",
+  "financial_aid": true,
+  "refund_policy_summary": "A $100 a week deposit is due at booking and is a non-refundable administration fee, as are transaction fees. Tuition balances are due in full and become non-refundable on June 1.",
+  "season_year": 2027,
+  "notes": "One weekly rate of $625. Hours 9:15 to 3:00, Monday to Friday. Only for children who have not yet started kindergarten. 2027 dates are still to be announced; the hub expects July to mid August. Registration for 2027 opens December 11, 2026.",
+  "sources": [
+    {
+      "url": "https://www.riverbendeec.org/education-programs/nature-camps/wetherill-summer-camp",
+      "checked": "2026-11-25",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "indoor_outdoor",
+        "price_per_week",
+        "price_min",
+        "price_max",
+        "price_per",
+        "financial_aid"
+      ],
+      "note": "Researched by Claude from this page. Wetherill camp page: Summer 2027, ages 4 to 6 not yet in kindergarten, dates TBD, 9:15 to 3:00, $625 per week, 1321 Beaumont Dr, Gladwyne; outdoor play spaces plus indoor classrooms; 'Ask about financial assistance' link. No ZIP on the page."
+    },
+    {
+      "url": "https://www.riverbendeec.org/education-programs/nature-camps/summer-camp-hub",
+      "checked": "2026-11-25",
+      "fields": [
+        "refund_policy_summary"
+      ],
+      "note": "Researched by Claude from this page. Summer camp hub: three locations, each with its own dates, pricing and age groups; registration for 2027 opens 9 AM December 11, 2026; deposit and refund terms; all campers must be potty trained. The hub lists Wetherill as 'Dates TBD! July -> Mid-August Expected'."
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1321+Beaumont+Drive%2C+Gladwyne%2C+PA&benchmark=Public_AR_Current&format=json",
+      "checked": "2026-11-25",
+      "fields": [
+        "zip"
+      ],
+      "note": "ZIP looked up with the Census Bureau geocoder from the address on the camp's page (1321 BEAUMONT DR, GLADWYNE, PA, 19035)"
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.riverbendeec.org/education-programs/nature-camps/wetherill-summer-camp",
+      "kind": "html",
+      "title": "Preschool Summer Camp in Gladwyne, PA | Riverbend"
+    },
+    "warnings": [],
+    "unknowns": [
+      "2027 session dates",
+      "Lunch",
+      "Extended care",
+      "ACA accreditation"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-25",
+      "page_checked": "https://www.riverbendeec.org/education-programs/nature-camps/wetherill-summer-camp",
+      "changes": [
+        "New camp, researched from https://www.riverbendeec.org/education-programs/nature-camps/wetherill-summer-camp",
+        "ZIP 19035 looked up from the camp's street address with the Census geocoder (ZIP lookups allowed by Andrew, 22 November).",
+        "City set to Lower Merion Township, which the Census geocoder gives for this address; Gladwyne is its postal town."
+      ],
+      "for_andrew": [
+        "Riverbend has not posted 2027 dates for its Wetherill School site ('Dates TBD', July to mid August expected), so the draft has no sessions. Separate from the Gladwyne preserve listing because it has its own place, ages (pre kindergarten only) and price. List it now without dates, or wait?"
+      ]
+    }
+  },
+  "zip": "19035"
+}

@@ -1,6 +1,6 @@
 {
   "metro": "Connecticut",
-  "checked": "2026-11-13",
+  "checked": "2026-11-25",
   "notes": "Real listings from each camp's own website. Unverified until a camp confirms. Edit here and re-run: python -m campfinder.seed.import_real --check",
   "camps": [
     {
@@ -7443,6 +7443,2083 @@
             "sessions"
           ],
           "note": "Drafted by the listing tool, checked against this page by Claude (BunkcheckBot fetch) on 2026-11-13, approved by Andrew"
+        }
+      ]
+    },
+    {
+      "slug": "adventure-day-camp-ridgefield",
+      "name": "Adventure Day Camp",
+      "operator_name": "Ridgefield Parks & Recreation",
+      "website_url": "https://www.ridgefieldparksandrec.org/223/Adventure-Day-Camp",
+      "phone": "203-431-2755",
+      "email": "campcoor@ridgefieldct.gov",
+      "street_address": "Ridgefield Recreation Center, 195 Danbury Road",
+      "city": "Ridgefield",
+      "zip": "06877",
+      "camp_type": "day",
+      "primary_categories": [
+        "general"
+      ],
+      "secondary_categories": [
+        "sports",
+        "arts",
+        "nature",
+        "swimming"
+      ],
+      "activities": [
+        "sports",
+        "games",
+        "arts and crafts",
+        "water fun",
+        "nature exploration",
+        "team building",
+        "gaga",
+        "swimming",
+        "beach trips",
+        "field trips"
+      ],
+      "age_min": 4,
+      "grade_max": 7,
+      "description_short": "A town day camp at the Ridgefield Recreation Center for 4 year olds through children entering grade 7, in one week sessions from 9 am to 4 pm. Groups by grade play sports and games, do art, explore the trails and pond, use the spray area and indoor pool, and older groups go to Martin Park Beach and on field trips.",
+      "indoor_outdoor": "both",
+      "extended_care": true,
+      "meals_included": false,
+      "refund_policy_summary": "Refundable up to three weeks before the session starts, with administrative approval and a $25 per week fee; medical absences with a doctor's note refunded pro rata. No refunds for cancelled field trips.",
+      "swim_waterfront_notes": "Older groups swim in the indoor pool with counselors in the water and lifeguards on duty; weekly swim tests. Grades 2 and up go to Martin Park Beach on Tuesdays. The 4 year olds have outdoor water play only.",
+      "price_per_week": 363,
+      "price_min": 308,
+      "price_max": 363,
+      "price_per": "week",
+      "season_year": 2026,
+      "sessions": [
+        {
+          "name": "Week 1",
+          "start_date": "2026-06-24",
+          "end_date": "2026-06-26",
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 2",
+          "start_date": "2026-06-29",
+          "end_date": "2026-07-02",
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 3",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "price": 363,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 4",
+          "start_date": "2026-07-13",
+          "end_date": "2026-07-17",
+          "price": 363,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 5",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "price": 363,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 6",
+          "start_date": "2026-07-27",
+          "end_date": "2026-07-31",
+          "price": 363,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 7",
+          "start_date": "2026-08-03",
+          "end_date": "2026-08-07",
+          "price": 363,
+          "availability": "unknown"
+        }
+      ],
+      "state": "CT",
+      "sources": [
+        {
+          "url": "https://www.ridgefieldparksandrec.org/223/Adventure-Day-Camp",
+          "checked": "2026-11-25",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "primary_categories",
+            "secondary_categories",
+            "activities",
+            "grade_max",
+            "description_short",
+            "indoor_outdoor",
+            "extended_care"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-22, approved by Andrew Krensky"
+        },
+        {
+          "url": "https://www.ridgefieldparksandrec.org/DocumentCenter/View/226",
+          "checked": "2026-11-25",
+          "fields": [
+            "email",
+            "age_min",
+            "meals_included",
+            "refund_policy_summary",
+            "swim_waterfront_notes",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-22, approved by Andrew Krensky"
+        },
+        {
+          "url": "https://www.ridgefieldparksandrec.org/228/Trailblazers-entering-grade-3",
+          "checked": "2026-11-25",
+          "fields": [
+            "price_per_week",
+            "price_min",
+            "price_max",
+            "price_per"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-22, approved by Andrew Krensky"
+        }
+      ]
+    },
+    {
+      "slug": "adventure-day-camp-southbury",
+      "name": "Adventure Day Camp",
+      "operator_name": "Southbury Parks and Recreation",
+      "website_url": "https://southburyct.myrec.com/documents/2026_adc_parent_handbook.pdf",
+      "phone": "203-262-0633",
+      "email": "adcdirector@southbury-ct.gov",
+      "street_address": "Ballantine Park Pavilion, 611 Old Field Road",
+      "city": "Southbury",
+      "camp_type": "day",
+      "primary_categories": [
+        "general"
+      ],
+      "secondary_categories": [
+        "sports",
+        "swimming",
+        "arts"
+      ],
+      "activities": [
+        "swim lessons",
+        "swimming",
+        "arts and crafts",
+        "basketball",
+        "pickleball",
+        "gaga",
+        "kickball",
+        "soccer",
+        "capture the flag",
+        "ultimate frisbee",
+        "volleyball",
+        "board games",
+        "field trips"
+      ],
+      "description_short": "A town day camp at the Ballantine Park pavilion in Southbury, weekdays 8:30 am to 4 pm in weekly sessions from July 6 to August 14. Campers are grouped by grade, play sports and games, do art, have a weekly swim lesson and camper only pool time, meet entertainers on Tuesdays and take a field trip most Thursdays.",
+      "indoor_outdoor": "outdoor",
+      "extended_care": true,
+      "meals_included": false,
+      "refund_policy_summary": "Full refund for cancellations before registration closes (the Friday two weeks before the camp week); 25% fee after that; 50% fee within seven days of the week's start. No refunds for dismissals.",
+      "swim_waterfront_notes": "Each week includes a swim lesson and pool time reserved for campers at the Ballantine Park pool, weather permitting; none on field trip days.",
+      "season_year": 2026,
+      "sessions": [
+        {
+          "name": "Week 1",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 2",
+          "start_date": "2026-07-13",
+          "end_date": "2026-07-17",
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 3",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 4",
+          "start_date": "2026-07-27",
+          "end_date": "2026-07-31",
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 5",
+          "start_date": "2026-08-03",
+          "end_date": "2026-08-07",
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 6",
+          "start_date": "2026-08-10",
+          "end_date": "2026-08-14",
+          "availability": "unknown"
+        }
+      ],
+      "state": "CT",
+      "sources": [
+        {
+          "url": "https://southburyct.myrec.com/documents/2026_adc_parent_handbook.pdf",
+          "checked": "2026-11-25",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "phone",
+            "email",
+            "street_address",
+            "city",
+            "state",
+            "camp_type",
+            "primary_categories",
+            "secondary_categories",
+            "activities",
+            "description_short",
+            "indoor_outdoor",
+            "extended_care",
+            "meals_included",
+            "refund_policy_summary",
+            "swim_waterfront_notes",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-22, approved by Andrew Krensky"
+        },
+        {
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=611+Old+Field+Road%2C+Southbury%2C+CT&benchmark=Public_AR_Current&format=json",
+          "checked": "2026-11-25",
+          "fields": [
+            "zip"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-22, approved by Andrew Krensky"
+        }
+      ],
+      "zip": "06488"
+    },
+    {
+      "slug": "artivity-at-the-bushnell-hartford",
+      "name": "Artivity @ The Bushnell",
+      "operator_name": "The Bushnell Center for the Performing Arts",
+      "website_url": "https://www.bushnell.org/education/community-engagement/artivity",
+      "registration_url": "https://www.bushnell.org/events/detail/artivity-sail-into-summer-7-13-7-17-26-eduartsuma",
+      "phone": "860-987-5900",
+      "street_address": "166 Capitol Avenue",
+      "city": "Hartford",
+      "state": "CT",
+      "zip": "06106",
+      "camp_type": "specialty",
+      "primary_categories": [
+        "arts",
+        "performing_arts"
+      ],
+      "activities": [
+        "puppetry",
+        "sewing",
+        "visual art",
+        "textiles",
+        "drumming",
+        "jewelry making",
+        "yoga",
+        "music making"
+      ],
+      "age_min": 7,
+      "age_max": 14,
+      "description_short": "A half day arts program at The Bushnell in Hartford for ages 7 to 14, 9 am to 12:15 pm for a week. Teaching artists lead hands on workshops such as puppetry, sewing, drumming, jewelry making, yoga and music, with offerings that vary by week.",
+      "indoor_outdoor": "indoor",
+      "season_year": 2026,
+      "sessions": [
+        {
+          "name": "Session One",
+          "start_date": "2026-07-13",
+          "end_date": "2026-07-17",
+          "availability": "unknown"
+        },
+        {
+          "name": "Session Two",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "availability": "unknown"
+        },
+        {
+          "name": "Session Three",
+          "start_date": "2026-07-27",
+          "end_date": "2026-07-31",
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.bushnell.org/education/community-engagement/artivity",
+          "checked": "2026-11-25",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "registration_url",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "primary_categories",
+            "age_min",
+            "age_max",
+            "indoor_outdoor"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        },
+        {
+          "url": "https://www.bushnell.org/events/detail/artivity-sail-into-summer-7-13-7-17-26-eduartsuma",
+          "checked": "2026-11-25",
+          "fields": [
+            "activities",
+            "description_short",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        }
+      ]
+    },
+    {
+      "slug": "boys-and-girls-club-of-milford-summer-camp-milford",
+      "name": "Boys & Girls Club of Milford Summer Camp",
+      "operator_name": "Boys & Girls Club of Milford",
+      "website_url": "https://boysandgirlsclubofmilford.com/summer-at-the-club/",
+      "registration_url": "https://bgcmilford.my.site.com/portal/s/login/?ec=302&startURL=%2Fportal%2Fs%2F",
+      "phone": "203-713-8055",
+      "email": "info@boysandgirlsclubofmilford.com",
+      "street_address": "59 Devonshire Road",
+      "city": "Milford",
+      "zip": "06460",
+      "camp_type": "day",
+      "primary_categories": [
+        "general"
+      ],
+      "secondary_categories": [
+        "arts",
+        "STEM",
+        "sports"
+      ],
+      "activities": [
+        "themed weeks",
+        "outdoor recreation",
+        "arts and crafts",
+        "STEM",
+        "group games",
+        "team building",
+        "field trips"
+      ],
+      "grade_min": 0,
+      "grade_max": 8,
+      "description_short": "A weekly summer day camp run by the Boys & Girls Club of Milford at its Simon Lake site on Devonshire Road, for children entering kindergarten through 8th grade, 9 am to 5:30 pm. Weeks have themes, outdoor recreation, arts and crafts, STEM and team games, with optional field trips at extra cost.",
+      "extended_care": true,
+      "price_per_week": 250,
+      "price_min": 250,
+      "price_max": 250,
+      "price_per": "week",
+      "season_year": 2026,
+      "sessions": [
+        {
+          "name": "Week 1",
+          "start_date": "2026-06-22",
+          "end_date": "2026-06-26",
+          "price": 250,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 2",
+          "start_date": "2026-06-29",
+          "end_date": "2026-07-02",
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 3",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "price": 250,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 4",
+          "start_date": "2026-07-13",
+          "end_date": "2026-07-17",
+          "price": 250,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 5",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "price": 250,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 6",
+          "start_date": "2026-07-27",
+          "end_date": "2026-07-31",
+          "price": 250,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 7",
+          "start_date": "2026-08-03",
+          "end_date": "2026-08-07",
+          "price": 250,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 8",
+          "start_date": "2026-08-10",
+          "end_date": "2026-08-14",
+          "price": 250,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 9",
+          "start_date": "2026-08-17",
+          "end_date": "2026-08-21",
+          "price": 250,
+          "availability": "unknown"
+        }
+      ],
+      "state": "CT",
+      "sources": [
+        {
+          "url": "https://boysandgirlsclubofmilford.com/summer-at-the-club/",
+          "checked": "2026-11-25",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "registration_url",
+            "phone",
+            "email",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "primary_categories",
+            "secondary_categories",
+            "activities",
+            "grade_min",
+            "grade_max",
+            "description_short",
+            "extended_care",
+            "price_per_week",
+            "price_min",
+            "price_max",
+            "price_per",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-22, approved by Andrew Krensky"
+        }
+      ]
+    },
+    {
+      "slug": "camp-aldrich-ridgefield",
+      "name": "Camp Aldrich",
+      "operator_name": "The Aldrich Contemporary Art Museum",
+      "website_url": "https://thealdrich.org/learn/camp-aldrich",
+      "phone": "203-438-4519",
+      "street_address": "258 Main Street",
+      "city": "Ridgefield",
+      "state": "CT",
+      "zip": "06877",
+      "camp_type": "specialty",
+      "primary_categories": [
+        "arts"
+      ],
+      "activities": [
+        "art making",
+        "gallery tours",
+        "sculpture garden",
+        "outdoor play"
+      ],
+      "grade_min": 1,
+      "grade_max": 6,
+      "description_short": "A week long art day camp at The Aldrich museum in Ridgefield, 9:30 am to 4 pm. Campers tour the galleries and Sculpture Garden, make art with a teaching artist, and show their work to families at a Friday evening celebration. Each week is for one grade band.",
+      "indoor_outdoor": "both",
+      "price_per_week": 530,
+      "price_min": 530,
+      "price_max": 530,
+      "price_per": "week",
+      "season_year": 2026,
+      "sessions": [
+        {
+          "name": "Week 1 (grades 1-3)",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "price": 530,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 2 (grades 1-3)",
+          "start_date": "2026-07-13",
+          "end_date": "2026-07-17",
+          "price": 530,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 3 (grades 4-6)",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "price": 530,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://thealdrich.org/learn/camp-aldrich",
+          "checked": "2026-11-25",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "primary_categories",
+            "activities",
+            "grade_min",
+            "grade_max",
+            "description_short",
+            "indoor_outdoor",
+            "price_per_week",
+            "price_min",
+            "price_max",
+            "price_per",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        }
+      ]
+    },
+    {
+      "slug": "camp-bart-stamford",
+      "name": "Camp Bart",
+      "operator_name": "Bartlett Arboretum & Gardens",
+      "website_url": "https://www.bartlettarboretum.org/summer-camp",
+      "email": "edu@bartlettarboretum.org",
+      "street_address": "151 Brookdale Road",
+      "city": "Stamford",
+      "state": "CT",
+      "zip": "06903",
+      "camp_type": "day",
+      "primary_categories": [
+        "nature"
+      ],
+      "secondary_categories": [
+        "STEM",
+        "outdoor",
+        "arts"
+      ],
+      "activities": [
+        "stream study",
+        "pond netting",
+        "birding",
+        "hiking",
+        "crafts",
+        "egg drop",
+        "fossil digging",
+        "orienteering",
+        "shelter building",
+        "water play"
+      ],
+      "grade_min": 0,
+      "grade_max": 6,
+      "age_min": 5,
+      "age_max": 12,
+      "description_short": "Nature day camp on the Bartlett Arboretum's 93 acres of forest and gardens in Stamford for children entering kindergarten to grade 6, in two age groups. Each week has a nature theme with hands-on science, crafts and outdoor play.",
+      "indoor_outdoor": "both",
+      "price_per_week": 475,
+      "price_min": 435,
+      "price_max": 475,
+      "price_per": "week",
+      "extended_care": true,
+      "meals_included": false,
+      "financial_aid": true,
+      "refund_policy_summary": "Withdrawals by email. Full refund less $25 per camper on or before May 4, 2026; 50% less $25 from May 5 to June 1; no refund from June 2 except approved emergencies. No refunds for missed days.",
+      "season_year": 2026,
+      "sessions": [
+        {
+          "name": "Session 1: Water Wonders",
+          "start_date": "2026-06-22",
+          "end_date": "2026-06-26",
+          "price": 475,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 2: Feathers & Flight",
+          "start_date": "2026-06-29",
+          "end_date": "2026-07-03",
+          "price": 475,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 3: Garden Explorers",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "price": 475,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 4: Bugs & Beasts",
+          "start_date": "2026-07-13",
+          "end_date": "2026-07-17",
+          "price": 475,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 5: Nature Artists",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "price": 475,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 6: Forest Explorers",
+          "start_date": "2026-07-27",
+          "end_date": "2026-07-31",
+          "price": 475,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 7: Arboretum Archaeologists & Geologists",
+          "start_date": "2026-08-03",
+          "end_date": "2026-08-07",
+          "price": 475,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 8: Wilderness Survivors",
+          "start_date": "2026-08-10",
+          "end_date": "2026-08-14",
+          "price": 475,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.bartlettarboretum.org/summer-camp",
+          "checked": "2026-11-25",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "email",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "primary_categories",
+            "secondary_categories",
+            "activities",
+            "grade_min",
+            "grade_max",
+            "age_min",
+            "age_max",
+            "description_short",
+            "indoor_outdoor",
+            "price_per_week",
+            "price_min",
+            "price_max",
+            "price_per",
+            "extended_care",
+            "meals_included",
+            "financial_aid",
+            "refund_policy_summary",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        }
+      ]
+    },
+    {
+      "slug": "camp-soundwaters-stamford",
+      "name": "Camp SoundWaters",
+      "operator_name": "SoundWaters",
+      "website_url": "https://soundwaters.org/youth-programs/summer-camp/",
+      "registration_url": "https://campscui.active.com/orgs/SoundWaters",
+      "email": "camp@soundwaters.org",
+      "phone": "203-252-3253",
+      "street_address": "1281 Cove Road",
+      "city": "Stamford",
+      "state": "CT",
+      "zip": "06902",
+      "camp_type": "day",
+      "primary_categories": [
+        "sailing",
+        "nature"
+      ],
+      "secondary_categories": [
+        "swimming",
+        "STEM",
+        "outdoor"
+      ],
+      "activities": [
+        "sailing",
+        "swimming",
+        "animal encounters",
+        "science experiments",
+        "water exploration",
+        "fishing",
+        "boogie boarding",
+        "art",
+        "boat race",
+        "talent show"
+      ],
+      "grade_min": 1,
+      "grade_max": 9,
+      "age_min": 6,
+      "age_max": 15,
+      "description_short": "Sailing and marine science day camp at SoundWaters' Coastal Center in Cove Island Park, Stamford, for children entering grades 1 to 9, grouped by grade. Each themed week mixes sailing on Holly Pond or Long Island Sound with swimming, animal encounters, experiments and art; older groups spend more of the day sailing.",
+      "indoor_outdoor": "both",
+      "price_min": 550,
+      "price_max": 675,
+      "price_per": "week",
+      "extended_care": true,
+      "meals_included": false,
+      "financial_aid": true,
+      "refund_policy_summary": "A $150 per session deposit is due at registration and is not refundable. The balance is charged May 1, 2027; refunds less the deposit until May 1, none after.",
+      "swim_waterfront_notes": "Staff include certified sailing instructors and lifeguards; younger groups swim at the beach daily. Sharks (grades 7 to 9) sail on Long Island Sound with US Sailing certified instructors.",
+      "season_year": 2027,
+      "sessions": [
+        {
+          "name": "Session 1: ArtSea Week",
+          "start_date": "2027-06-14",
+          "end_date": "2027-06-18",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 2: Long Island Sound Survivor",
+          "start_date": "2027-06-21",
+          "end_date": "2027-06-25",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 3: Awesome Olympians",
+          "start_date": "2027-06-28",
+          "end_date": "2027-07-02",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 4: Experiment Escapades (four days, no camp July 5)",
+          "start_date": "2027-07-06",
+          "end_date": "2027-07-09",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 5: Anything That Floats",
+          "start_date": "2027-07-12",
+          "end_date": "2027-07-16",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 6: Sound Stewards",
+          "start_date": "2027-07-19",
+          "end_date": "2027-07-23",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 7: Camp SoundWaters Got Talent!",
+          "start_date": "2027-07-26",
+          "end_date": "2027-07-30",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 8: Pirate Island",
+          "start_date": "2027-08-02",
+          "end_date": "2027-08-06",
+          "price": null,
+          "availability": "unknown"
+        },
+        {
+          "name": "Session 9: Camp SoundWaters Carnival",
+          "start_date": "2027-08-09",
+          "end_date": "2027-08-13",
+          "price": null,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://soundwaters.org/youth-programs/summer-camp/",
+          "checked": "2026-11-25",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "registration_url",
+            "email",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "primary_categories",
+            "secondary_categories",
+            "activities",
+            "grade_min",
+            "grade_max",
+            "age_min",
+            "age_max",
+            "description_short",
+            "indoor_outdoor",
+            "price_min",
+            "price_max",
+            "price_per",
+            "extended_care",
+            "meals_included",
+            "financial_aid",
+            "refund_policy_summary",
+            "swim_waterfront_notes",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        }
+      ]
+    },
+    {
+      "slug": "camp-wangumbaug-coventry",
+      "name": "Camp Wangumbaug",
+      "operator_name": "Town of Coventry Parks and Recreation",
+      "website_url": "https://www.coventry-ct.gov/616/Camp-Wangumbaug",
+      "registration_url": "https://secure.rec1.com/CT/coventry-ct/catalog",
+      "email": "rec@coventry-ct.gov",
+      "camp_type": "day",
+      "primary_categories": [
+        "general"
+      ],
+      "grade_min": 0,
+      "grade_max": 8,
+      "extended_care": true,
+      "financial_aid": true,
+      "price_per_week": 250,
+      "price_min": 250,
+      "price_max": 250,
+      "price_per": "week",
+      "season_year": 2026,
+      "sessions": [
+        {
+          "name": "Week 1",
+          "start_date": "2026-06-22",
+          "end_date": "2026-06-26",
+          "price": 250,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 2",
+          "start_date": "2026-06-29",
+          "end_date": "2026-07-03",
+          "price": 250,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 3",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "price": 250,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 4",
+          "start_date": "2026-07-13",
+          "end_date": "2026-07-17",
+          "price": 250,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 5",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "price": 250,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 6",
+          "start_date": "2026-07-27",
+          "end_date": "2026-07-31",
+          "price": 250,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 7",
+          "start_date": "2026-08-03",
+          "end_date": "2026-08-07",
+          "price": 250,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 8",
+          "start_date": "2026-08-10",
+          "end_date": "2026-08-14",
+          "price": 250,
+          "availability": "unknown"
+        }
+      ],
+      "phone": "860-968-7700",
+      "street_address": "Patriots Park, 124 Lake Street",
+      "city": "Coventry",
+      "state": "CT",
+      "zip": "06238",
+      "refund_policy_summary": "The $25 weekly deposit is not refundable. No refunds for cancellations after June 8, and no refunds or credits for missed weeks without a doctor's note. Cancellations must be made in writing by email.",
+      "secondary_categories": [
+        "swimming",
+        "sports",
+        "arts"
+      ],
+      "activities": [
+        "swimming",
+        "arts and crafts",
+        "sports",
+        "teambuilding",
+        "group games",
+        "field trips",
+        "special guest performers"
+      ],
+      "description_short": "Coventry's town day camp at Patriots Park for children entering kindergarten through 8th grade, 9 am to 4 pm by the week. Campers rotate through arts and crafts, sports, teambuilding and lifeguarded swimming each day, with optional field trips for grades 2 to 8.",
+      "indoor_outdoor": "both",
+      "meals_included": false,
+      "swim_waterfront_notes": "Swimming is a daily rotation supervised by lifeguards; campers stay in water no deeper than armpit height and may wear life vests.",
+      "sources": [
+        {
+          "url": "https://www.coventry-ct.gov/616/Camp-Wangumbaug",
+          "checked": "2026-11-25",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "registration_url",
+            "email",
+            "camp_type",
+            "primary_categories",
+            "grade_min",
+            "grade_max",
+            "extended_care",
+            "financial_aid",
+            "price_per_week",
+            "price_min",
+            "price_max",
+            "price_per",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        },
+        {
+          "url": "https://www.coventry-ct.gov/DocumentCenter/View/10222/Parent-Handbook26",
+          "checked": "2026-11-25",
+          "fields": [
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "refund_policy_summary"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        },
+        {
+          "url": "https://www.coventry-ct.gov/DocumentCenter/View/10238/Camp-FAQ",
+          "checked": "2026-11-25",
+          "fields": [
+            "secondary_categories",
+            "activities",
+            "description_short",
+            "indoor_outdoor",
+            "meals_included",
+            "swim_waterfront_notes"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        }
+      ]
+    },
+    {
+      "slug": "newtown-community-center-summer-day-camp-newtown",
+      "name": "Newtown Community Center Summer Day Camp",
+      "operator_name": "Town of Newtown (Newtown Community Center)",
+      "website_url": "https://online.flippingbook.com/view/544882117",
+      "email": "info.ncc@newtown-ct.gov",
+      "phone": "(203) 270-4349",
+      "street_address": "8 Simpson St",
+      "city": "Newtown",
+      "state": "CT",
+      "zip": "06470",
+      "camp_type": "day",
+      "primary_categories": [
+        "general"
+      ],
+      "secondary_categories": [
+        "sports",
+        "arts",
+        "swimming",
+        "nature"
+      ],
+      "activities": [
+        "athletics",
+        "arts and crafts",
+        "nature exploration",
+        "team building games",
+        "swimming",
+        "hiking",
+        "cooking",
+        "indoor turf games",
+        "special events"
+      ],
+      "grade_min": 0,
+      "grade_max": 6,
+      "age_min": 5,
+      "age_max": 12,
+      "description_short": "Full day camp at the Newtown Community Center and the Fairfield Hills campus for children entering kindergarten to grade 6. Each week has a theme, with sports, crafts, nature walks, pool time and a weekly visit to Newtown Youth Academy for turf and court games.",
+      "indoor_outdoor": "both",
+      "price_per_week": 245,
+      "price_min": 245,
+      "price_per": "week",
+      "extended_care": true,
+      "meals_included": false,
+      "refund_policy_summary": "Withdrawing from a full week earns a credit for future use; a full refund needs a doctor's note. No refunds or credits for single missed days. A $100 deposit per week is not refundable.",
+      "swim_waterfront_notes": "Swim test on the first day; non swimmers wear a life vest. No formal swim lessons. Indoor pool at the community center.",
+      "season_year": 2026,
+      "sessions": [
+        {
+          "name": "Week 1: Summer Blast Off",
+          "start_date": "2026-06-22",
+          "end_date": "2026-06-26",
+          "price": 245,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 2: Rockin' in the USA",
+          "start_date": "2026-06-29",
+          "end_date": "2026-07-03",
+          "price": 245,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 3: Carnival Craze",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "price": 245,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 4: Wet and Wild",
+          "start_date": "2026-07-13",
+          "end_date": "2026-07-17",
+          "price": 245,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 5: Spirit Week",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "price": 245,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 6: Sports Mania",
+          "start_date": "2026-07-27",
+          "end_date": "2026-07-31",
+          "price": 245,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 7: Camp's Got Talent",
+          "start_date": "2026-08-03",
+          "end_date": "2026-08-07",
+          "price": 245,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 8: Decades Week",
+          "start_date": "2026-08-10",
+          "end_date": "2026-08-14",
+          "price": 245,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 9: Best of Summer Rewind",
+          "start_date": "2026-08-17",
+          "end_date": "2026-08-21",
+          "price": 245,
+          "availability": "unknown"
+        }
+      ],
+      "notes": "Member rate $235 a week. Before care 7:30 to 9:00 am and after care 4:00 to 6:00 pm (the catalog gives $25 a week on one page and $50 on another). Half day specialty camps (art, nature, cooking) and toddler camps for ages 3 to 4 are also offered. Register through Community Pass.",
+      "sources": [
+        {
+          "url": "https://online.flippingbook.com/view/544882117",
+          "checked": "2026-11-25",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "email",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "primary_categories",
+            "secondary_categories",
+            "activities",
+            "grade_min",
+            "grade_max",
+            "age_min",
+            "age_max",
+            "description_short",
+            "indoor_outdoor",
+            "price_per_week",
+            "price_min",
+            "price_per",
+            "extended_care",
+            "meals_included",
+            "refund_policy_summary",
+            "swim_waterfront_notes",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-22, approved by Andrew Krensky"
+        }
+      ]
+    },
+    {
+      "slug": "ospr-summer-camp-and-middle-school-summer-camp-old-saybrook",
+      "name": "OSPR Summer Camp and Middle School Summer Camp",
+      "operator_name": "Old Saybrook Parks & Recreation",
+      "website_url": "https://oldsaybrookct.myrec.com/forms/5579_springsummer_2026.pdf",
+      "phone": "860-395-3152",
+      "street_address": "The Rec, 308 Main Street",
+      "city": "Old Saybrook",
+      "zip": "06475",
+      "camp_type": "day",
+      "primary_categories": [
+        "general"
+      ],
+      "secondary_categories": [
+        "sports",
+        "arts",
+        "nature"
+      ],
+      "activities": [
+        "nature",
+        "arts and crafts",
+        "sports",
+        "outdoor play",
+        "beach trips",
+        "mini golf",
+        "entertainers",
+        "water day",
+        "field trips"
+      ],
+      "grade_min": 1,
+      "grade_max": 8,
+      "description_short": "Town run weekly day camps at The Rec in Old Saybrook, 9 am to 4 pm: OSPR Summer Camp for children entering grades 1 to 4, and Middle School Summer Camp for grades 5 to 8 with a weekly field trip. Days include nature, arts and crafts, sports, beach and mini golf outings, entertainers and a water day.",
+      "extended_care": true,
+      "meals_included": false,
+      "refund_policy_summary": "Full refund if requested one week before the program starts; 50% refund if cancelled less than one week before; no refunds once the program starts. Full refund if the department cancels.",
+      "price_min": 130,
+      "price_max": 185,
+      "price_per": "week",
+      "season_year": 2026,
+      "sessions": [
+        {
+          "name": "OSPR Summer Camp (grades 1 to 4) Session 1",
+          "start_date": "2026-06-22",
+          "end_date": "2026-06-26",
+          "price": 140,
+          "availability": "unknown"
+        },
+        {
+          "name": "OSPR Summer Camp (grades 1 to 4) Session 2",
+          "start_date": "2026-06-29",
+          "end_date": "2026-07-02",
+          "price": 130,
+          "availability": "unknown"
+        },
+        {
+          "name": "OSPR Summer Camp (grades 1 to 4) Session 3",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "price": 140,
+          "availability": "unknown"
+        },
+        {
+          "name": "OSPR Summer Camp (grades 1 to 4) Session 4",
+          "start_date": "2026-07-13",
+          "end_date": "2026-07-17",
+          "price": 140,
+          "availability": "unknown"
+        },
+        {
+          "name": "OSPR Summer Camp (grades 1 to 4) Session 5",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "price": 140,
+          "availability": "unknown"
+        },
+        {
+          "name": "OSPR Summer Camp (grades 1 to 4) Session 6",
+          "start_date": "2026-07-27",
+          "end_date": "2026-07-31",
+          "price": 140,
+          "availability": "unknown"
+        },
+        {
+          "name": "OSPR Summer Camp (grades 1 to 4) Session 7",
+          "start_date": "2026-08-03",
+          "end_date": "2026-08-07",
+          "price": 140,
+          "availability": "unknown"
+        },
+        {
+          "name": "OSPR Summer Camp (grades 1 to 4) Session 8",
+          "start_date": "2026-08-10",
+          "end_date": "2026-08-14",
+          "price": 140,
+          "availability": "unknown"
+        },
+        {
+          "name": "Middle School Summer Camp (grades 5 to 8) Session 1",
+          "start_date": "2026-06-22",
+          "end_date": "2026-06-26",
+          "price": 185,
+          "availability": "unknown"
+        },
+        {
+          "name": "Middle School Summer Camp (grades 5 to 8) Session 2",
+          "start_date": "2026-06-29",
+          "end_date": "2026-07-02",
+          "price": 160,
+          "availability": "unknown"
+        },
+        {
+          "name": "Middle School Summer Camp (grades 5 to 8) Session 3",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "price": 185,
+          "availability": "unknown"
+        },
+        {
+          "name": "Middle School Summer Camp (grades 5 to 8) Session 4",
+          "start_date": "2026-07-13",
+          "end_date": "2026-07-17",
+          "price": 185,
+          "availability": "unknown"
+        },
+        {
+          "name": "Middle School Summer Camp (grades 5 to 8) Session 5",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "price": 185,
+          "availability": "unknown"
+        },
+        {
+          "name": "Middle School Summer Camp (grades 5 to 8) Session 6",
+          "start_date": "2026-07-27",
+          "end_date": "2026-07-31",
+          "price": 185,
+          "availability": "unknown"
+        },
+        {
+          "name": "Middle School Summer Camp (grades 5 to 8) Session 7",
+          "start_date": "2026-08-03",
+          "end_date": "2026-08-07",
+          "price": 185,
+          "availability": "unknown"
+        },
+        {
+          "name": "Middle School Summer Camp (grades 5 to 8) Session 8",
+          "start_date": "2026-08-10",
+          "end_date": "2026-08-14",
+          "price": 185,
+          "availability": "unknown"
+        }
+      ],
+      "state": "CT",
+      "sources": [
+        {
+          "url": "https://oldsaybrookct.myrec.com/forms/5579_springsummer_2026.pdf",
+          "checked": "2026-11-25",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "primary_categories",
+            "secondary_categories",
+            "activities",
+            "grade_min",
+            "grade_max",
+            "description_short",
+            "extended_care",
+            "meals_included",
+            "refund_policy_summary",
+            "price_min",
+            "price_max",
+            "price_per",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-22, approved by Andrew Krensky"
+        }
+      ]
+    },
+    {
+      "operator_name": "Elm Shakespeare Company",
+      "website_url": "https://www.elmshakespeare.org/education/players-camp",
+      "email": "sarah@elmshakespeare.org",
+      "city": "New Haven",
+      "state": "CT",
+      "camp_type": "specialty",
+      "primary_categories": [
+        "performing_arts"
+      ],
+      "activities": [
+        "acting",
+        "stagecraft",
+        "storytelling",
+        "performance"
+      ],
+      "age_min": 7,
+      "age_max": 13,
+      "financial_aid": true,
+      "price_min": 670,
+      "price_max": 670,
+      "price_per": "session",
+      "season_year": 2026,
+      "slug": "players-camp-westville-new-haven",
+      "name": "Players Camp (Westville)",
+      "street_address": "Congregation Beth El-Keser Israel, 85 Harrison Street",
+      "indoor_outdoor": "indoor",
+      "description_short": "A two week indoor theater camp for ages 7 to 13 run by Elm Shakespeare Company at Congregation Beth El-Keser Israel in the Westville part of New Haven. Campers learn acting, stagecraft and storytelling with theater professionals and finish with a performance tied to the company's summer Shakespeare production.",
+      "sessions": [
+        {
+          "name": "Westville 1",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-17",
+          "price": 670,
+          "availability": "unknown"
+        },
+        {
+          "name": "Westville 2",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-31",
+          "price": 670,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.elmshakespeare.org/education/players-camp",
+          "checked": "2026-11-25",
+          "fields": [
+            "operator_name",
+            "website_url",
+            "email",
+            "city",
+            "state",
+            "camp_type",
+            "primary_categories",
+            "activities",
+            "age_min",
+            "age_max",
+            "financial_aid",
+            "price_min",
+            "price_max",
+            "price_per",
+            "name",
+            "street_address",
+            "indoor_outdoor",
+            "description_short",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        },
+        {
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=85+Harrison+Street%2C+New+Haven%2C+CT&benchmark=Public_AR_Current&format=json",
+          "checked": "2026-11-25",
+          "fields": [
+            "zip"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        }
+      ],
+      "zip": "06515"
+    },
+    {
+      "slug": "summer-at-fcds-fairfield",
+      "name": "Summer@FCDS",
+      "operator_name": "Fairfield Country Day School",
+      "website_url": "https://www.fairfieldcountryday.org/summerfcds",
+      "registration_url": "https://summerfcds.campbrainregistration.com/",
+      "street_address": "2970 Bronson Road",
+      "city": "Fairfield",
+      "state": "CT",
+      "zip": "06824",
+      "camp_type": "day",
+      "primary_categories": [
+        "general"
+      ],
+      "secondary_categories": [
+        "sports",
+        "arts",
+        "swimming"
+      ],
+      "activities": [
+        "sports",
+        "arts and crafts",
+        "visual arts",
+        "culinary arts",
+        "swimming",
+        "technology",
+        "game rooms",
+        "soccer",
+        "dodgeball",
+        "kickball",
+        "capture the flag",
+        "floor hockey",
+        "basketball"
+      ],
+      "gender_policy": "coed",
+      "grade_min": 0,
+      "grade_max": 6,
+      "description_short": "A coed day camp on the 20 acre Fairfield Country Day School campus for children entering kindergarten through 6th grade, in week long sessions. Campers play sports, do arts and crafts and cooking, use the game rooms and technology, and swim daily in the school pool.",
+      "indoor_outdoor": "both",
+      "season_year": 2026,
+      "email": "summer@fairfieldcountryday.org",
+      "phone": "203-259-2723",
+      "refund_policy_summary": "The $125 weekly deposit is not refundable. Written cancellation was due by March 31, 2026; after that the fee is not refunded or prorated for missed sessions or days.",
+      "swim_waterfront_notes": "All campers swim daily, weather permitting, with full time lifeguards. Swimming is encouraged but not required, flotation devices are not allowed, and no swim lessons are given.",
+      "price_min": 565,
+      "price_max": 595,
+      "price_per": "week",
+      "price_per_week": 595,
+      "sessions": [
+        {
+          "name": "Week 1",
+          "start_date": "2026-06-15",
+          "end_date": "2026-06-19",
+          "price": 565,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 2",
+          "start_date": "2026-06-22",
+          "end_date": "2026-06-26",
+          "price": 595,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 3",
+          "start_date": "2026-06-29",
+          "end_date": "2026-07-03",
+          "price": 565,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 4",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "price": 595,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 5",
+          "start_date": "2026-07-13",
+          "end_date": "2026-07-17",
+          "price": 595,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 6",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "price": 595,
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.fairfieldcountryday.org/summerfcds",
+          "checked": "2026-11-25",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "registration_url",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "primary_categories",
+            "secondary_categories",
+            "activities",
+            "gender_policy",
+            "grade_min",
+            "grade_max",
+            "description_short",
+            "indoor_outdoor"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        },
+        {
+          "url": "https://www.fairfieldcountryday.org/summerfcds/faqs",
+          "checked": "2026-11-25",
+          "fields": [
+            "email",
+            "phone",
+            "refund_policy_summary",
+            "swim_waterfront_notes",
+            "price_min",
+            "price_max",
+            "price_per",
+            "price_per_week",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        }
+      ]
+    },
+    {
+      "slug": "summer-fun-camp-bristol",
+      "name": "Summer Fun Camp",
+      "operator_name": "Bristol Parks, Recreation, Youth and Community Services",
+      "website_url": "https://bristolct.myrec.com/documents/2026_summer_fun_camp_gr_13_weekly_calendar.pdf",
+      "street_address": "Bristol Eastern High School, 632 King Street",
+      "city": "Bristol",
+      "zip": "06010",
+      "camp_type": "day",
+      "primary_categories": [
+        "general"
+      ],
+      "secondary_categories": [
+        "arts",
+        "STEM"
+      ],
+      "activities": [
+        "field trips",
+        "bowling",
+        "tie dye",
+        "water play",
+        "art studio",
+        "science center",
+        "laser tag",
+        "movies",
+        "talent show",
+        "camp olympics"
+      ],
+      "grade_min": 1,
+      "grade_max": 7,
+      "description_short": "A city day camp at Bristol Eastern High School for grades 1 to 3 and 4 to 7, weekdays 9 am to 3 pm for six weeks. Each week has bowling, a water play day and outings or visitors such as a Bristol Blues game, the CT Science Center, laser tag and a movie, with admission fees included.",
+      "extended_care": true,
+      "price_per_week": 150,
+      "price_min": 150,
+      "price_max": 150,
+      "price_per": "week",
+      "season_year": 2026,
+      "sessions": [
+        {
+          "name": "Week 1",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "price": 150,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 2",
+          "start_date": "2026-07-13",
+          "end_date": "2026-07-17",
+          "price": 150,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 3",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "price": 150,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 4",
+          "start_date": "2026-07-27",
+          "end_date": "2026-07-31",
+          "price": 150,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 5",
+          "start_date": "2026-08-03",
+          "end_date": "2026-08-07",
+          "price": 150,
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 6",
+          "start_date": "2026-08-10",
+          "end_date": "2026-08-14",
+          "price": 150,
+          "availability": "unknown"
+        }
+      ],
+      "state": "CT",
+      "sources": [
+        {
+          "url": "https://bristolct.myrec.com/documents/2026_summer_fun_camp_gr_13_weekly_calendar.pdf",
+          "checked": "2026-11-25",
+          "fields": [
+            "name",
+            "website_url",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "primary_categories",
+            "secondary_categories",
+            "activities",
+            "grade_min",
+            "description_short",
+            "extended_care",
+            "price_per_week",
+            "price_min",
+            "price_max",
+            "price_per",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-22, approved by Andrew Krensky"
+        },
+        {
+          "url": "https://bristolct.myrec.com/documents/2026_summer_fun_camp_gr_47_weekly_calendar.pdf",
+          "checked": "2026-11-25",
+          "fields": [
+            "grade_max"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-22, approved by Andrew Krensky"
+        },
+        {
+          "url": "https://bristolct.myrec.com/info/default.aspx",
+          "checked": "2026-11-25",
+          "fields": [
+            "operator_name"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-22, approved by Andrew Krensky"
+        }
+      ]
+    },
+    {
+      "slug": "summer-place-west-hartford",
+      "name": "Summer Place",
+      "operator_name": "University of Hartford",
+      "website_url": "https://www.hartford.edu/community/summerplace/",
+      "email": "splace@hartford.edu",
+      "phone": "860-768-4432",
+      "street_address": "200 Bloomfield Avenue",
+      "city": "West Hartford",
+      "state": "CT",
+      "zip": "06117",
+      "camp_type": "day",
+      "primary_categories": [
+        "general"
+      ],
+      "secondary_categories": [
+        "STEM",
+        "performing_arts",
+        "sports",
+        "leadership"
+      ],
+      "activities": [
+        "science and technology",
+        "culinary arts",
+        "theater",
+        "recreational sports",
+        "art",
+        "music",
+        "stories",
+        "off campus trips"
+      ],
+      "grade_max": 12,
+      "description_short": "Day camp on the University of Hartford campus with groups from preschool through high school. Younger children play, make art and hear stories, grades 1 to 9 choose science, cooking, theater and sports, and teens in grades 10 to 12 train as leaders working with younger campers.",
+      "extended_care": true,
+      "season_year": 2027,
+      "sessions": [
+        {
+          "name": "Week 1",
+          "start_date": "2027-06-28",
+          "end_date": "2027-07-02",
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 2 (no camp Monday July 5)",
+          "start_date": "2027-07-05",
+          "end_date": "2027-07-09",
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 3",
+          "start_date": "2027-07-12",
+          "end_date": "2027-07-16",
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 4",
+          "start_date": "2027-07-19",
+          "end_date": "2027-07-23",
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 5",
+          "start_date": "2027-07-26",
+          "end_date": "2027-07-30",
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 6",
+          "start_date": "2027-08-02",
+          "end_date": "2027-08-06",
+          "availability": "unknown"
+        },
+        {
+          "name": "SPLIT Session 1 (grades 10 to 12)",
+          "start_date": "2027-06-28",
+          "end_date": "2027-07-09",
+          "availability": "unknown"
+        },
+        {
+          "name": "SPLIT Session 2 (grades 10 to 12)",
+          "start_date": "2027-07-12",
+          "end_date": "2027-07-30",
+          "availability": "unknown"
+        },
+        {
+          "name": "SPLIT Session 3 (grades 10 to 12)",
+          "start_date": "2027-07-26",
+          "end_date": "2027-08-06",
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.hartford.edu/community/summerplace/",
+          "checked": "2026-11-25",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "email",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "primary_categories",
+            "secondary_categories",
+            "activities",
+            "grade_max",
+            "description_short",
+            "extended_care",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        }
+      ]
+    },
+    {
+      "slug": "summer-youth-academy-series-west-haven",
+      "name": "Summer Youth Academy Series",
+      "operator_name": "University of New Haven",
+      "website_url": "https://www.newhaven.edu/admissions/pre-college/summer-youth/index.php",
+      "registration_url": "https://admissions.newhaven.edu/register/?id=5ddc8bfa-a93e-4c2f-b2cb-9b230b3b0739",
+      "phone": "203-932-7000",
+      "street_address": "300 Boston Post Road",
+      "city": "West Haven",
+      "state": "CT",
+      "zip": "06516",
+      "camp_type": "specialty",
+      "primary_categories": [
+        "academic",
+        "STEM"
+      ],
+      "secondary_categories": [
+        "arts",
+        "leadership"
+      ],
+      "activities": [
+        "forensic science",
+        "engineering",
+        "robotics",
+        "filmmaking",
+        "interior design",
+        "entrepreneurship",
+        "health professions",
+        "songwriting and music production",
+        "marine science",
+        "model united nations",
+        "genetics"
+      ],
+      "grade_min": 6,
+      "grade_max": 12,
+      "description_short": "Week long pre college academies on the University of New Haven campus in West Haven, each on one subject such as crime scene investigation, engineering, filmmaking or health professions. Students work with university faculty during the day, and some academies offer an overnight option in a residence hall.",
+      "meals_included": true,
+      "season_year": 2026,
+      "refund_policy_summary": "Refunds are granted before June 1, 2026 minus a 25% processing fee; no refunds after June 1, 2026.",
+      "sessions": [
+        {
+          "name": "Crime Scene Investigation Academy (grades 10 to 12, sold out)",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "availability": "full"
+        },
+        {
+          "name": "Crime Scene Investigation Academy (grades 10 to 12, sold out)",
+          "start_date": "2026-07-13",
+          "end_date": "2026-07-17",
+          "availability": "full"
+        },
+        {
+          "name": "Exploring Engineering: Engineering Superheroes (grades 6 to 8)",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "availability": "unknown"
+        },
+        {
+          "name": "Filmmaking: An Introduction for Young Directors Academy",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "availability": "unknown"
+        },
+        {
+          "name": "Interior Design Academy",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "availability": "unknown"
+        },
+        {
+          "name": "Entrepreneurship Academy: Social Impact & Innovation (grades 9 to 12)",
+          "start_date": "2026-07-13",
+          "end_date": "2026-07-17",
+          "availability": "unknown"
+        },
+        {
+          "name": "Health Professions Academy",
+          "start_date": "2026-07-13",
+          "end_date": "2026-07-17",
+          "availability": "unknown"
+        },
+        {
+          "name": "Songwriting & Music Production Academy",
+          "start_date": "2026-07-13",
+          "end_date": "2026-07-17",
+          "availability": "unknown"
+        },
+        {
+          "name": "Engineering Your Future Academy (grades 9 to 12)",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "availability": "unknown"
+        },
+        {
+          "name": "Exploring Engineering: Robotics Academy (grades 6 to 8, sold out)",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "availability": "full"
+        },
+        {
+          "name": "Marine & Environmental Sciences Academy",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "availability": "unknown"
+        },
+        {
+          "name": "Model United Nations Academy",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "availability": "unknown"
+        },
+        {
+          "name": "Patient to Planet: Genetics, Environment & Human Health",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "availability": "unknown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.newhaven.edu/admissions/pre-college/summer-youth/index.php",
+          "checked": "2026-11-25",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "registration_url",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "description_short",
+            "meals_included"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        },
+        {
+          "url": "https://www.newhaven.edu/admissions/pre-college/summer-youth/academy-programs.php",
+          "checked": "2026-11-25",
+          "fields": [
+            "primary_categories",
+            "secondary_categories",
+            "activities",
+            "grade_min",
+            "grade_max",
+            "refund_policy_summary",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-20, approved by Andrew Krensky"
+        }
+      ]
+    },
+    {
+      "slug": "summerscape-day-camp-rocky-hill",
+      "name": "Summerscape Day Camp",
+      "operator_name": "Rocky Hill Parks & Recreation",
+      "website_url": "https://rockyhillct.myrec.com/documents/summerscape_day_camp_parent_handbook__updated_22426.pdf",
+      "registration_url": "https://rockyhillct.myrec.com/info/",
+      "phone": "860-258-2772",
+      "street_address": "Rocky Hill High School, 50 Chapin Avenue",
+      "city": "Rocky Hill",
+      "zip": "06067",
+      "camp_type": "day",
+      "primary_categories": [
+        "general"
+      ],
+      "secondary_categories": [
+        "swimming",
+        "arts",
+        "sports"
+      ],
+      "activities": [
+        "swimming",
+        "water activities",
+        "electives",
+        "spirit days",
+        "theme weeks",
+        "talent show"
+      ],
+      "age_min": 4,
+      "grade_max": 5,
+      "description_short": "A town day camp at Rocky Hill High School for children from age 4 (pre-K) through grade 5, open to residents and non-residents, 8:30 am to 4 pm in weekly sessions. Campers have weekly themes and spirit days, grades 1 to 5 swim in the school's indoor pool, and grades 3 to 5 pick a weekly elective. The camp stays on site.",
+      "indoor_outdoor": "both",
+      "extended_care": true,
+      "transportation": false,
+      "meals_included": false,
+      "swim_waterfront_notes": "Grades 1 to 5 swim in the Rocky Hill High School indoor pool with certified lifeguards; pre-K and kindergarten have water activities instead. Life jackets case by case.",
+      "season_year": 2026,
+      "sessions": [
+        {
+          "name": "Week 1",
+          "start_date": "2026-06-22",
+          "end_date": "2026-06-26",
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 2",
+          "start_date": "2026-06-29",
+          "end_date": "2026-07-03",
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 3",
+          "start_date": "2026-07-06",
+          "end_date": "2026-07-10",
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 4",
+          "start_date": "2026-07-13",
+          "end_date": "2026-07-17",
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 5",
+          "start_date": "2026-07-20",
+          "end_date": "2026-07-24",
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 6",
+          "start_date": "2026-07-27",
+          "end_date": "2026-07-31",
+          "availability": "unknown"
+        },
+        {
+          "name": "Week 7",
+          "start_date": "2026-08-03",
+          "end_date": "2026-08-07",
+          "availability": "unknown"
+        }
+      ],
+      "state": "CT",
+      "sources": [
+        {
+          "url": "https://rockyhillct.myrec.com/documents/summerscape_day_camp_parent_handbook__updated_22426.pdf",
+          "checked": "2026-11-25",
+          "fields": [
+            "name",
+            "operator_name",
+            "website_url",
+            "registration_url",
+            "phone",
+            "street_address",
+            "city",
+            "state",
+            "zip",
+            "camp_type",
+            "primary_categories",
+            "secondary_categories",
+            "activities",
+            "age_min",
+            "grade_max",
+            "description_short",
+            "indoor_outdoor",
+            "extended_care",
+            "transportation",
+            "meals_included",
+            "swim_waterfront_notes",
+            "sessions"
+          ],
+          "note": "Drafted by the listing tool, checked against this page by Claude on 2026-11-22, approved by Andrew Krensky"
         }
       ]
     }

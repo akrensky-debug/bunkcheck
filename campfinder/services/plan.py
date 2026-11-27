@@ -5,7 +5,7 @@ from __future__ import annotations
 from typing import Any
 
 from campfinder.database import get_supabase
-from campfinder.models.plan import PlanRequest, PlanResponse, PlanWeek, PlanWeekCamp
+from campfinder.models.plan import CostLine, PlanRequest, PlanResponse, PlanWeek, PlanWeekCamp
 from campfinder.services.errors import NotFound
 from campfinder.services.planning import build_plan
 
@@ -30,14 +30,15 @@ def build_summer_plan(req: PlanRequest) -> PlanResponse:
 
     # Fetch camp names in one call
     all_camp_ids = list({r["camp_id"] for r in rows})
-    camp_rows = client.table("camps").select("id,name").in_("id", all_camp_ids).execute().data or []
+    camp_rows = client.table("camps").select("id,name,fees").in_("id", all_camp_ids).execute().data or []
     camp_name_map = {c["id"]: c["name"] for c in camp_rows}
+    camp_fees = {str(c["id"]): c.get("fees") or [] for c in camp_rows}
 
     session_dicts: list[dict[str, Any]] = []
     for r in rows:
         session_dicts.append({**r, "camp_name": camp_name_map.get(r["camp_id"], "Unknown Camp")})
 
-    plan = build_plan(session_dicts, req.summer_start, req.summer_end)
+    plan = build_plan(session_dicts, req.summer_start, req.summer_end, camp_fees)
 
     weeks = [
         PlanWeek(
@@ -61,6 +62,7 @@ def build_summer_plan(req: PlanRequest) -> PlanResponse:
     return PlanResponse(
         weeks=weeks,
         total_estimated_cost=plan["total_estimated_cost"],
+        cost_breakdown=[CostLine(**line) for line in plan["cost_breakdown"]],
         weeks_covered=plan["weeks_covered"],
         weeks_total=plan["weeks_total"],
         gaps=plan["gaps"],

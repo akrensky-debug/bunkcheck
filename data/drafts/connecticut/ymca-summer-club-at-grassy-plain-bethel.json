@@ -1,0 +1,103 @@
+{
+  "slug": "ymca-summer-club-at-grassy-plain-bethel",
+  "name": "YMCA Summer Club at Grassy Plain",
+  "operator_name": "Regional YMCA of Western Connecticut",
+  "website_url": "https://regionalymca.org/programs/camps/ymca-summer-club-at-grassy-plain/",
+  "phone": "203-744-4890",
+  "email": "ddostilio@regionalymca.org",
+  "street_address": "YMCA Children's Center at Grassy Plain, 57 Grassy Plain Street",
+  "city": "Bethel",
+  "zip": "06801",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "arts",
+    "STEM",
+    "academic"
+  ],
+  "activities": [
+    "STEAM projects",
+    "art",
+    "drama",
+    "writing",
+    "literacy and math games",
+    "swimming",
+    "hiking",
+    "playgrounds",
+    "water slide",
+    "theme weeks"
+  ],
+  "age_min": 5,
+  "age_max": 12,
+  "description_short": "A YMCA summer day camp for ages 5 to 12 at the Y's air conditioned children's center in Bethel, open 7:30 am to 5:30 pm. Campers follow theme weeks with STEAM projects, art, drama, literacy and math games, outdoor play on two playgrounds and a field, and special days.",
+  "indoor_outdoor": "both",
+  "financial_aid": true,
+  "season_year": 2027,
+  "state": "CT",
+  "sources": [
+    {
+      "url": "https://regionalymca.org/programs/camps/ymca-summer-club-at-grassy-plain/",
+      "checked": "2026-11-22",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "phone",
+        "email",
+        "city",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "indoor_outdoor",
+        "financial_aid"
+      ],
+      "note": "Researched by Claude from this page. Page is set for 2027: registration form, camp guide and weekly fee 'coming soon'; one time registration fee $40. Camp day 7:30 am to 5:30 pm in a state licensed, air conditioned center with two playgrounds and a field. Tuition assistance by application, due by April 30."
+    },
+    {
+      "url": "https://regionalymca.org/locations/",
+      "checked": "2026-11-22",
+      "fields": [
+        "street_address",
+        "state",
+        "zip"
+      ],
+      "note": "Researched by Claude from this page. YMCA locations page: YMCA Children's Center at Grassy Plain, 57 Grassy Plain Street, Bethel, CT 06801."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://regionalymca.org/programs/camps/ymca-summer-club-at-grassy-plain/",
+      "kind": "html",
+      "title": "YMCA Summer Club at Grassy Plain | The YMCA"
+    },
+    "warnings": [],
+    "unknowns": [
+      "2027 dates",
+      "2027 weekly fee",
+      "Lunch",
+      "ACA accreditation"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-22",
+      "page_checked": "https://regionalymca.org/programs/camps/ymca-summer-club-at-grassy-plain/",
+      "changes": [
+        "New camp, researched from https://regionalymca.org/programs/camps/ymca-summer-club-at-grassy-plain/",
+        "Season set to 2027 because the page is set for 2027; no dates or prices are posted yet, so no sessions or prices recorded.",
+        "Town added to cities.py from the Census 2024 Gazetteer, so the city validates."
+      ],
+      "for_andrew": [
+        "The page is set for 2027 but posts no dates or fee yet. List it now without them, or wait for the 2027 camp guide?"
+      ]
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "slug": "all-day-playground-dedham",
+  "name": "All Day Playground",
+  "operator_name": "Dedham Parks and Recreation Department",
+  "website_url": "https://cdnc.heyzine.com/flip-book/pdf/551950fd876d7270e126282c1b8da4d07e0f7bb3-2.pdf",
+  "registration_url": "https://dedham.activityreg.com",
+  "phone": "781-751-9250",
+  "city": "Dedham",
+  "state": "MA",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "sports",
+    "arts",
+    "swimming"
+  ],
+  "activities": [
+    "arts and crafts",
+    "games",
+    "outdoor adventures",
+    "sports",
+    "field trips",
+    "open swim"
+  ],
+  "age_min": 5,
+  "age_max": 12,
+  "description_short": "Town run summer day program at Dedham High School for ages 5 to 12, weekdays 8:30 to 4 with extended hours to 5:30. Kids do arts and crafts, games, sports, outdoor play, open swim and field trips; families sign up by the week or for the whole summer.",
+  "indoor_outdoor": "both",
+  "price_per_week": 330,
+  "price_min": 330,
+  "price_max": 330,
+  "price_per": "week",
+  "extended_care": true,
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Weekly sessions (register by the week)",
+      "start_date": "2026-06-30",
+      "end_date": "2026-08-14",
+      "price": 330,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://cdnc.heyzine.com/flip-book/pdf/551950fd876d7270e126282c1b8da4d07e0f7bb3-2.pdf",
+      "checked": "2026-11-22",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "indoor_outdoor",
+        "price_per_week",
+        "price_min",
+        "price_max",
+        "price_per",
+        "extended_care",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Town of Dedham Parks and Recreation 2026 Spring and Summer Programs guide, page 19: All Day Playground at Dedham High School, Monday to Friday 8:30 to 4, extended hours to 5:30, ages 5 to 12, weekly sessions June 30 to August 14, 2026. Non-resident rate $330 a week; resident rate $310 a week. The session price is the weekly non-resident rate. Register at dedham.activityreg.com. Indoor and outdoor inferred from the activity list."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://cdnc.heyzine.com/flip-book/pdf/551950fd876d7270e126282c1b8da4d07e0f7bb3-2.pdf",
+      "kind": "pdf",
+      "title": "Town of Dedham Parks and Recreation 2026 Spring and Summer Programs"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Street address and ZIP",
+      "Week by week dates",
+      "Lunch",
+      "Financial aid",
+      "2027 dates and prices"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-22",
+      "page_checked": "https://cdnc.heyzine.com/flip-book/pdf/551950fd876d7270e126282c1b8da4d07e0f7bb3-2.pdf",
+      "changes": [
+        "New camp, researched from https://cdnc.heyzine.com/flip-book/pdf/551950fd876d7270e126282c1b8da4d07e0f7bb3-2.pdf"
+      ],
+      "for_andrew": [
+        "The guide says the program meets at Dedham High School but gives no street address, so the draft has no ZIP and fails the zip check. The town's recreation site (dedham-ma.gov) refused our fetcher (403), so I could not read an address there or confirm the guide link. Supply the high school address, or ask the town?",
+        "The guide is hosted on heyzine.com, a flip book service; the candidate note says the town's recreation page links it. It is the town's own guide, but website_url points at the heyzine PDF because the town page could not be read.",
+        "Weekly sessions start Tuesday June 30, 2026, so the first week may be short; the guide gives no week by week list, so I recorded one span at the weekly rate."
+      ]
+    }
+  }
+}

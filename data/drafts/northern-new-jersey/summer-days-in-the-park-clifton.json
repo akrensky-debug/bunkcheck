@@ -1,0 +1,122 @@
+{
+  "slug": "summer-days-in-the-park-clifton",
+  "name": "Summer Days in the Park",
+  "operator_name": "Clifton Recreation Department",
+  "website_url": "https://cliftonnj.myrec.com/forms/7014_parent_information_guide.pdf",
+  "email": "cliftonrec@cliftonnj.org",
+  "phone": "973-470-5956",
+  "street_address": "365 Washington Avenue",
+  "city": "Clifton",
+  "state": "NJ",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "arts",
+    "sports"
+  ],
+  "activities": [
+    "theme weeks",
+    "crafts",
+    "games",
+    "field trips",
+    "water tag",
+    "roller skating",
+    "talent show",
+    "summer olympics"
+  ],
+  "age_min": 5,
+  "age_max": 13,
+  "description_short": "City run summer program for Clifton children ages 5 to 13, 9 to 3:30 weekdays, at School 3 (365 Washington Ave) and School 13 (782 Van Houten Ave). Weekly themes with games, crafts, special events and optional paid trips; children bring lunch and proof of Clifton residency is required at registration.",
+  "indoor_outdoor": "both",
+  "extended_care": false,
+  "transportation": false,
+  "meals_included": false,
+  "financial_aid": true,
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Session 1",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-24",
+      "availability": "unknown"
+    },
+    {
+      "name": "Session 2",
+      "start_date": "2026-07-27",
+      "end_date": "2026-08-14",
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://cliftonnj.myrec.com/forms/7014_parent_information_guide.pdf",
+      "checked": "2026-11-25",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "age_min",
+        "age_max",
+        "description_short",
+        "indoor_outdoor",
+        "extended_care",
+        "transportation",
+        "meals_included",
+        "financial_aid",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. 2026 parent information guide: Monday to Friday July 6 to August 14, 9 to 3:30, ages 5 through 13 as of October 1, 2025, in two three week sessions (July 6 to 24, July 27 to August 14) at School 3, 365 Washington Avenue, and School 13, 782 Van Houten Avenue. No before care or aftercare. Bag lunch from home. No transportation to and from the program (trips are bused). Scholarships for Clifton residents. Proof of residency required at registration. Program fee is not stated in the guide."
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=365+Washington+Avenue%2C+Clifton%2C+NJ&benchmark=Public_AR_Current&format=json",
+      "checked": "2026-11-25",
+      "fields": [
+        "zip"
+      ],
+      "note": "ZIP looked up with the Census Bureau geocoder from the address on the camp's page (365 WASHINGTON AVE, CLIFTON, NJ, 07011)"
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://cliftonnj.myrec.com/forms/7014_parent_information_guide.pdf",
+      "kind": "pdf",
+      "title": "2026 Parent Information Guide, Clifton Recreation"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Program fee (resident and non-resident)",
+      "Whether non-residents may enroll",
+      "ZIP",
+      "2027 dates"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-25",
+      "page_checked": "https://cliftonnj.myrec.com/forms/7014_parent_information_guide.pdf",
+      "changes": [
+        "New camp, researched from https://cliftonnj.myrec.com/forms/7014_parent_information_guide.pdf",
+        "ZIP 07011 looked up from the camp's street address with the Census geocoder (ZIP lookups allowed by Andrew, 22 November)."
+      ],
+      "for_andrew": [
+        "Registration requires proof of residency, so this looks like a residents-only program, but the guide does not say so outright and gives no fee. Andrew to decide whether to list it.",
+        "Two sites with the same dates and ages, drafted as one listing with School 3's address; School 13 is at 782 Van Houten Avenue.",
+        "The only source is the 2026 parent guide PDF on the city's MyRec site; no camp web page with fees was found."
+      ]
+    }
+  },
+  "zip": "07011"
+}

@@ -1,0 +1,168 @@
+{
+  "slug": "windham-explorers-windham",
+  "name": "Windham Day Camp (Windham Explorers)",
+  "operator_name": "The Granite YMCA",
+  "website_url": "https://www.graniteymca.org/camps/day-camp/windham/",
+  "email": "jbuck@graniteymca.org",
+  "phone": "603.437.9622",
+  "city": "Windham",
+  "state": "NH",
+  "camp_type": "day",
+  "primary_categories": [
+    "general",
+    "STEM"
+  ],
+  "secondary_categories": [
+    "arts"
+  ],
+  "activities": [
+    "STEAM projects",
+    "lego challenges",
+    "gold hunt",
+    "smoothies",
+    "DIY playdoh",
+    "games",
+    "theme weeks"
+  ],
+  "grade_min": 1,
+  "grade_max": 8,
+  "age_min": 6,
+  "age_max": 13,
+  "description_short": "STEAM based YMCA day camp at Windham Middle School for children ages 6 to 13 entering grades 1 to 8, open 8:00 to 5:00 with no separate before or after care. Campers do building and science challenges, games and weekly theme activities indoors and out.",
+  "indoor_outdoor": "both",
+  "extended_care": false,
+  "financial_aid": true,
+  "refund_policy_summary": "A $35 deposit per week is not refundable. Cancel more than 6 weeks before the camp week for a full refund less the deposit; 3 to 6 weeks before, a $65 admin fee also applies; less than 3 weeks before, no refund.",
+  "season_year": 2026,
+  "sessions": [
+    {
+      "name": "Week 1: Space",
+      "start_date": "2026-06-22",
+      "end_date": "2026-06-26",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 2: Holiday Palooza",
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-03",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 3: Color Wars",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 4: Wild Wild West",
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 5: Carnival",
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 6: Pirates of the High Seas",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 7: Medieval, Mythical & Magical",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-07",
+      "price": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "Week 8: Survivor Week",
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-17",
+      "price": null,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.graniteymca.org/camps/day-camp/windham/",
+      "checked": "2026-11-22",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "email",
+        "phone",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "grade_min",
+        "grade_max",
+        "age_min",
+        "age_max",
+        "description_short",
+        "indoor_outdoor",
+        "extended_care",
+        "financial_aid",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page; 2026 theme weeks June 22 to August 17; ages 6 to 13 entering grades 1 to 8; camp day 8:00 to 5:00 and the page says no before or after care is offered; financial assistance available"
+    },
+    {
+      "url": "https://www.graniteymca.org/dev/wp-content/uploads/2024/01/Summer-Billing-Schedule.pdf",
+      "checked": "2026-11-22",
+      "fields": [
+        "refund_policy_summary"
+      ],
+      "note": "Researched by Claude from this page; 2026 summer day camp billing schedule for all Granite YMCA day camps"
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://www.graniteymca.org/camps/day-camp/windham/",
+      "kind": "html",
+      "title": "Windham Day Camp | The Granite YMCA"
+    },
+    "warnings": [
+      "No weekly price is on the camp page; the prices are in the Granite YMCA day camp brochure, a FlowPaper flipbook the fetcher cannot read as text.",
+      "These are 2026 dates; 2027 dates are not posted yet.",
+      "The page says Week 8 runs August 10 to August 17; recorded as stated, though August 14 may be meant.",
+      "The discovery note said Windham Center School; the camp page says Windham Middle School, used here."
+    ],
+    "unknowns": [
+      "price",
+      "street address",
+      "transportation",
+      "lunch",
+      "ACA accreditation"
+    ],
+    "low_confidence": [],
+    "errors": [
+      "missing required zip"
+    ],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-22",
+      "page_checked": "https://www.graniteymca.org/camps/day-camp/windham/",
+      "changes": [
+        "New camp, researched from https://www.graniteymca.org/camps/day-camp/windham/"
+      ],
+      "for_andrew": [
+        "ZIP is required: the page names Windham Middle School but gives no street address. Please supply the school address or ZIP."
+      ]
+    }
+  }
+}

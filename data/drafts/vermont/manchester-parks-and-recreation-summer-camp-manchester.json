@@ -1,0 +1,95 @@
+{
+  "slug": "manchester-parks-and-recreation-summer-camp-manchester",
+  "name": "Manchester Parks & Recreation Summer Camp",
+  "operator_name": "Town of Manchester Parks & Recreation",
+  "website_url": "https://manchester-vt.gov/summer-programs",
+  "registration_url": "https://secure.rec1.com/VT/manchester-vt/catalog",
+  "phone": "(802) 362-1313",
+  "city": "Manchester",
+  "state": "VT",
+  "zip": "05255",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "age_min": 5,
+  "age_max": 11,
+  "description_short": "The Town of Manchester's summer day camp, in two age groups: Battenkill Adventurers for ages 5 to 8 (up to 30 campers) and Equinox Explorers for ages 9 to 11 (up to 20 campers).",
+  "price_per_week": 300,
+  "price_min": 300,
+  "price_max": 300,
+  "price_per": "week",
+  "season_year": 2026,
+  "notes": "The page says weekly rates are $250 to $300 based on residency; $300 is taken as the non-resident rate and $250 as the resident rate. Registration opened January 1 for Manchester residents and January 8 for non-residents. Camp ran June 22 to August 14, 2026. Not the Manchester, NH camps.",
+  "sessions": [
+    {
+      "name": "Summer 2026",
+      "start_date": "2026-06-22",
+      "end_date": "2026-08-14",
+      "price": null,
+      "availability": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://manchester-vt.gov/summer-programs",
+      "checked": "2026-11-22",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "registration_url",
+        "phone",
+        "city",
+        "state",
+        "zip",
+        "camp_type",
+        "primary_categories",
+        "age_min",
+        "age_max",
+        "description_short",
+        "price_per_week",
+        "price_min",
+        "price_max",
+        "price_per",
+        "sessions"
+      ],
+      "note": "Researched by Claude from this page. Summer Programs page, 2026 Programs: camp June 22 to August 14, weekly rates $250 to $300 based on residency, groups ages 5 to 8 and 9 to 11. Phone and ZIP are the Town Hall's (40 Jeff Williams Way, Manchester Center, VT 05255) from this page's footer; the page doesn't say where camp meets."
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://manchester-vt.gov/summer-programs",
+      "kind": "html",
+      "title": "Summer Programs - Manchester, VT"
+    },
+    "warnings": [],
+    "unknowns": [
+      "Where camp meets",
+      "Daily hours",
+      "Weekly session dates",
+      "Activities",
+      "Extended care",
+      "Meals",
+      "Financial aid",
+      "Refund policy",
+      "ACA accreditation"
+    ],
+    "low_confidence": [
+      "Non-resident rate of $300 is inferred from a range"
+    ],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-22",
+      "page_checked": "https://manchester-vt.gov/summer-programs",
+      "changes": [
+        "New camp, researched from https://manchester-vt.gov/summer-programs"
+      ],
+      "for_andrew": [
+        "The page gives only a season, two age groups and \"$250 to $300 based on residency\". I took $300 as the non-resident rate, but the page doesn't say which rate is which, nor where camp meets (ZIP is the Town Hall's). The registration catalog loads by script and showed no camp listing. Keep this thin listing?"
+      ]
+    }
+  }
+}

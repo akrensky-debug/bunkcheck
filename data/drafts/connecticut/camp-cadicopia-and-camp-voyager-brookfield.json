@@ -1,0 +1,105 @@
+{
+  "slug": "camp-cadicopia-and-camp-voyager-brookfield",
+  "name": "Camp Cadicopia and Camp Voyager",
+  "operator_name": "Brookfield Parks and Recreation",
+  "website_url": "https://brookfieldct.myrec.com/forms/5976_letter_to_parents__cadicopia_2026.pdf",
+  "phone": "203-775-7310",
+  "street_address": "Cadigan Park Pavilion, 465 Candlewood Lake Road",
+  "city": "Brookfield",
+  "state": "CT",
+  "camp_type": "day",
+  "primary_categories": [
+    "general"
+  ],
+  "secondary_categories": [
+    "swimming",
+    "adventure"
+  ],
+  "activities": [
+    "swimming",
+    "games",
+    "beach",
+    "field trips"
+  ],
+  "description_short": "Brookfield's town day camp at Cadigan Park on Candlewood Lake, where campers swim at least once a day and spend most of the day on the beach side. Camp Voyager is the middle school version, with a different trip each day.",
+  "indoor_outdoor": "outdoor",
+  "extended_care": true,
+  "meals_included": false,
+  "season_year": 2026,
+  "notes": "Camp Cadicopia: 9:00 am to 5:00 pm at Cadigan Park Pavilion. Camp Voyager (middle school trip camp, four weeks): drop off at Whisconier Middle School, 17 W. Whisconier Rd., pick up at Cadigan Park Pavilion. Early drop off 8:00 am and late pick up 6:00 pm for an extra weekly fee. Half day Camp PeeWee and Camp Bobcat also run.",
+  "sources": [
+    {
+      "url": "https://brookfieldct.myrec.com/forms/5976_letter_to_parents__cadicopia_2026.pdf",
+      "checked": "2026-11-22",
+      "fields": [
+        "name",
+        "operator_name",
+        "website_url",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "camp_type",
+        "primary_categories",
+        "secondary_categories",
+        "activities",
+        "description_short",
+        "indoor_outdoor",
+        "extended_care",
+        "meals_included"
+      ],
+      "note": "Researched by Claude from this page. Camp Cadicopia Summer 2026 letter to parents: drop off and pick up at Cadigan Pavilion, 465 Candlewood Lake Road; camp 9:00 am to 5:00 pm, early drop off 8:00 am and late pick up 6:00 pm for an extra fee; pack lunch and snacks (a food truck comes some days); swim at least once a day; allergy aware, no peanuts or tree nuts. Parks and Recreation office 203-775-7310."
+    },
+    {
+      "url": "https://brookfieldct.myrec.com/forms/5977_letter_to_parents__voyager_2026.pdf",
+      "checked": "2026-11-22",
+      "fields": [],
+      "note": "Researched by Claude from this page. Camp Voyager Summer 2026 letter: four weeks of daily trips for middle schoolers; drop off at Whisconier Middle School, 17 W. Whisconier Rd., pick up at Cadigan Park Pavilion; 8:50 am to 5:00 pm with early and late care for a fee; pack lunch."
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=465+Candlewood+Lake+Road%2C+Brookfield%2C+CT&benchmark=Public_AR_Current&format=json",
+      "checked": "2026-11-22",
+      "fields": [
+        "zip"
+      ],
+      "note": "ZIP looked up with the Census Bureau geocoder from the address on the camp's page (465 CANDLEWOOD LAKE RD, BROOKFIELD, CT, 06804)"
+    }
+  ],
+  "review": {
+    "status": "needs_andrew",
+    "source": {
+      "url": "https://brookfieldct.myrec.com/forms/5976_letter_to_parents__cadicopia_2026.pdf",
+      "kind": "pdf",
+      "title": "Camp Cadicopia Summer 2026 Letter to Parents"
+    },
+    "warnings": [
+      "Brookfield, CT is not in cities.py."
+    ],
+    "unknowns": [
+      "sessions",
+      "age_min",
+      "age_max",
+      "grade_min",
+      "grade_max",
+      "price_per_week",
+      "registration_url",
+      "financial_aid",
+      "transportation"
+    ],
+    "low_confidence": [],
+    "errors": [],
+    "first_pass": {
+      "by": "Claude",
+      "date": "2026-11-22",
+      "page_checked": "https://brookfieldct.myrec.com/forms/5976_letter_to_parents__cadicopia_2026.pdf",
+      "changes": [
+        "New camp, researched from https://brookfieldct.myrec.com/forms/5976_letter_to_parents__cadicopia_2026.pdf",
+        "ZIP 06804 looked up from the camp's street address with the Census geocoder (Andrew allowed ZIP lookups, 22 November)."
+      ],
+      "for_andrew": [
+        "Brookfield's town site (brookfieldct.gov) refused our fetcher with a 403, and the camps are not on the town's MyRec portal now. The two 2026 parent letters give the place and hours but no dates, ages or prices. List it thin, or wait for the 2027 letters?"
+      ]
+    }
+  },
+  "zip": "06804"
+}
