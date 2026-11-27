@@ -186,7 +186,7 @@ def fresh_limits() -> Iterator[None]:
     from campfinder.agent import budget
     from campfinder.inquiries import service as inquiries
     from campfinder.routers import agent, search
-    from campfinder.services import claims
+    from campfinder.services import claims, csp_reports
 
     def clear() -> None:
         for window in (agent.guest_families_hourly, agent.guest_families_daily, agent.chats_per_ip,
@@ -196,6 +196,7 @@ def fresh_limits() -> Iterator[None]:
         budget._guest_ip_spend.clear()
         budget._global_logged.clear()
         inquiries._ip_windows.clear()
+        csp_reports.hourly.clear()
 
     clear()
     yield

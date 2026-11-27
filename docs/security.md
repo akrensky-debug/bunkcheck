@@ -101,6 +101,7 @@ Limits marked *new* come from #77 and #78. Everything else is on `main` today.
 | `GET /api/v1/claims/verify` | Code, 256 bits, hashed, once, 72 hours | None | Raises "unverified" to "claimed"; never lowers a verified listing |
 | `POST /api/v1/submissions` | None | **None** | Fill the review queue with junk |
 | `POST /api/v1/events` | None | **None** | Write any JSON, any size, into `analytics_events` |
+| `POST /api/v1/csp-report` (via the site's `/csp-report`) | None | 600 reports an hour, 16 KB a body | Junk rows in `csp_reports`; capped, and it keeps no full URLs |
 
 ### Camp data, MCP and the Activity API
 
@@ -177,13 +178,15 @@ through `family_access` or `authorize_family`.
 Fixed since this doc was written: camp claims were self-verified and could send our email to any
 address without limit. See "Claims" in [`docs/owner-confirmation.md`](owner-confirmation.md).
 
-1. **The site has no script policy.** Since 20 November 2026 `frontend/next.config.js` sends
-   `Content-Security-Policy: frame-ancestors 'none'` and `X-Frame-Options: DENY` (no other site
-   can frame our pages), `X-Content-Type-Options: nosniff`, and `Referrer-Policy`:
-   `strict-origin-when-cross-origin` everywhere and `no-referrer` plus `X-Robots-Tag: noindex` on
-   the pages whose address holds a token (`/share`, `/join`, `/inquiries`, `/alerts`, `/owners`).
-   Still missing: the rest of a Content-Security-Policy (`script-src`, `connect-src` and so on).
-   That part can break Supabase sign-in, so it needs its own change, tested in a browser.
+1. **The script policy only reports.** The site sends the headers from #141 (no framing,
+   `nosniff`, a referrer policy, stricter ones on token pages) and, since 22 November 2026, a full
+   script policy as `Content-Security-Policy-Report-Only` (`frontend/csp.js`). Browsers report
+   what it would block and block nothing yet. A crawl of all 30 page types on the production build,
+   sign-in and search included, found no violations. Left to do: enforce it once real traffic
+   agrees (see "Turning on the script policy" below). Two limits stay after that: `script-src`
+   keeps `'unsafe-inline'`, because the inline scripts Next.js writes into every page change per
+   page and a nonce would make every static page render per request; and the toolbar hosts are
+   allowed on preview builds only.
 2. **Open forms with no limit.** `/submissions` and `/events` take anonymous writes without a cap,
    and `/events` stores any JSON at any size. Fix: per-IP limits and a size cap on `properties`.
 3. **Sign-up farms.** A signed-in family gets five times a guest's allowance, so scripted sign-ups
@@ -199,6 +202,26 @@ address without limit. See "Claims" in [`docs/owner-confirmation.md`](owner-conf
    Cloudflare's addresses at the origin. Worth it once traffic is real, not before launch.
 7. **Link tokens in HTTP logs.** Calendar, share and invite tokens sit in URL paths, so they are
    in Railway's request logs. Low: only we read those logs, and shares expire and can be revoked.
+
+## Turning on the script policy
+
+The policy in `frontend/csp.js` is sent as `Content-Security-Policy-Report-Only`. Reports reach
+`csp_reports` through `/csp-report`. Each row keeps the site's host, the first segment of the page
+path, the directive and the blocked origin, never a full URL. To read them:
+
+```sql
+SELECT site, page, directive, blocked, count(*), max(created_at)
+FROM csp_reports WHERE created_at > now() - interval '7 days' AND disposition = 'report'
+GROUP BY 1, 2, 3, 4 ORDER BY 5 DESC;
+```
+
+Browser extensions cause noise: `blocked` reads `chrome-extension`, `moz-extension` or
+`safari-web-extension`. Ignore those. Anything else on `www.bunkcheck.ai` is a real page that the
+policy would break: allow it in `csp.js` or remove what loads it.
+
+When a week of traffic shows nothing but extension noise, enforce it: in `frontend/next.config.js`,
+send the policy as `Content-Security-Policy` together with `frame-ancestors 'none'`, and drop the
+report-only header. Keep `report-uri` so blocks still show up here.
 
 ## Supabase
 
