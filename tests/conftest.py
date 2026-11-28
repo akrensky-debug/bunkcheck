@@ -207,4 +207,4 @@ def fresh_limits() -> Iterator[None]:
 def _postal_address(monkeypatch: pytest.MonkeyPatch) -> None:
     """Outreach to camps is refused without a postal address for the footer (owners/outreach.py).
     Tests that check the refusal unset it."""
-    monkeypatch.setenv("OWNER_POSTAL_ADDRESS", "Bunkcheck, 1 Test Street, Providence, RI 02906")
+    monkeypatch.setenv("OWNER_POSTAL_ADDRESS", "1 Test Street, Providence, RI 02906")

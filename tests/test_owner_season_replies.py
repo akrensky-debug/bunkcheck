@@ -48,14 +48,14 @@ def rows(db, table, **match):
 
 async def test_same_weeks_price_and_registration_day_from_a_reply(camp, db, outbox):
     weeks(db, ("2026-07-13", "2026-07-17"), ("2026-07-20", "2026-07-24"))     # no holiday moves: not ambiguous
-    await season.send(camp, sent_by="Andrew")
+    await season.send(camp, sent_by="Morgan")
     # The address the season email went to may answer it, without having confirmed a listing before.
     row = await updates.receive(OWNER, "Same weeks as last year, $295 a week, registration opens Jan 15. Thanks!",
                                 reader=reader(SAME))
     assert row["status"] == "proposed", row.get("reason")
     assert rows(db, "camps", id=CAMP)[0]["season_year"] == 2026          # proposed, not applied
 
-    done = await updates.apply(row["id"], handled_by="Andrew")
+    done = await updates.apply(row["id"], handled_by="Morgan")
     assert done["status"] == "applied"
     camp_row = rows(db, "camps", id=CAMP)[0]
     assert camp_row["season_year"] == 2027 and camp_row["price_per_week"] == 295
@@ -72,7 +72,7 @@ async def test_same_weeks_price_and_registration_day_from_a_reply(camp, db, outb
     assert '(you wrote: "Same weeks as last year")' in back.text and '(you wrote: "$295 a week")' in back.text
     assert "Week 1: Mon Jul 13 to Fri Jul 17, 2026, $310" in back.text     # before, in full
     assert "Week 1: Mon Jul 12 to Fri Jul 16, 2027, $295" in back.text     # after, in full
-    assert "Registration opens: Friday, January 15, 2027" in back.text and "Andrew" not in back.text
+    assert "Registration opens: Friday, January 15, 2027" in back.text and "Morgan" not in back.text
 
     db.table("registration_alerts").insert({"camp_id": CAMP, "email": "mom@example.com", "token": "t",
                                             "confirmed_at": "2026-11-01T00:00:00+00:00"}).execute()
@@ -81,13 +81,13 @@ async def test_same_weeks_price_and_registration_day_from_a_reply(camp, db, outb
 
 async def test_ambiguous_same_weeks_asks_back_then_takes_yes(camp, db, outbox):
     weeks(db, ("2026-06-29", "2026-07-03"), ("2026-07-06", "2026-07-10"))     # the Fourth moves weeks in 2027
-    await season.send(camp, sent_by="Andrew")
+    await season.send(camp, sent_by="Morgan")
     first = await updates.receive(OWNER, "Same weeks as last year, $295 a week, registration opens Jan 15.",
                                   reader=reader(SAME))
     assert first["status"] == "proposed" and first["proposal"]["ask"]
     assert first["proposal"]["season_facts"]["sessions"] is None             # dates not assumed
 
-    done = await updates.apply(first["id"], handled_by="Andrew")
+    done = await updates.apply(first["id"], handled_by="Morgan")
     assert done["status"] == "asked"
     camp_row = rows(db, "camps", id=CAMP)[0]
     assert camp_row["season_year"] == 2026 and camp_row["price_per_week"] == 310   # $295 waits for the dates
@@ -103,7 +103,7 @@ async def test_ambiguous_same_weeks_asks_back_then_takes_yes(camp, db, outbox):
     yes = await updates.receive(OWNER, "Yes, those are right.", reader=reader(SeasonRead(accepts_our_dates=True,
                                                                                          dates_quote="Yes")))
     assert yes["status"] == "proposed" and yes["proposal"]["answers"] == str(first["id"])
-    await updates.apply(yes["id"], handled_by="Andrew")
+    await updates.apply(yes["id"], handled_by="Morgan")
     camp_row = rows(db, "camps", id=CAMP)[0]
     assert camp_row["season_year"] == 2027 and camp_row["price_per_week"] == 295     # the dates bring the price
     assert sorted(s["start_date"] for s in rows(db, "sessions", camp_id=CAMP)) == ["2027-06-28", "2027-07-05"]
@@ -113,14 +113,14 @@ async def test_ambiguous_same_weeks_asks_back_then_takes_yes(camp, db, outbox):
 
 async def test_owner_corrects_the_dates_we_asked_about(camp, db, outbox):
     weeks(db, ("2026-06-29", "2026-07-03"), ("2026-07-06", "2026-07-10"))
-    await season.send(camp, sent_by="Andrew")
+    await season.send(camp, sent_by="Morgan")
     first = await updates.receive(OWNER, "same as last year", reader=reader(SeasonRead(dates="same_as_last_year")))
-    await updates.apply(first["id"], handled_by="Andrew")
+    await updates.apply(first["id"], handled_by="Morgan")
     fix = SeasonRead(dates="given", dates_quote="Week 2 starts Tuesday July 6", sessions=[
         SeasonSession(name="Week 1", start_date="2027-06-28", end_date="2027-07-02"),
         SeasonSession(name="Week 2", start_date="2027-07-06", end_date="2027-07-09")])
     row = await updates.receive(OWNER, "Week 2 starts Tuesday July 6", reader=reader(fix))
-    await updates.apply(row["id"], handled_by="Andrew")
+    await updates.apply(row["id"], handled_by="Morgan")
     assert sorted(s["start_date"] for s in rows(db, "sessions", camp_id=CAMP)) == ["2027-06-28", "2027-07-06"]
     assert "Week 2: Tue Jul 6 to Fri Jul 9, 2027" in outbox[-1].text
 
@@ -132,23 +132,23 @@ async def test_owner_corrects_the_dates_we_asked_about(camp, db, outbox):
 ])
 async def test_what_doesnt_check_out_goes_to_a_person(camp, db, outbox, read, why):
     weeks(db, ("2026-07-13", "2026-07-17"))
-    await season.send(camp, sent_by="Andrew")
+    await season.send(camp, sent_by="Morgan")
     row = await updates.receive(OWNER, "...", reader=reader(read))
     assert row["status"] == "needs_person" and why in row["reason"]
     with pytest.raises(service.ConfirmationError):
-        await updates.apply(row["id"], handled_by="Andrew")
+        await updates.apply(row["id"], handled_by="Morgan")
     assert rows(db, "camps", id=CAMP)[0]["season_year"] == 2026
 
 
 async def test_same_price_with_no_price_on_file_goes_to_a_person(camp, db, outbox):
     db.table("camps").update({"price_per_week": None}).eq("id", CAMP).execute()
-    await season.send(service.find_camp(CAMP), sent_by="Andrew")
+    await season.send(service.find_camp(CAMP), sent_by="Morgan")
     row = await updates.receive(OWNER, "Same price", reader=reader(SeasonRead(price="same_as_last_year")))
     assert row["status"] == "needs_person" and "don't have last year's" in row["reason"]
 
 
 async def test_a_refund_question_goes_to_a_person_even_with_facts(camp, db, outbox):
-    await season.send(camp, sent_by="Andrew")
+    await season.send(camp, sent_by="Morgan")
     row = await updates.receive(OWNER, "$295. Also can you refund a family?",
                                 reader=reader(SeasonRead(price="given", price_per_week=295), needs_person=True,
                                               reason="Asks about a refund"))
@@ -156,14 +156,14 @@ async def test_a_refund_question_goes_to_a_person_even_with_facts(camp, db, outb
 
 
 async def test_a_stranger_cant_answer_for_the_camp(camp, db, outbox):
-    await season.send(camp, sent_by="Andrew")
+    await season.send(camp, sent_by="Morgan")
     row = await updates.receive("someone@else.example", "Same weeks, $1", reader=reader(SAME))
     assert row["status"] == "needs_person" and "isn't a contact" in row["reason"]
 
 
 async def test_auto_apply_takes_season_facts_from_a_verified_sender(camp, db, outbox, monkeypatch):
     weeks(db, ("2026-07-13", "2026-07-17"))
-    await season.send(camp, sent_by="Andrew")
+    await season.send(camp, sent_by="Morgan")
     monkeypatch.setenv("OWNER_UPDATES_AUTO_APPLY", "1")
     row = await updates.receive(OWNER, "Same weeks, $295, Jan 15", reader=reader(SAME))
     assert row["status"] == "proposed"                                       # SPF/DKIM not reported

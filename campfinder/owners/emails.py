@@ -27,7 +27,12 @@ def _e(v: Any) -> str:
 
 
 def _signature() -> str:
-    return os.environ.get("OWNER_EMAIL_SIGNATURE", "Bunkcheck")
+    """Who signs the emails we start to camps. The listing email is written in Andrew's voice."""
+    return os.environ.get("OWNER_EMAIL_SIGNATURE", "Andrew\nBunkcheck")
+
+
+def _signature_html() -> str:
+    return "<br>".join(_e(line) for line in _signature().split("\n"))
 
 
 def _reply_to() -> str | None:
@@ -64,6 +69,13 @@ def _session_line(s: dict[str, Any]) -> str:
     return " · ".join(bits)
 
 
+# How the listing email introduces us: honestly new, and who is behind it (decided by Andrew,
+# 27 November 2026). Written to stay true for a camp in any state we list.
+INTRO = ("I'm Andrew, a parent near Providence. My company, PromptBridge, is building Bunkcheck to make "
+         "camp planning and booking easier for parents. We open to families in January, starting in "
+         "Rhode Island.")
+
+
 def listing_confirmation(to: str, first_name: str | None, camp: dict[str, Any], snapshot: dict[str, Any],
                          token: str, waiting: int = 0) -> Email:
     page = f"{_site()}/owners/confirm/{token}"
@@ -78,17 +90,17 @@ def listing_confirmation(to: str, first_name: str | None, camp: dict[str, Any], 
 
     text = "\n".join([
         f"Hi {first_name or 'there'},", "",
-        f"Bunkcheck helps families plan the whole summer. We built a listing for {camp['name']} from "
-        f"your website so parents near {camp.get('city') or 'you'} can find you. Here is what it says:", "",
+        INTRO, "",
+        f"We built a listing for {camp['name']} from your website. Here's what it says:", "",
         *[f"  {k}: {v}" for k, v in rows],
         *(["", "  Sessions:", *[f"    {_session_line(s)}" for s in sessions]] if sessions else []),
         *(["", old_note] if old_note else []), "",
         f"See the page: {camp_url}", "",
-        "Is anything wrong? Reply to this email with the fix and a person will change it.",
-        f"If it's all right, tell us here: {page}",
-        f"When does {season} registration open? Reply and we'll let interested parents know.{asked}", "",
-        "No login, no fee to be listed, nothing to install. If you'd rather not be listed, "
-        f"take it down here: {page}", "",
+        f"Is it right? One click tells us: {page}",
+        "If anything's off, reply with the fix and I'll change it.", "",
+        f"When does {season} registration open? Reply and we'll tell the parents who ask.{asked}", "",
+        "Being listed is free, and there's nothing to sign up for. If you'd rather not be listed, "
+        "the same link takes it down.", "",
         f"Thanks,\n{_signature()}",
     ]) + outreach.footer_text()
     table = "".join(f"<tr><td style='padding:2px 12px 2px 0;color:#666'>{_e(k)}</td><td>{_e(v)}</td></tr>"
@@ -97,21 +109,21 @@ def listing_confirmation(to: str, first_name: str | None, camp: dict[str, Any], 
             + "</ul>") if sessions else ""
     html = (
         f"<p>Hi {_e(first_name or 'there')},</p>"
-        f"<p>Bunkcheck helps families plan the whole summer. We built a listing for "
-        f"<strong>{_e(camp['name'])}</strong> from your website so parents near {_e(camp.get('city') or 'you')} "
-        f"can find you. Here is what it says:</p>"
+        f"<p>{_e(INTRO)}</p>"
+        f"<p>We built a listing for <strong>{_e(camp['name'])}</strong> from your website. "
+        f"Here's what it says:</p>"
         f"<table>{table}</table>{sess}"
         + (f"<p>{_e(old_note)}</p>" if old_note else "")
         + f"<p><a href='{_e(camp_url)}'>See the page</a></p>"
-        f"<p><strong>Is anything wrong?</strong> Reply to this email with the fix and a person will change it.<br>"
-        f"<strong>All right?</strong> <a href='{_e(page)}'>Tell us it looks right</a>.<br>"
-        f"<strong>When does {season} registration open?</strong> Reply and we'll let interested parents "
-        f"know.{_e(asked)}</p>"
-        f"<p style='color:#666'>No login, no fee to be listed, nothing to install. If you'd rather not be "
-        f"listed, <a href='{_e(page)}'>take it down here</a>.</p>"
-        f"<p>Thanks,<br>{_e(_signature())}</p>" + outreach.footer_html()
+        f"<p><strong>Is it right?</strong> <a href='{_e(page)}'>One click tells us</a>.<br>"
+        f"If anything's off, reply with the fix and I'll change it.</p>"
+        f"<p><strong>When does {season} registration open?</strong> Reply and we'll tell the parents who "
+        f"ask.{_e(asked)}</p>"
+        f"<p style='color:#666'>Being listed is free, and there's nothing to sign up for. If you'd rather not "
+        f"be listed, <a href='{_e(page)}'>the same link takes it down</a>.</p>"
+        f"<p>Thanks,<br>{_signature_html()}</p>" + outreach.footer_html()
     )
-    return Email(to=to, subject=f"Your camp's {season} listing on Bunkcheck: is it right?",
+    return Email(to=to, subject=f"Is our listing for {camp['name']} right?",
                  html=html, text=text, reply_to=_reply_to())
 
 
@@ -121,7 +133,7 @@ def listing_confirmed(to: str, camp_name: str) -> Email:
             f"and a person will update it.\n\nThanks,\n{_signature()}")
     html = (f"<p>Thank you. <strong>{_e(camp_name)}</strong>'s page now shows \"confirmed by the camp\" with "
             f"today's date.</p><p>If anything changes (a week fills up, a new session, a new price), reply to "
-            f"any email from us and a person will update it.</p><p>Thanks,<br>{_e(_signature())}</p>")
+            f"any email from us and a person will update it.</p><p>Thanks,<br>{_signature_html()}</p>")
     return Email(to=to, subject=f"Confirmed: {camp_name}", html=html, text=text, reply_to=_reply_to())
 
 
@@ -131,7 +143,7 @@ def listing_removed(to: str, camp_name: str) -> Email:
             f"Thanks,\n{_signature()}")
     html = (f"<p><strong>{_e(camp_name)}</strong> is off Bunkcheck. Parents won't see it in search or on our "
             f"pages.</p><p>If that was a mistake, reply to this email and a person will put it back.</p>"
-            f"<p>Thanks,<br>{_e(_signature())}</p>")
+            f"<p>Thanks,<br>{_signature_html()}</p>")
     return Email(to=to, subject=f"Removed: {camp_name}", html=html, text=text, reply_to=_reply_to())
 
 
@@ -169,7 +181,7 @@ def listing_updated(to: str, camp: dict[str, Any], changes: list[dict[str, Any]]
         + "".join(f"<li>{_e(line)}: {_e(state)}</li>" for line, state in now)
         + f"</ul><p><a href='{_e(camp_url)}'>See the page</a></p>"
         f"<p><strong>Is anything wrong?</strong> Reply to this email and a person will fix it.</p>"
-        f"<p>Thanks,<br>{_e(_signature())}</p>"
+        f"<p>Thanks,<br>{_signature_html()}</p>"
     )
     return Email(to=to, subject=f"Updated: {camp['name']}", html=html, text=text, reply_to=_reply_to())
 
@@ -250,7 +262,7 @@ def season_update_request(to: str, first_name: str | None, camp: dict[str, Any],
         "<p>What you send goes on your page as confirmed by the camp, with the date. We'll email you back "
         "exactly what changed, and a person reads every reply.</p>"
         "<p style='color:#666'>No login, no fee to be listed. If you'd rather not be listed, reply and say so.</p>"
-        f"<p>Thanks,<br>{_e(_signature())}</p>" + outreach.footer_html()
+        f"<p>Thanks,<br>{_signature_html()}</p>" + outreach.footer_html()
     )
     return Email(to=to, subject=f"{camp['name']}: your {season} dates, price and registration day",
                  html=html, text=text, reply_to=_reply_to())
@@ -330,7 +342,7 @@ def season_updated(to: str, camp: dict[str, Any], season: int, applied: dict[str
         + "".join(f"<p>{_e(t)}</p>" for t in tail)
         + f"<p><a href='{_e(camp_url)}'>See the page</a></p>"
         "<p><strong>Is anything wrong?</strong> Reply to this email and a person will fix it.</p>"
-        f"<p>Thanks,<br>{_e(_signature())}</p>"
+        f"<p>Thanks,<br>{_signature_html()}</p>"
     )
     subject = (f"One question about your {season} dates: {camp['name']}" if question
                else f"Updated for {season}: {camp['name']}")
